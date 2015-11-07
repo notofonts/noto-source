@@ -13,10 +13,10 @@
 # limitations under the License.
 
 if [[ ! $(python -m pip) ]]; then
-    if [[ ! $(python -m ensurepip) ]]; then
+    if [[ ! $(sudo python -m ensurepip) ]]; then
         echo "You need to manually install pip."
         exit 1
     fi
 fi
 
-python -m pip install -r requirements.txt
+sudo python -m pip install -r requirements.txt
