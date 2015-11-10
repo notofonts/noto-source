@@ -19,4 +19,4 @@ if [[ ! $(python -m pip) ]]; then
     fi
 fi
 
-sudo python -m pip install -r requirements.txt
+sudo python -m pip install --upgrade -r requirements.txt
