@@ -16,7 +16,9 @@ all: build
 
 build:
 	for source in *.glyphs; do \
+		echo "==== building $$source"; \
 		python -m fontmake $$source; \
+        echo; \
 	done
 
 setup:
