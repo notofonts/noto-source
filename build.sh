@@ -12,11 +12,30 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-if [[ ! $(python -m pip) ]]; then
-    if [[ ! $(sudo python -m ensurepip) ]]; then
-        echo "You need to manually install pip."
-        exit 1
+setup() {
+    if [[ ! $(python -m pip) ]]; then
+        if [[ ! $(sudo python -m ensurepip) ]]; then
+            echo "You need to manually install pip."
+            exit 1
+        fi
     fi
-fi
+    sudo python -m pip install --upgrade -r requirements.txt
+}
 
-sudo python -m pip install --upgrade -r requirements.txt
+build() {
+    for source in *.glyphs; do
+        echo "==== building ${source}"
+        python -m fontmake "${source}"
+        echo
+    done
+}
+
+main() {
+    if [[ "$1" = "setup" ]]; then
+        setup
+    else
+        build
+    fi
+}
+
+main "$@"

@@ -15,11 +15,7 @@
 all: build
 
 build:
-	for source in *.glyphs; do \
-		echo "==== building $$source"; \
-		python -m fontmake $$source; \
-        echo; \
-	done
+	bash build.sh
 
 setup:
-	bash build.sh
+	bash build.sh setup
