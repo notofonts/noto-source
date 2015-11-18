@@ -23,7 +23,7 @@ setup() {
 }
 
 build() {
-    for source in *.glyphs; do
+    for source in fonts/*.glyphs fonts/*/*.glyphs; do
         echo "==== building ${source}"
         python -m fontmake "${source}"
         echo
