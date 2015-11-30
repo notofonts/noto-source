@@ -23,7 +23,7 @@ setup() {
 }
 
 build_all() {
-    for source in fonts/*.glyphs fonts/*/*.glyphs; do
+    for source in src/*.glyphs src/*/*.glyphs; do
         build_one "${source}"
     done
 }

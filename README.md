@@ -4,8 +4,8 @@ Glyph source data to generate Noto fonts.
 
 ## License
 
-Noto source (under the fonts subdirectory) is under the
-[SIL Open Font License, version 1.1](fonts/LICENSE).<br/>
+Noto source (under the src subdirectory) is under the
+[SIL Open Font License, version 1.1](src/LICENSE).<br/>
 Build scripts are under the [Apache license, version 2.0](LICENSE).
 
 ## Contributing
