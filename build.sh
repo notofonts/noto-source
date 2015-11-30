@@ -22,20 +22,24 @@ setup() {
     sudo python -m pip install --upgrade -r requirements.txt
 }
 
-build() {
+build_all() {
     for source in fonts/*.glyphs fonts/*/*.glyphs; do
-        echo "==== building ${source}"
-        python -m fontmake "${source}"
-        echo
+        build_one "${source}"
     done
 }
 
+build_one() {
+    echo "==== building $1"
+    python -m fontmake "$1"
+    echo
+}
+
 main() {
-    if [[ "$1" = "setup" ]]; then
-        setup
-    else
-        build
-    fi
+    case "$1" in
+        setup) setup ;;
+        build_one) build_one $2 ;;
+        *) build_all ;;
+    esac
 }
 
 main "$@"

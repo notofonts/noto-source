@@ -19,3 +19,6 @@ build:
 
 setup:
 	bash build.sh setup
+
+%.glyphs:
+	bash build.sh build_one $@
