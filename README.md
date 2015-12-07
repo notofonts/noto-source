@@ -14,4 +14,4 @@ Please read [CONTRIBUTING](CONTRIBUTING.md) if you are thinking of contributing 
 
 ## News
 
-* 2015-11-XX: first release, covering Noto Sans UI {Italic, Mono, Roman}, Noto Sans Display {Italic, Roman}, Noto {Sans, Serif} {Armenian, Georgian}.
+* 2015-12-07: first release, covering Noto Sans UI {Italic, Mono, Roman}, Noto Sans Display {Italic, Roman}, Noto {Sans, Serif} {Armenian, Georgian}.
