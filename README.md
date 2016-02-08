@@ -1,16 +1,22 @@
 ![Noto](images/noto.png)
+
 # Noto Source
-Glyph source data to generate Noto fonts.
+
+Source files for generating Noto fonts.
+
+Note that as of February 2016, no sources are available for the released Noto fonts in [github.com/googlei18n/noto-fonts](https://github.com/googlei18n/noto-fonts). 
+The files in this repository are work-in-progress for future versions of the fonts that have not been released yet. 
+The designs and glyph sets are not final.
 
 ## License
 
-Noto source (under the src subdirectory) is under the
-[SIL Open Font License, version 1.1](src/LICENSE).<br/>
+Noto source (under the src subdirectory) is under the [SIL Open Font License, version 1.1](src/LICENSE).
+
 Build scripts are under the [Apache license, version 2.0](LICENSE).
 
 ## Contributing
 
-Please read [CONTRIBUTING](CONTRIBUTING.md) if you are thinking of contributing to this project.
+To contribute to this project, please read [CONTRIBUTING](CONTRIBUTING.md) 
 
 ## News
 
