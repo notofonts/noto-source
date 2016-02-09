@@ -23,15 +23,26 @@ setup() {
 }
 
 build_all() {
-    for source in src/*.glyphs src/*/*.glyphs; do
-        build_one "${source}"
+    for target in src/*.glyphs src/*/*.plist; do
+        echo "==== building ${target} ===="
+        build_one "${target}"
+        echo
     done
 }
 
 build_one() {
-    echo "==== building $1"
-    python -m fontmake "$1"
-    echo
+    case "$1" in
+        *.plist)
+            glyphs="${1/.plist/.glyphs}"
+            if [[ ! -e "${glyphs}" ]]; then
+                glyphs="${glyphs/UI/}"
+            fi
+            python -m fontmake -i "${glyphs}" --mti-source "$1"
+            ;;
+        *)
+            python -m fontmake -i "$1"
+            ;;
+    esac
 }
 
 main() {

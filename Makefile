@@ -20,5 +20,5 @@ build:
 setup:
 	bash build.sh setup
 
-%.glyphs:
+src/%:
 	bash build.sh build_one $@
