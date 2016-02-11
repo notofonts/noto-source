@@ -37,10 +37,10 @@ build_one() {
             if [[ ! -e "${glyphs}" ]]; then
                 glyphs="${glyphs/UI/}"
             fi
-            python -m fontmake -i "${glyphs}" --mti-source "$1"
+            python -m fontmake -i -g "${glyphs}" --mti-source "$1"
             ;;
         *)
-            python -m fontmake -i "$1"
+            python -m fontmake -i -g "$1"
             ;;
     esac
 }
