@@ -19,7 +19,7 @@ setup() {
             exit 1
         fi
     fi
-    sudo python -m pip install --upgrade -r requirements.txt
+    python -m pip install --user --upgrade -r requirements.txt
 }
 
 build_all() {
