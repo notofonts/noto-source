@@ -19,7 +19,7 @@ setup() {
             exit 1
         fi
     fi
-    sudo python -m pip install --upgrade -r requirements.txt
+    python -m pip install --user --upgrade -r requirements.txt
 }
 
 build_all() {
@@ -40,7 +40,7 @@ build_one() {
             python -m fontmake -i -g "${glyphs}" --mti-source "$1"
             ;;
         *)
-            python -m fontmake -g "$1"
+            python -m fontmake -i -g "$1"
             ;;
     esac
 }
