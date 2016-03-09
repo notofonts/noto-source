@@ -43,6 +43,9 @@ build_one() {
             python -m fontmake -i -g "$1"
             ;;
     esac
+    if [[ "$?" -ne 0 ]]; then
+        exit 1
+    fi
 }
 
 main() {
