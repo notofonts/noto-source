@@ -25,7 +25,7 @@ setup() {
 build_all() {
     for target in src/*.glyphs src/*/*.plist; do
         echo "==== building ${target} ===="
-        build_one "${target}"
+        build_one "${target}" "$1"
         echo
     done
 }
@@ -43,7 +43,7 @@ build_one() {
             python -m fontmake -i -g "$1"
             ;;
     esac
-    if [[ "$?" -ne 0 ]]; then
+    if [[ "$?" -ne 0 && "$2" != 'force' ]]; then
         exit 1
     fi
 }
@@ -51,8 +51,8 @@ build_one() {
 main() {
     case "$1" in
         setup) setup ;;
-        build_one) build_one $2 ;;
-        *) build_all ;;
+        build_one) build_one "$2" ;;
+        *) build_all "$1" ;;
     esac
 }
 

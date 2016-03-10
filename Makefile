@@ -17,6 +17,9 @@ all: build
 build:
 	bash build.sh
 
+force:
+	bash build.sh force
+
 setup:
 	bash build.sh setup
 
