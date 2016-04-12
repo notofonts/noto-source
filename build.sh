@@ -33,11 +33,7 @@ build_all() {
 build_one() {
     case "$1" in
         *.plist)
-            glyphs="${1/.plist/.glyphs}"
-            if [[ ! -e "${glyphs}" ]]; then
-                glyphs="${glyphs/UI/}"
-            fi
-            python -m fontmake -i -g "${glyphs}" --mti-source "$1"
+            python -m fontmake -i -g "${1/.plist/.glyphs}" --mti-source "$1"
             ;;
         *)
             python -m fontmake -i -g "$1"
