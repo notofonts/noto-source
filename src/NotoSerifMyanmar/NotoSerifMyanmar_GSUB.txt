@@ -3442,7 +3442,7 @@ ra.alt2	4
 jha	4
 
 
-% deep consonant needs trimmed Ra bottom by two notches “bt2”
+% deep consonant needs trimmed Ra bottom by two notches "bt2"
 nya_khm	5
 nya_shn	5
 fa_shn	5
@@ -3454,7 +3454,7 @@ fa_tlg	5
 great_nnya	5
 % great_nnya.clipped	5
 
-% deep consonant needs super trimmed Ra bottom “bt3”
+% deep consonant needs super trimmed Ra bottom "bt3"
 % for serif, use two notches, was bt3 in sans
 i_m	5
 ii	5
@@ -4176,7 +4176,7 @@ lookup end
 lookup	 TrimRaBtm2 	single
 % The Ra form could be neutral (e.g. ra_med.w2) or already modified at the top (e.g. ra_med2.w2)
 
-% This lookup trims the bottom of the Ra to by a double notch, “bt2”
+% This lookup trims the bottom of the Ra to by a double notch, "bt2"
 
 IgnoreBaseGlyphs	no
 IgnoreLigatures	no
@@ -4199,7 +4199,7 @@ lookup end
 %lookup	 TrimRaBtm3 	single
 % The Ra form could be neutral (e.g. ra_med.w2) or already modified at the top (e.g. ra_med2.w2)
 
-% This lookup trims the bottom of the Ra to almost nothing, “bt3”
+% This lookup trims the bottom of the Ra to almost nothing, "bt3"
 
 % IgnoreBaseGlyphs	no
 % IgnoreLigatures	no
@@ -4373,7 +4373,7 @@ nnya_medial_ha_uu	nnya.thirdtail	medial_ha_uu
 ra_medial_wa	ra.alt2	medial_wa
 ra_medial_ha	ra.alt	medial_ha
 
-% 20160407 in some cases, the Ra doesn’t arrive trimmed
+% 20160407 in some cases, the Ra doesn't arrive trimmed
 ra_medial_wa	ra	medial_wa
 ra_medial_wa_ha	ra	medial_wa_ha
 
@@ -6246,8 +6246,8 @@ class-chain	20,7,18	2	1	1,Sp3
 class-chain	20,7,19	2	1	1,Sp2
 
 
-%   c26/27/28 BT is for marks such as medial-wa-dot that protrude non-symmetrically to the right
-%   The marks might be preceded by a spacing mark (spX BT20)
+% c26/27/28 BT is for marks such as medial-wa-dot that protrude non-symmetrically to the right
+% The marks might be preceded by a spacing mark (spX BT20)
 %	Input context: non-blocking base followed by subscript (lookahead)
 
 class-chain	26	2	1	1,Sp10
@@ -6286,7 +6286,7 @@ class-chain	21	2	1	1,Sp11
 
 % When a base-subscript combination protrudes on the right, and is followed
 %	by an obstruction such as a medial_ya (c3), put padding to the left of the obstacle
-%	Needs wider spacing than other vertical barriers because Ya’s hook pokes into subscripts
+%	Needs wider spacing than other vertical barriers because Ya's hook pokes into subscripts
 
 class-chain	1,11	3		1,Sp2
 class-chain	2,11	3		1,Sp5
