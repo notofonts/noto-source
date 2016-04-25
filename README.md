@@ -8,6 +8,32 @@ Note that as of February 2016, no sources are available for the released Noto fo
 The files in this repository are work-in-progress for future versions of the fonts that have not been released yet. 
 The designs and glyph sets are not final.
 
+## Building
+
+To build everything from source:
+
+```
+$ git clone https://github.com/googlei18n/noto-source.git
+$ cd noto-source
+$ make setup
+$ make
+```
+
+other build options exist:
+
+```bash
+$ make -B src/NotoSansUIRoman-MM.glyphs  # build a single source
+$ make force  # continue building even when some sources fail
+```
+
+be sure to update this repository and its dependencies on subsequent runs:
+
+```
+$ git pull origin master
+$ make setup
+$ ...
+```
+
 ## License
 
 Noto source (under the src subdirectory) is under the [SIL Open Font License, version 1.1](src/LICENSE).
