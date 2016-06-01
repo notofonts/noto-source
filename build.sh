@@ -20,7 +20,8 @@ setup() {
         fi
     fi
     python -m pip install --user --upgrade -r Lib/fontmake/requirements.txt
-    python Lib/fontmake/setup.py install --user
+    cd Lib/fontmake
+    python setup.py install --user
 }
 
 build_all() {
