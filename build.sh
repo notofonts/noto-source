@@ -19,7 +19,8 @@ setup() {
             exit 1
         fi
     fi
-    python -m pip install --user --upgrade -r requirements.txt
+    python -m pip install --user --upgrade -r Lib/fontmake/requirements.txt
+    python Lib/fontmake/setup.py install --user
 }
 
 build_all() {
@@ -33,10 +34,10 @@ build_all() {
 build_one() {
     case "$1" in
         *.plist)
-            python -m fontmake -g "${1/.plist/.glyphs}" --mti-source "$1"
+            fontmake -g "${1/.plist/.glyphs}" --mti-source "$1"
             ;;
         *)
-            python -m fontmake -i -g "$1"
+            fontmake -i -g "$1"
             ;;
     esac
     if [[ "$?" -ne 0 && "$2" != 'force' ]]; then

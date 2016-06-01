@@ -13,7 +13,7 @@ The designs and glyph sets are not final.
 To build everything from source:
 
 ```
-$ git clone https://github.com/googlei18n/noto-source.git
+$ git clone --recursive https://github.com/googlei18n/noto-source.git
 $ cd noto-source
 $ make setup
 $ make
