@@ -35,7 +35,17 @@ build_all() {
 build_one() {
     case "$1" in
         *.plist)
-            fontmake -g "${1/.plist/.glyphs}" --mti-source "$1"
+            g="${1/.plist/.glyphs}"
+            case "$1" in
+                */NotoSansDevanagariUI-MM.plist)
+                    g="${g/UI/}"
+                    f='Noto Sans Devanagari UI'
+                    fontmake -g "$g" --mti-source "$1" --family-name "$f"
+                    ;;
+                *)
+                    fontmake -g "$g" --mti-source "$1"
+                    ;;
+            esac
             ;;
         *)
             fontmake -i -g "$1"
