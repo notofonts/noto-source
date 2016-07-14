@@ -29,7 +29,8 @@ $ make force  # continue building even when some sources fail
 be sure to update this repository and its dependencies on subsequent runs:
 
 ```
-$ git pull origin master
+$ git pull
+$ git submodule update --recursive
 $ make setup
 $ ...
 ```
