@@ -25,7 +25,7 @@ setup() {
 }
 
 build_all() {
-    for target in src/*.glyphs src/*/*.plist; do
+    for target in src/*.glyphs src/*/*.plist src/*/*.ufo; do
         echo "==== building ${target} ===="
         build_one "${target}" "$1"
         echo
@@ -47,8 +47,15 @@ build_one() {
                     ;;
             esac
             ;;
-        *)
+        *.glyphs)
             fontmake -i -g "$1"
+            ;;
+        *.ufo)
+            fontmake --keep-overlaps -u "$1" -o ttf
+            ;;
+        *)
+            echo "unrecognized file type $1"
+            exit 1
             ;;
     esac
     if [[ "$?" -ne 0 && "$2" != 'force' ]]; then
