@@ -46,7 +46,7 @@ SCRIPT_TAGS = {
 
 
 def main(font_path, sample_dir):
-    script = re.match(r'Noto(Sans|Serif)(\w*)-(\w+).otf', font_path).group(2)
+    script = re.match(r'Noto(Sans|Serif)(\w*)-(\w+).ttf', font_path).group(2)
     tags = SCRIPT_TAGS.get(script.replace('Display', '').replace('UI', ''))
     if tags is None:
         print('None')
