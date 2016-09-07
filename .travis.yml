@@ -1,0 +1,27 @@
+sudo: false
+language: python
+python:
+  - "2.7"
+branches:
+  only:
+    - master
+
+cache:
+  directories:
+    - cached_instance_ttf
+
+install:
+  # for fontmake
+  - git pull https://github.com/googlei18n/fontmake.git
+  - cd fontmake
+  - pip install -r requirements.txt
+  - python setup.py install
+  - cd ..
+  # for fontdiff
+  - wget https://github.com/googlei18n/fontdiff/releases/download/v0.1.1/fontdiff-linux.zip
+  - unzip fontdiff-linux.zip
+  - mv fontdiff-linux/fontdiff .
+  - git pull https://github.com/googlei18n/nototools.git
+
+script:
+  - bash ./build_travis.sh
