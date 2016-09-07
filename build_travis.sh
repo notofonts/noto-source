@@ -29,7 +29,7 @@ function main() {
         fi
     done
 
-    for ttf in "${outdir}/*.ttf"; do
+    for ttf in ${outdir}/*.ttf; do
         cached_ttf="${cached_outdir}/$(basename "${ttf}")"
         if [[ "${event}" == 'pull_request' && -e "${cached_ttf}" ]]; then
             specimen="$(python generate_fontdiff_input.py
