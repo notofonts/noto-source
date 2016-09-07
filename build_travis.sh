@@ -32,7 +32,7 @@ function main() {
     for ttf in ${outdir}/*.ttf; do
         cached_ttf="${cached_outdir}/$(basename "${ttf}")"
         if [[ "${event}" == 'pull_request' && -e "${cached_ttf}" ]]; then
-            specimen="$(python generate_fontdiff_input.py
+            specimen="$(python generate_fontdiff_input.py\
                         "${ttf}" 'nototools/sample_texts')"
             if [[ "${specimen}" == 'None' ]]; then continue; fi
             ./fontdiff --before "${cached_ttf}" --after "${ttf}"\
