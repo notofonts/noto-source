@@ -8,16 +8,17 @@ sinh	default		 0,1,2,3,4,5,6,7,8
 script table end
 
 feature table begin
-0	akhn	akhandligs-sinh
+0	akhn	akhandligs-sinh,touch-sinh
 1	rphf	reph-sinh
 2	vatu	vatu-sinh
 3	pstf	postforms-sinh
-4	pres	touch-sinh,fixrareph-sinh
-5	abvs	raucontext-sinh,rakar-sinh,rayaya-sinh,WTLEhack-sinh,selectra-sinh,abvsligs-sinh
+4	pres	fixrareph-sinh
+5	abvs	raucontext-sinh,rakar-sinh,swapyareph-sinh,rayaya-sinh,WTLEhack-sinh,selectra-sinh,abvsligs-sinh
 6	blws	bottomligatures-sinh
 7	psts	racontext-sinh,ucontext-sinh
 8	dlig	postligatures-sinh,fixdayara-sinh
 feature table end
+
 
 
 % mark attachment classes from glyph classes
@@ -216,6 +217,29 @@ llarasinh	llasinh	rakarsinh
 nadarasinh	nadasinh	rakarsinh
 
 lookup end
+
+
+lookup	swapyareph-sinh	chained
+
+glyph		yapostsinh,rephsinh		1,post2reph-sinh	2,reph2post-sinh
+
+lookup end
+
+
+
+lookup	post2reph-sinh	single
+
+yapostsinh	rephsinh
+
+lookup end
+
+
+lookup	reph2post-sinh	single
+
+rephsinh	yapostsinh
+
+lookup end
+
 
 
 
