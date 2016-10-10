@@ -40,12 +40,19 @@ build_one() {
                 */NotoSansDevanagariUI-MM.plist)
                     g="${g/UI/}"
                     f='Noto Sans Devanagari UI'
-                    fontmake -g "$g" --mti-source "$1" --family-name "$f"
                     ;;
                 *)
-                    fontmake -g "$g" --mti-source "$1"
+                    f=''
                     ;;
             esac
+            if [[ -n "$f" ]]; then
+                fontmake -g "$g" --mti-source "$1" --family-name "$f"
+                fontmake -i -g "$g" --interpolate-binary-layout\
+                    --family-name "$f"
+            else
+                fontmake -g "$g" --mti-source "$1"
+                fontmake -i -g "$g" --interpolate-binary-layout
+            fi
             ;;
         *.glyphs)
             fontmake -i -g "$1"
