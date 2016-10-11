@@ -30,6 +30,9 @@ function main() {
     done
 
     for ttf in ${outdir}/*.ttf; do
+        if [[ "${ttf}" == "${outdir}/*.ttf" ]]; then
+            break  # didn't expand *, because no TTFs were found
+        fi
         cached_ttf="${cached_outdir}/$(basename "${ttf}")"
         if [[ "${event}" == 'pull_request' && -e "${cached_ttf}" ]]; then
             specimen="$(python generate_fontdiff_input.py\
