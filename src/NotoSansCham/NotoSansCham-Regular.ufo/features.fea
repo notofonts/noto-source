@@ -1,0 +1,74 @@
+languagesystem cham dflt;
+languagesystem khmr dflt;
+
+
+# GSUB 
+
+
+lookup ligaStandardLigaturesinCherokeelookup0 {
+  lookupflag 0;
+    sub \uniAA31 \uniAA2E  by \uniAA2E_uniAA31.liga;
+    sub \uniAA2E \uniAA31  by \uniAA2E_uniAA31.liga;
+    sub \uniAA4C \uniAA31  by \uniAA31_uniAA4C.liga;
+    sub \uniAA31 \uniAA4C  by \uniAA31_uniAA4C.liga;
+    sub \uniAA43 \uniAA2E  by \uniAA2E_uniAA43.liga;
+    sub \uniAA2E \uniAA43  by \uniAA2E_uniAA43.liga;
+    sub \uniAA4C \uniAA2E  by \uniAA2E_uniAA4C.liga;
+    sub \uniAA2E \uniAA4C  by \uniAA2E_uniAA4C.liga;
+    sub \uniAA4C \uniAA2A  by \uniAA2A_uniAA4C.liga;
+    sub \uniAA2A \uniAA4C  by \uniAA2A_uniAA4C.liga;
+    sub \uniAA2E \uniAA29  by \uniAA29_uniAA2E.liga;
+    sub \uniAA29 \uniAA2E  by \uniAA29_uniAA2E.liga;
+} ligaStandardLigaturesinCherokeelookup0;
+
+lookup ligaStandardLigaturesinCherokeelookup1 {
+  lookupflag 0;
+    sub [\uniAA06 \uniAA07 \uniAA08 \uniAA09 \uniAA0C \uniAA0D \uniAA0E \uniAA0F \uniAA10 
+	\uniAA11 \uniAA12 \uniAA13 \uniAA14 \uniAA15 \uniAA16 \uniAA17 \uniAA18 
+	\uniAA19 \uniAA1A \uniAA1B \uniAA1C \uniAA1D \uniAA1E \uniAA1F \uniAA20 
+	\uniAA21 \uniAA22 \uniAA23 \uniAA24 \uniAA25 \uniAA26 \uniAA27 \uniAA28 ] [\uniAA35 \uniAA36 ]'  by [\glyph119 \glyph120 ];
+} ligaStandardLigaturesinCherokeelookup1;
+
+feature clig {
+
+ script cham;
+     language dflt ;
+      lookup ligaStandardLigaturesinCherokeelookup0;
+      lookup ligaStandardLigaturesinCherokeelookup1;
+
+ script khmr;
+     language dflt ;
+      lookup ligaStandardLigaturesinCherokeelookup0;
+      lookup ligaStandardLigaturesinCherokeelookup1;
+} clig;
+
+feature liga {
+
+ script cham;
+     language dflt ;
+      lookup ligaStandardLigaturesinCherokeelookup0;
+      lookup ligaStandardLigaturesinCherokeelookup1;
+} liga;
+
+@GDEF_Simple = [\.notdef \.null \nonmarkingreturn \space \exclam \quotedbl 
+	\numbersign \dollar \percent \ampersand \quotesingle \parenleft \parenright 
+	\asterisk \plus \comma \hyphen \period \slash \zero \one \two \three \four \five 
+	\six \seven \eight \nine \colon \semicolon \less \equal \greater \question \at 
+	\uniAA00 \uniAA01 \uniAA02 \uniAA03 \uniAA04 \uniAA05 \uniAA06 \uniAA07 \uniAA08 
+	\uniAA09 \uniAA0A \uniAA0B \uniAA0C \uniAA0D \uniAA0E \uniAA0F \uniAA10 \uniAA11 
+	\uniAA12 \uniAA13 \uniAA14 \uniAA15 \uniAA16 \uniAA17 \uniAA18 \uniAA19 \uniAA1A 
+	\uniAA1B \uniAA1C \uniAA1D \uniAA1E \uniAA1F \uniAA20 \uniAA21 \uniAA22 \uniAA23 
+	\uniAA24 \uniAA25 \uniAA26 \uniAA27 \uniAA28 \uniAA29 \uniAA2A \uniAA2B \uniAA2C 
+	\uniAA2D \uniAA2E \uniAA2F \uniAA30 \uniAA31 \uniAA32 \uniAA33 \uniAA34 \uniAA35 
+	\uniAA36 \uniAA40 \uniAA41 \uniAA42 \uniAA43 \uniAA44 \uniAA45 \uniAA46 \uniAA47 
+	\uniAA48 \uniAA49 \uniAA4A \uniAA4B \uniAA4C \uniAA4D \uniAA50 \uniAA51 \uniAA52 
+	\uniAA53 \uniAA54 \uniAA55 \uniAA56 \uniAA57 \uniAA58 \uniAA59 \uniAA5C \uniAA5D 
+	\uniAA5E \uniAA5F \glyph119 \glyph120 \uniAA2E_uniAA31.liga 
+	\uniAA31_uniAA4C.liga \uniAA2E_uniAA43.liga \uniAA2E_uniAA4C.liga 
+	\uniAA2A_uniAA4C.liga \uniAA29_uniAA2E.liga ];
+
+table GDEF {
+  GlyphClassDef @GDEF_Simple, , , ;
+
+} GDEF;
+

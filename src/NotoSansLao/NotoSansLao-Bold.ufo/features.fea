@@ -1,0 +1,248 @@
+languagesystem lao  dflt;
+
+
+# GSUB 
+
+
+lookup ligaStandardLigaturesinLaolookup0 {
+  lookupflag 0;
+    sub \uni0EB3 by \uni0EB3.right ;
+} ligaStandardLigaturesinLaolookup0;
+
+lookup ligaStandardLigaturesinLaolookup1 {
+  lookupflag 0;
+    sub [\uni0E81 \uni0E82 \uni0E84 \uni0E87 \uni0E88 \uni0E8A \uni0E8D \uni0E94 \uni0E95 
+	\uni0E96 \uni0E97 \uni0E99 \uni0E9A \uni0E9B \uni0E9C \uni0E9D \uni0E9E 
+	\uni0E9F \uni0EA1 \uni0EA2 \uni0EA3 \uni0EA5 \uni0EA7 \uni0EAA \uni0EAB 
+	\uni0EAD \uni0EAE \uni0EDC \uni0EDD ]' [\uni0EB3.right ]  by [\uni0E81.am \uni0E82.am \uni0E84.am 
+	\uni0E87.am \uni0E88.am \uni0E8A.am \uni0E8D.am \uni0E94.am \uni0E95.am 
+	\uni0E96.am \uni0E97.am \uni0E99.am \uni0E9A.am \uni0E9B.am \uni0E9C.am 
+	\uni0E9D.am \uni0E9E.am \uni0E9F.am \uni0EA1.am \uni0EA2.am \uni0EA3.am 
+	\uni0EA5.am \uni0EA7.am \uni0EAA.am \uni0EAB.am \uni0EAD.am \uni0EAE.am 
+	\uni0EDC.am \uni0EDD.am ];
+} ligaStandardLigaturesinLaolookup1;
+
+lookup SingleSubstitutionlookup12 {
+  lookupflag 0;
+    sub \uni0EC8 by \uni0EC8.blw ;
+    sub \uni0EC9 by \uni0EC9.blw ;
+    sub \uni0ECA by \uni0ECA.blw ;
+    sub \uni0ECB by \uni0ECB.blw ;
+    sub \uni0ECC by \uni0ECC.blw ;
+    sub \uni0ECD by \uni0ECD.blw ;
+} SingleSubstitutionlookup12;
+
+lookup ligaStandardLigaturesinLaolookup2 {
+  lookupflag 0;
+    sub [\uni0E81 \uni0E82 \uni0E84 \uni0E87 \uni0E88 \uni0E8A \uni0E8D \uni0E94 \uni0E95 
+	\uni0E96 \uni0E97 \uni0E99 \uni0E9A \uni0E9B \uni0E9C \uni0E9D \uni0E9E 
+	\uni0E9F \uni0EA1 \uni0EA2 \uni0EA3 \uni0EA5 \uni0EA7 \uni0EAA \uni0EAB 
+	\uni0EAD \uni0EAE \uni0EDC \uni0EDD ] [\uni0EC8 \uni0EC9 \uni0ECA \uni0ECB \uni0ECC \uni0ECD ]'lookup SingleSubstitutionlookup12  ;
+    sub [\uni0EB8 ] [\uni0EC8 \uni0EC9 \uni0ECA \uni0ECB \uni0ECC \uni0ECD ]'lookup SingleSubstitutionlookup12  ;
+    sub [\uni0EB9 ] [\uni0EC8 \uni0EC9 \uni0ECA \uni0ECB \uni0ECC \uni0ECD ]'lookup SingleSubstitutionlookup12  ;
+} ligaStandardLigaturesinLaolookup2;
+
+lookup ligaStandardLigaturesinLaolookup3 {
+  lookupflag 0;
+    sub [\uni0EC8.blw \uni0EC9.blw \uni0ECA.blw \uni0ECB.blw ]' [\uni0EB3.right ]  by [\uni0EC8_uni0ECD.liga \uni0ECD_0EC9 
+	\uni0ECA_uni0ECD.liga \uni0ECB_uni0ECD.liga ];
+} ligaStandardLigaturesinLaolookup3;
+
+lookup ligaStandardLigaturesinLaolookup4 {
+  lookupflag 0;
+    sub \uni0EC9.blw \uni0ECD  by \uni0ECD_0EC9;
+    sub \uni0EC9 \uni0ECD.blw  by \uni0ECD_0EC9;
+    sub \uni0EC9 \uni0ECD  by \uni0ECD_0EC9;
+    sub \uni0EC8.blw \uni0ECD  by \uni0EC8_uni0ECD.liga;
+    sub \uni0EC8 \uni0ECD.blw  by \uni0EC8_uni0ECD.liga;
+    sub \uni0EC8 \uni0ECD  by \uni0EC8_uni0ECD.liga;
+    sub \uni0ECB.blw \uni0ECD  by \uni0ECB_uni0ECD.liga;
+    sub \uni0ECB \uni0ECD.blw  by \uni0ECB_uni0ECD.liga;
+    sub \uni0ECB \uni0ECD  by \uni0ECB_uni0ECD.liga;
+    sub \uni0ECA.blw \uni0ECD  by \uni0ECA_uni0ECD.liga;
+    sub \uni0ECA \uni0ECD.blw  by \uni0ECA_uni0ECD.liga;
+    sub \uni0ECA \uni0ECD  by \uni0ECA_uni0ECD.liga;
+} ligaStandardLigaturesinLaolookup4;
+
+lookup ligaStandardLigaturesinLaolookup5 {
+  lookupflag 0;
+    sub \uni0E87 \glyph140  by \uni0E87_uni0EB8.liga;
+    sub \uni0E87 \uni0EB8  by \uni0E87_uni0EB8.liga;
+    sub \uni0E87 \glyph141  by \uni0E87_uni0EB9.liga;
+    sub \uni0E87 \uni0EB9  by \uni0E87_uni0EB9.liga;
+} ligaStandardLigaturesinLaolookup5;
+
+lookup ligaStandardLigaturesinLaolookup6 {
+  lookupflag 0;
+    sub \uni0EBC \glyph140  by \uni0EBC_uni0EB8.liga;
+    sub \uni0EBC \uni0EB8  by \uni0EBC_uni0EB8.liga;
+    sub \uni0EBC \glyph141  by \uni0EBC_uni0EB9.liga;
+    sub \uni0EBC \uni0EB9  by \uni0EBC_uni0EB9.liga;
+} ligaStandardLigaturesinLaolookup6;
+
+lookup SingleSubstitutionlookup14 {
+  lookupflag 0;
+    sub \uni0EC8.blw by \glyph156 ;
+    sub \uni0EC9.blw by \glyph157 ;
+    sub \uni0ECA.blw by \glyph158 ;
+    sub \uni0ECB.blw by \glyph159 ;
+} SingleSubstitutionlookup14;
+
+lookup ligaStandardLigaturesinLaolookup7 {
+  lookupflag 0;
+    sub [\uni0EB8 \uni0EB9 ] [\uni0EC8.blw \uni0EC9.blw \uni0ECA.blw \uni0ECB.blw ]'lookup SingleSubstitutionlookup14  ;
+    sub [\uni0EC8.blw \uni0EC9.blw \uni0ECA.blw \uni0ECB.blw ]'lookup SingleSubstitutionlookup14  [\uni0EB8 \uni0EB9 ] ;
+    sub [\uni0EC0 \uni0EC1 \uni0EC2 \uni0EC3 \uni0EC4 ] [\uni0E81 \uni0E82 \uni0E84 \uni0E87 \uni0E88 \uni0E8A \uni0E8D \uni0E94 \uni0E95 
+	\uni0E96 \uni0E97 \uni0E99 \uni0E9A \uni0E9B \uni0E9C \uni0E9D \uni0E9E 
+	\uni0E9F \uni0EA1 \uni0EA2 \uni0EA3 \uni0EA5 \uni0EA7 \uni0EAA \uni0EAB 
+	\uni0EAD \uni0EAE \uni0EDC \uni0EDD ] [\uni0EC8.blw \uni0EC9.blw \uni0ECA.blw \uni0ECB.blw ]'lookup SingleSubstitutionlookup14  ;
+    sub [\uni0E9B \uni0E9D \uni0E9F \uni0EA2 ] [\uni0EC8.blw \uni0EC9.blw \uni0ECA.blw \uni0ECB.blw ]'lookup SingleSubstitutionlookup14  ;
+} ligaStandardLigaturesinLaolookup7;
+
+lookup ligaStandardLigaturesinLaolookup8 {
+  lookupflag 0;
+    sub [\uni0E87 ] [\uni0EB1 \uni0EBB ]'  by [\glyph146 \glyph147 ];
+} ligaStandardLigaturesinLaolookup8;
+
+lookup SingleSubstitutionlookup16 {
+  lookupflag 0;
+    sub \glyph142 by \uni0EB4 ;
+    sub \glyph143 by \uni0EB5 ;
+    sub \glyph144 by \uni0EB6 ;
+    sub \glyph145 by \uni0EB7 ;
+    sub \glyph146 by \uni0EB1 ;
+    sub \glyph147 by \uni0EBB ;
+    sub \glyph152 by \uni0EC8 ;
+    sub \glyph153 by \uni0EC9 ;
+    sub \glyph154 by \uni0ECA ;
+    sub \glyph155 by \uni0ECB ;
+} SingleSubstitutionlookup16;
+
+lookup ligaStandardLigaturesinLaolookup9 {
+  lookupflag 0;
+    sub [\glyph142 \glyph143 \glyph144 \glyph145 \glyph146 \glyph147 \glyph152 \glyph153 
+	\glyph154 \glyph155 ]'lookup SingleSubstitutionlookup16  [\uni0E81 \uni0E82 \uni0E84 \uni0E87 \uni0E88 \uni0E8A \uni0E8D \uni0E94 \uni0E95 
+	\uni0E96 \uni0E97 \uni0E99 \uni0E9A \uni0E9B \uni0E9C \uni0E9D \uni0E9E 
+	\uni0E9F \uni0EA1 \uni0EA2 \uni0EA3 \uni0EA5 \uni0EA7 \uni0EAA \uni0EAB 
+	\uni0EAD \uni0EAE \uni0EDC \uni0EDD ] [\uni0EB0 \uni0EB1 \uni0EB2 \uni0EB4 \uni0EB5 \uni0EB6 \uni0EB7 \uni0EB8 \uni0EB9 
+	\uni0EBB \uni0EBC \uni0ECD \uni0ECD.blw \glyph142 \glyph143 \glyph144 
+	\glyph145 \glyph146 \glyph147 ] ;
+    sub [\uni0E81 \uni0E82 \uni0E84 \uni0E87 \uni0E88 \uni0E8A \uni0E8D \uni0E94 \uni0E95 
+	\uni0E96 \uni0E97 \uni0E99 \uni0E9A \uni0E9B \uni0E9C \uni0E9D \uni0E9E 
+	\uni0E9F \uni0EA1 \uni0EA2 \uni0EA3 \uni0EA5 \uni0EA7 \uni0EAA \uni0EAB 
+	\uni0EAD \uni0EAE \uni0EDC \uni0EDD ] [\glyph142 \glyph143 \glyph144 \glyph145 \glyph146 \glyph147 \glyph152 \glyph153 
+	\glyph154 \glyph155 ]'lookup SingleSubstitutionlookup16  [\uni0EC8 \uni0EC9 \uni0ECA \uni0ECB \uni0ECC \uni0ECD ] ;
+    sub [\glyph142 \glyph143 \glyph144 \glyph145 \glyph146 \glyph147 \glyph152 \glyph153 
+	\glyph154 \glyph155 ]'lookup SingleSubstitutionlookup16  [\uni0E81 \uni0E82 \uni0E84 \uni0E87 \uni0E88 \uni0E8A \uni0E8D \uni0E94 \uni0E95 
+	\uni0E96 \uni0E97 \uni0E99 \uni0E9A \uni0E9B \uni0E9C \uni0E9D \uni0E9E 
+	\uni0E9F \uni0EA1 \uni0EA2 \uni0EA3 \uni0EA5 \uni0EA7 \uni0EAA \uni0EAB 
+	\uni0EAD \uni0EAE \uni0EDC \uni0EDD ] [\glyph140 \glyph141 ] ;
+    sub [\uni0EC0 \uni0EC1 \uni0EC2 \uni0EC3 \uni0EC4 ] [\uni0E81 \uni0E82 \uni0E84 \uni0E87 \uni0E88 \uni0E8A \uni0E8D \uni0E94 \uni0E95 
+	\uni0E96 \uni0E97 \uni0E99 \uni0E9A \uni0E9B \uni0E9C \uni0E9D \uni0E9E 
+	\uni0E9F \uni0EA1 \uni0EA2 \uni0EA3 \uni0EA5 \uni0EA7 \uni0EAA \uni0EAB 
+	\uni0EAD \uni0EAE \uni0EDC \uni0EDD ] [\glyph142 \glyph143 \glyph144 \glyph145 \glyph146 \glyph147 \glyph152 \glyph153 
+	\glyph154 \glyph155 ]'lookup SingleSubstitutionlookup16  [\uni0E81 \uni0E82 \uni0E84 \uni0E87 \uni0E88 \uni0E8A \uni0E8D \uni0E94 \uni0E95 
+	\uni0E96 \uni0E97 \uni0E99 \uni0E9A \uni0E9B \uni0E9C \uni0E9D \uni0E9E 
+	\uni0E9F \uni0EA1 \uni0EA2 \uni0EA3 \uni0EA5 \uni0EA7 \uni0EAA \uni0EAB 
+	\uni0EAD \uni0EAE \uni0EDC \uni0EDD ] ;
+} ligaStandardLigaturesinLaolookup9;
+
+lookup SingleSubstitutionlookup17 {
+  lookupflag 0;
+    sub \glyph142 by \uni0EB4 ;
+    sub \glyph143 by \uni0EB5 ;
+    sub \glyph144 by \uni0EB6 ;
+    sub \glyph145 by \uni0EB7 ;
+    sub \glyph146 by \uni0EB1 ;
+    sub \glyph147 by \uni0EBB ;
+} SingleSubstitutionlookup17;
+
+lookup ligaStandardLigaturesinLaolookup10 {
+  lookupflag 0;
+    sub [\glyph142 \glyph143 \glyph144 \glyph145 \glyph146 \glyph147 ]'lookup SingleSubstitutionlookup17  [\uni0EC8 \uni0EC9 \uni0ECA \uni0ECB \uni0ECC \uni0ECD ] [\uni0E81 \uni0E82 \uni0E84 \uni0E87 \uni0E88 \uni0E8A \uni0E8D \uni0E94 \uni0E95 
+	\uni0E96 \uni0E97 \uni0E99 \uni0E9A \uni0E9B \uni0E9C \uni0E9D \uni0E9E 
+	\uni0E9F \uni0EA1 \uni0EA2 \uni0EA3 \uni0EA5 \uni0EA7 \uni0EAA \uni0EAB 
+	\uni0EAD \uni0EAE \uni0EDC \uni0EDD ] [\glyph142 \glyph143 \glyph144 \glyph145 \glyph146 \glyph147 ] ;
+    sub [\glyph142 \glyph143 \glyph144 \glyph145 \glyph146 \glyph147 ]'lookup SingleSubstitutionlookup17  [\uni0EC8 \uni0EC9 \uni0ECA \uni0ECB \uni0ECC \uni0ECD ] [\uni0E81 \uni0E82 \uni0E84 \uni0E87 \uni0E88 \uni0E8A \uni0E8D \uni0E94 \uni0E95 
+	\uni0E96 \uni0E97 \uni0E99 \uni0E9A \uni0E9B \uni0E9C \uni0E9D \uni0E9E 
+	\uni0E9F \uni0EA1 \uni0EA2 \uni0EA3 \uni0EA5 \uni0EA7 \uni0EAA \uni0EAB 
+	\uni0EAD \uni0EAE \uni0EDC \uni0EDD ] [\uni0EB0 \uni0EB1 \uni0EB2 \uni0EB4 \uni0EB5 \uni0EB6 \uni0EB7 \uni0EB8 \uni0EB9 
+	\uni0EBB \uni0EBC \uni0ECD \uni0ECD.blw \glyph142 \glyph143 \glyph144 
+	\glyph145 \glyph146 \glyph147 ] ;
+    sub [\glyph142 \glyph143 \glyph144 \glyph145 \glyph146 \glyph147 ]'lookup SingleSubstitutionlookup17  [\uni0E81 \uni0E82 \uni0E84 \uni0E87 \uni0E88 \uni0E8A \uni0E8D \uni0E94 \uni0E95 
+	\uni0E96 \uni0E97 \uni0E99 \uni0E9A \uni0E9B \uni0E9C \uni0E9D \uni0E9E 
+	\uni0E9F \uni0EA1 \uni0EA2 \uni0EA3 \uni0EA5 \uni0EA7 \uni0EAA \uni0EAB 
+	\uni0EAD \uni0EAE \uni0EDC \uni0EDD ] [\uni0E81 \uni0E82 \uni0E84 \uni0E87 \uni0E88 \uni0E8A \uni0E8D \uni0E94 \uni0E95 
+	\uni0E96 \uni0E97 \uni0E99 \uni0E9A \uni0E9B \uni0E9C \uni0E9D \uni0E9E 
+	\uni0E9F \uni0EA1 \uni0EA2 \uni0EA3 \uni0EA5 \uni0EA7 \uni0EAA \uni0EAB 
+	\uni0EAD \uni0EAE \uni0EDC \uni0EDD ] [\uni0E81 \uni0E87 \uni0E8D \uni0E94 \uni0E99 \uni0E9A \uni0EA1 \uni0EA7 ] ;
+} ligaStandardLigaturesinLaolookup10;
+
+lookup 641inLaolookup19 {
+  lookupflag 0;
+    sub \uni0EB3 by \uni0ECD ;
+} 641inLaolookup19;
+
+feature liga {
+
+ script lao ;
+     language dflt ;
+      lookup ligaStandardLigaturesinLaolookup0;
+      lookup ligaStandardLigaturesinLaolookup1;
+      lookup ligaStandardLigaturesinLaolookup2;
+      lookup ligaStandardLigaturesinLaolookup3;
+      lookup ligaStandardLigaturesinLaolookup4;
+      lookup ligaStandardLigaturesinLaolookup5;
+      lookup ligaStandardLigaturesinLaolookup6;
+      lookup ligaStandardLigaturesinLaolookup7;
+      lookup ligaStandardLigaturesinLaolookup8;
+      lookup ligaStandardLigaturesinLaolookup9;
+      lookup ligaStandardLigaturesinLaolookup10;
+} liga;
+
+feature rlig {
+
+ script lao ;
+     language dflt ;
+      lookup ligaStandardLigaturesinLaolookup0;
+      lookup ligaStandardLigaturesinLaolookup1;
+      lookup ligaStandardLigaturesinLaolookup2;
+      lookup ligaStandardLigaturesinLaolookup3;
+      lookup ligaStandardLigaturesinLaolookup4;
+      lookup ligaStandardLigaturesinLaolookup5;
+      lookup ligaStandardLigaturesinLaolookup6;
+      lookup ligaStandardLigaturesinLaolookup7;
+      lookup ligaStandardLigaturesinLaolookup8;
+      lookup ligaStandardLigaturesinLaolookup9;
+      lookup ligaStandardLigaturesinLaolookup10;
+} rlig;
+
+@GDEF_Simple = [\.notdef \.null \space \exclam \quotedbl \numbersign \dollar 
+	\percent \ampersand \quotesingle \parenleft \parenright \asterisk \plus \comma 
+	\hyphen \period \slash \zero \one \two \three \four \five \six \seven \eight \nine 
+	\colon \semicolon \less \equal \greater \question \at \uni0E81 \uni0E82 \uni0E84 
+	\uni0E87 \uni0E88 \uni0E8A \uni0E8D \uni0E94 \uni0E95 \uni0E96 \uni0E97 \uni0E99 
+	\uni0E9A \uni0E9B \uni0E9C \uni0E9D \uni0E9E \uni0E9F \uni0EA1 \uni0EA2 \uni0EA3 
+	\uni0EA5 \uni0EA7 \uni0EAA \uni0EAB \uni0EAD \uni0EAE \uni0EAF \uni0EB0 \uni0EB1 
+	\uni0EB2 \uni0EB3 \uni0EB4 \uni0EB5 \uni0EB6 \uni0EB7 \uni0EB8 \uni0EB9 \uni0EBB 
+	\uni0EBC \uni0EBD \uni0EC0 \uni0EC1 \uni0EC2 \uni0EC3 \uni0EC4 \uni0EC6 \uni0EC8 
+	\uni0EC9 \uni0ECA \uni0ECB \uni0ECC \uni0ECD \uni0ED0 \uni0ED1 \uni0ED2 \uni0ED3 
+	\uni0ED4 \uni0ED5 \uni0ED6 \uni0ED7 \uni0ED8 \uni0ED9 \uni0EDC \uni0EDD 
+	\uni0EC8.blw \uni0EC9.blw \uni0ECA.blw \uni0ECB.blw \uni0ECC.blw \uni0ECD.blw 
+	\uni0ECD_0EC9 \uni0EC8_uni0ECD.liga \uni0E81.am \uni0E82.am \uni0E84.am 
+	\uni0E87.am \uni0E88.am \uni0E8A.am \uni0E8D.am \uni0E94.am \uni0E95.am 
+	\uni0E96.am \uni0E97.am \uni0E99.am \uni0E9A.am \uni0E9B.am \uni0E9C.am 
+	\uni0E9D.am \uni0E9E.am \uni0E9F.am \uni0EA1.am \uni0EA2.am \uni0EA3.am 
+	\uni0EA5.am \uni0EA7.am \uni0EAA.am \uni0EAB.am \uni0EAD.am \uni0EAE.am 
+	\uni0EDC.am \uni0EDD.am \uni0EB3.right \uni0ECB_uni0ECD.liga 
+	\uni0ECA_uni0ECD.liga \glyph140 \glyph141 \glyph142 \glyph143 \glyph144 
+	\glyph145 \glyph146 \glyph147 \uni0E87_uni0EB8.liga \uni0E87_uni0EB9.liga 
+	\uni0EBC_uni0EB8.liga \uni0EBC_uni0EB9.liga \glyph152 \glyph153 \glyph154 
+	\glyph155 \glyph156 \glyph157 \glyph158 \glyph159 \glyph160 \glyph161 \uni0EDE 
+	\uni0EDF \uni200B \uni25CC ];
+
+table GDEF {
+  GlyphClassDef @GDEF_Simple, , , ;
+
+} GDEF;
+
