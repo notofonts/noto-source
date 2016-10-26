@@ -47,13 +47,13 @@ build_one() {
             esac
             if [[ -n "$f" ]]; then
                 fontmake -g "$g" --mti-source "$1" --family-name "$f"\
-                    --production-names
+                    --no-production-names
                 fontmake -i -g "$g" --interpolate-binary-layout\
-                    --family-name "$f" --production-names
+                    --family-name "$f" --no-production-names
             else
-                fontmake -g "$g" --mti-source "$1" --production-names
+                fontmake -g "$g" --mti-source "$1" --no-production-names
                 fontmake -i -g "$g" --interpolate-binary-layout\
-                    --production-names
+                    --no-production-names
             fi
             ;;
         *.glyphs)
