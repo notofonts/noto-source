@@ -13,9 +13,10 @@
 # limitations under the License.
 
 function main() {
+    branch="${TRAVIS_BRANCH}"
     event="${TRAVIS_EVENT_TYPE}"
-    if [[ ( "${event}" != 'push' && "${event}" != 'pull_request' ) ||
-          "${TRAVIS_BRANCH}" != 'master' ]]; then
+    if [[ ( "${branch}" != 'master' && "${branch}" != 'staging' ) ||
+          "${event}" != 'push' ]]; then
         exit 0
     fi
 
@@ -37,17 +38,38 @@ function main() {
         ttf_basename="$(basename "${ttf}")"
         cached_ttf="${cached_outdir}/${ttf_basename}"
 
-        if [[ "${event}" == 'pull_request' && -e "${cached_ttf}" ]]; then
+        if [[ "${branch}" == 'staging' && -e "${cached_ttf}" ]]; then
             specimen="$(python generate_fontdiff_input.py\
                         "${ttf}" 'nototools/sample_texts')"
             if [[ "${specimen}" == 'None' ]]; then continue; fi
             ./fontdiff --before "${cached_ttf}" --after "${ttf}"\
                 --specimen "${specimen}" --out "${ttf_basename/ttf/pdf}"
             echo "fontdiff exit status for ${ttf}: $?"
-        elif [[ "${event}" == 'push' ]]; then
+
+        elif [[ "${branch}" == 'master' ]]; then
             mv "${ttf}" "${cached_ttf}"
         fi
     done
+
+    if [[ "${branch}" == 'staging' && $(ls *.pdf) ]]; then
+        git checkout artifact-branch
+        #TODO could put results in a directory just for this change, to simplify
+        # simultaneous reviews. would also have to to remove it afterwards.
+        mv *.pdf artifacts
+        git add artifacts
+        git commit -m 'Review commit' --amend
+        git push --force origin artifact-branch
+        json='{
+            "title": "Review request",
+            "body": "Review build results at
+                https://github.com/googlei18n/noto-source/tree/artifacts-branch/artifacts",
+            "head": "staging",
+            "base": "master"
+        }'
+        curl -u "noto-buildbot:${noto_buildbot_token}" -d "${json}"\
+            'https://api.github.com/repos/googlei18n/noto-source/pulls'
+        #TODO find and post a comment on the original PR to staging
+    fi
 }
 
 main "$@"
