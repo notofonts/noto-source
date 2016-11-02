@@ -33,13 +33,16 @@ function main() {
         if [[ "${ttf}" == "${outdir}/*.ttf" ]]; then
             break  # didn't expand *, because no TTFs were found
         fi
-        cached_ttf="${cached_outdir}/$(basename "${ttf}")"
+
+        ttf_basename="$(basename "${ttf}")"
+        cached_ttf="${cached_outdir}/${ttf_basename}"
+
         if [[ "${event}" == 'pull_request' && -e "${cached_ttf}" ]]; then
             specimen="$(python generate_fontdiff_input.py\
                         "${ttf}" 'nototools/sample_texts')"
             if [[ "${specimen}" == 'None' ]]; then continue; fi
             ./fontdiff --before "${cached_ttf}" --after "${ttf}"\
-                --specimen "${specimen}" --out "${script}.pdf"
+                --specimen "${specimen}" --out "${ttf_basename/ttf/pdf}"
             echo "fontdiff exit status for ${ttf}: $?"
         elif [[ "${event}" == 'push' ]]; then
             mv "${ttf}" "${cached_ttf}"
