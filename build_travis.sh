@@ -13,6 +13,7 @@
 # limitations under the License.
 
 function main() {
+    # do nothing unless pusing to staging or master
     branch="${TRAVIS_BRANCH}"
     event="${TRAVIS_EVENT_TYPE}"
     if [[ ( "${branch}" != 'master' && "${branch}" != 'staging' ) ||
@@ -20,10 +21,12 @@ function main() {
         exit 0
     fi
 
+    # make sure there's a directory for cached fonts
     outdir='instance_ttf'
     cached_outdir='cached_instance_ttf'
     if [[ ! -d "${cached_outdir}" ]]; then mkdir "${cached_outdir}"; fi
 
+    # build the updated sources
     git diff --name-only "${TRAVIS_COMMIT_RANGE}" | while read src; do
         if [[ "${src}" =~ src/[^/]+\.glyphs ]]; then
             fontmake -i -g "${src}" -o 'ttf'
@@ -31,13 +34,17 @@ function main() {
     done
 
     for ttf in ${outdir}/*.ttf; do
+        # check if * didn't expand, because no TTFs were found
         if [[ "${ttf}" == "${outdir}/*.ttf" ]]; then
-            break  # didn't expand *, because no TTFs were found
+            break
         fi
 
         ttf_basename="$(basename "${ttf}")"
         cached_ttf="${cached_outdir}/${ttf_basename}"
 
+        # compare new output with old if pushed to staging
+        #TODO add more tests and comparisons
+        #TODO add comprehensive text samples to noto-source and use those here
         if [[ "${branch}" == 'staging' && -e "${cached_ttf}" ]]; then
             specimen="$(python generate_fontdiff_input.py\
                         "${ttf}" 'nototools/sample_texts')"
@@ -46,11 +53,13 @@ function main() {
                 --specimen "${specimen}" --out "${ttf_basename/ttf/pdf}"
             echo "fontdiff exit status for ${ttf}: $?"
 
+        # cache new output if pushed to master
         elif [[ "${branch}" == 'master' ]]; then
             mv "${ttf}" "${cached_ttf}"
         fi
     done
 
+    # create a new pull request to master, if pushed to staging
     if [[ "${branch}" == 'staging' && $(ls *.pdf) ]]; then
         git checkout artifact-branch
         #TODO could put results in a directory just for this change, to simplify
