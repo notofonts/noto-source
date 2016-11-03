@@ -61,21 +61,25 @@ function main() {
 
     # create a new pull request to master, if pushed to staging
     if [[ "${branch}" == 'staging' && $(ls *.pdf) ]]; then
+        git config 'user.name' 'noto-buildbot'
+        git config 'user.email' 'noto-buildbot@google.com'
         git checkout artifact-branch
         #TODO could put results in a directory just for this change, to simplify
         # simultaneous reviews. would also have to to remove it afterwards.
         mv *.pdf artifacts
         git add artifacts
         git commit -m 'Review commit' --amend
-        git push --force origin artifact-branch
-        json='{
-            "title": "Review request",
-            "body": "Review build results at
-                https://github.com/googlei18n/noto-source/tree/artifacts-branch/artifacts",
-            "head": "staging",
-            "base": "master"
-        }'
-        curl -u "noto-buildbot:${noto_buildbot_token}" -d "${json}"\
+        git_url='github.com/googlei18n/noto-source'
+        credentials="noto-buildbot:${noto_buildbot_token}"
+        git push --force "https://${credentials}@${git_url}.git" artifact-branch
+        pull_request_json="{
+            'title': 'Review request',
+            'body': 'Review build results at
+                https://${git_url}/tree/artifacts-branch/artifacts',
+            'head': 'staging',
+            'base': 'master'
+        }"
+        curl -u "${credentials}" -d "${pull_request_json}"\
             'https://api.github.com/repos/googlei18n/noto-source/pulls'
         #TODO find and post a comment on the original PR to staging
     fi
