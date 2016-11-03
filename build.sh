@@ -15,7 +15,7 @@
 setup() {
     if [[ ! $(python -m pip) ]]; then
         if [[ ! $(sudo python -m ensurepip) ]]; then
-            echo "You need to manually install pip."
+            echo 'You need to manually install pip.'
             exit 1
         fi
     fi
