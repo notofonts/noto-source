@@ -13,7 +13,7 @@
 # limitations under the License.
 
 function main() {
-    # do nothing unless pusing to staging or master
+    # do nothing unless pushing to staging or master
     branch="${TRAVIS_BRANCH}"
     event="${TRAVIS_EVENT_TYPE}"
     if [[ ( "${branch}" != 'master' && "${branch}" != 'staging' ) ||
