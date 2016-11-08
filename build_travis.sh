@@ -33,8 +33,13 @@ function main() {
             fontmake -i -g "${src}" -o 'ttf'
         fi
     done
-    echo 'new output:'
-    ls "${outdir}"
+    if [[ -e "${outdir}" ]]; then
+        echo 'new output:'
+        ls "${outdir}"
+    else
+        echo 'no sources changed'
+        exit 0
+    fi
 
     # switch to cache branch and make sure there's a directory for cached fonts
     git checkout "${cache_branch}"
