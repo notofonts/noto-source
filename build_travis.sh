@@ -22,9 +22,9 @@ function main() {
     fi
 
     outdir='instance_ttf'
-    cached_outdir='cached_instance_ttf'
-    cmp_dir='artifacts'
-    cache_branch='artifact-branch'
+    cached_outdir='output'
+    cmp_dir='comparisons'
+    cache_branch='cache'
 
     # build the updated sources
     echo "building sources changed from ${TRAVIS_COMMIT_RANGE}"
