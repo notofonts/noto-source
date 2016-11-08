@@ -21,10 +21,10 @@ function main() {
         exit 0
     fi
 
-    # make sure there's a directory for cached fonts
     outdir='instance_ttf'
     cached_outdir='cached_instance_ttf'
-    if [[ ! -d "${cached_outdir}" ]]; then mkdir "${cached_outdir}"; fi
+    cmp_dir='artifacts'
+    cache_branch='artifact-branch'
 
     # build the updated sources
     echo "building sources changed from ${TRAVIS_COMMIT_RANGE}"
@@ -36,6 +36,27 @@ function main() {
     echo 'new output:'
     ls "${outdir}"
 
+    # switch to cache branch and make sure there's a directory for cached fonts
+    git checkout "${cache_branch}"
+    if [[ ! -d "${cached_outdir}" ]]; then
+        mkdir "${cached_outdir}"
+    fi
+
+    # configure git for bot account
+    git config 'user.name' 'noto-buildbot'
+    git config 'user.email' 'noto-buildbot@google.com'
+    git_url='github.com/googlei18n/noto-source'
+    credentials="noto-buildbot:${noto_buildbot_token}"
+
+    # just cache new output if pushed to master
+    if [[ "${branch}" == 'master' ]]; then
+        for ttf in ${outdir}/*.ttf; do
+            mv "${ttf}" "${cached_outdir}"
+        done
+        exit 0
+    fi
+
+    # otherwise, compare new output with old
     for ttf in ${outdir}/*.ttf; do
         # check if * didn't expand, because no TTFs were built
         if [[ "${ttf}" == "${outdir}/*.ttf" ]]; then
@@ -50,47 +71,44 @@ function main() {
             continue
         fi
 
-        # compare new output with old if pushed to staging
         #TODO add more tests and comparisons
         #TODO add comprehensive text samples to noto-source and use those here
-        if [[ "${branch}" == 'staging' && -e "${cached_ttf}" ]]; then
-            specimen="$(python generate_fontdiff_input.py\
-                        "${ttf}" 'nototools/sample_texts')"
-            if [[ "${specimen}" == 'None' ]]; then continue; fi
-            ./fontdiff --before "${cached_ttf}" --after "${ttf}"\
-                --specimen "${specimen}" --out "${ttf_basename/ttf/pdf}"
-            echo "fontdiff exit status for ${ttf}: $?"
-
-        # cache new output if pushed to master
-        elif [[ "${branch}" == 'master' ]]; then
-            mv "${ttf}" "${cached_ttf}"
+        echo "checking ${ttf} against ${cached_ttf}"
+        specimen="$(python generate_fontdiff_input.py\
+                    "${ttf}" 'nototools/sample_texts')"
+        if [[ "${specimen}" == 'None' ]]; then
+            continue
         fi
+        ./fontdiff --before "${cached_ttf}" --after "${ttf}"\
+            --specimen "${specimen}" --out "${ttf_basename/ttf/pdf}"
+        echo "fontdiff exit status for ${ttf}: $?"
     done
 
-    # create a new pull request to master, if pushed to staging
-    if [[ "${branch}" == 'staging' && $(ls *.pdf) ]]; then
-        git config 'user.name' 'noto-buildbot'
-        git config 'user.email' 'noto-buildbot@google.com'
-        git checkout artifact-branch
-        #TODO could put results in a directory just for this change, to simplify
-        # simultaneous reviews. would also have to to remove it afterwards.
-        mv *.pdf artifacts
-        git add artifacts
-        git commit -m 'Review commit' --amend
-        git_url='github.com/googlei18n/noto-source'
-        credentials="noto-buildbot:${noto_buildbot_token}"
-        git push --force "https://${credentials}@${git_url}.git" artifact-branch
-        pull_request_json="{
-            'title': 'Review request',
-            'body': 'Review build results at
-                https://${git_url}/tree/artifacts-branch/artifacts',
-            'head': 'staging',
-            'base': 'master'
-        }"
-        curl -u "${credentials}" -d "${pull_request_json}"\
-            'https://api.github.com/repos/googlei18n/noto-source/pulls'
-        #TODO find and post a comment on the original PR to staging
+    # check that some comparisons were made
+    if [[ ! $(ls *.pdf) ]]; then
+        echo 'No cached fonts found for these changes'
+        exit 1
     fi
+
+    # upload comparison results
+    #TODO could put results in a directory just for this change, to simplify
+    # simultaneous reviews. would also have to to remove it afterwards.
+    mv *.pdf "${cmp_dir}"
+    git add "${cmp_dir}"
+    git commit -m 'Review commit' --amend
+    git push --force "https://${credentials}@${git_url}.git" "${cache_branch}"
+
+    # create a new pull request to master
+    pull_request_json="{
+        'title': 'Review request',
+        'body': 'Review build results at
+            https://${git_url}/tree/${cache_branch}/${cmp_dir}',
+        'head': 'staging',
+        'base': 'master'
+    }"
+    curl -u "${credentials}" -d "${pull_request_json}"\
+        'https://api.github.com/repos/googlei18n/noto-source/pulls'
+    #TODO find and post a comment on the original PR to staging
 }
 
 main "$@"
