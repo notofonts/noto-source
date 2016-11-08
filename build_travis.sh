@@ -53,6 +53,10 @@ function main() {
         for ttf in ${outdir}/*.ttf; do
             mv "${ttf}" "${cached_outdir}"
         done
+        git add "${cached_outdir}"
+        git commit -m 'Update cached output' --amend
+        git push --force "https://${credentials}@${git_url}.git"\
+            "${cache_branch}"
         exit 0
     fi
 
