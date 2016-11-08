@@ -27,20 +27,28 @@ function main() {
     if [[ ! -d "${cached_outdir}" ]]; then mkdir "${cached_outdir}"; fi
 
     # build the updated sources
+    echo "building sources changed from ${TRAVIS_COMMIT_RANGE}"
     git diff --name-only "${TRAVIS_COMMIT_RANGE}" | while read src; do
         if [[ "${src}" =~ src/[^/]+\.glyphs ]]; then
             fontmake -i -g "${src}" -o 'ttf'
         fi
     done
+    echo 'new output:'
+    ls "${outdir}"
 
     for ttf in ${outdir}/*.ttf; do
-        # check if * didn't expand, because no TTFs were found
+        # check if * didn't expand, because no TTFs were built
         if [[ "${ttf}" == "${outdir}/*.ttf" ]]; then
-            break
+            echo 'No fonts built for these changes'
+            exit 0
         fi
 
         ttf_basename="$(basename "${ttf}")"
         cached_ttf="${cached_outdir}/${ttf_basename}"
+        if [[ -n "${cached_ttf}" ]]; then
+            echo "Cached font not found for ${ttf}"
+            continue
+        fi
 
         # compare new output with old if pushed to staging
         #TODO add more tests and comparisons
