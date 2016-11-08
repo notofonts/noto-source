@@ -61,7 +61,7 @@ function main() {
         git add "${cached_outdir}"
         git commit -m 'Update cached output' --amend
         git push --force "https://${credentials}@${git_url}.git"\
-            "${cache_branch}"
+            "${cache_branch}" >/dev/null 2>&1
         exit 0
     fi
 
@@ -105,7 +105,8 @@ function main() {
     mv *.pdf "${cmp_dir}"
     git add "${cmp_dir}"
     git commit -m 'Review commit' --amend
-    git push --force "https://${credentials}@${git_url}.git" "${cache_branch}"
+    git push --force "https://${credentials}@${git_url}.git"\
+        "${cache_branch}" >/dev/null 2>&1
 
     # create a new pull request to master
     pull_request_json="{
