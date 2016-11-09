@@ -42,6 +42,8 @@ function main() {
     fi
 
     # switch to cache branch and make sure there's a directory for cached fonts
+    git remote set-branches --add origin "${cache_branch}"
+    git fetch
     git checkout "${cache_branch}"
     if [[ ! -d "${cached_outdir}" ]]; then
         mkdir "${cached_outdir}"
