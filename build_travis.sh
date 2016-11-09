@@ -77,7 +77,7 @@ function main() {
 
         ttf_basename="$(basename "${ttf}")"
         cached_ttf="${cached_outdir}/${ttf_basename}"
-        if [[ -n "${cached_ttf}" ]]; then
+        if [[ ! -e "${cached_ttf}" ]]; then
             echo "Cached font not found for ${ttf}"
             continue
         fi
@@ -97,7 +97,7 @@ function main() {
 
     # check that some comparisons were made
     if [[ ! $(ls *.pdf) ]]; then
-        echo 'No cached fonts found for these changes'
+        echo 'No comparisons made for these changes'
         exit 1
     fi
 
