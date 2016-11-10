@@ -77,7 +77,7 @@ function main() {
 
         ttf_basename="$(basename "${ttf}")"
         cached_ttf="${cached_outdir}/${ttf_basename}"
-        if [[ -n "${cached_ttf}" ]]; then
+        if [[ ! -e "${cached_ttf}" ]]; then
             echo "Cached font not found for ${ttf}"
             continue
         fi
@@ -97,7 +97,7 @@ function main() {
 
     # check that some comparisons were made
     if [[ ! $(ls *.pdf) ]]; then
-        echo 'No cached fonts found for these changes'
+        echo 'No comparisons made for these changes'
         exit 1
     fi
 
@@ -111,14 +111,14 @@ function main() {
         "${cache_branch}" >/dev/null 2>&1
 
     # create a new pull request to master
-    pull_request_json="{
-        'title': 'Review request',
-        'body': 'Review build results at
-            https://${git_url}/tree/${cache_branch}/${cmp_dir}',
-        'head': 'staging',
-        'base': 'master'
-    }"
-    curl -u "${credentials}" -d "${pull_request_json}"\
+    pull_request_json='{
+        "title": "Review request",
+        "body": "Review build results at
+            https://'"${git_url}"'/tree/'"${cache_branch}"'/'"${cmp_dir}"'",
+        "head": "staging",
+        "base": "master"
+    }'
+    curl -u "${credentials}" -d "${pull_request_json//$'\n'/}"\
         'https://api.github.com/repos/googlei18n/noto-source/pulls'
     #TODO find and post a comment on the original PR to staging
 }
