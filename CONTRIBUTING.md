@@ -21,6 +21,17 @@ frustration later on.
 All submissions, including submissions by project members, require review. We
 use Github pull requests for this purpose.
 
+### Font editing
+
+Many noto-source contributors use [glyphsapp](https://glyphsapp.com/) for editing
+the .glyph files in this repository.
+
+For those new to font editing that don't yet want to invest in paid editing
+software, there's also [TruFont](https://trufont.github.io/). The issue being that
+TruFont works on .ufo files instead of .glyphs files, and though we have a way of
+converting Glyphs -> UFO, a UFO -> Glyphs converter is yet to be built.
+Relevant issue: googlei18n/glyphsLib#74
+
 ### The small print
 Contributions made by corporations are covered by a different agreement than
 the one above, the
