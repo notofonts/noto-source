@@ -23,7 +23,11 @@ function main() {
 
     outdir='instance_ttf'
     cached_outdir='output'
+
+    #TODO use a separate report path, directory and branch for each change, to
+    # allow for simultaneous reviews. would have to clean them up afterwards.
     cmp_dir='comparisons'
+    cmp_report="${cmp_dir}/report.txt"
     cache_branch='cache'
 
     # build the updated sources
@@ -68,13 +72,16 @@ function main() {
     fi
 
     # otherwise, compare new output with old
-    for ttf in ${outdir}/*.ttf; do
-        # check if * didn't expand, because no TTFs were built
-        if [[ "${ttf}" == "${outdir}/*.ttf" ]]; then
-            echo 'No fonts built for these changes'
-            exit 0
-        fi
+    #TODO add more tests and comparisons (fontreport, notolint, unit tests)
+    git rm -r "${cmp_dir}"
+    mkdir "${cmp_dir}"
 
+    echo 'running notodiff rendering check...'
+    notodiff -t 'rendered' --render-path "${cmp_dir}" --diff-threshold 0.01\
+        --before "${cached_ttf}" --after "${ttf}" >> "${cmp_report}"
+
+    echo 'running fontdiff...'
+    for ttf in ${outdir}/*.ttf; do
         ttf_basename="$(basename "${ttf}")"
         cached_ttf="${cached_outdir}/${ttf_basename}"
         if [[ ! -e "${cached_ttf}" ]]; then
@@ -82,39 +89,45 @@ function main() {
             continue
         fi
 
-        #TODO add more tests and comparisons
         #TODO add comprehensive text samples to noto-source and use those here
         echo "checking ${ttf} against ${cached_ttf}"
         specimen="$(python generate_fontdiff_input.py\
                     "${ttf}" 'nototools/sample_texts')"
         if [[ "${specimen}" == 'None' ]]; then
+            echo 'no input text found'
             continue
         fi
+        out_pdf="${ttf_basename/%.ttf/.pdf}"
         ./fontdiff --before "${cached_ttf}" --after "${ttf}"\
-            --specimen "${specimen}" --out "${ttf_basename/ttf/pdf}"
-        echo "fontdiff exit status for ${ttf}: $?"
+            --specimen "${specimen}" --out "${out_pdf}"
+        exit_status="$?"
+        msg="fontdiff exit status for ${ttf}: ${exit_status}"
+        echo "${msg}"
+        if [[ "${exit_status}" -ne 0 ]]; then
+            echo "${msg}" >> "${cmp_report}"
+            mv "${out_pdf}" "${cmp_dir}"
+        fi
     done
 
     # check that some comparisons were made
-    if [[ ! $(ls *.pdf) ]]; then
+    if [[ ! $(ls "${cmp_dir}/*.png" "${cmp_dir}/*.pdf") ]]; then
         echo 'No comparisons made for these changes'
         exit 1
     fi
 
     # upload comparison results
-    #TODO could put results in a directory just for this change, to simplify
-    # simultaneous reviews. would also have to to remove it afterwards.
-    mv *.pdf "${cmp_dir}"
     git add "${cmp_dir}"
     git commit -m 'Review commit' --amend
     git push --force "https://${credentials}@${git_url}.git"\
         "${cache_branch}" >/dev/null 2>&1
 
     # create a new pull request to master
+    cmp_report_url="https://${git_url}/blob/${cache_branch}/${cmp_report}"
+    cmp_dir_url="https://${git_url}/tree/${cache_branch}/${cmp_dir}"
     pull_request_json='{
         "title": "Review request",
-        "body": "Review build results at
-            https://'"${git_url}"'/tree/'"${cache_branch}"'/'"${cmp_dir}"'",
+        "body": "Review report of changes at '"${cmp_report_url}"'.  \n
+            Renderings at '"${cmp_dir_url}"'.",
         "head": "staging",
         "base": "master"
     }'
