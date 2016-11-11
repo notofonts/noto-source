@@ -28,7 +28,7 @@ function main() {
     # allow for simultaneous reviews. would have to clean them up afterwards.
     cmp_dir='comparisons'
     cmp_report="${cmp_dir}/report.txt"
-    cache_branch='cache'
+    cache_branch='gh-pages'
 
     # build the updated sources
     echo "building sources changed from ${TRAVIS_COMMIT_RANGE}"
