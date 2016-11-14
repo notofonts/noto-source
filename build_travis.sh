@@ -33,6 +33,7 @@ function main() {
     # build the updated sources
     echo "building sources changed from ${TRAVIS_COMMIT_RANGE}"
     git diff --name-only "${TRAVIS_COMMIT_RANGE}" | while read src; do
+        #TODO also build sources with mti feature files (i.e. from .plist)
         if [[ "${src}" =~ src/[^/]+\.glyphs ]]; then
             fontmake -i -g "${src}" -o 'ttf'
         fi
