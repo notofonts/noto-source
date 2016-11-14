@@ -110,7 +110,7 @@ function main() {
     done
 
     # check that some comparisons were made
-    if [[ ! $(ls "${cmp_dir}/*.png" "${cmp_dir}/*.pdf") ]]; then
+    if [[ ! $(ls "${cmp_dir}/*/*.png" "${cmp_dir}/*.pdf") ]]; then
         echo 'No comparisons made for these changes'
         exit 1
     fi
