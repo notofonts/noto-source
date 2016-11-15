@@ -28,11 +28,12 @@ function main() {
     # allow for simultaneous reviews. would have to clean them up afterwards.
     cmp_dir='comparisons'
     cmp_report="${cmp_dir}/report.txt"
-    cache_branch='cache'
+    cache_branch='gh-pages'
 
     # build the updated sources
     echo "building sources changed from ${TRAVIS_COMMIT_RANGE}"
     git diff --name-only "${TRAVIS_COMMIT_RANGE}" | while read src; do
+        #TODO also build sources with mti feature files (i.e. from .plist)
         if [[ "${src}" =~ src/[^/]+\.glyphs ]]; then
             fontmake -i -g "${src}" -o 'ttf'
         fi
@@ -110,7 +111,7 @@ function main() {
     done
 
     # check that some comparisons were made
-    if [[ ! $(ls "${cmp_dir}/*.png" "${cmp_dir}/*.pdf") ]]; then
+    if [[ ! $(ls "${cmp_dir}"/*/*.png "${cmp_dir}"/*.pdf) ]]; then
         echo 'No comparisons made for these changes'
         exit 1
     fi
