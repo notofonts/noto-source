@@ -80,7 +80,7 @@ function main() {
     echo 'running notodiff rendering check...'
     notodiff -t 'rendered' --render-path "${cmp_dir}" --diff-threshold 0.01\
         -m '*.ttf' --before "${cached_outdir}" --after "${outdir}"\
-        >> "${cmp_report}"
+        --verbose 'INFO' >> "${cmp_report}"
 
     echo 'running fontdiff...'
     for ttf in ${outdir}/*.ttf; do
