@@ -21,6 +21,8 @@ function main() {
         exit 0
     fi
 
+    hb-view --version
+
     outdir='instance_ttf'
     cached_outdir='output'
 
