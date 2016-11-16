@@ -13,9 +13,11 @@
 # limitations under the License.
 
 function main() {
-    # do nothing unless pushing to staging or master
     branch="${TRAVIS_BRANCH}"
     event="${TRAVIS_EVENT_TYPE}"
+    commit_range="${TRAVIS_COMMIT_RANGE}"
+
+    # do nothing unless pushing to staging or master
     if [[ ( "${branch}" != 'master' && "${branch}" != 'staging' ) ||
           "${event}" != 'push' ]]; then
         exit 0
@@ -28,11 +30,12 @@ function main() {
     # allow for simultaneous reviews. would have to clean them up afterwards.
     cmp_dir='comparisons'
     cmp_report="${cmp_dir}/report.txt"
-    cache_branch='cache'
+    cache_branch='gh-pages'
 
     # build the updated sources
-    echo "building sources changed from ${TRAVIS_COMMIT_RANGE}"
-    git diff --name-only "${TRAVIS_COMMIT_RANGE}" | while read src; do
+    echo "building sources changed from ${commit_range}"
+    git diff --name-only "${commit_range}" | while read src; do
+        #TODO also build sources with mti feature files (i.e. from .plist)
         if [[ "${src}" =~ src/[^/]+\.glyphs ]]; then
             fontmake -i -g "${src}" -o 'ttf'
         fi
@@ -78,7 +81,8 @@ function main() {
 
     echo 'running notodiff rendering check...'
     notodiff -t 'rendered' --render-path "${cmp_dir}" --diff-threshold 0.01\
-        --before "${cached_ttf}" --after "${ttf}" >> "${cmp_report}"
+        -m '*.ttf' --before "${cached_outdir}" --after "${outdir}"\
+        --verbose 'INFO' >> "${cmp_report}"
 
     echo 'running fontdiff...'
     for ttf in ${outdir}/*.ttf; do
@@ -110,24 +114,23 @@ function main() {
     done
 
     # check that some comparisons were made
-    if [[ ! $(ls "${cmp_dir}/*.png" "${cmp_dir}/*.pdf") ]]; then
+    if [[ ! $(ls "${cmp_dir}"/*/*.png "${cmp_dir}"/*.pdf) ]]; then
         echo 'No comparisons made for these changes'
         exit 1
     fi
 
-    # upload comparison results
-    git add "${cmp_dir}"
+    # generate comparison summary and upload
+    python generate_html.py "${commit_range}" "${cmp_dir}"
+    git add 'index.html' "${cmp_dir}"
     git commit -m 'Review commit' --amend
     git push --force "https://${credentials}@${git_url}.git"\
         "${cache_branch}" >/dev/null 2>&1
 
     # create a new pull request to master
-    cmp_report_url="https://${git_url}/blob/${cache_branch}/${cmp_report}"
-    cmp_dir_url="https://${git_url}/tree/${cache_branch}/${cmp_dir}"
     pull_request_json='{
         "title": "Review request",
-        "body": "Review report of changes at '"${cmp_report_url}"'.  \n
-            Renderings at '"${cmp_dir_url}"'.",
+        "body": "Review report of changes at
+            https://googlei18n.github.io/noto-source/.",
         "head": "staging",
         "base": "master"
     }'
