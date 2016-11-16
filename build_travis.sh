@@ -119,24 +119,24 @@ function main() {
         exit 1
     fi
 
-    # upload comparison results
-    git add "${cmp_dir}"
+    # generate comparison summary and upload
+    python generate_html.py "${commit_range}" "${cmp_dir}"
+    git add 'index.html' "${cmp_dir}"
     git commit -m 'Review commit' --amend
     git push --force "https://${credentials}@${git_url}.git"\
         "${cache_branch}" >/dev/null 2>&1
 
     # create a new pull request to master
-    #cmp_report_url="https://${git_url}/blob/${cache_branch}/${cmp_report}"
-    #cmp_dir_url="https://${git_url}/tree/${cache_branch}/${cmp_dir}"
-    #pull_request_json='{
-    #    "title": "Review request",
-    #    "body": "Review report of changes at '"${cmp_report_url}"'.  \n
-    #        Renderings at '"${cmp_dir_url}"'.",
-    #    "head": "staging",
-    #    "base": "master"
-    #}'
+    pull_request_json='{
+        "title": "Review request",
+        "body": "Review report of changes at
+            https://googlei18n.github.io/noto-source/.",
+        "head": "staging",
+        "base": "master"
+    }'
     #curl -u "${credentials}" -d "${pull_request_json//$'\n'/}"\
     #    'https://api.github.com/repos/googlei18n/noto-source/pulls'
+    echo "${pull_request_json//$'\n'/}"
     #TODO find and post a comment on the original PR to staging
 }
 
