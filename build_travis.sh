@@ -13,9 +13,11 @@
 # limitations under the License.
 
 function main() {
-    # do nothing unless pushing to staging or master
     branch="${TRAVIS_BRANCH}"
     event="${TRAVIS_EVENT_TYPE}"
+    commit_range="${TRAVIS_COMMIT_RANGE}"
+
+    # do nothing unless pushing to staging or master
     if [[ ( "${branch}" != 'master' && "${branch}" != 'staging' ) ||
           "${event}" != 'push' ]]; then
         exit 0
@@ -31,8 +33,8 @@ function main() {
     cache_branch='gh-pages'
 
     # build the updated sources
-    echo "building sources changed from ${TRAVIS_COMMIT_RANGE}"
-    git diff --name-only "${TRAVIS_COMMIT_RANGE}" | while read src; do
+    echo "building sources changed from ${commit_range}"
+    git diff --name-only "${commit_range}" | while read src; do
         #TODO also build sources with mti feature files (i.e. from .plist)
         if [[ "${src}" =~ src/[^/]+\.glyphs ]]; then
             fontmake -i -g "${src}" -o 'ttf'
