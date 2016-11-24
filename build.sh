@@ -12,6 +12,8 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+source util.sh
+
 setup() {
     if [[ ! $(python -m pip) ]]; then
         if [[ ! $(sudo python -m ensurepip) ]]; then
@@ -35,32 +37,13 @@ build_all() {
 build_one() {
     case "$1" in
         *.plist)
-            g="${1/.plist/.glyphs}"
-            case "$1" in
-                */NotoSansDevanagariUI-MM.plist)
-                    g="${g/UI/}"
-                    f='Noto Sans Devanagari UI'
-                    ;;
-                *)
-                    f=''
-                    ;;
-            esac
-            if [[ -n "$f" ]]; then
-                fontmake -g "$g" --mti-source "$1" --family-name "$f"\
-                    --no-production-names
-                fontmake -i -g "$g" --interpolate-binary-layout\
-                    --family-name "$f" --no-production-names
-            else
-                fontmake -g "$g" --mti-source "$1" --no-production-names
-                fontmake -i -g "$g" --interpolate-binary-layout\
-                    --no-production-names
-            fi
+            build_plist "$1" 'otf' 'ttf'
             ;;
         *.glyphs)
-            fontmake -i -g "$1"
+            build_glyphs "$1" 'otf' 'ttf'
             ;;
         *.ufo)
-            fontmake --keep-overlaps -u "$1" -o ttf
+            build_ufo "$1"
             ;;
         *)
             echo "unrecognized file type $1"

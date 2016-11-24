@@ -12,6 +12,8 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+source util.sh
+
 function main() {
     branch="${TRAVIS_BRANCH}"
     event="${TRAVIS_EVENT_TYPE}"
@@ -35,9 +37,14 @@ function main() {
     # build the updated sources
     echo "building sources changed from ${commit_range}"
     git diff --name-only "${commit_range}" | while read src; do
-        #TODO also build sources with mti feature files (i.e. from .plist)
         if [[ "${src}" =~ src/[^/]+\.glyphs ]]; then
-            fontmake -i -g "${src}" -o 'ttf'
+            build_glyphs "${src}" 'ttf'
+        elif [[ "${src}" =~ src/[^/]+/[^/]+\.plist ]]; then
+            build_plist "${src}" 'ttf'
+        elif [[ "${src}" =~ src/[^/]+/[^/]+\.glyphs ]]; then
+            for plist_src in $(dirname "${src}")/*.plist; do
+                build_plist "${plist_src}" 'ttf'
+            done
         fi
     done
     if [[ -e "${outdir}" ]]; then
