@@ -15,6 +15,7 @@ install:
   - python setup.py install
   - cd ..
   # for notodiff
+  - pip install Pillow
   - wget https://www.freedesktop.org/software/harfbuzz/release/harfbuzz-1.3.2.tar.bz2
   - tar xjf harfbuzz-1.3.2.tar.bz2
   - cd harfbuzz-1.3.2
