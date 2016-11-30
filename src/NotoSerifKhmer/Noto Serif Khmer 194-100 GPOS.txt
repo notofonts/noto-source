@@ -1,0 +1,4180 @@
+FontDame GPOS table
+
+EM	1000
+
+
+script table begin
+khmr	default		0, 1, 2
+script table end
+
+
+feature table begin
+0	abvm	10, 11, 12, 13, 14, 15, 16, 26, 27, 28, 29
+1	blwm	30, 31, 32, 33, 34, 35, 38, 39
+2	dist	5, 6, 7, 8, 9
+
+feature table end
+
+lookup	0	single
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+x placement	uni17C2	72
+x advance	uni17C2	72
+
+lookup end
+
+
+lookup	1	single
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+x placement	uni179A	85
+x advance	uni179A	85
+
+lookup end
+
+
+lookup	2	single
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+x placement	uni1783	50
+
+lookup end
+
+
+lookup	3	single
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+x placement	uni178B	30
+
+lookup end
+
+
+lookup	4	single
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+x advance	uni17B2	20
+
+lookup end
+
+
+lookup	5	chained
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+backtrackcoverage definition begin
+uni17D2179A
+coverage definition end
+
+inputcoverage definition begin
+uni1783
+coverage definition end
+
+coverage	1,2
+lookup end
+
+
+lookup	6	chained
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+backtrackcoverage definition begin
+uni17D2179A
+coverage definition end
+
+inputcoverage definition begin
+uni178B
+coverage definition end
+
+coverage	1,3
+lookup end
+
+
+lookup	7	chained
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+backtrackcoverage definition begin
+uni17B2
+coverage definition end
+
+inputcoverage definition begin
+uni17D21799
+coverage definition end
+
+coverage	1,4
+lookup end
+
+
+lookup	8	chained
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+backtrackcoverage definition begin
+uni17B8.r
+uni17B9.r
+uni17BA.r
+uni17CF.r
+uni17D0
+coverage definition end
+
+inputcoverage definition begin
+uni17C2
+coverage definition end
+
+coverage	1,0
+subtable end
+
+backtrackcoverage definition begin
+space
+coverage definition end
+
+backtrackcoverage definition begin
+uni17B8.r
+uni17B9.r
+uni17BA.r
+uni17CF.r
+uni17D0
+coverage definition end
+
+inputcoverage definition begin
+uni17C2
+coverage definition end
+
+coverage	1,0
+lookup end
+
+
+lookup	9	chained
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+backtrackcoverage definition begin
+uni17B8.r
+uni17B9.r
+uni17BA.r
+uni17CF.r
+uni17D0
+coverage definition end
+
+inputcoverage definition begin
+uni179A
+coverage definition end
+
+lookaheadcoverage definition begin
+uni17B7.r
+uni17B717CD.r
+uni17B8.r
+uni17B9.r
+uni17BA.r
+uni17CC.r
+uni17CF.r
+uni17DD.r
+coverage definition end
+
+coverage	1,1
+subtable end
+
+backtrackcoverage definition begin
+space
+coverage definition end
+
+backtrackcoverage definition begin
+uni17B8.r
+uni17B9.r
+uni17BA.r
+uni17CF.r
+uni17D0
+coverage definition end
+
+inputcoverage definition begin
+uni179A
+coverage definition end
+
+lookaheadcoverage definition begin
+uni17B7.r
+uni17B717CD.r
+uni17B8.r
+uni17B9.r
+uni17BA.r
+uni17CC.r
+uni17CF.r
+uni17DD.r
+coverage definition end
+
+coverage	1,1
+subtable end
+
+backtrackcoverage definition begin
+uni17B8.r
+uni17B9.r
+uni17BA.r
+uni17CF.r
+uni17D0
+coverage definition end
+
+inputcoverage definition begin
+uni179A
+coverage definition end
+
+lookaheadcoverage definition begin
+uni17BB
+coverage definition end
+
+lookaheadcoverage definition begin
+uni17B7.r
+uni17B717CD.r
+uni17B8.r
+uni17B9.r
+uni17BA.r
+uni17CC.r
+uni17CF.r
+uni17DD.r
+coverage definition end
+
+coverage	1,1
+subtable end
+
+backtrackcoverage definition begin
+space
+coverage definition end
+
+backtrackcoverage definition begin
+uni17B8.r
+uni17B9.r
+uni17BA.r
+uni17CF.r
+uni17D0
+coverage definition end
+
+inputcoverage definition begin
+uni179A
+coverage definition end
+
+lookaheadcoverage definition begin
+uni17BB
+coverage definition end
+
+lookaheadcoverage definition begin
+uni17B7.r
+uni17B717CD.r
+uni17B8.r
+uni17B9.r
+uni17BA.r
+uni17CC.r
+uni17CF.r
+uni17DD.r
+coverage definition end
+
+coverage	1,1
+subtable end
+
+backtrackcoverage definition begin
+uni17B8.r
+uni17B9.r
+uni17BA.r
+uni17CF.r
+uni17D0
+coverage definition end
+
+inputcoverage definition begin
+uni179A
+coverage definition end
+
+lookaheadcoverage definition begin
+uni17BB
+coverage definition end
+
+lookaheadcoverage definition begin
+uni17D21780
+uni17D21781
+uni17D21782
+uni17D21784
+uni17D21785
+uni17D21786
+uni17D21787
+uni17D21789
+uni17D2178A
+uni17D2178B
+uni17D2178C
+uni17D2178E
+uni17D2178F
+uni17D21790
+uni17D21791
+uni17D21792
+uni17D21793
+uni17D21795
+uni17D21796
+uni17D21797
+uni17D21798
+uni17D2179B
+uni17D2179C
+uni17D2179D
+uni17D217A0
+uni17D217A2
+uni17D217AB
+coverage definition end
+
+lookaheadcoverage definition begin
+uni17B7.r
+uni17B717CD.r
+uni17B8.r
+uni17B9.r
+uni17BA.r
+uni17CC.r
+uni17CF.r
+uni17DD.r
+coverage definition end
+
+coverage	1,1
+subtable end
+
+backtrackcoverage definition begin
+space
+coverage definition end
+
+backtrackcoverage definition begin
+uni17B8.r
+uni17B9.r
+uni17BA.r
+uni17CF.r
+uni17D0
+coverage definition end
+
+inputcoverage definition begin
+uni179A
+coverage definition end
+
+lookaheadcoverage definition begin
+uni17BB
+coverage definition end
+
+lookaheadcoverage definition begin
+uni17D21780
+uni17D21781
+uni17D21782
+uni17D21784
+uni17D21785
+uni17D21786
+uni17D21787
+uni17D21789
+uni17D2178A
+uni17D2178B
+uni17D2178C
+uni17D2178E
+uni17D2178F
+uni17D21790
+uni17D21791
+uni17D21792
+uni17D21793
+uni17D21795
+uni17D21796
+uni17D21797
+uni17D21798
+uni17D2179B
+uni17D2179C
+uni17D2179D
+uni17D217A0
+uni17D217A2
+uni17D217AB
+coverage definition end
+
+lookaheadcoverage definition begin
+uni17B7.r
+uni17B717CD.r
+uni17B8.r
+uni17B9.r
+uni17BA.r
+uni17CC.r
+uni17CF.r
+uni17DD.r
+coverage definition end
+
+coverage	1,1
+subtable end
+
+backtrackcoverage definition begin
+uni17B8.r
+uni17B9.r
+uni17BA.r
+uni17CF.r
+uni17D0
+coverage definition end
+
+inputcoverage definition begin
+uni179A
+coverage definition end
+
+lookaheadcoverage definition begin
+uni17D21780
+uni17D21781
+uni17D21782
+uni17D21784
+uni17D21785
+uni17D21786
+uni17D21787
+uni17D21789
+uni17D2178A
+uni17D2178B
+uni17D2178C
+uni17D2178E
+uni17D2178F
+uni17D21790
+uni17D21791
+uni17D21792
+uni17D21793
+uni17D21795
+uni17D21796
+uni17D21797
+uni17D21798
+uni17D2179B
+uni17D2179C
+uni17D2179D
+uni17D217A0
+uni17D217A2
+uni17D217AB
+coverage definition end
+
+lookaheadcoverage definition begin
+uni17B7.r
+uni17B717CD.r
+uni17B8.r
+uni17B9.r
+uni17BA.r
+uni17CC.r
+uni17CF.r
+uni17DD.r
+coverage definition end
+
+coverage	1,1
+subtable end
+
+backtrackcoverage definition begin
+space
+coverage definition end
+
+backtrackcoverage definition begin
+uni17B8.r
+uni17B9.r
+uni17BA.r
+uni17CF.r
+uni17D0
+coverage definition end
+
+inputcoverage definition begin
+uni179A
+coverage definition end
+
+lookaheadcoverage definition begin
+uni17D21780
+uni17D21781
+uni17D21782
+uni17D21784
+uni17D21785
+uni17D21786
+uni17D21787
+uni17D21789
+uni17D2178A
+uni17D2178B
+uni17D2178C
+uni17D2178E
+uni17D2178F
+uni17D21790
+uni17D21791
+uni17D21792
+uni17D21793
+uni17D21795
+uni17D21796
+uni17D21797
+uni17D21798
+uni17D2179B
+uni17D2179C
+uni17D2179D
+uni17D217A0
+uni17D217A2
+uni17D217AB
+coverage definition end
+
+lookaheadcoverage definition begin
+uni17B7.r
+uni17B717CD.r
+uni17B8.r
+uni17B9.r
+uni17BA.r
+uni17CC.r
+uni17CF.r
+uni17DD.r
+coverage definition end
+
+coverage	1,1
+subtable end
+
+backtrackcoverage definition begin
+uni17D21780
+uni17D21781
+uni17D21782
+uni17D21784
+uni17D21785
+uni17D21786
+uni17D21787
+uni17D21789
+uni17D2178A
+uni17D2178B
+uni17D2178C
+uni17D2178E
+uni17D2178F
+uni17D21790
+uni17D21791
+uni17D21792
+uni17D21793
+uni17D21795
+uni17D21796
+uni17D21797
+uni17D21798
+uni17D2179B
+uni17D2179C
+uni17D2179D
+uni17D217A0
+uni17D217A2
+uni17D217AB
+coverage definition end
+
+backtrackcoverage definition begin
+uni179A
+uni179C
+coverage definition end
+
+inputcoverage definition begin
+uni179A
+coverage definition end
+
+lookaheadcoverage definition begin
+uni17D21780
+uni17D21781
+uni17D21782
+uni17D21784
+uni17D21785
+uni17D21786
+uni17D21787
+uni17D21789
+uni17D2178A
+uni17D2178B
+uni17D2178C
+uni17D2178E
+uni17D2178F
+uni17D21790
+uni17D21791
+uni17D21792
+uni17D21793
+uni17D21795
+uni17D21796
+uni17D21797
+uni17D21798
+uni17D2179B
+uni17D2179C
+uni17D2179D
+uni17D217A0
+uni17D217A2
+uni17D217AB
+coverage definition end
+
+coverage	1,1
+subtable end
+
+backtrackcoverage definition begin
+space
+coverage definition end
+
+backtrackcoverage definition begin
+uni17D21780
+uni17D21781
+uni17D21782
+uni17D21784
+uni17D21785
+uni17D21786
+uni17D21787
+uni17D21789
+uni17D2178A
+uni17D2178B
+uni17D2178C
+uni17D2178E
+uni17D2178F
+uni17D21790
+uni17D21791
+uni17D21792
+uni17D21793
+uni17D21795
+uni17D21796
+uni17D21797
+uni17D21798
+uni17D2179B
+uni17D2179C
+uni17D2179D
+uni17D217A0
+uni17D217A2
+uni17D217AB
+coverage definition end
+
+backtrackcoverage definition begin
+uni179A
+uni179C
+coverage definition end
+
+inputcoverage definition begin
+uni179A
+coverage definition end
+
+lookaheadcoverage definition begin
+uni17D21780
+uni17D21781
+uni17D21782
+uni17D21784
+uni17D21785
+uni17D21786
+uni17D21787
+uni17D21789
+uni17D2178A
+uni17D2178B
+uni17D2178C
+uni17D2178E
+uni17D2178F
+uni17D21790
+uni17D21791
+uni17D21792
+uni17D21793
+uni17D21795
+uni17D21796
+uni17D21797
+uni17D21798
+uni17D2179B
+uni17D2179C
+uni17D2179D
+uni17D217A0
+uni17D217A2
+uni17D217AB
+coverage definition end
+
+coverage	1,1
+subtable end
+
+backtrackcoverage definition begin
+uni17B7.r
+uni17B717CD.r
+uni17B8.r
+uni17B9.r
+uni17BA.r
+coverage definition end
+
+backtrackcoverage definition begin
+uni17D21780
+uni17D21781
+uni17D21782
+uni17D21784
+uni17D21785
+uni17D21786
+uni17D21787
+uni17D21789
+uni17D2178A
+uni17D2178B
+uni17D2178C
+uni17D2178E
+uni17D2178F
+uni17D21790
+uni17D21791
+uni17D21792
+uni17D21793
+uni17D21795
+uni17D21796
+uni17D21797
+uni17D21798
+uni17D2179B
+uni17D2179C
+uni17D2179D
+uni17D217A0
+uni17D217A2
+uni17D217AB
+coverage definition end
+
+inputcoverage definition begin
+uni179A
+coverage definition end
+
+lookaheadcoverage definition begin
+uni17D21780
+uni17D21781
+uni17D21782
+uni17D21784
+uni17D21785
+uni17D21786
+uni17D21787
+uni17D21789
+uni17D2178A
+uni17D2178B
+uni17D2178C
+uni17D2178E
+uni17D2178F
+uni17D21790
+uni17D21791
+uni17D21792
+uni17D21793
+uni17D21795
+uni17D21796
+uni17D21797
+uni17D21798
+uni17D2179B
+uni17D2179C
+uni17D2179D
+uni17D217A0
+uni17D217A2
+uni17D217AB
+coverage definition end
+
+coverage	1,1
+subtable end
+
+backtrackcoverage definition begin
+space
+coverage definition end
+
+backtrackcoverage definition begin
+uni17B7.r
+uni17B717CD.r
+uni17B8.r
+uni17B9.r
+uni17BA.r
+coverage definition end
+
+backtrackcoverage definition begin
+uni17D21780
+uni17D21781
+uni17D21782
+uni17D21784
+uni17D21785
+uni17D21786
+uni17D21787
+uni17D21789
+uni17D2178A
+uni17D2178B
+uni17D2178C
+uni17D2178E
+uni17D2178F
+uni17D21790
+uni17D21791
+uni17D21792
+uni17D21793
+uni17D21795
+uni17D21796
+uni17D21797
+uni17D21798
+uni17D2179B
+uni17D2179C
+uni17D2179D
+uni17D217A0
+uni17D217A2
+uni17D217AB
+coverage definition end
+
+inputcoverage definition begin
+uni179A
+coverage definition end
+
+lookaheadcoverage definition begin
+uni17D21780
+uni17D21781
+uni17D21782
+uni17D21784
+uni17D21785
+uni17D21786
+uni17D21787
+uni17D21789
+uni17D2178A
+uni17D2178B
+uni17D2178C
+uni17D2178E
+uni17D2178F
+uni17D21790
+uni17D21791
+uni17D21792
+uni17D21793
+uni17D21795
+uni17D21796
+uni17D21797
+uni17D21798
+uni17D2179B
+uni17D2179C
+uni17D2179D
+uni17D217A0
+uni17D217A2
+uni17D217AB
+coverage definition end
+
+coverage	1,1
+subtable end
+
+backtrackcoverage definition begin
+uni17D21798
+coverage definition end
+
+inputcoverage definition begin
+uni179A
+coverage definition end
+
+lookaheadcoverage definition begin
+uni17BC
+uni17BD
+coverage definition end
+
+coverage	1,1
+subtable end
+
+backtrackcoverage definition begin
+space
+coverage definition end
+
+backtrackcoverage definition begin
+uni17D21798
+coverage definition end
+
+inputcoverage definition begin
+uni179A
+coverage definition end
+
+lookaheadcoverage definition begin
+uni17BC
+uni17BD
+coverage definition end
+
+coverage	1,1
+subtable end
+
+backtrackcoverage definition begin
+uni17D21780
+uni17D21781
+uni17D21782
+uni17D21784
+uni17D21785
+uni17D21786
+uni17D21787
+uni17D21789
+uni17D2178A
+uni17D2178B
+uni17D2178C
+uni17D2178E
+uni17D2178F
+uni17D21790
+uni17D21791
+uni17D21792
+uni17D21793
+uni17D21795
+uni17D21796
+uni17D21797
+uni17D21798
+uni17D2179B
+uni17D2179C
+uni17D2179D
+uni17D217A0
+uni17D217A2
+uni17D217AB
+coverage definition end
+
+backtrackcoverage definition begin
+uni179A
+uni179C
+coverage definition end
+
+inputcoverage definition begin
+uni179A
+coverage definition end
+
+lookaheadcoverage definition begin
+uni17BC
+uni17BD
+coverage definition end
+
+coverage	1,1
+subtable end
+
+backtrackcoverage definition begin
+space
+coverage definition end
+
+backtrackcoverage definition begin
+uni17D21780
+uni17D21781
+uni17D21782
+uni17D21784
+uni17D21785
+uni17D21786
+uni17D21787
+uni17D21789
+uni17D2178A
+uni17D2178B
+uni17D2178C
+uni17D2178E
+uni17D2178F
+uni17D21790
+uni17D21791
+uni17D21792
+uni17D21793
+uni17D21795
+uni17D21796
+uni17D21797
+uni17D21798
+uni17D2179B
+uni17D2179C
+uni17D2179D
+uni17D217A0
+uni17D217A2
+uni17D217AB
+coverage definition end
+
+backtrackcoverage definition begin
+uni179A
+uni179C
+coverage definition end
+
+inputcoverage definition begin
+uni179A
+coverage definition end
+
+lookaheadcoverage definition begin
+uni17BC
+uni17BD
+coverage definition end
+
+coverage	1,1
+lookup end
+
+
+lookup	10	mark to base
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+mark	uni17B7	0	-353,854
+mark	uni17B7.r	0	-390,852
+mark	uni17B717CD	0	-353,854
+mark	uni17B717CD.r	0	-390,853
+mark	uni17B8	0	-353,854
+mark	uni17B8.r	0	-390,854
+mark	uni17B9	0	-353,854
+mark	uni17B9.r	0	-390,854
+mark	uni17BA	0	-353,854
+mark	uni17BA.r	0	-390,853
+mark	uni17C6	0	-353,854
+mark	uni17C6.r	0	-353,854
+mark	uni17C9	0	-353,853
+mark	uni17C9.r	0	-353,853
+mark	uni17CA	0	-353,854
+mark	uni17CA.r	0	-353,751
+mark	uni17CA.b	0	-353,811
+mark	uni17CB	0	-353,826
+mark	uni17CC	0	-353,789
+mark	uni17CC.r	0	-353,789
+mark	uni17CD	0	-353,767
+mark	uni17CD.r	0	-353,767
+mark	uni17CE	0	-353,854
+mark	uni17CF	0	-353,854
+mark	uni17CF.r	0	-353,854
+mark	uni17D0	0	-353,854
+mark	uni17D1	0	-353,854
+mark	uni17D1.r	0	-353,854
+mark	uni17D3	0	-353,854
+mark	uni17D3.r	0	-353,854
+mark	uni17DD	0	-310,854
+mark	uni17DD.r	0	-310,854
+base	uni1780	0	350,760
+base	uni1781	0	356,760
+base	uni1782	0	350,760
+base	uni1783	0	745,760
+base	uni1784	0	416,840
+base	uni1785	0	345,760
+base	uni1786	0	404,760
+base	uni1787	0	360,860
+base	uni1788	0	1081,760
+base	uni1789	0	744,760
+base	uni1789.a	0	760,760
+base	uni178A	0	355,840
+base	uni178B	0	415,850
+base	uni178C	0	358,760
+base	uni178D	0	694,760
+base	uni178E	0	693,760
+base	uni178F	0	367,760
+base	uni1790	0	370,860
+base	uni1791	0	344,760
+base	uni1792	0	365,760
+base	uni1793	0	367,760
+base	uni1794	0	370,760
+base	uni1794.a	0	372,760
+base	uni1794.a2	0	372,760
+base	uni1795	0	360,860
+base	uni1796	0	353,760
+base	uni1797	0	437,760
+base	uni1798	0	369,760
+base	uni1799	0	717,760
+base	uni179A	0	236,760
+base	uni179B	0	731,760
+base	uni179C	0	250,840
+base	uni179D	0	350,760
+base	uni179E	0	358,760
+base	uni179F	0	731,760
+base	uni17A0	0	693,760
+base	uni17A1	0	615,760
+base	uni17A2	0	425,760
+base	uni17A3	0	425,760
+base	uni17A4	0	425,760
+base	uni17A7	0	355,760
+base	uni17A8	0	348,942
+base	uni17A9	0	348,760
+base	uni17AA	0	348,1061
+base	uni17AB	0	338,760
+base	uni17AC	0	338,760
+base	uni17B1	0	349,1044
+base	uni17B3	0	348,1065
+base	uni17BF.right1	0	10,1220
+base	uni17BF.right2	0	10,1220
+base	uni17BF.right3	0	10,1220
+base	uni17C0.right1	0	9,1230
+base	uni17C0.right1.high	0	9,1300
+base	uni17C0.right2	0	9,1230
+base	uni17C0.right3	0	9,1230
+base	uni17D21783	0	132,760
+base	uni17D21783.low	0	132,760
+base	uni17D21788	0	125,760
+base	uni17D21788.low	0	125,760
+base	uni17D2178D	0	113,760
+base	uni17D2178D.low	0	113,760
+base	uni17D21794	0	134,760
+base	uni17D21794.low	0	134,760
+base	uni17D21799	0	125,760
+base	uni17D21799.low	0	125,760
+base	uni17D2179E	0	134,760
+base	uni17D2179E.low	0	134,760
+base	uni17D2179F	0	128,760
+base	uni17D2179F.low	0	128,760
+base	uni17D217A1	0	129,760
+base	uni25CC	0	314,600
+
+lookup end
+
+
+lookup	11	mark to ligature
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+mark	uni17B7	0	-353,854
+mark	uni17B7.r	0	-390,852
+mark	uni17B717CD	0	-353,854
+mark	uni17B717CD.r	0	-390,853
+mark	uni17B8	0	-353,854
+mark	uni17B8.r	0	-390,854
+mark	uni17B9	0	-353,854
+mark	uni17B9.r	0	-390,854
+mark	uni17BA	0	-353,854
+mark	uni17BA.r	0	-390,853
+mark	uni17C6	0	-353,854
+mark	uni17C6.r	0	-353,854
+mark	uni17C9	0	-353,853
+mark	uni17C9.r	0	-353,853
+mark	uni17CA	0	-353,854
+mark	uni17CA.r	0	-353,751
+mark	uni17CA.b	0	-353,811
+mark	uni17CB	0	-353,826
+mark	uni17CC	0	-353,789
+mark	uni17CC.r	0	-353,789
+mark	uni17CD	0	-353,767
+mark	uni17CD.r	0	-353,767
+mark	uni17CE	0	-353,854
+mark	uni17CF	0	-353,854
+mark	uni17CF.r	0	-353,854
+mark	uni17D0	0	-353,854
+mark	uni17D1	0	-353,854
+mark	uni17D1.r	0	-353,854
+mark	uni17D3	0	-353,854
+mark	uni17D3.r	0	-353,854
+mark	uni17DD	0	-310,854
+mark	uni17DD.r	0	-310,854
+ligature	uni178017B6	1	2	0	350,760
+ligature	uni178017B6	2	2	0	769,760
+ligature	uni178017C5	1	2	0	350,760
+ligature	uni178017C5	2	2	0	350,760
+ligature	uni178117B6	1	2	0	356,760
+ligature	uni178117B6	2	2	0	765,760
+ligature	uni178117C5	1	2	0	356,760
+ligature	uni178117C5	2	2	0	356,760
+ligature	uni178217B6	1	2	0	362,760
+ligature	uni178217B6	2	2	0	769,760
+ligature	uni178217C5	1	2	0	362,760
+ligature	uni178217C5	2	2	0	362,760
+ligature	uni178317B6	1	2	0	745,760
+ligature	uni178317B6	2	2	0	1129,760
+ligature	uni178317C5	1	2	0	745,760
+ligature	uni178317C5	2	2	0	745,760
+ligature	uni178417B6	1	2	0	426,838
+ligature	uni178417B6	2	2	0	843,760
+ligature	uni178417C5	1	2	0	426,838
+ligature	uni178417C5	2	2	0	426,838
+ligature	uni178517B6	1	2	0	369,760
+ligature	uni178517B6	2	2	0	772,760
+ligature	uni178517C5	1	2	0	369,760
+ligature	uni178517C5	2	2	0	369,760
+ligature	uni178617B6	1	2	0	404,760
+ligature	uni178617B6	2	2	0	791,760
+ligature	uni178617C5	1	2	0	404,760
+ligature	uni178617C5	2	2	0	404,760
+ligature	uni178717B6	1	2	0	360,860
+ligature	uni178717B6	2	2	0	776,870
+ligature	uni178717C5	1	2	0	360,860
+ligature	uni178717C5	2	2	0	360,860
+ligature	uni178817B6	1	2	0	1081,760
+ligature	uni178817B6	2	2	0	1475,760
+ligature	uni178817C5	1	2	0	1081,760
+ligature	uni178817C5	2	2	0	1081,760
+ligature	uni178917B6	1	2	0	744,761
+ligature	uni178917B6	2	2	0	1134,760
+ligature	uni178917C5	1	2	0	744,761
+ligature	uni178917C5	2	2	0	744,761
+ligature	uni178917B6.a	1	2	0	744,760
+ligature	uni178917B6.a	2	2	0	1146,760
+ligature	uni178917C5.a	1	2	0	744,760
+ligature	uni178917C5.a	2	2	0	1001,760
+ligature	uni178A17B6	1	2	0	367,884
+ligature	uni178A17B6	2	2	0	756,884
+ligature	uni178A17C5	1	2	0	351,884
+ligature	uni178A17C5	2	2	0	351,884
+ligature	uni178B17B6	1	2	0	415,850
+ligature	uni178B17B6	2	2	0	783,850
+ligature	uni178B17C5	1	2	0	415,850
+ligature	uni178B17C5	2	2	0	415,850
+ligature	uni178C17B6	1	2	0	351,760
+ligature	uni178C17B6	2	2	0	764,760
+ligature	uni178C17C5	1	2	0	351,760
+ligature	uni178C17C5	2	2	0	351,760
+ligature	uni178D17B6	1	2	0	692,760
+ligature	uni178D17B6	2	2	0	1207,760
+ligature	uni178D17C5	1	2	0	692,760
+ligature	uni178D17C5	2	2	0	692,760
+ligature	uni178E17B6	1	2	0	693,760
+ligature	uni178E17B6	2	2	0	1433,760
+ligature	uni178E17C5	1	2	0	693,760
+ligature	uni178E17C5	2	2	0	693,760
+ligature	uni178F17B6	1	2	0	343,760
+ligature	uni178F17B6	2	2	0	769,760
+ligature	uni178F17C5	1	2	0	373,760
+ligature	uni178F17C5	2	2	0	373,760
+ligature	uni179017B6	1	2	0	370,870
+ligature	uni179017B6	2	2	0	802,870
+ligature	uni179017C5	1	2	0	370,870
+ligature	uni179017C5	2	2	0	370,870
+ligature	uni179117B6	1	2	0	344,760
+ligature	uni179117B6	2	2	0	767,760
+ligature	uni179117C5	1	2	0	344,760
+ligature	uni179117C5	2	2	0	344,760
+ligature	uni179217B6	1	2	0	384,760
+ligature	uni179217B6	2	2	0	782,760
+ligature	uni179217C5	1	2	0	384,760
+ligature	uni179217C5	2	2	0	384,760
+ligature	uni179317B6	1	2	0	367,760
+ligature	uni179317B6	2	2	0	763,760
+ligature	uni179317C5	1	2	0	367,760
+ligature	uni179317C5	2	2	0	367,760
+ligature	uni179417B6	1	2	0	281,760
+ligature	uni179417B6	2	2	0	769,760
+ligature	uni179417B6.high	1	2	0	281,760
+ligature	uni179417B6.high	2	2	0	769,760
+ligature	uni179417C5	1	2	0	383,760
+ligature	uni179417C5	2	2	0	383,760
+ligature	uni179417C5.high	1	2	0	383,760
+ligature	uni179417C5.high	2	2	0	383,760
+ligature	uni179517B6	1	2	0	350,870
+ligature	uni179517B6	2	2	0	762,870
+ligature	uni179517C5	1	2	0	350,870
+ligature	uni179517C5	2	2	0	350,870
+ligature	uni179617B6	1	2	0	337,760
+ligature	uni179617B6	2	2	0	800,760
+ligature	uni179617C5	1	2	0	337,760
+ligature	uni179617C5	2	2	0	337,760
+ligature	uni179717B6	1	2	0	437,760
+ligature	uni179717B6	2	2	0	842,760
+ligature	uni179717C5	1	2	0	437,760
+ligature	uni179717C5	2	2	0	437,760
+ligature	uni179817B6	1	2	0	369,760
+ligature	uni179817B6	2	2	0	770,760
+ligature	uni179817C5	1	2	0	369,760
+ligature	uni179817C5	2	2	0	369,760
+ligature	uni179917B6	1	2	0	699,760
+ligature	uni179917B6	2	2	0	1114,760
+ligature	uni179917C5	1	2	0	699,760
+ligature	uni179917C5	2	2	0	699,760
+ligature	uni179A17B6	1	2	0	228,760
+ligature	uni179A17B6	2	2	0	492,760
+ligature	uni179A17C5	1	2	0	214,760
+ligature	uni179A17C5	2	2	0	214,760
+ligature	uni179B17B6	1	2	0	731,760
+ligature	uni179B17B6	2	2	0	1130,760
+ligature	uni179B17C5	1	2	0	731,760
+ligature	uni179B17C5	2	2	0	731,760
+ligature	uni179C17B6	1	2	0	250,840
+ligature	uni179C17B6	2	2	0	476,840
+ligature	uni179C17C5	1	2	0	250,840
+ligature	uni179C17C5	2	2	0	250,840
+ligature	uni179D17B6	1	2	0	360,760
+ligature	uni179D17B6	2	2	0	779,760
+ligature	uni179D17C5	1	2	0	360,760
+ligature	uni179D17C5	2	2	0	605,760
+ligature	uni179E17B6	1	2	0	361,760
+ligature	uni179E17B6	2	2	0	770,760
+ligature	uni179E17C5	1	2	0	361,760
+ligature	uni179E17C5	2	2	0	617,760
+ligature	uni179F17B6	1	2	0	727,760
+ligature	uni179F17B6	2	2	0	1122,760
+ligature	uni179F17C5	1	2	0	727,760
+ligature	uni179F17C5	2	2	0	727,760
+ligature	uni17A017B6	1	2	0	676,760
+ligature	uni17A017B6	2	2	0	1113,760
+ligature	uni17A017C5	1	2	0	676,760
+ligature	uni17A017C5	2	2	0	676,760
+ligature	uni17A117B6	1	2	0	609,760
+ligature	uni17A117B6	2	2	0	1086,760
+ligature	uni17A117C5	1	2	0	646,760
+ligature	uni17A117C5	2	2	0	646,760
+ligature	uni17A217B6	1	2	0	425,760
+ligature	uni17A217B6	2	2	0	838,760
+ligature	uni17A217C5	1	2	0	425,760
+ligature	uni17A217C5	2	2	0	425,760
+ligature	uni17D2178317B6	1	2	0	422,760
+ligature	uni17D2178317B6	2	2	0	422,760
+ligature	uni17D2178317B6.low	1	2	0	422,760
+ligature	uni17D2178317B6.low	2	2	0	422,760
+ligature	uni17D2178317C5	1	2	0	39,760
+ligature	uni17D2178317C5	2	2	0	39,760
+ligature	uni17D2178317C5.low	1	2	0	39,760
+ligature	uni17D2178317C5.low	2	2	0	39,760
+ligature	uni17D2178817B6	1	2	0	415,760
+ligature	uni17D2178817B6	2	2	0	415,760
+ligature	uni17D2178817B6.low	1	2	0	415,760
+ligature	uni17D2178817B6.low	2	2	0	415,760
+ligature	uni17D2178817C5	1	2	0	137,760
+ligature	uni17D2178817C5	2	2	0	137,760
+ligature	uni17D2178817C5.low	1	2	0	137,760
+ligature	uni17D2178817C5.low	2	2	0	137,760
+ligature	uni17D2178D17B6	1	2	0	403,760
+ligature	uni17D2178D17B6	2	2	0	403,760
+ligature	uni17D2178D17B6.low	1	2	0	403,760
+ligature	uni17D2178D17B6.low	2	2	0	403,760
+ligature	uni17D2178D17C5	1	2	0	37,760
+ligature	uni17D2178D17C5	2	2	0	37,760
+ligature	uni17D2178D17C5.low	1	2	0	37,760
+ligature	uni17D2178D17C5.low	2	2	0	37,760
+ligature	uni17D2179417B6	1	2	0	424,760
+ligature	uni17D2179417B6	2	2	0	424,760
+ligature	uni17D2179417B6.low	1	2	0	424,760
+ligature	uni17D2179417B6.low	2	2	0	424,760
+ligature	uni17D2179417C5	1	2	0	58,760
+ligature	uni17D2179417C5	2	2	0	58,760
+ligature	uni17D2179417C5.low	1	2	0	58,760
+ligature	uni17D2179417C5.low	2	2	0	58,760
+ligature	uni17D2179917B6	1	2	0	415,760
+ligature	uni17D2179917B6	2	2	0	415,760
+ligature	uni17D2179917B6.low	1	2	0	415,760
+ligature	uni17D2179917B6.low	2	2	0	415,760
+ligature	uni17D2179917C5	1	2	0	107,760
+ligature	uni17D2179917C5	2	2	0	107,760
+ligature	uni17D2179917C5.low	1	2	0	107,760
+ligature	uni17D2179917C5.low	2	2	0	107,760
+ligature	uni17D2179E17B6	1	2	0	424,760
+ligature	uni17D2179E17B6	2	2	0	424,760
+ligature	uni17D2179E17B6.low	1	2	0	424,760
+ligature	uni17D2179E17B6.low	2	2	0	424,760
+ligature	uni17D2179E17C5	1	2	0	-16,760
+ligature	uni17D2179E17C5	2	2	0	202,760
+ligature	uni17D2179E17C5.low	1	2	0	-16,760
+ligature	uni17D2179E17C5.low	2	2	0	202,760
+ligature	uni17D2179F17B6	1	2	0	418,760
+ligature	uni17D2179F17B6	2	2	0	418,760
+ligature	uni17D2179F17B6.low	1	2	0	418,760
+ligature	uni17D2179F17B6.low	2	2	0	418,760
+ligature	uni17D2179F17C5	1	2	0	-22,760
+ligature	uni17D2179F17C5	2	2	0	-22,760
+ligature	uni17D2179F17C5.low	1	2	0	-22,760
+ligature	uni17D2179F17C5.low	2	2	0	-22,760
+
+lookup end
+
+
+lookup	12	mark to mark
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+MarkAttachmentType	1
+
+mark	uni17B7	0	-353,854
+mark	uni17B7.r	0	-390,852
+mark	uni17B717CD	0	-353,854
+mark	uni17B717CD.r	0	-390,853
+mark	uni17B8	0	-353,854
+mark	uni17B8.r	0	-390,854
+mark	uni17B9	0	-353,854
+mark	uni17B9.r	0	-390,854
+mark	uni17BA	0	-353,854
+mark	uni17BA.r	0	-390,853
+mark	uni17C6	0	-353,854
+mark	uni17C6.r	0	-353,854
+mark	uni17C9	0	-353,853
+mark	uni17C9.r	0	-353,853
+mark	uni17CA	0	-353,854
+mark	uni17CA.r	0	-353,751
+mark	uni17CA.b	0	-353,811
+mark	uni17CB	0	-353,826
+mark	uni17CC	0	-353,789
+mark	uni17CC.r	0	-353,789
+mark	uni17CD	0	-353,767
+mark	uni17CD.r	0	-353,767
+mark	uni17CE	0	-353,854
+mark	uni17CF	0	-353,854
+mark	uni17CF.r	0	-353,854
+mark	uni17D0	0	-353,854
+mark	uni17D1	0	-353,854
+mark	uni17D1.r	0	-353,854
+mark	uni17D3	0	-353,854
+mark	uni17D3.r	0	-353,854
+mark	uni17DD	0	-310,854
+mark	uni17DD.r	0	-310,854
+base	uni17B7	0	-353,1117
+base	uni17B7.r	0	-390,1115
+base	uni17B717CD	0	-353,1234
+base	uni17B717CD.r	0	-390,1199
+base	uni17B8	0	-353,1190
+base	uni17B8.r	0	-390,1152
+base	uni17B9	0	-353,1167
+base	uni17B9.r	0	-390,1152
+base	uni17BA	0	-353,1170
+base	uni17BA.r	0	-390,1170
+base	uni17C6	0	-353,1191
+base	uni17C6.r	0	-353,1191
+base	uni17C9	0	-353,1120
+base	uni17C9.r	0	-353,1120
+base	uni17CA	0	-353,1154
+base	uni17CA.r	0	-353,1030
+base	uni17CA.b	0	-353,1030
+base	uni17CB	0	-353,1089
+base	uni17CC	0	-353,1139
+base	uni17CC.r	0	-353,1139
+base	uni17CD	0	-353,1127
+base	uni17CD.r	0	-353,1127
+base	uni17CE	0	-353,1160
+base	uni17CF	0	-353,1277
+base	uni17CF.r	0	-353,1277
+base	uni17D0	0	-353,1210
+base	uni17D1	0	-353,1070
+base	uni17D1.r	0	-353,1070
+base	uni17D3	0	-353,1118
+base	uni17D3.r	0	-353,1118
+base	uni17DD	0	-312,1105
+base	uni17DD.r	0	-312,1105
+
+lookup end
+
+
+lookup	13	mark to base
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+mark	uni17C6	0	-353,854
+mark	uni17C6.r	0	-353,854
+base	uni1780	0	350,728
+base	uni1782	0	350,728
+base	uni1787	0	361,830
+base	uni178A	0	355,805
+base	uni178F	0	367,728
+base	uni1790	0	371,850
+base	uni1795	0	361,820
+base	uni1797	0	433,704
+base	uni17A4	0	998,740
+
+lookup end
+
+
+lookup	14	mark to ligature
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+mark	uni17C6	0	-353,854
+mark	uni17C6.r	0	-353,854
+ligature	uni178017B6	1	2	0	350,760
+ligature	uni178017B6	2	2	0	873,740
+ligature	uni178117B6	1	2	0	356,760
+ligature	uni178117B6	2	2	0	925,740
+ligature	uni178217B6	1	2	0	362,760
+ligature	uni178217B6	2	2	0	906,740
+ligature	uni178317B6	1	2	0	745,760
+ligature	uni178317B6	2	2	0	1289,740
+ligature	uni178417B6	1	2	0	426,838
+ligature	uni178417B6	2	2	0	1003,740
+ligature	uni178517B6	1	2	0	369,760
+ligature	uni178517B6	2	2	0	909,740
+ligature	uni178617B6	1	2	0	404,760
+ligature	uni178617B6	2	2	0	928,740
+ligature	uni178717B6	1	2	0	360,860
+ligature	uni178717B6	2	2	0	361,830
+ligature	uni178717C5	1	2	0	360,860
+ligature	uni178717C5	2	2	0	361,830
+ligature	uni178817B6	1	2	0	1081,760
+ligature	uni178817B6	2	2	0	1635,740
+ligature	uni178917B6	1	2	0	744,761
+ligature	uni178917B6	2	2	0	1294,740
+ligature	uni178917B6.a	1	2	0	744,760
+ligature	uni178917B6.a	2	2	0	1306,740
+ligature	uni178A17B6	1	2	0	367,884
+ligature	uni178A17B6	2	2	0	756,884
+ligature	uni178A17C5	1	2	0	351,884
+ligature	uni178A17C5	2	2	0	348,880
+ligature	uni178B17B6	1	2	0	415,850
+ligature	uni178B17B6	2	2	0	915,850
+ligature	uni178C17B6	1	2	0	351,760
+ligature	uni178C17B6	2	2	0	924,740
+ligature	uni178D17B6	1	2	0	692,760
+ligature	uni178D17B6	2	2	0	1367,740
+ligature	uni178E17B6	1	2	0	693,760
+ligature	uni178E17B6	2	2	0	1593,740
+ligature	uni178F17B6	1	2	0	343,760
+ligature	uni178F17B6	2	2	0	906,740
+ligature	uni179017B6	1	2	0	370,870
+ligature	uni179017B6	2	2	0	944,740
+ligature	uni179017C5	1	2	0	370,870
+ligature	uni179017C5	2	2	0	371,870
+ligature	uni179117B6	1	2	0	344,760
+ligature	uni179117B6	2	2	0	927,740
+ligature	uni179217B6	1	2	0	384,760
+ligature	uni179217B6	2	2	0	919,740
+ligature	uni179317B6	1	2	0	367,760
+ligature	uni179317B6	2	2	0	935,740
+ligature	uni179417B6	1	2	0	281,760
+ligature	uni179417B6	2	2	0	906,740
+ligature	uni179417B6.high	1	2	0	281,760
+ligature	uni179417B6.high	2	2	0	906,740
+ligature	uni179517B6	1	2	0	350,870
+ligature	uni179517B6	2	2	0	862,760
+ligature	uni179517C5	1	2	0	350,870
+ligature	uni179517C5	2	2	0	350,860
+ligature	uni179617B6	1	2	0	337,760
+ligature	uni179617B6	2	2	0	960,740
+ligature	uni179717B6	1	2	0	437,760
+ligature	uni179717B6	2	2	0	979,740
+ligature	uni179817B6	1	2	0	369,760
+ligature	uni179817B6	2	2	0	930,740
+ligature	uni179917B6	1	2	0	699,760
+ligature	uni179917B6	2	2	0	1274,740
+ligature	uni179A17B6	1	2	0	228,760
+ligature	uni179A17B6	2	2	0	652,740
+ligature	uni179B17B6	1	2	0	731,760
+ligature	uni179B17B6	2	2	0	1290,740
+ligature	uni179C17B6	1	2	0	250,840
+ligature	uni179C17B6	2	2	0	627,800
+ligature	uni179D17B6	1	2	0	360,760
+ligature	uni179D17B6	2	2	0	916,740
+ligature	uni179E17B6	1	2	0	361,760
+ligature	uni179E17B6	2	2	0	930,740
+ligature	uni179F17B6	1	2	0	727,760
+ligature	uni179F17B6	2	2	0	1282,740
+ligature	uni17A017B6	1	2	0	676,760
+ligature	uni17A017B6	2	2	0	1273,740
+ligature	uni17A117B6	1	2	0	609,760
+ligature	uni17A117B6	2	2	0	1246,740
+ligature	uni17A217B6	1	2	0	425,760
+ligature	uni17A217B6	2	2	0	998,740
+ligature	uni17D2178317B6	1	2	0	422,760
+ligature	uni17D2178317B6	2	2	0	582,740
+ligature	uni17D2178317B6.low	1	2	0	422,760
+ligature	uni17D2178317B6.low	2	2	0	582,740
+ligature	uni17D2178817B6	1	2	0	415,760
+ligature	uni17D2178817B6	2	2	0	575,740
+ligature	uni17D2178817B6.low	1	2	0	415,760
+ligature	uni17D2178817B6.low	2	2	0	575,740
+ligature	uni17D2178D17B6	1	2	0	403,760
+ligature	uni17D2178D17B6	2	2	0	563,740
+ligature	uni17D2178D17B6.low	1	2	0	403,760
+ligature	uni17D2178D17B6.low	2	2	0	563,740
+ligature	uni17D2179417B6	1	2	0	424,760
+ligature	uni17D2179417B6	2	2	0	584,740
+ligature	uni17D2179417B6.low	1	2	0	424,760
+ligature	uni17D2179417B6.low	2	2	0	584,740
+ligature	uni17D2179917B6	1	2	0	415,760
+ligature	uni17D2179917B6	2	2	0	575,740
+ligature	uni17D2179917B6.low	1	2	0	415,760
+ligature	uni17D2179917B6.low	2	2	0	575,740
+ligature	uni17D2179E17B6	1	2	0	424,760
+ligature	uni17D2179E17B6	2	2	0	584,740
+ligature	uni17D2179E17B6.low	1	2	0	424,760
+ligature	uni17D2179E17B6.low	2	2	0	584,740
+ligature	uni17D2179F17B6	1	2	0	418,760
+ligature	uni17D2179F17B6	2	2	0	578,740
+ligature	uni17D2179F17B6.low	1	2	0	418,760
+ligature	uni17D2179F17B6.low	2	2	0	578,740
+
+lookup end
+
+
+lookup	15	mark to mark
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+MarkAttachmentType	1
+
+mark	uni17C6	0	-353,854
+mark	uni17C6.r	0	-353,854
+base	uni17B6	0	70,740
+
+lookup end
+
+
+lookup	16	mark to ligature
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+mark	uni17C9	0	-353,853
+mark	uni17C9.r	0	-353,853
+ligature	uni179A17B6	1	2	0	390,760
+ligature	uni179A17B6	2	2	0	390,760
+ligature	uni179C17B6	1	2	0	476,840
+ligature	uni179C17B6	2	2	0	476,840
+
+lookup end
+
+
+lookup	17	single
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+x placement	uni17D0	553
+
+lookup end
+
+
+lookup	18	single
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+x placement	uni17D0	896
+
+lookup end
+
+
+lookup	19	single
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+x placement	uni17D0	676
+
+lookup end
+
+
+lookup	20	single
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+x placement	uni17D0	417
+
+lookup end
+
+
+lookup	21	single
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+x placement	uni17D0	589
+
+lookup end
+
+
+lookup	22	single
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+x placement	uni17D0	473
+
+lookup end
+
+
+lookup	23	single
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+y placement	uni17B7	266
+y placement	uni17B8	266
+y placement	uni17B9	266
+y placement	uni17BA	266
+y placement	uni17CE	266
+
+lookup end
+
+
+lookup	24	single
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+y placement	uni17BB	-333
+y placement	uni17BC	-333
+y placement	uni17BD	-333
+
+lookup end
+
+
+lookup	25	single
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+x placement	uni17C9.r	-20
+
+lookup end
+
+
+lookup	26	chained
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+backtrackcoverage definition begin
+uni17D21780
+uni17D21781
+uni17D21782
+uni17D21784
+uni17D21785
+uni17D21786
+uni17D21787
+uni17D21789
+uni17D21789.a
+uni17D2178A
+uni17D2178B
+uni17D2178C
+uni17D2178E
+uni17D2178F
+uni17D21790
+uni17D21791
+uni17D21792
+uni17D21793
+uni17D21795
+uni17D21796
+uni17D21797
+uni17D21798
+uni17D2179A
+uni17D2179B
+uni17D2179C
+uni17D217A0
+uni17D217A2
+coverage definition end
+
+backtrackcoverage definition begin
+uni1780
+uni1781
+uni1782
+uni1783
+uni1784
+uni1785
+uni1786
+uni1787
+uni1788
+uni1789
+uni1789.a
+uni178A
+uni178B
+uni178C
+uni178F
+uni1790
+uni1791
+uni1792
+uni1793
+uni1794
+uni1795
+uni1796
+uni1797
+uni1798
+uni1799
+uni179B
+uni179D
+uni179E
+uni179F
+uni17A2
+uni17A7
+uni17AA
+uni17AB
+coverage definition end
+
+inputcoverage definition begin
+uni17D0
+coverage definition end
+
+lookaheadcoverage definition begin
+uni17C7
+coverage definition end
+
+coverage	1,17
+subtable end
+
+backtrackcoverage definition begin
+uni17D21780
+uni17D21781
+uni17D21782
+uni17D21784
+uni17D21785
+uni17D21786
+uni17D21787
+uni17D21789
+uni17D21789.a
+uni17D2178A
+uni17D2178B
+uni17D2178C
+uni17D2178E
+uni17D2178F
+uni17D21790
+uni17D21791
+uni17D21792
+uni17D21793
+uni17D21795
+uni17D21796
+uni17D21797
+uni17D21798
+uni17D2179A
+uni17D2179B
+uni17D2179C
+uni17D217A0
+uni17D217A2
+coverage definition end
+
+inputcoverage definition begin
+uni17D0
+coverage definition end
+
+lookaheadcoverage definition begin
+uni17C7
+coverage definition end
+
+coverage	1,17
+subtable end
+
+backtrackcoverage definition begin
+uni17BB
+coverage definition end
+
+backtrackcoverage definition begin
+uni1780
+uni1781
+uni1782
+uni1783
+uni1784
+uni1785
+uni1786
+uni1787
+uni1788
+uni1789
+uni1789.a
+uni178A
+uni178B
+uni178C
+uni178F
+uni1790
+uni1791
+uni1792
+uni1793
+uni1794
+uni1795
+uni1796
+uni1797
+uni1798
+uni1799
+uni179B
+uni179D
+uni179E
+uni179F
+uni17A2
+uni17A7
+uni17AA
+uni17AB
+coverage definition end
+
+inputcoverage definition begin
+uni17D0
+coverage definition end
+
+lookaheadcoverage definition begin
+uni17C7
+coverage definition end
+
+coverage	1,17
+subtable end
+
+backtrackcoverage definition begin
+uni1780
+uni1781
+uni1782
+uni1783
+uni1784
+uni1785
+uni1786
+uni1787
+uni1788
+uni1789
+uni1789.a
+uni178A
+uni178B
+uni178C
+uni178F
+uni1790
+uni1791
+uni1792
+uni1793
+uni1794
+uni1795
+uni1796
+uni1797
+uni1798
+uni1799
+uni179B
+uni179D
+uni179E
+uni179F
+uni17A2
+uni17A7
+uni17AA
+uni17AB
+coverage definition end
+
+inputcoverage definition begin
+uni17D0
+coverage definition end
+
+lookaheadcoverage definition begin
+uni17C7
+coverage definition end
+
+coverage	1,17
+subtable end
+
+backtrackcoverage definition begin
+uni17C9
+coverage definition end
+
+backtrackcoverage definition begin
+uni1780
+uni1781
+uni1782
+uni1783
+uni1784
+uni1785
+uni1786
+uni1787
+uni1788
+uni1789
+uni1789.a
+uni178A
+uni178B
+uni178C
+uni178F
+uni1790
+uni1791
+uni1792
+uni1793
+uni1794
+uni1795
+uni1796
+uni1797
+uni1798
+uni1799
+uni179B
+uni179D
+uni179E
+uni179F
+uni17A2
+uni17A7
+uni17AA
+uni17AB
+coverage definition end
+
+inputcoverage definition begin
+uni17D0
+coverage definition end
+
+lookaheadcoverage definition begin
+uni17C7
+coverage definition end
+
+coverage	1,17
+subtable end
+
+backtrackcoverage definition begin
+uni17BB
+uni17BC
+uni17BD
+coverage definition end
+
+backtrackcoverage definition begin
+uni17C9
+coverage definition end
+
+backtrackcoverage definition begin
+uni1780
+uni1781
+uni1782
+uni1783
+uni1784
+uni1785
+uni1786
+uni1787
+uni1788
+uni1789
+uni1789.a
+uni178A
+uni178B
+uni178C
+uni178F
+uni1790
+uni1791
+uni1792
+uni1793
+uni1794
+uni1795
+uni1796
+uni1797
+uni1798
+uni1799
+uni179B
+uni179D
+uni179E
+uni179F
+uni17A2
+uni17A7
+uni17AA
+uni17AB
+coverage definition end
+
+inputcoverage definition begin
+uni17D0
+coverage definition end
+
+lookaheadcoverage definition begin
+uni17C7
+coverage definition end
+
+coverage	1,17
+subtable end
+
+backtrackcoverage definition begin
+uni17D21780
+uni17D21781
+uni17D21782
+uni17D21784
+uni17D21785
+uni17D21786
+uni17D21787
+uni17D21789
+uni17D21789.a
+uni17D2178A
+uni17D2178B
+uni17D2178C
+uni17D2178E
+uni17D2178F
+uni17D21790
+uni17D21791
+uni17D21792
+uni17D21793
+uni17D21795
+uni17D21796
+uni17D21797
+uni17D21798
+uni17D2179A
+uni17D2179B
+uni17D2179C
+uni17D217A0
+uni17D217A2
+coverage definition end
+
+backtrackcoverage definition begin
+uni178E
+coverage definition end
+
+inputcoverage definition begin
+uni17D0
+coverage definition end
+
+lookaheadcoverage definition begin
+uni17C7
+coverage definition end
+
+coverage	1,18
+subtable end
+
+backtrackcoverage definition begin
+uni17D21780
+uni17D21781
+uni17D21782
+uni17D21784
+uni17D21785
+uni17D21786
+uni17D21787
+uni17D21789
+uni17D21789.a
+uni17D2178A
+uni17D2178B
+uni17D2178C
+uni17D2178E
+uni17D2178F
+uni17D21790
+uni17D21791
+uni17D21792
+uni17D21793
+uni17D21795
+uni17D21796
+uni17D21797
+uni17D21798
+uni17D2179A
+uni17D2179B
+uni17D2179C
+uni17D217A0
+uni17D217A2
+coverage definition end
+
+inputcoverage definition begin
+uni17D0
+coverage definition end
+
+lookaheadcoverage definition begin
+uni17C7
+coverage definition end
+
+coverage	1,18
+subtable end
+
+backtrackcoverage definition begin
+uni17BB
+coverage definition end
+
+backtrackcoverage definition begin
+uni178E
+coverage definition end
+
+inputcoverage definition begin
+uni17D0
+coverage definition end
+
+lookaheadcoverage definition begin
+uni17C7
+coverage definition end
+
+coverage	1,18
+subtable end
+
+backtrackcoverage definition begin
+uni178E
+coverage definition end
+
+inputcoverage definition begin
+uni17D0
+coverage definition end
+
+lookaheadcoverage definition begin
+uni17C7
+coverage definition end
+
+coverage	1,18
+subtable end
+
+backtrackcoverage definition begin
+uni17C9
+coverage definition end
+
+backtrackcoverage definition begin
+uni178E
+coverage definition end
+
+inputcoverage definition begin
+uni17D0
+coverage definition end
+
+lookaheadcoverage definition begin
+uni17C7
+coverage definition end
+
+coverage	1,18
+subtable end
+
+backtrackcoverage definition begin
+uni17BB
+uni17BC
+uni17BD
+coverage definition end
+
+backtrackcoverage definition begin
+uni17C9
+coverage definition end
+
+backtrackcoverage definition begin
+uni178E
+coverage definition end
+
+inputcoverage definition begin
+uni17D0
+coverage definition end
+
+lookaheadcoverage definition begin
+uni17C7
+coverage definition end
+
+coverage	1,18
+subtable end
+
+backtrackcoverage definition begin
+uni17D21780
+uni17D21781
+uni17D21782
+uni17D21784
+uni17D21785
+uni17D21786
+uni17D21787
+uni17D21789
+uni17D21789.a
+uni17D2178A
+uni17D2178B
+uni17D2178C
+uni17D2178E
+uni17D2178F
+uni17D21790
+uni17D21791
+uni17D21792
+uni17D21793
+uni17D21795
+uni17D21796
+uni17D21797
+uni17D21798
+uni17D2179A
+uni17D2179B
+uni17D2179C
+uni17D217A0
+uni17D217A2
+coverage definition end
+
+backtrackcoverage definition begin
+uni178D
+uni17A0
+uni17A1
+coverage definition end
+
+inputcoverage definition begin
+uni17D0
+coverage definition end
+
+lookaheadcoverage definition begin
+uni17C7
+coverage definition end
+
+coverage	1,19
+subtable end
+
+backtrackcoverage definition begin
+uni17D21780
+uni17D21781
+uni17D21782
+uni17D21784
+uni17D21785
+uni17D21786
+uni17D21787
+uni17D21789
+uni17D21789.a
+uni17D2178A
+uni17D2178B
+uni17D2178C
+uni17D2178E
+uni17D2178F
+uni17D21790
+uni17D21791
+uni17D21792
+uni17D21793
+uni17D21795
+uni17D21796
+uni17D21797
+uni17D21798
+uni17D2179A
+uni17D2179B
+uni17D2179C
+uni17D217A0
+uni17D217A2
+coverage definition end
+
+inputcoverage definition begin
+uni17D0
+coverage definition end
+
+lookaheadcoverage definition begin
+uni17C7
+coverage definition end
+
+coverage	1,19
+subtable end
+
+backtrackcoverage definition begin
+uni17BB
+coverage definition end
+
+backtrackcoverage definition begin
+uni178D
+uni17A0
+uni17A1
+coverage definition end
+
+inputcoverage definition begin
+uni17D0
+coverage definition end
+
+lookaheadcoverage definition begin
+uni17C7
+coverage definition end
+
+coverage	1,19
+subtable end
+
+backtrackcoverage definition begin
+uni178D
+uni17A0
+uni17A1
+coverage definition end
+
+inputcoverage definition begin
+uni17D0
+coverage definition end
+
+lookaheadcoverage definition begin
+uni17C7
+coverage definition end
+
+coverage	1,19
+subtable end
+
+backtrackcoverage definition begin
+uni17C9
+coverage definition end
+
+backtrackcoverage definition begin
+uni178D
+uni17A0
+uni17A1
+coverage definition end
+
+inputcoverage definition begin
+uni17D0
+coverage definition end
+
+lookaheadcoverage definition begin
+uni17C7
+coverage definition end
+
+coverage	1,19
+subtable end
+
+backtrackcoverage definition begin
+uni17BB
+uni17BC
+uni17BD
+coverage definition end
+
+backtrackcoverage definition begin
+uni17C9
+coverage definition end
+
+backtrackcoverage definition begin
+uni178D
+uni17A0
+uni17A1
+coverage definition end
+
+inputcoverage definition begin
+uni17D0
+coverage definition end
+
+lookaheadcoverage definition begin
+uni17C7
+coverage definition end
+
+coverage	1,19
+subtable end
+
+backtrackcoverage definition begin
+uni17D21780
+uni17D21781
+uni17D21782
+uni17D21784
+uni17D21785
+uni17D21786
+uni17D21787
+uni17D21789
+uni17D21789.a
+uni17D2178A
+uni17D2178B
+uni17D2178C
+uni17D2178E
+uni17D2178F
+uni17D21790
+uni17D21791
+uni17D21792
+uni17D21793
+uni17D21795
+uni17D21796
+uni17D21797
+uni17D21798
+uni17D2179A
+uni17D2179B
+uni17D2179C
+uni17D217A0
+uni17D217A2
+coverage definition end
+
+backtrackcoverage definition begin
+uni179A
+uni179C
+coverage definition end
+
+inputcoverage definition begin
+uni17D0
+coverage definition end
+
+lookaheadcoverage definition begin
+uni17C7
+coverage definition end
+
+coverage	1,20
+subtable end
+
+backtrackcoverage definition begin
+uni17D21780
+uni17D21781
+uni17D21782
+uni17D21784
+uni17D21785
+uni17D21786
+uni17D21787
+uni17D21789
+uni17D21789.a
+uni17D2178A
+uni17D2178B
+uni17D2178C
+uni17D2178E
+uni17D2178F
+uni17D21790
+uni17D21791
+uni17D21792
+uni17D21793
+uni17D21795
+uni17D21796
+uni17D21797
+uni17D21798
+uni17D2179A
+uni17D2179B
+uni17D2179C
+uni17D217A0
+uni17D217A2
+coverage definition end
+
+inputcoverage definition begin
+uni17D0
+coverage definition end
+
+lookaheadcoverage definition begin
+uni17C7
+coverage definition end
+
+coverage	1,20
+subtable end
+
+backtrackcoverage definition begin
+uni17BB
+coverage definition end
+
+backtrackcoverage definition begin
+uni179A
+uni179C
+coverage definition end
+
+inputcoverage definition begin
+uni17D0
+coverage definition end
+
+lookaheadcoverage definition begin
+uni17C7
+coverage definition end
+
+coverage	1,20
+subtable end
+
+backtrackcoverage definition begin
+uni179A
+uni179C
+coverage definition end
+
+inputcoverage definition begin
+uni17D0
+coverage definition end
+
+lookaheadcoverage definition begin
+uni17C7
+coverage definition end
+
+coverage	1,20
+subtable end
+
+backtrackcoverage definition begin
+uni17C9
+coverage definition end
+
+backtrackcoverage definition begin
+uni179A
+uni179C
+coverage definition end
+
+inputcoverage definition begin
+uni17D0
+coverage definition end
+
+lookaheadcoverage definition begin
+uni17C7
+coverage definition end
+
+coverage	1,20
+subtable end
+
+backtrackcoverage definition begin
+uni17BB
+uni17BC
+uni17BD
+coverage definition end
+
+backtrackcoverage definition begin
+uni17C9
+coverage definition end
+
+backtrackcoverage definition begin
+uni179A
+uni179C
+coverage definition end
+
+inputcoverage definition begin
+uni17D0
+coverage definition end
+
+lookaheadcoverage definition begin
+uni17C7
+coverage definition end
+
+coverage	1,20
+subtable end
+
+backtrackcoverage definition begin
+uni17D21780
+uni17D21781
+uni17D21782
+uni17D21784
+uni17D21785
+uni17D21786
+uni17D21787
+uni17D21789
+uni17D21789.a
+uni17D2178A
+uni17D2178B
+uni17D2178C
+uni17D2178E
+uni17D2178F
+uni17D21790
+uni17D21791
+uni17D21792
+uni17D21793
+uni17D21795
+uni17D21796
+uni17D21797
+uni17D21798
+uni17D2179A
+uni17D2179B
+uni17D2179C
+uni17D217A0
+uni17D217A2
+coverage definition end
+
+backtrackcoverage definition begin
+uni17AC
+coverage definition end
+
+inputcoverage definition begin
+uni17D0
+coverage definition end
+
+lookaheadcoverage definition begin
+uni17C7
+coverage definition end
+
+coverage	1,21
+subtable end
+
+backtrackcoverage definition begin
+uni17D21780
+uni17D21781
+uni17D21782
+uni17D21784
+uni17D21785
+uni17D21786
+uni17D21787
+uni17D21789
+uni17D21789.a
+uni17D2178A
+uni17D2178B
+uni17D2178C
+uni17D2178E
+uni17D2178F
+uni17D21790
+uni17D21791
+uni17D21792
+uni17D21793
+uni17D21795
+uni17D21796
+uni17D21797
+uni17D21798
+uni17D2179A
+uni17D2179B
+uni17D2179C
+uni17D217A0
+uni17D217A2
+coverage definition end
+
+inputcoverage definition begin
+uni17D0
+coverage definition end
+
+lookaheadcoverage definition begin
+uni17C7
+coverage definition end
+
+coverage	1,21
+subtable end
+
+backtrackcoverage definition begin
+uni17BB
+coverage definition end
+
+backtrackcoverage definition begin
+uni17AC
+coverage definition end
+
+inputcoverage definition begin
+uni17D0
+coverage definition end
+
+lookaheadcoverage definition begin
+uni17C7
+coverage definition end
+
+coverage	1,21
+subtable end
+
+backtrackcoverage definition begin
+uni17AC
+coverage definition end
+
+inputcoverage definition begin
+uni17D0
+coverage definition end
+
+lookaheadcoverage definition begin
+uni17C7
+coverage definition end
+
+coverage	1,21
+subtable end
+
+backtrackcoverage definition begin
+uni17C9
+coverage definition end
+
+backtrackcoverage definition begin
+uni17AC
+coverage definition end
+
+inputcoverage definition begin
+uni17D0
+coverage definition end
+
+lookaheadcoverage definition begin
+uni17C7
+coverage definition end
+
+coverage	1,21
+subtable end
+
+backtrackcoverage definition begin
+uni17BB
+uni17BC
+uni17BD
+coverage definition end
+
+backtrackcoverage definition begin
+uni17C9
+coverage definition end
+
+backtrackcoverage definition begin
+uni17AC
+coverage definition end
+
+inputcoverage definition begin
+uni17D0
+coverage definition end
+
+lookaheadcoverage definition begin
+uni17C7
+coverage definition end
+
+coverage	1,21
+subtable end
+
+backtrackcoverage definition begin
+uni17D21780
+uni17D21781
+uni17D21782
+uni17D21784
+uni17D21785
+uni17D21786
+uni17D21787
+uni17D21789
+uni17D21789.a
+uni17D2178A
+uni17D2178B
+uni17D2178C
+uni17D2178E
+uni17D2178F
+uni17D21790
+uni17D21791
+uni17D21792
+uni17D21793
+uni17D21795
+uni17D21796
+uni17D21797
+uni17D21798
+uni17D2179A
+uni17D2179B
+uni17D2179C
+uni17D217A0
+uni17D217A2
+coverage definition end
+
+backtrackcoverage definition begin
+uni17A4
+uni178017B6
+uni178117B6
+uni178217B6
+uni178317B6
+uni178417B6
+uni178517B6
+uni178617B6
+uni178717B6
+uni178817B6
+uni178917B6
+uni178A17B6
+uni178B17B6
+uni178C17B6
+uni178D17B6
+uni178E17B6
+uni178F17B6
+uni179017B6
+uni179117B6
+uni179217B6
+uni179317B6
+uni179417B6
+uni179417B6.high
+uni179517B6
+uni179617B6
+uni179717B6
+uni179817B6
+uni179917B6
+uni179A17B6
+uni179B17B6
+uni179C17B6
+uni179D17B6
+uni179E17B6
+uni179F17B6
+uni17A017B6
+uni17A117B6
+uni17A217B6
+uni17D2178317B6
+uni17D2178317B6.low
+uni17D2178817B6
+uni17D2178817B6.low
+uni17D2178D17B6
+uni17D2178D17B6.low
+uni17D2179417B6
+uni17D2179417B6.low
+uni17D2179917B6
+uni17D2179917B6.low
+uni17D2179E17B6
+uni17D2179E17B6.low
+uni17D2179F17B6
+uni17D2179F17B6.low
+coverage definition end
+
+inputcoverage definition begin
+uni17D0
+coverage definition end
+
+lookaheadcoverage definition begin
+uni17C7
+coverage definition end
+
+coverage	1,22
+subtable end
+
+backtrackcoverage definition begin
+uni17D21780
+uni17D21781
+uni17D21782
+uni17D21784
+uni17D21785
+uni17D21786
+uni17D21787
+uni17D21789
+uni17D21789.a
+uni17D2178A
+uni17D2178B
+uni17D2178C
+uni17D2178E
+uni17D2178F
+uni17D21790
+uni17D21791
+uni17D21792
+uni17D21793
+uni17D21795
+uni17D21796
+uni17D21797
+uni17D21798
+uni17D2179A
+uni17D2179B
+uni17D2179C
+uni17D217A0
+uni17D217A2
+coverage definition end
+
+inputcoverage definition begin
+uni17D0
+coverage definition end
+
+lookaheadcoverage definition begin
+uni17C7
+coverage definition end
+
+coverage	1,22
+subtable end
+
+backtrackcoverage definition begin
+uni17BB
+coverage definition end
+
+backtrackcoverage definition begin
+uni17A4
+uni178017B6
+uni178117B6
+uni178217B6
+uni178317B6
+uni178417B6
+uni178517B6
+uni178617B6
+uni178717B6
+uni178817B6
+uni178917B6
+uni178A17B6
+uni178B17B6
+uni178C17B6
+uni178D17B6
+uni178E17B6
+uni178F17B6
+uni179017B6
+uni179117B6
+uni179217B6
+uni179317B6
+uni179417B6
+uni179417B6.high
+uni179517B6
+uni179617B6
+uni179717B6
+uni179817B6
+uni179917B6
+uni179A17B6
+uni179B17B6
+uni179C17B6
+uni179D17B6
+uni179E17B6
+uni179F17B6
+uni17A017B6
+uni17A117B6
+uni17A217B6
+uni17D2178317B6
+uni17D2178317B6.low
+uni17D2178817B6
+uni17D2178817B6.low
+uni17D2178D17B6
+uni17D2178D17B6.low
+uni17D2179417B6
+uni17D2179417B6.low
+uni17D2179917B6
+uni17D2179917B6.low
+uni17D2179E17B6
+uni17D2179E17B6.low
+uni17D2179F17B6
+uni17D2179F17B6.low
+coverage definition end
+
+inputcoverage definition begin
+uni17D0
+coverage definition end
+
+lookaheadcoverage definition begin
+uni17C7
+coverage definition end
+
+coverage	1,22
+subtable end
+
+backtrackcoverage definition begin
+uni17A4
+uni178017B6
+uni178117B6
+uni178217B6
+uni178317B6
+uni178417B6
+uni178517B6
+uni178617B6
+uni178717B6
+uni178817B6
+uni178917B6
+uni178A17B6
+uni178B17B6
+uni178C17B6
+uni178D17B6
+uni178E17B6
+uni178F17B6
+uni179017B6
+uni179117B6
+uni179217B6
+uni179317B6
+uni179417B6
+uni179417B6.high
+uni179517B6
+uni179617B6
+uni179717B6
+uni179817B6
+uni179917B6
+uni179A17B6
+uni179B17B6
+uni179C17B6
+uni179D17B6
+uni179E17B6
+uni179F17B6
+uni17A017B6
+uni17A117B6
+uni17A217B6
+uni17D2178317B6
+uni17D2178317B6.low
+uni17D2178817B6
+uni17D2178817B6.low
+uni17D2178D17B6
+uni17D2178D17B6.low
+uni17D2179417B6
+uni17D2179417B6.low
+uni17D2179917B6
+uni17D2179917B6.low
+uni17D2179E17B6
+uni17D2179E17B6.low
+uni17D2179F17B6
+uni17D2179F17B6.low
+coverage definition end
+
+inputcoverage definition begin
+uni17D0
+coverage definition end
+
+lookaheadcoverage definition begin
+uni17C7
+coverage definition end
+
+coverage	1,22
+subtable end
+
+backtrackcoverage definition begin
+uni17C9
+coverage definition end
+
+backtrackcoverage definition begin
+uni17A4
+uni178017B6
+uni178117B6
+uni178217B6
+uni178317B6
+uni178417B6
+uni178517B6
+uni178617B6
+uni178717B6
+uni178817B6
+uni178917B6
+uni178A17B6
+uni178B17B6
+uni178C17B6
+uni178D17B6
+uni178E17B6
+uni178F17B6
+uni179017B6
+uni179117B6
+uni179217B6
+uni179317B6
+uni179417B6
+uni179417B6.high
+uni179517B6
+uni179617B6
+uni179717B6
+uni179817B6
+uni179917B6
+uni179A17B6
+uni179B17B6
+uni179C17B6
+uni179D17B6
+uni179E17B6
+uni179F17B6
+uni17A017B6
+uni17A117B6
+uni17A217B6
+uni17D2178317B6
+uni17D2178317B6.low
+uni17D2178817B6
+uni17D2178817B6.low
+uni17D2178D17B6
+uni17D2178D17B6.low
+uni17D2179417B6
+uni17D2179417B6.low
+uni17D2179917B6
+uni17D2179917B6.low
+uni17D2179E17B6
+uni17D2179E17B6.low
+uni17D2179F17B6
+uni17D2179F17B6.low
+coverage definition end
+
+inputcoverage definition begin
+uni17D0
+coverage definition end
+
+lookaheadcoverage definition begin
+uni17C7
+coverage definition end
+
+coverage	1,22
+subtable end
+
+backtrackcoverage definition begin
+uni17BB
+uni17BC
+uni17BD
+coverage definition end
+
+backtrackcoverage definition begin
+uni17C9
+coverage definition end
+
+backtrackcoverage definition begin
+uni17A4
+uni178017B6
+uni178117B6
+uni178217B6
+uni178317B6
+uni178417B6
+uni178517B6
+uni178617B6
+uni178717B6
+uni178817B6
+uni178917B6
+uni178A17B6
+uni178B17B6
+uni178C17B6
+uni178D17B6
+uni178E17B6
+uni178F17B6
+uni179017B6
+uni179117B6
+uni179217B6
+uni179317B6
+uni179417B6
+uni179417B6.high
+uni179517B6
+uni179617B6
+uni179717B6
+uni179817B6
+uni179917B6
+uni179A17B6
+uni179B17B6
+uni179C17B6
+uni179D17B6
+uni179E17B6
+uni179F17B6
+uni17A017B6
+uni17A117B6
+uni17A217B6
+uni17D2178317B6
+uni17D2178317B6.low
+uni17D2178817B6
+uni17D2178817B6.low
+uni17D2178D17B6
+uni17D2178D17B6.low
+uni17D2179417B6
+uni17D2179417B6.low
+uni17D2179917B6
+uni17D2179917B6.low
+uni17D2179E17B6
+uni17D2179E17B6.low
+uni17D2179F17B6
+uni17D2179F17B6.low
+coverage definition end
+
+inputcoverage definition begin
+uni17D0
+coverage definition end
+
+lookaheadcoverage definition begin
+uni17C7
+coverage definition end
+
+coverage	1,22
+lookup end
+
+
+lookup	27	chained
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+backtrackcoverage definition begin
+uni17C9
+coverage definition end
+
+inputcoverage definition begin
+uni17D0
+coverage definition end
+
+lookaheadcoverage definition begin
+uni17C7
+coverage definition end
+
+coverage
+subtable end
+
+backtrackcoverage definition begin
+uni17C9
+coverage definition end
+
+backtrackcoverage definition begin
+uni178017B6
+uni178017C5
+uni178117B6
+uni178117C5
+uni178217B6
+uni178217C5
+uni178317B6
+uni178317C5
+uni178417B6
+uni178417C5
+uni178517B6
+uni178517C5
+uni178617B6
+uni178617C5
+uni178717B6
+uni178717C5
+uni178817B6
+uni178817C5
+uni178917B6
+uni178917C5
+uni178A17B6
+uni178A17C5
+uni178B17B6
+uni178B17C5
+uni178C17B6
+uni178C17C5
+uni178D17B6
+uni178D17C5
+uni178E17B6
+uni178E17C5
+uni178F17B6
+uni178F17C5
+uni179017B6
+uni179017C5
+uni179117B6
+uni179117C5
+uni179217B6
+uni179217C5
+uni179317B6
+uni179317C5
+uni179417B6
+uni179417B6.high
+uni179417C5
+uni179417C5.high
+uni179517B6
+uni179517C5
+uni179617B6
+uni179617C5
+uni179717B6
+uni179717C5
+uni179817B6
+uni179817C5
+uni179917B6
+uni179917C5
+uni179A17B6
+uni179A17C5
+uni179B17B6
+uni179B17C5
+uni179C17B6
+uni179C17C5
+uni179D17B6
+uni179D17C5
+uni179E17B6
+uni179E17C5
+uni179F17B6
+uni179F17C5
+uni17A017B6
+uni17A017C5
+uni17A117B6
+uni17A117C5
+uni17A217B6
+uni17A217C5
+uni17D2178317B6
+uni17D2178317B6.low
+uni17D2178317C5
+uni17D2178317C5.low
+uni17D2178817B6
+uni17D2178817B6.low
+uni17D2178817C5
+uni17D2178817C5.low
+uni17D2178D17B6
+uni17D2178D17B6.low
+uni17D2178D17C5
+uni17D2178D17C5.low
+uni17D2179417B6
+uni17D2179417B6.low
+uni17D2179417C5
+uni17D2179417C5.low
+uni17D2179917B6
+uni17D2179917B6.low
+uni17D2179917C5
+uni17D2179917C5.low
+uni17D2179E17B6
+uni17D2179E17B6.low
+uni17D2179E17C5
+uni17D2179E17C5.low
+uni17D2179F17B6
+uni17D2179F17B6.low
+uni17D2179F17C5
+uni17D2179F17C5.low
+coverage definition end
+
+inputcoverage definition begin
+uni17CE
+coverage definition end
+
+coverage	1,23
+subtable end
+
+backtrackcoverage definition begin
+uni17C5.right
+coverage definition end
+
+backtrackcoverage definition begin
+uni17C9
+coverage definition end
+
+inputcoverage definition begin
+uni17CE
+coverage definition end
+
+coverage	1,23
+subtable end
+
+backtrackcoverage definition begin
+uni17D21780
+uni17D21781
+uni17D21782
+uni17D21784
+uni17D21785
+uni17D21786
+uni17D21787
+uni17D21789
+uni17D21789.a
+uni17D2178A
+uni17D2178B
+uni17D2178C
+uni17D2178E
+uni17D2178F
+uni17D21790
+uni17D21791
+uni17D21792
+uni17D21793
+uni17D21795
+uni17D21796
+uni17D21797
+uni17D21798
+uni17D2179B
+uni17D2179C
+uni17D217A0
+uni17D217A2
+coverage definition end
+
+backtrackcoverage definition begin
+uni17C9
+coverage definition end
+
+inputcoverage definition begin
+uni17B7
+uni17B8
+uni17B9
+uni17BA
+coverage definition end
+
+coverage	1,23
+lookup end
+
+
+lookup	28	chained
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+inputcoverage definition begin
+uni17BB
+uni17BC
+uni17BD
+coverage definition end
+
+lookaheadcoverage definition begin
+uni17D21780
+uni17D21781
+uni17D21782
+uni17D21783
+uni17D21783.low
+uni17D21784
+uni17D21785
+uni17D21786
+uni17D21787
+uni17D21788
+uni17D21788.low
+uni17D21789
+uni17D21789.a
+uni17D2178A
+uni17D2178A.r
+uni17D2178B
+uni17D2178C
+uni17D2178D
+uni17D2178D.low
+uni17D2178E
+uni17D2178E.alt
+uni17D2178F
+uni17D2178F.r
+uni17D21790
+uni17D21791
+uni17D21792
+uni17D21793
+uni17D21794
+uni17D21794.low
+uni17D21795
+uni17D21796
+uni17D21797
+uni17D21797.r
+uni17D21798
+uni17D21798.r
+uni17D21799
+uni17D21799.low
+uni17D2179A
+uni17D2179A.low
+uni17D2179B
+uni17D2179C
+uni17D2179D
+uni17D2179E
+uni17D2179E.low
+uni17D2179F
+uni17D2179F.low
+uni17D217A0
+uni17D217A1
+uni17D217A2
+uni17D217A7
+uni17D217AB
+uni17D217AC
+uni17D217AF
+coverage definition end
+
+lookaheadcoverage definition begin
+uni17B7
+uni17B8
+uni17B9
+uni17BA
+uni17D0
+coverage definition end
+
+coverage	1,24
+lookup end
+
+
+lookup	29	chained
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+backtrackcoverage definition begin
+uni179C17C5
+coverage definition end
+
+inputcoverage definition begin
+uni17C9.r
+coverage definition end
+
+coverage	1,25
+lookup end
+
+
+lookup	30	mark to base
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	yes
+IgnoreMarks	no
+
+mark	uni17BB	0	-197,16
+mark	uni17BB.b	0	-395,16
+mark	uni17BC	0	-197,16
+mark	uni17BC.b	0	-330,16
+mark	uni17BD	0	-197,16
+mark	uni17BD.b	0	-331,16
+mark	uni17D21780	0	-316,16
+mark	uni17D21781	0	-316,16
+mark	uni17D21782	0	-317,16
+mark	uni17D21784	0	-313,16
+mark	uni17D21785	0	-289,16
+mark	uni17D21786	0	-315,16
+mark	uni17D21787	0	-316,16
+mark	uni17D21789	0	-316,16
+mark	uni17D2178A	0	-317,16
+mark	uni17D2178A.r	0	-317,16
+mark	uni17D2178B	0	-331,16
+mark	uni17D2178C	0	-317,16
+mark	uni17D2178E	0	-680,10
+mark	uni17D2178E.alt	0	-760,10
+mark	uni17D2178F	0	-317,16
+mark	uni17D2178F.r	0	-317,16
+mark	uni17D21790	0	-309,16
+mark	uni17D21791	0	-330,16
+mark	uni17D21792	0	-325,16
+mark	uni17D21793	0	-315,16
+mark	uni17D21795	0	-314,16
+mark	uni17D21796	0	-318,16
+mark	uni17D21797	0	-344,16
+mark	uni17D21797.r	0	-344,16
+mark	uni17D21798	0	-366,16
+mark	uni17D21798.r	0	-321,16
+mark	uni17D2179B	0	-308,16
+mark	uni17D2179C	0	-315,16
+mark	uni17D2179D	0	-317,16
+mark	uni17D217A0	0	-295,16
+mark	uni17D217A2	0	-366,16
+mark	uni17D217A7	0	-316,16
+mark	uni17D217AB	0	-330,16
+mark	uni17D217AC	0	-330,16
+mark	uni17D217AF	0	-285,16
+base	uni1780	0	350,0
+base	uni1781	0	357,0
+base	uni1782	0	350,0
+base	uni1783	0	746,0
+base	uni1784	0	448,0
+base	uni1785	0	345,0
+base	uni1786	0	404,0
+base	uni1787	0	364,0
+base	uni1788	0	1082,0
+base	uni1789	0	752,-302
+base	uni1789.a	0	752,0
+base	uni178A	0	355,0
+base	uni178B	0	415,0
+base	uni178C	0	366,-49
+base	uni178D	0	541,0
+base	uni178E	0	693,0
+base	uni178F	0	367,0
+base	uni1790	0	375,0
+base	uni1791	0	320,0
+base	uni1792	0	365,0
+base	uni1793	0	367,0
+base	uni1794	0	370,0
+base	uni1794.a	0	356,-40
+base	uni1794.a2	0	356,-40
+base	uni1795	0	375,0
+base	uni1796	0	368,0
+base	uni1797	0	437,0
+base	uni1798	0	369,0
+base	uni1799	0	719,0
+base	uni179A	0	247,0
+base	uni179B	0	731,0
+base	uni179C	0	250,0
+base	uni179D	0	354,0
+base	uni179E	0	363,0
+base	uni179F	0	727,0
+base	uni17A0	0	704,0
+base	uni17A1	0	689,-320
+base	uni17A2	0	406,0
+base	uni17A3	0	406,0
+base	uni17A4	0	406,0
+base	uni17A7	0	355,-49
+base	uni17A8	0	357,-49
+base	uni17A9	0	357,-49
+base	uni17AA	0	357,-49
+base	uni17B1	0	358,-49
+base	uni17B3	0	357,-49
+base	uni17D21783	0	-48,-320
+base	uni17D21783.low	0	-66,-587
+base	uni17D21788	0	-53,-317
+base	uni17D21788.low	0	-53,-559
+base	uni17D21794	0	27,-320
+base	uni17D21794.low	0	47,-618
+base	uni17D21799	0	12,-317
+base	uni17D21799.low	0	36,-595
+base	uni17D2179E	0	27,-320
+base	uni17D2179E.low	0	47,-618
+base	uni17D2179F	0	36,-320
+base	uni17D2179F.low	0	16,-616
+base	uni17D217A1	0	22,-320
+base	uni25CC	0	314,0
+
+lookup end
+
+
+lookup	31	mark to ligature
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+mark	uni17BB	0	-197,16
+mark	uni17BB.b	0	-395,16
+mark	uni17BC	0	-197,16
+mark	uni17BC.b	0	-330,16
+mark	uni17BD	0	-197,16
+mark	uni17BD.b	0	-331,16
+mark	uni17D21780	0	-316,16
+mark	uni17D21781	0	-316,16
+mark	uni17D21782	0	-317,16
+mark	uni17D21784	0	-313,16
+mark	uni17D21785	0	-289,16
+mark	uni17D21786	0	-315,16
+mark	uni17D21787	0	-316,16
+mark	uni17D21789	0	-316,16
+mark	uni17D2178A	0	-317,16
+mark	uni17D2178A.r	0	-317,16
+mark	uni17D2178B	0	-331,16
+mark	uni17D2178C	0	-317,16
+mark	uni17D2178E	0	-680,10
+mark	uni17D2178E.alt	0	-760,10
+mark	uni17D2178F	0	-317,16
+mark	uni17D2178F.r	0	-317,16
+mark	uni17D21790	0	-309,16
+mark	uni17D21791	0	-330,16
+mark	uni17D21792	0	-325,16
+mark	uni17D21793	0	-315,16
+mark	uni17D21795	0	-314,16
+mark	uni17D21796	0	-318,16
+mark	uni17D21797	0	-344,16
+mark	uni17D21797.r	0	-344,16
+mark	uni17D21798	0	-366,16
+mark	uni17D21798.r	0	-321,16
+mark	uni17D2179B	0	-308,16
+mark	uni17D2179C	0	-315,16
+mark	uni17D2179D	0	-317,16
+mark	uni17D217A0	0	-295,16
+mark	uni17D217A2	0	-366,16
+mark	uni17D217A7	0	-316,16
+mark	uni17D217AB	0	-330,16
+mark	uni17D217AC	0	-330,16
+mark	uni17D217AF	0	-285,16
+ligature	uni178017B6	1	2	0	350,0
+ligature	uni178017B6	2	2	0	710,0
+ligature	uni178017C5	1	2	0	350,0
+ligature	uni178017C5	2	2	0	710,0
+ligature	uni178117B6	1	2	0	357,0
+ligature	uni178117B6	2	2	0	735,0
+ligature	uni178117C5	1	2	0	357,0
+ligature	uni178117C5	2	2	0	735,0
+ligature	uni178217B6	1	2	0	362,0
+ligature	uni178217B6	2	2	0	710,0
+ligature	uni178217C5	1	2	0	362,0
+ligature	uni178217C5	2	2	0	710,0
+ligature	uni178317B6	1	2	0	746,0
+ligature	uni178317B6	2	2	0	1099,0
+ligature	uni178317C5	1	2	0	746,0
+ligature	uni178317C5	2	2	0	1099,0
+ligature	uni178417B6	1	2	0	458,0
+ligature	uni178417B6	2	2	0	819,0
+ligature	uni178417C5	1	2	0	458,0
+ligature	uni178417C5	2	2	0	819,0
+ligature	uni178517B6	1	2	0	369,0
+ligature	uni178517B6	2	2	0	713,0
+ligature	uni178517C5	1	2	0	369,0
+ligature	uni178517C5	2	2	0	713,0
+ligature	uni178617B6	1	2	0	404,0
+ligature	uni178617B6	2	2	0	732,0
+ligature	uni178617C5	1	2	0	404,0
+ligature	uni178617C5	2	2	0	732,0
+ligature	uni178717B6	1	2	0	363,0
+ligature	uni178717B6	2	2	0	737,0
+ligature	uni178717C5	1	2	0	364,0
+ligature	uni178717C5	2	2	0	727,0
+ligature	uni178817B6	1	2	0	1082,0
+ligature	uni178817B6	2	2	0	1445,0
+ligature	uni178817C5	1	2	0	1082,0
+ligature	uni178817C5	2	2	0	1445,0
+ligature	uni178917B6	1	2	0	732,-340
+ligature	uni178917B6	2	2	0	1116,-340
+ligature	uni178917C5	1	2	0	732,-340
+ligature	uni178917C5	2	2	0	1116,-340
+ligature	uni178917B6.a	1	2	0	752,0
+ligature	uni178917B6.a	2	2	0	1116,0
+ligature	uni178917C5.a	1	2	0	752,0
+ligature	uni178917C5.a	2	2	0	1116,0
+ligature	uni178A17B6	1	2	0	354,0
+ligature	uni178A17B6	2	2	0	745,0
+ligature	uni178A17C5	1	2	0	354,0
+ligature	uni178A17C5	2	2	0	745,0
+ligature	uni178B17B6	1	2	0	415,0
+ligature	uni178B17B6	2	2	0	785,0
+ligature	uni178B17C5	1	2	0	415,0
+ligature	uni178B17C5	2	2	0	785,0
+ligature	uni178C17B6	1	2	0	359,-49
+ligature	uni178C17B6	2	2	0	734,-49
+ligature	uni178C17C5	1	2	0	359,-49
+ligature	uni178C17C5	2	2	0	734,-49
+ligature	uni178D17B6	1	2	0	627,0
+ligature	uni178D17B6	2	2	0	1177,0
+ligature	uni178D17C5	1	2	0	627,0
+ligature	uni178D17C5	2	2	0	1177,0
+ligature	uni178E17B6	1	2	0	693,0
+ligature	uni178E17B6	2	2	0	1403,0
+ligature	uni178E17C5	1	2	0	693,0
+ligature	uni178E17C5	2	2	0	1403,0
+ligature	uni178F17B6	1	2	0	363,0
+ligature	uni178F17B6	2	2	0	710,0
+ligature	uni178F17C5	1	2	0	363,0
+ligature	uni178F17C5	2	2	0	710,0
+ligature	uni179017B6	1	2	0	375,0
+ligature	uni179017B6	2	2	0	754,0
+ligature	uni179017C5	1	2	0	375,0
+ligature	uni179017C5	2	2	0	754,0
+ligature	uni179117B6	1	2	0	320,0
+ligature	uni179117B6	2	2	0	737,0
+ligature	uni179117C5	1	2	0	320,0
+ligature	uni179117C5	2	2	0	737,0
+ligature	uni179217B6	1	2	0	383,0
+ligature	uni179217B6	2	2	0	723,0
+ligature	uni179217C5	1	2	0	383,0
+ligature	uni179217C5	2	2	0	723,0
+ligature	uni179317B6	1	2	0	367,0
+ligature	uni179317B6	2	2	0	745,0
+ligature	uni179317C5	1	2	0	367,0
+ligature	uni179317C5	2	2	0	734,0
+ligature	uni179417B6	1	2	0	367,-50
+ligature	uni179417B6	2	2	0	710,-50
+ligature	uni179417B6.high	1	2	0	367,-40
+ligature	uni179417B6.high	2	2	0	710,-40
+ligature	uni179417C5	1	2	0	367,-50
+ligature	uni179417C5	2	2	0	710,-50
+ligature	uni179417C5.high	1	2	0	367,-40
+ligature	uni179417C5.high	2	2	0	710,-40
+ligature	uni179517B6	1	2	0	365,0
+ligature	uni179517B6	2	2	0	744,0
+ligature	uni179517C5	1	2	0	365,0
+ligature	uni179517C5	2	2	0	744,0
+ligature	uni179617B6	1	2	0	352,0
+ligature	uni179617B6	2	2	0	770,0
+ligature	uni179617C5	1	2	0	352,0
+ligature	uni179617C5	2	2	0	770,0
+ligature	uni179717B6	1	2	0	437,0
+ligature	uni179717B6	2	2	0	783,0
+ligature	uni179717C5	1	2	0	437,0
+ligature	uni179717C5	2	2	0	783,0
+ligature	uni179817B6	1	2	0	369,0
+ligature	uni179817B6	2	2	0	740,0
+ligature	uni179817C5	1	2	0	369,0
+ligature	uni179817C5	2	2	0	740,0
+ligature	uni179917B6	1	2	0	700,0
+ligature	uni179917B6	2	2	0	1084,0
+ligature	uni179917C5	1	2	0	700,0
+ligature	uni179917C5	2	2	0	1084,0
+ligature	uni179A17B6	1	2	0	236,0
+ligature	uni179A17B6	2	2	0	462,0
+ligature	uni179A17C5	1	2	0	236,0
+ligature	uni179A17C5	2	2	0	462,0
+ligature	uni179B17B6	1	2	0	731,0
+ligature	uni179B17B6	2	2	0	1100,0
+ligature	uni179B17C5	1	2	0	731,0
+ligature	uni179B17C5	2	2	0	1100,0
+ligature	uni179C17B6	1	2	0	250,0
+ligature	uni179C17B6	2	2	0	461,0
+ligature	uni179C17C5	1	2	0	250,0
+ligature	uni179C17C5	2	2	0	461,0
+ligature	uni179D17B6	1	2	0	360,0
+ligature	uni179D17B6	2	2	0	730,0
+ligature	uni179D17C5	1	2	0	360,0
+ligature	uni179D17C5	2	2	0	720,0
+ligature	uni179E17B6	1	2	0	376,0
+ligature	uni179E17B6	2	2	0	740,0
+ligature	uni179E17C5	1	2	0	376,0
+ligature	uni179E17C5	2	2	0	740,0
+ligature	uni179F17B6	1	2	0	728,0
+ligature	uni179F17B6	2	2	0	1092,0
+ligature	uni179F17C5	1	2	0	728,0
+ligature	uni179F17C5	2	2	0	1092,0
+ligature	uni17A017B6	1	2	0	687,0
+ligature	uni17A017B6	2	2	0	1083,0
+ligature	uni17A017C5	1	2	0	687,0
+ligature	uni17A017C5	2	2	0	1083,0
+ligature	uni17A117B6	1	2	0	688,-317
+ligature	uni17A117B6	2	2	0	1056,-317
+ligature	uni17A117C5	1	2	0	688,-320
+ligature	uni17A117C5	2	2	0	1052,-317
+ligature	uni17A217B6	1	2	0	406,0
+ligature	uni17A217B6	2	2	0	808,0
+ligature	uni17A217C5	1	2	0	406,0
+ligature	uni17A217C5	2	2	0	808,0
+ligature	uni17D2178317B6	1	2	0	-62,-317
+ligature	uni17D2178317B6	2	2	0	-62,-317
+ligature	uni17D2178317B6.low	1	2	0	-66,-612
+ligature	uni17D2178317B6.low	2	2	0	-66,-612
+ligature	uni17D2178317C5	1	2	0	-66,-317
+ligature	uni17D2178317C5	2	2	0	-66,-317
+ligature	uni17D2178317C5.low	1	2	0	-66,-617
+ligature	uni17D2178317C5.low	2	2	0	-66,-617
+ligature	uni17D2178817B6	1	2	0	-53,-317
+ligature	uni17D2178817B6	2	2	0	-53,-317
+ligature	uni17D2178817B6.low	1	2	0	-53,-589
+ligature	uni17D2178817B6.low	2	2	0	-53,-589
+ligature	uni17D2178817C5	1	2	0	-53,-317
+ligature	uni17D2178817C5	2	2	0	-53,-317
+ligature	uni17D2178817C5.low	1	2	0	-53,-589
+ligature	uni17D2178817C5.low	2	2	0	-53,-589
+ligature	uni17D2178D17B6	1	2	0	8,-317
+ligature	uni17D2178D17B6	2	2	0	8,-317
+ligature	uni17D2178D17B6.low	1	2	0	20,-618
+ligature	uni17D2178D17B6.low	2	2	0	20,-618
+ligature	uni17D2178D17C5	1	2	0	-41,-320
+ligature	uni17D2178D17C5	2	2	0	-41,-320
+ligature	uni17D2178D17C5.low	1	2	0	20,-618
+ligature	uni17D2178D17C5.low	2	2	0	20,-618
+ligature	uni17D2179417B6	1	2	0	37,-317
+ligature	uni17D2179417B6	2	2	0	37,-317
+ligature	uni17D2179417B6.low	1	2	0	44,-617
+ligature	uni17D2179417B6.low	2	2	0	44,-617
+ligature	uni17D2179417C5	1	2	0	37,-317
+ligature	uni17D2179417C5	2	2	0	37,-317
+ligature	uni17D2179417C5.low	1	2	0	44,-617
+ligature	uni17D2179417C5.low	2	2	0	44,-617
+ligature	uni17D2179917B6	1	2	0	12,-317
+ligature	uni17D2179917B6	2	2	0	12,-317
+ligature	uni17D2179917B6.low	1	2	0	12,-614
+ligature	uni17D2179917B6.low	2	2	0	12,-614
+ligature	uni17D2179917C5	1	2	0	12,-317
+ligature	uni17D2179917C5	2	2	0	12,-317
+ligature	uni17D2179917C5.low	1	2	0	12,-614
+ligature	uni17D2179917C5.low	2	2	0	12,-614
+ligature	uni17D2179E17B6	1	2	0	27,-320
+ligature	uni17D2179E17B6	2	2	0	27,-320
+ligature	uni17D2179E17B6.low	1	2	0	20,-614
+ligature	uni17D2179E17B6.low	2	2	0	20,-614
+ligature	uni17D2179E17C5	1	2	0	27,-320
+ligature	uni17D2179E17C5	2	2	0	27,-320
+ligature	uni17D2179E17C5.low	1	2	0	20,-614
+ligature	uni17D2179E17C5.low	2	2	0	20,-614
+ligature	uni17D2179F17B6	1	2	0	19,-317
+ligature	uni17D2179F17B6	2	2	0	19,-317
+ligature	uni17D2179F17B6.low	1	2	0	16,-616
+ligature	uni17D2179F17B6.low	2	2	0	16,-616
+ligature	uni17D2179F17C5	1	2	0	19,-317
+ligature	uni17D2179F17C5	2	2	0	19,-317
+ligature	uni17D2179F17C5.low	1	2	0	16,-616
+ligature	uni17D2179F17C5.low	2	2	0	16,-616
+
+lookup end
+
+
+lookup	32	mark to mark
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+MarkAttachmentType	2
+
+mark	uni17BB	0	-197,16
+mark	uni17BB.b	0	-395,16
+mark	uni17BC	0	-197,16
+mark	uni17BC.b	0	-330,16
+mark	uni17BD	0	-197,16
+mark	uni17BD.b	0	-331,16
+mark	uni17D21780	0	-316,16
+mark	uni17D21781	0	-316,16
+mark	uni17D21782	0	-317,16
+mark	uni17D21784	0	-313,16
+mark	uni17D21785	0	-289,16
+mark	uni17D21786	0	-315,16
+mark	uni17D21787	0	-316,16
+mark	uni17D21789	0	-316,16
+mark	uni17D2178A	0	-317,16
+mark	uni17D2178A.r	0	-317,16
+mark	uni17D2178B	0	-331,16
+mark	uni17D2178C	0	-317,16
+mark	uni17D2178E	0	-680,10
+mark	uni17D2178E.alt	0	-760,10
+mark	uni17D2178F	0	-317,16
+mark	uni17D2178F.r	0	-317,16
+mark	uni17D21790	0	-309,16
+mark	uni17D21791	0	-330,16
+mark	uni17D21792	0	-325,16
+mark	uni17D21793	0	-315,16
+mark	uni17D21795	0	-314,16
+mark	uni17D21796	0	-318,16
+mark	uni17D21797	0	-344,16
+mark	uni17D21797.r	0	-344,16
+mark	uni17D21798	0	-366,16
+mark	uni17D21798.r	0	-321,16
+mark	uni17D2179B	0	-308,16
+mark	uni17D2179C	0	-315,16
+mark	uni17D2179D	0	-317,16
+mark	uni17D217A0	0	-295,16
+mark	uni17D217A2	0	-366,16
+mark	uni17D217A7	0	-316,16
+mark	uni17D217AB	0	-330,16
+mark	uni17D217AC	0	-330,16
+mark	uni17D217AF	0	-285,16
+base	uni17D2	0	-297,-24
+base	uni17D21780	0	-315,-317
+base	uni17D21781	0	-318,-320
+base	uni17D21782	0	-317,-317
+base	uni17D21784	0	-313,-317
+base	uni17D21785	0	-292,-317
+base	uni17D21786	0	-292,-317
+base	uni17D21787	0	-316,-302
+base	uni17D21789	0	-295,-275
+base	uni17D21789.a	0	-527,-407
+base	uni17D2178A	0	-319,-317
+base	uni17D2178A.r	0	-319,-317
+base	uni17D2178B	0	-331,-320
+base	uni17D2178C	0	-317,-320
+base	uni17D2178E	0	-680,-317
+base	uni17D2178E.alt	0	-680,-317
+base	uni17D2178F	0	-319,-305
+base	uni17D2178F.r	0	-319,-305
+base	uni17D21790	0	-304,-305
+base	uni17D21791	0	-330,-323
+base	uni17D21792	0	-304,-314
+base	uni17D21793	0	-316,-300
+base	uni17D21795	0	-314,-317
+base	uni17D21796	0	-318,-316
+base	uni17D21797	0	-344,-317
+base	uni17D21797.r	0	-344,-317
+base	uni17D21798	0	-350,-310
+base	uni17D21798.r	0	-308,-310
+base	uni17D2179B	0	-308,-307
+base	uni17D2179C	0	-314,-331
+base	uni17D2179D	0	-317,-317
+base	uni17D217A0	0	-295,-316
+base	uni17D217A2	0	-366,-320
+base	uni17D217A7	0	-316,-412
+base	uni17D217AB	0	-315,-542
+base	uni17D217AC	0	-315,-542
+
+lookup end
+
+
+lookup	33	mark to base
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	yes
+IgnoreMarks	no
+
+mark	uni17D2178E	0	-680,10
+base	uni179F	0	534,0
+
+lookup end
+
+
+lookup	34	mark to base
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	yes
+IgnoreMarks	no
+
+mark	uni17D21789.a	0	-527,16
+base	uni1789.a	0	577,0
+
+lookup end
+
+
+lookup	35	mark to ligature
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+mark	uni17D21789.a	0	-527,16
+ligature	uni178917B6.a	1	2	0	577,0
+ligature	uni178917B6.a	2	2	0	577,0
+ligature	uni178917C5.a	1	2	0	577,0
+ligature	uni178917C5.a	2	2	0	577,0
+
+lookup end
+
+
+lookup	36	single
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+y placement	uni17BB	-333
+y placement	uni17BC	-333
+y placement	uni17BD	-333
+
+lookup end
+
+
+lookup	37	single
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+x placement	uni17BB	198
+x placement	uni17BC	133
+x placement	uni17BC.b	44
+x placement	uni17BD	134
+x placement	uni17BD.b	44
+
+lookup end
+
+
+lookup	38	chained
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+backtrackcoverage definition begin
+uni179E
+uni179F
+uni17A0
+uni17A2
+uni17D2179E
+uni17D2179F
+uni200D
+coverage definition end
+
+inputcoverage definition begin
+uni17BB
+coverage definition end
+
+lookaheadcoverage definition begin
+uni17D21780
+uni17D21781
+uni17D21782
+uni17D21784
+uni17D21785
+uni17D21786
+uni17D21787
+uni17D21789
+uni17D21789.a
+uni17D2178A
+uni17D2178B
+uni17D2178C
+uni17D2178E
+uni17D2178F
+uni17D21790
+uni17D21791
+uni17D21792
+uni17D21793
+uni17D21795
+uni17D21796
+uni17D21797
+uni17D21798
+uni17D2179B
+uni17D2179C
+uni17D217A0
+uni17D217A2
+coverage definition end
+
+coverage	1,36
+subtable end
+
+inputcoverage definition begin
+uni17BB
+uni17BC
+uni17BD
+coverage definition end
+
+lookaheadcoverage definition begin
+uni17D21780
+uni17D21781
+uni17D21782
+uni17D21783
+uni17D21783.low
+uni17D21784
+uni17D21785
+uni17D21786
+uni17D21787
+uni17D21788
+uni17D21788.low
+uni17D21789
+uni17D21789.a
+uni17D2178A
+uni17D2178A.r
+uni17D2178B
+uni17D2178C
+uni17D2178D
+uni17D2178D.low
+uni17D2178E
+uni17D2178E.alt
+uni17D2178F
+uni17D2178F.r
+uni17D21790
+uni17D21791
+uni17D21792
+uni17D21793
+uni17D21794
+uni17D21794.low
+uni17D21795
+uni17D21796
+uni17D21797
+uni17D21797.r
+uni17D21798
+uni17D21798.r
+uni17D21799
+uni17D21799.low
+uni17D2179A
+uni17D2179A.low
+uni17D2179B
+uni17D2179C
+uni17D2179D
+uni17D2179E
+uni17D2179E.low
+uni17D2179F
+uni17D2179F.low
+uni17D217A0
+uni17D217A1
+uni17D217A2
+uni17D217A7
+uni17D217AB
+uni17D217AC
+uni17D217AF
+coverage definition end
+
+lookaheadcoverage definition begin
+uni17B7
+uni17B8
+uni17B9
+uni17BA
+uni17D0
+coverage definition end
+
+coverage	1,36
+lookup end
+
+
+lookup	39	chained
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+backtrackcoverage definition begin
+uni1781
+uni1791
+coverage definition end
+
+inputcoverage definition begin
+uni17BC.b
+uni17BD.b
+coverage definition end
+
+coverage	1,37
+subtable end
+
+backtrackcoverage definition begin
+uni17D21780
+uni17D21781
+uni17D21782
+uni17D21784
+uni17D21785
+uni17D21786
+uni17D21787
+uni17D21789
+uni17D21789.a
+uni17D2178A
+uni17D2178B
+uni17D2178C
+uni17D2178E
+uni17D2178F
+uni17D21790
+uni17D21791
+uni17D21792
+uni17D21793
+uni17D21795
+uni17D21796
+uni17D21797
+uni17D21798
+uni17D2179B
+uni17D2179C
+uni17D217A0
+uni17D217A2
+coverage definition end
+
+backtrackcoverage definition begin
+uni1780
+uni1781
+uni1782
+uni1783
+uni1784
+uni1785
+uni1786
+uni1787
+uni1788
+uni1789
+uni178A
+uni178B
+uni178C
+uni178D
+uni178E
+uni178F
+uni1790
+uni1791
+uni1792
+uni1793
+uni1794
+uni1795
+uni1796
+uni1797
+uni1798
+uni1799
+uni179A
+uni179B
+uni179C
+uni179D
+uni179E
+uni179F
+uni17A0
+uni17A1
+uni17A2
+uni17A3
+uni17A4
+coverage definition end
+
+backtrackcoverage definition begin
+uni17D2179A.low
+coverage definition end
+
+inputcoverage definition begin
+uni17BB
+uni17BC
+uni17BD
+coverage definition end
+
+coverage	1,37
+lookup end
+
