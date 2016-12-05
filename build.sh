@@ -21,9 +21,13 @@ setup() {
             exit 1
         fi
     fi
-    python -m pip install --user --upgrade -r Lib/fontmake/requirements.txt
+    pip install --user virtualenv
+    python -m virtualenv env
+    source env/bin/activate
+    pip install --upgrade -r Lib/fontmake/requirements.txt
     cd Lib/fontmake
-    python setup.py install --user
+    pip install .
+    deactivate
 }
 
 build_all() {
@@ -35,6 +39,7 @@ build_all() {
 }
 
 build_one() {
+    source env/bin/activate
     case "$1" in
         *.plist)
             build_plist "$1" 'otf' 'ttf'
@@ -53,6 +58,7 @@ build_one() {
     if [[ "$?" -ne 0 && "$2" != 'force' ]]; then
         exit 1
     fi
+    deactivate
 }
 
 main() {
