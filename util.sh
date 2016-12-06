@@ -13,6 +13,41 @@
 # limitations under the License.
 
 ################################################################################
+# Temporarily download virtualenv package from PyPI and run with arguments.
+# Arguments:
+#     The Python interpreter to use to create the new virtual environment.
+#     The destination folder for the new virtual environment.
+#     Extra arguments to pass on to virtualenv script.
+################################################################################
+function bootstrap_virtualenv() {
+    if [ $# -lt 2 ]; then
+        echo "usage: bootstrap_virtualenv PYTHON_EXE DEST_DIR [OPTIONS]"
+        exit 2
+    fi
+
+    venv_version="15.1.0"
+    venv_package_dir="virtualenv-${venv_version}"
+    venv_tarball="${venv_package_dir}.tar.gz"
+
+    python_exe="$1"
+    dest_dir="$2"
+    shift 2
+    options="$@"
+
+    # print commands as they are executed
+    set -x
+    # download the virtualenv package from PyPI
+    curl -LO "https://pypi.org/packages/source/v/virtualenv/${venv_tarball}"
+    tar xzf $venv_tarball
+    # create a new virtual environment
+    "$python_exe" ${venv_package_dir}/virtualenv.py $options "$dest_dir"
+    # clean up temporary files
+    rm -rf $venv_package_dir $venv_tarball
+    # turn off commands echoing
+    { set +x; } 2> /dev/null
+}
+
+################################################################################
 # Build from Glyphs source.
 # Arguments:
 #     Path to Glyphs source.
