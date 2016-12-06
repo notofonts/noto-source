@@ -12,21 +12,27 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+# stop script execution if any command returns an error
+set -e
+
 source util.sh
 
+# local folder containing the python virtual environment (default: ./venv)
+VENV="${VENV:-venv}"
+
+# Set the $PYTHON_EXE env variable to override the default "python"
+# interpreter that is used to create the virtual environment
+PYTHON_EXE="${PYTHON_EXE:-python}"
+
 setup() {
-    if [[ ! $(python -m pip) ]]; then
-        if [[ ! $(sudo python -m ensurepip) ]]; then
-            echo 'You need to manually install pip.'
-            exit 1
-        fi
+    # create virtual environment if it does not exist yet
+    if [ ! -d "$VENV" ]; then
+        bootstrap_virtualenv $PYTHON_EXE $VENV
     fi
-    pip install --user virtualenv
-    python -m virtualenv env
-    source env/bin/activate
-    pip install --upgrade -r Lib/fontmake/requirements.txt
-    cd Lib/fontmake
-    pip install .
+
+    # install/update fontmake and it dependencies inside the virtual env
+    source ${VENV}/bin/activate
+    pip install --upgrade -r Lib/fontmake/requirements.txt Lib/fontmake
     deactivate
 }
 
@@ -39,7 +45,7 @@ build_all() {
 }
 
 build_one() {
-    source env/bin/activate
+    source ${VENV}/bin/activate
     case "$1" in
         *.plist)
             build_plist "$1" 'otf' 'ttf'
