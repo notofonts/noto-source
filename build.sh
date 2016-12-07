@@ -21,8 +21,10 @@ setup() {
             exit 1
         fi
     fi
-    pip install --user virtualenv
-    python -m virtualenv env
+    if [[ ! -e env ]]; then
+        pip install --user virtualenv
+        python -m virtualenv env
+    fi
     source env/bin/activate
     pip install --upgrade -r Lib/fontmake/requirements.txt
     cd Lib/fontmake
