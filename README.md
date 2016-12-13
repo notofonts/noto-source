@@ -16,14 +16,17 @@ To build everything from source:
 $ git clone --recursive https://github.com/googlei18n/noto-source.git
 $ cd noto-source
 $ ./build setup
-$ ./build
+$ ./build all
 ```
 
 other build options exist:
 
 ```bash
-$ ./build build_one src/NotoSansUIRoman-MM.glyphs  # build a single source
-$ ./build force  # continue building even when some sources fail
+$ ./build src/NotoSansUIRoman-MM.glyphs  # build from a single source
+$ ./build variable src/NotoSansUIRoman-MM.glyphs  # build a single variable font
+$ ./build all variable  # build all variable fonts
+$ ./build all force
+$ ./build all variable force  # continue building even when some sources fail
 ```
 
 be sure to update this repository and its dependencies on subsequent runs:

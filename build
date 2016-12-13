@@ -37,12 +37,16 @@ setup() {
 build_all() {
     for target in src/*.glyphs src/*/*.plist src/*/*.ufo; do
         echo "==== building ${target} ===="
-        build_one "${target}" "$1"
+        if [[ "$1" == 'variable' ]]; then
+            build_variable "${target}" "$2"
+        else
+            build "${target}" "$1"
+        fi
         echo
     done
 }
 
-build_one() {
+build() {
     source env/bin/activate
     case "$1" in
         *.plist)
@@ -55,7 +59,27 @@ build_one() {
             build_ufo "$1"
             ;;
         *)
-            echo "unrecognized file type $1"
+            echo "unrecognized source type: \"$1\""
+            exit 1
+            ;;
+    esac
+    if [[ "$?" -ne 0 && "$2" != 'force' ]]; then
+        exit 1
+    fi
+    deactivate
+}
+
+build_variable() {
+    source env/bin/activate
+    case "$1" in
+        *.plist)
+            build_plist_variable "$1"
+            ;;
+        *.glyphs)
+            build_glyphs_variable "$1"
+            ;;
+        *)
+            echo "unrecognized source type for variable font: \"$1\""
             exit 1
             ;;
     esac
@@ -68,8 +92,9 @@ build_one() {
 main() {
     case "$1" in
         setup) setup ;;
-        build_one) build_one "$2" ;;
-        *) build_all "$1" ;;
+        all) build_all "$2" "$3" ;;
+        variable) build_variable "$2" ;;
+        *) build "$1" ;;
     esac
 }
 
