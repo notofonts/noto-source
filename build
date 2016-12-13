@@ -16,7 +16,7 @@
 
 source util.sh
 
-setup() {
+function setup() {
     if [[ ! $(python -m pip) ]]; then
         if [[ ! $(sudo python -m ensurepip) ]]; then
             echo 'You need to manually install pip.'
@@ -34,7 +34,7 @@ setup() {
     deactivate
 }
 
-build_all() {
+function build_all() {
     for target in src/*.glyphs src/*/*.plist src/*/*.ufo; do
         echo "==== building ${target} ===="
         if [[ "$1" == 'variable' ]]; then
@@ -46,7 +46,7 @@ build_all() {
     done
 }
 
-build() {
+function build() {
     source env/bin/activate
     case "$1" in
         *.plist)
@@ -69,7 +69,7 @@ build() {
     deactivate
 }
 
-build_variable() {
+function build_variable() {
     source env/bin/activate
     case "$1" in
         *.plist)
@@ -89,7 +89,7 @@ build_variable() {
     deactivate
 }
 
-main() {
+function main() {
     case "$1" in
         setup) setup ;;
         all) build_all "$2" "$3" ;;
