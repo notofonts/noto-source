@@ -15,15 +15,15 @@ To build everything from source:
 ```
 $ git clone --recursive https://github.com/googlei18n/noto-source.git
 $ cd noto-source
-$ make setup
-$ make
+$ ./build setup
+$ ./build
 ```
 
 other build options exist:
 
 ```bash
-$ make -B src/NotoSansUIRoman-MM.glyphs  # build a single source
-$ make force  # continue building even when some sources fail
+$ ./build build_one src/NotoSansUIRoman-MM.glyphs  # build a single source
+$ ./build force  # continue building even when some sources fail
 ```
 
 be sure to update this repository and its dependencies on subsequent runs:
@@ -31,7 +31,7 @@ be sure to update this repository and its dependencies on subsequent runs:
 ```
 $ git pull
 $ git submodule update --recursive
-$ make setup
+$ ./build setup
 $ ...
 ```
 
