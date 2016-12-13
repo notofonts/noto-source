@@ -13,7 +13,7 @@
 # limitations under the License.
 
 ################################################################################
-# Build from Glyphs source.
+# Build font instances from Glyphs source.
 # Arguments:
 #     Path to Glyphs source.
 #     Output formats, as separate strings.
@@ -23,23 +23,15 @@ function build_glyphs() {
 }
 
 ################################################################################
-# Build from plist source, which designates separate MTI feature files to use
-# with a corresponding Glyphs source.
+# Build font instances from plist source, which designates separate MTI feature
+# files to use with a corresponding Glyphs source.
 # Arguments:
 #     Path to plist source.
 #     Output formats, as separate strings.
 ################################################################################
 function build_plist() {
-    glyphs="${1/%.plist/.glyphs}"
-    case "$1" in
-        */NotoSansDevanagariUI-MM.plist)
-            glyphs="${glyphs/UI/}"
-            family='Noto Sans Devanagari UI'
-            ;;
-        *)
-            family=''
-            ;;
-    esac
+    glyphs="$(glyphs_from_plist "$1")"
+    family="$(family_from_plist "$1")"
     if [[ -n "$f" ]]; then
         fontmake -g "$glyphs" -o "${@:2}" --mti-source "$1"\
             --no-production-names --family-name "$family"
@@ -54,6 +46,31 @@ function build_plist() {
 }
 
 ################################################################################
+# Build variable font from Glyphs source.
+# Arguments:
+#     Path to Glyphs source.
+################################################################################
+function build_glyphs_variable() {
+    fontmake -g "$1" -o variable
+}
+
+################################################################################
+# Build variable font from plist source.
+# Arguments:
+#     Path to plist source.
+################################################################################
+function build_plist_variable() {
+    glyphs="$(glyphs_from_plist "$1")"
+    family="$(family_from_plist "$1")"
+    if [[ -n "${family}" ]]; then
+        fontmake -g "${glyphs}" -o variable --mti-source "$1"\
+            --family-name "${family}"
+    else
+        fontmake -g "${glyphs}" -o variable --mti-source "$1"
+    fi
+}
+
+################################################################################
 # Build from UFO source, assuming that the source contains quadratic curves (for
 # which BooleanOperations is unable to remove overlaps, and only TTFs can be
 # generated).
@@ -62,4 +79,27 @@ function build_plist() {
 ################################################################################
 function build_ufo() {
     fontmake -u "$1" -o 'ttf' --keep-overlaps
+}
+
+function glyphs_from_plist() {
+    glyphs="${1/%.plist/.glyphs}"
+    case "$1" in
+        */NotoSansDevanagariUI-MM.plist)
+            echo "${glyphs/UI/}"
+            ;;
+        *)
+            echo "${glyphs}"
+            ;;
+    esac
+}
+
+function family_from_plist() {
+    case "$1" in
+        */NotoSansDevanagariUI-MM.plist)
+            echo 'Noto Sans Devanagari UI'
+            ;;
+        *)
+            echo ''
+            ;;
+    esac
 }
