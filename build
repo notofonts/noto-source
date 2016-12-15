@@ -30,7 +30,7 @@ function setup() {
     source env/bin/activate
     pip install --upgrade -r scripts/fontmake/requirements.txt
     cd scripts/fontmake
-    pip install .
+    pip install --upgrade .
     deactivate
 }
 
