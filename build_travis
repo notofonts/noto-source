@@ -20,9 +20,10 @@ function main() {
     branch="${TRAVIS_BRANCH}"
     event="${TRAVIS_EVENT_TYPE}"
     commit_range="${TRAVIS_COMMIT_RANGE}"
+    staging_branch='staging'
 
     # do nothing unless pushing to staging or master
-    if [[ ( "${branch}" != 'master' && "${branch}" != 'staging' ) ||
+    if [[ ( "${branch}" != 'master' && "${branch}" != "{$staging_branch}" ) ||
           "${event}" != 'push' ]]; then
         exit 0
     fi
@@ -30,11 +31,11 @@ function main() {
     outdir='instance_ttf'
     cached_outdir='output'
 
-    #TODO use a separate report path, directory and branch for each change, to
-    # allow for simultaneous reviews. would have to clean them up afterwards.
-    cmp_dir='comparisons'
+    change_hash="$(git log -1 | awk '/commit [a-z0-9]+/ { print $2 }')"
+    cmp_dir="${change_hash}/comparisons"
     cmp_report="${cmp_dir}/report.txt"
     cache_branch='gh-pages'
+    tmp_branch="${staging_branch}-${change_hash}"
 
     # build the updated sources
     echo "building sources changed from ${commit_range}"
@@ -72,6 +73,7 @@ function main() {
     credentials="noto-buildbot:${noto_buildbot_token}"
 
     # just cache new output if pushed to master
+    #TODO remove comparison directories and branches without open PRs
     if [[ "${branch}" == 'master' ]]; then
         for ttf in ${outdir}/*.ttf; do
             mv "${ttf}" "${cached_outdir}"
@@ -85,7 +87,6 @@ function main() {
 
     # otherwise, compare new output with old
     #TODO add more tests and comparisons (fontreport, notolint, unit tests)
-    git rm -r "${cmp_dir}"
     mkdir "${cmp_dir}"
 
     echo 'running notodiff rendering check...'
@@ -130,19 +131,28 @@ function main() {
 
     # generate comparison summary and upload
     python generate_html.py "${commit_range}" "${cmp_dir}"
-    git add 'index.html' "${cmp_dir}"
+    git add "${change_hash}"
     git commit -m 'Review commit' --amend
     git push --force "https://${credentials}@${git_url}.git"\
         "${cache_branch}" >/dev/null 2>&1
 
-    # create a new pull request to master
-    pull_request_json='{
-        "title": "Review request",
-        "body": "Review report of changes at
-            https://googlei18n.github.io/noto-source/.",
-        "head": "staging",
-        "base": "master"
-    }'
+    # create temporary branch to merge into master and reset staging
+    git branch "${tmp_branch}" "${staging_branch}"
+    git branch -D "${staging_branch}"
+    git branch "${staging_branch}" master
+    git push "https://${credentials}@${git_url}.git"\
+        "${tmp_branch}" >/dev/null 2>&1
+    git push --force "https://${credentials}@${git_url}.git"\
+        "${staging_branch}" >/dev/null 2>&1
+
+    # create pull request
+    pull_request_json="{
+        \"title\": \"Review request\",
+        \"body\": \"Review report of changes at
+            https://googlei18n.github.io/noto-source/${change_hash}.\",
+        \"head\": \"${tmp_branch}\",
+        \"base\": \"master\"
+    }"
     curl -u "${credentials}" -d "${pull_request_json//$'\n'/}"\
         'https://api.github.com/repos/googlei18n/noto-source/pulls'
     #TODO find and post a comment on the original PR to staging
