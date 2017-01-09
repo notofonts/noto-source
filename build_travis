@@ -103,7 +103,7 @@ function main() {
 
     # otherwise, compare new output with old
     #TODO add more tests and comparisons (fontreport, notolint, unit tests)
-    mkdir "${cmp_dir}"
+    mkdir -p "${cmp_dir}"
 
     echo 'running notodiff rendering check...'
     notodiff -t 'rendered' --render-path "${cmp_dir}" --diff-threshold 0.01\
