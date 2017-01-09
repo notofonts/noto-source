@@ -23,7 +23,8 @@ function main() {
     staging_branch='staging'
 
     # do nothing unless pushing to staging or master
-    if [[ ( "${branch}" != 'master' && "${branch}" != "{$staging_branch}" ) ||
+    if [[ ( "${branch}" != 'master' && "${branch}" != "{$staging_branch}" &&
+            "${branch}" != 'ci' ) ||
           "${event}" != 'push' ]]; then
         exit 0
     fi
@@ -153,7 +154,7 @@ function main() {
         "${cache_branch}" >/dev/null 2>&1
 
     # create temporary branch to merge into master and reset staging
-    git branch "${tmp_branch}" "${staging_branch}"
+    git branch "${tmp_branch}" "${branch}"
     git branch -D "${staging_branch}"
     git branch "${staging_branch}" master
     git push "https://${credentials}@${git_url}.git"\
