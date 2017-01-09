@@ -72,9 +72,9 @@ function main() {
     git_url='github.com/googlei18n/noto-source'
     credentials="noto-buildbot:${noto_buildbot_token}"
 
-    # just cache new output if pushed to master
-    #TODO remove comparison directories and branches without open PRs
     if [[ "${branch}" == 'master' ]]; then
+
+        # cache new output
         for ttf in ${outdir}/*.ttf; do
             mv "${ttf}" "${cached_outdir}"
         done
@@ -82,6 +82,22 @@ function main() {
         git commit -m 'Update cached output' --amend
         git push --force "https://${credentials}@${git_url}.git"\
             "${cache_branch}" >/dev/null 2>&1
+
+        # clean up old content
+        old_content="$(python generate_old_content.py "${staging_branch}")"
+        echo "${old_content}" | while read content; do
+            if [[ "${content}" =~ directory:.+ ]]; then
+                rm -r "${content/directory:/}"
+            elif [[ "${content}" =~ branch:.+ ]]; then
+                git branch -D "${content/branch:/}"
+            elif [[ -n "${content}" ]]; then
+                echo 'Unexpected output received from generate_old_content.py:'
+                echo "${content}"
+                break
+            fi
+        done
+
+        # nothing else to do if pushed to master
         exit 0
     fi
 
