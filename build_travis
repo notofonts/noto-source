@@ -155,7 +155,9 @@ function main() {
     # create temporary branch to merge into master and reset staging
     git branch "${tmp_branch}" "${staging_branch}"
     git branch -D "${staging_branch}"
-    git branch "${staging_branch}" master
+    git remote set-branches --add origin master
+    git fetch origin master
+    git branch "${staging_branch}" origin/master
     git push "https://${credentials}@${git_url}.git"\
         "${tmp_branch}" >/dev/null 2>&1
     git push --force "https://${credentials}@${git_url}.git"\
