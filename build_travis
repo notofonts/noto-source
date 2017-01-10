@@ -49,6 +49,8 @@ function main() {
         fi
     fi
 
+    setup
+
     # build the updated sources
     echo "building sources changed from ${commit_range}"
     git diff --name-only "${commit_range}" | while read src; do
@@ -184,6 +186,36 @@ function main() {
     curl -u "${credentials}" -d "${pull_request_json//$'\n'/}"\
         'https://api.github.com/repos/googlei18n/noto-source/pulls'
     #TODO find and post a comment on the original PR to staging
+}
+
+function setup() {
+    # install fontmake
+    git clone https://github.com/googlei18n/fontmake.git
+    cd fontmake
+    pip install -r requirements.txt
+    python setup.py install
+    cd ..
+
+    # install notodiff and dependencies
+    pip install Pillow
+
+    wget https://www.freedesktop.org/software/harfbuzz/release/harfbuzz-1.3.2.tar.bz2
+    tar xjf harfbuzz-1.3.2.tar.bz2
+    cd harfbuzz-1.3.2
+    ./configure
+    make
+    PATH="${PATH}:$(pwd)/util"
+    cd ..
+
+    git clone https://github.com/googlei18n/nototools.git
+    cd nototools
+    python setup.py install
+    cd ..
+
+    # install fontdiff
+    wget https://github.com/googlei18n/fontdiff/releases/download/v0.1.1/fontdiff-linux.zip
+    unzip fontdiff-linux.zip
+    mv fontdiff-linux/fontdiff .
 }
 
 function get_hash() {
