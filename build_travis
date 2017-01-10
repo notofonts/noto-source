@@ -31,11 +31,23 @@ function main() {
     outdir='instance_ttf'
     cached_outdir='output'
 
-    change_hash="$(git log -1 | awk '/commit [a-z0-9]+/ { print $2 }')"
+    change_hash="$(get_hash)"
     cmp_dir="${change_hash}/comparisons"
     cmp_report="${cmp_dir}/report.txt"
     cache_branch='gh-pages'
     tmp_branch="${staging_branch}-${change_hash}"
+
+    # do nothing if just resetting staging to master
+    if [[ "${branch}" == "${staging_branch}" ]]; then
+        git remote set-branches --add origin master
+        git fetch origin master
+        git checkout -b master origin/master
+        if [[ "$(get_hash)" == "${change_hash}" ]]; then
+            exit 0
+        else
+            git checkout "${staging_branch}"
+        fi
+    fi
 
     # build the updated sources
     echo "building sources changed from ${commit_range}"
@@ -60,7 +72,7 @@ function main() {
 
     # switch to cache branch and make sure there's a directory for cached fonts
     git remote set-branches --add origin "${cache_branch}"
-    git fetch
+    git fetch origin "${cache_branch}"
     git checkout "${cache_branch}"
     if [[ ! -d "${cached_outdir}" ]]; then
         mkdir "${cached_outdir}"
@@ -155,8 +167,6 @@ function main() {
     # create temporary branch to merge into master and reset staging
     git branch "${tmp_branch}" "${staging_branch}"
     git branch -D "${staging_branch}"
-    git remote set-branches --add origin master
-    git fetch origin master
     git branch "${staging_branch}" origin/master
     git push "https://${credentials}@${git_url}.git"\
         "${tmp_branch}" >/dev/null 2>&1
@@ -174,6 +184,10 @@ function main() {
     curl -u "${credentials}" -d "${pull_request_json//$'\n'/}"\
         'https://api.github.com/repos/googlei18n/noto-source/pulls'
     #TODO find and post a comment on the original PR to staging
+}
+
+function get_hash() {
+    echo "$(git log -1 | awk '/commit [a-z0-9]+/ { print $2 }')"
 }
 
 main "$@"
