@@ -37,8 +37,14 @@ function main() {
     cache_branch='gh-pages'
     tmp_branch="${staging_branch}-${change_hash}"
 
-    # do nothing if just resetting staging to master
-    if [[ "${branch}" == "${staging_branch}" ]]; then
+    # always reset staging on push to master
+    if [[ "${branch}" == 'master' ]]; then
+        git branch "${staging_branch}" origin/master
+        git push --force "https://${credentials}@${git_url}.git"\
+            "${staging_branch}" >/dev/null 2>&1
+
+    # do nothing if resetting staging
+    elif [[ "${branch}" == "${staging_branch}" ]]; then
         git remote set-branches --add origin master
         git fetch origin master
         git checkout -b master origin/master
