@@ -49,7 +49,7 @@ function main() {
         fi
     fi
 
-    setup
+    setup_fontmake
 
     # build the updated sources
     echo "building sources changed from ${commit_range}"
@@ -119,6 +119,7 @@ function main() {
 
     # otherwise, compare new output with old
     #TODO add more tests and comparisons (fontreport, notolint, unit tests)
+    setup_diffing
     mkdir -p "${cmp_dir}"
 
     echo 'running notodiff rendering check...'
@@ -190,14 +191,16 @@ function main() {
     #TODO find and post a comment on the original PR to staging
 }
 
-function setup() {
+function setup_fontmake() {
     # install fontmake
     git clone https://github.com/googlei18n/fontmake.git
     cd fontmake
     pip install -r requirements.txt
     python setup.py install
     cd ..
+}
 
+function setup_diffing() {
     # install notodiff and dependencies
     pip install Pillow
 
