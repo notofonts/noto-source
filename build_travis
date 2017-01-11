@@ -37,6 +37,12 @@ function main() {
     cache_branch='gh-pages'
     tmp_branch="${staging_branch}-${change_hash}"
 
+    # configure git for bot account
+    git config 'user.name' 'noto-buildbot'
+    git config 'user.email' 'noto-buildbot@google.com'
+    git_url='github.com/googlei18n/noto-source'
+    credentials="noto-buildbot:${noto_buildbot_token}"
+
     # always reset staging on push to master
     if [[ "${branch}" == 'master' ]]; then
         git branch "${staging_branch}" origin/master
@@ -86,14 +92,7 @@ function main() {
         mkdir "${cached_outdir}"
     fi
 
-    # configure git for bot account
-    git config 'user.name' 'noto-buildbot'
-    git config 'user.email' 'noto-buildbot@google.com'
-    git_url='github.com/googlei18n/noto-source'
-    credentials="noto-buildbot:${noto_buildbot_token}"
-
     if [[ "${branch}" == 'master' ]]; then
-
         # cache new output
         for ttf in ${outdir}/*.ttf; do
             mv "${ttf}" "${cached_outdir}"
