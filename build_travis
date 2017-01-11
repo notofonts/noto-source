@@ -93,15 +93,12 @@ function main() {
             mv "${ttf}" "${cached_outdir}"
         done
         git add "${cached_outdir}"
-        git commit -m 'Update cached output' --amend
-        git push --force "https://${credentials}@${git_url}.git"\
-            "${cache_branch}" >/dev/null 2>&1
 
         # clean up old content
         old_content="$(python generate_old_content.py "${staging_branch}")"
         echo "${old_content}" | while read content; do
             if [[ "${content}" =~ directory:.+ ]]; then
-                rm -r "${content/directory:/}"
+                git rm -r "${content/directory:/}"
             elif [[ "${content}" =~ branch:.+ ]]; then
                 git branch -D "${content/branch:/}"
             elif [[ -n "${content}" ]]; then
@@ -110,6 +107,10 @@ function main() {
                 break
             fi
         done
+
+        git commit -m 'Update cached output' --amend
+        git push --force "https://${credentials}@${git_url}.git"\
+            "${cache_branch}" >/dev/null 2>&1
 
         # nothing else to do if pushed to master
         exit 0
