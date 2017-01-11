@@ -100,7 +100,8 @@ function main() {
             if [[ "${content}" =~ directory:.+ ]]; then
                 git rm -r "${content/directory:/}"
             elif [[ "${content}" =~ branch:.+ ]]; then
-                git branch -D "${content/branch:/}"
+                git push "https://${credentials}@${git_url}.git"\
+                    --delete "${content/branch:/}" >/dev/null 2>&1
             elif [[ -n "${content}" ]]; then
                 echo 'Unexpected output received from generate_old_content.py:'
                 echo "${content}"
