@@ -95,7 +95,8 @@ function main() {
         git add "${cached_outdir}"
 
         # clean up old content
-        old_content="$(python generate_old_content.py "${staging_branch}")"
+        old_content="$(python generate_old_content.py\
+                       "${staging_branch}" "${credentials}")"
         echo "${old_content}" | while read content; do
             if [[ "${content}" =~ directory:.+ ]]; then
                 git rm -r "${content/directory:/}"
