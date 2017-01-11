@@ -23,7 +23,7 @@ function main() {
     staging_branch='staging'
 
     # do nothing unless pushing to staging or master
-    if [[ ( "${branch}" != 'master' && "${branch}" != "{$staging_branch}" ) ||
+    if [[ ( "${branch}" != 'master' && "${branch}" != "${staging_branch}" ) ||
           "${event}" != 'push' ]]; then
         exit 0
     fi
