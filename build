@@ -16,21 +16,33 @@
 
 source util.sh
 
+# exit early if any sub-commands fails
+set -e
+
 function setup() {
-    if [[ ! $(python -m pip) ]]; then
-        if [[ ! $(sudo python -m ensurepip) ]]; then
-            echo 'You need to manually install pip.'
-            exit 1
+    if [[ ! $(python -m pip --version 2>/dev/null) ]]; then
+        echo >&2 "error: pip is not installed."
+        echo >&2 "Try running 'python -m ensurepip' or check installation instructions:"
+        echo >&2 "https://pip.pypa.io/en/stable/installing/"
+        exit 1
+    fi
+    if [[ ! -d env ]]; then
+        if [[ ! $(python -m virtualenv --version 2>/dev/null) ]]; then
+            if [ ! -e scripts/virtualenv/virtualenv.py ]; then
+                echo "virtualenv is not installed; installing to scripts/virtualenv"
+                mkdir -p scripts/virtualenv
+                python -m pip install --target scripts/virtualenv virtualenv
+            fi
+            python scripts/virtualenv/virtualenv.py env
+        else
+            python -m virtualenv env
         fi
     fi
-    if [[ ! -e env ]]; then
-        pip install --user virtualenv
-        python -m virtualenv env
-    fi
     source env/bin/activate
+    # ensure fontmake submodule is up-to-date
+    git submodule update --init
     pip install --upgrade -r scripts/fontmake/requirements.txt
-    cd scripts/fontmake
-    pip install --upgrade .
+    pip install --upgrade scripts/fontmake
     deactivate
 }
 
