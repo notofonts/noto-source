@@ -1,0 +1,36 @@
+feature liga {
+    # Couple Kissing (first 2 ligatures), Couple with Heart 
+    # (ligatures 3 & 4) and Family (Ligature 5)
+
+    substitute u1F469 uni200D uni2764 uni200D u1F48B uni200D u1F468 by u1F48F;
+    substitute u1F469 uni200D uni2764 uniFE0F uni200D u1F48B uni200D u1F468 by u1F48F;
+    substitute u1F469 uni200D uni2764 uni200D u1F468 by u1F491;
+    substitute u1F469 uni200D uni2764 uniFE0F uni200D u1F468 by u1F491;
+    substitute u1F468 uni200D u1F469 uni200D u1F466 by u1F46A;
+
+    # Expand u1F46A "family" when it is followed with a ZWJ,
+    # in order to deligaturize the "Man + Woman + Boy" ligature
+    # for unsupported seqences, such as "Man + Woman + Boy + Boy", 
+    # and Microsoft's "Man + Woman + Boy + Girl"
+
+    substitute u1F46A' uni200D by u1F468 uni200D u1F469 uni200D u1F466;
+
+    # Keycap sequences
+
+    substitute numbersign uniFE0F uni20E3 by uni0023_20E3;
+    substitute zero uniFE0F uni20E3 by uni0030_20E3;
+    substitute one uniFE0F uni20E3 by uni0031_20E3;
+    substitute two uniFE0F uni20E3 by uni0032_20E3;
+    substitute three uniFE0F uni20E3 by uni0033_20E3;
+    substitute four uniFE0F uni20E3 by uni0034_20E3;
+    substitute five uniFE0F uni20E3 by uni0035_20E3;
+    substitute six uniFE0F uni20E3 by uni0036_20E3;
+    substitute seven uniFE0F uni20E3 by uni0037_20E3;
+    substitute eight uniFE0F uni20E3 by uni0038_20E3;
+    substitute nine uniFE0F uni20E3 by uni0039_20E3;
+
+    # "uni200D" is Zero Width Joiner. It indicates when adjacent emoji
+    # should be combined as one glyph. "uniFE0F" is Variation Selector 16.
+    # It indicates when a codepoint ought to render as an emoji, 
+    # rather than as plain text from a "symbols" font or similar.
+} liga;
