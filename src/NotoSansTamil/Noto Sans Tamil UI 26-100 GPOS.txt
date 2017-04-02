@@ -9,12 +9,12 @@ EM	1000
 feature table begin
 0	abvm	vedic-taml
 1	blwm	nukta-taml
-2	dist	iispacingfix-taml
+2	dist	iispacingfix-taml,anusvarafix-taml
 3	kern	pairs-taml
 feature table end
 
 script table begin
-taml	default		0,1,2,3	
+taml	default		0,1,2,3
 tml2	default		0,1,2,3
 script table end
 
@@ -494,6 +494,241 @@ left x advance	14	3	-54
 left x advance	14	6	-138
 left x advance	14	7	-19
 left x advance	14	9	-25
+
+lookup end
+
+
+lookup	anusvarafix-taml	chained
+
+backtrackclass definition begin
+atamil	1
+aatamil	1
+iitamil	1
+utamil	1
+uutamil	1
+etamil	1
+eetamil	1
+aitamil	1
+otamil	1
+ootamil	1
+autamil	1
+katamil	1
+ngatamil	2
+catamil	1
+jatamil	2
+nyatamil	2
+ttatamil	1
+nnatamil	2
+tatamil	1
+natamil	1
+nnnatamil	2
+patamil	1
+matamil	1
+yatamil	1
+ratamil	1
+rratamil	1
+latamil	2
+llatamil	2
+lllatamil	1
+vatamil	2
+shatamil	2
+ssatamil	2
+satamil	2
+hatamil	2
+tchatamil	2
+kauvowelsigntamil	1
+kauuvowelsigntamil	1
+ngaiivowelsigntamil	1
+ngauvowelsigntamil	1
+ngauuvowelsigntamil	1
+cauvowelsigntamil	1
+cauuvowelsigntamil	1
+nyaiivowelsigntamil	1
+nyauvowelsigntamil	1
+nyauuvowelsigntamil	1
+ttaivowelsigntamil	1
+ttaiivowelsigntamil	1
+nnaiivowelsigntamil	1
+nnauvowelsigntamil	1
+nnauuvowelsigntamil	1
+tauvowelsigntamil	1
+tauuvowelsigntamil	1
+nauvowelsigntamil	1
+nauuvowelsigntamil	1
+nnnaiivowelsigntamil	1
+nnnauvowelsigntamil	1
+nnnauuvowelsigntamil	1
+pauvowelsigntamil	1
+pauuvowelsigntamil	1
+mauvowelsigntamil	1
+mauuvowelsigntamil	1
+yauvowelsigntamil	1
+yauuvowelsigntamil	1
+rauvowelsigntamil	1
+rauuvowelsigntamil	1
+rrauvowelsigntamil	1
+rrauuvowelsigntamil	1
+laivowelsigntamil	1
+laiivowelsigntamil	1
+lauvowelsigntamil	1
+lauuvowelsigntamil	1
+llaiivowelsigntamil	1
+llauvowelsigntamil	1
+llauuvowelsigntamil	1
+lllauvowelsigntamil	1
+lllauuvowelsigntamil	1
+vaiivowelsigntamil	1
+vauvowelsigntamil	1
+vauuvowelsigntamil	1
+ssaiivowelsigntamil	1
+saivowelsigntamil	1
+saiivowelsigntamil	1
+haiivowelsigntamil	1
+tchaiivowelsigntamil	1
+shritamil	1
+aavowelsigntamil	3
+ivowelsigntamil	4
+uvowelsigntamil	3
+uuvowelsigntamil	3
+aulengthmarktamil	3
+uvowelsignalttamil	3
+uuvowelsignalttamil	3
+ivowelsign4tamil	4
+ivowelsign3tamil	4
+ivowelsign2tamil	4
+ivowelsign1tamil	4
+itamil	5
+ttauvowelsigntamil	5
+class definition end
+
+class definition begin
+anusvaratamil	1
+class definition end
+
+lookaheadclass definition begin
+# 1	1
+class definition end
+
+class-chain	 1	1		1,anusvara_advance-taml	1,anusvaramarktobase-taml
+class-chain	 2	1		1,anusvara_advance-taml	1,anusvaramarktobase-taml
+class-chain	 3,1	1		1,anusvara_advance-taml	1,anusvaramarktobase-taml
+class-chain	 3,2	1		1,anusvara_advance-taml	1,anusvaramarktobase-taml
+class-chain	 4,2	1		1,anusvara_advance-taml	1,anusvaramarktobase-taml
+class-chain	 4	1		1,anusvara_shift1-taml	1,anusvara_shift2-taml
+class-chain	 5	1		1,anusvara_shift1-taml	1,anusvara_shift2-taml
+
+lookup end
+
+
+lookup	anusvara_shift1-taml	single
+
+x advance	anusvaratamil	-81
+
+lookup end
+
+
+lookup	anusvara_shift2-taml	single
+
+x placement	anusvaratamil	-81
+
+lookup end
+
+
+lookup	anusvara_advance-taml	single
+
+x advance	anusvaratamil	-324
+
+lookup end
+
+
+lookup	anusvaramarktobase-taml	mark to base
+
+mark	anusvaratamil	0	162,-29
+base	atamil	0	529,-29
+base	aatamil	0	614,-29
+base	iitamil	0	305,-29
+base	utamil	0	505,-29
+base	uutamil	0	709,-29
+base	etamil	0	372,-29
+base	eetamil	0	372,-29
+base	aitamil	0	479,-29
+base	otamil	0	462,-29
+base	ootamil	0	462,-29
+base	autamil	0	966,-29
+base	katamil	0	377,-29
+base	ngatamil	0	492,-29
+base	catamil	0	336,-29
+base	jatamil	0	479,-29
+base	nyatamil	0	557,-29
+base	ttatamil	0	334,-29
+base	nnatamil	0	763,-29
+base	tatamil	0	377,-29
+base	natamil	0	362,-29
+base	nnnatamil	0	573,-29
+base	patamil	0	364,-29
+base	matamil	0	400,-29
+base	yatamil	0	451,-29
+base	ratamil	0	301,-29
+base	rratamil	0	405,-29
+base	latamil	0	467,-29
+base	llatamil	0	504,-29
+base	lllatamil	0	400,-29
+base	vatamil	0	488,-29
+base	shatamil	0	548,-29
+base	ssatamil	0	626,-29
+base	satamil	0	598,-29
+base	hatamil	0	774,-29
+base	tchatamil	0	851,-29
+base	kauvowelsigntamil	0	486,-29
+base	kauuvowelsigntamil	0	623,-29
+base	ngaiivowelsigntamil	0	492,-29
+base	ngauvowelsigntamil	0	492,-29
+base	ngauuvowelsigntamil	0	567,-29
+base	cauvowelsigntamil	0	410,-29
+base	cauuvowelsigntamil	0	546,-29
+base	nyaiivowelsigntamil	0	557,-29
+base	nyauvowelsigntamil	0	561,-29
+base	nyauuvowelsigntamil	0	747,-29
+base	ttaivowelsigntamil	0	349,-29
+base	ttaiivowelsigntamil	0	349,-29
+base	nnaiivowelsigntamil	0	763,-29
+base	nnauvowelsigntamil	0	845,-29
+base	nnauuvowelsigntamil	0	1031,-29
+base	tauvowelsigntamil	0	503,-29
+base	tauuvowelsigntamil	0	689,-29
+base	nauvowelsigntamil	0	489,-29
+base	nauuvowelsigntamil	0	675,-29
+base	nnnaiivowelsigntamil	0	573,-29
+base	nnnauvowelsigntamil	0	655,-29
+base	nnnauuvowelsigntamil	0	840,-29
+base	pauvowelsigntamil	0	364,-29
+base	pauuvowelsigntamil	0	439,-29
+base	mauvowelsigntamil	0	526,-29
+base	mauuvowelsigntamil	0	575,-29
+base	yauvowelsigntamil	0	451,-29
+base	yauuvowelsigntamil	0	526,-29
+base	rauvowelsigntamil	0	480,-29
+base	rauuvowelsigntamil	0	529,-29
+base	rrauvowelsigntamil	0	525,-29
+base	rrauuvowelsigntamil	0	711,-29
+base	laivowelsigntamil	0	467,-29
+base	laiivowelsigntamil	0	467,-29
+base	lauvowelsigntamil	0	571,-29
+base	lauuvowelsigntamil	0	757,-29
+base	llaiivowelsigntamil	0	504,-29
+base	llauvowelsigntamil	0	691,-29
+base	llauuvowelsigntamil	0	742,-29
+base	lllauvowelsigntamil	0	526,-29
+base	lllauuvowelsigntamil	0	575,-29
+base	vaiivowelsigntamil	0	488,-29
+base	vauvowelsigntamil	0	488,-29
+base	vauuvowelsigntamil	0	563,-29
+base	ssaiivowelsigntamil	0	626,-29
+base	saivowelsigntamil	0	599,-29
+base	saiivowelsigntamil	0	598,-29
+base	haiivowelsigntamil	0	774,-29
+base	tchaiivowelsigntamil	0	851,-29
+base	shritamil	0	719,-29
 
 lookup end
 
