@@ -10,9 +10,9 @@ EM	1000
 feature table begin
 0	abvm	topmarktobase-deva,numbermarks-deva
 1	blwm	bottommarktobase-deva,anudatta-deva
-2	dist	halfformkern-deva,shiftuevowel-deva,shiftlow-deva,shifthigh-deva,mark2mark-deva
+2	dist	halfformkern-deva,shiftuevowel-deva,shiftlow-deva,shifthigh-deva,mark2mark-deva,asteriskShift-deva
 feature table end
-	
+
 
 script table begin
 dev2	default		0,1,2
@@ -22,7 +22,7 @@ deva	default		0,1,2
 deva	MAR		0,1,2
 deva	NEP		0,1,2
 script table end
-	
+
 
 lookup	topmarktobase-deva	mark to base
 
@@ -860,7 +860,7 @@ class definition end
 class-chain	1	1		1,shiftue-deva
 
 lookup end
-	
+
 
 lookup	shiftue-deva	single
 
@@ -1024,7 +1024,7 @@ class-chain	3	1		1,anudattadevalow2-deva
 class-chain	4	1		1,anudattadevalow3-deva
 
 lookup end
-	
+
 
 lookup	anudattadevalow-deva	single
 
@@ -1251,7 +1251,7 @@ class-chain	15	1		1,iicandra2-deva
 class-chain		2	1	1,reph2-deva
 
 lookup end
-	
+
 
 lookup	rephc-deva	single
 
@@ -1440,4 +1440,94 @@ mark	uni1CDF	 0	 0,-44
 base	uni1CDF	 0	 0,-200
 
 lookup end
-	
+
+
+lookup	asteriskShift-deva	chained
+
+backtrackclass definition begin
+# 1	1
+class definition end
+
+class definition begin
+uniA8E0	1
+uniA8E1	1
+uniA8E2	1
+uniA8E3	1
+uniA8E4	1
+uniA8E5	1
+uniA8E6	1
+uniA8E7	1
+uniA8E8	1
+uniA8E9	1
+uniA8EA	1
+uniA8EB	1
+uniA8EC	1
+uniA8ED	1
+uniA8EE	1
+uniA8EF	1
+uniA8F0	1
+uniA8F1	1
+one_onedeva	1
+two_udeva	1
+three_kadeva	1
+one_radeva	1
+two_radeva	1
+three_radeva	1
+four_radeva	1
+five_radeva	1
+two_avagrahadeva	1
+two_uni1CD0	1
+vi_radeva	1
+visarga_uni1CE2	1
+visarga_uni1CE4	1
+visarga_uni1CE5	1
+visarga_uni1CE8	1
+class definition end
+
+lookaheadclass definition begin
+uni20F0	1
+class definition end
+
+class-chain		1	1	1,shiftcantmark-deva
+
+lookup end
+
+
+lookup	shiftcantmark-deva	single
+
+x placement	uniA8E0	-200
+x placement	uniA8E1	-200
+x placement	uniA8E2	-200
+x placement	uniA8E3	-200
+x placement	uniA8E4	-200
+x placement	uniA8E5	-200
+x placement	uniA8E6	-200
+x placement	uniA8E7	-200
+x placement	uniA8E8	-200
+x placement	uniA8E9	-200
+x placement	uniA8EA	-200
+x placement	uniA8EB	-200
+x placement	uniA8EC	-200
+x placement	uniA8ED	-200
+x placement	uniA8EE	-200
+x placement	uniA8EF	-200
+x placement	uniA8F0	-200
+x placement	uniA8F1	-200
+x placement	one_onedeva	-200
+x placement	two_udeva	-200
+x placement	three_kadeva	-200
+x placement	one_radeva	-200
+x placement	two_radeva	-200
+x placement	three_radeva	-200
+x placement	four_radeva	-200
+x placement	five_radeva	-200
+x placement	two_avagrahadeva	-200
+x placement	two_uni1CD0	-200
+x placement	vi_radeva	-200
+x placement	visarga_uni1CE2	-200
+x placement	visarga_uni1CE4	-200
+x placement	visarga_uni1CE5	-200
+x placement	visarga_uni1CE8	-200
+
+lookup end
+
