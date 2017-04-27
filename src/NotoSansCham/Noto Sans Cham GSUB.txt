@@ -1,0 +1,385 @@
+FontDame GSUB table
+
+
+script table begin
+cham	default		0, 1, 2, 3, 4, 5, 6
+script table end
+
+
+feature table begin
+0	calt	7, 8, 9
+1	ccmp	4
+2	clig	6
+3	liga	5
+4	locl	6
+5	pref	0
+6	pres	3
+
+feature table end
+
+lookup	0	single
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+raMedial_cham	raMedial_cham_pre
+
+lookup end
+
+
+lookup	1	single
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+raMedial_cham_pre	raMedial_cham_pre.low
+
+lookup end
+
+
+lookup	2	single
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+raMedial_cham_pre	raMedial_cham_pre.low.alt
+
+lookup end
+
+
+lookup	3	chained
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+inputcoverage definition begin
+raMedial_cham_pre
+coverage definition end
+
+lookaheadcoverage definition begin
+nga_cham
+nha_cham
+nhja_cham
+na_cham
+dda_cham
+na_cham.calt
+coverage definition end
+
+coverage	1,1
+subtable end
+
+inputcoverage definition begin
+raMedial_cham_pre
+coverage definition end
+
+lookaheadcoverage definition begin
+ma_cham
+bba_cham
+va_cham
+ma_cham.calt
+bba_cham.calt
+va_cham.calt
+coverage definition end
+
+coverage	1,2
+lookup end
+
+
+lookup	4	ligature
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+iSign_mSignFinal_cham	iSign_cham	mSignFinal_cham
+auSign_mSignFinal_cham	auSign_cham	mSignFinal_cham
+oeSign_ngSignFinal_cham	oeSign_cham	ngSignFinal_cham
+oeSign_mSignFinal_cham	oeSign_cham	mSignFinal_cham
+aaSign_oeSign_cham	oeSign_cham	aaSign_cham
+oeSign_auSign_cham	oeSign_cham	auSign_cham
+
+lookup end
+
+
+lookup	5	ligature
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+MarkFilterType	0
+
+laMed_waMed_uSign_cham	laMedial_cham	waMedial_cham	uSign_cham
+laMed_waMed_ueSign_cham	laMedial_cham	waMedial_cham	ueSign_cham
+laMedial_waMedial_cham	laMedial_cham	waMedial_cham
+laMedial_uSign_cham	laMedial_cham	uSign_cham
+laMedial_ueSign_cham	laMedial_cham	ueSign_cham
+laMedial_uSign_cham	laMedial_cham.narrow	uSign_cham
+laMedial_ueSign_cham	laMedial_cham.narrow	ueSign_cham
+waMedial_uSign_cham	waMedial_cham	uSign_cham
+waMedial_ueSign_cham	waMedial_cham	ueSign_cham
+
+lookup end
+
+
+lookup	6	chained
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+backtrackcoverage definition begin
+comma.cham
+period.cham
+zero_cham
+one_cham
+two_cham
+three_cham
+four_cham
+five_cham
+six_cham
+seven_cham
+eight_cham
+nine_cham
+ka_cham
+kha_cham
+ga_cham
+gha_cham
+ngue_cham
+nga_cham
+cha_cham
+chha_cham
+ja_cham
+jha_cham
+nhue_cham
+nha_cham
+nhja_cham
+ta_cham
+tha_cham
+da_cham
+dha_cham
+nue_cham
+na_cham
+dda_cham
+pa_cham
+ppa_cham
+pha_cham
+ba_cham
+bha_cham
+mue_cham
+ma_cham
+bba_cham
+ya_cham
+ra_cham
+la_cham
+va_cham
+ssa_cham
+sa_cham
+ha_cham
+kFinal_cham
+gFinal_cham
+ngFinal_cham
+chFinal_cham
+tFinal_cham
+nFinal_cham
+pFinal_cham
+yFinal_cham
+rFinal_cham
+lFinal_cham
+ssFinal_cham
+hSignFinal_cham
+a_cham
+i_cham
+u_cham
+e_cham
+ai_cham
+o_cham
+yaMedial_cham
+raMedial_cham
+laMedial_cham
+waMedial_cham
+laMedial_waMedial_cham
+ngSignFinal_cham
+mSignFinal_cham
+oSign_cham
+aiSign_cham
+aaSign_cham
+aaSign_oeSign_cham
+iSign_cham
+iiSign_cham
+eiSign_cham
+auSign_cham
+uSign_cham
+oeSign_cham
+ueSign_cham
+oeSign_auSign_cham
+auSign_mSignFinal_cham
+oeSign_ngSignFinal_cham
+oeSign_mSignFinal_cham
+iSign_mSignFinal_cham
+danda_cham
+doubleDanda_cham
+tripleDanda_cham
+spiral_cham
+coverage definition end
+
+inputcoverage definition begin
+comma
+hyphen
+period
+coverage definition end
+
+coverage	1,10
+lookup end
+
+
+lookup	7	chained
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+backtrackcoverage definition begin
+ga_cham
+jha_cham
+ta_cham
+da_cham
+nue_cham
+na_cham
+dda_cham
+ppa_cham
+ba_cham
+ma_cham
+bba_cham
+ra_cham
+la_cham
+va_cham
+ssa_cham
+coverage definition end
+
+inputcoverage definition begin
+laMedial_cham
+waMedial_cham
+uSign_cham
+coverage definition end
+
+coverage	1,10
+lookup end
+
+
+lookup	8	chained
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+backtrackcoverage definition begin
+ka_cham
+kha_cham
+ga_cham
+gha_cham
+ngue_cham
+nga_cham
+cha_cham
+chha_cham
+ja_cham
+jha_cham
+nhue_cham
+nha_cham
+nhja_cham
+ta_cham
+tha_cham
+da_cham
+dha_cham
+nue_cham
+na_cham
+dda_cham
+pa_cham
+ppa_cham
+pha_cham
+ba_cham
+bha_cham
+mue_cham
+ma_cham
+bba_cham
+ya_cham
+ra_cham
+la_cham
+va_cham
+ssa_cham
+sa_cham
+ha_cham
+coverage definition end
+
+inputcoverage definition begin
+laMedial_cham
+waMedial_cham
+uSign_cham
+coverage definition end
+
+lookaheadcoverage definition begin
+yaMedial_cham
+coverage definition end
+
+coverage	1,10
+lookup end
+
+
+lookup	9	chained
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+inputcoverage definition begin
+na_cham
+ma_cham
+bba_cham
+va_cham
+coverage definition end
+
+lookaheadcoverage definition begin
+laMedial_waMedial_cham
+laMedial_uSign_cham
+laMedial_ueSign_cham
+waMedial_uSign_cham
+waMedial_ueSign_cham
+coverage definition end
+
+coverage	1,10
+lookup end
+
+
+lookup	10	single
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+na_cham	na_cham.calt
+ma_cham	ma_cham.calt
+bba_cham	bba_cham.calt
+va_cham	va_cham.calt
+laMedial_cham	laMedial_cham.narrow
+waMedial_cham	waMedial_cham.narrow
+uSign_cham	uSign_cham.narrow
+comma	comma.cham
+hyphen	hyphen.cham
+period	period.cham
+
+lookup end
+
