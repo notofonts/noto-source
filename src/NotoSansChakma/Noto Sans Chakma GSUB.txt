@@ -1,0 +1,558 @@
+FontDame GSUB table
+
+
+script table begin
+bng2	default		3
+cakm	default		0, 1, 2, 5, 6, 7, 8, 9, 10
+mym2	default		4
+script table end
+
+
+feature table begin
+0	abvs	12, 10, 11, 13
+1	blwf	0
+2	blws	6, 7, 8
+3	ccmp	16
+4	ccmp	17
+5	liga	15
+6	pres	14
+7	pstf	1
+8	ss01	18
+9	ss02	19
+10	ss03	20
+
+feature table end
+
+lookup	0	ligature
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+uni11133uni11105	uni11133	uni11105
+uni11133uni11107	uni11133	uni11107
+uni11133uni11108	uni11133	uni11108
+uni11133uni11109	uni11133	uni11109
+uni11133uni1110A	uni11133	uni1110A
+uni11133uni1110B	uni11133	uni1110B
+uni11133uni1110C	uni11133	uni1110C
+uni11133uni1110D	uni11133	uni1110D
+uni11133uni1110E	uni11133	uni1110E
+uni11133uni1110F	uni11133	uni1110F
+uni11133uni11110	uni11133	uni11110
+uni11133uni11111	uni11133	uni11111
+uni11133uni11112	uni11133	uni11112
+uni11133uni11113	uni11133	uni11113
+uni11133uni11114	uni11133	uni11114
+uni11133uni11115	uni11133	uni11115
+uni11133uni11116	uni11133	uni11116
+uni11133uni11117	uni11133	uni11117
+uni11133uni11118	uni11133	uni11118
+uni11133uni11119	uni11133	uni11119
+uni11133uni1111A	uni11133	uni1111A
+uni11133uni1111B	uni11133	uni1111B
+uni11133uni1111C	uni11133	uni1111C
+uni11133uni1111D	uni11133	uni1111D
+uni11133uni1111E	uni11133	uni1111E
+uni11133uni1111F	uni11133	uni1111F
+uni11133uni11120	uni11133	uni11120
+uni11133uni11121	uni11133	uni11121
+uni11133uni11122	uni11133	uni11122
+uni11133uni11123	uni11133	uni11123
+uni11133uni11124	uni11133	uni11124
+uni11133uni11125	uni11133	uni11125
+uni11133uni11126	uni11133	uni11126
+
+lookup end
+
+
+lookup	1	ligature
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+uni11133uni11103	uni11133	uni11103
+uni11133uni11104	uni11133	uni11104
+uni11133uni11106	uni11133	uni11106
+
+lookup end
+
+
+lookup	2	single
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+uni11133uni11123	uni11133uni11123.alt
+uni11133uni11126	uni11133uni11126.alt
+
+lookup end
+
+
+lookup	3	single
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+uni11133uni11123	uni11133uni11123.alt2
+uni11133uni11126	uni11133uni11126.alt2
+
+lookup end
+
+
+lookup	4	single
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+uni11133uni11122	uni11133uni11122.curve
+
+lookup end
+
+
+lookup	5	single
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+uni1112A	uni1112A.alt
+
+lookup end
+
+
+lookup	6	chained
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+backtrackcoverage definition begin
+uni11105
+uni11106
+uni11108
+uni11109
+uni1110B
+uni1110C
+uni1110D
+uni1110E
+uni1110F
+uni11110
+uni11114
+uni11118
+uni11119
+uni1111B
+uni1111C
+uni1111D
+uni11124
+coverage definition end
+
+inputcoverage definition begin
+uni11133uni11122
+coverage definition end
+
+coverage	1,4
+subtable end
+
+backtrackcoverage definition begin
+uni11109
+uni11115
+uni11119
+uni1111A
+coverage definition end
+
+inputcoverage definition begin
+uni1112A
+coverage definition end
+
+coverage	1,5
+lookup end
+
+
+lookup	7	ligature
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+uni11133uni11106uni11120	uni11133uni11106	uni11133uni11120
+uni11133uni11122uni1112A	uni11133uni11122.curve	uni1112A
+uni11133uni11122uni1112B.curve	uni11133uni11122.curve	uni1112B
+
+lookup end
+
+
+lookup	8	chained
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+backtrackclass definition begin
+uni11103	1
+uni11107	1
+uni1110A	1
+uni11115	1
+uni11116	1
+uni11117	1
+uni1111A	1
+uni1111E	1
+uni1111F	1
+uni11122	1
+uni11123	1
+uni11125	1
+uni11126	1
+uni11104	2
+uni11105	2
+uni11106	2
+uni11108	2
+uni11109	2
+uni1110B	2
+uni1110C	2
+uni1110D	2
+uni1110E	2
+uni1110F	2
+uni11110	2
+uni11111	2
+uni11112	2
+uni11113	2
+uni11114	2
+uni11118	2
+uni11119	2
+uni1111B	2
+uni1111C	2
+uni1111D	2
+uni11120	2
+uni11121	2
+uni11124	2
+class definition end
+
+class definition begin
+uni11133uni11107	2
+uni11133uni1110A	2
+uni11133uni11111	2
+uni11133uni11112	2
+uni11133uni11115	2
+uni11133uni11116	2
+uni11133uni11117	2
+uni11133uni1111A	2
+uni11133uni1111E	2
+uni11133uni1111F	2
+uni11133uni11123	2
+uni11133uni11125	2
+uni11133uni11126	2
+class definition end
+
+lookaheadclass definition begin
+uni1112A	3
+uni11131	3
+uni1112A.alt	3
+uni11127	4
+uni11134	4
+class definition end
+
+class-chain	1	2	4, 3	1, 2
+class-chain	1	2	3, 4	1, 2
+class-chain	1	2	3	1, 2
+class-chain	2	2	4, 3	1, 3
+class-chain	2	2	3, 4	1, 3
+class-chain	2	2	3	1, 3
+
+lookup end
+
+
+lookup	9	single
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+uni1112D	uni1112D.short
+uni11130	uni11130.short
+
+lookup end
+
+
+lookup	10	chained
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+backtrackcoverage definition begin
+uni11127
+uni11128
+uni11129
+coverage definition end
+
+inputcoverage definition begin
+uni11134
+coverage definition end
+
+coverage	1,9
+subtable end
+
+inputcoverage definition begin
+uni11134
+coverage definition end
+
+lookaheadcoverage definition begin
+uni11127
+uni11128
+uni11129
+uni1112E
+coverage definition end
+
+coverage	1,9
+subtable end
+
+backtrackcoverage definition begin
+uni11108
+uni11109
+uni1110B
+uni11118
+uni11119
+uni11124
+coverage definition end
+
+inputcoverage definition begin
+uni1112D
+uni11130
+coverage definition end
+
+coverage	1,9
+lookup end
+
+
+lookup	11	chained
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+backtrackcoverage definition begin
+uni11104
+uni11105
+uni11106
+uni11108
+uni11109
+uni1110B
+uni1110E
+uni11113
+uni11118
+uni11119
+uni1111B
+uni1111C
+uni1111D
+uni11121
+coverage definition end
+
+inputcoverage definition begin
+uni1112D
+uni11130
+coverage definition end
+
+coverage	1,9
+lookup end
+
+
+lookup	12	ligature
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+uni11100uni11102	uni11100	uni11102
+uni11101uni11100	uni11101	uni11100
+uni11101uni11128	uni11101	uni11128
+uni11101uni11129	uni11101	uni11129
+uni11100uni11102	uni11102	uni11100
+uni11102uni11128	uni11102	uni11128
+uni11102uni11129	uni11102	uni11129
+uni11100uni11128	uni11128	uni11100
+uni11101uni11128	uni11128	uni11101
+uni11102uni11128	uni11128	uni11102
+uni11134uni11128	uni11128	uni11134
+uni11100uni11129	uni11129	uni11100
+uni11101uni11129	uni11129	uni11101
+uni11102uni11129	uni11129	uni11102
+uni11134uni11129	uni11129	uni11134
+uni11130uni11100	uni11130	uni11100
+uni11134uni11128	uni11134	uni11128
+uni11134uni11129	uni11134	uni11129
+
+lookup end
+
+
+lookup	13	ligature
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+MarkAttachmentType	5
+
+uni11130uni11100	uni11130	uni11100
+uni11130uni11101	uni11130	uni11101
+uni11130uni11102	uni11130	uni11102
+
+lookup end
+
+
+lookup	14	ligature
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+uni1112Cuni1112C	uni1112C	uni1112C
+
+lookup end
+
+
+lookup	15	ligature
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+uni1110Buni11145	uni1110B	uni11133uni11103
+uni1110Buni11146	uni1110B	uni11133uni11104
+uni1110Buni11133uni11106	uni1110B	uni11133uni11106
+uni1110Funi11145	uni1110F	uni11133uni11103
+uni1110Funi11146	uni1110F	uni11133uni11104
+uni1110Funi11133uni11106	uni1110F	uni11133uni11106
+uni1110Funi11133uni11120	uni1110F	uni11133uni11120
+uni1110Funi11133uni11120	uni1110F	uni11133uni11121
+uni11110uni11133uni11120	uni11110	uni11133uni11120
+uni11110uni11133uni11120	uni11110	uni11133uni11121
+uni11110uni11133uni11122	uni11110	uni11133uni11122.curve
+uni11111uni11145	uni11111	uni11133uni11103
+uni11111uni11146	uni11111	uni11133uni11104
+uni11111uni11133uni11106	uni11111	uni11133uni11106
+uni11111uni11133uni11120	uni11111	uni11133uni11120
+uni11111uni11133uni11120	uni11111	uni11133uni11121
+uni11112uni11145	uni11112	uni11133uni11103
+uni11112uni11146	uni11112	uni11133uni11104
+uni11112uni11133uni11106	uni11112	uni11133uni11106
+uni11113uni11133uni11120	uni11113	uni11133uni11120
+uni11113uni11133uni11120	uni11113	uni11133uni11121
+uni11114uni11133uni11120	uni11114	uni11133uni11120
+uni11114uni11133uni11120	uni11114	uni11133uni11121
+
+lookup end
+
+
+lookup	16	single
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+uni11136	uni09E6
+uni11137	uni09E7
+uni11138	uni09E8
+uni11139	uni09E9
+uni1113A	uni09EA
+uni1113B	uni09EB
+uni1113C	uni09EC
+uni1113D	uni09ED
+uni1113E	uni09EE
+uni1113F	uni09EF
+
+lookup end
+
+
+lookup	17	single
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+uni11136	uni1040
+uni11137	uni1041
+uni11138	uni1042
+uni11139	uni1043
+uni1113A	uni1044
+uni1113B	uni1045
+uni1113C	uni1046
+uni1113D	uni1047
+uni1113E	uni1048
+uni1113F	uni1049
+
+lookup end
+
+
+lookup	18	single
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+uni1110A	uni1110A.alt
+uni1110D	uni1110D.alt
+uni1110E	uni1110E.alt
+uni11115	uni11115.alt
+uni1111A	uni1111A.alt
+uni11121	uni11121.alt
+uni1112C	uni1112C.alt
+uni1112Cuni1112C	uni1112Cuni1112C.alt
+uni11140	uni11140.alt
+
+lookup end
+
+
+lookup	19	single
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+uni1110A	uni1110A.alt
+uni1110D	uni1110D.alt
+uni1110E	uni1110E.alt
+uni11115	uni11115.alt
+uni1111A	uni1111A.alt
+uni11121	uni11121.alt2
+uni1112B	uni1112B.alt
+uni1112C	uni1112C.alt
+uni1112Cuni1112C	uni1112Cuni1112C.alt
+uni11140	uni11140.alt
+
+lookup end
+
+
+lookup	20	single
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+uni1112B	uni1112B.alt
+
+lookup end
+
