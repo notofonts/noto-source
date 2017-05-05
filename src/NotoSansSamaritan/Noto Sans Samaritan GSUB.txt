@@ -1,0 +1,82 @@
+FontDame GSUB table
+
+
+script table begin
+DFLT	default		1
+samr	default		0
+script table end
+
+
+feature table begin
+0	calt	0
+1	calt	0
+
+feature table end
+
+lookup	0	chained
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+backtrackcoverage definition begin
+uni0816
+uni0817
+coverage definition end
+
+inputcoverage definition begin
+uni0818
+coverage definition end
+
+coverage	1,1
+subtable end
+
+inputcoverage definition begin
+uni0818
+coverage definition end
+
+lookaheadcoverage definition begin
+uni081C
+uni081D
+uni081E
+uni081F
+uni0820
+uni0821
+uni0822
+uni0823
+uni0825
+uni0826
+uni0827
+uni0829
+uni082A
+uni082B
+coverage definition end
+
+coverage	1,1
+subtable end
+
+backtrackcoverage definition begin
+uni080D
+uni080E
+coverage definition end
+
+inputcoverage definition begin
+uni0818
+coverage definition end
+
+coverage	1,1
+lookup end
+
+
+lookup	1	single
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+uni0818	uni0818.alt
+
+lookup end
+

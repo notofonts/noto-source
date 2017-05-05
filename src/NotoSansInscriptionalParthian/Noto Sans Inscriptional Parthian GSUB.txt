@@ -1,0 +1,87 @@
+FontDame GSUB table
+
+
+script table begin
+DFLT	default		1
+prti	default		0
+script table end
+
+
+feature table begin
+0	ccmp	0, 1
+1	ccmp	0, 1
+
+feature table end
+
+lookup	0	ligature
+
+RightToLeft	yes
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+u10B4210B45	u10B42	u10B45
+u10B4710B45	u10B47	u10B45
+u10B4910B45	u10B49	u10B45
+u10B4D10B4D	u10B4D	u10B4D
+u10B4D10B45	u10B4D	u10B45
+u10B4D10B43	u10B4D	u10B43
+u10B4F10B4B	u10B4F	u10B4B
+u10B5310B45	u10B53	u10B45
+u10B5510B45	u10B55	u10B45
+
+lookup end
+
+
+lookup	1	chained
+
+RightToLeft	yes
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+inputcoverage definition begin
+u10B4D
+u10B51
+coverage definition end
+
+lookaheadcoverage definition begin
+u10B40
+u10B41
+u10B42
+u10B43
+u10B44
+u10B45
+u10B46
+u10B47
+u10B48
+u10B49
+u10B4A
+u10B4B
+u10B4C
+u10B4E
+u10B4F
+u10B50
+u10B51
+u10B52
+u10B53
+u10B54
+u10B55
+coverage definition end
+
+coverage	1,2
+lookup end
+
+
+lookup	2	single
+
+RightToLeft	yes
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+u10B4D	u10B4D.alt01
+u10B51	u10B51.alt01
+
+lookup end
+

@@ -1,0 +1,66 @@
+FontDame GPOS table
+
+EM	1000
+
+script table begin
+DFLT	default		1
+phli	default		0
+script table end
+
+feature table begin
+0	kern	0
+1	kern	0
+
+feature table end
+
+lookup	0	chained
+
+RightToLeft	yes
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+inputcoverage definition begin
+u10B61.alt02
+coverage definition end
+
+lookaheadcoverage definition begin
+u10B60
+u10B62
+u10B64
+u10B65
+u10B66
+u10B67
+u10B68
+u10B69
+u10B6C
+u10B6E
+u10B71
+coverage definition end
+
+lookaheadcoverage definition begin
+u10B61
+u10B63
+u10B6A
+u10B6B
+u10B6D
+u10B6F
+u10B70
+u10B72
+coverage definition end
+
+coverage	1,1
+lookup end
+
+
+lookup	1	single
+
+RightToLeft	yes
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+x placement	u10B61.alt02	117
+x advance	u10B61.alt02	117
+
+lookup end

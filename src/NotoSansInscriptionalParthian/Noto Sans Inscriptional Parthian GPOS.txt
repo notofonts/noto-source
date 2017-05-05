@@ -1,0 +1,85 @@
+FontDame GPOS table
+
+EM	1000
+
+
+script table begin
+DFLT	default		1
+prti	default		0
+script table end
+
+
+feature table begin
+0	kern	0, 1
+1	kern	0, 1
+
+feature table end
+
+lookup	0	pair
+
+RightToLeft	yes
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+right x placement	u10B4D.alt01	u10B42	112
+right x advance	u10B4D.alt01	u10B42	112
+right x placement	u10B4D.alt01	u10B45	127
+right x advance	u10B4D.alt01	u10B45	127
+right x placement	u10B4D.alt01	u10B46	381
+right x advance	u10B4D.alt01	u10B46	381
+right x placement	u10B4D.alt01	u10B49	410
+right x advance	u10B4D.alt01	u10B49	410
+right x placement	u10B4D.alt01	u10B4B	234
+right x advance	u10B4D.alt01	u10B4B	234
+right x placement	u10B4D.alt01	u10B4F	88
+right x advance	u10B4D.alt01	u10B4F	88
+right x advance	u10B4D.alt01	u10B51	225
+right x placement	u10B4D.alt01	u10B52	107
+right x advance	u10B4D.alt01	u10B52	107
+right x placement	u10B4D.alt01	u10B53	78
+right x advance	u10B4D.alt01	u10B53	78
+right x placement	u10B4D.alt01	u10B54	98
+right x advance	u10B4D.alt01	u10B54	98
+
+lookup end
+
+
+lookup	1	chained
+
+RightToLeft	yes
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+inputcoverage definition begin
+u10B51.alt01
+coverage definition end
+
+inputcoverage definition begin
+u10B46
+u10B49
+coverage definition end
+
+lookaheadcoverage definition begin
+u10B4D
+coverage definition end
+
+coverage	1,2
+lookup end
+
+
+lookup	2	pair
+
+RightToLeft	yes
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+right x placement	u10B51.alt01	u10B46	273
+right x advance	u10B51.alt01	u10B46	273
+right x placement	u10B51.alt01	u10B49	303
+right x advance	u10B51.alt01	u10B49	303
+
+lookup end
+

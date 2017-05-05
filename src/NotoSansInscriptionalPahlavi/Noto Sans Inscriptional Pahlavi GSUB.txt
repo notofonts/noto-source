@@ -1,0 +1,124 @@
+FontDame GSUB table
+
+script table begin
+DFLT	default		1
+phli	default		0
+script table end
+
+
+feature table begin
+0	ccmp	0, 1, 2
+1	ccmp	0, 1, 2
+
+feature table end
+
+lookup	0	chained
+
+RightToLeft	yes
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+inputcoverage definition begin
+u10B61
+coverage definition end
+
+lookaheadcoverage definition begin
+u10B61
+u10B63
+u10B6A
+u10B6B
+u10B6D
+u10B6F
+u10B70
+u10B72
+coverage definition end
+
+coverage	1,3
+lookup end
+
+
+lookup	1	chained
+
+RightToLeft	yes
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+inputcoverage definition begin
+u10B6B
+coverage definition end
+
+lookaheadcoverage definition begin
+u10B6A
+u10B6D
+coverage definition end
+
+coverage	1,4
+lookup end
+
+
+lookup	2	chained
+
+RightToLeft	yes
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+inputcoverage definition begin
+u10B61
+coverage definition end
+
+lookaheadcoverage definition begin
+u10B60
+u10B62
+u10B64
+u10B65
+u10B66
+u10B67
+u10B68
+u10B69
+u10B6C
+u10B6E
+u10B71
+coverage definition end
+
+coverage	1,5
+lookup end
+
+
+lookup	3	single
+
+RightToLeft	yes
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+u10B61	u10B61.alt01
+
+lookup end
+
+
+lookup	4	single
+
+RightToLeft	yes
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+u10B6B	u10B6B.alt01
+
+lookup end
+
+
+lookup	5	single
+
+RightToLeft	yes
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+u10B61	u10B61.alt02
+
+lookup end
+
