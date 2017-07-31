@@ -95,6 +95,9 @@ function glyphs_from_plist() {
 
 function family_from_plist() {
     case "$1" in
+        */NotoSansDevanagari-MM.plist)
+            echo 'Noto Sans Devanagari'
+            ;;
         */NotoSansDevanagariUI-MM.plist)
             echo 'Noto Sans Devanagari UI'
             ;;
