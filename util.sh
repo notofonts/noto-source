@@ -84,7 +84,9 @@ function build_ufo() {
 function glyphs_from_plist() {
     glyphs="${1/%.plist/.glyphs}"
     case "$1" in
-        */NotoSansDevanagariUI-MM.plist)
+        */NotoSansDevanagariUI-MM.plist|\
+        */NotoSansTamilUI-MM.plist|\
+        */NotoSansBengaliUI-MM.plist)
             echo "${glyphs/UI/}"
             ;;
         *)
@@ -100,6 +102,18 @@ function family_from_plist() {
             ;;
         */NotoSansDevanagariUI-MM.plist)
             echo 'Noto Sans Devanagari UI'
+            ;;
+        */NotoSansTamil-MM.plist)
+            echo 'Noto Sans Tamil'
+            ;;
+        */NotoSansTamilUI-MM.plist)
+            echo 'Noto Sans Tamil UI'
+            ;;
+        */NotoSansBengali-MM.plist)
+            echo 'Noto Sans Bengali'
+            ;;
+        */NotoSansBengaliUI-MM.plist)
+            echo 'Noto Sans Bengali UI'
             ;;
         *)
             echo ''
