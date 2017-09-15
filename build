@@ -16,10 +16,10 @@
 
 source util.sh
 
-# exit early if any sub-commands fails
-set -e
 
 function setup() {
+    # exit early if any sub-commands fails
+    set -e
     if [[ ! $(python -m pip --version 2>/dev/null) ]]; then
         echo >&2 "error: pip is not installed."
         echo >&2 "Try running 'python -m ensurepip' or check installation instructions:"
