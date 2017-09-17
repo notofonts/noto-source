@@ -40,8 +40,10 @@ function build_plist() {
     else
         fontmake -g "$glyphs" -o "${@:2}" --mti-source "$1"\
             --no-production-names
-        fontmake -g "$glyphs" -o "${@:2}" -i --interpolate-binary-layout\
-            --no-production-names
+        if [ "$(should_interpolate "$1")" == "yes" ]; then
+            fontmake -g "$glyphs" -o "${@:2}" -i --interpolate-binary-layout\
+                --no-production-names
+        fi
     fi
 }
 
@@ -117,6 +119,17 @@ function family_from_plist() {
             ;;
         *)
             echo ''
+            ;;
+    esac
+}
+
+function should_interpolate() {
+    case "$1" in
+        */NotoNastaliqUrdu-MM.plist)
+            echo 'no'
+            ;;
+        *)
+            echo 'yes'
             ;;
     esac
 }
