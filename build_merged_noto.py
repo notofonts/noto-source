@@ -66,7 +66,9 @@ def build_family(family):
         merged_masters = [merge_masters(family, style, masters)
                           for style, masters in sorted(interpolatable.items())]
         build_variable(target, family, merged_masters)
-        # TODO: Merge non-interpolatable fonts into ${target}-VF.ttf.
+        # TODO: Merge non-interpolatable fonts into ${target}-VF.ttf
+        # but fonttools cannot do this yet.
+        # https://github.com/fonttools/fonttools/issues/1059
 
 
 def find_sources(family):
@@ -171,7 +173,7 @@ def merge_masters(family, style, masters):
         shutil.copystat(masters[0], merged)
         return merged
     merged_mtime = os.path.getmtime(merged) if os.path.exists(merged) else 0
-    masters_mtime = min(os.path.getmtime(m) for m in masters)
+    masters_mtime = max(os.path.getmtime(m) for m in masters)
     if merged_mtime > masters_mtime:
         return merged
     command = '../fonttools/fonttools merge ' + ' '.join(masters)
@@ -182,9 +184,9 @@ def merge_masters(family, style, masters):
 
 
 def build_variable(target, family, masters):
-    merged = os.path.join('master_merged', target)
+    merged = os.path.join('master_merged', target.replace('.ttf', '-VF.ttf'))
     merged_mtime = os.path.getmtime(merged) if os.path.exists(merged) else 0
-    masters_mtime = min(os.path.getmtime(m) for m in masters)
+    masters_mtime = max(os.path.getmtime(m) for m in masters)
     if merged_mtime > masters_mtime:
         return merged
     ufo_designspace = os.path.join('master_ufo',
@@ -203,20 +205,6 @@ def find_master(source, style):
         '%s-%s.ttf' % (os.path.split(source)[-1].split('-')[0], style))
 
 
-def merge_masters_for_style(style):
-    fonts = []
-    pathpattern = 'master_ttf_interpolatable/NotoSans%s-%s.ttf'
-    for script in ('', 'Arabic', 'Devanagari', 'Adlam'):
-        path = pathpattern % (script, style)
-        if os.path.exists(path):
-            fonts.append(pathpattern % (script, style))
-        else:
-            fonts.append(pathpattern % (script, 'Regular'))
-    os.system('fonttools merge %s' % ' '.join(fonts))
-    os.rename('merged.ttf',
-              'master_merged/NotoSans-%s.ttf' % style)
-
-
 if __name__ == '__main__':
-    build_family('NotoSans')
     build_family('NotoSerif')
+    build_family('NotoSans')
