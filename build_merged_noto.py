@@ -34,18 +34,39 @@ BLACKLIST = [
     'NotoSansEgyptianHieroglyphs',
     'NotoSansGlagolitic',
     'NotoSansImperialAramaic',
+    'NotoSansLinearB',
+    'NotoSansLisu',
+    'NotoSansLycian',
+    'NotoSansLydian',
+    'NotoSansOgham',
+    'NotoSansOlChiki',
+    'NotoSansOldPersian',
+    'NotoSansOldSouthArabian',
+    'NotoSansOldTurkic',
+    'NotoSansOsmanya',
+    'NotoSansPhoenician',
+    'NotoSansRunic',
+    'NotoSansShavian',
+    'NotoSansSymbols',
+    'NotoSansSymbols2',
+    'NotoSansUgaritic',
+    'NotoSansVai',
+    'NotoSansYi',
+
+    'NotoSerifTamil',
 ]
 
 
 def build_family(family):
-    for outfile, sources in sorted(find_sources(family).items()):
+    for target, sources in sorted(find_sources(family).items()):
         for source in sources:
             if should_rebuild_master(source):
                 build_master(source)
-        merge_masters(family, sources)
-    #os.system('fonttools varLib master_merged/NotoSans.designspace')
-    #os.rename('master_merged/NotoSans-VF.ttf', 'NotoSans.ttf')
-
+        interpolatable = find_interpolatable_masters(family, target)
+        merged_masters = [merge_masters(family, style, masters)
+                          for style, masters in sorted(interpolatable.items())]
+        build_variable(target, family, merged_masters)
+        # TODO: Merge non-interpolatable fonts into ${target}-VF.ttf.
 
 
 def find_sources(family):
@@ -58,6 +79,8 @@ def find_sources(family):
             if shard.split('-')[0] in BLACKLIST:
                 continue
             if shard.find('Display') >= 0 or shard.find('UI') >= 0:
+                continue
+            if shard.startswith('NotoSansMono'):
                 continue
             if shard.endswith('.glyphs'):
                 shards.append(path)
@@ -79,6 +102,21 @@ def find_sources(family):
     }
 
 
+def find_interpolatable_masters(family, target):
+    sources = find_sources(family)[target]
+    designspace_path = designspace(family, sources[0])
+    styles = [s.attrib['filename'].split('-', 1)[1].replace('.ufo', '')
+              for s in etree.parse(designspace_path).findall('sources/source')]
+    result = {}
+    for source in sources:
+        curmasters = [find_master(source, style) for style in styles]
+        can_interpolate = all(os.path.exists(m) for m in curmasters)
+        if can_interpolate:
+            for style in styles:
+                result.setdefault(style, []).append(find_master(source, style))
+    return result
+
+
 def postscriptname(source):
     psname = source.split('/')[-1].split('.')[0]
     if psname.endswith('-MM'):
@@ -94,7 +132,10 @@ def designspace(family, source):
     psname = postscriptname(source)
     if psname == '%s-Regular' % family:
         path = os.path.join('master_ufo', '%s.designspace' % family)
-
+    elif psname == '%s-Italic' % family:
+        path = os.path.join('master_ufo', '%s.designspace' % psname)
+    else:
+        assert False, (source, psname)
     assert os.path.exists(path), path
     return path
 
@@ -116,55 +157,44 @@ def build_master(source):
     elif source.endswith('.plist'):
         command = ('fontmake -g %s -o ttf-interpolatable --mti-source %s' %
                    (source.replace('.plist', '.glyphs'), source))
-    print command
+    print(command)
     status = os.system(command)
-    assert status == 0, "command failed: %s" % command
+    assert status == 0, 'command failed: %s' % command
 
 
-def merge_masters(family, sources):
+def merge_masters(family, style, masters):
     if not os.path.exists('master_merged'):
         os.mkdir('master_merged')
-    filename = os.path.split(sources[0])[-1]
-    if filename.endswith('-MM.glyphs'):
-        designspace_filename = filename[:-len('-MM.glyphs')] + '.designspace'
-    else:
-        assert filename.endswith('MM.glyphs'), filename
-        designspace_filename = filename[:-len('MM.glyphs')] + '.designspace'
-    designspace_path = os.path.join('master_ufo', designspace_filename)
-    styles = [s.attrib['filename'].split('-', 1)[1].replace('.ufo', '')
-              for s in etree.parse(designspace_path).findall('sources/source')]
-    masters = {s: [] for s in styles}
-    for source in sources:
-        curmasters = [find_master(source, style) for style in styles]
-        can_interpolate = all(os.path.exists(m) for m in curmasters)
-        regular_master = find_master(source, 'Regular')
-        for i, style in enumerate(styles):
-            if can_interpolate:
-                masters.setdefault(style, []).append(curmasters[i])
-            else:
-                masters.setdefault(style, []).append(regular_master)
-    for style, masters in sorted(masters.items()):
-        merged = os.path.join('master_merged', '%s-%s.ttf' % (family, style))
-        if len(masters) == 1:
-            shutil.copyfile(masters[0], merged)
-            shutil.copystat(masters[0], merged)
-            continue
-        merged_mtime = os.path.getmtime(merged) if os.path.exists(merged) else 0
-        masters_mtime = min(os.path.getmtime(m) for m in masters)
-        if merged_mtime > masters_mtime:
-            continue
+    merged = os.path.join('master_merged', '%s-%s.ttf' % (family, style))
+    if len(masters) == 1:
+        shutil.copyfile(masters[0], merged)
+        shutil.copystat(masters[0], merged)
+        return merged
+    merged_mtime = os.path.getmtime(merged) if os.path.exists(merged) else 0
+    masters_mtime = min(os.path.getmtime(m) for m in masters)
+    if merged_mtime > masters_mtime:
+        return merged
+    command = '../fonttools/fonttools merge ' + ' '.join(masters)
+    print(command)
+    assert os.system(command) == 0, 'command failed: %s' % command
+    shutil.move('merged.ttf', merged)
+    return merged
 
-        bad = []
-        for i in range(15, len(masters)):
-            patched = [m  for m in masters[:i+1] if m not in bad]
-            command = '../fonttools/fonttools merge ' + ' '.join(patched)
-            print command, i
-            status = os.system(command)
-            if status != 0:
-                bad.append(patched[-1])
-                print('*** Cannot merge:' + ' '.join(bad))
-        print('*** Cannot merge:' + ' '.join(bad))
-        shutil.copyfile('merged.ttf', merged)
+
+def build_variable(target, family, masters):
+    merged = os.path.join('master_merged', target)
+    merged_mtime = os.path.getmtime(merged) if os.path.exists(merged) else 0
+    masters_mtime = min(os.path.getmtime(m) for m in masters)
+    if merged_mtime > masters_mtime:
+        return merged
+    ufo_designspace = os.path.join('master_ufo',
+                                   target.replace('.ttf', '.designspace'))
+    merged_designspace = os.path.join('master_merged',
+                                      target.replace('.ttf', '.designspace'))
+    shutil.copyfile(ufo_designspace, merged_designspace)
+    command = 'fonttools varLib ' + merged_designspace
+    print(command)
+    assert os.system(command) == 0, 'command failed: %s' % command
 
 
 def find_master(source, style):
@@ -173,18 +203,6 @@ def find_master(source, style):
         '%s-%s.ttf' % (os.path.split(source)[-1].split('-')[0], style))
 
 
-def obsolete_merge_masters():
-    shutil.rmtree('master_merged', ignore_errors=True)
-    os.mkdir('master_merged')
-    styles = [s.split('-')[1][:-4]
-              for s in os.listdir('master_ttf_interpolatable')
-              if s.startswith('NotoSans-') and s.endswith('.ttf')]
-    for style in styles:
-        merge_masters_for_style(style)
-    shutil.copyfile('master_ufo/NotoSans.designspace',
-                    'master_merged/NotoSans.designspace')
-
-    
 def merge_masters_for_style(style):
     fonts = []
     pathpattern = 'master_ttf_interpolatable/NotoSans%s-%s.ttf'
