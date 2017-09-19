@@ -1,0 +1,2053 @@
+FontDame GPOS table
+
+EM	1000
+
+
+script table begin
+bhks	default		0, 1, 2, 3
+bhks	BHKS		0, 1, 2, 3
+script table end
+
+
+feature table begin
+0	dist	27, 8, 4, 7, 2
+1	kern	0
+2	mark	9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24
+3	mkmk	26, 25
+
+feature table end
+
+lookup	0	pair
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+firstclass definition begin
+Dgu	1
+class definition end
+
+secondclass definition begin
+Nna	1
+class definition end
+
+left x advance	1	1	-80
+
+lookup end
+
+
+lookup	1	single
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+x advance	OneHundred	-1000
+
+lookup end
+
+
+lookup	2	chained
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+class definition begin
+OneHundred	1
+TwoHundred	1
+ThreeHundred	1
+FourHundred	1
+FiveHundred	1
+SixHundred	1
+SevenHundred	1
+EightHundred	1
+NineHundred	1
+class definition end
+
+lookaheadclass definition begin
+NumberTwenty	1
+NumberThirty	1
+NumberForty	1
+NumberFifty	1
+class definition end
+
+class-chain		1	1	1, 1
+
+lookup end
+
+
+lookup	3	single
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+x advance	Ga	42
+x advance	Gha	42
+x advance	Nga	44
+x advance	Ja	53
+x advance	Tta	45
+x advance	Ttha	44
+x advance	Nna	45
+x advance	Tha	42
+x advance	Dha	45
+x advance	Ba	53
+x advance	Ma	53
+x advance	Ya	53
+x advance	La	42
+x advance	Sha	41
+x advance	Ssa	53
+x advance	Sa	53
+x advance	Gna	55
+x advance	Ngsha	44
+x advance	Sska	53
+x advance	Bbha	53
+x advance	Bda	53
+x advance	Dhma	42
+x advance	Dhva	42
+x advance	Ghra	42
+x advance	Gja	42
+x advance	Gla	42
+x advance	Gva	42
+x advance	Jbha	53
+x advance	Jbhya	53
+x advance	Jggra	53
+x advance	Jjha	53
+x advance	Jva	53
+x advance	Jya	53
+x advance	Lpa	42
+x advance	Lva	45
+x advance	Mba	42
+x advance	Mbha	42
+x advance	Mma	53
+x advance	Mna	43
+x advance	Mpa	53
+x advance	Mva	53
+x advance	Mya	53
+x advance	Ngggra	42
+x advance	Ngka	42
+x advance	Ngma	42
+x advance	Ngsya	42
+x advance	Ngva	44
+x advance	Ngya	42
+x advance	Nnddva	42
+x advance	Nnnnya	42
+x advance	Nnsa	45
+x advance	Shca	42
+x advance	Shra	44
+x advance	Shva	42
+x advance	Shya	44
+x advance	Ska	47
+x advance	Sra	53
+x advance	Ssva	53
+x advance	Sta	53
+x advance	Stra	53
+x advance	Sva	53
+x advance	Ttpra	45
+x advance	Tttva	42
+x advance	Ttva	42
+x advance	Yva	53
+
+lookup end
+
+
+lookup	4	chained
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+class definition begin
+Ga	1
+Gha	1
+Nga	1
+Ja	1
+Tta	1
+Ttha	1
+Nna	1
+Tha	1
+Dha	1
+Ba	1
+Ma	1
+Ya	1
+La	1
+Sha	1
+Ssa	1
+Sa	1
+Gna	1
+Ngsha	1
+Sska	1
+Bbha	1
+Bda	1
+Dhma	1
+Dhva	1
+Ghra	1
+Gja	1
+Gla	1
+Gva	1
+Jbha	1
+Jbhya	1
+Jggra	1
+Jjha	1
+Jva	1
+Jya	1
+Lpa	1
+Lva	1
+Mba	1
+Mbha	1
+Mma	1
+Mna	1
+Mpa	1
+Mva	1
+Mya	1
+Ngggra	1
+Ngka	1
+Ngma	1
+Ngsya	1
+Ngva	1
+Ngya	1
+Nnddva	1
+Nnnnya	1
+Nnsa	1
+Shca	1
+Shra	1
+Shva	1
+Shya	1
+Ska	1
+Sra	1
+Ssva	1
+Sta	1
+Stra	1
+Sva	1
+Ttpra	1
+Tttva	1
+Ttva	1
+Yva	1
+class definition end
+
+lookaheadclass definition begin
+AA_vwl.alt	1
+class definition end
+
+class-chain		1	1	1, 3
+
+lookup end
+
+
+lookup	5	single
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+x advance	uni25CC	310
+x advance	Ka	279
+x advance	Ca	350
+x advance	Cha	306
+x advance	Jha	234
+x advance	Dda	329
+x advance	Ddha	327
+x advance	Ta	326
+x advance	Da	317
+x advance	Na	358
+x advance	Pha	96
+x advance	Bha	312
+x advance	Ra	321
+x advance	Va	331
+x advance	Ha	269
+x advance	Repha	351
+x advance	Rtta	326
+x advance	Kssa	280
+x advance	Ngga	474
+x advance	Cca	324
+x advance	Jnya	328
+x advance	Nndda	346
+x advance	Nnnna	346
+x advance	Tka	178
+x advance	Tata	264
+x advance	Tpa	290
+x advance	Dada	330
+x advance	Dadha	155
+x advance	Ntha	74
+x advance	Ndha	105
+x advance	Nana	363
+x advance	Hna	259
+x advance	Hma	263
+x advance	Kta	289
+x advance	Kra	241
+x advance	Ksa	234
+x advance	Kya	277
+x advance	Bhna	224
+x advance	Bhra	312
+x advance	Bhya	225
+x advance	Ccha	310
+x advance	Ctva	245
+x advance	Dbha	317
+x advance	Dbhya	260
+x advance	Ddhra	327
+x advance	Dga	123
+x advance	Dgha	122
+x advance	Dra	317
+x advance	Dva	317
+x advance	Dvya	317
+x advance	Hla	269
+x advance	Hra	269
+x advance	Hva	177
+x advance	Knna	159
+x advance	Kssnna	79
+x advance	Kssnnya	85
+x advance	Kva	289
+x advance	Na_ya	275
+x advance	Nda	307
+x advance	Ndra	166
+x advance	Nha	227
+x advance	Nma	175
+x advance	Nsa	193
+x advance	Ntya	242
+x advance	Nva	358
+x advance	Ptya	346
+x advance	Ssttha	248
+x advance	Tatava	148
+x advance	Tataya	150
+x advance	Tma	107
+x advance	Tna	326
+x advance	Tpra	185
+x advance	Tra	350
+x advance	Tsa	97
+x advance	Tsya	96
+x advance	Tva	326
+x advance	Tya	259
+x advance	Vra	331
+x advance	Vva	331
+
+lookup end
+
+
+lookup	6	single
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+x advance	Kha	320
+
+lookup end
+
+
+lookup	7	chained
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+class definition begin
+Kha	1
+class definition end
+
+lookaheadclass definition begin
+II_vwl	1
+Ya.blw	2
+class definition end
+
+class-chain		1	1	1, 6
+class-chain		1	2, 1	1, 6
+
+lookup end
+
+
+lookup	8	chained
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+class definition begin
+uni25CC	1
+Ka	1
+Ca	1
+Cha	1
+Jha	1
+Dda	1
+Ddha	1
+Ta	1
+Da	1
+Na	1
+Pha	1
+Bha	1
+Ra	1
+Va	1
+Ha	1
+Repha	1
+Rtta	1
+Kssa	1
+Ngga	1
+Cca	1
+Jnya	1
+Nndda	1
+Nnnna	1
+Tka	1
+Tata	1
+Tpa	1
+Dada	1
+Dadha	1
+Ntha	1
+Ndha	1
+Nana	1
+Hna	1
+Hma	1
+Kta	1
+Kra	1
+Ksa	1
+Kya	1
+Bhna	1
+Bhra	1
+Bhya	1
+Ccha	1
+Ctva	1
+Dbha	1
+Dbhya	1
+Ddhra	1
+Dga	1
+Dgha	1
+Dra	1
+Dva	1
+Dvya	1
+Hla	1
+Hra	1
+Hva	1
+Knna	1
+Kssnna	1
+Kssnnya	1
+Kva	1
+Na_ya	1
+Nda	1
+Ndra	1
+Nha	1
+Nma	1
+Nsa	1
+Ntya	1
+Nva	1
+Ptya	1
+Ssttha	1
+Tatava	1
+Tataya	1
+Tma	1
+Tna	1
+Tpra	1
+Tra	1
+Tsa	1
+Tsya	1
+Tva	1
+Tya	1
+Vra	1
+Vva	1
+class definition end
+
+lookaheadclass definition begin
+Repha	1
+AA_vwl	2
+Ya.blw	3
+class definition end
+
+class-chain		1	1, 2	1, 5
+class-chain		1	2	1, 5
+class-chain		1	3, 2	1, 5
+
+lookup end
+
+
+lookup	9	mark to base
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+mark	AA_vwl	0	0,388
+base	uni25CC	0	470,480
+base	Ka	0	450,388
+base	Ca	0	500,388
+base	Cha	0	480,388
+base	Jha	0	450,388
+base	Dda	0	415,388
+base	Ddha	0	425,388
+base	Ta	0	415,388
+base	Da	0	420,388
+base	Na	0	435,388
+base	Pha	0	395,388
+base	Bha	0	425,388
+base	Ra	0	465,388
+base	Va	0	450,388
+base	Ha	0	430,388
+base	Rtta	0	403,550
+base	Kssa	0	440,388
+base	Ngga	0	1000,338
+base	Cca	0	485,388
+base	Jnya	0	695,388
+base	Nndda	0	960,338
+base	Nnnna	0	960,338
+base	Tka	0	440,388
+base	Tata	0	440,388
+base	Tpa	0	440,388
+base	Dada	0	440,388
+base	Dadha	0	475,388
+base	Ntha	0	395,388
+base	Ndha	0	425,388
+base	Nana	0	420,388
+base	Hna	0	430,388
+base	Hma	0	660,388
+base	Kta	0	450,388
+base	Kra	0	620,388
+base	Ksa	0	450,388
+base	Kya	0	475,388
+base	Bhna	0	425,388
+base	Bhra	0	587,388
+base	Bhya	0	425,388
+base	Ccha	0	503,388
+base	Ctva	0	500,388
+base	Dbha	0	494,388
+base	Dbhya	0	483,388
+base	Ddhra	0	653,388
+base	Dga	0	427,388
+base	Dgha	0	477,388
+base	Dra	0	612,388
+base	Dva	0	420,388
+base	Dvya	0	420,388
+base	Hla	0	568,388
+base	Hra	0	654,388
+base	Hva	0	444,388
+base	Knna	0	508,388
+base	Kssnna	0	428,411
+base	Kssnnya	0	428,411
+base	Kva	0	457,388
+base	Na_ya	0	421,388
+base	Nda	0	435,388
+base	Ndra	0	600,388
+base	Nha	0	435,388
+base	Nma	0	435,388
+base	Nsa	0	483,388
+base	Ntya	0	435,388
+base	Nva	0	435,388
+base	Ptya	0	628,388
+base	Ssttha	0	650,388
+base	Tatava	0	415,388
+base	Tataya	0	440,388
+base	Tma	0	415,388
+base	Tna	0	415,388
+base	Tpra	0	594,388
+base	Tra	0	665,398
+base	Tsa	0	415,388
+base	Tva	0	415,388
+base	Tya	0	455,388
+base	Vra	0	640,388
+base	Vva	0	450,388
+
+lookup end
+
+
+lookup	10	mark to base
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+mark	AA_vwl.alt	0	0,400
+base	Ga	0	621,352
+base	Gha	0	631,400
+base	Nga	0	965,350
+base	Ja	0	673,390
+base	Tta	0	887,350
+base	Ttha	0	785,350
+base	Nna	0	916,350
+base	Tha	0	663,352
+base	Dha	0	717,350
+base	Ba	0	632,390
+base	Ma	0	642,390
+base	Ya	0	812,390
+base	La	0	625,352
+base	Sha	0	751,352
+base	Ssa	0	632,390
+base	Sa	0	682,390
+base	Gna	0	634,340
+base	Ngsha	0	1044,350
+base	Bdha	0	621,400
+base	Sska	0	641,390
+base	Sstta	0	643,388
+base	Bbha	0	632,390
+base	Bda	0	632,390
+base	Dhma	0	714,352
+base	Dhva	0	714,352
+base	Gdha	0	621,352
+base	Gga	0	659,352
+base	Ghra	0	831,400
+base	Gja	0	663,361
+base	Gla	0	621,352
+base	Gma	0	611,400
+base	Gva	0	621,358
+base	Jbha	0	751,390
+base	Jbhya	0	751,390
+base	Jggra	0	909,390
+base	Jjha	0	753,390
+base	Jva	0	692,390
+base	Jya	0	673,390
+base	Lka	0	625,362
+base	Lpa	0	625,352
+base	Lva	0	628,350
+base	Mba	0	631,400
+base	Mbha	0	695,400
+base	Mma	0	642,390
+base	Mna	0	631,400
+base	Mpa	0	642,390
+base	Mva	0	642,390
+base	Mya	0	642,390
+base	Ngggra	0	1251,392
+base	Ngka	0	1103,362
+base	Ngma	0	961,352
+base	Ngsya	0	892,355
+base	Ngva	0	965,350
+base	Ngya	0	1014,352
+base	Nnddva	0	913,352
+base	Nnnnya	0	913,352
+base	Nnsa	0	916,350
+base	Shca	0	752,352
+base	Shra	0	884,350
+base	Shtva	0	752,352
+base	Shva	0	752,352
+base	Shya	0	754,350
+base	Ska	0	682,400
+base	Sma	0	682,390
+base	Spha	0	682,390
+base	Sra	0	842,390
+base	Ssttya	0	643,388
+base	Ssva	0	632,390
+base	Sta	0	682,390
+base	Stha	0	690,399
+base	Stra	0	889,390
+base	Sva	0	682,390
+base	Tsya	0	415,388
+base	Ttpra	0	1107,350
+base	Tttva	0	882,352
+base	Ttva	0	884,352
+base	Yva	0	812,390
+
+lookup end
+
+
+lookup	11	mark to base
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+mark	I_vwl	0	-195,620
+mark	II_vwl	0	-195,620
+base	uni25CC	0	297,500
+base	Kha	0	365,390
+
+lookup end
+
+
+lookup	12	mark to base
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+mark	U_vwl	0	-90,0
+mark	UU_vwl	0	-90,-5
+base	uni25CC	0	297,0
+base	Ka	0	255,0
+base	Kha	0	340,0
+base	Ga	0	320,45
+base	Gha	0	420,45
+base	Nga	0	435,40
+base	Ca	0	310,0
+base	Cha	0	400,0
+base	Jha	0	360,-25
+base	Nya	0	300,69
+base	Tta	0	525,90
+base	Ttha	0	335,105
+base	Dda	0	255,0
+base	Ddha	0	265,2
+base	Nna	0	290,35
+base	Ta	0	245,55
+base	Tha	0	340,0
+base	Da	0	290,0
+base	Dha	0	340,0
+base	Na	0	255,55
+base	Pa	0	395,0
+base	Pha	0	435,30
+base	Ba	0	430,0
+base	Bha	0	365,0
+base	Ma	0	220,0
+base	Ya	0	490,65
+base	Ra	0	275,0
+base	La	0	255,0
+base	Va	0	255,0
+base	Sha	0	390,20
+base	Ssa	0	400,0
+base	Sa	0	435,25
+base	Ha	0	196,121
+base	Khaa	0	340,0
+base	Rya	0	510,65
+base	Khe	0	348,10
+base	Khai	0	422,0
+base	Kssa	0	270,0
+base	Ggra	0	430,-20
+base	Gna	0	300,40
+base	Ngga	0	250,-140
+base	Ngsha	0	275,-155
+base	Cca	0	305,-110
+base	Jnya	0	265,-175
+base	Nndda	0	435,-40
+base	Nnnna	0	345,-40
+base	Tka	0	255,-100
+base	Tata	0	355,-110
+base	Tpa	0	280,-55
+base	Dada	0	270,-40
+base	Dadha	0	300,-85
+base	Ntha	0	295,-90
+base	Ndha	0	300,-80
+base	Nana	0	255,-45
+base	Bdha	0	360,-80
+base	Sska	0	294,-201
+base	Sstta	0	222,-104
+base	Hna	0	185,-70
+base	Hma	0	225,-150
+base	Kta	0	240,-48
+base	Kra	0	360,0
+base	Ksa	0	240,0
+base	Kya	0	275,0
+base	Bhya	0	320,-219
+base	Gga	0	412,-57
+base	Na_ya	0	280,-163
+base	Ngya	0	238,-171
+base	Tya	0	339,-138
+
+lookup end
+
+
+lookup	13	mark to base
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+mark	VocR	0	-75,0
+mark	VocRR	0	-75,0
+base	uni25CC	0	297,0
+base	Ka	0	265,0
+base	Ga	0	320,30
+base	Ca	0	310,0
+base	Cha	0	275,45
+base	Jha	0	265,0
+base	Ttha	0	310,105
+base	Dda	0	265,0
+base	Ddha	0	280,0
+base	Ta	0	265,0
+base	Tha	0	335,0
+base	Da	0	265,0
+base	Dha	0	335,0
+base	Na	0	265,0
+base	Bha	0	360,0
+base	Ma	0	235,0
+base	Ra	0	295,0
+base	La	0	265,0
+base	Va	0	265,0
+base	Sha	0	385,0
+base	Ssa	0	314,40
+base	Ssau	0	469,-6
+base	Kssa	0	255,0
+base	Gna	0	305,0
+base	Ngga	0	230,-130
+base	Ngsha	0	285,-155
+base	Cca	0	310,-120
+base	Jnya	0	240,-180
+base	Nndda	0	420,-50
+base	Nnnna	0	345,-55
+base	Tka	0	250,-90
+base	Tata	0	355,-105
+base	Tpa	0	305,-60
+base	Dada	0	270,-55
+base	Dadha	0	295,-80
+base	Ntha	0	300,-90
+base	Ndha	0	310,-85
+base	Nana	0	250,-35
+base	Bdha	0	365,-85
+base	Sstta	0	235,-120
+base	Hna	0	155,-70
+base	Hma	0	200,-155
+
+lookup end
+
+
+lookup	14	mark to base
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+mark	VocR.wide	0	-75,0
+mark	VocRR.wide	0	-75,0
+base	Kha	0	312,10
+base	Gha	0	325,75
+base	Nga	0	415,0
+base	Ja	0	345,0
+base	Nya	0	300,75
+base	Tta	0	205,170
+base	Nna	0	280,40
+base	Pa	0	370,0
+base	Pha	0	330,85
+base	Ba	0	400,0
+base	Ya	0	325,130
+base	Sa	0	245,35
+base	Ha	0	370,0
+base	Khaa	0	335,0
+
+lookup end
+
+
+lookup	15	mark to base
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+mark	VocL	0	-220,0
+base	uni25CC	0	297,0
+base	Ka	0	280,0
+base	Kha	0	335,0
+base	Ga	0	310,0
+base	Gha	0	485,0
+base	Nga	0	425,0
+base	Ca	0	330,0
+base	Cha	0	350,0
+base	Ja	0	465,0
+base	Jha	0	375,-50
+base	Nya	0	460,60
+base	Tta	0	505,55
+base	Ttha	0	340,110
+base	Dda	0	280,0
+base	Ddha	0	280,0
+base	Nna	0	330,0
+base	Ta	0	280,0
+base	Tha	0	340,0
+base	Da	0	280,0
+base	Dha	0	355,0
+base	Na	0	280,0
+base	Pa	0	375,0
+base	Pha	0	430,20
+base	Ba	0	420,0
+base	Bha	0	305,0
+base	Ma	0	250,0
+base	Ya	0	485,30
+base	Ra	0	280,0
+base	La	0	280,0
+base	Va	0	280,0
+base	Sha	0	385,0
+base	Ssa	0	410,0
+base	Sa	0	465,0
+base	Ha	0	370,45
+base	Ye	0	415,30
+base	Khaa	0	335,0
+base	Kssa	0	265,0
+base	Ggra	0	440,-40
+base	Gna	0	295,0
+base	Ngga	0	230,-130
+base	Ngsha	0	250,-150
+base	Cca	0	320,-115
+base	Jnya	0	265,-180
+base	Nndda	0	425,-50
+base	Nnnna	0	320,-45
+base	Tka	0	250,-100
+base	Tata	0	345,-95
+base	Tpa	0	310,-65
+base	Dada	0	260,-45
+base	Dadha	0	300,-85
+base	Ntha	0	300,-95
+base	Ndha	0	305,-85
+base	Nana	0	220,-35
+base	Bdha	0	370,-95
+base	Sska	0	330,-217
+base	Sstta	0	220,-105
+base	Hna	0	145,-65
+base	Hma	0	195,-165
+base	Ksse	0	349,0
+base	Kta	0	225,-85
+base	Kra	0	345,0
+base	Ksa	0	220,-10
+base	Kya	0	275,0
+
+lookup end
+
+
+lookup	16	mark to base
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+mark	E_vwl.alt	0	-85,430
+base	Ga	0	540,450
+base	Nga	0	880,450
+base	Nya	0	585,450
+base	Tta	0	800,450
+base	Ttha	0	680,450
+base	Nna	0	805,450
+base	Tha	0	550,450
+base	Dha	0	610,450
+base	Sha	0	640,450
+base	Shva	0	655,426
+
+lookup end
+
+
+lookup	17	mark to base
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+mark	AI_vwl.alt	0	-145,445
+base	Ga	0	520,445
+base	Nga	0	865,445
+base	Nya	0	570,485
+base	Tta	0	800,445
+base	Ttha	0	690,445
+base	Nna	0	820,445
+base	Tha	0	575,445
+base	Dha	0	625,445
+base	Sha	0	660,445
+
+lookup end
+
+
+lookup	18	mark to base
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+mark	Candrabindu	0	10,600
+mark	Candrabindu.alt	0	10,600
+mark	Anusvara	0	0,600
+mark	Anusvara.alt	0	0,600
+base	uni25CC	0	297,600
+base	A_indi	0	340,600
+base	AA_indi	0	340,600
+base	I_indi	0	385,600
+base	II_indi	0	340,600
+base	U_indi	0	415,600
+base	UU_indi	0	410,600
+base	VocR_indi	0	365,600
+base	VocRR_indi	0	415,600
+base	VocL_indi	0	260,600
+base	E_indi	0	375,600
+base	AI_indi	0	410,600
+base	O_indi	0	380,600
+base	AU_indi	0	370,600
+base	Ka	0	275,600
+base	Kha	0	275,600
+base	Ga	0	275,600
+base	Gha	0	375,600
+base	Nga	0	570,600
+base	Ca	0	320,600
+base	Cha	0	305,600
+base	Ja	0	405,600
+base	Jha	0	300,600
+base	Nya	0	335,600
+base	Tta	0	430,600
+base	Ttha	0	375,600
+base	Dda	0	250,600
+base	Ddha	0	255,600
+base	Nna	0	520,600
+base	Ta	0	250,600
+base	Tha	0	275,580
+base	Da	0	255,600
+base	Dha	0	350,600
+base	Na	0	260,600
+base	Pa	0	300,600
+base	Pha	0	255,600
+base	Ba	0	350,600
+base	Bha	0	275,600
+base	Ma	0	355,600
+base	Ya	0	530,600
+base	Ra	0	315,600
+base	La	0	305,600
+base	Va	0	300,600
+base	Sha	0	375,600
+base	Ssa	0	355,600
+base	Sa	0	420,600
+base	Ha	0	275,600
+base	Paa	0	354,600
+base	Ye	0	460,600
+base	Yo	0	460,600
+base	Khaa	0	275,600
+base	Ki	0	269,617
+base	Li	0	305,600
+base	Hi	0	275,600
+base	Rtta	0	238,762
+base	Rya	0	399,654
+base	Bhuu	0	275,600
+base	Le	0	305,600
+base	Lo	0	305,600
+base	Kssa	0	280,600
+base	Ggra	0	400,600
+base	Gna	0	260,600
+base	Ngga	0	575,600
+base	Ngsha	0	645,600
+base	Cca	0	330,600
+base	Jnya	0	390,600
+base	Nndda	0	530,600
+base	Nnnna	0	530,600
+base	Tka	0	260,600
+base	Tata	0	260,600
+base	Tpa	0	260,600
+base	Dada	0	285,600
+base	Dadha	0	305,600
+base	Ntha	0	230,600
+base	Ndha	0	250,600
+base	Nana	0	230,600
+base	Bdha	0	350,600
+base	Sska	0	364,600
+base	Sstta	0	370,600
+base	Hna	0	260,600
+base	Hma	0	480,600
+base	Kssi	0	280,600
+base	Ggri	0	460,600
+base	Gni	0	280,600
+base	Nggi	0	575,600
+base	Ngshi	0	640,600
+base	Cci	0	325,600
+base	Jnyi	0	400,600
+base	Nnddi	0	520,600
+base	Nnnni	0	515,600
+base	Tki	0	255,600
+base	Tati	0	250,600
+base	Tpi	0	260,600
+base	Dadi	0	280,600
+base	Dadhi	0	315,600
+base	Nthi	0	235,600
+base	Ndhi	0	235,600
+base	Nani	0	225,600
+base	Bdhi	0	340,600
+base	Sski	0	370,600
+base	Sstti	0	345,600
+base	Hni	0	250,600
+base	Hmi	0	490,600
+base	Kssii	0	280,750
+base	Ggrii	0	435,600
+base	Gnii	0	280,600
+base	Nggii	0	455,600
+base	Ngshii	0	525,600
+base	Ccii	0	325,750
+base	Jnyii	0	360,650
+base	Nnddii	0	475,600
+base	Nnnnii	0	480,600
+base	Tkii	0	255,750
+base	Tatii	0	280,750
+base	Tpii	0	255,750
+base	Dadii	0	280,750
+base	Dadhii	0	315,750
+base	Nthii	0	235,750
+base	Ndhii	0	240,750
+base	Nanii	0	235,750
+base	Bdhii	0	325,650
+base	Sskii	0	340,650
+base	Ssttii	0	330,650
+base	Hnii	0	255,750
+base	Hmii	0	485,750
+base	Ksse	0	325,600
+base	Ggre	0	380,700
+base	Gne	0	230,750
+base	Ngge	0	405,600
+base	Ngshe	0	485,600
+base	Cce	0	310,600
+base	Jnye	0	390,600
+base	Nndde	0	355,600
+base	Nnnne	0	335,600
+base	Tke	0	325,600
+base	Tate	0	325,600
+base	Tpe	0	320,600
+base	Dade	0	320,600
+base	Dadhe	0	325,600
+base	Nthe	0	320,600
+base	Ndhe	0	320,600
+base	Nane	0	310,600
+base	Bdhe	0	400,600
+base	Sske	0	405,600
+base	Sstte	0	385,600
+base	Hne	0	305,600
+base	Hme	0	515,600
+base	Kssai	0	310,750
+base	Ggrai	0	400,750
+base	Gnai	0	280,750
+base	Nggai	0	440,650
+base	Ngshai	0	505,650
+base	Ccai	0	280,750
+base	Jnyai	0	310,700
+base	Nnddai	0	430,650
+base	Nnnnai	0	420,650
+base	Tkai	0	280,750
+base	Tatai	0	280,750
+base	Tpai	0	280,750
+base	Dadai	0	280,750
+base	Dadhai	0	280,750
+base	Nthai	0	280,750
+base	Ndhai	0	280,750
+base	Nanai	0	280,750
+base	Bdhai	0	350,700
+base	Sskai	0	315,700
+base	Ssttai	0	330,700
+base	Hnai	0	255,750
+base	Hmai	0	420,750
+base	Ksso	0	340,600
+base	Ggro	0	430,750
+base	Gno	0	280,750
+base	Nggo	0	440,750
+base	Ngsho	0	530,750
+base	Cco	0	330,600
+base	Jnyo	0	405,600
+base	Nnddo	0	485,750
+base	Nnnno	0	445,750
+base	Tko	0	345,600
+base	Tato	0	350,600
+base	Tpo	0	360,600
+base	Dado	0	365,600
+base	Dadho	0	345,600
+base	Ntho	0	355,600
+base	Ndho	0	350,600
+base	Nano	0	340,600
+base	Bdho	0	430,600
+base	Ssko	0	415,600
+base	Sstto	0	385,600
+base	Hno	0	330,600
+base	Hmo	0	540,600
+base	Kssau	0	305,750
+base	Ggrau	0	475,880
+base	Gnau	0	405,880
+base	Nggau	0	475,880
+base	Ngshau	0	510,880
+base	Ccau	0	330,750
+base	Jnyau	0	415,750
+base	Nnddau	0	455,880
+base	Nnnnau	0	525,880
+base	Tkau	0	280,750
+base	Tatau	0	280,750
+base	Tpau	0	280,750
+base	Dadau	0	280,750
+base	Dadhau	0	280,750
+base	Nthau	0	280,750
+base	Ndhau	0	280,750
+base	Nanau	0	280,750
+base	Bdhau	0	350,750
+base	Sskau	0	390,750
+base	Ssttau	0	405,750
+base	Hnau	0	250,750
+base	Hmau	0	440,750
+base	Kta	0	280,600
+base	Kra	0	385,600
+base	Ksa	0	280,600
+base	Kya	0	300,600
+base	Kti	0	265,600
+base	Kri	0	330,600
+base	Ksi	0	265,600
+base	Kyi	0	290,600
+base	Ktii	0	280,750
+base	Krii	0	335,700
+base	Ksii	0	265,750
+base	Kyii	0	305,750
+base	Kte	0	365,600
+base	Kre	0	385,600
+base	Kse	0	325,600
+base	Kye	0	355,600
+base	Ktai	0	335,750
+base	Krai	0	465,750
+base	Ksai	0	335,750
+base	Kyai	0	340,750
+base	Kto	0	370,600
+base	Kro	0	490,600
+base	Kso	0	365,600
+base	Kyo	0	355,600
+base	Ktau	0	335,750
+base	Krau	0	470,750
+base	Ksau	0	340,750
+base	Kyau	0	340,750
+base	Bbha	0	350,600
+base	Bda	0	350,600
+base	Bhna	0	275,600
+base	Bhra	0	437,600
+base	Bhya	0	275,600
+base	Ccha	0	342,599
+base	Cchvo	0	359,590
+base	Ctva	0	340,597
+base	Dbha	0	327,600
+base	Dbhya	0	318,600
+base	Ddhra	0	483,600
+base	Dga	0	262,600
+base	Dgha	0	312,600
+base	Dhva	0	350,600
+base	Dra	0	447,600
+base	Dva	0	255,600
+base	Dvya	0	255,600
+base	Gdha	0	275,600
+base	Gga	0	275,600
+base	Ggraa	0	400,600
+base	Ghra	0	575,600
+base	Gja	0	315,574
+base	Gma	0	275,600
+base	Gva	0	275,606
+base	Hra	0	499,600
+base	Jbha	0	483,600
+base	Jbhya	0	483,600
+base	Jggra	0	641,600
+base	Jjha	0	485,600
+base	Jva	0	424,600
+base	Jya	0	405,600
+base	Knna	0	338,593
+base	Kssnna	0	293,600
+base	Kssnnya	0	293,600
+base	Kva	0	287,600
+base	Lpa	0	305,600
+base	Mma	0	355,600
+base	Mpa	0	355,600
+base	Mya	0	355,600
+base	Na_ya	0	278,590
+base	Nda	0	260,600
+base	Ndra	0	425,600
+base	Ngggra	0	738,571
+base	Ngma	0	456,600
+base	Ngva	0	570,600
+base	Ngya	0	620,600
+base	Ngye	0	552,600
+base	Nha	0	260,600
+base	Nma	0	260,600
+base	Nnnnya	0	530,600
+base	Nnsa	0	736,570
+base	Nsa	0	308,600
+base	Ntya	0	263,600
+base	Nva	0	260,600
+base	Nyca	0	335,600
+base	Ptu	0	357,600
+base	Pva	0	300,600
+base	Rvva	0	279,778
+base	Shnu	0	375,600
+base	Shra	0	505,600
+base	Shtva	0	375,600
+base	Shva	0	375,600
+base	Shya	0	375,600
+base	Spha	0	420,600
+base	Sra	0	580,600
+base	Ssttha	0	370,600
+base	Sstthe	0	385,600
+base	Sstthi	0	345,600
+base	Sstthii	0	330,650
+base	Ssttu	0	370,600
+base	Ssttya	0	370,600
+base	Ssva	0	355,600
+base	Stra	0	627,600
+base	Tatava	0	250,600
+base	Tataya	0	260,600
+base	Tma	0	250,600
+base	Tna	0	250,600
+base	Tpra	0	429,600
+base	Tsa	0	250,600
+base	Tsya	0	250,600
+base	Ttpra	0	650,600
+base	Tttva	0	688,561
+base	Ttva	0	430,600
+base	Tva	0	250,600
+base	Vra	0	490,600
+base	Vva	0	300,600
+
+lookup end
+
+
+lookup	19	mark to base
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+mark	Virama	0	-245,0
+base	uni25CC	0	297,0
+base	A_indi	0	320,0
+base	AA_indi	0	385,-75
+base	I_indi	0	395,0
+base	II_indi	0	320,0
+base	U_indi	0	320,0
+base	UU_indi	0	375,-140
+base	VocR_indi	0	320,0
+base	VocRR_indi	0	410,-165
+base	VocL_indi	0	255,0
+base	E_indi	0	335,25
+base	AI_indi	0	370,20
+base	O_indi	0	285,0
+base	AU_indi	0	360,-135
+base	Ka	0	250,0
+base	Kha	0	340,0
+base	Ga	0	320,0
+base	Gha	0	340,0
+base	Nga	0	390,0
+base	Ca	0	320,0
+base	Cha	0	330,0
+base	Ja	0	395,0
+base	Jha	0	375,-65
+base	Nya	0	350,35
+base	Tta	0	360,40
+base	Ttha	0	350,45
+base	Dda	0	295,0
+base	Ddha	0	295,0
+base	Nna	0	290,0
+base	Ta	0	280,0
+base	Tha	0	350,0
+base	Da	0	315,0
+base	Dha	0	355,0
+base	Na	0	250,0
+base	Pa	0	390,0
+base	Pha	0	365,0
+base	Ba	0	435,0
+base	Bha	0	250,0
+base	Ma	0	275,0
+base	Ya	0	435,0
+base	Ra	0	280,0
+base	La	0	265,0
+base	Va	0	250,0
+base	Sha	0	355,0
+base	Ssa	0	400,0
+base	Sa	0	365,0
+base	Ha	0	305,25
+base	Khaa	0	340,0
+base	Li	0	265,0
+base	Rya	0	435,0
+base	Le	0	265,0
+base	Khai	0	422,0
+base	Lo	0	265,0
+base	Kssa	0	250,0
+base	Ggra	0	440,-40
+base	Gna	0	315,0
+base	Ngga	0	300,-175
+base	Ngsha	0	305,-195
+base	Cca	0	325,-120
+base	Jnya	0	420,-170
+base	Nndda	0	450,-40
+base	Nnnna	0	445,-80
+base	Tka	0	285,-95
+base	Tata	0	365,-140
+base	Tpa	0	310,-65
+base	Dada	0	265,-50
+base	Dadha	0	320,-80
+base	Ntha	0	290,-90
+base	Ndha	0	295,-90
+base	Nana	0	285,-95
+base	Bdha	0	375,-95
+base	Sska	0	290,-216
+base	Sstta	0	335,-165
+base	Hna	0	220,-125
+base	Hma	0	305,-160
+
+lookup end
+
+
+lookup	20	mark to base
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+mark	Pa.blw	0	-120,0
+mark	Ya.blw	1	-275,30
+base	uni25CC	0	297,0
+base	uni25CC	1	297,0
+base	Ka	0	240,0
+base	Ka	1	240,0
+base	Kha	0	330,0
+base	Kha	1	330,0
+base	Ga	0	330,0
+base	Ga	1	330,0
+base	Gha	0	435,20
+base	Gha	1	435,20
+base	Nga	0	420,35
+base	Nga	1	420,35
+base	Ca	0	320,0
+base	Ca	1	320,0
+base	Cha	0	355,20
+base	Cha	1	355,20
+base	Ja	0	425,20
+base	Ja	1	425,20
+base	Jha	0	345,-40
+base	Jha	1	345,-40
+base	Nya	0	275,73
+base	Nya	1	275,73
+base	Tta	0	525,75
+base	Tta	1	525,75
+base	Ttha	0	330,105
+base	Ttha	1	330,105
+base	Dda	0	270,0
+base	Dda	1	270,0
+base	Ddha	0	270,0
+base	Ddha	1	270,0
+base	Nna	0	275,20
+base	Nna	1	275,20
+base	Ta	0	240,20
+base	Ta	1	240,20
+base	Tha	0	320,0
+base	Tha	1	320,0
+base	Da	0	270,10
+base	Da	1	270,10
+base	Dha	0	340,0
+base	Dha	1	340,0
+base	Na	0	240,20
+base	Na	1	240,20
+base	Pa	0	400,0
+base	Pa	1	400,0
+base	Pha	0	450,15
+base	Pha	1	450,15
+base	Ba	0	430,0
+base	Ba	1	430,0
+base	Bha	0	360,-20
+base	Bha	1	360,-20
+base	Ma	0	210,0
+base	Ma	1	210,0
+base	Ya	0	550,15
+base	Ya	1	550,15
+base	Ra	0	240,0
+base	Ra	1	240,0
+base	La	1	240,0
+base	Va	0	240,0
+base	Va	1	240,0
+base	Sha	0	380,0
+base	Sha	1	380,0
+base	Ssa	0	400,0
+base	Ssa	1	400,0
+base	Sa	0	435,5
+base	Sa	1	475,15
+base	Ha	0	178,104
+base	Ha	1	178,104
+base	Paa	0	296,16
+base	Paa	1	296,16
+base	Pi_bhks	0	247,13
+base	Pi_bhks	1	247,13
+base	Ye	0	530,15
+base	Ye	1	530,15
+base	Khaa	0	330,0
+base	Khaa	1	330,0
+base	Li	1	240,0
+base	Ke	0	212,6
+base	Ke	1	212,6
+base	Khe	0	334,12
+base	Khe	1	334,12
+base	De	0	330,12
+base	De	1	330,12
+base	Le	0	240,0
+base	Le	1	240,0
+base	Ve	0	258,15
+base	Ve	1	258,15
+base	Khai	0	405,10
+base	Khai	1	405,10
+base	Sai	1	501,25
+base	Ko	0	212,6
+base	Ko	1	212,6
+base	Do	0	330,12
+base	Do	1	330,12
+base	Lo	1	240,0
+base	Vo	0	258,15
+base	Vo	1	258,15
+base	Sso	0	416,12
+base	Sso	1	416,12
+base	So	0	271,28
+base	So	1	532,20
+base	Sau	1	501,20
+base	Kssa	0	265,0
+base	Kssa	1	265,0
+base	Ggra	0	435,-35
+base	Ggra	1	435,-35
+base	Gna	0	265,0
+base	Gna	1	265,0
+base	Ngga	0	260,-145
+base	Ngga	1	260,-145
+base	Ngsha	0	275,-180
+base	Ngsha	1	275,-180
+base	Cca	0	305,-120
+base	Cca	1	305,-120
+base	Jnya	0	260,-180
+base	Jnya	1	260,-180
+base	Nndda	0	430,-50
+base	Nndda	1	430,-50
+base	Nnnna	0	345,-60
+base	Nnnna	1	345,-60
+base	Tka	0	260,-120
+base	Tka	1	260,-120
+base	Tata	0	340,-140
+base	Tata	1	340,-140
+base	Tpa	0	285,-60
+base	Tpa	1	285,-60
+base	Dada	0	260,-60
+base	Dada	1	260,-60
+base	Dadha	0	295,-100
+base	Dadha	1	295,-100
+base	Ntha	0	295,-100
+base	Ntha	1	295,-100
+base	Ndha	0	300,-100
+base	Ndha	1	300,-100
+base	Nana	0	250,-80
+base	Nana	1	250,-80
+base	Bdha	0	380,-85
+base	Bdha	1	380,-85
+base	Sska	0	205,-200
+base	Sska	1	275,-200
+base	Sstta	0	430,-195
+base	Sstta	1	430,-195
+base	Hna	0	165,-110
+base	Hna	1	165,-110
+base	Hma	0	205,-165
+base	Hma	1	205,-165
+base	Ksse	0	310,2
+base	Ksse	1	310,2
+
+lookup end
+
+
+lookup	21	mark to base
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+MarkAttachmentType	3
+
+mark	Repha	0	0,480
+base	uni25CC	0	297,500
+base	Ka	0	265,480
+base	Kha	0	265,480
+base	Ga	0	265,480
+base	Gha	0	540,480
+base	Nga	0	265,480
+base	Ca	0	340,480
+base	Cha	0	300,480
+base	Ja	0	570,480
+base	Jha	0	295,480
+base	Nya	0	300,480
+base	Tta	0	280,480
+base	Ttha	0	355,480
+base	Dda	0	245,480
+base	Ddha	0	265,480
+base	Nna	0	255,480
+base	Ta	0	265,480
+base	Tha	0	583,472
+base	Da	0	255,480
+base	Dha	0	335,480
+base	Na	0	250,480
+base	Pa	0	120,480
+base	Pha	0	245,480
+base	Ba	0	530,480
+base	Bha	0	265,480
+base	Ma	0	540,480
+base	Ya	0	700,480
+base	Ra	0	320,480
+base	La	0	265,480
+base	Va	0	290,480
+base	Sha	0	672,470
+base	Ssa	0	530,480
+base	Sa	0	570,480
+base	Ha	0	245,480
+base	Ye	0	640,480
+base	Khaa	0	265,480
+base	Bhu	0	265,480
+base	Bhuu	0	265,480
+base	De	0	480,467
+base	Le	0	542,460
+base	Do	0	480,467
+base	Lo	0	542,460
+base	Kssa	0	265,480
+base	Gna	0	265,480
+base	Ngga	0	285,480
+base	Ngsha	0	350,480
+base	Cca	0	325,480
+base	Jnya	0	570,480
+base	Nndda	0	270,480
+base	Nnnna	0	833,470
+base	Tka	0	265,480
+base	Tata	0	265,480
+base	Tpa	0	265,480
+base	Dada	0	280,480
+base	Dadha	0	300,480
+base	Ntha	0	240,480
+base	Ndha	0	245,480
+base	Nana	0	240,480
+base	Bdha	0	520,480
+base	Sska	0	540,480
+base	Sstta	0	540,480
+base	Hna	0	250,480
+base	Hma	0	480,480
+base	Kta	0	265,480
+base	Kra	0	470,480
+base	Ksa	0	265,480
+base	Kya	0	295,480
+base	Bbha	0	530,480
+base	Bhna	0	265,480
+base	Ccha	0	332,474
+base	Drr	0	449,482
+base	Dva	0	255,480
+base	Dve	0	480,507
+base	Dvya	0	255,480
+base	Gga	0	577,466
+base	Kva	0	272,480
+base	Mma	0	546,508
+base	Mya	0	540,480
+base	Nha	0	250,480
+base	Nma	0	250,480
+base	Nnnnya	0	833,470
+base	Nva	0	250,480
+base	Nyca	0	300,480
+base	Shnu	0	672,470
+base	Ssttha	0	540,480
+base	Ssttya	0	540,480
+base	Tataya	0	265,480
+base	Tna	0	265,480
+base	Trr	0	441,495
+base	Tva	0	265,480
+base	Vva	0	295,505
+base	Vve	0	480,464
+
+lookup end
+
+
+lookup	22	mark to base
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+mark	E_vwl	0	0,360
+mark	AI_vwl	0	0,360
+mark	O_vwl	0	0,360
+mark	AU_vwl	0	0,360
+base	uni25CC	0	297,500
+
+lookup end
+
+
+lookup	23	mark to base
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+mark	NumberTwentySolo.mark	0	768,667
+mark	NumberThirtySolo.mark	0	748,667
+mark	NumberFortySolo.mark	0	693,667
+mark	NumberFiftySolo.mark	0	768,667
+mark	NumberSixtySolo.mark	0	668,667
+mark	NumberSeventySolo.mark	0	658,667
+mark	NumberEightySolo.mark	0	768,667
+mark	NumberNinetySolo.mark	0	708,667
+base	OneHundred	0	628,0
+base	TwoHundred	0	619,0
+base	ThreeHundred	0	608,0
+base	FourHundred	0	669,0
+base	FiveHundred	0	669,0
+base	SixHundred	0	647,0
+base	SevenHundred	0	740,0
+base	EightHundred	0	780,0
+base	NineHundred	0	657,0
+
+lookup end
+
+
+lookup	24	mark to base
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+mark	NumberOne.mark	0	-277,645
+mark	NumberTwo.mark	0	-331,645
+mark	NumberThree.mark	0	-310,645
+mark	NumberFour.mark	0	-354,645
+mark	NumberFive.mark	0	-376,645
+mark	NumberSix.mark	0	-507,645
+mark	NumberSeven.mark	0	-479,645
+mark	NumberEight.mark	0	-580,645
+mark	NumberNine.mark	0	-406,645
+mark	NumberTen.alt.mark	0	-349,645
+mark	NumberTwenty.mark	0	-479,667
+mark	NumberThirty.mark	0	-493,667
+mark	NumberForty.mark	0	-444,667
+mark	NumberFifty.mark	0	-479,667
+mark	NumberSixty.mark	0	-595,667
+mark	NumberSeventy.mark	0	-452,667
+mark	NumberEighty.mark	0	-439,667
+mark	NumberNinety.mark	0	-528,667
+base	NumberOne	0	248,0
+base	NumberTwo	0	197,0
+base	NumberThree	0	215,0
+base	NumberFour	0	298,0
+base	NumberFive	0	328,0
+base	NumberSix	0	360,0
+base	NumberSeven	0	458,0
+base	NumberEight	0	520,0
+base	NumberNine	0	426,0
+base	NumberTen	0	500,0
+base	NumberTwenty	0	410,0
+base	NumberThirty	0	396,0
+base	NumberForty	0	330,0
+base	NumberFifty	0	410,0
+base	NumberSixty	0	294,0
+base	NumberSeventy	0	293,0
+base	NumberEighty	0	450,0
+base	NumberNinety	0	361,0
+base	OneHundred	0	628,0
+base	TwoHundred	0	619,0
+base	ThreeHundred	0	608,0
+base	FourHundred	0	669,0
+base	FiveHundred	0	669,0
+base	SixHundred	0	647,0
+base	SevenHundred	0	740,0
+base	EightHundred	0	780,0
+base	NineHundred	0	657,0
+
+lookup end
+
+
+lookup	25	mark to mark
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+mark	NumberOne.mark	0	-277,645
+mark	NumberTwo.mark	0	-331,645
+mark	NumberThree.mark	0	-310,645
+mark	NumberFour.mark	0	-354,645
+mark	NumberFive.mark	0	-376,645
+mark	NumberSix.mark	0	-507,645
+mark	NumberSeven.mark	0	-479,645
+mark	NumberEight.mark	0	-580,645
+mark	NumberNine.mark	0	-406,645
+mark	NumberTen.alt.mark	0	-349,645
+mark	NumberTwenty.mark	0	-479,667
+mark	NumberThirty.mark	0	-493,667
+mark	NumberForty.mark	0	-444,667
+mark	NumberFifty.mark	0	-479,667
+mark	NumberSixty.mark	0	-595,667
+mark	NumberSeventy.mark	0	-452,667
+mark	NumberEighty.mark	0	-439,667
+mark	NumberNinety.mark	0	-528,667
+base	NumberOne.mark	0	-257,0
+base	NumberTwo.mark	0	-308,0
+base	NumberThree.mark	0	-290,0
+base	NumberFour.mark	0	-334,0
+base	NumberFive.mark	0	-356,0
+base	NumberSix.mark	0	-507,0
+base	NumberSeven.mark	0	-459,0
+base	NumberEight.mark	0	-580,0
+base	NumberNine.mark	0	-386,0
+base	NumberTen.alt.mark	0	-349,0
+base	NumberTwenty.mark	0	-479,0
+base	NumberThirty.mark	0	-493,0
+base	NumberForty.mark	0	-444,0
+base	NumberFifty.mark	0	-479,0
+base	NumberSixty.mark	0	-595,0
+base	NumberSeventy.mark	0	-452,0
+base	NumberEighty.mark	0	-439,0
+base	NumberNinety.mark	0	-528,0
+
+lookup end
+
+
+lookup	26	mark to mark
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+mark	AA_vwl	2	0,388
+mark	U_vwl	0	-90,0
+mark	U_vwl.alt	0	-85,10
+mark	UU_vwl	0	-90,-5
+mark	UU_vwl.alt	0	-115,0
+mark	VocR	1	-75,0
+mark	VocRR	1	-75,0
+base	VocR	0	-230,-220
+base	VocRR	0	-315,-260
+base	VocR.wide	0	-245,-220
+base	VocRR.wide	0	-315,-260
+base	Pa.blw	0	-150,-151
+base	Pa.blw	1	-45,-235
+base	Ya.blw	0	-286,-229
+base	Repha	2	140,580
+
+lookup end
+
+
+lookup	27	pair
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+left x placement	Kha	VocR	160
+left x advance	Kha	VocR	160
+left x placement	Kha	VocRR	160
+left x advance	Kha	VocRR	160
+left x placement	Gha	VocR	140
+left x advance	Gha	VocR	140
+left x placement	Gha	VocRR	140
+left x advance	Gha	VocRR	140
+left x placement	Gha	VocR.wide	160
+left x advance	Gha	VocR.wide	160
+left x placement	Gha	VocRR.wide	180
+left x advance	Gha	VocRR.wide	180
+left x placement	Nga	VocR	140
+left x advance	Nga	VocR	140
+left x placement	Nga	VocRR	140
+left x advance	Nga	VocRR	140
+left x placement	Nga	VocR.wide	160
+left x advance	Nga	VocR.wide	160
+left x placement	Nga	VocRR.wide	180
+left x advance	Nga	VocRR.wide	180
+left x placement	Ca	VocR	160
+left x advance	Ca	VocR	160
+left x placement	Ca	VocRR	190
+left x advance	Ca	VocRR	190
+left x placement	Cha	VocR	160
+left x advance	Cha	VocR	160
+left x placement	Cha	VocRR	190
+left x advance	Cha	VocRR	190
+left x placement	Ja	VocRR	140
+left x advance	Ja	VocRR	140
+left x placement	Ja	VocR.wide	160
+left x advance	Ja	VocR.wide	160
+left x placement	Ja	VocRR.wide	180
+left x advance	Ja	VocRR.wide	180
+left x placement	Jha	VocR	160
+left x advance	Jha	VocR	160
+left x placement	Jha	VocRR	160
+left x advance	Jha	VocRR	160
+left x placement	Nya	VocR	140
+left x advance	Nya	VocR	140
+left x placement	Nya	VocRR	140
+left x advance	Nya	VocRR	140
+left x placement	Nya	VocR.wide	160
+left x advance	Nya	VocR.wide	160
+left x placement	Nya	VocRR.wide	180
+left x advance	Nya	VocRR.wide	180
+left x placement	Tta	VocR	140
+left x advance	Tta	VocR	140
+left x placement	Tta	VocRR	140
+left x advance	Tta	VocRR	140
+left x placement	Tta	VocR.wide	160
+left x advance	Tta	VocR.wide	160
+left x placement	Tta	VocRR.wide	180
+left x advance	Tta	VocRR.wide	180
+left x placement	Ttha	VocR	160
+left x advance	Ttha	VocR	160
+left x placement	Ttha	VocRR	160
+left x advance	Ttha	VocRR	160
+left x placement	Dda	VocR	160
+left x advance	Dda	VocR	160
+left x placement	Dda	VocRR	160
+left x advance	Dda	VocRR	160
+left x placement	Ddha	VocR	160
+left x advance	Ddha	VocR	160
+left x placement	Ddha	VocRR	160
+left x advance	Ddha	VocRR	160
+left x placement	Nna	VocR	140
+left x advance	Nna	VocR	140
+left x placement	Nna	VocRR	140
+left x advance	Nna	VocRR	140
+left x placement	Nna	VocR.wide	160
+left x advance	Nna	VocR.wide	160
+left x placement	Nna	VocRR.wide	180
+left x advance	Nna	VocRR.wide	180
+left x placement	Ta	VocRR	220
+left x advance	Ta	VocRR	220
+left x placement	Tha	VocR	160
+left x advance	Tha	VocR	160
+left x placement	Tha	VocRR	160
+left x advance	Tha	VocRR	160
+left x placement	Da	VocRR	160
+left x advance	Da	VocRR	160
+left x placement	Dha	VocR	160
+left x advance	Dha	VocR	160
+left x placement	Dha	VocRR	160
+left x advance	Dha	VocRR	160
+left x placement	Pa	VocRR	140
+left x advance	Pa	VocRR	140
+left x placement	Pa	VocR.wide	160
+left x advance	Pa	VocR.wide	160
+left x placement	Pa	VocRR.wide	180
+left x advance	Pa	VocRR.wide	180
+left x placement	Pha	VocR	140
+left x advance	Pha	VocR	140
+left x placement	Pha	VocRR	140
+left x advance	Pha	VocRR	140
+left x placement	Pha	VocR.wide	160
+left x advance	Pha	VocR.wide	160
+left x placement	Pha	VocRR.wide	180
+left x advance	Pha	VocRR.wide	180
+left x placement	Ba	VocR	140
+left x advance	Ba	VocR	140
+left x placement	Ba	VocRR	140
+left x advance	Ba	VocRR	140
+left x placement	Ba	VocR.wide	160
+left x advance	Ba	VocR.wide	160
+left x placement	Ba	VocRR.wide	180
+left x advance	Ba	VocRR.wide	180
+left x placement	Bha	VocRR	160
+left x advance	Bha	VocRR	160
+left x placement	Ma	VocRR	160
+left x advance	Ma	VocRR	160
+left x placement	Ya	VocR	140
+left x advance	Ya	VocR	140
+left x placement	Ya	VocRR	140
+left x advance	Ya	VocRR	140
+left x placement	Ya	VocR.wide	160
+left x advance	Ya	VocR.wide	160
+left x placement	Ya	VocRR.wide	180
+left x advance	Ya	VocRR.wide	180
+left x placement	Ra	VocRR	160
+left x advance	Ra	VocRR	160
+left x placement	La	VocR	160
+left x advance	La	VocR	160
+left x placement	La	VocRR	160
+left x advance	La	VocRR	160
+left x placement	Va	VocRR	160
+left x advance	Va	VocRR	160
+left x placement	Sha	VocRR	160
+left x advance	Sha	VocRR	160
+left x placement	Ssa	VocR	160
+left x advance	Ssa	VocR	160
+left x placement	Ssa	VocRR	160
+left x advance	Ssa	VocRR	160
+left x placement	Sa	VocRR	140
+left x advance	Sa	VocRR	140
+left x placement	Sa	VocR.wide	160
+left x advance	Sa	VocR.wide	160
+left x placement	Sa	VocRR.wide	180
+left x advance	Sa	VocRR.wide	180
+left x placement	Ha	VocRR	140
+left x advance	Ha	VocRR	140
+left x placement	Ha	VocR.wide	160
+left x advance	Ha	VocR.wide	160
+left x placement	Ha	VocRR.wide	180
+left x advance	Ha	VocRR.wide	180
+left x placement	Khaa	VocR	160
+left x advance	Khaa	VocR	160
+left x placement	Khaa	VocRR	160
+left x advance	Khaa	VocRR	160
+left x placement	Kssa	VocR	160
+left x advance	Kssa	VocR	160
+left x placement	Kssa	VocRR	160
+left x advance	Kssa	VocRR	160
+left x placement	Gna	VocR	160
+left x advance	Gna	VocR	160
+left x placement	Gna	VocRR	160
+left x advance	Gna	VocRR	160
+left x placement	Ngga	VocR	160
+left x advance	Ngga	VocR	160
+left x placement	Ngga	VocRR	160
+left x advance	Ngga	VocRR	160
+left x placement	Ngsha	VocR	160
+left x advance	Ngsha	VocR	160
+left x placement	Ngsha	VocRR	160
+left x advance	Ngsha	VocRR	160
+left x placement	Cca	VocR	160
+left x advance	Cca	VocR	160
+left x placement	Cca	VocRR	160
+left x advance	Cca	VocRR	160
+left x placement	Jnya	VocR	160
+left x advance	Jnya	VocR	160
+left x placement	Jnya	VocRR	160
+left x advance	Jnya	VocRR	160
+left x placement	Nndda	VocR	160
+left x advance	Nndda	VocR	160
+left x placement	Nndda	VocRR	160
+left x advance	Nndda	VocRR	160
+left x placement	Nnnna	VocR	160
+left x advance	Nnnna	VocR	160
+left x placement	Nnnna	VocRR	160
+left x advance	Nnnna	VocRR	160
+left x placement	Tka	VocR	160
+left x advance	Tka	VocR	160
+left x placement	Tka	VocRR	160
+left x advance	Tka	VocRR	160
+left x placement	Tata	VocR	160
+left x advance	Tata	VocR	160
+left x placement	Tata	VocRR	160
+left x advance	Tata	VocRR	160
+left x placement	Tpa	VocR	160
+left x advance	Tpa	VocR	160
+left x placement	Tpa	VocRR	160
+left x advance	Tpa	VocRR	160
+left x placement	Dada	VocR	160
+left x advance	Dada	VocR	160
+left x placement	Dada	VocRR	160
+left x advance	Dada	VocRR	160
+left x placement	Dadha	VocR	160
+left x advance	Dadha	VocR	160
+left x placement	Dadha	VocRR	160
+left x advance	Dadha	VocRR	160
+left x placement	Ntha	VocR	160
+left x advance	Ntha	VocR	160
+left x placement	Ntha	VocRR	160
+left x advance	Ntha	VocRR	160
+left x placement	Ndha	VocR	160
+left x advance	Ndha	VocR	160
+left x placement	Ndha	VocRR	160
+left x advance	Ndha	VocRR	160
+left x placement	Nana	VocR	160
+left x advance	Nana	VocR	160
+left x placement	Nana	VocRR	160
+left x advance	Nana	VocRR	160
+left x placement	Bdha	VocR	160
+left x advance	Bdha	VocR	160
+left x placement	Bdha	VocRR	160
+left x advance	Bdha	VocRR	160
+left x placement	Sska	VocR	160
+left x advance	Sska	VocR	160
+left x placement	Sska	VocRR	160
+left x advance	Sska	VocRR	160
+left x placement	Sstta	VocR	160
+left x advance	Sstta	VocR	160
+left x placement	Sstta	VocRR	160
+left x advance	Sstta	VocRR	160
+left x placement	Hna	VocR	160
+left x advance	Hna	VocR	160
+left x placement	Hna	VocRR	160
+left x advance	Hna	VocRR	160
+left x placement	Hma	VocR	160
+left x advance	Hma	VocR	160
+left x placement	Hma	VocRR	160
+left x advance	Hma	VocRR	160
+
+lookup end
+
