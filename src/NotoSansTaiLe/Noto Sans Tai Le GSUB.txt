@@ -1,0 +1,91 @@
+FontDame GSUB table
+
+
+script table begin
+tale	default		0
+script table end
+
+
+feature table begin
+0	ccmp	0, 1
+
+feature table end
+
+lookup	0	chained
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+inputcoverage definition begin
+uni196C
+coverage definition end
+
+lookaheadcoverage definition begin
+uni0300
+uni0301
+uni0307
+uni0308
+uni030C
+coverage definition end
+
+coverage	1,2
+lookup end
+
+
+lookup	1	chained
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+backtrackcoverage definition begin
+uni1963
+uni1964
+uni1965
+uni1966
+uni196A
+uni196B
+coverage definition end
+
+inputcoverage definition begin
+uni0300
+uni0301
+uni0307
+uni0308
+uni030C
+coverage definition end
+
+coverage	1,3
+lookup end
+
+
+lookup	2	single
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+uni196C	uni196C.wide
+
+lookup end
+
+
+lookup	3	single
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+uni0300	uni0300.space
+uni0301	uni0301.space
+uni0307	uni0307.space
+uni0308	uni0308.space
+uni030C	uni030C.space
+
+lookup end
+
