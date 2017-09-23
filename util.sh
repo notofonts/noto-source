@@ -32,16 +32,21 @@ function build_glyphs() {
 function build_plist() {
     glyphs="$(glyphs_from_plist "$1")"
     family="$(family_from_plist "$1")"
+    instances="$(instances_from_plist "$1")"
     if [[ -n "$family" ]]; then
-        fontmake -g "$glyphs" -o "${@:2}" --mti-source "$1"\
+        fontmake $instances -g "$glyphs" -o "${@:2}" --mti-source "$1"\
             --no-production-names --family-name "$family"
-        fontmake -g "$glyphs" -o "${@:2}" -i --interpolate-binary-layout\
-            --no-production-names --family-name "$family"
+        if [[ -z $instances ]]; then
+            fontmake -g "$glyphs" -o "${@:2}" -i --interpolate-binary-layout\
+                --no-production-names --family-name "$family"
+        fi
     else
-        fontmake -g "$glyphs" -o "${@:2}" --mti-source "$1"\
+        fontmake $instances -g "$glyphs" -o "${@:2}" --mti-source "$1"\
             --no-production-names
-        fontmake -g "$glyphs" -o "${@:2}" -i --interpolate-binary-layout\
-            --no-production-names
+        if [[ -z $instances ]]; then
+            fontmake -g "$glyphs" -o "${@:2}" -i --interpolate-binary-layout\
+                --no-production-names
+        fi
     fi
 }
 
@@ -119,4 +124,15 @@ function family_from_plist() {
             echo ''
             ;;
     esac
+}
+
+function instances_from_plist() {
+    case "$1" in
+        */NotoSerifKannada-MM.plist)
+            echo '-i'
+            ;;
+        *)
+            echo ''
+            ;;
+     esac
 }
