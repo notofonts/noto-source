@@ -2,24 +2,22 @@ FontDame GSUB table
 
 
 script table begin
-bng2	default		3
-cakm	default		0, 1, 2, 5, 6, 7, 8, 9, 10
-mym2	default		4
+bng2	default		0, 1, 2, 3, 4, 5, 6, 7, 8
+cakm	default		0, 1, 2, 3, 4, 5, 6, 7, 8
+mym2	default		0, 1, 2, 3, 4, 5, 6, 7, 8
 script table end
 
 
 feature table begin
 0	abvs	12, 10, 11, 13
 1	blwf	0
-2	blws	6, 7, 8
-3	ccmp	16
-4	ccmp	17
-5	liga	15
-6	pres	14
-7	pstf	1
-8	ss01	18
-9	ss02	19
-10	ss03	20
+2	blws	5, 6, 7, 8
+3	liga	15
+4	pres	14
+5	pstf	1
+6	ss01	16
+7	ss02	17
+8	ss03	18
 
 feature table end
 
@@ -101,8 +99,8 @@ IgnoreBaseGlyphs	no
 IgnoreLigatures	no
 IgnoreMarks	no
 
-uni11133uni11123	uni11133uni11123.alt2
-uni11133uni11126	uni11133uni11126.alt2
+uni11133uni11122	uni11133uni11122.curve
+uni11133uni11122uni11131	uni11133uni11122uni11131.curve
 
 lookup end
 
@@ -114,24 +112,12 @@ IgnoreBaseGlyphs	no
 IgnoreLigatures	no
 IgnoreMarks	no
 
-uni11133uni11122	uni11133uni11122.curve
-
-lookup end
-
-
-lookup	5	single
-
-RightToLeft	no
-IgnoreBaseGlyphs	no
-IgnoreLigatures	no
-IgnoreMarks	no
-
 uni1112A	uni1112A.alt
 
 lookup end
 
 
-lookup	6	chained
+lookup	5	chained
 
 RightToLeft	no
 IgnoreBaseGlyphs	no
@@ -163,9 +149,10 @@ coverage definition end
 
 inputcoverage definition begin
 uni11133uni11122
+uni11133uni11122uni11131
 coverage definition end
 
-coverage	1,4
+coverage	1,3
 subtable end
 
 backtrackcoverage definition begin
@@ -179,7 +166,23 @@ inputcoverage definition begin
 uni1112A
 coverage definition end
 
-coverage	1,5
+coverage	1,4
+lookup end
+
+
+lookup	6	ligature
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+MarkAttachmentType	1
+
+uni11133uni11122uni11131	uni11133uni11122	uni11131
+uni11133uni11122uni1112A	uni11133uni11122.curve	uni1112A
+uni11133uni11122uni1112B.curve	uni11133uni11122.curve	uni1112B
+uni11133uni11122uni11131.curve	uni11133uni11122.curve	uni11131
+
 lookup end
 
 
@@ -189,10 +192,14 @@ RightToLeft	no
 IgnoreBaseGlyphs	no
 IgnoreLigatures	no
 IgnoreMarks	no
+MarkAttachmentType	2
 
+uni11133uni11103uni11120	uni11133uni11103	uni11133uni11120
+uni11133uni11104uni11120	uni11133uni11104	uni11133uni11120
 uni11133uni11106uni11120	uni11133uni11106	uni11133uni11120
-uni11133uni11122uni1112A	uni11133uni11122.curve	uni1112A
-uni11133uni11122uni1112B.curve	uni11133uni11122.curve	uni1112B
+uni11133uni11103uni11120	uni11133uni11120	uni11133uni11103
+uni11133uni11104uni11120	uni11133uni11120	uni11133uni11104
+uni11133uni11106uni11120	uni11133uni11120	uni11133uni11106
 
 lookup end
 
@@ -205,19 +212,6 @@ IgnoreLigatures	no
 IgnoreMarks	no
 
 backtrackclass definition begin
-uni11103	1
-uni11107	1
-uni1110A	1
-uni11115	1
-uni11116	1
-uni11117	1
-uni1111A	1
-uni1111E	1
-uni1111F	1
-uni11122	1
-uni11123	1
-uni11125	1
-uni11126	1
 uni11104	2
 uni11105	2
 uni11106	2
@@ -267,12 +261,7 @@ uni11127	4
 uni11134	4
 class definition end
 
-class-chain	1	2	4, 3	1, 2
-class-chain	1	2	3, 4	1, 2
-class-chain	1	2	3	1, 2
-class-chain	2	2	4, 3	1, 3
-class-chain	2	2	3, 4	1, 3
-class-chain	2	2	3	1, 3
+class-chain	2	2		1, 2
 
 lookup end
 
@@ -358,19 +347,37 @@ IgnoreLigatures	no
 IgnoreMarks	no
 
 uni11100uni11102	uni11100	uni11102
+uni11100uni11128	uni11100	uni11128
+uni11100uni11129	uni11100	uni11129
 uni11101uni11100	uni11101	uni11100
 uni11101uni11128	uni11101	uni11128
 uni11101uni11129	uni11101	uni11129
 uni11100uni11102	uni11102	uni11100
 uni11102uni11128	uni11102	uni11128
 uni11102uni11129	uni11102	uni11129
+uni11100uni11128uni11127	uni11127	uni11128	uni11100
+uni11101uni11128uni11127	uni11127	uni11128	uni11101
+uni11102uni11128uni11127	uni11127	uni11128	uni11102
+uni11134uni11128uni11127	uni11127	uni11128	uni11134
+uni11100uni11129uni11127	uni11127	uni11129	uni11100
+uni11101uni11129uni11127	uni11127	uni11129	uni11101
+uni11102uni11129uni11127	uni11127	uni11129	uni11102
+uni11134uni11129uni11127	uni11127	uni11129	uni11134
 uni11100uni11128	uni11128	uni11100
 uni11101uni11128	uni11128	uni11101
 uni11102uni11128	uni11128	uni11102
+uni11100uni11128uni11127	uni11128	uni11127	uni11100
+uni11101uni11128uni11127	uni11128	uni11127	uni11101
+uni11102uni11128uni11127	uni11128	uni11127	uni11102
+uni11134uni11128uni11127	uni11128	uni11127	uni11134
 uni11134uni11128	uni11128	uni11134
 uni11100uni11129	uni11129	uni11100
 uni11101uni11129	uni11129	uni11101
 uni11102uni11129	uni11129	uni11102
+uni11100uni11129uni11127	uni11129	uni11127	uni11100
+uni11101uni11129uni11127	uni11129	uni11127	uni11101
+uni11102uni11129uni11127	uni11129	uni11127	uni11102
+uni11134uni11129uni11127	uni11129	uni11127	uni11134
 uni11134uni11129	uni11129	uni11134
 uni1112Duni11100	uni1112D	uni11100
 uni1112Duni11134	uni1112D	uni11134
@@ -446,48 +453,6 @@ IgnoreBaseGlyphs	no
 IgnoreLigatures	no
 IgnoreMarks	no
 
-uni11136	uni09E6
-uni11137	uni09E7
-uni11138	uni09E8
-uni11139	uni09E9
-uni1113A	uni09EA
-uni1113B	uni09EB
-uni1113C	uni09EC
-uni1113D	uni09ED
-uni1113E	uni09EE
-uni1113F	uni09EF
-
-lookup end
-
-
-lookup	17	single
-
-RightToLeft	no
-IgnoreBaseGlyphs	no
-IgnoreLigatures	no
-IgnoreMarks	no
-
-uni11136	uni1040
-uni11137	uni1041
-uni11138	uni1042
-uni11139	uni1043
-uni1113A	uni1044
-uni1113B	uni1045
-uni1113C	uni1046
-uni1113D	uni1047
-uni1113E	uni1048
-uni1113F	uni1049
-
-lookup end
-
-
-lookup	18	single
-
-RightToLeft	no
-IgnoreBaseGlyphs	no
-IgnoreLigatures	no
-IgnoreMarks	no
-
 uni1110A	uni1110A.alt
 uni1110D	uni1110D.alt
 uni1110E	uni1110E.alt
@@ -501,7 +466,7 @@ uni11140	uni11140.alt
 lookup end
 
 
-lookup	19	single
+lookup	17	single
 
 RightToLeft	no
 IgnoreBaseGlyphs	no
@@ -522,7 +487,7 @@ uni11140	uni11140.alt
 lookup end
 
 
-lookup	20	single
+lookup	18	single
 
 RightToLeft	no
 IgnoreBaseGlyphs	no
