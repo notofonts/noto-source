@@ -1,0 +1,176 @@
+FontDame GSUB table
+
+
+script table begin
+lepc	default		0, 1
+script table end
+
+
+feature table begin
+0	abvs	2, 3
+1	ccmp	0, 1
+
+feature table end
+
+lookup	0	ligature
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+MarkAttachmentType	3
+
+uni1C23_1C24	uni1C23	uni1C24
+uni1C13_1C25_1C24	uni1C13	uni1C25	uni1C24
+uni1C13_1C25	uni1C13	uni1C25
+uni1C13_1C24	uni1C13	uni1C24
+uni1C14_1C24	uni1C14	uni1C24
+uni1C0C_1C24	uni1C0C	uni1C24
+uni1C11_1C25_1C24	uni1C11	uni1C25	uni1C24
+uni1C11_1C25	uni1C11	uni1C25
+uni1C11_1C24	uni1C11	uni1C24
+uni1C12_1C24	uni1C12	uni1C24
+uni1C03_1C25_1C24	uni1C03	uni1C25	uni1C24
+uni1C03_1C25	uni1C03	uni1C25
+uni1C03_1C24	uni1C03	uni1C24
+uni1C04_1C24	uni1C04	uni1C24
+uni1C1D_1C25_1C24	uni1C1D	uni1C25	uni1C24
+uni1C1D_1C25	uni1C1D	uni1C25
+uni1C1D_1C24	uni1C1D	uni1C24
+uni1C1E_1C24	uni1C1E	uni1C24
+uni1C08_1C24	uni1C08	uni1C24
+uni1C00_1C25_1C24	uni1C00	uni1C25	uni1C24
+uni1C00_1C25	uni1C00	uni1C25
+uni1C00_1C24	uni1C00	uni1C24
+uni1C02_1C25	uni1C02	uni1C25
+uni1C02_1C24	uni1C02	uni1C24
+uni1C01_1C24	uni1C01	uni1C24
+uni1C1C_1C24	uni1C1C	uni1C24
+uni1C15_1C25_1C24	uni1C15	uni1C25	uni1C24
+uni1C15_1C25	uni1C15	uni1C25
+uni1C15_1C24	uni1C15	uni1C24
+uni1C16_1C24	uni1C16	uni1C24
+uni1C05_1C25_1C24	uni1C05	uni1C25	uni1C24
+uni1C05_1C25	uni1C05	uni1C25
+uni1C05_1C24	uni1C05	uni1C24
+uni1C0E_1C25_1C24	uni1C0E	uni1C25	uni1C24
+uni1C0E_1C25	uni1C0E	uni1C25
+uni1C0E_1C24	uni1C0E	uni1C24
+uni1C10_1C24	uni1C10	uni1C24
+uni1C0F_1C24	uni1C0F	uni1C24
+uni1C1B_1C24	uni1C1B	uni1C24
+uni1C21_1C24	uni1C21	uni1C24
+uni1C0A_1C24	uni1C0A	uni1C24
+uni1C0B_1C24	uni1C0B	uni1C24
+uni1C1F_1C24	uni1C1F	uni1C24
+uni1C25_1C24	uni1C25	uni1C24
+
+lookup end
+
+
+lookup	1	ligature
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+uni1C2D_1C36	uni1C2D	uni1C36
+uni1C2F_1C36	uni1C2F	uni1C36
+uni1C2E_1C36	uni1C2E	uni1C36
+uni1C30_1C36	uni1C30	uni1C36
+uni1C31_1C36	uni1C31	uni1C36
+uni1C32_1C36	uni1C32	uni1C36
+uni1C33_1C36	uni1C33	uni1C36
+uni1C2D_1C36	uni1C36	uni1C2D
+uni1C2F_1C36	uni1C36	uni1C2F
+uni1C2E_1C36	uni1C36	uni1C2E
+uni1C30_1C36	uni1C36	uni1C30
+uni1C31_1C36	uni1C36	uni1C31
+uni1C32_1C36	uni1C36	uni1C32
+uni1C33_1C36	uni1C36	uni1C33
+
+lookup end
+
+
+lookup	2	single
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+uni1C25	uni1C25.alt
+uni1C24	uni1C24.alt
+uni1C26	uni1C26.alt
+uni1C2A	uni1C2A.alt
+uni1C2B	uni1C2B.alt
+
+lookup end
+
+
+lookup	3	context
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	yes
+
+class definition begin
+uni1C14	1
+uni1C14_1C24	1
+uni1C12	1
+uni1C12_1C24	1
+uni1C03	1
+uni1C03_1C25	1
+uni1C03_1C25_1C24	1
+uni1C03_1C24	1
+uni1C04	1
+uni1C04_1C24	1
+uni1C1C	1
+uni1C1C_1C24	1
+uni1C20	1
+uni1C18	1
+uni1C22	1
+uni1C01	2
+uni1C05	2
+uni1C05_1C25	2
+uni1C05_1C25_1C24	2
+uni1C05_1C24	2
+uni1C1B	2
+uni1C1B_1C24	2
+uni1C4D	2
+uni1C4E	2
+uni1C1A	2
+uni1C29	3
+class definition end
+
+class	3, 1	1, 4
+class	3, 2	1, 5
+
+lookup end
+
+
+lookup	4	single
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+uni1C29	uni1C29.wide
+
+lookup end
+
+
+lookup	5	single
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+uni1C29	uni1C29.short
+
+lookup end
+

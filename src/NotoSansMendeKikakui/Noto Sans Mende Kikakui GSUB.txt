@@ -1,0 +1,65 @@
+FontDame GSUB table
+
+
+script table begin
+mend	default		0
+script table end
+
+
+feature table begin
+0	ccmp	0
+
+feature table end
+
+lookup	0	chained
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+inputcoverage definition begin
+u1E8C7
+u1E8C8
+u1E8C9
+u1E8CA
+u1E8CB
+u1E8CC
+u1E8CD
+u1E8CE
+u1E8CF
+coverage definition end
+
+lookaheadcoverage definition begin
+u1E8D0
+u1E8D1
+u1E8D2
+u1E8D3
+u1E8D4
+u1E8D5
+u1E8D6
+coverage definition end
+
+coverage	1,1
+lookup end
+
+
+lookup	1	single
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+u1E8C7	u1E8C7.alt
+u1E8C8	u1E8C8.alt
+u1E8C9	u1E8C9.alt
+u1E8CA	u1E8CA.alt
+u1E8CB	u1E8CB.alt
+u1E8CC	u1E8CC.alt
+u1E8CD	u1E8CD.alt
+u1E8CE	u1E8CE.alt
+u1E8CF	u1E8CF.alt
+
+lookup end
+
