@@ -1,0 +1,364 @@
+FontDame GSUB table
+
+
+script table begin
+bali	default		0, 1, 2
+script table end
+
+
+feature table begin
+0	blwf	2
+1	ccmp	0
+2	liga	3, 4, 5, 6, 9, 10, 1
+
+feature table end
+
+lookup	0	multiple
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+uni1B3B	uni1B3A	uni1B35
+uni1B3C	uni1B3C.blw	uni1B42
+uni1B3D	uni1B3C.blw	uni1B42	uni1B35
+uni1B40	uni1B3E	uni1B35
+uni1B41	uni1B3F	uni1B35
+uni1B43	uni1B42	uni1B35
+
+lookup end
+
+
+lookup	1	ligature
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+MarkAttachmentType	3
+
+uni1B131B35	uni1B13	uni1B35
+uni1B161B35	uni1B16	uni1B35
+uni1B181B35	uni1B18	uni1B35
+uni1B221B35	uni1B22	uni1B35
+uni1B241B35	uni1B24	uni1B35
+uni1B261B35	uni1B26	uni1B35
+uni1B271B35	uni1B27	uni1B35
+uni1B2B1B35	uni1B2B	uni1B35
+uni1B2C1B35	uni1B2C	uni1B35
+uni1B2D1B35	uni1B2D	uni1B35
+uni1B2E1B35	uni1B2E	uni1B35
+uni1B2F1B35	uni1B2F	uni1B35
+uni1B321B35	uni1B32	uni1B35
+uni1B331B35	uni1B33	uni1B35
+
+lookup end
+
+
+lookup	2	ligature
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+uni1B0B.sub	uni1B44	uni1B0B
+uni1B13.sub	uni1B44	uni1B13
+uni1B14.sub	uni1B44	uni1B14
+uni1B15.sub	uni1B44	uni1B15
+uni1B16.sub	uni1B44	uni1B16
+uni1B17.sub	uni1B44	uni1B17
+uni1B18.sub	uni1B44	uni1B18
+uni1B19.sub	uni1B44	uni1B19
+uni1B1A.sub	uni1B44	uni1B1A
+uni1B1B.sub	uni1B44	uni1B1B
+uni1B1C.sub	uni1B44	uni1B1C
+uni1B1D.sub	uni1B44	uni1B1D
+uni1B1E.sub	uni1B44	uni1B1E
+uni1B1F.sub	uni1B44	uni1B1F
+uni1B20.sub	uni1B44	uni1B20
+uni1B21.sub	uni1B44	uni1B21
+uni1B22.sub	uni1B44	uni1B22
+uni1B23.sub	uni1B44	uni1B23
+uni1B24.sub	uni1B44	uni1B24
+uni1B25.sub	uni1B44	uni1B25
+uni1B26.sub	uni1B44	uni1B26
+uni1B27.sub	uni1B44	uni1B27
+uni1B28.sub	uni1B44	uni1B28
+uni1B29.sub	uni1B44	uni1B29
+uni1B2A.sub	uni1B44	uni1B2A
+uni1B2B.sub	uni1B44	uni1B2B
+uni1B2C.sub	uni1B44	uni1B2C
+uni1B2D.sub	uni1B44	uni1B2D
+uni1B2E.sub	uni1B44	uni1B2E
+uni1B2F.sub	uni1B44	uni1B2F
+uni1B30.sub	uni1B44	uni1B30
+uni1B31.sub	uni1B44	uni1B31
+uni1B32.sub	uni1B44	uni1B32
+uni1B33.sub	uni1B44	uni1B33
+uni1B45.sub	uni1B44	uni1B45
+uni1B46.sub	uni1B44	uni1B46
+uni1B47.sub	uni1B44	uni1B47
+uni1B48.sub	uni1B44	uni1B48
+uni1B49.sub	uni1B44	uni1B49
+uni1B4A.sub	uni1B44	uni1B4A
+uni1B4B.sub	uni1B44	uni1B4B
+
+lookup end
+
+
+lookup	3	multiple
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+uni1B32.sub	uni1B38	uni1B27.sub
+uni1B4A.sub	uni1B38	uni1B48.sub
+
+lookup end
+
+
+lookup	4	chained
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+inputcoverage definition begin
+uni1B1B
+coverage definition end
+
+lookaheadcoverage definition begin
+uni1B13.sub
+uni1B14.sub
+uni1B15.sub
+uni1B16.sub
+uni1B17.sub
+uni1B18.sub
+uni1B19.sub
+uni1B1A.sub
+uni1B1B.sub
+uni1B1C.sub
+uni1B1D.sub
+uni1B1E.sub
+uni1B1F.sub
+uni1B20.sub
+uni1B21.sub
+uni1B22.sub
+uni1B23.sub
+uni1B24.sub
+uni1B25.sub
+uni1B26.sub
+uni1B29.sub
+uni1B2A.sub
+uni1B2B.sub
+uni1B2C.sub
+uni1B2D.sub
+uni1B2E.sub
+uni1B2F.sub
+uni1B30.sub
+uni1B33.sub
+uni1B45.sub
+uni1B46.sub
+uni1B47.sub
+uni1B49.sub
+uni1B4B.sub
+coverage definition end
+
+coverage	1,7
+lookup end
+
+
+lookup	5	chained
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+backtrackcoverage definition begin
+uni1B23.sub
+uni1B2D.sub
+uni1B2F.sub
+coverage definition end
+
+inputcoverage definition begin
+uni1B38
+uni1B39
+coverage definition end
+
+coverage	1,8
+lookup end
+
+
+lookup	6	ligature
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+uni1B16.sub.u	uni1B16.sub	uni1B38
+uni1B16.sub.uu	uni1B16.sub	uni1B39
+uni1B21.sub.u	uni1B21.sub	uni1B38
+uni1B21.sub.uu	uni1B21.sub	uni1B39
+uni1B26.sub.u	uni1B26.sub	uni1B38
+uni1B26.sub.uu	uni1B26.sub	uni1B39
+uni1B29.sub.u	uni1B29.sub	uni1B38
+uni1B29.sub.uu	uni1B29.sub	uni1B39
+uni1B2C.sub.u	uni1B2C.sub	uni1B38
+uni1B2C.sub.uu	uni1B2C.sub	uni1B39
+uni1B2E.sub.u	uni1B2E.sub	uni1B38
+uni1B2E.sub.uu	uni1B2E.sub	uni1B39
+
+lookup end
+
+
+lookup	7	single
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+uni1B1B	uni1B1B.alt
+
+lookup end
+
+
+lookup	8	single
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+uni1B38	uni1B38.alt
+uni1B39	uni1B39.alt
+
+lookup end
+
+
+lookup	9	ligature
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+uni1B361B021B42	uni1B02	uni1B36	uni1B42
+uni1B361B02	uni1B02	uni1B36
+uni1B371B02	uni1B02	uni1B37
+uni1B361B021B42	uni1B02	uni1B42	uni1B36
+uni1B421B02	uni1B02	uni1B42
+uni1B341B03	uni1B03	uni1B34
+uni1B361B03	uni1B03	uni1B36
+uni1B371B03	uni1B03	uni1B37
+uni1B421B03	uni1B03	uni1B42
+uni1B341B03	uni1B34	uni1B03
+uni1B341B42	uni1B34	uni1B42
+uni1B361B02	uni1B36	uni1B02
+uni1B361B03	uni1B36	uni1B03
+uni1B361B021B42	uni1B36	uni1B42	uni1B02
+uni1B361B42	uni1B36	uni1B42
+uni1B371B02	uni1B37	uni1B02
+uni1B371B03	uni1B37	uni1B03
+uni1B421B02	uni1B42	uni1B02
+uni1B421B03	uni1B42	uni1B03
+uni1B341B42	uni1B42	uni1B34
+uni1B361B021B42	uni1B42	uni1B36	uni1B02
+uni1B361B42	uni1B42	uni1B36
+
+lookup end
+
+
+lookup	10	chained
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+backtrackclass definition begin
+uni1B13.sub	1
+uni1B14.sub	1
+uni1B15.sub	1
+uni1B16.sub	1
+uni1B17.sub	1
+uni1B18.sub	1
+uni1B19.sub	1
+uni1B1A.sub	1
+uni1B1B.sub	1
+uni1B1C.sub	1
+uni1B1D.sub	1
+uni1B1E.sub	1
+uni1B1F.sub	1
+uni1B20.sub	1
+uni1B21.sub	1
+uni1B22.sub	1
+uni1B23.sub	1
+uni1B24.sub	1
+uni1B25.sub	1
+uni1B26.sub	1
+uni1B29.sub	1
+uni1B2A.sub	1
+uni1B2B.sub	1
+uni1B2C.sub	1
+uni1B2D.sub	1
+uni1B2E.sub	1
+uni1B2F.sub	1
+uni1B30.sub	1
+uni1B33.sub	1
+uni1B45.sub	1
+uni1B46.sub	1
+uni1B47.sub	1
+uni1B49.sub	1
+uni1B4B.sub	1
+class definition end
+
+class definition begin
+uni1B1B.sub	1
+uni1B2C.sub	1
+uni1B2D.sub	1
+uni1B2F.sub	1
+uni1B2C.sub.u	2
+uni1B2C.sub.uu	2
+class definition end
+
+class-chain	1	1		1, 11
+class-chain	1	2		1, 12
+
+lookup end
+
+
+lookup	11	single
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+uni1B1B.sub	uni1B1B.sub.alt
+uni1B2C.sub	uni1B2C.sub.alt
+uni1B2D.sub	uni1B2D.sub.alt
+uni1B2F.sub	uni1B2F.sub.alt
+
+lookup end
+
+
+lookup	12	single
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+uni1B2C.sub.u	uni1B2C.sub.u.alt
+uni1B2C.sub.uu	uni1B2C.sub.uu.alt
+
+lookup end
+
