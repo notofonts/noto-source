@@ -1,0 +1,82 @@
+FontDame GSUB table
+
+
+script table begin
+merc	default		0
+script table end
+
+
+feature table begin
+0	ccmp	0, 1
+
+feature table end
+
+lookup	0	chained
+
+RightToLeft	yes
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+backtrackcoverage definition begin
+u109A7
+u109A8
+u109AA
+u109AB
+u109AE
+u109AF
+u109B0
+u109B2
+u109B7
+coverage definition end
+
+inputcoverage definition begin
+u109A2
+coverage definition end
+
+coverage	1,2
+lookup end
+
+
+lookup	1	chained
+
+RightToLeft	yes
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+backtrackcoverage definition begin
+u109A4
+coverage definition end
+
+inputcoverage definition begin
+u109A2
+coverage definition end
+
+coverage	1,3
+lookup end
+
+
+lookup	2	single
+
+RightToLeft	yes
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+u109A2	u109A2.alt1
+
+lookup end
+
+
+lookup	3	single
+
+RightToLeft	yes
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+u109A2	u109A2.alt2
+
+lookup end
+
