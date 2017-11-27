@@ -16,17 +16,17 @@
       <br> <br>
       Font rendering issues could have multiple symptoms:
       <ul>
-        <li>If you see a rectangle ("tofu") instead of a proper character then it means that the font on your device doesn't support a character required for this language. This situation should be noted (please make sure that you save the text that caused it somewhere) and brought up to the attention of the phone/device manufacturer.</li>
-        <li>A character is not recognizable as presented by the browser on some of the web pages. This situation should be noted (please make sure that you save the text that caused it somewhere) and brought up to the attention of the phone/device manufacturer.</li>
+        <li>If you see an empty rectangle similar to &#x25A1; ("tofu") instead of a proper character then it means that the font on your device doesn't support a character required for this language. This situation should be noted (please make sure that you save the text that caused it somewhere) and brought up to the attention of the phone/device manufacturer.</li>
+        <li>If you see a character not recognizable by a native reader as rendered by a browser on some of the web pages. This situation also should be noted (please make sure that you save the text that caused it somewhere) and brought up to the attention of the phone/device manufacturer.</li>
       </ul>
       <br> The table below has the following columns and related test possibilities:
       <ul>
       <li><b>Language</b>: identifies the language. If there's a wikipedia entry in a variant of this language then you'll see a link there. Please check if the web page is readable that you see is readable. Please make a note of any text that's not readable.</li>
-      <li><b>ICA Requirements</b>: is a set of characters identified by the Indian Cellular Association (ICA) as required to support a given language by a given script. Any "tofu" there needs to be reported. Same if any of the characters are incorrect.</li>
-      <li><b>GSUB Tests</b>: is a limited set of tests using character combinations that compose (SUBstitue to) a new character. Any "tofu" there needs to be reported. Same if any of the characters are incorrect.</li>
+      <li><b>ICA Requirements</b>: is a set of characters identified by the Indian Cellular Association (ICA) as required to support a given language by a given script. Any "tofu" there needs to be reported. Same if any of the characters are incorrect or unreadable.</li>
+      <li><b>GSUB Tests</b>: is a limited set of tests using character combinations that compose (SUBstitue to) a new character. Any "tofu" there needs to be reported. Same if any of the characters are incorrect or unreadable.</li>
       <li><b>UDHR or Other Sample</b>: UDHR stands for Universal Declaration of Human Rights. It is published by the Office of the United Nations High Commissioner for Human Rights (our copy comes from the UNICODE organization). UDHR is easily accessible sample text available for a language and script(font) combination. Please check the readability. </li>
       </ul>
-      The table below is incomplete. If you know better lists or know of more sample texts that we could use to test some languages below, please let us know by posting to <a href="https://groups.google.com/forum/#!newtopic/noto-font">Noto Font Group</a> with your suggestions. Also if you see how to improve this page, please let us also know there. <b>Thank YOU</b>
+      The table below is incomplete. The table below might also be incorrect. If you know better sample texts that we could use to test the languages below, please let us know by posting to <a href="https://groups.google.com/forum/#!newtopic/noto-font">Noto Font Group</a> with your suggestions. Also if you see how to improve this page, please let us also know there. <b>Thank YOU</b>
       </span>
     </p>
     <table style="width:100%">
@@ -103,19 +103,19 @@
         <td><a href="http://www.unicode.org/udhr/d/udhr_mal.html">UDHR in Malayalam</a></td>
       </tr>
       <tr>
-        <td>Manipuri</td>
+        <td><a href="https://bpy.wikipedia.org/wiki/%E0%A6%AA%E0%A6%AF%E0%A6%BC%E0%A6%B2%E0%A6%BE_%E0%A6%AA%E0%A6%BE%E0%A6%A4%E0%A6%BE">Manipuri in Wikipedia</a></td>
         <td><a href="http://htmlpreview.github.io/?https://github.com/googlei18n/noto-source/blob/master/test/Bengali/Manipuri-Bengali-ICA-coverage-template.html">ICA coverage in Manipuri-Bengali</a></td>
         <td><a href="http://htmlpreview.github.io/?https://github.com/googlei18n/noto-source/blob/master/test/Bengali/Bengali-small-GSUB.html">Limited GSUB Test for Manipuri-Bengali</a></td>
         <td>no UDHR for Manipuri</td>
       </tr>
       <tr>
-        <td>Marathi</td>
+        <td><a href="https://mr.wikipedia.org/wiki/%E0%A4%AE%E0%A5%81%E0%A4%96%E0%A4%AA%E0%A5%83%E0%A4%B7%E0%A5%8D%E0%A4%A0">Marathi in Wikipedia</a></td>
         <td><a href="http://htmlpreview.github.io/?https://github.com/googlei18n/noto-source/blob/master/test/Devanagari/Marathi-Devanagari-ICA-coverage-template.html">ICA coverage in Marathi-Devanagari</a></td>
         <td><a href="http://htmlpreview.github.io/?https://github.com/googlei18n/noto-source/blob/master/test/Devanagari/Devanagari-small-GSUB.html">Limited GSUB Test for Marathi-Devanagari</a></td>
         <td><a href="http://www.unicode.org/udhr/d/udhr_mar.html">UDHR in Marathi</a></td>
       </tr>
       <tr>
-        <td>Nepali</td>
+        <td><a href="https://ne.wikipedia.org/wiki/%E0%A4%AE%E0%A5%81%E0%A4%96%E0%A5%8D%E0%A4%AF_%E0%A4%AA%E0%A5%83%E0%A4%B7%E0%A5%8D%E0%A4%A0">Nepali in Wikipedia</a></td>
         <td><a href="http://htmlpreview.github.io/?https://github.com/googlei18n/noto-source/blob/master/test/Devanagari/Nepali-Devanagari-ICA-coverage-template.html">ICA coverage in Nepali-Devanagari</a></td>
         <td><a href="http://htmlpreview.github.io/?https://github.com/googlei18n/noto-source/blob/master/test/Devanagari/Devanagari-small-GSUB.html">Limited GSUB Test for Nepali-Devanagari</a></td>
         <td><a href="http://www.unicode.org/udhr/d/udhr_nep.html">UDHR in Nepali</a></td>
@@ -151,7 +151,7 @@
         <td>no UDHR for Santhali</td>
       </tr>
       <tr>
-        <td>Sindhi-in-Arabic</td>
+        <td><a href="https://sd.wikipedia.org/wiki/%D9%85%D9%8F%DA%A9_%D8%B5%D9%81%D8%AD%D9%88">Sindhi-in-Arabic in Wikipedia</a></td>
         <td>ica</td>
         <td>gsub</td>
         <td>no UDHR for Sindhi-in-Arabic</td>
@@ -175,7 +175,7 @@
         <td><a href="http://www.unicode.org/udhr/d/udhr_tel.html">UDHR in Telugu</a></td>
       </tr>
       <tr>
-        <td>Urdu</td>
+        <td><a href="https://ur.wikipedia.org/wiki/%D8%B5%D9%81%D8%AD%DB%82_%D8%A7%D9%88%D9%84">Urdu in Wikipedia</a></td>
         <td>ica</td>
         <td>gsub</td>
         <td><a href="http://www.unicode.org/udhr/d/udhr_urd.html">UDHR in Urdu</a></td>
