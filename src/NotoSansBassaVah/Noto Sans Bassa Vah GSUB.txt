@@ -1,0 +1,49 @@
+FontDame GSUB table
+
+
+script table begin
+bass	default		0
+script table end
+
+
+feature table begin
+0	ccmp	0
+
+feature table end
+
+lookup	0	chained
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+backtrackcoverage definition begin
+u16AE8
+u16AEB
+u16AED
+coverage definition end
+
+inputcoverage definition begin
+u16AF1
+u16AF2
+u16AF4
+coverage definition end
+
+coverage	1,1
+lookup end
+
+
+lookup	1	single
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+u16AF1	u16AF1.sm
+u16AF2	u16AF2.sm
+u16AF4	u16AF4.sm
+
+lookup end
+

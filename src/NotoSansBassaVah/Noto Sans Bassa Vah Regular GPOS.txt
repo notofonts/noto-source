@@ -1,0 +1,98 @@
+FontDame GPOS table
+
+EM	1000
+
+
+script table begin
+bass	default		0, 1
+script table end
+
+
+feature table begin
+0	kern	2
+1	mark	0, 1
+
+feature table end
+
+lookup	0	mark to base
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+mark	u16AF0	0	400,336
+mark	u16AF1	0	419,332
+mark	u16AF2	0	400,332
+mark	u16AF3	0	400,454
+mark	u16AF4	0	419,332
+base	uni25CC	0	300,290
+base	u16AE7	0	439,263
+base	u16AE8	0	397,229
+base	u16AE9	0	390,332
+base	u16AEA	0	693,341
+base	u16AEB	0	316,195
+base	u16AEC	0	617,332
+base	u16AED	0	307,219
+
+lookup end
+
+
+lookup	1	mark to base
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+mark	u16AF1.sm	0	273,234
+mark	u16AF2.sm	0	283,234
+mark	u16AF4.sm	0	273,234
+base	u16AE8	0	397,229
+base	u16AEB	0	316,195
+base	u16AED	0	307,219
+
+lookup end
+
+
+lookup	2	kernset
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	yes
+
+left x advance	u16AD2	u16AE5	-49
+left x advance	u16AD3	u16AE5	-39
+left x advance	u16ADB	u16AE5	-49
+left x advance	u16ADC	u16AE7	-24
+left x advance	u16ADE	u16AE5	-39
+left x advance	u16AE1	u16AE5	-59
+left x advance	u16AE2	u16AE5	-49
+left x advance	u16AE7	u16AE5	-29
+left x advance	u16AE8	u16AE5	-39
+left x advance	u16AE9	u16AE5	-29
+left x advance	u16AE9	u16AE7	-24
+left x advance	u16AEA	u16AE7	-24
+left x advance	u16AEB	u16AE5	-44
+
+subtable end
+
+firstclass definition begin
+u16AE6	1
+u16AE8	2
+u16AEB	3
+u16AE1	4
+class definition end
+
+secondclass definition begin
+u16AE7	1
+class definition end
+
+left x advance	1	1	-49
+left x advance	2	1	-44
+left x advance	3	1	-34
+left x advance	4	1	-29
+
+lookup end
+
