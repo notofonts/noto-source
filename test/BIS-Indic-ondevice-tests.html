@@ -9,18 +9,24 @@
     </style>
   </head>
   <body>
-    <h1>Indic Language and Script Tests</h1>
+    <h1>Indic Language and Script "On Device" Tests</h1>
     <p>
       <span style="font-weight:400">
-      Open this and and all the links on a device that you'd like to test your fonts on. <br> <br>
-      It is expected that these links and web pages will be explored and investigated by the native speakers/readers who will check how correct and readable are the characters or sample texts on the pages available here. However, even if you are not a native speaker/reader you can inspect the pages for a presence of an empty rectangle similar to &#x25A1; ("tofu") instead of a proper character. This most likely indicates a problem with the font on your device.<br> <br>
-      The fonts used by this browser to display these pages are the default fonts on the phone or the device you are using. If this is a standard Android device which wasn't modified by a phone manufacturer then this non-Latin font belongs to the Noto family (see <a href="https://www.google.com/get/noto/">get/noto</a> for more information).
-      <br> <br>
-      Font rendering issues could have multiple symptoms:
+      This page can be accessed at <a href="http://htmlpreview.github.io/?https://github.com/googlei18n/noto-source/blob/master/test/BIS-Indic-ondevice-tests.html">http://htmlpreview.github.io/?https://github.com/googlei18n/noto-source/blob/master/test/BIS-Indic-ondevice-tests.html</a><br><br>
+      Open this page and and all the language/script relevant links on a device that you'd like to test your fonts on. <br> <br>
+      Font rendering issues could have one of these two symptoms:
       <ul>
         <li>If you see an empty rectangle similar to &#x25A1; ("tofu") instead of a proper character then it means that the font on your device doesn't support a character required for this language. This situation should be noted (please make sure that you save the text that caused it somewhere) and brought up to the attention of the phone/device manufacturer or a font provider.</li>
         <li>If you see a character rendered by a browser not recognizable by a native reader on a the web page then this situation also should be noted (please make sure that you save the text that caused it somewhere) and brought up to the attention of the phone/device manufacturer or a font provider.</li>
       </ul>
+      Who can test what:
+      <ul>
+        <li>If you are not a native speaker/reader then you can inspect all the language/script relevant pages for a presence of an empty rectangle similar to &#x25A1; ("tofu") instead of a proper character (the first item in the above list). This most likely indicates a problem with the font on your device.</li>
+        <li>If you are a native speaker/reader then you can assess how correct and readable are the characters or sample texts on the web pages available here.</li>
+      </ul>
+      <br>
+      The fonts used by this browser to display these pages are the default fonts on the phone or the device you are using. If this is a standard Android device which wasn't modified by a phone manufacturer then this non-Latin font belongs to the Noto family (see <a href="https://www.google.com/get/noto/">get/noto</a> for more information).
+      <br> <br>
       <br> The table below has the following columns and related test possibilities:
       <ul>
       <li><b>IS 16350 Table</b>: This is the table of the characters required by <a href="http://164.100.105.199:8071/php/BIS/IndStndrdLocatr/ISDetails.php?ID=MjIxOTY%3D">IS 16350 Standard</a> for a given language in India. When open on a phone or a device the table will reflect the default fonts loaded on this device. Black boxes in the table indicate a character that wasn't required or doesn't exist in the IS 16350 standard. Please check if the web page is readable and please make sure that what you see is correctly rendered. Please make a note of any text that's not readable or incorrect.</li>
