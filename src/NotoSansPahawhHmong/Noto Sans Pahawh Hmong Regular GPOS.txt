@@ -1,0 +1,179 @@
+FontDame GPOS table
+
+EM	1000
+
+
+script table begin
+hmng	default		0, 1
+script table end
+
+
+feature table begin
+0	kern	2
+1	mark	0, 1
+
+feature table end
+
+lookup	0	mark to base
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+mark	u16B30	0	0,800
+mark	u16B31	0	0,800
+mark	u16B32	0	0,800
+mark	u16B33	0	0,800
+mark	u16B34	0	0,800
+mark	u16B35	0	0,800
+mark	u16B36	0	0,800
+base	uni25CC	0	297,625
+base	u16B00	0	340,800
+base	u16B01	0	320,800
+base	u16B02	0	280,800
+base	u16B03	0	392,800
+base	u16B04	0	341,800
+base	u16B05	0	355,800
+base	u16B06	0	411,800
+base	u16B07	0	320,800
+base	u16B08	0	362,800
+base	u16B09	0	340,800
+base	u16B0A	0	313,800
+base	u16B0B	0	383,800
+base	u16B0C	0	348,800
+base	u16B0E	0	299,800
+base	u16B0F	0	355,800
+base	u16B10	0	390,800
+base	u16B11	0	376,800
+base	u16B0D	0	376,800
+base	u16B12	0	380,800
+base	u16B13	0	404,800
+base	u16B14	0	355,800
+base	u16B15	0	305,800
+base	u16B16	0	320,800
+base	u16B17	0	292,800
+base	u16B18	0	278,800
+base	u16B19	0	360,800
+base	u16B1A	0	430,800
+base	u16B1B	0	411,800
+
+lookup end
+
+
+lookup	1	mark to base
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+mark	u16B30	0	0,800
+mark	u16B35	0	0,800
+base	uni25CC	0	297,625
+base	u16B1C	0	300,800
+base	u16B1D	0	300,800
+base	u16B1E	0	380,800
+base	u16B1F	0	377,800
+base	u16B20	0	279,800
+base	u16B21	0	335,800
+base	u16B22	0	321,800
+base	u16B23	0	320,800
+base	u16B24	0	375,800
+base	u16B25	0	320,800
+base	u16B26	0	300,800
+base	u16B27	0	360,800
+base	u16B28	0	307,800
+base	u16B29	0	390,800
+base	u16B2A	0	377,800
+base	u16B2B	0	335,800
+base	u16B2C	0	300,800
+base	u16B2D	0	300,800
+base	u16B2E	0	320,800
+base	u16B2F	0	320,800
+
+lookup end
+
+
+lookup	2	pair
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	yes
+
+left x advance	u16B6B	u16B6C	-80
+left x advance	u16B6F	u16B5F	-70
+left x advance	u16B6F	u16B6B	-90
+
+subtable end
+
+firstclass definition begin
+u16B02	1
+u16B15	1
+u16B2E	1
+u16B00	2
+u16B2F	2
+u16B5F	2
+u16B6C	3
+u16B6F	3
+u16B6B	4
+u16B76	5
+u16B17	6
+u16B1B	6
+u16B1F	6
+u16B24	6
+u16B26	6
+u16B2C	6
+u16B5C	6
+u16B87	6
+u16B8D	6
+u16B8E	6
+class definition end
+
+secondclass definition begin
+u16B02	1
+u16B15	1
+u16B2E	1
+u16B00	2
+u16B2F	2
+u16B5F	2
+u16B18	3
+u16B65	4
+u16B6B	5
+u16B73	6
+u16B8E	7
+u16B03	8
+u16B29	8
+u16B5C	8
+class definition end
+
+left x advance	1	2	-70
+left x advance	1	3	-40
+left x advance	1	4	-30
+left x advance	1	5	-70
+left x advance	1	6	-40
+left x advance	1	7	-50
+left x advance	2	1	-50
+left x advance	2	8	-50
+left x advance	3	5	-80
+left x advance	4	1	-70
+left x advance	5	1	-40
+left x advance	6	1	-50
+
+subtable end
+
+firstclass definition begin
+u16B61	1
+class definition end
+
+secondclass definition begin
+u16B02	1
+u16B15	1
+u16B2E	1
+class definition end
+
+left x advance	1	1	-30
+
+lookup end
+
