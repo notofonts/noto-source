@@ -29,8 +29,8 @@
       <br> <br>
       <br> The table below has the following columns and related test possibilities:
       <ul>
-      <li><b>IS 16350 Table</b>: This is the table of the characters required by <a href="http://164.100.105.199:8071/php/BIS/IndStndrdLocatr/ISDetails.php?ID=MjIxOTY%3D">IS 16350 Standard</a> for a given language in India. When open on a phone or a device the table will reflect the default fonts loaded on this device. Black boxes in the table indicate a character that wasn't required or doesn't exist in the IS 16350 standard. Please check if the web page is readable and please make sure that what you see is correctly rendered. Please make a note of any text that's not readable or incorrect.</li>
-      <li><b>IS 16333 (Part 3) Table</b>: Bengali, Devanagari, Gurmukhi and Oriya script have additional requirements for conjuncts. Please check if the web page is readable and please make sure that what you see is correctly rendered. In any given row of the table, all the non-English script characters in that row ought to be exactly the same. Please make a note of any text that's not readable or incorrect.</li>
+      <li><b>IS 16350 Table</b>: Passing correctness and readability for this table is <b>required</b> by Bureau of Indian Standards (BIS). This is the table of the characters required by <a href="http://164.100.105.199:8071/php/BIS/IndStndrdLocatr/ISDetails.php?ID=MjIxOTY%3D">IS 16350 Standard</a> for a given language in India. When open on a phone or a device the table will reflect the default fonts loaded on this device. Black boxes in the table indicate a character that wasn't required or doesn't exist in the IS 16350 standard. Please check if the web page is readable and please make sure that what you see is correctly rendered. Please make a note of any text that's not readable or incorrect.</li>
+      <li><b>IS 16333 (Part 3) Table</b>: Bengali, Devanagari, Gurmukhi and Oriya scripts have additional requirements for conjuncts. Passing correctness and readability for this table is <b>required</b> by BIS. Please check if the web page is readable and please make sure that what you see is correctly rendered. In any given row of the table, all the non-English script characters in that row ought to be exactly the same. Please make a note of any text that's not readable or incorrect.</li>
       <li><b>Language</b>: identifies the language. If there's a wikipedia entry in a variant of this language then you'll see a link there. Please check if the web page is readable and please make sure that what you see is correctly rendered. Please make a note of any text that's not readable or incorrect.</li>
       <li><b>ICA Requirements</b>: is a set of characters identified by the Indian Cellular Association (ICA) as required to support a given language by a given script. Any "tofu" there needs to be reported. Same if any of the characters are incorrect or unreadable.</li>
       <li><b>GSUB Tests</b>: is a limited set of tests using character combinations that compose (SUBstitue to) a new character. Any "tofu" there needs to be reported. Same if any of the characters are incorrect or unreadable.</li>
@@ -105,20 +105,20 @@
         <td><a href="http://www.unicode.org/udhr/d/udhr_kan.html">UDHR in Kannada</a></td>
       </tr>
       <tr>
-        <td><a href="http://htmlpreview.github.io/?https://github.com/googlei18n/noto-source/blob/master/test/Arabic/UNICODE-table-Arabic-script.html">Arabic Script IS 16350 Table</a></td>
+        <td><a href="http://htmlpreview.github.io/?https://github.com/googlei18n/noto-source/blob/master/test/Arabic/UNICODE-table-Arabic-script.html">Perso-Arabic Script IS 16350 Table</a></td>
         <td>no special requirements</td>
-        <td>Kashmiri in Arabic</td>
+        <td>Kashmiri (Perso-Arabic)</td>
         <td>ica</td>
         <td>gsub</td>
-        <td>no UDHR for Kashmiri</td>
+        <td>no UDHR for Kashmiri (Perso-Arabic)</td>
       </tr>
       <tr>
         <td><a href="http://htmlpreview.github.io/?https://github.com/googlei18n/noto-source/blob/master/test/Devanagari/UNICODE-table-Devanagari-script.html">Devanagari Script IS 16350 Table</a></td>
         <td><a href="http://htmlpreview.github.io/?https://github.com/googlei18n/noto-source/blob/master/test/Devanagari/ANNEX3-table-Devanagari-script.html">Devanagari Script IS 16333 (Part 3) Table</a></td>
-        <td>Kashmiri</td>
+        <td>Kashmiri (Devanagari)</td>
         <td><a href="http://htmlpreview.github.io/?https://github.com/googlei18n/noto-source/blob/master/test/Devanagari/Kashmiri-Devanagari-ICA-coverage-template.html">ICA coverage in Kashmiri-Devanagari</a></td>
         <td><a href="http://htmlpreview.github.io/?https://github.com/googlei18n/noto-source/blob/master/test/Devanagari/Devanagari-small-GSUB.html">Limited GSUB Test for Kashmiri-Devanagari</a></td>
-        <td>no UDHR for Kashmiri</td>
+        <td>no UDHR for Kashmiri (Devanagari)</td>
       </tr>
       <tr>
         <td><a href="http://htmlpreview.github.io/?https://github.com/googlei18n/noto-source/blob/master/test/Devanagari/UNICODE-table-Devanagari-script.html">Devanagari Script IS 16350 Table</a></td>
@@ -174,7 +174,7 @@
         <td><a href="https://or.wikipedia.org/wiki/%E0%AC%AA%E0%AD%8D%E0%AC%B0%E0%AC%A7%E0%AC%BE%E0%AC%A8_%E0%AC%AA%E0%AD%83%E0%AC%B7%E0%AD%8D%E0%AC%A0%E0%AC%BE">Odia in Wikipedia</a</td>
         <td><a href="http://htmlpreview.github.io/?https://github.com/googlei18n/noto-source/blob/master/test/Oriya/Odia-Oriya-ICA-coverage-template.html">ICA coverage in Odia-Oriya</a></td>
         <td><a href="http://htmlpreview.github.io/?https://github.com/googlei18n/noto-source/blob/master/test/Oriya/Oriya-small-GSUB.html">Limited GSUB Test for Odia-Oriya</a></td>
-        <td>no UDHR for Odia</td>
+        <td>no UDHR for Odia (Oriya)</td>
       </tr>
       <tr>
         <td><a href="http://htmlpreview.github.io/?https://github.com/googlei18n/noto-source/blob/master/test/Gurmukhi/UNICODE-table-Gurmukhi-script.html">Gurmukhi Script IS 16350 Table</a></td>
@@ -195,34 +195,34 @@
       <tr>
         <td><a href="http://htmlpreview.github.io/?https://github.com/googlei18n/noto-source/blob/master/test/OlChiki/UNICODE-table-OlChiki-script.html">OlChiki Script IS 16350 Table</a></td>
         <td>no special requirements</td>
-        <td>Santhali</td>
+        <td>Santhali (OlChiki)</td>
         <td><a href="http://htmlpreview.github.io/?https://github.com/googlei18n/noto-source/blob/master/test/OlChiki/Santali-OlChiki-ICA-coverage-template.html">ICA coverage in Santali-OlChiki</a></td>
         <td><a href="http://htmlpreview.github.io/?https://github.com/googlei18n/noto-source/blob/master/test/OlChiki/OlChiki-small-GSUB.html">Limited GSUB Test for Santali-OlChiki</a></td>
-        <td>no UDHR for Santhali</td>
+        <td>no UDHR for Santhali (OlChiki)</td>
       </tr>
       <tr>
         <td><a href="http://htmlpreview.github.io/?https://github.com/googlei18n/noto-source/blob/master/test/Devanagari/UNICODE-table-Devanagari-script.html">Devanagari Script IS 16350 Table</a></td>
         <td><a href="http://htmlpreview.github.io/?https://github.com/googlei18n/noto-source/blob/master/test/Devanagari/ANNEX3-table-Devanagari-script.html">Devanagari Script IS 16333 (Part 3) Table</a></td>
-        <td>Santhali (Deva)</td>
+        <td>Santhali (Devanagari)</td>
         <td><a href="http://htmlpreview.github.io/?https://github.com/googlei18n/noto-source/blob/master/test/Devanagari/Santali-Devanagari-ICA-coverage-template.html">ICA coverage in Santali-Devanagari</a></td>
         <td><a href="http://htmlpreview.github.io/?https://github.com/googlei18n/noto-source/blob/master/test/Devanagari/Devanagari-small-GSUB.html">Limited GSUB Test for Santali-Devanagari</a></td>
-        <td>no UDHR for Santhali</td>
+        <td>no UDHR for Santhali (Devanagari)</td>
       </tr>
       <tr>
-        <td><a href="http://htmlpreview.github.io/?https://github.com/googlei18n/noto-source/blob/master/test/Arabic/UNICODE-table-Arabic-script.html">Arabic Script IS 16350 Table</a></td>
+        <td><a href="http://htmlpreview.github.io/?https://github.com/googlei18n/noto-source/blob/master/test/Arabic/UNICODE-table-Arabic-script.html">Perso-Arabic Script IS 16350 Table</a></td>
         <td>no special requirements</td>
-        <td><a href="https://sd.wikipedia.org/wiki/%D9%85%D9%8F%DA%A9_%D8%B5%D9%81%D8%AD%D9%88">Sindhi-in-Arabic in Wikipedia</a></td>
+        <td><a href="https://sd.wikipedia.org/wiki/%D9%85%D9%8F%DA%A9_%D8%B5%D9%81%D8%AD%D9%88">Sindhi (Perso-Arabic) in Wikipedia</a></td>
         <td>ica</td>
         <td>gsub</td>
-        <td>no UDHR for Sindhi-in-Arabic</td>
+        <td>no UDHR for Sindhi (Perso-Arabic)</td>
       </tr>
       <tr>
         <td><a href="http://htmlpreview.github.io/?https://github.com/googlei18n/noto-source/blob/master/test/Devanagari/UNICODE-table-Devanagari-script.html">Devanagari Script IS 16350 Table</a></td>
         <td><a href="http://htmlpreview.github.io/?https://github.com/googlei18n/noto-source/blob/master/test/Devanagari/ANNEX3-table-Devanagari-script.html">Devanagari Script IS 16333 (Part 3) Table</a></td>
-        <td>Sindhi-in-Devanagari</td>
+        <td>Sindhi (Devanagari)</td>
         <td><a href="http://htmlpreview.github.io/?https://github.com/googlei18n/noto-source/blob/master/test/Devanagari/Sindhi-Devanagari-ICA-coverage-template.html">ICA coverage in Sindhi-Devanagari</a></td>
         <td><a href="http://htmlpreview.github.io/?https://github.com/googlei18n/noto-source/blob/master/test/Devanagari/Devanagari-small-GSUB.html">Limited GSUB Test for Sindhi-Devanagari</a></td>
-        <td>no UDHR for Sindhi-in-Devanagari</td>
+        <td>no UDHR for Sindhi (Devanagari)</td>
       </tr>
       <tr>
         <td><a href="http://htmlpreview.github.io/?https://github.com/googlei18n/noto-source/blob/master/test/Tamil/UNICODE-table-Tamil-script.html">Tamil Script IS 16350 Table</a></td>
@@ -241,7 +241,7 @@
         <td><a href="http://www.unicode.org/udhr/d/udhr_tel.html">UDHR in Telugu</a></td>
       </tr>
       <tr>
-        <td><a href="http://htmlpreview.github.io/?https://github.com/googlei18n/noto-source/blob/master/test/Arabic/UNICODE-table-Arabic-script.html">Arabic Script IS 16350 Table</a></td>
+        <td><a href="http://htmlpreview.github.io/?https://github.com/googlei18n/noto-source/blob/master/test/Arabic/UNICODE-table-Arabic-script.html">Perso-Arabic Script IS 16350 Table</a></td>
         <td>no special requirements</td>
         <td><a href="https://ur.wikipedia.org/wiki/%D8%B5%D9%81%D8%AD%DB%82_%D8%A7%D9%88%D9%84">Urdu in Wikipedia</a></td>
         <td>ica</td>
