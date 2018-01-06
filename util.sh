@@ -88,7 +88,8 @@ function glyphs_from_plist() {
     case "$1" in
         */NotoSansDevanagariUI-MM.plist|\
         */NotoSansTamilUI-MM.plist|\
-        */NotoSansBengaliUI-MM.plist)
+        */NotoSansBengaliUI-MM.plist|\
+        */NotoSansMalayalamUI-MM.plist)
             echo "${glyphs/UI/}"
             ;;
         *)
@@ -116,6 +117,12 @@ function family_from_plist() {
             ;;
         */NotoSansBengaliUI-MM.plist)
             echo 'Noto Sans Bengali UI'
+            ;;
+        */NotoSansMalayalam-MM.plist)
+            echo 'Noto Sans Malayalam'
+            ;;
+        */NotoSansMalayalamUI-MM.plist)
+            echo 'Noto Sans Malayalam UI'
             ;;
         *)
             echo ''
