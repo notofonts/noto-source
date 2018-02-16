@@ -1,0 +1,3067 @@
+FontDame GSUB table
+
+
+script table begin
+newa	default		0, 1, 2, 3, 4, 5, 6
+script table end
+
+
+feature table begin
+0	abvs	18, 20, 34, 22, 24
+1	blws	21
+2	calt	25, 47
+3	ccmp	0, 1, 9, 16
+4	half	49
+5	pref	17
+6	rphf	10
+
+feature table end
+
+lookup	0	chained
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+backtrackclass definition begin
+Ka.icd	1
+Kha.icd	1
+Gha.icd	1
+Nga.icd	1
+Ca.icd	1
+Cha.icd	1
+Ja.icd	1
+Jha.icd	1
+Tta.icd	1
+Dda.icd	1
+Ddha.icd	1
+Da.icd	1
+Na.icd	1
+Pa.icd	1
+Pha.icd	1
+Ba.icd	1
+Bha.icd	1
+Ma.icd	1
+Ya.icd	1
+La.icd	1
+Va.icd	1
+Ssa.icd	1
+Sa.icd	1
+Ha.icd	1
+Ka	2
+Kha	2
+Ga	2
+Gha	2
+Ca	2
+Ja	2
+Jha	2
+Nya	2
+Nna	2
+Ta	2
+Tha	2
+Da	2
+Dha	2
+Na	2
+Pa	2
+Pha	2
+Ba	2
+Bha	2
+Ma	2
+Ya	2
+Ra	2
+La	2
+Wa	2
+Sha	2
+Ssa	2
+Sa	2
+Ha	2
+Ga.icd	3
+Nya.icd	3
+Ttha.icd	3
+Nna.icd	3
+Tha.icd	3
+Dha.icd	3
+Sha.icd	3
+Ta.icd	4
+Nga	5
+Cha	5
+Tta	5
+Ttha	5
+Dda	5
+Ddha	5
+class definition end
+
+class definition begin
+Ka	1
+Ga	1
+Nga	1
+Ngha	1
+Ca	1
+Cha	1
+Ja	1
+Nya	1
+Tta	1
+Ttha	1
+Dda	1
+Ddha	1
+Tha	1
+Da	1
+Dha	1
+Na	1
+Pha	1
+Ba	1
+Bha	1
+Rha	1
+La	1
+Wa	1
+Sha	1
+Ha	1
+Ra	2
+Kha	3
+Gha	3
+Jha	3
+Pa	3
+Ma	3
+Ya	3
+Ssa	3
+Sa	3
+Nna	4
+Ta	5
+Virama	6
+class definition end
+
+lookaheadclass definition begin
+Kha	1
+Ga	1
+Gha	1
+Nga	1
+Ngha	1
+Ca	1
+Cha	1
+Ja	1
+Jha	1
+Nya	1
+Tta	1
+Ttha	1
+Dda	1
+Ddha	1
+Ta	1
+Tha	1
+Da	1
+Dha	1
+Na	1
+Pa	1
+Pha	1
+Ba	1
+Bha	1
+Ma	1
+Ya	1
+Ra	1
+Rha	1
+La	1
+Wa	1
+Sha	1
+Ssa	1
+Ha	1
+Virama	2
+Ka	3
+Sa	3
+class definition end
+
+class-chain		1	2, 1	1, 50
+class-chain		1	2, 3	1, 50
+class-chain		2, 6	1	1, 46
+class-chain		2, 6	3	1, 46
+class-chain		3	2, 1	1, 50
+class-chain		3	2, 3	1, 50
+class-chain		4	2, 1	1, 50
+class-chain		4	2, 3	1, 50
+class-chain		5	2, 1	1, 50
+class-chain		5	2, 3	1, 46
+class-chain	1	6, 1		1, 51
+class-chain	1	6, 2		1, 51
+class-chain	1	6, 3		1, 51
+class-chain	3	6, 1		1, 51
+class-chain	3	6, 2		1, 51
+class-chain	3	6, 3		1, 54
+class-chain	4	6, 1		1, 51
+class-chain	4	6, 2		1, 51
+class-chain	4	6, 3		1, 51
+class-chain	4	6, 5		1, 3
+class-chain	1	6, 5		1, 52
+class-chain	3	6, 5		1, 52
+class-chain	2	6, 4		1, 52
+class-chain	5	6, 4		1, 53
+
+lookup end
+
+
+lookup	1	chained
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+MarkAttachmentType	2
+
+backtrackclass definition begin
+Nya	1
+Nga.icd	1
+Nya.icd	1
+Tta.icd	1
+Ttha.icd	1
+Dda.icd	1
+Ddha.icd	1
+Da.icd	1
+Pha	2
+Cha.icd	3
+class definition end
+
+class definition begin
+Nya.icd	1
+Ka.icd	2
+Ja.icd	2
+Kha.icd	3
+Ga.icd	3
+Gha.icd	3
+Ca.icd	3
+Jha.icd	3
+Nna.icd	3
+Ta.icd	3
+Tha.icd	3
+Dha.icd	3
+Na.icd	3
+Pa.icd	3
+Ba.icd	3
+Bha.icd	3
+Ma.icd	3
+Ya.icd	3
+La.icd	3
+Va.icd	3
+Sha.icd	3
+Ssa.icd	3
+Sa.icd	3
+Nya.cd	4
+Ga.cd	5
+Cha.cd	5
+Dda.cd	5
+Nna.post	5
+Bha.cd	5
+Sha.cd	5
+Cha.icd	6
+Da.icd	6
+Nga.icd	7
+Ttha.icd	7
+Dda.icd	7
+Pha.icd	7
+Tta.icd	8
+Ddha.icd	8
+Gha.cd	9
+Jha.cd	9
+Dha.cd	9
+Pa.cd	9
+Ya.cd	9
+Ssa.cd	9
+Sa.cd	9
+Da	10
+Kha.cd	11
+Ta.post	11
+Ma.cd	11
+Tha.post	12
+Ha.icd	12
+class definition end
+
+lookaheadclass definition begin
+Nya.cd	1
+Ka.cd	2
+Cha.cd	2
+Ja.cd	2
+Ddha.cd	2
+Tha.post	2
+Da.cd	2
+Pha.cd	2
+class definition end
+
+class-chain		1	1	1, 2
+class-chain		2	2	1, 4
+class-chain		2, 11		1, 3	2, 8
+class-chain		2, 9		1, 3	2, 8
+class-chain		3, 4		2, 2
+class-chain	1	5		1, 2
+class-chain	3	5		1, 2
+class-chain	2	5		1, 3
+class-chain		6, 4		2, 3
+class-chain		7, 4		2, 5
+class-chain		8, 4		2, 4
+class-chain		10, 5		1, 27
+class-chain	3	12		1, 2
+class-chain		12	2	1, 4
+class-chain		12, 9		1, 3	2, 8
+
+lookup end
+
+
+lookup	2	single
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+Bha	Bha.alt
+Ha	Ha.alt
+Candrabindu	Candrabindu.sm
+AA_dv.alt	AA_dv.alt2
+Ga.cd	Ga.cd.alt
+Cha.cd	Cha.cd.alt
+Nya.icd	Nya_nostem.icd
+Nya.cd	Nya_stem.cd
+Dda.cd	Dda.cd.alt
+Nna.post	Nna.post.alt
+Tha.post	Tha.post.alt
+Bha.cd	Bha.cd.alt
+Sha.cd	Sha.cd.alt
+
+lookup end
+
+
+lookup	3	single
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+Ta	Ta.post
+AA_dv	AA_dv_head
+Ka.icd	Ka.icd.alt
+Ja.icd	Ja.icd.alt
+Nya.cd	Nya_stem.cd.alt
+Nna.post	Nna.post.nostem
+Ha.icd	Ha.icd.alt
+
+lookup end
+
+
+lookup	4	single
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+AA_dv	AA_dv.alt3
+AA_dv.alt	AA_dv.alt3
+Ka.icd	Ka.icd.wide
+Ja.icd	Ja.icd.wide
+Nya.cd	Nya_low.cd
+Ta.post	Ta.post.head
+Ha.icd	Ha.icd.wide
+AU_dv_part.alt	AU_dv_part.alt3
+
+lookup end
+
+
+lookup	5	single
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+AA_dv	AA_dv.alt4
+AA_dv.alt	AA_dv.alt4
+Nya.cd	Nya.cd.alt
+AU_dv_part.alt	AU_dv_part.alt4
+AU_dv_part.alt2	AU_dv_part.alt4
+
+lookup end
+
+
+lookup	6	single
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+AA_dv	AA_dv.alt5
+AA_dv.alt	AA_dv.alt5
+AU_dv_part.alt	AU_dv_part.alt5
+
+lookup end
+
+
+lookup	7	single
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+AA_dv	AA_dv.alt6
+AA_dv.alt	AA_dv.alt6
+AU_dv_part.alt2	AU_dv_part.alt6
+
+lookup end
+
+
+lookup	8	single
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+Kha.cd	Kha.cd.nohd.ns
+Gha.cd	Gha.cd.nohd.ns
+Jha.cd	Jha.cd.nohd.ns
+Ta.post	Ta.post.ns
+Dha.cd	Dha.cd.ns
+Pa.cd	Pa.cd.nohd.ns
+Ma.cd	Ma.cd.nohd.ns
+Ya.cd	Ya.cd.nohd.ns
+Ssa.cd	Ssa.cd.nohd.ns
+Sa.cd	Sa.cd.nohd.ns
+
+lookup end
+
+
+lookup	9	ligature
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+Ha_Nna	Ha	Nna.post
+Ka_Nya	Ka.icd	Nya.cd
+Nga_Ha	Nga.icd	Ha.cd
+Ja_Nya	Ja.icd	Nya.cd
+Nya_Ha	Nya.icd	Ha.cd
+Nna_Ha	Nna.icd	Ha.cd
+Na_Ha	Na.icd	Ha.cd
+Ma_Ha	Ma.icd	Ha.cd
+Ra_Ha	Ra.half	Ha
+La_Ha	La.icd	Ha.cd
+Ha_Kha	Ha.icd	Kha.cd
+Ha_Nga	Ha.icd	Nga.cd
+Ha_Nya	Ha.icd	Nya.cd
+Ha_Ta	Ha.icd	Ta.post
+Ha_Na	Ha.icd	Na.cd
+Ha_Ma	Ha.icd	Ma.cd
+Ha_Ra	Ha.icd	Ra.cd
+Ha_La	Ha.icd	La.cd
+Ka_Ssa	Ka.icd.alt	Ssa.cd.nohd.ns
+
+lookup end
+
+
+lookup	10	chained
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+class definition begin
+Ra	1
+Virama	2
+ZWJ	3
+Ra.half	4
+class definition end
+
+lookaheadclass definition begin
+A_iv	1
+AA_iv	1
+I_iv	1
+II_iv	1
+U_iv	1
+UU_iv	1
+R_iv	1
+Rr_iv	1
+E_iv	1
+AI_iv	1
+O_iv	1
+AU_iv	1
+Ka	1
+Kha	1
+Ga	1
+Gha	1
+Nga	1
+Ngha	1
+Ca	1
+Cha	1
+Ja	1
+Jha	1
+Nyha	1
+Tta	1
+Dda	1
+Ddha	1
+Nna	1
+Ta	1
+Tha	1
+Da	1
+Dha	1
+Na	1
+Nha	1
+Pa	1
+Pha	1
+Ba	1
+Bha	1
+Ma	1
+Mha	1
+Ya	1
+Ra	1
+Rha	1
+La	1
+Lha	1
+Wa	1
+Sha	1
+Ssa	1
+Sa	1
+Ha	1
+Ha_Nga	1
+Ha_Nya	1
+Ha_Nna	1
+Ha_Na	1
+Ha_Ma	1
+Ha_Ra	1
+Ha_La	1
+Nga_Ha	1
+Nya_Ha	1
+Nna_Ha	1
+Na_Ha	1
+Ma_Ha	1
+Ra_Ha	1
+La_Ha	1
+Ka.icd	1
+Kha.icd	1
+Ga.icd	1
+Gha.icd	1
+Nga.icd	1
+Ca.icd	1
+Cha.icd	1
+Ja.icd	1
+Jha.icd	1
+Tta.icd	1
+Dda.icd	1
+Ddha.icd	1
+Nna.icd	1
+Ta.icd	1
+Tha.icd	1
+Da.icd	1
+Dha.icd	1
+Na.icd	1
+Pa.icd	1
+Pha.icd	1
+Ba.icd	1
+Bha.icd	1
+Ma.icd	1
+Ya.icd	1
+La.icd	1
+Va.icd	1
+Sha.icd	1
+Ssa.icd	1
+Sa.icd	1
+Ha.icd	1
+Ka_Ssa	1
+Ja_Nya	1
+Ka_Nya	1
+Ka.icd.alt	1
+Ja.icd.alt	1
+Ha.icd.alt	1
+Ka.icd.wide	1
+Ja.icd.wide	1
+Ha.icd.wide	1
+Ka.icd.nohd	1
+Kha.icd.nohd	1
+Gha.icd.nohd	1
+Nga.icd.nohd	1
+Ca.icd.nohd	1
+Cha.icd.nohd	1
+Ja.icd.nohd	1
+Jha.icd.nohd	1
+Tta.icd.nohd	1
+Dda.icd.nohd	1
+Ddha.icd.nohd	1
+Ta.icd.nohd	1
+Da.icd.nohd	1
+Na.icd.nohd	1
+Pa.icd.nohd	1
+Pha.icd.nohd	1
+Bha.icd.nohd	1
+Ba.icd.nohd	1
+Ma.icd.nohd	1
+Ya.icd.nohd	1
+La.icd.nohd	1
+Va.icd.nohd	1
+Ssa.icd.nohd	1
+Sa.icd.nohd	1
+Ha.icd.nohd	1
+Ka.icd.alt.nohd	1
+Ja.icd.alt.nohd	1
+Ha.icd.alt.nohd	1
+Ka.icd.wide.nohd	1
+Ja.icd.wide.nohd	1
+Ha.icd.wide.nohd	1
+Ha_Ta	1
+Ha_Kha	1
+Kha.diag	2
+Gha.diag	2
+Jha.diag	2
+Pa.diag	2
+Ma.diag	2
+Ya.diag	2
+Ssa.diag	2
+Sa.diag	2
+L_iv	4
+LL_iv	4
+Nya	4
+Ttha	4
+Nya.icd	4
+Nya_nostem.icd	4
+Ttha.icd	4
+Gi	4
+Shi	4
+Gi.icd	4
+Shi.icd	4
+class definition end
+
+class-chain		1, 2, 3	4, 2	1, 15
+class-chain		1, 2, 3	1, 2	1, 11
+class-chain		1, 2, 3	4	1, 15
+class-chain		1, 2, 3	1	1, 11
+class-chain		4, 3	4, 2	1, 15
+class-chain		4, 3	1, 2	1, 11
+class-chain		4, 3	4	1, 11	1, 15
+class-chain		4, 3	1	1, 11
+
+lookup end
+
+
+lookup	11	ligature
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+Repha	Ra	Virama	ZWJ
+Repha	Ra.half	ZWJ
+
+lookup end
+
+
+lookup	12	single
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+II_dv	II_dv_Repha
+Repha	Repha_AI_dv
+
+lookup end
+
+
+lookup	13	multiple
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+MarkAttachmentType	1
+
+AA_dv	AA_dv	Repha
+E_dv	E_dv	Repha
+AI_dv	AI_dv	Repha_AI_dv
+O_dv	O_dv	Repha
+AU_dv	AU_dv	Repha_AI_dv
+AA_dv.alt	AA_dv.alt	Repha
+AA_dv.alt2	AA_dv.alt2	Repha
+AA_dv.alt3	AA_dv.alt3	Repha
+Kha.cd	Kha.cd	Repha
+Gha.cd	Gha.cd	Repha
+Jha.cd	Jha.cd	Repha
+Dha.cd	Dha.cd	Repha
+Pa.cd	Pa.cd	Repha
+Ma.cd	Ma.cd	Repha
+Ya.cd	Ya.cd	Repha
+Ssa.cd	Ssa.cd	Repha
+Sa.cd	Sa.cd	Repha
+Kha.diag	Kha.diag	Repha
+Gha.diag	Gha.diag	Repha
+Jha.diag	Jha.diag	Repha
+Pa.diag	Pa.diag	Repha
+Ma.diag	Ma.diag	Repha
+Ya.diag	Ya.diag	Repha
+Ssa.diag	Ssa.diag	Repha
+Sa.diag	Sa.diag	Repha
+E_dv.sm	E_dv.sm	Repha
+E_dv.lg	E_dv.lg	Repha
+O_dv.sm	O_dv.sm	Repha
+O_dv.lg	O_dv.lg	Repha
+AI_dv_top.alt	AI_dv_top.alt	Repha_AI_dv
+AU_dv_part.alt	AU_dv_part.alt	Repha_AI_dv
+AU_dv_part.alt2	AU_dv_part.alt2	Repha_AI_dv
+AU_dv_part.alt3	AU_dv_part.alt3	Repha_AI_dv
+Repha_I_dv	Repha
+AA_dv_head	AA_dv_head	Repha
+AA_dv.alt4	AA_dv.alt4	Repha
+AU_dv_part.alt4	AU_dv_part.alt4	Repha_AI_dv
+AA_dv.alt5	AA_dv.alt5	Repha
+AA_dv.alt6	AA_dv.alt6	Repha
+AU_dv_part.alt5	AU_dv_part.alt5	Repha_AI_dv
+AU_dv_part.alt6	AU_dv_part.alt6	Repha_AI_dv
+
+lookup end
+
+
+lookup	14	single
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+II_dv	II_dv_Nya
+II_dv_Repha	II_dv_Repha_Nya
+
+lookup end
+
+
+lookup	15	ligature
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+Repha_I_dv	Ra	Virama	ZWJ
+
+lookup end
+
+
+lookup	16	ligature
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	yes
+
+Nga_Ta	Nga.icd	Ta.post
+NyJha.alt	Nya.icd	Jha.cd
+Nya_Ta	Nya.icd	Ta.post
+NyDha	Nya.icd	Dha.cd
+NyKha	Nya.icd	Kha.diag
+NyGha	Nya.icd	Gha.diag
+NyJha	Nya.icd	Jha.diag
+NyPa	Nya.icd	Pa.diag
+NyMa	Nya.icd	Ma.diag
+NyYa	Nya.icd	Ya.diag
+NySsa	Nya.icd	Ssa.diag
+NySa	Nya.icd	Sa.diag
+Tta_Ta	Tta.icd	Ta.post
+Ddha_Ta	Ddha.icd	Ta.post
+Da_Ta	Da.icd	Ta.post
+Pha_Ta	Pha.icd	Ta.post
+
+lookup end
+
+
+lookup	17	chained
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+MarkAttachmentType	1
+
+class definition begin
+Ga	1
+Nna	1
+Tha	1
+Dha	1
+Sha	1
+Nna_Ha	1
+Ga.icd	1
+Ga.half	1
+Nna.icd	1
+Nna.half	1
+Tha.icd	1
+Tha.half	1
+Dha.icd	1
+Dha.half	1
+Sha.icd	1
+Sha.half	1
+Gi	1
+Shi	1
+Gi.icd	1
+Shi.icd	1
+Ta.post	2
+Dha.cd	2
+Kha.diag	2
+Gha.diag	2
+Jha.diag	2
+Pa.diag	2
+Ma.diag	2
+Ya.diag	2
+Ssa.diag	2
+Sa.diag	2
+Nya	3
+Ttha	3
+Nya_Ha	3
+Nya.icd	3
+Nya_nostem.icd	3
+Ttha.icd	3
+NyDha	3
+NyGha	3
+NyJha	3
+NyKha	3
+NyMa	3
+NyPa	3
+NySa	3
+NySsa	3
+NyYa	3
+NyJha.alt	3
+Nya_Ta	3
+E_dv	4
+AI_dv	5
+O_dv	5
+AU_dv	5
+class definition end
+
+class-chain		1, 2, 5		3, 28	3, 30
+class-chain		1, 5		2, 28	2, 30
+class-chain		1, 2, 4		3, 28
+class-chain		1, 4		2, 28
+class-chain		3, 2, 5		3, 28	3, 31
+class-chain		3, 5		2, 28	2, 31
+class-chain		3, 4		2, 29
+
+lookup end
+
+
+lookup	18	context
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+MarkAttachmentType	1
+
+class definition begin
+Ga	1
+Sha	1
+Ga.icd	1
+Sha.icd	1
+I_dv	2
+class definition end
+
+class	2, 1	1, 19
+
+lookup end
+
+
+lookup	19	ligature
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+MarkAttachmentType	1
+
+Gi	I_dv	Ga
+Shi	I_dv	Sha
+Gi.icd	I_dv	Ga.icd
+Shi.icd	I_dv	Sha.icd
+
+lookup end
+
+
+lookup	20	context
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+MarkAttachmentType	1
+
+class definition begin
+I_dv	1
+Ka	2
+Kha	2
+Ga	2
+Gha	2
+Nga	2
+Ngha	2
+Ca	2
+Cha	2
+Ja	2
+Jha	2
+Nyha	2
+Tta	2
+Dda	2
+Ddha	2
+Nna	2
+Ta	2
+Tha	2
+Da	2
+Dha	2
+Na	2
+Nha	2
+Pa	2
+Pha	2
+Ba	2
+Bha	2
+Ma	2
+Mha	2
+Ya	2
+Ra	2
+Rha	2
+La	2
+Lha	2
+Wa	2
+Sha	2
+Ssa	2
+Sa	2
+Ha	2
+Ha_Nga	2
+Ha_Nya	2
+Ha_Nna	2
+Ha_Na	2
+Ha_Ma	2
+Ha_Ra	2
+Ha_La	2
+Ha.alt	2
+Ju	2
+Juu	2
+Ru	2
+Ruu	2
+Ka.icd	2
+Kha.icd	2
+Ga.icd	2
+Gha.icd	2
+Nga.icd	2
+Ca.icd	2
+Cha.icd	2
+Ja.icd	2
+Jha.icd	2
+Tta.icd	2
+Dda.icd	2
+Ddha.icd	2
+Nna.icd	2
+Ta.icd	2
+Da.icd	2
+Dha.icd	2
+Na.icd	2
+Pa.icd	2
+Pha.icd	2
+Ba.icd	2
+Bha.icd	2
+Ma.icd	2
+Ya.icd	2
+La.icd	2
+Va.icd	2
+Sha.icd	2
+Ssa.icd	2
+Sa.icd	2
+Ha.icd	2
+Ka_Ssa	2
+Ja_Nya	2
+Ka_Nya	2
+Ka.icd.alt	2
+Ja.icd.alt	2
+Ha.icd.alt	2
+Ka.icd.wide	2
+Ja.icd.wide	2
+Ha.icd.wide	2
+NyGha	2
+NyJha	2
+NyKha	2
+NyMa	2
+NyPa	2
+NySa	2
+NySsa	2
+NyYa	2
+NyJha.alt	2
+Ka.icd.nohd	2
+Kha.icd.nohd	2
+Gha.icd.nohd	2
+Nga.icd.nohd	2
+Ca.icd.nohd	2
+Cha.icd.nohd	2
+Ja.icd.nohd	2
+Jha.icd.nohd	2
+Tta.icd.nohd	2
+Dda.icd.nohd	2
+Ddha.icd.nohd	2
+Ta.icd.nohd	2
+Da.icd.nohd	2
+Na.icd.nohd	2
+Pa.icd.nohd	2
+Pha.icd.nohd	2
+Bha.icd.nohd	2
+Ba.icd.nohd	2
+Ma.icd.nohd	2
+Ya.icd.nohd	2
+La.icd.nohd	2
+Va.icd.nohd	2
+Ssa.icd.nohd	2
+Sa.icd.nohd	2
+Ha.icd.nohd	2
+Ka.icd.alt.nohd	2
+Ja.icd.alt.nohd	2
+Ha.icd.alt.nohd	2
+Ka.icd.wide.nohd	2
+Ja.icd.wide.nohd	2
+Ha.icd.wide.nohd	2
+Ha_Nga.nohd	2
+Ha_Nya.nohd	2
+Ha_Nna.nohd	2
+Ha_Na.nohd	2
+Ha_Ma.nohd	2
+Ha_Ra.nohd	2
+Ha_La.nohd	2
+Ha_Ta	2
+Ha_Kha	2
+Ha_Ta.nohd	2
+Ha_Kha.nohd	2
+Repha	3
+II_dv	4
+E_dv	5
+O_dv	5
+E_dv.sm	5
+E_dv.lg	5
+O_dv.sm	5
+O_dv.lg	5
+Nya	6
+Ttha	6
+Nya_Ha	6
+Nya.icd	6
+Nya_nostem.icd	6
+Ttha.icd	6
+Tha.icd	6
+NyDha	6
+Nya_Ta	6
+Repha_I_dv	7
+Gi	8
+Shi	8
+Gi.icd	8
+Shi.icd	8
+II_iv	9
+AI_iv	9
+AU_iv	9
+AA_dv	9
+AI_dv	9
+AU_dv	9
+AA_dv.alt	9
+AA_dv.alt2	9
+AA_dv.alt3	9
+AI_dv.sm	9
+AI_dv.lg	9
+AU_dv.sm	9
+AU_dv.lg	9
+AI_dv_top.alt	9
+AU_dv_part.alt	9
+AU_dv_part.alt2	9
+AU_dv_part.alt3	9
+AA_dv_head	9
+AA_dv.alt4	9
+AU_dv_part.alt4	9
+AA_dv.alt5	9
+AA_dv.alt6	9
+AU_dv_part.alt5	9
+AU_dv_part.alt6	9
+Kha.cd	10
+Gha.cd	10
+Jha.cd	10
+Dha.cd	10
+Pa.cd	10
+Ma.cd	10
+Ya.cd	10
+Ssa.cd	10
+Sa.cd	10
+Kha.diag	10
+Gha.diag	10
+Jha.diag	10
+Pa.diag	10
+Ma.diag	10
+Ya.diag	10
+Ssa.diag	10
+Sa.diag	10
+class definition end
+
+class	1, 2, 2, 7	1, 28	4, 33
+class	1, 2, 3	1, 28	3, 33
+class	1, 6, 3	1, 28	3, 33
+class	1, 2, 7	1, 28	3, 33
+class	1, 6, 7	1, 28	3, 33
+class	2, 3, 5	3, 13	2, 33
+class	2, 3, 9	3, 13	2, 33
+class	2, 7, 9	3, 13	2, 33
+class	2, 7	2, 13
+class	3, 4	2, 12	1, 33
+class	3, 10, 9	3, 13	1, 33
+class	3, 10, 5	3, 13	1, 33
+class	3, 10	2, 13	1, 33
+class	6, 7, 9	3, 13	2, 33
+class	7, 4	2, 12	1, 33
+class	8, 3	2, 13
+
+lookup end
+
+
+lookup	21	chained
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+MarkAttachmentType	2
+
+backtrackclass definition begin
+Ga	1
+Ta	1
+Sha	1
+Ta.nohd	1
+Bha.alt	1
+Ga.cd	1
+Ta.post	1
+Bha.cd	1
+Sha.cd	1
+Ga.cd.alt	1
+Bha.cd.alt	1
+Sha.cd.alt	1
+Ha_Ta	1
+Ha_Ta.nohd	1
+Nga_Ta	1
+Tta_Ta	1
+Ddha_Ta	1
+Da_Ta	1
+Pha_Ta	1
+Nya_Ta	1
+Nga_Ta.nohd	1
+Tta_Ta.nohd	1
+Ddha_Ta.nohd	1
+Da_Ta.nohd	1
+Pha_Ta.nohd	1
+Ta.post.ns	1
+Ta.post.head	1
+Nha	2
+Mha	2
+Rha	2
+Lha	2
+Nha.nohd	2
+Mha.nohd	2
+Rha.nohd	2
+Lha.nohd	2
+Ha.alt.nohd	2
+Ha_Nga	2
+Ha_Nya	2
+Ha_Na	2
+Ha_Ra	2
+Ha_La	2
+Ha.alt	2
+Ha_Nga.nohd	2
+Ha_Nya.nohd	2
+Ha_Na.nohd	2
+Ha_Ma.nohd	2
+Ha_Ra.nohd	2
+Ha_La.nohd	2
+Nga	3
+Cha	3
+Tta	3
+Ttha	3
+Dda	3
+Ddha	3
+Ngha	4
+Nyha	4
+Ngha.nohd	4
+Nyha.nohd	4
+Ka_Nya	4
+Ha_Nna	5
+Nga_Ha	5
+Nya_Ha	5
+Nna_Ha	5
+Na_Ha	5
+Ma_Ha	5
+La_Ha	5
+Nna.post	5
+Nna.post.alt	5
+Nna.post.alt2	5
+Nna.post.nostem	5
+Ha_Nna.nohd	5
+Nga_Ha.nohd	5
+Na_Ha.nohd	5
+Ma_Ha.nohd	5
+La_Ha.nohd	5
+Da_Nna	5
+Da_Nna.nohd	5
+class definition end
+
+class definition begin
+Ja	1
+Ra	1
+Bha	2
+Ha	2
+U_dv	3
+R_dv	4
+RR_dv	4
+L_dv	4
+LL_dv	4
+UU_dv	5
+Ka.icd.alt	5
+Ja.icd.alt	5
+AA_dv	6
+II_dv	6
+O_dv	6
+AU_dv	6
+AA_dv.alt	6
+AA_dv.alt2	6
+AA_dv.alt3	6
+O_dv.sm	6
+O_dv.lg	6
+AU_dv.sm	6
+AU_dv.lg	6
+II_dv.xsm	6
+II_dv.med	6
+II_dv.lg	6
+II_dv.xlg	6
+AU_dv_part.alt	6
+AU_dv_part.alt2	6
+AU_dv_part.alt3	6
+II_dv_Repha	6
+II_dv_Repha.xsm	6
+II_dv_Repha.med	6
+II_dv_Repha.lg	6
+II_dv_Repha.xlg	6
+II_dv.lg.alt	6
+II_dv.med.alt	6
+II_dv.xlg.alt	6
+II_dv_Repha.lg.alt	6
+II_dv_Repha.med.alt	6
+II_dv_Repha.xlg.alt	6
+AA_dv_head	6
+II_dv_Nya	6
+II_dv_Repha_Nya	6
+AA_dv.alt4	6
+AU_dv_part.alt4	6
+AA_dv.alt5	6
+AA_dv.alt6	6
+AU_dv_part.alt5	6
+AU_dv_part.alt6	6
+class definition end
+
+lookaheadclass definition begin
+U_dv	1
+UU_dv	1
+R_dv	1
+RR_dv	1
+L_dv	1
+LL_dv	1
+class definition end
+
+class-chain		1, 6	1	1, 2	1, 27
+class-chain		1	1	1, 2	1, 27
+class-chain	3	1, 2		2, 53
+class-chain		2, 6	1	1, 2	1, 27
+class-chain		2	1	1, 2	1, 27
+class-chain	1	3		1, 28
+class-chain	2	3		1, 32
+class-chain	4	3		1, 32
+class-chain	5	3		1, 32
+class-chain	2	4		1, 32
+class-chain	4	4		1, 32
+class-chain	5	4		1, 32
+class-chain	3	5		1, 28
+class-chain	4	5		1, 29
+class-chain	2	5		1, 32
+class-chain	5	5		1, 28	1, 32
+class-chain	1	6, 3		2, 28
+class-chain	3	6, 5		2, 28
+class-chain	4	6, 5		2, 29
+class-chain	2	6, 3		2, 32
+class-chain	2	6, 4		2, 32
+class-chain	2	6, 5		2, 32
+class-chain	4	6, 3		2, 32
+class-chain	4	6, 4		2, 32
+class-chain	5	6, 3		2, 32
+class-chain	5	6, 4		2, 32
+class-chain	5	6, 5		2, 28	2, 32
+
+lookup end
+
+
+lookup	22	context
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+MarkAttachmentType	1
+
+class definition begin
+Ka_Nya	1
+Ka.icd.alt	1
+Ja.icd.alt	1
+Ha.icd.alt	1
+Ka.icd.wide	1
+Ha.icd.wide	1
+Ha_Kha	1
+Da_Nna	1
+Ta.post	2
+Nga	3
+Ngha	3
+Ca	3
+Tta	3
+Dda	3
+Na	3
+Nha	3
+Ra	3
+Rha	3
+Ha	3
+Ha_Nga	3
+Ha_Nya	3
+Ha_Nna	3
+Ha_Na	3
+Ha_Ra	3
+Nga_Ha	3
+Na_Ha	3
+Ma_Ha	3
+La_Ha	3
+Ka.icd	3
+Gha.icd	3
+Ca.icd	3
+Cha.icd	3
+Pa.icd	3
+Bha.icd	3
+Ma.icd	3
+Ya.icd	3
+La.icd	3
+Va.icd	3
+Ssa.icd	3
+Sa.icd	3
+Nga_Ta	3
+Tta_Ta	3
+Ddha_Ta	3
+Da_Ta	3
+Pha_Ta	3
+Ddha	4
+Lha	4
+Nyha	5
+Ba	5
+Ka	6
+Kha	6
+Cha	6
+Ja	6
+Jha	6
+Pa	6
+Bha	6
+Ma	6
+Mha	6
+Ya	6
+La	6
+Wa	6
+Ssa	6
+Sa	6
+Ra_Ha	6
+Ju	6
+Juu	6
+Ru	6
+Ruu	6
+Kha.icd	6
+Ja.icd	6
+Jha.icd	6
+Ta.icd	6
+Ha.icd	6
+Kha.cd	7
+Gha.cd	7
+Jha.cd	7
+Dha.cd	7
+Pa.cd	7
+Ma.cd	7
+Ya.cd	7
+Ssa.cd	7
+Sa.cd	7
+Kha.diag	8
+Gha.diag	8
+Jha.diag	8
+Pa.diag	8
+Ma.diag	8
+Ya.diag	8
+Ssa.diag	8
+Sa.diag	8
+Nga.icd	9
+Tta.icd	9
+Dda.icd	9
+Ddha.icd	9
+Da.icd	9
+Na.icd	9
+Pha.icd	9
+Ba.icd	9
+Ta.half	10
+E_dv	12
+AI_dv	12
+O_dv	13
+AU_dv	13
+class definition end
+
+class	1, 12	1, 26	2, 39
+class	1, 13	1, 26	2, 39
+class	2, 13	2, 39
+class	3, 7, 12	1, 26	2, 26	3, 39
+class	3, 12	1, 26	2, 32
+class	3, 7, 13	1, 26	2, 26	3, 39
+class	3, 13	1, 26	2, 32
+class	4, 12	1, 26	2, 32
+class	5, 13	1, 26	2, 32
+class	6, 7, 12	1, 26	2, 26
+class	6, 12	1, 26
+class	6, 7, 13	1, 26	2, 26	3, 39
+class	6, 13	1, 26
+class	8, 12	2, 39
+class	8, 13	2, 39
+class	9, 7, 12	1, 26	2, 26
+class	9, 12	1, 26
+class	9, 7, 13	1, 26	2, 26
+class	9, 13	1, 26	2, 32
+class	10, 6, 13	2, 26	3, 39
+
+lookup end
+
+
+lookup	23	single
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	yes
+
+space	space
+
+lookup end
+
+
+lookup	24	chained
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+MarkAttachmentType	2
+
+backtrackclass definition begin
+Kha.icd	1
+Gha.icd	1
+Ca.icd	1
+Cha.icd	1
+Jha.icd	1
+Dda.icd	1
+Ta.icd	1
+Na.icd	1
+Pa.icd	1
+Ba.icd	1
+Bha.icd	1
+Ma.icd	1
+Ya.icd	1
+La.icd	1
+Va.icd	1
+Ssa.icd	1
+Sa.icd	1
+Ga	2
+Nna	2
+Tha	2
+Dha	2
+Sha	2
+Ga.icd	2
+Ga.half	2
+Nna.icd	2
+Nna.half	2
+Tha.icd	2
+Tha.half	2
+Dha.icd	2
+Dha.half	2
+Sha.icd	2
+Sha.half	2
+NyGha	2
+NyJha	2
+NyKha	2
+NyMa	2
+NyPa	2
+NySa	2
+NySsa	2
+NyYa	2
+Gi	2
+Shi	2
+Gi.icd	2
+Shi.icd	2
+Nya	3
+Ttha	3
+Nya_Ha	3
+Nya.icd	3
+Nya_nostem.icd	3
+Ttha.icd	3
+NyDha	3
+NyJha.alt	3
+Nya_Ta	3
+Ga.cd	4
+Nga.cd	4
+Ca.cd	4
+Nya.cd	4
+Tta.cd	4
+Ttha.cd	4
+Ddha.cd	4
+Da.cd	4
+Na.cd	4
+Ba.cd	4
+Bha.cd	4
+Ra.cd	4
+La.cd	4
+Va.cd	4
+Sha.cd	4
+Ha.cd	4
+Ga.cd.alt	4
+Bha.cd.alt	4
+Sha.cd.alt	4
+Ka.cd	5
+Cha.cd	5
+Ja.cd	5
+Nya_stem.cd	5
+Nya.cd.alt	5
+Cha.cd.alt	5
+Kha.diag	6
+Gha.diag	6
+Jha.diag	6
+Pa.diag	6
+Ma.diag	6
+Ya.diag	6
+Ssa.diag	6
+Sa.diag	6
+Dha.cd	7
+Kha.icd.nohd	8
+Gha.icd.nohd	8
+Nga.icd.nohd	8
+Ca.icd.nohd	8
+Cha.icd.nohd	8
+Jha.icd.nohd	8
+Tta.icd.nohd	8
+Dda.icd.nohd	8
+Ddha.icd.nohd	8
+Ta.icd.nohd	8
+Da.icd.nohd	8
+Na.icd.nohd	8
+Pa.icd.nohd	8
+Pha.icd.nohd	8
+Bha.icd.nohd	8
+Ba.icd.nohd	8
+Ma.icd.nohd	8
+Ya.icd.nohd	8
+La.icd.nohd	8
+Va.icd.nohd	8
+Ssa.icd.nohd	8
+Sa.icd.nohd	8
+Pha.cd	9
+Nya_low.cd	10
+Dda.cd	10
+Tha.post	10
+Tha.post.alt	10
+Dda.cd.alt	10
+Nna.post	11
+Nna.post.alt	11
+Nna.post.alt2	11
+Nna.post.nostem	11
+class definition end
+
+class definition begin
+Nga.icd	1
+Cha.icd	1
+Tta.icd	1
+Dda.icd	1
+Ddha.icd	1
+Da.icd	1
+Pa.icd	2
+Ba.icd	2
+Ya.icd	2
+Kha.icd	3
+Gha.icd	3
+Ca.icd	3
+Jha.icd	3
+Ta.icd	3
+Na.icd	3
+Bha.icd	3
+Ma.icd	3
+La.icd	3
+Va.icd	3
+Ssa.icd	3
+Sa.icd	3
+Ca.cd	4
+La.cd	4
+Sha.cd	4
+Sha.cd.alt	4
+O_dv	5
+AU_dv	5
+O_dv.alt	5
+AU_dv.alt	5
+O_dv.sm	5
+AU_dv.sm	5
+AU_dv_part.alt	5
+AU_dv_part.alt2	5
+AA_dv	6
+AA_dv.alt	6
+I_dv	7
+I_dv.xsm	7
+I_dv.sm	7
+I_dv_Repha	7
+I_dv_Repha.sm	7
+I_dv_Repha.xsm	7
+Pha.icd	8
+Va.cd	9
+Ttha.cd	10
+Na.cd	10
+Ga.cd	11
+Ga.cd.alt	11
+Ja.icd	12
+Ha.icd	12
+Ta.post	13
+Nya.cd.alt	14
+Nya_stem.cd.alt	14
+Ka.cd	15
+Nya_stem.cd	15
+Nya_low.cd	16
+Cha.cd	17
+Ja.cd	17
+Tha.post	17
+Tha.post.alt	17
+Cha.cd.alt	17
+U_dv	20
+UU_dv	20
+U_dv.alt	20
+U_dv.sm	20
+UU_dv.alt	20
+UU.sm	20
+UU.sm.alt	20
+II_dv	21
+II_dv.xsm	21
+II_dv.med	21
+II_dv.lg	21
+II_dv.xlg	21
+II_dv_Repha	21
+II_dv_Repha.xsm	21
+II_dv_Repha.med	21
+II_dv_Repha.lg	21
+II_dv_Repha.xlg	21
+NullMark	22
+class definition end
+
+lookaheadclass definition begin
+E_dv	1
+AI_dv	1
+O_dv	1
+AU_dv	1
+class definition end
+
+class-chain		1, 4	1	1, 23
+class-chain		1, 9	1	1, 23
+class-chain		1, 4		1, 57
+class-chain		1, 9		1, 57
+class-chain		1, 16, 21		3, 41
+class-chain		1, 17, 21		3, 42
+class-chain		1, 14, 21		3, 43
+class-chain		1, 16, 20		3, 56
+class-chain		1, 17, 20		3, 56
+class-chain		1, 14, 20		3, 55
+class-chain		1, 14		2, 56
+class-chain		1, 16		2, 56
+class-chain		1, 17		2, 56
+class-chain		2, 9	1	1, 23
+class-chain		2, 9		1, 58
+class-chain		2, 15, 21		3, 42
+class-chain		2, 17, 21		3, 42
+class-chain		2, 15, 20		3, 55
+class-chain		2, 17, 20		3, 55
+class-chain		2, 15		2, 55
+class-chain		2, 17		2, 55
+class-chain		3, 15, 21		3, 42
+class-chain		3, 17, 21		3, 42
+class-chain		3, 15, 20		3, 55
+class-chain		3, 17, 20		3, 55
+class-chain		3, 15		2, 55
+class-chain		3, 17		2, 55
+class-chain	5, 1	5		1, 3
+class-chain	10, 1	5		1, 3
+class-chain	9, 1	5		1, 3
+class-chain	5, 2	5		1, 4
+class-chain	10, 2	5		1, 4
+class-chain	9, 2	5		1, 4
+class-chain	3	5		1, 29
+class-chain	2	5		1, 28
+class-chain	5, 8	5		1, 45
+class-chain	4, 8	5		1, 44
+class-chain	9, 8	5		1, 44
+class-chain	10, 8	5		1, 44
+class-chain	4, 2	6		1, 28
+class-chain	4, 3	6		1, 29
+class-chain	5, 1	6		1, 3
+class-chain	5, 2	6		1, 4
+class-chain	5, 3	6		1, 5
+class-chain	9, 1	6		1, 3
+class-chain	9, 2	6		1, 4
+class-chain	9, 3	6		1, 5
+class-chain	10, 1	6		1, 3
+class-chain	10, 2	6		1, 4
+class-chain	10, 3	6		1, 5
+class-chain	1, 7	6		1, 3
+class-chain	2, 7	6		1, 3
+class-chain	7	6		1, 28
+class-chain	11, 2	6		1, 29
+class-chain	11, 3	6		1, 29
+class-chain	6	6		1, 28
+class-chain	2	6		1, 29
+class-chain	3	6		1, 29
+class-chain		7, 2, 9		1, 23
+class-chain		7, 8, 10		1, 23
+class-chain		7, 12, 4		1, 23
+class-chain		7, 12, 9		1, 23
+class-chain		7, 12, 11		1, 23
+class-chain		7, 1, 4		1, 59
+class-chain		7, 1, 9		1, 59
+class-chain		7, 8, 4		1, 59
+class-chain		7, 8, 9		1, 59
+class-chain	5, 3	7		1, 38
+class-chain	9, 3	7		1, 38
+class-chain	10, 3	7		1, 38
+class-chain		8, 4	1	1, 23
+class-chain		8, 9	1	1, 23
+class-chain		8, 10	1	1, 23
+class-chain		8, 4		1, 57
+class-chain		8, 9		1, 57
+class-chain		8, 10		1, 58
+class-chain		8, 17, 20		3, 56	1, 58
+class-chain		8, 17		2, 56	1, 58
+class-chain		8, 14, 21		3, 43
+class-chain		8, 14, 20		3, 55
+class-chain		8, 14		2, 55
+class-chain		12, 4	1	1, 23
+class-chain		12, 9	1	1, 23
+class-chain		12, 11	1	1, 23
+class-chain		12, 22, 4		1, 57
+class-chain		12, 22, 9		1, 57
+class-chain		12, 22, 11		1, 57
+class-chain		12, 4		1, 57
+class-chain		12, 9		1, 57
+class-chain		12, 11		1, 57
+class-chain	1	13, 21		1, 4	2, 43
+class-chain	1	13		1, 4
+class-chain	2	13, 21		2, 4	2, 39
+class-chain	2	13, 6		2, 6
+class-chain	2	13, 5		2, 6
+class-chain	3	13, 21		2, 40
+class-chain	3	13, 6		2, 7
+class-chain	3	13, 5		2, 7
+class-chain	3	14, 5		2, 5
+
+lookup end
+
+
+lookup	25	context
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+MarkAttachmentType	1
+
+class definition begin
+Ka	1
+Kha	1
+Gha	1
+Nga	1
+Ngha	1
+Ca	1
+Cha	1
+Ja	1
+Jha	1
+Nyha	1
+Tta	1
+Dda	1
+Ddha	1
+Ta	1
+Da	1
+Na	1
+Nha	1
+Pa	1
+Pha	1
+Ba	1
+Bha	1
+Ma	1
+Mha	1
+Ya	1
+Ra	1
+Rha	1
+La	1
+Lha	1
+Wa	1
+Ssa	1
+Sa	1
+Ha	1
+Ha_Nga	1
+Ha_Nya	1
+Ha_Nna	1
+Ha_Na	1
+Ha_Ma	1
+Ha_Ra	1
+Ha_La	1
+Nga_Ha	1
+Na_Ha	1
+Ma_Ha	1
+Ra_Ha	1
+La_Ha	1
+Bha.alt	1
+Ha.alt	1
+Ju	1
+Juu	1
+Ru	1
+Ruu	1
+Ka.icd	1
+Kha.icd	1
+Gha.icd	1
+Nga.icd	1
+Ca.icd	1
+Cha.icd	1
+Ja.icd	1
+Jha.icd	1
+Tta.icd	1
+Dda.icd	1
+Ddha.icd	1
+Ta.icd	1
+Da.icd	1
+Na.icd	1
+Pa.icd	1
+Pha.icd	1
+Ba.icd	1
+Bha.icd	1
+Ma.icd	1
+Ya.icd	1
+La.icd	1
+Va.icd	1
+Ssa.icd	1
+Sa.icd	1
+Ha.icd	1
+Ka_Ssa	1
+Ja_Nya	1
+Ka_Nya	1
+Ka.icd.alt	1
+Ja.icd.alt	1
+Ha.icd.alt	1
+Ka.icd.wide	1
+Ja.icd.wide	1
+Ha.icd.wide	1
+Ha_Ta	1
+Ha_Kha	1
+Nga_Ta	1
+Tta_Ta	1
+Ddha_Ta	1
+Da_Ta	1
+Pha_Ta	1
+Da_Nna	1
+E_dv	2
+AI_dv	2
+O_dv	2
+AU_dv	2
+E_dv.sm	2
+E_dv.lg	2
+AI_dv.sm	2
+AI_dv.lg	2
+O_dv.sm	2
+O_dv.lg	2
+AU_dv.sm	2
+AU_dv.lg	2
+Kha.diag	3
+Gha.diag	3
+Jha.diag	3
+Pa.diag	3
+Ma.diag	3
+Ya.diag	3
+Ssa.diag	3
+Sa.diag	3
+Kha.cd	4
+Gha.cd	4
+Jha.cd	4
+Dha.cd	4
+Pa.cd	4
+Ma.cd	4
+Ya.cd	4
+Ssa.cd	4
+Sa.cd	4
+Ta.post.head	4
+Repha	5
+Repha_I_dv	5
+Repha_AI_dv	5
+class definition end
+
+class	1, 5, 4, 2	1, 26	3, 26
+class	1, 4, 2	1, 26	2, 26
+class	1, 3, 2	1, 26
+class	1, 3, 2	1, 26
+class	1, 5, 2	1, 26
+class	1, 2	1, 26
+
+lookup end
+
+
+lookup	26	single
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+Ka	Ka.nohd
+Kha	Kha.nohd
+Gha	Gha.nohd
+Nga	Nga.nohd
+Ngha	Ngha.nohd
+Ca	Ca.nohd
+Cha	Cha.nohd
+Ja	Ja.nohd
+Jha	Jha.nohd
+Nyha	Nyha.nohd
+Tta	Tta.nohd
+Dda	Dda.nohd
+Ddha	Ddha.nohd
+Ta	Ta.nohd
+Da	Da.nohd
+Na	Na.nohd
+Nha	Nha.nohd
+Pa	Pa.nohd
+Pha	Pha.nohd
+Ba	Ba.nohd
+Bha	Bha.nohd
+Ma	Ma.nohd
+Mha	Mha.nohd
+Ya	Ya.nohd
+Ra	Ra.nohd
+Rha	Rha.nohd
+La	La.nohd
+Lha	Lha.nohd
+Wa	Wa.nohd
+Ssa	Ssa.nohd
+Sa	Sa.nohd
+Ha	Ha.nohd
+Ha_Nga	Ha_Nga.nohd
+Ha_Nya	Ha_Nya.nohd
+Ha_Nna	Ha_Nna.nohd
+Ha_Na	Ha_Na.nohd
+Ha_Ma	Ha_Ma.nohd
+Ha_Ra	Ha_Ra.nohd
+Ha_La	Ha_La.nohd
+Nga_Ha	Nga_Ha.nohd
+Na_Ha	Na_Ha.nohd
+Ma_Ha	Ma_Ha.nohd
+Ra_Ha	Ra_Ha.nohd
+La_Ha	La_Ha.nohd
+Bha.alt	Bha.alt.nohd
+Ha.alt	Ha.alt.nohd
+Ju	Ju.nohd
+Juu	Juu.nohd
+Ru	Ru.nohd
+Ruu	Ruu.nohd
+Ka.icd	Ka.icd.nohd
+Kha.icd	Kha.icd.nohd
+Kha.cd	Kha.cd.nohd
+Gha.icd	Gha.icd.nohd
+Gha.cd	Gha.cd.nohd
+Nga.icd	Nga.icd.nohd
+Ca.icd	Ca.icd.nohd
+Cha.icd	Cha.icd.nohd
+Ja.icd	Ja.icd.nohd
+Jha.icd	Jha.icd.nohd
+Jha.cd	Jha.cd.nohd
+Tta.icd	Tta.icd.nohd
+Dda.icd	Dda.icd.nohd
+Ddha.icd	Ddha.icd.nohd
+Ta.icd	Ta.icd.nohd
+Da.icd	Da.icd.nohd
+Na.icd	Na.icd.nohd
+Pa.icd	Pa.icd.nohd
+Pa.cd	Pa.cd.nohd
+Pha.icd	Pha.icd.nohd
+Ba.icd	Ba.icd.nohd
+Bha.icd	Bha.icd.nohd
+Ma.icd	Ma.icd.nohd
+Ma.cd	Ma.cd.nohd
+Ya.icd	Ya.icd.nohd
+Ya.cd	Ya.cd.nohd
+La.icd	La.icd.nohd
+Va.icd	Va.icd.nohd
+Ssa.icd	Ssa.icd.nohd
+Ssa.cd	Ssa.cd.nohd
+Sa.icd	Sa.icd.nohd
+Sa.cd	Sa.cd.nohd
+Ha.icd	Ha.icd.nohd
+Ka_Ssa	Ka_Ssa.nohd
+Ja_Nya	Ja_Nya.nohd
+Ka_Nya	Ka_Nya.nohd
+Ka.icd.alt	Ka.icd.alt.nohd
+Ja.icd.alt	Ja.icd.alt.nohd
+Ha.icd.alt	Ha.icd.alt.nohd
+Ka.icd.wide	Ka.icd.wide.nohd
+Ja.icd.wide	Ja.icd.wide.nohd
+Ha.icd.wide	Ha.icd.wide.nohd
+Ha_Ta	Ha_Ta.nohd
+Ha_Kha	Ha_Kha.nohd
+Nga_Ta	Nga_Ta.nohd
+Tta_Ta	Tta_Ta.nohd
+Ddha_Ta	Ddha_Ta.nohd
+Da_Ta	Da_Ta.nohd
+Pha_Ta	Pha_Ta.nohd
+Da_Nna	Da_Nna.nohd
+Ta.post.head	Ta.post
+
+lookup end
+
+
+lookup	27	ligature
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+MarkAttachmentType	2
+
+Ju	Ja	U_dv
+Juu	Ja	UU_dv
+Da_Nna	Da	Nna.post
+Ru	Ra	U_dv
+Ruu	Ra	UU_dv
+
+lookup end
+
+
+lookup	28	single
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+AA_dv	AA_dv.alt
+I_dv	I_dv_Repha
+U_dv	U_dv.alt
+UU_dv	UU_dv.alt
+E_dv	E_dv.alt
+AI_dv	AI_dv.alt
+O_dv	O_dv.alt
+AU_dv	AU_dv.alt
+
+lookup end
+
+
+lookup	29	single
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+AA_dv	AA_dv.alt2
+UU_dv	UU.sm.alt
+E_dv	E_dv.alt
+AA_dv.alt	AA_dv.alt2
+AU_dv_part.alt	AU_dv_part.alt2
+
+lookup end
+
+
+lookup	30	multiple
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+AI_dv.alt	E_dv.alt	AI_dv_top.alt
+O_dv.alt	E_dv.alt	AA_dv.alt
+AU_dv.alt	E_dv.alt	AU_dv_part.alt
+
+lookup end
+
+
+lookup	31	multiple
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+AI_dv.alt	E_dv.alt	AI_dv_top.alt
+O_dv.alt	E_dv.alt	AA_dv.alt2
+AU_dv.alt	E_dv.alt	AU_dv_part.alt2
+
+lookup end
+
+
+lookup	32	single
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+I_dv	I_dv.sm
+U_dv	U_dv.sm
+UU_dv	UU.sm
+R_dv	vocR.sm
+RR_dv	vocRR.sm
+L_dv	vocL.sm
+LL_dv	vocLL.sm
+E_dv	E_dv.sm
+AI_dv	AI_dv.sm
+O_dv	O_dv.sm
+AU_dv	AU_dv.sm
+UU_dv.alt	UU.sm.alt
+
+lookup end
+
+
+lookup	33	single
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+II_dv	NullMark
+Repha	NullMark
+Repha_I_dv	NullMark
+
+lookup end
+
+
+lookup	34	chained
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+MarkAttachmentType	2
+
+backtrackclass definition begin
+Ja	1
+Ta	1
+Da	1
+Bha	1
+Mha	1
+Ha_Ma	1
+Nga.icd	1
+Ja.icd	1
+Ha_Kha	1
+Nga_Ta	1
+Tta_Ta	1
+Ddha_Ta	1
+Da_Ta	1
+Pha_Ta	1
+Da_Nna	1
+Nga.icd.shim	1
+Ja.icd.shim	1
+Ka	2
+Cha	2
+Ttha	2
+Ju	2
+Juu	2
+Ru	2
+Ruu	2
+Ka.icd	2
+Ka_Ssa	2
+Ja_Nya	2
+Ja.icd.alt	2
+Ka.icd.wide	2
+Ha.icd.wide	2
+NyJha.alt	2
+Ha_Ta	2
+Nya	3
+Ka_Nya	3
+Ka.icd.alt	3
+Ha.icd.alt	3
+Ga	4
+Nna	4
+Dha	4
+Sha	4
+Na_Ha	4
+Ma_Ha	4
+Ra_Ha	4
+La_Ha	4
+Kha.cd	4
+Gha.cd	4
+Jha.cd	4
+Dha.icd	4
+Dha.cd	4
+Pa.cd	4
+Ma.cd	4
+Ya.cd	4
+Ssa.cd	4
+Sa.cd	4
+Kha.diag	4
+Gha.diag	4
+Jha.diag	4
+Pa.diag	4
+Ma.diag	4
+Ya.diag	4
+Ssa.diag	4
+Sa.diag	4
+NyGha	4
+NyJha	4
+NyKha	4
+NyMa	4
+NyPa	4
+NySa	4
+NySsa	4
+NyYa	4
+Ja.cd	6
+Nya.cd	6
+Nya_stem.cd	6
+Nya_low.cd	6
+Nya.cd.alt	6
+Tha.post	6
+Da.icd	7
+Kha	8
+Gha	8
+Nga	8
+Ca	8
+Jha	8
+Tta	8
+Dda	8
+Ddha	8
+Tha	8
+Na	8
+Pa	8
+Pha	8
+Ba	8
+Ma	8
+Ya	8
+Ra	8
+Wa	8
+Ssa	8
+Sa	8
+Ha	8
+Bha.alt	8
+Ha.alt	8
+Kha.icd	8
+Ga.icd	8
+Gha.icd	8
+Ca.icd	8
+Cha.icd	8
+Jha.icd	8
+Ttha.icd	8
+Dda.icd	8
+Ddha.icd	8
+Nna.icd	8
+Ta.icd	8
+Tha.icd	8
+Na.icd	8
+Pa.icd	8
+Pha.icd	8
+Ba.icd	8
+Bha.icd	8
+Ma.icd	8
+Ya.icd	8
+La.icd	8
+Va.icd	8
+Sha.icd	8
+Ssa.icd	8
+Sa.icd	8
+Ha.icd	8
+Dda.icd.shim	8
+Ddha.icd.shim	8
+Pha.icd.shim	8
+Ha.icd.shim	8
+Pha.icd.shim.sm	8
+Ba.icd.shim.sm	8
+Pa.icd.shim.sm	8
+Ya.icd.shim.sm	8
+Ka.cd	9
+Ga.cd	9
+Ca.cd	9
+Ttha.cd	9
+Dda.cd	9
+Ddha.cd	9
+Da.cd	9
+Na.cd	9
+Pha.cd	9
+Ba.cd	9
+Bha.cd	9
+Ra.cd	9
+La.cd	9
+Va.cd	9
+Sha.cd	9
+Ha.cd	9
+Ga.cd.alt	9
+Dda.cd.alt	9
+Bha.cd.alt	9
+Sha.cd.alt	9
+Nya_Ha	10
+Nya.icd	10
+Nya_nostem.icd	10
+NyDha	10
+Nya_Ta	10
+Nna.post	11
+Nna.post.alt	11
+Nna.post.alt2	11
+Nna.post.nostem	11
+Dha.cd.ns	12
+Kha.cd.nohd.ns	12
+Gha.cd.nohd.ns	12
+Jha.cd.nohd.ns	12
+Pa.cd.nohd.ns	12
+Ma.cd.nohd.ns	12
+Ya.cd.nohd.ns	12
+Ssa.cd.nohd.ns	12
+Sa.cd.nohd.ns	12
+Ta.post.ns	12
+class definition end
+
+class definition begin
+I_dv	1
+I_dv_Repha	1
+II_dv	2
+II_dv_Repha	2
+class definition end
+
+lookaheadclass definition begin
+Nna	1
+Tha	1
+Na	1
+Ba	1
+Bha	1
+Ju	1
+Juu	1
+Gha.icd	1
+Nga.icd	1
+Ja.icd	1
+Ttha.icd	1
+Nna.icd	1
+Na.icd	1
+Pa.cd	1
+Pha.icd	1
+Ba.icd	1
+Ma.icd	1
+Ya.icd	1
+La.icd	1
+Va.icd	1
+Ssa.icd	1
+Ka_Ssa	1
+Ja_Nya	1
+Ja.icd.alt	1
+NyJha.alt	1
+Nga_Ta	1
+Nga.icd.shim	1
+Pha.icd.shim	1
+Ja.icd.shim	1
+Pha.icd.shim.sm	1
+Ba.icd.shim.sm	1
+Ya.icd.shim.sm	1
+Ngha	2
+Nyha	2
+Nha	2
+Mha	2
+Rha	2
+Lha	2
+Ha_Nga	2
+Ha_Nya	2
+Ha_Nna	2
+Ha_Na	2
+Ha_Ma	2
+Ha_Ra	2
+Ha_La	2
+Nga_Ha	2
+Nya_Ha	2
+Nna_Ha	2
+Na_Ha	2
+Ma_Ha	2
+La_Ha	2
+Kha.icd	2
+Cha.icd	2
+Jha.icd	2
+Nya.icd	2
+Nya_nostem.icd	2
+Tta.icd	2
+Dda.icd	2
+Ddha.icd	2
+Ta.icd	2
+Tha.icd	2
+Da.icd	2
+Dha.icd	2
+Pa.icd	2
+Sa.icd	2
+NyDha	2
+NyGha	2
+NyJha	2
+NyKha	2
+NyMa	2
+NyPa	2
+NySa	2
+NySsa	2
+NyYa	2
+Tta_Ta	2
+Ddha_Ta	2
+Da_Ta	2
+Pha_Ta	2
+Dda.icd.shim	2
+Ddha.icd.shim	2
+Cha.icd.shim	2
+Tta.icd.shim	2
+Pa.icd.shim.sm	2
+Dha	3
+Ta.half	6
+class definition end
+
+class-chain		1	1	1, 37
+class-chain		1	2	1, 36
+class-chain		1	3	1, 35
+class-chain		1	6	1, 59
+class-chain	6, 8	2		1, 39
+class-chain	9, 1	2		1, 38
+class-chain	11, 1	2		1, 38
+class-chain	1	2		1, 38
+class-chain	6, 2	2		1, 39
+class-chain	9, 2	2		1, 39
+class-chain	12, 2	2		1, 39
+class-chain	11, 2	2		1, 39
+class-chain	2	2		1, 39
+class-chain	6, 3	2		1, 40
+class-chain	9, 3	2		1, 40
+class-chain	11, 3	2		1, 40
+class-chain	12, 3	2		1, 40
+class-chain	3	2		1, 40
+class-chain	9, 4	2		1, 36
+class-chain	11, 4	2		1, 40
+class-chain	4	2		1, 36
+class-chain	9, 8	2		1, 41
+class-chain	11, 8	2		1, 41
+class-chain	8	2		1, 41
+class-chain	9, 7	2		1, 38
+class-chain	7	2		1, 38
+class-chain	10	2		1, 14
+
+lookup end
+
+
+lookup	35	single
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+I_dv	I_dv.xxsm
+I_dv_Repha	I_dv_Repha.xxsm
+
+lookup end
+
+
+lookup	36	single
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+I_dv	I_dv.xsm
+II_dv	II_dv.xsm
+I_dv_Repha	I_dv_Repha.xsm
+II_dv_Repha	II_dv_Repha.xsm
+
+lookup end
+
+
+lookup	37	single
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+I_dv	I_dv.sm
+I_dv_Repha	I_dv_Repha.sm
+
+lookup end
+
+
+lookup	38	single
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+II_dv	II_dv.med
+II_dv_Repha	II_dv_Repha.med
+
+lookup end
+
+
+lookup	39	single
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+II_dv	II_dv.lg
+E_dv	E_dv.lg
+AI_dv	AI_dv.lg
+O_dv	O_dv.lg
+AU_dv	AU_dv.lg
+II_dv_Repha	II_dv_Repha.lg
+
+lookup end
+
+
+lookup	40	single
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+II_dv	II_dv.xlg
+II_dv_Repha	II_dv_Repha.xlg
+
+lookup end
+
+
+lookup	41	single
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+II_dv	II_dv.med.alt
+II_dv_Repha	II_dv_Repha.med.alt
+
+lookup end
+
+
+lookup	42	single
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+II_dv	II_dv.lg.alt
+II_dv_Repha	II_dv_Repha.lg.alt
+
+lookup end
+
+
+lookup	43	single
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+II_dv	II_dv.xlg.alt
+II_dv_Repha	II_dv_Repha.xlg.alt
+
+lookup end
+
+
+lookup	44	single
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+E_dv	E_dv.lg
+AI_dv	AI_dv.lg
+O_dv	O_dv.lg
+AU_dv	AU_dv.lg
+E_dv.sm	E_dv
+AI_dv.sm	AI_dv
+O_dv.sm	O_dv
+AU_dv.sm	AU_dv
+
+lookup end
+
+
+lookup	45	single
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+E_dv.sm	E_dv.lg
+AI_dv.sm	AI_dv.lg
+O_dv.sm	O_dv.lg
+AU_dv.sm	AU_dv.lg
+
+lookup end
+
+
+lookup	46	ligature
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+Ta.half	Ta	Virama
+Ra.half	Ra	Virama
+
+lookup end
+
+
+lookup	47	context
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+MarkAttachmentType	1
+
+class definition begin
+Ka.icd	1
+Kha.icd	1
+Ga.icd	1
+Gha.icd	1
+Nga.icd	1
+Ca.icd	1
+Cha.icd	1
+Jha.icd	1
+Nya.icd	1
+Nya_nostem.icd	1
+Tta.icd	1
+Ttha.icd	1
+Dda.icd	1
+Ddha.icd	1
+Nna.icd	1
+Ta.icd	1
+Tha.icd	1
+Da.icd	1
+Dha.icd	1
+Na.icd	1
+Pa.icd	1
+Pha.icd	1
+Ba.icd	1
+Bha.icd	1
+Ma.icd	1
+Ya.icd	1
+La.icd	1
+Va.icd	1
+Sha.icd	1
+Ssa.icd	1
+Sa.icd	1
+Ha.icd.wide	1
+Kha.icd.nohd	1
+Gha.icd.nohd	1
+Nga.icd.nohd	1
+Ca.icd.nohd	1
+Cha.icd.nohd	1
+Jha.icd.nohd	1
+Tta.icd.nohd	1
+Dda.icd.nohd	1
+Ddha.icd.nohd	1
+Ta.icd.nohd	1
+Da.icd.nohd	1
+Na.icd.nohd	1
+Pa.icd.nohd	1
+Pha.icd.nohd	1
+Bha.icd.nohd	1
+Ba.icd.nohd	1
+Ma.icd.nohd	1
+Ya.icd.nohd	1
+La.icd.nohd	1
+Va.icd.nohd	1
+Ssa.icd.nohd	1
+Sa.icd.nohd	1
+Gi.icd	1
+Shi.icd	1
+Nga.icd.shim	1
+Dda.icd.shim	1
+Ddha.icd.shim	1
+Cha.icd.shim	1
+Tta.icd.shim	1
+Pha.icd.shim	1
+Pha.icd.shim.sm	1
+Ba.icd.shim.sm	1
+Pa.icd.shim.sm	1
+Ya.icd.shim.sm	1
+I_iv	2
+II_iv	2
+AI_iv	2
+O_iv	2
+AU_iv	2
+I_dv	2
+II_dv	2
+E_dv	2
+AI_dv	2
+O_dv	2
+AU_dv	2
+Repha	2
+E_dv.sm	2
+E_dv.lg	2
+AI_dv.sm	2
+AI_dv.lg	2
+O_dv.sm	2
+O_dv.lg	2
+AU_dv.sm	2
+AU_dv.lg	2
+I_dv.xxsm	2
+I_dv.xsm	2
+I_dv.sm	2
+II_dv.xsm	2
+II_dv.med	2
+II_dv.lg	2
+II_dv.xlg	2
+AI_dv_top.alt	2
+AU_dv_part.alt	2
+AU_dv_part.alt2	2
+AU_dv_part.alt3	2
+Gi	2
+Shi	2
+I_dv_Repha	2
+I_dv_Repha.sm	2
+I_dv_Repha.xsm	2
+I_dv_Repha.xxsm	2
+II_dv_Repha	2
+II_dv_Repha.xsm	2
+II_dv_Repha.med	2
+II_dv_Repha.lg	2
+II_dv_Repha.xlg	2
+Repha_I_dv	2
+II_dv.lg.alt	2
+II_dv.med.alt	2
+II_dv.xlg.alt	2
+II_dv_Repha.lg.alt	2
+II_dv_Repha.med.alt	2
+II_dv_Repha.xlg.alt	2
+Nga_Ha	3
+Nya_Ha	3
+Nna_Ha	3
+Na_Ha	3
+Ma_Ha	3
+La_Ha	3
+Nga_Ha.nohd	3
+Na_Ha.nohd	3
+Ma_Ha.nohd	3
+La_Ha.nohd	3
+Nga_Ta	3
+Tta_Ta	3
+Ddha_Ta	3
+Da_Ta	3
+Pha_Ta	3
+Nya_Ta	3
+Nga_Ta.nohd	3
+Tta_Ta.nohd	3
+Ddha_Ta.nohd	3
+Da_Ta.nohd	3
+Pha_Ta.nohd	3
+Candrabindu	4
+Repha_AI_dv	5
+Ja.icd	6
+Ha.icd	6
+Ha.icd.alt	6
+Ha.icd.shim	6
+Ja.icd.shim	6
+class definition end
+
+class	1, 4	2, 48
+class	2, 5, 4	3, 48
+class	2, 6, 4	3, 48
+class	2, 3, 4	3, 48
+class	2, 1, 4	3, 48
+class	2, 4	2, 48
+class	3, 4	2, 48
+
+lookup end
+
+
+lookup	48	single
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+Candrabindu	Candrabindu.sm
+
+lookup end
+
+
+lookup	49	ligature
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+Kha.half	Kha	Virama	ZWJ
+Ga.half	Ga	Virama	ZWJ
+Gha.half	Gha	Virama	ZWJ
+Ca.half	Ca	Virama	ZWJ
+Jha.half	Jha	Virama	ZWJ
+Nna.half	Nna	Virama	ZWJ
+Ta.half	Ta	Virama
+Tha.half	Tha	Virama	ZWJ
+Dha.half	Dha	Virama	ZWJ
+Na.half	Na	Virama	ZWJ
+Pa.half	Pa	Virama	ZWJ
+Ba.half	Ba	Virama	ZWJ
+Bha.half	Bha	Virama	ZWJ
+Ma.half	Ma	Virama	ZWJ
+Ya.half	Ya	Virama	ZWJ
+Ra.half	Ra	Virama
+La.half	La	Virama	ZWJ
+Va.half	Wa	Virama	ZWJ
+Sha.half	Sha	Virama	ZWJ
+Ssa.half	Ssa	Virama	ZWJ
+Sa.half	Sa	Virama	ZWJ
+
+lookup end
+
+
+lookup	50	single
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+Ka	Ka.icd
+Kha	Kha.icd
+Ga	Ga.icd
+Gha	Gha.icd
+Nga	Nga.icd
+Ca	Ca.icd
+Cha	Cha.icd
+Ja	Ja.icd
+Jha	Jha.icd
+Nya	Nya.icd
+Tta	Tta.icd
+Ttha	Ttha.icd
+Dda	Dda.icd
+Ddha	Ddha.icd
+Nna	Nna.icd
+Ta	Ta.icd
+Tha	Tha.icd
+Da	Da.icd
+Dha	Dha.icd
+Na	Na.icd
+Pa	Pa.icd
+Pha	Pha.icd
+Ba	Ba.icd
+Bha	Bha.icd
+Ma	Ma.icd
+Ya	Ya.icd
+La	La.icd
+Wa	Va.icd
+Sha	Sha.icd
+Ssa	Ssa.icd
+Sa	Sa.icd
+Ha	Ha.icd
+
+lookup end
+
+
+lookup	51	ligature
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+Ka.cd	Virama	Ka
+Kha.cd	Virama	Kha
+Ga.cd	Virama	Ga
+Gha.cd	Virama	Gha
+Nga.cd	Virama	Nga
+Ca.cd	Virama	Ca
+Cha.cd	Virama	Cha
+Ja.cd	Virama	Ja
+Jha.cd	Virama	Jha
+Nya.cd	Virama	Nya
+Tta.cd	Virama	Tta
+Ttha.cd	Virama	Ttha
+Dda.cd	Virama	Dda
+Ddha.cd	Virama	Ddha
+Tha.post	Virama	Tha
+Da.cd	Virama	Da
+Dha.cd	Virama	Dha
+Na.cd	Virama	Na
+Pa.cd	Virama	Pa
+Pha.cd	Virama	Pha
+Ba.cd	Virama	Ba
+Bha.cd	Virama	Bha
+Ma.cd	Virama	Ma
+Ya.cd	Virama	Ya
+Ra.cd	Virama	Ra
+La.cd	Virama	La
+Va.cd	Virama	Wa
+Sha.cd	Virama	Sha
+Ssa.cd	Virama	Ssa
+Sa.cd	Virama	Sa
+Ha.cd	Virama	Ha
+
+lookup end
+
+
+lookup	52	ligature
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+MarkAttachmentType	2
+
+Nna.post	Virama	Nna
+Ta.post	Virama	Ta
+
+lookup end
+
+
+lookup	53	ligature
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+MarkAttachmentType	2
+
+Nna.post.alt2	Virama	Nna
+
+lookup end
+
+
+lookup	54	ligature
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+MarkAttachmentType	2
+
+Kha.diag	Virama	Kha
+Gha.diag	Virama	Gha
+Jha.diag	Virama	Jha
+Pa.diag	Virama	Pa
+Ma.diag	Virama	Ma
+Ya.diag	Virama	Ya
+Ssa.diag	Virama	Ssa
+Sa.diag	Virama	Sa
+
+lookup end
+
+
+lookup	55	multiple
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+U_dv	U_dv	NyaShim
+UU_dv	UU_dv	NyaShim
+Ka.cd	Ka.cd	NyaShim
+Cha.cd	Cha.cd	NyaShim
+Ja.cd	Ja.cd	NyaShim
+Nya_stem.cd	Nya_stem.cd	NyaShim
+Nya.cd.alt	Nya.cd.alt	NyaShim
+Nya_stem.cd.alt	Nya_stem.cd.alt	NyaShim
+Tha.post	Tha.post	NyaShim
+U_dv.alt	U_dv.alt	NyaShim
+U_dv.sm	U_dv.sm	NyaShim
+UU_dv.alt	UU_dv.alt	NyaShim
+UU.sm	UU.sm	NyaShim
+UU.sm.alt	UU.sm.alt	NyaShim
+Cha.cd.alt	Cha.cd.alt	NyaShim
+
+lookup end
+
+
+lookup	56	multiple
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+U_dv	U_dv	Headed_Shim.md
+UU_dv	UU_dv	Headed_Shim.md
+Ka.cd	Ka.cd	Headed_Shim.md
+Cha.cd	Cha.cd	Headed_Shim.md
+Ja.cd	Ja.cd	Headed_Shim.md
+Nya_stem.cd	Nya_stem.cd	Headed_Shim.md
+Nya_low.cd	Nya_low.cd	Headed_Shim.md
+Nya.cd.alt	Nya.cd.alt	Headed_Shim.md
+Nya_stem.cd.alt	Nya_stem.cd.alt	Headed_Shim.md
+Tha.post	Tha.post	Headed_Shim.md
+Tha.post.alt	Tha.post.alt	Headed_Shim.md
+U_dv.alt	U_dv.alt	Headed_Shim.md
+U_dv.sm	U_dv.sm	Headed_Shim.md
+UU_dv.alt	UU_dv.alt	Headed_Shim.md
+UU.sm	UU.sm	Headed_Shim.md
+UU.sm.alt	UU.sm.alt	Headed_Shim.md
+Cha.cd.alt	Cha.cd.alt	Headed_Shim.md
+
+lookup end
+
+
+lookup	57	single
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+Nga.icd	Nga.icd.shim
+Cha.icd	Cha.icd.shim
+Ja.icd	Ja.icd.shim
+Tta.icd	Tta.icd.shim
+Dda.icd	Dda.icd.shim
+Ddha.icd	Ddha.icd.shim
+Pha.icd	Pha.icd.shim
+Ha.icd	Ha.icd.shim
+
+lookup end
+
+
+lookup	58	single
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+Pa.icd	Pa.icd.shim.sm
+Pha.icd	Pha.icd.shim.sm
+Ba.icd	Ba.icd.shim.sm
+Ya.icd	Ya.icd.shim.sm
+
+lookup end
+
+
+lookup	59	single
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+I_dv	I_dv.alt
+I_dv.xsm	I_dv.alt
+I_dv.sm	I_dv.alt
+I_dv_Repha	I_dv_Repha.alt
+I_dv_Repha.sm	I_dv_Repha.alt
+I_dv_Repha.xsm	I_dv_Repha.alt
+
+lookup end
+
