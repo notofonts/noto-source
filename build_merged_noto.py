@@ -67,7 +67,8 @@ def find_sources(family):
                 return False
         return True
     return {
-        '%s.ttf' % family: [main_shard] + filter(include, sorted(shards)),
+        '%s.ttf' % family: [main_shard] + [
+            s for s in sorted(shards) if include(s)],
         '%s-Italic.ttf' % family: ['src/%s-ItalicMM.glyphs' % family],
     }
 
