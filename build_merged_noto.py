@@ -145,7 +145,7 @@ def merge_masters(family, style, masters):
     masters_mtime = max(os.path.getmtime(m) for m in masters)
     if merged_mtime > masters_mtime:
         return merged
-    command = '../fonttools/fonttools merge ' + ' '.join(masters)
+    command = 'fonttools merge ' + ' '.join(masters)
     print(command)
     assert os.system(command) == 0, 'command failed: %s' % command
     shutil.move('merged.ttf', merged)
