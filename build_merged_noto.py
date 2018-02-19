@@ -22,39 +22,7 @@ import shutil
 import xml.etree.ElementTree as etree
 
 
-# Merge failures; https://github.com/fonttools/fonttools/issues/1057
-BLACKLIST = [
-    'NotoSansAnatolianHieroglyphs',
-    'NotoSansBamum',
-    'NotoSansCarian',
-    'NotoSansCuneiform',
-    'NotoSansCypriot',
-    'NotoSansDeseret',
-    'NotoSansDevanagari',
-    'NotoSansEgyptianHieroglyphs',
-    'NotoSansGlagolitic',
-    'NotoSansImperialAramaic',
-    'NotoSansLinearB',
-    'NotoSansLisu',
-    'NotoSansLycian',
-    'NotoSansLydian',
-    'NotoSansOgham',
-    'NotoSansOlChiki',
-    'NotoSansOldPersian',
-    'NotoSansOldSouthArabian',
-    'NotoSansOldTurkic',
-    'NotoSansOsmanya',
-    'NotoSansPhoenician',
-    'NotoSansRunic',
-    'NotoSansShavian',
-    'NotoSansSymbols',
-    'NotoSansSymbols2',
-    'NotoSansUgaritic',
-    'NotoSansVai',
-    'NotoSansYi',
-
-    'NotoSerifTamil',
-]
+BLACKLIST = []
 
 
 def build_family(family):
