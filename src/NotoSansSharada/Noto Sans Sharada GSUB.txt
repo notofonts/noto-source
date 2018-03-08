@@ -1,0 +1,210 @@
+FontDame GSUB table
+
+
+script table begin
+shrd	default		0, 1, 2
+script table end
+
+
+feature table begin
+0	abvf	1
+1	akhn	0
+2	blwf	3
+
+feature table end
+
+lookup	0	ligature
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+Ku	Ka	U
+Kuu	Ka	UU
+Kr	Ka	vocR
+Krr	Ka	vocRR
+Kl	Ka	vocL
+Kll	Ka	vocLL
+KKa	Ka	virama	Ka
+KTVa	Ka	virama	Ta	virama	Va
+KTa	Ka	virama	Ta
+KPRa	Ka	virama	Pa	virama	Ra
+KRu	Ka	virama	Ra	U
+KRuu	Ka	virama	Ra	UU
+KSsa	Ka	virama	Ssa
+Gu	Ga	U
+Guu	Ga	UU
+GRa	Ga	virama	Ra
+Ngaa	Nga	AA
+NgKaa	Nga	virama	Ka	AA
+NgKa	Nga	virama	Ka
+NgNgaa	Nga	virama	Nga	AA
+NgNga	Nga	virama	Nga
+Jaa	Ja	AA
+JJaa	Ja	virama	Ja	AA
+JJVa	Ja	virama	Ja	virama	Va
+JJa	Ja	virama	Ja
+JNya	Ja	virama	Nya
+JNnaa	Ja	virama	Nna	AA
+JNna	Ja	virama	Nna
+JYaa	Ja	virama	Ya	AA
+JYa	Ja	virama	Ya
+Jhu	Jha	U
+Jhuu	Jha	UU
+Nyu	Nya	U
+Nyuu	Nya	UU
+Ttaa	Tta	AA
+TtKaa	Tta	virama	Ka	AA
+TtKa	Tta	virama	Ka
+Ddu	Dda	U
+Dduu	Dda	UU
+Nnaa	Nna	AA
+NnDdu	Nna	virama	Dda	U
+NnDda	Nna	virama	Dda
+NnShaa	Nna	virama	Sha	AA
+NnSha	Nna	virama	Sha
+Tu	Ta	U
+Tuu	Ta	UU
+Tl	Ta	vocL
+Tll	Ta	vocLL
+TTha	Ta	virama	Tha
+TYa	Ta	virama	Ya
+TRa	Ta	virama	Ra
+TSu	Ta	virama	Sa	U
+TSa	Ta	virama	Sa
+DDha	Da	virama	Dha
+DYa	Da	virama	Ya
+DRu	Da	virama	Ra	U
+DRuu	Da	virama	Ra	UU
+NTu	Na	virama	Ta	U
+NTa	Na	virama	Ta
+NTha	Na	virama	Tha
+NDha	Na	virama	Dha
+Bhu	Bha	U
+Bhuu	Bha	UU
+BhRu	Bha	virama	Ra	U
+BhRuu	Bha	virama	Ra	UU
+BhRa	Bha	virama	Ra
+Ru	Ra	U
+Ruu	Ra	UU
+RKSsa	Ra	virama	Ka	virama	Ssa
+RKa	Ra	virama	Ka
+RGa	Ra	virama	Ga
+RJa	Ra	virama	Ja
+RNna	Ra	virama	Nna
+RTr	Ra	virama	Ta	vocR
+RTRaa	Ra	virama	Ta	virama	Ra	AA
+RTRa	Ra	virama	Ta	virama	Ra
+RTa	Ra	virama	Ta
+RTha	Ra	virama	Tha
+RYuu	Ra	virama	Ya	UU
+RYa	Ra	virama	Ya
+RVYa	Ra	virama	Va	virama	Ya
+RVa	Ra	virama	Va
+RSsa	Ra	virama	Ssa
+RHa	Ra	virama	Ha
+Shu	Sha	U
+Shuu	Sha	UU
+ShRu	Sha	virama	Ra	U
+ShRuu	Sha	virama	Ra	UU
+SsTta	Ssa	virama	Tta
+SsTtha	Ssa	virama	Ttha
+SsNna	Ssa	virama	Nna
+STu	Sa	virama	Ta	U
+STa	Sa	virama	Ta
+STha	Sa	virama	Tha
+SMr	Sa	virama	Ma	vocR
+SMa	Sa	virama	Ma
+HYa	Ha	virama	Ya
+
+lookup end
+
+
+lookup	1	context
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+class definition begin
+Jihvamuliya	1
+Upadhmaniya	1
+Ka	2
+Kha	2
+Pa	2
+Pha	2
+class definition end
+
+class	1, 2	1, 2
+
+lookup end
+
+
+lookup	2	single
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+Jihvamuliya	Jihvamuliya.ns
+Upadhmaniya	Upadhmaniya.ns
+
+lookup end
+
+
+lookup	3	context
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+MarkAttachmentType	1
+
+class definition begin
+KSsa	1
+KKa	1
+KTa	1
+KTVa	1
+Ca	2
+GRa	2
+BhRa	2
+HYa	2
+KPRa	2
+U	3
+UU	3
+class definition end
+
+class	1, 3	2, 4
+class	2, 3	2, 5
+
+lookup end
+
+
+lookup	4	single
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+U	U.alt
+UU	UU.alt
+
+lookup end
+
+
+lookup	5	single
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+U	U.alt2
+UU	UU.alt2
+
+lookup end
+
