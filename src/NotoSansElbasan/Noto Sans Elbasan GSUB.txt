@@ -1,0 +1,107 @@
+FontDame GSUB table
+
+
+script table begin
+elba	default		0
+grek	default		0
+script table end
+
+
+feature table begin
+0	ccmp	0
+
+feature table end
+
+lookup	0	context
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+class definition begin
+Gamma	1
+Delta	1
+Epsilon	1
+Zeta	1
+Xi	1
+Pi	1
+Tau	1
+Upsilon	1
+Chi	1
+uni03DC	1
+uni03DE	1
+uni25CC	1
+Alpha	2
+Beta	2
+Kappa	2
+Lambda	2
+Rho	2
+Sigma	2
+uni03DA	2
+Eta	3
+Theta	3
+Nu	3
+Omicron	3
+Mu	4
+Phi	4
+Psi	4
+Omega	4
+overlinecmb	10
+class definition end
+
+class	1, 10	2, 1
+class	2, 10	2, 2
+class	3, 10	2, 3
+class	4, 10	2, 4
+
+lookup end
+
+
+lookup	1	single
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+overlinecmb	overlinecmb.w1
+
+lookup end
+
+
+lookup	2	single
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+overlinecmb	overlinecmb.w2
+
+lookup end
+
+
+lookup	3	single
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+overlinecmb	overlinecmb.w3
+
+lookup end
+
+
+lookup	4	single
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+overlinecmb	overlinecmb.w4
+
+lookup end
+
