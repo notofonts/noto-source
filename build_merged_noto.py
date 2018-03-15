@@ -48,7 +48,7 @@ def find_sources(family):
         if shard.startswith(family) and path != main_shard:
             if shard.split('-')[0] in BLACKLIST:
                 continue
-            if shard.find('Display') >= 0 or shard.find('UI') >= 0:
+            if 'Display' in shard or 'UI' in shard:
                 continue
             if shard.startswith('NotoSansMono'):
                 continue
@@ -56,14 +56,14 @@ def find_sources(family):
                 shards.append(path)
             elif os.path.isdir(path):
                 plists = [f for f in os.listdir(path)
-                          if f.endswith('.plist') and f.find('UI') < 0]
+                          if f.endswith('.plist') and 'UI' not in f]
                 assert len(plists) == 1, shard
                 shards.append(os.path.join(path, plists[0]))
     if family == 'NotoSerif':
         shards.append('src/NotoSansAdlam/NotoSansAdlam-MM.plist')
     def include(path):
         for bad in ('Display', 'Italic', 'UI', 'Unjoined'):
-            if path.find(bad) >= 0:
+            if bad in path:
                 return False
         return True
     return {
