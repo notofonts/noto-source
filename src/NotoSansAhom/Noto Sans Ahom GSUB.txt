@@ -1,0 +1,187 @@
+FontDame GSUB table
+
+
+script table begin
+ahom	default		0, 1, 2
+script table end
+
+
+feature table begin
+0	ccmp	0, 1, 4, 5, 6
+1	dlig	2
+2	salt	3
+
+feature table end
+
+lookup	0	single
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+u11722	u11722.base
+u11723	u11723.base
+u11727	u11727.base
+u11729	u11729.base
+
+lookup end
+
+
+lookup	1	ligature
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+u1172811721	u11721	u11728
+u1172211724	u11724	u11722.base
+u1172811721	u11728	u11721
+u1172211724	u11722.base	u11724
+
+lookup end
+
+
+lookup	2	ligature
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+u117011171F	u11701	u1171F
+u1170411709	u11704	u11709
+u117071171F	u11707	u1171F
+
+lookup end
+
+
+lookup	3	single
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+u11714	u11714.alt
+u11719	u11719.alt
+u11733	u11733.alt
+u11734	u11734.alt
+
+lookup end
+
+
+lookup	4	chained
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+backtrackcoverage definition begin
+u11713
+u11714
+u11717
+u11718
+u11719
+u11719.alt
+u117071171F
+coverage definition end
+
+inputcoverage definition begin
+u1171E
+coverage definition end
+
+coverage	1,7
+lookup end
+
+
+lookup	5	chained
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+backtrackcoverage definition begin
+u11702
+u11703
+u11705
+u11706
+u11708
+u11709
+u11711
+u11715
+u11714.alt
+coverage definition end
+
+inputcoverage definition begin
+u1171E
+coverage definition end
+
+coverage	1,8
+lookup end
+
+
+lookup	6	chained
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+backtrackcoverage definition begin
+u11702
+u11703
+u11705
+u11706
+u11708
+u11709
+u11711
+u11715
+coverage definition end
+
+inputcoverage definition begin
+u1171D
+coverage definition end
+
+coverage	1,9
+lookup end
+
+
+lookup	7	single
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+u1171E	u1171E.desc
+
+lookup end
+
+
+lookup	8	single
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+u1171E	u1171E.sm
+
+lookup end
+
+
+lookup	9	single
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+u1171D	u1171D.sm
+
+lookup end
+
