@@ -1,0 +1,218 @@
+FontDame GSUB table
+
+
+script table begin
+arab	default		1
+mani	default		0, 2, 3, 4, 5
+script table end
+
+
+feature table begin
+0	ccmp	0, 1
+1	ccmp	7
+2	fina	2
+3	init	3
+4	medi	4
+5	rclt	5
+
+feature table end
+
+lookup	0	ligature
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+u10ADD10ACF	u10ADD	u10ACF
+u10ADD10AD7	u10ADD	u10AD7
+
+lookup end
+
+
+lookup	1	ligature
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+u10AC5.alt	u10AC5	uniFE00
+u10AC6.alt	u10AC6	uniFE00
+u10AD6.alt	u10AD6	uniFE00
+u10AD7.alt	u10AD7	uniFE00
+u10AE1.alt	u10AE1	uniFE00
+
+lookup end
+
+
+lookup	2	alternate
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+u10AC0	u10AC0.fina
+u10AC1	u10AC1.fina
+u10AC2	u10AC2.fina
+u10AC3	u10AC3.fina
+u10AC4	u10AC4.fina
+u10AC5	u10AC5.fina
+u10AC7	u10AC7.fina
+u10AC9	u10AC9.fina
+u10ACA	u10ACA.fina
+u10ACE	u10ACE.fina
+u10ACF	u10ACF.fina
+u10AD0	u10AD0.fina
+u10AD1	u10AD1.fina
+u10AD2	u10AD2.fina
+u10AD3	u10AD3.fina
+u10AD4	u10AD4.fina
+u10AD5	u10AD5.fina
+u10AD6	u10AD6.fina
+u10AD8	u10AD8.fina
+u10AD9	u10AD9.fina
+u10ADA	u10ADA.fina
+u10ADB	u10ADB.fina
+u10ADC	u10ADC.fina
+u10ADD	u10ADD.fina
+u10ADE	u10ADE.fina
+u10ADF	u10ADF.fina
+u10AE0	u10AE0.fina
+u10AE1	u10AE1.fina
+u10AE4	u10AE4.fina
+u10AEB	u10AEB.fina
+u10AEC	u10AEC.fina
+u10AED	u10AED.fina
+u10AEE	u10AEE.fina
+u10AEF	u10AEF.fina
+u10ADD10ACF	u10ADD10ACF.fina
+u10ADD10AD7	u10ADD10AD7.fina
+u10AC5.alt	u10AC5.fina
+u10AD6.alt	u10AD6.alt.fina
+u10AE1.alt	u10AE1.fina
+
+lookup end
+
+
+lookup	3	single
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+u10AC0	u10AC0.init
+u10AC1	u10AC1.init
+u10AC2	u10AC2.init
+u10AC3	u10AC3.init
+u10AC4	u10AC4.init
+u10ACD	u10ACD.init
+u10AD3	u10AD3.init
+u10AD4	u10AD4.init
+u10AD5	u10AD5.init
+u10AD6	u10AD6.init
+u10AD7	u10AD7.init
+u10AD8	u10AD8.init
+u10AD9	u10AD9.init
+u10ADA	u10ADA.init
+u10ADB	u10ADB.init
+u10ADC	u10ADC.init
+u10ADE	u10ADE.init
+u10ADF	u10ADF.init
+u10AE0	u10AE0.init
+u10AEB	u10AEB.init
+u10AEC	u10AEC.init
+u10AED	u10AED.init
+u10AEE	u10AEE.init
+u10AD6.alt	u10AD6.init
+u10AD7.alt	u10AD7.init
+
+lookup end
+
+
+lookup	4	single
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+u10AC0	u10AC0.medi
+u10AC1	u10AC1.medi
+u10AC2	u10AC2.medi
+u10AC3	u10AC3.medi
+u10AC4	u10AC4.medi
+u10AD3	u10AD3.medi
+u10AD4	u10AD4.medi
+u10AD5	u10AD5.medi
+u10AD6	u10AD6.medi
+u10AD8	u10AD8.medi
+u10AD9	u10AD9.medi
+u10ADA	u10ADA.medi
+u10ADB	u10ADB.medi
+u10ADC	u10ADC.medi
+u10ADE	u10ADE.medi
+u10ADF	u10ADF.medi
+u10AE0	u10AE0.medi
+u10AEB	u10AEB.medi
+u10AEC	u10AEC.medi
+u10AED	u10AED.medi
+u10AEE	u10AEE.medi
+u10AD6.alt	u10AD6.medi
+
+lookup end
+
+
+lookup	5	chained
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+backtrackcoverage definition begin
+u10AED.medi
+u10AED.init
+u10AEB.medi.high
+u10AEC.medi.high
+coverage definition end
+
+inputcoverage definition begin
+u10AEB.fina
+u10AEB.medi
+u10AEC.fina
+u10AEC.medi
+coverage definition end
+
+coverage	1,6
+lookup end
+
+
+lookup	6	single
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+u10AEB.fina	u10AEB.fina.high
+u10AEB.medi	u10AEB.medi.high
+u10AEC.fina	u10AEC.fina.high
+u10AEC.medi	u10AEC.medi.high
+
+lookup end
+
+
+lookup	7	single
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	yes
+
+space	space
+
+lookup end
+
