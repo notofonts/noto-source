@@ -132,7 +132,7 @@ function family_from_plist() {
 
 function should_interpolate() {
     case "$1" in
-        */NotoNastaliqUrdu-MM.plist)
+        */NotoNastaliqUrdu.plist)
             false
             ;;
         *)
