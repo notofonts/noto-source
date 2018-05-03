@@ -1,0 +1,164 @@
+FontDame GPOS table
+
+EM	1000
+
+
+script table begin
+arab	default		1
+phlp	default		0
+script table end
+
+
+feature table begin
+0	kern	0, 6
+1	kern	7
+
+feature table end
+
+lookup	0	chained
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+backtrackclass definition begin
+u10B81	1
+u10B83	2
+u10B83.fina	3
+u10B81.fina	4
+class definition end
+
+class definition begin
+u10B81	1
+u10B83	1
+u10B8B	1
+u10B8B.init	1
+u10B84	2
+u10B85	2
+u10B89_alt2	3
+class definition end
+
+class-chain	1	1		1, 1
+class-chain	4	1		1, 1
+class-chain	2	1		1, 3
+class-chain	3	1		1, 3
+class-chain	1	2		1, 2
+class-chain	4	2		1, 5
+class-chain	2	2		1, 4
+class-chain	3	2		1, 3
+class-chain	1	3		1, 1
+class-chain	4	3		1, 1
+class-chain	2	3		1, 2
+class-chain	3	3		1, 2
+
+lookup end
+
+
+lookup	1	single
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+x advance	u10B81	140
+x advance	u10B83	140
+x advance	u10B8B	190
+x advance	u10B8B.init	190
+x advance	u10B89_alt2	-100
+
+lookup end
+
+
+lookup	2	single
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+y placement	u10B84	75
+x advance	u10B84	-310
+x placement	u10B85	50
+y placement	u10B85	75
+x advance	u10B89_alt2	-150
+
+lookup end
+
+
+lookup	3	single
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+x advance	u10B81	60
+x advance	u10B83	60
+x advance	u10B84	-275
+x advance	u10B85	-150
+x advance	u10B8B	100
+x advance	u10B8B.init	100
+
+lookup end
+
+
+lookup	4	single
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+y placement	u10B84	75
+x advance	u10B84	-275
+x placement	u10B85	50
+y placement	u10B85	75
+x advance	u10B85	-100
+
+lookup end
+
+
+lookup	5	single
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+x advance	u10B84	-360
+x advance	u10B85	-50
+x advance	u10B89_alt2	-150
+
+lookup end
+
+
+lookup	6	pair
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+right x advance	u10B89	u10B8C	80
+right x advance	u10B8C	u10B8C	60
+right x advance	u10B8F	u10B8C	80
+right x advance	u10B89.fina	u10B8C	60
+right x advance	u10B8C.fina	u10B8C	80
+right x advance	u10B8F.fina	u10B8C	80
+
+lookup end
+
+
+lookup	7	single
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+x advance	uni00A0	1
+
+lookup end
+

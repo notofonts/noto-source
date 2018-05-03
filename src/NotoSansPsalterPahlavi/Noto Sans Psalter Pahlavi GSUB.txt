@@ -1,0 +1,294 @@
+FontDame GSUB table
+
+
+script table begin
+arab	default		1
+phlp	default		0, 2, 3, 4, 5
+script table end
+
+
+feature table begin
+0	calt	3
+1	ccmp	8
+2	fina	0
+3	init	1
+4	medi	2
+5	rclt	5
+
+feature table end
+
+lookup	0	single
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+u10B80	u10B80.fina
+u10B81	u10B81.fina
+u10B82	u10B82.fina
+u10B83	u10B83.fina
+u10B84	u10B84.fina
+u10B85	u10B85.fina
+u10B86	u10B86.fina
+u10B87	u10B87.fina
+u10B88	u10B88.fina
+u10B89	u10B89.fina
+u10B8C	u10B8C.fina
+u10B8A	u10B8A.fina
+u10B8B	u10B8B.fina
+u10B8D	u10B8D.fina
+u10B90	u10B90.fina
+u10B91	u10B91.fina
+u10B8E	u10B8E.fina
+u10B8F	u10B8F.fina
+u10BA9	u10BA9.fina
+u10BAA	u10BAA.fina
+u10BAB	u10BAB.fina
+u10BAC	u10BAC.fina
+u10BAD	u10BAD.fina
+u10BAE	u10BAE.fina
+u10BA9.alt	u10BA9.alt.fina
+u10BAA.alt	u10BAA.alt.fina
+u10BAB.alt	u10BAB.alt.fina
+u10BAC.alt	u10BAC.alt.fina
+
+lookup end
+
+
+lookup	1	single
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+u10B80	u10B80.init
+u10B82	u10B82.init
+u10B86	u10B86.init
+u10B87	u10B87.init
+u10B88	u10B88.init
+u10B8A	u10B8A.init
+u10B8B	u10B8B.init
+u10B8D	u10B8D.init
+u10B90	u10B90.init
+u10BAD	u10BAD.init
+u10BAE	u10BAE.init
+
+lookup end
+
+
+lookup	2	single
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+u10B80	u10B80.medi
+u10B82	u10B82.medi
+u10B86	u10B86.medi
+u10B87	u10B87.medi
+u10B88	u10B88.medi
+u10B8A	u10B8A.medi
+u10B8B	u10B8B.medi
+u10B8D	u10B8D.medi
+u10B90	u10B90.medi
+u10BAD	u10BAD.medi
+u10BAE	u10BAE.medi
+
+lookup end
+
+
+lookup	3	context
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+class definition begin
+u10B81	1
+u10B83	1
+u10B81.fina	1
+u10B83.fina	1
+u10B8B	2
+u10B8B.medi	2
+u10B8B.init	2
+u10B89	3
+u10B8C	3
+u10B89.fina	3
+u10B8C.fina	3
+u10B8F	4
+u10B8F.fina	4
+class definition end
+
+class	1, 3	2, 4
+class	1, 4	2, 4
+class	2, 3	2, 4
+
+lookup end
+
+
+lookup	4	single
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+u10B89	u10B89_alt2
+u10B8C	u10B8C_alt2
+u10B8F	u10B8F_alt2
+u10B89.fina	u10B89_alt2.fina
+u10B8C.fina	u10B8C_alt2.fina
+u10B8F.fina	u10B8F_alt2.fina
+
+lookup end
+
+
+lookup	5	chained
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+backtrackclass definition begin
+u10B81	1
+u10B83	1
+u10B84	1
+u10B85	1
+u10B89	1
+u10B8C	1
+u10B91	1
+u10B8E	1
+u10B8F	1
+u10B82.medi	1
+u10B82.init	1
+u10B86.medi	1
+u10B86.init	1
+u10B87.medi	1
+u10B87.init	1
+u10B88.medi	1
+u10B88.init	1
+u10B8A.medi	1
+u10B8A.init	1
+u10B8B.medi	1
+u10B8B.init	1
+u10B8D.medi	1
+u10B8D.init	1
+u10B90.medi	1
+u10B90.init	1
+u10BA9	1
+u10BAA	1
+u10BAB	1
+u10BAC	1
+u10BA9.alt	1
+u10BAA.alt	1
+u10BAB.alt	1
+u10BAC.alt	1
+u10BAD.medi	1
+u10BAD.init	1
+u10BAE.medi	1
+u10BAE.init	1
+u10B81.fina	2
+u10B82.fina	2
+u10B83.fina	2
+u10B84.fina	2
+u10B85.fina	2
+u10B86.fina	2
+u10B87.fina	2
+u10B88.fina	2
+u10B89.fina	2
+u10B8A.fina	2
+u10B8B.fina	2
+u10B8C.fina	2
+u10B8D.fina	2
+u10B8E.fina	2
+u10B8F.fina	2
+u10B90.fina	2
+u10B91.fina	2
+u10BA9.fina	2
+u10BAF	2
+u10BA9.alt.fina	2
+u10BAA.fina	2
+u10BAA.alt.fina	2
+u10BAB.fina	2
+u10BAB.alt.fina	2
+u10BAC.fina	2
+u10BAC.alt.fina	2
+u10BAD.fina	2
+u10BAE.fina	2
+class definition end
+
+class definition begin
+u10BA9.fina	1
+u10BA9	1
+u10BAA	1
+u10BAB	1
+u10BAC	1
+u10BAA.fina	1
+u10BAB.fina	1
+u10BAC.fina	1
+class definition end
+
+lookaheadclass definition begin
+u10BA9	1
+u10BAA	1
+u10BAB	1
+u10BAC	1
+class definition end
+
+class-chain	1	1	1	1, 6
+class-chain	2	1	1	1, 7
+class-chain		1	1	1, 7
+
+lookup end
+
+
+lookup	6	single
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+u10BA9.fina	u10BA9.alt.fina
+u10BA9	u10BA9.alt.fina
+u10BAA	u10BAA.alt.fina
+u10BAB	u10BAB.alt.fina
+u10BAC	u10BAC.alt.fina
+u10BAA.fina	u10BAA.alt.fina
+u10BAB.fina	u10BAB.alt.fina
+u10BAC.fina	u10BAC.alt.fina
+
+lookup end
+
+
+lookup	7	single
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+u10BA9	u10BA9.alt
+u10BAA	u10BAA.alt
+u10BAB	u10BAB.alt
+u10BAC	u10BAC.alt
+
+lookup end
+
+
+lookup	8	single
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	yes
+
+space	space
+
+lookup end
+

@@ -1,0 +1,284 @@
+FontDame GSUB table
+
+
+script table begin
+takr	default		0, 1
+script table end
+
+
+feature table begin
+0	abvs	6
+1	ccmp	0, 1, 3, 4
+
+feature table end
+
+lookup	0	single
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+uni116B6	uni116B6.ns
+
+lookup end
+
+
+lookup	1	chained
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+backtrackcoverage definition begin
+uni1168A
+uni1168B
+uni1168C
+uni1168D
+uni1168E
+uni1168F
+uni11690
+uni11691
+uni11692
+uni11693
+uni11694
+uni11695
+uni11696
+uni11697
+uni11698
+uni11699
+uni1169A
+uni1169B
+uni1169C
+uni1169D
+uni1169E
+uni1169F
+uni116A0
+uni116A1
+uni116A2
+uni116A3
+uni116A4
+uni116A5
+uni116A6
+uni116A7
+uni116A8
+uni116A9
+uni116AA
+uni25CC
+Tra
+coverage definition end
+
+inputcoverage definition begin
+uni116B6.ns
+coverage definition end
+
+inputcoverage definition begin
+uni116A3
+uni116A4
+coverage definition end
+
+coverage	1,2
+lookup end
+
+
+lookup	2	ligature
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+Ya.blw	uni116B6.ns	uni116A3
+Ra.blw	uni116B6.ns	uni116A4
+
+lookup end
+
+
+lookup	3	ligature
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+MarkAttachmentType	2
+
+Tra	uni11699	Ra.blw
+
+lookup end
+
+
+lookup	4	chained
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+backtrackcoverage definition begin
+uni1168A
+uni1168B
+uni1168C
+uni1168D
+uni1168E
+uni1168F
+uni11690
+uni11691
+uni11692
+uni11693
+uni11694
+uni11695
+uni11696
+uni11697
+uni11698
+uni11699
+uni1169A
+uni1169B
+uni1169C
+uni1169D
+uni1169E
+uni1169F
+uni116A0
+uni116A1
+uni116A2
+uni116A3
+uni116A4
+uni116A5
+uni116A6
+uni116A7
+uni116A8
+uni116A9
+uni116AA
+uni25CC
+Tra
+coverage definition end
+
+inputcoverage definition begin
+uni116B6.ns
+coverage definition end
+
+inputcoverage definition begin
+uni116A9
+coverage definition end
+
+coverage	1,5
+lookup end
+
+
+lookup	5	ligature
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+Ha.pst	uni116B6.ns	uni116A9
+
+lookup end
+
+
+lookup	6	context
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+MarkAttachmentType	1
+
+class definition begin
+uni116AE	1
+uni1168B	2
+uni1168C	2
+uni1168D	2
+uni1168E	2
+uni1168F	2
+uni11690	2
+uni11691	2
+uni11692	2
+uni11693	2
+uni11694	2
+uni11695	2
+uni11696	2
+uni11697	2
+uni11698	2
+uni11699	2
+uni1169A	2
+uni1169B	2
+uni1169C	2
+uni1169D	2
+uni1169E	2
+uni1169F	2
+uni116A0	2
+uni116A1	2
+uni116A3	2
+uni116A5	2
+uni116A6	2
+uni116A7	2
+uni116A8	2
+uni116A9	2
+uni116AA	2
+uni25CC	2
+Tra	2
+uni116AB	3
+uni1168A	4
+uni116A2	4
+uni116A4	4
+class definition end
+
+class	1, 2, 3	1, 7	3, 10
+class	1, 4, 3	1, 9	3, 10
+class	1, 4	1, 8
+
+lookup end
+
+
+lookup	7	single
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+MarkAttachmentType	1
+
+uni116AE	I_anusvara
+
+lookup end
+
+
+lookup	8	single
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+MarkAttachmentType	1
+
+uni116AE	uni116AE.alt
+
+lookup end
+
+
+lookup	9	single
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+MarkAttachmentType	1
+
+uni116AE	I_anusvara.alt
+
+lookup end
+
+
+lookup	10	single
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+uni116AB	NullMark
+
+lookup end
+
