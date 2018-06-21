@@ -1,0 +1,179 @@
+FontDame GSUB table
+
+
+script table begin
+sind	default		0, 1
+script table end
+
+
+feature table begin
+0	abvf	0
+1	abvs	1, 2, 6
+
+feature table end
+
+lookup	0	ligature
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	yes
+
+u112C0_u112E2	u112C0	u112E2
+u112C3_u112E2	u112C3	u112E2
+u112D1_u112E2	u112D1	u112E2
+u112D4_u112E2	u112D4	u112E2
+u112D6_u112E2	u112D6	u112E2
+
+lookup end
+
+
+lookup	1	ligature
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	yes
+
+u112E1_u112BD	u112E1	u112BD
+u112E1_u112C0	u112E1	u112C0
+u112E1_u112C3	u112E1	u112C3
+u112E1_u112D1	u112E1	u112D1
+u112E1_u112D4	u112E1	u112D4
+u112E1_u112D7	u112E1	u112D7
+
+lookup end
+
+
+lookup	2	chained
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+MarkAttachmentType	2
+
+backtrackclass definition begin
+u112CB	1
+u112CE	1
+u112D1	1
+u112D2	1
+u112D4	1
+u112D6	1
+u112BA	2
+u112BB	2
+u112BD	2
+u112C3	2
+u112C7	2
+u112CC	2
+u112D7	2
+class definition end
+
+class definition begin
+u112BA	1
+u112BE	1
+u112BF	1
+u112C1	1
+u112C5	1
+u112C6	1
+u112C8	1
+u112CB	1
+u112CD	1
+u112D2	1
+u112D7	1
+u112D9	1
+u112DA	1
+u112DB	1
+u112DE	1
+u112DF	1
+u112C9	2
+u112CA	2
+u112BB	3
+u112CC	4
+u112D5	5
+u112CE	6
+u112E7	10
+u112E7.alt	10
+u112E8	11
+u112E2	12
+u112E1	13
+class definition end
+
+class-chain		1, 10		2, 3
+class-chain		2, 10		2, 3
+class-chain		2, 11		2, 3
+class-chain		3, 10		2, 3
+class-chain	1	10		1, 4
+class-chain	2	10		1, 4
+class-chain	2	12		1, 3
+class-chain		13, 3		1, 3
+class-chain		13, 4		1, 4
+class-chain		13, 5		1, 3
+class-chain		13, 6		1, 5
+
+lookup end
+
+
+lookup	3	single
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+u112E1	u112E1.alt
+u112E2	u112E2.alt
+u112E7	u112E7.alt
+u112E8	u112E8.alt
+
+lookup end
+
+
+lookup	4	single
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+u112E1	u112E1.alt2
+u112E7	u112E7_straight
+u112E7.alt	u112E7_straight.alt
+
+lookup end
+
+
+lookup	5	single
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+u112E1	u112E1.alt3
+
+lookup end
+
+
+lookup	6	context
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+class definition begin
+u112CB	1
+u112CE	1
+u112D1	1
+u112D2	1
+u112D4	1
+u112D6	1
+u112E7	2
+u112E7.alt	2
+class definition end
+
+class	1, 2	2, 4
+
+lookup end
+
