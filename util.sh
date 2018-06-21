@@ -118,6 +118,12 @@ function family_from_plist() {
         */NotoSansBengaliUI-MM.plist)
             echo 'Noto Sans Bengali UI'
             ;;
+        */NotoSansKannada-MM.plist)
+            echo 'Noto Sans Kannada'
+            ;;
+        */NotoSansKannadaUI-MM.plist)
+            echo 'Noto Sans Kannada UI'
+            ;;
         */NotoSansMalayalam-MM.plist)
             echo 'Noto Sans Malayalam'
             ;;
