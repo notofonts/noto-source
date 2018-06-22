@@ -1,0 +1,1452 @@
+FontDame GSUB table
+
+% GDEF Mark attachment class from glyph classes required!!
+
+script table begin
+knd2	default		0, 2, 3, 5, 6, 7, 9, 10, 11
+knda	default		0, 1, 3, 4, 6, 7, 8, 10, 11
+script table end
+
+
+feature table begin
+0	nukt	nukta-knda
+1	akhn	akhand-knda
+2	akhn	akhand-knd2
+3	rphf	reph-knda
+4	blwf	belowbase-knda
+5	blwf	belowbase-knd2
+6	half	half-knda
+7	abvs	splitakhand-knd2,calt-knd2,WinFix1-knda,WinFix2-knda,abovebase-knda
+8	blws	subligatures-knda
+9	blws	splitnukta-knd2,subligatures-knda
+10	psts	swashes-knda,o-ligatures-knda,MacOSfix-knda,vedic-knda,subsclashes-knda,puclashes-knda,fixrara-knda,ralenghtmarkfix-knda
+11	haln	haln-knda,fixakhand-knda
+feature table end
+
+
+
+% nukta added in Unicode 4 so we will give it a try
+
+
+lookup	nukta-knda	ligature
+
+markattachmenttype	1
+
+januktaknda	jaknda	nuktaknda
+phanuktaknda	phaknda	nuktaknda
+
+lookup end
+
+
+% standard akhand feature
+
+lookup	akhand-knda	ligature
+
+markattachmenttype	1
+
+kassaUIknda	kaknda	ssaknda	viramaknda
+janyaUIknda	jaknda	nyaknda	viramaknda
+
+lookup end
+
+
+lookup	akhand-knd2	ligature
+
+markattachmenttype	1
+
+kassaUIknda	kaknda	viramaknda	ssaknda
+janyaUIknda	jaknda	viramaknda	nyaknda
+
+lookup end
+
+
+
+% standard reph feature
+
+lookup	reph-knda	ligature
+
+rephknda	raknda	viramaknda
+
+lookup end
+
+
+
+% standard below base feature for subscripts
+
+lookup	belowbase-knda	ligature
+
+IgnoreMarks	yes
+
+kasubscriptUIknda	kaknda	viramaknda
+khasubscriptUIknda	khaknda	viramaknda
+gasubscriptUIknda	gaknda	viramaknda
+ghasubscriptUIknda	ghaknda	viramaknda
+ngasubscriptUIknda	ngaknda	viramaknda
+casubscriptUIknda	caknda	viramaknda
+chasubscriptUIknda	chaknda	viramaknda
+jasubscriptUIknda	jaknda	viramaknda
+jhasubscriptUIknda	jhaknda	viramaknda
+nyasubscriptUIknda	nyaknda	viramaknda
+ttasubscriptUIknda	ttaknda	viramaknda
+tthasubscriptUIknda	tthaknda	viramaknda
+ddasubscriptUIknda	ddaknda	viramaknda
+ddhasubscriptUIknda	ddhaknda	viramaknda
+nnasubscriptUIknda	nnaknda	viramaknda
+tasubscriptUIknda	taknda	viramaknda
+thasubscriptUIknda	thaknda	viramaknda
+dasubscriptUIknda	daknda	viramaknda
+dhasubscriptUIknda	dhaknda	viramaknda
+nasubscriptUIknda	naknda	viramaknda
+pasubscriptUIknda	paknda	viramaknda
+phasubscriptUIknda	phaknda	viramaknda
+basubscriptUIknda	baknda	viramaknda
+bhasubscriptUIknda	bhaknda	viramaknda
+masubscriptUIknda	maknda	viramaknda
+yasubscriptUIknda	yaknda	viramaknda
+rasubscriptUIknda	raknda	viramaknda
+rrasubscriptUIknda	rraknda	viramaknda
+lasubscriptUIknda	laknda	viramaknda
+llasubscriptUIknda	llaknda	viramaknda
+vasubscriptUIknda	vaknda	viramaknda
+shasubscriptUIknda	shaknda	viramaknda
+ssasubscriptUIknda	ssaknda	viramaknda
+sasubscriptUIknda	saknda	viramaknda
+hasubscriptUIknda	haknda	viramaknda
+fasubscriptUIknda	faknda	viramaknda
+% new 2017
+januktasubscriptUIknda	januktaknda	viramaknda
+phanuktasubscriptUIknda	phanuktaknda	viramaknda
+
+lookup end
+
+
+% standard below base feature for subscripts
+
+
+lookup	belowbase-knd2	ligature
+
+kasubscriptUIknda	viramaknda	kaknda
+khasubscriptUIknda	viramaknda	khaknda
+gasubscriptUIknda	viramaknda	gaknda
+ghasubscriptUIknda	viramaknda	ghaknda
+ngasubscriptUIknda	viramaknda	ngaknda
+casubscriptUIknda	viramaknda	caknda
+chasubscriptUIknda	viramaknda	chaknda
+jasubscriptUIknda	viramaknda	jaknda
+jhasubscriptUIknda	viramaknda	jhaknda
+nyasubscriptUIknda	viramaknda	nyaknda
+ttasubscriptUIknda	viramaknda	ttaknda
+tthasubscriptUIknda	viramaknda	tthaknda
+ddasubscriptUIknda	viramaknda	ddaknda
+ddhasubscriptUIknda	viramaknda	ddhaknda
+nnasubscriptUIknda	viramaknda	nnaknda
+tasubscriptUIknda	viramaknda	taknda
+thasubscriptUIknda	viramaknda	thaknda
+dasubscriptUIknda	viramaknda	daknda
+dhasubscriptUIknda	viramaknda	dhaknda
+nasubscriptUIknda	viramaknda	naknda
+pasubscriptUIknda	viramaknda	paknda
+phasubscriptUIknda	viramaknda	phaknda
+basubscriptUIknda	viramaknda	baknda
+bhasubscriptUIknda	viramaknda	bhaknda
+masubscriptUIknda	viramaknda	maknda
+yasubscriptUIknda	viramaknda	yaknda
+rasubscriptUIknda	viramaknda	raknda
+rrasubscriptUIknda	viramaknda	rraknda
+lasubscriptUIknda	viramaknda	laknda
+llasubscriptUIknda	viramaknda	llaknda
+vasubscriptUIknda	viramaknda	vaknda
+shasubscriptUIknda	viramaknda	shaknda
+ssasubscriptUIknda	viramaknda	ssaknda
+sasubscriptUIknda	viramaknda	saknda
+hasubscriptUIknda	viramaknda	haknda
+fasubscriptUIknda	viramaknda	faknda
+% new 2017
+januktasubscriptUIknda	viramaknda	januktaknda
+phanuktasubscriptUIknda	viramaknda	phanuktaknda
+
+lookup end
+
+
+
+
+% standard half form feature for remaining dead consonants
+
+lookup	half-knda	ligature
+
+kaviramaknda	kaknda	viramaknda	uni200D
+khaviramaknda	khaknda	viramaknda	uni200D
+gaviramaknda	gaknda	viramaknda	uni200D
+ghaviramaknda	ghaknda	viramaknda	uni200D
+ngaviramaknda	ngaknda	viramaknda	uni200D
+caviramaknda	caknda	viramaknda	uni200D
+chaviramaknda	chaknda	viramaknda	uni200D
+javiramaknda	jaknda	viramaknda	uni200D
+jhaviramaknda	jhaknda	viramaknda	uni200D
+nyaviramaknda	nyaknda	viramaknda	uni200D
+ttaviramaknda	ttaknda	viramaknda	uni200D
+tthaviramaknda	tthaknda	viramaknda	uni200D
+ddaviramaknda	ddaknda	viramaknda	uni200D
+ddhaviramaknda	ddhaknda	viramaknda	uni200D
+nnaviramaknda	nnaknda	viramaknda	uni200D
+taviramaknda	taknda	viramaknda	uni200D
+thaviramaknda	thaknda	viramaknda	uni200D
+daviramaknda	daknda	viramaknda	uni200D
+dhaviramaknda	dhaknda	viramaknda	uni200D
+naviramaknda	naknda	viramaknda	uni200D
+paviramaknda	paknda	viramaknda	uni200D
+phaviramaknda	phaknda	viramaknda	uni200D
+baviramaknda	baknda	viramaknda	uni200D
+bhaviramaknda	bhaknda	viramaknda	uni200D
+maviramaknda	maknda	viramaknda	uni200D
+yaviramaknda	yaknda	viramaknda	uni200D
+raviramaknda	raknda	viramaknda	uni200D
+laviramaknda	laknda	viramaknda	uni200D
+llaviramaknda	llaknda	viramaknda	uni200D
+vaviramaknda	vaknda	viramaknda	uni200D
+shaviramaknda	shaknda	viramaknda	uni200D
+ssaviramaknda	ssaknda	viramaknda	uni200D
+saviramaknda	saknda	viramaknda	uni200D
+haviramaknda	haknda	viramaknda	uni200D
+rraviramaknda	rraknda	viramaknda	uni200D
+faviramaknda	faknda	viramaknda	uni200D
+kassaviramaUIknda	kassaUIknda	viramaknda	uni200D
+janyaviramaUIknda	janyaUIknda	viramaknda	uni200D
+januktaviramaknda	januktaknda	viramaknda	uni200D
+phanuktaviramaknda	phanuktaknda	viramaknda	uni200D
+
+lookup end
+
+
+% new 2017
+
+lookup	splitakhand-knd2	context
+
+glyph	viramaknda,kassaUIknda	1,split1-knd2	2,split1-knd2
+glyph	viramaknda,janyaUIknda	1,split2-knd2	2,split2-knd2
+glyph	kassaUIknda,nuktaknda	1,split-knd2
+glyph	janyaUIknda,nuktaknda	1,split-knd2
+
+lookup end
+
+lookup	split-knd2	multiple
+
+kassaUIknda	kaknda	viramaknda	ssaknda
+janyaUIknda	jaknda	viramaknda	nyaknda
+
+lookup end
+
+
+lookup	split1-knd2	single
+
+viramaknda	kasubscriptUIknda
+kassaUIknda	ssasubscriptUIknda
+
+lookup end
+
+
+lookup	split2-knd2	single
+
+viramaknda	jasubscriptUIknda
+janyaUIknda	nyasubscriptUIknda
+
+lookup end
+
+
+lookup	calt-knd2	context
+
+IgnoreMarks	yes
+
+glyph	uni0CF1,kaknda	2,sub-knd2
+glyph	uni0CF1,khaknda	2,sub-knd2
+glyph	uni0CF2,paknda	2,sub-knd2
+glyph	uni0CF2,phaknda	2,sub-knd2
+glyph	raknda,rvocalicvowelsignUIknda,rephknda
+glyph	raknda,rvocalicvowelsignUIknda	1,sub-knd2	2,sub-knd2
+
+lookup end
+
+
+lookup	sub-knd2	single
+
+kaknda	kasubscriptUIknda
+khaknda	khasubscriptUIknda
+paknda	pasubscriptUIknda
+phaknda	phasubscriptUIknda
+raknda	rvocalicknda
+rvocalicvowelsignUIknda	rephknda
+
+lookup end
+
+
+% reorder for Windows
+
+lookup	WinFix1-knda	context
+
+glyph	januktasubscriptUIknda,aavowelsignknda	1,toAAvowel-knda	2,toJaNukta-knda
+glyph	januktasubscriptUIknda,ivowelsignknda	1,toIvowel-knda	2,toJaNukta-knda
+glyph	januktasubscriptUIknda,evowelsignknda	1,toEvowel-knda	2,toJaNukta-knda
+glyph	januktasubscriptUIknda,uvowelsignknda	1,toUvowel-knda	2,toJaNukta-knda
+glyph	januktasubscriptUIknda,auvowelsignknda	1,toAUvowel-knda	2,toJaNukta-knda
+
+glyph	phanuktasubscriptUIknda,aavowelsignknda	1,toAAvowel-knda	2,toPhaNukta-knda
+glyph	phanuktasubscriptUIknda,ivowelsignknda	1,toIvowel-knda	2,toPhaNukta-knda
+glyph	phanuktasubscriptUIknda,evowelsignknda	1,toEvowel-knda	2,toPhaNukta-knda
+glyph	phanuktasubscriptUIknda,uvowelsignknda	1,toUvowel-knda	2,toPhaNukta-knda
+glyph	phanuktasubscriptUIknda,auvowelsignknda	1,toAUvowel-knda	2,toPhaNukta-knda
+
+lookup end
+
+
+lookup	WinFix2-knda	context
+
+glyph	januktasubscriptUIknda,uuvowelsignknda	1,toUUvowel-knda	2,toJaNukta-knda
+glyph	phanuktasubscriptUIknda,uuvowelsignknda	1,toUUvowel-knda	2,toPhaNukta-knda
+
+lookup end
+
+
+lookup	toAAvowel-knda	single
+
+januktasubscriptUIknda	aavowelsignknda
+phanuktasubscriptUIknda	aavowelsignknda
+
+lookup end
+
+
+lookup	toIvowel-knda	single
+
+januktasubscriptUIknda	ivowelsignknda
+phanuktasubscriptUIknda	ivowelsignknda
+
+lookup end
+
+
+lookup	toEvowel-knda	single
+
+januktasubscriptUIknda	evowelsignknda
+phanuktasubscriptUIknda	evowelsignknda
+
+lookup end
+
+
+lookup	toUvowel-knda	single
+
+januktasubscriptUIknda	uvowelsignknda
+phanuktasubscriptUIknda	uvowelsignknda
+
+lookup end
+
+
+lookup	toUUvowel-knda	single
+
+januktasubscriptUIknda	uuvowelsignknda
+phanuktasubscriptUIknda	uuvowelsignknda
+
+lookup end
+
+
+lookup	toAUvowel-knda	single
+
+januktasubscriptUIknda	auvowelsignknda
+phanuktasubscriptUIknda	auvowelsignknda
+
+lookup end
+
+
+lookup	toJaNukta-knda	single
+
+aavowelsignknda	januktasubscriptUIknda
+ivowelsignknda	januktasubscriptUIknda
+evowelsignknda	januktasubscriptUIknda
+uvowelsignknda	januktasubscriptUIknda
+uuvowelsignknda	januktasubscriptUIknda
+auvowelsignknda	januktasubscriptUIknda
+
+lookup end
+
+
+lookup	toPhaNukta-knda	single
+
+aavowelsignknda	phanuktasubscriptUIknda
+ivowelsignknda	phanuktasubscriptUIknda
+evowelsignknda	phanuktasubscriptUIknda
+uvowelsignknda	phanuktasubscriptUIknda
+uuvowelsignknda	phanuktasubscriptUIknda
+auvowelsignknda	phanuktasubscriptUIknda
+
+lookup end
+
+
+% base consonants combining with vowels
+
+lookup	abovebase-knda	context
+
+markattachmenttype	2
+
+class definition begin
+kaknda	1
+khaknda	1
+gaknda	1
+ghaknda	1
+caknda	1
+chaknda	1
+jaknda	1
+jhaknda	1
+ttaknda	1
+tthaknda	1
+ddaknda	1
+ddhaknda	1
+nnaknda	1
+taknda	1
+thaknda	1
+daknda	1
+dhaknda	1
+naknda	1
+paknda	1
+phaknda	1
+baknda	1
+bhaknda	1
+maknda	1
+yaknda	1
+raknda	1
+laknda	1
+llaknda	1
+vaknda	1
+shaknda	1
+ssaknda	1
+saknda	1
+haknda	1
+kassaUIknda	1
+janyaUIknda	1
+januktaknda	1
+phanuktaknda	1
+nyaknda	2
+ngaknda	2
+rraknda	2
+faknda	2
+uni0CF1	2
+uni0CF2	2
+aavowelsignknda	3
+auvowelsignknda	4
+ivowelsignknda	5
+evowelsignknda	6
+kasubscriptUIknda	7
+khasubscriptUIknda	7
+pasubscriptUIknda	7
+phasubscriptUIknda	7
+class definition end
+
+class	 1, 3	 1,nocrest-knda
+class	 1, 4	 1,nocrest-knda
+class	 1, 5	 1,vowel-ligatures-knda
+class	 1, 6	 1,vowel-ligatures-knda
+class	 2, 3	 2,alt-aa-knda
+class	 2, 7, 3	 3,alt-aa-knda
+class	 2, 6	 2,alt-aa-knda
+class	 2, 7, 6	 3,alt-aa-knda
+
+lookup end
+
+
+lookup	alt-aa-knda	single
+
+aavowelsignknda	aavowelsignaltknda
+evowelsignknda	evowelsignaltknda
+
+lookup end
+
+
+lookup	nocrest-knda	single
+
+kaknda	kanocrestknda
+khaknda	khanocrestknda
+gaknda	ganocrestknda
+ghaknda	ghanocrestknda
+caknda	canocrestknda
+chaknda	chanocrestknda
+jaknda	janocrestknda
+jhaknda	jhanocrestknda
+ttaknda	ttanocrestknda
+tthaknda	tthanocrestknda
+ddaknda	ddanocrestknda
+ddhaknda	ddhanocrestknda
+nnaknda	nnanocrestknda
+taknda	tanocrestknda
+thaknda	thanocrestknda
+daknda	danocrestknda
+dhaknda	dhanocrestknda
+naknda	nanocrestknda
+paknda	panocrestknda
+phaknda	phanocrestknda
+baknda	banocrestknda
+bhaknda	bhanocrestknda
+maknda	manocrestknda
+yaknda	yanocrestknda
+raknda	ranocrestknda
+laknda	lanocrestknda
+llaknda	llanocrestknda
+vaknda	vanocrestknda
+shaknda	shanocrestknda
+ssaknda	ssanocrestknda
+saknda	sanocrestknda
+haknda	hanocrestknda
+kassaUIknda	kassanocrestUIknda
+janyaUIknda	janyanocrestUIknda
+januktaknda	januktanocrestknda
+phanuktaknda	phanuktanocrestknda
+
+lookup end
+
+
+lookup	vowel-ligatures-knda	ligature
+
+markattachmenttype	2
+
+kivowelknda	kaknda	ivowelsignknda
+kevowelknda	kaknda	evowelsignknda
+khivowelknda	khaknda	ivowelsignknda
+khevowelknda	khaknda	evowelsignknda
+givowelknda	gaknda	ivowelsignknda
+gevowelknda	gaknda	evowelsignknda
+ghivowelknda	ghaknda	ivowelsignknda
+ghevowelknda	ghaknda	evowelsignknda
+civowelknda	caknda	ivowelsignknda
+cevowelknda	caknda	evowelsignknda
+chivowelknda	chaknda	ivowelsignknda
+chevowelknda	chaknda	evowelsignknda
+jivowelknda	jaknda	ivowelsignknda
+jevowelknda	jaknda	evowelsignknda
+jhivowelknda	jhaknda	ivowelsignknda
+jhevowelknda	jhaknda	evowelsignknda
+ttivowelknda	ttaknda	ivowelsignknda
+ttevowelknda	ttaknda	evowelsignknda
+tthivowelknda	tthaknda	ivowelsignknda
+tthevowelknda	tthaknda	evowelsignknda
+ddivowelknda	ddaknda	ivowelsignknda
+ddevowelknda	ddaknda	evowelsignknda
+ddhivowelknda	ddhaknda	ivowelsignknda
+ddhevowelknda	ddhaknda	evowelsignknda
+nnivowelknda	nnaknda	ivowelsignknda
+nnevowelknda	nnaknda	evowelsignknda
+tivowelknda	taknda	ivowelsignknda
+tevowelknda	taknda	evowelsignknda
+thivowelknda	thaknda	ivowelsignknda
+thevowelknda	thaknda	evowelsignknda
+divowelknda	daknda	ivowelsignknda
+devowelknda	daknda	evowelsignknda
+dhivowelknda	dhaknda	ivowelsignknda
+dhevowelknda	dhaknda	evowelsignknda
+nivowelknda	naknda	ivowelsignknda
+nevowelknda	naknda	evowelsignknda
+pivowelknda	paknda	ivowelsignknda
+pevowelknda	paknda	evowelsignknda
+phivowelknda	phaknda	ivowelsignknda
+phevowelknda	phaknda	evowelsignknda
+bivowelknda	baknda	ivowelsignknda
+bevowelknda	baknda	evowelsignknda
+bhivowelknda	bhaknda	ivowelsignknda
+bhevowelknda	bhaknda	evowelsignknda
+mivowelknda	maknda	ivowelsignknda
+mevowelknda	maknda	evowelsignknda
+yivowelknda	yaknda	ivowelsignknda
+yevowelknda	yaknda	evowelsignknda
+rivowelknda	raknda	ivowelsignknda
+revowelknda	raknda	evowelsignknda
+livowelknda	laknda	ivowelsignknda
+levowelknda	laknda	evowelsignknda
+llivowelknda	llaknda	ivowelsignknda
+llevowelknda	llaknda	evowelsignknda
+vivowelknda	vaknda	ivowelsignknda
+vevowelknda	vaknda	evowelsignknda
+shivowelknda	shaknda	ivowelsignknda
+shevowelknda	shaknda	evowelsignknda
+ssivowelknda	ssaknda	ivowelsignknda
+ssevowelknda	ssaknda	evowelsignknda
+sivowelknda	saknda	ivowelsignknda
+sevowelknda	saknda	evowelsignknda
+hivowelknda	haknda	ivowelsignknda
+hevowelknda	haknda	evowelsignknda
+kassivowelUIknda	kassaUIknda	ivowelsignknda
+kassevowelUIknda	kassaUIknda	evowelsignknda
+janyivowelUIknda	janyaUIknda	ivowelsignknda
+janyevowelUIknda	janyaUIknda	evowelsignknda
+jivowelnuktaknda	januktaknda	ivowelsignknda
+phivowelnuktaknda	phanuktaknda	ivowelsignknda
+jevowelnuktaknda	januktaknda	evowelsignknda
+phevowelnuktaknda	phanuktaknda	evowelsignknda
+
+lookup end
+
+
+
+lookup	splitnukta-knd2	chained
+
+backtrackclass definition begin
+# 1	1
+class definition end
+
+class definition begin
+kasubscriptUIknda	1
+khasubscriptUIknda	1
+gasubscriptUIknda	1
+ghasubscriptUIknda	1
+ngasubscriptUIknda	1
+casubscriptUIknda	1
+chasubscriptUIknda	1
+jasubscriptUIknda	1
+jhasubscriptUIknda	1
+nyasubscriptUIknda	1
+ttasubscriptUIknda	1
+tthasubscriptUIknda	1
+ddasubscriptUIknda	1
+ddhasubscriptUIknda	1
+nnasubscriptUIknda	1
+tasubscriptUIknda	1
+thasubscriptUIknda	1
+dasubscriptUIknda	1
+dhasubscriptUIknda	1
+nasubscriptUIknda	1
+pasubscriptUIknda	1
+phasubscriptUIknda	1
+basubscriptUIknda	1
+bhasubscriptUIknda	1
+masubscriptUIknda	1
+yasubscriptUIknda	1
+rasubscriptUIknda	1
+rrasubscriptUIknda	1
+lasubscriptUIknda	1
+llasubscriptUIknda	1
+vasubscriptUIknda	1
+shasubscriptUIknda	1
+ssasubscriptUIknda	1
+sasubscriptUIknda	1
+hasubscriptUIknda	1
+fasubscriptUIknda	1
+class definition end
+
+lookaheadclass definition begin
+nuktaknda	1
+class definition end
+
+class-chain		1	1	1,nuktasplit-knda
+
+lookup end
+
+
+lookup	nuktasplit-knda	multiple
+
+kasubscriptUIknda	viramaknda	kaknda
+khasubscriptUIknda	viramaknda	khaknda
+gasubscriptUIknda	viramaknda	gaknda
+ghasubscriptUIknda	viramaknda	ghaknda
+ngasubscriptUIknda	viramaknda	ngaknda
+casubscriptUIknda	viramaknda	caknda
+chasubscriptUIknda	viramaknda	chaknda
+jasubscriptUIknda	viramaknda	jaknda
+jhasubscriptUIknda	viramaknda	jhaknda
+nyasubscriptUIknda	viramaknda	nyaknda
+ttasubscriptUIknda	viramaknda	ttaknda
+tthasubscriptUIknda	viramaknda	tthaknda
+ddasubscriptUIknda	viramaknda	ddaknda
+ddhasubscriptUIknda	viramaknda	ddhaknda
+nnasubscriptUIknda	viramaknda	nnaknda
+tasubscriptUIknda	viramaknda	taknda
+thasubscriptUIknda	viramaknda	thaknda
+dasubscriptUIknda	viramaknda	daknda
+dhasubscriptUIknda	viramaknda	dhaknda
+nasubscriptUIknda	viramaknda	naknda
+pasubscriptUIknda	viramaknda	paknda
+phasubscriptUIknda	viramaknda	phaknda
+basubscriptUIknda	viramaknda	baknda
+bhasubscriptUIknda	viramaknda	bhaknda
+masubscriptUIknda	viramaknda	maknda
+yasubscriptUIknda	viramaknda	yaknda
+rasubscriptUIknda	viramaknda	raknda
+rrasubscriptUIknda	viramaknda	rraknda
+lasubscriptUIknda	viramaknda	laknda
+llasubscriptUIknda	viramaknda	llaknda
+vasubscriptUIknda	viramaknda	vaknda
+shasubscriptUIknda	viramaknda	shaknda
+ssasubscriptUIknda	viramaknda	ssaknda
+sasubscriptUIknda	viramaknda	saknda
+hasubscriptUIknda	viramaknda	haknda
+fasubscriptUIknda	viramaknda	faknda
+
+lookup end
+
+% ligatures of subscripts
+
+lookup	subligatures-knda	ligature
+
+karasubscriptUIknda	kasubscriptUIknda	rasubscriptUIknda
+garasubscriptUIknda	gasubscriptUIknda	rasubscriptUIknda
+ttarasubscriptUIknda	ttasubscriptUIknda	rasubscriptUIknda
+ddarasubscriptUIknda	ddasubscriptUIknda	rasubscriptUIknda
+tasubscriptrvocalicUIknda	tasubscriptUIknda	rvocalicvowelsignUIknda
+tasubscriptlengthmarkUIknda	tasubscriptUIknda	ailengthmarkUIknda
+tayasubscriptUIknda	tasubscriptUIknda	yasubscriptUIknda
+tarasubscriptUIknda	tasubscriptUIknda	rasubscriptUIknda
+darasubscriptUIknda	dasubscriptUIknda	rasubscriptUIknda
+parasubscriptUIknda	pasubscriptUIknda	rasubscriptUIknda
+bharasubscriptUIknda	bhasubscriptUIknda	rasubscriptUIknda
+masubscriptrvocalicUIknda	masubscriptUIknda	rvocalicvowelsignUIknda
+masubscriptlengthmarkUIknda	masubscriptUIknda	ailengthmarkUIknda
+mayasubscriptUIknda	masubscriptUIknda	yasubscriptUIknda
+rasubscriptlengthmarkUIknda	rasubscriptUIknda	ailengthmarkUIknda
+
+lookup end
+
+
+
+% swash forms of u and uu
+
+lookup	swashes-knda	chained
+
+backtrackclass definition begin
+paknda	1
+phaknda	2
+vaknda	1
+pevowelknda	1
+phevowelknda	2
+vevowelknda	1
+llaknda	3
+llevowelknda	3
+ghaknda	3
+ghevowelknda	3
+class definition end
+
+class definition begin
+uvowelsignknda	1
+uuvowelsignknda	1
+class definition end
+
+lookaheadclass definition begin
+# 1	1
+class definition end
+
+
+class-chain	1	1		 1,u-swash-knda
+class-chain	2	1		 1,u-swash2-knda
+class-chain	3	1		 1,u-forla-knda
+
+lookup end
+
+
+lookup	u-swash-knda	single
+
+uvowelsignknda	uvowelsignaltknda
+uuvowelsignknda	uuvowelsignaltknda
+
+lookup end
+
+
+lookup	u-swash2-knda	single
+
+uvowelsignknda	uvowelsignalt2knda
+uuvowelsignknda	uuvowelsignalt2knda
+
+lookup end
+
+
+
+lookup	u-forla-knda	single
+
+uvowelsignknda	uvowelsignlaknda
+uuvowelsignknda	uuvowelsignlaknda
+
+lookup end
+
+
+% ligatures for irregular consonants with o
+
+lookup	o-ligatures-knda	ligature
+
+jhovowelknda	jhevowelknda	uuvowelsignknda
+movowelknda	mevowelknda	uuvowelsignknda
+yovowelknda	yevowelknda	uuvowelsignknda
+
+lookup end
+
+
+lookup	MacOSfix-knda	context
+
+glyph	lengthmarkknda,uuvowelsignknda	1,len2uu-knda	2,uu2len-knda
+glyph	anusvaraknda,rephknda	1,len2uu-knda	2,reph2anusvara-knda
+glyph	visargaknda,rephknda	1,len2uu-knda	2,reph2visarga-knda
+
+lookup end
+
+
+lookup	len2uu-knda	single
+
+lengthmarkknda	uuvowelsignknda
+anusvaraknda	rephknda
+visargaknda	rephknda
+
+lookup end
+
+
+lookup	reph2anusvara-knda	single
+
+rephknda	anusvaraknda
+
+lookup end
+
+
+
+lookup	reph2visarga-knda	single
+
+rephknda	visargaknda
+
+lookup end
+
+
+
+lookup	uu2len-knda	single
+
+uuvowelsignknda	lengthmarkknda
+
+lookup end
+
+
+
+lookup	vedic-knda	ligature
+
+candrabindu_0951knda	candrabinduknda	uni0951
+candrabindu_1CDAknda	candrabinduknda	uni1CDA
+
+lookup end
+
+
+lookup	subsclashes-knda	chained
+
+IgnoreMarks	yes
+
+backtrackclass definition begin
+lvocalicvowelsignUIknda	1
+llvocalicvowelsignUIknda	1
+kasubscriptUIknda	1
+khasubscriptUIknda	1
+gasubscriptUIknda	1
+ghasubscriptUIknda	1
+ngasubscriptUIknda	1
+casubscriptUIknda	1
+chasubscriptUIknda	1
+jasubscriptUIknda	1
+jhasubscriptUIknda	1
+nyasubscriptUIknda	1
+ttasubscriptUIknda	1
+tthasubscriptUIknda	1
+ddasubscriptUIknda	1
+ddhasubscriptUIknda	1
+nnasubscriptUIknda	1
+tasubscriptUIknda	1
+thasubscriptUIknda	1
+dasubscriptUIknda	1
+dhasubscriptUIknda	1
+nasubscriptUIknda	1
+pasubscriptUIknda	1
+phasubscriptUIknda	1
+basubscriptUIknda	1
+bhasubscriptUIknda	1
+masubscriptUIknda	1
+yasubscriptUIknda	1
+rasubscriptUIknda	1
+rrasubscriptUIknda	1
+lasubscriptUIknda	1
+llasubscriptUIknda	1
+vasubscriptUIknda	1
+shasubscriptUIknda	1
+ssasubscriptUIknda	1
+sasubscriptUIknda	1
+hasubscriptUIknda	1
+fasubscriptUIknda	1
+kassaUIknda	1
+kassivowelUIknda	1
+kassevowelUIknda	1
+janyaUIknda	1
+janyivowelUIknda	1
+janyevowelUIknda	1
+karasubscriptUIknda	1
+garasubscriptUIknda	1
+ttarasubscriptUIknda	1
+ddarasubscriptUIknda	1
+tarasubscriptUIknda	1
+darasubscriptUIknda	1
+parasubscriptUIknda	1
+bharasubscriptUIknda	1
+tayasubscriptUIknda	1
+mayasubscriptUIknda	1
+tasubscriptrvocalicUIknda	1
+masubscriptrvocalicUIknda	1
+tasubscriptlengthmarkUIknda	1
+masubscriptlengthmarkUIknda	1
+rasubscriptlengthmarkUIknda	1
+kasubscriptaltUIknda	1
+khasubscriptaltUIknda	1
+gasubscriptaltUIknda	1
+ghasubscriptaltUIknda	1
+ngasubscriptaltUIknda	1
+casubscriptaltUIknda	1
+chasubscriptaltUIknda	1
+jasubscriptaltUIknda	1
+jhasubscriptaltUIknda	1
+nyasubscriptaltUIknda	1
+ttasubscriptaltUIknda	1
+tthasubscriptaltUIknda	1
+ddasubscriptaltUIknda	1
+ddhasubscriptaltUIknda	1
+nnasubscriptaltUIknda	1
+tasubscriptaltUIknda	1
+thasubscriptaltUIknda	1
+dasubscriptaltUIknda	1
+dhasubscriptaltUIknda	1
+nasubscriptaltUIknda	1
+pasubscriptaltUIknda	1
+phasubscriptaltUIknda	1
+basubscriptaltUIknda	1
+bhasubscriptaltUIknda	1
+masubscriptaltUIknda	1
+yasubscriptaltUIknda	1
+rasubscriptaltUIknda	1
+rrasubscriptaltUIknda	1
+lasubscriptaltUIknda	1
+llasubscriptaltUIknda	1
+vasubscriptaltUIknda	1
+shasubscriptaltUIknda	1
+ssasubscriptaltUIknda	1
+sasubscriptaltUIknda	1
+hasubscriptaltUIknda	1
+fasubscriptaltUIknda	1
+karasubscriptaltUIknda	1
+garasubscriptaltUIknda	1
+ttarasubscriptaltUIknda	1
+ddarasubscriptaltUIknda	1
+tarasubscriptaltUIknda	1
+darasubscriptaltUIknda	1
+parasubscriptaltUIknda	1
+bharasubscriptaltUIknda	1
+tayasubscriptaltUIknda	1
+mayasubscriptaltUIknda	1
+tasubscriptrvocalicaltUIknda	1
+masubscriptrvocalicaltUIknda	1
+tasubscriptlengthmarkaltUIknda	1
+masubscriptlengthmarkaltUIknda	1
+rasubscriptlengthmarkaltUIknda	1
+% new 2017
+januktasubscriptUIknda	1
+phanuktasubscriptUIknda	1
+januktasubscriptaltUIknda	1
+phanuktasubscriptaltUIknda	1
+class definition end
+
+class definition begin
+rvocalicvowelsignUIknda	1
+rrvocalicvowelsignUIknda	1
+ailengthmarkUIknda	1
+lvocalicvowelsignUIknda	1
+llvocalicvowelsignUIknda	1
+kasubscriptUIknda	1
+khasubscriptUIknda	1
+gasubscriptUIknda	1
+ghasubscriptUIknda	1
+ngasubscriptUIknda	1
+casubscriptUIknda	1
+chasubscriptUIknda	1
+jasubscriptUIknda	1
+jhasubscriptUIknda	1
+nyasubscriptUIknda	1
+ttasubscriptUIknda	1
+tthasubscriptUIknda	1
+ddasubscriptUIknda	1
+ddhasubscriptUIknda	1
+nnasubscriptUIknda	1
+tasubscriptUIknda	1
+thasubscriptUIknda	1
+dasubscriptUIknda	1
+dhasubscriptUIknda	1
+nasubscriptUIknda	1
+pasubscriptUIknda	1
+phasubscriptUIknda	1
+basubscriptUIknda	1
+bhasubscriptUIknda	1
+masubscriptUIknda	1
+yasubscriptUIknda	1
+rasubscriptUIknda	1
+rrasubscriptUIknda	1
+lasubscriptUIknda	1
+llasubscriptUIknda	1
+vasubscriptUIknda	1
+shasubscriptUIknda	1
+ssasubscriptUIknda	1
+sasubscriptUIknda	1
+hasubscriptUIknda	1
+fasubscriptUIknda	1
+karasubscriptUIknda	1
+garasubscriptUIknda	1
+ttarasubscriptUIknda	1
+ddarasubscriptUIknda	1
+tarasubscriptUIknda	1
+darasubscriptUIknda	1
+parasubscriptUIknda	1
+bharasubscriptUIknda	1
+tayasubscriptUIknda	1
+mayasubscriptUIknda	1
+tasubscriptrvocalicUIknda	1
+masubscriptrvocalicUIknda	1
+tasubscriptlengthmarkUIknda	1
+masubscriptlengthmarkUIknda	1
+rasubscriptlengthmarkUIknda	1
+% new 2017
+januktasubscriptUIknda	1
+phanuktasubscriptUIknda	1
+class definition end
+
+lookaheadclass definition begin
+# 1	1
+class definition end
+
+class-chain	1	1		 1,alt-subscript-knda
+
+lookup end
+
+
+lookup	puclashes-knda	chained
+
+backtrackclass definition begin
+nuktaknda	1
+januktaknda	1
+phanuktaknda	1
+jivowelnuktaknda	1
+phivowelnuktaknda	1
+jevowelnuktaknda	1
+phevowelnuktaknda	1
+uvowelsignalt2knda	1
+uvowelsignaltknda	1
+class definition end
+
+class definition begin
+kasubscriptUIknda	1
+khasubscriptUIknda	1
+gasubscriptUIknda	1
+ghasubscriptUIknda	1
+ngasubscriptUIknda	1
+casubscriptUIknda	1
+chasubscriptUIknda	1
+jasubscriptUIknda	1
+jhasubscriptUIknda	1
+nyasubscriptUIknda	1
+ttasubscriptUIknda	1
+tthasubscriptUIknda	1
+ddasubscriptUIknda	1
+ddhasubscriptUIknda	1
+nnasubscriptUIknda	1
+tasubscriptUIknda	1
+thasubscriptUIknda	1
+dasubscriptUIknda	1
+dhasubscriptUIknda	1
+nasubscriptUIknda	1
+pasubscriptUIknda	1
+phasubscriptUIknda	1
+basubscriptUIknda	1
+bhasubscriptUIknda	1
+masubscriptUIknda	1
+yasubscriptUIknda	1
+rasubscriptUIknda	1
+rrasubscriptUIknda	1
+lasubscriptUIknda	1
+llasubscriptUIknda	1
+vasubscriptUIknda	1
+shasubscriptUIknda	1
+ssasubscriptUIknda	1
+sasubscriptUIknda	1
+hasubscriptUIknda	1
+fasubscriptUIknda	1
+% new 2017
+januktasubscriptUIknda	1
+phanuktasubscriptUIknda	1
+class definition end
+
+lookaheadclass definition begin
+# 1	1
+class definition end
+
+class-chain	1	1		 1,right-subscript-knda
+
+lookup end
+
+
+lookup	alt-subscript-knda	single
+
+rvocalicvowelsignUIknda	rvocalicvowelsignaltUIknda
+rrvocalicvowelsignUIknda	rrvocalicvowelsignaltUIknda
+ailengthmarkUIknda	ailengthmarkaltUIknda
+lvocalicvowelsignUIknda	lvocalicvowelsignaltUIknda
+llvocalicvowelsignUIknda	llvocalicvowelsignaltUIknda
+kasubscriptUIknda	kasubscriptaltUIknda
+khasubscriptUIknda	khasubscriptaltUIknda
+gasubscriptUIknda	gasubscriptaltUIknda
+ghasubscriptUIknda	ghasubscriptaltUIknda
+ngasubscriptUIknda	ngasubscriptaltUIknda
+casubscriptUIknda	casubscriptaltUIknda
+chasubscriptUIknda	chasubscriptaltUIknda
+jasubscriptUIknda	jasubscriptaltUIknda
+jhasubscriptUIknda	jhasubscriptaltUIknda
+nyasubscriptUIknda	nyasubscriptaltUIknda
+ttasubscriptUIknda	ttasubscriptaltUIknda
+tthasubscriptUIknda	tthasubscriptaltUIknda
+ddasubscriptUIknda	ddasubscriptaltUIknda
+ddhasubscriptUIknda	ddhasubscriptaltUIknda
+nnasubscriptUIknda	nnasubscriptaltUIknda
+tasubscriptUIknda	tasubscriptaltUIknda
+thasubscriptUIknda	thasubscriptaltUIknda
+dasubscriptUIknda	dasubscriptaltUIknda
+dhasubscriptUIknda	dhasubscriptaltUIknda
+nasubscriptUIknda	nasubscriptaltUIknda
+pasubscriptUIknda	pasubscriptaltUIknda
+phasubscriptUIknda	phasubscriptaltUIknda
+basubscriptUIknda	basubscriptaltUIknda
+bhasubscriptUIknda	bhasubscriptaltUIknda
+masubscriptUIknda	masubscriptaltUIknda
+yasubscriptUIknda	yasubscriptaltUIknda
+rasubscriptUIknda	rasubscriptaltUIknda
+rrasubscriptUIknda	rrasubscriptaltUIknda
+lasubscriptUIknda	lasubscriptaltUIknda
+llasubscriptUIknda	llasubscriptaltUIknda
+vasubscriptUIknda	vasubscriptaltUIknda
+shasubscriptUIknda	shasubscriptaltUIknda
+ssasubscriptUIknda	ssasubscriptaltUIknda
+sasubscriptUIknda	sasubscriptaltUIknda
+hasubscriptUIknda	hasubscriptaltUIknda
+fasubscriptUIknda	fasubscriptaltUIknda
+karasubscriptUIknda	karasubscriptaltUIknda
+garasubscriptUIknda	garasubscriptaltUIknda
+ttarasubscriptUIknda	ttarasubscriptaltUIknda
+ddarasubscriptUIknda	ddarasubscriptaltUIknda
+tarasubscriptUIknda	tarasubscriptaltUIknda
+darasubscriptUIknda	darasubscriptaltUIknda
+parasubscriptUIknda	parasubscriptaltUIknda
+bharasubscriptUIknda	bharasubscriptaltUIknda
+tayasubscriptUIknda	tayasubscriptaltUIknda
+mayasubscriptUIknda	mayasubscriptaltUIknda
+tasubscriptrvocalicUIknda	tasubscriptrvocalicaltUIknda
+masubscriptrvocalicUIknda	masubscriptrvocalicaltUIknda
+tasubscriptlengthmarkUIknda	tasubscriptlengthmarkaltUIknda
+masubscriptlengthmarkUIknda	masubscriptlengthmarkaltUIknda
+rasubscriptlengthmarkUIknda	rasubscriptlengthmarkaltUIknda
+% new 2017
+januktasubscriptUIknda	januktasubscriptaltUIknda
+phanuktasubscriptUIknda	phanuktasubscriptaltUIknda
+
+lookup end
+
+
+lookup	right-subscript-knda	single
+
+kasubscriptUIknda	kasubscriptrightUIknda
+khasubscriptUIknda	khasubscriptrightUIknda
+gasubscriptUIknda	gasubscriptrightUIknda
+ghasubscriptUIknda	ghasubscriptrightUIknda
+ngasubscriptUIknda	ngasubscriptrightUIknda
+casubscriptUIknda	casubscriptrightUIknda
+chasubscriptUIknda	chasubscriptrightUIknda
+jasubscriptUIknda	jasubscriptrightUIknda
+jhasubscriptUIknda	jhasubscriptrightUIknda
+nyasubscriptUIknda	nyasubscriptrightUIknda
+ttasubscriptUIknda	ttasubscriptrightUIknda
+tthasubscriptUIknda	tthasubscriptrightUIknda
+ddasubscriptUIknda	ddasubscriptrightUIknda
+ddhasubscriptUIknda	ddhasubscriptrightUIknda
+nnasubscriptUIknda	nnasubscriptrightUIknda
+tasubscriptUIknda	tasubscriptrightUIknda
+thasubscriptUIknda	thasubscriptrightUIknda
+dasubscriptUIknda	dasubscriptrightUIknda
+dhasubscriptUIknda	dhasubscriptrightUIknda
+nasubscriptUIknda	nasubscriptrightUIknda
+pasubscriptUIknda	pasubscriptrightUIknda
+phasubscriptUIknda	phasubscriptrightUIknda
+basubscriptUIknda	basubscriptrightUIknda
+bhasubscriptUIknda	bhasubscriptrightUIknda
+masubscriptUIknda	masubscriptrightUIknda
+yasubscriptUIknda	yasubscriptrightUIknda
+rasubscriptUIknda	rasubscriptrightUIknda
+rrasubscriptUIknda	rrasubscriptrightUIknda
+lasubscriptUIknda	lasubscriptrightUIknda
+llasubscriptUIknda	llasubscriptrightUIknda
+vasubscriptUIknda	vasubscriptrightUIknda
+shasubscriptUIknda	shasubscriptrightUIknda
+ssasubscriptUIknda	ssasubscriptrightUIknda
+sasubscriptUIknda	sasubscriptrightUIknda
+hasubscriptUIknda	hasubscriptrightUIknda
+fasubscriptUIknda	fasubscriptrightUIknda
+% new 2017
+januktasubscriptUIknda	januktasubscriptrightUIknda
+phanuktasubscriptUIknda	phanuktasubscriptrightUIknda
+
+lookup end
+
+
+
+% standard half form feature for remaining dead consonants
+
+lookup	haln-knda	ligature
+
+IgnoreLigatures	yes
+IgnoreMarks	yes
+
+kaviramaknda	kaknda	viramaknda
+khaviramaknda	khaknda	viramaknda
+gaviramaknda	gaknda	viramaknda
+ghaviramaknda	ghaknda	viramaknda
+ngaviramaknda	ngaknda	viramaknda
+caviramaknda	caknda	viramaknda
+chaviramaknda	chaknda	viramaknda
+javiramaknda	jaknda	viramaknda
+jhaviramaknda	jhaknda	viramaknda
+nyaviramaknda	nyaknda	viramaknda
+ttaviramaknda	ttaknda	viramaknda
+tthaviramaknda	tthaknda	viramaknda
+ddaviramaknda	ddaknda	viramaknda
+ddhaviramaknda	ddhaknda	viramaknda
+nnaviramaknda	nnaknda	viramaknda
+taviramaknda	taknda	viramaknda
+thaviramaknda	thaknda	viramaknda
+daviramaknda	daknda	viramaknda
+dhaviramaknda	dhaknda	viramaknda
+naviramaknda	naknda	viramaknda
+paviramaknda	paknda	viramaknda
+phaviramaknda	phaknda	viramaknda
+baviramaknda	baknda	viramaknda
+bhaviramaknda	bhaknda	viramaknda
+maviramaknda	maknda	viramaknda
+yaviramaknda	yaknda	viramaknda
+raviramaknda	raknda	viramaknda
+laviramaknda	laknda	viramaknda
+llaviramaknda	llaknda	viramaknda
+vaviramaknda	vaknda	viramaknda
+shaviramaknda	shaknda	viramaknda
+ssaviramaknda	ssaknda	viramaknda
+saviramaknda	saknda	viramaknda
+haviramaknda	haknda	viramaknda
+rraviramaknda	rraknda	viramaknda
+faviramaknda	faknda	viramaknda
+kassaviramaUIknda	kassaUIknda	viramaknda
+janyaviramaUIknda	janyaUIknda	viramaknda
+januktaviramaknda	januktaknda	viramaknda
+phanuktaviramaknda	phanuktaknda	viramaknda
+
+lookup end
+
+
+
+lookup	fixakhand-knda	context
+
+IgnoreMarks	yes
+
+class definition begin
+kassaviramaUIknda	1
+janyaviramaUIknda	1
+kasubscriptaltUIknda	2
+khasubscriptaltUIknda	2
+gasubscriptaltUIknda	2
+ghasubscriptaltUIknda	2
+ngasubscriptaltUIknda	2
+casubscriptaltUIknda	2
+chasubscriptaltUIknda	2
+jasubscriptaltUIknda	2
+jhasubscriptaltUIknda	2
+nyasubscriptaltUIknda	2
+ttasubscriptaltUIknda	2
+tthasubscriptaltUIknda	2
+ddasubscriptaltUIknda	2
+ddhasubscriptaltUIknda	2
+nnasubscriptaltUIknda	2
+tasubscriptaltUIknda	2
+thasubscriptaltUIknda	2
+dasubscriptaltUIknda	2
+dhasubscriptaltUIknda	2
+nasubscriptaltUIknda	2
+pasubscriptaltUIknda	2
+phasubscriptaltUIknda	2
+basubscriptaltUIknda	2
+bhasubscriptaltUIknda	2
+masubscriptaltUIknda	2
+yasubscriptaltUIknda	2
+rasubscriptaltUIknda	2
+rrasubscriptaltUIknda	2
+lasubscriptaltUIknda	2
+llasubscriptaltUIknda	2
+vasubscriptaltUIknda	2
+shasubscriptaltUIknda	2
+ssasubscriptaltUIknda	2
+sasubscriptaltUIknda	2
+hasubscriptaltUIknda	2
+fasubscriptaltUIknda	2
+karasubscriptaltUIknda	2
+garasubscriptaltUIknda	2
+ttarasubscriptaltUIknda	2
+ddarasubscriptaltUIknda	2
+tarasubscriptaltUIknda	2
+darasubscriptaltUIknda	2
+parasubscriptaltUIknda	2
+bharasubscriptaltUIknda	2
+tayasubscriptaltUIknda	2
+mayasubscriptaltUIknda	2
+% new 2017
+januktasubscriptaltUIknda	2
+phanuktasubscriptaltUIknda	2
+class definition end
+
+class	1,2	2,restoresub-knda
+
+lookup end
+
+
+lookup	restoresub-knda	single
+
+kasubscriptaltUIknda	kasubscriptrightUIknda
+khasubscriptaltUIknda	khasubscriptrightUIknda
+gasubscriptaltUIknda	gasubscriptrightUIknda
+ghasubscriptaltUIknda	ghasubscriptrightUIknda
+ngasubscriptaltUIknda	ngasubscriptrightUIknda
+casubscriptaltUIknda	casubscriptrightUIknda
+chasubscriptaltUIknda	chasubscriptrightUIknda
+jasubscriptaltUIknda	jasubscriptrightUIknda
+jhasubscriptaltUIknda	jhasubscriptrightUIknda
+nyasubscriptaltUIknda	nyasubscriptrightUIknda
+ttasubscriptaltUIknda	ttasubscriptrightUIknda
+tthasubscriptaltUIknda	tthasubscriptrightUIknda
+ddasubscriptaltUIknda	ddasubscriptrightUIknda
+ddhasubscriptaltUIknda	ddhasubscriptrightUIknda
+nnasubscriptaltUIknda	nnasubscriptrightUIknda
+tasubscriptaltUIknda	tasubscriptrightUIknda
+thasubscriptaltUIknda	thasubscriptrightUIknda
+dasubscriptaltUIknda	dasubscriptrightUIknda
+dhasubscriptaltUIknda	dhasubscriptrightUIknda
+nasubscriptaltUIknda	nasubscriptrightUIknda
+pasubscriptaltUIknda	pasubscriptrightUIknda
+phasubscriptaltUIknda	phasubscriptrightUIknda
+basubscriptaltUIknda	basubscriptrightUIknda
+bhasubscriptaltUIknda	bhasubscriptrightUIknda
+masubscriptaltUIknda	masubscriptrightUIknda
+yasubscriptaltUIknda	yasubscriptrightUIknda
+rasubscriptaltUIknda	rasubscriptrightUIknda
+lasubscriptaltUIknda	lasubscriptrightUIknda
+llasubscriptaltUIknda	llasubscriptrightUIknda
+vasubscriptaltUIknda	vasubscriptrightUIknda
+shasubscriptaltUIknda	shasubscriptrightUIknda
+ssasubscriptaltUIknda	ssasubscriptrightUIknda
+sasubscriptaltUIknda	sasubscriptrightUIknda
+hasubscriptaltUIknda	hasubscriptrightUIknda
+rrasubscriptaltUIknda	rrasubscriptrightUIknda
+fasubscriptaltUIknda	fasubscriptrightUIknda
+karasubscriptaltUIknda	karasubscriptUIknda
+garasubscriptaltUIknda	garasubscriptUIknda
+ttarasubscriptaltUIknda	ttarasubscriptUIknda
+ddarasubscriptaltUIknda	ddarasubscriptUIknda
+tarasubscriptaltUIknda	tarasubscriptUIknda
+darasubscriptaltUIknda	darasubscriptUIknda
+parasubscriptaltUIknda	parasubscriptUIknda
+bharasubscriptaltUIknda	bharasubscriptUIknda
+tayasubscriptaltUIknda	tayasubscriptUIknda
+mayasubscriptaltUIknda	mayasubscriptUIknda
+% new 2017
+januktasubscriptaltUIknda	januktasubscriptUIknda
+phanuktasubscriptaltUIknda	phanuktasubscriptUIknda
+
+lookup end
+
+
+
+
+
+lookup	fixrara-knda	chained
+
+IgnoreMarks	yes
+
+
+backtrackclass definition begin
+raknda	1
+ranocrestknda	1
+raviramaknda	1
+rivowelknda	1
+revowelknda	1
+viramaknda	2
+class definition end
+
+class definition begin
+rephknda	1
+rvocalicvowelsignUIknda	2
+rrvocalicvowelsignUIknda	3
+ailengthmarkUIknda	4
+class definition end
+
+lookaheadclass definition begin
+# 1	1
+class definition end
+
+class-chain	1	1		1,fixraraswap-knda
+class-chain	2,1	1		1,fixraraswap-knda
+class-chain	1	2,1		1,fixraraswap2-knda	2,fixrarar-knda
+class-chain	1	3,1		1,fixraraswap2-knda	2,fixrararr-knda
+class-chain	1	4,1		1,fixraralig-knda
+
+lookup end
+
+
+lookup	fixraraswap-knda	single
+
+rephknda	rasubscriptUIknda
+
+lookup end
+
+
+lookup	fixraraswap2-knda	single
+
+rvocalicvowelsignUIknda	rasubscriptUIknda
+rrvocalicvowelsignUIknda	rasubscriptUIknda
+
+lookup end
+
+
+lookup	fixrarar-knda	single
+
+rephknda	rvocalicvowelsignaltUIknda
+
+lookup end
+
+
+lookup	fixrararr-knda	single
+
+rephknda	rrvocalicvowelsignaltUIknda
+
+lookup end
+
+
+lookup	fixraralig-knda	ligature
+
+rasubscriptlengthmarkUIknda	ailengthmarkUIknda	rephknda
+
+lookup end
+
+
+lookup	ralenghtmarkfix-knda	context
+
+glyph	lengthmarkknda,rasubscriptUIknda	1,swaplm-knda	2,swaprs-knda
+
+lookup end
+
+
+lookup	swaplm-knda	single
+
+lengthmarkknda	rasubscriptUIknda
+
+lookup end
+
+
+lookup	swaprs-knda	single
+
+rasubscriptUIknda	lengthmarkknda
+
+lookup end

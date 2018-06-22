@@ -1,0 +1,4892 @@
+FontDame GSUB table
+
+% GDEF Mark attachment class from glyph classes required!!
+
+script table begin
+knd2	default		0, 2, 3, 5, 6, 7, 9, 10, 11
+knda	default		0, 1, 3, 4, 6, 7, 8, 10, 11
+script table end
+
+
+feature table begin
+0	nukt	nukta-knda
+1	akhn	akhand-knda
+2	akhn	akhand-knd2
+3	rphf	reph-knda
+4	blwf	belowbase-knda
+5	blwf	belowbase-knd2
+6	half	half-knda
+7	abvs	splitakhand-knd2,calt-knd2,WinFix1-knda,WinFix2-knda,abovebase-knda
+8	blws	subligatures-knda
+9	blws	splitnukta-knd2,subligatures-knda
+10	psts	swashes-knda,o-ligatures-knda,MacOSfix-knda,vedic-knda,subsclashes-knda,sw0-knda,sw1-knda,sw2-knda,sw3-knda,sw4-knda,sw5-knda,puclashesNukta-knda,puclashes-knda,fixrara-knda,ralenghtmarkfix-knda,splitVedic-knda
+11	haln	haln-knda,fixakhand-knda
+feature table end
+
+
+% nukta added in Unicode 4 so we will give it a try
+
+
+lookup	nukta-knda	ligature
+
+markattachmenttype	1
+
+januktaknda	jaknda	nuktaknda
+phanuktaknda	phaknda	nuktaknda
+
+lookup end
+
+
+% standard akhand feature
+
+lookup	akhand-knda	ligature
+
+markattachmenttype	1
+
+kassaknda	kaknda	ssaknda	viramaknda
+janyaknda	jaknda	nyaknda	viramaknda
+
+lookup end
+
+
+lookup	akhand-knd2	ligature
+
+markattachmenttype	1
+
+kassaknda	kaknda	viramaknda	ssaknda
+janyaknda	jaknda	viramaknda	nyaknda
+
+lookup end
+
+
+
+% standard reph feature
+
+lookup	reph-knda	ligature
+
+rephknda	raknda	viramaknda
+
+lookup end
+
+
+
+% standard below base feature for subscripts
+
+lookup	belowbase-knda	ligature
+
+IgnoreMarks	yes
+
+kasubscriptknda	kaknda	viramaknda
+khasubscriptknda	khaknda	viramaknda
+gasubscriptknda	gaknda	viramaknda
+ghasubscriptknda	ghaknda	viramaknda
+ngasubscriptknda	ngaknda	viramaknda
+casubscriptknda	caknda	viramaknda
+chasubscriptknda	chaknda	viramaknda
+jasubscriptknda	jaknda	viramaknda
+jhasubscriptknda	jhaknda	viramaknda
+nyasubscriptknda	nyaknda	viramaknda
+ttasubscriptknda	ttaknda	viramaknda
+tthasubscriptknda	tthaknda	viramaknda
+ddasubscriptknda	ddaknda	viramaknda
+ddhasubscriptknda	ddhaknda	viramaknda
+nnasubscriptknda	nnaknda	viramaknda
+tasubscriptknda	taknda	viramaknda
+thasubscriptknda	thaknda	viramaknda
+dasubscriptknda	daknda	viramaknda
+dhasubscriptknda	dhaknda	viramaknda
+nasubscriptknda	naknda	viramaknda
+pasubscriptknda	paknda	viramaknda
+phasubscriptknda	phaknda	viramaknda
+basubscriptknda	baknda	viramaknda
+bhasubscriptknda	bhaknda	viramaknda
+masubscriptknda	maknda	viramaknda
+yasubscriptknda	yaknda	viramaknda
+rasubscriptknda	raknda	viramaknda
+lasubscriptknda	laknda	viramaknda
+llasubscriptknda	llaknda	viramaknda
+vasubscriptknda	vaknda	viramaknda
+shasubscriptknda	shaknda	viramaknda
+ssasubscriptknda	ssaknda	viramaknda
+sasubscriptknda	saknda	viramaknda
+hasubscriptknda	haknda	viramaknda
+rrasubscriptknda	rraknda	viramaknda
+fasubscriptknda	faknda	viramaknda
+% new 2017
+januktasubscriptknda	januktaknda	viramaknda
+phanuktasubscriptknda	phanuktaknda	viramaknda
+
+lookup end
+
+
+% standard below base feature for subscripts
+
+lookup	belowbase-knd2	ligature
+
+kasubscriptknda	viramaknda	kaknda
+khasubscriptknda	viramaknda	khaknda
+gasubscriptknda	viramaknda	gaknda
+ghasubscriptknda	viramaknda	ghaknda
+ngasubscriptknda	viramaknda	ngaknda
+casubscriptknda	viramaknda	caknda
+chasubscriptknda	viramaknda	chaknda
+jasubscriptknda	viramaknda	jaknda
+jhasubscriptknda	viramaknda	jhaknda
+nyasubscriptknda	viramaknda	nyaknda
+ttasubscriptknda	viramaknda	ttaknda
+tthasubscriptknda	viramaknda	tthaknda
+ddasubscriptknda	viramaknda	ddaknda
+ddhasubscriptknda	viramaknda	ddhaknda
+nnasubscriptknda	viramaknda	nnaknda
+tasubscriptknda	viramaknda	taknda
+thasubscriptknda	viramaknda	thaknda
+dasubscriptknda	viramaknda	daknda
+dhasubscriptknda	viramaknda	dhaknda
+nasubscriptknda	viramaknda	naknda
+pasubscriptknda	viramaknda	paknda
+phasubscriptknda	viramaknda	phaknda
+basubscriptknda	viramaknda	baknda
+bhasubscriptknda	viramaknda	bhaknda
+masubscriptknda	viramaknda	maknda
+yasubscriptknda	viramaknda	yaknda
+rasubscriptknda	viramaknda	raknda
+lasubscriptknda	viramaknda	laknda
+llasubscriptknda	viramaknda	llaknda
+vasubscriptknda	viramaknda	vaknda
+shasubscriptknda	viramaknda	shaknda
+ssasubscriptknda	viramaknda	ssaknda
+sasubscriptknda	viramaknda	saknda
+hasubscriptknda	viramaknda	haknda
+rrasubscriptknda	viramaknda	rraknda
+fasubscriptknda	viramaknda	faknda
+% new 2017
+januktasubscriptknda	viramaknda	januktaknda
+phanuktasubscriptknda	viramaknda	phanuktaknda
+
+lookup end
+
+
+
+
+% standard half form feature for remaining dead consonants
+
+lookup	half-knda	ligature
+
+kaviramaknda	kaknda	viramaknda	uni200D
+khaviramaknda	khaknda	viramaknda	uni200D
+gaviramaknda	gaknda	viramaknda	uni200D
+ghaviramaknda	ghaknda	viramaknda	uni200D
+ngaviramaknda	ngaknda	viramaknda	uni200D
+caviramaknda	caknda	viramaknda	uni200D
+chaviramaknda	chaknda	viramaknda	uni200D
+javiramaknda	jaknda	viramaknda	uni200D
+jhaviramaknda	jhaknda	viramaknda	uni200D
+nyaviramaknda	nyaknda	viramaknda	uni200D
+ttaviramaknda	ttaknda	viramaknda	uni200D
+tthaviramaknda	tthaknda	viramaknda	uni200D
+ddaviramaknda	ddaknda	viramaknda	uni200D
+ddhaviramaknda	ddhaknda	viramaknda	uni200D
+nnaviramaknda	nnaknda	viramaknda	uni200D
+taviramaknda	taknda	viramaknda	uni200D
+thaviramaknda	thaknda	viramaknda	uni200D
+daviramaknda	daknda	viramaknda	uni200D
+dhaviramaknda	dhaknda	viramaknda	uni200D
+naviramaknda	naknda	viramaknda	uni200D
+paviramaknda	paknda	viramaknda	uni200D
+phaviramaknda	phaknda	viramaknda	uni200D
+baviramaknda	baknda	viramaknda	uni200D
+bhaviramaknda	bhaknda	viramaknda	uni200D
+maviramaknda	maknda	viramaknda	uni200D
+yaviramaknda	yaknda	viramaknda	uni200D
+raviramaknda	raknda	viramaknda	uni200D
+laviramaknda	laknda	viramaknda	uni200D
+llaviramaknda	llaknda	viramaknda	uni200D
+vaviramaknda	vaknda	viramaknda	uni200D
+shaviramaknda	shaknda	viramaknda	uni200D
+ssaviramaknda	ssaknda	viramaknda	uni200D
+saviramaknda	saknda	viramaknda	uni200D
+haviramaknda	haknda	viramaknda	uni200D
+rraviramaknda	rraknda	viramaknda	uni200D
+faviramaknda	faknda	viramaknda	uni200D
+kassaviramaknda	kassaknda	viramaknda	uni200D
+janyaviramaknda	janyaknda	viramaknda	uni200D
+januktaviramaknda	januktaknda	viramaknda	uni200D
+phanuktaviramaknda	phanuktaknda	viramaknda	uni200D
+
+lookup end
+
+
+% new 2017
+
+
+% standard below base feature for subscripts
+
+lookup	splitakhand-knd2	context
+
+glyph	viramaknda,kassaknda	1,split1-knd2	2,split1-knd2
+glyph	viramaknda,janyaknda	1,split2-knd2	2,split2-knd2
+glyph	kassaknda,nuktaknda	1,split-knd2
+glyph	janyaknda,nuktaknda	1,split-knd2
+
+lookup end
+
+lookup	split-knd2	multiple
+
+kassaknda	kaknda	viramaknda	ssaknda
+janyaknda	jaknda	viramaknda	nyaknda
+
+lookup end
+
+
+lookup	split1-knd2	single
+
+viramaknda	kasubscriptknda
+kassaknda	ssasubscriptknda
+
+lookup end
+
+
+lookup	split2-knd2	single
+
+viramaknda	jasubscriptknda
+janyaknda	nyasubscriptknda
+
+lookup end
+
+
+lookup	calt-knd2	context
+
+IgnoreMarks	yes
+
+glyph	uni0CF1,kaknda	2,sub-knd2
+glyph	uni0CF1,khaknda	2,sub-knd2
+glyph	uni0CF2,paknda	2,sub-knd2
+glyph	uni0CF2,phaknda	2,sub-knd2
+glyph	raknda,rvocalicvowelsignknda,rephknda
+glyph	raknda,rvocalicvowelsignknda	1,sub-knd2	2,sub-knd2
+
+lookup end
+
+
+lookup	sub-knd2	single
+
+kaknda	kasubscriptknda
+khaknda	khasubscriptknda
+paknda	pasubscriptknda
+phaknda	phasubscriptknda
+raknda	rvocalicknda
+rvocalicvowelsignknda	rephknda
+
+lookup end
+
+
+% reorder for Windows
+
+lookup	WinFix1-knda	context
+
+glyph	januktasubscriptknda,aavowelsignknda	1,toAAvowel-knda	2,toJaNukta-knda
+glyph	januktasubscriptknda,ivowelsignknda	1,toIvowel-knda	2,toJaNukta-knda
+glyph	januktasubscriptknda,evowelsignknda	1,toEvowel-knda	2,toJaNukta-knda
+glyph	januktasubscriptknda,uvowelsignknda	1,toUvowel-knda	2,toJaNukta-knda
+glyph	januktasubscriptknda,auvowelsignknda	1,toAUvowel-knda	2,toJaNukta-knda
+
+glyph	phanuktasubscriptknda,aavowelsignknda	1,toAAvowel-knda	2,toPhaNukta-knda
+glyph	phanuktasubscriptknda,ivowelsignknda	1,toIvowel-knda	2,toPhaNukta-knda
+glyph	phanuktasubscriptknda,evowelsignknda	1,toEvowel-knda	2,toPhaNukta-knda
+glyph	phanuktasubscriptknda,uvowelsignknda	1,toUvowel-knda	2,toPhaNukta-knda
+glyph	phanuktasubscriptknda,auvowelsignknda	1,toAUvowel-knda	2,toPhaNukta-knda
+
+lookup end
+
+
+lookup	WinFix2-knda	context
+
+glyph	januktasubscriptknda,uuvowelsignknda	1,toUUvowel-knda	2,toJaNukta-knda
+glyph	phanuktasubscriptknda,uuvowelsignknda	1,toUUvowel-knda	2,toPhaNukta-knda
+
+lookup end
+
+
+lookup	toAAvowel-knda	single
+
+januktasubscriptknda	aavowelsignknda
+phanuktasubscriptknda	aavowelsignknda
+
+lookup end
+
+
+lookup	toIvowel-knda	single
+
+januktasubscriptknda	ivowelsignknda
+phanuktasubscriptknda	ivowelsignknda
+
+lookup end
+
+
+lookup	toEvowel-knda	single
+
+januktasubscriptknda	evowelsignknda
+phanuktasubscriptknda	evowelsignknda
+
+lookup end
+
+
+lookup	toUvowel-knda	single
+
+januktasubscriptknda	uvowelsignknda
+phanuktasubscriptknda	uvowelsignknda
+
+lookup end
+
+
+lookup	toUUvowel-knda	single
+
+januktasubscriptknda	uuvowelsignknda
+phanuktasubscriptknda	uuvowelsignknda
+
+lookup end
+
+
+lookup	toAUvowel-knda	single
+
+januktasubscriptknda	auvowelsignknda
+phanuktasubscriptknda	auvowelsignknda
+
+lookup end
+
+
+lookup	toJaNukta-knda	single
+
+aavowelsignknda	januktasubscriptknda
+ivowelsignknda	januktasubscriptknda
+evowelsignknda	januktasubscriptknda
+uvowelsignknda	januktasubscriptknda
+uuvowelsignknda	januktasubscriptknda
+auvowelsignknda	januktasubscriptknda
+
+lookup end
+
+
+lookup	toPhaNukta-knda	single
+
+aavowelsignknda	phanuktasubscriptknda
+ivowelsignknda	phanuktasubscriptknda
+evowelsignknda	phanuktasubscriptknda
+uvowelsignknda	phanuktasubscriptknda
+uuvowelsignknda	phanuktasubscriptknda
+auvowelsignknda	phanuktasubscriptknda
+
+lookup end
+
+
+
+% base consonants combining with vowels
+
+lookup	abovebase-knda	context
+
+markattachmenttype	2
+
+class definition begin
+kaknda	1
+khaknda	1
+gaknda	1
+ghaknda	1
+caknda	1
+chaknda	1
+jaknda	1
+jhaknda	1
+ttaknda	1
+tthaknda	1
+ddaknda	1
+ddhaknda	1
+nnaknda	1
+taknda	1
+thaknda	1
+daknda	1
+dhaknda	1
+naknda	1
+paknda	1
+phaknda	1
+baknda	1
+bhaknda	1
+maknda	1
+yaknda	1
+raknda	1
+laknda	1
+llaknda	1
+vaknda	1
+shaknda	1
+ssaknda	1
+saknda	1
+haknda	1
+kassaknda	1
+janyaknda	1
+januktaknda	1
+phanuktaknda	1
+nyaknda	2
+ngaknda	2
+rraknda	2
+faknda	2
+uni0CF1	2
+uni0CF2	2
+aavowelsignknda	3
+auvowelsignknda	4
+ivowelsignknda	5
+evowelsignknda	6
+kasubscriptknda	7
+khasubscriptknda	7
+pasubscriptknda	7
+phasubscriptknda	7
+class definition end
+
+class	 1, 3	 1,nocrest-knda
+class	 1, 4	 1,nocrest-knda
+class	 1, 5	 1,vowel-ligatures-knda
+class	 1, 6	 1,vowel-ligatures-knda
+class	 2, 3	 2,alt-aa-knda
+class	 2, 7, 3	 3,alt-aa-knda
+class	 2, 6	 2,alt-aa-knda
+class	 2, 7, 6	 3,alt-aa-knda
+
+lookup end
+
+
+lookup	alt-aa-knda	single
+
+aavowelsignknda	aavowelsignaltknda
+evowelsignknda	evowelsignaltknda
+
+lookup end
+
+
+lookup	nocrest-knda	single
+
+kaknda	kanocrestknda
+khaknda	khanocrestknda
+gaknda	ganocrestknda
+ghaknda	ghanocrestknda
+caknda	canocrestknda
+chaknda	chanocrestknda
+jaknda	janocrestknda
+jhaknda	jhanocrestknda
+ttaknda	ttanocrestknda
+tthaknda	tthanocrestknda
+ddaknda	ddanocrestknda
+ddhaknda	ddhanocrestknda
+nnaknda	nnanocrestknda
+taknda	tanocrestknda
+thaknda	thanocrestknda
+daknda	danocrestknda
+dhaknda	dhanocrestknda
+naknda	nanocrestknda
+paknda	panocrestknda
+phaknda	phanocrestknda
+baknda	banocrestknda
+bhaknda	bhanocrestknda
+maknda	manocrestknda
+yaknda	yanocrestknda
+raknda	ranocrestknda
+laknda	lanocrestknda
+llaknda	llanocrestknda
+vaknda	vanocrestknda
+shaknda	shanocrestknda
+ssaknda	ssanocrestknda
+saknda	sanocrestknda
+haknda	hanocrestknda
+kassaknda	kassanocrestknda
+janyaknda	janyanocrestknda
+januktaknda	januktanocrestknda
+phanuktaknda	phanuktanocrestknda
+
+lookup end
+
+
+lookup	vowel-ligatures-knda	ligature
+
+markattachmenttype	2
+
+kivowelknda	kaknda	ivowelsignknda
+kevowelknda	kaknda	evowelsignknda
+khivowelknda	khaknda	ivowelsignknda
+khevowelknda	khaknda	evowelsignknda
+givowelknda	gaknda	ivowelsignknda
+gevowelknda	gaknda	evowelsignknda
+ghivowelknda	ghaknda	ivowelsignknda
+ghevowelknda	ghaknda	evowelsignknda
+civowelknda	caknda	ivowelsignknda
+cevowelknda	caknda	evowelsignknda
+chivowelknda	chaknda	ivowelsignknda
+chevowelknda	chaknda	evowelsignknda
+jivowelknda	jaknda	ivowelsignknda
+jevowelknda	jaknda	evowelsignknda
+jhivowelknda	jhaknda	ivowelsignknda
+jhevowelknda	jhaknda	evowelsignknda
+ttivowelknda	ttaknda	ivowelsignknda
+ttevowelknda	ttaknda	evowelsignknda
+tthivowelknda	tthaknda	ivowelsignknda
+tthevowelknda	tthaknda	evowelsignknda
+ddivowelknda	ddaknda	ivowelsignknda
+ddevowelknda	ddaknda	evowelsignknda
+ddhivowelknda	ddhaknda	ivowelsignknda
+ddhevowelknda	ddhaknda	evowelsignknda
+nnivowelknda	nnaknda	ivowelsignknda
+nnevowelknda	nnaknda	evowelsignknda
+tivowelknda	taknda	ivowelsignknda
+tevowelknda	taknda	evowelsignknda
+thivowelknda	thaknda	ivowelsignknda
+thevowelknda	thaknda	evowelsignknda
+divowelknda	daknda	ivowelsignknda
+devowelknda	daknda	evowelsignknda
+dhivowelknda	dhaknda	ivowelsignknda
+dhevowelknda	dhaknda	evowelsignknda
+nivowelknda	naknda	ivowelsignknda
+nevowelknda	naknda	evowelsignknda
+pivowelknda	paknda	ivowelsignknda
+pevowelknda	paknda	evowelsignknda
+phivowelknda	phaknda	ivowelsignknda
+phevowelknda	phaknda	evowelsignknda
+bivowelknda	baknda	ivowelsignknda
+bevowelknda	baknda	evowelsignknda
+bhivowelknda	bhaknda	ivowelsignknda
+bhevowelknda	bhaknda	evowelsignknda
+mivowelknda	maknda	ivowelsignknda
+mevowelknda	maknda	evowelsignknda
+yivowelknda	yaknda	ivowelsignknda
+yevowelknda	yaknda	evowelsignknda
+rivowelknda	raknda	ivowelsignknda
+revowelknda	raknda	evowelsignknda
+livowelknda	laknda	ivowelsignknda
+levowelknda	laknda	evowelsignknda
+llivowelknda	llaknda	ivowelsignknda
+llevowelknda	llaknda	evowelsignknda
+vivowelknda	vaknda	ivowelsignknda
+vevowelknda	vaknda	evowelsignknda
+shivowelknda	shaknda	ivowelsignknda
+shevowelknda	shaknda	evowelsignknda
+ssivowelknda	ssaknda	ivowelsignknda
+ssevowelknda	ssaknda	evowelsignknda
+sivowelknda	saknda	ivowelsignknda
+sevowelknda	saknda	evowelsignknda
+hivowelknda	haknda	ivowelsignknda
+hevowelknda	haknda	evowelsignknda
+kassivowelknda	kassaknda	ivowelsignknda
+kassevowelknda	kassaknda	evowelsignknda
+janyivowelknda	janyaknda	ivowelsignknda
+janyevowelknda	janyaknda	evowelsignknda
+jivowelnuktaknda	januktaknda	ivowelsignknda
+phivowelnuktaknda	phanuktaknda	ivowelsignknda
+jevowelnuktaknda	januktaknda	evowelsignknda
+phevowelnuktaknda	phanuktaknda	evowelsignknda
+
+lookup end
+
+
+
+lookup	splitnukta-knd2	chained
+
+backtrackclass definition begin
+# 1	1
+class definition end
+
+class definition begin
+kasubscriptknda	1
+khasubscriptknda	1
+gasubscriptknda	1
+ghasubscriptknda	1
+ngasubscriptknda	1
+casubscriptknda	1
+chasubscriptknda	1
+jasubscriptknda	1
+jhasubscriptknda	1
+nyasubscriptknda	1
+ttasubscriptknda	1
+tthasubscriptknda	1
+ddasubscriptknda	1
+ddhasubscriptknda	1
+nnasubscriptknda	1
+tasubscriptknda	1
+thasubscriptknda	1
+dasubscriptknda	1
+dhasubscriptknda	1
+nasubscriptknda	1
+pasubscriptknda	1
+phasubscriptknda	1
+basubscriptknda	1
+bhasubscriptknda	1
+masubscriptknda	1
+yasubscriptknda	1
+rasubscriptknda	1
+lasubscriptknda	1
+llasubscriptknda	1
+vasubscriptknda	1
+shasubscriptknda	1
+ssasubscriptknda	1
+sasubscriptknda	1
+hasubscriptknda	1
+rrasubscriptknda	1
+fasubscriptknda	1
+class definition end
+
+lookaheadclass definition begin
+nuktaknda	1
+class definition end
+
+class-chain		1	1	1,nuktasplit-knda
+
+lookup end
+
+
+lookup	nuktasplit-knda	multiple
+
+kasubscriptknda	viramaknda	kaknda
+khasubscriptknda	viramaknda	khaknda
+gasubscriptknda	viramaknda	gaknda
+ghasubscriptknda	viramaknda	ghaknda
+ngasubscriptknda	viramaknda	ngaknda
+casubscriptknda	viramaknda	caknda
+chasubscriptknda	viramaknda	chaknda
+jasubscriptknda	viramaknda	jaknda
+jhasubscriptknda	viramaknda	jhaknda
+nyasubscriptknda	viramaknda	nyaknda
+ttasubscriptknda	viramaknda	ttaknda
+tthasubscriptknda	viramaknda	tthaknda
+ddasubscriptknda	viramaknda	ddaknda
+ddhasubscriptknda	viramaknda	ddhaknda
+nnasubscriptknda	viramaknda	nnaknda
+tasubscriptknda	viramaknda	taknda
+thasubscriptknda	viramaknda	thaknda
+dasubscriptknda	viramaknda	daknda
+dhasubscriptknda	viramaknda	dhaknda
+nasubscriptknda	viramaknda	naknda
+pasubscriptknda	viramaknda	paknda
+phasubscriptknda	viramaknda	phaknda
+basubscriptknda	viramaknda	baknda
+bhasubscriptknda	viramaknda	bhaknda
+masubscriptknda	viramaknda	maknda
+yasubscriptknda	viramaknda	yaknda
+rasubscriptknda	viramaknda	raknda
+lasubscriptknda	viramaknda	laknda
+llasubscriptknda	viramaknda	llaknda
+vasubscriptknda	viramaknda	vaknda
+shasubscriptknda	viramaknda	shaknda
+ssasubscriptknda	viramaknda	ssaknda
+sasubscriptknda	viramaknda	saknda
+hasubscriptknda	viramaknda	haknda
+rrasubscriptknda	viramaknda	rraknda
+fasubscriptknda	viramaknda	faknda
+
+lookup end
+
+% ligatures of subscripts
+
+lookup	subligatures-knda	ligature
+
+karasubscriptknda	kasubscriptknda	rasubscriptknda
+garasubscriptknda	gasubscriptknda	rasubscriptknda
+ttarasubscriptknda	ttasubscriptknda	rasubscriptknda
+ddarasubscriptknda	ddasubscriptknda	rasubscriptknda
+tarasubscriptknda	tasubscriptknda	rasubscriptknda
+darasubscriptknda	dasubscriptknda	rasubscriptknda
+parasubscriptknda	pasubscriptknda	rasubscriptknda
+bharasubscriptknda	bhasubscriptknda	rasubscriptknda
+tayasubscriptknda	tasubscriptknda	yasubscriptknda
+mayasubscriptknda	masubscriptknda	yasubscriptknda
+tasubscriptrvocalicknda	tasubscriptknda	rvocalicvowelsignknda
+masubscriptrvocalicknda	masubscriptknda	rvocalicvowelsignknda
+tasubscriptlengthmarkknda	tasubscriptknda	ailengthmarkknda
+masubscriptlengthmarkknda	masubscriptknda	ailengthmarkknda
+rasubscriptlengthmarkknda	rasubscriptknda	ailengthmarkknda
+
+lookup end
+
+
+
+% swash forms of u and uu
+
+lookup	swashes-knda	chained
+
+backtrackclass definition begin
+paknda	1
+phaknda	2
+vaknda	1
+pevowelknda	1
+phevowelknda	2
+vevowelknda	1
+llaknda	3
+llevowelknda	3
+ghaknda	3
+ghevowelknda	3
+class definition end
+
+class definition begin
+uvowelsignknda	1
+uuvowelsignknda	1
+class definition end
+
+lookaheadclass definition begin
+# 1	1
+class definition end
+
+
+class-chain	1	1		 1,u-swash-knda
+class-chain	2	1		 1,u-swash2-knda
+class-chain	3	1		 1,u-forla-knda
+
+lookup end
+
+
+lookup	u-swash-knda	single
+
+uvowelsignknda	uvowelsignaltknda
+uuvowelsignknda	uuvowelsignaltknda
+
+lookup end
+
+
+lookup	u-swash2-knda	single
+
+uvowelsignknda	uvowelsignalt2knda
+uuvowelsignknda	uuvowelsignalt2knda
+
+lookup end
+
+
+
+lookup	u-forla-knda	single
+
+uvowelsignknda	uvowelsignlaknda
+uuvowelsignknda	uuvowelsignlaknda
+
+lookup end
+
+
+% ligatures for irregular consonants with o
+
+lookup	o-ligatures-knda	ligature
+
+jhovowelknda	jhevowelknda	uuvowelsignknda
+movowelknda	mevowelknda	uuvowelsignknda
+yovowelknda	yevowelknda	uuvowelsignknda
+
+lookup end
+
+
+lookup	MacOSfix-knda	context
+
+glyph	lengthmarkknda,uuvowelsignknda	1,len2uu-knda	2,uu2len-knda
+glyph	anusvaraknda,rephknda	1,len2uu-knda	2,reph2anusvara-knda
+glyph	visargaknda,rephknda	1,len2uu-knda	2,reph2visarga-knda
+
+lookup end
+
+
+lookup	len2uu-knda	single
+
+lengthmarkknda	uuvowelsignknda
+anusvaraknda	rephknda
+visargaknda	rephknda
+
+lookup end
+
+
+lookup	reph2anusvara-knda	single
+
+rephknda	anusvaraknda
+
+lookup end
+
+
+
+lookup	reph2visarga-knda	single
+
+rephknda	visargaknda
+
+lookup end
+
+
+
+lookup	uu2len-knda	single
+
+uuvowelsignknda	lengthmarkknda
+
+lookup end
+
+
+lookup	vedic-knda	ligature
+
+candrabindu_0951knda	candrabinduknda	uni0951
+candrabindu_0952knda	candrabinduknda	uni0952
+candrabindu_1CDAknda	candrabinduknda	uni1CDA
+
+lookup end
+
+
+lookup	subsclashes-knda	chained
+
+IgnoreMarks	yes
+
+backtrackclass definition begin
+lvocalicvowelsignknda	1
+llvocalicvowelsignknda	1
+kasubscriptknda	1
+khasubscriptknda	1
+gasubscriptknda	1
+ghasubscriptknda	1
+ngasubscriptknda	1
+casubscriptknda	1
+chasubscriptknda	1
+jasubscriptknda	1
+jhasubscriptknda	1
+nyasubscriptknda	1
+ttasubscriptknda	1
+tthasubscriptknda	1
+ddasubscriptknda	1
+ddhasubscriptknda	1
+nnasubscriptknda	1
+tasubscriptknda	1
+thasubscriptknda	1
+dasubscriptknda	1
+dhasubscriptknda	1
+nasubscriptknda	1
+pasubscriptknda	1
+phasubscriptknda	1
+basubscriptknda	1
+bhasubscriptknda	1
+masubscriptknda	1
+yasubscriptknda	1
+rasubscriptknda	1
+rrasubscriptknda	1
+lasubscriptknda	1
+llasubscriptknda	1
+vasubscriptknda	1
+shasubscriptknda	1
+ssasubscriptknda	1
+sasubscriptknda	1
+hasubscriptknda	1
+fasubscriptknda	1
+kassaknda	1
+kassivowelknda	1
+kassevowelknda	1
+janyaknda	1
+janyivowelknda	1
+janyevowelknda	1
+karasubscriptknda	1
+garasubscriptknda	1
+ttarasubscriptknda	1
+ddarasubscriptknda	1
+tarasubscriptknda	1
+darasubscriptknda	1
+parasubscriptknda	1
+bharasubscriptknda	1
+tayasubscriptknda	1
+mayasubscriptknda	1
+tasubscriptrvocalicknda	1
+masubscriptrvocalicknda	1
+tasubscriptlengthmarkknda	1
+masubscriptlengthmarkknda	1
+rasubscriptlengthmarkknda	1
+kasubscriptaltknda	1
+khasubscriptaltknda	1
+gasubscriptaltknda	1
+ghasubscriptaltknda	1
+ngasubscriptaltknda	1
+casubscriptaltknda	1
+chasubscriptaltknda	1
+jasubscriptaltknda	1
+jhasubscriptaltknda	1
+nyasubscriptaltknda	1
+ttasubscriptaltknda	1
+tthasubscriptaltknda	1
+ddasubscriptaltknda	1
+ddhasubscriptaltknda	1
+nnasubscriptaltknda	1
+tasubscriptaltknda	1
+thasubscriptaltknda	1
+dasubscriptaltknda	1
+dhasubscriptaltknda	1
+nasubscriptaltknda	1
+pasubscriptaltknda	1
+phasubscriptaltknda	1
+basubscriptaltknda	1
+bhasubscriptaltknda	1
+masubscriptaltknda	1
+yasubscriptaltknda	1
+rasubscriptaltknda	1
+rrasubscriptaltknda	1
+lasubscriptaltknda	1
+llasubscriptaltknda	1
+vasubscriptaltknda	1
+shasubscriptaltknda	1
+ssasubscriptaltknda	1
+sasubscriptaltknda	1
+hasubscriptaltknda	1
+fasubscriptaltknda	1
+karasubscriptaltknda	1
+garasubscriptaltknda	1
+ttarasubscriptaltknda	1
+ddarasubscriptaltknda	1
+tarasubscriptaltknda	1
+darasubscriptaltknda	1
+parasubscriptaltknda	1
+bharasubscriptaltknda	1
+tayasubscriptaltknda	1
+mayasubscriptaltknda	1
+tasubscriptrvocalicaltknda	1
+masubscriptrvocalicaltknda	1
+tasubscriptlengthmarkaltknda	1
+masubscriptlengthmarkaltknda	1
+rasubscriptlengthmarkaltknda	1
+% new 2017
+januktasubscriptknda	1
+phanuktasubscriptknda	1
+januktasubscriptaltknda	1
+phanuktasubscriptaltknda	1
+class definition end
+
+class definition begin
+rvocalicvowelsignknda	1
+rrvocalicvowelsignknda	1
+ailengthmarkknda	1
+lvocalicvowelsignknda	1
+llvocalicvowelsignknda	1
+kasubscriptknda	1
+khasubscriptknda	1
+gasubscriptknda	1
+ghasubscriptknda	1
+ngasubscriptknda	1
+casubscriptknda	1
+chasubscriptknda	1
+jasubscriptknda	1
+jhasubscriptknda	1
+nyasubscriptknda	1
+ttasubscriptknda	1
+tthasubscriptknda	1
+ddasubscriptknda	1
+ddhasubscriptknda	1
+nnasubscriptknda	1
+tasubscriptknda	1
+thasubscriptknda	1
+dasubscriptknda	1
+dhasubscriptknda	1
+nasubscriptknda	1
+pasubscriptknda	1
+phasubscriptknda	1
+basubscriptknda	1
+bhasubscriptknda	1
+masubscriptknda	1
+yasubscriptknda	1
+rasubscriptknda	1
+rrasubscriptknda	1
+lasubscriptknda	1
+llasubscriptknda	1
+vasubscriptknda	1
+shasubscriptknda	1
+ssasubscriptknda	1
+sasubscriptknda	1
+hasubscriptknda	1
+fasubscriptknda	1
+karasubscriptknda	1
+garasubscriptknda	1
+ttarasubscriptknda	1
+ddarasubscriptknda	1
+tarasubscriptknda	1
+darasubscriptknda	1
+parasubscriptknda	1
+bharasubscriptknda	1
+tayasubscriptknda	1
+mayasubscriptknda	1
+tasubscriptrvocalicknda	1
+masubscriptrvocalicknda	1
+tasubscriptlengthmarkknda	1
+masubscriptlengthmarkknda	1
+rasubscriptlengthmarkknda	1
+% new 2017
+januktasubscriptknda	1
+phanuktasubscriptknda	1
+class definition end
+
+lookaheadclass definition begin
+# 1	1
+class definition end
+
+class-chain	1	1		 1,alt-subscript-knda
+
+lookup end
+
+
+% reorder here
+
+lookup	sw0-knda	context
+
+glyph	anusvaraknda,candrabinduknda	1,toCandraBindu-knda	2,toAnusvara-knda
+glyph	anusvaraknda,uni0951	1,to0951-knda	2,toAnusvara-knda
+glyph	anusvaraknda,uni0952	1,to0952-knda	2,toAnusvara-knda
+glyph	anusvaraknda,uni1CDA	1,to1CDA-knda	2,toAnusvara-knda
+glyph	anusvaraknda,candrabindu_0951knda	1,toCandrabindu_0951-knda	2,toAnusvara-knda
+glyph	anusvaraknda,candrabindu_0952knda	1,toCandrabindu_0952-knda	2,toAnusvara-knda
+glyph	anusvaraknda,candrabindu_1CDAknda	1,toCandrabindu_1CDA-knda	2,toAnusvara-knda
+
+glyph	visargaknda,candrabinduknda	1,toCandraBindu-knda	2,toVisarga-knda
+glyph	visargaknda,uni0951	1,to0951-knda	2,toVisarga-knda
+glyph	visargaknda,uni0952	1,to0952-knda	2,toVisarga-knda
+glyph	visargaknda,uni1CDA	1,to1CDA-knda	2,toVisarga-knda
+glyph	visargaknda,candrabindu_0951knda	1,toCandrabindu_0951-knda	2,toVisarga-knda
+glyph	visargaknda,candrabindu_0952knda	1,toCandrabindu_0952-knda	2,toVisarga-knda
+glyph	visargaknda,candrabindu_1CDAknda	1,toCandrabindu_1CDA-knda	2,toVisarga-knda
+
+lookup end
+
+
+
+
+lookup	sw1-knda	context
+
+glyph	rephknda,candrabinduknda	1,toCandraBindu-knda	2,toReph-knda
+glyph	rephknda,uni0951	1,to0951-knda	2,toReph-knda
+glyph	rephknda,uni0952	1,to0952-knda	2,toReph-knda
+glyph	rephknda,uni1CDA	1,to1CDA-knda	2,toReph-knda
+glyph	rephknda,candrabindu_0951knda	1,toCandrabindu_0951-knda	2,toReph-knda
+glyph	rephknda,candrabindu_0952knda	1,toCandrabindu_0952-knda	2,toReph-knda
+glyph	rephknda,candrabindu_1CDAknda	1,toCandrabindu_1CDA-knda	2,toReph-knda
+
+lookup end
+
+
+lookup	sw2-knda	context
+
+glyph	rvocalicvowelsignknda,candrabinduknda	1,toCandraBindu-knda	2,toRvoc-knda
+glyph	rvocalicvowelsignknda,uni0951	1,to0951-knda	2,toRvoc-knda
+glyph	rvocalicvowelsignknda,uni0952	1,to0952-knda	2,toRvoc-knda
+glyph	rvocalicvowelsignknda,uni1CDA	1,to1CDA-knda	2,toRvoc-knda
+glyph	rvocalicvowelsignknda,candrabindu_0951knda	1,toCandrabindu_0951-knda	2,toRvoc-knda
+glyph	rvocalicvowelsignknda,candrabindu_0952knda	1,toCandrabindu_0952-knda	2,toRvoc-knda
+glyph	rvocalicvowelsignknda,candrabindu_1CDAknda	1,toCandrabindu_1CDA-knda	2,toRvoc-knda
+
+glyph	rrvocalicvowelsignknda,candrabinduknda	1,toCandraBindu-knda	2,toRRvoc-knda
+glyph	rrvocalicvowelsignknda,uni0951	1,to0951-knda	2,toRRvoc-knda
+glyph	rrvocalicvowelsignknda,uni0952	1,to0952-knda	2,toRRvoc-knda
+glyph	rrvocalicvowelsignknda,uni1CDA	1,to1CDA-knda	2,toRRvoc-knda
+glyph	rrvocalicvowelsignknda,candrabindu_0951knda	1,toCandrabindu_0951-knda	2,toRRvoc-knda
+glyph	rrvocalicvowelsignknda,candrabindu_0952knda	1,toCandrabindu_0952-knda	2,toRRvoc-knda
+glyph	rrvocalicvowelsignknda,candrabindu_1CDAknda	1,toCandrabindu_1CDA-knda	2,toRRvoc-knda
+
+glyph	viramaknda,candrabinduknda	1,toCandraBindu-knda	2,toVirama-knda
+glyph	viramaknda,uni0951	1,to0951-knda	2,toVirama-knda
+glyph	viramaknda,uni0952	1,to0952-knda	2,toVirama-knda
+glyph	viramaknda,uni1CDA	1,to1CDA-knda	2,toVirama-knda
+glyph	viramaknda,candrabindu_0951knda	1,toCandrabindu_0951-knda	2,toVirama-knda
+glyph	viramaknda,candrabindu_0952knda	1,toCandrabindu_0952-knda	2,toVirama-knda
+glyph	viramaknda,candrabindu_1CDAknda	1,toCandrabindu_1CDA-knda	2,toVirama-knda
+
+glyph	lengthmarkknda,candrabinduknda	1,toCandraBindu-knda	2,toLenMark-knda
+glyph	lengthmarkknda,uni0951	1,to0951-knda	2,toLenMark-knda
+glyph	lengthmarkknda,uni0952	1,to0952-knda	2,toLenMark-knda
+glyph	lengthmarkknda,uni1CDA	1,to1CDA-knda	2,toLenMark-knda
+glyph	lengthmarkknda,candrabindu_0951knda	1,toCandrabindu_0951-knda	2,toLenMark-knda
+glyph	lengthmarkknda,candrabindu_0952knda	1,toCandrabindu_0952-knda	2,toLenMark-knda
+glyph	lengthmarkknda,candrabindu_1CDAknda	1,toCandrabindu_1CDA-knda	2,toLenMark-knda
+
+glyph	ailengthmarkknda,candrabinduknda	1,toCandraBindu-knda	2,toAiMark-knda
+glyph	ailengthmarkknda,uni0951	1,to0951-knda	2,toAiMark-knda
+glyph	ailengthmarkknda,uni0952	1,to0952-knda	2,toAiMark-knda
+glyph	ailengthmarkknda,uni1CDA	1,to1CDA-knda	2,toAiMark-knda
+glyph	ailengthmarkknda,candrabindu_0951knda	1,toCandrabindu_0951-knda	2,toAiMark-knda
+glyph	ailengthmarkknda,candrabindu_0952knda	1,toCandrabindu_0952-knda	2,toAiMark-knda
+glyph	ailengthmarkknda,candrabindu_1CDAknda	1,toCandrabindu_1CDA-knda	2,toAiMark-knda
+
+glyph	lvocalicvowelsignknda,candrabinduknda	1,toCandraBindu-knda	2,toLvoc-knda
+glyph	lvocalicvowelsignknda,uni0951	1,to0951-knda	2,toLvoc-knda
+glyph	lvocalicvowelsignknda,uni0952	1,to0952-knda	2,toLvoc-knda
+glyph	lvocalicvowelsignknda,uni1CDA	1,to1CDA-knda	2,toLvoc-knda
+glyph	lvocalicvowelsignknda,candrabindu_0951knda	1,toCandrabindu_0951-knda	2,toLvoc-knda
+glyph	lvocalicvowelsignknda,candrabindu_0952knda	1,toCandrabindu_0952-knda	2,toLvoc-knda
+glyph	lvocalicvowelsignknda,candrabindu_1CDAknda	1,toCandrabindu_1CDA-knda	2,toLvoc-knda
+
+glyph	llvocalicvowelsignknda,candrabinduknda	1,toCandraBindu-knda	2,toLLvoc-knda
+glyph	llvocalicvowelsignknda,uni0951	1,to0951-knda	2,toLLvoc-knda
+glyph	llvocalicvowelsignknda,uni0952	1,to0952-knda	2,toLLvoc-knda
+glyph	llvocalicvowelsignknda,uni1CDA	1,to1CDA-knda	2,toLLvoc-knda
+glyph	llvocalicvowelsignknda,candrabindu_0951knda	1,toCandrabindu_0951-knda	2,toLLvoc-knda
+glyph	llvocalicvowelsignknda,candrabindu_0952knda	1,toCandrabindu_0952-knda	2,toLLvoc-knda
+glyph	llvocalicvowelsignknda,candrabindu_1CDAknda	1,toCandrabindu_1CDA-knda	2,toLLvoc-knda
+
+glyph	rvocalicvowelsignaltknda,candrabinduknda	1,toCandraBindu-knda	2,toRvocAlt-knda
+glyph	rvocalicvowelsignaltknda,uni0951	1,to0951-knda	2,toRvocAlt-knda
+glyph	rvocalicvowelsignaltknda,uni0952	1,to0952-knda	2,toRvocAlt-knda
+glyph	rvocalicvowelsignaltknda,uni1CDA	1,to1CDA-knda	2,toRvocAlt-knda
+glyph	rvocalicvowelsignaltknda,candrabindu_0951knda	1,toCandrabindu_0951-knda	2,toRvocAlt-knda
+glyph	rvocalicvowelsignaltknda,candrabindu_0952knda	1,toCandrabindu_0952-knda	2,toRvocAlt-knda
+glyph	rvocalicvowelsignaltknda,candrabindu_1CDAknda	1,toCandrabindu_1CDA-knda	2,toRvocAlt-knda
+
+glyph	rrvocalicvowelsignaltknda,candrabinduknda	1,toCandraBindu-knda	2,toRRvocAlt-knda
+glyph	rrvocalicvowelsignaltknda,uni0951	1,to0951-knda	2,toRRvocAlt-knda
+glyph	rrvocalicvowelsignaltknda,uni0952	1,to0952-knda	2,toRRvocAlt-knda
+glyph	rrvocalicvowelsignaltknda,uni1CDA	1,to1CDA-knda	2,toRRvocAlt-knda
+glyph	rrvocalicvowelsignaltknda,candrabindu_0951knda	1,toCandrabindu_0951-knda	2,toRRvocAlt-knda
+glyph	rrvocalicvowelsignaltknda,candrabindu_0952knda	1,toCandrabindu_0952-knda	2,toRRvocAlt-knda
+glyph	rrvocalicvowelsignaltknda,candrabindu_1CDAknda	1,toCandrabindu_1CDA-knda	2,toRRvocAlt-knda
+
+glyph	ailengthmarkaltknda,candrabinduknda	1,toCandraBindu-knda	2,toAiAltMark-knda
+glyph	ailengthmarkaltknda,uni0951	1,to0951-knda	2,toAiAltMark-knda
+glyph	ailengthmarkaltknda,uni0952	1,to0952-knda	2,toAiAltMark-knda
+glyph	ailengthmarkaltknda,uni1CDA	1,to1CDA-knda	2,toAiAltMark-knda
+glyph	ailengthmarkaltknda,candrabindu_0951knda	1,toCandrabindu_0951-knda	2,toAiAltMark-knda
+glyph	ailengthmarkaltknda,candrabindu_0952knda	1,toCandrabindu_0952-knda	2,toAiAltMark-knda
+glyph	ailengthmarkaltknda,candrabindu_1CDAknda	1,toCandrabindu_1CDA-knda	2,toAiAltMark-knda
+
+glyph	lvocalicvowelsignaltknda,candrabinduknda	1,toCandraBindu-knda	2,toLvocAlt-knda
+glyph	lvocalicvowelsignaltknda,uni0951	1,to0951-knda	2,toLvocAlt-knda
+glyph	lvocalicvowelsignaltknda,uni0952	1,to0952-knda	2,toLvocAlt-knda
+glyph	lvocalicvowelsignaltknda,uni1CDA	1,to1CDA-knda	2,toLvocAlt-knda
+glyph	lvocalicvowelsignaltknda,candrabindu_0951knda	1,toCandrabindu_0951-knda	2,toLvocAlt-knda
+glyph	lvocalicvowelsignaltknda,candrabindu_0952knda	1,toCandrabindu_0952-knda	2,toLvocAlt-knda
+glyph	lvocalicvowelsignaltknda,candrabindu_1CDAknda	1,toCandrabindu_1CDA-knda	2,toLvocAlt-knda
+
+glyph	llvocalicvowelsignaltknda,candrabinduknda	1,toCandraBindu-knda	2,toLLvocAlt-knda
+glyph	llvocalicvowelsignaltknda,uni0951	1,to0951-knda	2,toLLvocAlt-knda
+glyph	llvocalicvowelsignaltknda,uni0952	1,to0952-knda	2,toLLvocAlt-knda
+glyph	llvocalicvowelsignaltknda,uni1CDA	1,to1CDA-knda	2,toLLvocAlt-knda
+glyph	llvocalicvowelsignaltknda,candrabindu_0951knda	1,toCandrabindu_0951-knda	2,toLLvocAlt-knda
+glyph	llvocalicvowelsignaltknda,candrabindu_0952knda	1,toCandrabindu_0952-knda	2,toLLvocAlt-knda
+glyph	llvocalicvowelsignaltknda,candrabindu_1CDAknda	1,toCandrabindu_1CDA-knda	2,toLLvocAlt-knda
+
+glyph	tasubscriptrvocalicknda,candrabinduknda	1,toCandraBindu-knda	2,toTaRvoc-knda
+glyph	tasubscriptrvocalicknda,uni0951	1,to0951-knda	2,toTaRvoc-knda
+glyph	tasubscriptrvocalicknda,uni0952	1,to0952-knda	2,toTaRvoc-knda
+glyph	tasubscriptrvocalicknda,uni1CDA	1,to1CDA-knda	2,toTaRvoc-knda
+glyph	tasubscriptrvocalicknda,candrabindu_0951knda	1,toCandrabindu_0951-knda	2,toTaRvoc-knda
+glyph	tasubscriptrvocalicknda,candrabindu_0952knda	1,toCandrabindu_0952-knda	2,toTaRvoc-knda
+glyph	tasubscriptrvocalicknda,candrabindu_1CDAknda	1,toCandrabindu_1CDA-knda	2,toTaRvoc-knda
+
+glyph	masubscriptrvocalicknda,candrabinduknda	1,toCandraBindu-knda	2,toMaRvoc-knda
+glyph	masubscriptrvocalicknda,uni0951	1,to0951-knda	2,toMaRvoc-knda
+glyph	masubscriptrvocalicknda,uni0952	1,to0952-knda	2,toMaRvoc-knda
+glyph	masubscriptrvocalicknda,uni1CDA	1,to1CDA-knda	2,toMaRvoc-knda
+glyph	masubscriptrvocalicknda,candrabindu_0951knda	1,toCandrabindu_0951-knda	2,toMaRvoc-knda
+glyph	masubscriptrvocalicknda,candrabindu_0952knda	1,toCandrabindu_0952-knda	2,toMaRvoc-knda
+glyph	masubscriptrvocalicknda,candrabindu_1CDAknda	1,toCandrabindu_1CDA-knda	2,toMaRvoc-knda
+
+glyph	tasubscriptlengthmarkknda,candrabinduknda	1,toCandraBindu-knda	2,toTaLenMark-knda
+glyph	tasubscriptlengthmarkknda,uni0951	1,to0951-knda	2,toTaLenMark-knda
+glyph	tasubscriptlengthmarkknda,uni0952	1,to0952-knda	2,toTaLenMark-knda
+glyph	tasubscriptlengthmarkknda,uni1CDA	1,to1CDA-knda	2,toTaLenMark-knda
+glyph	tasubscriptlengthmarkknda,candrabindu_0951knda	1,toCandrabindu_0951-knda	2,toTaLenMark-knda
+glyph	tasubscriptlengthmarkknda,candrabindu_0952knda	1,toCandrabindu_0952-knda	2,toTaLenMark-knda
+glyph	tasubscriptlengthmarkknda,candrabindu_1CDAknda	1,toCandrabindu_1CDA-knda	2,toTaLenMark-knda
+
+glyph	masubscriptlengthmarkknda,candrabinduknda	1,toCandraBindu-knda	2,toMaLenMark-knda
+glyph	masubscriptlengthmarkknda,uni0951	1,to0951-knda	2,toMaLenMark-knda
+glyph	masubscriptlengthmarkknda,uni0952	1,to0952-knda	2,toMaLenMark-knda
+glyph	masubscriptlengthmarkknda,uni1CDA	1,to1CDA-knda	2,toMaLenMark-knda
+glyph	masubscriptlengthmarkknda,candrabindu_0951knda	1,toCandrabindu_0951-knda	2,toMaLenMark-knda
+glyph	masubscriptlengthmarkknda,candrabindu_0952knda	1,toCandrabindu_0952-knda	2,toMaLenMark-knda
+glyph	masubscriptlengthmarkknda,candrabindu_1CDAknda	1,toCandrabindu_1CDA-knda	2,toMaLenMark-knda
+
+glyph	rasubscriptlengthmarkknda,candrabinduknda	1,toCandraBindu-knda	2,toRaLenMark-knda
+glyph	rasubscriptlengthmarkknda,uni0951	1,to0951-knda	2,toRaLenMark-knda
+glyph	rasubscriptlengthmarkknda,uni0952	1,to0952-knda	2,toRaLenMark-knda
+glyph	rasubscriptlengthmarkknda,uni1CDA	1,to1CDA-knda	2,toRaLenMark-knda
+glyph	rasubscriptlengthmarkknda,candrabindu_0951knda	1,toCandrabindu_0951-knda	2,toRaLenMark-knda
+glyph	rasubscriptlengthmarkknda,candrabindu_0952knda	1,toCandrabindu_0952-knda	2,toRaLenMark-knda
+glyph	rasubscriptlengthmarkknda,candrabindu_1CDAknda	1,toCandrabindu_1CDA-knda	2,toRaLenMark-knda
+
+glyph	tasubscriptrvocalicaltknda,candrabinduknda	1,toCandraBindu-knda	2,toTaRvocAlt-knda
+glyph	tasubscriptrvocalicaltknda,uni0951	1,to0951-knda	2,toTaRvocAlt-knda
+glyph	tasubscriptrvocalicaltknda,uni0952	1,to0952-knda	2,toTaRvocAlt-knda
+glyph	tasubscriptrvocalicaltknda,uni1CDA	1,to1CDA-knda	2,toTaRvocAlt-knda
+glyph	tasubscriptrvocalicaltknda,candrabindu_0951knda	1,toCandrabindu_0951-knda	2,toTaRvocAlt-knda
+glyph	tasubscriptrvocalicaltknda,candrabindu_0952knda	1,toCandrabindu_0952-knda	2,toTaRvocAlt-knda
+glyph	tasubscriptrvocalicaltknda,candrabindu_1CDAknda	1,toCandrabindu_1CDA-knda	2,toTaRvocAlt-knda
+
+glyph	masubscriptrvocalicaltknda,candrabinduknda	1,toCandraBindu-knda	2,toMaRvocAlt-knda
+glyph	masubscriptrvocalicaltknda,uni0951	1,to0951-knda	2,toMaRvocAlt-knda
+glyph	masubscriptrvocalicaltknda,uni0952	1,to0952-knda	2,toMaRvocAlt-knda
+glyph	masubscriptrvocalicaltknda,uni1CDA	1,to1CDA-knda	2,toMaRvocAlt-knda
+glyph	masubscriptrvocalicaltknda,candrabindu_0951knda	1,toCandrabindu_0951-knda	2,toMaRvocAlt-knda
+glyph	masubscriptrvocalicaltknda,candrabindu_0952knda	1,toCandrabindu_0952-knda	2,toMaRvocAlt-knda
+glyph	masubscriptrvocalicaltknda,candrabindu_1CDAknda	1,toCandrabindu_1CDA-knda	2,toMaRvocAlt-knda
+
+glyph	tasubscriptlengthmarkaltknda,candrabinduknda	1,toCandraBindu-knda	2,toTaLenMarkAlt-knda
+glyph	tasubscriptlengthmarkaltknda,uni0951	1,to0951-knda	2,toTaLenMarkAlt-knda
+glyph	tasubscriptlengthmarkaltknda,uni0952	1,to0952-knda	2,toTaLenMarkAlt-knda
+glyph	tasubscriptlengthmarkaltknda,uni1CDA	1,to1CDA-knda	2,toTaLenMarkAlt-knda
+glyph	tasubscriptlengthmarkaltknda,candrabindu_0951knda	1,toCandrabindu_0951-knda	2,toTaLenMarkAlt-knda
+glyph	tasubscriptlengthmarkaltknda,candrabindu_0952knda	1,toCandrabindu_0952-knda	2,toTaLenMarkAlt-knda
+glyph	tasubscriptlengthmarkaltknda,candrabindu_1CDAknda	1,toCandrabindu_1CDA-knda	2,toTaLenMarkAlt-knda
+
+glyph	masubscriptlengthmarkaltknda,candrabinduknda	1,toCandraBindu-knda	2,toMaLenMarkAlt-knda
+glyph	masubscriptlengthmarkaltknda,uni0951	1,to0951-knda	2,toMaLenMarkAlt-knda
+glyph	masubscriptlengthmarkaltknda,uni0952	1,to0952-knda	2,toMaLenMarkAlt-knda
+glyph	masubscriptlengthmarkaltknda,uni1CDA	1,to1CDA-knda	2,toMaLenMarkAlt-knda
+glyph	masubscriptlengthmarkaltknda,candrabindu_0951knda	1,toCandrabindu_0951-knda	2,toMaLenMarkAlt-knda
+glyph	masubscriptlengthmarkaltknda,candrabindu_0952knda	1,toCandrabindu_0952-knda	2,toMaLenMarkAlt-knda
+glyph	masubscriptlengthmarkaltknda,candrabindu_1CDAknda	1,toCandrabindu_1CDA-knda	2,toMaLenMarkAlt-knda
+
+glyph	rasubscriptlengthmarkaltknda,candrabinduknda	1,toCandraBindu-knda	2,toRaLenMarkAlt-knda
+glyph	rasubscriptlengthmarkaltknda,uni0951	1,to0951-knda	2,toRaLenMarkAlt-knda
+glyph	rasubscriptlengthmarkaltknda,uni0952	1,to0952-knda	2,toRaLenMarkAlt-knda
+glyph	rasubscriptlengthmarkaltknda,uni1CDA	1,to1CDA-knda	2,toRaLenMarkAlt-knda
+glyph	rasubscriptlengthmarkaltknda,candrabindu_0951knda	1,toCandrabindu_0951-knda	2,toRaLenMarkAlt-knda
+glyph	rasubscriptlengthmarkaltknda,candrabindu_0952knda	1,toCandrabindu_0952-knda	2,toRaLenMarkAlt-knda
+glyph	rasubscriptlengthmarkaltknda,candrabindu_1CDAknda	1,toCandrabindu_1CDA-knda	2,toRaLenMarkAlt-knda
+
+lookup end
+
+
+lookup	sw3-knda	context
+
+glyph	kasubscriptaltknda,candrabinduknda	1,toCandraBindu-knda	2,toKaAlt-knda
+glyph	kasubscriptaltknda,uni0951	1,to0951-knda	2,toKaAlt-knda
+glyph	kasubscriptaltknda,uni0952	1,to0952-knda	2,toKaAlt-knda
+glyph	kasubscriptaltknda,uni1CDA	1,to1CDA-knda	2,toKaAlt-knda
+glyph	kasubscriptaltknda,candrabindu_0951knda	1,toCandrabindu_0951-knda	2,toKaAlt-knda
+glyph	kasubscriptaltknda,candrabindu_0952knda	1,toCandrabindu_0952-knda	2,toKaAlt-knda
+glyph	kasubscriptaltknda,candrabindu_1CDAknda	1,toCandrabindu_1CDA-knda	2,toKaAlt-knda
+
+glyph	khasubscriptaltknda,candrabinduknda	1,toCandraBindu-knda	2,toKhaAlt-knda
+glyph	khasubscriptaltknda,uni0951	1,to0951-knda	2,toKhaAlt-knda
+glyph	khasubscriptaltknda,uni0952	1,to0952-knda	2,toKhaAlt-knda
+glyph	khasubscriptaltknda,uni1CDA	1,to1CDA-knda	2,toKhaAlt-knda
+glyph	khasubscriptaltknda,candrabindu_0951knda	1,toCandrabindu_0951-knda	2,toKhaAlt-knda
+glyph	khasubscriptaltknda,candrabindu_0952knda	1,toCandrabindu_0952-knda	2,toKhaAlt-knda
+glyph	khasubscriptaltknda,candrabindu_1CDAknda	1,toCandrabindu_1CDA-knda	2,toKhaAlt-knda
+
+glyph	gasubscriptaltknda,candrabinduknda	1,toCandraBindu-knda	2,toGaAlt-knda
+glyph	gasubscriptaltknda,uni0951	1,to0951-knda	2,toGaAlt-knda
+glyph	gasubscriptaltknda,uni0952	1,to0952-knda	2,toGaAlt-knda
+glyph	gasubscriptaltknda,uni1CDA	1,to1CDA-knda	2,toGaAlt-knda
+glyph	gasubscriptaltknda,candrabindu_0951knda	1,toCandrabindu_0951-knda	2,toGaAlt-knda
+glyph	gasubscriptaltknda,candrabindu_0952knda	1,toCandrabindu_0952-knda	2,toGaAlt-knda
+glyph	gasubscriptaltknda,candrabindu_1CDAknda	1,toCandrabindu_1CDA-knda	2,toGaAlt-knda
+
+glyph	ghasubscriptaltknda,candrabinduknda	1,toCandraBindu-knda	2,toGhaAlt-knda
+glyph	ghasubscriptaltknda,uni0951	1,to0951-knda	2,toGhaAlt-knda
+glyph	ghasubscriptaltknda,uni0952	1,to0952-knda	2,toGhaAlt-knda
+glyph	ghasubscriptaltknda,uni1CDA	1,to1CDA-knda	2,toGhaAlt-knda
+glyph	ghasubscriptaltknda,candrabindu_0951knda	1,toCandrabindu_0951-knda	2,toGhaAlt-knda
+glyph	ghasubscriptaltknda,candrabindu_0952knda	1,toCandrabindu_0952-knda	2,toGhaAlt-knda
+glyph	ghasubscriptaltknda,candrabindu_1CDAknda	1,toCandrabindu_1CDA-knda	2,toGhaAlt-knda
+
+glyph	ngasubscriptaltknda,candrabinduknda	1,toCandraBindu-knda	2,toNgaAlt-knda
+glyph	ngasubscriptaltknda,uni0951	1,to0951-knda	2,toNgaAlt-knda
+glyph	ngasubscriptaltknda,uni0952	1,to0952-knda	2,toNgaAlt-knda
+glyph	ngasubscriptaltknda,uni1CDA	1,to1CDA-knda	2,toNgaAlt-knda
+glyph	ngasubscriptaltknda,candrabindu_0951knda	1,toCandrabindu_0951-knda	2,toNgaAlt-knda
+glyph	ngasubscriptaltknda,candrabindu_0952knda	1,toCandrabindu_0952-knda	2,toNgaAlt-knda
+glyph	ngasubscriptaltknda,candrabindu_1CDAknda	1,toCandrabindu_1CDA-knda	2,toNgaAlt-knda
+
+glyph	casubscriptaltknda,candrabinduknda	1,toCandraBindu-knda	2,toCaAlt-knda
+glyph	casubscriptaltknda,uni0951	1,to0951-knda	2,toCaAlt-knda
+glyph	casubscriptaltknda,uni0952	1,to0952-knda	2,toCaAlt-knda
+glyph	casubscriptaltknda,uni1CDA	1,to1CDA-knda	2,toCaAlt-knda
+glyph	casubscriptaltknda,candrabindu_0951knda	1,toCandrabindu_0951-knda	2,toCaAlt-knda
+glyph	casubscriptaltknda,candrabindu_0952knda	1,toCandrabindu_0952-knda	2,toCaAlt-knda
+glyph	casubscriptaltknda,candrabindu_1CDAknda	1,toCandrabindu_1CDA-knda	2,toCaAlt-knda
+
+glyph	chasubscriptaltknda,candrabinduknda	1,toCandraBindu-knda	2,toChaAlt-knda
+glyph	chasubscriptaltknda,uni0951	1,to0951-knda	2,toChaAlt-knda
+glyph	chasubscriptaltknda,uni0952	1,to0952-knda	2,toChaAlt-knda
+glyph	chasubscriptaltknda,uni1CDA	1,to1CDA-knda	2,toChaAlt-knda
+glyph	chasubscriptaltknda,candrabindu_0951knda	1,toCandrabindu_0951-knda	2,toChaAlt-knda
+glyph	chasubscriptaltknda,candrabindu_0952knda	1,toCandrabindu_0952-knda	2,toChaAlt-knda
+glyph	chasubscriptaltknda,candrabindu_1CDAknda	1,toCandrabindu_1CDA-knda	2,toChaAlt-knda
+
+glyph	jasubscriptaltknda,candrabinduknda	1,toCandraBindu-knda	2,toJaAlt-knda
+glyph	jasubscriptaltknda,uni0951	1,to0951-knda	2,toJaAlt-knda
+glyph	jasubscriptaltknda,uni0952	1,to0952-knda	2,toJaAlt-knda
+glyph	jasubscriptaltknda,uni1CDA	1,to1CDA-knda	2,toJaAlt-knda
+glyph	jasubscriptaltknda,candrabindu_0951knda	1,toCandrabindu_0951-knda	2,toJaAlt-knda
+glyph	jasubscriptaltknda,candrabindu_0952knda	1,toCandrabindu_0952-knda	2,toJaAlt-knda
+glyph	jasubscriptaltknda,candrabindu_1CDAknda	1,toCandrabindu_1CDA-knda	2,toJaAlt-knda
+
+glyph	jhasubscriptaltknda,candrabinduknda	1,toCandraBindu-knda	2,toJhaAlt-knda
+glyph	jhasubscriptaltknda,uni0951	1,to0951-knda	2,toJhaAlt-knda
+glyph	jhasubscriptaltknda,uni0952	1,to0952-knda	2,toJhaAlt-knda
+glyph	jhasubscriptaltknda,uni1CDA	1,to1CDA-knda	2,toJhaAlt-knda
+glyph	jhasubscriptaltknda,candrabindu_0951knda	1,toCandrabindu_0951-knda	2,toJhaAlt-knda
+glyph	jhasubscriptaltknda,candrabindu_0952knda	1,toCandrabindu_0952-knda	2,toJhaAlt-knda
+glyph	jhasubscriptaltknda,candrabindu_1CDAknda	1,toCandrabindu_1CDA-knda	2,toJhaAlt-knda
+
+glyph	nyasubscriptaltknda,candrabinduknda	1,toCandraBindu-knda	2,toNyaAlt-knda
+glyph	nyasubscriptaltknda,uni0951	1,to0951-knda	2,toNyaAlt-knda
+glyph	nyasubscriptaltknda,uni0952	1,to0952-knda	2,toNyaAlt-knda
+glyph	nyasubscriptaltknda,uni1CDA	1,to1CDA-knda	2,toNyaAlt-knda
+glyph	nyasubscriptaltknda,candrabindu_0951knda	1,toCandrabindu_0951-knda	2,toNyaAlt-knda
+glyph	nyasubscriptaltknda,candrabindu_0952knda	1,toCandrabindu_0952-knda	2,toNyaAlt-knda
+glyph	nyasubscriptaltknda,candrabindu_1CDAknda	1,toCandrabindu_1CDA-knda	2,toNyaAlt-knda
+
+glyph	ttasubscriptaltknda,candrabinduknda	1,toCandraBindu-knda	2,toTtaAlt-knda
+glyph	ttasubscriptaltknda,uni0951	1,to0951-knda	2,toTtaAlt-knda
+glyph	ttasubscriptaltknda,uni0952	1,to0952-knda	2,toTtaAlt-knda
+glyph	ttasubscriptaltknda,uni1CDA	1,to1CDA-knda	2,toTtaAlt-knda
+glyph	ttasubscriptaltknda,candrabindu_0951knda	1,toCandrabindu_0951-knda	2,toTtaAlt-knda
+glyph	ttasubscriptaltknda,candrabindu_0952knda	1,toCandrabindu_0952-knda	2,toTtaAlt-knda
+glyph	ttasubscriptaltknda,candrabindu_1CDAknda	1,toCandrabindu_1CDA-knda	2,toTtaAlt-knda
+
+glyph	tthasubscriptaltknda,candrabinduknda	1,toCandraBindu-knda	2,toTthaAlt-knda
+glyph	tthasubscriptaltknda,uni0951	1,to0951-knda	2,toTthaAlt-knda
+glyph	tthasubscriptaltknda,uni0952	1,to0952-knda	2,toTthaAlt-knda
+glyph	tthasubscriptaltknda,uni1CDA	1,to1CDA-knda	2,toTthaAlt-knda
+glyph	tthasubscriptaltknda,candrabindu_0951knda	1,toCandrabindu_0951-knda	2,toTthaAlt-knda
+glyph	tthasubscriptaltknda,candrabindu_0952knda	1,toCandrabindu_0952-knda	2,toTthaAlt-knda
+glyph	tthasubscriptaltknda,candrabindu_1CDAknda	1,toCandrabindu_1CDA-knda	2,toTthaAlt-knda
+
+glyph	ddasubscriptaltknda,candrabinduknda	1,toCandraBindu-knda	2,toDdaAlt-knda
+glyph	ddasubscriptaltknda,uni0951	1,to0951-knda	2,toDdaAlt-knda
+glyph	ddasubscriptaltknda,uni0952	1,to0952-knda	2,toDdaAlt-knda
+glyph	ddasubscriptaltknda,uni1CDA	1,to1CDA-knda	2,toDdaAlt-knda
+glyph	ddasubscriptaltknda,candrabindu_0951knda	1,toCandrabindu_0951-knda	2,toDdaAlt-knda
+glyph	ddasubscriptaltknda,candrabindu_0952knda	1,toCandrabindu_0952-knda	2,toDdaAlt-knda
+glyph	ddasubscriptaltknda,candrabindu_1CDAknda	1,toCandrabindu_1CDA-knda	2,toDdaAlt-knda
+
+glyph	ddhasubscriptaltknda,candrabinduknda	1,toCandraBindu-knda	2,toDdhaAlt-knda
+glyph	ddhasubscriptaltknda,uni0951	1,to0951-knda	2,toDdhaAlt-knda
+glyph	ddhasubscriptaltknda,uni0952	1,to0952-knda	2,toDdhaAlt-knda
+glyph	ddhasubscriptaltknda,uni1CDA	1,to1CDA-knda	2,toDdhaAlt-knda
+glyph	ddhasubscriptaltknda,candrabindu_0951knda	1,toCandrabindu_0951-knda	2,toDdhaAlt-knda
+glyph	ddhasubscriptaltknda,candrabindu_0952knda	1,toCandrabindu_0952-knda	2,toDdhaAlt-knda
+glyph	ddhasubscriptaltknda,candrabindu_1CDAknda	1,toCandrabindu_1CDA-knda	2,toDdhaAlt-knda
+
+glyph	nnasubscriptaltknda,candrabinduknda	1,toCandraBindu-knda	2,toNnaAlt-knda
+glyph	nnasubscriptaltknda,uni0951	1,to0951-knda	2,toNnaAlt-knda
+glyph	nnasubscriptaltknda,uni0952	1,to0952-knda	2,toNnaAlt-knda
+glyph	nnasubscriptaltknda,uni1CDA	1,to1CDA-knda	2,toNnaAlt-knda
+glyph	nnasubscriptaltknda,candrabindu_0951knda	1,toCandrabindu_0951-knda	2,toNnaAlt-knda
+glyph	nnasubscriptaltknda,candrabindu_0952knda	1,toCandrabindu_0952-knda	2,toNnaAlt-knda
+glyph	nnasubscriptaltknda,candrabindu_1CDAknda	1,toCandrabindu_1CDA-knda	2,toNnaAlt-knda
+
+glyph	tasubscriptaltknda,candrabinduknda	1,toCandraBindu-knda	2,toTaAlt-knda
+glyph	tasubscriptaltknda,uni0951	1,to0951-knda	2,toTaAlt-knda
+glyph	tasubscriptaltknda,uni0952	1,to0952-knda	2,toTaAlt-knda
+glyph	tasubscriptaltknda,uni1CDA	1,to1CDA-knda	2,toTaAlt-knda
+glyph	tasubscriptaltknda,candrabindu_0951knda	1,toCandrabindu_0951-knda	2,toTaAlt-knda
+glyph	tasubscriptaltknda,candrabindu_0952knda	1,toCandrabindu_0952-knda	2,toTaAlt-knda
+glyph	tasubscriptaltknda,candrabindu_1CDAknda	1,toCandrabindu_1CDA-knda	2,toTaAlt-knda
+
+glyph	thasubscriptaltknda,candrabinduknda	1,toCandraBindu-knda	2,toThaAlt-knda
+glyph	thasubscriptaltknda,uni0951	1,to0951-knda	2,toThaAlt-knda
+glyph	thasubscriptaltknda,uni0952	1,to0952-knda	2,toThaAlt-knda
+glyph	thasubscriptaltknda,uni1CDA	1,to1CDA-knda	2,toThaAlt-knda
+glyph	thasubscriptaltknda,candrabindu_0951knda	1,toCandrabindu_0951-knda	2,toThaAlt-knda
+glyph	thasubscriptaltknda,candrabindu_0952knda	1,toCandrabindu_0952-knda	2,toThaAlt-knda
+glyph	thasubscriptaltknda,candrabindu_1CDAknda	1,toCandrabindu_1CDA-knda	2,toThaAlt-knda
+
+glyph	dasubscriptaltknda,candrabinduknda	1,toCandraBindu-knda	2,toDaAlt-knda
+glyph	dasubscriptaltknda,uni0951	1,to0951-knda	2,toDaAlt-knda
+glyph	dasubscriptaltknda,uni0952	1,to0952-knda	2,toDaAlt-knda
+glyph	dasubscriptaltknda,uni1CDA	1,to1CDA-knda	2,toDaAlt-knda
+glyph	dasubscriptaltknda,candrabindu_0951knda	1,toCandrabindu_0951-knda	2,toDaAlt-knda
+glyph	dasubscriptaltknda,candrabindu_0952knda	1,toCandrabindu_0952-knda	2,toDaAlt-knda
+glyph	dasubscriptaltknda,candrabindu_1CDAknda	1,toCandrabindu_1CDA-knda	2,toDaAlt-knda
+
+glyph	dhasubscriptaltknda,candrabinduknda	1,toCandraBindu-knda	2,toDhaAlt-knda
+glyph	dhasubscriptaltknda,uni0951	1,to0951-knda	2,toDhaAlt-knda
+glyph	dhasubscriptaltknda,uni0952	1,to0952-knda	2,toDhaAlt-knda
+glyph	dhasubscriptaltknda,uni1CDA	1,to1CDA-knda	2,toDhaAlt-knda
+glyph	dhasubscriptaltknda,candrabindu_0951knda	1,toCandrabindu_0951-knda	2,toDhaAlt-knda
+glyph	dhasubscriptaltknda,candrabindu_0952knda	1,toCandrabindu_0952-knda	2,toDhaAlt-knda
+glyph	dhasubscriptaltknda,candrabindu_1CDAknda	1,toCandrabindu_1CDA-knda	2,toDhaAlt-knda
+
+glyph	nasubscriptaltknda,candrabinduknda	1,toCandraBindu-knda	2,toNaAlt-knda
+glyph	nasubscriptaltknda,uni0951	1,to0951-knda	2,toNaAlt-knda
+glyph	nasubscriptaltknda,uni0952	1,to0952-knda	2,toNaAlt-knda
+glyph	nasubscriptaltknda,uni1CDA	1,to1CDA-knda	2,toNaAlt-knda
+glyph	nasubscriptaltknda,candrabindu_0951knda	1,toCandrabindu_0951-knda	2,toNaAlt-knda
+glyph	nasubscriptaltknda,candrabindu_0952knda	1,toCandrabindu_0952-knda	2,toNaAlt-knda
+glyph	nasubscriptaltknda,candrabindu_1CDAknda	1,toCandrabindu_1CDA-knda	2,toNaAlt-knda
+
+glyph	pasubscriptaltknda,candrabinduknda	1,toCandraBindu-knda	2,toPaAlt-knda
+glyph	pasubscriptaltknda,uni0951	1,to0951-knda	2,toPaAlt-knda
+glyph	pasubscriptaltknda,uni0952	1,to0952-knda	2,toPaAlt-knda
+glyph	pasubscriptaltknda,uni1CDA	1,to1CDA-knda	2,toPaAlt-knda
+glyph	pasubscriptaltknda,candrabindu_0951knda	1,toCandrabindu_0951-knda	2,toPaAlt-knda
+glyph	pasubscriptaltknda,candrabindu_0952knda	1,toCandrabindu_0952-knda	2,toPaAlt-knda
+glyph	pasubscriptaltknda,candrabindu_1CDAknda	1,toCandrabindu_1CDA-knda	2,toPaAlt-knda
+
+glyph	phasubscriptaltknda,candrabinduknda	1,toCandraBindu-knda	2,toPhaAlt-knda
+glyph	phasubscriptaltknda,uni0951	1,to0951-knda	2,toPhaAlt-knda
+glyph	phasubscriptaltknda,uni0952	1,to0952-knda	2,toPhaAlt-knda
+glyph	phasubscriptaltknda,uni1CDA	1,to1CDA-knda	2,toPhaAlt-knda
+glyph	phasubscriptaltknda,candrabindu_0951knda	1,toCandrabindu_0951-knda	2,toPhaAlt-knda
+glyph	phasubscriptaltknda,candrabindu_0952knda	1,toCandrabindu_0952-knda	2,toPhaAlt-knda
+glyph	phasubscriptaltknda,candrabindu_1CDAknda	1,toCandrabindu_1CDA-knda	2,toPhaAlt-knda
+
+glyph	basubscriptaltknda,candrabinduknda	1,toCandraBindu-knda	2,toBaAlt-knda
+glyph	basubscriptaltknda,uni0951	1,to0951-knda	2,toBaAlt-knda
+glyph	basubscriptaltknda,uni0952	1,to0952-knda	2,toBaAlt-knda
+glyph	basubscriptaltknda,uni1CDA	1,to1CDA-knda	2,toBaAlt-knda
+glyph	basubscriptaltknda,candrabindu_0951knda	1,toCandrabindu_0951-knda	2,toBaAlt-knda
+glyph	basubscriptaltknda,candrabindu_0952knda	1,toCandrabindu_0952-knda	2,toBaAlt-knda
+glyph	basubscriptaltknda,candrabindu_1CDAknda	1,toCandrabindu_1CDA-knda	2,toBaAlt-knda
+
+glyph	bhasubscriptaltknda,candrabinduknda	1,toCandraBindu-knda	2,toBhaAlt-knda
+glyph	bhasubscriptaltknda,uni0951	1,to0951-knda	2,toBhaAlt-knda
+glyph	bhasubscriptaltknda,uni0952	1,to0952-knda	2,toBhaAlt-knda
+glyph	bhasubscriptaltknda,uni1CDA	1,to1CDA-knda	2,toBhaAlt-knda
+glyph	bhasubscriptaltknda,candrabindu_0951knda	1,toCandrabindu_0951-knda	2,toBhaAlt-knda
+glyph	bhasubscriptaltknda,candrabindu_0952knda	1,toCandrabindu_0952-knda	2,toBhaAlt-knda
+glyph	bhasubscriptaltknda,candrabindu_1CDAknda	1,toCandrabindu_1CDA-knda	2,toBhaAlt-knda
+
+glyph	masubscriptaltknda,candrabinduknda	1,toCandraBindu-knda	2,toMaAlt-knda
+glyph	masubscriptaltknda,uni0951	1,to0951-knda	2,toMaAlt-knda
+glyph	masubscriptaltknda,uni0952	1,to0952-knda	2,toMaAlt-knda
+glyph	masubscriptaltknda,uni1CDA	1,to1CDA-knda	2,toMaAlt-knda
+glyph	masubscriptaltknda,candrabindu_0951knda	1,toCandrabindu_0951-knda	2,toMaAlt-knda
+glyph	masubscriptaltknda,candrabindu_0952knda	1,toCandrabindu_0952-knda	2,toMaAlt-knda
+glyph	masubscriptaltknda,candrabindu_1CDAknda	1,toCandrabindu_1CDA-knda	2,toMaAlt-knda
+
+glyph	yasubscriptaltknda,candrabinduknda	1,toCandraBindu-knda	2,toYaAlt-knda
+glyph	yasubscriptaltknda,uni0951	1,to0951-knda	2,toYaAlt-knda
+glyph	yasubscriptaltknda,uni0952	1,to0952-knda	2,toYaAlt-knda
+glyph	yasubscriptaltknda,uni1CDA	1,to1CDA-knda	2,toYaAlt-knda
+glyph	yasubscriptaltknda,candrabindu_0951knda	1,toCandrabindu_0951-knda	2,toYaAlt-knda
+glyph	yasubscriptaltknda,candrabindu_0952knda	1,toCandrabindu_0952-knda	2,toYaAlt-knda
+glyph	yasubscriptaltknda,candrabindu_1CDAknda	1,toCandrabindu_1CDA-knda	2,toYaAlt-knda
+
+glyph	rasubscriptaltknda,candrabinduknda	1,toCandraBindu-knda	2,toRaAlt-knda
+glyph	rasubscriptaltknda,uni0951	1,to0951-knda	2,toRaAlt-knda
+glyph	rasubscriptaltknda,uni0952	1,to0952-knda	2,toRaAlt-knda
+glyph	rasubscriptaltknda,uni1CDA	1,to1CDA-knda	2,toRaAlt-knda
+glyph	rasubscriptaltknda,candrabindu_0951knda	1,toCandrabindu_0951-knda	2,toRaAlt-knda
+glyph	rasubscriptaltknda,candrabindu_0952knda	1,toCandrabindu_0952-knda	2,toRaAlt-knda
+glyph	rasubscriptaltknda,candrabindu_1CDAknda	1,toCandrabindu_1CDA-knda	2,toRaAlt-knda
+
+glyph	rrasubscriptaltknda,candrabinduknda	1,toCandraBindu-knda	2,toRRaAlt-knda
+glyph	rrasubscriptaltknda,uni0951	1,to0951-knda	2,toRRaAlt-knda
+glyph	rrasubscriptaltknda,uni0952	1,to0952-knda	2,toRRaAlt-knda
+glyph	rrasubscriptaltknda,uni1CDA	1,to1CDA-knda	2,toRRaAlt-knda
+glyph	rrasubscriptaltknda,candrabindu_0951knda	1,toCandrabindu_0951-knda	2,toRRaAlt-knda
+glyph	rrasubscriptaltknda,candrabindu_0952knda	1,toCandrabindu_0952-knda	2,toRRaAlt-knda
+glyph	rrasubscriptaltknda,candrabindu_1CDAknda	1,toCandrabindu_1CDA-knda	2,toRRaAlt-knda
+
+glyph	lasubscriptaltknda,candrabinduknda	1,toCandraBindu-knda	2,toLaAlt-knda
+glyph	lasubscriptaltknda,uni0951	1,to0951-knda	2,toLaAlt-knda
+glyph	lasubscriptaltknda,uni0952	1,to0952-knda	2,toLaAlt-knda
+glyph	lasubscriptaltknda,uni1CDA	1,to1CDA-knda	2,toLaAlt-knda
+glyph	lasubscriptaltknda,candrabindu_0951knda	1,toCandrabindu_0951-knda	2,toLaAlt-knda
+glyph	lasubscriptaltknda,candrabindu_0952knda	1,toCandrabindu_0952-knda	2,toLaAlt-knda
+glyph	lasubscriptaltknda,candrabindu_1CDAknda	1,toCandrabindu_1CDA-knda	2,toLaAlt-knda
+
+glyph	llasubscriptaltknda,candrabinduknda	1,toCandraBindu-knda	2,toLLaAlt-knda
+glyph	llasubscriptaltknda,uni0951	1,to0951-knda	2,toLLaAlt-knda
+glyph	llasubscriptaltknda,uni0952	1,to0952-knda	2,toLLaAlt-knda
+glyph	llasubscriptaltknda,uni1CDA	1,to1CDA-knda	2,toLLaAlt-knda
+glyph	llasubscriptaltknda,candrabindu_0951knda	1,toCandrabindu_0951-knda	2,toLLaAlt-knda
+glyph	llasubscriptaltknda,candrabindu_0952knda	1,toCandrabindu_0952-knda	2,toLLaAlt-knda
+glyph	llasubscriptaltknda,candrabindu_1CDAknda	1,toCandrabindu_1CDA-knda	2,toLLaAlt-knda
+
+glyph	vasubscriptaltknda,candrabinduknda	1,toCandraBindu-knda	2,toVaAlt-knda
+glyph	vasubscriptaltknda,uni0951	1,to0951-knda	2,toVaAlt-knda
+glyph	vasubscriptaltknda,uni0952	1,to0952-knda	2,toVaAlt-knda
+glyph	vasubscriptaltknda,uni1CDA	1,to1CDA-knda	2,toVaAlt-knda
+glyph	vasubscriptaltknda,candrabindu_0951knda	1,toCandrabindu_0951-knda	2,toVaAlt-knda
+glyph	vasubscriptaltknda,candrabindu_0952knda	1,toCandrabindu_0952-knda	2,toVaAlt-knda
+glyph	vasubscriptaltknda,candrabindu_1CDAknda	1,toCandrabindu_1CDA-knda	2,toVaAlt-knda
+
+glyph	shasubscriptaltknda,candrabinduknda	1,toCandraBindu-knda	2,toShaAlt-knda
+glyph	shasubscriptaltknda,uni0951	1,to0951-knda	2,toShaAlt-knda
+glyph	shasubscriptaltknda,uni0952	1,to0952-knda	2,toShaAlt-knda
+glyph	shasubscriptaltknda,uni1CDA	1,to1CDA-knda	2,toShaAlt-knda
+glyph	shasubscriptaltknda,candrabindu_0951knda	1,toCandrabindu_0951-knda	2,toShaAlt-knda
+glyph	shasubscriptaltknda,candrabindu_0952knda	1,toCandrabindu_0952-knda	2,toShaAlt-knda
+glyph	shasubscriptaltknda,candrabindu_1CDAknda	1,toCandrabindu_1CDA-knda	2,toShaAlt-knda
+
+glyph	ssasubscriptaltknda,candrabinduknda	1,toCandraBindu-knda	2,toSsaAlt-knda
+glyph	ssasubscriptaltknda,uni0951	1,to0951-knda	2,toSsaAlt-knda
+glyph	ssasubscriptaltknda,uni0952	1,to0952-knda	2,toSsaAlt-knda
+glyph	ssasubscriptaltknda,uni1CDA	1,to1CDA-knda	2,toSsaAlt-knda
+glyph	ssasubscriptaltknda,candrabindu_0951knda	1,toCandrabindu_0951-knda	2,toSsaAlt-knda
+glyph	ssasubscriptaltknda,candrabindu_0952knda	1,toCandrabindu_0952-knda	2,toSsaAlt-knda
+glyph	ssasubscriptaltknda,candrabindu_1CDAknda	1,toCandrabindu_1CDA-knda	2,toSsaAlt-knda
+
+glyph	sasubscriptaltknda,candrabinduknda	1,toCandraBindu-knda	2,toSaAlt-knda
+glyph	sasubscriptaltknda,uni0951	1,to0951-knda	2,toSaAlt-knda
+glyph	sasubscriptaltknda,uni0952	1,to0952-knda	2,toSaAlt-knda
+glyph	sasubscriptaltknda,uni1CDA	1,to1CDA-knda	2,toSaAlt-knda
+glyph	sasubscriptaltknda,candrabindu_0951knda	1,toCandrabindu_0951-knda	2,toSaAlt-knda
+glyph	sasubscriptaltknda,candrabindu_0952knda	1,toCandrabindu_0952-knda	2,toSaAlt-knda
+glyph	sasubscriptaltknda,candrabindu_1CDAknda	1,toCandrabindu_1CDA-knda	2,toSaAlt-knda
+
+glyph	hasubscriptaltknda,candrabinduknda	1,toCandraBindu-knda	2,toHaAlt-knda
+glyph	hasubscriptaltknda,uni0951	1,to0951-knda	2,toHaAlt-knda
+glyph	hasubscriptaltknda,uni0952	1,to0952-knda	2,toHaAlt-knda
+glyph	hasubscriptaltknda,uni1CDA	1,to1CDA-knda	2,toHaAlt-knda
+glyph	hasubscriptaltknda,candrabindu_0951knda	1,toCandrabindu_0951-knda	2,toHaAlt-knda
+glyph	hasubscriptaltknda,candrabindu_0952knda	1,toCandrabindu_0952-knda	2,toHaAlt-knda
+glyph	hasubscriptaltknda,candrabindu_1CDAknda	1,toCandrabindu_1CDA-knda	2,toHaAlt-knda
+
+glyph	fasubscriptaltknda,candrabinduknda	1,toCandraBindu-knda	2,toFaAlt-knda
+glyph	fasubscriptaltknda,uni0951	1,to0951-knda	2,toFaAlt-knda
+glyph	fasubscriptaltknda,uni0952	1,to0952-knda	2,toFaAlt-knda
+glyph	fasubscriptaltknda,uni1CDA	1,to1CDA-knda	2,toFaAlt-knda
+glyph	fasubscriptaltknda,candrabindu_0951knda	1,toCandrabindu_0951-knda	2,toFaAlt-knda
+glyph	fasubscriptaltknda,candrabindu_0952knda	1,toCandrabindu_0952-knda	2,toFaAlt-knda
+glyph	fasubscriptaltknda,candrabindu_1CDAknda	1,toCandrabindu_1CDA-knda	2,toFaAlt-knda
+
+glyph	karasubscriptaltknda,candrabinduknda	1,toCandraBindu-knda	2,toKaRaAlt-knda
+glyph	karasubscriptaltknda,uni0951	1,to0951-knda	2,toKaRaAlt-knda
+glyph	karasubscriptaltknda,uni0952	1,to0952-knda	2,toKaRaAlt-knda
+glyph	karasubscriptaltknda,uni1CDA	1,to1CDA-knda	2,toKaRaAlt-knda
+glyph	karasubscriptaltknda,candrabindu_0951knda	1,toCandrabindu_0951-knda	2,toKaRaAlt-knda
+glyph	karasubscriptaltknda,candrabindu_0952knda	1,toCandrabindu_0952-knda	2,toKaRaAlt-knda
+glyph	karasubscriptaltknda,candrabindu_1CDAknda	1,toCandrabindu_1CDA-knda	2,toKaRaAlt-knda
+
+glyph	garasubscriptaltknda,candrabinduknda	1,toCandraBindu-knda	2,toGaRaAlt-knda
+glyph	garasubscriptaltknda,uni0951	1,to0951-knda	2,toGaRaAlt-knda
+glyph	garasubscriptaltknda,uni0952	1,to0952-knda	2,toGaRaAlt-knda
+glyph	garasubscriptaltknda,uni1CDA	1,to1CDA-knda	2,toGaRaAlt-knda
+glyph	garasubscriptaltknda,candrabindu_0951knda	1,toCandrabindu_0951-knda	2,toGaRaAlt-knda
+glyph	garasubscriptaltknda,candrabindu_0952knda	1,toCandrabindu_0952-knda	2,toGaRaAlt-knda
+glyph	garasubscriptaltknda,candrabindu_1CDAknda	1,toCandrabindu_1CDA-knda	2,toGaRaAlt-knda
+
+glyph	ttarasubscriptaltknda,candrabinduknda	1,toCandraBindu-knda	2,toTtaRaAlt-knda
+glyph	ttarasubscriptaltknda,uni0951	1,to0951-knda	2,toTtaRaAlt-knda
+glyph	ttarasubscriptaltknda,uni0952	1,to0952-knda	2,toTtaRaAlt-knda
+glyph	ttarasubscriptaltknda,uni1CDA	1,to1CDA-knda	2,toTtaRaAlt-knda
+glyph	ttarasubscriptaltknda,candrabindu_0951knda	1,toCandrabindu_0951-knda	2,toTtaRaAlt-knda
+glyph	ttarasubscriptaltknda,candrabindu_0952knda	1,toCandrabindu_0952-knda	2,toTtaRaAlt-knda
+glyph	ttarasubscriptaltknda,candrabindu_1CDAknda	1,toCandrabindu_1CDA-knda	2,toTtaRaAlt-knda
+
+glyph	ddarasubscriptaltknda,candrabinduknda	1,toCandraBindu-knda	2,toDdaRaAlt-knda
+glyph	ddarasubscriptaltknda,uni0951	1,to0951-knda	2,toDdaRaAlt-knda
+glyph	ddarasubscriptaltknda,uni0952	1,to0952-knda	2,toDdaRaAlt-knda
+glyph	ddarasubscriptaltknda,uni1CDA	1,to1CDA-knda	2,toDdaRaAlt-knda
+glyph	ddarasubscriptaltknda,candrabindu_0951knda	1,toCandrabindu_0951-knda	2,toDdaRaAlt-knda
+glyph	ddarasubscriptaltknda,candrabindu_0952knda	1,toCandrabindu_0952-knda	2,toDdaRaAlt-knda
+glyph	ddarasubscriptaltknda,candrabindu_1CDAknda	1,toCandrabindu_1CDA-knda	2,toDdaRaAlt-knda
+
+glyph	tarasubscriptaltknda,candrabinduknda	1,toCandraBindu-knda	2,toTaRaAlt-knda
+glyph	tarasubscriptaltknda,uni0951	1,to0951-knda	2,toTaRaAlt-knda
+glyph	tarasubscriptaltknda,uni0952	1,to0952-knda	2,toTaRaAlt-knda
+glyph	tarasubscriptaltknda,uni1CDA	1,to1CDA-knda	2,toTaRaAlt-knda
+glyph	tarasubscriptaltknda,candrabindu_0951knda	1,toCandrabindu_0951-knda	2,toTaRaAlt-knda
+glyph	tarasubscriptaltknda,candrabindu_0952knda	1,toCandrabindu_0952-knda	2,toTaRaAlt-knda
+glyph	tarasubscriptaltknda,candrabindu_1CDAknda	1,toCandrabindu_1CDA-knda	2,toTaRaAlt-knda
+
+glyph	darasubscriptaltknda,candrabinduknda	1,toCandraBindu-knda	2,toDaRaAlt-knda
+glyph	darasubscriptaltknda,uni0951	1,to0951-knda	2,toDaRaAlt-knda
+glyph	darasubscriptaltknda,uni0952	1,to0952-knda	2,toDaRaAlt-knda
+glyph	darasubscriptaltknda,uni1CDA	1,to1CDA-knda	2,toDaRaAlt-knda
+glyph	darasubscriptaltknda,candrabindu_0951knda	1,toCandrabindu_0951-knda	2,toDaRaAlt-knda
+glyph	darasubscriptaltknda,candrabindu_0952knda	1,toCandrabindu_0952-knda	2,toDaRaAlt-knda
+glyph	darasubscriptaltknda,candrabindu_1CDAknda	1,toCandrabindu_1CDA-knda	2,toDaRaAlt-knda
+
+glyph	parasubscriptaltknda,candrabinduknda	1,toCandraBindu-knda	2,toPaRaAlt-knda
+glyph	parasubscriptaltknda,uni0951	1,to0951-knda	2,toPaRaAlt-knda
+glyph	parasubscriptaltknda,uni0952	1,to0952-knda	2,toPaRaAlt-knda
+glyph	parasubscriptaltknda,uni1CDA	1,to1CDA-knda	2,toPaRaAlt-knda
+glyph	parasubscriptaltknda,candrabindu_0951knda	1,toCandrabindu_0951-knda	2,toPaRaAlt-knda
+glyph	parasubscriptaltknda,candrabindu_0952knda	1,toCandrabindu_0952-knda	2,toPaRaAlt-knda
+glyph	parasubscriptaltknda,candrabindu_1CDAknda	1,toCandrabindu_1CDA-knda	2,toPaRaAlt-knda
+
+glyph	bharasubscriptaltknda,candrabinduknda	1,toCandraBindu-knda	2,toBhaRaAlt-knda
+glyph	bharasubscriptaltknda,uni0951	1,to0951-knda	2,toBhaRaAlt-knda
+glyph	bharasubscriptaltknda,uni0952	1,to0952-knda	2,toBhaRaAlt-knda
+glyph	bharasubscriptaltknda,uni1CDA	1,to1CDA-knda	2,toBhaRaAlt-knda
+glyph	bharasubscriptaltknda,candrabindu_0951knda	1,toCandrabindu_0951-knda	2,toBhaRaAlt-knda
+glyph	bharasubscriptaltknda,candrabindu_0952knda	1,toCandrabindu_0952-knda	2,toBhaRaAlt-knda
+glyph	bharasubscriptaltknda,candrabindu_1CDAknda	1,toCandrabindu_1CDA-knda	2,toBhaRaAlt-knda
+
+glyph	tayasubscriptaltknda,candrabinduknda	1,toCandraBindu-knda	2,toTaYaAlt-knda
+glyph	tayasubscriptaltknda,uni0951	1,to0951-knda	2,toTaYaAlt-knda
+glyph	tayasubscriptaltknda,uni0952	1,to0952-knda	2,toTaYaAlt-knda
+glyph	tayasubscriptaltknda,uni1CDA	1,to1CDA-knda	2,toTaYaAlt-knda
+glyph	tayasubscriptaltknda,candrabindu_0951knda	1,toCandrabindu_0951-knda	2,toTaYaAlt-knda
+glyph	tayasubscriptaltknda,candrabindu_0952knda	1,toCandrabindu_0952-knda	2,toTaYaAlt-knda
+glyph	tayasubscriptaltknda,candrabindu_1CDAknda	1,toCandrabindu_1CDA-knda	2,toTaYaAlt-knda
+
+glyph	mayasubscriptaltknda,candrabinduknda	1,toCandraBindu-knda	2,toMaYaAlt-knda
+glyph	mayasubscriptaltknda,uni0951	1,to0951-knda	2,toMaYaAlt-knda
+glyph	mayasubscriptaltknda,uni0952	1,to0952-knda	2,toMaYaAlt-knda
+glyph	mayasubscriptaltknda,uni1CDA	1,to1CDA-knda	2,toMaYaAlt-knda
+glyph	mayasubscriptaltknda,candrabindu_0951knda	1,toCandrabindu_0951-knda	2,toMaYaAlt-knda
+glyph	mayasubscriptaltknda,candrabindu_0952knda	1,toCandrabindu_0952-knda	2,toMaYaAlt-knda
+glyph	mayasubscriptaltknda,candrabindu_1CDAknda	1,toCandrabindu_1CDA-knda	2,toMaYaAlt-knda
+
+lookup end
+
+
+lookup	sw4-knda	context
+
+glyph	kasubscriptknda,candrabinduknda	1,toCandraBindu-knda	2,toKa-knda
+glyph	kasubscriptknda,uni0951	1,to0951-knda	2,toKa-knda
+glyph	kasubscriptknda,uni0952	1,to0952-knda	2,toKa-knda
+glyph	kasubscriptknda,uni1CDA	1,to1CDA-knda	2,toKa-knda
+glyph	kasubscriptknda,candrabindu_0951knda	1,toCandrabindu_0951-knda	2,toKa-knda
+glyph	kasubscriptknda,candrabindu_0952knda	1,toCandrabindu_0952-knda	2,toKa-knda
+glyph	kasubscriptknda,candrabindu_1CDAknda	1,toCandrabindu_1CDA-knda	2,toKa-knda
+
+glyph	khasubscriptknda,candrabinduknda	1,toCandraBindu-knda	2,toKha-knda
+glyph	khasubscriptknda,uni0951	1,to0951-knda	2,toKha-knda
+glyph	khasubscriptknda,uni0952	1,to0952-knda	2,toKha-knda
+glyph	khasubscriptknda,uni1CDA	1,to1CDA-knda	2,toKha-knda
+glyph	khasubscriptknda,candrabindu_0951knda	1,toCandrabindu_0951-knda	2,toKha-knda
+glyph	khasubscriptknda,candrabindu_0952knda	1,toCandrabindu_0952-knda	2,toKha-knda
+glyph	khasubscriptknda,candrabindu_1CDAknda	1,toCandrabindu_1CDA-knda	2,toKha-knda
+
+glyph	gasubscriptknda,candrabinduknda	1,toCandraBindu-knda	2,toGa-knda
+glyph	gasubscriptknda,uni0951	1,to0951-knda	2,toGa-knda
+glyph	gasubscriptknda,uni0952	1,to0952-knda	2,toGa-knda
+glyph	gasubscriptknda,uni1CDA	1,to1CDA-knda	2,toGa-knda
+glyph	gasubscriptknda,candrabindu_0951knda	1,toCandrabindu_0951-knda	2,toGa-knda
+glyph	gasubscriptknda,candrabindu_0952knda	1,toCandrabindu_0952-knda	2,toGa-knda
+glyph	gasubscriptknda,candrabindu_1CDAknda	1,toCandrabindu_1CDA-knda	2,toGa-knda
+
+glyph	ghasubscriptknda,candrabinduknda	1,toCandraBindu-knda	2,toGha-knda
+glyph	ghasubscriptknda,uni0951	1,to0951-knda	2,toGha-knda
+glyph	ghasubscriptknda,uni0952	1,to0952-knda	2,toGha-knda
+glyph	ghasubscriptknda,uni1CDA	1,to1CDA-knda	2,toGha-knda
+glyph	ghasubscriptknda,candrabindu_0951knda	1,toCandrabindu_0951-knda	2,toGha-knda
+glyph	ghasubscriptknda,candrabindu_0952knda	1,toCandrabindu_0952-knda	2,toGha-knda
+glyph	ghasubscriptknda,candrabindu_1CDAknda	1,toCandrabindu_1CDA-knda	2,toGha-knda
+
+glyph	ngasubscriptknda,candrabinduknda	1,toCandraBindu-knda	2,toNga-knda
+glyph	ngasubscriptknda,uni0951	1,to0951-knda	2,toNga-knda
+glyph	ngasubscriptknda,uni0952	1,to0952-knda	2,toNga-knda
+glyph	ngasubscriptknda,uni1CDA	1,to1CDA-knda	2,toNga-knda
+glyph	ngasubscriptknda,candrabindu_0951knda	1,toCandrabindu_0951-knda	2,toNga-knda
+glyph	ngasubscriptknda,candrabindu_0952knda	1,toCandrabindu_0952-knda	2,toNga-knda
+glyph	ngasubscriptknda,candrabindu_1CDAknda	1,toCandrabindu_1CDA-knda	2,toNga-knda
+
+glyph	casubscriptknda,candrabinduknda	1,toCandraBindu-knda	2,toCa-knda
+glyph	casubscriptknda,uni0951	1,to0951-knda	2,toCa-knda
+glyph	casubscriptknda,uni0952	1,to0952-knda	2,toCa-knda
+glyph	casubscriptknda,uni1CDA	1,to1CDA-knda	2,toCa-knda
+glyph	casubscriptknda,candrabindu_0951knda	1,toCandrabindu_0951-knda	2,toCa-knda
+glyph	casubscriptknda,candrabindu_0952knda	1,toCandrabindu_0952-knda	2,toCa-knda
+glyph	casubscriptknda,candrabindu_1CDAknda	1,toCandrabindu_1CDA-knda	2,toCa-knda
+
+glyph	chasubscriptknda,candrabinduknda	1,toCandraBindu-knda	2,toCha-knda
+glyph	chasubscriptknda,uni0951	1,to0951-knda	2,toCha-knda
+glyph	chasubscriptknda,uni0952	1,to0952-knda	2,toCha-knda
+glyph	chasubscriptknda,uni1CDA	1,to1CDA-knda	2,toCha-knda
+glyph	chasubscriptknda,candrabindu_0951knda	1,toCandrabindu_0951-knda	2,toCha-knda
+glyph	chasubscriptknda,candrabindu_0952knda	1,toCandrabindu_0952-knda	2,toCha-knda
+glyph	chasubscriptknda,candrabindu_1CDAknda	1,toCandrabindu_1CDA-knda	2,toCha-knda
+
+glyph	jasubscriptknda,candrabinduknda	1,toCandraBindu-knda	2,toJa-knda
+glyph	jasubscriptknda,uni0951	1,to0951-knda	2,toJa-knda
+glyph	jasubscriptknda,uni0952	1,to0952-knda	2,toJa-knda
+glyph	jasubscriptknda,uni1CDA	1,to1CDA-knda	2,toJa-knda
+glyph	jasubscriptknda,candrabindu_0951knda	1,toCandrabindu_0951-knda	2,toJa-knda
+glyph	jasubscriptknda,candrabindu_0952knda	1,toCandrabindu_0952-knda	2,toJa-knda
+glyph	jasubscriptknda,candrabindu_1CDAknda	1,toCandrabindu_1CDA-knda	2,toJa-knda
+
+glyph	jhasubscriptknda,candrabinduknda	1,toCandraBindu-knda	2,toJha-knda
+glyph	jhasubscriptknda,uni0951	1,to0951-knda	2,toJha-knda
+glyph	jhasubscriptknda,uni0952	1,to0952-knda	2,toJha-knda
+glyph	jhasubscriptknda,uni1CDA	1,to1CDA-knda	2,toJha-knda
+glyph	jhasubscriptknda,candrabindu_0951knda	1,toCandrabindu_0951-knda	2,toJha-knda
+glyph	jhasubscriptknda,candrabindu_0952knda	1,toCandrabindu_0952-knda	2,toJha-knda
+glyph	jhasubscriptknda,candrabindu_1CDAknda	1,toCandrabindu_1CDA-knda	2,toJha-knda
+
+glyph	nyasubscriptknda,candrabinduknda	1,toCandraBindu-knda	2,toNya-knda
+glyph	nyasubscriptknda,uni0951	1,to0951-knda	2,toNya-knda
+glyph	nyasubscriptknda,uni0952	1,to0952-knda	2,toNya-knda
+glyph	nyasubscriptknda,uni1CDA	1,to1CDA-knda	2,toNya-knda
+glyph	nyasubscriptknda,candrabindu_0951knda	1,toCandrabindu_0951-knda	2,toNya-knda
+glyph	nyasubscriptknda,candrabindu_0952knda	1,toCandrabindu_0952-knda	2,toNya-knda
+glyph	nyasubscriptknda,candrabindu_1CDAknda	1,toCandrabindu_1CDA-knda	2,toNya-knda
+
+glyph	ttasubscriptknda,candrabinduknda	1,toCandraBindu-knda	2,toTta-knda
+glyph	ttasubscriptknda,uni0951	1,to0951-knda	2,toTta-knda
+glyph	ttasubscriptknda,uni0952	1,to0952-knda	2,toTta-knda
+glyph	ttasubscriptknda,uni1CDA	1,to1CDA-knda	2,toTta-knda
+glyph	ttasubscriptknda,candrabindu_0951knda	1,toCandrabindu_0951-knda	2,toTta-knda
+glyph	ttasubscriptknda,candrabindu_0952knda	1,toCandrabindu_0952-knda	2,toTta-knda
+glyph	ttasubscriptknda,candrabindu_1CDAknda	1,toCandrabindu_1CDA-knda	2,toTta-knda
+
+glyph	tthasubscriptknda,candrabinduknda	1,toCandraBindu-knda	2,toTtha-knda
+glyph	tthasubscriptknda,uni0951	1,to0951-knda	2,toTtha-knda
+glyph	tthasubscriptknda,uni0952	1,to0952-knda	2,toTtha-knda
+glyph	tthasubscriptknda,uni1CDA	1,to1CDA-knda	2,toTtha-knda
+glyph	tthasubscriptknda,candrabindu_0951knda	1,toCandrabindu_0951-knda	2,toTtha-knda
+glyph	tthasubscriptknda,candrabindu_0952knda	1,toCandrabindu_0952-knda	2,toTtha-knda
+glyph	tthasubscriptknda,candrabindu_1CDAknda	1,toCandrabindu_1CDA-knda	2,toTtha-knda
+
+glyph	ddasubscriptknda,candrabinduknda	1,toCandraBindu-knda	2,toDda-knda
+glyph	ddasubscriptknda,uni0951	1,to0951-knda	2,toDda-knda
+glyph	ddasubscriptknda,uni0952	1,to0952-knda	2,toDda-knda
+glyph	ddasubscriptknda,uni1CDA	1,to1CDA-knda	2,toDda-knda
+glyph	ddasubscriptknda,candrabindu_0951knda	1,toCandrabindu_0951-knda	2,toDda-knda
+glyph	ddasubscriptknda,candrabindu_0952knda	1,toCandrabindu_0952-knda	2,toDda-knda
+glyph	ddasubscriptknda,candrabindu_1CDAknda	1,toCandrabindu_1CDA-knda	2,toDda-knda
+
+glyph	ddhasubscriptknda,candrabinduknda	1,toCandraBindu-knda	2,toDdha-knda
+glyph	ddhasubscriptknda,uni0951	1,to0951-knda	2,toDdha-knda
+glyph	ddhasubscriptknda,uni0952	1,to0952-knda	2,toDdha-knda
+glyph	ddhasubscriptknda,uni1CDA	1,to1CDA-knda	2,toDdha-knda
+glyph	ddhasubscriptknda,candrabindu_0951knda	1,toCandrabindu_0951-knda	2,toDdha-knda
+glyph	ddhasubscriptknda,candrabindu_0952knda	1,toCandrabindu_0952-knda	2,toDdha-knda
+glyph	ddhasubscriptknda,candrabindu_1CDAknda	1,toCandrabindu_1CDA-knda	2,toDdha-knda
+
+glyph	nnasubscriptknda,candrabinduknda	1,toCandraBindu-knda	2,toNna-knda
+glyph	nnasubscriptknda,uni0951	1,to0951-knda	2,toNna-knda
+glyph	nnasubscriptknda,uni0952	1,to0952-knda	2,toNna-knda
+glyph	nnasubscriptknda,uni1CDA	1,to1CDA-knda	2,toNna-knda
+glyph	nnasubscriptknda,candrabindu_0951knda	1,toCandrabindu_0951-knda	2,toNna-knda
+glyph	nnasubscriptknda,candrabindu_0952knda	1,toCandrabindu_0952-knda	2,toNna-knda
+glyph	nnasubscriptknda,candrabindu_1CDAknda	1,toCandrabindu_1CDA-knda	2,toNna-knda
+
+glyph	tasubscriptknda,candrabinduknda	1,toCandraBindu-knda	2,toTa-knda
+glyph	tasubscriptknda,uni0951	1,to0951-knda	2,toTa-knda
+glyph	tasubscriptknda,uni0952	1,to0952-knda	2,toTa-knda
+glyph	tasubscriptknda,uni1CDA	1,to1CDA-knda	2,toTa-knda
+glyph	tasubscriptknda,candrabindu_0951knda	1,toCandrabindu_0951-knda	2,toTa-knda
+glyph	tasubscriptknda,candrabindu_0952knda	1,toCandrabindu_0952-knda	2,toTa-knda
+glyph	tasubscriptknda,candrabindu_1CDAknda	1,toCandrabindu_1CDA-knda	2,toTa-knda
+
+glyph	thasubscriptknda,candrabinduknda	1,toCandraBindu-knda	2,toTha-knda
+glyph	thasubscriptknda,uni0951	1,to0951-knda	2,toTha-knda
+glyph	thasubscriptknda,uni0952	1,to0952-knda	2,toTha-knda
+glyph	thasubscriptknda,uni1CDA	1,to1CDA-knda	2,toTha-knda
+glyph	thasubscriptknda,candrabindu_0951knda	1,toCandrabindu_0951-knda	2,toTha-knda
+glyph	thasubscriptknda,candrabindu_0952knda	1,toCandrabindu_0952-knda	2,toTha-knda
+glyph	thasubscriptknda,candrabindu_1CDAknda	1,toCandrabindu_1CDA-knda	2,toTha-knda
+
+glyph	dasubscriptknda,candrabinduknda	1,toCandraBindu-knda	2,toDa-knda
+glyph	dasubscriptknda,uni0951	1,to0951-knda	2,toDa-knda
+glyph	dasubscriptknda,uni0952	1,to0952-knda	2,toDa-knda
+glyph	dasubscriptknda,uni1CDA	1,to1CDA-knda	2,toDa-knda
+glyph	dasubscriptknda,candrabindu_0951knda	1,toCandrabindu_0951-knda	2,toDa-knda
+glyph	dasubscriptknda,candrabindu_0952knda	1,toCandrabindu_0952-knda	2,toDa-knda
+glyph	dasubscriptknda,candrabindu_1CDAknda	1,toCandrabindu_1CDA-knda	2,toDa-knda
+
+glyph	dhasubscriptknda,candrabinduknda	1,toCandraBindu-knda	2,toDha-knda
+glyph	dhasubscriptknda,uni0951	1,to0951-knda	2,toDha-knda
+glyph	dhasubscriptknda,uni0952	1,to0952-knda	2,toDha-knda
+glyph	dhasubscriptknda,uni1CDA	1,to1CDA-knda	2,toDha-knda
+glyph	dhasubscriptknda,candrabindu_0951knda	1,toCandrabindu_0951-knda	2,toDha-knda
+glyph	dhasubscriptknda,candrabindu_0952knda	1,toCandrabindu_0952-knda	2,toDha-knda
+glyph	dhasubscriptknda,candrabindu_1CDAknda	1,toCandrabindu_1CDA-knda	2,toDha-knda
+
+glyph	nasubscriptknda,candrabinduknda	1,toCandraBindu-knda	2,toNa-knda
+glyph	nasubscriptknda,uni0951	1,to0951-knda	2,toNa-knda
+glyph	nasubscriptknda,uni0952	1,to0952-knda	2,toNa-knda
+glyph	nasubscriptknda,uni1CDA	1,to1CDA-knda	2,toNa-knda
+glyph	nasubscriptknda,candrabindu_0951knda	1,toCandrabindu_0951-knda	2,toNa-knda
+glyph	nasubscriptknda,candrabindu_0952knda	1,toCandrabindu_0952-knda	2,toNa-knda
+glyph	nasubscriptknda,candrabindu_1CDAknda	1,toCandrabindu_1CDA-knda	2,toNa-knda
+
+glyph	pasubscriptknda,candrabinduknda	1,toCandraBindu-knda	2,toPa-knda
+glyph	pasubscriptknda,uni0951	1,to0951-knda	2,toPa-knda
+glyph	pasubscriptknda,uni0952	1,to0952-knda	2,toPa-knda
+glyph	pasubscriptknda,uni1CDA	1,to1CDA-knda	2,toPa-knda
+glyph	pasubscriptknda,candrabindu_0951knda	1,toCandrabindu_0951-knda	2,toPa-knda
+glyph	pasubscriptknda,candrabindu_0952knda	1,toCandrabindu_0952-knda	2,toPa-knda
+glyph	pasubscriptknda,candrabindu_1CDAknda	1,toCandrabindu_1CDA-knda	2,toPa-knda
+
+glyph	phasubscriptknda,candrabinduknda	1,toCandraBindu-knda	2,toPha-knda
+glyph	phasubscriptknda,uni0951	1,to0951-knda	2,toPha-knda
+glyph	phasubscriptknda,uni0952	1,to0952-knda	2,toPha-knda
+glyph	phasubscriptknda,uni1CDA	1,to1CDA-knda	2,toPha-knda
+glyph	phasubscriptknda,candrabindu_0951knda	1,toCandrabindu_0951-knda	2,toPha-knda
+glyph	phasubscriptknda,candrabindu_0952knda	1,toCandrabindu_0952-knda	2,toPha-knda
+glyph	phasubscriptknda,candrabindu_1CDAknda	1,toCandrabindu_1CDA-knda	2,toPha-knda
+
+glyph	basubscriptknda,candrabinduknda	1,toCandraBindu-knda	2,toBa-knda
+glyph	basubscriptknda,uni0951	1,to0951-knda	2,toBa-knda
+glyph	basubscriptknda,uni0952	1,to0952-knda	2,toBa-knda
+glyph	basubscriptknda,uni1CDA	1,to1CDA-knda	2,toBa-knda
+glyph	basubscriptknda,candrabindu_0951knda	1,toCandrabindu_0951-knda	2,toBa-knda
+glyph	basubscriptknda,candrabindu_0952knda	1,toCandrabindu_0952-knda	2,toBa-knda
+glyph	basubscriptknda,candrabindu_1CDAknda	1,toCandrabindu_1CDA-knda	2,toBa-knda
+
+glyph	bhasubscriptknda,candrabinduknda	1,toCandraBindu-knda	2,toBha-knda
+glyph	bhasubscriptknda,uni0951	1,to0951-knda	2,toBha-knda
+glyph	bhasubscriptknda,uni0952	1,to0952-knda	2,toBha-knda
+glyph	bhasubscriptknda,uni1CDA	1,to1CDA-knda	2,toBha-knda
+glyph	bhasubscriptknda,candrabindu_0951knda	1,toCandrabindu_0951-knda	2,toBha-knda
+glyph	bhasubscriptknda,candrabindu_0952knda	1,toCandrabindu_0952-knda	2,toBha-knda
+glyph	bhasubscriptknda,candrabindu_1CDAknda	1,toCandrabindu_1CDA-knda	2,toBha-knda
+
+glyph	masubscriptknda,candrabinduknda	1,toCandraBindu-knda	2,toMa-knda
+glyph	masubscriptknda,uni0951	1,to0951-knda	2,toMa-knda
+glyph	masubscriptknda,uni0952	1,to0952-knda	2,toMa-knda
+glyph	masubscriptknda,uni1CDA	1,to1CDA-knda	2,toMa-knda
+glyph	masubscriptknda,candrabindu_0951knda	1,toCandrabindu_0951-knda	2,toMa-knda
+glyph	masubscriptknda,candrabindu_0952knda	1,toCandrabindu_0952-knda	2,toMa-knda
+glyph	masubscriptknda,candrabindu_1CDAknda	1,toCandrabindu_1CDA-knda	2,toMa-knda
+
+glyph	yasubscriptknda,candrabinduknda	1,toCandraBindu-knda	2,toYa-knda
+glyph	yasubscriptknda,uni0951	1,to0951-knda	2,toYa-knda
+glyph	yasubscriptknda,uni0952	1,to0952-knda	2,toYa-knda
+glyph	yasubscriptknda,uni1CDA	1,to1CDA-knda	2,toYa-knda
+glyph	yasubscriptknda,candrabindu_0951knda	1,toCandrabindu_0951-knda	2,toYa-knda
+glyph	yasubscriptknda,candrabindu_0952knda	1,toCandrabindu_0952-knda	2,toYa-knda
+glyph	yasubscriptknda,candrabindu_1CDAknda	1,toCandrabindu_1CDA-knda	2,toYa-knda
+
+glyph	rasubscriptknda,candrabinduknda	1,toCandraBindu-knda	2,toRa-knda
+glyph	rasubscriptknda,uni0951	1,to0951-knda	2,toRa-knda
+glyph	rasubscriptknda,uni0952	1,to0952-knda	2,toRa-knda
+glyph	rasubscriptknda,uni1CDA	1,to1CDA-knda	2,toRa-knda
+glyph	rasubscriptknda,candrabindu_0951knda	1,toCandrabindu_0951-knda	2,toRa-knda
+glyph	rasubscriptknda,candrabindu_0952knda	1,toCandrabindu_0952-knda	2,toRa-knda
+glyph	rasubscriptknda,candrabindu_1CDAknda	1,toCandrabindu_1CDA-knda	2,toRa-knda
+
+glyph	rrasubscriptknda,candrabinduknda	1,toCandraBindu-knda	2,toRRa-knda
+glyph	rrasubscriptknda,uni0951	1,to0951-knda	2,toRRa-knda
+glyph	rrasubscriptknda,uni0952	1,to0952-knda	2,toRRa-knda
+glyph	rrasubscriptknda,uni1CDA	1,to1CDA-knda	2,toRRa-knda
+glyph	rrasubscriptknda,candrabindu_0951knda	1,toCandrabindu_0951-knda	2,toRRa-knda
+glyph	rrasubscriptknda,candrabindu_0952knda	1,toCandrabindu_0952-knda	2,toRRa-knda
+glyph	rrasubscriptknda,candrabindu_1CDAknda	1,toCandrabindu_1CDA-knda	2,toRRa-knda
+
+glyph	lasubscriptknda,candrabinduknda	1,toCandraBindu-knda	2,toLa-knda
+glyph	lasubscriptknda,uni0951	1,to0951-knda	2,toLa-knda
+glyph	lasubscriptknda,uni0952	1,to0952-knda	2,toLa-knda
+glyph	lasubscriptknda,uni1CDA	1,to1CDA-knda	2,toLa-knda
+glyph	lasubscriptknda,candrabindu_0951knda	1,toCandrabindu_0951-knda	2,toLa-knda
+glyph	lasubscriptknda,candrabindu_0952knda	1,toCandrabindu_0952-knda	2,toLa-knda
+glyph	lasubscriptknda,candrabindu_1CDAknda	1,toCandrabindu_1CDA-knda	2,toLa-knda
+
+glyph	llasubscriptknda,candrabinduknda	1,toCandraBindu-knda	2,toLLa-knda
+glyph	llasubscriptknda,uni0951	1,to0951-knda	2,toLLa-knda
+glyph	llasubscriptknda,uni0952	1,to0952-knda	2,toLLa-knda
+glyph	llasubscriptknda,uni1CDA	1,to1CDA-knda	2,toLLa-knda
+glyph	llasubscriptknda,candrabindu_0951knda	1,toCandrabindu_0951-knda	2,toLLa-knda
+glyph	llasubscriptknda,candrabindu_0952knda	1,toCandrabindu_0952-knda	2,toLLa-knda
+glyph	llasubscriptknda,candrabindu_1CDAknda	1,toCandrabindu_1CDA-knda	2,toLLa-knda
+
+glyph	vasubscriptknda,candrabinduknda	1,toCandraBindu-knda	2,toVa-knda
+glyph	vasubscriptknda,uni0951	1,to0951-knda	2,toVa-knda
+glyph	vasubscriptknda,uni0952	1,to0952-knda	2,toVa-knda
+glyph	vasubscriptknda,uni1CDA	1,to1CDA-knda	2,toVa-knda
+glyph	vasubscriptknda,candrabindu_0951knda	1,toCandrabindu_0951-knda	2,toVa-knda
+glyph	vasubscriptknda,candrabindu_0952knda	1,toCandrabindu_0952-knda	2,toVa-knda
+glyph	vasubscriptknda,candrabindu_1CDAknda	1,toCandrabindu_1CDA-knda	2,toVa-knda
+
+glyph	shasubscriptknda,candrabinduknda	1,toCandraBindu-knda	2,toSha-knda
+glyph	shasubscriptknda,uni0951	1,to0951-knda	2,toSha-knda
+glyph	shasubscriptknda,uni0952	1,to0952-knda	2,toSha-knda
+glyph	shasubscriptknda,uni1CDA	1,to1CDA-knda	2,toSha-knda
+glyph	shasubscriptknda,candrabindu_0951knda	1,toCandrabindu_0951-knda	2,toSha-knda
+glyph	shasubscriptknda,candrabindu_0952knda	1,toCandrabindu_0952-knda	2,toSha-knda
+glyph	shasubscriptknda,candrabindu_1CDAknda	1,toCandrabindu_1CDA-knda	2,toSha-knda
+
+glyph	ssasubscriptknda,candrabinduknda	1,toCandraBindu-knda	2,toSsa-knda
+glyph	ssasubscriptknda,uni0951	1,to0951-knda	2,toSsa-knda
+glyph	ssasubscriptknda,uni0952	1,to0952-knda	2,toSsa-knda
+glyph	ssasubscriptknda,uni1CDA	1,to1CDA-knda	2,toSsa-knda
+glyph	ssasubscriptknda,candrabindu_0951knda	1,toCandrabindu_0951-knda	2,toSsa-knda
+glyph	ssasubscriptknda,candrabindu_0952knda	1,toCandrabindu_0952-knda	2,toSsa-knda
+glyph	ssasubscriptknda,candrabindu_1CDAknda	1,toCandrabindu_1CDA-knda	2,toSsa-knda
+
+glyph	sasubscriptknda,candrabinduknda	1,toCandraBindu-knda	2,toSa-knda
+glyph	sasubscriptknda,uni0951	1,to0951-knda	2,toSa-knda
+glyph	sasubscriptknda,uni0952	1,to0952-knda	2,toSa-knda
+glyph	sasubscriptknda,uni1CDA	1,to1CDA-knda	2,toSa-knda
+glyph	sasubscriptknda,candrabindu_0951knda	1,toCandrabindu_0951-knda	2,toSa-knda
+glyph	sasubscriptknda,candrabindu_0952knda	1,toCandrabindu_0952-knda	2,toSa-knda
+glyph	sasubscriptknda,candrabindu_1CDAknda	1,toCandrabindu_1CDA-knda	2,toSa-knda
+
+glyph	hasubscriptknda,candrabinduknda	1,toCandraBindu-knda	2,toHa-knda
+glyph	hasubscriptknda,uni0951	1,to0951-knda	2,toHa-knda
+glyph	hasubscriptknda,uni0952	1,to0952-knda	2,toHa-knda
+glyph	hasubscriptknda,uni1CDA	1,to1CDA-knda	2,toHa-knda
+glyph	hasubscriptknda,candrabindu_0951knda	1,toCandrabindu_0951-knda	2,toHa-knda
+glyph	hasubscriptknda,candrabindu_0952knda	1,toCandrabindu_0952-knda	2,toHa-knda
+glyph	hasubscriptknda,candrabindu_1CDAknda	1,toCandrabindu_1CDA-knda	2,toHa-knda
+
+glyph	fasubscriptknda,candrabinduknda	1,toCandraBindu-knda	2,toFa-knda
+glyph	fasubscriptknda,uni0951	1,to0951-knda	2,toFa-knda
+glyph	fasubscriptknda,uni0952	1,to0952-knda	2,toFa-knda
+glyph	fasubscriptknda,uni1CDA	1,to1CDA-knda	2,toFa-knda
+glyph	fasubscriptknda,candrabindu_0951knda	1,toCandrabindu_0951-knda	2,toFa-knda
+glyph	fasubscriptknda,candrabindu_0952knda	1,toCandrabindu_0952-knda	2,toFa-knda
+glyph	fasubscriptknda,candrabindu_1CDAknda	1,toCandrabindu_1CDA-knda	2,toFa-knda
+
+glyph	karasubscriptknda,candrabinduknda	1,toCandraBindu-knda	2,toKaRa-knda
+glyph	karasubscriptknda,uni0951	1,to0951-knda	2,toKaRa-knda
+glyph	karasubscriptknda,uni0952	1,to0952-knda	2,toKaRa-knda
+glyph	karasubscriptknda,uni1CDA	1,to1CDA-knda	2,toKaRa-knda
+glyph	karasubscriptknda,candrabindu_0951knda	1,toCandrabindu_0951-knda	2,toKaRa-knda
+glyph	karasubscriptknda,candrabindu_0952knda	1,toCandrabindu_0952-knda	2,toKaRa-knda
+glyph	karasubscriptknda,candrabindu_1CDAknda	1,toCandrabindu_1CDA-knda	2,toKaRa-knda
+
+glyph	garasubscriptknda,candrabinduknda	1,toCandraBindu-knda	2,toGaRa-knda
+glyph	garasubscriptknda,uni0951	1,to0951-knda	2,toGaRa-knda
+glyph	garasubscriptknda,uni0952	1,to0952-knda	2,toGaRa-knda
+glyph	garasubscriptknda,uni1CDA	1,to1CDA-knda	2,toGaRa-knda
+glyph	garasubscriptknda,candrabindu_0951knda	1,toCandrabindu_0951-knda	2,toGaRa-knda
+glyph	garasubscriptknda,candrabindu_0952knda	1,toCandrabindu_0952-knda	2,toGaRa-knda
+glyph	garasubscriptknda,candrabindu_1CDAknda	1,toCandrabindu_1CDA-knda	2,toGaRa-knda
+
+glyph	ttarasubscriptknda,candrabinduknda	1,toCandraBindu-knda	2,toTtaRa-knda
+glyph	ttarasubscriptknda,uni0951	1,to0951-knda	2,toTtaRa-knda
+glyph	ttarasubscriptknda,uni0952	1,to0952-knda	2,toTtaRa-knda
+glyph	ttarasubscriptknda,uni1CDA	1,to1CDA-knda	2,toTtaRa-knda
+glyph	ttarasubscriptknda,candrabindu_0951knda	1,toCandrabindu_0951-knda	2,toTtaRa-knda
+glyph	ttarasubscriptknda,candrabindu_0952knda	1,toCandrabindu_0952-knda	2,toTtaRa-knda
+glyph	ttarasubscriptknda,candrabindu_1CDAknda	1,toCandrabindu_1CDA-knda	2,toTtaRa-knda
+
+glyph	ddarasubscriptknda,candrabinduknda	1,toCandraBindu-knda	2,toDdaRa-knda
+glyph	ddarasubscriptknda,uni0951	1,to0951-knda	2,toDdaRa-knda
+glyph	ddarasubscriptknda,uni0952	1,to0952-knda	2,toDdaRa-knda
+glyph	ddarasubscriptknda,uni1CDA	1,to1CDA-knda	2,toDdaRa-knda
+glyph	ddarasubscriptknda,candrabindu_0951knda	1,toCandrabindu_0951-knda	2,toDdaRa-knda
+glyph	ddarasubscriptknda,candrabindu_0952knda	1,toCandrabindu_0952-knda	2,toDdaRa-knda
+glyph	ddarasubscriptknda,candrabindu_1CDAknda	1,toCandrabindu_1CDA-knda	2,toDdaRa-knda
+
+glyph	tarasubscriptknda,candrabinduknda	1,toCandraBindu-knda	2,toTaRa-knda
+glyph	tarasubscriptknda,uni0951	1,to0951-knda	2,toTaRa-knda
+glyph	tarasubscriptknda,uni0952	1,to0952-knda	2,toTaRa-knda
+glyph	tarasubscriptknda,uni1CDA	1,to1CDA-knda	2,toTaRa-knda
+glyph	tarasubscriptknda,candrabindu_0951knda	1,toCandrabindu_0951-knda	2,toTaRa-knda
+glyph	tarasubscriptknda,candrabindu_0952knda	1,toCandrabindu_0952-knda	2,toTaRa-knda
+glyph	tarasubscriptknda,candrabindu_1CDAknda	1,toCandrabindu_1CDA-knda	2,toTaRa-knda
+
+glyph	darasubscriptknda,candrabinduknda	1,toCandraBindu-knda	2,toDaRa-knda
+glyph	darasubscriptknda,uni0951	1,to0951-knda	2,toDaRa-knda
+glyph	darasubscriptknda,uni0952	1,to0952-knda	2,toDaRa-knda
+glyph	darasubscriptknda,uni1CDA	1,to1CDA-knda	2,toDaRa-knda
+glyph	darasubscriptknda,candrabindu_0951knda	1,toCandrabindu_0951-knda	2,toDaRa-knda
+glyph	darasubscriptknda,candrabindu_0952knda	1,toCandrabindu_0952-knda	2,toDaRa-knda
+glyph	darasubscriptknda,candrabindu_1CDAknda	1,toCandrabindu_1CDA-knda	2,toDaRa-knda
+
+glyph	parasubscriptknda,candrabinduknda	1,toCandraBindu-knda	2,toPaRa-knda
+glyph	parasubscriptknda,uni0951	1,to0951-knda	2,toPaRa-knda
+glyph	parasubscriptknda,uni0952	1,to0952-knda	2,toPaRa-knda
+glyph	parasubscriptknda,uni1CDA	1,to1CDA-knda	2,toPaRa-knda
+glyph	parasubscriptknda,candrabindu_0951knda	1,toCandrabindu_0951-knda	2,toPaRa-knda
+glyph	parasubscriptknda,candrabindu_0952knda	1,toCandrabindu_0952-knda	2,toPaRa-knda
+glyph	parasubscriptknda,candrabindu_1CDAknda	1,toCandrabindu_1CDA-knda	2,toPaRa-knda
+
+glyph	bharasubscriptknda,candrabinduknda	1,toCandraBindu-knda	2,toBhaRa-knda
+glyph	bharasubscriptknda,uni0951	1,to0951-knda	2,toBhaRa-knda
+glyph	bharasubscriptknda,uni0952	1,to0952-knda	2,toBhaRa-knda
+glyph	bharasubscriptknda,uni1CDA	1,to1CDA-knda	2,toBhaRa-knda
+glyph	bharasubscriptknda,candrabindu_0951knda	1,toCandrabindu_0951-knda	2,toBhaRa-knda
+glyph	bharasubscriptknda,candrabindu_0952knda	1,toCandrabindu_0952-knda	2,toBhaRa-knda
+glyph	bharasubscriptknda,candrabindu_1CDAknda	1,toCandrabindu_1CDA-knda	2,toBhaRa-knda
+
+glyph	tayasubscriptknda,candrabinduknda	1,toCandraBindu-knda	2,toTaYa-knda
+glyph	tayasubscriptknda,uni0951	1,to0951-knda	2,toTaYa-knda
+glyph	tayasubscriptknda,uni0952	1,to0952-knda	2,toTaYa-knda
+glyph	tayasubscriptknda,uni1CDA	1,to1CDA-knda	2,toTaYa-knda
+glyph	tayasubscriptknda,candrabindu_0951knda	1,toCandrabindu_0951-knda	2,toTaYa-knda
+glyph	tayasubscriptknda,candrabindu_0952knda	1,toCandrabindu_0952-knda	2,toTaYa-knda
+glyph	tayasubscriptknda,candrabindu_1CDAknda	1,toCandrabindu_1CDA-knda	2,toTaYa-knda
+
+glyph	mayasubscriptknda,candrabinduknda	1,toCandraBindu-knda	2,toMaYa-knda
+glyph	mayasubscriptknda,uni0951	1,to0951-knda	2,toMaYa-knda
+glyph	mayasubscriptknda,uni0952	1,to0952-knda	2,toMaYa-knda
+glyph	mayasubscriptknda,uni1CDA	1,to1CDA-knda	2,toMaYa-knda
+glyph	mayasubscriptknda,candrabindu_0951knda	1,toCandrabindu_0951-knda	2,toMaYa-knda
+glyph	mayasubscriptknda,candrabindu_0952knda	1,toCandrabindu_0952-knda	2,toMaYa-knda
+glyph	mayasubscriptknda,candrabindu_1CDAknda	1,toCandrabindu_1CDA-knda	2,toMaYa-knda
+
+lookup end
+
+lookup	sw5-knda	context
+
+glyph	lvocalicvowelsignknda,candrabinduknda	1,toCandraBindu-knda	2,toLvoc-knda
+glyph	lvocalicvowelsignknda,uni0951	1,to0951-knda	2,toLvoc-knda
+glyph	lvocalicvowelsignknda,uni0952	1,to0952-knda	2,toLvoc-knda
+glyph	lvocalicvowelsignknda,uni1CDA	1,to1CDA-knda	2,toLvoc-knda
+glyph	lvocalicvowelsignknda,candrabindu_0951knda	1,toCandrabindu_0951-knda	2,toLvoc-knda
+glyph	lvocalicvowelsignknda,candrabindu_0952knda	1,toCandrabindu_0952-knda	2,toLvoc-knda
+glyph	lvocalicvowelsignknda,candrabindu_1CDAknda	1,toCandrabindu_1CDA-knda	2,toLvoc-knda
+
+glyph	llvocalicvowelsignknda,candrabinduknda	1,toCandraBindu-knda	2,toLLvoc-knda
+glyph	llvocalicvowelsignknda,uni0951	1,to0951-knda	2,toLLvoc-knda
+glyph	llvocalicvowelsignknda,uni0952	1,to0952-knda	2,toLLvoc-knda
+glyph	llvocalicvowelsignknda,uni1CDA	1,to1CDA-knda	2,toLLvoc-knda
+glyph	llvocalicvowelsignknda,candrabindu_0951knda	1,toCandrabindu_0951-knda	2,toLLvoc-knda
+glyph	llvocalicvowelsignknda,candrabindu_0952knda	1,toCandrabindu_0952-knda	2,toLLvoc-knda
+glyph	llvocalicvowelsignknda,candrabindu_1CDAknda	1,toCandrabindu_1CDA-knda	2,toLLvoc-knda
+
+lookup end
+
+
+lookup	toCandraBindu-knda	single
+
+anusvaraknda	candrabinduknda
+visargaknda	candrabinduknda
+rephknda	candrabinduknda
+rvocalicvowelsignknda	candrabinduknda
+rrvocalicvowelsignknda	candrabinduknda
+viramaknda	candrabinduknda
+lengthmarkknda	candrabinduknda
+ailengthmarkknda	candrabinduknda
+lvocalicvowelsignknda	candrabinduknda
+llvocalicvowelsignknda	candrabinduknda
+rvocalicvowelsignaltknda	candrabinduknda
+rrvocalicvowelsignaltknda	candrabinduknda
+ailengthmarkaltknda	candrabinduknda
+lvocalicvowelsignaltknda	candrabinduknda
+llvocalicvowelsignaltknda	candrabinduknda
+tasubscriptrvocalicaltknda	candrabinduknda
+masubscriptrvocalicaltknda	candrabinduknda
+tasubscriptlengthmarkaltknda	candrabinduknda
+masubscriptlengthmarkaltknda	candrabinduknda
+rasubscriptlengthmarkaltknda	candrabinduknda
+tasubscriptrvocalicknda	candrabinduknda
+masubscriptrvocalicknda	candrabinduknda
+tasubscriptlengthmarkknda	candrabinduknda
+masubscriptlengthmarkknda	candrabinduknda
+rasubscriptlengthmarkknda	candrabinduknda
+kasubscriptaltknda	candrabinduknda
+khasubscriptaltknda	candrabinduknda
+gasubscriptaltknda	candrabinduknda
+ghasubscriptaltknda	candrabinduknda
+ngasubscriptaltknda	candrabinduknda
+casubscriptaltknda	candrabinduknda
+chasubscriptaltknda	candrabinduknda
+jasubscriptaltknda	candrabinduknda
+jhasubscriptaltknda	candrabinduknda
+nyasubscriptaltknda	candrabinduknda
+ttasubscriptaltknda	candrabinduknda
+tthasubscriptaltknda	candrabinduknda
+ddasubscriptaltknda	candrabinduknda
+ddhasubscriptaltknda	candrabinduknda
+nnasubscriptaltknda	candrabinduknda
+tasubscriptaltknda	candrabinduknda
+thasubscriptaltknda	candrabinduknda
+dasubscriptaltknda	candrabinduknda
+dhasubscriptaltknda	candrabinduknda
+nasubscriptaltknda	candrabinduknda
+pasubscriptaltknda	candrabinduknda
+phasubscriptaltknda	candrabinduknda
+basubscriptaltknda	candrabinduknda
+bhasubscriptaltknda	candrabinduknda
+masubscriptaltknda	candrabinduknda
+yasubscriptaltknda	candrabinduknda
+rasubscriptaltknda	candrabinduknda
+rrasubscriptaltknda	candrabinduknda
+lasubscriptaltknda	candrabinduknda
+llasubscriptaltknda	candrabinduknda
+vasubscriptaltknda	candrabinduknda
+shasubscriptaltknda	candrabinduknda
+ssasubscriptaltknda	candrabinduknda
+sasubscriptaltknda	candrabinduknda
+hasubscriptaltknda	candrabinduknda
+fasubscriptaltknda	candrabinduknda
+karasubscriptaltknda	candrabinduknda
+garasubscriptaltknda	candrabinduknda
+ttarasubscriptaltknda	candrabinduknda
+ddarasubscriptaltknda	candrabinduknda
+tarasubscriptaltknda	candrabinduknda
+darasubscriptaltknda	candrabinduknda
+parasubscriptaltknda	candrabinduknda
+bharasubscriptaltknda	candrabinduknda
+tayasubscriptaltknda	candrabinduknda
+mayasubscriptaltknda	candrabinduknda
+kasubscriptknda	candrabinduknda
+khasubscriptknda	candrabinduknda
+gasubscriptknda	candrabinduknda
+ghasubscriptknda	candrabinduknda
+ngasubscriptknda	candrabinduknda
+casubscriptknda	candrabinduknda
+chasubscriptknda	candrabinduknda
+jasubscriptknda	candrabinduknda
+jhasubscriptknda	candrabinduknda
+nyasubscriptknda	candrabinduknda
+ttasubscriptknda	candrabinduknda
+tthasubscriptknda	candrabinduknda
+ddasubscriptknda	candrabinduknda
+ddhasubscriptknda	candrabinduknda
+nnasubscriptknda	candrabinduknda
+tasubscriptknda	candrabinduknda
+thasubscriptknda	candrabinduknda
+dasubscriptknda	candrabinduknda
+dhasubscriptknda	candrabinduknda
+nasubscriptknda	candrabinduknda
+pasubscriptknda	candrabinduknda
+phasubscriptknda	candrabinduknda
+basubscriptknda	candrabinduknda
+bhasubscriptknda	candrabinduknda
+masubscriptknda	candrabinduknda
+yasubscriptknda	candrabinduknda
+rasubscriptknda	candrabinduknda
+rrasubscriptknda	candrabinduknda
+lasubscriptknda	candrabinduknda
+llasubscriptknda	candrabinduknda
+vasubscriptknda	candrabinduknda
+shasubscriptknda	candrabinduknda
+ssasubscriptknda	candrabinduknda
+sasubscriptknda	candrabinduknda
+hasubscriptknda	candrabinduknda
+fasubscriptknda	candrabinduknda
+karasubscriptknda	candrabinduknda
+garasubscriptknda	candrabinduknda
+ttarasubscriptknda	candrabinduknda
+ddarasubscriptknda	candrabinduknda
+tarasubscriptknda	candrabinduknda
+darasubscriptknda	candrabinduknda
+parasubscriptknda	candrabinduknda
+bharasubscriptknda	candrabinduknda
+tayasubscriptknda	candrabinduknda
+mayasubscriptknda	candrabinduknda
+
+lookup end
+
+
+lookup	to0951-knda	single
+
+anusvaraknda	uni0951
+visargaknda	uni0951
+rephknda	uni0951
+rvocalicvowelsignknda	uni0951
+rrvocalicvowelsignknda	uni0951
+viramaknda	uni0951
+lengthmarkknda	uni0951
+ailengthmarkknda	uni0951
+lvocalicvowelsignknda	uni0951
+llvocalicvowelsignknda	uni0951
+rvocalicvowelsignaltknda	uni0951
+rrvocalicvowelsignaltknda	uni0951
+ailengthmarkaltknda	uni0951
+lvocalicvowelsignaltknda	uni0951
+llvocalicvowelsignaltknda	uni0951
+tasubscriptrvocalicaltknda	uni0951
+masubscriptrvocalicaltknda	uni0951
+tasubscriptlengthmarkaltknda	uni0951
+masubscriptlengthmarkaltknda	uni0951
+rasubscriptlengthmarkaltknda	uni0951
+tasubscriptrvocalicknda	uni0951
+masubscriptrvocalicknda	uni0951
+tasubscriptlengthmarkknda	uni0951
+masubscriptlengthmarkknda	uni0951
+rasubscriptlengthmarkknda	uni0951
+kasubscriptaltknda	uni0951
+khasubscriptaltknda	uni0951
+gasubscriptaltknda	uni0951
+ghasubscriptaltknda	uni0951
+ngasubscriptaltknda	uni0951
+casubscriptaltknda	uni0951
+chasubscriptaltknda	uni0951
+jasubscriptaltknda	uni0951
+jhasubscriptaltknda	uni0951
+nyasubscriptaltknda	uni0951
+ttasubscriptaltknda	uni0951
+tthasubscriptaltknda	uni0951
+ddasubscriptaltknda	uni0951
+ddhasubscriptaltknda	uni0951
+nnasubscriptaltknda	uni0951
+tasubscriptaltknda	uni0951
+thasubscriptaltknda	uni0951
+dasubscriptaltknda	uni0951
+dhasubscriptaltknda	uni0951
+nasubscriptaltknda	uni0951
+pasubscriptaltknda	uni0951
+phasubscriptaltknda	uni0951
+basubscriptaltknda	uni0951
+bhasubscriptaltknda	uni0951
+masubscriptaltknda	uni0951
+yasubscriptaltknda	uni0951
+rasubscriptaltknda	uni0951
+rrasubscriptaltknda	uni0951
+lasubscriptaltknda	uni0951
+llasubscriptaltknda	uni0951
+vasubscriptaltknda	uni0951
+shasubscriptaltknda	uni0951
+ssasubscriptaltknda	uni0951
+sasubscriptaltknda	uni0951
+hasubscriptaltknda	uni0951
+fasubscriptaltknda	uni0951
+karasubscriptaltknda	uni0951
+garasubscriptaltknda	uni0951
+ttarasubscriptaltknda	uni0951
+ddarasubscriptaltknda	uni0951
+tarasubscriptaltknda	uni0951
+darasubscriptaltknda	uni0951
+parasubscriptaltknda	uni0951
+bharasubscriptaltknda	uni0951
+tayasubscriptaltknda	uni0951
+mayasubscriptaltknda	uni0951
+kasubscriptknda	uni0951
+khasubscriptknda	uni0951
+gasubscriptknda	uni0951
+ghasubscriptknda	uni0951
+ngasubscriptknda	uni0951
+casubscriptknda	uni0951
+chasubscriptknda	uni0951
+jasubscriptknda	uni0951
+jhasubscriptknda	uni0951
+nyasubscriptknda	uni0951
+ttasubscriptknda	uni0951
+tthasubscriptknda	uni0951
+ddasubscriptknda	uni0951
+ddhasubscriptknda	uni0951
+nnasubscriptknda	uni0951
+tasubscriptknda	uni0951
+thasubscriptknda	uni0951
+dasubscriptknda	uni0951
+dhasubscriptknda	uni0951
+nasubscriptknda	uni0951
+pasubscriptknda	uni0951
+phasubscriptknda	uni0951
+basubscriptknda	uni0951
+bhasubscriptknda	uni0951
+masubscriptknda	uni0951
+yasubscriptknda	uni0951
+rasubscriptknda	uni0951
+rrasubscriptknda	uni0951
+lasubscriptknda	uni0951
+llasubscriptknda	uni0951
+vasubscriptknda	uni0951
+shasubscriptknda	uni0951
+ssasubscriptknda	uni0951
+sasubscriptknda	uni0951
+hasubscriptknda	uni0951
+fasubscriptknda	uni0951
+karasubscriptknda	uni0951
+garasubscriptknda	uni0951
+ttarasubscriptknda	uni0951
+ddarasubscriptknda	uni0951
+tarasubscriptknda	uni0951
+darasubscriptknda	uni0951
+parasubscriptknda	uni0951
+bharasubscriptknda	uni0951
+tayasubscriptknda	uni0951
+mayasubscriptknda	uni0951
+
+lookup end
+
+
+
+lookup	to0952-knda	single
+
+anusvaraknda	uni0952
+visargaknda	uni0952
+rephknda	uni0952
+rvocalicvowelsignknda	uni0952
+rrvocalicvowelsignknda	uni0952
+viramaknda	uni0952
+lengthmarkknda	uni0952
+ailengthmarkknda	uni0952
+lvocalicvowelsignknda	uni0952
+llvocalicvowelsignknda	uni0952
+rvocalicvowelsignaltknda	uni0952
+rrvocalicvowelsignaltknda	uni0952
+ailengthmarkaltknda	uni0952
+lvocalicvowelsignaltknda	uni0952
+llvocalicvowelsignaltknda	uni0952
+tasubscriptrvocalicaltknda	uni0952
+masubscriptrvocalicaltknda	uni0952
+tasubscriptlengthmarkaltknda	uni0952
+masubscriptlengthmarkaltknda	uni0952
+rasubscriptlengthmarkaltknda	uni0952
+tasubscriptrvocalicknda	uni0952
+masubscriptrvocalicknda	uni0952
+tasubscriptlengthmarkknda	uni0952
+masubscriptlengthmarkknda	uni0952
+rasubscriptlengthmarkknda	uni0952
+kasubscriptaltknda	uni0952
+khasubscriptaltknda	uni0952
+gasubscriptaltknda	uni0952
+ghasubscriptaltknda	uni0952
+ngasubscriptaltknda	uni0952
+casubscriptaltknda	uni0952
+chasubscriptaltknda	uni0952
+jasubscriptaltknda	uni0952
+jhasubscriptaltknda	uni0952
+nyasubscriptaltknda	uni0952
+ttasubscriptaltknda	uni0952
+tthasubscriptaltknda	uni0952
+ddasubscriptaltknda	uni0952
+ddhasubscriptaltknda	uni0952
+nnasubscriptaltknda	uni0952
+tasubscriptaltknda	uni0952
+thasubscriptaltknda	uni0952
+dasubscriptaltknda	uni0952
+dhasubscriptaltknda	uni0952
+nasubscriptaltknda	uni0952
+pasubscriptaltknda	uni0952
+phasubscriptaltknda	uni0952
+basubscriptaltknda	uni0952
+bhasubscriptaltknda	uni0952
+masubscriptaltknda	uni0952
+yasubscriptaltknda	uni0952
+rasubscriptaltknda	uni0952
+rrasubscriptaltknda	uni0952
+lasubscriptaltknda	uni0952
+llasubscriptaltknda	uni0952
+vasubscriptaltknda	uni0952
+shasubscriptaltknda	uni0952
+ssasubscriptaltknda	uni0952
+sasubscriptaltknda	uni0952
+hasubscriptaltknda	uni0952
+fasubscriptaltknda	uni0952
+karasubscriptaltknda	uni0952
+garasubscriptaltknda	uni0952
+ttarasubscriptaltknda	uni0952
+ddarasubscriptaltknda	uni0952
+tarasubscriptaltknda	uni0952
+darasubscriptaltknda	uni0952
+parasubscriptaltknda	uni0952
+bharasubscriptaltknda	uni0952
+tayasubscriptaltknda	uni0952
+mayasubscriptaltknda	uni0952
+kasubscriptknda	uni0952
+khasubscriptknda	uni0952
+gasubscriptknda	uni0952
+ghasubscriptknda	uni0952
+ngasubscriptknda	uni0952
+casubscriptknda	uni0952
+chasubscriptknda	uni0952
+jasubscriptknda	uni0952
+jhasubscriptknda	uni0952
+nyasubscriptknda	uni0952
+ttasubscriptknda	uni0952
+tthasubscriptknda	uni0952
+ddasubscriptknda	uni0952
+ddhasubscriptknda	uni0952
+nnasubscriptknda	uni0952
+tasubscriptknda	uni0952
+thasubscriptknda	uni0952
+dasubscriptknda	uni0952
+dhasubscriptknda	uni0952
+nasubscriptknda	uni0952
+pasubscriptknda	uni0952
+phasubscriptknda	uni0952
+basubscriptknda	uni0952
+bhasubscriptknda	uni0952
+masubscriptknda	uni0952
+yasubscriptknda	uni0952
+rasubscriptknda	uni0952
+rrasubscriptknda	uni0952
+lasubscriptknda	uni0952
+llasubscriptknda	uni0952
+vasubscriptknda	uni0952
+shasubscriptknda	uni0952
+ssasubscriptknda	uni0952
+sasubscriptknda	uni0952
+hasubscriptknda	uni0952
+fasubscriptknda	uni0952
+karasubscriptknda	uni0952
+garasubscriptknda	uni0952
+ttarasubscriptknda	uni0952
+ddarasubscriptknda	uni0952
+tarasubscriptknda	uni0952
+darasubscriptknda	uni0952
+parasubscriptknda	uni0952
+bharasubscriptknda	uni0952
+tayasubscriptknda	uni0952
+mayasubscriptknda	uni0952
+
+lookup end
+
+
+lookup	to1CDA-knda	single
+
+anusvaraknda	uni1CDA
+visargaknda	uni1CDA
+rephknda	uni1CDA
+rvocalicvowelsignknda	uni1CDA
+rrvocalicvowelsignknda	uni1CDA
+viramaknda	uni1CDA
+lengthmarkknda	uni1CDA
+ailengthmarkknda	uni1CDA
+lvocalicvowelsignknda	uni1CDA
+llvocalicvowelsignknda	uni1CDA
+rvocalicvowelsignaltknda	uni1CDA
+rrvocalicvowelsignaltknda	uni1CDA
+ailengthmarkaltknda	uni1CDA
+lvocalicvowelsignaltknda	uni1CDA
+llvocalicvowelsignaltknda	uni1CDA
+tasubscriptrvocalicaltknda	uni1CDA
+masubscriptrvocalicaltknda	uni1CDA
+tasubscriptlengthmarkaltknda	uni1CDA
+masubscriptlengthmarkaltknda	uni1CDA
+rasubscriptlengthmarkaltknda	uni1CDA
+tasubscriptrvocalicknda	uni1CDA
+masubscriptrvocalicknda	uni1CDA
+tasubscriptlengthmarkknda	uni1CDA
+masubscriptlengthmarkknda	uni1CDA
+rasubscriptlengthmarkknda	uni1CDA
+kasubscriptaltknda	uni1CDA
+khasubscriptaltknda	uni1CDA
+gasubscriptaltknda	uni1CDA
+ghasubscriptaltknda	uni1CDA
+ngasubscriptaltknda	uni1CDA
+casubscriptaltknda	uni1CDA
+chasubscriptaltknda	uni1CDA
+jasubscriptaltknda	uni1CDA
+jhasubscriptaltknda	uni1CDA
+nyasubscriptaltknda	uni1CDA
+ttasubscriptaltknda	uni1CDA
+tthasubscriptaltknda	uni1CDA
+ddasubscriptaltknda	uni1CDA
+ddhasubscriptaltknda	uni1CDA
+nnasubscriptaltknda	uni1CDA
+tasubscriptaltknda	uni1CDA
+thasubscriptaltknda	uni1CDA
+dasubscriptaltknda	uni1CDA
+dhasubscriptaltknda	uni1CDA
+nasubscriptaltknda	uni1CDA
+pasubscriptaltknda	uni1CDA
+phasubscriptaltknda	uni1CDA
+basubscriptaltknda	uni1CDA
+bhasubscriptaltknda	uni1CDA
+masubscriptaltknda	uni1CDA
+yasubscriptaltknda	uni1CDA
+rasubscriptaltknda	uni1CDA
+rrasubscriptaltknda	uni1CDA
+lasubscriptaltknda	uni1CDA
+llasubscriptaltknda	uni1CDA
+vasubscriptaltknda	uni1CDA
+shasubscriptaltknda	uni1CDA
+ssasubscriptaltknda	uni1CDA
+sasubscriptaltknda	uni1CDA
+hasubscriptaltknda	uni1CDA
+fasubscriptaltknda	uni1CDA
+karasubscriptaltknda	uni1CDA
+garasubscriptaltknda	uni1CDA
+ttarasubscriptaltknda	uni1CDA
+ddarasubscriptaltknda	uni1CDA
+tarasubscriptaltknda	uni1CDA
+darasubscriptaltknda	uni1CDA
+parasubscriptaltknda	uni1CDA
+bharasubscriptaltknda	uni1CDA
+tayasubscriptaltknda	uni1CDA
+mayasubscriptaltknda	uni1CDA
+kasubscriptknda	uni1CDA
+khasubscriptknda	uni1CDA
+gasubscriptknda	uni1CDA
+ghasubscriptknda	uni1CDA
+ngasubscriptknda	uni1CDA
+casubscriptknda	uni1CDA
+chasubscriptknda	uni1CDA
+jasubscriptknda	uni1CDA
+jhasubscriptknda	uni1CDA
+nyasubscriptknda	uni1CDA
+ttasubscriptknda	uni1CDA
+tthasubscriptknda	uni1CDA
+ddasubscriptknda	uni1CDA
+ddhasubscriptknda	uni1CDA
+nnasubscriptknda	uni1CDA
+tasubscriptknda	uni1CDA
+thasubscriptknda	uni1CDA
+dasubscriptknda	uni1CDA
+dhasubscriptknda	uni1CDA
+nasubscriptknda	uni1CDA
+pasubscriptknda	uni1CDA
+phasubscriptknda	uni1CDA
+basubscriptknda	uni1CDA
+bhasubscriptknda	uni1CDA
+masubscriptknda	uni1CDA
+yasubscriptknda	uni1CDA
+rasubscriptknda	uni1CDA
+rrasubscriptknda	uni1CDA
+lasubscriptknda	uni1CDA
+llasubscriptknda	uni1CDA
+vasubscriptknda	uni1CDA
+shasubscriptknda	uni1CDA
+ssasubscriptknda	uni1CDA
+sasubscriptknda	uni1CDA
+hasubscriptknda	uni1CDA
+fasubscriptknda	uni1CDA
+karasubscriptknda	uni1CDA
+garasubscriptknda	uni1CDA
+ttarasubscriptknda	uni1CDA
+ddarasubscriptknda	uni1CDA
+tarasubscriptknda	uni1CDA
+darasubscriptknda	uni1CDA
+parasubscriptknda	uni1CDA
+bharasubscriptknda	uni1CDA
+tayasubscriptknda	uni1CDA
+mayasubscriptknda	uni1CDA
+
+lookup end
+
+
+lookup	toCandrabindu_0951-knda	single
+
+anusvaraknda	candrabindu_0951knda
+visargaknda	candrabindu_0951knda
+rephknda	candrabindu_0951knda
+rvocalicvowelsignknda	candrabindu_0951knda
+rrvocalicvowelsignknda	candrabindu_0951knda
+viramaknda	candrabindu_0951knda
+lengthmarkknda	candrabindu_0951knda
+ailengthmarkknda	candrabindu_0951knda
+lvocalicvowelsignknda	candrabindu_0951knda
+llvocalicvowelsignknda	candrabindu_0951knda
+rvocalicvowelsignaltknda	candrabindu_0951knda
+rrvocalicvowelsignaltknda	candrabindu_0951knda
+ailengthmarkaltknda	candrabindu_0951knda
+lvocalicvowelsignaltknda	candrabindu_0951knda
+llvocalicvowelsignaltknda	candrabindu_0951knda
+tasubscriptrvocalicaltknda	candrabindu_0951knda
+masubscriptrvocalicaltknda	candrabindu_0951knda
+tasubscriptlengthmarkaltknda	candrabindu_0951knda
+masubscriptlengthmarkaltknda	candrabindu_0951knda
+rasubscriptlengthmarkaltknda	candrabindu_0951knda
+tasubscriptrvocalicknda	candrabindu_0951knda
+masubscriptrvocalicknda	candrabindu_0951knda
+tasubscriptlengthmarkknda	candrabindu_0951knda
+masubscriptlengthmarkknda	candrabindu_0951knda
+rasubscriptlengthmarkknda	candrabindu_0951knda
+kasubscriptaltknda	candrabindu_0951knda
+khasubscriptaltknda	candrabindu_0951knda
+gasubscriptaltknda	candrabindu_0951knda
+ghasubscriptaltknda	candrabindu_0951knda
+ngasubscriptaltknda	candrabindu_0951knda
+casubscriptaltknda	candrabindu_0951knda
+chasubscriptaltknda	candrabindu_0951knda
+jasubscriptaltknda	candrabindu_0951knda
+jhasubscriptaltknda	candrabindu_0951knda
+nyasubscriptaltknda	candrabindu_0951knda
+ttasubscriptaltknda	candrabindu_0951knda
+tthasubscriptaltknda	candrabindu_0951knda
+ddasubscriptaltknda	candrabindu_0951knda
+ddhasubscriptaltknda	candrabindu_0951knda
+nnasubscriptaltknda	candrabindu_0951knda
+tasubscriptaltknda	candrabindu_0951knda
+thasubscriptaltknda	candrabindu_0951knda
+dasubscriptaltknda	candrabindu_0951knda
+dhasubscriptaltknda	candrabindu_0951knda
+nasubscriptaltknda	candrabindu_0951knda
+pasubscriptaltknda	candrabindu_0951knda
+phasubscriptaltknda	candrabindu_0951knda
+basubscriptaltknda	candrabindu_0951knda
+bhasubscriptaltknda	candrabindu_0951knda
+masubscriptaltknda	candrabindu_0951knda
+yasubscriptaltknda	candrabindu_0951knda
+rasubscriptaltknda	candrabindu_0951knda
+rrasubscriptaltknda	candrabindu_0951knda
+lasubscriptaltknda	candrabindu_0951knda
+llasubscriptaltknda	candrabindu_0951knda
+vasubscriptaltknda	candrabindu_0951knda
+shasubscriptaltknda	candrabindu_0951knda
+ssasubscriptaltknda	candrabindu_0951knda
+sasubscriptaltknda	candrabindu_0951knda
+hasubscriptaltknda	candrabindu_0951knda
+fasubscriptaltknda	candrabindu_0951knda
+karasubscriptaltknda	candrabindu_0951knda
+garasubscriptaltknda	candrabindu_0951knda
+ttarasubscriptaltknda	candrabindu_0951knda
+ddarasubscriptaltknda	candrabindu_0951knda
+tarasubscriptaltknda	candrabindu_0951knda
+darasubscriptaltknda	candrabindu_0951knda
+parasubscriptaltknda	candrabindu_0951knda
+bharasubscriptaltknda	candrabindu_0951knda
+tayasubscriptaltknda	candrabindu_0951knda
+mayasubscriptaltknda	candrabindu_0951knda
+kasubscriptknda	candrabindu_0951knda
+khasubscriptknda	candrabindu_0951knda
+gasubscriptknda	candrabindu_0951knda
+ghasubscriptknda	candrabindu_0951knda
+ngasubscriptknda	candrabindu_0951knda
+casubscriptknda	candrabindu_0951knda
+chasubscriptknda	candrabindu_0951knda
+jasubscriptknda	candrabindu_0951knda
+jhasubscriptknda	candrabindu_0951knda
+nyasubscriptknda	candrabindu_0951knda
+ttasubscriptknda	candrabindu_0951knda
+tthasubscriptknda	candrabindu_0951knda
+ddasubscriptknda	candrabindu_0951knda
+ddhasubscriptknda	candrabindu_0951knda
+nnasubscriptknda	candrabindu_0951knda
+tasubscriptknda	candrabindu_0951knda
+thasubscriptknda	candrabindu_0951knda
+dasubscriptknda	candrabindu_0951knda
+dhasubscriptknda	candrabindu_0951knda
+nasubscriptknda	candrabindu_0951knda
+pasubscriptknda	candrabindu_0951knda
+phasubscriptknda	candrabindu_0951knda
+basubscriptknda	candrabindu_0951knda
+bhasubscriptknda	candrabindu_0951knda
+masubscriptknda	candrabindu_0951knda
+yasubscriptknda	candrabindu_0951knda
+rasubscriptknda	candrabindu_0951knda
+rrasubscriptknda	candrabindu_0951knda
+lasubscriptknda	candrabindu_0951knda
+llasubscriptknda	candrabindu_0951knda
+vasubscriptknda	candrabindu_0951knda
+shasubscriptknda	candrabindu_0951knda
+ssasubscriptknda	candrabindu_0951knda
+sasubscriptknda	candrabindu_0951knda
+hasubscriptknda	candrabindu_0951knda
+fasubscriptknda	candrabindu_0951knda
+karasubscriptknda	candrabindu_0951knda
+garasubscriptknda	candrabindu_0951knda
+ttarasubscriptknda	candrabindu_0951knda
+ddarasubscriptknda	candrabindu_0951knda
+tarasubscriptknda	candrabindu_0951knda
+darasubscriptknda	candrabindu_0951knda
+parasubscriptknda	candrabindu_0951knda
+bharasubscriptknda	candrabindu_0951knda
+tayasubscriptknda	candrabindu_0951knda
+mayasubscriptknda	candrabindu_0951knda
+
+lookup end
+
+
+lookup	toCandrabindu_0952-knda	single
+
+anusvaraknda	candrabindu_0952knda
+visargaknda	candrabindu_0952knda
+rephknda	candrabindu_0952knda
+rvocalicvowelsignknda	candrabindu_0952knda
+rrvocalicvowelsignknda	candrabindu_0952knda
+viramaknda	candrabindu_0952knda
+lengthmarkknda	candrabindu_0952knda
+ailengthmarkknda	candrabindu_0952knda
+lvocalicvowelsignknda	candrabindu_0952knda
+llvocalicvowelsignknda	candrabindu_0952knda
+rvocalicvowelsignaltknda	candrabindu_0952knda
+rrvocalicvowelsignaltknda	candrabindu_0952knda
+ailengthmarkaltknda	candrabindu_0952knda
+lvocalicvowelsignaltknda	candrabindu_0952knda
+llvocalicvowelsignaltknda	candrabindu_0952knda
+tasubscriptrvocalicaltknda	candrabindu_0952knda
+masubscriptrvocalicaltknda	candrabindu_0952knda
+tasubscriptlengthmarkaltknda	candrabindu_0952knda
+masubscriptlengthmarkaltknda	candrabindu_0952knda
+rasubscriptlengthmarkaltknda	candrabindu_0952knda
+tasubscriptrvocalicknda	candrabindu_0952knda
+masubscriptrvocalicknda	candrabindu_0952knda
+tasubscriptlengthmarkknda	candrabindu_0952knda
+masubscriptlengthmarkknda	candrabindu_0952knda
+rasubscriptlengthmarkknda	candrabindu_0952knda
+kasubscriptaltknda	candrabindu_0952knda
+khasubscriptaltknda	candrabindu_0952knda
+gasubscriptaltknda	candrabindu_0952knda
+ghasubscriptaltknda	candrabindu_0952knda
+ngasubscriptaltknda	candrabindu_0952knda
+casubscriptaltknda	candrabindu_0952knda
+chasubscriptaltknda	candrabindu_0952knda
+jasubscriptaltknda	candrabindu_0952knda
+jhasubscriptaltknda	candrabindu_0952knda
+nyasubscriptaltknda	candrabindu_0952knda
+ttasubscriptaltknda	candrabindu_0952knda
+tthasubscriptaltknda	candrabindu_0952knda
+ddasubscriptaltknda	candrabindu_0952knda
+ddhasubscriptaltknda	candrabindu_0952knda
+nnasubscriptaltknda	candrabindu_0952knda
+tasubscriptaltknda	candrabindu_0952knda
+thasubscriptaltknda	candrabindu_0952knda
+dasubscriptaltknda	candrabindu_0952knda
+dhasubscriptaltknda	candrabindu_0952knda
+nasubscriptaltknda	candrabindu_0952knda
+pasubscriptaltknda	candrabindu_0952knda
+phasubscriptaltknda	candrabindu_0952knda
+basubscriptaltknda	candrabindu_0952knda
+bhasubscriptaltknda	candrabindu_0952knda
+masubscriptaltknda	candrabindu_0952knda
+yasubscriptaltknda	candrabindu_0952knda
+rasubscriptaltknda	candrabindu_0952knda
+rrasubscriptaltknda	candrabindu_0952knda
+lasubscriptaltknda	candrabindu_0952knda
+llasubscriptaltknda	candrabindu_0952knda
+vasubscriptaltknda	candrabindu_0952knda
+shasubscriptaltknda	candrabindu_0952knda
+ssasubscriptaltknda	candrabindu_0952knda
+sasubscriptaltknda	candrabindu_0952knda
+hasubscriptaltknda	candrabindu_0952knda
+fasubscriptaltknda	candrabindu_0952knda
+karasubscriptaltknda	candrabindu_0952knda
+garasubscriptaltknda	candrabindu_0952knda
+ttarasubscriptaltknda	candrabindu_0952knda
+ddarasubscriptaltknda	candrabindu_0952knda
+tarasubscriptaltknda	candrabindu_0952knda
+darasubscriptaltknda	candrabindu_0952knda
+parasubscriptaltknda	candrabindu_0952knda
+bharasubscriptaltknda	candrabindu_0952knda
+tayasubscriptaltknda	candrabindu_0952knda
+mayasubscriptaltknda	candrabindu_0952knda
+kasubscriptknda	candrabindu_0952knda
+khasubscriptknda	candrabindu_0952knda
+gasubscriptknda	candrabindu_0952knda
+ghasubscriptknda	candrabindu_0952knda
+ngasubscriptknda	candrabindu_0952knda
+casubscriptknda	candrabindu_0952knda
+chasubscriptknda	candrabindu_0952knda
+jasubscriptknda	candrabindu_0952knda
+jhasubscriptknda	candrabindu_0952knda
+nyasubscriptknda	candrabindu_0952knda
+ttasubscriptknda	candrabindu_0952knda
+tthasubscriptknda	candrabindu_0952knda
+ddasubscriptknda	candrabindu_0952knda
+ddhasubscriptknda	candrabindu_0952knda
+nnasubscriptknda	candrabindu_0952knda
+tasubscriptknda	candrabindu_0952knda
+thasubscriptknda	candrabindu_0952knda
+dasubscriptknda	candrabindu_0952knda
+dhasubscriptknda	candrabindu_0952knda
+nasubscriptknda	candrabindu_0952knda
+pasubscriptknda	candrabindu_0952knda
+phasubscriptknda	candrabindu_0952knda
+basubscriptknda	candrabindu_0952knda
+bhasubscriptknda	candrabindu_0952knda
+masubscriptknda	candrabindu_0952knda
+yasubscriptknda	candrabindu_0952knda
+rasubscriptknda	candrabindu_0952knda
+rrasubscriptknda	candrabindu_0952knda
+lasubscriptknda	candrabindu_0952knda
+llasubscriptknda	candrabindu_0952knda
+vasubscriptknda	candrabindu_0952knda
+shasubscriptknda	candrabindu_0952knda
+ssasubscriptknda	candrabindu_0952knda
+sasubscriptknda	candrabindu_0952knda
+hasubscriptknda	candrabindu_0952knda
+fasubscriptknda	candrabindu_0952knda
+karasubscriptknda	candrabindu_0952knda
+garasubscriptknda	candrabindu_0952knda
+ttarasubscriptknda	candrabindu_0952knda
+ddarasubscriptknda	candrabindu_0952knda
+tarasubscriptknda	candrabindu_0952knda
+darasubscriptknda	candrabindu_0952knda
+parasubscriptknda	candrabindu_0952knda
+bharasubscriptknda	candrabindu_0952knda
+tayasubscriptknda	candrabindu_0952knda
+mayasubscriptknda	candrabindu_0952knda
+
+lookup end
+
+
+lookup	toCandrabindu_1CDA-knda	single
+
+anusvaraknda	candrabindu_1CDAknda
+visargaknda	candrabindu_1CDAknda
+rephknda	candrabindu_1CDAknda
+rvocalicvowelsignknda	candrabindu_1CDAknda
+rrvocalicvowelsignknda	candrabindu_1CDAknda
+candrabindu_1CDAknda	candrabindu_0951knda
+lengthmarkknda	candrabindu_1CDAknda
+ailengthmarkknda	candrabindu_1CDAknda
+lvocalicvowelsignknda	candrabindu_1CDAknda
+llvocalicvowelsignknda	candrabindu_1CDAknda
+rvocalicvowelsignaltknda	candrabindu_1CDAknda
+rrvocalicvowelsignaltknda	candrabindu_1CDAknda
+ailengthmarkaltknda	candrabindu_1CDAknda
+lvocalicvowelsignaltknda	candrabindu_1CDAknda
+llvocalicvowelsignaltknda	candrabindu_1CDAknda
+tasubscriptrvocalicaltknda	candrabindu_1CDAknda
+masubscriptrvocalicaltknda	candrabindu_1CDAknda
+tasubscriptlengthmarkaltknda	candrabindu_1CDAknda
+masubscriptlengthmarkaltknda	candrabindu_1CDAknda
+rasubscriptlengthmarkaltknda	candrabindu_1CDAknda
+tasubscriptrvocalicknda	candrabindu_1CDAknda
+masubscriptrvocalicknda	candrabindu_1CDAknda
+tasubscriptlengthmarkknda	candrabindu_1CDAknda
+masubscriptlengthmarkknda	candrabindu_1CDAknda
+rasubscriptlengthmarkknda	candrabindu_1CDAknda
+kasubscriptaltknda	candrabindu_1CDAknda
+khasubscriptaltknda	candrabindu_1CDAknda
+gasubscriptaltknda	candrabindu_1CDAknda
+ghasubscriptaltknda	candrabindu_1CDAknda
+ngasubscriptaltknda	candrabindu_1CDAknda
+casubscriptaltknda	candrabindu_1CDAknda
+chasubscriptaltknda	candrabindu_1CDAknda
+jasubscriptaltknda	candrabindu_1CDAknda
+jhasubscriptaltknda	candrabindu_1CDAknda
+nyasubscriptaltknda	candrabindu_1CDAknda
+ttasubscriptaltknda	candrabindu_1CDAknda
+tthasubscriptaltknda	candrabindu_1CDAknda
+ddasubscriptaltknda	candrabindu_1CDAknda
+ddhasubscriptaltknda	candrabindu_1CDAknda
+nnasubscriptaltknda	candrabindu_1CDAknda
+tasubscriptaltknda	candrabindu_1CDAknda
+thasubscriptaltknda	candrabindu_1CDAknda
+dasubscriptaltknda	candrabindu_1CDAknda
+dhasubscriptaltknda	candrabindu_1CDAknda
+nasubscriptaltknda	candrabindu_1CDAknda
+pasubscriptaltknda	candrabindu_1CDAknda
+phasubscriptaltknda	candrabindu_1CDAknda
+basubscriptaltknda	candrabindu_1CDAknda
+bhasubscriptaltknda	candrabindu_1CDAknda
+masubscriptaltknda	candrabindu_1CDAknda
+yasubscriptaltknda	candrabindu_1CDAknda
+rasubscriptaltknda	candrabindu_1CDAknda
+rrasubscriptaltknda	candrabindu_1CDAknda
+lasubscriptaltknda	candrabindu_1CDAknda
+llasubscriptaltknda	candrabindu_1CDAknda
+vasubscriptaltknda	candrabindu_1CDAknda
+shasubscriptaltknda	candrabindu_1CDAknda
+ssasubscriptaltknda	candrabindu_1CDAknda
+sasubscriptaltknda	candrabindu_1CDAknda
+hasubscriptaltknda	candrabindu_1CDAknda
+fasubscriptaltknda	candrabindu_1CDAknda
+karasubscriptaltknda	candrabindu_1CDAknda
+garasubscriptaltknda	candrabindu_1CDAknda
+ttarasubscriptaltknda	candrabindu_1CDAknda
+ddarasubscriptaltknda	candrabindu_1CDAknda
+tarasubscriptaltknda	candrabindu_1CDAknda
+darasubscriptaltknda	candrabindu_1CDAknda
+parasubscriptaltknda	candrabindu_1CDAknda
+bharasubscriptaltknda	candrabindu_1CDAknda
+tayasubscriptaltknda	candrabindu_1CDAknda
+mayasubscriptaltknda	candrabindu_1CDAknda
+kasubscriptknda	candrabindu_1CDAknda
+khasubscriptknda	candrabindu_1CDAknda
+gasubscriptknda	candrabindu_1CDAknda
+ghasubscriptknda	candrabindu_1CDAknda
+ngasubscriptknda	candrabindu_1CDAknda
+casubscriptknda	candrabindu_1CDAknda
+chasubscriptknda	candrabindu_1CDAknda
+jasubscriptknda	candrabindu_1CDAknda
+jhasubscriptknda	candrabindu_1CDAknda
+nyasubscriptknda	candrabindu_1CDAknda
+ttasubscriptknda	candrabindu_1CDAknda
+tthasubscriptknda	candrabindu_1CDAknda
+ddasubscriptknda	candrabindu_1CDAknda
+ddhasubscriptknda	candrabindu_1CDAknda
+nnasubscriptknda	candrabindu_1CDAknda
+tasubscriptknda	candrabindu_1CDAknda
+thasubscriptknda	candrabindu_1CDAknda
+dasubscriptknda	candrabindu_1CDAknda
+dhasubscriptknda	candrabindu_1CDAknda
+nasubscriptknda	candrabindu_1CDAknda
+pasubscriptknda	candrabindu_1CDAknda
+phasubscriptknda	candrabindu_1CDAknda
+basubscriptknda	candrabindu_1CDAknda
+bhasubscriptknda	candrabindu_1CDAknda
+masubscriptknda	candrabindu_1CDAknda
+yasubscriptknda	candrabindu_1CDAknda
+rasubscriptknda	candrabindu_1CDAknda
+rrasubscriptknda	candrabindu_1CDAknda
+lasubscriptknda	candrabindu_1CDAknda
+llasubscriptknda	candrabindu_1CDAknda
+vasubscriptknda	candrabindu_1CDAknda
+shasubscriptknda	candrabindu_1CDAknda
+ssasubscriptknda	candrabindu_1CDAknda
+sasubscriptknda	candrabindu_1CDAknda
+hasubscriptknda	candrabindu_1CDAknda
+fasubscriptknda	candrabindu_1CDAknda
+karasubscriptknda	candrabindu_1CDAknda
+garasubscriptknda	candrabindu_1CDAknda
+ttarasubscriptknda	candrabindu_1CDAknda
+ddarasubscriptknda	candrabindu_1CDAknda
+tarasubscriptknda	candrabindu_1CDAknda
+darasubscriptknda	candrabindu_1CDAknda
+parasubscriptknda	candrabindu_1CDAknda
+bharasubscriptknda	candrabindu_1CDAknda
+tayasubscriptknda	candrabindu_1CDAknda
+mayasubscriptknda	candrabindu_1CDAknda
+
+lookup end
+
+
+
+lookup	toAnusvara-knda	single
+
+candrabinduknda	anusvaraknda
+uni0951	anusvaraknda
+uni0952	anusvaraknda
+uni1CDA	anusvaraknda
+candrabindu_0951knda	anusvaraknda
+candrabindu_0952knda	anusvaraknda
+candrabindu_1CDAknda	anusvaraknda
+
+lookup end
+
+
+lookup	toVisarga-knda	single
+
+candrabinduknda	visargaknda
+uni0951	visargaknda
+uni0952	visargaknda
+uni1CDA	visargaknda
+candrabindu_0951knda	visargaknda
+candrabindu_0952knda	visargaknda
+candrabindu_1CDAknda	visargaknda
+
+lookup end
+
+lookup	toReph-knda	single
+
+candrabinduknda	rephknda
+uni0951	rephknda
+uni0952	rephknda
+uni1CDA	rephknda
+candrabindu_0951knda	rephknda
+candrabindu_0952knda	rephknda
+candrabindu_1CDAknda	rephknda
+
+lookup end
+
+
+lookup	toRvoc-knda	single
+
+candrabinduknda	rvocalicvowelsignknda
+uni0951	rvocalicvowelsignknda
+uni0952	rvocalicvowelsignknda
+uni1CDA	rvocalicvowelsignknda
+candrabindu_0951knda	rvocalicvowelsignknda
+candrabindu_0952knda	rvocalicvowelsignknda
+candrabindu_1CDAknda	rvocalicvowelsignknda
+
+lookup end
+
+
+lookup	toRRvoc-knda	single
+
+candrabinduknda	rrvocalicvowelsignknda
+uni0951	rrvocalicvowelsignknda
+uni0952	rrvocalicvowelsignknda
+uni1CDA	rrvocalicvowelsignknda
+candrabindu_0951knda	rrvocalicvowelsignknda
+candrabindu_0952knda	rrvocalicvowelsignknda
+candrabindu_1CDAknda	rrvocalicvowelsignknda
+
+lookup end
+
+
+lookup	toVirama-knda	single
+
+candrabinduknda	viramaknda
+uni0951	viramaknda
+uni0952	viramaknda
+uni1CDA	viramaknda
+candrabindu_0951knda	viramaknda
+candrabindu_0952knda	viramaknda
+candrabindu_1CDAknda	viramaknda
+
+lookup end
+
+
+lookup	toLenMark-knda	single
+
+candrabinduknda	lengthmarkknda
+uni0951	lengthmarkknda
+uni0952	lengthmarkknda
+uni1CDA	lengthmarkknda
+candrabindu_0951knda	lengthmarkknda
+candrabindu_0952knda	lengthmarkknda
+candrabindu_1CDAknda	lengthmarkknda
+
+lookup end
+
+
+lookup	toAiMark-knda	single
+
+candrabinduknda	ailengthmarkknda
+uni0951	ailengthmarkknda
+uni0952	ailengthmarkknda
+uni1CDA	ailengthmarkknda
+candrabindu_0951knda	ailengthmarkknda
+candrabindu_0952knda	ailengthmarkknda
+candrabindu_1CDAknda	ailengthmarkknda
+
+lookup end
+
+
+lookup	toLvoc-knda	single
+
+candrabinduknda	lvocalicvowelsignknda
+uni0951	lvocalicvowelsignknda
+uni0952	lvocalicvowelsignknda
+uni1CDA	lvocalicvowelsignknda
+candrabindu_0951knda	lvocalicvowelsignknda
+candrabindu_0952knda	lvocalicvowelsignknda
+candrabindu_1CDAknda	lvocalicvowelsignknda
+
+lookup end
+
+
+lookup	toLLvoc-knda	single
+
+candrabinduknda	llvocalicvowelsignknda
+uni0951	llvocalicvowelsignknda
+uni0952	llvocalicvowelsignknda
+uni1CDA	llvocalicvowelsignknda
+candrabindu_0951knda	llvocalicvowelsignknda
+candrabindu_0952knda	llvocalicvowelsignknda
+candrabindu_1CDAknda	llvocalicvowelsignknda
+
+lookup end
+
+
+lookup	toRvocAlt-knda	single
+
+candrabinduknda	rvocalicvowelsignaltknda
+uni0951	rvocalicvowelsignaltknda
+uni0952	rvocalicvowelsignaltknda
+uni1CDA	rvocalicvowelsignaltknda
+candrabindu_0951knda	rvocalicvowelsignaltknda
+candrabindu_0952knda	rvocalicvowelsignaltknda
+candrabindu_1CDAknda	rvocalicvowelsignaltknda
+
+lookup end
+
+
+lookup	toRRvocAlt-knda	single
+
+candrabinduknda	rrvocalicvowelsignaltknda
+uni0951	rrvocalicvowelsignaltknda
+uni0952	rrvocalicvowelsignaltknda
+uni1CDA	rrvocalicvowelsignaltknda
+candrabindu_0951knda	rrvocalicvowelsignaltknda
+candrabindu_0952knda	rrvocalicvowelsignaltknda
+candrabindu_1CDAknda	rrvocalicvowelsignaltknda
+
+lookup end
+
+
+lookup	toAiAltMark-knda	single
+
+candrabinduknda	ailengthmarkaltknda
+uni0951	ailengthmarkaltknda
+uni0952	ailengthmarkaltknda
+uni1CDA	ailengthmarkaltknda
+candrabindu_0951knda	ailengthmarkaltknda
+candrabindu_0952knda	ailengthmarkaltknda
+candrabindu_1CDAknda	ailengthmarkaltknda
+
+lookup end
+
+
+lookup	toLvocAlt-knda	single
+
+candrabinduknda	lvocalicvowelsignaltknda
+uni0951	lvocalicvowelsignaltknda
+uni0952	lvocalicvowelsignaltknda
+uni1CDA	lvocalicvowelsignaltknda
+candrabindu_0951knda	lvocalicvowelsignaltknda
+candrabindu_0952knda	lvocalicvowelsignaltknda
+candrabindu_1CDAknda	lvocalicvowelsignaltknda
+
+lookup end
+
+
+lookup	toLLvocAlt-knda	single
+
+candrabinduknda	llvocalicvowelsignaltknda
+uni0951	llvocalicvowelsignaltknda
+uni0952	llvocalicvowelsignaltknda
+uni1CDA	llvocalicvowelsignaltknda
+candrabindu_0951knda	llvocalicvowelsignaltknda
+candrabindu_0952knda	llvocalicvowelsignaltknda
+candrabindu_1CDAknda	llvocalicvowelsignaltknda
+
+lookup end
+
+
+lookup	toTaRvoc-knda	single
+
+candrabinduknda	tasubscriptrvocalicknda
+uni0951	tasubscriptrvocalicknda
+uni0952	tasubscriptrvocalicknda
+uni1CDA	tasubscriptrvocalicknda
+candrabindu_0951knda	tasubscriptrvocalicknda
+candrabindu_0952knda	tasubscriptrvocalicknda
+candrabindu_1CDAknda	tasubscriptrvocalicknda
+
+lookup end
+
+
+lookup	toMaRvoc-knda	single
+
+candrabinduknda	masubscriptrvocalicknda
+uni0951	masubscriptrvocalicknda
+uni0952	masubscriptrvocalicknda
+uni1CDA	masubscriptrvocalicknda
+candrabindu_0951knda	masubscriptrvocalicknda
+candrabindu_0952knda	masubscriptrvocalicknda
+candrabindu_1CDAknda	masubscriptrvocalicknda
+
+lookup end
+
+
+lookup	toTaLenMark-knda	single
+
+candrabinduknda	tasubscriptlengthmarkknda
+uni0951	tasubscriptlengthmarkknda
+uni0952	tasubscriptlengthmarkknda
+uni1CDA	tasubscriptlengthmarkknda
+candrabindu_0951knda	tasubscriptlengthmarkknda
+candrabindu_0952knda	tasubscriptlengthmarkknda
+candrabindu_1CDAknda	tasubscriptlengthmarkknda
+
+lookup end
+
+
+lookup	toMaLenMark-knda	single
+
+candrabinduknda	masubscriptlengthmarkknda
+uni0951	masubscriptlengthmarkknda
+uni0952	masubscriptlengthmarkknda
+uni1CDA	masubscriptlengthmarkknda
+candrabindu_0951knda	masubscriptlengthmarkknda
+candrabindu_0952knda	masubscriptlengthmarkknda
+candrabindu_1CDAknda	masubscriptlengthmarkknda
+
+lookup end
+
+
+lookup	toRaLenMark-knda	single
+
+candrabinduknda	rasubscriptlengthmarkknda
+uni0951	rasubscriptlengthmarkknda
+uni0952	rasubscriptlengthmarkknda
+uni1CDA	rasubscriptlengthmarkknda
+candrabindu_0951knda	rasubscriptlengthmarkknda
+candrabindu_0952knda	rasubscriptlengthmarkknda
+candrabindu_1CDAknda	rasubscriptlengthmarkknda
+
+lookup end
+
+
+lookup	toTaRvocAlt-knda	single
+
+candrabinduknda	tasubscriptrvocalicaltknda
+uni0951	tasubscriptrvocalicaltknda
+uni0952	tasubscriptrvocalicaltknda
+uni1CDA	tasubscriptrvocalicaltknda
+candrabindu_0951knda	tasubscriptrvocalicaltknda
+candrabindu_0952knda	tasubscriptrvocalicaltknda
+candrabindu_1CDAknda	tasubscriptrvocalicaltknda
+
+lookup end
+
+
+lookup	toMaRvocAlt-knda	single
+
+candrabinduknda	masubscriptrvocalicaltknda
+uni0951	masubscriptrvocalicaltknda
+uni0952	masubscriptrvocalicaltknda
+uni1CDA	masubscriptrvocalicaltknda
+candrabindu_0951knda	masubscriptrvocalicaltknda
+candrabindu_0952knda	masubscriptrvocalicaltknda
+candrabindu_1CDAknda	masubscriptrvocalicaltknda
+
+lookup end
+
+
+lookup	toTaLenMarkAlt-knda	single
+
+candrabinduknda	tasubscriptlengthmarkaltknda
+uni0951	tasubscriptlengthmarkaltknda
+uni0952	tasubscriptlengthmarkaltknda
+uni1CDA	tasubscriptlengthmarkaltknda
+candrabindu_0951knda	tasubscriptlengthmarkaltknda
+candrabindu_0952knda	tasubscriptlengthmarkaltknda
+candrabindu_1CDAknda	tasubscriptlengthmarkaltknda
+
+lookup end
+
+
+lookup	toMaLenMarkAlt-knda	single
+
+candrabinduknda	masubscriptlengthmarkaltknda
+uni0951	masubscriptlengthmarkaltknda
+uni0952	masubscriptlengthmarkaltknda
+uni1CDA	masubscriptlengthmarkaltknda
+candrabindu_0951knda	masubscriptlengthmarkaltknda
+candrabindu_0952knda	masubscriptlengthmarkaltknda
+candrabindu_1CDAknda	masubscriptlengthmarkaltknda
+
+lookup end
+
+
+lookup	toRaLenMarkAlt-knda	single
+
+candrabinduknda	rasubscriptlengthmarkaltknda
+uni0951	rasubscriptlengthmarkaltknda
+uni0952	rasubscriptlengthmarkaltknda
+uni1CDA	rasubscriptlengthmarkaltknda
+candrabindu_0951knda	rasubscriptlengthmarkaltknda
+candrabindu_0952knda	rasubscriptlengthmarkaltknda
+candrabindu_1CDAknda	rasubscriptlengthmarkaltknda
+
+lookup end
+
+
+lookup	toKaAlt-knda	single
+
+candrabinduknda	kasubscriptaltknda
+uni0951	kasubscriptaltknda
+uni0952	kasubscriptaltknda
+uni1CDA	kasubscriptaltknda
+candrabindu_0951knda	kasubscriptaltknda
+candrabindu_0952knda	kasubscriptaltknda
+candrabindu_1CDAknda	kasubscriptaltknda
+
+lookup end
+
+
+lookup	toKhaAlt-knda	single
+
+candrabinduknda	khasubscriptaltknda
+uni0951	khasubscriptaltknda
+uni0952	khasubscriptaltknda
+uni1CDA	khasubscriptaltknda
+candrabindu_0951knda	khasubscriptaltknda
+candrabindu_0952knda	khasubscriptaltknda
+candrabindu_1CDAknda	khasubscriptaltknda
+
+lookup end
+
+
+lookup	toGaAlt-knda	single
+
+candrabinduknda	gasubscriptaltknda
+uni0951	gasubscriptaltknda
+uni0952	gasubscriptaltknda
+uni1CDA	gasubscriptaltknda
+candrabindu_0951knda	gasubscriptaltknda
+candrabindu_0952knda	gasubscriptaltknda
+candrabindu_1CDAknda	gasubscriptaltknda
+
+lookup end
+
+
+lookup	toGhaAlt-knda	single
+
+candrabinduknda	ghasubscriptaltknda
+uni0951	ghasubscriptaltknda
+uni0952	ghasubscriptaltknda
+uni1CDA	ghasubscriptaltknda
+candrabindu_0951knda	ghasubscriptaltknda
+candrabindu_0952knda	ghasubscriptaltknda
+candrabindu_1CDAknda	ghasubscriptaltknda
+
+lookup end
+
+
+lookup	toNgaAlt-knda	single
+
+candrabinduknda	ngasubscriptaltknda
+uni0951	ngasubscriptaltknda
+uni0952	ngasubscriptaltknda
+uni1CDA	ngasubscriptaltknda
+candrabindu_0951knda	ngasubscriptaltknda
+candrabindu_0952knda	ngasubscriptaltknda
+candrabindu_1CDAknda	ngasubscriptaltknda
+
+lookup end
+
+
+lookup	toCaAlt-knda	single
+
+candrabinduknda	casubscriptaltknda
+uni0951	casubscriptaltknda
+uni0952	casubscriptaltknda
+uni1CDA	casubscriptaltknda
+candrabindu_0951knda	casubscriptaltknda
+candrabindu_0952knda	casubscriptaltknda
+candrabindu_1CDAknda	casubscriptaltknda
+
+lookup end
+
+
+lookup	toChaAlt-knda	single
+
+candrabinduknda	chasubscriptaltknda
+uni0951	chasubscriptaltknda
+uni0952	chasubscriptaltknda
+uni1CDA	chasubscriptaltknda
+candrabindu_0951knda	chasubscriptaltknda
+candrabindu_0952knda	chasubscriptaltknda
+candrabindu_1CDAknda	chasubscriptaltknda
+
+lookup end
+
+
+lookup	toJaAlt-knda	single
+
+candrabinduknda	jasubscriptaltknda
+uni0951	jasubscriptaltknda
+uni0952	jasubscriptaltknda
+uni1CDA	jasubscriptaltknda
+candrabindu_0951knda	jasubscriptaltknda
+candrabindu_0952knda	jasubscriptaltknda
+candrabindu_1CDAknda	jasubscriptaltknda
+
+lookup end
+
+
+lookup	toJhaAlt-knda	single
+
+candrabinduknda	jhasubscriptaltknda
+uni0951	jhasubscriptaltknda
+uni0952	jhasubscriptaltknda
+uni1CDA	jhasubscriptaltknda
+candrabindu_0951knda	jhasubscriptaltknda
+candrabindu_0952knda	jhasubscriptaltknda
+candrabindu_1CDAknda	jhasubscriptaltknda
+
+lookup end
+
+
+lookup	toNyaAlt-knda	single
+
+candrabinduknda	nyasubscriptaltknda
+uni0951	nyasubscriptaltknda
+uni0952	nyasubscriptaltknda
+uni1CDA	nyasubscriptaltknda
+candrabindu_0951knda	nyasubscriptaltknda
+candrabindu_0952knda	nyasubscriptaltknda
+candrabindu_1CDAknda	nyasubscriptaltknda
+
+lookup end
+
+
+lookup	toTtaAlt-knda	single
+
+candrabinduknda	ttasubscriptaltknda
+uni0951	ttasubscriptaltknda
+uni0952	ttasubscriptaltknda
+uni1CDA	ttasubscriptaltknda
+candrabindu_0951knda	ttasubscriptaltknda
+candrabindu_0952knda	ttasubscriptaltknda
+candrabindu_1CDAknda	ttasubscriptaltknda
+
+lookup end
+
+
+lookup	toTthaAlt-knda	single
+
+candrabinduknda	tthasubscriptaltknda
+uni0951	tthasubscriptaltknda
+uni0952	tthasubscriptaltknda
+uni1CDA	tthasubscriptaltknda
+candrabindu_0951knda	tthasubscriptaltknda
+candrabindu_0952knda	tthasubscriptaltknda
+candrabindu_1CDAknda	tthasubscriptaltknda
+
+lookup end
+
+
+lookup	toDdaAlt-knda	single
+
+candrabinduknda	ddasubscriptaltknda
+uni0951	ddasubscriptaltknda
+uni0952	ddasubscriptaltknda
+uni1CDA	ddasubscriptaltknda
+candrabindu_0951knda	ddasubscriptaltknda
+candrabindu_0952knda	ddasubscriptaltknda
+candrabindu_1CDAknda	ddasubscriptaltknda
+
+lookup end
+
+
+lookup	toDdhaAlt-knda	single
+
+candrabinduknda	ddhasubscriptaltknda
+uni0951	ddhasubscriptaltknda
+uni0952	ddhasubscriptaltknda
+uni1CDA	ddhasubscriptaltknda
+candrabindu_0951knda	ddhasubscriptaltknda
+candrabindu_0952knda	ddhasubscriptaltknda
+candrabindu_1CDAknda	ddhasubscriptaltknda
+
+lookup end
+
+
+lookup	toNnaAlt-knda	single
+
+candrabinduknda	nnasubscriptaltknda
+uni0951	nnasubscriptaltknda
+uni0952	nnasubscriptaltknda
+uni1CDA	nnasubscriptaltknda
+candrabindu_0951knda	nnasubscriptaltknda
+candrabindu_0952knda	nnasubscriptaltknda
+candrabindu_1CDAknda	nnasubscriptaltknda
+
+lookup end
+
+
+lookup	toTaAlt-knda	single
+
+candrabinduknda	tasubscriptaltknda
+uni0951	tasubscriptaltknda
+uni0952	tasubscriptaltknda
+uni1CDA	tasubscriptaltknda
+candrabindu_0951knda	tasubscriptaltknda
+candrabindu_0952knda	tasubscriptaltknda
+candrabindu_1CDAknda	tasubscriptaltknda
+
+lookup end
+
+
+lookup	toThaAlt-knda	single
+
+candrabinduknda	thasubscriptaltknda
+uni0951	thasubscriptaltknda
+uni0952	thasubscriptaltknda
+uni1CDA	thasubscriptaltknda
+candrabindu_0951knda	thasubscriptaltknda
+candrabindu_0952knda	thasubscriptaltknda
+candrabindu_1CDAknda	thasubscriptaltknda
+
+lookup end
+
+
+lookup	toDaAlt-knda	single
+
+candrabinduknda	dasubscriptaltknda
+uni0951	dasubscriptaltknda
+uni0952	dasubscriptaltknda
+uni1CDA	dasubscriptaltknda
+candrabindu_0951knda	dasubscriptaltknda
+candrabindu_0952knda	dasubscriptaltknda
+candrabindu_1CDAknda	dasubscriptaltknda
+
+lookup end
+
+
+lookup	toDhaAlt-knda	single
+
+candrabinduknda	dhasubscriptaltknda
+uni0951	dhasubscriptaltknda
+uni0952	dhasubscriptaltknda
+uni1CDA	dhasubscriptaltknda
+candrabindu_0951knda	dhasubscriptaltknda
+candrabindu_0952knda	dhasubscriptaltknda
+candrabindu_1CDAknda	dhasubscriptaltknda
+
+lookup end
+
+
+lookup	toNaAlt-knda	single
+
+candrabinduknda	nasubscriptaltknda
+uni0951	nasubscriptaltknda
+uni0952	nasubscriptaltknda
+uni1CDA	nasubscriptaltknda
+candrabindu_0951knda	nasubscriptaltknda
+candrabindu_0952knda	nasubscriptaltknda
+candrabindu_1CDAknda	nasubscriptaltknda
+
+lookup end
+
+
+lookup	toPaAlt-knda	single
+
+candrabinduknda	pasubscriptaltknda
+uni0951	pasubscriptaltknda
+uni0952	pasubscriptaltknda
+uni1CDA	pasubscriptaltknda
+candrabindu_0951knda	pasubscriptaltknda
+candrabindu_0952knda	pasubscriptaltknda
+candrabindu_1CDAknda	pasubscriptaltknda
+
+lookup end
+
+
+lookup	toPhaAlt-knda	single
+
+candrabinduknda	phasubscriptaltknda
+uni0951	phasubscriptaltknda
+uni0952	phasubscriptaltknda
+uni1CDA	phasubscriptaltknda
+candrabindu_0951knda	phasubscriptaltknda
+candrabindu_0952knda	phasubscriptaltknda
+candrabindu_1CDAknda	phasubscriptaltknda
+
+lookup end
+
+
+lookup	toBaAlt-knda	single
+
+candrabinduknda	basubscriptaltknda
+uni0951	basubscriptaltknda
+uni0952	basubscriptaltknda
+uni1CDA	basubscriptaltknda
+candrabindu_0951knda	basubscriptaltknda
+candrabindu_0952knda	basubscriptaltknda
+candrabindu_1CDAknda	basubscriptaltknda
+
+lookup end
+
+
+lookup	toBhaAlt-knda	single
+
+candrabinduknda	bhasubscriptaltknda
+uni0951	bhasubscriptaltknda
+uni0952	bhasubscriptaltknda
+uni1CDA	bhasubscriptaltknda
+candrabindu_0951knda	bhasubscriptaltknda
+candrabindu_0952knda	bhasubscriptaltknda
+candrabindu_1CDAknda	bhasubscriptaltknda
+
+lookup end
+
+
+lookup	toMaAlt-knda	single
+
+candrabinduknda	masubscriptaltknda
+uni0951	masubscriptaltknda
+uni0952	masubscriptaltknda
+uni1CDA	masubscriptaltknda
+candrabindu_0951knda	masubscriptaltknda
+candrabindu_0952knda	masubscriptaltknda
+candrabindu_1CDAknda	masubscriptaltknda
+
+lookup end
+
+
+lookup	toYaAlt-knda	single
+
+candrabinduknda	yasubscriptaltknda
+uni0951	yasubscriptaltknda
+uni0952	yasubscriptaltknda
+uni1CDA	yasubscriptaltknda
+candrabindu_0951knda	yasubscriptaltknda
+candrabindu_0952knda	yasubscriptaltknda
+candrabindu_1CDAknda	yasubscriptaltknda
+
+lookup end
+
+
+lookup	toRaAlt-knda	single
+
+candrabinduknda	rasubscriptaltknda
+uni0951	rasubscriptaltknda
+uni0952	rasubscriptaltknda
+uni1CDA	rasubscriptaltknda
+candrabindu_0951knda	rasubscriptaltknda
+candrabindu_0952knda	rasubscriptaltknda
+candrabindu_1CDAknda	rasubscriptaltknda
+
+lookup end
+
+
+lookup	toRRaAlt-knda	single
+
+candrabinduknda	rrasubscriptaltknda
+uni0951	rrasubscriptaltknda
+uni0952	rrasubscriptaltknda
+uni1CDA	rrasubscriptaltknda
+candrabindu_0951knda	rrasubscriptaltknda
+candrabindu_0952knda	rrasubscriptaltknda
+candrabindu_1CDAknda	rrasubscriptaltknda
+
+lookup end
+
+
+lookup	toLaAlt-knda	single
+
+candrabinduknda	lasubscriptaltknda
+uni0951	lasubscriptaltknda
+uni0952	lasubscriptaltknda
+uni1CDA	lasubscriptaltknda
+candrabindu_0951knda	lasubscriptaltknda
+candrabindu_0952knda	lasubscriptaltknda
+candrabindu_1CDAknda	lasubscriptaltknda
+
+lookup end
+
+
+lookup	toLLaAlt-knda	single
+
+candrabinduknda	llasubscriptaltknda
+uni0951	llasubscriptaltknda
+uni0952	llasubscriptaltknda
+uni1CDA	llasubscriptaltknda
+candrabindu_0951knda	llasubscriptaltknda
+candrabindu_0952knda	llasubscriptaltknda
+candrabindu_1CDAknda	llasubscriptaltknda
+
+lookup end
+
+
+lookup	toVaAlt-knda	single
+
+candrabinduknda	vasubscriptaltknda
+uni0951	vasubscriptaltknda
+uni0952	vasubscriptaltknda
+uni1CDA	vasubscriptaltknda
+candrabindu_0951knda	vasubscriptaltknda
+candrabindu_0952knda	vasubscriptaltknda
+candrabindu_1CDAknda	vasubscriptaltknda
+
+lookup end
+
+
+lookup	toShaAlt-knda	single
+
+candrabinduknda	shasubscriptaltknda
+uni0951	shasubscriptaltknda
+uni0952	shasubscriptaltknda
+uni1CDA	shasubscriptaltknda
+candrabindu_0951knda	shasubscriptaltknda
+candrabindu_0952knda	shasubscriptaltknda
+candrabindu_1CDAknda	shasubscriptaltknda
+
+lookup end
+
+
+lookup	toSsaAlt-knda	single
+
+candrabinduknda	ssasubscriptaltknda
+uni0951	ssasubscriptaltknda
+uni0952	ssasubscriptaltknda
+uni1CDA	ssasubscriptaltknda
+candrabindu_0951knda	ssasubscriptaltknda
+candrabindu_0952knda	ssasubscriptaltknda
+candrabindu_1CDAknda	ssasubscriptaltknda
+
+lookup end
+
+
+lookup	toSaAlt-knda	single
+
+candrabinduknda	sasubscriptaltknda
+uni0951	sasubscriptaltknda
+uni0952	sasubscriptaltknda
+uni1CDA	sasubscriptaltknda
+candrabindu_0951knda	sasubscriptaltknda
+candrabindu_0952knda	sasubscriptaltknda
+candrabindu_1CDAknda	sasubscriptaltknda
+
+lookup end
+
+
+lookup	toHaAlt-knda	single
+
+candrabinduknda	hasubscriptaltknda
+uni0951	hasubscriptaltknda
+uni0952	hasubscriptaltknda
+uni1CDA	hasubscriptaltknda
+candrabindu_0951knda	hasubscriptaltknda
+candrabindu_0952knda	hasubscriptaltknda
+candrabindu_1CDAknda	hasubscriptaltknda
+
+lookup end
+
+
+lookup	toFaAlt-knda	single
+
+candrabinduknda	fasubscriptaltknda
+uni0951	fasubscriptaltknda
+uni0952	fasubscriptaltknda
+uni1CDA	fasubscriptaltknda
+candrabindu_0951knda	fasubscriptaltknda
+candrabindu_0952knda	fasubscriptaltknda
+candrabindu_1CDAknda	fasubscriptaltknda
+
+lookup end
+
+
+lookup	toKaRaAlt-knda	single
+
+candrabinduknda	karasubscriptaltknda
+uni0951	karasubscriptaltknda
+uni0952	karasubscriptaltknda
+uni1CDA	karasubscriptaltknda
+candrabindu_0951knda	karasubscriptaltknda
+candrabindu_0952knda	karasubscriptaltknda
+candrabindu_1CDAknda	karasubscriptaltknda
+
+lookup end
+
+lookup	toGaRaAlt-knda	single
+
+candrabinduknda	garasubscriptaltknda
+uni0951	garasubscriptaltknda
+uni0952	garasubscriptaltknda
+uni1CDA	garasubscriptaltknda
+candrabindu_0951knda	garasubscriptaltknda
+candrabindu_0952knda	garasubscriptaltknda
+candrabindu_1CDAknda	garasubscriptaltknda
+
+lookup end
+
+
+lookup	toTtaRaAlt-knda	single
+
+candrabinduknda	ttarasubscriptaltknda
+uni0951	ttarasubscriptaltknda
+uni0952	ttarasubscriptaltknda
+uni1CDA	ttarasubscriptaltknda
+candrabindu_0951knda	ttarasubscriptaltknda
+candrabindu_0952knda	ttarasubscriptaltknda
+candrabindu_1CDAknda	ttarasubscriptaltknda
+
+lookup end
+
+
+lookup	toDdaRaAlt-knda	single
+
+candrabinduknda	ddarasubscriptaltknda
+uni0951	ddarasubscriptaltknda
+uni0952	ddarasubscriptaltknda
+uni1CDA	ddarasubscriptaltknda
+candrabindu_0951knda	ddarasubscriptaltknda
+candrabindu_0952knda	ddarasubscriptaltknda
+candrabindu_1CDAknda	ddarasubscriptaltknda
+
+lookup end
+
+
+lookup	toTaRaAlt-knda	single
+
+candrabinduknda	tarasubscriptaltknda
+uni0951	tarasubscriptaltknda
+uni0952	tarasubscriptaltknda
+uni1CDA	tarasubscriptaltknda
+candrabindu_0951knda	tarasubscriptaltknda
+candrabindu_0952knda	tarasubscriptaltknda
+candrabindu_1CDAknda	tarasubscriptaltknda
+
+lookup end
+
+
+lookup	toDaRaAlt-knda	single
+
+candrabinduknda	darasubscriptaltknda
+uni0951	darasubscriptaltknda
+uni0952	darasubscriptaltknda
+uni1CDA	darasubscriptaltknda
+candrabindu_0951knda	darasubscriptaltknda
+candrabindu_0952knda	darasubscriptaltknda
+candrabindu_1CDAknda	darasubscriptaltknda
+
+lookup end
+
+
+lookup	toPaRaAlt-knda	single
+
+candrabinduknda	parasubscriptaltknda
+uni0951	parasubscriptaltknda
+uni0952	parasubscriptaltknda
+uni1CDA	parasubscriptaltknda
+candrabindu_0951knda	parasubscriptaltknda
+candrabindu_0952knda	parasubscriptaltknda
+candrabindu_1CDAknda	parasubscriptaltknda
+
+lookup end
+
+
+lookup	toBhaRaAlt-knda	single
+
+candrabinduknda	bharasubscriptaltknda
+uni0951	bharasubscriptaltknda
+uni0952	bharasubscriptaltknda
+uni1CDA	bharasubscriptaltknda
+candrabindu_0951knda	bharasubscriptaltknda
+candrabindu_0952knda	bharasubscriptaltknda
+candrabindu_1CDAknda	bharasubscriptaltknda
+
+lookup end
+
+
+lookup	toTaYaAlt-knda	single
+
+candrabinduknda	tayasubscriptaltknda
+uni0951	tayasubscriptaltknda
+uni0952	tayasubscriptaltknda
+uni1CDA	tayasubscriptaltknda
+candrabindu_0951knda	tayasubscriptaltknda
+candrabindu_0952knda	tayasubscriptaltknda
+candrabindu_1CDAknda	tayasubscriptaltknda
+
+lookup end
+
+
+lookup	toMaYaAlt-knda	single
+
+candrabinduknda	mayasubscriptaltknda
+uni0951	mayasubscriptaltknda
+uni0952	mayasubscriptaltknda
+uni1CDA	mayasubscriptaltknda
+candrabindu_0951knda	mayasubscriptaltknda
+candrabindu_0952knda	mayasubscriptaltknda
+candrabindu_1CDAknda	mayasubscriptaltknda
+
+lookup end
+
+
+
+
+lookup	toKa-knda	single
+
+candrabinduknda	kasubscriptknda
+uni0951	kasubscriptknda
+uni0952	kasubscriptknda
+uni1CDA	kasubscriptknda
+candrabindu_0951knda	kasubscriptknda
+candrabindu_0952knda	kasubscriptknda
+candrabindu_1CDAknda	kasubscriptknda
+
+lookup end
+
+
+lookup	toKha-knda	single
+
+candrabinduknda	khasubscriptknda
+uni0951	khasubscriptknda
+uni0952	khasubscriptknda
+uni1CDA	khasubscriptknda
+candrabindu_0951knda	khasubscriptknda
+candrabindu_0952knda	khasubscriptknda
+candrabindu_1CDAknda	khasubscriptknda
+
+lookup end
+
+
+lookup	toGa-knda	single
+
+candrabinduknda	gasubscriptknda
+uni0951	gasubscriptknda
+uni0952	gasubscriptknda
+uni1CDA	gasubscriptknda
+candrabindu_0951knda	gasubscriptknda
+candrabindu_0952knda	gasubscriptknda
+candrabindu_1CDAknda	gasubscriptknda
+
+lookup end
+
+
+lookup	toGha-knda	single
+
+candrabinduknda	ghasubscriptknda
+uni0951	ghasubscriptknda
+uni0952	ghasubscriptknda
+uni1CDA	ghasubscriptknda
+candrabindu_0951knda	ghasubscriptknda
+candrabindu_0952knda	ghasubscriptknda
+candrabindu_1CDAknda	ghasubscriptknda
+
+lookup end
+
+
+lookup	toNga-knda	single
+
+candrabinduknda	ngasubscriptknda
+uni0951	ngasubscriptknda
+uni0952	ngasubscriptknda
+uni1CDA	ngasubscriptknda
+candrabindu_0951knda	ngasubscriptknda
+candrabindu_0952knda	ngasubscriptknda
+candrabindu_1CDAknda	ngasubscriptknda
+
+lookup end
+
+
+lookup	toCa-knda	single
+
+candrabinduknda	casubscriptknda
+uni0951	casubscriptknda
+uni0952	casubscriptknda
+uni1CDA	casubscriptknda
+candrabindu_0951knda	casubscriptknda
+candrabindu_0952knda	casubscriptknda
+candrabindu_1CDAknda	casubscriptknda
+
+lookup end
+
+
+lookup	toCha-knda	single
+
+candrabinduknda	chasubscriptknda
+uni0951	chasubscriptknda
+uni0952	chasubscriptknda
+uni1CDA	chasubscriptknda
+candrabindu_0951knda	chasubscriptknda
+candrabindu_0952knda	chasubscriptknda
+candrabindu_1CDAknda	chasubscriptknda
+
+lookup end
+
+
+lookup	toJa-knda	single
+
+candrabinduknda	jasubscriptknda
+uni0951	jasubscriptknda
+uni0952	jasubscriptknda
+uni1CDA	jasubscriptknda
+candrabindu_0951knda	jasubscriptknda
+candrabindu_0952knda	jasubscriptknda
+candrabindu_1CDAknda	jasubscriptknda
+
+lookup end
+
+
+lookup	toJha-knda	single
+
+candrabinduknda	jhasubscriptknda
+uni0951	jhasubscriptknda
+uni0952	jhasubscriptknda
+uni1CDA	jhasubscriptknda
+candrabindu_0951knda	jhasubscriptknda
+candrabindu_0952knda	jhasubscriptknda
+candrabindu_1CDAknda	jhasubscriptknda
+
+lookup end
+
+
+lookup	toNya-knda	single
+
+candrabinduknda	nyasubscriptknda
+uni0951	nyasubscriptknda
+uni0952	nyasubscriptknda
+uni1CDA	nyasubscriptknda
+candrabindu_0951knda	nyasubscriptknda
+candrabindu_0952knda	nyasubscriptknda
+candrabindu_1CDAknda	nyasubscriptknda
+
+lookup end
+
+
+lookup	toTta-knda	single
+
+candrabinduknda	ttasubscriptknda
+uni0951	ttasubscriptknda
+uni0952	ttasubscriptknda
+uni1CDA	ttasubscriptknda
+candrabindu_0951knda	ttasubscriptknda
+candrabindu_0952knda	ttasubscriptknda
+candrabindu_1CDAknda	ttasubscriptknda
+
+lookup end
+
+
+lookup	toTtha-knda	single
+
+candrabinduknda	tthasubscriptknda
+uni0951	tthasubscriptknda
+uni0952	tthasubscriptknda
+uni1CDA	tthasubscriptknda
+candrabindu_0951knda	tthasubscriptknda
+candrabindu_0952knda	tthasubscriptknda
+candrabindu_1CDAknda	tthasubscriptknda
+
+lookup end
+
+
+lookup	toDda-knda	single
+
+candrabinduknda	ddasubscriptknda
+uni0951	ddasubscriptknda
+uni0952	ddasubscriptknda
+uni1CDA	ddasubscriptknda
+candrabindu_0951knda	ddasubscriptknda
+candrabindu_0952knda	ddasubscriptknda
+candrabindu_1CDAknda	ddasubscriptknda
+
+lookup end
+
+
+lookup	toDdha-knda	single
+
+candrabinduknda	ddhasubscriptknda
+uni0951	ddhasubscriptknda
+uni0952	ddhasubscriptknda
+uni1CDA	ddhasubscriptknda
+candrabindu_0951knda	ddhasubscriptknda
+candrabindu_0952knda	ddhasubscriptknda
+candrabindu_1CDAknda	ddhasubscriptknda
+
+lookup end
+
+
+lookup	toNna-knda	single
+
+candrabinduknda	nnasubscriptknda
+uni0951	nnasubscriptknda
+uni0952	nnasubscriptknda
+uni1CDA	nnasubscriptknda
+candrabindu_0951knda	nnasubscriptknda
+candrabindu_0952knda	nnasubscriptknda
+candrabindu_1CDAknda	nnasubscriptknda
+
+lookup end
+
+
+lookup	toTa-knda	single
+
+candrabinduknda	tasubscriptknda
+uni0951	tasubscriptknda
+uni0952	tasubscriptknda
+uni1CDA	tasubscriptknda
+candrabindu_0951knda	tasubscriptknda
+candrabindu_0952knda	tasubscriptknda
+candrabindu_1CDAknda	tasubscriptknda
+
+lookup end
+
+
+lookup	toTha-knda	single
+
+candrabinduknda	thasubscriptknda
+uni0951	thasubscriptknda
+uni0952	thasubscriptknda
+uni1CDA	thasubscriptknda
+candrabindu_0951knda	thasubscriptknda
+candrabindu_0952knda	thasubscriptknda
+candrabindu_1CDAknda	thasubscriptknda
+
+lookup end
+
+
+lookup	toDa-knda	single
+
+candrabinduknda	dasubscriptknda
+uni0951	dasubscriptknda
+uni0952	dasubscriptknda
+uni1CDA	dasubscriptknda
+candrabindu_0951knda	dasubscriptknda
+candrabindu_0952knda	dasubscriptknda
+candrabindu_1CDAknda	dasubscriptknda
+
+lookup end
+
+
+lookup	toDha-knda	single
+
+candrabinduknda	dhasubscriptknda
+uni0951	dhasubscriptknda
+uni0952	dhasubscriptknda
+uni1CDA	dhasubscriptknda
+candrabindu_0951knda	dhasubscriptknda
+candrabindu_0952knda	dhasubscriptknda
+candrabindu_1CDAknda	dhasubscriptknda
+
+lookup end
+
+
+lookup	toNa-knda	single
+
+candrabinduknda	nasubscriptknda
+uni0951	nasubscriptknda
+uni0952	nasubscriptknda
+uni1CDA	nasubscriptknda
+candrabindu_0951knda	nasubscriptknda
+candrabindu_0952knda	nasubscriptknda
+candrabindu_1CDAknda	nasubscriptknda
+
+lookup end
+
+
+lookup	toPa-knda	single
+
+candrabinduknda	pasubscriptknda
+uni0951	pasubscriptknda
+uni0952	pasubscriptknda
+uni1CDA	pasubscriptknda
+candrabindu_0951knda	pasubscriptknda
+candrabindu_0952knda	pasubscriptknda
+candrabindu_1CDAknda	pasubscriptknda
+
+lookup end
+
+
+lookup	toPha-knda	single
+
+candrabinduknda	phasubscriptknda
+uni0951	phasubscriptknda
+uni0952	phasubscriptknda
+uni1CDA	phasubscriptknda
+candrabindu_0951knda	phasubscriptknda
+candrabindu_0952knda	phasubscriptknda
+candrabindu_1CDAknda	phasubscriptknda
+
+lookup end
+
+
+lookup	toBa-knda	single
+
+candrabinduknda	basubscriptknda
+uni0951	basubscriptknda
+uni0952	basubscriptknda
+uni1CDA	basubscriptknda
+candrabindu_0951knda	basubscriptknda
+candrabindu_0952knda	basubscriptknda
+candrabindu_1CDAknda	basubscriptknda
+
+lookup end
+
+
+lookup	toBha-knda	single
+
+candrabinduknda	bhasubscriptknda
+uni0951	bhasubscriptknda
+uni0952	bhasubscriptknda
+uni1CDA	bhasubscriptknda
+candrabindu_0951knda	bhasubscriptknda
+candrabindu_0952knda	bhasubscriptknda
+candrabindu_1CDAknda	bhasubscriptknda
+
+lookup end
+
+
+lookup	toMa-knda	single
+
+candrabinduknda	masubscriptknda
+uni0951	masubscriptknda
+uni0952	masubscriptknda
+uni1CDA	masubscriptknda
+candrabindu_0951knda	masubscriptknda
+candrabindu_0952knda	masubscriptknda
+candrabindu_1CDAknda	masubscriptknda
+
+lookup end
+
+
+lookup	toYa-knda	single
+
+candrabinduknda	yasubscriptknda
+uni0951	yasubscriptknda
+uni0952	yasubscriptknda
+uni1CDA	yasubscriptknda
+candrabindu_0951knda	yasubscriptknda
+candrabindu_0952knda	yasubscriptknda
+candrabindu_1CDAknda	yasubscriptknda
+
+lookup end
+
+
+lookup	toRa-knda	single
+
+candrabinduknda	rasubscriptknda
+uni0951	rasubscriptknda
+uni0952	rasubscriptknda
+uni1CDA	rasubscriptknda
+candrabindu_0951knda	rasubscriptknda
+candrabindu_0952knda	rasubscriptknda
+candrabindu_1CDAknda	rasubscriptknda
+
+lookup end
+
+
+lookup	toRRa-knda	single
+
+candrabinduknda	rrasubscriptknda
+uni0951	rrasubscriptknda
+uni0952	rrasubscriptknda
+uni1CDA	rrasubscriptknda
+candrabindu_0951knda	rrasubscriptknda
+candrabindu_0952knda	rrasubscriptknda
+candrabindu_1CDAknda	rrasubscriptknda
+
+lookup end
+
+
+lookup	toLa-knda	single
+
+candrabinduknda	lasubscriptknda
+uni0951	lasubscriptknda
+uni0952	lasubscriptknda
+uni1CDA	lasubscriptknda
+candrabindu_0951knda	lasubscriptknda
+candrabindu_0952knda	lasubscriptknda
+candrabindu_1CDAknda	lasubscriptknda
+
+lookup end
+
+
+lookup	toLLa-knda	single
+
+candrabinduknda	llasubscriptknda
+uni0951	llasubscriptknda
+uni0952	llasubscriptknda
+uni1CDA	llasubscriptknda
+candrabindu_0951knda	llasubscriptknda
+candrabindu_0952knda	llasubscriptknda
+candrabindu_1CDAknda	llasubscriptknda
+
+lookup end
+
+
+lookup	toVa-knda	single
+
+candrabinduknda	vasubscriptknda
+uni0951	vasubscriptknda
+uni0952	vasubscriptknda
+uni1CDA	vasubscriptknda
+candrabindu_0951knda	vasubscriptknda
+candrabindu_0952knda	vasubscriptknda
+candrabindu_1CDAknda	vasubscriptknda
+
+lookup end
+
+
+lookup	toSha-knda	single
+
+candrabinduknda	shasubscriptknda
+uni0951	shasubscriptknda
+uni0952	shasubscriptknda
+uni1CDA	shasubscriptknda
+candrabindu_0951knda	shasubscriptknda
+candrabindu_0952knda	shasubscriptknda
+candrabindu_1CDAknda	shasubscriptknda
+
+lookup end
+
+
+lookup	toSsa-knda	single
+
+candrabinduknda	ssasubscriptknda
+uni0951	ssasubscriptknda
+uni0952	ssasubscriptknda
+uni1CDA	ssasubscriptknda
+candrabindu_0951knda	ssasubscriptknda
+candrabindu_0952knda	ssasubscriptknda
+candrabindu_1CDAknda	ssasubscriptknda
+
+lookup end
+
+
+lookup	toSa-knda	single
+
+candrabinduknda	sasubscriptknda
+uni0951	sasubscriptknda
+uni0952	sasubscriptknda
+uni1CDA	sasubscriptknda
+candrabindu_0951knda	sasubscriptknda
+candrabindu_0952knda	sasubscriptknda
+candrabindu_1CDAknda	sasubscriptknda
+
+lookup end
+
+
+lookup	toHa-knda	single
+
+candrabinduknda	hasubscriptknda
+uni0951	hasubscriptknda
+uni0952	hasubscriptknda
+uni1CDA	hasubscriptknda
+candrabindu_0951knda	hasubscriptknda
+candrabindu_0952knda	hasubscriptknda
+candrabindu_1CDAknda	hasubscriptknda
+
+lookup end
+
+
+lookup	toFa-knda	single
+
+candrabinduknda	fasubscriptknda
+uni0951	fasubscriptknda
+uni0952	fasubscriptknda
+uni1CDA	fasubscriptknda
+candrabindu_0951knda	fasubscriptknda
+candrabindu_0952knda	fasubscriptknda
+candrabindu_1CDAknda	fasubscriptknda
+
+lookup end
+
+
+lookup	toKaRa-knda	single
+
+candrabinduknda	karasubscriptknda
+uni0951	karasubscriptknda
+uni0952	karasubscriptknda
+uni1CDA	karasubscriptknda
+candrabindu_0951knda	karasubscriptknda
+candrabindu_0952knda	karasubscriptknda
+candrabindu_1CDAknda	karasubscriptknda
+
+lookup end
+
+lookup	toGaRa-knda	single
+
+candrabinduknda	garasubscriptknda
+uni0951	garasubscriptknda
+uni0952	garasubscriptknda
+uni1CDA	garasubscriptknda
+candrabindu_0951knda	garasubscriptknda
+candrabindu_0952knda	garasubscriptknda
+candrabindu_1CDAknda	garasubscriptknda
+
+lookup end
+
+
+lookup	toTtaRa-knda	single
+
+candrabinduknda	ttarasubscriptknda
+uni0951	ttarasubscriptknda
+uni0952	ttarasubscriptknda
+uni1CDA	ttarasubscriptknda
+candrabindu_0951knda	ttarasubscriptknda
+candrabindu_0952knda	ttarasubscriptknda
+candrabindu_1CDAknda	ttarasubscriptknda
+
+lookup end
+
+
+lookup	toDdaRa-knda	single
+
+candrabinduknda	ddarasubscriptknda
+uni0951	ddarasubscriptknda
+uni0952	ddarasubscriptknda
+uni1CDA	ddarasubscriptknda
+candrabindu_0951knda	ddarasubscriptknda
+candrabindu_0952knda	ddarasubscriptknda
+candrabindu_1CDAknda	ddarasubscriptknda
+
+lookup end
+
+
+lookup	toTaRa-knda	single
+
+candrabinduknda	tarasubscriptknda
+uni0951	tarasubscriptknda
+uni0952	tarasubscriptknda
+uni1CDA	tarasubscriptknda
+candrabindu_0951knda	tarasubscriptknda
+candrabindu_0952knda	tarasubscriptknda
+candrabindu_1CDAknda	tarasubscriptknda
+
+lookup end
+
+
+lookup	toDaRa-knda	single
+
+candrabinduknda	darasubscriptknda
+uni0951	darasubscriptknda
+uni0952	darasubscriptknda
+uni1CDA	darasubscriptknda
+candrabindu_0951knda	darasubscriptknda
+candrabindu_0952knda	darasubscriptknda
+candrabindu_1CDAknda	darasubscriptknda
+
+lookup end
+
+
+lookup	toPaRa-knda	single
+
+candrabinduknda	parasubscriptknda
+uni0951	parasubscriptknda
+uni0952	parasubscriptknda
+uni1CDA	parasubscriptknda
+candrabindu_0951knda	parasubscriptknda
+candrabindu_0952knda	parasubscriptknda
+candrabindu_1CDAknda	parasubscriptknda
+
+lookup end
+
+
+lookup	toBhaRa-knda	single
+
+candrabinduknda	bharasubscriptknda
+uni0951	bharasubscriptknda
+uni0952	bharasubscriptknda
+uni1CDA	bharasubscriptknda
+candrabindu_0951knda	bharasubscriptknda
+candrabindu_0952knda	bharasubscriptknda
+candrabindu_1CDAknda	bharasubscriptknda
+
+lookup end
+
+
+lookup	toTaYa-knda	single
+
+candrabinduknda	tayasubscriptknda
+uni0951	tayasubscriptknda
+uni0952	tayasubscriptknda
+uni1CDA	tayasubscriptknda
+candrabindu_0951knda	tayasubscriptknda
+candrabindu_0952knda	tayasubscriptknda
+candrabindu_1CDAknda	tayasubscriptknda
+
+lookup end
+
+
+lookup	toMaYa-knda	single
+
+candrabinduknda	mayasubscriptknda
+uni0951	mayasubscriptknda
+uni0952	mayasubscriptknda
+uni1CDA	mayasubscriptknda
+candrabindu_0951knda	mayasubscriptknda
+candrabindu_0952knda	mayasubscriptknda
+candrabindu_1CDAknda	mayasubscriptknda
+
+lookup end
+
+
+% -----------
+
+
+lookup	puclashesNukta-knda	chained
+
+markattachmenttype	1
+
+backtrackclass definition begin
+nuktaknda	1
+class definition end
+
+class definition begin
+kasubscriptknda	1
+khasubscriptknda	1
+gasubscriptknda	1
+ghasubscriptknda	1
+ngasubscriptknda	1
+casubscriptknda	1
+chasubscriptknda	1
+jasubscriptknda	1
+jhasubscriptknda	1
+nyasubscriptknda	1
+ttasubscriptknda	1
+tthasubscriptknda	1
+ddasubscriptknda	1
+ddhasubscriptknda	1
+nnasubscriptknda	1
+tasubscriptknda	1
+thasubscriptknda	1
+dasubscriptknda	1
+dhasubscriptknda	1
+nasubscriptknda	1
+pasubscriptknda	1
+phasubscriptknda	1
+basubscriptknda	1
+bhasubscriptknda	1
+masubscriptknda	1
+yasubscriptknda	1
+rasubscriptknda	1
+lasubscriptknda	1
+llasubscriptknda	1
+vasubscriptknda	1
+shasubscriptknda	1
+ssasubscriptknda	1
+sasubscriptknda	1
+hasubscriptknda	1
+rrasubscriptknda	1
+fasubscriptknda	1
+% new 2017
+januktasubscriptknda	1
+phanuktasubscriptknda	1
+class definition end
+
+lookaheadclass definition begin
+# 1	1
+class definition end
+
+class-chain	1	1		 1,right-subscript-knda
+
+lookup end
+
+
+lookup	puclashes-knda	chained
+
+markattachmenttype	2
+
+backtrackclass definition begin
+januktaknda	1
+phanuktaknda	1
+jivowelnuktaknda	1
+phivowelnuktaknda	1
+jevowelnuktaknda	1
+phevowelnuktaknda	1
+uvowelsignalt2knda	1
+uvowelsignaltknda	1
+class definition end
+
+class definition begin
+kasubscriptknda	1
+khasubscriptknda	1
+gasubscriptknda	1
+ghasubscriptknda	1
+ngasubscriptknda	1
+casubscriptknda	1
+chasubscriptknda	1
+jasubscriptknda	1
+jhasubscriptknda	1
+nyasubscriptknda	1
+ttasubscriptknda	1
+tthasubscriptknda	1
+ddasubscriptknda	1
+ddhasubscriptknda	1
+nnasubscriptknda	1
+tasubscriptknda	1
+thasubscriptknda	1
+dasubscriptknda	1
+dhasubscriptknda	1
+nasubscriptknda	1
+pasubscriptknda	1
+phasubscriptknda	1
+basubscriptknda	1
+bhasubscriptknda	1
+masubscriptknda	1
+yasubscriptknda	1
+rasubscriptknda	1
+lasubscriptknda	1
+llasubscriptknda	1
+vasubscriptknda	1
+shasubscriptknda	1
+ssasubscriptknda	1
+sasubscriptknda	1
+hasubscriptknda	1
+rrasubscriptknda	1
+fasubscriptknda	1
+% new 2017
+januktasubscriptknda	1
+phanuktasubscriptknda	1
+class definition end
+
+lookaheadclass definition begin
+# 1	1
+class definition end
+
+class-chain	1	1		 1,right-subscript-knda
+
+lookup end
+
+lookup	alt-subscript-knda	single
+
+rvocalicvowelsignknda	rvocalicvowelsignaltknda
+rrvocalicvowelsignknda	rrvocalicvowelsignaltknda
+ailengthmarkknda	ailengthmarkaltknda
+lvocalicvowelsignknda	lvocalicvowelsignaltknda
+llvocalicvowelsignknda	llvocalicvowelsignaltknda
+kasubscriptknda	kasubscriptaltknda
+khasubscriptknda	khasubscriptaltknda
+gasubscriptknda	gasubscriptaltknda
+ghasubscriptknda	ghasubscriptaltknda
+ngasubscriptknda	ngasubscriptaltknda
+casubscriptknda	casubscriptaltknda
+chasubscriptknda	chasubscriptaltknda
+jasubscriptknda	jasubscriptaltknda
+jhasubscriptknda	jhasubscriptaltknda
+nyasubscriptknda	nyasubscriptaltknda
+ttasubscriptknda	ttasubscriptaltknda
+tthasubscriptknda	tthasubscriptaltknda
+ddasubscriptknda	ddasubscriptaltknda
+ddhasubscriptknda	ddhasubscriptaltknda
+nnasubscriptknda	nnasubscriptaltknda
+tasubscriptknda	tasubscriptaltknda
+thasubscriptknda	thasubscriptaltknda
+dasubscriptknda	dasubscriptaltknda
+dhasubscriptknda	dhasubscriptaltknda
+nasubscriptknda	nasubscriptaltknda
+pasubscriptknda	pasubscriptaltknda
+phasubscriptknda	phasubscriptaltknda
+basubscriptknda	basubscriptaltknda
+bhasubscriptknda	bhasubscriptaltknda
+masubscriptknda	masubscriptaltknda
+yasubscriptknda	yasubscriptaltknda
+rasubscriptknda	rasubscriptaltknda
+rrasubscriptknda	rrasubscriptaltknda
+lasubscriptknda	lasubscriptaltknda
+llasubscriptknda	llasubscriptaltknda
+vasubscriptknda	vasubscriptaltknda
+shasubscriptknda	shasubscriptaltknda
+ssasubscriptknda	ssasubscriptaltknda
+sasubscriptknda	sasubscriptaltknda
+hasubscriptknda	hasubscriptaltknda
+fasubscriptknda	fasubscriptaltknda
+karasubscriptknda	karasubscriptaltknda
+garasubscriptknda	garasubscriptaltknda
+ttarasubscriptknda	ttarasubscriptaltknda
+ddarasubscriptknda	ddarasubscriptaltknda
+tarasubscriptknda	tarasubscriptaltknda
+darasubscriptknda	darasubscriptaltknda
+parasubscriptknda	parasubscriptaltknda
+bharasubscriptknda	bharasubscriptaltknda
+tayasubscriptknda	tayasubscriptaltknda
+mayasubscriptknda	mayasubscriptaltknda
+tasubscriptrvocalicknda	tasubscriptrvocalicaltknda
+masubscriptrvocalicknda	masubscriptrvocalicaltknda
+tasubscriptlengthmarkknda	tasubscriptlengthmarkaltknda
+masubscriptlengthmarkknda	masubscriptlengthmarkaltknda
+rasubscriptlengthmarkknda	rasubscriptlengthmarkaltknda
+% new 2017
+januktasubscriptknda	januktasubscriptaltknda
+phanuktasubscriptknda	phanuktasubscriptaltknda
+
+lookup end
+
+
+lookup	right-subscript-knda	single
+
+kasubscriptknda	kasubscriptrightknda
+khasubscriptknda	khasubscriptrightknda
+gasubscriptknda	gasubscriptrightknda
+ghasubscriptknda	ghasubscriptrightknda
+ngasubscriptknda	ngasubscriptrightknda
+casubscriptknda	casubscriptrightknda
+chasubscriptknda	chasubscriptrightknda
+jasubscriptknda	jasubscriptrightknda
+jhasubscriptknda	jhasubscriptrightknda
+nyasubscriptknda	nyasubscriptrightknda
+ttasubscriptknda	ttasubscriptrightknda
+tthasubscriptknda	tthasubscriptrightknda
+ddasubscriptknda	ddasubscriptrightknda
+ddhasubscriptknda	ddhasubscriptrightknda
+nnasubscriptknda	nnasubscriptrightknda
+tasubscriptknda	tasubscriptrightknda
+thasubscriptknda	thasubscriptrightknda
+dasubscriptknda	dasubscriptrightknda
+dhasubscriptknda	dhasubscriptrightknda
+nasubscriptknda	nasubscriptrightknda
+pasubscriptknda	pasubscriptrightknda
+phasubscriptknda	phasubscriptrightknda
+basubscriptknda	basubscriptrightknda
+bhasubscriptknda	bhasubscriptrightknda
+masubscriptknda	masubscriptrightknda
+yasubscriptknda	yasubscriptrightknda
+rasubscriptknda	rasubscriptrightknda
+rrasubscriptknda	rrasubscriptrightknda
+lasubscriptknda	lasubscriptrightknda
+llasubscriptknda	llasubscriptrightknda
+vasubscriptknda	vasubscriptrightknda
+shasubscriptknda	shasubscriptrightknda
+ssasubscriptknda	ssasubscriptrightknda
+sasubscriptknda	sasubscriptrightknda
+hasubscriptknda	hasubscriptrightknda
+fasubscriptknda	fasubscriptrightknda
+% new 2017
+januktasubscriptknda	januktasubscriptrightknda
+phanuktasubscriptknda	phanuktasubscriptrightknda
+
+lookup end
+
+
+
+% standard half form feature for remaining dead consonants
+
+lookup	haln-knda	ligature
+
+IgnoreLigatures	yes
+IgnoreMarks	yes
+
+kaviramaknda	kaknda	viramaknda
+khaviramaknda	khaknda	viramaknda
+gaviramaknda	gaknda	viramaknda
+ghaviramaknda	ghaknda	viramaknda
+ngaviramaknda	ngaknda	viramaknda
+caviramaknda	caknda	viramaknda
+chaviramaknda	chaknda	viramaknda
+javiramaknda	jaknda	viramaknda
+jhaviramaknda	jhaknda	viramaknda
+nyaviramaknda	nyaknda	viramaknda
+ttaviramaknda	ttaknda	viramaknda
+tthaviramaknda	tthaknda	viramaknda
+ddaviramaknda	ddaknda	viramaknda
+ddhaviramaknda	ddhaknda	viramaknda
+nnaviramaknda	nnaknda	viramaknda
+taviramaknda	taknda	viramaknda
+thaviramaknda	thaknda	viramaknda
+daviramaknda	daknda	viramaknda
+dhaviramaknda	dhaknda	viramaknda
+naviramaknda	naknda	viramaknda
+paviramaknda	paknda	viramaknda
+phaviramaknda	phaknda	viramaknda
+baviramaknda	baknda	viramaknda
+bhaviramaknda	bhaknda	viramaknda
+maviramaknda	maknda	viramaknda
+yaviramaknda	yaknda	viramaknda
+raviramaknda	raknda	viramaknda
+laviramaknda	laknda	viramaknda
+llaviramaknda	llaknda	viramaknda
+vaviramaknda	vaknda	viramaknda
+shaviramaknda	shaknda	viramaknda
+ssaviramaknda	ssaknda	viramaknda
+saviramaknda	saknda	viramaknda
+haviramaknda	haknda	viramaknda
+rraviramaknda	rraknda	viramaknda
+faviramaknda	faknda	viramaknda
+kassaviramaknda	kassaknda	viramaknda
+janyaviramaknda	janyaknda	viramaknda
+januktaviramaknda	januktaknda	viramaknda
+phanuktaviramaknda	phanuktaknda	viramaknda
+
+lookup end
+
+
+
+lookup	fixakhand-knda	context
+
+IgnoreMarks	yes
+
+class definition begin
+kassaviramaknda	1
+janyaviramaknda	1
+kasubscriptaltknda	2
+khasubscriptaltknda	2
+gasubscriptaltknda	2
+ghasubscriptaltknda	2
+ngasubscriptaltknda	2
+casubscriptaltknda	2
+chasubscriptaltknda	2
+jasubscriptaltknda	2
+jhasubscriptaltknda	2
+nyasubscriptaltknda	2
+ttasubscriptaltknda	2
+tthasubscriptaltknda	2
+ddasubscriptaltknda	2
+ddhasubscriptaltknda	2
+nnasubscriptaltknda	2
+tasubscriptaltknda	2
+thasubscriptaltknda	2
+dasubscriptaltknda	2
+dhasubscriptaltknda	2
+nasubscriptaltknda	2
+pasubscriptaltknda	2
+phasubscriptaltknda	2
+basubscriptaltknda	2
+bhasubscriptaltknda	2
+masubscriptaltknda	2
+yasubscriptaltknda	2
+rasubscriptaltknda	2
+lasubscriptaltknda	2
+llasubscriptaltknda	2
+vasubscriptaltknda	2
+shasubscriptaltknda	2
+ssasubscriptaltknda	2
+sasubscriptaltknda	2
+hasubscriptaltknda	2
+rrasubscriptaltknda	2
+fasubscriptaltknda	2
+karasubscriptaltknda	2
+garasubscriptaltknda	2
+ttarasubscriptaltknda	2
+ddarasubscriptaltknda	2
+tarasubscriptaltknda	2
+darasubscriptaltknda	2
+parasubscriptaltknda	2
+bharasubscriptaltknda	2
+tayasubscriptaltknda	2
+mayasubscriptaltknda	2
+% new 2017
+januktasubscriptaltknda	2
+phanuktasubscriptaltknda	2
+class definition end
+
+class	1,2	2,restoresub-knda
+
+lookup end
+
+
+lookup	restoresub-knda	single
+
+kasubscriptaltknda	kasubscriptrightknda
+khasubscriptaltknda	khasubscriptrightknda
+gasubscriptaltknda	gasubscriptrightknda
+ghasubscriptaltknda	ghasubscriptrightknda
+ngasubscriptaltknda	ngasubscriptrightknda
+casubscriptaltknda	casubscriptrightknda
+chasubscriptaltknda	chasubscriptrightknda
+jasubscriptaltknda	jasubscriptrightknda
+jhasubscriptaltknda	jhasubscriptrightknda
+nyasubscriptaltknda	nyasubscriptrightknda
+ttasubscriptaltknda	ttasubscriptrightknda
+tthasubscriptaltknda	tthasubscriptrightknda
+ddasubscriptaltknda	ddasubscriptrightknda
+ddhasubscriptaltknda	ddhasubscriptrightknda
+nnasubscriptaltknda	nnasubscriptrightknda
+tasubscriptaltknda	tasubscriptrightknda
+thasubscriptaltknda	thasubscriptrightknda
+dasubscriptaltknda	dasubscriptrightknda
+dhasubscriptaltknda	dhasubscriptrightknda
+nasubscriptaltknda	nasubscriptrightknda
+pasubscriptaltknda	pasubscriptrightknda
+phasubscriptaltknda	phasubscriptrightknda
+basubscriptaltknda	basubscriptrightknda
+bhasubscriptaltknda	bhasubscriptrightknda
+masubscriptaltknda	masubscriptrightknda
+yasubscriptaltknda	yasubscriptrightknda
+rasubscriptaltknda	rasubscriptrightknda
+lasubscriptaltknda	lasubscriptrightknda
+llasubscriptaltknda	llasubscriptrightknda
+vasubscriptaltknda	vasubscriptrightknda
+shasubscriptaltknda	shasubscriptrightknda
+ssasubscriptaltknda	ssasubscriptrightknda
+sasubscriptaltknda	sasubscriptrightknda
+hasubscriptaltknda	hasubscriptrightknda
+rrasubscriptaltknda	rrasubscriptrightknda
+fasubscriptaltknda	fasubscriptrightknda
+karasubscriptaltknda	karasubscriptknda
+garasubscriptaltknda	garasubscriptknda
+ttarasubscriptaltknda	ttarasubscriptknda
+ddarasubscriptaltknda	ddarasubscriptknda
+tarasubscriptaltknda	tarasubscriptknda
+darasubscriptaltknda	darasubscriptknda
+parasubscriptaltknda	parasubscriptknda
+bharasubscriptaltknda	bharasubscriptknda
+tayasubscriptaltknda	tayasubscriptknda
+mayasubscriptaltknda	mayasubscriptknda
+% new 2017
+januktasubscriptaltknda	januktasubscriptknda
+phanuktasubscriptaltknda	phanuktasubscriptknda
+
+lookup end
+
+
+
+
+
+lookup	fixrara-knda	chained
+
+IgnoreMarks	yes
+
+backtrackclass definition begin
+raknda	1
+ranocrestknda	1
+raviramaknda	1
+rivowelknda	1
+revowelknda	1
+viramaknda	2
+class definition end
+
+class definition begin
+rephknda	1
+rvocalicvowelsignknda	2
+rrvocalicvowelsignknda	3
+ailengthmarkknda	4
+class definition end
+
+lookaheadclass definition begin
+# 1	1
+class definition end
+
+class-chain	1	1		1,fixraraswap-knda
+class-chain	2,1	1		1,fixraraswap-knda
+class-chain	1	2,1		1,fixraraswap2-knda	2,fixrarar-knda
+class-chain	1	3,1		1,fixraraswap2-knda	2,fixrararr-knda
+class-chain	1	4,1		1,fixraralig-knda
+
+lookup end
+
+
+lookup	fixraraswap-knda	single
+
+rephknda	rasubscriptknda
+
+lookup end
+
+
+lookup	fixraraswap2-knda	single
+
+rvocalicvowelsignknda	rasubscriptknda
+rrvocalicvowelsignknda	rasubscriptknda
+
+lookup end
+
+
+lookup	fixrarar-knda	single
+
+rephknda	rvocalicvowelsignaltknda
+
+lookup end
+
+
+lookup	fixrararr-knda	single
+
+rephknda	rrvocalicvowelsignaltknda
+
+lookup end
+
+
+lookup	fixraralig-knda	ligature
+
+rasubscriptlengthmarkknda	ailengthmarkknda	rephknda
+
+lookup end
+
+
+lookup	ralenghtmarkfix-knda	context
+
+glyph	lengthmarkknda,rasubscriptknda	1,swaplm-knda	2,swaprs-knda
+
+lookup end
+
+
+lookup	swaplm-knda	single
+
+lengthmarkknda	rasubscriptknda
+
+lookup end
+
+
+lookup	swaprs-knda	single
+
+rasubscriptknda	lengthmarkknda
+
+lookup end
+
+
+
+
+lookup	splitVedic-knda	multiple
+
+candrabindu_0952knda	candrabinduknda	uni0952
+
+lookup end
