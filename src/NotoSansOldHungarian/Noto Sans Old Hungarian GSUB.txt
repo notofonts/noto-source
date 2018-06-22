@@ -1,0 +1,579 @@
+FontDame GSUB table
+
+
+script table begin
+DFLT	default		0, 2, 4
+hung	default		1, 3, 5
+script table end
+
+
+feature table begin
+0	dlig	3, 4
+1	dlig	3, 4
+2	liga	1, 2
+3	liga	1, 2
+4	ltrm	0
+5	ltrm	0
+
+feature table end
+
+lookup	0	chained
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+inputcoverage definition begin
+uni10C80
+uni10C81
+uni10C82
+uni10C83
+uni10C84
+uni10C85
+uni10C86
+uni10C87
+uni10C88
+uni10C89
+uni10C8A
+uni10C8B
+uni10C8C
+uni10C8D
+uni10C8E
+uni10C8F
+uni10C90
+uni10C91
+uni10C92
+uni10C93
+uni10C94
+uni10C95
+uni10C96
+uni10C97
+uni10C98
+uni10C99
+uni10C9A
+uni10C9B
+uni10C9C
+uni10C9D
+uni10C9E
+uni10C9F
+uni10CA0
+uni10CA1
+uni10CA2
+uni10CA3
+uni10CA4
+uni10CA5
+uni10CA6
+uni10CA7
+uni10CA8
+uni10CA9
+uni10CAA
+uni10CAB
+uni10CAC
+uni10CAD
+uni10CAE
+uni10CAF
+uni10CB0
+uni10CB1
+uni10CB2
+uni10CC0
+uni10CC1
+uni10CC2
+uni10CC3
+uni10CC4
+uni10CC5
+uni10CC6
+uni10CC7
+uni10CC8
+uni10CC9
+uni10CCA
+uni10CCB
+uni10CCC
+uni10CCD
+uni10CCE
+uni10CCF
+uni10CD0
+uni10CD1
+uni10CD2
+uni10CD3
+uni10CD4
+uni10CD5
+uni10CD6
+uni10CD7
+uni10CD8
+uni10CD9
+uni10CDA
+uni10CDB
+uni10CDC
+uni10CDD
+uni10CDE
+uni10CDF
+uni10CE0
+uni10CE1
+uni10CE2
+uni10CE3
+uni10CE4
+uni10CE5
+uni10CE6
+uni10CE7
+uni10CE8
+uni10CE9
+uni10CEA
+uni10CEB
+uni10CEC
+uni10CED
+uni10CEE
+uni10CEF
+uni10CF0
+uni10CF1
+uni10CF2
+coverage definition end
+
+coverage	1,5
+lookup end
+
+
+lookup	1	ligature
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+uni10CC0_10CC2	uni10CC0	ZWJ	uni10CC2
+uni10CC0_10CC7	uni10CC0	ZWJ	uni10CC7
+uni10CC0_10CD6	uni10CC0	ZWJ	uni10CD6
+uni10CC0_10CE2	uni10CC0	ZWJ	uni10CE2
+uni10CC0_10CE6_10CE6	uni10CC0	ZWJ	uni10CE6	ZWJ	uni10CE6
+uni10CC1_10CE2	uni10CC1	ZWJ	uni10CE2
+uni10CC2_10CC0	uni10CC2	ZWJ	uni10CC0
+uni10CC2_10CC9	uni10CC2	ZWJ	uni10CC9
+uni10CC2_10CD0	uni10CC2	ZWJ	uni10CD0
+uni10CC2_10CDB	uni10CC2	ZWJ	uni10CDB
+uni10CC2_10CE6	uni10CC2	ZWJ	uni10CE6
+uni10CC4_10CD3	uni10CC4	ZWJ	uni10CD3
+uni10CC4_10CD4	uni10CC4	ZWJ	uni10CD4
+uni10CC6_10CC0	uni10CC6	ZWJ	uni10CC0
+uni10CC6_10CD0_10CD9	uni10CC6	ZWJ	uni10CD0	ZWJ	uni10CD9
+uni10CC7_10CEA	uni10CC7	ZWJ	uni10CEA
+uni10CCD_10CC0	uni10CCD	ZWJ	uni10CC0
+uni10CCD_10CC9	uni10CCD	ZWJ	uni10CC9
+uni10CCD_10CD0	uni10CCD	ZWJ	uni10CD0
+uni10CCD_10CDB	uni10CCD	ZWJ	uni10CDB
+uni10CCF_10CC0	uni10CCF	ZWJ	uni10CC0
+uni10CCF_10CC9	uni10CCF	ZWJ	uni10CC9
+uni10CCF_10CD0	uni10CCF	ZWJ	uni10CD0
+uni10CCF_10CDB	uni10CCF	ZWJ	uni10CDB
+uni10CD0_10CD2	uni10CD0	ZWJ	uni10CD2
+uni10CD0_10CE6	uni10CD0	ZWJ	uni10CE6
+uni10CD1_10CE2_10CE6	uni10CD1	ZWJ	uni10CE2	ZWJ	uni10CE6
+uni10CD1_10CE6	uni10CD1	ZWJ	uni10CE6
+uni10CD3_10CE5	uni10CD3	ZWJ	uni10CE5
+uni10CD3_10CEE	uni10CD3	ZWJ	uni10CEE
+uni10CD6_10CC0	uni10CD6	ZWJ	uni10CC0
+uni10CD6_10CC1	uni10CD6	ZWJ	uni10CC1
+uni10CD6_10CC9	uni10CD6	ZWJ	uni10CC9
+uni10CD6_10CDB	uni10CD6	ZWJ	uni10CDB
+uni10CD6_10CE6	uni10CD6	ZWJ	uni10CE6
+uni10CD9_10CC0	uni10CD9	ZWJ	uni10CC0
+uni10CD9_10CC4	uni10CD9	ZWJ	uni10CC4
+uni10CD9_10CC7	uni10CD9	ZWJ	uni10CC7
+uni10CD9_10CCE	uni10CD9	ZWJ	uni10CCE
+uni10CD9_10CD0	uni10CD9	ZWJ	uni10CD0
+uni10CD9_10CD3	uni10CD9	ZWJ	uni10CD3
+uni10CD9_10CE0	uni10CD9	ZWJ	uni10CE0
+uni10CD9_10CE6	uni10CD9	ZWJ	uni10CE6
+uni10CDB_10CE2	uni10CDB	ZWJ	uni10CE2
+uni10CE2_10CC0	uni10CE2	ZWJ	uni10CC0
+uni10CE2_10CC9	uni10CE2	ZWJ	uni10CC9
+uni10CE2_10CD0	uni10CE2	ZWJ	uni10CD0
+uni10CE2_10CDB	uni10CE2	ZWJ	uni10CDB
+uni10CE2_10CE6	uni10CE2	ZWJ	uni10CE6
+uni10CE2_10CEA	uni10CE2	ZWJ	uni10CEA
+uni10CE4_10CC0	uni10CE4	ZWJ	uni10CC0
+uni10CE4_10CC9	uni10CE4	ZWJ	uni10CC9
+uni10CE4_10CD0	uni10CE4	ZWJ	uni10CD0
+uni10CE4_10CD3	uni10CE4	ZWJ	uni10CD3
+uni10CE4_10CD8	uni10CE4	ZWJ	uni10CD8
+uni10CE4_10CDB	uni10CE4	ZWJ	uni10CDB
+uni10CE4_10CE0	uni10CE4	ZWJ	uni10CE0
+uni10CE4_10CE6	uni10CE4	ZWJ	uni10CE6
+uni10CE5_10CE6	uni10CE5	ZWJ	uni10CE6
+uni10CE6_10CD0	uni10CE6	ZWJ	uni10CD0
+uni10CE8_10CC0	uni10CE8	ZWJ	uni10CC0
+uni10CEA_10CD6	uni10CEA	ZWJ	uni10CD6
+uni10CEA_10CD8	uni10CEA	ZWJ	uni10CD8
+uni10CEA_10CE2	uni10CEA	ZWJ	uni10CE2
+uni10CEE_10CC0_10CE2	uni10CEE	ZWJ	uni10CC0	ZWJ	uni10CE2
+uni10CEE_10CC0	uni10CEE	ZWJ	uni10CC0
+uni10CEE_10CC1_10CE2	uni10CEE	ZWJ	uni10CC1	ZWJ	uni10CE2
+uni10CEE_10CD8	uni10CEE	ZWJ	uni10CD8
+uni10CEE_10CEE	uni10CEE	ZWJ	uni10CEE
+uni10CEF_10CC0	uni10CEF	ZWJ	uni10CC0
+uni10CEF_10CE2	uni10CEF	ZWJ	uni10CE2
+uni10CEF_10CE6	uni10CEF	ZWJ	uni10CE6
+
+lookup end
+
+
+lookup	2	ligature
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+uni10CC2_10CC0.ltr	uni10CC0.ltr	ZWJ	uni10CC2.ltr
+uni10CC6_10CC0.ltr	uni10CC0.ltr	ZWJ	uni10CC6.ltr
+uni10CCD_10CC0.ltr	uni10CC0.ltr	ZWJ	uni10CCD.ltr
+uni10CCF_10CC0.ltr	uni10CC0.ltr	ZWJ	uni10CCF.ltr
+uni10CD6_10CC0.ltr	uni10CC0.ltr	ZWJ	uni10CD6.ltr
+uni10CD9_10CC0.ltr	uni10CC0.ltr	ZWJ	uni10CD9.ltr
+uni10CE2_10CC0.ltr	uni10CC0.ltr	ZWJ	uni10CE2.ltr
+uni10CE4_10CC0.ltr	uni10CC0.ltr	ZWJ	uni10CE4.ltr
+uni10CE8_10CC0.ltr	uni10CC0.ltr	ZWJ	uni10CE8.ltr
+uni10CEE_10CC0.ltr	uni10CC0.ltr	ZWJ	uni10CEE.ltr
+uni10CEF_10CC0.ltr	uni10CC0.ltr	ZWJ	uni10CEF.ltr
+uni10CD6_10CC1.ltr	uni10CC1.ltr	ZWJ	uni10CD6.ltr
+uni10CC0_10CC2.ltr	uni10CC2.ltr	ZWJ	uni10CC0.ltr
+uni10CD9_10CC4.ltr	uni10CC4.ltr	ZWJ	uni10CD9.ltr
+uni10CC0_10CC7.ltr	uni10CC7.ltr	ZWJ	uni10CC0.ltr
+uni10CD9_10CC7.ltr	uni10CC7.ltr	ZWJ	uni10CD9.ltr
+uni10CC2_10CC9.ltr	uni10CC9.ltr	ZWJ	uni10CC2.ltr
+uni10CCD_10CC9.ltr	uni10CC9.ltr	ZWJ	uni10CCD.ltr
+uni10CCF_10CC9.ltr	uni10CC9.ltr	ZWJ	uni10CCF.ltr
+uni10CD6_10CC9.ltr	uni10CC9.ltr	ZWJ	uni10CD6.ltr
+uni10CE2_10CC9.ltr	uni10CC9.ltr	ZWJ	uni10CE2.ltr
+uni10CE4_10CC9.ltr	uni10CC9.ltr	ZWJ	uni10CE4.ltr
+uni10CD9_10CCE.ltr	uni10CCE.ltr	ZWJ	uni10CD9.ltr
+uni10CC2_10CD0.ltr	uni10CD0.ltr	ZWJ	uni10CC2.ltr
+uni10CCD_10CD0.ltr	uni10CD0.ltr	ZWJ	uni10CCD.ltr
+uni10CCF_10CD0.ltr	uni10CD0.ltr	ZWJ	uni10CCF.ltr
+uni10CD9_10CD0.ltr	uni10CD0.ltr	ZWJ	uni10CD9.ltr
+uni10CE2_10CD0.ltr	uni10CD0.ltr	ZWJ	uni10CE2.ltr
+uni10CE4_10CD0.ltr	uni10CD0.ltr	ZWJ	uni10CE4.ltr
+uni10CE6_10CD0.ltr	uni10CD0.ltr	ZWJ	uni10CE6.ltr
+uni10CD0_10CD2.ltr	uni10CD2.ltr	ZWJ	uni10CD0.ltr
+uni10CC4_10CD3.ltr	uni10CD3.ltr	ZWJ	uni10CC4.ltr
+uni10CD9_10CD3.ltr	uni10CD3.ltr	ZWJ	uni10CD9.ltr
+uni10CE4_10CD3.ltr	uni10CD3.ltr	ZWJ	uni10CE4.ltr
+uni10CC4_10CD4.ltr	uni10CD4.ltr	ZWJ	uni10CC4.ltr
+uni10CC0_10CD6.ltr	uni10CD6.ltr	ZWJ	uni10CC0.ltr
+uni10CEA_10CD6.ltr	uni10CD6.ltr	ZWJ	uni10CEA.ltr
+uni10CE4_10CD8.ltr	uni10CD8.ltr	ZWJ	uni10CE4.ltr
+uni10CEA_10CD8.ltr	uni10CD8.ltr	ZWJ	uni10CEA.ltr
+uni10CEE_10CD8.ltr	uni10CD8.ltr	ZWJ	uni10CEE.ltr
+uni10CC6_10CD0_10CD9.ltr	uni10CD9.ltr	ZWJ	uni10CD0.ltr	ZWJ	uni10CC6.ltr
+uni10CC2_10CDB.ltr	uni10CDB.ltr	ZWJ	uni10CC2.ltr
+uni10CCD_10CDB.ltr	uni10CDB.ltr	ZWJ	uni10CCD.ltr
+uni10CCF_10CDB.ltr	uni10CDB.ltr	ZWJ	uni10CCF.ltr
+uni10CD6_10CDB.ltr	uni10CDB.ltr	ZWJ	uni10CD6.ltr
+uni10CE2_10CDB.ltr	uni10CDB.ltr	ZWJ	uni10CE2.ltr
+uni10CE4_10CDB.ltr	uni10CDB.ltr	ZWJ	uni10CE4.ltr
+uni10CD9_10CE0.ltr	uni10CE0.ltr	ZWJ	uni10CD9.ltr
+uni10CE4_10CE0.ltr	uni10CE0.ltr	ZWJ	uni10CE4.ltr
+uni10CEE_10CC0_10CE2.ltr	uni10CE2.ltr	ZWJ	uni10CC0.ltr	ZWJ	uni10CEE.ltr
+uni10CC0_10CE2.ltr	uni10CE2.ltr	ZWJ	uni10CC0.ltr
+uni10CEE_10CC1_10CE2.ltr	uni10CE2.ltr	ZWJ	uni10CC1.ltr	ZWJ	uni10CEE.ltr
+uni10CC1_10CE2.ltr	uni10CE2.ltr	ZWJ	uni10CC1.ltr
+uni10CDB_10CE2.ltr	uni10CE2.ltr	ZWJ	uni10CDB.ltr
+uni10CEA_10CE2.ltr	uni10CE2.ltr	ZWJ	uni10CEA.ltr
+uni10CEF_10CE2.ltr	uni10CE2.ltr	ZWJ	uni10CEF.ltr
+uni10CD3_10CE5.ltr	uni10CE5.ltr	ZWJ	uni10CD3.ltr
+uni10CC2_10CE6.ltr	uni10CE6.ltr	ZWJ	uni10CC2.ltr
+uni10CD0_10CE6.ltr	uni10CE6.ltr	ZWJ	uni10CD0.ltr
+uni10CD1_10CE6.ltr	uni10CE6.ltr	ZWJ	uni10CD1.ltr
+uni10CD6_10CE6.ltr	uni10CE6.ltr	ZWJ	uni10CD6.ltr
+uni10CD9_10CE6.ltr	uni10CE6.ltr	ZWJ	uni10CD9.ltr
+uni10CD1_10CE2_10CE6.ltr	uni10CE6.ltr	ZWJ	uni10CE2.ltr	ZWJ	uni10CD1.ltr
+uni10CE2_10CE6.ltr	uni10CE6.ltr	ZWJ	uni10CE2.ltr
+uni10CE4_10CE6.ltr	uni10CE6.ltr	ZWJ	uni10CE4.ltr
+uni10CE5_10CE6.ltr	uni10CE6.ltr	ZWJ	uni10CE5.ltr
+uni10CC0_10CE6_10CE6.ltr	uni10CE6.ltr	ZWJ	uni10CE6.ltr	ZWJ	uni10CC0.ltr
+uni10CEF_10CE6.ltr	uni10CE6.ltr	ZWJ	uni10CEF.ltr
+uni10CC7_10CEA.ltr	uni10CEA.ltr	ZWJ	uni10CC7.ltr
+uni10CE2_10CEA.ltr	uni10CEA.ltr	ZWJ	uni10CE2.ltr
+uni10CD3_10CEE.ltr	uni10CEE.ltr	ZWJ	uni10CD3.ltr
+uni10CEE_10CEE.ltr	uni10CEE.ltr	ZWJ	uni10CEE.ltr
+
+lookup end
+
+
+lookup	3	ligature
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+uni10CC0_10CC2	uni10CC0	uni10CC2
+uni10CC0_10CC7	uni10CC0	uni10CC7
+uni10CC0_10CD6	uni10CC0	uni10CD6
+uni10CC0_10CE2	uni10CC0	uni10CE2
+uni10CC0_10CE6_10CE6	uni10CC0	uni10CE6	uni10CE6
+uni10CC1_10CE2	uni10CC1	uni10CE2
+uni10CC2_10CC0	uni10CC2	uni10CC0
+uni10CC2_10CC9	uni10CC2	uni10CC9
+uni10CC2_10CD0	uni10CC2	uni10CD0
+uni10CC2_10CDB	uni10CC2	uni10CDB
+uni10CC2_10CE6	uni10CC2	uni10CE6
+uni10CC4_10CD3	uni10CC4	uni10CD3
+uni10CC4_10CD4	uni10CC4	uni10CD4
+uni10CC6_10CC0	uni10CC6	uni10CC0
+uni10CC6_10CD0_10CD9	uni10CC6	uni10CD0	uni10CD9
+uni10CC7_10CEA	uni10CC7	uni10CEA
+uni10CCD_10CC0	uni10CCD	uni10CC0
+uni10CCD_10CC9	uni10CCD	uni10CC9
+uni10CCD_10CD0	uni10CCD	uni10CD0
+uni10CCD_10CDB	uni10CCD	uni10CDB
+uni10CCF_10CC0	uni10CCF	uni10CC0
+uni10CCF_10CC9	uni10CCF	uni10CC9
+uni10CCF_10CD0	uni10CCF	uni10CD0
+uni10CCF_10CDB	uni10CCF	uni10CDB
+uni10CD0_10CD2	uni10CD0	uni10CD2
+uni10CD0_10CE6	uni10CD0	uni10CE6
+uni10CD1_10CE2_10CE6	uni10CD1	uni10CE2	uni10CE6
+uni10CD1_10CE6	uni10CD1	uni10CE6
+uni10CD3_10CE5	uni10CD3	uni10CE5
+uni10CD3_10CEE	uni10CD3	uni10CEE
+uni10CD6_10CC0	uni10CD6	uni10CC0
+uni10CD6_10CC1	uni10CD6	uni10CC1
+uni10CD6_10CC9	uni10CD6	uni10CC9
+uni10CD6_10CDB	uni10CD6	uni10CDB
+uni10CD6_10CE6	uni10CD6	uni10CE6
+uni10CD9_10CC0	uni10CD9	uni10CC0
+uni10CD9_10CC4	uni10CD9	uni10CC4
+uni10CD9_10CC7	uni10CD9	uni10CC7
+uni10CD9_10CCE	uni10CD9	uni10CCE
+uni10CD9_10CD0	uni10CD9	uni10CD0
+uni10CD9_10CD3	uni10CD9	uni10CD3
+uni10CD9_10CE0	uni10CD9	uni10CE0
+uni10CD9_10CE6	uni10CD9	uni10CE6
+uni10CDB_10CE2	uni10CDB	uni10CE2
+uni10CE2_10CC0	uni10CE2	uni10CC0
+uni10CE2_10CC9	uni10CE2	uni10CC9
+uni10CE2_10CD0	uni10CE2	uni10CD0
+uni10CE2_10CDB	uni10CE2	uni10CDB
+uni10CE2_10CE6	uni10CE2	uni10CE6
+uni10CE2_10CEA	uni10CE2	uni10CEA
+uni10CE4_10CC0	uni10CE4	uni10CC0
+uni10CE4_10CC9	uni10CE4	uni10CC9
+uni10CE4_10CD0	uni10CE4	uni10CD0
+uni10CE4_10CD3	uni10CE4	uni10CD3
+uni10CE4_10CD8	uni10CE4	uni10CD8
+uni10CE4_10CDB	uni10CE4	uni10CDB
+uni10CE4_10CE0	uni10CE4	uni10CE0
+uni10CE4_10CE6	uni10CE4	uni10CE6
+uni10CE5_10CE6	uni10CE5	uni10CE6
+uni10CE6_10CD0	uni10CE6	uni10CD0
+uni10CE8_10CC0	uni10CE8	uni10CC0
+uni10CEA_10CD6	uni10CEA	uni10CD6
+uni10CEA_10CD8	uni10CEA	uni10CD8
+uni10CEA_10CE2	uni10CEA	uni10CE2
+uni10CEE_10CC0_10CE2	uni10CEE	uni10CC0	uni10CE2
+uni10CEE_10CC0	uni10CEE	uni10CC0
+uni10CEE_10CC1_10CE2	uni10CEE	uni10CC1	uni10CE2
+uni10CEE_10CD8	uni10CEE	uni10CD8
+uni10CEE_10CEE	uni10CEE	uni10CEE
+uni10CEF_10CC0	uni10CEF	uni10CC0
+uni10CEF_10CE2	uni10CEF	uni10CE2
+uni10CEF_10CE6	uni10CEF	uni10CE6
+
+lookup end
+
+
+lookup	4	ligature
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+uni10CC2_10CC0.ltr	uni10CC0.ltr	uni10CC2.ltr
+uni10CC6_10CC0.ltr	uni10CC0.ltr	uni10CC6.ltr
+uni10CCD_10CC0.ltr	uni10CC0.ltr	uni10CCD.ltr
+uni10CCF_10CC0.ltr	uni10CC0.ltr	uni10CCF.ltr
+uni10CD6_10CC0.ltr	uni10CC0.ltr	uni10CD6.ltr
+uni10CD9_10CC0.ltr	uni10CC0.ltr	uni10CD9.ltr
+uni10CE2_10CC0.ltr	uni10CC0.ltr	uni10CE2.ltr
+uni10CE4_10CC0.ltr	uni10CC0.ltr	uni10CE4.ltr
+uni10CE8_10CC0.ltr	uni10CC0.ltr	uni10CE8.ltr
+uni10CEE_10CC0.ltr	uni10CC0.ltr	uni10CEE.ltr
+uni10CEF_10CC0.ltr	uni10CC0.ltr	uni10CEF.ltr
+uni10CD6_10CC1.ltr	uni10CC1.ltr	uni10CD6.ltr
+uni10CC0_10CC2.ltr	uni10CC2.ltr	uni10CC0.ltr
+uni10CD9_10CC4.ltr	uni10CC4.ltr	uni10CD9.ltr
+uni10CC0_10CC7.ltr	uni10CC7.ltr	uni10CC0.ltr
+uni10CD9_10CC7.ltr	uni10CC7.ltr	uni10CD9.ltr
+uni10CC2_10CC9.ltr	uni10CC9.ltr	uni10CC2.ltr
+uni10CCD_10CC9.ltr	uni10CC9.ltr	uni10CCD.ltr
+uni10CCF_10CC9.ltr	uni10CC9.ltr	uni10CCF.ltr
+uni10CD6_10CC9.ltr	uni10CC9.ltr	uni10CD6.ltr
+uni10CE2_10CC9.ltr	uni10CC9.ltr	uni10CE2.ltr
+uni10CE4_10CC9.ltr	uni10CC9.ltr	uni10CE4.ltr
+uni10CD9_10CCE.ltr	uni10CCE.ltr	uni10CD9.ltr
+uni10CC2_10CD0.ltr	uni10CD0.ltr	uni10CC2.ltr
+uni10CCD_10CD0.ltr	uni10CD0.ltr	uni10CCD.ltr
+uni10CCF_10CD0.ltr	uni10CD0.ltr	uni10CCF.ltr
+uni10CD9_10CD0.ltr	uni10CD0.ltr	uni10CD9.ltr
+uni10CE2_10CD0.ltr	uni10CD0.ltr	uni10CE2.ltr
+uni10CE4_10CD0.ltr	uni10CD0.ltr	uni10CE4.ltr
+uni10CE6_10CD0.ltr	uni10CD0.ltr	uni10CE6.ltr
+uni10CD0_10CD2.ltr	uni10CD2.ltr	uni10CD0.ltr
+uni10CC4_10CD3.ltr	uni10CD3.ltr	uni10CC4.ltr
+uni10CD9_10CD3.ltr	uni10CD3.ltr	uni10CD9.ltr
+uni10CE4_10CD3.ltr	uni10CD3.ltr	uni10CE4.ltr
+uni10CC4_10CD4.ltr	uni10CD4.ltr	uni10CC4.ltr
+uni10CC0_10CD6.ltr	uni10CD6.ltr	uni10CC0.ltr
+uni10CEA_10CD6.ltr	uni10CD6.ltr	uni10CEA.ltr
+uni10CE4_10CD8.ltr	uni10CD8.ltr	uni10CE4.ltr
+uni10CEA_10CD8.ltr	uni10CD8.ltr	uni10CEA.ltr
+uni10CEE_10CD8.ltr	uni10CD8.ltr	uni10CEE.ltr
+uni10CC6_10CD0_10CD9.ltr	uni10CD9.ltr	uni10CD0.ltr	uni10CC6.ltr
+uni10CC2_10CDB.ltr	uni10CDB.ltr	uni10CC2.ltr
+uni10CCD_10CDB.ltr	uni10CDB.ltr	uni10CCD.ltr
+uni10CCF_10CDB.ltr	uni10CDB.ltr	uni10CCF.ltr
+uni10CD6_10CDB.ltr	uni10CDB.ltr	uni10CD6.ltr
+uni10CE2_10CDB.ltr	uni10CDB.ltr	uni10CE2.ltr
+uni10CE4_10CDB.ltr	uni10CDB.ltr	uni10CE4.ltr
+uni10CD9_10CE0.ltr	uni10CE0.ltr	uni10CD9.ltr
+uni10CE4_10CE0.ltr	uni10CE0.ltr	uni10CE4.ltr
+uni10CEE_10CC0_10CE2.ltr	uni10CE2.ltr	uni10CC0.ltr	uni10CEE.ltr
+uni10CC0_10CE2.ltr	uni10CE2.ltr	uni10CC0.ltr
+uni10CEE_10CC1_10CE2.ltr	uni10CE2.ltr	uni10CC1.ltr	uni10CEE.ltr
+uni10CC1_10CE2.ltr	uni10CE2.ltr	uni10CC1.ltr
+uni10CDB_10CE2.ltr	uni10CE2.ltr	uni10CDB.ltr
+uni10CEA_10CE2.ltr	uni10CE2.ltr	uni10CEA.ltr
+uni10CEF_10CE2.ltr	uni10CE2.ltr	uni10CEF.ltr
+uni10CD3_10CE5.ltr	uni10CE5.ltr	uni10CD3.ltr
+uni10CC2_10CE6.ltr	uni10CE6.ltr	uni10CC2.ltr
+uni10CD0_10CE6.ltr	uni10CE6.ltr	uni10CD0.ltr
+uni10CD1_10CE6.ltr	uni10CE6.ltr	uni10CD1.ltr
+uni10CD6_10CE6.ltr	uni10CE6.ltr	uni10CD6.ltr
+uni10CD9_10CE6.ltr	uni10CE6.ltr	uni10CD9.ltr
+uni10CD1_10CE2_10CE6.ltr	uni10CE6.ltr	uni10CE2.ltr	uni10CD1.ltr
+uni10CE2_10CE6.ltr	uni10CE6.ltr	uni10CE2.ltr
+uni10CE4_10CE6.ltr	uni10CE6.ltr	uni10CE4.ltr
+uni10CE5_10CE6.ltr	uni10CE6.ltr	uni10CE5.ltr
+uni10CC0_10CE6_10CE6.ltr	uni10CE6.ltr	uni10CE6.ltr	uni10CC0.ltr
+uni10CEF_10CE6.ltr	uni10CE6.ltr	uni10CEF.ltr
+uni10CC7_10CEA.ltr	uni10CEA.ltr	uni10CC7.ltr
+uni10CE2_10CEA.ltr	uni10CEA.ltr	uni10CE2.ltr
+uni10CD3_10CEE.ltr	uni10CEE.ltr	uni10CD3.ltr
+uni10CEE_10CEE.ltr	uni10CEE.ltr	uni10CEE.ltr
+
+lookup end
+
+
+lookup	5	single
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+uni10C80	uni10C80.ltr
+uni10C81	uni10C81.ltr
+uni10C82	uni10C82.ltr
+uni10C83	uni10C83.ltr
+uni10C84	uni10C84.ltr
+uni10C85	uni10C85.ltr
+uni10C86	uni10C86.ltr
+uni10C87	uni10C87.ltr
+uni10C88	uni10C88.ltr
+uni10C89	uni10C89.ltr
+uni10C8A	uni10C8A.ltr
+uni10C8B	uni10C8B.ltr
+uni10C8C	uni10C8C.ltr
+uni10C8D	uni10C8D.ltr
+uni10C8E	uni10C8E.ltr
+uni10C8F	uni10C8F.ltr
+uni10C90	uni10C90.ltr
+uni10C91	uni10C91.ltr
+uni10C92	uni10C92.ltr
+uni10C93	uni10C93.ltr
+uni10C94	uni10C94.ltr
+uni10C95	uni10C95.ltr
+uni10C96	uni10C96.ltr
+uni10C97	uni10C97.ltr
+uni10C98	uni10C98.ltr
+uni10C99	uni10C99.ltr
+uni10C9A	uni10C9A.ltr
+uni10C9B	uni10C9B.ltr
+uni10C9C	uni10C9C.ltr
+uni10C9D	uni10C9D.ltr
+uni10C9E	uni10C9E.ltr
+uni10C9F	uni10C9F.ltr
+uni10CA0	uni10CA0.ltr
+uni10CA1	uni10CA1.ltr
+uni10CA2	uni10CA2.ltr
+uni10CA3	uni10CA3.ltr
+uni10CA4	uni10CA4.ltr
+uni10CA5	uni10CA5.ltr
+uni10CA6	uni10CA6.ltr
+uni10CA7	uni10CA7.ltr
+uni10CA8	uni10CA8.ltr
+uni10CA9	uni10CA9.ltr
+uni10CAA	uni10CAA.ltr
+uni10CAB	uni10CAB.ltr
+uni10CAC	uni10CAC.ltr
+uni10CAD	uni10CAD.ltr
+uni10CAE	uni10CAE.ltr
+uni10CAF	uni10CAF.ltr
+uni10CB0	uni10CB0.ltr
+uni10CB1	uni10CB1.ltr
+uni10CB2	uni10CB2.ltr
+uni10CC0	uni10CC0.ltr
+uni10CC1	uni10CC1.ltr
+uni10CC2	uni10CC2.ltr
+uni10CC3	uni10CC3.ltr
+uni10CC4	uni10CC4.ltr
+uni10CC5	uni10CC5.ltr
+uni10CC6	uni10CC6.ltr
+uni10CC7	uni10CC7.ltr
+uni10CC8	uni10CC8.ltr
+uni10CC9	uni10CC9.ltr
+uni10CCA	uni10CCA.ltr
+uni10CCB	uni10CCB.ltr
+uni10CCC	uni10CCC.ltr
+uni10CCD	uni10CCD.ltr
+uni10CCE	uni10CCE.ltr
+uni10CCF	uni10CCF.ltr
+uni10CD0	uni10CD0.ltr
+uni10CD1	uni10CD1.ltr
+uni10CD2	uni10CD2.ltr
+uni10CD3	uni10CD3.ltr
+uni10CD4	uni10CD4.ltr
+uni10CD5	uni10CD5.ltr
+uni10CD6	uni10CD6.ltr
+uni10CD7	uni10CD7.ltr
+uni10CD8	uni10CD8.ltr
+uni10CD9	uni10CD9.ltr
+uni10CDA	uni10CDA.ltr
+uni10CDB	uni10CDB.ltr
+uni10CDC	uni10CDC.ltr
+uni10CDD	uni10CDD.ltr
+uni10CDE	uni10CDE.ltr
+uni10CDF	uni10CDF.ltr
+uni10CE0	uni10CE0.ltr
+uni10CE1	uni10CE1.ltr
+uni10CE2	uni10CE2.ltr
+uni10CE3	uni10CE3.ltr
+uni10CE4	uni10CE4.ltr
+uni10CE5	uni10CE5.ltr
+uni10CE6	uni10CE6.ltr
+uni10CE7	uni10CE7.ltr
+uni10CE8	uni10CE8.ltr
+uni10CE9	uni10CE9.ltr
+uni10CEA	uni10CEA.ltr
+uni10CEB	uni10CEB.ltr
+uni10CEC	uni10CEC.ltr
+uni10CED	uni10CED.ltr
+uni10CEE	uni10CEE.ltr
+uni10CEF	uni10CEF.ltr
+uni10CF0	uni10CF0.ltr
+uni10CF1	uni10CF1.ltr
+uni10CF2	uni10CF2.ltr
+
+lookup end
+
