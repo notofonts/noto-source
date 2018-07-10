@@ -89,7 +89,8 @@ function glyphs_from_plist() {
         */NotoSansDevanagariUI-MM.plist|\
         */NotoSansTamilUI-MM.plist|\
         */NotoSansBengaliUI-MM.plist|\
-        */NotoSansMalayalamUI-MM.plist)
+        */NotoSansMalayalamUI-MM.plist|\
+        */NotoSansKannadaUI-MM.plist)
             echo "${glyphs/UI/}"
             ;;
         *)
