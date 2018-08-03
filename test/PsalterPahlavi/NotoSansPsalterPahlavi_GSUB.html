@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Noto Psalter Pahlavi</title>
+
+    <meta charset="UTF-8" http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+       <script type="text/javascript">
+
+         function sliderChange() {
+            var slider = document.getElementById("fontSizeSlider");
+            var sizeInput = document.getElementById("fontSizeInput");
+            sizeInput.value = slider.value;
+            sizeInput.oninput();
+         }
+
+         function changeSize() {
+              var selector = document.getElementById('fontSizeInput');
+              var selectedSize = selector.value + "px";
+              samples = document.getElementsByClassName("sample");
+              for (var i = 0; i < samples.length; i++) {
+                samples[i].style.fontSize = selectedSize;
+            }
+        }
+
+        function printPrep() {
+            var header = document.getElementById("header");
+            header.style.display = "none";
+            window.print();
+            header.style.display = "block";
+         }
+
+        function init(reset) {
+            var sizeInput = document.getElementById("fontSizeInput");
+            var fontSizeSlider = document.getElementById("fontSizeSlider");
+            fontSizeSlider.value = 32;
+            sizeInput.value = 32;
+            sizeInput.oninput();
+        }
+    </script>
+
+</head>
+
+<style>
+
+#header {
+		top:0;
+		left:0;
+		position: fixed;
+		margin: 0px;
+		width: 100%;
+		background: #fff;
+	}
+
+/*#wrapper {*/
+    /*white-space: pre;*/
+/*}*/
+
+#fontSizeInput {
+    width: 40px;
+}
+
+input[type=range] {
+    /*removes default webkit styles*/
+    -webkit-appearance: none;
+
+    position: relative;
+    top: 50%;
+    transform: perspective(1px) translateY(30%);
+
+    /*fix for FF unable to apply focus style bug */
+    border: 1px solid white;
+
+    /*required for proper track sizing in FF*/
+    width: 400px;
+}
+input[type=range]::-webkit-slider-runnable-track {
+    width: 400px;
+    height: 5px;
+    background: #ddd;
+    border: none;
+    border-radius: 3px;
+}
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    border: none;
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    background: red;
+    margin-top: -4px;
+}
+input[type=range]:focus {
+    outline: none;
+}
+input[type=range]:focus::-webkit-slider-runnable-track {
+    background: #ccc;
+}
+
+input[type=range]::-moz-range-track {
+    width: 400px;
+    height: 5px;
+    background: #ddd;
+    border: none;
+    border-radius: 3px;
+}
+input[type=range]::-moz-range-thumb {
+    border: none;
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    background: red;
+}
+
+/*hide the outline behind the border*/
+input[type=range]:-moz-focusring{
+    outline: 1px solid white;
+    outline-offset: -1px;
+}
+
+rt, rp {font-size: 20%;} /* = Webkit value */
+
+
+@font-face {
+	font-family: "Noto Sans Psalter Pahlavi";
+	src: url("fonts/NotoSansPsalterPahlavi-Regular.otf");
+	font-weight: 400;
+	font-style: normal;
+}
+
+ruby {
+    ruby-position:under;
+    ruby-align: center;
+}
+
+.desc {
+    font-family: "Noto Sans", sans-serif;
+    font-size: 24px;
+    line-height: inherit;
+}
+
+.sample
+{
+	font-family: "Noto Sans Psalter Pahlavi", "Noto Sans", sans-serif;
+	font-size: 48px;
+	line-height: 160%;
+	font-weight: 400;
+	font-variant-ligatures: discretionary-ligatures;
+	moz-font-feature-settings: "dlig";
+	webkit-font-feature-settings: "dlig";
+	font-feature-settings: "dlig";
+}
+</style>
+
+<body onload="init()">
+    <div id="header" style="
+	padding-top:8px;
+	z-index:150;
+	color: #E4E4E4;
+	">
+    <span>
+    <input id="fontSizeSlider" type="range" name="amountRange" min="6" max="600" value="48" oninput="sliderChange()" />
+    <input id="fontSizeInput" type="number" name="amountInput" min="6" max="600" value="48" oninput="changeSize()" />
+        <button onclick="printPrep()">Print</button>
+
+        </span>
+    </div>
+
+<div id="wrapper">
+<br><br>
+
+<span class="sample" contenteditable="true" onselect="textSelected()">
+Noto Sans Psalter Pahlavi GSUB<br>
+<br>
+<table>
+
+	<tbody>
+		<td><b>Characters</b></td> <td></td> <td></td> <td></td> <td></td>
+
+		<tr>
+		<td></td> <td>Nominal&nbsp;</td> <td>Initial&nbsp;</td> <td>Medial&nbsp;</td> <td>Final</td>
+	</tr>
+	<tr>
+		<td>Dual-Joining</td> <td></td> <td></td> <td></td> <td></td>
+	</tr>
+	<tr>
+		<Td>Aleph</Td> <Td>𐮀</Td> <Td>𐮀ـ</Td> <Td>ـ𐮀ـ</Td> <Td>ـ𐮀</Td>
+	</Tr>
+	<Tr>
+		<Td>Gimel</Td> <Td>𐮂</Td> <Td>𐮂ـ</Td> <Td>ـ𐮂ـ</Td> <Td>ـ𐮂</Td>
+	</Tr>
+	<Tr>
+		<Td>Zayin</Td> <Td>𐮆</Td> <Td>𐮆ـ</Td> <Td>ـ𐮆ـ</Td> <Td>ـ𐮆</Td>
+	</Tr>
+	<Tr>
+		<Td>Heth</Td> <Td>𐮇</Td> <Td>𐮇ـ</Td> <Td>ـ𐮇ـ</Td> <Td>ـ𐮇</Td>
+	</Tr>
+	<Tr>
+		<Td>Yodh</Td> <Td>𐮈</Td> <Td>𐮈ـ</Td> <Td>ـ𐮈ـ</Td> <Td>ـ𐮈</Td>
+	</Tr>
+	<Tr>
+		<Td>Lamedh</Td> <Td>𐮊</Td> <Td>𐮊ـ</Td> <Td>ـ𐮊ـ</Td> <Td>ـ𐮊</Td>
+	</Tr>
+	<Tr>
+		<Td>Mem-Qoph</Td> <Td>𐮋</Td> <Td>𐮋ـ</Td> <Td>ـ𐮋ـ</Td> <Td>ـ𐮋</Td>
+	</Tr>
+	<Tr>
+		<Td>Samekh</Td> <Td>𐮍</Td> <Td>𐮍ـ</Td> <Td>ـ𐮍ـ</Td> <Td>ـ𐮍</Td>
+	</Tr>
+	<Tr>
+		<Td>Shin</Td> <Td>𐮐</Td> <Td>𐮐ـ</Td> <Td>ـ𐮐ـ</Td> <Td>ـ𐮐</Td>
+	</Tr>
+	<tr>
+		<td></td> <td></td> <td></td> <td></td> <td></td>
+	</tr>
+	<tr>
+		<td>Right-Joining<br>
+	</tr>
+	<tr>
+		<Td>Beth</Td> <Td>𐮁</Td> <Td></Td> <Td></Td> <Td>ـ𐮁</Td>
+	</Tr>
+	<Tr>
+		<Td>Daleth</Td> <Td>𐮃</Td> <Td></Td> <Td></Td> <Td>ـ𐮃</Td>
+	</Tr>
+	<Tr>
+		<Td>He</Td> <Td>𐮄</Td> <Td></Td> <Td></Td> <Td>ـ𐮄</Td>
+	</Tr>
+	<Tr>
+		<Td>Waw-Ayin-Resh&nbsp;&nbsp;&nbsp;</Td> <Td>𐮅</Td> <Td></Td> <Td></Td> <Td>ـ𐮅</Td>
+	</Tr>
+	<Tr>
+		<Td>Kaph</Td> <Td>𐮉</Td> <Td></Td> <Td></Td> <Td>ـ𐮉</Td>
+	</Tr>
+	<Tr>
+		<Td>Nun</Td> <Td>𐮌</Td> <Td></Td> <Td></Td> <Td>ـ𐮌</Td>
+	</Tr>
+	<Tr>
+		<Td>Pe</Td> <Td>𐮎</Td> <Td></Td> <Td></Td> <Td>ـ𐮎</Td>
+	</Tr>
+	<Tr>
+		<Td>Sadhe</Td> <Td>𐮏</Td> <Td></Td> <Td></Td> <Td>ـ𐮏</Td>
+	</Tr>
+	<Tr>
+		<Td>Taw</Td> <Td>𐮑</Td> <Td></Td> <Td></Td> <Td>ـ𐮑</Td>
+	</tr>
+	<tr>
+		<td></td> <td></td> <td></td> <td></td> <td></td>
+	</tr>
+	<tr>
+		<td><b>Numbers</b></td> <td></td> <td></td> <td></td> <td></td>
+
+		<td></td> <td></td> <td></td> <td></td> <td></td>
+	</tr>
+	<tr>
+		<td>Dual-joining </td> <td></td> <td></td> <td></td> <td></td>
+	</tr>
+	<tr>
+		<Td>Ten</Td> <Td>𐮭</Td> <Td>𐮭ـ</Td> <Td>ـ𐮭ـ</Td> <Td>ـ𐮭</Td>
+	</Tr>
+	<Tr>
+		<Td>Twenty</Td> <Td>𐮮</Td> <Td>𐮮ـ</Td> <Td>ـ𐮮ـ</Td> <Td>ـ𐮮</Td>
+	</Tr>
+	<Tr>
+		<Td></Td> <Td></Td> <Td></Td> <Td></Td> <Td></Td>
+	</tr>
+	<tr>
+		<td>Right-joining with Alt </td>
+	</tr>
+	</tbody>
+</table>
+<table>
+	<thead>
+	<tr>
+		<td>&nbsp;&nbsp;&nbsp;</td> <td>Nominal&nbsp;&nbsp;&nbsp;</td> <td>Right Final&nbsp;&nbsp;&nbsp;</td> <td>Right medial&nbsp;&nbsp;&nbsp;</td> <td>Right Nominal </td>
+	</tr>
+	</thead>
+	<tbody>
+	<tr>
+		<Td>One</Td> <Td>𐮩</Td> <Td>ـ𐮩</Td> <Td>𐮮𐮩𐮬</Td> <Td>𐮩𐮪𐮯</Td>
+	</Tr>
+	<Tr>
+		<Td>Two</Td> <Td>𐮪</Td> <Td>ـ𐮪</Td> <Td>𐮮𐮪𐮬</Td> <Td>𐮪𐮪𐮯</Td>
+	</Tr>
+	<Tr>
+		<Td>Three&nbsp;&nbsp;&nbsp;</Td> <Td>𐮫</Td> <Td>ـ𐮫</Td> <Td>𐮮𐮫𐮬</Td> <Td>𐮫𐮪𐮯</Td>
+	</Tr>
+	<Tr>
+		<Td>Four</Td> <Td>𐮬</Td> <Td>ـ𐮬</Td> <Td>𐮮𐮬𐮬</Td> <Td>𐮬𐮪𐮯<Br></Td>
+	</Tr>
+	</tbody>
+</table>
+<br>
+<table>
+	<tr>
+		<td>3</td> <td>&nbsp;</td> <td></td> <td>𐮫</td>
+	</tr>
+	<tr>
+		<td>96</td> <td>&nbsp;</td> <td></td> <td>𐮮𐮮𐮮𐮮𐮭𐮫𐮫</td>
+	</tr>
+	<tr>
+		<td>98</td> <td>&nbsp;</td> <td></td> <td>𐮮𐮮𐮮𐮮𐮭𐮬𐮬</td>
+	</tr>
+	<tr>
+		<td>99</td> <td>&nbsp;</td> <td></td> <td>𐮮𐮮𐮮𐮮𐮭𐮫𐮫𐮫</td>
+	</tr>
+	<tr>
+		<td>122</td> <td>&nbsp;</td> <td></td> <td>𐮯𐮅𐮮𐮪</td>
+	</tr>
+	<tr>
+		<td>123</td> <td>&nbsp;</td> <td></td> <td>𐮯𐮅𐮮𐮫</td>
+	</tr>
+	<tr>
+		<td>124</td> <td>&nbsp;</td> <td></td> <td>𐮯𐮅𐮮𐮬</td>
+	</tr>
+	<tr>
+		<td>125</td> <td>&nbsp;</td> <td></td> <td>𐮯𐮅𐮮𐮫𐮪</td>
+	</tr>
+	<tr>
+		<td>126</td> <td>&nbsp;</td> <td></td> <td>𐮯𐮅𐮮𐮫𐮫</td>
+	</tr>
+	<tr>
+		<td>127</td> <td>&nbsp;</td> <td></td> <td>𐮯𐮅𐮮𐮬𐮫</td>
+	</tr>
+	<tr>
+		<td>128</td> <td>&nbsp;</td> <td></td> <td>𐮯𐮅𐮮𐮬𐮬</td>
+	</tr>
+	<tr>
+		<td>129</td> <td>&nbsp;</td> <td></td> <td>𐮯𐮅𐮮𐮑𐮐𐮀</td>
+	</tr>
+	<tr>
+		<td>130</td> <td>&nbsp;</td> <td></td> <td>𐮯𐮅𐮮𐮭</td>
+	</tr>
+	<tr>
+		<td>131</td> <td>&nbsp;</td> <td></td> <td>𐮯𐮅𐮮𐮭𐮩</td>
+	</tr>
+	<tr>
+		<td>132</td> <td>&nbsp;</td> <td></td> <td>𐮯𐮅𐮮𐮭𐮪</td>
+	</tr>
+	<tr>
+		<td>134</td> <td>&nbsp;</td> <td></td> <td>𐮯𐮅𐮮𐮭𐮬</td>
+	</tr>
+	<tr>
+		<td>135</td> <td>&nbsp;</td> <td></td> <td>𐮯𐮅𐮮𐮭𐮫𐮪</td>
+	</tr>
+	<tr>
+		<td>136</td> <td>&nbsp;</td> <td></td> <td>𐮯𐮅𐮮𐮭𐮐𐮑𐮀</td>
+	</tr>
+	<tr>
+		<td>507</td> <td>&nbsp;</td> <td></td> <td>𐮫𐮪𐮯𐮬𐮫</td>
+	</tr>
+</table>
+
+‫   ‬<br>
+</span>
+</div>
+</body>
+</html>
