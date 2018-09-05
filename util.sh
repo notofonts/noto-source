@@ -19,7 +19,7 @@
 #     Output formats, as separate strings.
 ################################################################################
 function build_glyphs() {
-    fontmake -g "$1" -o "${@:2}" -i
+    fontmake -g "$1" -o "${@:2}" -i --overlaps-backend pathops
 }
 
 ################################################################################
@@ -34,15 +34,15 @@ function build_plist() {
     family="$(family_from_plist "$1")"
     if [[ -n "$family" ]]; then
         fontmake -g "$glyphs" -o "${@:2}" --mti-source "$1"\
-            --no-production-names --family-name "$family"
+            --no-production-names --family-name "$family" --overlaps-backend pathops
         fontmake -g "$glyphs" -o "${@:2}" -i --interpolate-binary-layout\
-            --no-production-names --family-name "$family"
+            --no-production-names --family-name "$family" --overlaps-backend pathops
     else
         fontmake -g "$glyphs" -o "${@:2}" --mti-source "$1"\
-            --no-production-names
+            --no-production-names --overlaps-backend pathops
         if should_interpolate "$1"; then
             fontmake -g "$glyphs" -o "${@:2}" -i --interpolate-binary-layout\
-                --no-production-names
+                --no-production-names --overlaps-backend pathops
         fi
     fi
 }
