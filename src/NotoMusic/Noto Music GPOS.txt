@@ -1,0 +1,1386 @@
+FontDame GPOS table
+
+EM	1000
+
+
+script table begin
+DFLT	default		0, 1, 2, 3
+grek	default		0, 1, 2, 3
+musc	default		0, 1, 2, 3
+script table end
+
+
+feature table begin
+0	curs	1
+1	kern	0, 5
+2	mark	9, 10, 11, 12, 13
+3	mkmk	22, 23, 24
+
+feature table end
+
+lookup	0	chained
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+MarkAttachmentType	1
+
+class definition begin
+u1D129	1
+u1D13A	1
+u1D13B	1
+u1D13C	1
+u1D13D	1
+u1D13E	1
+u1D13F	1
+u1D140	1
+u1D141	1
+u1D142	1
+u1D143	2
+u1D144	2
+u1D145	2
+u1D146	2
+u1D147	2
+u1D148	2
+u1D149	2
+u1D14A	2
+u1D14B	2
+u1D14C	2
+u1D14D	2
+u1D14E	2
+u1D14F	2
+u1D150	2
+u1D151	2
+u1D152	2
+u1D153	2
+u1D154	2
+u1D155	2
+u1D156	2
+u1D157	2
+u1D158	2
+null_notehead	2
+u1D15A	2
+u1D15B	2
+u1D15C	2
+u1D15D	2
+u1D1B9	2
+u1D1BA	2
+u1D165	3
+u1D166	3
+u1D165_b	3
+u1D166_b	3
+u1D165_short	3
+u1D165_ext	3
+u1D165_ext2	3
+u1D165_short2	3
+u1D166_short	3
+u1D166_ext	3
+u1D166_ext2	3
+u1D166_short2	3
+u1D165_short.alt	3
+u1D166_short.alt	3
+u1D15E	4
+u1D15F	4
+u1D160	4
+u1D161	4
+u1D162	4
+u1D163	4
+u1D164	4
+u1D1BB	4
+u1D1BC	4
+u1D1BD	4
+u1D1BE	4
+u1D1BF	4
+u1D1C0	4
+class definition end
+
+lookaheadclass definition begin
+u1D16D	1
+u1D16E	2
+u1D16F	3
+u1D170	3
+u1D171	3
+u1D172	3
+class definition end
+
+class-chain		1	1, 1, 1	1, 3	1, 3	1, 3
+class-chain		1	1, 1	1, 3	1, 3
+class-chain		1	1	1, 3
+class-chain		2, 3	2, 1, 1, 1	2, 2	2, 2	2, 2
+class-chain		2, 3	3, 1, 1, 1	2, 2	2, 2	2, 2
+class-chain		2, 3	2, 1, 1	2, 2	2, 2
+class-chain		2, 3	3, 1, 1	2, 2	2, 2
+class-chain		2, 3	2, 1	2, 2
+class-chain		2, 3	3, 1	2, 2
+class-chain		2, 3	1, 1, 1	2, 2	2, 2	2, 2
+class-chain		2, 3	1, 1	2, 2	2, 2
+class-chain		2, 3	1	2, 2
+class-chain		2	1, 1, 1	1, 2	1, 2	1, 2
+class-chain		2	1, 1	1, 2	1, 2
+class-chain		2	1	1, 2
+class-chain		4	1, 1, 1	1, 4	1, 4	1, 4
+class-chain		4	1, 1	1, 4	1, 4
+class-chain		4	1	1, 4
+
+lookup end
+
+
+lookup	1	cursive
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	yes
+
+exit	uni25CC	432,1009
+exit	u1D143	350,1009
+exit	u1D144	349,1009
+exit	u1D145	365,1009
+exit	u1D146	351,1009
+exit	u1D147	349,1009
+exit	u1D148	349,1009
+exit	u1D149	349,1009
+exit	u1D14A	321,1009
+exit	u1D14B	321,1009
+exit	u1D14C	321,1009
+exit	u1D14D	321,1009
+exit	u1D14E	349,1009
+exit	u1D14F	349,1009
+exit	u1D150	321,1009
+exit	u1D151	321,1009
+exit	u1D152	348,1009
+exit	u1D153	348,1009
+exit	u1D154	349,1009
+exit	u1D155	349,1009
+exit	u1D156	563,1009
+exit	u1D157	347,1009
+exit	u1D158	347,1009
+exit	null_notehead	347,1009
+exit	u1D15A	311,1009
+exit	u1D15B	311,1009
+exit	u1D15C	663,1009
+exit	u1D15D	464,1009
+exit	u1D1B9	359,1009
+exit	u1D1BA	359,1009
+entry	u1D165_b	27,1009
+entry	u1D166_b	27,1009	13
+entry	u1D165_short	27,1009	1
+entry	u1D165_ext	27,1009	1
+entry	u1D165_ext2	27,1009	1
+entry	u1D165_short2	27,1009	1
+entry	u1D166_short	27,1009	13
+entry	u1D166_ext	27,1009	13
+entry	u1D166_ext2	27,1009	13
+entry	u1D166_short2	27,1009	13
+entry	u1D165_short.alt	166,1009
+entry	u1D166_short.alt	166,1009
+
+lookup end
+
+
+lookup	2	single
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+x advance	u1D143	145
+x advance	u1D144	145
+x advance	u1D145	145
+x advance	u1D146	145
+x advance	u1D147	145
+x advance	u1D148	145
+x advance	u1D149	145
+x advance	u1D14A	145
+x advance	u1D14B	145
+x advance	u1D14C	145
+x advance	u1D14D	145
+x advance	u1D14E	145
+x advance	u1D14F	145
+x advance	u1D150	145
+x advance	u1D151	145
+x advance	u1D152	145
+x advance	u1D153	145
+x advance	u1D154	145
+x advance	u1D155	145
+x advance	u1D156	145
+x advance	u1D157	145
+x advance	u1D158	145
+x advance	null_notehead	145
+x advance	u1D15A	145
+x advance	u1D165	145
+x advance	u1D166	145
+x advance	u1D1B9	145
+x advance	u1D1BA	145
+x advance	u1D165_b	145
+x advance	u1D166_b	145
+x advance	u1D165_short	145
+x advance	u1D165_ext	145
+x advance	u1D165_ext2	145
+x advance	u1D165_short2	145
+x advance	u1D166_short	145
+x advance	u1D166_ext	145
+x advance	u1D166_ext2	145
+x advance	u1D166_short2	145
+x advance	u1D165_short.alt	145
+x advance	u1D166_short.alt	145
+
+lookup end
+
+
+lookup	3	single
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+x advance	u1D129	145
+x advance	u1D13A	145
+x advance	u1D13B	145
+x advance	u1D13C	145
+x advance	u1D13D	145
+x advance	u1D13E	145
+x advance	u1D13F	145
+x advance	u1D140	145
+x advance	u1D141	145
+x advance	u1D142	145
+x advance	u1D165	145
+x advance	u1D166	145
+x advance	u1D165_b	145
+x advance	u1D166_b	145
+x advance	u1D165_short	145
+x advance	u1D165_ext	145
+x advance	u1D165_ext2	145
+x advance	u1D165_short2	145
+x advance	u1D166_short	145
+x advance	u1D166_ext	145
+x advance	u1D166_ext2	145
+x advance	u1D166_short2	145
+x advance	u1D165_short.alt	145
+x advance	u1D166_short.alt	145
+
+lookup end
+
+
+lookup	4	single
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+x advance	u1D15E	145
+x advance	u1D15F	145
+x advance	u1D160	145
+x advance	u1D161	145
+x advance	u1D162	145
+x advance	u1D163	145
+x advance	u1D164	145
+x advance	u1D165	145
+x advance	u1D166	145
+x advance	u1D1BB	145
+x advance	u1D1BC	145
+x advance	u1D1BD	145
+x advance	u1D1BE	145
+x advance	u1D1BF	145
+x advance	u1D1C0	145
+x advance	u1D165_b	145
+x advance	u1D166_b	145
+x advance	u1D165_short	145
+x advance	u1D165_ext	145
+x advance	u1D165_ext2	145
+x advance	u1D165_short2	145
+x advance	u1D166_short	145
+x advance	u1D166_ext	145
+x advance	u1D166_ext2	145
+x advance	u1D166_short2	145
+x advance	u1D165_short.alt	145
+x advance	u1D166_short.alt	145
+
+lookup end
+
+
+lookup	5	context
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+class definition begin
+u1D167	1
+u1D168	1
+u1D169	1
+u1D167_low	1
+u1D168_low	1
+u1D169_low	1
+u1D143	2
+u1D144	2
+u1D145	2
+u1D146	2
+u1D147	2
+u1D148	2
+u1D149	2
+u1D14A	2
+u1D14B	2
+u1D14C	2
+u1D14D	2
+u1D14E	2
+u1D14F	2
+u1D150	2
+u1D151	2
+u1D152	2
+u1D153	2
+u1D154	2
+u1D155	2
+u1D156	2
+u1D157	2
+u1D158	2
+null_notehead	2
+u1D15A	2
+u1D15B	2
+u1D15C	2
+u1D15D	2
+u1D1B9	2
+u1D1BA	2
+u1D165_b	3
+u1D166_b	3
+u1D165_short	3
+u1D165_ext	3
+u1D165_ext2	3
+u1D165_short2	3
+u1D166_short	3
+u1D166_ext	3
+u1D166_ext2	3
+u1D166_short2	3
+u1D165_short.alt	3
+u1D166_short.alt	3
+u1D16E	4
+u1D16F	5
+u1D170	5
+u1D171	5
+u1D172	5
+nullmark	6
+class definition end
+
+class	2, 6, 3, 1, 4	3, 7
+class	2, 6, 3, 1, 5	3, 8
+class	2, 6, 3, 1	3, 6
+class	2, 3, 4	2, 7
+class	2, 3, 5	2, 8
+
+lookup end
+
+
+lookup	6	single
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+x advance	u1D165_b	146
+x advance	u1D166_b	146
+x advance	u1D165_short	146
+x advance	u1D165_ext	146
+x advance	u1D165_ext2	146
+x advance	u1D165_short2	146
+x advance	u1D166_short	146
+x advance	u1D166_ext	146
+x advance	u1D166_ext2	146
+x advance	u1D166_short2	146
+x advance	u1D165_short.alt	7
+x advance	u1D166_short.alt	7
+
+lookup end
+
+
+lookup	7	single
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+x advance	u1D165_b	249
+x advance	u1D166_b	249
+x advance	u1D165_short	249
+x advance	u1D165_ext	249
+x advance	u1D165_ext2	249
+x advance	u1D165_short2	249
+x advance	u1D166_short	249
+x advance	u1D166_ext	249
+x advance	u1D166_ext2	249
+x advance	u1D166_short2	249
+x advance	u1D165_short.alt	108
+x advance	u1D166_short.alt	108
+
+lookup end
+
+
+lookup	8	single
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+x advance	u1D165_b	259
+x advance	u1D166_b	259
+x advance	u1D165_short	259
+x advance	u1D165_ext	259
+x advance	u1D165_ext2	259
+x advance	u1D165_short2	259
+x advance	u1D166_short	259
+x advance	u1D166_ext	259
+x advance	u1D166_ext2	259
+x advance	u1D166_short2	259
+x advance	u1D165_short.alt	120
+x advance	u1D166_short.alt	120
+
+lookup end
+
+
+lookup	9	mark to base
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+mark	u1D16E	0	14,1028
+mark	u1D16F	0	14,1028
+mark	u1D170	0	13,1028
+mark	u1D171	0	13,1028
+mark	u1D172	0	13,1028
+mark	u1D185	0	268,726
+mark	u1D186	0	268,745
+mark	u1D187	0	248,749
+mark	u1D188	0	199,770
+mark	u1D189	0	200,749
+mark	u1D1AA	0	169,749
+mark	u1D1AB	0	128,710
+mark	u1D1AC	0	113,796
+mark	u1D1AD	0	171,588
+mark	u1D242	0	-350,551
+mark	u1D243	0	-350,551
+mark	u1D244	0	-350,551
+mark	u1D242.alt	0	-350,551
+mark	u1D243.alt	0	-350,551
+mark	u1D244.alt	0	-350,551
+base	uni25CC	0	297,567
+base	musicalnotedbl	0	365,566
+base	uni266C	0	364,566
+base	u1D143	0	201,304
+base	u1D144	0	201,306
+base	u1D145	0	207,313
+base	u1D146	0	200,305
+base	u1D147	0	201,305
+base	u1D148	0	200,293
+base	u1D149	0	200,293
+base	u1D14A	0	195,293
+base	u1D14B	0	195,293
+base	u1D14C	0	176,273
+base	u1D14D	0	166,273
+base	u1D14E	0	200,293
+base	u1D14F	0	200,293
+base	u1D150	0	195,293
+base	u1D151	0	195,293
+base	u1D152	0	199,305
+base	u1D153	0	199,305
+base	u1D154	0	199,303
+base	u1D155	0	199,303
+base	u1D156	0	306,410
+base	u1D157	0	198,291
+base	u1D158	0	197,291
+base	null_notehead	0	198,291
+base	u1D15A	0	180,830
+base	u1D15B	0	180,830
+base	u1D15C	0	353,323
+base	u1D15D	0	253,282
+base	u1D15E	0	338,1028
+base	u1D15F	0	338,1028
+base	u1D160	0	339,1028
+base	u1D161	0	334,1028
+base	u1D162	0	334,1173
+base	u1D163	0	334,1350
+base	u1D164	0	334,1540
+base	u1D1B9	0	206,311
+base	u1D1BA	0	206,311
+base	u1D1BB	0	206,1028
+base	u1D1BC	0	206,1028
+base	u1D1BD	0	206,1028
+base	u1D1BE	0	206,1028
+base	u1D1BF	0	206,1028
+base	u1D1C0	0	206,1028
+base	u1D200	0	442,733
+base	u1D201	0	403,733
+base	u1D202	0	346,733
+base	u1D203	0	389,733
+base	u1D204	0	381,733
+base	u1D205	0	383,733
+base	u1D206	0	294,733
+base	u1D207	0	321,733
+base	u1D208	0	365,733
+base	u1D209	0	274,733
+base	u1D20A	0	365,733
+base	u1D20B	0	431,733
+base	u1D20C	0	458,733
+base	u1D20D	0	313,733
+base	u1D20E	0	392,733
+base	u1D20F	0	363,733
+base	u1D210	0	444,733
+base	u1D211	0	383,733
+base	u1D212	0	351,733
+base	u1D213	0	269,733
+base	u1D214	0	286,733
+base	u1D215	0	242,733
+base	u1D216	0	311,733
+base	u1D217	0	328,733
+base	u1D218	0	377,733
+base	u1D219	0	353,733
+base	u1D21A	0	338,733
+base	u1D21B	0	283,733
+base	u1D21C	0	343,733
+base	u1D21D	0	442,733
+base	u1D21E	0	403,733
+base	u1D21F	0	389,733
+base	u1D220	0	381,733
+base	u1D221	0	294,733
+base	u1D222	0	442,733
+base	u1D223	0	399,733
+base	u1D224	0	399,733
+base	u1D225	0	383,733
+base	u1D226	0	343,733
+base	u1D227	0	436,733
+base	u1D228	0	278,733
+base	u1D229	0	383,733
+base	u1D22A	0	242,733
+base	u1D22B	0	242,733
+base	u1D22C	0	242,733
+base	u1D22D	0	378,733
+base	u1D22E	0	242,733
+base	u1D22F	0	403,733
+base	u1D230	0	259,733
+base	u1D231	0	411,733
+base	u1D232	0	310,733
+base	u1D233	0	383,733
+base	u1D234	0	383,733
+base	u1D235	0	300,733
+base	u1D236	0	383,733
+base	u1D237	0	383,733
+base	u1D238	0	417,733
+base	u1D239	0	417,733
+base	u1D23A	0	363,733
+base	u1D23B	0	363,733
+base	u1D23C	0	323,733
+base	u1D23D	0	363,733
+base	u1D23E	0	363,733
+base	u1D23F	0	274,733
+base	u1D240	0	381,733
+base	u1D241	0	381,733
+base	u1D245	0	351,733
+base	u1D165_b	0	14,1028
+base	u1D166_b	0	14,1028
+base	u1D165_short	0	14,1028
+base	u1D165_ext	0	14,1028
+base	u1D165_ext2	0	14,1028
+base	u1D165_short2	0	14,1028
+base	u1D166_short	0	14,1028
+base	u1D166_ext	0	14,1028
+base	u1D166_ext2	0	14,1028
+base	u1D166_short2	0	14,1028
+base	u1D165_short.alt	0	14,1028
+base	u1D166_short.alt	0	14,1028
+
+lookup end
+
+
+lookup	10	mark to base
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+mark	u1D167	0	198,289
+mark	u1D168	0	198,289
+mark	u1D169	0	198,289
+mark	u1D167_low	0	198,397
+mark	u1D168_low	0	198,397
+mark	u1D169_low	0	198,397
+base	uni25CC	0	297,-46
+base	uni2669	0	194,583
+base	musicalnote	0	194,583
+base	u1D143	0	201,289
+base	u1D144	0	198,289
+base	u1D145	0	207,289
+base	u1D146	0	200,289
+base	u1D147	0	201,289
+base	u1D148	0	200,289
+base	u1D149	0	200,289
+base	u1D14A	0	195,289
+base	u1D14B	0	195,289
+base	u1D14C	0	176,289
+base	u1D14D	0	166,289
+base	u1D14E	0	200,289
+base	u1D14F	0	200,289
+base	u1D150	0	195,289
+base	u1D151	0	195,289
+base	u1D152	0	199,289
+base	u1D153	0	199,289
+base	u1D154	0	199,289
+base	u1D155	0	199,289
+base	u1D156	0	306,289
+base	u1D157	0	198,289
+base	u1D158	0	197,289
+base	null_notehead	0	198,289
+base	u1D15A	0	180,734
+base	u1D15B	0	180,734
+base	u1D15C	0	353,320
+base	u1D15D	0	253,279
+base	u1D160	0	339,289
+base	u1D161	0	334,289
+base	u1D162	0	334,289
+base	u1D163	0	334,289
+base	u1D164	0	334,289
+base	u1D1B9	0	206,309
+base	u1D1BA	0	206,309
+base	u1D1BD	0	206,289
+base	u1D1BE	0	206,289
+base	u1D1BF	0	206,289
+base	u1D1C0	0	206,289
+base	u1D165_b	0	13,289
+base	u1D166_b	0	13,289
+base	u1D165_short	0	13,289
+base	u1D165_ext	0	13,289
+base	u1D165_ext2	0	13,289
+base	u1D165_short2	0	13,289
+base	u1D166_short	0	14,289
+base	u1D166_ext	0	14,289
+base	u1D166_ext2	0	14,289
+base	u1D166_short2	0	14,289
+base	u1D165_short.alt	0	13,289
+base	u1D166_short.alt	0	14,289
+
+lookup end
+
+
+lookup	11	mark to base
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+mark	u1D17B	0	248,0
+mark	u1D17C	0	97,0
+mark	u1D17D	0	194,0
+mark	u1D17E	0	101,0
+mark	u1D17F	0	198,0
+mark	u1D180	0	198,0
+mark	u1D181	0	248,0
+mark	u1D182	0	199,0
+mark	u1D18A	0	294,0
+mark	u1D18B	0	294,0
+base	uni25CC	0	297,-20
+base	uni2669	0	136,-5
+base	musicalnote	0	136,-5
+base	musicalnotedbl	0	276,-31
+base	uni266C	0	312,-31
+base	u1D143	0	200,-38
+base	u1D144	0	198,-34
+base	u1D145	0	207,-42
+base	u1D146	0	200,-35
+base	u1D147	0	200,-35
+base	u1D148	0	200,-20
+base	u1D149	0	200,-20
+base	u1D14A	0	185,-20
+base	u1D14B	0	185,-20
+base	u1D14C	0	186,-20
+base	u1D14D	0	186,-20
+base	u1D14E	0	200,-20
+base	u1D14F	0	200,-20
+base	u1D150	0	185,-20
+base	u1D151	0	185,-20
+base	u1D152	0	200,-20
+base	u1D153	0	200,-20
+base	u1D154	0	200,-20
+base	u1D155	0	200,-20
+base	u1D156	0	306,-123
+base	u1D157	0	198,-25
+base	u1D158	0	197,-25
+base	null_notehead	0	198,-25
+base	u1D15A	0	180,-20
+base	u1D15B	0	180,-20
+base	u1D15C	0	359,-50
+base	u1D15D	0	259,-12
+base	u1D15E	0	198,-25
+base	u1D15F	0	198,-25
+base	u1D160	0	198,-25
+base	u1D161	0	198,-25
+base	u1D162	0	198,-25
+base	u1D163	0	198,-25
+base	u1D164	0	198,-25
+base	u1D1B9	0	203,-41
+base	u1D1BA	0	203,-41
+base	u1D1BB	0	203,-41
+base	u1D1BC	0	203,-41
+base	u1D1BD	0	203,-41
+base	u1D1BE	0	203,-41
+base	u1D1BF	0	203,-41
+base	u1D1C0	0	203,-41
+base	u1D165_b	0	-121,-36
+base	u1D166_b	0	-121,-36
+base	u1D165_short	0	-121,-36
+base	u1D165_ext	0	-121,-36
+base	u1D165_ext2	0	-121,-36
+base	u1D165_short2	0	-121,-36
+base	u1D166_short	0	-121,-36
+base	u1D166_ext	0	-121,-36
+base	u1D166_ext2	0	-121,-36
+base	u1D166_short2	0	-121,-36
+base	u1D165_short.alt	0	13,-46
+base	u1D166_short.alt	0	14,-46
+
+lookup end
+
+
+lookup	12	mark to base
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+mark	u1D16D	0	-21,278
+base	uni25CC	0	597,178
+base	uni2669	0	282,114
+base	musicalnote	0	409,163
+base	musicalnotedbl	0	586,69
+base	uni266C	0	586,114
+base	u1D129	0	1099,388
+base	u1D13A	0	782,388
+base	u1D13B	0	782,388
+base	u1D13C	0	782,388
+base	u1D13D	0	350,645
+base	u1D13E	0	350,645
+base	u1D13F	0	418,767
+base	u1D140	0	489,870
+base	u1D141	0	559,996
+base	u1D142	0	628,1120
+base	u1D143	0	398,154
+base	u1D144	0	398,154
+base	u1D145	0	417,154
+base	u1D146	0	402,154
+base	u1D147	0	400,154
+base	u1D148	0	378,154
+base	u1D149	0	378,154
+base	u1D14A	0	348,154
+base	u1D14B	0	348,154
+base	u1D14C	0	372,154
+base	u1D14D	0	371,154
+base	u1D14E	0	378,154
+base	u1D14F	0	378,154
+base	u1D150	0	372,154
+base	u1D151	0	372,154
+base	u1D152	0	399,147
+base	u1D153	0	399,147
+base	u1D154	0	390,147
+base	u1D155	0	390,147
+base	u1D156	0	614,147
+base	u1D157	0	397,154
+base	u1D158	0	397,154
+base	null_notehead	0	398,154
+base	u1D15A	0	362,154
+base	u1D15B	0	362,154
+base	u1D15C	0	714,154
+base	u1D15D	0	515,154
+base	u1D15E	0	398,154
+base	u1D15F	0	398,154
+base	u1D160	0	577,306
+base	u1D161	0	621,238
+base	u1D162	0	621,238
+base	u1D163	0	621,238
+base	u1D164	0	621,238
+base	u1D1B9	0	408,154
+base	u1D1BA	0	408,154
+base	u1D1BB	0	408,154
+base	u1D1BC	0	408,154
+base	u1D1BD	0	444,295
+base	u1D1BE	0	444,295
+base	u1D1BF	0	494,228
+base	u1D1C0	0	494,228
+base	u1D165_b	0	80,154
+base	u1D166_b	0	80,154
+base	u1D165_short	0	80,154
+base	u1D165_ext	0	80,154
+base	u1D165_ext2	0	80,154
+base	u1D165_short2	0	80,154
+base	u1D166_short	0	80,154
+base	u1D166_ext	0	80,154
+base	u1D166_ext2	0	80,154
+base	u1D166_short2	0	80,154
+base	u1D165_short.alt	0	215,154
+base	u1D166_short.alt	0	215,154
+
+lookup end
+
+
+lookup	13	context
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+class definition begin
+u1D17B	1
+u1D17C	1
+u1D17D	1
+u1D17E	1
+u1D17F	1
+u1D180	1
+u1D181	1
+u1D182	1
+u1D18A	1
+u1D18B	1
+u1D144	2
+u1D145	3
+u1D156	4
+u1D14A	5
+u1D14B	5
+u1D14C	5
+u1D14D	5
+u1D150	5
+u1D151	5
+u1D15A	6
+u1D15B	6
+u1D15C	7
+u1D165_ext	8
+u1D166_ext	8
+u1D165_ext2	9
+u1D166_ext2	9
+u1D165_b	10
+u1D166_b	10
+u1D16E	11
+u1D16F	11
+u1D170	11
+u1D171	11
+u1D172	11
+u1D15D	12
+class definition end
+
+class	2, 8, 11, 1	4, 14
+class	2, 8, 1	3, 14
+class	3, 8, 11, 1	4, 15
+class	3, 8, 1	3, 15
+class	4, 8, 11, 1	4, 16	4, 17
+class	4, 8, 1	3, 16	3, 17
+class	5, 9, 11, 1	4, 18
+class	5, 9, 1	3, 18
+class	5, 10, 11, 1	4, 18
+class	5, 10, 1	3, 18
+class	6, 10, 11, 1	4, 19
+class	6, 10, 1	3, 19
+class	7, 10, 11, 1	4, 20
+class	7, 10, 1	3, 20
+class	12, 8, 11, 1	4, 21
+class	12, 8, 1	3, 21
+
+lookup end
+
+
+lookup	14	single
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+x placement	u1D17B	-2
+x placement	u1D17C	-2
+x placement	u1D17D	-2
+x placement	u1D17E	-2
+x placement	u1D17F	-2
+x placement	u1D180	-2
+x placement	u1D181	-2
+x placement	u1D182	-2
+x placement	u1D18A	-2
+x placement	u1D18B	-2
+
+lookup end
+
+
+lookup	15	single
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+x placement	u1D17B	-10
+x placement	u1D17C	-10
+x placement	u1D17D	-10
+x placement	u1D17E	-10
+x placement	u1D17F	-10
+x placement	u1D180	-10
+x placement	u1D181	-10
+x placement	u1D182	-10
+x placement	u1D18A	-10
+x placement	u1D18B	-10
+
+lookup end
+
+
+lookup	16	single
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+x placement	u1D17B	-108
+x placement	u1D17C	-108
+x placement	u1D17D	-108
+x placement	u1D17E	-108
+x placement	u1D17F	-108
+x placement	u1D180	-108
+x placement	u1D181	-108
+x placement	u1D182	-108
+x placement	u1D18A	-108
+x placement	u1D18B	-108
+
+lookup end
+
+
+lookup	17	single
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+y placement	u1D17B	-88
+y placement	u1D17C	-88
+y placement	u1D17D	-88
+y placement	u1D17E	-88
+y placement	u1D17F	-88
+y placement	u1D180	-88
+y placement	u1D181	-88
+y placement	u1D182	-88
+y placement	u1D18A	-88
+y placement	u1D18B	-88
+
+lookup end
+
+
+lookup	18	single
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+x placement	u1D17B	13
+x placement	u1D17C	13
+x placement	u1D17D	13
+x placement	u1D17E	13
+x placement	u1D17F	13
+x placement	u1D180	13
+x placement	u1D181	13
+x placement	u1D182	13
+x placement	u1D18A	13
+x placement	u1D18B	13
+
+lookup end
+
+
+lookup	19	single
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+x placement	u1D17B	18
+x placement	u1D17C	18
+x placement	u1D17D	18
+x placement	u1D17E	18
+x placement	u1D17F	18
+x placement	u1D180	18
+x placement	u1D181	18
+x placement	u1D182	18
+x placement	u1D18A	18
+x placement	u1D18B	18
+
+lookup end
+
+
+lookup	20	single
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+x placement	u1D17B	-156
+x placement	u1D17C	-156
+x placement	u1D17D	-156
+x placement	u1D17E	-156
+x placement	u1D17F	-156
+x placement	u1D180	-156
+x placement	u1D181	-156
+x placement	u1D182	-156
+x placement	u1D18A	-156
+x placement	u1D18B	-156
+
+lookup end
+
+
+lookup	21	single
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+x placement	u1D17B	-57
+x placement	u1D17C	-57
+x placement	u1D17D	-57
+x placement	u1D17E	-57
+x placement	u1D17F	-57
+x placement	u1D180	-57
+x placement	u1D181	-57
+x placement	u1D182	-57
+x placement	u1D18A	-57
+x placement	u1D18B	-57
+
+lookup end
+
+
+lookup	22	mark to mark
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+mark	u1D185	0	267,726
+mark	u1D186	0	267,745
+mark	u1D187	0	247,749
+mark	u1D188	0	198,770
+mark	u1D189	0	199,749
+mark	u1D1AA	0	169,749
+mark	u1D1AB	0	128,710
+mark	u1D1AC	0	112,796
+mark	u1D1AD	0	171,588
+base	u1D167	0	198,1028
+base	u1D168	0	198,1028
+base	u1D169	0	198,1028
+base	u1D16E	0	13,1028
+base	u1D16F	0	13,1028
+base	u1D170	0	13,1173
+base	u1D171	0	13,1350
+base	u1D172	0	13,1540
+base	u1D167_low	0	198,1137
+base	u1D168_low	0	198,1137
+base	u1D169_low	0	198,1137
+
+lookup end
+
+
+lookup	23	mark to mark
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+MarkAttachmentType	1
+
+mark	u1D16D	0	-22,278
+base	u1D16D	0	124,278
+base	u1D16E	0	251,306
+base	u1D16F	0	300,238
+base	u1D170	0	301,237
+base	u1D171	0	300,238
+base	u1D172	0	300,238
+
+lookup end
+
+
+lookup	24	context
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+class definition begin
+u1D185	1
+u1D186	1
+u1D187	1
+u1D188	1
+u1D189	1
+u1D1AA	1
+u1D1AB	1
+u1D1AC	1
+u1D1AD	1
+u1D162	2
+u1D170	2
+u1D163	3
+u1D171	3
+u1D164	4
+u1D172	4
+u1D167_low	5
+u1D168_low	5
+u1D169_low	5
+u1D17B	6
+u1D17C	6
+u1D17D	6
+u1D17E	6
+u1D17F	6
+u1D180	6
+u1D181	6
+u1D182	6
+u1D18A	6
+u1D18B	6
+u1D167	7
+u1D168	7
+u1D169	7
+u1D143	8
+u1D144	8
+u1D145	8
+u1D146	8
+u1D147	8
+u1D148	8
+u1D149	8
+u1D14A	8
+u1D14B	8
+u1D14C	8
+u1D14D	8
+u1D14E	8
+u1D14F	8
+u1D150	8
+u1D151	8
+u1D152	8
+u1D153	8
+u1D154	8
+u1D155	8
+u1D156	8
+u1D157	8
+u1D158	8
+null_notehead	8
+u1D15A	8
+u1D15B	8
+u1D15C	8
+u1D15D	8
+u1D1B9	8
+u1D1BA	8
+u1D16D	9
+class definition end
+
+class	2, 7, 9, 9, 9, 6, 5, 1	8, 25
+class	2, 7, 9, 9, 6, 5, 1	7, 25
+class	2, 7, 9, 6, 5, 1	6, 25
+class	2, 7, 6, 9, 9, 9, 1	7, 25
+class	2, 7, 6, 9, 9, 1	6, 25
+class	2, 7, 6, 9, 1	5, 25
+class	2, 7, 9, 9, 9, 6, 1	7, 25
+class	2, 7, 9, 9, 6, 1	6, 25
+class	2, 7, 9, 6, 1	5, 25
+class	2, 7, 9, 9, 9, 1	6, 25
+class	2, 7, 9, 9, 1	5, 25
+class	2, 7, 9, 1	4, 25
+class	2, 7, 6, 1	4, 25
+class	2, 6, 9, 9, 9, 1	6, 25
+class	2, 6, 9, 9, 1	5, 25
+class	2, 6, 9, 1	4, 25
+class	2, 6, 1	3, 25
+class	2, 5, 9, 9, 9, 6, 1	7, 25
+class	2, 5, 9, 9, 6, 1	6, 25
+class	2, 5, 9, 6, 1	5, 25
+class	2, 5, 9, 9, 9, 1	6, 25
+class	2, 5, 9, 9, 1	5, 25
+class	2, 5, 9, 1	4, 25
+class	2, 5, 6, 9, 9, 9, 1	7, 25
+class	2, 5, 6, 9, 9, 1	6, 25
+class	2, 5, 6, 9, 1	5, 25
+class	2, 5, 6, 1	4, 25
+class	2, 5, 1	3, 25
+class	2, 9, 9, 9, 6, 1	6, 25
+class	2, 9, 9, 6, 1	5, 25
+class	2, 9, 6, 1	4, 25
+class	2, 9, 9, 9, 1	5, 25
+class	2, 9, 9, 1	4, 25
+class	2, 9, 1	3, 25
+class	2, 7, 1	3, 25
+class	3, 7, 9, 9, 9, 6, 5, 1	8, 26
+class	3, 7, 9, 9, 6, 5, 1	7, 26
+class	3, 7, 9, 6, 5, 1	6, 26
+class	3, 7, 6, 9, 9, 9, 1	7, 26
+class	3, 7, 6, 9, 9, 1	6, 26
+class	3, 7, 6, 9, 1	5, 26
+class	3, 7, 9, 9, 9, 6, 1	7, 26
+class	3, 7, 9, 9, 6, 1	6, 26
+class	3, 7, 9, 6, 1	5, 26
+class	3, 7, 9, 9, 9, 1	6, 26
+class	3, 7, 9, 9, 1	5, 26
+class	3, 7, 9, 1	4, 26
+class	3, 7, 6, 1	4, 26
+class	3, 6, 9, 9, 9, 1	6, 26
+class	3, 6, 9, 9, 1	5, 26
+class	3, 6, 9, 1	4, 26
+class	3, 6, 1	3, 26
+class	3, 5, 9, 9, 9, 6, 1	7, 26
+class	3, 5, 9, 9, 6, 1	6, 26
+class	3, 5, 9, 6, 1	5, 26
+class	3, 5, 9, 9, 9, 1	6, 26
+class	3, 5, 9, 9, 1	5, 26
+class	3, 5, 9, 1	4, 26
+class	3, 5, 6, 9, 9, 9, 1	7, 26
+class	3, 5, 6, 9, 9, 1	6, 26
+class	3, 5, 6, 9, 1	5, 26
+class	3, 5, 6, 1	4, 26
+class	3, 5, 1	3, 26
+class	3, 9, 9, 9, 6, 1	6, 26
+class	3, 9, 9, 6, 1	5, 26
+class	3, 9, 6, 1	4, 26
+class	3, 9, 9, 9, 1	5, 26
+class	3, 9, 9, 1	4, 26
+class	3, 9, 1	3, 26
+class	3, 7, 1	3, 26
+class	4, 7, 6, 9, 9, 9, 1	7, 27
+class	4, 7, 6, 9, 9, 1	6, 27
+class	4, 7, 6, 9, 1	5, 27
+class	4, 7, 9, 9, 9, 6, 1	7, 27
+class	4, 7, 9, 9, 6, 1	6, 27
+class	4, 7, 9, 6, 1	5, 27
+class	4, 7, 9, 9, 9, 1	6, 27
+class	4, 7, 9, 9, 1	5, 27
+class	4, 7, 9, 1	4, 27
+class	4, 7, 6, 1	4, 27
+class	4, 6, 9, 9, 9, 1	6, 27
+class	4, 6, 9, 9, 1	5, 27
+class	4, 6, 9, 1	4, 27
+class	4, 6, 1	3, 27
+class	4, 5, 9, 9, 9, 6, 1	7, 27
+class	4, 5, 9, 9, 6, 1	6, 27
+class	4, 5, 9, 6, 1	5, 27
+class	4, 5, 9, 9, 9, 1	6, 27
+class	4, 5, 9, 9, 1	5, 27
+class	4, 5, 9, 1	4, 27
+class	4, 5, 6, 9, 9, 9, 1	7, 27
+class	4, 5, 6, 9, 9, 1	6, 27
+class	4, 5, 6, 9, 1	5, 27
+class	4, 5, 6, 1	4, 27
+class	4, 5, 1	3, 27
+class	4, 9, 9, 9, 6, 1	6, 27
+class	4, 9, 9, 6, 1	5, 27
+class	4, 9, 6, 1	4, 27
+class	4, 9, 9, 9, 1	5, 27
+class	4, 9, 9, 1	4, 27
+class	4, 9, 1	3, 27
+class	4, 7, 1	3, 27
+class	5, 7, 9, 6, 5, 1	6, 27
+class	6, 7, 9, 9, 6, 5, 1	7, 27
+class	7, 7, 9, 9, 9, 6, 5, 1	8, 27
+class	8, 7, 9, 9, 9, 6, 5, 1	8, 28
+class	8, 7, 9, 9, 6, 5, 1	7, 28
+class	8, 7, 9, 6, 5, 1	6, 28
+class	8, 7, 6, 9, 9, 9, 1	7, 28
+class	8, 7, 6, 9, 9, 1	6, 28
+class	8, 7, 6, 9, 1	5, 28
+class	8, 7, 9, 9, 9, 6, 1	7, 28
+class	8, 7, 9, 9, 6, 1	6, 28
+class	8, 7, 9, 6, 1	5, 28
+class	8, 7, 9, 9, 9, 1	6, 28
+class	8, 7, 9, 9, 1	5, 28
+class	8, 7, 9, 1	4, 28
+class	8, 7, 6, 1	4, 28
+
+lookup end
+
+
+lookup	25	single
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+y placement	u1D185	145
+y placement	u1D186	145
+y placement	u1D187	145
+y placement	u1D188	145
+y placement	u1D189	145
+y placement	u1D1AA	145
+y placement	u1D1AB	145
+y placement	u1D1AC	145
+y placement	u1D1AD	145
+
+lookup end
+
+
+lookup	26	single
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+y placement	u1D185	321
+y placement	u1D186	321
+y placement	u1D187	321
+y placement	u1D188	321
+y placement	u1D189	321
+y placement	u1D1AA	321
+y placement	u1D1AB	321
+y placement	u1D1AC	321
+y placement	u1D1AD	321
+
+lookup end
+
+
+lookup	27	single
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+y placement	u1D185	511
+y placement	u1D186	511
+y placement	u1D187	511
+y placement	u1D188	511
+y placement	u1D189	511
+y placement	u1D1AA	511
+y placement	u1D1AB	511
+y placement	u1D1AC	511
+y placement	u1D1AD	511
+
+lookup end
+
+
+lookup	28	single
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+y placement	u1D185	739
+y placement	u1D186	739
+y placement	u1D187	739
+y placement	u1D188	739
+y placement	u1D189	739
+y placement	u1D1AA	739
+y placement	u1D1AB	739
+y placement	u1D1AC	739
+y placement	u1D1AD	739
+
+lookup end
+
