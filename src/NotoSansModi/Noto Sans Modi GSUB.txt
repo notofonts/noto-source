@@ -1,0 +1,902 @@
+FontDame GSUB table
+
+
+script table begin
+modi	default		0, 1, 2, 3
+script table end
+
+
+feature table begin
+0	calt	5, 6, 12, 21, 22
+1	half	3
+2	pres	11
+3	rphf	0
+
+feature table end
+
+lookup	0	chained
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+class definition begin
+Ra	1
+Virama	2
+class definition end
+
+lookaheadclass definition begin
+uni200D	1
+class definition end
+
+class-chain		1, 2	1	1, 1
+class-chain		1, 2		1, 2
+
+lookup end
+
+
+lookup	1	single
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+space	space
+
+lookup end
+
+
+lookup	2	ligature
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+Repha	Ra	Virama
+
+lookup end
+
+
+lookup	3	context
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+class definition begin
+Ka	1
+Kha	1
+Ga	1
+Gha	1
+Nga	1
+Ca	1
+Cha	1
+Ja	1
+Jha	1
+Nya	1
+Tta	1
+Ttha	1
+Dda	1
+Ddha	1
+Nna	1
+Ta	1
+Tha	1
+Da	1
+Dha	1
+Na	1
+Pa	1
+Pha	1
+Ba	1
+Bha	1
+Ma	1
+Ya	1
+La	1
+Va	1
+Sha	1
+Ssa	1
+Sa	1
+Ha	1
+Lla	1
+Virama	2
+Ra	3
+class definition end
+
+class	1, 2, 3	1, 1
+class	1, 2	1, 4
+
+lookup end
+
+
+lookup	4	ligature
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+Ka.half	Ka	Virama
+Kha.half	Kha	Virama
+Ga.half	Ga	Virama
+Gha.half	Gha	Virama
+Nga.half	Nga	Virama
+Ca.half	Ca	Virama
+Cha.half	Cha	Virama
+Ja.half	Ja	Virama
+Jha.half	Jha	Virama
+Nya.half	Nya	Virama
+Tta.half	Tta	Virama
+Ttha.half	Ttha	Virama
+Dda.half	Dda	Virama
+Ddha.half	Ddha	Virama
+Nna.half	Nna	Virama
+Ta.half	Ta	Virama
+Tha.half	Tha	Virama
+Da.half	Da	Virama
+Dha.half	Dha	Virama
+Na.half	Na	Virama
+Pa.half	Pa	Virama
+Pha.half	Pha	Virama
+Ba.half	Ba	Virama
+Bha.half	Bha	Virama
+Ma.half	Ma	Virama
+Ya.half	Ya	Virama
+La.half	La	Virama
+Va.half	Va	Virama
+Sha.half	Sha	Virama
+Ssa.half	Ssa	Virama
+Sa.half	Sa	Virama
+Ha.half	Ha	Virama
+Lla.half	Lla	Virama
+KSsa.half	KSsa	Virama
+
+lookup end
+
+
+lookup	5	chained
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+backtrackclass definition begin
+Kha	1
+Nga	1
+Ca	1
+Cha	1
+Ddha	1
+Tha	1
+Da	1
+Dha	1
+Pa	1
+Sa	1
+Lla	2
+Ka	3
+Repha	4
+Ta.half	4
+Ma.half	4
+Sa.half	4
+KSsa.half	4
+Ka.half	4
+Kha.half	4
+Ga.half	4
+Gha.half	4
+Nga.half	4
+Cha.half	4
+Ja.half	4
+Tta.half	4
+Ttha.half	4
+Dda.half	4
+Ddha.half	4
+Nna.half	4
+Na.half	4
+Pa.half	4
+Pha.half	4
+Bha.half	4
+Ya.half	4
+Sha.half	4
+Ssa.half	4
+Ha.half	4
+Lla.half	4
+Ca.half	4
+Ba.half	4
+La.half	4
+Va.half	4
+Jha.half	4
+Nya.half	4
+Tha.half	4
+Da.half	4
+Dha.half	4
+class definition end
+
+class definition begin
+I_dv	1
+II_dv	2
+AA_dv	3
+O_dv	4
+AU_dv	4
+La	10
+Ka	11
+Kha	11
+Ja	11
+Jha	11
+Nya	11
+Tta	11
+Ttha	11
+Na	11
+Pha	11
+Ba	11
+Bha	11
+Va	11
+Sa	11
+Ha	11
+Ra	12
+Da	13
+Dha	13
+Dda	14
+Ma	15
+Ya	15
+Tha	16
+Pa	16
+Ca	17
+class definition end
+
+class-chain	1	1		1, 7
+class-chain	2	1		1, 8
+class-chain	1	2		1, 7
+class-chain	2	2		1, 8
+class-chain		10, 1		1, 13
+class-chain		10, 2		1, 13
+class-chain		10, 4		2, 9	1, 13
+class-chain		10, 3		1, 13
+class-chain		11, 4		2, 9	1, 13
+class-chain		11, 3		1, 13
+class-chain		12, 4		1, 14
+class-chain	3	12, 3		1, 1
+class-chain		12, 3		1, 14
+class-chain		13, 4		1, 15
+class-chain		13, 3		1, 15
+class-chain		14, 1		1, 14	2, 17
+class-chain		14, 2		1, 14	2, 16
+class-chain		15, 4		2, 9	1, 13
+class-chain		15, 3		1, 13
+class-chain	4	15		1, 14
+class-chain		16, 4		1, 14
+class-chain	3	16, 3		1, 1
+class-chain		16, 3		1, 14
+class-chain	4	16		1, 14
+class-chain		17, 3		2, 14
+class-chain		17, 4		2, 10
+
+lookup end
+
+
+lookup	6	chained
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+backtrackclass definition begin
+Ca.alt	3
+Jha.alt	3
+Nya.alt	3
+Ba.alt	3
+La.alt	3
+Va.alt	3
+Sa.alt	3
+class definition end
+
+class definition begin
+Ca	1
+Jha	1
+Nya	1
+Tha	1
+Pa	1
+Ba	1
+Ya	1
+La	1
+Va	1
+Sa	1
+Ka	2
+Ja	2
+Na	2
+Pha	2
+Ra	2
+Ga	3
+Ma	4
+Da	5
+Ha	5
+Kha	6
+Ta	6
+Dha	7
+U_dv	10
+UU_dv	11
+VocR_dv	12
+class definition end
+
+lookaheadclass definition begin
+U_dv	1
+UU_dv	2
+class definition end
+
+class-chain		1	2	1, 14
+class-chain		1	1	1, 14
+class-chain		2, 11		1, 13
+class-chain		2, 10		1, 13
+class-chain		2, 12		1, 13
+class-chain		3, 11		1, 13
+class-chain		4	1	1, 14
+class-chain		4, 11		1, 13
+class-chain		5, 10		1, 14	2, 17
+class-chain		5, 11		1, 14	2, 16
+class-chain		6, 10		1, 14	2, 14
+class-chain		6, 11		1, 14	2, 16
+class-chain		7, 10		1, 14	2, 16
+class-chain		7, 11		1, 15	2, 23
+class-chain	3	10		1, 16
+class-chain	3	11		1, 14
+
+lookup end
+
+
+lookup	7	single
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+I_dv	I.med
+II_dv	II.med
+
+lookup end
+
+
+lookup	8	single
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+I_dv	I.lg
+II_dv	II.lg
+
+lookup end
+
+
+lookup	9	multiple
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+O_dv	AA_dv	E_dv
+AU_dv	AA_dv	AI_dv
+
+lookup end
+
+
+lookup	10	multiple
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+O_dv	AA_dv.alt	E_dv
+AU_dv	AA_dv.alt	AI_dv
+
+lookup end
+
+
+lookup	11	chained
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+MarkAttachmentType	1
+
+backtrackclass definition begin
+Ga	1
+Gha	1
+Nna	1
+Ta	1
+Ba	1
+Bha	1
+Sha	1
+Ssa	1
+Ka	2
+Kha	2
+Nga	2
+Ca	2
+Cha	2
+Ja	2
+Jha	2
+Nya	2
+Tta	2
+Ttha	2
+Dda	2
+Tha	2
+Da	2
+Dha	2
+Na	2
+Pa	2
+Pha	2
+Ma	2
+Ya	2
+Ra	2
+La	2
+Va	2
+Ha	2
+Lla	2
+AA_dv	5
+I_dv	5
+O_dv	5
+Sa	6
+Danda	7
+DblDanda	7
+class definition end
+
+class definition begin
+Ra	1
+Virama	2
+uni200D	3
+U_dv	4
+UU_dv	4
+Ka	5
+Ta	6
+Pa	7
+Ma	7
+Ya	7
+Saa	8
+Da	9
+Nya	10
+class definition end
+
+class-chain		1, 2, 3		1, 13
+class-chain	1	1		1, 16
+class-chain	5	1		1, 16
+class-chain	2	1		1, 17
+class-chain	5, 2	1		1, 17
+class-chain	6	1		1, 15
+class-chain	7	1		1, 19
+class-chain		4, 1		1, 13
+class-chain		5, 1		1, 20
+class-chain		5, 2, 8		1, 20
+class-chain		6, 2, 1		1, 20
+class-chain		7, 2, 1		1, 14	3, 24
+class-chain		9, 10		1, 20
+
+lookup end
+
+
+lookup	12	context
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+MarkAttachmentType	1
+
+class definition begin
+Ka	1
+Da	1
+Kaa	1
+Ta.half	1
+Sa.half	1
+Ka.half	1
+Ssa.half	1
+Da.half	1
+Nya	2
+Ddha	2
+Ya	2
+Sha	2
+Ssa	2
+Tha.alt	2
+Ya.alt	2
+Nyaa	2
+Nya.alt	2
+AA_dv	3
+UU_dv	3
+Ra	4
+class definition end
+
+class	1, 1, 2	1, 20
+class	1, 2, 3	1, 20
+class	1, 1	1, 20
+class	1, 2	1, 20
+class	1, 4	1, 20
+
+lookup end
+
+
+lookup	13	ligature
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+Kaa	Ka	AA_dv
+Ku	Ka	U_dv
+Ku	Ka	UU_dv
+RKa	Ka	VocR_dv
+Khaa	Kha	AA_dv
+Guu	Ga	UU_dv
+Jaa	Ja	AA_dv
+Ju	Ja	U_dv
+Ju	Ja	UU_dv
+Jhaa	Jha	AA_dv
+Nyaa	Nya	AA_dv
+Ttaa	Tta	AA_dv
+Tthaa	Ttha	AA_dv
+Naa	Na	AA_dv
+Nu	Na	U_dv
+Nu	Na	UU_dv
+Phaa	Pha	AA_dv
+Phu	Pha	U_dv
+Phu	Pha	UU_dv
+Baa	Ba	AA_dv
+Bhaa	Bha	AA_dv
+Maa	Ma	AA_dv
+Muu	Ma	UU_dv
+Yaa	Ya	AA_dv
+Ru	Ra	U_dv
+Ru	Ra	UU_dv
+EyelashRa	Ra	Virama	uni200D
+Laa	La	AA_dv
+Li	La	I_dv
+Li	La	II_dv
+Vaa	Va	AA_dv
+Saa	Sa	AA_dv
+Haa	Ha	AA_dv
+URa	U_dv	Ra
+URa	UU_dv	Ra
+
+lookup end
+
+
+lookup	14	single
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+Kha	Kha.alt
+Ca	Ca.alt
+Jha	Jha.alt
+Nya	Nya.alt
+Dda	Dda.alt
+Ta	Ta.alt
+Tha	Tha.alt
+Da	Da.alt
+Dha	Dha.alt
+Pa	Pa.alt
+Ba	Ba.alt
+Ma	Ma.alt
+Ya	Ya.alt
+Ra	Ra.alt
+La	La.alt
+Va	Va.alt
+Sa	Sa.alt
+Ha	Ha.alt
+AA_dv	AA_dv.alt
+U_dv	UU.alt3
+UU_dv	UU.alt1
+
+lookup end
+
+
+lookup	15	single
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+Da	Da.alt2
+Dha	Dha.alt2
+Ra	Ra.alt2
+
+lookup end
+
+
+lookup	16	single
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+Ra	Ra.alt3
+II_dv	UU.alt3
+U_dv	U.alt3
+UU_dv	UU.alt3
+
+lookup end
+
+
+lookup	17	single
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+Ra	Ra.alt4
+I_dv	U.alt4
+U_dv	U.alt4
+
+lookup end
+
+
+lookup	18	single
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+Ra	Ra.alt5
+
+lookup end
+
+
+lookup	19	single
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+Ra	Ra.alt6
+
+lookup end
+
+
+lookup	20	ligature
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+KaRa	Ka	Ra
+TRa	Ta	Virama	Ra
+KaaRa	Kaa	Ra
+TYa	Ta.half	Ya.alt
+STha	Sa.half	Tha.alt
+KSsa	Ka.half	Ssa
+KSsYa	Ka.half	Ssa.half	Ya.alt
+KSsa.half	Ka.half	Ssa.half
+SsDdha	Ssa.half	Ddha
+DNya	Da.half	Nya
+DYa	Da.half	Ya.alt
+DNyaa	Da.half	Nyaa
+DNyu	Da.half	Nya.alt	U.alt3
+
+lookup end
+
+
+lookup	21	chained
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+backtrackclass definition begin
+Ta.half	1
+Ma.half	1
+Sa.half	1
+KSsa.half	1
+Ka.half	1
+Kha.half	1
+Ga.half	1
+Gha.half	1
+Nga.half	1
+Cha.half	1
+Ja.half	1
+Tta.half	1
+Ttha.half	1
+Dda.half	1
+Ddha.half	1
+Nna.half	1
+Na.half	1
+Pa.half	1
+Pha.half	1
+Bha.half	1
+Ya.half	1
+Sha.half	1
+Ssa.half	1
+Ha.half	1
+Lla.half	1
+Ca.half	1
+Ba.half	1
+La.half	1
+Va.half	1
+Jha.half	1
+Nya.half	1
+Tha.half	1
+Da.half	1
+Dha.half	1
+Kha	2
+Ga	2
+Gha	2
+Nga	2
+Ca	2
+Cha	2
+Ja	2
+Tta	2
+Ttha	2
+Dda	2
+Ddha	2
+Nna	2
+Tha	2
+Da	2
+Dha	2
+Na	2
+Pa	2
+Ba	2
+Ya	2
+Ra	2
+La	2
+Va	2
+Ssa	2
+Sa	2
+Ha	2
+Lla	2
+Tha.alt	2
+Da.alt	2
+Dha.alt	2
+Pa.alt	2
+Ma.alt	2
+Ya.alt	2
+Ra.alt	2
+Ru	2
+Laa	2
+DNya	2
+Ka	3
+Jha	3
+Nya	3
+Ta	3
+Pha	3
+Bha	3
+Ma	3
+Sha	3
+Kaa	3
+Ku	3
+Khaa	3
+Guu	3
+Jaa	3
+Ju	3
+Jhaa	3
+Nyaa	3
+Ttaa	3
+Tthaa	3
+Naa	3
+Nu	3
+Phaa	3
+Phu	3
+Baa	3
+Bhaa	3
+Maa	3
+Muu	3
+Yaa	3
+Vaa	3
+KSsa	3
+KSsYa	3
+DNyaa	3
+DNyu	3
+RKa	3
+II_dv	4
+class definition end
+
+class definition begin
+Ra	1
+Virama	2
+Tha	3
+Pa	3
+Ma	3
+Ya	3
+class definition end
+
+class-chain	4	1		1, 18
+class-chain	2, 1	2, 1		1, 24
+class-chain	3, 1	2, 1		1, 24
+class-chain	2	2, 1		1, 25
+class-chain	3	2, 1		1, 26
+class-chain		3, 2, 1		1, 14	2, 25
+
+lookup end
+
+
+lookup	22	context
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+class definition begin
+Gha	1
+Nga	1
+Cha	1
+Tta	1
+Ttha	1
+Dda	1
+Ddha	1
+Nna	1
+Bha	1
+Sha	1
+Ssa	1
+Lla	1
+Tha.alt	1
+Pa.alt	1
+Ya.alt	1
+Dha.alt2	1
+UU_dv	2
+class definition end
+
+class	1, 2	2, 23
+
+lookup end
+
+
+lookup	23	single
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+UU_dv	U_dv
+
+lookup end
+
+
+lookup	24	ligature
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+Vattu	Virama	Ra
+
+lookup end
+
+
+lookup	25	ligature
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+Rakar	Virama	Ra
+
+lookup end
+
+
+lookup	26	ligature
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+Rakar.alt	Virama	Ra
+
+lookup end
+
