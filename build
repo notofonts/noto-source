@@ -42,7 +42,7 @@ function setup() {
     # ensure fontmake submodule is up-to-date
     git submodule update --init
     pip install --upgrade -r scripts/fontmake/requirements.txt
-    pip install scripts/fontmake
+    pip install -e scripts/fontmake
     deactivate
 }
 
