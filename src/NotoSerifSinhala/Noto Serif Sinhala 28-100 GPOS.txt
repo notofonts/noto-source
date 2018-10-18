@@ -1,24 +1,24 @@
 FontDame GPOS table
-% Noto Serif Sinhala - weight:28 width:100
 
 EM	1000
 
 
-
-
-feature table begin
-0	blwm	bottommarktobase-sinh
-1	dist	kern-sinh,kernpunctuation-sinh,touch-sinh
-feature table end
-
-
 script table begin
-sinh	default		 0,1
+sinh	default		0, 1
 script table end
 
 
-lookup	kern-sinh	pair
+feature table begin
+0	blwm	3
+1	dist	0, 1, 2
 
+feature table end
+
+lookup	0	pair
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
 IgnoreMarks	yes
 
 firstclass definition begin
@@ -429,8 +429,11 @@ left x advance	33	5	25
 lookup end
 
 
-lookup	kernpunctuation-sinh	pair
+lookup	1	pair
 
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
 IgnoreMarks	yes
 
 firstclass definition begin
@@ -438,17 +441,9 @@ nyasinh	1
 jnyasinh	1
 dasinh	1
 ndasinh	1
+aevowelsignsinh	1
+aaevowelsignsinh	1
 nadasinh	1
-nyahalantsinh	2
-jnyahalantsinh	2
-dahalantsinh	2
-ndahalantsinh	2
-nadahalantsinh	2
-nyarahalantsinh	2
-jnyarahalantsinh	2
-darahalantsinh	2
-ndarahalantsinh	2
-nadarahalantsinh	2
 nyivowelsinh	1
 jnyivowelsinh	1
 divowelsinh	1
@@ -464,6 +459,20 @@ jnyarephsinh	1
 darephsinh	1
 ndarephsinh	1
 nadarephsinh	1
+nyahalantsinh	2
+jnyahalantsinh	2
+dahalantsinh	2
+ndahalantsinh	2
+nadahalantsinh	2
+yaposthalantsinh	2
+nyarahalantsinh	2
+jnyarahalantsinh	2
+darahalantsinh	2
+ndarahalantsinh	2
+nadarahalantsinh	2
+doovowelsignsinh	2
+dayahalantsinh	2
+dayoovowelsinh	2
 nyaavowelsinh	3
 jnyaavowelsinh	3
 daavowelsinh	3
@@ -471,29 +480,23 @@ ndaavowelsinh	3
 nadaavowelsinh	3
 darvocalicvowelsinh	3
 darrvocalicvowelsinh	4
-doovowelsignsinh	2
 dayasinh	4
-dayahalantsinh	2
 dayaavowelsinh	4
-dayoovowelsinh	2
-yaposthalantsinh	2
-aevowelsignsinh	1
-aaevowelsignsinh	1
 class definition end
 
 secondclass definition begin
 quotedbl.sinh	1
 quotesingle.sinh	1
-parenright.sinh	2
-bracketright.sinh	2
-braceright.sinh	2
 quoteright.sinh	1
 quotedblright.sinh	1
+parenright.sinh	2
 backslash.sinh	2
-period.sinh	4
+bracketright.sinh	2
+braceright.sinh	2
 comma.sinh	3
-semicolon.sinh	3
 slash.sinh	3
+semicolon.sinh	3
+period.sinh	4
 class definition end
 
 left x advance	1	2	60
@@ -508,11 +511,15 @@ left x advance	4	2	60
 left x advance	4	3	60
 left x advance	4	4	40
 
-
 lookup end
 
 
-lookup	touch-sinh	cursive
+lookup	2	cursive
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
 
 entry	kasinh	34,0
 entry	khasinh	58,0
@@ -879,7 +886,12 @@ exit	fatouchsinh	718,0
 lookup end
 
 
-lookup	bottommarktobase-sinh	mark to base
+lookup	3	mark to base
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
 
 mark	rakarsinh	0	0,-15
 mark	karasinh	0	0,-15
@@ -978,3 +990,4 @@ base	navasinh	0	1243,-15
 base	yapostsinh	0	584,-15
 
 lookup end
+

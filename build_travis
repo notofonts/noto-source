@@ -201,8 +201,7 @@ function setup_fontmake() {
     # install fontmake
     git clone https://github.com/googlei18n/fontmake.git
     cd fontmake
-    pip install -r requirements.txt
-    python setup.py install
+    pip install -r requirements.txt .
     cd ..
 }
 
@@ -220,7 +219,7 @@ function setup_diffing() {
 
     git clone https://github.com/googlei18n/nototools.git
     cd nototools
-    python setup.py install
+    pip install .
     cd ..
 
     # install fontdiff
