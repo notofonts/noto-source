@@ -1,0 +1,1707 @@
+FontDame GSUB table
+
+
+script table begin
+java	default		0, 1, 2, 3
+script table end
+
+
+feature table begin
+0	abvs	31
+1	blwf	0
+2	blws	28
+3	psts	1, 2, 3, 18, 19, 32, 34
+
+feature table end
+
+lookup	0	ligature
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+akara.pas	pangkon	akara
+ikawi.pas	pangkon	ikawi
+ikara.pas	pangkon	ikara
+iikara.pas	pangkon	iikara
+ukara.pas	pangkon	ukara
+pacerek.pas	pangkon	pacerek
+ngalelet.pas	pangkon	ngalelet
+ngaleletras.pas	pangkon	ngaleletras
+ekara.pas	pangkon	ekara
+aikara.pas	pangkon	aikara
+okara.pas	pangkon	okara
+ka.pas	pangkon	ka
+qa.pas	pangkon	qa
+kha.pas	pangkon	kha
+ga.pas	pangkon	ga
+gha.pas	pangkon	gha
+nga.pas	pangkon	nga
+ca.pas	pangkon	ca
+cha.pas	pangkon	cha
+ja.pas	pangkon	ja
+jnya.pas	pangkon	jnya
+jha.pas	pangkon	jha
+nya.pas	pangkon	nya
+tta.pas	pangkon	tta
+ttha.pas	pangkon	ttha
+dda.pas	pangkon	dda
+ddha.pas	pangkon	ddha
+nna.pas	pangkon	nna
+ta.pas	pangkon	ta
+tha.pas	pangkon	tha
+da.pas	pangkon	da
+dha.pas	pangkon	dha
+na.pas	pangkon	na
+pa.pas	pangkon	pa
+pha.pas	pangkon	pha
+ba.pas	pangkon	ba
+bha.pas	pangkon	bha
+ma.pas	pangkon	ma
+ya.pas	pangkon	ya
+ra.pas	pangkon	ra
+raagung.pas	pangkon	raagung
+la.pas	pangkon	la
+wa.pas	pangkon	wa
+sha.pas	pangkon	sha
+ssa.pas	pangkon	ssa
+sa.pas	pangkon	sa
+ha.pas	pangkon	ha
+cakra.pas	pangkon	cakra
+
+lookup end
+
+
+lookup	1	context
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+class definition begin
+ka	1
+qa	1
+ga	1
+gha	1
+nga	1
+ca	1
+ja	1
+jnya	1
+tta	1
+ttha	1
+dda	1
+nna	1
+ta	1
+tha	1
+da	1
+dha	1
+na	1
+pa	1
+pha	1
+ba	1
+bha	1
+ma	1
+ra	1
+la	1
+wa	1
+sha	1
+ssa	1
+sa	1
+ha	1
+kha	2
+cha	2
+jha	2
+nya	2
+ddha	2
+ya	2
+raagung	2
+cakra	10
+u.ns	11
+u.ns.pas	12
+uu.ns	12
+uu.ns.pas	12
+pengkal	13
+class definition end
+
+class	1, 10, 13	2, 4	1, 6	1, 12
+class	1, 10, 12	2, 4	1, 6	1, 12
+class	1, 10, 11	1, 5
+class	1, 10	1, 5
+class	2, 10, 13	2, 4	1, 6	1, 12
+class	2, 10, 12	2, 4	1, 6	1, 12
+class	2, 10, 11	2, 4	1, 6	1, 12
+class	2, 10	2, 4	1, 6	1, 12
+
+lookup end
+
+
+lookup	2	chained
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+backtrackclass definition begin
+ka.pas_cakra	1
+qa.pas_cakra	1
+ta.pas_cakra	1
+da.pas_cakra	1
+la.pas_cakra	1
+class definition end
+
+class definition begin
+ka.pas	1
+qa.pas	1
+ta.pas	1
+da.pas	1
+la.pas	1
+pa.pas	2
+pha.pas	2
+sa.pas	2
+ha.pas	2
+ka	3
+qa	3
+kha	3
+ga	3
+gha	3
+nga	3
+ca	3
+cha	3
+ja	3
+jnya	3
+jha	3
+nya	3
+tta	3
+ttha	3
+dda	3
+ddha	3
+nna	3
+ta	3
+tha	3
+da	3
+dha	3
+na	3
+pa	3
+pha	3
+ba	3
+bha	3
+ma	3
+ya	3
+ra	3
+raagung	3
+la	3
+wa	3
+sha	3
+ssa	3
+sa	3
+ha	3
+kha.pas	4
+ga.pas	4
+gha.pas	4
+nga.pas	4
+ca.pas	4
+cha.pas	4
+ja.pas	4
+jnya.pas	4
+tta.pas	4
+ttha.pas	4
+dda.pas	4
+ddha.pas	4
+nna.pas	4
+tha.pas	4
+dha.pas	4
+na.pas	4
+ba.pas	4
+bha.pas	4
+ma.pas	4
+ya.pas	4
+ra.pas	4
+raagung.pas	4
+wa.pas	4
+sha.pas	4
+jha.pas	5
+nya.pas	5
+ssa.pas	5
+cakra	10
+u.ns	11
+u.ns.pas	12
+uu.ns	12
+uu.ns.pas	12
+pengkal	12
+class definition end
+
+lookaheadclass definition begin
+u.ns	1
+uu.ns	2
+class definition end
+
+class-chain		2, 10, 11		1, 5
+class-chain		2, 10		1, 5
+class-chain		3, 1, 10, 12		3, 4	1, 6	1, 12
+class-chain		3, 1, 10, 11		3, 4	1, 6	1, 12
+class-chain		3, 1, 10		2, 5
+class-chain		3, 2, 10, 12		3, 4	2, 6	1, 12
+class-chain		3, 4, 10, 12		3, 4	1, 6	1, 12
+class-chain		3, 4, 10, 11		3, 4	1, 6	1, 12
+class-chain		3, 4, 10		3, 4	1, 6	1, 12
+class-chain		3, 5, 10		3, 4	2, 6	1, 12
+
+lookup end
+
+
+lookup	3	context
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+MarkAttachmentType	3
+
+class definition begin
+ka	1
+qa	1
+kha	1
+ga	1
+gha	1
+nga	1
+ca	1
+cha	1
+ja	1
+jnya	1
+jha	1
+nya	1
+tta	1
+ttha	1
+dda	1
+ddha	1
+nna	1
+ta	1
+tha	1
+da	1
+dha	1
+na	1
+pa	1
+pha	1
+ba	1
+bha	1
+ma	1
+ya	1
+ra	1
+raagung	1
+la	1
+wa	1
+sha	1
+ssa	1
+sa	1
+ha	1
+ka.pas_cakra.ns	2
+qa.pas_cakra.ns	3
+ta.pas_cakra.ns	4
+da.pas_cakra.ns	5
+la.pas_cakra.ns	6
+class definition end
+
+class	1, 2	1, 7	1, 13
+class	1, 3	1, 8	1, 14
+class	1, 4	1, 9	1, 15
+class	1, 5	1, 10	1, 16
+class	1, 6	1, 11	1, 17
+
+lookup end
+
+
+lookup	4	single
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+cakra	cakra.ns
+
+lookup end
+
+
+lookup	5	ligature
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+ka_cakra_u.ns	ka	cakra	u.ns
+ka_cakra	ka	cakra
+qa_cakra_u.ns	qa	cakra	u.ns
+qa_cakra	qa	cakra
+ga_cakra_u.ns	ga	cakra	u.ns
+ga_cakra	ga	cakra
+gha_cakra_u.ns	gha	cakra	u.ns
+gha_cakra	gha	cakra
+nga_cakra_u.ns	nga	cakra	u.ns
+nga_cakra	nga	cakra
+ca_cakra_u.ns	ca	cakra	u.ns
+ca_cakra	ca	cakra
+ja_cakra_u.ns	ja	cakra	u.ns
+ja_cakra	ja	cakra
+jnya_cakra_u.ns	jnya	cakra	u.ns
+jnya_cakra	jnya	cakra
+tta_cakra_u.ns	tta	cakra	u.ns
+tta_cakra	tta	cakra
+ttha_cakra_u.ns	ttha	cakra	u.ns
+ttha_cakra	ttha	cakra
+dda_cakra_u.ns	dda	cakra	u.ns
+dda_cakra	dda	cakra
+nna_cakra_u.ns	nna	cakra	u.ns
+nna_cakra	nna	cakra
+ta_cakra_u.ns	ta	cakra	u.ns
+ta_cakra	ta	cakra
+tha_cakra_u.ns	tha	cakra	u.ns
+tha_cakra	tha	cakra
+da_cakra_u.ns	da	cakra	u.ns
+da_cakra	da	cakra
+dha_cakra_u.ns	dha	cakra	u.ns
+dha_cakra	dha	cakra
+na_cakra_u.ns	na	cakra	u.ns
+na_cakra	na	cakra
+pa_cakra_u.ns	pa	cakra	u.ns
+pa_cakra	pa	cakra
+pha_cakra_u.ns	pha	cakra	u.ns
+pha_cakra	pha	cakra
+ba_cakra_u.ns	ba	cakra	u.ns
+ba_cakra	ba	cakra
+bha_cakra_u.ns	bha	cakra	u.ns
+bha_cakra	bha	cakra
+ma_cakra_u.ns	ma	cakra	u.ns
+ma_cakra	ma	cakra
+ra_cakra_u.ns	ra	cakra	u.ns
+ra_cakra	ra	cakra
+la_cakra_u.ns	la	cakra	u.ns
+la_cakra	la	cakra
+wa_cakra_u.ns	wa	cakra	u.ns
+wa_cakra	wa	cakra
+sha_cakra_u.ns	sha	cakra	u.ns
+sha_cakra	sha	cakra
+ssa_cakra_u.ns	ssa	cakra	u.ns
+ssa_cakra	ssa	cakra
+sa_cakra_u.ns	sa	cakra	u.ns
+sa_cakra	sa	cakra
+ha_cakra_u.ns	ha	cakra	u.ns
+ha_cakra	ha	cakra
+ka.pas_cakra.ns	ka.pas	cakra
+qa.pas_cakra.ns	qa.pas	cakra
+ta.pas_cakra.ns	ta.pas	cakra
+da.pas_cakra.ns	da.pas	cakra
+pa.pas_cakra_u.ns	pa.pas	cakra	u.ns
+pa.pas_cakra	pa.pas	cakra
+pha.pas_cakra_u.ns	pha.pas	cakra	u.ns
+pha.pas_cakra	pha.pas	cakra
+la.pas_cakra.ns	la.pas	cakra
+sa.pas_cakra_u.ns	sa.pas	cakra	u.ns
+sa.pas_cakra	sa.pas	cakra
+ha.pas_cakra_u.ns	ha.pas	cakra	u.ns
+ha.pas_cakra	ha.pas	cakra
+
+lookup end
+
+
+lookup	6	ligature
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+MarkAttachmentType	3
+
+ka	ka	cakra.ns
+qa	qa	cakra.ns
+kha	kha	cakra.ns
+ga	ga	cakra.ns
+gha	gha	cakra.ns
+nga	nga	cakra.ns
+ca	ca	cakra.ns
+cha	cha	cakra.ns
+ja	ja	cakra.ns
+jnya	jnya	cakra.ns
+jha	jha	cakra.ns
+nya	nya	cakra.ns
+tta	tta	cakra.ns
+ttha	ttha	cakra.ns
+dda	dda	cakra.ns
+ddha	ddha	cakra.ns
+nna	nna	cakra.ns
+ta	ta	cakra.ns
+tha	tha	cakra.ns
+da	da	cakra.ns
+dha	dha	cakra.ns
+na	na	cakra.ns
+pa	pa	cakra.ns
+pha	pha	cakra.ns
+ba	ba	cakra.ns
+bha	bha	cakra.ns
+ma	ma	cakra.ns
+ya	ya	cakra.ns
+ra	ra	cakra.ns
+raagung	raagung	cakra.ns
+la	la	cakra.ns
+wa	wa	cakra.ns
+sha	sha	cakra.ns
+ssa	ssa	cakra.ns
+sa	sa	cakra.ns
+ha	ha	cakra.ns
+jha.pas	jha.pas	cakra.ns
+nya.pas	nya.pas	cakra.ns
+pa.pas	pa.pas	cakra.ns
+pha.pas	pha.pas	cakra.ns
+sa.pas	sa.pas	cakra.ns
+ssa.pas	ssa.pas	cakra.ns
+ha.pas	ha.pas	cakra.ns
+
+lookup end
+
+
+lookup	7	ligature
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+MarkAttachmentType	3
+
+ka	ka	ka.pas_cakra.ns
+qa	qa	ka.pas_cakra.ns
+kha	kha	ka.pas_cakra.ns
+ga	ga	ka.pas_cakra.ns
+gha	gha	ka.pas_cakra.ns
+nga	nga	ka.pas_cakra.ns
+ca	ca	ka.pas_cakra.ns
+cha	cha	ka.pas_cakra.ns
+ja	ja	ka.pas_cakra.ns
+jnya	jnya	ka.pas_cakra.ns
+jha	jha	ka.pas_cakra.ns
+nya	nya	ka.pas_cakra.ns
+tta	tta	ka.pas_cakra.ns
+ttha	ttha	ka.pas_cakra.ns
+dda	dda	ka.pas_cakra.ns
+ddha	ddha	ka.pas_cakra.ns
+nna	nna	ka.pas_cakra.ns
+ta	ta	ka.pas_cakra.ns
+tha	tha	ka.pas_cakra.ns
+da	da	ka.pas_cakra.ns
+dha	dha	ka.pas_cakra.ns
+na	na	ka.pas_cakra.ns
+pa	pa	ka.pas_cakra.ns
+pha	pha	ka.pas_cakra.ns
+ba	ba	ka.pas_cakra.ns
+bha	bha	ka.pas_cakra.ns
+ma	ma	ka.pas_cakra.ns
+ya	ya	ka.pas_cakra.ns
+ra	ra	ka.pas_cakra.ns
+raagung	raagung	ka.pas_cakra.ns
+la	la	ka.pas_cakra.ns
+wa	wa	ka.pas_cakra.ns
+sha	sha	ka.pas_cakra.ns
+ssa	ssa	ka.pas_cakra.ns
+sa	sa	ka.pas_cakra.ns
+ha	ha	ka.pas_cakra.ns
+jha.pas	jha.pas	ka.pas_cakra.ns
+nya.pas	nya.pas	ka.pas_cakra.ns
+pa.pas	pa.pas	ka.pas_cakra.ns
+pha.pas	pha.pas	ka.pas_cakra.ns
+sa.pas	sa.pas	ka.pas_cakra.ns
+ssa.pas	ssa.pas	ka.pas_cakra.ns
+ha.pas	ha.pas	ka.pas_cakra.ns
+
+lookup end
+
+
+lookup	8	ligature
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+MarkAttachmentType	3
+
+ka	ka	qa.pas_cakra.ns
+qa	qa	qa.pas_cakra.ns
+kha	kha	qa.pas_cakra.ns
+ga	ga	qa.pas_cakra.ns
+gha	gha	qa.pas_cakra.ns
+nga	nga	qa.pas_cakra.ns
+ca	ca	qa.pas_cakra.ns
+cha	cha	qa.pas_cakra.ns
+ja	ja	qa.pas_cakra.ns
+jnya	jnya	qa.pas_cakra.ns
+jha	jha	qa.pas_cakra.ns
+nya	nya	qa.pas_cakra.ns
+tta	tta	qa.pas_cakra.ns
+ttha	ttha	qa.pas_cakra.ns
+dda	dda	qa.pas_cakra.ns
+ddha	ddha	qa.pas_cakra.ns
+nna	nna	qa.pas_cakra.ns
+ta	ta	qa.pas_cakra.ns
+tha	tha	qa.pas_cakra.ns
+da	da	qa.pas_cakra.ns
+dha	dha	qa.pas_cakra.ns
+na	na	qa.pas_cakra.ns
+pa	pa	qa.pas_cakra.ns
+pha	pha	qa.pas_cakra.ns
+ba	ba	qa.pas_cakra.ns
+bha	bha	qa.pas_cakra.ns
+ma	ma	qa.pas_cakra.ns
+ya	ya	qa.pas_cakra.ns
+ra	ra	qa.pas_cakra.ns
+raagung	raagung	qa.pas_cakra.ns
+la	la	qa.pas_cakra.ns
+wa	wa	qa.pas_cakra.ns
+sha	sha	qa.pas_cakra.ns
+ssa	ssa	qa.pas_cakra.ns
+sa	sa	qa.pas_cakra.ns
+ha	ha	qa.pas_cakra.ns
+jha.pas	jha.pas	qa.pas_cakra.ns
+nya.pas	nya.pas	qa.pas_cakra.ns
+pa.pas	pa.pas	qa.pas_cakra.ns
+pha.pas	pha.pas	qa.pas_cakra.ns
+sa.pas	sa.pas	qa.pas_cakra.ns
+ssa.pas	ssa.pas	qa.pas_cakra.ns
+ha.pas	ha.pas	qa.pas_cakra.ns
+
+lookup end
+
+
+lookup	9	ligature
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+MarkAttachmentType	3
+
+ka	ka	ta.pas_cakra.ns
+qa	qa	ta.pas_cakra.ns
+kha	kha	ta.pas_cakra.ns
+ga	ga	ta.pas_cakra.ns
+gha	gha	ta.pas_cakra.ns
+nga	nga	ta.pas_cakra.ns
+ca	ca	ta.pas_cakra.ns
+cha	cha	ta.pas_cakra.ns
+ja	ja	ta.pas_cakra.ns
+jnya	jnya	ta.pas_cakra.ns
+jha	jha	ta.pas_cakra.ns
+nya	nya	ta.pas_cakra.ns
+tta	tta	ta.pas_cakra.ns
+ttha	ttha	ta.pas_cakra.ns
+dda	dda	ta.pas_cakra.ns
+ddha	ddha	ta.pas_cakra.ns
+nna	nna	ta.pas_cakra.ns
+ta	ta	ta.pas_cakra.ns
+tha	tha	ta.pas_cakra.ns
+da	da	ta.pas_cakra.ns
+dha	dha	ta.pas_cakra.ns
+na	na	ta.pas_cakra.ns
+pa	pa	ta.pas_cakra.ns
+pha	pha	ta.pas_cakra.ns
+ba	ba	ta.pas_cakra.ns
+bha	bha	ta.pas_cakra.ns
+ma	ma	ta.pas_cakra.ns
+ya	ya	ta.pas_cakra.ns
+ra	ra	ta.pas_cakra.ns
+raagung	raagung	ta.pas_cakra.ns
+la	la	ta.pas_cakra.ns
+wa	wa	ta.pas_cakra.ns
+sha	sha	ta.pas_cakra.ns
+ssa	ssa	ta.pas_cakra.ns
+sa	sa	ta.pas_cakra.ns
+ha	ha	ta.pas_cakra.ns
+jha.pas	jha.pas	ta.pas_cakra.ns
+nya.pas	nya.pas	ta.pas_cakra.ns
+pa.pas	pa.pas	ta.pas_cakra.ns
+pha.pas	pha.pas	ta.pas_cakra.ns
+sa.pas	sa.pas	ta.pas_cakra.ns
+ssa.pas	ssa.pas	ta.pas_cakra.ns
+ha.pas	ha.pas	ta.pas_cakra.ns
+
+lookup end
+
+
+lookup	10	ligature
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+MarkAttachmentType	3
+
+ka	ka	da.pas_cakra.ns
+qa	qa	da.pas_cakra.ns
+kha	kha	da.pas_cakra.ns
+ga	ga	da.pas_cakra.ns
+gha	gha	da.pas_cakra.ns
+nga	nga	da.pas_cakra.ns
+ca	ca	da.pas_cakra.ns
+cha	cha	da.pas_cakra.ns
+ja	ja	da.pas_cakra.ns
+jnya	jnya	da.pas_cakra.ns
+jha	jha	da.pas_cakra.ns
+nya	nya	da.pas_cakra.ns
+tta	tta	da.pas_cakra.ns
+ttha	ttha	da.pas_cakra.ns
+dda	dda	da.pas_cakra.ns
+ddha	ddha	da.pas_cakra.ns
+nna	nna	da.pas_cakra.ns
+ta	ta	da.pas_cakra.ns
+tha	tha	da.pas_cakra.ns
+da	da	da.pas_cakra.ns
+dha	dha	da.pas_cakra.ns
+na	na	da.pas_cakra.ns
+pa	pa	da.pas_cakra.ns
+pha	pha	da.pas_cakra.ns
+ba	ba	da.pas_cakra.ns
+bha	bha	da.pas_cakra.ns
+ma	ma	da.pas_cakra.ns
+ya	ya	da.pas_cakra.ns
+ra	ra	da.pas_cakra.ns
+raagung	raagung	da.pas_cakra.ns
+la	la	da.pas_cakra.ns
+wa	wa	da.pas_cakra.ns
+sha	sha	da.pas_cakra.ns
+ssa	ssa	da.pas_cakra.ns
+sa	sa	da.pas_cakra.ns
+ha	ha	da.pas_cakra.ns
+jha.pas	jha.pas	da.pas_cakra.ns
+nya.pas	nya.pas	da.pas_cakra.ns
+pa.pas	pa.pas	da.pas_cakra.ns
+pha.pas	pha.pas	da.pas_cakra.ns
+sa.pas	sa.pas	da.pas_cakra.ns
+ssa.pas	ssa.pas	da.pas_cakra.ns
+ha.pas	ha.pas	da.pas_cakra.ns
+
+lookup end
+
+
+lookup	11	ligature
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+MarkAttachmentType	3
+
+ka	ka	la.pas_cakra.ns
+qa	qa	la.pas_cakra.ns
+kha	kha	la.pas_cakra.ns
+ga	ga	la.pas_cakra.ns
+gha	gha	la.pas_cakra.ns
+nga	nga	la.pas_cakra.ns
+ca	ca	la.pas_cakra.ns
+cha	cha	la.pas_cakra.ns
+ja	ja	la.pas_cakra.ns
+jnya	jnya	la.pas_cakra.ns
+jha	jha	la.pas_cakra.ns
+nya	nya	la.pas_cakra.ns
+tta	tta	la.pas_cakra.ns
+ttha	ttha	la.pas_cakra.ns
+dda	dda	la.pas_cakra.ns
+ddha	ddha	la.pas_cakra.ns
+nna	nna	la.pas_cakra.ns
+ta	ta	la.pas_cakra.ns
+tha	tha	la.pas_cakra.ns
+da	da	la.pas_cakra.ns
+dha	dha	la.pas_cakra.ns
+na	na	la.pas_cakra.ns
+pa	pa	la.pas_cakra.ns
+pha	pha	la.pas_cakra.ns
+ba	ba	la.pas_cakra.ns
+bha	bha	la.pas_cakra.ns
+ma	ma	la.pas_cakra.ns
+ya	ya	la.pas_cakra.ns
+ra	ra	la.pas_cakra.ns
+raagung	raagung	la.pas_cakra.ns
+la	la	la.pas_cakra.ns
+wa	wa	la.pas_cakra.ns
+sha	sha	la.pas_cakra.ns
+ssa	ssa	la.pas_cakra.ns
+sa	sa	la.pas_cakra.ns
+ha	ha	la.pas_cakra.ns
+jha.pas	jha.pas	la.pas_cakra.ns
+nya.pas	nya.pas	la.pas_cakra.ns
+pa.pas	pa.pas	la.pas_cakra.ns
+pha.pas	pha.pas	la.pas_cakra.ns
+sa.pas	sa.pas	la.pas_cakra.ns
+ssa.pas	ssa.pas	la.pas_cakra.ns
+ha.pas	ha.pas	la.pas_cakra.ns
+
+lookup end
+
+
+lookup	12	multiple
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+MarkAttachmentType	3
+
+ka	cakra	ka
+qa	cakra	qa
+kha	cakra	kha
+ga	cakra	ga
+gha	cakra	gha
+nga	cakra	nga
+ca	cakra	ca
+cha	cakra	cha
+ja	cakra	ja
+jnya	cakra	jnya
+jha	cakra	jha
+nya	cakra	nya
+tta	cakra	tta
+ttha	cakra	ttha
+dda	cakra	dda
+ddha	cakra	ddha
+nna	cakra	nna
+ta	cakra	ta
+tha	cakra	tha
+da	cakra	da
+dha	cakra	dha
+na	cakra	na
+pa	cakra	pa
+pha	cakra	pha
+ba	cakra	ba
+bha	cakra	bha
+ma	cakra	ma
+ya	cakra	ya
+ra	cakra	ra
+raagung	cakra	raagung
+la	cakra	la
+wa	cakra	wa
+sha	cakra	sha
+ssa	cakra	ssa
+sa	cakra	sa
+ha	cakra	ha
+
+lookup end
+
+
+lookup	13	multiple
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+MarkAttachmentType	3
+
+ka	ka.pas_cakra	ka
+qa	ka.pas_cakra	qa
+kha	ka.pas_cakra	kha
+ga	ka.pas_cakra	ga
+gha	ka.pas_cakra	gha
+nga	ka.pas_cakra	nga
+ca	ka.pas_cakra	ca
+cha	ka.pas_cakra	cha
+ja	ka.pas_cakra	ja
+jnya	ka.pas_cakra	jnya
+jha	ka.pas_cakra	jha
+nya	ka.pas_cakra	nya
+tta	ka.pas_cakra	tta
+ttha	ka.pas_cakra	ttha
+dda	ka.pas_cakra	dda
+ddha	ka.pas_cakra	ddha
+nna	ka.pas_cakra	nna
+ta	ka.pas_cakra	ta
+tha	ka.pas_cakra	tha
+da	ka.pas_cakra	da
+dha	ka.pas_cakra	dha
+na	ka.pas_cakra	na
+pa	ka.pas_cakra	pa
+pha	ka.pas_cakra	pha
+ba	ka.pas_cakra	ba
+bha	ka.pas_cakra	bha
+ma	ka.pas_cakra	ma
+ya	ka.pas_cakra	ya
+ra	ka.pas_cakra	ra
+raagung	ka.pas_cakra	raagung
+la	ka.pas_cakra	la
+wa	ka.pas_cakra	wa
+sha	ka.pas_cakra	sha
+ssa	ka.pas_cakra	ssa
+sa	ka.pas_cakra	sa
+ha	ka.pas_cakra	ha
+
+lookup end
+
+
+lookup	14	multiple
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+MarkAttachmentType	3
+
+ka	qa.pas_cakra	ka
+qa	qa.pas_cakra	qa
+kha	qa.pas_cakra	kha
+ga	qa.pas_cakra	ga
+gha	qa.pas_cakra	gha
+nga	qa.pas_cakra	nga
+ca	qa.pas_cakra	ca
+cha	qa.pas_cakra	cha
+ja	qa.pas_cakra	ja
+jnya	qa.pas_cakra	jnya
+jha	qa.pas_cakra	jha
+nya	qa.pas_cakra	nya
+tta	qa.pas_cakra	tta
+ttha	qa.pas_cakra	ttha
+dda	qa.pas_cakra	dda
+ddha	qa.pas_cakra	ddha
+nna	qa.pas_cakra	nna
+ta	qa.pas_cakra	ta
+tha	qa.pas_cakra	tha
+da	qa.pas_cakra	da
+dha	qa.pas_cakra	dha
+na	qa.pas_cakra	na
+pa	qa.pas_cakra	pa
+pha	qa.pas_cakra	pha
+ba	qa.pas_cakra	ba
+bha	qa.pas_cakra	bha
+ma	qa.pas_cakra	ma
+ya	qa.pas_cakra	ya
+ra	qa.pas_cakra	ra
+raagung	qa.pas_cakra	raagung
+la	qa.pas_cakra	la
+wa	qa.pas_cakra	wa
+sha	qa.pas_cakra	sha
+ssa	qa.pas_cakra	ssa
+sa	qa.pas_cakra	sa
+ha	qa.pas_cakra	ha
+
+lookup end
+
+
+lookup	15	multiple
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+MarkAttachmentType	3
+
+ka	ta.pas_cakra	ka
+qa	ta.pas_cakra	qa
+kha	ta.pas_cakra	kha
+ga	ta.pas_cakra	ga
+gha	ta.pas_cakra	gha
+nga	ta.pas_cakra	nga
+ca	ta.pas_cakra	ca
+cha	ta.pas_cakra	cha
+ja	ta.pas_cakra	ja
+jnya	ta.pas_cakra	jnya
+jha	ta.pas_cakra	jha
+nya	ta.pas_cakra	nya
+tta	ta.pas_cakra	tta
+ttha	ta.pas_cakra	ttha
+dda	ta.pas_cakra	dda
+ddha	ta.pas_cakra	ddha
+nna	ta.pas_cakra	nna
+ta	ta.pas_cakra	ta
+tha	ta.pas_cakra	tha
+da	ta.pas_cakra	da
+dha	ta.pas_cakra	dha
+na	ta.pas_cakra	na
+pa	ta.pas_cakra	pa
+pha	ta.pas_cakra	pha
+ba	ta.pas_cakra	ba
+bha	ta.pas_cakra	bha
+ma	ta.pas_cakra	ma
+ya	ta.pas_cakra	ya
+ra	ta.pas_cakra	ra
+raagung	ta.pas_cakra	raagung
+la	ta.pas_cakra	la
+wa	ta.pas_cakra	wa
+sha	ta.pas_cakra	sha
+ssa	ta.pas_cakra	ssa
+sa	ta.pas_cakra	sa
+ha	ta.pas_cakra	ha
+
+lookup end
+
+
+lookup	16	multiple
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+MarkAttachmentType	3
+
+ka	da.pas_cakra	ka
+qa	da.pas_cakra	qa
+kha	da.pas_cakra	kha
+ga	da.pas_cakra	ga
+gha	da.pas_cakra	gha
+nga	da.pas_cakra	nga
+ca	da.pas_cakra	ca
+cha	da.pas_cakra	cha
+ja	da.pas_cakra	ja
+jnya	da.pas_cakra	jnya
+jha	da.pas_cakra	jha
+nya	da.pas_cakra	nya
+tta	da.pas_cakra	tta
+ttha	da.pas_cakra	ttha
+dda	da.pas_cakra	dda
+ddha	da.pas_cakra	ddha
+nna	da.pas_cakra	nna
+ta	da.pas_cakra	ta
+tha	da.pas_cakra	tha
+da	da.pas_cakra	da
+dha	da.pas_cakra	dha
+na	da.pas_cakra	na
+pa	da.pas_cakra	pa
+pha	da.pas_cakra	pha
+ba	da.pas_cakra	ba
+bha	da.pas_cakra	bha
+ma	da.pas_cakra	ma
+ya	da.pas_cakra	ya
+ra	da.pas_cakra	ra
+raagung	da.pas_cakra	raagung
+la	da.pas_cakra	la
+wa	da.pas_cakra	wa
+sha	da.pas_cakra	sha
+ssa	da.pas_cakra	ssa
+sa	da.pas_cakra	sa
+ha	da.pas_cakra	ha
+
+lookup end
+
+
+lookup	17	multiple
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+MarkAttachmentType	3
+
+ka	la.pas_cakra	ka
+qa	la.pas_cakra	qa
+kha	la.pas_cakra	kha
+ga	la.pas_cakra	ga
+gha	la.pas_cakra	gha
+nga	la.pas_cakra	nga
+ca	la.pas_cakra	ca
+cha	la.pas_cakra	cha
+ja	la.pas_cakra	ja
+jnya	la.pas_cakra	jnya
+jha	la.pas_cakra	jha
+nya	la.pas_cakra	nya
+tta	la.pas_cakra	tta
+ttha	la.pas_cakra	ttha
+dda	la.pas_cakra	dda
+ddha	la.pas_cakra	ddha
+nna	la.pas_cakra	nna
+ta	la.pas_cakra	ta
+tha	la.pas_cakra	tha
+da	la.pas_cakra	da
+dha	la.pas_cakra	dha
+na	la.pas_cakra	na
+pa	la.pas_cakra	pa
+pha	la.pas_cakra	pha
+ba	la.pas_cakra	ba
+bha	la.pas_cakra	bha
+ma	la.pas_cakra	ma
+ya	la.pas_cakra	ya
+ra	la.pas_cakra	ra
+raagung	la.pas_cakra	raagung
+la	la.pas_cakra	la
+wa	la.pas_cakra	wa
+sha	la.pas_cakra	sha
+ssa	la.pas_cakra	ssa
+sa	la.pas_cakra	sa
+ha	la.pas_cakra	ha
+
+lookup end
+
+
+lookup	18	chained
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+MarkAttachmentType	1
+
+backtrackclass definition begin
+ikawi.pas	1
+ikara.pas	1
+iikara.pas	1
+ukara.pas	1
+pacerek.pas	1
+ngalelet.pas	1
+ngaleletras.pas	1
+ekara.pas	1
+aikara.pas	1
+okara.pas	1
+ka.pas	1
+qa.pas	1
+ca.pas	1
+cha.pas	1
+ja.pas	1
+jnya.pas	1
+jha.pas	1
+nya.pas	1
+tta.pas	1
+ttha.pas	1
+dda.pas	1
+ddha.pas	1
+ta.pas	1
+tha.pas	1
+da.pas	1
+na.pas	1
+pa.pas	1
+pha.pas	1
+bha.pas	1
+ma.pas	1
+la.pas	1
+wa.pas	1
+sa.pas	1
+ssa.pas	1
+ha.pas	1
+akara.pas	2
+ga.pas	2
+gha.pas	2
+nga.pas	2
+nna.pas	2
+dha.pas	2
+ba.pas	2
+ya.pas	2
+ra.pas	2
+sha.pas	2
+ja	3
+kha.pas	4
+raagung.pas	4
+class definition end
+
+class definition begin
+pa.pas	1
+sa.pas	1
+ssa.pas	1
+ha.pas	1
+jha.pas	2
+nya.pas	2
+ka.pas	3
+qa.pas	3
+ta.pas	3
+la.pas	3
+ca.pas	4
+ja.pas	4
+jnya.pas	4
+tta.pas	4
+ttha.pas	4
+dda.pas	4
+tha.pas	4
+na.pas	4
+bha.pas	4
+ma.pas	4
+pha.pas	5
+cha.pas	6
+da.pas	6
+wa.pas	7
+u.ns	10
+uu.ns	10
+keret.ns	11
+pengkal	12
+class definition end
+
+class-chain		1, 12, 10		2, 20
+class-chain		2, 12, 10		2, 22	1, 25
+class-chain		2, 12		1, 25	2, 27
+class-chain		2, 11		1, 25	2, 27
+class-chain		2, 10		1, 24
+class-chain		2, 7		1, 22
+class-chain	3	2		1, 26
+class-chain		3, 12, 10		2, 22	1, 24
+class-chain		3, 12		1, 24	2, 27
+class-chain		3, 11		1, 24	2, 27
+class-chain		3, 10		1, 24	2, 27
+class-chain		3, 7		1, 24	2, 27
+class-chain		3, 3		1, 24	2, 27
+class-chain	1	3		1, 27
+class-chain	2	3		1, 27
+class-chain		4, 12, 10		1, 22
+class-chain		4, 12		1, 22
+class-chain		4, 11		1, 22
+class-chain		4, 10		1, 24	2, 27
+class-chain		4, 7		1, 22
+class-chain		5, 12, 10		1, 22
+class-chain		5, 12		1, 22
+class-chain		5, 11		1, 22
+class-chain		5, 10		1, 24
+class-chain		5, 7		1, 22
+class-chain		6, 12, 10		1, 22
+class-chain		6, 12		1, 22
+class-chain		6, 11		1, 22
+class-chain		6, 10		1, 22
+class-chain		6, 7		1, 22
+class-chain	2	7		1, 27
+class-chain		7, 10		1, 24	2, 27
+class-chain		7, 12, 10		1, 22
+class-chain		7, 12		1, 22
+class-chain		7, 11		1, 22
+class-chain		7, 7		1, 22
+class-chain	2	10		1, 27
+class-chain	2	11		1, 27
+class-chain	2	12, 10		1, 22
+class-chain	2	12		1, 27
+class-chain	4	12, 10		1, 23
+class-chain	4	12		1, 25
+
+lookup end
+
+
+lookup	19	context
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+MarkAttachmentType	1
+
+class definition begin
+kha	1
+ja	1
+jnya	1
+jha	1
+pha	1
+bha	1
+pengkal	2
+wa.pas	2
+u.ns	3
+uu.ns	3
+keret.ns	3
+raagung	4
+class definition end
+
+class	1, 2, 3	1, 20
+class	1, 2	1, 20
+class	1, 3	1, 20
+class	2, 3	1, 20
+class	4, 2, 3	2, 21
+class	4, 2	2, 29
+
+lookup end
+
+
+lookup	20	ligature
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+MarkAttachmentType	1
+
+kha_pengkal_u.ns	kha	pengkal	u.ns
+kha_pengkal_uu.ns	kha	pengkal	uu.ns
+kha_pengkal	kha	pengkal
+ja_keret	ja	keret.ns
+ja_pengkal_u.ns	ja	pengkal	u.ns
+ja_pengkal_uu.ns	ja	pengkal	uu.ns
+ja_pengkal	ja	pengkal
+ja_wa.pas	ja	wa.pas
+jnya_keret	jnya	keret.ns
+jnya_pengkal_u.ns	jnya	pengkal	u.ns
+jnya_pengkal_uu.ns	jnya	pengkal	uu.ns
+jnya_pengkal	jnya	pengkal
+jnya_wa.pas	jnya	wa.pas
+jha_keret	jha	keret.ns
+jha_pengkal_u.ns	jha	pengkal	u.ns
+jha_pengkal_uu.ns	jha	pengkal	uu.ns
+jha_pengkal	jha	pengkal
+jha_wa.pas	jha	wa.pas
+pha_keret	pha	keret.ns
+pha_pengkal_u.ns	pha	pengkal	u.ns
+pha_pengkal_uu.ns	pha	pengkal	uu.ns
+pha_pengkal	pha	pengkal
+pha_wa.pas	pha	wa.pas
+bha_keret	bha	keret.ns
+bha_pengkal_u.ns	bha	pengkal	u.ns
+bha_pengkal_uu.ns	bha	pengkal	uu.ns
+bha_pengkal	bha	pengkal
+bha_wa.pas	bha	wa.pas
+pengkal.alt_u.ns	pengkal	u.ns
+pengkal.alt_uu.ns	pengkal	uu.ns
+
+lookup end
+
+
+lookup	21	ligature
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+MarkAttachmentType	1
+
+pengkal.alt1_u.ns	pengkal	u.ns
+pengkal.alt1_uu.ns	pengkal	uu.ns
+
+lookup end
+
+
+lookup	22	ligature
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+MarkAttachmentType	1
+
+pengkal.pas.alt_u.ns	pengkal	u.ns
+pengkal.pas.alt_uu.ns	pengkal	uu.ns
+ca.pas_keret.ns	ca.pas	keret.ns
+ca.pas_pengkal_u.ns	ca.pas	pengkal	u.ns
+ca.pas_pengkal_uu.ns	ca.pas	pengkal	uu.ns
+ca.pas_pengkal	ca.pas	pengkal
+ca.pas_wa.pas	ca.pas	wa.pas
+cha.pas_u.ns	cha.pas	u.ns
+cha.pas_uu.ns	cha.pas	uu.ns
+cha.pas_keret.ns	cha.pas	keret.ns
+cha.pas_pengkal_u.ns	cha.pas	pengkal	u.ns
+cha.pas_pengkal_uu.ns	cha.pas	pengkal	uu.ns
+cha.pas_pengkal	cha.pas	pengkal
+cha.pas_wa.pas	cha.pas	wa.pas
+ja.pas_keret.ns	ja.pas	keret.ns
+ja.pas_pengkal_u.ns	ja.pas	pengkal	u.ns
+ja.pas_pengkal_uu.ns	ja.pas	pengkal	uu.ns
+ja.pas_pengkal	ja.pas	pengkal
+ja.pas_wa.pas	ja.pas	wa.pas
+jnya.pas_keret.ns	jnya.pas	keret.ns
+jnya.pas_pengkal_u.ns	jnya.pas	pengkal	u.ns
+jnya.pas_pengkal_uu.ns	jnya.pas	pengkal	uu.ns
+jnya.pas_pengkal	jnya.pas	pengkal
+jnya.pas_wa.pas	jnya.pas	wa.pas
+jha.pas_pengkal	jha.pas	pengkal
+jha.pas_wa.pas	jha.pas	wa.pas
+nya.pas_pengkal	nya.pas	pengkal
+nya.pas_wa.pas	nya.pas	wa.pas
+tta.pas_keret.ns	tta.pas	keret.ns
+tta.pas_pengkal_u.ns	tta.pas	pengkal	u.ns
+tta.pas_pengkal_uu.ns	tta.pas	pengkal	uu.ns
+tta.pas_pengkal	tta.pas	pengkal
+tta.pas_wa.pas	tta.pas	wa.pas
+ttha.pas_keret.ns	ttha.pas	keret.ns
+ttha.pas_pengkal_u.ns	ttha.pas	pengkal	u.ns
+ttha.pas_pengkal_uu.ns	ttha.pas	pengkal	uu.ns
+ttha.pas_pengkal	ttha.pas	pengkal
+ttha.pas_wa.pas	ttha.pas	wa.pas
+dda.pas_keret.ns	dda.pas	keret.ns
+dda.pas_pengkal_u.ns	dda.pas	pengkal	u.ns
+dda.pas_pengkal_uu.ns	dda.pas	pengkal	uu.ns
+dda.pas_pengkal	dda.pas	pengkal
+dda.pas_wa.pas	dda.pas	wa.pas
+tha.pas_keret.ns	tha.pas	keret.ns
+tha.pas_pengkal_u.ns	tha.pas	pengkal	u.ns
+tha.pas_pengkal_uu.ns	tha.pas	pengkal	uu.ns
+tha.pas_pengkal	tha.pas	pengkal
+tha.pas_wa.pas	tha.pas	wa.pas
+da.pas_u.ns	da.pas	u.ns
+da.pas_uu.ns	da.pas	uu.ns
+da.pas_keret.ns	da.pas	keret.ns
+da.pas_pengkal_u.ns	da.pas	pengkal	u.ns
+da.pas_pengkal_uu.ns	da.pas	pengkal	uu.ns
+da.pas_pengkal	da.pas	pengkal
+da.pas_wa.pas	da.pas	wa.pas
+na.pas_keret.ns	na.pas	keret.ns
+na.pas_pengkal_u.ns	na.pas	pengkal	u.ns
+na.pas_pengkal_uu.ns	na.pas	pengkal	uu.ns
+na.pas_pengkal	na.pas	pengkal
+na.pas_wa.pas	na.pas	wa.pas
+pha.pas_keret.ns	pha.pas	keret.ns
+pha.pas_pengkal_u.ns	pha.pas	pengkal	u.ns
+pha.pas_pengkal_uu.ns	pha.pas	pengkal	uu.ns
+pha.pas_pengkal	pha.pas	pengkal
+pha.pas_wa.pas	pha.pas	wa.pas
+bha.pas_keret.ns	bha.pas	keret.ns
+bha.pas_pengkal_u.ns	bha.pas	pengkal	u.ns
+bha.pas_pengkal_uu.ns	bha.pas	pengkal	uu.ns
+bha.pas_pengkal	bha.pas	pengkal
+bha.pas_wa.pas	bha.pas	wa.pas
+ma.pas_keret.ns	ma.pas	keret.ns
+ma.pas_pengkal_u.ns	ma.pas	pengkal	u.ns
+ma.pas_pengkal_uu.ns	ma.pas	pengkal	uu.ns
+ma.pas_pengkal	ma.pas	pengkal
+ma.pas_wa.pas	ma.pas	wa.pas
+wa.pas_keret.ns	wa.pas	keret.ns
+wa.pas_pengkal_u.ns	wa.pas	pengkal	u.ns
+wa.pas_pengkal_uu.ns	wa.pas	pengkal	uu.ns
+wa.pas_pengkal	wa.pas	pengkal
+wa.pas_wa.pas	wa.pas	wa.pas
+
+lookup end
+
+
+lookup	23	ligature
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+MarkAttachmentType	1
+
+pengkal.pas.alt1_u.ns	pengkal	u.ns
+pengkal.pas.alt1_uu.ns	pengkal	uu.ns
+
+lookup end
+
+
+lookup	24	single
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+ka.pas	ka.pas.alt
+qa.pas	qa.pas.alt
+ca.pas	ca.pas.alt
+ja.pas	ja.pas.alt
+jnya.pas	jnya.pas.alt
+jha.pas	jha.pas.alt
+nya.pas	nya.pas.alt
+tta.pas	tta.pas.alt
+ttha.pas	ttha.pas.alt
+dda.pas	dda.pas.alt
+ta.pas	ta.pas.alt
+tha.pas	tha.pas.alt
+na.pas	na.pas.alt
+pha.pas	pha.pas.alt
+bha.pas	bha.pas.alt
+ma.pas	ma.pas.alt
+la.pas	la.pas.alt
+wa.pas	wa.pas.alt
+ssa.pas	ssa.pas.var
+
+lookup end
+
+
+lookup	25	single
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+pengkal	pengkal.pas.alt1
+jha.pas	jha.pas.alt1
+nya.pas	nya.pas.alt1
+
+lookup end
+
+
+lookup	26	single
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+nya.pas	nya.pas.var
+
+lookup end
+
+
+lookup	27	single
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+u.ns	u.ns.pas
+uu.ns	uu.ns.pas
+keret.ns	keret.ns.alt
+pengkal	pengkal.pas
+la.pas	la.pas1
+wa.pas	wa.pas1
+
+lookup end
+
+
+lookup	28	context
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+class definition begin
+jha	1
+ssa.pas	2
+u.ns	10
+uu.ns	10
+keret.ns	11
+pengkal	11
+wa.pas	11
+cakra	12
+da.pas_cakra	12
+la.pas_cakra	12
+class definition end
+
+class	1, 10	1, 29
+class	1, 11	2, 27	1, 30
+class	2, 11	2, 27	1, 29
+class	2, 12	2, 27	1, 29
+
+lookup end
+
+
+lookup	29	single
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+jha	jha.alt
+pengkal	pengkal.alt1
+ssa.pas	ssa.pas.var
+
+lookup end
+
+
+lookup	30	single
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+jha	jha.alt1
+
+lookup end
+
+
+lookup	31	ligature
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+MarkAttachmentType	2
+
+panyangga.ns_layar.ns	panyangga.ns	layar.ns
+cecak.ns_layar.ns	cecak.ns	layar.ns
+cecaktelu.ns_panyangga.ns	cecaktelu.ns	panyangga.ns
+cecaktelu.ns_cecak.ns	cecaktelu.ns	cecak.ns
+cecaktelu.ns_layar.ns	cecaktelu.ns	layar.ns
+cecaktelu.ns_i.ns_panyangga.ns	cecaktelu.ns	i.ns	panyangga.ns
+cecaktelu.ns_i.ns_cecak.ns	cecaktelu.ns	i.ns	cecak.ns
+cecaktelu.ns_i.ns_layar.ns	cecaktelu.ns	i.ns	layar.ns
+cecaktelu.ns_i.ns	cecaktelu.ns	i.ns
+cecaktelu.ns_ii.ns_panyangga.ns	cecaktelu.ns	ii.ns	panyangga.ns
+cecaktelu.ns_ii.ns_cecak.ns	cecaktelu.ns	ii.ns	cecak.ns
+cecaktelu.ns_ii.ns_layar.ns	cecaktelu.ns	ii.ns	layar.ns
+cecaktelu.ns_ii.ns	cecaktelu.ns	ii.ns
+cecaktelu.ns_ae.ns_panyangga.ns	cecaktelu.ns	ae.ns	panyangga.ns
+cecaktelu.ns_ae.ns_cecak.ns	cecaktelu.ns	ae.ns	cecak.ns
+cecaktelu.ns_ae.ns_layar.ns	cecaktelu.ns	ae.ns	layar.ns
+cecaktelu.ns_ae.ns	cecaktelu.ns	ae.ns
+i.ns_panyangga.ns_layar.ns	i.ns	panyangga.ns	layar.ns
+i.ns_panyangga.ns	i.ns	panyangga.ns
+i.ns_cecak.ns_layar.ns	i.ns	cecak.ns	layar.ns
+i.ns_cecak.ns	i.ns	cecak.ns
+i.ns_layar.ns	i.ns	layar.ns
+ii.ns_panyangga.ns_layar.ns	ii.ns	panyangga.ns	layar.ns
+ii.ns_panyangga.ns	ii.ns	panyangga.ns
+ii.ns_cecak.ns_layar.ns	ii.ns	cecak.ns	layar.ns
+ii.ns_cecak.ns	ii.ns	cecak.ns
+ii.ns_layar.ns	ii.ns	layar.ns
+ae.ns_panyangga.ns_layar.ns	ae.ns	panyangga.ns	layar.ns
+ae.ns_panyangga.ns	ae.ns	panyangga.ns
+ae.ns_cecak.ns_layar.ns	ae.ns	cecak.ns	layar.ns
+ae.ns_cecak.ns	ae.ns	cecak.ns
+ae.ns_layar.ns	ae.ns	layar.ns
+
+lookup end
+
+
+lookup	32	chained
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+class definition begin
+cakra	1
+ga	2
+ddha	2
+tha	2
+pa	2
+bha	2
+ma	2
+ra	2
+wa	2
+sha	2
+nga	3
+ja	3
+jnya	3
+tta	3
+ttha	3
+na	3
+ssa	3
+ca	4
+dha	4
+pha	4
+dda	5
+da	5
+sa	5
+ka	6
+qa	6
+gha	6
+nna	6
+ta	6
+ba	6
+la	6
+ha	6
+kha	7
+cha	7
+jha.alt	7
+jha.alt1	7
+nya	7
+ya	7
+raagung	7
+class definition end
+
+lookaheadclass definition begin
+ja.pas	11
+jnya.pas	11
+ttha.pas	11
+ddha.pas	11
+dha.pas	11
+bha.pas	11
+ra.pas	11
+ssa.pas.var	11
+ja.pas.alt	11
+ja.pas_pengkal	11
+ja.pas_pengkal_u.ns	11
+ja.pas_pengkal_uu.ns	11
+jnya.pas.alt	11
+jnya.pas_pengkal	11
+jnya.pas_pengkal_u.ns	11
+jnya.pas_pengkal_uu.ns	11
+ttha.pas_pengkal	11
+ttha.pas_pengkal_u.ns	11
+ttha.pas_pengkal_uu.ns	11
+bha.pas.alt	11
+bha.pas_pengkal	11
+bha.pas_pengkal_u.ns	11
+bha.pas_pengkal_uu.ns	11
+ma.pas_pengkal	11
+ma.pas_pengkal_u.ns	11
+ma.pas_pengkal_uu.ns	11
+ga.pas	12
+tta.pas	12
+ba.pas	12
+sha.pas	12
+ma.pas.alt	12
+nga.pas	13
+dda.pas	13
+ta.pas	13
+tta.pas_pengkal	13
+tta.pas_pengkal_u.ns	13
+tta.pas_pengkal_uu.ns	13
+ka.pas	14
+qa.pas	14
+kha.pas	14
+ttha.pas.alt	14
+dda.pas_pengkal	14
+dda.pas_pengkal_u.ns	14
+dda.pas_pengkal_uu.ns	14
+gha.pas	15
+ca.pas	15
+nna.pas	15
+ya.pas	15
+tta.pas.alt	15
+dda.pas.alt	15
+raagung.pas	16
+ka.pas.alt	16
+qa.pas.alt	16
+ta.pas.alt	16
+la.pas.alt	16
+nya.pas.var	17
+ca.pas.alt	17
+ca.pas_pengkal	17
+ca.pas_pengkal_u.ns	17
+ca.pas_pengkal_uu.ns	17
+cha.pas	18
+cha.pas_u.ns	18
+cha.pas_uu.ns	18
+cha.pas_pengkal	18
+cha.pas_pengkal_u.ns	18
+cha.pas_pengkal_uu.ns	18
+class definition end
+
+class-chain		1, 2	11	1, 33
+class-chain		1, 2	12	1, 33
+class-chain		1, 2	13	1, 33
+class-chain		1, 2	14	1, 33
+class-chain		1, 2	15	1, 33
+class-chain		1, 2	16	1, 33
+class-chain		1, 2	17	1, 33
+class-chain		1, 2	18	1, 33
+class-chain		1, 3	13	1, 33
+class-chain		1, 3	14	1, 33
+class-chain		1, 3	15	1, 33
+class-chain		1, 3	16	1, 33
+class-chain		1, 3	17	1, 33
+class-chain		1, 3	18	1, 33
+class-chain		1, 4	13	1, 33
+class-chain		1, 4	14	1, 33
+class-chain		1, 4	15	1, 33
+class-chain		1, 4	16	1, 33
+class-chain		1, 4	17	1, 33
+class-chain		1, 4	18	1, 33
+class-chain		1, 5	15	1, 33
+class-chain		1, 5	16	1, 33
+class-chain		1, 5	17	1, 33
+class-chain		1, 5	18	1, 33
+class-chain		1, 6	15	1, 33
+class-chain		1, 6	16	1, 33
+class-chain		1, 6	17	1, 33
+class-chain		1, 6	18	1, 33
+class-chain		1, 7	17	1, 33
+class-chain		1, 7	18	1, 33
+
+lookup end
+
+
+lookup	33	single
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+cakra	cakra.pas.alt
+cakra.pas	cakra.pas.alt
+
+lookup end
+
+
+lookup	34	ligature
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+MarkAttachmentType	2
+
+om_javanese	okara	panyangga.ns	uni25CC	tarung
+om_javanese	okara	panyangga.ns	tarung
+om_javanese	okara	tarung	panyangga.ns
+
+lookup end
+
