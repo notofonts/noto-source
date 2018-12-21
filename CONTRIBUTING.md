@@ -24,7 +24,7 @@ use Github pull requests for this purpose.
 ### Font editing
 
 Many noto-source contributors use [glyphsapp](https://glyphsapp.com/) for editing
-the .glyph files in this repository.
+the .glyphs files in this repository.
 
 For those new to font editing that don't yet want to invest in paid editing
 software, there's also [TruFont](https://trufont.github.io/). The issue being that
