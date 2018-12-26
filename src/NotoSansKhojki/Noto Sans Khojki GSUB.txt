@@ -1,0 +1,426 @@
+FontDame GSUB table
+
+
+script table begin
+gujr	default		2
+khoj	default		0, 1, 3, 4
+script table end
+
+
+feature table begin
+0	blws	2
+1	ccmp	0, 1, 9, 10, 15
+2	ccmp	17
+3	psts	3
+4	salt	16
+
+feature table end
+
+lookup	0	ligature
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+MarkAttachmentType	2
+
+KSSA	kj_KA	virama	kj_SA	Nukta
+
+lookup end
+
+
+lookup	1	ligature
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+MarkAttachmentType	1
+
+YA.alt	uni200D	virama	kj_YA
+KRA	kj_KA	uni200D	virama	kj_RA
+KU	kj_KA	kj_vs_U.ns
+KHU	kj_KHA	kj_vs_U.ns
+GU	kj_GA	kj_vs_U.ns
+GNA	kj_GA	virama	kj_NA
+kj_GGA	kj_GA	virama	kj_RA
+GHU	kj_GHA	kj_vs_U.ns
+NGU	kj_NGA	kj_vs_U.ns
+CU	kj_CA	kj_vs_U.ns
+CHU	kj_CHA	kj_vs_U.ns
+JU	kj_JA	kj_vs_U.ns
+JJU	kj_JJA	kj_vs_U.ns
+NYU	kj_NYA	kj_vs_U.ns
+DDU	kj_DDA	kj_vs_U.ns
+DDHU	kj_DDHA	kj_vs_U.ns
+NNU	kj_NNA	kj_vs_U.ns
+TU	kj_TA	kj_vs_U.ns
+TRU	kj_TA	virama	kj_RA	kj_vs_U.ns
+TRA	kj_TA	virama	kj_RA
+THU	kj_THA	kj_vs_U.ns
+DU	kj_DA	kj_vs_U.ns
+DDDU	kj_DDDA	kj_vs_U.ns
+DDDRU	kj_DDDA	virama	kj_RA	kj_vs_U.ns
+DDDRA	kj_DDDA	virama	kj_RA
+NU	kj_NA	kj_vs_U.ns
+PU	kj_PA	kj_vs_U.ns
+PHU	kj_PHA	kj_vs_U.ns
+BU	kj_BA	kj_vs_U.ns
+BBU	kj_BBA	kj_vs_U.ns
+BHRA	kj_BHA	uni200D	virama	kj_RA
+BHU	kj_BHA	kj_vs_U.ns
+MRA	kj_MA	uni200D	virama	kj_RA
+MU	kj_MA	kj_vs_U.ns
+YU	kj_YA	kj_vs_U.ns
+RU	kj_RA	kj_vs_U.ns
+LU	kj_LA	kj_vs_U.ns
+VU	kj_VA	kj_vs_U.ns
+SRA	kj_SA	uni200D	virama	kj_RA
+SU	kj_SA	kj_vs_U.ns
+HU	kj_HA	kj_vs_U.ns
+LLU	kj_LLA	kj_vs_U.ns
+YA.alt	virama	kj_YA
+RA.alt	virama	kj_RA
+
+lookup end
+
+
+lookup	2	chained
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+MarkAttachmentType	1
+
+backtrackclass definition begin
+YA.alt	1
+YA.alt2	1
+class definition end
+
+class definition begin
+kj_KHA	1
+kj_GGA	1
+kj_JJA	1
+kj_DHA	1
+BHRA	1
+MRA	1
+kj_TTA	2
+kj_TTHA	2
+KSSA	3
+GNA	3
+kj_NA	4
+kj_JA	5
+kj_TA	5
+kj_LA	5
+kj_vs_U.ns	6
+YA.alt	7
+class definition end
+
+class-chain		1, 6		2, 4
+class-chain		2, 6		2, 5
+class-chain		3, 6		2, 6
+class-chain		4, 7		2, 5
+class-chain		5, 7		2, 6
+class-chain	1	6		1, 6
+
+lookup end
+
+
+lookup	3	context
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	yes
+
+class definition begin
+TRA	1
+YA.alt	1
+YA.alt2	1
+kj_GA	1
+kj_GGA	1
+kj_GHA	1
+kj_CA	1
+kj_JA	1
+kj_TA	1
+kj_BA	1
+kj_BBA	1
+kj_BHA	1
+kj_MA	1
+kj_YA	1
+kj_LA	1
+kj_VA	1
+YA.alt3	2
+kj_CHA	2
+kj_JJA	2
+kj_DDA	2
+kj_DDHA	2
+kj_NNA	2
+kj_DHA	2
+kj_LLA	2
+kj_THA	3
+kj_PA	3
+kj_SA	3
+kj_KHA	4
+kj_NA	4
+DDDRA	5
+kj_TTA	5
+kj_TTHA	5
+kj_DDDA	5
+KSSA	6
+GNA	6
+kj_KA	6
+kj_HA	6
+kj_NGA	7
+kj_NYA	7
+kj_vs_I	8
+kj_vs_II	9
+class definition end
+
+class	1, 8	2, 4
+class	1, 9	2, 5
+class	2, 8	2, 5
+class	2, 9	2, 5
+class	3, 8	1, 4	2, 6
+class	3, 9	1, 4	2, 8
+class	4, 8	1, 4	2, 7
+class	4, 9	1, 4	2, 7
+class	5, 8	2, 5
+class	6, 8	1, 4
+class	6, 9	1, 4	2, 4
+class	7, 8	2, 5
+class	7, 9	2, 6
+
+lookup end
+
+
+lookup	4	single
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+KSSA	KSSA.alt
+GNA	GNA.alt
+kj_KA	KA.alt
+kj_KHA	KHA.alt
+kj_THA	THA.alt
+kj_NA	NA.alt
+kj_PA	PA.alt
+kj_SA	SA.alt
+kj_HA	HA.alt
+kj_vs_I	I.alt
+kj_vs_II	II.alt
+kj_vs_U.ns	U.alt
+
+lookup end
+
+
+lookup	5	single
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+YA.alt	YA.alt2
+kj_vs_I	I.alt2
+kj_vs_II	II.alt2
+kj_vs_U.ns	U.alt2
+
+lookup end
+
+
+lookup	6	single
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+YA.alt	YA.alt3
+kj_vs_I	I.alt3
+kj_vs_II	II.alt3
+kj_vs_U.ns	U.alt3
+
+lookup end
+
+
+lookup	7	single
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+kj_vs_I	I.alt4
+kj_vs_II	II.alt4
+
+lookup end
+
+
+lookup	8	single
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+kj_vs_II	II.alt5
+
+lookup end
+
+
+lookup	9	ligature
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+MarkAttachmentType	1
+
+Ra_U	RA.alt	kj_vs_U.ns
+
+lookup end
+
+
+lookup	10	context
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+MarkAttachmentType	2
+
+class definition begin
+Nukta	1
+Nukta.alt	1
+Shadda	2
+kj_vs_E.ns	3
+kj_vs_AI.ns	3
+kj_vs_O	4
+kj_vs_AU	5
+class definition end
+
+class	1, 2, 3	1, 14
+class	1, 2, 4	3, 11	1, 12	2, 14
+class	1, 2, 5	3, 11	1, 13	2, 14
+class	1, 2	1, 14
+class	1, 3	1, 14
+class	1, 4	2, 11	1, 12
+class	1, 5	2, 11	1, 13
+class	2, 3	1, 14
+class	2, 4	2, 11	1, 12
+class	2, 5	2, 11	1, 13
+
+lookup end
+
+
+lookup	11	single
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+kj_vs_O	NullMark
+kj_vs_AU	NullMark
+
+lookup end
+
+
+lookup	12	multiple
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+Nukta	kj_vs_O	Nukta
+Shadda	kj_vs_O	Shadda
+Nukta.alt	kj_vs_O	Nukta.alt
+
+lookup end
+
+
+lookup	13	multiple
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+Nukta	kj_vs_AU	Nukta
+Shadda	kj_vs_AU	Shadda
+Nukta.alt	kj_vs_AU	Nukta.alt
+
+lookup end
+
+
+lookup	14	ligature
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+MarkAttachmentType	2
+
+Nukta_Shadda_E.ns	Nukta	Shadda	kj_vs_E.ns
+Nukta_Shadda_AI.ns	Nukta	Shadda	kj_vs_AI.ns
+Nukta_Shadda.ns	Nukta	Shadda
+Nukta_E.ns	Nukta	kj_vs_E.ns
+Nukta_AI.ns	Nukta	kj_vs_AI.ns
+E_Shadda.ns	Shadda	kj_vs_E.ns
+AI_Shadda.ns	Shadda	kj_vs_AI.ns
+
+lookup end
+
+
+lookup	15	ligature
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	yes
+
+DDDRII	DDDRA	kj_vs_II
+DDII	kj_DDA	kj_vs_II
+DI	kj_DA	kj_vs_I
+DII	kj_DA	kj_vs_II
+DDDII	kj_DDDA	kj_vs_II
+PHI	kj_PHA	kj_vs_I
+PHII	kj_PHA	kj_vs_II
+RI	kj_RA	kj_vs_I
+RII	kj_RA	kj_vs_II
+LLII	kj_LLA	kj_vs_II
+
+lookup end
+
+
+lookup	16	single
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+MarkAttachmentType	2
+
+Anusvara	Anusvara.alt
+Nukta	Nukta.alt
+
+lookup end
+
+
+lookup	17	single
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	yes
+
+space	space
+
+lookup end
+
