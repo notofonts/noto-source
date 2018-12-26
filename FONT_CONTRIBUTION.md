@@ -48,18 +48,19 @@ CSS3 has a generic family 'system-ui' and Noto UI fonts nicely corresponds to th
 ### Noto Font Metrics Requirements
 units per Em: 1000
 
-Table|Metric|Noto UI Fonts|Noto Document Fonts
-head|ymax|≤ 1069|≤ A
-head|ymin|≥ -293|≥ -B
-hhea|Ascender|= 1069|= A
-hhea|Descender|= -293|= -B
-hhea|LineGap|= 0|= 0
-OS/2|usWinAscent|= 1069|= A
-OS/2|usWinDescent|= 293|= B
-OS/2|sTypoAscender|= 1069|= A
-OS/2|sTypoDescender|= -293|= -B
-OS/2|sTypoLineGap|= 0|= 0
-Fully shaped text||should fit within (1069, -293)|should fit within (A, -B)
+|Table|Metric|Noto UI Fonts|Noto Document Fonts|
+|-----|------|-------------|-------------------|
+|head|ymax|≤ 1069|≤ A|
+|head|ymin|≥ -293|≥ -B|
+|hhea|Ascender|= 1069|= A|
+|hhea|Descender|= -293|= -B|
+|hhea|LineGap|= 0|= 0|
+|OS/2|usWinAscent|= 1069|= A|
+|OS/2|usWinDescent|= 293|= B|
+|OS/2|sTypoAscender|= 1069|= A|
+|OS/2|sTypoDescender|= -293|= -B|
+|OS/2|sTypoLineGap|= 0|= 0|
+|Fully shaped text||should fit within (1069, -293)|should fit within (A, -B)|
 
 Note: The (A, B) metric of document fonts need not fit within the constraints specified for the UI font (1069, -293) [Roboto Regular’s metrics translated for 1000em] or (1056, -271) [matching Open Sans Regular’s metrics]. For document fonts, while there is no fixed metric to fit within, A and B should be reasonable and not overly large in comparison to other fonts. When proposing a new document font, at least approximate values for these should be specified.
 
