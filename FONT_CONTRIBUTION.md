@@ -6,7 +6,7 @@ This document gathers in a single place all the requirements and steps that are 
 
 
 ### Process
-1. Prepare a proposal for a script. It might adding new codepoints or a totally new script.
+1. Prepare a proposal for a script. Both adding or replacing new codepoints to an existing fonts or a totally new script need a proposal first.
 2. Submit it to noto-proposals-external@googlegroups.com (needed: review process)
 3. The review process might: (i) approve it, (ii) reject it or (iii) require additional information.
 4. Any approved scripts need to meet the requirements listed in the sections New Font Delivery Requirements and Additions to an existing Font Delivery Requirements below
