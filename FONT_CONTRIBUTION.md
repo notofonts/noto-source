@@ -7,7 +7,7 @@ This document gathers in a single place all the requirements and steps that are 
 
 ### Process
 1. Prepare a proposal for a script
-2. Submit it to noto-proposals-external@google.com (needed: review process)
+2. Submit it to noto-proposals-external@googlegroups.com (needed: review process)
 3. The review process might: (i) approve it, (ii) reject it or (iii) require additional information.
 4. Any approved scripts need to meet the requirements listed in the sections New Font Delivery Requirements and Additions to an existing Font Delivery Requirements below
 
