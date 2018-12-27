@@ -32,9 +32,10 @@ To be accepted as a Noto font, the font and the sources need to meet the followi
 
 ### Additions to an existing Font Delivery Requirements (when a script already exists)
 The items below apply in addition to the items listed in the New Font Delivery Requirements when a script already exists.
-1. If a Serif version of font already exists and a Sans version of the font is newly added, the glyphs in the Sans need to be visually matching to the existing glyphs in Serif (or a strong justification is required why they are not). Same is true when a Serif font is submitted and a Sans version already exists.
+1. If a Serif version of font already exists and a Sans version of the font is newly added, the glyphs in the Sans need to be "aesthetically compatible" to the existing glyphs in Serif (or a strong justification is required why they are not). Same is true when a Serif font is submitted and a Sans version already exists.
 2. If a Sans or Serif version of a font exists and a new Serif or Sans font is produced then any existing OTF functionality in the existing font ought to re-produced for the new font.
 3. The number of widths or weights supported by the new font needs to be equal or greater to the number of corresponding widths or weights and at least the existing widths and weights need to be supported.
+4. If a new codepoint is added to an existing font then a glyph for this new codepoint needs to be "aesthetically compatible" with the already existing glyphs. Addition of a new glyph is required for both Sans and Serif styles of the font (if applicable).
 
 
 ### Document vs UI Fonts
