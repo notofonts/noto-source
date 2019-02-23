@@ -12,9 +12,9 @@ script table end
 feature table begin
 0	dist	1
 1	kern	0
-2	kern	11
+2	kern	12
 3	mark	3, 4, 6, 5, 7, 8
-4	mkmk	9
+4	mkmk	9, 10
 
 feature table end
 
@@ -97,7 +97,7 @@ class-chain		2	2	1, 2
 class-chain		3	3	1, 2
 class-chain		4	4	1, 2
 class-chain		5	2	1, 2
-class-chain		5, 7, 6		2, 10
+class-chain		5, 7, 6		2, 11
 
 lookup end
 
@@ -640,7 +640,21 @@ base	kj_vs_AI.ns	0	-87,850
 lookup end
 
 
-lookup	10	single
+lookup	10	mark to mark
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+mark	u1123E	0	-200,620
+base	Nukta	0	-160,940
+base	Nukta.alt	0	-160,940
+
+lookup end
+
+
+lookup	11	single
 
 RightToLeft	no
 IgnoreBaseGlyphs	no
@@ -657,7 +671,7 @@ y placement	Nukta_Shadda.ns	40
 lookup end
 
 
-lookup	11	single
+lookup	12	single
 
 RightToLeft	no
 IgnoreBaseGlyphs	no
