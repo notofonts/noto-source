@@ -4,13 +4,14 @@ EM	1000
 
 
 script table begin
-aghb	default		0, 1
+aghb	default		0, 1, 2
 script table end
 
 
 feature table begin
 0	kern	0
 1	mark	1, 2
+2	mkmk	4
 
 feature table end
 
@@ -756,6 +757,91 @@ base	uni25CC	2	0,0
 base	uni25CC	3	299,714
 base	uni25CC	4	597,714
 base	uni25CC	5	0,714
+
+lookup end
+
+
+lookup	3	mark to mark
+
+RightToLeft	no
+IgnoreBaseGlyphs	yes
+IgnoreLigatures	no
+IgnoreMarks	no
+
+mark	uniFE26	0	-365,858
+mark	uniFE21	0	-5,936
+base	uniFE26	0	-146,858
+base	uniFE20	0	-506,936
+
+lookup end
+
+
+lookup	4	chained
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+class definition begin
+u10530	1
+u10531	1
+u10532	1
+u10533	1
+u10534	1
+u10535	1
+u10536	1
+u10537	1
+u10538	1
+u10539	1
+u1053A	1
+u1053B	1
+u1053C	1
+u1053D	1
+u1053E	1
+u1053F	1
+u10540	1
+u10541	1
+u10542	1
+u10543	1
+u10544	1
+u10545	1
+u10546	1
+u10547	1
+u10548	1
+u10549	1
+u1054A	1
+u1054B	1
+u1054C	1
+u1054D	1
+u1054E	1
+u1054F	1
+u10550	1
+u10551	1
+u10552	1
+u10553	1
+u10554	1
+u10555	1
+u10556	1
+u10557	1
+u10558	1
+u10559	1
+u1055A	1
+u1055B	1
+u1055C	1
+u1055D	1
+u1055E	1
+u1055F	1
+u10560	1
+u10561	1
+u10562	1
+u10563	1
+uniFE20	2
+uniFE26	3
+uniFE21	4
+class definition end
+
+class-chain		1, 2, 1, 3, 1, 4		4, 3	6, 3
 
 lookup end
 
