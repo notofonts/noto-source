@@ -1,0 +1,574 @@
+FontDame GSUB table
+
+script table begin
+gur2	default		0, 2, 5, 6, 7, 8, 9
+guru	default		0, 1, 3, 4, 6, 7, 8
+script table end
+
+
+feature table begin
+0	nukt	nukta-guru
+1	blwf	belowforms-guru
+2	blwf	belowforms-gur2
+3	half	halfform-guru
+4	pstf	postform-guru
+5	pstf	postform-gur2
+6	blws	fixsubscriptdoubles-guru,belowligs-guru,kara-guru,connectsubscripts-guru,nuktacontext-guru
+7	abvs	top-maatra-guru,addak-context-guru,addakfix-guru
+8	haln	haln-guru
+9	calt	specialaddak-guru
+feature table end
+
+
+%( standard nukta lookup )
+
+lookup	nukta-guru	ligature
+
+unuktaguru	uguru	nuktaguru
+uunuktaguru	uuguru	nuktaguru
+kanuktaguru	kaguru	nuktaguru
+khanuktaguru	khaguru	nuktaguru
+ganuktaguru	gaguru	nuktaguru
+ghanuktaguru	ghaguru	nuktaguru
+nganuktaguru	ngaguru	nuktaguru
+canuktaguru	caguru	nuktaguru
+chanuktaguru	chaguru	nuktaguru
+januktaguru	jaguru	nuktaguru
+jhanuktaguru	jhaguru	nuktaguru
+nyanuktaguru	nyaguru	nuktaguru
+ttanuktaguru	ttaguru	nuktaguru
+tthanuktaguru	tthaguru	nuktaguru
+rraguru	ddaguru	nuktaguru
+ddhanuktaguru	ddhaguru	nuktaguru
+nnanuktaguru	nnaguru	nuktaguru
+tanuktaguru	taguru	nuktaguru
+thanuktaguru	thaguru	nuktaguru
+danuktaguru	daguru	nuktaguru
+dhanuktaguru	dhaguru	nuktaguru
+nanuktaguru	naguru	nuktaguru
+panuktaguru	paguru	nuktaguru
+phanuktaguru	phaguru	nuktaguru
+banuktaguru	baguru	nuktaguru
+bhanuktaguru	bhaguru	nuktaguru
+manuktaguru	maguru	nuktaguru
+yanuktaguru	yaguru	nuktaguru
+ranuktaguru	raguru	nuktaguru
+lanuktaguru	laguru	nuktaguru
+vanuktaguru	vaguru	nuktaguru
+sanuktaguru	saguru	nuktaguru
+hanuktaguru	haguru	nuktaguru
+
+lookup end
+
+
+% (4 below base forms)
+
+lookup	belowforms-guru	ligature
+
+rasubscriptguru	raguru	halantguru
+hasubscriptguru	haguru	halantguru
+vasubscriptguru	vaguru	halantguru
+
+lookup end
+
+
+% gur2 (4 below base forms)
+
+lookup	belowforms-gur2	ligature
+
+rasubscriptguru	halantguru	raguru
+hasubscriptguru	halantguru	haguru
+vasubscriptguru	halantguru	vaguru
+
+lookup end
+
+
+lookup	halfform-guru	ligature
+
+kaprehalfguru	kaguru	halantguru
+khaprehalfguru	khaguru	halantguru
+gaprehalfguru	gaguru	halantguru
+ghaprehalfguru	ghaguru	halantguru
+ngaprehalfguru	ngaguru	halantguru
+caprehalfguru	caguru	halantguru
+chaprehalfguru	chaguru	halantguru
+japrehalfguru	jaguru	halantguru
+jhaprehalfguru	jhaguru	halantguru
+nyaprehalfguru	nyaguru	halantguru
+ttaprehalfguru	ttaguru	halantguru
+tthaprehalfguru	tthaguru	halantguru
+ddaprehalfguru	ddaguru	halantguru
+ddhaprehalfguru	ddhaguru	halantguru
+nnaprehalfguru	nnaguru	halantguru
+taprehalfguru	taguru	halantguru
+thaprehalfguru	thaguru	halantguru
+daprehalfguru	daguru	halantguru
+dhaprehalfguru	dhaguru	halantguru
+naprehalfguru	naguru	halantguru
+paprehalfguru	paguru	halantguru
+phaprehalfguru	phaguru	halantguru
+baprehalfguru	baguru	halantguru
+bhaprehalfguru	bhaguru	halantguru
+maprehalfguru	maguru	halantguru
+yaprehalfguru	yaguru	halantguru
+raprehalfguru	raguru	halantguru
+laprehalfguru	laguru	halantguru
+vaprehalfguru	vaguru	halantguru
+saprehalfguru	saguru	halantguru
+haprehalfguru	haguru	halantguru
+kanuktaprehalfguru	kanuktaguru	halantguru
+khanuktaprehalfguru	khanuktaguru	halantguru
+ganuktaprehalfguru	ganuktaguru	halantguru
+ghanuktaprehalfguru	ghanuktaguru	halantguru
+nganuktaprehalfguru	nganuktaguru	halantguru
+canuktaprehalfguru	canuktaguru	halantguru
+chanuktaprehalfguru	chanuktaguru	halantguru
+januktaprehalfguru	januktaguru	halantguru
+jhanuktaprehalfguru	jhanuktaguru	halantguru
+nyanuktaprehalfguru	nyanuktaguru	halantguru
+ttanuktaprehalfguru	ttanuktaguru	halantguru
+tthanuktaprehalfguru	tthanuktaguru	halantguru
+ddanuktaprehalfguru	rraguru	halantguru
+ddhanuktaprehalfguru	ddhanuktaguru	halantguru
+nnanuktaprehalfguru	nnanuktaguru	halantguru
+tanuktaprehalfguru	tanuktaguru	halantguru
+thanuktaprehalfguru	thanuktaguru	halantguru
+danuktaprehalfguru	danuktaguru	halantguru
+dhanuktaprehalfguru	dhanuktaguru	halantguru
+nanuktaprehalfguru	nanuktaguru	halantguru
+panuktaprehalfguru	panuktaguru	halantguru
+phanuktaprehalfguru	phanuktaguru	halantguru
+banuktaprehalfguru	banuktaguru	halantguru
+bhanuktaprehalfguru	bhanuktaguru	halantguru
+manuktaprehalfguru	manuktaguru	halantguru
+yanuktaprehalfguru	yanuktaguru	halantguru
+ranuktaprehalfguru	ranuktaguru	halantguru
+lanuktaprehalfguru	lanuktaguru	halantguru
+vanuktaprehalfguru	vanuktaguru	halantguru
+sanuktaprehalfguru	sanuktaguru	halantguru
+hanuktaprehalfguru	hanuktaguru	halantguru
+
+lookup end
+
+
+lookup	postform-guru	ligature
+
+yapostformguru	yaguru	halantguru
+
+lookup end
+
+
+
+% gur2
+
+lookup	postform-gur2	ligature
+
+yapostformguru	halantguru	yaguru
+
+lookup end
+
+
+
+lookup	fixsubscriptdoubles-guru	chained
+
+backtrackclass definition begin
+# 1	1
+class definition end
+
+class definition begin
+rasubscriptguru	1
+hasubscriptguru	1
+vasubscriptguru	1
+class definition end
+
+lookaheadclass definition begin
+rasubscriptguru	1
+hasubscriptguru	1
+vasubscriptguru	1
+udaatguru	1
+yakashguru	1
+class definition end
+
+class-chain		1	1	1,splitsubs-guru
+
+lookup end
+
+
+lookup	splitsubs-guru	multiple
+
+rasubscriptguru	halantguru	raguru
+hasubscriptguru	halantguru	haguru
+vasubscriptguru	halantguru	vaguru
+
+lookup end
+
+
+lookup	belowligs-guru	ligature
+
+rasubscripthalantguru	rasubscriptguru	halantguru
+hasubscripthalantguru	hasubscriptguru	halantguru
+vasubscripthalantguru	vasubscriptguru	halantguru
+rasubscriptuguru	rasubscriptguru	umatraguru
+hasubscriptuguru	hasubscriptguru	umatraguru
+vasubscriptuguru	vasubscriptguru	umatraguru
+rasubscriptuuguru	rasubscriptguru	uumatraguru
+hasubscriptuuguru	hasubscriptguru	uumatraguru
+vasubscriptuuguru	vasubscriptguru	uumatraguru
+udaathalantguru	udaatguru	halantguru
+yakashhalantguru	yakashguru	halantguru
+udaatuguru	udaatguru	umatraguru
+yakashuguru	yakashguru	umatraguru
+udaatuuguru	udaatguru	uumatraguru
+yakashuuguru	yakashguru	uumatraguru
+
+lookup end
+
+
+
+%(kara subscript ligature)
+
+lookup	kara-guru	ligature
+
+karaguru	kaguru	rasubscriptguru
+phunuktaguru	phanuktaguru	umatraguru
+phuunuktaguru	phanuktaguru	uumatraguru
+
+lookup end
+
+
+
+lookup	connectsubscripts-guru	chained
+
+backtrackclass definition begin
+caguru	1
+chaguru	1
+nyaguru	1
+ttaguru	1
+tthaguru	1
+ddaguru	1
+ddhaguru	1
+nnaguru	1
+taguru	1
+daguru	1
+naguru	1
+phaguru	1
+bhaguru	1
+raguru	1
+laguru	1
+lanuktaguru	1
+vaguru	1
+haguru	1
+phanuktaguru	1
+class definition end
+
+class definition begin
+rasubscriptguru	1
+hasubscriptguru	1
+vasubscriptguru	1
+class definition end
+
+lookaheadclass definition begin
+# 1	1
+class definition end
+
+class-chain	1	1		1,othersubscript-guru
+
+lookup end
+
+
+lookup	othersubscript-guru	single
+
+rasubscriptguru	rasubscript1guru
+hasubscriptguru	hasubscript1guru
+vasubscriptguru	vasubscript1guru
+
+lookup end
+
+
+lookup	nuktacontext-guru	context
+
+class definition begin
+lanuktaguru	1
+nganuktaguru	1
+chanuktaguru	1
+jhanuktaguru	1
+nyanuktaguru	1
+ttanuktaguru	1
+tthanuktaguru	1
+ddhanuktaguru	1
+nnanuktaguru	1
+tanuktaguru	1
+danuktaguru	1
+nanuktaguru	1
+bhanuktaguru	1
+ranuktaguru	1
+vanuktaguru	1
+hanuktaguru	1
+umatraguru	2
+uumatraguru	2
+class definition end
+
+class	1,2	2,lowu-guru
+
+lookup end
+
+
+lookup	lowu-guru	single
+
+umatraguru	umatralowguru
+uumatraguru	uumatralowguru
+
+lookup end
+
+
+% (prevent collisions top mataras with bindi (and tippi?))
+
+lookup	top-maatra-guru	ligature
+
+iibindiguru	iiguru	bindiguru
+ubindiguru	uguru	bindiguru
+uubindiguru	uuguru	bindiguru
+eebindiguru	eeguru	bindiguru
+aibindiguru	aiguru	bindiguru
+oobindiguru	ooguru	bindiguru
+aubindiguru	auguru	bindiguru
+iimatrabindiguru	iimatraguru	bindiguru
+eematrabindiguru	eematraguru	bindiguru
+aimatrabindiguru	aimatraguru	bindiguru
+oomatrabindiguru	oomatraguru	bindiguru
+aumatrabindiguru	aumatraguru	bindiguru
+iibindiguru	iiguru	tippiguru
+ubindiguru	uguru	tippiguru
+uubindiguru	uuguru	tippiguru
+eebindiguru	eeguru	tippiguru
+aibindiguru	aiguru	tippiguru
+oobindiguru	ooguru	tippiguru
+aubindiguru	auguru	tippiguru
+iimatrabindiguru	iimatraguru	tippiguru
+eematrabindiguru	eematraguru	tippiguru
+aimatrabindiguru	aimatraguru	tippiguru
+oomatrabindiguru	oomatraguru	tippiguru
+aumatrabindiguru	aumatraguru	tippiguru
+ubindinuktaguru	unuktaguru	bindiguru
+uubindinuktaguru	uunuktaguru	bindiguru
+ubindinuktaguru	unuktaguru	tippiguru
+uubindinuktaguru	uunuktaguru	tippiguru
+% new
+iiaddakguru	iiguru	addakguru
+uaddakguru	uguru	addakguru
+uuaddakguru	uuguru	addakguru
+eeaddakguru	eeguru	addakguru
+aiaddakguru	aiguru	addakguru
+ooaddakguru	ooguru	addakguru
+auaddakguru	auguru	addakguru
+iimatraaddakguru	iimatraguru	addakguru
+unuktaaddakguru	unuktaguru	addakguru
+uunuktaaddakguru	uunuktaguru	addakguru
+eematraaddakguru	eematraguru	addakguru
+aimatraaddakguru	aimatraguru	addakguru
+oomatraaddakguru	oomatraguru	addakguru
+aumatraaddakguru	aumatraguru	addakguru
+
+lookup end
+
+
+% (use spacing addak when it follows top matra or vowel modifieer)
+
+% new
+
+lookup	addak-context-guru	chained
+
+backtrackclass definition begin
+iibindiguru	1
+ubindiguru	1
+uubindiguru	1
+ubindinuktaguru	1
+uubindinuktaguru	1
+eebindiguru	1
+aibindiguru	1
+oobindiguru	1
+aubindiguru	1
+tippiguru	1
+bindiguru	1
+iimatrabindiguru	1
+eematrabindiguru	1
+aimatrabindiguru	1
+oomatrabindiguru	1
+aumatrabindiguru	1
+class definition end
+
+class definition begin
+addakguru	1
+class definition end
+
+lookaheadclass definition begin
+# 1	1
+class definition end
+
+class-chain	1	1		1,addakbar-guru
+
+lookup end
+
+
+
+lookup	addakbar-guru	single
+
+addakguru	addakbaraltguru
+
+lookup end
+
+
+% new
+
+lookup	addakfix-guru	chained
+
+backtrackclass definition begin
+rasubscript1guru	1
+hasubscript1guru	1
+vasubscript1guru	1
+udaatguru	1
+yakashguru	1
+tthaguru	2
+naguru	2
+tthanuktaguru	2
+nanuktaguru	2
+class definition end
+
+class definition begin
+oomatraguru	1
+oomatrabindiguru	1
+eematraaddakguru	2
+aimatraaddakguru	2
+oomatraaddakguru	2
+aumatraaddakguru	2
+class definition end
+
+lookaheadclass definition begin
+# 1	1
+class definition end
+
+class-chain	1,2	1		1,shortoomatra-guru
+class-chain	2	1		1,shortoomatra-guru
+class-chain	1,2	2		1,restoreaddak-guru
+class-chain	2	2		1,restoreaddak-guru
+
+lookup end
+
+
+% new
+
+lookup	shortoomatra-guru	single
+
+oomatraguru	oomatra1guru
+oomatrabindiguru	oomatrabindi1guru
+
+lookup end
+
+
+% new
+
+lookup	restoreaddak-guru	multiple
+
+eematraaddakguru	eematraguru	addakguru
+aimatraaddakguru	aimatraguru	addakguru
+oomatraaddakguru	oomatra1guru	addakguru
+aumatraaddakguru	aumatraguru	addakguru
+
+lookup end
+
+
+
+lookup	specialaddak-guru	context
+
+glyph	eematraaddakguru,taguru,oomatraguru	1,swapaddak-guru
+glyph	eematraaddakguru,imatraguru	1,swapaddak-guru
+glyph	oomatraaddakguru,taguru,oomatraguru	1,swapaddak-guru
+glyph	oomatraaddakguru,imatraguru	1,swapaddak-guru
+
+glyph	uaddakguru,imatraguru	1,swapaddak-guru
+glyph	uaddakguru,taguru,eematraguru	1,swapaddak-guru
+glyph	uaddakguru,tthaguru,eematraguru	1,swapaddak-guru
+glyph	uaddakguru,taguru,eematrabindiguru	1,swapaddak-guru
+glyph	uaddakguru,taguru,oomatrabindiguru	1,swapaddak-guru
+glyph	uaddakguru,thaguru,oomatrabindiguru	1,swapaddak-guru
+glyph	uaddakguru,dhaguru,oomatrabindiguru	1,swapaddak-guru
+
+lookup end
+
+
+
+lookup	swapaddak-guru	single
+
+uaddakguru	uaddakaltguru
+eematraaddakguru	eematraaddakaltguru
+oomatraaddakguru	oomatraaddakaltguru
+
+lookup end
+
+
+lookup	haln-guru	ligature
+
+kaprehalfguru	kaguru	halantguru
+khaprehalfguru	khaguru	halantguru
+gaprehalfguru	gaguru	halantguru
+ghaprehalfguru	ghaguru	halantguru
+ngaprehalfguru	ngaguru	halantguru
+caprehalfguru	caguru	halantguru
+chaprehalfguru	chaguru	halantguru
+japrehalfguru	jaguru	halantguru
+jhaprehalfguru	jhaguru	halantguru
+nyaprehalfguru	nyaguru	halantguru
+ttaprehalfguru	ttaguru	halantguru
+tthaprehalfguru	tthaguru	halantguru
+ddaprehalfguru	ddaguru	halantguru
+ddhaprehalfguru	ddhaguru	halantguru
+nnaprehalfguru	nnaguru	halantguru
+taprehalfguru	taguru	halantguru
+thaprehalfguru	thaguru	halantguru
+daprehalfguru	daguru	halantguru
+dhaprehalfguru	dhaguru	halantguru
+naprehalfguru	naguru	halantguru
+paprehalfguru	paguru	halantguru
+phaprehalfguru	phaguru	halantguru
+baprehalfguru	baguru	halantguru
+bhaprehalfguru	bhaguru	halantguru
+maprehalfguru	maguru	halantguru
+yaprehalfguru	yaguru	halantguru
+raprehalfguru	raguru	halantguru
+laprehalfguru	laguru	halantguru
+vaprehalfguru	vaguru	halantguru
+saprehalfguru	saguru	halantguru
+haprehalfguru	haguru	halantguru
+kanuktaprehalfguru	kanuktaguru	halantguru
+khanuktaprehalfguru	khanuktaguru	halantguru
+ganuktaprehalfguru	ganuktaguru	halantguru
+ghanuktaprehalfguru	ghanuktaguru	halantguru
+nganuktaprehalfguru	nganuktaguru	halantguru
+canuktaprehalfguru	canuktaguru	halantguru
+chanuktaprehalfguru	chanuktaguru	halantguru
+januktaprehalfguru	januktaguru	halantguru
+jhanuktaprehalfguru	jhanuktaguru	halantguru
+nyanuktaprehalfguru	nyanuktaguru	halantguru
+ttanuktaprehalfguru	ttanuktaguru	halantguru
+tthanuktaprehalfguru	tthanuktaguru	halantguru
+ddanuktaprehalfguru	rraguru	halantguru
+ddhanuktaprehalfguru	ddhanuktaguru	halantguru
+nnanuktaprehalfguru	nnanuktaguru	halantguru
+tanuktaprehalfguru	tanuktaguru	halantguru
+thanuktaprehalfguru	thanuktaguru	halantguru
+danuktaprehalfguru	danuktaguru	halantguru
+dhanuktaprehalfguru	dhanuktaguru	halantguru
+nanuktaprehalfguru	nanuktaguru	halantguru
+panuktaprehalfguru	panuktaguru	halantguru
+phanuktaprehalfguru	phanuktaguru	halantguru
+banuktaprehalfguru	banuktaguru	halantguru
+bhanuktaprehalfguru	bhanuktaguru	halantguru
+manuktaprehalfguru	manuktaguru	halantguru
+yanuktaprehalfguru	yanuktaguru	halantguru
+ranuktaprehalfguru	ranuktaguru	halantguru
+lanuktaprehalfguru	lanuktaguru	halantguru
+vanuktaprehalfguru	vanuktaguru	halantguru
+sanuktaprehalfguru	sanuktaguru	halantguru
+hanuktaprehalfguru	hanuktaguru	halantguru
+
+lookup end
