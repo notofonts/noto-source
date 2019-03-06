@@ -90,7 +90,8 @@ function glyphs_from_plist() {
         */NotoSansTamilUI-MM.plist|\
         */NotoSansBengaliUI-MM.plist|\
         */NotoSansMalayalamUI-MM.plist|\
-        */NotoSansKannadaUI-MM.plist)
+        */NotoSansKannadaUI-MM.plist|\
+        */NotoSansGurmukhiUI-MM.plist)
             echo "${glyphs/UI/}"
             ;;
         *)
@@ -130,6 +131,12 @@ function family_from_plist() {
             ;;
         */NotoSansMalayalamUI-MM.plist)
             echo 'Noto Sans Malayalam UI'
+            ;;
+        */NotoSansGurmukhi-MM.plist)
+            echo 'Noto Sans Gurmukhi'
+            ;;
+        */NotoSansGurmukhiUI-MM.plist)
+            echo 'Noto Sans Gurmukhi UI'
             ;;
         *)
             echo ''
