@@ -51,3 +51,5 @@ To contribute to this project, please read [CONTRIBUTING](CONTRIBUTING.md)
 ## News
 
 * 2015-12-07: first release, covering Noto Sans UI {Italic, Mono, Roman}, Noto Sans Display {Italic, Roman}, Noto {Sans, Serif} {Armenian, Georgian}.
+
+* 2019-03-10: added master_ufo directory containing zip files of UFO files corresponding to the sources in src; this is just an experiment, please send feedback to let us know what you think. https://github.com/marekjez86 tested Music and Nastaliq; they looked OK. If you see problems please file issues.
