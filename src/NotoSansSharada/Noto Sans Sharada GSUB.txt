@@ -7,9 +7,9 @@ script table end
 
 
 feature table begin
-0	abvf	1
+0	abvs	1
 1	akhn	0
-2	blwf	3
+2	blws	2
 
 feature table end
 
@@ -19,6 +19,7 @@ RightToLeft	no
 IgnoreBaseGlyphs	no
 IgnoreLigatures	no
 IgnoreMarks	no
+MarkFilterType	0
 
 Ku	Ka	U
 Kuu	Ka	UU
@@ -121,28 +122,7 @@ HYa	Ha	virama	Ya
 lookup end
 
 
-lookup	1	context
-
-RightToLeft	no
-IgnoreBaseGlyphs	no
-IgnoreLigatures	no
-IgnoreMarks	no
-
-class definition begin
-Jihvamuliya	1
-Upadhmaniya	1
-Ka	2
-Kha	2
-Pa	2
-Pha	2
-class definition end
-
-class	1, 2	1, 2
-
-lookup end
-
-
-lookup	2	single
+lookup	1	single
 
 RightToLeft	no
 IgnoreBaseGlyphs	no
@@ -155,13 +135,13 @@ Upadhmaniya	Upadhmaniya.ns
 lookup end
 
 
-lookup	3	context
+lookup	2	chained
 
 RightToLeft	no
 IgnoreBaseGlyphs	no
 IgnoreLigatures	no
 IgnoreMarks	no
-MarkAttachmentType	1
+MarkFilterType	1
 
 class definition begin
 KSsa	1
@@ -175,10 +155,202 @@ HYa	2
 KPRa	2
 U	3
 UU	3
+Ka	4
+Kha	4
+Ga	4
+Gha	4
+Nga	4
+Cha	4
+Ja	4
+Jha	4
+Nya	4
+Tta	4
+Ttha	4
+Dda	4
+Ddha	4
+Nna	4
+Ta	4
+Tha	4
+Da	4
+Dha	4
+Na	4
+Pa	4
+Pha	4
+Ba	4
+Bha	4
+Ma	4
+Ya	4
+Ra	4
+La	4
+Lla	4
+Va	4
+Sha	4
+Ssa	4
+Sa	4
+Ha	4
+JYa	4
+TYa	4
+DYa	4
+TRa	4
+NgKa	4
+JJa	4
+RKa	4
+RGa	4
+RJa	4
+RVa	4
+RNna	4
+RTha	4
+RYa	4
+RSsa	4
+RHa	4
+RTa	4
+JNya	4
+TTha	4
+DDha	4
+NTha	4
+NDha	4
+SsTta	4
+SsTtha	4
+SsNna	4
+STha	4
+NnDda	4
+TSa	4
+NTa	4
+STa	4
+SMa	4
+NgNga	4
+JNna	4
+TtKa	4
+NnSha	4
+RTRa	4
+JJVa	4
+RKSsa	4
+RVYa	4
+RTr	4
+SMr	4
+I	5
+uni25CC	6
+SandhiMark	7
+AA	8
+Separator	9
+ShortVowelMark	10
 class definition end
 
-class	1, 3	2, 4
-class	2, 3	2, 5
+lookaheadclass definition begin
+Ka	1
+Kha	1
+Ga	1
+Gha	1
+Nga	1
+Ca	1
+Cha	1
+Ja	1
+Jha	1
+Nya	1
+Tta	1
+Ttha	1
+Dda	1
+Ddha	1
+Nna	1
+Ta	1
+Tha	1
+Da	1
+Dha	1
+Na	1
+Pa	1
+Pha	1
+Ba	1
+Bha	1
+Ma	1
+Ya	1
+Ra	1
+La	1
+Lla	1
+Va	1
+Sha	1
+Ssa	1
+Sa	1
+Ha	1
+JYa	1
+TYa	1
+DYa	1
+GRa	1
+TRa	1
+BhRa	1
+KSsa	1
+KKa	1
+KTa	1
+NgKa	1
+JJa	1
+RKa	1
+RGa	1
+RJa	1
+RVa	1
+RNna	1
+RTha	1
+RYa	1
+RSsa	1
+RHa	1
+RTa	1
+JNya	1
+TTha	1
+DDha	1
+NTha	1
+NDha	1
+SsTta	1
+SsTtha	1
+SsNna	1
+STha	1
+HYa	1
+NnDda	1
+TSa	1
+NTa	1
+STa	1
+SMa	1
+NgNga	1
+JNna	1
+TtKa	1
+NnSha	1
+KPRa	1
+RTRa	1
+JJVa	1
+RKSsa	1
+RVYa	1
+KTVa	1
+RTr	1
+SMr	1
+class definition end
+
+class-chain		1, 3		2, 3
+class-chain		1, 7	1	2, 3
+class-chain		2, 3		2, 4
+class-chain		2, 7	1	2, 3
+class-chain		4, 7	1	2, 3
+class-chain		5, 1, 10		3, 6	1, 7
+class-chain		5, 2, 10		3, 6	1, 7
+class-chain		5, 4, 10		3, 6	1, 7
+class-chain		5, 1, 7	1	3, 3
+class-chain		5, 2, 7	1	3, 3
+class-chain		5, 4, 7	1	3, 3
+class-chain		7, 9		1, 4
+class-chain		8, 7, 6, 7		2, 5
+class-chain		8, 7, 7		2, 5
+class-chain		9, 6, 7		2, 5
+class-chain		9, 7		2, 4
+
+lookup end
+
+
+lookup	3	single
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+U	U.alt
+UU	UU.alt
+SandhiMark	SandhiMarkWide
 
 lookup end
 
@@ -190,21 +362,47 @@ IgnoreBaseGlyphs	no
 IgnoreLigatures	no
 IgnoreMarks	no
 
-U	U.alt
-UU	UU.alt
+U	U.alt2
+UU	UU.alt2
+SandhiMark	SandhiSp
 
 lookup end
 
 
-lookup	5	single
+lookup	5	ligature
 
 RightToLeft	no
 IgnoreBaseGlyphs	no
 IgnoreLigatures	no
 IgnoreMarks	no
 
-U	U.alt2
-UU	UU.alt2
+SandhiMarkLig	SandhiMark	SandhiMark
+SandhiMarkLig	SandhiMark	uni25CC	SandhiMark
+SandhiSp	uni25CC	SandhiMark
+
+lookup end
+
+
+lookup	6	single
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+ShortVowelMark	NullMark
+
+lookup end
+
+
+lookup	7	multiple
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+I	I	ShortVowelMark
 
 lookup end
 

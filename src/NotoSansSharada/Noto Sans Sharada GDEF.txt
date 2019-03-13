@@ -61,9 +61,8 @@ Upadhmaniya	1
 Om	1
 Danda	1
 DoubleDanda	1
-Abreviation	1
+Abbreviation	1
 Separator	1
-SandhiMark	1
 SutraMark	1
 Sh_Zero	1
 Sh_One	1
@@ -179,6 +178,7 @@ Bhu	1
 Tu	1
 Ddu	1
 uni25CC	1
+SandhiSp	1
 Candrabindu	3
 Anusvara	3
 U	3
@@ -190,6 +190,7 @@ vocLL	3
 E	3
 AI	3
 O	3
+SandhiMark	3
 Nukta	3
 VowelModifier	3
 ShortVowelMark	3
@@ -205,6 +206,9 @@ UU.alt	3
 UU.alt2	3
 U.alt	3
 U.alt2	3
+SandhiMarkLig	3
+SandhiMarkWide	3
+NullMark	3
 class definition end
 
 mark attachment class definition begin
@@ -214,8 +218,7 @@ vocR	1
 vocRR	1
 vocL	1
 vocLL	1
-Jihvamuliya	1
-Upadhmaniya	1
+SandhiMark	1
 Nukta	1
 ShortVowelMark	1
 uni1CD7	1
@@ -226,6 +229,8 @@ UU.alt	1
 UU.alt2	1
 U.alt	1
 U.alt2	1
+SandhiMarkLig	1
+SandhiMarkWide	1
 Candrabindu	2
 Anusvara	2
 E	2
@@ -236,5 +241,21 @@ uni0951	2
 uni1CE0	2
 Jihvamuliya.ns	2
 Upadhmaniya.ns	2
+NullMark	3
 class definition end
+
+markfilter set definition begin
+U	0
+UU	0
+vocR	0
+vocRR	0
+vocL	0
+vocLL	0
+U	1
+UU	1
+SandhiMark	1
+ShortVowelMark	1
+SandhiMarkLig	1
+SandhiMarkWide	1
+set definition end
 
