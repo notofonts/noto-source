@@ -7,23 +7,21 @@ script table end
 
 
 feature table begin
-0	ccmp	0, 1, 4, 5, 6
-1	dlig	2
-2	salt	3
+0	ccmp	0, 5, 6, 7, 2
+1	rlig	3
+2	salt	4
 
 feature table end
 
-lookup	0	single
+lookup	0	ligature
 
 RightToLeft	no
 IgnoreBaseGlyphs	no
 IgnoreLigatures	no
 IgnoreMarks	no
 
-u11722	u11722.base
-u11723	u11723.base
-u11727	u11727.base
-u11729	u11729.base
+o_u_ahom	uSign_ahom	oSign_ahom
+o_u_ahom	oSign_ahom	uSign_ahom
 
 lookup end
 
@@ -35,65 +33,83 @@ IgnoreBaseGlyphs	no
 IgnoreLigatures	no
 IgnoreMarks	no
 
-u1172811721	u11721	u11728
-u1172211724	u11724	u11722.base
-u1172811721	u11728	u11721
-u1172211724	u11722.base	u11724
+i_u_ahom	iSign_ahom	uSign_ahom
+i_u_ahom	uSign_ahom	iSign_ahom
 
 lookup end
 
 
-lookup	2	ligature
+lookup	2	chained
 
 RightToLeft	no
 IgnoreBaseGlyphs	no
 IgnoreLigatures	no
 IgnoreMarks	no
 
-u117011171F	u11701	u1171F
-u1170411709	u11704	u11709
-u117071171F	u11707	u1171F
+backtrackclass definition begin
+ka_ahom	1
+kha_ahom	1
+ta_ahom	1
+alt_ta_ahom	1
+pa_ahom	1
+pha_ahom	1
+ba_ahom	1
+ma_ahom	1
+ja_ahom	1
+cha_ahom	1
+tha_ahom	1
+ra_ahom	1
+la_ahom	1
+sa_ahom	1
+ha_ahom	1
+a_ahom	1
+dha_ahom	1
+ga_ahom	1
+ga_ahom.alt	1
+alt_ga_ahom	1
+gha_ahom	1
+bha_ahom	1
+jha_ahom	1
+jha_ahom.alt	1
+alt_ba_ahom	1
+class definition end
+
+class definition begin
+iSign_ahom	1
+uSign_ahom	1
+class definition end
+
+class-chain	1	1, 1		1, 1
 
 lookup end
 
 
-lookup	3	single
+lookup	3	ligature
 
 RightToLeft	no
 IgnoreBaseGlyphs	no
 IgnoreLigatures	no
 IgnoreMarks	no
 
-u11714	u11714.alt
-u11719	u11719.alt
-u11733	u11733.alt
-u11734	u11734.alt
+khra_ahom	kha_ahom	medialLigaRa_ahom
+t_ja_ahom	alt_ta_ahom	ja_ahom
+phra_ahom	pha_ahom	medialLigaRa_ahom
 
 lookup end
 
 
-lookup	4	chained
+lookup	4	single
 
 RightToLeft	no
 IgnoreBaseGlyphs	no
 IgnoreLigatures	no
 IgnoreMarks	no
 
-backtrackcoverage definition begin
-u11713
-u11714
-u11717
-u11718
-u11719
-u11719.alt
-u117071171F
-coverage definition end
+ga_ahom	ga_ahom.alt
+jha_ahom	jha_ahom.alt
+three_ahom	three_ahom.alt
+four_ahom	four_ahom.alt
 
-inputcoverage definition begin
-u1171E
-coverage definition end
-
-coverage	1,7
 lookup end
 
 
@@ -105,19 +121,17 @@ IgnoreLigatures	no
 IgnoreMarks	no
 
 backtrackcoverage definition begin
-u11702
-u11703
-u11705
-u11706
-u11708
-u11709
-u11711
-u11715
-u11714.alt
+da_ahom
+dha_ahom
+gha_ahom
+bha_ahom
+jha_ahom
+jha_ahom.alt
+phra_ahom
 coverage definition end
 
 inputcoverage definition begin
-u1171E
+medialRa_ahom
 coverage definition end
 
 coverage	1,8
@@ -132,33 +146,50 @@ IgnoreLigatures	no
 IgnoreMarks	no
 
 backtrackcoverage definition begin
-u11702
-u11703
-u11705
-u11706
-u11708
-u11709
-u11711
-u11715
+nga_ahom
+na_ahom
+alt_ta_ahom
+pa_ahom
+ba_ahom
+ma_ahom
+ha_ahom
+ga_ahom
+ga_ahom.alt
+alt_ba_ahom
 coverage definition end
 
 inputcoverage definition begin
-u1171D
+medialRa_ahom
 coverage definition end
 
 coverage	1,9
 lookup end
 
 
-lookup	7	single
+lookup	7	chained
 
 RightToLeft	no
 IgnoreBaseGlyphs	no
 IgnoreLigatures	no
 IgnoreMarks	no
 
-u1171E	u1171E.desc
+backtrackcoverage definition begin
+nga_ahom
+na_ahom
+alt_ta_ahom
+pa_ahom
+ba_ahom
+ma_ahom
+ha_ahom
+ga_ahom
+alt_ba_ahom
+coverage definition end
 
+inputcoverage definition begin
+medialLa_ahom
+coverage definition end
+
+coverage	1,10
 lookup end
 
 
@@ -169,7 +200,7 @@ IgnoreBaseGlyphs	no
 IgnoreLigatures	no
 IgnoreMarks	no
 
-u1171E	u1171E.sm
+medialRa_ahom	medialRa_ahom.desc
 
 lookup end
 
@@ -181,7 +212,19 @@ IgnoreBaseGlyphs	no
 IgnoreLigatures	no
 IgnoreMarks	no
 
-u1171D	u1171D.sm
+medialRa_ahom	medialRa_ahom.sm
+
+lookup end
+
+
+lookup	10	single
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+medialLa_ahom	medialLa_ahom.sm
 
 lookup end
 
