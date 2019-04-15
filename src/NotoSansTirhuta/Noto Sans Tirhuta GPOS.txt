@@ -9,10 +9,10 @@ script table end
 
 
 feature table begin
-0	dist	1, 2, 23, 30
+0	dist	1, 2, 25, 34
 1	kern	0
-2	mark	18, 19, 20, 21, 22, 24, 25, 26
-3	mkmk	27, 28, 29
+2	mark	18, 19, 20, 21, 22, 23, 24, 26, 27, 28
+3	mkmk	29, 30, 31, 33, 32, 39
 
 feature table end
 
@@ -24,8 +24,8 @@ IgnoreLigatures	no
 IgnoreMarks	no
 
 right x placement	uni114B1_tall	NnaTta	10
-right x placement	uni114B1_tall.alt	uni1149A	10
-right x advance	uni114B1_tall.alt	uni1149A	10
+right x placement	uni114B1_tall.alt	ttha_tirh	10
+right x advance	uni114B1_tall.alt	ttha_tirh	10
 right x advance	uni114B1_tall.alt	NnaTta	10
 
 lookup end
@@ -43,25 +43,25 @@ backtrackclass definition begin
 uni114B1_tall	1
 uni114B1_tall.alt	1
 uni114B1_Repha	1
-uni114BF.alt	2
-uni114C0.alt	2
-uni114AC	3
+candrabindu.alt	2
+anusvara.alt	2
+sha_tirh	3
 ShaLa	3
-uni114B1	4
+iMatra_tirh	4
 class definition end
 
 class definition begin
-uni114B2	1
+iiMatra_tirh	1
 uni114B2.alt	1
 uni114B2.alt2	1
 uni114B2_tall.alt	1
 uni114B2_tall.alt3	1
-uni114BF	2
-uni114C0	2
-uni114BF.alt	2
-uni114C0.alt	2
-uni114BF.alt2	2
-uni114C0.alt2	2
+candrabindu_tirh	2
+anusvara_tirh	2
+candrabindu.alt	2
+anusvara.alt	2
+candrabindu.alt2	2
+anusvara.alt2	2
 Repha	3
 Repha_I	3
 Repha_II	3
@@ -69,20 +69,20 @@ Repha_Tta	3
 Repha_uni114BA	3
 Repha_uni114BA.alt	3
 Repha_Ba.part	3
-uni114BD	4
+shortOMatra_tirh	4
 uni114BD.alt	4
 uni114BD.alt2	4
 uni114BD_Ba	4
-uni114B0	5
+aaMatra_tirh	5
 class definition end
 
 lookaheadclass definition begin
-uni114BF.alt2	1
-uni114C0.alt2	1
+candrabindu.alt2	1
+anusvara.alt2	1
 Repha_Tta	2
 Repha_uni114BA	2
-uni114BF.alt	3
-uni114C0.alt	3
+candrabindu.alt	3
+anusvara.alt	3
 class definition end
 
 class-chain		1, 2		1, 7
@@ -107,44 +107,44 @@ MarkAttachmentType	2
 backtrackclass definition begin
 uni114B1_tall.alt	1
 uni114B1_Repha	1
-uni114BF.alt	2
-uni114C0.alt	2
+candrabindu.alt	2
+anusvara.alt	2
 uni114B1_tall	3
-uni114B1	4
+iMatra_tirh	4
 Repha_I	5
 class definition end
 
 class definition begin
-uni1148F	1
-uni11490	1
-uni11491	1
-uni11492	1
-uni11493	1
-uni11494	1
-uni11495	1
-uni11496	1
-uni11497	1
-uni11498	1
-uni1149B	1
-uni1149C	1
-uni1149D	1
-uni1149E	1
-uni1149F	1
-uni114A0	1
-uni114A1	1
-uni114A2	1
-uni114A3	1
-uni114A4	1
-uni114A5	1
-uni114A6	1
-uni114A7	1
-uni114A8	1
-uni114A9	1
-uni114AA	1
-uni114AB	1
-uni114AD	1
-uni114AE	1
-uni114AF	1
+ka_tirh	1
+kha_tirh	1
+ga_tirh	1
+gha_tirh	1
+nga_tirh	1
+ca_tirh	1
+cha_tirh	1
+ja_tirh	1
+jha_tirh	1
+nya_tirh	1
+dda_tirh	1
+ddha_tirh	1
+nna_tirh	1
+ta_tirh	1
+tha_tirh	1
+da_tirh	1
+dha_tirh	1
+na_tirh	1
+pa_tirh	1
+pha_tirh	1
+ba_tirh	1
+bha_tirh	1
+ma_tirh	1
+ya_tirh	1
+ra_tirh	1
+la_tirh	1
+va_tirh	1
+ssa_tirh	1
+sa_tirh	1
+ha_tirh	1
 KhaNa	1
 PhaNa	1
 SaNa	1
@@ -224,12 +224,12 @@ BaDa.part	2
 BaDha.part	2
 Br.part	2
 MaBa.part	2
-uni114AC	3
+sha_tirh	3
 Shu	3
 ShaLa	3
-uni11499	4
-uni1149A	5
-uni114BA	6
+tta_tirh	4
+ttha_tirh	5
+shortEMatra_tirh	6
 uni114BA.alt	7
 uni114BA.alt2	7
 Ba.part	8
@@ -239,9 +239,9 @@ Repha_Ba.part	10
 class definition end
 
 lookaheadclass definition begin
-uni1149A	1
-uni114AC	1
-uni114B1	1
+ttha_tirh	1
+sha_tirh	1
+iMatra_tirh	1
 Shu	1
 ShaLa	1
 TtaTta	1
@@ -252,12 +252,12 @@ uni114B1.alt2	1
 uni114B1_tall	1
 uni114B1_tall.alt	1
 uni114B1_Repha	1
-uni114BF	2
-uni114C0	2
-uni114BF.alt	2
-uni114C0.alt	2
-uni114BF.alt2	2
-uni114C0.alt2	2
+candrabindu_tirh	2
+anusvara_tirh	2
+candrabindu.alt	2
+anusvara.alt	2
+candrabindu.alt2	2
+anusvara.alt2	2
 Repha	3
 Repha_I	3
 Repha_II	3
@@ -265,7 +265,7 @@ Repha_Tta	3
 Repha_uni114BA	3
 Repha_uni114BA.alt	3
 Repha_Ba.part	4
-uni114BA	5
+shortEMatra_tirh	5
 uni114BA.alt	6
 uni114BA.alt2	6
 Gu	8
@@ -352,8 +352,8 @@ Ru.alt1	8
 Ru.alt2	8
 Ruu.alt1	8
 Ruu.alt2	8
-uni114B0	10
-uni114BD	10
+aaMatra_tirh	10
+shortOMatra_tirh	10
 class definition end
 
 class-chain		1, 10	2	1, 17
@@ -428,39 +428,39 @@ IgnoreBaseGlyphs	no
 IgnoreLigatures	no
 IgnoreMarks	no
 
-x advance	uni1148F	210
-x advance	uni11490	210
-x advance	uni11491	210
-x advance	uni11492	210
-x advance	uni11493	260
-x advance	uni11494	230
-x advance	uni11495	260
-x advance	uni11496	220
-x advance	uni11497	210
-x advance	uni11498	130
-x advance	uni11499	90
-x advance	uni1149A	15
-x advance	uni1149B	200
-x advance	uni1149C	240
-x advance	uni1149D	220
-x advance	uni1149E	210
-x advance	uni1149F	220
-x advance	uni114A0	210
-x advance	uni114A1	220
-x advance	uni114A2	220
-x advance	uni114A3	220
-x advance	uni114A4	110
-x advance	uni114A5	240
-x advance	uni114A6	220
-x advance	uni114A7	220
-x advance	uni114A8	220
-x advance	uni114A9	220
-x advance	uni114AA	290
-x advance	uni114AB	220
-x advance	uni114AC	250
-x advance	uni114AD	220
-x advance	uni114AE	220
-x advance	uni114AF	230
+x advance	ka_tirh	210
+x advance	kha_tirh	210
+x advance	ga_tirh	210
+x advance	gha_tirh	210
+x advance	nga_tirh	260
+x advance	ca_tirh	230
+x advance	cha_tirh	260
+x advance	ja_tirh	220
+x advance	jha_tirh	210
+x advance	nya_tirh	130
+x advance	tta_tirh	90
+x advance	ttha_tirh	15
+x advance	dda_tirh	200
+x advance	ddha_tirh	240
+x advance	nna_tirh	220
+x advance	ta_tirh	210
+x advance	tha_tirh	220
+x advance	da_tirh	210
+x advance	dha_tirh	220
+x advance	na_tirh	220
+x advance	pa_tirh	220
+x advance	pha_tirh	110
+x advance	ba_tirh	240
+x advance	bha_tirh	220
+x advance	ma_tirh	220
+x advance	ya_tirh	220
+x advance	ra_tirh	220
+x advance	la_tirh	290
+x advance	va_tirh	220
+x advance	sha_tirh	250
+x advance	ssa_tirh	220
+x advance	sa_tirh	220
+x advance	ha_tirh	230
 x advance	Shu	260
 x advance	KhaNa	260
 x advance	PhaNa	155
@@ -522,7 +522,7 @@ IgnoreBaseGlyphs	no
 IgnoreLigatures	no
 IgnoreMarks	no
 
-x advance	uni114AC	80
+x advance	sha_tirh	80
 x advance	Shu	80
 x advance	ShaYa	80
 x advance	ShaLa	80
@@ -548,39 +548,39 @@ IgnoreBaseGlyphs	no
 IgnoreLigatures	no
 IgnoreMarks	no
 
-x advance	uni1148F	115
-x advance	uni11490	115
-x advance	uni11491	115
-x advance	uni11492	115
-x advance	uni11493	170
-x advance	uni11494	150
-x advance	uni11495	170
-x advance	uni11496	115
-x advance	uni11497	130
-x advance	uni11498	35
-x advance	uni11499	340
-x advance	uni1149A	165
-x advance	uni1149B	110
-x advance	uni1149C	140
-x advance	uni1149D	120
-x advance	uni1149E	115
-x advance	uni1149F	120
-x advance	uni114A0	115
-x advance	uni114A1	120
-x advance	uni114A2	120
-x advance	uni114A3	120
-x advance	uni114A4	20
-x advance	uni114A5	65
-x advance	uni114A6	120
-x advance	uni114A7	120
-x advance	uni114A8	120
-x advance	uni114A9	120
-x advance	uni114AA	150
-x advance	uni114AB	120
-x advance	uni114AC	220
-x advance	uni114AD	120
-x advance	uni114AE	120
-x advance	uni114AF	150
+x advance	ka_tirh	115
+x advance	kha_tirh	115
+x advance	ga_tirh	115
+x advance	gha_tirh	115
+x advance	nga_tirh	170
+x advance	ca_tirh	150
+x advance	cha_tirh	170
+x advance	ja_tirh	115
+x advance	jha_tirh	130
+x advance	nya_tirh	35
+x advance	tta_tirh	340
+x advance	ttha_tirh	165
+x advance	dda_tirh	110
+x advance	ddha_tirh	140
+x advance	nna_tirh	120
+x advance	ta_tirh	115
+x advance	tha_tirh	120
+x advance	da_tirh	115
+x advance	dha_tirh	120
+x advance	na_tirh	120
+x advance	pa_tirh	120
+x advance	pha_tirh	20
+x advance	ba_tirh	65
+x advance	bha_tirh	120
+x advance	ma_tirh	120
+x advance	ya_tirh	120
+x advance	ra_tirh	120
+x advance	la_tirh	150
+x advance	va_tirh	120
+x advance	sha_tirh	220
+x advance	ssa_tirh	120
+x advance	sa_tirh	120
+x advance	ha_tirh	150
 x advance	KhaNa	120
 x advance	PhaNa	40
 x advance	SaNa	130
@@ -646,39 +646,39 @@ IgnoreBaseGlyphs	no
 IgnoreLigatures	no
 IgnoreMarks	no
 
-x advance	uni1148F	265
-x advance	uni11490	265
-x advance	uni11491	265
-x advance	uni11492	265
-x advance	uni11493	320
-x advance	uni11494	300
-x advance	uni11495	320
-x advance	uni11496	265
-x advance	uni11497	280
-x advance	uni11498	185
-x advance	uni11499	340
-x advance	uni1149A	350
-x advance	uni1149B	260
-x advance	uni1149C	280
-x advance	uni1149D	270
-x advance	uni1149E	265
-x advance	uni1149F	270
-x advance	uni114A0	265
-x advance	uni114A1	270
-x advance	uni114A2	270
-x advance	uni114A3	270
-x advance	uni114A4	170
-x advance	uni114A5	215
-x advance	uni114A6	270
-x advance	uni114A7	270
-x advance	uni114A8	270
-x advance	uni114A9	270
-x advance	uni114AA	300
-x advance	uni114AB	290
-x advance	uni114AC	430
-x advance	uni114AD	270
-x advance	uni114AE	270
-x advance	uni114AF	300
+x advance	ka_tirh	265
+x advance	kha_tirh	265
+x advance	ga_tirh	265
+x advance	gha_tirh	265
+x advance	nga_tirh	320
+x advance	ca_tirh	300
+x advance	cha_tirh	320
+x advance	ja_tirh	265
+x advance	jha_tirh	280
+x advance	nya_tirh	185
+x advance	tta_tirh	340
+x advance	ttha_tirh	350
+x advance	dda_tirh	260
+x advance	ddha_tirh	280
+x advance	nna_tirh	270
+x advance	ta_tirh	265
+x advance	tha_tirh	270
+x advance	da_tirh	265
+x advance	dha_tirh	270
+x advance	na_tirh	270
+x advance	pa_tirh	270
+x advance	pha_tirh	170
+x advance	ba_tirh	215
+x advance	bha_tirh	270
+x advance	ma_tirh	270
+x advance	ya_tirh	270
+x advance	ra_tirh	270
+x advance	la_tirh	300
+x advance	va_tirh	290
+x advance	sha_tirh	430
+x advance	ssa_tirh	270
+x advance	sa_tirh	270
+x advance	ha_tirh	300
 x advance	Shu	260
 x advance	KhaNa	260
 x advance	PhaNa	155
@@ -745,9 +745,9 @@ IgnoreLigatures	no
 IgnoreMarks	no
 MarkAttachmentType	2
 
-x advance	uni114B0	150
-x advance	uni114B2	220
-x advance	uni114BD	275
+x advance	aaMatra_tirh	150
+x advance	iiMatra_tirh	220
+x advance	shortOMatra_tirh	275
 x advance	uni114B2.alt	220
 x advance	uni114B2.alt2	220
 x advance	uni114B2_tall.alt	280
@@ -767,9 +767,9 @@ IgnoreLigatures	no
 IgnoreMarks	no
 MarkAttachmentType	2
 
-x advance	uni114B0	150
-x advance	uni114B2	170
-x advance	uni114BD	135
+x advance	aaMatra_tirh	150
+x advance	iiMatra_tirh	170
+x advance	shortOMatra_tirh	135
 x advance	uni114B2.alt	170
 x advance	uni114B2.alt2	170
 x advance	uni114B2_tall.alt	200
@@ -789,8 +789,8 @@ IgnoreLigatures	no
 IgnoreMarks	no
 MarkAttachmentType	2
 
-x advance	uni114B2	320
-x advance	uni114BD	80
+x advance	iiMatra_tirh	320
+x advance	shortOMatra_tirh	80
 x advance	uni114B2.alt	320
 x advance	uni114B2.alt2	320
 x advance	uni114B2_tall.alt	330
@@ -809,16 +809,16 @@ IgnoreBaseGlyphs	no
 IgnoreLigatures	no
 IgnoreMarks	no
 
-x advance	uni11494	70
-x advance	uni11495	100
-x advance	uni11499	90
-x advance	uni1149A	15
-x advance	uni114A9	40
-x advance	uni114AA	120
-x advance	uni114AB	40
-x advance	uni114AC	70
-x advance	uni114AF	60
-x advance	uni114B1	30
+x advance	ca_tirh	70
+x advance	cha_tirh	100
+x advance	tta_tirh	90
+x advance	ttha_tirh	15
+x advance	ra_tirh	40
+x advance	la_tirh	120
+x advance	va_tirh	40
+x advance	sha_tirh	70
+x advance	ha_tirh	60
+x advance	iMatra_tirh	30
 x advance	Shu	70
 x advance	TaYa	80
 x advance	ShaYa	10
@@ -847,35 +847,35 @@ IgnoreBaseGlyphs	no
 IgnoreLigatures	no
 IgnoreMarks	no
 
-x advance	uni11490	110
-x advance	uni11491	120
-x advance	uni11492	140
-x advance	uni11493	150
-x advance	uni11494	100
-x advance	uni11495	150
-x advance	uni11497	90
-x advance	uni11499	185
-x advance	uni1149A	165
-x advance	uni1149B	80
-x advance	uni1149C	190
-x advance	uni1149D	140
-x advance	uni1149E	90
-x advance	uni1149F	150
-x advance	uni114A0	190
-x advance	uni114A1	190
-x advance	uni114A2	180
-x advance	uni114A3	70
-x advance	uni114A4	20
-x advance	uni114A6	130
-x advance	uni114A7	180
-x advance	uni114A8	160
-x advance	uni114A9	190
-x advance	uni114AA	170
-x advance	uni114AB	200
-x advance	uni114AC	220
-x advance	uni114AD	160
-x advance	uni114AE	130
-x advance	uni114AF	200
+x advance	kha_tirh	110
+x advance	ga_tirh	120
+x advance	gha_tirh	140
+x advance	nga_tirh	150
+x advance	ca_tirh	100
+x advance	cha_tirh	150
+x advance	jha_tirh	90
+x advance	tta_tirh	185
+x advance	ttha_tirh	165
+x advance	dda_tirh	80
+x advance	ddha_tirh	190
+x advance	nna_tirh	140
+x advance	ta_tirh	90
+x advance	tha_tirh	150
+x advance	da_tirh	190
+x advance	dha_tirh	190
+x advance	na_tirh	180
+x advance	pa_tirh	70
+x advance	pha_tirh	20
+x advance	bha_tirh	130
+x advance	ma_tirh	180
+x advance	ya_tirh	160
+x advance	ra_tirh	190
+x advance	la_tirh	170
+x advance	va_tirh	200
+x advance	sha_tirh	220
+x advance	ssa_tirh	160
+x advance	sa_tirh	130
+x advance	ha_tirh	200
 x advance	KhaNa	120
 x advance	PhaNa	150
 x advance	SaNa	130
@@ -937,36 +937,36 @@ IgnoreBaseGlyphs	no
 IgnoreLigatures	no
 IgnoreMarks	no
 
-x advance	uni11490	120
-x advance	uni11491	120
-x advance	uni11492	160
-x advance	uni11493	160
-x advance	uni11494	230
-x advance	uni11495	260
-x advance	uni11497	90
-x advance	uni11499	185
-x advance	uni1149A	250
-x advance	uni1149B	80
-x advance	uni1149C	190
-x advance	uni1149D	140
-x advance	uni1149E	90
-x advance	uni1149F	150
-x advance	uni114A0	190
-x advance	uni114A1	190
-x advance	uni114A2	180
-x advance	uni114A3	70
-x advance	uni114A4	20
-x advance	uni114A6	130
-x advance	uni114A7	180
-x advance	uni114A8	160
-x advance	uni114A9	190
-x advance	uni114AA	300
-x advance	uni114AB	210
-x advance	uni114AC	130
-x advance	uni114AD	160
-x advance	uni114AE	130
-x advance	uni114AF	240
-x advance	uni114B1	20
+x advance	kha_tirh	120
+x advance	ga_tirh	120
+x advance	gha_tirh	160
+x advance	nga_tirh	160
+x advance	ca_tirh	230
+x advance	cha_tirh	260
+x advance	jha_tirh	90
+x advance	tta_tirh	185
+x advance	ttha_tirh	250
+x advance	dda_tirh	80
+x advance	ddha_tirh	190
+x advance	nna_tirh	140
+x advance	ta_tirh	90
+x advance	tha_tirh	150
+x advance	da_tirh	190
+x advance	dha_tirh	190
+x advance	na_tirh	180
+x advance	pa_tirh	70
+x advance	pha_tirh	20
+x advance	bha_tirh	130
+x advance	ma_tirh	180
+x advance	ya_tirh	160
+x advance	ra_tirh	190
+x advance	la_tirh	300
+x advance	va_tirh	210
+x advance	sha_tirh	130
+x advance	ssa_tirh	160
+x advance	sa_tirh	130
+x advance	ha_tirh	240
+x advance	iMatra_tirh	20
 x advance	Shu	120
 x advance	KhaNa	90
 x advance	SaNa	110
@@ -1023,8 +1023,8 @@ IgnoreBaseGlyphs	no
 IgnoreLigatures	no
 IgnoreMarks	no
 
-x advance	uni1149A	30
-x advance	uni114AC	130
+x advance	ttha_tirh	30
+x advance	sha_tirh	130
 x advance	Shu	120
 x advance	ShaYa	50
 x advance	ShaLa	130
@@ -1083,7 +1083,7 @@ IgnoreBaseGlyphs	no
 IgnoreLigatures	no
 IgnoreMarks	no
 
-x advance	uni114AC	80
+x advance	sha_tirh	80
 x advance	Shu	80
 x advance	KhaNa	80
 x advance	SaNa	80
@@ -1152,7 +1152,7 @@ IgnoreBaseGlyphs	no
 IgnoreLigatures	no
 IgnoreMarks	no
 
-x advance	uni114AB	120
+x advance	va_tirh	120
 x advance	BaDa.part	120
 x advance	BaDha.part	140
 x advance	Br.part	120
@@ -1168,7 +1168,7 @@ IgnoreBaseGlyphs	no
 IgnoreLigatures	no
 IgnoreMarks	no
 
-x advance	uni114AB	285
+x advance	va_tirh	285
 x advance	BaDa.part	325
 x advance	BaDha.part	355
 x advance	Br.part	375
@@ -1185,64 +1185,63 @@ IgnoreLigatures	no
 IgnoreMarks	no
 MarkAttachmentType	1
 
-mark	uni114B3	0	-180,20
-mark	uni114B4	0	-96,0
-mark	uni114B5	0	-96,0
-mark	uni114B6	0	-96,0
-mark	uni114B7	0	-96,0
-mark	uni114B8	0	-96,0
+mark	uMatra_tirh	0	-180,20
+mark	uuMatra_tirh	0	-96,0
+mark	rVocalicMatra_tirh	0	-96,0
+mark	rrVocalicMatra_tirh	0	-96,0
+mark	lVocalicMatra_tirh	0	-96,0
+mark	llVocalicMatra_tirh	0	-96,0
 mark	Va.sub	0	-96,0
+mark	ra.sub	0	-98,77
+mark	ra.sub.wide	0	-98,77
 base	uni25CC	0	342,5
-base	uni11481	0	657,0
-base	uni11482	0	855,0
-base	uni11483	0	706,0
-base	uni11484	0	722,0
-base	uni11485	0	430,0
-base	uni11486	0	450,0
-base	uni11487	0	433,0
-base	uni11488	0	433,0
-base	uni11489	0	405,-120
-base	uni1148A	0	405,-215
-base	uni1148B	0	667,0
-base	uni1148C	0	667,0
-base	uni1148D	0	490,45
-base	uni1148E	0	490,45
-base	uni1148F	0	491,0
-base	uni11490	0	582,0
-base	uni11491	0	562,0
-base	uni11492	0	537,0
-base	uni11493	0	420,0
-base	uni11494	0	305,30
-base	uni11495	0	360,-80
-base	uni11496	0	731,2
-base	uni11497	0	614,0
-base	uni11498	0	667,0
-base	uni11499	0	340,0
-base	uni1149A	0	340,0
-base	uni1149B	0	455,35
-base	uni1149C	0	345,25
-base	uni1149D	0	568,0
-base	uni1149E	0	425,55
-base	uni1149F	0	550,0
-base	uni114A0	0	520,0
-base	uni114A1	0	501,0
-base	uni114A2	0	509,0
-base	uni114A3	0	622,0
-base	uni114A4	0	521,0
-base	uni114A5	0	501,0
-base	uni114A6	0	425,55
-base	uni114A7	0	527,0
-base	uni114A8	0	531,0
-base	uni114A9	0	501,0
-base	uni114AA	0	449,0
-base	uni114AB	0	501,0
-base	uni114AC	0	582,0
-base	uni114AD	0	538,0
-base	uni114AE	0	587,0
-base	uni114AF	0	420,-30
-base	uni114BB	0	606,5
-base	uni114BC	0	606,5
-base	uni114BE	0	606,5
+base	a_tirh	0	657,0
+base	aa_tirh	0	855,0
+base	i_tirh	0	706,0
+base	ii_tirh	0	722,0
+base	u_tirh	0	430,0
+base	uu_tirh	0	450,0
+base	rVocalic_tirh	0	433,0
+base	rrVocalic_tirh	0	433,0
+base	lVocalic_tirh	0	405,-120
+base	llVocalic_tirh	0	405,-215
+base	e_tirh	0	667,0
+base	ai_tirh	0	667,0
+base	o_tirh	0	490,45
+base	au_tirh	0	490,45
+base	ka_tirh	0	491,0
+base	kha_tirh	0	582,0
+base	ga_tirh	0	562,0
+base	gha_tirh	0	537,0
+base	nga_tirh	0	420,0
+base	ca_tirh	0	305,30
+base	cha_tirh	0	360,-80
+base	ja_tirh	0	731,2
+base	jha_tirh	0	614,0
+base	nya_tirh	0	667,0
+base	tta_tirh	0	340,0
+base	ttha_tirh	0	340,0
+base	dda_tirh	0	455,35
+base	ddha_tirh	0	345,25
+base	nna_tirh	0	568,0
+base	ta_tirh	0	425,55
+base	tha_tirh	0	550,0
+base	da_tirh	0	520,0
+base	dha_tirh	0	501,0
+base	na_tirh	0	509,0
+base	pa_tirh	0	622,0
+base	pha_tirh	0	521,0
+base	ba_tirh	0	501,0
+base	bha_tirh	0	425,55
+base	ma_tirh	0	527,0
+base	ya_tirh	0	531,0
+base	ra_tirh	0	501,0
+base	la_tirh	0	449,0
+base	va_tirh	0	501,0
+base	sha_tirh	0	582,0
+base	ssa_tirh	0	538,0
+base	sa_tirh	0	587,0
+base	ha_tirh	0	420,-30
 base	Gu	0	562,-20
 base	Ju	0	717,-100
 base	Nnu	0	568,-20
@@ -1255,6 +1254,7 @@ base	Shu	0	582,-20
 base	Su	0	587,-20
 base	Ku	0	468,0
 base	Tu	0	455,20
+base	Tuu	0	395,20
 base	Dhu	0	501,0
 base	Bhu	0	450,15
 base	Yu	0	551,0
@@ -1329,6 +1329,29 @@ base	BaDa.part	0	554,-40
 base	BaDha.part	0	424,0
 base	Br.part	0	420,-25
 base	MaBa.part	0	527,-10
+base	Bhra	0	425,55
+base	Bhuu	0	450,15
+base	Dbhu	0	474,-208
+base	Dhru	0	501,-117
+base	Dra	0	558,-139
+base	Gna	0	562,-81
+base	Gra	0	562,-147
+base	NaNa	0	509,13
+base	Nda	0	742,-5
+base	NnaNna	0	532,0
+base	Nta	0	372,-77
+base	Ntra	0	509,-192
+base	Ntu	0	469,-167
+base	Pra	0	622,-140
+base	ShaCa	0	305,0
+base	Shra	0	582,-149
+base	Sra	0	587,-147
+base	SsaKa	0	733,0
+base	SsaKr	0	880,0
+base	Sta	0	420,-92
+base	Stra	0	634,-221
+base	Stu	0	546,-121
+base	Tru	0	667,0
 
 lookup end
 
@@ -1339,10 +1362,373 @@ RightToLeft	no
 IgnoreBaseGlyphs	no
 IgnoreLigatures	no
 IgnoreMarks	no
+
+mark	anudatta_deva	0	-249,-40
+base	uni25CC	0	297,-100
+base	a_tirh	0	366,-100
+base	aa_tirh	0	475,-100
+base	i_tirh	0	400,-100
+base	ii_tirh	0	408,-100
+base	u_tirh	0	353,-100
+base	uu_tirh	0	340,-100
+base	rVocalic_tirh	0	384,-100
+base	rrVocalic_tirh	0	384,-160
+base	lVocalic_tirh	0	255,-150
+base	llVocalic_tirh	0	255,-240
+base	e_tirh	0	379,-100
+base	ai_tirh	0	436,-100
+base	o_tirh	0	370,-100
+base	au_tirh	0	437,-100
+base	ka_tirh	0	403,-100
+base	kha_tirh	0	338,-100
+base	ga_tirh	0	328,-100
+base	gha_tirh	0	315,-100
+base	nga_tirh	0	316,-100
+base	ca_tirh	0	283,-100
+base	cha_tirh	0	268,-100
+base	ja_tirh	0	400,-100
+base	jha_tirh	0	349,-100
+base	nya_tirh	0	509,-100
+base	tta_tirh	0	310,-100
+base	ttha_tirh	0	296,-100
+base	dda_tirh	0	356,-100
+base	ddha_tirh	0	300,-100
+base	nna_tirh	0	332,-100
+base	ta_tirh	0	353,-100
+base	tha_tirh	0	322,-100
+base	da_tirh	0	301,-100
+base	dha_tirh	0	298,-100
+base	na_tirh	0	302,-100
+base	pa_tirh	0	358,-100
+base	pha_tirh	0	384,-100
+base	ba_tirh	0	298,-100
+base	bha_tirh	0	333,-100
+base	ma_tirh	0	311,-100
+base	ya_tirh	0	313,-100
+base	ra_tirh	0	298,-100
+base	la_tirh	0	255,-100
+base	va_tirh	0	298,-100
+base	sha_tirh	0	338,-100
+base	ssa_tirh	0	316,-100
+base	sa_tirh	0	341,-100
+base	ha_tirh	0	280,-200
+base	Gu	0	328,-100
+base	Ju	0	400,-100
+base	Nnu	0	332,-100
+base	Du	0	301,-100
+base	Nu.tirh	0	302,-100
+base	Pu	0	358,-100
+base	Mu.tirh	0	311,-100
+base	Lu	0	255,-100
+base	Shu	0	338,-100
+base	Su	0	341,-100
+base	Ku	0	362,-100
+base	Tu	0	348,-100
+base	Tuu	0	288,-100
+base	Dhu	0	392,-100
+base	Bhu	0	350,-100
+base	Yu	0	313,-200
+base	Ru	0	376,-100
+base	Ssu	0	329,-100
+base	Hu	0	350,-100
+base	Kuu	0	300,-100
+base	Dhuu	0	363,-100
+base	Ruu	0	355,-100
+base	Huu	0	287,-100
+base	Kr	0	312,-100
+base	Tr	0	297,-100
+base	Br	0	268,-100
+base	Bhr	0	295,-100
+base	Hr	0	300,-100
+base	KhaNa	0	358,-180
+base	PhaNa	0	384,-193
+base	SaNa	0	341,-100
+base	BaDa	0	283,-100
+base	MaBa	0	311,-100
+base	TaYa	0	276,-100
+base	DaYa	0	317,-100
+base	NaYa	0	317,-100
+base	BhaYa	0	317,-100
+base	ShaYa	0	326,-100
+base	SaYa	0	397,-100
+base	HaYa	0	309,-100
+base	RaGa	0	362,-100
+base	KaLa	0	353,-240
+base	PhaLa	0	384,-250
+base	ShaLa	0	260,-220
+base	Ma.fina	0	311,-128
+base	KaTa	0	406,-100
+base	KaRa	0	388,-100
+base	KaSsa	0	343,-100
+base	GaGa	0	412,-100
+base	GaDha	0	345,-100
+base	NgaKa	0	362,-100
+base	NgaKha	0	384,-100
+base	NgaGa	0	327,-100
+base	NgaGha	0	401,-100
+base	CaCa	0	283,-100
+base	CaCha	0	268,-100
+base	JaNya	0	345,-100
+base	NyaCa	0	370,-100
+base	NyaCha	0	333,-120
+base	TtaTta	0	310,-100
+base	TtaTtha	0	271,-100
+base	NnaTta	0	349,-100
+base	NnaTtha	0	350,-100
+base	NnaDda	0	351,-100
+base	NnaDdha	0	329,-100
+base	TaTa	0	256,-180
+base	TaVa	0	219,-100
+base	DaDha	0	323,-100
+base	NaDha	0	330,-100
+base	NaHa	0	290,-100
+base	BaDha	0	268,-100
+base	ShaCha	0	275,-255
+base	SsaTta	0	310,-100
+base	SsaTtha	0	353,-100
+base	SsaNna	0	350,-100
+base	HaNna	0	311,-100
+base	HaNa	0	310,-100
+base	HaMa	0	348,-100
+base	HaRa	0	411,-100
+base	HaLa	0	322,-100
+base	HaVa	0	301,-100
+base	TaRa	0	356,-100
+base	Ra.alt1	0	212,-100
+base	Ra.alt2	0	298,-100
+base	BaDa.part	0	283,-100
+base	BaDha.part	0	268,-100
+base	Br.part	0	268,-100
+base	MaBa.part	0	311,-100
+base	Bhra	0	333,-100
+base	Bhuu	0	350,-100
+base	Dbhu	0	353,-283
+base	Dhru	0	298,-138
+base	Dra	0	301,-150
+base	Gna	0	352,-200
+base	Gra	0	328,-200
+base	NaNa	0	322,-100
+base	Nda	0	425,-100
+base	NnaNna	0	326,-100
+base	Nta	0	312,-120
+base	Ntra	0	250,-189
+base	Ntu	0	322,-253
+base	Pra	0	361,-200
+base	ShaCa	0	262,-100
+base	Shra	0	338,-200
+base	Sra	0	341,-200
+base	SsaKa	0	504,-100
+base	SsaKr	0	463,-100
+base	Sta	0	371,-130
+base	Stra	0	341,-229
+base	Stu	0	351,-200
+base	Tru	0	476,-100
+
+lookup end
+
+
+lookup	20	mark to base
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+mark	udatta_deva	0	-130,612
+base	uni25CC	0	297,660
+base	a_tirh	0	440,660
+base	aa_tirh	0	460,660
+base	i_tirh	0	400,660
+base	ii_tirh	0	420,660
+base	u_tirh	0	320,771
+base	uu_tirh	0	350,771
+base	rVocalic_tirh	0	440,700
+base	rrVocalic_tirh	0	460,700
+base	lVocalic_tirh	0	260,660
+base	llVocalic_tirh	0	260,660
+base	e_tirh	0	490,660
+base	ai_tirh	0	590,771
+base	o_tirh	0	470,660
+base	au_tirh	0	578,771
+base	ka_tirh	0	440,660
+base	kha_tirh	0	350,660
+base	ga_tirh	0	270,660
+base	gha_tirh	0	320,660
+base	nga_tirh	0	310,700
+base	ca_tirh	0	255,660
+base	cha_tirh	0	265,660
+base	ja_tirh	0	405,660
+base	jha_tirh	0	375,660
+base	nya_tirh	0	515,660
+base	tta_tirh	0	183,774
+base	ttha_tirh	0	454,660
+base	dda_tirh	0	330,660
+base	ddha_tirh	0	300,660
+base	nna_tirh	0	285,660
+base	ta_tirh	0	360,660
+base	tha_tirh	0	245,660
+base	da_tirh	0	305,660
+base	dha_tirh	0	320,660
+base	na_tirh	0	310,660
+base	pa_tirh	0	355,660
+base	pha_tirh	0	380,660
+base	ba_tirh	0	310,820
+base	bha_tirh	0	350,660
+base	ma_tirh	0	315,660
+base	ya_tirh	0	330,660
+base	ra_tirh	0	305,660
+base	la_tirh	0	260,660
+base	va_tirh	0	279,660
+base	sha_tirh	0	647,710
+base	ssa_tirh	0	330,660
+base	sa_tirh	0	340,660
+base	ha_tirh	0	290,660
+base	iMatra_tirh	0	741,771
+base	iiMatra_tirh	0	331,749
+base	shortOMatra_tirh	0	236,710
+base	Gu	0	300,660
+base	Ju	0	395,660
+base	Nnu	0	280,660
+base	Du	0	280,660
+base	Nu.tirh	0	280,660
+base	Pu	0	305,660
+base	Mu.tirh	0	315,660
+base	Lu	0	225,660
+base	Shu	0	647,710
+base	Su	0	335,660
+base	Ku	0	360,660
+base	Tu	0	350,660
+base	Dhu	0	425,660
+base	Bhu	0	350,660
+base	Yu	0	325,660
+base	Ru	0	375,660
+base	Ssu	0	345,761
+base	Hu	0	330,660
+base	Kuu	0	310,660
+base	Dhuu	0	385,660
+base	Ruu	0	370,660
+base	Huu	0	280,660
+base	Kr	0	335,660
+base	Tr	0	280,660
+base	Br	0	260,820
+base	Bhr	0	280,660
+base	Hr	0	300,660
+base	KhaNa	0	350,660
+base	PhaNa	0	380,660
+base	SaNa	0	350,660
+base	BaDa	0	260,820
+base	MaBa	0	320,820
+base	TaYa	0	260,660
+base	DaYa	0	320,660
+base	NaYa	0	320,660
+base	BhaYa	0	320,660
+base	ShaYa	0	550,660
+base	SaYa	0	400,660
+base	HaYa	0	320,660
+base	Ya.post	0	95,660
+base	RaGa	0	350,660
+base	KaLa	0	450,660
+base	PhaLa	0	400,660
+base	ShaLa	0	647,710
+base	Ma.fina	0	315,660
+base	KaTa	0	415,660
+base	KaRa	0	385,660
+base	KaSsa	0	335,660
+base	GaGa	0	350,660
+base	GaDha	0	300,660
+base	NgaKa	0	705,660
+base	NgaKha	0	636,660
+base	NgaGa	0	764,660
+base	NgaGha	0	628,660
+base	CaCa	0	285,660
+base	CaCha	0	255,660
+base	JaNya	0	350,660
+base	NyaCa	0	350,660
+base	NyaCha	0	350,660
+base	TtaTta	0	591,660
+base	TtaTtha	0	592,660
+base	NnaTta	0	747,660
+base	NnaTtha	0	383,688
+base	NnaDda	0	684,710
+base	NnaDdha	0	320,660
+base	TaTa	0	255,660
+base	TaVa	0	220,660
+base	DaDha	0	350,660
+base	NaDha	0	350,660
+base	NaHa	0	280,660
+base	BaDha	0	260,820
+base	ShaCha	0	282,660
+base	SsaTta	0	350,660
+base	SsaTtha	0	375,660
+base	SsaNna	0	375,660
+base	HaNna	0	310,660
+base	HaNa	0	290,660
+base	HaMa	0	350,660
+base	HaRa	0	395,660
+base	HaLa	0	320,660
+base	HaVa	0	300,660
+base	TaRa	0	485,660
+base	letterVocR.alt	0	350,660
+base	letterVocRR.alt	0	350,660
+base	Ra.alt1	0	220,660
+base	Ra.alt2	0	300,660
+base	Ru.alt1	0	260,660
+base	Ru.alt2	0	400,660
+base	Ruu.alt1	0	260,660
+base	Ruu.alt2	0	400,660
+base	BaDa.part	0	278,660
+base	BaDha.part	0	260,660
+base	Br.part	0	260,660
+base	MaBa.part	0	269,660
+base	uni114B1.alt	0	740,771
+base	uni114B1.alt2	0	740,771
+base	uni114B1_tall	0	760,801
+base	uni114B1_tall.alt	0	770,801
+base	uni114B1_Repha	0	904,610
+base	uni114B2.alt	0	331,749
+base	uni114B2.alt2	0	331,749
+base	uni114B2_tall.alt	0	391,771
+base	uni114B2_tall.alt3	0	392,771
+base	uni114BD.alt	0	236,710
+base	uni114BD.alt2	0	236,710
+base	uni114BD_Ba	0	237,710
+base	Bhra	0	350,660
+base	Bhuu	0	350,660
+base	Dbhu	0	305,660
+base	Dhru	0	380,660
+base	Dra	0	305,660
+base	Gna	0	270,660
+base	Gra	0	270,660
+base	NaNa	0	310,660
+base	Nda	0	398,660
+base	NnaNna	0	249,660
+base	Nta	0	310,660
+base	Ntra	0	310,660
+base	Ntu	0	310,660
+base	Pra	0	355,660
+base	ShaCa	0	274,660
+base	Shra	0	336,660
+base	Sra	0	340,660
+base	SsaKa	0	519,660
+base	SsaKr	0	527,660
+base	Sta	0	340,660
+base	Stra	0	340,660
+base	Stu	0	340,660
+base	Tru	0	485,660
+
+lookup end
+
+
+lookup	21	mark to base
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
 MarkAttachmentType	3
 
 mark	nukta.alt	0	-276,0
-base	uni114AB	0	120,-100
+base	va_tirh	0	120,-100
 base	BaDa	0	142,-100
 base	MaBa	0	159,-100
 base	DaYa	0	515,50
@@ -1381,7 +1767,7 @@ base	MaBa.part	0	159,-100
 lookup end
 
 
-lookup	20	mark to base
+lookup	22	mark to base
 
 RightToLeft	no
 IgnoreBaseGlyphs	no
@@ -1389,58 +1775,55 @@ IgnoreLigatures	no
 IgnoreMarks	no
 MarkAttachmentType	3
 
-mark	uni114C3	0	-276,0
+mark	nukta_tirh	0	-276,0
 base	uni25CC	0	297,30
-base	uni11481	0	320,120
-base	uni11482	0	320,120
-base	uni11483	0	355,90
-base	uni11484	0	355,0
-base	uni11485	0	400,0
-base	uni11486	0	400,0
-base	uni11487	0	160,165
-base	uni11488	0	160,165
-base	uni11489	0	145,165
-base	uni1148A	0	145,165
-base	uni1148B	0	255,80
-base	uni1148C	0	255,80
-base	uni1148D	0	445,45
-base	uni1148E	0	445,45
-base	uni1148F	0	200,165
-base	uni11490	0	310,165
-base	uni11491	0	325,165
-base	uni11492	0	200,165
-base	uni11493	0	365,0
-base	uni11494	0	270,25
-base	uni11495	0	300,-95
-base	uni11496	0	350,60
-base	uni11497	0	400,165
-base	uni11498	0	435,70
-base	uni11499	0	310,0
-base	uni1149A	0	300,0
-base	uni1149B	0	415,20
-base	uni1149C	0	300,30
-base	uni1149D	0	290,165
-base	uni1149E	0	415,50
-base	uni1149F	0	215,165
-base	uni114A0	0	265,165
-base	uni114A1	0	210,165
-base	uni114A2	0	285,165
-base	uni114A3	0	370,165
-base	uni114A4	0	230,165
-base	uni114A5	0	200,20
-base	uni114A6	0	390,40
-base	uni114A7	0	330,165
-base	uni114A8	0	215,165
-base	uni114A9	0	200,165
-base	uni114AA	0	250,165
-base	uni114AB	0	200,20
-base	uni114AC	0	230,165
-base	uni114AD	0	205,165
-base	uni114AE	0	340,165
-base	uni114AF	0	225,30
-base	uni114BB	0	561,30
-base	uni114BC	0	561,30
-base	uni114BE	0	561,30
+base	a_tirh	0	320,120
+base	aa_tirh	0	320,120
+base	i_tirh	0	355,90
+base	ii_tirh	0	355,0
+base	u_tirh	0	400,0
+base	uu_tirh	0	400,0
+base	rVocalic_tirh	0	160,165
+base	rrVocalic_tirh	0	160,165
+base	lVocalic_tirh	0	145,165
+base	llVocalic_tirh	0	145,165
+base	e_tirh	0	255,80
+base	ai_tirh	0	255,80
+base	o_tirh	0	445,45
+base	au_tirh	0	445,45
+base	ka_tirh	0	200,165
+base	kha_tirh	0	310,165
+base	ga_tirh	0	325,165
+base	gha_tirh	0	200,165
+base	nga_tirh	0	365,0
+base	ca_tirh	0	270,25
+base	cha_tirh	0	300,-95
+base	ja_tirh	0	350,60
+base	jha_tirh	0	400,165
+base	nya_tirh	0	435,70
+base	tta_tirh	0	310,0
+base	ttha_tirh	0	300,0
+base	dda_tirh	0	415,20
+base	ddha_tirh	0	300,30
+base	nna_tirh	0	290,165
+base	ta_tirh	0	415,50
+base	tha_tirh	0	215,165
+base	da_tirh	0	265,165
+base	dha_tirh	0	210,165
+base	na_tirh	0	285,165
+base	pa_tirh	0	370,165
+base	pha_tirh	0	230,165
+base	ba_tirh	0	200,20
+base	bha_tirh	0	390,40
+base	ma_tirh	0	330,165
+base	ya_tirh	0	215,165
+base	ra_tirh	0	200,165
+base	la_tirh	0	250,165
+base	va_tirh	0	200,20
+base	sha_tirh	0	230,165
+base	ssa_tirh	0	205,165
+base	sa_tirh	0	340,165
+base	ha_tirh	0	225,30
 base	Gu	0	280,50
 base	Ju	0	425,-30
 base	Nnu	0	270,65
@@ -1453,6 +1836,7 @@ base	Shu	0	285,65
 base	Su	0	290,55
 base	Ku	0	200,140
 base	Tu	0	420,25
+base	Tuu	0	360,25
 base	Dhu	0	180,165
 base	Bhu	0	420,10
 base	Yu	0	260,145
@@ -1485,7 +1869,7 @@ base	KaLa	0	170,185
 base	PhaLa	0	190,185
 base	ShaLa	0	230,235
 base	Ta.fina	0	415,53
-base	Ma.fina	0	315,50
+base	Ma.fina	0	315,10
 base	TaVirama.alt	0	195,-30
 base	KaTa	0	405,50
 base	KaRa	0	210,75
@@ -1503,7 +1887,7 @@ base	NyaCa	0	140,165
 base	NyaCha	0	355,-95
 base	TtaTta	0	420,5
 base	TtaTtha	0	340,0
-base	NnaTta	0	485,0
+base	NnaTta	0	482,0
 base	NnaTtha	0	430,-5
 base	NnaDda	0	425,25
 base	NnaDdha	0	425,0
@@ -1536,11 +1920,34 @@ base	BaDa.part	0	330,30
 base	BaDha.part	0	215,35
 base	Br.part	0	245,-10
 base	MaBa.part	0	300,-20
+base	Bhra	0	390,40
+base	Bhuu	0	420,10
+base	Dbhu	0	427,-203
+base	Dhru	0	299,-47
+base	Dra	0	286,-47
+base	Gna	0	400,-45
+base	Gra	0	325,-110
+base	NaNa	0	344,44
+base	Nda	0	419,172
+base	NnaNna	0	325,77
+base	Nta	0	331,-71
+base	Ntra	0	294,-131
+base	Ntu	0	363,-173
+base	Pra	0	335,-94
+base	ShaCa	0	244,0
+base	Shra	0	305,-94
+base	Sra	0	340,-110
+base	SsaKa	0	500,124
+base	SsaKr	0	541,-20
+base	Sta	0	376,-86
+base	Stra	0	364,-164
+base	Stu	0	261,-43
+base	Tru	0	330,65
 
 lookup end
 
 
-lookup	21	mark to base
+lookup	23	mark to base
 
 RightToLeft	no
 IgnoreBaseGlyphs	no
@@ -1548,58 +1955,55 @@ IgnoreLigatures	no
 IgnoreMarks	no
 MarkAttachmentType	1
 
-mark	uni114C2	0	-240,0
+mark	virama_tirh	0	-240,0
 base	uni25CC	0	297,0
-base	uni11481	0	350,60
-base	uni11482	0	350,60
-base	uni11483	0	350,0
-base	uni11484	0	380,-20
-base	uni11485	0	420,-10
-base	uni11486	0	380,-20
-base	uni11487	0	250,0
-base	uni11488	0	250,0
-base	uni11489	0	205,-115
-base	uni1148A	0	95,-100
-base	uni1148B	0	340,30
-base	uni1148C	0	340,30
-base	uni1148D	0	395,30
-base	uni1148E	0	395,30
-base	uni1148F	0	320,0
-base	uni11490	0	350,0
-base	uni11491	0	350,0
-base	uni11492	0	305,0
-base	uni11493	0	305,0
-base	uni11494	0	270,0
-base	uni11495	0	295,-100
-base	uni11496	0	395,0
-base	uni11497	0	355,0
-base	uni11498	0	455,0
-base	uni11499	0	315,0
-base	uni1149A	0	260,0
-base	uni1149B	0	390,0
-base	uni1149C	0	300,0
-base	uni1149D	0	285,0
-base	uni1149E	0	360,0
-base	uni1149F	0	305,0
-base	uni114A0	0	270,0
-base	uni114A1	0	270,0
-base	uni114A2	0	270,0
-base	uni114A3	0	400,0
-base	uni114A4	0	295,0
-base	uni114A5	0	305,0
-base	uni114A6	0	350,0
-base	uni114A7	0	305,0
-base	uni114A8	0	300,0
-base	uni114A9	0	280,0
-base	uni114AA	0	280,0
-base	uni114AB	0	305,0
-base	uni114AC	0	300,0
-base	uni114AD	0	280,0
-base	uni114AE	0	320,0
-base	uni114AF	0	180,0
-base	uni114BB	0	561,0
-base	uni114BC	0	561,0
-base	uni114BE	0	561,0
+base	a_tirh	0	350,60
+base	aa_tirh	0	350,60
+base	i_tirh	0	350,0
+base	ii_tirh	0	380,-20
+base	u_tirh	0	420,-10
+base	uu_tirh	0	380,-20
+base	rVocalic_tirh	0	250,0
+base	rrVocalic_tirh	0	250,0
+base	lVocalic_tirh	0	205,-115
+base	llVocalic_tirh	0	95,-100
+base	e_tirh	0	340,30
+base	ai_tirh	0	340,30
+base	o_tirh	0	395,30
+base	au_tirh	0	395,30
+base	ka_tirh	0	320,0
+base	kha_tirh	0	350,0
+base	ga_tirh	0	350,0
+base	gha_tirh	0	305,0
+base	nga_tirh	0	305,0
+base	ca_tirh	0	270,0
+base	cha_tirh	0	295,-100
+base	ja_tirh	0	395,0
+base	jha_tirh	0	355,0
+base	nya_tirh	0	455,0
+base	tta_tirh	0	315,0
+base	ttha_tirh	0	260,0
+base	dda_tirh	0	390,0
+base	ddha_tirh	0	300,0
+base	nna_tirh	0	285,0
+base	ta_tirh	0	360,0
+base	tha_tirh	0	305,0
+base	da_tirh	0	270,0
+base	dha_tirh	0	270,0
+base	na_tirh	0	270,0
+base	pa_tirh	0	400,0
+base	pha_tirh	0	295,0
+base	ba_tirh	0	305,0
+base	bha_tirh	0	350,0
+base	ma_tirh	0	305,0
+base	ya_tirh	0	300,0
+base	ra_tirh	0	280,0
+base	la_tirh	0	280,0
+base	va_tirh	0	305,0
+base	sha_tirh	0	300,0
+base	ssa_tirh	0	280,0
+base	sa_tirh	0	320,0
+base	ha_tirh	0	180,0
 base	Gu	0	280,0
 base	Ju	0	355,-20
 base	Nnu	0	280,0
@@ -1612,6 +2016,7 @@ base	Shu	0	280,0
 base	Su	0	280,0
 base	Ku	0	215,0
 base	Tu	0	410,0
+base	Tuu	0	350,0
 base	Dhu	0	220,0
 base	Bhu	0	395,0
 base	Yu	0	280,0
@@ -1692,11 +2097,34 @@ base	BaDa.part	0	315,-25
 base	BaDha.part	0	250,-35
 base	Br.part	0	230,-30
 base	MaBa.part	0	320,-65
+base	Bhra	0	350,0
+base	Bhuu	0	395,0
+base	Dbhu	0	310,-221
+base	Dhru	0	309,-130
+base	Dra	0	270,-108
+base	Gna	0	343,-124
+base	Gra	0	262,-152
+base	NaNa	0	270,-98
+base	Nda	0	383,10
+base	NnaNna	0	249,-59
+base	Nta	0	270,-108
+base	Ntra	0	227,-188
+base	Ntu	0	270,-202
+base	Pra	0	317,-139
+base	ShaCa	0	173,-41
+base	Shra	0	272,-150
+base	Sra	0	301,-171
+base	SsaKa	0	497,0
+base	SsaKr	0	415,-40
+base	Sta	0	320,-122
+base	Stra	0	320,-187
+base	Stu	0	320,-130
+base	Tru	0	320,15
 
 lookup end
 
 
-lookup	22	mark to base
+lookup	24	mark to base
 
 RightToLeft	no
 IgnoreBaseGlyphs	no
@@ -1704,8 +2132,8 @@ IgnoreLigatures	no
 IgnoreMarks	no
 MarkAttachmentType	2
 
-mark	uni114BA	0	-245,630
-mark	uni114BB	0	739,630
+mark	shortEMatra_tirh	0	-245,630
+mark	aiMatra_tirh	0	739,630
 mark	Repha	0	260,630
 mark	Repha_I	0	91,698
 mark	Repha_II	0	90,681
@@ -1713,46 +2141,46 @@ mark	Repha_Tta	0	147,644
 mark	Repha_uni114BA	0	-317,622
 mark	Repha_Ba.part	0	258,622
 base	uni25CC	0	500,622
-base	uni1148F	0	700,622
-base	uni11490	0	581,622
-base	uni11491	0	561,622
-base	uni11492	0	537,622
-base	uni11493	0	582,622
-base	uni11494	0	497,622
-base	uni11495	0	490,622
-base	uni11496	0	696,622
-base	uni11497	0	614,622
-base	uni11498	0	834,602
-base	uni11499	0	305,774
-base	uni1149A	0	528,622
-base	uni1149B	0	600,622
-base	uni1149C	0	513,622
-base	uni1149D	0	567,622
-base	uni1149E	0	600,622
-base	uni1149F	0	549,622
-base	uni114A0	0	487,622
-base	uni114A1	0	496,622
-base	uni114A2	0	509,622
-base	uni114A3	0	621,622
-base	uni114A4	0	571,622
-base	uni114A5	0	501,622
-base	uni114A6	0	569,622
-base	uni114A7	0	527,622
-base	uni114A8	0	531,622
-base	uni114A9	0	501,622
-base	uni114AA	0	449,622
-base	uni114AB	0	501,622
-base	uni114AC	0	501,622
-base	uni114AD	0	538,622
-base	uni114AE	0	587,622
-base	uni114AF	0	481,622
-base	uni114B0	0	-96,622
-base	uni114B1	0	664,677
-base	uni114B2	0	190,681
-base	uni114BB	0	764,622
-base	uni114BC	0	764,622
-base	uni114BD	0	95,622
-base	uni114BE	0	946,622
+base	ka_tirh	0	700,622
+base	kha_tirh	0	581,622
+base	ga_tirh	0	561,622
+base	gha_tirh	0	537,622
+base	nga_tirh	0	582,622
+base	ca_tirh	0	497,622
+base	cha_tirh	0	490,622
+base	ja_tirh	0	696,622
+base	jha_tirh	0	614,622
+base	nya_tirh	0	834,602
+base	tta_tirh	0	305,774
+base	ttha_tirh	0	528,622
+base	dda_tirh	0	600,622
+base	ddha_tirh	0	513,622
+base	nna_tirh	0	567,622
+base	ta_tirh	0	600,622
+base	tha_tirh	0	549,622
+base	da_tirh	0	487,622
+base	dha_tirh	0	496,622
+base	na_tirh	0	509,622
+base	pa_tirh	0	621,622
+base	pha_tirh	0	571,622
+base	ba_tirh	0	501,622
+base	bha_tirh	0	569,622
+base	ma_tirh	0	527,622
+base	ya_tirh	0	531,622
+base	ra_tirh	0	501,622
+base	la_tirh	0	449,622
+base	va_tirh	0	501,622
+base	sha_tirh	0	501,622
+base	ssa_tirh	0	538,622
+base	sa_tirh	0	587,622
+base	ha_tirh	0	481,622
+base	aaMatra_tirh	0	-96,622
+base	iMatra_tirh	0	664,677
+base	iiMatra_tirh	0	190,681
+base	aiMatra_tirh	0	764,622
+base	oMatra_tirh	0	764,622
+base	shortOMatra_tirh	0	95,622
+base	auMatra_tirh	0	946,622
 base	Gu	0	561,622
 base	Ju	0	620,622
 base	Nnu	0	568,622
@@ -1765,6 +2193,7 @@ base	Shu	0	501,622
 base	Su	0	587,622
 base	Ku	0	570,622
 base	Tu	0	569,622
+base	Tuu	0	509,622
 base	Dhu	0	551,622
 base	Bhu	0	581,622
 base	Yu	0	551,622
@@ -1789,7 +2218,7 @@ base	TaYa	0	424,622
 base	DaYa	0	560,622
 base	NaYa	0	560,622
 base	BhaYa	0	560,622
-base	ShaYa	0	618,642
+base	ShaYa	0	619,642
 base	SaYa	0	624,622
 base	HaYa	0	545,622
 base	Ya.post	0	95,622
@@ -1855,11 +2284,34 @@ base	uni114B2_tall.alt3	0	233,741
 base	uni114BD.alt	0	94,622
 base	uni114BD.alt2	0	93,622
 base	uni114BD_Ba	0	95,622
+base	Bhra	0	569,622
+base	Bhuu	0	581,622
+base	Dbhu	0	487,622
+base	Dhru	0	496,622
+base	Dra	0	487,622
+base	Gna	0	561,622
+base	Gra	0	561,622
+base	NaNa	0	509,622
+base	Nda	0	681,622
+base	NnaNna	0	531,622
+base	Nta	0	509,622
+base	Ntra	0	509,622
+base	Ntu	0	509,622
+base	Pra	0	621,622
+base	ShaCa	0	374,622
+base	Shra	0	501,622
+base	Sra	0	587,622
+base	SsaKa	0	1012,622
+base	SsaKr	0	827,622
+base	Sta	0	587,622
+base	Stra	0	587,622
+base	Stu	0	587,622
+base	Tru	0	627,622
 
 lookup end
 
 
-lookup	23	context
+lookup	25	context
 
 RightToLeft	no
 IgnoreBaseGlyphs	no
@@ -1870,15 +2322,15 @@ MarkAttachmentType	2
 class definition begin
 NgaKha	1
 NgaGha	1
-uni114BA	2
+shortEMatra_tirh	2
 class definition end
 
-class	1, 2	2, 32
+class	1, 2	2, 36
 
 lookup end
 
 
-lookup	24	mark to base
+lookup	26	mark to base
 
 RightToLeft	no
 IgnoreBaseGlyphs	no
@@ -1888,13 +2340,13 @@ MarkAttachmentType	2
 
 mark	uni114BA.alt	0	-255,622
 mark	uni114BA.alt2	0	-245,622
-base	uni11499	0	657,622
-base	uni1149A	0	545,622
-base	uni114AB	0	501,622
-base	uni114AC	0	687,622
+base	tta_tirh	0	657,622
+base	ttha_tirh	0	545,622
+base	va_tirh	0	501,622
+base	sha_tirh	0	687,622
 base	BaDa	0	501,622
 base	MaBa	0	527,622
-base	ShaYa	0	601,622
+base	ShaYa	0	600,622
 base	ShaLa	0	687,622
 base	NgaKa	0	725,622
 base	NgaGa	0	755,622
@@ -1906,11 +2358,13 @@ base	BaDha	0	501,622
 base	BaDa.part	0	501,622
 base	BaDha.part	0	501,622
 base	MaBa.part	0	527,622
+base	ShaCa	0	560,622
+base	Shra	0	687,622
 
 lookup end
 
 
-lookup	25	mark to base
+lookup	27	mark to base
 
 RightToLeft	no
 IgnoreBaseGlyphs	no
@@ -1918,67 +2372,64 @@ IgnoreLigatures	no
 IgnoreMarks	no
 MarkAttachmentType	2
 
-mark	uni114BF	0	-300,632
-mark	uni114C0	0	-300,632
+mark	candrabindu_tirh	0	-300,632
+mark	anusvara_tirh	0	-300,632
 mark	Ba.part	0	-310,652
 mark	Ba.part.alt	0	-75,662
-mark	uni114BF.alt	0	-185,622
-mark	uni114C0.alt	0	-135,622
+mark	candrabindu.alt	0	-185,622
+mark	anusvara.alt	0	-135,622
+mark	udatta_deva	0	-130,590
 base	uni25CC	0	297,660
-base	uni11481	0	440,660
-base	uni11482	0	460,660
-base	uni11483	0	400,660
-base	uni11484	0	420,660
-base	uni11485	0	320,771
-base	uni11486	0	350,771
-base	uni11487	0	440,700
-base	uni11488	0	460,700
-base	uni11489	0	260,660
-base	uni1148A	0	260,660
-base	uni1148B	0	490,660
-base	uni1148C	0	590,771
-base	uni1148D	0	470,660
-base	uni1148E	0	578,771
-base	uni1148F	0	440,660
-base	uni11490	0	350,660
-base	uni11491	0	270,660
-base	uni11492	0	320,660
-base	uni11493	0	310,700
-base	uni11494	0	255,660
-base	uni11495	0	265,660
-base	uni11496	0	405,660
-base	uni11497	0	375,660
-base	uni11498	0	515,660
-base	uni11499	0	183,774
-base	uni1149A	0	454,660
-base	uni1149B	0	330,660
-base	uni1149C	0	300,660
-base	uni1149D	0	285,660
-base	uni1149E	0	360,660
-base	uni1149F	0	245,660
-base	uni114A0	0	305,660
-base	uni114A1	0	320,660
-base	uni114A2	0	310,660
-base	uni114A3	0	355,660
-base	uni114A4	0	380,660
-base	uni114A5	0	310,820
-base	uni114A6	0	350,660
-base	uni114A7	0	315,660
-base	uni114A8	0	330,660
-base	uni114A9	0	305,660
-base	uni114AA	0	260,660
-base	uni114AB	0	279,660
-base	uni114AC	0	647,710
-base	uni114AD	0	330,660
-base	uni114AE	0	340,660
-base	uni114AF	0	290,660
-base	uni114B0	0	50,670
-base	uni114B1	0	741,771
-base	uni114B2	0	331,749
-base	uni114BB	0	561,660
-base	uni114BC	0	561,660
-base	uni114BD	0	236,710
-base	uni114BE	0	1087,710
+base	a_tirh	0	440,660
+base	aa_tirh	0	460,660
+base	i_tirh	0	400,660
+base	ii_tirh	0	420,660
+base	u_tirh	0	320,771
+base	uu_tirh	0	350,771
+base	rVocalic_tirh	0	440,700
+base	rrVocalic_tirh	0	460,700
+base	lVocalic_tirh	0	260,660
+base	llVocalic_tirh	0	260,660
+base	e_tirh	0	490,660
+base	ai_tirh	0	590,771
+base	o_tirh	0	470,660
+base	au_tirh	0	578,771
+base	ka_tirh	0	440,660
+base	kha_tirh	0	350,660
+base	ga_tirh	0	270,660
+base	gha_tirh	0	320,660
+base	nga_tirh	0	310,700
+base	ca_tirh	0	255,660
+base	cha_tirh	0	265,660
+base	ja_tirh	0	405,660
+base	jha_tirh	0	375,660
+base	nya_tirh	0	515,660
+base	tta_tirh	0	183,774
+base	ttha_tirh	0	454,660
+base	dda_tirh	0	330,660
+base	ddha_tirh	0	300,660
+base	nna_tirh	0	285,660
+base	ta_tirh	0	360,660
+base	tha_tirh	0	245,660
+base	da_tirh	0	305,660
+base	dha_tirh	0	320,660
+base	na_tirh	0	310,660
+base	pa_tirh	0	355,660
+base	pha_tirh	0	380,660
+base	ba_tirh	0	310,820
+base	bha_tirh	0	350,660
+base	ma_tirh	0	315,660
+base	ya_tirh	0	330,660
+base	ra_tirh	0	305,660
+base	la_tirh	0	260,660
+base	va_tirh	0	279,660
+base	sha_tirh	0	647,710
+base	ssa_tirh	0	330,660
+base	sa_tirh	0	340,660
+base	ha_tirh	0	290,660
+base	iMatra_tirh	0	741,771
+base	iiMatra_tirh	0	331,749
+base	shortOMatra_tirh	0	236,710
 base	Gu	0	300,660
 base	Ju	0	395,660
 base	Nnu	0	280,660
@@ -1991,6 +2442,7 @@ base	Shu	0	647,710
 base	Su	0	335,660
 base	Ku	0	360,660
 base	Tu	0	350,660
+base	Tuu	0	290,660
 base	Dhu	0	425,660
 base	Bhu	0	350,660
 base	Yu	0	325,660
@@ -2009,7 +2461,7 @@ base	Hr	0	300,660
 base	KhaNa	0	350,660
 base	PhaNa	0	380,660
 base	SaNa	0	350,660
-base	BaDa	0	260,805
+base	BaDa	0	260,820
 base	MaBa	0	320,820
 base	TaYa	0	260,660
 base	DaYa	0	320,660
@@ -2084,11 +2536,34 @@ base	uni114B2_tall.alt3	0	392,771
 base	uni114BD.alt	0	236,710
 base	uni114BD.alt2	0	236,710
 base	uni114BD_Ba	0	237,710
+base	Bhra	0	350,660
+base	Bhuu	0	350,660
+base	Dbhu	0	305,660
+base	Dhru	0	380,660
+base	Dra	0	305,660
+base	Gna	0	270,660
+base	Gra	0	270,660
+base	NaNa	0	310,660
+base	Nda	0	398,660
+base	NnaNna	0	249,660
+base	Nta	0	310,660
+base	Ntra	0	310,660
+base	Ntu	0	310,660
+base	Pra	0	355,660
+base	ShaCa	0	275,660
+base	Shra	0	337,660
+base	Sra	0	340,660
+base	SsaKa	0	519,660
+base	SsaKr	0	523,660
+base	Sta	0	340,660
+base	Stra	0	340,660
+base	Stu	0	340,660
+base	Tru	0	485,660
 
 lookup end
 
 
-lookup	26	mark to base
+lookup	28	mark to base
 
 RightToLeft	no
 IgnoreBaseGlyphs	no
@@ -2096,12 +2571,12 @@ IgnoreLigatures	no
 IgnoreMarks	no
 MarkAttachmentType	2
 
-mark	uni114BF.alt2	0	-185,622
-mark	uni114C0.alt2	0	-135,622
-base	uni11499	0	646,660
-base	uni114AB	0	646,660
-base	uni114B0	0	101,630
-base	uni114BC	0	959,630
+mark	candrabindu.alt2	0	-185,622
+mark	anusvara.alt2	0	-135,622
+base	tta_tirh	0	646,660
+base	va_tirh	0	646,660
+base	aaMatra_tirh	0	101,630
+base	oMatra_tirh	0	959,630
 base	Br	0	625,660
 base	BaDa	0	635,660
 base	MaBa	0	625,660
@@ -2115,7 +2590,7 @@ base	MaBa.part	0	625,660
 lookup end
 
 
-lookup	27	mark to mark
+lookup	29	mark to mark
 
 RightToLeft	no
 IgnoreBaseGlyphs	no
@@ -2132,7 +2607,7 @@ base	uni114BA.alt	0	-289,674
 lookup end
 
 
-lookup	28	mark to mark
+lookup	30	mark to mark
 
 RightToLeft	no
 IgnoreBaseGlyphs	no
@@ -2140,22 +2615,22 @@ IgnoreLigatures	no
 IgnoreMarks	no
 MarkAttachmentType	2
 
-mark	uni114BA	0	-245,630
-mark	uni114BB	0	739,630
+mark	shortEMatra_tirh	0	-245,630
+mark	aiMatra_tirh	0	739,630
 mark	Repha	0	260,630
 mark	Repha_I	0	91,698
 mark	Repha_II	0	90,681
 mark	Repha_Tta	0	147,644
 mark	Repha_uni114BA	0	-317,622
 mark	Repha_Ba.part	0	258,622
-base	uni114BA	0	-321,622
+base	shortEMatra_tirh	0	-321,622
 base	uni114BA.alt	0	-290,622
 base	uni114BA.alt2	0	-305,780
 
 lookup end
 
 
-lookup	29	mark to mark
+lookup	31	mark to mark
 
 RightToLeft	no
 IgnoreBaseGlyphs	no
@@ -2163,13 +2638,15 @@ IgnoreLigatures	no
 IgnoreMarks	no
 MarkAttachmentType	2
 
-mark	uni114BF	0	-300,632
-mark	uni114C0	0	-300,632
+mark	candrabindu_tirh	0	-300,632
+mark	anusvara_tirh	0	-300,632
 mark	Ba.part	0	-310,652
 mark	Ba.part.alt	0	-75,662
-mark	uni114BF.alt	0	-185,622
-mark	uni114C0.alt	0	-135,622
-base	uni114BA	0	-180,710
+mark	candrabindu.alt	0	-185,622
+mark	anusvara.alt	0	-135,622
+base	shortEMatra_tirh	0	-180,710
+base	candrabindu_tirh	0	-300,970
+base	anusvara_tirh	0	-300,970
 base	Repha	0	412,645
 base	Repha_I	0	397,681
 base	Repha_II	0	332,610
@@ -2181,11 +2658,62 @@ base	uni114BA.alt2	0	-91,771
 base	Ba.part	0	-302,810
 base	Ba.part.alt	0	141,660
 base	Repha_Ba.part	0	440,645
+base	candrabindu.alt	0	-185,970
+base	anusvara.alt	0	-135,970
 
 lookup end
 
 
-lookup	30	chained
+lookup	32	mark to mark
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+mark	udatta_deva	0	-130,612
+base	shortEMatra_tirh	0	-180,710
+base	candrabindu_tirh	0	-300,870
+base	anusvara_tirh	0	-300,950
+base	Repha	0	412,645
+base	Repha_I	0	397,681
+base	Repha_II	0	332,610
+base	Repha_Tta	0	352,621
+base	Repha_uni114BA	0	-39,610
+base	uni114BA.alt	0	-197,771
+base	uni114BA.alt2	0	-91,771
+base	Ba.part	0	-302,810
+base	Ba.part.alt	0	141,660
+base	Repha_Ba.part	0	440,645
+base	candrabindu.alt	0	-185,870
+base	anusvara.alt	0	-135,875
+base	candrabindu.alt2	0	-187,870
+base	anusvara.alt2	0	-135,875
+
+lookup end
+
+
+lookup	33	mark to mark
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+mark	anudatta_deva	0	-249,-40
+base	uMatra_tirh	0	-216,-310
+base	uuMatra_tirh	0	-72,-310
+base	rVocalicMatra_tirh	0	-166,-310
+base	rrVocalicMatra_tirh	0	-166,-420
+base	lVocalicMatra_tirh	0	-234,-419
+base	llVocalicMatra_tirh	0	-234,-531
+base	nukta_tirh	0	-273,-210
+base	nukta.alt	0	-273,-210
+
+lookup end
+
+
+lookup	34	chained
 
 RightToLeft	no
 IgnoreBaseGlyphs	no
@@ -2195,38 +2723,38 @@ IgnoreMarks	no
 backtrackclass definition begin
 Repha	1
 Repha_Ba.part	2
-uni11499	3
+tta_tirh	3
 class definition end
 
 class definition begin
-uni1148F	2
-uni11490	2
-uni11491	2
-uni11492	2
-uni11493	2
-uni11494	2
-uni11495	2
-uni11496	2
-uni11497	2
-uni11498	2
-uni1149B	2
-uni1149C	2
-uni1149D	2
-uni1149E	2
-uni1149F	2
-uni114A0	2
-uni114A1	2
-uni114A2	2
-uni114A3	2
-uni114A4	2
-uni114A6	2
-uni114A7	2
-uni114A8	2
-uni114A9	2
-uni114AA	2
-uni114AD	2
-uni114AE	2
-uni114AF	2
+ka_tirh	2
+kha_tirh	2
+ga_tirh	2
+gha_tirh	2
+nga_tirh	2
+ca_tirh	2
+cha_tirh	2
+ja_tirh	2
+jha_tirh	2
+nya_tirh	2
+dda_tirh	2
+ddha_tirh	2
+nna_tirh	2
+ta_tirh	2
+tha_tirh	2
+da_tirh	2
+dha_tirh	2
+na_tirh	2
+pa_tirh	2
+pha_tirh	2
+bha_tirh	2
+ma_tirh	2
+ya_tirh	2
+ra_tirh	2
+la_tirh	2
+ssa_tirh	2
+sa_tirh	2
+ha_tirh	2
 KhaNa	2
 PhaNa	2
 SaNa	2
@@ -2270,64 +2798,64 @@ TaRa	2
 Ra.alt1	2
 Ra.alt2	2
 NgaGa	5
-uni1149A	6
-uni114AC	7
+ttha_tirh	6
+sha_tirh	7
 Shu	7
 ShaLa	7
-uni114AB	9
+va_tirh	9
 BaDa.part	9
 BaDha.part	9
 MaBa.part	9
-uni114B1	10
+iMatra_tirh	10
 uni114B1_Repha	10
-uni114BF	12
-uni114BF.alt	12
-uni114C0	13
-uni114C0.alt	13
-uni114BF.alt2	14
+candrabindu_tirh	12
+candrabindu.alt	12
+anusvara_tirh	13
+anusvara.alt	13
+candrabindu.alt2	14
 Ba.part	15
 Repha_Ba.part	15
 Repha	16
 Repha_uni114BA	16
-uni114B0	18
-uni114B9	18
-uni114C3	19
+aaMatra_tirh	18
+eMatra_tirh	18
+nukta_tirh	19
 NullMark	19
 nukta.alt	19
 class definition end
 
-class-chain		2, 16, 18, 19, 12		5, 31
-class-chain		2, 16, 18, 19, 13		5, 31
-class-chain		2, 16, 18, 12		4, 31
-class-chain		2, 16, 18, 13		4, 31
-class-chain		5, 18, 12		3, 31
-class-chain		5, 18, 13		3, 31
-class-chain		6, 12		2, 33
-class-chain		7, 16, 19, 18, 12		5, 32
-class-chain		7, 16, 19, 18, 13		5, 32
-class-chain		7, 16, 18, 12		4, 32
-class-chain		7, 16, 18, 13		4, 32
-class-chain		10, 2, 19, 19, 12		5, 32
-class-chain		10, 2, 19, 19, 13		5, 32
-class-chain		10, 2, 19, 12		4, 32
-class-chain		10, 2, 19, 13		4, 32
-class-chain		10, 9, 19, 19, 12		5, 32
-class-chain		10, 9, 19, 19, 13		5, 32
-class-chain		10, 9, 19, 12		4, 32
-class-chain		10, 9, 19, 13		4, 32
-class-chain		15, 18, 12		3, 31
-class-chain		15, 18, 13		3, 31
-class-chain		16, 18, 12		3, 31
-class-chain		16, 18, 13		3, 31
-class-chain	3	16, 18, 12		3, 34
-class-chain	3	16, 18, 13		3, 34
-class-chain	1	18, 14		2, 31
-class-chain	2	18, 14		2, 32
+class-chain		2, 16, 18, 19, 12		5, 35
+class-chain		2, 16, 18, 19, 13		5, 35
+class-chain		2, 16, 18, 12		4, 35
+class-chain		2, 16, 18, 13		4, 35
+class-chain		5, 18, 12		3, 35
+class-chain		5, 18, 13		3, 35
+class-chain		6, 12		2, 37
+class-chain		7, 16, 19, 18, 12		5, 36
+class-chain		7, 16, 19, 18, 13		5, 36
+class-chain		7, 16, 18, 12		4, 36
+class-chain		7, 16, 18, 13		4, 36
+class-chain		10, 2, 19, 19, 12		5, 36
+class-chain		10, 2, 19, 19, 13		5, 36
+class-chain		10, 2, 19, 12		4, 36
+class-chain		10, 2, 19, 13		4, 36
+class-chain		10, 9, 19, 19, 12		5, 36
+class-chain		10, 9, 19, 19, 13		5, 36
+class-chain		10, 9, 19, 12		4, 36
+class-chain		10, 9, 19, 13		4, 36
+class-chain		15, 18, 12		3, 35
+class-chain		15, 18, 13		3, 35
+class-chain		16, 18, 12		3, 35
+class-chain		16, 18, 13		3, 35
+class-chain	3	16, 18, 12		3, 38
+class-chain	3	16, 18, 13		3, 38
+class-chain	1	18, 14		2, 35
+class-chain	2	18, 14		2, 36
 
 lookup end
 
 
-lookup	31	single
+lookup	35	single
 
 RightToLeft	no
 IgnoreBaseGlyphs	no
@@ -2335,20 +2863,20 @@ IgnoreLigatures	no
 IgnoreMarks	no
 MarkAttachmentType	2
 
-x placement	uni114BF	80
-y placement	uni114BF	20
-x placement	uni114C0	80
-y placement	uni114C0	20
-x placement	uni114BF.alt	80
-y placement	uni114BF.alt	20
-x placement	uni114C0.alt	80
-y placement	uni114C0.alt	20
-y placement	uni114BF.alt2	20
+x placement	candrabindu_tirh	80
+y placement	candrabindu_tirh	20
+x placement	anusvara_tirh	80
+y placement	anusvara_tirh	20
+x placement	candrabindu.alt	80
+y placement	candrabindu.alt	20
+x placement	anusvara.alt	80
+y placement	anusvara.alt	20
+y placement	candrabindu.alt2	20
 
 lookup end
 
 
-lookup	32	single
+lookup	36	single
 
 RightToLeft	no
 IgnoreBaseGlyphs	no
@@ -2356,18 +2884,18 @@ IgnoreLigatures	no
 IgnoreMarks	no
 MarkAttachmentType	2
 
-x placement	uni114BA	80
-x placement	uni114BF.alt	200
-y placement	uni114BF.alt	-45
-x placement	uni114C0.alt	200
-y placement	uni114C0.alt	-45
-x placement	uni114BF.alt2	10
-y placement	uni114BF.alt2	45
+x placement	shortEMatra_tirh	80
+x placement	candrabindu.alt	200
+y placement	candrabindu.alt	-45
+x placement	anusvara.alt	200
+y placement	anusvara.alt	-45
+x placement	candrabindu.alt2	10
+y placement	candrabindu.alt2	45
 
 lookup end
 
 
-lookup	33	single
+lookup	37	single
 
 RightToLeft	no
 IgnoreBaseGlyphs	no
@@ -2375,20 +2903,41 @@ IgnoreLigatures	no
 IgnoreMarks	no
 MarkAttachmentType	2
 
-y placement	uni114BF	-30
+y placement	candrabindu_tirh	-30
 
 lookup end
 
 
-lookup	34	single
+lookup	38	single
 
 RightToLeft	no
 IgnoreBaseGlyphs	no
 IgnoreLigatures	no
 IgnoreMarks	no
 
-x placement	uni114BF	1
-x placement	uni114C0	1
+x placement	candrabindu_tirh	1
+x placement	anusvara_tirh	1
+
+lookup end
+
+
+lookup	39	mark to mark
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+MarkAttachmentType	1
+
+mark	virama_tirh	0	-240,0
+base	uMatra_tirh	0	-216,-310
+base	uuMatra_tirh	0	-72,-310
+base	rVocalicMatra_tirh	0	-166,-310
+base	rrVocalicMatra_tirh	0	-166,-420
+base	lVocalicMatra_tirh	0	-234,-419
+base	llVocalicMatra_tirh	0	-234,-531
+base	nukta_tirh	0	-273,-210
+base	Va.sub	0	-223,-402
 
 lookup end
 

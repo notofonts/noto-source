@@ -2,19 +2,20 @@ FontDame GSUB table
 
 
 script table begin
-tirh	default		0, 1, 2, 3, 4, 5, 6, 7
+tirh	default		0, 1, 2, 3, 4, 5, 6, 7, 8
 script table end
 
 
 feature table begin
 0	abvf	2, 3
-1	abvs	13, 14, 15, 16, 17
-2	blws	37
-3	pstf	4, 9, 11
-4	rphf	0
-5	ss01	34
-6	ss02	35
-7	ss03	36
+1	abvs	14, 15, 19, 20, 21, 22
+2	blwf	18
+3	blws	42
+4	pstf	4, 10, 12
+5	rphf	0
+6	ss01	39
+7	ss02	40
+8	ss03	41
 
 feature table end
 
@@ -27,47 +28,47 @@ IgnoreMarks	no
 MarkAttachmentType	1
 
 inputcoverage definition begin
-uni114A9
+ra_tirh
 coverage definition end
 
 inputcoverage definition begin
-uni114C2
+virama_tirh
 coverage definition end
 
 lookaheadcoverage definition begin
-uni1148F
-uni11490
-uni11491
-uni11492
-uni11493
-uni11494
-uni11495
-uni11496
-uni11497
-uni11498
-uni11499
-uni1149A
-uni1149B
-uni1149C
-uni1149D
-uni1149E
-uni1149F
-uni114A0
-uni114A1
-uni114A2
-uni114A3
-uni114A4
-uni114A5
-uni114A6
-uni114A7
-uni114A8
-uni114A9
-uni114AA
-uni114AB
-uni114AC
-uni114AD
-uni114AE
-uni114AF
+ka_tirh
+kha_tirh
+ga_tirh
+gha_tirh
+nga_tirh
+ca_tirh
+cha_tirh
+ja_tirh
+jha_tirh
+nya_tirh
+tta_tirh
+ttha_tirh
+dda_tirh
+ddha_tirh
+nna_tirh
+ta_tirh
+tha_tirh
+da_tirh
+dha_tirh
+na_tirh
+pa_tirh
+pha_tirh
+ba_tirh
+bha_tirh
+ma_tirh
+ya_tirh
+ra_tirh
+la_tirh
+va_tirh
+sha_tirh
+ssa_tirh
+sa_tirh
+ha_tirh
 coverage definition end
 
 coverage	1,1
@@ -82,7 +83,7 @@ IgnoreLigatures	no
 IgnoreMarks	no
 MarkAttachmentType	1
 
-Repha	uni114A9	uni114C2
+Repha	ra_tirh	virama_tirh
 
 lookup end
 
@@ -95,33 +96,75 @@ IgnoreLigatures	no
 IgnoreMarks	no
 MarkAttachmentType	1
 
-Ku	uni1148F	uni114B3
-Kuu	uni1148F	uni114B4
-Kr	uni1148F	uni114B5
-Gu	uni11491	uni114B3
-Ju	uni11496	uni114B3
-Nnu	uni1149D	uni114B3
-Tu	uni1149E	uni114B3
-Tr	uni1149E	uni114B5
-Du	uni114A0	uni114B3
-Dhu	uni114A1	uni114B3
-Dhuu	uni114A1	uni114B4
-Nu.tirh	uni114A2	uni114B3
-Pu	uni114A3	uni114B3
-Br	uni114A5	uni114B5
-Bhu	uni114A6	uni114B3
-Bhr	uni114A6	uni114B5
-Mu.tirh	uni114A7	uni114B3
-Yu	uni114A8	uni114B3
-Ru	uni114A9	uni114B3
-Ruu	uni114A9	uni114B4
-Lu	uni114AA	uni114B3
-Shu	uni114AC	uni114B3
-Ssu	uni114AD	uni114B3
-Su	uni114AE	uni114B3
-Hu	uni114AF	uni114B3
-Huu	uni114AF	uni114B4
-Hr	uni114AF	uni114B5
+KaTa	ka_tirh	virama_tirh	ta_tirh
+KaRa	ka_tirh	virama_tirh	ra_tirh
+KaLa	ka_tirh	virama_tirh	la_tirh
+KaSsa	ka_tirh	virama_tirh	ssa_tirh
+KhaNa	kha_tirh	virama_tirh	na_tirh
+GaGa	ga_tirh	virama_tirh	ga_tirh
+GaDha	ga_tirh	virama_tirh	dha_tirh
+Gna	ga_tirh	virama_tirh	na_tirh
+Gra	ga_tirh	virama_tirh	ra_tirh
+NgaKa	nga_tirh	virama_tirh	ka_tirh
+NgaKha	nga_tirh	virama_tirh	kha_tirh
+NgaGa	nga_tirh	virama_tirh	ga_tirh
+NgaGha	nga_tirh	virama_tirh	gha_tirh
+CaCa	ca_tirh	virama_tirh	ca_tirh
+CaCha	ca_tirh	virama_tirh	cha_tirh
+JaNya	ja_tirh	virama_tirh	nya_tirh
+NyaCa	nya_tirh	virama_tirh	ca_tirh
+NyaCha	nya_tirh	virama_tirh	cha_tirh
+TtaTta	tta_tirh	virama_tirh	tta_tirh
+TtaTtha	tta_tirh	virama_tirh	ttha_tirh
+NnaTta	nna_tirh	virama_tirh	tta_tirh
+NnaTtha	nna_tirh	virama_tirh	ttha_tirh
+NnaDda	nna_tirh	virama_tirh	dda_tirh
+NnaDdha	nna_tirh	virama_tirh	ddha_tirh
+NnaNna	nna_tirh	virama_tirh	nna_tirh
+Tru	ta_tirh	virama_tirh	ra_tirh	uMatra_tirh
+DaDha	da_tirh	virama_tirh	dha_tirh
+Dbhu	da_tirh	virama_tirh	bha_tirh	uMatra_tirh
+DaYa	da_tirh	virama_tirh	ya_tirh
+Dra	da_tirh	virama_tirh	ra_tirh
+Dhru	dha_tirh	virama_tirh	ra_tirh	uMatra_tirh
+Ntu	na_tirh	virama_tirh	ta_tirh	uMatra_tirh
+Ntra	na_tirh	virama_tirh	ta_tirh	virama_tirh	ra_tirh
+Nta	na_tirh	virama_tirh	ta_tirh
+Nda	na_tirh	virama_tirh	da_tirh
+NaDha	na_tirh	virama_tirh	dha_tirh
+NaNa	na_tirh	virama_tirh	na_tirh
+NaYa	na_tirh	virama_tirh	ya_tirh
+NaHa	na_tirh	virama_tirh	ha_tirh
+Pra	pa_tirh	virama_tirh	ra_tirh
+PhaNa	pha_tirh	virama_tirh	na_tirh
+PhaLa	pha_tirh	virama_tirh	la_tirh
+BaDa	ba_tirh	virama_tirh	da_tirh
+BaDha	ba_tirh	virama_tirh	dha_tirh
+BhaYa	bha_tirh	virama_tirh	ya_tirh
+Bhra	bha_tirh	virama_tirh	ra_tirh
+ShaCa	sha_tirh	virama_tirh	ca_tirh
+ShaCha	sha_tirh	virama_tirh	cha_tirh
+ShaYa	sha_tirh	virama_tirh	ya_tirh
+Shra	sha_tirh	virama_tirh	ra_tirh
+ShaLa	sha_tirh	virama_tirh	la_tirh
+SsaKr	ssa_tirh	virama_tirh	ka_tirh	rVocalicMatra_tirh
+SsaKa	ssa_tirh	virama_tirh	ka_tirh
+SsaTta	ssa_tirh	virama_tirh	tta_tirh
+SsaTtha	ssa_tirh	virama_tirh	ttha_tirh
+SsaNna	ssa_tirh	virama_tirh	nna_tirh
+Stu	sa_tirh	virama_tirh	ta_tirh	uMatra_tirh
+Stra	sa_tirh	virama_tirh	ta_tirh	virama_tirh	ra_tirh
+Sta	sa_tirh	virama_tirh	ta_tirh
+SaNa	sa_tirh	virama_tirh	na_tirh
+SaYa	sa_tirh	virama_tirh	ya_tirh
+Sra	sa_tirh	virama_tirh	ra_tirh
+HaNna	ha_tirh	virama_tirh	nna_tirh
+HaNa	ha_tirh	virama_tirh	na_tirh
+HaMa	ha_tirh	virama_tirh	ma_tirh
+HaYa	ha_tirh	virama_tirh	ya_tirh
+HaRa	ha_tirh	virama_tirh	ra_tirh
+HaLa	ha_tirh	virama_tirh	la_tirh
+HaVa	ha_tirh	virama_tirh	va_tirh
 
 lookup end
 
@@ -134,53 +177,35 @@ IgnoreLigatures	no
 IgnoreMarks	no
 MarkAttachmentType	1
 
-KaTa	uni1148F	uni114C2	uni1149E
-KaRa	uni1148F	uni114C2	uni114A9
-KaLa	uni1148F	uni114C2	uni114AA
-KaSsa	uni1148F	uni114C2	uni114AD
-KhaNa	uni11490	uni114C2	uni114A2
-GaGa	uni11491	uni114C2	uni11491
-GaDha	uni11491	uni114C2	uni114A1
-NgaKa	uni11493	uni114C2	uni1148F
-NgaKha	uni11493	uni114C2	uni11490
-NgaGa	uni11493	uni114C2	uni11491
-NgaGha	uni11493	uni114C2	uni11492
-CaCa	uni11494	uni114C2	uni11494
-CaCha	uni11494	uni114C2	uni11495
-JaNya	uni11496	uni114C2	uni11498
-NyaCa	uni11498	uni114C2	uni11494
-NyaCha	uni11498	uni114C2	uni11495
-TtaTta	uni11499	uni114C2	uni11499
-TtaTtha	uni11499	uni114C2	uni1149A
-NnaTta	uni1149D	uni114C2	uni11499
-NnaTtha	uni1149D	uni114C2	uni1149A
-NnaDda	uni1149D	uni114C2	uni1149B
-NnaDdha	uni1149D	uni114C2	uni1149C
-DaDha	uni114A0	uni114C2	uni114A1
-DaYa	uni114A0	uni114C2	uni114A8
-NaDha	uni114A2	uni114C2	uni114A1
-NaYa	uni114A2	uni114C2	uni114A8
-NaHa	uni114A2	uni114C2	uni114AF
-PhaNa	uni114A4	uni114C2	uni114A2
-PhaLa	uni114A4	uni114C2	uni114AA
-BaDa	uni114A5	uni114C2	uni114A0
-BaDha	uni114A5	uni114C2	uni114A1
-BhaYa	uni114A6	uni114C2	uni114A8
-ShaCha	uni114AC	uni114C2	uni11495
-ShaYa	uni114AC	uni114C2	uni114A8
-ShaLa	uni114AC	uni114C2	uni114AA
-SsaTta	uni114AD	uni114C2	uni11499
-SsaTtha	uni114AD	uni114C2	uni1149A
-SsaNna	uni114AD	uni114C2	uni1149D
-SaNa	uni114AE	uni114C2	uni114A2
-SaYa	uni114AE	uni114C2	uni114A8
-HaNna	uni114AF	uni114C2	uni1149D
-HaNa	uni114AF	uni114C2	uni114A2
-HaMa	uni114AF	uni114C2	uni114A7
-HaYa	uni114AF	uni114C2	uni114A8
-HaRa	uni114AF	uni114C2	uni114A9
-HaLa	uni114AF	uni114C2	uni114AA
-HaVa	uni114AF	uni114C2	uni114AB
+Ku	ka_tirh	uMatra_tirh
+Kuu	ka_tirh	uuMatra_tirh
+Kr	ka_tirh	rVocalicMatra_tirh
+Gu	ga_tirh	uMatra_tirh
+Ju	ja_tirh	uMatra_tirh
+Nnu	nna_tirh	uMatra_tirh
+Tu	ta_tirh	uMatra_tirh
+Tuu	ta_tirh	uuMatra_tirh
+Tr	ta_tirh	rVocalicMatra_tirh
+Du	da_tirh	uMatra_tirh
+Dhu	dha_tirh	uMatra_tirh
+Dhuu	dha_tirh	uuMatra_tirh
+Nu.tirh	na_tirh	uMatra_tirh
+Pu	pa_tirh	uMatra_tirh
+Br	ba_tirh	rVocalicMatra_tirh
+Bhu	bha_tirh	uMatra_tirh
+Bhuu	bha_tirh	uuMatra_tirh
+Bhr	bha_tirh	rVocalicMatra_tirh
+Mu.tirh	ma_tirh	uMatra_tirh
+Yu	ya_tirh	uMatra_tirh
+Ru	ra_tirh	uMatra_tirh
+Ruu	ra_tirh	uuMatra_tirh
+Lu	la_tirh	uMatra_tirh
+Shu	sha_tirh	uMatra_tirh
+Ssu	ssa_tirh	uMatra_tirh
+Su	sa_tirh	uMatra_tirh
+Hu	ha_tirh	uMatra_tirh
+Huu	ha_tirh	uuMatra_tirh
+Hr	ha_tirh	rVocalicMatra_tirh
 
 lookup end
 
@@ -194,50 +219,154 @@ IgnoreMarks	no
 MarkAttachmentType	1
 
 class definition begin
-uni1149E	1
-uni114C2	2
-uni114A8	3
-uni114A9	3
-uni114AB	3
-uni1148F	4
-uni11490	4
-uni11491	4
-uni11492	4
-uni11493	4
-uni11494	4
-uni11495	4
-uni11496	4
-uni11497	4
-uni11498	4
-uni11499	4
-uni1149A	4
-uni1149B	4
-uni1149C	4
-uni1149D	4
-uni1149F	4
-uni114A0	4
-uni114A1	4
-uni114A2	4
-uni114A3	4
-uni114A4	4
-uni114A5	4
-uni114A6	4
-uni114A7	4
-uni114AA	4
-uni114AC	4
-uni114AD	4
-uni114AE	4
-uni114AF	4
+ta_tirh	1
+virama_tirh	2
+ya_tirh	3
+ra_tirh	3
+va_tirh	3
+ka_tirh	4
+kha_tirh	4
+ga_tirh	4
+gha_tirh	4
+nga_tirh	4
+ca_tirh	4
+cha_tirh	4
+ja_tirh	4
+jha_tirh	4
+nya_tirh	4
+tta_tirh	4
+ttha_tirh	4
+dda_tirh	4
+ddha_tirh	4
+nna_tirh	4
+tha_tirh	4
+da_tirh	4
+dha_tirh	4
+na_tirh	4
+pa_tirh	4
+pha_tirh	4
+ba_tirh	4
+bha_tirh	4
+ma_tirh	4
+la_tirh	4
+sha_tirh	4
+ssa_tirh	4
+sa_tirh	4
+ha_tirh	4
+Gu	4
+Ju	4
+Nnu	4
+Du	4
+Nu.tirh	4
+Pu	4
+Mu.tirh	4
+Lu	4
+Shu	4
+Su	4
+Ku	4
+Tu	4
+Tuu	4
+Dhu	4
+Bhu	4
+Yu	4
+Ru	4
+Ssu	4
+Hu	4
+Kuu	4
+Dhuu	4
+Ruu	4
+Huu	4
+Kr	4
+Tr	4
+Br	4
+Bhr	4
+Hr	4
+KhaNa	4
+PhaNa	4
+SaNa	4
+BaDa	4
+DaYa	4
+NaYa	4
+BhaYa	4
+ShaYa	4
+SaYa	4
+HaYa	4
+KaLa	4
+PhaLa	4
+ShaLa	4
+KaTa	4
+KaRa	4
+KaSsa	4
+GaGa	4
+GaDha	4
+NgaKa	4
+NgaKha	4
+NgaGa	4
+NgaGha	4
+CaCa	4
+CaCha	4
+JaNya	4
+NyaCa	4
+NyaCha	4
+TtaTta	4
+TtaTtha	4
+NnaTta	4
+NnaTtha	4
+NnaDda	4
+NnaDdha	4
+DaDha	4
+NaDha	4
+NaHa	4
+BaDha	4
+ShaCha	4
+SsaTta	4
+SsaTtha	4
+SsaNna	4
+HaNna	4
+HaNa	4
+HaMa	4
+HaRa	4
+HaLa	4
+HaVa	4
+Bhuu	4
+Dbhu	4
+Dhru	4
+Dra	4
+Gna	4
+Gra	4
+NaNa	4
+Nda	4
+NnaNna	4
+Nta	4
+Ntra	4
+Ntu	4
+Pra	4
+ShaCa	4
+Shra	4
+Sra	4
+SsaKa	4
+SsaKr	4
+Sta	4
+Stra	4
+Stu	4
+Tru	4
+uMatra_tirh	5
+uuMatra_tirh	5
+rVocalicMatra_tirh	5
+rrVocalicMatra_tirh	5
+lVocalicMatra_tirh	5
+llVocalicMatra_tirh	5
 class definition end
 
 lookaheadclass definition begin
-uni1149E	1
+ta_tirh	1
 class definition end
 
 class-chain		1, 2	1	1, 5
 class-chain		1, 2, 3		1, 5
-class-chain		1, 2, 4		3, 6	1, 7
-class-chain		1, 2		1, 8
+class-chain		1, 2, 4, 5		4, 6	1, 8
+class-chain		1, 2, 4		3, 7	1, 8
+class-chain		1, 2		1, 9
 
 lookup end
 
@@ -250,11 +379,11 @@ IgnoreLigatures	no
 IgnoreMarks	no
 MarkAttachmentType	1
 
-TaTa	uni1149E	uni114C2	uni1149E
-TaYa	uni1149E	uni114C2	uni114A8
-TaRa	uni1149E	uni114C2	uni114A9
-TaVa	uni1149E	uni114C2	uni114AB
-MaBa	uni114A7	uni114C2	uni114A5
+TaTa	ta_tirh	virama_tirh	ta_tirh
+TaYa	ta_tirh	virama_tirh	ya_tirh
+TaRa	ta_tirh	virama_tirh	ra_tirh
+TaVa	ta_tirh	virama_tirh	va_tirh
+MaBa	ma_tirh	virama_tirh	ba_tirh
 
 lookup end
 
@@ -265,42 +394,18 @@ RightToLeft	no
 IgnoreBaseGlyphs	no
 IgnoreLigatures	no
 IgnoreMarks	no
-MarkAttachmentType	1
 
-uni1148F	uni1148F	uni114C2
-uni11490	uni11490	uni114C2
-uni11491	uni11491	uni114C2
-uni11492	uni11492	uni114C2
-uni11493	uni11493	uni114C2
-uni11494	uni11494	uni114C2
-uni11495	uni11495	uni114C2
-uni11496	uni11496	uni114C2
-uni11497	uni11497	uni114C2
-uni11498	uni11498	uni114C2
-uni11499	uni11499	uni114C2
-uni1149A	uni1149A	uni114C2
-uni1149B	uni1149B	uni114C2
-uni1149C	uni1149C	uni114C2
-uni1149D	uni1149D	uni114C2
-uni1149F	uni1149F	uni114C2
-uni114A0	uni114A0	uni114C2
-uni114A1	uni114A1	uni114C2
-uni114A2	uni114A2	uni114C2
-uni114A3	uni114A3	uni114C2
-uni114A4	uni114A4	uni114C2
-uni114A5	uni114A5	uni114C2
-uni114A6	uni114A6	uni114C2
-uni114A7	uni114A7	uni114C2
-uni114AA	uni114AA	uni114C2
-uni114AC	uni114AC	uni114C2
-uni114AD	uni114AD	uni114C2
-uni114AE	uni114AE	uni114C2
-uni114AF	uni114AF	uni114C2
+uMatra_tirh	uMatra_tirh	virama_tirh
+uuMatra_tirh	uuMatra_tirh	virama_tirh
+rVocalicMatra_tirh	rVocalicMatra_tirh	virama_tirh
+rrVocalicMatra_tirh	rrVocalicMatra_tirh	virama_tirh
+lVocalicMatra_tirh	lVocalicMatra_tirh	virama_tirh
+llVocalicMatra_tirh	llVocalicMatra_tirh	virama_tirh
 
 lookup end
 
 
-lookup	7	ligature
+lookup	7	multiple
 
 RightToLeft	no
 IgnoreBaseGlyphs	no
@@ -308,7 +413,132 @@ IgnoreLigatures	no
 IgnoreMarks	no
 MarkAttachmentType	1
 
-Ta.init	uni1149E	uni114C2
+ka_tirh	ka_tirh	virama_tirh
+kha_tirh	kha_tirh	virama_tirh
+ga_tirh	ga_tirh	virama_tirh
+gha_tirh	gha_tirh	virama_tirh
+nga_tirh	nga_tirh	virama_tirh
+ca_tirh	ca_tirh	virama_tirh
+cha_tirh	cha_tirh	virama_tirh
+ja_tirh	ja_tirh	virama_tirh
+jha_tirh	jha_tirh	virama_tirh
+nya_tirh	nya_tirh	virama_tirh
+tta_tirh	tta_tirh	virama_tirh
+ttha_tirh	ttha_tirh	virama_tirh
+dda_tirh	dda_tirh	virama_tirh
+ddha_tirh	ddha_tirh	virama_tirh
+nna_tirh	nna_tirh	virama_tirh
+tha_tirh	tha_tirh	virama_tirh
+da_tirh	da_tirh	virama_tirh
+dha_tirh	dha_tirh	virama_tirh
+na_tirh	na_tirh	virama_tirh
+pa_tirh	pa_tirh	virama_tirh
+pha_tirh	pha_tirh	virama_tirh
+ba_tirh	ba_tirh	virama_tirh
+bha_tirh	bha_tirh	virama_tirh
+ma_tirh	ma_tirh	virama_tirh
+la_tirh	la_tirh	virama_tirh
+sha_tirh	sha_tirh	virama_tirh
+ssa_tirh	ssa_tirh	virama_tirh
+sa_tirh	sa_tirh	virama_tirh
+ha_tirh	ha_tirh	virama_tirh
+Gu	Gu	virama_tirh
+Ju	Ju	virama_tirh
+Nnu	Nnu	virama_tirh
+Du	Du	virama_tirh
+Nu.tirh	Nu.tirh	virama_tirh
+Pu	Pu	virama_tirh
+Mu.tirh	Mu.tirh	virama_tirh
+Lu	Lu	virama_tirh
+Shu	Shu	virama_tirh
+Su	Su	virama_tirh
+Ku	Ku	virama_tirh
+Tu	Tu	virama_tirh
+Tuu	Tuu	virama_tirh
+Dhu	Dhu	virama_tirh
+Bhu	Bhu	virama_tirh
+Yu	Yu	virama_tirh
+Ru	Ru	virama_tirh
+Ssu	Ssu	virama_tirh
+Hu	Hu	virama_tirh
+Kuu	Kuu	virama_tirh
+Dhuu	Dhuu	virama_tirh
+Ruu	Ruu	virama_tirh
+Huu	Huu	virama_tirh
+Kr	Kr	virama_tirh
+Tr	Tr	virama_tirh
+Br	Br	virama_tirh
+Bhr	Bhr	virama_tirh
+Hr	Hr	virama_tirh
+KhaNa	KhaNa	virama_tirh
+PhaNa	PhaNa	virama_tirh
+SaNa	SaNa	virama_tirh
+BaDa	BaDa	virama_tirh
+DaYa	DaYa	virama_tirh
+NaYa	NaYa	virama_tirh
+BhaYa	BhaYa	virama_tirh
+ShaYa	ShaYa	virama_tirh
+SaYa	SaYa	virama_tirh
+HaYa	HaYa	virama_tirh
+KaLa	KaLa	virama_tirh
+PhaLa	PhaLa	virama_tirh
+ShaLa	ShaLa	virama_tirh
+KaTa	KaTa	virama_tirh
+KaRa	KaRa	virama_tirh
+KaSsa	KaSsa	virama_tirh
+GaGa	GaGa	virama_tirh
+GaDha	GaDha	virama_tirh
+NgaKa	NgaKa	virama_tirh
+NgaKha	NgaKha	virama_tirh
+NgaGa	NgaGa	virama_tirh
+NgaGha	NgaGha	virama_tirh
+CaCa	CaCa	virama_tirh
+CaCha	CaCha	virama_tirh
+JaNya	JaNya	virama_tirh
+NyaCa	NyaCa	virama_tirh
+NyaCha	NyaCha	virama_tirh
+TtaTta	TtaTta	virama_tirh
+TtaTtha	TtaTtha	virama_tirh
+NnaTta	NnaTta	virama_tirh
+NnaTtha	NnaTtha	virama_tirh
+NnaDda	NnaDda	virama_tirh
+NnaDdha	NnaDdha	virama_tirh
+DaDha	DaDha	virama_tirh
+NaDha	NaDha	virama_tirh
+NaHa	NaHa	virama_tirh
+BaDha	BaDha	virama_tirh
+ShaCha	ShaCha	virama_tirh
+SsaTta	SsaTta	virama_tirh
+SsaTtha	SsaTtha	virama_tirh
+SsaNna	SsaNna	virama_tirh
+HaNna	HaNna	virama_tirh
+HaNa	HaNa	virama_tirh
+HaMa	HaMa	virama_tirh
+HaRa	HaRa	virama_tirh
+HaLa	HaLa	virama_tirh
+HaVa	HaVa	virama_tirh
+Bhuu	Bhuu	virama_tirh
+Dbhu	Dbhu	virama_tirh
+Dhru	Dhru	virama_tirh
+Dra	Dra	virama_tirh
+Gna	Gna	virama_tirh
+Gra	Gra	virama_tirh
+NaNa	NaNa	virama_tirh
+Nda	Nda	virama_tirh
+NnaNna	NnaNna	virama_tirh
+Nta	Nta	virama_tirh
+Ntra	Ntra	virama_tirh
+Ntu	Ntu	virama_tirh
+Pra	Pra	virama_tirh
+ShaCa	ShaCa	virama_tirh
+Shra	Shra	virama_tirh
+Sra	Sra	virama_tirh
+SsaKa	SsaKa	virama_tirh
+SsaKr	SsaKr	virama_tirh
+Sta	Sta	virama_tirh
+Stra	Stra	virama_tirh
+Stu	Stu	virama_tirh
+Tru	Tru	virama_tirh
 
 lookup end
 
@@ -321,13 +551,26 @@ IgnoreLigatures	no
 IgnoreMarks	no
 MarkAttachmentType	1
 
-Ta.fina	uni1149E	uni114C2
-Ma.fina	uni114A7	uni114C2
+Ta.init	ta_tirh	virama_tirh
 
 lookup end
 
 
-lookup	9	chained
+lookup	9	ligature
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+MarkAttachmentType	1
+
+Ta.fina	ta_tirh	virama_tirh
+Ma.fina	ma_tirh	virama_tirh
+
+lookup end
+
+
+lookup	10	chained
 
 RightToLeft	no
 IgnoreBaseGlyphs	no
@@ -336,67 +579,69 @@ IgnoreMarks	no
 MarkAttachmentType	1
 
 class definition begin
-uni114A7	1
-uni114C2	2
-uni114A5	3
-uni1148F	4
-uni11490	4
-uni11491	4
-uni11492	4
-uni11493	4
-uni11494	4
-uni11495	4
-uni11496	4
-uni11497	4
-uni11498	4
-uni11499	4
-uni1149A	4
-uni1149B	4
-uni1149C	4
-uni1149D	4
-uni1149E	4
-uni1149F	4
-uni114A0	4
-uni114A1	4
-uni114A2	4
-uni114A3	4
-uni114A4	4
-uni114A6	4
-uni114A8	4
-uni114A9	4
-uni114AA	4
-uni114AB	4
-uni114AC	4
-uni114AD	4
-uni114AE	4
-uni114AF	4
+ma_tirh	1
+virama_tirh	2
+ba_tirh	3
+ka_tirh	4
+kha_tirh	4
+ga_tirh	4
+gha_tirh	4
+nga_tirh	4
+ca_tirh	4
+cha_tirh	4
+ja_tirh	4
+jha_tirh	4
+nya_tirh	4
+tta_tirh	4
+ttha_tirh	4
+dda_tirh	4
+ddha_tirh	4
+nna_tirh	4
+ta_tirh	4
+tha_tirh	4
+da_tirh	4
+dha_tirh	4
+na_tirh	4
+pa_tirh	4
+pha_tirh	4
+bha_tirh	4
+ya_tirh	4
+ra_tirh	4
+la_tirh	4
+va_tirh	4
+sha_tirh	4
+ssa_tirh	4
+sa_tirh	4
+ha_tirh	4
+Ta.init	5
 class definition end
 
 lookaheadclass definition begin
-uni114A7	1
+ma_tirh	1
 class definition end
 
-class-chain		1, 2	1	1, 10
+class-chain		1, 2	1	1, 11
 class-chain		1, 2, 3		1, 5
-class-chain		1, 2, 4		1, 10
-class-chain		1, 2		1, 8
+class-chain		1, 2, 4		1, 11
+class-chain		1, 2		1, 9
+class-chain		5, 1, 2		2, 11
 
 lookup end
 
 
-lookup	10	single
+lookup	11	single
 
 RightToLeft	no
 IgnoreBaseGlyphs	no
 IgnoreLigatures	no
 IgnoreMarks	no
 
-uni0020	uni0020
+space	space
 
 lookup end
 
 
-lookup	11	chained
+lookup	12	chained
 
 RightToLeft	no
 IgnoreBaseGlyphs	no
@@ -405,65 +650,51 @@ IgnoreMarks	no
 MarkAttachmentType	1
 
 backtrackcoverage definition begin
-uni1148F
-uni11490
-uni11491
-uni11492
-uni11493
-uni11494
-uni11495
-uni11496
-uni11497
-uni11498
-uni11499
-uni1149A
-uni1149B
-uni1149C
-uni1149D
-uni1149E
-uni1149F
-uni114A0
-uni114A1
-uni114A2
-uni114A3
-uni114A4
-uni114A5
-uni114A6
-uni114A7
-uni114A8
-uni114A9
-uni114AA
-uni114AB
-uni114AC
-uni114AD
-uni114AE
-uni114AF
+ka_tirh
+kha_tirh
+ga_tirh
+gha_tirh
+nga_tirh
+ca_tirh
+cha_tirh
+ja_tirh
+jha_tirh
+nya_tirh
+tta_tirh
+ttha_tirh
+dda_tirh
+ddha_tirh
+nna_tirh
+ta_tirh
+tha_tirh
+da_tirh
+dha_tirh
+na_tirh
+pa_tirh
+pha_tirh
+ba_tirh
+bha_tirh
+ma_tirh
+ya_tirh
+ra_tirh
+la_tirh
+va_tirh
+sha_tirh
+ssa_tirh
+sa_tirh
+ha_tirh
 coverage definition end
 
 inputcoverage definition begin
-uni114C2
+virama_tirh
 coverage definition end
 
 inputcoverage definition begin
-uni114A8
-uni114AB
+ya_tirh
+va_tirh
 coverage definition end
 
-coverage	1,12
-lookup end
-
-
-lookup	12	ligature
-
-RightToLeft	no
-IgnoreBaseGlyphs	no
-IgnoreLigatures	no
-IgnoreMarks	no
-MarkAttachmentType	1
-
-Ya.post	uni114C2	uni114A8
-Va.sub	uni114C2	uni114AB
-
+coverage	1,13
 lookup end
 
 
@@ -473,14 +704,15 @@ RightToLeft	no
 IgnoreBaseGlyphs	no
 IgnoreLigatures	no
 IgnoreMarks	no
-MarkAttachmentType	2
+MarkAttachmentType	1
 
-RaGa	uni11491	Repha
+Ya.post	virama_tirh	ya_tirh
+Va.sub	virama_tirh	va_tirh
 
 lookup end
 
 
-lookup	14	multiple
+lookup	14	ligature
 
 RightToLeft	no
 IgnoreBaseGlyphs	no
@@ -488,7 +720,20 @@ IgnoreLigatures	no
 IgnoreMarks	no
 MarkAttachmentType	2
 
-uni114A5	uni114AB	Ba.part
+RaGa	ga_tirh	Repha
+
+lookup end
+
+
+lookup	15	multiple
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+MarkAttachmentType	2
+
+ba_tirh	va_tirh	Ba.part
 Br	Br.part	Ba.part
 BaDa	BaDa.part	Ba.part
 MaBa	MaBa.part	Ba.part
@@ -497,7 +742,75 @@ BaDha	BaDha.part	Ba.part
 lookup end
 
 
-lookup	15	chained
+lookup	16	ligature
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+ra.sub	virama_tirh	ra_tirh
+
+lookup end
+
+
+lookup	17	ligature
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+ra.sub.wide	virama_tirh	ra_tirh
+
+lookup end
+
+
+lookup	18	chained
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+backtrackclass definition begin
+nga_tirh	1
+ca_tirh	1
+cha_tirh	1
+ja_tirh	1
+tta_tirh	1
+ttha_tirh	1
+dda_tirh	1
+ddha_tirh	1
+nna_tirh	1
+tha_tirh	1
+dha_tirh	1
+na_tirh	1
+pha_tirh	1
+bha_tirh	1
+ma_tirh	1
+ya_tirh	1
+la_tirh	1
+va_tirh	1
+ssa_tirh	1
+kha_tirh	2
+gha_tirh	2
+jha_tirh	2
+nya_tirh	2
+class definition end
+
+class definition begin
+virama_tirh	1
+ra_tirh	2
+class definition end
+
+class-chain	1	1, 2		1, 16
+class-chain	2	1, 2		1, 17
+
+lookup end
+
+
+lookup	19	chained
 
 RightToLeft	no
 IgnoreBaseGlyphs	no
@@ -506,40 +819,40 @@ IgnoreMarks	no
 MarkAttachmentType	2
 
 backtrackclass definition begin
-uni11485	1
-uni11486	1
-uni1148C	1
-uni1148E	1
+u_tirh	1
+uu_tirh	1
+ai_tirh	1
+au_tirh	1
 class definition end
 
 class definition begin
-uni1148F	2
-uni11490	2
-uni11491	2
-uni11492	2
-uni11494	2
-uni11495	2
-uni11496	2
-uni11497	2
-uni11498	2
-uni1149B	2
-uni1149C	2
-uni1149D	2
-uni1149E	2
-uni1149F	2
-uni114A0	2
-uni114A1	2
-uni114A2	2
-uni114A3	2
-uni114A4	2
-uni114A6	2
-uni114A7	2
-uni114A8	2
-uni114A9	2
-uni114AA	2
-uni114AD	2
-uni114AE	2
-uni114AF	2
+ka_tirh	2
+kha_tirh	2
+ga_tirh	2
+gha_tirh	2
+ca_tirh	2
+cha_tirh	2
+ja_tirh	2
+jha_tirh	2
+nya_tirh	2
+dda_tirh	2
+ddha_tirh	2
+nna_tirh	2
+ta_tirh	2
+tha_tirh	2
+da_tirh	2
+dha_tirh	2
+na_tirh	2
+pa_tirh	2
+pha_tirh	2
+bha_tirh	2
+ma_tirh	2
+ya_tirh	2
+ra_tirh	2
+la_tirh	2
+ssa_tirh	2
+sa_tirh	2
+ha_tirh	2
 KhaNa	2
 PhaNa	2
 SaNa	2
@@ -581,9 +894,9 @@ HaRa	2
 HaLa	2
 HaVa	2
 TaRa	2
-uni11493	4
-uni1149A	4
-uni114AC	4
+nga_tirh	4
+ttha_tirh	4
+sha_tirh	4
 ShaYa	4
 ShaLa	4
 TtaTta	4
@@ -591,20 +904,20 @@ TtaTtha	4
 NnaTta	4
 NnaDda	4
 NgaKha	5
-uni114A5	6
+ba_tirh	6
 BaDa	6
 MaBa	6
 NgaKa	6
 NgaGa	6
 BaDha	6
-uni11499	7
-uni114AB	9
+tta_tirh	7
+va_tirh	9
 BaDa.part	9
 BaDha.part	9
 MaBa.part	9
-uni114B2	11
-uni114BF	12
-uni114C0	13
+iiMatra_tirh	11
+candrabindu_tirh	12
+anusvara_tirh	13
 Ba.part	15
 Repha_Ba.part	15
 Repha	16
@@ -615,51 +928,51 @@ Repha_uni114BA	16
 Repha_uni114BA.alt	16
 class definition end
 
-class-chain		2, 16, 11, 12		4, 18	3, 23	2, 40
-class-chain		2, 16, 11, 13		4, 18	3, 23	2, 40
-class-chain		2, 16, 11		3, 23	2, 40
-class-chain		2, 11, 12		3, 18
-class-chain		2, 11, 13		3, 18
-class-chain		4, 16, 11, 12		4, 18	3, 24	2, 40
-class-chain		4, 16, 11, 13		4, 18	3, 24	2, 40
-class-chain		4, 16, 11		3, 24	2, 40
-class-chain		4, 11, 12		3, 18	2, 18
-class-chain		4, 11, 13		3, 18	2, 18
-class-chain		4, 11		2, 18
-class-chain		5, 16, 11, 12		4, 18	3, 27	2, 40
-class-chain		5, 16, 11, 13		4, 18	3, 27	2, 40
-class-chain		5, 16, 11		3, 27	2, 40
-class-chain		5, 11, 12		3, 18	2, 21
-class-chain		5, 11, 13		3, 18	2, 21
-class-chain		5, 11		2, 21
-class-chain		6, 16, 11, 12		4, 18	3, 31	2, 40
-class-chain		6, 16, 11, 13		4, 18	3, 31	2, 40
-class-chain		6, 16, 11		3, 31	2, 40
-class-chain		6, 11, 12		3, 18	2, 25
-class-chain		6, 11, 13		3, 18	2, 25
-class-chain		6, 11		2, 25
-class-chain		7, 16, 11, 12		4, 18	3, 32	2, 40
-class-chain		7, 16, 11, 13		4, 18	3, 32	2, 40
-class-chain		7, 16, 11		3, 32	2, 40
-class-chain		7, 11, 12		3, 18	2, 28
-class-chain		7, 11, 13		3, 18	2, 28
-class-chain		7, 11		2, 28
-class-chain		9, 15, 16, 11, 12		5, 18	4, 31	3, 40
-class-chain		9, 15, 16, 11, 13		5, 18	4, 31	3, 40
-class-chain		9, 15, 16, 11		4, 31	3, 40
-class-chain		9, 16, 11, 12		4, 18	3, 23	2, 40
-class-chain		9, 16, 11, 13		4, 18	3, 23	2, 40
-class-chain		9, 16, 11		3, 23	2, 40
-class-chain		9, 15, 11, 12		4, 18	3, 25
-class-chain		9, 15, 11, 13		4, 18	3, 25
-class-chain		9, 15, 11		3, 25
-class-chain		9, 11, 12		3, 18
-class-chain		9, 11, 13		3, 18
+class-chain		2, 16, 11, 12		4, 23	3, 28	2, 45
+class-chain		2, 16, 11, 13		4, 23	3, 28	2, 45
+class-chain		2, 16, 11		3, 28	2, 45
+class-chain		2, 11, 12		3, 23
+class-chain		2, 11, 13		3, 23
+class-chain		4, 16, 11, 12		4, 23	3, 29	2, 45
+class-chain		4, 16, 11, 13		4, 23	3, 29	2, 45
+class-chain		4, 16, 11		3, 29	2, 45
+class-chain		4, 11, 12		3, 23	2, 23
+class-chain		4, 11, 13		3, 23	2, 23
+class-chain		4, 11		2, 23
+class-chain		5, 16, 11, 12		4, 23	3, 32	2, 45
+class-chain		5, 16, 11, 13		4, 23	3, 32	2, 45
+class-chain		5, 16, 11		3, 32	2, 45
+class-chain		5, 11, 12		3, 23	2, 26
+class-chain		5, 11, 13		3, 23	2, 26
+class-chain		5, 11		2, 26
+class-chain		6, 16, 11, 12		4, 23	3, 36	2, 45
+class-chain		6, 16, 11, 13		4, 23	3, 36	2, 45
+class-chain		6, 16, 11		3, 36	2, 45
+class-chain		6, 11, 12		3, 23	2, 30
+class-chain		6, 11, 13		3, 23	2, 30
+class-chain		6, 11		2, 30
+class-chain		7, 16, 11, 12		4, 23	3, 37	2, 45
+class-chain		7, 16, 11, 13		4, 23	3, 37	2, 45
+class-chain		7, 16, 11		3, 37	2, 45
+class-chain		7, 11, 12		3, 23	2, 33
+class-chain		7, 11, 13		3, 23	2, 33
+class-chain		7, 11		2, 33
+class-chain		9, 15, 16, 11, 12		5, 23	4, 36	3, 45
+class-chain		9, 15, 16, 11, 13		5, 23	4, 36	3, 45
+class-chain		9, 15, 16, 11		4, 36	3, 45
+class-chain		9, 16, 11, 12		4, 23	3, 28	2, 45
+class-chain		9, 16, 11, 13		4, 23	3, 28	2, 45
+class-chain		9, 16, 11		3, 28	2, 45
+class-chain		9, 15, 11, 12		4, 23	3, 30
+class-chain		9, 15, 11, 13		4, 23	3, 30
+class-chain		9, 15, 11		3, 30
+class-chain		9, 11, 12		3, 23
+class-chain		9, 11, 13		3, 23
 
 lookup end
 
 
-lookup	16	chained
+lookup	20	chained
 
 RightToLeft	no
 IgnoreBaseGlyphs	no
@@ -668,10 +981,10 @@ IgnoreMarks	no
 MarkAttachmentType	2
 
 backtrackclass definition begin
-uni11485	1
-uni11486	1
-uni1148C	1
-uni1148E	1
+u_tirh	1
+uu_tirh	1
+ai_tirh	1
+au_tirh	1
 class definition end
 
 class definition begin
@@ -704,35 +1017,36 @@ Ru.alt1	1
 Ru.alt2	1
 Ruu.alt1	1
 Ruu.alt2	1
-uni1148F	2
-uni11490	2
-uni11491	2
-uni11492	2
-uni11493	2
-uni11494	2
-uni11495	2
-uni11496	2
-uni11497	2
-uni11498	2
-uni1149B	2
-uni1149C	2
-uni1149D	2
-uni1149E	2
-uni1149F	2
-uni114A0	2
-uni114A1	2
-uni114A2	2
-uni114A3	2
-uni114A4	2
-uni114A6	2
-uni114A7	2
-uni114A8	2
-uni114A9	2
-uni114AA	2
-uni114AB	2
-uni114AD	2
-uni114AE	2
-uni114AF	2
+Bhuu	1
+ka_tirh	2
+kha_tirh	2
+ga_tirh	2
+gha_tirh	2
+nga_tirh	2
+ca_tirh	2
+cha_tirh	2
+ja_tirh	2
+jha_tirh	2
+nya_tirh	2
+dda_tirh	2
+ddha_tirh	2
+nna_tirh	2
+ta_tirh	2
+tha_tirh	2
+da_tirh	2
+dha_tirh	2
+na_tirh	2
+pa_tirh	2
+pha_tirh	2
+bha_tirh	2
+ma_tirh	2
+ya_tirh	2
+ra_tirh	2
+la_tirh	2
+va_tirh	2
+ssa_tirh	2
+sa_tirh	2
+ha_tirh	2
 KhaNa	2
 PhaNa	2
 SaNa	2
@@ -781,7 +1095,7 @@ NgaKha	4
 NgaGha	4
 NgaGa	5
 TtaTta	6
-uni114AC	7
+sha_tirh	7
 Shu	7
 Ssu	7
 ShaLa	7
@@ -789,10 +1103,10 @@ Br.part	8
 BaDa.part	9
 BaDha.part	9
 MaBa.part	9
-uni114B1	10
-uni114BF	12
-uni114C0	13
-uni114BA	14
+iMatra_tirh	10
+candrabindu_tirh	12
+anusvara_tirh	13
+shortEMatra_tirh	14
 Ba.part	15
 Repha	16
 Repha_I	16
@@ -801,311 +1115,311 @@ Repha_Tta	16
 Repha_uni114BA	16
 Repha_uni114BA.alt	16
 Repha_Ba.part	16
-uni114BD	17
-uni114B0	18
-uni11499	19
-uni1149A	20
+shortOMatra_tirh	17
+aaMatra_tirh	18
+tta_tirh	19
+ttha_tirh	20
 TtaTtha	21
 NnaTta	21
 ShaYa	23
 class definition end
 
 lookaheadclass definition begin
-uni114BF	1
-uni114C0	1
+candrabindu_tirh	1
+anusvara_tirh	1
 class definition end
 
-class-chain		1, 16, 12		3, 18
-class-chain		1, 16, 13		3, 18
-class-chain		2, 15, 16, 18, 12		5, 21	2, 22
-class-chain		2, 15, 16, 18, 13		5, 21	2, 22
-class-chain		2, 15, 16, 17, 12		5, 18	4, 20	3, 20	2, 22
-class-chain		2, 15, 16, 17, 13		5, 18	4, 20	3, 20	2, 22
-class-chain		2, 15, 16, 17		4, 20	3, 20	2, 22
-class-chain		2, 15, 16, 14, 13		2, 18	5, 18	4, 23	3, 40
-class-chain		2, 15, 16, 14, 12		2, 18	5, 18	4, 23	3, 40
-class-chain		2, 15, 16, 14		2, 18	4, 23	3, 40
-class-chain		2, 15, 16, 12		4, 18	2, 22
-class-chain		2, 15, 16, 13		4, 18	2, 22
-class-chain		2, 15, 16		2, 22
-class-chain		2, 15, 14, 12		4, 18	3, 18	2, 18
-class-chain		2, 15, 14, 13		4, 18	3, 18	2, 18
-class-chain		2, 15, 14		3, 18	2, 18
-class-chain		2, 15, 17, 12		4, 18	2, 22
-class-chain		2, 15, 17, 13		4, 18	2, 22
-class-chain		2, 15, 17		2, 22
-class-chain		2, 15, 13		3, 18
-class-chain		2, 15, 12		3, 18
-class-chain		2, 16, 14, 12		4, 18	3, 19	2, 19
-class-chain		2, 16, 14, 13		4, 18	3, 19	2, 19
-class-chain		2, 16, 14		3, 19	2, 19
-class-chain		2, 16, 17, 12		4, 18	3, 23	2, 40
-class-chain		2, 16, 17, 13		4, 18	3, 23	2, 40
-class-chain		2, 16, 17		3, 23	2, 40
-class-chain		2, 16, 18, 12		4, 18
-class-chain		2, 16, 18, 13		4, 18
-class-chain		2, 16, 12		3, 18
-class-chain		2, 16, 13		3, 18
-class-chain		2, 14, 12		3, 18
-class-chain		2, 14, 13		3, 18
-class-chain		2, 17, 12		3, 18
-class-chain		2, 17, 13		3, 18
-class-chain		3, 16, 14, 12		4, 18	3, 23	2, 40
-class-chain		3, 16, 14, 13		4, 18	3, 23	2, 40
-class-chain		3, 16, 14		3, 23	2, 40
-class-chain		3, 16, 17, 12		4, 18	3, 24	2, 40
-class-chain		3, 16, 17, 13		4, 18	3, 24	2, 40
-class-chain		3, 16, 17		3, 24	2, 40
-class-chain		3, 16, 18, 12		4, 21	2, 28
-class-chain		3, 16, 18, 13		4, 21	2, 28
-class-chain		3, 16, 18		2, 28
-class-chain		3, 16, 12		3, 18	2, 28
-class-chain		3, 16, 13		3, 18	2, 28
-class-chain		3, 16		2, 28
-class-chain		3, 14, 12		2, 18	3, 18
-class-chain		3, 14, 13		2, 18	3, 18
-class-chain		3, 14		2, 18
-class-chain		3, 17, 12		2, 18	3, 18
-class-chain		3, 17, 13		2, 18	3, 18
-class-chain		3, 17		2, 18
-class-chain		4, 16, 14, 12		4, 18	3, 19	2, 19
-class-chain		4, 16, 14, 13		4, 18	3, 19	2, 19
-class-chain		4, 16, 14		3, 19	2, 19
-class-chain		4, 16, 17, 12		4, 18	3, 23	2, 40
-class-chain		4, 16, 17, 13		4, 18	3, 23	2, 40
-class-chain		4, 16, 17		3, 23	2, 40
-class-chain		4, 16, 18, 12		4, 21
-class-chain		4, 16, 18, 13		4, 21
-class-chain		4, 16, 12		3, 18
-class-chain		4, 16, 13		3, 18
-class-chain		4, 14, 12		3, 18
-class-chain		4, 14, 13		3, 18
-class-chain		4, 17, 12		3, 18
-class-chain		4, 17, 13		3, 18
-class-chain		5, 16, 14, 12		4, 18	3, 23	2, 40
-class-chain		5, 16, 14, 13		4, 18	3, 23	2, 40
-class-chain		5, 16, 14		3, 23	2, 40
-class-chain		5, 16, 17, 12		4, 18	3, 27	2, 40
-class-chain		5, 16, 17, 13		4, 18	3, 27	2, 40
-class-chain		5, 16, 17		3, 27	2, 40
-class-chain		5, 16, 18, 12		4, 21	2, 28
-class-chain		5, 16, 18, 13		4, 21	2, 28
-class-chain		5, 16, 18		2, 28
-class-chain		5, 16, 12		3, 18	2, 28
-class-chain		5, 16, 13		3, 18	2, 28
-class-chain		5, 16		2, 28
-class-chain		5, 14, 12		2, 18	3, 18
-class-chain		5, 14, 13		2, 18	3, 18
-class-chain		5, 14		2, 18
-class-chain		5, 17, 12		3, 18	2, 21
-class-chain		5, 17, 13		3, 18	2, 21
-class-chain		5, 17		2, 21
-class-chain		6, 16, 14, 12		4, 18	3, 23	2, 40
-class-chain		6, 16, 14, 13		4, 18	3, 23	2, 40
-class-chain		6, 16, 14		3, 23	2, 40
-class-chain		6, 16, 17, 12		4, 18	3, 24	2, 40
-class-chain		6, 16, 17, 13		4, 18	3, 24	2, 40
-class-chain		6, 16, 17		3, 24	2, 40
-class-chain		6, 16, 18, 12		2, 18	4, 21
-class-chain		6, 16, 18, 13		2, 18	4, 21
-class-chain		6, 16, 12		3, 18	2, 18
-class-chain		6, 16, 13		3, 18	2, 18
-class-chain		6, 16		2, 18
-class-chain		6, 14, 12		3, 18	2, 18
-class-chain		6, 14, 13		3, 18	2, 18
-class-chain		6, 14		2, 18
-class-chain		6, 17, 12		3, 18	2, 18
-class-chain		6, 17, 13		3, 18	2, 18
-class-chain		6, 17		2, 18
-class-chain		7, 16, 14, 12		4, 18	3, 23	2, 40
-class-chain		7, 16, 14, 13		4, 18	3, 23	2, 40
-class-chain		7, 16, 14		3, 23	2, 40
-class-chain		7, 16, 17, 12		4, 18	3, 24	2, 40
-class-chain		7, 16, 17, 13		4, 18	3, 24	2, 40
-class-chain		7, 16, 17		3, 24	2, 40
-class-chain		7, 16, 18, 12		4, 21	2, 28
-class-chain		7, 16, 18, 13		4, 21	2, 28
-class-chain		7, 16, 12		3, 18	2, 28
-class-chain		7, 16, 13		3, 18	2, 28
-class-chain		7, 16		2, 28
-class-chain		7, 14, 12		2, 18	3, 18
-class-chain		7, 14, 13		2, 18	3, 18
-class-chain		7, 14		2, 18
-class-chain		7, 17, 12		3, 18	2, 18
-class-chain		7, 17, 13		3, 18	2, 18
-class-chain		7, 17		2, 18
-class-chain		7, 12		2, 18
-class-chain		7, 13		2, 18
-class-chain		8, 15, 16, 12		4, 18	2, 22
-class-chain		8, 15, 16, 13		4, 18	2, 22
-class-chain		8, 15, 16		2, 22
-class-chain		8, 15, 13		3, 18
-class-chain		8, 15, 12		3, 18
-class-chain		9, 15, 16, 18, 12		5, 21	2, 22
-class-chain		9, 15, 16, 18, 13		5, 21	2, 22
-class-chain		9, 15, 16, 17, 12		5, 18	4, 20	3, 20	2, 22
-class-chain		9, 15, 16, 17, 13		5, 18	4, 20	3, 20	2, 22
-class-chain		9, 15, 16, 17		4, 20	3, 20	2, 22
-class-chain		9, 15, 16, 14, 13		2, 18	5, 18	4, 23	3, 40
-class-chain		9, 15, 16, 14, 12		2, 18	5, 18	4, 23	3, 40
-class-chain		9, 15, 16, 14		2, 18	4, 23	3, 40
-class-chain		9, 15, 16, 12		4, 18	2, 22
-class-chain		9, 15, 16, 13		4, 18	2, 22
-class-chain		9, 15, 16		2, 22
-class-chain		9, 15, 14, 12		4, 18	3, 18	2, 18
-class-chain		9, 15, 14, 13		4, 18	3, 18	2, 18
-class-chain		9, 15, 14		3, 18	2, 18
-class-chain		9, 15, 17, 12		4, 18	2, 22
-class-chain		9, 15, 17, 13		4, 18	2, 22
-class-chain		9, 15, 17		2, 22
-class-chain		9, 15, 13		3, 18
-class-chain		9, 15, 12		3, 18
-class-chain		9, 16, 17, 12		4, 18	3, 23	2, 40
-class-chain		9, 16, 17, 13		4, 18	3, 23	2, 40
-class-chain		9, 16, 14, 12		4, 18	3, 29	2, 40
-class-chain		9, 16, 14, 13		4, 18	3, 29	2, 40
-class-chain		9, 16, 12		3, 18
-class-chain		9, 16, 13		3, 18
-class-chain		9, 17, 12		3, 18
-class-chain		9, 17, 13		3, 18
-class-chain		9, 14, 12		3, 18
-class-chain		9, 14, 13		3, 18
-class-chain		10, 2, 15, 16, 12		5, 21	3, 22	1, 28
-class-chain		10, 2, 15, 16, 13		5, 21	3, 22	1, 28
-class-chain		10, 2, 15, 16		3, 22	1, 28
-class-chain		10, 2, 15, 12		4, 21	3, 22	1, 28
-class-chain		10, 2, 15, 13		4, 21	3, 22	1, 28
-class-chain		10, 2, 15		3, 22	1, 28
-class-chain		10, 9, 15, 16, 12		5, 18	3, 22	1, 28
-class-chain		10, 9, 15, 16, 13		5, 18	3, 22	1, 28
-class-chain		10, 9, 15, 16		3, 22	1, 28
-class-chain		10, 9, 16, 12		4, 26	3, 26	1, 31
-class-chain		10, 9, 16, 13		4, 26	3, 26	1, 32
-class-chain		10, 9, 16		1, 33	3, 40
-class-chain		10, 9, 15, 12		4, 21	3, 22	1, 28
-class-chain		10, 9, 15, 13		4, 21	3, 22	1, 28
-class-chain		10, 9, 15		3, 22	1, 28
-class-chain		10, 9, 12		3, 26	1, 29
-class-chain		10, 9, 13		3, 26	1, 30
-class-chain		10, 20, 16, 12		4, 18	1, 25
-class-chain		10, 20, 16, 13		4, 18	1, 25
-class-chain		10, 20, 16		1, 28
-class-chain		10, 20, 12		3, 18	1, 28
-class-chain		10, 20, 13		3, 18	1, 28
-class-chain		10, 20		1, 28
-class-chain		10, 7, 16, 12		4, 18	1, 28	3, 28
-class-chain		10, 7, 16, 13		4, 18	1, 28	3, 28
-class-chain		10, 7, 16		1, 28	3, 28
-class-chain		10, 7, 12		3, 18	1, 28
-class-chain		10, 7, 13		3, 18	1, 28
-class-chain		10, 7		1, 28
-class-chain		10, 19, 16, 12		4, 21	3, 26	1, 27
-class-chain		10, 19, 16, 13		4, 21	3, 26	1, 27
-class-chain		10, 19, 16		3, 26	1, 27
-class-chain		10, 19, 12		3, 21	1, 25
-class-chain		10, 19, 13		3, 21	1, 25
-class-chain		10, 19		1, 25
-class-chain		10, 23, 16, 12		4, 18	1, 25
-class-chain		10, 23, 16, 13		4, 18	1, 25
-class-chain		10, 23, 16		1, 25
-class-chain		10, 23		1, 25
-class-chain		10, 21, 16, 12		3, 18	4, 18	1, 25
-class-chain		10, 21, 16, 13		3, 18	4, 18	1, 25
-class-chain		10, 21, 16		3, 18	1, 25
-class-chain		10, 21, 12		3, 18	1, 25
-class-chain		10, 21, 13		3, 18	1, 25
-class-chain		10, 21		1, 25
-class-chain		10, 6, 16, 12		4, 18	3, 18	1, 25
-class-chain		10, 6, 16, 13		4, 18	3, 18	1, 25
-class-chain		10, 6, 16		3, 18	1, 25
-class-chain		10, 6, 12		3, 18	1, 25
-class-chain		10, 6, 13		3, 18	1, 25
-class-chain		10, 6		1, 25
-class-chain		10, 5, 16, 12		4, 18	1, 21	3, 28
-class-chain		10, 5, 16, 13		4, 18	1, 21	3, 28
-class-chain		10, 5, 16		1, 21	3, 28
-class-chain		10, 5, 12		3, 18	1, 21
-class-chain		10, 5, 13		3, 18	1, 21
-class-chain		10, 5		1, 21
-class-chain		10, 4, 16, 12		1, 18	4, 18
-class-chain		10, 4, 16, 13		1, 18	4, 18
-class-chain		10, 4		1, 18
-class-chain		10, 3, 16, 12		1, 18	4, 18	3, 28
-class-chain		10, 3, 16, 13		1, 18	4, 18	3, 28
-class-chain		10, 3, 16		1, 18	3, 28
-class-chain		10, 3		1, 18
-class-chain		10, 2, 16, 12		4, 26	3, 26	1, 31
-class-chain		10, 2, 16, 13		4, 26	3, 26	1, 32
-class-chain		10, 2, 16		1, 33	3, 40
-class-chain		10, 2, 12		3, 26	1, 29
-class-chain		10, 2, 13		3, 26	1, 30
-class-chain		19, 16, 14, 12		4, 18	3, 21
-class-chain		19, 16, 14, 13		4, 18	3, 21
-class-chain		19, 16, 14		3, 21
-class-chain		19, 16, 17, 12		4, 18	3, 27	2, 40
-class-chain		19, 16, 17, 13		4, 18	3, 27	2, 40
-class-chain		19, 16, 17		3, 27	2, 40
-class-chain		19, 16, 12		3, 21
-class-chain		19, 16, 13		3, 21
-class-chain		19, 14, 12		3, 18	2, 21
-class-chain		19, 14, 13		3, 18	2, 21
-class-chain		19, 14		2, 21
-class-chain		19, 17, 12		3, 18	2, 21
-class-chain		19, 17, 13		3, 18	2, 21
-class-chain		19, 17		2, 21
-class-chain		19, 12		2, 18
-class-chain		19, 13		2, 18
-class-chain		20, 16, 14, 12		4, 18	3, 23	2, 40
-class-chain		20, 16, 14, 13		4, 18	3, 23	2, 40
-class-chain		20, 16, 14		3, 23	2, 40
-class-chain		20, 16, 17, 12		4, 18	3, 23	2, 40
-class-chain		20, 16, 17, 13		4, 18	3, 23	2, 40
-class-chain		20, 16, 17		3, 23	2, 40
-class-chain		20, 16, 18, 12		4, 18
-class-chain		20, 16, 18, 13		4, 18
-class-chain		20, 16, 12		3, 18
-class-chain		20, 16, 13		3, 18
-class-chain		20, 14, 12		2, 18	3, 18
-class-chain		20, 14, 13		2, 18	3, 18
-class-chain		20, 14		2, 18
-class-chain		20, 17, 12		3, 18
-class-chain		20, 17, 13		3, 18
-class-chain		21, 16, 14, 12		4, 18	3, 23	2, 40
-class-chain		21, 16, 14, 13		4, 18	3, 23	2, 40
-class-chain		21, 16, 14		3, 23	2, 40
-class-chain		21, 16, 17, 12		4, 18	3, 27	2, 40
-class-chain		21, 16, 17, 13		4, 18	3, 27	2, 40
-class-chain		21, 16, 17		3, 27	2, 40
-class-chain		21, 16, 18, 12		2, 18	4, 21
-class-chain		21, 16, 18, 13		2, 18	4, 21
-class-chain		21, 16, 12		2, 18	3, 18
-class-chain		21, 16, 13		2, 18	3, 18
-class-chain		21, 16		2, 18
-class-chain		21, 14, 12		2, 18	3, 18
-class-chain		21, 14, 13		2, 18	3, 18
-class-chain		21, 14		2, 18
-class-chain		21, 17, 12		3, 18	2, 21
-class-chain		21, 17, 13		3, 18	2, 21
-class-chain		21, 17		2, 21
-class-chain		23, 16, 14, 12		4, 18	3, 23	2, 40
-class-chain		23, 16, 14, 13		4, 18	3, 23	2, 40
-class-chain		23, 16, 14		3, 23	2, 40
-class-chain		23, 16, 17, 12		4, 18	3, 24	2, 40
-class-chain		23, 16, 17, 13		4, 18	3, 24	2, 40
-class-chain		23, 16, 17		3, 24	2, 40
-class-chain		23, 16, 12		3, 18
-class-chain		23, 16, 13		3, 18
-class-chain		23, 14, 12		3, 18	2, 18
-class-chain		23, 14, 13		3, 18	2, 18
-class-chain		23, 14		2, 18
-class-chain		23, 17, 12		3, 18	2, 18
-class-chain		23, 17, 13		3, 18	2, 18
-class-chain		23, 17		2, 18
+class-chain		1, 16, 12		3, 23
+class-chain		1, 16, 13		3, 23
+class-chain		2, 15, 16, 18, 12		5, 26	2, 27
+class-chain		2, 15, 16, 18, 13		5, 26	2, 27
+class-chain		2, 15, 16, 17, 12		5, 23	4, 25	3, 25	2, 27
+class-chain		2, 15, 16, 17, 13		5, 23	4, 25	3, 25	2, 27
+class-chain		2, 15, 16, 17		4, 25	3, 25	2, 27
+class-chain		2, 15, 16, 14, 13		2, 23	5, 23	4, 28	3, 45
+class-chain		2, 15, 16, 14, 12		2, 23	5, 23	4, 28	3, 45
+class-chain		2, 15, 16, 14		2, 23	4, 28	3, 45
+class-chain		2, 15, 16, 12		4, 23	2, 27
+class-chain		2, 15, 16, 13		4, 23	2, 27
+class-chain		2, 15, 16		2, 27
+class-chain		2, 15, 14, 12		4, 23	3, 23	2, 23
+class-chain		2, 15, 14, 13		4, 23	3, 23	2, 23
+class-chain		2, 15, 14		3, 23	2, 23
+class-chain		2, 15, 17, 12		4, 23	2, 27
+class-chain		2, 15, 17, 13		4, 23	2, 27
+class-chain		2, 15, 17		2, 27
+class-chain		2, 15, 13		3, 23
+class-chain		2, 15, 12		3, 23
+class-chain		2, 16, 14, 12		4, 23	3, 24	2, 24
+class-chain		2, 16, 14, 13		4, 23	3, 24	2, 24
+class-chain		2, 16, 14		3, 24	2, 24
+class-chain		2, 16, 17, 12		4, 23	3, 28	2, 45
+class-chain		2, 16, 17, 13		4, 23	3, 28	2, 45
+class-chain		2, 16, 17		3, 28	2, 45
+class-chain		2, 16, 18, 12		4, 23
+class-chain		2, 16, 18, 13		4, 23
+class-chain		2, 16, 12		3, 23
+class-chain		2, 16, 13		3, 23
+class-chain		2, 14, 12		3, 23
+class-chain		2, 14, 13		3, 23
+class-chain		2, 17, 12		3, 23
+class-chain		2, 17, 13		3, 23
+class-chain		3, 16, 14, 12		4, 23	3, 28	2, 45
+class-chain		3, 16, 14, 13		4, 23	3, 28	2, 45
+class-chain		3, 16, 14		3, 28	2, 45
+class-chain		3, 16, 17, 12		4, 23	3, 29	2, 45
+class-chain		3, 16, 17, 13		4, 23	3, 29	2, 45
+class-chain		3, 16, 17		3, 29	2, 45
+class-chain		3, 16, 18, 12		4, 26	2, 33
+class-chain		3, 16, 18, 13		4, 26	2, 33
+class-chain		3, 16, 18		2, 33
+class-chain		3, 16, 12		3, 23	2, 33
+class-chain		3, 16, 13		3, 23	2, 33
+class-chain		3, 16		2, 33
+class-chain		3, 14, 12		2, 23	3, 23
+class-chain		3, 14, 13		2, 23	3, 23
+class-chain		3, 14		2, 23
+class-chain		3, 17, 12		2, 23	3, 23
+class-chain		3, 17, 13		2, 23	3, 23
+class-chain		3, 17		2, 23
+class-chain		4, 16, 14, 12		4, 23	3, 24	2, 24
+class-chain		4, 16, 14, 13		4, 23	3, 24	2, 24
+class-chain		4, 16, 14		3, 24	2, 24
+class-chain		4, 16, 17, 12		4, 23	3, 28	2, 45
+class-chain		4, 16, 17, 13		4, 23	3, 28	2, 45
+class-chain		4, 16, 17		3, 28	2, 45
+class-chain		4, 16, 18, 12		4, 26
+class-chain		4, 16, 18, 13		4, 26
+class-chain		4, 16, 12		3, 23
+class-chain		4, 16, 13		3, 23
+class-chain		4, 14, 12		3, 23
+class-chain		4, 14, 13		3, 23
+class-chain		4, 17, 12		3, 23
+class-chain		4, 17, 13		3, 23
+class-chain		5, 16, 14, 12		4, 23	3, 28	2, 45
+class-chain		5, 16, 14, 13		4, 23	3, 28	2, 45
+class-chain		5, 16, 14		3, 28	2, 45
+class-chain		5, 16, 17, 12		4, 23	3, 32	2, 45
+class-chain		5, 16, 17, 13		4, 23	3, 32	2, 45
+class-chain		5, 16, 17		3, 32	2, 45
+class-chain		5, 16, 18, 12		4, 26	2, 33
+class-chain		5, 16, 18, 13		4, 26	2, 33
+class-chain		5, 16, 18		2, 33
+class-chain		5, 16, 12		3, 23	2, 33
+class-chain		5, 16, 13		3, 23	2, 33
+class-chain		5, 16		2, 33
+class-chain		5, 14, 12		2, 23	3, 23
+class-chain		5, 14, 13		2, 23	3, 23
+class-chain		5, 14		2, 23
+class-chain		5, 17, 12		3, 23	2, 26
+class-chain		5, 17, 13		3, 23	2, 26
+class-chain		5, 17		2, 26
+class-chain		6, 16, 14, 12		4, 23	3, 28	2, 45
+class-chain		6, 16, 14, 13		4, 23	3, 28	2, 45
+class-chain		6, 16, 14		3, 28	2, 45
+class-chain		6, 16, 17, 12		4, 23	3, 29	2, 45
+class-chain		6, 16, 17, 13		4, 23	3, 29	2, 45
+class-chain		6, 16, 17		3, 29	2, 45
+class-chain		6, 16, 18, 12		2, 23	4, 26
+class-chain		6, 16, 18, 13		2, 23	4, 26
+class-chain		6, 16, 12		3, 23	2, 23
+class-chain		6, 16, 13		3, 23	2, 23
+class-chain		6, 16		2, 23
+class-chain		6, 14, 12		3, 23	2, 23
+class-chain		6, 14, 13		3, 23	2, 23
+class-chain		6, 14		2, 23
+class-chain		6, 17, 12		3, 23	2, 23
+class-chain		6, 17, 13		3, 23	2, 23
+class-chain		6, 17		2, 23
+class-chain		7, 16, 14, 12		4, 23	3, 28	2, 45
+class-chain		7, 16, 14, 13		4, 23	3, 28	2, 45
+class-chain		7, 16, 14		3, 28	2, 45
+class-chain		7, 16, 17, 12		4, 23	3, 29	2, 45
+class-chain		7, 16, 17, 13		4, 23	3, 29	2, 45
+class-chain		7, 16, 17		3, 29	2, 45
+class-chain		7, 16, 18, 12		4, 26	2, 33
+class-chain		7, 16, 18, 13		4, 26	2, 33
+class-chain		7, 16, 12		3, 23	2, 33
+class-chain		7, 16, 13		3, 23	2, 33
+class-chain		7, 16		2, 33
+class-chain		7, 14, 12		2, 23	3, 23
+class-chain		7, 14, 13		2, 23	3, 23
+class-chain		7, 14		2, 23
+class-chain		7, 17, 12		3, 23	2, 23
+class-chain		7, 17, 13		3, 23	2, 23
+class-chain		7, 17		2, 23
+class-chain		7, 12		2, 23
+class-chain		7, 13		2, 23
+class-chain		8, 15, 16, 12		4, 23	2, 27
+class-chain		8, 15, 16, 13		4, 23	2, 27
+class-chain		8, 15, 16		2, 27
+class-chain		8, 15, 13		3, 23
+class-chain		8, 15, 12		3, 23
+class-chain		9, 15, 16, 18, 12		5, 26	2, 27
+class-chain		9, 15, 16, 18, 13		5, 26	2, 27
+class-chain		9, 15, 16, 17, 12		5, 23	4, 25	3, 25	2, 27
+class-chain		9, 15, 16, 17, 13		5, 23	4, 25	3, 25	2, 27
+class-chain		9, 15, 16, 17		4, 25	3, 25	2, 27
+class-chain		9, 15, 16, 14, 13		2, 23	5, 23	4, 28	3, 45
+class-chain		9, 15, 16, 14, 12		2, 23	5, 23	4, 28	3, 45
+class-chain		9, 15, 16, 14		2, 23	4, 28	3, 45
+class-chain		9, 15, 16, 12		4, 23	2, 27
+class-chain		9, 15, 16, 13		4, 23	2, 27
+class-chain		9, 15, 16		2, 27
+class-chain		9, 15, 14, 12		4, 23	3, 23	2, 23
+class-chain		9, 15, 14, 13		4, 23	3, 23	2, 23
+class-chain		9, 15, 14		3, 23	2, 23
+class-chain		9, 15, 17, 12		4, 23	2, 27
+class-chain		9, 15, 17, 13		4, 23	2, 27
+class-chain		9, 15, 17		2, 27
+class-chain		9, 15, 13		3, 23
+class-chain		9, 15, 12		3, 23
+class-chain		9, 16, 17, 12		4, 23	3, 28	2, 45
+class-chain		9, 16, 17, 13		4, 23	3, 28	2, 45
+class-chain		9, 16, 14, 12		4, 23	3, 34	2, 45
+class-chain		9, 16, 14, 13		4, 23	3, 34	2, 45
+class-chain		9, 16, 12		3, 23
+class-chain		9, 16, 13		3, 23
+class-chain		9, 17, 12		3, 23
+class-chain		9, 17, 13		3, 23
+class-chain		9, 14, 12		3, 23
+class-chain		9, 14, 13		3, 23
+class-chain		10, 2, 15, 16, 12		5, 26	3, 27	1, 33
+class-chain		10, 2, 15, 16, 13		5, 26	3, 27	1, 33
+class-chain		10, 2, 15, 16		3, 27	1, 33
+class-chain		10, 2, 15, 12		4, 26	3, 27	1, 33
+class-chain		10, 2, 15, 13		4, 26	3, 27	1, 33
+class-chain		10, 2, 15		3, 27	1, 33
+class-chain		10, 9, 15, 16, 12		5, 23	3, 27	1, 33
+class-chain		10, 9, 15, 16, 13		5, 23	3, 27	1, 33
+class-chain		10, 9, 15, 16		3, 27	1, 33
+class-chain		10, 9, 16, 12		4, 31	3, 31	1, 36
+class-chain		10, 9, 16, 13		4, 31	3, 31	1, 37
+class-chain		10, 9, 16		1, 38	3, 45
+class-chain		10, 9, 15, 12		4, 26	3, 27	1, 33
+class-chain		10, 9, 15, 13		4, 26	3, 27	1, 33
+class-chain		10, 9, 15		3, 27	1, 33
+class-chain		10, 9, 12		3, 31	1, 34
+class-chain		10, 9, 13		3, 31	1, 35
+class-chain		10, 20, 16, 12		4, 23	1, 30
+class-chain		10, 20, 16, 13		4, 23	1, 30
+class-chain		10, 20, 16		1, 33
+class-chain		10, 20, 12		3, 23	1, 33
+class-chain		10, 20, 13		3, 23	1, 33
+class-chain		10, 20		1, 33
+class-chain		10, 7, 16, 12		4, 23	1, 33	3, 33
+class-chain		10, 7, 16, 13		4, 23	1, 33	3, 33
+class-chain		10, 7, 16		1, 33	3, 33
+class-chain		10, 7, 12		3, 23	1, 33
+class-chain		10, 7, 13		3, 23	1, 33
+class-chain		10, 7		1, 33
+class-chain		10, 19, 16, 12		4, 26	3, 31	1, 32
+class-chain		10, 19, 16, 13		4, 26	3, 31	1, 32
+class-chain		10, 19, 16		3, 31	1, 32
+class-chain		10, 19, 12		3, 26	1, 30
+class-chain		10, 19, 13		3, 26	1, 30
+class-chain		10, 19		1, 30
+class-chain		10, 23, 16, 12		4, 23	1, 30
+class-chain		10, 23, 16, 13		4, 23	1, 30
+class-chain		10, 23, 16		1, 30
+class-chain		10, 23		1, 30
+class-chain		10, 21, 16, 12		3, 23	4, 23	1, 30
+class-chain		10, 21, 16, 13		3, 23	4, 23	1, 30
+class-chain		10, 21, 16		3, 23	1, 30
+class-chain		10, 21, 12		3, 23	1, 30
+class-chain		10, 21, 13		3, 23	1, 30
+class-chain		10, 21		1, 30
+class-chain		10, 6, 16, 12		4, 23	3, 23	1, 30
+class-chain		10, 6, 16, 13		4, 23	3, 23	1, 30
+class-chain		10, 6, 16		3, 23	1, 30
+class-chain		10, 6, 12		3, 23	1, 30
+class-chain		10, 6, 13		3, 23	1, 30
+class-chain		10, 6		1, 30
+class-chain		10, 5, 16, 12		4, 23	1, 26	3, 33
+class-chain		10, 5, 16, 13		4, 23	1, 26	3, 33
+class-chain		10, 5, 16		1, 26	3, 33
+class-chain		10, 5, 12		3, 23	1, 26
+class-chain		10, 5, 13		3, 23	1, 26
+class-chain		10, 5		1, 26
+class-chain		10, 4, 16, 12		1, 23	4, 23
+class-chain		10, 4, 16, 13		1, 23	4, 23
+class-chain		10, 4		1, 23
+class-chain		10, 3, 16, 12		1, 23	4, 23	3, 33
+class-chain		10, 3, 16, 13		1, 23	4, 23	3, 33
+class-chain		10, 3, 16		1, 23	3, 33
+class-chain		10, 3		1, 23
+class-chain		10, 2, 16, 12		4, 31	3, 31	1, 36
+class-chain		10, 2, 16, 13		4, 31	3, 31	1, 37
+class-chain		10, 2, 16		1, 38	3, 45
+class-chain		10, 2, 12		3, 31	1, 34
+class-chain		10, 2, 13		3, 31	1, 35
+class-chain		19, 16, 14, 12		4, 23	3, 26
+class-chain		19, 16, 14, 13		4, 23	3, 26
+class-chain		19, 16, 14		3, 26
+class-chain		19, 16, 17, 12		4, 23	3, 32	2, 45
+class-chain		19, 16, 17, 13		4, 23	3, 32	2, 45
+class-chain		19, 16, 17		3, 32	2, 45
+class-chain		19, 16, 12		3, 26
+class-chain		19, 16, 13		3, 26
+class-chain		19, 14, 12		3, 23	2, 26
+class-chain		19, 14, 13		3, 23	2, 26
+class-chain		19, 14		2, 26
+class-chain		19, 17, 12		3, 23	2, 26
+class-chain		19, 17, 13		3, 23	2, 26
+class-chain		19, 17		2, 26
+class-chain		19, 12		2, 23
+class-chain		19, 13		2, 23
+class-chain		20, 16, 14, 12		4, 23	3, 28	2, 45
+class-chain		20, 16, 14, 13		4, 23	3, 28	2, 45
+class-chain		20, 16, 14		3, 28	2, 45
+class-chain		20, 16, 17, 12		4, 23	3, 28	2, 45
+class-chain		20, 16, 17, 13		4, 23	3, 28	2, 45
+class-chain		20, 16, 17		3, 28	2, 45
+class-chain		20, 16, 18, 12		4, 23
+class-chain		20, 16, 18, 13		4, 23
+class-chain		20, 16, 12		3, 23
+class-chain		20, 16, 13		3, 23
+class-chain		20, 14, 12		2, 23	3, 23
+class-chain		20, 14, 13		2, 23	3, 23
+class-chain		20, 14		2, 23
+class-chain		20, 17, 12		3, 23
+class-chain		20, 17, 13		3, 23
+class-chain		21, 16, 14, 12		4, 23	3, 28	2, 45
+class-chain		21, 16, 14, 13		4, 23	3, 28	2, 45
+class-chain		21, 16, 14		3, 28	2, 45
+class-chain		21, 16, 17, 12		4, 23	3, 32	2, 45
+class-chain		21, 16, 17, 13		4, 23	3, 32	2, 45
+class-chain		21, 16, 17		3, 32	2, 45
+class-chain		21, 16, 18, 12		2, 23	4, 26
+class-chain		21, 16, 18, 13		2, 23	4, 26
+class-chain		21, 16, 12		2, 23	3, 23
+class-chain		21, 16, 13		2, 23	3, 23
+class-chain		21, 16		2, 23
+class-chain		21, 14, 12		2, 23	3, 23
+class-chain		21, 14, 13		2, 23	3, 23
+class-chain		21, 14		2, 23
+class-chain		21, 17, 12		3, 23	2, 26
+class-chain		21, 17, 13		3, 23	2, 26
+class-chain		21, 17		2, 26
+class-chain		23, 16, 14, 12		4, 23	3, 28	2, 45
+class-chain		23, 16, 14, 13		4, 23	3, 28	2, 45
+class-chain		23, 16, 14		3, 28	2, 45
+class-chain		23, 16, 17, 12		4, 23	3, 29	2, 45
+class-chain		23, 16, 17, 13		4, 23	3, 29	2, 45
+class-chain		23, 16, 17		3, 29	2, 45
+class-chain		23, 16, 12		3, 23
+class-chain		23, 16, 13		3, 23
+class-chain		23, 14, 12		3, 23	2, 23
+class-chain		23, 14, 13		3, 23	2, 23
+class-chain		23, 14		2, 23
+class-chain		23, 17, 12		3, 23	2, 23
+class-chain		23, 17, 13		3, 23	2, 23
+class-chain		23, 17		2, 23
 
 lookup end
 
 
-lookup	17	chained
+lookup	21	chained
 
 RightToLeft	no
 IgnoreBaseGlyphs	no
@@ -1114,25 +1428,25 @@ IgnoreMarks	no
 MarkAttachmentType	2
 
 backtrackclass definition begin
-uni11499	1
+tta_tirh	1
 class definition end
 
 class definition begin
-uni114BF	2
-uni114C0	2
-uni114BF.alt	2
-uni114C0.alt	2
+candrabindu_tirh	2
+anusvara_tirh	2
+candrabindu.alt	2
+anusvara.alt	2
 Repha	4
-uni114B0	5
+aaMatra_tirh	5
 class definition end
 
-class-chain		4, 5, 2		3, 21
-class-chain	1	4, 5, 2		3, 21
+class-chain		4, 5, 2		3, 26
+class-chain	1	4, 5, 2		3, 26
 
 lookup end
 
 
-lookup	18	single
+lookup	22	context
 
 RightToLeft	no
 IgnoreBaseGlyphs	no
@@ -1140,12 +1454,86 @@ IgnoreLigatures	no
 IgnoreMarks	no
 MarkAttachmentType	2
 
-uni114B1	uni114B1.alt
-uni114B2	uni114B2.alt
-uni114BA	uni114BA.alt
-uni114BD	uni114BD.alt
-uni114BF	uni114BF.alt
-uni114C0	uni114C0.alt
+class definition begin
+Gu	1
+Ju	1
+Nnu	1
+Du	1
+Nu.tirh	1
+Pu	1
+Mu.tirh	1
+Lu	1
+Shu	1
+Su	1
+Ku	1
+Tu	1
+Dhu	1
+Bhu	1
+Yu	1
+Ru	1
+Ssu	1
+Hu	1
+Kuu	1
+Dhuu	1
+Ruu	1
+Huu	1
+Kr	1
+Tr	1
+Br	1
+Bhr	1
+Hr	1
+Ru.alt1	1
+Ru.alt2	1
+Ruu.alt1	1
+Ruu.alt2	1
+Bhuu	1
+u_tirh	2
+uu_tirh	2
+ai_tirh	2
+au_tirh	2
+candrabindu_tirh	3
+anusvara_tirh	3
+shortEMatra_tirh	4
+uni114BA.alt	4
+uni114BA.alt2	4
+Ba.part	5
+Ba.part.alt	5
+Repha_Ba.part	5
+Repha	6
+Repha_I	6
+Repha_II	6
+Repha_Tta	6
+Repha_uni114BA	6
+Repha_uni114BA.alt	6
+shortOMatra_tirh	7
+uni114BD.alt	7
+uni114BD.alt2	7
+class definition end
+
+class	1, 6, 3	3, 23
+class	2, 3	2, 23
+class	4, 3	2, 23
+class	5, 3	2, 23
+class	6, 3	2, 23
+class	7, 3	2, 23
+
+lookup end
+
+
+lookup	23	single
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+MarkAttachmentType	2
+
+iMatra_tirh	uni114B1.alt
+iiMatra_tirh	uni114B2.alt
+shortEMatra_tirh	uni114BA.alt
+shortOMatra_tirh	uni114BD.alt
+candrabindu_tirh	candrabindu.alt
+anusvara_tirh	anusvara.alt
 Repha	Repha_Tta
 Ba.part	Ba.part.alt
 Repha_Ba.part	Ba.part.alt
@@ -1153,7 +1541,7 @@ Repha_Ba.part	Ba.part.alt
 lookup end
 
 
-lookup	19	single
+lookup	24	single
 
 RightToLeft	no
 IgnoreBaseGlyphs	no
@@ -1161,89 +1549,10 @@ IgnoreLigatures	no
 IgnoreMarks	no
 MarkAttachmentType	2
 
-uni114BA	Repha_uni114BA
-uni114C3	Ba.part
-Repha	uni114BA
-Ba.part	uni114C3
-
-lookup end
-
-
-lookup	20	single
-
-RightToLeft	no
-IgnoreBaseGlyphs	no
-IgnoreLigatures	no
-IgnoreMarks	no
-MarkAttachmentType	2
-
-uni114BD	Repha_uni114BA
-Repha	uni114BD
-
-lookup end
-
-
-lookup	21	single
-
-RightToLeft	no
-IgnoreBaseGlyphs	no
-IgnoreLigatures	no
-IgnoreMarks	no
-MarkAttachmentType	2
-
-uni114B1	uni114B1.alt2
-uni114B2	uni114B2.alt2
-uni114BA	uni114BA.alt2
-uni114BD	uni114BD.alt2
-uni114BF	uni114BF.alt2
-uni114C0	uni114C0.alt2
-Repha	Repha_I
-uni114BF.alt	uni114BF.alt2
-uni114C0.alt	uni114C0.alt2
-
-lookup end
-
-
-lookup	22	ligature
-
-RightToLeft	no
-IgnoreBaseGlyphs	no
-IgnoreLigatures	no
-IgnoreMarks	no
-MarkAttachmentType	2
-
-uni114B1_Repha	uni114B1	Repha
-uni114BD_Ba	Ba.part	uni114BD
-Repha_Ba.part	Ba.part	Repha
-
-lookup end
-
-
-lookup	23	multiple
-
-RightToLeft	no
-IgnoreBaseGlyphs	no
-IgnoreLigatures	no
-IgnoreMarks	no
-MarkAttachmentType	2
-
-uni114B2	uni114B2	Repha_II
-uni114BA	uni114BA.alt	Repha_uni114BA.alt
-uni114BD	uni114BD	Repha_uni114BA
-
-lookup end
-
-
-lookup	24	multiple
-
-RightToLeft	no
-IgnoreBaseGlyphs	no
-IgnoreLigatures	no
-IgnoreMarks	no
-MarkAttachmentType	2
-
-uni114B2	uni114B2.alt	Repha_II
-uni114BD	uni114BD.alt	Repha_uni114BA
+shortEMatra_tirh	Repha_uni114BA
+nukta_tirh	Ba.part
+Repha	shortEMatra_tirh
+Ba.part	nukta_tirh
 
 lookup end
 
@@ -1256,9 +1565,8 @@ IgnoreLigatures	no
 IgnoreMarks	no
 MarkAttachmentType	2
 
-uni114B1	uni114B1_tall
-uni114B2	uni114B2_tall.alt
-Repha	Repha_II
+shortOMatra_tirh	Repha_uni114BA
+Repha	shortOMatra_tirh
 
 lookup end
 
@@ -1269,15 +1577,22 @@ RightToLeft	no
 IgnoreBaseGlyphs	no
 IgnoreLigatures	no
 IgnoreMarks	no
+MarkAttachmentType	2
 
-uni114BF	NullMark
-uni114C0	NullMark
-Repha	NullMark
+iMatra_tirh	uni114B1.alt2
+iiMatra_tirh	uni114B2.alt2
+shortEMatra_tirh	uni114BA.alt2
+shortOMatra_tirh	uni114BD.alt2
+candrabindu_tirh	candrabindu.alt2
+anusvara_tirh	anusvara.alt2
+Repha	Repha_I
+candrabindu.alt	candrabindu.alt2
+anusvara.alt	anusvara.alt2
 
 lookup end
 
 
-lookup	27	multiple
+lookup	27	ligature
 
 RightToLeft	no
 IgnoreBaseGlyphs	no
@@ -1285,14 +1600,14 @@ IgnoreLigatures	no
 IgnoreMarks	no
 MarkAttachmentType	2
 
-uni114B1	uni114B1_tall	Repha_I
-uni114B2	uni114B2.alt2	Repha_II
-uni114BD	uni114BD.alt2	Repha_uni114BA
+uni114B1_Repha	iMatra_tirh	Repha
+uni114BD_Ba	Ba.part	shortOMatra_tirh
+Repha_Ba.part	Ba.part	Repha
 
 lookup end
 
 
-lookup	28	single
+lookup	28	multiple
 
 RightToLeft	no
 IgnoreBaseGlyphs	no
@@ -1300,9 +1615,9 @@ IgnoreLigatures	no
 IgnoreMarks	no
 MarkAttachmentType	2
 
-uni114B1	uni114B1_tall.alt
-uni114B2	uni114B2_tall.alt3
-Repha	Repha_uni114BA
+iiMatra_tirh	iiMatra_tirh	Repha_II
+shortEMatra_tirh	uni114BA.alt	Repha_uni114BA.alt
+shortOMatra_tirh	shortOMatra_tirh	Repha_uni114BA
 
 lookup end
 
@@ -1315,14 +1630,13 @@ IgnoreLigatures	no
 IgnoreMarks	no
 MarkAttachmentType	2
 
-uni114B1	uni114B1	uni114BF.alt
-uni114BA	uni114BA	Repha_uni114BA
-Repha	Repha	uni114BF.alt
+iiMatra_tirh	uni114B2.alt	Repha_II
+shortOMatra_tirh	uni114BD.alt	Repha_uni114BA
 
 lookup end
 
 
-lookup	30	multiple
+lookup	30	single
 
 RightToLeft	no
 IgnoreBaseGlyphs	no
@@ -1330,22 +1644,23 @@ IgnoreLigatures	no
 IgnoreMarks	no
 MarkAttachmentType	2
 
-uni114B1	uni114B1	uni114C0.alt
-Repha	Repha	uni114C0.alt
+iMatra_tirh	uni114B1_tall
+iiMatra_tirh	uni114B2_tall.alt
+Repha	Repha_II
 
 lookup end
 
 
-lookup	31	multiple
+lookup	31	single
 
 RightToLeft	no
 IgnoreBaseGlyphs	no
 IgnoreLigatures	no
 IgnoreMarks	no
-MarkAttachmentType	2
 
-uni114B1	uni114B1_Repha	uni114BF.alt
-uni114B2	uni114B2_tall.alt	Repha_II
+candrabindu_tirh	NullMark
+anusvara_tirh	NullMark
+Repha	NullMark
 
 lookup end
 
@@ -1358,8 +1673,9 @@ IgnoreLigatures	no
 IgnoreMarks	no
 MarkAttachmentType	2
 
-uni114B1	uni114B1_Repha	uni114C0.alt
-uni114B2	uni114B2_tall.alt3	Repha_II
+iMatra_tirh	uni114B1_tall	Repha_I
+iiMatra_tirh	uni114B2.alt2	Repha_II
+shortOMatra_tirh	uni114BD.alt2	Repha_uni114BA
 
 lookup end
 
@@ -1372,12 +1688,84 @@ IgnoreLigatures	no
 IgnoreMarks	no
 MarkAttachmentType	2
 
-uni114B1	uni114B1_Repha
+iMatra_tirh	uni114B1_tall.alt
+iiMatra_tirh	uni114B2_tall.alt3
+Repha	Repha_uni114BA
 
 lookup end
 
 
-lookup	34	single
+lookup	34	multiple
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+MarkAttachmentType	2
+
+iMatra_tirh	iMatra_tirh	candrabindu.alt
+shortEMatra_tirh	shortEMatra_tirh	Repha_uni114BA
+Repha	Repha	candrabindu.alt
+
+lookup end
+
+
+lookup	35	multiple
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+MarkAttachmentType	2
+
+iMatra_tirh	iMatra_tirh	anusvara.alt
+Repha	Repha	anusvara.alt
+
+lookup end
+
+
+lookup	36	multiple
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+MarkAttachmentType	2
+
+iMatra_tirh	uni114B1_Repha	candrabindu.alt
+iiMatra_tirh	uni114B2_tall.alt	Repha_II
+
+lookup end
+
+
+lookup	37	multiple
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+MarkAttachmentType	2
+
+iMatra_tirh	uni114B1_Repha	anusvara.alt
+iiMatra_tirh	uni114B2_tall.alt3	Repha_II
+
+lookup end
+
+
+lookup	38	single
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+MarkAttachmentType	2
+
+iMatra_tirh	uni114B1_Repha
+
+lookup end
+
+
+lookup	39	single
 
 RightToLeft	no
 IgnoreBaseGlyphs	no
@@ -1390,37 +1778,37 @@ Ta.fina	TaVirama.alt
 lookup end
 
 
-lookup	35	single
+lookup	40	single
 
 RightToLeft	no
 IgnoreBaseGlyphs	no
 IgnoreLigatures	no
 IgnoreMarks	no
 
-uni11487	letterVocR.alt
-uni11488	letterVocRR.alt
-uni114A9	Ra.alt1
+rVocalic_tirh	letterVocR.alt
+rrVocalic_tirh	letterVocRR.alt
+ra_tirh	Ra.alt1
 Ru	Ru.alt1
 Ruu	Ruu.alt1
 
 lookup end
 
 
-lookup	36	single
+lookup	41	single
 
 RightToLeft	no
 IgnoreBaseGlyphs	no
 IgnoreLigatures	no
 IgnoreMarks	no
 
-uni114A9	Ra.alt2
+ra_tirh	Ra.alt2
 Ru	Ru.alt2
 Ruu	Ruu.alt2
 
 lookup end
 
 
-lookup	37	context
+lookup	42	context
 
 RightToLeft	no
 IgnoreBaseGlyphs	no
@@ -1459,15 +1847,15 @@ SsaNna	1
 HaNa	1
 HaLa	1
 HaVa	1
-uni114C3	2
-uni114B3	3
-uni114B4	3
-uni114B5	3
-uni114B6	3
-uni114B7	3
-uni114B8	3
+nukta_tirh	2
+uMatra_tirh	3
+uuMatra_tirh	3
+rVocalicMatra_tirh	3
+rrVocalicMatra_tirh	3
+lVocalicMatra_tirh	3
+llVocalicMatra_tirh	3
 Va.sub	3
-uni114AB	4
+va_tirh	4
 BaDa.part	4
 BaDha.part	4
 Br.part	4
@@ -1476,14 +1864,14 @@ uni114BD_Ba	5
 Ba.part	6
 class definition end
 
-class	1, 2, 3	2, 38
-class	4, 5, 2	2, 39	3, 39
-class	4, 6, 2, 3	3, 38
+class	1, 2, 3	2, 43
+class	4, 5, 2	2, 44	3, 44
+class	4, 6, 2, 3	3, 43
 
 lookup end
 
 
-lookup	38	single
+lookup	43	single
 
 RightToLeft	no
 IgnoreBaseGlyphs	no
@@ -1491,12 +1879,12 @@ IgnoreLigatures	no
 IgnoreMarks	no
 MarkAttachmentType	3
 
-uni114C3	nukta.alt
+nukta_tirh	nukta.alt
 
 lookup end
 
 
-lookup	39	single
+lookup	44	single
 
 RightToLeft	no
 IgnoreBaseGlyphs	no
@@ -1504,21 +1892,21 @@ IgnoreLigatures	no
 IgnoreMarks	no
 MarkAttachmentType	3
 
-uni114C3	uni114BD_Ba
-uni114BD_Ba	uni114C3
+nukta_tirh	uni114BD_Ba
+uni114BD_Ba	nukta_tirh
 
 lookup end
 
 
-lookup	40	single
+lookup	45	single
 
 RightToLeft	no
 IgnoreBaseGlyphs	no
 IgnoreLigatures	no
 IgnoreMarks	no
 
-uni114BF	NullMark
-uni114C0	NullMark
+candrabindu_tirh	NullMark
+anusvara_tirh	NullMark
 Repha	NullMark
 
 lookup end
