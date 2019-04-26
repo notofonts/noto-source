@@ -1,0 +1,2202 @@
+FontDame GSUB table
+
+% mark attachment class from glyph classes
+
+%  next update: add reph, support tsa dza ligatures
+
+script table begin
+tel2	default		1,3,5,6,7,8,9
+telu	default		0,2,4,5,6,7,8
+script table end
+
+feature table begin
+0	akhn	akhand-telu
+1	akhn	akhand-tel2
+2	blwf	belowbase-telu,contextra-telu,contextta-telu
+3	blwf	splitakhand-tel2,belowbase-tel2
+4	half	half-telu
+5	abvs	contextra-telu,contextta-telu,above-subst-telu
+6	blws	taligatures-telu,ailigatures-telu
+7	psts	contextu-telu,postbase-telu,subclashes-telu,subclashestara-telu,fixspacingmarkgap-telu,fixKassaNNa-telu,kssnnu-telu,vedic-telu,reorder1-telu,reorder2-telu,reorder3-telu,splitVedic-telu
+8	haln	halant-telu
+9	rphf	reph-telu2
+feature table end
+
+
+
+lookup	akhand-telu	ligature
+
+ignoreMarks	yes
+
+kassatelu	katelu	ssatelu	viramatelu
+
+lookup end
+
+
+lookup	akhand-tel2	ligature
+
+ignoreMarks	yes
+
+kassatelu	katelu	viramatelu	ssatelu
+
+lookup end
+
+
+
+lookup	reph-telu2	ligature
+
+rephtelu	ratelu	viramatelu	u 200d
+
+lookup end
+
+
+
+lookup	belowbase-telu	ligature
+
+kasubscripttelu	katelu	viramatelu
+khasubscripttelu	khatelu	viramatelu
+gasubscripttelu	gatelu	viramatelu
+ghasubscripttelu	ghatelu	viramatelu
+ngasubscripttelu	ngatelu	viramatelu
+casubscripttelu	catelu	viramatelu
+chasubscripttelu	chatelu	viramatelu
+jasubscripttelu	jatelu	viramatelu
+jhasubscripttelu	jhatelu	viramatelu
+nyasubscripttelu	nyatelu	viramatelu
+ttasubscripttelu	ttatelu	viramatelu
+tthasubscripttelu	tthatelu	viramatelu
+ddasubscripttelu	ddatelu	viramatelu
+ddhasubscripttelu	ddhatelu	viramatelu
+nnasubscripttelu	nnatelu	viramatelu
+tasubscripttelu	tatelu	viramatelu
+thasubscripttelu	thatelu	viramatelu
+dasubscripttelu	datelu	viramatelu
+dhasubscripttelu	dhatelu	viramatelu
+nasubscripttelu	natelu	viramatelu
+pasubscripttelu	patelu	viramatelu
+phasubscripttelu	phatelu	viramatelu
+basubscripttelu	batelu	viramatelu
+bhasubscripttelu	bhatelu	viramatelu
+masubscripttelu	matelu	viramatelu
+yasubscripttelu	yatelu	viramatelu
+rasubscripttelu	ratelu	viramatelu
+rrasubscripttelu	rratelu	viramatelu
+lasubscripttelu	latelu	viramatelu
+llasubscripttelu	llatelu	viramatelu
+vasubscripttelu	vatelu	viramatelu
+shasubscripttelu	shatelu	viramatelu
+ssasubscripttelu	ssatelu	viramatelu
+sasubscripttelu	satelu	viramatelu
+hasubscripttelu	hatelu	viramatelu
+
+lookup end
+
+
+
+lookup	splitakhand-tel2	context
+
+glyph	viramatelu,kassatelu	2,split-tel2
+
+lookup end
+
+
+lookup	split-tel2	multiple
+
+kassatelu	katelu	viramatelu	ssatelu
+
+lookup end
+
+
+lookup	belowbase-tel2	ligature
+
+kasubscripttelu	viramatelu	katelu
+khasubscripttelu	viramatelu	khatelu
+gasubscripttelu	viramatelu	gatelu
+ghasubscripttelu	viramatelu	ghatelu
+ngasubscripttelu	viramatelu	ngatelu
+casubscripttelu	viramatelu	catelu
+chasubscripttelu	viramatelu	chatelu
+jasubscripttelu	viramatelu	jatelu
+jhasubscripttelu	viramatelu	jhatelu
+nyasubscripttelu	viramatelu	nyatelu
+ttasubscripttelu	viramatelu	ttatelu
+tthasubscripttelu	viramatelu	tthatelu
+ddasubscripttelu	viramatelu	ddatelu
+ddhasubscripttelu	viramatelu	ddhatelu
+nnasubscripttelu	viramatelu	nnatelu
+tasubscripttelu	viramatelu	tatelu
+thasubscripttelu	viramatelu	thatelu
+dasubscripttelu	viramatelu	datelu
+dhasubscripttelu	viramatelu	dhatelu
+nasubscripttelu	viramatelu	natelu
+pasubscripttelu	viramatelu	patelu
+phasubscripttelu	viramatelu	phatelu
+basubscripttelu	viramatelu	batelu
+bhasubscripttelu	viramatelu	bhatelu
+masubscripttelu	viramatelu	matelu
+yasubscripttelu	viramatelu	yatelu
+rasubscripttelu	viramatelu	ratelu
+rrasubscripttelu	viramatelu	rratelu
+lasubscripttelu	viramatelu	latelu
+llasubscripttelu	viramatelu	llatelu
+vasubscripttelu	viramatelu	vatelu
+shasubscripttelu	viramatelu	shatelu
+ssasubscripttelu	viramatelu	ssatelu
+sasubscripttelu	viramatelu	satelu
+hasubscripttelu	viramatelu	hatelu
+% new 2017
+lllasubscripttelu	viramatelu	lllatelu
+rrrasubscripttelu	viramatelu	rrratelu
+
+
+lookup end
+
+
+
+lookup	contextra-telu	chained
+
+backtrackclass definition begin
+ailengthmarktelu	1
+kasubscripttelu	1
+khasubscripttelu	1
+gasubscripttelu	1
+ghasubscripttelu	1
+ngasubscripttelu	1
+casubscripttelu	1
+chasubscripttelu	1
+jasubscripttelu	1
+jhasubscripttelu	1
+nyasubscripttelu	1
+ttasubscripttelu	1
+tthasubscripttelu	1
+ddasubscripttelu	1
+ddhasubscripttelu	1
+nnasubscripttelu	1
+tasubscripttelu	1
+thasubscripttelu	1
+dasubscripttelu	1
+dhasubscripttelu	1
+nasubscripttelu	1
+pasubscripttelu	1
+phasubscripttelu	1
+basubscripttelu	1
+bhasubscripttelu	1
+masubscripttelu	1
+yasubscripttelu	1
+rasubscripttelu	1
+rrasubscripttelu	1
+lasubscripttelu	1
+llasubscripttelu	1
+vasubscripttelu	1
+shasubscripttelu	1
+ssasubscripttelu	1
+sasubscripttelu	1
+hasubscripttelu	1
+karasubscripttelu	1
+kharasubscripttelu	1
+garasubscripttelu	1
+gharasubscripttelu	1
+ngarasubscripttelu	1
+carasubscripttelu	1
+charasubscripttelu	1
+jarasubscripttelu	1
+jharasubscripttelu	1
+nyarasubscripttelu	1
+ttarasubscripttelu	1
+ttharasubscripttelu	1
+ddarasubscripttelu	1
+ddharasubscripttelu	1
+nnarasubscripttelu	1
+tarasubscripttelu	1
+tharasubscripttelu	1
+darasubscripttelu	1
+dharasubscripttelu	1
+narasubscripttelu	1
+parasubscripttelu	1
+pharasubscripttelu	1
+barasubscripttelu	1
+bharasubscripttelu	1
+marasubscripttelu	1
+yarasubscripttelu	1
+rarasubscripttelu	1
+rrarasubscripttelu	1
+larasubscripttelu	1
+llarasubscripttelu	1
+varasubscripttelu	1
+sharasubscripttelu	1
+ssarasubscripttelu	1
+sarasubscripttelu	1
+harasubscripttelu	1
+% new 2017
+lllasubscripttelu	1
+rrrasubscripttelu	1
+class definition end
+
+class definition begin
+rasubscripttelu	1
+class definition end
+
+lookaheadclass definition begin
+# 1	1
+class definition end
+
+class-chain	0	1		1,selectra-telu
+
+lookup end
+
+
+
+lookup	contextta-telu	chained
+
+backtrackclass definition begin
+katelu	1
+gatelu	1
+tthatelu	1
+ratelu	1
+shatelu	1
+ghatelu	2
+jhatelu	2
+nyatelu	2
+nnatelu	2
+matelu	2
+yatelu	2
+rratelu	2
+hatelu	2
+ssatelu	3
+khatelu	4
+chatelu	4
+ddhatelu	4
+thatelu	4
+dhatelu	4
+phatelu	4
+bhatelu	4
+aavowelsigntelu	5
+ivowelsigntelu	5
+iivowelsigntelu	5
+uvowelsigntelu	5
+uuvowelsigntelu	5
+evowelsigntelu	5
+eevowelsigntelu	5
+ovowelsigntelu	5
+oovowelsigntelu	5
+auvowelsigntelu	5
+ailengthmarktelu	6
+class definition end
+
+class definition begin
+tasubscripttelu	1
+jasubscripttelu	2
+ttasubscripttelu	2
+ddasubscripttelu	2
+dasubscripttelu	2
+lasubscripttelu	2
+class definition end
+
+lookaheadclass definition begin
+# 1	1
+class definition end
+
+class-chain	1	1		1,narrowta-telu
+class-chain	2	1		1,wideta-telu
+class-chain	3	1		1,lowtara-telu
+class-chain	4	2		1,lowtara-telu
+class-chain	5,1	1		1,narrowta-telu
+class-chain	5,2	1		1,wideta-telu
+class-chain	5,3	1		1,lowtara-telu
+class-chain	5,4	2		1,lowtara-telu
+class-chain	6,5,1	1		1,narrowta-telu
+class-chain	6,5,2	1		1,wideta-telu
+class-chain	6,5,3	1		1,lowtara-telu
+
+lookup end
+
+
+lookup	narrowta-telu	single
+
+tasubscripttelu	tasubscriptnarrowtelu
+
+lookup end
+
+
+lookup	wideta-telu	single
+
+tasubscripttelu	tasubscriptwidetelu
+
+lookup end
+
+
+
+lookup	half-telu	ligature
+
+kahalanttelu	katelu	viramatelu	u 200d
+khahalanttelu	khatelu	viramatelu	u 200d
+gahalanttelu	gatelu	viramatelu	u 200d
+ghahalanttelu	ghatelu	viramatelu	u 200d
+ngahalanttelu	ngatelu	viramatelu	u 200d
+cahalanttelu	catelu	viramatelu	u 200d
+chahalanttelu	chatelu	viramatelu	u 200d
+jahalanttelu	jatelu	viramatelu	u 200d
+jhahalanttelu	jhatelu	viramatelu	u 200d
+nyahalanttelu	nyatelu	viramatelu	u 200d
+ttahalanttelu	ttatelu	viramatelu	u 200d
+tthahalanttelu	tthatelu	viramatelu	u 200d
+ddahalanttelu	ddatelu	viramatelu	u 200d
+ddhahalanttelu	ddhatelu	viramatelu	u 200d
+nnahalanttelu	nnatelu	viramatelu	u 200d
+tahalanttelu	tatelu	viramatelu	u 200d
+thahalanttelu	thatelu	viramatelu	u 200d
+dahalanttelu	datelu	viramatelu	u 200d
+dhahalanttelu	dhatelu	viramatelu	u 200d
+nahalanttelu	natelu	viramatelu	u 200d
+pahalanttelu	patelu	viramatelu	u 200d
+phahalanttelu	phatelu	viramatelu	u 200d
+bahalanttelu	batelu	viramatelu	u 200d
+bhahalanttelu	bhatelu	viramatelu	u 200d
+mahalanttelu	matelu	viramatelu	u 200d
+yahalanttelu	yatelu	viramatelu	u 200d
+rahalanttelu	ratelu	viramatelu	u 200d
+rrahalanttelu	rratelu	viramatelu	u 200d
+lahalanttelu	latelu	viramatelu	u 200d
+llahalanttelu	llatelu	viramatelu	u 200d
+vahalanttelu	vatelu	viramatelu	u 200d
+shahalanttelu	shatelu	viramatelu	u 200d
+ssahalanttelu	ssatelu	viramatelu	u 200d
+sahalanttelu	satelu	viramatelu	u 200d
+hahalanttelu	hatelu	viramatelu	u 200d
+kassahalanttelu	kassatelu	viramatelu	u 200d
+
+lookup end
+
+
+% ------------------------------------------------------------------------
+
+
+lookup	above-subst-telu	ligature
+
+kaavoweltelu	katelu	aavowelsigntelu
+khaavoweltelu	khatelu	aavowelsigntelu
+gaavoweltelu	gatelu	aavowelsigntelu
+ghaavoweltelu	ghatelu	aavowelsigntelu
+ngaavoweltelu	ngatelu	aavowelsigntelu
+caavoweltelu	catelu	aavowelsigntelu
+chaavoweltelu	chatelu	aavowelsigntelu
+jaavoweltelu	jatelu	aavowelsigntelu
+jhaavoweltelu	jhatelu	aavowelsigntelu
+nyaavoweltelu	nyatelu	aavowelsigntelu
+ttaavoweltelu	ttatelu	aavowelsigntelu
+tthaavoweltelu	tthatelu	aavowelsigntelu
+ddaavoweltelu	ddatelu	aavowelsigntelu
+ddhaavoweltelu	ddhatelu	aavowelsigntelu
+nnaavoweltelu	nnatelu	aavowelsigntelu
+taavoweltelu	tatelu	aavowelsigntelu
+thaavoweltelu	thatelu	aavowelsigntelu
+daavoweltelu	datelu	aavowelsigntelu
+dhaavoweltelu	dhatelu	aavowelsigntelu
+naavoweltelu	natelu	aavowelsigntelu
+paavoweltelu	patelu	aavowelsigntelu
+phaavoweltelu	phatelu	aavowelsigntelu
+baavoweltelu	batelu	aavowelsigntelu
+bhaavoweltelu	bhatelu	aavowelsigntelu
+maavoweltelu	matelu	aavowelsigntelu
+yaavoweltelu	yatelu	aavowelsigntelu
+raavoweltelu	ratelu	aavowelsigntelu
+rraavoweltelu	rratelu	aavowelsigntelu
+laavoweltelu	latelu	aavowelsigntelu
+llaavoweltelu	llatelu	aavowelsigntelu
+vaavoweltelu	vatelu	aavowelsigntelu
+shaavoweltelu	shatelu	aavowelsigntelu
+ssaavoweltelu	ssatelu	aavowelsigntelu
+saavoweltelu	satelu	aavowelsigntelu
+haavoweltelu	hatelu	aavowelsigntelu
+kassaavoweltelu	kassatelu	aavowelsigntelu
+% new 2017
+lllaavoweltelu	lllatelu	aavowelsigntelu
+rrraavoweltelu	rrratelu	aavowelsigntelu
+tsaavoweltelu	tsatelu	aavowelsigntelu
+dzaavoweltelu	dzatelu	aavowelsigntelu
+%
+kivoweltelu	katelu	ivowelsigntelu
+khivoweltelu	khatelu	ivowelsigntelu
+givoweltelu	gatelu	ivowelsigntelu
+ghivoweltelu	ghatelu	ivowelsigntelu
+ngivoweltelu	ngatelu	ivowelsigntelu
+civoweltelu	catelu	ivowelsigntelu
+chivoweltelu	chatelu	ivowelsigntelu
+jivoweltelu	jatelu	ivowelsigntelu
+jhivoweltelu	jhatelu	ivowelsigntelu
+nyivoweltelu	nyatelu	ivowelsigntelu
+ttivoweltelu	ttatelu	ivowelsigntelu
+tthivoweltelu	tthatelu	ivowelsigntelu
+ddivoweltelu	ddatelu	ivowelsigntelu
+ddhivoweltelu	ddhatelu	ivowelsigntelu
+nnivoweltelu	nnatelu	ivowelsigntelu
+tivoweltelu	tatelu	ivowelsigntelu
+thivoweltelu	thatelu	ivowelsigntelu
+divoweltelu	datelu	ivowelsigntelu
+dhivoweltelu	dhatelu	ivowelsigntelu
+nivoweltelu	natelu	ivowelsigntelu
+pivoweltelu	patelu	ivowelsigntelu
+phivoweltelu	phatelu	ivowelsigntelu
+bivoweltelu	batelu	ivowelsigntelu
+bhivoweltelu	bhatelu	ivowelsigntelu
+mivoweltelu	matelu	ivowelsigntelu
+yivoweltelu	yatelu	ivowelsigntelu
+rivoweltelu	ratelu	ivowelsigntelu
+rrivoweltelu	rratelu	ivowelsigntelu
+livoweltelu	latelu	ivowelsigntelu
+llivoweltelu	llatelu	ivowelsigntelu
+vivoweltelu	vatelu	ivowelsigntelu
+shivoweltelu	shatelu	ivowelsigntelu
+ssivoweltelu	ssatelu	ivowelsigntelu
+sivoweltelu	satelu	ivowelsigntelu
+hivoweltelu	hatelu	ivowelsigntelu
+kassivoweltelu	kassatelu	ivowelsigntelu
+% new 2017
+lllivoweltelu	lllatelu	ivowelsigntelu
+rrrivoweltelu	rrratelu	ivowelsigntelu
+tsivoweltelu	tsatelu	ivowelsigntelu
+dzivoweltelu	dzatelu	ivowelsigntelu
+%
+kiivoweltelu	katelu	iivowelsigntelu
+khiivoweltelu	khatelu	iivowelsigntelu
+giivoweltelu	gatelu	iivowelsigntelu
+ghiivoweltelu	ghatelu	iivowelsigntelu
+ngiivoweltelu	ngatelu	iivowelsigntelu
+ciivoweltelu	catelu	iivowelsigntelu
+chiivoweltelu	chatelu	iivowelsigntelu
+jiivoweltelu	jatelu	iivowelsigntelu
+jhiivoweltelu	jhatelu	iivowelsigntelu
+nyiivoweltelu	nyatelu	iivowelsigntelu
+ttiivoweltelu	ttatelu	iivowelsigntelu
+tthiivoweltelu	tthatelu	iivowelsigntelu
+ddiivoweltelu	ddatelu	iivowelsigntelu
+ddhiivoweltelu	ddhatelu	iivowelsigntelu
+nniivoweltelu	nnatelu	iivowelsigntelu
+tiivoweltelu	tatelu	iivowelsigntelu
+thiivoweltelu	thatelu	iivowelsigntelu
+diivoweltelu	datelu	iivowelsigntelu
+dhiivoweltelu	dhatelu	iivowelsigntelu
+niivoweltelu	natelu	iivowelsigntelu
+piivoweltelu	patelu	iivowelsigntelu
+phiivoweltelu	phatelu	iivowelsigntelu
+biivoweltelu	batelu	iivowelsigntelu
+bhiivoweltelu	bhatelu	iivowelsigntelu
+miivoweltelu	matelu	iivowelsigntelu
+yiivoweltelu	yatelu	iivowelsigntelu
+riivoweltelu	ratelu	iivowelsigntelu
+rriivoweltelu	rratelu	iivowelsigntelu
+liivoweltelu	latelu	iivowelsigntelu
+lliivoweltelu	llatelu	iivowelsigntelu
+viivoweltelu	vatelu	iivowelsigntelu
+shiivoweltelu	shatelu	iivowelsigntelu
+ssiivoweltelu	ssatelu	iivowelsigntelu
+siivoweltelu	satelu	iivowelsigntelu
+hiivoweltelu	hatelu	iivowelsigntelu
+kassiivoweltelu	kassatelu	iivowelsigntelu
+% new 2017
+llliivoweltelu	lllatelu	iivowelsigntelu
+rrriivoweltelu	rrratelu	iivowelsigntelu
+tsiivoweltelu	tsatelu	iivowelsigntelu
+dziivoweltelu	dzatelu	iivowelsigntelu
+%
+kevoweltelu	katelu	evowelsigntelu
+khevoweltelu	khatelu	evowelsigntelu
+gevoweltelu	gatelu	evowelsigntelu
+ghevoweltelu	ghatelu	evowelsigntelu
+ngevoweltelu	ngatelu	evowelsigntelu
+cevoweltelu	catelu	evowelsigntelu
+chevoweltelu	chatelu	evowelsigntelu
+jevoweltelu	jatelu	evowelsigntelu
+jhevoweltelu	jhatelu	evowelsigntelu
+nyevoweltelu	nyatelu	evowelsigntelu
+ttevoweltelu	ttatelu	evowelsigntelu
+tthevoweltelu	tthatelu	evowelsigntelu
+ddevoweltelu	ddatelu	evowelsigntelu
+ddhevoweltelu	ddhatelu	evowelsigntelu
+nnevoweltelu	nnatelu	evowelsigntelu
+tevoweltelu	tatelu	evowelsigntelu
+thevoweltelu	thatelu	evowelsigntelu
+devoweltelu	datelu	evowelsigntelu
+dhevoweltelu	dhatelu	evowelsigntelu
+nevoweltelu	natelu	evowelsigntelu
+pevoweltelu	patelu	evowelsigntelu
+phevoweltelu	phatelu	evowelsigntelu
+bevoweltelu	batelu	evowelsigntelu
+bhevoweltelu	bhatelu	evowelsigntelu
+mevoweltelu	matelu	evowelsigntelu
+yevoweltelu	yatelu	evowelsigntelu
+revoweltelu	ratelu	evowelsigntelu
+rrevoweltelu	rratelu	evowelsigntelu
+levoweltelu	latelu	evowelsigntelu
+llevoweltelu	llatelu	evowelsigntelu
+vevoweltelu	vatelu	evowelsigntelu
+shevoweltelu	shatelu	evowelsigntelu
+ssevoweltelu	ssatelu	evowelsigntelu
+sevoweltelu	satelu	evowelsigntelu
+hevoweltelu	hatelu	evowelsigntelu
+kassevoweltelu	kassatelu	evowelsigntelu
+% new 2017
+lllevoweltelu	lllatelu	evowelsigntelu
+rrrevoweltelu	rrratelu	evowelsigntelu
+tsevoweltelu	tsatelu	evowelsigntelu
+dzevoweltelu	dzatelu	evowelsigntelu
+%
+keevoweltelu	katelu	eevowelsigntelu
+kheevoweltelu	khatelu	eevowelsigntelu
+geevoweltelu	gatelu	eevowelsigntelu
+gheevoweltelu	ghatelu	eevowelsigntelu
+ngeevoweltelu	ngatelu	eevowelsigntelu
+ceevoweltelu	catelu	eevowelsigntelu
+cheevoweltelu	chatelu	eevowelsigntelu
+jeevoweltelu	jatelu	eevowelsigntelu
+jheevoweltelu	jhatelu	eevowelsigntelu
+nyeevoweltelu	nyatelu	eevowelsigntelu
+tteevoweltelu	ttatelu	eevowelsigntelu
+ttheevoweltelu	tthatelu	eevowelsigntelu
+ddeevoweltelu	ddatelu	eevowelsigntelu
+ddheevoweltelu	ddhatelu	eevowelsigntelu
+nneevoweltelu	nnatelu	eevowelsigntelu
+teevoweltelu	tatelu	eevowelsigntelu
+theevoweltelu	thatelu	eevowelsigntelu
+deevoweltelu	datelu	eevowelsigntelu
+dheevoweltelu	dhatelu	eevowelsigntelu
+neevoweltelu	natelu	eevowelsigntelu
+peevoweltelu	patelu	eevowelsigntelu
+pheevoweltelu	phatelu	eevowelsigntelu
+beevoweltelu	batelu	eevowelsigntelu
+bheevoweltelu	bhatelu	eevowelsigntelu
+meevoweltelu	matelu	eevowelsigntelu
+yeevoweltelu	yatelu	eevowelsigntelu
+reevoweltelu	ratelu	eevowelsigntelu
+rreevoweltelu	rratelu	eevowelsigntelu
+leevoweltelu	latelu	eevowelsigntelu
+lleevoweltelu	llatelu	eevowelsigntelu
+veevoweltelu	vatelu	eevowelsigntelu
+sheevoweltelu	shatelu	eevowelsigntelu
+sseevoweltelu	ssatelu	eevowelsigntelu
+seevoweltelu	satelu	eevowelsigntelu
+heevoweltelu	hatelu	eevowelsigntelu
+kasseevoweltelu	kassatelu	eevowelsigntelu
+% new 2017
+llleevoweltelu	lllatelu	eevowelsigntelu
+rrreevoweltelu	rrratelu	eevowelsigntelu
+tseevoweltelu	tsatelu	eevowelsigntelu
+dzeevoweltelu	dzatelu	eevowelsigntelu
+%
+kovoweltelu	katelu	ovowelsigntelu
+khovoweltelu	khatelu	ovowelsigntelu
+govoweltelu	gatelu	ovowelsigntelu
+ghovoweltelu	ghatelu	ovowelsigntelu
+ngovoweltelu	ngatelu	ovowelsigntelu
+covoweltelu	catelu	ovowelsigntelu
+chovoweltelu	chatelu	ovowelsigntelu
+jovoweltelu	jatelu	ovowelsigntelu
+jhovoweltelu	jhatelu	ovowelsigntelu
+nyovoweltelu	nyatelu	ovowelsigntelu
+ttovoweltelu	ttatelu	ovowelsigntelu
+tthovoweltelu	tthatelu	ovowelsigntelu
+ddovoweltelu	ddatelu	ovowelsigntelu
+ddhovoweltelu	ddhatelu	ovowelsigntelu
+nnovoweltelu	nnatelu	ovowelsigntelu
+tovoweltelu	tatelu	ovowelsigntelu
+thovoweltelu	thatelu	ovowelsigntelu
+dovoweltelu	datelu	ovowelsigntelu
+dhovoweltelu	dhatelu	ovowelsigntelu
+novoweltelu	natelu	ovowelsigntelu
+povoweltelu	patelu	ovowelsigntelu
+phovoweltelu	phatelu	ovowelsigntelu
+bovoweltelu	batelu	ovowelsigntelu
+bhovoweltelu	bhatelu	ovowelsigntelu
+movoweltelu	matelu	ovowelsigntelu
+yovoweltelu	yatelu	ovowelsigntelu
+rovoweltelu	ratelu	ovowelsigntelu
+rrovoweltelu	rratelu	ovowelsigntelu
+lovoweltelu	latelu	ovowelsigntelu
+llovoweltelu	llatelu	ovowelsigntelu
+vovoweltelu	vatelu	ovowelsigntelu
+shovoweltelu	shatelu	ovowelsigntelu
+ssovoweltelu	ssatelu	ovowelsigntelu
+sovoweltelu	satelu	ovowelsigntelu
+hovoweltelu	hatelu	ovowelsigntelu
+kassovoweltelu	kassatelu	ovowelsigntelu
+% new 2017
+lllovoweltelu	lllatelu	ovowelsigntelu
+rrrovoweltelu	rrratelu	ovowelsigntelu
+tsovoweltelu	tsatelu	ovowelsigntelu
+dzovoweltelu	dzatelu	ovowelsigntelu
+%
+koovoweltelu	katelu	oovowelsigntelu
+khoovoweltelu	khatelu	oovowelsigntelu
+goovoweltelu	gatelu	oovowelsigntelu
+ghoovoweltelu	ghatelu	oovowelsigntelu
+ngoovoweltelu	ngatelu	oovowelsigntelu
+coovoweltelu	catelu	oovowelsigntelu
+choovoweltelu	chatelu	oovowelsigntelu
+joovoweltelu	jatelu	oovowelsigntelu
+jhoovoweltelu	jhatelu	oovowelsigntelu
+nyoovoweltelu	nyatelu	oovowelsigntelu
+ttoovoweltelu	ttatelu	oovowelsigntelu
+tthoovoweltelu	tthatelu	oovowelsigntelu
+ddoovoweltelu	ddatelu	oovowelsigntelu
+ddhoovoweltelu	ddhatelu	oovowelsigntelu
+nnoovoweltelu	nnatelu	oovowelsigntelu
+toovoweltelu	tatelu	oovowelsigntelu
+thoovoweltelu	thatelu	oovowelsigntelu
+doovoweltelu	datelu	oovowelsigntelu
+dhoovoweltelu	dhatelu	oovowelsigntelu
+noovoweltelu	natelu	oovowelsigntelu
+poovoweltelu	patelu	oovowelsigntelu
+phoovoweltelu	phatelu	oovowelsigntelu
+boovoweltelu	batelu	oovowelsigntelu
+bhoovoweltelu	bhatelu	oovowelsigntelu
+moovoweltelu	matelu	oovowelsigntelu
+yoovoweltelu	yatelu	oovowelsigntelu
+roovoweltelu	ratelu	oovowelsigntelu
+rroovoweltelu	rratelu	oovowelsigntelu
+loovoweltelu	latelu	oovowelsigntelu
+lloovoweltelu	llatelu	oovowelsigntelu
+voovoweltelu	vatelu	oovowelsigntelu
+shoovoweltelu	shatelu	oovowelsigntelu
+ssoovoweltelu	ssatelu	oovowelsigntelu
+soovoweltelu	satelu	oovowelsigntelu
+hoovoweltelu	hatelu	oovowelsigntelu
+kassoovoweltelu	kassatelu	oovowelsigntelu
+% new 2017
+llloovoweltelu	lllatelu	oovowelsigntelu
+rrroovoweltelu	rrratelu	oovowelsigntelu
+tsoovoweltelu	tsatelu	oovowelsigntelu
+dzoovoweltelu	dzatelu	oovowelsigntelu
+%
+kauvoweltelu	katelu	auvowelsigntelu
+khauvoweltelu	khatelu	auvowelsigntelu
+gauvoweltelu	gatelu	auvowelsigntelu
+ghauvoweltelu	ghatelu	auvowelsigntelu
+ngauvoweltelu	ngatelu	auvowelsigntelu
+cauvoweltelu	catelu	auvowelsigntelu
+chauvoweltelu	chatelu	auvowelsigntelu
+jauvoweltelu	jatelu	auvowelsigntelu
+jhauvoweltelu	jhatelu	auvowelsigntelu
+nyauvoweltelu	nyatelu	auvowelsigntelu
+ttauvoweltelu	ttatelu	auvowelsigntelu
+tthauvoweltelu	tthatelu	auvowelsigntelu
+ddauvoweltelu	ddatelu	auvowelsigntelu
+ddhauvoweltelu	ddhatelu	auvowelsigntelu
+nnauvoweltelu	nnatelu	auvowelsigntelu
+tauvoweltelu	tatelu	auvowelsigntelu
+thauvoweltelu	thatelu	auvowelsigntelu
+dauvoweltelu	datelu	auvowelsigntelu
+dhauvoweltelu	dhatelu	auvowelsigntelu
+nauvoweltelu	natelu	auvowelsigntelu
+pauvoweltelu	patelu	auvowelsigntelu
+phauvoweltelu	phatelu	auvowelsigntelu
+bauvoweltelu	batelu	auvowelsigntelu
+bhauvoweltelu	bhatelu	auvowelsigntelu
+mauvoweltelu	matelu	auvowelsigntelu
+yauvoweltelu	yatelu	auvowelsigntelu
+rauvoweltelu	ratelu	auvowelsigntelu
+rrauvoweltelu	rratelu	auvowelsigntelu
+lauvoweltelu	latelu	auvowelsigntelu
+llauvoweltelu	llatelu	auvowelsigntelu
+vauvoweltelu	vatelu	auvowelsigntelu
+shauvoweltelu	shatelu	auvowelsigntelu
+ssauvoweltelu	ssatelu	auvowelsigntelu
+sauvoweltelu	satelu	auvowelsigntelu
+hauvoweltelu	hatelu	auvowelsigntelu
+kassauvoweltelu	kassatelu	auvowelsigntelu
+% new 2017
+lllauvoweltelu	lllatelu	auvowelsigntelu
+rrrauvoweltelu	rrratelu	auvowelsigntelu
+tsauvoweltelu	tsatelu	auvowelsigntelu
+dzauvoweltelu	dzatelu	auvowelsigntelu
+%
+
+lookup end
+
+
+lookup	taligatures-telu	chained
+
+backtrackclass definition begin
+kassatelu	1
+kassahalanttelu	1
+kassaavoweltelu	1
+kassivoweltelu	1
+kassiivoweltelu	1
+kassevoweltelu	1
+kasseevoweltelu	1
+kassaivoweltelu	1
+kassovoweltelu	1
+kassoovoweltelu	1
+kassauvoweltelu	1
+class definition end
+
+class definition begin
+ailengthmarktelu	1
+tasubscripttelu	2
+tasubscriptlowtelu	3
+tasubscriptnarrowtelu	3
+tasubscriptwidetelu	3
+ttasubscripttelu	3
+lasubscripttelu	3
+hasubscripttelu	3
+ssasubscripttelu	3
+dhasubscripttelu	3
+dasubscripttelu	3
+thasubscripttelu	3
+nnasubscripttelu	3
+ddasubscripttelu	3
+jasubscripttelu	3
+ghasubscripttelu	3
+gasubscripttelu	3
+khasubscripttelu	3
+rasubscripttelu	4
+class definition end
+
+lookaheadclass definition begin
+# 1	1
+class definition end
+
+class-chain	0	1,2		1,formtaligs-telu
+class-chain	0	1,3		1,formtaligs-telu
+class-chain	0	2,4		1,formtaligs-telu
+
+lookup end
+
+
+lookup	formtaligs-telu	ligature
+
+tailengthmarktelu	ailengthmarktelu	tasubscripttelu
+tailengthmarktelu	ailengthmarktelu	tasubscriptlowtelu
+tailengthmarknarrowtelu	ailengthmarktelu	tasubscriptnarrowtelu
+tailengthmarkwidetelu	ailengthmarktelu	tasubscriptwidetelu
+ttailengthmarktelu	ailengthmarktelu	ttasubscripttelu
+lailengthmarktelu	ailengthmarktelu	lasubscripttelu
+hailengthmarktelu	ailengthmarktelu	hasubscripttelu
+ssailengthmarktelu	ailengthmarktelu	ssasubscripttelu
+dhailengthmarktelu	ailengthmarktelu	dhasubscripttelu
+dailengthmarktelu	ailengthmarktelu	dasubscripttelu
+thailengthmarktelu	ailengthmarktelu	thasubscripttelu
+nnailengthmarktelu	ailengthmarktelu	nnasubscripttelu
+ddailengthmarktelu	ailengthmarktelu	ddasubscripttelu
+jailengthmarktelu	ailengthmarktelu	jasubscripttelu
+ghailengthmarktelu	ailengthmarktelu	ghasubscripttelu
+gailengthmarktelu	ailengthmarktelu	gasubscripttelu
+khailengthmarktelu	ailengthmarktelu	khasubscripttelu
+tarasubscriptligtelu	tasubscripttelu	rasubscripttelu
+
+lookup end
+
+
+lookup	ailigatures-telu	ligature
+
+kaivoweltelu	kevoweltelu	ailengthmarktelu
+khaivoweltelu	khevoweltelu	ailengthmarktelu
+gaivoweltelu	gevoweltelu	ailengthmarktelu
+ghaivoweltelu	ghevoweltelu	ailengthmarktelu
+ngaivoweltelu	ngevoweltelu	ailengthmarktelu
+caivoweltelu	cevoweltelu	ailengthmarktelu
+chaivoweltelu	chevoweltelu	ailengthmarktelu
+jaivoweltelu	jevoweltelu	ailengthmarktelu
+jhaivoweltelu	jhevoweltelu	ailengthmarktelu
+nyaivoweltelu	nyevoweltelu	ailengthmarktelu
+ttaivoweltelu	ttevoweltelu	ailengthmarktelu
+tthaivoweltelu	tthevoweltelu	ailengthmarktelu
+ddaivoweltelu	ddevoweltelu	ailengthmarktelu
+ddhaivoweltelu	ddhevoweltelu	ailengthmarktelu
+nnaivoweltelu	nnevoweltelu	ailengthmarktelu
+taivoweltelu	tevoweltelu	ailengthmarktelu
+thaivoweltelu	thevoweltelu	ailengthmarktelu
+daivoweltelu	devoweltelu	ailengthmarktelu
+dhaivoweltelu	dhevoweltelu	ailengthmarktelu
+naivoweltelu	nevoweltelu	ailengthmarktelu
+paivoweltelu	pevoweltelu	ailengthmarktelu
+phaivoweltelu	phevoweltelu	ailengthmarktelu
+baivoweltelu	bevoweltelu	ailengthmarktelu
+bhaivoweltelu	bhevoweltelu	ailengthmarktelu
+maivoweltelu	mevoweltelu	ailengthmarktelu
+yaivoweltelu	yevoweltelu	ailengthmarktelu
+raivoweltelu	revoweltelu	ailengthmarktelu
+rraivoweltelu	rrevoweltelu	ailengthmarktelu
+laivoweltelu	levoweltelu	ailengthmarktelu
+llaivoweltelu	llevoweltelu	ailengthmarktelu
+vaivoweltelu	vevoweltelu	ailengthmarktelu
+shaivoweltelu	shevoweltelu	ailengthmarktelu
+ssaivoweltelu	ssevoweltelu	ailengthmarktelu
+saivoweltelu	sevoweltelu	ailengthmarktelu
+haivoweltelu	hevoweltelu	ailengthmarktelu
+kassaivoweltelu	kassevoweltelu	ailengthmarktelu
+% new 2017
+lllaivoweltelu	lllevoweltelu	ailengthmarktelu
+rrraivoweltelu	rrrevoweltelu	ailengthmarktelu
+tsaivoweltelu	tsevoweltelu	ailengthmarktelu
+dzaivoweltelu	dzevoweltelu	ailengthmarktelu
+
+lookup end
+
+
+lookup	contextu-telu	chained
+
+glyph	llatelu	uvowelsigntelu		1,llu-telu
+glyph	llatelu	uuvowelsigntelu		1,llu-telu
+glyph	hatelu	uvowelsigntelu		1,hu-telu
+glyph	hatelu	uuvowelsigntelu		1,hu-telu
+glyph	nyatelu	uvowelsigntelu		1,nyu-telu
+glyph	nyatelu	uuvowelsigntelu		1,nyu-telu
+%glyph	patelu	uvowelsigntelu,pasubscripttelu		1,papu-telu
+glyph	uvowelsigntelu,patelu	parasubscripttelu		1,lowtara-telu
+glyph	uvowelsigntelu,phatelu	pharasubscripttelu		1,lowtara-telu
+glyph	uvowelsigntelu,vatelu	varasubscripttelu		1,lowtara-telu
+glyph	uvowelsigntelu,patelu	tasubscripttelu		1,lowtara-telu
+glyph	uvowelsigntelu,phatelu	tasubscripttelu		1,lowtara-telu
+glyph	uvowelsigntelu,vatelu	tasubscripttelu		1,lowtara-telu
+glyph	uuvowelsigntelu,patelu	parasubscripttelu		1,lowtara-telu
+glyph	uuvowelsigntelu,phatelu	pharasubscripttelu		1,lowtara-telu
+glyph	uuvowelsigntelu,vatelu	varasubscripttelu		1,lowtara-telu
+glyph	uuvowelsigntelu,patelu	tasubscripttelu		1,lowtara-telu
+glyph	uuvowelsigntelu,phatelu	tasubscripttelu		1,lowtara-telu
+glyph	uuvowelsigntelu,vatelu	tasubscripttelu		1,lowtara-telu
+
+lookup end
+
+
+
+lookup	llu-telu	single
+
+uvowelsigntelu	uvowelsign1telu
+uuvowelsigntelu	uuvowelsign1telu
+
+lookup end
+
+
+lookup	hu-telu	single
+
+uvowelsigntelu	uvowelsign2telu
+uuvowelsigntelu	uuvowelsign2telu
+
+lookup end
+
+
+lookup	nyu-telu	single
+
+uvowelsigntelu	uvowelsign3telu
+uuvowelsigntelu	uuvowelsign3telu
+
+lookup end
+
+
+
+lookup	lowtara-telu	single
+
+parasubscripttelu	rasubscriptlowtelu
+pharasubscripttelu	rasubscriptlowtelu
+varasubscripttelu	rasubscriptlowtelu
+tasubscripttelu	tasubscriptlowtelu
+jasubscripttelu	jasubscriptlowtelu
+ttasubscripttelu	ttasubscriptlowtelu
+ddasubscripttelu	ddasubscriptlowtelu
+dasubscripttelu	dasubscriptlowtelu
+lasubscripttelu	lasubscriptlowtelu
+
+lookup end
+
+
+
+lookup	postbase-telu	ligature
+
+juvoweltelu	jatelu	uvowelsigntelu
+puvoweltelu	patelu	uvowelsigntelu
+phuvoweltelu	phatelu	uvowelsigntelu
+vuvoweltelu	vatelu	uvowelsigntelu
+juuvoweltelu	jatelu	uuvowelsigntelu
+puuvoweltelu	patelu	uuvowelsigntelu
+phuuvoweltelu	phatelu	uuvowelsigntelu
+vuuvoweltelu	vatelu	uuvowelsigntelu
+% new 2017
+dzuvoweltelu	dzatelu	uvowelsigntelu
+dzuuvoweltelu	dzatelu	uuvowelsigntelu
+
+lookup end
+
+
+lookup	subclashes-telu	chained
+
+backtrackclass definition begin
+kasubscripttelu	1
+khasubscripttelu	1
+gasubscripttelu	1
+ghasubscripttelu	1
+ngasubscripttelu	1
+casubscripttelu	1
+chasubscripttelu	1
+jasubscripttelu	1
+jhasubscripttelu	1
+nyasubscripttelu	1
+ttasubscripttelu	1
+tthasubscripttelu	1
+ddasubscripttelu	1
+ddhasubscripttelu	1
+nnasubscripttelu	1
+thasubscripttelu	1
+dasubscripttelu	1
+dhasubscripttelu	1
+nasubscripttelu	1
+pasubscripttelu	1
+phasubscripttelu	1
+basubscripttelu	1
+bhasubscripttelu	1
+masubscripttelu	1
+yasubscripttelu	1
+rasubscripttelu	1
+rrasubscripttelu	1
+lasubscripttelu	1
+llasubscripttelu	1
+vasubscripttelu	1
+shasubscripttelu	1
+ssasubscripttelu	1
+sasubscripttelu	1
+hasubscripttelu	1
+% new 2017
+lllasubscripttelu	1
+rrrasubscripttelu	1
+%
+kasubscript1telu	1
+khasubscript1telu	1
+gasubscript1telu	1
+ghasubscript1telu	1
+ngasubscript1telu	1
+casubscript1telu	1
+chasubscript1telu	1
+jasubscript1telu	1
+jhasubscript1telu	1
+nyasubscript1telu	1
+ttasubscript1telu	1
+tthasubscript1telu	1
+ddasubscript1telu	1
+ddhasubscript1telu	1
+nnasubscript1telu	1
+tasubscript1telu	1
+thasubscript1telu	1
+dasubscript1telu	1
+dhasubscript1telu	1
+nasubscript1telu	1
+pasubscript1telu	1
+phasubscript1telu	1
+basubscript1telu	1
+bhasubscript1telu	1
+masubscript1telu	1
+yasubscript1telu	1
+rrasubscript1telu	1
+lasubscript1telu	1
+llasubscript1telu	1
+vasubscript1telu	1
+shasubscript1telu	1
+ssasubscript1telu	1
+sasubscript1telu	1
+hasubscript1telu	1
+% new 2017
+lllasubscript1telu	1
+rrrasubscript1telu	1
+%
+tailengthmarknarrowtelu	1
+tailengthmarktelu	1
+tailengthmarkwidetelu	1
+%
+ttailengthmarktelu	1
+lailengthmarktelu	1
+tarasubscriptligtelu	1
+hailengthmarktelu	1
+ssailengthmarktelu	1
+dhailengthmarktelu	1
+dailengthmarktelu	1
+thailengthmarktelu	1
+nnailengthmarktelu	1
+ddailengthmarktelu	1
+jailengthmarktelu	1
+ghailengthmarktelu	1
+gailengthmarktelu	1
+khailengthmarktelu	1
+%
+kaivoweltelu	1
+khaivoweltelu	1
+gaivoweltelu	1
+ngaivoweltelu	1
+caivoweltelu	1
+chaivoweltelu	1
+jaivoweltelu	1
+nyaivoweltelu	1
+ttaivoweltelu	1
+tthaivoweltelu	1
+ddaivoweltelu	1
+ddhaivoweltelu	1
+nnaivoweltelu	1
+taivoweltelu	1
+thaivoweltelu	1
+daivoweltelu	1
+dhaivoweltelu	1
+naivoweltelu	1
+paivoweltelu	1
+phaivoweltelu	1
+baivoweltelu	1
+bhaivoweltelu	1
+raivoweltelu	1
+rraivoweltelu	1
+laivoweltelu	1
+llaivoweltelu	1
+vaivoweltelu	1
+shaivoweltelu	1
+ssaivoweltelu	1
+saivoweltelu	1
+haivoweltelu	1
+% new 2017
+lllaivoweltelu	1
+rrraivoweltelu	1
+tsaivoweltelu	1
+dzaivoweltelu	1
+%
+kassatelu	1
+kassahalanttelu	1
+kassaavoweltelu	1
+kassivoweltelu	1
+kassiivoweltelu	1
+kassevoweltelu	1
+kasseevoweltelu	1
+kassaivoweltelu	1
+kassovoweltelu	1
+kassoovoweltelu	1
+kassauvoweltelu	1
+%
+jasubscriptlowtelu	1
+ttasubscriptlowtelu	1
+ddasubscriptlowtelu	1
+dasubscriptlowtelu	1
+lasubscriptlowtelu	1
+%
+ghaivoweltelu	2
+jhaivoweltelu	2
+maivoweltelu	2
+yaivoweltelu	2
+class definition end
+
+class definition begin
+khasubscripttelu	1
+gasubscripttelu	1
+ghasubscripttelu	1
+ngasubscripttelu	1
+jasubscripttelu	1
+jhasubscripttelu	1
+nyasubscripttelu	1
+ttasubscripttelu	1
+tthasubscripttelu	1
+ddasubscripttelu	1
+ddhasubscripttelu	1
+nnasubscripttelu	1
+tasubscripttelu	1
+thasubscripttelu	1
+dasubscripttelu	1
+dhasubscripttelu	1
+rrasubscripttelu	1
+lasubscripttelu	1
+ssasubscripttelu	1
+hasubscripttelu	1
+% new 2017
+lllasubscripttelu	1
+rrrasubscripttelu	1
+% vowels
+rvocalicvowelsigntelu	2
+rrvocalicvowelsigntelu	2
+lvocalicvowelsigntelu	2
+llvocalicvowelsigntelu	2
+% spacing
+kasubscripttelu	2
+casubscripttelu	2
+chasubscripttelu	2
+nasubscripttelu	2
+pasubscripttelu	2
+phasubscripttelu	2
+basubscripttelu	2
+bhasubscripttelu	2
+masubscripttelu	2
+yasubscripttelu	2
+llasubscripttelu	2
+vasubscripttelu	2
+shasubscripttelu	2
+sasubscripttelu	2
+tarasubscriptligtelu	3
+class definition end
+
+
+lookaheadclass definition begin
+# 1	1
+class definition end
+
+
+class-chain	1	1		1,lowsubscript-telu
+class-chain	1	2		1,lowsubscript-telu
+class-chain	1	3		1,splittara-telu
+class-chain	2	1		1,lowsubscript-telu
+class-chain	2	3		1,splittara-telu
+
+lookup end
+
+
+lookup	splittara-telu	multiple
+
+tarasubscriptligtelu	tasubscript1telu	rasubscripttelu
+
+lookup end
+
+
+lookup	subclashestara-telu	chained
+
+backtrackclass definition begin
+karasubscripttelu	1
+kharasubscripttelu	1
+garasubscripttelu	1
+gharasubscripttelu	1
+ngarasubscripttelu	1
+carasubscripttelu	1
+charasubscripttelu	1
+jarasubscripttelu	1
+jharasubscripttelu	1
+nyarasubscripttelu	1
+ttarasubscripttelu	1
+ttharasubscripttelu	1
+ddarasubscripttelu	1
+ddharasubscripttelu	1
+nnarasubscripttelu	1
+tarasubscripttelu	1
+tharasubscripttelu	1
+darasubscripttelu	1
+dharasubscripttelu	1
+narasubscripttelu	1
+parasubscripttelu	1
+pharasubscripttelu	1
+barasubscripttelu	1
+bharasubscripttelu	1
+marasubscripttelu	1
+yarasubscripttelu	1
+rarasubscripttelu	1
+rrarasubscripttelu	1
+larasubscripttelu	1
+llarasubscripttelu	1
+varasubscripttelu	1
+sharasubscripttelu	1
+ssarasubscripttelu	1
+sarasubscripttelu	1
+harasubscripttelu	1
+rasubscriptlowtelu	1
+tasubscripttelu	2
+tasubscriptnarrowtelu	2
+tasubscriptwidetelu	2
+tasubscriptlowtelu	2
+class definition end
+
+class definition begin
+kasubscripttelu	1
+casubscripttelu	1
+chasubscripttelu	1
+nasubscripttelu	1
+pasubscripttelu	1
+phasubscripttelu	1
+basubscripttelu	1
+bhasubscripttelu	1
+masubscripttelu	1
+yasubscripttelu	1
+llasubscripttelu	1
+vasubscripttelu	1
+shasubscripttelu	1
+sasubscripttelu	1
+khasubscripttelu	1
+gasubscripttelu	1
+ghasubscripttelu	1
+ngasubscripttelu	1
+jasubscripttelu	1
+jhasubscripttelu	1
+nyasubscripttelu	1
+ttasubscripttelu	1
+tthasubscripttelu	1
+ddasubscripttelu	1
+ddhasubscripttelu	1
+nnasubscripttelu	1
+thasubscripttelu	1
+dasubscripttelu	1
+dhasubscripttelu	1
+rrasubscripttelu	1
+lasubscripttelu	1
+ssasubscripttelu	1
+hasubscripttelu	1
+% new 2017
+lllasubscripttelu	1
+rrrasubscripttelu	1
+%
+lvocalicvowelsigntelu	1
+llvocalicvowelsigntelu	1
+tasubscripttelu	1
+rvocalicvowelsigntelu	2
+rrvocalicvowelsigntelu	2
+class definition end
+
+lookaheadclass definition begin
+# 1	1
+class definition end
+
+class-chain	1	1		1,lowsubscript-telu
+class-chain	2	1		1,lowsubscript-telu
+class-chain	2	2		1,lowsubscript-telu
+
+lookup end
+
+
+
+lookup	lowsubscript-telu	single
+
+kasubscripttelu	kasubscript1telu
+khasubscripttelu	khasubscript1telu
+gasubscripttelu	gasubscript1telu
+ghasubscripttelu	ghasubscript1telu
+ngasubscripttelu	ngasubscript1telu
+casubscripttelu	casubscript1telu
+chasubscripttelu	chasubscript1telu
+jasubscripttelu	jasubscript1telu
+jhasubscripttelu	jhasubscript1telu
+nyasubscripttelu	nyasubscript1telu
+ttasubscripttelu	ttasubscript1telu
+tthasubscripttelu	tthasubscript1telu
+ddasubscripttelu	ddasubscript1telu
+ddhasubscripttelu	ddhasubscript1telu
+nnasubscripttelu	nnasubscript1telu
+tasubscripttelu	tasubscript1telu
+thasubscripttelu	thasubscript1telu
+dasubscripttelu	dasubscript1telu
+dhasubscripttelu	dhasubscript1telu
+nasubscripttelu	nasubscript1telu
+pasubscripttelu	pasubscript1telu
+phasubscripttelu	phasubscript1telu
+basubscripttelu	basubscript1telu
+bhasubscripttelu	bhasubscript1telu
+masubscripttelu	masubscript1telu
+yasubscripttelu	yasubscript1telu
+rrasubscripttelu	rrasubscript1telu
+lasubscripttelu	lasubscript1telu
+llasubscripttelu	llasubscript1telu
+vasubscripttelu	vasubscript1telu
+shasubscripttelu	shasubscript1telu
+ssasubscripttelu	ssasubscript1telu
+sasubscripttelu	sasubscript1telu
+hasubscripttelu	hasubscript1telu
+rvocalicvowelsigntelu	rvocalicvowelsign1telu
+rrvocalicvowelsigntelu	rrvocalicvowelsign1telu
+lvocalicvowelsigntelu	lvocalicvowelsign1telu
+llvocalicvowelsigntelu	llvocalicvowelsign1telu
+% new 2017
+lllasubscripttelu	lllasubscript1telu
+rrrasubscripttelu	rrrasubscript1telu
+
+lookup end
+
+
+lookup	fixspacingmarkgap-telu	chained
+
+backtrackclass definition begin
+kaavoweltelu	1
+khaavoweltelu	1
+gaavoweltelu	1
+ghaavoweltelu	1
+ngaavoweltelu	1
+caavoweltelu	1
+chaavoweltelu	1
+jaavoweltelu	1
+jhaavoweltelu	1
+nyaavoweltelu	1
+ttaavoweltelu	1
+tthaavoweltelu	1
+ddaavoweltelu	1
+ddhaavoweltelu	1
+nnaavoweltelu	1
+taavoweltelu	1
+thaavoweltelu	1
+daavoweltelu	1
+dhaavoweltelu	1
+naavoweltelu	1
+paavoweltelu	1
+phaavoweltelu	1
+baavoweltelu	1
+bhaavoweltelu	1
+maavoweltelu	1
+yaavoweltelu	1
+raavoweltelu	1
+rraavoweltelu	1
+laavoweltelu	1
+llaavoweltelu	1
+vaavoweltelu	1
+shaavoweltelu	1
+ssaavoweltelu	1
+saavoweltelu	1
+haavoweltelu	1
+% new 2017
+lllaavoweltelu	1
+rrraavoweltelu	1
+tsaavoweltelu	1
+dzaavoweltelu	1
+%
+hivoweltelu	1
+yiivoweltelu	1
+hiivoweltelu	1
+juvoweltelu	1
+juuvoweltelu	1
+puuvoweltelu	1
+phuuvoweltelu	1
+vuuvoweltelu	1
+% new 2017
+dzuvoweltelu	1
+dzuuvoweltelu	1
+%
+hevoweltelu	1
+heevoweltelu	1
+haivoweltelu	1
+jhoovoweltelu	1
+moovoweltelu	1
+yoovoweltelu	1
+povoweltelu	1
+phovoweltelu	1
+ssovoweltelu	1
+sovoweltelu	1
+poovoweltelu	1
+phoovoweltelu	1
+ssoovoweltelu	1
+soovoweltelu	1
+pauvoweltelu	1
+phauvoweltelu	1
+ssauvoweltelu	1
+sauvoweltelu	1
+kovoweltelu	1
+khovoweltelu	1
+govoweltelu	1
+ngovoweltelu	1
+covoweltelu	1
+chovoweltelu	1
+jovoweltelu	1
+nyovoweltelu	1
+ttovoweltelu	1
+tthovoweltelu	1
+ddovoweltelu	1
+ddhovoweltelu	1
+nnovoweltelu	1
+tovoweltelu	1
+thovoweltelu	1
+dovoweltelu	1
+dhovoweltelu	1
+novoweltelu	1
+bovoweltelu	1
+bhovoweltelu	1
+rovoweltelu	1
+rrovoweltelu	1
+lovoweltelu	1
+llovoweltelu	1
+vovoweltelu	1
+shovoweltelu	1
+hovoweltelu	1
+% new 2017
+lllovoweltelu	1
+rrrovoweltelu	1
+tsovoweltelu	1
+dzovoweltelu	1
+%
+koovoweltelu	1
+khoovoweltelu	1
+goovoweltelu	1
+ngoovoweltelu	1
+coovoweltelu	1
+choovoweltelu	1
+joovoweltelu	1
+nyoovoweltelu	1
+ttoovoweltelu	1
+tthoovoweltelu	1
+ddoovoweltelu	1
+ddhoovoweltelu	1
+nnoovoweltelu	1
+toovoweltelu	1
+thoovoweltelu	1
+doovoweltelu	1
+dhoovoweltelu	1
+noovoweltelu	1
+boovoweltelu	1
+bhoovoweltelu	1
+roovoweltelu	1
+rroovoweltelu	1
+loovoweltelu	1
+lloovoweltelu	1
+voovoweltelu	1
+shoovoweltelu	1
+hoovoweltelu	1
+% new 2017
+llloovoweltelu	1
+rrroovoweltelu	1
+tsoovoweltelu	1
+dzoovoweltelu	1
+%
+kauvoweltelu	1
+khauvoweltelu	1
+gauvoweltelu	1
+ghauvoweltelu	1
+ngauvoweltelu	1
+cauvoweltelu	1
+chauvoweltelu	1
+jauvoweltelu	1
+jhauvoweltelu	1
+nyauvoweltelu	1
+ttauvoweltelu	1
+tthauvoweltelu	1
+ddauvoweltelu	1
+ddhauvoweltelu	1
+nnauvoweltelu	1
+tauvoweltelu	1
+thauvoweltelu	1
+dauvoweltelu	1
+dhauvoweltelu	1
+nauvoweltelu	1
+bauvoweltelu	1
+bhauvoweltelu	1
+mauvoweltelu	1
+yauvoweltelu	1
+rauvoweltelu	1
+rrauvoweltelu	1
+lauvoweltelu	1
+llauvoweltelu	1
+vauvoweltelu	1
+shauvoweltelu	1
+hauvoweltelu	1
+% new 2017
+lllauvoweltelu	1
+rrrauvoweltelu	1
+tsauvoweltelu	1
+dzauvoweltelu	1
+%
+uvowelsigntelu	1
+uuvowelsigntelu	1
+uvowelsign1telu	1
+uuvowelsign1telu	1
+uvowelsign2telu	1
+uuvowelsign2telu	1
+uvowelsign3telu	1
+uuvowelsign3telu	1
+kasubscripttelu	2
+casubscripttelu	2
+chasubscripttelu	2
+nasubscripttelu	2
+pasubscripttelu	2
+phasubscripttelu	2
+basubscripttelu	2
+bhasubscripttelu	2
+masubscripttelu	2
+yasubscripttelu	2
+llasubscripttelu	2
+vasubscripttelu	2
+shasubscripttelu	2
+sasubscripttelu	2
+kassaavoweltelu	3
+kassovoweltelu	3
+kassoovoweltelu	3
+kassauvoweltelu	3
+class definition end
+
+class definition begin
+kasubscript1telu	1
+casubscript1telu	1
+chasubscript1telu	1
+nasubscript1telu	1
+pasubscript1telu	1
+phasubscript1telu	1
+basubscript1telu	1
+bhasubscript1telu	1
+masubscript1telu	1
+yasubscript1telu	1
+llasubscript1telu	1
+vasubscript1telu	1
+shasubscript1telu	1
+sasubscript1telu	1
+class definition end
+
+lookaheadclass definition begin
+# 1	1
+class definition end
+
+class-chain	0,1	1		1,restoresubscript-telu
+class-chain	3	1		1,restoresubscript-telu
+
+lookup end
+
+
+
+lookup	restoresubscript-telu	single
+
+kasubscript1telu	kasubscripttelu
+casubscript1telu	casubscripttelu
+chasubscript1telu	chasubscripttelu
+nasubscript1telu	nasubscripttelu
+pasubscript1telu	pasubscripttelu
+phasubscript1telu	phasubscripttelu
+basubscript1telu	basubscripttelu
+bhasubscript1telu	bhasubscripttelu
+masubscript1telu	masubscripttelu
+yasubscript1telu	yasubscripttelu
+llasubscript1telu	llasubscripttelu
+vasubscript1telu	vasubscripttelu
+shasubscript1telu	shasubscripttelu
+sasubscript1telu	sasubscripttelu
+
+lookup end
+
+
+lookup	fixKassaNNa-telu	context
+
+class definition begin
+kassatelu	1
+kassahalanttelu	1
+kassaavoweltelu	1
+kassivoweltelu	1
+kassiivoweltelu	1
+kassevoweltelu	1
+kasseevoweltelu	1
+kassovoweltelu	1
+kassoovoweltelu	1
+kassauvoweltelu	1
+nnasubscript1telu	2
+class definition end
+
+class	1,2	1,splitkassa-telu	2,ssannasub-telu
+
+lookup end
+
+
+lookup	kssnnu-telu	context
+
+glyph	kassatelu,uvowelsigntelu,nnasubscripttelu	3,ssannasub-telu	1,splitkassa-telu
+
+lookup end
+
+lookup	splitkassa-telu	single
+
+kassatelu	katelu
+kassahalanttelu	kahalanttelu
+kassaavoweltelu	kaavoweltelu
+kassivoweltelu	kivoweltelu
+kassiivoweltelu	kiivoweltelu
+kassevoweltelu	kevoweltelu
+kasseevoweltelu	keevoweltelu
+kassovoweltelu	kovoweltelu
+kassoovoweltelu	koovoweltelu
+kassauvoweltelu	kauvoweltelu
+
+lookup end
+
+
+
+lookup	ssannasub-telu	single
+
+nnasubscripttelu	ssannasubscripttelu
+nnasubscript1telu	ssannasubscripttelu
+
+lookup end
+
+
+
+% swapping code
+
+
+lookup	vedic-telu	ligature
+
+candrabindu_0951telu	uni0C00	uni0951
+candrabindu_0952telu	uni0C00	uni0952
+candrabindu_1CDAtelu	uni0C00	uni1CDA
+
+lookup end
+
+
+
+lookup	reorder1-telu	context
+
+glyph	candrabindutelu,uni0C00	1,to0C00-telu	2,toCandrabindu-telu
+glyph	candrabindutelu,uni0951	1,to0951-telu	2,toCandrabindu-telu
+glyph	candrabindutelu,uni0952	1,to0952-telu	2,toCandrabindu-telu
+glyph	candrabindutelu,uni1CDA	1,to1CDA-telu	2,toCandrabindu-telu
+glyph	candrabindutelu,candrabindu_0951telu	1,toCandrabindu_0951-telu	2,toCandrabindu-telu
+glyph	candrabindutelu,candrabindu_0952telu	1,toCandrabindu_0952-telu	2,toCandrabindu-telu
+glyph	candrabindutelu,candrabindu_1CDAtelu	1,toCandrabindu_1CDA-telu	2,toCandrabindu-telu
+glyph	candrabindutelu,uni0C04	1,to0C04-telu	2,toCandrabindu-telu
+
+glyph	anusvaratelu,uni0C00	1,to0C00-telu	2,toAnusvara-telu
+glyph	anusvaratelu,uni0951	1,to0951-telu	2,toAnusvara-telu
+glyph	anusvaratelu,uni0952	1,to0952-telu	2,toAnusvara-telu
+glyph	anusvaratelu,uni1CDA	1,to1CDA-telu	2,toAnusvara-telu
+glyph	anusvaratelu,candrabindu_0951telu	1,toCandrabindu_0951-telu	2,toAnusvara-telu
+glyph	anusvaratelu,candrabindu_0952telu	1,toCandrabindu_0952-telu	2,toAnusvara-telu
+glyph	anusvaratelu,candrabindu_1CDAtelu	1,toCandrabindu_1CDA-telu	2,toAnusvara-telu
+glyph	anusvaratelu,uni0C04	1,to0C04-telu	2,toAnusvara-telu
+
+glyph	visargatelu,uni0C00	1,to0C00-telu	2,toVisarga-telu
+glyph	visargatelu,uni0951	1,to0951-telu	2,toVisarga-telu
+glyph	visargatelu,uni0952	1,to0952-telu	2,toVisarga-telu
+glyph	visargatelu,uni1CDA	1,to1CDA-telu	2,toVisarga-telu
+glyph	visargatelu,candrabindu_0951telu	1,toCandrabindu_0951-telu	2,toVisarga-telu
+glyph	visargatelu,candrabindu_0952telu	1,toCandrabindu_0952-telu	2,toVisarga-telu
+glyph	visargatelu,candrabindu_1CDAtelu	1,toCandrabindu_1CDA-telu	2,toVisarga-telu
+glyph	visargatelu,uni0C04	1,to0C04-telu	2,toVisarga-telu
+
+lookup end
+
+
+
+lookup	reorder2-telu	context
+
+glyph	rephtelu,uni0C00	1,to0C00-telu	2,toReph-telu
+glyph	rephtelu,uni0951	1,to0951-telu	2,toReph-telu
+glyph	rephtelu,uni0952	1,to0952-telu	2,toReph-telu
+glyph	rephtelu,uni1CDA	1,to1CDA-telu	2,toReph-telu
+glyph	rephtelu,candrabindu_0951telu	1,toCandrabindu_0951-telu	2,toReph-telu
+glyph	rephtelu,candrabindu_0952telu	1,toCandrabindu_0952-telu	2,toReph-telu
+glyph	rephtelu,candrabindu_1CDAtelu	1,toCandrabindu_1CDA-telu	2,toReph-telu
+glyph	rephtelu,uni0C04	1,to0C04-telu	2,toReph-telu
+
+lookup end
+
+
+
+lookup	reorder3-telu	context
+
+glyph	rasubscripttelu,uni0C00	1,to0C00-telu	2,toRasubscript-telu
+glyph	rasubscripttelu,uni0951	1,to0951-telu	2,toRasubscript-telu
+glyph	rasubscripttelu,uni0952	1,to0952-telu	2,toRasubscript-telu
+glyph	rasubscripttelu,uni1CDA	1,to1CDA-telu	2,toRasubscript-telu
+glyph	rasubscripttelu,candrabindu_0951telu	1,toCandrabindu_0951-telu	2,toRasubscript-telu
+glyph	rasubscripttelu,candrabindu_0952telu	1,toCandrabindu_0952-telu	2,toRasubscript-telu
+glyph	rasubscripttelu,candrabindu_1CDAtelu	1,toCandrabindu_1CDA-telu	2,toRasubscript-telu
+glyph	rasubscripttelu,uni0C04	1,to0C04-telu	2,toRasubscript-telu
+
+lookup end
+
+
+lookup	to0C00-telu	single
+
+candrabindutelu	uni0C00
+anusvaratelu	uni0C00
+visargatelu	uni0C00
+rephtelu	uni0C00
+rasubscripttelu	uni0C00
+
+lookup end
+
+
+lookup	to0951-telu	single
+
+candrabindutelu	uni0951
+anusvaratelu	uni0951
+visargatelu	uni0951
+rephtelu	uni0951
+rasubscripttelu	uni0951
+
+lookup end
+
+
+lookup	to0952-telu	single
+
+candrabindutelu	uni0952
+anusvaratelu	uni0952
+visargatelu	uni0952
+rephtelu	uni0952
+rasubscripttelu	uni0952
+
+lookup end
+
+
+lookup	to1CDA-telu	single
+
+candrabindutelu	uni1CDA
+anusvaratelu	uni1CDA
+visargatelu	uni1CDA
+rephtelu	uni1CDA
+rasubscripttelu	uni1CDA
+
+lookup end
+
+
+lookup	toCandrabindu_0951-telu	single
+
+candrabindutelu	candrabindu_0951telu
+anusvaratelu	candrabindu_0951telu
+visargatelu	candrabindu_0951telu
+rephtelu	candrabindu_0951telu
+rasubscripttelu	candrabindu_0951telu
+
+lookup end
+
+
+lookup	toCandrabindu_0952-telu	single
+
+candrabindutelu	candrabindu_0952telu
+anusvaratelu	candrabindu_0952telu
+visargatelu	candrabindu_0952telu
+rephtelu	candrabindu_0952telu
+rasubscripttelu	candrabindu_0952telu
+
+lookup end
+
+
+lookup	toCandrabindu_1CDA-telu	single
+
+candrabindutelu	candrabindu_1CDAtelu
+anusvaratelu	candrabindu_1CDAtelu
+visargatelu	candrabindu_1CDAtelu
+rephtelu	candrabindu_1CDAtelu
+rasubscripttelu	candrabindu_1CDAtelu
+
+lookup end
+
+
+lookup	to0C04-telu	single
+
+candrabindutelu	uni0C04
+anusvaratelu	uni0C04
+visargatelu	uni0C04
+rephtelu	uni0C04
+rasubscripttelu	uni0C04
+
+lookup end
+
+
+
+lookup	toCandrabindu-telu	single
+
+uni0C00	candrabindutelu
+uni0951	candrabindutelu
+uni0952	candrabindutelu
+uni1CDA	candrabindutelu
+candrabindu_0951telu	candrabindutelu
+candrabindu_0952telu	candrabindutelu
+uni0C04	candrabindutelu
+
+lookup end
+
+
+lookup	toAnusvara-telu	single
+
+uni0C00	anusvaratelu
+uni0951	anusvaratelu
+uni0952	anusvaratelu
+uni1CDA	anusvaratelu
+candrabindu_0951telu	anusvaratelu
+candrabindu_0952telu	anusvaratelu
+uni0C04	anusvaratelu
+
+lookup end
+
+
+lookup	toVisarga-telu	single
+
+uni0C00	visargatelu
+uni0951	visargatelu
+uni0952	visargatelu
+uni1CDA	visargatelu
+candrabindu_0951telu	visargatelu
+candrabindu_0952telu	visargatelu
+uni0C04	visargatelu
+
+lookup end
+
+
+lookup	toReph-telu	single
+
+uni0C00	rephtelu
+uni0951	rephtelu
+uni0952	rephtelu
+uni1CDA	rephtelu
+candrabindu_0951telu	rephtelu
+candrabindu_0952telu	rephtelu
+uni0C04	rephtelu
+
+lookup end
+
+
+lookup	toRasubscript-telu	single
+
+uni0C00	rasubscripttelu
+uni0951	rasubscripttelu
+uni0952	rasubscripttelu
+uni1CDA	rasubscripttelu
+candrabindu_0951telu	rasubscripttelu
+candrabindu_0952telu	rasubscripttelu
+uni0C04	rasubscripttelu
+
+lookup end
+
+
+lookup	splitVedic-telu	multiple
+
+candrabindu_0952telu	uni0C00	uni0952
+
+lookup end
+
+
+
+
+lookup	halant-telu	ligature
+
+ignoreLigatures	yes
+ignoreMarks	yes
+
+kahalanttelu	katelu	viramatelu
+khahalanttelu	khatelu	viramatelu
+gahalanttelu	gatelu	viramatelu
+ghahalanttelu	ghatelu	viramatelu
+ngahalanttelu	ngatelu	viramatelu
+cahalanttelu	catelu	viramatelu
+chahalanttelu	chatelu	viramatelu
+jahalanttelu	jatelu	viramatelu
+jhahalanttelu	jhatelu	viramatelu
+nyahalanttelu	nyatelu	viramatelu
+ttahalanttelu	ttatelu	viramatelu
+tthahalanttelu	tthatelu	viramatelu
+ddahalanttelu	ddatelu	viramatelu
+ddhahalanttelu	ddhatelu	viramatelu
+nnahalanttelu	nnatelu	viramatelu
+tahalanttelu	tatelu	viramatelu
+thahalanttelu	thatelu	viramatelu
+dahalanttelu	datelu	viramatelu
+dhahalanttelu	dhatelu	viramatelu
+nahalanttelu	natelu	viramatelu
+pahalanttelu	patelu	viramatelu
+phahalanttelu	phatelu	viramatelu
+bahalanttelu	batelu	viramatelu
+bhahalanttelu	bhatelu	viramatelu
+mahalanttelu	matelu	viramatelu
+yahalanttelu	yatelu	viramatelu
+rahalanttelu	ratelu	viramatelu
+rrahalanttelu	rratelu	viramatelu
+lahalanttelu	latelu	viramatelu
+llahalanttelu	llatelu	viramatelu
+vahalanttelu	vatelu	viramatelu
+shahalanttelu	shatelu	viramatelu
+ssahalanttelu	ssatelu	viramatelu
+sahalanttelu	satelu	viramatelu
+hahalanttelu	hatelu	viramatelu
+kassahalanttelu	kassatelu	viramatelu
+% new 2017
+lllahalanttelu	lllatelu	viramatelu
+rrrahalanttelu	rrratelu	viramatelu
+tsahalanttelu	tsatelu	viramatelu
+dzahalanttelu	dzatelu	viramatelu
+
+lookup end
+
+
+% ---------------------------------------------------
+
+
+lookup	selectra-telu	chained
+
+ignoreMarks	yes
+
+glyph	katelu	rasubscripttelu		1,karasubscript-telu
+glyph	khatelu	rasubscripttelu		1,kharasubscript-telu
+glyph	gatelu	rasubscripttelu		1,garasubscript-telu
+glyph	ghatelu	rasubscripttelu		1,gharasubscript-telu
+glyph	ngatelu	rasubscripttelu		1,ngarasubscript-telu
+glyph	catelu	rasubscripttelu		1,carasubscript-telu
+glyph	chatelu	rasubscripttelu		1,charasubscript-telu
+glyph	jatelu	rasubscripttelu		1,jarasubscript-telu
+glyph	jhatelu	rasubscripttelu		1,jharasubscript-telu
+glyph	nyatelu	rasubscripttelu		1,nyarasubscript-telu
+glyph	ttatelu	rasubscripttelu		1,ttarasubscript-telu
+glyph	tthatelu	rasubscripttelu		1,ttharasubscript-telu
+glyph	ddatelu	rasubscripttelu		1,ddarasubscript-telu
+glyph	ddhatelu	rasubscripttelu		1,ddharasubscript-telu
+glyph	nnatelu	rasubscripttelu		1,nnarasubscript-telu
+glyph	tatelu	rasubscripttelu		1,tarasubscript-telu
+glyph	thatelu	rasubscripttelu		1,tharasubscript-telu
+glyph	datelu	rasubscripttelu		1,darasubscript-telu
+glyph	dhatelu	rasubscripttelu		1,dharasubscript-telu
+glyph	natelu	rasubscripttelu		1,narasubscript-telu
+glyph	patelu	rasubscripttelu		1,parasubscript-telu
+glyph	phatelu	rasubscripttelu		1,pharasubscript-telu
+glyph	batelu	rasubscripttelu		1,barasubscript-telu
+glyph	bhatelu	rasubscripttelu		1,bharasubscript-telu
+glyph	matelu	rasubscripttelu		1,marasubscript-telu
+glyph	yatelu	rasubscripttelu		1,yarasubscript-telu
+glyph	ratelu	rasubscripttelu		1,rarasubscript-telu
+glyph	rratelu	rasubscripttelu		1,rrarasubscript-telu
+glyph	latelu	rasubscripttelu		1,larasubscript-telu
+glyph	llatelu	rasubscripttelu		1,llarasubscript-telu
+glyph	vatelu	rasubscripttelu		1,varasubscript-telu
+glyph	shatelu	rasubscripttelu		1,sharasubscript-telu
+glyph	ssatelu	rasubscripttelu		1,ssarasubscript-telu
+glyph	satelu	rasubscripttelu		1,sarasubscript-telu
+glyph	hatelu	rasubscripttelu		1,harasubscript-telu
+% new 2017
+glyph	lllatelu	rasubscripttelu		1,lllarasubscript-telu
+glyph	rrratelu	rasubscripttelu		1,rrrarasubscript-telu
+glyph	tsatelu	rasubscripttelu		1,carasubscript-telu
+glyph	dzatelu	rasubscripttelu		1,jarasubscript-telu
+
+lookup end
+
+
+
+lookup	karasubscript-telu	single
+
+rasubscripttelu	karasubscripttelu
+
+lookup end
+
+
+lookup	kharasubscript-telu	single
+
+rasubscripttelu	kharasubscripttelu
+
+lookup end
+
+
+lookup	garasubscript-telu	single
+
+rasubscripttelu	garasubscripttelu
+
+lookup end
+
+
+lookup	gharasubscript-telu	single
+
+rasubscripttelu	gharasubscripttelu
+
+lookup end
+
+
+lookup	ngarasubscript-telu	single
+
+rasubscripttelu	ngarasubscripttelu
+
+lookup end
+
+
+lookup	carasubscript-telu	single
+
+rasubscripttelu	carasubscripttelu
+
+lookup end
+
+
+lookup	charasubscript-telu	single
+
+rasubscripttelu	charasubscripttelu
+
+lookup end
+
+
+lookup	jarasubscript-telu	single
+
+rasubscripttelu	jarasubscripttelu
+
+lookup end
+
+
+lookup	jharasubscript-telu	single
+
+rasubscripttelu	jharasubscripttelu
+
+lookup end
+
+
+lookup	nyarasubscript-telu	single
+
+rasubscripttelu	nyarasubscripttelu
+
+lookup end
+
+
+lookup	ttarasubscript-telu	single
+
+rasubscripttelu	ttarasubscripttelu
+
+lookup end
+
+
+lookup	ttharasubscript-telu	single
+
+rasubscripttelu	ttharasubscripttelu
+
+lookup end
+
+
+lookup	ddarasubscript-telu	single
+
+rasubscripttelu	ddarasubscripttelu
+
+lookup end
+
+
+lookup	ddharasubscript-telu	single
+
+rasubscripttelu	ddharasubscripttelu
+
+lookup end
+
+
+lookup	nnarasubscript-telu	single
+
+rasubscripttelu	nnarasubscripttelu
+
+lookup end
+
+
+lookup	tarasubscript-telu	single
+
+rasubscripttelu	tarasubscripttelu
+
+lookup end
+
+
+lookup	tharasubscript-telu	single
+
+rasubscripttelu	tharasubscripttelu
+
+lookup end
+
+
+lookup	darasubscript-telu	single
+
+rasubscripttelu	darasubscripttelu
+
+lookup end
+
+
+lookup	dharasubscript-telu	single
+
+rasubscripttelu	dharasubscripttelu
+
+lookup end
+
+
+lookup	narasubscript-telu	single
+
+rasubscripttelu	narasubscripttelu
+
+lookup end
+
+
+lookup	parasubscript-telu	single
+
+rasubscripttelu	parasubscripttelu
+
+lookup end
+
+
+lookup	pharasubscript-telu	single
+
+rasubscripttelu	pharasubscripttelu
+
+lookup end
+
+
+lookup	barasubscript-telu	single
+
+rasubscripttelu	barasubscripttelu
+
+lookup end
+
+
+lookup	bharasubscript-telu	single
+
+rasubscripttelu	bharasubscripttelu
+
+lookup end
+
+
+lookup	marasubscript-telu	single
+
+rasubscripttelu	marasubscripttelu
+
+lookup end
+
+
+lookup	yarasubscript-telu	single
+
+rasubscripttelu	yarasubscripttelu
+
+lookup end
+
+
+lookup	rarasubscript-telu	single
+
+rasubscripttelu	rarasubscripttelu
+
+lookup end
+
+
+lookup	rrarasubscript-telu	single
+
+rasubscripttelu	rrarasubscripttelu
+
+lookup end
+
+
+lookup	larasubscript-telu	single
+
+rasubscripttelu	larasubscripttelu
+
+lookup end
+
+
+lookup	llarasubscript-telu	single
+
+rasubscripttelu	llarasubscripttelu
+
+lookup end
+
+
+lookup	varasubscript-telu	single
+
+rasubscripttelu	varasubscripttelu
+
+lookup end
+
+
+lookup	sharasubscript-telu	single
+
+rasubscripttelu	sharasubscripttelu
+
+lookup end
+
+
+lookup	ssarasubscript-telu	single
+
+rasubscripttelu	ssarasubscripttelu
+
+lookup end
+
+
+lookup	sarasubscript-telu	single
+
+rasubscripttelu	sarasubscripttelu
+
+lookup end
+
+
+lookup	harasubscript-telu	single
+
+rasubscripttelu	harasubscripttelu
+
+lookup end
+
+
+% new 2017
+
+lookup	rrrarasubscript-telu	single
+
+rasubscripttelu	rrrarasubscripttelu
+
+lookup end
+
+
+lookup	lllarasubscript-telu	single
+
+rasubscripttelu	lllarasubscripttelu
+
+lookup end
+
