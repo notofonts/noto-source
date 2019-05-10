@@ -26,7 +26,9 @@ other build options exist:
 
 ```bash
 $ ./build src/NotoSans-MM.glyphs  # build from a single source
+$ ./build src/NotoSansBrahmi/NotoSansBrahmi.plist  # build from a single source
 $ ./build variable src/NotoSans-MM.glyphs  # build a single variable font
+$ ./build variable src/NotoSansBrahmi/NotoSansBrahmi.plist  # build a single variable font
 $ ./build all variable  # build all variable fonts
 $ ./build all force
 $ ./build all variable force  # continue building even when some sources fail
