@@ -25,7 +25,7 @@ $ ./build all
 other build options exist:
 
 ```bash
-$ ./build src/NotoSans-MM.glyphs  # build from a single source
+$ ./build src/NotoSansOlChiki.glyphs  # build from a single source
 $               # if a font has both .glyphs and .plist files
 $ ./build src/NotoSansBrahmi/NotoSansBrahmi.plist  # build from a single source
 $ ./build variable src/NotoSans-MM.glyphs  # build a single variable font
