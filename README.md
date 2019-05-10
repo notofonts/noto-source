@@ -9,12 +9,16 @@ The designs and glyph sets might not final.
 
 ## Building
 
-To build everything from source:
+To obtain all sources and build tools:
 
 ```
 $ git clone --recursive https://github.com/googlei18n/noto-source.git
 $ cd noto-source
 $ ./build setup
+```
+To build everything from source:
+
+```
 $ ./build all
 ```
 
