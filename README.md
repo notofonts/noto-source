@@ -45,7 +45,7 @@ Build scripts are under the [Apache license, version 2.0](LICENSE).
 
 ## Contributing
 
-To contribute to this project, please read [CONTRIBUTING](CONTRIBUTING.md) 
+To contribute to this project, please read [CONTRIBUTING](CONTRIBUTING.md) and [FONT_CONTRIBUTION](FONT_CONTRIBUTION.md)
 
 ## News
 
