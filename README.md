@@ -4,9 +4,8 @@
 
 Source files for generating Noto fonts.
 
-Note that as of February 2016, no sources are available for the released Noto fonts in [github.com/googlei18n/noto-fonts](https://github.com/googlei18n/noto-fonts). 
-The files in this repository are work-in-progress for future versions of the fonts that have not been released yet. 
-The designs and glyph sets are not final.
+The files in this repository might be work-in-progress for future versions of the fonts that have not been released yet. 
+The designs and glyph sets might not final.
 
 ## Building
 
@@ -22,8 +21,8 @@ $ ./build all
 other build options exist:
 
 ```bash
-$ ./build src/NotoSansUIRoman-MM.glyphs  # build from a single source
-$ ./build variable src/NotoSansUIRoman-MM.glyphs  # build a single variable font
+$ ./build src/NotoSans-MM.glyphs  # build from a single source
+$ ./build variable src/NotoSans-MM.glyphs  # build a single variable font
 $ ./build all variable  # build all variable fonts
 $ ./build all force
 $ ./build all variable force  # continue building even when some sources fail
@@ -52,4 +51,3 @@ To contribute to this project, please read [CONTRIBUTING](CONTRIBUTING.md)
 
 * 2015-12-07: first release, covering Noto Sans UI {Italic, Mono, Roman}, Noto Sans Display {Italic, Roman}, Noto {Sans, Serif} {Armenian, Georgian}.
 
-* 2019-03-10: added master_ufo directory containing zip files of UFO files corresponding to the sources in src; this is just an experiment, please send feedback to let us know what you think. https://github.com/marekjez86 tested Music and Nastaliq; they looked OK. If you see problems please file issues.
