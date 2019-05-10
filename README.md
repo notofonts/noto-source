@@ -26,10 +26,10 @@ other build options exist:
 
 ```bash
 $ ./build src/NotoSans-MM.glyphs  # build from a single source
-$               # if a a font has both .glyphs and .plist files
+$               # if a font has both .glyphs and .plist files
 $ ./build src/NotoSansBrahmi/NotoSansBrahmi.plist  # build from a single source
 $ ./build variable src/NotoSans-MM.glyphs  # build a single variable font
-$               # if a a font has both .glyphs and .plist files
+$               # if a font has both .glyphs and .plist files
 $ ./build variable src/NotoSansBrahmi/NotoSansBrahmi.plist  # build a single variable font
 $ ./build all variable  # build all variable fonts
 $ ./build all force
