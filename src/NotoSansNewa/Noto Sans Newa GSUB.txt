@@ -1,42 +1,401 @@
-FontDame GSUB table
+ FontDame GSUB table
 
+% For Indic scripts, the following features should be applied in order: ccmp, nukt, akhn, rphf, rkrf, pref, blwf, half, pstf, cjct. 
+% aalt,abvf,abvs,blws,clig,
+% calt -This is a good general purpose tag for contextual alternates.
+
+% uniA732.alt	Aa_dv Glyphs App RenameScript upon opening in PFC changed AA.alt to uniA732.alt?????
+% 0	pref	I_vowel
+
+% Mark-attachment classes
+% top: markattachmenttype	1
+% bottom: markattachmenttype	2
+% other: 3
+
+
+% Newa GSUB
+%4	abvs	GiShi, RephaCombis, I_vowels, MeasureTops, AddShims, PostVowelLigs, FineTuneVowelWidths
+
+feature table begin
+0	akhn	RaInitialNotRepha, Conjuncts, ConjunctsAlt, BaseLigs, BottomAltPosition
+1	ccmp	LigsAndConjuncts
+2	rphf	RaInitial
+3	pref	ContextualVowels
+4	half	HalfForm
+5	abvs	GiShi, RephaCombis, I_vowels, MeasureTops, AddShims, Chained_Dist_Ka.cd, Chained_Dist_Nga.cd, Chained_Dist_Cha.cd, Chained_Dist_Ja.cd, Chained_Dist_Nya.cd, Chained_Dist_Nya_stem.cd, Chained_Dist_Ddha.cd, Chained_Dist_Pha.cd, Chained_Dist_Nga.cd2, Chained_Dist_Cha.cd2, Chained_Dist_Nya_stem.cd2, Chained_Dist_Tta.cd, Chained_Dist_Dda.cd, Chained_Dist_Ddha.cd2, Chained_Dist_Da.cd, Chained_Dist_Pha.cd2, Chained_Dist_Bha.cd, Chained_Dist_Tha_post, Chained_Dist_Nna_post, PostVowelLigs, FineTuneVowelWidths, TopVowelsRightAligned
+6	blws	BtmMarksAlt, RaInitialConjuncts, AltDhaChain
+7	calt	NoHd, AltCandrabindu
+feature table end
 
 script table begin
-newa	default		0, 1, 2, 3, 4, 5, 6
+newa	default		0,1,2,3,4,5,6,7
 script table end
 
 
-feature table begin
-0	abvs	18, 20, 34, 22, 24
-1	blws	21
-2	calt	25, 47
-3	ccmp	0, 1, 9, 16
-4	half	49
-5	pref	17
-6	rphf	10
+lookup	 RaInitialNotRepha	chained
 
-feature table end
 
-lookup	0	chained
+class definition begin
+Ra	1
+Virama	2
+ZWJ	3
+Ra.half	4
 
-RightToLeft	no
-IgnoreBaseGlyphs	no
-IgnoreLigatures	no
-IgnoreMarks	no
+A_iv	5
+AA_iv	5
+I_iv	5
+II_iv	5
+U_iv	5
+UU_iv	5
+R_iv	5
+Rr_iv	5
+E_iv	5
+AI_iv	5
+O_iv	5
+AU_iv	5
+
+Ka	5
+Kha	5
+Ga	5
+Gha	5
+Nga	5
+Ngha	5
+Ca	5
+Cha	5
+Ja	5
+Jha	5
+Nyha	5
+Tta	5
+Dda	5
+Ddha	5
+Nna	5
+Ta	5
+Tha	5
+Da	5
+Dha	5
+Na	5
+Nha	5
+Pa	5
+Pha	5
+Ba	5
+Bha	5
+Ma	5
+Mha	5
+Ya	5
+%Ra	5
+Rha	5
+La	5
+Lha	5
+Wa	5
+Sha	5
+Ssa	5
+Sa	5
+Ha	5
+
+Ka.icd	5
+Kha.icd	5
+Ga.icd	5
+Gha.icd	5
+Nga.icd	5
+Nga.icd.rt	5
+Ca.icd	5
+Cha.icd	5
+Ja.icd	5
+Jha.icd	5
+Tta.icd	5
+Dda.icd	5
+Dda.icd.rt	5
+Ddha.icd.rt	5
+Ddha.icd	5
+Nna.icd	5
+Ta.icd	5
+Tha.icd	5
+Da.icd	5
+Da.icd.rt	5
+Dha.icd	5
+Na.icd	5
+Pa.icd	5
+Pha.icd	5
+Ba.icd	5
+Bha.icd	5
+Ma.icd	5
+Ya.icd	5
+La.icd	5
+Va.icd	5
+Sha.icd	5
+Ssa.icd	5
+Sa.icd	5
+Ha.icd	5
+Ka.icd.alt	5
+Ja.icd.alt	5
+Ha.icd.alt	5
+Ka.icd.wide	5
+Ja.icd.wide	5
+Ka.icd.nohd	5
+Kha.icd.nohd	5
+Gha.icd.nohd	5
+Nga.icd.nohd	5
+Nga.icd.nohd.rt	5
+Ca.icd.nohd	5
+Cha.icd.nohd	5
+Ja.icd.nohd	5
+Jha.icd.nohd	5
+Tta.icd.nohd	5
+Dda.icd.nohd	5
+Dda.icd.nohd.rt	5
+Ddha.icd.nohd.rt	5
+Ddha.icd.nohd	5
+Ta.icd.nohd	5
+Da.icd.nohd	5
+Da.icd.nohd.rt	5
+Na.icd.nohd	5
+Pa.icd.nohd	5
+Pha.icd.nohd	5
+Bha.icd.nohd	5
+Ba.icd.nohd	5
+Ma.icd.nohd	5
+Ya.icd.nohd	5
+La.icd.nohd	5
+Va.icd.nohd	5
+Ssa.icd.nohd	5
+Sa.icd.nohd	5
+Ha.icd.nohd	5
+Ka.icd.alt.nohd	5
+Ja.icd.alt.nohd	5
+Ha.icd.alt.nohd	5
+Ka.icd.wide.nohd	5
+Ja.icd.wide.nohd	5
+
+Ha_Nga	5
+Ha_Nya	5
+Ha_Nna	5
+Ha_Na	5
+Ha_Ma	5
+Ha_Ra	5
+Ha_La	5
+Ha_Kha	5
+Ha_Gha	5
+Ha_Jha	5
+Ha_Ta	5
+Ha_Pa	5
+Ha_Sa	5
+Ha_Ssa	5
+
+
+%Nga_Ha	5
+%Nya_Ha	5
+%Nna_Ha	5
+%Na_Ha	5
+%Ma_Ha	5
+%Ra_Ha	5
+%La_Ha	5
+
+Ja_Nya	5
+Ka_Nya	5
+
+Ka_Ssa	5
+
+% ADD OTHER CONJUNCTS
+Gphra	5
+Gtya	5
+%Ha_Gha	5
+Ha_Gha.nohd	5
+%Ha_Jha	5
+Ha_Jha.nohd	5
+%Ha_Pa	5
+Ha_Pa.nohd	5
+%Ha_Sa	5
+Ha_Sa.nohd	5
+%Ha_Ssa	5
+Ha_Ssa.nohd	5
+Ha_Ya	5
+Ha_Ya.nohd	5
+JaKha	5
+JaKha.nohd	5
+Khtya	5
+Khtya.nohd	5
+Lhva	5
+Lhva.nohd	5
+Lhya	5
+Lhya.nohd	5
+Mhva	5
+Mhva.nohd	5
+Mhya	5
+Mhya.nohd	5
+Mpya	5
+Mpya.nohd	5
+Ndhva	5
+Ndhya	5
+Ndra	5
+Ndra.nohd	5
+Nhva	5
+Nhva.nohd	5
+Nhya	5
+Nhya.nohd	5
+Nska	5
+Nska.nohd	5
+Nsta	5
+Nsta.nohd	5
+Nstta	5
+Nstta.nohd	5
+Ntra	5
+Ntra.nohd	5
+Ntya	5
+Ntya.nohd	5
+Nycya	5
+PhaNna	5
+PhaNna.nohd	5
+PhaPha	5
+PhaPha.nohd	5
+PhaGha	5
+PhaGha.nohd	5
+PhaJha	5
+PhaJha.nohd	5
+PhaKha	5
+PhaKha.nohd	5
+PhaMa	5
+PhaMa.nohd	5
+PhaPa	5
+PhaPa.nohd	5
+PhaSa	5
+PhaSa.nohd	5
+PhaSsa	5
+PhaSsa.nohd	5
+PhaYa	5
+PhaYa.nohd	5
+NaPha	5
+NaPha.nohd	5
+
+% CHECK THESE with Ra initial
+Rya	5
+Rya.nohd	5
+Ssttra	5
+Ssttra.nohd	5
+Sthya	5
+Sthya.nohd	5
+Trtra	5
+Trtra.nohd	5
+TaNna	5
+TaNna.nohd	5
+Kssya	5
+Kssya.nohd	5
+Kkssa	5
+Ksska	5
+Kssma	5
+Kssna	5
+Kssnna	5
+Kssra	5
+Kssva	5
+Ngkssa	5
+Nkssa	5
+Pkssa	5
+Tkssa	5
+Ttkssa	5
+Kkssa.nohd	5
+Ksska.nohd	5
+Kssma.nohd	5
+Kssna.nohd	5
+Kssnna.nohd	5
+Kssra.nohd	5
+Kssva.nohd	5
+Ngkssa.nohd	5
+Nkssa.nohd	5
+Pkssa.nohd	5
+Tkssa.nohd	5
+Ttkssa.nohd	5
+
+Kha.diag	6
+Gha.diag	6
+Jha.diag	6
+Pa.diag	6
+Ma.diag	6
+Ya.diag	6
+Ssa.diag	6
+Sa.diag	6
+
+% Rounded hairline takes Repha_I_dv form in AltRepha
+L_iv	8
+LL_iv	8
+Nya	8
+Ttha	8
+Nya.icd	8
+Nya_nostem.icd	8
+Ttha.icd	8
+Ttha.icd.center	8
+Ttha.icd.rt	8
+TthaTa	8
+Gi.icd	8
+Shi.icd	8
+Gi	8
+Shi	8
+
+
+class definition end
+%class-chain		1,2,3	4,2	1,InitialRa
+%class-chain		1,2,3	1,2	1,InitialRa
+%
+%class-chain		1,2,3	4	1,InitialRa
+%class-chain		1,2,3	1	1,InitialRa
+%
+%class-chain		4, 3	4, 2	1,RaHalfToICD
+%class-chain		4, 3	1, 2	1,RaHalfToICD
+%class-chain		4, 3	4	1,RaHalfToICD
+%class-chain		4, 3	1	1,RaHalfToICD
+
+class-chain		5,2,1,2,3		3,DoNothing
+
+class-chain		1,2,3,8,6		1,InitialRa	2,CondForm
+class-chain		1,2,3,5,6		1,InitialRa	2,CondForm
+
+class-chain		1,2,3,8		1,InitialRa	2,CondForm
+class-chain		1,2,3,5		1,InitialRa	2,CondForm
+class-chain		1,2,3,1		1,InitialRa	2,CondForm
+
+class-chain		1,2,3		1,RaTa_HalfForm
+
+class-chain		4,8,6		1,RaHalfToICD
+class-chain		4,5,6		1,RaHalfToICD
+class-chain		4,8		1,RaHalfToICD
+class-chain		4,5		1,RaHalfToICD
+
+lookup end
+
+
+lookup	 Conjuncts	chained
 
 backtrackclass definition begin
 Ka.icd	1
 Kha.icd	1
 Gha.icd	1
 Nga.icd	1
+Nga.icd.rt	1
 Ca.icd	1
 Cha.icd	1
 Ja.icd	1
 Jha.icd	1
 Tta.icd	1
+Tta.icd.rt	1
 Dda.icd	1
+Dda.icd.rt	1
+Ddha.icd.rt	1
 Ddha.icd	1
+
+Ga.icd	3
+Nya.icd	3
+Ttha.icd	3
+Ttha.icd.center	3
+Ttha.icd.rt	3
+TthaTa	3
+Nna.icd	3
+Tha.icd	3
+Dha.icd	3
+Sha.icd	3
+
+Ta.icd	4
+
+
 Da.icd	1
+Da.icd.rt	1
 Na.icd	1
 Pa.icd	1
 Pha.icd	1
@@ -44,19 +403,32 @@ Ba.icd	1
 Bha.icd	1
 Ma.icd	1
 Ya.icd	1
+
+%%%%%%%%%
+Ra.icd	1
+%%%%%%%%%
+
 La.icd	1
 Va.icd	1
+
 Ssa.icd	1
 Sa.icd	1
 Ha.icd	1
+
 Ka	2
 Kha	2
 Ga	2
 Gha	2
+Nga	5
 Ca	2
+Cha	5
 Ja	2
 Jha	2
 Nya	2
+Tta	5
+Ttha	5
+Dda	5
+Ddha	5
 Nna	2
 Ta	2
 Tha	2
@@ -69,69 +441,74 @@ Ba	2
 Bha	2
 Ma	2
 Ya	2
-Ra	2
+%Ra	2
 La	2
 Wa	2
 Sha	2
 Ssa	2
 Sa	2
 Ha	2
-Ga.icd	3
-Nya.icd	3
-Ttha.icd	3
-Nna.icd	3
-Tha.icd	3
-Dha.icd	3
-Sha.icd	3
-Ta.icd	4
-Nga	5
-Cha	5
-Tta	5
-Ttha	5
-Dda	5
-Ddha	5
+
+% Virama	5
+
 class definition end
 
 class definition begin
+% Cond forms
 Ka	1
+Kha	3
 Ga	1
+Gha	3
 Nga	1
 Ngha	1
 Ca	1
 Cha	1
 Ja	1
+Jha	3
 Nya	1
+% Nyha	1
 Tta	1
 Ttha	1
 Dda	1
 Ddha	1
+
+Nna	4
+Ta	5
+
 Tha	1
 Da	1
 Dha	1
 Na	1
+% Nha	1
+Pa	3
 Pha	1
 Ba	1
 Bha	1
+Ma	3
+% Mha	1
+Ya	3
+
+Ra	2
+
+% Ra	11
 Rha	1
 La	1
+% Lha	1
 Wa	1
 Sha	1
-Ha	1
-Ra	2
-Kha	3
-Gha	3
-Jha	3
-Pa	3
-Ma	3
-Ya	3
 Ssa	3
 Sa	3
-Nna	4
-Ta	5
+Ha	1
+
 Virama	6
+ZWJ	7
 class definition end
 
 lookaheadclass definition begin
+
+Virama	2
+ZWJ	4
+Ka	3
 Kha	1
 Ga	1
 Gha	1
@@ -142,86 +519,175 @@ Cha	1
 Ja	1
 Jha	1
 Nya	1
+% Nyha	1
 Tta	1
 Ttha	1
 Dda	1
 Ddha	1
+% why Nna was commented out?
+Nna	1
 Ta	1
 Tha	1
 Da	1
 Dha	1
 Na	1
+% Nha	1
 Pa	1
 Pha	1
 Ba	1
 Bha	1
 Ma	1
+% Mha	1
 Ya	1
 Ra	1
 Rha	1
 La	1
+% Lha	1
 Wa	1
 Sha	1
 Ssa	1
-Ha	1
-Virama	2
-Ka	3
 Sa	3
+Ha	1
+
 class definition end
 
-class-chain		1	2, 1	1, 50
-class-chain		1	2, 3	1, 50
-class-chain		2, 6	1	1, 46
-class-chain		2, 6	3	1, 46
-class-chain		3	2, 1	1, 50
-class-chain		3	2, 3	1, 50
-class-chain		4	2, 1	1, 50
-class-chain		4	2, 3	1, 50
-class-chain		5	2, 1	1, 50
-class-chain		5	2, 3	1, 46
-class-chain	1	6, 1		1, 51
-class-chain	1	6, 2		1, 51
-class-chain	1	6, 3		1, 51
-class-chain	3	6, 1		1, 51
-class-chain	3	6, 2		1, 51
-class-chain	3	6, 3		1, 54
-class-chain	4	6, 1		1, 51
-class-chain	4	6, 2		1, 51
-class-chain	4	6, 3		1, 51
-class-chain	4	6, 5		1, 3
-class-chain	1	6, 5		1, 52
-class-chain	3	6, 5		1, 52
-class-chain	2	6, 4		1, 52
-class-chain	5	6, 4		1, 53
+% INPUT
+% 1		Base form
+% 2		Ra
+% 3		Multiple edge forms become diagonal
+% 4		Nna
+% 5		Ta
+% 6		Virama
+
+% BACKTRACK
+% 1		ICD FORM
+% 2		Base Form
+% 3		Headless ICD form
+% 4		Ta.icd
+% 5		Rounded Base form take Nna.post.alt
+
+% LOOKAHEAD 
+% 1		single edge with descender
+% 2		Ka,Sa
+% 3		multiple edge becomes diagonal form
+% 4
+
+class-chain		5,6,7	1	1,RaTa_HalfForm
+class-chain		5,6,7	3	1,RaTa_HalfForm
+
+
+% class-chain		1	6,2		1,PostForm
+class-chain	1	6,1		1,CondForm
+class-chain	1	6,2		1,CondForm
+class-chain	1	6,3		1,CondForm
+
+class-chain	3	6,1		1,CondForm
+class-chain	3	6,2		1,CondForm
+class-chain	3	6,3		1,DiagForm
+
+class-chain	4	6,1		1,CondForm
+class-chain	4	6,2		1,CondForm
+class-chain	4	6,3		1,CondForm
+
+% Ta + Ta, geminate
+class-chain	4	6,5		1,PostForm
+% Nna post
+class-chain	4	6,4		1,PostForm
+
+% Non-Initial Ta = POST form. Initial remains as BASE form
+class-chain	1	6,5		1,PostForm
+class-chain	3	6,5		1,PostForm
+
+% Non-Initial Nna = POST form. Initial remains as BASE form
+class-chain	1	 6,4		1,PostForm
+class-chain	2	 6,4		1,PostForm
+class-chain	3	 6,4		1,PostForm
+%class-chain		6,4		1,PostForm
+class-chain	5	6,4		1,PostFormAlt
+
+class-chain		1	2,1	1,IniCondForm
+class-chain		1	2,3	1,IniCondForm
+% Headless
+class-chain		3	2,1	1,IniCondForm
+class-chain		3	2,3	1,IniCondForm
+% NNA
+class-chain		4	2,1	1,IniCondForm
+class-chain		4	2,3	1,IniCondForm
+% TA
+class-chain		5	2,1	1,IniCondForm
+class-chain		5	2,3	1,IniCondForm
+
+
+% Ra_half
+%class-chain		2,6	1	1,RaTa_HalfForm
+%class-chain		2,6	3	1,RaTa_HalfForm
+class-chain		2	2,1	1,IniCondForm
+class-chain		2	2,3	1,IniCondForm
 
 lookup end
 
 
-lookup	1	chained
-
-RightToLeft	no
-IgnoreBaseGlyphs	no
-IgnoreLigatures	no
-IgnoreMarks	no
-MarkAttachmentType	2
+lookup	 ConjunctsAlt	chained
+MarkAttachmentType	 2
 
 backtrackclass definition begin
-Nya	1
+% takes cd with ext. descender
 Nga.icd	1
-Nya.icd	1
+Nga.icd.rt	1
+Cha.icd	3
 Tta.icd	1
+Tta.icd.rt	1
 Ttha.icd	1
+Ttha.icd.center	1
+Ttha.icd.rt	1
+TthaTa	1
 Dda.icd	1
+Dda.icd.rt	1
+Ddha.icd.rt	1
 Ddha.icd	1
 Da.icd	1
-Pha	2
-Cha.icd	3
+Da.icd.rt	1
+
+Nya	1
+% takes CD without stem
+Nya.icd	1
+
+% takes post form without stem
+Pha.icd	2
+Pha.icd.nohd	2
+% takes post form without stem
+
 class definition end
 
 class definition begin
+
+% Nya.icd loses stem and takes Nya.cd form
 Nya.icd	1
+
+Pha.icd	7
+Nga.icd	7
+Nga.icd.rt	7
+Dda.icd	7
+Dda.icd.rt	7
+Ddha.icd.rt	7
+Ttha.icd	7
+Ttha.icd.center	7
+Ttha.icd.rt	7
+TthaTa	7
+
+% uses Nya_low.cd.spacing
+% now uses Nya_low.cd as Mark
+Tta.icd	8
+Tta.icd.rt	8
+Ddha.icd	8
+
+% becomes alternate or wide
 Ka.icd	2
 Ja.icd	2
+
+Ha.icd	12
+
+% using Nya_stem.cd Mark
 Kha.icd	3
 Ga.icd	3
 Gha.icd	3
@@ -242,228 +708,411 @@ Va.icd	3
 Sha.icd	3
 Ssa.icd	3
 Sa.icd	3
-Nya.cd	4
-Ga.cd	5
-Cha.cd	5
-Dda.cd	5
-Nna.post	5
-Bha.cd	5
-Sha.cd	5
+Ra.icd	3
+
 Cha.icd	6
 Da.icd	6
-Nga.icd	7
-Ttha.icd	7
-Dda.icd	7
-Pha.icd	7
-Tta.icd	8
-Ddha.icd	8
+Da.icd.rt	6
+
+% changes form to fit with ICD
+Nya.cd	4
+
+
+% changes to cd with ext. descender
+Bha.cd	5
+Nna.post	5
+Da	10
+
+% Condensed form with Two Descenders loses its headline; becomes a non-spacing MARK
 Gha.cd	9
 Jha.cd	9
-Dha.cd	9
 Pa.cd	9
 Ya.cd	9
 Ssa.cd	9
 Sa.cd	9
-Da	10
+
 Kha.cd	11
-Ta.post	11
 Ma.cd	11
+Ta.post	11
+
 Tha.post	12
-Ha.icd	12
+
 class definition end
+
 
 lookaheadclass definition begin
 Nya.cd	1
-Ka.cd	2
+
+% needs wide ICD form
+Pha.cd	2
 Cha.cd	2
+Ka.cd	2
 Ja.cd	2
+Da.cd	2
 Ddha.cd	2
 Tha.post	2
-Da.cd	2
-Pha.cd	2
+Nga.cd	2
+%Ta.post	2
 class definition end
 
-class-chain		1	1	1, 2
-class-chain		2	2	1, 4
-class-chain		2, 11		1, 3	2, 8
-class-chain		2, 9		1, 3	2, 8
-class-chain		3, 4		2, 2
-class-chain	1	5		1, 2
-class-chain	3	5		1, 2
-class-chain	2	5		1, 3
-class-chain		6, 4		2, 3
-class-chain		7, 4		2, 5
-class-chain		8, 4		2, 4
-class-chain		10, 5		1, 27
-class-chain	3	12		1, 2
-class-chain		12	2	1, 4
-class-chain		12, 9		1, 3	2, 8
+% 1		single edge with descender
+% 3		single edge without descender
+% 2		multiple edge
+% 4		Nya.cd
+% 1-3 when followed by Virama become .icd form
+% 5		Nepal Bhasa language
+% 6		Virama
+% 7		icd exception
+
+% BT CLASSES
+
+% Backtrack class ICD from followed by Consonant = Condensed form as mark or spacing base
+% From here, we can more specific as to which ICD forms take specific Cond forms
+
+
+% Rounded ICD forms take CD form with ext. descender
+%class-chain	1	 5		1,AltForm
+%class-chain	3	 5		1,AltForm
+% Pha takes Nna without a stem
+%class-chain	2	 5		1,AltForm2
+
+% Nya_stem.icd + Nya.cd uses Nya.icd without stem
+class-chain		 1	1	1,AltForm
+
+% Nya_stem.icd + Nya.cd
+class-chain		 3,4		2,AltForm
+
+% Cha.icd + Nya.cd uses Nya_stem.cd
+% Nya_stem.cd.alt
+class-chain		 6,4		2,AltForm2
+% Nya.cd.alt with round bottom
+%class-chain		 7,4		2,AltForm4
+
+% round bottom uses Nya_low.cd
+class-chain		 8,4		2,AltForm3
+
+% Ka, Ja, Ha icd.form followed by 
+%		input cl 9 -->	icd.alt form
+%		lookahead cl 2 -->	icd.wide
+class-chain		12,5		1,AltForm2
+class-chain		2,5		1,AltForm3
+
+class-chain		2	2	1,AltForm3
+%class-chain		12	2	1,AltForm3
+class-chain		12	2	1,AltForm2
+class-chain		2,11		1,AltForm2	2,MarkCD
+class-chain		2,9		1,AltForm2	2,MarkCD
+class-chain		12,9		1,AltForm2	2,MarkCD
+
+class-chain		10,5		1,VowelLigs
 
 lookup end
 
 
-lookup	2	single
+lookup	RightAltBottom	single
+Nga.icd	Nga.icd.rt
+Nga.icd.nohd	Nga.icd.nohd.rt
+Tta.icd	Tta.icd.rt
+Tta.icd.nohd	Tta.icd.nohd.rt
+Ttha.icd	Ttha.icd.rt
+Da.icd	Da.icd.rt
+Da.icd.nohd	Da.icd.nohd.rt
+Dda.icd	Dda.icd.rt
+Dda.icd.nohd	Dda.icd.nohd.rt
+Ddha.icd	Ddha.icd.rt
+Ddha.icd.nohd	Ddha.icd.nohd.rt
+lookup end
 
-RightToLeft	no
-IgnoreBaseGlyphs	no
-IgnoreLigatures	no
-IgnoreMarks	no
 
+lookup	CenterAlt	single
+Ttha.icd	Ttha.icd.center
+Ga.cd	Ga.cd.alt
+lookup end
+
+
+lookup	BottomAltPosition	chained
+
+backtrackclass definition begin
+Pha.icd	1
+Bha.icd	1
+Tta.icd	1
+Ddha.icd	1
+Da.icd	1
+Ttha.icd	1
+class definition end
+
+class definition begin
+Ttha.icd	1
+Nga.icd	2
+Nga.icd.nohd	2
+Tta.icd	2
+Tta.icd.nohd	2
+Da.icd	2
+Da.icd.nohd	2
+Dda.icd	2
+Dda.icd.nohd	2
+Ddha.icd	2
+Ddha.icd.nohd	2
+Ga.cd	3
+class definition end
+
+lookaheadclass definition begin
+% CD forms that should sit on the right
+Ba.cd	1
+Ca.cd	1
+Dha.cd	1
+Dha.cd.alt	1
+Ga.cd	1
+La.cd	1
+Na.cd	1
+Ra.cd	1
+Sha.cd	1
+Ttha.cd	1
+Va.cd	1
+% CD forms that should be centered
+Ha.cd	1
+Ja.cd	2
+Ka.cd	2
+Nya.cd	2
+Pha.cd	2
+Tha.post	2
+% Diag forms following Ttha.icd
+Kha.diag	3
+Gha.diag	3
+Jha.diag	3
+Pa.diag	3
+Ma.diag	3
+Ya.diag	3
+Ssa.diag	3
+Sa.diag	3
+class definition end
+
+
+class-chain	1	3		1,CenterAlt
+class-chain		1	1	1,RightAltBottom
+class-chain		1	3	1,RightAltBottom
+class-chain		1	2	1,CenterAlt
+class-chain		2	1	1,RightAltBottom
+class-chain		2	2	1,CenterAlt
+
+subtable end
+
+
+class definition begin
+Da.icd	1
+Da.icd.nohd	1
+class definition end
+
+lookaheadclass definition begin
+Sa.cd	1
+class definition end
+
+
+class-chain		1	1	1,RightAltBottom
+
+lookup end
+
+
+lookup	 AltForm	single
 Bha	Bha.alt
 Ha	Ha.alt
-Candrabindu	Candrabindu.sm
-AA_dv.alt	AA_dv.alt2
-Ga.cd	Ga.cd.alt
-Cha.cd	Cha.cd.alt
+
 Nya.icd	Nya_nostem.icd
+
 Nya.cd	Nya_stem.cd
-Dda.cd	Dda.cd.alt
-Nna.post	Nna.post.alt
-Tha.post	Tha.post.alt
-Bha.cd	Bha.cd.alt
-Sha.cd	Sha.cd.alt
+
+AA_dv.alt	AA_dv.alt2
+Candrabindu	Candrabindu.sm
 
 lookup end
 
-
-lookup	3	single
-
-RightToLeft	no
-IgnoreBaseGlyphs	no
-IgnoreLigatures	no
-IgnoreMarks	no
-
-Ta	Ta.post
-AA_dv	AA_dv_head
+lookup	 AltForm2	single
 Ka.icd	Ka.icd.alt
 Ja.icd	Ja.icd.alt
-Nya.cd	Nya_stem.cd.alt
-Nna.post	Nna.post.nostem
 Ha.icd	Ha.icd.alt
+Ta	Ta.post
 
+Nya.cd	Nya_stem.cd.alt
+
+%AA_dv	AA_dv_head
+lookup end
+
+lookup	AltForm3	single
+Ka.icd	Ka.icd.wide
+Ja.icd	Ja.icd.wide
+% Ta.post	Ta_for_icd.post
+Nya.cd	Nya_low.cd
+
+% ext arm AA, use with headless
+%AA_dv	AA_dv.alt3
+%AA_dv.alt	AA_dv.alt3
+AU_dv_part.alt	AU_dv_part.alt3
+Ta.post	Ta.post.head
 lookup end
 
 
-lookup	4	single
-
-RightToLeft	no
-IgnoreBaseGlyphs	no
-IgnoreLigatures	no
-IgnoreMarks	no
-
-AA_dv	AA_dv.alt3
-AA_dv.alt	AA_dv.alt3
+lookup	AltForm3b	single
 Ka.icd	Ka.icd.wide
 Ja.icd	Ja.icd.wide
 Nya.cd	Nya_low.cd
-Ta.post	Ta.post.head
-Ha.icd	Ha.icd.wide
+
+% ext arm AA, use with headless
+AA_dv	AA_dv.alt3ga
+AA_dv.alt	AA_dv.alt3ga
 AU_dv_part.alt	AU_dv_part.alt3
-
+Ta.post	Ta.post.head
 lookup end
 
 
-lookup	5	single
+%lookup	AltForm3b	single
+% ext arm AA, use with headless
+%AA_dv	AA_dv.ttha
+%lookup end
 
-RightToLeft	no
-IgnoreBaseGlyphs	no
-IgnoreLigatures	no
-IgnoreMarks	no
+%lookup	 AltForm4	single
+%
+%% ext arm AA, use with Nya and Ttha
+%AA_dv	AA_dv.alt4
+%AA_dv.alt	AA_dv.alt4
+%%AU_dv_part.alt	AU_dv_part.alt4
+%%AU_dv_part.alt2	AU_dv_part.alt4
+%lookup end
 
-AA_dv	AA_dv.alt4
-AA_dv.alt	AA_dv.alt4
-Nya.cd	Nya.cd.alt
-AU_dv_part.alt	AU_dv_part.alt4
-AU_dv_part.alt2	AU_dv_part.alt4
+lookup	 AltForm5	single
 
-lookup end
-
-
-lookup	6	single
-
-RightToLeft	no
-IgnoreBaseGlyphs	no
-IgnoreLigatures	no
-IgnoreMarks	no
-
+% ext arm AA, use with Nya and Ttha
 AA_dv	AA_dv.alt5
 AA_dv.alt	AA_dv.alt5
 AU_dv_part.alt	AU_dv_part.alt5
-
 lookup end
 
-
-lookup	7	single
-
-RightToLeft	no
-IgnoreBaseGlyphs	no
-IgnoreLigatures	no
-IgnoreMarks	no
-
+lookup	 AltForm6	single
+% ext arm AA, use with Nya and Ttha
 AA_dv	AA_dv.alt6
 AA_dv.alt	AA_dv.alt6
 AU_dv_part.alt2	AU_dv_part.alt6
-
 lookup end
 
 
-lookup	8	single
-
-RightToLeft	no
-IgnoreBaseGlyphs	no
-IgnoreLigatures	no
-IgnoreMarks	no
+lookup	 MarkCD	single
 
 Kha.cd	Kha.cd.nohd.ns
 Gha.cd	Gha.cd.nohd.ns
 Jha.cd	Jha.cd.nohd.ns
-Ta.post	Ta.post.ns
-Dha.cd	Dha.cd.ns
 Pa.cd	Pa.cd.nohd.ns
 Ma.cd	Ma.cd.nohd.ns
 Ya.cd	Ya.cd.nohd.ns
 Ssa.cd	Ssa.cd.nohd.ns
 Sa.cd	Sa.cd.nohd.ns
-
+Ta.post	Ta.post.ns
 lookup end
 
 
-lookup	9	ligature
+lookup	 LigsAndConjuncts	ligature
 
-RightToLeft	no
-IgnoreBaseGlyphs	no
-IgnoreLigatures	no
-IgnoreMarks	no
+Trtra	Ta.icd	Ra.cd	Virama	ZWJ	Ta.icd	Ra.cd
 
-Ha_Nna	Ha	Nna.post
-Ka_Nya	Ka.icd	Nya.cd
-Nga_Ha	Nga.icd	Ha.cd
-Ja_Nya	Ja.icd	Nya.cd
-Nya_Ha	Nya.icd	Ha.cd
-Nna_Ha	Nna.icd	Ha.cd
-Na_Ha	Na.icd	Ha.cd
-Ma_Ha	Ma.icd	Ha.cd
-Ra_Ha	Ra.half	Ha
-La_Ha	La.icd	Ha.cd
-Ha_Kha	Ha.icd	Kha.cd
-Ha_Nga	Ha.icd	Nga.cd
+%Ha_Nga	Ha.icd	Nga.cd
+Ha_Nga	Ha.icd.alt	Nga.cd
 Ha_Nya	Ha.icd	Nya.cd
-Ha_Ta	Ha.icd	Ta.post
+
+%Ha_Nna	Ha	Nna.post
+Ha_Nna	Ha.icd.alt	Nna.post
 Ha_Na	Ha.icd	Na.cd
 Ha_Ma	Ha.icd	Ma.cd
 Ha_Ra	Ha.icd	Ra.cd
 Ha_La	Ha.icd	La.cd
+Ha_Kha	Ha.icd	Kha.cd
+Ha_Gha	Ha.icd.alt	Gha.cd.nohd.ns
+Ha_Jha	Ha.icd.alt	Jha.cd.nohd.ns
+Ha_Ta	Ha.icd	Ta.post
+Ha_Ya	Ha.icd.alt	Ya.cd.nohd.ns
+Ha_Pa	Ha.icd.alt	Pa.cd.nohd.ns
+Ha_Sa	Ha.icd.alt	Sa.cd.nohd.ns
+Ha_Ssa	Ha.icd.alt	Ssa.cd.nohd.ns
+
+% used to be breathy ligs
+Ha_Nga	Nga.icd.rt	Ha.cd
+Ha_Nya	Nya.icd	Ha.cd
+Ha_Nna	Nna.icd	Ha.cd
+Ha_Na	Na.icd	Ha.cd
+Ha_Ma	Ma.icd	Ha.cd
+Ha_Ra	Ra.icd	Ha.cd
+Ha_La	La.icd	Ha.cd
+%Nga_Ha	Nga.icd	Ha.cd
+%Nga_Ha	Nga.icd.rt	Ha.cd
+%Nya_Ha	Nya.icd	Ha.cd
+%Nna_Ha	Nna.icd	Ha.cd
+%Na_Ha	Na.icd	Ha.cd
+%Ma_Ha	Ma.icd	Ha.cd
+%Ra_Ha	Ra.half	Ha
+%Ra_Ha	Ra.icd	Ha.cd
+%La_Ha	La.icd	Ha.cd
+
+NaPha	Na.icd	Pha.cd
+Ja_Nya	Ja.icd	Nya.cd
+Ka_Nya	Ka.icd	Nya.cd
+
+Kkssa	Ka.icd.wide	Ka.cd	Virama	Ssa
+Ksska	Ka.icd.alt	Ssa.cd.nohd.ns	Virama	Ka
+Kssma	Ka.icd.alt	Ssa.cd.nohd.ns	Virama	Ma
+Kssna	Ka.icd.alt	Ssa.cd.nohd.ns	Virama	Na
+Kssnna	Ka.icd.alt	Ssa.cd.nohd.ns	Virama	Nna
+Kssva	Ka.icd.alt	Ssa.cd.nohd.ns	Virama	Wa
+Kssya	Ka.icd.alt	Ssa.cd.nohd.ns	Virama	Ya
+Kssra	Ka.icd.alt	Ssa.cd.nohd.ns	Virama	Ra
+Ngkssa	Nga.icd	Ka.cd	Virama	Ssa
+Nkssa	Na.icd	Ka.cd	Virama	Ssa
+Pkssa	Pa.icd	Ka.cd	Virama	Ssa
+Tkssa	Ta.icd	Ka.cd	Virama	Ssa
+%Tkssa	Ta.half	Ka.icd.alt	Ssa.cd.nohd.ns
+Ttkssa	Tta.icd	Ka.cd	Virama	Ssa
+
+DdaTa	Dda.icd	Ta.post
 Ka_Ssa	Ka.icd.alt	Ssa.cd.nohd.ns
+Mpya	Ma.icd	Pa.cd	Virama	Ya
+Nhya	Na.icd	Ha.cd	Virama	Ya
+Mhya	Ma.icd	Ha.cd	Virama	Ya
+Lhya	La.icd	Ha.cd	Virama	Ya
+Ndhya	Na.icd	Dha.cd	Virama	Ya
+Ndra	Na.icd	Da.cd	Virama	Ra
+Ntra	Na.icd	Ta.post	Virama	Ra
+Ntya	Na.icd	Ta.post	Virama	Ya
+Khtya	Kha.icd	Ta.post	Virama	Ya
+Nstta	Na.icd	Sa.cd	Virama	Tta
+Nhva	Na.icd	Ha.cd	Virama	Wa
+Lhva	La.icd	Ha.cd	Virama	Wa
+Nycya	Nya.icd	Ca.cd	Virama	Ya
+Ndhva	Na.icd	Dha.cd	Virama	Wa
+Gtya	Ga.icd	Ta.post	Virama	Ya
+Sthya	Sa.icd	Tha.post	Virama	Ya
+Gphra	Ga.icd	Pha.cd	Virama	Ra
+Nsta	Na.icd	Sa.cd	Virama	Ta
+Nska	Na.icd	Sa.cd	Virama	Ka
+Mhva	Ma.icd	Ha.cd	Virama	Wa
+Ssttra	Ssa.icd	Tta.cd	Virama	Ra
+JaKha	Ja.icd.alt	Kha.cd.nohd.ns
+PhaNna	Pha.icd	Nna.post
+TaNna	Ta.icd	Nna.post
+TthaTa	Ttha.icd	Ta.post
+Ndha	Na.icd	Dha.cd
+Vdha	Va.icd	Dha.cd
+Bdha	Ba.icd	Dha.cd
+PhaPha	Pha.icd	Pha.cd
+PhaGha	Pha.icd	Gha.cd
+PhaJha	Pha.icd	Jha.cd
+PhaKha	Pha.icd	Kha.cd
+PhaMa	Pha.icd	Ma.cd
+PhaPa	Pha.icd	Pa.cd
+PhaSa	Pha.icd	Sa.cd
+PhaSsa	Pha.icd	Ssa.cd
+PhaYa	Pha.icd	Ya.cd
 
 lookup end
 
 
-lookup	10	chained
+lookup	 RaInitial	chained
 
-RightToLeft	no
-IgnoreBaseGlyphs	no
-IgnoreLigatures	no
-IgnoreMarks	no
 
 class definition begin
 Ra	1
@@ -485,6 +1134,7 @@ E_iv	1
 AI_iv	1
 O_iv	1
 AU_iv	1
+
 Ka	1
 Kha	1
 Ga	1
@@ -522,36 +1172,27 @@ Sha	1
 Ssa	1
 Sa	1
 Ha	1
-Ha_Nga	1
-Ha_Nya	1
-Ha_Nna	1
-Ha_Na	1
-Ha_Ma	1
-Ha_Ra	1
-Ha_La	1
-Nga_Ha	1
-Nya_Ha	1
-Nna_Ha	1
-Na_Ha	1
-Ma_Ha	1
-Ra_Ha	1
-La_Ha	1
+
 Ka.icd	1
 Kha.icd	1
 Ga.icd	1
 Gha.icd	1
 Nga.icd	1
+Nga.icd.rt	1
 Ca.icd	1
 Cha.icd	1
 Ja.icd	1
 Jha.icd	1
 Tta.icd	1
 Dda.icd	1
+Dda.icd.rt	1
+Ddha.icd.rt	1
 Ddha.icd	1
 Nna.icd	1
 Ta.icd	1
 Tha.icd	1
 Da.icd	1
+Da.icd.rt	1
 Dha.icd	1
 Na.icd	1
 Pa.icd	1
@@ -566,28 +1207,28 @@ Sha.icd	1
 Ssa.icd	1
 Sa.icd	1
 Ha.icd	1
-Ka_Ssa	1
-Ja_Nya	1
-Ka_Nya	1
 Ka.icd.alt	1
 Ja.icd.alt	1
 Ha.icd.alt	1
 Ka.icd.wide	1
 Ja.icd.wide	1
-Ha.icd.wide	1
 Ka.icd.nohd	1
 Kha.icd.nohd	1
 Gha.icd.nohd	1
 Nga.icd.nohd	1
+Nga.icd.nohd.rt	1
 Ca.icd.nohd	1
 Cha.icd.nohd	1
 Ja.icd.nohd	1
 Jha.icd.nohd	1
 Tta.icd.nohd	1
 Dda.icd.nohd	1
+Dda.icd.nohd.rt	1
+Ddha.icd.nohd.rt	1
 Ddha.icd.nohd	1
 Ta.icd.nohd	1
 Da.icd.nohd	1
+Da.icd.nohd.rt	1
 Na.icd.nohd	1
 Pa.icd.nohd	1
 Pha.icd.nohd	1
@@ -605,9 +1246,142 @@ Ja.icd.alt.nohd	1
 Ha.icd.alt.nohd	1
 Ka.icd.wide.nohd	1
 Ja.icd.wide.nohd	1
-Ha.icd.wide.nohd	1
-Ha_Ta	1
+Ha_Nga	1
+Ha_Nya	1
+Ha_Nna	1
+Ha_Na	1
+Ha_Ma	1
+Ha_Ra	1
+Ha_La	1
 Ha_Kha	1
+Ha_Gha	1
+Ha_Jha	1
+Ha_Ta	1
+Ha_Pa	1
+Ha_Sa	1
+Ha_Ssa	1
+
+
+%Nga_Ha	1
+%Nya_Ha	1
+%Nna_Ha	1
+%Na_Ha	1
+%Ma_Ha	1
+%Ra_Ha	1
+%La_Ha	1
+
+Ja_Nya	1
+Ka_Nya	1
+
+Ka_Ssa	1
+
+Gphra	1
+Gtya	1
+%Ha_Gha	1
+Ha_Gha.nohd	1
+%Ha_Jha	1
+Ha_Jha.nohd	1
+%Ha_Pa	1
+Ha_Pa.nohd	1
+%Ha_Sa	1
+Ha_Sa.nohd	1
+%Ha_Ssa	1
+Ha_Ssa.nohd	1
+Ha_Ya	1
+Ha_Ya.nohd	1
+JaKha	1
+JaKha.nohd	1
+Khtya	1
+Khtya.nohd	1
+Lhva	1
+Lhva.nohd	1
+Lhya	1
+Lhya.nohd	1
+Mhva	1
+Mhva.nohd	1
+Mhya	1
+Mhya.nohd	1
+Mpya	1
+Mpya.nohd	1
+Ndhva	1
+Ndhya	1
+Ndra	1
+Ndra.nohd	1
+Nhva	1
+Nhva.nohd	1
+Nhya	1
+Nhya.nohd	1
+Nska	1
+Nska.nohd	1
+Nsta	1
+Nsta.nohd	1
+Nstta	1
+Nstta.nohd	1
+Ntra	1
+Ntra.nohd	1
+Ntya	1
+Ntya.nohd	1
+Nycya	1
+PhaNna	1
+PhaNna.nohd	1
+PhaPha	1
+PhaPha.nohd	1
+PhaGha	1
+PhaGha.nohd	1
+PhaJha	1
+PhaJha.nohd	1
+PhaKha	1
+PhaKha.nohd	1
+PhaMa	1
+PhaMa.nohd	1
+PhaPa	1
+PhaPa.nohd	1
+PhaSa	1
+PhaSa.nohd	1
+PhaSsa	1
+PhaSsa.nohd	1
+PhaYa	1
+PhaYa.nohd	1
+NaPha	1
+NaPha.nohd	1
+
+Rya	1
+Rya.nohd	1
+Ssttra	1
+Ssttra.nohd	1
+Sthya	1
+Sthya.nohd	1
+Trtra	1
+Trtra.nohd	1
+TaNna	1
+TaNna.nohd	1
+Kssya	1
+Kssya.nohd	1
+Kkssa	1
+Ksska	1
+Kssma	1
+Kssna	1
+Kssnna	1
+Kssra	1
+Kssva	1
+Ngkssa	1
+Nkssa	1
+Pkssa	1
+Tkssa	1
+Ttkssa	1
+Kkssa.nohd	1
+Ksska.nohd	1
+Kssma.nohd	1
+Kssna.nohd	1
+Kssnna.nohd	1
+Kssra.nohd	1
+Kssva.nohd	1
+Ngkssa.nohd	1
+Nkssa.nohd	1
+Pkssa.nohd	1
+Tkssa.nohd	1
+Ttkssa.nohd	1
+
 Kha.diag	2
 Gha.diag	2
 Jha.diag	2
@@ -616,6 +1390,8 @@ Ma.diag	2
 Ya.diag	2
 Ssa.diag	2
 Sa.diag	2
+
+% Rounded hairline takes Repha_I_dv form in AltRepha
 L_iv	4
 LL_iv	4
 Nya	4
@@ -623,75 +1399,115 @@ Ttha	4
 Nya.icd	4
 Nya_nostem.icd	4
 Ttha.icd	4
-Gi	4
-Shi	4
+Ttha.icd.center	4
+Ttha.icd.rt	4
+TthaTa	4
 Gi.icd	4
 Shi.icd	4
+Gi	4
+Shi	4
+
+
 class definition end
+%class-chain		1,2	4,2	1,AltRepha
+%class-chain		1,2	1,2	1,FormRepha
+%
+%class-chain		1,2	4	1,AltRepha
+%class-chain		1,2	1	1,FormRepha
+%
+%class-chain		4	4, 2	1, AltRepha
+%class-chain		4	1, 2	1, FormRepha
+%class-chain		4	4	1, AltRepha
+%class-chain		4	1	1, FormRepha
 
-class-chain		1, 2, 3	4, 2	1, 15
-class-chain		1, 2, 3	1, 2	1, 11
-class-chain		1, 2, 3	4	1, 15
-class-chain		1, 2, 3	1	1, 11
-class-chain		4, 3	4, 2	1, 15
-class-chain		4, 3	1, 2	1, 11
-class-chain		4, 3	4	1, 11	1, 15
-class-chain		4, 3	1	1, 11
+class-chain		1,2	4,2	1,AltRepha
+class-chain		1,2	1,2	1,FormRepha
+
+class-chain		1,2	4	1,AltRepha
+class-chain		1,2	1	1,FormRepha
+
+%class-chain		4	4, 2	1, AltRepha
+%class-chain		4	1, 2	1, FormRepha
+%class-chain		4	4	1, AltRepha
+%class-chain		4	1	1, FormRepha
 
 lookup end
 
 
-lookup	11	ligature
-
-RightToLeft	no
-IgnoreBaseGlyphs	no
-IgnoreLigatures	no
-IgnoreMarks	no
-
-Repha	Ra	Virama	ZWJ
-Repha	Ra.half	ZWJ
-
+lookup	RaHalfToICD	single
+Ra.half	Ra.icd
 lookup end
 
 
-lookup	12	single
+lookup	InitialRa	single
+Ra	Ra.icd
+% If Unicode recommendation is changed from Ra+Virama=Half form to Repha then we switch this
+%Ra.icd	Ra	Virama	ZWJ
+lookup end
 
-RightToLeft	no
-IgnoreBaseGlyphs	no
-IgnoreLigatures	no
-IgnoreMarks	no
+
+lookup	 FormRepha	ligature
+Repha	Ra	Virama
+%Repha	Ra	Virama	ZWJ
+%Repha	Ra.half	ZWJ
+lookup end
+
+
+lookup	 AltRepha	ligature
+Repha_I_dv	Ra	Virama
+Repha_I_dv	Ra.half
+%Repha_I_dv	Ra	Virama	ZWJ
+%Repha_I_dv	Ra.half	ZWJ
+
+% II_dv_Repha	Repha	II_dv
+lookup end
+
+
+lookup	 IItoII_Repha	single
 
 II_dv	II_dv_Repha
 Repha	Repha_AI_dv
-
 lookup end
 
 
-lookup	13	multiple
-
-RightToLeft	no
-IgnoreBaseGlyphs	no
-IgnoreLigatures	no
-IgnoreMarks	no
+lookup	 DV_Repha_E	multiple
 MarkAttachmentType	1
-
-AA_dv	AA_dv	Repha
-E_dv	E_dv	Repha
+E_dv	E_dv	RephaE
+E_dv.sm	E_dv.sm	RephaE
+E_dv.md	E_dv.md	RephaE
+E_dv.lg	E_dv.lg	RephaE
+E_dv.xlg	E_dv.lg	RephaE
 AI_dv	AI_dv	Repha_AI_dv
 O_dv	O_dv	Repha
+O_dv.sm	O_dv.sm	Repha
+O_dv.md	O_dv.md	Repha
+O_dv.lg	O_dv.lg	Repha
+O_dv.xlg	O_dv.xlg	Repha
+O_dv.xxlg	O_dv.xxlg	Repha
 AU_dv	AU_dv	Repha_AI_dv
+
+%Repha_II_dv	Repha_I_dv
+Repha_I_dv	Repha
+
+AU_dv_part.alt	AU_dv_part.alt	Repha_AI_dv
+AU_dv_part.alt2	AU_dv_part.alt2	Repha_AI_dv
+AU_dv_part.alt3	AU_dv_part.alt3	Repha_AI_dv
+AU_dv_part.ttha	AU_dv_part.ttha	Repha_AI_dv
+AI_dv_top.alt	AI_dv_top.alt	Repha_AI_dv
+%AU_dv_part.alt4	AU_dv_part.alt4	Repha_AI_dv
+AU_dv_part.alt5	AU_dv_part.alt5	Repha_AI_dv
+AU_dv_part.alt6	AU_dv_part.alt6	Repha_AI_dv
+
+AA_dv	AA_dv	Repha
 AA_dv.alt	AA_dv.alt	Repha
 AA_dv.alt2	AA_dv.alt2	Repha
-AA_dv.alt3	AA_dv.alt3	Repha
-Kha.cd	Kha.cd	Repha
-Gha.cd	Gha.cd	Repha
-Jha.cd	Jha.cd	Repha
-Dha.cd	Dha.cd	Repha
-Pa.cd	Pa.cd	Repha
-Ma.cd	Ma.cd	Repha
-Ya.cd	Ya.cd	Repha
-Ssa.cd	Ssa.cd	Repha
-Sa.cd	Sa.cd	Repha
+%AA_dv.alt3	AA_dv.alt3	Repha
+AA_dv.alt3ga	AA_dv.alt3ga	Repha
+%AA_dv_head	AA_dv_head	Repha
+%AA_dv.alt4	AA_dv.alt4	Repha
+AA_dv.alt5	AA_dv.alt5	Repha
+AA_dv.alt6	AA_dv.alt6	Repha
+
 Kha.diag	Kha.diag	Repha
 Gha.diag	Gha.diag	Repha
 Jha.diag	Jha.diag	Repha
@@ -700,62 +1516,107 @@ Ma.diag	Ma.diag	Repha
 Ya.diag	Ya.diag	Repha
 Ssa.diag	Ssa.diag	Repha
 Sa.diag	Sa.diag	Repha
+Kha.cd	Kha.cd	Repha
+Gha.cd	Gha.cd	Repha
+Jha.cd	Jha.cd	Repha
+Pa.cd	Pa.cd	Repha
+Ma.cd	Ma.cd	Repha
+Ya.cd	Ya.cd	Repha
+Ssa.cd	Ssa.cd	Repha
+Sa.cd	Sa.cd	Repha
+Dha.cd	Dha.cd	Repha
+Dha.cd.alt	Dha.cd.alt	Repha
+
+lookup end
+
+
+lookup	 DV_Repha	multiple
+MarkAttachmentType	1
+E_dv	E_dv	Repha
 E_dv.sm	E_dv.sm	Repha
+E_dv.md	E_dv.md	Repha
 E_dv.lg	E_dv.lg	Repha
+E_dv.xlg	E_dv.lg	Repha
+AI_dv	AI_dv	Repha_AI_dv
+O_dv	O_dv	Repha
 O_dv.sm	O_dv.sm	Repha
+O_dv.md	O_dv.md	Repha
 O_dv.lg	O_dv.lg	Repha
-AI_dv_top.alt	AI_dv_top.alt	Repha_AI_dv
+O_dv.xlg	O_dv.xlg	Repha
+O_dv.xxlg	O_dv.xxlg	Repha
+AU_dv	AU_dv	Repha_AI_dv
+
+%Repha_II_dv	Repha_I_dv
+Repha_I_dv	Repha
+
 AU_dv_part.alt	AU_dv_part.alt	Repha_AI_dv
 AU_dv_part.alt2	AU_dv_part.alt2	Repha_AI_dv
 AU_dv_part.alt3	AU_dv_part.alt3	Repha_AI_dv
-Repha_I_dv	Repha
-AA_dv_head	AA_dv_head	Repha
-AA_dv.alt4	AA_dv.alt4	Repha
-AU_dv_part.alt4	AU_dv_part.alt4	Repha_AI_dv
-AA_dv.alt5	AA_dv.alt5	Repha
-AA_dv.alt6	AA_dv.alt6	Repha
+AU_dv_part.ttha	AU_dv_part.ttha	Repha_AI_dv
+AI_dv_top.alt	AI_dv_top.alt	Repha_AI_dv
+%AU_dv_part.alt4	AU_dv_part.alt4	Repha_AI_dv
 AU_dv_part.alt5	AU_dv_part.alt5	Repha_AI_dv
 AU_dv_part.alt6	AU_dv_part.alt6	Repha_AI_dv
 
+AU_dv_part.alt_anusvara	AU_dv_part.alt_anusvara	Repha_AI_dv
+AU_dv_part.alt_candra	AU_dv_part.alt_candra	Repha_AI_dv
+AU_dv_part.alt2_anusvara	AU_dv_part.alt2_anusvara	Repha_AI_dv
+AU_dv_part.alt2_candra	AU_dv_part.alt2_candra	Repha_AI_dv
+AU_dv_part.alt3_anusvara	AU_dv_part.alt3_anusvara	Repha_AI_dv
+AU_dv_part.alt3_candra	AU_dv_part.alt3_candra	Repha_AI_dv
+AU_dv_part.alt5_anusvara	AU_dv_part.alt5_anusvara	Repha_AI_dv
+AU_dv_part.alt5_candra	AU_dv_part.alt5_candra	Repha_AI_dv
+AU_dv_part.alt6_anusvara	AU_dv_part.alt6_anusvara	Repha_AI_dv
+AU_dv_part.alt6_candra	AU_dv_part.alt6_candra	Repha_AI_dv
+AU_dv_part.ttha_anusvara	AU_dv_part.ttha_anusvara	Repha_AI_dv
+AU_dv_part.ttha_candra	AU_dv_part.ttha_candra	Repha_AI_dv
+
+Candrabindu	Candrabindu	Repha_AI_dv
+Candrabindu.sm	Candrabindu.sm	Repha_AI_dv
+Anusvara	Anusvara	Repha_AI_dv
+
+AA_dv	AA_dv	Repha
+AA_dv.alt	AA_dv.alt	Repha
+AA_dv.alt2	AA_dv.alt2	Repha
+%AA_dv.alt3	AA_dv.alt3	Repha
+AA_dv.alt3ga	AA_dv.alt3ga	Repha
+%AA_dv_head	AA_dv_head	Repha
+%AA_dv.alt4	AA_dv.alt4	Repha
+AA_dv.alt5	AA_dv.alt5	Repha
+AA_dv.alt6	AA_dv.alt6	Repha
+
+Kha.diag	Kha.diag	Repha
+Gha.diag	Gha.diag	Repha
+Jha.diag	Jha.diag	Repha
+Pa.diag	Pa.diag	Repha
+Ma.diag	Ma.diag	Repha
+Ya.diag	Ya.diag	Repha
+Ssa.diag	Ssa.diag	Repha
+Sa.diag	Sa.diag	Repha
+Kha.cd	Kha.cd	Repha
+Gha.cd	Gha.cd	Repha
+Jha.cd	Jha.cd	Repha
+Pa.cd	Pa.cd	Repha
+Ma.cd	Ma.cd	Repha
+Ya.cd	Ya.cd	Repha
+Ssa.cd	Ssa.cd	Repha
+Sa.cd	Sa.cd	Repha
+Dha.cd	Dha.cd	Repha
+Dha.cd.alt	Dha.cd.alt	Repha
 lookup end
 
-
-lookup	14	single
-
-RightToLeft	no
-IgnoreBaseGlyphs	no
-IgnoreLigatures	no
-IgnoreMarks	no
+lookup	 Nya_Repha	single
 
 II_dv	II_dv_Nya
 II_dv_Repha	II_dv_Repha_Nya
-
 lookup end
 
 
-lookup	15	ligature
 
-RightToLeft	no
-IgnoreBaseGlyphs	no
-IgnoreLigatures	no
-IgnoreMarks	no
-
-Repha_I_dv	Ra	Virama	ZWJ
-
-lookup end
-
-
-lookup	16	ligature
-
-RightToLeft	no
-IgnoreBaseGlyphs	no
-IgnoreLigatures	no
+lookup	 BaseLigs	ligature
 IgnoreMarks	yes
 
-Nga_Ta	Nga.icd	Ta.post
-NyJha.alt	Nya.icd	Jha.cd
-Nya_Ta	Nya.icd	Ta.post
-NyDha	Nya.icd	Dha.cd
+% special forms with Nya
 NyKha	Nya.icd	Kha.diag
 NyGha	Nya.icd	Gha.diag
 NyJha	Nya.icd	Jha.diag
@@ -764,6 +1625,11 @@ NyMa	Nya.icd	Ma.diag
 NyYa	Nya.icd	Ya.diag
 NySsa	Nya.icd	Ssa.diag
 NySa	Nya.icd	Sa.diag
+
+% TaLigs
+Nya_Ta	Nya.icd	Ta.post
+Nga_Ta	Nga.icd	Ta.post
+Cha_Ta	Cha.icd	Ta.post
 Tta_Ta	Tta.icd	Ta.post
 Ddha_Ta	Ddha.icd	Ta.post
 Da_Ta	Da.icd	Ta.post
@@ -772,52 +1638,47 @@ Pha_Ta	Pha.icd	Ta.post
 lookup end
 
 
-lookup	17	chained
-
-RightToLeft	no
-IgnoreBaseGlyphs	no
-IgnoreLigatures	no
-IgnoreMarks	no
+lookup	 ContextualVowels	chained
+% Contextual Split gets REORDERED
+% set mark attachment class to top marks only
 MarkAttachmentType	1
 
 class definition begin
+
+% Headless forms take SPLIT Contextual form
 Ga	1
-Nna	1
-Tha	1
-Dha	1
-Sha	1
-Nna_Ha	1
 Ga.icd	1
 Ga.half	1
 Nna.icd	1
 Nna.half	1
-Tha.icd	1
-Tha.half	1
+Dha	1
 Dha.icd	1
 Dha.half	1
+Tha	1
+Tha.icd	1
+Tha.half	1
+Sha	1
 Sha.icd	1
 Sha.half	1
-Gi	1
-Shi	1
-Gi.icd	1
-Shi.icd	1
-Ta.post	2
-Dha.cd	2
-Kha.diag	2
-Gha.diag	2
-Jha.diag	2
-Pa.diag	2
-Ma.diag	2
-Ya.diag	2
-Ssa.diag	2
-Sa.diag	2
+Nna	1
+%Nna_Ha	1
+Gphra	77
+Gtya	1
+Ndhva	1
+Ndhya	1
+Ndha	1
+Bdha	1
+Vdha	1
+
 Nya	3
-Ttha	3
-Nya_Ha	3
+Ttha	77
 Nya.icd	3
 Nya_nostem.icd	3
+Nya_Ta	3
 Ttha.icd	3
-NyDha	3
+Ttha.icd.center	3
+Ttha.icd.rt	3
+TthaTa	3
 NyGha	3
 NyJha	3
 NyKha	3
@@ -826,72 +1687,103 @@ NyPa	3
 NySa	3
 NySsa	3
 NyYa	3
-NyJha.alt	3
-Nya_Ta	3
+%Nya_Ha	3
+Nycya	3
+
+Kha.diag	2
+Gha.diag	2
+Jha.diag	2
+Pa.diag	2
+Ma.diag	2
+Ya.diag	2
+Ssa.diag	2
+Sa.diag	2
+%Dha.cd	2
+Ta.post	2
+
+% AA_dv	8
+% I_dv	7
+% II_dv	7
+% U_dv	9
+% UU_dv	6
+% R_dv	4
+% RR_dv	4
+% L_dv	4
+% LL_dv	4
+
 E_dv	4
 AI_dv	5
+
 O_dv	5
 AU_dv	5
+
 class definition end
 
-class-chain		1, 2, 5		3, 28	3, 30
-class-chain		1, 5		2, 28	2, 30
-class-chain		1, 2, 4		3, 28
-class-chain		1, 4		2, 28
-class-chain		3, 2, 5		3, 28	3, 31
-class-chain		3, 5		2, 28	2, 31
-class-chain		3, 4		2, 29
+% class legend, consonants
+% 1		headless consonants
+% 2		diagonal forms take alternate
+% 3		round headless, need alternate AA
+
+% 4		for small consonant, E/AI only
+% 5		for small consonant, O/AU only
+
+% AltVowels need SPLITTING
+%class	1,2,6	3, AltVowel	3, AltVowelSplit
+%class	3,2,6	3, AltVowel	3, AltVowelSplit
+
+
+% 2,AltVowelSplit for AI_dv.alt with class-chain 2,4 will need this 2nd step to split vowel 
+class-chain		1,2,5		3, AltVowel	3, AltVowelSplit
+class-chain		3,2,5		3, AltVowel	3, AltVowelSplit2
+class-chain		77,2,5		3, AltVowel	3, AltVowelSplit3
+class-chain		1,5		2, AltVowel	2, AltVowelSplit
+class-chain		3,5		2, AltVowel	2, AltVowelSplit2
+class-chain		77,5		2, AltVowel	2, AltVowelSplit3
+
+class-chain		1,2,4		3,AltVowel
+class-chain		3,2,4		3,AltVowel
+class-chain		1,4		2,AltVowel
+class-chain		3,4		2,AltVowel2
+
+class-chain		77,2,4		3,AltVowelTtha
+class-chain		77,4		2,AltVowelTtha
+% AA sub has to be done elsewhere because of reordering
 
 lookup end
 
-
-lookup	18	context
-
-RightToLeft	no
-IgnoreBaseGlyphs	no
-IgnoreLigatures	no
-IgnoreMarks	no
-MarkAttachmentType	1
+lookup	 GiShi	context
+MarkAttachmentType	 1
 
 class definition begin
 Ga	1
 Sha	1
 Ga.icd	1
 Sha.icd	1
+
 I_dv	2
+
 class definition end
 
-class	2, 1	1, 19
+class	2,1	1,I_liga
 
 lookup end
 
-
-lookup	19	ligature
-
-RightToLeft	no
-IgnoreBaseGlyphs	no
-IgnoreLigatures	no
-IgnoreMarks	no
+lookup	 I_liga	ligature
 MarkAttachmentType	1
-
 Gi	I_dv	Ga
 Shi	I_dv	Sha
 Gi.icd	I_dv	Ga.icd
 Shi.icd	I_dv	Sha.icd
-
 lookup end
 
+lookup	 RephaCombis	context
+MarkAttachmentType	 1
 
-lookup	20	context
-
-RightToLeft	no
-IgnoreBaseGlyphs	no
-IgnoreLigatures	no
-IgnoreMarks	no
-MarkAttachmentType	1
-
+% list all carriers of Repha
 class definition begin
 I_dv	1
+II_dv	4
+
 Ka	2
 Kha	2
 Ga	2
@@ -902,6 +1794,19 @@ Ca	2
 Cha	2
 Ja	2
 Jha	2
+
+Nya	6
+%Nya_Ha	6
+Nya.icd	6
+Nya_nostem.icd	6
+Nya_Ta	6
+Ttha	6
+Tha.icd	6
+Ttha.icd	6
+Ttha.icd.center	6
+Ttha.icd.rt	6
+TthaTa	6
+
 Nyha	2
 Tta	2
 Dda	2
@@ -929,33 +1834,26 @@ Sha	2
 Ssa	2
 Sa	2
 Ha	2
-Ha_Nga	2
-Ha_Nya	2
-Ha_Nna	2
-Ha_Na	2
-Ha_Ma	2
-Ha_Ra	2
-Ha_La	2
-Ha.alt	2
-Ju	2
-Juu	2
-Ru	2
-Ruu	2
+
 Ka.icd	2
 Kha.icd	2
 Ga.icd	2
 Gha.icd	2
 Nga.icd	2
+Nga.icd.rt	2
 Ca.icd	2
 Cha.icd	2
 Ja.icd	2
 Jha.icd	2
 Tta.icd	2
 Dda.icd	2
+Dda.icd.rt	2
+Ddha.icd.rt	2
 Ddha.icd	2
 Nna.icd	2
 Ta.icd	2
 Da.icd	2
+Da.icd.rt	2
 Dha.icd	2
 Na.icd	2
 Pa.icd	2
@@ -970,37 +1868,29 @@ Sha.icd	2
 Ssa.icd	2
 Sa.icd	2
 Ha.icd	2
-Ka_Ssa	2
-Ja_Nya	2
-Ka_Nya	2
+
 Ka.icd.alt	2
 Ja.icd.alt	2
 Ha.icd.alt	2
 Ka.icd.wide	2
 Ja.icd.wide	2
-Ha.icd.wide	2
-NyGha	2
-NyJha	2
-NyKha	2
-NyMa	2
-NyPa	2
-NySa	2
-NySsa	2
-NyYa	2
-NyJha.alt	2
 Ka.icd.nohd	2
 Kha.icd.nohd	2
 Gha.icd.nohd	2
 Nga.icd.nohd	2
+Nga.icd.nohd.rt	2
 Ca.icd.nohd	2
 Cha.icd.nohd	2
 Ja.icd.nohd	2
 Jha.icd.nohd	2
 Tta.icd.nohd	2
 Dda.icd.nohd	2
+Dda.icd.nohd.rt	2
+Ddha.icd.nohd.rt	2
 Ddha.icd.nohd	2
 Ta.icd.nohd	2
 Da.icd.nohd	2
+Da.icd.nohd.rt	2
 Na.icd.nohd	2
 Pa.icd.nohd	2
 Pha.icd.nohd	2
@@ -1018,7 +1908,33 @@ Ja.icd.alt.nohd	2
 Ha.icd.alt.nohd	2
 Ka.icd.wide.nohd	2
 Ja.icd.wide.nohd	2
-Ha.icd.wide.nohd	2
+
+
+NyGha	2
+NyJha	2
+NyKha	2
+NyMa	2
+NyPa	2
+NySa	2
+NySsa	2
+NyYa	2
+
+Ju	2
+Juu	2
+Ru	2
+Ruu	2
+Ha_Nga	2
+Ha_Nya	2
+Ha_Nna	2
+Ha_Na	2
+Ha_Ma	2
+Ha_Ra	2
+Ha_La	2
+Ha_Pa	2
+Ha_Sa	2
+Ha_Ssa	2
+
+Ha.alt	2
 Ha_Nga.nohd	2
 Ha_Nya.nohd	2
 Ha_Nna.nohd	2
@@ -1026,65 +1942,119 @@ Ha_Na.nohd	2
 Ha_Ma.nohd	2
 Ha_Ra.nohd	2
 Ha_La.nohd	2
+Ha_Pa.nohd	1
+Ha_Sa.nohd	1
+Ha_Ssa.nohd	1
+Ha_Ya	2
+Ha_Ya.nohd	2
+
 Ha_Ta	2
 Ha_Kha	2
+Ha_Gha	2
+Ha_Jha	2
 Ha_Ta.nohd	2
 Ha_Kha.nohd	2
-Repha	3
-II_dv	4
-E_dv	5
-O_dv	5
-E_dv.sm	5
-E_dv.lg	5
-O_dv.sm	5
-O_dv.lg	5
-Nya	6
-Ttha	6
-Nya_Ha	6
-Nya.icd	6
-Nya_nostem.icd	6
-Ttha.icd	6
-Tha.icd	6
-NyDha	6
-Nya_Ta	6
-Repha_I_dv	7
-Gi	8
-Shi	8
-Gi.icd	8
-Shi.icd	8
-II_iv	9
-AI_iv	9
-AU_iv	9
-AA_dv	9
-AI_dv	9
-AU_dv	9
-AA_dv.alt	9
-AA_dv.alt2	9
-AA_dv.alt3	9
-AI_dv.sm	9
-AI_dv.lg	9
-AU_dv.sm	9
-AU_dv.lg	9
-AI_dv_top.alt	9
-AU_dv_part.alt	9
-AU_dv_part.alt2	9
-AU_dv_part.alt3	9
-AA_dv_head	9
-AA_dv.alt4	9
-AU_dv_part.alt4	9
-AA_dv.alt5	9
-AA_dv.alt6	9
-AU_dv_part.alt5	9
-AU_dv_part.alt6	9
-Kha.cd	10
-Gha.cd	10
-Jha.cd	10
-Dha.cd	10
-Pa.cd	10
-Ma.cd	10
-Ya.cd	10
-Ssa.cd	10
-Sa.cd	10
+
+Ka_Nya	2
+Ja_Nya	2
+Ka_Ssa	2
+
+JaKha	2
+JaKha.nohd	2
+Kssya	2
+Kssya.nohd	2
+Kkssa	2
+Ksska	2
+Kssma	2
+Kssna	2
+Kssnna	2
+Kssra	2
+Kssva	2
+Ngkssa	2
+Nkssa	2
+Pkssa	2
+Tkssa	2
+Ttkssa	2
+Kkssa.nohd	2
+Ksska.nohd	2
+Kssma.nohd	2
+Kssna.nohd	2
+Kssnna.nohd	2
+Kssra.nohd	2
+Kssva.nohd	2
+Ngkssa.nohd	2
+Nkssa.nohd	2
+Pkssa.nohd	2
+Tkssa.nohd	2
+Ttkssa.nohd	2
+Khtya	2
+Khtya.nohd	2
+Lhva	2
+Lhva.nohd	2
+Lhya	2
+Lhya.nohd	2
+Mhva	2
+Mhva.nohd	2
+Mhya	2
+Mhya.nohd	2
+Mpya	2
+Mpya.nohd	2
+Ndhva	2
+Ndhya	2
+Ndra	2
+Ndra.nohd	2
+Nhva	2
+Nhva.nohd	2
+Nhya	2
+Nhya.nohd	2
+Nska	2
+Nska.nohd	2
+Nsta	2
+Nsta.nohd	2
+Nstta	2
+Nstta.nohd	2
+Ntra	2
+Ntra.nohd	2
+Ntya	2
+Ntya.nohd	2
+Nycya	2
+PhaPha	2
+PhaPha.nohd	2
+PhaNna	2
+PhaNna.nohd	2
+PhaGha	2
+PhaJha	2
+PhaKha	2
+PhaMa	2
+PhaPa	2
+PhaSa	2
+PhaSsa	2
+PhaYa	2
+PhaGha.nohd	2
+PhaJha.nohd	2
+PhaKha.nohd	2
+PhaMa.nohd	2
+PhaPa.nohd	2
+PhaSa.nohd	2
+PhaSsa.nohd	2
+PhaYa.nohd	2
+Rya	2
+Rya.nohd	2
+Ssttra	2
+Ssttra.nohd	2
+Sthya	2
+Sthya.nohd	2
+Trtra	2
+Trtra.nohd	2
+Ra.icd	2
+Ra.icd.nohd	2
+TaNna	2
+TaNna.nohd	2
+%TthaTa	2
+Ndha	2
+Vdha	2
+Bdha	2
+
 Kha.diag	10
 Gha.diag	10
 Jha.diag	10
@@ -1093,147 +2063,277 @@ Ma.diag	10
 Ya.diag	10
 Ssa.diag	10
 Sa.diag	10
+
+% Tall CD forms
+Kha.cd	10
+Gha.cd	10
+Jha.cd	10
+Pa.cd	10
+Ma.cd	10
+Ya.cd	10
+Ssa.cd	10
+Sa.cd	10
+Dha.cd	10
+Dha.cd.alt	10
+Ta.post	10
+
+Repha_I_dv	7
+Repha	3
+
+E_dv	5
+E_dv.sm	5
+E_dv.md	5
+E_dv.lg	5
+E_dv.xlg	5
+O_dv	5
+O_dv.sm	5
+O_dv.md	5
+O_dv.lg	5
+O_dv.xlg	5
+O_dv.xxlg	5
+% AU_dv	5
+% AI_dv	5
+
+Gi	8
+Shi	8
+Gi.icd	8
+Shi.icd	8
+
+% uses Repha_AI_dv
+II_iv	9
+AI_iv	9
+AU_iv	9
+AI_dv	9
+AU_dv	9
+AI_dv.sm	9
+AI_dv.lg	9
+AU_dv.sm	9
+AU_dv.md	9
+AU_dv.lg	9
+AI_dv_top.alt	9
+AU_dv_part.alt	9
+AU_dv_part.alt2	9
+AU_dv_part.alt3	9
+AU_dv_part.ttha	9
+%AU_dv_part.alt4	9
+AU_dv_part.alt5	9
+AU_dv_part.alt6	9
+
+AU_dv_part.alt_anusvara	9
+AU_dv_part.alt_candra	9
+AU_dv_part.alt2_anusvara	9
+AU_dv_part.alt2_candra	9
+AU_dv_part.alt3_anusvara	9
+AU_dv_part.alt3_candra	9
+AU_dv_part.alt5_anusvara	9
+AU_dv_part.alt5_candra	9
+AU_dv_part.alt6_anusvara	9
+AU_dv_part.alt6_candra	9
+AU_dv_part.ttha_anusvara	9
+AU_dv_part.ttha_candra	9
+
+
+AA_dv	9
+AA_dv.alt	9
+AA_dv.alt2	9
+%AA_dv.alt3	9
+AA_dv.alt3ga	9
+%AA_dv_head	9
+%AA_dv.alt4	9
+AA_dv.alt5	9
+AA_dv.alt6	9
+
+
+
 class definition end
 
-class	1, 2, 2, 7	1, 28	4, 33
-class	1, 2, 3	1, 28	3, 33
-class	1, 6, 3	1, 28	3, 33
-class	1, 2, 7	1, 28	3, 33
-class	1, 6, 7	1, 28	3, 33
-class	2, 3, 5	3, 13	2, 33
-class	2, 3, 9	3, 13	2, 33
-class	2, 7, 9	3, 13	2, 33
-class	2, 7	2, 13
-class	3, 4	2, 12	1, 33
-class	3, 10, 9	3, 13	1, 33
-class	3, 10, 5	3, 13	1, 33
-class	3, 10	2, 13	1, 33
-class	6, 7, 9	3, 13	2, 33
-class	7, 4	2, 12	1, 33
-class	8, 3	2, 13
+%class	1,2,3,5	1,AltVowel	3,NullMark
+%class	1,6,3,5	1,AltVowel	3,NullMark
+%class	1,2,7,5	1,AltVowel	3,NullMark
+%class	1,6,7,5	1,AltVowel	3,NullMark
+% class	2,3,5,4	2,Repha	4,NullMark
 
+class	1,2,2,7	1,AltVowel	4,NullMark
+
+class	1,2,3	1,AltVowel	3,NullMark
+class	1,6,3	1,AltVowel	3,NullMark
+class	1,2,7	1,AltVowel	3,NullMark
+class	1,2,2,7	1,AltVowel	3,NullMark
+class	1,6,7	1,AltVowel	3,NullMark
+% USE REORDERING UPDATED SO REPHA MOVES AFTER B H+B*
+class	1,6,10,7	1,AltVowel	4,NullMark
+
+
+% class	2,3,4	2,I_RephaCombi
+% class	6,7,4	2,I_RephaCombi
+% class	2,7,4	2,I_RephaCombi
+class	3,4	2,IItoII_Repha	1,NullMark
+class	7,4	2,IItoII_Repha	1,NullMark
+
+class	2,3,5	3,DV_Repha_E	2,NullMark
+
+class	2,3,9	3,DV_Repha	2,NullMark
+class	8,3	2,DV_Repha
+
+class	2,10,3,9	4,DV_Repha	3,NullMark
+class	3,10,9	3,DV_Repha	1,NullMark
+class	3,10,5	3,DV_Repha	1,NullMark
+class	3,10	2,DV_Repha	1,NullMark
+class	6,7,9	3,DV_Repha	2,NullMark
+class	2,7,9	3,DV_Repha	2,NullMark
+class	2,7	2,DV_Repha
+
+% class	3,11	1,NullMark	2,DV_Repha
+% 1142C 11442 200D 1141B 11441
+
+%class	9,3	2,IItoII_Repha
 lookup end
 
+% lookup	 BaseLigs	ligature
 
-lookup	21	chained
 
-RightToLeft	no
-IgnoreBaseGlyphs	no
-IgnoreLigatures	no
-IgnoreMarks	no
+lookup	 BtmMarksAlt	chained
 MarkAttachmentType	2
 
 backtrackclass definition begin
 Ga	1
 Ta	1
-Sha	1
-Ta.nohd	1
 Bha.alt	1
+Sha	1
 Ga.cd	1
-Ta.post	1
-Bha.cd	1
+%Bha.cd	1
 Sha.cd	1
-Ga.cd.alt	1
-Bha.cd.alt	1
-Sha.cd.alt	1
+Ta.nohd	1
+Ta.post	1
 Ha_Ta	1
 Ha_Ta.nohd	1
 Nga_Ta	1
+Cha_Ta	1
 Tta_Ta	1
 Ddha_Ta	1
 Da_Ta	1
+DdaTa	1
 Pha_Ta	1
 Nya_Ta	1
 Nga_Ta.nohd	1
+Cha_Ta.nohd	1
 Tta_Ta.nohd	1
 Ddha_Ta.nohd	1
 Da_Ta.nohd	1
 Pha_Ta.nohd	1
 Ta.post.ns	1
 Ta.post.head	1
+
+
+Ha.alt	2
 Nha	2
 Mha	2
 Rha	2
 Lha	2
+Ha.alt.nohd	2
 Nha.nohd	2
 Mha.nohd	2
 Rha.nohd	2
 Lha.nohd	2
-Ha.alt.nohd	2
 Ha_Nga	2
 Ha_Nya	2
 Ha_Na	2
 Ha_Ra	2
 Ha_La	2
-Ha.alt	2
+Ha_Pa	2
+Ha_Sa	2
+Ha_Ssa	2
+
+
 Ha_Nga.nohd	2
 Ha_Nya.nohd	2
 Ha_Na.nohd	2
 Ha_Ma.nohd	2
 Ha_Ra.nohd	2
 Ha_La.nohd	2
+Ha_Pa.nohd	2
+Ha_Sa.nohd	2
+Ha_Ssa.nohd	2
+
+Ha_Nna	5
+%Nga_Ha	5
+%Nya_Ha	5
+%Nna_Ha	5
+%Na_Ha	5
+%Ma_Ha	5
+%La_Ha	5
+Ha_Nna.nohd	5
+%Nga_Ha.nohd	5
+%Na_Ha.nohd	5
+%Ma_Ha.nohd	5
+%La_Ha.nohd	5
+Nna.post	5
+Ha.cd	5
+Nna.post.alt2	5
+Da_Nna	5
+Da_Nna.nohd	5
+
+% Ligs with Rounded bottom
+Ngha	4
+Nyha	4
+Ngha.nohd	4
+Nyha.nohd	4
+Ka_Nya	4
+Kkssa	3
+Ngkssa	3
+Nkssa	3
+Pkssa	3
+Tkssa	3
+Ttkssa	3
+Kkssa.nohd	3
+Ngkssa.nohd	3
+Nkssa.nohd	3
+Pkssa.nohd	3
+Tkssa.nohd	3
+Ttkssa.nohd	3
+Pha.cd	3
+Bha.cd	3
+NaPha	3
+NaPha.nohd	3
+PhaPha	3
+PhaPha.nohd	3
+% Consonants with Rounded bottoms
 Nga	3
 Cha	3
 Tta	3
 Ttha	3
 Dda	3
 Ddha	3
-Ngha	4
-Nyha	4
-Ngha.nohd	4
-Nyha.nohd	4
-Ka_Nya	4
-Ha_Nna	5
-Nga_Ha	5
-Nya_Ha	5
-Nna_Ha	5
-Na_Ha	5
-Ma_Ha	5
-La_Ha	5
-Nna.post	5
-Nna.post.alt	5
-Nna.post.alt2	5
-Nna.post.nostem	5
-Ha_Nna.nohd	5
-Nga_Ha.nohd	5
-Na_Ha.nohd	5
-Ma_Ha.nohd	5
-La_Ha.nohd	5
-Da_Nna	5
-Da_Nna.nohd	5
+
 class definition end
 
+
 class definition begin
+
 Ja	1
 Ra	1
 Bha	2
 Ha	2
+
+% Virama	1
+% Nna	2
+
 U_dv	3
+UU_dv	5
+% UU_dv.alt	4
 R_dv	4
 RR_dv	4
 L_dv	4
 LL_dv	4
-UU_dv	5
+
 Ka.icd.alt	5
 Ja.icd.alt	5
-AA_dv	6
+
 II_dv	6
-O_dv	6
-AU_dv	6
-AA_dv.alt	6
-AA_dv.alt2	6
-AA_dv.alt3	6
-O_dv.sm	6
-O_dv.lg	6
-AU_dv.sm	6
-AU_dv.lg	6
 II_dv.xsm	6
 II_dv.med	6
 II_dv.lg	6
 II_dv.xlg	6
-AU_dv_part.alt	6
-AU_dv_part.alt2	6
-AU_dv_part.alt3	6
 II_dv_Repha	6
 II_dv_Repha.xsm	6
 II_dv_Repha.med	6
@@ -1245,15 +2345,34 @@ II_dv.xlg.alt	6
 II_dv_Repha.lg.alt	6
 II_dv_Repha.med.alt	6
 II_dv_Repha.xlg.alt	6
-AA_dv_head	6
 II_dv_Nya	6
 II_dv_Repha_Nya	6
-AA_dv.alt4	6
-AU_dv_part.alt4	6
+AA_dv	6
+AA_dv.alt	6
+AA_dv.alt2	6
+%AA_dv.alt3	6
+AA_dv.alt3ga	6
+%AA_dv_head	6
+%AA_dv.alt4	6
 AA_dv.alt5	6
 AA_dv.alt6	6
+AU_dv	6
+AU_dv.sm	6
+AU_dv.md	6
+AU_dv.lg	6
+AU_dv_part.alt	6
+AU_dv_part.alt2	6
+AU_dv_part.alt3	6
+%AU_dv_part.alt4	6
 AU_dv_part.alt5	6
 AU_dv_part.alt6	6
+O_dv	6
+O_dv.sm	6
+O_dv.md	6
+O_dv.lg	6
+O_dv.xlg	6
+O_dv.xxlg	6
+
 class definition end
 
 lookaheadclass definition begin
@@ -1263,57 +2382,78 @@ R_dv	1
 RR_dv	1
 L_dv	1
 LL_dv	1
+
+% Nya.cd	2
 class definition end
 
-class-chain		1, 6	1	1, 2	1, 27
-class-chain		1	1	1, 2	1, 27
-class-chain	3	1, 2		2, 53
-class-chain		2, 6	1	1, 2	1, 27
-class-chain		2	1	1, 2	1, 27
-class-chain	1	3		1, 28
-class-chain	2	3		1, 32
-class-chain	4	3		1, 32
-class-chain	5	3		1, 32
-class-chain	2	4		1, 32
-class-chain	4	4		1, 32
-class-chain	5	4		1, 32
-class-chain	3	5		1, 28
-class-chain	4	5		1, 29
-class-chain	2	5		1, 32
-class-chain	5	5		1, 28	1, 32
-class-chain	1	6, 3		2, 28
-class-chain	3	6, 5		2, 28
-class-chain	4	6, 5		2, 29
-class-chain	2	6, 3		2, 32
-class-chain	2	6, 4		2, 32
-class-chain	2	6, 5		2, 32
-class-chain	4	6, 3		2, 32
-class-chain	4	6, 4		2, 32
-class-chain	5	6, 3		2, 32
-class-chain	5	6, 4		2, 32
-class-chain	5	6, 5		2, 28	2, 32
+
+
+% Bha, Ha change form when followed by bottom mark
+class-chain		1,6	1	1,AltForm	1,VowelLigs
+class-chain		2,6	1	1,AltForm	1,VowelLigs
+
+class-chain		1	1	1,AltForm	1,VowelLigs
+class-chain		2	1	1,AltForm	1,VowelLigs
+
+% contextual U_dv
+class-chain	1	6,3		2, AltVowel
+class-chain	1	3		1, AltVowel
+% UU_dv loses stem with Rounded bottom consonants
+class-chain	3	6,5		2, AltVowel
+class-chain	3	5		1, AltVowel
+% UU_dv loses stem with Ha lig round bottom AND uses smaller variant
+class-chain	4	6,5		2, AltVowel2
+class-chain	4	5		1, AltVowel2
+
+% ligs use small vowel variants
+class-chain	2	6,3		2,SmVowel
+class-chain	2	6,4		2,SmVowel
+class-chain	2	6,5		2,SmVowel
+class-chain	4	6,3		2,SmVowel
+class-chain	4	6,4		2,SmVowel
+class-chain	5	6,3		2,SmVowel
+class-chain	5	6,4		2,SmVowel
+class-chain	5	6,5		2,AltVowel	2,SmVowel
+
+class-chain	2	3		1,SmVowel
+class-chain	2	4		1,SmVowel
+class-chain	2	5		1,SmVowel
+class-chain	4	3		1,SmVowel
+class-chain	4	4		1,SmVowel
+class-chain	5	3		1,SmVowel
+class-chain	5	4		1,SmVowel
+class-chain	5	5		1,AltVowel	1,SmVowel
+
+% Ka/Ja + Nya = ligature
+%class-chain		5	2	1,LigsAndConjuncts
+% Non-Initial Nna = alternate post form with Rounded Base
+class-chain	3	1,2		2,PostFormAlt
 
 lookup end
 
-
-lookup	22	context
-
-RightToLeft	no
-IgnoreBaseGlyphs	no
-IgnoreLigatures	no
-IgnoreMarks	no
+lookup	 MeasureTops	context
+% set mark attachment class to top marks only
 MarkAttachmentType	1
 
 class definition begin
+
+% consonants
+% default is neutral size/no class
+
+
+% uses Large Vowel
+% uses Lg Vowel
 Ka_Nya	1
-Ka.icd.alt	1
-Ja.icd.alt	1
-Ha.icd.alt	1
 Ka.icd.wide	1
-Ha.icd.wide	1
-Ha_Kha	1
+% Ja.icd.wide	1
 Da_Nna	1
-Ta.post	2
+Ka.icd.alt	98
+Trtra	96
+Nstta	96
+Ja.icd.alt	1
+
+
+% Small Vowel
 Nga	3
 Ngha	3
 Ca	3
@@ -1321,44 +2461,123 @@ Tta	3
 Dda	3
 Na	3
 Nha	3
+% Pha	3
 Ra	3
 Rha	3
 Ha	3
-Ha_Nga	3
-Ha_Nya	3
+
+Ha.icd.alt	1
+Ha.icd	1
+Ha_Kha	96
+Ha_Gha	96
+Ha_Jha	1
+Ha_Ta	96
+Ha_La	96
+Ha_Nga	96
+Ha_Nya	96
 Ha_Nna	3
-Ha_Na	3
-Ha_Ra	3
-Nga_Ha	3
-Na_Ha	3
-Ma_Ha	3
-La_Ha	3
+Ha_Ma	1
+Ha_Na	96
+Ha_Ra	96
+Ha_Pa	1
+Ha_Sa	1
+Ha_Ya	1
+Ha_Ssa	1
+%Nga_Ha	3
+%Na_Ha	3
+%Ma_Ha	3
+%La_Ha	3
+% Nga_Ta is wide. needs large vowel
+Nga_Ta	1
+Cha_Ta	1
+Tta_Ta	3
+Ddha_Ta	3
+Da_Ta	3
+DdaTa	3
+Pha_Ta	3
+PhaPha	3
+PhaNna	3
+PhaGha	3
+PhaJha	3
+PhaKha	3
+PhaMa	3
+PhaPa	3
+PhaSa	3
+PhaSsa	3
+PhaYa	3
+NaPha	3
+
+Mpya	97
+Nhya	95
+Mhya	95
+Lhya	95
+Khtya	97
+Sthya	1
+Nsta	1
+Nska	1
+Mhva	1
+JaKha	1
+TaNna	92
+Kssya	1
+Kkssa	92
+Ksska	92
+Kssma	92
+Kssna	92
+Kssnna	92
+Kssra	92
+Kssva	92
+Ngkssa	92
+Nkssa	92
+Pkssa	92
+Tkssa	92
+%Ttkssa	1
+
+Nhva	94
+Lhva	94
+Ssttra	93
+
 Ka.icd	3
 Gha.icd	3
+Nga.icd	9
+Nga.icd.rt	9
 Ca.icd	3
 Cha.icd	3
+Tta.icd	77
+Dda.icd	77
+Dda.icd.rt	9
+Ddha.icd.rt	9
+Ddha.icd	9
+Da.icd	9
+Da.icd.rt	9
+Na.icd	9
 Pa.icd	3
+Pha.icd	77
 Bha.icd	3
+Ba.icd	77
 Ma.icd	3
 Ya.icd	3
 La.icd	3
 Va.icd	3
 Ssa.icd	3
 Sa.icd	3
-Nga_Ta	3
-Tta_Ta	3
-Ddha_Ta	3
-Da_Ta	3
-Pha_Ta	3
+Ra.icd	3
+
 Ddha	4
 Lha	4
+
 Nyha	5
 Ba	5
-Ka	6
+
+% Neutral Top
+Ka	96
 Kha	6
-Cha	6
+Kha.icd	6
+Cha	96
 Ja	6
+Ja.icd	6
 Jha	6
+Jha.icd	6
+Ta.icd	91
 Pa	6
 Bha	6
 Ma	6
@@ -1368,25 +2587,63 @@ La	6
 Wa	6
 Ssa	6
 Sa	6
-Ra_Ha	6
+%Ha.icd	6
+%Ra_Ha	6
 Ju	6
 Juu	6
 Ru	6
 Ruu	6
-Kha.icd	6
-Ja.icd	6
-Jha.icd	6
-Ta.icd	6
-Ha.icd	6
+%Ba.icd	5
+
+% Headless forms take SPLIT Contextual form
+% Ga.icd	2
+% Ga.half	2
+% Nna_Ha	2
+% Nna.icd	2
+% Nna.half	2
+% Dha.icd	2
+% Dha.half	2
+% Tha.icd	2
+% Tha.half	2
+% Sha.icd	2
+% Sha.half	2
+% Ga	2
+% Nna	2
+% Dha	2
+% Tha	2
+% Sha	2
+
+% Headless and Round top uses special AA
+% Nya.icd	6
+% Nya_nostem.icd	6
+% Nya_Ta	6
+% Ttha.icd	6
+% % Ka_Ssa	6
+% Nya	6
+% Ttha	6
+% 
+% NyKha	6
+% NyGha	6
+% NyJha	6
+% NyPa	6
+% NyMa	6
+% NyYa	6
+% NySsa	6
+% NySa	6
+
+% Tall CD forms use Neutral Top 
 Kha.cd	7
 Gha.cd	7
 Jha.cd	7
-Dha.cd	7
 Pa.cd	7
 Ma.cd	7
 Ya.cd	7
 Ssa.cd	7
 Sa.cd	7
+Dha.cd	7
+Dha.cd.alt	7
+
+% Diags only used with Headless which uses Contextual vowels = no NOHD
 Kha.diag	8
 Gha.diag	8
 Jha.diag	8
@@ -1395,76 +2652,790 @@ Ma.diag	8
 Ya.diag	8
 Ssa.diag	8
 Sa.diag	8
-Nga.icd	9
-Tta.icd	9
-Dda.icd	9
-Ddha.icd	9
-Da.icd	9
-Na.icd	9
-Pha.icd	9
-Ba.icd	9
+
+% AA_dv	8
+% I_dv	7
+% II_dv	7
+% U_dv	9
+% UU_dv	6
+% R_dv	4
+% RR_dv	4
+% L_dv	4
+% LL_dv	4
+%AA_dv	11
+
 Ta.half	10
+Ta.post	2
+
 E_dv	12
 AI_dv	12
+
 O_dv	13
 AU_dv	13
+
+
 class definition end
 
-class	1, 12	1, 26	2, 39
-class	1, 13	1, 26	2, 39
-class	2, 13	2, 39
-class	3, 7, 12	1, 26	2, 26	3, 39
-class	3, 12	1, 26	2, 32
-class	3, 7, 13	1, 26	2, 26	3, 39
-class	3, 13	1, 26	2, 32
-class	4, 12	1, 26	2, 32
-class	5, 13	1, 26	2, 32
-class	6, 7, 12	1, 26	2, 26
-class	6, 12	1, 26
-class	6, 7, 13	1, 26	2, 26	3, 39
-class	6, 13	1, 26
-class	8, 12	2, 39
-class	8, 13	2, 39
-class	9, 7, 12	1, 26	2, 26
-class	9, 12	1, 26
-class	9, 7, 13	1, 26	2, 26
-class	9, 13	1, 26	2, 32
-class	10, 6, 13	2, 26	3, 39
+% class legend, consonants
+% 1		standard size, headlined consonants
+% 2
+% 3		small consonant, headline
+% 4		small consonant, E/AI only
+% 5		small consonant, O/AU only
+
+% Top Vowels
+% 11		AA
+% 12		E/AI
+% 13		O/AU
+
+% should not necessarily try to change the vowel here 
+% because we don't have the whole context
+%class	1,12	1,HeadlessForm	2,LgVowel
+class	1,13	1,HeadlessForm	2,XLgVowel
+class	97,12	1,HeadlessForm	2,XXLgVowel
+class	97,13	1,HeadlessForm	2,XXLgVowel
+class	98,12	1,HeadlessForm	2,LgVowel
+class	98,13	1,HeadlessForm	2,XLgVowel
+
+class	96,12	1,HeadlessForm	2,MedVowel
+class	96,13	1,HeadlessForm	2,MedVowel
+
+class	95,12	1,HeadlessForm	2,XLgVowel
+class	95,13	1,HeadlessForm	2,TallVowelXLg
+
+class	94,12	1,HeadlessForm	2,LgVowel
+class	94,13	1,HeadlessForm	2,TallVowelMed
+
+class	92,12	1,HeadlessForm	2,MedVowel
+class	92,13	1,HeadlessForm	2,MedVowel
+
+class	91,7,12	1,HeadlessForm	2,HeadlessForm	3,LgVowel
+class	91,7,13	1,HeadlessForm	2,HeadlessForm	3,LgVowel
+
+class	91,12	1,HeadlessForm	2,SmVowel
+class	91,13	1,HeadlessForm	2,SmVowel
+
+class	93,13	1,HeadlessForm	2,TallVowelSmall
+
+class	8,12	2,LgVowel
+class	8,13	2,LgVowel
+
+% ICD form + ShimHead uses vowel that is one size larger than current
+% class	3,11,12	3,NextSizeVowel ???
+class	9,7,12	1,HeadlessForm	2,HeadlessForm	3,LgVowel
+class	77,7,12	1,HeadlessForm	2,HeadlessForm	3,MedVowel
+
+% Kha.icd needs large E vowel
+%class	6,7,12	1,HeadlessForm	2,HeadlessForm,	3,LgVowel
+class	1,7,12	1,HeadlessForm	2,HeadlessForm	3,XLgVowel
+class	1,7,13	1,HeadlessForm	2,HeadlessForm	3,XLgVowel
+class	6,7,12	1,HeadlessForm	2,HeadlessForm	3,LgVowel
+
+% THIS IS CAUSING THE WRONG FORM of E_dv FOR Cha + Ya. SHOULD BE SHORT, NOT LONG
+
+class	3,7,12	1,HeadlessForm	2,HeadlessForm	3,LgVowel
+%class	3,12	1,HeadlessForm	2,SmVowel
+%class	4,12	1,HeadlessForm	2,SmVowel
+class	3,12	1,HeadlessForm
+class	4,12	1,HeadlessForm
+class	6,12	1,HeadlessForm
+class	9,12	1,HeadlessForm
+class	77,12	1,HeadlessForm
+
+class	3,7,13	1,HeadlessForm	2,HeadlessForm	3,XLgVowel
+class	6,7,13	1,HeadlessForm	2,HeadlessForm	3,XLgVowel
+class	9,7,13	1,HeadlessForm	2,HeadlessForm
+class	77,7,13	1,HeadlessForm	2,HeadlessForm	3,MedVowel
+class	77,2,13	1,HeadlessForm	2,HeadlessForm	3,MedVowel
+%class	9,7,13	1,HeadlessForm	2,HeadlessForm	3,MedVowel
+%class	3,13	1,HeadlessForm	2,SmVowel
+class	3,13	1,HeadlessForm
+%class	9,13	1,HeadlessForm	2,SmVowel
+class	9,13	1,HeadlessForm
+class	77,13	1,HeadlessForm
+%class	5,13	1,HeadlessForm	2,SmVowel
+%class	10,6,13	2,HeadlessForm	3,LgVowel
+class	5,13	1,HeadlessForm
+class	10,6,13	2,HeadlessForm
+class	6,13	1,HeadlessForm	2,MedVowel
+
+class	2,12	2,LgVowel
+class	2,13	2,XLgVowel
+class	1,13	2,LgVowel
+%class	98,13	2,XLgVowel
+class	1,12	2,LgVowel
 
 lookup end
 
 
-lookup	23	single
-
-RightToLeft	no
-IgnoreBaseGlyphs	no
-IgnoreLigatures	no
+lookup	DoNothing	single
 IgnoreMarks	yes
 
 space	space
+lookup end
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+lookup	AddShim10	multiple
+
+Ba.cd	Ba.cd	ShimHead10
+Bha.cd	Bha.cd	ShimHead10
+Ca.cd	Ca.cd	ShimHead10
+Cha.cd	Cha.cd	ShimHead10
+Da.cd	Da.cd	ShimHead10
+Dda.cd	Dda.cd	ShimHead10
+Ddha.cd	Ddha.cd	ShimHead10
+Dha.cd	Dha.cd	ShimHead10
+Dha.cd.alt	Dha.cd.alt	ShimHead10
+Ga.cd	Ga.cd	ShimHead10
+Ha.cd	Ha.cd	ShimHead10
+Ja.cd	Ja.cd	ShimHead10
+Jha.cd.nohd.ns	Jha.cd.nohd.ns	ShimHead10
+Ka.cd	Ka.cd	ShimHead10
+La.cd	La.cd	ShimHead10
+Ma.cd.nohd.ns	Ma.cd.nohd.ns	ShimHead10
+Na.cd	Na.cd	ShimHead10
+Nga.cd	Nga.cd	ShimHead10
+Nya.cd	Nya.cd	ShimHead10
+Nya_low.cd	Nya_low.cd	ShimHead10
+Nya_stem.cd	Nya_stem.cd	ShimHead10
+Nya_stem.cd.alt	Nya_stem.cd.alt	ShimHead10
+Pa.cd.nohd.ns	Pa.cd.nohd.ns	ShimHead10
+Pha.cd	Pha.cd	ShimHead10
+Ra.cd	Ra.cd	ShimHead10
+Sa.cd.nohd.ns	Sa.cd.nohd.ns	ShimHead10
+Sha.cd	Sha.cd	ShimHead10
+Ssa.cd.nohd.ns	Ssa.cd.nohd.ns	ShimHead10
+Tta.cd	Tta.cd	ShimHead10
+Ttha.cd	Ttha.cd	ShimHead10
+Va.cd	Va.cd	ShimHead10
+Ya.cd.nohd.ns	Ya.cd.nohd.ns	ShimHead10
+Nna.post	Nna.post	ShimHead10
+Tha.post	Tha.post	ShimHead10
 
 lookup end
 
 
-lookup	24	chained
+lookup	AddShim20	multiple
 
-RightToLeft	no
-IgnoreBaseGlyphs	no
-IgnoreLigatures	no
-IgnoreMarks	no
+Ba.cd	Ba.cd	ShimHead20
+Bha.cd	Bha.cd	ShimHead20
+Ca.cd	Ca.cd	ShimHead20
+Cha.cd	Cha.cd	ShimHead20
+Da.cd	Da.cd	ShimHead20
+Dda.cd	Dda.cd	ShimHead20
+Ddha.cd	Ddha.cd	ShimHead20
+Dha.cd	Dha.cd	ShimHead20
+Dha.cd.alt	Dha.cd.alt	ShimHead20
+Ga.cd	Ga.cd	ShimHead20
+Ha.cd	Ha.cd	ShimHead20
+Ja.cd	Ja.cd	ShimHead20
+Jha.cd.nohd.ns	Jha.cd.nohd.ns	ShimHead20
+Ka.cd	Ka.cd	ShimHead20
+La.cd	La.cd	ShimHead20
+Ma.cd.nohd.ns	Ma.cd.nohd.ns	ShimHead20
+Na.cd	Na.cd	ShimHead20
+Nga.cd	Nga.cd	ShimHead20
+Nya.cd	Nya.cd	ShimHead20
+Nya_low.cd	Nya_low.cd	ShimHead20
+Nya_stem.cd	Nya_stem.cd	ShimHead20
+Nya_stem.cd.alt	Nya_stem.cd.alt	ShimHead20
+Pa.cd.nohd.ns	Pa.cd.nohd.ns	ShimHead20
+Pha.cd	Pha.cd	ShimHead20
+Ra.cd	Ra.cd	ShimHead20
+Sa.cd.nohd.ns	Sa.cd.nohd.ns	ShimHead20
+Sha.cd	Sha.cd	ShimHead20
+Ssa.cd.nohd.ns	Ssa.cd.nohd.ns	ShimHead20
+Tta.cd	Tta.cd	ShimHead20
+Ttha.cd	Ttha.cd	ShimHead20
+Va.cd	Va.cd	ShimHead20
+Ya.cd.nohd.ns	Ya.cd.nohd.ns	ShimHead20
+Nna.post	Nna.post	ShimHead20
+Tha.post	Tha.post	ShimHead20
+
+lookup end
+
+lookup	AddShim30	multiple
+
+Ba.cd	Ba.cd	ShimHead30
+Bha.cd	Bha.cd	ShimHead30
+Ca.cd	Ca.cd	ShimHead30
+Cha.cd	Cha.cd	ShimHead30
+Da.cd	Da.cd	ShimHead30
+Dda.cd	Dda.cd	ShimHead30
+Ddha.cd	Ddha.cd	ShimHead30
+Dha.cd	Dha.cd	ShimHead30
+Dha.cd.alt	Dha.cd.alt	ShimHead30
+Ga.cd	Ga.cd	ShimHead30
+Ha.cd	Ha.cd	ShimHead30
+Ja.cd	Ja.cd	ShimHead30
+Jha.cd.nohd.ns	Jha.cd.nohd.ns	ShimHead30
+Ka.cd	Ka.cd	ShimHead30
+La.cd	La.cd	ShimHead30
+Ma.cd.nohd.ns	Ma.cd.nohd.ns	ShimHead30
+Na.cd	Na.cd	ShimHead30
+Nga.cd	Nga.cd	ShimHead30
+Nya.cd	Nya.cd	ShimHead30
+Nya_low.cd	Nya_low.cd	ShimHead30
+Nya_stem.cd	Nya_stem.cd	ShimHead30
+Nya_stem.cd.alt	Nya_stem.cd.alt	ShimHead30
+Pa.cd.nohd.ns	Pa.cd.nohd.ns	ShimHead30
+Pha.cd	Pha.cd	ShimHead30
+Ra.cd	Ra.cd	ShimHead30
+Sa.cd.nohd.ns	Sa.cd.nohd.ns	ShimHead30
+Sha.cd	Sha.cd	ShimHead30
+Ssa.cd.nohd.ns	Ssa.cd.nohd.ns	ShimHead30
+Tta.cd	Tta.cd	ShimHead30
+Ttha.cd	Ttha.cd	ShimHead30
+Va.cd	Va.cd	ShimHead30
+Ya.cd.nohd.ns	Ya.cd.nohd.ns	ShimHead30
+Nna.post	Nna.post	ShimHead30
+Tha.post	Tha.post	ShimHead30
+
+
+lookup end
+
+
+lookup	AddShim40	multiple
+
+Ba.cd	Ba.cd	ShimHead40
+Bha.cd	Bha.cd	ShimHead40
+Ca.cd	Ca.cd	ShimHead40
+Cha.cd	Cha.cd	ShimHead40
+Da.cd	Da.cd	ShimHead40
+Dda.cd	Dda.cd	ShimHead40
+Ddha.cd	Ddha.cd	ShimHead40
+Dha.cd	Dha.cd	ShimHead40
+Dha.cd.alt	Dha.cd.alt	ShimHead40
+Ga.cd	Ga.cd	ShimHead40
+Ha.cd	Ha.cd	ShimHead40
+Ja.cd	Ja.cd	ShimHead40
+Jha.cd.nohd.ns	Jha.cd.nohd.ns	ShimHead40
+Ka.cd	Ka.cd	ShimHead40
+La.cd	La.cd	ShimHead40
+Ma.cd.nohd.ns	Ma.cd.nohd.ns	ShimHead40
+Na.cd	Na.cd	ShimHead40
+Nga.cd	Nga.cd	ShimHead40
+Nya.cd	Nya.cd	ShimHead40
+Nya_low.cd	Nya_low.cd	ShimHead40
+Nya_stem.cd	Nya_stem.cd	ShimHead40
+Nya_stem.cd.alt	Nya_stem.cd.alt	ShimHead40
+Pa.cd.nohd.ns	Pa.cd.nohd.ns	ShimHead40
+Pha.cd	Pha.cd	ShimHead40
+Ra.cd	Ra.cd	ShimHead40
+Sa.cd.nohd.ns	Sa.cd.nohd.ns	ShimHead40
+Sha.cd	Sha.cd	ShimHead40
+Ssa.cd.nohd.ns	Ssa.cd.nohd.ns	ShimHead40
+Tta.cd	Tta.cd	ShimHead40
+Ttha.cd	Ttha.cd	ShimHead40
+Va.cd	Va.cd	ShimHead40
+Ya.cd.nohd.ns	Ya.cd.nohd.ns	ShimHead40
+Nna.post	Nna.post	ShimHead40
+Tha.post	Tha.post	ShimHead40
+
+lookup end
+
+
+lookup	AddShim50	multiple
+
+Ba.cd	Ba.cd	ShimHead50
+Bha.cd	Bha.cd	ShimHead50
+Ca.cd	Ca.cd	ShimHead50
+Cha.cd	Cha.cd	ShimHead50
+Da.cd	Da.cd	ShimHead50
+Dda.cd	Dda.cd	ShimHead50
+Ddha.cd	Ddha.cd	ShimHead50
+Dha.cd	Dha.cd	ShimHead50
+Dha.cd.alt	Dha.cd.alt	ShimHead50
+Ga.cd	Ga.cd	ShimHead50
+Ha.cd	Ha.cd	ShimHead50
+Ja.cd	Ja.cd	ShimHead50
+Jha.cd.nohd.ns	Jha.cd.nohd.ns	ShimHead50
+Ka.cd	Ka.cd	ShimHead50
+La.cd	La.cd	ShimHead50
+Ma.cd.nohd.ns	Ma.cd.nohd.ns	ShimHead50
+Na.cd	Na.cd	ShimHead50
+Nga.cd	Nga.cd	ShimHead50
+Nya.cd	Nya.cd	ShimHead50
+Nya_low.cd	Nya_low.cd	ShimHead50
+Nya_stem.cd	Nya_stem.cd	ShimHead50
+Nya_stem.cd.alt	Nya_stem.cd.alt	ShimHead50
+Pa.cd.nohd.ns	Pa.cd.nohd.ns	ShimHead50
+Pha.cd	Pha.cd	ShimHead50
+Ra.cd	Ra.cd	ShimHead50
+Sa.cd.nohd.ns	Sa.cd.nohd.ns	ShimHead50
+Sha.cd	Sha.cd	ShimHead50
+Ssa.cd.nohd.ns	Ssa.cd.nohd.ns	ShimHead50
+Tta.cd	Tta.cd	ShimHead50
+Ttha.cd	Ttha.cd	ShimHead50
+Va.cd	Va.cd	ShimHead50
+Ya.cd.nohd.ns	Ya.cd.nohd.ns	ShimHead50
+Nna.post	Nna.post	ShimHead50
+Tha.post	Tha.post	ShimHead50
+
+lookup end
+
+
+lookup	AddShim60	multiple
+
+Ba.cd	Ba.cd	ShimHead60
+Bha.cd	Bha.cd	ShimHead60
+Ca.cd	Ca.cd	ShimHead60
+Cha.cd	Cha.cd	ShimHead60
+Da.cd	Da.cd	ShimHead60
+Dda.cd	Dda.cd	ShimHead60
+Ddha.cd	Ddha.cd	ShimHead60
+Dha.cd	Dha.cd	ShimHead60
+Dha.cd.alt	Dha.cd.alt	ShimHead60
+Ga.cd	Ga.cd	ShimHead60
+Ha.cd	Ha.cd	ShimHead60
+Ja.cd	Ja.cd	ShimHead60
+Jha.cd.nohd.ns	Jha.cd.nohd.ns	ShimHead60
+Ka.cd	Ka.cd	ShimHead60
+La.cd	La.cd	ShimHead60
+Ma.cd.nohd.ns	Ma.cd.nohd.ns	ShimHead60
+Na.cd	Na.cd	ShimHead60
+Nga.cd	Nga.cd	ShimHead60
+Nya.cd	Nya.cd	ShimHead60
+Nya_low.cd	Nya_low.cd	ShimHead60
+Nya_stem.cd	Nya_stem.cd	ShimHead60
+Nya_stem.cd.alt	Nya_stem.cd.alt	ShimHead60
+Pa.cd.nohd.ns	Pa.cd.nohd.ns	ShimHead60
+Pha.cd	Pha.cd	ShimHead60
+Ra.cd	Ra.cd	ShimHead60
+Sa.cd.nohd.ns	Sa.cd.nohd.ns	ShimHead60
+Sha.cd	Sha.cd	ShimHead60
+Ssa.cd.nohd.ns	Ssa.cd.nohd.ns	ShimHead60
+Tta.cd	Tta.cd	ShimHead60
+Ttha.cd	Ttha.cd	ShimHead60
+Va.cd	Va.cd	ShimHead60
+Ya.cd.nohd.ns	Ya.cd.nohd.ns	ShimHead60
+Nna.post	Nna.post	ShimHead60
+Tha.post	Tha.post	ShimHead60
+
+lookup end
+
+
+lookup	AddShim70	multiple
+
+Ba.cd	Ba.cd	ShimHead70
+Bha.cd	Bha.cd	ShimHead70
+Ca.cd	Ca.cd	ShimHead70
+Cha.cd	Cha.cd	ShimHead70
+Da.cd	Da.cd	ShimHead70
+Dda.cd	Dda.cd	ShimHead70
+Ddha.cd	Ddha.cd	ShimHead70
+Dha.cd	Dha.cd	ShimHead70
+Dha.cd.alt	Dha.cd.alt	ShimHead70
+Ga.cd	Ga.cd	ShimHead70
+Ha.cd	Ha.cd	ShimHead70
+Ja.cd	Ja.cd	ShimHead70
+Jha.cd.nohd.ns	Jha.cd.nohd.ns	ShimHead70
+Ka.cd	Ka.cd	ShimHead70
+La.cd	La.cd	ShimHead70
+Ma.cd.nohd.ns	Ma.cd.nohd.ns	ShimHead70
+Na.cd	Na.cd	ShimHead70
+Nga.cd	Nga.cd	ShimHead70
+Nya.cd	Nya.cd	ShimHead70
+Nya_low.cd	Nya_low.cd	ShimHead70
+Nya_stem.cd	Nya_stem.cd	ShimHead70
+Nya_stem.cd.alt	Nya_stem.cd.alt	ShimHead70
+Pa.cd.nohd.ns	Pa.cd.nohd.ns	ShimHead70
+Pha.cd	Pha.cd	ShimHead70
+Ra.cd	Ra.cd	ShimHead70
+Sa.cd.nohd.ns	Sa.cd.nohd.ns	ShimHead70
+Sha.cd	Sha.cd	ShimHead70
+Ssa.cd.nohd.ns	Ssa.cd.nohd.ns	ShimHead70
+Tta.cd	Tta.cd	ShimHead70
+Ttha.cd	Ttha.cd	ShimHead70
+Va.cd	Va.cd	ShimHead70
+Ya.cd.nohd.ns	Ya.cd.nohd.ns	ShimHead70
+Nna.post	Nna.post	ShimHead70
+Tha.post	Tha.post	ShimHead70
+
+lookup end
+
+
+lookup	AddShim80	multiple
+
+Ba.cd	Ba.cd	ShimHead80
+Bha.cd	Bha.cd	ShimHead80
+Ca.cd	Ca.cd	ShimHead80
+Cha.cd	Cha.cd	ShimHead80
+Da.cd	Da.cd	ShimHead80
+Dda.cd	Dda.cd	ShimHead80
+Ddha.cd	Ddha.cd	ShimHead80
+Dha.cd	Dha.cd	ShimHead80
+Dha.cd.alt	Dha.cd.alt	ShimHead80
+Ga.cd	Ga.cd	ShimHead80
+Ha.cd	Ha.cd	ShimHead80
+Ja.cd	Ja.cd	ShimHead80
+Jha.cd.nohd.ns	Jha.cd.nohd.ns	ShimHead80
+Ka.cd	Ka.cd	ShimHead80
+La.cd	La.cd	ShimHead80
+Ma.cd.nohd.ns	Ma.cd.nohd.ns	ShimHead80
+Na.cd	Na.cd	ShimHead80
+Nga.cd	Nga.cd	ShimHead80
+Nya.cd	Nya.cd	ShimHead80
+Nya_low.cd	Nya_low.cd	ShimHead80
+Nya_stem.cd	Nya_stem.cd	ShimHead80
+Nya_stem.cd.alt	Nya_stem.cd.alt	ShimHead80
+Pa.cd.nohd.ns	Pa.cd.nohd.ns	ShimHead80
+Pha.cd	Pha.cd	ShimHead80
+Ra.cd	Ra.cd	ShimHead80
+Sa.cd.nohd.ns	Sa.cd.nohd.ns	ShimHead80
+Sha.cd	Sha.cd	ShimHead80
+Ssa.cd.nohd.ns	Ssa.cd.nohd.ns	ShimHead80
+Tta.cd	Tta.cd	ShimHead80
+Ttha.cd	Ttha.cd	ShimHead80
+Va.cd	Va.cd	ShimHead80
+Ya.cd.nohd.ns	Ya.cd.nohd.ns	ShimHead80
+Nna.post	Nna.post	ShimHead80
+Tha.post	Tha.post	ShimHead80
+
+lookup end
+
+
+lookup	AddShim90	multiple
+
+Ba.cd	Ba.cd	ShimHead90
+Bha.cd	Bha.cd	ShimHead90
+Ca.cd	Ca.cd	ShimHead90
+Cha.cd	Cha.cd	ShimHead90
+Da.cd	Da.cd	ShimHead90
+Dda.cd	Dda.cd	ShimHead90
+Ddha.cd	Ddha.cd	ShimHead90
+Dha.cd	Dha.cd	ShimHead90
+Dha.cd.alt	Dha.cd.alt	ShimHead90
+Ga.cd	Ga.cd	ShimHead90
+Ha.cd	Ha.cd	ShimHead90
+Ja.cd	Ja.cd	ShimHead90
+Jha.cd.nohd.ns	Jha.cd.nohd.ns	ShimHead90
+Ka.cd	Ka.cd	ShimHead90
+La.cd	La.cd	ShimHead90
+Ma.cd.nohd.ns	Ma.cd.nohd.ns	ShimHead90
+Na.cd	Na.cd	ShimHead90
+Nga.cd	Nga.cd	ShimHead90
+Nya.cd	Nya.cd	ShimHead90
+Nya_low.cd	Nya_low.cd	ShimHead90
+Nya_stem.cd	Nya_stem.cd	ShimHead90
+Nya_stem.cd.alt	Nya_stem.cd.alt	ShimHead90
+Pa.cd.nohd.ns	Pa.cd.nohd.ns	ShimHead90
+Pha.cd	Pha.cd	ShimHead90
+Ra.cd	Ra.cd	ShimHead90
+Sa.cd.nohd.ns	Sa.cd.nohd.ns	ShimHead90
+Sha.cd	Sha.cd	ShimHead90
+Ssa.cd.nohd.ns	Ssa.cd.nohd.ns	ShimHead90
+Tta.cd	Tta.cd	ShimHead90
+Ttha.cd	Ttha.cd	ShimHead90
+Va.cd	Va.cd	ShimHead90
+Ya.cd.nohd.ns	Ya.cd.nohd.ns	ShimHead90
+Nna.post	Nna.post	ShimHead90
+Tha.post	Tha.post	ShimHead90
+
+lookup end
+
+
+lookup	AddShim100	multiple
+
+Ba.cd	Ba.cd	ShimHead100
+Bha.cd	Bha.cd	ShimHead100
+Ca.cd	Ca.cd	ShimHead100
+Cha.cd	Cha.cd	ShimHead100
+Da.cd	Da.cd	ShimHead100
+Dda.cd	Dda.cd	ShimHead100
+Ddha.cd	Ddha.cd	ShimHead100
+Dha.cd	Dha.cd	ShimHead100
+Dha.cd.alt	Dha.cd.alt	ShimHead100
+Ga.cd	Ga.cd	ShimHead100
+Ha.cd	Ha.cd	ShimHead100
+Ja.cd	Ja.cd	ShimHead100
+Jha.cd.nohd.ns	Jha.cd.nohd.ns	ShimHead100
+Ka.cd	Ka.cd	ShimHead100
+La.cd	La.cd	ShimHead100
+Ma.cd.nohd.ns	Ma.cd.nohd.ns	ShimHead100
+Na.cd	Na.cd	ShimHead100
+Nga.cd	Nga.cd	ShimHead100
+Nya.cd	Nya.cd	ShimHead100
+Nya_low.cd	Nya_low.cd	ShimHead100
+Nya_stem.cd	Nya_stem.cd	ShimHead100
+Nya_stem.cd.alt	Nya_stem.cd.alt	ShimHead100
+Pa.cd.nohd.ns	Pa.cd.nohd.ns	ShimHead100
+Pha.cd	Pha.cd	ShimHead100
+Ra.cd	Ra.cd	ShimHead100
+Sa.cd.nohd.ns	Sa.cd.nohd.ns	ShimHead100
+Sha.cd	Sha.cd	ShimHead100
+Ssa.cd.nohd.ns	Ssa.cd.nohd.ns	ShimHead100
+Tta.cd	Tta.cd	ShimHead100
+Ttha.cd	Ttha.cd	ShimHead100
+Va.cd	Va.cd	ShimHead100
+Ya.cd.nohd.ns	Ya.cd.nohd.ns	ShimHead100
+Nna.post	Nna.post	ShimHead100
+Tha.post	Tha.post	ShimHead100
+
+lookup end
+
+
+lookup	AddShim120	multiple
+
+Ba.cd	Ba.cd	ShimHead120
+Bha.cd	Bha.cd	ShimHead120
+Ca.cd	Ca.cd	ShimHead120
+Cha.cd	Cha.cd	ShimHead120
+Da.cd	Da.cd	ShimHead120
+Dda.cd	Dda.cd	ShimHead120
+Ddha.cd	Ddha.cd	ShimHead120
+Dha.cd	Dha.cd	ShimHead120
+Dha.cd.alt	Dha.cd.alt	ShimHead120
+Ga.cd	Ga.cd	ShimHead120
+Ha.cd	Ha.cd	ShimHead120
+Ja.cd	Ja.cd	ShimHead120
+Jha.cd.nohd.ns	Jha.cd.nohd.ns	ShimHead120
+Ka.cd	Ka.cd	ShimHead120
+La.cd	La.cd	ShimHead120
+Ma.cd.nohd.ns	Ma.cd.nohd.ns	ShimHead120
+Na.cd	Na.cd	ShimHead120
+Nga.cd	Nga.cd	ShimHead120
+Nya.cd	Nya.cd	ShimHead120
+Nya_low.cd	Nya_low.cd	ShimHead120
+Nya_stem.cd	Nya_stem.cd	ShimHead120
+Nya_stem.cd.alt	Nya_stem.cd.alt	ShimHead120
+Pa.cd.nohd.ns	Pa.cd.nohd.ns	ShimHead120
+Pha.cd	Pha.cd	ShimHead120
+Ra.cd	Ra.cd	ShimHead120
+Sa.cd.nohd.ns	Sa.cd.nohd.ns	ShimHead120
+Sha.cd	Sha.cd	ShimHead120
+Ssa.cd.nohd.ns	Ssa.cd.nohd.ns	ShimHead120
+Tta.cd	Tta.cd	ShimHead120
+Ttha.cd	Ttha.cd	ShimHead120
+Va.cd	Va.cd	ShimHead120
+Ya.cd.nohd.ns	Ya.cd.nohd.ns	ShimHead120
+Nna.post	Nna.post	ShimHead120
+Tha.post	Tha.post	ShimHead120
+
+lookup end
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+lookup	Chained_Dist_Ka.cd	chained
+MarkAttachmentType	2
+
+backtrackclass definition begin
+Kha.icd	2
+Bha.icd	2
+Nga.icd	1
+Cha.icd	1
+Ca.icd	2
+Ba.icd	2
+Pa.icd	2
+Ta.icd	2
+Na.icd	2
+Ma.icd	2
+Ya.icd	2
+La.icd	2
+Va.icd	2
+Sa.icd	2
+Ssa.icd	2
+Dda.icd	1
+Ddha.icd	1
+Da.icd	1
+Pha.icd	1
+Gha.icd	2
+Jha.icd	2
+
+Ra.icd	3
+
+class definition end
+
+class definition begin
+Ka.cd	1
+class definition end
+
+class-chain	1	1		1,AddShim30
+class-chain	2	1		1,AddShim80
+class-chain	3	1		1,AddShim120
+lookup end
+
+
+
+lookup	Chained_Dist_Nga.cd	chained
+MarkAttachmentType	2
+
+backtrackclass definition begin
+Nga.icd	1
+Cha.icd	1
+Dda.icd	1
+Ddha.icd	1
+Da.icd	1
+Pha.icd	1
+class definition end
+
+class definition begin
+Nga.cd	1
+class definition end
+
+class-chain	1	1		1,AddShim20
+lookup end
+
+
+
+lookup	Chained_Dist_Cha.cd	chained
+MarkAttachmentType	2
+
+backtrackclass definition begin
+Nga.icd	1
+Cha.icd	1
+Dda.icd	1
+Ddha.icd	1
+Da.icd	1
+Pha.icd	1
+Ra.icd	2
+class definition end
+
+class definition begin
+Cha.cd	1
+class definition end
+
+class-chain	1	1		1,AddShim40
+class-chain	2	1		1,AddShim80
+lookup end
+
+
+
+lookup	Chained_Dist_Ja.cd	chained
+MarkAttachmentType	2
+
+backtrackclass definition begin
+Kha.icd	2
+Bha.icd	2
+Nga.icd	2
+Ca.icd	2
+Ba.icd	3
+Ta.icd	2
+Na.icd	2
+Ma.icd	2
+Pa.icd	2
+Ya.icd	2
+La.icd	2
+Va.icd	2
+Sa.icd	2
+Ssa.icd	2
+Cha.icd	1
+Dda.icd	1
+Ddha.icd	2
+Da.icd	2
+Pha.icd	1
+Gha.icd	2
+Jha.icd	2
+
+Ra.icd	3
+
+class definition end
+
+class definition begin
+Ja.cd	1
+class definition end
+
+class-chain	1	1		1,AddShim30
+class-chain	2	1		1,AddShim70
+class-chain	3	1		1,AddShim120
+lookup end
+
+
+lookup	Chained_Dist_Nya.cd	chained
+MarkAttachmentType	2
+
+backtrackclass definition begin
+Nga.icd	1
+Cha.icd	2
+Dda.icd	3
+Ddha.icd	3
+Da.icd	3
+Ra.icd	1
+Pha.icd	4
+class definition end
+
+class definition begin
+Nya.cd	1
+class definition end
+
+class-chain	1	1		1,AddShim120
+class-chain	2	1		1,AddShim50
+class-chain	3	1		1,AddShim70
+class-chain	4	1		1,AddShim40
+lookup end
+
+
+
+lookup	Chained_Dist_Nya_stem.cd	chained
+MarkAttachmentType	2
+
+backtrackclass definition begin
+Nga.icd	1
+Dda.icd	2
+Ddha.icd	3
+Da.icd	2
+Ra.icd	4
+class definition end
+
+class definition begin
+Nya_stem.cd	1
+Nya_stem.cd.alt	1
+class definition end
+
+class-chain	1	1		1,AddShim70
+class-chain	2	1		1,AddShim20
+class-chain	3	1		1,AddShim10
+class-chain	4	1		1,AddShim120
+lookup end
+
+
+lookup	Chained_Dist_Ddha.cd	chained
+MarkAttachmentType	2
+
+backtrackclass definition begin
+Nga.icd	1
+class definition end
+
+class definition begin
+Ddha.cd	1
+class definition end
+
+class-chain	1	1		1,AddShim20
+lookup end
+
+
+lookup	Chained_Dist_Pha.cd	chained
+MarkAttachmentType	2
+
+backtrackclass definition begin
+Nga.icd	1
+class definition end
+
+class definition begin
+Pha.cd	1
+class definition end
+
+class-chain	1	1		1,AddShim40
+lookup end
+
+
+
+lookup	Chained_Dist_Nga.cd2	chained
 MarkAttachmentType	2
 
 backtrackclass definition begin
 Kha.icd	1
 Gha.icd	1
+Nga.icd	2
 Ca.icd	1
-Cha.icd	1
 Jha.icd	1
-Dda.icd	1
+Ddha.icd	2
 Ta.icd	1
+Da.icd	1
 Na.icd	1
 Pa.icd	1
-Ba.icd	1
+Ba.icd	3
 Bha.icd	1
 Ma.icd	1
 Ya.icd	1
@@ -1472,67 +3443,459 @@ La.icd	1
 Va.icd	1
 Ssa.icd	1
 Sa.icd	1
-Ga	2
+Ra.icd	3
+class definition end
+
+class definition begin
+Nga.cd	1
+class definition end
+
+class-chain	1	1		1,AddShim60
+class-chain	2	1		1,AddShim10
+class-chain	3	1		1,AddShim80
+lookup end
+
+
+lookup	Chained_Dist_Cha.cd2	chained
+MarkAttachmentType	2
+
+backtrackclass definition begin
+Kha.icd	1
+Gha.icd	1
+Nga.icd	2
+Ca.icd	1
+Jha.icd	1
+Ddha.icd	2
+Ta.icd	1
+Da.icd	1
+Na.icd	1
+Pa.icd	1
+Ba.icd	3
+Bha.icd	1
+Ma.icd	1
+Ya.icd	1
+La.icd	1
+Va.icd	1
+Ssa.icd	1
+Sa.icd	1
+class definition end
+
+class definition begin
+Cha.cd	1
+class definition end
+
+class-chain	1	1		1,AddShim70
+class-chain	2	1		1,AddShim20
+class-chain	3	1		1,AddShim90
+lookup end
+
+
+lookup	Chained_Dist_Nya_stem.cd2	chained
+MarkAttachmentType	2
+
+backtrackclass definition begin
+Kha.icd	1
+Gha.icd	1
+Nga.icd	2
+Ca.icd	1
+Jha.icd	1
+Dda.icd	3
+Ddha.icd	2
+Ta.icd	1
+Da.icd	1
+Na.icd	1
+Pa.icd	1
+Ba.icd	4
+Bha.icd	1
+Ma.icd	1
+Ya.icd	1
+La.icd	1
+Va.icd	1
+Ssa.icd	1
+Sa.icd	1
+class definition end
+
+class definition begin
+%Nna.post	1
+Nya_stem.cd	1
+Nya_stem.cd.alt	1
+class definition end
+
+class-chain	1	1		1,AddShim100
+class-chain	2	1		1,AddShim50
+class-chain	3	1		1,AddShim20
+class-chain	4	1		1,AddShim120
+lookup end
+
+
+
+lookup	Chained_Dist_Tta.cd	chained
+MarkAttachmentType	2
+
+backtrackclass definition begin
+Ba.icd	1
+class definition end
+
+class definition begin
+Tta.cd	1
+class definition end
+
+class-chain	1	1		1,AddShim20
+lookup end
+
+
+
+lookup	Chained_Dist_Dda.cd	chained
+MarkAttachmentType	2
+
+backtrackclass definition begin
+Kha.icd	1
+Gha.icd	1
+Nga.icd	1
+Ca.icd	1
+Jha.icd	1
+Ta.icd	1
+Da.icd	1
+Na.icd	1
+Pa.icd	1
+Ba.icd	2
+Bha.icd	1
+Ma.icd	1
+Ya.icd	1
+La.icd	1
+Va.icd	1
+Ssa.icd	1
+Sa.icd	1
+Ra.icd	3
+class definition end
+
+class definition begin
+Dda.cd	1
+class definition end
+
+class-chain	1	1		1,AddShim10
+class-chain	2	1		1,AddShim30
+class-chain	3	1		1,AddShim90
+lookup end
+
+
+lookup	Chained_Dist_Ddha.cd2	chained
+MarkAttachmentType	2
+
+backtrackclass definition begin
+Kha.icd	1
+Ca.icd	1
+Jha.icd	1
+Ta.icd	1
+Da.icd	1
+Na.icd	1
+Pa.icd	1
+Ba.icd	2
+Bha.icd	1
+Ma.icd	1
+Ya.icd	1
+La.icd	1
+Va.icd	1
+Ssa.icd	1
+Sa.icd	1
+Ra.icd	3
+class definition end
+
+class definition begin
+Ddha.cd	1
+class definition end
+
+class-chain	1	1		1,AddShim50
+class-chain	2	1		1,AddShim70
+class-chain	3	1		1,AddShim90
+lookup end
+
+
+lookup	Chained_Dist_Da.cd	chained
+MarkAttachmentType	2
+
+backtrackclass definition begin
+Kha.icd	1
+Gha.icd	1
+Ca.icd	1
+Jha.icd	1
+Ta.icd	1
+Da.icd	1
+Na.icd	1
+Pa.icd	1
+Ba.icd	2
+Bha.icd	1
+Ma.icd	1
+Ya.icd	1
+La.icd	1
+Va.icd	1
+Ssa.icd	1
+Sa.icd	1
+Ra.icd	3
+class definition end
+
+class definition begin
+Da.cd	1
+class definition end
+
+class-chain	1	1		1,AddShim30
+class-chain	2	1		1,AddShim50
+class-chain	3	1		1,AddShim100
+lookup end
+
+
+
+lookup	Chained_Dist_Pha.cd2	chained
+MarkAttachmentType	2
+
+backtrackclass definition begin
+Kha.icd	1
+Gha.icd	1
+%Nga.icd	2
+Ca.icd	1
+Jha.icd	1
+Ddha.icd	2
+Ta.icd	1
+Da.icd	1
+Na.icd	1
+Pa.icd	1
+Ba.icd	3
+Bha.icd	1
+Ma.icd	1
+Ya.icd	1
+La.icd	1
+Va.icd	2
+Ssa.icd	1
+Sa.icd	1
+Ra.icd	4
+class definition end
+
+class definition begin
+Pha.cd	1
+class definition end
+
+class-chain	1	1		1,AddShim70
+class-chain	2	1		1,AddShim30
+class-chain	3	1		1,AddShim90
+class-chain	4	1		1,AddShim120
+lookup end
+
+
+lookup	Chained_Dist_Bha.cd	chained
+MarkAttachmentType	2
+
+backtrackclass definition begin
+Kha.icd	1
+Gha.icd	1
+Ca.icd	1
+Jha.icd	1
+Ta.icd	1
+Da.icd	1
+Na.icd	1
+Pa.icd	1
+Ba.icd	2
+Bha.icd	1
+Ma.icd	1
+Ya.icd	1
+La.icd	1
+Va.icd	1
+Ssa.icd	1
+Sa.icd	1
+Ra.icd	3
+class definition end
+
+class definition begin
+Bha.cd	1
+class definition end
+
+class-chain	1	1		1,AddShim30
+class-chain	2	1		1,AddShim50
+class-chain	3	1		1,AddShim80
+lookup end
+
+
+lookup	Chained_Dist_Nna_post	chained
+MarkAttachmentType	2
+
+backtrackclass definition begin
+Kha.icd	1
+Gha.icd	1
+Nga.icd	2
+Ca.icd	1
+Jha.icd	1
+Tta.icd	1
+Ddha.icd	2
+Ta.icd	1
+Da.icd	1
+Na.icd	1
+Pa.icd	1
+Pha.icd	1
+Ba.icd	3
+Bha.icd	4
+Ma.icd	1
+Ya.icd	1
+La.icd	1
+Va.icd	1
+Ssa.icd	1
+Sa.icd	1
+Ra.icd	1
+class definition end
+
+class definition begin
+Nna.post	1
+class definition end
+
+class-chain	1	1		1,AddShim80
+class-chain	2	1		1,AddShim30
+class-chain	3	1		1,AddShim100
+class-chain	4	1		1,AddShim70
+lookup end
+
+
+lookup	Chained_Dist_Tha_post	chained
+MarkAttachmentType	2
+
+backtrackclass definition begin
+Kha.icd	2
+Gha.icd	1
+Nga.icd	2
+Ca.icd	1
+Jha.icd	1
+Tta.icd	1
+Ddha.icd	2
+Ta.icd	1
+Da.icd	1
+Na.icd	1
+Pa.icd	1
+Ba.icd	3
+Bha.icd	4
+Ma.icd	1
+Ya.icd	1
+La.icd	1
+Va.icd	2
+Ssa.icd	1
+Sa.icd	1
+Ra.icd	1
+class definition end
+
+class definition begin
+Tha.post	1
+class definition end
+
+class-chain	1	1		1,AddShim70
+class-chain	2	1		1,AddShim30
+class-chain	3	1		1,AddShim90
+class-chain	4	1		1,AddShim60
+lookup end
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+lookup	AddShims	chained
+MarkAttachmentType	2
+
+backtrackclass definition begin
+Kha.icd	1
+Gha.icd	1
+Ca.icd	1
+Jha.icd	1
+Ta.icd	1
+% Da.icd	1
+Dda.icd	1
+Dda.icd.rt	1
+Ddha.icd.rt	1
+Na.icd	1
+Bha.icd	1
+Ma.icd	1
+La.icd	1
+Va.icd	1
+Ssa.icd	1
+Sa.icd	1
+%Cha.icd	1
+% Narrow
+Ba.icd	1
+Pa.icd	1
+Ya.icd	1
+Ra.icd	1
+
+% Headless
+Gi	2
+Shi	2
 Nna	2
 Tha	2
 Dha	2
 Sha	2
-Ga.icd	2
+Ga	2
 Ga.half	2
-Nna.icd	2
-Nna.half	2
-Tha.icd	2
-Tha.half	2
-Dha.icd	2
-Dha.half	2
-Sha.icd	2
-Sha.half	2
-NyGha	2
-NyJha	2
-NyKha	2
-NyMa	2
-NyPa	2
-NySa	2
-NySsa	2
-NyYa	2
-Gi	2
-Shi	2
+Ga.icd	2
 Gi.icd	2
 Shi.icd	2
+Nna.icd	2
+Tha.icd	2
+Dha.icd	2
+Sha.icd	2
+Nna.half	2
+Tha.half	2
+Dha.half	2
+Sha.half	2
+NyKha	2
+NyGha	2
+NyJha	2
+NyPa	2
+NyMa	2
+NyYa	2
+NySsa	2
+NySa	2
+Ndha	2
+Bdha	2
+Vdha	2
+
+% Nya.icd	2
+% Ttha.icd	2
+
+% Headless needs curved arm AA, AA_dv.alt2, AA_dv.alt4
 Nya	3
-Ttha	3
-Nya_Ha	3
 Nya.icd	3
 Nya_nostem.icd	3
-Ttha.icd	3
-NyDha	3
-NyJha.alt	3
 Nya_Ta	3
-Ga.cd	4
+%Nya_Ha	3
+Ttha	3
+Ttha.icd	3
+Ttha.icd.center	3
+Ttha.icd.rt	3
+TthaTa	3
+
+% CD marks with stem
+Ga.cd	44
+Ca.cd	44
+Na.cd	44
+Ba.cd	44
+Ra.cd	44
+La.cd	44
+Va.cd	44
+Sha.cd	44
+
+Bha.cd	4
+
+% Other CD Marks
+Ha.cd	4
 Nga.cd	4
-Ca.cd	4
 Nya.cd	4
 Tta.cd	4
 Ttha.cd	4
+Dda.cd	4
 Ddha.cd	4
 Da.cd	4
-Na.cd	4
-Ba.cd	4
-Bha.cd	4
-Ra.cd	4
-La.cd	4
-Va.cd	4
-Sha.cd	4
-Ha.cd	4
-Ga.cd.alt	4
-Bha.cd.alt	4
-Sha.cd.alt	4
+
+% Btm CD marks that protrude to the right
 Ka.cd	5
 Cha.cd	5
 Ja.cd	5
+% Pha.cd	5
+
 Nya_stem.cd	5
-Nya.cd.alt	5
-Cha.cd.alt	5
+
+% Diags only used with Headless which uses Contextual vowels = no NOHD
 Kha.diag	6
 Gha.diag	6
 Jha.diag	6
@@ -1541,52 +3904,85 @@ Ma.diag	6
 Ya.diag	6
 Ssa.diag	6
 Sa.diag	6
+
 Dha.cd	7
+Dha.cd.alt	7
+
+Nga.icd.nohd	8
+Nga.icd.nohd.rt	8
+Dda.icd.nohd	8
+Dda.icd.nohd.rt	8
+Ddha.icd.nohd.rt	8
+Da.icd.nohd	8
+Da.icd.nohd.rt	8
+Ddha.icd.nohd	33
+Tta.icd.nohd	8
+Cha.icd.nohd	8
+Ba.icd.nohd	8
+Pa.icd.nohd	8
+Ya.icd.nohd	8
+Pha.icd.nohd	8
 Kha.icd.nohd	8
 Gha.icd.nohd	8
-Nga.icd.nohd	8
 Ca.icd.nohd	8
-Cha.icd.nohd	8
 Jha.icd.nohd	8
-Tta.icd.nohd	8
-Dda.icd.nohd	8
-Ddha.icd.nohd	8
 Ta.icd.nohd	8
-Da.icd.nohd	8
 Na.icd.nohd	8
-Pa.icd.nohd	8
-Pha.icd.nohd	8
 Bha.icd.nohd	8
-Ba.icd.nohd	8
 Ma.icd.nohd	8
-Ya.icd.nohd	8
 La.icd.nohd	8
 Va.icd.nohd	8
 Ssa.icd.nohd	8
 Sa.icd.nohd	8
+
 Pha.cd	9
+
+%Dda.cd	10
 Nya_low.cd	10
-Dda.cd	10
 Tha.post	10
-Tha.post.alt	10
-Dda.cd.alt	10
+
 Nna.post	11
-Nna.post.alt	11
 Nna.post.alt2	11
-Nna.post.nostem	11
+
+% taller than other conjuncts so needs taller vowels
+Lhva	12
+Lhya	13
+Mhya	13
+Nhya	13
+Nhva	12
+Ssttra	12
+
 class definition end
 
 class definition begin
+Nya	33
+Nya.icd	33
+Nya_nostem.icd	33
+Nya_Ta	33
+%Nya_Ha	33
+Ttha	34
+Ttha.icd	34
+Ttha.icd.center	34
+Ttha.icd.rt	34
+TthaTa	33
+
 Nga.icd	1
-Cha.icd	1
-Tta.icd	1
+Nga.icd.rt	1
 Dda.icd	1
-Ddha.icd	1
+Dda.icd.rt	1
+Ddha.icd.rt	1
 Da.icd	1
-Pa.icd	2
+Da.icd.rt	1
+Ddha.icd	1
+Tta.icd	1
+Cha.icd	1
+
 Ba.icd	2
+Pa.icd	2
 Ya.icd	2
+
 Kha.icd	3
+Kha.icd.nohd	33
 Gha.icd	3
 Ca.icd	3
 Jha.icd	3
@@ -1598,45 +3994,67 @@ La.icd	3
 Va.icd	3
 Ssa.icd	3
 Sa.icd	3
+
+% Btm CD marks that protrude to the left
 Ca.cd	4
 La.cd	4
 Sha.cd	4
-Sha.cd.alt	4
+Dha.cd	4
+Dha.cd.alt	4
+
+% for AA_dv
 O_dv	5
+O_dv.sm	5
+O_dv.md	5
+O_dv.lg	5
+O_dv.xlg	5
+O_dv.xxlg	5
 AU_dv	5
+AU_dv.sm	5
 O_dv.alt	5
 AU_dv.alt	5
-O_dv.sm	5
-AU_dv.sm	5
 AU_dv_part.alt	5
 AU_dv_part.alt2	5
-AA_dv	6
+
 AA_dv.alt	6
+AA_dv	6
+
 I_dv	7
-I_dv.xsm	7
-I_dv.sm	7
 I_dv_Repha	7
+I_dv.sm	7
 I_dv_Repha.sm	7
+I_dv.xsm	7
 I_dv_Repha.xsm	7
+
 Pha.icd	8
+
 Va.cd	9
-Ttha.cd	10
+
+% Btm CD marks that protrude to the left with PHA.ICD only
 Na.cd	10
+Ttha.cd	10
+
 Ga.cd	11
-Ga.cd.alt	11
-Ja.icd	12
+
 Ha.icd	12
+Ja.icd	12
+% ICD with exceptional CD Connections
+
 Ta.post	13
-Nya.cd.alt	14
+
 Nya_stem.cd.alt	14
-Ka.cd	15
 Nya_stem.cd	15
+Ka.cd	15
 Nya_low.cd	16
-Cha.cd	17
+
+%Tha.post	17
 Ja.cd	17
-Tha.post	17
-Tha.post.alt	17
-Cha.cd.alt	17
+%Cha.cd	17
+
+R_dv	20
+RR_dv	20
+L_dv	20
+LL_dv	20
 U_dv	20
 UU_dv	20
 U_dv.alt	20
@@ -1644,6 +4062,7 @@ U_dv.sm	20
 UU_dv.alt	20
 UU.sm	20
 UU.sm.alt	20
+
 II_dv	21
 II_dv.xsm	21
 II_dv.med	21
@@ -1654,128 +4073,287 @@ II_dv_Repha.xsm	21
 II_dv_Repha.med	21
 II_dv_Repha.lg	21
 II_dv_Repha.xlg	21
+
 NullMark	22
+
+% for DoNothing
+% CHECK ON THIS 01/02
+% E_dv.alt	7
 class definition end
 
 lookaheadclass definition begin
-E_dv	1
-AI_dv	1
-O_dv	1
 AU_dv	1
+O_dv	1
+AI_dv	1
+E_dv	1
 class definition end
 
-class-chain		1, 4	1	1, 23
-class-chain		1, 9	1	1, 23
-class-chain		1, 4		1, 57
-class-chain		1, 9		1, 57
-class-chain		1, 16, 21		3, 41
-class-chain		1, 17, 21		3, 42
-class-chain		1, 14, 21		3, 43
-class-chain		1, 16, 20		3, 56
-class-chain		1, 17, 20		3, 56
-class-chain		1, 14, 20		3, 55
-class-chain		1, 14		2, 56
-class-chain		1, 16		2, 56
-class-chain		1, 17		2, 56
-class-chain		2, 9	1	1, 23
-class-chain		2, 9		1, 58
-class-chain		2, 15, 21		3, 42
-class-chain		2, 17, 21		3, 42
-class-chain		2, 15, 20		3, 55
-class-chain		2, 17, 20		3, 55
-class-chain		2, 15		2, 55
-class-chain		2, 17		2, 55
-class-chain		3, 15, 21		3, 42
-class-chain		3, 17, 21		3, 42
-class-chain		3, 15, 20		3, 55
-class-chain		3, 17, 20		3, 55
-class-chain		3, 15		2, 55
-class-chain		3, 17		2, 55
-class-chain	5, 1	5		1, 3
-class-chain	10, 1	5		1, 3
-class-chain	9, 1	5		1, 3
-class-chain	5, 2	5		1, 4
-class-chain	10, 2	5		1, 4
-class-chain	9, 2	5		1, 4
-class-chain	3	5		1, 29
-class-chain	2	5		1, 28
-class-chain	5, 8	5		1, 45
-class-chain	4, 8	5		1, 44
-class-chain	9, 8	5		1, 44
-class-chain	10, 8	5		1, 44
-class-chain	4, 2	6		1, 28
-class-chain	4, 3	6		1, 29
-class-chain	5, 1	6		1, 3
-class-chain	5, 2	6		1, 4
-class-chain	5, 3	6		1, 5
-class-chain	9, 1	6		1, 3
-class-chain	9, 2	6		1, 4
-class-chain	9, 3	6		1, 5
-class-chain	10, 1	6		1, 3
-class-chain	10, 2	6		1, 4
-class-chain	10, 3	6		1, 5
-class-chain	1, 7	6		1, 3
-class-chain	2, 7	6		1, 3
-class-chain	7	6		1, 28
-class-chain	11, 2	6		1, 29
-class-chain	11, 3	6		1, 29
-class-chain	6	6		1, 28
-class-chain	2	6		1, 29
-class-chain	3	6		1, 29
-class-chain		7, 2, 9		1, 23
-class-chain		7, 8, 10		1, 23
-class-chain		7, 12, 4		1, 23
-class-chain		7, 12, 9		1, 23
-class-chain		7, 12, 11		1, 23
-class-chain		7, 1, 4		1, 59
-class-chain		7, 1, 9		1, 59
-class-chain		7, 8, 4		1, 59
-class-chain		7, 8, 9		1, 59
-class-chain	5, 3	7		1, 38
-class-chain	9, 3	7		1, 38
-class-chain	10, 3	7		1, 38
-class-chain		8, 4	1	1, 23
-class-chain		8, 9	1	1, 23
-class-chain		8, 10	1	1, 23
-class-chain		8, 4		1, 57
-class-chain		8, 9		1, 57
-class-chain		8, 10		1, 58
-class-chain		8, 17, 20		3, 56	1, 58
-class-chain		8, 17		2, 56	1, 58
-class-chain		8, 14, 21		3, 43
-class-chain		8, 14, 20		3, 55
-class-chain		8, 14		2, 55
-class-chain		12, 4	1	1, 23
-class-chain		12, 9	1	1, 23
-class-chain		12, 11	1	1, 23
-class-chain		12, 22, 4		1, 57
-class-chain		12, 22, 9		1, 57
-class-chain		12, 22, 11		1, 57
-class-chain		12, 4		1, 57
-class-chain		12, 9		1, 57
-class-chain		12, 11		1, 57
-class-chain	1	13, 21		1, 4	2, 43
-class-chain	1	13		1, 4
-class-chain	2	13, 21		2, 4	2, 39
-class-chain	2	13, 6		2, 6
-class-chain	2	13, 5		2, 6
-class-chain	3	13, 21		2, 40
-class-chain	3	13, 6		2, 7
-class-chain	3	13, 5		2, 7
-class-chain	3	14, 5		2, 5
+% AA_dv conditions moved to Backtrack
+
+% Adds I_dv.alt and I_dv_Repha.alt with extended headline for cases with
+% mark below protruding to the left
+
+% Ta preceded by headed icd becomes Ta.post.head
+
+% ********** FOR PROTRUDING MARKS ON LEFT **********
+% ICDs affected, with headline
+%class-chain		7,2,9		1,DoNothing
+%class-chain		7,8,10		1,DoNothing
+%class-chain		7,12,4		1,DoNothing
+%class-chain		7,12,9		1,DoNothing
+%class-chain		7,12,11		1,DoNothing
+
+class-chain		7,1,4		1,ReplaceI_dv
+class-chain		7,1,9		1,ReplaceI_dv
+class-chain		7,8,4		1,ReplaceI_dv
+class-chain		7,8,9		1,ReplaceI_dv
+
+class-chain		1,4	1	1,DoNothing
+class-chain		1,9	1	1,DoNothing
+class-chain		8,4	1	1,DoNothing
+class-chain		8,9	1	1,DoNothing
+class-chain		12,4	1	1,DoNothing
+class-chain		12,9	1	1,DoNothing
+class-chain		12,11	1	1,DoNothing
+
+class-chain		8,10	1	1,DoNothing
+class-chain		2,9	1	1,DoNothing
+
+class-chain		1,4		1,SubShimHead
+class-chain		1,9		1,SubShimHead
+class-chain		8,4		1,SubShimHead
+class-chain		8,9		1,SubShimHead
+
+class-chain		8,10		1,SubShimHeadSm
+class-chain		2,9		1,SubShimHeadSm
+
+% Pha needs shims on both sides
+class-chain		8,17,20		3,AddShimHead100	1,SubShimHeadSm
+class-chain		8,17		2,AddShimHead100	1,SubShimHeadSm
+
+class-chain		12,22,4		1,SubShimHead
+class-chain		12,22,9		1,SubShimHead
+class-chain		12,22,11		1,SubShimHead
+
+class-chain		12,4		1,SubShimHead
+class-chain		12,9		1,SubShimHead
+class-chain		7,12,9		2,SubShimHead
+class-chain		12,11		1,SubShimHead
+
+% ********** FOR PROTRUDING MARKS ON LEFT **********%
+
+% ********** FOR PROTRUDING MARKS ON RIGHT **********%
+% When followed by II_dv, change size of II_dv and use alt version with extended bar (shim)
+
+class-chain		1,16,21		3,MedVowelAlt
+class-chain		1,17,21		3,LgVowelAlt
+class-chain		1,14,21		3,XLgVowelAlt
+class-chain		8,14,21		3,XLgVowelAlt
+%class-chain		3,15,21		3,LgVowelAlt
+%class-chain		3,17,21		3,LgVowelAlt
+class-chain		2,15,21		3,LgVowelAlt
+class-chain		2,17,21		3,LgVowelAlt
+
+%class-chain		1,16,20		3,AddShimHead100
+class-chain		1,17,20		3,AddShimHead100
+%class-chain		1,14,20		3,AddShimHead180
+%class-chain		8,14,20		3,AddShimHead180
+%class-chain		3,15,20		3,AddShimHead180
+%class-chain		2,15,20		3,AddShimHead180
+%class-chain		3,17,20		3,AddShimHead180
+class-chain		2,17,20		3,AddShimHead180
+
+%class-chain		1,14		2,AddShimHead100
+%class-chain		1,16		2,AddShimHead100
+%class-chain		1,17		2,AddShimHead100
+class-chain		8,14		2,AddShimHead180
+
+% THIS BREAKS mkmk ATTACHMENT like R_dv after Ka.cd so we need explicit rules like 3,15,20 above
+%class-chain		3,15		2,AddShimHead180
+%class-chain		3,17		2,AddShimHead180
+class-chain		2,15		2,AddShimHead180
+% TOO MUCH SHIM
+%class-chain		2,17		2,AddShimHead180
+
+% ********** FOR PROTRUDING MARKS ON RIGHT **********%
+
+% HEADLESS forms get their spacing in the GPOS
+
+% Adds AA_dv with longer headline for cases with marks protruding on the RIGHT
+%AA contextual vowel. Substitution done here and not in Contextual Vowel lookup because of reordering
+
+% O and AU
+class-chain	 5,1	5		1,AltForm2
+class-chain	 10,1	5		1,AltForm2
+class-chain	 9,1	5		1,AltForm2
+
+class-chain	 4,2	5		1,AltForm3b
+class-chain	 5,2	5		1,AltForm3b
+class-chain	 11,2	5		1,AltForm3b
+class-chain	 10,2	5		1,AltForm3b
+class-chain	 9,2	5		1,AltForm3b
+class-chain	 3	5		1,AltVowel2
+class-chain	 2	5		1,AltVowel
+class-chain		33,15,5		3,MedVowel
+class-chain		33,5		2,MedVowel
+
+% AA
+class-chain	12	6		1,TallVowel
+class-chain	13	6		1,TallVowel
+class-chain	 44,2	6		1,AltVowel
+class-chain	 44,3	6		1,AltVowel2
+class-chain	 4,2	6		1,AltForm3b
+class-chain	 4,3	6		1,AltVowel2
+
+
+%class-chain	 5,1	6		1,AltForm2
+class-chain	 5,2	6		1,AltForm3b
+class-chain	 5,3	6		1,AltVowel2
+class-chain	 7,3	6		1,AltVowel2
+%class-chain	 9,1	6		1,AltForm2
+class-chain	 9,2	6		1,AltForm3b
+class-chain	 9,3	6		1,AltVowel2
+% HANDLE WITH SHIM AND DIST, NOT ALT AA FORM
+%class-chain	 10,1	6		1,AltForm2
+class-chain	 10,2	6		1,AltForm3b
+class-chain	 10,3	6		1,AltVowel2
+
+
+%AA_dv.alt	6
+%AA_dv	6
+% how is this supposed to work? 
+%class-chain	 1,7	6		1,AltForm2
+%class-chain	 2,7	6		1,AltForm2
+
+% NEED ALT VOWEL after ICDs with no headline
+% I_dv
+class-chain	 5,3	7		1,MedVowel
+class-chain	 9,3	7		1,MedVowel
+class-chain	 10,3	7		1,MedVowel
+
+%class-chain	 5,1	21		1,AltForm2
+%class-chain	 5,2	21		1,AltForm3
+%class-chain	 5,3	21		1,AltForm4
+
+%class-chain	 11,2	6		1,AltVowel2
+class-chain	 11,2	6		1,AltForm3b
+class-chain	 11,3	6		1,AltVowel2
+
+class-chain	 7,2	6		1,AltVowel
+class-chain	 6	6		1,AltVowel
+class-chain	 2	6		1,AltVowel2
+%class-chain	 3	6		1,AltVowel2
+class-chain	 	33,6		2,AltVowelNya
+class-chain	 	34,6		2,AltVowelTtha
+
+% Ta preceded by headed icd becomes Ta.post.head
+class-chain	1	13,21		1,AltForm3	2,XLgVowelAlt
+class-chain	1	13		1,AltForm3
+class-chain	2	13,21		2,AltForm3b	2,LgVowel
+class-chain	2	13,6		2,AltForm5
+class-chain	2	13,5		2,AltForm5
+class-chain	3	13,21		2,XLgVowel
+class-chain	3	13,6		2,AltForm6
+class-chain	3	13,5		2,AltForm6
+%class-chain	3	14,5		2,AltForm4
+%class-chain	11,8	5		1,VowelSizePlus2
+
+%class-chain	5,8	5		1,VowelSizePlus1
+
+%class-chain	4,8	5		1,VowelSizePlus1
+%class-chain	9,8	5		1,VowelSizePlus1
+%class-chain	10,8	5		1,VowelSizePlus1
 
 lookup end
 
 
-lookup	25	context
+lookup	FineTuneVowelWidths	chained
 
-RightToLeft	no
-IgnoreBaseGlyphs	no
-IgnoreLigatures	no
-IgnoreMarks	no
+
+backtrackclass definition begin
+Ha.icd.nohd	1
+Ha_Ma.nohd	3
+Ha_Na.nohd	3
+Ha_Nya.nohd	3
+Ca.cd	2
+Dha.cd	2
+Dha.cd.alt	2
+Va.cd	2
+
+class definition end
+
+
+class definition begin
+E_dv	1
+class definition end
+
+class-chain	2,1	1		1,MedVowel
+class-chain	3	1		1,MedVowel
+
+lookup end
+
+
+lookup	RemoveMark	single
+Anusvara	NullMark
+Candrabindu	NullMark
+Candrabindu.sm	NullMark
+Repha_AI_dv	NullMark
+lookup end
+
+
+lookup	PostVowelLigSub	ligature
+MarkAttachmentType	1
+
+AU_dv_part.alt_anusvara	AU_dv_part.alt	Anusvara
+AU_dv_part.alt_candra	AU_dv_part.alt	Candrabindu
+AU_dv_part.alt2_anusvara	AU_dv_part.alt2	Anusvara
+AU_dv_part.alt2_candra	AU_dv_part.alt2	Candrabindu
+AU_dv_part.alt3_anusvara	AU_dv_part.alt3	Anusvara
+AU_dv_part.alt3_candra	AU_dv_part.alt3	Candrabindu
+%AU_dv_part.alt4_anusvara	AU_dv_part.alt4	Anusvara
+%AU_dv_part.alt4_candra	AU_dv_part.alt4	Candrabindu
+AU_dv_part.alt5_anusvara	AU_dv_part.alt5	Anusvara
+AU_dv_part.alt5_candra	AU_dv_part.alt5	Candrabindu
+AU_dv_part.alt6_anusvara	AU_dv_part.alt6	Anusvara
+AU_dv_part.alt6_candra	AU_dv_part.alt6	Candrabindu
+AU_dv_part.ttha_anusvara	AU_dv_part.ttha	Anusvara
+AU_dv_part.ttha_candra	AU_dv_part.ttha	Candrabindu
+
+lookup end
+
+
+lookup	PostVowelLigs	chained
+
+
+class definition begin
+
+AU_dv_part.alt	1
+AU_dv_part.alt2	1
+AU_dv_part.alt3	1
+%AU_dv_part.alt4	1
+AU_dv_part.alt5	1
+AU_dv_part.alt6	1
+AU_dv_part.ttha	1
+Anusvara	2
+Candrabindu	2
+Candrabindu.sm	2
+Repha_AI_dv	3
+
+class definition end
+
+class-chain		1,2		1,PostVowelLigSub
+class-chain		1,3,2		3,DV_Repha	2,RemoveMark	1,PostVowelLigSub
+
+lookup end
+
+
+lookup	 NoHd	context
+% set mark attachment class to top marks only
 MarkAttachmentType	1
 
 class definition begin
+
+% all glyphs with a headline
 Ka	1
 Kha	1
 Gha	1
@@ -1797,6 +4375,7 @@ Pa	1
 Pha	1
 Ba	1
 Bha	1
+Bha.alt	1
 Ma	1
 Mha	1
 Ya	1
@@ -1808,6 +4387,42 @@ Wa	1
 Ssa	1
 Sa	1
 Ha	1
+Ha.alt	1
+Ka.icd	1
+Kha.icd	1
+Gha.icd	1
+Nga.icd	1
+Nga.icd.rt	1
+Ca.icd	1
+Cha.icd	1
+Ja.icd	1
+Jha.icd	1
+Tta.icd	1
+Tta.icd.rt	1
+Dda.icd	1
+Dda.icd.rt	1
+Ddha.icd.rt	1
+Ddha.icd	1
+Ta.icd	1
+Da.icd	1
+Da.icd.rt	1
+Na.icd	1
+Pa.icd	1
+Pha.icd	1
+Ba.icd	1
+Ma.icd	1
+Ya.icd	1
+La.icd	1
+Va.icd	1
+Ssa.icd	1
+Sa.icd	1
+Ra.icd	1
+Ha.icd	1
+Ka.icd.alt	1
+Ja.icd.alt	1
+Ha.icd.alt	1
+Ka.icd.wide	1
+Ja.icd.wide	1
 Ha_Nga	1
 Ha_Nya	1
 Ha_Nna	1
@@ -1815,71 +4430,71 @@ Ha_Na	1
 Ha_Ma	1
 Ha_Ra	1
 Ha_La	1
-Nga_Ha	1
-Na_Ha	1
-Ma_Ha	1
-Ra_Ha	1
-La_Ha	1
-Bha.alt	1
-Ha.alt	1
+Ha_Pa	1
+Ha_Sa	1
+Ha_Ssa	1
+
+%Nga_Ha	1
+%Na_Ha	1
+%Ma_Ha	1
+%La_Ha	1
+%Ra_Ha	1
 Ju	1
 Juu	1
 Ru	1
 Ruu	1
-Ka.icd	1
-Kha.icd	1
-Gha.icd	1
-Nga.icd	1
-Ca.icd	1
-Cha.icd	1
-Ja.icd	1
-Jha.icd	1
-Tta.icd	1
-Dda.icd	1
-Ddha.icd	1
-Ta.icd	1
-Da.icd	1
-Na.icd	1
-Pa.icd	1
-Pha.icd	1
-Ba.icd	1
-Bha.icd	1
-Ma.icd	1
-Ya.icd	1
-La.icd	1
-Va.icd	1
-Ssa.icd	1
-Sa.icd	1
-Ha.icd	1
-Ka_Ssa	1
-Ja_Nya	1
-Ka_Nya	1
-Ka.icd.alt	1
-Ja.icd.alt	1
-Ha.icd.alt	1
-Ka.icd.wide	1
-Ja.icd.wide	1
-Ha.icd.wide	1
 Ha_Ta	1
+Ha_Ya	1
 Ha_Kha	1
+Ha_Gha	1
+Ha_Jha	1
 Nga_Ta	1
+Cha_Ta	1
 Tta_Ta	1
 Ddha_Ta	1
 Da_Ta	1
+DdaTa	1
 Pha_Ta	1
 Da_Nna	1
-E_dv	2
-AI_dv	2
-O_dv	2
-AU_dv	2
-E_dv.sm	2
-E_dv.lg	2
-AI_dv.sm	2
-AI_dv.lg	2
-O_dv.sm	2
-O_dv.lg	2
-AU_dv.sm	2
-AU_dv.lg	2
+Bha.icd	1
+Ja_Nya	1
+Ka_Nya	1
+Ka_Ssa	1
+JaKha	1
+Khtya	1
+Lhva	1
+Lhya	1
+Mhva	1
+Mhya	1
+Mpya	1
+Ndra	1
+Nhva	1
+Nhya	1
+Nska	1
+Nsta	1
+Nstta	1
+Ntra	1
+Ntya	1
+Rya	1
+Ssttra	1
+Sthya	1
+Trtra	1
+TaNna	1
+Kssya	1
+Kkssa	1
+Ksska	1
+Kssma	1
+Kssna	1
+Kssnna	1
+Kssra	1
+Kssva	1
+Ngkssa	1
+Nkssa	1
+Pkssa	1
+Tkssa	1
+Ttkssa	1
+
+% diagonal headless
 Kha.diag	3
 Gha.diag	3
 Jha.diag	3
@@ -1888,323 +4503,427 @@ Ma.diag	3
 Ya.diag	3
 Ssa.diag	3
 Sa.diag	3
+
+% Tall CD Base forms
 Kha.cd	4
 Gha.cd	4
 Jha.cd	4
-Dha.cd	4
 Pa.cd	4
 Ma.cd	4
 Ya.cd	4
 Ssa.cd	4
 Sa.cd	4
 Ta.post.head	4
+Dha.cd	4
+Dha.cd.alt	4
+
+% AA_dv	8
+% I_dv	7
+% II_dv	7
+% U_dv	9
+% UU_dv	6
+% R_dv	4
+% RR_dv	4
+% L_dv	4
+% LL_dv	4
+
+E_dv	2
+AI_dv	2
+O_dv	2
+AU_dv	2
+E_dv.sm	2
+E_dv.md	2
+E_dv.lg	2
+E_dv.xlg	2
+AI_dv.sm	2
+AI_dv.md	2
+AI_dv.lg	2
+AI_dv.xlg	2
+O_dv.sm	2
+O_dv.md	2
+O_dv.lg	2
+O_dv.xlg	2
+O_dv.xxlg	2
+AU_dv.sm	2
+AU_dv.md	2
+AU_dv.lg	2
+AU_dv.xlg	2
+AU_dv.xxlg	2
+
+% Repha	5
 Repha	5
 Repha_I_dv	5
+% Repha_II_dv.dupe	5
+% Repha_I_dv.dupe	5
+% Repha_AI_dv.dupe	5
 Repha_AI_dv	5
+% AA_dv	2
+
+
 class definition end
 
-class	1, 5, 4, 2	1, 26	3, 26
-class	1, 4, 2	1, 26	2, 26
-class	1, 3, 2	1, 26
-class	1, 3, 2	1, 26
-class	1, 5, 2	1, 26
-class	1, 2	1, 26
+% with Repha
+class	1,5,4,2	1,HeadlessForm	3,HeadlessForm
+
+
+class	1,4,2	1,HeadlessForm	2,HeadlessForm
+class	1,3,2	1,HeadlessForm
+class	1,3,2	1,HeadlessForm
+
+class	1,5,2	1,HeadlessForm
+class	1,2	1,HeadlessForm
 
 lookup end
 
-
-lookup	26	single
-
-RightToLeft	no
-IgnoreBaseGlyphs	no
-IgnoreLigatures	no
-IgnoreMarks	no
-
-Ka	Ka.nohd
-Kha	Kha.nohd
-Gha	Gha.nohd
-Nga	Nga.nohd
-Ngha	Ngha.nohd
-Ca	Ca.nohd
-Cha	Cha.nohd
-Ja	Ja.nohd
-Jha	Jha.nohd
-Nyha	Nyha.nohd
-Tta	Tta.nohd
-Dda	Dda.nohd
-Ddha	Ddha.nohd
-Ta	Ta.nohd
-Da	Da.nohd
-Na	Na.nohd
-Nha	Nha.nohd
-Pa	Pa.nohd
-Pha	Pha.nohd
+lookup	HeadlessForm	single
 Ba	Ba.nohd
+Ba.icd	Ba.icd.nohd
 Bha	Bha.nohd
-Ma	Ma.nohd
-Mha	Mha.nohd
-Ya	Ya.nohd
-Ra	Ra.nohd
-Rha	Rha.nohd
-La	La.nohd
-Lha	Lha.nohd
-Wa	Wa.nohd
-Ssa	Ssa.nohd
-Sa	Sa.nohd
-Ha	Ha.nohd
-Ha_Nga	Ha_Nga.nohd
-Ha_Nya	Ha_Nya.nohd
-Ha_Nna	Ha_Nna.nohd
-Ha_Na	Ha_Na.nohd
-Ha_Ma	Ha_Ma.nohd
-Ha_Ra	Ha_Ra.nohd
-Ha_La	Ha_La.nohd
-Nga_Ha	Nga_Ha.nohd
-Na_Ha	Na_Ha.nohd
-Ma_Ha	Ma_Ha.nohd
-Ra_Ha	Ra_Ha.nohd
-La_Ha	La_Ha.nohd
 Bha.alt	Bha.alt.nohd
+Bha.icd	Bha.icd.nohd
+Ca	Ca.nohd
+Ca.icd	Ca.icd.nohd
+Cha	Cha.nohd
+Cha.icd	Cha.icd.nohd
+Cha_Ta	Cha_Ta.nohd
+Da	Da.nohd
+Da.icd	Da.icd.nohd
+Da.icd.rt	Da.icd.nohd.rt
+Da_Nna	Da_Nna.nohd
+Da_Ta	Da_Ta.nohd
+DdaTa	DdaTa.nohd
+Dda	Dda.nohd
+Dda.icd	Dda.icd.nohd
+Dda.icd.rt	Dda.icd.nohd.rt
+Ddha	Ddha.nohd
+Ddha.icd	Ddha.icd.nohd
+Ddha.icd.rt	Ddha.icd.nohd.rt
+Ddha_Ta	Ddha_Ta.nohd
+Gha	Gha.nohd
+Gha.cd	Gha.cd.nohd
+Gha.icd	Gha.icd.nohd
+Ha	Ha.nohd
 Ha.alt	Ha.alt.nohd
+Ha.icd	Ha.icd.nohd
+Ha.icd.alt	Ha.icd.alt.nohd
+Ha_Gha	Ha_Gha.nohd
+Ha_Jha	Ha_Jha.nohd
+Ha_Kha	Ha_Kha.nohd
+Ha_La	Ha_La.nohd
+Ha_Ma	Ha_Ma.nohd
+Ha_Na	Ha_Na.nohd
+Ha_Nga	Ha_Nga.nohd
+Ha_Nna	Ha_Nna.nohd
+Ha_Nya	Ha_Nya.nohd
+Ha_Pa	Ha_Pa.nohd
+Ha_Ra	Ha_Ra.nohd
+Ha_Sa	Ha_Sa.nohd
+Ha_Ssa	Ha_Ssa.nohd
+Ha_Ta	Ha_Ta.nohd
+Ha_Ya	Ha_Ya.nohd
+Ja	Ja.nohd
+Ja.icd	Ja.icd.nohd
+Ja.icd.alt	Ja.icd.alt.nohd
+Ja.icd.wide	Ja.icd.wide.nohd
+JaKha	JaKha.nohd
+Ja_Nya	Ja_Nya.nohd
+Jha	Jha.nohd
+Jha.cd	Jha.cd.nohd
+Jha.icd	Jha.icd.nohd
 Ju	Ju.nohd
 Juu	Juu.nohd
+Ka	Ka.nohd
+Ka.icd	Ka.icd.nohd
+Ka.icd.alt	Ka.icd.alt.nohd
+Ka.icd.wide	Ka.icd.wide.nohd
+Ka_Nya	Ka_Nya.nohd
+Ka_Ssa	Ka_Ssa.nohd
+Kha	Kha.nohd
+Kha.cd	Kha.cd.nohd
+Kha.icd	Kha.icd.nohd
+La	La.nohd
+La.icd	La.icd.nohd
+
+%La_Ha	La_Ha.nohd
+%Ma_Ha	Ma_Ha.nohd
+%Na_Ha	Na_Ha.nohd
+%Nga_Ha	Nga_Ha.nohd
+%Ra_Ha	Ra_Ha.nohd
+
+Lha	Lha.nohd
+Ma	Ma.nohd
+Ma.cd	Ma.cd.nohd
+Ma.icd	Ma.icd.nohd
+Mha	Mha.nohd
+Na	Na.nohd
+NaPha	NaPha.nohd
+Na.icd	Na.icd.nohd
+Nga	Nga.nohd
+Nga.icd	Nga.icd.nohd
+Nga.icd.rt	Nga.icd.nohd.rt
+Nga_Ta	Nga_Ta.nohd
+Ngha	Ngha.nohd
+Nha	Nha.nohd
+Nyha	Nyha.nohd
+Pa	Pa.nohd
+Pa.cd	Pa.cd.nohd
+Pa.icd	Pa.icd.nohd
+Pha	Pha.nohd
+Pha.icd	Pha.icd.nohd
+Pha_Ta	Pha_Ta.nohd
+PhaPha	PhaPha.nohd
+PhaNna	PhaNna.nohd
+PhaGha	PhaGha.nohd
+PhaJha	PhaJha.nohd
+PhaKha	PhaKha.nohd
+PhaMa	PhaMa.nohd
+PhaPa	PhaPa.nohd
+PhaSa	PhaSa.nohd
+PhaSsa	PhaSsa.nohd
+PhaYa	PhaYa.nohd
+Ra	Ra.nohd
+Rha	Rha.nohd
 Ru	Ru.nohd
 Ruu	Ruu.nohd
-Ka.icd	Ka.icd.nohd
-Kha.icd	Kha.icd.nohd
-Kha.cd	Kha.cd.nohd
-Gha.icd	Gha.icd.nohd
-Gha.cd	Gha.cd.nohd
-Nga.icd	Nga.icd.nohd
-Ca.icd	Ca.icd.nohd
-Cha.icd	Cha.icd.nohd
-Ja.icd	Ja.icd.nohd
-Jha.icd	Jha.icd.nohd
-Jha.cd	Jha.cd.nohd
-Tta.icd	Tta.icd.nohd
-Dda.icd	Dda.icd.nohd
-Ddha.icd	Ddha.icd.nohd
-Ta.icd	Ta.icd.nohd
-Da.icd	Da.icd.nohd
-Na.icd	Na.icd.nohd
-Pa.icd	Pa.icd.nohd
-Pa.cd	Pa.cd.nohd
-Pha.icd	Pha.icd.nohd
-Ba.icd	Ba.icd.nohd
-Bha.icd	Bha.icd.nohd
-Ma.icd	Ma.icd.nohd
-Ma.cd	Ma.cd.nohd
-Ya.icd	Ya.icd.nohd
-Ya.cd	Ya.cd.nohd
-La.icd	La.icd.nohd
-Va.icd	Va.icd.nohd
-Ssa.icd	Ssa.icd.nohd
-Ssa.cd	Ssa.cd.nohd
-Sa.icd	Sa.icd.nohd
+Sa	Sa.nohd
 Sa.cd	Sa.cd.nohd
-Ha.icd	Ha.icd.nohd
-Ka_Ssa	Ka_Ssa.nohd
-Ja_Nya	Ja_Nya.nohd
-Ka_Nya	Ka_Nya.nohd
-Ka.icd.alt	Ka.icd.alt.nohd
-Ja.icd.alt	Ja.icd.alt.nohd
-Ha.icd.alt	Ha.icd.alt.nohd
-Ka.icd.wide	Ka.icd.wide.nohd
-Ja.icd.wide	Ja.icd.wide.nohd
-Ha.icd.wide	Ha.icd.wide.nohd
-Ha_Ta	Ha_Ta.nohd
-Ha_Kha	Ha_Kha.nohd
-Nga_Ta	Nga_Ta.nohd
+Sa.icd	Sa.icd.nohd
+Ssa	Ssa.nohd
+Ssa.cd	Ssa.cd.nohd
+Ssa.icd	Ssa.icd.nohd
+Ta	Ta.nohd
+Ta.icd	Ta.icd.nohd
+Tta	Tta.nohd
+Tta.icd	Tta.icd.nohd
+Tta.icd.rt	Tta.icd.nohd.rt
 Tta_Ta	Tta_Ta.nohd
-Ddha_Ta	Ddha_Ta.nohd
-Da_Ta	Da_Ta.nohd
-Pha_Ta	Pha_Ta.nohd
-Da_Nna	Da_Nna.nohd
+Va.icd	Va.icd.nohd
+Wa	Wa.nohd
+Ya	Ya.nohd
+Ya.cd	Ya.cd.nohd
+Ya.icd	Ya.icd.nohd
+Khtya	Khtya.nohd
+Lhva	Lhva.nohd
+Lhya	Lhya.nohd
+Mhva	Mhva.nohd
+Mhya	Mhya.nohd
+Mpya	Mpya.nohd
+Ndra	Ndra.nohd
+Nhva	Nhva.nohd
+Nhya	Nhya.nohd
+Nska	Nska.nohd
+Nsta	Nsta.nohd
+Nstta	Nstta.nohd
+Ntra	Ntra.nohd
+Ntya	Ntya.nohd
+Rya	Rya.nohd
+Ssttra	Ssttra.nohd
+Sthya	Sthya.nohd
+Trtra	Trtra.nohd
+TaNna	TaNna.nohd
+
 Ta.post.head	Ta.post
-
+Ra.icd	Ra.icd.nohd
+Kssya	Kssya.nohd
+Kkssa	Kkssa.nohd
+Ksska	Ksska.nohd
+Kssma	Kssma.nohd
+Kssna	Kssna.nohd
+Kssnna	Kssnna.nohd
+Kssra	Kssra.nohd
+Kssva	Kssva.nohd
+Ngkssa	Ngkssa.nohd
+Nkssa	Nkssa.nohd
+Pkssa	Pkssa.nohd
+Tkssa	Tkssa.nohd
+Ttkssa	Ttkssa.nohd
 lookup end
 
-
-lookup	27	ligature
-
-RightToLeft	no
-IgnoreBaseGlyphs	no
-IgnoreLigatures	no
-IgnoreMarks	no
-MarkAttachmentType	2
-
+lookup	 VowelLigs	ligature
+MarkAttachmentType	 2
 Ju	Ja	U_dv
-Juu	Ja	UU_dv
-Da_Nna	Da	Nna.post
 Ru	Ra	U_dv
+Juu	Ja	UU_dv
 Ruu	Ra	UU_dv
+Da_Nna	Da	Nna.post
 
+% Gi.icd	I_dv	Ga.icd
+% Shi.icd	I_dv	Sha.icd
 lookup end
 
-
-lookup	28	single
-
-RightToLeft	no
-IgnoreBaseGlyphs	no
-IgnoreLigatures	no
-IgnoreMarks	no
-
+lookup	 AltVowel	single
 AA_dv	AA_dv.alt
-I_dv	I_dv_Repha
-U_dv	U_dv.alt
-UU_dv	UU_dv.alt
 E_dv	E_dv.alt
 AI_dv	AI_dv.alt
 O_dv	O_dv.alt
 AU_dv	AU_dv.alt
 
+U_dv	U_dv.alt
+UU_dv	UU_dv.alt
+
+I_dv	I_dv_Repha
 lookup end
 
-
-lookup	29	single
-
-RightToLeft	no
-IgnoreBaseGlyphs	no
-IgnoreLigatures	no
-IgnoreMarks	no
-
-AA_dv	AA_dv.alt2
-UU_dv	UU.sm.alt
+lookup	 AltVowel2	single
 E_dv	E_dv.alt
+AA_dv	AA_dv.alt2
 AA_dv.alt	AA_dv.alt2
 AU_dv_part.alt	AU_dv_part.alt2
-
+UU_dv	UU.sm.alt
 lookup end
 
 
-lookup	30	multiple
+lookup	AltVowelNya	single
+AA_dv	AA_dv.nya
+lookup end
 
-RightToLeft	no
-IgnoreBaseGlyphs	no
-IgnoreLigatures	no
-IgnoreMarks	no
 
+lookup	AltVowelTtha	single
+AA_dv	AA_dv.ttha
+E_dv	E_dv.alt
+AU_dv_part.alt	AU_dv_part.ttha
+UU_dv	UU.sm.alt
+lookup end
+
+
+lookup	 AltVowelSplit	multiple
 AI_dv.alt	E_dv.alt	AI_dv_top.alt
 O_dv.alt	E_dv.alt	AA_dv.alt
 AU_dv.alt	E_dv.alt	AU_dv_part.alt
-
 lookup end
 
-
-lookup	31	multiple
-
-RightToLeft	no
-IgnoreBaseGlyphs	no
-IgnoreLigatures	no
-IgnoreMarks	no
-
+lookup	 AltVowelSplit2	multiple
 AI_dv.alt	E_dv.alt	AI_dv_top.alt
 O_dv.alt	E_dv.alt	AA_dv.alt2
 AU_dv.alt	E_dv.alt	AU_dv_part.alt2
-
 lookup end
 
+lookup	 AltVowelSplit3	multiple
+AI_dv.alt	E_dv.alt	AI_dv_top.alt
+O_dv.alt	E_dv.alt	AA_dv.ttha
+AU_dv.alt	E_dv.alt	AU_dv_part.ttha
+lookup end
 
-lookup	32	single
-
-RightToLeft	no
-IgnoreBaseGlyphs	no
-IgnoreLigatures	no
-IgnoreMarks	no
-
-I_dv	I_dv.sm
-U_dv	U_dv.sm
-UU_dv	UU.sm
-R_dv	vocR.sm
-RR_dv	vocRR.sm
-L_dv	vocL.sm
-LL_dv	vocLL.sm
+lookup	 SmVowel	single
+% top
 E_dv	E_dv.sm
 AI_dv	AI_dv.sm
 O_dv	O_dv.sm
 AU_dv	AU_dv.sm
+I_dv	I_dv.sm
+
+% bottom
+U_dv	U_dv.sm
+UU_dv	UU.sm
 UU_dv.alt	UU.sm.alt
+R_dv	vocR.sm
+RR_dv	vocRR.sm
+L_dv	vocL.sm
+LL_dv	vocLL.sm
 
 lookup end
 
-
-lookup	33	single
-
-RightToLeft	no
-IgnoreBaseGlyphs	no
-IgnoreLigatures	no
-IgnoreMarks	no
-
-II_dv	NullMark
-Repha	NullMark
+lookup	NullMark	single
+Repha_AI_dv	NullMark
 Repha_I_dv	NullMark
-
+Repha	NullMark
+RephaE	NullMark
+II_dv	NullMark
+Anusvara	NullMark
+Candrabindu	NullMark
+Candrabindu.sm	NullMark
 lookup end
 
-
-lookup	34	chained
-
-RightToLeft	no
-IgnoreBaseGlyphs	no
-IgnoreLigatures	no
-IgnoreMarks	no
+% 24
+lookup	 I_vowels	chained
+% Choose I/II size based on base or ICD+CD mark
 MarkAttachmentType	2
 
+% use backtrack for measuring II
 backtrackclass definition begin
+
+% 1	Med
+% 2	Lg
+% 3	Xlg
+% 8	Neutral
+% 4	Xsm
+
+% taller than other conjuncts so need a taller I and II vowel
+Lhva	96
+Lhya	96
+Mhya	96
+Nhva	96
+Nhya	96
+Ssttra	97
+
+
+Ka	2
+% Ngha	1
+Cha	2
 Ja	1
+Nya	3
+% Nya_Nna	3
+Ttha	2
+Ttha.icd	8
+Ttha.icd.center	8
+Ttha.icd.rt	8
+TthaTa	8
+
 Ta	1
-Da	1
 Bha	1
+Da	1
+Da_Nna	1
 Mha	1
-Ha_Ma	1
-Nga.icd	1
+%Ha_Kha	1
 Ja.icd	1
-Ha_Kha	1
+Ja.icd.shim	1
+% Ja.icd.shim.sm	1
 Nga_Ta	1
+Cha_Ta	1
 Tta_Ta	1
 Ddha_Ta	1
 Da_Ta	1
+DdaTa	1
 Pha_Ta	1
-Da_Nna	1
+Nga.icd	1
+Nga.icd.rt	1
 Nga.icd.shim	1
-Ja.icd.shim	1
-Ka	2
-Cha	2
-Ttha	2
+
+
+Ka.icd	2
+Ha.icd	2
+Ka.icd.wide	2
+Ka.icd.alt	3
+Ja.icd.alt	2
+Ha.icd.alt	3
+
+Ka_Nya	3
+Ha_Na	2
+Ha_Nya	2
+Ha_Ma	2
+Ha_Pa	2
+Ha_La	2
+Ha_Ra	2
+Ha_Kha	2
+Ha_Sa	2
+Ha_Ssa	2
+Ka_Ssa	2
+Ja_Nya	2
 Ju	2
 Juu	2
 Ru	2
 Ruu	2
-Ka.icd	2
-Ka_Ssa	2
-Ja_Nya	2
-Ja.icd.alt	2
-Ka.icd.wide	2
-Ha.icd.wide	2
-NyJha.alt	2
+
 Ha_Ta	2
-Nya	3
-Ka_Nya	3
-Ka.icd.alt	3
-Ha.icd.alt	3
-Ga	4
-Nna	4
-Dha	4
+
+% Ta.post	5
+% Ta.post.head	5
+
 Sha	4
-Na_Ha	4
-Ma_Ha	4
-Ra_Ha	4
-La_Ha	4
-Kha.cd	4
-Gha.cd	4
-Jha.cd	4
+Dha	4
+Nna	4
+Ga	4
 Dha.icd	4
-Dha.cd	4
-Pa.cd	4
-Ma.cd	4
-Ya.cd	4
-Ssa.cd	4
-Sa.cd	4
 Kha.diag	4
 Gha.diag	4
 Jha.diag	4
@@ -2213,21 +4932,42 @@ Ma.diag	4
 Ya.diag	4
 Ssa.diag	4
 Sa.diag	4
+Kha.cd	4
+Gha.cd	4
+Jha.cd	4
+%Dha.cd	4
+%Dha.cd.alt	4
+Pa.cd	4
+Ma.cd	4
+Ya.cd	4
+% Sha.cd	4
+Ssa.cd	4
+Sa.cd	4
+%Na_Ha	4
+%Ma_Ha	4
+%Ra_Ha	4
+%La_Ha	4
+
+NyKha	4
 NyGha	4
 NyJha	4
-NyKha	4
-NyMa	4
 NyPa	4
-NySa	4
-NySsa	4
+NyMa	4
 NyYa	4
-Ja.cd	6
+NySsa	4
+NySa	4
+
+% bottom CD forms that call for wider I_dv form
+% Ka.cd	6
 Nya.cd	6
 Nya_stem.cd	6
 Nya_low.cd	6
-Nya.cd.alt	6
 Tha.post	6
-Da.icd	7
+Ja.cd	6
+
+% Neutral unless carrying spacing mark,
+%	uses Med.alt
+Cha.icd	8
 Kha	8
 Gha	8
 Nga	8
@@ -2243,76 +4983,85 @@ Pha	8
 Ba	8
 Ma	8
 Ya	8
-Ra	8
+Ra 	8
 Wa	8
 Ssa	8
 Sa	8
 Ha	8
-Bha.alt	8
-Ha.alt	8
 Kha.icd	8
 Ga.icd	8
 Gha.icd	8
 Ca.icd	8
-Cha.icd	8
 Jha.icd	8
-Ttha.icd	8
+Tha.icd	8
 Dda.icd	8
+Dda.icd.rt	8
+Ddha.icd.rt	8
+Dda.icd.shim	8
 Ddha.icd	8
+Ddha.icd.shim	8
 Nna.icd	8
 Ta.icd	8
-Tha.icd	8
 Na.icd	8
 Pa.icd	8
+Pa.icd.shim.sm	8
 Pha.icd	8
+Pha.icd.shim	8
+Pha.icd.shim.sm	8
 Ba.icd	8
+Ba.icd.shim.sm	8
 Bha.icd	8
 Ma.icd	8
 Ya.icd	8
+Ya.icd.shim.sm	8
 La.icd	8
 Va.icd	8
 Sha.icd	8
 Ssa.icd	8
 Sa.icd	8
-Ha.icd	8
-Dda.icd.shim	8
-Ddha.icd.shim	8
-Pha.icd.shim	8
-Ha.icd.shim	8
-Pha.icd.shim.sm	8
-Ba.icd.shim.sm	8
-Pa.icd.shim.sm	8
-Ya.icd.shim.sm	8
+%Ha.icd	8
+Bha.alt	8
+Ha.alt	8
+
+% Right STEM CD Mark adds no space to II_sizing
+
 Ka.cd	9
-Ga.cd	9
-Ca.cd	9
-Ttha.cd	9
 Dda.cd	9
-Ddha.cd	9
 Da.cd	9
-Na.cd	9
 Pha.cd	9
 Ba.cd	9
 Bha.cd	9
-Ra.cd	9
-La.cd	9
-Va.cd	9
-Sha.cd	9
 Ha.cd	9
-Ga.cd.alt	9
-Dda.cd.alt	9
-Bha.cd.alt	9
-Sha.cd.alt	9
-Nya_Ha	10
+Ca.cd	9
+Ga.cd	9
+La.cd	9
+Na.cd	9
+Ra.cd	9
+% Sa.cd.alt	9
+Sha.cd	9
+Ttha.cd	9
+Va.cd	9
+
+% uses Lg.alt
+Da.icd	7
+Da.icd.rt	7
+
+
+% uses special II_dv_Nya
+%Nya_Ha	10
 Nya.icd	10
 Nya_nostem.icd	10
-NyDha	10
 Nya_Ta	10
+
 Nna.post	11
-Nna.post.alt	11
 Nna.post.alt2	11
-Nna.post.nostem	11
-Dha.cd.ns	12
+
+Ddha.cd	12
+Tta.cd	12
+Cha.cd	12
+Nga.cd	12
+Dha.cd	12
+Dha.cd.alt	12
 Kha.cd.nohd.ns	12
 Gha.cd.nohd.ns	12
 Jha.cd.nohd.ns	12
@@ -2322,48 +5071,320 @@ Ya.cd.nohd.ns	12
 Ssa.cd.nohd.ns	12
 Sa.cd.nohd.ns	12
 Ta.post.ns	12
+
 class definition end
 
 class definition begin
+
 I_dv	1
 I_dv_Repha	1
+
 II_dv	2
 II_dv_Repha	2
+
+% Input combined with II + any CD will DoNothing 
+% This is basically the same as Ignore bottom marks but we need to see them so we find the sequence and DoNothing
+
+% ALL ICD FORMS
+Ka.icd	3
+Kha.icd	3
+Ga.icd	3
+Gha.icd	3
+Nga.icd	3
+Nga.icd.rt	3
+Ca.icd	3
+Cha.icd	3
+Ja.icd	3
+Jha.icd	3
+Nya.icd	3
+Nya_nostem.icd	3
+Tta.icd	3
+Tta.icd.rt	3
+Ttha.icd	3
+Ttha.icd.center	3
+Ttha.icd.rt	3
+TthaTa	3
+Dda.icd	3
+Dda.icd.rt	3
+Ddha.icd.rt	3
+Ddha.icd	3
+Nna.icd	3
+Ta.icd	3
+Tha.icd	3
+Da.icd	3
+Da.icd.rt	3
+Dha.icd	3
+Na.icd	3
+Pa.icd	3
+Pha.icd	3
+Ba.icd	3
+Bha.icd	3
+Ma.icd	3
+Ya.icd	3
+La.icd	3
+Va.icd	3
+Sha.icd	3
+Ssa.icd	3
+Sa.icd	3
+Ha.icd	3
+Ka.icd.alt	3
+Ja.icd.alt	3
+Ha.icd.alt	3
+Ka.icd.wide	3
+Ja.icd.wide	3
+Ka.icd.nohd	3
+Kha.icd.nohd	3
+Gha.icd.nohd	3
+Nga.icd.nohd	3
+Nga.icd.nohd.rt	3
+Ca.icd.nohd	3
+Cha.icd.nohd	3
+Ja.icd.nohd	3
+Jha.icd.nohd	3
+Tta.icd.nohd	3
+Tta.icd.nohd.rt	3
+Dda.icd.nohd	3
+Dda.icd.nohd.rt	3
+Ddha.icd.nohd.rt	3
+Ddha.icd.nohd	3
+Ta.icd.nohd	3
+Da.icd.nohd	3
+Da.icd.nohd.rt	3
+Na.icd.nohd	3
+Pa.icd.nohd	3
+Pha.icd.nohd	3
+Bha.icd.nohd	3
+Ba.icd.nohd	3
+Ma.icd.nohd	3
+Ya.icd.nohd	3
+La.icd.nohd	3
+Va.icd.nohd	3
+Ssa.icd.nohd	3
+Sa.icd.nohd	3
+Ha.icd.nohd	3
+Ka.icd.alt.nohd	3
+Ja.icd.alt.nohd	3
+Ha.icd.alt.nohd	3
+Ka.icd.wide.nohd	3
+Ja.icd.wide.nohd	3
+
+Nga.icd.shim	3
+Dda.icd.shim	3
+Ddha.icd.shim	3
+Cha.icd.shim	3
+Tta.icd.shim	3
+Pha.icd.shim	3
+Ja.icd.shim	3
+Pha.icd.shim.sm	3
+Ba.icd.shim.sm	3
+Pa.icd.shim.sm	3
+Ya.icd.shim.sm	3
+% Ha.icd.shim.sm	3
+% Ja.icd.shim.sm	3
+% Gi.icd
+% Shi.icd
+
+% ALL CD forms
+Ka.cd	4
+Kha.cd	4
+Ga.cd	4
+Gha.cd	4
+Nga.cd	4
+Ca.cd	4
+Cha.cd	4
+Ja.cd	4
+Jha.cd	4
+Nya.cd	4
+Nya_stem.cd	4
+Nya_low.cd	4
+Tta.cd	4
+Ttha.cd	4
+Dda.cd	4
+Ddha.cd	4
+Da.cd	4
+Dha.cd	4
+Dha.cd.alt	4
+Na.cd	4
+Pa.cd	4
+Pha.cd	4
+Ba.cd	4
+Bha.cd	4
+Ma.cd	4
+Ya.cd	4
+Ra.cd	4
+La.cd	4
+Va.cd	4
+Sha.cd	4
+Ssa.cd	4
+Sa.cd	4
+Ha.cd	4
+% Sa.cd.alt	4
+Kha.cd.nohd	4
+Gha.cd.nohd	4
+Jha.cd.nohd	4
+Pa.cd.nohd	4
+Ma.cd.nohd	4
+Ya.cd.nohd	4
+Ssa.cd.nohd	4
+Sa.cd.nohd	4
+Kha.cd.nohd.ns	4
+Gha.cd.nohd.ns	4
+Jha.cd.nohd.ns	4
+Pa.cd.nohd.ns	4
+Ma.cd.nohd.ns	4
+Ya.cd.nohd.ns	4
+Ssa.cd.nohd.ns	4
+Sa.cd.nohd.ns	4
+
+% Exceptional consonants
+% Nna.post	4
+Nna.post.alt2	4
+Tha.post	4
+Ta.post	4
+Ta.post.head	4
+Ta.post.ns	4
+
+Kha.diag	5
+Gha.diag	5
+Jha.diag	5
+Pa.diag	5
+Ma.diag	5
+Ya.diag	5
+Ssa.diag	5
+Sa.diag	5
+
+Nna.post	6
+
+
+% taller than other conjuncts so need a taller I and II vowel
+Lhva	96
+Lhya	96
+Mhya	96
+Nhva	96
+Nhya	96
+Ssttra	97
+
 class definition end
 
 lookaheadclass definition begin
-Nna	1
+% Cond forms
+
+% NEUTRAL is I_dv
+
+% I_dv.sm
 Tha	1
-Na	1
+
+% Small
 Ba	1
+Ba.icd	1
+Ba.icd.shim.sm	1
 Bha	1
+Gha.icd	1
+Ja.icd	1
+Ja.icd.shim	1
+% Ja.icd.shim.sm	1
+Ja.icd.alt	1
 Ju	1
 Juu	1
-Gha.icd	1
-Nga.icd	1
-Ja.icd	1
-Ttha.icd	1
-Nna.icd	1
-Na.icd	1
-Pa.cd	1
-Pha.icd	1
-Ba.icd	1
-Ma.icd	1
-Ya.icd	1
-La.icd	1
-Va.icd	1
-Ssa.icd	1
+% Kha.icd	1
 Ka_Ssa	1
-Ja_Nya	1
-Ja.icd.alt	1
-NyJha.alt	1
-Nga_Ta	1
+La.icd	1
+Ma.icd	1
+Na	1
+Nna	1
+Na.icd	1
+Nga.icd	1
+Nga.icd.rt	1
 Nga.icd.shim	1
-Pha.icd.shim	1
-Ja.icd.shim	1
+Nna.icd	1
+
+% Tall CD
+Pa.cd	1
+% SHould this be Pa.icd?
+
+Pha.icd	1
 Pha.icd.shim.sm	1
-Ba.icd.shim.sm	1
+Pha.icd.shim	1
+Ssa.icd	1
+Ra.icd	1
+
+Ttha.icd	1
+Ttha.icd.center	1
+Ttha.icd.rt	1
+TthaTa	1
+Va.icd	1
+Ya.icd	1
 Ya.icd.shim.sm	1
+% Sa.cd.alt	1
+Cha_Ta	1
+%Da_Ta	1
+%Ddha_Ta	1
+%Ha_La	1
+%Ha_Ma	1
+%Ha_Na	1
+%Ha_Nga	1
+%Ha_Nna	1
+%Ha_Nya	1
+%Ha_Pa	1
+%Ha_Sa	1
+%Ha_Ssa	1
+JaKha	1
+Ja_Nya	1
+%Mha	1
+Mhva	1
+Mhya	1
+Ndra	1
+Nga_Ta	1
+Nhya	1
+PhaPha	1
+PhaGha	1
+PhaJha	1
+PhaKha	1
+PhaMa	1
+PhaPa	1
+PhaSa	1
+PhaSsa	1
+PhaYa	1
+Kkssa	1
+Ksska	1
+Kssma	1
+Kssna	1
+Kssnna	1
+Ngkssa	1
+Nkssa	1
+NaPha	1
+Pkssa	1
+Tkssa	1
+Ttkssa	1
+
+% I_dv.xsm
+% Dha	2
+Cha.icd	2
+Cha.icd.shim	2
+Jha.icd	2
+Nya.icd	2
+Nya_nostem.icd	2
+Tta.icd	2
+Tta.icd.rt	2
+Tta.icd.shim	2
+Dda.icd	2
+Dda.icd.rt	2
+Ddha.icd.rt	2
+Dda.icd.shim	2
+Ddha.icd	2
+Ddha.icd.shim	2
+Ta.icd	2
+Da.icd	2
+Da.icd.rt	2
+Dha.icd	2
+
+Pa.icd	2
+Pa.icd.shim.sm	2
+Tha.icd	2
+Kha.icd	2
+Sa.icd	2
+
+% Ha Ligs use I_dv.xsm
 Ngha	2
 Nyha	2
 Nha	2
@@ -2375,29 +5396,24 @@ Ha_Nya	2
 Ha_Nna	2
 Ha_Na	2
 Ha_Ma	2
+Ha_Pa	2
+Ha_Sa	2
+Ha_Ssa	2
 Ha_Ra	2
 Ha_La	2
-Nga_Ha	2
-Nya_Ha	2
-Nna_Ha	2
-Na_Ha	2
-Ma_Ha	2
-La_Ha	2
-Kha.icd	2
-Cha.icd	2
-Jha.icd	2
-Nya.icd	2
-Nya_nostem.icd	2
-Tta.icd	2
-Dda.icd	2
-Ddha.icd	2
-Ta.icd	2
-Tha.icd	2
-Da.icd	2
-Dha.icd	2
-Pa.icd	2
-Sa.icd	2
-NyDha	2
+%La_Ha	2
+%Ma_Ha	2
+%Na_Ha	2
+%Nga_Ha	2
+%Nna_Ha	2
+%Nya_Ha	2
+
+Ddha_Ta	2
+Da_Ta	2
+DdaTa	2
+Pha_Ta	2
+Tta_Ta	2
+
 NyGha	2
 NyJha	2
 NyKha	2
@@ -2406,272 +5422,353 @@ NyPa	2
 NySa	2
 NySsa	2
 NyYa	2
-Tta_Ta	2
-Ddha_Ta	2
-Da_Ta	2
-Pha_Ta	2
-Dda.icd.shim	2
-Ddha.icd.shim	2
-Cha.icd.shim	2
-Tta.icd.shim	2
-Pa.icd.shim.sm	2
+Ndha	2
+Bdha	2
+
+% I_dv.xxsm
 Dha	3
+
+ % bottom mark CD forms that call for wider I_dv form
+% Ca.cd	4
+% Ga.cd	4
+% La.cd	4
+% Na.cd	4
+% Ra.cd	4
+% Sa.cd.alt	4
+% Sha.cd	4
+% Ttha.cd	4
+% Va.cd	4
+% 
+
+% Ta_for_icd.post	4
+
+
+% NEUTRAL
+% Bha.alt	5
+% Ca	5
+% Ca.icd	5
+% Cha	5
+% Ddha	5
+% Dha.cd	5
+% Gha	5
+% Gha.cd	5
+% Ha	5
+% Kha	5
+% La	5
+% Ha.icd	5
+% Ha.icd.alt	5
+% Ha_Kha	5
+% Ha_Ta	5
+% Ja	5
+% Jha	5
+% Jha.cd	5
+% Ka	5
+% Ka.icd	5
+% Ka.icd.alt	5
+% Ma	5
+% Ma.cd	5
+% Na.icd.nohd	5
+% Na_Ha.nohd	5
+% Nga	5
+% Nya	5
+% Pa	5
+% Ra	5
+% Ra_Ha	5
+% Sa	5
+% Ssa	5
+% Ta	5
+% Tta	5
+% Ya	5
+% Wa	5
+% 
+% Ru	5
+% Ruu	5
+
 Ta.half	6
+
 class definition end
 
-class-chain		1	1	1, 37
-class-chain		1	2	1, 36
-class-chain		1	3	1, 35
-class-chain		1	6	1, 59
-class-chain	6, 8	2		1, 39
-class-chain	9, 1	2		1, 38
-class-chain	11, 1	2		1, 38
-class-chain	1	2		1, 38
-class-chain	6, 2	2		1, 39
-class-chain	9, 2	2		1, 39
-class-chain	12, 2	2		1, 39
-class-chain	11, 2	2		1, 39
-class-chain	2	2		1, 39
-class-chain	6, 3	2		1, 40
-class-chain	9, 3	2		1, 40
-class-chain	11, 3	2		1, 40
-class-chain	12, 3	2		1, 40
-class-chain	3	2		1, 40
-class-chain	9, 4	2		1, 36
-class-chain	11, 4	2		1, 40
-class-chain	4	2		1, 36
-class-chain	9, 8	2		1, 41
-class-chain	11, 8	2		1, 41
-class-chain	8	2		1, 41
-class-chain	9, 7	2		1, 38
-class-chain	7	2		1, 38
-class-chain	10	2		1, 14
+class-chain		1,96		1,TallVowelWide
+class-chain		1,97		1,TallVowelSmall
+class-chain	96	2		1,TallVowelWide
+class-chain	97	2		1,TallVowel
+
+
+% Backtrack measures II_dv
+
+% IVowel sizing uses LA classes
+% wide bottom cd form increases size
+
+class-chain		 1	1	1,Sm_dv_Vowel
+class-chain		 1	2	1,XSm_dv_Vowel
+class-chain		 1	3	1,XXSm_dv_Vowel
+
+
+% IIVowel sizing uses BT classes
+% with bottom spacing cd form cl 6
+% II_dv increases width and has longer bar
+%		7,Da
+%		8,Cha
+%		1, Nga.icd
+
+% Just the ICD or base Consonant form, no CD marks
+class-chain	6,8	2		1,LgVowel
+
+class-chain	9,1	2		1,MedVowel
+class-chain	11,1	2		1,MedVowel
+class-chain	1	2		1,MedVowel
+
+
+class-chain	6,2	2		1,LgVowel
+class-chain	9,2	2		1,LgVowel
+class-chain	12,2	2		1,LgVowel
+class-chain	11,2	2		1,LgVowel
+class-chain	2	2		1,LgVowel
+
+class-chain	6,3	2		1,XLgVowel
+class-chain	9,3	2		1,XLgVowel
+class-chain	11,3	2		1,XLgVowel
+class-chain	12,3	2		1,XLgVowel
+class-chain	3	2		1,XLgVowel
+
+class-chain	9,4	2		1,XSm_dv_Vowel
+%class-chain	11,4	2		1,XLgVowel
+%class-chain	4	2		1,XSm_dv_Vowel
+class-chain	9,8	2		1,MedVowelAlt
+class-chain	11,8	2		1,MedVowelAlt
+class-chain	12,8	2		1,MedVowelAlt
+% class-chain	6,8	2		1,MedVowel
+class-chain	8	2		1,MedVowelAlt
+
+
+class-chain	9,7	2		1,MedVowel
+class-chain	7	2		1,MedVowel
+
+% class-chain	11,10	2		1,Nya_Repha
+class-chain	10	2		1,Nya_Repha
+
+class-chain		1	6	1,ReplaceI_dv
 
 lookup end
 
 
-lookup	35	single
-
-RightToLeft	no
-IgnoreBaseGlyphs	no
-IgnoreLigatures	no
-IgnoreMarks	no
-
+lookup	 XXSm_dv_Vowel	single
 I_dv	I_dv.xxsm
 I_dv_Repha	I_dv_Repha.xxsm
-
 lookup end
 
-
-lookup	36	single
-
-RightToLeft	no
-IgnoreBaseGlyphs	no
-IgnoreLigatures	no
-IgnoreMarks	no
-
+lookup	 XSm_dv_Vowel	single
 I_dv	I_dv.xsm
 II_dv	II_dv.xsm
 I_dv_Repha	I_dv_Repha.xsm
 II_dv_Repha	II_dv_Repha.xsm
-
 lookup end
 
-
-lookup	37	single
-
-RightToLeft	no
-IgnoreBaseGlyphs	no
-IgnoreLigatures	no
-IgnoreMarks	no
-
+lookup	 Sm_dv_Vowel	single
 I_dv	I_dv.sm
 I_dv_Repha	I_dv_Repha.sm
-
 lookup end
 
-
-lookup	38	single
-
-RightToLeft	no
-IgnoreBaseGlyphs	no
-IgnoreLigatures	no
-IgnoreMarks	no
-
+lookup	MedVowel	single
 II_dv	II_dv.med
 II_dv_Repha	II_dv_Repha.med
-
+AU_dv	AU_dv.md
+E_dv	E_dv.md
+AI_dv	AI_dv.md
+O_dv	O_dv.md
 lookup end
 
+lookup	 LgVowel	single
 
-lookup	39	single
-
-RightToLeft	no
-IgnoreBaseGlyphs	no
-IgnoreLigatures	no
-IgnoreMarks	no
-
-II_dv	II_dv.lg
+% I_dv	I_dv.lg
 E_dv	E_dv.lg
 AI_dv	AI_dv.lg
-O_dv	O_dv.lg
 AU_dv	AU_dv.lg
+O_dv	O_dv.lg
+II_dv	II_dv.lg
 II_dv_Repha	II_dv_Repha.lg
-
 lookup end
 
 
-lookup	40	single
+lookup	TallVowel	single
+AA_dv	AA_dv.tall
+I_dv	I_dv.tall
+II_dv	II_dv.xsm.tall
+O_dv	O_dv.tall
+AU_dv	AU_dv.tall
+lookup end
 
-RightToLeft	no
-IgnoreBaseGlyphs	no
-IgnoreLigatures	no
-IgnoreMarks	no
 
+lookup	TallVowelMed	single
+AA_dv	AA_dv.tall
+I_dv	I_dv.tall
+II_dv	II_dv.xsm.tall
+O_dv	O_dv.md.tall
+AU_dv	AU_dv.md.tall
+lookup end
+
+
+lookup	TallVowelSmall	single
+AU_dv	AU_dv.tall
+O_dv	O_dv.tall
+I_dv	I_dv.sm.tall
+lookup end
+
+lookup	TallVowelWide	single
+AA_dv	AA_dv.tall
+I_dv	I_dv.tall
+II_dv	II_dv.xlg.tall
+AU_dv	AU_dv.xlg.tall
+lookup end
+
+lookup	TallVowelXLg	single
+AA_dv	AA_dv.tall
+I_dv	I_dv.tall
+II_dv	II_dv.xlg.tall
+O_dv	O_dv.xlg.tall
+O_dv.xlg	O_dv.xlg.tall
+AU_dv	AU_dv.xlg.tall
+AU_dv.xlg	AU_dv.xlg.tall
+lookup end
+
+
+lookup	 XLgVowel	single
+E_dv	E_dv.xlg
+AI_dv	AI_dv.xlg
 II_dv	II_dv.xlg
 II_dv_Repha	II_dv_Repha.xlg
-
+O_dv	O_dv.xlg
+AU_dv	AU_dv.xlg
 lookup end
 
 
-lookup	41	single
+lookup	 XXLgVowel	single
+E_dv	E_dv.xlg
+AI_dv	AI_dv.xlg
+II_dv	II_dv.xlg
+II_dv_Repha	II_dv_Repha.xlg
+O_dv	O_dv.xxlg
+AU_dv	AU_dv.xxlg
+lookup end
 
-RightToLeft	no
-IgnoreBaseGlyphs	no
-IgnoreLigatures	no
-IgnoreMarks	no
 
+lookup	 MedVowelAlt	single
 II_dv	II_dv.med.alt
 II_dv_Repha	II_dv_Repha.med.alt
-
 lookup end
 
-
-lookup	42	single
-
-RightToLeft	no
-IgnoreBaseGlyphs	no
-IgnoreLigatures	no
-IgnoreMarks	no
-
+lookup	 LgVowelAlt	single
+% I_dv	I_dv.lg
 II_dv	II_dv.lg.alt
 II_dv_Repha	II_dv_Repha.lg.alt
-
 lookup end
 
-
-lookup	43	single
-
-RightToLeft	no
-IgnoreBaseGlyphs	no
-IgnoreLigatures	no
-IgnoreMarks	no
-
+lookup	 XLgVowelAlt	single
+% I_dv	I_dv.xlg
 II_dv	II_dv.xlg.alt
 II_dv_Repha	II_dv_Repha.xlg.alt
-
 lookup end
 
+%lookup	 VowelSizePlus1	single
+%E_dv.sm	E_dv
+%AI_dv.sm	AI_dv
+%O_dv.sm	O_dv
+%AU_dv.sm	AU_dv
+%
+%E_dv	E_dv.lg
+%AI_dv	AI_dv.lg
+%O_dv	O_dv.lg
+%AU_dv	AU_dv.lg
+%
+%lookup end
 
-lookup	44	single
+%lookup	 VowelSizePlus2	single
+%E_dv.sm	E_dv.lg
+%AI_dv.sm	AI_dv.lg
+%O_dv.sm	O_dv.lg
+%AU_dv.sm	AU_dv.lg
+%
+%lookup end
 
-RightToLeft	no
-IgnoreBaseGlyphs	no
-IgnoreLigatures	no
-IgnoreMarks	no
-
-E_dv	E_dv.lg
-AI_dv	AI_dv.lg
-O_dv	O_dv.lg
-AU_dv	AU_dv.lg
-E_dv.sm	E_dv
-AI_dv.sm	AI_dv
-O_dv.sm	O_dv
-AU_dv.sm	AU_dv
-
+lookup	 RaTa_HalfForm	ligature
+Ta.half	Ta	Virama	ZWJ
+Ra.half	Ra	Virama	ZWJ
 lookup end
 
-
-lookup	45	single
-
-RightToLeft	no
-IgnoreBaseGlyphs	no
-IgnoreLigatures	no
-IgnoreMarks	no
-
-E_dv.sm	E_dv.lg
-AI_dv.sm	AI_dv.lg
-O_dv.sm	O_dv.lg
-AU_dv.sm	AU_dv.lg
-
-lookup end
-
-
-lookup	46	ligature
-
-RightToLeft	no
-IgnoreBaseGlyphs	no
-IgnoreLigatures	no
-IgnoreMarks	no
-
-Ta.half	Ta	Virama
-Ra.half	Ra	Virama
-
-lookup end
-
-
-lookup	47	context
-
-RightToLeft	no
-IgnoreBaseGlyphs	no
-IgnoreLigatures	no
-IgnoreMarks	no
-MarkAttachmentType	1
+lookup	 AltCandrabindu	context
+MarkAttachmentType	 1
 
 class definition begin
+
+% use Candrabindu.sm with the following
+%	icd forms
+%	I_dv/I_dv_Repha and II_dv/II_dv_Repha
+
 Ka.icd	1
 Kha.icd	1
 Ga.icd	1
 Gha.icd	1
 Nga.icd	1
+Nga.icd.rt	1
+Nga.icd.shim	1
 Ca.icd	1
 Cha.icd	1
+Cha.icd.shim	1
 Jha.icd	1
 Nya.icd	1
 Nya_nostem.icd	1
 Tta.icd	1
+Tta.icd.rt	1
+Tta.icd.shim	1
 Ttha.icd	1
+Ttha.icd.center	1
+Ttha.icd.rt	1
+TthaTa	1
 Dda.icd	1
+Dda.icd.rt	1
+Ddha.icd.rt	1
+Dda.icd.shim	1
 Ddha.icd	1
+Ddha.icd.shim	1
 Nna.icd	1
 Ta.icd	1
 Tha.icd	1
 Da.icd	1
+Da.icd.rt	1
 Dha.icd	1
 Na.icd	1
 Pa.icd	1
+Pa.icd.shim.sm	1
 Pha.icd	1
+Pha.icd.shim	1
+Pha.icd.shim.sm	1
 Ba.icd	1
+Ba.icd.shim.sm	1
 Bha.icd	1
 Ma.icd	1
 Ya.icd	1
+Ya.icd.shim.sm	1
 La.icd	1
 Va.icd	1
 Sha.icd	1
 Ssa.icd	1
 Sa.icd	1
-Ha.icd.wide	1
 Kha.icd.nohd	1
 Gha.icd.nohd	1
 Nga.icd.nohd	1
+Nga.icd.nohd.rt	1
 Ca.icd.nohd	1
 Cha.icd.nohd	1
 Jha.icd.nohd	1
 Tta.icd.nohd	1
+Tta.icd.nohd.rt	1
 Dda.icd.nohd	1
+Dda.icd.nohd.rt	1
+Ddha.icd.nohd.rt	1
 Ddha.icd.nohd	1
 Ta.icd.nohd	1
 Da.icd.nohd	1
+Da.icd.nohd.rt	1
 Na.icd.nohd	1
 Pa.icd.nohd	1
 Pha.icd.nohd	1
@@ -2685,35 +5782,32 @@ Ssa.icd.nohd	1
 Sa.icd.nohd	1
 Gi.icd	1
 Shi.icd	1
-Nga.icd.shim	1
-Dda.icd.shim	1
-Ddha.icd.shim	1
-Cha.icd.shim	1
-Tta.icd.shim	1
-Pha.icd.shim	1
-Pha.icd.shim.sm	1
-Ba.icd.shim.sm	1
-Pa.icd.shim.sm	1
-Ya.icd.shim.sm	1
+
+% vowels
 I_iv	2
 II_iv	2
 AI_iv	2
 O_iv	2
 AU_iv	2
+
 I_dv	2
 II_dv	2
 E_dv	2
 AI_dv	2
 O_dv	2
 AU_dv	2
-Repha	2
 E_dv.sm	2
+E_dv.md	2
 E_dv.lg	2
 AI_dv.sm	2
 AI_dv.lg	2
 O_dv.sm	2
+O_dv.md	2
 O_dv.lg	2
+O_dv.xlg	2
+O_dv.xxlg	2
 AU_dv.sm	2
+AU_dv.md	2
 AU_dv.lg	2
 I_dv.xxsm	2
 I_dv.xsm	2
@@ -2722,12 +5816,13 @@ II_dv.xsm	2
 II_dv.med	2
 II_dv.lg	2
 II_dv.xlg	2
-AI_dv_top.alt	2
 AU_dv_part.alt	2
 AU_dv_part.alt2	2
 AU_dv_part.alt3	2
+AI_dv_top.alt	2
 Gi	2
 Shi	2
+
 I_dv_Repha	2
 I_dv_Repha.sm	2
 I_dv_Repha.xsm	2
@@ -2737,80 +5832,87 @@ II_dv_Repha.xsm	2
 II_dv_Repha.med	2
 II_dv_Repha.lg	2
 II_dv_Repha.xlg	2
+Repha	2
 Repha_I_dv	2
 II_dv.lg.alt	2
 II_dv.med.alt	2
 II_dv.xlg.alt	2
+% II_dv_Repha.alt	2
 II_dv_Repha.lg.alt	2
 II_dv_Repha.med.alt	2
 II_dv_Repha.xlg.alt	2
-Nga_Ha	3
-Nya_Ha	3
-Nna_Ha	3
-Na_Ha	3
-Ma_Ha	3
-La_Ha	3
-Nga_Ha.nohd	3
-Na_Ha.nohd	3
-Ma_Ha.nohd	3
-La_Ha.nohd	3
+
+
+% ligs
 Nga_Ta	3
+Cha_Ta	3
 Tta_Ta	3
 Ddha_Ta	3
 Da_Ta	3
+DdaTa	3
 Pha_Ta	3
 Nya_Ta	3
 Nga_Ta.nohd	3
+Cha_Ta.nohd	3
 Tta_Ta.nohd	3
 Ddha_Ta.nohd	3
 Da_Ta.nohd	3
 Pha_Ta.nohd	3
+%Nga_Ha	3
+%Nya_Ha	3
+%Nna_Ha	3
+%Na_Ha	3
+%Ma_Ha	3
+%La_Ha	3
+%Nga_Ha.nohd	3
+%Na_Ha.nohd	3
+%Ma_Ha.nohd	3
+%La_Ha.nohd	3
+
 Candrabindu	4
+
+% Repha_II_dv.dupe	5
+% Repha_I_dv.dupe	5
+% Repha_AI_dv.dupe	5
 Repha_AI_dv	5
-Ja.icd	6
+
 Ha.icd	6
+% Ha.icd.shim.sm	6
 Ha.icd.alt	6
-Ha.icd.shim	6
+Ja.icd	6
 Ja.icd.shim	6
+% Ja.icd.shim.sm	6
 class definition end
 
-class	1, 4	2, 48
-class	2, 5, 4	3, 48
-class	2, 6, 4	3, 48
-class	2, 3, 4	3, 48
-class	2, 1, 4	3, 48
-class	2, 4	2, 48
-class	3, 4	2, 48
+
+% UPPER SIGN
+% cl 4: Candrabindu.sm is used with
+%	BT cl1: icd; BT cl2: other vowels; BT cl3: ligs using ICD
+class	2,5,4	3,SmallModifier
+class	2,6,4	3,SmallModifier
+class	2,3,4	3,SmallModifier
+class	2,1,4	3,SmallModifier
+
+class	1,4	2,SmallModifier
+class	2,4	2,SmallModifier
+class	3,4	2,SmallModifier
 
 lookup end
 
-
-lookup	48	single
-
-RightToLeft	no
-IgnoreBaseGlyphs	no
-IgnoreLigatures	no
-IgnoreMarks	no
+lookup	 SmallModifier	single
 
 Candrabindu	Candrabindu.sm
-
 lookup end
 
 
-lookup	49	ligature
-
-RightToLeft	no
-IgnoreBaseGlyphs	no
-IgnoreLigatures	no
-IgnoreMarks	no
-
+lookup	 HalfForm	ligature
 Kha.half	Kha	Virama	ZWJ
 Ga.half	Ga	Virama	ZWJ
 Gha.half	Gha	Virama	ZWJ
 Ca.half	Ca	Virama	ZWJ
 Jha.half	Jha	Virama	ZWJ
 Nna.half	Nna	Virama	ZWJ
-Ta.half	Ta	Virama
+%Ta.half	Ta	Virama
 Tha.half	Tha	Virama	ZWJ
 Dha.half	Dha	Virama	ZWJ
 Na.half	Na	Virama	ZWJ
@@ -2819,23 +5921,45 @@ Ba.half	Ba	Virama	ZWJ
 Bha.half	Bha	Virama	ZWJ
 Ma.half	Ma	Virama	ZWJ
 Ya.half	Ya	Virama	ZWJ
-Ra.half	Ra	Virama
+%Ra.half	Ra	Virama
 La.half	La	Virama	ZWJ
 Va.half	Wa	Virama	ZWJ
 Sha.half	Sha	Virama	ZWJ
 Ssa.half	Ssa	Virama	ZWJ
 Sa.half	Sa	Virama	ZWJ
 
+Kha.half	Kha.icd	Virama	ZWJ
+Ga.half	Ga.icd	Virama	ZWJ
+Gha.half	Gha.icd	Virama	ZWJ
+Ca.half	Ca.icd	Virama	ZWJ
+Jha.half	Jha.icd	Virama	ZWJ
+Nna.half	Nna.icd	Virama	ZWJ
+Tha.half	Tha.icd	Virama	ZWJ
+Dha.half	Dha.icd	Virama	ZWJ
+Na.half	Na.icd	Virama	ZWJ
+Pa.half	Pa.icd	Virama	ZWJ
+Ba.half	Ba.icd	Virama	ZWJ
+Bha.half	Bha.icd	Virama	ZWJ
+Ma.half	Ma.icd	Virama	ZWJ
+Ya.half	Ya.icd	Virama	ZWJ
+La.half	La.icd	Virama	ZWJ
+Va.half	Va.icd	Virama	ZWJ
+Sha.half	Sha.icd	Virama	ZWJ
+Ssa.half	Ssa.icd	Virama	ZWJ
+Sa.half	Sa.icd	Virama	ZWJ
+
 lookup end
 
 
-lookup	50	single
+lookup	RaInitialConjuncts	ligature
 
-RightToLeft	no
-IgnoreBaseGlyphs	no
-IgnoreLigatures	no
-IgnoreMarks	no
+%Rya	Ra.half	Ya
+Rya	Ra.icd	Ya
 
+lookup end
+
+
+lookup	 IniCondForm	single
 Ka	Ka.icd
 Kha	Kha.icd
 Ga	Ga.icd
@@ -2872,13 +5996,7 @@ Ha	Ha.icd
 lookup end
 
 
-lookup	51	ligature
-
-RightToLeft	no
-IgnoreBaseGlyphs	no
-IgnoreLigatures	no
-IgnoreMarks	no
-
+lookup	 CondForm	ligature
 Ka.cd	Virama	Ka
 Kha.cd	Virama	Kha
 Ga.cd	Virama	Ga
@@ -2893,7 +6011,6 @@ Tta.cd	Virama	Tta
 Ttha.cd	Virama	Ttha
 Dda.cd	Virama	Dda
 Ddha.cd	Virama	Ddha
-Tha.post	Virama	Tha
 Da.cd	Virama	Da
 Dha.cd	Virama	Dha
 Na.cd	Virama	Na
@@ -2911,44 +6028,96 @@ Ssa.cd	Virama	Ssa
 Sa.cd	Virama	Sa
 Ha.cd	Virama	Ha
 
+% * Tha exception, CD form is known as post form
+Tha.post	Virama	Tha
+
+Ka.cd	Virama	ZWJ	Ka
+Kha.cd	Virama	ZWJ	Kha
+Ga.cd	Virama	ZWJ	Ga
+Gha.cd	Virama	ZWJ	Gha
+Nga.cd	Virama	ZWJ	Nga
+Ca.cd	Virama	ZWJ	Ca
+Cha.cd	Virama	ZWJ	Cha
+Ja.cd	Virama	ZWJ	Ja
+Jha.cd	Virama	ZWJ	Jha
+Nya.cd	Virama	ZWJ	Nya
+Tta.cd	Virama	ZWJ	Tta
+Ttha.cd	Virama	ZWJ	Ttha
+Dda.cd	Virama	ZWJ	Dda
+Ddha.cd	Virama	ZWJ	Ddha
+Da.cd	Virama	ZWJ	Da
+Dha.cd	Virama	ZWJ	Dha
+Na.cd	Virama	ZWJ	Na
+Pa.cd	Virama	ZWJ	Pa
+Pha.cd	Virama	ZWJ	Pha
+Ba.cd	Virama	ZWJ	Ba
+Bha.cd	Virama	ZWJ	Bha
+Ma.cd	Virama	ZWJ	Ma
+Ya.cd	Virama	ZWJ	Ya
+Ra.cd	Virama	ZWJ	Ra
+La.cd	Virama	ZWJ	La
+Va.cd	Virama	ZWJ	Wa
+Sha.cd	Virama	ZWJ	Sha
+Ssa.cd	Virama	ZWJ	Ssa
+Sa.cd	Virama	ZWJ	Sa
+Ha.cd	Virama	ZWJ	Ha
+% * Tha exception, CD form is known as post form
+Tha.post	Virama	ZWJ	Tha
+Nna.post	Virama	ZWJ	Nna
+Ta.post	Virama	ZWJ	Ta
 lookup end
 
 
-lookup	52	ligature
+lookup	AltDhaCD	single
+Dha.cd	Dha.cd.alt
+lookup end
 
-RightToLeft	no
-IgnoreBaseGlyphs	no
-IgnoreLigatures	no
-IgnoreMarks	no
+
+lookup	AltDhaChain	chained
+
+backtrackclass definition begin
+Cha.icd	1
+Kha.icd	1
+Ga.icd	1
+Gi.icd	1
+Bha.icd	1
+Ma.icd	1
+La.icd	1
+Va.icd	1
+Nga.icd.rt	1
+Cha.icd.nohd	1
+Kha.icd.nohd	1
+Bha.icd.nohd	1
+Ma.icd.nohd	1
+La.icd.nohd	1
+Va.icd.nohd	1
+Nga.icd.nohd.rt	1
+class definition end
+
+class definition begin
+Dha.cd	1
+class definition end
+
+
+class-chain	1	1		1,AltDhaCD
+lookup end
+
+
+lookup	 PostForm	ligature
 MarkAttachmentType	2
-
 Nna.post	Virama	Nna
 Ta.post	Virama	Ta
-
+% Tha.post	Virama	Tha			added to CondForm
 lookup end
 
-
-lookup	53	ligature
-
-RightToLeft	no
-IgnoreBaseGlyphs	no
-IgnoreLigatures	no
-IgnoreMarks	no
+lookup	 PostFormAlt	ligature
 MarkAttachmentType	2
-
 Nna.post.alt2	Virama	Nna
-
 lookup end
 
 
-lookup	54	ligature
-
-RightToLeft	no
-IgnoreBaseGlyphs	no
-IgnoreLigatures	no
-IgnoreMarks	no
+lookup	 DiagForm	ligature
 MarkAttachmentType	2
-
 Kha.diag	Virama	Kha
 Gha.diag	Virama	Gha
 Jha.diag	Virama	Jha
@@ -2957,111 +6126,117 @@ Ma.diag	Virama	Ma
 Ya.diag	Virama	Ya
 Ssa.diag	Virama	Ssa
 Sa.diag	Virama	Sa
+% Nya + diag are precomposed ligatures under BaseLigs lookup
 
 lookup end
 
 
-lookup	55	multiple
+lookup	 AddShimHead180	multiple
+%Nya_stem.cd.alt	Nya_stem.cd.alt	ShimHead180
+%Nya_stem.cd	Nya_stem.cd	ShimHead180
+%Tha.post	Tha.post	ShimHead180
+%Ja.cd	Ja.cd	ShimHead180
+%Cha.cd	Cha.cd	ShimHead180
+%Ka.cd	Ka.cd	ShimHead180
 
-RightToLeft	no
-IgnoreBaseGlyphs	no
-IgnoreLigatures	no
-IgnoreMarks	no
-
-U_dv	U_dv	NyaShim
-UU_dv	UU_dv	NyaShim
-Ka.cd	Ka.cd	NyaShim
-Cha.cd	Cha.cd	NyaShim
-Ja.cd	Ja.cd	NyaShim
-Nya_stem.cd	Nya_stem.cd	NyaShim
-Nya.cd.alt	Nya.cd.alt	NyaShim
-Nya_stem.cd.alt	Nya_stem.cd.alt	NyaShim
-Tha.post	Tha.post	NyaShim
-U_dv.alt	U_dv.alt	NyaShim
-U_dv.sm	U_dv.sm	NyaShim
-UU_dv.alt	UU_dv.alt	NyaShim
-UU.sm	UU.sm	NyaShim
-UU.sm.alt	UU.sm.alt	NyaShim
-Cha.cd.alt	Cha.cd.alt	NyaShim
+R_dv	R_dv	ShimHead180
+RR_dv	RR_dv	ShimHead180
+L_dv	L_dv	ShimHead180
+LL_dv	LL_dv	ShimHead180
+U_dv	U_dv	ShimHead180
+UU_dv	UU_dv	ShimHead180
+U_dv.alt	U_dv.alt	ShimHead180
+U_dv.sm	U_dv.sm	ShimHead180
+UU_dv.alt	UU_dv.alt	ShimHead180
+UU.sm	UU.sm	ShimHead180
+UU.sm.alt	UU.sm.alt	ShimHead180
 
 lookup end
 
+lookup	 AddShimHead100	multiple
+Nya_low.cd	Nya_low.cd	ShimHead100
+Nya_stem.cd	Nya_stem.cd	ShimHead100
+%Nya_stem.cd.alt	Nya_stem.cd.alt	ShimHead100
+%Tha.post	Tha.post	ShimHead100
+Ka.cd	Ka.cd	ShimHead100
+Ja.cd	Ja.cd	ShimHead100
+% MAKE SMALL %
+Cha.cd	Cha.cd	ShimHead100
 
-lookup	56	multiple
-
-RightToLeft	no
-IgnoreBaseGlyphs	no
-IgnoreLigatures	no
-IgnoreMarks	no
-
-U_dv	U_dv	Headed_Shim.md
-UU_dv	UU_dv	Headed_Shim.md
-Ka.cd	Ka.cd	Headed_Shim.md
-Cha.cd	Cha.cd	Headed_Shim.md
-Ja.cd	Ja.cd	Headed_Shim.md
-Nya_stem.cd	Nya_stem.cd	Headed_Shim.md
-Nya_low.cd	Nya_low.cd	Headed_Shim.md
-Nya.cd.alt	Nya.cd.alt	Headed_Shim.md
-Nya_stem.cd.alt	Nya_stem.cd.alt	Headed_Shim.md
-Tha.post	Tha.post	Headed_Shim.md
-Tha.post.alt	Tha.post.alt	Headed_Shim.md
-U_dv.alt	U_dv.alt	Headed_Shim.md
-U_dv.sm	U_dv.sm	Headed_Shim.md
-UU_dv.alt	UU_dv.alt	Headed_Shim.md
-UU.sm	UU.sm	Headed_Shim.md
-UU.sm.alt	UU.sm.alt	Headed_Shim.md
-Cha.cd.alt	Cha.cd.alt	Headed_Shim.md
-
+R_dv	R_dv	ShimHead100
+RR_dv	RR_dv	ShimHead100
+L_dv	L_dv	ShimHead100
+LL_dv	LL_dv	ShimHead100
+%U_dv	U_dv	ShimHead100
+%UU_dv	UU_dv	ShimHead100
+U_dv.alt	U_dv.alt	ShimHead100
+U_dv.sm	U_dv.sm	ShimHead100
+UU_dv.alt	UU_dv.alt	ShimHead100
+UU.sm	UU.sm	ShimHead100
+UU.sm.alt	UU.sm.alt	ShimHead100
 lookup end
 
-
-lookup	57	single
-
-RightToLeft	no
-IgnoreBaseGlyphs	no
-IgnoreLigatures	no
-IgnoreMarks	no
-
+lookup	SubShimHead	single
 Nga.icd	Nga.icd.shim
-Cha.icd	Cha.icd.shim
-Ja.icd	Ja.icd.shim
-Tta.icd	Tta.icd.shim
 Dda.icd	Dda.icd.shim
 Ddha.icd	Ddha.icd.shim
+Cha.icd	Cha.icd.shim
+Tta.icd	Tta.icd.shim
 Pha.icd	Pha.icd.shim
-Ha.icd	Ha.icd.shim
-
+%Ha.icd	Ha.icd.shim
+Ja.icd	Ja.icd.shim
 lookup end
 
-
-lookup	58	single
-
-RightToLeft	no
-IgnoreBaseGlyphs	no
-IgnoreLigatures	no
-IgnoreMarks	no
-
-Pa.icd	Pa.icd.shim.sm
+lookup	SubShimHeadSm	single
 Pha.icd	Pha.icd.shim.sm
 Ba.icd	Ba.icd.shim.sm
+Pa.icd	Pa.icd.shim.sm
 Ya.icd	Ya.icd.shim.sm
-
+% Ha.icd	Ha.icd.shim.sm
+% Ja.icd	Ja.icd.shim.sm
 lookup end
 
-
-lookup	59	single
-
-RightToLeft	no
-IgnoreBaseGlyphs	no
-IgnoreLigatures	no
-IgnoreMarks	no
-
+lookup	 ReplaceI_dv	single
 I_dv	I_dv.alt
-I_dv.xsm	I_dv.alt
-I_dv.sm	I_dv.alt
 I_dv_Repha	I_dv_Repha.alt
+I_dv.sm	I_dv.alt
 I_dv_Repha.sm	I_dv_Repha.alt
+I_dv.xsm	I_dv.alt
 I_dv_Repha.xsm	I_dv_Repha.alt
-
 lookup end
 
+
+lookup	TopVowelsRight	single
+E_dv	E_dv.right
+lookup end
+
+
+lookup	TopVowelsRightAligned	chained
+
+backtrackclass definition begin
+Ca.icd.nohd	1
+Na.icd.nohd	1
+Ra.icd.nohd	1
+
+Ka.cd	2
+Bha.cd	2
+Cha.cd	2
+Ja.cd	2
+Da.cd	2
+Ddha.cd	2
+Nga.cd	2
+Nya_stem.cd	2
+Nya_stem.cd.alt	2
+Pha.cd	2
+Nna.post	2
+Tha.post	2
+class definition end
+
+class definition begin
+E_dv	1
+E_dv.md	1
+class definition end
+
+class-chain	2,1	1		1,TopVowelsRight
+
+lookup end
