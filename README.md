@@ -12,7 +12,7 @@ The designs and glyph sets might not final.
 To obtain all sources and build tools:
 
 ```
-$ git clone --recursive https://github.com/googlei18n/noto-source.git
+$ git clone --recursive https://github.com/googlefonts/noto-source.git
 $ cd noto-source
 $ ./build setup
 ```
