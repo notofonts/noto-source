@@ -1,0 +1,1707 @@
+FontDame GSUB table
+
+% GDEF Mark attachment class from glyph classes required!!
+
+feature table begin
+0	akhn	akhn-mlm2
+1	akhn	akhn_MAL-mlm2
+2	pref	pref-mlm2,pref-formsfix-mlm2
+3	pstf	post-forms-mlm2,post-formsfix-mlm2
+4	psts	fixdoublela2-mlm2,laligatures-mlm2,raoverlaps-mlm2,fixReph-mlym,vedic-mlym,switchVedic0-mlym,switchVedic1-mlym,otheroverlaps-mlm2,switchVedic1bis-mlym,switchVedic2-mlym,switchVedic3-mlym,splitVedic-mlym,music-mlym
+5	akhn	akhn-mlm
+6	akhn	akhn_MAL-mlm
+7	half	half-mlym
+8	blwf	below-forms-mlym,below-formfix-mlym
+9	pstf	post-forms-mlym
+10	psts	below-formfixlala-mlym,post-formfix-mlym,fixdoublela2-mlym,laligatures-mlm2,raoverlaps-mlym,fixReph-mlym,vedic-mlym,switchVedic0-mlym,switchVedic1-mlym,otheroverlaps-mlm2,switchVedic1bis-mlym,switchVedic2-mlym,switchVedic3-mlym,splitVedic-mlym,music-mlym
+11	haln	haln-mlym
+12	rlig	music-mlym
+feature table end
+
+
+script table begin
+mlm2	default		0,2,3,4,12
+mlm2	MAL		1,2,3,4,12
+mlym	default		5,7,8,9,10,11,12
+mlym	MAL		6,7,8,9,10,11,12
+script table end
+
+
+% akhn (common) ----------------------------------
+
+
+lookup	akhn-mlm2	ligature
+
+kassamlym	kamlym	viramamlym	ssamlym
+janyamlym	jamlym	viramamlym	nyamlym
+kakamlym	kamlym	viramamlym	kamlym
+katamlym	kamlym	viramamlym	tamlym
+gagamlym	gamlym	viramamlym	gamlym
+gamamlym	gamlym	viramamlym	mamlym
+ganamlym	gamlym	viramamlym	namlym
+ngakalamlym	ngamlym	viramamlym	kamlym	viramamlym	lamlym
+ngakamlym	ngamlym	viramamlym	kamlym
+ngangamlym	ngamlym	viramamlym	ngamlym
+cacamlym	camlym	viramamlym	camlym
+cachamlym	camlym	viramamlym	chamlym
+jajamlym	jamlym	viramamlym	jamlym
+nyacamlym	nyamlym	viramamlym	camlym
+nyanyamlym	nyamlym	viramamlym	nyamlym
+ttattamlym	ttamlym	viramamlym	ttamlym
+ddaddamlym	ddamlym	viramamlym	ddamlym
+nnaddamlym	nnamlym	viramamlym	ddamlym
+nnamamlym	nnamlym	viramamlym	mamlym
+nnannamlym	nnamlym	viramamlym	nnamlym
+nnattamlym	nnamlym	viramamlym	ttamlym
+tabhamlym	tamlym	viramamlym	bhamlym
+tamamlym	tamlym	viramamlym	mamlym
+tasamlym	tamlym	viramamlym	samlym
+tatamlym	tamlym	viramamlym	tamlym
+tathamlym	tamlym	viramamlym	thamlym
+dadamlym	damlym	viramamlym	damlym
+dadhamlym	damlym	viramamlym	dhamlym
+nadamlym	namlym	viramamlym	damlym
+nadhamlym	namlym	viramamlym	dhamlym
+nanamlym	namlym	viramamlym	namlym
+namamlym	namlym	viramamlym	mamlym
+natamlym	namlym	viramamlym	tamlym
+nathamlym	namlym	viramamlym	thamlym
+papamlym	pamlym	viramamlym	pamlym
+babamlym	bamlym	viramamlym	bamlym
+mamamlym	mamlym	viramamlym	mamlym
+mapamlym	mamlym	viramamlym	pamlym
+rrarramlym	rramlym	viramamlym	rramlym
+llallamlym	llamlym	viramamlym	llamlym
+shacamlym	shamlym	viramamlym	camlym
+shashamlym	shamlym	viramamlym	shamlym
+sasamlym	samlym	viramamlym	samlym
+sathamlym	samlym	viramamlym	thamlym
+hamamlym	hamlym	viramamlym	mamlym
+hanamlym	hamlym	viramamlym	namlym
+nnachillumlym	nnamlym	viramamlym	u 200d
+narramlym	namlym	viramamlym	u 200d	rramlym
+nachillumlym	namlym	viramamlym	u 200d
+rrachillumlym	ramlym	viramamlym	u 200d
+lachillumlym	lamlym	viramamlym	u 200d
+llachillumlym	llamlym	viramamlym	u 200d
+sarrarramlym	samlym	viramamlym	rramlym	viramamlym	rramlym
+% new
+nyajamlym	nyamlym	viramamlym	jamlym
+ddaddhamlym	ddamlym	viramamlym	ddhamlym
+tanamlym	tamlym	viramamlym	namlym
+narramlym	namlym	viramamlym	rramlym
+lapamlym	lamlym	viramamlym	pamlym
+narramlym	nachillumlym	viramamlym	rramlym
+% optional
+ganamlym	gamlym	u 200d	viramamlym	namlym
+gamamlym	gamlym	u 200d	viramamlym	mamlym
+tabhamlym	tamlym	u 200d	viramamlym	bhamlym
+nathamlym	namlym	u 200d	viramamlym	thamlym
+lapamlym	lamlym	u 200d	viramamlym	pamlym
+sathamlym	samlym	u 200d	viramamlym	thamlym
+hanamlym	hamlym	u 200d	viramamlym	namlym
+hamamlym	hamlym	u 200d	viramamlym	mamlym
+% exclusive optional
+kattamlym	kamlym	u 200d	viramamlym	ttamlym
+badamlym	bamlym	u 200d	viramamlym	damlym
+badhamlym	bamlym	u 200d	viramamlym	dhamlym
+ssattamlym	ssamlym	u 200d	viramamlym	ttamlym
+gadamlym	gamlym	u 200d	viramamlym	damlym
+nyachamlym	nyamlym	u 200d	viramamlym	chamlym
+nnaddhamlym	nnamlym	u 200d	viramamlym	ddhamlym
+shachamlym	shamlym	u 200d	viramamlym	chamlym
+% lafix
+lalamlym	lamlym	viramamlym	lamlym
+kalamlym	kamlym	viramamlym	lamlym
+galamlym	gamlym	viramamlym	lamlym
+palamlym	pamlym	viramamlym	lamlym
+phalamlym	phamlym	viramamlym	lamlym
+balamlym	bamlym	viramamlym	lamlym
+malamlym	mamlym	viramamlym	lamlym
+shalamlym	shamlym	viramamlym	lamlym
+salamlym	samlym	viramamlym	lamlym
+halamlym	hamlym	viramamlym	lamlym
+% new
+valamlym	vamlym	viramamlym	lamlym
+talamlym	tamlym	viramamlym	lamlym
+yayamlym	yamlym	viramamlym	yamlym
+vavamlym	vamlym	viramamlym	vamlym
+mapalamlym	mamlym	viramamlym	pamlym	viramamlym	lamlym
+% 1/320 fraction
+patamlym	pamlym	u 200d	viramamlym	tamlym
+
+lookup end
+
+
+lookup	akhn_MAL-mlm2	ligature
+
+kassamlym	kamlym	viramamlym	ssamlym
+janyamlym	jamlym	viramamlym	nyamlym
+kakamlym	kamlym	viramamlym	kamlym
+katamlym	kamlym	viramamlym	tamlym
+%kattamlym	kamlym	viramamlym	ttamlym
+gagamlym	gamlym	viramamlym	gamlym
+gamamlym	gamlym	viramamlym	mamlym
+ganamlym	gamlym	viramamlym	namlym
+ngakalamlym	ngamlym	viramamlym	kamlym	viramamlym	lamlym
+ngakamlym	ngamlym	viramamlym	kamlym
+ngangamlym	ngamlym	viramamlym	ngamlym
+cacamlym	camlym	viramamlym	camlym
+cachamlym	camlym	viramamlym	chamlym
+jajamlym	jamlym	viramamlym	jamlym
+nyacamlym	nyamlym	viramamlym	camlym
+nyanyamlym	nyamlym	viramamlym	nyamlym
+ttattamlym	ttamlym	viramamlym	ttamlym
+ddaddamlym	ddamlym	viramamlym	ddamlym
+nnaddamlym	nnamlym	viramamlym	ddamlym
+nnamamlym	nnamlym	viramamlym	mamlym
+nnannamlym	nnamlym	viramamlym	nnamlym
+nnattamlym	nnamlym	viramamlym	ttamlym
+tabhamlym	tamlym	viramamlym	bhamlym
+tamamlym	tamlym	viramamlym	mamlym
+tasamlym	tamlym	viramamlym	samlym
+tatamlym	tamlym	viramamlym	tamlym
+tathamlym	tamlym	viramamlym	thamlym
+dadamlym	damlym	viramamlym	damlym
+dadhamlym	damlym	viramamlym	dhamlym
+nadamlym	namlym	viramamlym	damlym
+nadhamlym	namlym	viramamlym	dhamlym
+nanamlym	namlym	viramamlym	namlym
+namamlym	namlym	viramamlym	mamlym
+natamlym	namlym	viramamlym	tamlym
+nathamlym	namlym	viramamlym	thamlym
+papamlym	pamlym	viramamlym	pamlym
+babamlym	bamlym	viramamlym	bamlym
+%badamlym	bamlym	viramamlym	damlym
+%badhamlym	bamlym	viramamlym	dhamlym
+mamamlym	mamlym	viramamlym	mamlym
+mapamlym	mamlym	viramamlym	pamlym
+rrarramlym	rramlym	viramamlym	rramlym
+llallamlym	llamlym	viramamlym	llamlym
+shacamlym	shamlym	viramamlym	camlym
+shashamlym	shamlym	viramamlym	shamlym
+%ssattamlym	ssamlym	viramamlym	ttamlym
+sasamlym	samlym	viramamlym	samlym
+sathamlym	samlym	viramamlym	thamlym
+hamamlym	hamlym	viramamlym	mamlym
+hanamlym	hamlym	viramamlym	namlym
+nnachillumlym	nnamlym	viramamlym	u 200d
+narramlym	namlym	viramamlym	u 200d	rramlym
+nachillumlym	namlym	viramamlym	u 200d
+rrachillumlym	ramlym	viramamlym	u 200d
+lachillumlym	lamlym	viramamlym	u 200d
+llachillumlym	llamlym	viramamlym	u 200d
+sarrarramlym	samlym	viramamlym	rramlym	viramamlym	rramlym
+% new
+nyajamlym	nyamlym	viramamlym	jamlym
+ddaddhamlym	ddamlym	viramamlym	ddhamlym
+tanamlym	tamlym	viramamlym	namlym
+narramlym	namlym	viramamlym	rramlym
+lapamlym	lamlym	viramamlym	pamlym
+narramlym	nachillumlym	viramamlym	rramlym
+% optional
+ganamlym	gamlym	u 200d	viramamlym	namlym
+gamamlym	gamlym	u 200d	viramamlym	mamlym
+tabhamlym	tamlym	u 200d	viramamlym	bhamlym
+nathamlym	namlym	u 200d	viramamlym	thamlym
+lapamlym	lamlym	u 200d	viramamlym	pamlym
+sathamlym	samlym	u 200d	viramamlym	thamlym
+hanamlym	hamlym	u 200d	viramamlym	namlym
+hamamlym	hamlym	u 200d	viramamlym	mamlym
+% exclusive optional
+kattamlym	kamlym	u 200d	viramamlym	ttamlym
+badamlym	bamlym	u 200d	viramamlym	damlym
+badhamlym	bamlym	u 200d	viramamlym	dhamlym
+ssattamlym	ssamlym	u 200d	viramamlym	ttamlym
+gadamlym	gamlym	u 200d	viramamlym	damlym
+nyachamlym	nyamlym	u 200d	viramamlym	chamlym
+nnaddhamlym	nnamlym	u 200d	viramamlym	ddhamlym
+shachamlym	shamlym	u 200d	viramamlym	chamlym
+% MAL exception
+kattamlym	kamlym	viramamlym	ttamlym
+gadamlym	gamlym	viramamlym	damlym
+% lafix
+lalamlym	lamlym	viramamlym	lamlym
+kalamlym	kamlym	viramamlym	lamlym
+galamlym	gamlym	viramamlym	lamlym
+palamlym	pamlym	viramamlym	lamlym
+phalamlym	phamlym	viramamlym	lamlym
+balamlym	bamlym	viramamlym	lamlym
+malamlym	mamlym	viramamlym	lamlym
+shalamlym	shamlym	viramamlym	lamlym
+salamlym	samlym	viramamlym	lamlym
+halamlym	hamlym	viramamlym	lamlym
+% new
+valamlym	vamlym	viramamlym	lamlym
+talamlym	tamlym	viramamlym	lamlym
+%tatalamlym	tamlym	viramamlym	tamlym	viramamlym	lamlym
+yayamlym	yamlym	viramamlym	yamlym
+vavamlym	vamlym	viramamlym	vamlym
+mapalamlym	mamlym	viramamlym	pamlym	viramamlym	lamlym
+% 1/320 fraction
+patamlym	pamlym	u 200d	viramamlym	tamlym
+
+lookup end
+
+
+
+lookup	akhn-mlm	ligature
+
+kassamlym	kamlym	viramamlym	ssamlym
+janyamlym	jamlym	viramamlym	nyamlym
+kakamlym	kamlym	viramamlym	kamlym
+katamlym	kamlym	viramamlym	tamlym
+%kattamlym	kamlym	viramamlym	ttamlym
+gagamlym	gamlym	viramamlym	gamlym
+gamamlym	gamlym	viramamlym	mamlym
+ganamlym	gamlym	viramamlym	namlym
+ngakamlym	ngamlym	viramamlym	kamlym
+ngangamlym	ngamlym	viramamlym	ngamlym
+cacamlym	camlym	viramamlym	camlym
+cachamlym	camlym	viramamlym	chamlym
+jajamlym	jamlym	viramamlym	jamlym
+nyacamlym	nyamlym	viramamlym	camlym
+nyanyamlym	nyamlym	viramamlym	nyamlym
+ttattamlym	ttamlym	viramamlym	ttamlym
+ddaddamlym	ddamlym	viramamlym	ddamlym
+nnaddamlym	nnamlym	viramamlym	ddamlym
+nnamamlym	nnamlym	viramamlym	mamlym
+nnannamlym	nnamlym	viramamlym	nnamlym
+nnattamlym	nnamlym	viramamlym	ttamlym
+tabhamlym	tamlym	viramamlym	bhamlym
+tamamlym	tamlym	viramamlym	mamlym
+tasamlym	tamlym	viramamlym	samlym
+tatamlym	tamlym	viramamlym	tamlym
+tathamlym	tamlym	viramamlym	thamlym
+dadamlym	damlym	viramamlym	damlym
+dadhamlym	damlym	viramamlym	dhamlym
+nadamlym	namlym	viramamlym	damlym
+nadhamlym	namlym	viramamlym	dhamlym
+nanamlym	namlym	viramamlym	namlym
+namamlym	namlym	viramamlym	mamlym
+natamlym	namlym	viramamlym	tamlym
+nathamlym	namlym	viramamlym	thamlym
+papamlym	pamlym	viramamlym	pamlym
+babamlym	bamlym	viramamlym	bamlym
+mamamlym	mamlym	viramamlym	mamlym
+mapamlym	mamlym	viramamlym	pamlym
+rrarramlym	rramlym	viramamlym	rramlym
+llallamlym	llamlym	viramamlym	llamlym
+shacamlym	shamlym	viramamlym	camlym
+shashamlym	shamlym	viramamlym	shamlym
+sasamlym	samlym	viramamlym	samlym
+sathamlym	samlym	viramamlym	thamlym
+hamamlym	hamlym	viramamlym	mamlym
+hanamlym	hamlym	viramamlym	namlym
+nnachillumlym	nnamlym	viramamlym	u 200d
+narramlym	namlym	viramamlym	u 200d	rramlym
+nachillumlym	namlym	viramamlym	u 200d
+rrachillumlym	ramlym	viramamlym	u 200d
+lachillumlym	lamlym	viramamlym	u 200d
+llachillumlym	llamlym	viramamlym	u 200d
+sarrarramlym	samlym	viramamlym	rramlym	viramamlym	rramlym
+% new
+nyajamlym	nyamlym	viramamlym	jamlym
+ddaddhamlym	ddamlym	viramamlym	ddhamlym
+tanamlym	tamlym	viramamlym	namlym
+narramlym	namlym	viramamlym	rramlym
+lapamlym	lamlym	viramamlym	pamlym
+narramlym	nachillumlym	viramamlym	rramlym
+% optional
+ganamlym	gamlym	u 200d	viramamlym	namlym
+gamamlym	gamlym	u 200d	viramamlym	mamlym
+tabhamlym	tamlym	u 200d	viramamlym	bhamlym
+nathamlym	namlym	u 200d	viramamlym	thamlym
+lapamlym	lamlym	u 200d	viramamlym	pamlym
+sathamlym	samlym	u 200d	viramamlym	thamlym
+hanamlym	hamlym	u 200d	viramamlym	namlym
+hamamlym	hamlym	u 200d	viramamlym	mamlym
+% exclusive optional
+kattamlym	kamlym	u 200d	viramamlym	ttamlym
+badamlym	bamlym	u 200d	viramamlym	damlym
+badhamlym	bamlym	u 200d	viramamlym	dhamlym
+ssattamlym	ssamlym	u 200d	viramamlym	ttamlym
+gadamlym	gamlym	u 200d	viramamlym	damlym
+nyachamlym	nyamlym	u 200d	viramamlym	chamlym
+nnaddhamlym	nnamlym	u 200d	viramamlym	ddhamlym
+shachamlym	shamlym	u 200d	viramamlym	chamlym
+% lafix
+lalamlym	lamlym	lamlym	viramamlym
+kalamlym	kamlym	lamlym	viramamlym
+galamlym	gamlym	lamlym	viramamlym
+palamlym	pamlym	lamlym	viramamlym
+phalamlym	phamlym	lamlym	viramamlym
+balamlym	bamlym	lamlym	viramamlym
+malamlym	mamlym	lamlym	viramamlym
+shalamlym	shamlym	lamlym	viramamlym
+salamlym	samlym	lamlym	viramamlym
+halamlym	hamlym	lamlym	viramamlym
+ngakalamlym	ngamlym	viramamlym	kamlym	lamlym	viramamlym
+% new
+valamlym	vamlym	lamlym	viramamlym
+talamlym	tamlym	lamlym	viramamlym
+mapalamlym	mamlym	viramamlym	pamlym	lamlym	viramamlym
+% 1/320 fraction
+patamlym	pamlym	u 200d	viramamlym	tamlym
+
+lookup end
+
+
+lookup	akhn_MAL-mlm	ligature
+
+kassamlym	kamlym	viramamlym	ssamlym
+janyamlym	jamlym	viramamlym	nyamlym
+kakamlym	kamlym	viramamlym	kamlym
+katamlym	kamlym	viramamlym	tamlym
+%kattamlym	kamlym	viramamlym	ttamlym
+gagamlym	gamlym	viramamlym	gamlym
+gamamlym	gamlym	viramamlym	mamlym
+ganamlym	gamlym	viramamlym	namlym
+ngakamlym	ngamlym	viramamlym	kamlym
+ngangamlym	ngamlym	viramamlym	ngamlym
+cacamlym	camlym	viramamlym	camlym
+cachamlym	camlym	viramamlym	chamlym
+jajamlym	jamlym	viramamlym	jamlym
+nyacamlym	nyamlym	viramamlym	camlym
+nyanyamlym	nyamlym	viramamlym	nyamlym
+ttattamlym	ttamlym	viramamlym	ttamlym
+ddaddamlym	ddamlym	viramamlym	ddamlym
+nnaddamlym	nnamlym	viramamlym	ddamlym
+nnamamlym	nnamlym	viramamlym	mamlym
+nnannamlym	nnamlym	viramamlym	nnamlym
+nnattamlym	nnamlym	viramamlym	ttamlym
+tabhamlym	tamlym	viramamlym	bhamlym
+tamamlym	tamlym	viramamlym	mamlym
+tasamlym	tamlym	viramamlym	samlym
+tatamlym	tamlym	viramamlym	tamlym
+tathamlym	tamlym	viramamlym	thamlym
+dadamlym	damlym	viramamlym	damlym
+dadhamlym	damlym	viramamlym	dhamlym
+nadamlym	namlym	viramamlym	damlym
+nadhamlym	namlym	viramamlym	dhamlym
+nanamlym	namlym	viramamlym	namlym
+namamlym	namlym	viramamlym	mamlym
+natamlym	namlym	viramamlym	tamlym
+nathamlym	namlym	viramamlym	thamlym
+papamlym	pamlym	viramamlym	pamlym
+babamlym	bamlym	viramamlym	bamlym
+mamamlym	mamlym	viramamlym	mamlym
+mapamlym	mamlym	viramamlym	pamlym
+rrarramlym	rramlym	viramamlym	rramlym
+llallamlym	llamlym	viramamlym	llamlym
+shacamlym	shamlym	viramamlym	camlym
+shashamlym	shamlym	viramamlym	shamlym
+%ssattamlym	ssamlym	viramamlym	ttamlym
+sasamlym	samlym	viramamlym	samlym
+sathamlym	samlym	viramamlym	thamlym
+hamamlym	hamlym	viramamlym	mamlym
+hanamlym	hamlym	viramamlym	namlym
+nnachillumlym	nnamlym	viramamlym	u 200d
+narramlym	namlym	viramamlym	u 200d	rramlym
+nachillumlym	namlym	viramamlym	u 200d
+rrachillumlym	ramlym	viramamlym	u 200d
+lachillumlym	lamlym	viramamlym	u 200d
+llachillumlym	llamlym	viramamlym	u 200d
+sarrarramlym	samlym	viramamlym	rramlym	viramamlym	rramlym
+% new
+nyajamlym	nyamlym	viramamlym	jamlym
+ddaddhamlym	ddamlym	viramamlym	ddhamlym
+tanamlym	tamlym	viramamlym	namlym
+narramlym	namlym	viramamlym	rramlym
+lapamlym	lamlym	viramamlym	pamlym
+narramlym	nachillumlym	viramamlym	rramlym
+% optional
+ganamlym	gamlym	u 200d	viramamlym	namlym
+gamamlym	gamlym	u 200d	viramamlym	mamlym
+tabhamlym	tamlym	u 200d	viramamlym	bhamlym
+nathamlym	namlym	u 200d	viramamlym	thamlym
+lapamlym	lamlym	u 200d	viramamlym	pamlym
+sathamlym	samlym	u 200d	viramamlym	thamlym
+hanamlym	hamlym	u 200d	viramamlym	namlym
+hamamlym	hamlym	u 200d	viramamlym	mamlym
+% exclusive optional
+kattamlym	kamlym	u 200d	viramamlym	ttamlym
+badamlym	bamlym	u 200d	viramamlym	damlym
+badhamlym	bamlym	u 200d	viramamlym	dhamlym
+ssattamlym	ssamlym	u 200d	viramamlym	ttamlym
+gadamlym	gamlym	u 200d	viramamlym	damlym
+nyachamlym	nyamlym	u 200d	viramamlym	chamlym
+nnaddhamlym	nnamlym	u 200d	viramamlym	ddhamlym
+shachamlym	shamlym	u 200d	viramamlym	chamlym
+% MAL exception
+kattamlym	kamlym	viramamlym	ttamlym
+gadamlym	gamlym	viramamlym	damlym
+% lafix
+lalamlym	lamlym	lamlym	viramamlym
+kalamlym	kamlym	lamlym	viramamlym
+galamlym	gamlym	lamlym	viramamlym
+palamlym	pamlym	lamlym	viramamlym
+phalamlym	phamlym	lamlym	viramamlym
+balamlym	bamlym	lamlym	viramamlym
+malamlym	mamlym	lamlym	viramamlym
+shalamlym	shamlym	lamlym	viramamlym
+salamlym	samlym	lamlym	viramamlym
+halamlym	hamlym	lamlym	viramamlym
+ngakalamlym	ngamlym	viramamlym	kamlym	lamlym	viramamlym
+% new
+valamlym	vamlym	lamlym	viramamlym
+talamlym	tamlym	lamlym	viramamlym
+mapalamlym	mamlym	viramamlym	pamlym	lamlym	viramamlym
+% 1/320 fraction
+patamlym	pamlym	u 200d	viramamlym	tamlym
+
+lookup end
+
+
+% pref ----------------------------------
+
+
+lookup	pref-mlm2	ligature
+
+rapostmlym	viramamlym	ramlym
+
+lookup end
+
+
+lookup	pref-formsfix-mlm2	chained
+
+glyph	yamlym	rapostmlym		1,splityapost-mlym
+glyph	lllamlym	rapostmlym		1,splityapost-mlym
+
+lookup end
+
+
+% half ----------------------------------
+
+
+lookup	half-mlym	ligature
+
+kaprehalfmlym	kamlym	viramamlym
+khaprehalfmlym	khamlym	viramamlym
+gaprehalfmlym	gamlym	viramamlym
+ghaprehalfmlym	ghamlym	viramamlym
+ngaprehalfmlym	ngamlym	viramamlym
+caprehalfmlym	camlym	viramamlym
+chaprehalfmlym	chamlym	viramamlym
+japrehalfmlym	jamlym	viramamlym
+jhaprehalfmlym	jhamlym	viramamlym
+nyaprehalfmlym	nyamlym	viramamlym
+ttaprehalfmlym	ttamlym	viramamlym
+tthaprehalfmlym	tthamlym	viramamlym
+ddaprehalfmlym	ddamlym	viramamlym
+ddhaprehalfmlym	ddhamlym	viramamlym
+nnachillumlym	nnamlym	viramamlym	u 200d
+nnaprehalfmlym	nnamlym	viramamlym
+taprehalfmlym	tamlym	viramamlym
+thaprehalfmlym	thamlym	viramamlym
+daprehalfmlym	damlym	viramamlym
+dhaprehalfmlym	dhamlym	viramamlym
+nachillumlym	namlym	viramamlym	u 200d
+naprehalfmlym	namlym	viramamlym
+paprehalfmlym	pamlym	viramamlym
+phaprehalfmlym	phamlym	viramamlym
+baprehalfmlym	bamlym	viramamlym
+bhaprehalfmlym	bhamlym	viramamlym
+maprehalfmlym	mamlym	viramamlym
+yaprehalfmlym	yamlym	viramamlym
+rrachillumlym	ramlym	viramamlym	u 200d
+raprehalfmlym	ramlym	viramamlym
+rraprehalfmlym	rramlym	viramamlym
+lachillumlym	lamlym	viramamlym	u 200d
+laprehalfmlym	lamlym	viramamlym
+llachillumlym	llamlym	viramamlym	u 200d
+llaprehalfmlym	llamlym	viramamlym
+lllaprehalfmlym	lllamlym	viramamlym
+vaprehalfmlym	vamlym	viramamlym
+shaprehalfmlym	shamlym	viramamlym
+ssaprehalfmlym	ssamlym	viramamlym
+saprehalfmlym	samlym	viramamlym
+haprehalfmlym	hamlym	viramamlym
+kassaprehalfmlym	kassamlym	viramamlym
+
+lookup end
+
+
+% blwf ----------------------------------
+
+
+
+lookup	below-forms-mlym	ligature
+
+lasubscriptmlym	lamlym	viramamlym
+
+lookup end
+
+
+lookup	below-formfix-mlym	multiple
+
+lasubscriptmlym	viramamlym	lamlym
+
+lookup end
+
+
+
+% pstf ----------------------------------
+
+lookup	post-forms-mlm2	ligature
+
+yapostmlym	viramamlym	yamlym
+vapostmlym	viramamlym	vamlym
+
+lookup end
+
+
+
+lookup	post-formsfix-mlm2	chained
+
+glyph	vapostmlym	rapostmlym		1,splityapost-mlym
+
+lookup end
+
+
+
+lookup	post-forms-mlym	ligature
+
+rapostmlym	ramlym	viramamlym
+yapostmlym	yamlym	viramamlym
+vapostmlym	vamlym	viramamlym
+
+lookup end
+
+
+% fixes mlym ----------------------------------
+
+lookup	below-formfixlala-mlym	ligature
+
+lalamlym	lamlym	viramamlym	lamlym
+yayamlym	yamlym	yapostmlym
+vavamlym	vamlym	vapostmlym
+yayamlym	yamlym	viramamlym	yamlym
+vavamlym	vamlym	viramamlym	vamlym
+
+lookup end
+
+
+lookup	post-formfix-mlym	context
+
+markattachmenttype	2
+
+glyph	yapostmlym,yapostmlym	1,swap1-mlym	2,swap2-mlym
+glyph	vapostmlym,vapostmlym	1,swap1-mlym	2,swap2-mlym
+
+lookup end
+
+
+lookup	swap1-mlym	single
+
+yapostmlym	viramamlym
+vapostmlym	viramamlym
+
+lookup end
+
+
+lookup	swap2-mlym	single
+
+yapostmlym	yayamlym
+vapostmlym	vavamlym
+
+lookup end
+
+
+lookup	splityapost-mlym	multiple
+
+vapostmlym	viramamlym	vamlym
+rapostmlym	viramamlym	ramlym
+
+lookup end
+
+
+
+% psts mlm2 ---------------------------
+
+
+lookup	fixdoublela2-mlm2	chained
+
+markattachmenttype	2
+
+backtrackclass definition begin
+narramlym	1
+class definition end
+
+class definition begin
+kattamlym	1
+gagamlym	1
+cacamlym	1
+cachamlym	1
+ttattamlym	1
+ddaddamlym	1
+nnannamlym	1
+dadamlym	1
+papamlym	1
+babamlym	1
+badamlym	1
+badhamlym	1
+rrarramlym	1
+shashamlym	1
+ssattamlym	1
+sarrarramlym	1
+sasamlym	1
+% new
+ddaddhamlym	1
+lapamlym	1
+lalamlym	1
+kalamlym	1
+ngakalamlym	1
+galamlym	1
+palamlym	1
+phalamlym	1
+balamlym	1
+malamlym	1
+shalamlym	1
+salamlym	1
+halamlym	1
+% new
+valamlym	1
+talamlym	1
+yayamlym	1
+vavamlym	1
+mapalamlym	1
+% handle fraction just in case
+patamlym	1
+lvocalicvowelsignmlym	2
+llvocalicvowelsignmlym	2
+
+class definition end
+
+lookaheadclass definition begin
+lvocalicvowelsignmlym	1
+llvocalicvowelsignmlym	1
+class definition end
+
+class-chain		1	1	1,splitligature-mlm2
+class-chain	1	2		1,altpostmark-mlm2
+
+lookup end
+
+
+
+
+lookup	splitligature-mlm2	multiple
+
+kattamlym	kamlym	viramamlym	ttamlym
+gagamlym	gamlym	viramamlym	gamlym
+cacamlym	camlym	viramamlym	camlym
+cachamlym	camlym	viramamlym	chamlym
+ttattamlym	ttamlym	viramamlym	ttamlym
+ddaddamlym	ddamlym	viramamlym	ddamlym
+nnannamlym	nnamlym	viramamlym	nnamlym
+dadamlym	damlym	viramamlym	damlym
+papamlym	pamlym	viramamlym	pamlym
+babamlym	bamlym	viramamlym	bamlym
+badamlym	bamlym	viramamlym	damlym
+badhamlym	bamlym	viramamlym	dhamlym
+rrarramlym	rramlym	viramamlym	rramlym
+shashamlym	shamlym	viramamlym	shamlym
+ssattamlym	ssamlym	viramamlym	ttamlym
+sarrarramlym	samlym	viramamlym	rraprehalfmlym	rramlym
+sasamlym	samlym	viramamlym	samlym
+% new
+ddaddhamlym	ddamlym	viramamlym	ddhamlym
+lapamlym	lamlym	viramamlym	pamlym
+lalamlym	lamlym	viramamlym	lamlym
+kalamlym	kamlym	viramamlym	lamlym
+galamlym	gamlym	viramamlym	lamlym
+palamlym	pamlym	viramamlym	lamlym
+phalamlym	phamlym	viramamlym	lamlym
+balamlym	bamlym	viramamlym	lamlym
+malamlym	mamlym	viramamlym	lamlym
+shalamlym	shamlym	viramamlym	lamlym
+salamlym	samlym	viramamlym	lamlym
+halamlym	hamlym	viramamlym	lamlym
+% new
+valamlym	vamlym	viramamlym	lamlym
+talamlym	tamlym	viramamlym	lamlym
+yayamlym	yamlym	viramamlym	yamlym
+vavamlym	vamlym	viramamlym	vamlym
+mapalamlym	mapamlym	viramamlym	lamlym
+patamlym	pamlym	viramamlym	tamlym
+ngakalamlym	ngakamlym	viramamlym	lamlym
+
+lookup end
+
+
+
+lookup	fixdoublela2-mlym	chained
+
+markattachmenttype	2
+
+backtrackclass definition begin
+narramlym	1
+class definition end
+
+class definition begin
+kattamlym	1
+gagamlym	1
+cacamlym	1
+cachamlym	1
+ttattamlym	1
+ddaddamlym	1
+nnannamlym	1
+dadamlym	1
+papamlym	1
+babamlym	1
+badamlym	1
+badhamlym	1
+rrarramlym	1
+shashamlym	1
+ssattamlym	1
+sarrarramlym	1
+sasamlym	1
+% new
+ddaddhamlym	1
+lapamlym	1
+lalamlym	1
+kalamlym	1
+ngakalamlym	1
+galamlym	1
+palamlym	1
+phalamlym	1
+balamlym	1
+malamlym	1
+shalamlym	1
+salamlym	1
+halamlym	1
+% new
+valamlym	1
+talamlym	1
+yayamlym	1
+vavamlym	1
+mapalamlym	1
+% handle fraction just in case
+patamlym	1
+lvocalicvowelsignmlym	2
+llvocalicvowelsignmlym	2
+
+class definition end
+
+lookaheadclass definition begin
+lvocalicvowelsignmlym	1
+llvocalicvowelsignmlym	1
+class definition end
+
+class-chain		1	1	1,splitligature-mlym
+class-chain	1	2		1,altpostmark-mlm2
+
+lookup end
+
+
+
+lookup	splitligature-mlym	multiple
+
+kattamlym	kaprehalfmlym	ttamlym
+gagamlym	gaprehalfmlym	gamlym
+cacamlym	caprehalfmlym	camlym
+cachamlym	caprehalfmlym	chamlym
+ttattamlym	ttaprehalfmlym	ttamlym
+ddaddamlym	ddaprehalfmlym	ddamlym
+nnannamlym	nnaprehalfmlym	nnamlym
+dadamlym	daprehalfmlym	damlym
+papamlym	paprehalfmlym	pamlym
+babamlym	baprehalfmlym	bamlym
+badamlym	baprehalfmlym	damlym
+badhamlym	baprehalfmlym	dhamlym
+rrarramlym	rraprehalfmlym	rramlym
+shashamlym	shaprehalfmlym	shamlym
+ssattamlym	ssaprehalfmlym	ttamlym
+sarrarramlym	saprehalfmlym	rraprehalfmlym	rramlym
+sasamlym	saprehalfmlym	samlym
+% new
+ddaddhamlym	ddaprehalfmlym	ddhamlym
+lapamlym	laprehalfmlym	pamlym
+lalamlym	laprehalfmlym	lamlym
+kalamlym	kaprehalfmlym	lamlym
+galamlym	gaprehalfmlym	lamlym
+palamlym	paprehalfmlym	lamlym
+phalamlym	phaprehalfmlym	lamlym
+balamlym	baprehalfmlym	lamlym
+malamlym	maprehalfmlym	lamlym
+shalamlym	shaprehalfmlym	lamlym
+salamlym	saprehalfmlym	lamlym
+halamlym	haprehalfmlym	lamlym
+% new
+valamlym	vaprehalfmlym	lamlym
+talamlym	taprehalfmlym	lamlym
+yayamlym	yaprehalfmlym	lamlym
+vavamlym	vaprehalfmlym	lamlym
+mapalamlym	mapamlym	viramamlym	lamlym
+patamlym	paprehalfmlym	tamlym
+ngakalamlym	ngakamlym	viramamlym	lamlym
+
+lookup end
+
+
+lookup	laligatures-mlm2	ligature
+
+markattachmenttype	2
+
+ttalvocalicmlym	ttamlym	lvocalicvowelsignmlym
+tthalvocalicmlym	tthamlym	lvocalicvowelsignmlym
+dalvocalicmlym	damlym	lvocalicvowelsignmlym
+bhalvocalicmlym	bhamlym	lvocalicvowelsignmlym
+malvocalicmlym	mamlym	lvocalicvowelsignmlym
+ralvocalicmlym	ramlym	lvocalicvowelsignmlym
+rralvocalicmlym	rramlym	lvocalicvowelsignmlym
+lllalvocalicmlym	lllamlym	lvocalicvowelsignmlym
+ttallvocalicmlym	ttamlym	llvocalicvowelsignmlym
+tthallvocalicmlym	tthamlym	llvocalicvowelsignmlym
+dallvocalicmlym	damlym	llvocalicvowelsignmlym
+bhallvocalicmlym	bhamlym	llvocalicvowelsignmlym
+mallvocalicmlym	mamlym	llvocalicvowelsignmlym
+rallvocalicmlym	ramlym	llvocalicvowelsignmlym
+rrallvocalicmlym	rramlym	llvocalicvowelsignmlym
+lllallvocalicmlym	lllamlym	llvocalicvowelsignmlym
+
+lookup end
+
+
+
+lookup	raoverlaps-mlm2	chained
+
+markattachmenttype	2
+
+backtrackclass definition begin
+# 1	1
+class definition end
+
+class definition begin
+rapostmlym	1
+class definition end
+
+lookaheadclass definition begin
+llamlym	1
+cachamlym	1
+ttattamlym	1
+malamlym	1
+llallamlym	1
+class definition end
+
+class-chain		1	1	1,altra-mlm2
+
+lookup end
+
+
+
+lookup	raoverlaps-mlym	chained
+
+markattachmenttype	2
+
+lookaheadclass definition begin
+llamlym	1
+llaprehalfmlym	1
+cachamlym	1
+ttattamlym	1
+malamlym	1
+llallamlym	1
+class definition end
+
+class definition begin
+rapostmlym	1
+class definition end
+
+backtrackclass definition begin
+llamlym	1
+llaprehalfmlym	1
+cachamlym	1
+ttattamlym	1
+malamlym	1
+llallamlym	1
+class definition end
+
+class-chain		1	1	1,altra-mlm2
+class-chain	1	1		1,altra-mlm2
+
+lookup end
+
+
+lookup	altra-mlm2	single
+
+rapostmlym	rapostaltmlym
+
+lookup end
+
+
+
+% psts common  ---------------------------
+
+
+lookup	fixReph-mlym	chained
+
+backtrackclass definition begin
+ttamlym	1
+tthamlym	1
+damlym	1
+bhamlym	1
+mamlym	1
+ramlym	1
+rramlym	1
+llamlym	1
+lllamlym	1
+tttamlym	1
+ttattamlym	1
+dadamlym	1
+malamlym	1
+rrarramlym	1
+class definition end
+
+class definition begin
+rephmlym	1
+viramamlym	2
+ivowelsignmlym	3
+iivowelsignmlym	3
+class definition end
+
+lookaheadclass definition begin
+# 1	1
+class definition end
+
+class-chain	1	1,2		1,rephLigature-mlym
+class-chain	1	1,3		1,rephLigature-mlym
+class-chain	1	2,1		1,rephLigature-mlym
+
+lookup end
+
+
+lookup	rephLigature-mlym	ligature
+
+rephivowelmlym	rephmlym	ivowelsignmlym
+rephiivowelmlym	rephmlym	iivowelsignmlym
+rephviramamlym	rephmlym	viramamlym
+rephviramamlym	viramamlym	rephmlym
+
+lookup end
+
+
+
+
+lookup	vedic-mlym	ligature
+
+candrabindu_0951mlym	candrabindumlym	uni0951
+candrabindu_0952mlym	candrabindumlym	uni0952
+candrabindu_1CDAmlym	candrabindumlym	uni1CDA
+
+lookup end
+
+
+lookup	switchVedic0-mlym	context
+
+glyph	anusvaramlym,candrabindumlym	1,toCandraBindu-mlym	2,toAnusvara-mlym
+glyph	anusvaramlym,uni0951	1,to0951-mlym	2,toAnusvara-mlym
+glyph	anusvaramlym,uni0952	1,to0952-mlym	2,toAnusvara-mlym
+glyph	anusvaramlym,uni1CDA	1,to1CDA-mlym	2,toAnusvara-mlym
+glyph	anusvaramlym,candrabindu_0951mlym	1,toCandrabindu_0951-mlym	2,toAnusvara-mlym
+glyph	anusvaramlym,candrabindu_0952mlym	1,toCandrabindu_0952-mlym	2,toAnusvara-mlym
+glyph	anusvaramlym,candrabindu_1CDAmlym	1,toCandrabindu_1CDA-mlym	2,toAnusvara-mlym
+
+glyph	visargamlym,candrabindumlym	1,toCandraBindu-mlym	2,toVisarga-mlym
+glyph	visargamlym,uni0951	1,to0951-mlym	2,toVisarga-mlym
+glyph	visargamlym,uni0952	1,to0952-mlym	2,toVisarga-mlym
+glyph	visargamlym,uni1CDA	1,to1CDA-mlym	2,toVisarga-mlym
+glyph	visargamlym,candrabindu_0951mlym	1,toCandrabindu_0951-mlym	2,toVisarga-mlym
+glyph	visargamlym,candrabindu_0952mlym	1,toCandrabindu_0952-mlym	2,toVisarga-mlym
+glyph	visargamlym,candrabindu_1CDAmlym	1,toCandrabindu_1CDA-mlym	2,toVisarga-mlym
+
+lookup end
+
+
+
+lookup	switchVedic1-mlym	context
+
+glyph	aavowelsignmlym,candrabindumlym	1,toCandraBindu-mlym	2,toAAvowel-mlym
+glyph	aavowelsignmlym,uni0951	1,to0951-mlym	2,toAAvowel-mlym
+glyph	aavowelsignmlym,uni0952	1,to0952-mlym	2,toAAvowel-mlym
+glyph	aavowelsignmlym,uni1CDA	1,to1CDA-mlym	2,toAAvowel-mlym
+glyph	aavowelsignmlym,candrabindu_0951mlym	1,toCandrabindu_0951-mlym	2,toAAvowel-mlym
+glyph	aavowelsignmlym,candrabindu_0952mlym	1,toCandrabindu_0952-mlym	2,toAAvowel-mlym
+glyph	aavowelsignmlym,candrabindu_1CDAmlym	1,toCandrabindu_1CDA-mlym	2,toAAvowel-mlym
+
+glyph	ivowelsignmlym,candrabindumlym	1,toCandraBindu-mlym	2,toIvowel-mlym
+glyph	ivowelsignmlym,uni0951	1,to0951-mlym	2,toIvowel-mlym
+glyph	ivowelsignmlym,uni0952	1,to0952-mlym	2,toIvowel-mlym
+glyph	ivowelsignmlym,uni1CDA	1,to1CDA-mlym	2,toIvowel-mlym
+glyph	ivowelsignmlym,candrabindu_0951mlym	1,toCandrabindu_0951-mlym	2,toIvowel-mlym
+glyph	ivowelsignmlym,candrabindu_0952mlym	1,toCandrabindu_0952-mlym	2,toIvowel-mlym
+glyph	ivowelsignmlym,candrabindu_1CDAmlym	1,toCandrabindu_1CDA-mlym	2,toIvowel-mlym
+
+glyph	iivowelsignmlym,candrabindumlym	1,toCandraBindu-mlym	2,toIIvowel-mlym
+glyph	iivowelsignmlym,uni0951	1,to0951-mlym	2,toIIvowel-mlym
+glyph	iivowelsignmlym,uni0952	1,to0952-mlym	2,toIIvowel-mlym
+glyph	iivowelsignmlym,uni1CDA	1,to1CDA-mlym	2,toIIvowel-mlym
+glyph	iivowelsignmlym,candrabindu_0951mlym	1,toCandrabindu_0951-mlym	2,toIIvowel-mlym
+glyph	iivowelsignmlym,candrabindu_0952mlym	1,toCandrabindu_0952-mlym	2,toIIvowel-mlym
+glyph	iivowelsignmlym,candrabindu_1CDAmlym	1,toCandrabindu_1CDA-mlym	2,toIIvowel-mlym
+
+glyph	uvowelsignmlym,candrabindumlym	1,toCandraBindu-mlym	2,toUvowel-mlym
+glyph	uvowelsignmlym,uni0951	1,to0951-mlym	2,toUvowel-mlym
+glyph	uvowelsignmlym,uni0952	1,to0952-mlym	2,toUvowel-mlym
+glyph	uvowelsignmlym,uni1CDA	1,to1CDA-mlym	2,toUvowel-mlym
+glyph	uvowelsignmlym,candrabindu_0951mlym	1,toCandrabindu_0951-mlym	2,toUvowel-mlym
+glyph	uvowelsignmlym,candrabindu_0952mlym	1,toCandrabindu_0952-mlym	2,toUvowel-mlym
+glyph	uvowelsignmlym,candrabindu_1CDAmlym	1,toCandrabindu_1CDA-mlym	2,toUvowel-mlym
+
+glyph	uuvowelsignmlym,candrabindumlym	1,toCandraBindu-mlym	2,toUUvowel-mlym
+glyph	uuvowelsignmlym,uni0951	1,to0951-mlym	2,toUUvowel-mlym
+glyph	uuvowelsignmlym,uni0952	1,to0952-mlym	2,toUUvowel-mlym
+glyph	uuvowelsignmlym,uni1CDA	1,to1CDA-mlym	2,toUUvowel-mlym
+glyph	uuvowelsignmlym,candrabindu_0951mlym	1,toCandrabindu_0951-mlym	2,toUUvowel-mlym
+glyph	uuvowelsignmlym,candrabindu_0952mlym	1,toCandrabindu_0952-mlym	2,toUUvowel-mlym
+glyph	uuvowelsignmlym,candrabindu_1CDAmlym	1,toCandrabindu_1CDA-mlym	2,toUUvowel-mlym
+
+glyph	rvocalicvowelsignmlym,candrabindumlym	1,toCandraBindu-mlym	2,toRvowel-mlym
+glyph	rvocalicvowelsignmlym,uni0951	1,to0951-mlym	2,toRvowel-mlym
+glyph	rvocalicvowelsignmlym,uni0952	1,to0952-mlym	2,toRvowel-mlym
+glyph	rvocalicvowelsignmlym,uni1CDA	1,to1CDA-mlym	2,toRvowel-mlym
+glyph	rvocalicvowelsignmlym,candrabindu_0951mlym	1,toCandrabindu_0951-mlym	2,toRvowel-mlym
+glyph	rvocalicvowelsignmlym,candrabindu_0952mlym	1,toCandrabindu_0952-mlym	2,toRvowel-mlym
+glyph	rvocalicvowelsignmlym,candrabindu_1CDAmlym	1,toCandrabindu_1CDA-mlym	2,toRvowel-mlym
+
+glyph	rrvocalicvowelsignmlym,candrabindumlym	1,toCandraBindu-mlym	2,toRRvowel-mlym
+glyph	rrvocalicvowelsignmlym,uni0951	1,to0951-mlym	2,toRRvowel-mlym
+glyph	rrvocalicvowelsignmlym,uni0952	1,to0952-mlym	2,toRRvowel-mlym
+glyph	rrvocalicvowelsignmlym,uni1CDA	1,to1CDA-mlym	2,toRRvowel-mlym
+glyph	rrvocalicvowelsignmlym,candrabindu_0951mlym	1,toCandrabindu_0951-mlym	2,toRRvowel-mlym
+glyph	rrvocalicvowelsignmlym,candrabindu_0952mlym	1,toCandrabindu_0952-mlym	2,toRRvowel-mlym
+glyph	rrvocalicvowelsignmlym,candrabindu_1CDAmlym	1,toCandrabindu_1CDA-mlym	2,toRRvowel-mlym
+
+glyph	aulengthmarkmlym,candrabindumlym	1,toCandraBindu-mlym	2,toAUlength-mlym
+glyph	aulengthmarkmlym,uni0951	1,to0951-mlym	2,toAUlength-mlym
+glyph	aulengthmarkmlym,uni0952	1,to0952-mlym	2,toAUlength-mlym
+glyph	aulengthmarkmlym,uni1CDA	1,to1CDA-mlym	2,toAUlength-mlym
+glyph	aulengthmarkmlym,candrabindu_0951mlym	1,toCandrabindu_0951-mlym	2,toAUlength-mlym
+glyph	aulengthmarkmlym,candrabindu_0952mlym	1,toCandrabindu_0952-mlym	2,toAUlength-mlym
+glyph	aulengthmarkmlym,candrabindu_1CDAmlym	1,toCandrabindu_1CDA-mlym	2,toAUlength-mlym
+
+
+lookup end
+
+
+
+lookup	otheroverlaps-mlm2	chained
+
+markattachmenttype	2
+
+backtrackclass definition begin
+llamlym	1
+galamlym	1
+cachamlym	1
+ttattamlym	1
+malamlym	1
+rrarramlym	1
+llallamlym	1
+kattamlym	1
+kalamlym	1
+ngakalamlym	1
+gagamlym	1
+cacamlym	1
+ddaddamlym	1
+nnannamlym	1
+dadamlym	1
+papamlym	1
+palamlym	1
+phalamlym	1
+babamlym	1
+badamlym	1
+badhamlym	1
+balamlym	1
+yayamlym	1
+lalamlym	1
+vavamlym	1
+shashamlym	1
+shalamlym	1
+ssattamlym	1
+sarrarramlym	1
+sasamlym	1
+salamlym	1
+halamlym	1
+% new
+valamlym	1
+talamlym	1
+mapalamlym	1
+lapamlym	1
+ddaddhamlym	1
+% specials
+yapostmlym	1
+yapostaltmlym	1
+vapostmlym	1
+vapostaltmlym	1
+rvocalicvowelsignmlym	1
+rrvocalicvowelsignmlym	1
+rvocalicvowelsignaltmlym	1
+rrvocalicvowelsignaltmlym	1
+lvocalicvowelsignmlym	1
+llvocalicvowelsignmlym	1
+lvocalicvowelsignaltmlym	1
+llvocalicvowelsignaltmlym	1
+ttalvocalicmlym	1
+tthalvocalicmlym	1
+dalvocalicmlym	1
+bhalvocalicmlym	1
+malvocalicmlym	1
+ralvocalicmlym	1
+rralvocalicmlym	1
+lllalvocalicmlym	1
+ttallvocalicmlym	1
+tthallvocalicmlym	1
+dallvocalicmlym	1
+bhallvocalicmlym	1
+mallvocalicmlym	1
+rallvocalicmlym	1
+rrallvocalicmlym	1
+lllallvocalicmlym	1
+% handle fraction just in case
+patamlym	1
+% top
+nnachillumlym	2
+nachillumlym	2
+rrachillumlym	2
+lachillumlym	2
+llachillumlym	2
+kachillumlym	2
+ivowelsignmlym	3
+iivowelsignmlym	3
+ivowelsignaltmlym	3
+iivowelsignaltmlym	3
+ivowelsignalt2mlym	3
+iivowelsignalt2mlym	3
+% both
+narramlym	4
+% unicode 9
+machillumlym	2
+yachillumlym	3
+class definition end
+
+class definition begin
+yapostmlym	1
+vapostmlym	1
+rvocalicvowelsignmlym	1
+rrvocalicvowelsignmlym	1
+uvowelsignmlym	1
+uuvowelsignmlym	1
+lvocalicvowelsignmlym	1
+llvocalicvowelsignmlym	1
+ivowelsignmlym	2
+iivowelsignmlym	2
+class definition end
+
+lookaheadclass definition begin
+# 1	1
+class definition end
+
+class-chain	1	1		1,altpostmark-mlm2
+class-chain	4	1		1,altpostmark-mlm2
+class-chain	2	2		1,altpostmark-mlm2
+class-chain	3	2		1,narrow_i-mlm2
+class-chain	4	2		1,altpostmark-mlm2
+
+lookup end
+
+
+lookup	narrow_i-mlm2	single
+
+ivowelsignmlym	ivowelsignalt2mlym
+iivowelsignmlym	iivowelsignalt2mlym
+
+lookup end
+
+
+
+lookup	altpostmark-mlm2	single
+
+rvocalicvowelsignmlym	rvocalicvowelsignaltmlym
+yapostmlym	yapostaltmlym
+rrvocalicvowelsignmlym	rrvocalicvowelsignaltmlym
+vapostmlym	vapostaltmlym
+uvowelsignmlym	uvowelsignaltmlym
+uuvowelsignmlym	uuvowelsignaltmlym
+lvocalicvowelsignmlym	lvocalicvowelsignaltmlym
+llvocalicvowelsignmlym	llvocalicvowelsignaltmlym
+ivowelsignmlym	ivowelsignaltmlym
+iivowelsignmlym	iivowelsignaltmlym
+
+lookup end
+
+
+
+lookup	switchVedic1bis-mlym	context
+
+glyph	lvocalicvowelsignaltmlym,candrabindumlym	1,toCandraBindu-mlym	2,toLvowel-mlym
+glyph	lvocalicvowelsignaltmlym,uni0951	1,to0951-mlym	2,toLvowel-mlym
+glyph	lvocalicvowelsignaltmlym,uni0952	1,to0952-mlym	2,toLvowel-mlym
+glyph	lvocalicvowelsignaltmlym,uni1CDA	1,to1CDA-mlym	2,toLvowel-mlym
+glyph	lvocalicvowelsignaltmlym,candrabindu_0951mlym	1,toCandrabindu_0951-mlym	2,toLvowel-mlym
+glyph	lvocalicvowelsignaltmlym,candrabindu_0952mlym	1,toCandrabindu_0952-mlym	2,toLvowel-mlym
+glyph	lvocalicvowelsignaltmlym,candrabindu_1CDAmlym	1,toCandrabindu_1CDA-mlym	2,toLvowel-mlym
+
+glyph	llvocalicvowelsignaltmlym,candrabindumlym	1,toCandraBindu-mlym	2,toLLvowel-mlym
+glyph	llvocalicvowelsignaltmlym,uni0951	1,to0951-mlym	2,toLLvowel-mlym
+glyph	llvocalicvowelsignaltmlym,uni0952	1,to0952-mlym	2,toLLvowel-mlym
+glyph	llvocalicvowelsignaltmlym,uni1CDA	1,to1CDA-mlym	2,toLLvowel-mlym
+glyph	llvocalicvowelsignaltmlym,candrabindu_0951mlym	1,toCandrabindu_0951-mlym	2,toLLvowel-mlym
+glyph	llvocalicvowelsignaltmlym,candrabindu_0952mlym	1,toCandrabindu_0952-mlym	2,toLLvowel-mlym
+glyph	llvocalicvowelsignaltmlym,candrabindu_1CDAmlym	1,toCandrabindu_1CDA-mlym	2,toLLvowel-mlym
+
+lookup end
+
+
+lookup	switchVedic2-mlym	context
+
+glyph	yapostaltmlym,candrabindumlym	1,toCandraBindu-mlym	2,toYApostalt-mlym
+glyph	yapostaltmlym,uni0951	1,to0951-mlym	2,toYApostalt-mlym
+glyph	yapostaltmlym,uni0952	1,to0952-mlym	2,toYApostalt-mlym
+glyph	yapostaltmlym,uni1CDA	1,to1CDA-mlym	2,toYApostalt-mlym
+glyph	yapostaltmlym,candrabindu_0951mlym	1,toCandrabindu_0951-mlym	2,toYApostalt-mlym
+glyph	yapostaltmlym,candrabindu_0952mlym	1,toCandrabindu_0952-mlym	2,toYApostalt-mlym
+glyph	yapostaltmlym,candrabindu_1CDAmlym	1,toCandrabindu_1CDA-mlym	2,toYApostalt-mlym
+
+glyph	vapostaltmlym,candrabindumlym	1,toCandraBindu-mlym	2,toVApost-mlym
+glyph	vapostaltmlym,uni0951	1,to0951-mlym	2,toVApostalt-mlym
+glyph	vapostaltmlym,uni0952	1,to0952-mlym	2,toVApostalt-mlym
+glyph	vapostaltmlym,uni1CDA	1,to1CDA-mlym	2,toVApostalt-mlym
+glyph	vapostaltmlym,candrabindu_0951mlym	1,toCandrabindu_0951-mlym	2,toVApostalt-mlym
+glyph	vapostaltmlym,candrabindu_0952mlym	1,toCandrabindu_0952-mlym	2,toVApostalt-mlym
+glyph	vapostaltmlym,candrabindu_1CDAmlym	1,toCandrabindu_1CDA-mlym	2,toVApostalt-mlym
+
+lookup end
+
+
+lookup	switchVedic3-mlym	context
+
+glyph	yapostmlym,candrabindumlym	1,toCandraBindu-mlym	2,toYApost-mlym
+glyph	yapostmlym,uni0951	1,to0951-mlym	2,toYApost-mlym
+glyph	yapostmlym,uni0952	1,to0952-mlym	2,toYApost-mlym
+glyph	yapostmlym,uni1CDA	1,to1CDA-mlym	2,toYApost-mlym
+glyph	yapostmlym,candrabindu_0951mlym	1,toCandrabindu_0951-mlym	2,toYApost-mlym
+glyph	yapostmlym,candrabindu_0952mlym	1,toCandrabindu_0952-mlym	2,toYApost-mlym
+glyph	yapostmlym,candrabindu_1CDAmlym	1,toCandrabindu_1CDA-mlym	2,toYApost-mlym
+
+glyph	vapostmlym,candrabindumlym	1,toCandraBindu-mlym	2,toVApost-mlym
+glyph	vapostmlym,uni0951	1,to0951-mlym	2,toVApost-mlym
+glyph	vapostmlym,uni0952	1,to0952-mlym	2,toVApost-mlym
+glyph	vapostmlym,uni1CDA	1,to1CDA-mlym	2,toVApost-mlym
+glyph	vapostmlym,candrabindu_0951mlym	1,toCandrabindu_0951-mlym	2,toVApost-mlym
+glyph	vapostmlym,candrabindu_0952mlym	1,toCandrabindu_0952-mlym	2,toVApost-mlym
+glyph	vapostmlym,candrabindu_1CDAmlym	1,toCandrabindu_1CDA-mlym	2,toVApost-mlym
+
+lookup end
+
+
+lookup	toCandraBindu-mlym	single
+
+anusvaramlym	candrabindumlym
+visargamlym	candrabindumlym
+aavowelsignmlym	candrabindumlym
+ivowelsignmlym	candrabindumlym
+iivowelsignmlym	candrabindumlym
+uvowelsignmlym	candrabindumlym
+uuvowelsignmlym	candrabindumlym
+rvocalicvowelsignmlym	candrabindumlym
+rrvocalicvowelsignmlym	candrabindumlym
+aulengthmarkmlym	candrabindumlym
+yapostmlym	candrabindumlym
+vapostmlym	candrabindumlym
+yapostaltmlym	candrabindumlym
+vapostaltmlym	candrabindumlym
+lvocalicvowelsignaltmlym	candrabindumlym
+llvocalicvowelsignaltmlym	candrabindumlym
+
+lookup end
+
+
+lookup	to0951-mlym	single
+
+anusvaramlym	uni0951
+visargamlym	uni0951
+aavowelsignmlym	uni0951
+ivowelsignmlym	uni0951
+iivowelsignmlym	uni0951
+uvowelsignmlym	uni0951
+uuvowelsignmlym	uni0951
+rvocalicvowelsignmlym	uni0951
+rrvocalicvowelsignmlym	uni0951
+aulengthmarkmlym	uni0951
+yapostmlym	uni0951
+vapostmlym	uni0951
+yapostaltmlym	uni0951
+vapostaltmlym	uni0951
+lvocalicvowelsignaltmlym	uni0951
+llvocalicvowelsignaltmlym	uni0951
+
+lookup end
+
+
+lookup	to0952-mlym	single
+
+anusvaramlym	uni0952
+visargamlym	uni0952
+aavowelsignmlym	uni0952
+ivowelsignmlym	uni0952
+iivowelsignmlym	uni0952
+uvowelsignmlym	uni0952
+uuvowelsignmlym	uni0952
+rvocalicvowelsignmlym	uni0952
+rrvocalicvowelsignmlym	uni0952
+aulengthmarkmlym	uni0952
+yapostmlym	uni0952
+vapostmlym	uni0952
+yapostaltmlym	uni0952
+vapostaltmlym	uni0952
+lvocalicvowelsignaltmlym	uni0952
+llvocalicvowelsignaltmlym	uni0952
+
+lookup end
+
+
+lookup	to1CDA-mlym	single
+
+anusvaramlym	uni1CDA
+visargamlym	uni1CDA
+aavowelsignmlym	uni1CDA
+ivowelsignmlym	uni1CDA
+iivowelsignmlym	uni1CDA
+uvowelsignmlym	uni1CDA
+uuvowelsignmlym	uni1CDA
+rvocalicvowelsignmlym	uni1CDA
+rrvocalicvowelsignmlym	uni1CDA
+aulengthmarkmlym	uni1CDA
+yapostmlym	uni1CDA
+vapostmlym	uni1CDA
+yapostaltmlym	uni1CDA
+vapostaltmlym	uni1CDA
+lvocalicvowelsignaltmlym	uni1CDA
+llvocalicvowelsignaltmlym	uni1CDA
+
+lookup end
+
+
+lookup	toCandrabindu_0951-mlym	single
+
+anusvaramlym	candrabindu_0951mlym
+visargamlym	candrabindu_0951mlym
+aavowelsignmlym	candrabindu_0951mlym
+ivowelsignmlym	candrabindu_0951mlym
+iivowelsignmlym	candrabindu_0951mlym
+uvowelsignmlym	candrabindu_0951mlym
+uuvowelsignmlym	candrabindu_0951mlym
+rvocalicvowelsignmlym	candrabindu_0951mlym
+rrvocalicvowelsignmlym	candrabindu_0951mlym
+aulengthmarkmlym	candrabindu_0951mlym
+yapostmlym	candrabindu_0951mlym
+vapostmlym	candrabindu_0951mlym
+yapostaltmlym	candrabindu_0951mlym
+vapostaltmlym	candrabindu_0951mlym
+lvocalicvowelsignaltmlym	candrabindu_0951mlym
+llvocalicvowelsignaltmlym	candrabindu_0951mlym
+
+lookup end
+
+
+lookup	toCandrabindu_0952-mlym	single
+
+anusvaramlym	candrabindu_0952mlym
+visargamlym	candrabindu_0952mlym
+aavowelsignmlym	candrabindu_0952mlym
+ivowelsignmlym	candrabindu_0952mlym
+iivowelsignmlym	candrabindu_0952mlym
+uvowelsignmlym	candrabindu_0952mlym
+uuvowelsignmlym	candrabindu_0952mlym
+rvocalicvowelsignmlym	candrabindu_0952mlym
+rrvocalicvowelsignmlym	candrabindu_0952mlym
+aulengthmarkmlym	candrabindu_0952mlym
+yapostmlym	candrabindu_0952mlym
+vapostmlym	candrabindu_0952mlym
+yapostaltmlym	candrabindu_0952mlym
+vapostaltmlym	candrabindu_0952mlym
+lvocalicvowelsignaltmlym	candrabindu_0952mlym
+llvocalicvowelsignaltmlym	candrabindu_0952mlym
+
+lookup end
+
+
+lookup	toCandrabindu_1CDA-mlym	single
+
+anusvaramlym	candrabindu_1CDAmlym
+visargamlym	candrabindu_1CDAmlym
+aavowelsignmlym	candrabindu_1CDAmlym
+ivowelsignmlym	candrabindu_1CDAmlym
+iivowelsignmlym	candrabindu_1CDAmlym
+uvowelsignmlym	candrabindu_1CDAmlym
+uuvowelsignmlym	candrabindu_1CDAmlym
+rvocalicvowelsignmlym	candrabindu_1CDAmlym
+rrvocalicvowelsignmlym	candrabindu_1CDAmlym
+aulengthmarkmlym	candrabindu_1CDAmlym
+yapostmlym	candrabindu_1CDAmlym
+vapostmlym	candrabindu_1CDAmlym
+yapostaltmlym	candrabindu_1CDAmlym
+vapostaltmlym	candrabindu_1CDAmlym
+lvocalicvowelsignaltmlym	candrabindu_1CDAmlym
+llvocalicvowelsignaltmlym	candrabindu_1CDAmlym
+
+lookup end
+
+
+lookup	toAnusvara-mlym	single
+
+candrabindumlym	anusvaramlym
+uni0951	anusvaramlym
+uni0952	anusvaramlym
+uni1CDA	anusvaramlym
+candrabindu_0951mlym	anusvaramlym
+candrabindu_0952mlym	anusvaramlym
+candrabindu_1CDAmlym	anusvaramlym
+
+lookup end
+
+
+lookup	toVisarga-mlym	single
+
+candrabindumlym	visargamlym
+uni0951	visargamlym
+uni0952	visargamlym
+uni1CDA	visargamlym
+candrabindu_0951mlym	visargamlym
+candrabindu_0952mlym	visargamlym
+candrabindu_1CDAmlym	visargamlym
+
+lookup end
+
+
+lookup	toAAvowel-mlym	single
+
+candrabindumlym	aavowelsignmlym
+uni0951	aavowelsignmlym
+uni0952	aavowelsignmlym
+uni1CDA	aavowelsignmlym
+candrabindu_0951mlym	aavowelsignmlym
+candrabindu_0952mlym	aavowelsignmlym
+candrabindu_1CDAmlym	aavowelsignmlym
+
+lookup end
+
+
+lookup	toIvowel-mlym	single
+
+candrabindumlym	ivowelsignmlym
+uni0951	ivowelsignmlym
+uni0952	ivowelsignmlym
+uni1CDA	ivowelsignmlym
+candrabindu_0951mlym	ivowelsignmlym
+candrabindu_0952mlym	ivowelsignmlym
+candrabindu_1CDAmlym	ivowelsignmlym
+
+lookup end
+
+
+lookup	toIIvowel-mlym	single
+
+candrabindumlym	iivowelsignmlym
+uni0951	iivowelsignmlym
+uni0952	iivowelsignmlym
+uni1CDA	iivowelsignmlym
+candrabindu_0951mlym	iivowelsignmlym
+candrabindu_0952mlym	iivowelsignmlym
+candrabindu_1CDAmlym	iivowelsignmlym
+
+lookup end
+
+
+lookup	toUvowel-mlym	single
+
+candrabindumlym	uvowelsignmlym
+uni0951	uvowelsignmlym
+uni0952	uvowelsignmlym
+uni1CDA	uvowelsignmlym
+candrabindu_0951mlym	uvowelsignmlym
+candrabindu_0952mlym	uvowelsignmlym
+candrabindu_1CDAmlym	uvowelsignmlym
+
+lookup end
+
+
+lookup	toUUvowel-mlym	single
+
+candrabindumlym	uuvowelsignmlym
+uni0951	uuvowelsignmlym
+uni0952	uuvowelsignmlym
+uni1CDA	uuvowelsignmlym
+candrabindu_0951mlym	uuvowelsignmlym
+candrabindu_0952mlym	uuvowelsignmlym
+candrabindu_1CDAmlym	uuvowelsignmlym
+
+lookup end
+
+
+lookup	toRvowel-mlym	single
+
+candrabindumlym	rvocalicvowelsignmlym
+uni0951	rvocalicvowelsignmlym
+uni0952	rvocalicvowelsignmlym
+uni1CDA	rvocalicvowelsignmlym
+candrabindu_0951mlym	rvocalicvowelsignmlym
+candrabindu_0952mlym	rvocalicvowelsignmlym
+candrabindu_1CDAmlym	rvocalicvowelsignmlym
+
+lookup end
+
+
+lookup	toRRvowel-mlym	single
+
+candrabindumlym	rrvocalicvowelsignmlym
+uni0951	rrvocalicvowelsignmlym
+uni0952	rrvocalicvowelsignmlym
+uni1CDA	rrvocalicvowelsignmlym
+candrabindu_0951mlym	rrvocalicvowelsignmlym
+candrabindu_0952mlym	rrvocalicvowelsignmlym
+candrabindu_1CDAmlym	rrvocalicvowelsignmlym
+
+lookup end
+
+
+lookup	toAUlength-mlym	single
+
+candrabindumlym	aulengthmarkmlym
+uni0951	aulengthmarkmlym
+uni0952	aulengthmarkmlym
+uni1CDA	rrvocalicvowelsignmlym
+candrabindu_0951mlym	aulengthmarkmlym
+candrabindu_0952mlym	aulengthmarkmlym
+candrabindu_1CDAmlym	aulengthmarkmlym
+
+lookup end
+
+
+lookup	toLvowel-mlym	single
+
+candrabindumlym	lvocalicvowelsignaltmlym
+uni0951	lvocalicvowelsignaltmlym
+uni0952	lvocalicvowelsignaltmlym
+uni1CDA	lvocalicvowelsignaltmlym
+candrabindu_0951mlym	lvocalicvowelsignaltmlym
+candrabindu_0952mlym	lvocalicvowelsignaltmlym
+candrabindu_1CDAmlym	lvocalicvowelsignaltmlym
+
+lookup end
+
+
+lookup	toLLvowel-mlym	single
+
+candrabindumlym	llvocalicvowelsignaltmlym
+uni0951	llvocalicvowelsignaltmlym
+uni0952	llvocalicvowelsignaltmlym
+uni1CDA	llvocalicvowelsignaltmlym
+candrabindu_0951mlym	llvocalicvowelsignaltmlym
+candrabindu_0952mlym	llvocalicvowelsignaltmlym
+candrabindu_1CDAmlym	llvocalicvowelsignaltmlym
+
+lookup end
+
+
+lookup	toYApost-mlym	single
+
+candrabindumlym	yapostmlym
+uni0951	yapostmlym
+uni0952	yapostmlym
+uni1CDA	yapostmlym
+candrabindu_0951mlym	yapostmlym
+candrabindu_0952mlym	yapostmlym
+candrabindu_1CDAmlym	yapostmlym
+
+lookup end
+
+
+lookup	toVApost-mlym	single
+
+candrabindumlym	vapostmlym
+uni0951	vapostmlym
+uni0952	vapostmlym
+uni1CDA	vapostmlym
+candrabindu_0951mlym	vapostmlym
+candrabindu_0952mlym	vapostmlym
+candrabindu_1CDAmlym	vapostmlym
+
+lookup end
+
+
+lookup	toYApostalt-mlym	single
+
+candrabindumlym	yapostaltmlym
+uni0951	yapostaltmlym
+uni0952	yapostaltmlym
+uni1CDA	yapostaltmlym
+candrabindu_0951mlym	yapostaltmlym
+candrabindu_0952mlym	yapostaltmlym
+candrabindu_1CDAmlym	yapostaltmlym
+
+lookup end
+
+
+lookup	toVApostalt-mlym	single
+
+candrabindumlym	vapostaltmlym
+uni0951	vapostaltmlym
+uni0952	vapostaltmlym
+uni1CDA	vapostaltmlym
+candrabindu_0951mlym	vapostaltmlym
+candrabindu_0952mlym	vapostaltmlym
+candrabindu_1CDAmlym	vapostmlym
+
+lookup end
+
+
+
+
+lookup	splitVedic-mlym	multiple
+
+candrabindu_0952mlym	candrabindumlym	uni0952
+
+lookup end
+
+
+
+
+lookup	music-mlym	ligature
+
+gadotabove	gamlym	uni0307
+gadotbelow	gamlym	uni0323
+dhadotabove	dhamlym	uni0307
+dhadotbelow	dhamlym	uni0323
+nidotabove	namlym	ivowelsignmlym	uni0307
+nidotbelow	namlym	ivowelsignmlym	uni0323
+nidotabove	namlym	uni0307	ivowelsignmlym
+nidotbelow	namlym	uni0323	ivowelsignmlym
+padotabove	pamlym	uni0307
+padotbelow	pamlym	uni0323
+madotabove	mamlym	uni0307
+madotbelow	mamlym	uni0323
+ridotabove	ramlym	ivowelsignmlym	uni0307
+ridotbelow	ramlym	ivowelsignmlym	uni0323
+ridotabove	ramlym	uni0307	ivowelsignmlym
+ridotbelow	ramlym	uni0323	ivowelsignmlym
+sadotabove	samlym	uni0307
+sadotbelow	samlym	uni0323
+
+lookup end
+
+
+% haln ------------------------------
+
+
+lookup	haln-mlym	ligature
+
+nnachillumlym	nnamlym	viramamlym	u 200d
+nachillumlym	namlym	viramamlym	u 200d
+rrachillumlym	ramlym	viramamlym	u 200d
+lachillumlym	lamlym	viramamlym	u 200d
+llachillumlym	llamlym	viramamlym	u 200d
+
+lookup end
+
+

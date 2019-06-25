@@ -30,7 +30,7 @@ For those new to font editing that don't yet want to invest in paid editing
 software, there's also [TruFont](https://trufont.github.io/). The issue being that
 TruFont works on .ufo files instead of .glyphs files, and though we have a way of
 converting Glyphs -> UFO, a UFO -> Glyphs converter is yet to be built.
-Relevant issue: [googlei18n/glyphsLib#74](https://github.com/googlei18n/glyphsLib/issues/74)
+Relevant issue: [googlefonts/glyphsLib#74](https://github.com/googlefonts/glyphsLib/issues/74)
 
 ### The small print
 Contributions made by corporations are covered by a different agreement than
