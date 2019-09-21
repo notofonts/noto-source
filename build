@@ -20,28 +20,35 @@ source util.sh
 function setup() {
     # exit early if any sub-commands fails
     set -e
-    if [[ ! $(python -m pip --version 2>/dev/null) ]]; then
-        echo >&2 "error: pip is not installed."
-        echo >&2 "Try running 'python -m ensurepip' or check installation instructions:"
-        echo >&2 "https://pip.pypa.io/en/stable/installing/"
-        exit 1
-    fi
-    if [[ ! -d env ]]; then
-        if [[ ! $(python -m virtualenv --version 2>/dev/null) ]]; then
-            if [ ! -e scripts/virtualenv/virtualenv.py ]; then
-                echo "virtualenv is not installed; installing to scripts/virtualenv"
-                mkdir -p scripts/virtualenv
-                python -m pip install --target scripts/virtualenv virtualenv
+    if [[ -d env ]]; then
+        source env/bin/activate
+    else
+        if [[ -z ${PYTHON} ]]; then
+            if [[ -x "$(command -v python3)" ]] \
+                    && [[ $(python3 -c 'import sys; print(sys.version_info.minor)') -ge 6 ]]; then
+                PYTHON=python3
+            elif [[ -x "$(command -v python3.7)" ]]; then
+                PYTHON=python3.7
+            elif [[ -x "$(command -v python3.6)" ]]; then
+                PYTHON=python3.6
+            else
+                echo >&2 "Error: python3.6 or greater is required"
+                exit 1
             fi
-            python scripts/virtualenv/virtualenv.py env
-        else
-            python -m virtualenv env
         fi
+        if [[ ! $(${PYTHON} -m pip --version 2>/dev/null) ]]; then
+            echo >&2 "error: pip is not installed."
+            echo >&2 "Try running '${PYTHON} -m ensurepip' or check installation instructions:"
+            echo >&2 "https://pip.pypa.io/en/stable/installing/"
+            exit 1
+        fi
+        ${PYTHON} -m venv env
+        source env/bin/activate
+        pip install --upgrade pip setuptools wheel
     fi
-    source env/bin/activate
     # ensure fontmake submodule is up-to-date
     git submodule update --init
-    pip install --upgrade -r scripts/fontmake/requirements.txt
+    pip install -r scripts/fontmake/requirements.txt
     pip install -e scripts/fontmake
     deactivate
 }
