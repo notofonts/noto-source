@@ -9,6 +9,7 @@ The designs and glyph sets might not final.
 
 ## Building
 
+[Python 3.6 or greater](https://www.python.org/downloads/) is required to build the fonts.
 To obtain all sources and build tools:
 
 ```
