@@ -36,10 +36,10 @@ function setup() {
                 exit 1
             fi
         fi
-        if [[ ! $(${PYTHON} -m pip --version 2>/dev/null) ]]; then
-            echo >&2 "error: pip is not installed."
-            echo >&2 "Try running '${PYTHON} -m ensurepip' or check installation instructions:"
-            echo >&2 "https://pip.pypa.io/en/stable/installing/"
+        if [[ ! $(${PYTHON} -m venv --help 2>/dev/null) ]]; then
+            echo >&2 "error: venv module is not installed."
+            echo >&2 "This is normally built-in, but some Linux distros maintain a separate package."
+            echo >&2 "E.g. for Debian, 'sudo apt install python3.7-venv' or similar."
             exit 1
         fi
         ${PYTHON} -m venv env
