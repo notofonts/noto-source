@@ -1,0 +1,438 @@
+FontDame GSUB table
+
+
+script table begin
+DFLT	default		0, 2, 4
+sogo	default		1, 3, 5
+script table end
+
+
+feature table begin
+0	aalt	0, 1
+1	aalt	0, 1
+2	salt	2, 3
+3	salt	2, 3
+4	calt	4
+5	calt	4
+
+feature table end
+
+lookup	0	single
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+u10F00	Aleph.alt
+u10F06	HeFin.alt
+u10F11	Samekh.alt
+u10F12	AyinAlt.altA
+u10F13	AyinAlt.altB
+u10F14	Pe.alt
+u10F15	SadheFin.alt
+u10F1A	Taw.alt
+u10F1B	TawFin.alt
+u10F1C	TawFinV.alt
+
+lookup end
+
+
+lookup	1	alternate
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+u10F0C	Lamedh.altA	Lamedh.altB
+
+lookup end
+
+lookup	2	alternate
+
+RightToLeft	yes
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	yes
+
+u10F0C	Lamedh.altA	Lamedh.altB
+
+lookup end
+
+
+lookup	3	single
+
+RightToLeft	yes
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	yes
+
+u10F00	Aleph.alt
+u10F06	HeFin.alt
+u10F11	Samekh.alt
+u10F12	AyinAlt.altA
+u10F13	AyinAlt.altB
+u10F14	Pe.alt
+u10F15	SadheFin.alt
+u10F1A	Taw.alt
+u10F1B	TawFin.alt
+u10F1C	TawFinV.alt
+
+lookup end
+
+
+lookup	4	chained
+
+RightToLeft	yes
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	yes
+
+inputcoverage definition begin
+u10F0B
+coverage definition end
+
+lookaheadcoverage definition begin
+u10F0A
+coverage definition end
+
+coverage	1,5
+subtable end
+
+inputcoverage definition begin
+u10F0B
+coverage definition end
+
+lookaheadcoverage definition begin
+u10F0D
+coverage definition end
+
+coverage	1,5
+subtable end
+
+inputcoverage definition begin
+u10F0B
+coverage definition end
+
+lookaheadcoverage definition begin
+u10F0E
+coverage definition end
+
+coverage	1,5
+subtable end
+
+inputcoverage definition begin
+u10F0B
+coverage definition end
+
+lookaheadcoverage definition begin
+u10F10
+coverage definition end
+
+coverage	1,5
+subtable end
+
+inputcoverage definition begin
+u10F14
+coverage definition end
+
+lookaheadcoverage definition begin
+u10F0A
+coverage definition end
+
+coverage	1,5
+subtable end
+
+inputcoverage definition begin
+u10F14
+coverage definition end
+
+lookaheadcoverage definition begin
+u10F0D
+coverage definition end
+
+coverage	1,5
+subtable end
+
+inputcoverage definition begin
+u10F14
+coverage definition end
+
+lookaheadcoverage definition begin
+u10F0E
+coverage definition end
+
+coverage	1,5
+subtable end
+
+inputcoverage definition begin
+u10F14
+coverage definition end
+
+lookaheadcoverage definition begin
+u10F10
+coverage definition end
+
+coverage	1,5
+subtable end
+
+inputcoverage definition begin
+u10F14
+coverage definition end
+
+lookaheadcoverage definition begin
+u10F09
+coverage definition end
+
+coverage	1,5
+subtable end
+
+inputcoverage definition begin
+u10F14
+coverage definition end
+
+lookaheadcoverage definition begin
+u10F0A
+coverage definition end
+
+coverage	1,5
+subtable end
+
+inputcoverage definition begin
+u10F14
+coverage definition end
+
+lookaheadcoverage definition begin
+u10F00
+coverage definition end
+
+coverage	1,5
+subtable end
+
+inputcoverage definition begin
+u10F14
+coverage definition end
+
+lookaheadcoverage definition begin
+u10F01
+coverage definition end
+
+coverage	1,5
+subtable end
+
+inputcoverage definition begin
+u10F14
+coverage definition end
+
+lookaheadcoverage definition begin
+u10F04
+coverage definition end
+
+coverage	1,5
+subtable end
+
+inputcoverage definition begin
+u10F14
+coverage definition end
+
+lookaheadcoverage definition begin
+u10F05
+coverage definition end
+
+coverage	1,5
+subtable end
+
+inputcoverage definition begin
+u10F14
+coverage definition end
+
+lookaheadcoverage definition begin
+u10F0C
+coverage definition end
+
+coverage	1,5
+subtable end
+
+inputcoverage definition begin
+u10F14
+coverage definition end
+
+lookaheadcoverage definition begin
+Lamedh.altA
+coverage definition end
+
+coverage	1,5
+subtable end
+
+inputcoverage definition begin
+u10F14
+coverage definition end
+
+lookaheadcoverage definition begin
+Lamedh.altB
+coverage definition end
+
+coverage	1,5
+subtable end
+
+inputcoverage definition begin
+Pe.alt
+coverage definition end
+
+lookaheadcoverage definition begin
+u10F0A
+coverage definition end
+
+coverage	1,5
+subtable end
+
+inputcoverage definition begin
+Pe.alt
+coverage definition end
+
+lookaheadcoverage definition begin
+u10F0D
+coverage definition end
+
+coverage	1,5
+subtable end
+
+inputcoverage definition begin
+Pe.alt
+coverage definition end
+
+lookaheadcoverage definition begin
+u10F0E
+coverage definition end
+
+coverage	1,5
+subtable end
+
+inputcoverage definition begin
+Pe.alt
+coverage definition end
+
+lookaheadcoverage definition begin
+u10F10
+coverage definition end
+
+coverage	1,5
+subtable end
+
+inputcoverage definition begin
+Pe.alt
+coverage definition end
+
+lookaheadcoverage definition begin
+u10F09
+coverage definition end
+
+coverage	1,5
+subtable end
+
+inputcoverage definition begin
+Pe.alt
+coverage definition end
+
+lookaheadcoverage definition begin
+u10F0A
+coverage definition end
+
+coverage	1,5
+subtable end
+
+inputcoverage definition begin
+Pe.alt
+coverage definition end
+
+lookaheadcoverage definition begin
+u10F00
+coverage definition end
+
+coverage	1,5
+subtable end
+
+inputcoverage definition begin
+Pe.alt
+coverage definition end
+
+lookaheadcoverage definition begin
+u10F01
+coverage definition end
+
+coverage	1,5
+subtable end
+
+inputcoverage definition begin
+Pe.alt
+coverage definition end
+
+lookaheadcoverage definition begin
+u10F04
+coverage definition end
+
+coverage	1,5
+subtable end
+
+inputcoverage definition begin
+Pe.alt
+coverage definition end
+
+lookaheadcoverage definition begin
+u10F05
+coverage definition end
+
+coverage	1,5
+subtable end
+
+inputcoverage definition begin
+Pe.alt
+coverage definition end
+
+lookaheadcoverage definition begin
+u10F0C
+coverage definition end
+
+coverage	1,5
+subtable end
+
+inputcoverage definition begin
+Pe.alt
+coverage definition end
+
+lookaheadcoverage definition begin
+Lamedh.altA
+coverage definition end
+
+coverage	1,5
+subtable end
+
+inputcoverage definition begin
+Pe.alt
+coverage definition end
+
+lookaheadcoverage definition begin
+Lamedh.altB
+coverage definition end
+
+coverage	1,5
+lookup end
+
+
+
+
+
+lookup	5	single
+
+RightToLeft	yes
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	yes
+
+u10F0B	Kaph.cut
+u10F14	Pe.cut
+Pe.alt	Pe.altcut
+
+lookup end
+
