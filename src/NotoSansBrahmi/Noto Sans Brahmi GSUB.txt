@@ -7,7 +7,7 @@ script table end
 
 
 feature table begin
-0	ccmp	0, 1, 2, 3
+0	ccmp	0, 1, 2, 3, 5
 
 feature table end
 
@@ -57,6 +57,8 @@ brm_TTU	brm_TTA	brm_vowelU
 brm_TTUU	brm_TTA	brm_vowelUU
 brm_TTHU	brm_TTHA	brm_vowelU
 brm_TTHUU	brm_TTHA	brm_vowelUU
+brm_TTHR	brm_TTHA	brm_VOCALIC_R
+brm_TTHRR	brm_TTHA	brm_VOCALIC_RR
 brm_TTHEE	brm_TTHA	brm_vowelEE
 brm_TTHAI	brm_TTHA	brm_vowelAI
 brm_TTHO	brm_TTHA	brm_vowelOO
@@ -65,8 +67,12 @@ brm_DDHU	brm_DDHA	brm_vowelU
 brm_DDHUU	brm_DDHA	brm_vowelUU
 brm_NNU	brm_NNA	brm_vowelU
 brm_NNUU	brm_NNA	brm_vowelUU
+brm_TUU	brm_TA	brm_vowelUU
+brm_TRR	brm_TA	brm_VOCALIC_RR
 brm_THU	brm_THA	brm_vowelU
 brm_THUU	brm_THA	brm_vowelUU
+brm_THR	brm_THA	brm_VOCALIC_R
+brm_THRR	brm_THA	brm_VOCALIC_RR
 brm_THEE	brm_THA	brm_vowelEE
 brm_THAI	brm_THA	brm_vowelAI
 brm_THO	brm_THA	brm_vowelOO
@@ -168,7 +174,6 @@ IgnoreBaseGlyphs	no
 IgnoreLigatures	no
 IgnoreMarks	no
 
-brm_num100.1	brm_num100	u1107F	brm_num1
 brm_num100.2	brm_num100	u1107F	brm_num2
 brm_num100.3	brm_num100	u1107F	brm_num3
 brm_num100.4	brm_num100	u1107F	brm_num4
@@ -188,7 +193,6 @@ brm_num100.80	brm_num100	u1107F	brm_num80
 brm_num100.90	brm_num100	u1107F	brm_num90
 brm_num100.100	brm_num100	u1107F	brm_num100
 brm_num100.1000	brm_num100	u1107F	brm_num1000
-brm_num1000.1	brm_num1000	u1107F	brm_num1
 brm_num1000.2	brm_num1000	u1107F	brm_num2
 brm_num1000.3	brm_num1000	u1107F	brm_num3
 brm_num1000.4	brm_num1000	u1107F	brm_num4
@@ -220,6 +224,110 @@ IgnoreLigatures	no
 IgnoreMarks	no
 
 candrabindu	candrabindu.alt
+
+lookup end
+
+
+lookup	5	context
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+class definition begin
+brm_NYA	1
+brm_LLLA	1
+brm_JNYA	1
+brm_vowelUU	2
+brm_VOCALIC_RR	3
+brm_GHA	4
+brm_CA	4
+brm_CHA	4
+brm_JA	4
+brm_TTA	4
+brm_TTHA	4
+brm_DDHA	4
+brm_THA	4
+brm_PA	4
+brm_PHA	4
+brm_MA	4
+brm_YA	4
+brm_VA	4
+brm_SSA	4
+brm_HA	4
+brm_SHA	5
+brm_vowelU	6
+brm_LA	7
+brm_LLA	7
+brm_DA	8
+SA	9
+brm_VOCALIC_R	10
+brm_SVA	11
+brm_KSSA	11
+class definition end
+
+class	1, 2	2, 6
+class	4, 3	2, 7
+class	4, 10	2, 7
+class	5, 2	2, 7
+class	5, 3	2, 8
+class	5, 10	2, 8
+class	5, 6	2, 6
+class	7, 3	2, 6
+class	7, 10	2, 7
+class	8, 2	2, 6
+class	8, 3	2, 6
+class	8, 10	2, 6
+class	9, 3	2, 8
+class	9, 10	2, 7
+class	11, 3	2, 7
+class	11, 10	2, 7
+class	11, 2	2, 8
+class	11, 6	2, 8
+
+lookup end
+
+
+lookup	6	single
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+brm_vowelU	brm_vowelU.alt
+brm_vowelUU	brm_vowelUU.alt
+brm_VOCALIC_RR	brm_VOCALIC_RR.alt
+
+lookup end
+
+
+lookup	7	single
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+brm_vowelUU	brm_vowelUU.alt2
+brm_VOCALIC_R	brm_VOCALIC_R.alt2
+brm_VOCALIC_RR	brm_VOCALIC_RR.alt2
+
+lookup end
+
+
+lookup	8	single
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+brm_vowelU	vowelU_vert
+brm_vowelUU	vowelUU_vert
+brm_VOCALIC_R	brm_VOCALIC_R.alt
+brm_VOCALIC_RR	brm_VOCALIC_RR.alt3
 
 lookup end
 

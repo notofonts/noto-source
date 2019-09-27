@@ -2,7 +2,7 @@ FontDame GSUB table
 
 
 script table begin
-mong	default		0, 1, 2, 3, 4
+mong	default		0, 1, 2, 3, 4, 5, 6
 script table end
 
 
@@ -12,6 +12,8 @@ feature table begin
 2	isol	1, 2
 3	medi	5, 6
 4	rlig	0, 9, 10, 11, 12, 13, 14, 15, 16, 17, 25, 26, 27
+5	vert	30
+6	vrt2	30
 
 feature table end
 
@@ -216,6 +218,7 @@ u1874	u1874.fin
 u1875	u1875.fin
 u1876	u1876.fin
 u1877	u1877.fin
+u1878	u1878.fin
 u188D	u188D.fin
 u18A6	u18A6.fin
 u1892	u1892.fin
@@ -417,6 +420,7 @@ u1874	u1874.med
 u1875	u1875.med
 u1876	u1876.med
 u1877	u1877.med
+u1878	u1878.med
 u188D	u188D.med
 u18A6	u18A6.med
 u1892	u1892.med
@@ -584,6 +588,7 @@ u1874	u1874.ini
 u1875	u1875.ini
 u1876	u1876.ini
 u1877	u1877.ini
+u1878	u1878.ini
 u188D	u188D.ini
 u18A6	u18A6.ini
 u1892	u1892.ini
@@ -795,14 +800,32 @@ u1838.finV1	1
 u182A.fin	1
 u182B.fin	1
 u183A.fin	1
+u1850.med	1
+u1850.fin	1
+u1853.med	1
+u184F.fin	1
 u183E.fin	1
 u1834.fin	1
 u1833.fin	1
+u1853.fin	1
 u182E.med	1
 u1830.finV2	1
 u1833.finV1	1
 u1838.fin	1
+u184A.fin	1
+u184A.med	1
+u184B.med	1
+u184B.fin	1
+u184C.med	1
+u184C.fin	1
+u184D.med	1
 u183B.fin	1
+u184D.finFem	1
+u184F.med	1
+u1854.med	1
+u1854.fin	1
+u185C.med	1
+u185C.fin	1
 u1828.medV3	1
 u182A.med	1
 u182A.finV1	1
@@ -827,6 +850,22 @@ u183D.med	1
 u183D.fin	1
 u183C.med	1
 u183C.fin	1
+u184D.medFem	1
+u184E.med	1
+u1852.med	1
+u1852.fin	1
+u1857.med	1
+u1857.fin	1
+u1858.med	1
+u1858.fin	1
+u1859.med	1
+u1859.fin	1
+u185A.med	1
+u185A.fin	1
+u185B.med	1
+u185B.fin	1
+u1851.med	1
+u1851.fin	1
 u182D.medNV	1
 u182D.medV1	1
 u182D.med	1
@@ -838,9 +877,148 @@ u182C.medV2	1
 u182D.finV1	1
 u1833.medV1	1
 u1833.med	1
+u184E.medV1	1
+u1855.med	1
+u1855.fin	1
+u1856.med	1
+u1856.fin	1
+u184E.fin	1
 class definition end
 
 class-chain		1, 2	1	2, 18
+
+subtable end
+
+class definition begin
+u184E.ini	1
+u184E.med	1
+class definition end
+
+lookaheadclass definition begin
+u1846.med	1
+u1847.med	1
+u1820.med	1
+u1829.med	2
+u182F.fin	2
+u182C.med	2
+u1830.fin	2
+u1834.med	2
+u1837.med	2
+u1837.fin	2
+u1832.med	2
+u1830.med	2
+u182C.fin	2
+u182C.finV1	2
+u1829.fin	2
+u1828.medV2	2
+u1828.fin	2
+u1828.finV1	2
+u182F.med	2
+u182E.fin	2
+u1831.med	2
+u1831.fin	2
+u1830.finV1	2
+u183E.med	2
+u183F.med	2
+u1835.med	2
+u1838.med	2
+u183A.med	2
+u1836.med	2
+u1842.fin	2
+u1842.med	2
+u1841.med	2
+u1841.fin	2
+u1838.finV1	2
+u182A.fin	2
+u182B.fin	2
+u183A.fin	2
+u1850.med	2
+u1850.fin	2
+u1853.med	2
+u184F.fin	2
+u183E.fin	2
+u1834.fin	2
+u1833.fin	2
+u1853.fin	2
+u182E.med	2
+u1830.finV2	2
+u1833.finV1	2
+u1838.fin	2
+u184A.fin	2
+u184A.med	2
+u184B.med	2
+u184B.fin	2
+u184C.med	2
+u184C.fin	2
+u184D.med	2
+u183B.fin	2
+u184D.finFem	2
+u184F.med	2
+u1854.med	2
+u1854.fin	2
+u185C.med	2
+u185C.fin	2
+u1828.medV3	2
+u182A.med	2
+u182A.finV1	2
+u182C.medV3	2
+u182B.med	2
+u1832.medV1	2
+u1832.fin	2
+u1835.medV1	2
+u1835.fin	2
+u1836.medV1	2
+u1836.medV2	2
+u1836.fin	2
+u183B.med	2
+u1839.fin	2
+u1839.med	2
+u182D.fin	2
+u183A.medV1	2
+u183F.fin	2
+u1840.med	2
+u1840.fin	2
+u183D.med	2
+u183D.fin	2
+u183C.med	2
+u183C.fin	2
+u184D.medFem	2
+u184E.med	2
+u1852.med	2
+u1852.fin	2
+u1857.med	2
+u1857.fin	2
+u1858.med	2
+u1858.fin	2
+u1859.med	2
+u1859.fin	2
+u185A.med	2
+u185A.fin	2
+u185B.med	2
+u185B.fin	2
+u1851.med	2
+u1851.fin	2
+u182D.medNV	2
+u182D.medV1	2
+u182D.med	2
+u182D.medV2	2
+u182D.medV3	2
+u1828.medV1	2
+u1828.med	2
+u182C.medV2	2
+u182D.finV1	2
+u1833.medV1	2
+u1833.med	2
+u184E.medV1	2
+u1855.med	2
+u1855.fin	2
+u1856.med	2
+u1856.fin	2
+u184E.fin	2
+class definition end
+
+class-chain		1	1	1, 29
+class-chain		1	2	1, 18
 
 lookup end
 
@@ -1041,14 +1219,32 @@ u1838.finV1	1
 u182A.fin	1
 u182B.fin	1
 u183A.fin	1
+u1850.med	1
+u1850.fin	1
+u1853.med	1
+u184F.fin	1
 u183E.fin	1
 u1834.fin	1
 u1833.fin	1
+u1853.fin	1
 u182E.med	1
 u1830.finV2	1
 u1833.finV1	1
 u1838.fin	1
+u184A.fin	1
+u184A.med	1
+u184B.med	1
+u184B.fin	1
+u184C.med	1
+u184C.fin	1
+u184D.med	1
 u183B.fin	1
+u184D.finFem	1
+u184F.med	1
+u1854.med	1
+u1854.fin	1
+u185C.med	1
+u185C.fin	1
 u1828.medV3	1
 u182A.med	1
 u182A.finV1	1
@@ -1073,6 +1269,22 @@ u183D.med	1
 u183D.fin	1
 u183C.med	1
 u183C.fin	1
+u184D.medFem	1
+u184E.med	1
+u1852.med	1
+u1852.fin	1
+u1857.med	1
+u1857.fin	1
+u1858.med	1
+u1858.fin	1
+u1859.med	1
+u1859.fin	1
+u185A.med	1
+u185A.fin	1
+u185B.med	1
+u185B.fin	1
+u1851.med	1
+u1851.fin	1
 u182D.medNV	1
 u182D.medV1	1
 u182D.med	1
@@ -1084,6 +1296,12 @@ u182C.medV2	1
 u182D.finV1	1
 u1833.medV1	1
 u1833.med	1
+u184E.medV1	1
+u1855.med	1
+u1855.fin	1
+u1856.med	1
+u1856.fin	1
+u184E.fin	1
 u1820.fin	2
 u1823.med	2
 u1823.fin	2
@@ -1286,6 +1504,7 @@ u1874.ini	1
 u1875.ini	1
 u1876.ini	1
 u1877.ini	1
+u1878.ini	1
 u188D.ini	1
 u1892.ini	1
 u1895.ini	1
@@ -1521,6 +1740,8 @@ u1876.med	3
 u1876.fin	3
 u1877.med	3
 u1877.fin	3
+u1878.med	3
+u1878.fin	3
 class definition end
 
 class-chain		1	1	1, 18
@@ -1577,6 +1798,10 @@ u1897.ini	3
 u1897.med	3
 u1889.med	3
 u1889.ini	3
+u1845.med	4
+u1845.ini	4
+u1847.ini	5
+u1847.med	5
 class definition end
 
 class definition begin
@@ -1585,6 +1810,8 @@ u182D.med	2
 u182D.medV3	3
 u1828.med	4
 u182F.med	5
+u1845.med	6
+u1847.med	7
 class definition end
 
 lookaheadclass definition begin
@@ -1603,6 +1830,9 @@ class-chain		2	1	1, 18
 class-chain	2	3		1, 24
 class-chain		4	1	1, 18
 class-chain	3	5		1, 18
+class-chain	1	6		1, 18
+class-chain	4	6		1, 18
+class-chain	5	7		1, 20
 
 lookup end
 
@@ -1632,6 +1862,8 @@ u1847.med	u1847.medV1
 u1848.med	u1848.medV1
 u1849.med	u1849.medV1
 u182D.ini	u182D.iniV1
+u184E.ini	u184E.iniV1
+u184E.med	u184E.medV1
 u185E.med	u185E.medV1
 u1868.ini	u1868.iniV1
 u1868.med	u1868.medV1
@@ -1676,6 +1908,7 @@ IgnoreMarks	no
 
 u1822.med	u1822.medV2
 u1828.fin	u1828.medV2
+u1847.med	u1847.medV2
 u1860.med	u1860.medV2
 u1868.med	u1868.medV2
 u182D.medV1	u182D.medV2
@@ -1876,6 +2109,7 @@ u183A_1873.fin	u183A.med	u1873.fin
 u183A_1888.med	u183A.med	u1888.med
 u183A_1888.fin	u183A.med	u1888.fin
 u183A_1820.med	u183A.med	u1820.med
+u1846_1843.fin	u1846.med	u1843.fin
 u184C_1820	u184C.ini	u1820.fin
 u184C_1823.ini	u184C.ini	u1823.med
 u184C_1823	u184C.ini	u1823.fin
@@ -1941,6 +2175,7 @@ u182A_1873	u182A.ini	u1873.fin
 u182A_1888.ini	u182A.ini	u1888.med
 u182A_1888	u182A.ini	u1888.fin
 u182A_1820.ini	u182A.ini	u1820.med
+u1848_1843.fin	u1848.med	u1843.fin
 u184A_182F.ini	u184A.ini	u182F.med
 u184A_182F.med	u184A.med	u182F.med
 u184B_1820	u184B.ini	u1820.fin
@@ -2652,6 +2887,48 @@ IgnoreLigatures	no
 IgnoreMarks	no
 
 u182D_182F.med	u182D.med	u182F.med
+
+lookup end
+
+
+lookup	29	single
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+space	space
+
+lookup end
+
+
+lookup	30	single
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+u2048	u2048.v
+u2049	u2049.v
+u3001	u3001.v
+u3002	u3002.v
+endash	endash.v
+emdash	emdash.v
+exclam	exclam.v
+question	question.v
+parenleft	parenleft.v
+parenright	parenright.v
+u300A	u300A.v
+u300B	u300B.v
+u300C	u300C.v
+u300D	u300D.v
+u300E	u300E.v
+u300F	u300F.v
+quotedblleft	quotedblleft.v
+quotedblright	quotedblright.v
+quotedbl	quotedbl.v
 
 lookup end
 
