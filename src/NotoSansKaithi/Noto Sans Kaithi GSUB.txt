@@ -2,32 +2,73 @@ FontDame GSUB table
 
 
 script table begin
-kthi	default		0, 1, 2, 3
+kthi	default		0, 1, 2, 3, 4, 5, 6, 7, 8, 9
 script table end
 
 
 feature table begin
-0	ccmp	0, 1, 2, 3, 4, 6, 7, 8, 11, 12, 13, 14
-1	ss01	17
-2	ss02	15
-3	ss03	16
+0	abvs	23
+1	akhn	0
+2	cjct	4, 5, 6, 10, 11, 13
+3	half	2
+4	psts	14, 22, 24, 31, 9
+5	rclt	15
+6	rphf	3
+7	ss01	7, 12, 17
+8	ss02	20, 21
+9	ss03	8
 
 feature table end
 
-lookup	0	ligature
+lookup	0	context
 
 RightToLeft	no
 IgnoreBaseGlyphs	no
 IgnoreLigatures	no
 IgnoreMarks	no
+MarkFilterType	1
 
-ktKKa	ktKa	ktVirama	ktKa
-ktKTHa	ktKa	ktVirama	ktTHa
-ktKMa	ktKa	ktVirama	ktMa
-ktKYa	ktKa	ktVirama	ktYa
-ktKSa	ktKa	ktVirama	ktSa
-ktPTa	ktPa	ktVirama	ktTa
-ktBHYa	ktBHa	ktVirama	ktYa
+class definition begin
+ktKa	1
+ktKHa	1
+ktGa	1
+ktGHa	1
+ktNGa	1
+ktCa	1
+ktCHa	1
+ktJa	1
+ktJHa	1
+ktNYa	1
+ktTTa	1
+ktTTHa	1
+ktDDa	1
+ktDDDHa	1
+ktDDHa	1
+ktRHa	1
+ktNNa	1
+ktTa	1
+ktTHa	1
+ktDa	1
+ktDHa	1
+ktNa	1
+ktPa	1
+ktPHa	1
+ktBa	1
+ktBHa	1
+ktMa	1
+ktYa	1
+ktRa	1
+ktLa	1
+ktVa	1
+ktSHa	1
+ktSSa	1
+ktSa	1
+ktHa	1
+ktVirama	2
+ZWJ	3
+class definition end
+
+class	1, 2, 3	1, 1
 
 lookup end
 
@@ -38,34 +79,7 @@ RightToLeft	no
 IgnoreBaseGlyphs	no
 IgnoreLigatures	no
 IgnoreMarks	no
-
-ktKRa	ktKa	ktVirama	ktRa
-ktKHRa	ktKHa	ktVirama	ktRa
-ktGRa	ktGa	ktVirama	ktRa
-ktGHRa	ktGHa	ktVirama	ktRa
-ktCRa	ktCa	ktVirama	ktRa
-ktJRa	ktJa	ktVirama	ktRa
-ktTTRa	ktTTa	ktVirama	ktRa
-ktTRa	ktTa	ktVirama	ktRa
-ktTHRa	ktTHa	ktVirama	ktRa
-ktDHRa	ktDHa	ktVirama	ktRa
-ktPRa	ktPa	ktVirama	ktRa
-ktBRa	ktBa	ktVirama	ktRa
-ktBHRa	ktBHa	ktVirama	ktRa
-ktMRa	ktMa	ktVirama	ktRa
-ktVRa	ktVa	ktVirama	ktRa
-ktSSRa	ktSSa	ktVirama	ktRa
-ktSRa	ktSa	ktVirama	ktRa
-
-lookup end
-
-
-lookup	2	ligature
-
-RightToLeft	no
-IgnoreBaseGlyphs	no
-IgnoreLigatures	no
-IgnoreMarks	no
+MarkFilterType	1
 
 ktKa.half	ktKa	ktVirama
 ktKHa.half	ktKHa	ktVirama
@@ -95,7 +109,7 @@ ktBa.half	ktBa	ktVirama
 ktBHa.half	ktBHa	ktVirama
 ktMa.half	ktMa	ktVirama
 ktYa.half	ktYa	ktVirama
-ktRa.half	ktRa	ktVirama
+ktRa.half	ktRa	ktVirama	ZWJ
 ktLa.half	ktLa	ktVirama
 ktVa.half	ktVa	ktVirama
 ktSHa.half	ktSHa	ktVirama
@@ -106,119 +120,51 @@ ktHa.half	ktHa	ktVirama
 lookup end
 
 
-lookup	3	chained
+lookup	2	chained
 
 RightToLeft	no
 IgnoreBaseGlyphs	no
 IgnoreLigatures	no
 IgnoreMarks	no
-
-backtrackclass definition begin
-ktRa.half	1
-class definition end
+MarkFilterType	1
 
 class definition begin
-ktGa.half	1
-ktKa.half	1
-ktKHa.half	1
-ktGHa.half	1
-ktCa.half	1
-ktJa.half	1
-ktNNa.half	1
-ktTa.half	1
-ktTHa.half	1
-ktDHa.half	1
-ktNa.half	1
-ktPa.half	1
-ktPHa.half	1
-ktBa.half	1
-ktBHa.half	1
-ktMa.half	1
-ktYa.half	1
-ktVa.half	1
-ktSHa.half	1
-ktSSa.half	1
-ktSa.half	1
-ktNYa.half	1
-ktNGa.half	1
-ktCHa.half	1
-ktJHa.half	1
-ktTTa.half	1
-ktTTHa.half	1
-ktDDa.half	1
-ktDDDHa.half	1
-ktDDHa.half	1
-ktRHa.half	1
-ktDa.half	1
-ktLa.half	1
-ktHa.half	1
-ktKa	2
-ktKHa	2
-ktGa	2
-ktGHa	2
-ktNGa	2
-ktCa	2
-ktCHa	2
-ktJa	2
-ktJHa	2
-ktNYa	2
-ktTTa	2
-ktTTHa	2
-ktDDa	2
-ktDDDHa	2
-ktDDHa	2
-ktRHa	2
-ktNNa	2
-ktTa	2
-ktTHa	2
-ktDa	2
-ktDHa	2
-ktNa	2
-ktPa	2
-ktPHa	2
-ktBa	2
-ktBHa	2
-ktMa	2
-ktYa	2
-ktRa	2
-ktLa	2
-ktVa	2
-ktSHa	2
-ktSSa	2
-ktSa	2
-ktHa	2
-ktPTa	2
-ktKKa	2
-ktPRa	2
-ktKMa	2
-ktKYa	2
-ktKRa	2
-ktGRa	2
-ktTTRa	2
-ktKTHa	2
-ktKHRa	2
-ktGHRa	2
-ktCRa	2
-ktTHRa	2
-ktDHRa	2
-ktBRa	2
-ktMRa	2
-ktSSRa	2
-ktSRa	2
-ktBHRa	2
-ktJRa	2
-ktBHYa	2
-ktKSa	2
-ktTRa	2
-ktVRa	2
-ktVirama	3
-ktVSAA	5
-ktVSI	5
-ktVSII	5
-ktVSE	5
-ktVSAI	5
-ktVSO	5
-ktVSAU	5
+ktKa	1
+ktKHa	1
+ktGa	1
+ktGHa	1
+ktNGa	1
+ktCa	1
+ktCHa	1
+ktJa	1
+ktJHa	1
+ktNYa	1
+ktTTa	1
+ktTTHa	1
+ktDDa	1
+ktDDDHa	1
+ktDDHa	1
+ktRHa	1
+ktNNa	1
+ktTa	1
+ktTHa	1
+ktDa	1
+ktDHa	1
+ktNa	1
+ktPa	1
+ktPHa	1
+ktBa	1
+ktBHa	1
+ktMa	1
+ktYa	1
+ktRa	1
+ktLa	1
+ktVa	1
+ktSHa	1
+ktSSa	1
+ktSa	1
+ktHa	1
+ktVirama	2
 class definition end
 
 lookaheadclass definition begin
@@ -257,288 +203,70 @@ ktSHa	1
 ktSSa	1
 ktSa	1
 ktHa	1
-ktPTa	1
-ktKKa	1
-ktPRa	1
-ktGa.half	1
-ktKa.half	1
-ktKHa.half	1
-ktGHa.half	1
-ktCa.half	1
-ktKMa	1
-ktKYa	1
-ktKRa	1
-ktGRa	1
-ktJa.half	1
-ktNNa.half	1
-ktTa.half	1
-ktTHa.half	1
-ktDHa.half	1
-ktNa.half	1
-ktPa.half	1
-ktPHa.half	1
-ktBa.half	1
-ktBHa.half	1
-ktMa.half	1
-ktYa.half	1
-ktVa.half	1
-ktSHa.half	1
-ktSSa.half	1
-ktSa.half	1
-ktTTRa	1
-ktKTHa	1
-ktKHRa	1
-ktGHRa	1
-ktCRa	1
-ktTHRa	1
-ktDHRa	1
-ktBRa	1
-ktMRa	1
-ktSSRa	1
-ktSRa	1
-ktBHRa	1
-ktJRa	1
-ktBHYa	1
-ktNYa.half	1
-ktKSa	1
-ktTRa	1
-ktVRa	1
-ktNGa.half	1
-ktCHa.half	1
-ktJHa.half	1
-ktTTa.half	1
-ktTTHa.half	1
-ktDDa.half	1
-ktDDDHa.half	1
-ktDDHa.half	1
-ktRHa.half	1
-ktDa.half	1
-ktRa.half	1
-ktLa.half	1
-ktHa.half	1
-ktRaHook	2
 class definition end
 
-class-chain	1	1, 1, 2, 5		4, 5
-class-chain	1	1, 1, 2		3, 5
-class-chain	1	1, 2, 5		3, 5
-class-chain	1	1, 2		2, 5
-class-chain	1	2, 3, 2, 5		4, 5
-class-chain	1	2, 3, 2		3, 5
-class-chain	1	2, 5		2, 5
-class-chain	1	2		1, 5
+class-chain		1, 2	1	1, 1
 
 lookup end
 
 
-lookup	4	context
+lookup	3	ligature
 
 RightToLeft	no
 IgnoreBaseGlyphs	no
 IgnoreLigatures	no
 IgnoreMarks	no
+MarkFilterType	1
 
-class definition begin
-ktKa	1
-ktKHa	1
-ktGa	1
-ktGHa	1
-ktNGa	1
-ktCa	1
-ktCHa	1
-ktJa	1
-ktJHa	1
-ktNYa	1
-ktTTa	1
-ktTTHa	1
-ktDDa	1
-ktDDDHa	1
-ktDDHa	1
-ktRHa	1
-ktNNa	1
-ktTa	1
-ktTHa	1
-ktDa	1
-ktDHa	1
-ktNa	1
-ktPa	1
-ktPHa	1
-ktBa	1
-ktBHa	1
-ktMa	1
-ktYa	1
-ktRa	1
-ktLa	1
-ktVa	1
-ktSHa	1
-ktSSa	1
-ktSa	1
-ktHa	1
-ktPTa	1
-ktKKa	1
-ktPRa	1
-ktGa.half	1
-ktKa.half	1
-ktKHa.half	1
-ktGHa.half	1
-ktCa.half	1
-ktKMa	1
-ktKYa	1
-ktKRa	1
-ktGRa	1
-ktJa.half	1
-ktNNa.half	1
-ktTa.half	1
-ktTHa.half	1
-ktDHa.half	1
-ktNa.half	1
-ktPa.half	1
-ktPHa.half	1
-ktBa.half	1
-ktBHa.half	1
-ktMa.half	1
-ktYa.half	1
-ktVa.half	1
-ktSHa.half	1
-ktSSa.half	1
-ktSa.half	1
-ktTTRa	1
-ktKTHa	1
-ktKHRa	1
-ktGHRa	1
-ktCRa	1
-ktTHRa	1
-ktDHRa	1
-ktBRa	1
-ktMRa	1
-ktSSRa	1
-ktSRa	1
-ktBHRa	1
-ktJRa	1
-ktBHYa	1
-ktNYa.half	1
-ktKSa	1
-ktTRa	1
-ktVRa	1
-ktNGa.half	1
-ktCHa.half	1
-ktJHa.half	1
-ktTTa.half	1
-ktTTHa.half	1
-ktDDa.half	1
-ktDDDHa.half	1
-ktDDHa.half	1
-ktRHa.half	1
-ktDa.half	1
-ktLa.half	1
-ktHa.half	1
-ktRaHook	2
-ktRa.half	3
-ktVirama	4
-ktVSAA	5
-ktVSI	5
-ktVSII	5
-ktVSE	5
-ktVSAI	5
-ktVSO	5
-ktVSAU	5
-class definition end
-
-class	3, 1, 1, 1, 2	1, 10
-class	3, 1, 4, 1, 1, 2	1, 10
-class	3, 1, 1, 4, 1, 2	1, 10
-class	3, 1, 4, 1, 4, 1, 2	1, 10
-class	3, 1, 1, 1, 5, 2	1, 10
-class	3, 1, 4, 1, 1, 5, 2	1, 10
-class	3, 1, 1, 4, 1, 5, 2	1, 10
-class	3, 1, 4, 1, 4, 1, 5, 2	1, 10
-class	3, 1, 1, 2	1, 10
-class	3, 1, 4, 1, 2	1, 10
-class	3, 1, 4, 1, 4, 2	1, 10
-class	3, 1, 1, 4, 2	1, 10
-class	3, 1, 1, 5, 2	1, 10
-class	3, 1, 4, 1, 5, 2	1, 10
-class	3, 1, 4, 1, 4, 5, 2	1, 10
-class	3, 1, 1, 4, 5, 2	1, 10
-class	3, 1, 2	1, 10
-class	3, 1, 5, 2	1, 10
+ktRaHook	ktRa	ktVirama
 
 lookup end
 
 
-lookup	5	multiple
+lookup	4	ligature
 
 RightToLeft	no
 IgnoreBaseGlyphs	no
 IgnoreLigatures	no
-IgnoreMarks	no
+IgnoreMarks	yes
 
-ktKa	ktKa	ktRaHook
-ktKHa	ktKHa	ktRaHook
-ktGa	ktGa	ktRaHook
-ktGHa	ktGHa	ktRaHook
-ktNGa	ktNGa	ktRaHook
-ktCa	ktCa	ktRaHook
-ktCHa	ktCHa	ktRaHook
-ktJa	ktJa	ktRaHook
-ktJHa	ktJHa	ktRaHook
-ktNYa	ktNYa	ktRaHook
-ktTTa	ktTTa	ktRaHook
-ktTTHa	ktTTHa	ktRaHook
-ktDDa	ktDDa	ktRaHook
-ktDDDHa	ktDDDHa	ktRaHook
-ktDDHa	ktDDHa	ktRaHook
-ktRHa	ktRHa	ktRaHook
-ktNNa	ktNNa	ktRaHook
-ktTa	ktTa	ktRaHook
-ktTHa	ktTHa	ktRaHook
-ktDa	ktDa	ktRaHook
-ktDHa	ktDHa	ktRaHook
-ktNa	ktNa	ktRaHook
-ktPa	ktPa	ktRaHook
-ktPHa	ktPHa	ktRaHook
-ktBa	ktBa	ktRaHook
-ktBHa	ktBHa	ktRaHook
-ktMa	ktMa	ktRaHook
-ktYa	ktYa	ktRaHook
-ktRa	ktRa	ktRaHook
-ktLa	ktLa	ktRaHook
-ktVa	ktVa	ktRaHook
-ktSHa	ktSHa	ktRaHook
-ktSSa	ktSSa	ktRaHook
-ktSa	ktSa	ktRaHook
-ktHa	ktHa	ktRaHook
-ktVSAA	ktVSAA	ktRaHook
-ktVSI	ktVSI	ktRaHook
-ktVSII	ktVSII	ktRaHook
-ktVSE	ktVSE	ktRaHook
-ktVSAI	ktVSAI	ktRaHook
-ktVSO	ktVSO	ktRaHook
-ktVSAU	ktVSAU	ktRaHook
-ktPTa	ktPTa	ktRaHook
-ktKKa	ktKKa	ktRaHook
-ktPRa	ktPRa	ktRaHook
-ktKMa	ktKMa	ktRaHook
-ktKYa	ktKYa	ktRaHook
-ktKRa	ktKRa	ktRaHook
-ktGRa	ktGRa	ktRaHook
-ktTTRa	ktTTRa	ktRaHook
-ktKTHa	ktKTHa	ktRaHook
-ktKHRa	ktKHRa	ktRaHook
-ktGHRa	ktGHRa	ktRaHook
-ktCRa	ktCRa	ktRaHook
-ktTHRa	ktTHRa	ktRaHook
-ktDHRa	ktDHRa	ktRaHook
-ktBRa	ktBRa	ktRaHook
-ktMRa	ktMRa	ktRaHook
-ktSSRa	ktSSRa	ktRaHook
-ktSRa	ktSRa	ktRaHook
-ktBHRa	ktBHRa	ktRaHook
-ktJRa	ktJRa	ktRaHook
-ktBHYa	ktBHYa	ktRaHook
-ktKSa	ktKSa	ktRaHook
-ktTRa	ktTRa	ktRaHook
-ktVRa	ktVRa	ktRaHook
+ktKKa	ktKa.half	ktKa
+ktKTHa	ktKa.half	ktTHa
+ktKMa	ktKa.half	ktMa
+ktKYa	ktKa.half	ktYa
+ktKSa	ktKa.half	ktSa
+ktPTa	ktPa.half	ktTa
+ktBHYa	ktBHa.half	ktYa
+ktKYa.varKa	ktKa.half.var	ktYa
+ktKYa.varKYa	ktKa.half.var	ktYa.var
+
+lookup end
+
+
+lookup	5	ligature
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	yes
+
+ktGRa	ktGa.half	ktRa
+ktKRa	ktKa.half	ktRa
+ktKHRa	ktKHa.half	ktRa
+ktGHRa	ktGHa.half	ktRa
+ktCRa	ktCa.half	ktRa
+ktJRa	ktJa.half	ktRa
+ktTRa	ktTa.half	ktRa
+ktTHRa	ktTHa.half	ktRa
+ktDHRa	ktDHa.half	ktRa
+ktPRa	ktPa.half	ktRa
+ktBRa	ktBa.half	ktRa
+ktBHRa	ktBHa.half	ktRa
+ktMRa	ktMa.half	ktRa
+ktVRa	ktVa.half	ktRa
+ktSSRa	ktSSa.half	ktRa
+ktSRa	ktSa.half	ktRa
+ktTTRa	ktTTa.half	ktRa
 
 lookup end
 
@@ -549,40 +277,320 @@ RightToLeft	no
 IgnoreBaseGlyphs	no
 IgnoreLigatures	no
 IgnoreMarks	no
+MarkFilterType	2
 
-ktRaCandrabindu	ktRaHook	ktVSCBindu
-ktRaAnusvara	ktRaHook	ktVSAnusvara
+ktDDDHa	ktDDa	ktNukta
+ktRHa	ktDDHa	ktNukta
+ktVa	ktBHa	ktNukta
+ktKTHRa	ktKa.half	ktTHRa
+ktKMRa	ktKa.half	ktMRa
 
 lookup end
 
 
-lookup	7	ligature
+lookup	7	single
 
 RightToLeft	no
 IgnoreBaseGlyphs	no
 IgnoreLigatures	no
 IgnoreMarks	no
 
-ktVSIcandra	ktVSI	ktVSCBindu
-ktVSIm	ktVSI	ktVSAnusvara
-ktVSIRa	ktVSI	ktRaHook
-ktVSIRam	ktVSI	ktRaAnusvara
-ktVSIRaCandra	ktVSI	ktRaCandrabindu
-ktVSEm	ktVSE	ktVSAnusvara
-ktVSAIm	ktVSAI	ktVSAnusvara
-ktVSOm	ktVSO	ktVSAnusvara
-ktVSAUm	ktVSAU	ktVSAnusvara
+ktA	ktA.var
+ktAA	ktAA.var
+ktI	ktI.var
+ktII	ktII.var
+ktKa	ktKa.var
+ktNYa	ktNYa.var
+ktNNa	ktNNa.var
+ktPHa	ktPHa.var
+ktLa	ktLa.var
+ktKII	ktKII.var
+ktKKa	ktKKa.var
+ktLII	ktLII.var
+ktPHII	ktPHII.var
+ktKa.half	ktKa.half.var
+ktKMa	ktKMa.var
+ktKYa	ktKYa.varKa
+ktKRa	ktKRa.var
+ktNNa.half	ktNNa.half.var
+ktPHa.half	ktPHa.half.var
+ktKTHa	ktKTHa.var
+ktKKII	ktKKII.var
+ktKRII	ktKRII.var
+ktNYa.half	ktNYa.half.var
+ktKSa	ktKSa.var
+ktLa.half	ktLa.half.var
+ktKMRa	ktKMRa.var
+ktKTHRa	ktKTHRa.var
 
 lookup end
 
 
-lookup	8	chained
+lookup	8	single
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	yes
+
+ktYa	ktYa.var
+ktYU.alt1	ktYU.var.alt1
+ktYUU	ktYUU.var
+ktKYa	ktKYa.var
+ktYa.half	ktYa.half.var
+ktBHYa	ktBHYa.var
+ktKYa.varKa	ktKYa.varKYa
+ktKYU.alt1	ktKYU.var.alt1
+
+lookup end
+
+
+lookup	9	chained
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	yes
+
+backtrackclass definition begin
+ktZero.smallabv	1
+ktOne.smallabv	1
+ktTwo.smallabv	1
+ktThree.smallabv	1
+ktFour.smallabv	1
+ktFive.smallabv	1
+ktSix.smallabv	1
+ktSeven.smallabv	1
+ktEight.smallabv	1
+ktNine.smallabv	1
+ktZero.smallblw	2
+ktOne.smallblw	2
+ktTwo.smallblw	2
+ktThree.smallblw	2
+ktFour.smallblw	2
+ktFive.smallblw	2
+ktSix.smallblw	2
+ktSeven.smallblw	2
+ktEight.smallblw	2
+ktNine.smallblw	2
+class definition end
+
+class definition begin
+ktNUM	1
+ktZero	2
+ktOne	2
+ktTwo	2
+ktThree	2
+ktFour	2
+ktFive	2
+ktSix	2
+ktSeven	2
+ktEight	2
+ktNine	2
+ktNUM.above	3
+class definition end
+
+class-chain		1, 2		2, 45
+class-chain	1	2		1, 45
+class-chain	2	2		1, 46
+class-chain		3, 2		2, 46
+
+lookup end
+
+
+lookup	10	ligature
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+MarkFilterType	0
+
+ktJHU	ktJHa	ktVSU
+ktJHUU	ktJHa	ktVSUU
+ktDDDHU	ktDDa	ktNukta	ktVSU
+ktDDDHU	ktDDDHa	ktVSU
+ktRHU	ktDDHa	ktNukta	ktVSU
+ktRHU	ktRHa	ktVSU
+ktYUU	ktYa	ktVSUU
+ktVUU	ktVa	ktVSUU
+ktSU	ktSa	ktVSU
+ktSUU	ktSa	ktVSUU
+ktHU	ktHa	ktVSU
+ktHUU	ktHa	ktVSUU
+
+lookup end
+
+
+lookup	11	ligature
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+MarkFilterType	0
+
+ktKII	ktKa	ktVSII
+ktCHII	ktCHa	ktVSII
+ktJII	ktJa	ktVSII
+ktJHII	ktJHa	ktVSII
+ktTTII	ktTTa	ktVSII
+ktTTHII	ktTTHa	ktVSII
+ktDDII	ktDDa	ktVSII
+ktDDDHII	ktDDDHa	ktVSII
+ktDDHII	ktDDHa	ktVSII
+ktRHII	ktRHa	ktVSII
+ktDII	ktDa	ktVSII
+ktPHII	ktPHa	ktVSII
+ktLII	ktLa	ktVSII
+ktHII	ktHa	ktVSII
+ktKKII	ktKKa	ktVSII
+ktKRII	ktKRa	ktVSII
+ktTTRII	ktTTRa	ktVSII
+ktJRII	ktJRa	ktVSII
+
+lookup end
+
+
+lookup	12	ligature
 
 RightToLeft	no
 IgnoreBaseGlyphs	no
 IgnoreLigatures	no
 IgnoreMarks	no
 MarkAttachmentType	1
+
+ktNYII.var	ktNYa.var	ktVSII.alt
+ktPHRa.var	ktPHa.half.var	ktRa
+ktPHRa.var	ktPHa.var	ktVirama	ktRa
+
+lookup end
+
+
+lookup	13	context
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+MarkFilterType	2
+
+class definition begin
+ktKHa	1
+ktGa	1
+ktGHa	1
+ktCa	1
+ktJa	1
+ktNYa	1
+ktTa	1
+ktTHa	1
+ktDHa	1
+ktNa	1
+ktPa	1
+ktBa	1
+ktBHa	1
+ktMa	1
+ktSSa	1
+ktPRa	1
+ktKMa	1
+ktGRa	1
+ktKTHa	1
+ktKHRa	1
+ktGHRa	1
+ktCRa	1
+ktTHRa	1
+ktDHRa	1
+ktBRa	1
+ktBHRa	1
+ktJRa	1
+ktTRa	1
+ktKa.var	1
+ktVSII	2
+ktNGa	3
+ktNNa	4
+ktPHa	4
+ktYa	4
+ktVa	4
+ktSHa	4
+ktSa	4
+ktPTa	4
+ktKYa	4
+ktSSRa	4
+ktSRa	4
+ktBHYa	4
+ktKSa	4
+ktVRa	4
+ktKMRa	4
+ktKYa.varKa	4
+ktNNa.var	4
+ktLa.var	4
+ktNukta	6
+ktRa	8
+class definition end
+
+class	1, 6, 2	3, 18
+class	1, 2	2, 18
+class	3, 6, 2	3, 18	1, 19
+class	3, 2	2, 18	1, 19
+class	4, 6, 2	3, 18
+class	4, 2	2, 18
+class	8, 6, 2	3, 18
+class	8, 2	2, 18
+
+lookup end
+
+
+lookup	14	context
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+MarkAttachmentType	3
+
+class definition begin
+ktNNa	4
+ktPHa	4
+ktYa	4
+ktVa	4
+ktSHa	4
+ktSa	4
+ktPTa	4
+ktKYa	4
+ktSSRa	4
+ktSRa	4
+ktBHYa	4
+ktKSa	4
+ktVRa	4
+ktKMRa	4
+ktKYa.varKa	4
+ktNNa.var	4
+ktLa.var	4
+ktVSU	5
+ktNukta	6
+ktLa	7
+ktPHa.half	7
+ktKKa.var	7
+ktPHRa.var	7
+ktRa	8
+class definition end
+
+class	4, 6, 5	3, 18
+class	4, 5	2, 18
+class	7, 6, 8, 5	4, 18
+class	7, 8, 5	3, 18
+class	7, 6, 5	3, 18
+class	7, 5	2, 18
+
+lookup end
+
+
+lookup	15	context
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
 
 class definition begin
 ktGa.half	1
@@ -620,6 +628,276 @@ ktDa.half	1
 ktRa.half	1
 ktLa.half	1
 ktHa.half	1
+ZWNJ	2
+class definition end
+
+class	1, 2	1, 16
+
+lookup end
+
+
+lookup	16	multiple
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+ktGa.half	ktGa	ktVirama
+ktKa.half	ktKa	ktVirama
+ktKHa.half	ktKHa	ktVirama
+ktGHa.half	ktGHa	ktVirama
+ktCa.half	ktCa	ktVirama
+ktJa.half	ktJa	ktVirama
+ktNNa.half	ktNNa	ktVirama
+ktTa.half	ktTa	ktVirama
+ktTHa.half	ktTHa	ktVirama
+ktDHa.half	ktDHa	ktVirama
+ktNa.half	ktNa	ktVirama
+ktPa.half	ktPa	ktVirama
+ktPHa.half	ktPHa	ktVirama
+ktBa.half	ktBa	ktVirama
+ktBHa.half	ktBHa	ktVirama
+ktMa.half	ktMa	ktVirama
+ktYa.half	ktYa	ktVirama
+ktVa.half	ktVa	ktVirama
+ktSHa.half	ktSHa	ktVirama
+ktSSa.half	ktSSa	ktVirama
+ktSa.half	ktSa	ktVirama
+ktNYa.half	ktNYa	ktVirama
+ktNGa.half	ktNGa	ktVirama
+ktCHa.half	ktCHa	ktVirama
+ktJHa.half	ktJHa	ktVirama
+ktTTa.half	ktTTa	ktVirama
+ktTTHa.half	ktTTHa	ktVirama
+ktDDa.half	ktDDa	ktVirama
+ktDDDHa.half	ktDDDHa	ktVirama
+ktDDHa.half	ktDDHa	ktVirama
+ktRHa.half	ktRHa	ktVirama
+ktDa.half	ktDa	ktVirama
+ktRa.half	ktRa	ktVirama
+ktLa.half	ktLa	ktVirama
+ktHa.half	ktHa	ktVirama
+
+lookup end
+
+
+lookup	17	context
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	yes
+
+class definition begin
+ktKKa.var	1
+ktVSI.alt2	2
+ktMRa	3
+ktKMRa.var	3
+ktVSU	4
+class definition end
+
+class	2, 1	1, 18
+class	3, 4	2, 18
+
+lookup end
+
+
+lookup	18	single
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+ktVSII	ktVSII.alt
+ktVSU	ktVSU.alt
+ktVSI.alt2	ktVSI.alt4
+ktVSU.alt	ktVSU
+
+lookup end
+
+
+lookup	19	single
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+ktNGa	ktGa
+
+lookup end
+
+
+lookup	20	single
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+ktSU	ktSU.alt1
+
+lookup end
+
+
+lookup	21	ligature
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+ktKU.alt1	ktKa	ktVSU
+ktKHU.alt1	ktKHa	ktVSU
+ktGU.alt1	ktGa	ktVSU
+ktGHU.alt1	ktGHa	ktVSU
+ktCU.alt1	ktCa	ktVSU
+ktJU.alt1	ktJa	ktVSU
+ktNNU.alt1	ktNNa	ktVSU
+ktNNU.alt1	ktNNa	ktVSU.alt
+ktTU.alt1	ktTa	ktVSU
+ktTHU.alt1	ktTHa	ktVSU
+ktDHU.alt1	ktDHa	ktVSU
+ktNU.alt1	ktNa	ktVSU
+ktPU.alt1	ktPa	ktVSU
+ktBU.alt1	ktBa	ktVSU
+ktBHU.alt1	ktBHa	ktVSU
+ktMU.alt1	ktMa	ktVSU
+ktYU.alt1	ktYa	ktVSU.alt
+ktRU.alt1	ktRa	ktVSU
+ktVU.alt1	ktVa	ktVSU.alt
+ktSHU.alt1	ktSHa	ktVSU
+ktSSU.alt1	ktSSa	ktVSU
+ktSU.alt1	ktSa	ktVSU
+ktPTU.alt1	ktPTa	ktVSU.alt
+ktKKU.alt1	ktKKa	ktVSU
+ktPRU.alt1	ktPRa	ktVSU
+ktKMU.alt1	ktKMa	ktVSU
+ktKYU.alt1	ktKYa	ktVSU.alt
+ktKRU.alt1	ktKRa	ktVSU
+ktGRU.alt1	ktGRa	ktVSU
+ktKTHU.alt1	ktKTHa	ktVSU
+ktKHRU.alt1	ktKHRa	ktVSU
+ktGHRU.alt1	ktGHRa	ktVSU
+ktCRU.alt1	ktCRa	ktVSU
+ktTHRU.alt1	ktTHRa	ktVSU
+ktDHRU.alt1	ktDHRa	ktVSU
+ktBRU.alt1	ktBRa	ktVSU
+ktMRU.alt1	ktMRa	ktVSU
+ktSSRU.alt1	ktSSRa	ktVSU.alt
+ktSRU.alt1	ktSRa	ktVSU.alt
+ktBHRU.alt1	ktBHRa	ktVSU
+ktJRU.alt1	ktJRa	ktVSU
+ktBHYU.alt1	ktBHYa	ktVSU.alt
+ktKSU.alt1	ktKSa	ktVSU.alt
+ktTRU.alt1	ktTRa	ktVSU
+ktVRU.alt1	ktVRa	ktVSU.alt
+ktKMU.var.alt1	ktKMa.var	ktVSU
+ktKMRU.alt1	ktKMRa	ktVSU.alt
+ktKMRU.var.alt1	ktKMRa.var	ktVSU.alt
+ktKSU.var.alt1	ktKSa.var	ktVSU.alt
+ktKTHU.var.alt1	ktKTHa.var	ktVSU
+ktKTHRU.alt1	ktKTHRa	ktVSU
+ktKYU.varKa.alt1	ktKYa.varKa	ktVSU
+ktNNU.var.alt1	ktNNa.var	ktVSU.alt
+ktBHYU.var.alt1	ktBHYa.var	ktVSU.alt
+ktKTHRU.var.alt1	ktKTHRa.var	ktVSU
+ktKYU.var.alt1	ktKYa.var	ktVSU
+ktKYU.var.alt1	ktKYa.var	ktVSU.alt
+ktKYU.varKYa.alt1	ktKYa.varKYa	ktVSU
+ktYU.var.alt1	ktYa.var	ktVSU
+ktYU.var.alt1	ktYa.var	ktVSU.alt
+
+lookup end
+
+
+lookup	22	context
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+class definition begin
+ktVSII.alt	1
+ktRaHook	2
+class definition end
+
+class	2, 1	1, 25	2, 26
+
+lookup end
+
+
+lookup	23	ligature
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+MarkAttachmentType	2
+
+ktVSEm	ktVSE	ktVSAnusvara
+ktVSAIm	ktVSAI	ktVSAnusvara
+ktVSOm	ktVSO	ktVSAnusvara
+ktVSAUm	ktVSAU	ktVSAnusvara
+ktRaCandrabindu	ktRaHook	ktVSCBindu
+ktRaAnusvara	ktRaHook	ktVSAnusvara
+
+lookup end
+
+
+lookup	24	context
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+MarkAttachmentType	2
+
+class definition begin
+ktGa.half	1
+ktKa.half	1
+ktKHa.half	1
+ktGHa.half	1
+ktCa.half	1
+ktJa.half	1
+ktNNa.half	1
+ktTa.half	1
+ktTHa.half	1
+ktDHa.half	1
+ktNa.half	1
+ktPa.half	1
+ktPHa.half	1
+ktBa.half	1
+ktBHa.half	1
+ktMa.half	1
+ktYa.half	1
+ktVa.half	1
+ktSHa.half	1
+ktSSa.half	1
+ktSa.half	1
+ktNYa.half	1
+ktNGa.half	1
+ktCHa.half	1
+ktJHa.half	1
+ktTTa.half	1
+ktTTHa.half	1
+ktDDa.half	1
+ktDDDHa.half	1
+ktDDHa.half	1
+ktRHa.half	1
+ktDa.half	1
+ktRa.half	1
+ktLa.half	1
+ktHa.half	1
+ktKa.half.var	1
+ktLa.half.var	1
+ktNNa.half.var	1
+ktNYa.half.var	1
+ktPHa.half.var	1
+ktYa.half.var	1
 ktKa	2
 ktKHa	2
 ktGa	2
@@ -679,1098 +957,47 @@ ktBHYa	2
 ktKSa	2
 ktTRa	2
 ktVRa	2
-ktVirama	3
-ktVSI	4
-ktVSIcandra	4
-ktVSIm	4
-ktVSIRam	4
-ktVSIRaCandra	4
-ktVSIRa	4
+ktKKa.var	2
+ktKMa.var	2
+ktKMRa.var	2
+ktKRa.var	2
+ktKSa.var	2
+ktKTHa.var	2
+ktKYa.varKa	2
+ktNNa.var	2
+ktBHYa.var	2
+ktKa.var	2
+ktKTHRa.var	2
+ktKYa.var	2
+ktKYa.varKYa	2
+ktLa.var	2
+ktNYa.var	2
+ktPHa.var	2
+ktPHRa.var	2
+ktYa.var	2
+ktVSI	3
+ktRaHook	4
+ktRaAnusvara	5
+ktRaCandrabindu	6
+ktVSCBindu	7
+ktVSAnusvara	8
 class definition end
 
-lookaheadclass definition begin
-ktVSI	1
-ktVSIm	2
-ktVSIcandra	3
-ktVSIRam	4
-ktVSIRaCandra	5
-ktVSIRa	6
-class definition end
-
-class-chain		1, 1, 2	1	1, 18
-class-chain		1, 1, 2	2	1, 19
-class-chain		1, 1, 2	3	1, 20
-class-chain		1, 1, 2	4	1, 21
-class-chain		1, 1, 2	5	1, 22
-class-chain		1, 1, 2	6	1, 23
-class-chain		1, 2	1	1, 18
-class-chain		1, 2	2	1, 19
-class-chain		1, 2	3	1, 20
-class-chain		1, 2	4	1, 21
-class-chain		1, 2	5	1, 22
-class-chain		1, 2	6	1, 23
-class-chain		2, 3, 2	1	1, 18
-class-chain		2, 3, 2	2	1, 19
-class-chain		2, 3, 2	3	1, 20
-class-chain		2, 3, 2	4	1, 21
-class-chain		2, 3, 2	5	1, 22
-class-chain		2, 3, 2	6	1, 23
-class-chain		2	1	1, 18
-class-chain		2	2	1, 19
-class-chain		2	3	1, 20
-class-chain		2	4	1, 21
-class-chain		2	5	1, 22
-class-chain		2	6	1, 23
-class-chain		4		1, 9
-
-lookup end
-
-
-lookup	9	single
-
-RightToLeft	no
-IgnoreBaseGlyphs	no
-IgnoreLigatures	no
-IgnoreMarks	no
-
-ktVSI	nullR
-ktVSIcandra	nullR
-ktVSIm	nullR
-ktVSIRam	nullR
-ktVSIRaCandra	nullR
-ktVSIRa	nullR
-
-lookup end
-
-
-lookup	10	single
-
-RightToLeft	no
-IgnoreBaseGlyphs	no
-IgnoreLigatures	no
-IgnoreMarks	no
-
-ktRa.half	nullR
-
-lookup end
-
-
-lookup	11	context
-
-RightToLeft	no
-IgnoreBaseGlyphs	no
-IgnoreLigatures	no
-IgnoreMarks	yes
-
-class definition begin
-ktTTa	1
-ktTTHa	1
-ktDDHa	1
-ktRHa	1
-ktDa	1
-ktHa	1
-ktGa.half	1
-ktGHa.half	1
-ktCa.half	1
-ktJa.half	1
-ktTa.half	1
-ktTHa.half	1
-ktDHa.half	1
-ktNa.half	1
-ktPa.half	1
-ktBa.half	1
-ktBHa.half	1
-ktMa.half	1
-ktYa.half	1
-ktVa.half	1
-ktSSa.half	1
-ktSa.half	1
-ktNYa.half	1
-ktTTa.half	1
-ktTTHa.half	1
-ktDDHa.half	1
-ktRHa.half	1
-ktDa.half	1
-ktHa.half	1
-ktKa	2
-ktCa	2
-ktDDa	2
-ktDDDHa	2
-ktPa	2
-ktYa	2
-ktRa	2
-ktSSa	2
-ktPTa	2
-ktKKa	2
-ktPRa	2
-ktKa.half	2
-ktKHa.half	2
-ktKRa	2
-ktNNa.half	2
-ktPHa.half	2
-ktSHa.half	2
-ktCRa	2
-ktSSRa	2
-ktDDa.half	2
-ktDDDHa.half	2
-ktRa.half	2
-ktKHa	3
-ktCHa	3
-ktJa	3
-ktNNa	3
-ktPHa	3
-ktSHa	3
-ktSa	3
-ktKHRa	3
-ktSRa	3
-ktJRa	3
-ktCHa.half	3
-ktGa	4
-ktGHa	4
-ktNGa	4
-ktJHa	4
-ktNYa	4
-ktTa	4
-ktTHa	4
-ktDHa	4
-ktNa	4
-ktBa	4
-ktBHa	4
-ktMa	4
-ktLa	4
-ktVa	4
-ktGRa	4
-ktGHRa	4
-ktTHRa	4
-ktDHRa	4
-ktBRa	4
-ktMRa	4
-ktBHRa	4
-ktTRa	4
-ktVRa	4
-ktVSI	5
-ktVSI.sub	5
-class definition end
-
-class	5, 1, 1, 1	1, 37
-class	5, 1, 1, 2	1, 37
-class	5, 1, 1, 3	1, 37
-class	5, 1, 1, 4	1, 37
-class	5, 1, 2, 1	1, 37
-class	5, 1, 2, 2	1, 37
-class	5, 1, 2, 3	1, 37
-class	5, 1, 2, 4	1, 37
-class	5, 1, 3, 1	1, 37
-class	5, 1, 3, 2	1, 37
-class	5, 1, 3, 3	1, 37
-class	5, 1, 3, 4	1, 37
-class	5, 1, 4, 1	1, 37
-class	5, 1, 4, 2	1, 37
-class	5, 1, 4, 3	1, 37
-class	5, 1, 4, 4	1, 37
-class	5, 2, 1, 1	1, 37
-class	5, 2, 1, 2	1, 37
-class	5, 2, 1, 3	1, 37
-class	5, 2, 1, 4	1, 37
-class	5, 2, 2, 1	1, 37
-class	5, 2, 2, 2	1, 37
-class	5, 2, 2, 3	1, 37
-class	5, 2, 2, 4	1, 37
-class	5, 2, 3, 1	1, 37
-class	5, 2, 3, 2	1, 37
-class	5, 2, 3, 3	1, 37
-class	5, 2, 3, 4	1, 37
-class	5, 2, 4, 1	1, 37
-class	5, 2, 4, 2	1, 37
-class	5, 2, 4, 3	1, 37
-class	5, 2, 4, 4	1, 37
-class	5, 3, 1, 1	1, 37
-class	5, 3, 1, 2	1, 37
-class	5, 3, 1, 3	1, 37
-class	5, 3, 1, 4	1, 37
-class	5, 3, 2, 1	1, 37
-class	5, 3, 2, 2	1, 37
-class	5, 3, 2, 3	1, 37
-class	5, 3, 2, 4	1, 37
-class	5, 3, 3, 1	1, 37
-class	5, 3, 3, 2	1, 37
-class	5, 3, 3, 3	1, 37
-class	5, 3, 3, 4	1, 37
-class	5, 3, 4, 1	1, 37
-class	5, 3, 4, 2	1, 37
-class	5, 3, 4, 3	1, 37
-class	5, 3, 4, 4	1, 37
-class	5, 4, 1, 1	1, 37
-class	5, 4, 1, 2	1, 37
-class	5, 4, 1, 3	1, 37
-class	5, 4, 1, 4	1, 37
-class	5, 4, 2, 1	1, 37
-class	5, 4, 2, 2	1, 37
-class	5, 4, 2, 3	1, 37
-class	5, 4, 2, 4	1, 37
-class	5, 4, 3, 1	1, 37
-class	5, 4, 3, 2	1, 37
-class	5, 4, 3, 3	1, 37
-class	5, 4, 3, 4	1, 37
-class	5, 4, 4, 1	1, 37
-class	5, 4, 4, 2	1, 37
-class	5, 4, 4, 3	1, 37
-class	5, 4, 4, 4	1, 37
-class	5, 4, 4	1, 27
-class	5, 4, 1	1, 28
-class	5, 1, 4	1, 28
-class	5, 4, 2	1, 29
-class	5, 2, 4	1, 29
-class	5, 4, 3	1, 30
-class	5, 3, 4	1, 30
-class	5, 1, 1	1, 31
-class	5, 1, 2	1, 32
-class	5, 2, 1	1, 32
-class	5, 1, 3	1, 33
-class	5, 3, 1	1, 33
-class	5, 2, 2	1, 34
-class	5, 2, 3	1, 35
-class	5, 3, 2	1, 35
-class	5, 3, 3	1, 36
-class	5, 1	1, 24
-class	5, 2	1, 25
-class	5, 3	1, 26
-
-lookup end
-
-
-lookup	12	ligature
-
-RightToLeft	no
-IgnoreBaseGlyphs	no
-IgnoreLigatures	no
-IgnoreMarks	no
-
-ktKU	ktKa	ktVSU
-ktKUU	ktKa	ktVSUU
-ktKHU	ktKHa	ktVSU
-ktKHUU	ktKHa	ktVSUU
-ktGU	ktGa	ktVSU
-ktGUU	ktGa	ktVSUU
-ktGHU	ktGHa	ktVSU
-ktGHUU	ktGHa	ktVSUU
-ktCU	ktCa	ktVSU
-ktCUU	ktCa	ktVSUU
-ktJU	ktJa	ktVSU
-ktJUU	ktJa	ktVSUU
-ktJHU	ktJHa	ktVSU
-ktJHUU	ktJHa	ktVSUU
-ktNNU	ktNNa	ktVSU
-ktNNUU	ktNNa	ktVSUU
-ktTU	ktTa	ktVSU
-ktTUU	ktTa	ktVSUU
-ktTHU	ktTHa	ktVSU
-ktTHUU	ktTHa	ktVSUU
-ktDHU	ktDHa	ktVSU
-ktDHUU	ktDHa	ktVSUU
-ktNU	ktNa	ktVSU
-ktNUU	ktNa	ktVSUU
-ktPU	ktPa	ktVSU
-ktPUU	ktPa	ktVSUU
-ktBU	ktBa	ktVSU
-ktBUU	ktBa	ktVSUU
-ktBHU	ktBHa	ktVSU
-ktBHUU	ktBHa	ktVSUU
-ktMU	ktMa	ktVSU
-ktMUU	ktMa	ktVSUU
-ktYU	ktYa	ktVSU
-ktYUU	ktYa	ktVSUU
-ktRU	ktRa	ktVSU
-ktRUU	ktRa	ktVSUU
-ktVU	ktVa	ktVSU
-ktVUU	ktVa	ktVSUU
-ktSHU	ktSHa	ktVSU
-ktSHUU	ktSHa	ktVSUU
-ktSSU	ktSSa	ktVSU
-ktSSUU	ktSSa	ktVSUU
-ktSU	ktSa	ktVSU
-ktSUU	ktSa	ktVSUU
-ktHU	ktHa	ktVSU
-ktHUU	ktHa	ktVSUU
-
-lookup end
-
-
-lookup	13	ligature
-
-RightToLeft	no
-IgnoreBaseGlyphs	no
-IgnoreLigatures	no
-IgnoreMarks	no
-
-ktPTII	ktPTa	ktVSII
-ktKKII	ktKKa	ktVSII
-ktPRII	ktPRa	ktVSII
-ktKMII	ktKMa	ktVSII
-ktKYII	ktKYa	ktVSII
-ktKRII	ktKRa	ktVSII
-ktGRII	ktGRa	ktVSII
-ktTTRII	ktTTRa	ktVSII
-ktKTHII	ktKTHa	ktVSII
-ktKHRII	ktKHRa	ktVSII
-ktGHRII	ktGHRa	ktVSII
-ktCRII	ktCRa	ktVSII
-ktTHRII	ktTHRa	ktVSII
-ktDHRII	ktDHRa	ktVSII
-ktBRII	ktBRa	ktVSII
-ktMRII	ktMRa	ktVSII
-ktSSRII	ktSSRa	ktVSII
-ktSRII	ktSRa	ktVSII
-ktBHRII	ktBHRa	ktVSII
-ktJRII	ktJRa	ktVSII
-ktBHYII	ktBHYa	ktVSII
-ktKSII	ktKSa	ktVSII
-ktTRII	ktTRa	ktVSII
-ktVRII	ktVRa	ktVSII
-
-lookup end
-
-
-lookup	14	ligature
-
-RightToLeft	no
-IgnoreBaseGlyphs	no
-IgnoreLigatures	no
-IgnoreMarks	no
-
-ktKII	ktKa	ktVSII
-ktKHII	ktKHa	ktVSII
-ktGII	ktGa	ktVSII
-ktGHII	ktGHa	ktVSII
-ktGII	ktNGa	ktVSII
-ktCII	ktCa	ktVSII
-ktCHII	ktCHa	ktVSII
-ktJII	ktJa	ktVSII
-ktJHII	ktJHa	ktVSII
-ktTTII	ktTTa	ktVSII
-ktTTHII	ktTTHa	ktVSII
-ktDDII	ktDDa	ktVSII
-ktDDDHII	ktDDDHa	ktVSII
-ktDDHII	ktDDHa	ktVSII
-ktRHII	ktRHa	ktVSII
-ktNNII	ktNNa	ktVSII
-ktTII	ktTa	ktVSII
-ktTHII	ktTHa	ktVSII
-ktDII	ktDa	ktVSII
-ktDHII	ktDHa	ktVSII
-ktNII	ktNa	ktVSII
-ktPII	ktPa	ktVSII
-ktPHII	ktPHa	ktVSII
-ktBII	ktBa	ktVSII
-ktBHII	ktBHa	ktVSII
-ktMII	ktMa	ktVSII
-ktYII	ktYa	ktVSII
-ktRII	ktRa	ktVSII
-ktLII	ktLa	ktVSII
-ktVII	ktVa	ktVSII
-ktSHII	ktSHa	ktVSII
-ktSSII	ktSSa	ktVSII
-ktSII	ktSa	ktVSII
-ktHII	ktHa	ktVSII
-
-lookup end
-
-
-lookup	15	single
-
-RightToLeft	no
-IgnoreBaseGlyphs	no
-IgnoreLigatures	no
-IgnoreMarks	no
-
-ktKU	ktKU.alt1
-ktMU	ktMU.alt1
-ktBHU	ktBHU.alt1
-ktRU	ktRU.alt1
-ktKHU	ktKHU.alt1
-ktPU	ktPU.alt1
-ktSU	ktSU.alt1
-ktGU	ktGU.alt1
-ktCU	ktCU.alt1
-ktBU	ktBU.alt1
-ktGHU	ktGHU.alt1
-ktJU	ktJU.alt1
-ktNNU	ktNNU.alt1
-ktTU	ktTU.alt1
-ktNU	ktNU.alt1
-ktDHU	ktDHU.alt1
-ktTHU	ktTHU.alt1
-ktYU	ktYU.alt1
-ktVU	ktVU.alt1
-ktSHU	ktSHU.alt1
-ktSSU	ktSSU.alt1
-
-lookup end
-
-
-lookup	16	single
-
-RightToLeft	no
-IgnoreBaseGlyphs	no
-IgnoreLigatures	no
-IgnoreMarks	no
-
-ktNNII	ktNNII.alt1
-
-lookup end
-
-
-lookup	17	single
-
-RightToLeft	no
-IgnoreBaseGlyphs	no
-IgnoreLigatures	no
-IgnoreMarks	no
-
-ktA	ktA.alt1
-ktNNa	ktNNa.alt1
-
-lookup end
-
-
-lookup	18	multiple
-
-RightToLeft	no
-IgnoreBaseGlyphs	no
-IgnoreLigatures	no
-IgnoreMarks	yes
-
-ktKa	ktVSI.sub	ktKa
-ktKHa	ktVSI.sub	ktKHa
-ktGa	ktVSI.sub	ktGa
-ktGHa	ktVSI.sub	ktGHa
-ktNGa	ktVSI.sub	ktNGa
-ktCa	ktVSI.sub	ktCa
-ktCHa	ktVSI.sub	ktCHa
-ktJa	ktVSI.sub	ktJa
-ktJHa	ktVSI.sub	ktJHa
-ktNYa	ktVSI.sub	ktNYa
-ktTTa	ktVSI.sub	ktTTa
-ktTTHa	ktVSI.sub	ktTTHa
-ktDDa	ktVSI.sub	ktDDa
-ktDDDHa	ktVSI.sub	ktDDDHa
-ktDDHa	ktVSI.sub	ktDDHa
-ktRHa	ktVSI.sub	ktRHa
-ktNNa	ktVSI.sub	ktNNa
-ktTa	ktVSI.sub	ktTa
-ktTHa	ktVSI.sub	ktTHa
-ktDa	ktVSI.sub	ktDa
-ktDHa	ktVSI.sub	ktDHa
-ktNa	ktVSI.sub	ktNa
-ktPa	ktVSI.sub	ktPa
-ktPHa	ktVSI.sub	ktPHa
-ktBa	ktVSI.sub	ktBa
-ktBHa	ktVSI.sub	ktBHa
-ktMa	ktVSI.sub	ktMa
-ktYa	ktVSI.sub	ktYa
-ktRa	ktVSI.sub	ktRa
-ktLa	ktVSI.sub	ktLa
-ktVa	ktVSI.sub	ktVa
-ktSHa	ktVSI.sub	ktSHa
-ktSSa	ktVSI.sub	ktSSa
-ktSa	ktVSI.sub	ktSa
-ktHa	ktVSI.sub	ktHa
-ktPTa	ktVSI.sub	ktPTa
-ktKKa	ktVSI.sub	ktKKa
-ktPRa	ktVSI.sub	ktPRa
-ktGa.half	ktVSI.sub	ktGa.half
-ktKa.half	ktVSI.sub	ktKa.half
-ktKHa.half	ktVSI.sub	ktKHa.half
-ktGHa.half	ktVSI.sub	ktGHa.half
-ktCa.half	ktVSI.sub	ktCa.half
-ktKMa	ktVSI.sub	ktKMa
-ktKYa	ktVSI.sub	ktKYa
-ktKRa	ktVSI.sub	ktKRa
-ktGRa	ktVSI.sub	ktGRa
-ktJa.half	ktVSI.sub	ktJa.half
-ktNNa.half	ktVSI.sub	ktNNa.half
-ktTa.half	ktVSI.sub	ktTa.half
-ktTHa.half	ktVSI.sub	ktTHa.half
-ktDHa.half	ktVSI.sub	ktDHa.half
-ktNa.half	ktVSI.sub	ktNa.half
-ktPa.half	ktVSI.sub	ktPa.half
-ktPHa.half	ktVSI.sub	ktPHa.half
-ktBa.half	ktVSI.sub	ktBa.half
-ktBHa.half	ktVSI.sub	ktBHa.half
-ktMa.half	ktVSI.sub	ktMa.half
-ktYa.half	ktVSI.sub	ktYa.half
-ktVa.half	ktVSI.sub	ktVa.half
-ktSHa.half	ktVSI.sub	ktSHa.half
-ktSSa.half	ktVSI.sub	ktSSa.half
-ktSa.half	ktVSI.sub	ktSa.half
-ktTTRa	ktVSI.sub	ktTTRa
-ktKTHa	ktVSI.sub	ktKTHa
-ktKHRa	ktVSI.sub	ktKHRa
-ktGHRa	ktVSI.sub	ktGHRa
-ktCRa	ktVSI.sub	ktCRa
-ktTHRa	ktVSI.sub	ktTHRa
-ktDHRa	ktVSI.sub	ktDHRa
-ktBRa	ktVSI.sub	ktBRa
-ktMRa	ktVSI.sub	ktMRa
-ktSSRa	ktVSI.sub	ktSSRa
-ktSRa	ktVSI.sub	ktSRa
-ktBHRa	ktVSI.sub	ktBHRa
-ktJRa	ktVSI.sub	ktJRa
-ktBHYa	ktVSI.sub	ktBHYa
-ktNYa.half	ktVSI.sub	ktNYa.half
-ktKSa	ktVSI.sub	ktKSa
-ktTRa	ktVSI.sub	ktTRa
-ktVRa	ktVSI.sub	ktVRa
-ktNGa.half	ktVSI.sub	ktNGa.half
-ktCHa.half	ktVSI.sub	ktCHa.half
-ktJHa.half	ktVSI.sub	ktJHa.half
-ktTTa.half	ktVSI.sub	ktTTa.half
-ktTTHa.half	ktVSI.sub	ktTTHa.half
-ktDDa.half	ktVSI.sub	ktDDa.half
-ktDDDHa.half	ktVSI.sub	ktDDDHa.half
-ktDDHa.half	ktVSI.sub	ktDDHa.half
-ktRHa.half	ktVSI.sub	ktRHa.half
-ktDa.half	ktVSI.sub	ktDa.half
-ktRa.half	ktVSI.sub	ktRa.half
-ktLa.half	ktVSI.sub	ktLa.half
-ktHa.half	ktVSI.sub	ktHa.half
-
-lookup end
-
-
-lookup	19	multiple
-
-RightToLeft	no
-IgnoreBaseGlyphs	no
-IgnoreLigatures	no
-IgnoreMarks	yes
-
-ktKa	ktVSI.sub	ktVSAnusvara	ktKa
-ktKHa	ktVSI.sub	ktVSAnusvara	ktKHa
-ktGa	ktVSI.sub	ktVSAnusvara	ktGa
-ktGHa	ktVSI.sub	ktVSAnusvara	ktGHa
-ktNGa	ktVSI.sub	ktVSAnusvara	ktNGa
-ktCa	ktVSI.sub	ktVSAnusvara	ktCa
-ktCHa	ktVSI.sub	ktVSAnusvara	ktCHa
-ktJa	ktVSI.sub	ktVSAnusvara	ktJa
-ktJHa	ktVSI.sub	ktVSAnusvara	ktJHa
-ktNYa	ktVSI.sub	ktVSAnusvara	ktNYa
-ktTTa	ktVSI.sub	ktVSAnusvara	ktTTa
-ktTTHa	ktVSI.sub	ktVSAnusvara	ktTTHa
-ktDDa	ktVSI.sub	ktVSAnusvara	ktDDa
-ktDDDHa	ktVSI.sub	ktVSAnusvara	ktDDDHa
-ktDDHa	ktVSI.sub	ktVSAnusvara	ktDDHa
-ktRHa	ktVSI.sub	ktVSAnusvara	ktRHa
-ktNNa	ktVSI.sub	ktVSAnusvara	ktNNa
-ktTa	ktVSI.sub	ktVSAnusvara	ktTa
-ktTHa	ktVSI.sub	ktVSAnusvara	ktTHa
-ktDa	ktVSI.sub	ktVSAnusvara	ktDa
-ktDHa	ktVSI.sub	ktVSAnusvara	ktDHa
-ktNa	ktVSI.sub	ktVSAnusvara	ktNa
-ktPa	ktVSI.sub	ktVSAnusvara	ktPa
-ktPHa	ktVSI.sub	ktVSAnusvara	ktPHa
-ktBa	ktVSI.sub	ktVSAnusvara	ktBa
-ktBHa	ktVSI.sub	ktVSAnusvara	ktBHa
-ktMa	ktVSI.sub	ktVSAnusvara	ktMa
-ktYa	ktVSI.sub	ktVSAnusvara	ktYa
-ktRa	ktVSI.sub	ktVSAnusvara	ktRa
-ktLa	ktVSI.sub	ktVSAnusvara	ktLa
-ktVa	ktVSI.sub	ktVSAnusvara	ktVa
-ktSHa	ktVSI.sub	ktVSAnusvara	ktSHa
-ktSSa	ktVSI.sub	ktVSAnusvara	ktSSa
-ktSa	ktVSI.sub	ktVSAnusvara	ktSa
-ktHa	ktVSI.sub	ktVSAnusvara	ktHa
-ktPTa	ktVSI.sub	ktVSAnusvara	ktPTa
-ktKKa	ktVSI.sub	ktVSAnusvara	ktKKa
-ktPRa	ktVSI.sub	ktVSAnusvara	ktPRa
-ktGa.half	ktVSI.sub	ktVSAnusvara	ktGa.half
-ktKa.half	ktVSI.sub	ktVSAnusvara	ktKa.half
-ktKHa.half	ktVSI.sub	ktVSAnusvara	ktKHa.half
-ktGHa.half	ktVSI.sub	ktVSAnusvara	ktGHa.half
-ktCa.half	ktVSI.sub	ktVSAnusvara	ktCa.half
-ktKMa	ktVSI.sub	ktVSAnusvara	ktKMa
-ktKYa	ktVSI.sub	ktVSAnusvara	ktKYa
-ktKRa	ktVSI.sub	ktVSAnusvara	ktKRa
-ktGRa	ktVSI.sub	ktVSAnusvara	ktGRa
-ktJa.half	ktVSI.sub	ktVSAnusvara	ktJa.half
-ktNNa.half	ktVSI.sub	ktVSAnusvara	ktNNa.half
-ktTa.half	ktVSI.sub	ktVSAnusvara	ktTa.half
-ktTHa.half	ktVSI.sub	ktVSAnusvara	ktTHa.half
-ktDHa.half	ktVSI.sub	ktVSAnusvara	ktDHa.half
-ktNa.half	ktVSI.sub	ktVSAnusvara	ktNa.half
-ktPa.half	ktVSI.sub	ktVSAnusvara	ktPa.half
-ktPHa.half	ktVSI.sub	ktVSAnusvara	ktPHa.half
-ktBa.half	ktVSI.sub	ktVSAnusvara	ktBa.half
-ktBHa.half	ktVSI.sub	ktVSAnusvara	ktBHa.half
-ktMa.half	ktVSI.sub	ktVSAnusvara	ktMa.half
-ktYa.half	ktVSI.sub	ktVSAnusvara	ktYa.half
-ktVa.half	ktVSI.sub	ktVSAnusvara	ktVa.half
-ktSHa.half	ktVSI.sub	ktVSAnusvara	ktSHa.half
-ktSSa.half	ktVSI.sub	ktVSAnusvara	ktSSa.half
-ktSa.half	ktVSI.sub	ktVSAnusvara	ktSa.half
-ktTTRa	ktVSI.sub	ktVSAnusvara	ktTTRa
-ktKTHa	ktVSI.sub	ktVSAnusvara	ktKTHa
-ktKHRa	ktVSI.sub	ktVSAnusvara	ktKHRa
-ktGHRa	ktVSI.sub	ktVSAnusvara	ktGHRa
-ktCRa	ktVSI.sub	ktVSAnusvara	ktCRa
-ktTHRa	ktVSI.sub	ktVSAnusvara	ktTHRa
-ktDHRa	ktVSI.sub	ktVSAnusvara	ktDHRa
-ktBRa	ktVSI.sub	ktVSAnusvara	ktBRa
-ktMRa	ktVSI.sub	ktVSAnusvara	ktMRa
-ktSSRa	ktVSI.sub	ktVSAnusvara	ktSSRa
-ktSRa	ktVSI.sub	ktVSAnusvara	ktSRa
-ktBHRa	ktVSI.sub	ktVSAnusvara	ktBHRa
-ktJRa	ktVSI.sub	ktVSAnusvara	ktJRa
-ktBHYa	ktVSI.sub	ktVSAnusvara	ktBHYa
-ktNYa.half	ktVSI.sub	ktVSAnusvara	ktNYa.half
-ktKSa	ktVSI.sub	ktVSAnusvara	ktKSa
-ktTRa	ktVSI.sub	ktVSAnusvara	ktTRa
-ktVRa	ktVSI.sub	ktVSAnusvara	ktVRa
-ktNGa.half	ktVSI.sub	ktVSAnusvara	ktNGa.half
-ktCHa.half	ktVSI.sub	ktVSAnusvara	ktCHa.half
-ktJHa.half	ktVSI.sub	ktVSAnusvara	ktJHa.half
-ktTTa.half	ktVSI.sub	ktVSAnusvara	ktTTa.half
-ktTTHa.half	ktVSI.sub	ktVSAnusvara	ktTTHa.half
-ktDDa.half	ktVSI.sub	ktVSAnusvara	ktDDa.half
-ktDDDHa.half	ktVSI.sub	ktVSAnusvara	ktDDDHa.half
-ktDDHa.half	ktVSI.sub	ktVSAnusvara	ktDDHa.half
-ktRHa.half	ktVSI.sub	ktVSAnusvara	ktRHa.half
-ktDa.half	ktVSI.sub	ktVSAnusvara	ktDa.half
-ktRa.half	ktVSI.sub	ktVSAnusvara	ktRa.half
-ktLa.half	ktVSI.sub	ktVSAnusvara	ktLa.half
-ktHa.half	ktVSI.sub	ktVSAnusvara	ktHa.half
-
-lookup end
-
-
-lookup	20	multiple
-
-RightToLeft	no
-IgnoreBaseGlyphs	no
-IgnoreLigatures	no
-IgnoreMarks	yes
-
-ktKa	ktVSI.sub	ktVSCBindu	ktKa
-ktKHa	ktVSI.sub	ktVSCBindu	ktKHa
-ktGa	ktVSI.sub	ktVSCBindu	ktGa
-ktGHa	ktVSI.sub	ktVSCBindu	ktGHa
-ktNGa	ktVSI.sub	ktVSCBindu	ktNGa
-ktCa	ktVSI.sub	ktVSCBindu	ktCa
-ktCHa	ktVSI.sub	ktVSCBindu	ktCHa
-ktJa	ktVSI.sub	ktVSCBindu	ktJa
-ktJHa	ktVSI.sub	ktVSCBindu	ktJHa
-ktNYa	ktVSI.sub	ktVSCBindu	ktNYa
-ktTTa	ktVSI.sub	ktVSCBindu	ktTTa
-ktTTHa	ktVSI.sub	ktVSCBindu	ktTTHa
-ktDDa	ktVSI.sub	ktVSCBindu	ktDDa
-ktDDDHa	ktVSI.sub	ktVSCBindu	ktDDDHa
-ktDDHa	ktVSI.sub	ktVSCBindu	ktDDHa
-ktRHa	ktVSI.sub	ktVSCBindu	ktRHa
-ktNNa	ktVSI.sub	ktVSCBindu	ktNNa
-ktTa	ktVSI.sub	ktVSCBindu	ktTa
-ktTHa	ktVSI.sub	ktVSCBindu	ktTHa
-ktDa	ktVSI.sub	ktVSCBindu	ktDa
-ktDHa	ktVSI.sub	ktVSCBindu	ktDHa
-ktNa	ktVSI.sub	ktVSCBindu	ktNa
-ktPa	ktVSI.sub	ktVSCBindu	ktPa
-ktPHa	ktVSI.sub	ktVSCBindu	ktPHa
-ktBa	ktVSI.sub	ktVSCBindu	ktBa
-ktBHa	ktVSI.sub	ktVSCBindu	ktBHa
-ktMa	ktVSI.sub	ktVSCBindu	ktMa
-ktYa	ktVSI.sub	ktVSCBindu	ktYa
-ktRa	ktVSI.sub	ktVSCBindu	ktRa
-ktLa	ktVSI.sub	ktVSCBindu	ktLa
-ktVa	ktVSI.sub	ktVSCBindu	ktVa
-ktSHa	ktVSI.sub	ktVSCBindu	ktSHa
-ktSSa	ktVSI.sub	ktVSCBindu	ktSSa
-ktSa	ktVSI.sub	ktVSCBindu	ktSa
-ktHa	ktVSI.sub	ktVSCBindu	ktHa
-ktPTa	ktVSI.sub	ktVSCBindu	ktPTa
-ktKKa	ktVSI.sub	ktVSCBindu	ktKKa
-ktPRa	ktVSI.sub	ktVSCBindu	ktPRa
-ktGa.half	ktVSI.sub	ktVSCBindu	ktGa.half
-ktKa.half	ktVSI.sub	ktVSCBindu	ktKa.half
-ktKHa.half	ktVSI.sub	ktVSCBindu	ktKHa.half
-ktGHa.half	ktVSI.sub	ktVSCBindu	ktGHa.half
-ktCa.half	ktVSI.sub	ktVSCBindu	ktCa.half
-ktKMa	ktVSI.sub	ktVSCBindu	ktKMa
-ktKYa	ktVSI.sub	ktVSCBindu	ktKYa
-ktKRa	ktVSI.sub	ktVSCBindu	ktKRa
-ktGRa	ktVSI.sub	ktVSCBindu	ktGRa
-ktJa.half	ktVSI.sub	ktVSCBindu	ktJa.half
-ktNNa.half	ktVSI.sub	ktVSCBindu	ktNNa.half
-ktTa.half	ktVSI.sub	ktVSCBindu	ktTa.half
-ktTHa.half	ktVSI.sub	ktVSCBindu	ktTHa.half
-ktDHa.half	ktVSI.sub	ktVSCBindu	ktDHa.half
-ktNa.half	ktVSI.sub	ktVSCBindu	ktNa.half
-ktPa.half	ktVSI.sub	ktVSCBindu	ktPa.half
-ktPHa.half	ktVSI.sub	ktVSCBindu	ktPHa.half
-ktBa.half	ktVSI.sub	ktVSCBindu	ktBa.half
-ktBHa.half	ktVSI.sub	ktVSCBindu	ktBHa.half
-ktMa.half	ktVSI.sub	ktVSCBindu	ktMa.half
-ktYa.half	ktVSI.sub	ktVSCBindu	ktYa.half
-ktVa.half	ktVSI.sub	ktVSCBindu	ktVa.half
-ktSHa.half	ktVSI.sub	ktVSCBindu	ktSHa.half
-ktSSa.half	ktVSI.sub	ktVSCBindu	ktSSa.half
-ktSa.half	ktVSI.sub	ktVSCBindu	ktSa.half
-ktTTRa	ktVSI.sub	ktVSCBindu	ktTTRa
-ktKTHa	ktVSI.sub	ktVSCBindu	ktKTHa
-ktKHRa	ktVSI.sub	ktVSCBindu	ktKHRa
-ktGHRa	ktVSI.sub	ktVSCBindu	ktGHRa
-ktCRa	ktVSI.sub	ktVSCBindu	ktCRa
-ktTHRa	ktVSI.sub	ktVSCBindu	ktTHRa
-ktDHRa	ktVSI.sub	ktVSCBindu	ktDHRa
-ktBRa	ktVSI.sub	ktVSCBindu	ktBRa
-ktMRa	ktVSI.sub	ktVSCBindu	ktMRa
-ktSSRa	ktVSI.sub	ktVSCBindu	ktSSRa
-ktSRa	ktVSI.sub	ktVSCBindu	ktSRa
-ktBHRa	ktVSI.sub	ktVSCBindu	ktBHRa
-ktJRa	ktVSI.sub	ktVSCBindu	ktJRa
-ktBHYa	ktVSI.sub	ktVSCBindu	ktBHYa
-ktNYa.half	ktVSI.sub	ktVSCBindu	ktNYa.half
-ktKSa	ktVSI.sub	ktVSCBindu	ktKSa
-ktTRa	ktVSI.sub	ktVSCBindu	ktTRa
-ktVRa	ktVSI.sub	ktVSCBindu	ktVRa
-ktNGa.half	ktVSI.sub	ktVSCBindu	ktNGa.half
-ktCHa.half	ktVSI.sub	ktVSCBindu	ktCHa.half
-ktJHa.half	ktVSI.sub	ktVSCBindu	ktJHa.half
-ktTTa.half	ktVSI.sub	ktVSCBindu	ktTTa.half
-ktTTHa.half	ktVSI.sub	ktVSCBindu	ktTTHa.half
-ktDDa.half	ktVSI.sub	ktVSCBindu	ktDDa.half
-ktDDDHa.half	ktVSI.sub	ktVSCBindu	ktDDDHa.half
-ktDDHa.half	ktVSI.sub	ktVSCBindu	ktDDHa.half
-ktRHa.half	ktVSI.sub	ktVSCBindu	ktRHa.half
-ktDa.half	ktVSI.sub	ktVSCBindu	ktDa.half
-ktRa.half	ktVSI.sub	ktVSCBindu	ktRa.half
-ktLa.half	ktVSI.sub	ktVSCBindu	ktLa.half
-ktHa.half	ktVSI.sub	ktVSCBindu	ktHa.half
-
-lookup end
-
-
-lookup	21	multiple
-
-RightToLeft	no
-IgnoreBaseGlyphs	no
-IgnoreLigatures	no
-IgnoreMarks	yes
-
-ktKa	ktVSI.sub	ktRaAnusvara	ktKa
-ktKHa	ktVSI.sub	ktRaAnusvara	ktKHa
-ktGa	ktVSI.sub	ktRaAnusvara	ktGa
-ktGHa	ktVSI.sub	ktRaAnusvara	ktGHa
-ktNGa	ktVSI.sub	ktRaAnusvara	ktNGa
-ktCa	ktVSI.sub	ktRaAnusvara	ktCa
-ktCHa	ktVSI.sub	ktRaAnusvara	ktCHa
-ktJa	ktVSI.sub	ktRaAnusvara	ktJa
-ktJHa	ktVSI.sub	ktRaAnusvara	ktJHa
-ktNYa	ktVSI.sub	ktRaAnusvara	ktNYa
-ktTTa	ktVSI.sub	ktRaAnusvara	ktTTa
-ktTTHa	ktVSI.sub	ktRaAnusvara	ktTTHa
-ktDDa	ktVSI.sub	ktRaAnusvara	ktDDa
-ktDDDHa	ktVSI.sub	ktRaAnusvara	ktDDDHa
-ktDDHa	ktVSI.sub	ktRaAnusvara	ktDDHa
-ktRHa	ktVSI.sub	ktRaAnusvara	ktRHa
-ktNNa	ktVSI.sub	ktRaAnusvara	ktNNa
-ktTa	ktVSI.sub	ktRaAnusvara	ktTa
-ktTHa	ktVSI.sub	ktRaAnusvara	ktTHa
-ktDa	ktVSI.sub	ktRaAnusvara	ktDa
-ktDHa	ktVSI.sub	ktRaAnusvara	ktDHa
-ktNa	ktVSI.sub	ktRaAnusvara	ktNa
-ktPa	ktVSI.sub	ktRaAnusvara	ktPa
-ktPHa	ktVSI.sub	ktRaAnusvara	ktPHa
-ktBa	ktVSI.sub	ktRaAnusvara	ktBa
-ktBHa	ktVSI.sub	ktRaAnusvara	ktBHa
-ktMa	ktVSI.sub	ktRaAnusvara	ktMa
-ktYa	ktVSI.sub	ktRaAnusvara	ktYa
-ktRa	ktVSI.sub	ktRaAnusvara	ktRa
-ktLa	ktVSI.sub	ktRaAnusvara	ktLa
-ktVa	ktVSI.sub	ktRaAnusvara	ktVa
-ktSHa	ktVSI.sub	ktRaAnusvara	ktSHa
-ktSSa	ktVSI.sub	ktRaAnusvara	ktSSa
-ktSa	ktVSI.sub	ktRaAnusvara	ktSa
-ktHa	ktVSI.sub	ktRaAnusvara	ktHa
-ktPTa	ktVSI.sub	ktRaAnusvara	ktPTa
-ktKKa	ktVSI.sub	ktRaAnusvara	ktKKa
-ktPRa	ktVSI.sub	ktRaAnusvara	ktPRa
-ktGa.half	ktVSI.sub	ktRaAnusvara	ktGa.half
-ktKa.half	ktVSI.sub	ktRaAnusvara	ktKa.half
-ktKHa.half	ktVSI.sub	ktRaAnusvara	ktKHa.half
-ktGHa.half	ktVSI.sub	ktRaAnusvara	ktGHa.half
-ktCa.half	ktVSI.sub	ktRaAnusvara	ktCa.half
-ktKMa	ktVSI.sub	ktRaAnusvara	ktKMa
-ktKYa	ktVSI.sub	ktRaAnusvara	ktKYa
-ktKRa	ktVSI.sub	ktRaAnusvara	ktKRa
-ktGRa	ktVSI.sub	ktRaAnusvara	ktGRa
-ktJa.half	ktVSI.sub	ktRaAnusvara	ktJa.half
-ktNNa.half	ktVSI.sub	ktRaAnusvara	ktNNa.half
-ktTa.half	ktVSI.sub	ktRaAnusvara	ktTa.half
-ktTHa.half	ktVSI.sub	ktRaAnusvara	ktTHa.half
-ktDHa.half	ktVSI.sub	ktRaAnusvara	ktDHa.half
-ktNa.half	ktVSI.sub	ktRaAnusvara	ktNa.half
-ktPa.half	ktVSI.sub	ktRaAnusvara	ktPa.half
-ktPHa.half	ktVSI.sub	ktRaAnusvara	ktPHa.half
-ktBa.half	ktVSI.sub	ktRaAnusvara	ktBa.half
-ktBHa.half	ktVSI.sub	ktRaAnusvara	ktBHa.half
-ktMa.half	ktVSI.sub	ktRaAnusvara	ktMa.half
-ktYa.half	ktVSI.sub	ktRaAnusvara	ktYa.half
-ktVa.half	ktVSI.sub	ktRaAnusvara	ktVa.half
-ktSHa.half	ktVSI.sub	ktRaAnusvara	ktSHa.half
-ktSSa.half	ktVSI.sub	ktRaAnusvara	ktSSa.half
-ktSa.half	ktVSI.sub	ktRaAnusvara	ktSa.half
-ktTTRa	ktVSI.sub	ktRaAnusvara	ktTTRa
-ktKTHa	ktVSI.sub	ktRaAnusvara	ktKTHa
-ktKHRa	ktVSI.sub	ktRaAnusvara	ktKHRa
-ktGHRa	ktVSI.sub	ktRaAnusvara	ktGHRa
-ktCRa	ktVSI.sub	ktRaAnusvara	ktCRa
-ktTHRa	ktVSI.sub	ktRaAnusvara	ktTHRa
-ktDHRa	ktVSI.sub	ktRaAnusvara	ktDHRa
-ktBRa	ktVSI.sub	ktRaAnusvara	ktBRa
-ktMRa	ktVSI.sub	ktRaAnusvara	ktMRa
-ktSSRa	ktVSI.sub	ktRaAnusvara	ktSSRa
-ktSRa	ktVSI.sub	ktRaAnusvara	ktSRa
-ktBHRa	ktVSI.sub	ktRaAnusvara	ktBHRa
-ktJRa	ktVSI.sub	ktRaAnusvara	ktJRa
-ktBHYa	ktVSI.sub	ktRaAnusvara	ktBHYa
-ktNYa.half	ktVSI.sub	ktRaAnusvara	ktNYa.half
-ktKSa	ktVSI.sub	ktRaAnusvara	ktKSa
-ktTRa	ktVSI.sub	ktRaAnusvara	ktTRa
-ktVRa	ktVSI.sub	ktRaAnusvara	ktVRa
-ktNGa.half	ktVSI.sub	ktRaAnusvara	ktNGa.half
-ktCHa.half	ktVSI.sub	ktRaAnusvara	ktCHa.half
-ktJHa.half	ktVSI.sub	ktRaAnusvara	ktJHa.half
-ktTTa.half	ktVSI.sub	ktRaAnusvara	ktTTa.half
-ktTTHa.half	ktVSI.sub	ktRaAnusvara	ktTTHa.half
-ktDDa.half	ktVSI.sub	ktRaAnusvara	ktDDa.half
-ktDDDHa.half	ktVSI.sub	ktRaAnusvara	ktDDDHa.half
-ktDDHa.half	ktVSI.sub	ktRaAnusvara	ktDDHa.half
-ktRHa.half	ktVSI.sub	ktRaAnusvara	ktRHa.half
-ktDa.half	ktVSI.sub	ktRaAnusvara	ktDa.half
-ktRa.half	ktVSI.sub	ktRaAnusvara	ktRa.half
-ktLa.half	ktVSI.sub	ktRaAnusvara	ktLa.half
-ktHa.half	ktVSI.sub	ktRaAnusvara	ktHa.half
-
-lookup end
-
-
-lookup	22	multiple
-
-RightToLeft	no
-IgnoreBaseGlyphs	no
-IgnoreLigatures	no
-IgnoreMarks	yes
-
-ktKa	ktVSI.sub	ktRaCandrabindu	ktKa
-ktKHa	ktVSI.sub	ktRaCandrabindu	ktKHa
-ktGa	ktVSI.sub	ktRaCandrabindu	ktGa
-ktGHa	ktVSI.sub	ktRaCandrabindu	ktGHa
-ktNGa	ktVSI.sub	ktRaCandrabindu	ktNGa
-ktCa	ktVSI.sub	ktRaCandrabindu	ktCa
-ktCHa	ktVSI.sub	ktRaCandrabindu	ktCHa
-ktJa	ktVSI.sub	ktRaCandrabindu	ktJa
-ktJHa	ktVSI.sub	ktRaCandrabindu	ktJHa
-ktNYa	ktVSI.sub	ktRaCandrabindu	ktNYa
-ktTTa	ktVSI.sub	ktRaCandrabindu	ktTTa
-ktTTHa	ktVSI.sub	ktRaCandrabindu	ktTTHa
-ktDDa	ktVSI.sub	ktRaCandrabindu	ktDDa
-ktDDDHa	ktVSI.sub	ktRaCandrabindu	ktDDDHa
-ktDDHa	ktVSI.sub	ktRaCandrabindu	ktDDHa
-ktRHa	ktVSI.sub	ktRaCandrabindu	ktRHa
-ktNNa	ktVSI.sub	ktRaCandrabindu	ktNNa
-ktTa	ktVSI.sub	ktRaCandrabindu	ktTa
-ktTHa	ktVSI.sub	ktRaCandrabindu	ktTHa
-ktDa	ktVSI.sub	ktRaCandrabindu	ktDa
-ktDHa	ktVSI.sub	ktRaCandrabindu	ktDHa
-ktNa	ktVSI.sub	ktRaCandrabindu	ktNa
-ktPa	ktVSI.sub	ktRaCandrabindu	ktPa
-ktPHa	ktVSI.sub	ktRaCandrabindu	ktPHa
-ktBa	ktVSI.sub	ktRaCandrabindu	ktBa
-ktBHa	ktVSI.sub	ktRaCandrabindu	ktBHa
-ktMa	ktVSI.sub	ktRaCandrabindu	ktMa
-ktYa	ktVSI.sub	ktRaCandrabindu	ktYa
-ktRa	ktVSI.sub	ktRaCandrabindu	ktRa
-ktLa	ktVSI.sub	ktRaCandrabindu	ktLa
-ktVa	ktVSI.sub	ktRaCandrabindu	ktVa
-ktSHa	ktVSI.sub	ktRaCandrabindu	ktSHa
-ktSSa	ktVSI.sub	ktRaCandrabindu	ktSSa
-ktSa	ktVSI.sub	ktRaCandrabindu	ktSa
-ktHa	ktVSI.sub	ktRaCandrabindu	ktHa
-ktPTa	ktVSI.sub	ktRaCandrabindu	ktPTa
-ktKKa	ktVSI.sub	ktRaCandrabindu	ktKKa
-ktPRa	ktVSI.sub	ktRaCandrabindu	ktPRa
-ktGa.half	ktVSI.sub	ktRaCandrabindu	ktGa.half
-ktKa.half	ktVSI.sub	ktRaCandrabindu	ktKa.half
-ktKHa.half	ktVSI.sub	ktRaCandrabindu	ktKHa.half
-ktGHa.half	ktVSI.sub	ktRaCandrabindu	ktGHa.half
-ktCa.half	ktVSI.sub	ktRaCandrabindu	ktCa.half
-ktKMa	ktVSI.sub	ktRaCandrabindu	ktKMa
-ktKYa	ktVSI.sub	ktRaCandrabindu	ktKYa
-ktKRa	ktVSI.sub	ktRaCandrabindu	ktKRa
-ktGRa	ktVSI.sub	ktRaCandrabindu	ktGRa
-ktJa.half	ktVSI.sub	ktRaCandrabindu	ktJa.half
-ktNNa.half	ktVSI.sub	ktRaCandrabindu	ktNNa.half
-ktTa.half	ktVSI.sub	ktRaCandrabindu	ktTa.half
-ktTHa.half	ktVSI.sub	ktRaCandrabindu	ktTHa.half
-ktDHa.half	ktVSI.sub	ktRaCandrabindu	ktDHa.half
-ktNa.half	ktVSI.sub	ktRaCandrabindu	ktNa.half
-ktPa.half	ktVSI.sub	ktRaCandrabindu	ktPa.half
-ktPHa.half	ktVSI.sub	ktRaCandrabindu	ktPHa.half
-ktBa.half	ktVSI.sub	ktRaCandrabindu	ktBa.half
-ktBHa.half	ktVSI.sub	ktRaCandrabindu	ktBHa.half
-ktMa.half	ktVSI.sub	ktRaCandrabindu	ktMa.half
-ktYa.half	ktVSI.sub	ktRaCandrabindu	ktYa.half
-ktVa.half	ktVSI.sub	ktRaCandrabindu	ktVa.half
-ktSHa.half	ktVSI.sub	ktRaCandrabindu	ktSHa.half
-ktSSa.half	ktVSI.sub	ktRaCandrabindu	ktSSa.half
-ktSa.half	ktVSI.sub	ktRaCandrabindu	ktSa.half
-ktTTRa	ktVSI.sub	ktRaCandrabindu	ktTTRa
-ktKTHa	ktVSI.sub	ktRaCandrabindu	ktKTHa
-ktKHRa	ktVSI.sub	ktRaCandrabindu	ktKHRa
-ktGHRa	ktVSI.sub	ktRaCandrabindu	ktGHRa
-ktCRa	ktVSI.sub	ktRaCandrabindu	ktCRa
-ktTHRa	ktVSI.sub	ktRaCandrabindu	ktTHRa
-ktDHRa	ktVSI.sub	ktRaCandrabindu	ktDHRa
-ktBRa	ktVSI.sub	ktRaCandrabindu	ktBRa
-ktMRa	ktVSI.sub	ktRaCandrabindu	ktMRa
-ktSSRa	ktVSI.sub	ktRaCandrabindu	ktSSRa
-ktSRa	ktVSI.sub	ktRaCandrabindu	ktSRa
-ktBHRa	ktVSI.sub	ktRaCandrabindu	ktBHRa
-ktJRa	ktVSI.sub	ktRaCandrabindu	ktJRa
-ktBHYa	ktVSI.sub	ktRaCandrabindu	ktBHYa
-ktNYa.half	ktVSI.sub	ktRaCandrabindu	ktNYa.half
-ktKSa	ktVSI.sub	ktRaCandrabindu	ktKSa
-ktTRa	ktVSI.sub	ktRaCandrabindu	ktTRa
-ktVRa	ktVSI.sub	ktRaCandrabindu	ktVRa
-ktNGa.half	ktVSI.sub	ktRaCandrabindu	ktNGa.half
-ktCHa.half	ktVSI.sub	ktRaCandrabindu	ktCHa.half
-ktJHa.half	ktVSI.sub	ktRaCandrabindu	ktJHa.half
-ktTTa.half	ktVSI.sub	ktRaCandrabindu	ktTTa.half
-ktTTHa.half	ktVSI.sub	ktRaCandrabindu	ktTTHa.half
-ktDDa.half	ktVSI.sub	ktRaCandrabindu	ktDDa.half
-ktDDDHa.half	ktVSI.sub	ktRaCandrabindu	ktDDDHa.half
-ktDDHa.half	ktVSI.sub	ktRaCandrabindu	ktDDHa.half
-ktRHa.half	ktVSI.sub	ktRaCandrabindu	ktRHa.half
-ktDa.half	ktVSI.sub	ktRaCandrabindu	ktDa.half
-ktRa.half	ktVSI.sub	ktRaCandrabindu	ktRa.half
-ktLa.half	ktVSI.sub	ktRaCandrabindu	ktLa.half
-ktHa.half	ktVSI.sub	ktRaCandrabindu	ktHa.half
-
-lookup end
-
-
-lookup	23	multiple
-
-RightToLeft	no
-IgnoreBaseGlyphs	no
-IgnoreLigatures	no
-IgnoreMarks	yes
-
-ktKa	ktVSI.sub	ktRaHook	ktKa
-ktKHa	ktVSI.sub	ktRaHook	ktKHa
-ktGa	ktVSI.sub	ktRaHook	ktGa
-ktGHa	ktVSI.sub	ktRaHook	ktGHa
-ktNGa	ktVSI.sub	ktRaHook	ktNGa
-ktCa	ktVSI.sub	ktRaHook	ktCa
-ktCHa	ktVSI.sub	ktRaHook	ktCHa
-ktJa	ktVSI.sub	ktRaHook	ktJa
-ktJHa	ktVSI.sub	ktRaHook	ktJHa
-ktNYa	ktVSI.sub	ktRaHook	ktNYa
-ktTTa	ktVSI.sub	ktRaHook	ktTTa
-ktTTHa	ktVSI.sub	ktRaHook	ktTTHa
-ktDDa	ktVSI.sub	ktRaHook	ktDDa
-ktDDDHa	ktVSI.sub	ktRaHook	ktDDDHa
-ktDDHa	ktVSI.sub	ktRaHook	ktDDHa
-ktRHa	ktVSI.sub	ktRaHook	ktRHa
-ktNNa	ktVSI.sub	ktRaHook	ktNNa
-ktTa	ktVSI.sub	ktRaHook	ktTa
-ktTHa	ktVSI.sub	ktRaHook	ktTHa
-ktDa	ktVSI.sub	ktRaHook	ktDa
-ktDHa	ktVSI.sub	ktRaHook	ktDHa
-ktNa	ktVSI.sub	ktRaHook	ktNa
-ktPa	ktVSI.sub	ktRaHook	ktPa
-ktPHa	ktVSI.sub	ktRaHook	ktPHa
-ktBa	ktVSI.sub	ktRaHook	ktBa
-ktBHa	ktVSI.sub	ktRaHook	ktBHa
-ktMa	ktVSI.sub	ktRaHook	ktMa
-ktYa	ktVSI.sub	ktRaHook	ktYa
-ktRa	ktVSI.sub	ktRaHook	ktRa
-ktLa	ktVSI.sub	ktRaHook	ktLa
-ktVa	ktVSI.sub	ktRaHook	ktVa
-ktSHa	ktVSI.sub	ktRaHook	ktSHa
-ktSSa	ktVSI.sub	ktRaHook	ktSSa
-ktSa	ktVSI.sub	ktRaHook	ktSa
-ktHa	ktVSI.sub	ktRaHook	ktHa
-ktPTa	ktVSI.sub	ktRaHook	ktPTa
-ktKKa	ktVSI.sub	ktRaHook	ktKKa
-ktPRa	ktVSI.sub	ktRaHook	ktPRa
-ktGa.half	ktVSI.sub	ktRaHook	ktGa.half
-ktKa.half	ktVSI.sub	ktRaHook	ktKa.half
-ktKHa.half	ktVSI.sub	ktRaHook	ktKHa.half
-ktGHa.half	ktVSI.sub	ktRaHook	ktGHa.half
-ktCa.half	ktVSI.sub	ktRaHook	ktCa.half
-ktKMa	ktVSI.sub	ktRaHook	ktKMa
-ktKYa	ktVSI.sub	ktRaHook	ktKYa
-ktKRa	ktVSI.sub	ktRaHook	ktKRa
-ktGRa	ktVSI.sub	ktRaHook	ktGRa
-ktJa.half	ktVSI.sub	ktRaHook	ktJa.half
-ktNNa.half	ktVSI.sub	ktRaHook	ktNNa.half
-ktTa.half	ktVSI.sub	ktRaHook	ktTa.half
-ktTHa.half	ktVSI.sub	ktRaHook	ktTHa.half
-ktDHa.half	ktVSI.sub	ktRaHook	ktDHa.half
-ktNa.half	ktVSI.sub	ktRaHook	ktNa.half
-ktPa.half	ktVSI.sub	ktRaHook	ktPa.half
-ktPHa.half	ktVSI.sub	ktRaHook	ktPHa.half
-ktBa.half	ktVSI.sub	ktRaHook	ktBa.half
-ktBHa.half	ktVSI.sub	ktRaHook	ktBHa.half
-ktMa.half	ktVSI.sub	ktRaHook	ktMa.half
-ktYa.half	ktVSI.sub	ktRaHook	ktYa.half
-ktVa.half	ktVSI.sub	ktRaHook	ktVa.half
-ktSHa.half	ktVSI.sub	ktRaHook	ktSHa.half
-ktSSa.half	ktVSI.sub	ktRaHook	ktSSa.half
-ktSa.half	ktVSI.sub	ktRaHook	ktSa.half
-ktTTRa	ktVSI.sub	ktRaHook	ktTTRa
-ktKTHa	ktVSI.sub	ktRaHook	ktKTHa
-ktKHRa	ktVSI.sub	ktRaHook	ktKHRa
-ktGHRa	ktVSI.sub	ktRaHook	ktGHRa
-ktCRa	ktVSI.sub	ktRaHook	ktCRa
-ktTHRa	ktVSI.sub	ktRaHook	ktTHRa
-ktDHRa	ktVSI.sub	ktRaHook	ktDHRa
-ktBRa	ktVSI.sub	ktRaHook	ktBRa
-ktMRa	ktVSI.sub	ktRaHook	ktMRa
-ktSSRa	ktVSI.sub	ktRaHook	ktSSRa
-ktSRa	ktVSI.sub	ktRaHook	ktSRa
-ktBHRa	ktVSI.sub	ktRaHook	ktBHRa
-ktJRa	ktVSI.sub	ktRaHook	ktJRa
-ktBHYa	ktVSI.sub	ktRaHook	ktBHYa
-ktNYa.half	ktVSI.sub	ktRaHook	ktNYa.half
-ktKSa	ktVSI.sub	ktRaHook	ktKSa
-ktTRa	ktVSI.sub	ktRaHook	ktTRa
-ktVRa	ktVSI.sub	ktRaHook	ktVRa
-ktNGa.half	ktVSI.sub	ktRaHook	ktNGa.half
-ktCHa.half	ktVSI.sub	ktRaHook	ktCHa.half
-ktJHa.half	ktVSI.sub	ktRaHook	ktJHa.half
-ktTTa.half	ktVSI.sub	ktRaHook	ktTTa.half
-ktTTHa.half	ktVSI.sub	ktRaHook	ktTTHa.half
-ktDDa.half	ktVSI.sub	ktRaHook	ktDDa.half
-ktDDDHa.half	ktVSI.sub	ktRaHook	ktDDDHa.half
-ktDDHa.half	ktVSI.sub	ktRaHook	ktDDHa.half
-ktRHa.half	ktVSI.sub	ktRaHook	ktRHa.half
-ktDa.half	ktVSI.sub	ktRaHook	ktDa.half
-ktRa.half	ktVSI.sub	ktRaHook	ktRa.half
-ktLa.half	ktVSI.sub	ktRaHook	ktLa.half
-ktHa.half	ktVSI.sub	ktRaHook	ktHa.half
-
-lookup end
-
-
-lookup	24	single
-
-RightToLeft	no
-IgnoreBaseGlyphs	no
-IgnoreLigatures	no
-IgnoreMarks	no
-
-ktVSI.sub	ktVSI.alt1
+class	3, 1, 1, 2, 4	5, 25	1, 26
+class	3, 1, 1, 2, 5	5, 25	1, 27
+class	3, 1, 1, 2, 6	5, 25	1, 28
+class	3, 1, 1, 2, 7	5, 25	1, 29
+class	3, 1, 1, 2, 8	5, 25	1, 30
+class	3, 1, 2, 4	4, 25	1, 26
+class	3, 1, 2, 5	4, 25	1, 27
+class	3, 1, 2, 6	4, 25	1, 28
+class	3, 1, 2, 7	4, 25	1, 29
+class	3, 1, 2, 8	4, 25	1, 30
+class	3, 2, 4	3, 25	1, 26
+class	3, 2, 5	3, 25	1, 27
+class	3, 2, 6	3, 25	1, 28
+class	3, 2, 7	3, 25	1, 29
+class	3, 2, 8	3, 25	1, 30
 
 lookup end
 
@@ -1782,79 +1009,331 @@ IgnoreBaseGlyphs	no
 IgnoreLigatures	no
 IgnoreMarks	no
 
-ktVSI.sub	ktVSI.alt2
+ktVSCBindu	nullR
+ktVSAnusvara	nullR
+ktRaHook	nullR
+ktRaAnusvara	nullR
+ktRaCandrabindu	nullR
 
 lookup end
 
 
-lookup	26	single
+lookup	26	multiple
 
 RightToLeft	no
 IgnoreBaseGlyphs	no
 IgnoreLigatures	no
 IgnoreMarks	no
 
-ktVSI.sub	ktVSI.alt3
+ktVSI	ktVSI	ktRaHook
+ktVSII.alt	ktVSII.alt	ktRaHook
 
 lookup end
 
 
-lookup	27	single
+lookup	27	multiple
 
 RightToLeft	no
 IgnoreBaseGlyphs	no
 IgnoreLigatures	no
 IgnoreMarks	no
 
-ktVSI.sub	ktVSI.alt4
+ktVSI	ktVSI	ktRaAnusvara
 
 lookup end
 
 
-lookup	28	single
+lookup	28	multiple
 
 RightToLeft	no
 IgnoreBaseGlyphs	no
 IgnoreLigatures	no
 IgnoreMarks	no
 
-ktVSI.sub	ktVSI.alt5
+ktVSI	ktVSI	ktRaCandrabindu
 
 lookup end
 
 
-lookup	29	single
+lookup	29	multiple
 
 RightToLeft	no
 IgnoreBaseGlyphs	no
 IgnoreLigatures	no
 IgnoreMarks	no
 
-ktVSI.sub	ktVSI.alt6
+ktVSI	ktVSI	ktVSCBindu
 
 lookup end
 
 
-lookup	30	single
+lookup	30	multiple
 
 RightToLeft	no
 IgnoreBaseGlyphs	no
 IgnoreLigatures	no
 IgnoreMarks	no
 
-ktVSI.sub	ktVSI.alt7
+ktVSI	ktVSI	ktVSAnusvara
 
 lookup end
 
 
-lookup	31	single
+lookup	31	context
 
 RightToLeft	no
 IgnoreBaseGlyphs	no
 IgnoreLigatures	no
-IgnoreMarks	no
+IgnoreMarks	yes
 
-ktVSI.sub	ktVSI.alt8
+class definition begin
+ktVSI	1
+ktBHYa	2
+ktBHYa.var	2
+ktKa	4
+ktCa	4
+ktTTa	4
+ktTTHa	4
+ktTa	4
+ktDa	4
+ktPa	4
+ktBa	4
+ktYa	4
+ktRa	4
+ktVa	4
+ktSSa	4
+ktHa	4
+ktPTa	4
+ktKKa	4
+ktPRa	4
+ktKRa	4
+ktTTRa	4
+ktCRa	4
+ktBRa	4
+ktSSRa	4
+ktTRa	4
+ktVRa	4
+ktNYa.var	4
+ktYa.var	4
+ktGa	5
+ktGHa	5
+ktNGa	5
+ktJHa	5
+ktDDa	5
+ktDDDHa	5
+ktDDHa	5
+ktRHa	5
+ktTHa	5
+ktDHa	5
+ktNa	5
+ktMa	5
+ktLa	5
+ktGRa	5
+ktGHRa	5
+ktTHRa	5
+ktDHRa	5
+ktMRa	5
+ktLa.var	5
+ktJa	6
+ktNYa	6
+ktPHa	6
+ktBHa	6
+ktSHa	6
+ktSa	6
+ktSRa	6
+ktBHRa	6
+ktJRa	6
+ktKRa.var	6
+ktKa.var	6
+ktKHa	7
+ktCHa	7
+ktNNa	7
+ktKHRa	7
+ktKKa.var	8
+ktNNa.var	8
+ktPHa.var	8
+ktPHRa.var	8
+ktKYa	9
+ktKYa.varKa	9
+ktKYa.var	9
+ktKYa.varKYa	9
+ktKMa	10
+ktKTHa	10
+ktKMa.var	10
+ktKMRa	10
+ktKMRa.var	10
+ktKTHa.var	10
+ktKTHRa	10
+ktKTHRa.var	10
+ktKSa	11
+ktKSa.var	11
+ktCa.half	13
+ktTa.half	13
+ktNa.half	13
+ktPa.half	13
+ktBa.half	13
+ktYa.half	13
+ktVa.half	13
+ktSSa.half	13
+ktYa.half.var	13
+ktGa.half	14
+ktGHa.half	14
+ktJa.half	14
+ktNNa.half	14
+ktTHa.half	14
+ktDHa.half	14
+ktPHa.half	14
+ktBHa.half	14
+ktMa.half	14
+ktSHa.half	14
+ktSa.half	14
+ktNYa.half	14
+ktTTHa.half	14
+ktDa.half	14
+ktRa.half	14
+ktHa.half	14
+ktNYa.half.var	14
+ktKa.half	15
+ktKHa.half	15
+ktNGa.half	15
+ktJHa.half	15
+ktTTa.half	15
+ktDDa.half	15
+ktDDDHa.half	15
+ktDDHa.half	15
+ktRHa.half	15
+ktLa.half	15
+ktKa.half.var	15
+ktLa.half.var	15
+ktNNa.half.var	15
+ktCHa.half	17
+ktPHa.half.var	17
+class definition end
+
+class	1, 13, 13, 4	1, 36
+class	1, 13, 13, 5	1, 37
+class	1, 13, 13, 6	1, 38
+class	1, 13, 13, 7	1, 39
+class	1, 13, 13, 8	1, 40
+class	1, 13, 14, 4	1, 37
+class	1, 13, 14, 5	1, 38
+class	1, 13, 14, 6	1, 39
+class	1, 13, 14, 7	1, 40
+class	1, 13, 14, 8	1, 41
+class	1, 13, 15, 4	1, 39
+class	1, 13, 15, 5	1, 39
+class	1, 13, 15, 6	1, 40
+class	1, 13, 15, 7	1, 40
+class	1, 13, 15, 8	1, 41
+class	1, 13, 17, 4	1, 40
+class	1, 13, 17, 5	1, 41
+class	1, 13, 17, 6	1, 41
+class	1, 13, 17, 7	1, 42
+class	1, 13, 17, 8	1, 43
+class	1, 14, 13, 4	1, 37
+class	1, 14, 13, 5	1, 38
+class	1, 14, 13, 6	1, 39
+class	1, 14, 13, 7	1, 40
+class	1, 14, 13, 8	1, 41
+class	1, 14, 14, 4	1, 39
+class	1, 14, 14, 5	1, 39
+class	1, 14, 14, 6	1, 40
+class	1, 14, 14, 7	1, 41
+class	1, 14, 14, 8	1, 42
+class	1, 14, 15, 4	1, 40
+class	1, 14, 15, 5	1, 40
+class	1, 14, 15, 6	1, 41
+class	1, 14, 15, 7	1, 42
+class	1, 14, 15, 8	1, 43
+class	1, 14, 17, 4	1, 41
+class	1, 14, 17, 5	1, 41
+class	1, 14, 17, 6	1, 42
+class	1, 14, 17, 7	1, 43
+class	1, 14, 17, 8	1, 44
+class	1, 15, 13, 4	1, 39
+class	1, 15, 13, 5	1, 39
+class	1, 15, 13, 6	1, 40
+class	1, 15, 13, 7	1, 40
+class	1, 15, 13, 8	1, 41
+class	1, 15, 14, 4	1, 40
+class	1, 15, 14, 5	1, 40
+class	1, 15, 14, 6	1, 41
+class	1, 15, 14, 7	1, 42
+class	1, 15, 14, 8	1, 43
+class	1, 15, 15, 4	1, 41
+class	1, 15, 15, 5	1, 41
+class	1, 15, 15, 6	1, 41
+class	1, 15, 15, 7	1, 42
+class	1, 15, 15, 8	1, 43
+class	1, 15, 17, 4	1, 44
+class	1, 15, 17, 5	1, 44
+class	1, 15, 17, 6	1, 44
+class	1, 15, 17, 7	1, 44
+class	1, 15, 17, 8	1, 44
+class	1, 17, 13, 4	1, 40
+class	1, 17, 13, 5	1, 41
+class	1, 17, 13, 6	1, 41
+class	1, 17, 13, 7	1, 42
+class	1, 17, 13, 8	1, 43
+class	1, 17, 14, 4	1, 41
+class	1, 17, 14, 5	1, 41
+class	1, 17, 14, 6	1, 42
+class	1, 17, 14, 7	1, 43
+class	1, 17, 14, 8	1, 44
+class	1, 17, 15, 4	1, 44
+class	1, 17, 15, 5	1, 44
+class	1, 17, 15, 6	1, 44
+class	1, 17, 15, 7	1, 44
+class	1, 17, 15, 8	1, 44
+class	1, 17, 17, 4	1, 44
+class	1, 17, 17, 5	1, 44
+class	1, 17, 17, 6	1, 44
+class	1, 17, 17, 7	1, 44
+class	1, 17, 17, 8	1, 44
+class	1, 13, 4	1, 35
+class	1, 13, 5	1, 35
+class	1, 13, 6	1, 35
+class	1, 13, 7	1, 36
+class	1, 13, 8	1, 37
+class	1, 13, 2	1, 37
+class	1, 13, 9	1, 38
+class	1, 13, 10	1, 40
+class	1, 13, 11	1, 40
+class	1, 14, 4	1, 35
+class	1, 14, 5	1, 35
+class	1, 14, 6	1, 36
+class	1, 14, 7	1, 37
+class	1, 14, 8	1, 38
+class	1, 14, 2	1, 38
+class	1, 14, 9	1, 39
+class	1, 14, 10	1, 40
+class	1, 14, 11	1, 41
+class	1, 15, 4	1, 36
+class	1, 15, 5	1, 36
+class	1, 15, 6	1, 37
+class	1, 15, 7	1, 38
+class	1, 15, 8	1, 39
+class	1, 15, 2	1, 39
+class	1, 15, 9	1, 40
+class	1, 15, 10	1, 41
+class	1, 15, 11	1, 41
+class	1, 17, 4	1, 37
+class	1, 17, 5	1, 38
+class	1, 17, 6	1, 39
+class	1, 17, 7	1, 40
+class	1, 17, 8	1, 41
+class	1, 17, 2	1, 41
+class	1, 17, 9	1, 42
+class	1, 17, 10	1, 43
+class	1, 17, 11	1, 43
+class	1, 4	1, 32
+class	1, 6	1, 33
+class	1, 7	1, 34
+class	1, 8	1, 34
+class	1, 2	1, 35
+class	1, 9	1, 36
+class	1, 10	1, 36
+class	1, 11	1, 37
 
 lookup end
 
@@ -1866,7 +1345,7 @@ IgnoreBaseGlyphs	no
 IgnoreLigatures	no
 IgnoreMarks	no
 
-ktVSI.sub	ktVSI.alt9
+ktVSI	ktVSI.alt2
 
 lookup end
 
@@ -1878,7 +1357,7 @@ IgnoreBaseGlyphs	no
 IgnoreLigatures	no
 IgnoreMarks	no
 
-ktVSI.sub	ktVSI.alt10
+ktVSI	ktVSI.alt3
 
 lookup end
 
@@ -1890,7 +1369,7 @@ IgnoreBaseGlyphs	no
 IgnoreLigatures	no
 IgnoreMarks	no
 
-ktVSI.sub	ktVSI.alt11
+ktVSI	ktVSI.alt4
 
 lookup end
 
@@ -1902,7 +1381,7 @@ IgnoreBaseGlyphs	no
 IgnoreLigatures	no
 IgnoreMarks	no
 
-ktVSI.sub	ktVSI.alt12
+ktVSI	ktVSI.alt5
 
 lookup end
 
@@ -1914,7 +1393,7 @@ IgnoreBaseGlyphs	no
 IgnoreLigatures	no
 IgnoreMarks	no
 
-ktVSI.sub	ktVSI.alt13
+ktVSI	ktVSI.alt6
 
 lookup end
 
@@ -1926,7 +1405,133 @@ IgnoreBaseGlyphs	no
 IgnoreLigatures	no
 IgnoreMarks	no
 
-ktVSI.sub	ktVSI.sub3
+ktVSI	ktVSI.alt7
+
+lookup end
+
+
+lookup	38	single
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+ktVSI	ktVSI.alt8
+
+lookup end
+
+
+lookup	39	single
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+ktVSI	ktVSI.alt9
+
+lookup end
+
+
+lookup	40	single
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+ktVSI	ktVSI.alt10
+
+lookup end
+
+
+lookup	41	single
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+ktVSI	ktVSI.alt11
+
+lookup end
+
+
+lookup	42	single
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+ktVSI	ktVSI.alt12
+
+lookup end
+
+
+lookup	43	single
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+ktVSI	ktVSI.alt13
+
+lookup end
+
+
+lookup	44	single
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+ktVSI	ktVSI.alt14
+
+lookup end
+
+
+lookup	45	single
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+ktZero	ktZero.smallabv
+ktOne	ktOne.smallabv
+ktTwo	ktTwo.smallabv
+ktThree	ktThree.smallabv
+ktFour	ktFour.smallabv
+ktFive	ktFive.smallabv
+ktSix	ktSix.smallabv
+ktSeven	ktSeven.smallabv
+ktEight	ktEight.smallabv
+ktNine	ktNine.smallabv
+
+lookup end
+
+
+lookup	46	single
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+ktZero	ktZero.smallblw
+ktOne	ktOne.smallblw
+ktTwo	ktTwo.smallblw
+ktThree	ktThree.smallblw
+ktFour	ktFour.smallblw
+ktFive	ktFive.smallblw
+ktSix	ktSix.smallblw
+ktSeven	ktSeven.smallblw
+ktEight	ktEight.smallblw
+ktNine	ktNine.smallblw
 
 lookup end
 
