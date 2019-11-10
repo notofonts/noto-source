@@ -91,7 +91,8 @@ function glyphs_from_plist() {
         */NotoSansBengaliUI-MM.plist|\
         */NotoSansMalayalamUI-MM.plist|\
         */NotoSansKannadaUI-MM.plist|\
-        */NotoSansGurmukhiUI-MM.plist)
+        */NotoSansGurmukhiUI-MM.plist|\
+        */NotoSansTeluguUI-MM.plist)
             echo "${glyphs/UI/}"
             ;;
         *)
@@ -138,6 +139,12 @@ function family_from_plist() {
         */NotoSansGurmukhiUI-MM.plist)
             echo 'Noto Sans Gurmukhi UI'
             ;;
+        */NotoSansTelugu-MM.plist)
+            echo 'Noto Sans Telugu'
+            ;;
+        */NotoSansTeluguUI-MM.plist)
+            echo 'Noto Sans Telugu UI'
+            ;;
         *)
             echo ''
             ;;
@@ -147,6 +154,7 @@ function family_from_plist() {
 function should_interpolate() {
     case "$1" in
         */NotoNastaliqUrdu.plist)
+        */NotoSansJavanese-MM.plist)
             false
             ;;
         *)
