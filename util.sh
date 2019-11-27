@@ -154,6 +154,8 @@ function family_from_plist() {
 function should_interpolate() {
     case "$1" in
         */NotoNastaliqUrdu.plist)
+            false
+            ;;
         */NotoSansJavanese-MM.plist)
             false
             ;;
