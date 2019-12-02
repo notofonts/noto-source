@@ -1,6 +1,6 @@
 # Noto Sans Adlam
 
-Noto Sans Adlam is the connected version of the Adlam script. This repository contains version 3.x which is a redesign by Mark Jamra and Neil Patel (JamraPatel). The intent of version 3.x is to create a design which pairs better with Noto Latin in style. The design was reviewed by Abdulaye and Ibrahima Barry.
+Noto Sans Adlam is the connected version of the Adlam script. This repository contains version 3.x which is a redesign by Mark Jamra and Neil Patel (JamraPatel). The intent of version 3.x is to create a design which pairs better with Noto Latin in style. The design was reviewed by Abdoulaye and Ibrahima Barry.
 
 ## Build Notes
 
