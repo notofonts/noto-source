@@ -1,6 +1,6 @@
-#CHANGELOG
+# CHANGELOG
 
-##Version 3.0
+## Version 3.0
 
 New Adlam character design
 
