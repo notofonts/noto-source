@@ -9,9 +9,11 @@ Version 3.x of Noto Sans Adlam is developed to be built using fontamke and a Gly
 ### Test Font build commands
 
 fontmake -g NotoSansAdlam.glyphs
+
 fontmake -g NotoSansAdlam.glyphs -o variable
 
 ttfautohint -f adlm NotoSansAdlam-Regular.ttf NotoSansAdlam-Regular_autohint.ttf  
+
 ttfautohint -f adlm NotoSansAdlam-Bold.ttf NotoSansAdlam-Bold_autohint.ttf  
 
 ### Special Notes on Kerning
