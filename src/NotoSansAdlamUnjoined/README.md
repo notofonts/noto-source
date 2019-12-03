@@ -6,6 +6,14 @@ Noto Sans Adlam is the un-connected version of the Adlam script. This repository
 
 Version 3.x of Noto Sans Adlam is developed to be built using fontamke and a Glyphs source file. The AFDKO .fea file is included as a reference but can be generated from Glyphs. The pre-existing FontDame files are no longer required.
 
+### Test Font build commands
+
+fontmake -g NotoSansAdlamUnjoined.glyphs
+fontmake -g NotoSansAdlamUnjoined.glyphs -o variable
+
+ttfautohint -f adlm NotoSansAdlamUnjoined-Regular.ttf NotoSansAdlamUnjoined-Regular_autohint.ttf  
+ttfautohint -f adlm NotoSansAdlamUnjoined-Bold.ttf NotoSansAdlamUnjoined-Bold_autohint.ttf  
+
 ### Special Notes on Kerning
 
 It seems every application used for testing treats the Adlam numerals like they are Arabic numerals, in that it expects them to run left-to-right. As a result, any kerning that is applied to the numerals gets flipped to the opposite side. Therefore, a few kerning pairs have been left out of the numerals because they would look bad in most applications.
