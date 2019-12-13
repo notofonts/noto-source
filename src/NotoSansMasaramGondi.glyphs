@@ -84,6 +84,14 @@ Six.MGondi,
 Seven.MGondi,
 Eight.MGondi,
 Nine.MGondi,
+KaNukta.MGondi,
+KhaNukta.MGondi,
+GaNukta.MGondi,
+JaNukta.MGondi,
+DdaNukta.MGondi,
+DdhaNukta.MGondi,
+PhaNukta.MGondi,
+YaNukta.MGondi,
 KaHalf.MGondi,
 KhaHalf.MGondi,
 GaHalf.MGondi,
@@ -121,11 +129,18 @@ LlaHalf.MGondi,
 KssaHalf.MGondi,
 JnyaHalf.MGondi,
 TraHalf.MGondi,
+KaHalfNukta.MGondi,
+KhaHalfNukta.MGondi,
+GaHalfNukta.MGondi,
+JaHalfNukta.MGondi,
+DdaHalfNukta.MGondi,
+DdhaHalfNukta.MGondi,
+PhaHalfNukta.MGondi,
+YaHalfNukta.MGondi,
 MatraAaChandra.MGondi,
 Anusvara.alt.MGondi,
 Visarga.alt.MGondi,
 Repha.alt.MGondi,
-Nukta.alt.MGondi,
 MatraAaAnusvara.MGondi,
 MatraIAnusvara.MGondi,
 MatraIiAnusvara.MGondi,
@@ -138,6 +153,8 @@ MatraAuAnusvara.MGondi,
 MatraAaVisarga.MGondi,
 MatraOVisarga.MGondi,
 MatraAuVisarga.MGondi,
+MatraAaRepha.MGondi,
+MatraAaRephaAnusvara.MGondi,
 Tra.alt.MGondi,
 TraHalf.alt.MGondi,
 One.alt.MGondi,
@@ -146,6 +163,9 @@ Five.alt.MGondi,
 Six.alt.MGondi,
 Danda.MGondi,
 DoubleDanda.MGondi,
+MatraVocalicRR.MGondi,
+MatraVocalicL.MGondi,
+MatraVocalicLL.MGondi,
 period.MGondi,
 comma.MGondi,
 colon.MGondi,
@@ -198,11 +218,11 @@ value = GOOG;
 },
 {
 name = trademark;
-value = "Noto is a trademark of Google Inc.";
+value = "Noto is a trademark of Google LLC";
 },
 {
 name = versionString;
-value = "Version 1.000";
+value = "Version 1.002";
 }
 );
 date = "2019-10-20 12:15:48 +0000";
@@ -215,21 +235,21 @@ code = "languagesystem DFLT dflt;\012languagesystem gonm dflt;";
 name = Languagesystems;
 },
 {
-code = "lookup Reorder_Anusvara1 {\012sub MatraAa.MGondi by Anusvara.MGondi;\012sub Anusvara.MGondi by MatraAa.MGondi;\012}Reorder_Anusvara1;\012\012lookup Reorder_Anusvara2 {\012sub MatraI.MGondi by Anusvara.MGondi;\012sub Anusvara.MGondi by MatraI.MGondi;\012}Reorder_Anusvara2;\012\012lookup Reorder_Anusvara3 {\012sub MatraIi.MGondi by Anusvara.MGondi;\012sub Anusvara.MGondi by MatraIi.MGondi;\012}Reorder_Anusvara3;\012\012lookup Reorder_Anusvara4 {\012sub MatraU.MGondi by Anusvara.MGondi;\012sub Anusvara.MGondi by MatraU.MGondi;\012}Reorder_Anusvara4;\012\012lookup Reorder_Anusvara5 {\012sub MatraUu.MGondi by Anusvara.MGondi;\012sub Anusvara.MGondi by MatraUu.MGondi;\012}Reorder_Anusvara5;\012\012lookup Reorder_Anusvara6 {\012sub MatraE.MGondi by Anusvara.MGondi;\012sub Anusvara.MGondi by MatraE.MGondi;\012}Reorder_Anusvara6;\012\012lookup Reorder_Anusvara7 {\012sub MatraAi.MGondi by Anusvara.MGondi;\012sub Anusvara.MGondi by MatraAi.MGondi;\012}Reorder_Anusvara7;\012\012lookup Reorder_Anusvara8 {\012sub MatraO.MGondi by Anusvara.MGondi;\012sub Anusvara.MGondi by MatraO.MGondi;\012}Reorder_Anusvara8;\012\012lookup Reorder_Anusvara9 {\012sub MatraAu.MGondi by Anusvara.MGondi;\012sub Anusvara.MGondi by MatraAu.MGondi;\012}Reorder_Anusvara9;\012\012lookup Reorder_Anusvara10 {\012sub MatraVocalicR.MGondi by Anusvara.MGondi;\012sub Anusvara.MGondi by MatraVocalicR.MGondi;\012}Reorder_Anusvara10;\012\012lookup Reorder_Anusvara11 {\012sub Rakara.MGondi by Anusvara.MGondi;\012sub Anusvara.MGondi by Rakara.MGondi;\012}Reorder_Anusvara11;\012";
+code = "lookup Reorder_Anusvara1 {\012sub MatraAa.MGondi by Anusvara.MGondi;\012sub Anusvara.MGondi by MatraAa.MGondi;\012}Reorder_Anusvara1;\012\012lookup Reorder_Anusvara2 {\012sub MatraI.MGondi by Anusvara.MGondi;\012sub Anusvara.MGondi by MatraI.MGondi;\012}Reorder_Anusvara2;\012\012lookup Reorder_Anusvara3 {\012sub MatraIi.MGondi by Anusvara.MGondi;\012sub Anusvara.MGondi by MatraIi.MGondi;\012}Reorder_Anusvara3;\012\012lookup Reorder_Anusvara4 {\012sub MatraU.MGondi by Anusvara.MGondi;\012sub Anusvara.MGondi by MatraU.MGondi;\012}Reorder_Anusvara4;\012\012lookup Reorder_Anusvara5 {\012sub MatraUu.MGondi by Anusvara.MGondi;\012sub Anusvara.MGondi by MatraUu.MGondi;\012}Reorder_Anusvara5;\012\012lookup Reorder_Anusvara6 {\012sub MatraE.MGondi by Anusvara.MGondi;\012sub Anusvara.MGondi by MatraE.MGondi;\012}Reorder_Anusvara6;\012\012lookup Reorder_Anusvara7 {\012sub MatraAi.MGondi by Anusvara.MGondi;\012sub Anusvara.MGondi by MatraAi.MGondi;\012}Reorder_Anusvara7;\012\012lookup Reorder_Anusvara8 {\012sub MatraO.MGondi by Anusvara.MGondi;\012sub Anusvara.MGondi by MatraO.MGondi;\012}Reorder_Anusvara8;\012\012lookup Reorder_Anusvara9 {\012sub MatraAu.MGondi by Anusvara.MGondi;\012sub Anusvara.MGondi by MatraAu.MGondi;\012}Reorder_Anusvara9;\012\012lookup Reorder_Anusvara10 {\012sub MatraVocalicR.MGondi by Anusvara.MGondi;\012sub Anusvara.MGondi by MatraVocalicR.MGondi;\012}Reorder_Anusvara10;\012\012lookup Reorder_Anusvara11 {\012sub Rakara.MGondi by Anusvara.MGondi;\012sub Anusvara.MGondi by Rakara.MGondi;\012}Reorder_Anusvara11;\012\012lookup Reorder_Anusvara12 {\012sub MatraAaRepha.MGondi by Anusvara.MGondi;\012sub Anusvara.MGondi by MatraAaRepha.MGondi;\012}Reorder_Anusvara12;\012";
 name = Reorder_Anuswara;
 },
 {
-code = "lookup Reorder_Repha1 {\012sub Repha.MGondi by MatraAa.MGondi;\012sub MatraAa.MGondi by Repha.MGondi;\012} Reorder_Repha1;\012\012lookup Reorder_Repha1a {\012sub Repha.MGondi by MatraAaAnusvara.MGondi;\012sub MatraAaAnusvara.MGondi by Repha.MGondi;\012} Reorder_Repha1a;\012\012lookup Reorder_Repha1b {\012sub Repha.MGondi by MatraAaVisarga.MGondi;\012sub MatraAaVisarga.MGondi by Repha.MGondi;\012} Reorder_Repha1b;\012\012lookup Reorder_Repha2 {\012sub Repha.MGondi by MatraI.MGondi;\012sub MatraI.MGondi by Repha.MGondi;\012} Reorder_Repha2;\012\012lookup Reorder_Repha2a {\012sub Repha.MGondi by MatraIAnusvara.MGondi;\012sub MatraIAnusvara.MGondi by Repha.MGondi;\012} Reorder_Repha2a;\012\012lookup Reorder_Repha3 {\012sub Repha.MGondi by MatraIi.MGondi;\012sub MatraIi.MGondi by Repha.MGondi;\012} Reorder_Repha3;\012\012lookup Reorder_Repha3a {\012sub Repha.MGondi by MatraIiAnusvara.MGondi;\012sub MatraIiAnusvara.MGondi by Repha.MGondi;\012} Reorder_Repha3a;\012\012lookup Reorder_Repha4 {\012sub Repha.MGondi by MatraU.MGondi;\012sub MatraU.MGondi by Repha.MGondi;\012} Reorder_Repha4;\012\012lookup Reorder_Repha4a {\012sub Repha.MGondi by MatraUAnusvara.MGondi;\012sub MatraUAnusvara.MGondi by Repha.MGondi;\012} Reorder_Repha4a;\012\012lookup Reorder_Repha5 {\012sub Repha.MGondi by MatraUu.MGondi;\012sub MatraUu.MGondi by Repha.MGondi;\012} Reorder_Repha5;\012\012lookup Reorder_Repha5a {\012sub Repha.MGondi by MatraUuAnusvara.MGondi;\012sub MatraUuAnusvara.MGondi by Repha.MGondi;\012} Reorder_Repha5a;\012\012lookup Reorder_Repha6 {\012sub Repha.MGondi by MatraE.MGondi;\012sub MatraE.MGondi by Repha.MGondi;\012} Reorder_Repha6;\012\012lookup Reorder_Repha6a {\012sub Repha.MGondi by MatraEAnusvara.MGondi;\012sub MatraEAnusvara.MGondi by Repha.MGondi;\012} Reorder_Repha6a;\012\012lookup Reorder_Repha7 {\012sub Repha.MGondi by MatraAi.MGondi;\012sub MatraAi.MGondi by Repha.MGondi;\012} Reorder_Repha7;\012\012lookup Reorder_Repha7a {\012sub Repha.MGondi by MatraAiAnusvara.MGondi;\012sub MatraAiAnusvara.MGondi by Repha.MGondi;\012} Reorder_Repha7a;\012\012lookup Reorder_Repha8 {\012sub Repha.MGondi by MatraO.MGondi;\012sub MatraO.MGondi by Repha.MGondi;\012} Reorder_Repha8;\012\012lookup Reorder_Repha8a {\012sub Repha.MGondi by MatraOAnusvara.MGondi;\012sub MatraOAnusvara.MGondi by Repha.MGondi;\012} Reorder_Repha8a;\012\012lookup Reorder_Repha8b {\012sub Repha.MGondi by MatraOVisarga.MGondi;\012sub MatraOVisarga.MGondi by Repha.MGondi;\012} Reorder_Repha8b;\012\012lookup Reorder_Repha9 {\012sub Repha.MGondi by MatraAu.MGondi;\012sub MatraAu.MGondi by Repha.MGondi;\012} Reorder_Repha9;\012\012lookup Reorder_Repha9a {\012sub Repha.MGondi by MatraAuAnusvara.MGondi;\012sub MatraAuAnusvara.MGondi by Repha.MGondi;\012} Reorder_Repha9a;\012\012lookup Reorder_Repha9b {\012sub Repha.MGondi by MatraAuVisarga.MGondi;\012sub MatraAuVisarga.MGondi by Repha.MGondi;\012} Reorder_Repha9b;\012\012lookup Reorder_Repha10 {\012sub Repha.MGondi by Anusvara.MGondi;\012sub Anusvara.MGondi by Repha.MGondi;\012} Reorder_Repha10;\012\012lookup Reorder_Repha11 {\012sub Repha.MGondi by Rakara.MGondi;\012sub Rakara.MGondi by Repha.MGondi;\012} Reorder_Repha11;";
+code = "lookup Reorder_Repha1 {\012sub Repha.MGondi by MatraAa.MGondi;\012sub MatraAa.MGondi by Repha.MGondi;\012} Reorder_Repha1;\012\012lookup Reorder_Repha1a {\012sub Repha.MGondi by MatraAaAnusvara.MGondi;\012sub MatraAaAnusvara.MGondi by Repha.MGondi;\012} Reorder_Repha1a;\012\012lookup Reorder_Repha2 {\012sub Repha.MGondi by MatraI.MGondi;\012sub MatraI.MGondi by Repha.MGondi;\012} Reorder_Repha2;\012\012lookup Reorder_Repha2a {\012sub Repha.MGondi by MatraIAnusvara.MGondi;\012sub MatraIAnusvara.MGondi by Repha.MGondi;\012} Reorder_Repha2a;\012\012lookup Reorder_Repha3 {\012sub Repha.MGondi by MatraIi.MGondi;\012sub MatraIi.MGondi by Repha.MGondi;\012} Reorder_Repha3;\012\012lookup Reorder_Repha3a {\012sub Repha.MGondi by MatraIiAnusvara.MGondi;\012sub MatraIiAnusvara.MGondi by Repha.MGondi;\012} Reorder_Repha3a;\012\012lookup Reorder_Repha4 {\012sub Repha.MGondi by MatraU.MGondi;\012sub MatraU.MGondi by Repha.MGondi;\012} Reorder_Repha4;\012\012lookup Reorder_Repha4a {\012sub Repha.MGondi by MatraUAnusvara.MGondi;\012sub MatraUAnusvara.MGondi by Repha.MGondi;\012} Reorder_Repha4a;\012\012lookup Reorder_Repha5 {\012sub Repha.MGondi by MatraUu.MGondi;\012sub MatraUu.MGondi by Repha.MGondi;\012} Reorder_Repha5;\012\012lookup Reorder_Repha5a {\012sub Repha.MGondi by MatraUuAnusvara.MGondi;\012sub MatraUuAnusvara.MGondi by Repha.MGondi;\012} Reorder_Repha5a;\012\012lookup Reorder_Repha6 {\012sub Repha.MGondi by MatraE.MGondi;\012sub MatraE.MGondi by Repha.MGondi;\012} Reorder_Repha6;\012\012lookup Reorder_Repha6a {\012sub Repha.MGondi by MatraEAnusvara.MGondi;\012sub MatraEAnusvara.MGondi by Repha.MGondi;\012} Reorder_Repha6a;\012\012lookup Reorder_Repha7 {\012sub Repha.MGondi by MatraAi.MGondi;\012sub MatraAi.MGondi by Repha.MGondi;\012} Reorder_Repha7;\012\012lookup Reorder_Repha7a {\012sub Repha.MGondi by MatraAiAnusvara.MGondi;\012sub MatraAiAnusvara.MGondi by Repha.MGondi;\012} Reorder_Repha7a;\012\012lookup Reorder_Repha8 {\012sub Repha.MGondi by MatraO.MGondi;\012sub MatraO.MGondi by Repha.MGondi;\012} Reorder_Repha8;\012\012lookup Reorder_Repha8a {\012sub Repha.MGondi by MatraOAnusvara.MGondi;\012sub MatraOAnusvara.MGondi by Repha.MGondi;\012} Reorder_Repha8a;\012\012lookup Reorder_Repha8b {\012sub Repha.MGondi by MatraOVisarga.MGondi;\012sub MatraOVisarga.MGondi by Repha.MGondi;\012} Reorder_Repha8b;\012\012lookup Reorder_Repha9 {\012sub Repha.MGondi by MatraAu.MGondi;\012sub MatraAu.MGondi by Repha.MGondi;\012} Reorder_Repha9;\012\012lookup Reorder_Repha9a {\012sub Repha.MGondi by MatraAuAnusvara.MGondi;\012sub MatraAuAnusvara.MGondi by Repha.MGondi;\012} Reorder_Repha9a;\012\012lookup Reorder_Repha9b {\012sub Repha.MGondi by MatraAuVisarga.MGondi;\012sub MatraAuVisarga.MGondi by Repha.MGondi;\012} Reorder_Repha9b;\012\012lookup Reorder_Repha10 {\012sub Repha.MGondi by Anusvara.MGondi;\012sub Anusvara.MGondi by Repha.MGondi;\012} Reorder_Repha10;\012\012lookup Reorder_Repha11 {\012sub Repha.MGondi by Rakara.MGondi;\012sub Rakara.MGondi by Repha.MGondi;\012} Reorder_Repha11;";
 name = Reorder_Repha;
 }
 );
 features = (
 {
-code = "lookup half {\012sub Ka.MGondi Virama.MGondi by KaHalf.MGondi;\012sub Kha.MGondi Virama.MGondi by KhaHalf.MGondi;\012sub Ga.MGondi Virama.MGondi by GaHalf.MGondi;\012sub Gha.MGondi Virama.MGondi by GhaHalf.MGondi;\012sub Nga.MGondi Virama.MGondi by NgaHalf.MGondi;\012sub Ca.MGondi Virama.MGondi by CaHalf.MGondi;\012sub Cha.MGondi Virama.MGondi by ChaHalf.MGondi;\012sub Ja.MGondi Virama.MGondi by JaHalf.MGondi;\012sub Jha.MGondi Virama.MGondi by JhaHalf.MGondi;\012sub Nya.MGondi Virama.MGondi by NyaHalf.MGondi;\012sub Tta.MGondi Virama.MGondi by TtaHalf.MGondi;\012sub Ttha.MGondi Virama.MGondi by TthaHalf.MGondi;\012sub Dda.MGondi Virama.MGondi by DdaHalf.MGondi;\012sub Ddha.MGondi Virama.MGondi by DdhaHalf.MGondi;\012sub Nna.MGondi Virama.MGondi by NnaHalf.MGondi;\012sub Ta.MGondi Virama.MGondi by TaHalf.MGondi;\012sub Tha.MGondi Virama.MGondi by ThaHalf.MGondi;\012sub Da.MGondi Virama.MGondi by DaHalf.MGondi;\012sub Dha.MGondi Virama.MGondi by DhaHalf.MGondi;\012sub Na.MGondi Virama.MGondi by NaHalf.MGondi;\012sub Pa.MGondi Virama.MGondi by PaHalf.MGondi;\012sub Pha.MGondi Virama.MGondi by PhaHalf.MGondi;\012sub Ba.MGondi Virama.MGondi by BaHalf.MGondi;\012sub Bha.MGondi Virama.MGondi by BhaHalf.MGondi;\012sub Ma.MGondi Virama.MGondi by MaHalf.MGondi;\012sub Ya.MGondi Virama.MGondi by YaHalf.MGondi;\012sub Ra.MGondi Virama.MGondi by RaHalf.MGondi;\012sub La.MGondi Virama.MGondi by LaHalf.MGondi;\012sub Va.MGondi Virama.MGondi by VaHalf.MGondi;\012sub Sha.MGondi Virama.MGondi by ShaHalf.MGondi;\012sub Ssa.MGondi Virama.MGondi by SsaHalf.MGondi;\012sub Sa.MGondi Virama.MGondi by SaHalf.MGondi;\012sub Ha.MGondi Virama.MGondi by HaHalf.MGondi;\012sub Lla.MGondi Virama.MGondi by LlaHalf.MGondi;\012sub Kssa.MGondi Virama.MGondi by KssaHalf.MGondi;\012sub Jnya.MGondi Virama.MGondi by JnyaHalf.MGondi;\012sub Tra.MGondi Virama.MGondi by TraHalf.MGondi;\012} half;\012\012lookup abvs1 {\012sub MatraAa.MGondi Chandra.MGondi by MatraAaChandra.MGondi;\012sub MatraAa.MGondi Anusvara.MGondi by MatraAaAnusvara.MGondi;\012sub MatraI.MGondi Anusvara.MGondi by MatraIAnusvara.MGondi;\012sub MatraIi.MGondi Anusvara.MGondi by MatraIiAnusvara.MGondi;\012sub MatraU.MGondi Anusvara.MGondi by MatraUAnusvara.MGondi;\012sub MatraUu.MGondi Anusvara.MGondi by MatraUuAnusvara.MGondi;\012sub MatraE.MGondi Anusvara.MGondi by MatraEAnusvara.MGondi;\012sub MatraAi.MGondi Anusvara.MGondi by MatraAiAnusvara.MGondi;\012sub MatraO.MGondi Anusvara.MGondi by MatraOAnusvara.MGondi;\012sub MatraAu.MGondi Anusvara.MGondi by MatraAuAnusvara.MGondi;\012sub MatraAa.MGondi Visarga.MGondi by MatraAaVisarga.MGondi;\012sub MatraO.MGondi Visarga.MGondi by MatraOVisarga.MGondi;\012sub MatraAu.MGondi Visarga.MGondi by MatraAuVisarga.MGondi;\012} abvs1;\012\012lookup abvs2 {\012sub MatraAa.MGondi' lookup Reorder_Anusvara1\012Anusvara.MGondi' lookup Reorder_Anusvara1 ;\012\012sub MatraI.MGondi' lookup Reorder_Anusvara2\012Anusvara.MGondi' lookup Reorder_Anusvara2 ;\012\012sub MatraIi.MGondi' lookup Reorder_Anusvara3\012Anusvara.MGondi' lookup Reorder_Anusvara3 ;\012\012sub MatraU.MGondi' lookup Reorder_Anusvara4\012Anusvara.MGondi' lookup Reorder_Anusvara4 ;\012\012sub MatraUu.MGondi' lookup Reorder_Anusvara5\012Anusvara.MGondi' lookup Reorder_Anusvara5 ;\012\012sub MatraE.MGondi' lookup Reorder_Anusvara6\012Anusvara.MGondi' lookup Reorder_Anusvara6 ;\012\012sub MatraAi.MGondi' lookup Reorder_Anusvara7\012Anusvara.MGondi' lookup Reorder_Anusvara7 ;\012\012sub MatraO.MGondi' lookup Reorder_Anusvara8\012Anusvara.MGondi' lookup Reorder_Anusvara8 ;\012\012sub MatraAu.MGondi' lookup Reorder_Anusvara9\012Anusvara.MGondi' lookup Reorder_Anusvara9 ;\012\012sub MatraVocalicR.MGondi' lookup Reorder_Anusvara10\012Anusvara.MGondi' lookup Reorder_Anusvara10 ;\012\012sub Rakara.MGondi' lookup Reorder_Anusvara11\012Anusvara.MGondi' lookup Reorder_Anusvara11 ;\012} abvs2;\012\012lookup abvs3 {\012sub Repha.MGondi' lookup Reorder_Repha1\012MatraAa.MGondi' lookup Reorder_Repha1;\012\012sub Repha.MGondi' lookup Reorder_Repha1a\012MatraAaAnusvara.MGondi' lookup Reorder_Repha1a;\012\012sub Repha.MGondi' lookup Reorder_Repha1b\012MatraAaVisarga.MGondi' lookup Reorder_Repha1b;\012\012sub Repha.MGondi' lookup Reorder_Repha2\012MatraI.MGondi' lookup Reorder_Repha2;\012\012sub Repha.MGondi' lookup Reorder_Repha2a\012MatraIAnusvara.MGondi' lookup Reorder_Repha2a;\012\012sub Repha.MGondi' lookup Reorder_Repha3\012MatraIi.MGondi' lookup Reorder_Repha3;\012\012sub Repha.MGondi' lookup Reorder_Repha3a\012MatraIiAnusvara.MGondi' lookup Reorder_Repha3a;\012\012sub Repha.MGondi' lookup Reorder_Repha4\012MatraU.MGondi' lookup Reorder_Repha4;\012\012sub Repha.MGondi' lookup Reorder_Repha4a\012MatraUAnusvara.MGondi' lookup Reorder_Repha4a;\012\012sub Repha.MGondi' lookup Reorder_Repha5\012MatraUu.MGondi' lookup Reorder_Repha5;\012\012sub Repha.MGondi' lookup Reorder_Repha5a\012MatraUuAnusvara.MGondi' lookup Reorder_Repha5a;\012\012sub Repha.MGondi' lookup Reorder_Repha6\012MatraE.MGondi' lookup Reorder_Repha6;\012\012sub Repha.MGondi' lookup Reorder_Repha6a\012MatraEAnusvara.MGondi' lookup Reorder_Repha6a;\012\012sub Repha.MGondi' lookup Reorder_Repha7\012MatraAi.MGondi' lookup Reorder_Repha7;\012\012sub Repha.MGondi' lookup Reorder_Repha7a\012MatraAiAnusvara.MGondi' lookup Reorder_Repha7a;\012\012sub Repha.MGondi' lookup Reorder_Repha8\012MatraO.MGondi' lookup Reorder_Repha8;\012\012sub Repha.MGondi' lookup Reorder_Repha8a\012MatraOAnusvara.MGondi' lookup Reorder_Repha8a;\012\012sub Repha.MGondi' lookup Reorder_Repha8b\012MatraOVisarga.MGondi' lookup Reorder_Repha8b;\012\012sub Repha.MGondi' lookup Reorder_Repha9\012MatraAu.MGondi' lookup Reorder_Repha9;\012\012sub Repha.MGondi' lookup Reorder_Repha9a\012MatraAuAnusvara.MGondi' lookup Reorder_Repha9a;\012\012sub Repha.MGondi' lookup Reorder_Repha9b\012MatraAuVisarga.MGondi' lookup Reorder_Repha9b;\012\012sub Repha.MGondi' lookup Reorder_Repha10\012Anusvara.MGondi' lookup Reorder_Repha10;\012\012sub Repha.MGondi' lookup Reorder_Repha11\012Rakara.MGondi' lookup Reorder_Repha11;\012} abvs3;\012";
+code = "lookup nukt {\012sub Ka.MGondi Nukta.MGondi by KaNukta.MGondi;\012sub Kha.MGondi Nukta.MGondi by KhaNukta.MGondi;\012sub Ga.MGondi Nukta.MGondi by GaNukta.MGondi;\012sub Ja.MGondi Nukta.MGondi by JaNukta.MGondi;\012sub Dda.MGondi Nukta.MGondi by DdaNukta.MGondi;\012sub Ddha.MGondi Nukta.MGondi by DdhaNukta.MGondi;\012sub Pha.MGondi Nukta.MGondi by PhaNukta.MGondi;\012sub Ya.MGondi Nukta.MGondi by YaNukta.MGondi;\012}nukt;\012\012lookup half {\012sub Ka.MGondi Virama.MGondi by KaHalf.MGondi;\012sub Kha.MGondi Virama.MGondi by KhaHalf.MGondi;\012sub Ga.MGondi Virama.MGondi by GaHalf.MGondi;\012sub Gha.MGondi Virama.MGondi by GhaHalf.MGondi;\012sub Nga.MGondi Virama.MGondi by NgaHalf.MGondi;\012sub Ca.MGondi Virama.MGondi by CaHalf.MGondi;\012sub Cha.MGondi Virama.MGondi by ChaHalf.MGondi;\012sub Ja.MGondi Virama.MGondi by JaHalf.MGondi;\012sub Jha.MGondi Virama.MGondi by JhaHalf.MGondi;\012sub Nya.MGondi Virama.MGondi by NyaHalf.MGondi;\012sub Tta.MGondi Virama.MGondi by TtaHalf.MGondi;\012sub Ttha.MGondi Virama.MGondi by TthaHalf.MGondi;\012sub Dda.MGondi Virama.MGondi by DdaHalf.MGondi;\012sub Ddha.MGondi Virama.MGondi by DdhaHalf.MGondi;\012sub Nna.MGondi Virama.MGondi by NnaHalf.MGondi;\012sub Ta.MGondi Virama.MGondi by TaHalf.MGondi;\012sub Tha.MGondi Virama.MGondi by ThaHalf.MGondi;\012sub Da.MGondi Virama.MGondi by DaHalf.MGondi;\012sub Dha.MGondi Virama.MGondi by DhaHalf.MGondi;\012sub Na.MGondi Virama.MGondi by NaHalf.MGondi;\012sub Pa.MGondi Virama.MGondi by PaHalf.MGondi;\012sub Pha.MGondi Virama.MGondi by PhaHalf.MGondi;\012sub Ba.MGondi Virama.MGondi by BaHalf.MGondi;\012sub Bha.MGondi Virama.MGondi by BhaHalf.MGondi;\012sub Ma.MGondi Virama.MGondi by MaHalf.MGondi;\012sub Ya.MGondi Virama.MGondi by YaHalf.MGondi;\012sub Ra.MGondi Virama.MGondi by RaHalf.MGondi;\012sub La.MGondi Virama.MGondi by LaHalf.MGondi;\012sub Va.MGondi Virama.MGondi by VaHalf.MGondi;\012sub Sha.MGondi Virama.MGondi by ShaHalf.MGondi;\012sub Ssa.MGondi Virama.MGondi by SsaHalf.MGondi;\012sub Sa.MGondi Virama.MGondi by SaHalf.MGondi;\012sub Ha.MGondi Virama.MGondi by HaHalf.MGondi;\012sub Lla.MGondi Virama.MGondi by LlaHalf.MGondi;\012sub Kssa.MGondi Virama.MGondi by KssaHalf.MGondi;\012sub Jnya.MGondi Virama.MGondi by JnyaHalf.MGondi;\012sub Tra.MGondi Virama.MGondi by TraHalf.MGondi;\012sub KaNukta.MGondi Virama.MGondi by KaHalfNukta.MGondi;\012sub KhaNukta.MGondi Virama.MGondi by KhaHalfNukta.MGondi;\012sub GaNukta.MGondi Virama.MGondi by GaHalfNukta.MGondi;\012sub JaNukta.MGondi Virama.MGondi by JaHalfNukta.MGondi;\012sub DdaNukta.MGondi Virama.MGondi by DdaHalfNukta.MGondi;\012sub DdhaNukta.MGondi Virama.MGondi by DdhaHalfNukta.MGondi;\012sub PhaNukta.MGondi Virama.MGondi by PhaHalfNukta.MGondi;\012sub YaNukta.MGondi Virama.MGondi by YaHalfNukta.MGondi;\012} half;\012\012lookup abvs1 {\012sub Repha.MGondi MatraAa.MGondi Anusvara.MGondi by MatraAaRephaAnusvara.MGondi;\012sub MatraAa.MGondi Chandra.MGondi by MatraAaChandra.MGondi;\012sub MatraAa.MGondi Anusvara.MGondi by MatraAaAnusvara.MGondi;\012sub MatraI.MGondi Anusvara.MGondi by MatraIAnusvara.MGondi;\012sub MatraIi.MGondi Anusvara.MGondi by MatraIiAnusvara.MGondi;\012sub MatraU.MGondi Anusvara.MGondi by MatraUAnusvara.MGondi;\012sub MatraUu.MGondi Anusvara.MGondi by MatraUuAnusvara.MGondi;\012sub MatraE.MGondi Anusvara.MGondi by MatraEAnusvara.MGondi;\012sub MatraAi.MGondi Anusvara.MGondi by MatraAiAnusvara.MGondi;\012sub MatraO.MGondi Anusvara.MGondi by MatraOAnusvara.MGondi;\012sub MatraAu.MGondi Anusvara.MGondi by MatraAuAnusvara.MGondi;\012sub MatraAa.MGondi Visarga.MGondi by MatraAaVisarga.MGondi;\012sub MatraO.MGondi Visarga.MGondi by MatraOVisarga.MGondi;\012sub MatraAu.MGondi Visarga.MGondi by MatraAuVisarga.MGondi;\012sub MatraAa.MGondi Repha.MGondi by MatraAaRepha.MGondi;\012sub Repha.MGondi MatraAa.MGondi by MatraAaRepha.MGondi;\012} abvs1;\012\012lookup abvs2 {\012sub MatraAa.MGondi' lookup Reorder_Anusvara1\012Anusvara.MGondi' lookup Reorder_Anusvara1 ;\012\012sub MatraI.MGondi' lookup Reorder_Anusvara2\012Anusvara.MGondi' lookup Reorder_Anusvara2 ;\012\012sub MatraIi.MGondi' lookup Reorder_Anusvara3\012Anusvara.MGondi' lookup Reorder_Anusvara3 ;\012\012sub MatraU.MGondi' lookup Reorder_Anusvara4\012Anusvara.MGondi' lookup Reorder_Anusvara4 ;\012\012sub MatraUu.MGondi' lookup Reorder_Anusvara5\012Anusvara.MGondi' lookup Reorder_Anusvara5 ;\012\012sub MatraE.MGondi' lookup Reorder_Anusvara6\012Anusvara.MGondi' lookup Reorder_Anusvara6 ;\012\012sub MatraAi.MGondi' lookup Reorder_Anusvara7\012Anusvara.MGondi' lookup Reorder_Anusvara7 ;\012\012sub MatraO.MGondi' lookup Reorder_Anusvara8\012Anusvara.MGondi' lookup Reorder_Anusvara8 ;\012\012sub MatraAu.MGondi' lookup Reorder_Anusvara9\012Anusvara.MGondi' lookup Reorder_Anusvara9 ;\012\012sub MatraVocalicR.MGondi' lookup Reorder_Anusvara10\012Anusvara.MGondi' lookup Reorder_Anusvara10 ;\012\012sub Rakara.MGondi' lookup Reorder_Anusvara11\012Anusvara.MGondi' lookup Reorder_Anusvara11 ;\012\012sub MatraAaRepha.MGondi' lookup Reorder_Anusvara12\012Anusvara.MGondi' lookup Reorder_Anusvara12 ;\012\012} abvs2;\012\012lookup abvs3 {\012sub Repha.MGondi' lookup Reorder_Repha1\012MatraAa.MGondi' lookup Reorder_Repha1;\012\012sub Repha.MGondi' lookup Reorder_Repha1a\012MatraAaAnusvara.MGondi' lookup Reorder_Repha1a;\012\012sub Repha.MGondi' lookup Reorder_Repha2\012MatraI.MGondi' lookup Reorder_Repha2;\012\012sub Repha.MGondi' lookup Reorder_Repha2a\012MatraIAnusvara.MGondi' lookup Reorder_Repha2a;\012\012sub Repha.MGondi' lookup Reorder_Repha3\012MatraIi.MGondi' lookup Reorder_Repha3;\012\012sub Repha.MGondi' lookup Reorder_Repha3a\012MatraIiAnusvara.MGondi' lookup Reorder_Repha3a;\012\012sub Repha.MGondi' lookup Reorder_Repha4\012MatraU.MGondi' lookup Reorder_Repha4;\012\012sub Repha.MGondi' lookup Reorder_Repha4a\012MatraUAnusvara.MGondi' lookup Reorder_Repha4a;\012\012sub Repha.MGondi' lookup Reorder_Repha5\012MatraUu.MGondi' lookup Reorder_Repha5;\012\012sub Repha.MGondi' lookup Reorder_Repha5a\012MatraUuAnusvara.MGondi' lookup Reorder_Repha5a;\012\012sub Repha.MGondi' lookup Reorder_Repha6\012MatraE.MGondi' lookup Reorder_Repha6;\012\012sub Repha.MGondi' lookup Reorder_Repha6a\012MatraEAnusvara.MGondi' lookup Reorder_Repha6a;\012\012sub Repha.MGondi' lookup Reorder_Repha7\012MatraAi.MGondi' lookup Reorder_Repha7;\012\012sub Repha.MGondi' lookup Reorder_Repha7a\012MatraAiAnusvara.MGondi' lookup Reorder_Repha7a;\012\012sub Repha.MGondi' lookup Reorder_Repha8\012MatraO.MGondi' lookup Reorder_Repha8;\012\012sub Repha.MGondi' lookup Reorder_Repha8a\012MatraOAnusvara.MGondi' lookup Reorder_Repha8a;\012\012sub Repha.MGondi' lookup Reorder_Repha8b\012MatraOVisarga.MGondi' lookup Reorder_Repha8b;\012\012sub Repha.MGondi' lookup Reorder_Repha9\012MatraAu.MGondi' lookup Reorder_Repha9;\012\012sub Repha.MGondi' lookup Reorder_Repha9a\012MatraAuAnusvara.MGondi' lookup Reorder_Repha9a;\012\012sub Repha.MGondi' lookup Reorder_Repha9b\012MatraAuVisarga.MGondi' lookup Reorder_Repha9b;\012\012sub Repha.MGondi' lookup Reorder_Repha10\012Anusvara.MGondi' lookup Reorder_Repha10;\012\012sub Repha.MGondi' lookup Reorder_Repha11\012Rakara.MGondi' lookup Reorder_Repha11;\012} abvs3;\012";
 name = calt;
 },
 {
-code = "lookup sso1a {\012sub Anusvara.MGondi by Anusvara.alt.MGondi;\012sub Visarga.MGondi by Visarga.alt.MGondi;\012sub Repha.MGondi by Repha.alt.MGondi;\012sub Nukta.MGondi by Nukta.alt.MGondi;\012}sso1a;\012\012lookup sso1b {\012sub MatraAaAnusvara.MGondi by Anusvara.alt.MGondi MatraAa.MGondi;\012sub MatraIAnusvara.MGondi by Anusvara.alt.MGondi MatraI.MGondi;\012sub MatraIiAnusvara.MGondi by Anusvara.alt.MGondi MatraIi.MGondi;\012sub MatraUAnusvara.MGondi by Anusvara.alt.MGondi MatraU.MGondi;\012sub MatraUuAnusvara.MGondi by Anusvara.alt.MGondi MatraUu.MGondi;\012sub MatraEAnusvara.MGondi by Anusvara.alt.MGondi MatraE.MGondi;\012sub MatraAiAnusvara.MGondi by Anusvara.alt.MGondi MatraAi.MGondi;\012sub MatraOAnusvara.MGondi by Anusvara.alt.MGondi MatraO.MGondi;\012sub MatraAuAnusvara.MGondi by Anusvara.alt.MGondi MatraAu.MGondi;\012sub MatraAaVisarga.MGondi by MatraAa.MGondi Visarga.alt.MGondi;\012sub MatraOVisarga.MGondi by MatraO.MGondi Visarga.alt.MGondi;\012sub MatraAuVisarga.MGondi by MatraAu.MGondi Visarga.alt.MGondi;\012\012}sso1b;\012";
+code = "lookup sso1a {\012sub Anusvara.MGondi by Anusvara.alt.MGondi;\012sub Visarga.MGondi by Visarga.alt.MGondi;\012sub Repha.MGondi by Repha.alt.MGondi;\012}sso1a;\012\012lookup sso1b {\012sub MatraAaAnusvara.MGondi by Anusvara.alt.MGondi MatraAa.MGondi;\012sub MatraIAnusvara.MGondi by Anusvara.alt.MGondi MatraI.MGondi;\012sub MatraIiAnusvara.MGondi by Anusvara.alt.MGondi MatraIi.MGondi;\012sub MatraUAnusvara.MGondi by Anusvara.alt.MGondi MatraU.MGondi;\012sub MatraUuAnusvara.MGondi by Anusvara.alt.MGondi MatraUu.MGondi;\012sub MatraEAnusvara.MGondi by Anusvara.alt.MGondi MatraE.MGondi;\012sub MatraAiAnusvara.MGondi by Anusvara.alt.MGondi MatraAi.MGondi;\012sub MatraOAnusvara.MGondi by Anusvara.alt.MGondi MatraO.MGondi;\012sub MatraAuAnusvara.MGondi by Anusvara.alt.MGondi MatraAu.MGondi;\012sub MatraAaVisarga.MGondi by MatraAa.MGondi Visarga.alt.MGondi;\012sub MatraOVisarga.MGondi by MatraO.MGondi Visarga.alt.MGondi;\012sub MatraAuVisarga.MGondi by MatraAu.MGondi Visarga.alt.MGondi;\012sub MatraAaRepha.MGondi by MatraAa.MGondi Repha.alt.MGondi;\012sub MatraAaRephaAnusvara.MGondi by Anusvara.alt.MGondi MatraAa.MGondi Repha.alt.MGondi;\012}sso1b;\012";
 name = ss01;
 },
 {
@@ -340,7 +360,7 @@ unicode = 000D;
 },
 {
 glyphname = space;
-lastChange = "2019-10-22 12:17:12 +0000";
+lastChange = "2019-11-23 11:05:16 +0000";
 layers = (
 {
 layerId = "55C6F8EE-B60C-49C4-8D15-2255C9205224";
@@ -351,9 +371,15 @@ unicode = 0020;
 },
 {
 glyphname = VowelA.MGondi;
-lastChange = "2019-10-22 12:17:12 +0000";
+lastChange = "2019-11-23 13:40:42 +0000";
 layers = (
 {
+anchors = (
+{
+name = top1;
+position = "{322, 698}";
+}
+);
 background = {
 paths = (
 {
@@ -421,9 +447,15 @@ category = Letter;
 },
 {
 glyphname = VowelAa.MGondi;
-lastChange = "2019-10-22 12:17:12 +0000";
+lastChange = "2019-11-23 13:40:44 +0000";
 layers = (
 {
+anchors = (
+{
+name = top1;
+position = "{322, 698}";
+}
+);
 background = {
 paths = (
 {
@@ -500,9 +532,15 @@ category = Letter;
 },
 {
 glyphname = VowelI.MGondi;
-lastChange = "2019-10-22 12:17:12 +0000";
+lastChange = "2019-11-23 13:40:50 +0000";
 layers = (
 {
+anchors = (
+{
+name = top1;
+position = "{269, 698}";
+}
+);
 background = {
 paths = (
 {
@@ -571,9 +609,15 @@ category = Letter;
 },
 {
 glyphname = VowelIi.MGondi;
-lastChange = "2019-10-22 12:17:12 +0000";
+lastChange = "2019-11-23 13:47:53 +0000";
 layers = (
 {
+anchors = (
+{
+name = top1;
+position = "{580, 698}";
+}
+);
 background = {
 paths = (
 {
@@ -641,9 +685,15 @@ category = Letter;
 },
 {
 glyphname = VowelU.MGondi;
-lastChange = "2019-10-22 12:17:12 +0000";
+lastChange = "2019-11-23 13:47:55 +0000";
 layers = (
 {
+anchors = (
+{
+name = top1;
+position = "{580, 698}";
+}
+);
 background = {
 paths = (
 {
@@ -715,9 +765,15 @@ category = Letter;
 },
 {
 glyphname = VowelUu.MGondi;
-lastChange = "2019-10-22 12:17:12 +0000";
+lastChange = "2019-11-23 13:47:58 +0000";
 layers = (
 {
+anchors = (
+{
+name = top1;
+position = "{273, 698}";
+}
+);
 background = {
 paths = (
 {
@@ -788,9 +844,15 @@ category = Letter;
 },
 {
 glyphname = VowelE.MGondi;
-lastChange = "2019-10-22 12:17:12 +0000";
+lastChange = "2019-11-23 13:48:01 +0000";
 layers = (
 {
+anchors = (
+{
+name = top1;
+position = "{320, 698}";
+}
+);
 background = {
 paths = (
 {
@@ -830,9 +892,15 @@ category = Letter;
 },
 {
 glyphname = VowelAi.MGondi;
-lastChange = "2019-10-22 12:17:12 +0000";
+lastChange = "2019-11-23 13:48:06 +0000";
 layers = (
 {
+anchors = (
+{
+name = top1;
+position = "{257, 698}";
+}
+);
 background = {
 paths = (
 {
@@ -879,9 +947,15 @@ category = Letter;
 },
 {
 glyphname = VowelO.MGondi;
-lastChange = "2019-10-22 12:17:12 +0000";
+lastChange = "2019-11-23 13:41:36 +0000";
 layers = (
 {
+anchors = (
+{
+name = top1;
+position = "{322, 698}";
+}
+);
 background = {
 paths = (
 {
@@ -966,9 +1040,15 @@ category = Letter;
 },
 {
 glyphname = VowelAu.MGondi;
-lastChange = "2019-10-22 12:17:12 +0000";
+lastChange = "2019-11-23 13:41:41 +0000";
 layers = (
 {
+anchors = (
+{
+name = top1;
+position = "{322, 698}";
+}
+);
 background = {
 paths = (
 {
@@ -1061,7 +1141,7 @@ category = Letter;
 },
 {
 glyphname = Ka.MGondi;
-lastChange = "2019-10-22 12:17:12 +0000";
+lastChange = "2019-11-22 14:56:14 +0000";
 layers = (
 {
 anchors = (
@@ -1346,7 +1426,7 @@ category = Letter;
 },
 {
 glyphname = Ga.MGondi;
-lastChange = "2019-10-22 12:17:12 +0000";
+lastChange = "2019-11-22 14:57:08 +0000";
 layers = (
 {
 anchors = (
@@ -1867,7 +1947,7 @@ category = Letter;
 },
 {
 glyphname = Ja.MGondi;
-lastChange = "2019-10-22 12:17:12 +0000";
+lastChange = "2019-11-22 14:57:53 +0000";
 layers = (
 {
 anchors = (
@@ -2432,7 +2512,7 @@ category = Letter;
 },
 {
 glyphname = Dda.MGondi;
-lastChange = "2019-10-22 12:17:12 +0000";
+lastChange = "2019-11-22 14:58:08 +0000";
 layers = (
 {
 anchors = (
@@ -2572,7 +2652,7 @@ category = Letter;
 },
 {
 glyphname = Ddha.MGondi;
-lastChange = "2019-10-22 12:17:12 +0000";
+lastChange = "2019-11-22 14:58:30 +0000";
 layers = (
 {
 anchors = (
@@ -3633,7 +3713,7 @@ category = Letter;
 },
 {
 glyphname = Pha.MGondi;
-lastChange = "2019-10-22 12:17:12 +0000";
+lastChange = "2019-11-22 14:58:44 +0000";
 layers = (
 {
 anchors = (
@@ -4008,7 +4088,7 @@ category = Letter;
 },
 {
 glyphname = Ma.MGondi;
-lastChange = "2019-10-22 12:17:12 +0000";
+lastChange = "2019-11-25 14:52:51 +0000";
 layers = (
 {
 anchors = (
@@ -4131,7 +4211,7 @@ category = Letter;
 },
 {
 glyphname = Ya.MGondi;
-lastChange = "2019-10-22 12:17:12 +0000";
+lastChange = "2019-11-22 14:58:55 +0000";
 layers = (
 {
 anchors = (
@@ -5880,7 +5960,7 @@ category = Letter;
 },
 {
 glyphname = MatraAa.MGondi;
-lastChange = "2019-10-22 12:17:12 +0000";
+lastChange = "2019-12-10 13:06:08 +0000";
 layers = (
 {
 background = {
@@ -5929,7 +6009,6 @@ nodes = (
 width = 20;
 }
 );
-leftKerningGroup = MatraAa;
 unicode = 11D31;
 category = Letter;
 },
@@ -6081,7 +6160,7 @@ category = Letter;
 },
 {
 glyphname = MatraU.MGondi;
-lastChange = "2019-10-22 12:17:12 +0000";
+lastChange = "2019-12-10 13:07:35 +0000";
 layers = (
 {
 background = {
@@ -6158,7 +6237,7 @@ category = Letter;
 },
 {
 glyphname = MatraUu.MGondi;
-lastChange = "2019-10-22 12:17:12 +0000";
+lastChange = "2019-11-25 14:37:01 +0000";
 layers = (
 {
 background = {
@@ -6235,52 +6314,14 @@ category = Letter;
 },
 {
 glyphname = MatraVocalicR.MGondi;
-lastChange = "2019-10-22 12:17:12 +0000";
+lastChange = "2019-11-23 13:39:31 +0000";
 layers = (
 {
-anchors = (
-{
-name = _top2;
-position = "{-234, 347}";
-}
-);
 background = {
 anchors = (
 {
 name = _top2;
 position = "{-234, 347}";
-}
-);
-paths = (
-{
-closed = 1;
-nodes = (
-"-170 281 LINE",
-"-170 141 LINE SMOOTH",
-"-170 57 OFFCURVE",
-"-121 6 OFFCURVE",
-"-28 6 CURVE SMOOTH",
-"60 6 OFFCURVE",
-"112 57 OFFCURVE",
-"112 141 CURVE SMOOTH",
-"112 357 LINE",
-"-316 357 LINE",
-"-316 281 LINE"
-);
-},
-{
-closed = 1;
-nodes = (
-"-82 281 LINE",
-"26 281 LINE",
-"26 141 LINE SMOOTH",
-"26 96 OFFCURVE",
-"5 77 OFFCURVE",
-"-28 77 CURVE SMOOTH",
-"-59 77 OFFCURVE",
-"-82 97 OFFCURVE",
-"-82 141 CURVE SMOOTH"
-);
 }
 );
 };
@@ -6290,14 +6331,16 @@ paths = (
 closed = 1;
 nodes = (
 "-170 281 LINE",
-"-170 141 LINE SMOOTH",
-"-170 57 OFFCURVE",
-"-121 6 OFFCURVE",
-"-28 6 CURVE SMOOTH",
-"60 6 OFFCURVE",
-"112 57 OFFCURVE",
-"112 141 CURVE SMOOTH",
-"112 357 LINE",
+"-170 131 LINE SMOOTH",
+"-170 53 OFFCURVE",
+"-124 6 OFFCURVE",
+"-38 6 CURVE SMOOTH",
+"44 6 OFFCURVE",
+"92 53 OFFCURVE",
+"92 131 CURVE SMOOTH",
+"92 281 LINE",
+"181 281 LINE",
+"181 357 LINE",
 "-316 357 LINE",
 "-316 281 LINE"
 );
@@ -6306,18 +6349,18 @@ nodes = (
 closed = 1;
 nodes = (
 "-82 281 LINE",
-"26 281 LINE",
-"26 141 LINE SMOOTH",
-"26 96 OFFCURVE",
-"5 77 OFFCURVE",
-"-28 77 CURVE SMOOTH",
-"-59 77 OFFCURVE",
-"-82 97 OFFCURVE",
-"-82 141 CURVE SMOOTH"
+"6 281 LINE",
+"6 131 LINE SMOOTH",
+"6 93 OFFCURVE",
+"-11 77 OFFCURVE",
+"-38 77 CURVE SMOOTH",
+"-69 77 OFFCURVE",
+"-82 94 OFFCURVE",
+"-82 131 CURVE SMOOTH"
 );
 }
 );
-width = 176;
+width = 201;
 }
 );
 unicode = 11D36;
@@ -6369,7 +6412,7 @@ category = Letter;
 },
 {
 glyphname = MatraAi.MGondi;
-lastChange = "2019-10-22 12:17:12 +0000";
+lastChange = "2019-11-25 14:37:07 +0000";
 layers = (
 {
 background = {
@@ -6485,7 +6528,7 @@ category = Letter;
 },
 {
 glyphname = MatraAu.MGondi;
-lastChange = "2019-10-22 12:17:12 +0000";
+lastChange = "2019-11-25 14:37:11 +0000";
 layers = (
 {
 background = {
@@ -6556,7 +6599,7 @@ category = Letter;
 },
 {
 glyphname = Anusvara.MGondi;
-lastChange = "2019-10-22 12:17:12 +0000";
+lastChange = "2019-11-23 08:36:15 +0000";
 layers = (
 {
 background = {
@@ -6608,7 +6651,7 @@ category = Letter;
 },
 {
 glyphname = Visarga.MGondi;
-lastChange = "2019-10-22 12:17:12 +0000";
+lastChange = "2019-11-23 12:30:46 +0000";
 layers = (
 {
 background = {
@@ -6694,26 +6737,38 @@ category = Letter;
 },
 {
 glyphname = Nukta.MGondi;
-lastChange = "2019-10-22 12:17:12 +0000";
+lastChange = "2019-11-22 16:02:05 +0000";
 layers = (
 {
+anchors = (
+{
+name = _bottom1;
+position = "{-541, -78}";
+}
+);
 background = {
+anchors = (
+{
+name = _bottom1;
+position = "{-541, -78}";
+}
+);
 paths = (
 {
 closed = 1;
 nodes = (
-"-195 78 OFFCURVE",
-"-168 58 OFFCURVE",
-"-134 58 CURVE SMOOTH",
-"-100 58 OFFCURVE",
-"-71 78 OFFCURVE",
-"-71 126 CURVE SMOOTH",
-"-71 175 OFFCURVE",
-"-100 193 OFFCURVE",
-"-134 193 CURVE SMOOTH",
-"-168 193 OFFCURVE",
-"-195 175 OFFCURVE",
-"-195 126 CURVE SMOOTH"
+"-602 -193 OFFCURVE",
+"-575 -213 OFFCURVE",
+"-541 -213 CURVE SMOOTH",
+"-507 -213 OFFCURVE",
+"-478 -193 OFFCURVE",
+"-478 -145 CURVE SMOOTH",
+"-478 -96 OFFCURVE",
+"-507 -78 OFFCURVE",
+"-541 -78 CURVE SMOOTH",
+"-575 -78 OFFCURVE",
+"-602 -96 OFFCURVE",
+"-602 -145 CURVE SMOOTH"
 );
 }
 );
@@ -6723,18 +6778,18 @@ paths = (
 {
 closed = 1;
 nodes = (
-"-195 78 OFFCURVE",
-"-168 58 OFFCURVE",
-"-134 58 CURVE SMOOTH",
-"-100 58 OFFCURVE",
-"-71 78 OFFCURVE",
-"-71 126 CURVE SMOOTH",
-"-71 175 OFFCURVE",
-"-100 193 OFFCURVE",
-"-134 193 CURVE SMOOTH",
-"-168 193 OFFCURVE",
-"-195 175 OFFCURVE",
-"-195 126 CURVE SMOOTH"
+"-602 -193 OFFCURVE",
+"-575 -213 OFFCURVE",
+"-541 -213 CURVE SMOOTH",
+"-507 -213 OFFCURVE",
+"-478 -193 OFFCURVE",
+"-478 -145 CURVE SMOOTH",
+"-478 -96 OFFCURVE",
+"-507 -78 OFFCURVE",
+"-541 -78 CURVE SMOOTH",
+"-575 -78 OFFCURVE",
+"-602 -96 OFFCURVE",
+"-602 -145 CURVE SMOOTH"
 );
 }
 );
@@ -6742,7 +6797,8 @@ width = 0;
 }
 );
 unicode = 11D42;
-category = Letter;
+category = Mark;
+subCategory = Nonspacing;
 },
 {
 glyphname = Chandra.MGondi;
@@ -6849,56 +6905,24 @@ category = Other;
 },
 {
 glyphname = Repha.MGondi;
-lastChange = "2019-10-22 12:17:12 +0000";
+lastChange = "2019-11-23 10:01:33 +0000";
 layers = (
 {
-background = {
-paths = (
-{
-closed = 1;
-nodes = (
-"112 281 LINE",
-"112 500 LINE",
-"112 584 OFFCURVE",
-"60 635 OFFCURVE",
-"-28 635 CURVE SMOOTH",
-"-121 635 OFFCURVE",
-"-170 584 OFFCURVE",
-"-170 500 CURVE",
-"-170 357 LINE",
-"-376 357 LINE",
-"-376 281 LINE"
-);
-},
-{
-closed = 1;
-nodes = (
-"-82 500 LINE",
-"-82 544 OFFCURVE",
-"-59 564 OFFCURVE",
-"-28 564 CURVE SMOOTH",
-"5 564 OFFCURVE",
-"26 545 OFFCURVE",
-"26 500 CURVE",
-"26 357 LINE",
-"-82 357 LINE"
-);
-}
-);
-};
 layerId = "55C6F8EE-B60C-49C4-8D15-2255C9205224";
 paths = (
 {
 closed = 1;
 nodes = (
-"112 281 LINE",
-"112 500 LINE",
-"112 584 OFFCURVE",
-"60 635 OFFCURVE",
-"-28 635 CURVE SMOOTH",
-"-121 635 OFFCURVE",
-"-170 584 OFFCURVE",
-"-170 500 CURVE",
+"181 281 LINE",
+"181 357 LINE",
+"92 357 LINE",
+"92 510 LINE SMOOTH",
+"92 588 OFFCURVE",
+"44 635 OFFCURVE",
+"-38 635 CURVE SMOOTH",
+"-124 635 OFFCURVE",
+"-170 588 OFFCURVE",
+"-170 510 CURVE SMOOTH",
 "-170 357 LINE",
 "-376 357 LINE",
 "-376 281 LINE"
@@ -6907,19 +6931,19 @@ nodes = (
 {
 closed = 1;
 nodes = (
-"-82 500 LINE",
-"-82 544 OFFCURVE",
-"-59 564 OFFCURVE",
-"-28 564 CURVE SMOOTH",
-"5 564 OFFCURVE",
-"26 545 OFFCURVE",
-"26 500 CURVE",
-"26 357 LINE",
+"-82 510 LINE SMOOTH",
+"-82 547 OFFCURVE",
+"-69 564 OFFCURVE",
+"-38 564 CURVE SMOOTH",
+"-11 564 OFFCURVE",
+"6 548 OFFCURVE",
+"6 510 CURVE SMOOTH",
+"6 357 LINE",
 "-82 357 LINE"
 );
 }
 );
-width = 166;
+width = 201;
 }
 );
 unicode = 11D46;
@@ -7884,8 +7908,171 @@ unicode = 11D59;
 category = Number;
 },
 {
+glyphname = KaNukta.MGondi;
+lastChange = "2019-11-22 14:56:22 +0000";
+layers = (
+{
+components = (
+{
+name = Ka.MGondi;
+},
+{
+name = Nukta.MGondi;
+transform = "{1, 0, 0, 1, 867, 0}";
+}
+);
+layerId = "55C6F8EE-B60C-49C4-8D15-2255C9205224";
+width = 877;
+}
+);
+leftKerningGroup = Ka.MGondi;
+rightKerningGroup = Ka.MGondi;
+},
+{
+glyphname = KhaNukta.MGondi;
+lastChange = "2019-11-22 14:47:20 +0000";
+layers = (
+{
+components = (
+{
+name = Kha.MGondi;
+},
+{
+name = Nukta.MGondi;
+transform = "{1, 0, 0, 1, 828, 0}";
+}
+);
+layerId = "55C6F8EE-B60C-49C4-8D15-2255C9205224";
+width = 779;
+}
+);
+},
+{
+glyphname = GaNukta.MGondi;
+lastChange = "2019-11-22 14:57:12 +0000";
+layers = (
+{
+components = (
+{
+name = Ga.MGondi;
+},
+{
+name = Nukta.MGondi;
+transform = "{1, 0, 0, 1, 679, 0}";
+}
+);
+layerId = "55C6F8EE-B60C-49C4-8D15-2255C9205224";
+width = 489;
+}
+);
+rightKerningGroup = Pa.MGondi;
+},
+{
+glyphname = JaNukta.MGondi;
+lastChange = "2019-11-22 14:58:00 +0000";
+layers = (
+{
+components = (
+{
+name = Ja.MGondi;
+},
+{
+name = Nukta.MGondi;
+transform = "{1, 0, 0, 1, 878, 0}";
+}
+);
+layerId = "55C6F8EE-B60C-49C4-8D15-2255C9205224";
+width = 897;
+}
+);
+leftKerningGroup = Ka.MGondi;
+rightKerningGroup = Ka.MGondi;
+},
+{
+glyphname = DdaNukta.MGondi;
+lastChange = "2019-11-22 14:58:12 +0000";
+layers = (
+{
+components = (
+{
+name = Dda.MGondi;
+},
+{
+name = Nukta.MGondi;
+transform = "{1, 0, 0, 1, 847, 0}";
+}
+);
+layerId = "55C6F8EE-B60C-49C4-8D15-2255C9205224";
+width = 812;
+}
+);
+leftKerningGroup = Nga.MGondi;
+},
+{
+glyphname = DdhaNukta.MGondi;
+lastChange = "2019-11-22 14:58:38 +0000";
+layers = (
+{
+components = (
+{
+name = Ddha.MGondi;
+},
+{
+name = Nukta.MGondi;
+transform = "{1, 0, 0, 1, 874, 0}";
+}
+);
+layerId = "55C6F8EE-B60C-49C4-8D15-2255C9205224";
+width = 878;
+}
+);
+leftKerningGroup = Tta.MGondi;
+rightKerningGroup = La.MGondi;
+},
+{
+glyphname = PhaNukta.MGondi;
+lastChange = "2019-11-22 14:58:48 +0000";
+layers = (
+{
+components = (
+{
+name = Pha.MGondi;
+},
+{
+name = Nukta.MGondi;
+transform = "{1, 0, 0, 1, 912, 0}";
+}
+);
+layerId = "55C6F8EE-B60C-49C4-8D15-2255C9205224";
+width = 962;
+}
+);
+rightKerningGroup = Pa.MGondi;
+},
+{
+glyphname = YaNukta.MGondi;
+lastChange = "2019-11-22 14:59:00 +0000";
+layers = (
+{
+components = (
+{
+name = Ya.MGondi;
+},
+{
+name = Nukta.MGondi;
+transform = "{1, 0, 0, 1, 855, 0}";
+}
+);
+layerId = "55C6F8EE-B60C-49C4-8D15-2255C9205224";
+width = 838;
+}
+);
+leftKerningGroup = Ka.MGondi;
+rightKerningGroup = Ka.MGondi;
+},
+{
 glyphname = KaHalf.MGondi;
-lastChange = "2019-10-22 12:17:12 +0000";
+lastChange = "2019-11-23 13:31:22 +0000";
 layers = (
 {
 background = {
@@ -7971,7 +8158,7 @@ rightKerningGroup = KaHalf.MGondi;
 },
 {
 glyphname = KhaHalf.MGondi;
-lastChange = "2019-10-22 12:17:12 +0000";
+lastChange = "2019-11-23 13:31:34 +0000";
 layers = (
 {
 background = {
@@ -8111,10 +8298,11 @@ width = 569;
 }
 );
 leftMetricsKey = Kha.MGondi;
+rightKerningGroup = KhaHalf.MGondi;
 },
 {
 glyphname = GaHalf.MGondi;
-lastChange = "2019-10-22 12:17:12 +0000";
+lastChange = "2019-11-23 13:31:44 +0000";
 layers = (
 {
 background = {
@@ -8146,6 +8334,7 @@ width = 275;
 }
 );
 leftMetricsKey = Ga.MGondi;
+rightKerningGroup = GaHalf.MGondi;
 },
 {
 glyphname = GhaHalf.MGondi;
@@ -8495,7 +8684,7 @@ leftMetricsKey = Cha.MGondi;
 },
 {
 glyphname = JaHalf.MGondi;
-lastChange = "2019-10-22 12:17:12 +0000";
+lastChange = "2019-11-23 13:31:52 +0000";
 layers = (
 {
 background = {
@@ -8914,7 +9103,7 @@ leftMetricsKey = Ttha.MGondi;
 },
 {
 glyphname = DdaHalf.MGondi;
-lastChange = "2019-10-22 12:17:12 +0000";
+lastChange = "2019-11-23 13:32:07 +0000";
 layers = (
 {
 background = {
@@ -9019,10 +9208,11 @@ width = 630;
 );
 leftKerningGroup = Nga.MGondi;
 leftMetricsKey = Dda.MGondi;
+rightKerningGroup = DdaHalf.MGondi;
 },
 {
 glyphname = DdhaHalf.MGondi;
-lastChange = "2019-10-22 12:17:12 +0000";
+lastChange = "2019-11-23 13:32:32 +0000";
 layers = (
 {
 background = {
@@ -9117,6 +9307,7 @@ width = 664;
 );
 leftKerningGroup = Tta.MGondi;
 leftMetricsKey = VowelA.MGondi;
+rightKerningGroup = DdhaHalf.MGondi;
 },
 {
 glyphname = NnaHalf.MGondi;
@@ -10237,7 +10428,7 @@ leftMetricsKey = Ma.MGondi;
 },
 {
 glyphname = YaHalf.MGondi;
-lastChange = "2019-10-22 12:17:12 +0000";
+lastChange = "2019-11-23 13:32:48 +0000";
 layers = (
 {
 background = {
@@ -11637,8 +11828,169 @@ width = 594;
 leftMetricsKey = Tra.MGondi;
 },
 {
+glyphname = KaHalfNukta.MGondi;
+lastChange = "2019-11-23 13:31:25 +0000";
+layers = (
+{
+components = (
+{
+name = KaHalf.MGondi;
+},
+{
+name = Nukta.MGondi;
+transform = "{1, 0, 0, 1, 867, 0}";
+}
+);
+layerId = "55C6F8EE-B60C-49C4-8D15-2255C9205224";
+width = 659;
+}
+);
+rightKerningGroup = KaHalf.MGondi;
+},
+{
+glyphname = KhaHalfNukta.MGondi;
+lastChange = "2019-11-23 13:31:38 +0000";
+layers = (
+{
+components = (
+{
+name = KhaHalf.MGondi;
+},
+{
+name = Nukta.MGondi;
+transform = "{1, 0, 0, 1, 828, 0}";
+}
+);
+layerId = "55C6F8EE-B60C-49C4-8D15-2255C9205224";
+width = 569;
+}
+);
+rightKerningGroup = KhaHalf.MGondi;
+},
+{
+glyphname = GaHalfNukta.MGondi;
+lastChange = "2019-11-23 13:31:48 +0000";
+layers = (
+{
+components = (
+{
+name = GaHalf.MGondi;
+},
+{
+name = Nukta.MGondi;
+transform = "{1, 0, 0, 1, 679, 0}";
+}
+);
+layerId = "55C6F8EE-B60C-49C4-8D15-2255C9205224";
+width = 275;
+}
+);
+rightKerningGroup = GaHalf.MGondi;
+},
+{
+glyphname = JaHalfNukta.MGondi;
+lastChange = "2019-11-23 13:31:56 +0000";
+layers = (
+{
+components = (
+{
+name = JaHalf.MGondi;
+},
+{
+name = Nukta.MGondi;
+transform = "{1, 0, 0, 1, 878, 0}";
+}
+);
+layerId = "55C6F8EE-B60C-49C4-8D15-2255C9205224";
+width = 679;
+}
+);
+rightKerningGroup = KaHalf.MGondi;
+},
+{
+glyphname = DdaHalfNukta.MGondi;
+lastChange = "2019-11-23 13:32:14 +0000";
+layers = (
+{
+components = (
+{
+name = DdaHalf.MGondi;
+},
+{
+name = Nukta.MGondi;
+transform = "{1, 0, 0, 1, 847, 0}";
+}
+);
+layerId = "55C6F8EE-B60C-49C4-8D15-2255C9205224";
+width = 630;
+}
+);
+rightKerningGroup = DdaHalf.MGondi;
+},
+{
+glyphname = DdhaHalfNukta.MGondi;
+lastChange = "2019-11-23 13:32:35 +0000";
+layers = (
+{
+components = (
+{
+name = DdhaHalf.MGondi;
+},
+{
+name = Nukta.MGondi;
+transform = "{1, 0, 0, 1, 874, 0}";
+}
+);
+layerId = "55C6F8EE-B60C-49C4-8D15-2255C9205224";
+width = 664;
+}
+);
+leftKerningGroup = Tta.MGondi;
+rightKerningGroup = DdhaHalf.MGondi;
+},
+{
+glyphname = PhaHalfNukta.MGondi;
+lastChange = "2019-11-22 14:47:28 +0000";
+layers = (
+{
+components = (
+{
+name = PhaHalf.MGondi;
+},
+{
+name = Nukta.MGondi;
+transform = "{1, 0, 0, 1, 912, 0}";
+}
+);
+layerId = "55C6F8EE-B60C-49C4-8D15-2255C9205224";
+width = 748;
+}
+);
+},
+{
+glyphname = YaHalfNukta.MGondi;
+lastChange = "2019-11-23 13:32:54 +0000";
+layers = (
+{
+components = (
+{
+name = YaHalf.MGondi;
+},
+{
+name = Nukta.MGondi;
+transform = "{1, 0, 0, 1, 855, 0}";
+}
+);
+layerId = "55C6F8EE-B60C-49C4-8D15-2255C9205224";
+width = 634;
+}
+);
+leftKerningGroup = KaHalf.MGondi;
+rightKerningGroup = KaHalf.MGondi;
+},
+{
 glyphname = MatraAaChandra.MGondi;
-lastChange = "2019-10-22 12:17:12 +0000";
+lastChange = "2019-11-19 04:53:32 +0000";
 layers = (
 {
 background = {
@@ -11945,72 +12297,8 @@ width = 185;
 );
 },
 {
-glyphname = Nukta.alt.MGondi;
-lastChange = "2019-10-22 12:17:12 +0000";
-layers = (
-{
-anchors = (
-{
-name = _bottom1;
-position = "{-541, -78}";
-}
-);
-background = {
-anchors = (
-{
-name = _bottom1;
-position = "{-541, -78}";
-}
-);
-paths = (
-{
-closed = 1;
-nodes = (
-"-602 -193 OFFCURVE",
-"-575 -213 OFFCURVE",
-"-541 -213 CURVE SMOOTH",
-"-507 -213 OFFCURVE",
-"-478 -193 OFFCURVE",
-"-478 -145 CURVE SMOOTH",
-"-478 -96 OFFCURVE",
-"-507 -78 OFFCURVE",
-"-541 -78 CURVE SMOOTH",
-"-575 -78 OFFCURVE",
-"-602 -96 OFFCURVE",
-"-602 -145 CURVE SMOOTH"
-);
-}
-);
-};
-layerId = "55C6F8EE-B60C-49C4-8D15-2255C9205224";
-paths = (
-{
-closed = 1;
-nodes = (
-"-602 -193 OFFCURVE",
-"-575 -213 OFFCURVE",
-"-541 -213 CURVE SMOOTH",
-"-507 -213 OFFCURVE",
-"-478 -193 OFFCURVE",
-"-478 -145 CURVE SMOOTH",
-"-478 -96 OFFCURVE",
-"-507 -78 OFFCURVE",
-"-541 -78 CURVE SMOOTH",
-"-575 -78 OFFCURVE",
-"-602 -96 OFFCURVE",
-"-602 -145 CURVE SMOOTH"
-);
-}
-);
-width = 0;
-}
-);
-category = Mark;
-subCategory = Nonspacing;
-},
-{
 glyphname = MatraAaAnusvara.MGondi;
-lastChange = "2019-10-22 12:17:12 +0000";
+lastChange = "2019-12-10 13:02:20 +0000";
 layers = (
 {
 background = {
@@ -12071,7 +12359,7 @@ leftKerningGroup = MatraAaAnusvara.MGondi;
 },
 {
 glyphname = MatraIAnusvara.MGondi;
-lastChange = "2019-10-22 12:17:12 +0000";
+lastChange = "2019-11-25 14:37:39 +0000";
 layers = (
 {
 background = {
@@ -12197,7 +12485,7 @@ rightMetricsKey = MatraIAnusvara.MGondi;
 },
 {
 glyphname = MatraUuAnusvara.MGondi;
-lastChange = "2019-10-22 12:17:12 +0000";
+lastChange = "2019-11-25 14:37:52 +0000";
 layers = (
 {
 background = {
@@ -12449,7 +12737,7 @@ rightMetricsKey = MatraOAnusvara.MGondi;
 },
 {
 glyphname = MatraAaVisarga.MGondi;
-lastChange = "2019-10-22 12:17:12 +0000";
+lastChange = "2019-11-23 08:39:36 +0000";
 layers = (
 {
 background = {
@@ -12759,6 +13047,95 @@ width = 383;
 );
 leftKerningGroup = MatraAu.MGondi;
 rightMetricsKey = MatraOAnusvara.MGondi;
+},
+{
+glyphname = MatraAaRepha.MGondi;
+lastChange = "2019-11-23 12:53:14 +0000";
+layers = (
+{
+layerId = "55C6F8EE-B60C-49C4-8D15-2255C9205224";
+paths = (
+{
+closed = 1;
+nodes = (
+"130 428 LINE",
+"130 504 LINE",
+"45 504 LINE",
+"45 614 LINE SMOOTH",
+"45 674 OFFCURVE",
+"0 722 OFFCURVE",
+"-75 722 CURVE SMOOTH",
+"-155 722 OFFCURVE",
+"-197 674 OFFCURVE",
+"-197 614 CURVE SMOOTH",
+"-197 504 LINE",
+"-314 504 LINE",
+"-314 428 LINE"
+);
+},
+{
+closed = 1;
+nodes = (
+"130 281 LINE",
+"130 357 LINE",
+"-264 357 LINE",
+"-264 281 LINE"
+);
+},
+{
+closed = 1;
+nodes = (
+"-109 614 LINE SMOOTH",
+"-109 636 OFFCURVE",
+"-95 651 OFFCURVE",
+"-75 651 CURVE SMOOTH",
+"-54 651 OFFCURVE",
+"-41 637 OFFCURVE",
+"-41 614 CURVE SMOOTH",
+"-41 504 LINE",
+"-109 504 LINE"
+);
+}
+);
+width = 160;
+}
+);
+leftKerningGroup = MatraAaRepha.MGondi;
+},
+{
+glyphname = MatraAaRephaAnusvara.MGondi;
+lastChange = "2019-11-23 12:48:55 +0000";
+layers = (
+{
+components = (
+{
+name = MatraAaRepha.MGondi;
+}
+);
+layerId = "55C6F8EE-B60C-49C4-8D15-2255C9205224";
+paths = (
+{
+closed = 1;
+nodes = (
+"140 568 OFFCURVE",
+"165 550 OFFCURVE",
+"198 550 CURVE SMOOTH",
+"230 550 OFFCURVE",
+"257 568 OFFCURVE",
+"257 614 CURVE SMOOTH",
+"257 661 OFFCURVE",
+"230 679 OFFCURVE",
+"198 679 CURVE SMOOTH",
+"165 679 OFFCURVE",
+"140 661 OFFCURVE",
+"140 614 CURVE SMOOTH"
+);
+}
+);
+width = 213;
+}
+);
+leftKerningGroup = MatraAaRepha.MGondi;
 },
 {
 glyphname = One.alt.MGondi;
@@ -13221,8 +13598,204 @@ width = 643;
 unicode = 0965;
 },
 {
+glyphname = MatraVocalicRR.MGondi;
+lastChange = "2019-11-23 13:39:40 +0000";
+layers = (
+{
+layerId = "55C6F8EE-B60C-49C4-8D15-2255C9205224";
+paths = (
+{
+closed = 1;
+nodes = (
+"-170 281 LINE",
+"-170 241 LINE SMOOTH",
+"-170 175 OFFCURVE",
+"-124 136 OFFCURVE",
+"-38 136 CURVE SMOOTH",
+"45 136 OFFCURVE",
+"92 173 OFFCURVE",
+"92 241 CURVE SMOOTH",
+"92 357 LINE",
+"-316 357 LINE",
+"-316 281 LINE"
+);
+},
+{
+closed = 1;
+nodes = (
+"-82 281 LINE",
+"6 281 LINE",
+"6 236 LINE SMOOTH",
+"6 202 OFFCURVE",
+"-11 187 OFFCURVE",
+"-38 187 CURVE SMOOTH",
+"-69 187 OFFCURVE",
+"-82 202 OFFCURVE",
+"-82 236 CURVE SMOOTH"
+);
+},
+{
+closed = 1;
+nodes = (
+"181 281 LINE",
+"181 357 LINE",
+"52 357 LINE",
+"52 281 LINE"
+);
+},
+{
+closed = 1;
+nodes = (
+"92 128 OFFCURVE",
+"38 167 OFFCURVE",
+"-38 167 CURVE SMOOTH",
+"-113 167 OFFCURVE",
+"-170 128 OFFCURVE",
+"-170 62 CURVE SMOOTH",
+"-170 -8 OFFCURVE",
+"-119 -53 OFFCURVE",
+"-38 -53 CURVE SMOOTH",
+"42 -53 OFFCURVE",
+"92 -8 OFFCURVE",
+"92 62 CURVE SMOOTH"
+);
+},
+{
+closed = 1;
+nodes = (
+"-82 101 OFFCURVE",
+"-64 116 OFFCURVE",
+"-38 116 CURVE SMOOTH",
+"-13 116 OFFCURVE",
+"6 101 OFFCURVE",
+"6 67 CURVE SMOOTH",
+"6 34 OFFCURVE",
+"-12 18 OFFCURVE",
+"-38 18 CURVE SMOOTH",
+"-66 18 OFFCURVE",
+"-82 35 OFFCURVE",
+"-82 67 CURVE SMOOTH"
+);
+}
+);
+width = 201;
+}
+);
+},
+{
+glyphname = MatraVocalicL.MGondi;
+lastChange = "2019-11-23 11:05:23 +0000";
+layers = (
+{
+layerId = "55C6F8EE-B60C-49C4-8D15-2255C9205224";
+paths = (
+{
+closed = 1;
+nodes = (
+"38 281 LINE",
+"38 357 LINE",
+"-316 357 LINE",
+"-316 281 LINE"
+);
+},
+{
+closed = 1;
+nodes = (
+"-19 107 LINE",
+"-37 107 LINE SMOOTH",
+"-63 107 OFFCURVE",
+"-82 122 OFFCURVE",
+"-82 146 CURVE SMOOTH",
+"-82 170 OFFCURVE",
+"-65 185 OFFCURVE",
+"-37 185 CURVE SMOOTH",
+"-21 185 LINE",
+"-21 256 LINE",
+"-40 256 LINE SMOOTH",
+"-116 256 OFFCURVE",
+"-170 221 OFFCURVE",
+"-170 146 CURVE SMOOTH",
+"-170 78 OFFCURVE",
+"-116 36 OFFCURVE",
+"-40 36 CURVE SMOOTH",
+"-19 36 LINE"
+);
+}
+);
+width = 58;
+}
+);
+},
+{
+glyphname = MatraVocalicLL.MGondi;
+lastChange = "2019-11-23 11:12:58 +0000";
+layers = (
+{
+layerId = "55C6F8EE-B60C-49C4-8D15-2255C9205224";
+paths = (
+{
+closed = 1;
+nodes = (
+"38 281 LINE",
+"38 357 LINE",
+"-316 357 LINE",
+"-316 281 LINE"
+);
+},
+{
+closed = 1;
+nodes = (
+"-19 18 LINE",
+"-53 18 LINE SMOOTH",
+"-70 18 OFFCURVE",
+"-82 27 OFFCURVE",
+"-82 42 CURVE SMOOTH",
+"-82 57 OFFCURVE",
+"-71 66 OFFCURVE",
+"-53 66 CURVE SMOOTH",
+"-21 66 LINE",
+"-21 117 LINE",
+"-46 117 LINE SMOOTH",
+"-114 117 OFFCURVE",
+"-163 90 OFFCURVE",
+"-163 32 CURVE SMOOTH",
+"-163 -21 OFFCURVE",
+"-122 -53 OFFCURVE",
+"-61 -53 CURVE SMOOTH",
+"-19 -53 LINE"
+);
+},
+{
+closed = 1;
+nodes = (
+"-61 256 LINE SMOOTH",
+"-122 256 OFFCURVE",
+"-163 224 OFFCURVE",
+"-163 171 CURVE SMOOTH",
+"-163 113 OFFCURVE",
+"-114 86 OFFCURVE",
+"-46 86 CURVE SMOOTH",
+"-21 86 LINE",
+"-21 137 LINE",
+"-53 137 LINE SMOOTH",
+"-71 137 OFFCURVE",
+"-82 146 OFFCURVE",
+"-82 161 CURVE SMOOTH",
+"-82 176 OFFCURVE",
+"-70 185 OFFCURVE",
+"-53 185 CURVE SMOOTH",
+"-19 185 LINE",
+"-19 256 LINE"
+);
+}
+);
+width = 58;
+}
+);
+},
+{
 glyphname = period.MGondi;
-lastChange = "2019-10-22 12:17:12 +0000";
+lastChange = "2019-12-10 12:38:12 +0000";
 layers = (
 {
 background = {
@@ -13269,12 +13842,12 @@ nodes = (
 width = 268;
 }
 );
-leftKerningGroup = period.GGondi;
+leftKerningGroup = period.MGondi;
 unicode = 002E;
 },
 {
 glyphname = comma.MGondi;
-lastChange = "2019-10-22 12:17:12 +0000";
+lastChange = "2019-12-10 12:38:12 +0000";
 layers = (
 {
 background = {
@@ -13315,7 +13888,7 @@ nodes = (
 width = 268;
 }
 );
-leftKerningGroup = period.GGondi;
+leftKerningGroup = period.MGondi;
 unicode = 002C;
 },
 {
@@ -15470,10 +16043,6 @@ value = "NotoSansMasaramGondi-Regular";
 {
 name = styleMapFamilyName;
 value = "Noto Sans Masaram Gondi";
-},
-{
-name = weightClass;
-value = 400;
 }
 );
 interpolationWeight = 90;
@@ -15499,57 +16068,104 @@ Sha.MGondi = -52;
 Tha.MGondi = -32;
 };
 "@MMK_L_Cha.MGondi" = {
-"@MMK_R_MatraIi" = 20;
-"@MMK_R_period.GGondi" = -70;
+"@MMK_R_Ca.MGondi" = -30;
+"@MMK_R_MatraAi.MGondi" = 20;
+"@MMK_R_MatraE.MGondi" = 30;
+"@MMK_R_MatraI.MGondi" = 30;
+"@MMK_R_MatraIi.MGondi" = 20;
+"@MMK_R_MatraU.MGondi" = 15;
+"@MMK_R_MatraUu.MGondi" = 20;
+"@MMK_R_period.MGondi" = -70;
 Anusvara.MGondi = -190;
-Ca.MGondi = -30;
 Chandra.MGondi = 30;
 Ma.MGondi = -50;
 MatraAaChandra.MGondi = 20;
-MatraAi.MGondi = 20;
-MatraE.MGondi = 30;
-MatraI.MGondi = 30;
-MatraU.MGondi = 15;
-MatraUu.MGondi = 20;
 MatraVocalicR.MGondi = 30;
-Nukta.MGondi = 20;
 Rakara.MGondi = 20;
 };
+"@MMK_L_DdaHalf.MGondi" = {
+"@MMK_R_Ca.MGondi" = -28;
+"@MMK_R_Jha.MGondi" = -8;
+"@MMK_R_Ka.MGondi" = -18;
+"@MMK_R_Nga.MGondi" = -24;
+"@MMK_R_Nya.MGondi" = -20;
+"@MMK_R_Tta.MGondi" = -8;
+Cha.MGondi = -28;
+Ha.MGondi = -8;
+Jha.MGondi = -24;
+Kha.MGondi = -12;
+Kssa.MGondi = -38;
+Lla.MGondi = -12;
+Ma.MGondi = -12;
+Nga.MGondi = -24;
+Sa.MGondi = -20;
+Sha.MGondi = -42;
+Tha.MGondi = -20;
+};
 "@MMK_L_DdhaHalf.MGondi" = {
+"@MMK_R_Da.MGondi" = 15;
+"@MMK_R_Ka.MGondi" = 15;
 "@MMK_R_Nga.MGondi" = -32;
+Da.MGondi = 15;
+Ga.MGondi = 15;
+Kha.MGondi = 15;
 Kssa.MGondi = -20;
 Nga.MGondi = -32;
+Sa.MGondi = 20;
 Tha.MGondi = -12;
 };
 "@MMK_L_Ka.MGondi" = {
-"@MMK_R_MatraIi" = -10;
+"@MMK_R_Ca.MGondi" = -40;
+"@MMK_R_MatraAaRepha.MGondi" = -40;
+"@MMK_R_MatraAu.MGondi" = -30;
+"@MMK_R_MatraI.MGondi" = 10;
 "@MMK_R_MatraIi.MGondi" = -10;
 "@MMK_R_MatraU.MGondi" = -10;
 "@MMK_R_MatraUu.MGondi" = -10;
-"@MMK_R_period.GGondi" = -70;
+"@MMK_R_period.MGondi" = -70;
 Anusvara.MGondi = -210;
-Ca.MGondi = -40;
+Chandra.MGondi = 20;
 Ma.MGondi = -50;
-MatraAu.MGondi = -30;
-MatraI.MGondi = 10;
 };
 "@MMK_L_KaHalf.MGondi" = {
+"@MMK_R_Ca.MGondi" = -12;
+"@MMK_R_Da.MGondi" = -10;
+"@MMK_R_Ka.MGondi" = -20;
 "@MMK_R_Nga.MGondi" = -24;
-Ca.MGondi = -12;
+Ca.MGondi = -15;
 Cha.MGondi = -24;
+Da.MGondi = -10;
+Jha.MGondi = -20;
+Kha.MGondi = -20;
+Kssa.MGondi = -20;
 Nga.MGondi = -28;
 Sha.MGondi = -12;
 Tha.MGondi = -20;
+Va.MGondi = -10;
+};
+"@MMK_L_KhaHalf.MGondi" = {
+"@MMK_R_Da.MGondi" = 15;
+"@MMK_R_Ka.MGondi" = 10;
+"@MMK_R_Tta.MGondi" = 30;
+Da.MGondi = 15;
+Ga.MGondi = 20;
+Nya.MGondi = 20;
+Sa.MGondi = 10;
+Tha.MGondi = 10;
+Ttha.MGondi = 20;
 };
 "@MMK_L_La.MGondi" = {
+"@MMK_R_Ca.MGondi" = -30;
+"@MMK_R_MatraAaRepha.MGondi" = -30;
+"@MMK_R_MatraAu.MGondi" = -20;
 "@MMK_R_MatraI.MGondi" = 20;
-"@MMK_R_MatraIi" = 10;
+"@MMK_R_MatraIi.MGondi" = 10;
 "@MMK_R_MatraU.MGondi" = 10;
-"@MMK_R_period.GGondi" = -70;
+"@MMK_R_period.MGondi" = -70;
 Anusvara.MGondi = -200;
 Ca.MGondi = -30;
+Chandra.MGondi = 30;
 Ma.MGondi = -50;
-MatraAu.MGondi = -20;
 Rakara.MGondi = 20;
 };
 "@MMK_L_MatraIAnusvara.MGondi" = {
@@ -15560,6 +16176,7 @@ Rakara.MGondi = 20;
 Bha.MGondi = 50;
 Ma.MGondi = 30;
 Nga.MGondi = -30;
+Repha.MGondi = 220;
 };
 "@MMK_L_MatraOAnusvara.MGondi" = {
 "@MMK_R_Ca.MGondi" = 20;
@@ -15573,6 +16190,7 @@ Kssa.MGondi = 30;
 Ma.MGondi = 50;
 Nga.MGondi = -30;
 Nna.MGondi = -30;
+Repha.MGondi = 250;
 Sha.MGondi = 40;
 Tha.MGondi = 30;
 Ttha.MGondi = -30;
@@ -15581,24 +16199,33 @@ Va.MGondi = -20;
 "@MMK_L_Pa.MGondi" = {
 "@MMK_R_Ca.MGondi" = -40;
 "@MMK_R_MatraI.MGondi" = 20;
-"@MMK_R_MatraIi" = 15;
-"@MMK_R_MatraIi.MGondi" = 20;
+"@MMK_R_MatraIi.MGondi" = 15;
 "@MMK_R_MatraU.MGondi" = 20;
-"@MMK_R_period.GGondi" = -70;
+"@MMK_R_MatraUu.MGondi" = 15;
+"@MMK_R_period.MGondi" = -70;
 Anusvara.MGondi = -200;
+Ca.MGondi = -30;
 Chandra.MGondi = 40;
 Ma.MGondi = -50;
 MatraAaChandra.MGondi = 70;
-MatraUu.MGondi = 15;
 };
 "@MMK_L_Ta.MGondi" = {
+"@MMK_R_Ca.MGondi" = -30;
+"@MMK_R_MatraI.MGondi" = 20;
+"@MMK_R_MatraIi.MGondi" = 15;
 "@MMK_R_MatraU.MGondi" = 20;
+"@MMK_R_MatraUu.MGondi" = 15;
+"@MMK_R_period.MGondi" = -70;
 Anusvara.MGondi = -200;
+Ca.MGondi = -40;
+Chandra.MGondi = 30;
 Ma.MGondi = -50;
+MatraAaChandra.MGondi = 50;
 };
 "@MMK_L_VowelA.MGondi" = {
 "@MMK_R_Ka.MGondi" = -20;
 Anusvara.MGondi = -220;
+Chandra.MGondi = -40;
 };
 "@MMK_L_quoteleft.MGondi" = {
 Sha.MGondi = 40;
@@ -15607,28 +16234,26 @@ Anusvara.MGondi = {
 Repha.MGondi = 200;
 };
 Anusvara.alt.MGondi = {
-MatraAu.MGondi = 180;
+"@MMK_R_MatraAu.MGondi" = 180;
 Repha.alt.MGondi = 180;
 space = 40;
 };
 Ba.MGondi = {
 "@MMK_R_Ca.MGondi" = -40;
-"@MMK_R_MatraAa.MGondi" = -60;
-"@MMK_R_MatraIi" = -60;
-"@MMK_R_period.GGondi" = -70;
+"@MMK_R_MatraIi.MGondi" = -60;
+"@MMK_R_MatraU.MGondi" = -60;
+"@MMK_R_period.MGondi" = -70;
 Anusvara.MGondi = -200;
 Chandra.MGondi = -30;
 Halanta.MGondi = 30;
 Ma.MGondi = -50;
-MatraU.MGondi = -60;
 MatraVocalicR.MGondi = 50;
-Nukta.MGondi = 30;
 Rakara.MGondi = 50;
 };
 BaHalf.MGondi = {
+"@MMK_R_Ca.MGondi" = -15;
 "@MMK_R_Da.MGondi" = -12;
 "@MMK_R_Nga.MGondi" = -20;
-Ca.MGondi = -15;
 Cha.MGondi = -15;
 Da.MGondi = -12;
 Kha.MGondi = -20;
@@ -15640,23 +16265,19 @@ Tha.MGondi = -28;
 };
 Bha.MGondi = {
 "@MMK_R_Ca.MGondi" = -30;
-"@MMK_R_MatraAa.MGondi" = -60;
-"@MMK_R_MatraIi" = -50;
-"@MMK_R_period.GGondi" = -70;
+"@MMK_R_MatraIi.MGondi" = -50;
+"@MMK_R_MatraU.MGondi" = -50;
+"@MMK_R_period.MGondi" = -70;
 Anusvara.MGondi = -200;
 Chandra.MGondi = -30;
 Ma.MGondi = -50;
-MatraU.MGondi = -50;
 MatraVocalicR.MGondi = 0;
 Rakara.MGondi = 30;
 };
-Ca.MGondi = {
-"@MMK_R_MatraAa.MGondi" = -10;
-};
 CaHalf.MGondi = {
+"@MMK_R_Ca.MGondi" = -20;
 "@MMK_R_Nga.MGondi" = -26;
 "@MMK_R_Tta.MGondi" = 10;
-Ca.MGondi = -20;
 Cha.MGondi = -20;
 Ga.MGondi = 20;
 Kssa.MGondi = -32;
@@ -15667,21 +16288,18 @@ Ttha.MGondi = 20;
 };
 ChaHalf.MGondi = {
 "@MMK_R_Da.MGondi" = 15;
+"@MMK_R_Ka.MGondi" = 7;
+"@MMK_R_Nya.MGondi" = 10;
 "@MMK_R_Tta.MGondi" = 10;
 Da.MGondi = 15;
 Ga.MGondi = 20;
 Kha.MGondi = 15;
-Lla.MGondi = 7;
-Nya.MGondi = 10;
 Sa.MGondi = 15;
 Tra.MGondi = 10;
 };
 Chandra.MGondi = {
 Bha.MGondi = 40;
 Ma.MGondi = 30;
-};
-Da.MGondi = {
-"@MMK_R_MatraAa.MGondi" = -10;
 };
 DaHalf.MGondi = {
 "@MMK_R_Da.MGondi" = 15;
@@ -15699,105 +16317,65 @@ Ttha.MGondi = 20;
 };
 Dda.MGondi = {
 "@MMK_R_Ca.MGondi" = -30;
-"@MMK_R_MatraAa" = 90;
-"@MMK_R_MatraAa.MGondi" = -80;
-"@MMK_R_MatraAaAnusvara.MGondi" = 60;
-"@MMK_R_period.GGondi" = -70;
+"@MMK_R_MatraAaAnusvara.MGondi" = 90;
+"@MMK_R_MatraAaRepha.MGondi" = 40;
+"@MMK_R_MatraAi.MGondi" = -30;
+"@MMK_R_MatraAu.MGondi" = 70;
+"@MMK_R_MatraI.MGondi" = 0;
+"@MMK_R_MatraO.MGondi" = 70;
+"@MMK_R_MatraUu.MGondi" = -20;
+"@MMK_R_period.MGondi" = -70;
 Anusvara.MGondi = -200;
 Chandra.MGondi = 30;
 Halanta.MGondi = 30;
 Ma.MGondi = -50;
+MatraAa.MGondi = 90;
 MatraAaChandra.MGondi = 130;
-MatraAi.MGondi = -30;
-MatraAu.MGondi = 70;
-MatraI.MGondi = 0;
-MatraO.MGondi = 70;
-MatraUu.MGondi = -20;
 MatraVocalicR.MGondi = 40;
-Nukta.MGondi = 10;
 Rakara.MGondi = 30;
 };
-DdaHalf.MGondi = {
-"@MMK_R_Jha.MGondi" = -8;
-"@MMK_R_Ka.MGondi" = -18;
-"@MMK_R_Nga.MGondi" = -24;
-"@MMK_R_Tta.MGondi" = -8;
-Ca.MGondi = -28;
-Cha.MGondi = -28;
-Ha.MGondi = -8;
-Jha.MGondi = -24;
-Kha.MGondi = -12;
-Kssa.MGondi = -38;
-Lla.MGondi = -12;
-Ma.MGondi = -12;
-Nga.MGondi = -24;
-Nya.MGondi = -20;
-Sa.MGondi = -20;
-Sha.MGondi = -42;
-Tha.MGondi = -20;
-};
-Ddha.MGondi = {
-Ca.MGondi = -30;
-};
 DdhaHalf.MGondi = {
-"@MMK_R_Da.MGondi" = 15;
-"@MMK_R_Ka.MGondi" = 15;
-Da.MGondi = 15;
-Ga.MGondi = 15;
-Kha.MGondi = 15;
 Nga.MGondi = -10;
-Sa.MGondi = 20;
 Tha.MGondi = 20;
 };
-Dha.MGondi = {
-"@MMK_R_MatraAa.MGondi" = -10;
-};
 Ga.MGondi = {
-Ca.MGondi = -30;
 Chandra.MGondi = 30;
 };
 Gha.MGondi = {
 "@MMK_R_Ca.MGondi" = -40;
-"@MMK_R_MatraAa" = 90;
-"@MMK_R_MatraAa.MGondi" = -70;
 "@MMK_R_MatraAaAnusvara.MGondi" = 90;
+"@MMK_R_MatraAaRepha.MGondi" = 80;
+"@MMK_R_MatraAi.MGondi" = 40;
+"@MMK_R_MatraAu.MGondi" = 40;
 "@MMK_R_MatraI.MGondi" = 20;
-"@MMK_R_MatraIi" = 20;
 "@MMK_R_MatraIi.MGondi" = 20;
+"@MMK_R_MatraO.MGondi" = 80;
 "@MMK_R_MatraU.MGondi" = 30;
 "@MMK_R_MatraUu.MGondi" = 20;
-"@MMK_R_period.GGondi" = -70;
+"@MMK_R_period.MGondi" = -70;
 Anusvara.MGondi = -180;
 Chandra.MGondi = 60;
 Ma.MGondi = -50;
+MatraAa.MGondi = 120;
 MatraAaChandra.MGondi = 140;
-MatraAu.MGondi = 40;
-MatraO.MGondi = 80;
 MatraVocalicR.MGondi = -30;
-Nukta.MGondi = 20;
 Rakara.MGondi = 30;
 };
 GhaHalf.MGondi = {
 "@MMK_R_Ka.MGondi" = -20;
 };
 Ha.MGondi = {
-"@MMK_R_MatraAa.MGondi" = -10;
 Chandra.MGondi = 32;
 };
-Ja.MGondi = {
-"@MMK_R_MatraAa.MGondi" = -10;
-Chandra.MGondi = 20;
-};
 Jha.MGondi = {
-"@MMK_R_MatraAa.MGondi" = -10;
-Ca.MGondi = -40;
-Chandra.MGondi = 30;
+"@MMK_R_Ca.MGondi" = -40;
 Rakara.MGondi = 5;
 };
 JhaHalf.MGondi = {
 "@MMK_R_Da.MGondi" = 15;
 "@MMK_R_Jha.MGondi" = 20;
 "@MMK_R_Ka.MGondi" = 20;
+"@MMK_R_Nya.MGondi" = 10;
 "@MMK_R_Tta.MGondi" = 30;
 Ba.MGondi = 30;
 Da.MGondi = 15;
@@ -15805,8 +16383,6 @@ Ga.MGondi = 30;
 Ha.MGondi = 20;
 Jnya.MGondi = 15;
 Kha.MGondi = 20;
-Lla.MGondi = 20;
-Nya.MGondi = 10;
 Pa.MGondi = 30;
 Pha.MGondi = 30;
 Sa.MGondi = 15;
@@ -15816,54 +16392,26 @@ Ttha.MGondi = 30;
 Jnya.MGondi = {
 Chandra.MGondi = 24;
 };
-Ka.MGondi = {
-"@MMK_R_MatraAa.MGondi" = -10;
-};
 KaHalf.MGondi = {
-"@MMK_R_Da.MGondi" = -10;
-"@MMK_R_Ka.MGondi" = -20;
 "@MMK_R_Nga.MGondi" = -30;
-Ca.MGondi = -15;
 Cha.MGondi = -35;
-Da.MGondi = -10;
-Jha.MGondi = -20;
-Kha.MGondi = -20;
-Kssa.MGondi = -20;
 Nga.MGondi = -35;
 Sha.MGondi = -20;
-Va.MGondi = -10;
 };
 Kha.MGondi = {
+"@MMK_R_Ca.MGondi" = -40;
+"@MMK_R_MatraAaRepha.MGondi" = -30;
 Anusvara.MGondi = -200;
-Ca.MGondi = -40;
 Ma.MGondi = -50;
-Nukta.MGondi = 10;
-};
-KhaHalf.MGondi = {
-"@MMK_R_Da.MGondi" = 15;
-"@MMK_R_Ka.MGondi" = 10;
-"@MMK_R_Tta.MGondi" = 30;
-Da.MGondi = 15;
-Ga.MGondi = 20;
-Nya.MGondi = 20;
-Sa.MGondi = 10;
-Tha.MGondi = 10;
-Ttha.MGondi = 20;
-};
-Kssa.MGondi = {
-Chandra.MGondi = 30;
 };
 La.MGondi = {
-"@MMK_R_MatraAa.MGondi" = 0;
 Anusvara.MGondi = -220;
-Ca.MGondi = -30;
 };
 Ma.MGondi = {
 "@MMK_R_Ca.MGondi" = -30;
-"@MMK_R_MatraAa" = 150;
-"@MMK_R_MatraAa.MGondi" = -60;
 "@MMK_R_MatraAaAnusvara.MGondi" = 120;
-"@MMK_R_MatraAi.MGondi" = 30;
+"@MMK_R_MatraAaRepha.MGondi" = 100;
+"@MMK_R_MatraAi.MGondi" = 130;
 "@MMK_R_MatraAu.MGondi" = 150;
 "@MMK_R_MatraE.MGondi" = 30;
 "@MMK_R_MatraI.MGondi" = 30;
@@ -15871,11 +16419,12 @@ Ma.MGondi = {
 "@MMK_R_MatraO.MGondi" = 120;
 "@MMK_R_MatraU.MGondi" = 30;
 "@MMK_R_MatraUu.MGondi" = 30;
-"@MMK_R_period.GGondi" = -70;
+"@MMK_R_period.MGondi" = -70;
 Anusvara.MGondi = -180;
 Chandra.MGondi = 40;
 Halanta.MGondi = -40;
 Ma.MGondi = -30;
+MatraAa.MGondi = 150;
 MatraAaChandra.MGondi = 150;
 MatraVocalicR.MGondi = -30;
 Visarga.MGondi = 30;
@@ -15905,6 +16454,10 @@ MatraAaAnusvara.MGondi = {
 Repha.MGondi = 220;
 quoteleft.MGondi = 50;
 };
+MatraAaRepha.MGondi = {
+Anusvara.MGondi = 40;
+Visarga.MGondi = 250;
+};
 MatraAaVisarga.MGondi = {
 Repha.MGondi = 200;
 };
@@ -15913,16 +16466,10 @@ Anusvara.alt.MGondi = 180;
 Repha.MGondi = 160;
 Repha.alt.MGondi = 140;
 };
-MatraAiAnusvara.MGondi = {
-Repha.MGondi = 220;
-};
 MatraAu.MGondi = {
 Anusvara.alt.MGondi = 240;
 Repha.MGondi = 220;
 Repha.alt.MGondi = 200;
-};
-MatraAuAnusvara.MGondi = {
-Repha.MGondi = 250;
 };
 MatraAuVisarga.MGondi = {
 Repha.MGondi = 250;
@@ -15932,31 +16479,19 @@ Anusvara.alt.MGondi = 180;
 Repha.MGondi = 170;
 Repha.alt.MGondi = 160;
 };
-MatraEAnusvara.MGondi = {
-Repha.MGondi = 220;
-};
 MatraI.MGondi = {
 Bha.MGondi = 50;
 Repha.MGondi = 220;
 Repha.alt.MGondi = 200;
-};
-MatraIAnusvara.MGondi = {
-Repha.MGondi = 220;
 };
 MatraIi.MGondi = {
 Anusvara.alt.MGondi = 180;
 Repha.MGondi = 180;
 Repha.alt.MGondi = 180;
 };
-MatraIiAnusvara.MGondi = {
-Repha.MGondi = 220;
-};
 MatraO.MGondi = {
 Anusvara.alt.MGondi = 240;
 Repha.MGondi = 220;
-};
-MatraOAnusvara.MGondi = {
-Repha.MGondi = 250;
 };
 MatraOVisarga.MGondi = {
 Repha.MGondi = 250;
@@ -15965,9 +16500,6 @@ MatraU.MGondi = {
 Anusvara.alt.MGondi = 180;
 Repha.MGondi = 180;
 Repha.alt.MGondi = 170;
-};
-MatraUAnusvara.MGondi = {
-Repha.MGondi = 220;
 };
 MatraUu.MGondi = {
 Anusvara.alt.MGondi = 220;
@@ -15982,31 +16514,25 @@ MatraVocalicR.MGondi = {
 Repha.MGondi = 120;
 Repha.alt.MGondi = 130;
 };
-Na.MGondi = {
-"@MMK_R_MatraAa.MGondi" = -10;
-Ca.MGondi = -40;
-Chandra.MGondi = 32;
-};
 Nga.MGondi = {
 "@MMK_R_Ca.MGondi" = -40;
-"@MMK_R_MatraAa" = 180;
-"@MMK_R_MatraAa.MGondi" = 0;
 "@MMK_R_MatraAaAnusvara.MGondi" = 160;
-"@MMK_R_MatraAi.MGondi" = 30;
+"@MMK_R_MatraAaRepha.MGondi" = 160;
+"@MMK_R_MatraAi.MGondi" = 170;
+"@MMK_R_MatraAu.MGondi" = 160;
 "@MMK_R_MatraE.MGondi" = 30;
-"@MMK_R_MatraIi" = 40;
-"@MMK_R_MatraIi.MGondi" = 50;
+"@MMK_R_MatraI.MGondi" = 60;
+"@MMK_R_MatraIi.MGondi" = 40;
+"@MMK_R_MatraO.MGondi" = 160;
 "@MMK_R_MatraU.MGondi" = 40;
 "@MMK_R_MatraUu.MGondi" = 30;
-"@MMK_R_period.GGondi" = -70;
+"@MMK_R_period.MGondi" = -70;
 Anusvara.MGondi = -180;
 Chandra.MGondi = 60;
 Halanta.MGondi = -40;
 Ma.MGondi = -50;
+MatraAa.MGondi = 180;
 MatraAaChandra.MGondi = 180;
-MatraAu.MGondi = 160;
-MatraI.MGondi = 60;
-MatraO.MGondi = 160;
 MatraVocalicR.MGondi = -30;
 Rakara.MGondi = -60;
 Visarga.MGondi = 40;
@@ -16016,34 +16542,33 @@ NgaHalf.MGondi = {
 Da.MGondi = 10;
 };
 Nna.MGondi = {
-"@MMK_R_period.GGondi" = -70;
+"@MMK_R_Ca.MGondi" = -30;
+"@MMK_R_MatraI.MGondi" = 10;
+"@MMK_R_period.MGondi" = -70;
 Anusvara.MGondi = -200;
-Ca.MGondi = -30;
 Chandra.MGondi = 40;
 Ma.MGondi = -50;
-MatraI.MGondi = 10;
 };
 Nya.MGondi = {
 "@MMK_R_Ca.MGondi" = -30;
-"@MMK_R_MatraAa" = 120;
-"@MMK_R_MatraAa.MGondi" = -20;
 "@MMK_R_MatraAaAnusvara.MGondi" = 80;
-"@MMK_R_MatraAi.MGondi" = 20;
+"@MMK_R_MatraAaRepha.MGondi" = 100;
+"@MMK_R_MatraAi.MGondi" = 120;
+"@MMK_R_MatraAu.MGondi" = 80;
 "@MMK_R_MatraE.MGondi" = 40;
 "@MMK_R_MatraI.MGondi" = 40;
-"@MMK_R_MatraIi" = 40;
 "@MMK_R_MatraIi.MGondi" = 40;
+"@MMK_R_MatraO.MGondi" = 100;
 "@MMK_R_MatraU.MGondi" = -20;
-"@MMK_R_period.GGondi" = -70;
+"@MMK_R_MatraUu.MGondi" = 20;
+"@MMK_R_period.MGondi" = -70;
 Anusvara.MGondi = -180;
 Chandra.MGondi = 60;
 Halanta.MGondi = -30;
 Ma.MGondi = -50;
+MatraAa.MGondi = 130;
 MatraAaChandra.MGondi = 140;
-MatraAu.MGondi = 80;
-MatraO.MGondi = 100;
 MatraU.MGondi = 40;
-MatraUu.MGondi = 20;
 MatraVocalicR.MGondi = -30;
 Visarga.MGondi = 30;
 };
@@ -16079,28 +16604,24 @@ Chandra.MGondi = 30;
 Ma.MGondi = -50;
 };
 Pha.MGondi = {
-Ca.MGondi = -30;
 Chandra.MGondi = 30;
-};
-Ra.MGondi = {
-"@MMK_R_MatraAa.MGondi" = -10;
 };
 Rakara.MGondi = {
 Repha.MGondi = 180;
 Repha.alt.MGondi = 180;
 };
+Repha.MGondi = {
+Visarga.MGondi = 180;
+};
 Sa.MGondi = {
-"@MMK_R_MatraAa" = 30;
-"@MMK_R_MatraAa.MGondi" = -40;
-"@MMK_R_MatraIi" = -40;
-"@MMK_R_MatraIi.MGondi" = -50;
-"@MMK_R_period.GGondi" = -70;
+"@MMK_R_Ca.MGondi" = -30;
+"@MMK_R_MatraI.MGondi" = -40;
+"@MMK_R_MatraIi.MGondi" = -40;
+"@MMK_R_MatraU.MGondi" = -40;
+"@MMK_R_MatraUu.MGondi" = -40;
+"@MMK_R_period.MGondi" = -70;
 Anusvara.MGondi = -200;
-Ca.MGondi = -30;
 Ma.MGondi = -50;
-MatraI.MGondi = -40;
-MatraU.MGondi = -40;
-MatraUu.MGondi = -40;
 };
 SaHalf.MGondi = {
 Ga.MGondi = 15;
@@ -16108,18 +16629,17 @@ Tha.MGondi = -10;
 };
 Sha.MGondi = {
 "@MMK_R_Ca.MGondi" = -30;
-"@MMK_R_MatraAa.MGondi" = 30;
 "@MMK_R_MatraAaAnusvara.MGondi" = 30;
+"@MMK_R_MatraAaRepha.MGondi" = 60;
 "@MMK_R_MatraAi.MGondi" = 30;
 "@MMK_R_MatraAu.MGondi" = 70;
 "@MMK_R_MatraE.MGondi" = 20;
 "@MMK_R_MatraI.MGondi" = 40;
-"@MMK_R_MatraIi" = 30;
 "@MMK_R_MatraIi.MGondi" = 30;
 "@MMK_R_MatraO.MGondi" = 40;
 "@MMK_R_MatraU.MGondi" = 50;
 "@MMK_R_MatraUu.MGondi" = 20;
-"@MMK_R_period.GGondi" = -70;
+"@MMK_R_period.MGondi" = -70;
 Anusvara.MGondi = -180;
 Chandra.MGondi = 70;
 Halanta.MGondi = -60;
@@ -16131,27 +16651,19 @@ Rakara.MGondi = -40;
 ShaHalf.MGondi = {
 Tha.MGondi = 10;
 };
-Ssa.MGondi = {
-"@MMK_R_MatraAa.MGondi" = -10;
-};
-Ta.MGondi = {
-"@MMK_R_MatraIi" = 15;
-"@MMK_R_period.GGondi" = -70;
-Ca.MGondi = -30;
-Chandra.MGondi = 30;
-MatraAaChandra.MGondi = 50;
-MatraI.MGondi = 20;
-MatraUu.MGondi = 15;
-};
 Tha.MGondi = {
 "@MMK_R_Ca.MGondi" = -30;
-"@MMK_R_MatraAa.MGondi" = 80;
 "@MMK_R_MatraAaAnusvara.MGondi" = 90;
+"@MMK_R_MatraAaRepha.MGondi" = 100;
+"@MMK_R_MatraAi.MGondi" = 120;
+"@MMK_R_MatraAu.MGondi" = 120;
+"@MMK_R_MatraE.MGondi" = 60;
 "@MMK_R_MatraI.MGondi" = 80;
-"@MMK_R_MatraIi" = 80;
 "@MMK_R_MatraIi.MGondi" = 80;
-"@MMK_R_MatraU" = 40;
-"@MMK_R_period.GGondi" = -70;
+"@MMK_R_MatraO.MGondi" = 120;
+"@MMK_R_MatraU.MGondi" = 40;
+"@MMK_R_MatraUu.MGondi" = 60;
+"@MMK_R_period.MGondi" = -70;
 Anusvara.MGondi = -180;
 Anusvara.alt.MGondi = 40;
 Chandra.MGondi = 100;
@@ -16159,13 +16671,8 @@ Halanta.MGondi = 60;
 Ma.MGondi = -20;
 MatraAaChandra.MGondi = 150;
 MatraAi.MGondi = 60;
-MatraAu.MGondi = 120;
-MatraE.MGondi = 60;
-MatraO.MGondi = 120;
 MatraU.MGondi = 100;
-MatraUu.MGondi = 60;
 MatraVocalicR.MGondi = 50;
-Nukta.MGondi = 50;
 Rakara.MGondi = 80;
 Repha.MGondi = 60;
 Repha.alt.MGondi = 60;
@@ -16186,11 +16693,10 @@ Sa.MGondi = -20;
 Tra.MGondi = -15;
 };
 Tta.MGondi = {
-"@MMK_R_MatraAa.MGondi" = -30;
-"@MMK_R_MatraU.MGondi" = -60;
+"@MMK_R_Ca.MGondi" = -30;
+"@MMK_R_MatraU.MGondi" = -40;
 "@MMK_R_MatraUu.MGondi" = -40;
 Anusvara.MGondi = -200;
-Ca.MGondi = -30;
 Chandra.MGondi = -40;
 Ma.MGondi = -50;
 MatraVocalicR.MGondi = 30;
@@ -16210,8 +16716,6 @@ Tha.MGondi = -12;
 Tra.MGondi = 15;
 };
 Ttha.MGondi = {
-"@MMK_R_MatraAa.MGondi" = 0;
-Ca.MGondi = -30;
 Chandra.MGondi = 30;
 };
 TthaHalf.MGondi = {
@@ -16219,20 +16723,18 @@ Ma.MGondi = -15;
 };
 Va.MGondi = {
 "@MMK_R_Ca.MGondi" = -30;
-"@MMK_R_MatraAa" = 60;
-"@MMK_R_MatraIi" = -30;
+"@MMK_R_MatraAu.MGondi" = 60;
 "@MMK_R_MatraIi.MGondi" = -30;
-"@MMK_R_period.GGondi" = -70;
+"@MMK_R_MatraO.MGondi" = 60;
+"@MMK_R_MatraU.MGondi" = -40;
+"@MMK_R_period.MGondi" = -70;
 Anusvara.MGondi = -220;
 Chandra.MGondi = -40;
 Halanta.MGondi = -40;
 Ma.MGondi = -50;
-MatraAu.MGondi = 60;
-MatraO.MGondi = 60;
-MatraU.MGondi = -40;
 };
 VaHalf.MGondi = {
-Ca.MGondi = -30;
+"@MMK_R_Ca.MGondi" = -30;
 Cha.MGondi = -32;
 Sha.MGondi = -10;
 };
@@ -16242,9 +16744,6 @@ Repha.MGondi = 180;
 Visarga.alt.MGondi = {
 Repha.MGondi = 200;
 Repha.alt.MGondi = 190;
-};
-VowelA.MGondi = {
-Anusvara.MGondi = -220;
 };
 VowelAa.MGondi = {
 Anusvara.MGondi = -220;
@@ -16256,9 +16755,6 @@ Anusvara.MGondi = -60;
 VowelAu.MGondi = {
 Anusvara.MGondi = -20;
 };
-VowelE.MGondi = {
-Chandra.MGondi = -40;
-};
 VowelI.MGondi = {
 Anusvara.MGondi = -40;
 };
@@ -16267,9 +16763,6 @@ Anusvara.MGondi = -60;
 };
 VowelUu.MGondi = {
 Anusvara.MGondi = -40;
-};
-Ya.MGondi = {
-"@MMK_R_MatraAa.MGondi" = -10;
 };
 quoteright.MGondi = {
 Tha.MGondi = 40;
@@ -16280,5 +16773,5 @@ manufacturer = "Ek Type";
 manufacturerURL = "http://www.google.com/get/noto/";
 unitsPerEm = 1000;
 versionMajor = 1;
-versionMinor = 0;
+versionMinor = 2;
 }
