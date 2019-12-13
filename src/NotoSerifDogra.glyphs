@@ -1,5 +1,8 @@
 {
 .appVersion = "1271";
+DisplayStrings = (
+"/uni25CC"
+);
 classes = (
 {
 code = "Ka.dogra Kha.dogra Ga.dogra Gha.dogra Nga.dogra Ca.dogra Cha.dogra Ja.dogra Jha.dogra Nya.dogra Tta.dogra Ttha.dogra Dda.dogra Ddha.dogra Nna.dogra Ta.dogra Tha.dogra Da.dogra Dha.dogra Na.dogra Pa.dogra Pha.dogra Ba.dogra Bha.dogra Ma.dogra Ya.dogra Ra.dogra La.dogra Va.dogra Sha.dogra Ssa.dogra Sa.dogra Ha.dogra Rra.dogra JaNya.dogra KaSsa.dogra TaRa.dogra ShaRa.dogra SaTta.dogra Dha.alt.dogra Ttha.alt.dogra Rra.alt.dogra Ga.old.dogra Jha.old.dogra Ra.old.dogra Dha.old.dogra Gha.old.dogra Tha.old1.dogra Nga.old1.dogra Nga.old2.dogra Tha.old2.dogra Nna.old.dogra Nya.old.dogra Sha.old.dogra\012\012";
@@ -129,6 +132,10 @@ matraAu.old.dogra,
 matraIiAnusvara.old.dogra,
 matraOAnusvara.old.dogra,
 matraAuAnusvara.old.dogra,
+NuktamatraU.dogra,
+NuktamatraUu.dogra,
+NuktamatraU.old.dogra,
+NuktamatraUu.old.dogra,
 vowelL.dogra,
 vowelLl.dogra,
 vowelR.dogra,
@@ -174,14 +181,14 @@ value = GOOG;
 },
 {
 name = trademark;
-value = "Noto is a trademark of Google Inc.";
+value = "Noto is a trademark of Google LLC";
 },
 {
 name = versionString;
-value = "Version 1.001";
+value = "Version 1.002";
 }
 );
-date = "2019-09-06 07:01:25 +0000";
+date = "2019-11-22 12:14:44 +0000";
 designer = "Ek Type";
 designerURL = "http://www.ektype.in";
 disablesNiceNames = 1;
@@ -202,35 +209,15 @@ name = ReorderAnusvara2;
 );
 features = (
 {
-code = "	sub Ka.dogra Virama.dogra Ssa.dogra by KaSsa.dogra;\012	sub Ja.dogra Virama.dogra Nya.dogra by JaNya.dogra;\012	sub Sa.dogra Virama.dogra Tta.dogra by SaTta.dogra;\012	sub Nna.dogra matraAa.dogra by NnaMatraAa.dogra;";
-name = akhn;
+code = "lookup akhn {\012	sub Ka.dogra Virama.dogra Ssa.dogra by KaSsa.dogra;\012	sub Ja.dogra Virama.dogra Nya.dogra by JaNya.dogra;\012	sub Sa.dogra Virama.dogra Tta.dogra by SaTta.dogra;\012	sub Nna.dogra matraAa.dogra by NnaMatraAa.dogra;\012}akhn;\012\012lookup rkrf {	\012	sub Ta.dogra Virama.dogra Ra.dogra by TaRa.dogra;\012	sub Sha.dogra Virama.dogra Ra.dogra by ShaRa.dogra;\012}rkrf;\012\012lookup pres {	\012	sub matraI.dogra' [Kha.dogra Nga.dogra Nna.dogra Pa.dogra Ma.dogra KaSsa.dogra Gha.old.dogra Nga.old2.dogra Ttha.alt.dogra] by matraI.alt.dogra;\012}pres;\012\012lookup psts1 {\012	sub matraIi.dogra Anusvara.dogra by matraIiAnusvara.dogra;\012}psts1;\012\012lookup psts2 {	\012	sub [Kha.dogra Pa.dogra Ma.dogra KaSsa.dogra Gha.old.dogra] matraAa.dogra' by matraAa.alt.dogra;	\012	sub [Kha.dogra Nga.dogra Nna.dogra Pa.dogra Ma.dogra KaSsa.dogra Gha.old.dogra Nga.old2.dogra Ttha.alt.dogra] matraIi.dogra' by matraIi.alt.dogra;\012	sub [Kha.dogra Nga.dogra Nna.dogra Pa.dogra Ma.dogra KaSsa.dogra Gha.old.dogra Nga.old2.dogra Ttha.alt.dogra] matraIiAnusvara.dogra' by matraIiAnusvara.alt.dogra;\012}psts2;\012\012lookup abvs1 {	\012	sub matraE.dogra Anusvara.dogra by matraEAnusvara.dogra;\012	sub matraAi.dogra Anusvara.dogra by matraAiAnusvara.dogra;\012	sub matraO.dogra Anusvara.dogra by matraOAnusvara.dogra;\012	sub matraAu.dogra Anusvara.dogra by matraAuAnusvara.dogra;\012	sub vowelO.dogra Anusvara.dogra by vowelOAnusvara.dogra;\012	sub vowelAu.dogra Anusvara.dogra by vowelAuAnusvara.dogra;\012}abvs1;\012\012lookup abvs2 {	\012	sub matraAa.dogra' lookup ReorderAnusvara1 Anusvara.dogra' lookup ReorderAnusvara1;	\012	sub matraAa.alt.dogra' lookup ReorderAnusvara2 Anusvara.dogra' lookup ReorderAnusvara2;	\012}abvs2;\012\012lookup abvs3 {	\012	sub matraI.dogra @allconsonants Anusvara.dogra' by Anusvara.alt.dogra;\012	sub matraI.alt.dogra @allconsonants Anusvara.dogra' by Anusvara.alt.dogra;\012}abvs3;\012\012lookup blws1 {	\012	sub [Kha.dogra Cha.dogra Ja.dogra Nya.dogra Nya.old.dogra Na.dogra Pa.dogra Ma.dogra La.dogra Ba.dogra Sa.dogra Dha.old.dogra Gha.old.dogra Tha.old1.dogra Ga.dogra Gha.dogra Tha.dogra Dha.dogra Ya.dogra Sha.dogra Ssa.dogra Ra.dogra ShaRa.dogra] matraR.dogra' by matraR.alt.dogra;\012	sub [Kha.dogra Cha.dogra Ja.dogra Nya.dogra Nya.old.dogra Na.dogra Pa.dogra Ma.dogra La.dogra Va.dogra Ba.dogra Sa.dogra Dha.old.dogra Gha.old.dogra Tha.old1.dogra Ga.dogra Gha.dogra Tha.dogra Dha.dogra Ya.dogra Sha.dogra Ssa.dogra Ra.dogra ShaRa.dogra] matraRr.dogra' by matraRr.alt.dogra;\012}blws1;\012\012lookup blws2 {	\012	sub Va.dogra matraR.dogra by VaMatraR.dogra;	\012	sub Nukta.dogra matraU.dogra by NuktamatraU.dogra;\012	sub Nukta.dogra matraUu.dogra by NuktamatraUu.dogra;\012}blws2;";
+name = calt;
 },
 {
-code = "	sub Ta.dogra Virama.dogra Ra.dogra by TaRa.dogra;\012	sub Sha.dogra Virama.dogra Ra.dogra by ShaRa.dogra;";
-name = rkrf;
-},
-{
-code = "	sub matraI.dogra' [Kha.dogra Nga.dogra Nna.dogra Pa.dogra Ma.dogra KaSsa.dogra Gha.old.dogra Nga.old2.dogra Ttha.alt.dogra] by matraI.alt.dogra;";
-name = pres;
-},
-{
-code = "	sub [Kha.dogra Pa.dogra Ma.dogra KaSsa.dogra Gha.old.dogra] matraAa.dogra' by matraAa.alt.dogra;	\012	sub matraIi.dogra Anusvara.dogra by matraIiAnusvara.dogra;\012	sub [Kha.dogra Nga.dogra Nna.dogra Pa.dogra Ma.dogra KaSsa.dogra Gha.old.dogra Nga.old2.dogra Ttha.alt.dogra] matraIi.dogra' by matraIi.alt.dogra;\012	sub [Kha.dogra Nga.dogra Nna.dogra Pa.dogra Ma.dogra KaSsa.dogra Gha.old.dogra Nga.old2.dogra Ttha.alt.dogra] matraIiAnusvara.dogra' by matraIiAnusvara.alt.dogra;";
-name = psts;
-},
-{
-code = "	sub matraE.dogra Anusvara.dogra by matraEAnusvara.dogra;\012	sub matraAi.dogra Anusvara.dogra by matraAiAnusvara.dogra;\012	sub matraO.dogra Anusvara.dogra by matraOAnusvara.dogra;\012	sub matraAu.dogra Anusvara.dogra by matraAuAnusvara.dogra;\012	sub vowelO.dogra Anusvara.dogra by vowelOAnusvara.dogra;\012	sub vowelAu.dogra Anusvara.dogra by vowelAuAnusvara.dogra;\012		\012	sub matraAa.dogra' lookup ReorderAnusvara1 Anusvara.dogra' lookup ReorderAnusvara1;	\012	sub matraAa.alt.dogra' lookup ReorderAnusvara2 Anusvara.dogra' lookup ReorderAnusvara2;	\012	\012	sub matraI.dogra @allconsonants Anusvara.dogra' by Anusvara.alt.dogra;\012	sub matraI.alt.dogra @allconsonants Anusvara.dogra' by Anusvara.alt.dogra;";
-name = abvs;
-},
-{
-code = "	sub [Kha.dogra Cha.dogra Ja.dogra Nya.dogra Nya.old.dogra Na.dogra Pa.dogra Ma.dogra La.dogra Ba.dogra Sa.dogra Dha.old.dogra Gha.old.dogra Tha.old1.dogra Ga.dogra Gha.dogra Tha.dogra Dha.dogra Ya.dogra Sha.dogra Ssa.dogra Ra.dogra ShaRa.dogra] matraR.dogra' by matraR.alt.dogra;\012	sub [Kha.dogra Cha.dogra Ja.dogra Nya.dogra Nya.old.dogra Na.dogra Pa.dogra Ma.dogra La.dogra Va.dogra Ba.dogra Sa.dogra Dha.old.dogra Gha.old.dogra Tha.old1.dogra Ga.dogra Gha.dogra Tha.dogra Dha.dogra Ya.dogra Sha.dogra Ssa.dogra Ra.dogra ShaRa.dogra] matraRr.dogra' by matraRr.alt.dogra;\012	\012	sub Va.dogra matraR.dogra by VaMatraR.dogra;";
-name = blws;
-},
-{
-code = " #Alternate forms\012	sub vowelUu.dogra by vowelUu.alt.dogra;\012	sub Dha.dogra by Dha.alt.dogra;\012	sub Ttha.dogra by Ttha.alt.dogra;\012	sub Rra.dogra by Rra.alt.dogra;\012	\012	sub Ttha.alt.dogra matraIi.dogra' by matraIi.alt.dogra;\012	sub matraI.dogra' Ttha.alt.dogra  by matraI.alt.dogra;";
+code = " #Alternate forms\012	sub vowelUu.dogra by vowelUu.alt.dogra;\012	sub Dha.dogra by Dha.alt.dogra;\012	sub Ttha.dogra by Ttha.alt.dogra;\012	sub Rra.dogra by Rra.alt.dogra;\012	\012	sub Ttha.alt.dogra matraIi.dogra' by matraIi.alt.dogra;\012	sub matraI.dogra' Ttha.alt.dogra  by matraI.alt.dogra;\012	sub Ttha.alt.dogra matraIiAnusvara.dogra' by matraIiAnusvara.alt.dogra;";
 name = ss01;
 },
 {
-code = " #Oldstyle forms 1\012	sub vowelAa.dogra by vowelAa.old.dogra;\012	sub vowelI.dogra by vowelI.old1.dogra;\012	sub vowelU.dogra by vowelU.old.dogra;\012	sub vowelUu.dogra by vowelU.old.dogra;\012	sub vowelAi.dogra by vowelAi.old1.dogra;\012	sub vowelO.dogra by vowelO.old.dogra;\012	sub vowelAu.dogra by vowelO.old.dogra;\012	sub Ga.dogra by Ga.old.dogra;\012	sub Gha.dogra by Gha.old.dogra;\012	sub Nga.dogra by Nga.old1.dogra;\012	sub Jha.dogra by Jha.old.dogra;\012	sub Nya.dogra by Nya.old.dogra;\012	sub Ttha.dogra by Ttha.alt.dogra;\012	sub Nna.dogra by Nna.old.dogra;\012	sub Tha.dogra by Tha.old1.dogra;\012	sub Dha.dogra by Dha.old.dogra;\012	sub Ra.dogra by Ra.old.dogra;\012	sub Ba.dogra by Ba.old.dogra;\012	sub Sha.dogra by Sha.old.dogra;\012	sub matraI.dogra by matraI.old.dogra;\012	sub matraI.alt.dogra by matraI.old.dogra;\012	sub matraIi.dogra by matraIi.old.dogra;\012	sub matraIi.alt.dogra by matraIi.old.dogra;\012	sub matraU.dogra by matraU.old.dogra;\012	sub matraUu.dogra by matraUu.old.dogra;\012	sub matraO.dogra by matraO.old.dogra;\012	sub matraAu.dogra by matraAu.old.dogra;\012	sub NnaMatraAa.dogra by Nna.old.dogra matraAa.dogra;\012	sub matraOAnusvara.dogra by matraOAnusvara.old.dogra;\012	sub matraAuAnusvara.dogra by matraAuAnusvara.old.dogra;	\012\012	sub matraI.dogra @allconsonants Anusvara.dogra' by Anusvara.alt.dogra;\012	sub matraI.alt.dogra @allconsonants Anusvara.dogra' by Anusvara.alt.dogra;\012	\012	sub matraIiAnusvara.dogra by matraIiAnusvara.old.dogra;	\012	sub matraIiAnusvara.alt.dogra by matraIiAnusvara.old.dogra;	\012	\012	sub Ra.old.dogra matraR.alt.dogra' by matraR.dogra;	\012	sub Ra.old.dogra matraRr.alt.dogra' by matraRr.dogra;	\012	sub Ga.old.dogra matraR.alt.dogra' by matraR.dogra;	\012	sub Ga.old.dogra matraRr.alt.dogra' by matraRr.dogra;\012	sub Nga.old1.dogra matraR.alt.dogra' by matraR.dogra;	\012	sub Nga.old1.dogra matraRr.alt.dogra' by matraRr.dogra;	\012	sub Gha.old.dogra matraAa.dogra' by matraAa.alt.dogra;	\012	sub Ttha.alt.dogra matraIi.dogra' by matraIi.alt.dogra;\012	sub matraI.dogra' Ttha.alt.dogra  by matraI.alt.dogra;";
+code = " #Oldstyle forms 1\012	sub vowelAa.dogra by vowelAa.old.dogra;\012	sub vowelI.dogra by vowelI.old1.dogra;\012	sub vowelU.dogra by vowelU.old.dogra;\012	sub vowelUu.dogra by vowelU.old.dogra;\012	sub vowelAi.dogra by vowelAi.old1.dogra;\012	sub vowelO.dogra by vowelO.old.dogra;\012	sub vowelAu.dogra by vowelO.old.dogra;\012	sub Ga.dogra by Ga.old.dogra;\012	sub Gha.dogra by Gha.old.dogra;\012	sub Nga.dogra by Nga.old1.dogra;\012	sub Jha.dogra by Jha.old.dogra;\012	sub Nya.dogra by Nya.old.dogra;\012	sub Ttha.dogra by Ttha.alt.dogra;\012	sub Nna.dogra by Nna.old.dogra;\012	sub Tha.dogra by Tha.old1.dogra;\012	sub Dha.dogra by Dha.old.dogra;\012	sub Ra.dogra by Ra.old.dogra;\012	sub Ba.dogra by Ba.old.dogra;\012	sub Sha.dogra by Sha.old.dogra;\012	sub matraI.dogra by matraI.old.dogra;\012	sub matraI.alt.dogra by matraI.old.dogra;\012	sub matraIi.dogra by matraIi.old.dogra;\012	sub matraIi.alt.dogra by matraIi.old.dogra;\012	sub matraU.dogra by matraU.old.dogra;\012	sub matraUu.dogra by matraUu.old.dogra;\012	sub matraO.dogra by matraO.old.dogra;\012	sub matraAu.dogra by matraAu.old.dogra;\012	sub NnaMatraAa.dogra by Nna.old.dogra matraAa.dogra;\012	sub matraOAnusvara.dogra by matraOAnusvara.old.dogra;\012	sub matraAuAnusvara.dogra by matraAuAnusvara.old.dogra;	\012	sub NuktamatraU.dogra by  NuktamatraU.old.dogra;\012	sub NuktamatraUu.dogra by NuktamatraUu.old.dogra;\012\012	sub matraI.dogra @allconsonants Anusvara.dogra' by Anusvara.alt.dogra;\012	sub matraI.alt.dogra @allconsonants Anusvara.dogra' by Anusvara.alt.dogra;\012	\012	sub matraIiAnusvara.dogra by matraIiAnusvara.old.dogra;	\012	sub matraIiAnusvara.alt.dogra by matraIiAnusvara.old.dogra;	\012	\012	sub Ra.old.dogra matraR.alt.dogra' by matraR.dogra;	\012	sub Ra.old.dogra matraRr.alt.dogra' by matraRr.dogra;	\012	sub Ga.old.dogra matraR.alt.dogra' by matraR.dogra;	\012	sub Ga.old.dogra matraRr.alt.dogra' by matraRr.dogra;\012	sub Nga.old1.dogra matraR.alt.dogra' by matraR.dogra;	\012	sub Nga.old1.dogra matraRr.alt.dogra' by matraRr.dogra;	\012	sub Gha.old.dogra matraAa.dogra' by matraAa.alt.dogra;	\012	sub Ttha.alt.dogra matraIi.dogra' by matraIi.alt.dogra;\012	sub matraI.dogra' Ttha.alt.dogra  by matraI.alt.dogra;\012	\012	sub ShaRa.dogra by Sha.old.dogra Virama.dogra Ra.old.dogra;\012	sub vowelOAnusvara.dogra by vowelO.old.dogra Anusvara.dogra;\012	sub vowelAuAnusvara.dogra by vowelO.old.dogra Anusvara.dogra;";
 name = ss02;
 },
 {
@@ -239,7 +226,7 @@ name = ss03;
 },
 {
 automatic = 1;
-code = "feature akhn;\012feature rkrf;\012feature pres;\012feature psts;\012feature abvs;\012feature blws;\012feature ss01;\012feature ss02;\012feature ss03;\012";
+code = "feature calt;\012feature ss01;\012feature ss02;\012feature ss03;\012";
 name = aalt;
 }
 );
@@ -248,8 +235,9 @@ fontMaster = (
 alignmentZones = (
 "{1130, 15}",
 "{625, 15}",
+"{554, 15}",
 "{0, -15}",
-"{-350, -15}"
+"{-364, -15}"
 );
 ascender = 1130;
 capHeight = 625;
@@ -263,7 +251,7 @@ name = underlinePosition;
 value = -100;
 }
 );
-descender = -350;
+descender = -364;
 horizontalStems = (
 67
 );
@@ -3699,7 +3687,7 @@ category = Letter;
 },
 {
 glyphname = Tta.dogra;
-lastChange = "2019-09-07 12:07:09 +0000";
+lastChange = "2019-11-22 11:28:28 +0000";
 layers = (
 {
 anchors = (
@@ -8237,7 +8225,7 @@ category = Letter;
 },
 {
 glyphname = matraU.dogra;
-lastChange = "2019-09-07 12:07:09 +0000";
+lastChange = "2019-11-22 11:27:27 +0000";
 layers = (
 {
 anchors = (
@@ -9129,7 +9117,7 @@ subCategory = Nonspacing;
 },
 {
 glyphname = Nukta.dogra;
-lastChange = "2019-09-07 12:07:09 +0000";
+lastChange = "2019-11-19 16:09:18 +0000";
 layers = (
 {
 anchors = (
@@ -9280,7 +9268,7 @@ category = Punctuation;
 },
 {
 glyphname = JaNya.dogra;
-lastChange = "2019-09-07 12:07:09 +0000";
+lastChange = "2019-11-20 09:04:12 +0000";
 layers = (
 {
 anchors = (
@@ -9475,10 +9463,12 @@ nodes = (
 width = 774;
 }
 );
+category = Letter;
+subCategory = Other;
 },
 {
 glyphname = KaSsa.dogra;
-lastChange = "2019-09-07 12:07:09 +0000";
+lastChange = "2019-11-20 09:04:23 +0000";
 layers = (
 {
 anchors = (
@@ -9721,10 +9711,12 @@ nodes = (
 width = 563;
 }
 );
+category = Letter;
+subCategory = Other;
 },
 {
 glyphname = TaRa.dogra;
-lastChange = "2019-09-14 07:47:46 +0000";
+lastChange = "2019-11-20 10:18:26 +0000";
 layers = (
 {
 anchors = (
@@ -9876,7 +9868,7 @@ width = 546;
 },
 {
 glyphname = ShaRa.dogra;
-lastChange = "2019-09-07 12:09:17 +0000";
+lastChange = "2019-11-20 09:04:46 +0000";
 layers = (
 {
 anchors = (
@@ -10097,10 +10089,12 @@ nodes = (
 width = 822;
 }
 );
+category = Letter;
+subCategory = Other;
 },
 {
 glyphname = SaTta.dogra;
-lastChange = "2019-09-07 12:07:09 +0000";
+lastChange = "2019-11-20 09:04:58 +0000";
 layers = (
 {
 anchors = (
@@ -10297,10 +10291,12 @@ nodes = (
 width = 601;
 }
 );
+category = Letter;
+subCategory = Other;
 },
 {
 glyphname = vowelOAnusvara.dogra;
-lastChange = "2019-09-07 12:07:09 +0000";
+lastChange = "2019-11-20 09:05:33 +0000";
 layers = (
 {
 background = {
@@ -10463,10 +10459,12 @@ nodes = (
 width = 600;
 }
 );
+category = Letter;
+subCategory = Other;
 },
 {
 glyphname = vowelAuAnusvara.dogra;
-lastChange = "2019-09-07 12:07:09 +0000";
+lastChange = "2019-11-20 09:05:33 +0000";
 layers = (
 {
 background = {
@@ -10653,10 +10651,12 @@ nodes = (
 width = 600;
 }
 );
+category = Letter;
+subCategory = Other;
 },
 {
 glyphname = NnaMatraAa.dogra;
-lastChange = "2019-09-07 12:07:09 +0000";
+lastChange = "2019-11-20 09:05:33 +0000";
 layers = (
 {
 anchors = (
@@ -10807,10 +10807,12 @@ nodes = (
 width = 1117;
 }
 );
+category = Letter;
+subCategory = Other;
 },
 {
 glyphname = VaMatraR.dogra;
-lastChange = "2019-09-07 12:07:09 +0000";
+lastChange = "2019-11-20 09:05:33 +0000";
 layers = (
 {
 anchors = (
@@ -10953,10 +10955,12 @@ nodes = (
 width = 588;
 }
 );
+category = Letter;
+subCategory = Other;
 },
 {
 glyphname = matraAa.alt.dogra;
-lastChange = "2019-09-07 12:07:09 +0000";
+lastChange = "2019-11-20 09:05:33 +0000";
 layers = (
 {
 background = {
@@ -10999,6 +11003,8 @@ nodes = (
 width = 253;
 }
 );
+category = Letter;
+subCategory = Other;
 },
 {
 glyphname = matraR.alt.dogra;
@@ -11218,7 +11224,7 @@ subCategory = Nonspacing;
 },
 {
 glyphname = matraI.alt.dogra;
-lastChange = "2019-09-07 12:07:09 +0000";
+lastChange = "2019-11-20 09:17:57 +0000";
 layers = (
 {
 background = {
@@ -11275,10 +11281,12 @@ nodes = (
 width = 284;
 }
 );
+category = Letter;
+subCategory = Other;
 },
 {
 glyphname = matraIi.alt.dogra;
-lastChange = "2019-09-07 12:07:09 +0000";
+lastChange = "2019-11-20 09:17:57 +0000";
 layers = (
 {
 background = {
@@ -11347,6 +11355,8 @@ nodes = (
 width = 284;
 }
 );
+category = Letter;
+subCategory = Other;
 },
 {
 glyphname = Anusvara.alt.dogra;
@@ -11414,7 +11424,7 @@ subCategory = Nonspacing;
 },
 {
 glyphname = matraIiAnusvara.dogra;
-lastChange = "2019-09-07 12:07:09 +0000";
+lastChange = "2019-11-20 09:17:28 +0000";
 layers = (
 {
 background = {
@@ -11537,10 +11547,12 @@ nodes = (
 width = 284;
 }
 );
+category = Letter;
+subCategory = Other;
 },
 {
 glyphname = matraIiAnusvara.alt.dogra;
-lastChange = "2019-09-07 12:07:09 +0000";
+lastChange = "2019-11-20 09:17:34 +0000";
 layers = (
 {
 background = {
@@ -11643,6 +11655,8 @@ nodes = (
 width = 284;
 }
 );
+category = Letter;
+subCategory = Other;
 },
 {
 glyphname = matraOAnusvara.dogra;
@@ -12074,7 +12088,7 @@ y = 1079;
 },
 {
 glyphname = vowelUu.alt.dogra;
-lastChange = "2019-09-07 12:07:09 +0000";
+lastChange = "2019-11-20 09:06:43 +0000";
 layers = (
 {
 anchors = (
@@ -12217,10 +12231,12 @@ nodes = (
 width = 701;
 }
 );
+category = Letter;
+subCategory = Other;
 },
 {
 glyphname = Dha.alt.dogra;
-lastChange = "2019-09-07 12:07:09 +0000";
+lastChange = "2019-11-20 09:06:43 +0000";
 layers = (
 {
 anchors = (
@@ -12383,10 +12399,12 @@ nodes = (
 width = 631;
 }
 );
+category = Letter;
+subCategory = Other;
 },
 {
 glyphname = Ttha.alt.dogra;
-lastChange = "2019-09-07 12:07:09 +0000";
+lastChange = "2019-11-20 09:06:43 +0000";
 layers = (
 {
 anchors = (
@@ -12511,10 +12529,12 @@ nodes = (
 width = 560;
 }
 );
+category = Letter;
+subCategory = Other;
 },
 {
 glyphname = Rra.alt.dogra;
-lastChange = "2019-09-07 12:07:09 +0000";
+lastChange = "2019-11-20 09:06:43 +0000";
 layers = (
 {
 anchors = (
@@ -12675,10 +12695,12 @@ nodes = (
 width = 579;
 }
 );
+category = Letter;
+subCategory = Other;
 },
 {
 glyphname = vowelAa.old.dogra;
-lastChange = "2019-09-07 12:07:09 +0000";
+lastChange = "2019-11-20 09:06:43 +0000";
 layers = (
 {
 anchors = (
@@ -12841,16 +12863,18 @@ nodes = (
 width = 770;
 }
 );
+category = Letter;
+subCategory = Other;
 },
 {
 glyphname = vowelI.old1.dogra;
-lastChange = "2019-09-07 12:07:09 +0000";
+lastChange = "2019-11-20 09:27:23 +0000";
 layers = (
 {
 anchors = (
 {
 name = top;
-position = "{254, 876}";
+position = "{254, 850}";
 }
 );
 background = {
@@ -13021,16 +13045,18 @@ nodes = (
 width = 471;
 }
 );
+category = Letter;
+subCategory = Other;
 },
 {
 glyphname = vowelI.old2.dogra;
-lastChange = "2019-09-07 12:07:09 +0000";
+lastChange = "2019-11-20 09:27:21 +0000";
 layers = (
 {
 anchors = (
 {
 name = top;
-position = "{254, 876}";
+position = "{254, 850}";
 }
 );
 background = {
@@ -13201,16 +13227,18 @@ nodes = (
 width = 636;
 }
 );
+category = Letter;
+subCategory = Other;
 },
 {
 glyphname = vowelU.old.dogra;
-lastChange = "2019-09-07 12:07:09 +0000";
+lastChange = "2019-11-20 09:26:57 +0000";
 layers = (
 {
 anchors = (
 {
 name = top;
-position = "{254, 876}";
+position = "{254, 850}";
 }
 );
 background = {
@@ -13313,10 +13341,12 @@ nodes = (
 width = 471;
 }
 );
+category = Letter;
+subCategory = Other;
 },
 {
 glyphname = vowelAi.old1.dogra;
-lastChange = "2019-09-07 12:07:09 +0000";
+lastChange = "2019-11-20 09:06:43 +0000";
 layers = (
 {
 anchors = (
@@ -13443,10 +13473,12 @@ nodes = (
 width = 583;
 }
 );
+category = Letter;
+subCategory = Other;
 },
 {
 glyphname = vowelAi.old2.dogra;
-lastChange = "2019-09-07 12:07:09 +0000";
+lastChange = "2019-11-20 09:06:43 +0000";
 layers = (
 {
 anchors = (
@@ -13571,10 +13603,12 @@ nodes = (
 width = 551;
 }
 );
+category = Letter;
+subCategory = Other;
 },
 {
 glyphname = vowelO.old.dogra;
-lastChange = "2019-09-07 12:07:09 +0000";
+lastChange = "2019-11-20 09:06:43 +0000";
 layers = (
 {
 anchors = (
@@ -13705,10 +13739,12 @@ nodes = (
 width = 687;
 }
 );
+category = Letter;
+subCategory = Other;
 },
 {
 glyphname = Ga.old.dogra;
-lastChange = "2019-09-07 12:07:09 +0000";
+lastChange = "2019-11-20 09:06:43 +0000";
 layers = (
 {
 anchors = (
@@ -13851,10 +13887,12 @@ nodes = (
 width = 606;
 }
 );
+category = Letter;
+subCategory = Other;
 },
 {
 glyphname = Jha.old.dogra;
-lastChange = "2019-09-07 12:07:09 +0000";
+lastChange = "2019-11-20 09:06:43 +0000";
 layers = (
 {
 anchors = (
@@ -14009,10 +14047,12 @@ nodes = (
 width = 741;
 }
 );
+category = Letter;
+subCategory = Other;
 },
 {
 glyphname = Ra.old.dogra;
-lastChange = "2019-09-07 12:07:09 +0000";
+lastChange = "2019-11-20 09:06:43 +0000";
 layers = (
 {
 anchors = (
@@ -14149,10 +14189,12 @@ nodes = (
 width = 590;
 }
 );
+category = Letter;
+subCategory = Other;
 },
 {
 glyphname = Dha.old.dogra;
-lastChange = "2019-09-07 12:07:09 +0000";
+lastChange = "2019-11-20 09:06:43 +0000";
 layers = (
 {
 anchors = (
@@ -14367,10 +14409,12 @@ nodes = (
 width = 736;
 }
 );
+category = Letter;
+subCategory = Other;
 },
 {
 glyphname = Gha.old.dogra;
-lastChange = "2019-09-07 12:07:09 +0000";
+lastChange = "2019-11-20 09:06:43 +0000";
 layers = (
 {
 anchors = (
@@ -14611,10 +14655,12 @@ nodes = (
 width = 828;
 }
 );
+category = Letter;
+subCategory = Other;
 },
 {
 glyphname = Tha.old1.dogra;
-lastChange = "2019-09-07 12:09:44 +0000";
+lastChange = "2019-11-20 09:06:43 +0000";
 layers = (
 {
 anchors = (
@@ -14859,10 +14905,12 @@ nodes = (
 width = 736;
 }
 );
+category = Letter;
+subCategory = Other;
 },
 {
 glyphname = Nga.old1.dogra;
-lastChange = "2019-09-07 12:07:09 +0000";
+lastChange = "2019-11-20 09:06:43 +0000";
 layers = (
 {
 anchors = (
@@ -15053,10 +15101,12 @@ nodes = (
 width = 506;
 }
 );
+category = Letter;
+subCategory = Other;
 },
 {
 glyphname = Nga.old2.dogra;
-lastChange = "2019-09-07 12:07:09 +0000";
+lastChange = "2019-11-20 09:06:43 +0000";
 layers = (
 {
 anchors = (
@@ -15213,10 +15263,12 @@ nodes = (
 width = 620;
 }
 );
+category = Letter;
+subCategory = Other;
 },
 {
 glyphname = Tha.old2.dogra;
-lastChange = "2019-09-07 12:07:09 +0000";
+lastChange = "2019-11-20 09:06:43 +0000";
 layers = (
 {
 anchors = (
@@ -15401,6 +15453,8 @@ nodes = (
 width = 631;
 }
 );
+category = Letter;
+subCategory = Other;
 userData = {
 com.typemytype.robofont.guides = (
 {
@@ -15414,7 +15468,7 @@ y = 105;
 },
 {
 glyphname = Nna.old.dogra;
-lastChange = "2019-09-07 12:07:09 +0000";
+lastChange = "2019-11-20 09:06:43 +0000";
 layers = (
 {
 anchors = (
@@ -15533,10 +15587,12 @@ nodes = (
 width = 611;
 }
 );
+category = Letter;
+subCategory = Other;
 },
 {
 glyphname = Nya.old.dogra;
-lastChange = "2019-09-07 12:07:09 +0000";
+lastChange = "2019-11-20 09:06:43 +0000";
 layers = (
 {
 anchors = (
@@ -15737,10 +15793,12 @@ nodes = (
 width = 759;
 }
 );
+category = Letter;
+subCategory = Other;
 },
 {
 glyphname = Sha.old.dogra;
-lastChange = "2019-09-07 12:07:09 +0000";
+lastChange = "2019-11-20 09:06:43 +0000";
 layers = (
 {
 anchors = (
@@ -15933,10 +15991,12 @@ nodes = (
 width = 699;
 }
 );
+category = Letter;
+subCategory = Other;
 },
 {
 glyphname = Ba.old.dogra;
-lastChange = "2019-09-07 12:09:51 +0000";
+lastChange = "2019-11-20 09:06:43 +0000";
 layers = (
 {
 anchors = (
@@ -16103,10 +16163,12 @@ nodes = (
 width = 546;
 }
 );
+category = Letter;
+subCategory = Other;
 },
 {
 glyphname = matraI.old.dogra;
-lastChange = "2019-09-07 12:07:09 +0000";
+lastChange = "2019-11-20 09:06:43 +0000";
 layers = (
 {
 background = {
@@ -16163,10 +16225,12 @@ nodes = (
 width = 284;
 }
 );
+category = Letter;
+subCategory = Other;
 },
 {
 glyphname = matraIi.old.dogra;
-lastChange = "2019-09-07 12:07:09 +0000";
+lastChange = "2019-11-20 09:06:43 +0000";
 layers = (
 {
 background = {
@@ -16223,10 +16287,12 @@ nodes = (
 width = 284;
 }
 );
+category = Letter;
+subCategory = Other;
 },
 {
 glyphname = matraU.old.dogra;
-lastChange = "2019-09-07 12:07:09 +0000";
+lastChange = "2019-11-22 11:28:10 +0000";
 layers = (
 {
 anchors = (
@@ -16652,7 +16718,7 @@ subCategory = Nonspacing;
 },
 {
 glyphname = matraIiAnusvara.old.dogra;
-lastChange = "2019-09-07 12:07:09 +0000";
+lastChange = "2019-11-22 12:05:05 +0000";
 layers = (
 {
 background = {
@@ -16740,9 +16806,11 @@ nodes = (
 );
 }
 );
-width = 600;
+width = 284;
 }
 );
+category = Letter;
+subCategory = Other;
 },
 {
 glyphname = matraOAnusvara.old.dogra;
@@ -16874,7 +16942,7 @@ subCategory = Nonspacing;
 },
 {
 glyphname = matraAuAnusvara.old.dogra;
-lastChange = "2019-09-07 12:07:09 +0000";
+lastChange = "2019-11-22 11:45:11 +0000";
 layers = (
 {
 anchors = (
@@ -17065,8 +17133,275 @@ category = Mark;
 subCategory = Nonspacing;
 },
 {
+glyphname = NuktamatraU.dogra;
+lastChange = "2019-11-22 11:45:18 +0000";
+layers = (
+{
+anchors = (
+{
+name = _bottom2;
+position = "{-303, -30}";
+}
+);
+layerId = "284FCB4C-24BB-4F0E-B388-CD6C9D45C343";
+paths = (
+{
+closed = 1;
+nodes = (
+"-276 -145 OFFCURVE",
+"-254 -120 OFFCURVE",
+"-254 -85 CURVE SMOOTH",
+"-254 -50 OFFCURVE",
+"-276 -25 OFFCURVE",
+"-311 -25 CURVE SMOOTH",
+"-347 -25 OFFCURVE",
+"-370 -50 OFFCURVE",
+"-370 -85 CURVE SMOOTH",
+"-370 -120 OFFCURVE",
+"-347 -145 OFFCURVE",
+"-311 -145 CURVE SMOOTH"
+);
+},
+{
+closed = 1;
+nodes = (
+"-147 -445 OFFCURVE",
+"-92 -394 OFFCURVE",
+"-92 -331 CURVE SMOOTH",
+"-92 -271 OFFCURVE",
+"-166 -197 OFFCURVE",
+"-232 -197 CURVE SMOOTH",
+"-273 -197 OFFCURVE",
+"-305 -211 OFFCURVE",
+"-333 -238 CURVE",
+"-286 -298 LINE",
+"-264 -279 OFFCURVE",
+"-237 -260 OFFCURVE",
+"-206 -260 CURVE SMOOTH",
+"-180 -260 OFFCURVE",
+"-169 -276 OFFCURVE",
+"-169 -300 CURVE SMOOTH",
+"-169 -342 OFFCURVE",
+"-207 -380 OFFCURVE",
+"-269 -380 CURVE SMOOTH",
+"-348 -380 OFFCURVE",
+"-403 -356 OFFCURVE",
+"-493 -242 CURVE",
+"-520 -263 LINE",
+"-429 -394 OFFCURVE",
+"-335 -445 OFFCURVE",
+"-244 -445 CURVE SMOOTH"
+);
+}
+);
+width = 0;
+}
+);
+category = Mark;
+subCategory = Nonspacing;
+},
+{
+glyphname = NuktamatraUu.dogra;
+lastChange = "2019-11-22 11:45:20 +0000";
+layers = (
+{
+anchors = (
+{
+name = _bottom2;
+position = "{-303, -30}";
+}
+);
+layerId = "284FCB4C-24BB-4F0E-B388-CD6C9D45C343";
+paths = (
+{
+closed = 1;
+nodes = (
+"-276 -145 OFFCURVE",
+"-254 -120 OFFCURVE",
+"-254 -85 CURVE SMOOTH",
+"-254 -50 OFFCURVE",
+"-276 -25 OFFCURVE",
+"-311 -25 CURVE SMOOTH",
+"-347 -25 OFFCURVE",
+"-370 -50 OFFCURVE",
+"-370 -85 CURVE SMOOTH",
+"-370 -120 OFFCURVE",
+"-347 -145 OFFCURVE",
+"-311 -145 CURVE SMOOTH"
+);
+},
+{
+closed = 1;
+nodes = (
+"-275 -437 OFFCURVE",
+"-244 -428 OFFCURVE",
+"-217 -401 CURVE",
+"-261 -343 LINE",
+"-284 -365 OFFCURVE",
+"-306 -375 OFFCURVE",
+"-335 -375 CURVE SMOOTH",
+"-361 -375 OFFCURVE",
+"-384 -361 OFFCURVE",
+"-384 -331 CURVE SMOOTH",
+"-384 -292 OFFCURVE",
+"-353 -260 OFFCURVE",
+"-295 -260 CURVE SMOOTH",
+"-221 -260 OFFCURVE",
+"-166 -313 OFFCURVE",
+"-93 -434 CURVE",
+"-61 -414 LINE",
+"-147 -267 OFFCURVE",
+"-229 -196 OFFCURVE",
+"-325 -196 CURVE SMOOTH",
+"-411 -196 OFFCURVE",
+"-461 -239 OFFCURVE",
+"-461 -304 CURVE SMOOTH",
+"-461 -373 OFFCURVE",
+"-374 -437 OFFCURVE",
+"-311 -437 CURVE SMOOTH"
+);
+}
+);
+width = 0;
+}
+);
+category = Mark;
+subCategory = Nonspacing;
+},
+{
+glyphname = NuktamatraU.old.dogra;
+lastChange = "2019-11-22 11:45:22 +0000";
+layers = (
+{
+anchors = (
+{
+name = _bottom2;
+position = "{-303, -30}";
+}
+);
+layerId = "284FCB4C-24BB-4F0E-B388-CD6C9D45C343";
+paths = (
+{
+closed = 1;
+nodes = (
+"-276 -145 OFFCURVE",
+"-254 -120 OFFCURVE",
+"-254 -85 CURVE SMOOTH",
+"-254 -50 OFFCURVE",
+"-276 -25 OFFCURVE",
+"-311 -25 CURVE SMOOTH",
+"-347 -25 OFFCURVE",
+"-370 -50 OFFCURVE",
+"-370 -85 CURVE SMOOTH",
+"-370 -120 OFFCURVE",
+"-347 -145 OFFCURVE",
+"-311 -145 CURVE SMOOTH"
+);
+},
+{
+closed = 1;
+nodes = (
+"-210 -308 OFFCURVE",
+"-153 -274 OFFCURVE",
+"-118 -223 CURVE",
+"-175 -168 LINE",
+"-214 -217 OFFCURVE",
+"-264 -244 OFFCURVE",
+"-329 -244 CURVE SMOOTH",
+"-388 -244 OFFCURVE",
+"-431 -215 OFFCURVE",
+"-471 -170 CURVE",
+"-498 -196 LINE",
+"-449 -265 OFFCURVE",
+"-377 -308 OFFCURVE",
+"-290 -308 CURVE SMOOTH"
+);
+}
+);
+width = 0;
+}
+);
+category = Mark;
+subCategory = Nonspacing;
+},
+{
+glyphname = NuktamatraUu.old.dogra;
+lastChange = "2019-11-22 11:45:23 +0000";
+layers = (
+{
+anchors = (
+{
+name = _bottom2;
+position = "{-303, -30}";
+}
+);
+layerId = "284FCB4C-24BB-4F0E-B388-CD6C9D45C343";
+paths = (
+{
+closed = 1;
+nodes = (
+"-276 -145 OFFCURVE",
+"-254 -120 OFFCURVE",
+"-254 -85 CURVE SMOOTH",
+"-254 -50 OFFCURVE",
+"-276 -25 OFFCURVE",
+"-311 -25 CURVE SMOOTH",
+"-347 -25 OFFCURVE",
+"-370 -50 OFFCURVE",
+"-370 -85 CURVE SMOOTH",
+"-370 -120 OFFCURVE",
+"-347 -145 OFFCURVE",
+"-311 -145 CURVE SMOOTH"
+);
+},
+{
+closed = 1;
+nodes = (
+"-208 -434 OFFCURVE",
+"-156 -410 OFFCURVE",
+"-117 -363 CURVE",
+"-167 -306 LINE",
+"-210 -350 OFFCURVE",
+"-256 -369 OFFCURVE",
+"-321 -369 CURVE SMOOTH",
+"-380 -369 OFFCURVE",
+"-427 -346 OFFCURVE",
+"-468 -305 CURVE",
+"-493 -332 LINE",
+"-440 -395 OFFCURVE",
+"-366 -434 OFFCURVE",
+"-288 -434 CURVE SMOOTH"
+);
+},
+{
+closed = 1;
+nodes = (
+"-215 -286 OFFCURVE",
+"-161 -262 OFFCURVE",
+"-123 -215 CURVE",
+"-178 -157 LINE",
+"-216 -198 OFFCURVE",
+"-261 -221 OFFCURVE",
+"-327 -221 CURVE SMOOTH",
+"-380 -221 OFFCURVE",
+"-427 -199 OFFCURVE",
+"-466 -160 CURVE",
+"-491 -187 LINE",
+"-441 -248 OFFCURVE",
+"-368 -286 OFFCURVE",
+"-290 -286 CURVE SMOOTH"
+);
+}
+);
+width = 0;
+}
+);
+category = Mark;
+subCategory = Nonspacing;
+},
+{
 glyphname = vowelL.dogra;
-lastChange = "2019-09-07 12:07:09 +0000";
+lastChange = "2019-11-20 09:07:45 +0000";
 layers = (
 {
 anchors = (
@@ -17245,10 +17580,12 @@ nodes = (
 width = 734;
 }
 );
+category = Letter;
+subCategory = Other;
 },
 {
 glyphname = vowelLl.dogra;
-lastChange = "2019-09-07 12:07:09 +0000";
+lastChange = "2019-11-20 09:07:45 +0000";
 layers = (
 {
 anchors = (
@@ -17471,10 +17808,12 @@ nodes = (
 width = 734;
 }
 );
+category = Letter;
+subCategory = Other;
 },
 {
 glyphname = vowelR.dogra;
-lastChange = "2019-09-07 12:07:09 +0000";
+lastChange = "2019-11-20 09:07:45 +0000";
 layers = (
 {
 anchors = (
@@ -17583,10 +17922,12 @@ nodes = (
 width = 420;
 }
 );
+category = Letter;
+subCategory = Other;
 },
 {
 glyphname = vowelRr.dogra;
-lastChange = "2019-09-07 12:07:09 +0000";
+lastChange = "2019-11-20 09:07:45 +0000";
 layers = (
 {
 anchors = (
@@ -17721,10 +18062,12 @@ nodes = (
 width = 464;
 }
 );
+category = Letter;
+subCategory = Other;
 },
 {
 glyphname = Zero.dogra;
-lastChange = "2019-09-07 12:25:42 +0000";
+lastChange = "2019-11-20 09:07:56 +0000";
 layers = (
 {
 background = {
@@ -17805,6 +18148,7 @@ nodes = (
 width = 520;
 }
 );
+category = Number;
 userData = {
 com.typemytype.robofont.guides = (
 {
@@ -17824,7 +18168,7 @@ y = 493;
 },
 {
 glyphname = One.dogra;
-lastChange = "2019-09-07 12:12:58 +0000";
+lastChange = "2019-11-20 09:07:56 +0000";
 layers = (
 {
 background = {
@@ -17908,10 +18252,11 @@ nodes = (
 width = 358;
 }
 );
+category = Number;
 },
 {
 glyphname = Two.dogra;
-lastChange = "2019-09-10 09:07:29 +0000";
+lastChange = "2019-11-20 09:07:56 +0000";
 layers = (
 {
 background = {
@@ -18002,10 +18347,11 @@ nodes = (
 width = 493;
 }
 );
+category = Number;
 },
 {
 glyphname = Three.dogra;
-lastChange = "2019-09-07 12:24:36 +0000";
+lastChange = "2019-11-20 09:07:56 +0000";
 layers = (
 {
 background = {
@@ -18120,10 +18466,11 @@ nodes = (
 width = 522;
 }
 );
+category = Number;
 },
 {
 glyphname = Four.dogra;
-lastChange = "2019-09-07 12:07:09 +0000";
+lastChange = "2019-11-20 09:07:56 +0000";
 layers = (
 {
 background = {
@@ -18240,10 +18587,11 @@ nodes = (
 width = 630;
 }
 );
+category = Number;
 },
 {
 glyphname = Five.dogra;
-lastChange = "2019-09-07 12:22:26 +0000";
+lastChange = "2019-11-20 09:07:56 +0000";
 layers = (
 {
 background = {
@@ -18318,10 +18666,11 @@ nodes = (
 width = 620;
 }
 );
+category = Number;
 },
 {
 glyphname = Six.dogra;
-lastChange = "2019-09-07 12:24:52 +0000";
+lastChange = "2019-11-20 09:07:56 +0000";
 layers = (
 {
 background = {
@@ -18460,10 +18809,11 @@ nodes = (
 width = 526;
 }
 );
+category = Number;
 },
 {
 glyphname = Seven.dogra;
-lastChange = "2019-09-07 12:25:15 +0000";
+lastChange = "2019-11-20 09:07:56 +0000";
 layers = (
 {
 background = {
@@ -18538,6 +18888,7 @@ nodes = (
 width = 670;
 }
 );
+category = Number;
 userData = {
 com.typemytype.robofont.guides = (
 {
@@ -18557,7 +18908,7 @@ y = 493;
 },
 {
 glyphname = Eight.dogra;
-lastChange = "2019-09-07 12:15:14 +0000";
+lastChange = "2019-11-20 09:07:56 +0000";
 layers = (
 {
 background = {
@@ -18632,6 +18983,7 @@ nodes = (
 width = 565;
 }
 );
+category = Number;
 userData = {
 com.typemytype.robofont.guides = (
 {
@@ -18651,7 +19003,7 @@ y = 493;
 },
 {
 glyphname = Nine.dogra;
-lastChange = "2019-09-07 12:22:03 +0000";
+lastChange = "2019-11-20 09:07:56 +0000";
 layers = (
 {
 layerId = "284FCB4C-24BB-4F0E-B388-CD6C9D45C343";
@@ -18719,10 +19071,11 @@ nodes = (
 width = 554;
 }
 );
+category = Number;
 },
 {
 glyphname = Avagraha.dogra;
-lastChange = "2019-09-07 12:07:09 +0000";
+lastChange = "2019-11-20 09:08:23 +0000";
 layers = (
 {
 background = {
@@ -18819,6 +19172,7 @@ nodes = (
 width = 480;
 }
 );
+category = Symbol;
 },
 {
 glyphname = Danda.dv;
@@ -18956,57 +19310,6 @@ paths = (
 {
 closed = 1;
 nodes = (
-"308 488 OFFCURVE",
-"323 504 OFFCURVE",
-"323 514 QCURVE SMOOTH",
-"323 525 OFFCURVE",
-"308 540 OFFCURVE",
-"297 540 QCURVE SMOOTH",
-"287 540 OFFCURVE",
-"271 525 OFFCURVE",
-"271 514 QCURVE SMOOTH",
-"271 504 OFFCURVE",
-"287 488 OFFCURVE",
-"297 488 QCURVE SMOOTH"
-);
-},
-{
-closed = 1;
-nodes = (
-"224 470 OFFCURVE",
-"239 486 OFFCURVE",
-"239 496 QCURVE SMOOTH",
-"239 507 OFFCURVE",
-"224 522 OFFCURVE",
-"213 522 QCURVE SMOOTH",
-"203 522 OFFCURVE",
-"187 507 OFFCURVE",
-"187 496 QCURVE SMOOTH",
-"187 486 OFFCURVE",
-"203 470 OFFCURVE",
-"213 470 QCURVE SMOOTH"
-);
-},
-{
-closed = 1;
-nodes = (
-"392 470 OFFCURVE",
-"407 486 OFFCURVE",
-"407 496 QCURVE SMOOTH",
-"407 507 OFFCURVE",
-"392 522 OFFCURVE",
-"381 522 QCURVE SMOOTH",
-"371 522 OFFCURVE",
-"355 507 OFFCURVE",
-"355 496 QCURVE SMOOTH",
-"355 486 OFFCURVE",
-"371 470 OFFCURVE",
-"381 470 QCURVE SMOOTH"
-);
-},
-{
-closed = 1;
-nodes = (
 "466 423 OFFCURVE",
 "481 439 OFFCURVE",
 "481 449 QCURVE SMOOTH",
@@ -19019,125 +19322,6 @@ nodes = (
 "429 439 OFFCURVE",
 "445 423 OFFCURVE",
 "455 423 QCURVE SMOOTH"
-);
-},
-{
-closed = 1;
-nodes = (
-"150 423 OFFCURVE",
-"165 439 OFFCURVE",
-"165 449 QCURVE SMOOTH",
-"165 460 OFFCURVE",
-"150 475 OFFCURVE",
-"139 475 QCURVE SMOOTH",
-"129 475 OFFCURVE",
-"113 460 OFFCURVE",
-"113 449 QCURVE SMOOTH",
-"113 439 OFFCURVE",
-"129 423 OFFCURVE",
-"139 423 QCURVE SMOOTH"
-);
-},
-{
-closed = 1;
-nodes = (
-"103 349 OFFCURVE",
-"118 365 OFFCURVE",
-"118 375 QCURVE SMOOTH",
-"118 386 OFFCURVE",
-"103 401 OFFCURVE",
-"92 401 QCURVE SMOOTH",
-"82 401 OFFCURVE",
-"66 386 OFFCURVE",
-"66 375 QCURVE SMOOTH",
-"66 365 OFFCURVE",
-"82 349 OFFCURVE",
-"92 349 QCURVE SMOOTH"
-);
-},
-{
-closed = 1;
-nodes = (
-"513 349 OFFCURVE",
-"528 365 OFFCURVE",
-"528 375 QCURVE SMOOTH",
-"528 386 OFFCURVE",
-"513 401 OFFCURVE",
-"502 401 QCURVE SMOOTH",
-"492 401 OFFCURVE",
-"476 386 OFFCURVE",
-"476 375 QCURVE SMOOTH",
-"476 365 OFFCURVE",
-"492 349 OFFCURVE",
-"502 349 QCURVE SMOOTH"
-);
-},
-{
-closed = 1;
-nodes = (
-"85 265 OFFCURVE",
-"100 281 OFFCURVE",
-"100 291 QCURVE SMOOTH",
-"100 302 OFFCURVE",
-"85 317 OFFCURVE",
-"74 317 QCURVE SMOOTH",
-"64 317 OFFCURVE",
-"48 302 OFFCURVE",
-"48 291 QCURVE SMOOTH",
-"48 281 OFFCURVE",
-"64 265 OFFCURVE",
-"74 265 QCURVE SMOOTH"
-);
-},
-{
-closed = 1;
-nodes = (
-"531 265 OFFCURVE",
-"546 281 OFFCURVE",
-"546 291 QCURVE SMOOTH",
-"546 302 OFFCURVE",
-"531 317 OFFCURVE",
-"520 317 QCURVE SMOOTH",
-"510 317 OFFCURVE",
-"494 302 OFFCURVE",
-"494 291 QCURVE SMOOTH",
-"494 281 OFFCURVE",
-"510 265 OFFCURVE",
-"520 265 QCURVE SMOOTH"
-);
-},
-{
-closed = 1;
-nodes = (
-"103 181 OFFCURVE",
-"118 197 OFFCURVE",
-"118 207 QCURVE SMOOTH",
-"118 218 OFFCURVE",
-"103 233 OFFCURVE",
-"92 233 QCURVE SMOOTH",
-"82 233 OFFCURVE",
-"66 218 OFFCURVE",
-"66 207 QCURVE SMOOTH",
-"66 197 OFFCURVE",
-"82 181 OFFCURVE",
-"92 181 QCURVE SMOOTH"
-);
-},
-{
-closed = 1;
-nodes = (
-"513 181 OFFCURVE",
-"528 197 OFFCURVE",
-"528 207 QCURVE SMOOTH",
-"528 218 OFFCURVE",
-"513 233 OFFCURVE",
-"502 233 QCURVE SMOOTH",
-"492 233 OFFCURVE",
-"476 218 OFFCURVE",
-"476 207 QCURVE SMOOTH",
-"476 197 OFFCURVE",
-"492 181 OFFCURVE",
-"502 181 QCURVE SMOOTH"
 );
 },
 {
@@ -19160,18 +19344,18 @@ nodes = (
 {
 closed = 1;
 nodes = (
-"466 107 OFFCURVE",
-"481 123 OFFCURVE",
-"481 133 QCURVE SMOOTH",
-"481 144 OFFCURVE",
-"466 159 OFFCURVE",
-"455 159 QCURVE SMOOTH",
-"445 159 OFFCURVE",
-"429 144 OFFCURVE",
-"429 133 QCURVE SMOOTH",
-"429 123 OFFCURVE",
-"445 107 OFFCURVE",
-"455 107 QCURVE SMOOTH"
+"103 181 OFFCURVE",
+"118 197 OFFCURVE",
+"118 207 QCURVE SMOOTH",
+"118 218 OFFCURVE",
+"103 233 OFFCURVE",
+"92 233 QCURVE SMOOTH",
+"82 233 OFFCURVE",
+"66 218 OFFCURVE",
+"66 207 QCURVE SMOOTH",
+"66 197 OFFCURVE",
+"82 181 OFFCURVE",
+"92 181 QCURVE SMOOTH"
 );
 },
 {
@@ -19194,18 +19378,18 @@ nodes = (
 {
 closed = 1;
 nodes = (
-"392 60 OFFCURVE",
-"407 76 OFFCURVE",
-"407 86 QCURVE SMOOTH",
-"407 97 OFFCURVE",
-"392 112 OFFCURVE",
-"381 112 QCURVE SMOOTH",
-"371 112 OFFCURVE",
-"355 97 OFFCURVE",
-"355 86 QCURVE SMOOTH",
-"355 76 OFFCURVE",
-"371 60 OFFCURVE",
-"381 60 QCURVE SMOOTH"
+"85 265 OFFCURVE",
+"100 281 OFFCURVE",
+"100 291 QCURVE SMOOTH",
+"100 302 OFFCURVE",
+"85 317 OFFCURVE",
+"74 317 QCURVE SMOOTH",
+"64 317 OFFCURVE",
+"48 302 OFFCURVE",
+"48 291 QCURVE SMOOTH",
+"48 281 OFFCURVE",
+"64 265 OFFCURVE",
+"74 265 QCURVE SMOOTH"
 );
 },
 {
@@ -19223,6 +19407,176 @@ nodes = (
 "271 58 OFFCURVE",
 "287 42 OFFCURVE",
 "297 42 QCURVE SMOOTH"
+);
+},
+{
+closed = 1;
+nodes = (
+"103 349 OFFCURVE",
+"118 365 OFFCURVE",
+"118 375 QCURVE SMOOTH",
+"118 386 OFFCURVE",
+"103 401 OFFCURVE",
+"92 401 QCURVE SMOOTH",
+"82 401 OFFCURVE",
+"66 386 OFFCURVE",
+"66 375 QCURVE SMOOTH",
+"66 365 OFFCURVE",
+"82 349 OFFCURVE",
+"92 349 QCURVE SMOOTH"
+);
+},
+{
+closed = 1;
+nodes = (
+"392 60 OFFCURVE",
+"407 76 OFFCURVE",
+"407 86 QCURVE SMOOTH",
+"407 97 OFFCURVE",
+"392 112 OFFCURVE",
+"381 112 QCURVE SMOOTH",
+"371 112 OFFCURVE",
+"355 97 OFFCURVE",
+"355 86 QCURVE SMOOTH",
+"355 76 OFFCURVE",
+"371 60 OFFCURVE",
+"381 60 QCURVE SMOOTH"
+);
+},
+{
+closed = 1;
+nodes = (
+"150 423 OFFCURVE",
+"165 439 OFFCURVE",
+"165 449 QCURVE SMOOTH",
+"165 460 OFFCURVE",
+"150 475 OFFCURVE",
+"139 475 QCURVE SMOOTH",
+"129 475 OFFCURVE",
+"113 460 OFFCURVE",
+"113 449 QCURVE SMOOTH",
+"113 439 OFFCURVE",
+"129 423 OFFCURVE",
+"139 423 QCURVE SMOOTH"
+);
+},
+{
+closed = 1;
+nodes = (
+"466 107 OFFCURVE",
+"481 123 OFFCURVE",
+"481 133 QCURVE SMOOTH",
+"481 144 OFFCURVE",
+"466 159 OFFCURVE",
+"455 159 QCURVE SMOOTH",
+"445 159 OFFCURVE",
+"429 144 OFFCURVE",
+"429 133 QCURVE SMOOTH",
+"429 123 OFFCURVE",
+"445 107 OFFCURVE",
+"455 107 QCURVE SMOOTH"
+);
+},
+{
+closed = 1;
+nodes = (
+"224 470 OFFCURVE",
+"239 486 OFFCURVE",
+"239 496 QCURVE SMOOTH",
+"239 507 OFFCURVE",
+"224 522 OFFCURVE",
+"213 522 QCURVE SMOOTH",
+"203 522 OFFCURVE",
+"187 507 OFFCURVE",
+"187 496 QCURVE SMOOTH",
+"187 486 OFFCURVE",
+"203 470 OFFCURVE",
+"213 470 QCURVE SMOOTH"
+);
+},
+{
+closed = 1;
+nodes = (
+"513 181 OFFCURVE",
+"528 197 OFFCURVE",
+"528 207 QCURVE SMOOTH",
+"528 218 OFFCURVE",
+"513 233 OFFCURVE",
+"502 233 QCURVE SMOOTH",
+"492 233 OFFCURVE",
+"476 218 OFFCURVE",
+"476 207 QCURVE SMOOTH",
+"476 197 OFFCURVE",
+"492 181 OFFCURVE",
+"502 181 QCURVE SMOOTH"
+);
+},
+{
+closed = 1;
+nodes = (
+"308 488 OFFCURVE",
+"323 504 OFFCURVE",
+"323 514 QCURVE SMOOTH",
+"323 525 OFFCURVE",
+"308 540 OFFCURVE",
+"297 540 QCURVE SMOOTH",
+"287 540 OFFCURVE",
+"271 525 OFFCURVE",
+"271 514 QCURVE SMOOTH",
+"271 504 OFFCURVE",
+"287 488 OFFCURVE",
+"297 488 QCURVE SMOOTH"
+);
+},
+{
+closed = 1;
+nodes = (
+"531 265 OFFCURVE",
+"546 281 OFFCURVE",
+"546 291 QCURVE SMOOTH",
+"546 302 OFFCURVE",
+"531 317 OFFCURVE",
+"520 317 QCURVE SMOOTH",
+"510 317 OFFCURVE",
+"494 302 OFFCURVE",
+"494 291 QCURVE SMOOTH",
+"494 281 OFFCURVE",
+"510 265 OFFCURVE",
+"520 265 QCURVE SMOOTH"
+);
+},
+{
+closed = 1;
+nodes = (
+"392 470 OFFCURVE",
+"407 486 OFFCURVE",
+"407 496 QCURVE SMOOTH",
+"407 507 OFFCURVE",
+"392 522 OFFCURVE",
+"381 522 QCURVE SMOOTH",
+"371 522 OFFCURVE",
+"355 507 OFFCURVE",
+"355 496 QCURVE SMOOTH",
+"355 486 OFFCURVE",
+"371 470 OFFCURVE",
+"381 470 QCURVE SMOOTH"
+);
+},
+{
+closed = 1;
+nodes = (
+"513 349 OFFCURVE",
+"528 365 OFFCURVE",
+"528 375 QCURVE SMOOTH",
+"528 386 OFFCURVE",
+"513 401 OFFCURVE",
+"502 401 QCURVE SMOOTH",
+"492 401 OFFCURVE",
+"476 386 OFFCURVE",
+"476 375 QCURVE SMOOTH",
+"476 365 OFFCURVE",
+"492 349 OFFCURVE",
+"502 349 QCURVE SMOOTH"
 );
 }
 );
@@ -19242,10 +19596,6 @@ value = "NotoSerifDogra-Regular";
 {
 name = styleMapFamilyName;
 value = "Noto Serif Dogra";
-},
-{
-name = weightClass;
-value = 400;
 }
 );
 interpolationWeight = 94;
@@ -19327,5 +19677,5 @@ y = 614;
 UFOFormat = 2;
 };
 versionMajor = 1;
-versionMinor = 0;
+versionMinor = 2;
 }
