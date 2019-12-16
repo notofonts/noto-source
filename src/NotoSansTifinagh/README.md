@@ -1,6 +1,6 @@
 # Noto Sans Tifinagh
 
-Noto Sans Tifinagh is an updated design of Tifiniagh that pair up better with Noto Sans Latin. The new source contains additonal characters to support various written traditions. Since language tag support for the different writing traditions covered is weak and many characters have alternate forms, the source file breaks up each writing tradition into separate instances allowing users to choose the correct font.
+Noto Sans Tifinagh is an updated design of Tifinagh that pairs better with Noto Sans Latin. The new source contains additional characters to support various written traditions. Since language tag support for the different writing traditions covered is weak and many characters have alternate forms, the source file breaks up each writing tradition into separate instances allowing users to choose the correct font.
 
 ## Instances
 
