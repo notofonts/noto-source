@@ -15,7 +15,8 @@ The [Instances](noto-source/src/NotoSansTifinagh/Instances) directory contains G
   - APT (Association for the Promotion of Tifinagh)
   - Azawagh
   - Ghat
-  - HawadNo 
+  - Hawad 
+  - IRCAM (This is the default: Noto Sans Tifinagh Regular)
   - Rhissa Ixa
   - SIL
   - Tawellemmet
@@ -24,18 +25,16 @@ The [Instances](noto-source/src/NotoSansTifinagh/Instances) directory contains G
 ## Build Notes
 
 Version 2.x of Noto Sans Tifinagh is developed to be built using fontmake and a Glyphs source file.
-The AFDKO `.fea` file is included as a reference, but the code is in the Glyphs file and so can be generated from Glyphs. 
+The AFDKO `.fea` files are included as a reference, but the code is in the Glyphs source files and can be generated from using Glyphs. 
+
 The pre-existing FontDame files are no longer required.
+
+NotoSansTifinagh-Master-Regular.glyphs is the source file that is setup to make glyph management easier for all of the instances. This source employs a number of Glyphs custom parameters that are not compatible with fontmake. Running Generate Instances from within Glyphs produces Instance masters that parse out the correct glyphs for each instance. The instances have then been subsequently edited to fold the contents of the custom paramters into the main feature code. Fonts should be generated directly from the Instance source files.
 
 ### Test Font build commands
 
-    Need to sort out Build instructions
 
-    fontmake -g .glyphs
+    fontmake -g NotoSansTifinagh[INSTANCE NAME].glyphs --no-production-names
     
-    fontmake -g .glyphs -o variable
     
-    ttfautohint -f xxxx .ttf _autohint.ttf  
-    
-    ttfautohint -f xxxx .ttf _autohint.ttf  
 
