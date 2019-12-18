@@ -37,6 +37,7 @@ NotoSansTifinagh-Master-Regular.glyphs is the source file that is setup to make 
     fontmake -g NotoSansTifinagh[INSTANCE NAME].glyphs --no-production-names
     
     
+# Changelog
 Version 2.002
 - Updated Parameters to include missing tables (description, trademark, openTypeNameLicense, openTypeNameLicenseURL)
 - Change Aïr to Air to fix fontmake issue with diacritic in name
