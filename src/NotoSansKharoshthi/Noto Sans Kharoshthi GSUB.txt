@@ -2,12 +2,17 @@ FontDame GSUB table
 
 
 script table begin
-khar	default		0
+khar	default		0, 1, 2, 3, 4, 5
 script table end
 
 
 feature table begin
-0	ccmp	0, 1, 2, 3, 4
+0	abvs	7
+1	blws	11, 12
+2	cjct	1
+3	psts	3, 4, 5
+4	rclt	2, 6
+5	ss01	0
 
 feature table end
 
@@ -18,20 +23,7 @@ IgnoreBaseGlyphs	no
 IgnoreLigatures	no
 IgnoreMarks	no
 
-u10A1010A3F10A2E	u10A10	u10A3F	u10A2E
-u10A1010A3F10A2B	u10A10	u10A3F	u10A2B
-u10A1010A3F10A1F	u10A10	u10A3F	u10A1F
-u10A1110A3F10A1010A3F10A2E	u10A11	u10A3F	u10A10	u10A3F	u10A2E
-u10A1F10A3F10A2A	u10A1F	u10A3F	u10A2A
-u10A1F10A3F10A2C	u10A1F	u10A3F	u10A2C
-u10A2210A0110A1010A3F	u10A22	u10A01	u10A10	u10A3F
-u10A2410A3F10A2B	u10A24	u10A3F	u10A2B
-u10A2810A3F10A2A	u10A28	u10A3F	u10A2A
-u10A2A10A3F10A1F	u10A2A	u10A3F	u10A1F
-u10A2B10A3F10A24	u10A2B	u10A3F	u10A24
-u10A2C10A3F10A31	u10A2C	u10A3F	u10A31
-u10A2F10A3F10A1F	u10A2F	u10A3F	u10A1F
-u10A2F10A3F10A29	u10A2F	u10A3F	u10A29
+De_khar	Da_khar	E_khar
 
 lookup end
 
@@ -42,42 +34,29 @@ RightToLeft	no
 IgnoreBaseGlyphs	no
 IgnoreLigatures	no
 IgnoreMarks	no
+MarkFilterType	2
 
-u10A0010A01	u10A00	u10A01
-u10A1010A01	u10A10	u10A01
-u10A1110A01	u10A11	u10A01
-u10A1210A01	u10A12	u10A01
-u10A1310A01	u10A13	u10A01
-u10A1510A01	u10A15	u10A01
-u10A1610A01	u10A16	u10A01
-u10A1710A01	u10A17	u10A01
-u10A1910A01	u10A19	u10A01
-u10A1A10A01	u10A1A	u10A01
-u10A1B10A01	u10A1B	u10A01
-u10A1C10A01	u10A1C	u10A01
-u10A1D10A01	u10A1D	u10A01
-u10A1E10A01	u10A1E	u10A01
-u10A1F10A01	u10A1F	u10A01
-u10A2010A01	u10A20	u10A01
-u10A2110A01	u10A21	u10A01
-u10A2210A01	u10A22	u10A01
-u10A2310A01	u10A23	u10A01
-u10A2410A01	u10A24	u10A01
-u10A2510A01	u10A25	u10A01
-u10A2610A01	u10A26	u10A01
-u10A2710A01	u10A27	u10A01
-u10A2810A01	u10A28	u10A01
-u10A2910A01	u10A29	u10A01
-u10A2A10A01	u10A2A	u10A01
-u10A2B10A01	u10A2B	u10A01
-u10A2C10A01	u10A2C	u10A01
-u10A2D10A01	u10A2D	u10A01
-u10A2E10A01	u10A2E	u10A01
-u10A2F10A01	u10A2F	u10A01
-u10A3010A01	u10A30	u10A01
-u10A3110A01	u10A31	u10A01
-u10A3210A01	u10A32	u10A01
-u10A3310A01	u10A33	u10A01
+KTa_khar	Ka_khar	Virama_khar	Ta_khar
+KSsa_khar	Ka_khar	Virama_khar	Ssa_khar
+KhKSsa_khar	Kha_khar	Virama_khar	Ka_khar	Virama_khar	Ssa_khar
+JNya_khar	Ja_khar	Virama_khar	Nya_khar
+TRa_khar	Ta_khar	Virama_khar	Ra_khar
+TVa_khar	Ta_khar	Virama_khar	Va_khar
+TSa_khar	Ta_khar	Virama_khar	Sa_khar
+PGa_khar	Pa_khar	Virama_khar	Ga_khar
+PTa_khar	Pa_khar	Virama_khar	Ta_khar
+MMa_khar	Ma_khar	Virama_khar	Ma_khar
+MRa_khar	Ma_khar	Virama_khar	Ra_khar
+RTa_khar	Ra_khar	Virama_khar	Ta_khar
+RMa_khar	Ra_khar	Virama_khar	Ma_khar
+LPa_khar	La_khar	Virama_khar	Pa_khar
+LYa_khar	La_khar	Virama_khar	Ya_khar
+La_ZWJ_Ya_khar	La_khar	uni200D	Virama_khar	Ya_khar
+ShPa_khar	Sha_khar	Virama_khar	Pa_khar
+STa_khar	Sa_khar	Virama_khar	Ta_khar
+STha_khar	Sa_khar	Virama_khar	Tha_khar
+SPa_khar	Sa_khar	Virama_khar	Pa_khar
+SYa_khar	Sa_khar	Virama_khar	Ya_khar
 
 lookup end
 
@@ -88,44 +67,554 @@ RightToLeft	no
 IgnoreBaseGlyphs	no
 IgnoreLigatures	no
 IgnoreMarks	no
+MarkFilterType	2
 
-u10A2810A02	u10A28	u10A02
+SubMa_khar	Virama_khar	Ma_khar
+SubYa_khar	Virama_khar	Ya_khar
+SubRa_khar	Virama_khar	Ra_khar
+SubLa_khar	Virama_khar	La_khar
+SubVa_khar	Virama_khar	Va_khar
 
 lookup end
 
 
-lookup	3	ligature
+lookup	3	context
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+MarkFilterType	1
+
+class definition begin
+Ga_khar	2
+Tta_khar	2
+Dda_khar	2
+Ddha_khar	2
+Tha_khar	2
+Ma_khar	2
+La_khar	2
+Za_khar	2
+KTa_khar	2
+TVa_khar	2
+PGa_khar	2
+PTa_khar	2
+MMa_khar	2
+MRa_khar	2
+RMa_khar	2
+LPa_khar	2
+LYa_khar	2
+SYa_khar	2
+Nna_khar	3
+Da_khar	3
+De_khar	3
+MMe_khar	3
+Ha_khar	4
+Mu_khar	4
+TTta_khar	5
+KSsa_khar	5
+KhKSsa_khar	5
+JNya_khar	5
+RTa_khar	5
+La_ZWJ_Ya_khar	5
+ShPa_khar	5
+SPa_khar	5
+Ca_khar	6
+Ja_khar	6
+Nya_khar	6
+Dha_khar	6
+Ssa_khar	6
+Sa_khar	6
+TSa_khar	6
+Cha_khar	7
+Gha_khar	8
+Pa_khar	8
+Pha_khar	8
+Bha_khar	8
+Ka_khar	9
+Kka_khar	9
+Ya_khar	10
+SubVa_khar	11
+SubRa_khar	12
+SubLa_khar	13
+class definition end
+
+class	2, 11	2, 13
+class	2, 12	2, 13
+class	3, 11	2, 14
+class	3, 12	2, 14
+class	3, 13	2, 13
+class	4, 11	2, 15
+class	4, 12	2, 13
+class	5, 11	2, 16
+class	5, 12	2, 16
+class	6, 11	2, 17
+class	6, 12	2, 17
+class	7, 12	2, 13
+class	8, 11	2, 16
+class	8, 12	2, 13
+class	9, 11	2, 16
+class	10, 11	2, 14
+class	10, 12	2, 14
+
+lookup end
+
+
+lookup	4	context
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+MarkFilterType	1
+
+class definition begin
+space	1
+Ka_khar	1
+Gha_khar	1
+Ca_khar	1
+Ja_khar	1
+Nya_khar	1
+Dha_khar	1
+Ya_khar	1
+Ssa_khar	1
+Sa_khar	1
+Kka_khar	1
+Ga_khar	2
+Tta_khar	2
+Dda_khar	2
+Ddha_khar	2
+Nna_khar	2
+Ta_khar	2
+Tha_khar	2
+Da_khar	2
+La_khar	2
+Za_khar	2
+Ha_khar	2
+TTta_khar	2
+De_khar	2
+Hi_khar	2
+He_khar	2
+Kha_khar	3
+Tttha_khar	3
+Cha_khar	4
+SubMa_khar	11
+class definition end
+
+class	1, 11	2, 13
+class	2, 11	2, 14
+class	3, 11	2, 15
+class	4, 11	2, 16
+
+lookup end
+
+
+lookup	5	context
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+MarkFilterType	1
+
+class definition begin
+Ga_khar	1
+Gha_khar	1
+Cha_khar	1
+Tta_khar	1
+Dda_khar	1
+Ddha_khar	1
+Ta_khar	1
+Tha_khar	1
+Da_khar	1
+Pa_khar	1
+Pha_khar	1
+Bha_khar	1
+La_khar	1
+Za_khar	1
+Ha_khar	1
+KTa_khar	1
+TVa_khar	1
+PGa_khar	1
+PTa_khar	1
+MMa_khar	1
+MRa_khar	1
+RMa_khar	1
+LYa_khar	1
+ShPa_khar	1
+SYa_khar	1
+Nna_khar	2
+LPa_khar	2
+Ya_khar	3
+Va_khar	3
+TTta_khar	3
+KSsa_khar	3
+KhKSsa_khar	3
+MMe_khar	3
+RTa_khar	3
+Ca_khar	4
+Ja_khar	4
+Nya_khar	4
+Dha_khar	4
+Ssa_khar	4
+Sa_khar	4
+TSa_khar	4
+SubYa_khar	5
+class definition end
+
+class	1, 5	2, 13
+class	2, 5	2, 14
+class	3, 5	2, 16
+class	4, 5	2, 17
+
+lookup end
+
+
+lookup	6	ligature
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+MarkFilterType	0
+
+AI_khar	A_khar	I_khar
+AE_khar	A_khar	E_khar
+Nni_khar	Nna_khar	I_khar
+Nnu_khar	Nna_khar	U_khar
+Nno_khar	Nna_khar	O_khar
+Dhik_khar	Dha_khar	I_khar	Ka_khar	Virama_khar
+Ni_khar	Na_khar	I_khar
+Ne_khar	Na_khar	E_khar
+Mu_khar	Ma_khar	U_khar
+Me_khar	Ma_khar	E_khar
+Mo_khar	Ma_khar	O_khar
+Hi_khar	Ha_khar	I_khar
+He_khar	Ha_khar	E_khar
+MMe_khar	MMa_khar	E_khar
+
+lookup end
+
+
+lookup	7	context
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+MarkFilterType	0
+
+class definition begin
+Ka_khar	1
+Ga_khar	1
+Gha_khar	1
+Ca_khar	1
+Ttha_khar	1
+Dda_khar	1
+Nna_khar	1
+Ba_khar	1
+Ra_khar	1
+Va_khar	1
+Za_khar	1
+Kka_khar	1
+Tttha_khar	1
+VHa_khar	1
+Ma_khar	2
+Ja_khar	3
+Ta_khar	3
+KSsa_khar	3
+KhKSsa_khar	3
+JNya_khar	3
+TRa_khar	3
+STa_khar	3
+STha_khar	3
+uni25CC	3
+Cha_khar	4
+Nya_khar	4
+Tta_khar	4
+Ddha_khar	4
+Dha_khar	4
+Bha_khar	4
+TTta_khar	4
+SPa_khar	4
+Ya_khar	5
+Pa_khar	6
+Pha_khar	6
+LPa_khar	6
+Sha_khar	7
+ShPa_khar	7
+Tha_khar	8
+La_khar	8
+PTa_khar	8
+MMa_khar	8
+MMe_khar	8
+LYa_khar	8
+La_ZWJ_Ya_khar	8
+Da_khar	9
+Ssa_khar	9
+Sa_khar	9
+TSa_khar	9
+SYa_khar	9
+Kha_khar	10
+Na_khar	10
+KTa_khar	10
+RTa_khar	10
+PGa_khar	11
+MRa_khar	12
+RMa_khar	12
+I_khar	21
+E_khar	22
+O_khar	23
+class definition end
+
+class	1, 21	2, 8
+class	2, 21	2, 9
+class	2, 23	2, 9
+class	3, 21	2, 10
+class	4, 21	2, 8
+class	4, 23	2, 10
+class	5, 21	2, 8
+class	5, 23	2, 9
+class	6, 21	2, 9
+class	6, 22	2, 9
+class	6, 23	2, 13
+class	7, 21	2, 9
+class	7, 23	2, 9
+class	8, 21	2, 9
+class	8, 22	2, 9
+class	8, 23	2, 10
+class	9, 21	2, 10
+class	9, 23	2, 10
+class	10, 23	2, 10
+class	11, 21	2, 10
+class	11, 22	2, 9
+class	11, 23	2, 10
+class	12, 21	2, 9
+class	12, 23	2, 10
+
+lookup end
+
+
+lookup	8	single
 
 RightToLeft	no
 IgnoreBaseGlyphs	no
 IgnoreLigatures	no
 IgnoreMarks	no
 
-u10A0010A05	u10A00	u10A05
-u10A2010A05	u10A20	u10A05
-u10A2110A05	u10A21	u10A05
-u10A2310A05	u10A23	u10A05
-u10A2410A05	u10A24	u10A05
-u10A2510A05	u10A25	u10A05
-u10A2810A05	u10A28	u10A05
-u10A2B10A05	u10A2B	u10A05
-u10A2D10A05	u10A2D	u10A05
-u10A3110A05	u10A31	u10A05
+I_khar	I_diagonal
 
 lookup end
 
 
-lookup	4	ligature
+lookup	9	single
 
 RightToLeft	no
 IgnoreBaseGlyphs	no
 IgnoreLigatures	no
 IgnoreMarks	no
 
-u10A2410A06	u10A24	u10A06
-u10A2510A06	u10A25	u10A06
-u10A2910A06	u10A29	u10A06
-u10A2D10A06	u10A2D	u10A06
+I_khar	I_vertical
+E_khar	E_vertical
+O_khar	O_vertical
+
+lookup end
+
+
+lookup	10	single
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+I_khar	I_diagonal_short
+vocR_khar	vocR.short
+E_khar	E_vertical
+O_khar	O_diag.short
+
+lookup end
+
+
+lookup	11	context
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+MarkFilterType	0
+
+class definition begin
+Ta_khar	1
+Da_khar	1
+PTa_khar	1
+LYa_khar	1
+Ca_khar	2
+Ja_khar	2
+Nya_khar	2
+Dha_khar	2
+Ssa_khar	2
+Ga_khar	3
+Dda_khar	3
+Ddha_khar	3
+Nna_khar	3
+Tha_khar	3
+Pa_khar	3
+Pha_khar	3
+Bha_khar	3
+La_khar	3
+PGa_khar	3
+MMa_khar	3
+MMe_khar	3
+MRa_khar	3
+RMa_khar	3
+LPa_khar	3
+La_ZWJ_Ya_khar	3
+SYa_khar	3
+Ha_khar	4
+TRa_khar	4
+TVa_khar	4
+Tta_khar	5
+Ka_khar	6
+Kka_khar	6
+VHa_khar	6
+Gha_khar	7
+Cha_khar	7
+Za_khar	8
+Kha_khar	9
+Tttha_khar	9
+Sa_khar	10
+KTa_khar	10
+TSa_khar	10
+RTa_khar	10
+U_khar	11
+vocR_khar	12
+class definition end
+
+class	1, 11	2, 13
+class	1, 12	2, 14
+class	2, 11	2, 15
+class	2, 12	2, 14
+class	3, 11	2, 16
+class	4, 11	2, 17
+class	5, 11	2, 17
+class	5, 12	2, 14
+class	6, 12	2, 10
+class	7, 11	2, 16
+class	7, 12	2, 10
+class	7, 12	2, 13
+class	8, 11	2, 16
+class	8, 12	2, 10
+class	9, 12	2, 13
+class	10, 11	2, 15
+class	10, 12	2, 13
+
+lookup end
+
+
+lookup	12	context
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+MarkFilterType	3
+
+class definition begin
+Ka_khar	1
+Cha_khar	1
+Tta_khar	1
+Kka_khar	1
+Gha_khar	2
+SPa_khar	2
+Cauda_khar	3
+class definition end
+
+class	1, 3	2, 13
+class	2, 3	2, 14
+
+lookup end
+
+
+lookup	13	single
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+U_khar	U.alt
+vocR_khar	vocR.shorter
+O_khar	O_vertical_short
+Cauda_khar	Cauda_khar.short
+SubMa_khar	SubMa.alt
+SubYa_khar	SubYa.alt
+SubRa_khar	SubRa.alt
+SubLa_khar	SubLa.alt
+SubVa_khar	SubVa.alt
+
+lookup end
+
+
+lookup	14	single
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+vocR_khar	vocR.wide
+Cauda_khar	Cauda_khar.short2
+SubMa_khar	SubMa.alt1
+SubYa_khar	SubYa.alt1
+SubRa_khar	SubRa.alt1
+SubVa_khar	SubVa.alt1
+
+lookup end
+
+
+lookup	15	single
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+U_khar	U.alt2
+vocR_khar	vocR.short
+SubMa_khar	SubMa.alt2
+SubVa_khar	SubVa.alt2
+
+lookup end
+
+
+lookup	16	single
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+U_khar	U.alt3
+SubMa_khar	SubMa.alt3
+SubYa_khar	SubYa.alt3
+SubRa_khar	SubRa.alt3
+SubVa_khar	SubVa.alt3
+
+lookup end
+
+
+lookup	17	single
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+U_khar	U_spacing
+SubYa_khar	SubYa.alt4
+SubRa_khar	SubRa.alt4
+SubVa_khar	SubVa.alt4
 
 lookup end
 
