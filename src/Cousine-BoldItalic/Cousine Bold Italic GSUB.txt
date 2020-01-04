@@ -1,0 +1,194 @@
+FontDame GSUB table
+
+
+script table begin
+cyrl	default
+cyrl	SRB 		2
+hebr	default		0, 1
+latn	default
+latn	MAH 		3
+script table end
+
+
+feature table begin
+0	ccmp	1, 2
+1	dlig	0
+2	locl	4
+3	locl	3
+feature table end
+
+lookup	0	ligature
+
+RightToLeft	yes
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+aleflamed	alef	lamed
+
+lookup end
+
+
+lookup	1	ligature
+
+RightToLeft	yes
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+uni05B105BD	hatafsegol	meteg
+uni05B205BD	hatafpatah	meteg
+uni05B305BD	hatafqamats	meteg
+alefdagesh	alef	dagesh
+betdagesh	bet	dagesh
+gimeldagesh	gimel	dagesh
+daletdagesh	dalet	dagesh
+hedagesh	he	dagesh
+vavdagesh	vav	dagesh
+vavholam	vav	holam
+zayindagesh	zayin	dagesh
+tetdagesh	tet	dagesh
+yoddagesh	yod	dagesh
+uniFB1D	yod	hiriq
+finalkafdagesh	finalkaf	dagesh
+finalkafsheva	finalkaf	sheva
+finalkafqamats	finalkaf	qamats
+kafdagesh	kaf	dagesh
+lamedholam	lamed	holam
+lamedholamdagesh	lamed	dagesh	holam
+lameddagesh	lamed	dagesh
+memdagesh	mem	dagesh
+nundagesh	nun	dagesh
+samekhdagesh	samekh	dagesh
+finalpedagesh	finalpe	dagesh
+pedagesh	pe	dagesh
+tsadidagesh	tsadi	dagesh
+qofdagesh	qof	dagesh
+reshdagesh	resh	dagesh
+shindageshshindot	shin	shindot	dagesh
+shindageshshindot	shin	dagesh	shindot
+shinshindot	shin	shindot
+shindageshsindot	shin	sindot	dagesh
+shindageshsindot	shin	dagesh	sindot
+shinsindot	shin	sindot
+shindagesh	shin	dagesh
+tavdagesh	tav	dagesh
+
+lookup end
+
+
+lookup	2	chained
+
+RightToLeft	yes
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+inputcoverage definition begin
+alef
+bet
+kaf
+pe
+yodyod
+coverage definition end
+
+inputcoverage definition begin
+patah
+qamats
+rafe
+coverage definition end
+
+lookaheadcoverage definition begin
+uni25CC
+alef
+bet
+gimel
+dalet
+he
+vav
+zayin
+het
+tet
+yod
+finalkaf
+kaf
+lamed
+finalmem
+mem
+finalnun
+nun
+samekh
+ayin
+finalpe
+pe
+finaltsadi
+tsadi
+qof
+resh
+shin
+tav
+vavvav
+vavyod
+yodyod
+alefwide
+daletwide
+hewide
+kafwide
+lamedwide
+finalmemwide
+reshwide
+tavwide
+coverage definition end
+
+coverage	1,5
+lookup end
+
+
+lookup	3	single
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+Lcommaaccent	Lcommaaccent.loclMAH
+lcommaaccent	lcommaaccent.loclMAH
+Ncommaaccent	Ncommaaccent.loclMAH
+ncommaaccent	ncommaaccent.loclMAH
+
+lookup end
+
+
+lookup	4	single
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+uni0431	uni0431.loclSRB
+uni0433	uni0433.loclSRB
+uni0434	uni0434.loclSRB
+uni043F	uni043F.loclSRB
+uni0441	uni0441.loclSRB
+uni0448	uni0448.loclSRB
+
+lookup end
+
+
+lookup	5	ligature
+
+RightToLeft	yes
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+alefpatah	alef	patah
+alefqamats	alef	qamats
+betrafe	bet	rafe
+kafrafe	kaf	rafe
+perafe	pe	rafe
+yodyod_patah	yodyod	patah
+
+lookup end
+
