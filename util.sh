@@ -48,6 +48,28 @@ function build_plist() {
 }
 
 ################################################################################
+# Build font instances from designspace and UFOs.
+# Arguments:
+#     Path to designspace source.
+#     Output formats, as separate strings.
+################################################################################
+function build_designspace() {
+    filename=$(basename "$1"); filename="${filename%.*}"
+    fontmake -m "$1" -o "${@:2}" --expand-features-to-instances
+    for format in "${@:2}" ; do cp master_$format/$filename-*.$format instance_$format/; done
+}
+
+
+################################################################################
+# Build variable font from designspace and UFOs.
+# Arguments:
+#     Path to designspace source.
+################################################################################
+function build_designspace_variable() {
+    fontmake -m "$1" -o variable --expand-features-to-instances
+}
+
+################################################################################
 # Build variable font from Glyphs source.
 # Arguments:
 #     Path to Glyphs source.
