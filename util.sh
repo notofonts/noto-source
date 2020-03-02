@@ -66,7 +66,7 @@ function build_designspace() {
 #     Path to designspace source.
 ################################################################################
 function build_designspace_variable() {
-    fontmake -m "$1" -o variable --expand-features-to-instances
+    fontmake -m "$1" -o variable
 }
 
 ################################################################################
