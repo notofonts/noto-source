@@ -56,7 +56,6 @@ function build_plist() {
 function build_designspace() {
     filename=$(basename "$1"); filename="${filename%.*}"
     fontmake -m "$1" -i -o "${@:2}" --expand-features-to-instances
-    for format in "${@:2}" ; do cp master_$format/$filename-*.$format instance_$format/; done
 }
 
 
