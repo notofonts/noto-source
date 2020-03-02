@@ -54,7 +54,6 @@ function build_plist() {
 #     Output formats, as separate strings.
 ################################################################################
 function build_designspace() {
-    filename=$(basename "$1"); filename="${filename%.*}"
     fontmake -m "$1" -i -o "${@:2}" --expand-features-to-instances
 }
 
