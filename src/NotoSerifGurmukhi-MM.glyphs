@@ -1,5 +1,5 @@
 {
-.appVersion = "1060";
+.appVersion = "1296";
 copyright = "Copyright 2017 Google Inc. All Rights Reserved.";
 customParameters = (
 {
@@ -125,6 +125,7 @@ iriguru,
 uraguru,
 ekonkarguru,
 yakashguru,
+uni0A76,
 U262C,
 unuktaguru,
 uunuktaguru,
@@ -343,7 +344,9 @@ uniA835,
 uniA836,
 uniA837,
 uniA838,
-uniA839
+uniA839,
+udattadeva,
+anudattadeva
 );
 },
 {
@@ -353,7 +356,7 @@ value = (
 },
 {
 name = versionString;
-value = "Version 2.000";
+value = "Version 2.001";
 },
 {
 name = "Has WWS Names";
@@ -387,6 +390,10 @@ featurePrefixes = (
 automatic = 1;
 code = "languagesystem DFLT dflt;\012languagesystem gur2 dflt;\012languagesystem guru dflt;\012";
 name = Languagesystems;
+},
+{
+code = "\012lookup decomposeSubscript {\012	sub rasubscriptguru by halantguru raguru ;\012	sub hasubscriptguru	by halantguru haguru ;\012	sub vasubscriptguru by halantguru vaguru ;\012} decomposeSubscript ;\012\012\012";
+name = Lookups;
 }
 );
 features = (
@@ -396,7 +403,7 @@ code = "feature nukt;\012feature blwf;\012feature half;\012feature pstf;\012feat
 name = aalt;
 },
 {
-code = "script gur2;\012sub uguru nuktaguru by unuktaguru;\012sub uuguru nuktaguru by uunuktaguru;\012sub kaguru nuktaguru by kanuktaguru;\012sub khaguru nuktaguru by khanuktaguru;\012sub gaguru nuktaguru by ganuktaguru;\012sub ghaguru nuktaguru by ghanuktaguru;\012sub ngaguru nuktaguru by nganuktaguru;\012sub caguru nuktaguru by canuktaguru;\012sub chaguru nuktaguru by chanuktaguru;\012sub jaguru nuktaguru by januktaguru;\012sub jhaguru nuktaguru by jhanuktaguru;\012sub nyaguru nuktaguru by nyanuktaguru;\012sub ttaguru nuktaguru by ttanuktaguru;\012sub tthaguru nuktaguru by tthanuktaguru;\012sub ddaguru nuktaguru by rraguru;\012sub ddhaguru nuktaguru by ddhanuktaguru;\012sub nnaguru nuktaguru by nnanuktaguru;\012sub taguru nuktaguru by tanuktaguru;\012sub thaguru nuktaguru by thanuktaguru;\012sub daguru nuktaguru by danuktaguru;\012sub dhaguru nuktaguru by dhanuktaguru;\012sub naguru nuktaguru by nanuktaguru;\012sub paguru nuktaguru by panuktaguru;\012sub phaguru nuktaguru by phanuktaguru;\012sub baguru nuktaguru by banuktaguru;\012sub bhaguru nuktaguru by bhanuktaguru;\012sub maguru nuktaguru by manuktaguru;\012sub yaguru nuktaguru by yanuktaguru;\012sub raguru nuktaguru by ranuktaguru;\012sub laguru nuktaguru by lanuktaguru;\012sub vaguru nuktaguru by vanuktaguru;\012sub saguru nuktaguru by sanuktaguru;\012sub haguru nuktaguru by hanuktaguru;\012script guru;\012sub uguru nuktaguru by unuktaguru;\012sub uuguru nuktaguru by uunuktaguru;\012sub kaguru nuktaguru by kanuktaguru;\012sub khaguru nuktaguru by khanuktaguru;\012sub gaguru nuktaguru by ganuktaguru;\012sub ghaguru nuktaguru by ghanuktaguru;\012sub ngaguru nuktaguru by nganuktaguru;\012sub caguru nuktaguru by canuktaguru;\012sub chaguru nuktaguru by chanuktaguru;\012sub jaguru nuktaguru by januktaguru;\012sub jhaguru nuktaguru by jhanuktaguru;\012sub nyaguru nuktaguru by nyanuktaguru;\012sub ttaguru nuktaguru by ttanuktaguru;\012sub tthaguru nuktaguru by tthanuktaguru;\012sub ddaguru nuktaguru by rraguru;\012sub ddhaguru nuktaguru by ddhanuktaguru;\012sub nnaguru nuktaguru by nnanuktaguru;\012sub taguru nuktaguru by tanuktaguru;\012sub thaguru nuktaguru by thanuktaguru;\012sub daguru nuktaguru by danuktaguru;\012sub dhaguru nuktaguru by dhanuktaguru;\012sub naguru nuktaguru by nanuktaguru;\012sub paguru nuktaguru by panuktaguru;\012sub phaguru nuktaguru by phanuktaguru;\012sub baguru nuktaguru by banuktaguru;\012sub bhaguru nuktaguru by bhanuktaguru;\012sub maguru nuktaguru by manuktaguru;\012sub yaguru nuktaguru by yanuktaguru;\012sub raguru nuktaguru by ranuktaguru;\012sub laguru nuktaguru by lanuktaguru;\012sub vaguru nuktaguru by vanuktaguru;\012sub saguru nuktaguru by sanuktaguru;\012sub haguru nuktaguru by hanuktaguru;\012";
+code = "script gur2;\012lookup nukta0 {\012sub uguru nuktaguru by unuktaguru;\012sub uuguru nuktaguru by uunuktaguru;\012sub kaguru nuktaguru by kanuktaguru;\012sub khaguru nuktaguru by khanuktaguru;\012sub gaguru nuktaguru by ganuktaguru;\012sub ghaguru nuktaguru by ghanuktaguru;\012sub ngaguru nuktaguru by nganuktaguru;\012sub caguru nuktaguru by canuktaguru;\012sub chaguru nuktaguru by chanuktaguru;\012sub jaguru nuktaguru by januktaguru;\012sub jhaguru nuktaguru by jhanuktaguru;\012sub nyaguru nuktaguru by nyanuktaguru;\012sub ttaguru nuktaguru by ttanuktaguru;\012sub tthaguru nuktaguru by tthanuktaguru;\012sub ddaguru nuktaguru by rraguru;\012sub ddhaguru nuktaguru by ddhanuktaguru;\012sub nnaguru nuktaguru by nnanuktaguru;\012sub taguru nuktaguru by tanuktaguru;\012sub thaguru nuktaguru by thanuktaguru;\012sub daguru nuktaguru by danuktaguru;\012sub dhaguru nuktaguru by dhanuktaguru;\012sub naguru nuktaguru by nanuktaguru;\012sub paguru nuktaguru by panuktaguru;\012sub phaguru nuktaguru by phanuktaguru;\012sub baguru nuktaguru by banuktaguru;\012sub bhaguru nuktaguru by bhanuktaguru;\012sub maguru nuktaguru by manuktaguru;\012sub yaguru nuktaguru by yanuktaguru;\012sub raguru nuktaguru by ranuktaguru;\012sub laguru nuktaguru by lanuktaguru;\012sub vaguru nuktaguru by vanuktaguru;\012sub saguru nuktaguru by sanuktaguru;\012sub haguru nuktaguru by hanuktaguru;\012} nukta0 ;\012script guru;\012lookup nukta0 ;\012";
 name = nukt;
 },
 {
@@ -412,15 +419,15 @@ code = "script gur2;\012sub halantguru yaguru by yapostformguru;\012script guru;
 name = pstf;
 },
 {
-code = "script gur2;\012lookup blws0 {\012# Format 2\012ignore sub .notdef [rasubscriptguru hasubscriptguru]' [rasubscriptguru hasubscriptguru];\012} blws0;\012lookup blws1 {\012sub udaatguru umatraguru by udaatuguru;\012sub udaatguru uumatraguru by udaatuuguru;\012sub udaatguru halantguru by udaathalantguru;\012sub yakashguru umatraguru by yakashuguru;\012sub yakashguru uumatraguru by yakashuuguru;\012sub yakashguru halantguru by yakashhalantguru;\012sub rasubscriptguru umatraguru by rasubscriptuguru;\012sub rasubscriptguru uumatraguru by rasubscriptuuguru;\012sub rasubscriptguru halantguru by rasubscripthalantguru;\012sub hasubscriptguru umatraguru by hasubscriptuguru;\012sub hasubscriptguru uumatraguru by hasubscriptuuguru;\012sub hasubscriptguru halantguru by hasubscripthalantguru;\012sub vasubscriptguru umatraguru by vasubscriptuguru;\012sub vasubscriptguru uumatraguru by vasubscriptuuguru;\012sub vasubscriptguru halantguru by vasubscripthalantguru;\012} blws1;\012lookup blws2 {\012sub kaguru rasubscriptguru by karaguru;\012sub naguru uumatraguru tippiguru by nuutippiguru;\012sub phanuktaguru umatraguru by phunuktaguru;\012sub phanuktaguru uumatraguru by phuunuktaguru;\012} blws2;\012lookup blws3 {\012# Format 2\012ignore sub [caguru nyaguru ttaguru tthaguru ddaguru ddhaguru nnaguru raguru laguru lanuktaguru] [rasubscriptguru hasubscriptguru]' .notdef ;\012} blws3;\012script guru;\012lookup blws5 {\012# Format 2\012ignore sub .notdef [rasubscriptguru hasubscriptguru]' [rasubscriptguru hasubscriptguru] ;\012} blws5;\012lookup blws6 {\012sub udaatguru umatraguru by udaatuguru;\012sub udaatguru uumatraguru by udaatuuguru;\012sub udaatguru halantguru by udaathalantguru;\012sub yakashguru umatraguru by yakashuguru;\012sub yakashguru uumatraguru by yakashuuguru;\012sub yakashguru halantguru by yakashhalantguru;\012sub rasubscriptguru umatraguru by rasubscriptuguru;\012sub rasubscriptguru uumatraguru by rasubscriptuuguru;\012sub rasubscriptguru halantguru by rasubscripthalantguru;\012sub hasubscriptguru umatraguru by hasubscriptuguru;\012sub hasubscriptguru uumatraguru by hasubscriptuuguru;\012sub hasubscriptguru halantguru by hasubscripthalantguru;\012sub vasubscriptguru umatraguru by vasubscriptuguru;\012sub vasubscriptguru uumatraguru by vasubscriptuuguru;\012sub vasubscriptguru halantguru by vasubscripthalantguru;\012} blws6;\012lookup blws7 {\012sub kaguru rasubscriptguru by karaguru;\012sub naguru uumatraguru tippiguru by nuutippiguru;\012sub phanuktaguru umatraguru by phunuktaguru;\012sub phanuktaguru uumatraguru by phuunuktaguru;\012} blws7;\012lookup blws8 {\012# Format 2\012ignore sub [caguru nyaguru ttaguru tthaguru ddaguru ddhaguru nnaguru raguru laguru lanuktaguru] [rasubscriptguru hasubscriptguru]' .notdef ;\012} blws8;\012\012";
+code = "script gur2;\012lookup blws0 {\012sub [rasubscriptguru hasubscriptguru vasubscriptguru]' lookup decomposeSubscript [rasubscriptguru hasubscriptguru vasubscriptguru udaatguru yakashguru];\012} blws0;\012lookup blws1 {\012sub udaatguru umatraguru by udaatuguru;\012sub udaatguru uumatraguru by udaatuuguru;\012sub udaatguru halantguru by udaathalantguru;\012sub yakashguru umatraguru by yakashuguru;\012sub yakashguru uumatraguru by yakashuuguru;\012sub yakashguru halantguru by yakashhalantguru;\012sub rasubscriptguru umatraguru by rasubscriptuguru;\012sub rasubscriptguru uumatraguru by rasubscriptuuguru;\012sub rasubscriptguru halantguru by rasubscripthalantguru;\012sub hasubscriptguru umatraguru by hasubscriptuguru;\012sub hasubscriptguru uumatraguru by hasubscriptuuguru;\012sub hasubscriptguru halantguru by hasubscripthalantguru;\012sub vasubscriptguru umatraguru by vasubscriptuguru;\012sub vasubscriptguru uumatraguru by vasubscriptuuguru;\012sub vasubscriptguru halantguru by vasubscripthalantguru;\012} blws1;\012lookup blws2 {\012sub kaguru rasubscriptguru by karaguru;\012sub naguru uumatraguru tippiguru by nuutippiguru;\012sub phanuktaguru umatraguru by phunuktaguru;\012sub phanuktaguru uumatraguru by phuunuktaguru;\012} blws2;\012#lookup blws3 {\012# Format 2\012#ignore sub [caguru nyaguru ttaguru tthaguru ddaguru ddhaguru nnaguru raguru laguru lanuktaguru] [rasubscriptguru hasubscriptguru]' .notdef ;\012#} blws3;\012script guru;\012lookup blws0 ;\012lookup blws1 ;\012lookup blws2 ;";
 name = blws;
 },
 {
-code = "script gur2;\012lookup abvs0 {\012sub iiguru bindiguru by iibindiguru;\012sub iiguru tippiguru by iibindiguru;\012sub iiguru addakguru by iiaddakguru;\012sub uguru bindiguru by ubindiguru;\012sub uguru tippiguru by ubindiguru;\012sub uguru addakguru by uaddakguru;\012sub uuguru bindiguru by uubindiguru;\012sub uuguru tippiguru by uubindiguru;\012sub uuguru addakguru by uuaddakguru;\012sub eeguru bindiguru by eebindiguru;\012sub eeguru tippiguru by eebindiguru;\012sub eeguru addakguru by eeaddakguru;\012sub aiguru bindiguru by aibindiguru;\012sub aiguru tippiguru by aibindiguru;\012sub aiguru addakguru by aiaddakguru;\012sub ooguru bindiguru by oobindiguru;\012sub ooguru tippiguru by oobindiguru;\012sub ooguru addakguru by ooaddakguru;\012sub auguru bindiguru by aubindiguru;\012sub auguru tippiguru by aubindiguru;\012sub auguru addakguru by auaddakguru;\012sub iimatraguru bindiguru by iimatrabindiguru;\012sub iimatraguru tippiguru by iimatrabindiguru;\012sub iimatraguru addakguru by iimatraaddakguru;\012sub eematraguru bindiguru by eematrabindiguru;\012sub eematraguru tippiguru by eematrabindiguru;\012sub eematraguru addakguru by eematraaddakguru;\012sub aimatraguru bindiguru by aimatrabindiguru;\012sub aimatraguru tippiguru by aimatrabindiguru;\012sub aimatraguru addakguru by aimatraaddakguru;\012sub oomatraguru bindiguru by oomatrabindiguru;\012sub oomatraguru tippiguru by oomatrabindiguru;\012sub oomatraguru addakguru by oomatraaddakguru;\012sub aumatraguru bindiguru by aumatrabindiguru;\012sub aumatraguru tippiguru by aumatrabindiguru;\012sub aumatraguru addakguru by aumatraaddakguru;\012sub unuktaguru bindiguru by ubindinuktaguru;\012sub unuktaguru tippiguru by ubindinuktaguru;\012sub unuktaguru addakguru by unuktaaddakguru;\012sub uunuktaguru bindiguru by uubindinuktaguru;\012sub uunuktaguru tippiguru by uubindinuktaguru;\012sub uunuktaguru addakguru by uunuktaaddakguru;\012} abvs0;\012lookup abvs1 {\012# Format 2\012ignore sub [iibindiguru ubindiguru uubindiguru eebindiguru aibindiguru oobindiguru aubindiguru iimatrabindiguru eematrabindiguru aimatrabindiguru oomatrabindiguru aumatrabindiguru ubindinuktaguru] .notdef' .notdef ;\012} abvs1;\012# lookup abvs2 {\012# Format 2\012# ignore sub [rasubscript1guru hasubscript1guru] [eematraaddakguru aimatraaddakguru oomatraaddakguru]' .notdef ;\012# } abvs2;\012script guru;\012lookup abvs3 {\012sub iiguru bindiguru by iibindiguru;\012sub iiguru tippiguru by iibindiguru;\012sub iiguru addakguru by iiaddakguru;\012sub uguru bindiguru by ubindiguru;\012sub uguru tippiguru by ubindiguru;\012sub uguru addakguru by uaddakguru;\012sub uuguru bindiguru by uubindiguru;\012sub uuguru tippiguru by uubindiguru;\012sub uuguru addakguru by uuaddakguru;\012sub eeguru bindiguru by eebindiguru;\012sub eeguru tippiguru by eebindiguru;\012sub eeguru addakguru by eeaddakguru;\012sub aiguru bindiguru by aibindiguru;\012sub aiguru tippiguru by aibindiguru;\012sub aiguru addakguru by aiaddakguru;\012sub ooguru bindiguru by oobindiguru;\012sub ooguru tippiguru by oobindiguru;\012sub ooguru addakguru by ooaddakguru;\012sub auguru bindiguru by aubindiguru;\012sub auguru tippiguru by aubindiguru;\012sub auguru addakguru by auaddakguru;\012sub iimatraguru bindiguru by iimatrabindiguru;\012sub iimatraguru tippiguru by iimatrabindiguru;\012sub iimatraguru addakguru by iimatraaddakguru;\012sub eematraguru bindiguru by eematrabindiguru;\012sub eematraguru tippiguru by eematrabindiguru;\012sub eematraguru addakguru by eematraaddakguru;\012sub aimatraguru bindiguru by aimatrabindiguru;\012sub aimatraguru tippiguru by aimatrabindiguru;\012sub aimatraguru addakguru by aimatraaddakguru;\012sub oomatraguru bindiguru by oomatrabindiguru;\012sub oomatraguru tippiguru by oomatrabindiguru;\012sub oomatraguru addakguru by oomatraaddakguru;\012sub aumatraguru bindiguru by aumatrabindiguru;\012sub aumatraguru tippiguru by aumatrabindiguru;\012sub aumatraguru addakguru by aumatraaddakguru;\012sub unuktaguru bindiguru by ubindinuktaguru;\012sub unuktaguru tippiguru by ubindinuktaguru;\012sub unuktaguru addakguru by unuktaaddakguru;\012sub uunuktaguru bindiguru by uubindinuktaguru;\012sub uunuktaguru tippiguru by uubindinuktaguru;\012sub uunuktaguru addakguru by uunuktaaddakguru;\012\012} abvs3;\012lookup abvs4 {\012# Format 2\012ignore sub [iibindiguru ubindiguru uubindiguru eebindiguru aibindiguru oobindiguru aubindiguru iimatrabindiguru eematrabindiguru aimatrabindiguru oomatrabindiguru aumatrabindiguru ubindinuktaguru] .notdef' .notdef ;\012} abvs4;\012# lookup abvs5 {\012# Format 2\012# ignore sub [rasubscript1guru hasubscript1guru] [eematraaddakguru aimatraaddakguru oomatraaddakguru]' .notdef ;\012# } abvs5;\012";
+code = "script gur2;\012lookup abvs0 {\012sub iiguru bindiguru by iibindiguru;\012sub iiguru tippiguru by iibindiguru;\012sub iiguru addakguru by iiaddakguru;\012sub uguru bindiguru by ubindiguru;\012sub uguru tippiguru by ubindiguru;\012sub uguru addakguru by uaddakguru;\012sub uuguru bindiguru by uubindiguru;\012sub uuguru tippiguru by uubindiguru;\012sub uuguru addakguru by uuaddakguru;\012sub eeguru bindiguru by eebindiguru;\012sub eeguru tippiguru by eebindiguru;\012sub eeguru addakguru by eeaddakguru;\012sub aiguru bindiguru by aibindiguru;\012sub aiguru tippiguru by aibindiguru;\012sub aiguru addakguru by aiaddakguru;\012sub ooguru bindiguru by oobindiguru;\012sub ooguru tippiguru by oobindiguru;\012sub ooguru addakguru by ooaddakguru;\012sub auguru bindiguru by aubindiguru;\012sub auguru tippiguru by aubindiguru;\012sub auguru addakguru by auaddakguru;\012sub iimatraguru bindiguru by iimatrabindiguru;\012sub iimatraguru tippiguru by iimatrabindiguru;\012sub iimatraguru addakguru by iimatraaddakguru;\012sub eematraguru bindiguru by eematrabindiguru;\012sub eematraguru tippiguru by eematrabindiguru;\012sub eematraguru addakguru by eematraaddakguru;\012sub aimatraguru bindiguru by aimatrabindiguru;\012sub aimatraguru tippiguru by aimatrabindiguru;\012sub aimatraguru addakguru by aimatraaddakguru;\012sub oomatraguru bindiguru by oomatrabindiguru;\012sub oomatraguru tippiguru by oomatrabindiguru;\012sub oomatraguru addakguru by oomatraaddakguru;\012sub aumatraguru bindiguru by aumatrabindiguru;\012sub aumatraguru tippiguru by aumatrabindiguru;\012sub aumatraguru addakguru by aumatraaddakguru;\012sub unuktaguru bindiguru by ubindinuktaguru;\012sub unuktaguru tippiguru by ubindinuktaguru;\012sub unuktaguru addakguru by unuktaaddakguru;\012sub uunuktaguru bindiguru by uubindinuktaguru;\012sub uunuktaguru tippiguru by uubindinuktaguru;\012sub uunuktaguru addakguru by uunuktaaddakguru;\012} abvs0;\012#lookup abvs1 {\012# Format 2\012#ignore sub [iibindiguru ubindiguru uubindiguru eebindiguru aibindiguru oobindiguru aubindiguru iimatrabindiguru eematrabindiguru aimatrabindiguru oomatrabindiguru aumatrabindiguru ubindinuktaguru] .notdef' .notdef ;\012#} abvs1;\012# lookup abvs2 {\012# Format 2\012# ignore sub [rasubscript1guru hasubscript1guru] [eematraaddakguru aimatraaddakguru oomatraaddakguru]' .notdef ;\012# } abvs2;\012script guru;\012lookup abvs0 ; \012#lookup abvs4 {\012# Format 2\012#ignore sub [iibindiguru ubindiguru uubindiguru eebindiguru aibindiguru oobindiguru aubindiguru iimatrabindiguru eematrabindiguru aimatrabindiguru oomatrabindiguru aumatrabindiguru ubindinuktaguru] .notdef' .notdef ;\012#} abvs4;\012# lookup abvs5 {\012# Format 2\012# ignore sub [rasubscript1guru hasubscript1guru] [eematraaddakguru aimatraaddakguru oomatraaddakguru]' .notdef ;\012# } abvs5;\012";
 name = abvs;
 },
 {
-code = "script gur2;\012sub kaguru halantguru by kaprehalfguru;\012sub khaguru halantguru by khaprehalfguru;\012sub gaguru halantguru by gaprehalfguru;\012sub ghaguru halantguru by ghaprehalfguru;\012sub ngaguru halantguru by ngaprehalfguru;\012sub caguru halantguru by caprehalfguru;\012sub chaguru halantguru by chaprehalfguru;\012sub jaguru halantguru by japrehalfguru;\012sub jhaguru halantguru by jhaprehalfguru;\012sub nyaguru halantguru by nyaprehalfguru;\012sub ttaguru halantguru by ttaprehalfguru;\012sub tthaguru halantguru by tthaprehalfguru;\012sub ddaguru halantguru by ddaprehalfguru;\012sub ddhaguru halantguru by ddhaprehalfguru;\012sub nnaguru halantguru by nnaprehalfguru;\012sub taguru halantguru by taprehalfguru;\012sub thaguru halantguru by thaprehalfguru;\012sub daguru halantguru by daprehalfguru;\012sub dhaguru halantguru by dhaprehalfguru;\012sub naguru halantguru by naprehalfguru;\012sub paguru halantguru by paprehalfguru;\012sub phaguru halantguru by phaprehalfguru;\012sub baguru halantguru by baprehalfguru;\012sub bhaguru halantguru by bhaprehalfguru;\012sub maguru halantguru by maprehalfguru;\012sub yaguru halantguru by yaprehalfguru;\012sub raguru halantguru by raprehalfguru;\012sub laguru halantguru by laprehalfguru;\012sub lanuktaguru halantguru by lanuktaprehalfguru;\012sub vaguru halantguru by vaprehalfguru;\012sub sanuktaguru halantguru by sanuktaprehalfguru;\012sub saguru halantguru by saprehalfguru;\012sub haguru halantguru by haprehalfguru;\012sub khanuktaguru halantguru by khanuktaprehalfguru;\012sub ganuktaguru halantguru by ganuktaprehalfguru;\012sub januktaguru halantguru by januktaprehalfguru;\012sub rraguru halantguru by ddanuktaprehalfguru;\012sub phanuktaguru halantguru by phanuktaprehalfguru;\012sub kanuktaguru halantguru by kanuktaprehalfguru;\012sub ghanuktaguru halantguru by ghanuktaprehalfguru;\012sub nganuktaguru halantguru by nganuktaprehalfguru;\012sub canuktaguru halantguru by canuktaprehalfguru;\012sub chanuktaguru halantguru by chanuktaprehalfguru;\012sub jhanuktaguru halantguru by jhanuktaprehalfguru;\012sub nyanuktaguru halantguru by nyanuktaprehalfguru;\012sub ttanuktaguru halantguru by ttanuktaprehalfguru;\012sub tthanuktaguru halantguru by tthanuktaprehalfguru;\012sub ddhanuktaguru halantguru by ddhanuktaprehalfguru;\012sub nnanuktaguru halantguru by nnanuktaprehalfguru;\012sub tanuktaguru halantguru by tanuktaprehalfguru;\012sub thanuktaguru halantguru by thanuktaprehalfguru;\012sub danuktaguru halantguru by danuktaprehalfguru;\012sub dhanuktaguru halantguru by dhanuktaprehalfguru;\012sub nanuktaguru halantguru by nanuktaprehalfguru;\012sub panuktaguru halantguru by panuktaprehalfguru;\012sub banuktaguru halantguru by banuktaprehalfguru;\012sub bhanuktaguru halantguru by bhanuktaprehalfguru;\012sub manuktaguru halantguru by manuktaprehalfguru;\012sub yanuktaguru halantguru by yanuktaprehalfguru;\012sub ranuktaguru halantguru by ranuktaprehalfguru;\012sub vanuktaguru halantguru by vanuktaprehalfguru;\012sub hanuktaguru halantguru by hanuktaprehalfguru;\012script guru;\012sub kaguru halantguru by kaprehalfguru;\012sub khaguru halantguru by khaprehalfguru;\012sub gaguru halantguru by gaprehalfguru;\012sub ghaguru halantguru by ghaprehalfguru;\012sub ngaguru halantguru by ngaprehalfguru;\012sub caguru halantguru by caprehalfguru;\012sub chaguru halantguru by chaprehalfguru;\012sub jaguru halantguru by japrehalfguru;\012sub jhaguru halantguru by jhaprehalfguru;\012sub nyaguru halantguru by nyaprehalfguru;\012sub ttaguru halantguru by ttaprehalfguru;\012sub tthaguru halantguru by tthaprehalfguru;\012sub ddaguru halantguru by ddaprehalfguru;\012sub ddhaguru halantguru by ddhaprehalfguru;\012sub nnaguru halantguru by nnaprehalfguru;\012sub taguru halantguru by taprehalfguru;\012sub thaguru halantguru by thaprehalfguru;\012sub daguru halantguru by daprehalfguru;\012sub dhaguru halantguru by dhaprehalfguru;\012sub naguru halantguru by naprehalfguru;\012sub paguru halantguru by paprehalfguru;\012sub phaguru halantguru by phaprehalfguru;\012sub baguru halantguru by baprehalfguru;\012sub bhaguru halantguru by bhaprehalfguru;\012sub maguru halantguru by maprehalfguru;\012sub yaguru halantguru by yaprehalfguru;\012sub raguru halantguru by raprehalfguru;\012sub laguru halantguru by laprehalfguru;\012sub lanuktaguru halantguru by lanuktaprehalfguru;\012sub vaguru halantguru by vaprehalfguru;\012sub sanuktaguru halantguru by sanuktaprehalfguru;\012sub saguru halantguru by saprehalfguru;\012sub haguru halantguru by haprehalfguru;\012sub khanuktaguru halantguru by khanuktaprehalfguru;\012sub ganuktaguru halantguru by ganuktaprehalfguru;\012sub januktaguru halantguru by januktaprehalfguru;\012sub rraguru halantguru by ddanuktaprehalfguru;\012sub phanuktaguru halantguru by phanuktaprehalfguru;\012sub kanuktaguru halantguru by kanuktaprehalfguru;\012sub ghanuktaguru halantguru by ghanuktaprehalfguru;\012sub nganuktaguru halantguru by nganuktaprehalfguru;\012sub canuktaguru halantguru by canuktaprehalfguru;\012sub chanuktaguru halantguru by chanuktaprehalfguru;\012sub jhanuktaguru halantguru by jhanuktaprehalfguru;\012sub nyanuktaguru halantguru by nyanuktaprehalfguru;\012sub ttanuktaguru halantguru by ttanuktaprehalfguru;\012sub tthanuktaguru halantguru by tthanuktaprehalfguru;\012sub ddhanuktaguru halantguru by ddhanuktaprehalfguru;\012sub nnanuktaguru halantguru by nnanuktaprehalfguru;\012sub tanuktaguru halantguru by tanuktaprehalfguru;\012sub thanuktaguru halantguru by thanuktaprehalfguru;\012sub danuktaguru halantguru by danuktaprehalfguru;\012sub dhanuktaguru halantguru by dhanuktaprehalfguru;\012sub nanuktaguru halantguru by nanuktaprehalfguru;\012sub panuktaguru halantguru by panuktaprehalfguru;\012sub banuktaguru halantguru by banuktaprehalfguru;\012sub bhanuktaguru halantguru by bhanuktaprehalfguru;\012sub manuktaguru halantguru by manuktaprehalfguru;\012sub yanuktaguru halantguru by yanuktaprehalfguru;\012sub ranuktaguru halantguru by ranuktaprehalfguru;\012sub vanuktaguru halantguru by vanuktaprehalfguru;\012sub hanuktaguru halantguru by hanuktaprehalfguru;\012";
+code = "script guru;\012sub kaguru halantguru by kaprehalfguru;\012sub khaguru halantguru by khaprehalfguru;\012sub gaguru halantguru by gaprehalfguru;\012sub ghaguru halantguru by ghaprehalfguru;\012sub ngaguru halantguru by ngaprehalfguru;\012sub caguru halantguru by caprehalfguru;\012sub chaguru halantguru by chaprehalfguru;\012sub jaguru halantguru by japrehalfguru;\012sub jhaguru halantguru by jhaprehalfguru;\012sub nyaguru halantguru by nyaprehalfguru;\012sub ttaguru halantguru by ttaprehalfguru;\012sub tthaguru halantguru by tthaprehalfguru;\012sub ddaguru halantguru by ddaprehalfguru;\012sub ddhaguru halantguru by ddhaprehalfguru;\012sub nnaguru halantguru by nnaprehalfguru;\012sub taguru halantguru by taprehalfguru;\012sub thaguru halantguru by thaprehalfguru;\012sub daguru halantguru by daprehalfguru;\012sub dhaguru halantguru by dhaprehalfguru;\012sub naguru halantguru by naprehalfguru;\012sub paguru halantguru by paprehalfguru;\012sub phaguru halantguru by phaprehalfguru;\012sub baguru halantguru by baprehalfguru;\012sub bhaguru halantguru by bhaprehalfguru;\012sub maguru halantguru by maprehalfguru;\012sub yaguru halantguru by yaprehalfguru;\012sub raguru halantguru by raprehalfguru;\012sub laguru halantguru by laprehalfguru;\012sub lanuktaguru halantguru by lanuktaprehalfguru;\012sub vaguru halantguru by vaprehalfguru;\012sub sanuktaguru halantguru by sanuktaprehalfguru;\012sub saguru halantguru by saprehalfguru;\012sub haguru halantguru by haprehalfguru;\012sub khanuktaguru halantguru by khanuktaprehalfguru;\012sub ganuktaguru halantguru by ganuktaprehalfguru;\012sub januktaguru halantguru by januktaprehalfguru;\012sub rraguru halantguru by ddanuktaprehalfguru;\012sub phanuktaguru halantguru by phanuktaprehalfguru;\012sub kanuktaguru halantguru by kanuktaprehalfguru;\012sub ghanuktaguru halantguru by ghanuktaprehalfguru;\012sub nganuktaguru halantguru by nganuktaprehalfguru;\012sub canuktaguru halantguru by canuktaprehalfguru;\012sub chanuktaguru halantguru by chanuktaprehalfguru;\012sub jhanuktaguru halantguru by jhanuktaprehalfguru;\012sub nyanuktaguru halantguru by nyanuktaprehalfguru;\012sub ttanuktaguru halantguru by ttanuktaprehalfguru;\012sub tthanuktaguru halantguru by tthanuktaprehalfguru;\012sub ddhanuktaguru halantguru by ddhanuktaprehalfguru;\012sub nnanuktaguru halantguru by nnanuktaprehalfguru;\012sub tanuktaguru halantguru by tanuktaprehalfguru;\012sub thanuktaguru halantguru by thanuktaprehalfguru;\012sub danuktaguru halantguru by danuktaprehalfguru;\012sub dhanuktaguru halantguru by dhanuktaprehalfguru;\012sub nanuktaguru halantguru by nanuktaprehalfguru;\012sub panuktaguru halantguru by panuktaprehalfguru;\012sub banuktaguru halantguru by banuktaprehalfguru;\012sub bhanuktaguru halantguru by bhanuktaprehalfguru;\012sub manuktaguru halantguru by manuktaprehalfguru;\012sub yanuktaguru halantguru by yanuktaprehalfguru;\012sub ranuktaguru halantguru by ranuktaprehalfguru;\012sub vanuktaguru halantguru by vanuktaprehalfguru;\012sub hanuktaguru halantguru by hanuktaprehalfguru;\012";
 name = haln;
 }
 );
@@ -475,16 +482,16 @@ value = 50;
 {
 name = panose;
 value = (
-"2",
-"2",
-"2",
-"2",
-"6",
-"5",
-"5",
-"2",
-"2",
-"4"
+2,
+2,
+2,
+2,
+6,
+5,
+5,
+2,
+2,
+4
 );
 }
 );
@@ -554,16 +561,16 @@ value = 50;
 {
 name = panose;
 value = (
-"2",
-"2",
-"5",
-"2",
-"6",
-"5",
-"5",
-"2",
-"2",
-"4"
+2,
+2,
+5,
+2,
+6,
+5,
+5,
+2,
+2,
+4
 );
 }
 );
@@ -628,23 +635,22 @@ value = 50;
 {
 name = panose;
 value = (
-"2",
-"2",
-"10",
-"2",
-"6",
-"5",
-"5",
-"2",
-"2",
-"4"
+2,
+2,
+10,
+2,
+6,
+5,
+5,
+2,
+2,
+4
 );
 }
 );
 descender = -240;
 horizontalStems = (
-128,
-117
+128
 );
 id = "E17BEC9D-CAAD-449F-91D9-03766E30097E";
 userData = {
@@ -652,8 +658,7 @@ GSOffsetHorizontal = 1;
 GSOffsetVertical = 1;
 };
 verticalStems = (
-167,
-140
+167
 );
 weight = Bold;
 weightValue = 194;
@@ -663,7 +668,7 @@ xHeight = 536;
 glyphs = (
 {
 glyphname = .notdef;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 layerId = "1D4F67F9-897D-45AD-B7F0-CA61A6862C03";
@@ -741,7 +746,7 @@ width = 600;
 },
 {
 glyphname = NULL;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 layerId = "E17BEC9D-CAAD-449F-91D9-03766E30097E";
@@ -760,7 +765,7 @@ unicode = 0000;
 },
 {
 glyphname = CR;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 layerId = "1D4F67F9-897D-45AD-B7F0-CA61A6862C03";
@@ -779,7 +784,7 @@ unicode = 000D;
 },
 {
 glyphname = space;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 layerId = "E17BEC9D-CAAD-449F-91D9-03766E30097E";
@@ -798,7 +803,7 @@ unicode = 0020;
 },
 {
 glyphname = uni00A0;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 layerId = "1D4F67F9-897D-45AD-B7F0-CA61A6862C03";
@@ -817,7 +822,7 @@ unicode = 00A0;
 },
 {
 glyphname = adakbindiguru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 anchors = (
@@ -968,7 +973,7 @@ unicode = 0A01;
 },
 {
 glyphname = bindiguru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 anchors = (
@@ -1062,7 +1067,7 @@ unicode = 0A02;
 },
 {
 glyphname = visargaguru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 layerId = "1D4F67F9-897D-45AD-B7F0-CA61A6862C03";
@@ -1291,7 +1296,7 @@ unicode = 0A03;
 },
 {
 glyphname = aguru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 anchors = (
@@ -1519,7 +1524,7 @@ unicode = 0A05;
 },
 {
 glyphname = aaguru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 anchors = (
@@ -1568,6 +1573,7 @@ position = "{885, 622}";
 );
 components = (
 {
+alignment = -1;
 name = aguru;
 },
 {
@@ -1581,11 +1587,12 @@ width = 1014;
 );
 leftKerningGroup = aL;
 rightKerningGroup = aamatraR;
+rightMetricsKey = aamatraguru;
 unicode = 0A06;
 },
 {
 glyphname = iguru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 anchors = (
@@ -1755,11 +1762,12 @@ width = 869;
 );
 leftKerningGroup = imatraL;
 rightKerningGroup = iriR;
+rightMetricsKey = iriguru;
 unicode = 0A07;
 },
 {
 glyphname = iiguru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 anchors = (
@@ -1770,6 +1778,7 @@ position = "{810, 622}";
 );
 components = (
 {
+alignment = -1;
 name = iriguru;
 },
 {
@@ -1821,11 +1830,12 @@ width = 888;
 );
 leftKerningGroup = iriL;
 rightKerningGroup = vert;
+rightMetricsKey = iimatraguru;
 unicode = 0A08;
 },
 {
 glyphname = uguru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 anchors = (
@@ -1891,7 +1901,7 @@ unicode = 0A09;
 },
 {
 glyphname = uuguru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 anchors = (
@@ -1957,7 +1967,7 @@ unicode = 0A0A;
 },
 {
 glyphname = eeguru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 anchors = (
@@ -1968,9 +1978,11 @@ position = "{522, 622}";
 );
 components = (
 {
+alignment = -1;
 name = iriguru;
 },
 {
+alignment = -1;
 name = eematraguru;
 transform = "{1, 0, 0, 1, 587, 0}";
 }
@@ -1987,6 +1999,7 @@ position = "{637, 622}";
 );
 components = (
 {
+alignment = -1;
 name = iriguru;
 },
 {
@@ -2006,6 +2019,7 @@ position = "{568, 622}";
 );
 components = (
 {
+alignment = -1;
 name = iriguru;
 },
 {
@@ -2018,12 +2032,13 @@ width = 629;
 }
 );
 leftKerningGroup = iriL;
+widthMetricsKey = iriguru;
 rightKerningGroup = iriR;
 unicode = 0A0F;
 },
 {
 glyphname = aiguru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 anchors = (
@@ -2034,6 +2049,7 @@ position = "{689, 622}";
 );
 components = (
 {
+alignment = -1;
 name = aguru;
 },
 {
@@ -2053,6 +2069,7 @@ position = "{860, 622}";
 );
 components = (
 {
+alignment = -1;
 name = aguru;
 },
 {
@@ -2072,6 +2089,7 @@ position = "{757, 622}";
 );
 components = (
 {
+alignment = -1;
 name = aguru;
 },
 {
@@ -2084,12 +2102,13 @@ width = 768;
 }
 );
 leftKerningGroup = aL;
+widthMetricsKey = aguru;
 rightKerningGroup = vert;
 unicode = 0A10;
 },
 {
 glyphname = ooguru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 anchors = (
@@ -2332,11 +2351,12 @@ unicode = 0A13;
 },
 {
 glyphname = auguru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 components = (
 {
+alignment = -1;
 name = aguru;
 },
 {
@@ -2350,6 +2370,7 @@ width = 727;
 {
 components = (
 {
+alignment = -1;
 name = aguru;
 },
 {
@@ -2363,6 +2384,7 @@ width = 831;
 {
 components = (
 {
+alignment = -1;
 name = aguru;
 },
 {
@@ -2375,12 +2397,13 @@ width = 768;
 }
 );
 leftKerningGroup = aL;
+widthMetricsKey = aguru;
 rightKerningGroup = vert;
 unicode = 0A14;
 },
 {
 glyphname = kaguru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 anchors = (
@@ -2620,7 +2643,7 @@ unicode = 0A15;
 },
 {
 glyphname = khaguru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 anchors = (
@@ -2830,7 +2853,7 @@ unicode = 0A16;
 },
 {
 glyphname = gaguru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 anchors = (
@@ -3022,7 +3045,7 @@ unicode = 0A17;
 },
 {
 glyphname = ghaguru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 anchors = (
@@ -3277,7 +3300,7 @@ unicode = 0A18;
 },
 {
 glyphname = ngaguru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 anchors = (
@@ -3529,7 +3552,7 @@ unicode = 0A19;
 },
 {
 glyphname = caguru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 anchors = (
@@ -3721,7 +3744,7 @@ unicode = 0A1A;
 },
 {
 glyphname = chaguru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 anchors = (
@@ -4015,7 +4038,7 @@ unicode = 0A1B;
 },
 {
 glyphname = jaguru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 anchors = (
@@ -4192,7 +4215,7 @@ unicode = 0A1C;
 },
 {
 glyphname = jhaguru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 anchors = (
@@ -4447,7 +4470,7 @@ unicode = 0A1D;
 },
 {
 glyphname = nyaguru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 anchors = (
@@ -4687,7 +4710,7 @@ unicode = 0A1E;
 },
 {
 glyphname = ttaguru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 anchors = (
@@ -4849,7 +4872,7 @@ unicode = 0A1F;
 },
 {
 glyphname = tthaguru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 anchors = (
@@ -5035,7 +5058,7 @@ unicode = 0A20;
 },
 {
 glyphname = ddaguru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 anchors = (
@@ -5314,7 +5337,7 @@ unicode = 0A21;
 },
 {
 glyphname = ddhaguru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 anchors = (
@@ -5551,7 +5574,7 @@ unicode = 0A22;
 },
 {
 glyphname = nnaguru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 anchors = (
@@ -5743,7 +5766,7 @@ unicode = 0A23;
 },
 {
 glyphname = taguru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 anchors = (
@@ -5971,7 +5994,7 @@ unicode = 0A24;
 },
 {
 glyphname = thaguru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 anchors = (
@@ -6196,7 +6219,7 @@ unicode = 0A25;
 },
 {
 glyphname = daguru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 anchors = (
@@ -6379,7 +6402,7 @@ unicode = 0A26;
 },
 {
 glyphname = dhaguru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 anchors = (
@@ -6577,7 +6600,7 @@ unicode = 0A27;
 },
 {
 glyphname = naguru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 anchors = (
@@ -6760,7 +6783,7 @@ unicode = 0A28;
 },
 {
 glyphname = paguru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 anchors = (
@@ -6943,7 +6966,7 @@ unicode = 0A2A;
 },
 {
 glyphname = phaguru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 anchors = (
@@ -7165,7 +7188,7 @@ unicode = 0A2B;
 },
 {
 glyphname = baguru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 anchors = (
@@ -7387,7 +7410,7 @@ unicode = 0A2C;
 },
 {
 glyphname = bhaguru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 anchors = (
@@ -7666,7 +7689,7 @@ unicode = 0A2D;
 },
 {
 glyphname = maguru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 anchors = (
@@ -7828,7 +7851,7 @@ unicode = 0A2E;
 },
 {
 glyphname = yaguru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 anchors = (
@@ -8041,7 +8064,7 @@ unicode = 0A2F;
 },
 {
 glyphname = raguru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 anchors = (
@@ -8218,7 +8241,7 @@ unicode = 0A30;
 },
 {
 glyphname = laguru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 anchors = (
@@ -8467,7 +8490,7 @@ unicode = 0A32;
 },
 {
 glyphname = lanuktaguru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 anchors = (
@@ -8733,7 +8756,7 @@ unicode = 0A33;
 },
 {
 glyphname = vaguru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 anchors = (
@@ -8937,7 +8960,7 @@ unicode = 0A35;
 },
 {
 glyphname = sanuktaguru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 anchors = (
@@ -9177,7 +9200,7 @@ unicode = 0A36;
 },
 {
 glyphname = saguru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 anchors = (
@@ -9354,7 +9377,7 @@ unicode = 0A38;
 },
 {
 glyphname = haguru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 anchors = (
@@ -9519,7 +9542,7 @@ unicode = 0A39;
 },
 {
 glyphname = nuktaguru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 anchors = (
@@ -9614,7 +9637,7 @@ unicode = 0A3C;
 {
 glyphname = aamatraguru;
 production = uni0A3E;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 anchors = (
@@ -9711,7 +9734,7 @@ subCategory = Matra;
 {
 glyphname = imatraguru;
 production = uni0A3F;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 anchors = (
@@ -9871,7 +9894,7 @@ subCategory = Matra;
 {
 glyphname = iimatraguru;
 production = uni0A40;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 layerId = "1D4F67F9-897D-45AD-B7F0-CA61A6862C03";
@@ -10030,7 +10053,7 @@ subCategory = Matra;
 },
 {
 glyphname = umatraguru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 anchors = (
@@ -10112,7 +10135,7 @@ unicode = 0A41;
 },
 {
 glyphname = uumatraguru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 anchors = (
@@ -10233,7 +10256,7 @@ unicode = 0A42;
 },
 {
 glyphname = eematraguru;
-lastChange = "2017-09-21 15:34:21 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 anchors = (
@@ -10351,7 +10374,7 @@ unicode = 0A47;
 },
 {
 glyphname = aimatraguru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 anchors = (
@@ -10508,7 +10531,7 @@ unicode = 0A48;
 },
 {
 glyphname = oomatraguru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 anchors = (
@@ -10635,7 +10658,7 @@ unicode = 0A4B;
 },
 {
 glyphname = aumatraguru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 anchors = (
@@ -10708,7 +10731,7 @@ position = "{-130, 622}";
 },
 {
 name = top;
-position = "{43, 770}";
+position = "{43, 760}";
 }
 );
 layerId = "E17BEC9D-CAAD-449F-91D9-03766E30097E";
@@ -10831,7 +10854,7 @@ unicode = 0A4C;
 },
 {
 glyphname = halantguru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 anchors = (
@@ -10931,7 +10954,7 @@ unicode = 0A4D;
 },
 {
 glyphname = udaatguru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 anchors = (
@@ -11031,7 +11054,7 @@ unicode = 0A51;
 },
 {
 glyphname = khanuktaguru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 anchors = (
@@ -11109,7 +11132,7 @@ unicode = 0A59;
 },
 {
 glyphname = ganuktaguru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 anchors = (
@@ -11224,11 +11247,12 @@ width = 773;
 }
 );
 rightKerningGroup = vert;
+rightMetricsKey = gaguru;
 unicode = 0A5A;
 },
 {
 glyphname = januktaguru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 anchors = (
@@ -11468,7 +11492,7 @@ unicode = 0A5B;
 },
 {
 glyphname = rraguru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 anchors = (
@@ -11723,7 +11747,7 @@ unicode = 0A5C;
 },
 {
 glyphname = phanuktaguru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 anchors = (
@@ -11797,7 +11821,7 @@ nodes = (
 );
 }
 );
-width = 631;
+width = 641;
 },
 {
 anchors = (
@@ -11834,15 +11858,16 @@ nodes = (
 );
 }
 );
-width = 609;
+width = 613;
 }
 );
 rightKerningGroup = ddhaR;
+rightMetricsKey = phaguru;
 unicode = 0A5E;
 },
 {
 glyphname = zeroguru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 layerId = "1D4F67F9-897D-45AD-B7F0-CA61A6862C03";
@@ -11969,7 +11994,7 @@ unicode = 0A66;
 },
 {
 glyphname = oneguru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 layerId = "1D4F67F9-897D-45AD-B7F0-CA61A6862C03";
@@ -12108,7 +12133,7 @@ unicode = 0A67;
 },
 {
 glyphname = twoguru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 layerId = "1D4F67F9-897D-45AD-B7F0-CA61A6862C03";
@@ -12265,7 +12290,7 @@ unicode = 0A68;
 },
 {
 glyphname = threeguru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 layerId = "1D4F67F9-897D-45AD-B7F0-CA61A6862C03";
@@ -12491,7 +12516,7 @@ unicode = 0A69;
 },
 {
 glyphname = fourguru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 layerId = "1D4F67F9-897D-45AD-B7F0-CA61A6862C03";
@@ -12702,7 +12727,7 @@ unicode = 0A6A;
 },
 {
 glyphname = fiveguru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 layerId = "1D4F67F9-897D-45AD-B7F0-CA61A6862C03";
@@ -12838,7 +12863,7 @@ unicode = 0A6B;
 },
 {
 glyphname = sixguru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 layerId = "1D4F67F9-897D-45AD-B7F0-CA61A6862C03";
@@ -13088,7 +13113,7 @@ unicode = 0A6C;
 },
 {
 glyphname = sevenguru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 layerId = "1D4F67F9-897D-45AD-B7F0-CA61A6862C03";
@@ -13212,7 +13237,7 @@ unicode = 0A6D;
 },
 {
 glyphname = eightguru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 layerId = "1D4F67F9-897D-45AD-B7F0-CA61A6862C03";
@@ -13354,7 +13379,7 @@ unicode = 0A6E;
 },
 {
 glyphname = nineguru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 layerId = "1D4F67F9-897D-45AD-B7F0-CA61A6862C03";
@@ -13547,7 +13572,7 @@ unicode = 0A6F;
 },
 {
 glyphname = tippiguru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 anchors = (
@@ -13695,7 +13720,7 @@ unicode = 0A70;
 },
 {
 glyphname = addakguru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 anchors = (
@@ -13807,7 +13832,7 @@ unicode = 0A71;
 },
 {
 glyphname = iriguru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 anchors = (
@@ -14011,7 +14036,7 @@ unicode = 0A72;
 },
 {
 glyphname = uraguru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 anchors = (
@@ -14290,7 +14315,7 @@ unicode = 0A73;
 },
 {
 glyphname = ekonkarguru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 components = (
@@ -14573,7 +14598,7 @@ unicode = 0A74;
 },
 {
 glyphname = yakashguru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 anchors = (
@@ -14684,8 +14709,84 @@ width = 0;
 unicode = 0A75;
 },
 {
+glyphname = uni0A76;
+lastChange = "2020-02-26 20:16:57 +0000";
+layers = (
+{
+layerId = "1D4F67F9-897D-45AD-B7F0-CA61A6862C03";
+paths = (
+{
+closed = 1;
+nodes = (
+"68 313 OFFCURVE",
+"83 298 OFFCURVE",
+"102 298 CURVE SMOOTH",
+"123 298 OFFCURVE",
+"137 313 OFFCURVE",
+"137 331 CURVE SMOOTH",
+"137 350 OFFCURVE",
+"122 366 OFFCURVE",
+"102 366 CURVE SMOOTH",
+"83 366 OFFCURVE",
+"68 352 OFFCURVE",
+"68 333 CURVE SMOOTH"
+);
+}
+);
+width = 205;
+},
+{
+layerId = "7DD510ED-E696-4B04-90C7-292E6BE56412";
+paths = (
+{
+closed = 1;
+nodes = (
+"68 279 OFFCURVE",
+"95 252 OFFCURVE",
+"131 252 CURVE SMOOTH",
+"167 252 OFFCURVE",
+"193 279 OFFCURVE",
+"193 313 CURVE SMOOTH",
+"193 348 OFFCURVE",
+"166 375 OFFCURVE",
+"130 375 CURVE SMOOTH",
+"95 375 OFFCURVE",
+"68 348 OFFCURVE",
+"68 315 CURVE SMOOTH"
+);
+}
+);
+width = 261;
+},
+{
+layerId = "E17BEC9D-CAAD-449F-91D9-03766E30097E";
+paths = (
+{
+closed = 1;
+nodes = (
+"60 207 OFFCURVE",
+"102 165 OFFCURVE",
+"160 165 CURVE SMOOTH",
+"217 165 OFFCURVE",
+"255 207 OFFCURVE",
+"255 261 CURVE SMOOTH",
+"255 320 OFFCURVE",
+"214 360 OFFCURVE",
+"157 360 CURVE SMOOTH",
+"99 360 OFFCURVE",
+"60 317 OFFCURVE",
+"60 266 CURVE SMOOTH"
+);
+}
+);
+width = 315;
+}
+);
+unicode = 0A76;
+},
+{
 glyphname = U262C;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 layerId = "1D4F67F9-897D-45AD-B7F0-CA61A6862C03";
@@ -15266,7 +15367,7 @@ unicode = 262C;
 },
 {
 glyphname = unuktaguru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 components = (
@@ -15309,10 +15410,11 @@ width = 632;
 }
 );
 note = unuktaguru;
+rightKerningGroup = uR;
 },
 {
 glyphname = uunuktaguru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 components = (
@@ -15355,10 +15457,11 @@ width = 632;
 }
 );
 note = uunuktaguru;
+rightKerningGroup = uR;
 },
 {
 glyphname = kanuktaguru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 anchors = (
@@ -15430,13 +15533,12 @@ layerId = "7DD510ED-E696-4B04-90C7-292E6BE56412";
 width = 576;
 }
 );
-leftKerningGroup = kaL;
 note = kanuktaguru;
 rightKerningGroup = kaR;
 },
 {
 glyphname = ghanuktaguru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 anchors = (
@@ -15513,7 +15615,7 @@ rightKerningGroup = vert;
 },
 {
 glyphname = nganuktaguru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 anchors = (
@@ -15551,15 +15653,17 @@ position = "{392, 622}";
 );
 components = (
 {
+alignment = -1;
 name = ngaguru;
 },
 {
+alignment = -1;
 name = nuktaguru;
 transform = "{1, 0, 0, 1, 251, -85}";
 }
 );
 layerId = "E17BEC9D-CAAD-449F-91D9-03766E30097E";
-width = 621;
+width = 631;
 },
 {
 anchors = (
@@ -15574,22 +15678,27 @@ position = "{369, 622}";
 );
 components = (
 {
+alignment = -1;
 name = ngaguru;
 },
 {
+alignment = -1;
 name = nuktaguru;
 transform = "{1, 0, 0, 1, 256, -55}";
 }
 );
 layerId = "7DD510ED-E696-4B04-90C7-292E6BE56412";
-width = 605;
+width = 609;
 }
 );
+leftKerningGroup = ngaL;
+widthMetricsKey = ngaguru;
 note = nganuktaguru;
+rightKerningGroup = ngaR;
 },
 {
 glyphname = canuktaguru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 anchors = (
@@ -15627,15 +15736,17 @@ position = "{501, 622}";
 );
 components = (
 {
+alignment = -1;
 name = caguru;
 },
 {
+alignment = -1;
 name = nuktaguru;
 transform = "{1, 0, 0, 1, 99, 83}";
 }
 );
 layerId = "E17BEC9D-CAAD-449F-91D9-03766E30097E";
-width = 671;
+width = 661;
 },
 {
 anchors = (
@@ -15650,22 +15761,26 @@ position = "{476, 622}";
 );
 components = (
 {
+alignment = -1;
 name = caguru;
 },
 {
+alignment = -1;
 name = nuktaguru;
 transform = "{1, 0, 0, 1, 119, 57}";
 }
 );
 layerId = "7DD510ED-E696-4B04-90C7-292E6BE56412";
-width = 613;
+width = 609;
 }
 );
+widthMetricsKey = caguru;
 note = canuktaguru;
+rightKerningGroup = caR;
 },
 {
 glyphname = chanuktaguru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 anchors = (
@@ -15680,15 +15795,17 @@ position = "{508, 622}";
 );
 components = (
 {
+alignment = -1;
 name = chaguru;
 },
 {
+alignment = -1;
 name = nuktaguru;
 transform = "{1, 0, 0, 1, 152, -24}";
 }
 );
 layerId = "1D4F67F9-897D-45AD-B7F0-CA61A6862C03";
-width = 625;
+width = 635;
 },
 {
 anchors = (
@@ -15703,15 +15820,17 @@ position = "{478, 622}";
 );
 components = (
 {
+alignment = -1;
 name = chaguru;
 },
 {
+alignment = -1;
 name = nuktaguru;
 transform = "{1, 0, 0, 1, 176, -78}";
 }
 );
 layerId = "E17BEC9D-CAAD-449F-91D9-03766E30097E";
-width = 671;
+width = 701;
 },
 {
 anchors = (
@@ -15726,22 +15845,27 @@ position = "{496, 622}";
 );
 components = (
 {
+alignment = -1;
 name = chaguru;
 },
 {
+alignment = -1;
 name = nuktaguru;
 transform = "{1, 0, 0, 1, 162, -45}";
 }
 );
 layerId = "7DD510ED-E696-4B04-90C7-292E6BE56412";
-width = 643;
+width = 661;
 }
 );
+leftKerningGroup = chaL;
+widthMetricsKey = chaguru;
 note = chanuktaguru;
+rightKerningGroup = chaR;
 },
 {
 glyphname = jhanuktaguru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 anchors = (
@@ -15779,15 +15903,17 @@ position = "{492, 622}";
 );
 components = (
 {
+alignment = -1;
 name = jhaguru;
 },
 {
+alignment = -1;
 name = nuktaguru;
 transform = "{1, 0, 0, 1, 181, -56}";
 }
 );
 layerId = "E17BEC9D-CAAD-449F-91D9-03766E30097E";
-width = 641;
+width = 661;
 },
 {
 anchors = (
@@ -15802,22 +15928,27 @@ position = "{480, 622}";
 );
 components = (
 {
+alignment = -1;
 name = jhaguru;
 },
 {
+alignment = -1;
 name = nuktaguru;
 transform = "{1, 0, 0, 1, 164, -19}";
 }
 );
 layerId = "7DD510ED-E696-4B04-90C7-292E6BE56412";
-width = 593;
+width = 601;
 }
 );
+leftKerningGroup = jhaL;
+widthMetricsKey = jhaguru;
 note = jhanuktaguru;
+rightKerningGroup = jhaR;
 },
 {
 glyphname = nyanuktaguru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 anchors = (
@@ -15890,10 +16021,11 @@ width = 626;
 }
 );
 note = nyanuktaguru;
+rightKerningGroup = nyaR;
 },
 {
 glyphname = ttanuktaguru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 anchors = (
@@ -15966,10 +16098,11 @@ width = 543;
 }
 );
 note = ttanuktaguru;
+rightKerningGroup = iriR;
 },
 {
 glyphname = tthanuktaguru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 anchors = (
@@ -16007,15 +16140,17 @@ position = "{305, 622}";
 );
 components = (
 {
+alignment = -1;
 name = tthaguru;
 },
 {
+alignment = -1;
 name = nuktaguru;
 transform = "{1, 0, 0, 1, 109, -25}";
 }
 );
 layerId = "E17BEC9D-CAAD-449F-91D9-03766E30097E";
-width = 611;
+width = 621;
 },
 {
 anchors = (
@@ -16030,22 +16165,26 @@ position = "{294, 622}";
 );
 components = (
 {
+alignment = -1;
 name = tthaguru;
 },
 {
+alignment = -1;
 name = nuktaguru;
 transform = "{1, 0, 0, 1, 117, -24}";
 }
 );
 layerId = "7DD510ED-E696-4B04-90C7-292E6BE56412";
-width = 577;
+width = 581;
 }
 );
+widthMetricsKey = tthaguru;
 note = tthanuktaguru;
+rightKerningGroup = tthaR;
 },
 {
 glyphname = ddhanuktaguru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 anchors = (
@@ -16118,10 +16257,11 @@ width = 624;
 }
 );
 note = ddhanuktaguru;
+rightKerningGroup = ddhaR;
 },
 {
 glyphname = nnanuktaguru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 anchors = (
@@ -16194,10 +16334,11 @@ width = 601;
 }
 );
 note = nnanuktaguru;
+rightKerningGroup = nnaR;
 },
 {
 glyphname = tanuktaguru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 anchors = (
@@ -16235,15 +16376,17 @@ position = "{425, 622}";
 );
 components = (
 {
+alignment = -1;
 name = taguru;
 },
 {
+alignment = -1;
 name = nuktaguru;
 transform = "{1, 0, 0, 1, 83, -26}";
 }
 );
 layerId = "E17BEC9D-CAAD-449F-91D9-03766E30097E";
-width = 611;
+width = 621;
 },
 {
 anchors = (
@@ -16258,22 +16401,26 @@ position = "{424, 622}";
 );
 components = (
 {
+alignment = -1;
 name = taguru;
 },
 {
+alignment = -1;
 name = nuktaguru;
 transform = "{1, 0, 0, 1, 88, -13}";
 }
 );
 layerId = "7DD510ED-E696-4B04-90C7-292E6BE56412";
-width = 583;
+width = 587;
 }
 );
+widthMetricsKey = taguru;
 note = tanuktaguru;
+rightKerningGroup = ddaR;
 },
 {
 glyphname = thanuktaguru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 anchors = (
@@ -16288,15 +16435,17 @@ position = "{462, 622}";
 );
 components = (
 {
+alignment = -1;
 name = thaguru;
 },
 {
+alignment = -1;
 name = nuktaguru;
 transform = "{1, 0, 0, 1, 172, 46}";
 }
 );
 layerId = "1D4F67F9-897D-45AD-B7F0-CA61A6862C03";
-width = 577;
+width = 557;
 },
 {
 anchors = (
@@ -16334,23 +16483,26 @@ position = "{474, 622}";
 );
 components = (
 {
+alignment = -1;
 name = thaguru;
 },
 {
+alignment = -1;
 name = nuktaguru;
 transform = "{1, 0, 0, 1, 153, 72}";
 }
 );
 layerId = "7DD510ED-E696-4B04-90C7-292E6BE56412";
-width = 610;
+width = 598;
 }
 );
+widthMetricsKey = thaguru;
 note = thanuktaguru;
 rightKerningGroup = vert;
 },
 {
 glyphname = danuktaguru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 anchors = (
@@ -16423,10 +16575,11 @@ width = 603;
 }
 );
 note = danuktaguru;
+rightKerningGroup = daR;
 },
 {
 glyphname = dhanuktaguru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 anchors = (
@@ -16441,15 +16594,17 @@ position = "{459, 622}";
 );
 components = (
 {
+alignment = -1;
 name = dhaguru;
 },
 {
+alignment = -1;
 name = nuktaguru;
 transform = "{1, 0, 0, 1, 142, 46}";
 }
 );
 layerId = "1D4F67F9-897D-45AD-B7F0-CA61A6862C03";
-width = 574;
+width = 554;
 },
 {
 anchors = (
@@ -16487,23 +16642,26 @@ position = "{464, 622}";
 );
 components = (
 {
+alignment = -1;
 name = dhaguru;
 },
 {
+alignment = -1;
 name = nuktaguru;
 transform = "{1, 0, 0, 1, 142, 76}";
 }
 );
 layerId = "7DD510ED-E696-4B04-90C7-292E6BE56412";
-width = 601;
+width = 589;
 }
 );
+widthMetricsKey = dhaguru;
 note = dhanuktaguru;
 rightKerningGroup = vert;
 },
 {
 glyphname = nanuktaguru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 anchors = (
@@ -16536,20 +16694,22 @@ position = "{555, -50}";
 },
 {
 name = top;
-position = "{324, 622}";
+position = "{364, 622}";
 }
 );
 components = (
 {
+alignment = -1;
 name = naguru;
 },
 {
+alignment = -1;
 name = nuktaguru;
 transform = "{1, 0, 0, 1, 143, -48}";
 }
 );
 layerId = "E17BEC9D-CAAD-449F-91D9-03766E30097E";
-width = 631;
+width = 651;
 },
 {
 anchors = (
@@ -16564,24 +16724,27 @@ position = "{301, 622}";
 );
 components = (
 {
+alignment = -1;
 name = naguru;
 },
 {
+alignment = -1;
 name = nuktaguru;
 transform = "{1, 0, 0, 1, 142, -40}";
 }
 );
 layerId = "7DD510ED-E696-4B04-90C7-292E6BE56412";
-width = 597;
+width = 605;
 }
 );
 leftKerningGroup = naL;
+widthMetricsKey = naguru;
 note = nanuktaguru;
 rightKerningGroup = naR;
 },
 {
 glyphname = panuktaguru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 anchors = (
@@ -16596,15 +16759,17 @@ position = "{447, 622}";
 );
 components = (
 {
+alignment = -1;
 name = paguru;
 },
 {
+alignment = -1;
 name = nuktaguru;
 transform = "{1, 0, 0, 1, 162, 46}";
 }
 );
 layerId = "1D4F67F9-897D-45AD-B7F0-CA61A6862C03";
-width = 562;
+width = 542;
 },
 {
 anchors = (
@@ -16637,28 +16802,31 @@ position = "{489, 0}";
 },
 {
 name = top;
-position = "{453, 622}";
+position = "{441, 622}";
 }
 );
 components = (
 {
+alignment = -1;
 name = paguru;
 },
 {
+alignment = -1;
 name = nuktaguru;
 transform = "{1, 0, 0, 1, 154, 72}";
 }
 );
 layerId = "7DD510ED-E696-4B04-90C7-292E6BE56412";
-width = 589;
+width = 577;
 }
 );
+widthMetricsKey = paguru;
 note = panuktaguru;
 rightKerningGroup = vert;
 },
 {
 glyphname = banuktaguru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 anchors = (
@@ -16735,7 +16903,7 @@ rightKerningGroup = vert;
 },
 {
 glyphname = bhanuktaguru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 anchors = (
@@ -16773,15 +16941,17 @@ position = "{436, 622}";
 );
 components = (
 {
+alignment = -1;
 name = bhaguru;
 },
 {
+alignment = -1;
 name = nuktaguru;
 transform = "{1, 0, 0, 1, 113, -48}";
 }
 );
 layerId = "E17BEC9D-CAAD-449F-91D9-03766E30097E";
-width = 591;
+width = 611;
 },
 {
 anchors = (
@@ -16796,22 +16966,27 @@ position = "{433, 622}";
 );
 components = (
 {
+alignment = -1;
 name = bhaguru;
 },
 {
+alignment = -1;
 name = nuktaguru;
 transform = "{1, 0, 0, 1, 112, -28}";
 }
 );
 layerId = "7DD510ED-E696-4B04-90C7-292E6BE56412";
-width = 590;
+width = 598;
 }
 );
+leftKerningGroup = bhaL;
+widthMetricsKey = bhaguru;
 note = bhanuktaguru;
+rightKerningGroup = ddaR;
 },
 {
 glyphname = manuktaguru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 anchors = (
@@ -16883,12 +17058,13 @@ layerId = "7DD510ED-E696-4B04-90C7-292E6BE56412";
 width = 596;
 }
 );
+leftKerningGroup = maL;
 note = manuktaguru;
 rightKerningGroup = vert;
 },
 {
 glyphname = yanuktaguru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 anchors = (
@@ -16965,7 +17141,7 @@ rightKerningGroup = vert;
 },
 {
 glyphname = ranuktaguru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 anchors = (
@@ -17038,10 +17214,11 @@ width = 527;
 }
 );
 note = ranuktaguru;
+rightKerningGroup = caR;
 },
 {
 glyphname = vanuktaguru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 anchors = (
@@ -17114,10 +17291,11 @@ width = 615;
 }
 );
 note = vanuktaguru;
+rightKerningGroup = nyaR;
 },
 {
 glyphname = hanuktaguru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 anchors = (
@@ -17190,11 +17368,12 @@ width = 531;
 }
 );
 note = hanuktaguru;
+rightKerningGroup = caR;
 },
 {
 glyphname = rasubscriptguru;
 production = uni0A4D0A30.below;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 anchors = (
@@ -17312,7 +17491,7 @@ subCategory = Nonspacing;
 {
 glyphname = hasubscriptguru;
 production = uni0A4D0A39;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 anchors = (
@@ -17445,7 +17624,7 @@ subCategory = Nonspacing;
 {
 glyphname = vasubscriptguru;
 production = uni0A4D0A35;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 anchors = (
@@ -17610,7 +17789,7 @@ subCategory = Nonspacing;
 },
 {
 glyphname = kaprehalfguru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 components = (
@@ -17656,7 +17835,7 @@ note = kaprehalfguru;
 },
 {
 glyphname = khaprehalfguru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 components = (
@@ -17702,7 +17881,7 @@ note = khaprehalfguru;
 },
 {
 glyphname = gaprehalfguru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 components = (
@@ -17748,7 +17927,7 @@ note = gaprehalfguru;
 },
 {
 glyphname = ghaprehalfguru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 components = (
@@ -17794,7 +17973,7 @@ note = ghaprehalfguru;
 },
 {
 glyphname = ngaprehalfguru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 components = (
@@ -17813,6 +17992,7 @@ width = 595;
 {
 components = (
 {
+alignment = -1;
 name = ngaguru;
 },
 {
@@ -17822,11 +18002,12 @@ transform = "{1, 0, 0, 1, 551, -30}";
 }
 );
 layerId = "E17BEC9D-CAAD-449F-91D9-03766E30097E";
-width = 621;
+width = 631;
 },
 {
 components = (
 {
+alignment = -1;
 name = ngaguru;
 },
 {
@@ -17836,14 +18017,15 @@ transform = "{1, 0, 0, 1, 521, -12}";
 }
 );
 layerId = "7DD510ED-E696-4B04-90C7-292E6BE56412";
-width = 605;
+width = 609;
 }
 );
+widthMetricsKey = ngaguru;
 note = ngaprehalfguru;
 },
 {
 glyphname = caprehalfguru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 components = (
@@ -17862,6 +18044,7 @@ width = 575;
 {
 components = (
 {
+alignment = -1;
 name = caguru;
 },
 {
@@ -17871,11 +18054,12 @@ transform = "{1, 0, 0, 1, 627, -30}";
 }
 );
 layerId = "E17BEC9D-CAAD-449F-91D9-03766E30097E";
-width = 671;
+width = 661;
 },
 {
 components = (
 {
+alignment = -1;
 name = caguru;
 },
 {
@@ -17885,18 +18069,20 @@ transform = "{1, 0, 0, 1, 563, -12}";
 }
 );
 layerId = "7DD510ED-E696-4B04-90C7-292E6BE56412";
-width = 613;
+width = 609;
 }
 );
+widthMetricsKey = caguru;
 note = caprehalfguru;
 },
 {
 glyphname = chaprehalfguru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 components = (
 {
+alignment = -1;
 name = chaguru;
 },
 {
@@ -17906,11 +18092,12 @@ transform = "{1, 0, 0, 1, 482, -10}";
 }
 );
 layerId = "1D4F67F9-897D-45AD-B7F0-CA61A6862C03";
-width = 625;
+width = 635;
 },
 {
 components = (
 {
+alignment = -1;
 name = chaguru;
 },
 {
@@ -17920,11 +18107,12 @@ transform = "{1, 0, 0, 1, 551, -50}";
 }
 );
 layerId = "E17BEC9D-CAAD-449F-91D9-03766E30097E";
-width = 671;
+width = 701;
 },
 {
 components = (
 {
+alignment = -1;
 name = chaguru;
 },
 {
@@ -17934,14 +18122,15 @@ transform = "{1, 0, 0, 1, 509, -26}";
 }
 );
 layerId = "7DD510ED-E696-4B04-90C7-292E6BE56412";
-width = 643;
+width = 661;
 }
 );
+widthMetricsKey = chaguru;
 note = chaprehalfguru;
 },
 {
 glyphname = japrehalfguru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 components = (
@@ -17987,7 +18176,7 @@ note = japrehalfguru;
 },
 {
 glyphname = jhaprehalfguru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 components = (
@@ -18006,6 +18195,7 @@ width = 561;
 {
 components = (
 {
+alignment = -1;
 name = jhaguru;
 },
 {
@@ -18015,11 +18205,12 @@ transform = "{1, 0, 0, 1, 464, -100}";
 }
 );
 layerId = "E17BEC9D-CAAD-449F-91D9-03766E30097E";
-width = 641;
+width = 661;
 },
 {
 components = (
 {
+alignment = -1;
 name = jhaguru;
 },
 {
@@ -18029,14 +18220,15 @@ transform = "{1, 0, 0, 1, 435, -56}";
 }
 );
 layerId = "7DD510ED-E696-4B04-90C7-292E6BE56412";
-width = 593;
+width = 601;
 }
 );
+widthMetricsKey = jhaguru;
 note = jhaprehalfguru;
 },
 {
 glyphname = nyaprehalfguru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 components = (
@@ -18085,7 +18277,7 @@ note = nyaprehalfguru;
 },
 {
 glyphname = ttaprehalfguru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 components = (
@@ -18134,7 +18326,7 @@ note = ttaprehalfguru;
 },
 {
 glyphname = tthaprehalfguru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 components = (
@@ -18153,6 +18345,7 @@ width = 555;
 {
 components = (
 {
+alignment = -1;
 name = tthaguru;
 },
 {
@@ -18162,11 +18355,12 @@ transform = "{1, 0, 0, 1, 490, -23}";
 }
 );
 layerId = "E17BEC9D-CAAD-449F-91D9-03766E30097E";
-width = 611;
+width = 621;
 },
 {
 components = (
 {
+alignment = -1;
 name = tthaguru;
 },
 {
@@ -18176,14 +18370,15 @@ transform = "{1, 0, 0, 1, 449, -9}";
 }
 );
 layerId = "7DD510ED-E696-4B04-90C7-292E6BE56412";
-width = 577;
+width = 581;
 }
 );
+widthMetricsKey = tthaguru;
 note = tthaprehalfguru;
 },
 {
 glyphname = ddaprehalfguru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 components = (
@@ -18202,6 +18397,7 @@ width = 535;
 {
 components = (
 {
+alignment = -1;
 name = ddaguru;
 },
 {
@@ -18211,11 +18407,12 @@ transform = "{1, 0, 0, 1, 488, -29}";
 }
 );
 layerId = "E17BEC9D-CAAD-449F-91D9-03766E30097E";
-width = 621;
+width = 641;
 },
 {
 components = (
 {
+alignment = -1;
 name = ddaguru;
 },
 {
@@ -18225,14 +18422,15 @@ transform = "{1, 0, 0, 1, 430, -12}";
 }
 );
 layerId = "7DD510ED-E696-4B04-90C7-292E6BE56412";
-width = 569;
+width = 577;
 }
 );
+widthMetricsKey = ddaguru;
 note = ddaprehalfguru;
 },
 {
 glyphname = ddhaprehalfguru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 components = (
@@ -18281,7 +18479,7 @@ note = ddhaprehalfguru;
 },
 {
 glyphname = nnaprehalfguru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 components = (
@@ -18330,7 +18528,7 @@ note = nnaprehalfguru;
 },
 {
 glyphname = taprehalfguru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 components = (
@@ -18349,6 +18547,7 @@ width = 565;
 {
 components = (
 {
+alignment = -1;
 name = taguru;
 },
 {
@@ -18358,11 +18557,12 @@ transform = "{1, 0, 0, 1, 471, -10}";
 }
 );
 layerId = "E17BEC9D-CAAD-449F-91D9-03766E30097E";
-width = 611;
+width = 621;
 },
 {
 components = (
 {
+alignment = -1;
 name = taguru;
 },
 {
@@ -18372,14 +18572,15 @@ transform = "{1, 0, 0, 1, 460, -4}";
 }
 );
 layerId = "7DD510ED-E696-4B04-90C7-292E6BE56412";
-width = 583;
+width = 587;
 }
 );
+widthMetricsKey = taguru;
 note = taprehalfguru;
 },
 {
 glyphname = thaprehalfguru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 components = (
@@ -18425,7 +18626,7 @@ note = thaprehalfguru;
 },
 {
 glyphname = daprehalfguru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 components = (
@@ -18474,7 +18675,7 @@ note = daprehalfguru;
 },
 {
 glyphname = dhaprehalfguru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 components = (
@@ -18520,7 +18721,7 @@ note = dhaprehalfguru;
 },
 {
 glyphname = naprehalfguru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 components = (
@@ -18539,6 +18740,7 @@ width = 575;
 {
 components = (
 {
+alignment = -1;
 name = naguru;
 },
 {
@@ -18548,11 +18750,12 @@ transform = "{1, 0, 0, 1, 621, -10}";
 }
 );
 layerId = "E17BEC9D-CAAD-449F-91D9-03766E30097E";
-width = 631;
+width = 651;
 },
 {
 components = (
 {
+alignment = -1;
 name = naguru;
 },
 {
@@ -18562,14 +18765,15 @@ transform = "{1, 0, 0, 1, 573, -4}";
 }
 );
 layerId = "7DD510ED-E696-4B04-90C7-292E6BE56412";
-width = 597;
+width = 605;
 }
 );
+widthMetricsKey = naguru;
 note = naprehalfguru;
 },
 {
 glyphname = paprehalfguru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 components = (
@@ -18615,7 +18819,7 @@ note = paprehalfguru;
 },
 {
 glyphname = phaprehalfguru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 components = (
@@ -18634,6 +18838,7 @@ width = 575;
 {
 components = (
 {
+alignment = -1;
 name = phaguru;
 },
 {
@@ -18643,11 +18848,12 @@ transform = "{1, 0, 0, 1, 551, -30}";
 }
 );
 layerId = "E17BEC9D-CAAD-449F-91D9-03766E30097E";
-width = 611;
+width = 621;
 },
 {
 components = (
 {
+alignment = -1;
 name = phaguru;
 },
 {
@@ -18657,14 +18863,15 @@ transform = "{1, 0, 0, 1, 498, -12}";
 }
 );
 layerId = "7DD510ED-E696-4B04-90C7-292E6BE56412";
-width = 589;
+width = 593;
 }
 );
+widthMetricsKey = phaguru;
 note = phaprehalfguru;
 },
 {
 glyphname = baprehalfguru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 components = (
@@ -18710,7 +18917,7 @@ note = baprehalfguru;
 },
 {
 glyphname = bhaprehalfguru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 components = (
@@ -18729,6 +18936,7 @@ width = 590;
 {
 components = (
 {
+alignment = -1;
 name = bhaguru;
 },
 {
@@ -18738,11 +18946,12 @@ transform = "{1, 0, 0, 1, 501, -30}";
 }
 );
 layerId = "E17BEC9D-CAAD-449F-91D9-03766E30097E";
-width = 591;
+width = 611;
 },
 {
 components = (
 {
+alignment = -1;
 name = bhaguru;
 },
 {
@@ -18752,14 +18961,15 @@ transform = "{1, 0, 0, 1, 465, -12}";
 }
 );
 layerId = "7DD510ED-E696-4B04-90C7-292E6BE56412";
-width = 590;
+width = 598;
 }
 );
+widthMetricsKey = bhaguru;
 note = bhaprehalfguru;
 },
 {
 glyphname = maprehalfguru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 components = (
@@ -18805,7 +19015,7 @@ note = maprehalfguru;
 },
 {
 glyphname = yaprehalfguru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 components = (
@@ -18851,7 +19061,7 @@ note = yaprehalfguru;
 },
 {
 glyphname = raprehalfguru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 components = (
@@ -18900,7 +19110,7 @@ note = raprehalfguru;
 },
 {
 glyphname = laprehalfguru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 components = (
@@ -18919,6 +19129,7 @@ width = 645;
 {
 components = (
 {
+alignment = -1;
 name = laguru;
 },
 {
@@ -18928,11 +19139,12 @@ transform = "{1, 0, 0, 1, 661, -10}";
 }
 );
 layerId = "E17BEC9D-CAAD-449F-91D9-03766E30097E";
-width = 688;
+width = 698;
 },
 {
 components = (
 {
+alignment = -1;
 name = laguru;
 },
 {
@@ -18942,14 +19154,15 @@ transform = "{1, 0, 0, 1, 613, -4}";
 }
 );
 layerId = "7DD510ED-E696-4B04-90C7-292E6BE56412";
-width = 662;
+width = 666;
 }
 );
+widthMetricsKey = laguru;
 note = laprehalfguru;
 },
 {
 glyphname = vaprehalfguru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 components = (
@@ -18998,7 +19211,7 @@ note = vaprehalfguru;
 },
 {
 glyphname = saprehalfguru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 components = (
@@ -19044,7 +19257,7 @@ note = saprehalfguru;
 },
 {
 glyphname = haprehalfguru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 components = (
@@ -19093,7 +19306,7 @@ note = haprehalfguru;
 },
 {
 glyphname = kanuktaprehalfguru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 components = (
@@ -19139,7 +19352,7 @@ note = kanuktaprehalfguru;
 },
 {
 glyphname = khanuktaprehalfguru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 components = (
@@ -19188,7 +19401,7 @@ note = khanuktaprehalfguru;
 },
 {
 glyphname = ganuktaprehalfguru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 components = (
@@ -19234,7 +19447,7 @@ note = ganuktaprehalfguru;
 },
 {
 glyphname = ghanuktaprehalfguru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 components = (
@@ -19280,7 +19493,7 @@ note = ghanuktaprehalfguru;
 },
 {
 glyphname = nganuktaprehalfguru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 components = (
@@ -19299,6 +19512,7 @@ width = 595;
 {
 components = (
 {
+alignment = -1;
 name = nganuktaguru;
 },
 {
@@ -19308,11 +19522,12 @@ transform = "{1, 0, 0, 1, 630, -46}";
 }
 );
 layerId = "E17BEC9D-CAAD-449F-91D9-03766E30097E";
-width = 621;
+width = 631;
 },
 {
 components = (
 {
+alignment = -1;
 name = nganuktaguru;
 },
 {
@@ -19322,14 +19537,15 @@ transform = "{1, 0, 0, 1, 583, -18}";
 }
 );
 layerId = "7DD510ED-E696-4B04-90C7-292E6BE56412";
-width = 605;
+width = 609;
 }
 );
+widthMetricsKey = ngaguru;
 note = nganuktaprehalfguru;
 },
 {
 glyphname = canuktaprehalfguru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 components = (
@@ -19348,6 +19564,7 @@ width = 575;
 {
 components = (
 {
+alignment = -1;
 name = canuktaguru;
 },
 {
@@ -19357,11 +19574,12 @@ transform = "{1, 0, 0, 1, 627, -20}";
 }
 );
 layerId = "E17BEC9D-CAAD-449F-91D9-03766E30097E";
-width = 671;
+width = 661;
 },
 {
 components = (
 {
+alignment = -1;
 name = canuktaguru;
 },
 {
@@ -19371,18 +19589,20 @@ transform = "{1, 0, 0, 1, 557, -8}";
 }
 );
 layerId = "7DD510ED-E696-4B04-90C7-292E6BE56412";
-width = 613;
+width = 609;
 }
 );
+widthMetricsKey = caguru;
 note = canuktaprehalfguru;
 },
 {
 glyphname = chanuktaprehalfguru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 components = (
 {
+alignment = -1;
 name = chanuktaguru;
 },
 {
@@ -19392,11 +19612,12 @@ transform = "{1, 0, 0, 1, 512, -10}";
 }
 );
 layerId = "1D4F67F9-897D-45AD-B7F0-CA61A6862C03";
-width = 625;
+width = 635;
 },
 {
 components = (
 {
+alignment = -1;
 name = chanuktaguru;
 },
 {
@@ -19406,11 +19627,12 @@ transform = "{1, 0, 0, 1, 611, -50}";
 }
 );
 layerId = "E17BEC9D-CAAD-449F-91D9-03766E30097E";
-width = 671;
+width = 701;
 },
 {
 components = (
 {
+alignment = -1;
 name = chanuktaguru;
 },
 {
@@ -19420,14 +19642,15 @@ transform = "{1, 0, 0, 1, 551, -26}";
 }
 );
 layerId = "7DD510ED-E696-4B04-90C7-292E6BE56412";
-width = 643;
+width = 661;
 }
 );
+widthMetricsKey = chaguru;
 note = chanuktaprehalfguru;
 },
 {
 glyphname = januktaprehalfguru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 components = (
@@ -19446,6 +19669,7 @@ width = 580;
 {
 components = (
 {
+alignment = -1;
 name = januktaguru;
 },
 {
@@ -19455,11 +19679,12 @@ transform = "{1, 0, 0, 1, 698, -28}";
 }
 );
 layerId = "E17BEC9D-CAAD-449F-91D9-03766E30097E";
-width = 661;
+width = 671;
 },
 {
 components = (
 {
+alignment = -1;
 name = januktaguru;
 },
 {
@@ -19469,14 +19694,15 @@ transform = "{1, 0, 0, 1, 630, -23}";
 }
 );
 layerId = "7DD510ED-E696-4B04-90C7-292E6BE56412";
-width = 612;
+width = 616;
 }
 );
+widthMetricsKey = januktaguru;
 note = januktaprehalfguru;
 },
 {
 glyphname = jhanuktaprehalfguru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 components = (
@@ -19495,6 +19721,7 @@ width = 561;
 {
 components = (
 {
+alignment = -1;
 name = jhanuktaguru;
 },
 {
@@ -19504,11 +19731,12 @@ transform = "{1, 0, 0, 1, 541, -150}";
 }
 );
 layerId = "E17BEC9D-CAAD-449F-91D9-03766E30097E";
-width = 641;
+width = 661;
 },
 {
 components = (
 {
+alignment = -1;
 name = jhanuktaguru;
 },
 {
@@ -19518,14 +19746,15 @@ transform = "{1, 0, 0, 1, 487, -78}";
 }
 );
 layerId = "7DD510ED-E696-4B04-90C7-292E6BE56412";
-width = 593;
+width = 601;
 }
 );
+widthMetricsKey = jhaguru;
 note = jhanuktaprehalfguru;
 },
 {
 glyphname = nyanuktaprehalfguru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 components = (
@@ -19574,7 +19803,7 @@ note = nyanuktaprehalfguru;
 },
 {
 glyphname = ttanuktaprehalfguru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 components = (
@@ -19623,7 +19852,7 @@ note = ttanuktaprehalfguru;
 },
 {
 glyphname = tthanuktaprehalfguru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 components = (
@@ -19642,6 +19871,7 @@ width = 555;
 {
 components = (
 {
+alignment = -1;
 name = tthanuktaguru;
 },
 {
@@ -19651,11 +19881,12 @@ transform = "{1, 0, 0, 1, 531, -30}";
 }
 );
 layerId = "E17BEC9D-CAAD-449F-91D9-03766E30097E";
-width = 611;
+width = 621;
 },
 {
 components = (
 {
+alignment = -1;
 name = tthanuktaguru;
 },
 {
@@ -19665,14 +19896,15 @@ transform = "{1, 0, 0, 1, 477, -12}";
 }
 );
 layerId = "7DD510ED-E696-4B04-90C7-292E6BE56412";
-width = 577;
+width = 581;
 }
 );
+widthMetricsKey = tthaguru;
 note = tthanuktaprehalfguru;
 },
 {
 glyphname = ddanuktaprehalfguru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 components = (
@@ -19721,7 +19953,7 @@ note = ddanuktaprehalfguru;
 },
 {
 glyphname = ddhanuktaprehalfguru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 components = (
@@ -19770,7 +20002,7 @@ note = ddhanuktaprehalfguru;
 },
 {
 glyphname = nnanuktaprehalfguru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 components = (
@@ -19819,7 +20051,7 @@ note = nnanuktaprehalfguru;
 },
 {
 glyphname = tanuktaprehalfguru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 components = (
@@ -19838,6 +20070,7 @@ width = 565;
 {
 components = (
 {
+alignment = -1;
 name = tanuktaguru;
 },
 {
@@ -19847,11 +20080,12 @@ transform = "{1, 0, 0, 1, 511, -15}";
 }
 );
 layerId = "E17BEC9D-CAAD-449F-91D9-03766E30097E";
-width = 611;
+width = 621;
 },
 {
 components = (
 {
+alignment = -1;
 name = tanuktaguru;
 },
 {
@@ -19861,27 +20095,30 @@ transform = "{1, 0, 0, 1, 475, -6}";
 }
 );
 layerId = "7DD510ED-E696-4B04-90C7-292E6BE56412";
-width = 583;
+width = 587;
 }
 );
+widthMetricsKey = taguru;
 note = tanuktaprehalfguru;
 },
 {
 glyphname = thanuktaprehalfguru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 components = (
 {
+alignment = -1;
 name = thanuktaguru;
 },
 {
+alignment = -1;
 name = halantguru;
 transform = "{1, 0, 0, 1, 552, 0}";
 }
 );
 layerId = "1D4F67F9-897D-45AD-B7F0-CA61A6862C03";
-width = 577;
+width = 557;
 },
 {
 components = (
@@ -19899,22 +20136,25 @@ width = 661;
 {
 components = (
 {
+alignment = -1;
 name = thanuktaguru;
 },
 {
+alignment = -1;
 name = halantguru;
 transform = "{1, 0, 0, 1, 593, 0}";
 }
 );
 layerId = "7DD510ED-E696-4B04-90C7-292E6BE56412";
-width = 610;
+width = 598;
 }
 );
+widthMetricsKey = thaguru;
 note = thanuktaprehalfguru;
 },
 {
 glyphname = danuktaprehalfguru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 components = (
@@ -19963,20 +20203,22 @@ note = danuktaprehalfguru;
 },
 {
 glyphname = dhanuktaprehalfguru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 components = (
 {
+alignment = -1;
 name = dhanuktaguru;
 },
 {
+alignment = -1;
 name = halantguru;
 transform = "{1, 0, 0, 1, 569, 0}";
 }
 );
 layerId = "1D4F67F9-897D-45AD-B7F0-CA61A6862C03";
-width = 574;
+width = 554;
 },
 {
 components = (
@@ -19994,22 +20236,25 @@ width = 641;
 {
 components = (
 {
+alignment = -1;
 name = dhanuktaguru;
 },
 {
+alignment = -1;
 name = halantguru;
 transform = "{1, 0, 0, 1, 596, 0}";
 }
 );
 layerId = "7DD510ED-E696-4B04-90C7-292E6BE56412";
-width = 601;
+width = 589;
 }
 );
+widthMetricsKey = dhaguru;
 note = dhanuktaprehalfguru;
 },
 {
 glyphname = nanuktaprehalfguru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 components = (
@@ -20028,6 +20273,7 @@ width = 575;
 {
 components = (
 {
+alignment = -1;
 name = nanuktaguru;
 },
 {
@@ -20037,11 +20283,12 @@ transform = "{1, 0, 0, 1, 621, -13}";
 }
 );
 layerId = "E17BEC9D-CAAD-449F-91D9-03766E30097E";
-width = 631;
+width = 651;
 },
 {
 components = (
 {
+alignment = -1;
 name = nanuktaguru;
 },
 {
@@ -20051,27 +20298,30 @@ transform = "{1, 0, 0, 1, 573, -5}";
 }
 );
 layerId = "7DD510ED-E696-4B04-90C7-292E6BE56412";
-width = 597;
+width = 605;
 }
 );
+widthMetricsKey = naguru;
 note = nanuktaprehalfguru;
 },
 {
 glyphname = panuktaprehalfguru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 components = (
 {
+alignment = -1;
 name = panuktaguru;
 },
 {
+alignment = -1;
 name = halantguru;
 transform = "{1, 0, 0, 1, 537, 0}";
 }
 );
 layerId = "1D4F67F9-897D-45AD-B7F0-CA61A6862C03";
-width = 562;
+width = 542;
 },
 {
 components = (
@@ -20089,22 +20339,25 @@ width = 631;
 {
 components = (
 {
+alignment = -1;
 name = panuktaguru;
 },
 {
+alignment = -1;
 name = halantguru;
 transform = "{1, 0, 0, 1, 572, 0}";
 }
 );
 layerId = "7DD510ED-E696-4B04-90C7-292E6BE56412";
-width = 589;
+width = 577;
 }
 );
+widthMetricsKey = paguru;
 note = panuktaprehalfguru;
 },
 {
 glyphname = phanuktaprehalfguru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 components = (
@@ -20132,7 +20385,7 @@ transform = "{1, 0, 0, 1, 543, -20}";
 }
 );
 layerId = "E17BEC9D-CAAD-449F-91D9-03766E30097E";
-width = 631;
+width = 641;
 },
 {
 components = (
@@ -20146,14 +20399,14 @@ transform = "{1, 0, 0, 1, 508, -8}";
 }
 );
 layerId = "7DD510ED-E696-4B04-90C7-292E6BE56412";
-width = 609;
+width = 613;
 }
 );
 note = phanuktaprehalfguru;
 },
 {
 glyphname = banuktaprehalfguru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 components = (
@@ -20199,7 +20452,7 @@ note = banuktaprehalfguru;
 },
 {
 glyphname = bhanuktaprehalfguru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 components = (
@@ -20218,6 +20471,7 @@ width = 590;
 {
 components = (
 {
+alignment = -1;
 name = bhanuktaguru;
 },
 {
@@ -20227,11 +20481,12 @@ transform = "{1, 0, 0, 1, 521, -30}";
 }
 );
 layerId = "E17BEC9D-CAAD-449F-91D9-03766E30097E";
-width = 591;
+width = 611;
 },
 {
 components = (
 {
+alignment = -1;
 name = bhanuktaguru;
 },
 {
@@ -20241,14 +20496,15 @@ transform = "{1, 0, 0, 1, 485, -12}";
 }
 );
 layerId = "7DD510ED-E696-4B04-90C7-292E6BE56412";
-width = 590;
+width = 598;
 }
 );
+widthMetricsKey = bhaguru;
 note = bhanuktaprehalfguru;
 },
 {
 glyphname = manuktaprehalfguru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 components = (
@@ -20294,7 +20550,7 @@ note = manuktaprehalfguru;
 },
 {
 glyphname = yanuktaprehalfguru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 components = (
@@ -20340,7 +20596,7 @@ note = yanuktaprehalfguru;
 },
 {
 glyphname = ranuktaprehalfguru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 components = (
@@ -20389,7 +20645,7 @@ note = ranuktaprehalfguru;
 },
 {
 glyphname = lanuktaprehalfguru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 components = (
@@ -20408,6 +20664,7 @@ width = 685;
 {
 components = (
 {
+alignment = -1;
 name = lanuktaguru;
 },
 {
@@ -20417,11 +20674,12 @@ transform = "{1, 0, 0, 1, 681, -20}";
 }
 );
 layerId = "E17BEC9D-CAAD-449F-91D9-03766E30097E";
-width = 851;
+width = 841;
 },
 {
 components = (
 {
+alignment = -1;
 name = lanuktaguru;
 },
 {
@@ -20431,14 +20689,15 @@ transform = "{1, 0, 0, 1, 627, -8}";
 }
 );
 layerId = "7DD510ED-E696-4B04-90C7-292E6BE56412";
-width = 751;
+width = 747;
 }
 );
+widthMetricsKey = lanuktaguru;
 note = lanuktaprehalfguru;
 },
 {
 glyphname = vanuktaprehalfguru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 components = (
@@ -20487,11 +20746,12 @@ note = vanuktaprehalfguru;
 },
 {
 glyphname = sanuktaprehalfguru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 components = (
 {
+alignment = -1;
 name = sanuktaguru;
 },
 {
@@ -20501,7 +20761,7 @@ transform = "{1, 0, 0, 1, 580, -20}";
 }
 );
 layerId = "1D4F67F9-897D-45AD-B7F0-CA61A6862C03";
-width = 565;
+width = 575;
 },
 {
 components = (
@@ -20520,6 +20780,7 @@ width = 686;
 {
 components = (
 {
+alignment = -1;
 name = sanuktaguru;
 },
 {
@@ -20529,14 +20790,15 @@ transform = "{1, 0, 0, 1, 632, -25}";
 }
 );
 layerId = "7DD510ED-E696-4B04-90C7-292E6BE56412";
-width = 613;
+width = 619;
 }
 );
+widthMetricsKey = sanuktaguru;
 note = sanuktaprehalfguru;
 },
 {
 glyphname = hanuktaprehalfguru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 components = (
@@ -20585,7 +20847,7 @@ note = hanuktaprehalfguru;
 },
 {
 glyphname = yapostformguru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 anchors = (
@@ -20745,7 +21007,7 @@ rightKerningGroup = vert;
 },
 {
 glyphname = rasubscripthalantguru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 anchors = (
@@ -20809,7 +21071,7 @@ note = rasubscripthalantguru;
 },
 {
 glyphname = hasubscripthalantguru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 anchors = (
@@ -20873,7 +21135,7 @@ note = hasubscripthalantguru;
 },
 {
 glyphname = vasubscripthalantguru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 anchors = (
@@ -20937,7 +21199,7 @@ note = vasubscripthalantguru;
 },
 {
 glyphname = udaathalantguru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 anchors = (
@@ -21001,7 +21263,7 @@ note = udaathalantguru;
 },
 {
 glyphname = yakashhalantguru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 anchors = (
@@ -21065,7 +21327,7 @@ note = yakashhalantguru;
 },
 {
 glyphname = rasubscriptuguru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 anchors = (
@@ -21129,7 +21391,7 @@ note = rasubscriptuguru;
 },
 {
 glyphname = hasubscriptuguru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 anchors = (
@@ -21193,7 +21455,7 @@ note = hasubscriptuguru;
 },
 {
 glyphname = vasubscriptuguru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 anchors = (
@@ -21257,7 +21519,7 @@ note = vasubscriptuguru;
 },
 {
 glyphname = udaatuguru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 anchors = (
@@ -21321,7 +21583,7 @@ note = udaatuguru;
 },
 {
 glyphname = yakashuguru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 anchors = (
@@ -21385,7 +21647,7 @@ note = yakashuguru;
 },
 {
 glyphname = rasubscriptuuguru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 anchors = (
@@ -21449,7 +21711,7 @@ note = rasubscriptuuguru;
 },
 {
 glyphname = hasubscriptuuguru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 anchors = (
@@ -21513,7 +21775,7 @@ note = hasubscriptuuguru;
 },
 {
 glyphname = vasubscriptuuguru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 anchors = (
@@ -21577,7 +21839,7 @@ note = vasubscriptuuguru;
 },
 {
 glyphname = udaatuuguru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 anchors = (
@@ -21641,7 +21903,7 @@ note = udaatuuguru;
 },
 {
 glyphname = yakashuuguru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 anchors = (
@@ -21705,7 +21967,7 @@ note = yakashuuguru;
 },
 {
 glyphname = karaguru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 anchors = (
@@ -21975,7 +22237,7 @@ rightKerningGroup = kaR;
 {
 export = 0;
 glyphname = rasubscript1guru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 anchors = (
@@ -22091,7 +22353,7 @@ note = rasubscript1guru;
 {
 export = 0;
 glyphname = hasubscript1guru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 anchors = (
@@ -22222,7 +22484,7 @@ note = hasubscript1guru;
 {
 export = 0;
 glyphname = vasubscript1guru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 anchors = (
@@ -22385,7 +22647,7 @@ note = vasubscript1guru;
 },
 {
 glyphname = nuutippiguru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 components = (
@@ -22409,6 +22671,7 @@ width = 575;
 {
 components = (
 {
+alignment = -1;
 name = naguru;
 },
 {
@@ -22423,11 +22686,12 @@ transform = "{1, 0, 0, 1, 503, 0}";
 }
 );
 layerId = "E17BEC9D-CAAD-449F-91D9-03766E30097E";
-width = 631;
+width = 651;
 },
 {
 components = (
 {
+alignment = -1;
 name = naguru;
 },
 {
@@ -22442,16 +22706,17 @@ transform = "{1, 0, 0, 1, 445, 0}";
 }
 );
 layerId = "7DD510ED-E696-4B04-90C7-292E6BE56412";
-width = 597;
+width = 605;
 }
 );
 leftKerningGroup = naL;
+widthMetricsKey = naguru;
 note = nuutippiguru;
 rightKerningGroup = naR;
 },
 {
 glyphname = phunuktaguru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 anchors = (
@@ -22491,7 +22756,7 @@ transform = "{1, 0, 0, 1, 671, -10}";
 }
 );
 layerId = "E17BEC9D-CAAD-449F-91D9-03766E30097E";
-width = 631;
+width = 641;
 },
 {
 anchors = (
@@ -22511,14 +22776,15 @@ transform = "{1, 0, 0, 1, 627, -4}";
 }
 );
 layerId = "7DD510ED-E696-4B04-90C7-292E6BE56412";
-width = 609;
+width = 613;
 }
 );
 note = phunuktaguru;
+rightKerningGroup = ddhaR;
 },
 {
 glyphname = phuunuktaguru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 anchors = (
@@ -22558,7 +22824,7 @@ transform = "{1, 0, 0, 1, 653, -20}";
 }
 );
 layerId = "E17BEC9D-CAAD-449F-91D9-03766E30097E";
-width = 631;
+width = 641;
 },
 {
 anchors = (
@@ -22578,14 +22844,15 @@ transform = "{1, 0, 0, 1, 614, -8}";
 }
 );
 layerId = "7DD510ED-E696-4B04-90C7-292E6BE56412";
-width = 609;
+width = 613;
 }
 );
 note = phuunuktaguru;
+rightKerningGroup = ddhaR;
 },
 {
 glyphname = iibindiguru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 components = (
@@ -22677,7 +22944,7 @@ note = iibindiguru;
 },
 {
 glyphname = ubindiguru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 components = (
@@ -22724,7 +22991,7 @@ note = ubindiguru;
 },
 {
 glyphname = uubindiguru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 components = (
@@ -22771,7 +23038,7 @@ note = uubindiguru;
 },
 {
 glyphname = eebindiguru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 components = (
@@ -22821,7 +23088,7 @@ note = eebindiguru;
 },
 {
 glyphname = aibindiguru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 components = (
@@ -22866,11 +23133,12 @@ layerId = "7DD510ED-E696-4B04-90C7-292E6BE56412";
 width = 768;
 }
 );
+leftKerningGroup = aL;
 note = aibindiguru;
 },
 {
 glyphname = oobindiguru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 components = (
@@ -22917,7 +23185,7 @@ note = oobindiguru;
 },
 {
 glyphname = aubindiguru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 components = (
@@ -22929,9 +23197,8 @@ name = aumatraguru;
 transform = "{1, 0, 0, 1, 707, 0}";
 },
 {
-alignment = -1;
 name = bindiguru;
-transform = "{1, 0, 0, 1, 850, 10}";
+transform = "{1, 0, 0, 1, 863, 67}";
 }
 );
 layerId = "1D4F67F9-897D-45AD-B7F0-CA61A6862C03";
@@ -22940,6 +23207,7 @@ width = 727;
 {
 components = (
 {
+alignment = -1;
 name = aguru;
 },
 {
@@ -22947,17 +23215,17 @@ name = aumatraguru;
 transform = "{1, 0, 0, 1, 791, 0}";
 },
 {
-alignment = -1;
 name = bindiguru;
-transform = "{1, 0, 0, 1, 1027, 0}";
+transform = "{1, 0, 0, 1, 992, 138}";
 }
 );
 layerId = "E17BEC9D-CAAD-449F-91D9-03766E30097E";
-width = 851;
+width = 831;
 },
 {
 components = (
 {
+alignment = -1;
 name = aguru;
 },
 {
@@ -22965,20 +23233,21 @@ name = aumatraguru;
 transform = "{1, 0, 0, 1, 741, 0}";
 },
 {
-alignment = -1;
 name = bindiguru;
-transform = "{1, 0, 0, 1, 920, 6}";
+transform = "{1, 0, 0, 1, 915, 99}";
 }
 );
 layerId = "7DD510ED-E696-4B04-90C7-292E6BE56412";
-width = 776;
+width = 768;
 }
 );
+leftKerningGroup = aL;
+widthMetricsKey = auguru;
 note = aubindiguru;
 },
 {
 glyphname = iimatrabindiguru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 components = (
@@ -23065,11 +23334,12 @@ nodes = (
 width = 275;
 }
 );
+leftKerningGroup = iimatraL;
 note = iimatrabindiguru;
 },
 {
 glyphname = eematrabindiguru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 anchors = (
@@ -23133,7 +23403,7 @@ note = eematrabindiguru;
 },
 {
 glyphname = aimatrabindiguru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 anchors = (
@@ -23242,7 +23512,7 @@ note = aimatrabindiguru;
 },
 {
 glyphname = oomatrabindiguru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 anchors = (
@@ -23306,7 +23576,7 @@ note = oomatrabindiguru;
 },
 {
 glyphname = aumatrabindiguru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 anchors = (
@@ -23340,7 +23610,7 @@ name = aumatraguru;
 },
 {
 name = bindiguru;
-transform = "{1, 0, 0, 1, 201, 148}";
+transform = "{1, 0, 0, 1, 201, 138}";
 }
 );
 layerId = "E17BEC9D-CAAD-449F-91D9-03766E30097E";
@@ -23370,7 +23640,7 @@ note = aumatrabindiguru;
 },
 {
 glyphname = ubindinuktaguru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 components = (
@@ -23416,7 +23686,7 @@ note = ubindinuktaguru;
 },
 {
 glyphname = uubindinuktaguru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 components = (
@@ -23463,7 +23733,7 @@ note = uubindinuktaguru;
 {
 export = 0;
 glyphname = addakbaraltguru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 components = (
@@ -23540,7 +23810,7 @@ note = addakbaraltguru;
 {
 export = 0;
 glyphname = umatralowguru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 anchors = (
@@ -23596,7 +23866,7 @@ note = umatralowguru;
 {
 export = 0;
 glyphname = uumatralowguru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 anchors = (
@@ -23652,7 +23922,7 @@ note = uumatralowguru;
 {
 export = 0;
 glyphname = oomatra1guru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 anchors = (
@@ -23780,7 +24050,7 @@ note = oomatra1guru;
 {
 export = 0;
 glyphname = oomatrabindi1guru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 anchors = (
@@ -23844,7 +24114,7 @@ note = oomatrabindi1guru;
 },
 {
 glyphname = exclam.guru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 layerId = "E17BEC9D-CAAD-449F-91D9-03766E30097E";
@@ -23947,7 +24217,7 @@ unicode = 0021;
 },
 {
 glyphname = quotedbl.guru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 layerId = "E17BEC9D-CAAD-449F-91D9-03766E30097E";
@@ -24028,7 +24298,7 @@ unicode = 0022;
 },
 {
 glyphname = numbersign.guru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 layerId = "E17BEC9D-CAAD-449F-91D9-03766E30097E";
@@ -24179,7 +24449,7 @@ unicode = 0023;
 },
 {
 glyphname = percent.guru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 layerId = "E17BEC9D-CAAD-449F-91D9-03766E30097E";
@@ -24435,7 +24705,7 @@ unicode = 0025;
 },
 {
 glyphname = quotesingle.guru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 layerId = "E17BEC9D-CAAD-449F-91D9-03766E30097E";
@@ -24489,7 +24759,7 @@ unicode = 0027;
 },
 {
 glyphname = parenleft.guru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 layerId = "E17BEC9D-CAAD-449F-91D9-03766E30097E";
@@ -24572,7 +24842,7 @@ unicode = 0028;
 },
 {
 glyphname = parenright.guru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 layerId = "E17BEC9D-CAAD-449F-91D9-03766E30097E";
@@ -24655,7 +24925,7 @@ unicode = 0029;
 },
 {
 glyphname = asterisk.guru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 layerId = "E17BEC9D-CAAD-449F-91D9-03766E30097E";
@@ -24751,7 +25021,7 @@ unicode = 002A;
 },
 {
 glyphname = plus.guru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 layerId = "E17BEC9D-CAAD-449F-91D9-03766E30097E";
@@ -24827,7 +25097,7 @@ unicode = 002B;
 },
 {
 glyphname = comma.guru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 layerId = "E17BEC9D-CAAD-449F-91D9-03766E30097E";
@@ -24917,7 +25187,7 @@ unicode = 002C;
 },
 {
 glyphname = hyphen.guru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 layerId = "E17BEC9D-CAAD-449F-91D9-03766E30097E";
@@ -24971,7 +25241,7 @@ unicode = 002D;
 },
 {
 glyphname = hyphen1.guru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 layerId = "1D4F67F9-897D-45AD-B7F0-CA61A6862C03";
@@ -25023,7 +25293,7 @@ unicode = 2010;
 },
 {
 glyphname = period.guru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 layerId = "E17BEC9D-CAAD-449F-91D9-03766E30097E";
@@ -25101,7 +25371,7 @@ unicode = 002E;
 },
 {
 glyphname = slash.guru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 layerId = "E17BEC9D-CAAD-449F-91D9-03766E30097E";
@@ -25153,7 +25423,7 @@ unicode = 002F;
 },
 {
 glyphname = zero.guru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 layerId = "E17BEC9D-CAAD-449F-91D9-03766E30097E";
@@ -25280,7 +25550,7 @@ unicode = 0030;
 },
 {
 glyphname = one.guru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 layerId = "E17BEC9D-CAAD-449F-91D9-03766E30097E";
@@ -25392,7 +25662,7 @@ unicode = 0031;
 },
 {
 glyphname = two.guru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 layerId = "E17BEC9D-CAAD-449F-91D9-03766E30097E";
@@ -25528,7 +25798,7 @@ unicode = 0032;
 },
 {
 glyphname = three.guru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 layerId = "E17BEC9D-CAAD-449F-91D9-03766E30097E";
@@ -25703,7 +25973,7 @@ unicode = 0033;
 },
 {
 glyphname = four.guru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 layerId = "E17BEC9D-CAAD-449F-91D9-03766E30097E";
@@ -25848,7 +26118,7 @@ unicode = 0034;
 },
 {
 glyphname = five.guru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 layerId = "E17BEC9D-CAAD-449F-91D9-03766E30097E";
@@ -26002,7 +26272,7 @@ unicode = 0035;
 },
 {
 glyphname = six.guru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 layerId = "E17BEC9D-CAAD-449F-91D9-03766E30097E";
@@ -26174,7 +26444,7 @@ unicode = 0036;
 },
 {
 glyphname = seven.guru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 layerId = "E17BEC9D-CAAD-449F-91D9-03766E30097E";
@@ -26250,7 +26520,7 @@ unicode = 0037;
 },
 {
 glyphname = eight.guru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 layerId = "E17BEC9D-CAAD-449F-91D9-03766E30097E";
@@ -26464,7 +26734,7 @@ unicode = 0038;
 },
 {
 glyphname = nine.guru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 layerId = "E17BEC9D-CAAD-449F-91D9-03766E30097E";
@@ -26636,7 +26906,7 @@ unicode = 0039;
 },
 {
 glyphname = colon.guru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 layerId = "E17BEC9D-CAAD-449F-91D9-03766E30097E";
@@ -26765,7 +27035,7 @@ unicode = 003A;
 },
 {
 glyphname = semicolon.guru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 layerId = "E17BEC9D-CAAD-449F-91D9-03766E30097E";
@@ -26906,7 +27176,7 @@ unicode = 003B;
 },
 {
 glyphname = less.guru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 layerId = "E17BEC9D-CAAD-449F-91D9-03766E30097E";
@@ -26967,7 +27237,7 @@ unicode = 003C;
 },
 {
 glyphname = equal.guru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 layerId = "E17BEC9D-CAAD-449F-91D9-03766E30097E";
@@ -27046,7 +27316,7 @@ unicode = 003D;
 },
 {
 glyphname = greater.guru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 layerId = "E17BEC9D-CAAD-449F-91D9-03766E30097E";
@@ -27107,7 +27377,7 @@ unicode = 003E;
 },
 {
 glyphname = question.guru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 layerId = "E17BEC9D-CAAD-449F-91D9-03766E30097E";
@@ -27271,7 +27541,7 @@ unicode = 003F;
 },
 {
 glyphname = bracketleft.guru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 layerId = "E17BEC9D-CAAD-449F-91D9-03766E30097E";
@@ -27354,7 +27624,7 @@ unicode = 005B;
 },
 {
 glyphname = backslash.guru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 layerId = "E17BEC9D-CAAD-449F-91D9-03766E30097E";
@@ -27406,7 +27676,7 @@ unicode = 005C;
 },
 {
 glyphname = bracketright.guru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 layerId = "E17BEC9D-CAAD-449F-91D9-03766E30097E";
@@ -27489,7 +27759,7 @@ unicode = 005D;
 },
 {
 glyphname = asciicircum.guru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 layerId = "E17BEC9D-CAAD-449F-91D9-03766E30097E";
@@ -27550,7 +27820,7 @@ unicode = 005E;
 },
 {
 glyphname = underscore.guru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 layerId = "E17BEC9D-CAAD-449F-91D9-03766E30097E";
@@ -27602,7 +27872,7 @@ unicode = 005F;
 },
 {
 glyphname = braceleft.guru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 layerId = "E17BEC9D-CAAD-449F-91D9-03766E30097E";
@@ -27751,7 +28021,7 @@ unicode = 007B;
 },
 {
 glyphname = bar.guru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 layerId = "E17BEC9D-CAAD-449F-91D9-03766E30097E";
@@ -27803,7 +28073,7 @@ unicode = 007C;
 },
 {
 glyphname = braceright.guru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 layerId = "E17BEC9D-CAAD-449F-91D9-03766E30097E";
@@ -27952,7 +28222,7 @@ unicode = 007D;
 },
 {
 glyphname = asciitilde.guru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 layerId = "E17BEC9D-CAAD-449F-91D9-03766E30097E";
@@ -28070,7 +28340,7 @@ unicode = 007E;
 },
 {
 glyphname = sfthyphen.guru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 components = (
@@ -28105,7 +28375,7 @@ unicode = 00AD;
 },
 {
 glyphname = endash.guru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 layerId = "E17BEC9D-CAAD-449F-91D9-03766E30097E";
@@ -28159,7 +28429,7 @@ unicode = 2013;
 },
 {
 glyphname = emdash.guru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 layerId = "E17BEC9D-CAAD-449F-91D9-03766E30097E";
@@ -28213,7 +28483,7 @@ unicode = 2014;
 },
 {
 glyphname = quoteleft.guru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 layerId = "E17BEC9D-CAAD-449F-91D9-03766E30097E";
@@ -28303,7 +28573,7 @@ unicode = 2018;
 },
 {
 glyphname = quoteright.guru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 layerId = "E17BEC9D-CAAD-449F-91D9-03766E30097E";
@@ -28393,7 +28663,7 @@ unicode = 2019;
 },
 {
 glyphname = quotedblleft.guru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 layerId = "E17BEC9D-CAAD-449F-91D9-03766E30097E";
@@ -28546,7 +28816,7 @@ unicode = 201C;
 },
 {
 glyphname = quotedblright.guru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 layerId = "E17BEC9D-CAAD-449F-91D9-03766E30097E";
@@ -28699,7 +28969,7 @@ unicode = 201D;
 },
 {
 glyphname = ellipsis.guru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 layerId = "E17BEC9D-CAAD-449F-91D9-03766E30097E";
@@ -28879,7 +29149,7 @@ unicode = 2026;
 },
 {
 glyphname = multiply.guru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 layerId = "E17BEC9D-CAAD-449F-91D9-03766E30097E";
@@ -28955,7 +29225,7 @@ unicode = 00D7;
 },
 {
 glyphname = divide.guru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 layerId = "E17BEC9D-CAAD-449F-91D9-03766E30097E";
@@ -29109,7 +29379,7 @@ unicode = 00F7;
 },
 {
 glyphname = minus.guru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 layerId = "1D4F67F9-897D-45AD-B7F0-CA61A6862C03";
@@ -29162,7 +29432,7 @@ unicode = 2212;
 },
 {
 glyphname = uni20B9.guru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 layerId = "E17BEC9D-CAAD-449F-91D9-03766E30097E";
@@ -29310,7 +29580,7 @@ unicode = 20B9;
 },
 {
 glyphname = danda.guru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 layerId = "1D4F67F9-897D-45AD-B7F0-CA61A6862C03";
@@ -29369,7 +29639,7 @@ unicode = 0964;
 },
 {
 glyphname = dbldanda.guru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 layerId = "1D4F67F9-897D-45AD-B7F0-CA61A6862C03";
@@ -29461,7 +29731,7 @@ unicode = 0965;
 },
 {
 glyphname = uni200B;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 layerId = "1D4F67F9-897D-45AD-B7F0-CA61A6862C03";
@@ -29481,7 +29751,7 @@ unicode = 200B;
 },
 {
 glyphname = uni200C;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 layerId = "E17BEC9D-CAAD-449F-91D9-03766E30097E";
@@ -29500,7 +29770,7 @@ unicode = 200C;
 },
 {
 glyphname = uni200D;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 layerId = "E17BEC9D-CAAD-449F-91D9-03766E30097E";
@@ -29519,7 +29789,7 @@ unicode = 200D;
 },
 {
 glyphname = uni25CC;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 layerId = "1D4F67F9-897D-45AD-B7F0-CA61A6862C03";
@@ -30362,7 +30632,7 @@ unicode = 25CC;
 {
 export = 0;
 glyphname = umatralow1guru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 anchors = (
@@ -30417,7 +30687,7 @@ note = umatralow1guru;
 },
 {
 glyphname = iiaddakguru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 components = (
@@ -30515,7 +30785,7 @@ note = iiaddakguru;
 },
 {
 glyphname = uaddakguru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 components = (
@@ -30613,7 +30883,7 @@ note = uaddakguru;
 },
 {
 glyphname = uuaddakguru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 components = (
@@ -30711,7 +30981,7 @@ note = uuaddakguru;
 },
 {
 glyphname = eeaddakguru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 components = (
@@ -30809,7 +31079,7 @@ note = eeaddakguru;
 },
 {
 glyphname = aiaddakguru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 components = (
@@ -30906,7 +31176,7 @@ note = aiaddakguru;
 },
 {
 glyphname = ooaddakguru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 components = (
@@ -31000,11 +31270,12 @@ width = 632;
 }
 );
 leftKerningGroup = uL;
+widthMetricsKey = ooguru;
 note = ooaddakguru;
 },
 {
 glyphname = auaddakguru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 components = (
@@ -31113,7 +31384,7 @@ note = auaddakguru;
 },
 {
 glyphname = iimatraaddakguru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 components = (
@@ -31210,7 +31481,7 @@ note = iimatraaddakguru;
 },
 {
 glyphname = eematraaddakguru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 anchors = (
@@ -31325,7 +31596,7 @@ note = eematraaddakguru;
 },
 {
 glyphname = aimatraaddakguru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 anchors = (
@@ -31440,7 +31711,7 @@ note = aimatraaddakguru;
 },
 {
 glyphname = oomatraaddakguru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 anchors = (
@@ -31555,7 +31826,7 @@ note = oomatraaddakguru;
 },
 {
 glyphname = aumatraaddakguru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 anchors = (
@@ -31670,7 +31941,7 @@ note = aumatraaddakguru;
 },
 {
 glyphname = unuktaaddakguru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 components = (
@@ -31716,7 +31987,7 @@ note = unuktaaddakguru;
 },
 {
 glyphname = uunuktaaddakguru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 components = (
@@ -31763,7 +32034,7 @@ note = uunuktaaddakguru;
 {
 export = 0;
 glyphname = uraaddakguru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 components = (
@@ -31857,12 +32128,13 @@ width = 632;
 }
 );
 leftKerningGroup = uL;
+widthMetricsKey = uraguru;
 note = uraaddakguru;
 },
 {
 export = 0;
 glyphname = nuktaaltguru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 anchors = (
@@ -31915,7 +32187,7 @@ note = nuktaaltguru;
 {
 export = 0;
 glyphname = bindialtguru;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 anchors = (
@@ -31967,7 +32239,7 @@ note = bindialtguru;
 },
 {
 glyphname = uniA830;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 layerId = "1D4F67F9-897D-45AD-B7F0-CA61A6862C03";
@@ -32026,7 +32298,7 @@ unicode = A830;
 },
 {
 glyphname = uniA831;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 layerId = "1D4F67F9-897D-45AD-B7F0-CA61A6862C03";
@@ -32118,7 +32390,7 @@ unicode = A831;
 },
 {
 glyphname = uniA832;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 layerId = "1D4F67F9-897D-45AD-B7F0-CA61A6862C03";
@@ -32243,7 +32515,7 @@ unicode = A832;
 },
 {
 glyphname = uniA833;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 layerId = "1D4F67F9-897D-45AD-B7F0-CA61A6862C03";
@@ -32302,7 +32574,7 @@ unicode = A833;
 },
 {
 glyphname = uniA834;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 layerId = "1D4F67F9-897D-45AD-B7F0-CA61A6862C03";
@@ -32394,7 +32666,7 @@ unicode = A834;
 },
 {
 glyphname = uniA835;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 layerId = "1D4F67F9-897D-45AD-B7F0-CA61A6862C03";
@@ -32519,7 +32791,7 @@ unicode = A835;
 },
 {
 glyphname = uniA836;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 layerId = "1D4F67F9-897D-45AD-B7F0-CA61A6862C03";
@@ -32647,7 +32919,7 @@ unicode = A836;
 },
 {
 glyphname = uniA837;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 layerId = "1D4F67F9-897D-45AD-B7F0-CA61A6862C03";
@@ -32787,7 +33059,7 @@ unicode = A837;
 },
 {
 glyphname = uniA838;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 layerId = "1D4F67F9-897D-45AD-B7F0-CA61A6862C03";
@@ -32891,7 +33163,7 @@ unicode = A838;
 },
 {
 glyphname = uniA839;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 layerId = "1D4F67F9-897D-45AD-B7F0-CA61A6862C03";
@@ -33031,7 +33303,7 @@ unicode = A839;
 },
 {
 glyphname = udattadeva;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 anchors = (
@@ -33107,7 +33379,7 @@ unicode = 0951;
 },
 {
 glyphname = anudattadeva;
-lastChange = "2017-09-21 14:37:48 +0000";
+lastChange = "2020-02-26 20:16:57 +0000";
 layers = (
 {
 anchors = (
@@ -33238,7 +33510,7 @@ value = 0;
 },
 {
 name = xHeight;
-value = 536;
+value = "536";
 }
 );
 interpolationWeight = 28;
@@ -34047,8 +34319,8 @@ twoguru = -10;
 "@MMK_R_rraL" = -18;
 "@MMK_R_taL" = -26;
 "@MMK_R_tthaL" = -6;
-ganuktaguru = -27.95180;
-phanuktaguru = -23.97590;
+ganuktaguru = -27.9518;
+phanuktaguru = -23.9759;
 };
 "@MMK_L_caR" = {
 "@MMK_R_aL" = -14;
@@ -34129,8 +34401,8 @@ phanuktaguru = -23.97590;
 "@MMK_R_nyaL" = -26;
 "@MMK_R_phaL" = -8;
 "@MMK_R_rraL" = -30;
-ganuktaguru = -36.02410;
-phanuktaguru = -36.02410;
+ganuktaguru = -36.0241;
+phanuktaguru = -36.0241;
 };
 "@MMK_L_iriR" = {
 "@MMK_R_aL" = -16;
@@ -34262,10 +34534,10 @@ phanuktaguru = -36.02410;
 "@MMK_R_ngaL" = -10;
 };
 aibindiguru = {
-"@MMK_R_imatraL" = 19.87950;
+"@MMK_R_imatraL" = 19.8795;
 };
 aubindiguru = {
-"@MMK_R_imatraL" = 25.90360;
+"@MMK_R_imatraL" = 25.9036;
 };
 eightguru = {
 fiveguru = -20;
@@ -34281,26 +34553,26 @@ eightguru = 3.9759;
 fiveguru = 2.04819;
 nineguru = 3.9759;
 sevenguru = -2.04819;
-zeroguru = -16.02410;
+zeroguru = -16.0241;
 };
 fourguru = {
 fiveguru = -3.9759;
 nineguru = 3.9759;
 sevenguru = -2.04819;
 twoguru = -3.9759;
-zeroguru = -16.02410;
+zeroguru = -16.0241;
 };
 iibindiguru = {
-"@MMK_R_imatraL" = 25.90360;
+"@MMK_R_imatraL" = 25.9036;
 };
 iimatrabindiguru = {
-"@MMK_R_imatraL" = 19.87950;
+"@MMK_R_imatraL" = 19.8795;
 };
 lanuktaguru = {
 "@MMK_R_aL" = -60;
-"@MMK_R_aamatraL" = -66.02410;
-"@MMK_R_iimatraL" = -52.04820;
-"@MMK_R_nyaL" = -43.97590;
+"@MMK_R_aamatraL" = -66.0241;
+"@MMK_R_iimatraL" = -52.0482;
+"@MMK_R_nyaL" = -43.9759;
 };
 nineguru = {
 fiveguru = 2.04819;
@@ -34317,7 +34589,7 @@ fiveguru = 2.04819;
 oneguru = -7.95181;
 };
 oobindiguru = {
-"@MMK_R_imatraL" = 19.87950;
+"@MMK_R_imatraL" = 19.8795;
 };
 sevenguru = {
 fiveguru = 2.04819;
@@ -34325,13 +34597,13 @@ fourguru = -7.95181;
 oneguru = 6.0241;
 sevenguru = -28.0723;
 sixguru = -20;
-threeguru = -17.95180;
+threeguru = -17.9518;
 twoguru = -7.95181;
 };
 sixguru = {
 fiveguru = -3.9759;
 twoguru = -3.9759;
-zeroguru = -16.02410;
+zeroguru = -16.0241;
 };
 threeguru = {
 fiveguru = -7.95181;
@@ -34346,16 +34618,16 @@ twoguru = -11.988;
 zeroguru = -10;
 };
 ubindiguru = {
-"@MMK_R_imatraL" = 25.90360;
+"@MMK_R_imatraL" = 25.9036;
 };
 ubindinuktaguru = {
-"@MMK_R_imatraL" = 25.90360;
+"@MMK_R_imatraL" = 25.9036;
 };
 uubindiguru = {
-"@MMK_R_imatraL" = 25.90360;
+"@MMK_R_imatraL" = 25.9036;
 };
 uubindinuktaguru = {
-"@MMK_R_imatraL" = 25.90360;
+"@MMK_R_imatraL" = 25.9036;
 };
 zeroguru = {
 eightguru = -6.0241;
@@ -34363,7 +34635,7 @@ fiveguru = 6.0241;
 fourguru = -6.0241;
 nineguru = -6.0241;
 oneguru = -3.9759;
-sevenguru = -21.08430;
+sevenguru = -21.0843;
 threeguru = -6.0241;
 twoguru = -6.0241;
 };
@@ -34654,5 +34926,5 @@ UUID0 = {
 };
 };
 versionMajor = 2;
-versionMinor = 0;
+versionMinor = 1;
 }
