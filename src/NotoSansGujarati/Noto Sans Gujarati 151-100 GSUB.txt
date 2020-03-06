@@ -1,0 +1,7209 @@
+FontDame GSUB table
+
+% bold
+
+feature table begin
+0	nukt	nukta-gujr
+1	akhn	akhand-gujr
+2	rphf	reph-gujr
+3	rkrf	rakarforms-gjr2
+4	blwf	belowforms-gujr
+5	blwf	belowforms-gjr2
+6	half	halfform-gujr
+7	half	halfform-gjr2
+8	vatu	vattuforms-gujr,halfvattuforms-gujr
+9	cjct	conjuncts-gjr2
+10	pres	fullconjuncts-gujr,halfconjuncts-gujr,swapshahalf-gujr
+11	abvs	rephbasevowel-gujr,reph-anusvara-gujr,maatra-ligs-gujr,ivowelcontext-gujr,i-context2-gujr,swap_ivowel-guja
+12	blws	belowmaatra-gujr,stemswap-gujr,narrow_u-gujr,nuktacontext-gujr,vattuligs-gujr
+13	psts	postsubstMacfix-gujr,postsubst-gujr,iicontext-gujr,leftdot-gujr
+14	haln	halant-gujr
+feature table end
+
+
+script table begin
+gjr2	default		0, 1, 2, 3, 5, 7, 9, 10, 11, 12, 13, 14
+gujr	default		0, 1, 2, 4, 6, 8, 10, 11, 12, 13, 14
+script table end
+
+
+
+lookup	nukta-gujr	ligature
+
+kanuktagujr	kagujr	nuktagujr
+khanuktagujr	khagujr	nuktagujr
+ganuktagujr	gagujr	nuktagujr
+ghanuktagujr	ghagujr	nuktagujr
+nganuktagujr	ngagujr	nuktagujr
+canuktagujr	cagujr	nuktagujr
+chanuktagujr	chagujr	nuktagujr
+januktagujr	jagujr	nuktagujr
+jhanuktagujr	jhagujr	nuktagujr
+nyanuktagujr	nyagujr	nuktagujr
+ttanuktagujr	ttagujr	nuktagujr
+tthanuktagujr	tthagujr	nuktagujr
+ddanuktagujr	ddagujr	nuktagujr
+ddhanuktagujr	ddhagujr	nuktagujr
+nnanuktagujr	nnagujr	nuktagujr
+tanuktagujr	tagujr	nuktagujr
+thanuktagujr	thagujr	nuktagujr
+danuktagujr	dagujr	nuktagujr
+dhanuktagujr	dhagujr	nuktagujr
+nanuktagujr	nagujr	nuktagujr
+panuktagujr	pagujr	nuktagujr
+phanuktagujr	phagujr	nuktagujr
+banuktagujr	bagujr	nuktagujr
+bhanuktagujr	bhagujr	nuktagujr
+manuktagujr	magujr	nuktagujr
+yanuktagujr	yagujr	nuktagujr
+ranuktagujr	ragujr	nuktagujr
+lanuktagujr	lagujr	nuktagujr
+llanuktagujr	llagujr	nuktagujr
+vanuktagujr	vagujr	nuktagujr
+shanuktagujr	shagujr	nuktagujr
+ssanuktagujr	ssagujr	nuktagujr
+sanuktagujr	sagujr	nuktagujr
+hanuktagujr	hagujr	nuktagujr
+
+lookup end
+
+
+lookup	akhand-gujr	ligature
+
+kassagujr	kagujr	viramagujr	ssagujr
+janyagujr	jagujr	viramagujr	nyagujr
+
+lookup end
+
+
+lookup	reph-gujr	ligature
+
+rephgujr	ragujr	viramagujr
+
+lookup end
+
+% new
+
+lookup	rakarforms-gjr2	ligature
+
+% 2020
+markattachmenttype	2
+
+karagujr	kagujr	viramagujr	ragujr
+kharagujr	khagujr	viramagujr	ragujr
+garagujr	gagujr	viramagujr	ragujr
+gharagujr	ghagujr	viramagujr	ragujr
+ngaragujr	ngagujr	viramagujr	ragujr
+caragujr	cagujr	viramagujr	ragujr
+charagujr	chagujr	viramagujr	ragujr
+jaragujr	jagujr	viramagujr	ragujr
+jharagujr	jhagujr	viramagujr	ragujr
+nyaragujr	nyagujr	viramagujr	ragujr
+ttaragujr	ttagujr	viramagujr	ragujr
+ttharagujr	tthagujr	viramagujr	ragujr
+ddaragujr	ddagujr	viramagujr	ragujr
+ddharagujr	ddhagujr	viramagujr	ragujr
+nnaragujr	nnagujr	viramagujr	ragujr
+taragujr	tagujr	viramagujr	ragujr
+tharagujr	thagujr	viramagujr	ragujr
+daragujr	dagujr	viramagujr	ragujr
+dharagujr	dhagujr	viramagujr	ragujr
+naragujr	nagujr	viramagujr	ragujr
+paragujr	pagujr	viramagujr	ragujr
+pharagujr	phagujr	viramagujr	ragujr
+baragujr	bagujr	viramagujr	ragujr
+bharagujr	bhagujr	viramagujr	ragujr
+maragujr	magujr	viramagujr	ragujr
+yaragujr	yagujr	viramagujr	ragujr
+laragujr	lagujr	viramagujr	ragujr
+llaragujr	llagujr	viramagujr	ragujr
+varagujr	vagujr	viramagujr	ragujr
+sharagujr	shagujr	viramagujr	ragujr
+ssaragujr	ssagujr	viramagujr	ragujr
+saragujr	sagujr	viramagujr	ragujr
+haragujr	hagujr	viramagujr	ragujr
+zharagujr	zhagujr	viramagujr	ragujr
+kassaragujr	kassagujr	viramagujr	ragujr
+janyaragujr	janyagujr	viramagujr	ragujr
+karanuktagujr	kanuktagujr	viramagujr	ragujr
+kharanuktagujr	khanuktagujr	viramagujr	ragujr
+garanuktagujr	ganuktagujr	viramagujr	ragujr
+gharanuktagujr	ghanuktagujr	viramagujr	ragujr
+ngaranuktagujr	nganuktagujr	viramagujr	ragujr
+caranuktagujr	canuktagujr	viramagujr	ragujr
+charanuktagujr	chanuktagujr	viramagujr	ragujr
+jaranuktagujr	januktagujr	viramagujr	ragujr
+jharanuktagujr	jhanuktagujr	viramagujr	ragujr
+nyaranuktagujr	nyanuktagujr	viramagujr	ragujr
+ttaranuktagujr	ttanuktagujr	viramagujr	ragujr
+ttharanuktagujr	tthanuktagujr	viramagujr	ragujr
+ddaranuktagujr	ddanuktagujr	viramagujr	ragujr
+ddharanuktagujr	ddhanuktagujr	viramagujr	ragujr
+nnaranuktagujr	nnanuktagujr	viramagujr	ragujr
+taranuktagujr	tanuktagujr	viramagujr	ragujr
+tharanuktagujr	thanuktagujr	viramagujr	ragujr
+daranuktagujr	danuktagujr	viramagujr	ragujr
+dharanuktagujr	dhanuktagujr	viramagujr	ragujr
+naranuktagujr	nanuktagujr	viramagujr	ragujr
+paranuktagujr	panuktagujr	viramagujr	ragujr
+pharanuktagujr	phanuktagujr	viramagujr	ragujr
+baranuktagujr	banuktagujr	viramagujr	ragujr
+bharanuktagujr	bhanuktagujr	viramagujr	ragujr
+maranuktagujr	manuktagujr	viramagujr	ragujr
+yaranuktagujr	yanuktagujr	viramagujr	ragujr
+laranuktagujr	lanuktagujr	viramagujr	ragujr
+llaranuktagujr	llanuktagujr	viramagujr	ragujr
+varanuktagujr	vanuktagujr	viramagujr	ragujr
+sharanuktagujr	shanuktagujr	viramagujr	ragujr
+ssaranuktagujr	ssanuktagujr	viramagujr	ragujr
+saranuktagujr	sanuktagujr	viramagujr	ragujr
+haranuktagujr	hanuktagujr	viramagujr	ragujr
+raranuktagujr	ranuktagujr	viramagujr	ragujr
+
+lookup end
+
+
+
+lookup	belowforms-gujr	ligature
+
+vattugujr	ragujr	viramagujr
+
+lookup end
+
+
+% new
+
+lookup	belowforms-gjr2	ligature
+
+vattugujr	viramagujr	ragujr
+
+lookup end
+
+
+
+lookup	halfform-gujr	ligature
+
+kaprehalfgujr	kagujr	viramagujr
+khaprehalfgujr	khagujr	viramagujr
+gaprehalfgujr	gagujr	viramagujr
+ghaprehalfgujr	ghagujr	viramagujr
+ngaprehalfgujr	ngagujr	viramagujr
+caprehalfgujr	cagujr	viramagujr
+chaprehalfgujr	chagujr	viramagujr
+japrehalfgujr	jagujr	viramagujr
+jhaprehalfgujr	jhagujr	viramagujr
+nyaprehalfgujr	nyagujr	viramagujr
+ttaprehalfgujr	ttagujr	viramagujr
+tthaprehalfgujr	tthagujr	viramagujr
+ddaprehalfgujr	ddagujr	viramagujr
+ddhaprehalfgujr	ddhagujr	viramagujr
+nnaprehalfgujr	nnagujr	viramagujr
+taprehalfgujr	tagujr	viramagujr
+thaprehalfgujr	thagujr	viramagujr
+daprehalfgujr	dagujr	viramagujr
+dhaprehalfgujr	dhagujr	viramagujr
+naprehalfgujr	nagujr	viramagujr
+paprehalfgujr	pagujr	viramagujr
+phaprehalfgujr	phagujr	viramagujr
+baprehalfgujr	bagujr	viramagujr
+bhaprehalfgujr	bhagujr	viramagujr
+maprehalfgujr	magujr	viramagujr
+yaprehalfgujr	yagujr	viramagujr
+raprehalfgujr	ragujr	viramagujr
+laprehalfgujr	lagujr	viramagujr
+llaprehalfgujr	llagujr	viramagujr
+vaprehalfgujr	vagujr	viramagujr
+shaprehalfgujr	shagujr	viramagujr
+ssaprehalfgujr	ssagujr	viramagujr
+saprehalfgujr	sagujr	viramagujr
+haprehalfgujr	hagujr	viramagujr
+zhaprehalfgujr	zhagujr	viramagujr
+kassaprehalfgujr	kassagujr	viramagujr
+janyaprehalfgujr	janyagujr	viramagujr
+kanuktaprehalfgujr	kanuktagujr	viramagujr
+khanuktaprehalfgujr	khanuktagujr	viramagujr
+ganuktaprehalfgujr	ganuktagujr	viramagujr
+ghanuktaprehalfgujr	ghanuktagujr	viramagujr
+nganuktaprehalfgujr	nganuktagujr	viramagujr
+canuktaprehalfgujr	canuktagujr	viramagujr
+chanuktaprehalfgujr	chanuktagujr	viramagujr
+januktaprehalfgujr	januktagujr	viramagujr
+jhanuktaprehalfgujr	jhanuktagujr	viramagujr
+nyanuktaprehalfgujr	nyanuktagujr	viramagujr
+ttanuktaprehalfgujr	ttanuktagujr	viramagujr
+tthanuktaprehalfgujr	tthanuktagujr	viramagujr
+ddanuktaprehalfgujr	ddanuktagujr	viramagujr
+ddhanuktaprehalfgujr	ddhanuktagujr	viramagujr
+nnanuktaprehalfgujr	nnanuktagujr	viramagujr
+tanuktaprehalfgujr	tanuktagujr	viramagujr
+thanuktaprehalfgujr	thanuktagujr	viramagujr
+danuktaprehalfgujr	danuktagujr	viramagujr
+dhanuktaprehalfgujr	dhanuktagujr	viramagujr
+nanuktaprehalfgujr	nanuktagujr	viramagujr
+panuktaprehalfgujr	panuktagujr	viramagujr
+phanuktaprehalfgujr	phanuktagujr	viramagujr
+banuktaprehalfgujr	banuktagujr	viramagujr
+bhanuktaprehalfgujr	bhanuktagujr	viramagujr
+manuktaprehalfgujr	manuktagujr	viramagujr
+yanuktaprehalfgujr	yanuktagujr	viramagujr
+ranuktaprehalfgujr	ranuktagujr	viramagujr
+lanuktaprehalfgujr	lanuktagujr	viramagujr
+llanuktaprehalfgujr	llanuktagujr	viramagujr
+vanuktaprehalfgujr	vanuktagujr	viramagujr
+shanuktaprehalfgujr	shanuktagujr	viramagujr
+ssanuktaprehalfgujr	ssanuktagujr	viramagujr
+sanuktaprehalfgujr	sanuktagujr	viramagujr
+hanuktaprehalfgujr	hanuktagujr	viramagujr
+
+lookup end
+
+
+
+% new
+
+lookup	halfform-gjr2	ligature
+
+% 2020
+markattachmenttype	2
+
+kaprehalfgujr	kagujr	viramagujr
+khaprehalfgujr	khagujr	viramagujr
+gaprehalfgujr	gagujr	viramagujr
+ghaprehalfgujr	ghagujr	viramagujr
+caprehalfgujr	cagujr	viramagujr
+japrehalfgujr	jagujr	viramagujr
+jhaprehalfgujr	jhagujr	viramagujr
+nyaprehalfgujr	nyagujr	viramagujr
+nnaprehalfgujr	nnagujr	viramagujr
+taprehalfgujr	tagujr	viramagujr
+thaprehalfgujr	thagujr	viramagujr
+dhaprehalfgujr	dhagujr	viramagujr
+naprehalfgujr	nagujr	viramagujr
+paprehalfgujr	pagujr	viramagujr
+phaprehalfgujr	phagujr	viramagujr
+baprehalfgujr	bagujr	viramagujr
+bhaprehalfgujr	bhagujr	viramagujr
+maprehalfgujr	magujr	viramagujr
+yaprehalfgujr	yagujr	viramagujr
+laprehalfgujr	lagujr	viramagujr
+llaprehalfgujr	llagujr	viramagujr
+vaprehalfgujr	vagujr	viramagujr
+shaprehalfgujr	shagujr	viramagujr
+ssaprehalfgujr	ssagujr	viramagujr
+saprehalfgujr	sagujr	viramagujr
+haprehalfgujr	hagujr	viramagujr
+zhaprehalfgujr	zhagujr	viramagujr
+kassaprehalfgujr	kassagujr	viramagujr
+janyaprehalfgujr	janyagujr	viramagujr
+kanuktaprehalfgujr	kanuktagujr	viramagujr
+khanuktaprehalfgujr	khanuktagujr	viramagujr
+ganuktaprehalfgujr	ganuktagujr	viramagujr
+ghanuktaprehalfgujr	ghanuktagujr	viramagujr
+canuktaprehalfgujr	canuktagujr	viramagujr
+januktaprehalfgujr	januktagujr	viramagujr
+jhanuktaprehalfgujr	jhanuktagujr	viramagujr
+nyanuktaprehalfgujr	nyanuktagujr	viramagujr
+nnanuktaprehalfgujr	nnanuktagujr	viramagujr
+tanuktaprehalfgujr	tanuktagujr	viramagujr
+thanuktaprehalfgujr	thanuktagujr	viramagujr
+dhanuktaprehalfgujr	dhanuktagujr	viramagujr
+nanuktaprehalfgujr	nanuktagujr	viramagujr
+panuktaprehalfgujr	panuktagujr	viramagujr
+phanuktaprehalfgujr	phanuktagujr	viramagujr
+banuktaprehalfgujr	banuktagujr	viramagujr
+bhanuktaprehalfgujr	bhanuktagujr	viramagujr
+manuktaprehalfgujr	manuktagujr	viramagujr
+yanuktaprehalfgujr	yanuktagujr	viramagujr
+lanuktaprehalfgujr	lanuktagujr	viramagujr
+llanuktaprehalfgujr	llanuktagujr	viramagujr
+vanuktaprehalfgujr	vanuktagujr	viramagujr
+shanuktaprehalfgujr	shanuktagujr	viramagujr
+ssanuktaprehalfgujr	ssanuktagujr	viramagujr
+sanuktaprehalfgujr	sanuktagujr	viramagujr
+hanuktaprehalfgujr	hanuktagujr	viramagujr
+karaprehalfgujr	karagujr	viramagujr
+kharaprehalfgujr	kharagujr	viramagujr
+garaprehalfgujr	garagujr	viramagujr
+gharaprehalfgujr	gharagujr	viramagujr
+caraprehalfgujr	caragujr	viramagujr
+jaraprehalfgujr	jaragujr	viramagujr
+jharaprehalfgujr	jharagujr	viramagujr
+nyaraprehalfgujr	nyaragujr	viramagujr
+nnaraprehalfgujr	nnaragujr	viramagujr
+taraprehalfgujr	taragujr	viramagujr
+tharaprehalfgujr	tharagujr	viramagujr
+dharaprehalfgujr	dharagujr	viramagujr
+naraprehalfgujr	naragujr	viramagujr
+paraprehalfgujr	paragujr	viramagujr
+pharaprehalfgujr	pharagujr	viramagujr
+baraprehalfgujr	baragujr	viramagujr
+bharaprehalfgujr	bharagujr	viramagujr
+maraprehalfgujr	maragujr	viramagujr
+yaraprehalfgujr	yaragujr	viramagujr
+laraprehalfgujr	laragujr	viramagujr
+llaraprehalfgujr	llaragujr	viramagujr
+varaprehalfgujr	varagujr	viramagujr
+sharaprehalfgujr	sharagujr	viramagujr
+ssaraprehalfgujr	ssaragujr	viramagujr
+saraprehalfgujr	saragujr	viramagujr
+haraprehalfgujr	haragujr	viramagujr
+zharaprehalfgujr	zharagujr	viramagujr
+kassaraprehalfgujr	kassaragujr	viramagujr
+janyaraprehalfgujr	janyaragujr	viramagujr
+karanuktaprehalfgujr	karanuktagujr	viramagujr
+kharanuktaprehalfgujr	kharanuktagujr	viramagujr
+garanuktaprehalfgujr	garanuktagujr	viramagujr
+gharanuktaprehalfgujr	gharanuktagujr	viramagujr
+caranuktaprehalfgujr	caranuktagujr	viramagujr
+jaranuktaprehalfgujr	jaranuktagujr	viramagujr
+jharanuktaprehalfgujr	jharanuktagujr	viramagujr
+nyaranuktaprehalfgujr	nyaranuktagujr	viramagujr
+nnaranuktaprehalfgujr	nnaranuktagujr	viramagujr
+taranuktaprehalfgujr	taranuktagujr	viramagujr
+tharanuktaprehalfgujr	tharanuktagujr	viramagujr
+dharanuktaprehalfgujr	dharanuktagujr	viramagujr
+naranuktaprehalfgujr	naranuktagujr	viramagujr
+paranuktaprehalfgujr	paranuktagujr	viramagujr
+pharanuktaprehalfgujr	pharanuktagujr	viramagujr
+baranuktaprehalfgujr	baranuktagujr	viramagujr
+bharanuktaprehalfgujr	bharanuktagujr	viramagujr
+maranuktaprehalfgujr	maranuktagujr	viramagujr
+yaranuktaprehalfgujr	yaranuktagujr	viramagujr
+laranuktaprehalfgujr	laranuktagujr	viramagujr
+llaranuktaprehalfgujr	llaranuktagujr	viramagujr
+varanuktaprehalfgujr	varanuktagujr	viramagujr
+sharanuktaprehalfgujr	sharanuktagujr	viramagujr
+ssaranuktaprehalfgujr	ssaranuktagujr	viramagujr
+saranuktaprehalfgujr	saranuktagujr	viramagujr
+haranuktaprehalfgujr	haranuktagujr	viramagujr
+
+lookup end
+
+
+
+lookup	vattuforms-gujr	ligature
+
+karagujr	kagujr	vattugujr
+kharagujr	khagujr	vattugujr
+garagujr	gagujr	vattugujr
+gharagujr	ghagujr	vattugujr
+ngaragujr	ngagujr	vattugujr
+caragujr	cagujr	vattugujr
+charagujr	chagujr	vattugujr
+jaragujr	jagujr	vattugujr
+jharagujr	jhagujr	vattugujr
+nyaragujr	nyagujr	vattugujr
+ttaragujr	ttagujr	vattugujr
+ttharagujr	tthagujr	vattugujr
+ddaragujr	ddagujr	vattugujr
+ddharagujr	ddhagujr	vattugujr
+nnaragujr	nnagujr	vattugujr
+taragujr	tagujr	vattugujr
+tharagujr	thagujr	vattugujr
+daragujr	dagujr	vattugujr
+dharagujr	dhagujr	vattugujr
+naragujr	nagujr	vattugujr
+paragujr	pagujr	vattugujr
+pharagujr	phagujr	vattugujr
+baragujr	bagujr	vattugujr
+bharagujr	bhagujr	vattugujr
+maragujr	magujr	vattugujr
+yaragujr	yagujr	vattugujr
+raragujr	ragujr	vattugujr
+laragujr	lagujr	vattugujr
+llaragujr	llagujr	vattugujr
+varagujr	vagujr	vattugujr
+sharagujr	shagujr	vattugujr
+ssaragujr	ssagujr	vattugujr
+saragujr	sagujr	vattugujr
+haragujr	hagujr	vattugujr
+zharagujr	zhagujr	vattugujr
+kassaragujr	kassagujr	vattugujr
+janyaragujr	janyagujr	vattugujr
+karanuktagujr	kanuktagujr	vattugujr
+kharanuktagujr	khanuktagujr	vattugujr
+garanuktagujr	ganuktagujr	vattugujr
+gharanuktagujr	ghanuktagujr	vattugujr
+ngaranuktagujr	nganuktagujr	vattugujr
+caranuktagujr	canuktagujr	vattugujr
+charanuktagujr	chanuktagujr	vattugujr
+jaranuktagujr	januktagujr	vattugujr
+jharanuktagujr	jhanuktagujr	vattugujr
+nyaranuktagujr	nyanuktagujr	vattugujr
+ttaranuktagujr	ttanuktagujr	vattugujr
+ttharanuktagujr	tthanuktagujr	vattugujr
+ddaranuktagujr	ddanuktagujr	vattugujr
+ddharanuktagujr	ddhanuktagujr	vattugujr
+nnaranuktagujr	nnanuktagujr	vattugujr
+taranuktagujr	tanuktagujr	vattugujr
+tharanuktagujr	thanuktagujr	vattugujr
+daranuktagujr	danuktagujr	vattugujr
+dharanuktagujr	dhanuktagujr	vattugujr
+naranuktagujr	nanuktagujr	vattugujr
+paranuktagujr	panuktagujr	vattugujr
+pharanuktagujr	phanuktagujr	vattugujr
+baranuktagujr	banuktagujr	vattugujr
+bharanuktagujr	bhanuktagujr	vattugujr
+maranuktagujr	manuktagujr	vattugujr
+yaranuktagujr	yanuktagujr	vattugujr
+raranuktagujr	ranuktagujr	vattugujr
+laranuktagujr	lanuktagujr	vattugujr
+llaranuktagujr	llanuktagujr	vattugujr
+varanuktagujr	vanuktagujr	vattugujr
+sharanuktagujr	shanuktagujr	vattugujr
+ssaranuktagujr	ssanuktagujr	vattugujr
+saranuktagujr	sanuktagujr	vattugujr
+haranuktagujr	hanuktagujr	vattugujr
+
+lookup end
+
+
+lookup	halfvattuforms-gujr	ligature
+
+karaprehalfgujr	kaprehalfgujr	vattugujr
+kharaprehalfgujr	khaprehalfgujr	vattugujr
+garaprehalfgujr	gaprehalfgujr	vattugujr
+gharaprehalfgujr	ghaprehalfgujr	vattugujr
+ngaraprehalfgujr	ngaprehalfgujr	vattugujr
+caraprehalfgujr	caprehalfgujr	vattugujr
+charaprehalfgujr	chaprehalfgujr	vattugujr
+jaraprehalfgujr	japrehalfgujr	vattugujr
+jharaprehalfgujr	jhaprehalfgujr	vattugujr
+nyaraprehalfgujr	nyaprehalfgujr	vattugujr
+ttaraprehalfgujr	ttaprehalfgujr	vattugujr
+ttharaprehalfgujr	tthaprehalfgujr	vattugujr
+ddaraprehalfgujr	ddaprehalfgujr	vattugujr
+ddharaprehalfgujr	ddhaprehalfgujr	vattugujr
+nnaraprehalfgujr	nnaprehalfgujr	vattugujr
+taraprehalfgujr	taprehalfgujr	vattugujr
+tharaprehalfgujr	thaprehalfgujr	vattugujr
+daraprehalfgujr	daprehalfgujr	vattugujr
+dharaprehalfgujr	dhaprehalfgujr	vattugujr
+naraprehalfgujr	naprehalfgujr	vattugujr
+paraprehalfgujr	paprehalfgujr	vattugujr
+pharaprehalfgujr	phaprehalfgujr	vattugujr
+baraprehalfgujr	baprehalfgujr	vattugujr
+bharaprehalfgujr	bhaprehalfgujr	vattugujr
+maraprehalfgujr	maprehalfgujr	vattugujr
+yaraprehalfgujr	yaprehalfgujr	vattugujr
+raraprehalfgujr	raprehalfgujr	vattugujr
+laraprehalfgujr	laprehalfgujr	vattugujr
+llaraprehalfgujr	llaprehalfgujr	vattugujr
+varaprehalfgujr	vaprehalfgujr	vattugujr
+sharaprehalfgujr	shaprehalfgujr	vattugujr
+ssaraprehalfgujr	ssaprehalfgujr	vattugujr
+saraprehalfgujr	saprehalfgujr	vattugujr
+haraprehalfgujr	haprehalfgujr	vattugujr
+zharaprehalfgujr	zhaprehalfgujr	vattugujr
+kassaraprehalfgujr	kassaprehalfgujr	vattugujr
+janyaraprehalfgujr	janyaprehalfgujr	vattugujr
+karanuktaprehalfgujr	kanuktaprehalfgujr	vattugujr
+kharanuktaprehalfgujr	khanuktaprehalfgujr	vattugujr
+garanuktaprehalfgujr	ganuktaprehalfgujr	vattugujr
+gharanuktaprehalfgujr	ghanuktaprehalfgujr	vattugujr
+ngaranuktaprehalfgujr	nganuktaprehalfgujr	vattugujr
+caranuktaprehalfgujr	canuktaprehalfgujr	vattugujr
+charanuktaprehalfgujr	chanuktaprehalfgujr	vattugujr
+jaranuktaprehalfgujr	januktaprehalfgujr	vattugujr
+jharanuktaprehalfgujr	jhanuktaprehalfgujr	vattugujr
+nyaranuktaprehalfgujr	nyanuktaprehalfgujr	vattugujr
+ttaranuktaprehalfgujr	ttanuktaprehalfgujr	vattugujr
+ttharanuktaprehalfgujr	tthanuktaprehalfgujr	vattugujr
+ddaranuktaprehalfgujr	ddanuktaprehalfgujr	vattugujr
+ddharanuktaprehalfgujr	ddhanuktaprehalfgujr	vattugujr
+nnaranuktaprehalfgujr	nnanuktaprehalfgujr	vattugujr
+taranuktaprehalfgujr	tanuktaprehalfgujr	vattugujr
+tharanuktaprehalfgujr	thanuktaprehalfgujr	vattugujr
+daranuktaprehalfgujr	danuktaprehalfgujr	vattugujr
+dharanuktaprehalfgujr	dhanuktaprehalfgujr	vattugujr
+naranuktaprehalfgujr	nanuktaprehalfgujr	vattugujr
+paranuktaprehalfgujr	panuktaprehalfgujr	vattugujr
+pharanuktaprehalfgujr	phanuktaprehalfgujr	vattugujr
+baranuktaprehalfgujr	banuktaprehalfgujr	vattugujr
+bharanuktaprehalfgujr	bhanuktaprehalfgujr	vattugujr
+maranuktaprehalfgujr	manuktaprehalfgujr	vattugujr
+yaranuktaprehalfgujr	yanuktaprehalfgujr	vattugujr
+raranuktaprehalfgujr	ranuktaprehalfgujr	vattugujr
+laranuktaprehalfgujr	lanuktaprehalfgujr	vattugujr
+llaranuktaprehalfgujr	llanuktaprehalfgujr	vattugujr
+varanuktaprehalfgujr	vanuktaprehalfgujr	vattugujr
+sharanuktaprehalfgujr	shanuktaprehalfgujr	vattugujr
+ssaranuktaprehalfgujr	ssanuktaprehalfgujr	vattugujr
+saranuktaprehalfgujr	sanuktaprehalfgujr	vattugujr
+haranuktaprehalfgujr	hanuktaprehalfgujr	vattugujr
+
+lookup end
+
+
+% new
+
+lookup	conjuncts-gjr2	ligature
+
+ngakagujr	ngagujr	viramagujr	kagujr
+ngagagujr	ngagujr	viramagujr	gagujr
+ngaghagujr	ngagujr	viramagujr	ghagujr
+ngamagujr	ngagujr	viramagujr	magujr
+ngayagujr	ngagujr	viramagujr	yagujr
+chayagujr	chagujr	viramagujr	yagujr
+chavagujr	chagujr	viramagujr	vagujr
+ttattagujr	ttagujr	viramagujr	ttagujr
+ttatthagujr	ttagujr	viramagujr	tthagujr
+ttayagujr	ttagujr	viramagujr	yagujr
+ttavagujr	ttagujr	viramagujr	vagujr
+tthatthagujr	tthagujr	viramagujr	tthagujr
+tthayagujr	tthagujr	viramagujr	yagujr
+ddaddagujr	ddagujr	viramagujr	ddagujr
+ddaddhagujr	ddagujr	viramagujr	ddhagujr
+ddayagujr	ddagujr	viramagujr	yagujr
+ddhaddhagujr	ddhagujr	viramagujr	ddhagujr
+ddhayagujr	ddhagujr	viramagujr	yagujr
+dagagujr	dagujr	viramagujr	gagujr
+daghagujr	dagujr	viramagujr	ghagujr
+dadagujr	dagujr	viramagujr	dagujr
+dadhagujr	dagujr	viramagujr	dhagujr
+danagujr	dagujr	viramagujr	nagujr
+dabagujr	dagujr	viramagujr	bagujr
+dabhagujr	dagujr	viramagujr	bhagujr
+damagujr	dagujr	viramagujr	magujr
+dayagujr	dagujr	viramagujr	yagujr
+davagujr	dagujr	viramagujr	vagujr
+
+lookup end
+
+
+lookup	fullconjuncts-gujr	ligature
+
+kakagujr	kaprehalfgujr	kagujr
+kayagujr	kaprehalfgujr	yagujr
+ganagujr	gaprehalfgujr	nagujr
+ngakagujr	ngaprehalfgujr	kagujr
+ngagagujr	ngaprehalfgujr	gagujr
+ngaghagujr	ngaprehalfgujr	ghagujr
+ngamagujr	ngaprehalfgujr	magujr
+ngayagujr	ngaprehalfgujr	yagujr
+chayagujr	chaprehalfgujr	yagujr
+chavagujr	chaprehalfgujr	vagujr
+nyacagujr	nyaprehalfgujr	cagujr
+nyajagujr	nyaprehalfgujr	jagujr
+ttattagujr	ttaprehalfgujr	ttagujr
+ttatthagujr	ttaprehalfgujr	tthagujr
+ttayagujr	ttaprehalfgujr	yagujr
+ttavagujr	ttaprehalfgujr	vagujr
+tthatthagujr	tthaprehalfgujr	tthagujr
+tthayagujr	tthaprehalfgujr	yagujr
+ddaddagujr	ddaprehalfgujr	ddagujr
+ddaddhagujr	ddaprehalfgujr	ddhagujr
+ddayagujr	ddaprehalfgujr	yagujr
+ddhaddhagujr	ddhaprehalfgujr	ddhagujr
+ddhayagujr	ddhaprehalfgujr	yagujr
+tatagujr	taprehalfgujr	tagujr
+dagagujr	daprehalfgujr	gagujr
+daghagujr	daprehalfgujr	ghagujr
+dadagujr	daprehalfgujr	dagujr
+dadhagujr	daprehalfgujr	dhagujr
+danagujr	daprehalfgujr	nagujr
+dabagujr	daprehalfgujr	bagujr
+dabhagujr	daprehalfgujr	bhagujr
+damagujr	daprehalfgujr	magujr
+dayagujr	daprehalfgujr	yagujr
+davagujr	daprehalfgujr	vagujr
+nanagujr	naprehalfgujr	nagujr
+phayagujr	phaprehalfgujr	yagujr
+llayagujr	llaprehalfgujr	yagujr
+shacagujr	shaprehalfgujr	cagujr
+shanagujr	shaprehalfgujr	nagujr
+shalagujr	shaprehalfgujr	lagujr
+shavagujr	shaprehalfgujr	vagujr
+ssattagujr	ssaprehalfgujr	ttagujr
+ssattaragujr	ssaprehalfgujr	ttaragujr
+ssatthagujr	ssaprehalfgujr	tthagujr
+ssattharagujr	ssaprehalfgujr	ttharagujr
+sataragujr	saprehalfgujr	taragujr
+hannagujr	haprehalfgujr	nnagujr
+hanagujr	haprehalfgujr	nagujr
+hamagujr	haprehalfgujr	magujr
+hayagujr	haprehalfgujr	yagujr
+halagujr	haprehalfgujr	lagujr
+havagujr	haprehalfgujr	vagujr
+% new 2019
+khayagujr	khaprehalfgujr	yagujr
+jayagujr	japrehalfgujr	yagujr
+badagujr	baprehalfgujr	dagujr
+vayagujr	vaprehalfgujr	yagujr
+sathagujr	saprehalfgujr	thagujr
+
+lookup end
+
+
+lookup	halfconjuncts-gujr	ligature
+
+tatapreformgujr	taprehalfgujr	taprehalfgujr
+sathapreformgujr	saprehalfgujr	thaprehalfgujr
+
+lookup end
+
+
+% 2019
+
+lookup	swapshahalf-gujr	chained
+
+backtrackclass definition begin
+# 1	1
+class definition end
+
+class definition begin
+shaprehalfgujr	1
+paprehalfgujr	2
+maprehalfgujr	2
+naprehalfgujr	3
+saprehalfgujr	3
+class definition end
+
+lookaheadclass definition begin
+caragujr	1
+naragujr	1
+laragujr	1
+varagujr	1
+caprehalfgujr	1
+naprehalfgujr	1
+laprehalfgujr	1
+vaprehalfgujr	1
+pagujr	2
+paprehalfgujr	2
+paragujr	2
+ttagujr	3
+ttaprehalfgujr	3
+ttaragujr	3
+ttayagujr	3
+ttavagujr	3
+class definition end
+
+class-chain		1	1	1,swapsha-gujr
+class-chain		2	2	1,swapsha-gujr
+class-chain		3	3	1,swapsha-gujr
+
+lookup end
+
+
+
+lookup	swapsha-gujr	single
+
+naprehalfgujr	napreformaltgujr
+paprehalfgujr	papreformaltgujr
+maprehalfgujr	mapreformaltgujr
+shaprehalfgujr	shapreformaltgujr
+saprehalfgujr	sapreformaltgujr
+
+lookup end
+
+% 2020
+
+lookup	rephbasevowel-gujr	context
+
+markattachmenttype	1
+
+class definition begin
+ecandragujr	1
+egujr	1
+aigujr	1
+ocandragujr	1
+ogujr	1
+augujr	1
+rephgujr	2
+uni0AFD	2
+class definition end
+
+class	1,2	1,splitvowel-gujr
+
+lookup end
+
+
+lookup	splitvowel-gujr	multiple
+
+ecandragujr	agujr	ecandravowelsigngujr
+egujr	agujr	evowelsigngujr
+aigujr	agujr	aivowelsigngujr
+ocandragujr	agujr	ocandravowelsigngujr
+ogujr	agujr	ovowelsigngujr
+augujr	agujr	auvowelsigngujr
+
+lookup end
+
+
+
+lookup	reph-anusvara-gujr	ligature
+
+markattachmenttype	1
+
+rephanusvaragujr	rephgujr	anusvaragujr
+rephanusvaragujr	rephgujr	candrabindugujr
+
+lookup end
+
+
+lookup	maatra-ligs-gujr	ligature
+
+markattachmenttype	1
+
+aianusvaragujr	aigujr	anusvaragujr
+aianusvaragujr	aigujr	candrabindugujr
+aivowelsignanusvaragujr	aivowelsigngujr	anusvaragujr
+aivowelsignanusvaragujr	aivowelsigngujr	candrabindugujr
+aivowelsignrephanusvaragujr	aivowelsigngujr	rephanusvaragujr
+aivowelsignrephgujr	aivowelsigngujr	rephgujr
+auanusvaragujr	augujr	anusvaragujr
+auanusvaragujr	augujr	candrabindugujr
+auvowelsignanusvaragujr	auvowelsigngujr	anusvaragujr
+auvowelsignanusvaragujr	auvowelsigngujr	candrabindugujr
+auvowelsignrephanusvaragujr	auvowelsigngujr	rephanusvaragujr
+auvowelsignrephgujr	auvowelsigngujr	rephgujr
+eanusvaragujr	egujr	anusvaragujr
+eanusvaragujr	egujr	candrabindugujr
+ecandraanusvaragujr	ecandragujr	anusvaragujr
+ecandraanusvaragujr	ecandragujr	candrabindugujr
+ecandravowelsignanusvaragujr	ecandravowelsigngujr	anusvaragujr
+ecandravowelsignanusvaragujr	ecandravowelsigngujr	candrabindugujr
+ecandravowelrephanusvaragujr	ecandravowelsigngujr	rephanusvaragujr
+ecandravowelsignrephgujr	ecandravowelsigngujr	rephgujr
+evowelsignanusvaragujr	evowelsigngujr	anusvaragujr
+evowelsignanusvaragujr	evowelsigngujr	candrabindugujr
+evowelsignrephanusvaragujr	evowelsigngujr	rephanusvaragujr
+evowelsignrephgujr	evowelsigngujr	rephgujr
+ianusvaragujr	igujr	anusvaragujr
+ianusvaragujr	igujr	candrabindugujr
+iianusvaragujr	iigujr	anusvaragujr
+iianusvaragujr	iigujr	candrabindugujr
+oanusvaragujr	ogujr	anusvaragujr
+oanusvaragujr	ogujr	candrabindugujr
+ocandraanusvaragujr	ocandragujr	anusvaragujr
+ocandraanusvaragujr	ocandragujr	candrabindugujr
+ocandravowelsignanusvaragujr	ocandravowelsigngujr	anusvaragujr
+ocandravowelsignanusvaragujr	ocandravowelsigngujr	candrabindugujr
+ocandravowelrephanusvaragujr	ocandravowelsigngujr	rephanusvaragujr
+ocandravowelsignrephgujr	ocandravowelsigngujr	rephgujr
+ovowelsignanusvaragujr	ovowelsigngujr	anusvaragujr
+ovowelsignanusvaragujr	ovowelsigngujr	candrabindugujr
+ovowelsignrephanusvaragujr	ovowelsigngujr	rephanusvaragujr
+ovowelsignrephgujr	ovowelsigngujr	rephgujr
+uanusvaragujr	ugujr	anusvaragujr
+uanusvaragujr	ugujr	candrabindugujr
+uuanusvaragujr	uugujr	anusvaragujr
+uuanusvaragujr	uugujr	candrabindugujr
+% Mac reph order fix
+ocandravowelrephanusvaragujr	rephgujr	ocandravowelsigngujr	anusvaragujr
+ocandravowelsignrephgujr	rephgujr	ocandravowelsigngujr
+ovowelsignrephanusvaragujr	rephgujr	ovowelsigngujr	anusvaragujr
+ovowelsignrephgujr	rephgujr	ovowelsigngujr
+auvowelsignrephanusvaragujr	rephgujr	auvowelsigngujr	anusvaragujr
+auvowelsignrephgujr	rephgujr	auvowelsigngujr
+% 2020
+uni0AFB_uni0AFA	uni0AFB	uni0AFA
+uni0AFD_uni0AFA	uni0AFD	uni0AFA
+uni0AFE_uni0AFA	uni0AFE	uni0AFA
+uni0AFF_uni0AFA	uni0AFF	uni0AFA
+uni0AFD_uni0AFB	uni0AFD	uni0AFB
+uni0AFE_uni0AFB	uni0AFE	uni0AFB
+uni0AFF_uni0AFB	uni0AFF	uni0AFB
+uni0AFA_rephgujr	rephgujr	uni0AFA
+uni0AFD_evowelgujr	evowelsigngujr	uni0AFD
+uni0AFD_aivowelgujr	aivowelsigngujr	uni0AFD
+uni0AFD_ovowelgujr	ovowelsigngujr	uni0AFD
+uni0AFD_auvowelgujr	auvowelsigngujr	uni0AFD
+uni0AFD_evowelgujr	uni0AFD	evowelsigngujr
+uni0AFD_aivowelgujr	uni0AFD	aivowelsigngujr
+uni0AFD_ovowelgujr	uni0AFD	ovowelsigngujr
+uni0AFD_auvowelgujr	uni0AFD	auvowelsigngujr
+uni0AFD_uni0AFC	uni0AFD	uni0AFC
+uni0AFE_evowelgujr	uni0AFE	evowelsigngujr
+uni0AFE_aivowelgujr	uni0AFE	aivowelsigngujr
+uni0AFF_evowelgujr	uni0AFF	evowelsigngujr
+uni0AFF_aivowelgujr	uni0AFF	aivowelsigngujr
+uni0AFD_rephgujr	uni0AFD	rephgujr
+uni0AFE_rephgujr	uni0AFE	rephgujr
+uni0AFF_rephgujr	uni0AFF	rephgujr
+uni0AFD_evowelgujr_rephgujr	uni0AFD	evowelsigngujr	rephgujr
+uni0AFD_aivowelgujr_rephgujr	uni0AFD	aivowelsigngujr	rephgujr
+uni0AFE_evowelgujr_rephgujr	uni0AFE	evowelsigngujr	rephgujr
+uni0AFE_aivowelgujr_rephgujr	uni0AFE	aivowelsigngujr	rephgujr
+uni0AFF_evowelgujr_rephgujr	uni0AFF	evowelsigngujr	rephgujr
+uni0AFF_aivowelgujr_rephgujr	uni0AFF	aivowelsigngujr	rephgujr
+uni0AFD_ovowelgujr_rephgujr	uni0AFD	ovowelsigngujr	rephgujr
+uni0AFD_auvowelgujr_rephgujr	uni0AFD	auvowelsigngujr	rephgujr
+
+
+lookup end
+
+
+lookup	ivowelcontext-gujr	context
+
+class definition begin
+ivowelsigngujr	1
+cagujr	2
+canuktagujr	2
+caragujr	2
+caranuktagujr	2
+tatagujr	2
+gagujr	2
+ganuktagujr	2
+garagujr	2
+garanuktagujr	2
+llagujr	2
+llanuktagujr	2
+llaragujr	2
+llaranuktagujr	2
+chavagujr	2
+chagujr	2
+chanuktagujr	2
+charagujr	2
+charanuktagujr	2
+nyagujr	2
+nyanuktagujr	2
+nyaragujr	2
+nyaranuktagujr	2
+shagujr	2
+shanuktagujr	2
+ganagujr	2
+damagujr	2
+janyagujr	2
+ssattagujr	2
+ssattaragujr	2
+sagujr	2
+sanuktagujr	2
+sharagujr	2
+sharanuktagujr	2
+shanagujr	2
+daghagujr	2
+janyaragujr	2
+dadhagujr	2
+kassagujr	2
+saragujr	2
+saranuktagujr	2
+bagujr	2
+banuktagujr	2
+baragujr	2
+baranuktagujr	2
+khagujr	2
+khanuktagujr	2
+kharagujr	2
+kharanuktagujr	2
+kassaragujr	2
+ssatthagujr	2
+ssattharagujr	2
+nyacagujr	2
+nyajagujr	2
+bhagujr	2
+bhanuktagujr	2
+bharagujr	2
+bharanuktagujr	2
+hamagujr	2
+hayagujr	2
+kakagujr	2
+nnagujr	2
+nnanuktagujr	2
+nnaragujr	2
+nnaranuktagujr	2
+jagujr	2
+januktagujr	2
+shacagujr	2
+shavagujr	2
+jaragujr	2
+jaranuktagujr	2
+zhagujr	2
+zharagujr	2
+napreformaltgujr	2
+papreformaltgujr	2
+mapreformaltgujr	2
+sapreformaltgujr	2
+badagujr	2
+ragujr	3
+ranuktagujr	3
+raragujr	3
+raranuktagujr	3
+dagujr	3
+danuktagujr	3
+dadagujr	3
+ttagujr	3
+ttanuktagujr	3
+ttaragujr	3
+ttaranuktagujr	3
+ttattagujr	3
+ttatthagujr	3
+ddhaddhagujr	3
+ddhagujr	3
+ddhanuktagujr	3
+ddharagujr	3
+ddharanuktagujr	3
+kagujr	3
+phagujr	3
+kanuktagujr	3
+phanuktagujr	3
+ddaddhagujr	3
+ngagujr	3
+ddagujr	3
+nganuktagujr	3
+ngaragujr	3
+ddaragujr	3
+ngaranuktagujr	3
+ddaranuktagujr	3
+ngakagujr	3
+ngagagujr	3
+ngaghagujr	3
+ngamagujr	3
+ddaddagujr	3
+tthatthagujr	3
+ddanuktagujr	3
+karagujr	3
+pharagujr	3
+karanuktagujr	3
+pharanuktagujr	3
+tthagujr	3
+tthanuktagujr	3
+ttharagujr	3
+ttharanuktagujr	3
+daragujr	3
+daranuktagujr	3
+dagagujr	3
+danagujr	3
+haragujr	3
+haranuktagujr	3
+hannagujr	3
+hanagujr	3
+halagujr	3
+havagujr	3
+pagujr	3
+panuktagujr	3
+paragujr	3
+paranuktagujr	3
+nagujr	3
+nanuktagujr	3
+naragujr	3
+naranuktagujr	3
+ssagujr	3
+ssanuktagujr	3
+ssaragujr	3
+ssaranuktagujr	3
+dabhagujr	3
+vagujr	3
+vanuktagujr	3
+varagujr	3
+varanuktagujr	3
+tagujr	3
+tanuktagujr	3
+magujr	3
+manuktagujr	3
+maragujr	3
+maranuktagujr	3
+taragujr	3
+taranuktagujr	3
+hagujr	3
+hanuktagujr	3
+yagujr	3
+yanuktagujr	3
+yaragujr	3
+yaranuktagujr	3
+dhagujr	3
+dhanuktagujr	3
+dharagujr	3
+dharanuktagujr	3
+nanagujr	3
+ghagujr	3
+ghanuktagujr	3
+gharagujr	3
+gharanuktagujr	3
+dayagujr	3
+davagujr	3
+thagujr	3
+thanuktagujr	3
+tharagujr	3
+tharanuktagujr	3
+jhagujr	3
+jhanuktagujr	3
+jharagujr	3
+jharanuktagujr	3
+dabagujr	3
+lagujr	3
+lanuktagujr	3
+laragujr	3
+laranuktagujr	3
+taprehalfgujr	4
+tanuktaprehalfgujr	4
+naprehalfgujr	5
+nanuktaprehalfgujr	5
+naraprehalfgujr	5
+naranuktaprehalfgujr	5
+taraprehalfgujr	6
+taranuktaprehalfgujr	6
+paprehalfgujr	7
+panuktaprehalfgujr	7
+paraprehalfgujr	7
+paranuktaprehalfgujr	7
+maprehalfgujr	8
+manuktaprehalfgujr	8
+maraprehalfgujr	8
+maranuktaprehalfgujr	8
+vaprehalfgujr	9
+vanuktaprehalfgujr	9
+varaprehalfgujr	9
+varanuktaprehalfgujr	9
+dhaprehalfgujr	10
+dhanuktaprehalfgujr	10
+dharaprehalfgujr	10
+dharanuktaprehalfgujr	10
+ssaprehalfgujr	11
+ssanuktaprehalfgujr	11
+ssaraprehalfgujr	11
+ssaranuktaprehalfgujr	11
+ghaprehalfgujr	12
+ghanuktaprehalfgujr	12
+gharaprehalfgujr	12
+gharanuktaprehalfgujr	12
+yaprehalfgujr	13
+yanuktaprehalfgujr	13
+yaraprehalfgujr	13
+yaranuktaprehalfgujr	13
+gaprehalfgujr	14
+ganuktaprehalfgujr	14
+shapreformaltgujr	15
+shaprehalfgujr	16
+shanuktaprehalfgujr	16
+thaprehalfgujr	17
+thanuktaprehalfgujr	17
+tharaprehalfgujr	17
+tharanuktaprehalfgujr	17
+%x raraprehalfUIgujr	18
+%x raranuktaprehalfUIgujr	18
+tatapreformgujr	19
+garaprehalfgujr	20
+garanuktaprehalfgujr	20
+raprehalfgujr	21
+ranuktaprehalfgujr	21
+raraprehalfgujr	21
+raranuktaprehalfgujr	21
+caprehalfgujr	22
+canuktaprehalfgujr	22
+caraprehalfgujr	22
+caranuktaprehalfgujr	22
+%x ttaraprehalfUIgujr	23
+%x ttaranuktaprehalfUIgujr	23
+laprehalfgujr	24
+lanuktaprehalfgujr	24
+laraprehalfgujr	24
+laranuktaprehalfgujr	24
+ttaprehalfgujr	25
+ttanuktaprehalfgujr	25
+ttaraprehalfgujr	25
+ttaranuktaprehalfgujr	25
+haprehalfgujr	26
+hanuktaprehalfgujr	26
+daprehalfgujr	27
+danuktaprehalfgujr	27
+%x ddaraprehalfUIgujr	28
+%x ddaranuktaprehalfUIgujr	28
+nyaprehalfgujr	29
+nyanuktaprehalfgujr	29
+nyaraprehalfgujr	29
+nyaranuktaprehalfgujr	29
+ddaprehalfgujr	30
+ddanuktaprehalfgujr	30
+ddaraprehalfgujr	30
+ddaranuktaprehalfgujr	30
+%x ddharaprehalfUIgujr	31
+%x ddharanuktaprehalfUIgujr	31
+sharaprehalfgujr	32
+sharanuktaprehalfgujr	32
+%x ttharaprehalfUIgujr	33
+%x ttharanuktaprehalfUIgujr	33
+daraprehalfgujr	34
+%x daraprehalfUIgujr	34
+daranuktaprehalfgujr	34
+kassaprehalfgujr	35
+janyaprehalfgujr	36
+kaprehalfgujr	37
+kanuktaprehalfgujr	37
+phaprehalfgujr	38
+phanuktaprehalfgujr	38
+saprehalfgujr	39
+sanuktaprehalfgujr	39
+ngaprehalfgujr	40
+nganuktaprehalfgujr	40
+ngaraprehalfgujr	40
+ngaranuktaprehalfgujr	40
+ddhaprehalfgujr	41
+ddhanuktaprehalfgujr	41
+ddharaprehalfgujr	41
+ddharanuktaprehalfgujr	41
+tthaprehalfgujr	42
+tthanuktaprehalfgujr	42
+ttharaprehalfgujr	42
+ttharanuktaprehalfgujr	42
+janyaraprehalfgujr	43
+llaprehalfgujr	44
+llanuktaprehalfgujr	44
+llaraprehalfgujr	45
+llaranuktaprehalfgujr	45
+%x ngaraprehalfUIgujr	46
+%x ngaranuktaprehalfUIgujr	46
+karaprehalfgujr	47
+karanuktaprehalfgujr	47
+pharaprehalfgujr	48
+pharanuktaprehalfgujr	48
+saraprehalfgujr	49
+saranuktaprehalfgujr	49
+baprehalfgujr	50
+banuktaprehalfgujr	50
+baraprehalfgujr	50
+baranuktaprehalfgujr	50
+kassaraprehalfgujr	51
+khaprehalfgujr	52
+khanuktaprehalfgujr	52
+kharaprehalfgujr	52
+kharanuktaprehalfgujr	52
+bhaprehalfgujr	53
+bhanuktaprehalfgujr	53
+bharaprehalfgujr	53
+bharanuktaprehalfgujr	53
+nnaprehalfgujr	53
+nnanuktaprehalfgujr	53
+u 200D	54
+% 2020
+uni0AFB	55
+uni0AFC	55
+uni0AFD	55
+uni0AFE	55
+uni0AFF	55
+class definition end
+
+class	1,2,55	1,ivowel01-gujr
+class	1,2	1,ivowelcontextbase-gujr
+class	1,3,55	1,ivowel01-gujr
+class	1,3	1,ivowelcontextbase-gujr
+class	1,4,3	1,ivowelhalf4-gujr
+class	1,4,54,3	1,ivowelhalf4-gujr
+class	1,5,3	1,ivowelhalf5-gujr
+class	1,5,54,3	1,ivowelhalf5-gujr
+class	1,6,3	1,ivowelhalf6-gujr
+class	1,6,54,3	1,ivowelhalf6-gujr
+class	1,7,3	1,ivowelhalf7-gujr
+class	1,7,54,3	1,ivowelhalf7-gujr
+class	1,8,3	1,ivowelhalf8-gujr
+class	1,8,54,3	1,ivowelhalf8-gujr
+class	1,9,3	1,ivowelhalf9-gujr
+class	1,9,54,3	1,ivowelhalf9-gujr
+class	1,10,3	1,ivowelhalf10-gujr
+class	1,10,54,3	1,ivowelhalf10-gujr
+class	1,11,3	1,ivowelhalf11-gujr
+class	1,11,54,3	1,ivowelhalf11-gujr
+class	1,12,3	1,ivowelhalf12-gujr
+class	1,12,54,3	1,ivowelhalf12-gujr
+class	1,13,3	1,ivowelhalf13-gujr
+class	1,13,54,3	1,ivowelhalf13-gujr
+class	1,14,3	1,ivowelhalf14-gujr
+class	1,14,54,3	1,ivowelhalf14-gujr
+class	1,15,3	1,ivowelhalf15-gujr
+class	1,15,54,3	1,ivowelhalf15-gujr
+class	1,16,3	1,ivowelhalf16-gujr
+class	1,16,54,3	1,ivowelhalf16-gujr
+class	1,17,3	1,ivowelhalf17-gujr
+class	1,17,54,3	1,ivowelhalf17-gujr
+% class	1,18,3	1,ivowelhalf18-gujr
+% class	1,18,54,3	1,ivowelhalf18-gujr
+class	1,19,3	1,ivowelhalf19-gujr
+class	1,19,54,3	1,ivowelhalf19-gujr
+class	1,20,3	1,ivowelhalf20-gujr
+class	1,20,54,3	1,ivowelhalf20-gujr
+class	1,21,3	1,ivowelhalf21-gujr
+class	1,21,54,3	1,ivowelhalf21-gujr
+class	1,22,3	1,ivowelhalf22-gujr
+class	1,22,54,3	1,ivowelhalf22-gujr
+% class	1,23,3	1,ivowelhalf23-gujr
+% class	1,23,54,3	1,ivowelhalf23-gujr
+class	1,24,3	1,ivowelhalf24-gujr
+class	1,24,54,3	1,ivowelhalf24-gujr
+class	1,25,3	1,ivowelhalf25-gujr
+class	1,25,54,3	1,ivowelhalf25-gujr
+class	1,26,3	1,ivowelhalf26-gujr
+class	1,26,54,3	1,ivowelhalf26-gujr
+class	1,27,3	1,ivowelhalf27-gujr
+class	1,27,54,3	1,ivowelhalf27-gujr
+% class	1,28,3	1,ivowelhalf28-gujr
+% class	1,28,54,3	1,ivowelhalf28-gujr
+class	1,29,3	1,ivowelhalf29-gujr
+class	1,29,54,3	1,ivowelhalf29-gujr
+class	1,30,3	1,ivowelhalf30-gujr
+class	1,30,54,3	1,ivowelhalf30-gujr
+% class	1,31,3	1,ivowelhalf31-gujr
+% class	1,31,54,3	1,ivowelhalf31-gujr
+class	1,32,3	1,ivowelhalf32-gujr
+class	1,32,54,3	1,ivowelhalf32-gujr
+% class	1,33,3	1,ivowelhalf33-gujr
+% class	1,33,54,3	1,ivowelhalf33-gujr
+class	1,34,3	1,ivowelhalf34-gujr
+class	1,34,54,3	1,ivowelhalf34-gujr
+class	1,35,3	1,ivowelhalf35-gujr
+class	1,35,54,3	1,ivowelhalf35-gujr
+class	1,36,3	1,ivowelhalf36-gujr
+class	1,36,54,3	1,ivowelhalf36-gujr
+class	1,37,3	1,ivowelhalf37-gujr
+class	1,37,54,3	1,ivowelhalf37-gujr
+class	1,38,3	1,ivowelhalf38-gujr
+class	1,38,54,3	1,ivowelhalf38-gujr
+class	1,39,3	1,ivowelhalf39-gujr
+class	1,39,54,3	1,ivowelhalf39-gujr
+class	1,40,3	1,ivowelhalf40-gujr
+class	1,40,54,3	1,ivowelhalf40-gujr
+class	1,41,3	1,ivowelhalf41-gujr
+class	1,41,54,3	1,ivowelhalf41-gujr
+class	1,42,3	1,ivowelhalf42-gujr
+class	1,42,54,3	1,ivowelhalf42-gujr
+class	1,43,3	1,ivowelhalf43-gujr
+class	1,43,54,3	1,ivowelhalf43-gujr
+class	1,44,3	1,ivowelhalf44-gujr
+class	1,44,54,3	1,ivowelhalf44-gujr
+class	1,45,3	1,ivowelhalf45-gujr
+class	1,45,54,3	1,ivowelhalf45-gujr
+% class	1,46,3	1,ivowelhalf46-gujr
+% class	1,46,54,3	1,ivowelhalf46-gujr
+class	1,47,3	1,ivowelhalf47-gujr
+class	1,47,54,3	1,ivowelhalf47-gujr
+class	1,48,3	1,ivowelhalf48-gujr
+class	1,48,54,3	1,ivowelhalf48-gujr
+class	1,49,3	1,ivowelhalf49-gujr
+class	1,49,54,3	1,ivowelhalf49-gujr
+class	1,50,3	1,ivowelhalf50-gujr
+class	1,50,54,3	1,ivowelhalf50-gujr
+class	1,51,3	1,ivowelhalf51-gujr
+class	1,51,54,3	1,ivowelhalf51-gujr
+class	1,52,3	1,ivowelhalf52-gujr
+class	1,52,54,3	1,ivowelhalf52-gujr
+class	1,53,3	1,ivowelhalf53-gujr
+class	1,53,54,3	1,ivowelhalf53-gujr
+
+lookup end
+
+
+
+lookup	ivowelhalf4-gujr	context
+
+class definition begin
+ivowelsigngujr	1
+taprehalfgujr	2
+tanuktaprehalfgujr	2
+ragujr	3
+ranuktagujr	3
+raragujr	3
+raranuktagujr	3
+dagujr	3
+danuktagujr	3
+dadagujr	3
+kagujr	4
+phagujr	4
+ttagujr	4
+ttanuktagujr	4
+ttaragujr	4
+ttaranuktagujr	4
+ttattagujr	4
+ttatthagujr	4
+ddhaddhagujr	4
+ddhagujr	4
+ddhanuktagujr	4
+ddharagujr	4
+ddharanuktagujr	4
+kanuktagujr	4
+phanuktagujr	4
+karagujr	4
+pharagujr	4
+ddaddagujr	4
+ddaddhagujr	4
+tthatthagujr	4
+ngagujr	4
+ddagujr	4
+nganuktagujr	4
+ddanuktagujr	4
+ngaragujr	4
+ddaragujr	4
+ngaranuktagujr	4
+ddaranuktagujr	4
+ngakagujr	4
+ngagagujr	4
+ngaghagujr	4
+ngamagujr	4
+karanuktagujr	4
+pharanuktagujr	4
+tthagujr	4
+tthanuktagujr	4
+ttharagujr	4
+ttharanuktagujr	4
+daragujr	4
+daranuktagujr	4
+dagagujr	4
+danagujr	4
+haragujr	4
+haranuktagujr	4
+halagujr	5
+havagujr	5
+hannagujr	5
+hanagujr	5
+dabhagujr	5
+hagujr	5
+hanuktagujr	5
+vagujr	5
+varagujr	5
+pagujr	6
+paragujr	6
+panuktagujr	6
+paranuktagujr	6
+nanuktagujr	6
+naranuktagujr	6
+ssagujr	6
+ssanuktagujr	6
+ssaragujr	6
+ssaranuktagujr	6
+davagujr	6
+vanuktagujr	6
+varanuktagujr	6
+magujr	6
+maragujr	6
+tagujr	6
+tanuktagujr	6
+dabagujr	6
+nagujr	6
+naragujr	6
+manuktagujr	6
+maranuktagujr	6
+taragujr	6
+taranuktagujr	6
+yagujr	6
+yaragujr	6
+yanuktagujr	6
+yaranuktagujr	6
+dhagujr	6
+dhanuktagujr	6
+dharagujr	6
+dharanuktagujr	6
+u 200D	7
+class definition end
+
+class	1,2,3	1,ivowel04-gujr
+class	1,2,4	1,ivowel05-gujr
+class	1,2,5	1,ivowel06-gujr
+class	1,2,6	1,ivowel07-gujr
+class	1,2,7,3	1,ivowel04-gujr
+class	1,2,7,4	1,ivowel05-gujr
+class	1,2,7,5	1,ivowel06-gujr
+class	1,2,7,6	1,ivowel07-gujr
+
+lookup end
+
+
+lookup	ivowelhalf5-gujr	context
+
+class definition begin
+ivowelsigngujr	1
+naprehalfgujr	2
+nanuktaprehalfgujr	2
+naraprehalfgujr	2
+naranuktaprehalfgujr	2
+ttagujr	3
+ttaragujr	3
+ddagujr	3
+ddaragujr	3
+ragujr	3
+ranuktagujr	3
+raragujr	3
+raranuktagujr	3
+dagujr	3
+danuktagujr	3
+dadagujr	3
+daragujr	4
+ttanuktagujr	4
+ttaranuktagujr	4
+ttattagujr	4
+ttatthagujr	4
+ddhaddhagujr	4
+kagujr	4
+phagujr	4
+ddhagujr	4
+ddhanuktagujr	4
+ddharagujr	4
+ddharanuktagujr	4
+kanuktagujr	4
+phanuktagujr	4
+karagujr	4
+pharagujr	4
+ddaddagujr	4
+ddaddhagujr	4
+tthatthagujr	4
+ngagujr	4
+nganuktagujr	4
+ddanuktagujr	4
+ngaragujr	4
+ngaranuktagujr	4
+ddaranuktagujr	4
+ngakagujr	4
+ngagagujr	4
+ngaghagujr	4
+ngamagujr	4
+karanuktagujr	4
+pharanuktagujr	4
+tthagujr	4
+tthanuktagujr	4
+ttharagujr	4
+ttharanuktagujr	4
+davagujr	4
+daranuktagujr	4
+dagagujr	4
+danagujr	4
+haragujr	4
+haranuktagujr	4
+halagujr	5
+havagujr	5
+hannagujr	5
+hanagujr	5
+hagujr	5
+dabhagujr	5
+hanuktagujr	5
+pagujr	6
+panuktagujr	6
+paragujr	6
+paranuktagujr	6
+nanuktagujr	6
+naranuktagujr	6
+ssagujr	6
+ssanuktagujr	6
+ssaragujr	6
+ssaranuktagujr	6
+magujr	6
+maragujr	6
+vagujr	6
+vanuktagujr	6
+varagujr	6
+varanuktagujr	6
+tagujr	6
+tanuktagujr	6
+dhagujr	6
+nagujr	6
+naragujr	6
+dabagujr	6
+manuktagujr	6
+maranuktagujr	6
+taragujr	6
+taranuktagujr	6
+yagujr	6
+yaragujr	6
+u 200D	7
+class definition end
+
+class	1,2,3	1,ivowel04-gujr
+class	1,2,4	1,ivowel05-gujr
+class	1,2,5	1,ivowel06-gujr
+class	1,2,6	1,ivowel07-gujr
+class	1,2,7,3	1,ivowel04-gujr
+class	1,2,7,4	1,ivowel05-gujr
+class	1,2,7,5	1,ivowel06-gujr
+class	1,2,7,6	1,ivowel07-gujr
+
+lookup end
+
+
+lookup	ivowelhalf6-gujr	context
+
+class definition begin
+ivowelsigngujr	1
+taraprehalfgujr	2
+taranuktaprehalfgujr	2
+ragujr	3
+ranuktagujr	3
+raragujr	3
+raranuktagujr	3
+dagujr	3
+danuktagujr	3
+dadagujr	3
+ttagujr	4
+ttanuktagujr	4
+ttaragujr	4
+ttaranuktagujr	4
+ttattagujr	4
+ttatthagujr	4
+ddhaddhagujr	4
+ddhagujr	4
+ddhanuktagujr	4
+ddharagujr	4
+ddharanuktagujr	4
+kagujr	4
+phagujr	4
+kanuktagujr	4
+phanuktagujr	4
+ddaddagujr	4
+ddaddhagujr	4
+tthatthagujr	4
+ngagujr	4
+ddagujr	4
+nganuktagujr	4
+ddanuktagujr	4
+ngaragujr	4
+ddaragujr	4
+ngaranuktagujr	4
+ddaranuktagujr	4
+ngakagujr	4
+ngagagujr	4
+ngaghagujr	4
+ngamagujr	4
+karagujr	4
+pharagujr	4
+karanuktagujr	4
+pharanuktagujr	4
+tthagujr	4
+tthanuktagujr	4
+ttharagujr	4
+ttharanuktagujr	4
+daragujr	4
+daranuktagujr	4
+dagagujr	4
+danagujr	4
+haragujr	4
+haranuktagujr	4
+halagujr	5
+havagujr	5
+hannagujr	5
+hanagujr	5
+dabhagujr	5
+hagujr	5
+hanuktagujr	5
+pagujr	6
+panuktagujr	6
+paragujr	6
+paranuktagujr	6
+nagujr	6
+nanuktagujr	6
+naragujr	6
+naranuktagujr	6
+ssagujr	6
+ssanuktagujr	6
+ssaragujr	6
+ssaranuktagujr	6
+davagujr	6
+vagujr	6
+vanuktagujr	6
+varagujr	6
+varanuktagujr	6
+tagujr	6
+tanuktagujr	6
+dabagujr	6
+magujr	6
+manuktagujr	6
+maragujr	6
+maranuktagujr	6
+taragujr	6
+taranuktagujr	6
+u 200D	7
+class definition end
+
+class	1,2,3	1,ivowel04-gujr
+class	1,2,4	1,ivowel05-gujr
+class	1,2,5	1,ivowel06-gujr
+class	1,2,6	1,ivowel07-gujr
+class	1,2,7,3	1,ivowel04-gujr
+class	1,2,7,4	1,ivowel05-gujr
+class	1,2,7,5	1,ivowel06-gujr
+class	1,2,7,6	1,ivowel07-gujr
+
+lookup end
+
+
+
+
+lookup	ivowelhalf7-gujr	context
+
+class definition begin
+ivowelsigngujr	1
+paprehalfgujr	2
+panuktaprehalfgujr	2
+paraprehalfgujr	2
+paranuktaprehalfgujr	2
+ragujr	3
+ranuktagujr	3
+raragujr	3
+raranuktagujr	3
+dagujr	4
+danuktagujr	4
+dadagujr	4
+ttagujr	4
+ttanuktagujr	4
+ttaragujr	4
+ttaranuktagujr	4
+ttattagujr	4
+ttatthagujr	4
+ddhaddhagujr	4
+ddhagujr	4
+ddhanuktagujr	4
+ddharagujr	4
+ddharanuktagujr	4
+kagujr	4
+phagujr	4
+kanuktagujr	4
+phanuktagujr	4
+ddaddagujr	4
+ddaddhagujr	4
+tthatthagujr	4
+ngagujr	4
+ddagujr	4
+nganuktagujr	4
+ddanuktagujr	4
+ngaragujr	4
+ddaragujr	4
+ngaranuktagujr	4
+ddaranuktagujr	4
+ngakagujr	4
+ngagagujr	4
+ngaghagujr	4
+ngamagujr	4
+karagujr	4
+pharagujr	4
+karanuktagujr	4
+pharanuktagujr	4
+tthagujr	4
+tthanuktagujr	4
+ttharagujr	4
+ttharanuktagujr	4
+daragujr	4
+daranuktagujr	4
+dagagujr	4
+danagujr	4
+haragujr	4
+haranuktagujr	4
+halagujr	5
+havagujr	5
+hannagujr	5
+hanagujr	5
+hagujr	5
+pagujr	5
+paragujr	5
+dabhagujr	5
+tagujr	5
+hanuktagujr	5
+yagujr	6
+yaragujr	6
+panuktagujr	6
+paranuktagujr	6
+nagujr	6
+nanuktagujr	6
+naragujr	6
+naranuktagujr	6
+ssagujr	6
+ssanuktagujr	6
+ssaragujr	6
+ssaranuktagujr	6
+davagujr	6
+vagujr	6
+vanuktagujr	6
+varagujr	6
+varanuktagujr	6
+tanuktagujr	6
+dabagujr	6
+magujr	6
+manuktagujr	6
+maragujr	6
+maranuktagujr	6
+taragujr	6
+taranuktagujr	6
+lagujr	6
+laragujr	6
+u 200D	7
+class definition end
+
+class	1,2,3	1,ivowel04-gujr
+class	1,2,4	1,ivowel05-gujr
+class	1,2,5	1,ivowel06-gujr
+class	1,2,6	1,ivowel07-gujr
+class	1,2,7,3	1,ivowel04-gujr
+class	1,2,7,4	1,ivowel05-gujr
+class	1,2,7,5	1,ivowel06-gujr
+class	1,2,7,6	1,ivowel07-gujr
+
+lookup end
+
+
+
+lookup	ivowelhalf8-gujr	context
+
+class definition begin
+ivowelsigngujr	1
+maprehalfgujr	2
+manuktaprehalfgujr	2
+maraprehalfgujr	2
+maranuktaprehalfgujr	2
+ragujr	3
+ranuktagujr	3
+raragujr	3
+raranuktagujr	3
+dagujr	3
+danuktagujr	3
+dadagujr	3
+ttagujr	3
+ttanuktagujr	3
+ttaragujr	3
+ttaranuktagujr	3
+ttattagujr	3
+ttatthagujr	3
+phagujr	3
+ddhaddhagujr	3
+ddhagujr	3
+ddhanuktagujr	3
+ddharagujr	3
+ddharanuktagujr	3
+kagujr	3
+kanuktagujr	3
+phanuktagujr	3
+pharagujr	3
+ddaddagujr	3
+ddaddhagujr	3
+tthatthagujr	3
+ngagujr	3
+ddagujr	3
+nganuktagujr	3
+ddanuktagujr	3
+ngaragujr	3
+ddaragujr	3
+ngaranuktagujr	3
+ddaranuktagujr	3
+ngakagujr	3
+ngagagujr	3
+ngaghagujr	3
+ngamagujr	3
+karagujr	3
+karanuktagujr	3
+pharanuktagujr	3
+tthagujr	3
+tthanuktagujr	3
+ttharagujr	3
+ttharanuktagujr	3
+daragujr	3
+daranuktagujr	3
+dagagujr	3
+danagujr	3
+haragujr	3
+haranuktagujr	3
+halagujr	4
+havagujr	4
+hannagujr	4
+hanagujr	4
+hagujr	4
+dabhagujr	4
+magujr	4
+maragujr	4
+pagujr	4
+paragujr	4
+hanuktagujr	5
+yagujr	5
+yaragujr	5
+panuktagujr	5
+paranuktagujr	5
+nagujr	5
+nanuktagujr	5
+naragujr	5
+naranuktagujr	5
+ssagujr	5
+ssanuktagujr	5
+ssaragujr	5
+ssaranuktagujr	5
+davagujr	5
+vagujr	5
+vanuktagujr	5
+varagujr	5
+varanuktagujr	5
+tagujr	5
+tanuktagujr	5
+dabagujr	5
+manuktagujr	5
+maranuktagujr	5
+u 200D	6
+class definition end
+
+class	1,2,3	1,ivowel05-gujr
+class	1,2,4	1,ivowel06-gujr
+class	1,2,5	1,ivowel07-gujr
+class	1,2,6,3	1,ivowel05-gujr
+class	1,2,6,4	1,ivowel06-gujr
+class	1,2,6,5	1,ivowel07-gujr
+
+lookup end
+
+
+
+lookup	ivowelhalf9-gujr	context
+
+class definition begin
+ivowelsigngujr	1
+vaprehalfgujr	2
+vanuktaprehalfgujr	2
+varaprehalfgujr	2
+varanuktaprehalfgujr	2
+ragujr	3
+ranuktagujr	3
+raragujr	3
+raranuktagujr	3
+dagujr	3
+danuktagujr	3
+dadagujr	3
+ddagujr	3
+ddaragujr	3
+ttagujr	3
+ttanuktagujr	3
+ttaragujr	3
+ttaranuktagujr	3
+ttattagujr	3
+ttatthagujr	3
+ddhaddhagujr	3
+ddhagujr	3
+ddhanuktagujr	3
+ddharagujr	3
+ddharanuktagujr	3
+kagujr	3
+phagujr	3
+kanuktagujr	3
+phanuktagujr	3
+ddaddagujr	3
+ddaddhagujr	3
+tthatthagujr	3
+ngagujr	3
+nganuktagujr	3
+ddanuktagujr	3
+ngaragujr	3
+ngaranuktagujr	3
+ddaranuktagujr	3
+ngakagujr	3
+ngagagujr	3
+ngaghagujr	3
+ngamagujr	3
+karagujr	3
+pharagujr	3
+karanuktagujr	3
+pharanuktagujr	3
+tthagujr	4
+tthanuktagujr	4
+ttharagujr	4
+ttharanuktagujr	4
+daragujr	4
+daranuktagujr	4
+dagagujr	4
+danagujr	4
+haragujr	4
+haranuktagujr	4
+halagujr	4
+havagujr	4
+hannagujr	4
+hanagujr	4
+hagujr	4
+vagujr	5
+varagujr	5
+dabhagujr	5
+hanuktagujr	5
+yagujr	5
+yaragujr	5
+pagujr	5
+panuktagujr	5
+paragujr	5
+paranuktagujr	5
+u 200D	6
+class definition end
+
+class	1,2,3	1,ivowel05-gujr
+class	1,2,4	1,ivowel06-gujr
+class	1,2,5	1,ivowel07-gujr
+class	1,2,6,3	1,ivowel05-gujr
+class	1,2,6,4	1,ivowel06-gujr
+class	1,2,6,5	1,ivowel07-gujr
+
+lookup end
+
+
+
+lookup	ivowelhalf10-gujr	context
+
+class definition begin
+ivowelsigngujr	1
+dhaprehalfgujr	2
+dhanuktaprehalfgujr	2
+dharaprehalfgujr	2
+dharanuktaprehalfgujr	2
+ragujr	3
+ranuktagujr	3
+raragujr	3
+raranuktagujr	3
+dagujr	3
+danuktagujr	3
+dadagujr	3
+ttagujr	3
+ttanuktagujr	3
+ttaragujr	3
+ttaranuktagujr	3
+ttattagujr	3
+ttatthagujr	3
+ddhaddhagujr	3
+ddhagujr	3
+ddhanuktagujr	3
+ddharagujr	3
+ddharanuktagujr	3
+kagujr	3
+phagujr	3
+kanuktagujr	3
+phanuktagujr	3
+ddaddagujr	3
+ddaddhagujr	3
+tthatthagujr	3
+ngagujr	3
+ddagujr	3
+nganuktagujr	3
+ddanuktagujr	3
+ngaragujr	3
+ddaragujr	3
+ngaranuktagujr	3
+ddaranuktagujr	3
+ngakagujr	3
+ngagagujr	3
+ngaghagujr	3
+ngamagujr	3
+karagujr	3
+pharagujr	3
+karanuktagujr	3
+pharanuktagujr	3
+tthagujr	4
+tthanuktagujr	4
+ttharagujr	4
+ttharanuktagujr	4
+daragujr	4
+daranuktagujr	4
+dagagujr	4
+danagujr	4
+haragujr	4
+haranuktagujr	4
+halagujr	4
+havagujr	4
+hannagujr	4
+hanagujr	4
+dabhagujr	5
+vagujr	5
+varagujr	5
+dhagujr	5
+magujr	5
+maragujr	5
+hagujr	5
+hanuktagujr	5
+nagujr	5
+naragujr	5
+yagujr	5
+yaragujr	5
+u 200D	6
+class definition end
+
+class	1,2,3	1,ivowel05-gujr
+class	1,2,4	1,ivowel06-gujr
+class	1,2,5	1,ivowel07-gujr
+class	1,2,6,3	1,ivowel05-gujr
+class	1,2,6,4	1,ivowel06-gujr
+class	1,2,6,5	1,ivowel07-gujr
+
+lookup end
+
+
+
+lookup	ivowelhalf11-gujr	context
+
+class definition begin
+ivowelsigngujr	1
+ssaprehalfgujr	2
+ssanuktaprehalfgujr	2
+ssaraprehalfgujr	2
+ssaranuktaprehalfgujr	2
+ttagujr	7
+ttaragujr	7
+tthagujr	3
+ttharagujr	3
+ragujr	3
+ranuktagujr	3
+raragujr	3
+raranuktagujr	3
+dagujr	3
+danuktagujr	3
+dadagujr	3
+ttanuktagujr	3
+ttaranuktagujr	3
+ttattagujr	3
+ttatthagujr	3
+ddhaddhagujr	3
+ddhagujr	3
+ddhanuktagujr	3
+ddharagujr	3
+ddharanuktagujr	3
+kagujr	3
+phagujr	3
+kanuktagujr	3
+phanuktagujr	3
+ddaddagujr	3
+ddaddhagujr	3
+tthatthagujr	3
+ngagujr	3
+ddagujr	3
+nganuktagujr	3
+ddanuktagujr	3
+ngaragujr	3
+ddaragujr	3
+ngaranuktagujr	3
+ddaranuktagujr	3
+ngakagujr	3
+ngagagujr	3
+ngaghagujr	3
+ngamagujr	3
+karagujr	4
+pharagujr	4
+karanuktagujr	4
+pharanuktagujr	4
+tthanuktagujr	4
+ttharanuktagujr	4
+daragujr	4
+daranuktagujr	4
+dagagujr	4
+danagujr	4
+haragujr	4
+haranuktagujr	4
+halagujr	4
+havagujr	4
+hannagujr	4
+hanagujr	4
+vagujr	5
+varagujr	5
+dabhagujr	5
+pagujr	5
+paragujr	5
+hagujr	5
+hanuktagujr	5
+ssagujr	5
+ssaragujr	5
+u 200D	6
+class definition end
+
+class	1,2,3	1,ivowel05-gujr
+class	1,2,4	1,ivowel06-gujr
+class	1,2,5	1,ivowel07-gujr
+class	1,2,7	1,ivowel04-gujr
+class	1,2,6,3	1,ivowel05-gujr
+class	1,2,6,4	1,ivowel06-gujr
+class	1,2,6,5	1,ivowel07-gujr
+class	1,2,6,7	1,ivowel04-gujr
+
+lookup end
+
+
+
+lookup	ivowelhalf12-gujr	context
+
+class definition begin
+ivowelsigngujr	1
+ghaprehalfgujr	2
+ghanuktaprehalfgujr	2
+gharaprehalfgujr	2
+gharanuktaprehalfgujr	2
+ragujr	3
+ranuktagujr	3
+raragujr	3
+raranuktagujr	3
+dagujr	3
+danuktagujr	3
+dadagujr	3
+ttagujr	3
+ttanuktagujr	3
+ttaragujr	3
+ttaranuktagujr	3
+ttattagujr	3
+ttatthagujr	3
+ddhaddhagujr	3
+ddhagujr	3
+ddhanuktagujr	3
+ddharagujr	3
+ddharanuktagujr	3
+kagujr	3
+phagujr	3
+kanuktagujr	3
+phanuktagujr	3
+ddaddagujr	4
+ddaddhagujr	4
+tthatthagujr	4
+ngagujr	4
+ddagujr	4
+nganuktagujr	4
+ddanuktagujr	4
+ngaragujr	4
+ddaragujr	4
+ngaranuktagujr	4
+ddaranuktagujr	4
+ngakagujr	4
+ngagagujr	4
+ngaghagujr	4
+ngamagujr	4
+karagujr	4
+pharagujr	4
+karanuktagujr	4
+pharanuktagujr	4
+tthagujr	4
+tthanuktagujr	4
+ttharagujr	4
+ttharanuktagujr	4
+daragujr	4
+daranuktagujr	4
+dagagujr	4
+danagujr	4
+haragujr	4
+haranuktagujr	4
+halagujr	4
+havagujr	4
+hannagujr	4
+hanagujr	4
+dabhagujr	5
+hagujr	5
+hanuktagujr	5
+vagujr	5
+varagujr	5
+ghagujr	5
+gharagujr	5
+nagujr	5
+naragujr	5
+yagujr	5
+yaragujr	5
+u 200D	6
+class definition end
+
+class	1,2,3	1,ivowel05-gujr
+class	1,2,4	1,ivowel06-gujr
+class	1,2,5	1,ivowel07-gujr
+class	1,2,6,3	1,ivowel05-gujr
+class	1,2,6,4	1,ivowel06-gujr
+class	1,2,6,5	1,ivowel07-gujr
+
+lookup end
+
+
+
+
+lookup	ivowelhalf13-gujr	context
+
+class definition begin
+ivowelsigngujr	1
+yaprehalfgujr	2
+yanuktaprehalfgujr	2
+yaraprehalfgujr	2
+yaranuktaprehalfgujr	2
+ragujr	3
+ranuktagujr	3
+raragujr	3
+raranuktagujr	3
+dagujr	3
+danuktagujr	3
+dadagujr	3
+ttagujr	3
+ttanuktagujr	3
+ttaragujr	3
+ttaranuktagujr	3
+ttattagujr	3
+ttatthagujr	3
+ddhaddhagujr	3
+ddhagujr	3
+ddhanuktagujr	3
+ddharagujr	3
+ddharanuktagujr	3
+kagujr	3
+phagujr	3
+kanuktagujr	3
+phanuktagujr	3
+ddaddagujr	4
+ddaddhagujr	4
+tthatthagujr	4
+ngagujr	4
+ddagujr	4
+nganuktagujr	4
+ddanuktagujr	4
+ngaragujr	4
+ddaragujr	4
+ngaranuktagujr	4
+ddaranuktagujr	4
+ngakagujr	4
+ngagagujr	4
+ngaghagujr	4
+ngamagujr	4
+karagujr	4
+pharagujr	4
+karanuktagujr	4
+pharanuktagujr	4
+tthagujr	4
+tthanuktagujr	4
+ttharagujr	4
+ttharanuktagujr	4
+daragujr	4
+daranuktagujr	4
+dagagujr	4
+danagujr	4
+haragujr	4
+haranuktagujr	4
+halagujr	4
+havagujr	4
+hannagujr	4
+hanagujr	4
+dabhagujr	5
+hagujr	5
+hanuktagujr	5
+u 200D	6
+class definition end
+
+class	1,2,3	1,ivowel05-gujr
+class	1,2,4	1,ivowel06-gujr
+class	1,2,5	1,ivowel07-gujr
+class	1,2,6,3	1,ivowel05-gujr
+class	1,2,6,4	1,ivowel06-gujr
+class	1,2,6,5	1,ivowel07-gujr
+
+lookup end
+
+
+
+
+lookup	ivowelhalf14-gujr	context
+
+class definition begin
+ivowelsigngujr	1
+gaprehalfgujr	2
+ganuktaprehalfgujr	2
+ttagujr	3
+ttaragujr	3
+ragujr	3
+ranuktagujr	3
+raragujr	3
+raranuktagujr	3
+dagujr	3
+danuktagujr	3
+dadagujr	3
+ttanuktagujr	3
+ttaranuktagujr	3
+ttattagujr	3
+ttatthagujr	3
+ddhaddhagujr	3
+phagujr	3
+ddhagujr	3
+ddhanuktagujr	3
+ddharagujr	3
+ddharanuktagujr	3
+kagujr	3
+kanuktagujr	3
+phanuktagujr	3
+ddaddagujr	4
+ddaddhagujr	4
+pharagujr	4
+tthatthagujr	4
+ngagujr	4
+ddagujr	4
+nganuktagujr	4
+ddanuktagujr	4
+ngaragujr	4
+ddaragujr	4
+ngaranuktagujr	4
+ddaranuktagujr	4
+ngakagujr	4
+ngagagujr	4
+ngaghagujr	4
+ngamagujr	4
+karagujr	4
+karanuktagujr	4
+pharanuktagujr	4
+tthagujr	4
+tthanuktagujr	4
+ttharagujr	4
+ttharanuktagujr	4
+daragujr	4
+daranuktagujr	4
+dagagujr	4
+danagujr	4
+haragujr	4
+haranuktagujr	4
+halagujr	4
+havagujr	4
+hannagujr	4
+hanagujr	4
+dabhagujr	5
+hagujr	5
+hanuktagujr	5
+u 200D	6
+class definition end
+
+class	1,2,3	1,ivowel05-gujr
+class	1,2,4	1,ivowel06-gujr
+class	1,2,5	1,ivowel07-gujr
+class	1,2,6,3	1,ivowel05-gujr
+class	1,2,6,4	1,ivowel06-gujr
+class	1,2,6,5	1,ivowel07-gujr
+
+lookup end
+
+
+
+
+lookup	ivowelhalf15-gujr	context
+
+class definition begin
+ivowelsigngujr	1
+shapreformaltgujr	2
+ragujr	3
+ranuktagujr	3
+raragujr	3
+raranuktagujr	3
+dagujr	3
+danuktagujr	3
+dadagujr	3
+ttagujr	3
+ttanuktagujr	3
+ttaragujr	3
+ttaranuktagujr	3
+ttattagujr	3
+ttatthagujr	3
+ddhaddhagujr	3
+ddhagujr	4
+ddhanuktagujr	4
+ddharagujr	4
+ddharanuktagujr	4
+kagujr	4
+phagujr	4
+kanuktagujr	4
+phanuktagujr	4
+ddaddagujr	4
+ddaddhagujr	4
+tthatthagujr	4
+ngagujr	4
+ddagujr	4
+nganuktagujr	4
+ddanuktagujr	4
+ngaragujr	4
+ddaragujr	4
+ngaranuktagujr	4
+ddaranuktagujr	4
+ngakagujr	4
+ngagagujr	4
+ngaghagujr	4
+ngamagujr	4
+karagujr	4
+pharagujr	4
+karanuktagujr	4
+pharanuktagujr	4
+tthagujr	4
+tthanuktagujr	4
+ttharagujr	4
+ttharanuktagujr	4
+daragujr	4
+daranuktagujr	4
+dagagujr	4
+danagujr	4
+haragujr	4
+haranuktagujr	4
+halagujr	4
+havagujr	4
+hannagujr	4
+hanagujr	4
+dabhagujr	5
+hagujr	5
+hanuktagujr	5
+u 200D	6
+class definition end
+
+class	1,2,3	1,ivowel05-gujr
+class	1,2,4	1,ivowel06-gujr
+class	1,2,5	1,ivowel07-gujr
+class	1,2,6,3	1,ivowel05-gujr
+class	1,2,6,4	1,ivowel06-gujr
+class	1,2,6,5	1,ivowel07-gujr
+
+lookup end
+
+
+
+
+lookup	ivowelhalf16-gujr	context
+
+class definition begin
+ivowelsigngujr	1
+shaprehalfgujr	2
+shanuktaprehalfgujr	2
+ragujr	3
+ranuktagujr	3
+raragujr	3
+raranuktagujr	3
+dagujr	3
+danuktagujr	3
+dadagujr	3
+ttagujr	3
+ttaragujr	3
+kagujr	4
+ttanuktagujr	4
+ttaranuktagujr	4
+ttattagujr	4
+ttatthagujr	4
+phagujr	4
+ddagujr	4
+ddaragujr	4
+ddhaddhagujr	4
+ddhagujr	4
+ddhanuktagujr	4
+ddharagujr	4
+ddharanuktagujr	4
+kanuktagujr	4
+phanuktagujr	4
+karagujr	4
+pharagujr	4
+ddaddagujr	4
+ddaddhagujr	4
+tthatthagujr	4
+ngagujr	4
+nganuktagujr	4
+ddanuktagujr	4
+ngaragujr	4
+ngaranuktagujr	4
+ddaranuktagujr	4
+ngakagujr	4
+ngagagujr	4
+ngaghagujr	4
+ngamagujr	4
+karanuktagujr	4
+pharanuktagujr	4
+tthagujr	4
+tthanuktagujr	4
+ttharagujr	4
+ttharanuktagujr	4
+daragujr	4
+daranuktagujr	4
+dagagujr	4
+danagujr	4
+haragujr	4
+haranuktagujr	4
+halagujr	4
+havagujr	4
+hannagujr	4
+hanagujr	4
+dabhagujr	5
+u 200D	6
+class definition end
+
+class	1,2,3	1,ivowel05-gujr
+class	1,2,4	1,ivowel06-gujr
+class	1,2,5	1,ivowel07-gujr
+class	1,2,6,3	1,ivowel05-gujr
+class	1,2,6,4	1,ivowel06-gujr
+class	1,2,6,5	1,ivowel07-gujr
+
+lookup end
+
+
+
+
+lookup	ivowelhalf17-gujr	context
+
+class definition begin
+ivowelsigngujr	1
+thaprehalfgujr	2
+thanuktaprehalfgujr	2
+tharaprehalfgujr	2
+tharanuktaprehalfgujr	2
+ragujr	3
+ranuktagujr	3
+raragujr	3
+raranuktagujr	3
+dagujr	3
+danuktagujr	3
+dadagujr	3
+ttagujr	4
+ttanuktagujr	4
+ttaragujr	4
+ttaranuktagujr	4
+ttattagujr	4
+ttatthagujr	4
+ddhaddhagujr	4
+ddhagujr	4
+ddhanuktagujr	4
+ddharagujr	4
+ddharanuktagujr	4
+kagujr	4
+phagujr	4
+kanuktagujr	4
+phanuktagujr	4
+ddaddagujr	4
+ddaddhagujr	4
+tthatthagujr	4
+ngagujr	4
+ddagujr	4
+nganuktagujr	4
+ddanuktagujr	4
+ngaragujr	4
+ddaragujr	4
+ngaranuktagujr	4
+ddaranuktagujr	4
+ngakagujr	4
+ngagagujr	4
+ngaghagujr	4
+ngamagujr	4
+karagujr	4
+pharagujr	4
+karanuktagujr	4
+pharanuktagujr	4
+tthagujr	4
+tthanuktagujr	4
+ttharagujr	4
+ttharanuktagujr	4
+daragujr	4
+daranuktagujr	4
+dagagujr	4
+danagujr	4
+haragujr	4
+haranuktagujr	4
+halagujr	4
+havagujr	4
+hannagujr	4
+hanagujr	4
+dabhagujr	5
+u 200D	6
+class definition end
+
+class	1,2,3	1,ivowel05-gujr
+class	1,2,4	1,ivowel06-gujr
+class	1,2,5	1,ivowel07-gujr
+class	1,2,6,3	1,ivowel05-gujr
+class	1,2,6,4	1,ivowel06-gujr
+class	1,2,6,5	1,ivowel07-gujr
+
+lookup end
+
+
+
+
+% lookup	ivowelhalf18-gujr	context
+
+class definition begin
+ivowelsigngujr	1
+%x raraprehalfUIgujr	2
+%x raranuktaprehalfUIgujr	2
+ragujr	3
+ranuktagujr	3
+raragujr	3
+raranuktagujr	3
+dagujr	3
+danuktagujr	3
+dadagujr	3
+ttagujr	4
+ttanuktagujr	4
+ttaragujr	4
+ttaranuktagujr	4
+ttattagujr	4
+ttatthagujr	4
+ddhaddhagujr	4
+ddhagujr	4
+ddhanuktagujr	4
+ddharagujr	4
+ddharanuktagujr	4
+kagujr	4
+phagujr	4
+kanuktagujr	4
+phanuktagujr	4
+ddaddagujr	4
+ddaddhagujr	4
+tthatthagujr	4
+ngagujr	4
+ddagujr	4
+nganuktagujr	4
+ddanuktagujr	4
+ngaragujr	4
+ddaragujr	4
+ngaranuktagujr	4
+ddaranuktagujr	4
+ngakagujr	4
+ngagagujr	4
+ngaghagujr	4
+ngamagujr	4
+karagujr	4
+pharagujr	4
+karanuktagujr	4
+pharanuktagujr	4
+tthagujr	4
+tthanuktagujr	4
+ttharagujr	4
+ttharanuktagujr	4
+daragujr	4
+daranuktagujr	4
+dagagujr	4
+danagujr	4
+haragujr	4
+haranuktagujr	4
+halagujr	4
+havagujr	4
+hannagujr	4
+hanagujr	4
+dabhagujr	5
+u 200D	6
+class definition end
+
+class	1,2,3	1,ivowel05-gujr
+class	1,2,4	1,ivowel06-gujr
+class	1,2,5	1,ivowel07-gujr
+class	1,2,6,3	1,ivowel05-gujr
+class	1,2,6,4	1,ivowel06-gujr
+class	1,2,6,5	1,ivowel07-gujr
+
+lookup end
+
+
+
+
+lookup	ivowelhalf19-gujr	context
+
+class definition begin
+ivowelsigngujr	1
+tatapreformgujr	2
+ragujr	3
+ranuktagujr	3
+raragujr	3
+raranuktagujr	3
+dagujr	3
+danuktagujr	3
+dadagujr	3
+ttagujr	4
+ttanuktagujr	4
+ttaragujr	4
+ttaranuktagujr	4
+ttattagujr	4
+ttatthagujr	4
+ddhaddhagujr	4
+ddhagujr	4
+ddhanuktagujr	4
+ddharagujr	4
+ddharanuktagujr	4
+kagujr	4
+phagujr	4
+kanuktagujr	4
+phanuktagujr	4
+ddaddagujr	4
+ddaddhagujr	4
+tthatthagujr	4
+ngagujr	4
+ddagujr	4
+nganuktagujr	4
+ddanuktagujr	4
+ngaragujr	4
+ddaragujr	4
+ngaranuktagujr	4
+ddaranuktagujr	4
+ngakagujr	4
+ngagagujr	4
+ngaghagujr	4
+ngamagujr	4
+karagujr	4
+pharagujr	4
+karanuktagujr	4
+pharanuktagujr	4
+tthagujr	4
+tthanuktagujr	4
+ttharagujr	4
+ttharanuktagujr	4
+daragujr	4
+daranuktagujr	4
+dagagujr	4
+danagujr	4
+haragujr	4
+haranuktagujr	4
+halagujr	4
+havagujr	4
+hannagujr	4
+hanagujr	4
+dabhagujr	5
+u 200D	6
+class definition end
+
+class	1,2,3	1,ivowel05-gujr
+class	1,2,4	1,ivowel06-gujr
+class	1,2,5	1,ivowel07-gujr
+class	1,2,6,3	1,ivowel05-gujr
+class	1,2,6,4	1,ivowel06-gujr
+class	1,2,6,5	1,ivowel07-gujr
+
+
+lookup end
+
+
+
+
+lookup	ivowelhalf20-gujr	context
+
+class definition begin
+ivowelsigngujr	1
+garaprehalfgujr	2
+garanuktaprehalfgujr	2
+ragujr	3
+ranuktagujr	3
+raragujr	3
+raranuktagujr	3
+dagujr	3
+danuktagujr	3
+dadagujr	3
+ttagujr	4
+ttanuktagujr	4
+ttaragujr	4
+ttaranuktagujr	4
+ttattagujr	4
+ttatthagujr	4
+ddhaddhagujr	4
+ddhagujr	4
+ddhanuktagujr	4
+ddharagujr	4
+ddharanuktagujr	4
+kagujr	4
+phagujr	4
+kanuktagujr	4
+phanuktagujr	4
+ddaddagujr	4
+ddaddhagujr	4
+tthatthagujr	4
+ngagujr	4
+ddagujr	4
+nganuktagujr	4
+ddanuktagujr	4
+ngaragujr	4
+ddaragujr	4
+ngaranuktagujr	4
+ddaranuktagujr	4
+ngakagujr	4
+ngagagujr	4
+ngaghagujr	4
+ngamagujr	4
+karagujr	4
+pharagujr	4
+karanuktagujr	4
+pharanuktagujr	4
+tthagujr	4
+tthanuktagujr	4
+ttharagujr	4
+ttharanuktagujr	4
+daragujr	4
+daranuktagujr	4
+dagagujr	4
+danagujr	4
+haragujr	4
+haranuktagujr	4
+halagujr	4
+havagujr	4
+hannagujr	5
+hanagujr	5
+dabhagujr	5
+u 200D	6
+class definition end
+
+class	1,2,3	1,ivowel05-gujr
+class	1,2,4	1,ivowel06-gujr
+class	1,2,5	1,ivowel07-gujr
+class	1,2,6,3	1,ivowel05-gujr
+class	1,2,6,4	1,ivowel06-gujr
+class	1,2,6,5	1,ivowel07-gujr
+
+
+lookup end
+
+
+
+lookup	ivowelhalf21-gujr	context
+
+class definition begin
+ivowelsigngujr	1
+raprehalfgujr	2
+ranuktaprehalfgujr	2
+raraprehalfgujr	2
+raranuktaprehalfgujr	2
+ragujr	3
+ranuktagujr	3
+raragujr	3
+raranuktagujr	3
+dagujr	3
+danuktagujr	3
+dadagujr	3
+ttagujr	4
+ttanuktagujr	4
+ttaragujr	4
+ttaranuktagujr	4
+ttattagujr	4
+ttatthagujr	4
+ddhaddhagujr	4
+ddhagujr	4
+ddhanuktagujr	4
+ddharagujr	4
+ddharanuktagujr	4
+kagujr	4
+phagujr	4
+kanuktagujr	4
+phanuktagujr	4
+ddaddagujr	4
+ddaddhagujr	4
+tthatthagujr	4
+ngagujr	4
+ddagujr	4
+nganuktagujr	4
+ddanuktagujr	4
+ngaragujr	4
+ddaragujr	4
+ngaranuktagujr	4
+ddaranuktagujr	4
+ngakagujr	4
+ngagagujr	4
+ngaghagujr	4
+ngamagujr	4
+karagujr	4
+pharagujr	4
+karanuktagujr	4
+pharanuktagujr	4
+tthagujr	4
+tthanuktagujr	4
+ttharagujr	4
+ttharanuktagujr	4
+daragujr	4
+daranuktagujr	4
+dagagujr	4
+danagujr	4
+haragujr	4
+haranuktagujr	4
+halagujr	4
+havagujr	4
+hannagujr	5
+hanagujr	5
+dabhagujr	5
+u 200D	6
+class definition end
+
+class	1,2,3	1,ivowel05-gujr
+class	1,2,4	1,ivowel06-gujr
+class	1,2,5	1,ivowel07-gujr
+class	1,2,6,3	1,ivowel05-gujr
+class	1,2,6,4	1,ivowel06-gujr
+class	1,2,6,5	1,ivowel07-gujr
+
+lookup end
+
+
+
+
+lookup	ivowelhalf22-gujr	context
+
+class definition begin
+ivowelsigngujr	1
+caprehalfgujr	2
+canuktaprehalfgujr	2
+caraprehalfgujr	2
+caranuktaprehalfgujr	2
+ragujr	3
+ranuktagujr	3
+raragujr	3
+raranuktagujr	3
+dagujr	3
+danuktagujr	3
+dadagujr	3
+ttagujr	4
+ttanuktagujr	4
+ttaragujr	4
+ttaranuktagujr	4
+ttattagujr	4
+ttatthagujr	4
+ddhaddhagujr	4
+ddhagujr	4
+ddhanuktagujr	4
+ddharagujr	4
+ddharanuktagujr	4
+kagujr	4
+phagujr	4
+kanuktagujr	4
+phanuktagujr	4
+ddaddagujr	4
+ddaddhagujr	4
+tthatthagujr	4
+ngagujr	4
+ddagujr	4
+nganuktagujr	4
+ddanuktagujr	4
+ngaragujr	4
+ddaragujr	4
+ngaranuktagujr	4
+ddaranuktagujr	4
+ngakagujr	4
+ngagagujr	4
+ngaghagujr	4
+ngamagujr	4
+karagujr	4
+pharagujr	4
+karanuktagujr	4
+pharanuktagujr	4
+tthagujr	4
+tthanuktagujr	4
+ttharagujr	4
+ttharanuktagujr	4
+daragujr	4
+daranuktagujr	4
+dagagujr	4
+danagujr	4
+haragujr	4
+haranuktagujr	4
+halagujr	5
+havagujr	5
+hannagujr	5
+hanagujr	5
+dabhagujr	5
+u 200D	6
+class definition end
+
+class	1,2,3	1,ivowel05-gujr
+class	1,2,4	1,ivowel06-gujr
+class	1,2,5	1,ivowel07-gujr
+class	1,2,6,3	1,ivowel05-gujr
+class	1,2,6,4	1,ivowel06-gujr
+class	1,2,6,5	1,ivowel07-gujr
+
+lookup end
+
+
+
+
+% lookup	ivowelhalf23-gujr	context
+
+class definition begin
+ivowelsigngujr	1
+%x ttaraprehalfUIgujr	2
+%x ttaranuktaprehalfUIgujr	2
+ragujr	3
+ranuktagujr	3
+raragujr	3
+raranuktagujr	3
+dagujr	3
+danuktagujr	3
+dadagujr	3
+ttagujr	4
+ttanuktagujr	4
+ttaragujr	4
+ttaranuktagujr	4
+ttattagujr	4
+ttatthagujr	4
+ddhaddhagujr	4
+ddhagujr	4
+ddhanuktagujr	4
+ddharagujr	4
+ddharanuktagujr	4
+kagujr	4
+phagujr	4
+kanuktagujr	4
+phanuktagujr	4
+ddaddagujr	4
+ddaddhagujr	4
+tthatthagujr	4
+ngagujr	4
+ddagujr	4
+nganuktagujr	4
+ddanuktagujr	4
+ngaragujr	4
+ddaragujr	4
+ngaranuktagujr	4
+ddaranuktagujr	4
+ngakagujr	4
+ngagagujr	4
+ngaghagujr	4
+ngamagujr	4
+karagujr	4
+pharagujr	4
+karanuktagujr	4
+pharanuktagujr	4
+tthagujr	4
+tthanuktagujr	4
+ttharagujr	4
+ttharanuktagujr	4
+daragujr	4
+daranuktagujr	4
+dagagujr	4
+danagujr	4
+haragujr	4
+haranuktagujr	4
+halagujr	5
+havagujr	5
+hannagujr	5
+hanagujr	5
+dabhagujr	5
+u 200D	6
+class definition end
+
+class	1,2,3	1,ivowel05-gujr
+class	1,2,4	1,ivowel06-gujr
+class	1,2,5	1,ivowel07-gujr
+class	1,2,6,3	1,ivowel05-gujr
+class	1,2,6,4	1,ivowel06-gujr
+class	1,2,6,5	1,ivowel07-gujr
+
+lookup end
+
+
+
+
+lookup	ivowelhalf24-gujr	context
+
+class definition begin
+ivowelsigngujr	1
+laprehalfgujr	2
+lanuktaprehalfgujr	2
+laraprehalfgujr	2
+laranuktaprehalfgujr	2
+ttagujr	3
+ttaragujr	3
+dagujr	3
+ragujr	3
+ranuktagujr	3
+raragujr	3
+raranuktagujr	3
+danuktagujr	3
+dadagujr	3
+kagujr	4
+phagujr	4
+ddagujr	4
+ddaragujr	4
+ttanuktagujr	4
+ttaranuktagujr	4
+ttattagujr	4
+ttatthagujr	4
+karagujr	4
+pharagujr	4
+ddhaddhagujr	4
+ddhagujr	4
+ddhanuktagujr	4
+ddharagujr	4
+ddharanuktagujr	4
+kanuktagujr	4
+phanuktagujr	4
+ddaddagujr	4
+ddaddhagujr	4
+tthatthagujr	4
+ngagujr	4
+nganuktagujr	4
+ddanuktagujr	4
+ngaragujr	4
+ngaranuktagujr	4
+ddaranuktagujr	4
+ngakagujr	4
+ngagagujr	4
+ngaghagujr	4
+ngamagujr	4
+karanuktagujr	4
+pharanuktagujr	4
+tthagujr	4
+tthanuktagujr	4
+ttharagujr	4
+ttharanuktagujr	4
+daragujr	4
+daranuktagujr	4
+dagagujr	4
+danagujr	4
+haragujr	4
+haranuktagujr	4
+halagujr	5
+havagujr	5
+hannagujr	5
+hanagujr	5
+hagujr	5
+vagujr	5
+varagujr	5
+dabhagujr	5
+u 200D	6
+class definition end
+
+class	1,2,3	1,ivowel05-gujr
+class	1,2,4	1,ivowel06-gujr
+class	1,2,5	1,ivowel07-gujr
+class	1,2,6,3	1,ivowel05-gujr
+class	1,2,6,4	1,ivowel06-gujr
+class	1,2,6,5	1,ivowel07-gujr
+
+lookup end
+
+
+
+
+lookup	ivowelhalf25-gujr	context
+
+class definition begin
+ivowelsigngujr	1
+ttaprehalfgujr	2
+ttanuktaprehalfgujr	2
+ttaraprehalfgujr	2
+ttaranuktaprehalfgujr	2
+ragujr	3
+ranuktagujr	3
+raragujr	3
+raranuktagujr	3
+dagujr	3
+danuktagujr	3
+dadagujr	3
+ttagujr	4
+ttanuktagujr	4
+ttaragujr	4
+ttaranuktagujr	4
+ttattagujr	4
+ttatthagujr	4
+ddhaddhagujr	4
+ddhagujr	4
+ddhanuktagujr	4
+ddharagujr	4
+ddharanuktagujr	4
+kagujr	4
+phagujr	4
+kanuktagujr	4
+phanuktagujr	4
+ddaddagujr	4
+ddaddhagujr	4
+tthatthagujr	4
+ngagujr	4
+ddagujr	4
+nganuktagujr	4
+ddanuktagujr	4
+ngaragujr	4
+ddaragujr	4
+ngaranuktagujr	4
+ddaranuktagujr	4
+ngakagujr	4
+ngagagujr	4
+ngaghagujr	4
+ngamagujr	4
+karagujr	4
+pharagujr	4
+karanuktagujr	4
+pharanuktagujr	4
+tthagujr	4
+tthanuktagujr	4
+ttharagujr	4
+ttharanuktagujr	4
+daragujr	4
+daranuktagujr	4
+dagagujr	4
+danagujr	4
+haragujr	4
+haranuktagujr	4
+halagujr	5
+havagujr	5
+hannagujr	5
+hanagujr	5
+u 200D	5
+class definition end
+
+class	1,2,3	1,ivowel06-gujr
+class	1,2,4	1,ivowel07-gujr
+class	1,2,5,3	1,ivowel06-gujr
+class	1,2,5,4	1,ivowel07-gujr
+
+lookup end
+
+
+
+
+lookup	ivowelhalf26-gujr	context
+
+class definition begin
+ivowelsigngujr	1
+haprehalfgujr	2
+hanuktaprehalfgujr	2
+ragujr	3
+ranuktagujr	3
+raragujr	3
+raranuktagujr	3
+dagujr	3
+danuktagujr	3
+dadagujr	3
+ttagujr	3
+ttanuktagujr	3
+ttaragujr	3
+ttaranuktagujr	3
+ttattagujr	3
+ttatthagujr	3
+ddhaddhagujr	3
+ddhagujr	3
+ddhanuktagujr	3
+ddharagujr	3
+ddharanuktagujr	3
+kagujr	3
+phagujr	3
+kanuktagujr	3
+phanuktagujr	3
+ddaddagujr	3
+ddaddhagujr	3
+tthatthagujr	3
+ngagujr	3
+ddagujr	3
+nganuktagujr	3
+ddanuktagujr	3
+ngaragujr	3
+ddaragujr	3
+ngaranuktagujr	3
+ddaranuktagujr	3
+ngakagujr	3
+ngagagujr	3
+ngaghagujr	3
+ngamagujr	3
+karagujr	3
+pharagujr	3
+karanuktagujr	3
+pharanuktagujr	3
+tthagujr	3
+tthanuktagujr	3
+ttharagujr	3
+ttharanuktagujr	3
+daragujr	3
+daranuktagujr	3
+dagagujr	3
+danagujr	3
+haragujr	3
+haranuktagujr	3
+halagujr	4
+havagujr	4
+hannagujr	4
+hanagujr	4
+hagujr	4
+u 200D	5
+class definition end
+
+class	1,2,3	1,ivowel06-gujr
+class	1,2,4	1,ivowel07-gujr
+class	1,2,5,3	1,ivowel06-gujr
+class	1,2,5,4	1,ivowel07-gujr
+
+lookup end
+
+
+
+
+lookup	ivowelhalf27-gujr	context
+
+class definition begin
+ivowelsigngujr	1
+daprehalfgujr	2
+danuktaprehalfgujr	2
+ragujr	3
+ranuktagujr	3
+raragujr	3
+raranuktagujr	3
+dagujr	3
+danuktagujr	3
+dadagujr	3
+ttagujr	3
+ttanuktagujr	3
+ttaragujr	3
+ttaranuktagujr	3
+ttattagujr	3
+ttatthagujr	3
+ddhaddhagujr	3
+ddhagujr	3
+ddhanuktagujr	3
+ddharagujr	3
+ddharanuktagujr	3
+kagujr	3
+phagujr	3
+kanuktagujr	3
+phanuktagujr	3
+ddaddagujr	3
+ddaddhagujr	3
+tthatthagujr	3
+ngagujr	3
+ddagujr	3
+nganuktagujr	3
+ddanuktagujr	3
+ngaragujr	3
+ddaragujr	3
+ngaranuktagujr	3
+ddaranuktagujr	3
+ngakagujr	3
+ngagagujr	3
+ngaghagujr	3
+ngamagujr	3
+karagujr	3
+pharagujr	3
+karanuktagujr	3
+pharanuktagujr	3
+tthagujr	3
+tthanuktagujr	3
+ttharagujr	3
+ttharanuktagujr	3
+daragujr	3
+daranuktagujr	3
+dagagujr	3
+danagujr	3
+haragujr	3
+haranuktagujr	3
+halagujr	4
+havagujr	4
+hannagujr	4
+hanagujr	4
+u 200D	5
+class definition end
+
+class	1,2,3	1,ivowel06-gujr
+class	1,2,4	1,ivowel07-gujr
+class	1,2,5,3	1,ivowel06-gujr
+class	1,2,5,4	1,ivowel07-gujr
+
+lookup end
+
+
+
+
+% lookup	ivowelhalf28-gujr	context
+
+class definition begin
+ivowelsigngujr	1
+%x ddaraprehalfUIgujr	2
+%x ddaranuktaprehalfUIgujr	2
+ragujr	3
+ranuktagujr	3
+raragujr	3
+raranuktagujr	3
+dagujr	3
+danuktagujr	3
+dadagujr	3
+ttagujr	3
+ttanuktagujr	3
+ttaragujr	3
+ttaranuktagujr	3
+ttattagujr	3
+ttatthagujr	3
+ddhaddhagujr	3
+ddhagujr	3
+ddhanuktagujr	3
+ddharagujr	3
+ddharanuktagujr	3
+kagujr	3
+phagujr	3
+kanuktagujr	3
+phanuktagujr	3
+ddaddagujr	3
+ddaddhagujr	3
+tthatthagujr	3
+ngagujr	3
+ddagujr	3
+nganuktagujr	3
+ddanuktagujr	3
+ngaragujr	3
+ddaragujr	3
+ngaranuktagujr	3
+ddaranuktagujr	3
+ngakagujr	3
+ngagagujr	3
+ngaghagujr	3
+ngamagujr	3
+karagujr	3
+pharagujr	3
+karanuktagujr	3
+pharanuktagujr	3
+tthagujr	3
+tthanuktagujr	3
+ttharagujr	3
+ttharanuktagujr	3
+daragujr	3
+daranuktagujr	3
+dagagujr	3
+danagujr	3
+haragujr	3
+haranuktagujr	3
+halagujr	4
+havagujr	4
+hannagujr	4
+hanagujr	4
+u 200D	5
+class definition end
+
+class	1,2,3	1,ivowel06-gujr
+class	1,2,4	1,ivowel07-gujr
+class	1,2,5,3	1,ivowel06-gujr
+class	1,2,5,4	1,ivowel07-gujr
+
+lookup end
+
+
+
+
+lookup	ivowelhalf29-gujr	context
+
+class definition begin
+ivowelsigngujr	1
+nyaprehalfgujr	2
+nyanuktaprehalfgujr	2
+nyaraprehalfgujr	2
+nyaranuktaprehalfgujr	2
+ragujr	3
+ranuktagujr	3
+raragujr	3
+raranuktagujr	3
+dagujr	3
+danuktagujr	3
+dadagujr	3
+ttagujr	3
+ttanuktagujr	3
+ttaragujr	3
+ttaranuktagujr	3
+ttattagujr	3
+ttatthagujr	3
+ddhaddhagujr	3
+ddhagujr	3
+ddhanuktagujr	3
+ddharagujr	3
+ddharanuktagujr	3
+kagujr	3
+phagujr	3
+kanuktagujr	3
+phanuktagujr	3
+ddaddagujr	3
+ddaddhagujr	3
+tthatthagujr	3
+ngagujr	3
+ddagujr	3
+nganuktagujr	3
+ddanuktagujr	3
+ngaragujr	3
+ddaragujr	3
+ngaranuktagujr	3
+ddaranuktagujr	3
+ngakagujr	3
+ngagagujr	3
+ngaghagujr	3
+ngamagujr	3
+karagujr	3
+pharagujr	3
+karanuktagujr	3
+pharanuktagujr	3
+tthagujr	3
+tthanuktagujr	3
+ttharagujr	3
+ttharanuktagujr	3
+daragujr	3
+daranuktagujr	3
+dagagujr	3
+danagujr	3
+haragujr	3
+haranuktagujr	3
+halagujr	4
+havagujr	4
+hannagujr	4
+hanagujr	4
+u 200D	5
+class definition end
+
+class	1,2,3	1,ivowel06-gujr
+class	1,2,4	1,ivowel07-gujr
+class	1,2,5,3	1,ivowel06-gujr
+class	1,2,5,4	1,ivowel07-gujr
+
+lookup end
+
+
+
+
+lookup	ivowelhalf30-gujr	context
+
+class definition begin
+ivowelsigngujr	1
+ddaprehalfgujr	2
+ddanuktaprehalfgujr	2
+ddaraprehalfgujr	2
+ddaranuktaprehalfgujr	2
+dagujr	3
+ragujr	3
+ranuktagujr	3
+raragujr	3
+raranuktagujr	3
+danuktagujr	3
+dadagujr	3
+ttagujr	3
+ttanuktagujr	3
+ttaragujr	3
+ttaranuktagujr	3
+ttattagujr	3
+ttatthagujr	3
+ddhaddhagujr	3
+ddhagujr	3
+ddhanuktagujr	3
+ddharagujr	3
+ddharanuktagujr	3
+kagujr	3
+phagujr	3
+kanuktagujr	3
+phanuktagujr	3
+ddaddagujr	3
+ddaddhagujr	3
+tthatthagujr	3
+ngagujr	3
+ddagujr	3
+nganuktagujr	3
+ddanuktagujr	3
+ngaragujr	3
+ddaragujr	3
+ngaranuktagujr	3
+ddaranuktagujr	3
+ngakagujr	3
+ngagagujr	3
+ngaghagujr	3
+ngamagujr	3
+karagujr	3
+pharagujr	3
+karanuktagujr	3
+pharanuktagujr	3
+tthagujr	3
+tthanuktagujr	3
+ttharagujr	3
+ttharanuktagujr	3
+daragujr	4
+daranuktagujr	4
+dagagujr	4
+danagujr	4
+haragujr	4
+haranuktagujr	4
+halagujr	4
+havagujr	4
+hannagujr	4
+hanagujr	4
+u 200D	5
+class definition end
+
+class	1,2,3	1,ivowel06-gujr
+class	1,2,4	1,ivowel07-gujr
+class	1,2,5,3	1,ivowel06-gujr
+class	1,2,5,4	1,ivowel07-gujr
+
+lookup end
+
+
+
+
+% lookup	ivowelhalf31-gujr	context
+
+class definition begin
+ivowelsigngujr	1
+%x ddharaprehalfUIgujr	2
+%x ddharanuktaprehalfUIgujr	2
+ragujr	3
+ranuktagujr	3
+raragujr	3
+raranuktagujr	3
+dagujr	3
+danuktagujr	3
+dadagujr	3
+ttagujr	3
+ttanuktagujr	3
+ttaragujr	3
+ttaranuktagujr	3
+ttattagujr	3
+ttatthagujr	3
+ddhaddhagujr	3
+ddhagujr	3
+ddhanuktagujr	3
+ddharagujr	3
+ddharanuktagujr	3
+kagujr	3
+phagujr	3
+kanuktagujr	3
+phanuktagujr	3
+ddaddagujr	3
+ddaddhagujr	3
+tthatthagujr	3
+ngagujr	3
+ddagujr	3
+nganuktagujr	3
+ddanuktagujr	3
+ngaragujr	3
+ddaragujr	3
+ngaranuktagujr	3
+ddaranuktagujr	3
+ngakagujr	3
+ngagagujr	3
+ngaghagujr	3
+ngamagujr	3
+karagujr	4
+pharagujr	4
+karanuktagujr	4
+pharanuktagujr	4
+tthagujr	4
+tthanuktagujr	4
+ttharagujr	4
+ttharanuktagujr	4
+daragujr	4
+daranuktagujr	4
+dagagujr	4
+danagujr	4
+haragujr	4
+haranuktagujr	4
+halagujr	4
+havagujr	4
+hannagujr	4
+hanagujr	4
+u 200D	5
+class definition end
+
+class	1,2,3	1,ivowel06-gujr
+class	1,2,4	1,ivowel07-gujr
+class	1,2,5,3	1,ivowel06-gujr
+class	1,2,5,4	1,ivowel07-gujr
+
+lookup end
+
+
+
+
+lookup	ivowelhalf32-gujr	context
+
+class definition begin
+ivowelsigngujr	1
+sharaprehalfgujr	2
+sharanuktaprehalfgujr	2
+ragujr	3
+ranuktagujr	3
+raragujr	3
+raranuktagujr	3
+dagujr	3
+danuktagujr	3
+dadagujr	3
+ttagujr	3
+ttanuktagujr	3
+ttaragujr	3
+ttaranuktagujr	3
+ttattagujr	3
+ttatthagujr	3
+ddhaddhagujr	3
+ddhagujr	3
+ddhanuktagujr	3
+ddharagujr	3
+ddharanuktagujr	3
+kagujr	3
+phagujr	3
+kanuktagujr	3
+phanuktagujr	3
+ddaddagujr	3
+ddaddhagujr	3
+tthatthagujr	3
+ngagujr	3
+ddagujr	3
+nganuktagujr	3
+ddanuktagujr	3
+ngaragujr	3
+ddaragujr	3
+ngaranuktagujr	3
+ddaranuktagujr	3
+ngakagujr	3
+ngagagujr	3
+ngaghagujr	3
+ngamagujr	3
+karagujr	4
+pharagujr	4
+karanuktagujr	4
+pharanuktagujr	4
+tthagujr	4
+tthanuktagujr	4
+ttharagujr	4
+ttharanuktagujr	4
+daragujr	4
+daranuktagujr	4
+dagagujr	4
+danagujr	4
+haragujr	4
+haranuktagujr	4
+halagujr	4
+havagujr	4
+hannagujr	4
+hanagujr	4
+u 200D	5
+class definition end
+
+class	1,2,3	1,ivowel06-gujr
+class	1,2,4	1,ivowel07-gujr
+class	1,2,5,3	1,ivowel06-gujr
+class	1,2,5,4	1,ivowel07-gujr
+
+lookup end
+
+
+
+
+% lookup	ivowelhalf33-gujr	context
+
+class definition begin
+ivowelsigngujr	1
+%x ttharaprehalfUIgujr	2
+%x ttharanuktaprehalfUIgujr	2
+ragujr	3
+ranuktagujr	3
+raragujr	3
+raranuktagujr	3
+dagujr	3
+danuktagujr	3
+dadagujr	3
+ttagujr	3
+ttanuktagujr	3
+ttaragujr	3
+ttaranuktagujr	3
+ttattagujr	3
+ttatthagujr	3
+ddhaddhagujr	3
+ddhagujr	3
+ddhanuktagujr	3
+ddharagujr	3
+ddharanuktagujr	3
+kagujr	3
+phagujr	3
+kanuktagujr	3
+phanuktagujr	3
+ddaddagujr	3
+ddaddhagujr	3
+tthatthagujr	3
+ngagujr	3
+ddagujr	3
+nganuktagujr	3
+ddanuktagujr	3
+ngaragujr	3
+ddaragujr	3
+ngaranuktagujr	3
+ddaranuktagujr	3
+ngakagujr	3
+ngagagujr	3
+ngaghagujr	3
+ngamagujr	3
+karagujr	4
+pharagujr	4
+karanuktagujr	4
+pharanuktagujr	4
+tthagujr	4
+tthanuktagujr	4
+ttharagujr	4
+ttharanuktagujr	4
+daragujr	4
+daranuktagujr	4
+dagagujr	4
+danagujr	4
+haragujr	4
+haranuktagujr	4
+halagujr	4
+havagujr	4
+hannagujr	4
+hanagujr	4
+u 200D	5
+class definition end
+
+class	1,2,3	1,ivowel06-gujr
+class	1,2,4	1,ivowel07-gujr
+class	1,2,5,3	1,ivowel06-gujr
+class	1,2,5,4	1,ivowel07-gujr
+
+lookup end
+
+
+
+
+lookup	ivowelhalf34-gujr	context
+
+class definition begin
+ivowelsigngujr	1
+daraprehalfgujr	2
+%x daraprehalfUIgujr	2
+daranuktaprehalfgujr	2
+ragujr	3
+ranuktagujr	3
+raragujr	3
+raranuktagujr	3
+dagujr	3
+danuktagujr	3
+dadagujr	3
+ttagujr	3
+ttanuktagujr	3
+ttaragujr	3
+ttaranuktagujr	3
+ttattagujr	3
+ttatthagujr	3
+ddhaddhagujr	3
+ddhagujr	3
+ddhanuktagujr	3
+ddharagujr	3
+ddharanuktagujr	3
+kagujr	3
+phagujr	3
+kanuktagujr	3
+phanuktagujr	3
+ddaddagujr	3
+ddaddhagujr	3
+tthatthagujr	3
+ngagujr	3
+ddagujr	3
+nganuktagujr	3
+ddanuktagujr	3
+ngaragujr	3
+ddaragujr	3
+ngaranuktagujr	3
+ddaranuktagujr	3
+ngakagujr	3
+ngagagujr	3
+ngaghagujr	3
+ngamagujr	3
+karagujr	4
+pharagujr	4
+karanuktagujr	4
+pharanuktagujr	4
+tthagujr	4
+tthanuktagujr	4
+ttharagujr	4
+ttharanuktagujr	4
+daragujr	4
+daranuktagujr	4
+dagagujr	4
+danagujr	4
+haragujr	4
+haranuktagujr	4
+halagujr	4
+havagujr	4
+hannagujr	4
+hanagujr	4
+u 200D	5
+class definition end
+
+class	1,2,3	1,ivowel06-gujr
+class	1,2,4	1,ivowel07-gujr
+class	1,2,5,3	1,ivowel06-gujr
+class	1,2,5,4	1,ivowel07-gujr
+
+lookup end
+
+
+
+
+lookup	ivowelhalf35-gujr	context
+
+class definition begin
+ivowelsigngujr	1
+kassaprehalfgujr	2
+ragujr	3
+ranuktagujr	3
+raragujr	3
+raranuktagujr	3
+dagujr	3
+danuktagujr	3
+dadagujr	3
+ttagujr	3
+ttanuktagujr	3
+ttaragujr	3
+ttaranuktagujr	3
+ttattagujr	3
+ttatthagujr	3
+ddhaddhagujr	3
+ddhagujr	3
+ddhanuktagujr	3
+ddharagujr	3
+ddharanuktagujr	3
+kagujr	3
+phagujr	3
+kanuktagujr	3
+phanuktagujr	3
+ddaddagujr	3
+ddaddhagujr	3
+tthatthagujr	3
+ngagujr	3
+ddagujr	3
+nganuktagujr	3
+ddanuktagujr	3
+ngaragujr	3
+ddaragujr	3
+ngaranuktagujr	3
+ddaranuktagujr	3
+ngakagujr	3
+ngagagujr	3
+ngaghagujr	3
+ngamagujr	3
+karagujr	4
+pharagujr	4
+karanuktagujr	4
+pharanuktagujr	4
+tthagujr	4
+tthanuktagujr	4
+ttharagujr	4
+ttharanuktagujr	4
+daragujr	4
+daranuktagujr	4
+dagagujr	4
+danagujr	4
+haragujr	4
+haranuktagujr	4
+halagujr	4
+havagujr	4
+hannagujr	4
+hanagujr	4
+u 200D	5
+class definition end
+
+class	1,2,3	1,ivowel06-gujr
+class	1,2,4	1,ivowel07-gujr
+class	1,2,5,3	1,ivowel06-gujr
+class	1,2,5,4	1,ivowel07-gujr
+
+lookup end
+
+
+
+
+lookup	ivowelhalf36-gujr	context
+
+class definition begin
+ivowelsigngujr	1
+janyaprehalfgujr	2
+ragujr	3
+ranuktagujr	3
+raragujr	3
+raranuktagujr	3
+dagujr	3
+danuktagujr	3
+dadagujr	3
+ttagujr	3
+ttanuktagujr	3
+ttaragujr	3
+ttaranuktagujr	3
+ttattagujr	3
+ttatthagujr	3
+ddhaddhagujr	3
+ddhagujr	3
+ddhanuktagujr	3
+ddharagujr	3
+ddharanuktagujr	3
+kagujr	3
+phagujr	3
+kanuktagujr	3
+phanuktagujr	3
+ddaddagujr	3
+ddaddhagujr	3
+tthatthagujr	3
+ngagujr	4
+ddagujr	4
+nganuktagujr	4
+ddanuktagujr	4
+ngaragujr	4
+ddaragujr	4
+ngaranuktagujr	4
+ddaranuktagujr	4
+ngakagujr	4
+ngagagujr	4
+ngaghagujr	4
+ngamagujr	4
+karagujr	4
+pharagujr	4
+karanuktagujr	4
+pharanuktagujr	4
+tthagujr	4
+tthanuktagujr	4
+ttharagujr	4
+ttharanuktagujr	4
+daragujr	4
+daranuktagujr	4
+dagagujr	4
+danagujr	4
+haragujr	4
+haranuktagujr	4
+halagujr	4
+havagujr	4
+hannagujr	4
+hanagujr	4
+u 200D	5
+class definition end
+
+class	1,2,3	1,ivowel06-gujr
+class	1,2,4	1,ivowel07-gujr
+class	1,2,5,3	1,ivowel06-gujr
+class	1,2,5,4	1,ivowel07-gujr
+
+lookup end
+
+
+
+lookup	ivowelhalf37-gujr	context
+
+class definition begin
+ivowelsigngujr	1
+kaprehalfgujr	2
+kanuktaprehalfgujr	2
+ttagujr	3
+ragujr	3
+ranuktagujr	3
+ttaragujr	3
+raragujr	3
+raranuktagujr	3
+dagujr	3
+danuktagujr	3
+dadagujr	3
+phagujr	3
+ttanuktagujr	3
+ttaranuktagujr	3
+ttattagujr	3
+ttatthagujr	3
+ddhaddhagujr	3
+ddhagujr	3
+ddhanuktagujr	3
+ddharagujr	3
+ddharanuktagujr	3
+pharagujr	3
+kagujr	3
+kanuktagujr	3
+phanuktagujr	3
+ddaddagujr	4
+ddaddhagujr	4
+tthatthagujr	4
+ngagujr	4
+ddagujr	4
+nganuktagujr	4
+ddanuktagujr	4
+ngaragujr	4
+ddaragujr	4
+ngaranuktagujr	4
+ddaranuktagujr	4
+ngakagujr	4
+ngagagujr	4
+ngaghagujr	4
+ngamagujr	4
+karagujr	4
+karanuktagujr	4
+pharanuktagujr	4
+tthagujr	4
+tthanuktagujr	4
+ttharagujr	4
+ttharanuktagujr	4
+daragujr	4
+daranuktagujr	4
+dagagujr	4
+danagujr	4
+haragujr	4
+haranuktagujr	4
+u 200D	5
+class definition end
+
+class	1,2,3	1,ivowel06-gujr
+class	1,2,4	1,ivowel07-gujr
+class	1,2,5,3	1,ivowel06-gujr
+class	1,2,5,4	1,ivowel07-gujr
+
+lookup end
+
+
+
+lookup	ivowelhalf38-gujr	context
+
+class definition begin
+ivowelsigngujr	1
+phaprehalfgujr	2
+phanuktaprehalfgujr	2
+ttagujr	3
+ragujr	3
+ranuktagujr	3
+ttaragujr	3
+raragujr	3
+raranuktagujr	3
+dagujr	3
+danuktagujr	3
+dadagujr	3
+ttanuktagujr	3
+ttaranuktagujr	3
+ttattagujr	3
+ttatthagujr	3
+ddhaddhagujr	3
+ddhagujr	3
+ddhanuktagujr	3
+ddharagujr	3
+ddharanuktagujr	3
+kagujr	3
+phagujr	3
+kanuktagujr	3
+phanuktagujr	3
+ddaddagujr	4
+ddaddhagujr	4
+tthatthagujr	4
+ngagujr	4
+ddagujr	4
+nganuktagujr	4
+ddanuktagujr	4
+ngaragujr	4
+ddaragujr	4
+ngaranuktagujr	4
+ddaranuktagujr	4
+ngakagujr	4
+ngagagujr	4
+ngaghagujr	4
+ngamagujr	4
+karagujr	4
+pharagujr	4
+karanuktagujr	4
+pharanuktagujr	4
+tthagujr	4
+tthanuktagujr	4
+ttharagujr	4
+ttharanuktagujr	4
+daragujr	4
+daranuktagujr	4
+dagagujr	4
+danagujr	4
+haragujr	4
+haranuktagujr	4
+u 200D	5
+class definition end
+
+class	1,2,3	1,ivowel06-gujr
+class	1,2,4	1,ivowel07-gujr
+class	1,2,5,3	1,ivowel06-gujr
+class	1,2,5,4	1,ivowel07-gujr
+
+lookup end
+
+
+
+
+
+lookup	ivowelhalf39-gujr	context
+
+class definition begin
+ivowelsigngujr	1
+saprehalfgujr	2
+sanuktaprehalfgujr	2
+dagujr	3
+ttagujr	3
+ttaragujr	3
+ragujr	3
+ranuktagujr	3
+raragujr	3
+raranuktagujr	3
+danuktagujr	3
+dadagujr	3
+ddagujr	3
+ddaragujr	3
+ttanuktagujr	3
+ttaranuktagujr	3
+ttattagujr	3
+ttatthagujr	3
+ddhaddhagujr	3
+kagujr	3
+phagujr	3
+ddhagujr	3
+ddhanuktagujr	3
+ddharagujr	3
+ddharanuktagujr	3
+kanuktagujr	3
+phanuktagujr	3
+karagujr	4
+pharagujr	4
+ddaddagujr	4
+ddaddhagujr	4
+tthatthagujr	4
+ngagujr	4
+nganuktagujr	4
+ddanuktagujr	4
+ngaragujr	4
+ngaranuktagujr	4
+ddaranuktagujr	4
+ngakagujr	4
+ngagagujr	4
+ngaghagujr	4
+ngamagujr	4
+karanuktagujr	4
+pharanuktagujr	4
+tthagujr	4
+tthanuktagujr	4
+ttharagujr	4
+ttharanuktagujr	4
+daragujr	4
+daranuktagujr	4
+dagagujr	4
+danagujr	4
+haragujr	4
+haranuktagujr	4
+u 200D	5
+class definition end
+
+class	1,2,3	1,ivowel06-gujr
+class	1,2,4	1,ivowel07-gujr
+class	1,2,5,3	1,ivowel06-gujr
+class	1,2,5,4	1,ivowel07-gujr
+
+lookup end
+
+
+
+
+
+lookup	ivowelhalf40-gujr	context
+
+class definition begin
+ivowelsigngujr	1
+ngaprehalfgujr	2
+nganuktaprehalfgujr	2
+ngaraprehalfgujr	2
+ngaranuktaprehalfgujr	2
+ragujr	3
+ranuktagujr	3
+raragujr	3
+raranuktagujr	3
+dagujr	3
+danuktagujr	3
+dadagujr	3
+ttagujr	3
+ttanuktagujr	3
+ttaragujr	3
+ttaranuktagujr	3
+ttattagujr	3
+ttatthagujr	3
+ddhaddhagujr	3
+ddhagujr	3
+ddhanuktagujr	3
+ddharagujr	3
+ddharanuktagujr	3
+kagujr	3
+phagujr	3
+kanuktagujr	3
+phanuktagujr	3
+ddaddagujr	4
+ddaddhagujr	4
+tthatthagujr	4
+ngagujr	4
+ddagujr	4
+nganuktagujr	4
+ddanuktagujr	4
+ngaragujr	4
+ddaragujr	4
+ngaranuktagujr	4
+ddaranuktagujr	4
+ngakagujr	4
+ngagagujr	4
+ngaghagujr	4
+ngamagujr	4
+karagujr	4
+pharagujr	4
+karanuktagujr	4
+pharanuktagujr	4
+tthagujr	4
+tthanuktagujr	4
+ttharagujr	4
+ttharanuktagujr	4
+daragujr	4
+daranuktagujr	4
+dagagujr	4
+danagujr	4
+haragujr	4
+haranuktagujr	4
+u 200D	5
+class definition end
+
+class	1,2,3	1,ivowel06-gujr
+class	1,2,4	1,ivowel07-gujr
+class	1,2,5,3	1,ivowel06-gujr
+class	1,2,5,4	1,ivowel07-gujr
+
+lookup end
+
+
+
+
+
+lookup	ivowelhalf41-gujr	context
+
+class definition begin
+ivowelsigngujr	1
+ddhaprehalfgujr	2
+ddhanuktaprehalfgujr	2
+ddharaprehalfgujr	2
+ddharanuktaprehalfgujr	2
+ragujr	3
+ranuktagujr	3
+raragujr	3
+raranuktagujr	3
+dagujr	3
+danuktagujr	3
+dadagujr	3
+ttagujr	3
+ttanuktagujr	3
+ttaragujr	3
+ttaranuktagujr	3
+ttattagujr	3
+ttatthagujr	3
+ddhaddhagujr	3
+ddhagujr	3
+ddhanuktagujr	3
+ddharagujr	3
+ddharanuktagujr	3
+kagujr	3
+phagujr	3
+kanuktagujr	3
+phanuktagujr	3
+ddaddagujr	4
+ddaddhagujr	4
+tthatthagujr	4
+ngagujr	4
+ddagujr	4
+nganuktagujr	4
+ddanuktagujr	4
+ngaragujr	4
+ddaragujr	4
+ngaranuktagujr	4
+ddaranuktagujr	4
+ngakagujr	4
+ngagagujr	4
+ngaghagujr	4
+ngamagujr	4
+karagujr	4
+pharagujr	4
+karanuktagujr	4
+pharanuktagujr	4
+tthagujr	4
+tthanuktagujr	4
+ttharagujr	4
+ttharanuktagujr	4
+daragujr	4
+daranuktagujr	4
+dagagujr	4
+danagujr	4
+haragujr	4
+haranuktagujr	4
+u 200D	5
+class definition end
+
+class	1,2,3	1,ivowel06-gujr
+class	1,2,4	1,ivowel07-gujr
+class	1,2,5,3	1,ivowel06-gujr
+class	1,2,5,4	1,ivowel07-gujr
+
+lookup end
+
+
+
+
+
+lookup	ivowelhalf42-gujr	context
+
+class definition begin
+ivowelsigngujr	1
+tthaprehalfgujr	2
+tthanuktaprehalfgujr	2
+ttharaprehalfgujr	2
+ttharanuktaprehalfgujr	2
+ragujr	3
+ranuktagujr	3
+raragujr	3
+raranuktagujr	3
+dagujr	3
+danuktagujr	3
+dadagujr	3
+ttagujr	3
+ttanuktagujr	3
+ttaragujr	3
+ttaranuktagujr	3
+ttattagujr	3
+ttatthagujr	3
+ddhaddhagujr	3
+ddhagujr	3
+ddhanuktagujr	3
+ddharagujr	3
+ddharanuktagujr	3
+kagujr	4
+phagujr	4
+kanuktagujr	4
+phanuktagujr	4
+ddaddagujr	4
+ddaddhagujr	4
+tthatthagujr	4
+ngagujr	4
+ddagujr	4
+nganuktagujr	4
+ddanuktagujr	4
+ngaragujr	4
+ddaragujr	4
+ngaranuktagujr	4
+ddaranuktagujr	4
+ngakagujr	4
+ngagagujr	4
+ngaghagujr	4
+ngamagujr	4
+karagujr	4
+pharagujr	4
+karanuktagujr	4
+pharanuktagujr	4
+tthagujr	4
+tthanuktagujr	4
+ttharagujr	4
+ttharanuktagujr	4
+daragujr	4
+daranuktagujr	4
+dagagujr	4
+danagujr	4
+haragujr	4
+haranuktagujr	4
+u 200D	5
+class definition end
+
+class	1,2,3	1,ivowel06-gujr
+class	1,2,4	1,ivowel07-gujr
+class	1,2,5,3	1,ivowel06-gujr
+class	1,2,5,4	1,ivowel07-gujr
+
+lookup end
+
+
+
+lookup	ivowelhalf43-gujr	context
+
+class definition begin
+ivowelsigngujr	1
+janyaraprehalfgujr	2
+ragujr	3
+ranuktagujr	3
+raragujr	3
+raranuktagujr	3
+dagujr	3
+danuktagujr	3
+dadagujr	3
+ttagujr	3
+ttanuktagujr	3
+ttaragujr	3
+ttaranuktagujr	3
+ttattagujr	3
+ttatthagujr	3
+ddhaddhagujr	3
+ddhagujr	4
+ddhanuktagujr	4
+ddharagujr	4
+ddharanuktagujr	4
+kagujr	4
+phagujr	4
+kanuktagujr	4
+phanuktagujr	4
+ddaddagujr	4
+ddaddhagujr	4
+tthatthagujr	4
+ngagujr	4
+ddagujr	4
+nganuktagujr	4
+ddanuktagujr	4
+ngaragujr	4
+ddaragujr	4
+ngaranuktagujr	4
+ddaranuktagujr	4
+ngakagujr	4
+ngagagujr	4
+ngaghagujr	4
+ngamagujr	4
+karagujr	4
+pharagujr	4
+karanuktagujr	4
+pharanuktagujr	4
+tthagujr	4
+tthanuktagujr	4
+ttharagujr	4
+ttharanuktagujr	4
+daragujr	4
+daranuktagujr	4
+dagagujr	4
+danagujr	4
+haragujr	4
+haranuktagujr	4
+u 200D	5
+class definition end
+
+class	1,2,3	1,ivowel06-gujr
+class	1,2,4	1,ivowel07-gujr
+class	1,2,5,3	1,ivowel06-gujr
+class	1,2,5,4	1,ivowel07-gujr
+
+lookup end
+
+
+
+
+
+lookup	ivowelhalf44-gujr	context
+
+class definition begin
+ivowelsigngujr	1
+llaprehalfgujr	2
+llanuktaprehalfgujr	2
+ragujr	3
+ranuktagujr	3
+raragujr	3
+raranuktagujr	3
+dagujr	3
+danuktagujr	3
+dadagujr	3
+ttagujr	3
+ttanuktagujr	3
+ttaragujr	3
+ttaranuktagujr	3
+ttattagujr	3
+ttatthagujr	3
+ddhaddhagujr	3
+ddhagujr	4
+ddhanuktagujr	4
+ddharagujr	4
+ddharanuktagujr	4
+kagujr	4
+phagujr	4
+kanuktagujr	4
+phanuktagujr	4
+ddaddagujr	4
+ddaddhagujr	4
+tthatthagujr	4
+ngagujr	4
+ddagujr	4
+nganuktagujr	4
+ddanuktagujr	4
+ngaragujr	4
+ddaragujr	4
+ngaranuktagujr	4
+ddaranuktagujr	4
+ngakagujr	4
+ngagagujr	4
+ngaghagujr	4
+ngamagujr	4
+karagujr	4
+pharagujr	4
+karanuktagujr	4
+pharanuktagujr	4
+tthagujr	4
+tthanuktagujr	4
+ttharagujr	4
+ttharanuktagujr	4
+daragujr	4
+daranuktagujr	4
+dagagujr	4
+danagujr	4
+haragujr	4
+haranuktagujr	4
+u 200D	5
+class definition end
+
+class	1,2,3	1,ivowel06-gujr
+class	1,2,4	1,ivowel07-gujr
+class	1,2,5,3	1,ivowel06-gujr
+class	1,2,5,4	1,ivowel07-gujr
+
+lookup end
+
+
+
+
+
+lookup	ivowelhalf45-gujr	context
+
+class definition begin
+ivowelsigngujr	1
+llaraprehalfgujr	2
+llaranuktaprehalfgujr	2
+ragujr	3
+ranuktagujr	3
+raragujr	3
+raranuktagujr	3
+dagujr	3
+danuktagujr	3
+dadagujr	3
+ttagujr	3
+ttanuktagujr	3
+ttaragujr	3
+ttaranuktagujr	3
+ttattagujr	3
+ttatthagujr	3
+ddhaddhagujr	4
+ddhagujr	4
+ddhanuktagujr	4
+ddharagujr	4
+ddharanuktagujr	4
+kagujr	4
+phagujr	4
+kanuktagujr	4
+phanuktagujr	4
+ddaddagujr	4
+ddaddhagujr	4
+tthatthagujr	4
+ngagujr	4
+ddagujr	4
+nganuktagujr	4
+ddanuktagujr	4
+ngaragujr	4
+ddaragujr	4
+ngaranuktagujr	4
+ddaranuktagujr	4
+ngakagujr	4
+ngagagujr	4
+ngaghagujr	4
+ngamagujr	4
+karagujr	4
+pharagujr	4
+karanuktagujr	4
+pharanuktagujr	4
+tthagujr	4
+tthanuktagujr	4
+ttharagujr	4
+ttharanuktagujr	4
+daragujr	4
+daranuktagujr	4
+dagagujr	4
+danagujr	4
+haragujr	4
+haranuktagujr	4
+u 200D	5
+class definition end
+
+class	1,2,3	1,ivowel06-gujr
+class	1,2,4	1,ivowel07-gujr
+class	1,2,5,3	1,ivowel06-gujr
+class	1,2,5,4	1,ivowel07-gujr
+
+lookup end
+
+
+
+
+
+
+% lookup	ivowelhalf46-gujr	context
+
+class definition begin
+ivowelsigngujr	1
+%x ngaraprehalfUIgujr	2
+%x ngaranuktaprehalfUIgujr	2
+ragujr	3
+ranuktagujr	3
+raragujr	3
+raranuktagujr	3
+dagujr	3
+danuktagujr	3
+dadagujr	3
+ttagujr	4
+ttanuktagujr	4
+ttaragujr	4
+ttaranuktagujr	4
+ttattagujr	4
+ttatthagujr	4
+ddhaddhagujr	4
+ddhagujr	4
+ddhanuktagujr	4
+ddharagujr	4
+ddharanuktagujr	4
+kagujr	4
+phagujr	4
+kanuktagujr	4
+phanuktagujr	4
+ddaddagujr	4
+ddaddhagujr	4
+tthatthagujr	4
+ngagujr	4
+ddagujr	4
+nganuktagujr	4
+ddanuktagujr	4
+ngaragujr	4
+ddaragujr	4
+ngaranuktagujr	4
+ddaranuktagujr	4
+ngakagujr	4
+ngagagujr	4
+ngaghagujr	4
+ngamagujr	4
+karagujr	4
+pharagujr	4
+karanuktagujr	4
+pharanuktagujr	4
+tthagujr	4
+tthanuktagujr	4
+ttharagujr	4
+ttharanuktagujr	4
+daragujr	4
+daranuktagujr	4
+dagagujr	4
+danagujr	4
+haragujr	4
+haranuktagujr	4
+u 200D	5
+class definition end
+
+class	1,2,3	1,ivowel06-gujr
+class	1,2,4	1,ivowel07-gujr
+class	1,2,5,3	1,ivowel06-gujr
+class	1,2,5,4	1,ivowel07-gujr
+
+lookup end
+
+
+
+
+
+
+lookup	ivowelhalf47-gujr	context
+
+class definition begin
+ivowelsigngujr	1
+karaprehalfgujr	2
+karanuktaprehalfgujr	2
+ragujr	3
+ranuktagujr	3
+raragujr	3
+raranuktagujr	3
+dagujr	3
+danuktagujr	3
+dadagujr	3
+ttagujr	4
+ttanuktagujr	4
+ttaragujr	4
+ttaranuktagujr	4
+ttattagujr	4
+ttatthagujr	4
+ddhaddhagujr	4
+ddhagujr	4
+ddhanuktagujr	4
+ddharagujr	4
+ddharanuktagujr	4
+kagujr	4
+phagujr	4
+kanuktagujr	4
+phanuktagujr	4
+ddaddagujr	4
+ddaddhagujr	4
+tthatthagujr	4
+ngagujr	4
+ddagujr	4
+nganuktagujr	4
+ddanuktagujr	4
+ngaragujr	4
+ddaragujr	4
+ngaranuktagujr	4
+ddaranuktagujr	4
+ngakagujr	4
+ngagagujr	4
+ngaghagujr	4
+ngamagujr	4
+karagujr	4
+pharagujr	4
+karanuktagujr	4
+pharanuktagujr	4
+tthagujr	4
+tthanuktagujr	4
+ttharagujr	4
+ttharanuktagujr	4
+daragujr	4
+daranuktagujr	4
+dagagujr	4
+danagujr	4
+haragujr	4
+haranuktagujr	4
+u 200D	5
+class definition end
+
+class	1,2,3	1,ivowel06-gujr
+class	1,2,4	1,ivowel07-gujr
+class	1,2,5,3	1,ivowel06-gujr
+class	1,2,5,4	1,ivowel07-gujr
+
+lookup end
+
+
+lookup	ivowelhalf48-gujr	context
+
+class definition begin
+ivowelsigngujr	1
+pharaprehalfgujr	2
+pharanuktaprehalfgujr	2
+ragujr	3
+ranuktagujr	3
+raragujr	3
+raranuktagujr	3
+dagujr	3
+danuktagujr	3
+dadagujr	3
+ttagujr	4
+ttanuktagujr	4
+ttaragujr	4
+ttaranuktagujr	4
+ttattagujr	4
+ttatthagujr	4
+ddhaddhagujr	4
+ddhagujr	4
+ddhanuktagujr	4
+ddharagujr	4
+ddharanuktagujr	4
+kagujr	4
+phagujr	4
+kanuktagujr	4
+phanuktagujr	4
+ddaddagujr	4
+ddaddhagujr	4
+tthatthagujr	4
+ngagujr	4
+ddagujr	4
+nganuktagujr	4
+ddanuktagujr	4
+ngaragujr	4
+ddaragujr	4
+ngaranuktagujr	4
+ddaranuktagujr	4
+ngakagujr	4
+ngagagujr	4
+ngaghagujr	4
+ngamagujr	4
+karagujr	4
+pharagujr	4
+karanuktagujr	4
+pharanuktagujr	4
+tthagujr	4
+tthanuktagujr	4
+ttharagujr	4
+ttharanuktagujr	4
+daragujr	4
+daranuktagujr	4
+dagagujr	4
+danagujr	4
+haragujr	4
+haranuktagujr	4
+u 200D	5
+class definition end
+
+class	1,2,3	1,ivowel06-gujr
+class	1,2,4	1,ivowel07-gujr
+class	1,2,5,3	1,ivowel06-gujr
+class	1,2,5,4	1,ivowel07-gujr
+
+lookup end
+
+
+
+lookup	ivowelhalf49-gujr	context
+
+class definition begin
+ivowelsigngujr	1
+saraprehalfgujr	2
+saranuktaprehalfgujr	2
+ragujr	3
+ranuktagujr	3
+raragujr	3
+raranuktagujr	3
+dagujr	3
+danuktagujr	3
+dadagujr	3
+ttagujr	4
+ttanuktagujr	4
+ttaragujr	4
+ttaranuktagujr	4
+ttattagujr	4
+ttatthagujr	4
+ddhaddhagujr	4
+ddhagujr	4
+ddhanuktagujr	4
+ddharagujr	4
+ddharanuktagujr	4
+kagujr	4
+phagujr	4
+kanuktagujr	4
+phanuktagujr	4
+ddaddagujr	4
+ddaddhagujr	4
+tthatthagujr	4
+ngagujr	4
+ddagujr	4
+nganuktagujr	4
+ddanuktagujr	4
+ngaragujr	4
+ddaragujr	4
+ngaranuktagujr	4
+ddaranuktagujr	4
+ngakagujr	4
+ngagagujr	4
+ngaghagujr	4
+ngamagujr	4
+karagujr	4
+pharagujr	4
+karanuktagujr	4
+pharanuktagujr	4
+tthagujr	4
+tthanuktagujr	4
+ttharagujr	4
+ttharanuktagujr	4
+daragujr	4
+daranuktagujr	4
+dagagujr	4
+danagujr	4
+haragujr	4
+haranuktagujr	4
+u 200D	5
+class definition end
+
+class	1,2,3	1,ivowel06-gujr
+class	1,2,4	1,ivowel07-gujr
+class	1,2,5,3	1,ivowel06-gujr
+class	1,2,5,4	1,ivowel07-gujr
+
+lookup end
+
+
+lookup	ivowelhalf50-gujr	context
+
+class definition begin
+ivowelsigngujr	1
+baprehalfgujr	2
+banuktaprehalfgujr	2
+baraprehalfgujr	2
+baranuktaprehalfgujr	2
+dagujr	3
+ragujr	3
+ranuktagujr	3
+raragujr	3
+raranuktagujr	3
+danuktagujr	3
+dadagujr	3
+ddagujr	3
+ddaragujr	3
+ttagujr	4
+ttanuktagujr	4
+ttaragujr	4
+ttaranuktagujr	4
+ttattagujr	4
+ttatthagujr	4
+ddhaddhagujr	4
+ddhagujr	4
+ddhanuktagujr	4
+ddharagujr	4
+ddharanuktagujr	4
+kagujr	4
+phagujr	4
+kanuktagujr	4
+phanuktagujr	4
+ddaddagujr	4
+ddaddhagujr	4
+tthatthagujr	4
+ngagujr	4
+nganuktagujr	4
+ddanuktagujr	4
+ngaragujr	4
+ngaranuktagujr	4
+ddaranuktagujr	4
+ngakagujr	4
+ngagagujr	4
+ngaghagujr	4
+ngamagujr	4
+karagujr	4
+pharagujr	4
+karanuktagujr	4
+pharanuktagujr	4
+tthagujr	4
+tthanuktagujr	4
+ttharagujr	4
+ttharanuktagujr	4
+u 200D	5
+class definition end
+
+class	1,2,3	1,ivowel06-gujr
+class	1,2,4	1,ivowel07-gujr
+class	1,2,5,3	1,ivowel06-gujr
+class	1,2,5,4	1,ivowel07-gujr
+
+lookup end
+
+
+lookup	ivowelhalf51-gujr	context
+
+class definition begin
+ivowelsigngujr	1
+kassaraprehalfgujr	2
+ragujr	3
+ranuktagujr	3
+raragujr	3
+raranuktagujr	3
+dagujr	3
+danuktagujr	3
+dadagujr	3
+ttagujr	4
+ttanuktagujr	4
+ttaragujr	4
+ttaranuktagujr	4
+ttattagujr	4
+ttatthagujr	4
+ddhaddhagujr	4
+ddhagujr	4
+ddhanuktagujr	4
+ddharagujr	4
+ddharanuktagujr	4
+kagujr	4
+phagujr	4
+kanuktagujr	4
+phanuktagujr	4
+ddaddagujr	4
+ddaddhagujr	4
+tthatthagujr	4
+ngagujr	4
+ddagujr	4
+nganuktagujr	4
+ddanuktagujr	4
+ngaragujr	4
+ddaragujr	4
+ngaranuktagujr	4
+ddaranuktagujr	4
+ngakagujr	4
+ngagagujr	4
+ngaghagujr	4
+ngamagujr	4
+karagujr	4
+pharagujr	4
+karanuktagujr	4
+pharanuktagujr	4
+u 200D	5
+class definition end
+
+class	1,2,3	1,ivowel06-gujr
+class	1,2,4	1,ivowel07-gujr
+class	1,2,5,3	1,ivowel06-gujr
+class	1,2,5,4	1,ivowel07-gujr
+
+lookup end
+
+
+
+lookup	ivowelhalf52-gujr	context
+
+class definition begin
+ivowelsigngujr	1
+khaprehalfgujr	2
+khanuktaprehalfgujr	2
+kharaprehalfgujr	2
+kharanuktaprehalfgujr	2
+ragujr	3
+ranuktagujr	3
+raragujr	3
+raranuktagujr	3
+dagujr	3
+danuktagujr	3
+dadagujr	3
+ttagujr	3
+ttanuktagujr	3
+ttaragujr	3
+ttaranuktagujr	3
+ttattagujr	3
+ttatthagujr	3
+ddhaddhagujr	3
+ddhagujr	3
+ddhanuktagujr	3
+ddharagujr	3
+ddharanuktagujr	3
+kagujr	3
+phagujr	3
+kanuktagujr	3
+phanuktagujr	3
+ddaddagujr	3
+ddaddhagujr	3
+tthatthagujr	3
+u 200D	4
+class definition end
+
+class	1,2,3	1,ivowel07-gujr
+class	1,2,4,3	1,ivowel07-gujr
+
+lookup end
+
+
+
+lookup	ivowelhalf53-gujr	context
+
+class definition begin
+ivowelsigngujr	1
+bhaprehalfgujr	2
+bhanuktaprehalfgujr	2
+bharaprehalfgujr	2
+bharanuktaprehalfgujr	2
+nnaprehalfgujr	2
+nnanuktaprehalfgujr	2
+ragujr	3
+ranuktagujr	3
+raragujr	3
+raranuktagujr	3
+dagujr	3
+danuktagujr	3
+dadagujr	3
+u 200D	4
+class definition end
+
+class	1,2,3	1,ivowel07-gujr
+class	1,2,4,3	1,ivowel07-gujr
+
+lookup end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+lookup	ivowelcontextbase-gujr	context
+
+class definition begin
+ivowelsigngujr	1
+ragujr	2
+ranuktagujr	2
+raragujr	2
+raranuktagujr	2
+dagujr	2
+danuktagujr	2
+dadagujr	2
+ttagujr	2
+ttanuktagujr	2
+ttaragujr	2
+ttaranuktagujr	2
+ttattagujr	2
+ttatthagujr	2
+ddhaddhagujr	2
+ddhagujr	2
+ddhanuktagujr	2
+ddharagujr	2
+ddharanuktagujr	2
+kagujr	2
+phagujr	2
+kanuktagujr	2
+phanuktagujr	2
+ddaddagujr	2
+ddaddhagujr	2
+tthatthagujr	2
+ngagujr	2
+ddagujr	2
+nganuktagujr	2
+ddanuktagujr	2
+ngaragujr	2
+ddaragujr	2
+ngaranuktagujr	2
+ddaranuktagujr	2
+ngakagujr	2
+ngagagujr	2
+ngaghagujr	2
+ngamagujr	2
+karagujr	2
+pharagujr	2
+karanuktagujr	2
+pharanuktagujr	2
+tthagujr	2
+tthanuktagujr	2
+ttharagujr	2
+ttharanuktagujr	2
+daragujr	2
+daranuktagujr	2
+dagagujr	2
+danagujr	2
+haragujr	3
+haranuktagujr	3
+halagujr	3
+havagujr	3
+hannagujr	3
+hanagujr	3
+hagujr	4
+hanuktagujr	4
+dabhagujr	4
+%pagujr	4
+panuktagujr	4
+%paragujr	4
+paranuktagujr	4
+nagujr	4
+nanuktagujr	4
+naragujr	4
+naranuktagujr	4
+ssagujr	4
+ssanuktagujr	4
+ssaragujr	4
+ssaranuktagujr	4
+davagujr	4
+vagujr	4
+vanuktagujr	4
+varagujr	4
+varanuktagujr	4
+tagujr	4
+tanuktagujr	4
+dabagujr	4
+magujr	4
+manuktagujr	4
+maragujr	4
+maranuktagujr	4
+taragujr	4
+taranuktagujr	4
+yagujr	4
+yanuktagujr	4
+yaragujr	4
+yaranuktagujr	4
+dhagujr	4
+dhanuktagujr	4
+dharagujr	4
+dharanuktagujr	4
+nanagujr	4
+ghagujr	4
+ghanuktagujr	4
+gharagujr	4
+gharanuktagujr	4
+dayagujr	4
+chavagujr	4
+chagujr	4
+chanuktagujr	4
+charagujr	4
+charanuktagujr	4
+thagujr	4
+thanuktagujr	4
+tharagujr	4
+tharanuktagujr	4
+jhagujr	4
+jhanuktagujr	4
+jharagujr	4
+jharanuktagujr	4
+ssattagujr	4
+ssattaragujr	4
+lagujr	5
+lanuktagujr	5
+laragujr	5
+laranuktagujr	5
+daghagujr	5
+cagujr	5
+canuktagujr	5
+caragujr	5
+caranuktagujr	5
+tatagujr	5
+dadhagujr	5
+gagujr	5
+ganuktagujr	5
+garagujr	5
+garanuktagujr	5
+llagujr	5
+llanuktagujr	5
+llaragujr	5
+llaranuktagujr	5
+nyagujr	5
+nyanuktagujr	5
+nyaragujr	5
+nyaranuktagujr	5
+shagujr	5
+shanuktagujr	5
+ganagujr	5
+damagujr	5
+janyagujr	5
+sagujr	5
+sanuktagujr	5
+sharagujr	5
+sharanuktagujr	5
+ssatthagujr	5
+ssattharagujr	5
+shanagujr	5
+janyaragujr	5
+kassagujr	5
+napreformaltgujr	5
+saragujr	6
+saranuktagujr	6
+bagujr	6
+banuktagujr	6
+baragujr	6
+baranuktagujr	6
+khagujr	6
+khanuktagujr	6
+kharagujr	6
+kharanuktagujr	6
+kassaragujr	6
+jagujr	6
+januktagujr	6
+jaragujr	6
+jaranuktagujr	6
+kakagujr	6
+zhagujr	6
+zharagujr	6
+nyacagujr	6
+nyajagujr	6
+bhagujr	6
+bhanuktagujr	6
+bharagujr	6
+bharanuktagujr	6
+hamagujr	6
+hayagujr	6
+sapreformaltgujr	6
+nnagujr	7
+nnanuktagujr	7
+nnaragujr	7
+nnaranuktagujr	7
+shacagujr	7
+shavagujr	7
+badagujr	7
+papreformaltgujr	8
+mapreformaltgujr	8
+pagujr	9
+paragujr	9
+class definition end
+
+class	1,2	1,ivowel01-gujr
+class	1,3	1,ivowel02-gujr
+class	1,4	1,ivowel03-gujr
+class	1,5	1,ivowel04-gujr
+class	1,6	1,ivowel05-gujr
+class	1,7	1,ivowel06-gujr
+class	1,8,9	1,ivowel06-gujr
+class	1,9	1,ivowel03-gujr
+
+lookup end
+
+
+
+
+
+
+lookup	ivowel01-gujr	single
+
+ivowelsigngujr	ivowelsign1gujr
+
+lookup end
+
+
+lookup	ivowel02-gujr	single
+
+ivowelsigngujr	ivowelsign2gujr
+
+lookup end
+
+
+lookup	ivowel03-gujr	single
+
+ivowelsigngujr	ivowelsign3gujr
+
+lookup end
+
+
+lookup	ivowel04-gujr	single
+
+ivowelsigngujr	ivowelsign4gujr
+
+lookup end
+
+
+lookup	ivowel05-gujr	single
+
+ivowelsigngujr	ivowelsign5gujr
+
+lookup end
+
+
+lookup	ivowel06-gujr	single
+
+ivowelsigngujr	ivowelsign6gujr
+
+lookup end
+
+
+
+lookup	ivowel07-gujr	single
+
+ivowelsigngujr	ivowelsigndefaultgujr
+
+lookup end
+
+
+
+
+
+lookup	i-context2-gujr	context
+
+class definition begin
+ivowelsigndefaultgujr	1
+ivowelsign1gujr	1
+ivowelsign2gujr	1
+ivowelsign3gujr	1
+ivowelsign4gujr	1
+ivowelsign5gujr	1
+ivowelsign6gujr	1
+%
+anusvaragujr	2
+%candrabindugujr	2
+rephgujr	3
+rephanusvaragujr	4
+%
+taprehalfgujr	5
+tanuktaprehalfgujr	5
+naprehalfgujr	5
+nanuktaprehalfgujr	5
+naraprehalfgujr	5
+naranuktaprehalfgujr	5
+taraprehalfgujr	5
+taranuktaprehalfgujr	5
+paprehalfgujr	5
+panuktaprehalfgujr	5
+paraprehalfgujr	5
+paranuktaprehalfgujr	5
+maprehalfgujr	5
+manuktaprehalfgujr	5
+maraprehalfgujr	5
+maranuktaprehalfgujr	5
+vaprehalfgujr	5
+vanuktaprehalfgujr	5
+varaprehalfgujr	5
+varanuktaprehalfgujr	5
+dhaprehalfgujr	5
+dhanuktaprehalfgujr	5
+dharaprehalfgujr	5
+dharanuktaprehalfgujr	5
+ssaprehalfgujr	5
+ssanuktaprehalfgujr	5
+ssaraprehalfgujr	5
+ssaranuktaprehalfgujr	5
+ghaprehalfgujr	5
+ghanuktaprehalfgujr	5
+gharaprehalfgujr	5
+gharanuktaprehalfgujr	5
+yaprehalfgujr	5
+yanuktaprehalfgujr	5
+yaraprehalfgujr	5
+yaranuktaprehalfgujr	5
+gaprehalfgujr	5
+ganuktaprehalfgujr	5
+shapreformaltgujr	5
+shaprehalfgujr	5
+shanuktaprehalfgujr	5
+thaprehalfgujr	5
+thanuktaprehalfgujr	5
+tharaprehalfgujr	5
+tharanuktaprehalfgujr	5
+%x raraprehalfUIgujr	5
+%x raranuktaprehalfUIgujr	5
+tatapreformgujr	5
+garaprehalfgujr	5
+garanuktaprehalfgujr	5
+raprehalfgujr	5
+ranuktaprehalfgujr	5
+raraprehalfgujr	5
+raranuktaprehalfgujr	5
+caprehalfgujr	5
+canuktaprehalfgujr	5
+caraprehalfgujr	5
+caranuktaprehalfgujr	5
+%x ttaraprehalfUIgujr	5
+%x ttaranuktaprehalfUIgujr	5
+laprehalfgujr	5
+lanuktaprehalfgujr	5
+laraprehalfgujr	5
+laranuktaprehalfgujr	5
+ttaprehalfgujr	5
+ttanuktaprehalfgujr	5
+ttaraprehalfgujr	5
+ttaranuktaprehalfgujr	5
+haprehalfgujr	5
+hanuktaprehalfgujr	5
+daprehalfgujr	5
+danuktaprehalfgujr	5
+%x ddaraprehalfUIgujr	5
+%x ddaranuktaprehalfUIgujr	5
+nyaprehalfgujr	5
+nyanuktaprehalfgujr	5
+nyaraprehalfgujr	5
+nyaranuktaprehalfgujr	5
+ddaprehalfgujr	5
+ddanuktaprehalfgujr	5
+ddaraprehalfgujr	5
+ddaranuktaprehalfgujr	5
+%x ddharaprehalfUIgujr	5
+%x ddharanuktaprehalfUIgujr	5
+sharaprehalfgujr	5
+sharanuktaprehalfgujr	5
+%x ttharaprehalfUIgujr	5
+%x ttharanuktaprehalfUIgujr	5
+daraprehalfgujr	5
+%x daraprehalfUIgujr	5
+daranuktaprehalfgujr	5
+kassaprehalfgujr	5
+janyaprehalfgujr	5
+kaprehalfgujr	5
+kanuktaprehalfgujr	5
+phaprehalfgujr	5
+phanuktaprehalfgujr	5
+saprehalfgujr	5
+sanuktaprehalfgujr	5
+ngaprehalfgujr	5
+nganuktaprehalfgujr	5
+ngaraprehalfgujr	5
+ngaranuktaprehalfgujr	5
+ddhaprehalfgujr	5
+ddhanuktaprehalfgujr	5
+ddharaprehalfgujr	5
+ddharanuktaprehalfgujr	5
+tthaprehalfgujr	5
+tthanuktaprehalfgujr	5
+ttharaprehalfgujr	5
+ttharanuktaprehalfgujr	5
+janyaraprehalfgujr	5
+llaprehalfgujr	5
+llanuktaprehalfgujr	5
+llaraprehalfgujr	5
+llaranuktaprehalfgujr	5
+%x ngaraprehalfUIgujr	5
+%x ngaranuktaprehalfUIgujr	5
+karaprehalfgujr	5
+karanuktaprehalfgujr	5
+pharaprehalfgujr	5
+pharanuktaprehalfgujr	5
+saraprehalfgujr	5
+saranuktaprehalfgujr	5
+baprehalfgujr	5
+banuktaprehalfgujr	5
+baraprehalfgujr	5
+baranuktaprehalfgujr	5
+kassaraprehalfgujr	5
+khaprehalfgujr	5
+khanuktaprehalfgujr	5
+kharaprehalfgujr	5
+kharanuktaprehalfgujr	5
+napreformaltgujr	5
+papreformaltgujr	5
+mapreformaltgujr	5
+sapreformaltgujr	5
+u 200D	6
+class definition end
+
+class	1,0,2	1,ianusvara-gujr	3,removemark-gujr
+class	1,0,3	1,ireph-gujr	3,removemark-gujr
+class	1,0,4	1,irephanusvara-gujr	3,removemark-gujr
+class	1,5,0,2	1,ianusvara-gujr	4,removemark-gujr
+class	1,5,0,3	1,ireph-gujr	4,removemark-gujr
+class	1,5,0,4	1,irephanusvara-gujr	4,removemark-gujr
+class	1,5,6,0,2	1,ianusvara-gujr	5,removemark-gujr
+class	1,5,6,0,3	1,ireph-gujr	5,removemark-gujr
+class	1,5,6,0,4	1,irephanusvara-gujr	5,removemark-gujr
+
+lookup end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+lookup	ianusvara-gujr	single
+
+ivowelsigndefaultgujr	ivowelsignanusvaragujr
+ivowelsign1gujr	ivowelsignanusvara1gujr
+ivowelsign2gujr	ivowelsignanusvara2gujr
+ivowelsign3gujr	ivowelsignanusvara3gujr
+ivowelsign4gujr	ivowelsignanusvara4gujr
+ivowelsign5gujr	ivowelsignanusvara5gujr
+ivowelsign6gujr	ivowelsignanusvara6gujr
+
+lookup end
+
+
+lookup	ireph-gujr	single
+
+ivowelsigndefaultgujr	ivowelsignrephgujr
+ivowelsign1gujr	ivowelsignreph1gujr
+ivowelsign2gujr	ivowelsignreph2gujr
+ivowelsign3gujr	ivowelsignreph3gujr
+ivowelsign4gujr	ivowelsignreph4gujr
+ivowelsign5gujr	ivowelsignreph5gujr
+ivowelsign6gujr	ivowelsignreph6gujr
+
+lookup end
+
+
+lookup	irephanusvara-gujr	single
+
+ivowelsigndefaultgujr	ivowelsignrephanusvaragujr
+ivowelsign1gujr	ivowelsignrephanusvara1gujr
+ivowelsign2gujr	ivowelsignrephanusvara2gujr
+ivowelsign3gujr	ivowelsignrephanusvara3gujr
+ivowelsign4gujr	ivowelsignrephanusvara4gujr
+ivowelsign5gujr	ivowelsignrephanusvara5gujr
+ivowelsign6gujr	ivowelsignrephanusvara6gujr
+
+lookup end
+
+
+lookup	removemark-gujr	single
+
+anusvaragujr	dummymarkgujr
+rephgujr	dummymarkgujr
+rephanusvaragujr	dummymarkgujr
+candrabindugujr	dummymarkgujr
+
+lookup end
+
+
+
+lookup	swap_ivowel-guja	context
+
+class definition begin
+ivowelsigngujr	1
+u 25CC	2
+u 0020	2
+u 200B	2
+igujr	2
+iigujr	2
+ugujr	2
+uugujr	2
+rvocalicgujr	2
+lvocalicgujr	2
+rrvocalicgujr	2
+llvocalicgujr	2
+class definition end
+
+class	1,0	1,swapivowel-guja
+
+lookup end
+
+
+lookup	swapivowel-guja	single
+
+ivowelsigngujr	ivowelsigndefaultgujr
+
+lookup end
+
+
+
+lookup	belowmaatra-gujr	ligature
+
+markattachmenttype	2
+
+ttattaugujr	ttattagujr	uvowelsigngujr
+ttattauugujr	ttattagujr	uuvowelsigngujr
+ttatthauugujr	ttatthagujr	uuvowelsigngujr
+tthatthaugujr	tthatthagujr	uvowelsigngujr
+ddaddaugujr	ddaddagujr	uvowelsigngujr
+nnauvowelgujr	nnagujr	uvowelsigngujr
+nnarauvowelgujr	nnaragujr	uvowelsigngujr
+darvocalicvowelgujr	dagujr	rvocalicvowelsigngujr
+rauvowelgujr	ragujr	uvowelsigngujr
+rauuvowelgujr	ragujr	uuvowelsigngujr
+harvocalicvowelgujr	hagujr	rvocalicvowelsigngujr
+nnauvowelnuktagujr	nnanuktagujr	uvowelsigngujr
+nnarauvowelnuktagujr	nnaranuktagujr	uvowelsigngujr
+darvocalicvowelnuktagujr	danuktagujr	rvocalicvowelsigngujr
+rauvowelnuktagujr	ranuktagujr	uvowelsigngujr
+rauuvowelnuktagujr	ranuktagujr	uuvowelsigngujr
+harvocalicvowelnuktagujr	hanuktagujr	rvocalicvowelsigngujr
+kanuktauvowelgujr	kanuktagujr	uvowelsigngujr
+ddanuktauvowelgujr	ddanuktagujr	uvowelsigngujr
+ddhanuktauvowelgujr	ddhanuktagujr	uvowelsigngujr
+karanuktauvowelgujr	karanuktagujr	uvowelsigngujr
+kanuktauuvowelgujr	kanuktagujr	uuvowelsigngujr
+ddanuktauuvowelgujr	ddanuktagujr	uuvowelsigngujr
+ddhanuktauuvowelgujr	ddhanuktagujr	uuvowelsigngujr
+karanuktauuvowelgujr	karanuktagujr	uuvowelsigngujr
+%voor UI
+%phanuktauvowelgujr	phanuktagujr	uvowelsigngujr
+%pharanuktauvowelgujr	pharanuktagujr	uvowelsigngujr
+%pharanuktauuvowelgujr	pharanuktagujr	uuvowelsigngujr
+%phanuktauuvowelgujr	phanuktagujr	uuvowelsigngujr
+
+lookup end
+
+
+lookup	stemswap-gujr	context
+
+markattachmenttype	2
+
+class definition begin
+phagujr	1
+phanuktagujr	1
+pharagujr	1
+pharanuktagujr	1
+%
+khagujr	2
+gagujr	2
+ghagujr	2
+cagujr	2
+nyagujr	2
+nnagujr	2
+tagujr	2
+thagujr	2
+dhagujr	2
+nagujr	2
+pagujr	2
+bagujr	2
+bhagujr	2
+magujr	2
+yagujr	2
+lagujr	2
+llagujr	2
+vagujr	2
+shagujr	2
+ssagujr	2
+sagujr	2
+kassagujr	2
+janyagujr	2
+khanuktagujr	2
+ganuktagujr	2
+ghanuktagujr	2
+canuktagujr	2
+nyanuktagujr	2
+nnanuktagujr	2
+tanuktagujr	2
+thanuktagujr	2
+dhanuktagujr	2
+nanuktagujr	2
+panuktagujr	2
+banuktagujr	2
+bhanuktagujr	2
+manuktagujr	2
+yanuktagujr	2
+lanuktagujr	2
+llanuktagujr	2
+vanuktagujr	2
+shanuktagujr	2
+ssanuktagujr	2
+sanuktagujr	2
+kharagujr	2
+garagujr	2
+gharagujr	2
+caragujr	2
+nyaragujr	2
+nnaragujr	2
+taragujr	2
+tharagujr	2
+dharagujr	2
+naragujr	2
+paragujr	2
+baragujr	2
+bharagujr	2
+maragujr	2
+yaragujr	2
+laragujr	2
+llaragujr	2
+varagujr	2
+sharagujr	2
+ssaragujr	2
+saragujr	2
+haragujr	2
+kassaragujr	2
+janyaragujr	2
+kharanuktagujr	2
+garanuktagujr	2
+gharanuktagujr	2
+caranuktagujr	2
+nyaranuktagujr	2
+nnaranuktagujr	2
+taranuktagujr	2
+tharanuktagujr	2
+dharanuktagujr	2
+naranuktagujr	2
+paranuktagujr	2
+baranuktagujr	2
+bharanuktagujr	2
+maranuktagujr	2
+yaranuktagujr	2
+laranuktagujr	2
+llaranuktagujr	2
+varanuktagujr	2
+sharanuktagujr	2
+ssaranuktagujr	2
+saranuktagujr	2
+haranuktagujr	2
+kayagujr	2
+ganagujr	2
+ngayagujr	2
+chayagujr	2
+jayagujr	2
+nyacagujr	2
+nyajagujr	2
+ttayagujr	2
+ttavagujr	2
+tthayagujr	2
+ddayagujr	2
+ddhayagujr	2
+tatagujr	2
+damagujr	2
+dayagujr	2
+nanagujr	2
+phayagujr	2
+llayagujr	2
+shacagujr	2
+shanagujr	2
+shalagujr	2
+shavagujr	2
+sataragujr	2
+hannagujr	2
+hanagujr	2
+hamagujr	2
+hayagujr	2
+halagujr	2
+havagujr	2
+%
+vayagujr	2
+khayagujr	2
+sathagujr	2
+%
+ngakagujr	3
+ngagagujr	3
+ngaghagujr	3
+ngamagujr	3
+chavagujr	3
+ttattagujr	3
+ttatthagujr	3
+tthatthagujr	3
+ddaddagujr	3
+ddaddhagujr	3
+ddhaddhagujr	3
+%
+daragujr	4
+daranuktagujr	4
+dagagujr	4
+daghagujr	4
+dadagujr	4
+dadhagujr	4
+danagujr	4
+%
+dabagujr	5
+dabhagujr	5
+davagujr	5
+%
+ssattaragujr	6
+ssattharagujr	6
+ngaragujr	6
+charagujr	6
+jaragujr	6
+ttaragujr	6
+ttharagujr	6
+ddaragujr	6
+ddharagujr	6
+raragujr	6
+zharagujr	6
+%
+ngaranuktagujr	6
+charanuktagujr	6
+jaranuktagujr	6
+ttaranuktagujr	6
+ttharanuktagujr	6
+ddaranuktagujr	6
+ddharanuktagujr	6
+raranuktagujr	6
+%
+uvowelsigngujr	7
+uuvowelsigngujr	7
+rvocalicvowelsigngujr	7
+rrvocalicvowelsigngujr	8
+lvocalicvowelsigngujr	8
+llvocalicvowelsigngujr	8
+viramagujr	9
+class definition end
+
+class	1,7	1,stem-gujr	2,lowvowel-gujr
+class	1,8	1,squishpha-gujr
+class	1,9	1,stem-gujr	2,lowvowel-gujr
+class	2,7	1,stem-gujr
+class	2,8	1,stem-gujr
+class	3,7	1,split-gujr
+class	3,8	1,split-gujr
+class	3,9	1,splitaftervirama-gujr
+class	4,7	2,lowvowel-gujr
+class	4,8	1,squishpha-gujr
+class	4,9	2,lowvowel-gujr
+class	5,7	2,lowvowel-gujr
+class	5,8	1,split-gujr
+class	5,9	2,lowvowel-gujr
+class	6,7	1,split-gujr
+class	6,8	1,splitsquish-gujr
+class	6,9	1,splitaftervirama-gujr
+
+lookup end
+
+
+
+
+
+
+
+
+lookup	squishpha-gujr	single
+
+phagujr	phasquishgujr
+phanuktagujr	phanuktasquishgujr
+pharagujr	pharasquishgujr
+pharanuktagujr	pharanuktasquishgujr
+daragujr	darasquishgujr
+daranuktagujr	daranuktasquishgujr
+dagagujr	dagasquishgujr
+daghagujr	daghasquishgujr
+dadagujr	dadasquishgujr
+dadhagujr	dadhasquishgujr
+danagujr	danasquishgujr
+
+lookup end
+
+
+
+lookup	stem-gujr	single
+
+phagujr	phaaltgujr
+phanuktagujr	phanuktaaltgujr
+pharagujr	pharaaltgujr
+pharanuktagujr	pharanuktaaltgujr
+khagujr	khastemgujr
+gagujr	gastemgujr
+ghagujr	ghastemgujr
+cagujr	castemgujr
+nyagujr	nyastemgujr
+nnagujr	nnastemgujr
+tagujr	tastemgujr
+thagujr	thastemgujr
+dhagujr	dhastemgujr
+nagujr	nastemgujr
+pagujr	pastemgujr
+bagujr	bastemgujr
+bhagujr	bhastemgujr
+magujr	mastemgujr
+yagujr	yastemgujr
+lagujr	lastemgujr
+llagujr	llastemgujr
+vagujr	vastemgujr
+shagujr	shastemgujr
+ssagujr	ssastemgujr
+sagujr	sastemgujr
+kassagujr	kassastemgujr
+janyagujr	janyastemgujr
+khanuktagujr	khanuktastemgujr
+ganuktagujr	ganuktastemgujr
+ghanuktagujr	ghanuktastemgujr
+canuktagujr	canuktastemgujr
+nyanuktagujr	nyanuktastemgujr
+nnanuktagujr	nnanuktastemgujr
+tanuktagujr	tanuktastemgujr
+thanuktagujr	thanuktastemgujr
+dhanuktagujr	dhanuktastemgujr
+nanuktagujr	nanuktastemgujr
+panuktagujr	panuktastemgujr
+banuktagujr	banuktastemgujr
+bhanuktagujr	bhanuktastemgujr
+manuktagujr	manuktastemgujr
+yanuktagujr	yanuktastemgujr
+lanuktagujr	lanuktastemgujr
+llanuktagujr	llanuktastemgujr
+vanuktagujr	vanuktastemgujr
+shanuktagujr	shanuktastemgujr
+ssanuktagujr	ssanuktastemgujr
+sanuktagujr	sanuktastemgujr
+kharagujr	kharastemgujr
+garagujr	garastemgujr
+gharagujr	gharastemgujr
+caragujr	carastemgujr
+nyaragujr	nyarastemgujr
+nnaragujr	nnarastemgujr
+taragujr	tarastemgujr
+tharagujr	tharastemgujr
+dharagujr	dharastemgujr
+naragujr	narastemgujr
+paragujr	parastemgujr
+baragujr	barastemgujr
+bharagujr	bharastemgujr
+maragujr	marastemgujr
+yaragujr	yarastemgujr
+laragujr	larastemgujr
+llaragujr	llarastemgujr
+varagujr	varastemgujr
+sharagujr	sharastemgujr
+ssaragujr	ssarastemgujr
+saragujr	sarastemgujr
+haragujr	harastemgujr
+kassaragujr	kassarastemgujr
+janyaragujr	janyarastemgujr
+kharanuktagujr	kharanuktastemgujr
+garanuktagujr	garanuktastemgujr
+gharanuktagujr	gharanuktastemgujr
+caranuktagujr	caranuktastemgujr
+nyaranuktagujr	nyaranuktastemgujr
+nnaranuktagujr	nnaranuktastemgujr
+taranuktagujr	taranuktastemgujr
+tharanuktagujr	tharanuktastemgujr
+dharanuktagujr	dharanuktastemgujr
+naranuktagujr	naranuktastemgujr
+paranuktagujr	paranuktastemgujr
+baranuktagujr	baranuktastemgujr
+bharanuktagujr	bharanuktastemgujr
+maranuktagujr	maranuktastemgujr
+yaranuktagujr	yaranuktastemgujr
+laranuktagujr	laranuktastemgujr
+llaranuktagujr	llaranuktastemgujr
+varanuktagujr	varanuktastemgujr
+sharanuktagujr	sharanuktastemgujr
+ssaranuktagujr	ssaranuktastemgujr
+saranuktagujr	saranuktastemgujr
+haranuktagujr	haranuktastemgujr
+kayagujr	kayastemgujr
+ganagujr	ganastemgujr
+ngayagujr	ngayastemgujr
+chayagujr	chayastemgujr
+jayagujr	jayastemgujr
+nyacagujr	nyacastemgujr
+nyajagujr	nyajastemgujr
+ttayagujr	ttayastemgujr
+ttavagujr	ttavastemgujr
+tthayagujr	tthayastemgujr
+ddayagujr	ddayastemgujr
+ddhayagujr	ddhayastemgujr
+tatagujr	tatastemgujr
+damagujr	damastemgujr
+dayagujr	dayastemgujr
+nanagujr	nanastemgujr
+phayagujr	phayastemgujr
+llayagujr	llayastemgujr
+shacagujr	shacastemgujr
+shanagujr	shanastemgujr
+shalagujr	shalastemgujr
+shavagujr	shavastemgujr
+sataragujr	satarastemgujr
+hannagujr	hannastemgujr
+hanagujr	hanastemgujr
+hamagujr	hamastemgujr
+hayagujr	hayastemgujr
+halagujr	halastemgujr
+havagujr	havastemgujr
+% new
+vayagujr	vayastemgujr
+khayagujr	khayastemgujr
+sathagujr	sathastemgujr
+
+lookup end
+
+
+
+lookup	lowvowel-gujr	single
+
+uvowelsigngujr	uvowelsignlowgujr
+uuvowelsigngujr	uuvowelsignlowgujr
+rvocalicvowelsigngujr	rvocalicvowelsignlowgujr
+viramagujr	viramalowgujr
+
+lookup end
+
+
+lookup	split-gujr	multiple
+
+ngakagujr	ngaprehalfgujr	kagujr
+ngagagujr	ngaprehalfgujr	gastemgujr
+ngaghagujr	ngaprehalfgujr	ghastemgujr
+ngamagujr	ngaprehalfgujr	mastemgujr
+chavagujr	chaprehalfgujr	vastemgujr
+ttattagujr	ttaprehalfgujr	ttagujr
+ttatthagujr	ttaprehalfgujr	tthagujr
+tthatthagujr	tthaprehalfgujr	tthagujr
+ddaddagujr	ddaprehalfgujr	ddagujr
+ddaddhagujr	ddaprehalfgujr	ddhagujr
+ddhaddhagujr	ddhaprehalfgujr	ddhagujr
+dabagujr	daprehalfgujr	bastemgujr
+dabhagujr	daprehalfgujr	bhastemgujr
+davagujr	daprehalfgujr	vastemgujr
+%
+zharagujr	zhagujr	vattugujr
+ssattaragujr	ssaprehalfgujr	ttagujr	vattugujr
+ssattharagujr	ssaprehalfgujr	tthagujr	vattugujr
+ngaragujr	ngagujr	vattugujr
+charagujr	chagujr	vattugujr
+jaragujr	jagujr	vattugujr
+ttaragujr	ttagujr	vattugujr
+ttharagujr	tthagujr	vattugujr
+ddaragujr	ddagujr	vattugujr
+ddharagujr	ddhagujr	vattugujr
+raragujr	ragujr	vattugujr
+%
+ngaranuktagujr	ngagujr	nuktagujr	vattugujr
+charanuktagujr	chagujr	nuktagujr	vattugujr
+jaranuktagujr	jagujr	nuktagujr	vattugujr
+ttaranuktagujr	ttagujr	nuktagujr	vattugujr
+ttharanuktagujr	tthagujr	nuktagujr	vattugujr
+ddaranuktagujr	ddagujr	nuktagujr	vattugujr
+ddharanuktagujr	ddhagujr	nuktagujr	vattugujr
+raranuktagujr	ragujr	nuktagujr	vattugujr
+
+lookup end
+
+
+
+lookup	splitaftervirama-gujr	multiple
+
+ngakagujr	ngaprehalfgujr	kagujr
+ngagagujr	ngaprehalfgujr	gagujr
+ngaghagujr	ngaprehalfgujr	ghagujr
+ngamagujr	ngaprehalfgujr	magujr
+chavagujr	chaprehalfgujr	vagujr
+ttattagujr	ttaprehalfgujr	ttagujr
+ttatthagujr	ttaprehalfgujr	tthagujr
+tthatthagujr	tthaprehalfgujr	tthagujr
+ddaddagujr	ddaprehalfgujr	ddagujr
+ddaddhagujr	ddaprehalfgujr	ddhagujr
+ddhaddhagujr	ddhaprehalfgujr	ddhagujr
+dabagujr	daprehalfgujr	bagujr
+dabhagujr	daprehalfgujr	bhagujr
+davagujr	daprehalfgujr	vagujr
+%
+zharagujr	zhagujr	vattugujr
+ssattaragujr	ssaprehalfgujr	ttagujr	vattugujr
+ssattharagujr	ssaprehalfgujr	tthagujr	vattugujr
+ngaragujr	ngagujr	vattugujr
+charagujr	chagujr	vattugujr
+jaragujr	jagujr	vattugujr
+ttaragujr	ttagujr	vattugujr
+ttharagujr	tthagujr	vattugujr
+ddaragujr	ddagujr	vattugujr
+ddharagujr	ddhagujr	vattugujr
+raragujr	ragujr	vattugujr
+%
+ngaranuktagujr	ngagujr	nuktagujr	vattugujr
+charanuktagujr	chagujr	nuktagujr	vattugujr
+jaranuktagujr	jagujr	nuktagujr	vattugujr
+ttaranuktagujr	ttagujr	nuktagujr	vattugujr
+ttharanuktagujr	tthagujr	nuktagujr	vattugujr
+ddaranuktagujr	ddagujr	nuktagujr	vattugujr
+ddharanuktagujr	ddhagujr	nuktagujr	vattugujr
+raranuktagujr	ragujr	nuktagujr	vattugujr
+
+lookup end
+
+
+lookup	splitsquish-gujr	multiple
+
+ssattaragujr	ssaprehalfgujr	ttasquishgujr	vattugujr
+ssattharagujr	ssaprehalfgujr	tthasquishgujr	vattugujr
+ngaragujr	ngasquishgujr	vattugujr
+charagujr	chasquishgujr	vattugujr
+jaragujr	jasquishgujr	vattugujr
+ttaragujr	ttasquishgujr	vattugujr
+ttharagujr	tthasquishgujr	vattugujr
+ddaragujr	ddasquishgujr	vattugujr
+ddharagujr	ddhasquishgujr	vattugujr
+raragujr	rasquishgujr	vattugujr
+zharagujr	zhasquishgujr	vattugujr
+%
+ngaranuktagujr	nganuktasquishgujr	vattugujr
+charanuktagujr	chanuktasquishgujr	vattugujr
+jaranuktagujr	januktasquishgujr	vattugujr
+ttaranuktagujr	ttanuktasquishgujr	vattugujr
+ttharanuktagujr	tthanuktasquishgujr	vattugujr
+ddaranuktagujr	ddanuktasquishgujr	vattugujr
+ddharanuktagujr	ddhanuktasquishgujr	vattugujr
+raranuktagujr	ranuktasquishgujr	vattugujr
+
+lookup end
+
+
+
+lookup	narrow_u-gujr	context
+
+markattachmenttype	2
+
+class definition begin
+hannastemgujr	1
+halastemgujr	1
+havastemgujr	1
+hanastemgujr	1
+harastemgujr	1
+haranuktastemgujr	1
+dagagujr	1
+danagujr	1
+dabhagujr	1
+phanuktaaltgujr	1
+pharanuktaaltgujr	1
+%
+dhanuktastemgujr	1
+lanuktastemgujr	1
+llanuktastemgujr	1
+shanuktastemgujr	1
+sanuktastemgujr	1
+%
+uvowelsigngujr	2
+uvowelsignlowgujr	2
+class definition end
+
+class	1,2	2,narrowu-gujr
+
+lookup end
+
+
+
+lookup	narrowu-gujr	single
+
+uvowelsigngujr	uvowelsignnarrowgujr
+uvowelsignlowgujr	uvowelsignnarrowlowgujr
+
+lookup end
+
+
+lookup	nuktacontext-gujr	context
+
+markattachmenttype	2
+
+class definition begin
+januktagujr	1
+kanuktagujr	2
+karanuktagujr	2
+kharanuktastemgujr	3
+garanuktastemgujr	3
+yaranuktastemgujr	3
+ddanuktagujr	4
+ddhanuktagujr	4
+ranuktagujr	4
+phanuktasquishgujr	5
+pharanuktasquishgujr	5
+% add avestani
+gharanuktastemgujr	3
+ghanuktastemgujr	3
+tanuktastemgujr	3
+taranuktastemgujr	3
+%
+nganuktagujr	1
+chanuktagujr	1
+ttanuktagujr	1
+tthanuktagujr	1
+danuktagujr	1
+hanuktagujr	1
+jhanuktagujr	1
+jharanuktagujr	1
+%
+uvowelsigngujr	6
+uuvowelsigngujr	7
+rvocalicvowelsigngujr	8
+rrvocalicvowelsigngujr	8
+lvocalicvowelsigngujr	9
+llvocalicvowelsigngujr	9
+viramagujr	10
+class definition end
+
+class	1,6	1,splitnukta-gujr
+class	1,7	1,splitnukta-gujr
+class	1,8	1,splitnukta-gujr
+class	1,9	1,splitnukta-gujr	2,leftnuktaligatures-gujr
+class	1,10	1,splitnukta-gujr
+%
+class	2,8	1,splitnukta-gujr	2,leftnuktaligatures-gujr
+class	2,9	1,splitnukta-gujr	2,leftnuktaligatures-gujr
+class	2,10	1,splitnukta-gujr
+%
+class	3,6	1,splitnukta-gujr
+class	3,7	1,splitnukta-gujr
+class	3,9	1,splitnukta-gujr
+%
+class	4,8	1,splitnukta-gujr	2,leftnuktaligatures-gujr
+class	4,9	1,splitnukta-gujr	2,leftnuktaligatures-gujr
+%
+class	5,9	1,splitnukta-gujr	2,leftnuktaligatures-gujr
+
+lookup end
+
+
+
+
+lookup	splitnukta-gujr	multiple
+
+januktagujr	jagujr	nuktagujr
+%
+kanuktagujr	kagujr	nuktagujr
+karanuktagujr	karagujr	nuktagujr
+%
+kharanuktastemgujr	kharastemgujr	nuktagujr
+garanuktastemgujr	garastemgujr	nuktagujr
+yaranuktastemgujr	yarastemgujr	nuktagujr
+%
+ddanuktagujr	ddagujr	nuktagujr
+ddhanuktagujr	ddhagujr	nuktagujr
+ranuktagujr	ragujr	nuktagujr
+%
+phanuktasquishgujr	phasquishgujr	nuktagujr
+pharanuktasquishgujr	pharasquishgujr	nuktagujr
+%
+nganuktagujr	ngagujr	nuktagujr
+chanuktagujr	chagujr	nuktagujr
+ttanuktagujr	ttagujr	nuktagujr
+tthanuktagujr	tthagujr	nuktagujr
+danuktagujr	dagujr	nuktagujr
+hanuktagujr	hagujr	nuktagujr
+jhanuktagujr	jhagujr	nuktagujr
+jharanuktagujr	jharagujr	nuktagujr
+% add avestani
+ghanuktastemgujr	ghastemgujr	nuktagujr
+tanuktastemgujr	tastemgujr	nuktagujr
+taranuktastemgujr	tarastemgujr	nuktagujr
+gharanuktastemgujr	gharastemgujr	nuktagujr
+
+lookup end
+
+
+lookup	leftnuktaligatures-gujr	ligature
+
+markattachmenttype	2
+
+uvowelsignnuktaleftgujr	nuktagujr	uvowelsigngujr
+uuvowelsignnuktaleftgujr	nuktagujr	uuvowelsigngujr
+rvocalicvowelsignnuktaleftgujr	nuktagujr	rvocalicvowelsigngujr
+rrvocalicvowelsignnuktaleftgujr	nuktagujr	rrvocalicvowelsigngujr
+lvocalicvowelsignnuktaleftgujr	nuktagujr	lvocalicvowelsigngujr
+llvocalicvowelsignnuktaleftgujr	nuktagujr	llvocalicvowelsigngujr
+
+lookup end
+
+
+
+lookup	vattuligs-gujr	ligature
+
+markattachmenttype	2
+
+uvattulowgujr	vattugujr	uvowelsigngujr
+uuvattulowgujr	vattugujr	uuvowelsigngujr
+rvocalicvattulowgujr	vattugujr	rvocalicvowelsigngujr
+rrvocalicvattugujr	vattugujr	rrvocalicvowelsigngujr
+lvocalicvattugujr	vattugujr	lvocalicvowelsigngujr
+vocalicvattugujr	vattugujr	llvocalicvowelsigngujr
+viramavattulowgujr	vattugujr	viramagujr
+%
+uvattunuktalowgujr	nuktagujr	vattugujr	uvowelsigngujr
+uuvattunuktalowgujr	nuktagujr	vattugujr	uuvowelsigngujr
+rvocalicvattunuktalowgujr	nuktagujr	vattugujr	rvocalicvowelsigngujr
+viramavattunuktalowgujr	nuktagujr	vattugujr	viramagujr
+%
+uvowelsignnuktagujr	nuktagujr	uvowelsigngujr
+uuvowelsignnuktagujr	nuktagujr	uuvowelsigngujr
+rvocalicvowelsignnuktagujr	nuktagujr	rvocalicvowelsigngujr
+rrvocalicvowelsignnuktagujr	nuktagujr	rrvocalicvowelsigngujr
+lvocalicvowelsignnuktagujr	nuktagujr	lvocalicvowelsigngujr
+llvocalicvowelsignnuktagujr	nuktagujr	llvocalicvowelsigngujr
+viramanuktagujr	nuktagujr	viramagujr
+
+lookup end
+
+
+lookup	postsubstMacfix-gujr	ligature
+
+IgnoreMarks	yes
+
+jaaavowelgujr	jagujr	aavowelsigngujr
+jaiivowelgujr	jagujr	iivowelsigngujr
+jaaavowelnuktagujr	januktagujr	aavowelsigngujr
+jaiivowelnuktagujr	januktagujr	iivowelsigngujr
+zhaaavowelgujr	zhagujr	aavowelsigngujr
+zhaiivowelgujr	zhagujr	iivowelsigngujr
+
+lookup end
+
+
+lookup	postsubst-gujr	ligature
+
+iivowelsignanusvaragujr	iivowelsigngujr	anusvaragujr
+iivowelsignanusvaragujr	iivowelsigngujr	candrabindugujr
+iivowelsignrephanusvaragujr	iivowelsigngujr	rephanusvaragujr
+iivowelsignrephgujr	iivowelsigngujr	rephgujr
+% mac reph order fix
+rephanusvaragujr	rephgujr	anusvaragujr
+iivowelsignrephanusvaragujr	rephgujr	iivowelsigngujr	anusvaragujr
+iivowelsignrephgujr	rephgujr	iivowelsigngujr
+
+lookup end
+
+
+
+lookup	iicontext-gujr	chained
+
+backtrackclass definition begin
+kagujr	2
+ngagujr	2
+chagujr	2
+jhagujr	2
+ttagujr	2
+tthagujr	2
+ddagujr	1
+ddhagujr	2
+dagujr	2
+phagujr	2
+ragujr	2
+llagujr	1
+hagujr	2
+%
+kanuktagujr	2
+nganuktagujr	2
+chanuktagujr	2
+jhanuktagujr	2
+ttanuktagujr	2
+tthanuktagujr	2
+ddanuktagujr	1
+ddhanuktagujr	2
+danuktagujr	2
+phanuktagujr	2
+ranuktagujr	2
+llanuktagujr	1
+hanuktagujr	2
+%
+karagujr	2
+ngaragujr	2
+charagujr	2
+jaragujr	1
+jharagujr	2
+ttaragujr	2
+ttharagujr	2
+ddaragujr	1
+ddharagujr	2
+daragujr	1
+pharagujr	2
+raragujr	2
+llaragujr	1
+haragujr	2
+%
+karanuktagujr	2
+ngaranuktagujr	2
+charanuktagujr	2
+jaranuktagujr	1
+jharanuktagujr	2
+ttaranuktagujr	2
+ttharanuktagujr	2
+ddaranuktagujr	1
+ddharanuktagujr	2
+daranuktagujr	1
+pharanuktagujr	2
+raranuktagujr	2
+llaranuktagujr	1
+haranuktagujr	2
+%
+kakagujr	2
+ngakagujr	2
+ngagagujr	2
+ngaghagujr	2
+ngamagujr	2
+chavagujr	2
+ttattagujr	2
+ttatthagujr	2
+tthatthagujr	2
+ddaddagujr	1
+ddaddhagujr	1
+ddhaddhagujr	2
+dagagujr	1
+daghagujr	1
+dadagujr	2
+dadhagujr	1
+danagujr	1
+dabagujr	1
+dabhagujr	1
+davagujr	1
+ssattagujr	2
+ssattaragujr	2
+ssatthagujr	2
+ssattharagujr	2
+hannagujr	2
+hanagujr	2
+halagujr	2
+havagujr	2
+badagujr	2
+class definition end
+
+class definition begin
+iivowelsigngujr	1
+iivowelsignanusvaragujr	1
+iivowelsignrephgujr	1
+iivowelsignrephanusvaragujr	1
+class definition end
+
+lookaheadclass definition begin
+# 1	1
+class definition end
+
+class-chain	1	1		1,iimaatra1-gujr
+class-chain	2	1		1,iimaatra2-gujr
+
+lookup end
+
+
+lookup	iimaatra1-gujr	single
+
+iivowelsigngujr	iivowelsign1gujr
+iivowelsignanusvaragujr	iivowelsignanusvara1gujr
+iivowelsignrephgujr	iivowelsignreph1gujr
+iivowelsignrephanusvaragujr	iivowelsignrephanusvara1gujr
+
+lookup end
+
+
+lookup	iimaatra2-gujr	single
+
+iivowelsigngujr	iivowelsign2gujr
+iivowelsignanusvaragujr	iivowelsignanusvara2gujr
+iivowelsignrephgujr	iivowelsignreph2gujr
+iivowelsignrephanusvaragujr	iivowelsignrephanusvara2gujr
+
+lookup end
+
+
+
+
+lookup	leftdot-gujr	chained
+
+markattachmenttype	1
+
+backtrackclass definition begin
+kagujr	1
+ngagujr	1
+chagujr	1
+jagujr	1
+ttagujr	1
+tthagujr	1
+ddagujr	1
+ddhagujr	1
+dagujr	1
+phagujr	1
+ragujr	1
+zhagujr	1
+hagujr	1
+kanuktagujr	1
+nganuktagujr	1
+chanuktagujr	1
+januktagujr	1
+ttanuktagujr	1
+tthanuktagujr	1
+ddanuktagujr	1
+ddhanuktagujr	1
+danuktagujr	1
+phanuktagujr	1
+ranuktagujr	1
+hanuktagujr	1
+%
+phaaltgujr	1
+pharaaltgujr	1
+phanuktaaltgujr	1
+pharanuktaaltgujr	1
+%
+kakagujr	1
+ngakagujr	1
+ngagagujr	1
+ngaghagujr	1
+ngamagujr	1
+chavagujr	1
+ttattagujr	1
+ttattaugujr	1
+ttattauugujr	1
+ttatthagujr	1
+ttatthauugujr	1
+tthatthagujr	1
+tthatthaugujr	1
+ddaddagujr	1
+ddaddaugujr	1
+ddaddhagujr	1
+ddhaddhagujr	1
+dadagujr	1
+ssattagujr	1
+ssattaragujr	1
+ssatthagujr	1
+ssattharagujr	1
+hannagujr	1
+hanagujr	1
+halagujr	1
+havagujr	1
+%
+karagujr	1
+ngaragujr	1
+charagujr	1
+jaragujr	1
+ttaragujr	1
+ttharagujr	1
+ddaragujr	1
+ddharagujr	1
+pharagujr	1
+raragujr	1
+haragujr	1
+zharagujr	1
+%
+karanuktagujr	1
+ngaranuktagujr	1
+charanuktagujr	1
+jaranuktagujr	1
+ttaranuktagujr	1
+ttharanuktagujr	1
+ddaranuktagujr	1
+ddharanuktagujr	1
+pharanuktagujr	1
+raranuktagujr	1
+haranuktagujr	1
+%
+ngasquishgujr	1
+chasquishgujr	1
+ttasquishgujr	1
+tthasquishgujr	1
+ddasquishgujr	1
+ddhasquishgujr	1
+dadasquishgujr	1
+phasquishgujr	1
+pharasquishgujr	1
+rasquishgujr	1
+nganuktasquishgujr	1
+chanuktasquishgujr	1
+ttanuktasquishgujr	1
+tthanuktasquishgujr	1
+ddanuktasquishgujr	1
+ddhanuktasquishgujr	1
+phanuktasquishgujr	1
+pharanuktasquishgujr	1
+ranuktasquishgujr	1
+kanuktauvowelgujr	1
+ddanuktauvowelgujr	1
+ddhanuktauvowelgujr	1
+%x phanuktauvowelgujr	1
+karanuktauvowelgujr	1
+%x pharanuktauvowelgujr	1
+kanuktauuvowelgujr	1
+ddanuktauuvowelgujr	1
+ddhanuktauuvowelgujr	1
+%x phanuktauuvowelgujr	1
+karanuktauuvowelgujr	1
+%x pharanuktauuvowelgujr	1
+%
+daragujr	1
+daranuktagujr	1
+dagagujr	1
+daghagujr	1
+dadhagujr	1
+danagujr	1
+dabagujr	1
+dabhagujr	1
+davagujr	1
+rauvowelgujr	1
+rauvowelnuktagujr	1
+%
+harastemgujr	1
+haranuktastemgujr	1
+hannastemgujr	1
+hanastemgujr	1
+halastemgujr	1
+havastemgujr	1
+%
+badagujr	1
+% 2020
+igujr	2
+iigujr	2
+ugujr	2
+uugujr	2
+class definition end
+
+class definition begin
+candrabindugujr	1
+anusvaragujr	1
+rephgujr	1
+rephanusvaragujr	1
+% 2020
+uni0AFD	2
+class definition end
+
+lookaheadclass definition begin
+# 1	1
+class definition end
+
+class-chain	1	1		1,swapdot-gujr
+class-chain	2	2		1,swapdot-gujr
+
+lookup end
+
+
+lookup	swapdot-gujr	single
+
+candrabindugujr	candrabinduleftgujr
+anusvaragujr	anusvaraleftgujr
+rephgujr	rephleftgujr
+rephanusvaragujr	rephanusvaraleftgujr
+% 2020
+uni0AFD	uni0AFD.alt
+
+lookup end
+
+
+
+lookup	halant-gujr	ligature
+
+ngaprehalfgujr	ngagujr	viramagujr
+chaprehalfgujr	chagujr	viramagujr
+ttaprehalfgujr	ttagujr	viramagujr
+tthaprehalfgujr	tthagujr	viramagujr
+ddaprehalfgujr	ddagujr	viramagujr
+ddhaprehalfgujr	ddhagujr	viramagujr
+daprehalfgujr	dagujr	viramagujr
+raprehalfgujr	ragujr	viramagujr
+%
+nganuktaprehalfgujr	ngagujr	viramanuktagujr
+chanuktaprehalfgujr	chagujr	viramanuktagujr
+ttanuktaprehalfgujr	ttagujr	viramanuktagujr
+tthanuktaprehalfgujr	tthagujr	viramanuktagujr
+ddanuktaprehalfgujr	ddanuktagujr	viramagujr
+ddhanuktaprehalfgujr	ddhanuktagujr	viramagujr
+danuktaprehalfgujr	dagujr	viramanuktagujr
+ranuktaprehalfgujr	ranuktagujr	viramagujr
+%
+ngaraprehalfgujr	ngagujr	viramavattulowgujr
+charaprehalfgujr	chagujr	viramavattulowgujr
+ttaraprehalfgujr	ttagujr	viramavattulowgujr
+ttharaprehalfgujr	tthagujr	viramavattulowgujr
+ddaraprehalfgujr	ddagujr	viramavattulowgujr
+ddharaprehalfgujr	ddhagujr	viramavattulowgujr
+daraprehalfgujr	daragujr	viramagujr
+%
+ngaranuktaprehalfgujr	ngagujr	viramavattunuktalowgujr
+charanuktaprehalfgujr	chagujr	viramavattunuktalowgujr
+ttaranuktaprehalfgujr	ttagujr	viramavattunuktalowgujr
+ttharanuktaprehalfgujr	tthagujr	viramavattunuktalowgujr
+ddaranuktaprehalfgujr	ddagujr	viramavattunuktalowgujr
+ddharanuktaprehalfgujr	ddhagujr	viramavattunuktalowgujr
+daranuktaprehalfgujr	daranuktagujr	viramalowgujr
+raranuktaprehalfgujr	ragujr	viramavattunuktalowgujr
+
+lookup end
