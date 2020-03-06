@@ -11,7 +11,7 @@ feature table begin
 0	akhn	akhand-telu
 1	akhn	akhand-tel2
 2	blwf	belowbase-telu,contextra-telu,contextta-telu
-3	blwf	splitakhand-tel2,belowbase-tel2,contextra-telu,contextta-telu
+3	blwf	belowbase-tel2,contextra-telu,contextta-telu
 4	half	half-telu
 5	abvs	above-subst-telu
 6	blws	taligatures-telu,ailigatures-telu,splitailigs-telu
@@ -86,23 +86,10 @@ shasubscriptUItelu	shatelu	viramatelu
 ssasubscriptUItelu	ssatelu	viramatelu
 sasubscripttelu	satelu	viramatelu
 hasubscriptUItelu	hatelu	viramatelu
+kassasubscriptUItelu	katelu	viramatelu	ssatelu	viramatelu
 
 lookup end
 
-
-
-lookup	splitakhand-tel2	context
-
-glyph	viramatelu,kassatelu	2,split-tel2
-
-lookup end
-
-
-lookup	split-tel2	multiple
-
-kassatelu	katelu	viramatelu	ssatelu
-
-lookup end
 
 
 lookup	belowbase-tel2	ligature
@@ -145,6 +132,7 @@ hasubscriptUItelu	viramatelu	hatelu
 % new 2017
 lllasubscriptUItelu	viramatelu	lllatelu
 rrrasubscriptUItelu	viramatelu	rrratelu
+kassasubscriptUItelu	viramatelu	kassatelu
 
 lookup end
 
@@ -189,6 +177,7 @@ shasubscriptUItelu	1
 ssasubscriptUItelu	1
 sasubscripttelu	1
 hasubscriptUItelu	1
+kassasubscriptUItelu	1
 karasubscripttelu	1
 kharasubscripttelu	1
 garasubscripttelu	1
@@ -1037,6 +1026,8 @@ hasubscriptUItelu	1
 % new 2017
 lllasubscriptUItelu	1
 rrrasubscriptUItelu	1
+% new 2020
+kassasubscriptUItelu	1
 %
 kasubscript1UItelu	1
 khasubscript1UItelu	1
@@ -1075,6 +1066,8 @@ hasubscript1UItelu	1
 % new 2017
 lllasubscript1UItelu	1
 rrrasubscript1UItelu	1
+% new 2020
+kassasubscript1UItelu	1
 %
 tailengthmarknarrowUItelu	1
 tailengthmarkUItelu	1
@@ -1128,6 +1121,8 @@ hasubscriptUItelu	1
 % new 2017
 lllasubscriptUItelu	1
 rrrasubscriptUItelu	1
+% new 2020
+kassasubscriptUItelu	1
 % vowels
 rvocalicvowelsignUItelu	2
 rrvocalicvowelsignUItelu	2
@@ -1251,6 +1246,8 @@ hasubscriptUItelu	1
 % new 2017
 lllasubscriptUItelu	1
 rrrasubscriptUItelu	1
+% new 2020
+kassasubscriptUItelu	1
 %
 rvocalicvowelsignUItelu	2
 rrvocalicvowelsignUItelu	2
@@ -1311,6 +1308,8 @@ hasubscriptUItelu	hasubscript1UItelu
 % new 2017
 lllasubscriptUItelu	lllasubscript1UItelu
 rrrasubscriptUItelu	rrrasubscript1UItelu
+% new 2020
+kassasubscriptUItelu	kassasubscript1UItelu
 
 lookup end
 

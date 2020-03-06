@@ -13,7 +13,7 @@ feature table begin
 0	akhn	akhand-telu
 1	akhn	akhand-tel2
 2	blwf	belowbase-telu,contextra-telu,contextta-telu
-3	blwf	splitakhand-tel2,belowbase-tel2
+3	blwf	belowbase-tel2
 4	half	half-telu
 5	abvs	contextra-telu,contextta-telu,above-subst-telu
 6	blws	taligatures-telu,ailigatures-telu
@@ -88,21 +88,7 @@ shasubscripttelu	shatelu	viramatelu
 ssasubscripttelu	ssatelu	viramatelu
 sasubscripttelu	satelu	viramatelu
 hasubscripttelu	hatelu	viramatelu
-
-lookup end
-
-
-
-lookup	splitakhand-tel2	context
-
-glyph	viramatelu,kassatelu	2,split-tel2
-
-lookup end
-
-
-lookup	split-tel2	multiple
-
-kassatelu	katelu	viramatelu	ssatelu
+kassasubscripttelu	katelu	viramatelu	ssatelu	viramatelu
 
 lookup end
 
@@ -147,7 +133,7 @@ hasubscripttelu	viramatelu	hatelu
 % new 2017
 lllasubscripttelu	viramatelu	lllatelu
 rrrasubscripttelu	viramatelu	rrratelu
-
+kassasubscripttelu	viramatelu	kassatelu
 
 lookup end
 
@@ -192,6 +178,7 @@ shasubscripttelu	1
 ssasubscripttelu	1
 sasubscripttelu	1
 hasubscripttelu	1
+kassasubscripttelu	1
 karasubscripttelu	1
 kharasubscripttelu	1
 garasubscripttelu	1
@@ -957,6 +944,8 @@ hasubscripttelu	1
 % new 2017
 lllasubscripttelu	1
 rrrasubscripttelu	1
+% new 2020
+kassasubscripttelu	1
 %
 kasubscript1telu	1
 khasubscript1telu	1
@@ -995,6 +984,8 @@ hasubscript1telu	1
 % new 2017
 lllasubscript1telu	1
 rrrasubscript1telu	1
+% new 2020
+kassasubscript1telu	1
 %
 tailengthmarknarrowtelu	1
 tailengthmarktelu	1
@@ -1100,6 +1091,8 @@ hasubscripttelu	1
 % new 2017
 lllasubscripttelu	1
 rrrasubscripttelu	1
+% new 2020
+kassasubscripttelu	1
 % vowels
 rvocalicvowelsigntelu	2
 rrvocalicvowelsigntelu	2
@@ -1227,6 +1220,8 @@ hasubscripttelu	1
 % new 2017
 lllasubscripttelu	1
 rrrasubscripttelu	1
+% new 2020
+kassasubscripttelu	1
 %
 lvocalicvowelsigntelu	1
 llvocalicvowelsigntelu	1
@@ -1290,6 +1285,8 @@ llvocalicvowelsigntelu	llvocalicvowelsign1telu
 % new 2017
 lllasubscripttelu	lllasubscript1telu
 rrrasubscripttelu	rrrasubscript1telu
+% new 2020
+kassasubscripttelu	kassasubscript1telu
 
 lookup end
 
@@ -1642,6 +1639,15 @@ glyph	visargatelu,candrabindu_0952telu	1,toCandrabindu_0952-telu	2,toVisarga-tel
 glyph	visargatelu,candrabindu_1CDAtelu	1,toCandrabindu_1CDA-telu	2,toVisarga-telu
 glyph	visargatelu,uni0C04	1,to0C04-telu	2,toVisarga-telu
 
+glyph	uni1CF2,uni0C00	1,to0C00-telu	2,to1CF2-telu
+glyph	uni1CF2,uni0951	1,to0951-telu	2,to1CF2-telu
+glyph	uni1CF2,uni0952	1,to0952-telu	2,to1CF2-telu
+glyph	uni1CF2,uni1CDA	1,to1CDA-telu	2,to1CF2-telu
+glyph	uni1CF2,candrabindu_0951telu	1,toCandrabindu_0951-telu	2,to1CF2-telu
+glyph	uni1CF2,candrabindu_0952telu	1,toCandrabindu_0952-telu	2,to1CF2-telu
+glyph	uni1CF2,candrabindu_1CDAtelu	1,toCandrabindu_1CDA-telu	2,to1CF2-telu
+glyph	uni1CF2,uni0C04	1,to0C04-telu	2,to1CF2-telu
+
 lookup end
 
 
@@ -1682,6 +1688,7 @@ anusvaratelu	uni0C00
 visargatelu	uni0C00
 rephtelu	uni0C00
 rasubscripttelu	uni0C00
+uni1CF2	uni0C00
 
 lookup end
 
@@ -1693,6 +1700,7 @@ anusvaratelu	uni0951
 visargatelu	uni0951
 rephtelu	uni0951
 rasubscripttelu	uni0951
+uni1CF2	uni0951
 
 lookup end
 
@@ -1704,6 +1712,7 @@ anusvaratelu	uni0952
 visargatelu	uni0952
 rephtelu	uni0952
 rasubscripttelu	uni0952
+uni1CF2	uni0952
 
 lookup end
 
@@ -1715,6 +1724,7 @@ anusvaratelu	uni1CDA
 visargatelu	uni1CDA
 rephtelu	uni1CDA
 rasubscripttelu	uni1CDA
+uni1CF2	uni1CDA
 
 lookup end
 
@@ -1726,6 +1736,7 @@ anusvaratelu	candrabindu_0951telu
 visargatelu	candrabindu_0951telu
 rephtelu	candrabindu_0951telu
 rasubscripttelu	candrabindu_0951telu
+uni1CF2	candrabindu_0951telu
 
 lookup end
 
@@ -1737,6 +1748,7 @@ anusvaratelu	candrabindu_0952telu
 visargatelu	candrabindu_0952telu
 rephtelu	candrabindu_0952telu
 rasubscripttelu	candrabindu_0952telu
+uni1CF2	candrabindu_0952telu
 
 lookup end
 
@@ -1748,6 +1760,7 @@ anusvaratelu	candrabindu_1CDAtelu
 visargatelu	candrabindu_1CDAtelu
 rephtelu	candrabindu_1CDAtelu
 rasubscripttelu	candrabindu_1CDAtelu
+uni1CF2	candrabindu_1CDAtelu
 
 lookup end
 
@@ -1759,6 +1772,7 @@ anusvaratelu	uni0C04
 visargatelu	uni0C04
 rephtelu	uni0C04
 rasubscripttelu	uni0C04
+uni1CF2	uni0C04
 
 lookup end
 
@@ -1799,6 +1813,19 @@ uni1CDA	visargatelu
 candrabindu_0951telu	visargatelu
 candrabindu_0952telu	visargatelu
 uni0C04	visargatelu
+
+lookup end
+
+
+lookup	to1CF2-telu	single
+
+uni0C00	uni1CF2
+uni0951	uni1CF2
+uni0952	uni1CF2
+uni1CDA	uni1CF2
+candrabindu_0951telu	uni1CF2
+candrabindu_0952telu	uni1CF2
+uni0C04	uni1CF2
 
 lookup end
 
