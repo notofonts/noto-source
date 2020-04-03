@@ -1,0 +1,1597 @@
+@baseLetters = [ a-soyo
+ka-soyo
+kha-soyo
+ga-soyo
+gha-soyo
+nga-soyo
+ca-soyo
+cha-soyo
+ja-soyo
+jha-soyo
+nya-soyo
+tta-soyo
+ttha-soyo
+dda-soyo
+ddha-soyo
+nna-soyo
+ta-soyo
+tha-soyo
+da-soyo
+dha-soyo
+na-soyo
+pa-soyo
+pha-soyo
+ba-soyo
+bha-soyo
+ma-soyo
+tsa-soyo
+tsha-soyo
+dza-soyo
+zha-soyo
+za-soyo
+aa-soyo
+ya-soyo
+ra-soyo
+la-soyo
+va-soyo
+sha-soyo
+ssa-soyo
+sa-soyo
+ha-soyo
+kssa-soyo ];
+
+@halfBottomMarks0 = [ gFinal-soyo
+kFinal-soyo
+ngFinal-soyo
+dFinal-soyo
+nFinal-soyo
+bFinal-soyo
+mFinal-soyo
+rFinal-soyo
+lFinal-soyo
+shFinal-soyo
+sFinal-soyo
+ueMatra-soyo
+uMatra-soyo
+rVocalicMatra-soyo
+lVocalicMatra-soyo ];
+
+@halfBottomMarks1 = [ gFinal-soyo.half
+kFinal-soyo.half
+ngFinal-soyo.half
+dFinal-soyo.half
+nFinal-soyo.half
+bFinal-soyo.half
+mFinal-soyo.half
+rFinal-soyo.half
+lFinal-soyo.half
+shFinal-soyo.half
+sFinal-soyo.half
+ueMatra-soyo.half
+uMatra-soyo.half
+rVocalicMatra-soyo.half
+lVocalicMatra-soyo.half ];
+
+@midStemBefore = [ kaSub-soyo
+khaSub-soyo
+gaSub-soyo
+ghaSub-soyo
+ngaSub-soyo
+ttaSub-soyo
+tthaSub-soyo
+ddaSub-soyo
+ddhaSub-soyo
+nnaSub-soyo
+daSub-soyo ];
+
+@midStemAfter = [ kaSub-soyo
+khaSub-soyo
+gaSub-soyo
+ghaSub-soyo
+ngaSub-soyo
+haSub-soyo
+kssaSub-soyo ];
+
+@bothStemBefore = [ kaSub-soyo
+khaSub-soyo
+gaSub-soyo
+ghaSub-soyo
+ngaSub-soyo
+ttaSub-soyo
+tthaSub-soyo
+ddaSub-soyo
+ddhaSub-soyo
+nnaSub-soyo
+daSub-soyo
+ ];
+
+@bothStemAfter = [ ttaSub-soyo
+tthaSub-soyo
+ddaSub-soyo
+ddhaSub-soyo
+nnaSub-soyo
+daSub-soyo
+dhaSub-soyo
+ ];
+
+@preConsonants = [ raInitial-soyo laInitial-soyo shaInitial-soyo saInitial-soyo ];
+
+@preHead = [ jihvamuliya-soyo
+upadhmaniya-soyo
+gemination-soyo ];
+
+@head = [ head-soyo
+head-soyo.open ];
+
+@headSub = [ headSub-soyo
+headSub-soyo.open ];
+
+@subLetters = [ aSub-soyo kaSub-soyo khaSub-soyo gaSub-soyo ghaSub-soyo ngaSub-soyo caSub-soyo chaSub-soyo jaSub-soyo jhaSub-soyo nyaSub-soyo ttaSub-soyo tthaSub-soyo ddaSub-soyo ddhaSub-soyo nnaSub-soyo taSub-soyo thaSub-soyo daSub-soyo dhaSub-soyo naSub-soyo paSub-soyo phaSub-soyo baSub-soyo bhaSub-soyo maSub-soyo tsaSub-soyo tshaSub-soyo dzaSub-soyo zhaSub-soyo zaSub-soyo aaSub-soyo yaSub-soyo raSub-soyo laSub-soyo vaSub-soyo shaSub-soyo ssaSub-soyo saSub-soyo haSub-soyo kssaSub-soyo aSub-soyo.ini2 kaSub-soyo.ini2 khaSub-soyo.ini2 gaSub-soyo.ini2 ghaSub-soyo.ini2 ngaSub-soyo.ini2 caSub-soyo.ini2 chaSub-soyo.ini2 jaSub-soyo.ini2 jhaSub-soyo.ini2 nyaSub-soyo.ini2 ttaSub-soyo.ini2 tthaSub-soyo.ini2 ddaSub-soyo.ini2 ddhaSub-soyo.ini2 nnaSub-soyo.ini2 taSub-soyo.ini2 thaSub-soyo.ini2 daSub-soyo.ini2 dhaSub-soyo.ini2 naSub-soyo.ini2 paSub-soyo.ini2 phaSub-soyo.ini2 baSub-soyo.ini2 bhaSub-soyo.ini2 maSub-soyo.ini2 tsaSub-soyo.ini2 tshaSub-soyo.ini2 dzaSub-soyo.ini2 zhaSub-soyo.ini2 zaSub-soyo.ini2 aaSub-soyo.ini2 yaSub-soyo.ini2 raSub-soyo.ini2 laSub-soyo.ini2 vaSub-soyo.ini2 shaSub-soyo.ini2 ssaSub-soyo.ini2 saSub-soyo.ini2 haSub-soyo.ini2 kssaSub-soyo.ini2 aSub-soyo.ini3 kaSub-soyo.ini3 khaSub-soyo.ini3 gaSub-soyo.ini3 ghaSub-soyo.ini3 ngaSub-soyo.ini3 caSub-soyo.ini3 chaSub-soyo.ini3 jaSub-soyo.ini3 jhaSub-soyo.ini3 nyaSub-soyo.ini3 ttaSub-soyo.ini3 tthaSub-soyo.ini3 ddaSub-soyo.ini3 ddhaSub-soyo.ini3 nnaSub-soyo.ini3 taSub-soyo.ini3 thaSub-soyo.ini3 daSub-soyo.ini3 dhaSub-soyo.ini3 naSub-soyo.ini3 paSub-soyo.ini3 phaSub-soyo.ini3 baSub-soyo.ini3 bhaSub-soyo.ini3 maSub-soyo.ini3 tsaSub-soyo.ini3 tshaSub-soyo.ini3 dzaSub-soyo.ini3 zhaSub-soyo.ini3 zaSub-soyo.ini3 aaSub-soyo.ini3 yaSub-soyo.ini3 raSub-soyo.ini3 laSub-soyo.ini3 vaSub-soyo.ini3 shaSub-soyo.ini3 ssaSub-soyo.ini3 saSub-soyo.ini3 haSub-soyo.ini3 kssaSub-soyo.ini3 aSub-soyo.2 aSub-soyo.3 kaSub-soyo.2 kaSub-soyo.3 khaSub-soyo.2 khaSub-soyo.3 gaSub-soyo.2 gaSub-soyo.3 ghaSub-soyo.2 ghaSub-soyo.3 ngaSub-soyo.2 ngaSub-soyo.3 caSub-soyo.2 caSub-soyo.3 chaSub-soyo.2 chaSub-soyo.3 jaSub-soyo.2 jaSub-soyo.3 jhaSub-soyo.2 jhaSub-soyo.3 nyaSub-soyo.2 nyaSub-soyo.3 ttaSub-soyo.2 ttaSub-soyo.3 tthaSub-soyo.2 tthaSub-soyo.3 ddaSub-soyo.2 ddaSub-soyo.3 ddhaSub-soyo.2 ddhaSub-soyo.3 nnaSub-soyo.2 nnaSub-soyo.3 taSub-soyo.2 taSub-soyo.3 thaSub-soyo.2 thaSub-soyo.3 daSub-soyo.2 daSub-soyo.3 dhaSub-soyo.2 dhaSub-soyo.3 naSub-soyo.2 naSub-soyo.3 paSub-soyo.2 paSub-soyo.3 phaSub-soyo.2 phaSub-soyo.3 baSub-soyo.2 baSub-soyo.3 bhaSub-soyo.2 bhaSub-soyo.3 maSub-soyo.2 maSub-soyo.3 tsaSub-soyo.2 tsaSub-soyo.3 tshaSub-soyo.2 tshaSub-soyo.3 dzaSub-soyo.2 dzaSub-soyo.3 zhaSub-soyo.2 zhaSub-soyo.3 zaSub-soyo.2 zaSub-soyo.3 aaSub-soyo.2 aaSub-soyo.3 yaSub-soyo.2 yaSub-soyo.3 raSub-soyo.2 raSub-soyo.3 laSub-soyo.2 laSub-soyo.3 vaSub-soyo.2 vaSub-soyo.3 shaSub-soyo.2 shaSub-soyo.3 ssaSub-soyo.2 ssaSub-soyo.3 saSub-soyo.2 saSub-soyo.3 haSub-soyo.2 haSub-soyo.3 kssaSub-soyo.2 kssaSub-soyo.3 ];
+
+@subLetters_head = [ aSub-soyo kaSub-soyo khaSub-soyo gaSub-soyo ghaSub-soyo ngaSub-soyo caSub-soyo chaSub-soyo jaSub-soyo jhaSub-soyo nyaSub-soyo ttaSub-soyo tthaSub-soyo ddaSub-soyo ddhaSub-soyo nnaSub-soyo taSub-soyo thaSub-soyo daSub-soyo dhaSub-soyo naSub-soyo paSub-soyo phaSub-soyo baSub-soyo bhaSub-soyo maSub-soyo tsaSub-soyo tshaSub-soyo dzaSub-soyo zhaSub-soyo zaSub-soyo aaSub-soyo yaSub-soyo raSub-soyo laSub-soyo vaSub-soyo shaSub-soyo ssaSub-soyo saSub-soyo haSub-soyo kssaSub-soyo aSub-soyo.ini2 kaSub-soyo.ini2 khaSub-soyo.ini2 gaSub-soyo.ini2 ghaSub-soyo.ini2 ngaSub-soyo.ini2 caSub-soyo.ini2 chaSub-soyo.ini2 jaSub-soyo.ini2 jhaSub-soyo.ini2 nyaSub-soyo.ini2 ttaSub-soyo.ini2 tthaSub-soyo.ini2 ddaSub-soyo.ini2 ddhaSub-soyo.ini2 nnaSub-soyo.ini2 taSub-soyo.ini2 thaSub-soyo.ini2 daSub-soyo.ini2 dhaSub-soyo.ini2 naSub-soyo.ini2 paSub-soyo.ini2 phaSub-soyo.ini2 baSub-soyo.ini2 bhaSub-soyo.ini2 maSub-soyo.ini2 tsaSub-soyo.ini2 tshaSub-soyo.ini2 dzaSub-soyo.ini2 zhaSub-soyo.ini2 zaSub-soyo.ini2 aaSub-soyo.ini2 yaSub-soyo.ini2 raSub-soyo.ini2 laSub-soyo.ini2 vaSub-soyo.ini2 shaSub-soyo.ini2 ssaSub-soyo.ini2 saSub-soyo.ini2 haSub-soyo.ini2 kssaSub-soyo.ini2 aSub-soyo.ini3 kaSub-soyo.ini3 khaSub-soyo.ini3 gaSub-soyo.ini3 ghaSub-soyo.ini3 ngaSub-soyo.ini3 caSub-soyo.ini3 chaSub-soyo.ini3 jaSub-soyo.ini3 jhaSub-soyo.ini3 nyaSub-soyo.ini3 ttaSub-soyo.ini3 tthaSub-soyo.ini3 ddaSub-soyo.ini3 ddhaSub-soyo.ini3 nnaSub-soyo.ini3 taSub-soyo.ini3 thaSub-soyo.ini3 daSub-soyo.ini3 dhaSub-soyo.ini3 naSub-soyo.ini3 paSub-soyo.ini3 phaSub-soyo.ini3 baSub-soyo.ini3 bhaSub-soyo.ini3 maSub-soyo.ini3 tsaSub-soyo.ini3 tshaSub-soyo.ini3 dzaSub-soyo.ini3 zhaSub-soyo.ini3 zaSub-soyo.ini3 aaSub-soyo.ini3 yaSub-soyo.ini3 raSub-soyo.ini3 laSub-soyo.ini3 vaSub-soyo.ini3 shaSub-soyo.ini3 ssaSub-soyo.ini3 saSub-soyo.ini3 haSub-soyo.ini3 kssaSub-soyo.ini3 aSub-soyo.2 aSub-soyo.3 kaSub-soyo.2 kaSub-soyo.3 khaSub-soyo.2 khaSub-soyo.3 gaSub-soyo.2 gaSub-soyo.3 ghaSub-soyo.2 ghaSub-soyo.3 ngaSub-soyo.2 ngaSub-soyo.3 caSub-soyo.2 caSub-soyo.3 chaSub-soyo.2 chaSub-soyo.3 jaSub-soyo.2 jaSub-soyo.3 jhaSub-soyo.2 jhaSub-soyo.3 nyaSub-soyo.2 nyaSub-soyo.3 ttaSub-soyo.2 ttaSub-soyo.3 tthaSub-soyo.2 tthaSub-soyo.3 ddaSub-soyo.2 ddaSub-soyo.3 ddhaSub-soyo.2 ddhaSub-soyo.3 nnaSub-soyo.2 nnaSub-soyo.3 taSub-soyo.2 taSub-soyo.3 thaSub-soyo.2 thaSub-soyo.3 daSub-soyo.2 daSub-soyo.3 dhaSub-soyo.2 dhaSub-soyo.3 naSub-soyo.2 naSub-soyo.3 paSub-soyo.2 paSub-soyo.3 phaSub-soyo.2 phaSub-soyo.3 baSub-soyo.2 baSub-soyo.3 bhaSub-soyo.2 bhaSub-soyo.3 maSub-soyo.2 maSub-soyo.3 tsaSub-soyo.2 tsaSub-soyo.3 tshaSub-soyo.2 tshaSub-soyo.3 dzaSub-soyo.2 dzaSub-soyo.3 zhaSub-soyo.2 zhaSub-soyo.3 zaSub-soyo.2 zaSub-soyo.3 aaSub-soyo.2 aaSub-soyo.3 yaSub-soyo.2 yaSub-soyo.3 raSub-soyo.2 raSub-soyo.3 laSub-soyo.2 laSub-soyo.3 vaSub-soyo.2 vaSub-soyo.3 shaSub-soyo.2 shaSub-soyo.3 ssaSub-soyo.2 ssaSub-soyo.3 saSub-soyo.2 saSub-soyo.3 haSub-soyo.2 haSub-soyo.3 kssaSub-soyo.2 kssaSub-soyo.3
+
+head-soyo head-soyo.open headSub-soyo headSub-soyo.open ];
+
+@sub0 = [ aSub-soyo
+kaSub-soyo
+khaSub-soyo
+gaSub-soyo
+ghaSub-soyo
+ngaSub-soyo
+caSub-soyo
+chaSub-soyo
+jaSub-soyo
+jhaSub-soyo
+nyaSub-soyo
+ttaSub-soyo
+tthaSub-soyo
+ddaSub-soyo
+ddhaSub-soyo
+nnaSub-soyo
+taSub-soyo
+thaSub-soyo
+daSub-soyo
+dhaSub-soyo
+naSub-soyo
+paSub-soyo
+phaSub-soyo
+baSub-soyo
+bhaSub-soyo
+maSub-soyo
+tsaSub-soyo
+tshaSub-soyo
+dzaSub-soyo
+zhaSub-soyo
+zaSub-soyo
+aaSub-soyo
+yaSub-soyo
+raSub-soyo
+laSub-soyo
+vaSub-soyo
+shaSub-soyo
+ssaSub-soyo
+saSub-soyo
+haSub-soyo
+kssaSub-soyo ];
+
+@ini2 = [ aSub-soyo.ini2
+kaSub-soyo.ini2
+khaSub-soyo.ini2
+gaSub-soyo.ini2
+ghaSub-soyo.ini2
+ngaSub-soyo.ini2
+caSub-soyo.ini2
+chaSub-soyo.ini2
+jaSub-soyo.ini2
+jhaSub-soyo.ini2
+nyaSub-soyo.ini2
+ttaSub-soyo.ini2
+tthaSub-soyo.ini2
+ddaSub-soyo.ini2
+ddhaSub-soyo.ini2
+nnaSub-soyo.ini2
+taSub-soyo.ini2
+thaSub-soyo.ini2
+daSub-soyo.ini2
+dhaSub-soyo.ini2
+naSub-soyo.ini2
+paSub-soyo.ini2
+phaSub-soyo.ini2
+baSub-soyo.ini2
+bhaSub-soyo.ini2
+maSub-soyo.ini2
+tsaSub-soyo.ini2
+tshaSub-soyo.ini2
+dzaSub-soyo.ini2
+zhaSub-soyo.ini2
+zaSub-soyo.ini2
+aaSub-soyo.ini2
+yaSub-soyo.ini2
+raSub-soyo.ini2
+laSub-soyo.ini2
+vaSub-soyo.ini2
+shaSub-soyo.ini2
+ssaSub-soyo.ini2
+saSub-soyo.ini2
+haSub-soyo.ini2
+kssaSub-soyo.ini2 ];
+
+@ini3 = [ aSub-soyo.ini3
+kaSub-soyo.ini3
+khaSub-soyo.ini3
+gaSub-soyo.ini3
+ghaSub-soyo.ini3
+ngaSub-soyo.ini3
+caSub-soyo.ini3
+chaSub-soyo.ini3
+jaSub-soyo.ini3
+jhaSub-soyo.ini3
+nyaSub-soyo.ini3
+ttaSub-soyo.ini3
+tthaSub-soyo.ini3
+ddaSub-soyo.ini3
+ddhaSub-soyo.ini3
+nnaSub-soyo.ini3
+taSub-soyo.ini3
+thaSub-soyo.ini3
+daSub-soyo.ini3
+dhaSub-soyo.ini3
+naSub-soyo.ini3
+paSub-soyo.ini3
+phaSub-soyo.ini3
+baSub-soyo.ini3
+bhaSub-soyo.ini3
+maSub-soyo.ini3
+tsaSub-soyo.ini3
+tshaSub-soyo.ini3
+dzaSub-soyo.ini3
+zhaSub-soyo.ini3
+zaSub-soyo.ini3
+aaSub-soyo.ini3
+yaSub-soyo.ini3
+raSub-soyo.ini3
+laSub-soyo.ini3
+vaSub-soyo.ini3
+shaSub-soyo.ini3
+ssaSub-soyo.ini3
+saSub-soyo.ini3
+haSub-soyo.ini3
+kssaSub-soyo.ini3 ];
+
+@sub2 = [ aSub-soyo.2
+kaSub-soyo.2
+khaSub-soyo.2
+gaSub-soyo.2
+ghaSub-soyo.2
+ngaSub-soyo.2
+caSub-soyo.2
+chaSub-soyo.2
+jaSub-soyo.2
+jhaSub-soyo.2
+nyaSub-soyo.2
+ttaSub-soyo.2
+tthaSub-soyo.2
+ddaSub-soyo.2
+ddhaSub-soyo.2
+nnaSub-soyo.2
+taSub-soyo.2
+thaSub-soyo.2
+daSub-soyo.2
+dhaSub-soyo.2
+naSub-soyo.2
+paSub-soyo.2
+phaSub-soyo.2
+baSub-soyo.2
+bhaSub-soyo.2
+maSub-soyo.2
+tsaSub-soyo.2
+tshaSub-soyo.2
+dzaSub-soyo.2
+zhaSub-soyo.2
+zaSub-soyo.2
+aaSub-soyo.2
+yaSub-soyo.2
+raSub-soyo.2
+laSub-soyo.2
+vaSub-soyo.2
+shaSub-soyo.2
+ssaSub-soyo.2
+saSub-soyo.2
+haSub-soyo.2
+kssaSub-soyo.2 ];
+
+@sub3 = [ aSub-soyo.3
+kaSub-soyo.3
+khaSub-soyo.3
+gaSub-soyo.3
+ghaSub-soyo.3
+ngaSub-soyo.3
+caSub-soyo.3
+chaSub-soyo.3
+jaSub-soyo.3
+jhaSub-soyo.3
+nyaSub-soyo.3
+ttaSub-soyo.3
+tthaSub-soyo.3
+ddaSub-soyo.3
+ddhaSub-soyo.3
+nnaSub-soyo.3
+taSub-soyo.3
+thaSub-soyo.3
+daSub-soyo.3
+dhaSub-soyo.3
+naSub-soyo.3
+paSub-soyo.3
+phaSub-soyo.3
+baSub-soyo.3
+bhaSub-soyo.3
+maSub-soyo.3
+tsaSub-soyo.3
+tshaSub-soyo.3
+dzaSub-soyo.3
+zhaSub-soyo.3
+zaSub-soyo.3
+aaSub-soyo.3
+yaSub-soyo.3
+raSub-soyo.3
+laSub-soyo.3
+vaSub-soyo.3
+shaSub-soyo.3
+ssaSub-soyo.3
+saSub-soyo.3
+haSub-soyo.3
+kssaSub-soyo.3 ];
+
+@touchCentreBefore = [ kaSub-soyo
+khaSub-soyo
+gaSub-soyo
+ghaSub-soyo
+ngaSub-soyo
+caSub-soyo
+chaSub-soyo
+jaSub-soyo
+jhaSub-soyo
+nyaSub-soyo
+ttaSub-soyo
+tthaSub-soyo
+ddaSub-soyo
+ddhaSub-soyo
+nnaSub-soyo
+daSub-soyo
+baSub-soyo
+bhaSub-soyo
+maSub-soyo
+tsaSub-soyo
+tshaSub-soyo
+dzaSub-soyo
+aaSub-soyo
+vaSub-soyo ];
+
+@touchCentreAfter = [ kaSub-soyo
+khaSub-soyo
+gaSub-soyo
+ghaSub-soyo
+ngaSub-soyo
+caSub-soyo
+chaSub-soyo
+jaSub-soyo
+jhaSub-soyo
+nyaSub-soyo
+ttaSub-soyo
+tthaSub-soyo
+ddaSub-soyo
+ddhaSub-soyo
+nnaSub-soyo
+thaSub-soyo
+daSub-soyo
+dhaSub-soyo
+baSub-soyo
+maSub-soyo
+tsaSub-soyo
+tshaSub-soyo
+dzaSub-soyo
+aaSub-soyo
+yaSub-soyo
+raSub-soyo
+vaSub-soyo
+saSub-soyo
+haSub-soyo
+kssaSub-soyo ];
+
+@touchOpenBefore = [ zhaSub-soyo
+laSub-soyo
+shaSub-soyo
+haSub-soyo ];
+
+@touchOpenAfter = [ phaSub-soyo
+bhaSub-soyo
+zhaSub-soyo
+zaSub-soyo
+laSub-soyo
+shaSub-soyo
+ssaSub-soyo ];
+
+@lsb50Letter = [ nga-soyo
+kha-soyo
+ka-soyo
+ha-soyo
+ddha-soyo ];
+
+@lsb40Letter = [ kssa-soyo
+gha-soyo
+ga-soyo
+dha-soyo ];
+
+@lsb10Letter = [ ta-soyo
+pha-soyo
+pa-soyo ];
+
+@lsb-10Letter = [ zha-soyo
+ya-soyo
+ra-soyo
+ma-soyo
+la-soyo
+bha-soyo ];
+
+@lsb-20Letter = [ ssa-soyo
+sa-soyo
+na-soyo
+da-soyo
+ ];
+
+@lsb-30Letter = [ sha-soyo
+jha-soyo ];
+
+@lsb-40Letter = [ ba-soyo ];
+
+@lsb-50Letter = [ va-soyo
+ttha-soyo
+tta-soyo
+tsha-soyo
+tsa-soyo
+tha-soyo
+nya-soyo
+nna-soyo
+ja-soyo
+dza-soyo
+dda-soyo
+ca-soyo
+aa-soyo ];
+
+@lsb50Sub = [ ngaSub-soyo
+khaSub-soyo
+kaSub-soyo
+haSub-soyo
+ddhaSub-soyo
+
+# all alternates of the above
+ngaSub-soyo.ini2
+khaSub-soyo.ini2
+kaSub-soyo.ini2
+haSub-soyo.ini2
+ddhaSub-soyo.ini2
+ngaSub-soyo.ini3
+khaSub-soyo.ini3
+kaSub-soyo.ini3
+haSub-soyo.ini3
+ddhaSub-soyo.ini3
+ngaSub-soyo.2
+khaSub-soyo.2
+kaSub-soyo.2
+haSub-soyo.2
+ddhaSub-soyo.2
+ngaSub-soyo.3
+khaSub-soyo.3
+kaSub-soyo.3
+haSub-soyo.3
+ddhaSub-soyo.3 ];
+
+@lsb40Sub = [ kssaSub-soyo
+ghaSub-soyo
+gaSub-soyo
+dhaSub-soyo
+
+# all alternates of the above
+kssaSub-soyo.ini2
+ghaSub-soyo.ini2
+gaSub-soyo.ini2
+dhaSub-soyo.ini2
+kssaSub-soyo.ini3
+ghaSub-soyo.ini3
+gaSub-soyo.ini3
+dhaSub-soyo.ini3
+kssaSub-soyo.2
+ghaSub-soyo.2
+gaSub-soyo.2
+dhaSub-soyo.2
+kssaSub-soyo.3
+ghaSub-soyo.3
+gaSub-soyo.3
+dhaSub-soyo.3 ];
+
+@lsb10Sub = [ phaSub-soyo
+
+# all alternates of the above
+phaSub-soyo.ini2
+phaSub-soyo.ini3
+phaSub-soyo.2
+phaSub-soyo.3 ];
+
+@lsb-10Sub = [ zhaSub-soyo
+yaSub-soyo
+raSub-soyo
+maSub-soyo
+laSub-soyo
+bhaSub-soyo
+
+# all alternates of the above
+zhaSub-soyo.ini2
+yaSub-soyo.ini2
+raSub-soyo.ini2
+maSub-soyo.ini2
+laSub-soyo.ini2
+bhaSub-soyo.ini2
+zhaSub-soyo.ini3
+yaSub-soyo.ini3
+raSub-soyo.ini3
+maSub-soyo.ini3
+laSub-soyo.ini3
+bhaSub-soyo.ini3
+zhaSub-soyo.2
+yaSub-soyo.2
+raSub-soyo.2
+maSub-soyo.2
+laSub-soyo.2
+bhaSub-soyo.2
+zhaSub-soyo.3
+yaSub-soyo.3
+raSub-soyo.3
+maSub-soyo.3
+laSub-soyo.3
+bhaSub-soyo.3 ];
+
+@lsb-20Sub = [ ssaSub-soyo
+saSub-soyo
+naSub-soyo
+daSub-soyo
+
+# all alternates of the above
+ssaSub-soyo.ini2
+saSub-soyo.ini2
+naSub-soyo.ini2
+daSub-soyo.ini2
+ssaSub-soyo.ini3
+saSub-soyo.ini3
+naSub-soyo.ini3
+daSub-soyo.ini3
+ssaSub-soyo.2
+saSub-soyo.2
+naSub-soyo.2
+daSub-soyo.2
+ssaSub-soyo.3
+saSub-soyo.3
+naSub-soyo.3
+daSub-soyo.3 ];
+
+@lsb-30Sub = [ shaSub-soyo
+jhaSub-soyo
+
+# all alternates of the above
+shaSub-soyo.ini2
+jhaSub-soyo.ini2
+shaSub-soyo.ini3
+jhaSub-soyo.ini3
+shaSub-soyo.2
+jhaSub-soyo.2
+shaSub-soyo.3
+jhaSub-soyo.3 ];
+
+@lsb-40Sub = [ baSub-soyo
+
+# all alternates of the above
+baSub-soyo.ini2
+baSub-soyo.ini3
+baSub-soyo.2
+baSub-soyo.3 ];
+
+@lsb-50Sub = [ vaSub-soyo
+tthaSub-soyo
+ttaSub-soyo
+tshaSub-soyo
+tsaSub-soyo
+thaSub-soyo
+nyaSub-soyo
+nnaSub-soyo
+jaSub-soyo
+dzaSub-soyo
+ddaSub-soyo
+caSub-soyo
+aaSub-soyo
+
+# all alternates of the above
+vaSub-soyo.ini2
+tthaSub-soyo.ini2
+ttaSub-soyo.ini2
+tshaSub-soyo.ini2
+tsaSub-soyo.ini2
+thaSub-soyo.ini2
+nyaSub-soyo.ini2
+nnaSub-soyo.ini2
+jaSub-soyo.ini2
+dzaSub-soyo.ini2
+ddaSub-soyo.ini2
+caSub-soyo.ini2
+aaSub-soyo.ini2
+vaSub-soyo.ini3
+tthaSub-soyo.ini3
+ttaSub-soyo.ini3
+tshaSub-soyo.ini3
+tsaSub-soyo.ini3
+thaSub-soyo.ini3
+nyaSub-soyo.ini3
+nnaSub-soyo.ini3
+jaSub-soyo.ini3
+dzaSub-soyo.ini3
+ddaSub-soyo.ini3
+caSub-soyo.ini3
+aaSub-soyo.ini3
+vaSub-soyo.2
+tthaSub-soyo.2
+ttaSub-soyo.2
+tshaSub-soyo.2
+tsaSub-soyo.2
+thaSub-soyo.2
+nyaSub-soyo.2
+nnaSub-soyo.2
+jaSub-soyo.2
+dzaSub-soyo.2
+ddaSub-soyo.2
+caSub-soyo.2
+aaSub-soyo.2
+vaSub-soyo.3
+tthaSub-soyo.3
+ttaSub-soyo.3
+tshaSub-soyo.3
+tsaSub-soyo.3
+thaSub-soyo.3
+nyaSub-soyo.3
+nnaSub-soyo.3
+jaSub-soyo.3
+dzaSub-soyo.3
+ddaSub-soyo.3
+caSub-soyo.3
+aaSub-soyo.3 ];
+
+@narrowCentreStemLetter = [ tta-soyo ttha-soyo dda-soyo nna-soyo da-soyo ];
+
+@narrowCentreStemSub = [ tta-soyo
+ttha-soyo
+dda-soyo
+nna-soyo
+da-soyo
+
+ttaSub-soyo
+tthaSub-soyo
+ddaSub-soyo
+nnaSub-soyo
+daSub-soyo
+ttaSub-soyo.ini2
+tthaSub-soyo.ini2
+ddaSub-soyo.ini2
+nnaSub-soyo.ini2
+daSub-soyo.ini2
+ttaSub-soyo.ini3
+tthaSub-soyo.ini3
+ddaSub-soyo.ini3
+nnaSub-soyo.ini3
+daSub-soyo.ini3 ];
+
+# Prefix: lookups
+@diphthongs = [aiMatra-soyo auMatra-soyo visagra-soyo];
+
+lookup diphthong_finalCons_1 {
+	sub @diphthongs' gFinal-soyo by [gFinal-soyo gFinal-soyo gFinal-soyo];
+	sub @diphthongs' kFinal-soyo by [kFinal-soyo kFinal-soyo kFinal-soyo];
+	sub @diphthongs' ngFinal-soyo by [ngFinal-soyo ngFinal-soyo ngFinal-soyo];
+	sub @diphthongs' dFinal-soyo by [dFinal-soyo dFinal-soyo dFinal-soyo];
+	sub @diphthongs' nFinal-soyo by [nFinal-soyo nFinal-soyo nFinal-soyo];
+	sub @diphthongs' bFinal-soyo by [bFinal-soyo bFinal-soyo bFinal-soyo];
+	sub @diphthongs' mFinal-soyo by [mFinal-soyo mFinal-soyo mFinal-soyo];
+	sub @diphthongs' rFinal-soyo by [rFinal-soyo rFinal-soyo rFinal-soyo];
+	sub @diphthongs' lFinal-soyo by [lFinal-soyo lFinal-soyo lFinal-soyo];
+	sub @diphthongs' shFinal-soyo by [shFinal-soyo shFinal-soyo shFinal-soyo];
+	sub @diphthongs' sFinal-soyo by [sFinal-soyo sFinal-soyo sFinal-soyo];
+	sub @diphthongs' aFinal-soyo by [aFinal-soyo aFinal-soyo aFinal-soyo];
+} diphthong_finalCons_1;
+
+lookup diphthong_finalCons_2 {
+	sub aiMatra-soyo @halfBottomMarks0' by [aiMatra-soyo aiMatra-soyo aiMatra-soyo aiMatra-soyo aiMatra-soyo aiMatra-soyo aiMatra-soyo aiMatra-soyo aiMatra-soyo aiMatra-soyo aiMatra-soyo aiMatra-soyo aiMatra-soyo aiMatra-soyo aiMatra-soyo];
+	sub auMatra-soyo @halfBottomMarks0' by [auMatra-soyo auMatra-soyo auMatra-soyo auMatra-soyo auMatra-soyo auMatra-soyo auMatra-soyo auMatra-soyo auMatra-soyo auMatra-soyo auMatra-soyo auMatra-soyo auMatra-soyo auMatra-soyo auMatra-soyo];
+	sub visagra-soyo @halfBottomMarks0' by [visagra-soyo visagra-soyo visagra-soyo visagra-soyo visagra-soyo visagra-soyo visagra-soyo visagra-soyo visagra-soyo visagra-soyo visagra-soyo visagra-soyo visagra-soyo visagra-soyo visagra-soyo];
+} diphthong_finalCons_2;
+
+lookup diphthong_finalCons_2_ai {
+	sub @halfBottomMarks0 by [aiMatra-soyo aiMatra-soyo aiMatra-soyo aiMatra-soyo aiMatra-soyo aiMatra-soyo aiMatra-soyo aiMatra-soyo aiMatra-soyo aiMatra-soyo aiMatra-soyo aiMatra-soyo aiMatra-soyo aiMatra-soyo aiMatra-soyo];
+} diphthong_finalCons_2_ai;
+
+lookup diphthong_finalCons_2_au {
+	sub @halfBottomMarks0 by [auMatra-soyo auMatra-soyo auMatra-soyo auMatra-soyo auMatra-soyo auMatra-soyo auMatra-soyo auMatra-soyo auMatra-soyo auMatra-soyo auMatra-soyo auMatra-soyo auMatra-soyo auMatra-soyo auMatra-soyo];
+} diphthong_finalCons_2_au;
+
+lookup diphthong_finalCons_2_visagra {
+	sub @halfBottomMarks0 by [visagra-soyo visagra-soyo visagra-soyo visagra-soyo visagra-soyo visagra-soyo visagra-soyo visagra-soyo visagra-soyo visagra-soyo visagra-soyo visagra-soyo visagra-soyo visagra-soyo visagra-soyo];
+} diphthong_finalCons_2_visagra;
+
+
+@ticks = [vowelLength-soyo aFinal-soyo];
+lookup finalCons_vowelLength_1 {
+	sub @ticks' gFinal-soyo by [gFinal-soyo gFinal-soyo];
+	sub @ticks' kFinal-soyo by [kFinal-soyo kFinal-soyo];
+	sub @ticks' ngFinal-soyo by [ngFinal-soyo ngFinal-soyo];
+	sub @ticks' dFinal-soyo by [dFinal-soyo dFinal-soyo];
+	sub @ticks' nFinal-soyo by [nFinal-soyo nFinal-soyo];
+	sub @ticks' bFinal-soyo by [bFinal-soyo bFinal-soyo];
+	sub @ticks' mFinal-soyo by [mFinal-soyo mFinal-soyo];
+	sub @ticks' rFinal-soyo by [rFinal-soyo rFinal-soyo];
+	sub @ticks' lFinal-soyo by [lFinal-soyo lFinal-soyo];
+	sub @ticks' shFinal-soyo by [shFinal-soyo shFinal-soyo];
+	sub @ticks' sFinal-soyo by [sFinal-soyo sFinal-soyo];
+	sub @ticks' aFinal-soyo by [aFinal-soyo aFinal-soyo];
+} finalCons_vowelLength_1;
+
+lookup finalCons_vowelLength_2_vl {
+	sub @halfBottomMarks0 by [vowelLength-soyo vowelLength-soyo vowelLength-soyo vowelLength-soyo vowelLength-soyo vowelLength-soyo vowelLength-soyo vowelLength-soyo vowelLength-soyo vowelLength-soyo vowelLength-soyo vowelLength-soyo vowelLength-soyo vowelLength-soyo vowelLength-soyo];
+} finalCons_vowelLength_2_vl;
+
+lookup finalCons_vowelLength_2_aF {
+	sub @halfBottomMarks0 by [aFinal-soyo aFinal-soyo aFinal-soyo aFinal-soyo aFinal-soyo aFinal-soyo aFinal-soyo aFinal-soyo aFinal-soyo aFinal-soyo aFinal-soyo aFinal-soyo aFinal-soyo aFinal-soyo aFinal-soyo];
+} finalCons_vowelLength_2_aF;
+
+
+@matrasForReorder = [iMatra-soyo ueMatra-soyo uMatra-soyo eMatra-soyo oMatra-soyo oeMatra-soyo rVocalicMatra-soyo lVocalicMatra-soyo];
+
+lookup finalCons_vowel_1 {
+	sub @matrasForReorder' gFinal-soyo by [gFinal-soyo gFinal-soyo gFinal-soyo gFinal-soyo gFinal-soyo gFinal-soyo gFinal-soyo gFinal-soyo];
+	sub @matrasForReorder' kFinal-soyo by [kFinal-soyo kFinal-soyo kFinal-soyo kFinal-soyo kFinal-soyo kFinal-soyo kFinal-soyo kFinal-soyo];
+	sub @matrasForReorder' ngFinal-soyo by [ngFinal-soyo ngFinal-soyo ngFinal-soyo ngFinal-soyo ngFinal-soyo ngFinal-soyo ngFinal-soyo ngFinal-soyo];
+	sub @matrasForReorder' dFinal-soyo by [dFinal-soyo dFinal-soyo dFinal-soyo dFinal-soyo dFinal-soyo dFinal-soyo dFinal-soyo dFinal-soyo];
+	sub @matrasForReorder' nFinal-soyo by [nFinal-soyo nFinal-soyo nFinal-soyo nFinal-soyo nFinal-soyo nFinal-soyo nFinal-soyo nFinal-soyo];
+	sub @matrasForReorder' bFinal-soyo by [bFinal-soyo bFinal-soyo bFinal-soyo bFinal-soyo bFinal-soyo bFinal-soyo bFinal-soyo bFinal-soyo];
+	sub @matrasForReorder' mFinal-soyo by [mFinal-soyo mFinal-soyo mFinal-soyo mFinal-soyo mFinal-soyo mFinal-soyo mFinal-soyo mFinal-soyo];
+	sub @matrasForReorder' rFinal-soyo by [rFinal-soyo rFinal-soyo rFinal-soyo rFinal-soyo rFinal-soyo rFinal-soyo rFinal-soyo rFinal-soyo];
+	sub @matrasForReorder' lFinal-soyo by [lFinal-soyo lFinal-soyo lFinal-soyo lFinal-soyo lFinal-soyo lFinal-soyo lFinal-soyo lFinal-soyo];
+	sub @matrasForReorder' shFinal-soyo by [shFinal-soyo shFinal-soyo shFinal-soyo shFinal-soyo shFinal-soyo shFinal-soyo shFinal-soyo shFinal-soyo];
+	sub @matrasForReorder' sFinal-soyo by [sFinal-soyo sFinal-soyo sFinal-soyo sFinal-soyo sFinal-soyo sFinal-soyo sFinal-soyo sFinal-soyo];
+	sub @matrasForReorder' aFinal-soyo by [aFinal-soyo aFinal-soyo aFinal-soyo aFinal-soyo aFinal-soyo aFinal-soyo aFinal-soyo aFinal-soyo];
+} finalCons_vowel_1;
+
+lookup finalCons_vowel_2_i {
+	sub @halfBottomMarks0 by [iMatra-soyo iMatra-soyo iMatra-soyo iMatra-soyo iMatra-soyo iMatra-soyo iMatra-soyo iMatra-soyo iMatra-soyo iMatra-soyo iMatra-soyo iMatra-soyo iMatra-soyo iMatra-soyo iMatra-soyo];
+} finalCons_vowel_2_i;
+
+lookup finalCons_vowel_2_ue {
+	sub @halfBottomMarks0 by [ueMatra-soyo ueMatra-soyo ueMatra-soyo ueMatra-soyo ueMatra-soyo ueMatra-soyo ueMatra-soyo ueMatra-soyo ueMatra-soyo ueMatra-soyo ueMatra-soyo ueMatra-soyo ueMatra-soyo ueMatra-soyo ueMatra-soyo];
+} finalCons_vowel_2_ue;
+
+lookup finalCons_vowel_2_u {
+	sub @halfBottomMarks0 by [uMatra-soyo uMatra-soyo uMatra-soyo uMatra-soyo uMatra-soyo uMatra-soyo uMatra-soyo uMatra-soyo uMatra-soyo uMatra-soyo uMatra-soyo uMatra-soyo uMatra-soyo uMatra-soyo uMatra-soyo];
+} finalCons_vowel_2_u;
+
+lookup finalCons_vowel_2_e {
+	sub @halfBottomMarks0 by [eMatra-soyo eMatra-soyo eMatra-soyo eMatra-soyo eMatra-soyo eMatra-soyo eMatra-soyo eMatra-soyo eMatra-soyo eMatra-soyo eMatra-soyo eMatra-soyo eMatra-soyo eMatra-soyo eMatra-soyo];
+} finalCons_vowel_2_e;
+
+lookup finalCons_vowel_2_o {
+	sub @halfBottomMarks0 by [oMatra-soyo oMatra-soyo oMatra-soyo oMatra-soyo oMatra-soyo oMatra-soyo oMatra-soyo oMatra-soyo oMatra-soyo oMatra-soyo oMatra-soyo oMatra-soyo oMatra-soyo oMatra-soyo oMatra-soyo];
+} finalCons_vowel_2_o;
+
+lookup finalCons_vowel_2_oe {
+	sub @halfBottomMarks0 by [oeMatra-soyo oeMatra-soyo oeMatra-soyo oeMatra-soyo oeMatra-soyo oeMatra-soyo oeMatra-soyo oeMatra-soyo oeMatra-soyo oeMatra-soyo oeMatra-soyo oeMatra-soyo oeMatra-soyo oeMatra-soyo oeMatra-soyo];
+} finalCons_vowel_2_oe;
+
+lookup finalCons_vowel_2_r {
+	sub @halfBottomMarks0 by [rVocalicMatra-soyo rVocalicMatra-soyo rVocalicMatra-soyo rVocalicMatra-soyo rVocalicMatra-soyo rVocalicMatra-soyo rVocalicMatra-soyo rVocalicMatra-soyo rVocalicMatra-soyo rVocalicMatra-soyo rVocalicMatra-soyo rVocalicMatra-soyo rVocalicMatra-soyo rVocalicMatra-soyo rVocalicMatra-soyo];
+} finalCons_vowel_2_r;
+
+lookup finalCons_vowel_2_l {
+	sub @halfBottomMarks0 by [lVocalicMatra-soyo lVocalicMatra-soyo lVocalicMatra-soyo lVocalicMatra-soyo lVocalicMatra-soyo lVocalicMatra-soyo lVocalicMatra-soyo lVocalicMatra-soyo lVocalicMatra-soyo lVocalicMatra-soyo lVocalicMatra-soyo lVocalicMatra-soyo lVocalicMatra-soyo lVocalicMatra-soyo lVocalicMatra-soyo];
+} finalCons_vowel_2_l;
+
+
+
+lookup add_head_inside {
+	sub a-soyo' by head-soyo aSub-soyo;
+	sub ka-soyo' by head-soyo kaSub-soyo;
+	sub kha-soyo' by head-soyo khaSub-soyo;
+	sub ga-soyo' by head-soyo gaSub-soyo;
+	sub gha-soyo' by head-soyo ghaSub-soyo;
+	sub nga-soyo' by head-soyo ngaSub-soyo;
+	sub ca-soyo' by head-soyo caSub-soyo;
+	sub cha-soyo' by head-soyo chaSub-soyo;
+	sub ja-soyo' by head-soyo jaSub-soyo;
+	sub jha-soyo' by head-soyo jhaSub-soyo;
+	sub nya-soyo' by head-soyo nyaSub-soyo;
+	sub tta-soyo' by head-soyo ttaSub-soyo;
+	sub ttha-soyo' by head-soyo tthaSub-soyo;
+	sub dda-soyo' by head-soyo ddaSub-soyo;
+	sub ddha-soyo' by head-soyo ddhaSub-soyo;
+	sub nna-soyo' by head-soyo nnaSub-soyo;
+	sub ta-soyo' by head-soyo taSub-soyo;
+	sub tha-soyo' by head-soyo thaSub-soyo;
+	sub da-soyo' by head-soyo daSub-soyo;
+	sub dha-soyo' by head-soyo dhaSub-soyo;
+	sub na-soyo' by head-soyo naSub-soyo;
+	sub pa-soyo' by head-soyo paSub-soyo;
+	sub pha-soyo' by head-soyo phaSub-soyo;
+	sub ba-soyo' by head-soyo baSub-soyo;
+	sub bha-soyo' by head-soyo bhaSub-soyo;
+	sub ma-soyo' by head-soyo maSub-soyo;
+	sub tsa-soyo' by head-soyo tsaSub-soyo;
+	sub tsha-soyo' by head-soyo tshaSub-soyo;
+	sub dza-soyo' by head-soyo dzaSub-soyo;
+	sub zha-soyo' by head-soyo zhaSub-soyo;
+	sub za-soyo' by head-soyo zaSub-soyo;
+	sub aa-soyo' by head-soyo aaSub-soyo;
+	sub ya-soyo' by head-soyo yaSub-soyo;
+	sub ra-soyo' by head-soyo raSub-soyo;
+	sub la-soyo' by head-soyo laSub-soyo;
+	sub va-soyo' by head-soyo vaSub-soyo;
+	sub sha-soyo' by head-soyo shaSub-soyo;
+	sub ssa-soyo' by head-soyo ssaSub-soyo;
+	sub sa-soyo' by head-soyo saSub-soyo;
+	sub ha-soyo' by head-soyo haSub-soyo;
+	sub kssa-soyo' by head-soyo kssaSub-soyo;
+} add_head_inside;
+
+lookup add_tail_inside {
+	sub aSub-soyo' by aSub-soyo tail-soyo.long;
+	sub kaSub-soyo' by kaSub-soyo tail-soyo.long;
+	sub khaSub-soyo' by khaSub-soyo tail-soyo.long;
+	sub gaSub-soyo' by gaSub-soyo tail-soyo.long;
+	sub ghaSub-soyo' by ghaSub-soyo tail-soyo.long;
+	sub ngaSub-soyo' by ngaSub-soyo tail-soyo.long;
+	sub caSub-soyo' by caSub-soyo tail-soyo.long;
+	sub chaSub-soyo' by chaSub-soyo tail-soyo.long;
+	sub jaSub-soyo' by jaSub-soyo tail-soyo.long;
+	sub jhaSub-soyo' by jhaSub-soyo tail-soyo.long;
+	sub nyaSub-soyo' by nyaSub-soyo tail-soyo.long;
+	sub ttaSub-soyo' by ttaSub-soyo tail-soyo.long;
+	sub tthaSub-soyo' by tthaSub-soyo tail-soyo.long;
+	sub ddaSub-soyo' by ddaSub-soyo tail-soyo.long;
+	sub ddhaSub-soyo' by ddhaSub-soyo tail-soyo.long;
+	sub nnaSub-soyo' by nnaSub-soyo tail-soyo.long;
+	sub taSub-soyo' by taSub-soyo tail-soyo.long;
+	sub thaSub-soyo' by thaSub-soyo tail-soyo.long;
+	sub daSub-soyo' by daSub-soyo tail-soyo.long;
+	sub dhaSub-soyo' by dhaSub-soyo tail-soyo.long;
+	sub naSub-soyo' by naSub-soyo tail-soyo.long;
+	sub paSub-soyo' by paSub-soyo tail-soyo.long;
+	sub phaSub-soyo' by phaSub-soyo tail-soyo.long;
+	sub baSub-soyo' by baSub-soyo tail-soyo.long;
+	sub bhaSub-soyo' by bhaSub-soyo tail-soyo.long;
+	sub maSub-soyo' by maSub-soyo tail-soyo.long;
+	sub tsaSub-soyo' by tsaSub-soyo tail-soyo.long;
+	sub tshaSub-soyo' by tshaSub-soyo tail-soyo.long;
+	sub dzaSub-soyo' by dzaSub-soyo tail-soyo.long;
+	sub zhaSub-soyo' by zhaSub-soyo tail-soyo.long;
+	sub zaSub-soyo' by zaSub-soyo tail-soyo.long;
+	sub aaSub-soyo' by aaSub-soyo tail-soyo.long;
+	sub yaSub-soyo' by yaSub-soyo tail-soyo.long;
+	sub raSub-soyo' by raSub-soyo tail-soyo.long;
+	sub laSub-soyo' by laSub-soyo tail-soyo.long;
+	sub vaSub-soyo' by vaSub-soyo tail-soyo.long;
+	sub shaSub-soyo' by shaSub-soyo tail-soyo.long;
+	sub ssaSub-soyo' by ssaSub-soyo tail-soyo.long;
+	sub saSub-soyo' by saSub-soyo tail-soyo.long;
+	sub haSub-soyo' by haSub-soyo tail-soyo.long;
+	sub kssaSub-soyo' by kssaSub-soyo tail-soyo.long;
+} add_tail_inside;
+
+lookup add_joiner_inside {
+	sub aSub-soyo' by aSub-soyo joiner-soyo.right;
+	sub kaSub-soyo' by kaSub-soyo joiner-soyo.right;
+	sub khaSub-soyo' by khaSub-soyo joiner-soyo.right;
+	sub gaSub-soyo' by gaSub-soyo joiner-soyo.right;
+	sub ghaSub-soyo' by ghaSub-soyo joiner-soyo.right;
+	sub ngaSub-soyo' by ngaSub-soyo joiner-soyo.right;
+	sub caSub-soyo' by caSub-soyo joiner-soyo.right;
+	sub chaSub-soyo' by chaSub-soyo joiner-soyo.right;
+	sub jaSub-soyo' by jaSub-soyo joiner-soyo.right;
+	sub jhaSub-soyo' by jhaSub-soyo joiner-soyo.right;
+	sub nyaSub-soyo' by nyaSub-soyo joiner-soyo.right;
+	sub ttaSub-soyo' by ttaSub-soyo joiner-soyo.right;
+	sub tthaSub-soyo' by tthaSub-soyo joiner-soyo.right;
+	sub ddaSub-soyo' by ddaSub-soyo joiner-soyo.right;
+	sub ddhaSub-soyo' by ddhaSub-soyo joiner-soyo.right;
+	sub nnaSub-soyo' by nnaSub-soyo joiner-soyo.right;
+	sub taSub-soyo' by taSub-soyo joiner-soyo.right;
+	sub thaSub-soyo' by thaSub-soyo joiner-soyo.right;
+	sub daSub-soyo' by daSub-soyo joiner-soyo.right;
+	sub dhaSub-soyo' by dhaSub-soyo joiner-soyo.right;
+	sub naSub-soyo' by naSub-soyo joiner-soyo.right;
+	sub paSub-soyo' by paSub-soyo joiner-soyo.right;
+	sub phaSub-soyo' by phaSub-soyo joiner-soyo.right;
+	sub baSub-soyo' by baSub-soyo joiner-soyo.right;
+	sub bhaSub-soyo' by bhaSub-soyo joiner-soyo.right;
+	sub maSub-soyo' by maSub-soyo joiner-soyo.right;
+	sub tsaSub-soyo' by tsaSub-soyo joiner-soyo.right;
+	sub tshaSub-soyo' by tshaSub-soyo joiner-soyo.right;
+	sub dzaSub-soyo' by dzaSub-soyo joiner-soyo.right;
+	sub zhaSub-soyo' by zhaSub-soyo joiner-soyo.right;
+	sub zaSub-soyo' by zaSub-soyo joiner-soyo.right;
+	sub aaSub-soyo' by aaSub-soyo joiner-soyo.right;
+	sub yaSub-soyo' by yaSub-soyo joiner-soyo.right;
+	sub raSub-soyo' by raSub-soyo joiner-soyo.right;
+	sub laSub-soyo' by laSub-soyo joiner-soyo.right;
+	sub vaSub-soyo' by vaSub-soyo joiner-soyo.right;
+	sub shaSub-soyo' by shaSub-soyo joiner-soyo.right;
+	sub ssaSub-soyo' by ssaSub-soyo joiner-soyo.right;
+	sub saSub-soyo' by saSub-soyo joiner-soyo.right;
+	sub haSub-soyo' by haSub-soyo joiner-soyo.right;
+	sub kssaSub-soyo' by kssaSub-soyo joiner-soyo.right;
+} add_joiner_inside;
+
+
+# Prefix: Languagesystems
+# automatic
+languagesystem DFLT dflt;
+
+languagesystem soyo dflt;
+
+
+feature ccmp {
+
+
+
+# final consonant & diphthong reorder
+lookup finalCons_diphthong_reorder {
+	sub aiMatra-soyo' lookup diphthong_finalCons_1 @halfBottomMarks0' lookup diphthong_finalCons_2_ai;
+	sub auMatra-soyo' lookup diphthong_finalCons_1 @halfBottomMarks0' lookup diphthong_finalCons_2_au;
+	sub visagra-soyo' lookup diphthong_finalCons_1 @halfBottomMarks0' lookup diphthong_finalCons_2_visagra;
+} finalCons_diphthong_reorder;
+
+
+#final consonant & vowelLength mark reorder
+lookup finalCons_vowelLength_reorder {
+	sub vowelLength-soyo' lookup finalCons_vowelLength_1 @halfBottomMarks0' lookup finalCons_vowelLength_2_vl;
+	sub aFinal-soyo' lookup finalCons_vowelLength_1 @halfBottomMarks0' lookup finalCons_vowelLength_2_aF;
+} finalCons_vowelLength_reorder;
+
+# final consonant & vowels reorder
+lookup finalCons_vowel_reorder {
+	sub iMatra-soyo' lookup finalCons_vowel_1 @halfBottomMarks0' lookup finalCons_vowel_2_i;
+	sub ueMatra-soyo' lookup finalCons_vowel_1 @halfBottomMarks0' lookup finalCons_vowel_2_ue;
+	sub uMatra-soyo' lookup finalCons_vowel_1 @halfBottomMarks0' lookup finalCons_vowel_2_u;
+	sub eMatra-soyo' lookup finalCons_vowel_1 @halfBottomMarks0' lookup finalCons_vowel_2_e;
+	sub oMatra-soyo' lookup finalCons_vowel_1 @halfBottomMarks0' lookup finalCons_vowel_2_o;
+	sub oeMatra-soyo' lookup finalCons_vowel_1 @halfBottomMarks0' lookup finalCons_vowel_2_oe;
+	sub rVocalicMatra-soyo' lookup finalCons_vowel_1 @halfBottomMarks0' lookup finalCons_vowel_2_r;
+	sub lVocalicMatra-soyo' lookup finalCons_vowel_1 @halfBottomMarks0' lookup finalCons_vowel_2_l;
+} finalCons_vowel_reorder;
+
+#prevents visagra and diphthong reordering.
+# I don't know if this is the right solution but it works
+lookup preventDiphthongReorder {
+	lookupflag UseMarkFilteringSet @diphthongs;
+	sub @baseLetters @diphthongs' by @diphthongs;
+} preventDiphthongReorder;
+
+} ccmp;
+
+feature pref {
+# mention this glyph so that it ges reordered
+
+
+sub gemination-soyo by gemination-soyo;
+sub jihvamuliya-soyo by jihvamuliya-soyo;
+sub upadhmaniya-soyo by upadhmaniya-soyo;
+
+sub raInitial-soyo by raInitial-soyo;
+sub laInitial-soyo by laInitial-soyo;
+sub shaInitial-soyo by shaInitial-soyo;
+sub saInitial-soyo by saInitial-soyo;
+} pref;
+
+feature half {
+# Half-form
+# This is before reordering
+
+
+
+sub subjoiner-soyo ka-soyo by kaSub-soyo;
+sub subjoiner-soyo kha-soyo by khaSub-soyo;
+sub subjoiner-soyo ga-soyo by gaSub-soyo;
+sub subjoiner-soyo gha-soyo by ghaSub-soyo;
+sub subjoiner-soyo nga-soyo by ngaSub-soyo;
+sub subjoiner-soyo ca-soyo by caSub-soyo;
+sub subjoiner-soyo cha-soyo by chaSub-soyo;
+sub subjoiner-soyo ja-soyo by jaSub-soyo;
+sub subjoiner-soyo jha-soyo by jhaSub-soyo;
+sub subjoiner-soyo nya-soyo by nyaSub-soyo;
+sub subjoiner-soyo tta-soyo by ttaSub-soyo;
+sub subjoiner-soyo ttha-soyo by tthaSub-soyo;
+sub subjoiner-soyo dda-soyo by ddaSub-soyo;
+sub subjoiner-soyo ddha-soyo by ddhaSub-soyo;
+sub subjoiner-soyo nna-soyo by nnaSub-soyo;
+sub subjoiner-soyo ta-soyo by taSub-soyo;
+sub subjoiner-soyo tha-soyo by thaSub-soyo;
+sub subjoiner-soyo da-soyo by daSub-soyo;
+sub subjoiner-soyo dha-soyo by dhaSub-soyo;
+sub subjoiner-soyo na-soyo by naSub-soyo;
+sub subjoiner-soyo pa-soyo by paSub-soyo;
+sub subjoiner-soyo pha-soyo by phaSub-soyo;
+sub subjoiner-soyo ba-soyo by baSub-soyo;
+sub subjoiner-soyo bha-soyo by bhaSub-soyo;
+sub subjoiner-soyo ma-soyo by maSub-soyo;
+sub subjoiner-soyo tsa-soyo by tsaSub-soyo;
+sub subjoiner-soyo tsha-soyo by tshaSub-soyo;
+sub subjoiner-soyo dza-soyo by dzaSub-soyo;
+sub subjoiner-soyo zha-soyo by zhaSub-soyo;
+sub subjoiner-soyo za-soyo by zaSub-soyo;
+sub subjoiner-soyo aa-soyo by aaSub-soyo;
+sub subjoiner-soyo ya-soyo by yaSub-soyo;
+sub subjoiner-soyo ra-soyo by raSub-soyo;
+sub subjoiner-soyo la-soyo by laSub-soyo;
+sub subjoiner-soyo va-soyo by vaSub-soyo;
+sub subjoiner-soyo sha-soyo by shaSub-soyo;
+sub subjoiner-soyo ssa-soyo by ssaSub-soyo;
+sub subjoiner-soyo sa-soyo by saSub-soyo;
+sub subjoiner-soyo ha-soyo by haSub-soyo;
+sub subjoiner-soyo kssa-soyo by kssaSub-soyo;
+
+} half;
+
+feature pres {
+# disabled
+## Pre-base substitution
+## This is after vowel reordering, which doesn't happen in Soyombo though.
+#
+#script soyo;
+#
+} pres;
+
+feature psts {
+# Post-base substitution
+
+
+
+@initBreak = [@halfBottomMarks0 @subLetters];
+
+@add_head_matters = [@preHead @baseLetters @halfBottomMarks0];
+
+lookup add_head {
+	# Decompose a letter into head and sub parts
+	
+	# if there's top decoration before
+	sub @preHead @baseLetters' lookup add_head_inside;
+
+	# if it's initial of a multi-consonant syllable
+	sub @baseLetters' lookup add_head_inside @sub0;
+
+	# if it's followed by vowel marks
+	sub @baseLetters' lookup add_head_inside @halfBottomMarks0;
+} add_head;
+
+lookup open_head {
+	# Some letters need to have stylistically different (open) head
+	sub head-soyo' [kaSub-soyo khaSub-soyo gaSub-soyo ghaSub-soyo ngaSub-soyo haSub-soyo kssaSub-soyo] by head-soyo.open;
+} open_head;
+
+
+lookup remove_dottedCircle {
+# Between final consonant and a vowel sign, a dottedCircle seems to be added by certain layout engines after ccmp.
+# This lookup removes that.
+	sub dottedCircle' gemination-soyo' by gemination-soyo;
+	sub gemination-soyo' dottedCircle' by gemination-soyo;
+	sub dottedCircle' gFinal-soyo' by gFinal-soyo;
+	sub dottedCircle' kFinal-soyo' by kFinal-soyo;
+	sub dottedCircle' ngFinal-soyo' by ngFinal-soyo;
+	sub dottedCircle' dFinal-soyo' by dFinal-soyo;
+	sub dottedCircle' nFinal-soyo' by nFinal-soyo;
+	sub dottedCircle' bFinal-soyo' by bFinal-soyo;
+	sub dottedCircle' mFinal-soyo' by mFinal-soyo;
+	sub dottedCircle' rFinal-soyo' by rFinal-soyo;
+	sub dottedCircle' lFinal-soyo' by lFinal-soyo;
+	sub dottedCircle' shFinal-soyo' by shFinal-soyo;
+	sub dottedCircle' sFinal-soyo' by sFinal-soyo;
+	sub dottedCircle' aFinal-soyo' by aFinal-soyo;
+	sub dottedCircle' iMatra-soyo' by iMatra-soyo;
+	sub dottedCircle' ueMatra-soyo' by ueMatra-soyo;
+	sub dottedCircle' uMatra-soyo' by uMatra-soyo;
+	sub dottedCircle' eMatra-soyo' by eMatra-soyo;
+	sub dottedCircle' oMatra-soyo' by oMatra-soyo;
+	sub dottedCircle' oeMatra-soyo' by oeMatra-soyo;
+	sub dottedCircle' rVocalicMatra-soyo' by rVocalicMatra-soyo;
+	sub dottedCircle' lVocalicMatra-soyo' by lVocalicMatra-soyo;
+	sub dottedCircle' vowelLength-soyo' by vowelLength-soyo;
+	sub dottedCircle' aiMatra-soyo' by aiMatra-soyo;
+	sub dottedCircle' auMatra-soyo' by auMatra-soyo;
+	sub dottedCircle' visagra-soyo' by visagra-soyo;
+	sub dottedCircle' anusvara-soyo' by anusvara-soyo;
+
+	sub dottedCircle @halfBottomMarks0' by @halfBottomMarks0;
+} remove_dottedCircle;
+
+
+lookup add_head2 {
+# adds tail for aFinal cases that couldn't be done in ccmp due to the dottedCircle issue.
+	sub @baseLetters' lookup add_head_inside aFinal-soyo @halfBottomMarks0;
+} add_head2;
+
+
+lookup lower_head {
+	sub @preHead head-soyo' by headSub-soyo;
+	sub @preHead head-soyo.open' by headSub-soyo.open;
+} lower_head;
+
+
+@halfMarks = [@halfBottomMarks0 @halfBottomMarks1];
+lookup half_marks {
+# 	lookupflag UseMarkFilteringSet @halfMarks;
+	sub @halfBottomMarks0' @halfBottomMarks0 by @halfBottomMarks1;
+	sub @halfBottomMarks1 @halfBottomMarks0' by @halfBottomMarks1;
+} half_marks;
+
+
+lookup add_tail {
+	# Long tail for vowel and consonant marks
+	sub @sub0' lookup add_tail_inside aFinal-soyo [@halfBottomMarks0 @halfBottomMarks1];
+	sub @sub0' lookup add_tail_inside [@halfBottomMarks0 @halfBottomMarks1];
+
+	# Normal tail
+	sub gFinal-soyo' @halfBottomMarks0 by gFinal-soyo tail-soyo;
+	sub kFinal-soyo' @halfBottomMarks0 by kFinal-soyo tail-soyo;
+	sub ngFinal-soyo' @halfBottomMarks0 by ngFinal-soyo tail-soyo;
+	sub dFinal-soyo' @halfBottomMarks0 by dFinal-soyo tail-soyo;
+	sub nFinal-soyo' @halfBottomMarks0 by nFinal-soyo tail-soyo;
+	sub bFinal-soyo' @halfBottomMarks0 by bFinal-soyo tail-soyo;
+	sub mFinal-soyo' @halfBottomMarks0 by mFinal-soyo tail-soyo;
+	sub rFinal-soyo' @halfBottomMarks0 by rFinal-soyo tail-soyo;
+	sub lFinal-soyo' @halfBottomMarks0 by lFinal-soyo tail-soyo;
+	sub shFinal-soyo' @halfBottomMarks0 by shFinal-soyo tail-soyo;
+	sub sFinal-soyo' @halfBottomMarks0 by sFinal-soyo tail-soyo;
+# 	sub aFinal-soyo' @halfBottomMarks0 by tail-soyo aFinal-soyo;
+} add_tail;
+
+
+
+lookup add_joiner1 { # add joiner stem on the right between consonants
+# 	sub @sub0' lookup add_joiner_inside @sub0;
+	sub @subLetters' lookup add_joiner_inside @subLetters;
+} add_joiner1;
+
+
+lookup add_joiner2 { # adjust joiner stem shape
+	# both stem cases
+	sub @bothStemBefore joiner-soyo.right' @bothStemAfter by joiner-soyo.both.nonSpacing;
+	# mid stem spaced cases
+	sub @midStemBefore joiner-soyo.right' @midStemAfter by joiner-soyo.mid;
+	# blank stem cases
+	sub @sub0 joiner-soyo.right' @midStemAfter by joiner-soyo.blank;
+} add_joiner2;
+
+
+lookup unspace_joiner {
+	sub @touchCentreBefore joiner-soyo.right' @touchOpenAfter by joiner-soyo.right.tight;
+	sub @touchOpenBefore joiner-soyo.right' @touchCentreAfter by joiner-soyo.right.tight;
+} unspace_joiner;
+
+
+@pushing_preConsonant = [raInitial-soyo shaInitial-soyo saInitial-soyo];
+lookup add_joiner_preConsonant1 {
+	sub @pushing_preConsonant a-soyo' by head-soyo aSub-soyo;
+	sub @pushing_preConsonant pha-soyo' by head-soyo phaSub-soyo;
+	sub @pushing_preConsonant bha-soyo' by head-soyo bhaSub-soyo;
+	sub @pushing_preConsonant ma-soyo' by head-soyo maSub-soyo;
+	sub @pushing_preConsonant zha-soyo' by head-soyo zhaSub-soyo;
+	sub @pushing_preConsonant za-soyo' by head-soyo zaSub-soyo;
+	sub @pushing_preConsonant ya-soyo' by head-soyo yaSub-soyo;
+	sub @pushing_preConsonant ra-soyo' by head-soyo raSub-soyo;
+	sub @pushing_preConsonant la-soyo' by head-soyo laSub-soyo;
+} add_joiner_preConsonant1;
+
+
+lookup add_joiner_preConsonant2 {
+	sub @pushing_preConsonant head-soyo' [aSub-soyo phaSub-soyo bhaSub-soyo maSub-soyo zhaSub-soyo zaSub-soyo yaSub-soyo raSub-soyo laSub-soyo] by head-soyo joiner-soyo.right;
+} add_joiner_preConsonant2;
+
+@subLetters_headSub_bottomMarks = [headSub-soyo headSub-soyo.open @sub0 @halfBottomMarks0 @halfBottomMarks1];
+
+lookup condense3_ini1 { # condense letters, 3 or more consonant cases, up to 10
+	lookupflag UseMarkFilteringSet @subLetters_head;
+	sub [head-soyo headSub-soyo head-soyo.open headSub-soyo.open] @sub0' @sub0 @sub0 by @ini3;
+} condense3_ini1;
+
+
+lookup condense3_rest {
+	lookupflag UseMarkFilteringSet @subLetters_head;
+	sub [@ini3 @sub3] @sub0' by @sub3;
+	sub @sub3 @sub0' by @sub3;
+	sub @sub3 @sub0' by @sub3;
+	sub @sub3 @sub0' by @sub3;
+	sub @sub3 @sub0' by @sub3;
+	sub @sub3 @sub0' by @sub3;
+	sub @sub3 @sub0' by @sub3;
+	sub @sub3 @sub0' by @sub3;
+	sub @sub3 @sub0' by @sub3;
+} condense3_rest;
+
+
+lookup condense3_ini2 { # 2 consonants + prehead and final consonant cases
+	lookupflag UseMarkFilteringSet @subLetters_headSub_bottomMarks;
+	sub [headSub-soyo headSub-soyo.open] @sub0' @sub0 [@halfBottomMarks0 @halfBottomMarks1] by @ini3;
+# 	sub @ini3 @sub0' by @sub3;
+} condense3_ini2;
+
+
+lookup condense3_ini2_rest {
+	lookupflag UseMarkFilteringSet @subLetters_head;
+	sub @ini3 @sub0' by @sub3;
+} condense3_ini2_rest;
+
+
+lookup condense2 { # condense letters, 2 consonant cases
+	lookupflag UseMarkFilteringSet @subLetters_head;
+	sub [head-soyo headSub-soyo head-soyo.open headSub-soyo.open] @sub0' @sub0 by @ini2;
+	sub [@ini2 @sub2] @sub0' by @sub2;
+} condense2;
+
+lookup condense1 { # condense letters, 1 consonant + prehead and final consonant
+	lookupflag UseMarkFilteringSet @subLetters_headSub_bottomMarks;
+	sub [headSub-soyo headSub-soyo.open] @sub0' [@halfBottomMarks0 @halfBottomMarks1] by @ini2;
+} condense1;
+
+lookup add_joiner_preConsonant3 {
+	lookupflag 0;
+	sub @pushing_preConsonant head-soyo' [taSub-soyo.ini3 thaSub-soyo.ini3 paSub-soyo.ini3 aaSub-soyo.ini3 vaSub-soyo.ini3 shaSub-soyo.ini3 ssaSub-soyo.ini3] by head-soyo joiner-soyo.right.tight;
+	sub @pushing_preConsonant head-soyo.open' [haSub-soyo.ini2 haSub-soyo.ini3 ] by head-soyo.open joiner-soyo.blank;
+	sub @pushing_preConsonant head-soyo' [ddhaSub-soyo.ini3 dhaSub-soyo.ini3] by head-soyo joiner-soyo.both.tight;
+	sub @pushing_preConsonant head-soyo.open' [kaSub-soyo.ini3 khaSub-soyo.ini3 gaSub-soyo.ini3 ghaSub-soyo.ini3 ngaSub-soyo.ini3 kssaSub-soyo.ini3 haSub-soyo.ini2 haSub-soyo.ini3 ] by head-soyo.open joiner-soyo.both.tight;
+} add_joiner_preConsonant3;
+
+lookup lower_diphthongs {
+	lookupflag UseMarkFilteringSet @diphthongs;
+	sub [ka-soyo kha-soyo ga-soyo gha-soyo nga-soyo ha-soyo kssa-soyo head-soyo.open] [aiMatra-soyo auMatra-soyo]' by [aiMatra-soyo.open auMatra-soyo.open];
+} lower_diphthongs;
+} psts;
+
+feature dist {
+# essentially kerning, but I do not want it disabled
+
+@dist_joiners =[joiner-soyo.blank joiner-soyo.mid joiner-soyo.both.nonSpacing joiner-soyo.right joiner-soyo.both.tight joiner-soyo.right.tight];
+
+# preConsonants and decomposed letters
+lookup precons_decomp {
+	ignore pos shaInitial-soyo' @head [@lsb50Sub @lsb40Sub];
+	pos @preConsonants' <50 0 0 0> @head @dist_joiners @lsb50Sub;
+	pos @preConsonants' <40 0 0 0> @head @dist_joiners @lsb40Sub;
+	pos @preConsonants' <10 0 0 0> @head @dist_joiners @lsb10Sub;
+	pos @preConsonants' <-10 0 0 0> @head @dist_joiners @lsb-10Sub;
+	pos @preConsonants' <-20 0 0 0> @head @dist_joiners @lsb-20Sub;
+	pos @preConsonants' <-30 0 0 0> @head @dist_joiners @lsb-30Sub;
+	pos @preConsonants' <-40 0 0 0> @head @dist_joiners @lsb-40Sub;
+	pos @preConsonants' <-50 0 0 0> @head @dist_joiners @lsb-50Sub;
+
+	pos @preConsonants' <50 0 0 0> @head @lsb50Sub;
+	pos @preConsonants' <40 0 0 0> @head @lsb40Sub;
+	pos @preConsonants' <10 0 0 0> @head @lsb10Sub;
+	pos @preConsonants' <-10 0 0 0> @head @lsb-10Sub;
+	pos @preConsonants' <-20 0 0 0> @head @lsb-20Sub;
+	pos @preConsonants' <-30 0 0 0> @head @lsb-30Sub;
+	pos @preConsonants' <-40 0 0 0> @head @lsb-40Sub;
+	pos @preConsonants' <-50 0 0 0> @head @lsb-50Sub;
+} precons_decomp;
+
+
+# preConsonants and precomposed letters
+lookup precons_precomp {
+	ignore pos shaInitial-soyo' [@lsb50Letter @lsb40Letter];
+	pos @preConsonants' <50 0 0 0> @lsb50Letter;
+	pos @preConsonants' <40 0 0 0> @lsb40Letter;
+	pos @preConsonants' <10 0 0 0> @lsb10Letter;
+	pos @preConsonants' <-10 0 0 0> @lsb-10Letter;
+	pos @preConsonants' <-20 0 0 0> @lsb-20Letter;
+	pos @preConsonants' <-30 0 0 0> @lsb-30Letter;
+	pos @preConsonants' <-40 0 0 0> @lsb-40Letter;
+	pos @preConsonants' <-50 0 0 0> @lsb-50Letter;
+} precons_precomp;
+
+
+# preConsonant sha adjustment for narrow glyphs with centre stem.
+lookup preSha_adjust {
+	pos shaInitial-soyo' <30 0 0 0> @head [@lsb50Sub @lsb40Sub];
+	pos shaInitial-soyo' <30 0 0 0> [@lsb50Letter @lsb40Letter];
+	pos shaInitial-soyo' <0 0 20 0> @narrowCentreStemLetter;
+	pos shaInitial-soyo' <0 0 20 0> @head @narrowCentreStemSub;
+} preSha_adjust;
+
+
+# head and decomposed letters
+lookup prehead_decomp {
+	pos @preHead' <50 0 50 0> @headSub @lsb50Sub;
+	pos @preHead' <40 0 40 0> @headSub @lsb40Sub;
+	pos @preHead' <10 0 10 0> @headSub @lsb10Sub;
+	pos @preHead' <-10 0 -10 0> @headSub @lsb-10Sub;
+	pos @preHead' <-20 0 -20 0> @headSub @lsb-20Sub;
+	pos @preHead' <-30 0 -30 0> @headSub @lsb-30Sub;
+	pos @preHead' <-40 0 -40 0> @headSub @lsb-40Sub;
+	pos @preHead' <-50 0 -50 0> @headSub @lsb-50Sub;
+} prehead_decomp;
+
+
+# head and decomposed letters
+lookup head_decomp {
+	pos @head' <50 0 50 0> @dist_joiners @lsb50Sub;
+	pos @head' <40 0 40 0> @dist_joiners @lsb40Sub;
+	pos @head' <10 0 10 0> @dist_joiners @lsb10Sub;
+	pos @head' <-10 0 -10 0> @dist_joiners @lsb-10Sub;
+	pos @head' <-20 0 -20 0> @dist_joiners @lsb-20Sub;
+	pos @head' <-30 0 -30 0> @dist_joiners @lsb-30Sub;
+	pos @head' <-40 0 -40 0> @dist_joiners @lsb-40Sub;
+	pos @head' <-50 0 -50 0> @dist_joiners @lsb-50Sub;
+
+	pos @head' <50 0 50 0> @lsb50Sub;
+	pos @head' <40 0 40 0> @lsb40Sub;
+	pos @head' <10 0 10 0> @lsb10Sub;
+	pos @head' <-10 0 -10 0> @lsb-10Sub;
+	pos @head' <-20 0 -20 0> @lsb-20Sub;
+	pos @head' <-30 0 -30 0> @lsb-30Sub;
+	pos @head' <-40 0 -40 0> @lsb-40Sub;
+	pos @head' <-50 0 -50 0> @lsb-50Sub;
+} head_decomp;
+
+# only for single-letter cases
+@dist_aFinal_vowelLength_visagra = [@sub0 aFinal-soyo vowelLength-soyo];
+lookup dist_aFinal_vowelLength_visagra {
+	lookupflag UseMarkFilteringSet @dist_aFinal_vowelLength_visagra;
+	pos [@baseLetters @sub0] [aFinal-soyo vowelLength-soyo]' 50 visagra-soyo;
+} dist_aFinal_vowelLength_visagra;
+
+@dist_aFinal_visagra = [aFinal-soyo @sub2];
+lookup aFinal_visagra {
+	lookupflag UseMarkFilteringSet @dist_aFinal_visagra;
+	pos @sub2 aFinal-soyo' 50 visagra-soyo;
+} aFinal_visagra;
+
+
+
+# adding LSB when a wide sub consonant gets stacked and requires more width
+# it does not add by the whole amount, but by -20
+
+# -50 and 50
+@dist_additionalLSB = [@preHead @headSub @head @subLetters];
+@skip100 = [@lsb40Sub @lsb10Sub @lsb-10Sub @lsb-20Sub @lsb-30Sub @lsb-40Sub @lsb-50Sub];
+lookup plus100 {
+	lookupflag UseMarkFilteringSet @dist_additionalLSB;
+
+	pos @preConsonants' <80 0 80 0> @head @lsb-50Sub @skip100 @skip100 @skip100 @skip100 @lsb50Sub;
+	pos @preConsonants' <80 0 80 0> @head @lsb-50Sub @skip100 @skip100 @skip100 @lsb50Sub;
+	pos @preConsonants' <80 0 80 0> @head @lsb-50Sub @skip100 @skip100 @lsb50Sub;
+	pos @preConsonants' <80 0 80 0> @head @lsb-50Sub @skip100 @lsb50Sub;
+	pos @preConsonants' <80 0 80 0> @head @lsb-50Sub @lsb50Sub;
+
+ignore pos @preConsonants [@preHead @head]';
+	pos @preHead' <80 0 80 0> @headSub @lsb-50Sub @skip100 @skip100 @skip100 @skip100 @lsb50Sub;
+	pos @preHead' <80 0 80 0> @headSub @lsb-50Sub @skip100 @skip100 @skip100 @lsb50Sub;
+	pos @preHead' <80 0 80 0> @headSub @lsb-50Sub @skip100 @skip100 @lsb50Sub;
+	pos @preHead' <80 0 80 0> @headSub @lsb-50Sub @skip100 @lsb50Sub;
+	pos @preHead' <80 0 80 0> @headSub @lsb-50Sub @lsb50Sub;
+
+	pos @head' <80 0 80 0> @lsb-50Sub @skip100 @skip100 @skip100 @skip100 @lsb50Sub;
+	pos @head' <80 0 80 0> @lsb-50Sub @skip100 @skip100 @skip100 @lsb50Sub;
+	pos @head' <80 0 80 0> @lsb-50Sub @skip100 @skip100 @lsb50Sub;
+	pos @head' <80 0 80 0> @lsb-50Sub @skip100 @lsb50Sub;
+	pos @head' <80 0 80 0> @lsb-50Sub @lsb50Sub;
+} plus100;
+
+# -40 and 50
+@skip90_1 = [@lsb40Sub @lsb10Sub @lsb-10Sub @lsb-20Sub @lsb-30Sub @lsb-40Sub];
+lookup plus90_1 {
+	lookupflag UseMarkFilteringSet @dist_additionalLSB;
+
+	pos @preConsonants' <70 0 70 0> @head @lsb-40Sub @skip90_1 @skip90_1 @skip90_1 @skip90_1 @lsb50Sub;
+	pos @preConsonants' <70 0 70 0> @head @lsb-40Sub @skip90_1 @skip90_1 @skip90_1 @lsb50Sub;
+	pos @preConsonants' <70 0 70 0> @head @lsb-40Sub @skip90_1 @skip90_1 @lsb50Sub;
+	pos @preConsonants' <70 0 70 0> @head @lsb-40Sub @skip90_1 @lsb50Sub;
+	pos @preConsonants' <70 0 70 0> @head @lsb-40Sub @lsb50Sub;
+
+ignore pos @preConsonants [@preHead @head]';	
+	pos @preHead' <70 0 70 0> @headSub @lsb-40Sub @skip90_1 @skip90_1 @skip90_1 @skip90_1 @lsb50Sub;
+	pos @preHead' <70 0 70 0> @headSub @lsb-40Sub @skip90_1 @skip90_1 @skip90_1 @lsb50Sub;
+	pos @preHead' <70 0 70 0> @headSub @lsb-40Sub @skip90_1 @skip90_1 @lsb50Sub;
+	pos @preHead' <70 0 70 0> @headSub @lsb-40Sub @skip90_1 @lsb50Sub;
+	pos @preHead' <70 0 70 0> @headSub @lsb-40Sub @lsb50Sub;
+
+	pos @head' <70 0 70 0> @lsb-40Sub @skip90_1 @skip90_1 @skip90_1 @skip90_1 @lsb50Sub;	
+	pos @head' <70 0 70 0> @lsb-40Sub @skip90_1 @skip90_1 @skip90_1 @lsb50Sub;
+	pos @head' <70 0 70 0> @lsb-40Sub @skip90_1 @skip90_1 @lsb50Sub;
+	pos @head' <70 0 70 0> @lsb-40Sub @skip90_1 @lsb50Sub;
+	pos @head' <70 0 70 0> @lsb-40Sub @lsb50Sub;
+} plus90_1;
+
+# -50 and 40
+@skip90_2 = [@lsb10Sub @lsb-10Sub @lsb-20Sub @lsb-30Sub @lsb-40Sub @lsb-50Sub];
+lookup plus90_2 {
+	lookupflag UseMarkFilteringSet @dist_additionalLSB;
+
+	pos @preConsonants' <70 0 70 0> @head @lsb-50Sub @skip90_2 @skip90_2 @skip90_2 @skip90_2 @lsb40Sub;
+	pos @preConsonants' <70 0 70 0> @head @lsb-50Sub @skip90_2 @skip90_2 @skip90_2 @lsb40Sub;
+	pos @preConsonants' <70 0 70 0> @head @lsb-50Sub @skip90_2 @skip90_2 @lsb40Sub;
+	pos @preConsonants' <70 0 70 0> @head @lsb-50Sub @skip90_2 @lsb40Sub;
+	pos @preConsonants' <70 0 70 0> @head @lsb-50Sub @lsb40Sub;
+
+ignore pos @preConsonants [@preHead @head]';	
+	pos @preHead' <70 0 70 0> @headSub @lsb-50Sub @skip90_2 @skip90_2 @skip90_2 @skip90_2 @lsb40Sub;
+	pos @preHead' <70 0 70 0> @headSub @lsb-50Sub @skip90_2 @skip90_2 @skip90_2 @lsb40Sub;
+	pos @preHead' <70 0 70 0> @headSub @lsb-50Sub @skip90_2 @skip90_2 @lsb40Sub;
+	pos @preHead' <70 0 70 0> @headSub @lsb-50Sub @skip90_2 @lsb40Sub;
+	pos @preHead' <70 0 70 0> @headSub @lsb-50Sub @lsb40Sub;
+
+	pos @head' <70 0 70 0> @lsb-50Sub @skip90_2 @skip90_2 @skip90_2 @skip90_2 @lsb40Sub;	
+	pos @head' <70 0 70 0> @lsb-50Sub @skip90_2 @skip90_2 @skip90_2 @lsb40Sub;
+	pos @head' <70 0 70 0> @lsb-50Sub @skip90_2 @skip90_2 @lsb40Sub;
+	pos @head' <70 0 70 0> @lsb-50Sub @skip90_2 @lsb40Sub;
+	pos @head' <70 0 70 0> @lsb-50Sub @lsb40Sub;
+} plus90_2;
+
+# -30 and 50
+@skip80_1 = [@lsb40Sub @lsb10Sub @lsb-10Sub @lsb-20Sub];
+lookup plus80_1 {
+	lookupflag UseMarkFilteringSet @dist_additionalLSB;
+
+	pos @preConsonants' <60 0 60 0> @head @lsb-30Sub @skip80_1 @skip80_1 @skip80_1 @skip80_1 @lsb50Sub;
+	pos @preConsonants' <60 0 60 0> @head @lsb-30Sub @skip80_1 @skip80_1 @skip80_1 @lsb50Sub;
+	pos @preConsonants' <60 0 60 0> @head @lsb-30Sub @skip80_1 @skip80_1 @lsb50Sub;
+	pos @preConsonants' <60 0 60 0> @head @lsb-30Sub @skip80_1 @lsb50Sub;
+	pos @preConsonants' <60 0 60 0> @head @lsb-30Sub @lsb50Sub;
+
+ignore pos @preConsonants [@preHead @head]';	
+	pos @preHead' <60 0 60 0> @headSub @lsb-30Sub @skip80_1 @skip80_1 @skip80_1 @skip80_1 @lsb50Sub;
+	pos @preHead' <60 0 60 0> @headSub @lsb-30Sub @skip80_1 @skip80_1 @skip80_1 @lsb50Sub;
+	pos @preHead' <60 0 60 0> @headSub @lsb-30Sub @skip80_1 @skip80_1 @lsb50Sub;
+	pos @preHead' <60 0 60 0> @headSub @lsb-30Sub @skip80_1 @lsb50Sub;
+	pos @preHead' <60 0 60 0> @headSub @lsb-30Sub @lsb50Sub;
+
+	pos @head' <60 0 60 0> @lsb-30Sub @skip80_1 @skip80_1 @skip80_1 @skip80_1 @lsb50Sub;	
+	pos @head' <60 0 60 0> @lsb-30Sub @skip80_1 @skip80_1 @skip80_1 @lsb50Sub;
+	pos @head' <60 0 60 0> @lsb-30Sub @skip80_1 @skip80_1 @lsb50Sub;
+	pos @head' <60 0 60 0> @lsb-30Sub @skip80_1 @lsb50Sub;
+	pos @head' <60 0 60 0> @lsb-30Sub @lsb50Sub;
+} plus80_1;
+
+# -40 and 40
+@skip80_2 = [@lsb10Sub @lsb-10Sub @lsb-20Sub @lsb-30Sub];
+lookup plus80_2 {
+	lookupflag UseMarkFilteringSet @dist_additionalLSB;
+
+	pos @preConsonants' <60 0 60 0> @head @lsb-40Sub @skip80_2 @skip80_2 @skip80_2 @skip80_2 @lsb40Sub;
+	pos @preConsonants' <60 0 60 0> @head @lsb-40Sub @skip80_2 @skip80_2 @skip80_2 @lsb40Sub;
+	pos @preConsonants' <60 0 60 0> @head @lsb-40Sub @skip80_2 @skip80_2 @lsb40Sub;
+	pos @preConsonants' <60 0 60 0> @head @lsb-40Sub @skip80_2 @lsb40Sub;
+	pos @preConsonants' <60 0 60 0> @head @lsb-40Sub @lsb40Sub;
+
+ignore pos @preConsonants [@preHead @head]';	
+	pos @preHead' <60 0 60 0> @headSub @lsb-40Sub @skip80_2 @skip80_2 @skip80_2 @skip80_2 @lsb40Sub;
+	pos @preHead' <60 0 60 0> @headSub @lsb-40Sub @skip80_2 @skip80_2 @skip80_2 @lsb40Sub;
+	pos @preHead' <60 0 60 0> @headSub @lsb-40Sub @skip80_2 @skip80_2 @lsb40Sub;
+	pos @preHead' <60 0 60 0> @headSub @lsb-40Sub @skip80_2 @lsb40Sub;
+	pos @preHead' <60 0 60 0> @headSub @lsb-40Sub @lsb40Sub;
+
+	pos @head' <60 0 60 0> @lsb-40Sub @skip80_2 @skip80_2 @skip80_2 @skip80_2 @lsb40Sub;	
+	pos @head' <60 0 60 0> @lsb-40Sub @skip80_2 @skip80_2 @skip80_2 @lsb40Sub;
+	pos @head' <60 0 60 0> @lsb-40Sub @skip80_2 @skip80_2 @lsb40Sub;
+	pos @head' <60 0 60 0> @lsb-40Sub @skip80_2 @lsb40Sub;
+	pos @head' <60 0 60 0> @lsb-40Sub @lsb40Sub;
+} plus80_2;
+
+
+# -20 and 50
+@skip70_1 = [@lsb40Sub @lsb10Sub @lsb-10Sub];
+lookup plus70_1 {
+	lookupflag UseMarkFilteringSet @dist_additionalLSB;
+
+	pos @preConsonants' <50 0 50 0> @head @lsb-20Sub @skip70_1 @skip70_1 @skip70_1 @skip70_1 @lsb50Sub;
+	pos @preConsonants' <50 0 50 0> @head @lsb-20Sub @skip70_1 @skip70_1 @skip70_1 @lsb50Sub;
+	pos @preConsonants' <50 0 50 0> @head @lsb-20Sub @skip70_1 @skip70_1 @lsb50Sub;
+	pos @preConsonants' <50 0 50 0> @head @lsb-20Sub @skip70_1 @lsb50Sub;
+	pos @preConsonants' <50 0 50 0> @head @lsb-20Sub @lsb50Sub;
+
+ignore pos @preConsonants [@preHead @head]';	
+	pos @preHead' <50 0 50 0> @headSub @lsb-20Sub @skip70_1 @skip70_1 @skip70_1 @skip70_1 @lsb50Sub;
+	pos @preHead' <50 0 50 0> @headSub @lsb-20Sub @skip70_1 @skip70_1 @skip70_1 @lsb50Sub;
+	pos @preHead' <50 0 50 0> @headSub @lsb-20Sub @skip70_1 @skip70_1 @lsb50Sub;
+	pos @preHead' <50 0 50 0> @headSub @lsb-20Sub @skip70_1 @lsb50Sub;
+	pos @preHead' <50 0 50 0> @headSub @lsb-20Sub @lsb50Sub;
+
+	pos @head' <50 0 50 0> @lsb-20Sub @skip70_1 @skip70_1 @skip70_1 @skip70_1 @lsb50Sub;	
+	pos @head' <50 0 50 0> @lsb-20Sub @skip70_1 @skip70_1 @skip70_1 @lsb50Sub;
+	pos @head' <50 0 50 0> @lsb-20Sub @skip70_1 @skip70_1 @lsb50Sub;
+	pos @head' <50 0 50 0> @lsb-20Sub @skip70_1 @lsb50Sub;
+	pos @head' <50 0 50 0> @lsb-20Sub @lsb50Sub;
+} plus70_1;
+
+# -30 and 40
+@skip70_2 = [@lsb40Sub @lsb10Sub @lsb-10Sub @lsb-20Sub];
+lookup plus70_2 {
+	lookupflag UseMarkFilteringSet @dist_additionalLSB;
+
+	pos @preConsonants' <50 0 50 0> @head @lsb-30Sub @skip70_1 @skip70_1 @skip70_1 @skip70_1 @lsb40Sub;
+	pos @preConsonants' <50 0 50 0> @head @lsb-30Sub @skip70_1 @skip70_1 @skip70_1 @lsb40Sub;
+	pos @preConsonants' <50 0 50 0> @head @lsb-30Sub @skip70_1 @skip70_1 @lsb40Sub;
+	pos @preConsonants' <50 0 50 0> @head @lsb-30Sub @skip70_1 @lsb40Sub;
+	pos @preConsonants' <50 0 50 0> @head @lsb-30Sub @lsb40Sub;
+
+ignore pos @preConsonants [@preHead @head]';	
+	pos @preHead' <50 0 50 0> @headSub @lsb-30Sub @skip70_1 @skip70_1 @skip70_1 @skip70_1 @lsb40Sub;
+	pos @preHead' <50 0 50 0> @headSub @lsb-30Sub @skip70_1 @skip70_1 @skip70_1 @lsb40Sub;
+	pos @preHead' <50 0 50 0> @headSub @lsb-30Sub @skip70_1 @skip70_1 @lsb40Sub;
+	pos @preHead' <50 0 50 0> @headSub @lsb-30Sub @skip70_1 @lsb40Sub;
+	pos @preHead' <50 0 50 0> @headSub @lsb-30Sub @lsb40Sub;
+
+	pos @head' <50 0 50 0> @lsb-30Sub @skip70_1 @skip70_1 @skip70_1 @skip70_1 @lsb40Sub;	
+	pos @head' <50 0 50 0> @lsb-30Sub @skip70_1 @skip70_1 @skip70_1 @lsb40Sub;
+	pos @head' <50 0 50 0> @lsb-30Sub @skip70_1 @skip70_1 @lsb40Sub;
+	pos @head' <50 0 50 0> @lsb-30Sub @skip70_1 @lsb40Sub;
+	pos @head' <50 0 50 0> @lsb-30Sub @lsb40Sub;
+} plus70_2;
+
+
+# -10 and 50
+@skip60_1 = [@lsb40Sub @lsb10Sub];
+lookup plus60_1 {
+	lookupflag UseMarkFilteringSet @dist_additionalLSB;
+
+	pos @preConsonants' <40 0 40 0> @head @lsb-10Sub @skip60_1 @skip60_1 @skip60_1 @skip60_1 @lsb50Sub;
+	pos @preConsonants' <40 0 40 0> @head @lsb-10Sub @skip60_1 @skip60_1 @skip60_1 @lsb50Sub;
+	pos @preConsonants' <40 0 40 0> @head @lsb-10Sub @skip60_1 @skip60_1 @lsb50Sub;
+	pos @preConsonants' <40 0 40 0> @head @lsb-10Sub @skip60_1 @lsb50Sub;
+	pos @preConsonants' <40 0 40 0> @head @lsb-10Sub @lsb50Sub;
+
+ignore pos @preConsonants [@preHead @head]';	
+	pos @preHead' <40 0 40 0> @headSub @lsb-10Sub @skip60_1 @skip60_1 @skip60_1 @skip60_1 @lsb50Sub;
+	pos @preHead' <40 0 40 0> @headSub @lsb-10Sub @skip60_1 @skip60_1 @skip60_1 @lsb50Sub;
+	pos @preHead' <40 0 40 0> @headSub @lsb-10Sub @skip60_1 @skip60_1 @lsb50Sub;
+	pos @preHead' <40 0 40 0> @headSub @lsb-10Sub @skip60_1 @lsb50Sub;
+	pos @preHead' <40 0 40 0> @headSub @lsb-10Sub @lsb50Sub;
+
+	pos @head' <40 0 40 0> @lsb-10Sub @skip60_1 @skip60_1 @skip60_1 @skip60_1 @lsb50Sub;	
+	pos @head' <40 0 40 0> @lsb-10Sub @skip60_1 @skip60_1 @skip60_1 @lsb50Sub;
+	pos @head' <40 0 40 0> @lsb-10Sub @skip60_1 @skip60_1 @lsb50Sub;
+	pos @head' <40 0 40 0> @lsb-10Sub @skip60_1 @lsb50Sub;
+	pos @head' <40 0 40 0> @lsb-10Sub @lsb50Sub;
+} plus60_1;
+
+# -20 and 40
+@skip60_2 = [@lsb10Sub @lsb-10Sub @lsb-20Sub];
+lookup plus60_2 {
+	lookupflag UseMarkFilteringSet @dist_additionalLSB;
+
+	pos @preConsonants' <40 0 40 0> @head @lsb-20Sub @skip60_1 @skip60_1 @skip60_1 @skip60_1 @lsb40Sub;
+	pos @preConsonants' <40 0 40 0> @head @lsb-20Sub @skip60_1 @skip60_1 @skip60_1 @lsb40Sub;
+	pos @preConsonants' <40 0 40 0> @head @lsb-20Sub @skip60_1 @skip60_1 @lsb40Sub;
+	pos @preConsonants' <40 0 40 0> @head @lsb-20Sub @skip60_1 @lsb40Sub;
+	pos @preConsonants' <40 0 40 0> @head @lsb-20Sub @lsb40Sub;
+
+ignore pos @preConsonants [@preHead @head]';	
+	pos @preHead' <40 0 40 0> @headSub @lsb-20Sub @skip60_1 @skip60_1 @skip60_1 @skip60_1 @lsb40Sub;
+	pos @preHead' <40 0 40 0> @headSub @lsb-20Sub @skip60_1 @skip60_1 @skip60_1 @lsb40Sub;
+	pos @preHead' <40 0 40 0> @headSub @lsb-20Sub @skip60_1 @skip60_1 @lsb40Sub;
+	pos @preHead' <40 0 40 0> @headSub @lsb-20Sub @skip60_1 @lsb40Sub;
+	pos @preHead' <40 0 40 0> @headSub @lsb-20Sub @lsb40Sub;
+
+	pos @head' <40 0 40 0> @lsb-20Sub @skip60_1 @skip60_1 @skip60_1 @skip60_1 @lsb40Sub;	
+	pos @head' <40 0 40 0> @lsb-20Sub @skip60_1 @skip60_1 @skip60_1 @lsb40Sub;
+	pos @head' <40 0 40 0> @lsb-20Sub @skip60_1 @skip60_1 @lsb40Sub;
+	pos @head' <40 0 40 0> @lsb-20Sub @skip60_1 @lsb40Sub;
+	pos @head' <40 0 40 0> @lsb-20Sub @lsb40Sub;
+} plus60_2;
+} dist;
+
+table GDEF {
+  # automatic
+  GlyphClassDef
+    [dottedCircle a-soyo ka-soyo kha-soyo ga-soyo gha-soyo nga-soyo ca-soyo cha-soyo ja-soyo jha-soyo nya-soyo tta-soyo ttha-soyo dda-soyo ddha-soyo nna-soyo ta-soyo tha-soyo da-soyo dha-soyo na-soyo pa-soyo pha-soyo ba-soyo bha-soyo ma-soyo tsa-soyo tsha-soyo dza-soyo zha-soyo za-soyo aa-soyo ya-soyo ra-soyo la-soyo va-soyo sha-soyo ssa-soyo sa-soyo ha-soyo kssa-soyo jihvamuliya-soyo upadhmaniya-soyo gemination-soyo head-soyo head-soyo.open], # Base
+    , # Liga
+    [gFinal-soyo kFinal-soyo ngFinal-soyo dFinal-soyo nFinal-soyo bFinal-soyo mFinal-soyo rFinal-soyo lFinal-soyo shFinal-soyo sFinal-soyo aFinal-soyo iMatra-soyo ueMatra-soyo uMatra-soyo eMatra-soyo oMatra-soyo oeMatra-soyo rVocalicMatra-soyo lVocalicMatra-soyo vowelLength-soyo anusvara-soyo subjoiner-soyo aSub-soyo kaSub-soyo khaSub-soyo gaSub-soyo ghaSub-soyo ngaSub-soyo caSub-soyo chaSub-soyo jaSub-soyo jhaSub-soyo nyaSub-soyo ttaSub-soyo tthaSub-soyo ddaSub-soyo ddhaSub-soyo nnaSub-soyo taSub-soyo thaSub-soyo daSub-soyo dhaSub-soyo naSub-soyo paSub-soyo phaSub-soyo baSub-soyo bhaSub-soyo maSub-soyo tsaSub-soyo tshaSub-soyo dzaSub-soyo zhaSub-soyo zaSub-soyo aaSub-soyo yaSub-soyo raSub-soyo laSub-soyo vaSub-soyo shaSub-soyo ssaSub-soyo saSub-soyo haSub-soyo kssaSub-soyo headSub-soyo tail-soyo joiner-soyo.blank gFinal-soyo.half kFinal-soyo.half ngFinal-soyo.half dFinal-soyo.half nFinal-soyo.half bFinal-soyo.half mFinal-soyo.half rFinal-soyo.half lFinal-soyo.half shFinal-soyo.half sFinal-soyo.half ueMatra-soyo.half uMatra-soyo.half rVocalicMatra-soyo.half lVocalicMatra-soyo.half aSub-soyo.ini2 kaSub-soyo.ini2 khaSub-soyo.ini2 gaSub-soyo.ini2 ghaSub-soyo.ini2 ngaSub-soyo.ini2 caSub-soyo.ini2 chaSub-soyo.ini2 jaSub-soyo.ini2 jhaSub-soyo.ini2 nyaSub-soyo.ini2 ttaSub-soyo.ini2 tthaSub-soyo.ini2 ddaSub-soyo.ini2 ddhaSub-soyo.ini2 nnaSub-soyo.ini2 taSub-soyo.ini2 thaSub-soyo.ini2 daSub-soyo.ini2 dhaSub-soyo.ini2 naSub-soyo.ini2 paSub-soyo.ini2 phaSub-soyo.ini2 baSub-soyo.ini2 bhaSub-soyo.ini2 maSub-soyo.ini2 tsaSub-soyo.ini2 tshaSub-soyo.ini2 dzaSub-soyo.ini2 zhaSub-soyo.ini2 zaSub-soyo.ini2 aaSub-soyo.ini2 yaSub-soyo.ini2 raSub-soyo.ini2 laSub-soyo.ini2 vaSub-soyo.ini2 shaSub-soyo.ini2 ssaSub-soyo.ini2 saSub-soyo.ini2 haSub-soyo.ini2 kssaSub-soyo.ini2 aSub-soyo.ini3 kaSub-soyo.ini3 khaSub-soyo.ini3 gaSub-soyo.ini3 ghaSub-soyo.ini3 ngaSub-soyo.ini3 caSub-soyo.ini3 chaSub-soyo.ini3 jaSub-soyo.ini3 jhaSub-soyo.ini3 nyaSub-soyo.ini3 ttaSub-soyo.ini3 tthaSub-soyo.ini3 ddaSub-soyo.ini3 ddhaSub-soyo.ini3 nnaSub-soyo.ini3 taSub-soyo.ini3 thaSub-soyo.ini3 daSub-soyo.ini3 dhaSub-soyo.ini3 naSub-soyo.ini3 paSub-soyo.ini3 phaSub-soyo.ini3 baSub-soyo.ini3 bhaSub-soyo.ini3 maSub-soyo.ini3 tsaSub-soyo.ini3 tshaSub-soyo.ini3 dzaSub-soyo.ini3 zhaSub-soyo.ini3 zaSub-soyo.ini3 aaSub-soyo.ini3 yaSub-soyo.ini3 raSub-soyo.ini3 laSub-soyo.ini3 vaSub-soyo.ini3 shaSub-soyo.ini3 ssaSub-soyo.ini3 saSub-soyo.ini3 haSub-soyo.ini3 kssaSub-soyo.ini3 tail-soyo.long joiner-soyo.mid joiner-soyo.both.nonSpacing headSub-soyo.open joiner-soyo.right aSub-soyo.2 aSub-soyo.3 kaSub-soyo.2 kaSub-soyo.3 khaSub-soyo.2 khaSub-soyo.3 gaSub-soyo.2 gaSub-soyo.3 ghaSub-soyo.2 ghaSub-soyo.3 ngaSub-soyo.2 ngaSub-soyo.3 caSub-soyo.2 caSub-soyo.3 chaSub-soyo.2 chaSub-soyo.3 jaSub-soyo.2 jaSub-soyo.3 jhaSub-soyo.2 jhaSub-soyo.3 nyaSub-soyo.2 nyaSub-soyo.3 ttaSub-soyo.2 ttaSub-soyo.3 tthaSub-soyo.2 tthaSub-soyo.3 ddaSub-soyo.2 ddaSub-soyo.3 ddhaSub-soyo.2 ddhaSub-soyo.3 nnaSub-soyo.2 nnaSub-soyo.3 taSub-soyo.2 taSub-soyo.3 thaSub-soyo.2 thaSub-soyo.3 daSub-soyo.2 daSub-soyo.3 dhaSub-soyo.2 dhaSub-soyo.3 naSub-soyo.2 naSub-soyo.3 paSub-soyo.2 paSub-soyo.3 phaSub-soyo.2 phaSub-soyo.3 baSub-soyo.2 baSub-soyo.3 bhaSub-soyo.2 bhaSub-soyo.3 maSub-soyo.2 maSub-soyo.3 tsaSub-soyo.2 tsaSub-soyo.3 tshaSub-soyo.2 tshaSub-soyo.3 dzaSub-soyo.2 dzaSub-soyo.3 zhaSub-soyo.2 zhaSub-soyo.3 zaSub-soyo.2 zaSub-soyo.3 aaSub-soyo.2 aaSub-soyo.3 yaSub-soyo.2 yaSub-soyo.3 raSub-soyo.2 raSub-soyo.3 laSub-soyo.2 laSub-soyo.3 vaSub-soyo.2 vaSub-soyo.3 shaSub-soyo.2 shaSub-soyo.3 ssaSub-soyo.2 ssaSub-soyo.3 saSub-soyo.2 saSub-soyo.3 haSub-soyo.2 haSub-soyo.3 kssaSub-soyo.2 kssaSub-soyo.3 joiner-soyo.both.tight joiner-soyo.right.tight], # Mark
+    ;
+} GDEF;

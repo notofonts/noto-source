@@ -1,0 +1,58 @@
+# Prefix: Languagesystems
+languagesystem DFLT dflt;
+
+feature ccmp {
+script DFLT;
+#script copt;
+
+#keycaps with space and dottedCircle
+lookup keycap {
+	sub space enclosingkeycapcomb by space_20E3;
+	sub enclosingkeycapcomb space by space_20E3;
+	sub dottedCircle enclosingkeycapcomb by dottedCircle_20E3;
+	sub enclosingkeycapcomb dottedCircle by dottedCircle_20E3;
+	sub numbersign enclosingkeycapcomb by numbersign_20E3;
+	sub asterisk enclosingkeycapcomb by asterisk_20E3;
+	sub zero enclosingkeycapcomb by zero_20E3;
+	sub one enclosingkeycapcomb by one_20E3;
+	sub two enclosingkeycapcomb by two_20E3;
+	sub three enclosingkeycapcomb by three_20E3;
+	sub four enclosingkeycapcomb by four_20E3;
+	sub five enclosingkeycapcomb by five_20E3;
+	sub six enclosingkeycapcomb by six_20E3;
+	sub seven enclosingkeycapcomb by seven_20E3;
+	sub eight enclosingkeycapcomb by eight_20E3;
+	sub nine enclosingkeycapcomb by nine_20E3;
+} keycap;
+
+#coptic with space and dottedCircle
+lookup ccmp0 {
+	sub space u102E0 by space_u102E0;
+#	sub u102E0 space by space_u102E0;
+} ccmp0;
+
+#phaistos disc with space and dottedCircle
+lookup ccmp1 {
+	sub space gobliquestroke-phaistosDisc by sp_gobliquestr-phaistosDisc;
+#	sub gobliquestroke-phaistosDisc space by sp_gobliquestr-phaistosDisc;
+} ccmp1;
+	
+#enclosingscreencomb with space and dottedCircle
+lookup ccmp2 {
+	sub space enclosingscreencomb by space_enclosingscreencomb;
+	sub enclosingscreencomb space by space_enclosingscreencomb;
+	sub dottedCircle enclosingscreencomb by dottedCircle_enclosingscreencomb;
+	sub enclosingscreencomb dottedCircle by dottedCircle_enclosingscreencomb;
+} ccmp2;
+
+} ccmp;
+
+table GDEF {
+  # automatic
+  GlyphClassDef
+    [zero one two three four five six seven eight nine asterisk numbersign dottedCircle pedestrian-phaistosDisc plumedHead-phaistosDisc tattooedHead-phaistosDisc captive-phaistosDisc child-phaistosDisc woman-phaistosDisc helmet-phaistosDisc gauntlet-phaistosDisc tiara-phaistosDisc arrow-phaistosDisc bow-phaistosDisc shield-phaistosDisc club-phaistosDisc manacles-phaistosDisc mattock-phaistosDisc saw-phaistosDisc lid-phaistosDisc boomerang-phaistosDisc carpentryPlane-phaistosDisc dolium-phaistosDisc comb-phaistosDisc sling-phaistosDisc column-phaistosDisc beehive-phaistosDisc ship-phaistosDisc horn-phaistosDisc hide-phaistosDisc bullsLeg-phaistosDisc cat-phaistosDisc ram-phaistosDisc eagle-phaistosDisc dove-phaistosDisc tunny-phaistosDisc bee-phaistosDisc planeTree-phaistosDisc vine-phaistosDisc papyrus-phaistosDisc rosette-phaistosDisc lily-phaistosDisc oxBack-phaistosDisc flute-phaistosDisc grater-phaistosDisc strainer-phaistosDisc axe-phaistosDisc wavyBand-phaistosDisc u102E1 u102E2 u102E3 u102E4 u102E5 u102E6 u102E7 u102E8 u102E9 u102EA u102EB u102EC u102ED u102EE u102EF u102F0 u102F1 u102F2 u102F3 u102F4 u102F5 u102F6 u102F7 u102F8 u102F9 u102FA u102FB dottedCircle_enclosingscreencomb], # Base
+    [zero_20E3 one_20E3 two_20E3 three_20E3 four_20E3 five_20E3 six_20E3 seven_20E3 eight_20E3 nine_20E3 asterisk_20E3 numbersign_20E3], # Liga
+    [u102E0 gobliquestroke-phaistosDisc], # Mark
+    ;
+} GDEF;
+

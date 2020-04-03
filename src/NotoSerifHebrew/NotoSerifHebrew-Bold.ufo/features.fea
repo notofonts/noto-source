@@ -1,0 +1,49 @@
+# Prefix: Languagesystems
+languagesystem DFLT dflt;
+languagesystem hebr dflt;
+
+
+feature aalt {
+feature ccmp;
+
+} aalt;
+
+feature ccmp {
+lookup ccmp_hebr_1 {
+	script hebr;
+	lookupflag 0;
+	sub vav-hb shindot-hb by vav_shindot-hb;
+} ccmp_hebr_1;
+
+
+lookup ccmp_hebr_2 {
+	script hebr;
+	lookupflag 1;
+	sub hatafsegol-hb uni200D siluqleft-hb by hatafsegol_zerowidthjoiner_siluqleft-hb;
+	sub hatafpatah-hb uni200D siluqleft-hb by hatafpatah_zerowidthjoiner_siluqleft-hb;
+	sub hatafqamats-hb uni200D siluqleft-hb by hatafqamats_zerowidthjoiner_siluqleft-hb;
+} ccmp_hebr_2;
+
+} ccmp;
+
+feature dlig {
+sub vav-hb vav-hb by vavvav-hb;
+sub yod-hb vav-hb by vavyod-hb;
+sub yod-hb yod-hb by yodyod-hb;
+sub alef-hb lamed-hb by aleflamed-hb;
+
+} dlig;
+
+table GDEF {
+  # automatic
+  GlyphClassDef
+    [alef-hb alefdagesh-hb alefpatah-hb alefqamats-hb ayin-hb ayinaltone-hb bet-hb betdagesh-hb betrafe-hb dalet-hb daletdagesh-hb finalkaf-hb finalkafdagesh-hb finalmem-hb finalnun-hb finalpe-hb finalpedagesh-hb finaltsadi-hb gimel-hb gimeldagesh-hb he-hb hedagesh-hb het-hb kaf-hb kafdagesh-hb kafrafe-hb lamed-hb lameddagesh-hb mem-hb memdagesh-hb nun-hb nundagesh-hb pe-hb pedagesh-hb perafe-hb qof-hb qofdagesh-hb resh-hb reshdagesh-hb samekh-hb samekhdagesh-hb shin-hb shindagesh-hb shindageshshindot-hb shindageshsindot-hb shinshindot-hb shinsindot-hb tav-hb tavdagesh-hb tet-hb tetdagesh-hb tsadi-hb tsadidagesh-hb vav-hb vav_shindot-hb vavdagesh-hb vavholam-hb yod-hb yoddagesh-hb yodhiriq-hb yodyodpatah-hb zayin-hb zayindagesh-hb], # Base
+    [aleflamed-hb vavvav-hb vavyod-hb yodyod-hb], # Liga
+    [atnahhafukh-hb dagesh-hb dargaleft-hb dehi-hb etnahtaleft-hb gereshaccent-hb gereshmuqdam-hb gershayimaccent-hb hatafpatah-hb hatafpatah_zerowidthjoiner_siluqleft-hb hatafqamats-hb hatafqamats_zerowidthjoiner_siluqleft-hb hatafsegol-hb hatafsegol_zerowidthjoiner_siluqleft-hb hiriq-hb holam-hb holamhaser-hb iluy-hb judeospanishvarika-hb lowerdot-hb mahapakhleft-hb masoracircle-hb merkhakefulaleft-hb merkhaleft-hb munahleft-hb ole-hb pashta-hb patah-hb pazer-hb qadma-hb qamats-hb qamatsqatan-hb qarneypara-hb qubuts-hb rafe-hb reviamugrash-hb segol-hb segolta-hb shalshelet-hb sheva-hb shindot-hb siluqleft-hb sindot-hb telishagedola-hb telishaqetana-hb tevirleft-hb tipehaleft-hb tsere-hb upperdot-hb yerahbenyomoleft-hb yetiv-hb zaqefgadol-hb zaqefqatan-hb zarqa-hb zinor-hb], # Mark
+    ;
+  LigatureCaretByPos aleflamed-hb 251;
+  LigatureCaretByPos vavvav-hb 307;
+  LigatureCaretByPos vavyod-hb 265;
+  LigatureCaretByPos yodyod-hb 250;
+  LigatureCaretByPos yodyodpatah-hb 250;
+} GDEF;

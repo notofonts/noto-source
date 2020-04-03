@@ -1,0 +1,120 @@
+# Prefix: Languagesystems
+# automatic
+languagesystem DFLT dflt;
+
+languagesystem geor dflt;
+
+
+feature aalt {
+# automatic
+feature case;
+
+} aalt;
+
+feature ccmp {
+# automatic
+lookup ccmp_geor_1 {
+	lookupflag 0;
+	sub An-georgian macroncomb dieresiscomb by An-georgian_macroncomb_dieresiscomb;
+	sub On-georgian macroncomb dieresiscomb by On-georgian_macroncomb_dieresiscomb;
+	sub Un-georgian macroncomb dieresiscomb by Un-georgian_macroncomb_dieresiscomb;
+	sub an-georgian macroncomb dieresiscomb by an-georgian_macroncomb_dieresiscomb;
+	sub on-georgian macroncomb dieresiscomb by on-georgian_macroncomb_dieresiscomb;
+	sub un-georgian macroncomb dieresiscomb by un-georgian_macroncomb_dieresiscomb;
+	sub An-georgian acutecomb by An-georgian_acutecomb;
+	sub An-georgian dieresiscomb by An-georgian_dieresiscomb;
+	sub An-georgian macroncomb by An-georgian_macroncomb;
+	sub En-georgian acutecomb by En-georgian_acutecomb;
+	sub En-georgian macroncomb by En-georgian_macroncomb;
+	sub In-georgian acutecomb by In-georgian_acutecomb;
+	sub In-georgian macroncomb by In-georgian_macroncomb;
+	sub On-georgian acutecomb by On-georgian_acutecomb;
+	sub On-georgian dieresiscomb by On-georgian_dieresiscomb;
+	sub On-georgian macroncomb by On-georgian_macroncomb;
+	sub Un-georgian acutecomb by Un-georgian_acutecomb;
+	sub Un-georgian circumflexcomb by Un-georgian_circumflexcomb;
+	sub Un-georgian dieresiscomb by Un-georgian_dieresiscomb;
+	sub Un-georgian macroncomb by Un-georgian_macroncomb;
+	sub Yn-georgian acutecomb by Yn-georgian_acutecomb;
+	sub Yn-georgian macroncomb by Yn-georgian_macroncomb;
+	sub an-georgian acutecomb by an-georgian_acutecomb;
+	sub an-georgian dieresiscomb by an-georgian_dieresiscomb;
+	sub an-georgian macroncomb by an-georgian_macroncomb;
+	sub en-georgian acutecomb by en-georgian_acutecomb;
+	sub en-georgian macroncomb by en-georgian_macroncomb;
+	sub in-georgian acutecomb by in-georgian_acutecomb;
+	sub in-georgian macroncomb by in-georgian_macroncomb;
+	sub on-georgian acutecomb by on-georgian_acutecomb;
+	sub on-georgian dieresiscomb by on-georgian_dieresiscomb;
+	sub on-georgian macroncomb by on-georgian_macroncomb;
+	sub un-georgian acutecomb by un-georgian_acutecomb;
+	sub un-georgian circumflexcomb by un-georgian_circumflexcomb;
+	sub un-georgian dieresiscomb by un-georgian_dieresiscomb;
+	sub un-georgian macroncomb by un-georgian_macroncomb;
+	sub yn-georgian acutecomb by yn-georgian_acutecomb;
+	sub yn-georgian macroncomb by yn-georgian_macroncomb;
+} ccmp_geor_1;
+
+script geor;
+lookup ccmp_geor_1;
+
+} ccmp;
+
+feature case {
+sub an-georgian by An-georgian;
+sub ban-georgian by Ban-georgian;
+sub gan-georgian by Gan-georgian;
+sub don-georgian by Don-georgian;
+sub en-georgian by En-georgian;
+sub vin-georgian by Vin-georgian;
+sub zen-georgian by Zen-georgian;
+sub tan-georgian by Tan-georgian;
+sub in-georgian by In-georgian;
+sub kan-georgian by Kan-georgian;
+sub las-georgian by Las-georgian;
+sub man-georgian by Man-georgian;
+sub nar-georgian by Nar-georgian;
+sub on-georgian by On-georgian;
+sub par-georgian by Par-georgian;
+sub zhar-georgian by Zhar-georgian;
+sub rae-georgian by Rae-georgian;
+sub san-georgian by San-georgian;
+sub tar-georgian by Tar-georgian;
+sub un-georgian by Un-georgian;
+sub phar-georgian by Phar-georgian;
+sub khar-georgian by Khar-georgian;
+sub ghan-georgian by Ghan-georgian;
+sub qar-georgian by Qar-georgian;
+sub shin-georgian by Shin-georgian;
+sub chin-georgian by Chin-georgian;
+sub can-georgian by Can-georgian;
+sub jil-georgian by Jil-georgian;
+sub cil-georgian by Cil-georgian;
+sub char-georgian by Char-georgian;
+sub xan-georgian by Xan-georgian;
+sub jhan-georgian by Jhan-georgian;
+sub hae-georgian by Hae-georgian;
+sub he-georgian by He-georgian;
+sub hie-georgian by Hie-georgian;
+sub we-georgian by We-georgian;
+sub har-georgian by Har-georgian;
+sub hoe-georgian by Hoe-georgian;
+sub fi-georgian by Fi-georgian;
+sub yn-georgian by Yn-georgian;
+sub elifi-georgian by Elifi-georgian;
+sub turnedgan-georgian by GanTurned-georgian;
+sub ain-georgian by Ain-georgian;
+sub aen-georgian by Aen-georgian;
+sub hardsign-georgian by HardSign-georgian;
+sub labial-georgian by Labial-georgian;
+
+} case;
+
+table GDEF {
+  # automatic
+  GlyphClassDef
+    [An-georgian An-georgian_acutecomb An-georgian_dieresiscomb An-georgian_macroncomb An-georgian_macroncomb_dieresiscomb En-georgian En-georgian_acutecomb En-georgian_macroncomb In-georgian In-georgian_acutecomb In-georgian_macroncomb On-georgian On-georgian_acutecomb On-georgian_dieresiscomb On-georgian_macroncomb On-georgian_macroncomb_dieresiscomb Un-georgian Un-georgian_acutecomb Un-georgian_circumflexcomb Un-georgian_dieresiscomb Un-georgian_macroncomb Un-georgian_macroncomb_dieresiscomb Yn-georgian Yn-georgian_acutecomb Yn-georgian_macroncomb Yn-oldgeorgian an-georgian an-georgian_acutecomb an-georgian_dieresiscomb an-georgian_macroncomb an-georgian_macroncomb_dieresiscomb en-georgian en-georgian_acutecomb en-georgian_macroncomb in-georgian in-georgian_acutecomb in-georgian_macroncomb on-georgian on-georgian_acutecomb on-georgian_dieresiscomb on-georgian_macroncomb on-georgian_macroncomb_dieresiscomb un-georgian un-georgian_acutecomb un-georgian_circumflexcomb un-georgian_dieresiscomb un-georgian_macroncomb un-georgian_macroncomb_dieresiscomb yn-georgian yn-georgian_acutecomb yn-georgian_macroncomb], # Base
+    , # Liga
+    [acutecomb circumflexcomb dieresiscomb macroncomb], # Mark
+    ;
+} GDEF;
