@@ -29,7 +29,9 @@ other build options exist:
 $ ./build src/NotoSansOlChiki.glyphs  # build from a single source
 $               # if a font has both .glyphs and .plist files
 $ ./build src/NotoSansBrahmi/NotoSansBrahmi.plist  # build from a single source
+$ ./build src/NotoSansYi/NotoSansYi.designspace  # build from a single source
 $ ./build variable src/NotoSans-MM.glyphs  # build a single variable font
+$ ./build variable src/NotoSansYi/NotoSansYi.designspace  # build a single variable font
 $               # if a font has both .glyphs and .plist files
 $ ./build variable src/NotoSansBrahmi/NotoSansBrahmi.plist  # build a single variable font
 $ ./build all variable  # build all variable fonts
@@ -46,6 +48,13 @@ $ ./build setup
 $ ...
 ```
 
+If you want to edit UFO+designspace source in glyphs then convert it to glyphs format.
+For example,
+```
+$ ufo2glyphs NotoSansMarchen/NotoSansMarchen.designspace
+```
+will create NotoSansMarchen/NotoSansMarchen.glyphs file.
+
 ## License
 
 Noto source (under the src subdirectory) is under the [SIL Open Font License, version 1.1](src/LICENSE).
@@ -58,5 +67,7 @@ To contribute to this project, please read [CONTRIBUTING](CONTRIBUTING.md) and [
 
 ## News
 
+* 2020-04-02: converted 63 font sources to UFO+designspace from .glyphs files.
+* 2020-02-22: first UFO+designspace source for NotoSansHanifiRohingya
 * 2015-12-07: first release, covering Noto Sans UI {Italic, Mono, Roman}, Noto Sans Display {Italic, Roman}, Noto {Sans, Serif} {Armenian, Georgian}.
 
