@@ -1,0 +1,37 @@
+@ccmp1 = [ u10333 u10334 u10335 u10337 u1033D u1033E u1033F u10340 u10341 ];
+
+# Prefix: Languagesystems
+languagesystem DFLT dflt;
+languagesystem goth dflt;
+
+feature ccmp {
+
+lookup ccmp5 {
+    sub u10339 uni0308 by u10339.dieresis;
+} ccmp5;
+lookup ccmp6 {
+    sub u10339 uni0305' by uni0305.alt1;
+} ccmp6;
+lookup ccmp7 {
+    sub @ccmp1 uni0305' by uni0305.alt2;
+} ccmp7;
+lookup ccmp8 {
+    sub [u10338 u1033C u10348] uni0305' by uni0305.alt3;
+} ccmp8;
+ script goth; # Gothic
+lookup ccmp5;
+lookup ccmp6;
+lookup ccmp7;
+lookup ccmp8;
+
+
+} ccmp;
+
+table GDEF {
+  # automatic
+  GlyphClassDef
+    [u10330 u10331 u10332 u10333 u10334 u10335 u10336 u10337 u10338 u10339 u1033A u1033B u1033C u1033D u1033E u1033F u10340 u10341 u10342 u10343 u10344 u10345 u10346 u10347 u10348 u10349 u1034A u10339.dieresis], # Base
+    , # Liga
+    [uni0304 uni0305 uni0308 uni0331 uni0305.alt1 uni0305.alt2 uni0305.alt3], # Mark
+    ;
+} GDEF;

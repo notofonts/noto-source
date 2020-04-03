@@ -1,0 +1,128 @@
+@MF0 = [ ue_zanb u_zanb finalConsonantMark_zanb virama_zanb finalYa_zanb finalRa_zanb finalLa_zanb finalVa_zanb finalVa_zanb.stem a_zanb.sub ka_zanb.sub kha_zanb.sub ga_zanb.sub gha_zanb.sub nga_zanb.sub ca_zanb.sub cha_zanb.sub ja_zanb.sub nya_zanb.sub tta_zanb.sub ttha_zanb.sub dda_zanb.sub ddha_zanb.sub nna_zanb.sub ta_zanb.sub tha_zanb.sub da_zanb.sub dha_zanb.sub na_zanb.sub pa_zanb.sub pha_zanb.sub ba_zanb.sub bha_zanb.sub ma_zanb.sub tsa_zanb.sub tsha_zanb.sub dza_zanb.sub dzha_zanb.sub zha_zanb.sub za_zanb.sub aa_zanb.sub ya_zanb.sub ra_zanb.sub la_zanb.sub va_zanb.sub sha_zanb.sub ssa_zanb.sub sa_zanb.sub ha_zanb.sub kssa_zanb.sub ka_zanb.short ga_zanb.short nga_zanb.short ca_zanb.short ja_zanb.short nya_zanb.short ta_zanb.short da_zanb.short na_zanb.short pa_zanb.short ba_zanb.short ma_zanb.short tsa_zanb.short dza_zanb.short ha_zanb.short ];
+
+@MF1 = [ i_zanb i_zanb.wide e_zanb e_zanb.wide e_zanb.wide.ai oe_zanb oe_zanb.wide o_zanb o_zanb.wide ai_zanb au_zanb reversed_i_zanb reversed_i_zanb.wide candrabindu_zanb candrabinduWithOrnament_zanb candraWithOrnament_zanb anusvara_zanb o_zanb.wide.ai o_zanb.ai o_zanb.wide.au o_zanb.au ];
+
+@MF2 = [ a_zanb.sub ];
+
+@MA1 = [ i_zanb i_zanb.wide reversed_i_zanb reversed_i_zanb.wide e_zanb e_zanb.wide o_zanb o_zanb.wide oe_zanb oe_zanb.wide o_zanb.wide.ai o_zanb.ai o_zanb.wide.au o_zanb.au ];
+
+@MA2 = [ ai_zanb au_zanb ];
+
+@MA3 = [ u_zanb u_zanb.wide ue_zanb ue_zanb.wide ];
+
+# Prefix: Languagesystems
+languagesystem DFLT dflt;
+languagesystem DFLT SAN;
+
+feature ccmp {
+lookup InitialRaContext {
+	sub initialRa_zanb' [a_zanb ka_zanb kha_zanb ga_zanb gha_zanb nga_zanb ca_zanb cha_zanb ja_zanb nya_zanb tta_zanb ttha_zanb dda_zanb ddha_zanb nna_zanb ta_zanb tha_zanb da_zanb dha_zanb na_zanb pa_zanb pha_zanb ba_zanb bha_zanb ma_zanb tsa_zanb tsha_zanb dza_zanb dzha_zanb zha_zanb za_zanb aa_zanb ya_zanb ra_zanb la_zanb va_zanb sha_zanb ssa_zanb sa_zanb ha_zanb kssa_zanb ] by initialRa_zanb subjoiner_zanb;
+} InitialRaContext;
+
+lookup SubJoinedForms {
+	sub subjoiner_zanb a_zanb by a_zanb.sub;
+	sub subjoiner_zanb ka_zanb by ka_zanb.sub;
+	sub subjoiner_zanb kha_zanb by kha_zanb.sub;
+	sub subjoiner_zanb ga_zanb by ga_zanb.sub;
+	sub subjoiner_zanb gha_zanb by gha_zanb.sub;
+	sub subjoiner_zanb nga_zanb by nga_zanb.sub;
+	sub subjoiner_zanb ca_zanb by ca_zanb.sub;
+	sub subjoiner_zanb cha_zanb by cha_zanb.sub;
+	sub subjoiner_zanb ja_zanb by ja_zanb.sub;
+	sub subjoiner_zanb nya_zanb by nya_zanb.sub;
+	sub subjoiner_zanb tta_zanb by tta_zanb.sub;
+	sub subjoiner_zanb ttha_zanb by ttha_zanb.sub;
+	sub subjoiner_zanb dda_zanb by dda_zanb.sub;
+	sub subjoiner_zanb ddha_zanb by ddha_zanb.sub;
+	sub subjoiner_zanb nna_zanb by nna_zanb.sub;
+	sub subjoiner_zanb ta_zanb by ta_zanb.sub;
+	sub subjoiner_zanb tha_zanb by tha_zanb.sub;
+	sub subjoiner_zanb da_zanb by da_zanb.sub;
+	sub subjoiner_zanb dha_zanb by dha_zanb.sub;
+	sub subjoiner_zanb na_zanb by na_zanb.sub;
+	sub subjoiner_zanb pa_zanb by pa_zanb.sub;
+	sub subjoiner_zanb pha_zanb by pha_zanb.sub;
+	sub subjoiner_zanb ba_zanb by ba_zanb.sub;
+	sub subjoiner_zanb bha_zanb by bha_zanb.sub;
+	sub subjoiner_zanb ma_zanb by ma_zanb.sub;
+	sub subjoiner_zanb tsa_zanb by tsa_zanb.sub;
+	sub subjoiner_zanb tsha_zanb by tsha_zanb.sub;
+	sub subjoiner_zanb dza_zanb by dza_zanb.sub;
+	sub subjoiner_zanb dzha_zanb by dzha_zanb.sub;
+	sub subjoiner_zanb zha_zanb by zha_zanb.sub;
+	sub subjoiner_zanb za_zanb by za_zanb.sub;
+	sub subjoiner_zanb aa_zanb by aa_zanb.sub;
+	sub subjoiner_zanb ya_zanb by ya_zanb.sub;
+	sub subjoiner_zanb ra_zanb by ra_zanb.sub;
+	sub subjoiner_zanb la_zanb by la_zanb.sub;
+	sub subjoiner_zanb va_zanb by va_zanb.sub;
+	sub subjoiner_zanb sha_zanb by sha_zanb.sub;
+	sub subjoiner_zanb ssa_zanb by ssa_zanb.sub;
+	sub subjoiner_zanb sa_zanb by sa_zanb.sub;
+	sub subjoiner_zanb ha_zanb by ha_zanb.sub;
+	sub subjoiner_zanb kssa_zanb by kssa_zanb.sub;
+} SubJoinedForms;
+
+lookup finalVaChained {
+	lookupflag UseMarkFilteringSet @MF0;
+	sub [finalRa_zanb a_zanb ka_zanb kha_zanb ga_zanb gha_zanb nga_zanb ca_zanb cha_zanb ja_zanb nya_zanb ttha_zanb dda_zanb ddha_zanb nna_zanb ta_zanb tha_zanb da_zanb dha_zanb na_zanb pa_zanb pha_zanb ba_zanb bha_zanb ma_zanb tsa_zanb tsha_zanb dza_zanb dzha_zanb zha_zanb za_zanb aa_zanb ya_zanb ra_zanb la_zanb sha_zanb ssa_zanb sa_zanb ha_zanb kssa_zanb ka_zanb.short ga_zanb.short nga_zanb.short ca_zanb.short ja_zanb.short nya_zanb.short ta_zanb.short da_zanb.short na_zanb.short pa_zanb.short ba_zanb.short ma_zanb.short tsa_zanb.short dza_zanb.short ha_zanb.short a_zanb.sub ka_zanb.sub kha_zanb.sub ga_zanb.sub gha_zanb.sub nga_zanb.sub ca_zanb.sub cha_zanb.sub ja_zanb.sub nya_zanb.sub tta_zanb.sub ttha_zanb.sub dda_zanb.sub ddha_zanb.sub nna_zanb.sub ta_zanb.sub tha_zanb.sub da_zanb.sub dha_zanb.sub na_zanb.sub pa_zanb.sub pha_zanb.sub ba_zanb.sub bha_zanb.sub ma_zanb.sub tsa_zanb.sub tsha_zanb.sub dza_zanb.sub dzha_zanb.sub zha_zanb.sub za_zanb.sub aa_zanb.sub ya_zanb.sub ra_zanb.sub la_zanb.sub va_zanb.sub sha_zanb.sub ssa_zanb.sub sa_zanb.sub ha_zanb.sub kssa_zanb.sub ] finalVa_zanb' by finalVa_zanb.stem;
+} finalVaChained;
+
+
+} ccmp;
+
+feature rclt {
+lookup ShortHeadContext {
+	script DFLT;
+	sub [la_zanb sa_zanb ]' [a_zanb.sub ka_zanb.sub kha_zanb.sub ga_zanb.sub gha_zanb.sub nga_zanb.sub ca_zanb.sub cha_zanb.sub ja_zanb.sub nya_zanb.sub tta_zanb.sub ttha_zanb.sub dda_zanb.sub ddha_zanb.sub nna_zanb.sub ta_zanb.sub tha_zanb.sub da_zanb.sub dha_zanb.sub na_zanb.sub pa_zanb.sub pha_zanb.sub ba_zanb.sub bha_zanb.sub ma_zanb.sub tsa_zanb.sub tsha_zanb.sub dza_zanb.sub dzha_zanb.sub zha_zanb.sub za_zanb.sub aa_zanb.sub ya_zanb.sub ra_zanb.sub la_zanb.sub va_zanb.sub sha_zanb.sub ssa_zanb.sub sa_zanb.sub ha_zanb.sub kssa_zanb.sub ] by [la_zanb.head sa_zanb.head ];
+} ShortHeadContext;
+
+lookup ShortSubjoinedContext {
+	sub [initialRa_zanb la_zanb sa_zanb la_zanb.head sa_zanb.head ] [ka_zanb.sub ga_zanb.sub nga_zanb.sub ca_zanb.sub ja_zanb.sub nya_zanb.sub ta_zanb.sub da_zanb.sub na_zanb.sub pa_zanb.sub ba_zanb.sub ma_zanb.sub tsa_zanb.sub dza_zanb.sub ha_zanb.sub ]' by [ka_zanb.short ga_zanb.short nga_zanb.short ca_zanb.short ja_zanb.short nya_zanb.short ta_zanb.short da_zanb.short na_zanb.short pa_zanb.short ba_zanb.short ma_zanb.short tsa_zanb.short dza_zanb.short ha_zanb.short ];
+} ShortSubjoinedContext;
+
+lookup AltBelowContext {
+	lookupflag MarkAttachmentType @MA3;
+	sub [a_zanb a_zanb.sub ] [u_zanb ue_zanb ]' by [u_zanb.wide ue_zanb.wide ];
+} AltBelowContext;
+
+lookup AltAboveContext {
+	lookupflag MarkAttachmentType @MA1;
+	sub [a_zanb a_zanb.sub ] [o_zanb oe_zanb e_zanb i_zanb reversed_i_zanb o_zanb.ai o_zanb.au ]' by [o_zanb.wide oe_zanb.wide e_zanb.wide i_zanb.wide reversed_i_zanb.wide o_zanb.wide.ai o_zanb.wide.au ];
+} AltAboveContext;
+
+lookup AltAIAU {
+	lookupflag UseMarkFilteringSet @MF1;
+	sub [e_zanb e_zanb.wide o_zanb o_zanb.wide ]' ai_zanb by [e_zanb.ai e_zanb.wide.ai o_zanb.ai o_zanb.wide.ai ];
+	sub [e_zanb e_zanb.wide o_zanb o_zanb.wide ]' lengthMark_zanb ai_zanb by [e_zanb.ai e_zanb.wide.ai o_zanb.ai o_zanb.wide.ai ];
+	sub ai_zanb [e_zanb e_zanb.wide o_zanb o_zanb.wide ]' by [e_zanb.ai e_zanb.wide.ai o_zanb.ai o_zanb.wide.ai ];
+	sub ai_zanb lengthMark_zanb [e_zanb e_zanb.wide o_zanb o_zanb.wide ]' by [e_zanb.ai e_zanb.wide.ai o_zanb.ai o_zanb.wide.ai ];
+	sub [o_zanb o_zanb.wide ]' au_zanb by [o_zanb.au o_zanb.wide.au ]; 
+	sub [o_zanb o_zanb.wide ]' lengthMark_zanb au_zanb by [o_zanb.au o_zanb.wide.au ]; 
+	sub au_zanb [o_zanb o_zanb.wide ]' by [o_zanb.au o_zanb.wide.au ]; 
+	sub au_zanb lengthMark_zanb [o_zanb o_zanb.wide ]' by [o_zanb.au o_zanb.wide.au ]; 
+} AltAIAU;
+
+
+lookup AltFlagsContext {
+	lookupflag MarkAttachmentType @MA2;
+	sub ai_zanb [tsa_zanb tsha_zanb dza_zanb dzha_zanb ]' by [tsa_zanb.flat tsha_zanb.flat dza_zanb.flat dzha_zanb.flat ];
+	sub [tsa_zanb tsha_zanb dza_zanb dzha_zanb ]' ai_zanb by [tsa_zanb.flat tsha_zanb.flat dza_zanb.flat dzha_zanb.flat ];
+} AltFlagsContext;
+} rclt;
+
+feature kern {
+lookup AddSpaceWithASub {
+	lookupflag UseMarkFilteringSet @MF2;
+	pos [ka_zanb kha_zanb ga_zanb gha_zanb nga_zanb ca_zanb cha_zanb ja_zanb nya_zanb tta_zanb ttha_zanb dda_zanb ddha_zanb nna_zanb ta_zanb tha_zanb da_zanb dha_zanb na_zanb pa_zanb pha_zanb ba_zanb bha_zanb ma_zanb tsa_zanb tsha_zanb dza_zanb dzha_zanb zha_zanb za_zanb aa_zanb ya_zanb ra_zanb la_zanb va_zanb sha_zanb ssa_zanb sa_zanb ha_zanb kssa_zanb initialRa_zanb la_zanb.head sa_zanb.head ]' <296 0 296 0> a_zanb.sub;
+} AddSpaceWithASub;
+} kern;
+
+table GDEF {
+  # automatic
+  GlyphClassDef
+    [dottedCircle a_zanb ka_zanb kha_zanb ga_zanb gha_zanb nga_zanb ca_zanb cha_zanb ja_zanb nya_zanb tta_zanb ttha_zanb dda_zanb ddha_zanb nna_zanb ta_zanb tha_zanb da_zanb dha_zanb na_zanb pa_zanb pha_zanb ba_zanb bha_zanb ma_zanb tsa_zanb tsha_zanb dza_zanb dzha_zanb zha_zanb za_zanb aa_zanb ya_zanb ra_zanb la_zanb va_zanb sha_zanb ssa_zanb sa_zanb ha_zanb kssa_zanb initialRa_zanb tsa_zanb.flat tsha_zanb.flat dza_zanb.flat dzha_zanb.flat la_zanb.head sa_zanb.head initialHeadMark_zanb], # Base
+    , # Liga
+    [i_zanb i_zanb.wide ue_zanb ue_zanb.wide u_zanb u_zanb.wide e_zanb e_zanb.wide e_zanb.wide.ai e_zanb.ai oe_zanb oe_zanb.wide o_zanb o_zanb.wide o_zanb.wide.ai o_zanb.ai o_zanb.wide.au o_zanb.au ai_zanb au_zanb reversed_i_zanb reversed_i_zanb.wide lengthMark_zanb finalConsonantMark_zanb virama_zanb candrabindu_zanb candrabinduWithOrnament_zanb candraWithOrnament_zanb anusvara_zanb finalYa_zanb finalRa_zanb finalLa_zanb finalVa_zanb subjoiner_zanb finalVa_zanb.stem a_zanb.sub ka_zanb.sub kha_zanb.sub ga_zanb.sub gha_zanb.sub nga_zanb.sub ca_zanb.sub cha_zanb.sub ja_zanb.sub nya_zanb.sub tta_zanb.sub ttha_zanb.sub dda_zanb.sub ddha_zanb.sub nna_zanb.sub ta_zanb.sub tha_zanb.sub da_zanb.sub dha_zanb.sub na_zanb.sub pa_zanb.sub pha_zanb.sub ba_zanb.sub bha_zanb.sub ma_zanb.sub tsa_zanb.sub tsha_zanb.sub dza_zanb.sub dzha_zanb.sub zha_zanb.sub za_zanb.sub aa_zanb.sub ya_zanb.sub ra_zanb.sub la_zanb.sub va_zanb.sub sha_zanb.sub ssa_zanb.sub sa_zanb.sub ha_zanb.sub kssa_zanb.sub ka_zanb.short ga_zanb.short nga_zanb.short ca_zanb.short ja_zanb.short nya_zanb.short ta_zanb.short da_zanb.short na_zanb.short pa_zanb.short ba_zanb.short ma_zanb.short tsa_zanb.short dza_zanb.short ha_zanb.short], # Mark
+    ;
+} GDEF;

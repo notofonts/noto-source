@@ -1,0 +1,21 @@
+@ALL_WANCHO = [ aa-wcho a-wcho ba-wcho ca-wcho da-wcho ga-wcho ya-wcho pha-wcho la-wcho na-wcho pa-wcho ta-wcho tha-wcho fa-wcho sa-wcho sha-wcho ja-wcho za-wcho wa-wcho va-wcho ka-wcho o-wcho au-wcho ra-wcho ma-wcho kha-wcho ha-wcho e-wcho i-wcho nga-wcho u-wcho llha-wcho tsa-wcho tra-wcho ong-wcho aang-wcho ang-wcho ing-wcho on-wcho en-wcho aan-wcho nya-wcho uen-wcho yih-wcho zero-wcho one-wcho two-wcho three-wcho four-wcho five-wcho six-wcho seven-wcho eight-wcho nine-wcho ngunSign-wcho ];
+
+# Prefix: Languagesystems
+languagesystem wcho dflt;
+
+feature locl {
+script wcho;
+sub [slash backslash parenleft braceleft bracketleft hyphen quotedblleft quotedblright quotedbl quotesingle ]' @ALL_WANCHO by [slash.wcho backslash.wcho parenleft.wcho braceleft.wcho bracketleft.wcho hyphen.wcho quotedblleft.wcho quotedblright.wcho quotedbl.wcho quotesingle.wcho ];
+
+sub @ALL_WANCHO [slash backslash parenright braceright bracketright comma period hyphen quotedblleft quotedblright quotedbl quotesingle ]' by [slash.wcho backslash.wcho parenright.wcho braceright.wcho bracketright.wcho comma.wcho period.wcho hyphen.wcho quotedblleft.wcho quotedblright.wcho quotedbl.wcho quotesingle.wcho ];
+
+} locl;
+
+table GDEF {
+  # automatic
+  GlyphClassDef
+    [dotted_circle aa-wcho a-wcho ba-wcho ca-wcho da-wcho ga-wcho ya-wcho pha-wcho la-wcho na-wcho pa-wcho ta-wcho tha-wcho fa-wcho sa-wcho sha-wcho ja-wcho za-wcho wa-wcho va-wcho ka-wcho o-wcho au-wcho ra-wcho ma-wcho kha-wcho ha-wcho e-wcho i-wcho nga-wcho u-wcho llha-wcho tsa-wcho tra-wcho ong-wcho aang-wcho ang-wcho ing-wcho on-wcho en-wcho aan-wcho nya-wcho uen-wcho yih-wcho], # Base
+    , # Liga
+    [tup-wcho tupni-wcho koi-wcho koini-wcho], # Mark
+    ;
+} GDEF;

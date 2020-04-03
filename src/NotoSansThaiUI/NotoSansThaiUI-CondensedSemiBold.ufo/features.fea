@@ -1,0 +1,60 @@
+# Prefix: Languagesystems
+# automatic
+languagesystem DFLT dflt;
+languagesystem thai dflt;
+
+
+feature aalt {
+# automatic
+feature ccmp;
+
+} aalt;
+
+feature ccmp {
+lookup thai_decomb {
+	script thai;
+	sub saraAm-thai by nikhahit-thai saraAa-thai;
+} thai_decomb;
+
+lookup thai_comb {
+    script thai;
+sub maiEk-thai nikhahit-thai by nikhahit_maiEk-thai;
+sub maiTho-thai nikhahit-thai by nikhahit_maiTho-thai;
+sub maiTri-thai nikhahit-thai by nikhahit_maiTri-thai;
+sub maiChattawa-thai nikhahit-thai by nikhahit_maiChattawa-thai;
+
+
+} thai_comb;
+
+lookup thai_comb1 {
+	script thai;
+sub [yoYing-thai thoThan-thai doChada-thai toPatak-thai ru-thai lu-thai]' [saraU-thai saraUu-thai phinthu-thai] by [yoYing-thai.less thoThan-thai.less doChada-thai.short toPatak-thai.short ru-thai.short lu-thai.short];
+sub [ru-thai.short lu-thai.short] [phinthu-thai saraU-thai saraUu-thai]' by [phinthu-thai.small saraU-thai.small saraUu-thai.small];
+sub [doChada-thai.short toPatak-thai.short] [phinthu-thai saraU-thai saraUu-thai]' by [phinthu-thai.small saraU-thai.small saraUu-thai.small];
+sub [nikhahit-thai nikhahit-thai.narrow maiHanaKat-thai maitaikhu-thai maiEk-thai maiTho-thai maiTri-thai maiChattawa-thai thanthakhat-thai yamakkan-thai saraI-thai saraIi-thai saraUe-thai saraUee-thai maiHanaKat-thai.narrow maitaikhu-thai.narrow saraI-thai.narrow saraIi-thai.narrow saraUe-thai.narrow saraUee-thai.narrow] [maiEk-thai maiTho-thai maiTri-thai maiChattawa-thai thanthakhat-thai]' by [maiEk-thai.small maiTho-thai.small maiTri-thai.small maiChattawa-thai.small thanthakhat-thai.small];
+sub loChula-thai' [nikhahit-thai maiChattawa-thai maiEk-thai maiHanaKat-thai thanthakhat-thai maiTho-thai maiTri-thai maitaikhu-thai yamakkan-thai saraI-thai saraIi-thai saraUe-thai saraUee-thai] by loChula-thai.short;
+sub [poPla-thai foFa-thai foFan-thai] [maiHanaKat-thai thanthakhat-thai nikhahit-thai maiEk-thai maiTho-thai maiTri-thai maiChattawa-thai maitaikhu-thai saraI-thai saraIi-thai saraUe-thai saraUee-thai]' by [maiHanaKat-thai.narrow thanthakhat-thai.narrow nikhahit-thai.narrow maiEk-thai.narrow maiTho-thai.narrow maiTri-thai.narrow maiChattawa-thai.narrow maitaikhu-thai.narrow saraI-thai.narrow saraIi-thai.narrow saraUe-thai.narrow saraUee-thai.narrow];
+sub [poPla-thai foFa-thai foFan-thai] [nikhahit_maiEk-thai nikhahit_maiTho-thai nikhahit_maiTri-thai nikhahit_maiChattawa-thai]' by [nikhahit_maiEk-thai.narrow nikhahit_maiTho-thai.narrow nikhahit_maiTri-thai.narrow nikhahit_maiChattawa-thai.narrow];
+sub [maiEk-thai.narrow maiTho-thai.narrow maiTri-thai.narrow maiChattawa-thai.narrow thanthakhat-thai.narrow] [maiEk-thai maiTho-thai maiTri-thai maiChattawa-thai thanthakhat-thai]' by [maiEk-thai.small maiTho-thai.small maiTri-thai.small maiChattawa-thai.small thanthakhat-thai.small];
+sub [poPla-thai foFa-thai foFan-thai] [saraU-thai saraUu-thai phinthu-thai] [maiEk-thai maiTho-thai maiTri-thai maiChattawa-thai thanthakhat-thai]' by [maiEk-thai.narrow maiTho-thai.narrow maiTri-thai.narrow maiChattawa-thai.narrow thanthakhat-thai.narrow];
+sub [maiHanaKat-thai.narrow maitaikhu-thai.narrow saraI-thai.narrow saraIi-thai.narrow saraUe-thai.narrow saraUee-thai.narrow] [maiHanaKat-thai maitaikhu-thai saraI-thai saraIi-thai saraUe-thai saraUee-thai]' by [maiHanaKat-thai.narrow maitaikhu-thai.narrow saraI-thai.narrow saraIi-thai.narrow saraUe-thai.narrow saraUee-thai.narrow];
+sub [choChoe-thai thoPhuthao-thai noNen-thai] macronbelowcomb' by macronbelowcomb.alt;
+
+} thai_comb1;
+} ccmp;
+
+feature liga {
+# automatic
+sub lu-thai lakkhangyao-thai by lu_lakkhangyao-thai;
+sub ru-thai lakkhangyao-thai by ru_lakkhangyao-thai;
+
+} liga;
+
+table GDEF {
+  # automatic
+  GlyphClassDef
+    [boBaimai-thai choChan-thai choChang-thai choChing-thai choChoe-thai doChada-thai doChada-thai.short doDek-thai foFa-thai foFan-thai hoHip-thai hoNokhuk-thai khoKhai-thai khoKhon-thai khoKhuat-thai khoKhwai-thai khoRakhang-thai koKai-thai loChula-thai loChula-thai.short loLing-thai lu-thai lu-thai.short moMa-thai ngoNgu-thai noNen-thai noNu-thai oAng-thai phoPhan-thai phoPhung-thai phoSamphao-thai poPla-thai roRua-thai ru-thai ru-thai.short soRusi-thai soSala-thai soSo-thai soSua-thai thoNangmontho-thai thoPhuthao-thai thoThahan-thai thoThan-thai thoThan-thai.less thoThong-thai thoThung-thai toPatak-thai toPatak-thai.short toTao-thai uni25CC woWaen-thai yoYak-thai yoYing-thai yoYing-thai.less], # Base
+    , # Liga
+    [macronbelowcomb macronbelowcomb.alt maiChattawa-thai maiChattawa-thai.narrow maiChattawa-thai.small maiEk-thai maiEk-thai.narrow maiEk-thai.small maiHanaKat-thai maiHanaKat-thai.narrow maiTho-thai maiTho-thai.narrow maiTho-thai.small maiTri-thai maiTri-thai.narrow maiTri-thai.small maitaikhu-thai maitaikhu-thai.narrow nikhahit-thai nikhahit-thai.narrow nikhahit_maiChattawa-thai nikhahit_maiChattawa-thai.narrow nikhahit_maiEk-thai nikhahit_maiEk-thai.narrow nikhahit_maiTho-thai nikhahit_maiTho-thai.narrow nikhahit_maiTri-thai nikhahit_maiTri-thai.narrow phinthu-thai phinthu-thai.small saraI-thai saraI-thai.narrow saraIi-thai saraIi-thai.narrow saraU-thai saraU-thai.small saraUe-thai saraUe-thai.narrow saraUee-thai saraUee-thai.narrow saraUu-thai saraUu-thai.small thanthakhat-thai thanthakhat-thai.narrow thanthakhat-thai.small tildecomb yamakkan-thai], # Mark
+    ;
+} GDEF;

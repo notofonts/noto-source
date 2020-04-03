@@ -1,0 +1,26 @@
+@ccmp1 = [ uniA90C uniA90F uniA910 uniA912 uniA916 uniA919 uniA91A uniA91F uniA921 ];
+
+# Prefix: Languagesystems
+languagesystem DFLT dflt;
+languagesystem kali dflt;
+
+feature ccmp {
+lookup ccmp1 {
+    sub @ccmp1 [uniA92C uniA92D]' by [uniA92C.alt uniA92D.alt];
+} ccmp1;
+} ccmp;
+
+feature aalt {
+# automatic
+feature ccmp;
+
+} aalt;
+
+table GDEF {
+  # automatic
+  GlyphClassDef
+    [uniA90A uniA90B uniA90C uniA90D uniA90E uniA90F uniA910 uniA911 uniA912 uniA913 uniA914 uniA915 uniA916 uniA917 uniA918 uniA919 uniA91A uniA91B uniA91C uniA91D uniA91E uniA91F uniA920 uniA921 uniA922 uniA923 uniA924 uniA925 uni25CC], # Base
+    , # Liga
+    [uniA926 uniA927 uniA928 uniA929 uniA92A uniA92B uniA92C uniA92D uniA92C.alt uniA92D.alt], # Mark
+    ;
+} GDEF;
