@@ -77,9 +77,9 @@ To contribute to this project, please read [CONTRIBUTING](CONTRIBUTING.md) and [
 
 There are three types of sources:
 
-* *.glyphs: a single source file created using Glyphs.app 
-* *.designspace: multiple files (.ufo + .designspace) comprising a source for the font
-* *.plist: multiple files (.glyphs + .plist + .txt) comprising a source for the font. This one is using [Monotype's Fontdame format](http://monotype.github.io/OpenType_Table_Source/otl_source.html).
+* *.glyphs: a single source file created using Glyphs.app [40 files]
+* *.designspace: multiple files (.ufo + .designspace) comprising a source for the font [67 sets of files]
+* *.plist: multiple files (.glyphs + .plist + .txt) comprising a source for the font. This one is using [Monotype's Fontdame format](http://monotype.github.io/OpenType_Table_Source/otl_source.html). [95 sets of files]
 * The sources as of 2020-04-05 are:
 	* [src/Arimo-Bold/Arimo-Bold.plist](https://github.com/googlefonts/noto-source/tree/master/src/Arimo-Bold)
 	* [src/Arimo-BoldItalic/Arimo-BoldItalic.plist](https://github.com/googlefonts/noto-source/tree/master/src/Arimo-BoldItalic)
