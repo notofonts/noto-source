@@ -1,7 +1,7 @@
 FontDame GSUB table
 
 feature table begin
-0	abvs	iiligatures-taml
+0	abvs	vedicligatures-taml,iiligatures-taml
 1	akhn	akhn-taml
 2	half	half-taml
 3	haln	haln-taml
@@ -94,6 +94,13 @@ naiivowelsigntamil	natamil	iivowelsigntamil
 
 lookup end
 
+
+lookup	vedicligatures-taml	ligature
+
+candrabindu_0951_tamil	u11301	uni0951
+candrabindu_1CDA_tamil	u11301	uni1CDA
+
+lookup end
 
 
 lookup	vowelligatures-taml	ligature
