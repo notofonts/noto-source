@@ -1,0 +1,106 @@
+@Uppercase = [ Alif-adlam Daali-adlam Daali-adlam Laam-adlam Miim-adlam Ba-adlam Sinnyiiyhe-adlam Pe-adlam Bhe-adlam Ra-adlam E-adlam Fa-adlam I-adlam O-adlam Dha-adlam Yhe-adlam Waw-adlam Nun-adlam Kaf-adlam Ya-adlam U-adlam Jiim-adlam Chi-adlam Ha-adlam Qaaf-adlam Ga-adlam Nya-adlam Tu-adlam Nha-adlam Va-adlam Kha-adlam Gbe-adlam Zal-adlam Kpo-adlam Sha-adlam ];
+
+@Lowercase = [ alif-adlam daali-adlam daali-adlam.medi laam-adlam miim-adlam ba-adlam sinnyiiyhe-adlam pe-adlam bhe-adlam ra-adlam e-adlam fa-adlam i-adlam o-adlam dha-adlam yhe-adlam waw-adlam nun-adlam kaf-adlam ya-adlam u-adlam jiim-adlam chi-adlam ha-adlam qaaf-adlam ga-adlam nya-adlam tu-adlam nha-adlam va-adlam kha-adlam gbe-adlam zal-adlam kpo-adlam sha-adlam ];
+
+@adlamChars = [ Alif-adlam Daali-adlam Laam-adlam Miim-adlam Ba-adlam Sinnyiiyhe-adlam Pe-adlam Bhe-adlam Ra-adlam E-adlam Fa-adlam I-adlam O-adlam Dha-adlam Yhe-adlam Waw-adlam Nun-adlam Kaf-adlam Ya-adlam U-adlam Jiim-adlam Chi-adlam Ha-adlam Qaaf-adlam Ga-adlam Nya-adlam Tu-adlam Nha-adlam Va-adlam Kha-adlam Gbe-adlam Zal-adlam Kpo-adlam Sha-adlam alif-adlam daali-adlam daali-adlam.medi laam-adlam miim-adlam ba-adlam sinnyiiyhe-adlam pe-adlam bhe-adlam ra-adlam e-adlam fa-adlam i-adlam o-adlam dha-adlam yhe-adlam waw-adlam nun-adlam kaf-adlam ya-adlam u-adlam jiim-adlam chi-adlam ha-adlam qaaf-adlam ga-adlam nya-adlam tu-adlam nha-adlam va-adlam kha-adlam gbe-adlam zal-adlam kpo-adlam sha-adlam kashida-ar aliflengthencomb-adlam vowellengthencomb-adlam gemination-adlam hamza-adlam consonantmodcomb-adlam gemconsonantmodcomb-adlam hoortobbhere-adlam hoortobbhere-adlam.below aliflengthencomb-adlam.case vowellengthencomb-adlam.case gemination-adlam.case  ];
+
+@adlamLetters = [ Alif-adlam Daali-adlam Laam-adlam Miim-adlam Ba-adlam Sinnyiiyhe-adlam Pe-adlam Bhe-adlam Ra-adlam E-adlam Fa-adlam I-adlam O-adlam Dha-adlam Yhe-adlam Waw-adlam Nun-adlam Kaf-adlam Ya-adlam U-adlam Jiim-adlam Chi-adlam Ha-adlam Qaaf-adlam Ga-adlam Nya-adlam Tu-adlam Nha-adlam Va-adlam Kha-adlam Gbe-adlam Zal-adlam Kpo-adlam Sha-adlam alif-adlam daali-adlam laam-adlam miim-adlam ba-adlam sinnyiiyhe-adlam pe-adlam bhe-adlam ra-adlam e-adlam fa-adlam i-adlam o-adlam dha-adlam yhe-adlam waw-adlam nun-adlam kaf-adlam ya-adlam u-adlam jiim-adlam chi-adlam ha-adlam qaaf-adlam ga-adlam nya-adlam tu-adlam nha-adlam va-adlam kha-adlam gbe-adlam zal-adlam kpo-adlam sha-adlam daali-adlam.medi apostrophe-adlam  ];
+
+@adlamDia = [ aliflengthencomb-adlam vowellengthencomb-adlam gemination-adlam hamza-adlam consonantmodcomb-adlam gemconsonantmodcomb-adlam aliflengthencomb-adlam.case vowellengthencomb-adlam.case gemination-adlam.case  ];
+
+# Prefix: Languagesystems
+languagesystem DFLT dflt;
+
+
+feature aalt {
+# automatic
+feature rclt;
+feature medi;
+feature case;
+
+} aalt;
+
+feature ccmp {
+lookup ccmp_adlam {
+lookupflag RightToLeft;
+
+	@Markscomb = [aliflengthencomb-adlam vowellengthencomb-adlam gemination-adlam];
+	@MarkscombCase = [aliflengthencomb-adlam.case vowellengthencomb-adlam.case gemination-adlam.case];
+	sub @Uppercase @Markscomb' by @MarkscombCase;
+	sub @adlamLetters @adlamDia hoortobbhere-adlam' by hoortobbhere-adlam.below;
+	sub @adlamLetters hoortobbhere-adlam' @adlamDia by hoortobbhere-adlam.below;
+} ccmp_adlam;
+} ccmp;
+
+feature rclt {
+lookupflag RightToLeft;
+sub @adlamChars daali-adlam' by daali-adlam.medi;
+
+} rclt;
+
+feature medi {
+sub daali-adlam by daali-adlam.medi;
+} medi;
+
+feature case {
+sub @Lowercase by @Uppercase;
+sub aliflengthencomb-adlam by aliflengthencomb-adlam.case;
+sub vowellengthencomb-adlam by vowellengthencomb-adlam.case;
+sub gemination-adlam by gemination-adlam.case;
+
+} case;
+
+feature kern {
+# disabled
+#lookupflag IgnoreMarks RightToLeft;
+#
+#Qaaf-adlam;Ha-adlam;-20
+#Ha-adlam;Ha-adlam;-50
+#Ha-adlam;ha-adlam;-50
+#Ya-adlam;Ha-adlam;-20
+#Ya-adlam;ha-adlam;-30
+#Yhe-adlam;Ba-adlam;-30
+#Yhe-adlam;Ra-adlam;-20
+#Yhe-adlam;O-adlam;-20
+#Yhe-adlam;Kha-adlam;-40
+#ha-adlam;yhe-adlam;20
+#Bhe-adlam;ha-adlam;-30
+#five-adlam;four-adlam;-20
+#five-adlam;nine-adlam;-30
+#Kaf-adlam;Ha-adlam;-20
+#Kaf-adlam;ha-adlam;-30
+#Laam-adlam;ha-adlam;-20
+#Miim-adlam;ha-adlam;-20
+#four-adlam;nine-adlam;-85
+#six-adlam;nine-adlam;-30
+#
+#
+#Qaaf-adlam;Ha-adlam;-20
+#Ha-adlam;Ha-adlam;-40
+#Ha-adlam;ha-adlam;-50
+#Ya-adlam;ha-adlam;-30
+#Yhe-adlam;Ba-adlam;-30
+#Yhe-adlam;Ra-adlam;-20
+#Yhe-adlam;O-adlam;-20
+#Yhe-adlam;Kha-adlam;-20
+#Ga-adlam;Ha-adlam;-10
+#ha-adlam;yhe-adlam;20
+#Bhe-adlam;Ha-adlam;-20
+#Bhe-adlam;ha-adlam;-30
+#five-adlam;nine-adlam;-15
+#Kaf-adlam;ha-adlam;-20
+#Chi-adlam;Ha-adlam;-20
+#Laam-adlam;ha-adlam;-30
+#Miim-adlam;ha-adlam;-30
+#four-adlam;nine-adlam;-70
+#six-adlam;nine-adlam;-30
+} kern;
+
+table GDEF {
+  # automatic
+  GlyphClassDef
+    [ Alif-adlam Ba-adlam Bhe-adlam Chi-adlam Daali-adlam Dha-adlam E-adlam Fa-adlam Ga-adlam Gbe-adlam Ha-adlam I-adlam Jiim-adlam Kaf-adlam Kha-adlam Kpo-adlam Laam-adlam Miim-adlam Nha-adlam Nun-adlam Nya-adlam O-adlam Pe-adlam Qaaf-adlam Ra-adlam Sha-adlam Sinnyiiyhe-adlam Tu-adlam U-adlam Va-adlam Waw-adlam Ya-adlam Yhe-adlam Zal-adlam alif-adlam ba-adlam bhe-adlam chi-adlam daali-adlam daali-adlam.medi dha-adlam e-adlam fa-adlam ga-adlam gbe-adlam ha-adlam i-adlam jiim-adlam kaf-adlam kha-adlam kpo-adlam laam-adlam miim-adlam nha-adlam nun-adlam nya-adlam o-adlam pe-adlam qaaf-adlam ra-adlam sha-adlam sinnyiiyhe-adlam tu-adlam u-adlam va-adlam waw-adlam ya-adlam yhe-adlam zal-adlam], # Base
+    , # Liga
+    [aliflengthencomb-adlam aliflengthencomb-adlam.case consonantmodcomb-adlam gemconsonantmodcomb-adlam gemination-adlam gemination-adlam.case hamza-adlam hoortobbhere-adlam hoortobbhere-adlam.below vowellengthencomb-adlam vowellengthencomb-adlam.case], # Mark
+    ;
+} GDEF;
