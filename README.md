@@ -72,14 +72,13 @@ To contribute to this project, please read [CONTRIBUTING](CONTRIBUTING.md) and [
 * 2020-02-22: first UFO+designspace source for NotoSansHanifiRohingya
 * 2015-12-07: first release, covering Noto Sans UI {Italic, Mono, Roman}, Noto Sans Display {Italic, Roman}, Noto {Sans, Serif} {Armenian, Georgian}.
 
-
 ## Source List as of 2020-04-05
 
 There are three types of sources:
 
-* *.glyphs: a single source file created using Glyphs.app [40 files]
-* *.designspace: multiple files (.ufo + .designspace) comprising a source for the font [67 sets of files]
-* *.plist: multiple files (.glyphs + .plist + .txt) comprising a source for the font. This one is using [Monotype's Fontdame format](http://monotype.github.io/OpenType_Table_Source/otl_source.html). [95 sets of files]
+* *.glyphs: a single source file created using Glyphs.app [37 files]
+* *.designspace: multiple files (.ufo + .designspace) comprising a source for the font [71 sets of files]
+* *.plist: multiple files (.glyphs + .plist + .txt) comprising a source for the font. This one is using [Monotype's Fontdame format](http://monotype.github.io/OpenType_Table_Source/otl_source.html). [94 sets of files]
 * The sources as of 2020-04-05 are:
 	* [src/Arimo-Bold/Arimo-Bold.plist](https://github.com/googlefonts/noto-source/tree/master/src/Arimo-Bold)
 	* [src/Arimo-BoldItalic/Arimo-BoldItalic.plist](https://github.com/googlefonts/noto-source/tree/master/src/Arimo-BoldItalic)
@@ -97,8 +96,8 @@ There are three types of sources:
 	* [src/NotoRashiHebrew.glyphs](https://github.com/googlefonts/noto-source/tree/master/src/NotoRashiHebrew.glyphs)
 	* [src/NotoSans-ItalicMM.glyphs](https://github.com/googlefonts/noto-source/tree/master/src/NotoSans-ItalicMM.glyphs)
 	* [src/NotoSans-MM.glyphs](https://github.com/googlefonts/noto-source/tree/master/src/NotoSans-MM.glyphs)
-	* [src/NotoSansAdlam.glyphs](https://github.com/googlefonts/noto-source/tree/master/src/NotoSansAdlam.glyphs)
-	* [src/NotoSansAdlamUnjoined.glyphs](https://github.com/googlefonts/noto-source/tree/master/src/NotoSansAdlamUnjoined.glyphs)
+	* [src/NotoSansAdlam/NotoSansAdlam.designspace](https://github.com/googlefonts/noto-source/tree/master/src/NotoSansAdlam/NotoSansAdlam.designspace)
+	* [src/NotoSansAdlamUnjoined/NotoSansAdlamUnjoined.designspace](https://github.com/googlefonts/noto-source/tree/master/src/NotoSansAdlamUnjoined/NotoSansAdlamUnjoined.designspace)
 	* [src/NotoSansAnatolianHieroglyphs/NotoSansAnatolianHieroglyphs.designspace](https://github.com/googlefonts/noto-source/tree/master/src/NotoSansAnatolianHieroglyphs)
 	* [src/NotoSansArabic-MM.glyphs](https://github.com/googlefonts/noto-source/tree/master/src/NotoSansArabic-MM.glyphs)
 	* [src/NotoSansArabicUI-MM.glyphs](https://github.com/googlefonts/noto-source/tree/master/src/NotoSansArabicUI-MM.glyphs)
@@ -109,7 +108,7 @@ There are three types of sources:
 	* [src/NotoSansBatak/NotoSansBatak.plist](https://github.com/googlefonts/noto-source/tree/master/src/NotoSansBatak)
 	* [src/NotoSansBengali/NotoSansBengali-MM.plist](https://github.com/googlefonts/noto-source/tree/master/src/NotoSansBengali)
 	* [src/NotoSansBengali/NotoSansBengaliUI-MM.plist](https://github.com/googlefonts/noto-source/tree/master/src/NotoSansBengali)
-	* [src/NotoSansBhaiksuki.glyphs](https://github.com/googlefonts/noto-source/tree/master/src/NotoSansBhaiksuki.glyphs)
+	* [src/NotoSansBhaiksuki/NotoSansBhaiksuki-Regular.designspace](https://github.com/googlefonts/noto-source/tree/master/src/NotoSansBhaiksuki/NotoSansBhaiksuki-Regular.designspace)
 	* [src/NotoSansBrahmi/NotoSansBrahmi.plist](https://github.com/googlefonts/noto-source/tree/master/src/NotoSansBrahmi)
 	* [src/NotoSansBuginese/NotoSansBuginese.designspace](https://github.com/googlefonts/noto-source/tree/master/src/NotoSansBuginese)
 	* [src/NotoSansBuhid/NotoSansBuhid.designspace](https://github.com/googlefonts/noto-source/tree/master/src/NotoSansBuhid)
@@ -228,7 +227,7 @@ There are three types of sources:
 	* [src/NotoSansSymbols2/NotoSansSymbols2.designspace](https://github.com/googlefonts/noto-source/tree/master/src/NotoSansSymbols2)
 	* [src/NotoSansSyriac/NotoSansSyriac-MM.plist](https://github.com/googlefonts/noto-source/tree/master/src/NotoSansSyriac)
 	* [src/NotoSansTagalog/NotoSansTagalog.plist](https://github.com/googlefonts/noto-source/tree/master/src/NotoSansTagalog)
-	* [src/NotoSansTagbanwa/NotoSansTagbanwa.plist](https://github.com/googlefonts/noto-source/tree/master/src/NotoSansTagbanwa)
+	* [src/NotoSansTagbanwa/NotoSansTagbanwa.designspace](https://github.com/googlefonts/noto-source/tree/master/src/NotoSansTagbanwa/NotoSansTagbanwa.designspace)
 	* [src/NotoSansTaiLe/NotoSansTaiLe.plist](https://github.com/googlefonts/noto-source/tree/master/src/NotoSansTaiLe)
 	* [src/NotoSansTaiViet/NotoSansTaiViet.plist](https://github.com/googlefonts/noto-source/tree/master/src/NotoSansTaiViet)
 	* [src/NotoSansTakri/NotoSansTakri.plist](https://github.com/googlefonts/noto-source/tree/master/src/NotoSansTakri)
