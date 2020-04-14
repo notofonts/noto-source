@@ -54,7 +54,7 @@ function setup() {
 }
 
 function build_all() {
-    for target in src/*.glyphs src/*/*.plist src/*/*.ufo; do
+    for target in src/*.glyphs src/*/*.plist src/*/*.designspace src/*/*.ufo; do
         echo "==== building ${target} ===="
         if [[ "$1" == 'variable' ]]; then
             build_variable "${target}" "$2"
@@ -73,6 +73,10 @@ function build() {
             ;;
         *.glyphs)
             build_glyphs "$1" 'otf' 'ttf'
+            ;;
+        *.designspace)
+            echo "$1"
+            build_designspace "$1" 'otf' 'ttf'
             ;;
         *.ufo)
             build_ufo "$1"
@@ -96,6 +100,9 @@ function build_variable() {
             ;;
         *.glyphs)
             build_glyphs_variable "$1"
+            ;;
+        *.designspace)
+            build_designspace_variable "$1"
             ;;
         *)
             echo "unrecognized source type for variable font: \"$1\""

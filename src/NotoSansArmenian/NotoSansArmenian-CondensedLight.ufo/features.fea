@@ -1,0 +1,25 @@
+# Prefix: Languagesystems
+# automatic
+languagesystem DFLT dflt;
+languagesystem armn dflt;
+
+
+feature liga {
+sub uni0548 uni0552 by uni0548_uni0552;
+sub uni0574 uni0565 by uniFB14;
+sub uni0574 uni056B by uniFB15;
+sub uni0574 uni056D by uniFB17;
+sub uni0574 uni0576 by uniFB13;
+sub uni0578 uni0582 by uni0578_uni0582;
+sub uni057E uni0576 by uniFB16;
+
+} liga;
+
+table GDEF {
+  # automatic
+  GlyphClassDef
+    [uni0531 uni0548 uni0555 uni0561 uni0578 uni0585 uni0548_uni0552 uni0578_uni0582 uni25CC], # Base
+    , # Liga
+    [dieresiscomb], # Mark
+    ;
+} GDEF;

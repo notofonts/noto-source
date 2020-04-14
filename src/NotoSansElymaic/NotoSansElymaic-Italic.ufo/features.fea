@@ -1,0 +1,73 @@
+# Prefix: Languagesystems
+# automatic
+languagesystem DFLT dflt;
+
+
+feature aalt {
+# automatic
+feature salt;
+feature ss01;
+feature ss02;
+feature ss03;
+
+} aalt;
+
+feature dlig {
+# automatic
+lookupflag IgnoreMarks;
+sub zayin-elym yodh-elym by zayin_yodh-elym;
+
+} dlig;
+
+feature salt {
+# automatic
+sub aleph-elym by aleph-elym.ss01;
+sub gimel-elym by gimel-elym.ss01;
+sub daleth-elym by daleth-elym.ss01;
+sub he-elym by he-elym.ss01;
+sub zayin-elym by zayin-elym.ss01;
+sub yodh-elym by yodh-elym.ss01;
+sub lamedh-elym by lamedh-elym.ss01;
+sub mem-elym by mem-elym.ss01;
+sub nun-elym by nun-elym.ss01;
+sub samekh-elym by samekh-elym.ss01;
+sub pe-elym by pe-elym.ss01;
+sub sadhe-elym by sadhe-elym.ss01;
+sub shin-elym by shin-elym.ss01;
+sub taw-elym by taw-elym.ss01;
+sub zayin_yodh-elym by zayin_yodh-elym.ss01;
+
+} salt;
+
+feature ss01 {
+# notes:
+# Name:	Tang-i Sarvak
+sub gimel-elym by gimel-elym.ss01;
+sub nun-elym by nun-elym.ss01;
+sub pe-elym by pe-elym.ss01;
+sub shin-elym by shin-elym.ss01;
+sub zayin_yodh-elym by zayin_yodh-elym.ss03;
+} ss01;
+
+feature ss02 {
+# notes:
+# Name:	Tang i Butan
+sub aleph-elym by aleph-elym.ss01;
+sub daleth-elym by daleth-elym.ss01;
+sub he-elym by he-elym.ss02;
+sub zayin-elym by zayin-elym.ss01;
+sub mem-elym by mem-elym.ss01;
+sub sadhe-elym by sadhe-elym.ss01;
+sub shin-elym by shin-elym.ss01;
+sub zayin_yodh-elym by zayin_yodh-elym.ss01;
+
+} ss02;
+
+feature ss03 {
+# notes:
+# Name:	Tang i Chilau
+sub sadhe-elym by sadhe-elym.ss01;
+sub zayin_yodh-elym by zayin_yodh-elym.ss01;
+
+} ss03;
+

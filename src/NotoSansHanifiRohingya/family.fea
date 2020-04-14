@@ -1,0 +1,177 @@
+#------------------------------#
+# Language system declarations #
+#------------------------------#
+
+languagesystem DFLT dflt;
+languagesystem rohg dflt;
+
+#-------------------#
+# Class declaration #
+#-------------------#
+
+@BASE = [.notdef BASE comma-ar semicolon-ar question-ar fullstop-fa.urdu kashida-ar guillemotleft guillemotright xx.tripledot-rohg xx.singledot-rohg xx.ivowelmark-rohg xx.evowelmark-rohg xx.connectionlong-rohg xx.connection-rohg tta-rohg.fina tta-rohg.medi tta-rohg.init tta-rohg ta-rohg.fina ta-rohg.medi ta-rohg.init ta-rohg pa-rohg.fina pa-rohg.medi pa-rohg.init pa-rohg ba-rohg.fina ba-rohg.medi ba-rohg.init ba-rohg a-rohg.fina a-rohg.medi a-rohg.init a-rohg fa-rohg.fina fa-rohg.medi fa-rohg.init fa-rohg kha-rohg.fina kha-rohg.medi kha-rohg.init kha-rohg ha-rohg.fina ha-rohg.medi ha-rohg.init ha-rohg ca-rohg.fina ca-rohg.medi ca-rohg.init ca-rohg ja-rohg.fina ja-rohg.medi ja-rohg.init ja-rohg za-rohg.fina za-rohg.medi za-rohg.init za-rohg rra-rohg.fina rra-rohg.medi rra-rohg.init rra-rohg ra-rohg.fina ra-rohg.medi ra-rohg.init ra-rohg dda-rohg.fina dda-rohg.medi dda-rohg.init dda-rohg da-rohg.fina da-rohg.medi da-rohg.init da-rohg la-rohg.fina la-rohg.medi la-rohg.init la-rohg ga-rohg.fina ga-rohg.medi ga-rohg.init ga-rohg ka-rohg.fina ka-rohg.medi ka-rohg.init ka-rohg sha-rohg.fina sha-rohg.medi sha-rohg.init sha-rohg sa-rohg.fina sa-rohg.medi sa-rohg.init sa-rohg ya-rohg.fina ya-rohg.medi ya-rohg.init ya-rohg kinnawa-rohg.fina kinnawa-rohg.medi kinnawa-rohg.init kinnawa-rohg wa-rohg.fina wa-rohg.medi wa-rohg.init wa-rohg na-rohg.fina na-rohg.medi na-rohg.init na-rohg ma-rohg.fina ma-rohg.medi ma-rohg.init ma-rohg va-rohg.fina va-rohg.medi va-rohg.init va-rohg nya-rohg.fina nya-rohg.medi nya-rohg.init nya-rohg nga-rohg.fina nga-rohg.medi nga-rohg.init nga-rohg kinnaya-rohg.fina kinnaya-rohg.medi kinnaya-rohg.init kinnaya-rohg ovowel-rohg.fina ovowel-rohg.medi ovowel-rohg.init ovowel-rohg evowel-rohg.fina evowel-rohg.medi evowel-rohg.init evowel-rohg uvowel-rohg.fina uvowel-rohg.medi uvowel-rohg.init uvowel-rohg ivowel-rohg.fina ivowel-rohg.medi ivowel-rohg.init ivowel-rohg avowel-rohg.fina avowel-rohg.medi avowel-rohg.init avowel-rohg sakin-rohg.fina sakin-rohg nakhonna-rohg.fina nakhonna-rohg.medi nakhonna-rohg.init nakhonna-rohg zero-ar zero-rohg one-rohg two-rohg three-rohg four-rohg five-rohg six-rohg seven-rohg eight-rohg nine-rohg];
+@COMBINING_MARKS = [harbahay-rohg tahala-rohg tana-rohg tassi-rohg tana-rohg.ss01];
+
+table GDEF {
+    GlyphClassDef @BASE, , @COMBINING_MARKS, ;
+} GDEF;
+
+#-------------------------------------#
+# Lookup declarations Hanifi Rohingya #
+#-------------------------------------#
+
+lookup ROHG_fina_final_forms {
+	lookupflag RightToLeft;
+	sub a-rohg by a-rohg.fina;
+	sub avowel-rohg by avowel-rohg.fina;
+	sub ba-rohg by ba-rohg.fina;
+	sub ca-rohg by ca-rohg.fina;
+	sub da-rohg by da-rohg.fina;
+	sub dda-rohg by dda-rohg.fina;
+	sub evowel-rohg by evowel-rohg.fina;
+	sub fa-rohg by fa-rohg.fina;
+	sub ga-rohg by ga-rohg.fina;
+	sub ha-rohg by ha-rohg.fina;
+	sub ivowel-rohg by ivowel-rohg.fina;
+	sub ja-rohg by ja-rohg.fina;
+	sub ka-rohg by ka-rohg.fina;
+	sub kha-rohg by kha-rohg.fina;
+	sub kinnawa-rohg by kinnawa-rohg.fina;
+	sub kinnaya-rohg by kinnaya-rohg.fina;
+	sub la-rohg by la-rohg.fina;
+	sub ma-rohg by ma-rohg.fina;
+	sub na-rohg by na-rohg.fina;
+	sub nakhonna-rohg by nakhonna-rohg.fina;
+	sub nga-rohg by nga-rohg.fina;
+	sub nya-rohg by nya-rohg.fina;
+	sub ovowel-rohg by ovowel-rohg.fina;
+	sub pa-rohg by pa-rohg.fina;
+	sub ra-rohg by ra-rohg.fina;
+	sub rra-rohg by rra-rohg.fina;
+	sub sa-rohg by sa-rohg.fina;
+	sub sakin-rohg by sakin-rohg.fina;
+	sub sha-rohg by sha-rohg.fina;
+	sub ta-rohg by ta-rohg.fina;
+	sub tta-rohg by tta-rohg.fina;
+	sub uvowel-rohg by uvowel-rohg.fina;
+	sub va-rohg by va-rohg.fina;
+	sub wa-rohg by wa-rohg.fina;
+	sub ya-rohg by ya-rohg.fina;
+	sub za-rohg by za-rohg.fina;
+} ROHG_fina_final_forms;
+
+lookup ROHG_medi_medial_forms {
+	lookupflag RightToLeft;
+	sub a-rohg by a-rohg.medi;
+	sub avowel-rohg by avowel-rohg.medi;
+	sub ba-rohg by ba-rohg.medi;
+	sub ca-rohg by ca-rohg.medi;
+	sub da-rohg by da-rohg.medi;
+	sub dda-rohg by dda-rohg.medi;
+	sub evowel-rohg by evowel-rohg.medi;
+	sub fa-rohg by fa-rohg.medi;
+	sub ga-rohg by ga-rohg.medi;
+	sub ha-rohg by ha-rohg.medi;
+	sub ivowel-rohg by ivowel-rohg.medi;
+	sub ja-rohg by ja-rohg.medi;
+	sub ka-rohg by ka-rohg.medi;
+	sub kha-rohg by kha-rohg.medi;
+	sub kinnawa-rohg by kinnawa-rohg.medi;
+	sub kinnaya-rohg by kinnaya-rohg.medi;
+	sub la-rohg by la-rohg.medi;
+	sub ma-rohg by ma-rohg.medi;
+	sub na-rohg by na-rohg.medi;
+	sub nakhonna-rohg by nakhonna-rohg.medi;
+	sub nga-rohg by nga-rohg.medi;
+	sub nya-rohg by nya-rohg.medi;
+	sub ovowel-rohg by ovowel-rohg.medi;
+	sub pa-rohg by pa-rohg.medi;
+	sub ra-rohg by ra-rohg.medi;
+	sub rra-rohg by rra-rohg.medi;
+	sub sa-rohg by sa-rohg.medi;
+	sub sha-rohg by sha-rohg.medi;
+	sub ta-rohg by ta-rohg.medi;
+	sub tta-rohg by tta-rohg.medi;
+	sub uvowel-rohg by uvowel-rohg.medi;
+	sub va-rohg by va-rohg.medi;
+	sub wa-rohg by wa-rohg.medi;
+	sub ya-rohg by ya-rohg.medi;
+	sub za-rohg by za-rohg.medi;
+} ROHG_medi_medial_forms;
+
+lookup ROHG_init_initial_forms {
+	lookupflag RightToLeft;
+	sub a-rohg by a-rohg.init;
+	sub avowel-rohg by avowel-rohg.init;
+	sub ba-rohg by ba-rohg.init;
+	sub ca-rohg by ca-rohg.init;
+	sub da-rohg by da-rohg.init;
+	sub dda-rohg by dda-rohg.init;
+	sub evowel-rohg by evowel-rohg.init;
+	sub fa-rohg by fa-rohg.init;
+	sub ga-rohg by ga-rohg.init;
+	sub ha-rohg by ha-rohg.init;
+	sub ivowel-rohg by ivowel-rohg.init;
+	sub ja-rohg by ja-rohg.init;
+	sub ka-rohg by ka-rohg.init;
+	sub kha-rohg by kha-rohg.init;
+	sub kinnawa-rohg by kinnawa-rohg.init;
+	sub kinnaya-rohg by kinnaya-rohg.init;
+	sub la-rohg by la-rohg.init;
+	sub ma-rohg by ma-rohg.init;
+	sub na-rohg by na-rohg.init;
+	sub nakhonna-rohg by nakhonna-rohg.init;
+	sub nga-rohg by nga-rohg.init;
+	sub nya-rohg by nya-rohg.init;
+	sub ovowel-rohg by ovowel-rohg.init;
+	sub pa-rohg by pa-rohg.init;
+	sub ra-rohg by ra-rohg.init;
+	sub rra-rohg by rra-rohg.init;
+	sub sa-rohg by sa-rohg.init;
+	sub sha-rohg by sha-rohg.init;
+	sub ta-rohg by ta-rohg.init;
+	sub tta-rohg by tta-rohg.init;
+	sub uvowel-rohg by uvowel-rohg.init;
+	sub va-rohg by va-rohg.init;
+	sub wa-rohg by wa-rohg.init;
+	sub ya-rohg by ya-rohg.init;
+	sub za-rohg by za-rohg.init;
+} ROHG_init_initial_forms;
+
+lookup ROHG_wide_tana {
+    sub tana-rohg by tana-rohg.ss01;
+} ROHG_wide_tana;
+
+lookup ROHG_alternate_zero {
+    sub zero-rohg by zero-ar;
+} ROHG_alternate_zero;
+
+#-----------------#
+# Feature Lookups #
+#-----------------#
+
+feature fina {
+    lookup ROHG_fina_final_forms;
+} fina;
+
+feature medi {
+    lookup ROHG_medi_medial_forms;
+} medi;
+
+feature init {
+    lookup ROHG_init_initial_forms;
+} init;
+
+feature ss01 { 
+    featureNames {
+        name "Wide Tana Sign";
+    };
+    lookup ROHG_wide_tana;
+} ss01;
+
+feature ss02 { 
+    featureNames {
+        name "Alternate digit zero";
+    };
+    lookup ROHG_alternate_zero;
+} ss02;

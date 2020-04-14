@@ -1,0 +1,108 @@
+@calt1 = [ uni0842.Init uni0842.Medi uni084A.Init uni084A.Medi uni084D.Init uni084D.Medi uni0850.Init uni0850.Medi uni0851.Init uni0851.Medi ];
+
+@fina1 = [ uni0840 uni0841 uni0842 uni0843 uni0844 uni0845 uni0846 uni0847 uni0848 uni0849 uni084A uni084B uni084C uni084D uni084E uni084F uni0850 uni0851 uni0852 uni0853 uni0854 uni0855 ];
+
+@fina2 = [ uni0840.Fina uni0841.Fina uni0842.Fina uni0843.Fina uni0844.Fina uni0845.Fina uni0846.Fina uni0847.Fina uni0848.Fina uni0849.Fina uni084A.Fina uni084B.Fina uni084C.Fina uni084D.Fina uni084E.Fina uni084F.Fina uni0850.Fina uni0851.Fina uni0852.Fina uni0853.Fina uni0854.Fina uni0855.Fina ];
+
+@init1 = [ uni0841 uni0842 uni0843 uni0844 uni0845 uni0848 uni084A uni084B uni084C uni084D uni084E uni084F uni0850 uni0851 uni0852 uni0853 uni0855 ];
+
+@init2 = [ uni0841.Init uni0842.Init uni0843.Init uni0844.Init uni0845.Init uni0848.Init uni084A.Init uni084B.Init uni084C.Init uni084D.Init uni084E.Init uni084F.Init uni0850.Init uni0851.Init uni0852.Init uni0853.Init uni0855.Init ];
+
+@isol1 = [ uni0840 uni0841 uni0842 uni0843 uni0844 uni0845 uni0846 uni0847 uni0848 uni0849 uni084A uni084B uni084C uni084D uni084E uni084F uni0850 uni0851 uni0852 uni0853 uni0854 uni0855 uni0856 uni0857 uni0858 ];
+
+@isol2 = [ uni0840.Isol uni0841.Isol uni0842.Isol uni0843.Isol uni0844.Isol uni0845.Isol uni0846.Isol uni0847.Isol uni0848.Isol uni0849.Isol uni084A.Isol uni084B.Isol uni084C.Isol uni084D.Isol uni084E.Isol uni084F.Isol uni0850.Isol uni0851.Isol uni0852.Isol uni0853.Isol uni0854.Isol uni0855.Isol uni0856.Isol uni0857.Isol uni0858.Isol ];
+
+@medi1 = [ uni0841 uni0842 uni0843 uni0844 uni0845 uni0847 uni0848 uni084A uni084B uni084C uni084D uni084E uni084F uni0850 uni0851 uni0852 uni0853 uni0855 ];
+
+@medi2 = [ uni0841.Medi uni0842.Medi uni0843.Medi uni0844.Medi uni0845.Medi uni0847.Medi uni0848.Medi uni084A.Medi uni084B.Medi uni084C.Medi uni084D.Medi uni084E.Medi uni084F.Medi uni0850.Medi uni0851.Medi uni0852.Medi uni0853.Medi uni0855.Medi ];
+
+# Prefix: Languagesystems
+languagesystem DFLT dflt;
+languagesystem mand dflt;
+
+feature init {
+lookupflag IgnoreMarks RightToLeft;
+    sub @init1 by @init2;
+
+
+} init;
+
+feature isol {
+lookupflag IgnoreMarks RightToLeft;
+    sub @isol1 by @isol2;
+} isol;
+
+feature medi {
+lookupflag IgnoreMarks RightToLeft;
+    sub @medi1 by @medi2;
+
+} medi;
+
+feature fina {
+lookupflag IgnoreMarks RightToLeft;
+    sub @fina1 by @fina2;
+} fina;
+
+feature calt {
+lookup calt5 {
+lookupflag IgnoreMarks RightToLeft;
+    sub [uni084B.Init uni084B.Medi] [uni0848.Fina uni0848.Medi]' by [uni0848.Fina_Long uni0848.Medi_Long];
+} calt5;
+lookup calt6 {
+    sub [uni0846.Isol uni0846.Fina] [uni0848.Isol uni0848.Init]' by [uni0848.Isol_Long uni0848.Init_Long];
+} calt6;
+lookup calt7 {
+    sub [uni0842.Init uni0842.Medi uni0844.Init uni0844.Medi uni0848.Init uni0848.Medi] [uni0848.Fina uni0849.Fina]' by [uni0848.Fina_Short uni0849.Fina_Short];
+} calt7;
+lookup calt8 {
+    sub [uni084A.Init uni084A.Medi uni084D.Init uni084D.Medi uni0850.Init uni0850.Medi uni0851.Init uni0851.Medi] uni0849.Fina' by uni0849.Fina_XShort;
+} calt8;
+
+lookup calt9 {
+    sub @calt1 uni0840.Fina' by uni0840.Fina_XShort;
+} calt9;
+
+lookup calt10 {
+    sub @calt1 uni0847.Fina' by uni0847.Fina_XShort;
+} calt10;
+lookup calt11 {
+    sub @calt1 uni0844.Fina' by uni0844.Fina_XShort;
+} calt11;
+lookup calt12 {
+    sub @calt1 uni0844.Medi' by uni0844.Medi_XShort;
+} calt12;
+lookup calt13 {
+    sub uni0844.Init uni0848.Medi' by uni0848.Medi_Short;
+} calt13;
+lookup calt14 {
+    sub [uni0844.Medi uni0844.Medi_XShort] uni0848.Medi' by uni0848.Medi_Short;
+} calt14;
+lookup calt5;
+lookup calt6;
+lookup calt7;
+lookup calt8;
+lookup calt9;
+lookup calt10;
+lookup calt11;
+lookup calt12;
+lookup calt13;
+lookup calt14;
+
+} calt;
+
+feature aalt {
+feature init;
+feature isol;
+feature medi;
+feature fina;
+feature calt;
+} aalt;
+
+table GDEF {
+  # automatic
+  GlyphClassDef
+    [uni0840 uni0840.Isol uni0840.Fina uni0841 uni0841.Isol uni0841.Fina uni0841.Init uni0841.Medi uni0842 uni0842.Isol uni0842.Fina uni0842.Init uni0842.Medi uni0843 uni0843.Isol uni0843.Fina uni0843.Init uni0843.Medi uni0844 uni0844.Isol uni0844.Fina uni0844.Init uni0844.Medi uni0845 uni0845.Isol uni0845.Fina uni0845.Init uni0845.Medi uni0846 uni0846.Isol uni0846.Fina uni0847 uni0847.Isol uni0847.Fina uni0848 uni0848.Isol uni0848.Fina uni0848.Init uni0848.Medi uni0849 uni0849.Isol uni0849.Fina uni084A uni084A.Isol uni084A.Fina uni084A.Init uni084A.Medi uni084B uni084B.Isol uni084B.Fina uni084B.Init uni084B.Medi uni084C uni084C.Isol uni084C.Fina uni084C.Init uni084C.Medi uni084D uni084D.Isol uni084D.Fina uni084D.Init uni084D.Medi uni084E uni084E.Isol uni084E.Fina uni084E.Init uni084E.Medi uni084F uni084F.Isol uni084F.Fina uni084F.Init uni084F.Medi uni0850 uni0850.Isol uni0850.Fina uni0850.Init uni0850.Medi uni0851 uni0851.Isol uni0851.Fina uni0851.Init uni0851.Medi uni0852 uni0852.Isol uni0852.Fina uni0852.Init uni0852.Medi uni0853 uni0853.Isol uni0853.Fina uni0853.Init uni0853.Medi uni0854 uni0854.Isol uni0854.Fina uni0855 uni0855.Isol uni0855.Fina uni0855.Init uni0855.Medi uni0856 uni0856.Isol uni0857 uni0857.Isol uni0858 uni0858.Isol uni0847.Medi uni0848.Isol_Long uni0848.Init_Long uni0848.Medi_Long uni0848.Fina_Long uni0849.Fina_Short uni0849.Fina_XShort uni0840.Fina_XShort uni0847.Fina_XShort uni0844.Medi_XShort uni0844.Fina_XShort uni0848.Medi_Short uni0848.Fina_Short uni25CC], # Base
+    , # Liga
+    [uni0859 uni085A uni085B], # Mark
+    ;
+} GDEF;

@@ -1,0 +1,116 @@
+@markFilter = [ iMatra-tamil iiMatra-tamil uMatra-tamil uuMatra-tamil  ];
+
+# Prefix: Languagesystems
+languagesystem DFLT dflt;
+languagesystem latn dflt;
+languagesystem taml dflt;
+languagesystem tml2 dflt;
+
+
+feature akhn {
+sub ka-tamil halant-tamil ssa-tamil by kssa-tamil;
+sub sha-tamil halant-tamil ra-tamil iiMatra-tamil by shrii-tamil;
+sub sa-tamil halant-tamil ra-tamil iiMatra-tamil by shrii-tamil;
+
+} akhn;
+
+feature abvs {
+#udatta-deva doubleSvarita-vedic u11301 candrabindu_0951_tamil candrabindu_1CDA_tamil 
+sub u11301 udatta-deva by candrabindu_0951_tamil ;
+sub u11301 doubleSvarita-vedic by candrabindu_1CDA_tamil ;
+
+sub [ka-tamil ca-tamil ta-tamil na-tamil pa-tamil ra-tamil ma-tamil llla-tamil][iMatra-tamil iMatra-tamil.alt01 iMatra-tamil.alt02] anusvara-tamil' by anusvara-tamil.alt ;
+
+} abvs;
+
+feature psts {
+lookupflag UseMarkFilteringSet @markFilter ;
+sub ka-tamil iiMatra-tamil by kii-tamil;
+sub ka-tamil uMatra-tamil by ku-tamil;
+sub ka-tamil uuMatra-tamil by kuu-tamil;
+sub nga-tamil iiMatra-tamil by ngii-tamil;
+sub nga-tamil uMatra-tamil by ngu-tamil;
+sub nga-tamil uuMatra-tamil by nguu-tamil;
+sub ca-tamil iiMatra-tamil by cii-tamil;
+sub ca-tamil uMatra-tamil by cu-tamil;
+sub ca-tamil uuMatra-tamil by cuu-tamil;
+sub nya-tamil iiMatra-tamil by nyii-tamil;
+sub nya-tamil uMatra-tamil by nyu-tamil;
+sub nya-tamil uuMatra-tamil by nyuu-tamil;
+sub tta-tamil iMatra-tamil by tti-tamil;
+sub tta-tamil iiMatra-tamil by ttii-tamil;
+sub tta-tamil uMatra-tamil by ttu-tamil;
+sub tta-tamil uuMatra-tamil by ttuu-tamil;
+sub nna-tamil iiMatra-tamil by nnii-tamil;
+sub nna-tamil uMatra-tamil by nnu-tamil;
+sub nna-tamil uuMatra-tamil by nnuu-tamil;
+sub ta-tamil iiMatra-tamil by tii-tamil;
+sub ta-tamil uMatra-tamil by tu-tamil;
+sub ta-tamil uuMatra-tamil by tuu-tamil;
+sub na-tamil iiMatra-tamil by nii-tamil;
+sub na-tamil uMatra-tamil by nu-tamil;
+sub na-tamil uuMatra-tamil by nuu-tamil;
+sub pa-tamil iiMatra-tamil by pii-tamil;
+sub pa-tamil uMatra-tamil by pu-tamil;
+sub pa-tamil uuMatra-tamil by puu-tamil;
+sub ma-tamil iiMatra-tamil by mii-tamil;
+sub ma-tamil uMatra-tamil by mu-tamil;
+sub ma-tamil uuMatra-tamil by muu-tamil;
+sub ya-tamil iiMatra-tamil by yii-tamil;
+sub ya-tamil uMatra-tamil by yu-tamil;
+sub ya-tamil uuMatra-tamil by yuu-tamil;
+sub ra-tamil iiMatra-tamil by rii-tamil;
+sub ra-tamil uMatra-tamil by ru-tamil;
+sub ra-tamil uuMatra-tamil by ruu-tamil;
+sub la-tamil iMatra-tamil by li-tamil;
+sub la-tamil iiMatra-tamil by lii-tamil;
+sub la-tamil uMatra-tamil by lu-tamil;
+sub la-tamil uuMatra-tamil by luu-tamil;
+sub va-tamil iiMatra-tamil by vii-tamil;
+sub va-tamil uMatra-tamil by vu-tamil;
+sub va-tamil uuMatra-tamil by vuu-tamil;
+sub llla-tamil iiMatra-tamil by lllii-tamil;
+sub llla-tamil uMatra-tamil by lllu-tamil;
+sub llla-tamil uuMatra-tamil by llluu-tamil;
+sub lla-tamil iiMatra-tamil by llii-tamil;
+sub lla-tamil uMatra-tamil by llu-tamil;
+sub lla-tamil uuMatra-tamil by lluu-tamil;
+sub rra-tamil iiMatra-tamil by rrii-tamil;
+sub rra-tamil uMatra-tamil by rru-tamil;
+sub rra-tamil uuMatra-tamil by rruu-tamil;
+sub nnna-tamil iiMatra-tamil by nnnii-tamil;
+sub nnna-tamil uMatra-tamil by nnnu-tamil;
+sub nnna-tamil uuMatra-tamil by nnnuu-tamil;
+sub ja-tamil iiMatra-tamil by jii-tamil;
+sub sha-tamil iiMatra-tamil by shii-tamil;
+sub ssa-tamil iiMatra-tamil by ssii-tamil;
+sub sa-tamil iMatra-tamil by si-tamil;
+sub sa-tamil iiMatra-tamil by sii-tamil;
+sub ha-tamil iiMatra-tamil by hii-tamil;
+sub kssa-tamil iiMatra-tamil by kssii-tamil;
+sub [ma-tamil llla-tamil rra-tamil ja-tamil sha-tamil ha-tamil] iMatra-tamil' by iMatra-tamil.alt01;
+sub sa-tamil [uMatra-tamil uuMatra-tamil]' by [uMatra-tamil.alt01 uuMatra-tamil.alt01];
+sub [ssa-tamil kssa-tamil] [iMatra-tamil uMatra-tamil uuMatra-tamil]' by [iMatra-tamil.alt02 uMatra-tamil.alt02 uuMatra-tamil.alt02];
+} psts;
+
+feature sups {
+sub two by twosuperior;
+sub three by threesuperior;
+sub four by foursuperior;
+} sups;
+
+feature subs {
+sub two by twoinferior;
+sub three by threeinferior;
+sub four by fourinferior;
+} subs;
+
+table GDEF {
+  # automatic
+  GlyphClassDef
+    [a-tamil aa-tamil i-tamil ii-tamil u-tamil uu-tamil e-tamil ee-tamil ai-tamil o-tamil oo-tamil au-tamil oMatra-tamil ooMatra-tamil auMatra-tamil ka-tamil nga-tamil ca-tamil nya-tamil tta-tamil nna-tamil ta-tamil na-tamil pa-tamil ma-tamil ya-tamil ra-tamil la-tamil va-tamil llla-tamil lla-tamil rra-tamil nnna-tamil ja-tamil sha-tamil ssa-tamil sa-tamil ha-tamil kssa-tamil seven-tamil month-tamil year-tamil credit-tamil number-tamil dottedCircle tti-tamil li-tamil si-tamil kii-tamil ngii-tamil cii-tamil nyii-tamil ttii-tamil nnii-tamil tii-tamil nii-tamil pii-tamil mii-tamil yii-tamil rii-tamil lii-tamil vii-tamil lllii-tamil llii-tamil rrii-tamil nnnii-tamil jii-tamil shii-tamil ssii-tamil sii-tamil hii-tamil kssii-tamil ku-tamil ngu-tamil cu-tamil nyu-tamil ttu-tamil nnu-tamil tu-tamil nu-tamil pu-tamil mu-tamil yu-tamil ru-tamil lu-tamil vu-tamil lllu-tamil llu-tamil rru-tamil nnnu-tamil kuu-tamil nguu-tamil cuu-tamil nyuu-tamil ttuu-tamil nnuu-tamil tuu-tamil nuu-tamil puu-tamil muu-tamil yuu-tamil ruu-tamil luu-tamil vuu-tamil llluu-tamil lluu-tamil rruu-tamil nnnuu-tamil shrii-tamil], # Base
+    , # Liga
+    [aaMatra-tamil iMatra-tamil iiMatra-tamil uMatra-tamil uuMatra-tamil aulengthmark-tamil anusvara-tamil halant-tamil iMatra-tamil.alt01 iMatra-tamil.alt02   uMatra-tamil.alt01 uMatra-tamil.alt02 uuMatra-tamil.alt01 uuMatra-tamil.alt02 udatta-deva anudatta-deva doubleSvarita-vedic u11301 u1133B nukta-grantha candrabinduhalant-deva candrabindu_0951_tamil candrabindu_1CDA_tamil anusvara-tamil.alt], # Mark
+    ;
+} GDEF;
+

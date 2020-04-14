@@ -1,0 +1,486 @@
+FontDame GSUB table
+
+
+script table begin
+cyrl	default		0
+cyrl	SRB 		5
+grek	default		0
+hebr	default		1, 4
+latn	default		2
+latn	MAH 		3, 6
+script table end
+
+
+feature table begin
+0	ccmp	3, 4, 5
+1	ccmp	1, 2
+2	ccmp	3, 4, 5
+3	ccmp	3, 4, 5
+4	dlig	0
+5	locl	7
+6	locl	6
+
+feature table end
+
+lookup	0	ligature
+
+RightToLeft	yes
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+aleflamed	alef	lamed
+
+lookup end
+
+
+lookup	1	ligature
+
+RightToLeft	yes
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+uni05B105BD	hatafsegol	meteg
+uni05B205BD	hatafpatah	meteg
+uni05B305BD	hatafqamats	meteg
+alefdagesh	alef	dagesh
+betdagesh	bet	dagesh
+gimeldagesh	gimel	dagesh
+daletdagesh	dalet	dagesh
+hedagesh	he	dagesh
+vavdagesh	vav	dagesh
+vavholam	vav	holam
+zayindagesh	zayin	dagesh
+tetdagesh	tet	dagesh
+yoddagesh	yod	dagesh
+uniFB1D	yod	hiriq
+finalkafdagesh	finalkaf	dagesh
+finalkafsheva	finalkaf	sheva
+finalkafqamats	finalkaf	qamats
+kafdagesh	kaf	dagesh
+lamedholam	lamed	holam
+lamedholamdagesh	lamed	dagesh	holam
+lameddagesh	lamed	dagesh
+memdagesh	mem	dagesh
+nundagesh	nun	dagesh
+samekhdagesh	samekh	dagesh
+finalpedagesh	finalpe	dagesh
+pedagesh	pe	dagesh
+tsadidagesh	tsadi	dagesh
+qofdagesh	qof	dagesh
+reshdagesh	resh	dagesh
+shindageshshindot	shin	shindot	dagesh
+shindageshshindot	shin	dagesh	shindot
+shinshindot	shin	shindot
+shindageshsindot	shin	sindot	dagesh
+shindageshsindot	shin	dagesh	sindot
+shinsindot	shin	sindot
+shindagesh	shin	dagesh
+tavdagesh	tav	dagesh
+
+lookup end
+
+
+lookup	2	chained
+
+RightToLeft	yes
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+inputcoverage definition begin
+alef
+bet
+kaf
+pe
+yodyod
+coverage definition end
+
+inputcoverage definition begin
+patah
+qamats
+rafe
+coverage definition end
+
+lookaheadcoverage definition begin
+uni25CC
+alef
+bet
+gimel
+dalet
+he
+vav
+zayin
+het
+tet
+yod
+finalkaf
+kaf
+lamed
+finalmem
+mem
+finalnun
+nun
+samekh
+ayin
+finalpe
+pe
+finaltsadi
+tsadi
+qof
+resh
+shin
+tav
+vavvav
+vavyod
+yodyod
+alefwide
+daletwide
+hewide
+kafwide
+lamedwide
+finalmemwide
+reshwide
+tavwide
+coverage definition end
+
+coverage	1,8
+lookup end
+
+
+lookup	3	ligature
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+uni02E502E502E6	uni02E5	uni02E5	uni02E6
+uni02E502E502E7	uni02E5	uni02E5	uni02E7
+uni02E502E502E8	uni02E5	uni02E5	uni02E8
+uni02E502E502E9	uni02E5	uni02E5	uni02E9
+uni02E502E602E5	uni02E5	uni02E6	uni02E5
+uni02E502E602E6	uni02E5	uni02E6	uni02E6
+uni02E502E602E7	uni02E5	uni02E6	uni02E7
+uni02E502E602E8	uni02E5	uni02E6	uni02E8
+uni02E502E602E9	uni02E5	uni02E6	uni02E9
+uni02E502E702E5	uni02E5	uni02E7	uni02E5
+uni02E502E702E6	uni02E5	uni02E7	uni02E6
+uni02E502E702E7	uni02E5	uni02E7	uni02E7
+uni02E502E702E8	uni02E5	uni02E7	uni02E8
+uni02E502E702E9	uni02E5	uni02E7	uni02E9
+uni02E502E802E5	uni02E5	uni02E8	uni02E5
+uni02E502E802E6	uni02E5	uni02E8	uni02E6
+uni02E502E802E7	uni02E5	uni02E8	uni02E7
+uni02E502E802E8	uni02E5	uni02E8	uni02E8
+uni02E502E802E9	uni02E5	uni02E8	uni02E9
+uni02E502E902E5	uni02E5	uni02E9	uni02E5
+uni02E502E902E6	uni02E5	uni02E9	uni02E6
+uni02E502E902E7	uni02E5	uni02E9	uni02E7
+uni02E502E902E8	uni02E5	uni02E9	uni02E8
+uni02E502E902E9	uni02E5	uni02E9	uni02E9
+uni02E502E6	uni02E5	uni02E6
+uni02E502E7	uni02E5	uni02E7
+uni02E502E8	uni02E5	uni02E8
+uni02E502E9	uni02E5	uni02E9
+uni02E602E502E5	uni02E6	uni02E5	uni02E5
+uni02E602E502E6	uni02E6	uni02E5	uni02E6
+uni02E602E502E7	uni02E6	uni02E5	uni02E7
+uni02E602E502E8	uni02E6	uni02E5	uni02E8
+uni02E602E502E9	uni02E6	uni02E5	uni02E9
+uni02E602E602E5	uni02E6	uni02E6	uni02E5
+uni02E602E602E7	uni02E6	uni02E6	uni02E7
+uni02E602E602E8	uni02E6	uni02E6	uni02E8
+uni02E602E602E9	uni02E6	uni02E6	uni02E9
+uni02E602E702E5	uni02E6	uni02E7	uni02E5
+uni02E602E702E6	uni02E6	uni02E7	uni02E6
+uni02E602E702E7	uni02E6	uni02E7	uni02E7
+uni02E602E702E8	uni02E6	uni02E7	uni02E8
+uni02E602E702E9	uni02E6	uni02E7	uni02E9
+uni02E602E802E5	uni02E6	uni02E8	uni02E5
+uni02E602E802E6	uni02E6	uni02E8	uni02E6
+uni02E602E802E7	uni02E6	uni02E8	uni02E7
+uni02E602E802E8	uni02E6	uni02E8	uni02E8
+uni02E602E802E9	uni02E6	uni02E8	uni02E9
+uni02E602E902E5	uni02E6	uni02E9	uni02E5
+uni02E602E902E6	uni02E6	uni02E9	uni02E6
+uni02E602E902E7	uni02E6	uni02E9	uni02E7
+uni02E602E902E8	uni02E6	uni02E9	uni02E8
+uni02E602E902E9	uni02E6	uni02E9	uni02E9
+uni02E602E5	uni02E6	uni02E5
+uni02E602E7	uni02E6	uni02E7
+uni02E602E8	uni02E6	uni02E8
+uni02E602E9	uni02E6	uni02E9
+uni02E702E502E5	uni02E7	uni02E5	uni02E5
+uni02E702E502E6	uni02E7	uni02E5	uni02E6
+uni02E702E502E7	uni02E7	uni02E5	uni02E7
+uni02E702E502E8	uni02E7	uni02E5	uni02E8
+uni02E702E502E9	uni02E7	uni02E5	uni02E9
+uni02E702E602E5	uni02E7	uni02E6	uni02E5
+uni02E702E602E6	uni02E7	uni02E6	uni02E6
+uni02E702E602E7	uni02E7	uni02E6	uni02E7
+uni02E702E602E8	uni02E7	uni02E6	uni02E8
+uni02E702E602E9	uni02E7	uni02E6	uni02E9
+uni02E702E702E5	uni02E7	uni02E7	uni02E5
+uni02E702E702E6	uni02E7	uni02E7	uni02E6
+uni02E702E702E8	uni02E7	uni02E7	uni02E8
+uni02E702E702E9	uni02E7	uni02E7	uni02E9
+uni02E702E802E5	uni02E7	uni02E8	uni02E5
+uni02E702E802E6	uni02E7	uni02E8	uni02E6
+uni02E702E802E7	uni02E7	uni02E8	uni02E7
+uni02E702E802E8	uni02E7	uni02E8	uni02E8
+uni02E702E802E9	uni02E7	uni02E8	uni02E9
+uni02E702E902E5	uni02E7	uni02E9	uni02E5
+uni02E702E902E6	uni02E7	uni02E9	uni02E6
+uni02E702E902E7	uni02E7	uni02E9	uni02E7
+uni02E702E902E8	uni02E7	uni02E9	uni02E8
+uni02E702E902E9	uni02E7	uni02E9	uni02E9
+uni02E702E5	uni02E7	uni02E5
+uni02E702E6	uni02E7	uni02E6
+uni02E702E8	uni02E7	uni02E8
+uni02E702E9	uni02E7	uni02E9
+uni02E802E502E5	uni02E8	uni02E5	uni02E5
+uni02E802E502E6	uni02E8	uni02E5	uni02E6
+uni02E802E502E7	uni02E8	uni02E5	uni02E7
+uni02E802E502E8	uni02E8	uni02E5	uni02E8
+uni02E802E502E9	uni02E8	uni02E5	uni02E9
+uni02E802E602E5	uni02E8	uni02E6	uni02E5
+uni02E802E602E6	uni02E8	uni02E6	uni02E6
+uni02E802E602E7	uni02E8	uni02E6	uni02E7
+uni02E802E602E8	uni02E8	uni02E6	uni02E8
+uni02E802E602E9	uni02E8	uni02E6	uni02E9
+uni02E802E702E5	uni02E8	uni02E7	uni02E5
+uni02E802E702E6	uni02E8	uni02E7	uni02E6
+uni02E802E702E7	uni02E8	uni02E7	uni02E7
+uni02E802E702E8	uni02E8	uni02E7	uni02E8
+uni02E802E702E9	uni02E8	uni02E7	uni02E9
+uni02E802E802E5	uni02E8	uni02E8	uni02E5
+uni02E802E802E6	uni02E8	uni02E8	uni02E6
+uni02E802E802E7	uni02E8	uni02E8	uni02E7
+uni02E802E802E9	uni02E8	uni02E8	uni02E9
+uni02E802E902E5	uni02E8	uni02E9	uni02E5
+uni02E802E902E6	uni02E8	uni02E9	uni02E6
+uni02E802E902E7	uni02E8	uni02E9	uni02E7
+uni02E802E902E8	uni02E8	uni02E9	uni02E8
+uni02E802E902E9	uni02E8	uni02E9	uni02E9
+uni02E802E5	uni02E8	uni02E5
+uni02E802E6	uni02E8	uni02E6
+uni02E802E7	uni02E8	uni02E7
+uni02E802E9	uni02E8	uni02E9
+uni02E902E502E5	uni02E9	uni02E5	uni02E5
+uni02E902E502E6	uni02E9	uni02E5	uni02E6
+uni02E902E502E7	uni02E9	uni02E5	uni02E7
+uni02E902E502E8	uni02E9	uni02E5	uni02E8
+uni02E902E502E9	uni02E9	uni02E5	uni02E9
+uni02E902E602E5	uni02E9	uni02E6	uni02E5
+uni02E902E602E6	uni02E9	uni02E6	uni02E6
+uni02E902E602E7	uni02E9	uni02E6	uni02E7
+uni02E902E602E8	uni02E9	uni02E6	uni02E8
+uni02E902E602E9	uni02E9	uni02E6	uni02E9
+uni02E902E702E5	uni02E9	uni02E7	uni02E5
+uni02E902E702E6	uni02E9	uni02E7	uni02E6
+uni02E902E702E7	uni02E9	uni02E7	uni02E7
+uni02E902E702E8	uni02E9	uni02E7	uni02E8
+uni02E902E702E9	uni02E9	uni02E7	uni02E9
+uni02E902E802E5	uni02E9	uni02E8	uni02E5
+uni02E902E802E6	uni02E9	uni02E8	uni02E6
+uni02E902E802E7	uni02E9	uni02E8	uni02E7
+uni02E902E802E8	uni02E9	uni02E8	uni02E8
+uni02E902E802E9	uni02E9	uni02E8	uni02E9
+uni02E902E902E5	uni02E9	uni02E9	uni02E5
+uni02E902E902E6	uni02E9	uni02E9	uni02E6
+uni02E902E902E7	uni02E9	uni02E9	uni02E7
+uni02E902E902E8	uni02E9	uni02E9	uni02E8
+uni02E902E5	uni02E9	uni02E5
+uni02E902E6	uni02E9	uni02E6
+uni02E902E7	uni02E9	uni02E7
+uni02E902E8	uni02E9	uni02E8
+
+lookup end
+
+
+lookup	4	chained
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+inputcoverage definition begin
+i
+j
+uni0268
+coverage definition end
+
+lookaheadcoverage definition begin
+hookabovecomb
+tildecomb
+gravecomb
+acutecomb
+uni0302
+uni0304
+uni0305
+uni0306
+uni0307
+uni0308
+uni030A
+uni030B
+uni030C
+uni030D
+uni030E
+uni030F
+uni0310
+uni0311
+uni0312
+uni0313
+uni0314
+uni031A
+uni033D
+uni033E
+uni033F
+uni0342
+uni0343
+uni0344
+uni0346
+uni034A
+uni034B
+uni034C
+uni0363
+uni0364
+uni0365
+uni0366
+uni0367
+uni0368
+uni0369
+uni036A
+uni036B
+uni036C
+uni036D
+uni036E
+uni036F
+uni0483
+uni0484
+uni0485
+uni0486
+uni0350
+uni0351
+uni0352
+uni0357
+uni035B
+uni1DC0
+uni1DC1
+uni1DC3
+uni1DC4
+uni1DC5
+uni1DC6
+uni1DC7
+uni1DC8
+uni1DC9
+uni1DFE
+coverage definition end
+
+coverage	1,9
+lookup end
+
+
+lookup	5	ligature
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+uni03B1030403130300	alpha	uni0304	uni0313	gravecomb
+uni03B1030403130301	alpha	uni0304	uni0313	acutecomb
+uni03B1030403140300	alpha	uni0304	uni0314	gravecomb
+uni03B1030403140301	alpha	uni0304	uni0314	acutecomb
+uni03B1030603130300	alpha	uni0306	uni0313	gravecomb
+uni03B1030603130301	alpha	uni0306	uni0313	acutecomb
+uni03B1030603140300	alpha	uni0306	uni0314	gravecomb
+uni03B1030603140301	alpha	uni0306	uni0314	acutecomb
+uni03B9030403130300	iota	uni0304	uni0313	gravecomb
+uni03B9030403130301	iota	uni0304	uni0313	acutecomb
+uni03B9030403140300	iota	uni0304	uni0314	gravecomb
+uni03B9030403140301	iota	uni0304	uni0314	acutecomb
+uni03B9030603130300	iota	uni0306	uni0313	gravecomb
+uni03B9030603130301	iota	uni0306	uni0313	acutecomb
+uni03B9030603140300	iota	uni0306	uni0314	gravecomb
+uni03B9030603140301	iota	uni0306	uni0314	acutecomb
+uni03B9030803040300	iota	uni0308	uni0304	gravecomb
+uni03B9030803040301	iota	uni0308	uni0304	acutecomb
+uni03B9030803060300	iota	uni0308	uni0306	gravecomb
+uni03B9030803060301	iota	uni0308	uni0306	acutecomb
+uni03C5030403130300	upsilon	uni0304	uni0313	gravecomb
+uni03C5030403130301	upsilon	uni0304	uni0313	acutecomb
+uni03C5030403140300	upsilon	uni0304	uni0314	gravecomb
+uni03C5030403140301	upsilon	uni0304	uni0314	acutecomb
+uni03C5030603130300	upsilon	uni0306	uni0313	gravecomb
+uni03C5030603130301	upsilon	uni0306	uni0313	acutecomb
+uni03C5030603140300	upsilon	uni0306	uni0314	gravecomb
+uni03C5030603140301	upsilon	uni0306	uni0314	acutecomb
+uni03C5030803040300	upsilon	uni0308	uni0304	gravecomb
+uni03C5030803040301	upsilon	uni0308	uni0304	acutecomb
+uni03C5030803060300	upsilon	uni0308	uni0306	gravecomb
+uni03C5030803060301	upsilon	uni0308	uni0306	acutecomb
+
+lookup end
+
+
+lookup	6	single
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+uni013B	Lcommaaccent.loclMAH
+uni013C	lcommaaccent.loclMAH
+uni0145	Ncommaaccent.loclMAH
+uni0146	ncommaaccent.loclMAH
+
+lookup end
+
+
+lookup	7	single
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+uni0431	uni0431.loclSRB
+
+lookup end
+
+
+lookup	8	ligature
+
+RightToLeft	yes
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+alefpatah	alef	patah
+alefqamats	alef	qamats
+betrafe	bet	rafe
+kafrafe	kaf	rafe
+perafe	pe	rafe
+yodyod_patah	yodyod	patah
+
+lookup end
+
+
+lookup	9	single
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+i	dotlessi
+j	uni0237
+uni0268	bari.dotless
+
+lookup end
+

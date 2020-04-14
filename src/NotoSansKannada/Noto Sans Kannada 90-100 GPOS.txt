@@ -215,6 +215,8 @@ lengthmarkknda	7
 anusvaraknda	8
 visargaknda	8
 rephknda	8
+% 2020
+uni1CF2	8
 class definition end
 
 left x advance	1	1	-78
@@ -550,7 +552,10 @@ mark	candrabinduknda	0	-278,-259
 mark	nuktaknda	0	-279,-24
 mark	uni0951	0	-278,-269
 mark	uni0952	0	-278,327
+mark	uni1CD0	0	-278,-269
+mark	uni1CD2	0	-278,-269
 mark	uni1CDA	0	-278,-269
+mark	uni1CF4	0	-278,-259
 mark	candrabindu_0951knda	0	-278,-259
 mark	candrabindu_1CDAknda	0	-278,-259
 base	uni0C80	0	278,-40
@@ -561,7 +566,7 @@ base	iiknda	0	355,-24
 base	uknda	0	611,-24
 base	uuknda	0	798,-24
 base	rvocalicknda	0	596,-24
-base	lvocalicknda	0	422,-24
+base	lvocalicknda	0	353,-24
 base	eknda	0	394,-24
 base	eeknda	0	394,-24
 base	aiknda	0	403,-24
@@ -605,7 +610,7 @@ base	saknda	0	354,-24
 base	haknda	0	400,-24
 base	faknda	0	433,-24
 base	rrvocalicknda	0	785,-24
-base	llvocalicknda	0	642,-24
+base	llvocalicknda	0	353,-24
 base	zeroknda	0	344,-24
 base	oneknda	0	344,-24
 base	twoknda	0	344,-24
@@ -861,20 +866,36 @@ lvocalicvowelsignknda	2
 llvocalicvowelsignknda	2
 candrabinduknda	3
 uni0951	3
-uni0952	3
 uni1CDA	3
 candrabindu_0951knda	3
 candrabindu_1CDAknda	3
-
+uni0952	4
 class definition end
 
 lookaheadclass definition begin
-# 1	1
+karasubscriptknda	1
+garasubscriptknda	1
+ttarasubscriptknda	1
+ddarasubscriptknda	1
+tarasubscriptknda	1
+darasubscriptknda	1
+parasubscriptknda	1
+bharasubscriptknda	1
+tayasubscriptaltknda	2
+tasubscriptrvocalicaltknda	2
+tasubscriptlengthmarkaltknda	2
+rasubscriptlengthmarkaltknda	2
+tasubscriptaltknda	2
+rasubscriptaltknda	2
 class definition end
 
 class-chain	1	1		 1,lowernukta-knda
 class-chain	2	2		 1,vowel2right-knda	1,vowelSpace-knda
 class-chain	3	3		 1,lowernukta-knda
+class-chain	3	4		 1,lowernukta-knda
+class-chain		4	0,2	 1,lowermark-knda
+class-chain		4	1	 1,lowermark-knda
+class-chain		4	2	 1,lowermark-knda
 
 lookup end
 
@@ -912,4 +933,12 @@ x advance	lvocalicvowelsignknda	170
 x advance	llvocalicvowelsignknda	170
 
 lookup end
+
+
+lookup	lowermark-knda	single
+
+y placement	uni0952	-101
+
+lookup end
+
 
