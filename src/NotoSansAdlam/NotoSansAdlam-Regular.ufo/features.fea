@@ -12,7 +12,7 @@
 
 # Prefix: Languagesystems
 languagesystem DFLT dflt;
-
+languagesystem adlm dflt;
 
 feature aalt {
 # automatic
@@ -24,6 +24,7 @@ feature case;
 } aalt;
 
 feature ccmp {
+script adlm;
 lookup ccmp_Other_1 {
 	@Markscomb = [aliflengthencomb-adlam gemination-adlam vowellengthencomb-adlam];
 	@MarkscombCase = [aliflengthencomb-adlam.case gemination-adlam.case vowellengthencomb-adlam.case];
@@ -38,6 +39,7 @@ lookup ccmp_Other_1 {
 } ccmp;
 
 feature init {
+script adlm;
 lookupflag RightToLeft IgnoreMarks;
 sub Alif-adlam by Alif-adlam.init;
 sub Daali-adlam by Daali-adlam.init;
@@ -112,6 +114,7 @@ sub apostrophe-adlam by apostrophe-adlam.init;
 } init;
 
 feature medi {
+script adlm;
 lookupflag RightToLeft IgnoreMarks;
 sub Alif-adlam by Alif-adlam.medi;
 sub Daali-adlam by Daali-adlam.medi;
@@ -186,6 +189,7 @@ sub apostrophe-adlam by apostrophe-adlam.medi;
 } medi;
 
 feature fina {
+script adlm;
 lookupflag RightToLeft IgnoreMarks;
 sub Alif-adlam by Alif-adlam.fina;
 sub Daali-adlam by Daali-adlam.fina;
@@ -260,6 +264,7 @@ sub apostrophe-adlam by apostrophe-adlam.fina;
 } fina;
 
 feature case {
+script adlm;
 sub @Lowercase by @Uppercase;
 sub aliflengthencomb-adlam by aliflengthencomb-adlam.case;
 sub vowellengthencomb-adlam by vowellengthencomb-adlam.case;
