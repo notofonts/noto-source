@@ -2,39 +2,37 @@ FontDame GSUB table
 
 
 script table begin
-dev2	default		0, 1, 3, 4, 5, 6, 10, 12, 15, 16, 18, 19, 20
-dev2	MAR		0, 1, 3, 4, 6, 10, 12, 13, 15, 16, 18, 19, 20
-dev2	NEP		0, 1, 3, 4, 7, 11, 12, 14, 15, 17, 18, 19, 20
-deva	default		0, 1, 2, 4, 5, 8, 12, 15, 16, 18, 20, 21
-deva	MAR		0, 1, 2, 4, 8, 12, 13, 15, 16, 18, 20, 21
-deva	NEP		0, 1, 2, 4, 9, 12, 14, 15, 17, 18, 20, 21
-latn	default		5
+dev2	default		0, 1, 3, 4, 5, 9, 11, 14, 15, 17, 18, 19
+dev2	MAR 		0, 1, 3, 4, 5, 9, 11, 12, 14, 15, 17, 18, 19
+dev2	NEP 		0, 1, 3, 4, 6, 10, 11, 13, 14, 16, 17, 18, 19
+deva	default		0, 1, 2, 4, 7, 11, 14, 15, 17, 19, 20
+deva	MAR 		0, 1, 2, 4, 7, 11, 12, 14, 15, 17, 19, 20
+deva	NEP 		0, 1, 2, 4, 8, 11, 13, 14, 16, 17, 19, 20
 script table end
 
 
 feature table begin
-0	abvs	24, 26, 27, 28, 30, 78
+0	abvs	24, 26, 29, 30, 31, 33, 81
 1	akhn	3
 2	blwf	6
 3	blwf	17
-4	blws	86, 88, 89, 94, 95, 100, 101, 105
-5	calt	117
-6	cjct	19
-7	cjct	20
-8	half	9
-9	half	10
-10	half	11, 12
-11	half	13, 14
-12	haln	116
-13	locl	0
-14	locl	1
-15	nukt	2
-16	pres	21, 23
-17	pres	22, 23
-18	psts	109, 113, 115
-19	rkrf	5, 7
-20	rphf	4
-21	vatu	15, 16, 17
+4	blws	89, 91, 92, 97, 98, 103, 104, 108
+5	cjct	19
+6	cjct	20
+7	half	9
+8	half	10
+9	half	11, 12
+10	half	13, 14
+11	haln	119
+12	locl	0
+13	locl	1
+14	nukt	2
+15	pres	21, 23
+16	pres	22, 23
+17	psts	112, 116, 118
+18	rkrf	5, 7
+19	rphf	4
+20	vatu	15, 16, 17
 
 feature table end
 
@@ -1033,6 +1031,10 @@ dayadeva	dadeva	viramadeva	yadeva
 davadeva	dadeva	viramadeva	vadeva
 dadhayadeva	dadeva	viramadeva	dhaprehalfdeva	yadeva
 davayadeva	dadeva	viramadeva	vaprehalfdeva	yadeva
+rayadeva	radeva	uni200D	viramadeva	yadeva
+marwariddaddhadeva	marwariddadeva	viramadeva	ddhadeva
+marwariddayadeva	marwariddadeva	viramadeva	yadeva
+marwariddaddadeva	marwariddadeva	viramadeva	marwariddadeva
 ddarayadeva	ddaradeva	viramadeva	yadeva
 
 lookup end
@@ -1047,6 +1049,7 @@ IgnoreMarks	no
 
 dayadeva	dadeva	viramadeva	yadeva
 davadeva	dadeva	viramadeva	vadeva
+rayadeva	radeva	uni200D	viramadeva	yadeva
 
 lookup end
 
@@ -1058,7 +1061,6 @@ IgnoreBaseGlyphs	no
 IgnoreLigatures	no
 IgnoreMarks	no
 
-katadeva	kaprehalfdeva	tadeva
 kashadeva	kaprehalfdeva	shadeva
 khashadeva	khaprehalfdeva	shadeva
 ngagadeva	ngaprehalfdeva	gadeva
@@ -1236,6 +1238,7 @@ eshortnuktadeva	1
 ocandranuktadeva	1
 oshortnuktadeva	1
 acandranuktadeva	1
+aydeva	1
 aideva	2
 odeva	2
 audeva	2
@@ -1298,11 +1301,55 @@ oshortnuktadeva	aanuktadeva	eshortvowelsigndeva
 onuktadeva	aanuktadeva	evowelsigndeva
 aunuktadeva	aanuktadeva	aivowelsigndeva
 acandranuktadeva	anuktadeva	ecandravowelsigndeva
+aydeva	edeva	ayvowelsigndeva
 
 lookup end
 
 
-lookup	26	ligature
+lookup	26	context
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+glyph	radeva, rvocalicvowelsigndeva, rephdeva	2, 27	3, 27
+glyph	radeva, rrvocalicvowelsigndeva, rephdeva	2, 28	3, 28
+glyph	radeva, rvocalicvowelsigndeva	1, 27	2, 27
+glyph	radeva, rrvocalicvowelsigndeva	1, 28	2, 28
+
+lookup end
+
+
+lookup	27	single
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+radeva	rvocalicdeva
+rvocalicvowelsigndeva	rephdeva
+rephdeva	rvocalicvowelsigndeva
+
+lookup end
+
+
+lookup	28	single
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+radeva	rrvocalicdeva
+rrvocalicvowelsigndeva	rephdeva
+rephdeva	rrvocalicvowelsigndeva
+
+lookup end
+
+
+lookup	29	ligature
 
 RightToLeft	no
 IgnoreBaseGlyphs	no
@@ -1327,7 +1374,7 @@ vi_radeva	uniA8F0	uniA8EF
 lookup end
 
 
-lookup	27	ligature
+lookup	30	ligature
 
 RightToLeft	no
 IgnoreBaseGlyphs	no
@@ -1417,11 +1464,20 @@ oshortnuktaanusvaradeva	oshortnuktadeva	anusvaradeva
 onuktaanusvaradeva	onuktadeva	anusvaradeva
 aunuktaanusvaradeva	aunuktadeva	anusvaradeva
 acandranuktaanusvaradeva	acandranuktadeva	anusvaradeva
+ayvowelsignrephcandrabindudeva	rephdeva	ayvowelsigndeva	candrabindudeva
+ayvowelsignrephanusvaradeva	rephdeva	ayvowelsigndeva	anusvaradeva
+ayvowelsignrephdeva	rephdeva	ayvowelsigndeva
+ayanusvaradeva	aydeva	anusvaradeva
+ayvowelsigncandrabindudeva	ayvowelsigndeva	candrabindudeva
+ayanusvaravowelsigndeva	ayvowelsigndeva	anusvaradeva
+ayvowelsignrephdeva	ayvowelsigndeva	rephdeva
+ayvowelsignrephanusvaradeva	ayvowelsigndeva	rephanusvaradeva
+ayvowelsignrephcandrabindudeva	ayvowelsigndeva	rephcandrabindudeva
 
 lookup end
 
 
-lookup	28	context
+lookup	31	context
 
 RightToLeft	no
 IgnoreBaseGlyphs	no
@@ -1433,12 +1489,12 @@ ivowelsigndeva	1
 uni25CC	2
 class definition end
 
-class	1, 0	1, 29
+class	1, 0	1, 32
 
 lookup end
 
 
-lookup	29	single
+lookup	32	single
 
 RightToLeft	no
 IgnoreBaseGlyphs	no
@@ -1450,7 +1506,7 @@ ivowelsigndeva	ivowelsign00deva
 lookup end
 
 
-lookup	30	context
+lookup	33	context
 
 RightToLeft	no
 IgnoreBaseGlyphs	no
@@ -1511,6 +1567,10 @@ saparadeva	2
 saphadeva	2
 hamadeva	2
 hayadeva	2
+rayadeva	2
+marwariddaddadeva	2
+marwariddaddhadeva	2
+marwariddayadeva	2
 kadeva	3
 gadeva	3
 ghadeva	3
@@ -1788,83 +1848,83 @@ januktaprehalfdeva	38
 uni200D	39
 class definition end
 
-class	1, 2	1, 66
-class	1, 3	1, 66
-class	1, 4, 3	1, 31
-class	1, 5, 3	1, 32
-class	1, 6, 3	1, 33
-class	1, 7, 3	1, 34
-class	1, 8, 3	1, 35
-class	1, 9, 3	1, 36
-class	1, 10, 3	1, 37
-class	1, 11, 3	1, 38
-class	1, 12, 3	1, 39
-class	1, 13, 3	1, 40
-class	1, 14, 3	1, 41
-class	1, 15, 3	1, 42
-class	1, 16, 3	1, 43
-class	1, 17, 3	1, 44
-class	1, 18, 3	1, 45
-class	1, 19, 3	1, 46
-class	1, 20, 3	1, 47
-class	1, 21, 3	1, 48
-class	1, 22, 3	1, 49
-class	1, 23, 3	1, 50
-class	1, 24, 3	1, 51
-class	1, 25, 3	1, 52
-class	1, 26, 3	1, 53
-class	1, 27, 3	1, 54
-class	1, 28, 3	1, 55
-class	1, 29, 3	1, 56
-class	1, 30, 3	1, 57
-class	1, 31, 3	1, 58
-class	1, 32, 3	1, 59
-class	1, 33, 3	1, 60
-class	1, 34, 3	1, 61
-class	1, 35, 3	1, 62
-class	1, 36, 3	1, 63
-class	1, 37, 3	1, 64
-class	1, 38, 3	1, 65
-class	1, 4, 39, 3	1, 31
-class	1, 5, 39, 3	1, 32
-class	1, 6, 39, 3	1, 33
-class	1, 7, 39, 3	1, 34
-class	1, 8, 39, 3	1, 35
-class	1, 9, 39, 3	1, 36
-class	1, 10, 39, 3	1, 37
-class	1, 11, 39, 3	1, 38
-class	1, 12, 39, 3	1, 39
-class	1, 13, 39, 3	1, 40
-class	1, 14, 39, 3	1, 41
-class	1, 15, 39, 3	1, 42
-class	1, 16, 39, 3	1, 43
-class	1, 17, 39, 3	1, 44
-class	1, 18, 39, 3	1, 45
-class	1, 19, 39, 3	1, 46
-class	1, 20, 39, 3	1, 47
-class	1, 21, 39, 3	1, 48
-class	1, 22, 39, 3	1, 49
-class	1, 23, 39, 3	1, 50
-class	1, 24, 39, 3	1, 51
-class	1, 25, 39, 3	1, 52
-class	1, 26, 39, 3	1, 53
-class	1, 27, 39, 3	1, 54
-class	1, 28, 39, 3	1, 55
-class	1, 29, 39, 3	1, 56
-class	1, 30, 39, 3	1, 57
-class	1, 31, 39, 3	1, 58
-class	1, 32, 39, 3	1, 59
-class	1, 33, 39, 3	1, 60
-class	1, 34, 39, 3	1, 61
-class	1, 35, 39, 3	1, 62
-class	1, 36, 39, 3	1, 63
-class	1, 37, 39, 3	1, 64
-class	1, 38, 39, 3	1, 65
+class	1, 2	1, 69
+class	1, 3	1, 69
+class	1, 4, 3	1, 34
+class	1, 5, 3	1, 35
+class	1, 6, 3	1, 36
+class	1, 7, 3	1, 37
+class	1, 8, 3	1, 38
+class	1, 9, 3	1, 39
+class	1, 10, 3	1, 40
+class	1, 11, 3	1, 41
+class	1, 12, 3	1, 42
+class	1, 13, 3	1, 43
+class	1, 14, 3	1, 44
+class	1, 15, 3	1, 45
+class	1, 16, 3	1, 46
+class	1, 17, 3	1, 47
+class	1, 18, 3	1, 48
+class	1, 19, 3	1, 49
+class	1, 20, 3	1, 50
+class	1, 21, 3	1, 51
+class	1, 22, 3	1, 52
+class	1, 23, 3	1, 53
+class	1, 24, 3	1, 54
+class	1, 25, 3	1, 55
+class	1, 26, 3	1, 56
+class	1, 27, 3	1, 57
+class	1, 28, 3	1, 58
+class	1, 29, 3	1, 59
+class	1, 30, 3	1, 60
+class	1, 31, 3	1, 61
+class	1, 32, 3	1, 62
+class	1, 33, 3	1, 63
+class	1, 34, 3	1, 64
+class	1, 35, 3	1, 65
+class	1, 36, 3	1, 66
+class	1, 37, 3	1, 67
+class	1, 38, 3	1, 68
+class	1, 4, 39, 3	1, 34
+class	1, 5, 39, 3	1, 35
+class	1, 6, 39, 3	1, 36
+class	1, 7, 39, 3	1, 37
+class	1, 8, 39, 3	1, 38
+class	1, 9, 39, 3	1, 39
+class	1, 10, 39, 3	1, 40
+class	1, 11, 39, 3	1, 41
+class	1, 12, 39, 3	1, 42
+class	1, 13, 39, 3	1, 43
+class	1, 14, 39, 3	1, 44
+class	1, 15, 39, 3	1, 45
+class	1, 16, 39, 3	1, 46
+class	1, 17, 39, 3	1, 47
+class	1, 18, 39, 3	1, 48
+class	1, 19, 39, 3	1, 49
+class	1, 20, 39, 3	1, 50
+class	1, 21, 39, 3	1, 51
+class	1, 22, 39, 3	1, 52
+class	1, 23, 39, 3	1, 53
+class	1, 24, 39, 3	1, 54
+class	1, 25, 39, 3	1, 55
+class	1, 26, 39, 3	1, 56
+class	1, 27, 39, 3	1, 57
+class	1, 28, 39, 3	1, 58
+class	1, 29, 39, 3	1, 59
+class	1, 30, 39, 3	1, 60
+class	1, 31, 39, 3	1, 61
+class	1, 32, 39, 3	1, 62
+class	1, 33, 39, 3	1, 63
+class	1, 34, 39, 3	1, 64
+class	1, 35, 39, 3	1, 65
+class	1, 36, 39, 3	1, 66
+class	1, 37, 39, 3	1, 67
+class	1, 38, 39, 3	1, 68
 
 lookup end
 
 
-lookup	31	context
+lookup	34	context
 
 RightToLeft	no
 IgnoreBaseGlyphs	no
@@ -2039,23 +2099,23 @@ jhanuktaradevaNEP	8
 uni200D	9
 class definition end
 
-class	1, 2, 3	1, 72
-class	1, 2, 4	1, 73
-class	1, 2, 5	1, 74
-class	1, 2, 6	1, 75
-class	1, 2, 7	1, 76
-class	1, 2, 8	1, 77
-class	1, 2, 9, 3	1, 72
-class	1, 2, 9, 4	1, 73
-class	1, 2, 9, 5	1, 74
-class	1, 2, 9, 6	1, 75
-class	1, 2, 9, 7	1, 76
-class	1, 2, 9, 8	1, 77
+class	1, 2, 3	1, 75
+class	1, 2, 4	1, 76
+class	1, 2, 5	1, 77
+class	1, 2, 6	1, 78
+class	1, 2, 7	1, 79
+class	1, 2, 8	1, 80
+class	1, 2, 9, 3	1, 75
+class	1, 2, 9, 4	1, 76
+class	1, 2, 9, 5	1, 77
+class	1, 2, 9, 6	1, 78
+class	1, 2, 9, 7	1, 79
+class	1, 2, 9, 8	1, 80
 
 lookup end
 
 
-lookup	32	context
+lookup	35	context
 
 RightToLeft	no
 IgnoreBaseGlyphs	no
@@ -2215,23 +2275,23 @@ shanuktadevaMAR	8
 uni200D	9
 class definition end
 
-class	1, 2, 3	1, 72
-class	1, 2, 4	1, 73
-class	1, 2, 5	1, 74
-class	1, 2, 6	1, 75
-class	1, 2, 7	1, 76
-class	1, 2, 8	1, 77
-class	1, 2, 9, 3	1, 72
-class	1, 2, 9, 4	1, 73
-class	1, 2, 9, 5	1, 74
-class	1, 2, 9, 6	1, 75
-class	1, 2, 9, 7	1, 76
-class	1, 2, 9, 8	1, 77
+class	1, 2, 3	1, 75
+class	1, 2, 4	1, 76
+class	1, 2, 5	1, 77
+class	1, 2, 6	1, 78
+class	1, 2, 7	1, 79
+class	1, 2, 8	1, 80
+class	1, 2, 9, 3	1, 75
+class	1, 2, 9, 4	1, 76
+class	1, 2, 9, 5	1, 77
+class	1, 2, 9, 6	1, 78
+class	1, 2, 9, 7	1, 79
+class	1, 2, 9, 8	1, 80
 
 lookup end
 
 
-lookup	33	context
+lookup	36	context
 
 RightToLeft	no
 IgnoreBaseGlyphs	no
@@ -2375,21 +2435,21 @@ lanuktaradevaMAR	7
 uni200D	8
 class definition end
 
-class	1, 2, 3	1, 73
-class	1, 2, 4	1, 74
-class	1, 2, 5	1, 75
-class	1, 2, 6	1, 76
-class	1, 2, 7	1, 77
-class	1, 2, 8, 3	1, 73
-class	1, 2, 8, 4	1, 74
-class	1, 2, 8, 5	1, 75
-class	1, 2, 8, 6	1, 76
-class	1, 2, 8, 7	1, 77
+class	1, 2, 3	1, 76
+class	1, 2, 4	1, 77
+class	1, 2, 5	1, 78
+class	1, 2, 6	1, 79
+class	1, 2, 7	1, 80
+class	1, 2, 8, 3	1, 76
+class	1, 2, 8, 4	1, 77
+class	1, 2, 8, 5	1, 78
+class	1, 2, 8, 6	1, 79
+class	1, 2, 8, 7	1, 80
 
 lookup end
 
 
-lookup	34	context
+lookup	37	context
 
 RightToLeft	no
 IgnoreBaseGlyphs	no
@@ -2535,21 +2595,21 @@ lanuktaradevaMAR	7
 uni200D	8
 class definition end
 
-class	1, 2, 3	1, 73
-class	1, 2, 4	1, 74
-class	1, 2, 5	1, 75
-class	1, 2, 6	1, 76
-class	1, 2, 7	1, 77
-class	1, 2, 8, 3	1, 73
-class	1, 2, 8, 4	1, 74
-class	1, 2, 8, 5	1, 75
-class	1, 2, 8, 6	1, 76
-class	1, 2, 8, 7	1, 77
+class	1, 2, 3	1, 76
+class	1, 2, 4	1, 77
+class	1, 2, 5	1, 78
+class	1, 2, 6	1, 79
+class	1, 2, 7	1, 80
+class	1, 2, 8, 3	1, 76
+class	1, 2, 8, 4	1, 77
+class	1, 2, 8, 5	1, 78
+class	1, 2, 8, 6	1, 79
+class	1, 2, 8, 7	1, 80
 
 lookup end
 
 
-lookup	35	context
+lookup	38	context
 
 RightToLeft	no
 IgnoreBaseGlyphs	no
@@ -2692,21 +2752,21 @@ lanuktaradevaMAR	7
 uni200D	8
 class definition end
 
-class	1, 2, 3	1, 73
-class	1, 2, 4	1, 74
-class	1, 2, 5	1, 75
-class	1, 2, 6	1, 76
-class	1, 2, 7	1, 77
-class	1, 2, 8, 3	1, 73
-class	1, 2, 8, 4	1, 74
-class	1, 2, 8, 5	1, 75
-class	1, 2, 8, 6	1, 76
-class	1, 2, 8, 7	1, 77
+class	1, 2, 3	1, 76
+class	1, 2, 4	1, 77
+class	1, 2, 5	1, 78
+class	1, 2, 6	1, 79
+class	1, 2, 7	1, 80
+class	1, 2, 8, 3	1, 76
+class	1, 2, 8, 4	1, 77
+class	1, 2, 8, 5	1, 78
+class	1, 2, 8, 6	1, 79
+class	1, 2, 8, 7	1, 80
 
 lookup end
 
 
-lookup	36	context
+lookup	39	context
 
 RightToLeft	no
 IgnoreBaseGlyphs	no
@@ -2849,21 +2909,21 @@ lanuktaradevaMAR	7
 uni200D	8
 class definition end
 
-class	1, 2, 3	1, 73
-class	1, 2, 4	1, 74
-class	1, 2, 5	1, 75
-class	1, 2, 6	1, 76
-class	1, 2, 7	1, 77
-class	1, 2, 8, 3	1, 73
-class	1, 2, 8, 4	1, 74
-class	1, 2, 8, 5	1, 75
-class	1, 2, 8, 6	1, 76
-class	1, 2, 8, 7	1, 77
+class	1, 2, 3	1, 76
+class	1, 2, 4	1, 77
+class	1, 2, 5	1, 78
+class	1, 2, 6	1, 79
+class	1, 2, 7	1, 80
+class	1, 2, 8, 3	1, 76
+class	1, 2, 8, 4	1, 77
+class	1, 2, 8, 5	1, 78
+class	1, 2, 8, 6	1, 79
+class	1, 2, 8, 7	1, 80
 
 lookup end
 
 
-lookup	37	context
+lookup	40	context
 
 RightToLeft	no
 IgnoreBaseGlyphs	no
@@ -3005,21 +3065,21 @@ lanuktaradevaMAR	7
 uni200D	8
 class definition end
 
-class	1, 2, 3	1, 73
-class	1, 2, 4	1, 74
-class	1, 2, 5	1, 75
-class	1, 2, 6	1, 76
-class	1, 2, 7	1, 77
-class	1, 2, 8, 3	1, 73
-class	1, 2, 8, 4	1, 74
-class	1, 2, 8, 5	1, 75
-class	1, 2, 8, 6	1, 76
-class	1, 2, 8, 7	1, 77
+class	1, 2, 3	1, 76
+class	1, 2, 4	1, 77
+class	1, 2, 5	1, 78
+class	1, 2, 6	1, 79
+class	1, 2, 7	1, 80
+class	1, 2, 8, 3	1, 76
+class	1, 2, 8, 4	1, 77
+class	1, 2, 8, 5	1, 78
+class	1, 2, 8, 6	1, 79
+class	1, 2, 8, 7	1, 80
 
 lookup end
 
 
-lookup	38	context
+lookup	41	context
 
 RightToLeft	no
 IgnoreBaseGlyphs	no
@@ -3159,21 +3219,21 @@ lanuktaradevaMAR	7
 uni200D	8
 class definition end
 
-class	1, 2, 3	1, 73
-class	1, 2, 4	1, 74
-class	1, 2, 5	1, 75
-class	1, 2, 6	1, 76
-class	1, 2, 7	1, 77
-class	1, 2, 8, 3	1, 73
-class	1, 2, 8, 4	1, 74
-class	1, 2, 8, 5	1, 75
-class	1, 2, 8, 6	1, 76
-class	1, 2, 8, 7	1, 77
+class	1, 2, 3	1, 76
+class	1, 2, 4	1, 77
+class	1, 2, 5	1, 78
+class	1, 2, 6	1, 79
+class	1, 2, 7	1, 80
+class	1, 2, 8, 3	1, 76
+class	1, 2, 8, 4	1, 77
+class	1, 2, 8, 5	1, 78
+class	1, 2, 8, 6	1, 79
+class	1, 2, 8, 7	1, 80
 
 lookup end
 
 
-lookup	39	context
+lookup	42	context
 
 RightToLeft	no
 IgnoreBaseGlyphs	no
@@ -3306,21 +3366,21 @@ ladevaMAR	7
 uni200D	8
 class definition end
 
-class	1, 2, 3	1, 73
-class	1, 2, 4	1, 74
-class	1, 2, 5	1, 75
-class	1, 2, 6	1, 76
-class	1, 2, 7	1, 77
-class	1, 2, 8, 3	1, 73
-class	1, 2, 8, 4	1, 74
-class	1, 2, 8, 5	1, 75
-class	1, 2, 8, 6	1, 76
-class	1, 2, 8, 7	1, 77
+class	1, 2, 3	1, 76
+class	1, 2, 4	1, 77
+class	1, 2, 5	1, 78
+class	1, 2, 6	1, 79
+class	1, 2, 7	1, 80
+class	1, 2, 8, 3	1, 76
+class	1, 2, 8, 4	1, 77
+class	1, 2, 8, 5	1, 78
+class	1, 2, 8, 6	1, 79
+class	1, 2, 8, 7	1, 80
 
 lookup end
 
 
-lookup	40	context
+lookup	43	context
 
 RightToLeft	no
 IgnoreBaseGlyphs	no
@@ -3450,21 +3510,21 @@ hanadeva	7
 uni200D	8
 class definition end
 
-class	1, 2, 3	1, 73
-class	1, 2, 4	1, 74
-class	1, 2, 5	1, 75
-class	1, 2, 6	1, 76
-class	1, 2, 7	1, 77
-class	1, 2, 8, 3	1, 73
-class	1, 2, 8, 4	1, 74
-class	1, 2, 8, 5	1, 75
-class	1, 2, 8, 6	1, 76
-class	1, 2, 8, 7	1, 77
+class	1, 2, 3	1, 76
+class	1, 2, 4	1, 77
+class	1, 2, 5	1, 78
+class	1, 2, 6	1, 79
+class	1, 2, 7	1, 80
+class	1, 2, 8, 3	1, 76
+class	1, 2, 8, 4	1, 77
+class	1, 2, 8, 5	1, 78
+class	1, 2, 8, 6	1, 79
+class	1, 2, 8, 7	1, 80
 
 lookup end
 
 
-lookup	41	context
+lookup	44	context
 
 RightToLeft	no
 IgnoreBaseGlyphs	no
@@ -3590,19 +3650,19 @@ hanadeva	6
 uni200D	7
 class definition end
 
-class	1, 2, 3	1, 74
-class	1, 2, 4	1, 75
-class	1, 2, 5	1, 76
-class	1, 2, 6	1, 77
-class	1, 2, 7, 3	1, 74
-class	1, 2, 7, 4	1, 75
-class	1, 2, 7, 5	1, 76
-class	1, 2, 7, 6	1, 77
+class	1, 2, 3	1, 77
+class	1, 2, 4	1, 78
+class	1, 2, 5	1, 79
+class	1, 2, 6	1, 80
+class	1, 2, 7, 3	1, 77
+class	1, 2, 7, 4	1, 78
+class	1, 2, 7, 5	1, 79
+class	1, 2, 7, 6	1, 80
 
 lookup end
 
 
-lookup	42	context
+lookup	45	context
 
 RightToLeft	no
 IgnoreBaseGlyphs	no
@@ -3721,19 +3781,19 @@ hanadeva	6
 uni200D	7
 class definition end
 
-class	1, 2, 3	1, 74
-class	1, 2, 4	1, 75
-class	1, 2, 5	1, 76
-class	1, 2, 6	1, 77
-class	1, 2, 7, 3	1, 74
-class	1, 2, 7, 4	1, 75
-class	1, 2, 7, 5	1, 76
-class	1, 2, 7, 6	1, 77
+class	1, 2, 3	1, 77
+class	1, 2, 4	1, 78
+class	1, 2, 5	1, 79
+class	1, 2, 6	1, 80
+class	1, 2, 7, 3	1, 77
+class	1, 2, 7, 4	1, 78
+class	1, 2, 7, 5	1, 79
+class	1, 2, 7, 6	1, 80
 
 lookup end
 
 
-lookup	43	context
+lookup	46	context
 
 RightToLeft	no
 IgnoreBaseGlyphs	no
@@ -3852,19 +3912,19 @@ hanadeva	6
 uni200D	7
 class definition end
 
-class	1, 2, 3	1, 74
-class	1, 2, 4	1, 75
-class	1, 2, 5	1, 76
-class	1, 2, 6	1, 77
-class	1, 2, 7, 3	1, 74
-class	1, 2, 7, 4	1, 75
-class	1, 2, 7, 5	1, 76
-class	1, 2, 7, 6	1, 77
+class	1, 2, 3	1, 77
+class	1, 2, 4	1, 78
+class	1, 2, 5	1, 79
+class	1, 2, 6	1, 80
+class	1, 2, 7, 3	1, 77
+class	1, 2, 7, 4	1, 78
+class	1, 2, 7, 5	1, 79
+class	1, 2, 7, 6	1, 80
 
 lookup end
 
 
-lookup	44	context
+lookup	47	context
 
 RightToLeft	no
 IgnoreBaseGlyphs	no
@@ -3982,19 +4042,19 @@ ssattharadeva	6
 uni200D	7
 class definition end
 
-class	1, 2, 3	1, 74
-class	1, 2, 4	1, 75
-class	1, 2, 5	1, 76
-class	1, 2, 6	1, 77
-class	1, 2, 7, 3	1, 74
-class	1, 2, 7, 4	1, 75
-class	1, 2, 7, 5	1, 76
-class	1, 2, 7, 6	1, 77
+class	1, 2, 3	1, 77
+class	1, 2, 4	1, 78
+class	1, 2, 5	1, 79
+class	1, 2, 6	1, 80
+class	1, 2, 7, 3	1, 77
+class	1, 2, 7, 4	1, 78
+class	1, 2, 7, 5	1, 79
+class	1, 2, 7, 6	1, 80
 
 lookup end
 
 
-lookup	45	context
+lookup	48	context
 
 RightToLeft	no
 IgnoreBaseGlyphs	no
@@ -4114,19 +4174,19 @@ ssattharadeva	6
 uni200D	7
 class definition end
 
-class	1, 2, 3	1, 74
-class	1, 2, 4	1, 75
-class	1, 2, 5	1, 76
-class	1, 2, 6	1, 77
-class	1, 2, 7, 3	1, 74
-class	1, 2, 7, 4	1, 75
-class	1, 2, 7, 5	1, 76
-class	1, 2, 7, 6	1, 77
+class	1, 2, 3	1, 77
+class	1, 2, 4	1, 78
+class	1, 2, 5	1, 79
+class	1, 2, 6	1, 80
+class	1, 2, 7, 3	1, 77
+class	1, 2, 7, 4	1, 78
+class	1, 2, 7, 5	1, 79
+class	1, 2, 7, 6	1, 80
 
 lookup end
 
 
-lookup	46	context
+lookup	49	context
 
 RightToLeft	no
 IgnoreBaseGlyphs	no
@@ -4247,19 +4307,19 @@ ladevaMAR	6
 uni200D	7
 class definition end
 
-class	1, 2, 3	1, 74
-class	1, 2, 4	1, 75
-class	1, 2, 5	1, 76
-class	1, 2, 6	1, 77
-class	1, 2, 7, 3	1, 74
-class	1, 2, 7, 4	1, 75
-class	1, 2, 7, 5	1, 76
-class	1, 2, 7, 6	1, 77
+class	1, 2, 3	1, 77
+class	1, 2, 4	1, 78
+class	1, 2, 5	1, 79
+class	1, 2, 6	1, 80
+class	1, 2, 7, 3	1, 77
+class	1, 2, 7, 4	1, 78
+class	1, 2, 7, 5	1, 79
+class	1, 2, 7, 6	1, 80
 
 lookup end
 
 
-lookup	47	context
+lookup	50	context
 
 RightToLeft	no
 IgnoreBaseGlyphs	no
@@ -4375,19 +4435,19 @@ ssattharadeva	6
 uni200D	7
 class definition end
 
-class	1, 2, 3	1, 74
-class	1, 2, 4	1, 75
-class	1, 2, 5	1, 76
-class	1, 2, 6	1, 77
-class	1, 2, 7, 3	1, 74
-class	1, 2, 7, 4	1, 75
-class	1, 2, 7, 5	1, 76
-class	1, 2, 7, 6	1, 77
+class	1, 2, 3	1, 77
+class	1, 2, 4	1, 78
+class	1, 2, 5	1, 79
+class	1, 2, 6	1, 80
+class	1, 2, 7, 3	1, 77
+class	1, 2, 7, 4	1, 78
+class	1, 2, 7, 5	1, 79
+class	1, 2, 7, 6	1, 80
 
 lookup end
 
 
-lookup	48	context
+lookup	51	context
 
 RightToLeft	no
 IgnoreBaseGlyphs	no
@@ -4501,19 +4561,19 @@ ssattharadeva	6
 uni200D	7
 class definition end
 
-class	1, 2, 3	1, 74
-class	1, 2, 4	1, 75
-class	1, 2, 5	1, 76
-class	1, 2, 6	1, 77
-class	1, 2, 7, 3	1, 74
-class	1, 2, 7, 4	1, 75
-class	1, 2, 7, 5	1, 76
-class	1, 2, 7, 6	1, 77
+class	1, 2, 3	1, 77
+class	1, 2, 4	1, 78
+class	1, 2, 5	1, 79
+class	1, 2, 6	1, 80
+class	1, 2, 7, 3	1, 77
+class	1, 2, 7, 4	1, 78
+class	1, 2, 7, 5	1, 79
+class	1, 2, 7, 6	1, 80
 
 lookup end
 
 
-lookup	49	context
+lookup	52	context
 
 RightToLeft	no
 IgnoreBaseGlyphs	no
@@ -4631,19 +4691,19 @@ ladevaMAR	6
 uni200D	7
 class definition end
 
-class	1, 2, 3	1, 74
-class	1, 2, 4	1, 75
-class	1, 2, 5	1, 76
-class	1, 2, 6	1, 77
-class	1, 2, 7, 3	1, 74
-class	1, 2, 7, 4	1, 75
-class	1, 2, 7, 5	1, 76
-class	1, 2, 7, 6	1, 77
+class	1, 2, 3	1, 77
+class	1, 2, 4	1, 78
+class	1, 2, 5	1, 79
+class	1, 2, 6	1, 80
+class	1, 2, 7, 3	1, 77
+class	1, 2, 7, 4	1, 78
+class	1, 2, 7, 5	1, 79
+class	1, 2, 7, 6	1, 80
 
 lookup end
 
 
-lookup	50	context
+lookup	53	context
 
 RightToLeft	no
 IgnoreBaseGlyphs	no
@@ -4752,19 +4812,19 @@ ssattharadeva	6
 uni200D	7
 class definition end
 
-class	1, 2, 3	1, 74
-class	1, 2, 4	1, 75
-class	1, 2, 5	1, 76
-class	1, 2, 6	1, 77
-class	1, 2, 7, 3	1, 74
-class	1, 2, 7, 4	1, 75
-class	1, 2, 7, 5	1, 76
-class	1, 2, 7, 6	1, 77
+class	1, 2, 3	1, 77
+class	1, 2, 4	1, 78
+class	1, 2, 5	1, 79
+class	1, 2, 6	1, 80
+class	1, 2, 7, 3	1, 77
+class	1, 2, 7, 4	1, 78
+class	1, 2, 7, 5	1, 79
+class	1, 2, 7, 6	1, 80
 
 lookup end
 
 
-lookup	51	context
+lookup	54	context
 
 RightToLeft	no
 IgnoreBaseGlyphs	no
@@ -4869,19 +4929,19 @@ panadeva	6
 uni200D	7
 class definition end
 
-class	1, 2, 3	1, 74
-class	1, 2, 4	1, 75
-class	1, 2, 5	1, 76
-class	1, 2, 6	1, 77
-class	1, 2, 7, 3	1, 74
-class	1, 2, 7, 4	1, 75
-class	1, 2, 7, 5	1, 76
-class	1, 2, 7, 6	1, 77
+class	1, 2, 3	1, 77
+class	1, 2, 4	1, 78
+class	1, 2, 5	1, 79
+class	1, 2, 6	1, 80
+class	1, 2, 7, 3	1, 77
+class	1, 2, 7, 4	1, 78
+class	1, 2, 7, 5	1, 79
+class	1, 2, 7, 6	1, 80
 
 lookup end
 
 
-lookup	52	context
+lookup	55	context
 
 RightToLeft	no
 IgnoreBaseGlyphs	no
@@ -4975,19 +5035,19 @@ panadeva	6
 uni200D	7
 class definition end
 
-class	1, 2, 3	1, 74
-class	1, 2, 4	1, 75
-class	1, 2, 5	1, 76
-class	1, 2, 6	1, 77
-class	1, 2, 7, 3	1, 74
-class	1, 2, 7, 4	1, 75
-class	1, 2, 7, 5	1, 76
-class	1, 2, 7, 6	1, 77
+class	1, 2, 3	1, 77
+class	1, 2, 4	1, 78
+class	1, 2, 5	1, 79
+class	1, 2, 6	1, 80
+class	1, 2, 7, 3	1, 77
+class	1, 2, 7, 4	1, 78
+class	1, 2, 7, 5	1, 79
+class	1, 2, 7, 6	1, 80
 
 lookup end
 
 
-lookup	53	context
+lookup	56	context
 
 RightToLeft	no
 IgnoreBaseGlyphs	no
@@ -5056,19 +5116,19 @@ hanuktaradeva	6
 uni200D	7
 class definition end
 
-class	1, 2, 3	1, 74
-class	1, 2, 4	1, 75
-class	1, 2, 5	1, 76
-class	1, 2, 6	1, 77
-class	1, 2, 7, 3	1, 74
-class	1, 2, 7, 4	1, 75
-class	1, 2, 7, 5	1, 76
-class	1, 2, 7, 6	1, 77
+class	1, 2, 3	1, 77
+class	1, 2, 4	1, 78
+class	1, 2, 5	1, 79
+class	1, 2, 6	1, 80
+class	1, 2, 7, 3	1, 77
+class	1, 2, 7, 4	1, 78
+class	1, 2, 7, 5	1, 79
+class	1, 2, 7, 6	1, 80
 
 lookup end
 
 
-lookup	54	context
+lookup	57	context
 
 RightToLeft	no
 IgnoreBaseGlyphs	no
@@ -5134,17 +5194,17 @@ hanuktaradeva	5
 uni200D	6
 class definition end
 
-class	1, 2, 3	1, 75
-class	1, 2, 4	1, 76
-class	1, 2, 5	1, 77
-class	1, 2, 6, 3	1, 75
-class	1, 2, 6, 4	1, 76
-class	1, 2, 6, 5	1, 77
+class	1, 2, 3	1, 78
+class	1, 2, 4	1, 79
+class	1, 2, 5	1, 80
+class	1, 2, 6, 3	1, 78
+class	1, 2, 6, 4	1, 79
+class	1, 2, 6, 5	1, 80
 
 lookup end
 
 
-lookup	55	context
+lookup	58	context
 
 RightToLeft	no
 IgnoreBaseGlyphs	no
@@ -5197,17 +5257,17 @@ phanuktaradeva	5
 uni200D	6
 class definition end
 
-class	1, 2, 3	1, 75
-class	1, 2, 4	1, 76
-class	1, 2, 5	1, 77
-class	1, 2, 6, 3	1, 75
-class	1, 2, 6, 4	1, 76
-class	1, 2, 6, 5	1, 77
+class	1, 2, 3	1, 78
+class	1, 2, 4	1, 79
+class	1, 2, 5	1, 80
+class	1, 2, 6, 3	1, 78
+class	1, 2, 6, 4	1, 79
+class	1, 2, 6, 5	1, 80
 
 lookup end
 
 
-lookup	56	context
+lookup	59	context
 
 RightToLeft	no
 IgnoreBaseGlyphs	no
@@ -5248,17 +5308,17 @@ dadadeva	5
 uni200D	6
 class definition end
 
-class	1, 2, 3	1, 75
-class	1, 2, 4	1, 76
-class	1, 2, 5	1, 77
-class	1, 2, 6, 3	1, 75
-class	1, 2, 6, 4	1, 76
-class	1, 2, 6, 5	1, 77
+class	1, 2, 3	1, 78
+class	1, 2, 4	1, 79
+class	1, 2, 5	1, 80
+class	1, 2, 6, 3	1, 78
+class	1, 2, 6, 4	1, 79
+class	1, 2, 6, 5	1, 80
 
 lookup end
 
 
-lookup	57	context
+lookup	60	context
 
 RightToLeft	no
 IgnoreBaseGlyphs	no
@@ -5298,17 +5358,17 @@ dadadeva	5
 uni200D	6
 class definition end
 
-class	1, 2, 3	1, 75
-class	1, 2, 4	1, 76
-class	1, 2, 5	1, 77
-class	1, 2, 6, 3	1, 75
-class	1, 2, 6, 4	1, 76
-class	1, 2, 6, 5	1, 77
+class	1, 2, 3	1, 78
+class	1, 2, 4	1, 79
+class	1, 2, 5	1, 80
+class	1, 2, 6, 3	1, 78
+class	1, 2, 6, 4	1, 79
+class	1, 2, 6, 5	1, 80
 
 lookup end
 
 
-lookup	58	context
+lookup	61	context
 
 RightToLeft	no
 IgnoreBaseGlyphs	no
@@ -5349,15 +5409,15 @@ dadadeva	4
 uni200D	5
 class definition end
 
-class	1, 2, 3	1, 76
-class	1, 2, 4	1, 77
-class	1, 2, 5, 3	1, 76
-class	1, 2, 5, 4	1, 77
+class	1, 2, 3	1, 79
+class	1, 2, 4	1, 80
+class	1, 2, 5, 3	1, 79
+class	1, 2, 5, 4	1, 80
 
 lookup end
 
 
-lookup	59	context
+lookup	62	context
 
 RightToLeft	no
 IgnoreBaseGlyphs	no
@@ -5397,15 +5457,15 @@ dadadeva	4
 uni200D	5
 class definition end
 
-class	1, 2, 3	1, 76
-class	1, 2, 4	1, 77
-class	1, 2, 5, 3	1, 76
-class	1, 2, 5, 4	1, 77
+class	1, 2, 3	1, 79
+class	1, 2, 4	1, 80
+class	1, 2, 5, 3	1, 79
+class	1, 2, 5, 4	1, 80
 
 lookup end
 
 
-lookup	60	context
+lookup	63	context
 
 RightToLeft	no
 IgnoreBaseGlyphs	no
@@ -5447,15 +5507,15 @@ dadadeva	4
 uni200D	5
 class definition end
 
-class	1, 2, 3	1, 76
-class	1, 2, 4	1, 77
-class	1, 2, 5, 3	1, 76
-class	1, 2, 5, 4	1, 77
+class	1, 2, 3	1, 79
+class	1, 2, 4	1, 80
+class	1, 2, 5, 3	1, 79
+class	1, 2, 5, 4	1, 80
 
 lookup end
 
 
-lookup	61	context
+lookup	64	context
 
 RightToLeft	no
 IgnoreBaseGlyphs	no
@@ -5504,15 +5564,15 @@ dadadeva	4
 uni200D	5
 class definition end
 
-class	1, 2, 3	1, 76
-class	1, 2, 4	1, 77
-class	1, 2, 5, 3	1, 76
-class	1, 2, 5, 4	1, 77
+class	1, 2, 3	1, 79
+class	1, 2, 4	1, 80
+class	1, 2, 5, 3	1, 79
+class	1, 2, 5, 4	1, 80
 
 lookup end
 
 
-lookup	62	context
+lookup	65	context
 
 RightToLeft	no
 IgnoreBaseGlyphs	no
@@ -5555,15 +5615,15 @@ dadadeva	4
 uni200D	5
 class definition end
 
-class	1, 2, 3	1, 76
-class	1, 2, 4	1, 77
-class	1, 2, 5, 3	1, 76
-class	1, 2, 5, 4	1, 77
+class	1, 2, 3	1, 79
+class	1, 2, 4	1, 80
+class	1, 2, 5, 3	1, 79
+class	1, 2, 5, 4	1, 80
 
 lookup end
 
 
-lookup	63	context
+lookup	66	context
 
 RightToLeft	no
 IgnoreBaseGlyphs	no
@@ -5599,15 +5659,15 @@ dagadeva	4
 uni200D	5
 class definition end
 
-class	1, 2, 3	1, 76
-class	1, 2, 4	1, 77
-class	1, 2, 5, 3	1, 76
-class	1, 2, 5, 4	1, 77
+class	1, 2, 3	1, 79
+class	1, 2, 4	1, 80
+class	1, 2, 5, 3	1, 79
+class	1, 2, 5, 4	1, 80
 
 lookup end
 
 
-lookup	64	context
+lookup	67	context
 
 RightToLeft	no
 IgnoreBaseGlyphs	no
@@ -5645,13 +5705,13 @@ ranuktaradeva	3
 uni200D	4
 class definition end
 
-class	1, 2, 3	1, 77
-class	1, 2, 4, 3	1, 77
+class	1, 2, 3	1, 80
+class	1, 2, 4, 3	1, 80
 
 lookup end
 
 
-lookup	65	context
+lookup	68	context
 
 RightToLeft	no
 IgnoreBaseGlyphs	no
@@ -5671,13 +5731,13 @@ ranuktaradeva	3
 uni200D	4
 class definition end
 
-class	1, 2, 3	1, 77
-class	1, 2, 4, 3	1, 77
+class	1, 2, 3	1, 80
+class	1, 2, 4, 3	1, 80
 
 lookup end
 
 
-lookup	66	context
+lookup	69	context
 
 RightToLeft	no
 IgnoreBaseGlyphs	no
@@ -5824,6 +5884,7 @@ laradevaMAR	6
 lanuktaradevaMAR	6
 shadevaMAR	6
 shanuktadevaMAR	6
+marwariddaddhadeva	6
 nnadeva	7
 bhadeva	7
 lladeva	7
@@ -5872,6 +5933,7 @@ januktaradeva	8
 nyanuktaradeva	8
 dabhadeva	8
 dadhadeva	8
+marwariddaddadeva	8
 khadeva	9
 khhadeva	9
 kharadeva	9
@@ -5882,6 +5944,7 @@ naddadeva	9
 naddaradeva	9
 hamadeva	9
 hayadeva	9
+marwariddayadeva	9
 nathadeva	10
 natharadeva	10
 nadhadeva	10
@@ -5899,54 +5962,19 @@ laddaradeva	11
 sapadeva	11
 saparadeva	11
 saphadeva	11
+rayadeva	11
 class definition end
 
-class	1, 2	1, 67
-class	1, 3	1, 68
-class	1, 4	1, 69
-class	1, 5	1, 70
-class	1, 6	1, 71
-class	1, 7	1, 72
-class	1, 8	1, 73
-class	1, 9	1, 74
-class	1, 10	1, 76
-class	1, 11	1, 77
-
-lookup end
-
-
-lookup	67	single
-
-RightToLeft	no
-IgnoreBaseGlyphs	no
-IgnoreLigatures	no
-IgnoreMarks	no
-
-ivowelsign00deva	ivowelsign01deva
-
-lookup end
-
-
-lookup	68	single
-
-RightToLeft	no
-IgnoreBaseGlyphs	no
-IgnoreLigatures	no
-IgnoreMarks	no
-
-ivowelsign00deva	ivowelsign02deva
-
-lookup end
-
-
-lookup	69	single
-
-RightToLeft	no
-IgnoreBaseGlyphs	no
-IgnoreLigatures	no
-IgnoreMarks	no
-
-ivowelsign00deva	ivowelsign03deva
+class	1, 2	1, 70
+class	1, 3	1, 71
+class	1, 4	1, 72
+class	1, 5	1, 73
+class	1, 6	1, 74
+class	1, 7	1, 75
+class	1, 8	1, 76
+class	1, 9	1, 77
+class	1, 10	1, 79
+class	1, 11	1, 80
 
 lookup end
 
@@ -5958,7 +5986,7 @@ IgnoreBaseGlyphs	no
 IgnoreLigatures	no
 IgnoreMarks	no
 
-ivowelsign00deva	ivowelsign04deva
+ivowelsign00deva	ivowelsign01deva
 
 lookup end
 
@@ -5970,7 +5998,7 @@ IgnoreBaseGlyphs	no
 IgnoreLigatures	no
 IgnoreMarks	no
 
-ivowelsign00deva	ivowelsign05deva
+ivowelsign00deva	ivowelsign02deva
 
 lookup end
 
@@ -5982,7 +6010,7 @@ IgnoreBaseGlyphs	no
 IgnoreLigatures	no
 IgnoreMarks	no
 
-ivowelsign00deva	ivowelsign06deva
+ivowelsign00deva	ivowelsign03deva
 
 lookup end
 
@@ -5994,7 +6022,7 @@ IgnoreBaseGlyphs	no
 IgnoreLigatures	no
 IgnoreMarks	no
 
-ivowelsign00deva	ivowelsign07deva
+ivowelsign00deva	ivowelsign04deva
 
 lookup end
 
@@ -6006,7 +6034,7 @@ IgnoreBaseGlyphs	no
 IgnoreLigatures	no
 IgnoreMarks	no
 
-ivowelsign00deva	ivowelsign08deva
+ivowelsign00deva	ivowelsign05deva
 
 lookup end
 
@@ -6018,7 +6046,7 @@ IgnoreBaseGlyphs	no
 IgnoreLigatures	no
 IgnoreMarks	no
 
-ivowelsign00deva	ivowelsign09deva
+ivowelsign00deva	ivowelsign06deva
 
 lookup end
 
@@ -6030,7 +6058,7 @@ IgnoreBaseGlyphs	no
 IgnoreLigatures	no
 IgnoreMarks	no
 
-ivowelsign00deva	ivowelsign10deva
+ivowelsign00deva	ivowelsign07deva
 
 lookup end
 
@@ -6042,12 +6070,48 @@ IgnoreBaseGlyphs	no
 IgnoreLigatures	no
 IgnoreMarks	no
 
+ivowelsign00deva	ivowelsign08deva
+
+lookup end
+
+
+lookup	78	single
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+ivowelsign00deva	ivowelsign09deva
+
+lookup end
+
+
+lookup	79	single
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+ivowelsign00deva	ivowelsign10deva
+
+lookup end
+
+
+lookup	80	single
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
 ivowelsign00deva	ivowelsign11deva
 
 lookup end
 
 
-lookup	78	context
+lookup	81	context
 
 RightToLeft	no
 IgnoreBaseGlyphs	no
@@ -6290,6 +6354,10 @@ jhadevaNEP	3
 jhanuktadevaNEP	3
 jharadevaNEP	3
 jhanuktaradevaNEP	3
+rayadeva	3
+marwariddaddadeva	3
+marwariddaddhadeva	3
+marwariddayadeva	3
 gaprehalfdeva	4
 ghaprehalfdeva	4
 caprehalfdeva	4
@@ -6414,29 +6482,29 @@ uni1CF8	10
 uni1CF9	10
 class definition end
 
-class	1, 3, 5	1, 80	3, 85
-class	1, 3, 6	1, 81	3, 85
-class	1, 3, 7	1, 82	3, 85
-class	1, 3, 8	1, 83	3, 85
-class	1, 3, 9	1, 84	3, 85
-class	1, 3, 10	1, 79
-class	2, 3, 5	1, 80	3, 85
-class	2, 3, 6	1, 81	3, 85
-class	2, 3, 7	1, 82	3, 85
-class	2, 3, 8	1, 83	3, 85
-class	2, 3, 9	1, 84	3, 85
-class	2, 3, 10	1, 79
-class	2, 4, 3, 5	1, 80	4, 85
-class	2, 4, 3, 6	1, 81	4, 85
-class	2, 4, 3, 7	1, 82	4, 85
-class	2, 4, 3, 8	1, 83	4, 85
-class	2, 4, 3, 9	1, 84	4, 85
-class	2, 4, 3, 10	1, 79
+class	1, 3, 5	1, 83	3, 88
+class	1, 3, 6	1, 84	3, 88
+class	1, 3, 7	1, 85	3, 88
+class	1, 3, 8	1, 86	3, 88
+class	1, 3, 9	1, 87	3, 88
+class	1, 3, 10	1, 82
+class	2, 3, 5	1, 83	3, 88
+class	2, 3, 6	1, 84	3, 88
+class	2, 3, 7	1, 85	3, 88
+class	2, 3, 8	1, 86	3, 88
+class	2, 3, 9	1, 87	3, 88
+class	2, 3, 10	1, 82
+class	2, 4, 3, 5	1, 83	4, 88
+class	2, 4, 3, 6	1, 84	4, 88
+class	2, 4, 3, 7	1, 85	4, 88
+class	2, 4, 3, 8	1, 86	4, 88
+class	2, 4, 3, 9	1, 87	4, 88
+class	2, 4, 3, 10	1, 82
 
 lookup end
 
 
-lookup	79	multiple
+lookup	82	multiple
 
 RightToLeft	no
 IgnoreBaseGlyphs	no
@@ -6459,7 +6527,7 @@ ivowelsign11deva	ivowelsign11deva	dummymarkdeva
 lookup end
 
 
-lookup	80	single
+lookup	83	single
 
 RightToLeft	no
 IgnoreBaseGlyphs	no
@@ -6482,7 +6550,7 @@ ivowelsign11deva	ivowelsignanusvara11deva
 lookup end
 
 
-lookup	81	single
+lookup	84	single
 
 RightToLeft	no
 IgnoreBaseGlyphs	no
@@ -6505,7 +6573,7 @@ ivowelsign11deva	ivowelsignreph11deva
 lookup end
 
 
-lookup	82	single
+lookup	85	single
 
 RightToLeft	no
 IgnoreBaseGlyphs	no
@@ -6528,7 +6596,7 @@ ivowelsign11deva	ivowelsignrephanusvara11deva
 lookup end
 
 
-lookup	83	single
+lookup	86	single
 
 RightToLeft	no
 IgnoreBaseGlyphs	no
@@ -6551,7 +6619,7 @@ ivowelsign11deva	ivowelsignrephcandrabindu11deva
 lookup end
 
 
-lookup	84	single
+lookup	87	single
 
 RightToLeft	no
 IgnoreBaseGlyphs	no
@@ -6574,7 +6642,7 @@ ivowelsign11deva	ivowelsigncandrabindu11deva
 lookup end
 
 
-lookup	85	single
+lookup	88	single
 
 RightToLeft	no
 IgnoreBaseGlyphs	no
@@ -6590,7 +6658,7 @@ rephcandrabindudeva	dummymarkdeva
 lookup end
 
 
-lookup	86	context
+lookup	89	context
 
 RightToLeft	no
 IgnoreBaseGlyphs	no
@@ -6618,12 +6686,12 @@ uni1CDF	3
 uni1CED	3
 class definition end
 
-class	1, 2, 3	1, 87
+class	1, 2, 3	1, 90
 
 lookup end
 
 
-lookup	87	single
+lookup	90	single
 
 RightToLeft	no
 IgnoreBaseGlyphs	no
@@ -6636,7 +6704,7 @@ dadadeva	dadaaltdeva
 lookup end
 
 
-lookup	88	context
+lookup	91	context
 
 RightToLeft	no
 IgnoreBaseGlyphs	no
@@ -6668,6 +6736,7 @@ hamadeva	2
 hayadeva	2
 haladeva	2
 havadeva	2
+marwariddaddhadeva	2
 ngaradeva	3
 charadeva	3
 ttaradeva	3
@@ -6675,7 +6744,6 @@ ttharadeva	3
 ddaradeva	3
 ddharadeva	3
 llaradeva	3
-marwariddaradeva	3
 nganuktaradeva	3
 chanuktaradeva	3
 ttanuktaradeva	3
@@ -6717,21 +6785,21 @@ uni1CDF	9
 uni1CED	9
 class definition end
 
-class	1, 5	1, 93
-class	1, 6	1, 93
-class	1, 8	1, 93
-class	2, 5, 9	1, 93
-class	2, 6	1, 93
-class	3, 5	1, 91
-class	3, 6	1, 93
-class	3, 8	1, 91
-class	4, 7, 5	2, 90
-class	4, 7, 8	2, 90
+class	1, 5	1, 96
+class	1, 6	1, 96
+class	1, 8	1, 96
+class	2, 5, 9	1, 96
+class	2, 6	1, 96
+class	3, 5	1, 94
+class	3, 6	1, 96
+class	3, 8	1, 94
+class	4, 7, 5	2, 93
+class	4, 7, 8	2, 93
 
 lookup end
 
 
-lookup	89	chained
+lookup	92	chained
 
 RightToLeft	no
 IgnoreBaseGlyphs	no
@@ -6756,6 +6824,7 @@ hamadeva	1
 hayadeva	1
 haladeva	1
 havadeva	1
+marwariddaddhadeva	1
 hadeva	2
 haradeva	2
 class definition end
@@ -6773,14 +6842,14 @@ lookaheadclass definition begin
 # 1	1
 class definition end
 
-class-chain	1	1		1, 92
-class-chain	1	2		1, 92
-class-chain	2	2		1, 92
+class-chain	1	1		1, 95
+class-chain	1	2		1, 95
+class-chain	2	2		1, 95
 
 lookup end
 
 
-lookup	90	single
+lookup	93	single
 
 RightToLeft	no
 IgnoreBaseGlyphs	no
@@ -6792,7 +6861,7 @@ vattudeva	dummymarkdeva
 lookup end
 
 
-lookup	91	multiple
+lookup	94	multiple
 
 RightToLeft	no
 IgnoreBaseGlyphs	no
@@ -6806,7 +6875,6 @@ ttharadeva	tthadeva	dummymarkdeva
 ddaradeva	ddadeva	dummymarkdeva
 ddharadeva	ddhadeva	dummymarkdeva
 llaradeva	lladeva	dummymarkdeva
-marwariddaradeva	marwariddadeva	dummymarkdeva
 nganuktaradeva	ngadeva	nuktadeva	dummymarkdeva
 chanuktaradeva	chadeva	nuktadeva	dummymarkdeva
 ttanuktaradeva	ttadeva	nuktadeva	dummymarkdeva
@@ -6825,7 +6893,7 @@ lanuktaradevaMAR	ladevaMAR	nuktadeva	dummymarkdeva
 lookup end
 
 
-lookup	92	single
+lookup	95	single
 
 RightToLeft	no
 IgnoreBaseGlyphs	no
@@ -6842,7 +6910,7 @@ uuevowelsigndeva	uuevowelsignlowdeva
 lookup end
 
 
-lookup	93	multiple
+lookup	96	multiple
 
 RightToLeft	no
 IgnoreBaseGlyphs	no
@@ -6856,7 +6924,6 @@ ttharadeva	tthaaltdeva	vattudeva
 ddaradeva	ddaaltdeva	vattudeva
 ddharadeva	ddhaaltdeva	vattudeva
 llaradeva	llaaltdeva	vattudeva
-marwariddaradeva	marwariddadeva	vattudeva
 nganuktaradeva	nganuktaaltdeva	vattudeva
 chanuktaradeva	chanuktaaltdeva	vattudeva
 ttanuktaradeva	ttanuktaaltdeva	vattudeva
@@ -6895,11 +6962,12 @@ haladeva	haprehalfdeva	ladeva
 havadeva	haprehalfdeva	vadeva
 laradevaMAR	laaltdevaMAR	vattudeva
 lanuktaradevaMAR	lanuktaaltdevaMAR	vattudeva
+marwariddaddhadeva	marwariddadeva	viramadeva	ddhadeva
 
 lookup end
 
 
-lookup	94	context
+lookup	97	context
 
 RightToLeft	no
 IgnoreBaseGlyphs	no
@@ -6985,14 +7053,14 @@ lvocalicvowelsigndeva	4
 llvocalicvowelsigndeva	4
 class definition end
 
-class	1, 4	1, 97
-class	2, 4	1, 97	2, 98
-class	3, 4	2, 99
+class	1, 4	1, 100
+class	2, 4	1, 100	2, 101
+class	3, 4	2, 102
 
 lookup end
 
 
-lookup	95	context
+lookup	98	context
 
 RightToLeft	no
 IgnoreBaseGlyphs	no
@@ -7063,20 +7131,20 @@ rvocalicvowelsigndeva	8
 rrvocalicvowelsigndeva	8
 class definition end
 
-class	1, 6	2, 96
-class	2, 6	1, 97	2, 98
-class	2, 7	1, 97	2, 98
-class	2, 8	1, 97	2, 98
-class	3, 6	1, 97
-class	4, 6	1, 97
-class	4, 7	1, 97
-class	4, 8	1, 97
-class	5, 8	1, 97
+class	1, 6	2, 99
+class	2, 6	1, 100	2, 101
+class	2, 7	1, 100	2, 101
+class	2, 8	1, 100	2, 101
+class	3, 6	1, 100
+class	4, 6	1, 100
+class	4, 7	1, 100
+class	4, 8	1, 100
+class	5, 8	1, 100
 
 lookup end
 
 
-lookup	96	single
+lookup	99	single
 
 RightToLeft	no
 IgnoreBaseGlyphs	no
@@ -7088,7 +7156,7 @@ uvowelsigndeva	uvowelsignnarrowdeva
 lookup end
 
 
-lookup	97	multiple
+lookup	100	multiple
 
 RightToLeft	no
 IgnoreBaseGlyphs	no
@@ -7160,7 +7228,7 @@ jhanuktaradevaNEP	jharadevaNEP	nuktadeva
 lookup end
 
 
-lookup	98	ligature
+lookup	101	ligature
 
 RightToLeft	no
 IgnoreBaseGlyphs	no
@@ -7179,7 +7247,7 @@ llvocalicvowelsignnuktaleftdeva	nuktadeva	llvocalicvowelsigndeva
 lookup end
 
 
-lookup	99	single
+lookup	102	single
 
 RightToLeft	no
 IgnoreBaseGlyphs	no
@@ -7192,15 +7260,19 @@ llvocalicvowelsigndeva	llvocalicvowelsignleftdeva
 lookup end
 
 
-lookup	100	ligature
+lookup	103	ligature
 
 RightToLeft	no
 IgnoreBaseGlyphs	no
 IgnoreLigatures	no
 IgnoreMarks	no
 
+dddhaudeva	ddadeva	nuktadeva	uvowelsigndeva
+dddhauudeva	ddadeva	nuktadeva	uuvowelsigndeva
 dddhaudeva	ddadeva	uvowelsignnuktaleftdeva
 dddhauudeva	ddadeva	uuvowelsignnuktaleftdeva
+rhaudeva	ddhadeva	nuktadeva	uvowelsigndeva
+rhauudeva	ddhadeva	nuktadeva	uuvowelsigndeva
 rhaudeva	ddhadeva	uvowelsignnuktaleftdeva
 rhauudeva	ddhadeva	uuvowelsignnuktaleftdeva
 danuktaudeva	dadeva	nuktadeva	uvowelsigndeva
@@ -7213,6 +7285,7 @@ raudeva	radeva	uvowelsigndeva
 rauudeva	radeva	uuvowelsigndeva
 ranuktaudeva	rradeva	uvowelsigndeva
 ranuktauudeva	rradeva	uuvowelsigndeva
+sharvocalicdeva	shadeva	rvocalicvowelsigndeva
 haudeva	hadeva	uvowelsigndeva
 hauudeva	hadeva	uuvowelsigndeva
 harvocalicdeva	hadeva	rvocalicvowelsigndeva
@@ -7265,7 +7338,7 @@ vattuuuevowellowdeva	dummymarkdeva	uuevowelsigndeva
 lookup end
 
 
-lookup	101	context
+lookup	104	context
 
 RightToLeft	no
 IgnoreBaseGlyphs	no
@@ -7315,15 +7388,15 @@ uni1CDF	6
 uni1CED	6
 class definition end
 
-class	1, 5, 6	1, 102	2, 102	1, 104
-class	2, 5, 6	2, 102	1, 103	2, 104
-class	3, 6	1, 102
-class	4, 6	1, 103
+class	1, 5, 6	1, 105	2, 105	1, 107
+class	2, 5, 6	2, 105	1, 106	2, 107
+class	3, 6	1, 105
+class	4, 6	1, 106
 
 lookup end
 
 
-lookup	102	single
+lookup	105	single
 
 RightToLeft	no
 IgnoreBaseGlyphs	no
@@ -7357,7 +7430,7 @@ vattuviramalowdeva	vattuviramadeva
 lookup end
 
 
-lookup	103	multiple
+lookup	106	multiple
 
 RightToLeft	no
 IgnoreBaseGlyphs	no
@@ -7373,7 +7446,7 @@ ssatthadeva	ssaprehalfdeva	tthaaltdeva
 lookup end
 
 
-lookup	104	ligature
+lookup	107	ligature
 
 RightToLeft	no
 IgnoreBaseGlyphs	no
@@ -7389,22 +7462,22 @@ ddharaprehalfUIdeva	ddhaaltdeva	vattuviramadeva
 lookup end
 
 
-lookup	105	context
+lookup	108	context
 
 RightToLeft	no
 IgnoreBaseGlyphs	no
 IgnoreLigatures	no
 IgnoreMarks	no
 
-glyph	raradeva, uvowelsigndeva	1, 106	2, 108
-glyph	raradeva, uuvowelsigndeva	1, 107	2, 108
-glyph	ranuktaradeva, uvowelsigndeva	1, 106	2, 108
-glyph	ranuktaradeva, uuvowelsigndeva	1, 107	2, 108
+glyph	raradeva, uvowelsigndeva	1, 109	2, 111
+glyph	raradeva, uuvowelsigndeva	1, 110	2, 111
+glyph	ranuktaradeva, uvowelsigndeva	1, 109	2, 111
+glyph	ranuktaradeva, uuvowelsigndeva	1, 110	2, 111
 
 lookup end
 
 
-lookup	106	single
+lookup	109	single
 
 RightToLeft	no
 IgnoreBaseGlyphs	no
@@ -7417,7 +7490,7 @@ ranuktaradeva	ranuktaudeva
 lookup end
 
 
-lookup	107	single
+lookup	110	single
 
 RightToLeft	no
 IgnoreBaseGlyphs	no
@@ -7430,7 +7503,7 @@ ranuktaradeva	ranuktauudeva
 lookup end
 
 
-lookup	108	single
+lookup	111	single
 
 RightToLeft	no
 IgnoreBaseGlyphs	no
@@ -7443,7 +7516,7 @@ uuvowelsigndeva	vattudeva
 lookup end
 
 
-lookup	109	chained
+lookup	112	chained
 
 RightToLeft	no
 IgnoreBaseGlyphs	no
@@ -7533,14 +7606,14 @@ lookaheadclass definition begin
 # 1	1
 class definition end
 
-class-chain	1	1		1, 110
-class-chain	2	1		1, 111
-class-chain	3	1		1, 112
+class-chain	1	1		1, 113
+class-chain	2	1		1, 114
+class-chain	3	1		1, 115
 
 lookup end
 
 
-lookup	110	single
+lookup	113	single
 
 RightToLeft	no
 IgnoreBaseGlyphs	no
@@ -7557,7 +7630,7 @@ iivowelsignrephcandrabindudeva	iivowelsignrephcandrabindu1deva
 lookup end
 
 
-lookup	111	single
+lookup	114	single
 
 RightToLeft	no
 IgnoreBaseGlyphs	no
@@ -7574,7 +7647,7 @@ iivowelsignrephcandrabindudeva	iivowelsignrephcandrabindu2deva
 lookup end
 
 
-lookup	112	single
+lookup	115	single
 
 RightToLeft	no
 IgnoreBaseGlyphs	no
@@ -7591,7 +7664,7 @@ iivowelsignrephcandrabindudeva	iivowelsignrephcandrabindu3deva
 lookup end
 
 
-lookup	113	chained
+lookup	116	chained
 
 RightToLeft	no
 IgnoreBaseGlyphs	no
@@ -7745,15 +7818,15 @@ lookaheadclass definition begin
 # 1	1
 class definition end
 
-class-chain	1, 3	1		1, 114
-class-chain	1, 4	1		1, 114
-class-chain	2	1		1, 114
-class-chain	3	1		1, 114
+class-chain	1, 3	1		1, 117
+class-chain	1, 4	1		1, 117
+class-chain	2	1		1, 117
+class-chain	3	1		1, 117
 
 lookup end
 
 
-lookup	114	single
+lookup	117	single
 
 RightToLeft	no
 IgnoreBaseGlyphs	no
@@ -7765,7 +7838,7 @@ uni1CE1	uni1CE1.alt
 lookup end
 
 
-lookup	115	ligature
+lookup	118	ligature
 
 RightToLeft	no
 IgnoreBaseGlyphs	no
@@ -7780,7 +7853,7 @@ visarga_uni1CE8	visargadeva	uni1CE8
 lookup end
 
 
-lookup	116	ligature
+lookup	119	ligature
 
 RightToLeft	no
 IgnoreBaseGlyphs	no
@@ -7805,87 +7878,6 @@ ttaraprehalfdeva	ttaaltdeva	vattuviramadeva
 ttharaprehalfdeva	tthaaltdeva	vattuviramadeva
 ddaraprehalfdeva	ddaaltdeva	vattuviramadeva
 ddharaprehalfdeva	ddhaaltdeva	vattuviramadeva
-
-lookup end
-
-
-lookup	117	chained
-
-RightToLeft	no
-IgnoreBaseGlyphs	no
-IgnoreLigatures	no
-IgnoreMarks	no
-
-backtrackclass definition begin
-space	1
-uni25CC	1
-class definition end
-
-class definition begin
-uniA8E0	1
-uniA8E1	1
-uniA8E2	1
-uniA8E3	1
-uniA8E4	1
-uniA8E5	1
-uniA8E6	1
-uniA8E7	1
-uniA8E8	1
-uniA8E9	1
-uniA8EA	1
-uniA8EB	1
-uniA8EC	1
-uniA8ED	1
-uniA8EE	1
-uniA8EF	1
-uniA8F0	1
-uniA8F1	1
-uni1CD0	1
-uni1CD1	1
-uni1CD2	1
-uni1CF4	1
-uni20F0	1
-class definition end
-
-lookaheadclass definition begin
-# 1	1
-class definition end
-
-class-chain	1	1		1, 118
-
-lookup end
-
-
-lookup	118	single
-
-RightToLeft	no
-IgnoreBaseGlyphs	no
-IgnoreLigatures	no
-IgnoreMarks	no
-
-uniA8E0	uniA8E0.low
-uniA8E1	uniA8E1.low
-uniA8E2	uniA8E2.low
-uniA8E3	uniA8E3.low
-uniA8E4	uniA8E4.low
-uniA8E5	uniA8E5.low
-uniA8E6	uniA8E6.low
-uniA8E7	uniA8E7.low
-uniA8E8	uniA8E8.low
-uniA8E9	uniA8E9.low
-uniA8EA	uniA8EA.low
-uniA8EB	uniA8EB.low
-uniA8EC	uniA8EC.low
-uniA8ED	uniA8ED.low
-uniA8EE	uniA8EE.low
-uniA8EF	uniA8EF.low
-uniA8F0	uniA8F0.low
-uniA8F1	uniA8F1.low
-uni1CD0	uni1CD0.low
-uni1CD1	uni1CD1.low
-uni1CD2	uni1CD2.low
-uni1CF4	uni1CF4.low
-uni20F0	uni20F0.low
 
 lookup end
 
