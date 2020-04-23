@@ -10,7 +10,7 @@ EM	1000
 feature table begin
 0	abvm	topmarktobase-deva,numbermarks-deva
 1	blwm	bottommarktobase-deva,anudatta-deva
-2	dist	halfformkern-deva,shiftuevowel-deva,shiftlow-deva,shifthigh-deva,mark2mark-deva,asteriskShift-deva
+2	dist	halfformkern-deva,shiftuevowel-deva,shiftlow-deva,shifthigh-deva,mark2mark-deva,asteriskShift-deva,shifttoohigh-deva
 feature table end
 
 
@@ -70,6 +70,12 @@ mark	uni1CDA	0	-204,622
 mark	uni1CDB	0	-204,622
 mark	uni1CF8	0	-204,622
 mark	uni1CF9	0	-192,622
+mark	ayvowelsigndeva	0	-204,622
+mark	ayanusvaravowelsigndeva	0	-204,622
+mark	ayvowelsigncandrabindudeva	0	-204,622
+mark	ayvowelsignrephdeva	0	-204,622
+mark	ayvowelsignrephanusvaradeva	0	-204,622
+mark	ayvowelsignrephcandrabindudeva	0	-204,622
 base	ideva	0	210,622
 base	udeva	0	275,622
 base	uudeva	0	275,622
@@ -323,6 +329,7 @@ base	danuktadeva	0	296,0
 base	karadeva	0	306,0
 base	daradeva	0	283,0
 base	pharadeva	0	287,0
+base	marwariddaradeva	0	202,0
 base	kanuktaradeva	0	306,0
 base	danuktaradeva	0	311,0
 base	phanuktaradeva	0	287,0
@@ -364,6 +371,8 @@ base	llaaltdeva	0	346,0
 base	laaltdevaMAR	0	333,0
 base	dadaaltdeva	0	302,0
 base	dabhaaltdeva	0	596,0
+base	marwariddaddadeva	0	382,0
+base	marwariddaddhadeva	0	366,0
 
 lookup end
 
@@ -389,15 +398,12 @@ mark	uni1CDC	0	-132,0
 mark	uni1CDD	0	-131,0
 mark	uni1CDE	0	-208,0
 mark	uni1CDF	0	-280,0
-base	aadeva	0	499,0
 base	udeva	0	246,0
 base	uudeva	0	246,0
 base	rvocalicdeva	0	369,0
 base	lvocalicdeva	0	309,0
 base	edeva	0	246,0
 base	aideva	0	246,0
-base	odeva	0	499,0
-base	audeva	0	499,0
 base	kadeva	0	361,0
 base	ngadeva	0	284,0
 base	chadeva	0	314,0
@@ -938,6 +944,7 @@ viramalowdeva	1
 vatturrvocalicUIdeva	1
 vattulvocalicUIdeva	1
 vattullvocalicUIdeva	1
+sharvocalicdeva	1
 ideva	2
 iideva	2
 lvocalicdeva	2
@@ -987,6 +994,19 @@ haladeva	4
 havadeva	4
 laradevaMAR	4
 uniA8F4	4
+aavowelsigndeva	5
+ovowelsigndeva	5
+auvowelsigndeva	5
+ovowelsignanusvaradeva	5
+ovowelsignrephdeva	5
+ovowelsignrephanusvaradeva	5
+auvowelsignanusvaradeva	5
+auvowelsignrephdeva	5
+auvowelsignrephanusvaradeva	5
+ovowelsigncandrabindudeva	5
+auvowelsigncandrabindudeva	5
+ovowelsignrephcandrabindudeva	5
+auvowelsignrephcandrabindudeva	5
 class definition end
 
 class definition begin
@@ -1011,6 +1031,10 @@ class-chain	1	1		1,anudattadevalow-deva
 class-chain	2	1		1,anudattadevalow1-deva
 class-chain	3	1		1,anudattadevalow2-deva
 class-chain	4	1		1,anudattadevalow3-deva
+class-chain	5,1	1		1,anudattadevalow-deva
+class-chain	5,2	1		1,anudattadevalow1-deva
+class-chain	5,3	1		1,anudattadevalow2-deva
+class-chain	5,4	1		1,anudattadevalow3-deva
 
 lookup end
 
@@ -1520,3 +1544,133 @@ x placement	visarga_uni1CE8	-200
 
 lookup end
 
+
+lookup	shifttoohigh-deva	chained
+
+backtrackclass definition begin
+uni25CC	1
+space	1
+uni20F0	2
+uniA8E0	2
+uniA8E1	2
+uniA8E2	2
+uniA8E3	2
+uniA8E4	2
+uniA8E5	2
+uniA8E6	2
+uniA8E7	2
+uniA8E8	2
+uniA8E9	2
+uniA8EA	2
+uniA8EB	2
+uniA8EC	2
+uniA8ED	2
+uniA8EE	2
+uniA8EF	2
+uniA8F0	2
+uniA8F1	2
+uni1CD0	2
+uni1CD1	2
+uni1CD2	2
+uni1CF4	2
+one_onedeva	2
+two_udeva	2
+three_kadeva	2
+one_radeva	2
+two_radeva	2
+three_radeva	2
+four_radeva	2
+five_radeva	2
+two_avagrahadeva	2
+two_uni1CD0	2
+vi_radeva	2
+class definition end
+
+class definition begin
+uniA8E0	1
+uniA8E1	1
+uniA8E2	1
+uniA8E3	1
+uniA8E4	1
+uniA8E5	1
+uniA8E6	1
+uniA8E7	1
+uniA8E8	1
+uniA8E9	1
+uniA8EA	1
+uniA8EB	1
+uniA8EC	1
+uniA8ED	1
+uniA8EE	1
+uniA8EF	1
+uniA8F0	1
+uniA8F1	1
+uni1CD0	1
+uni1CD1	1
+uni1CD2	1
+uni1CF4	1
+one_onedeva	1
+two_udeva	1
+three_kadeva	1
+one_radeva	1
+two_radeva	1
+three_radeva	1
+four_radeva	1
+five_radeva	1
+two_avagrahadeva	1
+two_uni1CD0	1
+vi_radeva	1
+uni20F0	2
+class definition end
+
+lookaheadclass definition begin
+# 1	1
+class definition end
+
+class-chain	1	1		1,lowermark-deva
+class-chain	1	2		1,lowermark-deva
+class-chain	2,1	2		1,lowermark-deva
+
+lookup end
+
+
+
+
+lookup	lowermark-deva	single
+
+y placement	uni20F0	-347
+y placement	uniA8E0	-347
+y placement	uniA8E1	-347
+y placement	uniA8E2	-347
+y placement	uniA8E3	-347
+y placement	uniA8E4	-347
+y placement	uniA8E5	-347
+y placement	uniA8E6	-347
+y placement	uniA8E7	-347
+y placement	uniA8E8	-347
+y placement	uniA8E9	-347
+y placement	uniA8EA	-347
+y placement	uniA8EB	-347
+y placement	uniA8EC	-347
+y placement	uniA8ED	-347
+y placement	uniA8EE	-347
+y placement	uniA8EF	-347
+y placement	uniA8F0	-451
+y placement	uniA8F1	-347
+y placement	uni1CD0	-347
+y placement	uni1CD1	-347
+y placement	uni1CD2	-347
+y placement	uni1CF4	-347
+y placement	one_onedeva	-347
+y placement	two_udeva	-347
+y placement	three_kadeva	-347
+y placement	one_radeva	-347
+y placement	two_radeva	-347
+y placement	three_radeva	-347
+y placement	four_radeva	-347
+y placement	five_radeva	-347
+y placement	two_avagrahadeva	-347
+y placement	two_uni1CD0	-347
+y placement	vi_radeva	-451
+
+lookup end
