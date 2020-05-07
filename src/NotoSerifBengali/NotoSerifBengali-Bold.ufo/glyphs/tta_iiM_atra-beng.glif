@@ -5,9 +5,10 @@
   <anchor x="430" y="2" name="bottom.rakaar"/>
   <anchor x="360" y="9" name="bottom.rvocalic"/>
   <anchor x="296" y="29" name="bottom.virama"/>
-  <anchor x="243" y="-100" name="nukta"/>
   <anchor x="698" y="678" name="top"/>
   <anchor x="588" y="550" name="topright"/>
+  <anchor x="399" y="0" name="vedic"/>
+  <anchor x="243" y="-100" name="nukta"/>
   <outline>
     <contour>
       <point x="710" y="-35" type="line"/>
@@ -66,43 +67,21 @@
       <point x="629" y="550" type="line"/>
       <point x="629" y="1" type="line"/>
     </contour>
-    <contour>
-      <point x="239" y="8" type="curve" smooth="yes"/>
-      <point x="390" y="8"/>
-      <point x="510" y="177"/>
-      <point x="510" y="318" type="curve" smooth="yes"/>
-      <point x="510" y="418"/>
-      <point x="453" y="460"/>
-      <point x="388" y="460" type="curve" smooth="yes"/>
-      <point x="320" y="460"/>
-      <point x="279" y="414"/>
-      <point x="279" y="360" type="curve" smooth="yes"/>
-      <point x="279" y="303"/>
-      <point x="314" y="263"/>
-      <point x="373" y="263" type="curve" smooth="yes"/>
-      <point x="400" y="263"/>
-      <point x="419" y="276"/>
-      <point x="436" y="297" type="curve"/>
-      <point x="383" y="332" type="line"/>
-      <point x="378" y="206"/>
-      <point x="290" y="108"/>
-      <point x="220" y="108" type="curve" smooth="yes"/>
-      <point x="192" y="108"/>
-      <point x="171" y="125"/>
-      <point x="171" y="155" type="curve" smooth="yes"/>
-      <point x="171" y="550" type="line"/>
-      <point x="585" y="550" type="line"/>
-      <point x="544" y="622" type="line"/>
-      <point x="-33" y="622" type="line"/>
-      <point x="11" y="550" type="line"/>
-      <point x="82" y="550" type="line"/>
-      <point x="82" y="155" type="line" smooth="yes"/>
-      <point x="82" y="70"/>
-      <point x="158" y="8"/>
-    </contour>
+    <component base="ddha-beng" xOffset="2"/>
   </outline>
   <lib>
     <dict>
+      <key>com.schriftgestaltung.Glyphs.ComponentInfo</key>
+      <array>
+        <dict>
+          <key>alignment</key>
+          <integer>-1</integer>
+          <key>index</key>
+          <integer>0</integer>
+          <key>name</key>
+          <string>ddha-beng</string>
+        </dict>
+      </array>
       <key>com.schriftgestaltung.Glyphs.category</key>
       <string>Letter</string>
       <key>com.schriftgestaltung.Glyphs.glyph.leftMetricsKey</key>
