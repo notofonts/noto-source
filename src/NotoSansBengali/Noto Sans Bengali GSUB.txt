@@ -22,8 +22,8 @@ feature table begin
 11	cjct	vattuforms-beng,basubscripts-beng,conjuncts-ben2
 12	init	init-ben2
 13	pres	basubscripts-beng,full-conjuncts-beng
-14	pres	full-conjuncts-beng
-15	abvs	switchCandraAA-beng,switchCandraYA-beng,top1-beng,topmark-beng
+14	pres	stack-beng,full-conjuncts-beng,splitstack-beng,leftstack-beng
+15	abvs	switchCandraAA-beng,switchCandraYA-beng,top1-beng,topmark-beng,swapivowel-beng,iCandraLigature-beng
 16	blws	vowelligatures-beng,littlerabaligature-beng,shiftvowel-beng,fixvowelliga-beng,attachvowel-beng
 17	psts	iiclash-beng,yaphala-beng,rephyaii-beng
 
@@ -87,6 +87,7 @@ janyabeng	jabeng	viramabeng	nyabeng
 lookup end
 
 
+
 lookup	reph-beng	ligature
 
 rephbeng	rabeng	viramabeng
@@ -102,6 +103,7 @@ vattubeng	ra1beng	viramabeng
 basubscriptbeng	babeng	viramabeng
 
 lookup end
+
 
 
 % natural order for ben2
@@ -359,6 +361,9 @@ bhalabeng	bhabeng	viramabeng	labeng
 % new order
 tatababeng	tabeng	viramabeng	tababeng
 jajababeng	jabeng	viramabeng	jababeng
+% 2020
+tatawabeng	tabeng	viramabeng	tabeng	viramabeng	wabeng
+tawabeng	tabeng	viramabeng	wabeng
 
 lookup end
 
@@ -373,7 +378,71 @@ aivowelsignbeng	aivowelsigninibeng
 lookup end
 
 
+lookup	stack-beng	context
 
+class definition begin
+uni1CF5	1
+uni1CF6	2
+ivowelsignbeng	3
+evowelsignbeng	3
+aivowelsignbeng	3
+evowelsigninibeng	3
+aivowelsigninibeng	3
+kabeng	4
+khabeng	4
+kahalfbeng	4
+karabeng	4
+kharabeng	4
+kababeng	4
+khababeng	4
+pabeng	5
+parabeng	5
+phabeng	5
+pharabeng	5
+pahalfbeng	5
+pababeng	5
+phababeng	5
+phattabeng	5
+phalabeng	5
+class definition end
+
+class	1,3,4	1,killstack	3,addstack
+class	1,4	1,killstack	2,addstack
+class	2,3,5	1,killstack	3,addstack
+class	2,5	1,killstack	2,addstack
+
+lookup end
+
+
+
+lookup	killstack	single
+
+uni1CF5	uni200B
+uni1CF6	uni200B
+
+lookup end
+
+
+lookup	addstack	multiple
+
+kabeng	kabeng	crossbeng
+khabeng	khabeng	crossbeng
+kahalfbeng	kahalfbeng	crossbeng
+karabeng	karabeng	crossbeng
+kharabeng	kharabeng	crossbeng
+kababeng	kababeng	crossbeng
+khababeng	khababeng	crossbeng
+pabeng	pabeng	wavebeng
+parabeng	parabeng	wavebeng
+phabeng	phabeng	wavebeng
+pharabeng	pharabeng	wavebeng
+pahalfbeng	pahalfbeng	wavebeng
+pababeng	pababeng	wavebeng
+phababeng	phababeng	wavebeng
+phattabeng	phattabeng	wavebeng
+phalabeng	phalabeng	wavebeng
+
+lookup end
 
 
 lookup	full-conjuncts-beng	ligature
@@ -546,7 +615,110 @@ laddarabeng	lahalfbeng	ddarabeng
 shatabeng	shahalfbeng	tabeng
 satababeng	sahalfbeng	tababeng
 ngakarabeng	ngahalfbeng	karabeng
+% 2020
+kawabeng	kahalfbeng	wabeng
+gawabeng	gahalfbeng	wabeng
+tawabeng	tahalfbeng	wabeng
+dawabeng	dahalfbeng	wabeng
+mawabeng	mahalfbeng	wabeng
+sawabeng	sahalfbeng	wabeng
+tatawabeng	tahalfbeng	tahalfbeng	wabeng
+satawabeng	sahalfbeng	tahalfbeng	wabeng
+satawabeng	sahalfbeng	tawabeng
 
+lookup end
+
+
+
+
+lookup	splitstack-beng	chained
+
+backtrackclass definition begin
+ivowelsignshortbeng	1
+ivowelcrossbeng	2
+ivowelwavebeng	2
+crossbeng	2
+wavebeng	2
+phattabeng	3
+class definition end
+
+class definition begin
+crossbeng	1
+wavebeng	1
+iivowelsignbeng	2
+aulengthmarkbeng	2
+ivowelsignbeng	3
+class definition end
+
+lookaheadclass definition begin
+iivowelsignbeng	1
+crossbeng	2
+wavebeng	2
+class definition end
+
+class-chain	0,1	1		1,shiftstack1
+class-chain		1	1	1,shiftstack2
+class-chain	2	2		1,shiftstack1
+class-chain		3	0,2	1,shiftstack1
+class-chain	3	1		1,shiftstack2
+
+lookup end
+
+
+lookup	shiftstack1	single
+
+crossbeng	ivowelcrossbeng
+wavebeng	ivowelwavebeng
+ivowelsignbeng	ivowelsignshortbeng
+aulengthmarkbeng	aulengthmarkshortbeng
+
+lookup end
+
+
+lookup	shiftstack2	single
+
+crossbeng	iivowelcrossbeng
+wavebeng	iivowelwavebeng
+
+lookup end
+
+
+
+lookup	leftstack-beng	chained
+
+backtrackclass definition begin
+kabeng	1
+kababeng	1
+khabeng	1
+kharabeng	1
+khababeng	1
+pabeng	1
+parabeng	1
+pababeng	1
+phabeng	1
+pharabeng	1
+phababeng	1
+phalabeng	1
+class definition end
+
+class definition begin
+crossbeng	1
+wavebeng	1
+class definition end
+
+lookaheadclass definition begin
+aulengthmarkshortbeng	1
+class definition end
+
+class-chain	1	1	1	1,shiftstack3
+
+lookup end
+
+
+lookup	shiftstack3	single
+
+crossbeng	auvowelcrossbeng
+wavebeng	auvowelwavebeng
 
 lookup end
 
@@ -556,6 +728,7 @@ lookup	switchCandraAA-beng	context
 glyph	aavowelsignbeng,candrabindubeng	1,swapAA-beng	2,swapAA-beng
 
 lookup end
+
 
 
 lookup	swapAA-beng	single
@@ -584,6 +757,8 @@ lookup end
 
 lookup	top1-beng	ligature
 
+markattachmenttype	1
+
 rephcandrabindubeng	rephbeng	candrabindubeng
 rephcandrabindubeng	candrabindubeng	rephbeng
 iivowelsigncandrabindbeng	candrabindubeng	iivowelsignbeng
@@ -600,6 +775,8 @@ lookup end
 
 
 lookup	topmark-beng	chained
+
+markattachmenttype	1
 
 backtrackclass definition begin
 uvowelsignbeng	1
@@ -634,95 +811,223 @@ ssattabeng	3
 ssattarabeng	3
 sattabeng	3
 sattarabeng	3
-kabeng	4
-kakabeng	4
-kababeng	4
-kanabeng	4
-kalabeng	4
-cabeng	4
-canabeng	4
-cababeng	4
-tthabeng	4
-tthababeng	4
-ttharabeng	4
-ddhabeng	4
-ddhababeng	4
-nnabeng	4
-nnannabeng	4
-nnanabeng	4
-nnababeng	4
-nnarabeng	4
-tabeng	4
-tatabeng	4
-tatababeng	4
-tanabeng	4
-tababeng	4
-thabeng	4
-dabeng	4
-danabeng	4
-dababeng	4
-dhabeng	4
-dhanabeng	4
-nabeng	4
-nathabeng	4
-natharabeng	4
-nanabeng	4
-nababeng	4
 babeng	4
-badhabeng	4
 babhabeng	4
+badhabeng	4
 balabeng	4
 barabeng	4
-mabeng	4
-manabeng	4
-mababeng	4
-malabeng	4
-yabeng	4
-yababeng	4
-ssababeng	4
-habeng	4
-hanabeng	4
-halabeng	4
+bhababeng	4
+bhabeng	4
+bhalabeng	4
+bharabeng	4
+cababeng	4
+cabeng	4
+canabeng	4
+carabeng	4
+chababeng	4
+chabeng	4
+charabeng	4
+dababeng	4
+dabeng	4
+dabhabeng	4
+dabharabeng	4
+dadhababeng	4
+dadhabeng	4
+danabeng	4
+darabeng	4
+ddababeng	4
+ddabeng	4
+ddarabeng	4
+ddhababeng	4
+ddhabeng	4
+ddharabeng	4
+dhabeng	4
+dhanabeng	4
+gababeng	4
+gabeng	4
+gadhabeng	4
+gagabeng	4
+galabeng	4
+ganabeng	4
+ghababeng	4
+ghabeng	4
+ghalabeng	4
+ghanabeng	4
 hababeng	4
-rabeng	4
-ra1beng	4
-wabeng	4
-wababeng	4
-yyabeng	4
-yyarabeng	4
-yyababeng	4
-rhabeng	4
-rharabeng	4
-rhababeng	4
-% meer
-ngabeng	4
+habeng	4
+halabeng	4
+hanabeng	4
+hannabeng	4
+harabeng	4
+kababeng	4
+kabeng	4
+kakabeng	4
+kalabeng	4
+kanabeng	4
+katababeng	4
+katabeng	4
+katarabeng	4
+khababeng	4
+khabeng	4
+kharabeng	4
+mababeng	4
+mabarabeng	4
+mabeng	4
+mabhabeng	4
+mabharabeng	4
+malabeng	4
+manabeng	4
+marabeng	4
+matabeng	4
+nababeng	4
+nabeng	4
+nadhabeng	4
+nanabeng	4
+natababeng	4
+natabeng	4
+natarabeng	4
+nathabeng	4
+natharabeng	4
 ngababeng	4
+ngabeng	4
+ngagabeng	4
 ngakabeng	4
 ngakarabeng	4
-ngagabeng	4
-chabeng	4
-chababeng	4
-carabeng	4
+ngarabeng	4
+nnababeng	4
+nnabeng	4
+nnaddabeng	4
+nnaddarabeng	4
+nnanabeng	4
+nnannabeng	4
+nnarabeng	4
+nyacabeng	4
 nyachabeng	4
-ddabeng	4
-ddababeng	4
-ddarabeng	4
-ddharabeng	4
-talabeng	4
-bhabeng	4
-bhababeng	4
-ssakabeng	4
-harabeng	4
-hannabeng	4
-rrabeng	4
+nyajabeng	4
+palabeng	4
+panabeng	4
+patabeng	4
+phababeng	4
+phabeng	4
+phalabeng	4
+pharabeng	4
+ra1beng	4
+rabeng	4
+rarabeng	4
+rhababeng	4
+rhabeng	4
+rharabeng	4
 rrababeng	4
+rrabeng	4
 rrarabeng	4
+sababeng	4
+sakabeng	4
+sanabeng	4
+satababeng	4
+satabeng	4
+satarabeng	4
+sathabeng	4
+shababeng	4
+shabeng	4
+shalabeng	4
+shanabeng	4
+sharabeng	4
+shatabeng	4
+ssababeng	4
+ssabeng	4
+ssakabeng	4
+ssannabeng	4
+ssatthabeng	4
+tababeng	4
+tabeng	4
+talabeng	4
+tanabeng	4
+tarabeng	4
+tatababeng	4
+tatabeng	4
+thababeng	4
+thabeng	4
+tharabeng	4
+tthababeng	4
+tthabeng	4
+ttharabeng	4
+wababeng	4
+wabeng	4
+warabeng	4
+yababeng	4
+yabeng	4
+yarabeng	4
+yyababeng	4
+yyabeng	4
+yyarabeng	4
+%2020
+jabeng	4
+jhabeng	4
+pabeng	4
+nyabeng	4
+labeng	4
+sabeng	4
+kassabeng	4
+janyabeng	4
+karabeng	4
+garabeng	4
+parabeng	4
+larabeng	4
+sarabeng	4
+kassarabeng	4
+janyarabeng	4
+jhababeng	4
+nyababeng	4
+pababeng	4
+lababeng	4
+kassababeng	4
+janyababeng	4
+kassannabeng	4
+cacabeng	4
+cachabeng	4
+canyabeng	4
+cachababeng	4
+cacharabeng	4
+ddaddabeng	4
+nnatthabeng	4
+nnaddhabeng	4
+dadabeng	4
+dadababeng	4
+tathabeng	4
+nnamabeng	4
+natthabeng	4
+naddabeng	4
+naddarabeng	4
+nadabeng	4
+nadarabeng	4
+nadababeng	4
+nadharabeng	4
+papabeng	4
+pamabeng	4
+pasabeng	4
+laddabeng	4
+latabeng	4
+laphabeng	4
+laddarabeng	4
+shacabeng	4
+shachabeng	4
+ssaphabeng	4
+sakarabeng	4
+hamabeng	4
+kawabeng	4
+gawabeng	4
+tawabeng	4
+dawabeng	4
+mawabeng	4
+sawabeng	4
+tatawabeng	4
+satawabeng	4
 ivowelsignbeng	5
-
 class definition end
 
 class definition begin
 candrabindubeng	1
+rephcandrabindubeng	1
 iivowelsignbeng	2
 rephiivowelsignbeng	2
 iivowelsigncandrabindbeng	2
@@ -747,6 +1052,7 @@ lookup end
 lookup	shiftmark-beng	single
 
 candrabindubeng	candrabindualtbeng
+rephcandrabindubeng	rephcandrabindualtbeng
 iivowelsignbeng	iivowelsignaltbeng
 iivowelsigncandrabindbeng	iivowelsigncandrabindualtbeng
 rephiivowelsignbeng	rephiivowelsignaltbeng
@@ -754,6 +1060,474 @@ iivowelsigncandrabindurephbeng	iivowelcandrabindurephaltbeng
 
 lookup end
 
+
+
+
+lookup	swapivowel-beng	context
+
+class definition begin
+ivowelsignbeng	1
+iibeng	2
+ubeng	2
+ebeng	2
+obeng	2
+jabeng	2
+jhabeng	2
+nyabeng	2
+phabeng	2
+%bhabeng	2
+labeng	2
+januktabeng	2
+jhanuktabeng	2
+nyanuktabeng	2
+phanuktabeng	2
+%bhanuktabeng	2
+lanuktabeng	2
+kassabeng	2
+karabeng	2
+jarabeng	2
+jharabeng	2
+nyarabeng	2
+ttharabeng	2
+parabeng	2
+pharabeng	2
+%bharabeng	2
+larabeng	2
+sarabeng	2
+yyarabeng	2
+kassarabeng	2
+jababeng	2
+jhababeng	2
+nyababeng	2
+phababeng	2
+%bhababeng	2
+lababeng	2
+sababeng	2
+kassababeng	2
+kattabeng	2
+kattarabeng	2
+katabeng	2
+katababeng	2
+katarabeng	2
+kassannabeng	2
+ngagabeng	2
+cacabeng	2
+nyajabeng	2
+nyajhabeng	2
+ttamabeng	2
+nnatthabeng	2
+nnaddabeng	2
+nnaddarabeng	2
+tatabeng	2
+tathabeng	2
+tatababeng	2
+damabeng	2
+dhamabeng	2
+natabeng	2
+natthabeng	2
+naddabeng	2
+naddarabeng	2
+namabeng	2
+natababeng	2
+natarabeng	2
+nadharabeng	2
+bajabeng	2
+badabeng	2
+badarabeng	2
+matabeng	2
+mabhabeng	2
+mabarabeng	2
+mabharabeng	2
+lakabeng	2
+lagabeng	2
+lattabeng	2
+latabeng	2
+ladhabeng	2
+lapabeng	2
+lalabeng	2
+lattarabeng	2
+ssatthabeng	2
+ssamabeng	2
+ssakarabeng	2
+ssannabeng	2
+sakabeng	2
+sakarabeng	2
+satabeng	2
+satababeng	2
+sathabeng	2
+sanabeng	2
+satarabeng	2
+hamabeng	2
+sawabeng	2
+tatawabeng	2
+satawabeng	2
+abeng	3
+uubeng	3
+janyabeng	3
+janyarabeng	3
+hababeng	3
+janyababeng	3
+kamabeng	3
+kasabeng	3
+gadabeng	3
+gamabeng	3
+ngamabeng	3
+cachabeng	3
+canyabeng	3
+cachababeng	3
+cacharabeng	3
+ddamabeng	3
+nnaddhabeng	3
+tamabeng	3
+dadabeng	3
+dadababeng	3
+nadabeng	3
+nnamabeng	3
+nasabeng	3
+nadarabeng	3
+nadababeng	3
+madabeng	3
+maphabeng	3
+mamabeng	3
+laddabeng	3
+ladabeng	3
+lamabeng	3
+laddarabeng	3
+shacabeng	3
+ssaphabeng	3
+samabeng	3
+nahalfbeng	4
+dhababeng	4
+bababeng	4
+rababeng	4
+kassamabeng	4
+ngakhabeng	4
+jajabeng	4
+jajhabeng	4
+dagabeng	4
+daghabeng	4
+pamabeng	4
+mapabeng	4
+masabeng	4
+maparabeng	4
+laphabeng	4
+shachabeng	4
+shamabeng	4
+ssapabeng	4
+sakhabeng	4
+saphabeng	4
+aabeng	5
+kahalfbeng	5
+khahalfbeng	5
+gahalfbeng	5
+ghahalfbeng	5
+ngahalfbeng	5
+cahalfbeng	5
+chahalfbeng	5
+jahalfbeng	5
+jhahalfbeng	5
+nyahalfbeng	5
+ttahalfbeng	5
+tthahalfbeng	5
+ddahalfbeng	5
+ddhahalfbeng	5
+nnahalfbeng	5
+tahalfbeng	5
+thahalfbeng	5
+dahalfbeng	5
+dhahalfbeng	5
+pahalfbeng	5
+phahalfbeng	5
+bahalfbeng	5
+bhahalfbeng	5
+mahalfbeng	5
+yahalfbeng	5
+lahalfbeng	5
+shahalfbeng	5
+ssahalfbeng	5
+sahalfbeng	5
+hahalfbeng	5
+ra1halfbeng	5
+wahalfbeng	5
+kassahalfbeng	5
+janyahalfbeng	5
+kanuktahalfbeng	5
+khanuktahalfbeng	5
+ganuktahalfbeng	5
+ghanuktahalfbeng	5
+nganuktahalfbeng	5
+canuktahalfbeng	5
+chanuktahalfbeng	5
+januktahalfbeng	5
+jhanuktahalfbeng	5
+nyanuktahalfbeng	5
+ttanuktahalfbeng	5
+tthanuktahalfbeng	5
+ddanuktahalfbeng	5
+ddhanuktahalfbeng	5
+nnanuktahalfbeng	5
+tanuktahalfbeng	5
+thanuktahalfbeng	5
+danuktahalfbeng	5
+dhanuktahalfbeng	5
+nanuktahalfbeng	5
+panuktahalfbeng	5
+phanuktahalfbeng	5
+banuktahalfbeng	5
+bhanuktahalfbeng	5
+manuktahalfbeng	5
+yanuktahalfbeng	5
+lanuktahalfbeng	5
+shanuktahalfbeng	5
+ssanuktahalfbeng	5
+sanuktahalfbeng	5
+hanuktahalfbeng	5
+ra1nuktahalfbeng	5
+wanuktahalfbeng	5
+ngaghabeng	5
+ngakassabeng	5
+jajababeng	5
+ddagabeng	5
+ddaddabeng	5
+rragabeng	5
+pasabeng	5
+sapabeng	5
+saparabeng	5
+class definition end
+
+class	1,2	1,swapivowel1-beng
+class	1,3	1,swapivowel2-beng
+class	1,4	1,swapivowel3-beng
+class	1,5	1,swapivowel4-beng
+
+lookup end
+
+
+lookup	swapivowel1-beng	single
+
+ivowelsignbeng	ivowelsign1beng
+
+lookup end
+
+
+lookup	swapivowel2-beng	single
+
+ivowelsignbeng	ivowelsign2beng
+
+lookup end
+
+
+lookup	swapivowel3-beng	single
+
+ivowelsignbeng	ivowelsign3beng
+
+lookup end
+
+
+lookup	swapivowel4-beng	single
+
+ivowelsignbeng	ivowelsign4beng
+
+lookup end
+
+
+lookup	iCandraLigature-beng	context
+
+class definition begin
+ivowelsignbeng	1
+ivowelsign1beng	1
+ivowelsign2beng	1
+ivowelsign3beng	1
+ivowelsign4beng	1
+babeng	2
+babhabeng	2
+badhabeng	2
+balabeng	2
+barabeng	2
+bhababeng	2
+bhabeng	2
+bhalabeng	2
+bharabeng	2
+cababeng	2
+cabeng	2
+canabeng	2
+carabeng	2
+chababeng	2
+chabeng	2
+charabeng	2
+dababeng	2
+dabeng	2
+dabhabeng	2
+dabharabeng	2
+dadhababeng	2
+dadhabeng	2
+danabeng	2
+darabeng	2
+ddababeng	2
+ddabeng	2
+ddarabeng	2
+ddhababeng	2
+ddhabeng	2
+ddharabeng	2
+dhabeng	2
+dhanabeng	2
+%gababeng	2
+%gabeng	2
+galabeng	2
+ganabeng	2
+%ghababeng	2
+%ghabeng	2
+ghalabeng	2
+ghanabeng	2
+hababeng	2
+habeng	2
+halabeng	2
+hanabeng	2
+hannabeng	2
+harabeng	2
+kababeng	2
+kabeng	2
+kakabeng	2
+kalabeng	2
+kanabeng	2
+katababeng	2
+katabeng	2
+katarabeng	2
+mababeng	2
+mabarabeng	2
+mabeng	2
+mabhabeng	2
+mabharabeng	2
+malabeng	2
+manabeng	2
+marabeng	2
+matabeng	2
+nababeng	2
+nabeng	2
+nadhabeng	2
+nanabeng	2
+natababeng	2
+natabeng	2
+natarabeng	2
+nathabeng	2
+natharabeng	2
+ngababeng	2
+ngabeng	2
+ngagabeng	2
+ngakabeng	2
+ngarabeng	2
+nnababeng	2
+nnabeng	2
+nnaddabeng	2
+nnaddarabeng	2
+nnanabeng	2
+nnannabeng	2
+nnarabeng	2
+nyacabeng	2
+nyachabeng	2
+nyajabeng	2
+phababeng	2
+phabeng	2
+phalabeng	2
+pharabeng	2
+ra1beng	2
+rabeng	2
+rhababeng	2
+rhabeng	2
+rharabeng	2
+sababeng	2
+sakabeng	2
+sanabeng	2
+satababeng	2
+satabeng	2
+satarabeng	2
+sathabeng	2
+ssakabeng	2
+ssannabeng	2
+tababeng	2
+tabeng	2
+talabeng	2
+tanabeng	2
+tarabeng	2
+tatababeng	2
+tatabeng	2
+thababeng	2
+thabeng	2
+tharabeng	2
+wababeng	2
+wabeng	2
+yababeng	2
+yabeng	2
+yyababeng	2
+yyabeng	2
+% 2020
+jabeng	2
+nyabeng	2
+kassabeng	2
+janyabeng	2
+rrabeng	2
+karabeng	2
+sarabeng	2
+rrarabeng	2
+kassarabeng	2
+janyarabeng	2
+nyababeng	2
+rrababeng	2
+kassababeng	2
+janyababeng	2
+kassannabeng	2
+gadhabeng	2
+ngakarabeng	2
+cacabeng	2
+cachabeng	2
+canyabeng	2
+cachababeng	2
+cacharabeng	2
+ddaddabeng	2
+nnaddhabeng	2
+dadabeng	2
+dadababeng	2
+naddabeng	2
+naddarabeng	2
+nadabeng	2
+nadarabeng	2
+nadababeng	2
+nadharabeng	2
+laddabeng	2
+latabeng	2
+laphabeng	2
+laddarabeng	2
+shacabeng	2
+shachabeng	2
+ssaphabeng	2
+sakarabeng	2
+hamabeng	2
+kawabeng	2
+tawabeng	2
+dawabeng	2
+mawabeng	2
+sawabeng	2
+tatawabeng	2
+satawabeng	2
+candrabindualtbeng	3
+class definition end
+
+class	1,2,3	1,swapCandraI-beng	3,swapCandraI-beng
+
+lookup end
+
+
+
+lookup	swapCandraI-beng	single
+
+ivowelsignbeng	ivowelsigncandrabindbeng
+ivowelsign1beng	ivowelsigncandrabind1beng
+ivowelsign2beng	ivowelsigncandrabind2beng
+ivowelsign3beng	ivowelsigncandrabind3beng
+ivowelsign4beng	ivowelsigncandrabind4beng
+candrabindualtbeng	dummymarkbeng
+
+lookup end
 
 
 lookup	vowelligatures-beng	ligature
@@ -847,6 +1621,8 @@ lookup end
 
 lookup	shiftvowel-beng	chained
 
+markattachmenttype	1
+
 backtrackclass definition begin
 % vattu
 garabeng	1
@@ -908,6 +1684,9 @@ namabeng	1
 pamabeng	1
 lamabeng	1
 shamabeng	1
+% 2020
+kawabeng	1
+gawabeng	1
 % with moving vowels
 marabeng	2
 tababeng	2
@@ -921,6 +1700,8 @@ bhalabeng	2
 patabeng	2
 latabeng	2
 shatabeng	2
+% 2020
+tawabeng	2
 % Bold interpolate
 panabeng	4
 palabeng	4
@@ -928,6 +1709,9 @@ malabeng	4
 galabeng	4
 mababeng	4
 sababeng	4
+% 2020
+mawabeng	4
+sawabeng	4
 % low vowel
 kharabeng	2
 gharabeng	2
@@ -968,6 +1752,8 @@ dabhabeng	2
 tamabeng	2
 % 2017
 ttattabeng	2
+% 2020
+dawabeng	2
 % moved to lowest 2017
 sakhabeng	3
 lattarabeng	3
@@ -1044,6 +1830,9 @@ rhababeng	3
 kassababeng	3
 janyarabeng	3
 janyababeng	3
+% 2020
+tatawabeng	3
+satawabeng	3
 phattabeng	4
 mabarabeng	4
 nyajhabeng	4
@@ -1206,6 +1995,9 @@ rhababeng	ddhanuktahalfbeng	babeng
 kassababeng	kassahalfbeng	babeng
 janyarabeng	jahalfbeng	nyarabeng
 janyababeng	janyahalfbeng	babeng
+% 2020
+tatawabeng	tahalfbeng	tawabeng
+satawabeng	sahalfbeng	tawabeng
 
 lookup end
 
@@ -1257,6 +2049,9 @@ halabeng	hahalfbeng	labeng
 ssakarabeng	ssahalfbeng	karabeng
 sakarabeng	sahalfbeng	karabeng
 cacharabeng	cahalfbeng	charasquishbeng
+% 2020
+tatawabeng	tahalfbeng	tahalfbeng	wabeng
+satawabeng	sahalfbeng	tahalfbeng	wabeng
 
 lookup end
 
@@ -1327,6 +2122,8 @@ lookup end
 
 
 lookup	attachvowel-beng	chained
+
+markattachmenttype	1
 
 backtrackclass definition begin
 ngabeng	1
@@ -1512,7 +2309,6 @@ lookup	rephyyiicansplit-beng	multiple
 dummymarkbeng	yapostformbeng	yaiivowelcandrabindurephbeng
 
 lookup end
-
 
 
 
