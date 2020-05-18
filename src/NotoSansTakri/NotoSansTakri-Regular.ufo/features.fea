@@ -1,0 +1,353 @@
+@MA1 = [ anusvara-takr aaMatra-takr eMatra-takr aiMatra-takr oMatra-takr auMatra-takr virama-takr ];
+
+@MA2 = [ uMatra-takr uuMatra-takr nukta-takr ya.blw ra.blw ];
+
+@MA3 = [ ha.pst  ];
+
+# Prefix: Languagesystems
+languagesystem takr dflt;
+
+
+# Prefix: ref_gsub
+lookup HaPost {
+	sub virama-takr ha-takr by ha.pst;
+} HaPost;
+
+lookup BelowRaYa {
+	sub virama-takr ya-takr by ya.blw;
+	sub virama-takr ra-takr by ra.blw;
+} BelowRaYa;
+
+
+# Prefix: ref_gpos
+lookup IMatraLig {
+	lookupflag MarkAttachmentType @MA1;
+	sub iMatra-takr by I_anusvara;
+} IMatraLig;
+
+lookup IMatraAlt1 {
+	lookupflag MarkAttachmentType @MA1;
+	sub iMatra-takr by iMatra-takr.alt;
+} IMatraAlt1;
+
+lookup IMatraAlt2 {
+	lookupflag MarkAttachmentType @MA1;
+	sub iMatra-takr by I_anusvara.alt;
+} IMatraAlt2;
+
+lookup NullMark {
+	sub anusvara-takr by NullMark;
+} NullMark;
+
+lookup ShiftII {;
+	pos iiMatra-takr <0 0 80 0>;
+} ShiftII;
+
+lookup ShiftAnusvara {
+	pos anusvara-takr <0 0 350 50>;
+} ShiftAnusvara;
+
+lookup ShiftU {;
+	pos uMatra-takr <0 0 -20 0>;
+	pos uuMatra-takr <0 0 -20 0>;
+} ShiftU;
+
+lookup AddWidthAAMatra {
+	pos i-takr' 105;
+	pos ii-takr' 105;
+	pos u-takr' 60;
+	pos uu-takr' 60;
+	pos ai-takr' 184;
+	pos o-takr' 130;
+	pos au-takr' 130;
+	pos kha-takr' 31;
+	pos jha-takr' 19;
+	pos dda-takr' 92;
+	pos ta-takr' 92;
+	pos da-takr' 51;
+	pos na-takr' 33;
+	pos pa-takr' 31;
+	pos pha-takr' 43;
+	pos bha-takr' 82;
+	pos ra-takr' 33;
+	pos va-takr' 9;
+	pos ha-takr' 79;
+	pos rra-takr' 63;
+} AddWidthAAMatra;
+
+lookup AddWidthAAMatraAnusvara {
+	pos i-takr' 215;
+	pos ii-takr' 215;
+	pos u-takr' 170;
+	pos uu-takr' 170;
+	pos ai-takr' 294;
+	pos o-takr' 240;
+	pos au-takr' 240;
+	pos kha-takr' 141;
+	pos jha-takr' 129;
+	pos dda-takr' 202;
+	pos ta-takr' 202;
+	pos da-takr' 161;
+	pos na-takr' 143;
+	pos pa-takr' 141;
+	pos pha-takr' 153;
+	pos bha-takr' 192;
+	pos ra-takr' 143;
+	pos va-takr' 119;
+	pos ha-takr' 189;
+	pos rra-takr' 173;
+	pos Tra' 110;
+	pos a-takr' 110;
+	pos aa-takr' 110;
+	pos archaicKha-takr' 110;
+	pos ba-takr' 110;
+	pos ca-takr' 110;
+	pos cha-takr' 110;
+	pos ddha-takr' 110;
+	pos dha-takr' 110;
+	pos dottedCircle' 110;
+	pos e-takr' 110;
+	pos ga-takr' 110;
+	pos gha-takr' 110;
+	pos ja-takr' 110;
+	pos ka-takr' 110;
+	pos la-takr' 110;
+	pos ma-takr' 110;
+	pos nga-takr' 110;
+	pos nna-takr' 110;
+	pos nya-takr' 110;
+	pos sa-takr' 110;
+	pos sha-takr' 110;
+	pos tha-takr' 110;
+	pos tta-takr' 110;
+	pos ttha-takr' 110;
+	pos ya-takr' 110;	
+} AddWidthAAMatraAnusvara;
+
+
+feature akhn {
+lookup Conjuncts {
+	sub ta-takr virama-takr ra-takr by Tra;
+} Conjuncts;
+} akhn;
+
+feature blwf {
+lookup BelowRaYaChain {
+	lookupflag 0;
+	@bt = [dottedCircle jha-takr nga-takr va-takr bha-takr ya-takr rra-takr ba-takr ra-takr nna-takr ja-takr da-takr tta-takr gha-takr ha-takr nya-takr tha-takr la-takr dda-takr archaicKha-takr sa-takr ga-takr sha-takr ka-takr pa-takr na-takr cha-takr kha-takr ttha-takr dha-takr ca-takr ta-takr ddha-takr pha-takr ma-takr Tra];
+	@input1 = [virama-takr];
+	@input2 = [ya-takr ra-takr];
+	sub @bt @input1' lookup BelowRaYa @input2' ;
+} BelowRaYaChain;
+} blwf;
+
+feature pstf {
+lookup HaPostChained {
+	lookupflag 0;
+	@bt = [dottedCircle jha-takr nga-takr va-takr bha-takr ya-takr rra-takr ba-takr ra-takr nna-takr ja-takr da-takr tta-takr gha-takr ha-takr nya-takr tha-takr la-takr dda-takr archaicKha-takr sa-takr Tra ga-takr sha-takr ka-takr pa-takr na-takr cha-takr kha-takr ttha-takr dha-takr ca-takr ta-takr ddha-takr pha-takr ma-takr];
+	@input1 = [virama-takr];
+	@input2 = [ha-takr];
+	sub @bt @input1' lookup HaPost @input2' ;
+} HaPostChained;
+
+} pstf;
+
+feature abvs {
+lookup VowelSubChain {
+	lookupflag MarkAttachmentType @MA1;
+	@input1 = [iMatra-takr];
+	@input2 = [kha-takr ga-takr gha-takr nga-takr ca-takr cha-takr ja-takr jha-takr nya-takr tta-takr ttha-takr dda-takr ddha-takr nna-takr ta-takr tha-takr da-takr dha-takr na-takr pa-takr pha-takr ba-takr bha-takr ya-takr la-takr va-takr sha-takr sa-takr ha-takr rra-takr archaicKha-takr dottedCircle Tra];
+	@input3 = [anusvara-takr];
+	@input4 = [ka-takr ma-takr ra-takr];
+
+	sub @input1' lookup IMatraLig @input2' @input3' lookup NullMark ;
+	sub @input1' lookup IMatraAlt2 @input4' @input3' lookup NullMark ;
+	sub @input1' lookup IMatraAlt1 @input4' ;
+} VowelSubChain;
+
+} abvs;
+
+feature kern {
+lookup IKern {
+	lookupflag IgnoreMarks;
+	pos iMatra-takr kha-takr' <111 0 111 0>;
+	pos iMatra-takr ga-takr' <35 0 35 0>;
+	pos iMatra-takr gha-takr' <117 0 117 0>;
+	pos iMatra-takr nga-takr' <10 0 10 0>;
+	pos iMatra-takr ca-takr' <-60 0 -60 0>;
+	pos iMatra-takr cha-takr' <99 0 99 0>;
+	pos iMatra-takr ja-takr' <10 0 10 0>;
+	pos iMatra-takr jha-takr' <91 0 91 0>;
+	pos iMatra-takr nya-takr' <16 0 16 0>;
+	pos iMatra-takr tta-takr' <-20 0 -20 0>;
+	pos iMatra-takr ttha-takr' <-30 0 -30 0>;
+	pos iMatra-takr dda-takr' <-20 0 -20 0>;
+	pos iMatra-takr ddha-takr' <-73 0 -73 0>;
+	pos iMatra-takr nna-takr' <-20 0 -20 0>;
+	pos iMatra-takr ta-takr' <30 0 30 0>;
+	pos iMatra-takr tha-takr' <56 0 56 0>;
+	pos iMatra-takr da-takr' <-75 0 -75 0>;
+	pos iMatra-takr dha-takr' <56 0 56 0>;
+	pos iMatra-takr na-takr' <6 0 6 0>;
+	pos iMatra-takr pa-takr' <111 0 111 0>;
+	pos iMatra-takr pha-takr' <30 0 30 0>;
+	pos iMatra-takr ba-takr' <117 0 117 0>;
+	pos iMatra-takr bha-takr' <-40 0 -40 0>;
+	pos iMatra-takr ya-takr' <57 0 57 0>;
+	pos iMatra-takr la-takr' <-60 0 -60 0>;
+	pos iMatra-takr va-takr' <88 0 88 0>;
+	pos iMatra-takr sha-takr' <-40 0 -40 0>;
+	pos iMatra-takr sa-takr' <100 0 100 0>;
+	pos iMatra-takr ha-takr' <-22 0 -22 0>;
+	pos iMatra-takr rra-takr' <-30 0 -30 0>;
+	pos iMatra-takr archaicKha-takr' <86 0 86 0>;
+	pos iMatra-takr dottedCircle' <-50 0 -50 0>;
+	pos iMatra-takr Tra' <-30 0 -30 0>;
+	pos I_anusvara.alt ka-takr' <107 0 107 0>;
+	pos I_anusvara.alt ma-takr' <142 0 142 0>;
+	pos I_anusvara.alt ra-takr' <86 0 86 0>;
+	pos I_anusvara kha-takr' <111 0 111 0>;
+	pos I_anusvara ga-takr' <35 0 35 0>;
+	pos I_anusvara gha-takr' <117 0 117 0>;
+	pos I_anusvara nga-takr' <10 0 10 0>;
+	pos I_anusvara ca-takr' <-60 0 -60 0>;
+	pos I_anusvara cha-takr' <99 0 99 0>;
+	pos I_anusvara ja-takr' <10 0 10 0>;
+	pos I_anusvara jha-takr' <91 0 91 0>;
+	pos I_anusvara nya-takr' <16 0 16 0>;
+	pos I_anusvara tta-takr' <-20 0 -20 0>;
+	pos I_anusvara ttha-takr' <-30 0 -30 0>;
+	pos I_anusvara dda-takr' <-20 0 -20 0>;
+	pos I_anusvara ddha-takr' <-73 0 -73 0>;
+	pos I_anusvara nna-takr' <-20 0 -20 0>;
+	pos I_anusvara ta-takr' <30 0 30 0>;
+	pos I_anusvara tha-takr' <56 0 56 0>;
+	pos I_anusvara da-takr' <-75 0 -75 0>;
+	pos I_anusvara dha-takr' <56 0 56 0>;
+	pos I_anusvara na-takr' <6 0 6 0>;
+	pos I_anusvara pa-takr' <111 0 111 0>;
+	pos I_anusvara pha-takr' <30 0 30 0>;
+	pos I_anusvara ba-takr' <117 0 117 0>;
+	pos I_anusvara bha-takr' <-40 0 -40 0>;
+	pos I_anusvara ya-takr' <57 0 57 0>;
+	pos I_anusvara la-takr' <-60 0 -60 0>;
+	pos I_anusvara va-takr' <88 0 88 0>;
+	pos I_anusvara sha-takr' <-40 0 -40 0>;
+	pos I_anusvara sa-takr' <100 0 100 0>;
+	pos I_anusvara ha-takr' <-22 0 -22 0>;
+	pos I_anusvara rra-takr' <-30 0 -30 0>;
+	pos I_anusvara archaicKha-takr' <86 0 86 0>;
+	pos I_anusvara dottedCircle' <-50 0 -50 0>;
+	pos I_anusvara Tra' <-30 0 -30 0>;
+	pos iMatra-takr.alt ka-takr' <107 0 107 0>;
+	pos iMatra-takr.alt ma-takr' <142 0 142 0>;
+	pos iMatra-takr.alt ra-takr' <86 0 86 0>;
+} IKern;
+
+lookup IIKern {
+	lookupflag IgnoreMarks;
+	pos kha-takr iiMatra-takr' <35 0 35 0>;
+	pos ga-takr iiMatra-takr' <35 0 35 0>;
+	pos gha-takr iiMatra-takr' <30 0 30 0>;
+	pos nga-takr iiMatra-takr' <-130 0 -130 0>;
+	pos ca-takr iiMatra-takr' <55 0 55 0>;
+	pos cha-takr iiMatra-takr' <-40 0 -40 0>;
+	pos ja-takr iiMatra-takr' <20 0 20 0>;
+	pos jha-takr iiMatra-takr' <-20 0 -20 0>;
+	pos nya-takr iiMatra-takr' <55 0 55 0>;
+	pos tta-takr iiMatra-takr' <-37 0 -37 0>;
+	pos ttha-takr iiMatra-takr' <-100 0 -100 0>;
+	pos dda-takr iiMatra-takr' <-80 0 -80 0>;
+	pos ddha-takr iiMatra-takr' <-50 0 -50 0>;
+	pos nna-takr iiMatra-takr' <-40 0 -40 0>;
+	pos ta-takr iiMatra-takr' <-80 0 -80 0>;
+	pos tha-takr iiMatra-takr' <34 0 34 0>;
+	pos da-takr iiMatra-takr' <55 0 55 0>;
+	pos dha-takr iiMatra-takr' <35 0 35 0>;
+	pos na-takr iiMatra-takr' <-149 0 -149 0>;
+	pos pa-takr iiMatra-takr' <35 0 35 0>;
+	pos pha-takr iiMatra-takr' <-100 0 -100 0>;
+	pos ba-takr iiMatra-takr' <35 0 35 0>;
+	pos bha-takr iiMatra-takr' <-50 0 -50 0>;
+	pos ya-takr iiMatra-takr' <34 0 34 0>;
+	pos la-takr iiMatra-takr' <-20 0 -20 0>;
+	pos va-takr iiMatra-takr' <35 0 35 0>;
+	pos sha-takr iiMatra-takr' <35 0 35 0>;
+	pos sa-takr iiMatra-takr' <20 0 20 0>;
+	pos ha-takr iiMatra-takr' <-50 0 -50 0>;
+	pos rra-takr iiMatra-takr' <-80 0 -80 0>;
+	pos archaicKha-takr iiMatra-takr' <20 0 20 0>;
+	pos dottedCircle iiMatra-takr' <-80 0 -80 0>;
+	pos Tra iiMatra-takr' <-80 0 -80 0>;
+	pos ka-takr iiMatra-takr' <76 0 76 0>;
+	pos ma-takr iiMatra-takr' <-50 0 -50 0>;
+	pos ra-takr iiMatra-takr' <-160 0 -160 0>;
+} IIKern;
+
+lookup HaPostKern {
+	lookupflag MarkAttachmentType @MA3;
+	pos kha-takr' <0 0 160 0> ha.pst;
+	pos ga-takr' <0 0 180 0> ha.pst;
+	pos gha-takr' <0 0 190 0> ha.pst;
+	pos nga-takr' <0 0 50 0> ha.pst;
+	pos ca-takr' <0 0 180 0> ha.pst;
+	pos cha-takr' <0 0 180 0> ha.pst;
+	pos ja-takr' <0 0 180 0> ha.pst;
+	pos jha-takr' <0 0 190 0> ha.pst;
+	pos nya-takr' <0 0 180 0> ha.pst;
+	pos tta-takr' <0 0 90 0> ha.pst;
+	pos ttha-takr' <0 0 180 0> ha.pst;
+	pos dda-takr' <0 0 190 0> ha.pst;
+	pos ddha-takr' <0 0 210 0> ha.pst;
+	pos nna-takr' <0 0 190 0> ha.pst;
+	pos ta-takr' <0 0 180 0> ha.pst;
+	pos tha-takr' <0 0 160 0> ha.pst;
+	pos da-takr' <0 0 180 0> ha.pst;
+	pos dha-takr' <0 0 180 0> ha.pst;
+	pos na-takr' <0 0 160 0> ha.pst;
+	pos pa-takr' <0 0 180 0> ha.pst;
+	pos pha-takr' <0 0 180 0> ha.pst;
+	pos ba-takr' <0 0 180 0> ha.pst;
+	pos bha-takr' <0 0 180 0> ha.pst;
+	pos ya-takr' <0 0 180 0> ha.pst;
+	pos la-takr' <0 0 200 0> ha.pst;
+	pos va-takr' <0 0 180 0> ha.pst;
+	pos sha-takr' <0 0 180 0> ha.pst;
+	pos sa-takr' <0 0 180 0> ha.pst;
+	pos ha-takr' <0 0 180 0> ha.pst;
+	pos rra-takr' <0 0 160 0> ha.pst;
+	pos archaicKha-takr' <0 0 180 0> ha.pst;
+	pos dottedCircle' <0 0 160 0> ha.pst;
+	pos Tra' <0 0 160 0> ha.pst;
+	pos ka-takr' <0 0 160 0> ha.pst;
+	pos ma-takr' <0 0 180 0> ha.pst;
+	pos ra-takr' <0 0 180 0> ha.pst;
+} HaPostKern;
+
+lookup IIAnusvara {;
+	lookupflag MarkAttachmentType @MA1;
+	@input1 = [ nga-takr ];
+	@input2 = [ iiMatra-takr ];
+	@input3 = [ anusvara-takr ];
+	pos @input1' @input2' lookup ShiftII @input3' lookup ShiftAnusvara ;
+} IIAnusvara;
+
+lookup TraUKern {
+	lookupflag MarkAttachmentType @MA2;
+	@input1 = [Tra];
+	@input2 = [ uMatra-takr uuMatra-takr ];
+
+	pos @input1' @input2' lookup ShiftU ;
+} TraUKern;
+
+
+} kern;
+
+feature dist {
+lookup AAMatraWidth {
+	@input = [ka-takr kha-takr ga-takr gha-takr nga-takr ca-takr cha-takr ja-takr jha-takr nya-takr tta-takr ttha-takr dda-takr ddha-takr nna-takr ta-takr tha-takr da-takr dha-takr na-takr pa-takr pha-takr ba-takr bha-takr ma-takr ya-takr ra-takr la-takr va-takr sha-takr sa-takr ha-takr rra-takr archaicKha-takr Tra ];
+	pos @input' lookup AddWidthAAMatraAnusvara aaMatra-takr anusvara-takr;
+	pos @input' lookup AddWidthAAMatra aaMatra-takr;
+	pos iiMatra-takr' 86 anusvara-takr;
+} AAMatraWidth;
+} dist;
