@@ -14,12 +14,14 @@
 languagesystem DFLT dflt;
 languagesystem DFLT SAN;
 
-feature ccmp {
+# Prefix: ref_gsub
 lookup InitialRaContext {
+	lookupflag 0;
 	sub initialRa_zanb' [a_zanb ka_zanb kha_zanb ga_zanb gha_zanb nga_zanb ca_zanb cha_zanb ja_zanb nya_zanb tta_zanb ttha_zanb dda_zanb ddha_zanb nna_zanb ta_zanb tha_zanb da_zanb dha_zanb na_zanb pa_zanb pha_zanb ba_zanb bha_zanb ma_zanb tsa_zanb tsha_zanb dza_zanb dzha_zanb zha_zanb za_zanb aa_zanb ya_zanb ra_zanb la_zanb va_zanb sha_zanb ssa_zanb sa_zanb ha_zanb kssa_zanb ] by initialRa_zanb subjoiner_zanb;
 } InitialRaContext;
 
 lookup SubJoinedForms {
+	lookupflag 0;
 	sub subjoiner_zanb a_zanb by a_zanb.sub;
 	sub subjoiner_zanb ka_zanb by ka_zanb.sub;
 	sub subjoiner_zanb kha_zanb by kha_zanb.sub;
@@ -68,16 +70,13 @@ lookup finalVaChained {
 	sub [finalRa_zanb a_zanb ka_zanb kha_zanb ga_zanb gha_zanb nga_zanb ca_zanb cha_zanb ja_zanb nya_zanb ttha_zanb dda_zanb ddha_zanb nna_zanb ta_zanb tha_zanb da_zanb dha_zanb na_zanb pa_zanb pha_zanb ba_zanb bha_zanb ma_zanb tsa_zanb tsha_zanb dza_zanb dzha_zanb zha_zanb za_zanb aa_zanb ya_zanb ra_zanb la_zanb sha_zanb ssa_zanb sa_zanb ha_zanb kssa_zanb ka_zanb.short ga_zanb.short nga_zanb.short ca_zanb.short ja_zanb.short nya_zanb.short ta_zanb.short da_zanb.short na_zanb.short pa_zanb.short ba_zanb.short ma_zanb.short tsa_zanb.short dza_zanb.short ha_zanb.short a_zanb.sub ka_zanb.sub kha_zanb.sub ga_zanb.sub gha_zanb.sub nga_zanb.sub ca_zanb.sub cha_zanb.sub ja_zanb.sub nya_zanb.sub tta_zanb.sub ttha_zanb.sub dda_zanb.sub ddha_zanb.sub nna_zanb.sub ta_zanb.sub tha_zanb.sub da_zanb.sub dha_zanb.sub na_zanb.sub pa_zanb.sub pha_zanb.sub ba_zanb.sub bha_zanb.sub ma_zanb.sub tsa_zanb.sub tsha_zanb.sub dza_zanb.sub dzha_zanb.sub zha_zanb.sub za_zanb.sub aa_zanb.sub ya_zanb.sub ra_zanb.sub la_zanb.sub va_zanb.sub sha_zanb.sub ssa_zanb.sub sa_zanb.sub ha_zanb.sub kssa_zanb.sub ] finalVa_zanb' by finalVa_zanb.stem;
 } finalVaChained;
 
-
-} ccmp;
-
-feature rclt {
 lookup ShortHeadContext {
-	script DFLT;
+	lookupflag 0;
 	sub [la_zanb sa_zanb ]' [a_zanb.sub ka_zanb.sub kha_zanb.sub ga_zanb.sub gha_zanb.sub nga_zanb.sub ca_zanb.sub cha_zanb.sub ja_zanb.sub nya_zanb.sub tta_zanb.sub ttha_zanb.sub dda_zanb.sub ddha_zanb.sub nna_zanb.sub ta_zanb.sub tha_zanb.sub da_zanb.sub dha_zanb.sub na_zanb.sub pa_zanb.sub pha_zanb.sub ba_zanb.sub bha_zanb.sub ma_zanb.sub tsa_zanb.sub tsha_zanb.sub dza_zanb.sub dzha_zanb.sub zha_zanb.sub za_zanb.sub aa_zanb.sub ya_zanb.sub ra_zanb.sub la_zanb.sub va_zanb.sub sha_zanb.sub ssa_zanb.sub sa_zanb.sub ha_zanb.sub kssa_zanb.sub ] by [la_zanb.head sa_zanb.head ];
 } ShortHeadContext;
 
 lookup ShortSubjoinedContext {
+	lookupflag 0;
 	sub [initialRa_zanb la_zanb sa_zanb la_zanb.head sa_zanb.head ] [ka_zanb.sub ga_zanb.sub nga_zanb.sub ca_zanb.sub ja_zanb.sub nya_zanb.sub ta_zanb.sub da_zanb.sub na_zanb.sub pa_zanb.sub ba_zanb.sub ma_zanb.sub tsa_zanb.sub dza_zanb.sub ha_zanb.sub ]' by [ka_zanb.short ga_zanb.short nga_zanb.short ca_zanb.short ja_zanb.short nya_zanb.short ta_zanb.short da_zanb.short na_zanb.short pa_zanb.short ba_zanb.short ma_zanb.short tsa_zanb.short dza_zanb.short ha_zanb.short ];
 } ShortSubjoinedContext;
 
@@ -103,12 +102,47 @@ lookup AltAIAU {
 	sub au_zanb lengthMark_zanb [o_zanb o_zanb.wide ]' by [o_zanb.au o_zanb.wide.au ]; 
 } AltAIAU;
 
-
 lookup AltFlagsContext {
 	lookupflag MarkAttachmentType @MA2;
 	sub ai_zanb [tsa_zanb tsha_zanb dza_zanb dzha_zanb ]' by [tsa_zanb.flat tsha_zanb.flat dza_zanb.flat dzha_zanb.flat ];
 	sub [tsa_zanb tsha_zanb dza_zanb dzha_zanb ]' ai_zanb by [tsa_zanb.flat tsha_zanb.flat dza_zanb.flat dzha_zanb.flat ];
 } AltFlagsContext;
+
+table GDEF {
+  # automatic
+  GlyphClassDef
+    [dottedCircle a_zanb ka_zanb kha_zanb ga_zanb gha_zanb nga_zanb ca_zanb cha_zanb ja_zanb nya_zanb tta_zanb ttha_zanb dda_zanb ddha_zanb nna_zanb ta_zanb tha_zanb da_zanb dha_zanb na_zanb pa_zanb pha_zanb ba_zanb bha_zanb ma_zanb tsa_zanb tsha_zanb dza_zanb dzha_zanb zha_zanb za_zanb aa_zanb ya_zanb ra_zanb la_zanb va_zanb sha_zanb ssa_zanb sa_zanb ha_zanb kssa_zanb initialRa_zanb tsa_zanb.flat tsha_zanb.flat dza_zanb.flat dzha_zanb.flat la_zanb.head sa_zanb.head initialHeadMark_zanb initialDoubleHeadMark_zanb], # Base
+    , # Liga
+    [i_zanb i_zanb.wide ue_zanb ue_zanb.wide u_zanb u_zanb.wide e_zanb e_zanb.wide e_zanb.wide.ai e_zanb.ai oe_zanb oe_zanb.wide o_zanb o_zanb.wide o_zanb.wide.ai o_zanb.ai o_zanb.wide.au o_zanb.au ai_zanb au_zanb reversed_i_zanb reversed_i_zanb.wide lengthMark_zanb finalConsonantMark_zanb virama_zanb candrabindu_zanb candrabinduWithOrnament_zanb candraWithOrnament_zanb anusvara_zanb finalYa_zanb finalRa_zanb finalLa_zanb finalVa_zanb subjoiner_zanb finalVa_zanb.stem a_zanb.sub ka_zanb.sub kha_zanb.sub ga_zanb.sub gha_zanb.sub nga_zanb.sub ca_zanb.sub cha_zanb.sub ja_zanb.sub nya_zanb.sub tta_zanb.sub ttha_zanb.sub dda_zanb.sub ddha_zanb.sub nna_zanb.sub ta_zanb.sub tha_zanb.sub da_zanb.sub dha_zanb.sub na_zanb.sub pa_zanb.sub pha_zanb.sub ba_zanb.sub bha_zanb.sub ma_zanb.sub tsa_zanb.sub tsha_zanb.sub dza_zanb.sub dzha_zanb.sub zha_zanb.sub za_zanb.sub aa_zanb.sub ya_zanb.sub ra_zanb.sub la_zanb.sub va_zanb.sub sha_zanb.sub ssa_zanb.sub sa_zanb.sub ha_zanb.sub kssa_zanb.sub ka_zanb.short ga_zanb.short nga_zanb.short ca_zanb.short ja_zanb.short nya_zanb.short ta_zanb.short da_zanb.short na_zanb.short pa_zanb.short ba_zanb.short ma_zanb.short tsa_zanb.short dza_zanb.short ha_zanb.short], # Mark
+    ;
+} GDEF;
+
+feature ccmp {
+language dflt;
+lookup InitialRaContext;
+lookup SubJoinedForms;
+lookup finalVaChained;
+
+language SAN;
+lookup InitialRaContext;
+lookup SubJoinedForms;
+lookup finalVaChained;
+} ccmp;
+
+feature rclt {
+language dflt;
+lookup ShortHeadContext;
+lookup ShortSubjoinedContext;
+lookup AltBelowContext;
+lookup AltAboveContext;
+lookup AltAIAU;
+lookup AltFlagsContext;
+
+language SAN;
+lookup AltBelowContext;
+lookup AltAboveContext;
+lookup AltAIAU;
+lookup AltFlagsContext;
 } rclt;
 
 feature kern {
@@ -118,11 +152,3 @@ lookup AddSpaceWithASub {
 } AddSpaceWithASub;
 } kern;
 
-table GDEF {
-  # automatic
-  GlyphClassDef
-    [dottedCircle a_zanb ka_zanb kha_zanb ga_zanb gha_zanb nga_zanb ca_zanb cha_zanb ja_zanb nya_zanb tta_zanb ttha_zanb dda_zanb ddha_zanb nna_zanb ta_zanb tha_zanb da_zanb dha_zanb na_zanb pa_zanb pha_zanb ba_zanb bha_zanb ma_zanb tsa_zanb tsha_zanb dza_zanb dzha_zanb zha_zanb za_zanb aa_zanb ya_zanb ra_zanb la_zanb va_zanb sha_zanb ssa_zanb sa_zanb ha_zanb kssa_zanb initialRa_zanb tsa_zanb.flat tsha_zanb.flat dza_zanb.flat dzha_zanb.flat la_zanb.head sa_zanb.head initialHeadMark_zanb], # Base
-    , # Liga
-    [i_zanb i_zanb.wide ue_zanb ue_zanb.wide u_zanb u_zanb.wide e_zanb e_zanb.wide e_zanb.wide.ai e_zanb.ai oe_zanb oe_zanb.wide o_zanb o_zanb.wide o_zanb.wide.ai o_zanb.ai o_zanb.wide.au o_zanb.au ai_zanb au_zanb reversed_i_zanb reversed_i_zanb.wide lengthMark_zanb finalConsonantMark_zanb virama_zanb candrabindu_zanb candrabinduWithOrnament_zanb candraWithOrnament_zanb anusvara_zanb finalYa_zanb finalRa_zanb finalLa_zanb finalVa_zanb subjoiner_zanb finalVa_zanb.stem a_zanb.sub ka_zanb.sub kha_zanb.sub ga_zanb.sub gha_zanb.sub nga_zanb.sub ca_zanb.sub cha_zanb.sub ja_zanb.sub nya_zanb.sub tta_zanb.sub ttha_zanb.sub dda_zanb.sub ddha_zanb.sub nna_zanb.sub ta_zanb.sub tha_zanb.sub da_zanb.sub dha_zanb.sub na_zanb.sub pa_zanb.sub pha_zanb.sub ba_zanb.sub bha_zanb.sub ma_zanb.sub tsa_zanb.sub tsha_zanb.sub dza_zanb.sub dzha_zanb.sub zha_zanb.sub za_zanb.sub aa_zanb.sub ya_zanb.sub ra_zanb.sub la_zanb.sub va_zanb.sub sha_zanb.sub ssa_zanb.sub sa_zanb.sub ha_zanb.sub kssa_zanb.sub ka_zanb.short ga_zanb.short nga_zanb.short ca_zanb.short ja_zanb.short nya_zanb.short ta_zanb.short da_zanb.short na_zanb.short pa_zanb.short ba_zanb.short ma_zanb.short tsa_zanb.short dza_zanb.short ha_zanb.short], # Mark
-    ;
-} GDEF;
