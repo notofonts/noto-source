@@ -118,27 +118,23 @@ table GDEF {
 } GDEF;
 
 feature ccmp {
-language dflt;
-lookup InitialRaContext;
-lookup SubJoinedForms;
-lookup finalVaChained;
-
-language SAN;
 lookup InitialRaContext;
 lookup SubJoinedForms;
 lookup finalVaChained;
 } ccmp;
 
 feature rclt {
-language dflt;
-lookup ShortHeadContext;
-lookup ShortSubjoinedContext;
+script DFLT;
+language SAN;
 lookup AltBelowContext;
 lookup AltAboveContext;
 lookup AltAIAU;
 lookup AltFlagsContext;
 
-language SAN;
+script DFLT;
+language dflt;
+lookup ShortHeadContext;
+lookup ShortSubjoinedContext;
 lookup AltBelowContext;
 lookup AltAboveContext;
 lookup AltAIAU;
