@@ -1,0 +1,18 @@
+#------------------------------#
+# Language system declarations #
+#------------------------------#
+
+languagesystem DFLT dflt;
+languagesystem hmnp dflt;
+
+#--------------------#
+# Class declarations #
+#--------------------#
+
+
+@BASE = [ma-hmnp tsa-hmnp nta-hmnp ta-hmnp ha-hmnp na-hmnp xa-hmnp nka-hmnp ca-hmnp la-hmnp sa-hmnp za-hmnp nca-hmnp ntsa-hmnp ka-hmnp da-hmnp nya-hmnp nra-hmnp va-hmnp ntxa-hmnp txa-hmnp fa-hmnp ra-hmnp qa-hmnp ya-hmnp nqa-hmnp pa-hmnp xya-hmnp npa-hmnp dla-hmnp npla-hmnp hah-hmnp mla-hmnp pla-hmnp ga-hmnp rra-hmnp a-hmnp aa-hmnp i-hmnp u-hmnp o-hmnp oo-hmnp e-hmnp ee-hmnp w-hmnp];
+@MARK = [bSomThw-hmnp mSomThw-hmnp jSomThw-hmnp vSomThw-hmnp sSomThw-hmnp gSomThw-hmnp dSomThw-hmnp];
+
+table GDEF {
+    GlyphClassDef @BASE, , @MARK, ;
+} GDEF;
