@@ -1,48 +1,233 @@
-<?xml version='1.0' encoding='utf-8'?>
-<designspace format="3">
-    <axes>
-        <axis default="400" maximum="700" minimum="400" name="weight" tag="wght" />
-    </axes>
-    <sources>
-        <source familyname="Noto Sans Sundanese" filename="NotoSansSundanese-Regular.ufo" stylename="Regular">
-            <location>
-                <dimension name="weight" xvalue="400" />
-            </location>
-        </source>
-        <source familyname="Noto Sans Sundanese" filename="NotoSansSundanese-Bold.ufo" stylename="Bold">
-            <location>
-                <dimension name="weight" xvalue="700" />
-            </location>
-        </source>
-    </sources>
-    <instances>
-        <instance familyname="Noto Sans Sundanese" filename="../../../../../Documents/Work/Google/Noto/Sundanese/NotoSansSundanese/sp_stuff/instances/NotoSansSundanese-Regular.ufo" postscriptfontname="NotoSansSundanese-Regular" stylename="Regular">
-            <location>
-                <dimension name="weight" xvalue="400" />
-            </location>
-            <kerning />
-            <info />
-        </instance>
-        <instance familyname="Noto Sans Sundanese" filename="../../../../../Documents/Work/Google/Noto/Sundanese/NotoSansSundanese/sp_stuff/instances/NotoSansSundanese-Medium.ufo" postscriptfontname="NotoSansSundanese-Medium" stylename="Medium">
-            <location>
-                <dimension name="weight" xvalue="500" />
-            </location>
-            <kerning />
-            <info />
-        </instance>
-        <instance familyname="Noto Sans Sundanese" filename="../../../../../Documents/Work/Google/Noto/Sundanese/NotoSansSundanese/sp_stuff/instances/NotoSansSundanese-SemiBold.ufo" postscriptfontname="NotoSansSundanese-SemiBold" stylename="SemiBold">
-            <location>
-                <dimension name="weight" xvalue="600" />
-            </location>
-            <kerning />
-            <info />
-        </instance>
-        <instance familyname="Noto Sans Sundanese" filename="../../../../../Documents/Work/Google/Noto/Sundanese/NotoSansSundanese/sp_stuff/instances/NotoSansSundanese-Bold.ufo" postscriptfontname="NotoSansSundanese-Bold" stylename="Bold">
-            <location>
-                <dimension name="weight" xvalue="700" />
-            </location>
-            <kerning />
-            <info />
-        </instance>
-    </instances>
+<?xml version='1.0' encoding='UTF-8'?>
+<designspace format="4.1">
+  <axes>
+    <axis tag="wght" name="Weight" minimum="400" maximum="700" default="400">
+      <map input="400" output="100"/>
+      <map input="500" output="108"/>
+      <map input="600" output="128"/>
+      <map input="700" output="151"/>
+    </axis>
+  </axes>
+  <sources>
+    <source filename="NotoSansSundanese-Regular.ufo" name="Noto Sans Sundanese Regular" familyname="Noto Sans Sundanese" stylename="Regular">
+      <lib copy="1"/>
+      <groups copy="1"/>
+      <features copy="1"/>
+      <info copy="1"/>
+      <location>
+        <dimension name="Weight" xvalue="100"/>
+      </location>
+    </source>
+    <source filename="NotoSansSundanese-Bold.ufo" name="Noto Sans Sundanese Bold" familyname="Noto Sans Sundanese" stylename="Bold">
+      <location>
+        <dimension name="Weight" xvalue="151"/>
+      </location>
+    </source>
+  </sources>
+  <instances>
+    <instance name="Noto Sans Sundanese Regular" familyname="Noto Sans Sundanese" stylename="Regular" filename="instance_ufos/NotoSansSundanese-Regular.ufo">
+      <location>
+        <dimension name="Weight" xvalue="100"/>
+      </location>
+      <kerning/>
+      <info/>
+      <lib>
+        <dict>
+          <key>com.schriftgestaltung.customParameters</key>
+          <array>
+            <array>
+              <string>styleMapFamilyName</string>
+              <string>Noto Sans Sundanese</string>
+            </array>
+            <array>
+              <string>Instance Preview</string>
+              <array>
+                <string>ᮏ</string>
+                <string>ᮐ</string>
+                <string>ᮑ</string>
+                <string>ᮒ</string>
+              </array>
+            </array>
+          </array>
+          <key>com.schriftgestaltung.export</key>
+          <true/>
+          <key>com.schriftgestaltung.intanceInterpolations</key>
+          <dict>
+            <key>master01</key>
+            <integer>1</integer>
+          </dict>
+          <key>com.schriftgestaltung.manualInterpolation</key>
+          <false/>
+          <key>com.schriftgestaltung.weight</key>
+          <string>Regular</string>
+          <key>com.schriftgestaltung.width</key>
+          <string>Medium (normal)</string>
+        </dict>
+      </lib>
+    </instance>
+    <instance name="Noto Sans Sundanese Medium" familyname="Noto Sans Sundanese" stylename="Medium" filename="instance_ufos/NotoSansSundanese-Medium.ufo">
+      <location>
+        <dimension name="Weight" xvalue="108"/>
+      </location>
+      <kerning/>
+      <info/>
+      <lib>
+        <dict>
+          <key>com.schriftgestaltung.customParameters</key>
+          <array>
+            <array>
+              <string>styleMapFamilyName</string>
+              <string>Noto Sans Sundanese</string>
+            </array>
+            <array>
+              <string>Instance Preview</string>
+              <array>
+                <string>ᮏ</string>
+                <string>ᮐ</string>
+                <string>ᮑ</string>
+                <string>ᮒ</string>
+              </array>
+            </array>
+          </array>
+          <key>com.schriftgestaltung.export</key>
+          <true/>
+          <key>com.schriftgestaltung.intanceInterpolations</key>
+          <dict>
+            <key>CAD2243A-C631-4DBE-996B-63DE6037D892</key>
+            <real>0.15686</real>
+            <key>master01</key>
+            <real>0.84314</real>
+          </dict>
+          <key>com.schriftgestaltung.manualInterpolation</key>
+          <false/>
+          <key>com.schriftgestaltung.weight</key>
+          <string>Medium</string>
+          <key>com.schriftgestaltung.width</key>
+          <string>Medium (normal)</string>
+        </dict>
+      </lib>
+    </instance>
+    <instance name="Noto Sans Sundanese SemiBold" familyname="Noto Sans Sundanese" stylename="SemiBold" filename="instance_ufos/NotoSansSundanese-SemiBold.ufo">
+      <location>
+        <dimension name="Weight" xvalue="128"/>
+      </location>
+      <kerning/>
+      <info/>
+      <lib>
+        <dict>
+          <key>com.schriftgestaltung.customParameters</key>
+          <array>
+            <array>
+              <string>styleMapFamilyName</string>
+              <string>Noto Sans Sundanese</string>
+            </array>
+            <array>
+              <string>Instance Preview</string>
+              <array>
+                <string>ᮏ</string>
+                <string>ᮐ</string>
+                <string>ᮑ</string>
+                <string>ᮒ</string>
+              </array>
+            </array>
+          </array>
+          <key>com.schriftgestaltung.export</key>
+          <true/>
+          <key>com.schriftgestaltung.intanceInterpolations</key>
+          <dict>
+            <key>CAD2243A-C631-4DBE-996B-63DE6037D892</key>
+            <real>0.54902</real>
+            <key>master01</key>
+            <real>0.45098</real>
+          </dict>
+          <key>com.schriftgestaltung.manualInterpolation</key>
+          <false/>
+          <key>com.schriftgestaltung.weight</key>
+          <string>SemiBold</string>
+          <key>com.schriftgestaltung.width</key>
+          <string>Medium (normal)</string>
+        </dict>
+      </lib>
+    </instance>
+    <instance name="Noto Sans Sundanese Bold" familyname="Noto Sans Sundanese" stylename="Bold" filename="instance_ufos/NotoSansSundanese-Bold.ufo">
+      <location>
+        <dimension name="Weight" xvalue="151"/>
+      </location>
+      <kerning/>
+      <info/>
+      <lib>
+        <dict>
+          <key>com.schriftgestaltung.customParameters</key>
+          <array>
+            <array>
+              <string>styleMapFamilyName</string>
+              <string>Noto Sans Sundanese</string>
+            </array>
+            <array>
+              <string>Instance Preview</string>
+              <array>
+                <string>ᮏ</string>
+                <string>ᮐ</string>
+                <string>ᮑ</string>
+                <string>ᮒ</string>
+              </array>
+            </array>
+          </array>
+          <key>com.schriftgestaltung.export</key>
+          <true/>
+          <key>com.schriftgestaltung.intanceInterpolations</key>
+          <dict>
+            <key>CAD2243A-C631-4DBE-996B-63DE6037D892</key>
+            <integer>1</integer>
+          </dict>
+          <key>com.schriftgestaltung.manualInterpolation</key>
+          <false/>
+          <key>com.schriftgestaltung.weight</key>
+          <string>Bold</string>
+          <key>com.schriftgestaltung.width</key>
+          <string>Medium (normal)</string>
+        </dict>
+      </lib>
+    </instance>
+  </instances>
+  <lib>
+    <dict>
+      <key>UFO.lib</key>
+      <dict>
+        <key>com.schriftgestaltung.appVersion</key>
+        <string>1060</string>
+        <key>com.schriftgestaltung.customParameter.GSFont.DisplayStrings</key>
+        <string></string>
+        <key>com.schriftgestaltung.customParameter.GSFont.disablesAutomaticAlignment</key>
+        <integer>1</integer>
+        <key>com.schriftgestaltung.customParameter.GSFont.useNiceNames</key>
+        <integer>0</integer>
+        <key>com.schriftgestaltung.customParameter.GSFontMaster.customValue</key>
+        <integer>0</integer>
+        <key>com.schriftgestaltung.customParameter.GSFontMaster.customValue1</key>
+        <integer>0</integer>
+        <key>com.schriftgestaltung.customParameter.GSFontMaster.customValue2</key>
+        <integer>0</integer>
+        <key>com.schriftgestaltung.customParameter.GSFontMaster.customValue3</key>
+        <integer>0</integer>
+        <key>com.schriftgestaltung.customParameter.GSFontMaster.iconName</key>
+        <string></string>
+        <key>com.schriftgestaltung.customParameter.GSFontMaster.weightValue</key>
+        <integer>100</integer>
+        <key>com.schriftgestaltung.customParameter.GSFontMaster.widthValue</key>
+        <integer>100</integer>
+        <key>com.schriftgestaltung.fontMasterOrder</key>
+        <integer>0</integer>
+        <key>com.schriftgestaltung.keyboardIncrement</key>
+        <integer>0</integer>
+        <key>public.postscriptNames</key>
+        <dict>
+          <key>hyphentwo</key>
+          <string>uni2010</string>
+        </dict>
+      </dict>
+      <key>UFOFormat</key>
+      <integer>3</integer>
+    </dict>
+  </lib>
 </designspace>
