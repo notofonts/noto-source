@@ -8,7 +8,7 @@ EM	1000
 
 feature table begin
 0	blwm	bottommarktobase-sinh
-1	dist	kern-sinh,kernpunctuation-sinh,touch-sinh
+1	dist	kern-sinh,kernpunctuation-sinh,touch-sinh,movecandrabindu
 feature table end
 
 
@@ -954,3 +954,34 @@ base	navasinh	0	1043,-15
 base	yapostsinh	0	623,-15
 
 lookup end
+
+
+lookup	movecandrabindu	chained
+
+backtrackclass definition begin
+space	1
+uni00A0.sinh	1
+uni200B	1
+uni25CC	1
+uni0D81	1
+class definition end
+
+class definition begin
+uni0D81	1
+class definition end
+
+lookaheadclass definition begin
+# 1	1
+class definition end
+
+class-chain	0	1		1,shiftcandrabindu
+
+lookup end
+
+
+lookup	shiftcandrabindu	single
+
+y placement	uni0D81	340
+
+lookup end
+

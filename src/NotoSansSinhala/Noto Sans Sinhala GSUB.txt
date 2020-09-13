@@ -8,7 +8,7 @@ sinh	default		 0,1,2,3,4,5,6,7,8
 script table end
 
 feature table begin
-0	akhn	akhandligs-sinh,touch-sinh
+0	akhn	akhandligs-sinh,fixrarephHrfBuzz-sinh,extraHBFix-sinh,touch-sinh
 1	rphf	reph-sinh
 2	vatu	vatu-sinh
 3	pstf	postforms-sinh
@@ -20,8 +20,6 @@ feature table begin
 feature table end
 
 
-
-% mark attachment classes from glyph classes
 
 lookup	akhandligs-sinh	ligature
 
@@ -42,7 +40,27 @@ navasinh	nasinh	viramasinh	uni200D	vasinh
 lookup end
 
 
-% this input sequence is re-ordered before the feature is applied
+
+lookup	fixrarephHrfBuzz-sinh	context
+
+glyph	rasinh,viramasinh,uni200D,rasinh	1,fixHarfBuzzRa-sinh
+
+lookup end
+
+
+lookup	fixHarfBuzzRa-sinh	ligature
+
+rahalantsinh	rasinh	viramasinh	uni200D
+
+lookup end
+
+
+lookup	extraHBFix-sinh	multiple
+
+rahalantsinh	rasinh	viramasinh
+
+lookup end
+
 
 lookup	reph-sinh	ligature
 
@@ -72,7 +90,6 @@ lookup end
 
 
 lookup	touch-sinh	context
-
 
 class definition begin
 kasinh	1
@@ -239,8 +256,6 @@ lookup	reph2post-sinh	single
 rephsinh	yapostsinh
 
 lookup end
-
-
 
 
 lookup	rayaya-sinh	chained
