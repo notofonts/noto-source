@@ -32,39 +32,6 @@ lookup shortI_sub {
 	sub sa_ma.sub_ra.sub_i_marc by sa_ma.sub_ra.sub_i_marc_short;
 } shortI_sub;
 
-lookup AddYaSubWidth {
-	pos ka_marc' 307;
-	pos kha_marc' 307;
-	pos ga_marc' 307;
-	pos nga_marc' 307;
-	pos ca_marc' 307;
-	pos cha_marc' 307;
-	pos ja_marc' 307;
-	pos nya_marc' 307;
-	pos ta_marc' 307;
-	pos tha_marc' 307;
-	pos da_marc' 307;
-	pos na_marc' 307;
-	pos pa_marc' 307;
-	pos pha_marc' 307;
-	pos ba_marc' 307;
-	pos ma_marc' 307;
-	pos tsa_marc' 307;
-	pos tsha_marc' 307;
-	pos dza_marc' 307;
-	pos wa_marc' 307;
-	pos zha_marc' 307;
-	pos za_marc' 307;
-	pos aa_marc' 307;
-	pos ya_marc' 307;
-	pos ra_marc' 307;
-	pos la_marc' 307;
-	pos sha_marc' 307;
-	pos sa_marc' 307;
-	pos ha_marc' 307;
-	pos a_marc' 307;
-} AddYaSubWidth;
-
 table GDEF {
   # automatic
   GlyphClassDef
@@ -767,8 +734,8 @@ lookup shortI_chained {
 } pres;
 
 feature dist {
-lookup AddDist {
-	pos @BASES' lookup AddYaSubWidth ya_marc.sub;
-} AddDist;
+lookup YaSubDist {
+	pos ya_marc.sub' 307;
+} YaSubDist;
 } dist;
 
