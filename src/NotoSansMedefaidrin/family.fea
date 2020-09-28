@@ -1,0 +1,66 @@
+#------------------------------#
+# Language system declarations #
+#------------------------------#
+
+languagesystem DFLT dflt;
+languagesystem medf dflt;
+
+#-------------------#
+# Class declaration #
+#-------------------#
+
+@BASE = [.notdef comma-medf period-medf or-medf exclam-medf zero-medf one-medf two-medf three-medf four-medf five-medf six-medf seven-medf eight-medf nine-medf ten-medf eleven-medf twelve-medf thirteen-medf fourteen-medf fifteen-medf sixteen-medf seventeen-medf eighteen-medf nineteen-medf one-medf.alt two-medf.alt three-medf.alt M-medf S-medf V-medf W-medf Atiu-medf Z-medf KP-medf P-medf T-medf G-medf F-medf I-medf K-medf A-medf J-medf E-medf B-medf C-medf U-medf YU-medf L-medf Q-medf H-medf NG-medf X-medf D-medf OE-medf N-medf R-medf O-medf AI-medf Y-medf m-medf s-medf v-medf w-medf atiu-medf z-medf kp-medf p-medf t-medf g-medf f-medf i-medf k-medf a-medf j-medf e-medf b-medf c-medf u-medf yu-medf l-medf q-medf h-medf ng-medf x-medf d-medf oe-medf n-medf r-medf o-medf ai-medf y-medf];
+
+table GDEF {
+    GlyphClassDef @BASE, , , ;
+} GDEF;
+
+#---------------------------------#
+# Lookup declarations Medefaidrin #
+#---------------------------------#
+
+lookup MEDF_alternate_one {
+    sub one-medf by one-medf.alt;
+} MEDF_alternate_one;
+
+lookup MEDF_alternate_two {
+    sub two-medf by two-medf.alt;
+} MEDF_alternate_two;
+
+lookup MEDF_alternate_three {
+    sub three-medf by three-medf.alt;
+} MEDF_alternate_three;
+
+#-----------------#
+# Feature Lookups #
+#-----------------#
+
+feature salt {
+	lookup MEDF_alternate_one;
+	lookup MEDF_alternate_two;
+	lookup MEDF_alternate_three;
+} salt;
+
+feature ss01 { 
+    featureNames {
+        name 3 "Alternate Medf Digit One"; # descriptive name type 1 for Microsoft
+        name 1 "Alternate Medf Digit One"; # descriptive name type 1 for Mac
+    };
+    lookup MEDF_alternate_one;
+} ss01;
+
+feature ss02 { 
+    featureNames {
+        name 3 "Alternate Medf Digit Two"; # descriptive name type 1 for Microsoft
+        name 1 "Alternate Medf Digit Two"; # descriptive name type 1 for Mac
+    };
+    lookup MEDF_alternate_two;
+} ss02;
+
+feature ss03 { 
+    featureNames {
+        name 3 "Alternate Medf Digit Three"; # descriptive name type 1 for Microsoft
+        name 1 "Alternate Medf Digit Three"; # descriptive name type 1 for Mac
+    };
+    lookup MEDF_alternate_three;
+} ss03;
