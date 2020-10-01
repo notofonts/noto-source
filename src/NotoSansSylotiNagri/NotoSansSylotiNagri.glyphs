@@ -1,5 +1,5 @@
 {
-.appVersion = "1060";
+.appVersion = "1346";
 copyright = "Copyright 2017 Google Inc. All Rights Reserved.";
 customParameters = (
 {
@@ -66,6 +66,7 @@ uniA828,
 uniA829,
 uniA82A,
 uniA82B,
+uniA82C,
 uniA807uniA807,
 uniA807uniA814,
 uniA80CuniA80C,
@@ -131,7 +132,7 @@ value = 1;
 },
 {
 name = versionString;
-value = "Version 2.000";
+value = "Version 2.001";
 },
 {
 name = fsType;
@@ -206,16 +207,16 @@ value = 50;
 {
 name = panose;
 value = (
-"2",
-"11",
-"5",
-"2",
-"4",
-"5",
-"4",
-"2",
-"2",
-"4"
+2,
+11,
+5,
+2,
+4,
+5,
+4,
+2,
+2,
+4
 );
 }
 );
@@ -3151,9 +3152,44 @@ unicode = A824;
 {
 glyphname = uniA825;
 production = uniA825;
-lastChange = "2017-09-15 12:55:41 +0000";
+lastChange = "2020-07-29 16:24:51 +0000";
 layers = (
 {
+background = {
+paths = (
+{
+closed = 1;
+nodes = (
+"-70 -270 OFFCURVE",
+"6 -219 OFFCURVE",
+"6 -122 CURVE SMOOTH",
+"6 -29 OFFCURVE",
+"-56 7 OFFCURVE",
+"-122 7 CURVE SMOOTH",
+"-144 7 OFFCURVE",
+"-173 3 OFFCURVE",
+"-194 -3 CURVE",
+"-174 -71 LINE",
+"-160 -67 OFFCURVE",
+"-140 -64 OFFCURVE",
+"-125 -64 CURVE SMOOTH",
+"-93 -64 OFFCURVE",
+"-66 -76 OFFCURVE",
+"-66 -122 CURVE SMOOTH",
+"-66 -179 OFFCURVE",
+"-122 -202 OFFCURVE",
+"-248 -202 CURVE SMOOTH",
+"-282 -202 OFFCURVE",
+"-323 -199 OFFCURVE",
+"-371 -189 CURVE",
+"-390 -256 LINE",
+"-339 -266 OFFCURVE",
+"-292 -270 OFFCURVE",
+"-248 -270 CURVE SMOOTH"
+);
+}
+);
+};
 layerId = UUID0;
 paths = (
 {
@@ -3196,10 +3232,10 @@ unicode = A825;
 {
 glyphname = uniA826;
 production = uniA826;
-lastChange = "2017-09-15 12:55:41 +0000";
+lastChange = "2020-07-29 23:33:29 +0000";
 layers = (
 {
-layerId = UUID0;
+background = {
 paths = (
 {
 closed = 1;
@@ -3212,6 +3248,23 @@ nodes = (
 "-300 858 OFFCURVE",
 "-199 785 OFFCURVE",
 "-133 663 CURVE"
+);
+}
+);
+};
+layerId = UUID0;
+paths = (
+{
+closed = 1;
+nodes = (
+"-104 736 LINE",
+"-176 867 OFFCURVE",
+"-279 911 OFFCURVE",
+"-380 950 CURVE",
+"-403 888 LINE",
+"-298 853 OFFCURVE",
+"-252 841 OFFCURVE",
+"-169 719 CURVE"
 );
 }
 );
@@ -3655,6 +3708,29 @@ width = 646;
 }
 );
 unicode = A82B;
+},
+{
+glyphname = uniA82C;
+production = uniA82C;
+lastChange = "2020-09-01 18:25:37 +0000";
+layers = (
+{
+layerId = UUID0;
+paths = (
+{
+closed = 1;
+nodes = (
+"-276 -141 LINE",
+"-21 -268 LINE",
+"22 -214 LINE",
+"-224 -77 LINE"
+);
+}
+);
+width = 0;
+}
+);
+unicode = A82C;
 },
 {
 glyphname = uniA807uniA807;
@@ -5928,21 +6004,21 @@ instances = (
 customParameters = (
 {
 name = weightClass;
-value = "400";
+value = 400;
 },
 {
 name = panose;
 value = (
-"2",
-"11",
-"5",
-"2",
-"4",
-"5",
-"4",
-"2",
-"2",
-"4"
+2,
+11,
+5,
+2,
+4,
+5,
+4,
+2,
+2,
+4
 );
 },
 {
@@ -5988,7 +6064,6 @@ UUID0 = 1;
 name = Regular;
 }
 );
-keyboardIncrement = 0;
 manufacturer = "Monotype Imaging Inc.";
 manufacturerURL = "http://www.google.com/get/noto/";
 unitsPerEm = 1000;
@@ -5999,5 +6074,5 @@ UUID0 = {
 };
 };
 versionMajor = 2;
-versionMinor = 0;
+versionMinor = 1;
 }
