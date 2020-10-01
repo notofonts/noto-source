@@ -9,7 +9,7 @@ script table end
 
 
 feature table begin
-0	dist	0, 29
+0	dist	0, 29, 38
 1	mark	13, 14, 15, 16, 17
 2	mkmk	22, 18, 19, 20, 21
 
@@ -111,6 +111,7 @@ TtKaa	1
 NnShaa	1
 Tu	1
 Ddu	1
+TSuu	1
 Jhuu	2
 Nyuu	2
 Nnaa	2
@@ -800,156 +801,84 @@ mark	AI	0	0,710
 mark	uni0951	0	-130,671
 mark	Jihvamuliya.ns	0	330,710
 mark	Upadhmaniya.ns	0	345,710
+mark	ChandrabinduInv	0	0,710
 base	letterA	0	340,710
-base	letterAA	0	340,710
 base	letterI	0	340,710
-base	letterII	0	225,875
 base	letterU	0	340,710
-base	letterUU	0	340,710
-base	letterVocR	0	200,710
-base	letterVocRR	0	220,710
-base	letterVocL	0	295,710
-base	letterVocLL	0	340,710
-base	letterE	0	290,710
-base	letterAI	0	275,840
-base	letterO	0	340,710
-base	letterAU	0	405,710
-base	Ka	0	354,710
-base	Kha	0	345,710
-base	Ga	0	300,710
-base	Gha	0	370,710
-base	Nga	0	260,710
-base	Ca	0	320,710
-base	Cha	0	345,710
-base	Ja	0	345,710
-base	Jha	0	370,710
-base	Nya	0	325,710
-base	Tta	0	280,710
-base	Ttha	0	345,710
-base	Dda	0	275,710
-base	Ddha	0	305,710
-base	Nna	0	345,710
-base	Ta	0	385,710
-base	Tha	0	325,710
-base	Da	0	345,710
-base	Dha	0	345,710
-base	Na	0	260,710
-base	Pa	0	325,710
-base	Pha	0	335,710
-base	Ba	0	300,710
-base	Bha	0	345,710
-base	Ma	0	325,710
-base	Ya	0	300,710
-base	Ra	0	210,710
-base	La	0	345,710
-base	Lla	0	300,710
-base	Va	0	255,710
-base	Sha	0	350,710
-base	Ssa	0	325,710
-base	Sa	0	365,710
-base	Ha	0	220,710
-base	AA	0	110,710
-base	I	0	601,790
-base	II	0	-101,955
-base	AU	0	-183,920
-base	Gu	0	300,710
-base	Jhu	0	370,710
-base	Nyu	0	300,710
-base	Ku	0	245,710
-base	Ru	0	205,710
-base	Shu	0	355,710
-base	Kuu	0	250,710
-base	Guu	0	300,710
-base	Jhuu	0	360,710
-base	Nyuu	0	315,710
-base	Dduu	0	260,710
-base	Tuu	0	320,710
-base	Bhuu	0	300,710
-base	Ruu	0	195,710
-base	Shuu	0	350,710
-base	Ngaa	0	265,710
-base	Jaa	0	300,710
-base	Ttaa	0	265,710
-base	Nnaa	0	380,710
-base	Kr	0	265,710
-base	Krr	0	265,710
-base	Kl	0	265,710
-base	Kll	0	265,710
-base	Tl	0	360,710
-base	Tll	0	360,710
-base	JYa	0	330,710
-base	TYa	0	290,710
-base	DYa	0	305,710
-base	GRa	0	295,710
-base	TRa	0	365,710
-base	BhRa	0	310,710
-base	KSsa	0	265,710
-base	KKa	0	315,710
-base	KTa	0	320,710
-base	NgKa	0	280,710
-base	JJa	0	320,710
-base	RKa	0	310,710
-base	RGa	0	265,710
-base	RJa	0	295,710
-base	RVa	0	225,710
-base	RNna	0	315,710
-base	RTha	0	240,710
-base	RYa	0	265,710
-base	RSsa	0	265,710
-base	RHa	0	190,710
-base	RTa	0	280,710
-base	JNya	0	315,710
-base	TTha	0	225,710
-base	DDha	0	300,710
-base	NTha	0	240,710
-base	NDha	0	240,710
-base	SsTta	0	285,710
-base	SsTtha	0	285,710
-base	SsNna	0	285,710
-base	STha	0	315,710
-base	HYa	0	335,710
-base	NnDda	0	310,710
-base	TSa	0	200,710
+base	letterVocR	0	225,875
+base	letterVocL	0	340,710
+base	letterE	0	340,710
+base	letterO	0	200,710
+base	Ka	0	220,710
+base	Ga	0	295,710
+base	Nga	0	340,710
+base	Cha	0	290,710
+base	Jha	0	275,840
+base	Tta	0	340,710
+base	Dda	0	405,710
+base	Nna	0	354,710
+base	Tha	0	345,710
+base	Dha	0	300,710
+base	Pa	0	370,710
+base	Ba	0	260,710
+base	Ma	0	320,710
+base	Ra	0	345,710
+base	Lla	0	345,710
+base	Sha	0	370,710
+base	Sa	0	325,710
+base	AA	0	280,710
+base	II	0	345,710
+base	Gu	0	275,710
+base	Nyu	0	305,710
+base	Ru	0	345,710
+base	Kuu	0	385,710
+base	Jhuu	0	325,710
+base	Dduu	0	345,710
+base	Bhuu	0	345,710
+base	Shuu	0	260,710
+base	Jaa	0	325,710
+base	Nnaa	0	335,710
+base	Krr	0	300,710
+base	Kll	0	345,710
+base	Tll	0	325,710
+base	TYa	0	300,710
+base	GRa	0	210,710
+base	BhRa	0	345,710
+base	KKa	0	300,710
+base	NgKa	0	255,710
+base	RKa	0	350,710
+base	RJa	0	325,710
+base	RNna	0	365,710
+base	RYa	0	220,710
+base	RHa	0	110,710
+base	JNya	0	601,790
+base	DDha	0	-101,955
+base	NDha	0	-183,920
+base	SsTtha	0	300,710
+base	STha	0	370,710
+base	NnDda	0	300,710
 base	NTa	0	245,710
-base	STa	0	285,710
-base	SMa	0	285,710
-base	NgNga	0	265,710
-base	JNna	0	335,710
-base	TtKa	0	305,710
-base	NnSha	0	300,710
-base	KRu	0	245,710
-base	KRuu	0	245,710
-base	DRu	0	285,710
-base	DRuu	0	285,710
-base	BhRu	0	300,710
-base	BhRuu	0	300,710
-base	ShRu	0	350,710
-base	ShRuu	0	350,710
-base	KPRa	0	245,710
-base	RTRa	0	205,710
-base	JJVa	0	315,710
-base	RKSsa	0	270,710
-base	RVYa	0	245,710
-base	KTVa	0	245,710
-base	NnDdu	0	315,710
-base	TSu	0	190,710
-base	NTu	0	260,710
-base	RTr	0	280,710
-base	RYuu	0	235,710
-base	STu	0	285,710
-base	SMr	0	285,710
-base	RTRaa	0	295,710
-base	NgKaa	0	315,710
-base	NgNgaa	0	280,710
-base	JJaa	0	295,710
-base	JNnaa	0	325,710
-base	JYaa	0	300,710
-base	TtKaa	0	290,710
-base	NnShaa	0	315,710
-base	Bhu	0	300,710
-base	Tu	0	310,710
-base	Ddu	0	260,710
-base	uni25CC	0	298,710
+base	SMa	0	205,710
+base	JNna	0	355,710
+base	NnSha	0	250,710
+base	KRuu	0	300,710
+base	DRuu	0	360,710
+base	BhRuu	0	315,710
+base	ShRuu	0	260,710
+base	RTRa	0	320,710
+base	RKSsa	0	300,710
+base	KTVa	0	195,710
+base	TSu	0	350,710
+base	RTr	0	265,710
+base	STu	0	300,710
+base	RTRaa	0	265,710
+base	NgNgaa	0	380,710
+base	JNnaa	0	265,710
+base	TtKaa	0	265,710
+base	Bhu	0	265,710
+base	Ddu	0	265,710
+base	NTuu	0	360,710
+base	STuu	0	360,710
 
 lookup end
 
@@ -1115,6 +1044,7 @@ base	Bhu	0	595,710
 base	Tu	0	535,710
 base	Ddu	0	505,710
 base	uni25CC	0	546,710
+base	TSuu	0	365,710
 
 lookup end
 
@@ -1136,6 +1066,12 @@ mark	UU.alt2	0	0,0
 mark	U.alt	0	0,0
 mark	U.alt2	0	0,-20
 mark	SandhiMarkWide	0	0,0
+mark	U.alt3	0	91,167
+mark	U.alt4	0	156,0
+mark	U.alt5	0	110,141
+mark	UU.alt3	0	96,167
+mark	UU.alt4	0	156,0
+mark	UU.alt5	0	93,131
 base	Ka	0	396,0
 base	Kha	0	632,0
 base	Ga	0	498,0
@@ -1168,7 +1104,7 @@ base	Lla	0	196,22
 base	Va	0	445,0
 base	Sha	0	597,0
 base	Ssa	0	557,0
-base	Sa	0	617,0
+base	Sa	0	608,0
 base	Ha	0	429,28
 base	Separator	0	59,0
 base	JYa	0	535,-27
@@ -1178,8 +1114,8 @@ base	GRa	0	498,20
 base	TRa	0	435,0
 base	BhRa	0	379,0
 base	KSsa	0	468,-53
-base	KKa	0	643,-32
-base	KTa	0	610,-54
+base	KKa	0	364,0
+base	KTa	0	416,-6
 base	NgKa	0	357,-245
 base	JJa	0	290,-247
 base	RKa	0	357,-245
@@ -1191,8 +1127,8 @@ base	RTha	0	320,0
 base	RYa	0	614,-22
 base	RSsa	0	500,0
 base	RHa	0	471,-25
-base	RTa	0	380,-172
-base	JNya	0	503,-217
+base	RTa	0	350,-146
+base	JNya	0	503,-208
 base	TTha	0	260,0
 base	DDha	0	280,-40
 base	NTha	0	260,0
@@ -1325,12 +1261,12 @@ base	GRa	0	280,0
 base	TRa	0	280,0
 base	BhRa	0	210,-30
 base	KSsa	0	245,0
-base	KKa	0	325,0
-base	KTa	0	320,-70
-base	NgKa	0	310,-240
+base	KKa	0	336,17
+base	KTa	0	396,-22
+base	NgKa	0	317,-213
 base	JJa	0	370,-235
-base	RKa	0	315,-240
-base	RGa	0	280,0
+base	RKa	0	318,-219
+base	RGa	0	458,26
 base	RJa	0	352,-97
 base	RVa	0	235,0
 base	RNna	0	340,0
@@ -1338,8 +1274,8 @@ base	RTha	0	200,-20
 base	RYa	0	280,0
 base	RSsa	0	315,-20
 base	RHa	0	280,0
-base	RTa	0	235,-205
-base	JNya	0	310,-225
+base	RTa	0	351,-145
+base	JNya	0	157,-228
 base	TTha	0	185,-60
 base	DDha	0	235,-70
 base	NTha	0	215,-60
@@ -1349,15 +1285,15 @@ base	SsTtha	0	270,-80
 base	SsNna	0	265,-65
 base	STha	0	300,-110
 base	HYa	0	345,0
-base	NnDda	0	365,-220
+base	NnDda	0	484,-189
 base	TSa	0	320,-140
 base	NTa	0	250,-140
 base	STa	0	335,-140
 base	SMa	0	410,-120
 base	NgNga	0	305,-195
 base	JNna	0	325,-40
-base	TtKa	0	310,-235
-base	NnSha	0	315,-250
+base	TtKa	0	311,-220
+base	NnSha	0	498,-223
 base	KRu	0	215,-70
 base	KRuu	0	215,-70
 base	DRu	0	340,-55
@@ -1385,12 +1321,13 @@ base	NgNgaa	0	225,-175
 base	JJaa	0	305,-135
 base	JNnaa	0	320,-50
 base	JYaa	0	310,-60
-base	TtKaa	0	310,-230
 base	NnShaa	0	315,-235
 base	Bhu	0	340,-50
 base	Tu	0	270,-50
 base	Ddu	0	290,-50
 base	uni25CC	0	297,0
+base	NTuu	0	-176,-391
+base	TSuu	0	335,-260
 
 lookup end
 
@@ -1424,6 +1361,7 @@ mark	AI	0	0,710
 mark	uni0951	0	-135,671
 mark	Jihvamuliya.ns	0	330,710
 mark	Upadhmaniya.ns	0	345,710
+mark	ChandrabinduInv	0	0,710
 base	Candrabindu	0	-187,965
 base	Anusvara	0	-67,897
 base	E	0	0,844
@@ -1432,6 +1370,7 @@ base	O	0	-315,910
 base	uni0951	0	-130,947
 base	Jihvamuliya.ns	0	301,972
 base	Upadhmaniya.ns	0	345,995
+base	ChandrabinduInv	0	0,965
 
 lookup end
 
@@ -1502,6 +1441,7 @@ Candrabindu	3
 VowelModifier	3
 Jihvamuliya.ns	3
 Upadhmaniya.ns	3
+ChandrabinduInv	3
 Anusvara	4
 uni0951	4
 Ka	5
@@ -1626,6 +1566,8 @@ x placement	Jihvamuliya.ns	-249
 y placement	Jihvamuliya.ns	285
 x placement	Upadhmaniya.ns	-249
 y placement	Upadhmaniya.ns	245
+x placement	ChandrabinduInv	-249
+y placement	ChandrabinduInv	245
 
 lookup end
 
@@ -1646,6 +1588,8 @@ x placement	Jihvamuliya.ns	-249
 y placement	Jihvamuliya.ns	285
 x placement	Upadhmaniya.ns	-249
 y placement	Upadhmaniya.ns	245
+x placement	ChandrabinduInv	-249
+y placement	ChandrabinduInv	245
 
 lookup end
 
@@ -1666,6 +1610,8 @@ x placement	Jihvamuliya.ns	-160
 y placement	Jihvamuliya.ns	285
 x placement	Upadhmaniya.ns	-160
 y placement	Upadhmaniya.ns	245
+x placement	ChandrabinduInv	-160
+y placement	ChandrabinduInv	245
 
 lookup end
 
@@ -1686,6 +1632,8 @@ x placement	Jihvamuliya.ns	-180
 y placement	Jihvamuliya.ns	285
 x placement	Upadhmaniya.ns	-180
 y placement	Upadhmaniya.ns	245
+x placement	ChandrabinduInv	-180
+y placement	ChandrabinduInv	245
 
 lookup end
 
@@ -1706,6 +1654,8 @@ x placement	Jihvamuliya.ns	-115
 y placement	Jihvamuliya.ns	285
 x placement	Upadhmaniya.ns	-115
 y placement	Upadhmaniya.ns	245
+x placement	ChandrabinduInv	-115
+y placement	ChandrabinduInv	245
 
 lookup end
 
@@ -1879,6 +1829,22 @@ IgnoreLigatures	no
 IgnoreMarks	no
 
 y placement	Nukta	120
+
+lookup end
+
+
+lookup	38	pair
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+MarkAttachmentType	4
+
+left x advance	RTha	AA	-100
+left x advance	TTha	AA	-200
+left x advance	NTha	AA	-100
+left x advance	STha	AA	-50
 
 lookup end
 

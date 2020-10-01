@@ -9,7 +9,7 @@ script table end
 feature table begin
 0	abvs	1
 1	akhn	0
-2	blws	2
+2	blws	2, 3
 
 feature table end
 
@@ -30,12 +30,16 @@ Kll	Ka	vocLL
 KKa	Ka	virama	Ka
 KTVa	Ka	virama	Ta	virama	Va
 KTa	Ka	virama	Ta
+KPRu	Ka	virama	Pa	virama	Ra	U
+KPRuu	Ka	virama	Pa	virama	Ra	UU
 KPRa	Ka	virama	Pa	virama	Ra
 KRu	Ka	virama	Ra	U
 KRuu	Ka	virama	Ra	UU
 KSsa	Ka	virama	Ssa
 Gu	Ga	U
 Guu	Ga	UU
+GRu	Ga	virama	Ra	U
+GRuu	Ga	virama	Ra	UU
 GRa	Ga	virama	Ra
 Ngaa	Nga	AA
 NgKaa	Nga	virama	Ka	AA
@@ -62,6 +66,7 @@ Ddu	Dda	U
 Dduu	Dda	UU
 Nnaa	Nna	AA
 NnDdu	Nna	virama	Dda	U
+NnDduu	Nna	virama	Dda	UU
 NnDda	Nna	virama	Dda
 NnShaa	Nna	virama	Sha	AA
 NnSha	Nna	virama	Sha
@@ -71,14 +76,18 @@ Tl	Ta	vocL
 Tll	Ta	vocLL
 TTha	Ta	virama	Tha
 TYa	Ta	virama	Ya
+TRu	Ta	virama	Ra	U
+TRuu	Ta	virama	Ra	UU
 TRa	Ta	virama	Ra
 TSu	Ta	virama	Sa	U
+TSuu	Ta	virama	Sa	UU
 TSa	Ta	virama	Sa
 DDha	Da	virama	Dha
 DYa	Da	virama	Ya
 DRu	Da	virama	Ra	U
 DRuu	Da	virama	Ra	UU
 NTu	Na	virama	Ta	U
+NTuu	Na	virama	Ta	UU
 NTa	Na	virama	Ta
 NTha	Na	virama	Tha
 NDha	Na	virama	Dha
@@ -92,10 +101,14 @@ Ruu	Ra	UU
 RKSsa	Ra	virama	Ka	virama	Ssa
 RKa	Ra	virama	Ka
 RGa	Ra	virama	Ga
+RJaa	Ra	virama	Ja	AA
 RJa	Ra	virama	Ja
+RNnaa	Ra	virama	Nna	AA
 RNna	Ra	virama	Nna
 RTr	Ra	virama	Ta	vocR
 RTRaa	Ra	virama	Ta	virama	Ra	AA
+RTRu	Ra	virama	Ta	virama	Ra	U
+RTRuu	Ra	virama	Ta	virama	Ra	UU
 RTRa	Ra	virama	Ta	virama	Ra
 RTa	Ra	virama	Ta
 RTha	Ra	virama	Tha
@@ -109,10 +122,13 @@ Shu	Sha	U
 Shuu	Sha	UU
 ShRu	Sha	virama	Ra	U
 ShRuu	Sha	virama	Ra	UU
+SsTtaa	Ssa	virama	Tta	AA
 SsTta	Ssa	virama	Tta
 SsTtha	Ssa	virama	Ttha
+SsNnaa	Ssa	virama	Nna	AA
 SsNna	Ssa	virama	Nna
 STu	Sa	virama	Ta	U
+STuu	Sa	virama	Ta	UU
 STa	Sa	virama	Ta
 STha	Sa	virama	Tha
 SMr	Sa	virama	Ma	vocR
@@ -321,27 +337,69 @@ RTr	1
 SMr	1
 class definition end
 
-class-chain		1, 3		2, 3
-class-chain		1, 7	1	2, 3
-class-chain		2, 3		2, 4
-class-chain		2, 7	1	2, 3
-class-chain		4, 7	1	2, 3
-class-chain		5, 1, 10		3, 6	1, 7
-class-chain		5, 2, 10		3, 6	1, 7
-class-chain		5, 4, 10		3, 6	1, 7
-class-chain		5, 1, 7	1	3, 3
-class-chain		5, 2, 7	1	3, 3
-class-chain		5, 4, 7	1	3, 3
-class-chain		7, 9		1, 4
-class-chain		8, 7, 6, 7		2, 5
-class-chain		8, 7, 7		2, 5
-class-chain		9, 6, 7		2, 5
-class-chain		9, 7		2, 4
+class-chain		1, 3		2, 4
+class-chain		1, 7	1	2, 4
+class-chain		2, 3		2, 5
+class-chain		2, 7	1	2, 4
+class-chain		4, 7	1	2, 4
+class-chain		5, 1, 10		3, 7	1, 8
+class-chain		5, 2, 10		3, 7	1, 8
+class-chain		5, 4, 10		3, 7	1, 8
+class-chain		5, 1, 7	1	3, 4
+class-chain		5, 2, 7	1	3, 4
+class-chain		5, 4, 7	1	3, 4
+class-chain		7, 9		1, 5
+class-chain		8, 7, 6, 7		2, 6
+class-chain		8, 7, 7		2, 6
+class-chain		9, 6, 7		2, 6
+class-chain		9, 7		2, 5
 
 lookup end
 
 
-lookup	3	single
+lookup	3	context
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+MarkFilterType	2
+
+class definition begin
+KKa	1
+NgKa	1
+RKa	1
+RGa	1
+JNya	1
+TtKa	1
+NnSha	1
+KTa	2
+RTa	2
+U	3
+UU	3
+UU.alt	4
+U.alt	4
+class definition end
+
+class	1, 3	2, 9
+class	1, 4	2, 9
+class	2, 3	2, 11
+class	2, 4	2, 11
+
+subtable end
+
+class definition begin
+Sa	1
+U	2
+UU	2
+class definition end
+
+class	1, 2	2, 10
+
+lookup end
+
+
+lookup	4	single
 
 RightToLeft	no
 IgnoreBaseGlyphs	no
@@ -355,7 +413,7 @@ SandhiMark	SandhiMarkWide
 lookup end
 
 
-lookup	4	single
+lookup	5	single
 
 RightToLeft	no
 IgnoreBaseGlyphs	no
@@ -369,7 +427,7 @@ SandhiMark	SandhiSp
 lookup end
 
 
-lookup	5	ligature
+lookup	6	ligature
 
 RightToLeft	no
 IgnoreBaseGlyphs	no
@@ -383,7 +441,7 @@ SandhiSp	uni25CC	SandhiMark
 lookup end
 
 
-lookup	6	single
+lookup	7	single
 
 RightToLeft	no
 IgnoreBaseGlyphs	no
@@ -395,7 +453,7 @@ ShortVowelMark	NullMark
 lookup end
 
 
-lookup	7	multiple
+lookup	8	multiple
 
 RightToLeft	no
 IgnoreBaseGlyphs	no
@@ -403,6 +461,49 @@ IgnoreLigatures	no
 IgnoreMarks	no
 
 I	I	ShortVowelMark
+
+lookup end
+
+
+lookup	9	single
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+U	U.alt3
+UU	UU.alt3
+UU.alt	UU.alt3
+U.alt	U.alt3
+
+lookup end
+
+
+lookup	10	single
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+U	U.alt4
+UU	UU.alt4
+
+lookup end
+
+
+lookup	11	single
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+U	U.alt5
+UU	UU.alt5
+UU.alt	UU.alt5
+U.alt	U.alt5
 
 lookup end
 
