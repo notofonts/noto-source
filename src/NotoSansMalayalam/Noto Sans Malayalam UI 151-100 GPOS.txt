@@ -16,7 +16,7 @@ script table end
 
 feature table begin
 0	abvm	reph-mlym
-1	dist	kernpairs-mlym,kernchillu-mlym
+1	dist	kernpairs-mlym,kernchillu-mlym,doublestroke-mlym
 feature table end
 
 
@@ -268,6 +268,13 @@ left x advance	ganamlym	uvowelsignmlym	-37
 left x advance	ganamlym	uuvowelsignmlym	-37
 left x advance	ngakamlym	ivowelsignmlym	-5
 left x advance	ngakamlym	iivowelsignmlym	-5
+left x advance	ngakalamlym	ivowelsignmlym	-5
+left x advance	ngakalamlym	iivowelsignmlym	-5
+left x advance	ngakalamlym	uvowelsignaltmlym	11
+left x advance	ngakalamlym	uuvowelsignaltmlym	11
+left x advance	ngakalamlym	rvocalicvowelsignaltmlym	10
+left x advance	ngakalamlym	yapostaltmlym	10
+left x advance	ngakalamlym	vapostaltmlym	20
 left x advance	cachamlym	rvocalicvowelsignaltmlym	10
 left x advance	cachamlym	yapostaltmlym	10
 left x advance	cachamlym	vapostaltmlym	15
@@ -457,6 +464,7 @@ ssaprehalfmlym	2
 saprehalfmlym	2
 haprehalfmlym	2
 kassaprehalfmlym	2
+uni0D3C	2
 class definition end
 
 class definition begin
@@ -712,7 +720,9 @@ lookup end
 
 lookup	reph-mlym	mark to base
 
+mark	uni0D00	0	-278,0
 mark	candrabindumlym	0	-278,0
+mark	uni0D3B	0	-279,0
 mark	rephmlym	0	-279,0
 mark	uni0951	0	-278,0
 mark	uni0952	0	-278,146
@@ -841,6 +851,7 @@ base	gamamlym	0	762,0
 base	ganamlym	0	667,0
 base	galamlym	0	487,0
 base	ngakamlym	0	588,0
+base	ngakalamlym	0	588,0
 base	ngangamlym	0	863,0
 base	cacamlym	0	507,0
 base	cachamlym	0	507,0
@@ -923,5 +934,13 @@ base	lllallvocalicUImlym	0	459,0
 base	patamlym	0	487,0
 base	rephivowelmlym	0	-237,0
 base	rephiivowelmlym	0	-237,0
+
+lookup end
+
+
+lookup	doublestroke-mlym	mark to mark
+
+mark	uni0D3B	0	-438,0
+base	rephmlym	0	-190,0
 
 lookup end

@@ -16,7 +16,7 @@ script table end
 
 feature table begin
 0	abvm	reph-mlym
-1	dist	kernpairs-mlym,kernchillu-mlym,shiftVedic-mlym
+1	dist	kernpairs-mlym,kernchillu-mlym,shiftVedic-mlym,doublestroke-mlym
 feature table end
 
 
@@ -536,6 +536,7 @@ ssaprehalfmlym	2
 saprehalfmlym	2
 haprehalfmlym	2
 kassaprehalfmlym	2
+uni0D3C	2
 class definition end
 
 class definition begin
@@ -818,6 +819,7 @@ uni1CDA	1
 candrabindu_0951mlym	1
 candrabindu_1CDAmlym	1
 uni0952	1
+uni0D00	1
 class definition end
 
 lookaheadclass definition begin
@@ -837,13 +839,16 @@ y placement	uni0952	-279
 y placement	uni1CDA	214
 y placement	candrabindu_0951mlym	214
 y placement	candrabindu_1CDAmlym	214
+y placement	uni0D00	238
 
 lookup end
 
 
 lookup	reph-mlym	mark to base
 
+mark	uni0D00	0	-280,-238
 mark	candrabindumlym	0	-280,-214
+mark	uni0D3B	0	-280,0
 mark	rephmlym	0	-280,0
 mark	uni0951	0	-280,-214
 mark	uni0952	0	-280,289
@@ -1055,5 +1060,13 @@ base	rrallvocalicmlym	0	373,0
 base	lllallvocalicmlym	0	373,0
 base	rephivowelmlym	0	-237,0
 base	rephiivowelmlym	0	-237,0
+
+lookup end
+
+
+lookup	doublestroke-mlym	mark to mark
+
+mark	uni0D3B	0	-400,0
+base	rephmlym	0	-218,0
 
 lookup end

@@ -1,0 +1,139 @@
+@NORMAL = [ A_wara WI_wara YU_wara YA_wara YO_wara II_wara UU_wara E_wara O_wara ANG_wara GA_wara KO_wara ENY_wara YUJ_wara UC_wara ENN_wara ODD_wara TTE_wara NUNG_wara DA_wara AT_wara AM_wara BU_wara PU_wara HIYO_wara HOLO_wara HORR_wara HAR_wara SSUU_wara SII_wara VIYO_wara a_wara wi_wara yu_wara ya_wara yo_wara ii_wara uu_wara e_wara o_wara ang_wara ga_wara ko_wara eny_wara yuj_wara uc_wara enn_wara odd_wara tte_wara nung_wara da_wara at_wara am_wara bu_wara pu_wara hiyo_wara holo_wara horr_wara har_wara ssuu_wara sii_wara viyo_wara ];
+
+@ABOVE = [ NGAA_wara ANG_wara GA_wara KO_wara ENY_wara YUJ_wara UC_wara ENN_wara ODD_wara TTE_wara NUNG_wara DA_wara AT_wara AM_wara BU_wara PU_wara HIYO_wara HOLO_wara HORR_wara HAR_wara SSUU_wara SII_wara VIYO_wara ngaa_wara ang_wara ga_wara ko_wara eny_wara yuj_wara uc_wara enn_wara odd_wara tte_wara nung_wara da_wara at_wara am_wara bu_wara pu_wara hiyo_wara holo_wara horr_wara har_wara ssuu_wara sii_wara viyo_wara ];
+
+# Prefix: Languagesystems
+languagesystem wara dflt;
+
+# Prefix: ref
+lookup MakeSmall {
+	sub A_wara ZWJ by A_wara.sm;
+	sub WI_wara ZWJ by WI_wara.sm;
+	sub YU_wara ZWJ by YU_wara.sm;
+	sub YA_wara ZWJ by YA_wara.sm;
+	sub YO_wara ZWJ by YO_wara.sm;
+	sub II_wara ZWJ by II_wara.sm;
+	sub UU_wara ZWJ by UU_wara.sm;
+	sub E_wara ZWJ by E_wara.sm;
+	sub O_wara ZWJ by O_wara.sm;
+	sub ANG_wara ZWJ by ANG_wara.sm;
+	sub GA_wara ZWJ by GA_wara.sm;
+	sub KO_wara ZWJ by KO_wara.sm;
+	sub ENY_wara ZWJ by ENY_wara.sm;
+	sub YUJ_wara ZWJ by YUJ_wara.sm;
+	sub UC_wara ZWJ by UC_wara.sm;
+	sub ENN_wara ZWJ by ENN_wara.sm;
+	sub ODD_wara ZWJ by ODD_wara.sm;
+	sub TTE_wara ZWJ by TTE_wara.sm;
+	sub NUNG_wara ZWJ by NUNG_wara.sm;
+	sub DA_wara ZWJ by DA_wara.sm;
+	sub AT_wara ZWJ by AT_wara.sm;
+	sub AM_wara ZWJ by AM_wara.sm;
+	sub BU_wara ZWJ by BU_wara.sm;
+	sub PU_wara ZWJ by PU_wara.sm;
+	sub HIYO_wara ZWJ by HIYO_wara.sm;
+	sub HOLO_wara ZWJ by HOLO_wara.sm;
+	sub HORR_wara ZWJ by HORR_wara.sm;
+	sub HAR_wara ZWJ by HAR_wara.sm;
+	sub SSUU_wara ZWJ by SSUU_wara.sm;
+	sub SII_wara ZWJ by SII_wara.sm;
+	sub VIYO_wara ZWJ by VIYO_wara.sm;
+	sub a_wara ZWJ by a_wara.sm;
+	sub wi_wara ZWJ by wi_wara.sm;
+	sub yu_wara ZWJ by yu_wara.sm;
+	sub ya_wara ZWJ by ya_wara.sm;
+	sub yo_wara ZWJ by yo_wara.sm;
+	sub ii_wara ZWJ by ii_wara.sm;
+	sub uu_wara ZWJ by uu_wara.sm;
+	sub e_wara ZWJ by e_wara.sm;
+	sub o_wara ZWJ by o_wara.sm;
+	sub ang_wara ZWJ by ang_wara.sm;
+	sub ga_wara ZWJ by ga_wara.sm;
+	sub ko_wara ZWJ by ko_wara.sm;
+	sub eny_wara ZWJ by eny_wara.sm;
+	sub yuj_wara ZWJ by yuj_wara.sm;
+	sub uc_wara ZWJ by uc_wara.sm;
+	sub enn_wara ZWJ by enn_wara.sm;
+	sub odd_wara ZWJ by odd_wara.sm;
+	sub tte_wara ZWJ by tte_wara.sm;
+	sub nung_wara ZWJ by nung_wara.sm;
+	sub da_wara ZWJ by da_wara.sm;
+	sub at_wara ZWJ by at_wara.sm;
+	sub am_wara ZWJ by am_wara.sm;
+	sub bu_wara ZWJ by bu_wara.sm;
+	sub pu_wara ZWJ by pu_wara.sm;
+	sub hiyo_wara ZWJ by hiyo_wara.sm;
+	sub holo_wara ZWJ by holo_wara.sm;
+	sub horr_wara ZWJ by horr_wara.sm;
+	sub har_wara ZWJ by har_wara.sm;
+	sub ssuu_wara ZWJ by ssuu_wara.sm;
+	sub sii_wara ZWJ by sii_wara.sm;
+	sub viyo_wara ZWJ by viyo_wara.sm;
+} MakeSmall;
+
+lookup MakeAbove {
+	sub NGAA_wara by ngaa_wara.abv;
+	sub ANG_wara by ang_wara.abv;
+	sub GA_wara by ga_wara.abv;
+	sub KO_wara by ko_wara.abv;
+	sub ENY_wara by eny_wara.abv;
+	sub YUJ_wara by yuj_wara.abv;
+	sub UC_wara by uc_wara.abv;
+	sub ENN_wara by enn_wara.abv;
+	sub ODD_wara by odd_wara.abv;
+	sub TTE_wara by tte_wara.abv;
+	sub NUNG_wara by nung_wara.abv;
+	sub DA_wara by da_wara.abv;
+	sub AT_wara by at_wara.abv;
+	sub AM_wara by am_wara.abv;
+	sub BU_wara by bu_wara.abv;
+	sub PU_wara by pu_wara.abv;
+	sub HIYO_wara by hiyo_wara.abv;
+	sub HOLO_wara by holo_wara.abv;
+	sub HORR_wara by horr_wara.abv;
+	sub HAR_wara by har_wara.abv;
+	sub SSUU_wara by ssuu_wara.abv;
+	sub SII_wara by sii_wara.abv;
+	sub VIYO_wara by viyo_wara.abv;
+	sub ngaa_wara by ngaa_wara.abv;
+	sub ang_wara by ang_wara.abv;
+	sub ga_wara by ga_wara.abv;
+	sub ko_wara by ko_wara.abv;
+	sub eny_wara by eny_wara.abv;
+	sub yuj_wara by yuj_wara.abv;
+	sub uc_wara by uc_wara.abv;
+	sub enn_wara by enn_wara.abv;
+	sub odd_wara by odd_wara.abv;
+	sub tte_wara by tte_wara.abv;
+	sub nung_wara by nung_wara.abv;
+	sub da_wara by da_wara.abv;
+	sub at_wara by at_wara.abv;
+	sub am_wara by am_wara.abv;
+	sub bu_wara by bu_wara.abv;
+	sub pu_wara by pu_wara.abv;
+	sub hiyo_wara by hiyo_wara.abv;
+	sub holo_wara by holo_wara.abv;
+	sub horr_wara by horr_wara.abv;
+	sub har_wara by har_wara.abv;
+	sub ssuu_wara by ssuu_wara.abv;
+	sub sii_wara by sii_wara.abv;
+	sub viyo_wara by viyo_wara.abv;
+} MakeAbove;
+
+feature ccmp {
+lookup SmallFormsChain {
+	sub @NORMAL' lookup MakeSmall ZWJ' @ABOVE;
+} SmallFormsChain;
+
+lookup AboveForm {
+	sub [KO_wara.sm AT_wara.sm eny_wara.sm horr_wara.sm TTE_wara.sm tte_wara.sm A_wara.sm ya_wara.sm E_wara.sm HIYO_wara.sm SSUU_wara.sm uc_wara.sm DA_wara.sm e_wara.sm ENY_wara.sm GA_wara.sm ko_wara.sm odd_wara.sm bu_wara.sm NUNG_wara.sm enn_wara.sm HOLO_wara.sm har_wara.sm ODD_wara.sm sii_wara.sm VIYO_wara.sm ANG_wara.sm SII_wara.sm nung_wara.sm YA_wara.sm YUJ_wara.sm YU_wara.sm o_wara.sm ENN_wara.sm ga_wara.sm hiyo_wara.sm wi_wara.sm UC_wara.sm ang_wara.sm at_wara.sm O_wara.sm BU_wara.sm yuj_wara.sm da_wara.sm ssuu_wara.sm UU_wara.sm holo_wara.sm ii_wara.sm HORR_wara.sm pu_wara.sm II_wara.sm yu_wara.sm yo_wara.sm uu_wara.sm WI_wara.sm am_wara.sm PU_wara.sm viyo_wara.sm YO_wara.sm a_wara.sm HAR_wara.sm AM_wara.sm] [SII_wara BU_wara uc_wara HAR_wara odd_wara GA_wara da_wara yuj_wara NUNG_wara AT_wara nung_wara NGAA_wara HOLO_wara YUJ_wara SSUU_wara am_wara DA_wara HORR_wara ga_wara ENY_wara ang_wara ko_wara pu_wara ENN_wara ssuu_wara tte_wara ngaa_wara HIYO_wara PU_wara KO_wara sii_wara ODD_wara UC_wara bu_wara hiyo_wara TTE_wara enn_wara viyo_wara horr_wara har_wara VIYO_wara AM_wara holo_wara at_wara eny_wara ANG_wara]' lookup MakeAbove;
+} AboveForm;
+
+lookup Flip {
+	sub tte_wara.abv by tte_wara.abv.flip;
+	sub pu_wara.abv by pu_wara.abv.flip;
+	sub holo_wara.abv by holo_wara.abv.flip;
+	sub har_wara.abv by har_wara.abv.flip;
+} Flip;
+} ccmp;
+

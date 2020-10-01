@@ -1,0 +1,101 @@
+<html lang="">
+<head>
+<script language="javascript">
+function test_environment(){
+    var navigator_agnt = navigator.userAgent;
+    var platform = window.navigator.platform;
+    var browserName  = navigator.appName;
+    var full_Version  = ""+parseFloat(navigator.appVersion);
+    var nameOffset,verOffset,ix;
+    var browser_details =""
+    var macosPlatforms = ["Macintosh", "MacIntel", "MacPPC", "Mac68K"];
+    var windowsPlatforms = ["Win32", "Win64", "Windows", "WinCE"];
+    var iosPlatforms = ["iPhone", "iPad", "iPod"];
+    var os = null;
+
+    if ((verOffset=navigator_agnt.indexOf("Chrome"))!=-1){
+    browserName = "Chrome";
+    full_Version = navigator_agnt.substring(verOffset+7);}
+
+    else if ((verOffset=navigator_agnt.indexOf("Safari"))!=-1){
+    browserName = "Safari";
+    full_Version = navigator_agnt.substring(verOffset+7);
+    if ((verOffset=navigator_agnt.indexOf("Version"))!=-1) 
+    full_Version = navigator_agnt.substring(verOffset+8);}
+
+    else if ((verOffset=navigator_agnt.indexOf("Firefox"))!=-1){
+    browserName = "Firefox";
+    full_Version = navigator_agnt.substring(verOffset+8);}
+    else if ( (nameOffset=navigator_agnt.lastIndexOf(" ")+1) < 
+    (verOffset=navigator_agnt.lastIndexOf("/")) ) 
+    {
+    browserName = navigator_agnt.substring(nameOffset,verOffset);
+    full_Version = navigator_agnt.substring(verOffset+1);
+    if (browserName.toLowerCase()==browserName.toUpperCase()){ browserName = navigator.appName;}
+    }
+    if ((ix=full_Version.indexOf(";"))!=-1)
+    full_Version=full_Version.substring(0,ix);
+    if ((ix=full_Version.indexOf(" "))!=-1)
+    full_Version=full_Version.substring(0,ix);
+    if (macosPlatforms.indexOf(platform) !== -1){
+    os = "Mac OS";} 
+    else if (iosPlatforms.indexOf(platform) !== -1){
+    os = "iOS";}
+    else if (windowsPlatforms.indexOf(platform) !== -1){
+    os = "Windows";}
+    else if (/Android/.test(userAgent)){
+    os = "Android";}
+    else if (!os && /Linux/.test(platform)){
+    os = "Linux";}
+    browser_details = browserName + " " + full_Version +" "+ os
+    return browser_details}
+</script>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
+<style>
+@font-face{font-family:"NotoSans-Regular"; src:url("https://cdn.jsdelivr.net/gh/googlefonts/noto-fonts@master/hinted/ttf/NotoSans/NotoSans-Regular.ttf");
+}
+@font-face{font-family:"NotoSans-Italic"; src:url("https://cdn.jsdelivr.net/gh/googlefonts/noto-fonts@master/hinted/ttf/NotoSans/NotoSans-Italic.ttf");
+}
+@font-face{font-family:"NotoSerif-Regular"; src:url("https://cdn.jsdelivr.net/gh/googlefonts/noto-fonts@master/hinted/ttf/NotoSerif/NotoSerif-Regular.ttf");
+}
+@font-face{font-family:"NotoSerif-Italic"; src:url("https://cdn.jsdelivr.net/gh/googlefonts/noto-fonts@master/hinted/ttf/NotoSerif/NotoSerif-Italic.ttf");
+}
+@font-face{font-family:"NotoMono-Regular"; src:url("https://cdn.jsdelivr.net/gh/googlefonts/noto-fonts@master/hinted/ttf/NotoMono/NotoMono-Regular.ttf");
+}
+@font-face{font-family: AdobeBlank; src:url(AdobeBlank.ttf);}
+</style>
+</head>
+<body>
+<a href="https://github.com/googlefonts/noto-fonts/issues/1830">Issue 1830</a>
+<p>NotoSans-Regular </p>
+<p><span style="font-family:NotoSans-Regular, AdobeBlank; font-weight:400; background-color:#EDEBEA">ꙗⷼѥ</span></p>
+<p>NotoSans-Italic </p>
+<p><span style="font-family:NotoSans-Italic, AdobeBlank; font-weight:400; background-color:#EDEBEA">ꙗⷼѥ</span></p>
+<p>NotoSerif-Regular </p>
+<p><span style="font-family:NotoSerif-Regular, AdobeBlank; font-weight:400; background-color:#EDEBEA">ꙗⷼѥ</span></p>
+<p>NotoSerif-Italic </p>
+<p><span style="font-family:NotoSerif-Italic, AdobeBlank; font-weight:400; background-color:#EDEB6A">ꙗⷼѥ</span></p>
+<p>NotoMono-Regular </p>
+<p><span style="font-family:NotoMono-Regular, AdobeBlank; font-weight:400; background-color:#EDEBEA">ꙗⷼѥ</span></p>
+
+<label style="font-size:10px"> Test details:
+<br>Fonts used:<br>
+https://github.com/googlefonts/noto-fonts/tree/master/hinted/ttf/NotoSans/NotoSans-Regular.ttf<br> https://github.com/googlefonts/noto-fonts/tree/master/hinted/ttf/NotoSans/NotoSans-Italic.ttf<br> https://github.com/googlefonts/noto-fonts/tree/master/hinted/ttf/NotoSerif/NotoSerif-Regular.ttf<br> https://github.com/googlefonts/noto-fonts/tree/master/hinted/ttf/NotoSerif/NotoSerif-Italic.ttf<br> https://github.com/googlefonts/noto-fonts/tree/master/hinted/ttf/NotoMono/NotoMono-Regular.ttf<br></label>
+<br>
+<label style="font-size:10px" id="system_id"></label>
+<br><label style="font-size:10px">Test created on: </label>
+<label style="font-size:10px" id="date"></label>
+
+<script language="javascript">
+var date_tag = new Date();
+document.getElementById("date").innerHTML=date_tag;
+
+var system_info = test_environment();
+document.getElementById("system_id").innerHTML=system_info;
+</script>
+
+</body>
+</html>

@@ -9,7 +9,7 @@ EM	1000
 feature table begin
 0	abvm	topmarktobase-beng
 1	blwm	bottommarktobase-beng,vedic-beng
-2	dist	kernpairs-beng,gapfix-beng
+2	dist	kernpairs-beng,gapfix-beng,shiftVedic-beng
 feature table end
 
 script table begin
@@ -77,6 +77,8 @@ left x advance	ssahalfbeng	ttarasquishbeng	-100
 left x advance	sahalfbeng	karabeng	-60
 left x advance	sahalfbeng	tarabeng	-60
 left x advance	sahalfbeng	palabeng	-60
+left x advance	uni1CF7	aivowelsignbeng	70
+left x advance	uni1CF7	aivowelsigninibeng	70
 
 lookup end
 
@@ -231,7 +233,7 @@ base	phanuktabeng	0	445,622
 base	bhanuktabeng	0	384,622
 base	shanuktabeng	0	444,622
 base	hanuktabeng	0	233,622
-base	kassabeng	0	568,622
+base	kassabeng	0	537,622
 base	janyabeng	0	547,622
 base	karabeng	0	543,622
 base	kharabeng	0	463,622
@@ -260,7 +262,7 @@ base	rrarabeng	0	341,622
 base	rrarasquishbeng	0	370,622
 base	rharabeng	0	358,622
 base	rharasquishbeng	0	348,622
-base	kassarabeng	0	568,622
+base	kassarabeng	0	537,622
 base	janyarabeng	0	547,622
 base	kababeng	0	379,622
 base	khababeng	0	463,622
@@ -286,7 +288,7 @@ base	shababeng	0	449,622
 base	sababeng	0	460,622
 base	rrababeng	0	366,622
 base	rhababeng	0	260,622
-base	kassababeng	0	568,622
+base	kassababeng	0	537,622
 base	janyababeng	0	547,622
 base	kakabeng	0	379,622
 base	katabeng	0	431,622
@@ -294,7 +296,7 @@ base	katababeng	0	431,622
 base	katarabeng	0	431,622
 base	kanabeng	0	386,622
 base	kalabeng	0	431,622
-base	kassannabeng	0	568,622
+base	kassannabeng	0	537,622
 base	gagabeng	0	454,622
 base	gadabeng	0	710,622
 base	gadhabeng	0	423,622
@@ -304,7 +306,7 @@ base	ngakabeng	0	335,622
 base	ngakarabeng	0	442,622
 base	ngakhabeng	0	819,622
 base	ngagabeng	0	378,622
-base	ngakassabeng	0	1133,622
+base	ngakassabeng	0	1101,622
 base	cacabeng	0	550,622
 base	cachabeng	0	639,622
 base	canyabeng	0	627,622
@@ -400,7 +402,7 @@ base	satarabeng	0	460,622
 base	saparabeng	0	1025,622
 base	hannabeng	0	292,622
 base	hanabeng	0	233,622
-base	hamabeng	0	568,622
+base	hamabeng	0	537,622
 base	halabeng	0	326,622
 base	gubeng	0	444,622
 base	lagubeng	0	560,622
@@ -529,7 +531,7 @@ base	kanuktabeng	0	415,0
 base	januktabeng	0	757,0
 base	jhanuktabeng	0	415,0
 base	phanuktabeng	0	445,0
-base	kassabeng	0	568,0
+base	kassabeng	0	537,0
 base	janyabeng	0	729,0
 base	karabeng	0	543,0
 base	garabeng	0	555,0
@@ -575,7 +577,7 @@ base	ghalabeng	0	445,0
 base	ngakabeng	0	335,0
 base	ngagabeng	0	565,0
 base	ngaghabeng	0	1005,0
-base	ngakassabeng	0	1133,0
+base	ngakassabeng	0	1101,0
 base	cacabeng	0	606,0
 base	cachabeng	0	716,0
 base	jajabeng	0	1164,0
@@ -662,7 +664,7 @@ base	samabeng	0	807,0
 base	salabeng	0	510,0
 base	saparabeng	0	1086,0
 base	hanabeng	0	268,0
-base	hamabeng	0	568,0
+base	hamabeng	0	537,0
 base	kharasquishbeng	0	524,0
 base	gharasquishbeng	0	528,0
 base	carasquishbeng	0	504,0
@@ -710,6 +712,14 @@ lookup	vedic-beng	mark to base
 
 mark	uni0951	0	-255,470
 mark	uni0952	0	-255,706
+mark	uni1CD0	0	-255,470
+mark	uni1CD2	0	-255,470
+mark	uni1CD5	0	-255,622
+mark	uni1CD6	0	-255,622
+mark	uni1CD8	0	-255,622
+mark	uni1CED	0	-255,622
+base	anusvarabeng	0	-203,622
+base	visargabeng	0	-203,622
 base	abeng	0	446,622
 base	aabeng	0	579,622
 base	ibeng	0	265,622
@@ -775,6 +785,7 @@ base	eightbeng	0	296,622
 base	ninebeng	0	296,622
 base	ra1beng	0	298,622
 base	wabeng	0	298,622
+base	uni09FC	0	-203,622
 base	kanuktabeng	0	453,622
 base	khanuktabeng	0	348,622
 base	ganuktabeng	0	328,622
@@ -804,8 +815,9 @@ base	sanuktabeng	0	341,622
 base	hanuktabeng	0	265,622
 base	ra1nuktabeng	0	298,622
 base	wanuktabeng	0	298,622
-base	kassabeng	0	475,622
+base	kassabeng	0	459,622
 base	janyabeng	0	487,622
+base	kahalfbeng	0	403,622
 base	yapostformbeng	0	-203,622
 base	karabeng	0	465,622
 base	kharabeng	0	348,622
@@ -847,7 +859,7 @@ base	rrarasquishbeng	0	350,622
 base	rharabeng	0	335,622
 base	rharasquishbeng	0	340,622
 base	yyarabeng	0	343,622
-base	kassarabeng	0	475,622
+base	kassarabeng	0	459,622
 base	janyarabeng	0	487,622
 base	kababeng	0	417,622
 base	khababeng	0	348,622
@@ -887,7 +899,7 @@ base	wababeng	0	298,622
 base	rrababeng	0	356,622
 base	rhababeng	0	293,622
 base	yyababeng	0	313,622
-base	kassababeng	0	475,622
+base	kassababeng	0	459,622
 base	janyababeng	0	487,622
 base	kakabeng	0	417,622
 base	kattabeng	0	400,622
@@ -899,8 +911,8 @@ base	kanabeng	0	424,622
 base	kamabeng	0	448,622
 base	kalabeng	0	469,622
 base	kasabeng	0	456,622
-base	kassannabeng	0	475,622
-base	kassamabeng	0	548,622
+base	kassannabeng	0	459,622
+base	kassamabeng	0	533,622
 base	gagabeng	0	343,622
 base	gadabeng	0	503,622
 base	gadhabeng	0	409,622
@@ -915,7 +927,7 @@ base	ngakhabeng	0	526,622
 base	ngagabeng	0	363,622
 base	ngaghabeng	0	588,622
 base	ngamabeng	0	459,622
-base	ngakassabeng	0	757,622
+base	ngakassabeng	0	741,622
 base	cacabeng	0	431,622
 base	cachabeng	0	492,622
 base	canyabeng	0	519,622
@@ -1053,7 +1065,7 @@ base	satarabeng	0	364,622
 base	saparabeng	0	629,622
 base	hannabeng	0	294,622
 base	hanabeng	0	375,622
-base	hamabeng	0	482,622
+base	hamabeng	0	466,622
 base	halabeng	0	311,622
 base	gubeng	0	412,622
 base	lagubeng	0	425,622
@@ -1156,5 +1168,37 @@ base	sattarasquishbeng	0	487,622
 base	satasquishbeng	0	364,622
 base	nnaddarubeng	0	369,622
 base	sakarubeng	0	456,622
+base	uni1CEA	0	374,622
 
 lookup end
+
+
+lookup	shiftVedic-beng	chained
+
+backtrackclass definition begin
+space	1
+uni25CC	1
+class definition end
+
+class definition begin
+uni09FE	1
+uniA8F1	1
+class definition end
+
+lookaheadclass definition begin
+# 1	1
+class definition end
+
+class-chain	0	1		1,shiftTheVedic-beng
+
+lookup end
+
+
+lookup	shiftTheVedic-beng	single
+
+y placement	uni09FE	152
+y placement	uniA8F1	152
+
+lookup end
+
+

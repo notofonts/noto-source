@@ -3,6 +3,7 @@
   <advance width="195"/>
   <anchor x="116" y="679" name="top"/>
   <anchor x="-6" y="613" name="topright"/>
+  <anchor x="-197" y="0" name="vedic"/>
   <outline>
     <contour>
       <point x="-6" y="847" type="curve" smooth="yes"/>
@@ -34,59 +35,30 @@
       <point x="-60" y="983"/>
       <point x="-40" y="962"/>
     </contour>
-    <contour>
-      <point x="133" y="-35" type="line"/>
-      <point x="141" y="-33" type="line"/>
-      <point x="141" y="550" type="line"/>
-      <point x="226" y="550" type="line"/>
-      <point x="188" y="622" type="line"/>
-      <point x="136" y="622" type="line"/>
-      <point x="120" y="816"/>
-      <point x="11" y="939"/>
-      <point x="-194" y="939" type="curve" smooth="yes"/>
-      <point x="-368" y="939"/>
-      <point x="-431" y="870"/>
-      <point x="-431" y="793" type="curve" smooth="yes"/>
-      <point x="-431" y="718"/>
-      <point x="-377" y="684"/>
-      <point x="-314" y="684" type="curve" smooth="yes"/>
-      <point x="-259" y="684"/>
-      <point x="-235" y="700"/>
-      <point x="-194" y="700" type="curve" smooth="yes"/>
-      <point x="-165" y="700"/>
-      <point x="-141" y="685"/>
-      <point x="-141" y="616" type="curve"/>
-      <point x="-56" y="616" type="line"/>
-      <point x="-60" y="652" type="line" smooth="yes"/>
-      <point x="-69" y="739"/>
-      <point x="-132" y="785"/>
-      <point x="-211" y="785" type="curve" smooth="yes"/>
-      <point x="-259" y="785"/>
-      <point x="-296" y="776"/>
-      <point x="-332" y="776" type="curve" smooth="yes"/>
-      <point x="-356" y="776"/>
-      <point x="-367" y="783"/>
-      <point x="-367" y="797" type="curve" smooth="yes"/>
-      <point x="-367" y="827"/>
-      <point x="-321" y="845"/>
-      <point x="-200" y="845" type="curve" smooth="yes"/>
-      <point x="-39" y="845"/>
-      <point x="54" y="799"/>
-      <point x="56" y="622" type="curve"/>
-      <point x="-31" y="622" type="line"/>
-      <point x="8" y="550" type="line"/>
-      <point x="55" y="550" type="line"/>
-      <point x="55" y="1" type="line"/>
-    </contour>
-    <contour>
-      <point x="15" y="642" type="line"/>
-      <point x="199" y="883" type="line"/>
-      <point x="155" y="902" type="line"/>
-      <point x="-68" y="720" type="line"/>
-    </contour>
+    <component base="iiMatra-beng"/>
+    <component base="reph-beng" xOffset="78" yOffset="-49"/>
   </outline>
   <lib>
     <dict>
+      <key>com.schriftgestaltung.Glyphs.ComponentInfo</key>
+      <array>
+        <dict>
+          <key>alignment</key>
+          <integer>-1</integer>
+          <key>index</key>
+          <integer>0</integer>
+          <key>name</key>
+          <string>iiMatra-beng</string>
+        </dict>
+        <dict>
+          <key>alignment</key>
+          <integer>-1</integer>
+          <key>index</key>
+          <integer>1</integer>
+          <key>name</key>
+          <string>reph-beng</string>
+        </dict>
+      </array>
       <key>com.schriftgestaltung.Glyphs.category</key>
       <string>Letter</string>
       <key>com.schriftgestaltung.Glyphs.glyph.widthMetricsKey</key>
