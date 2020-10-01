@@ -30,19 +30,20 @@ function build_glyphs() {
 #     Output formats, as separate strings.
 ################################################################################
 function build_plist() {
+    pathops="$(pathops_arg "$1")"
     glyphs="$(glyphs_from_plist "$1")"
     family="$(family_from_plist "$1")"
     if [[ -n "$family" ]]; then
         fontmake -g "$glyphs" -o "${@:2}" --mti-source "$1"\
-            --no-production-names --family-name "$family"
+            --no-production-names --family-name "$family" ${pathops} 
         fontmake -g "$glyphs" -o "${@:2}" -i --interpolate-binary-layout\
-            --no-production-names --family-name "$family"
+            --no-production-names --family-name "$family" ${pathops}
     else
         fontmake -g "$glyphs" -o "${@:2}" --mti-source "$1"\
-            --no-production-names
+            --no-production-names ${pathops}
         if should_interpolate "$1"; then
             fontmake -g "$glyphs" -o "${@:2}" -i --interpolate-binary-layout\
-                --no-production-names
+                --no-production-names ${pathops}
         fi
     fi
 }
@@ -82,13 +83,14 @@ function build_glyphs_variable() {
 #     Path to plist source.
 ################################################################################
 function build_plist_variable() {
+    pathops="$(pathops_arg "$1")"
     glyphs="$(glyphs_from_plist "$1")"
     family="$(family_from_plist "$1")"
     if [[ -n "${family}" ]]; then
         fontmake -g "${glyphs}" -o variable --mti-source "$1"\
-            --family-name "${family}"
+            --family-name "${family}" ${pathops}
     else
-        fontmake -g "${glyphs}" -o variable --mti-source "$1"
+        fontmake -g "${glyphs}" -o variable --mti-source "$1" ${pathops}
     fi
 }
 
@@ -117,6 +119,19 @@ function glyphs_from_plist() {
             ;;
         *)
             echo "${glyphs}"
+            ;;
+    esac
+}
+
+function pathops_arg() {
+    case "$1" in
+        */Arimo-*|\
+        */Cousine-*|\
+        */Tinos-*)
+            echo  '--overlaps-backend pathops'
+            ;;
+        *)
+            echo ''
             ;;
     esac
 }
@@ -177,6 +192,11 @@ function should_interpolate() {
             false
             ;;
         */NotoSansJavanese-MM.plist)
+            false
+            ;;
+        */Arimo-*|\
+        */Cousine-*|\
+        */Tinos-*)
             false
             ;;
         *)
