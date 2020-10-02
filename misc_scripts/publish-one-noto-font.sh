@@ -42,7 +42,6 @@ if ([ ! -d $3/unhinted/otf/$1 ]) then echo "$3/unhinted/otf/$1 doesn't exist"; e
 if ([ ! -d $3/unhinted/variable-ttf/ ]) then echo "$3/unhinted/variable-ttf/ doesn't exist"; exit 1; fi
 if ([ ! -d $3/unhinted/slim-variable-ttf/ ]) then echo "$3/unhinted/slim-variable-ttf/ doesn't exist"; exit 1; fi
 if ([ ! -d $3/hinted/ttf/$1 ]) then echo "$3/hinted/ttf/$1 doesn't exist"; exit 1; fi
-exit 1
 #
 cp instance_ttf/$1-*.*tf $3/unhinted/ttf/$1/
 cp instance_otf/$1-*.*tf $3/unhinted/otf/$1/
