@@ -28,32 +28,15 @@ if (( $# != 3 )) then echo usage: "publish-one-noto-font.sh <noto-font-name> <fr
 if ([ ! -d $2 ]) then echo "from-dir $2 doesn't exist"; exit 1; fi
 if ([ ! -d $3 ]) then echo "to-dir $3 doesn't exist"; exit 1; fi
 cd $2
+#
 if ([ ! -d instance_ttf ]) then echo "$2/instance_ttf doesn't exist"; exit 1; fi
-if ([ ! -d instance_otf ]) then echo "$2/instance_otf doesn't exist"; exit 1; fi
-if ([ ! -d variable_ttf ]) then echo "$2/variable_ttf doesn't exist"; exit 1; fi
-if ([ ! -d variable_ttf/slim ]) then echo "$2/variable_ttf/slim doesn't exist"; exit 1; fi
 ls instance_ttf/$1-*.*tf 1>/dev/null 2>&1 || exit 1
-ls instance_otf/$1-*.*tf 1>/dev/null 2>&1 || exit 1
-ls variable_ttf/$1-*.*tf 1>/dev/null 2>&1 || exit 1
-ls variable_ttf/slim/$1-*.*tf 1>/dev/null 2>&1 || exit 1
-#
 if ([ ! -d $3/unhinted/ttf/$1 ]) then echo "$3/unhinted/ttf/$1 doesn't exist"; exit 1; fi
-if ([ ! -d $3/unhinted/otf/$1 ]) then echo "$3/unhinted/otf/$1 doesn't exist"; exit 1; fi
-if ([ ! -d $3/unhinted/variable-ttf/ ]) then echo "$3/unhinted/variable-ttf/ doesn't exist"; exit 1; fi
-if ([ ! -d $3/unhinted/slim-variable-ttf/ ]) then echo "$3/unhinted/slim-variable-ttf/ doesn't exist"; exit 1; fi
 if ([ ! -d $3/hinted/ttf/$1 ]) then echo "$3/hinted/ttf/$1 doesn't exist"; exit 1; fi
-#
 cp instance_ttf/$1-*.*tf $3/unhinted/ttf/$1/
-cp instance_otf/$1-*.*tf $3/unhinted/otf/$1/
-cp variable_ttf/$1-*.*tf $3/unhinted/variable-ttf/
-cp variable_ttf/slim/$1-*.*tf $3/unhinted/slim-variable-ttf/
 # initially populate unhinted fonts into the hined directory
 cp instance_ttf/$1-*.*tf $3/hinted/ttf/$1/
 cd $3
-git add unhinted/ttf/$1/$1-*.*tf
-git add unhinted/otf/$1/$1-*.*tf
-git add unhinted/variable-ttf/$1-*.*tf
-git add unhinted/slim-variable-ttf/$1-*.*tf
 ls -l unhinted/ttf/$1/$1-*.*tf
 cd unhinted/ttf/$1/ ; for i in $1-*.ttf ; do ttfautohint $i hinted/ttf/$i; done
 cd $3
@@ -61,6 +44,32 @@ ls -l hinted/ttf/$1-*.*tf
 for i in `ls -l hinted/ttf/$1-*.*tf | grep "  0 " | sed -e "s/^.*$1/$1/"` ; do rm hinted/ttf/$i; done
 cp hinted/ttf/$1-*.*tf hinted/ttf/$1/
 ls -l hinted/ttf/$1/$1-*.*tf
+cd $2
+#
+if ([ ! -d instance_otf ]) then echo "$2/instance_otf doesn't exist"; exit 1; fi
+ls instance_otf/$1-*.*tf 1>/dev/null 2>&1 || exit 1
+if ([ ! -d $3/unhinted/otf/$1 ]) then echo "$3/unhinted/otf/$1 doesn't exist"; exit 1; fi
+cp instance_otf/$1-*.*tf $3/unhinted/otf/$1/
+cd $3
+git add unhinted/ttf/$1/$1-*.*tf
+git add unhinted/otf/$1/$1-*.*tf
 git add hinted/ttf/$1/$1-*.*tf
-git commit -m "Published $1 hinted and unhinted fonts"
+git commit -m "Published $1 hinted and unhinted static instances"
+git push
+cd $2
+#
+if ([ ! -d variable_ttf ]) then echo "$2/variable_ttf doesn't exist"; exit 1; fi
+ls variable_ttf/$1-*.*tf 1>/dev/null 2>&1 || exit 1
+if ([ ! -d $3/unhinted/variable-ttf/ ]) then echo "$3/unhinted/variable-ttf/ doesn't exist"; exit 1; fi
+cp variable_ttf/$1-*.*tf $3/unhinted/variable-ttf/
+#
+if ([ ! -d variable_ttf/slim ]) then echo "$2/variable_ttf/slim doesn't exist"; exit 1; fi
+ls variable_ttf/slim/$1-*.*tf 1>/dev/null 2>&1 || exit 1
+if ([ ! -d $3/unhinted/slim-variable-ttf/ ]) then echo "$3/unhinted/slim-variable-ttf/ doesn't exist"; exit 1; fi
+cp variable_ttf/slim/$1-*.*tf $3/unhinted/slim-variable-ttf/
+#
+cd $3
+git add unhinted/variable-ttf/$1-*.*tf
+git add unhinted/slim-variable-ttf/$1-*.*tf
+git commit -m "Published $1 unhinted variable and slim-variablefonts"
 git push
