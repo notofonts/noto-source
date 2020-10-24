@@ -44,6 +44,7 @@ ls -l hinted/ttf/$1-*.*tf
 for i in `ls -l hinted/ttf/$1-*.*tf | grep "  0 " | sed -e "s/^.*$1/$1/"` ; do rm hinted/ttf/$i; done
 cp hinted/ttf/$1-*.*tf hinted/ttf/$1/
 ls -l hinted/ttf/$1/$1-*.*tf
+for i in hinted/ttf/$1/$1-*.*tf ; do gftools fix-dsig --autofix $i; done 
 cd $2
 #
 if ([ ! -d instance_otf ]) then echo "$2/instance_otf doesn't exist"; exit 1; fi
@@ -71,5 +72,5 @@ cp variable_ttf/slim/$1-*.*tf $3/unhinted/slim-variable-ttf/
 cd $3
 git add unhinted/variable-ttf/$1-*.*tf
 git add unhinted/slim-variable-ttf/$1-*.*tf
-git commit -m "Published $1 unhinted variable and slim-variablefonts"
+git commit -m "Published $1 unhinted variable and slim-variable fonts"
 git push
