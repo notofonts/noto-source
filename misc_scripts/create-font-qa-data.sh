@@ -45,8 +45,8 @@ cd $4
 if ([ ! -d ../Font-QA-Data ]) then mkdir ../Font-QA-Data; fi
 mkdir ../Font-QA-Data/$1-$TS
 cd $4/instance_ttf
-# mkdir $4/../Font-QA-Data/$1-$TS/fontdiff
-# for j in `ls $1-*.ttf | sed -e "s/.ttf//"`; do for i in $2/fontdiff-*.html; do echo fontdiff $j $i; test=`echo $(basename $i) | sed -e "s/.html//"`; echo $test; fontdiff --before $3/unhinted/ttf/$1/$j.ttf --after $j.ttf --specimen $i --out $4/../Font-QA-Data/$1-$TS/fontdiff/$j-$i.pdf ; done; done 
+mkdir $4/../Font-QA-Data/$1-$TS/fontdiff
+for j in `ls $1-*.ttf | sed -e "s/.ttf//"`; do for i in $2/fontdiff-*.html; do echo fontdiff $j $i ; test=`echo $(basename $i) | sed -e "s/.html//"`; echo $test ; echo "$4/../Font-QA-Data/$1-$TS/fontdiff/$j-$test.pdf"; fontdiff --before $3/unhinted/ttf/$1/$j.ttf --after $j.ttf --specimen $i --out $4/../Font-QA-Data/$1-$TS/fontdiff/$j-$test.pdf ; done; done 
 mkdir $4/../Font-QA-Data/$1-$TS/diffenator
 for j in `ls $1-*.ttf | sed -e "s/.ttf//"`; do echo "====== " diffenator $j; diffenator $3/unhinted/ttf/$1/$j.ttf $j.ttf -r $4/../Font-QA-Data/$1-$TS/diffenator/$j-img  -html > $4/../Font-QA-Data/$1-$TS/diffenator/$j-out.html ; done
 mkdir $4/../Font-QA-Data/$1-$TS/fontbakery
