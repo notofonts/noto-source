@@ -1,0 +1,48 @@
+# Prefix: Languagesystems
+languagesystem DFLT dflt;
+
+feature ccmp {
+script DFLT;
+#script copt;
+
+#keycaps with space and dottedCircle
+lookup keycap {
+	sub space enclosingkeycapcomb by space_20E3;
+	sub enclosingkeycapcomb space by space_20E3;
+	sub dottedCircle enclosingkeycapcomb by dottedCircle_20E3;
+	sub enclosingkeycapcomb dottedCircle by dottedCircle_20E3;
+	sub numbersign enclosingkeycapcomb by numbersign_20E3;
+	sub asterisk enclosingkeycapcomb by asterisk_20E3;
+	sub zero enclosingkeycapcomb by zero_20E3;
+	sub one enclosingkeycapcomb by one_20E3;
+	sub two enclosingkeycapcomb by two_20E3;
+	sub three enclosingkeycapcomb by three_20E3;
+	sub four enclosingkeycapcomb by four_20E3;
+	sub five enclosingkeycapcomb by five_20E3;
+	sub six enclosingkeycapcomb by six_20E3;
+	sub seven enclosingkeycapcomb by seven_20E3;
+	sub eight enclosingkeycapcomb by eight_20E3;
+	sub nine enclosingkeycapcomb by nine_20E3;
+} keycap;
+
+#coptic with space and dottedCircle
+lookup ccmp0 {
+	sub space u102E0 by space_u102E0;
+#	sub u102E0 space by space_u102E0;
+} ccmp0;
+
+#phaistos disc with space and dottedCircle
+lookup ccmp1 {
+	sub space gobliquestroke-phaistosDisc by sp_gobliquestr-phaistosDisc;
+#	sub gobliquestroke-phaistosDisc space by sp_gobliquestr-phaistosDisc;
+} ccmp1;
+	
+#enclosingscreencomb with space and dottedCircle
+lookup ccmp2 {
+	sub space enclosingscreencomb by space_enclosingscreencomb;
+	sub enclosingscreencomb space by space_enclosingscreencomb;
+	sub dottedCircle enclosingscreencomb by dottedCircle_enclosingscreencomb;
+	sub enclosingscreencomb dottedCircle by dottedCircle_enclosingscreencomb;
+} ccmp2;
+
+} ccmp;
