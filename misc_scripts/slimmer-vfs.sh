@@ -32,4 +32,6 @@ cp slim-drop/Noto*$2*-VF.ttf slim/ || echo "slim-drop/Noto*$2*-VF.ttf not found"
 # copy slim-no-wdth only variable fonts that are NOT already present in slim/ 
 cd slim-no-wdth; for i in `ls Noto*-VF.ttf | grep -v Regular | grep -v Medium | grep -v Elymaic | grep -v Old` ; do test -f ../slim/$i && echo yes - $i || cp $i ../slim/ ; done
 cd ..
+echo "copied to slim/ the following fonts"
+ls -l slim/Noto*$2*-VF.ttf
 rm -r slim-drop slim-no-wdth

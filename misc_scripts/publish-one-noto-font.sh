@@ -31,25 +31,30 @@ cd $2
 #
 if ([ ! -d instance_ttf ]) then echo "$2/instance_ttf doesn't exist"; exit 1; fi
 ls instance_ttf/$1-*.*tf 1>/dev/null 2>&1 || exit 1
-if ([ ! -d $3/unhinted/ttf/$1 ]) then echo "$3/unhinted/ttf/$1 doesn't exist"; exit 1; fi
-if ([ ! -d $3/hinted/ttf/$1 ]) then echo "$3/hinted/ttf/$1 doesn't exist"; exit 1; fi
+if ([ ! -d $3/unhinted/ttf/$1 ]) then mkdir $3/unhinted/ttf/$1 ; echo "directory $3/unhinted/ttf/$1 was created"; fi
+if ([ ! -d $3/hinted/ttf/$1 ]) then mkdir $3/hinted/ttf/$1 ; echo "directory $3/hinted/ttf/$1 was created"; fi
 cp instance_ttf/$1-*.*tf $3/unhinted/ttf/$1/
-# initially populate unhinted fonts into the hined directory
+# initially populate unhinted fonts into the hinted directory; just in case we do not know how to hint the fonts
 cp instance_ttf/$1-*.*tf $3/hinted/ttf/$1/
 cd $3
 ls -l unhinted/ttf/$1/$1-*.*tf
+# for now place the result of ttfautohint in the base hinted/ttf directory; if ttfautohint doesn't know what to do
+# then it will create a 0 length file; we will have delete these files before copying to the final destination
 cd unhinted/ttf/$1/ ; for i in $1-*.ttf ; do ttfautohint $i hinted/ttf/$i; done
 cd $3
 ls -l hinted/ttf/$1-*.*tf
+# remove 0 length files (reults of failed ttfautohint)
 for i in `ls -l hinted/ttf/$1-*.*tf | grep "  0 " | sed -e "s/^.*$1/$1/"` ; do rm hinted/ttf/$i; done
+# copy whatever files remain (assumed good at this point) to their final destination directory
 cp hinted/ttf/$1-*.*tf hinted/ttf/$1/
 ls -l hinted/ttf/$1/$1-*.*tf
+# add dsig to the hinted files
 for i in hinted/ttf/$1/$1-*.*tf ; do gftools fix-dsig --autofix $i; done 
 cd $2
 #
 if ([ ! -d instance_otf ]) then echo "$2/instance_otf doesn't exist"; exit 1; fi
 ls instance_otf/$1-*.*tf 1>/dev/null 2>&1 || exit 1
-if ([ ! -d $3/unhinted/otf/$1 ]) then echo "$3/unhinted/otf/$1 doesn't exist"; exit 1; fi
+if ([ ! -d $3/unhinted/otf/$1 ]) then mkdir $3/unhinted/otf/$1 ; echo "directory $3/unhinted/otf/$1 was created"; fi
 cp instance_otf/$1-*.*tf $3/unhinted/otf/$1/
 cd $3
 git add unhinted/ttf/$1/$1-*.*tf
