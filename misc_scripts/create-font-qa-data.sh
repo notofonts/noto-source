@@ -29,13 +29,13 @@ if ([ ! -d $3 ]) then echo "Published font directory $3 does not exist"; exit 1;
 if ([ ! -d $4 ]) then echo "noto-source directory $4 does not exist"; exit 1; fi	
 ls $2/fontdiff-*.html 1>/dev/null 2>&1 || exit 1
 if ([ ! -d $3/unhinted/ttf/$1 ]) then echo "Directory $3/unhinted/ttf/$1 does not exist"; exit 1; fi
-if ([ ! -d $3/unhinted/otf/$1 ]) then echo "Directory $3/unhinted/otf/$1 does not exist"; exit 1; fi
-if ([ ! -d $3/hinted/ttf/$1 ]) then echo "Directory $3/hinted/ttf/$1 does not exist"; exit 1; fi
+if ([ ! -d $3/unhinted/otf/$1 ]) then echo "WARNING: Directory $3/unhinted/otf/$1 does not exist"; fi
+if ([ ! -d $3/hinted/ttf/$1 ]) then echo "WARNING: Directory $3/hinted/ttf/$1 does not exist"; fi
 ls $4/instance_ttf/$1-*.ttf 1>/dev/null 2>&1 || exit 1
-ls $4/instance_otf/$1-*.otf 1>/dev/null 2>&1 || exit 1
+ls $4/instance_otf/$1-*.otf 1>/dev/null 2>&1 || echo "WARNING: $4/instance_otf/$1-*.otf files do not exist"
 ls $3/unhinted/ttf/$1/$1-*.ttf 1>/dev/null 2>&1 || exit 1
-ls $3/unhinted/otf/$1/$1-*.otf 1>/dev/null 2>&1 || exit 1
-ls $3/hinted/ttf/$1/$1-*.ttf 1>/dev/null 2>&1 || exit 1
+ls $3/unhinted/otf/$1/$1-*.otf 1>/dev/null 2>&1 || echo "WARNING: $3/unhinted/otf/$1/$1-*.otf files do not exist"
+ls $3/hinted/ttf/$1/$1-*.ttf 1>/dev/null 2>&1 || echo "WARNING: $3/hinted/ttf/$1/$1-*.ttf files do not exist"
 # check for existence of the required tools
 ls `which diffenator` 1>/dev/null 2>&1 || exit 1
 ls `which fontdiff` 1>/dev/null 2>&1 || exit 1
@@ -57,6 +57,10 @@ for j in `ls $1-*.ttf | sed -e "s/.ttf//"`; do echo "====== " fontbakery check-n
 for j in `ls $1-*.ttf | sed -e "s/.ttf//"`; do echo "====== " diff fontbakery $j vs golden; diff -b $4/../Font-QA-Data/$1-$TS/fontbakery/$j-out.txt $4/../Font-QA-Data/fontbakery-golden/$j-out.txt; done
 cd $4/variable_ttf
 # create test data for variable font (if present)
-echo "====== " diffenator $1-VF.ttf ; diffenator $3/unhinted/variable-ttf/$1-VF.ttf $1-VF.ttf -r $4/../Font-QA-Data/$1-$TS/diffenator/$1-VF-img  -html > $4/../Font-QA-Data/$1-$TS/diffenator/$1-VF-out.html 
-echo "====== " fontbakery $1-VF.ttf ; fontbakery check-notofonts $1-VF.ttf > $4/../Font-QA-Data/$1-$TS/fontbakery/$1-VF-out.txt 
-echo "====== " diff fontbakery $1-VF.ttf vs golden; diff -b $4/../Font-QA-Data/$1-$TS/fontbakery/$1-VF-out.txt $4/../Font-QA-Data/fontbakery-golden/$1-VF-out.txt
+for j in `ls $1-*.ttf | sed -e "s/.ttf//"`; do for i in $2/fontdiff-*.html; do echo fontdiff $j $i ; test=`echo $(basename $i) | sed -e "s/.html//"`; echo $test ; echo "$4/../Font-QA-Data/$1-$TS/fontdiff/$j-$test.pdf"; fontdiff --before $3/unhinted/variable-ttf/$j.ttf --after $j.ttf --specimen $i --out $4/../Font-QA-Data/$1-$TS/fontdiff/$j-$test.pdf ; done; done
+for j in `ls $1-*.ttf | sed -e "s/.ttf//"`; do echo "====== " diffenator $j; diffenator $3/unhinted/variable-ttf/$j.ttf $j.ttf -r $4/../Font-QA-Data/$1-$TS/diffenator/$j-img  -html > $4/../Font-QA-Data/$1-$TS/diffenator/$j-out.html ; done
+for j in `ls $1-*.ttf | sed -e "s/.ttf//"`; do echo "====== " fontbakery check-notofonts $j; fontbakery check-notofonts $j.ttf > $4/../Font-QA-Data/$1-$TS/fontbakery/$j-out.txt ; done
+for j in `ls $1-*.ttf | sed -e "s/.ttf//"`; do echo "====== " diff fontbakery $j vs golden; diff -b $4/../Font-QA-Data/$1-$TS/fontbakery/$j-out.txt $4/../Font-QA-Data/fontbakery-golden/$j-out.txt; done
+#echo "====== " diffenator $1-VF.ttf ; diffenator $3/unhinted/variable-ttf/$1-VF.ttf $1-VF.ttf -r $4/../Font-QA-Data/$1-$TS/diffenator/$1-VF-img  -html > $4/../Font-QA-Data/$1-$TS/diffenator/$1-VF-out.html
+#echo "====== " fontbakery $1-VF.ttf ; fontbakery check-notofonts $1-VF.ttf > $4/../Font-QA-Data/$1-$TS/fontbakery/$1-VF-out.txt
+#echo "====== " diff fontbakery $1-VF.ttf vs golden; diff -b $4/../Font-QA-Data/$1-$TS/fontbakery/$1-VF-out.txt $4/../Font-QA-Data/fontbakery-golden/$1-VF-out.txt
