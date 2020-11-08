@@ -10,3 +10,5 @@ for glyph in Glyphs.font.glyphs:
       continue
     layer.anchors = list(layer.anchorsTraversingComponents())
 ```
+
+If you know a better way to handle this please advise by filing a new Noto source issue https://github.com/googlefonts/noto-source/issues/new
