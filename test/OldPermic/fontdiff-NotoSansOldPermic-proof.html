@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Noto Old Permic</title>
+
+    <meta charset="UTF-8" http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+       <script type="text/javascript">
+
+         function sliderChange() {
+            var slider = document.getElementById("fontSizeSlider");
+            var sizeInput = document.getElementById("fontSizeInput");
+            sizeInput.value = slider.value;
+            sizeInput.oninput();
+         }
+
+         function changeSize() {
+              var selector = document.getElementById('fontSizeInput');
+              var selectedSize = selector.value + "px";
+              samples = document.getElementsByClassName("sample");
+              for (var i = 0; i < samples.length; i++) {
+                samples[i].style.fontSize = selectedSize;
+            }
+        }
+
+        function printPrep() {
+            var header = document.getElementById("header");
+            header.style.display = "none";
+            window.print();
+            header.style.display = "block";
+         }
+
+        function init(reset) {
+            var sizeInput = document.getElementById("fontSizeInput");
+            var fontSizeSlider = document.getElementById("fontSizeSlider");
+            fontSizeSlider.value = 60;
+            sizeInput.value = 60;
+            sizeInput.oninput();
+        }
+    </script>
+
+</head>
+
+<style>
+
+#header {
+		top:0;
+		left:0;
+		position: fixed;
+		margin: 0px;
+		width: 100%;
+		background: #fff;
+	}
+
+/*#wrapper {*/
+    /*white-space: pre;*/
+/*}*/
+
+#fontSizeInput {
+    width: 40px;
+}
+
+input[type=range] {
+    /*removes default webkit styles*/
+    -webkit-appearance: none;
+
+    position: relative;
+    top: 50%;
+    transform: perspective(1px) translateY(30%);
+
+    /*fix for FF unable to apply focus style bug */
+    border: 1px solid white;
+
+    /*required for proper track sizing in FF*/
+    width: 400px;
+}
+input[type=range]::-webkit-slider-runnable-track {
+    width: 400px;
+    height: 5px;
+    background: #ddd;
+    border: none;
+    border-radius: 3px;
+}
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    border: none;
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    background: red;
+    margin-top: -4px;
+}
+input[type=range]:focus {
+    outline: none;
+}
+input[type=range]:focus::-webkit-slider-runnable-track {
+    background: #ccc;
+}
+
+input[type=range]::-moz-range-track {
+    width: 400px;
+    height: 5px;
+    background: #ddd;
+    border: none;
+    border-radius: 3px;
+}
+input[type=range]::-moz-range-thumb {
+    border: none;
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    background: red;
+}
+
+/*hide the outline behind the border*/
+input[type=range]:-moz-focusring{
+    outline: 1px solid white;
+    outline-offset: -1px;
+}
+
+rt, rp {font-size: 20%;} /* = Webkit value */
+
+
+@font-face {
+	font-family: "Noto Sans Old Permic";
+	src: url("./NotoSansOldPermic-Regular.otf");
+	font-weight: 400;
+	font-style: normal;
+}
+
+ruby {
+    ruby-position:under;
+    ruby-align: center;
+}
+
+.desc {
+    font-family: "Noto Sans", sans-serif;
+    font-size: 18px;
+    line-height: inherit;
+}
+
+.sample {
+	font-family: "Noto Sans Old Permic", "Noto Sans", sans-serif;
+	font-size: 60px;
+	font-weight: 400;
+}
+
+</style>
+
+<body onload="init()">
+    <div id="header" style="
+	padding-top:8px;
+	z-index:150;
+	color: #E4E4E4;
+	">
+    <span>
+    <input id="fontSizeSlider" type="range" name="amountRange" min="6" max="600" value="60" oninput="sliderChange()" />
+    <input id="fontSizeInput" type="number" name="amountInput" min="6" max="600" value="60" oninput="changeSize()" />
+        <button onclick="printPrep()">Print</button>
+
+        </span>
+    </div>
+
+<div id="wrapper">
+<br><br>
+
+<span class="sample" contenteditable="true" onselect="textSelected()">
+Noto Sans Old Permic
+<br>
+𐍑 𐍒 𐍓 𐍔 𐍕 𐍖 𐍗 𐍘 𐍙 𐍚 𐍛 𐍜 𐍝 𐍞 𐍟 𐍠 𐍡 𐍢 𐍣 𐍤 𐍥 𐍦 𐍧 𐍨 𐍩 𐍪 𐍫 𐍬 𐍭 𐍮 𐍯 𐍰 𐍱 𐍲 𐍳 𐍴 𐍵  𐍶  𐍷  𐍸  𐍹  𐍺
+◌ : · ' ̈  ̇  ̀  ̆  ̓  ҃  ⃛ 
+<br><br>
+Combining mark breve<br>
+𐍐̆ 𐍑̆ 𐍒̆ 𐍓̆ 𐍔̆ 𐍕̆ 𐍖̆ 𐍗̆ 𐍘̆ 𐍙̆ 𐍚̆ 𐍛̆ 𐍜̆ 𐍝̆ 𐍞̆ 𐍟̆ 𐍠̆ 𐍡̆ 𐍢̆ 𐍣̆ 𐍤̆ 𐍥̆ 𐍦̆ 𐍧̆ 𐍨̆ 𐍩̆ 𐍪̆ 𐍫̆𐍬̆ 𐍭̆ 𐍮̆ 𐍯̆ 𐍰̆ 𐍱̆ 𐍲̆ 𐍳̆ 𐍴̆ 𐍵̆
+<br>
+Combining mark dieresis<br>
+𐍐̈ 𐍑̈ 𐍒̈ 𐍓̈ 𐍔̈ 𐍕̈ 𐍖̈ 𐍗̈ 𐍘̈ 𐍙̈ 𐍚̈ 𐍛̈ 𐍜̈ 𐍝̈ 𐍞̈ 𐍟̈ 𐍠̈ 𐍡̈ 𐍢̈ 𐍣̈ 𐍤̈ 𐍥̈ 𐍦̈ 𐍧̈ 𐍨̈ 𐍩̈ 𐍪̈ 𐍫̈ 𐍬̈ 𐍭̈ 𐍮̈ 𐍯̈ 𐍰̈ 𐍱̈ 𐍲̈ 𐍳̈ 𐍴̈ 𐍵̈   
+<br>
+Combining mark grave<br>
+𐍐̀ 𐍑̀ 𐍒̀ 𐍓̀ 𐍔̀ 𐍕̀ 𐍖̀ 𐍗̀ 𐍘̀ 𐍙̀ 𐍚̀ 𐍛̀ 𐍜̀ 𐍝̀ 𐍞̀ 𐍟̀ 𐍠̀ 𐍡̀ 𐍢̀ 𐍣̀ 𐍤̀ 𐍥̀ 𐍦̀ 𐍧̀ 𐍨̀ 𐍩̀ 𐍪̀ 𐍫̀ 𐍬̀ 𐍭̀ 𐍮̀ 𐍯̀ 𐍰̀ 𐍱̀ 𐍲̀ 𐍳̀ 𐍴̀
+<br>
+Combining mark dot accent<br>
+𐍐̇ 𐍑̇ 𐍒̇ 𐍓̇ 𐍔̇ 𐍕̇ 𐍖̇ 𐍗̇ 𐍘̇ 𐍙̇ 𐍚̇ 𐍛̇ 𐍜̇ 𐍝̇ 𐍞̇ 𐍟̇ 𐍠̇ 𐍡̇ 𐍢̇ 𐍣̇ 𐍤̇ 𐍥̇ 𐍦̇ 𐍧̇ 𐍨̇ 𐍩̇ 𐍪̇ 𐍫̇ 𐍬̇ 𐍭̇ 𐍮̇ 𐍯̇ 𐍰̇ 𐍱̇ 𐍲̇ 𐍳̇ 𐍴̇ 𐍵̇
+<br>
+Combining mark comma-above<br>
+𐍐̓ 𐍑̓ 𐍒̓ 𐍓̓ 𐍔̓ 𐍕̓ 𐍖̓ 𐍗̓ 𐍘̓ 𐍙̓ 𐍚̓ 𐍛̓ 𐍜̓ 𐍝̓ 𐍞̓ 𐍟̓ 𐍠̓ 𐍡̓ 𐍢̓ 𐍣̓ 𐍤̓ 𐍥̓ 𐍦̓ 𐍧̓ 𐍨̓ 𐍩̓ 𐍪̓ 𐍫̓ 𐍬̓ 𐍭̓ 𐍮̓ 𐍯̓ 𐍰̓ 𐍱̓ 𐍲̓ 𐍳̓ 𐍴̓ 𐍵̓
+<br>
+Combining mark three dots above<br>
+𐍐⃛ 𐍑⃛ 𐍒⃛ 𐍓⃛ 𐍔⃛ 𐍕⃛ 𐍖⃛ 𐍗⃛ 𐍘⃛ 𐍙⃛ 𐍚⃛ 𐍛⃛ 𐍜⃛ 𐍝⃛ 𐍞⃛ 𐍟⃛ 𐍠⃛ 𐍡⃛ 𐍢⃛ 𐍣⃛ 𐍤⃛ 𐍥⃛ 𐍦⃛ 𐍧⃛ 𐍨⃛ 𐍩⃛ 𐍪⃛ 𐍫⃛ 𐍬⃛ 𐍭⃛ 𐍮⃛ 𐍯⃛ 𐍰⃛ 𐍱⃛ 𐍲⃛ 𐍳⃛ 𐍴⃛ 𐍵⃛
+<br>
+Combining Cyrillic titlo<br>
+𐍐҃ 𐍑҃ 𐍒҃ 𐍓҃ 𐍔҃ 𐍕҃ 𐍖҃ 𐍗҃ 𐍘҃ 𐍙҃ 𐍚҃ 𐍛҃ 𐍜҃ 𐍝҃ 𐍞҃ 𐍟҃ 𐍠҃ 𐍡҃ 𐍢҃ 𐍣҃ 𐍤҃ 𐍥҃ 𐍦҃ 𐍧҃ 𐍨҃ 𐍩҃ 𐍪҃ 𐍫҃ 𐍬҃ 𐍭҃ 𐍮҃ 𐍯҃ 𐍰҃ 𐍱҃ 𐍲҃ 𐍳҃ 𐍴҃ 𐍵҃
+<br>
+Combining letter an<br>
+𐍐𐍶 𐍑𐍶 𐍒𐍶 𐍓𐍶 𐍔𐍶 𐍕𐍶 𐍖𐍶 𐍗𐍶 𐍘𐍶 𐍙𐍶 𐍚𐍶 𐍛𐍶 𐍜𐍶 𐍝𐍶 𐍞𐍶 𐍟𐍶 𐍠𐍶 𐍡𐍶 𐍢𐍶 𐍣𐍶 𐍤𐍶 𐍥𐍶 𐍦𐍶 𐍧𐍶 𐍨𐍶 𐍩𐍶 𐍪𐍶 𐍫𐍶 𐍬𐍶 𐍭𐍶 𐍮𐍶 𐍯𐍶 𐍰𐍶 𐍱𐍶 𐍲𐍶 𐍳𐍶 𐍴𐍶 𐍵𐍶
+<br>
+Combining letter doi<br>
+𐍐𐍷 𐍑𐍷 𐍒𐍷 𐍓𐍷 𐍔𐍷 𐍕𐍷 𐍖𐍷 𐍗𐍷 𐍘𐍷 𐍙𐍷 𐍚𐍷 𐍛𐍷 𐍜𐍷 𐍝𐍷 𐍞𐍷 𐍟𐍷 𐍠𐍷 𐍡𐍷 𐍢𐍷 𐍣𐍷 𐍤𐍷 𐍥𐍷 𐍦𐍷 𐍧𐍷 𐍨𐍷 𐍩𐍷 𐍪𐍷 𐍫𐍷 𐍬𐍷 𐍭𐍷 𐍮𐍷 𐍯𐍷 𐍰𐍷 𐍱𐍷 𐍲𐍷 𐍳𐍷 𐍴𐍷 𐍵𐍷
+<br>
+Combining letter zata<br>
+𐍐𐍸 𐍑𐍸 𐍒𐍸 𐍓𐍸 𐍔𐍸 𐍕𐍸 𐍖𐍸 𐍗𐍸 𐍘𐍸 𐍙𐍸 𐍚𐍸 𐍛𐍸 𐍜𐍸 𐍝𐍸 𐍞𐍸 𐍟𐍸 𐍠𐍸 𐍡𐍸 𐍢𐍸 𐍣𐍸 𐍤𐍸 𐍥𐍸 𐍦𐍸 𐍧𐍸 𐍨𐍸 𐍩𐍸 𐍪𐍸 𐍫𐍸 𐍬𐍸 𐍭𐍸 𐍮𐍸 𐍯𐍸 𐍰𐍸 𐍱𐍸 𐍲𐍸 𐍳𐍸 𐍴𐍸 𐍵𐍸
+<br>
+Combining letter nenoe<br>
+𐍐𐍹 𐍑𐍹 𐍒𐍹 𐍓𐍹 𐍔𐍹 𐍕𐍹 𐍖𐍹 𐍗𐍹 𐍘𐍹 𐍙𐍹 𐍚𐍹 𐍛𐍹 𐍜𐍹 𐍝𐍹 𐍞𐍹 𐍟𐍹 𐍠𐍹 𐍡𐍹 𐍢𐍹 𐍣𐍹 𐍤𐍹 𐍥𐍹 𐍦𐍹 𐍧𐍹 𐍨𐍹 𐍩𐍹 𐍪𐍹 𐍫𐍹 𐍬𐍹 𐍭𐍹 𐍮𐍹 𐍯𐍹 𐍰𐍹 𐍱𐍹 𐍲𐍹 𐍳𐍹 𐍴𐍹 𐍵𐍹
+<br>
+Combining letter sii<br>
+𐍐𐍺 𐍑𐍺 𐍒𐍺 𐍓𐍺 𐍔𐍺 𐍕𐍺 𐍖𐍺 𐍗𐍺 𐍘𐍺 𐍙𐍺 𐍚𐍺 𐍛𐍺 𐍜𐍺 𐍝𐍺 𐍞𐍺 𐍟𐍺 𐍠𐍺 𐍡𐍺 𐍢𐍺 𐍣𐍺 𐍤𐍺 𐍥𐍺 𐍦𐍺 𐍧𐍺 𐍨𐍺 𐍩𐍺 𐍪𐍺 𐍫𐍺 𐍬𐍺 𐍭𐍺 𐍮𐍺 𐍯𐍺 𐍰𐍺 𐍱𐍺 𐍲𐍺 𐍳𐍺 𐍴𐍺 𐍵𐍺
+<br>
+Marks with dotted circle<br>
+𐍡◌̈ ◌̇ ◌̀ ◌̆ ◌̓ ◌҃ ◌𐍶 ◌𐍷 ◌𐍸 ◌𐍹 ◌𐍺 ◌⃛
+
+<br>
+
+<br>
+Noto Sans Old Permic with Latin<br>
+
+𐍡𐍦𐍥̇ 𐍮𐍱𐍛𐍜𐍩𐍡𐍥̇𐍙𐍡 𐍙𐍦𐍝 𐍐𐍣𐍠𐍐𐍜𐍛𐍣 𐍜𐍐𐍜𐍑𐍠𐍙 𐍢𐍣𐍟𐍣 𐍓𐍩𐍠𐍨𐍝 𐍟𐍣𐍚𐍨𐍥𐍛𐍣 𐍡𐍨𐍛𐍣 The junior office clerks were quite amazed at the extra reward given by their generous employer. 𐍩̈𐍘𐍩𐍡 𐍣𐍪𐍘𐍨𐍝 𐍤𐍪𐍜𐍛𐍩𐍝 𐍡𐍨𐍛𐍩𐍝 𐍛𐍣𐍝𐍥𐍩𐍠𐍩 𐍮𐍙𐍘𐍙𐍡 𐍐̇𐍣𐍠𐍐𐍐̈𐍜 𐍚̈𐍡 𐍥̇𐍙𐍝𐍙𐍐𐍡𐍩𐍝 𐍙̈ 𐍐̈𐍓𐍘𐍙𐍡 𐍐̈𐍡 Martin J. Hixeyposer quickly began his first word. 𐍥̇𐍙𐍝𐍜𐍩𐍝 𐍣𐍪𐍘𐍘𐍐 𐍒҃ 𐍮𐍦𐍠𐍩𐍡 𐍡𐍣𐍛𐍐𐍛𐍩 𐍜𐍐𐍢𐍨𐍓 𐍡𐍨𐍛𐍨𐍥 𐍐̇𐍓𐍘𐍨 𐍜𐍨𐍥 𐍟𐍨𐍥𐍙𐍙𐍡 𐍣𐍪𐍘𐍘𐍐 𐍝𐍨𐍛𐍣 𐍐̇𐍡 𐍤𐍪𐍜𐍛𐍩𐍝 Pack my box with five dozen liquor jugs. Their kind aunt was subject to frequent dizzy spells, thus causing much anxiety and grave worry. 𐍩̈𐍨̈𐍡 𐍓𐍩𐍠𐍨𐍥 𐍙 𐍙𐍮𐍠 𐍑𐍨𐍠𐍢𐍙𐍡 𐍜𐍣𐍩𐍘 𐍙̓ 𐍥𐍙𐍙𐍡 𐍜𐍸҃ 𐍙𐍦𐍝𐍜𐍩 𐍑𐍐𐍠𐍐 𐍩 𐍐̈𐍓𐍘𐍙𐍜 𐍚𐍩 𐍜 𐍦𐍓𐍐𐍛 𐍡𐍩̈ 𐍢𐍦 𐍣𐍪𐍘𐍐𐍓 𐍐̈𐍡 𐍣𐍦𐍠𐍙𐍓 𐍣𐍨𐍛𐍢𐍙 𐍙̈𐍝 𐍜𐍣𐍝 𐍜𐍦𐍓 𐍣𐍐𐍙𐍥𐍐𐍡 𐍣𐍐 𐍜𐍨𐍥𐍚𐍨𐍝𐍨𐍡 𐍟𐍪𐍓𐍩𐍡 𐍢𐍙𐍙𐍐𐍝. 𐍙̓𐍡𐍐𐍙̇𐍚𐍩𐍓𐍤̇ 𐍐𐍓. WE JUST GAVE YOUR ZEBRA QUITE A BUNCH OF FLAX AND A DRINK AT THE PUMP.
+<br>
+<br>
+</span>
+</div>
+</body>
+</html>

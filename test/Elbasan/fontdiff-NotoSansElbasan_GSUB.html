@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Noto Elbasan</title>
+
+    <meta charset="UTF-8" http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+       <script type="text/javascript">
+
+         function sliderChange() {
+            var slider = document.getElementById("fontSizeSlider");
+            var sizeInput = document.getElementById("fontSizeInput");
+            sizeInput.value = slider.value;
+            sizeInput.oninput();
+         }
+
+         function changeSize() {
+              var selector = document.getElementById('fontSizeInput');
+              var selectedSize = selector.value + "px";
+              samples = document.getElementsByClassName("sample");
+              for (var i = 0; i < samples.length; i++) {
+                samples[i].style.fontSize = selectedSize;
+            }
+        }
+
+        function printPrep() {
+            var header = document.getElementById("header");
+            header.style.display = "none";
+            window.print();
+            header.style.display = "block";
+         }
+
+        function init(reset) {
+            var sizeInput = document.getElementById("fontSizeInput");
+            var fontSizeSlider = document.getElementById("fontSizeSlider");
+            fontSizeSlider.value = 48;
+            sizeInput.value = 48;
+            sizeInput.oninput();
+        }
+    </script>
+
+</head>
+
+<style>
+
+#header {
+		top:0;
+		left:0;
+		position: fixed;
+		margin: 0px;
+		width: 100%;
+		background: #fff;
+	}
+
+/*#wrapper {*/
+    /*white-space: pre;*/
+/*}*/
+
+#fontSizeInput {
+    width: 40px;
+}
+
+input[type=range] {
+    /*removes default webkit styles*/
+    -webkit-appearance: none;
+
+    position: relative;
+    top: 50%;
+    transform: perspective(1px) translateY(30%);
+
+    /*fix for FF unable to apply focus style bug */
+    border: 1px solid white;
+
+    /*required for proper track sizing in FF*/
+    width: 400px;
+}
+input[type=range]::-webkit-slider-runnable-track {
+    width: 400px;
+    height: 5px;
+    background: #ddd;
+    border: none;
+    border-radius: 3px;
+}
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    border: none;
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    background: red;
+    margin-top: -4px;
+}
+input[type=range]:focus {
+    outline: none;
+}
+input[type=range]:focus::-webkit-slider-runnable-track {
+    background: #ccc;
+}
+
+input[type=range]::-moz-range-track {
+    width: 400px;
+    height: 5px;
+    background: #ddd;
+    border: none;
+    border-radius: 3px;
+}
+input[type=range]::-moz-range-thumb {
+    border: none;
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    background: red;
+}
+
+/*hide the outline behind the border*/
+input[type=range]:-moz-focusring{
+    outline: 1px solid white;
+    outline-offset: -1px;
+}
+
+rt, rp {font-size: 20%;} /* = Webkit value */
+
+
+@font-face {
+	font-family: "Noto Sans Elbasan";
+	src: url("fonts/NotoSansElbasan-Regular.otf");
+	font-weight: 400;
+	font-style: normal;
+}
+
+ruby {
+    ruby-position:under;
+    ruby-align: center;
+}
+
+.desc {
+    font-family: "Noto Sans", sans-serif;
+    font-size: 24px;
+    line-height: inherit;
+}
+
+.sample {
+	font-family: "Noto Sans Elbasan", "Noto Sans", sans-serif;
+	font-size: 48px;
+	font-weight: 400;
+}
+
+</style>
+
+<body onload="init()">
+    <div id="header" style="
+	padding-top:8px;
+	z-index:150;
+	color: #E4E4E4;
+	">
+    <span>
+    <input id="fontSizeSlider" type="range" name="amountRange" min="6" max="600" value="48" oninput="sliderChange()" />
+    <input id="fontSizeInput" type="number" name="amountInput" min="6" max="600" value="48" oninput="changeSize()" />
+        <button onclick="printPrep()">Print</button>
+
+        </span>
+    </div>
+
+<div id="wrapper">
+<br><br>
+
+<span class="sample" contenteditable="true" onselect="textSelected()">
+Noto Sans Elbasan GSUB<br>
+<br>
+Numbers<br>
+<br>
+Α̅ Β̅ Γ̅ Δ̅ Ε̅ Ζ̅ Η̅ Θ̅ Ι̅ <br>
+Κ̅ Λ̅ Μ̅ Ν̅ Ξ̅ Ο̅ Ρ̅ Σ̅ Τ̅ <br>
+Υ̅ Φ̅ Χ̅ Ψ̅ Ω̅ Ϛ̅ Ϝ̅ Ϟ̅<br>
+<br>
+Α̅Β̅Γ̅Δ̅Ε̅Ζ̅Η̅Θ̅Ι̅Κ̅Λ̅Μ̅Ν̅<br>
+Ξ̅Ο̅Ρ̅Σ̅Τ̅Υ̅Φ̅Χ̅Ψ̅Ω̅Ϛ̅Ϝ̅Ϟ̅<br>
+<br>
+</span>
+</div>
+</body>
+</html>
