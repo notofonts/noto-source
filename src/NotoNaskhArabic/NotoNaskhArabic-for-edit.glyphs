@@ -1,8 +1,5 @@
 {
-.appVersion = "1348";
-DisplayStrings = (
-"/_hamza/uni0020/uni0654/uni0020/_hamza/uni0020/uni0623/uniFE84/uniFE84.rlig/uni0675/uni0675.fina/uni0675.fina.rlig/uni0681/uni0681.fina/uni0681.medi/uni0681.init/uni077C.medi/uni06EE/uni06EE.fina/uni06EF/uni06EF.fina/uni076C/uni076C.fina/uni066F.init/uniFEDC/uniFEDB/uni063B.medi/uni063B.init/uni0763.medi/uni0763.init/uni06B4.medi/uni06B4.init/uni077F.medi/uni077F.init/uni06B2.medi/uni06B2.init/uniFBD6/uniFBD5/uniFB9D/uniFB9C/uniFB99/uniFB98/uni08A6.fina/uni08A6.medi/uni08A6.init/uni0645/uni06C0/uniFBA5/uni06C2/uni06C2.fina/uni06C2.medi/uni06C2.init/uni06FF/uni06FF.fina/uni06FF.medi/uni06FF.init/uni0624/uniFE86/uni06C9/uniFBE3/uni0626/uniFE8A/uniFE8C/uniFE8B/uni08A8/uni08A8.fina/uni08A8.medi/uni08A8.init/uni063D.medi/uni063D.init/uni06D1/uni06D1.fina/uni06D3/uniFBB1/uni0676/uni0676.fina/uni0677/uni0677.fina/uni0678/uni0678.fina/uni0766/uni076A.fina/uni076A.medi/uni076A.init/_537/uni065B/uni077E/uni077E.fina/uni077E.medi/uni077E.init/uniFEFC_uni0675/uniFEF7/uniFEF8/uni06B5_uni0675/uni06B6_uni0675/uni06B7_uni0675/uni06B8_uni0675/uniFEFB_uni0654/uni0030.ccmp/uniFBBE/uniFBB9/uniFBB7/uni0654/uni065B/_hamza/_uniFBB8/_535/_537/_1029/_1030 \012\012/uni06B8_uni0675/uni06B8_uni0773/uni06B8_uni0774/uni06B8.medi.rlig/uni06B8.rlig/uniFEFB_uniFBB7/uniFEFC_uniFBB7/uni06B8_uni0675/uni06B8_uni0773/uniFBB9"
-);
+.appVersion = "1349";
 classes = (
 {
 code = "uni0660 uni0661 uni0662 uni0663 uni0664 uni0665 uni0666 uni0667 uni0668 uni0669 uni06F0 uni06F1 uni06F2 uni06F3 uni06F4 uni06F5 uni06F6 uni06F7 uni06F8 uni06F9 uni06F4.locl uni06F7.locl";
@@ -1320,10 +1317,12 @@ code = "# GSUB feature: Standard Ligatures
   # GSUB lookup 23, type 14 (Ligature)
     lookupflag IgnoreMarks;
     sub uniFEDF uniFEE0 uniFEEA by uniFEDF_uniFEE0_uniFEEA;
+    sub uniFEDF uniFEE0 uniFBA7 by uniFEDF_uniFEE0_uniFEEA;
   } liga_arab_2;
 
   script arab; # Arabic
   sub uni0627 uniFEDF uniFEE0 uni0651_uni0670 uniFEEA by uniFDF2;
+  sub uni0627 uniFEDF uniFEE0 uni0651_uni0670 uniFBA7 by uniFDF2;
   lookup liga_arab_2;
     language SND ; # Sindhi
     language URD ; # Urdu

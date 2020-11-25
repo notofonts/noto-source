@@ -1,9 +1,5 @@
 {
-.appVersion = "1348";
-DisplayStrings = (
-"/uni0627/uni0625/_517/uni0623/_517/uni0623/_518/uniFE84/uni0672/uni0672.fina/uni0671/uniFB51 \012/uni0671/uni0623/uni0672/uni0773/uni0774 \012/uniFB51/uniFE84/uni0672.fina/uni0773.fina/uni0774.fina \012/uni06B8.medi.rlig/uni0020/uni06B8_uni0675/uni06B8_uni0773/uni06B8_uni0774/uni06B8.medi.rlig/uni06B8.rlig/uniFEFB_uniFBB7/uniFEFC_uniFBB7/uni06B8_uni0675/uni06B8_uni0773/uniFBB9 \012",
-"/uniFEFC_uni065F/uniFEFC_uni0675/uniFEFC_uni0773/uniFEFC_uni0774/uniFEFC_uniFBB2/uniFEFC_uniFBB6/uniFEFC_uniFBB7/uniFEF8/uniFEFA/uniFEF6/uniFEE0_uniFB51/uni06B5_uni0675/uni06B5_uni0773/uni06B5_uni0774/uni06B6_uni0675/uni06B6_uni0773/uni06B6_uni0774/uni06B7_uni0675/uni06B7_uni0773/uni06B7_uni0774/uni06B8_uni0675/uni06B8_uni0773/uni06B8_uni0774/uniFEFC_uni065A/_671/_779"
-);
+.appVersion = "1349";
 classes = (
 {
 code = "uni0660 uni0661 uni0662 uni0663 uni0664 uni0665 uni0666 uni0667 uni0668 uni0669 uni06F0 uni06F1 uni06F2 uni06F3 uni06F4 uni06F5 uni06F6 uni06F7 uni06F8 uni06F9 uni06F4.locl uni06F7.locl";
@@ -1321,10 +1317,12 @@ code = "# GSUB feature: Standard Ligatures
   # GSUB lookup 23, type 14 (Ligature)
     lookupflag IgnoreMarks;
     sub uniFEDF uniFEE0 uniFEEA by uniFEDF_uniFEE0_uniFEEA;
+    sub uniFEDF uniFEE0 uniFBA7 by uniFEDF_uniFEE0_uniFEEA;
   } liga_arab_2;
 
   script arab; # Arabic
   sub uni0627 uniFEDF uniFEE0 uni0651_uni0670 uniFEEA by uniFDF2;
+  sub uni0627 uniFEDF uniFEE0 uni0651_uni0670 uniFBA7 by uniFDF2;
   lookup liga_arab_2;
     language SND ; # Sindhi
     language URD ; # Urdu
