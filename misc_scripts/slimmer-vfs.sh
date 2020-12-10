@@ -35,3 +35,4 @@ cd ..
 echo "copied to slim/ the following fonts"
 ls -l slim/Noto*$2*-VF.ttf
 rm -r slim-drop slim-no-wdth
+
