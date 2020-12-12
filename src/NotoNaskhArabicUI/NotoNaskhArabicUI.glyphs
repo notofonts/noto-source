@@ -1,9 +1,5 @@
 {
-.appVersion = "1349";
-DisplayStrings = (
-"/uni0627/uni0625/_517/uni0623/_517/uni0623/_518/uniFE84/uni0672/uni0672.fina/uni0671/uniFB51 \012/uni0671/uni0623/uni0672/uni0773/uni0774 \012/uniFB51/uniFE84/uni0672.fina/uni0773.fina/uni0774.fina \012/uni06B8.medi.rlig/uni0020/uni06B8_uni0675/uni06B8_uni0773/uni06B8_uni0774/uni06B8.medi.rlig/uni06B8.rlig/uniFEFB_uniFBB7/uniFEFC_uniFBB7/uni06B8_uni0675/uni06B8_uni0773/uniFBB9 \012",
-"/uniFEFC_uni065F/uniFEFC_uni0675/uniFEFC_uni0773/uniFEFC_uni0774/uniFEFC_uniFBB2/uniFEFC_uniFBB6/uniFEFC_uniFBB7/uniFEF8/uniFEFA/uniFEF6/uniFEE0_uniFB51/uni06B5_uni0675/uni06B5_uni0773/uni06B5_uni0774/uni06B6_uni0675/uni06B6_uni0773/uni06B6_uni0774/uni06B7_uni0675/uni06B7_uni0773/uni06B7_uni0774/uni06B8_uni0675/uni06B8_uni0773/uni06B8_uni0774/uniFEFC_uni065A/_671/_779"
-);
+.appVersion = "1350";
 classes = (
 {
 code = "uni0660 uni0661 uni0662 uni0663 uni0664 uni0665 uni0666 uni0667 uni0668 uni0669 uni06F0 uni06F1 uni06F2 uni06F3 uni06F4 uni06F5 uni06F6 uni06F7 uni06F8 uni06F9 uni06F4.locl uni06F7.locl";
@@ -969,7 +965,7 @@ _1023";
 name = rlig4;
 }
 );
-copyright = "Copyright 2019 Google LLC. All Rights Reserved.";
+copyright = "Copyright 2019-20 Google LLC. All Rights Reserved.";
 customParameters = (
 {
 name = fsType;
@@ -1023,10 +1019,10 @@ value = 1;
 },
 {
 name = versionString;
-value = "2.001";
+value = "2.003";
 }
 );
-date = "2020-11-03 01:40:58 +0000";
+date = "2020-12-12 20:13:15 +0000";
 designer = "Monotype Design Team, David Williams, Mohamad Dakak";
 designerURL = "http://www.monotype.com/studio";
 disablesNiceNames = 1;
@@ -1321,10 +1317,12 @@ code = "# GSUB feature: Standard Ligatures
   # GSUB lookup 23, type 14 (Ligature)
     lookupflag IgnoreMarks;
     sub uniFEDF uniFEE0 uniFEEA by uniFEDF_uniFEE0_uniFEEA;
+    sub uniFEDF uniFEE0 uniFBA7 by uniFEDF_uniFEE0_uniFEEA;
   } liga_arab_2;
 
   script arab; # Arabic
   sub uni0627 uniFEDF uniFEE0 uni0651_uni0670 uniFEEA by uniFDF2;
+  sub uni0627 uniFEDF uniFEE0 uni0651_uni0670 uniFBA7 by uniFDF2;
   lookup liga_arab_2;
     language SND ; # Sindhi
     language URD ; # Urdu
@@ -38183,7 +38181,7 @@ layers = (
 anchors = (
 {
 name = bottom;
-position = "{268, -193}";
+position = "{268, -153}";
 },
 {
 name = bottom.dot;
@@ -38252,7 +38250,7 @@ width = 595;
 anchors = (
 {
 name = bottom;
-position = "{268, -176}";
+position = "{268, -153}";
 },
 {
 name = bottom.dot;
@@ -38327,7 +38325,7 @@ layers = (
 anchors = (
 {
 name = bottom;
-position = "{268, -193}";
+position = "{268, -153}";
 },
 {
 name = bottom.dot;
@@ -38412,7 +38410,7 @@ width = 591;
 anchors = (
 {
 name = bottom;
-position = "{268, -176}";
+position = "{268, -153}";
 },
 {
 name = bottom.dot;
@@ -39049,7 +39047,7 @@ layers = (
 anchors = (
 {
 name = bottom;
-position = "{268, -193}";
+position = "{268, -163}";
 },
 {
 name = bottom.dot;
@@ -39117,7 +39115,7 @@ layers = (
 anchors = (
 {
 name = bottom;
-position = "{268, -193}";
+position = "{268, -163}";
 },
 {
 name = bottom.dot;
@@ -39184,7 +39182,7 @@ layers = (
 anchors = (
 {
 name = bottom;
-position = "{268, -193}";
+position = "{268, -163}";
 },
 {
 name = bottom.dot;
@@ -39436,7 +39434,7 @@ layers = (
 anchors = (
 {
 name = bottom;
-position = "{268, -193}";
+position = "{268, -163}";
 },
 {
 name = bottom.dot;
@@ -39504,7 +39502,7 @@ layers = (
 anchors = (
 {
 name = bottom;
-position = "{268, -193}";
+position = "{268, -163}";
 },
 {
 name = bottom.dot;
@@ -39571,7 +39569,7 @@ layers = (
 anchors = (
 {
 name = bottom;
-position = "{268, -193}";
+position = "{268, -163}";
 },
 {
 name = bottom.dot;
@@ -39878,7 +39876,7 @@ layers = (
 anchors = (
 {
 name = bottom;
-position = "{268, -193}";
+position = "{268, -163}";
 },
 {
 name = bottom.dot;
@@ -39946,7 +39944,7 @@ layers = (
 anchors = (
 {
 name = bottom;
-position = "{268, -193}";
+position = "{268, -163}";
 },
 {
 name = bottom.dot;
@@ -40013,7 +40011,7 @@ layers = (
 anchors = (
 {
 name = bottom;
-position = "{268, -193}";
+position = "{268, -163}";
 },
 {
 name = bottom.dot;
@@ -40735,7 +40733,7 @@ layers = (
 anchors = (
 {
 name = bottom;
-position = "{268, -193}";
+position = "{268, -163}";
 },
 {
 name = bottom.dot;
@@ -40807,7 +40805,7 @@ layers = (
 anchors = (
 {
 name = bottom;
-position = "{268, -193}";
+position = "{268, -163}";
 },
 {
 name = bottom.dot;
@@ -41874,7 +41872,7 @@ layers = (
 anchors = (
 {
 name = bottom;
-position = "{268, -193}";
+position = "{268, -153}";
 },
 {
 name = bottom.dot;
@@ -41942,7 +41940,7 @@ layers = (
 anchors = (
 {
 name = bottom;
-position = "{268, -193}";
+position = "{268, -153}";
 },
 {
 name = bottom.dot;
@@ -41973,7 +41971,7 @@ width = 585;
 anchors = (
 {
 name = bottom;
-position = "{254, -176}";
+position = "{254, -153}";
 },
 {
 name = bottom.dot;
@@ -42447,7 +42445,7 @@ layers = (
 anchors = (
 {
 name = bottom;
-position = "{268, -193}";
+position = "{268, -153}";
 },
 {
 name = bottom.dot;
@@ -42510,7 +42508,7 @@ width = 586;
 anchors = (
 {
 name = bottom;
-position = "{268, -176}";
+position = "{268, -153}";
 },
 {
 name = bottom.dot;
@@ -42697,7 +42695,7 @@ layers = (
 anchors = (
 {
 name = bottom;
-position = "{268, -193}";
+position = "{268, -153}";
 },
 {
 name = bottom.dot;
@@ -42851,7 +42849,7 @@ layers = (
 anchors = (
 {
 name = bottom;
-position = "{268, -193}";
+position = "{268, -163}";
 },
 {
 name = bottom.dot;
@@ -42920,7 +42918,7 @@ layers = (
 anchors = (
 {
 name = bottom;
-position = "{268, -193}";
+position = "{268, -163}";
 },
 {
 name = bottom.dot;
@@ -43304,7 +43302,7 @@ layers = (
 anchors = (
 {
 name = bottom;
-position = "{268, -193}";
+position = "{268, -163}";
 },
 {
 name = bottom.dot;
@@ -43372,7 +43370,7 @@ layers = (
 anchors = (
 {
 name = bottom;
-position = "{268, -193}";
+position = "{268, -163}";
 },
 {
 name = bottom.dot;
@@ -49809,6 +49807,7 @@ position = "{195, 522}";
 );
 components = (
 {
+alignment = -1;
 name = _522;
 },
 {
@@ -57986,7 +57985,7 @@ layers = (
 anchors = (
 {
 name = bottom;
-position = "{268, -193}";
+position = "{268, -163}";
 },
 {
 name = bottom.dot;
@@ -58054,7 +58053,7 @@ layers = (
 anchors = (
 {
 name = bottom;
-position = "{268, -193}";
+position = "{268, -163}";
 },
 {
 name = bottom.dot;
@@ -58258,7 +58257,7 @@ layers = (
 anchors = (
 {
 name = bottom;
-position = "{268, -193}";
+position = "{268, -163}";
 },
 {
 name = bottom.dot;
@@ -58326,7 +58325,7 @@ layers = (
 anchors = (
 {
 name = bottom;
-position = "{268, -193}";
+position = "{268, -163}";
 },
 {
 name = bottom.dot;
@@ -58530,7 +58529,7 @@ layers = (
 anchors = (
 {
 name = bottom;
-position = "{268, -193}";
+position = "{268, -163}";
 },
 {
 name = bottom.dot;
@@ -58602,7 +58601,7 @@ layers = (
 anchors = (
 {
 name = bottom;
-position = "{268, -193}";
+position = "{268, -163}";
 },
 {
 name = bottom.dot;
@@ -61039,7 +61038,7 @@ name = uni0640;
 },
 {
 name = uni0650_uni0651;
-transform = "{1, 0, 0, 1, 30, 88}";
+transform = "{1, 0, 0, 1, 30, 83}";
 }
 );
 layerId = "26E2967D-790C-4793-AF2A-2D0AD74EDC69";
@@ -64152,7 +64151,7 @@ layers = (
 anchors = (
 {
 name = bottom;
-position = "{268, -193}";
+position = "{268, -163}";
 },
 {
 name = bottom.dot;
@@ -66556,7 +66555,7 @@ layers = (
 anchors = (
 {
 name = bottom;
-position = "{268, -193}";
+position = "{268, -163}";
 },
 {
 name = bottom.dot;
@@ -67532,7 +67531,7 @@ layers = (
 anchors = (
 {
 name = bottom;
-position = "{268, -193}";
+position = "{268, -163}";
 },
 {
 name = bottom.dot;
@@ -83077,7 +83076,7 @@ layers = (
 anchors = (
 {
 name = bottom;
-position = "{268, -193}";
+position = "{268, -163}";
 },
 {
 name = bottom.dot;
@@ -83145,7 +83144,7 @@ layers = (
 anchors = (
 {
 name = bottom;
-position = "{268, -193}";
+position = "{268, -163}";
 },
 {
 name = bottom.dot;
@@ -91262,7 +91261,7 @@ layers = (
 anchors = (
 {
 name = bottom;
-position = "{268, -193}";
+position = "{268, -163}";
 },
 {
 name = bottom.dot;
@@ -93534,7 +93533,7 @@ layers = (
 anchors = (
 {
 name = bottom;
-position = "{268, -193}";
+position = "{268, -163}";
 },
 {
 name = bottom.dot;
@@ -94926,7 +94925,7 @@ layers = (
 anchors = (
 {
 name = bottom;
-position = "{268, -193}";
+position = "{268, -163}";
 },
 {
 name = bottom.dot;
@@ -96964,7 +96963,7 @@ layers = (
 anchors = (
 {
 name = bottom;
-position = "{268, -193}";
+position = "{268, -163}";
 },
 {
 name = bottom.dot;
@@ -120825,7 +120824,7 @@ layers = (
 anchors = (
 {
 name = _bottom;
-position = "{79, 141}";
+position = "{79, 131}";
 },
 {
 name = bottom3;
@@ -120841,7 +120840,7 @@ nodes = (
 "114 90 OFFCURVE",
 "132 98 CURVE SMOOTH",
 "163 110 OFFCURVE",
-"175 115 OFFCURVE",
+"179 115 OFFCURVE",
 "175 137 CURVE SMOOTH",
 "174 143 LINE",
 "124 123 OFFCURVE",
@@ -120873,7 +120872,7 @@ width = 0;
 anchors = (
 {
 name = _bottom;
-position = "{79, 150}";
+position = "{79, 140}";
 },
 {
 name = bottom3;
@@ -120889,7 +120888,7 @@ nodes = (
 "115 99 OFFCURVE",
 "137 109 CURVE SMOOTH",
 "165 121 OFFCURVE",
-"175 126 OFFCURVE",
+"178 126 OFFCURVE",
 "175 146 CURVE SMOOTH",
 "174 152 LINE",
 "124 132 OFFCURVE",
@@ -122738,11 +122737,11 @@ layers = (
 anchors = (
 {
 name = _top;
-position = "{69, 499}";
+position = "{69, 504}";
 },
 {
 name = top3;
-position = "{67, 741}";
+position = "{67, 731}";
 }
 );
 layerId = master01;
@@ -122818,11 +122817,11 @@ width = 0;
 anchors = (
 {
 name = _top;
-position = "{69, 508}";
+position = "{69, 513}";
 },
 {
 name = top3;
-position = "{67, 749}";
+position = "{67, 739}";
 }
 );
 layerId = "26E2967D-790C-4793-AF2A-2D0AD74EDC69";
@@ -126634,27 +126633,25 @@ paths = (
 {
 closed = 1;
 nodes = (
-"-61 638 LINE",
-"-20 621 OFFCURVE",
-"9 610 OFFCURVE",
-"34 610 CURVE SMOOTH",
-"55 610 OFFCURVE",
-"90 628 OFFCURVE",
-"118 655 CURVE",
-"111 666 LINE",
-"89 651 OFFCURVE",
-"69 638 OFFCURVE",
-"35 638 CURVE SMOOTH",
-"22 638 OFFCURVE",
-"4 643 OFFCURVE",
-"-17 651 CURVE SMOOTH",
-"-39 660 OFFCURVE",
-"-53 664 OFFCURVE",
-"-58 664 CURVE SMOOTH",
-"-65 664 OFFCURVE",
-"-110 633 OFFCURVE",
-"-127 616 CURVE",
-"-120 606 LINE"
+"-60 624 LINE",
+"-29 611 OFFCURVE",
+"-1 605 OFFCURVE",
+"24 605 CURVE SMOOTH",
+"44 605 OFFCURVE",
+"78 623 OFFCURVE",
+"100 648 CURVE",
+"94 668 LINE",
+"78 660 OFFCURVE",
+"46 651 OFFCURVE",
+"28 651 CURVE SMOOTH",
+"14 651 OFFCURVE",
+"-9 656 OFFCURVE",
+"-41 664 CURVE",
+"-55 666 LINE",
+"-59 666 OFFCURVE",
+"-77 651 OFFCURVE",
+"-110 623 CURVE",
+"-99 603 LINE"
 );
 }
 );
@@ -126676,27 +126673,25 @@ paths = (
 {
 closed = 1;
 nodes = (
-"-61 647 LINE",
-"-20 630 OFFCURVE",
-"9 618 OFFCURVE",
-"34 618 CURVE SMOOTH",
-"55 618 OFFCURVE",
-"90 637 OFFCURVE",
-"118 664 CURVE",
-"111 675 LINE",
-"89 659 OFFCURVE",
-"69 647 OFFCURVE",
-"35 647 CURVE SMOOTH",
-"22 647 OFFCURVE",
-"4 651 OFFCURVE",
-"-17 660 CURVE SMOOTH",
-"-39 668 OFFCURVE",
-"-53 673 OFFCURVE",
-"-58 673 CURVE SMOOTH",
-"-65 673 OFFCURVE",
-"-110 642 OFFCURVE",
-"-127 625 CURVE",
-"-120 615 LINE"
+"-60 624 LINE",
+"-29 611 OFFCURVE",
+"-1 605 OFFCURVE",
+"24 605 CURVE SMOOTH",
+"44 605 OFFCURVE",
+"78 623 OFFCURVE",
+"101 648 CURVE",
+"94 668 LINE",
+"78 660 OFFCURVE",
+"46 651 OFFCURVE",
+"28 651 CURVE SMOOTH",
+"14 651 OFFCURVE",
+"-9 656 OFFCURVE",
+"-41 664 CURVE",
+"-55 666 LINE",
+"-59 666 OFFCURVE",
+"-77 651 OFFCURVE",
+"-109 623 CURVE",
+"-99 603 LINE"
 );
 }
 );
@@ -129628,35 +129623,35 @@ paths = (
 {
 closed = 1;
 nodes = (
-"300 -18 OFFCURVE",
-"320 5 OFFCURVE",
-"333 24 CURVE",
-"297 58 OFFCURVE",
-"277 78 OFFCURVE",
-"271 84 CURVE",
-"243 53 OFFCURVE",
-"222 31 OFFCURVE",
-"207 17 CURVE",
-"222 -1 OFFCURVE",
-"243 -21 OFFCURVE",
-"272 -44 CURVE"
+"260 -18 OFFCURVE",
+"280 5 OFFCURVE",
+"293 24 CURVE",
+"257 58 OFFCURVE",
+"237 78 OFFCURVE",
+"231 84 CURVE",
+"203 53 OFFCURVE",
+"182 31 OFFCURVE",
+"167 17 CURVE",
+"182 -1 OFFCURVE",
+"203 -21 OFFCURVE",
+"232 -44 CURVE"
 );
 },
 {
 closed = 1;
 nodes = (
-"150 -32 OFFCURVE",
-"170 -10 OFFCURVE",
-"182 10 CURVE",
-"147 43 OFFCURVE",
-"126 63 OFFCURVE",
-"121 70 CURVE",
-"95 41 OFFCURVE",
-"74 18 OFFCURVE",
-"56 2 CURVE",
-"70 -14 OFFCURVE",
-"93 -35 OFFCURVE",
-"123 -59 CURVE"
+"110 -32 OFFCURVE",
+"130 -10 OFFCURVE",
+"142 10 CURVE",
+"107 43 OFFCURVE",
+"86 63 OFFCURVE",
+"81 70 CURVE",
+"55 41 OFFCURVE",
+"34 18 OFFCURVE",
+"16 2 CURVE",
+"30 -14 OFFCURVE",
+"53 -35 OFFCURVE",
+"83 -59 CURVE"
 );
 }
 );
@@ -129668,35 +129663,35 @@ paths = (
 {
 closed = 1;
 nodes = (
-"279 -42 OFFCURVE",
-"299 -18 OFFCURVE",
-"312 2 CURVE",
-"275 40 OFFCURVE",
-"254 61 OFFCURVE",
-"250 65 CURVE",
-"227 37 OFFCURVE",
-"204 13 OFFCURVE",
-"183 -5 CURVE",
-"200 -24 OFFCURVE",
-"223 -45 OFFCURVE",
-"252 -68 CURVE"
+"249 -42 OFFCURVE",
+"269 -18 OFFCURVE",
+"282 2 CURVE",
+"245 40 OFFCURVE",
+"224 61 OFFCURVE",
+"220 65 CURVE",
+"197 37 OFFCURVE",
+"174 13 OFFCURVE",
+"153 -5 CURVE",
+"170 -24 OFFCURVE",
+"193 -45 OFFCURVE",
+"222 -68 CURVE"
 );
 },
 {
 closed = 1;
 nodes = (
-"142 -60 OFFCURVE",
-"162 -37 OFFCURVE",
-"179 -12 CURVE",
-"146 19 OFFCURVE",
-"125 40 OFFCURVE",
-"117 50 CURVE",
-"94 27 OFFCURVE",
-"72 4 OFFCURVE",
-"49 -19 CURVE",
-"63 -35 OFFCURVE",
-"85 -56 OFFCURVE",
-"118 -83 CURVE"
+"112 -60 OFFCURVE",
+"132 -37 OFFCURVE",
+"149 -12 CURVE",
+"116 19 OFFCURVE",
+"95 40 OFFCURVE",
+"87 50 CURVE",
+"64 27 OFFCURVE",
+"42 4 OFFCURVE",
+"19 -19 CURVE",
+"33 -35 OFFCURVE",
+"55 -56 OFFCURVE",
+"88 -83 CURVE"
 );
 }
 );
@@ -139276,5 +139271,5 @@ userData = {
 UFOFormat = 2;
 };
 versionMajor = 2;
-versionMinor = 1;
+versionMinor = 3;
 }
