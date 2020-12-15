@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<designspace format="4.1">
+  <axes>
+    <axis tag="wght" name="Weight" minimum="100" maximum="100" default="100"/>
+  </axes>
+  <sources>
+    <source filename="NotoSansOldHungUI-Regular.ufo" name="NotoSansOldHungUI Regular" familyname="NotoSansOldHungUI" stylename="Regular">
+      <lib copy="1"/>
+      <groups copy="1"/>
+      <features copy="1"/>
+      <info copy="1"/>
+      <location>
+        <dimension name="Weight" xvalue="100"/>
+      </location>
+    </source>
+  </sources>
+  <lib>
+    <dict>
+      <key>GSDimensionPlugin.Dimensions</key>
+      <dict>
+        <key>2D854B59-3A96-4021-89E9-F3E1522D96CD</key>
+        <dict/>
+      </dict>
+      <key>com.github.googlei18n.ufo2ft.featureWriters</key>
+      <array>
+        <dict>
+          <key>class</key>
+          <string>KernFeatureWriter</string>
+          <key>options</key>
+          <dict>
+            <key>mode</key>
+            <string>append</string>
+          </dict>
+        </dict>
+        <dict>
+          <key>class</key>
+          <string>MarkFeatureWriter</string>
+          <key>options</key>
+          <dict>
+            <key>mode</key>
+            <string>skip</string>
+          </dict>
+        </dict>
+      </array>
+    </dict>
+  </lib>
+</designspace>
