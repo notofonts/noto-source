@@ -266,7 +266,7 @@ code = "uni1B38.3 uni1B38.4 uni1B38.5 uni1B39.3 uni1B39.4 uni1B39.5  ";
 name = dist3839;
 }
 );
-copyright = "Copyright 2020 Noto Sans Balinese Google";
+copyright = "Copyright 2020 Google LLC. All rights reserved";
 customParameters = (
 {
 name = licenseURL;
@@ -274,7 +274,7 @@ value = "http://scripts.sil.org/OFL";
 },
 {
 name = trademark;
-value = "Noto is a trademark of Google Inc.";
+value = "Noto is a trademark of Google LLC.";
 },
 {
 name = Axes;
@@ -676,9 +676,13 @@ value = 1;
 {
 name = "Use Line Breaks";
 value = 1;
+},
+{
+name = versionString;
+value = "Version 2.002";
 }
 );
-date = "2020-11-17 14:47:51 +0000";
+date = "2020-12-21 17:41:42 +0000";
 designer = "Aditya Bayu, David Williams";
 disablesAutomaticAlignment = 1;
 familyName = "Noto Sans Balinese";
@@ -3378,7 +3382,9 @@ code = "  sub uni1B13 uni1B35 by uni1B13.td;
   sub uni1B1A' lookup liga_5 [uni1B38 uni1B23.conj uni1B26.conj uni1B2F.conj.1 uni1B49.conj uni1B32.conj];
   sub uni1B1B' lookup liga_6 @liga3;
   sub [uni1B16.conj.1 uni1B19.conj.1 uni1B21.conj.1 uni1B29.conj.1 uni1B2E.conj.1]' lookup liga_8 [uni1B38 uni1B39 uni1B2C.conj.1 uni1B2F.conj.1];
+  sub [uni1B16.conj.1 uni1B19.conj.1 uni1B21.conj.1 uni1B29.conj.1 uni1B2E.conj.1]' lookup liga_8 @marksabove [uni1B38 uni1B39 uni1B2C.conj.1 uni1B2F.conj.1];
   sub @liga4 [uni1B38 uni1B39]' lookup liga_9;
+  sub @liga4 @marksabove [uni1B38 uni1B39]' lookup liga_9;
   sub [uni1B1B uni1B1B.conj uni1B23.conj uni1B2D.conj.1 uni1B2F.conj.1 uni1B49.conj] [uni1B38 uni1B39]' lookup liga_10;
   sub uni1B1A.conj uni1B38.2 by uni1B1A.conj.u;
   sub uni1B24.conj uni1B38.2 by uni1B24.conj.u;
@@ -36106,5 +36112,5 @@ oV = "90";
 };
 };
 versionMajor = 2;
-versionMinor = 1;
+versionMinor = 2;
 }
