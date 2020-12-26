@@ -7,8 +7,8 @@ script table end
 
 
 feature table begin
-0	calt	1, 6, 10
-1	ccmp	0, 5
+0	calt	1, 5, 9
+1	ccmp	0, 4
 
 feature table end
 
@@ -35866,6 +35866,7 @@ u1D9FF_F4_R2	u1D9FF	F4	R2
 u1D9FF_F4_R3	u1D9FF	F4	R3
 u1D9FF_F4_R4	u1D9FF	F4	R4
 u1D9FF_F4	u1D9FF	F4
+u1D9FF_F5	u1D9FF	F5
 u1D9FF_R2	u1D9FF	R2
 u1D9FF_R3	u1D9FF	R3
 u1D9FF_R4	u1D9FF	R4
@@ -36841,6 +36842,7 @@ RightToLeft	no
 IgnoreBaseGlyphs	no
 IgnoreLigatures	no
 IgnoreMarks	no
+MarkFilterType	1
 
 class definition begin
 u1D9FF	1
@@ -36851,8 +36853,8 @@ u1D9FF_F2	1
 u1D9FF_F2_R2	1
 u1D9FF_F2_R3	1
 u1D9FF_F2_R4	1
+u1D9FF_F5	1
 u1DA5E_head	1
-F5	2
 u1DA00	3
 u1DA01	3
 u1DA02	3
@@ -36962,160 +36964,18 @@ u1DA75	3
 u1DA84	3
 class definition end
 
-lookaheadclass definition begin
-F2	2
-F3	2
-F4	2
-F5	2
-F6	2
-R2	2
-R3	2
-R4	2
-R5	2
-R6	2
-R7	2
-R8	2
-R9	2
-R10	2
-R11	2
-R12	2
-R13	2
-R14	2
-R15	2
-R16	2
-u1DA00	3
-u1DA01	3
-u1DA02	3
-u1DA03	3
-u1DA04	3
-u1DA05	3
-u1DA06	3
-u1DA07	3
-u1DA08	3
-u1DA09	3
-u1DA0A	3
-u1DA0B	3
-u1DA0C	3
-u1DA0D	3
-u1DA0E	3
-u1DA0F	3
-u1DA10	3
-u1DA11	3
-u1DA12	3
-u1DA13	3
-u1DA14	3
-u1DA15	3
-u1DA16	3
-u1DA17	3
-u1DA18	3
-u1DA19	3
-u1DA1A	3
-u1DA1B	3
-u1DA1C	3
-u1DA1D	3
-u1DA1E	3
-u1DA1F	3
-u1DA20	3
-u1DA21	3
-u1DA22	3
-u1DA23	3
-u1DA24	3
-u1DA25	3
-u1DA26	3
-u1DA27	3
-u1DA28	3
-u1DA29	3
-u1DA2A	3
-u1DA2B	3
-u1DA2C	3
-u1DA2D	3
-u1DA2E	3
-u1DA2F	3
-u1DA30	3
-u1DA31	3
-u1DA32	3
-u1DA33	3
-u1DA34	3
-u1DA35	3
-u1DA36	3
-u1DA3B	3
-u1DA3C	3
-u1DA3D	3
-u1DA3E	3
-u1DA3F	3
-u1DA40	3
-u1DA41	3
-u1DA42	3
-u1DA43	3
-u1DA44	3
-u1DA45	3
-u1DA46	3
-u1DA47	3
-u1DA48	3
-u1DA49	3
-u1DA4A	3
-u1DA4B	3
-u1DA4C	3
-u1DA4D	3
-u1DA4E	3
-u1DA4F	3
-u1DA50	3
-u1DA51	3
-u1DA52	3
-u1DA53	3
-u1DA54	3
-u1DA55	3
-u1DA56	3
-u1DA57	3
-u1DA58	3
-u1DA59	3
-u1DA5A	3
-u1DA5B	3
-u1DA5C	3
-u1DA5D	3
-u1DA5E	3
-u1DA5F	3
-u1DA60	3
-u1DA61	3
-u1DA62	3
-u1DA63	3
-u1DA64	3
-u1DA65	3
-u1DA66	3
-u1DA67	3
-u1DA68	3
-u1DA69	3
-u1DA6A	3
-u1DA6B	3
-u1DA6C	3
-u1DA75	3
-u1DA84	3
-class definition end
-
-class-chain		1, 2, 3	2	1, 2
-class-chain		1, 2, 3		1, 2
-class-chain		1, 3, 3, 3, 3		1, 3
-class-chain		1, 3, 3, 3		1, 3
-class-chain		1, 3, 3		1, 3
-class-chain		1, 3		1, 3
-class-chain		3		1, 4
+class-chain		1, 3, 3, 3, 3, 3, 3		1, 2
+class-chain		1, 3, 3, 3, 3, 3		1, 2
+class-chain		1, 3, 3, 3, 3		1, 2
+class-chain		1, 3, 3, 3		1, 2
+class-chain		1, 3, 3		1, 2
+class-chain		1, 3		1, 2
+class-chain		3		1, 3
 
 lookup end
 
 
-lookup	2	ligature
-
-RightToLeft	no
-IgnoreBaseGlyphs	no
-IgnoreLigatures	no
-IgnoreMarks	no
-
-u1D9FF_F5	u1D9FF	F5
-
-lookup end
-
-
-lookup	3	single
+lookup	2	single
 
 RightToLeft	no
 IgnoreBaseGlyphs	no
@@ -37127,7 +36987,7 @@ space	space
 lookup end
 
 
-lookup	4	multiple
+lookup	3	multiple
 
 RightToLeft	no
 IgnoreBaseGlyphs	no
@@ -37245,7 +37105,7 @@ u1DA84	uni25CC	u1DA84
 lookup end
 
 
-lookup	5	ligature
+lookup	4	ligature
 
 RightToLeft	no
 IgnoreBaseGlyphs	no
@@ -37639,7 +37499,7 @@ u1DA84_R8	u1DA84	R8
 lookup end
 
 
-lookup	6	context
+lookup	5	context
 
 RightToLeft	no
 IgnoreBaseGlyphs	no
@@ -37976,16 +37836,16 @@ u1DA29_R7	7
 u1DA29_R8	7
 class definition end
 
-class	4, 2	1, 7
-class	4, 1	1, 8
-class	4, 3	1, 9
-class	4, 5	1, 7	1, 8
-class	4, 6, 7	1, 7
+class	4, 2	1, 6
+class	4, 1	1, 7
+class	4, 3	1, 8
+class	4, 5	1, 6	1, 7
+class	4, 6, 7	1, 6
 
 lookup end
 
 
-lookup	7	single
+lookup	6	single
 
 RightToLeft	no
 IgnoreBaseGlyphs	no
@@ -38000,7 +37860,7 @@ u1D9FF_R4	u1D9FF_F2_R4
 lookup end
 
 
-lookup	8	single
+lookup	7	single
 
 RightToLeft	no
 IgnoreBaseGlyphs	no
@@ -38021,7 +37881,7 @@ u1D9FF_F5	u1D9FF_F5.low
 lookup end
 
 
-lookup	9	single
+lookup	8	single
 
 RightToLeft	no
 IgnoreBaseGlyphs	no
@@ -38036,7 +37896,7 @@ u1D9FF_F5	u1D9FF_F5.high
 lookup end
 
 
-lookup	10	single
+lookup	9	single
 
 RightToLeft	no
 IgnoreBaseGlyphs	no
@@ -38048,21 +37908,21 @@ F3	F3.alt
 F4	F4.alt
 F5	F5.alt
 F6	F6.alt
-R2	R9.alt
-R3	R10.alt
-R4	R11.alt
-R5	R12.alt
-R6	R13.alt
-R7	R14.alt
-R8	R15.alt
-R9	R16.alt
-R10	R2.alt
-R11	R3.alt
-R12	R4.alt
-R13	R5.alt
-R14	R6.alt
-R15	R7.alt
-R16	R8.alt
+R2	R2.alt
+R3	R3.alt
+R4	R4.alt
+R5	R5.alt
+R6	R6.alt
+R7	R7.alt
+R8	R8.alt
+R9	R9.alt
+R10	R10.alt
+R11	R11.alt
+R12	R12.alt
+R13	R13.alt
+R14	R14.alt
+R15	R15.alt
+R16	R16.alt
 
 lookup end
 

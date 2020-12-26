@@ -24,8 +24,10 @@ if ([ ! -d $1 ]) then echo "Directory $1 does not exist"; exit 1; fi
 ls $1/Noto*$2*-VF.ttf 1>/dev/null 2>&1 || exit 1
 # cd Noto variable font directory
 cd $1
-rm -r slim slim-drop slim-no-wdth
-mkdir slim slim-drop slim-no-wdth
+rm *Regular-VF.ttf 1>/dev/null 2>&1
+rm -r slim-drop slim-no-wdth
+if (( $# == 2 )) then echo "rm *$2*.ttf"; rm slim/Noto*$2*.ttf; else rm -r slim; mkdir slim; fi
+mkdir slim-drop slim-no-wdth
 for i in Noto*$2*.ttf ; do echo "====== dropping wdth axis from $i"; fonttools varLib.instancer -o slim-drop/$i $i wdth=drop wght=400:700 ; done
 for i in Noto*$2*.ttf ; do echo "====== restricting wght to 400:700 in $i"; fonttools varLib.instancer -o slim-no-wdth/$i $i wght=400:700 ; done
 cp slim-drop/Noto*$2*-VF.ttf slim/ || echo "slim-drop/Noto*$2*-VF.ttf not found"
@@ -35,4 +37,3 @@ cd ..
 echo "copied to slim/ the following fonts"
 ls -l slim/Noto*$2*-VF.ttf
 rm -r slim-drop slim-no-wdth
-

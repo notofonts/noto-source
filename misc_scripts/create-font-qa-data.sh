@@ -41,6 +41,7 @@ ls `which diffenator` 1>/dev/null 2>&1 || exit 1
 ls `which fontdiff` 1>/dev/null 2>&1 || exit 1
 ls `which fontbakery` 1>/dev/null 2>&1 || exit 1
 echo "diffenator, fontdiff, fontbakery were found"
+# assume that noto_lint.py is present
 NOTO_LINT_PRESENT=1
 ls `which noto_lint.py` 1>/dev/null 2>&1 || NOTO_LINT_PRESENT=0
 # cd new-noto-source-dir directory
@@ -57,8 +58,9 @@ for j in `ls $1-*.ttf | sed -e "s/.ttf//"`; do echo "====== " diffenator $j; dif
 mkdir $4/../Font-QA-Data/$1-$TS/fontbakery
 for j in `ls $1-*.ttf | sed -e "s/.ttf//"`; do echo "====== " fontbakery check-notofonts $j; fontbakery check-notofonts $j.ttf > $4/../Font-QA-Data/$1-$TS/fontbakery/$j-out.txt ; done
 for j in `ls $1-*.ttf | sed -e "s/.ttf//"`; do echo "====== " diff fontbakery $j vs golden; diff -b $4/../Font-QA-Data/$1-$TS/fontbakery/$j-out.txt $4/../Font-QA-Data/fontbakery-golden/$j-out.txt; done
+# sometimes noto_lint.py "gets stuck" (found out this empiricaly), so LONG is set to 1 for these
 if (( NOTO_LINT_PRESENT == 1 )) then
-    mkdir $4/../Font-QA-Data/$1-$TS/notolint; for j in `ls $1-*.ttf | sed -e "s/.ttf//"`; do echo "====== " noto_lint.py $j; noto_lint.py $j.ttf > $4/../Font-QA-Data/$1-$TS/notolint/$j.txt ; done; for j in `ls $1-*.ttf | sed -e "s/.ttf//"`; do echo "====== " diff noto_lint.py $j vs golden; diff -b $4/../Font-QA-Data/$1-$TS/notolint/$j.txt $4/../Font-QA-Data/notolint-golden/$j.txt; done
+    mkdir $4/../Font-QA-Data/$1-$TS/notolint; for j in `ls $1-*.ttf | sed -e "s/.ttf//"`; do echo "====== " noto_lint.py $j; LONG=0; case "$j" in NotoSansDevanagari-ExtraCondensedLight) LONG=1 ;;  NotoSansDevanagariUI-ExtraCondensedLight) LONG=1 ;;  NotoSansGurmukhi-CondensedSemiBold) LONG=1 ;;  NotoSansGurmukhiUI-CondensedSemiBold) LONG=1 ;;  NotoSansKannada-ExtraLight) LONG=1 ;;  NotoSansKannadaUI-ExtraLight) LONG=1 ;;  NotoSansMyanmarUI-ExtraBold) LONG=1 ;;  NotoSansMyanmarUI-SemiCondensedBlack) LONG=1 ;;  NotoSansMyanmarUI-SemiCondensedExtraBold) LONG=1 ;; esac ; if (( LONG == 1 )) then ((noto_lint.py $j.ttf > $4/../Font-QA-Data/$1-$TS/notolint/$j.txt) & sleep 99); else (noto_lint.py $j.ttf > $4/../Font-QA-Data/$1-$TS/notolint/$j.txt); fi ; done; for j in `ls $1-*.ttf | sed -e "s/.ttf//"`; do echo "====== " diff noto_lint.py $j vs golden; diff -b $4/../Font-QA-Data/$1-$TS/notolint/$j.txt $4/../Font-QA-Data/notolint-golden/$j.txt; done
  ; fi
 cd $4/variable_ttf
 ls $1-*.ttf 1>/dev/null 2>&1 || (echo "no $4/variable_ttf/$1-*.ttf" ; exit 1)
