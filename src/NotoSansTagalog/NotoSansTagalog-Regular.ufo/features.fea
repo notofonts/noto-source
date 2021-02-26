@@ -1,0 +1,59 @@
+table GDEF {
+    GlyphClassDef [], [], [], [];
+} GDEF;
+
+    markClass uni1712 <anchor -171 693> @Anchor2;
+
+    markClass uni1713 <anchor -98 0> @Anchor4;
+    markClass uni1714 <anchor -264 0> @Anchor4;
+
+
+lookup MarkToBase1 {
+    lookupflag 0;
+    ;
+            pos base [uni1703 uni1705 uni1706 uni1709 uni170A uni170B uni170E uni1710] <anchor 488 693> mark @Anchor2;
+        pos base uni1704 <anchor 400 693> mark @Anchor2;
+        pos base uni1707 <anchor 527 693> mark @Anchor2;
+        pos base uni1708 <anchor 410 693> mark @Anchor2;
+        pos base uni170C <anchor 520 693> mark @Anchor2;
+        pos base uni170F <anchor 537 742> mark @Anchor2;
+        pos base uni1711 <anchor 532 693> mark @Anchor2;
+        pos base uni25CC <anchor 300 590> mark @Anchor2;
+
+} MarkToBase1;
+
+lookup MarkToBase3 {
+    lookupflag 0;
+    ;
+    # Original source: 1 
+            pos base [uni1703 uni1706] <anchor 539 0> mark @Anchor4;
+        pos base uni1704 <anchor 545 0> mark @Anchor4;
+        pos base uni1705 <anchor 564 0> mark @Anchor4;
+        pos base uni1707 <anchor 552 0> mark @Anchor4;
+        pos base uni1708 <anchor 437 -88> mark @Anchor4;
+        pos base uni1709 <anchor 590 0> mark @Anchor4;
+        pos base uni170A <anchor 520 -79> mark @Anchor4;
+        pos base uni170B <anchor 577 0> mark @Anchor4;
+        pos base uni170C <anchor 583 0> mark @Anchor4;
+        pos base uni170E <anchor 507 -49> mark @Anchor4;
+        pos base uni170F <anchor 457 -30> mark @Anchor4;
+        pos base uni1710 <anchor 609 -79> mark @Anchor4;
+        pos base uni1711 <anchor 507 0> mark @Anchor4;
+        pos base uni25CC <anchor 295 0> mark @Anchor4;
+
+} MarkToBase3;
+
+feature mark {
+    lookup MarkToBase1;
+    lookup MarkToBase3;
+} mark;
+
+    @GDEF_Base = [uni1700 uni1701 uni1702 uni1703 uni1704 uni1705 uni1706 uni1707 uni1708 uni1709 uni170A uni170B uni170C uni170E uni170F uni1710 uni1711 uni1735 uni1736 uni25CC];
+    @GDEF_Ligature = [];
+    @GDEF_Mark = [uni1712 uni1713 uni1714];
+    @GDEF_Component = [];
+    table GDEF {
+        GlyphClassDef @GDEF_Base, @GDEF_Ligature, @GDEF_Mark, @GDEF_Component;
+} GDEF;
+
+
