@@ -1,0 +1,96 @@
+table GDEF {
+    GlyphClassDef [], [], [], [];
+} GDEF;
+
+    markClass [u16B30 u16B31 u16B32 u16B33 u16B34 u16B35 u16B36] <anchor 0 800> @Anchor2;
+
+    markClass [u16B30 u16B35] <anchor 0 800> @Anchor4;
+
+
+lookup MarkToBase1 {
+    lookupflag 0;
+    ;
+            pos base uni25CC <anchor 297 625> mark @Anchor2;
+        pos base [u16B00 u16B09] <anchor 340 800> mark @Anchor2;
+        pos base [u16B01 u16B07 u16B16] <anchor 320 800> mark @Anchor2;
+        pos base u16B02 <anchor 280 800> mark @Anchor2;
+        pos base u16B03 <anchor 392 800> mark @Anchor2;
+        pos base u16B04 <anchor 341 800> mark @Anchor2;
+        pos base [u16B05 u16B0F u16B14] <anchor 355 800> mark @Anchor2;
+        pos base [u16B06 u16B1B] <anchor 411 800> mark @Anchor2;
+        pos base u16B08 <anchor 362 800> mark @Anchor2;
+        pos base u16B0A <anchor 313 800> mark @Anchor2;
+        pos base u16B0B <anchor 383 800> mark @Anchor2;
+        pos base u16B0C <anchor 348 800> mark @Anchor2;
+        pos base u16B0E <anchor 299 800> mark @Anchor2;
+        pos base u16B10 <anchor 390 800> mark @Anchor2;
+        pos base [u16B11 u16B0D] <anchor 376 800> mark @Anchor2;
+        pos base u16B12 <anchor 380 800> mark @Anchor2;
+        pos base u16B13 <anchor 404 800> mark @Anchor2;
+        pos base u16B15 <anchor 305 800> mark @Anchor2;
+        pos base u16B17 <anchor 292 800> mark @Anchor2;
+        pos base u16B18 <anchor 278 800> mark @Anchor2;
+        pos base u16B19 <anchor 360 800> mark @Anchor2;
+        pos base u16B1A <anchor 430 800> mark @Anchor2;
+
+} MarkToBase1;
+
+lookup MarkToBase3 {
+    lookupflag 0;
+    ;
+    # Original source: 1 
+            pos base uni25CC <anchor 297 625> mark @Anchor4;
+        pos base [u16B1C u16B1D u16B26 u16B2C u16B2D] <anchor 300 800> mark @Anchor4;
+        pos base u16B1E <anchor 380 800> mark @Anchor4;
+        pos base [u16B1F u16B2A] <anchor 377 800> mark @Anchor4;
+        pos base u16B20 <anchor 279 800> mark @Anchor4;
+        pos base [u16B21 u16B2B] <anchor 335 800> mark @Anchor4;
+        pos base u16B22 <anchor 321 800> mark @Anchor4;
+        pos base [u16B23 u16B25 u16B2E u16B2F] <anchor 320 800> mark @Anchor4;
+        pos base u16B24 <anchor 375 800> mark @Anchor4;
+        pos base u16B27 <anchor 360 800> mark @Anchor4;
+        pos base u16B28 <anchor 307 800> mark @Anchor4;
+        pos base u16B29 <anchor 390 800> mark @Anchor4;
+
+} MarkToBase3;
+
+lookup PairPositioning5 {
+    lookupflag IgnoreMarks;
+    ;
+    # Original source: 2 
+    pos u16B6B u16B6C -80;
+    pos u16B6F u16B5F -70;
+    pos u16B6F u16B6B -90;
+    pos [u16B17 u16B1B u16B1F u16B24 u16B26 u16B2C u16B5C u16B87 u16B8D u16B8E] [u16B02 u16B15 u16B2E] -50;
+    pos [u16B00 u16B2F u16B5F] [u16B02 u16B15 u16B2E] -50;
+    pos [u16B00 u16B2F u16B5F] [u16B03 u16B29 u16B5C] -50;
+    pos [u16B02 u16B15 u16B2E] [u16B00 u16B2F u16B5F] -70;
+    pos [u16B02 u16B15 u16B2E] u16B18 -40;
+    pos [u16B02 u16B15 u16B2E] u16B65 -30;
+    pos [u16B02 u16B15 u16B2E] u16B6B -70;
+    pos [u16B02 u16B15 u16B2E] u16B73 -40;
+    pos [u16B02 u16B15 u16B2E] u16B8E -50;
+    pos [u16B6C u16B6F] u16B6B -80;
+    pos u16B61 [u16B02 u16B15 u16B2E] -30;
+    pos u16B6B [u16B02 u16B15 u16B2E] -70;
+    pos u16B76 [u16B02 u16B15 u16B2E] -40;
+} PairPositioning5;
+
+feature kern {
+    lookup PairPositioning5;
+} kern;
+
+feature mark {
+    lookup MarkToBase1;
+    lookup MarkToBase3;
+} mark;
+
+    @GDEF_Base = [uni25CC u16B00 u16B01 u16B02 u16B03 u16B04 u16B05 u16B06 u16B07 u16B08 u16B09 u16B0A u16B0B u16B0C u16B0E u16B0F u16B10 u16B11 u16B0D u16B12 u16B13 u16B14 u16B15 u16B16 u16B17 u16B18 u16B19 u16B1A u16B1B u16B1C u16B1D u16B1E u16B1F u16B20 u16B21 u16B22 u16B23 u16B24 u16B25 u16B26 u16B27 u16B28 u16B29 u16B2A u16B2B u16B2C u16B2D u16B2E u16B2F];
+    @GDEF_Ligature = [];
+    @GDEF_Mark = [u16B30 u16B31 u16B32 u16B33 u16B34 u16B35 u16B36];
+    @GDEF_Component = [];
+    table GDEF {
+        GlyphClassDef @GDEF_Base, @GDEF_Ligature, @GDEF_Mark, @GDEF_Component;
+} GDEF;
+
+
