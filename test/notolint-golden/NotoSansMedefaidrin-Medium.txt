@@ -1,0 +1,17 @@
+---
+Automatic testing for 'instance_ttf,NotoSansMedefaidrin-Medium.ttf', Version 1.001:
+E <name/family> The family is 'Noto Sans Medefaidrin Medium' but was expecting 'Noto Sans Medfaidrin Md'
+E <name/manufacturer> The manufacturer is 'Dalton Maag Ltd' but was expecting 'Monotype Imaging Inc.'
+E <name/designer> The designer is 'Dalton Maag Ltd' but was expecting 'Monotype Design Team'
+E <name/description> The description is not set, but was expecting it to match '^Designed by Monotype design team.$'
+E <name/designer_url> The designer url is 'http://www.daltonmaag.com/' but was expecting 'http://www.monotype.com/studio'
+E <head/os2/panose/serif> Panose serif value is 2 but expected 11-15
+E <bounds/glyph/ymin> Real yMin for glyph 68 (zmedf) is -408, which is lower than the font's sTypoDescent (-293), resulting in clipping.
+E <bounds/glyph/ymin> Real yMin for glyph 71 (tmedf) is -408, which is lower than the font's sTypoDescent (-293), resulting in clipping.
+E <bounds/glyph/ymin> Real yMin for glyph 72 (gmedf) is -408, which is lower than the font's sTypoDescent (-293), resulting in clipping.
+E <bounds/font/ymin> Real yMin is -408, but it should be greater than or equal to the value of Descent in 'hhea' table, which is -293.
+E <complex/gsub/missing> There is no GSUB table in the font.
+E <reachable> The following 1 glyphs are unreachable in the font: Vmdef (95).
+Found 12 errors.
+------
+Finished linting 1 file.

@@ -1,0 +1,165 @@
+Start ... running 77 individual check executions.
+ >> [1;35;107mcom.google.fonts/check/required_tables[0m
+    [0;36;107mFont contains all required tables?[0m
+    with NotoSansCherokee-VF.ttf
+
+    [1;35;107m  Rationale:                                                                [0m
+    [0;30;107m  Depending on the typeface and coverage of a font, certain tables are      [0m
+    [0;30;107m  recommended for optimum quality. For example, the performance of a        [0m
+    [0;30;107m  non-linear font is improved if the VDMX, LTSH, and hdmx tables are        [0m
+    [0;30;107m  present. Non-monospaced Latin fonts should have a kern table. A gasp      [0m
+    [0;30;107m  table is necessary if a designer wants to influence the sizes at which    [0m
+    [0;30;107m  grayscaling is used under Windows. A DSIG table containing a digital      [0m
+    [0;30;107m  signature helps ensure the integrity of the font file. Etc.               [0m
+
+    * [0;36;107mINFO[0m: This font contains the following optional tables [loca, GPOS, GSUB]
+
+
+    Result: [0;36;107mINFO[0m
+
+ >> [1;35;107mcom.google.fonts/check/superfamily/list[0m
+    [0;36;107mList all superfamily filepaths[0m
+    with NotoSansCherokee-VF.ttf
+
+    [1;35;107m  Rationale:                                                                [0m
+    [0;30;107m  This is a merely informative check that lists all sibling families        [0m
+    [0;30;107m  detected by fontbakery.                                                   [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  Only the fontfiles in these directories will be considered in             [0m
+    [0;30;107m  superfamily-level checks.                                                 [0m
+
+    * [0;36;107mINFO[0m: . [code: family-path]
+
+
+    Result: [0;36;107mINFO[0m
+
+ >> [1;35;107mcom.google.fonts/check/monospace[0m
+    [0;36;107mChecking correctness of monospaced metadata.[0m
+    with NotoSansCherokee-VF.ttf
+
+    [1;35;107m  Rationale:                                                                [0m
+    [0;30;107m  There are various metadata in the OpenType spec to specify if a font is   [0m
+    [0;30;107m  monospaced or not. If the font is not truly monospaced, then no           [0m
+    [0;30;107m  monospaced metadata should be set (as sometimes they mistakenly are...)   [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  Requirements for monospace fonts:                                         [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  * post.isFixedPitch - "Set to 0 if the font is proportionally spaced,     [0m
+    [0;30;107m  non-zero if the font is not proportionally spaced (monospaced)"           [0m
+    [0;30;107m    www.microsoft.com/typography/otspec/post.htm                            [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  * hhea.advanceWidthMax must be correct, meaning no glyph's width value is [0m
+    [0;30;107m  greater.                                                                  [0m
+    [0;30;107m    www.microsoft.com/typography/otspec/hhea.htm                            [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  * OS/2.panose.bProportion must be set to 9 (monospace). Spec says: "The   [0m
+    [0;30;107m  PANOSE definition contains ten digits each of which currently describes   [0m
+    [0;30;107m  up to sixteen variations. Windows uses bFamilyType, bSerifStyle and       [0m
+    [0;30;107m  bProportion in the font mapper to determine family type. It also uses     [0m
+    [0;30;107m  bProportion to determine if the font is monospaced."                      [0m
+    [0;30;107m    www.microsoft.com/typography/otspec/os2.htm#pan                         [0m
+    [0;30;107m    monotypecom-test.monotype.de/services/pan2                              [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  * OS/2.xAvgCharWidth must be set accurately.                              [0m
+    [0;30;107m    "OS/2.xAvgCharWidth is used when rendering monospaced fonts, at least   [0m
+    [0;30;107m  by Windows GDI"                                                           [0m
+    [0;30;107m    http://typedrawers.com/discussion/comment/15397/#Comment_15397          [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  Also we should report an error for glyphs not of average width.           [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  Please also note:                                                         [0m
+    [0;30;107m  Thomas Phinney told us that a few years ago (as of December 2019), if you [0m
+    [0;30;107m  gave a font a monospace flag in Panose, Microsoft Word would ignore the   [0m
+    [0;30;107m  actual advance widths and treat it as monospaced. Source:                 [0m
+    [0;30;107m  https://typedrawers.com/discussion/comment/45140/#Comment_45140           [0m
+
+    * [1;91;107mFAIL[0m: On monospaced fonts, the value of post.isFixedPitch must be set to a non-zero value (meaning 'fixed width monospaced'), but got 0 instead. [code: mono-bad-post-isFixedPitch]
+    * [1;91;107mFAIL[0m: On monospaced fonts, the value of OS/2.panose.bProportion must be set to 9 (proportion: monospaced), but got 0 instead. [code: mono-bad-panose-proportion]
+    * [1;30;103mWARN[0m: Font is monospaced but 258 glyphs (94.51%) have a different width. You should check the widths of: ['uni13A0', 'uni13A0.alt', 'uni13A1', 'uni13A1.alt', 'uni13A2', 'uni13A2.alt', 'uni13A3', 'uni13A3.alt', 'uni13A4', 'uni13A4.alt', 'uni13A5', 'uni13A5.alt', 'uni13A6', 'uni13A6.alt', 'uni13A7', 'uni13A7.alt', 'uni13A8', 'uni13A8.alt', 'uni13A9', 'uni13A9.alt', 'uni13AA', 'uni13AA.alt', 'uni13AB', 'uni13AB.alt', 'uni13AC', 'uni13AC.alt', 'uni13AD', 'uni13AD.alt', 'uni13AE', 'uni13AE.alt', 'uni13AF', 'uni13AF.alt', 'uni13B0', 'uni13B0.alt', 'uni13B1', 'uni13B1.alt', 'uni13B2', 'uni13B2.alt', 'uni13B3', 'uni13B3.alt', 'uni13B4', 'uni13B4.alt', 'uni13B5', 'uni13B5.alt', 'uni13B6', 'uni13B6.alt', 'uni13B7', 'uni13B7.alt', 'uni13B8', 'uni13B8.alt', 'uni13B9', 'uni13B9.alt', 'uni13BA', 'uni13BA.alt', 'uni13BB', 'uni13BB.alt', 'uni13BC', 'uni13BC.alt', 'uni13BD', 'uni13BD.alt', 'uni13BE', 'uni13BE.alt', 'uni13BF', 'uni13BF.alt', 'uni13C0', 'uni13C0.alt', 'uni13C1', 'uni13C1.alt', 'uni13C2', 'uni13C2.alt', 'uni13C3', 'uni13C3.alt', 'uni13C4', 'uni13C4.alt', 'uni13C5', 'uni13C5.alt', 'uni13C6', 'uni13C6.alt', 'uni13C7', 'uni13C7.alt', 'uni13C8', 'uni13C8.alt', 'uni13C9', 'uni13C9.alt', 'uni13CA', 'uni13CA.alt', 'uni13CB', 'uni13CB.alt', 'uni13CC', 'uni13CC.alt', 'uni13CD', 'uni13CD.alt', 'uni13CE', 'uni13CE.alt', 'uni13CF', 'uni13CF.alt', 'uni13D0', 'uni13D0.alt', 'uni13D1', 'uni13D1.alt', 'uni13D2', 'uni13D2.alt', 'uni13D3', 'uni13D3.alt', 'uni13D4', 'uni13D4.alt', 'uni13D5', 'uni13D5.alt', 'uni13D6', 'uni13D6.alt', 'uni13D7', 'uni13D7.alt', 'uni13D8', 'uni13D8.alt', 'uni13D9', 'uni13D9.alt', 'uni13DA', 'uni13DA.alt', 'uni13DB', 'uni13DB.alt', 'uni13DC', 'uni13DC.alt', 'uni13DD', 'uni13DD.alt', 'uni13DE', 'uni13DE.alt', 'uni13DF', 'uni13DF.alt', 'uni13E0', 'uni13E0.alt', 'uni13E1', 'uni13E1.alt', 'uni13E2', 'uni13E2.alt', 'uni13E3', 'uni13E3.alt', 'uni13E4', 'uni13E4.alt', 'uni13E5', 'uni13E5.alt', 'uni13E6', 'uni13E6.alt', 'uni13E7', 'uni13E7.alt', 'uni13E8', 'uni13E8.alt', 'uni13E9', 'uni13E9.alt', 'uni13EA', 'uni13EA.alt', 'uni13EB', 'uni13EB.alt', 'uni13EC', 'uni13EC.alt', 'uni13ED', 'uni13ED.alt', 'uni13EE', 'uni13EE.alt', 'uni13EF', 'uni13EF.alt', 'uni13F0', 'uni13F0.alt', 'uni13F1', 'uni13F1.alt', 'uni13F2', 'uni13F2.alt', 'uni13F3', 'uni13F3.alt', 'uni13F4', 'uni13F4.alt', 'uni13F5', 'uni13F5.alt', 'uni13F8', 'uni13F9', 'uni13FA', 'uni13FB', 'uni13FC', 'uni13FD', 'uniAB70', 'uniAB71', 'uniAB72', 'uniAB73', 'uniAB74', 'uniAB75', 'uniAB76', 'uniAB77', 'uniAB78', 'uniAB79', 'uniAB7A', 'uniAB7B', 'uniAB7C', 'uniAB7D', 'uniAB7E', 'uniAB7F', 'uniAB80', 'uniAB81', 'uniAB82', 'uniAB83', 'uniAB84', 'uniAB85', 'uniAB86', 'uniAB87', 'uniAB88', 'uniAB89', 'uniAB8A', 'uniAB8B', 'uniAB8C', 'uniAB8D', 'uniAB8E', 'uniAB8F', 'uniAB90', 'uniAB91', 'uniAB92', 'uniAB93', 'uniAB94', 'uniAB95', 'uniAB96', 'uniAB97', 'uniAB98', 'uniAB99', 'uniAB9A', 'uniAB9B', 'uniAB9C', 'uniAB9D', 'uniAB9E', 'uniAB9F', 'uniABA0', 'uniABA1', 'uniABA2', 'uniABA3', 'uniABA4', 'uniABA5', 'uniABA6', 'uniABA7', 'uniABA8', 'uniABA9', 'uniABAA', 'uniABAB', 'uniABAC', 'uniABAD', 'uniABAE', 'uniABAF', 'uniABB0', 'uniABB1', 'uniABB2', 'uniABB3', 'uniABB4', 'uniABB5', 'uniABB6', 'uniABB7', 'uniABB8', 'uniABB9', 'uniABBA', 'uniABBB', 'uniABBC', 'uniABBD', 'uniABBE', 'uniABBF'] [code: mono-outliers]
+
+
+    Result: [1;91;107mFAIL[0m
+
+ >> [1;35;107mcom.google.fonts/check/dsig[0m
+    [0;36;107mDoes the font have a DSIG table?[0m
+    with NotoSansCherokee-VF.ttf
+
+    [1;35;107m  Rationale:                                                                [0m
+    [0;30;107m  Microsoft Office 2013 and below products expect fonts to have a digital   [0m
+    [0;30;107m  signature declared in a DSIG table in order to implement OpenType         [0m
+    [0;30;107m  features. The EOL date for Microsoft Office 2013 products is 4/11/2023.   [0m
+    [0;30;107m  This issue does not impact Microsoft Office 2016 and above products.      [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  This checks verifies that this signature is available in the font.        [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  A fake signature is enough to address this issue. If needed, a dummy      [0m
+    [0;30;107m  table can be added to the font with the `gftools fix-dsig` script         [0m
+    [0;30;107m  available at https://github.com/googlefonts/gftools                       [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  Reference: https://github.com/googlefonts/fontbakery/issues/1845          [0m
+
+    * [1;91;107mFAIL[0m: This font lacks a digital signature (DSIG table). Some applications may require one (even if only a dummy placeholder) in order to work properly. You can add a DSIG table by running the `gftools fix-dsig` script. [code: lacks-signature]
+
+
+    Result: [1;91;107mFAIL[0m
+
+ >> [1;35;107mcom.google.fonts/check/outline_alignment_miss[0m
+    [0;36;107mAre there any misaligned on-curve points?[0m
+    with NotoSansCherokee-VF.ttf
+
+    [1;35;107m  Rationale:                                                                [0m
+    [0;30;107m  This test heuristically looks for on-curve points which are close to, but [0m
+    [0;30;107m  do not sit on, significant boundary coordinates. For example, a point     [0m
+    [0;30;107m  which has a Y-coordinate of 1 or -1 might be a misplaced baseline point.  [0m
+    [0;30;107m  As well as the baseline, the test also checks for points near the         [0m
+    [0;30;107m  x-height (but only for lower case Latin letters), cap-height, ascender    [0m
+    [0;30;107m  and descender Y coordinates.                                              [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  Not all such misaligned curve points are a mistake, and sometimes the     [0m
+    [0;30;107m  design may call for points in locations near the boundaries. As this test [0m
+    [0;30;107m  is liable to generate significant numbers of false positives, the test    [0m
+    [0;30;107m  will pass if there are more than 100 reported misalignments.              [0m
+
+    * [1;30;103mWARN[0m: The following glyphs have on-curve points which have potentially incorrect y coordinates:
+	* uni13A1: X=660.0,Y=-1.5 (should be at baseline 0?)
+	* uni13A1.alt: X=609.5,Y=-1.5 (should be at baseline 0?)
+	* uni13A7: X=289.0,Y=715.0 (should be at cap-height 714?)
+	* uni13AE: X=297.0,Y=715.0 (should be at cap-height 714?)
+	* uni13B2: X=543.0,Y=-1.5 (should be at baseline 0?)
+	* uni13BA: X=856.0,Y=713.0 (should be at cap-height 714?)
+	* uni13BA: X=940.0,Y=713.0 (should be at cap-height 714?)
+	* uni13C0: X=502.0,Y=714.5 (should be at cap-height 714?)
+	* uni13C9: X=1121.0,Y=713.0 (should be at cap-height 714?)
+	* uni13CB: X=462.5,Y=713.0 (should be at cap-height 714?) and 11 more. [code: found-misalignments]
+
+
+    Result: [1;30;103mWARN[0m
+
+
+Total:
+
+    [1;97;101mERROR[0m: 0
+    [1;91;107mFAIL[0m: 2
+    [1;30;103mWARN[0m: 1
+    [0;36;107mINFO[0m: 2
+    [0;34;107mSKIP[0m: 16
+    [0;32;107mPASS[0m: 56
+
+
+DONE!
+
+    [1;30;107mMeaning of check results:[0m
+
+    An [1;97;101mERROR[0m is something wrong with FontBakery itself, possibly a bug.
+    A [1;91;107mFAIL[0m is a problem with the font that must be fixed.
+    A [1;30;103mWARN[0m is something that you should consider addressing.
+    An [0;36;107mINFO[0m result simply prints something useful. Typically stats.
+    A [0;32;107mPASS[0m means the font looks good for the given checking routine.
+    And a [0;34;107mSKIP[0m happens when the check does not apply to the given font.
+
+    If you get [1;97;101mERROR[0ms, please help us improve the tool by reporting them at
+    [1;36;107mhttps://github.com/googlefonts/fontbakery/issues[0m
+
+    (but other kinds of bug reports and/or
+     feature requests are also always welcome, of course!)
+

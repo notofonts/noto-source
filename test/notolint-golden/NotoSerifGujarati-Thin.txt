@@ -1,0 +1,13 @@
+---
+Automatic testing for 'instance_ttf,NotoSerifGujarati-Thin.ttf', Version 2.002:
+E <name/family> The family is 'Noto Serif Gujarati Thin' but was expecting 'Noto Serif Gujarati Th'
+E <bounds/glyph/ymin> Real yMin for glyph 144 (rakar_rrVocalicMatra-gujarati) is -456, which is lower than the font's sTypoDescent (-450), resulting in clipping.
+E <bounds/glyph/ymin> Real yMin for glyph 146 (rakar_lVocalicMatra-gujarati) is -491, which is lower than the font's sTypoDescent (-450), resulting in clipping.
+E <bounds/glyph/ymin> Real yMin for glyph 147 (rakar_llVocalicMatra-gujarati) is -545, which is lower than the font's sTypoDescent (-450), resulting in clipping.
+E <bounds/font/ymin> Real yMin is -545, but it should be greater than or equal to the value of Descent in 'hhea' table, which is -450.
+E <paths/intersection> The glyph 'om-gujarati' has intersecting outlines: start and end segments match: (366.0, 343.0)
+W <advances/comma_period> The advance of U+002c (comma, glyph 372) is 259, but expected 239.
+Found 6 errors.
+Found 1 warning.
+------
+Finished linting 1 file.

@@ -1,0 +1,21 @@
+---
+Automatic testing for 'instance_ttf,NotoSerifDisplay-ExtraCondensedLightItalic.ttf', Version 2.003:
+E <name/family> The family is 'Noto Serif Display ExtraCondensed Light' but was expecting 'Noto Serif Disp ExtCond Light'
+E <cmap/variants> Font contains 1 characters with standard variants, but has no variation selector cmap table (0030).
+E <bounds/glyph/ymin> Real yMin for glyph 624 (uni0489) is -325, which is lower than the font's sTypoDescent (-293), resulting in clipping.
+E <bounds/glyph/ymin> Real yMin for glyph 2446 (scriptg) is -389, which is lower than the font's sTypoDescent (-293), resulting in clipping.
+E <bounds/glyph/ymin> Real yMin for glyph 3070 (uni1AB5) is -468, which is lower than the font's sTypoDescent (-293), resulting in clipping.
+E <bounds/glyph/ymin> Real yMin for glyph 3075 (uni1ABA) is -296, which is lower than the font's sTypoDescent (-293), resulting in clipping.
+E <bounds/glyph/ymin> Real yMin for glyph 3168 (uniA670) is -345, which is lower than the font's sTypoDescent (-293), resulting in clipping.
+E <bounds/glyph/ymin> Real yMin for glyph 3169 (uniA671) is -321, which is lower than the font's sTypoDescent (-293), resulting in clipping.
+E <bounds/glyph/ymin> Real yMin for glyph 3170 (uniA672) is -336, which is lower than the font's sTypoDescent (-293), resulting in clipping.
+E <bounds/font/ymin> Real yMin is -468, but it should be greater than or equal to the value of Descent in 'hhea' table, which is -293.
+E <paths/intersection> The glyph 'uni04CE' has intersecting outlines: start and end segments match: (641.0, 14.0)
+E <paths/intersection> The glyph 'uni04FD' has intersecting outlines: start and end segments match: (353.0, 0.0)
+E <paths/intersection> The glyph 'uni2DF5' has intersecting outlines: start and end segments match: (169.0, 782.0)
+E <paths/intersection> The glyph 'uniA7C5' has intersecting outlines: start and end segments match: (2.0, 158.0)
+W <advances/comma_period> The advance of U+002c (comma, glyph 15) is 174, but expected 175.
+Found 14 errors.
+Found 1 warning.
+------
+Finished linting 1 file.

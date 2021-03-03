@@ -1,0 +1,12 @@
+---
+Automatic testing for 'instance_ttf,NotoSansArmenian-CondensedExtraBold.ttf', Version 2.005:
+E <name/copyright> The copyright is 'Copyright 2015-2019 Google LLC. All Rights Reserved.' but was expecting it to match '^Copyright 20\d\d Google (Inc|LLC)\.* All Rights Reserved\.$'
+E <name/family> The family is 'Noto Sans Armenian Condensed ExtraBold' but was expecting 'Noto Sans Armenian Cond ExtBd'
+E <cmap/script_required> The following 13 characters are missing from the font: 0028..0029, 002C, 002E, 003F, 00A7, 00AB, 00BB, 02BB, 2014, 2019, 2024, 2026.
+W <cmap/script_unexpected> The following 2 chars were not expected in the font: 0308, 25CC
+E <paths/intersection> The glyph 'uni0571' has intersecting outlines: start and end segments match: (395.0, 0.0)
+E <paths/intersection> The glyph 'uniFB13' has intersecting outlines: start and end segments match: (811.0, 559.0)
+Found 5 errors.
+Found 1 warning.
+------
+Finished linting 1 file.

@@ -1,0 +1,13 @@
+---
+Automatic testing for 'instance_ttf,NotoRashiHebrew-Bold.ttf', Version 1.002:
+E <name/manufacturer> The manufacturer is 'Google LLC' but was expecting 'Monotype Imaging Inc.'
+E <name/designer> The designer is 'Borys Kosmynka' but was expecting 'Monotype Design Team'
+E <name/description> The description is 'Designed by Borys Kosmynka' but was expecting it to match '^Designed by Monotype design team.$'
+E <name/designer_url> The designer url is 'http://www.kosmynka.com/' but was expecting 'http://www.monotype.com/studio'
+E <cmap/required> U+000D is not mapped in cmap, but it should be (see https://www.microsoft.com/typography/otspec/recom.htm).
+E <cmap/script_required> The following 71 characters are missing from the font: 000D, 0022, 0027..0029, 002C, 003F, 0307..0308, 034F, 05EF, 200C..2010, 2019, 201D, 2026, 20AA, 2135..2138, 25CC, FB1D..FB36, FB38..FB3C, FB3E, FB40..FB41, FB43..FB44, FB46..FB4F.
+E <head/os2/panose/serif> Panose serif value is 2 but expected 11-15
+E <paths/intersection> The glyph 'uni05E1' has intersecting outlines: start and end segments match: (66.0, 223.0)
+Found 8 errors.
+------
+Finished linting 1 file.

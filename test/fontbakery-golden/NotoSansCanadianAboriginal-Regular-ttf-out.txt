@@ -1,0 +1,202 @@
+Start ... running 71 individual check executions.
+ >> [1;35;107mcom.google.fonts/check/unicode_range_bits[0m
+    [0;36;107mEnsure UnicodeRange bits are properly set.[0m
+    with NotoSansCanadianAboriginal-Regular.ttf
+
+    [1;35;107m  Rationale:                                                                [0m
+    [0;30;107m  When the UnicodeRange bits on the OS/2 table are not properly set, some   [0m
+    [0;30;107m  programs running on Windows may not recognize the font and use a system   [0m
+    [0;30;107m  fallback font instead. For that reason, this check calculates the proper  [0m
+    [0;30;107m  settings by inspecting the glyphs declared on the cmap table and then     [0m
+    [0;30;107m  ensures that their corresponding ranges are enabled.                      [0m
+
+    * [1;30;103mWARN[0m: UnicodeRange bit 0 "Basic Latin" should be 1 because cmap has 3 of the 128 codepoints in this range. [code: bad-range-bit]
+    * [1;30;103mWARN[0m: UnicodeRange bit 1 "Latin-1 Supplement" should be 1 because cmap has 1 of the 128 codepoints in this range. [code: bad-range-bit]
+    * [1;30;103mWARN[0m: UnicodeRange bit 2 "Latin Extended-A" should be 1 because cmap has 1 of the 128 codepoints in this range. [code: bad-range-bit]
+    * [1;30;103mWARN[0m: UnicodeRange bit 5 "Spacing Modifier Letters" should be 1 because cmap has 5 of the 112 codepoints in this range. [code: bad-range-bit]
+    * [1;30;103mWARN[0m: UnicodeRange bit 6 "Combining Diacritical Marks" should be 1 because cmap has 1 of the 176 codepoints in this range. [code: bad-range-bit]
+    * [1;30;103mWARN[0m: UnicodeRange bit 67 "Arabic Presentation Forms-B" should be 1 because cmap has 1 of the 144 codepoints in this range. [code: bad-range-bit]
+
+
+    Result: [1;30;103mWARN[0m
+
+ >> [1;35;107mcom.google.fonts/check/required_tables[0m
+    [0;36;107mFont contains all required tables?[0m
+    with NotoSansCanadianAboriginal-Regular.ttf
+
+    [1;35;107m  Rationale:                                                                [0m
+    [0;30;107m  Depending on the typeface and coverage of a font, certain tables are      [0m
+    [0;30;107m  recommended for optimum quality. For example, the performance of a        [0m
+    [0;30;107m  non-linear font is improved if the VDMX, LTSH, and hdmx tables are        [0m
+    [0;30;107m  present. Non-monospaced Latin fonts should have a kern table. A gasp      [0m
+    [0;30;107m  table is necessary if a designer wants to influence the sizes at which    [0m
+    [0;30;107m  grayscaling is used under Windows. A DSIG table containing a digital      [0m
+    [0;30;107m  signature helps ensure the integrity of the font file. Etc.               [0m
+
+    * [0;36;107mINFO[0m: This font contains the following optional tables [loca, GPOS, GSUB, gasp]
+
+
+    Result: [0;36;107mINFO[0m
+
+ >> [1;35;107mcom.google.fonts/check/superfamily/list[0m
+    [0;36;107mList all superfamily filepaths[0m
+    with NotoSansCanadianAboriginal-Regular.ttf
+
+    [1;35;107m  Rationale:                                                                [0m
+    [0;30;107m  This is a merely informative check that lists all sibling families        [0m
+    [0;30;107m  detected by fontbakery.                                                   [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  Only the fontfiles in these directories will be considered in             [0m
+    [0;30;107m  superfamily-level checks.                                                 [0m
+
+    * [0;36;107mINFO[0m: . [code: family-path]
+
+
+    Result: [0;36;107mINFO[0m
+
+ >> [1;35;107mcom.google.fonts/check/post_table_version[0m
+    [0;36;107mFont has correct post table version?[0m
+    with NotoSansCanadianAboriginal-Regular.ttf
+
+    [1;35;107m  Rationale:                                                                [0m
+    [0;30;107m  Apple recommends against using 'post' table format 3 under most           [0m
+    [0;30;107m  circumstances, as it can create problems with some printer drivers and    [0m
+    [0;30;107m  PDF documents. The savings in disk space usually does not justify the     [0m
+    [0;30;107m  potential loss in functionality.                                          [0m
+    [0;30;107m  Source: https://developer.apple.com/fonts/TrueType-Reference-Manual/RM06/Chap6post.html[0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  The CFF2 table does not contain glyph names, so variable OTFs should be   [0m
+    [0;30;107m  allowed to use post table version 2.                                      [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  This check expects:                                                       [0m
+    [0;30;107m  - Version 2 for TTF or OTF CFF2 Variable fonts                            [0m
+    [0;30;107m  - Version 3 for OTF                                                       [0m
+
+    * [1;91;107mFAIL[0m: Post table should be version 2 instead of 3.0.
+
+
+    Result: [1;91;107mFAIL[0m
+
+ >> [1;35;107mcom.google.fonts/check/monospace[0m
+    [0;36;107mChecking correctness of monospaced metadata.[0m
+    with NotoSansCanadianAboriginal-Regular.ttf
+
+    [1;35;107m  Rationale:                                                                [0m
+    [0;30;107m  There are various metadata in the OpenType spec to specify if a font is   [0m
+    [0;30;107m  monospaced or not. If the font is not truly monospaced, then no           [0m
+    [0;30;107m  monospaced metadata should be set (as sometimes they mistakenly are...)   [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  Requirements for monospace fonts:                                         [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  * post.isFixedPitch - "Set to 0 if the font is proportionally spaced,     [0m
+    [0;30;107m  non-zero if the font is not proportionally spaced (monospaced)"           [0m
+    [0;30;107m    www.microsoft.com/typography/otspec/post.htm                            [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  * hhea.advanceWidthMax must be correct, meaning no glyph's width value is [0m
+    [0;30;107m  greater.                                                                  [0m
+    [0;30;107m    www.microsoft.com/typography/otspec/hhea.htm                            [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  * OS/2.panose.bProportion must be set to 9 (monospace). Spec says: "The   [0m
+    [0;30;107m  PANOSE definition contains ten digits each of which currently describes   [0m
+    [0;30;107m  up to sixteen variations. Windows uses bFamilyType, bSerifStyle and       [0m
+    [0;30;107m  bProportion in the font mapper to determine family type. It also uses     [0m
+    [0;30;107m  bProportion to determine if the font is monospaced."                      [0m
+    [0;30;107m    www.microsoft.com/typography/otspec/os2.htm#pan                         [0m
+    [0;30;107m    monotypecom-test.monotype.de/services/pan2                              [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  * OS/2.xAvgCharWidth must be set accurately.                              [0m
+    [0;30;107m    "OS/2.xAvgCharWidth is used when rendering monospaced fonts, at least   [0m
+    [0;30;107m  by Windows GDI"                                                           [0m
+    [0;30;107m    http://typedrawers.com/discussion/comment/15397/#Comment_15397          [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  Also we should report an error for glyphs not of average width.           [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  Please also note:                                                         [0m
+    [0;30;107m  Thomas Phinney told us that a few years ago (as of December 2019), if you [0m
+    [0;30;107m  gave a font a monospace flag in Panose, Microsoft Word would ignore the   [0m
+    [0;30;107m  actual advance widths and treat it as monospaced. Source:                 [0m
+    [0;30;107m  https://typedrawers.com/discussion/comment/45140/#Comment_45140           [0m
+
+    * [1;91;107mFAIL[0m: On monospaced fonts, the value of post.isFixedPitch must be set to a non-zero value (meaning 'fixed width monospaced'), but got 0 instead. [code: mono-bad-post-isFixedPitch]
+    * [1;91;107mFAIL[0m: On monospaced fonts, the value of OS/2.panose.bProportion must be set to 9 (proportion: monospaced), but got 2 instead. [code: mono-bad-panose-proportion]
+    * [1;30;103mWARN[0m: Font is monospaced but 722 glyphs (97.04301075268818%) have a different width. You should check the widths of: ['uni000D', 'space', 'dotlessi', 'caron', 'breve', 'dotaccent', 'ring', 'ogonek', 'uni1400', 'uni1401', 'uni1402', 'uni1403', 'uni1404', 'uni1405', 'uni1406', 'uni1407', 'uni1408', 'uni1409', 'uni140A', 'uni140B', 'uni140C', 'uni140D', 'uni140E', 'uni140F', 'uni1410', 'uni1411', 'uni1412', 'uni1413', 'uni1414', 'uni1415', 'uni1416', 'uni1417', 'uni1418', 'uni1419', 'uni141A', 'uni141B', 'uni141C', 'uni141D', 'uni141E', 'uni141F', 'uni1420', 'uni1421', 'uni1422', 'uni1423', 'uni1424', 'uni1425', 'uni1426', 'uni1427', 'uni1428', 'uni1429', 'uni142A', 'uni142B', 'uni142C', 'uni142D', 'uni142E', 'uni142F', 'uni1430', 'uni1431', 'uni1432', 'uni1433', 'uni1434', 'uni1435', 'uni1436', 'uni1437', 'uni1438', 'uni1439', 'uni143A', 'uni143B', 'uni143C', 'uni143D', 'uni143E', 'uni143F', 'uni1440', 'uni1441', 'uni1442', 'uni1443', 'uni1444', 'uni1445', 'uni1446', 'uni1447', 'uni1448', 'uni1449', 'uni144A', 'uni144B', 'uni1450', 'uni1451', 'uni1452', 'uni1453', 'uni1454', 'uni1455', 'uni1456', 'uni1457', 'uni1458', 'uni1459', 'uni145A', 'uni145B', 'uni145C', 'uni145D', 'uni145E', 'uni145F', 'uni1460', 'uni1461', 'uni1462', 'uni1463', 'uni1464', 'uni1465', 'uni1466', 'uni1467', 'uni1468', 'uni1469', 'uni146A', 'uni146B', 'uni146C', 'uni146D', 'uni146E', 'uni146F', 'uni1470', 'uni1471', 'uni1472', 'uni1473', 'uni1474', 'uni1475', 'uni1476', 'uni1477', 'uni1478', 'uni1479', 'uni147A', 'uni147B', 'uni147C', 'uni147D', 'uni147E', 'uni147F', 'uni1480', 'uni1481', 'uni1482', 'uni1483', 'uni1484', 'uni1485', 'uni1486', 'uni1487', 'uni1488', 'uni1489', 'uni148A', 'uni148B', 'uni148C', 'uni148D', 'uni148E', 'uni148F', 'uni1490', 'uni1491', 'uni1492', 'uni1493', 'uni1494', 'uni1495', 'uni1496', 'uni1497', 'uni1498', 'uni1499', 'uni149A', 'uni149B', 'uni149C', 'uni149D', 'uni149E', 'uni149F', 'uni14A0', 'uni14A1', 'uni14A2', 'uni14A3', 'uni14A4', 'uni14A5', 'uni14A6', 'uni14A7', 'uni14A8', 'uni14A9', 'uni14AA', 'uni14AB', 'uni14AC', 'uni14AD', 'uni14AE', 'uni14AF', 'uni14B0', 'uni14B1', 'uni14B2', 'uni14B3', 'uni14B4', 'uni14B5', 'uni14B6', 'uni14B7', 'uni14B8', 'uni14B9', 'uni14BA', 'uni14BB', 'uni14BC', 'uni14BD', 'uni14BE', 'uni14BF', 'uni14C0', 'uni14C1', 'uni14C2', 'uni14C3', 'uni14C4', 'uni14C5', 'uni14C6', 'uni14C7', 'uni14C8', 'uni14C9', 'uni14CA', 'uni14CB', 'uni14CC', 'uni14CD', 'uni14CE', 'uni14CF', 'uni14D0', 'uni14D1', 'uni14D2', 'uni14D3', 'uni14D4', 'uni14D5', 'uni14D6', 'uni14D7', 'uni14D8', 'uni14D9', 'uni14DA', 'uni14DB', 'uni14DC', 'uni14DD', 'uni14DE', 'uni14DF', 'uni14E0', 'uni14E1', 'uni14E2', 'uni14E3', 'uni14E4', 'uni14E5', 'uni14E6', 'uni14E7', 'uni14E8', 'uni14E9', 'uni14EA', 'uni14EB', 'uni14EC', 'uni14ED', 'uni14EE', 'uni14EF', 'uni14F0', 'uni14F1', 'uni14F2', 'uni14F3', 'uni14F4', 'uni14F5', 'uni14F6', 'uni14F7', 'uni14F8', 'uni14F9', 'uni14FA', 'uni14FB', 'uni14FC', 'uni14FD', 'uni14FE', 'uni14FF', 'uni1500', 'uni1501', 'uni1502', 'uni1503', 'uni1504', 'uni1505', 'uni1506', 'uni1507', 'uni1508', 'uni1509', 'uni150A', 'uni150B', 'uni150C', 'uni150D', 'uni150E', 'uni150F', 'uni1510', 'uni1511', 'uni1512', 'uni1513', 'uni1514', 'uni1515', 'uni1516', 'uni1517', 'uni1518', 'uni1519', 'uni151A', 'uni151B', 'uni151C', 'uni151D', 'uni151E', 'uni151F', 'uni1520', 'uni1521', 'uni1522', 'uni1523', 'uni1524', 'uni1525', 'uni1526', 'uni1527', 'uni1528', 'uni1529', 'uni152A', 'uni152B', 'uni152C', 'uni152D', 'uni152E', 'uni152F', 'uni1530', 'uni1531', 'uni1532', 'uni1533', 'uni1534', 'uni1535', 'uni1536', 'uni1537', 'uni1538', 'uni1539', 'uni153A', 'uni153B', 'uni153C', 'uni153D', 'uni153E', 'uni153F', 'uni1540', 'uni1541', 'uni1542', 'uni1543', 'uni1544', 'uni1545', 'uni1546', 'uni1547', 'uni1548', 'uni1549', 'uni154A', 'uni154B', 'uni154C', 'uni154D', 'uni154E', 'uni154F', 'uni1550', 'uni1551', 'uni1552', 'uni1553', 'uni1554', 'uni1555', 'uni1556', 'uni1557', 'uni1558', 'uni1559', 'uni155A', 'uni155B', 'uni155C', 'uni155D', 'uni1564', 'uni1565', 'uni1566', 'uni1567', 'uni1568', 'uni1569', 'uni156A', 'uni156D', 'uni156E', 'uni156F', 'uni1572', 'uni1573', 'uni1574', 'uni1575', 'uni1576', 'uni1577', 'uni1578', 'uni1579', 'uni157A', 'uni157B', 'uni157C', 'uni157D', 'uni157E', 'uni157F', 'uni1580', 'uni1581', 'uni1582', 'uni1583', 'uni1584', 'uni1585', 'uni1586', 'uni1587', 'uni1588', 'uni1589', 'uni158A', 'uni158B', 'uni158C', 'uni158D', 'uni158E', 'uni158F', 'uni1590', 'uni1591', 'uni1592', 'uni1593', 'uni1594', 'uni1595', 'uni1596', 'uni1597', 'uni1598', 'uni1599', 'uni159A', 'uni159B', 'uni159C', 'uni159D', 'uni159E', 'uni159F', 'uni15A0', 'uni15A1', 'uni15A2', 'uni15A3', 'uni15A4', 'uni15A5', 'uni15A6', 'uni15A7', 'uni15A8', 'uni15A9', 'uni15AA', 'uni15AB', 'uni15AC', 'uni15AD', 'uni15AE', 'uni15AF', 'uni15B0', 'uni15B1', 'uni15B2', 'uni15B3', 'uni15B4', 'uni15B5', 'uni15B6', 'uni15B7', 'uni15B8', 'uni15B9', 'uni15BA', 'uni15BB', 'uni15BC', 'uni15BD', 'uni15BE', 'uni15BF', 'uni15C0', 'uni15C1', 'uni15C2', 'uni15C3', 'uni15C4', 'uni15C5', 'uni15C6', 'uni15C7', 'uni15C8', 'uni15C9', 'uni15CA', 'uni15CB', 'uni15CC', 'uni15CD', 'uni15CE', 'uni15CF', 'uni15D0', 'uni15D1', 'uni15D2', 'uni15D3', 'uni15D4', 'uni15D5', 'uni15D6', 'uni15D7', 'uni15D8', 'uni15D9', 'uni15DA', 'uni15DB', 'uni15DE', 'uni15DF', 'uni15E0', 'uni15E1', 'uni15E4', 'uni15E5', 'uni15E6', 'uni15E7', 'uni15EA', 'uni15EB', 'uni15EC', 'uni15ED', 'uni15EE', 'uni15EF', 'uni15F0', 'uni15F1', 'uni15F2', 'uni15F3', 'uni15F4', 'uni15F5', 'uni15F6', 'uni15F7', 'uni15F8', 'uni15F9', 'uni15FA', 'uni15FB', 'uni15FC', 'uni15FD', 'uni15FE', 'uni15FF', 'uni1600', 'uni1601', 'uni1602', 'uni1603', 'uni1604', 'uni1605', 'uni1606', 'uni1607', 'uni1608', 'uni1609', 'uni160A', 'uni160B', 'uni160C', 'uni160D', 'uni160E', 'uni160F', 'uni1610', 'uni1611', 'uni1612', 'uni1613', 'uni1614', 'uni1615', 'uni1616', 'uni1617', 'uni1618', 'uni1619', 'uni161A', 'uni161B', 'uni161C', 'uni161D', 'uni161E', 'uni161F', 'uni1620', 'uni1621', 'uni1622', 'uni1623', 'uni1624', 'uni1625', 'uni1626', 'uni1627', 'uni1628', 'uni1629', 'uni162A', 'uni162B', 'uni162C', 'uni162D', 'uni162E', 'uni162F', 'uni1630', 'uni1631', 'uni1632', 'uni1633', 'uni1634', 'uni1635', 'uni1636', 'uni1637', 'uni1638', 'uni1639', 'uni163A', 'uni163B', 'uni163C', 'uni163D', 'uni163E', 'uni163F', 'uni1640', 'uni1641', 'uni1642', 'uni1643', 'uni1644', 'uni1645', 'uni1646', 'uni1647', 'uni1648', 'uni1649', 'uni164A', 'uni164B', 'uni164C', 'uni164D', 'uni164E', 'uni164F', 'uni1650', 'uni1651', 'uni1652', 'uni1653', 'uni1654', 'uni1655', 'uni1656', 'uni1657', 'uni1658', 'uni1659', 'uni165A', 'uni165B', 'uni165C', 'uni165D', 'uni165E', 'uni165F', 'uni1660', 'uni1661', 'uni1662', 'uni1663', 'uni1664', 'uni1665', 'uni1666', 'uni1667', 'uni1668', 'uni1669', 'uni166A', 'uni166B', 'uni166C', 'uni166D', 'uni166E', 'uni166F', 'uni1670', 'uni1671', 'uni1672', 'uni1673', 'uni1674', 'uni1675', 'uni1676', 'uni1677', 'uni1678', 'uni1679', 'uni167A', 'uni167B', 'uni167C', 'uni167D', 'uni167E', 'uni167F', 'uni18B0', 'uni18B1', 'uni18B2', 'uni18B3', 'uni18B4', 'uni18B5', 'uni18B6', 'uni18B7', 'uni18B8', 'uni18B9', 'uni18BA', 'uni18BB', 'uni18BC', 'uni18BD', 'uni18BE', 'uni18BF', 'uni18C0', 'uni18C1', 'uni18C2', 'uni18C3', 'uni18C4', 'uni18C5', 'uni18C6', 'uni18C7', 'uni18C8', 'uni18C9', 'uni18CA', 'uni18CB', 'uni18CC', 'uni18CD', 'uni18CE', 'uni18CF', 'uni18D0', 'uni18D1', 'uni18D2', 'uni18D3', 'uni18D4', 'uni18D5', 'uni18D6', 'uni18D7', 'uni18D8', 'uni18D9', 'uni18DA', 'uni18DB', 'uni18DC', 'uni18DD', 'uni18DE', 'uni18DF', 'uni18E0', 'uni18E1', 'uni18E2', 'uni18E3', 'uni18E4', 'uni18E5', 'uni18E6', 'uni18E7', 'uni18E8', 'uni18E9', 'uni18EA', 'uni18EB', 'uni18EC', 'uni18ED', 'uni18EE', 'uni18EF', 'uni18F0', 'uni18F1', 'uni18F2', 'uni18F3', 'uni18F4', 'uni18F5', 'glyph00720', 'glyph00721', 'glyph00722', 'glyph00723', 'glyph00724', 'glyph00725', 'glyph00726', 'glyph00727', 'glyph00728', 'glyph00729', 'glyph00730', 'glyph00731', 'glyph00732', 'glyph00733', 'glyph00734', 'glyph00735', 'glyph00736', 'glyph00737', 'glyph00738', 'glyph00739', 'glyph00740', 'glyph00741', 'glyph00742', 'uni0307'] [code: mono-outliers]
+
+
+    Result: [1;91;107mFAIL[0m
+
+ >> [1;35;107mcom.google.fonts/check/dsig[0m
+    [0;36;107mDoes the font have a DSIG table?[0m
+    with NotoSansCanadianAboriginal-Regular.ttf
+
+    [1;35;107m  Rationale:                                                                [0m
+    [0;30;107m  Microsoft Office 2013 and below products expect fonts to have a digital   [0m
+    [0;30;107m  signature declared in a DSIG table in order to implement OpenType         [0m
+    [0;30;107m  features. The EOL date for Microsoft Office 2013 products is 4/11/2023.   [0m
+    [0;30;107m  This issue does not impact Microsoft Office 2016 and above products.      [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  This checks verifies that this signature is available in the font.        [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  A fake signature is enough to address this issue. If needed, a dummy      [0m
+    [0;30;107m  table can be added to the font with the `gftools fix-dsig` script         [0m
+    [0;30;107m  available at https://github.com/googlefonts/gftools                       [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  Reference: https://github.com/googlefonts/fontbakery/issues/1845          [0m
+
+    * [1;91;107mFAIL[0m: This font lacks a digital signature (DSIG table). Some applications may require one (even if only a dummy placeholder) in order to work properly. You can add a DSIG table by running the `gftools fix-dsig` script. [code: lacks-signature]
+
+
+    Result: [1;91;107mFAIL[0m
+
+ >> [1;35;107mcom.google.fonts/check/gdef_spacing_marks[0m
+    [0;36;107mCheck mark characters are in GDEF mark glyph class)[0m
+    with NotoSansCanadianAboriginal-Regular.ttf
+
+    [1;35;107m  Rationale:                                                                [0m
+    [0;30;107m  Glyphs in the GDEF mark glyph class should be non-spacing.                [0m
+    [0;30;107m  Spacing glyphs in the GDEF mark glyph class may have incorrect anchor     [0m
+    [0;30;107m  positioning that was only intended for building composite glyphs during   [0m
+    [0;30;107m  design.                                                                   [0m
+
+    * [1;30;103mWARN[0m: The following spacing glyphs may be in the GDEF mark glyph class by mistake:
+	 uni0307 [code: spacing-mark-glyphs]
+
+
+    Result: [1;30;103mWARN[0m
+
+ >> [1;35;107mcom.google.fonts/check/gpos_kerning_info[0m
+    [0;36;107mDoes GPOS table have kerning information?[0m
+    with NotoSansCanadianAboriginal-Regular.ttf
+
+    * [1;30;103mWARN[0m: GPOS table lacks kerning information. [code: lacks-kern-info]
+
+
+    Result: [1;30;103mWARN[0m
+
+
+Total:
+
+    [1;97;101mERROR[0m: 0
+    [1;91;107mFAIL[0m: 3
+    [1;30;103mWARN[0m: 3
+    [0;36;107mINFO[0m: 2
+    [0;34;107mSKIP[0m: 20
+    [0;32;107mPASS[0m: 43
+
+
+DONE!
+
+    [1;30;107mMeaning of check results:[0m
+
+    An [1;97;101mERROR[0m is something wrong with FontBakery itself, possibly a bug.
+    A [1;91;107mFAIL[0m is a problem with the font that must be fixed.
+    A [1;30;103mWARN[0m is something that you should consider addressing.
+    An [0;36;107mINFO[0m result simply prints something useful. Typically stats.
+    A [0;32;107mPASS[0m means the font looks good for the given checking routine.
+    And a [0;34;107mSKIP[0m happens when the check does not apply to the given font.
+
+    If you get [1;97;101mERROR[0ms, please help us improve the tool by reporting them at
+    [1;36;107mhttps://github.com/googlefonts/fontbakery/issues[0m
+
+    (but other kinds of bug reports and/or
+     feature requests are also always welcome, of course!)
+

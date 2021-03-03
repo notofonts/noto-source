@@ -1,0 +1,20 @@
+---
+Automatic testing for 'instance_ttf,NotoSerifGujarati-SemiBold.ttf', Version 2.002:
+E <name/family> The family is 'Noto Serif Gujarati SemiBold' but was expecting 'Noto Serif Gujarati SmBd'
+E <bounds/glyph/ymin> Real yMin for glyph 78 (llVocalicMatra-gujarati) is -457, which is lower than the font's sTypoDescent (-450), resulting in clipping.
+E <bounds/glyph/ymin> Real yMin for glyph 141 (rakar_uMatra-gujarati) is -462, which is lower than the font's sTypoDescent (-450), resulting in clipping.
+E <bounds/glyph/ymin> Real yMin for glyph 142 (rakar_uuMatra-gujarati) is -478, which is lower than the font's sTypoDescent (-450), resulting in clipping.
+E <bounds/glyph/ymin> Real yMin for glyph 143 (rakar_rVocalicMatra-gujarati) is -451, which is lower than the font's sTypoDescent (-450), resulting in clipping.
+E <bounds/glyph/ymin> Real yMin for glyph 144 (rakar_rrVocalicMatra-gujarati) is -536, which is lower than the font's sTypoDescent (-450), resulting in clipping.
+E <bounds/glyph/ymin> Real yMin for glyph 146 (rakar_lVocalicMatra-gujarati) is -556, which is lower than the font's sTypoDescent (-450), resulting in clipping.
+E <bounds/glyph/ymin> Real yMin for glyph 147 (rakar_llVocalicMatra-gujarati) is -622, which is lower than the font's sTypoDescent (-450), resulting in clipping.
+E <bounds/font/ymin> Real yMin is -622, but it should be greater than or equal to the value of Descent in 'hhea' table, which is -450.
+E <paths/intersection> The glyph 'dh_ra-gujarati' has intersecting outlines: start and end segments match: (402.0, 140.0)
+E <paths/intersection> The glyph 's_ttha-gujarati' has intersecting outlines: start and end segments match: (613.0, 345.0)
+E <paths/intersection> The glyph 'h_na-gujarati' has intersecting outlines: start and end segments match: (491.0, 127.0)
+E <paths/intersection> The glyph 'ss_r-gujarati' has intersecting outlines: start and end segments match: (462.0, 314.0)
+W <advances/comma_period> The advance of U+002c (comma, glyph 372) is 340, but expected 331.
+Found 13 errors.
+Found 1 warning.
+------
+Finished linting 1 file.

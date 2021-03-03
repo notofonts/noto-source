@@ -1,0 +1,230 @@
+Start ... running 77 individual check executions.
+ >> [1;35;107mcom.google.fonts/check/unicode_range_bits[0m
+    [0;36;107mEnsure UnicodeRange bits are properly set.[0m
+    with NotoSansMiao-Regular-VF.ttf
+
+    [1;35;107m  Rationale:                                                                [0m
+    [0;30;107m  When the UnicodeRange bits on the OS/2 table are not properly set, some   [0m
+    [0;30;107m  programs running on Windows may not recognize the font and use a system   [0m
+    [0;30;107m  fallback font instead. For that reason, this check calculates the proper  [0m
+    [0;30;107m  settings by inspecting the glyphs declared on the cmap table and then     [0m
+    [0;30;107m  ensures that their corresponding ranges are enabled.                      [0m
+
+    * [1;30;103mWARN[0m: UnicodeRange bit 57 "Non-Plane 0 *" should be 0 because cmap has none of the 2048 codepoints in this range. [code: bad-range-bit]
+
+
+    Result: [1;30;103mWARN[0m
+
+ >> [1;35;107mcom.google.fonts/check/family/win_ascent_and_descent[0m
+    [0;36;107mChecking OS/2 usWinAscent & usWinDescent.[0m
+    with NotoSansMiao-Regular-VF.ttf
+
+    [1;35;107m  Rationale:                                                                [0m
+    [0;30;107m  A font's winAscent and winDescent values should be greater than the head  [0m
+    [0;30;107m  table's yMax, abs(yMin) values. If they are less than these values,       [0m
+    [0;30;107m  clipping can occur on Windows platforms                                   [0m
+    [0;30;107m  (https://github.com/RedHatBrand/Overpass/issues/33).                      [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  If the font includes tall/deep writing systems such as Arabic or          [0m
+    [0;30;107m  Devanagari, the winAscent and winDescent can be greater than the yMax and [0m
+    [0;30;107m  abs(yMin) to accommodate vowel marks.                                     [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  When the win Metrics are significantly greater than the upm, the          [0m
+    [0;30;107m  linespacing can appear too loose. To counteract this, enabling the OS/2   [0m
+    [0;30;107m  fsSelection bit 7 (Use_Typo_Metrics), will force Windows to use the OS/2  [0m
+    [0;30;107m  typo values instead. This means the font developer can control the        [0m
+    [0;30;107m  linespacing with the typo values, whilst avoiding clipping by setting the [0m
+    [0;30;107m  win values to values greater than the yMax and abs(yMin).                 [0m
+
+    * [1;91;107mFAIL[0m: OS/2.usWinAscent value should be equal or greater than 1268, but got 1142 instead [code: ascent]
+    * [1;91;107mFAIL[0m: OS/2.usWinDescent value should be equal or greater than 553, but got 350 instead. [code: descent]
+
+
+    Result: [1;91;107mFAIL[0m
+
+ >> [1;35;107mcom.google.fonts/check/required_tables[0m
+    [0;36;107mFont contains all required tables?[0m
+    with NotoSansMiao-Regular-VF.ttf
+
+    [1;35;107m  Rationale:                                                                [0m
+    [0;30;107m  Depending on the typeface and coverage of a font, certain tables are      [0m
+    [0;30;107m  recommended for optimum quality. For example, the performance of a        [0m
+    [0;30;107m  non-linear font is improved if the VDMX, LTSH, and hdmx tables are        [0m
+    [0;30;107m  present. Non-monospaced Latin fonts should have a kern table. A gasp      [0m
+    [0;30;107m  table is necessary if a designer wants to influence the sizes at which    [0m
+    [0;30;107m  grayscaling is used under Windows. A DSIG table containing a digital      [0m
+    [0;30;107m  signature helps ensure the integrity of the font file. Etc.               [0m
+
+    * [0;36;107mINFO[0m: This font contains the following optional tables [loca, GPOS, GSUB]
+
+
+    Result: [0;36;107mINFO[0m
+
+ >> [1;35;107mcom.google.fonts/check/superfamily/list[0m
+    [0;36;107mList all superfamily filepaths[0m
+    with NotoSansMiao-Regular-VF.ttf
+
+    [1;35;107m  Rationale:                                                                [0m
+    [0;30;107m  This is a merely informative check that lists all sibling families        [0m
+    [0;30;107m  detected by fontbakery.                                                   [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  Only the fontfiles in these directories will be considered in             [0m
+    [0;30;107m  superfamily-level checks.                                                 [0m
+
+    * [0;36;107mINFO[0m: . [code: family-path]
+
+
+    Result: [0;36;107mINFO[0m
+
+ >> [1;35;107mcom.google.fonts/check/monospace[0m
+    [0;36;107mChecking correctness of monospaced metadata.[0m
+    with NotoSansMiao-Regular-VF.ttf
+
+    [1;35;107m  Rationale:                                                                [0m
+    [0;30;107m  There are various metadata in the OpenType spec to specify if a font is   [0m
+    [0;30;107m  monospaced or not. If the font is not truly monospaced, then no           [0m
+    [0;30;107m  monospaced metadata should be set (as sometimes they mistakenly are...)   [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  Requirements for monospace fonts:                                         [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  * post.isFixedPitch - "Set to 0 if the font is proportionally spaced,     [0m
+    [0;30;107m  non-zero if the font is not proportionally spaced (monospaced)"           [0m
+    [0;30;107m    www.microsoft.com/typography/otspec/post.htm                            [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  * hhea.advanceWidthMax must be correct, meaning no glyph's width value is [0m
+    [0;30;107m  greater.                                                                  [0m
+    [0;30;107m    www.microsoft.com/typography/otspec/hhea.htm                            [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  * OS/2.panose.bProportion must be set to 9 (monospace). Spec says: "The   [0m
+    [0;30;107m  PANOSE definition contains ten digits each of which currently describes   [0m
+    [0;30;107m  up to sixteen variations. Windows uses bFamilyType, bSerifStyle and       [0m
+    [0;30;107m  bProportion in the font mapper to determine family type. It also uses     [0m
+    [0;30;107m  bProportion to determine if the font is monospaced."                      [0m
+    [0;30;107m    www.microsoft.com/typography/otspec/os2.htm#pan                         [0m
+    [0;30;107m    monotypecom-test.monotype.de/services/pan2                              [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  * OS/2.xAvgCharWidth must be set accurately.                              [0m
+    [0;30;107m    "OS/2.xAvgCharWidth is used when rendering monospaced fonts, at least   [0m
+    [0;30;107m  by Windows GDI"                                                           [0m
+    [0;30;107m    http://typedrawers.com/discussion/comment/15397/#Comment_15397          [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  Also we should report an error for glyphs not of average width.           [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  Please also note:                                                         [0m
+    [0;30;107m  Thomas Phinney told us that a few years ago (as of December 2019), if you [0m
+    [0;30;107m  gave a font a monospace flag in Panose, Microsoft Word would ignore the   [0m
+    [0;30;107m  actual advance widths and treat it as monospaced. Source:                 [0m
+    [0;30;107m  https://typedrawers.com/discussion/comment/45140/#Comment_45140           [0m
+
+    * [1;91;107mFAIL[0m: On monospaced fonts, the value of post.isFixedPitch must be set to a non-zero value (meaning 'fixed width monospaced'), but got 0 instead. [code: mono-bad-post-isFixedPitch]
+    * [1;91;107mFAIL[0m: On monospaced fonts, the value of OS/2.panose.bProportion must be set to 9 (proportion: monospaced), but got 0 instead. [code: mono-bad-panose-proportion]
+    * [1;30;103mWARN[0m: Font is monospaced but 236 glyphs (64.66%) have a different width. You should check the widths of: ['CR', 'space', 'uni00A0', 'uni25CC', 'u16F00', 'u16F01', 'u16F02', 'u16F03', 'u16F04', 'u16F05', 'u16F06', 'u16F07', 'u16F08', 'u16F09', 'u16F0A', 'u16F0B', 'u16F0C', 'u16F0D', 'u16F0E', 'u16F0F', 'u16F10', 'u16F11', 'u16F12', 'u16F13', 'u16F14', 'u16F15', 'u16F16', 'u16F17', 'u16F18', 'u16F19', 'u16F1A', 'u16F1B', 'u16F1C', 'u16F1D', 'u16F1E', 'u16F1F', 'u16F20', 'u16F21', 'u16F22', 'u16F23', 'u16F24', 'u16F25', 'u16F26', 'u16F27', 'u16F28', 'u16F29', 'u16F2A', 'u16F2B', 'u16F2C', 'u16F2D', 'u16F2E', 'u16F2F', 'u16F30', 'u16F31', 'u16F32', 'u16F33', 'u16F34', 'u16F35', 'u16F36', 'u16F37', 'u16F38', 'u16F39', 'u16F3A', 'u16F3B', 'u16F3C', 'u16F3D', 'u16F3E', 'u16F3F', 'u16F40', 'u16F41', 'u16F42', 'u16F43', 'u16F44', 'u16F50', 'u16F51', 'u16F52', 'u16F53', 'u16F54', 'u16F55', 'u16F57', 'u16F58', 'u16F59', 'u16F5A', 'u16F5B', 'u16F5C', 'u16F5D', 'u16F5E', 'u16F5F', 'u16F60', 'u16F62', 'u16F63', 'u16F64', 'u16F65', 'u16F66', 'u16F67', 'u16F68', 'u16F69', 'u16F6B', 'u16F6C', 'u16F6D', 'u16F6E', 'u16F6F', 'u16F70', 'u16F71', 'u16F72', 'u16F73', 'u16F74', 'u16F75', 'u16F77', 'u16F79', 'u16F7B', 'u16F7C', 'u16F7D', 'u16F7E', 'u16F8F', 'u16F90', 'u16F91', 'u16F92', 'u16F93', 'u16F94', 'u16F95', 'u16F96', 'u16F97', 'u16F98', 'u16F99', 'u16F9A', 'u16F9B', 'u16F9C', 'u16F9D', 'u16F9E', 'u16F9F', 'u16F54.cnt', 'u16F55.cnt', 'u16F57.cnt', 'u16F58.cnt', 'u16F59.cnt', 'u16F5A.cnt', 'u16F5B.cnt', 'u16F5C.cnt', 'u16F5D.cnt', 'u16F5E.cnt', 'u16F5F.cnt', 'u16F60.cnt', 'u16F62.cnt', 'u16F63.cnt', 'u16F64.cnt', 'u16F65.cnt', 'u16F66.cnt', 'u16F67.cnt', 'u16F68.cnt', 'u16F69.cnt', 'u16F6B.cnt', 'u16F6C.cnt', 'u16F6D.cnt', 'u16F6E.cnt', 'u16F6F.cnt', 'u16F70.cnt', 'u16F71.cnt', 'u16F72.cnt', 'u16F73.cnt', 'u16F74.cnt', 'u16F75.cnt', 'u16F77.cnt', 'u16F79.cnt', 'u16F7B.cnt', 'u16F7C.cnt', 'u16F7D.cnt', 'u16F7E.cnt', 'u16F54.rht', 'u16F55.rht', 'u16F57.rht', 'u16F58.rht', 'u16F59.rht', 'u16F5A.rht', 'u16F5B.rht', 'u16F5C.rht', 'u16F5D.rht', 'u16F5E.rht', 'u16F5F.rht', 'u16F60.rht', 'u16F62.rht', 'u16F63.rht', 'u16F64.rht', 'u16F65.rht', 'u16F66.rht', 'u16F67.rht', 'u16F68.rht', 'u16F69.rht', 'u16F6B.rht', 'u16F6C.rht', 'u16F6D.rht', 'u16F6E.rht', 'u16F6F.rht', 'u16F70.rht', 'u16F71.rht', 'u16F72.rht', 'u16F73.rht', 'u16F74.rht', 'u16F75.rht', 'u16F77.rht', 'u16F79.rht', 'u16F7B.rht', 'u16F7C.rht', 'u16F7D.rht', 'u16F7E.rht', 'u16F45', 'u16F46', 'u16F47', 'u16F48', 'u16F49', 'u16F4A', 'u16F7F', 'u16F81', 'u16F82', 'u16F83', 'u16F84', 'u16F85', 'u16F86', 'u16F87', 'u16F7F.cnt', 'u16F81.cnt', 'u16F82.cnt', 'u16F83.cnt', 'u16F84.cnt', 'u16F85.cnt', 'u16F86.cnt', 'u16F87.cnt', 'u16F7F.rht', 'u16F81.rht', 'u16F82.rht', 'u16F83.rht', 'u16F84.rht', 'u16F85.rht', 'u16F86.rht', 'u16F87.rht', 'u16F4F.sp'] [code: mono-outliers]
+
+
+    Result: [1;91;107mFAIL[0m
+
+ >> [1;35;107mcom.google.fonts/check/dsig[0m
+    [0;36;107mDoes the font have a DSIG table?[0m
+    with NotoSansMiao-Regular-VF.ttf
+
+    [1;35;107m  Rationale:                                                                [0m
+    [0;30;107m  Microsoft Office 2013 and below products expect fonts to have a digital   [0m
+    [0;30;107m  signature declared in a DSIG table in order to implement OpenType         [0m
+    [0;30;107m  features. The EOL date for Microsoft Office 2013 products is 4/11/2023.   [0m
+    [0;30;107m  This issue does not impact Microsoft Office 2016 and above products.      [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  This checks verifies that this signature is available in the font.        [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  A fake signature is enough to address this issue. If needed, a dummy      [0m
+    [0;30;107m  table can be added to the font with the `gftools fix-dsig` script         [0m
+    [0;30;107m  available at https://github.com/googlefonts/gftools                       [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  Reference: https://github.com/googlefonts/fontbakery/issues/1845          [0m
+
+    * [1;91;107mFAIL[0m: This font lacks a digital signature (DSIG table). Some applications may require one (even if only a dummy placeholder) in order to work properly. You can add a DSIG table by running the `gftools fix-dsig` script. [code: lacks-signature]
+
+
+    Result: [1;91;107mFAIL[0m
+
+ >> [1;35;107mcom.google.fonts/check/gdef_mark_chars[0m
+    [0;36;107mCheck mark characters are in GDEF mark glyph class[0m
+    with NotoSansMiao-Regular-VF.ttf
+
+    [1;35;107m  Rationale:                                                                [0m
+    [0;30;107m  Mark characters should be in the GDEF mark glyph class.                   [0m
+
+    * [1;30;103mWARN[0m: The following mark characters could be in the GDEF mark glyph class:
+	 U+16F51, U+16F52, U+16F53, U+16F54, U+16F55, U+16F56, U+16F57, U+16F58, U+16F59, U+16F5A, U+16F5B, U+16F5C, U+16F5D, U+16F5E, U+16F5F, U+16F60, U+16F61, U+16F62, U+16F63, U+16F64, U+16F65, U+16F66, U+16F67, U+16F68, U+16F69, U+16F6A, U+16F6B, U+16F6C, U+16F6D, U+16F6E, U+16F6F, U+16F70, U+16F71, U+16F72, U+16F73, U+16F74, U+16F75, U+16F76, U+16F77, U+16F78, U+16F79, U+16F7A, U+16F7B, U+16F7C, U+16F7D, U+16F7E, U+16F7F, U+16F80, U+16F81, U+16F82, U+16F83, U+16F84, U+16F85, U+16F86, U+16F87, U+16F8F, U+16F90, U+16F91 and U+16F92 [code: mark-chars]
+
+
+    Result: [1;30;103mWARN[0m
+
+ >> [1;35;107mcom.google.fonts/check/gpos_kerning_info[0m
+    [0;36;107mDoes GPOS table have kerning information? This check skips monospaced fonts as defined by post.isFixedPitch value[0m
+    with NotoSansMiao-Regular-VF.ttf
+
+    * [1;30;103mWARN[0m: GPOS table lacks kerning information. [code: lacks-kern-info]
+
+
+    Result: [1;30;103mWARN[0m
+
+ >> [1;35;107mcom.google.fonts/check/outline_alignment_miss[0m
+    [0;36;107mAre there any misaligned on-curve points?[0m
+    with NotoSansMiao-Regular-VF.ttf
+
+    [1;35;107m  Rationale:                                                                [0m
+    [0;30;107m  This test heuristically looks for on-curve points which are close to, but [0m
+    [0;30;107m  do not sit on, significant boundary coordinates. For example, a point     [0m
+    [0;30;107m  which has a Y-coordinate of 1 or -1 might be a misplaced baseline point.  [0m
+    [0;30;107m  As well as the baseline, the test also checks for points near the         [0m
+    [0;30;107m  x-height (but only for lower case Latin letters), cap-height, ascender    [0m
+    [0;30;107m  and descender Y coordinates.                                              [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  Not all such misaligned curve points are a mistake, and sometimes the     [0m
+    [0;30;107m  design may call for points in locations near the boundaries. As this test [0m
+    [0;30;107m  is liable to generate significant numbers of false positives, the test    [0m
+    [0;30;107m  will pass if there are more than 100 reported misalignments.              [0m
+
+    * [1;30;103mWARN[0m: The following glyphs have on-curve points which have potentially incorrect y coordinates:
+	* u16F55: X=219.5,Y=1.5 (should be at baseline 0?)
+	* u16F56: X=65.5,Y=1.5 (should be at baseline 0?)
+	* u16F68: X=258.5,Y=1.0 (should be at baseline 0?)
+	* u16F6A: X=65.5,Y=1.5 (should be at baseline 0?)
+	* u16F6B: X=191.5,Y=1.5 (should be at baseline 0?)
+	* u16F6C: X=191.5,Y=1.5 (should be at baseline 0?)
+	* u16F6D: X=191.5,Y=1.5 (should be at baseline 0?)
+	* u16F6E: X=65.5,Y=0.5 (should be at baseline 0?)
+	* u16F6E: X=387.0,Y=2.0 (should be at baseline 0?)
+	* u16F6E: X=266.0,Y=1.0 (should be at baseline 0?) and 72 more. [code: found-misalignments]
+
+
+    Result: [1;30;103mWARN[0m
+
+
+Total:
+
+    [1;97;101mERROR[0m: 0
+    [1;91;107mFAIL[0m: 3
+    [1;30;103mWARN[0m: 4
+    [0;36;107mINFO[0m: 2
+    [0;34;107mSKIP[0m: 16
+    [0;32;107mPASS[0m: 52
+
+
+DONE!
+
+    [1;30;107mMeaning of check results:[0m
+
+    An [1;97;101mERROR[0m is something wrong with FontBakery itself, possibly a bug.
+    A [1;91;107mFAIL[0m is a problem with the font that must be fixed.
+    A [1;30;103mWARN[0m is something that you should consider addressing.
+    An [0;36;107mINFO[0m result simply prints something useful. Typically stats.
+    A [0;32;107mPASS[0m means the font looks good for the given checking routine.
+    And a [0;34;107mSKIP[0m happens when the check does not apply to the given font.
+
+    If you get [1;97;101mERROR[0ms, please help us improve the tool by reporting them at
+    [1;36;107mhttps://github.com/googlefonts/fontbakery/issues[0m
+
+    (but other kinds of bug reports and/or
+     feature requests are also always welcome, of course!)
+

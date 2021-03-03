@@ -1,0 +1,321 @@
+Start ... running 77 individual check executions.
+ >> [1;35;107mcom.google.fonts/check/unicode_range_bits[0m
+    [0;36;107mEnsure UnicodeRange bits are properly set.[0m
+    with NotoSansGrantha-Regular.ttf
+
+    [1;35;107m  Rationale:                                                                [0m
+    [0;30;107m  When the UnicodeRange bits on the OS/2 table are not properly set, some   [0m
+    [0;30;107m  programs running on Windows may not recognize the font and use a system   [0m
+    [0;30;107m  fallback font instead. For that reason, this check calculates the proper  [0m
+    [0;30;107m  settings by inspecting the glyphs declared on the cmap table and then     [0m
+    [0;30;107m  ensures that their corresponding ranges are enabled.                      [0m
+
+    * [1;30;103mWARN[0m: UnicodeRange bit 57 "Non-Plane 0 *" should be 0 because cmap has none of the 2048 codepoints in this range. [code: bad-range-bit]
+
+
+    Result: [1;30;103mWARN[0m
+
+ >> [1;35;107mcom.google.fonts/check/family/win_ascent_and_descent[0m
+    [0;36;107mChecking OS/2 usWinAscent & usWinDescent.[0m
+    with NotoSansGrantha-Regular.ttf
+
+    [1;35;107m  Rationale:                                                                [0m
+    [0;30;107m  A font's winAscent and winDescent values should be greater than the head  [0m
+    [0;30;107m  table's yMax, abs(yMin) values. If they are less than these values,       [0m
+    [0;30;107m  clipping can occur on Windows platforms                                   [0m
+    [0;30;107m  (https://github.com/RedHatBrand/Overpass/issues/33).                      [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  If the font includes tall/deep writing systems such as Arabic or          [0m
+    [0;30;107m  Devanagari, the winAscent and winDescent can be greater than the yMax and [0m
+    [0;30;107m  abs(yMin) to accommodate vowel marks.                                     [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  When the win Metrics are significantly greater than the upm, the          [0m
+    [0;30;107m  linespacing can appear too loose. To counteract this, enabling the OS/2   [0m
+    [0;30;107m  fsSelection bit 7 (Use_Typo_Metrics), will force Windows to use the OS/2  [0m
+    [0;30;107m  typo values instead. This means the font developer can control the        [0m
+    [0;30;107m  linespacing with the typo values, whilst avoiding clipping by setting the [0m
+    [0;30;107m  win values to values greater than the yMax and abs(yMin).                 [0m
+
+    * [1;91;107mFAIL[0m: OS/2.usWinDescent value should be equal or greater than 1755, but got 534 instead. [code: descent]
+
+
+    Result: [1;91;107mFAIL[0m
+
+ >> [1;35;107mcom.google.fonts/check/whitespace_glyphnames[0m
+    [0;36;107mFont has **proper** whitespace glyph names?[0m
+    with NotoSansGrantha-Regular.ttf
+
+    [1;35;107m  Rationale:                                                                [0m
+    [0;30;107m  This check enforces adherence to recommended whitespace (codepoints 0020  [0m
+    [0;30;107m  and 00A0) glyph names according to the Adobe Glyph List.                  [0m
+
+    * [1;30;103mWARN[0m: Glyph 0x00A0 is called "nbspace": Change to "uni00A0" [code: not-recommended-00a0]
+
+
+    Result: [1;30;103mWARN[0m
+
+ >> [1;35;107mcom.google.fonts/check/required_tables[0m
+    [0;36;107mFont contains all required tables?[0m
+    with NotoSansGrantha-Regular.ttf
+
+    [1;35;107m  Rationale:                                                                [0m
+    [0;30;107m  Depending on the typeface and coverage of a font, certain tables are      [0m
+    [0;30;107m  recommended for optimum quality. For example, the performance of a        [0m
+    [0;30;107m  non-linear font is improved if the VDMX, LTSH, and hdmx tables are        [0m
+    [0;30;107m  present. Non-monospaced Latin fonts should have a kern table. A gasp      [0m
+    [0;30;107m  table is necessary if a designer wants to influence the sizes at which    [0m
+    [0;30;107m  grayscaling is used under Windows. A DSIG table containing a digital      [0m
+    [0;30;107m  signature helps ensure the integrity of the font file. Etc.               [0m
+
+    * [0;36;107mINFO[0m: This font contains the following optional tables [loca, GPOS, GSUB]
+
+
+    Result: [0;36;107mINFO[0m
+
+ >> [1;35;107mcom.google.fonts/check/superfamily/list[0m
+    [0;36;107mList all superfamily filepaths[0m
+    with NotoSansGrantha-Regular.ttf
+
+    [1;35;107m  Rationale:                                                                [0m
+    [0;30;107m  This is a merely informative check that lists all sibling families        [0m
+    [0;30;107m  detected by fontbakery.                                                   [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  Only the fontfiles in these directories will be considered in             [0m
+    [0;30;107m  superfamily-level checks.                                                 [0m
+
+    * [0;36;107mINFO[0m: . [code: family-path]
+
+
+    Result: [0;36;107mINFO[0m
+
+ >> [1;35;107mcom.google.fonts/check/monospace[0m
+    [0;36;107mChecking correctness of monospaced metadata.[0m
+    with NotoSansGrantha-Regular.ttf
+
+    [1;35;107m  Rationale:                                                                [0m
+    [0;30;107m  There are various metadata in the OpenType spec to specify if a font is   [0m
+    [0;30;107m  monospaced or not. If the font is not truly monospaced, then no           [0m
+    [0;30;107m  monospaced metadata should be set (as sometimes they mistakenly are...)   [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  Requirements for monospace fonts:                                         [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  * post.isFixedPitch - "Set to 0 if the font is proportionally spaced,     [0m
+    [0;30;107m  non-zero if the font is not proportionally spaced (monospaced)"           [0m
+    [0;30;107m    www.microsoft.com/typography/otspec/post.htm                            [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  * hhea.advanceWidthMax must be correct, meaning no glyph's width value is [0m
+    [0;30;107m  greater.                                                                  [0m
+    [0;30;107m    www.microsoft.com/typography/otspec/hhea.htm                            [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  * OS/2.panose.bProportion must be set to 9 (monospace). Spec says: "The   [0m
+    [0;30;107m  PANOSE definition contains ten digits each of which currently describes   [0m
+    [0;30;107m  up to sixteen variations. Windows uses bFamilyType, bSerifStyle and       [0m
+    [0;30;107m  bProportion in the font mapper to determine family type. It also uses     [0m
+    [0;30;107m  bProportion to determine if the font is monospaced."                      [0m
+    [0;30;107m    www.microsoft.com/typography/otspec/os2.htm#pan                         [0m
+    [0;30;107m    monotypecom-test.monotype.de/services/pan2                              [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  * OS/2.xAvgCharWidth must be set accurately.                              [0m
+    [0;30;107m    "OS/2.xAvgCharWidth is used when rendering monospaced fonts, at least   [0m
+    [0;30;107m  by Windows GDI"                                                           [0m
+    [0;30;107m    http://typedrawers.com/discussion/comment/15397/#Comment_15397          [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  Also we should report an error for glyphs not of average width.           [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  Please also note:                                                         [0m
+    [0;30;107m  Thomas Phinney told us that a few years ago (as of December 2019), if you [0m
+    [0;30;107m  gave a font a monospace flag in Panose, Microsoft Word would ignore the   [0m
+    [0;30;107m  actual advance widths and treat it as monospaced. Source:                 [0m
+    [0;30;107m  https://typedrawers.com/discussion/comment/45140/#Comment_45140           [0m
+
+    * [1;91;107mFAIL[0m: On monospaced fonts, the value of post.isFixedPitch must be set to a non-zero value (meaning 'fixed width monospaced'), but got 0 instead. [code: mono-bad-post-isFixedPitch]
+    * [1;91;107mFAIL[0m: On monospaced fonts, the value of OS/2.panose.bProportion must be set to 9 (proportion: monospaced), but got 2 instead. [code: mono-bad-panose-proportion]
+    * [1;30;103mWARN[0m: Font is monospaced but 288 glyphs (60.25%) have a different width. You should check the widths of: ['CR', 'space', 'nbspace', 'dottedCircle', 'a_gran', 'aa_gran', 'i_gran', 'ii_gran', 'u_gran', 'uu_gran', 'ee_gran', 'ai_gran', 'oo_gran', 'au_gran', 'kha_gran', 'kha_gran.alt', 'ga_gran', 'ga_gran.flat', 'gha_gran', 'nga_gran', 'ca_gran', 'cha_gran', 'ja_gran', 'jha_gran', 'nya_gran', 'tta_gran', 'ttha_gran', 'ttha_gran.alt', 'dda_gran', 'ddha_gran', 'nna_gran', 'ta_gran', 'ta_gran.flat', 'tha_gran', 'da_gran', 'dha_gran', 'na_gran', 'na_gran.flat', 'pa_gran', 'pha_gran', 'ba_gran', 'bha_gran', 'bha_gran.flat', 'ma_gran', 'ya_gran', 'ra_gran', 'lla_gran', 'va_gran', 'sha_gran', 'ssa_gran', 'ssa_gran.flat', 'sa_gran', 'ha_gran', 'ha_gran.flat', 'visarga_gran', 'avagraha_gran', 'avagraha_gran.alt', 'eeMatra_gran', 'aiMatra_gran', 'ooMatra_gran', 'auMatra_gran', 'om_gran', 'pluta_gran', 'anusvaraVedic_gran', 'doubleAnusvaraVedic_gran', 'lVocalic_gran', 'llVocalic_gran', 'rVocalic_gran', 'rrVocalic_gran', 'zero_tamil', 'one_tamil', 'two_tamil', 'three_tamil', 'four_tamil', 'five_tamil', 'six_tamil', 'seven_tamil', 'eight_tamil', 'nine_tamil', 'ten_tamil', 'onehundred_tamil', 'onethousand_tamil', 'danda_deva', 'dbldanda_deva', 'ardhavisarga_vedic', 'rotatedArdhavisarga_vedic', 'pa_tamil', 'va_tamil', 'ma_virama_gran.liga', 'ma_virama_gran.liga.alt', 'na_virama_gran.liga', 'ta_virama_gran.liga', 'n_na_virama_gran.liga', 'ba_virama_gran.liga', 'ca_virama_gran.liga', 'da_virama_gran.liga', 'dda_virama_gran', 'dda_virama_gran.liga', 'dha_virama_gran', 'ga_virama_gran.liga', 'ha_virama_gran.liga', 'ja_virama_gran.liga', 'jha_virama_gran', 'ka_virama_gran.liga', 'la_virama_gran', 'nga_virama_gran.liga', 'nna_virama_gran.liga', 'nya_virama_gran.liga', 'pa_virama_gran.liga', 'ra_virama_gran.liga', 'sa_virama_gran.liga', 'sa_virama_gran', 'sha_virama_gran.liga', 'ssa_virama_gran.liga', 'tta_virama_gran.liga', 'va_virama_gran.liga', 'ya_virama_gran.liga', 'd_dha_gran', 'd_va_gran', 'd_vii_gran', 'h_ma_gran', 'j_ja_gran', 'j_nya_gran', 'k_ssa_gran', 'k_ssa_gran.flat', 'k_ta_gran', 'k_ta_gran.flat', 'k_t_va_gran', 'm_ma_gran', 'n_na_gran', 'n_na_gran.flat', 'n_da_gran', 'n_dha_gran', 'n_ma_gran', 'n_ta_gran', 'n_ta_gran.flat', 'n_tha_gran', 'n_va_gran', 'ny_ca_gran', 'ny_cha_gran', 'ny_ja_gran', 'sh_ca_gran', 'ss_tta_gran', 't_tha_gran', 't_va_gran', 'n_t_va_gran', 'sh_ra_gran', 'sh_ra_gran.alt1', 'sh_ra_gran.alt2', 'sh_va_gran', 'sh_vi_gran', 't_ra_gran', 'j_j_nya_gran', 'bhi_gran', 'bhi_gran.flat', 'bi_gran', 'chi_gran', 'ci_gran', 'ddhi_gran', 'd_dhi_gran', 'd_dhii_gran', 'ddi_gran', 'ddii_gran', 'dhi_gran', 'dhii_gran', 'di_gran', 'd_vi_gran', 'ghi_gran', 'ghii_gran', 'gi_gran', 'gi_gran.flat', 'hi_gran', 'hi_gran.flat', 'h_mi_gran', 'jhi_gran', 'ji_gran', 'j_ji_gran', 'j_nyi_gran', 'khi_gran', 'khi_gran.alt', 'ki_gran', 'k_ssi_gran', 'k_ssi_gran.flat', 'k_ti_gran', 'k_ti_gran.flat', 'k_t_vi_gran', 'k_t_vii_gran', 'li_gran', 'lli_gran', 'llii_gran', 'mi_gran', 'm_mi_gran', 'n_ni_gran', 'n_ni_gran.flat', 'n_dhi_gran', 'n_dhii_gran', 'n_di_gran', 'ngi_gran', 'ni_gran', 'ni_gran.flat', 'n_mi_gran', 'nni_gran', 'n_thi_gran', 'n_thii_gran', 'n_ti_gran', 'n_ti_gran.flat', 'n_t_vi_gran', 'n_t_vii_gran', 'n_vi_gran', 'n_vii_gran', 'ny_chi_gran', 'ny_ci_gran', 'ny_cii_gran', 'nyi_gran', 'ny_ji_gran', 'phi_gran', 'pi_gran', 'pii_gran', 'ri_gran', 'sh_ci_gran', 'sh_cii_gran', 'shi_gran', 'sh_ri_gran', 'sh_ri_gran.alt1', 'sh_ri_gran.alt2', 'si_gran', 'sii_gran', 'ssi_gran', 'ssi_gran.flat', 'ss_tti_gran', 'thi_gran', 'ti_gran', 'ti_gran.flat', 't_ri_gran', 'tthi_gran', 'tthi_gran.alt', 'tti_gran', 'ttii_gran', 't_vi_gran', 't_vii_gran', 'vi_gran', 'yi_gran', 't_thi_gran', 'bii_gran', 'cii_gran', 'jhii_gran', 'khii_gran', 'khii_gran.alt', 'vii_gran', 'yii_gran', 'ba_virama_gran', 'bha_virama_gran', 'bha_virama_gran.flat', 'ca_virama_gran', 'cha_virama_gran', 'd_dha_virama_gran', 'da_virama_gran', 'ddha_virama_gran', 'ga_virama_gran', 'ga_virama_gran.flat', 'gha_virama_gran', 'ha_virama_gran', 'ha_virama_gran.flat', 'ja_virama_gran', 'kha_virama_gran', 'kha_virama_gran.alt', 'lla_virama_gran', 'ma_virama_gran', 'na_virama_gran', 'na_virama_gran.flat', 'ta_virama_gran', 'ta_virama_gran.flat', 'n_dha_virama_gran', 'nga_virama_gran', 'nna_virama_gran', 'nya_virama_gran', 'pa_virama_gran', 'pha_virama_gran', 'ra_virama_gran', 'sha_virama_gran', 'ssa_virama_gran', 'ssa_virama_gran.flat', 'tha_virama_gran', 'tta_virama_gran', 'ttha_virama_gran', 'ttha_virama_gran.alt', 'va_virama_gran', 'ya_virama_gran'] [code: mono-outliers]
+
+
+    Result: [1;91;107mFAIL[0m
+
+ >> [1;35;107mcom.google.fonts/check/dsig[0m
+    [0;36;107mDoes the font have a DSIG table?[0m
+    with NotoSansGrantha-Regular.ttf
+
+    [1;35;107m  Rationale:                                                                [0m
+    [0;30;107m  Microsoft Office 2013 and below products expect fonts to have a digital   [0m
+    [0;30;107m  signature declared in a DSIG table in order to implement OpenType         [0m
+    [0;30;107m  features. The EOL date for Microsoft Office 2013 products is 4/11/2023.   [0m
+    [0;30;107m  This issue does not impact Microsoft Office 2016 and above products.      [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  This checks verifies that this signature is available in the font.        [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  A fake signature is enough to address this issue. If needed, a dummy      [0m
+    [0;30;107m  table can be added to the font with the `gftools fix-dsig` script         [0m
+    [0;30;107m  available at https://github.com/googlefonts/gftools                       [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  Reference: https://github.com/googlefonts/fontbakery/issues/1845          [0m
+
+    * [1;91;107mFAIL[0m: This font lacks a digital signature (DSIG table). Some applications may require one (even if only a dummy placeholder) in order to work properly. You can add a DSIG table by running the `gftools fix-dsig` script. [code: lacks-signature]
+
+
+    Result: [1;91;107mFAIL[0m
+
+ >> [1;35;107mcom.google.fonts/check/gdef_mark_chars[0m
+    [0;36;107mCheck mark characters are in GDEF mark glyph class[0m
+    with NotoSansGrantha-Regular.ttf
+
+    [1;35;107m  Rationale:                                                                [0m
+    [0;30;107m  Mark characters should be in the GDEF mark glyph class.                   [0m
+
+    * [1;30;103mWARN[0m: The following mark characters could be in the GDEF mark glyph class:
+	 U+11303, U+11347, U+11348, U+1134B and U+1134C [code: mark-chars]
+
+
+    Result: [1;30;103mWARN[0m
+
+ >> [1;35;107mcom.google.fonts/check/glyf_nested_components[0m
+    [0;36;107mCheck glyphs do not have components which are themselves components.[0m
+    with NotoSansGrantha-Regular.ttf
+
+    [1;35;107m  Rationale:                                                                [0m
+    [0;30;107m  There have been bugs rendering variable fonts with nested components.     [0m
+    [0;30;107m  Additionally, some static fonts with nested components have been reported [0m
+    [0;30;107m  to have rendering and printing issues.                                    [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  For more info, see:                                                       [0m
+    [0;30;107m  * https://github.com/googlefonts/fontbakery/issues/2961                   [0m
+    [0;30;107m  * https://github.com/arrowtype/recursive/issues/412                       [0m
+
+    * [1;91;107mFAIL[0m: The following glyphs have components which themselves are component glyphs:
+	* tonedoubleringabove_vedic and tonedoubleringabove_vedic [code: found-nested-components]
+
+
+    Result: [1;91;107mFAIL[0m
+
+ >> [1;35;107mcom.google.fonts/check/outline_alignment_miss[0m
+    [0;36;107mAre there any misaligned on-curve points?[0m
+    with NotoSansGrantha-Regular.ttf
+
+    [1;35;107m  Rationale:                                                                [0m
+    [0;30;107m  This test heuristically looks for on-curve points which are close to, but [0m
+    [0;30;107m  do not sit on, significant boundary coordinates. For example, a point     [0m
+    [0;30;107m  which has a Y-coordinate of 1 or -1 might be a misplaced baseline point.  [0m
+    [0;30;107m  As well as the baseline, the test also checks for points near the         [0m
+    [0;30;107m  x-height (but only for lower case Latin letters), cap-height, ascender    [0m
+    [0;30;107m  and descender Y coordinates.                                              [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  Not all such misaligned curve points are a mistake, and sometimes the     [0m
+    [0;30;107m  design may call for points in locations near the boundaries. As this test [0m
+    [0;30;107m  is liable to generate significant numbers of false positives, the test    [0m
+    [0;30;107m  will pass if there are more than 100 reported misalignments.              [0m
+
+    * [1;30;103mWARN[0m: The following glyphs have on-curve points which have potentially incorrect y coordinates:
+	* rVocalicMatra_gran.d1: X=204.5,Y=-536.0 (should be at descender -534?)
+	* rVocalicMatra_gran.d1: X=89.0,Y=-536.0 (should be at descender -534?)
+	* rVocalicMatra_gran.d1h3: X=389.0,Y=-536.0 (should be at descender -534?)
+	* rVocalicMatra_gran.d1h3: X=504.5,Y=-536.0 (should be at descender -534?)
+	* rrVocalicMatra_gran.d1: X=-435.0,Y=-536.0 (should be at descender -534?)
+	* rrVocalicMatra_gran.d1: X=-435.0,Y=-536.0 (should be at descender -534?)
+	* llVocalicMatra_gran: X=1156.0,Y=715.0 (should be at cap-height 714?)
+	* ra_vattu_gran.d1w1: X=-786.0,Y=-534.5 (should be at descender -534?)
+	* ra_vattu_gran.d2h3: X=440.0,Y=-536.0 (should be at descender -534?)
+	* iiMatra_gran: X=-399.5,Y=713.0 (should be at cap-height 714?) and 77 more. [code: found-misalignments]
+
+
+    Result: [1;30;103mWARN[0m
+
+ >> [1;35;107mcom.google.fonts/check/outline_colinear_vectors[0m
+    [0;36;107mDo any segments have colinear vectors?[0m
+    with NotoSansGrantha-Regular.ttf
+
+    [1;35;107m  Rationale:                                                                [0m
+    [0;30;107m  This test looks for consecutive line segments which have the same angle.  [0m
+    [0;30;107m  This normally happens if an outline point has been added by accident.     [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  This test is not run for variable fonts, as they may legitimately have    [0m
+    [0;30;107m  colinear vectors.                                                         [0m
+
+    * [1;30;103mWARN[0m: The following glyphs have colinear vectors:
+	* d_va_gran: L<<230.0,263.0>--<236.0,263.0>> -> L<<236.0,263.0>--<265.0,264.0>>
+	* d_vi_gran: L<<230.0,263.0>--<236.0,263.0>> -> L<<236.0,263.0>--<265.0,264.0>>
+	* d_vii_gran: L<<230.0,263.0>--<236.0,263.0>> -> L<<236.0,263.0>--<265.0,264.0>>
+	* ss_tta_gran.below: L<<-502.0,-553.0>--<-511.0,-587.0>> -> L<<-511.0,-587.0>--<-534.0,-682.0>>
+	* ss_tta_gran.below: L<<-628.0,-748.0>--<-581.0,-567.0>> -> L<<-581.0,-567.0>--<-577.0,-553.0>>
+	* ss_tta_gran: L<<1004.0,0.0>--<985.0,-75.0>> -> L<<985.0,-75.0>--<949.0,-218.0>>
+	* ss_tta_gran: L<<845.0,-290.0>--<890.0,-116.0>> -> L<<890.0,-116.0>--<919.0,0.0>>
+	* ss_tti_gran: L<<1004.0,0.0>--<985.0,-75.0>> -> L<<985.0,-75.0>--<949.0,-218.0>>
+	* ss_tti_gran: L<<845.0,-290.0>--<890.0,-116.0>> -> L<<890.0,-116.0>--<919.0,0.0>> and t_thi_gran: L<<1386.0,579.0>--<1386.0,579.0>> -> L<<1386.0,579.0>--<1392.0,579.0>> [code: found-colinear-vectors]
+
+
+    Result: [1;30;103mWARN[0m
+
+ >> [1;35;107mcom.google.fonts/check/outline_jaggy_segments[0m
+    [0;36;107mDo outlines contain any jaggy segments?[0m
+    with NotoSansGrantha-Regular.ttf
+
+    [1;35;107m  Rationale:                                                                [0m
+    [0;30;107m  This test heuristically detects outline segments which form a             [0m
+    [0;30;107m  particularly small angle, indicative of an outline error. This may cause  [0m
+    [0;30;107m  false positives in cases such as extreme ink traps, so should be regarded [0m
+    [0;30;107m  as advisory and backed up by manual inspection.                           [0m
+
+    * [1;30;103mWARN[0m: The following glyphs have jaggy segments:
+	* d_va_gran.below: L<<-549.0,-388.0>--<-653.0,-389.0>>/L<<-653.0,-389.0>--<-653.0,-389.0>> = 0.5509039792181968
+	* d_va_gran: L<<360.0,200.0>--<235.0,199.0>>/L<<235.0,199.0>--<235.0,199.0>> = 0.4583564580000459
+	* d_vi_gran: L<<360.0,200.0>--<235.0,199.0>>/L<<235.0,199.0>--<235.0,199.0>> = 0.4583564580000459
+	* d_vii_gran: L<<360.0,200.0>--<235.0,199.0>>/L<<235.0,199.0>--<235.0,199.0>> = 0.4583564580000459
+	* j_j_nya_gran: B<<794.0,-338.0>-<828.0,-370.0>-<840.0,-422.0>>/L<<840.0,-422.0>--<840.0,-229.0>> = 12.994616791916512
+	* j_nya_gran: B<<625.0,32.0>-<652.0,-9.0>-<663.0,-60.0>>/L<<663.0,-60.0>--<663.0,139.0>> = 12.171458208587458
+	* j_nyi_gran: B<<625.0,32.0>-<652.0,-9.0>-<663.0,-60.0>>/L<<663.0,-60.0>--<663.0,139.0>> = 12.171458208587458
+	* n_t_va_gran.below: B<<-953.0,-207.5>-<-938.0,-246.0>-<-937.0,-284.0>>/L<<-937.0,-284.0>--<-937.0,-74.0>> = 1.5074357587748821
+	* n_t_va_gran: B<<638.0,426.5>-<657.0,386.0>-<660.0,347.0>>/L<<660.0,347.0>--<660.0,566.0>> = 4.398705354995508
+	* n_t_vi_gran: B<<638.0,426.5>-<657.0,386.0>-<660.0,347.0>>/L<<660.0,347.0>--<660.0,566.0>> = 4.398705354995508 and 5 more. [code: found-jaggy-segments]
+
+
+    Result: [1;30;103mWARN[0m
+
+ >> [1;35;107mcom.google.fonts/check/outline_semi_vertical[0m
+    [0;36;107mDo outlines contain any semi-vertical or semi-horizontal lines?[0m
+    with NotoSansGrantha-Regular.ttf
+
+    [1;35;107m  Rationale:                                                                [0m
+    [0;30;107m  This test detects line segments which are nearly, but not quite, exactly  [0m
+    [0;30;107m  horizontal or vertical. Sometimes such lines are created by design, but   [0m
+    [0;30;107m  often they are indicative of a design error.                              [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  This test is disabled for italic styles, which often contain              [0m
+    [0;30;107m  nearly-upright lines.                                                     [0m
+
+    * [1;30;103mWARN[0m: The following glyphs have semi-vertical/semi-horizontal lines:
+	* d_va_gran: L<<360.0,200.0>--<235.0,199.0>>
+	* d_vi_gran: L<<360.0,200.0>--<235.0,199.0>> and d_vii_gran: L<<360.0,200.0>--<235.0,199.0>> [code: found-semi-vertical]
+
+
+    Result: [1;30;103mWARN[0m
+
+
+Total:
+
+    [1;97;101mERROR[0m: 0
+    [1;91;107mFAIL[0m: 4
+    [1;30;103mWARN[0m: 7
+    [0;36;107mINFO[0m: 2
+    [0;34;107mSKIP[0m: 17
+    [0;32;107mPASS[0m: 47
+
+
+DONE!
+
+    [1;30;107mMeaning of check results:[0m
+
+    An [1;97;101mERROR[0m is something wrong with FontBakery itself, possibly a bug.
+    A [1;91;107mFAIL[0m is a problem with the font that must be fixed.
+    A [1;30;103mWARN[0m is something that you should consider addressing.
+    An [0;36;107mINFO[0m result simply prints something useful. Typically stats.
+    A [0;32;107mPASS[0m means the font looks good for the given checking routine.
+    And a [0;34;107mSKIP[0m happens when the check does not apply to the given font.
+
+    If you get [1;97;101mERROR[0ms, please help us improve the tool by reporting them at
+    [1;36;107mhttps://github.com/googlefonts/fontbakery/issues[0m
+
+    (but other kinds of bug reports and/or
+     feature requests are also always welcome, of course!)
+

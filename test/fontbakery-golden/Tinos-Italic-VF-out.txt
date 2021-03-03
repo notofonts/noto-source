@@ -1,0 +1,203 @@
+Start ... running 77 individual check executions.
+ >> [1;35;107mcom.google.fonts/check/family/win_ascent_and_descent[0m
+    [0;36;107mChecking OS/2 usWinAscent & usWinDescent.[0m
+    with Tinos-Italic-VF.ttf
+
+    [1;35;107m  Rationale:                                                                [0m
+    [0;30;107m  A font's winAscent and winDescent values should be greater than the head  [0m
+    [0;30;107m  table's yMax, abs(yMin) values. If they are less than these values,       [0m
+    [0;30;107m  clipping can occur on Windows platforms                                   [0m
+    [0;30;107m  (https://github.com/RedHatBrand/Overpass/issues/33).                      [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  If the font includes tall/deep writing systems such as Arabic or          [0m
+    [0;30;107m  Devanagari, the winAscent and winDescent can be greater than the yMax and [0m
+    [0;30;107m  abs(yMin) to accommodate vowel marks.                                     [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  When the win Metrics are significantly greater than the upm, the          [0m
+    [0;30;107m  linespacing can appear too loose. To counteract this, enabling the OS/2   [0m
+    [0;30;107m  fsSelection bit 7 (Use_Typo_Metrics), will force Windows to use the OS/2  [0m
+    [0;30;107m  typo values instead. This means the font developer can control the        [0m
+    [0;30;107m  linespacing with the typo values, whilst avoiding clipping by setting the [0m
+    [0;30;107m  win values to values greater than the yMax and abs(yMin).                 [0m
+
+    * [1;91;107mFAIL[0m: OS/2.usWinAscent value should be equal or greater than 2068, but got 1825 instead [code: ascent]
+    * [1;91;107mFAIL[0m: OS/2.usWinDescent value should be equal or greater than 797, but got 443 instead. [code: descent]
+
+
+    Result: [1;91;107mFAIL[0m
+
+ >> [1;35;107mcom.google.fonts/check/os2_metrics_match_hhea[0m
+    [0;36;107mChecking OS/2 Metrics match hhea Metrics.[0m
+    with Tinos-Italic-VF.ttf
+
+    [1;35;107m  Rationale:                                                                [0m
+    [0;30;107m  When OS/2 and hhea vertical metrics match, the same linespacing results   [0m
+    [0;30;107m  on macOS, GNU+Linux and Windows. Unfortunately as of 2018, Google Fonts   [0m
+    [0;30;107m  has released many fonts with vertical metrics that don't match in this    [0m
+    [0;30;107m  way. When we fix this issue in these existing families, we will create a  [0m
+    [0;30;107m  visible change in line/paragraph layout for either Windows or macOS       [0m
+    [0;30;107m  users, which will upset some of them.                                     [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  But we have a duty to fix broken stuff, and inconsistent paragraph layout [0m
+    [0;30;107m  is unacceptably broken when it is possible to avoid it.                   [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  If users complain and prefer the old broken version, they have the        [0m
+    [0;30;107m  freedom to take care of their own situation.                              [0m
+
+    * [1;91;107mFAIL[0m: OS/2 sTypoAscender (1422) and hhea ascent (1825) must be equal. [code: ascender]
+
+
+    Result: [1;91;107mFAIL[0m
+
+ >> [1;35;107mcom.google.fonts/check/whitespace_ink[0m
+    [0;36;107mWhitespace glyphs have ink?[0m
+    with Tinos-Italic-VF.ttf
+
+    * [1;91;107mFAIL[0m: Glyph "uni2028" has ink. It needs to be replaced by an empty glyph. [code: has-ink]
+    * [1;91;107mFAIL[0m: Glyph "uni2029" has ink. It needs to be replaced by an empty glyph. [code: has-ink]
+    * [1;91;107mFAIL[0m: Glyph "uni205F" has ink. It needs to be replaced by an empty glyph. [code: has-ink]
+    * [1;91;107mFAIL[0m: Glyph "uni2060" has ink. It needs to be replaced by an empty glyph. [code: has-ink]
+    * [1;91;107mFAIL[0m: Glyph "uniFEFF" has ink. It needs to be replaced by an empty glyph. [code: has-ink]
+
+
+    Result: [1;91;107mFAIL[0m
+
+ >> [1;35;107mcom.google.fonts/check/required_tables[0m
+    [0;36;107mFont contains all required tables?[0m
+    with Tinos-Italic-VF.ttf
+
+    [1;35;107m  Rationale:                                                                [0m
+    [0;30;107m  Depending on the typeface and coverage of a font, certain tables are      [0m
+    [0;30;107m  recommended for optimum quality. For example, the performance of a        [0m
+    [0;30;107m  non-linear font is improved if the VDMX, LTSH, and hdmx tables are        [0m
+    [0;30;107m  present. Non-monospaced Latin fonts should have a kern table. A gasp      [0m
+    [0;30;107m  table is necessary if a designer wants to influence the sizes at which    [0m
+    [0;30;107m  grayscaling is used under Windows. A DSIG table containing a digital      [0m
+    [0;30;107m  signature helps ensure the integrity of the font file. Etc.               [0m
+
+    * [0;36;107mINFO[0m: This font contains the following optional tables [loca, GPOS, GSUB, gasp]
+
+
+    Result: [0;36;107mINFO[0m
+
+ >> [1;35;107mcom.google.fonts/check/superfamily/list[0m
+    [0;36;107mList all superfamily filepaths[0m
+    with Tinos-Italic-VF.ttf
+
+    [1;35;107m  Rationale:                                                                [0m
+    [0;30;107m  This is a merely informative check that lists all sibling families        [0m
+    [0;30;107m  detected by fontbakery.                                                   [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  Only the fontfiles in these directories will be considered in             [0m
+    [0;30;107m  superfamily-level checks.                                                 [0m
+
+    * [0;36;107mINFO[0m: . [code: family-path]
+
+
+    Result: [0;36;107mINFO[0m
+
+ >> [1;35;107mcom.google.fonts/check/linegaps[0m
+    [0;36;107mChecking Vertical Metric Linegaps.[0m
+    with Tinos-Italic-VF.ttf
+
+    * [1;30;103mWARN[0m: hhea lineGap is not equal to 0. [code: hhea]
+
+
+    Result: [1;30;103mWARN[0m
+
+ >> [1;35;107mcom.google.fonts/check/dsig[0m
+    [0;36;107mDoes the font have a DSIG table?[0m
+    with Tinos-Italic-VF.ttf
+
+    [1;35;107m  Rationale:                                                                [0m
+    [0;30;107m  Microsoft Office 2013 and below products expect fonts to have a digital   [0m
+    [0;30;107m  signature declared in a DSIG table in order to implement OpenType         [0m
+    [0;30;107m  features. The EOL date for Microsoft Office 2013 products is 4/11/2023.   [0m
+    [0;30;107m  This issue does not impact Microsoft Office 2016 and above products.      [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  This checks verifies that this signature is available in the font.        [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  A fake signature is enough to address this issue. If needed, a dummy      [0m
+    [0;30;107m  table can be added to the font with the `gftools fix-dsig` script         [0m
+    [0;30;107m  available at https://github.com/googlefonts/gftools                       [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  Reference: https://github.com/googlefonts/fontbakery/issues/1845          [0m
+
+    * [1;91;107mFAIL[0m: This font lacks a digital signature (DSIG table). Some applications may require one (even if only a dummy placeholder) in order to work properly. You can add a DSIG table by running the `gftools fix-dsig` script. [code: lacks-signature]
+
+
+    Result: [1;91;107mFAIL[0m
+
+ >> [1;35;107mcom.google.fonts/check/gdef_spacing_marks[0m
+    [0;36;107mCheck mark characters are in GDEF mark glyph class)[0m
+    with Tinos-Italic-VF.ttf
+
+    [1;35;107m  Rationale:                                                                [0m
+    [0;30;107m  Glyphs in the GDEF mark glyph class should be non-spacing.                [0m
+    [0;30;107m  Spacing glyphs in the GDEF mark glyph class may have incorrect anchor     [0m
+    [0;30;107m  positioning that was only intended for building composite glyphs during   [0m
+    [0;30;107m  design.                                                                   [0m
+
+    * [1;30;103mWARN[0m: The following spacing glyphs may be in the GDEF mark glyph class by mistake:
+	 sofpasuq and uni02DE [code: spacing-mark-glyphs]
+
+
+    Result: [1;30;103mWARN[0m
+
+ >> [1;35;107mcom.google.fonts/check/gdef_mark_chars[0m
+    [0;36;107mCheck mark characters are in GDEF mark glyph class[0m
+    with Tinos-Italic-VF.ttf
+
+    [1;35;107m  Rationale:                                                                [0m
+    [0;30;107m  Mark characters should be in the GDEF mark glyph class.                   [0m
+
+    * [1;30;103mWARN[0m: The following mark characters could be in the GDEF mark glyph class:
+	 U+0334, U+0335, U+0336, U+0337, U+0338, U+0340, U+0341, U+034F, U+0358, U+0487, U+0488, U+0489, U+1AB0, U+1AB1, U+1AB2, U+1AB3, U+1AB4, U+1AB5, U+1AB6, U+1AB7, U+1AB8, U+1AB9, U+1ABA, U+1ABB, U+1ABC, U+1ABD, U+1ABE, U+1DCB, U+1DCC, U+1DCD, U+1DCE, U+1DCF, U+1DD0, U+1DD1, U+1DD2, U+1DD3, U+1DD4, U+1DD5, U+1DD6, U+1DD7, U+1DD8, U+1DD9, U+1DDA, U+1DDB, U+1DDC, U+1DDD, U+1DDE, U+1DDF, U+1DE0, U+1DE1, U+1DE2, U+1DE3, U+1DE4, U+1DE5, U+1DE6, U+1DE7, U+1DE8, U+1DE9, U+1DEA, U+1DEB, U+1DEC, U+1DED, U+1DEE, U+1DEF, U+1DF0, U+1DF1, U+1DF2, U+1DF3, U+1DF4, U+1DF5, U+1DFB, U+1DFC, U+1DFD, U+20F0, U+2DE0, U+2DE1, U+2DE2, U+2DE3, U+2DE4, U+2DE5, U+2DE6, U+2DE7, U+2DE8, U+2DE9, U+2DEA, U+2DEB, U+2DEC, U+2DED, U+2DEE, U+2DEF, U+2DF0, U+2DF1, U+2DF2, U+2DF3, U+2DF4, U+2DF5, U+2DF6, U+2DF7, U+2DF8, U+2DF9, U+2DFA, U+2DFB, U+2DFC, U+2DFD, U+2DFE, U+2DFF, U+A66F, U+A670, U+A671, U+A672, U+A674, U+A675, U+A676, U+A677, U+A678, U+A679, U+A67A, U+A67B, U+A67C, U+A67D, U+A69E, U+A69F, U+FE24, U+FE25, U+FE26, U+FE27, U+FE28, U+FE29, U+FE2A, U+FE2B, U+FE2C, U+FE2D, U+FE2E and U+FE2F [code: mark-chars]
+
+
+    Result: [1;30;103mWARN[0m
+
+ >> [1;35;107mcom.google.fonts/check/gdef_non_mark_chars[0m
+    [0;36;107mCheck GDEF mark glyph class doesn't have characters that are not marks)[0m
+    with Tinos-Italic-VF.ttf
+
+    [1;35;107m  Rationale:                                                                [0m
+    [0;30;107m  Glyphs in the GDEF mark glyph class become non-spacing and may be         [0m
+    [0;30;107m  repositioned if they have mark anchors.                                   [0m
+    [0;30;107m  Only combining mark glyphs should be in that class. Any non-mark glyph    [0m
+    [0;30;107m  must not be in that class, in particular spacing glyphs.                  [0m
+
+    * [1;30;103mWARN[0m: The following non-mark characters should not be in the GDEF mark glyph class:
+	 U+02DE and U+05C3 [code: non-mark-chars]
+
+
+    Result: [1;30;103mWARN[0m
+
+
+Total:
+
+    [1;97;101mERROR[0m: 0
+    [1;91;107mFAIL[0m: 4
+    [1;30;103mWARN[0m: 4
+    [0;36;107mINFO[0m: 2
+    [0;34;107mSKIP[0m: 17
+    [0;32;107mPASS[0m: 50
+
+
+DONE!
+
+    [1;30;107mMeaning of check results:[0m
+
+    An [1;97;101mERROR[0m is something wrong with FontBakery itself, possibly a bug.
+    A [1;91;107mFAIL[0m is a problem with the font that must be fixed.
+    A [1;30;103mWARN[0m is something that you should consider addressing.
+    An [0;36;107mINFO[0m result simply prints something useful. Typically stats.
+    A [0;32;107mPASS[0m means the font looks good for the given checking routine.
+    And a [0;34;107mSKIP[0m happens when the check does not apply to the given font.
+
+    If you get [1;97;101mERROR[0ms, please help us improve the tool by reporting them at
+    [1;36;107mhttps://github.com/googlefonts/fontbakery/issues[0m
+
+    (but other kinds of bug reports and/or
+     feature requests are also always welcome, of course!)
+

@@ -1,0 +1,33 @@
+---
+Automatic testing for 'instance_ttf,NotoSansElymaic-Regular.ttf', Version 1.000:
+E <name/manufacturer> The manufacturer is 'Google LLC' but was expecting 'Monotype Imaging Inc.'
+E <name/designer> The designer is 'Morgane Pierson' but was expecting 'Monotype Design Team'
+E <name/description> The description is 'Designed by Morgane Pierson' but was expecting it to match '^Designed by Monotype design team.$'
+E <name/designer_url> The designer url is 'https://www.instagram.com/morgane_pierson/' but was expecting 'http://www.monotype.com/studio'
+E <cmap/required> U+0000 is not mapped in cmap, but it should be (see https://www.microsoft.com/typography/otspec/recom.htm).
+E <cmap/required> U+000D is not mapped in cmap, but it should be (see https://www.microsoft.com/typography/otspec/recom.htm).
+E <cmap/script_required> The following 2 characters are missing from the font: 0000, 000D.
+E <head/os2/ascender> Value of sTypoAscender in 'OS/2' table (720) is different from the value of Ascent in 'hhea' table (920), but they should be equal.
+E <head/os2/linegap> Value of sTypoLineGap in 'OS/2' table is 200, but should be 0.
+E <head/os2/panose/proportion> Panose proportion value is 0 (any) but expected 2-4
+E <bounds/glyph/ymin> Real yMin for glyph 5 (u10FE3) is -290, which is lower than the font's sTypoDescent (-280), resulting in clipping.
+E <bounds/glyph/ymin> Real yMin for glyph 6 (u10FE3.ss01) is -290, which is lower than the font's sTypoDescent (-280), resulting in clipping.
+E <bounds/glyph/ymin> Real yMin for glyph 13 (u10FEA) is -290, which is lower than the font's sTypoDescent (-280), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 15 (u10FEB.ss01) is 740, which is higher than the font's sTypoAscent (720), resulting in clipping.
+E <bounds/glyph/ymin> Real yMin for glyph 18 (u10FED) is -290, which is lower than the font's sTypoDescent (-280), resulting in clipping.
+E <bounds/glyph/ymin> Real yMin for glyph 19 (u10FED.ss01) is -290, which is lower than the font's sTypoDescent (-280), resulting in clipping.
+E <bounds/glyph/ymin> Real yMin for glyph 20 (u10FF0) is -290, which is lower than the font's sTypoDescent (-280), resulting in clipping.
+E <bounds/glyph/ymin> Real yMin for glyph 21 (u10FF0.ss01) is -290, which is lower than the font's sTypoDescent (-280), resulting in clipping.
+E <bounds/glyph/ymin> Real yMin for glyph 24 (u10FF1) is -290, which is lower than the font's sTypoDescent (-280), resulting in clipping.
+E <bounds/glyph/ymin> Real yMin for glyph 25 (u10FF1.ss01) is -290, which is lower than the font's sTypoDescent (-280), resulting in clipping.
+E <bounds/glyph/ymin> Real yMin for glyph 26 (u10FEE) is -290, which is lower than the font's sTypoDescent (-280), resulting in clipping.
+E <bounds/glyph/ymin> Real yMin for glyph 27 (u10FEE.ss01) is -290, which is lower than the font's sTypoDescent (-280), resulting in clipping.
+E <bounds/glyph/ymin> Real yMin for glyph 43 (_part.J) is -290, which is lower than the font's sTypoDescent (-280), resulting in clipping.
+E <bounds/font/ymin> Real yMin is -290, but it should be greater than or equal to the value of Descent in 'hhea' table, which is -280.
+E <paths/intersection> The glyph 'u10FEB.ss01' has intersecting outlines: start and end segments match: (152.0, -10.0)
+E <paths/intersection> The glyph 'u10FF2' has intersecting outlines: start and end segments match: (267.0, 419.0)
+E <paths/intersection> The glyph 'u10FF4' has intersecting outlines: start and end segments match: (752.0, 498.0)
+E <reachable> The following 1 glyphs are unreachable in the font: u10FF6.ss02 (41).
+Found 28 errors.
+------
+Finished linting 1 file.
