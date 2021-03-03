@@ -1,0 +1,206 @@
+Start ... running 77 individual check executions.
+ >> [1;35;107mcom.google.fonts/check/family/win_ascent_and_descent[0m
+    [0;36;107mChecking OS/2 usWinAscent & usWinDescent.[0m
+    with NotoSansDevanagari-Regular.ttf
+
+    [1;35;107m  Rationale:                                                                [0m
+    [0;30;107m  A font's winAscent and winDescent values should be greater than the head  [0m
+    [0;30;107m  table's yMax, abs(yMin) values. If they are less than these values,       [0m
+    [0;30;107m  clipping can occur on Windows platforms                                   [0m
+    [0;30;107m  (https://github.com/RedHatBrand/Overpass/issues/33).                      [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  If the font includes tall/deep writing systems such as Arabic or          [0m
+    [0;30;107m  Devanagari, the winAscent and winDescent can be greater than the yMax and [0m
+    [0;30;107m  abs(yMin) to accommodate vowel marks.                                     [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  When the win Metrics are significantly greater than the upm, the          [0m
+    [0;30;107m  linespacing can appear too loose. To counteract this, enabling the OS/2   [0m
+    [0;30;107m  fsSelection bit 7 (Use_Typo_Metrics), will force Windows to use the OS/2  [0m
+    [0;30;107m  typo values instead. This means the font developer can control the        [0m
+    [0;30;107m  linespacing with the typo values, whilst avoiding clipping by setting the [0m
+    [0;30;107m  win values to values greater than the yMax and abs(yMin).                 [0m
+
+    * [1;91;107mFAIL[0m: OS/2.usWinAscent value should be equal or greater than 1347, but got 896 instead [code: ascent]
+
+
+    Result: [1;91;107mFAIL[0m
+
+ >> [1;35;107mcom.google.fonts/check/whitespace_glyphnames[0m
+    [0;36;107mFont has **proper** whitespace glyph names?[0m
+    with NotoSansDevanagari-Regular.ttf
+
+    [1;35;107m  Rationale:                                                                [0m
+    [0;30;107m  This check enforces adherence to recommended whitespace (codepoints 0020  [0m
+    [0;30;107m  and 00A0) glyph names according to the Adobe Glyph List.                  [0m
+
+    * [1;91;107mFAIL[0m: Glyph 0x00A0 is called "nbspace.deva": Change to "uni00A0" [code: non-compliant-00a0]
+
+
+    Result: [1;91;107mFAIL[0m
+
+ >> [1;35;107mcom.google.fonts/check/required_tables[0m
+    [0;36;107mFont contains all required tables?[0m
+    with NotoSansDevanagari-Regular.ttf
+
+    [1;35;107m  Rationale:                                                                [0m
+    [0;30;107m  Depending on the typeface and coverage of a font, certain tables are      [0m
+    [0;30;107m  recommended for optimum quality. For example, the performance of a        [0m
+    [0;30;107m  non-linear font is improved if the VDMX, LTSH, and hdmx tables are        [0m
+    [0;30;107m  present. Non-monospaced Latin fonts should have a kern table. A gasp      [0m
+    [0;30;107m  table is necessary if a designer wants to influence the sizes at which    [0m
+    [0;30;107m  grayscaling is used under Windows. A DSIG table containing a digital      [0m
+    [0;30;107m  signature helps ensure the integrity of the font file. Etc.               [0m
+
+    * [0;36;107mINFO[0m: This font contains the following optional tables [loca, GPOS, GSUB]
+
+
+    Result: [0;36;107mINFO[0m
+
+ >> [1;35;107mcom.google.fonts/check/superfamily/list[0m
+    [0;36;107mList all superfamily filepaths[0m
+    with NotoSansDevanagari-Regular.ttf
+
+    [1;35;107m  Rationale:                                                                [0m
+    [0;30;107m  This is a merely informative check that lists all sibling families        [0m
+    [0;30;107m  detected by fontbakery.                                                   [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  Only the fontfiles in these directories will be considered in             [0m
+    [0;30;107m  superfamily-level checks.                                                 [0m
+
+    * [0;36;107mINFO[0m: . [code: family-path]
+
+
+    Result: [0;36;107mINFO[0m
+
+ >> [1;35;107mcom.google.fonts/check/dsig[0m
+    [0;36;107mDoes the font have a DSIG table?[0m
+    with NotoSansDevanagari-Regular.ttf
+
+    [1;35;107m  Rationale:                                                                [0m
+    [0;30;107m  Microsoft Office 2013 and below products expect fonts to have a digital   [0m
+    [0;30;107m  signature declared in a DSIG table in order to implement OpenType         [0m
+    [0;30;107m  features. The EOL date for Microsoft Office 2013 products is 4/11/2023.   [0m
+    [0;30;107m  This issue does not impact Microsoft Office 2016 and above products.      [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  This checks verifies that this signature is available in the font.        [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  A fake signature is enough to address this issue. If needed, a dummy      [0m
+    [0;30;107m  table can be added to the font with the `gftools fix-dsig` script         [0m
+    [0;30;107m  available at https://github.com/googlefonts/gftools                       [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  Reference: https://github.com/googlefonts/fontbakery/issues/1845          [0m
+
+    * [1;91;107mFAIL[0m: This font lacks a digital signature (DSIG table). Some applications may require one (even if only a dummy placeholder) in order to work properly. You can add a DSIG table by running the `gftools fix-dsig` script. [code: lacks-signature]
+
+
+    Result: [1;91;107mFAIL[0m
+
+ >> [1;35;107mcom.google.fonts/check/gdef_spacing_marks[0m
+    [0;36;107mCheck mark characters are in GDEF mark glyph class)[0m
+    with NotoSansDevanagari-Regular.ttf
+
+    [1;35;107m  Rationale:                                                                [0m
+    [0;30;107m  Glyphs in the GDEF mark glyph class should be non-spacing.                [0m
+    [0;30;107m  Spacing glyphs in the GDEF mark glyph class may have incorrect anchor     [0m
+    [0;30;107m  positioning that was only intended for building composite glyphs during   [0m
+    [0;30;107m  design.                                                                   [0m
+
+    * [1;30;103mWARN[0m: The following spacing glyphs may be in the GDEF mark glyph class by mistake:
+	 visargadeva [code: spacing-mark-glyphs]
+
+
+    Result: [1;30;103mWARN[0m
+
+ >> [1;35;107mcom.google.fonts/check/gdef_mark_chars[0m
+    [0;36;107mCheck mark characters are in GDEF mark glyph class[0m
+    with NotoSansDevanagari-Regular.ttf
+
+    [1;35;107m  Rationale:                                                                [0m
+    [0;30;107m  Mark characters should be in the GDEF mark glyph class.                   [0m
+
+    * [1;30;103mWARN[0m: The following mark characters could be in the GDEF mark glyph class:
+	 U+093B, U+093E, U+093F, U+0940, U+0949, U+094A, U+094B, U+094C, U+094E, U+094F, U+1CE0 and U+1CE1 [code: mark-chars]
+
+
+    Result: [1;30;103mWARN[0m
+
+ >> [1;35;107mcom.google.fonts/check/gdef_non_mark_chars[0m
+    [0;36;107mCheck GDEF mark glyph class doesn't have characters that are not marks)[0m
+    with NotoSansDevanagari-Regular.ttf
+
+    [1;35;107m  Rationale:                                                                [0m
+    [0;30;107m  Glyphs in the GDEF mark glyph class become non-spacing and may be         [0m
+    [0;30;107m  repositioned if they have mark anchors.                                   [0m
+    [0;30;107m  Only combining mark glyphs should be in that class. Any non-mark glyph    [0m
+    [0;30;107m  must not be in that class, in particular spacing glyphs.                  [0m
+
+    * [1;30;103mWARN[0m: The following non-mark characters should not be in the GDEF mark glyph class:
+	 U+A8FA [code: non-mark-chars]
+
+
+    Result: [1;30;103mWARN[0m
+
+ >> [1;35;107mcom.google.fonts/check/outline_colinear_vectors[0m
+    [0;36;107mDo any segments have colinear vectors?[0m
+    with NotoSansDevanagari-Regular.ttf
+
+    [1;35;107m  Rationale:                                                                [0m
+    [0;30;107m  This test looks for consecutive line segments which have the same angle.  [0m
+    [0;30;107m  This normally happens if an outline point has been added by accident.     [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  This test is not run for variable fonts, as they may legitimately have    [0m
+    [0;30;107m  colinear vectors.                                                         [0m
+
+    * [1;30;103mWARN[0m: The following glyphs have colinear vectors:
+	* ssanuktaraprehalfdeva: L<<446.0,218.0>--<368.0,167.0>> -> L<<368.0,167.0>--<92.0,-13.0>> and ssaraprehalfdeva: L<<446.0,218.0>--<368.0,167.0>> -> L<<368.0,167.0>--<92.0,-13.0>> [code: found-colinear-vectors]
+
+
+    Result: [1;30;103mWARN[0m
+
+ >> [1;35;107mcom.google.fonts/check/outline_jaggy_segments[0m
+    [0;36;107mDo outlines contain any jaggy segments?[0m
+    with NotoSansDevanagari-Regular.ttf
+
+    [1;35;107m  Rationale:                                                                [0m
+    [0;30;107m  This test heuristically detects outline segments which form a             [0m
+    [0;30;107m  particularly small angle, indicative of an outline error. This may cause  [0m
+    [0;30;107m  false positives in cases such as extreme ink traps, so should be regarded [0m
+    [0;30;107m  as advisory and backed up by manual inspection.                           [0m
+
+    * [1;30;103mWARN[0m: The following glyphs have jaggy segments:
+	* ddaddhadeva: B<<126.5,57.0>-<184.0,94.0>-<285.0,101.0>>/B<<285.0,101.0>-<209.0,110.0>-<141.0,145.0>> = 10.718228758387104
+	* ivowelsigncandrabindu11deva: B<<1070.0,703.0>-<1035.0,703.0>-<1007.0,714.0>>/B<<1007.0,714.0>-<1039.0,691.0>-<1068.5,666.0>> = 14.258955073497509
+	* ivowelsigncandrabindu11deva: B<<692.0,856.5>-<838.0,817.0>-<950.0,750.0>>/B<<950.0,750.0>-<908.0,792.0>-<881.0,873.0>> = 14.11153354221623
+	* ivowelsigncandrabindudeva: B<<1121.0,703.0>-<1080.0,703.0>-<1047.0,718.0>>/B<<1047.0,718.0>-<1083.0,694.0>-<1115.5,668.5>> = 9.24611274556323 and ivowelsigncandrabindudeva: B<<735.5,853.0>-<894.0,810.0>-<1014.0,739.0>>/B<<1014.0,739.0>-<963.0,780.0>-<932.0,873.0>> = 8.185163691440508 [code: found-jaggy-segments]
+
+
+    Result: [1;30;103mWARN[0m
+
+
+Total:
+
+    [1;97;101mERROR[0m: 0
+    [1;91;107mFAIL[0m: 3
+    [1;30;103mWARN[0m: 5
+    [0;36;107mINFO[0m: 2
+    [0;34;107mSKIP[0m: 16
+    [0;32;107mPASS[0m: 51
+
+
+DONE!
+
+    [1;30;107mMeaning of check results:[0m
+
+    An [1;97;101mERROR[0m is something wrong with FontBakery itself, possibly a bug.
+    A [1;91;107mFAIL[0m is a problem with the font that must be fixed.
+    A [1;30;103mWARN[0m is something that you should consider addressing.
+    An [0;36;107mINFO[0m result simply prints something useful. Typically stats.
+    A [0;32;107mPASS[0m means the font looks good for the given checking routine.
+    And a [0;34;107mSKIP[0m happens when the check does not apply to the given font.
+
+    If you get [1;97;101mERROR[0ms, please help us improve the tool by reporting them at
+    [1;36;107mhttps://github.com/googlefonts/fontbakery/issues[0m
+
+    (but other kinds of bug reports and/or
+     feature requests are also always welcome, of course!)
+

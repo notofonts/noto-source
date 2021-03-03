@@ -1,0 +1,16 @@
+---
+Automatic testing for 'instance_ttf,NotoSansWarangCiti-Regular.ttf', Version 3.000:
+E <name/version> The version is 'Version 3.000' but was expecting it to match '^Version ([0-2])\.(\d{3})(?:;.*.*)?$'
+E <name/manufacturer> The manufacturer is 'Mangu Purty' but was expecting 'Monotype Imaging Inc.'
+E <name/designer> The designer is 'Mangu Purty' but was expecting 'Monotype Design Team'
+E <name/description> The description is 'Designed by Mangu Purty' but was expecting it to match '^Designed by Monotype design team.$'
+E <name/designer_url> The designer url is not set, but was expecting 'http://www.monotype.com/studio'
+E <cmap/required> U+0000 is not mapped in cmap, but it should be (see https://www.microsoft.com/typography/otspec/recom.htm).
+E <cmap/required> U+000D is not mapped in cmap, but it should be (see https://www.microsoft.com/typography/otspec/recom.htm).
+E <cmap/script_required> The following 15 characters are missing from the font: 0000, 000D, 0021, 0028..0029, 002C..002E, 003A..003B, 003F, 2013..2014, 201C..201D.
+W <cmap/script_unexpected> The following 3 chars were not expected in the font: 0027, 200C..200D
+E <reachable> The following 2 glyphs are unreachable in the font: CR (2), NULL (1).
+Found 9 errors.
+Found 1 warning.
+------
+Finished linting 1 file.

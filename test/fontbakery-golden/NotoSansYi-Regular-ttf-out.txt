@@ -1,0 +1,212 @@
+Start ... running 71 individual check executions.
+ >> [1;35;107mcom.google.fonts/check/unicode_range_bits[0m
+    [0;36;107mEnsure UnicodeRange bits are properly set.[0m
+    with NotoSansYi-Regular.ttf
+
+    [1;35;107m  Rationale:                                                                [0m
+    [0;30;107m  When the UnicodeRange bits on the OS/2 table are not properly set, some   [0m
+    [0;30;107m  programs running on Windows may not recognize the font and use a system   [0m
+    [0;30;107m  fallback font instead. For that reason, this check calculates the proper  [0m
+    [0;30;107m  settings by inspecting the glyphs declared on the cmap table and then     [0m
+    [0;30;107m  ensures that their corresponding ranges are enabled.                      [0m
+
+    * [1;30;103mWARN[0m: UnicodeRange bit 0 "Basic Latin" should be 1 because cmap has 3 of the 128 codepoints in this range. [code: bad-range-bit]
+    * [1;30;103mWARN[0m: UnicodeRange bit 1 "Latin-1 Supplement" should be 1 because cmap has 1 of the 128 codepoints in this range. [code: bad-range-bit]
+    * [1;30;103mWARN[0m: UnicodeRange bit 48 "CJK Symbols And Punctuation" should be 1 because cmap has 20 of the 64 codepoints in this range. [code: bad-range-bit]
+    * [1;30;103mWARN[0m: UnicodeRange bit 50 "Katakana" should be 1 because cmap has 1 of the 112 codepoints in this range. [code: bad-range-bit]
+    * [1;30;103mWARN[0m: UnicodeRange bit 67 "Arabic Presentation Forms-B" should be 1 because cmap has 1 of the 144 codepoints in this range. [code: bad-range-bit]
+    * [1;30;103mWARN[0m: UnicodeRange bit 68 "Halfwidth And Fullwidth Forms" should be 1 because cmap has 5 of the 240 codepoints in this range. [code: bad-range-bit]
+
+
+    Result: [1;30;103mWARN[0m
+
+ >> [1;35;107mcom.google.fonts/check/family/win_ascent_and_descent[0m
+    [0;36;107mChecking OS/2 usWinAscent & usWinDescent.[0m
+    with NotoSansYi-Regular.ttf
+
+    [1;35;107m  Rationale:                                                                [0m
+    [0;30;107m  A font's winAscent and winDescent values should be greater than the head  [0m
+    [0;30;107m  table's yMax, abs(yMin) values. If they are less than these values,       [0m
+    [0;30;107m  clipping can occur on Windows platforms                                   [0m
+    [0;30;107m  (https://github.com/RedHatBrand/Overpass/issues/33).                      [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  If the font includes tall/deep writing systems such as Arabic or          [0m
+    [0;30;107m  Devanagari, the winAscent and winDescent can be greater than the yMax and [0m
+    [0;30;107m  abs(yMin) to accommodate vowel marks.                                     [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  When the win Metrics are significantly greater than the upm, the          [0m
+    [0;30;107m  linespacing can appear too loose. To counteract this, enabling the OS/2   [0m
+    [0;30;107m  fsSelection bit 7 (Use_Typo_Metrics), will force Windows to use the OS/2  [0m
+    [0;30;107m  typo values instead. This means the font developer can control the        [0m
+    [0;30;107m  linespacing with the typo values, whilst avoiding clipping by setting the [0m
+    [0;30;107m  win values to values greater than the yMax and abs(yMin).                 [0m
+
+    * [1;91;107mFAIL[0m: OS/2.usWinDescent value 600 is too large. It should be less than double the yMin. Current absolute yMin value is 265 [code: descent]
+
+
+    Result: [1;91;107mFAIL[0m
+
+ >> [1;35;107mcom.google.fonts/check/required_tables[0m
+    [0;36;107mFont contains all required tables?[0m
+    with NotoSansYi-Regular.ttf
+
+    [1;35;107m  Rationale:                                                                [0m
+    [0;30;107m  Depending on the typeface and coverage of a font, certain tables are      [0m
+    [0;30;107m  recommended for optimum quality. For example, the performance of a        [0m
+    [0;30;107m  non-linear font is improved if the VDMX, LTSH, and hdmx tables are        [0m
+    [0;30;107m  present. Non-monospaced Latin fonts should have a kern table. A gasp      [0m
+    [0;30;107m  table is necessary if a designer wants to influence the sizes at which    [0m
+    [0;30;107m  grayscaling is used under Windows. A DSIG table containing a digital      [0m
+    [0;30;107m  signature helps ensure the integrity of the font file. Etc.               [0m
+
+    * [0;36;107mINFO[0m: This font contains the following optional tables [loca, gasp]
+
+
+    Result: [0;36;107mINFO[0m
+
+ >> [1;35;107mcom.google.fonts/check/superfamily/list[0m
+    [0;36;107mList all superfamily filepaths[0m
+    with NotoSansYi-Regular.ttf
+
+    [1;35;107m  Rationale:                                                                [0m
+    [0;30;107m  This is a merely informative check that lists all sibling families        [0m
+    [0;30;107m  detected by fontbakery.                                                   [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  Only the fontfiles in these directories will be considered in             [0m
+    [0;30;107m  superfamily-level checks.                                                 [0m
+
+    * [0;36;107mINFO[0m: . [code: family-path]
+
+
+    Result: [0;36;107mINFO[0m
+
+ >> [1;35;107mcom.google.fonts/check/post_table_version[0m
+    [0;36;107mFont has correct post table version?[0m
+    with NotoSansYi-Regular.ttf
+
+    [1;35;107m  Rationale:                                                                [0m
+    [0;30;107m  Apple recommends against using 'post' table format 3 under most           [0m
+    [0;30;107m  circumstances, as it can create problems with some printer drivers and    [0m
+    [0;30;107m  PDF documents. The savings in disk space usually does not justify the     [0m
+    [0;30;107m  potential loss in functionality.                                          [0m
+    [0;30;107m  Source: https://developer.apple.com/fonts/TrueType-Reference-Manual/RM06/Chap6post.html[0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  The CFF2 table does not contain glyph names, so variable OTFs should be   [0m
+    [0;30;107m  allowed to use post table version 2.                                      [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  This check expects:                                                       [0m
+    [0;30;107m  - Version 2 for TTF or OTF CFF2 Variable fonts                            [0m
+    [0;30;107m  - Version 3 for OTF                                                       [0m
+
+    * [1;91;107mFAIL[0m: Post table should be version 2 instead of 3.0.
+
+
+    Result: [1;91;107mFAIL[0m
+
+ >> [1;35;107mcom.google.fonts/check/monospace[0m
+    [0;36;107mChecking correctness of monospaced metadata.[0m
+    with NotoSansYi-Regular.ttf
+
+    [1;35;107m  Rationale:                                                                [0m
+    [0;30;107m  There are various metadata in the OpenType spec to specify if a font is   [0m
+    [0;30;107m  monospaced or not. If the font is not truly monospaced, then no           [0m
+    [0;30;107m  monospaced metadata should be set (as sometimes they mistakenly are...)   [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  Requirements for monospace fonts:                                         [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  * post.isFixedPitch - "Set to 0 if the font is proportionally spaced,     [0m
+    [0;30;107m  non-zero if the font is not proportionally spaced (monospaced)"           [0m
+    [0;30;107m    www.microsoft.com/typography/otspec/post.htm                            [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  * hhea.advanceWidthMax must be correct, meaning no glyph's width value is [0m
+    [0;30;107m  greater.                                                                  [0m
+    [0;30;107m    www.microsoft.com/typography/otspec/hhea.htm                            [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  * OS/2.panose.bProportion must be set to 9 (monospace). Spec says: "The   [0m
+    [0;30;107m  PANOSE definition contains ten digits each of which currently describes   [0m
+    [0;30;107m  up to sixteen variations. Windows uses bFamilyType, bSerifStyle and       [0m
+    [0;30;107m  bProportion in the font mapper to determine family type. It also uses     [0m
+    [0;30;107m  bProportion to determine if the font is monospaced."                      [0m
+    [0;30;107m    www.microsoft.com/typography/otspec/os2.htm#pan                         [0m
+    [0;30;107m    monotypecom-test.monotype.de/services/pan2                              [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  * OS/2.xAvgCharWidth must be set accurately.                              [0m
+    [0;30;107m    "OS/2.xAvgCharWidth is used when rendering monospaced fonts, at least   [0m
+    [0;30;107m  by Windows GDI"                                                           [0m
+    [0;30;107m    http://typedrawers.com/discussion/comment/15397/#Comment_15397          [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  Also we should report an error for glyphs not of average width.           [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  Please also note:                                                         [0m
+    [0;30;107m  Thomas Phinney told us that a few years ago (as of December 2019), if you [0m
+    [0;30;107m  gave a font a monospace flag in Panose, Microsoft Word would ignore the   [0m
+    [0;30;107m  actual advance widths and treat it as monospaced. Source:                 [0m
+    [0;30;107m  https://typedrawers.com/discussion/comment/45140/#Comment_45140           [0m
+
+    * [1;91;107mFAIL[0m: On monospaced fonts, the value of post.isFixedPitch must be set to a non-zero value (meaning 'fixed width monospaced'), but got 0 instead. [code: mono-bad-post-isFixedPitch]
+    * [1;91;107mFAIL[0m: On monospaced fonts, the value of OS/2.panose.bProportion must be set to 9 (proportion: monospaced), but got 2 instead. [code: mono-bad-panose-proportion]
+    * [1;30;103mWARN[0m: Font is monospaced but 1209 glyphs (96.64268585131894%) have a different width. You should check the widths of: ['uni000D', 'space', 'uniA000', 'uniA001', 'uniA002', 'uniA003', 'uniA004', 'uniA005', 'uniA006', 'uniA007', 'uniA008', 'uniA009', 'uniA00A', 'uniA00B', 'uniA00C', 'uniA00D', 'uniA00E', 'uniA00F', 'uniA010', 'uniA011', 'uniA012', 'uniA013', 'uniA014', 'uniA015', 'uniA016', 'uniA017', 'uniA018', 'uniA019', 'uniA01A', 'uniA01B', 'uniA01C', 'uniA01D', 'uniA01E', 'uniA01F', 'uniA020', 'uniA021', 'uniA022', 'uniA023', 'uniA024', 'uniA025', 'uniA026', 'uniA027', 'uniA028', 'uniA029', 'uniA02A', 'uniA02B', 'uniA02C', 'uniA02D', 'uniA02E', 'uniA02F', 'uniA030', 'uniA031', 'uniA032', 'uniA033', 'uniA034', 'uniA035', 'uniA036', 'uniA037', 'uniA038', 'uniA039', 'uniA03A', 'uniA03B', 'uniA03C', 'uniA03D', 'uniA03E', 'uniA03F', 'uniA040', 'uniA041', 'uniA042', 'uniA043', 'uniA044', 'uniA045', 'uniA046', 'uniA047', 'uniA048', 'uniA049', 'uniA04A', 'uniA04B', 'uniA04C', 'uniA04D', 'uniA04E', 'uniA04F', 'uniA050', 'uniA051', 'uniA052', 'uniA053', 'uniA054', 'uniA055', 'uniA056', 'uniA057', 'uniA058', 'uniA05A', 'uniA05B', 'uniA05C', 'uniA05D', 'uniA05E', 'uniA05F', 'uniA060', 'uniA061', 'uniA062', 'uniA063', 'uniA064', 'uniA065', 'uniA066', 'uniA067', 'uniA068', 'uniA069', 'uniA06A', 'uniA06B', 'uniA06C', 'uniA06D', 'uniA06E', 'uniA06F', 'uniA070', 'uniA071', 'uniA072', 'uniA073', 'uniA074', 'uniA075', 'uniA076', 'uniA077', 'uniA078', 'uniA079', 'uniA07A', 'uniA07B', 'uniA07C', 'uniA07D', 'uniA07E', 'uniA07F', 'uniA080', 'uniA081', 'uniA082', 'uniA083', 'uniA084', 'uniA085', 'uniA086', 'uniA087', 'uniA088', 'uniA089', 'uniA08A', 'uniA08B', 'uniA08C', 'uniA08D', 'uniA08E', 'uniA08F', 'uniA090', 'uniA091', 'uniA092', 'uniA093', 'uniA095', 'uniA096', 'uniA097', 'uniA098', 'uniA099', 'uniA09A', 'uniA09B', 'uniA09C', 'uniA09D', 'uniA09E', 'uniA09F', 'uniA0A0', 'uniA0A1', 'uniA0A2', 'uniA0A3', 'uniA0A4', 'uniA0A5', 'uniA0A7', 'uniA0A8', 'uniA0A9', 'uniA0AA', 'uniA0AB', 'uniA0AC', 'uniA0AD', 'uniA0AF', 'uniA0B0', 'uniA0B1', 'uniA0B4', 'uniA0B5', 'uniA0B6', 'uniA0B7', 'uniA0B8', 'uniA0B9', 'uniA0BA', 'uniA0BB', 'uniA0BC', 'uniA0BD', 'uniA0BE', 'uniA0BF', 'uniA0C0', 'uniA0C1', 'uniA0C2', 'uniA0C3', 'uniA0C4', 'uniA0C5', 'uniA0C6', 'uniA0C7', 'uniA0C8', 'uniA0C9', 'uniA0CA', 'uniA0CB', 'uniA0CC', 'uniA0CD', 'uniA0CE', 'uniA0CF', 'uniA0D0', 'uniA0D1', 'uniA0D2', 'uniA0D3', 'uniA0D4', 'uniA0D5', 'uniA0D6', 'uniA0D7', 'uniA0D8', 'uniA0D9', 'uniA0DA', 'uniA0DB', 'uniA0DC', 'uniA0DD', 'uniA0DE', 'uniA0DF', 'uniA0E0', 'uniA0E1', 'uniA0E2', 'uniA0E3', 'uniA0E4', 'uniA0E5', 'uniA0E6', 'uniA0E7', 'uniA0E8', 'uniA0E9', 'uniA0ED', 'uniA0EE', 'uniA0EF', 'uniA0F0', 'uniA0F1', 'uniA0F2', 'uniA0F3', 'uniA0F4', 'uniA0F5', 'uniA0F6', 'uniA0F7', 'uniA0F8', 'uniA0F9', 'uniA0FA', 'uniA0FB', 'uniA0FC', 'uniA0FD', 'uniA0FE', 'uniA0FF', 'uniA100', 'uniA101', 'uniA102', 'uniA103', 'uniA104', 'uniA105', 'uniA106', 'uniA107', 'uniA108', 'uniA109', 'uniA10A', 'uniA10B', 'uniA10C', 'uniA10D', 'uniA10E', 'uniA10F', 'uniA110', 'uniA111', 'uniA112', 'uniA113', 'uniA114', 'uniA115', 'uniA116', 'uniA117', 'uniA118', 'uniA119', 'uniA11A', 'uniA11B', 'uniA11C', 'uniA11D', 'uniA11E', 'uniA11F', 'uniA120', 'uniA121', 'uniA122', 'uniA123', 'uniA124', 'uniA125', 'uniA126', 'uniA127', 'uniA128', 'uniA129', 'uniA12A', 'uniA12B', 'uniA12C', 'uniA12D', 'uniA12E', 'uniA12F', 'uniA130', 'uniA133', 'uniA134', 'uniA135', 'uniA136', 'uniA137', 'uniA138', 'uniA139', 'uniA13A', 'uniA13B', 'uniA13C', 'uniA13D', 'uniA13E', 'uniA13F', 'uniA140', 'uniA141', 'uniA142', 'uniA143', 'uniA144', 'uniA145', 'uniA146', 'uniA147', 'uniA148', 'uniA149', 'uniA14A', 'uniA14B', 'uniA14C', 'uniA14D', 'uniA14E', 'uniA14F', 'uniA150', 'uniA151', 'uniA152', 'uniA153', 'uniA154', 'uniA155', 'uniA156', 'uniA157', 'uniA158', 'uniA159', 'uniA15A', 'uniA15B', 'uniA15C', 'uniA15D', 'uniA15E', 'uniA15F', 'uniA160', 'uniA161', 'uniA162', 'uniA163', 'uniA164', 'uniA165', 'uniA166', 'uniA167', 'uniA168', 'uniA169', 'uniA16A', 'uniA16B', 'uniA16C', 'uniA16D', 'uniA16E', 'uniA16F', 'uniA170', 'uniA171', 'uniA172', 'uniA173', 'uniA174', 'uniA175', 'uniA176', 'uniA177', 'uniA178', 'uniA179', 'uniA17A', 'uniA17B', 'uniA17C', 'uniA17E', 'uniA17F', 'uniA180', 'uniA181', 'uniA182', 'uniA183', 'uniA184', 'uniA185', 'uniA186', 'uniA187', 'uniA188', 'uniA189', 'uniA18A', 'uniA18B', 'uniA18C', 'uniA18D', 'uniA18E', 'uniA18F', 'uniA190', 'uniA191', 'uniA192', 'uniA193', 'uniA194', 'uniA195', 'uniA196', 'uniA197', 'uniA198', 'uniA199', 'uniA19A', 'uniA19B', 'uniA19C', 'uniA19D', 'uniA19E', 'uniA19F', 'uniA1A0', 'uniA1A1', 'uniA1A2', 'uniA1A3', 'uniA1A4', 'uniA1A5', 'uniA1A6', 'uniA1A7', 'uniA1A8', 'uniA1A9', 'uniA1AA', 'uniA1AB', 'uniA1AC', 'uniA1AD', 'uniA1AE', 'uniA1AF', 'uniA1B0', 'uniA1B1', 'uniA1B2', 'uniA1B3', 'uniA1B4', 'uniA1B5', 'uniA1B6', 'uniA1B7', 'uniA1B8', 'uniA1B9', 'uniA1BB', 'uniA1BC', 'uniA1BD', 'uniA1BE', 'uniA1BF', 'uniA1C0', 'uniA1C1', 'uniA1C2', 'uniA1C3', 'uniA1C4', 'uniA1C5', 'uniA1C6', 'uniA1C7', 'uniA1C8', 'uniA1C9', 'uniA1CA', 'uniA1CB', 'uniA1CC', 'uniA1CD', 'uniA1CF', 'uniA1D0', 'uniA1D1', 'uniA1D2', 'uniA1D3', 'uniA1D4', 'uniA1D5', 'uniA1D6', 'uniA1D7', 'uniA1D8', 'uniA1D9', 'uniA1DA', 'uniA1DB', 'uniA1DC', 'uniA1DD', 'uniA1DE', 'uniA1DF', 'uniA1E0', 'uniA1E1', 'uniA1E2', 'uniA1E3', 'uniA1E4', 'uniA1E6', 'uniA1E7', 'uniA1E8', 'uniA1EA', 'uniA1EB', 'uniA1EC', 'uniA1ED', 'uniA1EE', 'uniA1EF', 'uniA1F0', 'uniA1F1', 'uniA1F2', 'uniA1F3', 'uniA1F4', 'uniA1F6', 'uniA1F7', 'uniA1F8', 'uniA1F9', 'uniA1FA', 'uniA1FB', 'uniA1FC', 'uniA1FD', 'uniA1FE', 'uniA1FF', 'uniA200', 'uniA201', 'uniA202', 'uniA203', 'uniA204', 'uniA205', 'uniA206', 'uniA207', 'uniA208', 'uniA209', 'uniA20A', 'uniA20B', 'uniA20C', 'uniA20D', 'uniA20E', 'uniA20F', 'uniA210', 'uniA211', 'uniA212', 'uniA213', 'uniA214', 'uniA215', 'uniA216', 'uniA217', 'uniA218', 'uniA219', 'uniA21A', 'uniA21B', 'uniA21C', 'uniA21D', 'uniA21E', 'uniA21F', 'uniA220', 'uniA221', 'uniA222', 'uniA223', 'uniA224', 'uniA225', 'uniA226', 'uniA227', 'uniA228', 'uniA229', 'uniA22A', 'uniA22B', 'uniA22C', 'uniA22D', 'uniA22E', 'uniA22F', 'uniA230', 'uniA231', 'uniA232', 'uniA233', 'uniA234', 'uniA235', 'uniA236', 'uniA237', 'uniA238', 'uniA239', 'uniA23A', 'uniA23B', 'uniA23C', 'uniA23D', 'uniA23E', 'uniA23F', 'uniA240', 'uniA241', 'uniA242', 'uniA243', 'uniA244', 'uniA245', 'uniA246', 'uniA247', 'uniA248', 'uniA249', 'uniA24A', 'uniA24B', 'uniA24C', 'uniA24D', 'uniA24E', 'uniA24F', 'uniA250', 'uniA251', 'uniA252', 'uniA253', 'uniA254', 'uniA255', 'uniA256', 'uniA257', 'uniA258', 'uniA259', 'uniA25A', 'uniA25B', 'uniA25C', 'uniA25D', 'uniA25E', 'uniA25F', 'uniA260', 'uniA261', 'uniA262', 'uniA263', 'uniA264', 'uniA265', 'uniA266', 'uniA267', 'uniA268', 'uniA269', 'uniA26A', 'uniA26B', 'uniA26C', 'uniA26D', 'uniA26E', 'uniA26F', 'uniA270', 'uniA271', 'uniA272', 'uniA273', 'uniA274', 'uniA275', 'uniA276', 'uniA277', 'uniA278', 'uniA279', 'uniA27C', 'uniA27D', 'uniA27E', 'uniA27F', 'uniA280', 'uniA281', 'uniA282', 'uniA283', 'uniA284', 'uniA285', 'uniA286', 'uniA287', 'uniA288', 'uniA289', 'uniA28A', 'uniA28B', 'uniA28C', 'uniA28D', 'uniA28E', 'uniA28F', 'uniA290', 'uniA291', 'uniA292', 'uniA293', 'uniA294', 'uniA295', 'uniA296', 'uniA297', 'uniA298', 'uniA299', 'uniA29A', 'uniA29B', 'uniA29C', 'uniA29D', 'uniA29E', 'uniA29F', 'uniA2A0', 'uniA2A1', 'uniA2A2', 'uniA2A3', 'uniA2A4', 'uniA2A5', 'uniA2A6', 'uniA2A7', 'uniA2A8', 'uniA2A9', 'uniA2AA', 'uniA2AB', 'uniA2AC', 'uniA2AD', 'uniA2AE', 'uniA2AF', 'uniA2B0', 'uniA2B1', 'uniA2B2', 'uniA2B3', 'uniA2B4', 'uniA2B5', 'uniA2B9', 'uniA2BA', 'uniA2BB', 'uniA2BC', 'uniA2BD', 'uniA2BE', 'uniA2BF', 'uniA2C0', 'uniA2C3', 'uniA2C4', 'uniA2C5', 'uniA2C6', 'uniA2C7', 'uniA2C8', 'uniA2C9', 'uniA2CA', 'uniA2CB', 'uniA2CC', 'uniA2CD', 'uniA2CE', 'uniA2CF', 'uniA2D0', 'uniA2D1', 'uniA2D2', 'uniA2D3', 'uniA2D4', 'uniA2D5', 'uniA2D6', 'uniA2D7', 'uniA2D8', 'uniA2D9', 'uniA2DA', 'uniA2DB', 'uniA2DC', 'uniA2DD', 'uniA2DE', 'uniA2DF', 'uniA2E0', 'uniA2E1', 'uniA2E2', 'uniA2E3', 'uniA2E4', 'uniA2E5', 'uniA2E6', 'uniA2E7', 'uniA2E8', 'uniA2E9', 'uniA2EA', 'uniA2EB', 'uniA2EC', 'uniA2ED', 'uniA2EE', 'uniA2EF', 'uniA2F0', 'uniA2F1', 'uniA2F2', 'uniA2F3', 'uniA2F4', 'uniA2F5', 'uniA2F6', 'uniA2F7', 'uniA2F8', 'uniA2F9', 'uniA2FA', 'uniA2FB', 'uniA2FC', 'uniA2FD', 'uniA2FE', 'uniA2FF', 'uniA300', 'uniA301', 'uniA302', 'uniA303', 'uniA304', 'uniA305', 'uniA307', 'uniA308', 'uniA309', 'uniA30A', 'uniA30B', 'uniA30C', 'uniA30D', 'uniA30E', 'uniA30F', 'uniA310', 'uniA311', 'uniA312', 'uniA313', 'uniA314', 'uniA315', 'uniA316', 'uniA317', 'uniA318', 'uniA319', 'uniA31A', 'uniA31B', 'uniA31C', 'uniA31D', 'uniA31E', 'uniA31F', 'uniA320', 'uniA321', 'uniA322', 'uniA323', 'uniA324', 'uniA325', 'uniA326', 'uniA327', 'uniA328', 'uniA329', 'uniA32A', 'uniA32B', 'uniA32C', 'uniA32D', 'uniA32E', 'uniA32F', 'uniA330', 'uniA331', 'uniA332', 'uniA333', 'uniA334', 'uniA335', 'uniA338', 'uniA339', 'uniA33A', 'uniA33C', 'uniA33D', 'uniA33E', 'uniA33F', 'uniA340', 'uniA341', 'uniA342', 'uniA343', 'uniA344', 'uniA345', 'uniA346', 'uniA347', 'uniA348', 'uniA349', 'uniA34A', 'uniA34B', 'uniA34C', 'uniA34D', 'uniA34E', 'uniA34F', 'uniA350', 'uniA351', 'uniA352', 'uniA353', 'uniA354', 'uniA355', 'uniA356', 'uniA357', 'uniA358', 'uniA359', 'uniA35A', 'uniA35B', 'uniA35C', 'uniA35D', 'uniA35E', 'uniA35F', 'uniA360', 'uniA361', 'uniA362', 'uniA363', 'uniA364', 'uniA365', 'uniA366', 'uniA367', 'uniA368', 'uniA369', 'uniA36A', 'uniA36B', 'uniA36C', 'uniA36D', 'uniA36E', 'uniA36F', 'uniA370', 'uniA371', 'uniA372', 'uniA373', 'uniA374', 'uniA375', 'uniA376', 'uniA377', 'uniA378', 'uniA379', 'uniA37A', 'uniA37B', 'uniA37C', 'uniA37D', 'uniA37E', 'uniA37F', 'uniA380', 'uniA381', 'uniA382', 'uniA383', 'uniA384', 'uniA385', 'uniA386', 'uniA387', 'uniA388', 'uniA389', 'uniA38A', 'uniA38B', 'uniA38C', 'uniA38D', 'uniA38E', 'uniA38F', 'uniA390', 'uniA391', 'uniA392', 'uniA393', 'uniA395', 'uniA396', 'uniA397', 'uniA398', 'uniA399', 'uniA39A', 'uniA39B', 'uniA39C', 'uniA39D', 'uniA39E', 'uniA39F', 'uniA3A0', 'uniA3A1', 'uniA3A2', 'uniA3A3', 'uniA3A4', 'uniA3A5', 'uniA3A6', 'uniA3A7', 'uniA3A8', 'uniA3A9', 'uniA3AA', 'uniA3AB', 'uniA3AC', 'uniA3AD', 'uniA3AE', 'uniA3AF', 'uniA3B0', 'uniA3B1', 'uniA3B2', 'uniA3B3', 'uniA3B4', 'uniA3B5', 'uniA3B6', 'uniA3B7', 'uniA3B8', 'uniA3B9', 'uniA3BA', 'uniA3BB', 'uniA3BC', 'uniA3BD', 'uniA3BE', 'uniA3BF', 'uniA3C0', 'uniA3C1', 'uniA3C2', 'uniA3C3', 'uniA3C4', 'uniA3C5', 'uniA3C7', 'uniA3C8', 'uniA3C9', 'uniA3CA', 'uniA3CB', 'uniA3CC', 'uniA3CD', 'uniA3CE', 'uniA3CF', 'uniA3D0', 'uniA3D1', 'uniA3D2', 'uniA3D3', 'uniA3D4', 'uniA3D5', 'uniA3D6', 'uniA3D7', 'uniA3D8', 'uniA3D9', 'uniA3DA', 'uniA3DB', 'uniA3DC', 'uniA3DD', 'uniA3DE', 'uniA3DF', 'uniA3E0', 'uniA3E1', 'uniA3E2', 'uniA3E3', 'uniA3E4', 'uniA3E5', 'uniA3E6', 'uniA3E7', 'uniA3E8', 'uniA3E9', 'uniA3EA', 'uniA3EB', 'uniA3EC', 'uniA3ED', 'uniA3EE', 'uniA3EF', 'uniA3F1', 'uniA3F2', 'uniA3F3', 'uniA3F4', 'uniA3F5', 'uniA3F6', 'uniA3F7', 'uniA3F8', 'uniA3F9', 'uniA3FA', 'uniA3FB', 'uniA3FC', 'uniA3FD', 'uniA3FE', 'uniA400', 'uniA401', 'uniA402', 'uniA403', 'uniA404', 'uniA405', 'uniA406', 'uniA407', 'uniA408', 'uniA409', 'uniA40A', 'uniA40C', 'uniA40F', 'uniA412', 'uniA413', 'uniA414', 'uniA415', 'uniA416', 'uniA417', 'uniA418', 'uniA419', 'uniA41A', 'uniA41B', 'uniA41C', 'uniA41D', 'uniA41E', 'uniA41F', 'uniA420', 'uniA421', 'uniA422', 'uniA423', 'uniA424', 'uniA425', 'uniA426', 'uniA427', 'uniA428', 'uniA429', 'uniA42A', 'uniA42B', 'uniA42C', 'uniA42D', 'uniA42E', 'uniA42F', 'uniA430', 'uniA431', 'uniA432', 'uniA433', 'uniA434', 'uniA435', 'uniA436', 'uniA437', 'uniA438', 'uniA439', 'uniA43A', 'uniA43B', 'uniA43C', 'uniA43D', 'uniA43E', 'uniA43F', 'uniA440', 'uniA441', 'uniA442', 'uniA443', 'uniA444', 'uniA445', 'uniA446', 'uniA447', 'uniA448', 'uniA449', 'uniA44A', 'uniA44B', 'uniA44C', 'uniA44D', 'uniA44E', 'uniA44F', 'uniA450', 'uniA451', 'uniA452', 'uniA453', 'uniA454', 'uniA455', 'uniA456', 'uniA457', 'uniA458', 'uniA45A', 'uniA45B', 'uniA45C', 'uniA45D', 'uniA45E', 'uniA45F', 'uniA460', 'uniA461', 'uniA462', 'uniA463', 'uniA464', 'uniA465', 'uniA466', 'uniA467', 'uniA468', 'uniA469', 'uniA46A', 'uniA46B', 'uniA46C', 'uniA46D', 'uniA46E', 'uniA46F', 'uniA470', 'uniA471', 'uniA472', 'uniA473', 'uniA474', 'uniA475', 'uniA476', 'uniA477', 'uniA478', 'uniA479', 'uniA47A', 'uniA47B', 'uniA47C', 'uniA47D', 'uniA47E', 'uniA47F', 'uniA480', 'uniA481', 'uniA482', 'uniA483', 'uniA484', 'uniA485', 'uniA486', 'uniA487', 'uniA488', 'uniA489', 'uniA48A', 'uniA48B', 'uniA48C', 'uniA490', 'uniA491', 'uniA492', 'uniA493', 'uniA494', 'uniA495', 'uniA496', 'uniA497', 'uniA498', 'uniA499', 'uniA49A', 'uniA49B', 'uniA49C', 'uniA49D', 'uniA49E', 'uniA49F', 'uniA4A0', 'uniA4A1', 'uniA4A2', 'uniA4A3', 'uniA4A4', 'uniA4A5', 'uniA4A6', 'uniA4A7', 'uniA4A9', 'uniA4AA', 'uniA4AB', 'uniA4AC', 'uniA4AD', 'uniA4AE', 'uniA4AF', 'uniA4B0', 'uniA4B1', 'uniA4B2', 'uniA4B3', 'uniA4B4', 'uniA4B5', 'uniA4B6', 'uniA4B7', 'uniA4B8', 'uniA4B9', 'uniA4BA', 'uniA4BB', 'uniA4BC', 'uniA4BD', 'uniA4BE', 'uniA4BF', 'uniA4C0', 'uniA4C1', 'uniA4C2', 'uniA4C3', 'uniA4C4', 'uniA4C5', 'uniA4C6', 'uni3001', 'uni3002', 'uni3008', 'uni3009', 'uni300A', 'uni300B', 'uni300C', 'uni300D', 'uni300E', 'uni300F', 'uni3010', 'uni3011', 'uni3014', 'uni3015', 'uni3016', 'uni3017', 'uni3018', 'uni3019', 'uni301A', 'uni301B', 'uni30FB', 'uniFF61', 'uniFF62', 'uniFF63', 'uniFF64', 'uniFF65'] [code: mono-outliers]
+
+
+    Result: [1;91;107mFAIL[0m
+
+ >> [1;35;107mcom.google.fonts/check/dsig[0m
+    [0;36;107mDoes the font have a DSIG table?[0m
+    with NotoSansYi-Regular.ttf
+
+    [1;35;107m  Rationale:                                                                [0m
+    [0;30;107m  Microsoft Office 2013 and below products expect fonts to have a digital   [0m
+    [0;30;107m  signature declared in a DSIG table in order to implement OpenType         [0m
+    [0;30;107m  features. The EOL date for Microsoft Office 2013 products is 4/11/2023.   [0m
+    [0;30;107m  This issue does not impact Microsoft Office 2016 and above products.      [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  This checks verifies that this signature is available in the font.        [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  A fake signature is enough to address this issue. If needed, a dummy      [0m
+    [0;30;107m  table can be added to the font with the `gftools fix-dsig` script         [0m
+    [0;30;107m  available at https://github.com/googlefonts/gftools                       [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  Reference: https://github.com/googlefonts/fontbakery/issues/1845          [0m
+
+    * [1;91;107mFAIL[0m: This font lacks a digital signature (DSIG table). Some applications may require one (even if only a dummy placeholder) in order to work properly. You can add a DSIG table by running the `gftools fix-dsig` script. [code: lacks-signature]
+
+
+    Result: [1;91;107mFAIL[0m
+
+ >> [1;35;107mcom.google.fonts/check/gpos_kerning_info[0m
+    [0;36;107mDoes GPOS table have kerning information?[0m
+    with NotoSansYi-Regular.ttf
+
+    * [1;30;103mWARN[0m: GPOS table lacks kerning information. [code: lacks-kern-info]
+
+
+    Result: [1;30;103mWARN[0m
+
+
+Total:
+
+    [1;97;101mERROR[0m: 0
+    [1;91;107mFAIL[0m: 4
+    [1;30;103mWARN[0m: 2
+    [0;36;107mINFO[0m: 2
+    [0;34;107mSKIP[0m: 23
+    [0;32;107mPASS[0m: 40
+
+
+DONE!
+
+    [1;30;107mMeaning of check results:[0m
+
+    An [1;97;101mERROR[0m is something wrong with FontBakery itself, possibly a bug.
+    A [1;91;107mFAIL[0m is a problem with the font that must be fixed.
+    A [1;30;103mWARN[0m is something that you should consider addressing.
+    An [0;36;107mINFO[0m result simply prints something useful. Typically stats.
+    A [0;32;107mPASS[0m means the font looks good for the given checking routine.
+    And a [0;34;107mSKIP[0m happens when the check does not apply to the given font.
+
+    If you get [1;97;101mERROR[0ms, please help us improve the tool by reporting them at
+    [1;36;107mhttps://github.com/googlefonts/fontbakery/issues[0m
+
+    (but other kinds of bug reports and/or
+     feature requests are also always welcome, of course!)
+

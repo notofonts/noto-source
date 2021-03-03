@@ -1,0 +1,16 @@
+---
+Automatic testing for 'instance_ttf,NotoSerifBengali-SemiCondensed.ttf', Version 2.001:
+E <name/family> The family is 'Noto Serif Bengali SemiCondensed' but was expecting 'Noto Serif Bengali SemCond'
+E <name/designer> The designer is 'Juan Bruce, Universal Thirst, Indian Type Foundry and the Monotype Design Team.' but was expecting 'Indian Type Foundry'
+W <cmap/script_unexpected> The following 1 chars were not expected in the font: A8F1
+E <bounds/glyph/ymax> Real yMax for glyph 599 (uni09FE) is 1212, which is higher than the font's sTypoAscent (1092), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 620 (uniA8F1) is 1213, which is higher than the font's sTypoAscent (1092), resulting in clipping.
+E <bounds/font/ymax> Real yMax 1213, but it should be less than or equal to the value of Ascent in 'hhea' table, which is 1092.
+E <paths/intersection> The glyph 'uni0995' has intersecting outlines: start and end segments match: (394.0, 433.0)
+E <paths/intersection> The glyph 'uni099909CD0995' has intersecting outlines: start and end segments match: (384.0, 272.0)
+E <paths/intersection> The glyph 'uni099E09CD099B' has intersecting outlines: start and end segments match: (317.0, 194.0)
+W <advances/comma_period> The advance of U+002c (comma, glyph 70) is 275, but expected 265.
+Found 8 errors.
+Found 2 warnings.
+------
+Finished linting 1 file.

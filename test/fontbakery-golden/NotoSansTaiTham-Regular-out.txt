@@ -1,0 +1,262 @@
+Start ... running 77 individual check executions.
+ >> [1;35;107mcom.google.fonts/check/family/win_ascent_and_descent[0m
+    [0;36;107mChecking OS/2 usWinAscent & usWinDescent.[0m
+    with NotoSansTaiTham-Regular.ttf
+
+    [1;35;107m  Rationale:                                                                [0m
+    [0;30;107m  A font's winAscent and winDescent values should be greater than the head  [0m
+    [0;30;107m  table's yMax, abs(yMin) values. If they are less than these values,       [0m
+    [0;30;107m  clipping can occur on Windows platforms                                   [0m
+    [0;30;107m  (https://github.com/RedHatBrand/Overpass/issues/33).                      [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  If the font includes tall/deep writing systems such as Arabic or          [0m
+    [0;30;107m  Devanagari, the winAscent and winDescent can be greater than the yMax and [0m
+    [0;30;107m  abs(yMin) to accommodate vowel marks.                                     [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  When the win Metrics are significantly greater than the upm, the          [0m
+    [0;30;107m  linespacing can appear too loose. To counteract this, enabling the OS/2   [0m
+    [0;30;107m  fsSelection bit 7 (Use_Typo_Metrics), will force Windows to use the OS/2  [0m
+    [0;30;107m  typo values instead. This means the font developer can control the        [0m
+    [0;30;107m  linespacing with the typo values, whilst avoiding clipping by setting the [0m
+    [0;30;107m  win values to values greater than the yMax and abs(yMin).                 [0m
+
+    * [1;91;107mFAIL[0m: OS/2.usWinAscent value should be equal or greater than 1059, but got 1034 instead [code: ascent]
+
+
+    Result: [1;91;107mFAIL[0m
+
+ >> [1;35;107mcom.google.fonts/check/required_tables[0m
+    [0;36;107mFont contains all required tables?[0m
+    with NotoSansTaiTham-Regular.ttf
+
+    [1;35;107m  Rationale:                                                                [0m
+    [0;30;107m  Depending on the typeface and coverage of a font, certain tables are      [0m
+    [0;30;107m  recommended for optimum quality. For example, the performance of a        [0m
+    [0;30;107m  non-linear font is improved if the VDMX, LTSH, and hdmx tables are        [0m
+    [0;30;107m  present. Non-monospaced Latin fonts should have a kern table. A gasp      [0m
+    [0;30;107m  table is necessary if a designer wants to influence the sizes at which    [0m
+    [0;30;107m  grayscaling is used under Windows. A DSIG table containing a digital      [0m
+    [0;30;107m  signature helps ensure the integrity of the font file. Etc.               [0m
+
+    * [0;36;107mINFO[0m: This font contains the following optional tables [loca, GPOS, GSUB]
+
+
+    Result: [0;36;107mINFO[0m
+
+ >> [1;35;107mcom.google.fonts/check/superfamily/list[0m
+    [0;36;107mList all superfamily filepaths[0m
+    with NotoSansTaiTham-Regular.ttf
+
+    [1;35;107m  Rationale:                                                                [0m
+    [0;30;107m  This is a merely informative check that lists all sibling families        [0m
+    [0;30;107m  detected by fontbakery.                                                   [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  Only the fontfiles in these directories will be considered in             [0m
+    [0;30;107m  superfamily-level checks.                                                 [0m
+
+    * [0;36;107mINFO[0m: . [code: family-path]
+
+
+    Result: [0;36;107mINFO[0m
+
+ >> [1;35;107mcom.google.fonts/check/monospace[0m
+    [0;36;107mChecking correctness of monospaced metadata.[0m
+    with NotoSansTaiTham-Regular.ttf
+
+    [1;35;107m  Rationale:                                                                [0m
+    [0;30;107m  There are various metadata in the OpenType spec to specify if a font is   [0m
+    [0;30;107m  monospaced or not. If the font is not truly monospaced, then no           [0m
+    [0;30;107m  monospaced metadata should be set (as sometimes they mistakenly are...)   [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  Requirements for monospace fonts:                                         [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  * post.isFixedPitch - "Set to 0 if the font is proportionally spaced,     [0m
+    [0;30;107m  non-zero if the font is not proportionally spaced (monospaced)"           [0m
+    [0;30;107m    www.microsoft.com/typography/otspec/post.htm                            [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  * hhea.advanceWidthMax must be correct, meaning no glyph's width value is [0m
+    [0;30;107m  greater.                                                                  [0m
+    [0;30;107m    www.microsoft.com/typography/otspec/hhea.htm                            [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  * OS/2.panose.bProportion must be set to 9 (monospace). Spec says: "The   [0m
+    [0;30;107m  PANOSE definition contains ten digits each of which currently describes   [0m
+    [0;30;107m  up to sixteen variations. Windows uses bFamilyType, bSerifStyle and       [0m
+    [0;30;107m  bProportion in the font mapper to determine family type. It also uses     [0m
+    [0;30;107m  bProportion to determine if the font is monospaced."                      [0m
+    [0;30;107m    www.microsoft.com/typography/otspec/os2.htm#pan                         [0m
+    [0;30;107m    monotypecom-test.monotype.de/services/pan2                              [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  * OS/2.xAvgCharWidth must be set accurately.                              [0m
+    [0;30;107m    "OS/2.xAvgCharWidth is used when rendering monospaced fonts, at least   [0m
+    [0;30;107m  by Windows GDI"                                                           [0m
+    [0;30;107m    http://typedrawers.com/discussion/comment/15397/#Comment_15397          [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  Also we should report an error for glyphs not of average width.           [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  Please also note:                                                         [0m
+    [0;30;107m  Thomas Phinney told us that a few years ago (as of December 2019), if you [0m
+    [0;30;107m  gave a font a monospace flag in Panose, Microsoft Word would ignore the   [0m
+    [0;30;107m  actual advance widths and treat it as monospaced. Source:                 [0m
+    [0;30;107m  https://typedrawers.com/discussion/comment/45140/#Comment_45140           [0m
+
+    * [1;91;107mFAIL[0m: On monospaced fonts, the value of post.isFixedPitch must be set to a non-zero value (meaning 'fixed width monospaced'), but got 0 instead. [code: mono-bad-post-isFixedPitch]
+    * [1;91;107mFAIL[0m: On monospaced fonts, the value of OS/2.panose.bProportion must be set to 9 (proportion: monospaced), but got 3 instead. [code: mono-bad-panose-proportion]
+    * [1;30;103mWARN[0m: Font is monospaced but 679 glyphs (82.40%) have a different width. You should check the widths of: ['kaHigh_raMedial_signOotham', 'kaHigh_raMedialtham', 'kaHigh_raMedial_signAetham', 'kaHigh_raMedial_signEtham', 'kaHigh_signAetham', 'kaHigh_signEtham', 'kaHigh_raMedial_signAitham', 'kaHigh_signOotham', 'kaHigh_signAitham', 'khaHigh_raMedialtham', 'khaHigh_raMedial_signAetham', 'kaHigh_raMedial_signThamAitham', 'khaHigh_raMedial_signAitham', 'khaHigh_signEtham', 'kaHigh_signThamAitham', 'khaHigh_raMedial_signOotham', 'khaHigh_raMedial_signThamAitham', 'khaHigh_signOotham', 'khaHigh_signAitham', 'kxaHigh_raMedial_signAetham', 'khaHigh_signAetham', 'khaHigh_raMedial_signEtham', 'khaHigh_signThamAitham', 'kxaHigh_raMedial_signEtham', 'kxaHigh_raMedial_signAitham', 'kxaHigh_signAetham', 'kxaHigh_signEtham', 'kxaHigh_raMedial_signThamAitham', 'kxaHigh_raMedialtham', 'kxaHigh_signAitham', 'kxaHigh_raMedial_signOotham', 'kaLow_raMedialtham', 'kaLow_raMedial_signAetham', 'kxaHigh_signThamAitham', 'kaLow_raMedial_signAitham', 'kaLow_signEtham', 'kaLow_signAetham', 'kaLow_signOotham', 'kxaHigh_signOotham', 'kaLow_signAitham', 'kaLow_raMedial_signThamAitham', 'kaLow_raMedial_signEtham', 'kxaLow_raMedial_signEtham', 'kaLow_signThamAitham', 'kxaLow_raMedial_signAitham', 'kxaLow_signEtham', 'kxaLow_raMedialtham', 'kxaLow_raMedial_signOotham', 'kaLow_raMedial_signOotham', 'kxaLow_signAetham', 'kxaLow_signThamAitham', 'kxaLow_signAitham', 'kxaLow_raMedial_signThamAitham', 'khaLow_raMedial_signEtham', 'khaLow_raMedialtham', 'kxaLow_raMedial_signAetham', 'khaLow_raMedial_signThamAitham', 'kxaLow_signOotham', 'khaLow_raMedial_signAitham', 'khaLow_raMedial_signOotham', 'khaLow_raMedial_signAetham', 'khaLow_signAitham', 'khaLow_signAetham', 'khaLow_signOotham', 'khaLow_signThamAitham', 'khaLow_signEtham', 'nga_raMedial_signAetham', 'nga_raMedial_signOotham', 'nga_raMedialtham', 'nga_raMedial_signAitham', 'nga_signEtham', 'nga_raMedial_signEtham', 'nga_raMedial_signThamAitham', 'nga_signThamAitham', 'nga_signOotham', 'caHigh_raMedial_signEtham', 'nga_signAitham', 'caHigh_raMedial_signOotham', 'caHigh_raMedial_signAetham', 'nga_signAetham', 'caHigh_raMedialtham', 'caHigh_signEtham', 'caHigh_raMedial_signThamAitham', 'caHigh_signAetham', 'caHigh_raMedial_signAitham', 'caHigh_signThamAitham', 'caHigh_signOotham', 'caHigh_signAitham', 'chaHigh_raMedialtham', 'chaHigh_raMedial_signEtham', 'chaHigh_signAetham', 'chaHigh_raMedial_signAetham', 'chaHigh_raMedial_signAitham', 'chaHigh_signOotham', 'caLow_raMedialtham', 'chaHigh_signAitham', 'chaHigh_raMedial_signOotham', 'chaHigh_signEtham', 'chaHigh_raMedial_signThamAitham', 'chaHigh_signThamAitham', 'caLow_raMedial_signThamAitham', 'caLow_raMedial_signEtham', 'caLow_raMedial_signAitham', 'caLow_raMedial_signAetham', 'caLow_signEtham', 'caLow_signAetham', 'caLow_signOotham', 'saLow_raMedial_signEtham', 'caLow_signThamAitham', 'caLow_signAitham', 'saLow_raMedial_signOotham', 'saLow_signEtham', 'caLow_raMedial_signOotham', 'saLow_raMedial_signAitham', 'saLow_signAitham', 'saLow_signThamAitham', 'saLow_signOotham', 'chaLow_raMedialtham', 'saLow_signAetham', 'saLow_raMedial_signAetham', 'chaLow_raMedial_signAetham', 'chaLow_raMedial_signAitham', 'saLow_raMedialtham', 'chaLow_raMedial_signEtham', 'saLow_raMedial_signThamAitham', 'chaLow_raMedial_signOotham', 'chaLow_signAetham', 'chaLow_signThamAitham', 'chaLow_signOotham', 'chaLow_signAitham', 'nya_raMedialtham', 'nya_raMedial_signAetham', 'chaLow_raMedial_signThamAitham', 'nya_raMedial_signThamAitham', 'nya_signEtham', 'chaLow_signEtham', 'nya_raMedial_signEtham', 'nya_raMedial_signOotham', 'nya_signAetham', 'nya_signThamAitham', 'rata_raMedialtham', 'nya_raMedial_signAitham', 'rata_raMedial_signEtham', 'rata_raMedial_signAetham', 'rata_raMedial_signOotham', 'nya_signOotham', 'rata_raMedial_signThamAitham', 'rata_signAetham', 'rata_signEtham', 'rata_signThamAitham', 'rathaHigh_rM_signAitham', 'rata_signOotham', 'rata_signAitham', 'rathaHigh_raMedial_signEtham', 'rathaHigh_rM_signThamAitham', 'rathaHigh_raMedial_signAetham', 'rathaHigh_signAetham', 'rathaHigh_raMedialtham', 'rathaHigh_signOotham', 'rathaHigh_signAitham', 'rathaHigh_signEtham', 'da_raMedialtham', 'rathaHigh_signThamAitham', 'da_raMedial_signOotham', 'da_raMedial_signEtham', 'da_raMedial_signAitham', 'da_raMedial_signThamAitham', 'da_signAetham', 'da_raMedial_signAetham', 'da_signAitham', 'da_signThamAitham', 'da_signEtham', 'rathaLow_rM_signThamAitham', 'rathaLow_raMedialtham', 'da_signOotham', 'rathaLow_raMedial_signEtham', 'rathaLow_raMedial_signAetham', 'rathaLow_raMedial_signOotham', 'rathaLow_signEtham', 'rathaLow_rM_signAitham', 'rathaLow_signAetham', 'rathaLow_signThamAitham', 'rana_raMedialtham', 'rathaLow_signOotham', 'rathaLow_signAitham', 'rana_raMedial_signAetham', 'rana_raMedial_signOotham', 'rana_raMedial_signEtham', 'rana_raMedial_signThamAitham', 'rana_signAetham', 'rana_signOotham', 'taHigh_raMedialtham', 'rana_raMedial_signAitham', 'rana_signEtham', 'rana_signAitham', 'taHigh_raMedial_signEtham', 'taHigh_raMedial_signOotham', 'taHigh_raMedial_signAitham', 'taHigh_raMedial_signAetham', 'rana_signThamAitham', 'taHigh_signOotham', 'taHigh_signEtham', 'taHigh_raMedial_signThamAitham', 'taHigh_signAitham', 'thaHigh_raMedial_signEtham', 'taHigh_signThamAitham', 'thaHigh_raMedial_signOotham', 'thaHigh_raMedial_signAetham', 'taHigh_signAetham', 'thaHigh_raMedialtham', 'thaHigh_raMedial_signAitham', 'thaHigh_signEtham', 'thaHigh_signAetham', 'thaHigh_signOotham', 'thaHigh_signAitham', 'thaHigh_signThamAitham', 'taLow_raMedial_signEtham', 'taLow_raMedial_signAitham', 'taLow_raMedialtham', 'thaHigh_raMedial_signThamAitham', 'taLow_raMedial_signOotham', 'taLow_raMedial_signThamAitham', 'taLow_signOotham', 'taLow_signEtham', 'taLow_signAetham', 'taLow_raMedial_signAetham', 'taLow_signThamAitham', 'thaLow_raMedialtham', 'taLow_signAitham', 'thaLow_raMedial_signAitham', 'thaLow_raMedial_signThamAitham', 'thaLow_raMedial_signOotham', 'thaLow_raMedial_signEtham', 'thaLow_signEtham', 'thaLow_raMedial_signAetham', 'thaLow_signOotham', 'thaLow_signAitham', 'thaLow_signAetham', 'na_raMedialtham', 'thaLow_signThamAitham', 'na_signEtham', 'na_raMedial_signThamAitham', 'na_raMedial_signOotham', 'na_raMedial_signEtham', 'na_raMedial_signAitham', 'na_signOotham', 'na_signAitham', 'na_signThamAitham', 'na_raMedial_signAetham', 'ba_raMedial_signAetham', 'ba_raMedial_signEtham', 'ba_raMedial_signOotham', 'ba_signAetham', 'ba_signOotham', 'ba_signEtham', 'na_signAetham', 'ba_raMedial_signThamAitham', 'ba_raMedialtham', 'paHigh_raMedialtham', 'ba_signThamAitham', 'ba_raMedial_signAitham', 'paHigh_raMedial_signAetham', 'paHigh_raMedial_signEtham', 'paHigh_raMedial_signOotham', 'paHigh_raMedial_signAitham', 'paHigh_raMedial_signThamAitham', 'ba_signAitham', 'paHigh_signThamAitham', 'paHigh_signOotham', 'phaHigh_raMedial_signEtham', 'paHigh_signEtham', 'phaHigh_raMedial_signOotham', 'paHigh_signAitham', 'paHigh_signAetham', 'phaHigh_raMedial_signAetham', 'phaHigh_raMedialtham', 'phaHigh_signEtham', 'phaHigh_signOotham', 'faHigh_raMedialtham', 'phaHigh_raMedial_signThamAitham', 'phaHigh_raMedial_signAitham', 'phaHigh_signThamAitham', 'phaHigh_signAitham', 'faHigh_raMedial_signEtham', 'faHigh_raMedial_signAetham', 'faHigh_raMedial_signOotham', 'phaHigh_signAetham', 'faHigh_signAetham', 'faHigh_signAitham', 'faHigh_raMedial_signAitham', 'faHigh_signEtham', 'faHigh_signOotham', 'faHigh_raMedial_signThamAitham', 'paLow_raMedial_signOotham', 'paLow_raMedialtham', 'paLow_raMedial_signAetham', 'faHigh_signThamAitham', 'paLow_signAetham', 'paLow_raMedial_signEtham', 'paLow_raMedial_signAitham', 'paLow_raMedial_signThamAitham', 'paLow_signOotham', 'paLow_signAitham', 'paLow_signThamAitham', 'faLow_raMedial_signEtham', 'faLow_raMedial_signAetham', 'faLow_raMedialtham', 'paLow_signEtham', 'faLow_raMedial_signOotham', 'faLow_raMedial_signThamAitham', 'faLow_raMedial_signAitham', 'faLow_signAitham', 'faLow_signAetham', 'faLow_signOotham', 'faLow_signEtham', 'faLow_signThamAitham', 'phaLow_raMedial_signAitham', 'phaLow_raMedial_signEtham', 'phaLow_raMedialtham', 'phaLow_raMedial_signOotham', 'phaLow_raMedial_signThamAitham', 'phaLow_signAetham', 'phaLow_signOotham', 'phaLow_raMedial_signAetham', 'phaLow_signEtham', 'phaLow_signAitham', 'phaLow_signThamAitham', 'ma_raMedial_signAetham', 'ma_raMedial_signOotham', 'ma_raMedialtham', 'ma_raMedial_signEtham', 'ma_raMedial_signThamAitham', 'ma_signEtham', 'ma_raMedial_signAitham', 'ma_signOotham', 'ma_signThamAitham', 'yaLow_raMedialtham', 'ma_signAetham', 'ma_signAitham', 'yaLow_raMedial_signEtham', 'yaLow_raMedial_signAitham', 'yaLow_raMedial_signAetham', 'yaLow_signEtham', 'yaLow_signAetham', 'yaLow_raMedial_signThamAitham', 'yaLow_signThamAitham', 'yaLow_signOotham', 'yaHigh_raMedial_signEtham', 'yaLow_signAitham', 'yaHigh_raMedialtham', 'yaHigh_raMedial_signThamAitham', 'yaHigh_raMedial_signAitham', 'yaHigh_raMedial_signAetham', 'yaLow_raMedial_signOotham', 'yaHigh_signEtham', 'yaHigh_signOotham', 'yaHigh_signAitham', 'yaHigh_signThamAitham', 'yaHigh_signAetham', 'ra_raMedial_signEtham', 'ra_raMedial_signOotham', 'yaHigh_raMedial_signOotham', 'ra_raMedial_signAitham', 'ra_raMedialtham', 'ra_raMedial_signThamAitham', 'ra_signEtham', 'ra_signOotham', 'rue_raMedialtham', 'ra_signAitham', 'ra_signThamAitham', 'rue_raMedial_signEtham', 'ra_raMedial_signAetham', 'rue_raMedial_signAetham', 'ra_signAetham', 'rue_raMedial_signAitham', 'rue_signEtham', 'rue_signAetham', 'rue_signAitham', 'rue_raMedial_signThamAitham', 'rue_signOotham', 'la_raMedialtham', 'rue_signThamAitham', 'rue_raMedial_signOotham', 'la_raMedial_signEtham', 'la_raMedial_signAetham', 'la_raMedial_signOotham', 'la_raMedial_signThamAitham', 'la_signEtham', 'la_raMedial_signAitham', 'lue_raMedial_signEtham', 'lue_raMedialtham', 'la_signAetham', 'lue_raMedial_signAetham', 'la_signThamAitham', 'lue_raMedial_signOotham', 'lue_raMedial_signAitham', 'lue_raMedial_signThamAitham', 'lue_signEtham', 'lue_signAitham', 'lue_signOotham', 'lue_signThamAitham', 'la_signOotham', 'lue_signAetham', 'wa_raMedial_signEtham', 'wa_raMedial_signAetham', 'wa_yaLowtham', 'wa_signEtham', 'wa_raMedialtham', 'wa_raMedial_signAitham', 'wa_signAetham', 'wa_raMedial_signOotham', 'wa_signOotham', 'wa_raMedial_signThamAitham', 'wa_signThamAitham', 'wa_signAitham', 'shaHigh_raMedial_signAetham', 'shaHigh_raMedial_signOotham', 'shaHigh_raMedial_signEtham', 'shaHigh_signEtham', 'shaHigh_raMedial_signThamAitham', 'shaHigh_signAetham', 'shaHigh_raMedial_signAitham', 'shaHigh_signThamAitham', 'shaHigh_raMedialtham', 'shaHigh_signAitham', 'ssaHigh_raMedial_signAetham', 'ssaHigh_raMedialtham', 'shaHigh_signOotham', 'ssaHigh_raMedial_signEtham', 'ssaHigh_raMedial_signOotham', 'ssaHigh_signEtham', 'ssaHigh_raMedial_signThamAitham', 'ssaHigh_raMedial_signAitham', 'ssaHigh_signAitham', 'ssaHigh_signThamAitham', 'ssaHigh_signOotham', 'ssaHigh_signAetham', 'saHigh_raMedial_signEtham', 'saHigh_raMedial_signAetham', 'saHigh_raMedialtham', 'saHigh_raMedial_signAitham', 'saHigh_raMedial_signThamAitham', 'saHigh_raMedial_signOotham', 'saHigh_signOotham', 'saHigh_signAetham', 'saHigh_signEtham', 'haHigh_raMedial_signEtham', 'saHigh_signThamAitham', 'haHigh_raMedialtham', 'saHigh_signAitham', 'haHigh_raMedial_signOotham', 'haHigh_signAetham', 'haHigh_raMedial_signThamAitham', 'haHigh_raMedial_signAitham', 'haHigh_raMedial_signAetham', 'haHigh_signEtham', 'haHigh_signThamAitham', 'lla_raMedialtham', 'lla_raMedial_signOotham', 'haHigh_signOotham', 'lla_raMedial_signEtham', 'lla_raMedial_signThamAitham', 'lla_raMedial_signAitham', 'lla_signEtham', 'haHigh_signAitham', 'lla_signAetham', 'lla_raMedial_signAetham', 'lla_signOotham', 'lla_signAitham', 'lla_signThamAitham', 'a_raMedial_signAetham', 'a_raMedial_signEtham', 'uni00611A55', 'a_raMedial_signAitham', 'a_raMedial_signThamAitham', 'uni00611A6F', 'uni00611A70', 'uni00611A6E', 'haLow_raMedial_signEtham', 'uni00611A72', 'uni00611A71', 'haLow_raMedial_signAetham', 'a_raMedial_signOotham', 'haLow_raMedial_signOotham', 'haLow_signEtham', 'haLow_signAetham', 'haLow_raMedialtham', 'haLow_raMedial_signAitham', 'haLow_signAitham', 'haLow_signThamAitham', 'greatSa_raMedialtham', 'haLow_raMedial_signThamAitham', 'haLow_signOotham', 'greatSa_raMedial_signAetham', 'greatSa_signEtham', 'greatSa_signAetham', 'greatSa_signOotham', 'greatSa_raMedial_signOotham', 'greatSa_raMedial_signThamAitham', 'greatSa_signAitham', 'greatSa_raMedial_signAitham', 'greatSa_raMedial_signEtham', 'greatSa_signThamAitham', 'uni1A55_uni1A20_uni1A70', 'uni1A55_uni1A20_uni1A6F', 'uni1A55_uni1A20_uni1A72', 'paHigh_signEtham.alt', 'uni1A55_uni1A20_uni1A71', 'uni1A55_uni1A20_uni1A6E', 'wa_yaLowtham.alt', 'uni1A25', 'uni1A23', 'uni1A21', 'uni1A22', 'uni1A20', 'uni1A26', 'uni1A24', 'uni1A27', 'uni1A28', 'uni1A29', 'uni1A2F', 'uni1A2D', 'uni1A2C', 'uni1A2A', 'uni1A2B', 'uni1A32', 'uni1A31', 'uni1A30', 'uni1A37', 'uni1A36', 'uni1AE', 'uni1A35', 'uni1A33', 'uni1A34', 'uni1A38', 'uni1A39', 'uni1A3E', 'uni1A3B', 'uni1A3C', 'uni1A40', 'uni1A3A', 'uni1A41', 'uni1A3D', 'uni1A42', 'uni1A3F', 'uni1A45', 'uni1A48', 'uni1A47', 'uni1A43', 'uni1A46', 'uni1A4A', 'uni1A4B', 'uni1A44', 'uni1A49', 'uni1A54', 'uni1A4C', 'uni1A4D', 'uni1A52', 'uni1A53', 'uni1A4F', 'uni1A55', 'uni1A4E', 'uni1A51', 'uni1A50', 'tallAa_maiSat_maiSattham', 'uni1A63', 'uni1A64', 'uni1A6F', 'uni1A57', 'uni1A6D', 'uni1A71', 'uni1A61', 'uni1A70', 'uni1A6E', 'uni1A72', 'uni1A2B.blwf', 'uni1A25.blwf', 'uni1A2C.blwf', 'uni1A30.blwf', 'uni1A38.blwf', 'uni1A37.blwf', 'uni1A3F.blwf', 'uni1A40.blwf', 'uni1A43.blwf', 'uni1A48.blwf', 'uni1A47.blwf', 'uni1A3F.blwf1', 'uni1A6D.blwf', 'uni1A2C.blwf2', 'uni1A3F.blwf2', 'uni1A80', 'uni1A81', 'uni1A84', 'uni1A82', 'uni1A86', 'uni1A83', 'uni1A90', 'uni1A87', 'uni1A88', 'uni1A85', 'uni1A93', 'uni1A89', 'uni1A92', 'uni1A91', 'uni1A97', 'uni1A96', 'uni1A95', 'uni1A99', 'uni1A94', 'uni1A98', 'uni1AA4', 'uni1AA8', 'uni1AA9', 'uni1AAB', 'uni1AAA', 'uni1AA7', 'space', 'uni00A0', 'uni1AAC', 'uni1AA6', 'CR', 'uni2219', 'uni1AAD', 'uni1AA3', 'uni1AA2', 'uni1AA1', 'uni1AA0', 'uni1AA5', 'nya.nyatham', 'rata.rathaHightham', 'nasignAatham', 'maiKang.signAatham', 'nya.nya_raMedialtham', 'nya.nya_raMedial_signEtham', 'nya.nya_raMedial_signAetham', 'nya.nya_raMedial_signOotham', 'nya.nya_signAetham', 'nya.nya_raMedial_signAitham', 'nya.nya_signOotham', 'nya.nya_signAitham', 'rata.rathaHigh_raMedialtham', 'nya.nya_raMedial_signThamAitham', 'rata.rathaHigh_rM_signAetham', 'rata.rathaHigh_rM_signOotham', 'ra.rathaHigh_rM_signThamAitham', 'rata.rathaHigh_rM_signAitham', 'rata.rathaHigh_signEtham', 'rata.rathaHigh_signAetham', 'nya.nya_signThamAitham', 'rata.rathaHigh_rM_signEtham', 'rata.rathaHigh_signOotham', 'rata.rathaHigh_signAitham', 'rata.rathaHigh_signThamAitham', 'nasignAa_raMedialtham', 'nasignAa_raMedial_signAetham', 'nasignAa_raMedial_signEtham', 'nasignAa_raMedial_signAitham', 'nasignAa_raMedial_signOotham', 'nasignAa_rM_signThamAitham', 'nasignAa_signEtham', 'nasignAa_signAetham', 'nasignAa_signOotham', 'nasignAa_signAitham', 'nasignAa_signThamAitham', 'lla.haHigh_raMedialtham', 'lla.haHigh_raMedial_signAetham', 'nya.nya_signEtham', 'lla.haHigh_raMedial_signOotham', 'lla.haHightham', 'lla.haHigh_raMedial_signAitham', 'lla.haHigh_rM_signThamAitham', 'lla.haHigh_signAetham', 'lla.haHigh_signOotham', 'lla.haHigh_signAitham', 'lla.haHigh_signThamAitham', 'lla.haHigh_signEtham', 'uni1A6A001', 'lla.haHigh_raMedial_signEtham', 'uni1A69001'] [code: mono-outliers]
+
+
+    Result: [1;91;107mFAIL[0m
+
+ >> [1;35;107mcom.google.fonts/check/dsig[0m
+    [0;36;107mDoes the font have a DSIG table?[0m
+    with NotoSansTaiTham-Regular.ttf
+
+    [1;35;107m  Rationale:                                                                [0m
+    [0;30;107m  Microsoft Office 2013 and below products expect fonts to have a digital   [0m
+    [0;30;107m  signature declared in a DSIG table in order to implement OpenType         [0m
+    [0;30;107m  features. The EOL date for Microsoft Office 2013 products is 4/11/2023.   [0m
+    [0;30;107m  This issue does not impact Microsoft Office 2016 and above products.      [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  This checks verifies that this signature is available in the font.        [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  A fake signature is enough to address this issue. If needed, a dummy      [0m
+    [0;30;107m  table can be added to the font with the `gftools fix-dsig` script         [0m
+    [0;30;107m  available at https://github.com/googlefonts/gftools                       [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  Reference: https://github.com/googlefonts/fontbakery/issues/1845          [0m
+
+    * [1;91;107mFAIL[0m: This font lacks a digital signature (DSIG table). Some applications may require one (even if only a dummy placeholder) in order to work properly. You can add a DSIG table by running the `gftools fix-dsig` script. [code: lacks-signature]
+
+
+    Result: [1;91;107mFAIL[0m
+
+ >> [1;35;107mcom.google.fonts/check/gdef_mark_chars[0m
+    [0;36;107mCheck mark characters are in GDEF mark glyph class[0m
+    with NotoSansTaiTham-Regular.ttf
+
+    [1;35;107m  Rationale:                                                                [0m
+    [0;30;107m  Mark characters should be in the GDEF mark glyph class.                   [0m
+
+    * [1;30;103mWARN[0m: The following mark characters could be in the GDEF mark glyph class:
+	 U+1A55, U+1A57, U+1A61, U+1A63, U+1A64, U+1A6D, U+1A6E, U+1A6F, U+1A70, U+1A71 and U+1A72 [code: mark-chars]
+
+
+    Result: [1;30;103mWARN[0m
+
+ >> [1;35;107mcom.google.fonts/check/gpos_kerning_info[0m
+    [0;36;107mDoes GPOS table have kerning information? This check skips monospaced fonts as defined by post.isFixedPitch value[0m
+    with NotoSansTaiTham-Regular.ttf
+
+    * [1;30;103mWARN[0m: GPOS table lacks kerning information. [code: lacks-kern-info]
+
+
+    Result: [1;30;103mWARN[0m
+
+ >> [1;35;107mcom.google.fonts/check/glyf_nested_components[0m
+    [0;36;107mCheck glyphs do not have components which are themselves components.[0m
+    with NotoSansTaiTham-Regular.ttf
+
+    [1;35;107m  Rationale:                                                                [0m
+    [0;30;107m  There have been bugs rendering variable fonts with nested components.     [0m
+    [0;30;107m  Additionally, some static fonts with nested components have been reported [0m
+    [0;30;107m  to have rendering and printing issues.                                    [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  For more info, see:                                                       [0m
+    [0;30;107m  * https://github.com/googlefonts/fontbakery/issues/2961                   [0m
+    [0;30;107m  * https://github.com/arrowtype/recursive/issues/412                       [0m
+
+    * [1;91;107mFAIL[0m: The following glyphs have components which themselves are component glyphs:
+	* kaHigh_raMedial_signAetham
+	* kaHigh_signAetham
+	* khaHigh_raMedial_signAetham
+	* kxaHigh_raMedial_signAetham
+	* khaHigh_signAetham
+	* kxaHigh_signAetham
+	* kaLow_raMedial_signAetham
+	* kaLow_signAetham
+	* kxaLow_signAetham
+	* kxaLow_raMedial_signAetham and 92 more. [code: found-nested-components]
+
+
+    Result: [1;91;107mFAIL[0m
+
+ >> [1;35;107mcom.google.fonts/check/outline_colinear_vectors[0m
+    [0;36;107mDo any segments have colinear vectors?[0m
+    with NotoSansTaiTham-Regular.ttf
+
+    [1;35;107m  Rationale:                                                                [0m
+    [0;30;107m  This test looks for consecutive line segments which have the same angle.  [0m
+    [0;30;107m  This normally happens if an outline point has been added by accident.     [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  This test is not run for variable fonts, as they may legitimately have    [0m
+    [0;30;107m  colinear vectors.                                                         [0m
+
+    * [1;30;103mWARN[0m: The following glyphs have colinear vectors:
+	* greatSa_raMedial_signAetham: L<<1900.0,268.0>--<1900.0,268.0>> -> L<<1900.0,268.0>--<1900.0,268.0>>
+	* greatSa_raMedial_signAetham: L<<2299.0,268.0>--<2299.0,268.0>> -> L<<2299.0,268.0>--<2299.0,268.0>>
+	* greatSa_raMedial_signAitham: L<<1352.0,268.0>--<1352.0,268.0>> -> L<<1352.0,268.0>--<1352.0,268.0>>
+	* greatSa_raMedial_signAitham: L<<1751.0,268.0>--<1751.0,268.0>> -> L<<1751.0,268.0>--<1751.0,268.0>>
+	* greatSa_raMedial_signEtham: L<<1382.0,268.0>--<1382.0,268.0>> -> L<<1382.0,268.0>--<1382.0,268.0>>
+	* greatSa_raMedial_signEtham: L<<1781.0,268.0>--<1781.0,268.0>> -> L<<1781.0,268.0>--<1781.0,268.0>>
+	* greatSa_raMedial_signOotham: L<<1352.0,268.0>--<1352.0,268.0>> -> L<<1352.0,268.0>--<1352.0,268.0>>
+	* greatSa_raMedial_signOotham: L<<1751.0,268.0>--<1751.0,268.0>> -> L<<1751.0,268.0>--<1751.0,268.0>>
+	* greatSa_raMedial_signThamAitham: L<<1359.0,268.0>--<1359.0,268.0>> -> L<<1359.0,268.0>--<1359.0,268.0>>
+	* greatSa_raMedial_signThamAitham: L<<1758.0,268.0>--<1758.0,268.0>> -> L<<1758.0,268.0>--<1758.0,268.0>> and 89 more. [code: found-colinear-vectors]
+
+
+    Result: [1;30;103mWARN[0m
+
+ >> [1;35;107mcom.google.fonts/check/outline_semi_vertical[0m
+    [0;36;107mDo outlines contain any semi-vertical or semi-horizontal lines?[0m
+    with NotoSansTaiTham-Regular.ttf
+
+    [1;35;107m  Rationale:                                                                [0m
+    [0;30;107m  This test detects line segments which are nearly, but not quite, exactly  [0m
+    [0;30;107m  horizontal or vertical. Sometimes such lines are created by design, but   [0m
+    [0;30;107m  often they are indicative of a design error.                              [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  This test is disabled for italic styles, which often contain              [0m
+    [0;30;107m  nearly-upright lines.                                                     [0m
+
+    * [1;30;103mWARN[0m: The following glyphs have semi-vertical/semi-horizontal lines:
+	* saLow_raMedial_signAetham: L<<1527.0,271.0>--<1529.0,635.0>>
+	* saLow_raMedial_signAitham: L<<987.0,271.0>--<989.0,635.0>>
+	* saLow_raMedial_signEtham: L<<978.0,271.0>--<980.0,635.0>>
+	* saLow_raMedial_signOotham: L<<992.0,271.0>--<994.0,635.0>>
+	* saLow_raMedial_signThamAitham: L<<1027.0,271.0>--<1029.0,635.0>>
+	* saLow_raMedialtham: L<<391.0,271.0>--<393.0,635.0>>
+	* saLow_signAetham: L<<1234.0,271.0>--<1236.0,635.0>>
+	* saLow_signAitham: L<<698.0,271.0>--<700.0,635.0>>
+	* saLow_signEtham: L<<675.0,271.0>--<677.0,635.0>>
+	* saLow_signOotham: L<<694.0,271.0>--<696.0,635.0>> and 8 more. [code: found-semi-vertical]
+
+
+    Result: [1;30;103mWARN[0m
+
+
+Total:
+
+    [1;97;101mERROR[0m: 0
+    [1;91;107mFAIL[0m: 4
+    [1;30;103mWARN[0m: 4
+    [0;36;107mINFO[0m: 2
+    [0;34;107mSKIP[0m: 17
+    [0;32;107mPASS[0m: 50
+
+
+DONE!
+
+    [1;30;107mMeaning of check results:[0m
+
+    An [1;97;101mERROR[0m is something wrong with FontBakery itself, possibly a bug.
+    A [1;91;107mFAIL[0m is a problem with the font that must be fixed.
+    A [1;30;103mWARN[0m is something that you should consider addressing.
+    An [0;36;107mINFO[0m result simply prints something useful. Typically stats.
+    A [0;32;107mPASS[0m means the font looks good for the given checking routine.
+    And a [0;34;107mSKIP[0m happens when the check does not apply to the given font.
+
+    If you get [1;97;101mERROR[0ms, please help us improve the tool by reporting them at
+    [1;36;107mhttps://github.com/googlefonts/fontbakery/issues[0m
+
+    (but other kinds of bug reports and/or
+     feature requests are also always welcome, of course!)
+

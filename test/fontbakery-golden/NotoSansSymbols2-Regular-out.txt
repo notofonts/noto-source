@@ -1,0 +1,239 @@
+Start ... running 77 individual check executions.
+ >> [1;35;107mcom.google.fonts/check/unicode_range_bits[0m
+    [0;36;107mEnsure UnicodeRange bits are properly set.[0m
+    with NotoSansSymbols2-Regular.ttf
+
+    [1;35;107m  Rationale:                                                                [0m
+    [0;30;107m  When the UnicodeRange bits on the OS/2 table are not properly set, some   [0m
+    [0;30;107m  programs running on Windows may not recognize the font and use a system   [0m
+    [0;30;107m  fallback font instead. For that reason, this check calculates the proper  [0m
+    [0;30;107m  settings by inspecting the glyphs declared on the cmap table and then     [0m
+    [0;30;107m  ensures that their corresponding ranges are enabled.                      [0m
+
+    * [1;30;103mWARN[0m: UnicodeRange bit 57 "Non-Plane 0 *" should be 0 because cmap has none of the 2048 codepoints in this range. [code: bad-range-bit]
+
+
+    Result: [1;30;103mWARN[0m
+
+ >> [1;35;107mcom.google.fonts/check/required_tables[0m
+    [0;36;107mFont contains all required tables?[0m
+    with NotoSansSymbols2-Regular.ttf
+
+    [1;35;107m  Rationale:                                                                [0m
+    [0;30;107m  Depending on the typeface and coverage of a font, certain tables are      [0m
+    [0;30;107m  recommended for optimum quality. For example, the performance of a        [0m
+    [0;30;107m  non-linear font is improved if the VDMX, LTSH, and hdmx tables are        [0m
+    [0;30;107m  present. Non-monospaced Latin fonts should have a kern table. A gasp      [0m
+    [0;30;107m  table is necessary if a designer wants to influence the sizes at which    [0m
+    [0;30;107m  grayscaling is used under Windows. A DSIG table containing a digital      [0m
+    [0;30;107m  signature helps ensure the integrity of the font file. Etc.               [0m
+
+    * [0;36;107mINFO[0m: This font contains the following optional tables [loca, GPOS, GSUB]
+
+
+    Result: [0;36;107mINFO[0m
+
+ >> [1;35;107mcom.google.fonts/check/superfamily/list[0m
+    [0;36;107mList all superfamily filepaths[0m
+    with NotoSansSymbols2-Regular.ttf
+
+    [1;35;107m  Rationale:                                                                [0m
+    [0;30;107m  This is a merely informative check that lists all sibling families        [0m
+    [0;30;107m  detected by fontbakery.                                                   [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  Only the fontfiles in these directories will be considered in             [0m
+    [0;30;107m  superfamily-level checks.                                                 [0m
+
+    * [0;36;107mINFO[0m: . [code: family-path]
+
+
+    Result: [0;36;107mINFO[0m
+
+ >> [1;35;107mcom.google.fonts/check/monospace[0m
+    [0;36;107mChecking correctness of monospaced metadata.[0m
+    with NotoSansSymbols2-Regular.ttf
+
+    [1;35;107m  Rationale:                                                                [0m
+    [0;30;107m  There are various metadata in the OpenType spec to specify if a font is   [0m
+    [0;30;107m  monospaced or not. If the font is not truly monospaced, then no           [0m
+    [0;30;107m  monospaced metadata should be set (as sometimes they mistakenly are...)   [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  Requirements for monospace fonts:                                         [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  * post.isFixedPitch - "Set to 0 if the font is proportionally spaced,     [0m
+    [0;30;107m  non-zero if the font is not proportionally spaced (monospaced)"           [0m
+    [0;30;107m    www.microsoft.com/typography/otspec/post.htm                            [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  * hhea.advanceWidthMax must be correct, meaning no glyph's width value is [0m
+    [0;30;107m  greater.                                                                  [0m
+    [0;30;107m    www.microsoft.com/typography/otspec/hhea.htm                            [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  * OS/2.panose.bProportion must be set to 9 (monospace). Spec says: "The   [0m
+    [0;30;107m  PANOSE definition contains ten digits each of which currently describes   [0m
+    [0;30;107m  up to sixteen variations. Windows uses bFamilyType, bSerifStyle and       [0m
+    [0;30;107m  bProportion in the font mapper to determine family type. It also uses     [0m
+    [0;30;107m  bProportion to determine if the font is monospaced."                      [0m
+    [0;30;107m    www.microsoft.com/typography/otspec/os2.htm#pan                         [0m
+    [0;30;107m    monotypecom-test.monotype.de/services/pan2                              [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  * OS/2.xAvgCharWidth must be set accurately.                              [0m
+    [0;30;107m    "OS/2.xAvgCharWidth is used when rendering monospaced fonts, at least   [0m
+    [0;30;107m  by Windows GDI"                                                           [0m
+    [0;30;107m    http://typedrawers.com/discussion/comment/15397/#Comment_15397          [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  Also we should report an error for glyphs not of average width.           [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  Please also note:                                                         [0m
+    [0;30;107m  Thomas Phinney told us that a few years ago (as of December 2019), if you [0m
+    [0;30;107m  gave a font a monospace flag in Panose, Microsoft Word would ignore the   [0m
+    [0;30;107m  actual advance widths and treat it as monospaced. Source:                 [0m
+    [0;30;107m  https://typedrawers.com/discussion/comment/45140/#Comment_45140           [0m
+
+    * [1;91;107mFAIL[0m: On monospaced fonts, the value of post.isFixedPitch must be set to a non-zero value (meaning 'fixed width monospaced'), but got 0 instead. [code: mono-bad-post-isFixedPitch]
+    * [1;91;107mFAIL[0m: On monospaced fonts, the value of OS/2.panose.bProportion must be set to 9 (proportion: monospaced), but got 2 instead. [code: mono-bad-panose-proportion]
+    * [1;30;103mWARN[0m: Font is monospaced but 2335 glyphs (87.32236350037397%) have a different width. You should check the widths of: ['CR', 'space', 'dotmath', 'lozenge', 'uni4DC0', 'uni4DC1', 'uni4DC2', 'uni4DC3', 'uni4DC4', 'uni4DC5', 'uni4DC6', 'uni4DC7', 'uni4DC8', 'uni4DC9', 'uni4DCA', 'uni4DCB', 'uni4DCC', 'uni4DCD', 'uni4DCE', 'uni4DCF', 'uni4DD0', 'uni4DD1', 'uni4DD2', 'uni4DD3', 'uni4DD4', 'uni4DD5', 'uni4DD6', 'uni4DD7', 'uni4DD8', 'uni4DD9', 'uni4DDA', 'uni4DDB', 'uni4DDC', 'uni4DDD', 'uni4DDE', 'uni4DDF', 'uni4DE0', 'uni4DE1', 'uni4DE2', 'uni4DE3', 'uni4DE4', 'uni4DE5', 'uni4DE6', 'uni4DE7', 'uni4DE8', 'uni4DE9', 'uni4DEA', 'uni4DEB', 'uni4DEC', 'uni4DED', 'uni4DEE', 'uni4DEF', 'uni4DF0', 'uni4DF1', 'uni4DF2', 'uni4DF3', 'uni4DF4', 'uni4DF5', 'uni4DF6', 'uni4DF7', 'uni4DF8', 'uni4DF9', 'uni4DFA', 'uni4DFB', 'uni4DFC', 'uni4DFD', 'uni4DFE', 'uni4DFF', 'zero', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine', 'asterisk', 'numbersign', 'bullet', 'uni2770', 'uni276E', 'uni2771', 'uni276F', 'uni2772', 'uni2773', 'uni276A', 'uni276B', 'uni2774', 'uni276C', 'uni2768', 'uni2769', 'uni2775', 'uni276D', 'uni00A0', 'uni29EB', 'uni2219', 'uni2981', 'uni29BF', 'uni2299', 'uni21E7', 'uni2B00', 'uni21E8', 'uni2B02', 'uni21E9', 'uni2B03', 'uni21E6', 'uni2B01', 'uni2B04', 'uni21EB', 'uni21EC', 'uni21ED', 'uni21EE', 'uni21EF', 'uni21F0', 'uni21F3', 'uni2324', 'uni2794', 'uni2798', 'uni2799', 'uni279A', 'uni279B', 'uni279C', 'uni279D', 'uni279E', 'uni279F', 'uni27A0', 'uni2B06', 'uni2B08', 'uni2B95', 'uni2B0A', 'uni2B07', 'uni2B0B', 'uni2B05', 'uni2B09', 'uni2B0C', 'uni2B0D', 'uni27A2', 'uni27A3', 'uni27A4', 'uni27A5', 'uni27A6', 'uni27A7', 'uni27A8', 'uni27A9', 'uni27AA', 'uni27AB', 'uni27AC', 'uni27AD', 'uni27AE', 'uni27AF', 'uni27B1', 'uni27B2', 'uni27B3', 'uni27B6', 'uni27B5', 'uni27B4', 'uni27B9', 'uni27B8', 'uni27B7', 'uni27BA', 'uni27BB', 'uni27BC', 'uni27BD', 'uni27BE', 'uni27A1', 'uni25CF', 'circle', 'uni25EF', 'uni25D0', 'uni25D1', 'uni25D2', 'uni25D3', 'uni25D6', 'uni25D7', 'uni25D4', 'uni25D5', 'uni25F4', 'uni25F5', 'uni25F6', 'uni25F7', 'uni25CD', 'uni25CC', 'uni25C9', 'uni25CE', 'openbullet', 'invbullet', 'invcircle', 'uni25DA', 'uni25DB', 'uni25E0', 'uni25E1', 'uni25DC', 'uni25DD', 'uni25DE', 'uni25DF', 'uni25C6', 'uni25C7', 'uni2B16', 'uni2B17', 'uni2B18', 'uni2B19', 'uni2756', 'uni25C8', 'uni25B0', 'uni25B1', 'uni25AE', 'filledrect', 'uni25AD', 'uni25AF', 'filledbox', 'uni25A1', 'uni25A2', 'uni25A3', 'uni2B1A', 'uni25A4', 'uni25A5', 'uni25A6', 'uni25A7', 'uni25A8', 'uni25A9', 'uni25AA', 'uni25AB', 'uni25F0', 'uni25F1', 'uni25F2', 'uni25F3', 'uni25FB', 'uni25FC', 'uni25FD', 'uni25FE', 'triagup', 'uni25B6', 'triagdn', 'uni25C0', 'uni25B3', 'uni25B7', 'uni25BD', 'uni25C1', 'uni25EC', 'uni25ED', 'uni25EE', 'triagrt', 'triaglf', 'uni25BB', 'uni25C5', 'uni25B4', 'uni25B8', 'uni25BE', 'uni25C2', 'uni25B5', 'uni25B9', 'uni25BF', 'uni25C3', 'uni2600', 'uni2601', 'uni2602', 'uni2603', 'uni2604', 'uni2607', 'uni2608', 'uni2609', 'uni2614', 'uni2605', 'uni2606', 'uni260E', 'uni260F', 'uni2610', 'uni2611', 'uni2612', 'uni2615', 'uni2616', 'uni2617', 'uni261A', 'uni261B', 'uni261C', 'uni261D', 'uni261E', 'uni261F', 'uni2620', 'uni2621', 'uni2622', 'uni2623', 'uni2719', 'uni271A', 'uni271B', 'uni271C', 'uni2630', 'uni2631', 'uni2632', 'uni2633', 'uni2634', 'uni2635', 'uni2636', 'uni2637', 'uni2668', 'uni267F', 'uni2686', 'uni2687', 'uni2688', 'uni2689', 'uni268A', 'uni268B', 'uni268C', 'uni268D', 'uni268E', 'uni268F', 'uni269E', 'uni269F', 'uni26A1', 'uni26AA', 'uni26AB', 'uni26AC', 'uni26BD', 'uni26BE', 'uni26BF', 'uni26C0', 'uni26C1', 'uni26C2', 'uni26C3', 'uni26C4', 'uni26C5', 'uni26C6', 'uni26C7', 'uni26C8', 'uni26C9', 'uni26CA', 'uni26CB', 'uni2701', 'uni2703', 'uni2704', 'uni2706', 'uni2707', 'uni2708', 'uni2709', 'uni270C', 'uni270D', 'uni270E', 'uni270F', 'uni2710', 'uni2711', 'uni2712', 'uni2713', 'uni2714', 'uni2715', 'uni2716', 'uni2717', 'uni2718', 'uni2722', 'uni2723', 'uni2724', 'uni2725', 'uni2726', 'uni2727', 'uni2729', 'uni272A', 'uni272B', 'uni272C', 'uni272D', 'uni272E', 'uni272F', 'uni2730', 'uni2731', 'uni2732', 'uni2733', 'uni2734', 'uni2735', 'uni2736', 'uni2737', 'uni2738', 'uni2739', 'uni273A', 'uni273B', 'uni273C', 'uni273D', 'uni273E', 'uni273F', 'uni2740', 'uni2741', 'uni2742', 'uni2743', 'uni2744', 'uni2745', 'uni2746', 'uni2747', 'uni2748', 'uni2749', 'uni274A', 'uni274B', 'uni274D', 'uni274F', 'uni2750', 'uni2751', 'uni2752', 'uni2753', 'uni2757', 'uni2758', 'uni2759', 'uni275A', 'uni275B', 'uni275C', 'uni275D', 'uni275E', 'uni275F', 'uni2760', 'uni2761', 'uni2762', 'uni2763', 'uni2764', 'uni2765', 'uni2766', 'uni2767', 'u1F39F', 'u1F6E9', 'u1F691', 'uni2B8D', 'uni2B8E', 'uni2B6F', 'uni2B8C', 'uni2B8F', 'u1F6BC', 'u1F582', 'uni2B5B', 'uni2B5D', 'u1F5F6', 'u1F5F3', 'u1F5F9', 'u1F5F7', 'uni2BBD', 'u1F5F5', 'u1F5F4', 'u1F4CA', 'u1F3D6', 'u1F39C', 'u1F39D', 'u1F6CF', 'u1F6CE', 'uni2B5E', 'u1F6B2', 'u1F426', 'uni23FA', 'uni2BA8', 'uni2BA9', 'uni2BAE', 'uni2BAC', 'uni2BAF', 'uni2BAD', 'uni2BAA', 'uni2BAB', 'uni2BC1', 'u1F5A3', 'uni2B9F', 'u1F783', 'u1F322', 'u1F5BF', 'u1F5AA', 'uni2B22', 'uni2B2C', 'uni2B24', 'uni2B1B', 'u1F59C', 'uni23EA', 'uni23EE', 'uni2B9C', 'u1F780', 'uni2B25', 'uni23F7', 'uni2BC6', 'uni23F4', 'uni2BC7', 'uni2B27', 'uni23F5', 'uni2BC8', 'u1F799', 'u1F79F', 'uni23F6', 'uni2BC5', 'uni2BC4', 'u1F3F2', 'uni2B1F', 'u1F588', 'u1F59D', 'uni23E9', 'uni23ED', 'uni2B9E', 'uni2B53', 'u1F782', 'uni23EF', 'u1F3F6', 'uni2700', 'u1F571', 'u1F784', 'u1F78D', 'uni2B29', 'uni2B2A', 'uni2B51', 'uni2BC0', 'uni23F9', 'u1F797', 'u1F79D', 'u1F78C', 'u1F57F', 'u1F5A2', 'uni2B9D', 'u1F781', 'uni2B2E', 'u1F798', 'u1F79E', 'uni2B1D', 'uni2423', 'uni2422', 'u1F7BD', 'u1F7B1', 'u1F7A4', 'u1F7AB', 'u1F7B7', 'u1F786', 'u1F790', 'u1F4A3', 'u1F56E', 'u1F4DA', 'uni2BCB', 'u1F395', 'u1F6C9', 'u1F3D7', 'u1F56B', 'u1F56C', 'u1F4F7', 'u1F3D5', 'u1F5D9', 'u1F56F', 'u1F5C3', 'u1F5C2', 'u1F408', 'u1F4C9', 'u1F4C8', 'u1F4B9', 'u1F67E', 'u1F43F', 'uni2BBF', 'u1F6C8', 'uni2BBE', 'u1F3D9', 'u1F581', 'u1F3AC', 'u1F3DB', 'u1F4CB', 'u1F557', 'u1F563', 'u1F55A', 'u1F566', 'u1F554', 'u1F560', 'u1F553', 'u1F55F', 'u1F558', 'u1F564', 'u1F550', 'u1F55C', 'u1F556', 'u1F562', 'u1F555', 'u1F561', 'u1F559', 'u1F565', 'u1F552', 'u1F55E', 'u1F55B', 'u1F567', 'u1F551', 'u1F55D', 'u1F5D8', 'uni2B6E', 'u1F4EA', 'u1F4EB', 'u1F329', 'u1F327', 'u1F328', 'u1F32A', 'u1F378', 'u1F5DC', 'u1F39B', 'u1F6CB', 'u1F4B3', 'u1F542', 'u1F541', 'u1F5E1', 'u1F576', 'u1F5DB', 'u1F3DA', 'u1F3DC', 'u1F3DD', 'u1F5A5', 'u1F5D4', 'u1F79C', 'u1F6F2', 'u1F5CE', 'u1F5BB', 'u1F5B9', 'u1F5BA', 'u1F415', 'uni23F8', 'u1F54A', 'uni2B83', 'u1F817', 'u1F80B', 'u1F807', 'u1F89B', 'u1F803', 'u1F83F', 'u1F837', 'u1F847', 'u1F843', 'u1F66F', 'u1F853', 'u1F83B', 'uni2B63', 'uni2B7D', 'uni2B73', 'u1F82B', 'u1F82F', 'uni2BA0', 'uni2BA1', 'u1F827', 'u1F823', 'u1F833', 'u1F893', 'uni2B6D', 'uni2B4D', 'u1F897', 'u1F813', 'uni2B87', 'u1F442', 'u1F30E', 'u1F30F', 'u1F30D', 'u1F5CB', 'u1F5C5', 'u1F5C7', 'u1F5C6', 'u1F5CC', 'u1F5CD', 'u1F584', 'u1F47D', 'u1F7B4', 'u1F7A7', 'u1F7AE', 'u1F7BA', 'u1F789', 'u1F793', 'u1F441', 'u1F453', 'u1F3ED', 'u1F46A', 'u1F5B7', 'u1F5C4', 'u1F39E', 'u1F4FD', 'u1F41F', 'u1F585', 'u1F32B', 'u1F5C0', 'u1F37D', 'uni2B94', 'u1F7C6', 'u1F5BE', 'u1F5BC', 'u1F5BD', 'u1F315', 'u1F6CA', 'u1F3CC', 'u1F393', 'u1F6E0', 'u1F5B4', 'u1F3A7', 'u1F394', 'u1F674', 'u1F89C', 'u1F89E', 'u1F89F', 'u1F89D', 'uni2B58', 'uni2B57', 'uni2B59', 'u1F81B', 'u1F81F', 'u1F7CF', 'u1F7D1', 'u1F7BE', 'u1F7CA', 'u1F7B2', 'u1F679', 'uni2B55', 'u1F818', 'u1F81C', 'u1F673', 'u1F666', 'u1F65E', 'u1F664', 'u1F65C', 'uni2B56', 'u1F81A', 'u1F81E', 'u1F7AC', 'u1F67B', 'u1F671', 'u1F7CC', 'u1F7B8', 'u1F667', 'u1F65F', 'u1F665', 'u1F65D', 'u1F7D3', 'u1F7D4', 'u1F819', 'u1F81D', 'u1F787', 'u1F791', 'u1F573', 'u1F668', 'u1F669', 'uni2B23', 'uni2BC3', 'u1F336', 'uni231B', 'uni23F3', 'u1F3E0', 'u1F3D8', 'u1F4E5', 'u1F5DA', 'u1F579', 'u1F5A6', 'uni21EA', 'uni2327', 'uni232B', 'uni2326', 'uni23CF', 'uni2328', 'uni2325', 'uni2318', 'uni23CE', 'u1F3F7', 'u1F31C', 'u1F5EE', 'u1F814', 'u1F808', 'u1F804', 'u1F898', 'u1F800', 'u1F8A8', 'u1F8A0', 'u1F83C', 'u1F834', 'u1F8AA', 'u1F57B', 'u1F844', 'u1F840', 'u1F8A4', 'u1F50D', 'u1F858', 'u1F8A6', 'uni2B64', 'u1F66C', 'u1F850', 'u1F5E8', 'u1F838', 'u1F5EC', 'u1F8A2', 'uni2B60', 'uni2B7A', 'uni2B70', 'u1F828', 'u1F82C', 'uni2BA6', 'uni2BA4', 'u1F824', 'u1F820', 'u1F830', 'u1F890', 'uni2B6A', 'u1F894', 'u1F58E', 'uni2B80', 'u1F810', 'uni2B84', 'u1F39A', 'u1F672', 'u1F5F8', 'u1F7BB', 'u1F7C9', 'u1F7AF', 'uni2BCC', 'u1F7C4', 'u1F7A2', 'u1F7A9', 'u1F7B5', 'u1F7C0', 'u1F7D2', 'u1F78E', 'u1F5F2', 'u1F5F1', 'u1F587', 'u1F5E2', 'u1F512', 'u1F58A', 'u1F58D', 'u1F58B', 'u1F58C', 'u1F589', 'u1F53E', 'u1F574', 'u1F570', 'u1F5D6', 'u1F785', 'u1F7CE', 'u1F7BC', 'u1F7B0', 'u1F7C5', 'u1F7C7', 'u1F7A3', 'u1F7AA', 'u1F7CB', 'u1F7B6', 'u1F7C1', 'u1F7C3', 'u1F78F', 'u1F6B9', 'u1F687', 'u1F396', 'u1F5D5', 'u1F4B0', 'u1F5F0', 'u1F6E5', 'u1F6E3', 'u1F398', 'u1F3DE', 'uni2B92', 'uni2B93', 'u1F572', 'u1F6AD', 'u1F662', 'u1F652', 'u1F855', 'uni2B67', 'uni2B77', 'u1F65A', 'u1F660', 'u1F650', 'u1F854', 'uni2B66', 'uni2B76', 'u1F658', 'u1F6EA', 'u1F543', 'u1F544', 'u1F5C8', 'u1F5CA', 'u1F5C9', 'uni2447', 'uni2444', 'uni2445', 'uni2446', 'uni2441', 'uni2449', 'uni2448', 'uni244A', 'uni2442', 'uni2440', 'uni2443', 'u1F6E2', 'u1F44C', 'u1F5DD', 'u1F5B3', 'u1F698', 'u1F68D', 'u1F6F1', 'u1F694', 'u1F5AF', 'u1F5C1', 'u1F513', 'u1F4ED', 'u1F4EC', 'u1F4BF', 'u1F5B8', 'u1F4E4', 'u1F5D7', 'u1F4E6', 'u1F5CF', 'u1F5DF', 'u1F4DF', 'u1F5D0', 'u1F6F3', 'u1F586', 'u1F3AD', 'u1F4BB', 'u1F5A9', 'u1F4FE', 'u1F5A8', 'u1F5B6', 'u1F6C7', 'u1F3CE', 'u1F3CD', 'u1F4FB', 'u1F6E4', 'u1F590', 'u1F397', 'uni2B90', 'uni2B91', 'u1F67F', 'u1F7C8', 'u1F591', 'u1F593', 'u1F592', 'u1F594', 'uni2BB0', 'uni2BB1', 'uni2BB6', 'uni2BB4', 'uni2BB7', 'uni2BB5', 'uni2BB2', 'uni2BB3', 'u1F5EF', 'u1F816', 'u1F80A', 'u1F806', 'u1F89A', 'u1F802', 'u1F8A9', 'u1F8A1', 'u1F83E', 'u1F836', 'u1F8AB', 'u1F57D', 'u1F846', 'u1F842', 'u1F8A7', 'u1F8A5', 'u1F66E', 'u1F852', 'u1F568', 'u1F569', 'u1F56A', 'u1F5E9', 'u1F83A', 'u1F5ED', 'u1F8A3', 'uni2B62', 'uni2B7C', 'uni2B72', 'u1F82A', 'u1F82E', 'uni2BA7', 'uni2BA5', 'u1F826', 'u1F822', 'u1F832', 'u1F892', 'uni2B6C', 'u1F896', 'uni2B82', 'u1F812', 'uni2B86', 'u1F56D', 'u1F5DE', 'u1F3F5', 'uni2BCD', 'uni2BCF', 'u1F78B', 'u1F677', 'u1F676', 'u1F678', 'u1F67A', 'u1F6F0', 'u1F5B5', 'u1F670', 'u1F6E1', 'u1F6CD', 'uni2B4F', 'uni2B5F', 'uni2B4E', 'uni237D', 'u1F5A1', 'u1F59A', 'u1F59B', 'u1F5A0', 'u1F59F', 'u1F598', 'u1F599', 'u1F59E', 'u1F7CD', 'uni2B5A', 'uni2B5C', 'u1F575', 'u1F3D4', 'u1F3C2', 'u1F5AC', 'u1F66A', 'u1F66B', 'u1F663', 'u1F653', 'u1F856', 'uni2B68', 'uni2B78', 'u1F65B', 'u1F661', 'u1F651', 'u1F857', 'uni2B69', 'uni2B79', 'u1F659', 'u1F508', 'u1F507', 'u1F509', 'u1F50A', 'u1F5E3', 'u1F577', 'u1F578', 'u1F5D3', 'u1F5D2', 'uni2BD0', 'u1F796', 'u1F3DF', 'u1F583', 'u1F5E0', 'uni23F1', 'u1F399', 'u1F3C4', 'u1F675', 'u1F3CA', 'u1F545', 'uni2B7E', 'uni2B7F', 'u1F5AD', 'u1F580', 'u1F57C', 'u1F4FA', 'u1F321', 'u1F7A1', 'u1F7A8', 'u1F5B1', 'uni2B9B', 'uni2B99', 'uni2B98', 'uni2B9A', 'u1F5A7', 'u1F7C2', 'u1F5E4', 'u1F5E5', 'u1F5E6', 'u1F5E7', 'u1F5EB', 'u1F44E', 'u1F44D', 'uni23F2', 'uni2BCA', 'u1F5B2', 'u1F6C6', 'u1F3C6', 'uni2BC2', 'u1F656', 'u1F654', 'u1F58F', 'u1F657', 'u1F655', 'u1F5B0', 'u1F5EA', 'uni2BD1', 'u1F815', 'u1F809', 'u1F805', 'u1F899', 'uni2BB9', 'u1F801', 'u1F83D', 'u1F859', 'uni2B65', 'u1F835', 'u1F845', 'u1F841', 'u1F6E7', 'u1F6E6', 'u1F66D', 'u1F851', 'u1F839', 'uni2B61', 'uni2B7B', 'uni2B71', 'u1F829', 'u1F82D', 'uni2BA2', 'uni2BA3', 'u1F825', 'u1F821', 'u1F831', 'u1F891', 'uni2B6B', 'uni2BB8', 'u1F895', 'uni2B81', 'u1F811', 'uni2B85', 'u1F53F', 'u1F6E8', 'u1F7A5', 'u1F7D0', 'u1F7BF', 'u1F7B3', 'u1F7A6', 'u1F67D', 'u1F7AD', 'u1F7B9', 'u1F67C', 'u1F788', 'u1F792', 'u1F4F9', 'u1F3AE', 'u1F5D1', 'uni231A', 'u1F3F3', 'u1F3CB', 'u1F8AC', 'u1F8AD', 'u1F78A', 'u1F79B', 'u1F79A', 'u1F447', 'u1F597', 'uni2BCE', 'u1F5AB', 'uni2B21', 'uni2B2D', 'uni2B1C', 'u1F448', 'u1F7A0', 'uni2B26', 'uni2B28', 'uni2B50', 'u1F3F1', 'uni2B20', 'u1F449', 'uni2B54', 'uni2B2B', 'uni2B52', 'u1F795', 'u1F794', 'u1F323', 'u1F325', 'u1F326', 'u1F57E', 'u1F446', 'uni2B2F', 'uni2B1E', 'u1F324', 'u1F86B', 'u1F87B', 'u1F863', 'u1F873', 'u1F883', 'u1F868', 'u1F878', 'u1F860', 'u1F870', 'u1F880', 'u1F86D', 'u1F87D', 'u1F865', 'u1F875', 'u1F885', 'u1F86C', 'u1F87C', 'u1F864', 'u1F874', 'u1F884', 'u1F86A', 'u1F87A', 'u1F862', 'u1F872', 'u1F882', 'u1F86E', 'u1F87E', 'u1F866', 'u1F876', 'u1F886', 'u1F86F', 'u1F87F', 'u1F867', 'u1F877', 'u1F887', 'u1F869', 'u1F879', 'u1F861', 'u1F871', 'u1F881', 'u1F32C', 'u1F5AE', 'u1F6BA', 'u1F5FA', 'u1F540', 'uni2B8B', 'uni2B88', 'uni2B8A', 'uni2B89', 'sun', 'uni2316', 'uni20E3', 'uni0009', 'u101D0', 'u101D1', 'u101D2', 'u101D3', 'u101D4', 'u101D5', 'u101D6', 'u101D7', 'u101D8', 'u101D9', 'u101DA', 'u101DB', 'u101DC', 'u101DD', 'u101DE', 'u101DF', 'u101E0', 'u101E1', 'u101E2', 'u101E3', 'u101E4', 'u101E5', 'u101E6', 'u101E7', 'u101E8', 'u101E9', 'u101EA', 'u101EB', 'u101EC', 'u101ED', 'u101EE', 'u101EF', 'u101F0', 'u101F1', 'u101F2', 'u101F3', 'u101F4', 'u101F5', 'u101F6', 'u101F7', 'u101F8', 'u101F9', 'u101FA', 'u101FB', 'u101FC', 'u102E1', 'u102E2', 'u102E3', 'u102E4', 'u102E5', 'u102E6', 'u102E7', 'u102E8', 'u102E9', 'u102EA', 'u102EB', 'u102EC', 'u102ED', 'u102EE', 'u102EF', 'u102F0', 'u102F1', 'u102F2', 'u102F3', 'u102F4', 'u102F5', 'u102F6', 'u102F7', 'u102F8', 'u102F9', 'u102FA', 'u102FB', 'zero_20E3', 'one_20E3', 'two_20E3', 'three_20E3', 'four_20E3', 'five_20E3', 'six_20E3', 'seven_20E3', 'eight_20E3', 'nine_20E3', 'u10175', 'u10176', 'u10177', 'u10178', 'u1018A', 'u1018B', 'u10140', 'u10141', 'u10142', 'u10143', 'u10144', 'u10145', 'u10146', 'u10147', 'u10148', 'u10149', 'u1014A', 'u1014B', 'u1014C', 'u1014D', 'u1014E', 'u1014F', 'u10150', 'u10151', 'u10152', 'u10153', 'u10154', 'u10155', 'u10156', 'u10157', 'u10158', 'u10159', 'u1015A', 'u1015B', 'u1015C', 'u1015D', 'u1015E', 'u1015F', 'u10160', 'u10161', 'u10162', 'u10163', 'u10164', 'u10165', 'u10166', 'u10167', 'u10168', 'u10169', 'u1016A', 'u1016B', 'u1016C', 'u1016D', 'u1016E', 'u1016F', 'u10170', 'u10171', 'u10172', 'u10173', 'u10174', 'asterisk_20E3', 'numbersign_20E3', 'space_20E3', 'uni002020E2', 'space_u102E0', 'uni22C4', 'uni2218', 'uni22C6', 'uni21AF', 'uni2618', 'uni2619', 'uni2654', 'uni2655', 'uni2656', 'uni2657', 'uni2658', 'uni2659', 'uni265A', 'uni265B', 'uni265C', 'uni265D', 'uni265E', 'uni265F', 'spade', 'uni2661', 'uni2662', 'club', 'uni2664', 'heart', 'diamond', 'uni2667', 'uni2680', 'uni2681', 'uni2682', 'uni2683', 'uni2684', 'uni2685', 'uni26A0', 'uni26CC', 'uni26CD', 'uni26CF', 'uni26D0', 'uni26D1', 'uni26D2', 'uni26D3', 'uni26D4', 'uni26D5', 'uni26D6', 'uni26D7', 'uni26D8', 'uni26D9', 'uni26DA', 'uni26DB', 'uni26DC', 'uni26DD', 'uni26DE', 'uni26DF', 'uni26E0', 'uni26E1', 'uni2702', 'uni270B', 'uni2406', 'uni2408', 'uni2407', 'uni237E', 'uni2418', 'uni240D', 'uni2410', 'uni2421', 'uni2425', 'uni2414', 'uni2411', 'uni2413', 'uni2412', 'u1F503', 'uni2419', 'uni2403', 'uni2417', 'uni2404', 'uni2405', 'uni241B', 'uni241C', 'uni240C', 'uni241D', 'uni2409', 'uni240A', 'u1F000', 'u1F001', 'u1F002', 'u1F003', 'u1F004', 'u1F005', 'u1F006', 'u1F007', 'u1F008', 'u1F009', 'u1F00A', 'u1F00B', 'u1F00C', 'u1F00D', 'u1F00E', 'u1F00F', 'u1F010', 'u1F011', 'u1F012', 'u1F013', 'u1F014', 'u1F015', 'u1F016', 'u1F017', 'u1F018', 'u1F019', 'u1F01A', 'u1F01B', 'u1F01C', 'u1F01D', 'u1F01E', 'u1F01F', 'u1F020', 'u1F021', 'u1F022', 'u1F023', 'u1F024', 'u1F025', 'u1F026', 'u1F027', 'u1F028', 'u1F029', 'u1F02A', 'u1F02B', 'u1F93B', 'uni2415', 'uni2424', 'uni237B', 'uni2400', 'uni23FF', 'uni23FB', 'uni23FC', 'uni23FD', 'uni241E', 'u1F946', 'uni240F', 'uni240E', 'uni2394', 'uni2420', 'uni2401', 'uni2402', 'uni241A', 'uni2426', 'uni2416', 'uni23FE', 'uni241F', 'uni240B', 'uni237F', 'dottedCircle_20E3', 'uni25CC20E2', 'u10179', 'u1017A', 'u1017B', 'u1017C', 'u1017D', 'u1017E', 'u1017F', 'u10180', 'u10181', 'u10182', 'u10183', 'u10184', 'u10185', 'u10186', 'u10187', 'u10188', 'u10189', 'u1018C', 'u1018D', 'u1018E', 'u101A0', 'u10190', 'u10191', 'u10192', 'u10193', 'u10194', 'u10195', 'u10196', 'u10197', 'u10198', 'u10199', 'u1019A', 'u1019B', 'uni20E2', 'sp_gobliquestrphaistosDisc', 'uniFFF9', 'uniFFFA', 'uniFFFB', 'u1019C', 'u10E60', 'u10E61', 'u10E62', 'u10E63', 'u10E64', 'u10E65', 'u10E66', 'u10E67', 'u10E68', 'u10E69', 'u10E6A', 'u10E6B', 'u10E6C', 'u10E6D', 'u10E6E', 'u10E6F', 'u10E70', 'u10E71', 'u10E72', 'u10E73', 'u10E74', 'u10E75', 'u10E76', 'u10E77', 'u10E78', 'u10E79', 'u10E7A', 'u10E7B', 'u10E7C', 'u10E7D', 'u10E7E', 'u1D2E0', 'u1D2E1', 'u1D2E2', 'u1D2E3', 'u1D2E4', 'u1D2E5', 'u1D2E6', 'u1D2E7', 'u1D2E8', 'u1D2E9', 'u1D2EA', 'u1D2EB', 'u1D2EC', 'u1D2ED', 'u1D2EE', 'u1D2EF', 'u1D2F0', 'u1D2F1', 'u1D2F2', 'u1D2F3', 'u1D300', 'u1D301', 'u1D302', 'u1D303', 'u1D304', 'u1D305', 'u1D306', 'u1D307', 'u1D308', 'u1D309', 'u1D30A', 'u1D30B', 'u1D30C', 'u1D30D', 'u1D30E', 'u1D30F', 'u1D310', 'u1D311', 'u1D312', 'u1D313', 'u1D314', 'u1D315', 'u1D316', 'u1D317', 'u1D318', 'u1D319', 'u1D31A', 'u1D31B', 'u1D31C', 'u1D31D', 'u1D31E', 'u1D31F', 'u1D320', 'u1D321', 'u1D322', 'u1D323', 'u1D324', 'u1D325', 'u1D326', 'u1D327', 'u1D328', 'u1D329', 'u1D32A', 'u1D32B', 'u1D32C', 'u1D32D', 'u1D32E', 'u1D32F', 'u1D330', 'u1D331', 'u1D332', 'u1D333', 'u1D334', 'u1D335', 'u1D336', 'u1D337', 'u1D338', 'u1D339', 'u1D33A', 'u1D33B', 'u1D33C', 'u1D33D', 'u1D33E', 'u1D33F', 'u1D340', 'u1D341', 'u1D342', 'u1D343', 'u1D344', 'u1D345', 'u1D346', 'u1D347', 'u1D348', 'u1D349', 'u1D34A', 'u1D34B', 'u1D34C', 'u1D34D', 'u1D34E', 'u1D34F', 'u1D350', 'u1D351', 'u1D352', 'u1D353', 'u1D354', 'u1D355', 'u1D356', 'u1D360', 'u1D361', 'u1D362', 'u1D363', 'u1D364', 'u1D365', 'u1D366', 'u1D367', 'u1D368', 'u1D369', 'u1D36A', 'u1D36B', 'u1D36C', 'u1D36D', 'u1D36E', 'u1D36F', 'u1D370', 'u1D371', 'u1D372', 'u1D373', 'u1D374', 'u1D375', 'u1D376', 'u1D377', 'u1D378', 'u1F030', 'u1F031', 'u1F032', 'u1F033', 'u1F034', 'u1F035', 'u1F036', 'u1F037', 'u1F038', 'u1F039', 'u1F03A', 'u1F03B', 'u1F03C', 'u1F03D', 'u1F03E', 'u1F03F', 'u1F040', 'u1F041', 'u1F042', 'u1F043', 'u1F044', 'u1F045', 'u1F046', 'u1F047', 'u1F048', 'u1F049', 'u1F04A', 'u1F04B', 'u1F04C', 'u1F04D', 'u1F04E', 'u1F04F', 'u1F050', 'u1F051', 'u1F052', 'u1F053', 'u1F054', 'u1F055', 'u1F056', 'u1F057', 'u1F058', 'u1F059', 'u1F05A', 'u1F05B', 'u1F05C', 'u1F05D', 'u1F05E', 'u1F05F', 'u1F060', 'u1F061', 'u1F062', 'u1F063', 'u1F064', 'u1F065', 'u1F066', 'u1F067', 'u1F068', 'u1F069', 'u1F06A', 'u1F06B', 'u1F06C', 'u1F06D', 'u1F06E', 'u1F06F', 'u1F070', 'u1F071', 'u1F072', 'u1F073', 'u1F074', 'u1F075', 'u1F076', 'u1F077', 'u1F078', 'u1F079', 'u1F07A', 'u1F07B', 'u1F07C', 'u1F07D', 'u1F07E', 'u1F07F', 'u1F080', 'u1F081', 'u1F082', 'u1F083', 'u1F084', 'u1F085', 'u1F086', 'u1F087', 'u1F088', 'u1F089', 'u1F08A', 'u1F08B', 'u1F08C', 'u1F08D', 'u1F08E', 'u1F08F', 'u1F090', 'u1F091', 'u1F092', 'u1F093', 'u1F0A0', 'u1F0A1', 'u1F0A2', 'u1F0A3', 'u1F0A4', 'u1F0A5', 'u1F0A6', 'u1F0A7', 'u1F0A8', 'u1F0A9', 'u1F0AA', 'u1F0AB', 'u1F0AC', 'u1F0AD', 'u1F0AE', 'u1F0B1', 'u1F0B2', 'u1F0B3', 'u1F0B4', 'u1F0B5', 'u1F0B6', 'u1F0B7', 'u1F0B8', 'u1F0B9', 'u1F0BA', 'u1F0BB', 'u1F0BC', 'u1F0BD', 'u1F0BE', 'u1F0BF', 'u1F0C1', 'u1F0C2', 'u1F0C3', 'u1F0C4', 'u1F0C5', 'u1F0C6', 'u1F0C7', 'u1F0C8', 'u1F0C9', 'u1F0CA', 'u1F0CB', 'u1F0CC', 'u1F0CD', 'u1F0CE', 'u1F0CF', 'u1F0D1', 'u1F0D2', 'u1F0D3', 'u1F0D4', 'u1F0D5', 'u1F0D6', 'u1F0D7', 'u1F0D8', 'u1F0D9', 'u1F0DA', 'u1F0DB', 'u1F0DC', 'u1F0DD', 'u1F0DE', 'u1F0DF', 'u1F0E0', 'u1F0E1', 'u1F0E2', 'u1F0E3', 'u1F0E4', 'u1F0E5', 'u1F0E6', 'u1F0E7', 'u1F0E8', 'u1F0E9', 'u1F0EA', 'u1F0EB', 'u1F0EC', 'u1F0ED', 'u1F0EE', 'u1F0EF', 'u1F0F0', 'u1F0F1', 'u1F0F2', 'u1F0F3', 'u1F0F4', 'u1F0F5', 'u1F6D3', 'u1F6D4', 'u1F6D5', 'u1F6D6', 'u1F6D7', 'u1F6F7', 'u1F6F8', 'u1F6F9', 'u1F6FA', 'u1F6FB', 'u1F6FC', 'u1F7D5', 'u1F7D6', 'u1F7D7', 'u1F7D8', 'u1F7E0', 'u1F7E1', 'u1F7E2', 'u1F7E3', 'u1F7E4', 'u1F7E5', 'u1F7E6', 'u1F7E7', 'u1F7E8', 'u1F7E9', 'u1F7EA', 'u1F7EB', 'u1F8B0', 'u1F8B1', 'u1FA00', 'u1FA01', 'u1FA02', 'u1FA03', 'u1FA04', 'u1FA05', 'u1FA06', 'u1FA07', 'u1FA08', 'u1FA09', 'u1FA0A', 'u1FA0B', 'u1FA0C', 'u1FA0D', 'u1FA0E', 'u1FA0F', 'u1FA10', 'u1FA11', 'u1FA12', 'u1FA13', 'u1FA14', 'u1FA15', 'u1FA16', 'u1FA17', 'u1FA18', 'u1FA19', 'u1FA1A', 'u1FA1B', 'u1FA1C', 'u1FA1D', 'u1FA1E', 'u1FA1F', 'u1FA20', 'u1FA21', 'u1FA22', 'u1FA23', 'u1FA24', 'u1FA25', 'u1FA26', 'u1FA27', 'u1FA28', 'u1FA29', 'u1FA2A', 'u1FA2B', 'u1FA2C', 'u1FA2D', 'u1FA2E', 'u1FA2F', 'u1FA30', 'u1FA31', 'u1FA32', 'u1FA33', 'u1FA34', 'u1FA35', 'u1FA36', 'u1FA37', 'u1FA38', 'u1FA39', 'u1FA3A', 'u1FA3B', 'u1FA3C', 'u1FA3D', 'u1FA3E', 'u1FA3F', 'u1FA40', 'u1FA41', 'u1FA42', 'u1FA43', 'u1FA44', 'u1FA45', 'u1FA46', 'u1FA47', 'u1FA48', 'u1FA49', 'u1FA4A', 'u1FA4B', 'u1FA4C', 'u1FA4D', 'u1FA4E', 'u1FA4F', 'u1FA50', 'u1FA51', 'u1FA52', 'u1FA53', 'u1FA60', 'u1FA61', 'u1FA62', 'u1FA63', 'u1FA64', 'u1FA65', 'u1FA66', 'u1FA67', 'u1FA68', 'u1FA69', 'u1FA6A', 'u1FA6B', 'u1FA6C', 'u1FA6D', 'u1FA70', 'u1FA71', 'u1FA72', 'u1FA73', 'u1FA74', 'u1FA78', 'u1FA79', 'u1FA7A', 'u1FA80', 'u1FA81', 'u1FA82', 'u1FA83', 'u1FA84', 'u1FA85', 'u1FA86', 'u1FA90', 'u1FA91', 'u1FA92', 'u1FA93', 'u1FA94', 'u1FA95', 'u1FA96', 'u1FA97', 'u1FA98', 'u1FA99', 'u1FA9A', 'u1FA9B', 'u1FA9C', 'u1FA9D', 'u1FA9E', 'u1FA9F', 'u1FAA0', 'u1FAA1', 'u1FAA2', 'u1FAA3', 'u1FAA4', 'u1FAA5', 'u1FAA6', 'u1FAA7', 'u1FAA8', 'u1FAB0', 'u1FAB1', 'u1FAB2', 'u1FAB3', 'u1FAB4', 'u1FAB5', 'u1FAB6', 'u1FAC0', 'u1FAC1', 'u1FAC2', 'u1FAD0', 'u1FAD1', 'u1FAD2', 'u1FAD3', 'u1FAD4', 'u1FAD5', 'u1FAD6', 'u1FB00', 'u1FB01', 'u1FB02', 'u1FB03', 'u1FB04', 'u1FB05', 'u1FB06', 'u1FB07', 'u1FB08', 'u1FB09', 'u1FB0A', 'u1FB0B', 'u1FB0C', 'u1FB0D', 'u1FB0E', 'u1FB0F', 'u1FB10', 'u1FB11', 'u1FB12', 'u1FB13', 'u1FB14', 'u1FB15', 'u1FB16', 'u1FB17', 'u1FB18', 'u1FB19', 'u1FB1A', 'u1FB1B', 'u1FB1C', 'u1FB1D', 'u1FB1E', 'u1FB1F', 'u1FB20', 'u1FB21', 'u1FB22', 'u1FB23', 'u1FB24', 'u1FB25', 'u1FB26', 'u1FB27', 'u1FB28', 'u1FB29', 'u1FB2A', 'u1FB2B', 'u1FB2C', 'u1FB2D', 'u1FB2E', 'u1FB2F', 'u1FB30', 'u1FB31', 'u1FB32', 'u1FB33', 'u1FB34', 'u1FB35', 'u1FB36', 'u1FB37', 'u1FB38', 'u1FB39', 'u1FB3A', 'u1FB3B', 'u1FB3C', 'u1FB3D', 'u1FB3E', 'u1FB3F', 'u1FB40', 'u1FB41', 'u1FB42', 'u1FB43', 'u1FB44', 'u1FB45', 'u1FB46', 'u1FB47', 'u1FB48', 'u1FB49', 'u1FB4A', 'u1FB4B', 'u1FB4C', 'u1FB4D', 'u1FB4E', 'u1FB4F', 'u1FB50', 'u1FB51', 'u1FB52', 'u1FB53', 'u1FB54', 'u1FB55', 'u1FB56', 'u1FB57', 'u1FB58', 'u1FB59', 'u1FB5A', 'u1FB5B', 'u1FB5C', 'u1FB5D', 'u1FB5E', 'u1FB5F', 'u1FB60', 'u1FB61', 'u1FB62', 'u1FB63', 'u1FB64', 'u1FB65', 'u1FB66', 'u1FB67', 'u1FB68', 'u1FB69', 'u1FB6A', 'u1FB6B', 'u1FB6C', 'u1FB6D', 'u1FB6E', 'u1FB6F', 'u1FB70', 'u1FB71', 'u1FB72', 'u1FB73', 'u1FB74', 'u1FB75', 'u1FB76', 'u1FB77', 'u1FB78', 'u1FB79', 'u1FB7A', 'u1FB7B', 'u1FB7C', 'u1FB7D', 'u1FB7E', 'u1FB7F', 'u1FB80', 'u1FB81', 'u1FB82', 'u1FB83', 'u1FB84', 'u1FB85', 'u1FB86', 'u1FB87', 'u1FB88', 'u1FB89', 'u1FB8A', 'u1FB8B', 'u1FB8C', 'u1FB8D', 'u1FB8E', 'u1FB8F', 'u1FB90', 'u1FB91', 'u1FB92', 'u1FB94', 'u1FB95', 'u1FB96', 'u1FB97', 'u1FB98', 'u1FB99', 'u1FB9A', 'u1FB9B', 'u1FB9C', 'u1FB9D', 'u1FB9E', 'u1FB9F', 'u1FBA0', 'u1FBA1', 'u1FBA2', 'u1FBA3', 'u1FBA4', 'u1FBA5', 'u1FBA6', 'u1FBA7', 'u1FBA8', 'u1FBA9', 'u1FBAA', 'u1FBAB', 'u1FBAC', 'u1FBAD', 'u1FBAE', 'u1FBAF', 'u1FBB0', 'u1FBB1', 'u1FBB2', 'u1FBB3', 'u1FBB4', 'u1FBB5', 'u1FBB6', 'u1FBB7', 'u1FBB8', 'u1FBB9', 'u1FBBA', 'u1FBBB', 'u1FBBC', 'u1FBBD', 'u1FBBE', 'u1FBBF', 'u1FBC0', 'u1FBC1', 'u1FBC2', 'u1FBC3', 'u1FBC4', 'u1FBC5', 'u1FBC6', 'u1FBC7', 'u1FBC8', 'u1FBC9', 'u1FBCA', 'u1FBF0', 'u1FBF1', 'u1FBF2', 'u1FBF3', 'u1FBF4', 'u1FBF5', 'u1FBF6', 'u1FBF7', 'u1FBF8', 'u1FBF9', 'uni2B97', 'uni2BBA', 'uni2BBB', 'uni2BBC', 'uni2BC9', 'uni2BD2', 'uni2BD3', 'uni2BD4', 'uni2BD5', 'uni2BD6', 'uni2BD7', 'uni2BD8', 'uni2BD9', 'uni2BDA', 'uni2BDB', 'uni2BDC', 'uni2BDD', 'uni2BDE', 'uni2BDF', 'uni2BE0', 'uni2BE1', 'uni2BE2', 'uni2BE3', 'uni2BE4', 'uni2BE5', 'uni2BE6', 'uni2BE7', 'uni2BE8', 'uni2BE9', 'uni2BEA', 'uni2BEB', 'uni2BEC', 'uni2BED', 'uni2BEE', 'uni2BEF', 'uni2BF0', 'uni2BF1', 'uni2BF2', 'uni2BF3', 'uni2BF4', 'uni2BF5', 'uni2BF6', 'uni2BF7', 'uni2BF8', 'uni2BF9', 'uni2BFA', 'uni2BFB', 'uni2BFC', 'uni2BFD', 'uni2BFF'] [code: mono-outliers]
+
+
+    Result: [1;91;107mFAIL[0m
+
+ >> [1;35;107mcom.google.fonts/check/dsig[0m
+    [0;36;107mDoes the font have a DSIG table?[0m
+    with NotoSansSymbols2-Regular.ttf
+
+    [1;35;107m  Rationale:                                                                [0m
+    [0;30;107m  Microsoft Office 2013 and below products expect fonts to have a digital   [0m
+    [0;30;107m  signature declared in a DSIG table in order to implement OpenType         [0m
+    [0;30;107m  features. The EOL date for Microsoft Office 2013 products is 4/11/2023.   [0m
+    [0;30;107m  This issue does not impact Microsoft Office 2016 and above products.      [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  This checks verifies that this signature is available in the font.        [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  A fake signature is enough to address this issue. If needed, a dummy      [0m
+    [0;30;107m  table can be added to the font with the `gftools fix-dsig` script         [0m
+    [0;30;107m  available at https://github.com/googlefonts/gftools                       [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  Reference: https://github.com/googlefonts/fontbakery/issues/1845          [0m
+
+    * [1;91;107mFAIL[0m: This font lacks a digital signature (DSIG table). Some applications may require one (even if only a dummy placeholder) in order to work properly. You can add a DSIG table by running the `gftools fix-dsig` script. [code: lacks-signature]
+
+
+    Result: [1;91;107mFAIL[0m
+
+ >> [1;35;107mcom.google.fonts/check/gdef_spacing_marks[0m
+    [0;36;107mCheck mark characters are in GDEF mark glyph class)[0m
+    with NotoSansSymbols2-Regular.ttf
+
+    [1;35;107m  Rationale:                                                                [0m
+    [0;30;107m  Glyphs in the GDEF mark glyph class should be non-spacing.                [0m
+    [0;30;107m  Spacing glyphs in the GDEF mark glyph class may have incorrect anchor     [0m
+    [0;30;107m  positioning that was only intended for building composite glyphs during   [0m
+    [0;30;107m  design.                                                                   [0m
+
+    * [1;30;103mWARN[0m: The following spacing glyphs may be in the GDEF mark glyph class by mistake:
+	 sp_gobliquestrphaistosDisc, space_20E3, space_u102E0 and uni20E3 [code: spacing-mark-glyphs]
+
+
+    Result: [1;30;103mWARN[0m
+
+ >> [1;35;107mcom.google.fonts/check/gdef_mark_chars[0m
+    [0;36;107mCheck mark characters are in GDEF mark glyph class[0m
+    with NotoSansSymbols2-Regular.ttf
+
+    [1;35;107m  Rationale:                                                                [0m
+    [0;30;107m  Mark characters should be in the GDEF mark glyph class.                   [0m
+
+    * [1;30;103mWARN[0m: The following mark characters could be in the GDEF mark glyph class:
+	 U+20E2 [code: mark-chars]
+
+
+    Result: [1;30;103mWARN[0m
+
+ >> [1;35;107mcom.google.fonts/check/gpos_kerning_info[0m
+    [0;36;107mDoes GPOS table have kerning information? This check skips monospaced fonts as defined by post.isFixedPitch value[0m
+    with NotoSansSymbols2-Regular.ttf
+
+    * [1;30;103mWARN[0m: GPOS table lacks kerning information. [code: lacks-kern-info]
+
+
+    Result: [1;30;103mWARN[0m
+
+ >> [1;35;107mcom.google.fonts/check/outline_jaggy_segments[0m
+    [0;36;107mDo outlines contain any jaggy segments?[0m
+    with NotoSansSymbols2-Regular.ttf
+
+    [1;35;107m  Rationale:                                                                [0m
+    [0;30;107m  This test heuristically detects outline segments which form a             [0m
+    [0;30;107m  particularly small angle, indicative of an outline error. This may cause  [0m
+    [0;30;107m  false positives in cases such as extreme ink traps, so should be regarded [0m
+    [0;30;107m  as advisory and backed up by manual inspection.                           [0m
+
+    * [1;30;103mWARN[0m: The following glyphs have jaggy segments:
+	* u101D1: L<<158.0,655.0>--<202.0,553.0>>/L<<202.0,553.0>--<167.0,658.0>> = 4.8990924537876985
+	* u101D1: L<<196.0,669.0>--<231.0,563.0>>/L<<231.0,563.0>--<221.0,676.0>> = 13.21538973442621
+	* u101D1: L<<290.0,688.0>--<289.0,558.0>>/L<<289.0,558.0>--<300.0,680.0>> = 4.71135362944517
+	* u101D1: L<<408.0,660.0>--<382.0,547.0>>/L<<382.0,547.0>--<424.0,635.0>> = 12.55629033344111
+	* u101D1: L<<451.0,623.0>--<410.0,538.0>>/L<<410.0,538.0>--<466.0,619.0>> = 8.907880578202827
+	* u101D1: L<<490.0,602.0>--<441.0,532.0>>/L<<441.0,532.0>--<501.0,590.0>> = 10.97900173252049
+	* u101D3: B<<230.0,133.5>-<227.0,152.0>-<225.0,180.0>>/B<<225.0,180.0>-<225.0,153.0>-<211.0,120.0>> = 4.085616779974799
+	* u101D4: B<<127.0,331.0>-<127.0,364.0>-<133.0,388.0>>/B<<133.0,388.0>-<125.0,373.0>-<120.0,326.0>> = 14.036243467926484
+	* u101D5: B<<262.0,599.0>-<295.0,599.0>-<341.0,560.0>>/B<<341.0,560.0>-<317.0,588.0>-<287.0,604.5>> = 9.106557599367749
+	* u101D9: B<<140.0,253.0>-<140.0,110.0>-<146.0,-22.0>>/B<<146.0,-22.0>-<154.0,23.0>-<158.5,91.5>> = 12.683160190042093 and 212 more. [code: found-jaggy-segments]
+
+
+    Result: [1;30;103mWARN[0m
+
+ >> [1;35;107mcom.google.fonts/check/outline_semi_vertical[0m
+    [0;36;107mDo outlines contain any semi-vertical or semi-horizontal lines?[0m
+    with NotoSansSymbols2-Regular.ttf
+
+    [1;35;107m  Rationale:                                                                [0m
+    [0;30;107m  This test detects line segments which are nearly, but not quite, exactly  [0m
+    [0;30;107m  horizontal or vertical. Sometimes such lines are created by design, but   [0m
+    [0;30;107m  often they are indicative of a design error.                              [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  This test is disabled for italic styles, which often contain              [0m
+    [0;30;107m  nearly-upright lines.                                                     [0m
+
+    * [1;30;103mWARN[0m: The following glyphs have semi-vertical/semi-horizontal lines:
+	* u101D1: L<<290.0,688.0>--<289.0,558.0>>
+	* u101DD: L<<50.0,22.0>--<54.0,655.0>>
+	* u101DD: L<<80.0,285.0>--<78.0,29.0>>
+	* u101DD: L<<83.0,657.0>--<81.0,394.0>>
+	* u102F5: L<<373.0,188.0>--<764.0,190.0>>
+	* u102F5: L<<765.0,100.0>--<201.0,97.0>>
+	* u1F5B4: L<<287.0,499.0>--<419.0,498.0>>
+	* u1F5DC: L<<303.0,859.0>--<753.0,856.0>>
+	* u1F6E8: L<<460.0,328.0>--<87.0,325.0>>
+	* u1F6E8: L<<943.0,325.0>--<569.0,328.0>> and 24 more. [code: found-semi-vertical]
+
+
+    Result: [1;30;103mWARN[0m
+
+
+Total:
+
+    [1;97;101mERROR[0m: 0
+    [1;91;107mFAIL[0m: 2
+    [1;30;103mWARN[0m: 6
+    [0;36;107mINFO[0m: 2
+    [0;34;107mSKIP[0m: 17
+    [0;32;107mPASS[0m: 50
+
+
+DONE!
+
+    [1;30;107mMeaning of check results:[0m
+
+    An [1;97;101mERROR[0m is something wrong with FontBakery itself, possibly a bug.
+    A [1;91;107mFAIL[0m is a problem with the font that must be fixed.
+    A [1;30;103mWARN[0m is something that you should consider addressing.
+    An [0;36;107mINFO[0m result simply prints something useful. Typically stats.
+    A [0;32;107mPASS[0m means the font looks good for the given checking routine.
+    And a [0;34;107mSKIP[0m happens when the check does not apply to the given font.
+
+    If you get [1;97;101mERROR[0ms, please help us improve the tool by reporting them at
+    [1;36;107mhttps://github.com/googlefonts/fontbakery/issues[0m
+
+    (but other kinds of bug reports and/or
+     feature requests are also always welcome, of course!)
+

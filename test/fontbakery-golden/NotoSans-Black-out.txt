@@ -1,0 +1,239 @@
+Start ... running 77 individual check executions.
+ >> [1;35;107mcom.google.fonts/check/family/win_ascent_and_descent[0m
+    [0;36;107mChecking OS/2 usWinAscent & usWinDescent.[0m
+    with NotoSans-Black.ttf
+
+    [1;35;107m  Rationale:                                                                [0m
+    [0;30;107m  A font's winAscent and winDescent values should be greater than the head  [0m
+    [0;30;107m  table's yMax, abs(yMin) values. If they are less than these values,       [0m
+    [0;30;107m  clipping can occur on Windows platforms                                   [0m
+    [0;30;107m  (https://github.com/RedHatBrand/Overpass/issues/33).                      [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  If the font includes tall/deep writing systems such as Arabic or          [0m
+    [0;30;107m  Devanagari, the winAscent and winDescent can be greater than the yMax and [0m
+    [0;30;107m  abs(yMin) to accommodate vowel marks.                                     [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  When the win Metrics are significantly greater than the upm, the          [0m
+    [0;30;107m  linespacing can appear too loose. To counteract this, enabling the OS/2   [0m
+    [0;30;107m  fsSelection bit 7 (Use_Typo_Metrics), will force Windows to use the OS/2  [0m
+    [0;30;107m  typo values instead. This means the font developer can control the        [0m
+    [0;30;107m  linespacing with the typo values, whilst avoiding clipping by setting the [0m
+    [0;30;107m  win values to values greater than the yMax and abs(yMin).                 [0m
+
+    * [1;91;107mFAIL[0m: OS/2.usWinAscent value should be equal or greater than 1124, but got 1069 instead [code: ascent]
+    * [1;91;107mFAIL[0m: OS/2.usWinDescent value should be equal or greater than 392, but got 293 instead. [code: descent]
+
+
+    Result: [1;91;107mFAIL[0m
+
+ >> [1;35;107mcom.google.fonts/check/required_tables[0m
+    [0;36;107mFont contains all required tables?[0m
+    with NotoSans-Black.ttf
+
+    [1;35;107m  Rationale:                                                                [0m
+    [0;30;107m  Depending on the typeface and coverage of a font, certain tables are      [0m
+    [0;30;107m  recommended for optimum quality. For example, the performance of a        [0m
+    [0;30;107m  non-linear font is improved if the VDMX, LTSH, and hdmx tables are        [0m
+    [0;30;107m  present. Non-monospaced Latin fonts should have a kern table. A gasp      [0m
+    [0;30;107m  table is necessary if a designer wants to influence the sizes at which    [0m
+    [0;30;107m  grayscaling is used under Windows. A DSIG table containing a digital      [0m
+    [0;30;107m  signature helps ensure the integrity of the font file. Etc.               [0m
+
+    * [0;36;107mINFO[0m: This font contains the following optional tables [loca, GPOS, GSUB]
+
+
+    Result: [0;36;107mINFO[0m
+
+ >> [1;35;107mcom.google.fonts/check/superfamily/list[0m
+    [0;36;107mList all superfamily filepaths[0m
+    with NotoSans-Black.ttf
+
+    [1;35;107m  Rationale:                                                                [0m
+    [0;30;107m  This is a merely informative check that lists all sibling families        [0m
+    [0;30;107m  detected by fontbakery.                                                   [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  Only the fontfiles in these directories will be considered in             [0m
+    [0;30;107m  superfamily-level checks.                                                 [0m
+
+    * [0;36;107mINFO[0m: . [code: family-path]
+
+
+    Result: [0;36;107mINFO[0m
+
+ >> [1;35;107mcom.google.fonts/check/dsig[0m
+    [0;36;107mDoes the font have a DSIG table?[0m
+    with NotoSans-Black.ttf
+
+    [1;35;107m  Rationale:                                                                [0m
+    [0;30;107m  Microsoft Office 2013 and below products expect fonts to have a digital   [0m
+    [0;30;107m  signature declared in a DSIG table in order to implement OpenType         [0m
+    [0;30;107m  features. The EOL date for Microsoft Office 2013 products is 4/11/2023.   [0m
+    [0;30;107m  This issue does not impact Microsoft Office 2016 and above products.      [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  This checks verifies that this signature is available in the font.        [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  A fake signature is enough to address this issue. If needed, a dummy      [0m
+    [0;30;107m  table can be added to the font with the `gftools fix-dsig` script         [0m
+    [0;30;107m  available at https://github.com/googlefonts/gftools                       [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  Reference: https://github.com/googlefonts/fontbakery/issues/1845          [0m
+
+    * [1;91;107mFAIL[0m: This font lacks a digital signature (DSIG table). Some applications may require one (even if only a dummy placeholder) in order to work properly. You can add a DSIG table by running the `gftools fix-dsig` script. [code: lacks-signature]
+
+
+    Result: [1;91;107mFAIL[0m
+
+ >> [1;35;107mcom.google.fonts/check/gdef_mark_chars[0m
+    [0;36;107mCheck mark characters are in GDEF mark glyph class[0m
+    with NotoSans-Black.ttf
+
+    [1;35;107m  Rationale:                                                                [0m
+    [0;30;107m  Mark characters should be in the GDEF mark glyph class.                   [0m
+
+    * [1;30;103mWARN[0m: The following mark characters could be in the GDEF mark glyph class:
+	 U+0488, U+0489, U+1ABE, U+A670, U+A671 and U+A672 [code: mark-chars]
+
+
+    Result: [1;30;103mWARN[0m
+
+ >> [1;35;107mcom.google.fonts/check/points_out_of_bounds[0m
+    [0;36;107mCheck for points out of bounds.[0m
+    with NotoSans-Black.ttf
+
+    * [1;30;103mWARN[0m: The following glyphs have coordinates which are out of bounds:
+	* ('uni02C2', 22.5, 635.0)
+	* ('uni02C2', 22.5, 677.0)
+	* ('uni02C3', 22.5, 597.5)
+	* ('uni02C3', 22.5, 728.0)
+	* ('uni02C3', 22.5, 800.5) and ('uni02C3', 22.5, 525.5)
+
+This happens a lot when points are not extremes, which is usually bad. However, fixing this alert by adding points on extremes may do more harm than good, especially with italics, calligraphic-script, handwriting, rounded and other fonts. So it is common to ignore this message. [code: points-out-of-bounds]
+
+
+    Result: [1;30;103mWARN[0m
+
+ >> [1;35;107mcom.google.fonts/check/glyf_nested_components[0m
+    [0;36;107mCheck glyphs do not have components which are themselves components.[0m
+    with NotoSans-Black.ttf
+
+    [1;35;107m  Rationale:                                                                [0m
+    [0;30;107m  There have been bugs rendering variable fonts with nested components.     [0m
+    [0;30;107m  Additionally, some static fonts with nested components have been reported [0m
+    [0;30;107m  to have rendering and printing issues.                                    [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  For more info, see:                                                       [0m
+    [0;30;107m  * https://github.com/googlefonts/fontbakery/issues/2961                   [0m
+    [0;30;107m  * https://github.com/arrowtype/recursive/issues/412                       [0m
+
+    * [1;91;107mFAIL[0m: The following glyphs have components which themselves are component glyphs:
+	* anoteleia
+	* uni01EE
+	* uni0298
+	* uni02B4
+	* uni02B6
+	* uni02CE
+	* uni02CF
+	* uni02E4
+	* uni03FE
+	* uni03FF and 108 more. [code: found-nested-components]
+
+
+    Result: [1;91;107mFAIL[0m
+
+ >> [1;35;107mcom.google.fonts/check/outline_colinear_vectors[0m
+    [0;36;107mDo any segments have colinear vectors?[0m
+    with NotoSans-Black.ttf
+
+    [1;35;107m  Rationale:                                                                [0m
+    [0;30;107m  This test looks for consecutive line segments which have the same angle.  [0m
+    [0;30;107m  This normally happens if an outline point has been added by accident.     [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  This test is not run for variable fonts, as they may legitimately have    [0m
+    [0;30;107m  colinear vectors.                                                         [0m
+
+    * [1;30;103mWARN[0m: The following glyphs have colinear vectors:
+	* uni20BF: L<<317.0,0.0>--<315.0,0.0>> -> L<<315.0,0.0>--<267.0,0.0>>
+	* uni2E36: L<<310.0,556.0>--<310.0,444.0>> -> L<<310.0,444.0>--<343.0,0.0>>
+	* uni2E37: L<<145.0,0.0>--<178.0,444.0>> -> L<<178.0,444.0>--<178.0,556.0>> and uniAB63: L<<413.0,553.0>--<604.0,553.0>> -> L<<604.0,553.0>--<604.0,553.0>> [code: found-colinear-vectors]
+
+
+    Result: [1;30;103mWARN[0m
+
+ >> [1;35;107mcom.google.fonts/check/outline_jaggy_segments[0m
+    [0;36;107mDo outlines contain any jaggy segments?[0m
+    with NotoSans-Black.ttf
+
+    [1;35;107m  Rationale:                                                                [0m
+    [0;30;107m  This test heuristically detects outline segments which form a             [0m
+    [0;30;107m  particularly small angle, indicative of an outline error. This may cause  [0m
+    [0;30;107m  false positives in cases such as extreme ink traps, so should be regarded [0m
+    [0;30;107m  as advisory and backed up by manual inspection.                           [0m
+
+    * [1;30;103mWARN[0m: The following glyphs have jaggy segments:
+	* Lambda: B<<355.0,478.0>-<349.0,510.0>-<347.0,530.0>>/B<<347.0,530.0>-<345.0,510.0>-<339.5,478.5>> = 11.42118627499929
+	* V: B<<339.5,236.0>-<346.0,204.0>-<347.0,184.0>>/B<<347.0,184.0>-<349.0,204.0>-<354.5,235.5>> = 8.57299836361137
+	* W: B<<308.0,211.5>-<313.0,185.0>-<315.0,167.0>>/B<<315.0,167.0>-<319.0,197.0>-<325.5,236.0>> = 13.934835114501363
+	* W: B<<527.0,442.0>-<523.0,468.0>-<521.0,486.0>>/B<<521.0,486.0>-<519.0,468.0>-<514.5,442.0>> = 12.680383491819825
+	* W: B<<714.0,235.0>-<721.0,196.0>-<724.0,167.0>>/B<<724.0,167.0>-<727.0,192.0>-<734.0,229.0>> = 12.748914526401432
+	* Wacute: B<<308.0,211.5>-<313.0,185.0>-<315.0,167.0>>/B<<315.0,167.0>-<319.0,197.0>-<325.5,236.0>> = 13.934835114501363
+	* Wacute: B<<527.0,442.0>-<523.0,468.0>-<521.0,486.0>>/B<<521.0,486.0>-<519.0,468.0>-<514.5,442.0>> = 12.680383491819825
+	* Wacute: B<<714.0,235.0>-<721.0,196.0>-<724.0,167.0>>/B<<724.0,167.0>-<727.0,192.0>-<734.0,229.0>> = 12.748914526401432
+	* Wcircumflex: B<<308.0,211.5>-<313.0,185.0>-<315.0,167.0>>/B<<315.0,167.0>-<319.0,197.0>-<325.5,236.0>> = 13.934835114501363
+	* Wcircumflex: B<<527.0,442.0>-<523.0,468.0>-<521.0,486.0>>/B<<521.0,486.0>-<519.0,468.0>-<514.5,442.0>> = 12.680383491819825 and 62 more. [code: found-jaggy-segments]
+
+
+    Result: [1;30;103mWARN[0m
+
+ >> [1;35;107mcom.google.fonts/check/outline_semi_vertical[0m
+    [0;36;107mDo outlines contain any semi-vertical or semi-horizontal lines?[0m
+    with NotoSans-Black.ttf
+
+    [1;35;107m  Rationale:                                                                [0m
+    [0;30;107m  This test detects line segments which are nearly, but not quite, exactly  [0m
+    [0;30;107m  horizontal or vertical. Sometimes such lines are created by design, but   [0m
+    [0;30;107m  often they are indicative of a design error.                              [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  This test is disabled for italic styles, which often contain              [0m
+    [0;30;107m  nearly-upright lines.                                                     [0m
+
+    * [1;30;103mWARN[0m: The following glyphs have semi-vertical/semi-horizontal lines:
+	* uni2055: L<<339.0,-16.0>--<222.0,-15.0>>
+	* uni205C: L<<22.0,289.0>--<21.0,420.0>>
+	* uni205C: L<<360.0,745.0>--<491.0,746.0>>
+	* uni205C: L<<491.0,-38.0>--<360.0,-37.0>>
+	* uni205C: L<<827.0,420.0>--<826.0,289.0>>
+	* uniA65F: L<<10.0,4.0>--<11.0,135.0>>
+	* uniA696: L<<858.0,-239.0>--<412.0,-240.0>>
+	* uniA73A: L<<578.0,441.0>--<730.0,440.0>> and uniAB4C: L<<240.0,257.0>--<241.0,400.0>> [code: found-semi-vertical]
+
+
+    Result: [1;30;103mWARN[0m
+
+
+Total:
+
+    [1;97;101mERROR[0m: 0
+    [1;91;107mFAIL[0m: 3
+    [1;30;103mWARN[0m: 5
+    [0;36;107mINFO[0m: 2
+    [0;34;107mSKIP[0m: 18
+    [0;32;107mPASS[0m: 49
+
+
+DONE!
+
+    [1;30;107mMeaning of check results:[0m
+
+    An [1;97;101mERROR[0m is something wrong with FontBakery itself, possibly a bug.
+    A [1;91;107mFAIL[0m is a problem with the font that must be fixed.
+    A [1;30;103mWARN[0m is something that you should consider addressing.
+    An [0;36;107mINFO[0m result simply prints something useful. Typically stats.
+    A [0;32;107mPASS[0m means the font looks good for the given checking routine.
+    And a [0;34;107mSKIP[0m happens when the check does not apply to the given font.
+
+    If you get [1;97;101mERROR[0ms, please help us improve the tool by reporting them at
+    [1;36;107mhttps://github.com/googlefonts/fontbakery/issues[0m
+
+    (but other kinds of bug reports and/or
+     feature requests are also always welcome, of course!)
+

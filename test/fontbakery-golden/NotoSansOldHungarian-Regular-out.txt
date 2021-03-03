@@ -1,0 +1,220 @@
+Start ... running 77 individual check executions.
+ >> [1;35;107mcom.google.fonts/check/required_tables[0m
+    [0;36;107mFont contains all required tables?[0m
+    with NotoSansOldHungarian-Regular.ttf
+
+    [1;35;107m  Rationale:                                                                [0m
+    [0;30;107m  Depending on the typeface and coverage of a font, certain tables are      [0m
+    [0;30;107m  recommended for optimum quality. For example, the performance of a        [0m
+    [0;30;107m  non-linear font is improved if the VDMX, LTSH, and hdmx tables are        [0m
+    [0;30;107m  present. Non-monospaced Latin fonts should have a kern table. A gasp      [0m
+    [0;30;107m  table is necessary if a designer wants to influence the sizes at which    [0m
+    [0;30;107m  grayscaling is used under Windows. A DSIG table containing a digital      [0m
+    [0;30;107m  signature helps ensure the integrity of the font file. Etc.               [0m
+
+    * [0;36;107mINFO[0m: This font contains the following optional tables [loca, GPOS, GSUB]
+
+
+    Result: [0;36;107mINFO[0m
+
+ >> [1;35;107mcom.google.fonts/check/superfamily/list[0m
+    [0;36;107mList all superfamily filepaths[0m
+    with NotoSansOldHungarian-Regular.ttf
+
+    [1;35;107m  Rationale:                                                                [0m
+    [0;30;107m  This is a merely informative check that lists all sibling families        [0m
+    [0;30;107m  detected by fontbakery.                                                   [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  Only the fontfiles in these directories will be considered in             [0m
+    [0;30;107m  superfamily-level checks.                                                 [0m
+
+    * [0;36;107mINFO[0m: . [code: family-path]
+
+
+    Result: [0;36;107mINFO[0m
+
+ >> [1;35;107mcom.google.fonts/check/monospace[0m
+    [0;36;107mChecking correctness of monospaced metadata.[0m
+    with NotoSansOldHungarian-Regular.ttf
+
+    [1;35;107m  Rationale:                                                                [0m
+    [0;30;107m  There are various metadata in the OpenType spec to specify if a font is   [0m
+    [0;30;107m  monospaced or not. If the font is not truly monospaced, then no           [0m
+    [0;30;107m  monospaced metadata should be set (as sometimes they mistakenly are...)   [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  Requirements for monospace fonts:                                         [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  * post.isFixedPitch - "Set to 0 if the font is proportionally spaced,     [0m
+    [0;30;107m  non-zero if the font is not proportionally spaced (monospaced)"           [0m
+    [0;30;107m    www.microsoft.com/typography/otspec/post.htm                            [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  * hhea.advanceWidthMax must be correct, meaning no glyph's width value is [0m
+    [0;30;107m  greater.                                                                  [0m
+    [0;30;107m    www.microsoft.com/typography/otspec/hhea.htm                            [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  * OS/2.panose.bProportion must be set to 9 (monospace). Spec says: "The   [0m
+    [0;30;107m  PANOSE definition contains ten digits each of which currently describes   [0m
+    [0;30;107m  up to sixteen variations. Windows uses bFamilyType, bSerifStyle and       [0m
+    [0;30;107m  bProportion in the font mapper to determine family type. It also uses     [0m
+    [0;30;107m  bProportion to determine if the font is monospaced."                      [0m
+    [0;30;107m    www.microsoft.com/typography/otspec/os2.htm#pan                         [0m
+    [0;30;107m    monotypecom-test.monotype.de/services/pan2                              [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  * OS/2.xAvgCharWidth must be set accurately.                              [0m
+    [0;30;107m    "OS/2.xAvgCharWidth is used when rendering monospaced fonts, at least   [0m
+    [0;30;107m  by Windows GDI"                                                           [0m
+    [0;30;107m    http://typedrawers.com/discussion/comment/15397/#Comment_15397          [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  Also we should report an error for glyphs not of average width.           [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  Please also note:                                                         [0m
+    [0;30;107m  Thomas Phinney told us that a few years ago (as of December 2019), if you [0m
+    [0;30;107m  gave a font a monospace flag in Panose, Microsoft Word would ignore the   [0m
+    [0;30;107m  actual advance widths and treat it as monospaced. Source:                 [0m
+    [0;30;107m  https://typedrawers.com/discussion/comment/45140/#Comment_45140           [0m
+
+    * [1;91;107mFAIL[0m: On monospaced fonts, the value of post.isFixedPitch must be set to a non-zero value (meaning 'fixed width monospaced'), but got 0 instead. [code: mono-bad-post-isFixedPitch]
+    * [1;91;107mFAIL[0m: On monospaced fonts, the value of OS/2.panose.bProportion must be set to 9 (proportion: monospaced), but got 2 instead. [code: mono-bad-panose-proportion]
+    * [1;30;103mWARN[0m: Font is monospaced but 349 glyphs (96.94%) have a different width. You should check the widths of: ['CR', 'space', 'uni00A0', 'uni10C80', 'uni10C81', 'uni10C82', 'uni10C83', 'uni10C84', 'uni10C85', 'uni10C86', 'uni10C87', 'uni10C88', 'uni10C89', 'uni10C8A', 'uni10C8B', 'uni10C8C', 'uni10C8D', 'uni10C8E', 'uni10C8F', 'uni10C90', 'uni10C91', 'uni10C92', 'uni10C93', 'uni10C94', 'uni10C95', 'uni10C96', 'uni10C97', 'uni10C98', 'uni10C99', 'uni10C9A', 'uni10C9B', 'uni10C9C', 'uni10C9D', 'uni10C9E', 'uni10C9F', 'uni10CA0', 'uni10CA1', 'uni10CA2', 'uni10CA3', 'uni10CA4', 'uni10CA5', 'uni10CA6', 'uni10CA7', 'uni10CA8', 'uni10CA9', 'uni10CAA', 'uni10CAB', 'uni10CAC', 'uni10CAD', 'uni10CAE', 'uni10CAF', 'uni10CB0', 'uni10CB1', 'uni10CB2', 'uni10CC0', 'uni10CC1', 'uni10CC2', 'uni10CC3', 'uni10CC4', 'uni10CC5', 'uni10CC6', 'uni10CC7', 'uni10CC8', 'uni10CC9', 'uni10CCA', 'uni10CCB', 'uni10CCC', 'uni10CCD', 'uni10CCE', 'uni10CCF', 'uni10CD0', 'uni10CD1', 'uni10CD2', 'uni10CD3', 'uni10CD4', 'uni10CD5', 'uni10CD6', 'uni10CD7', 'uni10CD8', 'uni10CD9', 'uni10CDA', 'uni10CDB', 'uni10CDC', 'uni10CDD', 'uni10CDE', 'uni10CDF', 'uni10CE0', 'uni10CE1', 'uni10CE2', 'uni10CE3', 'uni10CE4', 'uni10CE5', 'uni10CE6', 'uni10CE7', 'uni10CE8', 'uni10CE9', 'uni10CEB', 'uni10CEC', 'uni10CED', 'uni10CEF', 'uni10CF0', 'uni10CF1', 'uni10CF2', 'uni10CFA', 'uni10CFB', 'uni10CFC', 'uni10CFD', 'uni10CFE', 'uni10CFF', 'uni10CC0_10CC2', 'uni10CC0_10CC7', 'uni10CC0_10CD6', 'uni10CC0_10CE2', 'uni10CC0_10CE6_10CE6', 'uni10CC1_10CE2', 'uni10CC2_10CC0', 'uni10CC2_10CC9', 'uni10CC2_10CD0', 'uni10CC2_10CDB', 'uni10CC2_10CE6', 'uni10CC4_10CD3', 'uni10CC4_10CD4', 'uni10CC6_10CC0', 'uni10CC6_10CD0_10CD9', 'uni10CC7_10CEA', 'uni10CCD_10CC0', 'uni10CCD_10CC9', 'uni10CCD_10CD0', 'uni10CCD_10CDB', 'uni10CCF_10CC0', 'uni10CCF_10CC9', 'uni10CCF_10CD0', 'uni10CCF_10CDB', 'uni10CD0_10CD2', 'uni10CD0_10CE6', 'uni10CD1_10CE2_10CE6', 'uni10CD1_10CE6', 'uni10CD3_10CE5', 'uni10CD6_10CC0', 'uni10CD6_10CC1', 'uni10CD6_10CC9', 'uni10CD6_10CDB', 'uni10CD6_10CE6', 'uni10CD9_10CC0', 'uni10CD9_10CC4', 'uni10CD9_10CC7', 'uni10CD9_10CCE', 'uni10CD9_10CD0', 'uni10CD9_10CD3', 'uni10CD9_10CE0', 'uni10CD9_10CE6', 'uni10CDB_10CE2', 'uni10CE2_10CC0', 'uni10CE2_10CC9', 'uni10CE2_10CD0', 'uni10CE2_10CDB', 'uni10CE2_10CE6', 'uni10CE2_10CEA', 'uni10CE4_10CC0', 'uni10CE4_10CC9', 'uni10CE4_10CD0', 'uni10CE4_10CD3', 'uni10CE4_10CD8', 'uni10CE4_10CDB', 'uni10CE4_10CE0', 'uni10CE4_10CE6', 'uni10CE5_10CE6', 'uni10CE6_10CD0', 'uni10CE8_10CC0', 'uni10CEA_10CD6', 'uni10CEA_10CD8', 'uni10CEA_10CE2', 'uni10CEE_10CC0', 'uni10CEE_10CC0_10CE2', 'uni10CEE_10CC1_10CE2', 'uni10CEE_10CD8', 'uni10CEF_10CC0', 'uni10CEF_10CE2', 'uni10CEF_10CE6', 'uni10C80.ltr', 'uni10C81.ltr', 'uni10C82.ltr', 'uni10C83.ltr', 'uni10C84.ltr', 'uni10C85.ltr', 'uni10C86.ltr', 'uni10C87.ltr', 'uni10C88.ltr', 'uni10C89.ltr', 'uni10C8A.ltr', 'uni10C8B.ltr', 'uni10C8C.ltr', 'uni10C8D.ltr', 'uni10C8E.ltr', 'uni10C8F.ltr', 'uni10C90.ltr', 'uni10C91.ltr', 'uni10C92.ltr', 'uni10C93.ltr', 'uni10C94.ltr', 'uni10C95.ltr', 'uni10C96.ltr', 'uni10C97.ltr', 'uni10C98.ltr', 'uni10C99.ltr', 'uni10C9A.ltr', 'uni10C9B.ltr', 'uni10C9C.ltr', 'uni10C9D.ltr', 'uni10C9E.ltr', 'uni10C9F.ltr', 'uni10CA0.ltr', 'uni10CA1.ltr', 'uni10CA2.ltr', 'uni10CA3.ltr', 'uni10CA4.ltr', 'uni10CA5.ltr', 'uni10CA6.ltr', 'uni10CA7.ltr', 'uni10CA8.ltr', 'uni10CA9.ltr', 'uni10CAA.ltr', 'uni10CAB.ltr', 'uni10CAC.ltr', 'uni10CAD.ltr', 'uni10CAE.ltr', 'uni10CAF.ltr', 'uni10CB0.ltr', 'uni10CB1.ltr', 'uni10CB2.ltr', 'uni10CC0.ltr', 'uni10CC1.ltr', 'uni10CC2.ltr', 'uni10CC3.ltr', 'uni10CC4.ltr', 'uni10CC5.ltr', 'uni10CC6.ltr', 'uni10CC7.ltr', 'uni10CC8.ltr', 'uni10CC9.ltr', 'uni10CCA.ltr', 'uni10CCB.ltr', 'uni10CCC.ltr', 'uni10CCD.ltr', 'uni10CCE.ltr', 'uni10CCF.ltr', 'uni10CD0.ltr', 'uni10CD1.ltr', 'uni10CD2.ltr', 'uni10CD3.ltr', 'uni10CD4.ltr', 'uni10CD5.ltr', 'uni10CD6.ltr', 'uni10CD7.ltr', 'uni10CD8.ltr', 'uni10CD9.ltr', 'uni10CDA.ltr', 'uni10CDB.ltr', 'uni10CDC.ltr', 'uni10CDD.ltr', 'uni10CDE.ltr', 'uni10CDF.ltr', 'uni10CE0.ltr', 'uni10CE1.ltr', 'uni10CE2.ltr', 'uni10CE3.ltr', 'uni10CE4.ltr', 'uni10CE5.ltr', 'uni10CE6.ltr', 'uni10CE7.ltr', 'uni10CE8.ltr', 'uni10CE9.ltr', 'uni10CEB.ltr', 'uni10CEC.ltr', 'uni10CED.ltr', 'uni10CEF.ltr', 'uni10CF0.ltr', 'uni10CF1.ltr', 'uni10CF2.ltr', 'uni10CC0_10CC2.ltr', 'uni10CC0_10CC7.ltr', 'uni10CC0_10CD6.ltr', 'uni10CC0_10CE2.ltr', 'uni10CC0_10CE6_10CE6.ltr', 'uni10CC1_10CE2.ltr', 'uni10CC2_10CC0.ltr', 'uni10CC2_10CC9.ltr', 'uni10CC2_10CD0.ltr', 'uni10CC2_10CDB.ltr', 'uni10CC2_10CE6.ltr', 'uni10CC4_10CD3.ltr', 'uni10CC4_10CD4.ltr', 'uni10CC6_10CC0.ltr', 'uni10CC6_10CD0_10CD9.ltr', 'uni10CC7_10CEA.ltr', 'uni10CCD_10CC0.ltr', 'uni10CCD_10CC9.ltr', 'uni10CCD_10CD0.ltr', 'uni10CCD_10CDB.ltr', 'uni10CCF_10CC0.ltr', 'uni10CCF_10CC9.ltr', 'uni10CCF_10CD0.ltr', 'uni10CCF_10CDB.ltr', 'uni10CD0_10CD2.ltr', 'uni10CD0_10CE6.ltr', 'uni10CD1_10CE2_10CE6.ltr', 'uni10CD1_10CE6.ltr', 'uni10CD3_10CE5.ltr', 'uni10CD6_10CC0.ltr', 'uni10CD6_10CC1.ltr', 'uni10CD6_10CC9.ltr', 'uni10CD6_10CDB.ltr', 'uni10CD6_10CE6.ltr', 'uni10CD9_10CC0.ltr', 'uni10CD9_10CC4.ltr', 'uni10CD9_10CC7.ltr', 'uni10CD9_10CCE.ltr', 'uni10CD9_10CD0.ltr', 'uni10CD9_10CD3.ltr', 'uni10CD9_10CE0.ltr', 'uni10CD9_10CE6.ltr', 'uni10CDB_10CE2.ltr', 'uni10CE2_10CC0.ltr', 'uni10CE2_10CC9.ltr', 'uni10CE2_10CD0.ltr', 'uni10CE2_10CDB.ltr', 'uni10CE2_10CE6.ltr', 'uni10CE2_10CEA.ltr', 'uni10CE4_10CC0.ltr', 'uni10CE4_10CC9.ltr', 'uni10CE4_10CD0.ltr', 'uni10CE4_10CD3.ltr', 'uni10CE4_10CD8.ltr', 'uni10CE4_10CDB.ltr', 'uni10CE4_10CE0.ltr', 'uni10CE4_10CE6.ltr', 'uni10CE5_10CE6.ltr', 'uni10CE6_10CD0.ltr', 'uni10CE8_10CC0.ltr', 'uni10CEA_10CD6.ltr', 'uni10CEA_10CD8.ltr', 'uni10CEA_10CE2.ltr', 'uni10CEE_10CC0.ltr', 'uni10CEE_10CC0_10CE2.ltr', 'uni10CEE_10CC1_10CE2.ltr', 'uni10CEE_10CD8.ltr', 'uni10CEF_10CC0.ltr', 'uni10CEF_10CE2.ltr', 'uni10CEF_10CE6.ltr'] [code: mono-outliers]
+
+
+    Result: [1;91;107mFAIL[0m
+
+ >> [1;35;107mcom.google.fonts/check/name/match_familyname_fullfont[0m
+    [0;36;107mDoes full font name begin with the font family name?[0m
+    with NotoSansOldHungarian-Regular.ttf
+
+    * [1;91;107mFAIL[0m: On the 'name' table, the full font name (NameID 4 - FULL_FONT_NAME: 'Noto Sans OldHung') does not begin with font family name (NameID 1 - FONT_FAMILY_NAME: 'Noto Sans Old Hungarian Regular') [code: does-not]
+
+
+    Result: [1;91;107mFAIL[0m
+
+ >> [1;35;107mcom.google.fonts/check/dsig[0m
+    [0;36;107mDoes the font have a DSIG table?[0m
+    with NotoSansOldHungarian-Regular.ttf
+
+    [1;35;107m  Rationale:                                                                [0m
+    [0;30;107m  Microsoft Office 2013 and below products expect fonts to have a digital   [0m
+    [0;30;107m  signature declared in a DSIG table in order to implement OpenType         [0m
+    [0;30;107m  features. The EOL date for Microsoft Office 2013 products is 4/11/2023.   [0m
+    [0;30;107m  This issue does not impact Microsoft Office 2016 and above products.      [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  This checks verifies that this signature is available in the font.        [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  A fake signature is enough to address this issue. If needed, a dummy      [0m
+    [0;30;107m  table can be added to the font with the `gftools fix-dsig` script         [0m
+    [0;30;107m  available at https://github.com/googlefonts/gftools                       [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  Reference: https://github.com/googlefonts/fontbakery/issues/1845          [0m
+
+    * [1;91;107mFAIL[0m: This font lacks a digital signature (DSIG table). Some applications may require one (even if only a dummy placeholder) in order to work properly. You can add a DSIG table by running the `gftools fix-dsig` script. [code: lacks-signature]
+
+
+    Result: [1;91;107mFAIL[0m
+
+ >> [1;35;107mcom.google.fonts/check/outline_alignment_miss[0m
+    [0;36;107mAre there any misaligned on-curve points?[0m
+    with NotoSansOldHungarian-Regular.ttf
+
+    [1;35;107m  Rationale:                                                                [0m
+    [0;30;107m  This test heuristically looks for on-curve points which are close to, but [0m
+    [0;30;107m  do not sit on, significant boundary coordinates. For example, a point     [0m
+    [0;30;107m  which has a Y-coordinate of 1 or -1 might be a misplaced baseline point.  [0m
+    [0;30;107m  As well as the baseline, the test also checks for points near the         [0m
+    [0;30;107m  x-height (but only for lower case Latin letters), cap-height, ascender    [0m
+    [0;30;107m  and descender Y coordinates.                                              [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  Not all such misaligned curve points are a mistake, and sometimes the     [0m
+    [0;30;107m  design may call for points in locations near the boundaries. As this test [0m
+    [0;30;107m  is liable to generate significant numbers of false positives, the test    [0m
+    [0;30;107m  will pass if there are more than 100 reported misalignments.              [0m
+
+    * [1;30;103mWARN[0m: The following glyphs have on-curve points which have potentially incorrect y coordinates:
+	* uni10C83: X=251.0,Y=713.0 (should be at cap-height 714?)
+	* uni10C83: X=765.0,Y=713.0 (should be at cap-height 714?)
+	* uni10C8A: X=227.0,Y=1.0 (should be at baseline 0?)
+	* uni10C8A: X=359.0,Y=1.0 (should be at baseline 0?)
+	* uni10CC3: X=193.0,Y=-1.0 (should be at baseline 0?)
+	* uni10CC3: X=559.0,Y=-1.0 (should be at baseline 0?)
+	* uni10CD6_10CC9: X=266.0,Y=-2.0 (should be at baseline 0?)
+	* uni10C83.ltr: X=253.0,Y=713.0 (should be at cap-height 714?)
+	* uni10C83.ltr: X=767.0,Y=713.0 (should be at cap-height 714?)
+	* uni10C8A.ltr: X=227.0,Y=1.0 (should be at baseline 0?) and 4 more. [code: found-misalignments]
+
+
+    Result: [1;30;103mWARN[0m
+
+ >> [1;35;107mcom.google.fonts/check/outline_short_segments[0m
+    [0;36;107mAre any segments inordinately short?[0m
+    with NotoSansOldHungarian-Regular.ttf
+
+    [1;35;107m  Rationale:                                                                [0m
+    [0;30;107m  This test looks for outline segments which seem particularly short (less  [0m
+    [0;30;107m  than 0.006%% of the overall path length).                                 [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  This test is not run for variable fonts, as they may legitimately have    [0m
+    [0;30;107m  short segments. As this test is liable to generate significant numbers of [0m
+    [0;30;107m  false positives, the test will pass if there are more than 100 reported   [0m
+    [0;30;107m  short segments.                                                           [0m
+
+    * [1;30;103mWARN[0m: The following glyphs have segments which seem very short:
+	* uni10C9F contains a short segment L<<39.0,107.0>--<42.0,108.0>>
+	* uni10C9F contains a short segment L<<42.0,108.0>--<37.0,111.0>>
+	* uni10CA1 contains a short segment L<<735.0,543.0>--<732.0,540.0>>
+	* uni10CAB contains a short segment L<<744.0,11.0>--<748.0,11.0>>
+	* uni10CAB contains a short segment L<<748.0,569.0>--<744.0,569.0>>
+	* uni10CAB contains a short segment L<<211.0,19.0>--<215.0,19.0>>
+	* uni10CAB contains a short segment L<<215.0,561.0>--<211.0,561.0>>
+	* uni10CEB contains a short segment L<<537.0,126.0>--<540.0,126.0>>
+	* uni10CEB contains a short segment L<<540.0,472.0>--<537.0,472.0>>
+	* uni10CEB contains a short segment L<<175.0,131.0>--<178.0,131.0>> and 27 more. [code: found-short-segments]
+
+
+    Result: [1;30;103mWARN[0m
+
+ >> [1;35;107mcom.google.fonts/check/outline_semi_vertical[0m
+    [0;36;107mDo outlines contain any semi-vertical or semi-horizontal lines?[0m
+    with NotoSansOldHungarian-Regular.ttf
+
+    [1;35;107m  Rationale:                                                                [0m
+    [0;30;107m  This test detects line segments which are nearly, but not quite, exactly  [0m
+    [0;30;107m  horizontal or vertical. Sometimes such lines are created by design, but   [0m
+    [0;30;107m  often they are indicative of a design error.                              [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  This test is disabled for italic styles, which often contain              [0m
+    [0;30;107m  nearly-upright lines.                                                     [0m
+
+    * [1;30;103mWARN[0m: The following glyphs have semi-vertical/semi-horizontal lines:
+	* uni10CFD: L<<243.0,183.0>--<240.0,600.0>> and uni10CFD: L<<327.0,600.0>--<324.0,182.0>> [code: found-semi-vertical]
+
+
+    Result: [1;30;103mWARN[0m
+
+
+Total:
+
+    [1;97;101mERROR[0m: 0
+    [1;91;107mFAIL[0m: 3
+    [1;30;103mWARN[0m: 3
+    [0;36;107mINFO[0m: 2
+    [0;34;107mSKIP[0m: 17
+    [0;32;107mPASS[0m: 52
+
+
+DONE!
+
+    [1;30;107mMeaning of check results:[0m
+
+    An [1;97;101mERROR[0m is something wrong with FontBakery itself, possibly a bug.
+    A [1;91;107mFAIL[0m is a problem with the font that must be fixed.
+    A [1;30;103mWARN[0m is something that you should consider addressing.
+    An [0;36;107mINFO[0m result simply prints something useful. Typically stats.
+    A [0;32;107mPASS[0m means the font looks good for the given checking routine.
+    And a [0;34;107mSKIP[0m happens when the check does not apply to the given font.
+
+    If you get [1;97;101mERROR[0ms, please help us improve the tool by reporting them at
+    [1;36;107mhttps://github.com/googlefonts/fontbakery/issues[0m
+
+    (but other kinds of bug reports and/or
+     feature requests are also always welcome, of course!)
+

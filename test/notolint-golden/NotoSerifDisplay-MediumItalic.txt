@@ -1,0 +1,25 @@
+---
+Automatic testing for 'instance_ttf,NotoSerifDisplay-MediumItalic.ttf', Version 2.003:
+E <name/family> The family is 'Noto Serif Display Medium' but was expecting 'Noto Serif Disp Med'
+E <cmap/variants> Font contains 1 characters with standard variants, but has no variation selector cmap table (0030).
+E <bounds/glyph/ymin> Real yMin for glyph 624 (uni0489) is -325, which is lower than the font's sTypoDescent (-293), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1510 (uni1E4E) is 1077, which is higher than the font's sTypoAscent (1069), resulting in clipping.
+E <bounds/glyph/ymin> Real yMin for glyph 2446 (scriptg) is -389, which is lower than the font's sTypoDescent (-293), resulting in clipping.
+E <bounds/glyph/ymin> Real yMin for glyph 3070 (uni1AB5) is -470, which is lower than the font's sTypoDescent (-293), resulting in clipping.
+E <bounds/glyph/ymin> Real yMin for glyph 3075 (uni1ABA) is -296, which is lower than the font's sTypoDescent (-293), resulting in clipping.
+E <bounds/glyph/ymin> Real yMin for glyph 3168 (uniA670) is -345, which is lower than the font's sTypoDescent (-293), resulting in clipping.
+E <bounds/glyph/ymin> Real yMin for glyph 3169 (uniA671) is -321, which is lower than the font's sTypoDescent (-293), resulting in clipping.
+E <bounds/glyph/ymin> Real yMin for glyph 3170 (uniA672) is -336, which is lower than the font's sTypoDescent (-293), resulting in clipping.
+E <bounds/font/ymax> Real yMax 1077, but it should be less than or equal to the value of Ascent in 'hhea' table, which is 1069.
+E <bounds/font/ymin> Real yMin is -470, but it should be greater than or equal to the value of Descent in 'hhea' table, which is -293.
+E <paths/intersection> The glyph 'uni04FD' has intersecting outlines: start and end segments match: (481.0, 0.0)
+E <paths/intersection> The glyph 'uni1D94' has intersecting outlines: start and end segments match: (8.0, 97.0)
+E <paths/intersection> The glyph 'uni1C88' has intersecting outlines: start and end segments match: (367.0, 545.0)
+E <paths/intersection> The glyph 'uni20BF' has intersecting outlines: start and end segments match: (241.0, 0.0)
+E <paths/intersection> The glyph 'uni211F' has intersecting outlines: start and end segments match: (332.0, 344.0)
+E <paths/intersection> The glyph 'uni1AC0' has intersecting outlines: start and end segments match: (-153.0, -77.0)
+W <advances/comma_period> The advance of U+002c (comma, glyph 15) is 261, but expected 250.
+Found 18 errors.
+Found 1 warning.
+------
+Finished linting 1 file.

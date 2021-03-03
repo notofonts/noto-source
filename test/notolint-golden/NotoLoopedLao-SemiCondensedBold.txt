@@ -1,0 +1,30 @@
+---
+Automatic testing for 'instance_ttf,NotoLoopedLao-SemiCondensedBold.ttf', Version 1.00:
+E <name/copyright> The copyright is 'Copyright 2020 Google LLC. All rights reserved' but was expecting it to match '^Copyright 20\d\d Google (Inc|LLC)\.* All Rights Reserved\.$'
+E <name/family> The family is 'Noto Looped Lao SmCd Bold' but was expecting 'Noto Looped Lao SemCond'
+E <name/version> The version is 'Version 1.00' but was expecting it to match '^Version ([0-2])\.(\d{3})(?:;.*.*)?$'
+E <name/manufacturer> The manufacturer is 'The Fontpad Ltd' but was expecting 'Monotype Imaging Inc.'
+E <name/designer> The designer is 'Mark Frömberg, Ben Mitchell' but was expecting 'Monotype Design Team'
+E <name/description> The description is 'Design by The Fontpad Ltd' but was expecting it to match '^Designed by Monotype design team.$'
+E <name/vendor_url> The vendor url is 'http://www.google.com/get/noto' but was expecting 'http://www.google.com/get/noto/'
+E <name/designer_url> The designer url is 'http://www.fontpad.co.uk' but was expecting 'http://www.monotype.com/studio'
+E <cmap/script_required> The following 1 characters are missing from the font: 00AD.
+W <cmap/script_unexpected> The following 18 chars were not expected in the font: 0026, 002A, 00AB, 00BB, 00D7, 034F, 0E4F, 0E5B, 2010, 2012..2015, 2022, 2039..203A, 2060, 2638
+E <head/hhea/linegap> Value of lineGap in 'hhea' table is 200, but should be 0.
+E <head/os2/linegap> Value of sTypoLineGap in 'OS/2' table is 200, but should be 0.
+E <head/os2/winascent> Value of usWinAscent in 'OS/2' table (1380) is different from the value of Ascent in 'hhea' table (1250), but they should be equal.
+E <head/os2/windescent> Value of usWinDescent in 'OS/2' table (620) is different from the opposite of value of Descent in 'hhea' table (-350), but they should be opposites.
+E <head/os2/fsselection> UseTypoMetrics bit in fsSelection is set, but should be clear.
+E <bounds/glyph/ymin> Real yMin for glyph 78 (uni0EB8.small) is -430, which is lower than the font's sTypoDescent (-350), resulting in clipping.
+E <bounds/glyph/ymin> Real yMin for glyph 81 (uni0EB9.small) is -435, which is lower than the font's sTypoDescent (-350), resulting in clipping.
+E <bounds/font/ymin> Real yMin is -435, but it should be greater than or equal to the value of Descent in 'hhea' table, which is -350.
+E <paths/intersection> The glyph 'uni0E9A' has intersecting outlines: start and end segments match: (286.0, 454.0)
+E <paths/intersection> The glyph 'uni0E9B' has intersecting outlines: start and end segments match: (286.0, 454.0)
+E <paths/intersection> The glyph 'uni0EA9' has intersecting outlines: start and end segments match: (286.0, 454.0)
+E <paths/intersection> The glyph 'uni0EA9.BRACKET.110' has intersecting outlines: start and end segments match: (286.0, 454.0)
+W <advances/comma_period> The advance of U+002c (comma, glyph 155) is 279, but expected 271.
+E <reachable> The following 8 glyphs are unreachable in the font: space.BRACKET.87 (179), uni0E89.BRACKET.100 (173), uni0EA5.BRACKET.110 (176), uni0EA8.BRACKET.110 (177), uni0EA9.BRACKET.110 (180), uni0EAA.BRACKET.110 (178), uni0EDE.BRACKET.110 (174), uni0EDF.BRACKET.110 (175).
+Found 22 errors.
+Found 2 warnings.
+------
+Finished linting 1 file.

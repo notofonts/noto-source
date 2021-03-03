@@ -1,0 +1,251 @@
+Start ... running 77 individual check executions.
+ >> [1;35;107mcom.google.fonts/check/unicode_range_bits[0m
+    [0;36;107mEnsure UnicodeRange bits are properly set.[0m
+    with NotoSansBhaiksuki-Regular.ttf
+
+    [1;35;107m  Rationale:                                                                [0m
+    [0;30;107m  When the UnicodeRange bits on the OS/2 table are not properly set, some   [0m
+    [0;30;107m  programs running on Windows may not recognize the font and use a system   [0m
+    [0;30;107m  fallback font instead. For that reason, this check calculates the proper  [0m
+    [0;30;107m  settings by inspecting the glyphs declared on the cmap table and then     [0m
+    [0;30;107m  ensures that their corresponding ranges are enabled.                      [0m
+
+    * [1;30;103mWARN[0m: UnicodeRange bit 57 "Non-Plane 0 *" should be 0 because cmap has none of the 2048 codepoints in this range. [code: bad-range-bit]
+
+
+    Result: [1;30;103mWARN[0m
+
+ >> [1;35;107mcom.google.fonts/check/family/win_ascent_and_descent[0m
+    [0;36;107mChecking OS/2 usWinAscent & usWinDescent.[0m
+    with NotoSansBhaiksuki-Regular.ttf
+
+    [1;35;107m  Rationale:                                                                [0m
+    [0;30;107m  A font's winAscent and winDescent values should be greater than the head  [0m
+    [0;30;107m  table's yMax, abs(yMin) values. If they are less than these values,       [0m
+    [0;30;107m  clipping can occur on Windows platforms                                   [0m
+    [0;30;107m  (https://github.com/RedHatBrand/Overpass/issues/33).                      [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  If the font includes tall/deep writing systems such as Arabic or          [0m
+    [0;30;107m  Devanagari, the winAscent and winDescent can be greater than the yMax and [0m
+    [0;30;107m  abs(yMin) to accommodate vowel marks.                                     [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  When the win Metrics are significantly greater than the upm, the          [0m
+    [0;30;107m  linespacing can appear too loose. To counteract this, enabling the OS/2   [0m
+    [0;30;107m  fsSelection bit 7 (Use_Typo_Metrics), will force Windows to use the OS/2  [0m
+    [0;30;107m  typo values instead. This means the font developer can control the        [0m
+    [0;30;107m  linespacing with the typo values, whilst avoiding clipping by setting the [0m
+    [0;30;107m  win values to values greater than the yMax and abs(yMin).                 [0m
+
+    * [1;91;107mFAIL[0m: OS/2.usWinDescent value should be equal or greater than 630, but got 460 instead. [code: descent]
+
+
+    Result: [1;91;107mFAIL[0m
+
+ >> [1;35;107mcom.google.fonts/check/required_tables[0m
+    [0;36;107mFont contains all required tables?[0m
+    with NotoSansBhaiksuki-Regular.ttf
+
+    [1;35;107m  Rationale:                                                                [0m
+    [0;30;107m  Depending on the typeface and coverage of a font, certain tables are      [0m
+    [0;30;107m  recommended for optimum quality. For example, the performance of a        [0m
+    [0;30;107m  non-linear font is improved if the VDMX, LTSH, and hdmx tables are        [0m
+    [0;30;107m  present. Non-monospaced Latin fonts should have a kern table. A gasp      [0m
+    [0;30;107m  table is necessary if a designer wants to influence the sizes at which    [0m
+    [0;30;107m  grayscaling is used under Windows. A DSIG table containing a digital      [0m
+    [0;30;107m  signature helps ensure the integrity of the font file. Etc.               [0m
+
+    * [0;36;107mINFO[0m: This font contains the following optional tables [loca, GPOS, GSUB]
+
+
+    Result: [0;36;107mINFO[0m
+
+ >> [1;35;107mcom.google.fonts/check/superfamily/list[0m
+    [0;36;107mList all superfamily filepaths[0m
+    with NotoSansBhaiksuki-Regular.ttf
+
+    [1;35;107m  Rationale:                                                                [0m
+    [0;30;107m  This is a merely informative check that lists all sibling families        [0m
+    [0;30;107m  detected by fontbakery.                                                   [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  Only the fontfiles in these directories will be considered in             [0m
+    [0;30;107m  superfamily-level checks.                                                 [0m
+
+    * [0;36;107mINFO[0m: . [code: family-path]
+
+
+    Result: [0;36;107mINFO[0m
+
+ >> [1;35;107mcom.google.fonts/check/monospace[0m
+    [0;36;107mChecking correctness of monospaced metadata.[0m
+    with NotoSansBhaiksuki-Regular.ttf
+
+    [1;35;107m  Rationale:                                                                [0m
+    [0;30;107m  There are various metadata in the OpenType spec to specify if a font is   [0m
+    [0;30;107m  monospaced or not. If the font is not truly monospaced, then no           [0m
+    [0;30;107m  monospaced metadata should be set (as sometimes they mistakenly are...)   [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  Requirements for monospace fonts:                                         [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  * post.isFixedPitch - "Set to 0 if the font is proportionally spaced,     [0m
+    [0;30;107m  non-zero if the font is not proportionally spaced (monospaced)"           [0m
+    [0;30;107m    www.microsoft.com/typography/otspec/post.htm                            [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  * hhea.advanceWidthMax must be correct, meaning no glyph's width value is [0m
+    [0;30;107m  greater.                                                                  [0m
+    [0;30;107m    www.microsoft.com/typography/otspec/hhea.htm                            [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  * OS/2.panose.bProportion must be set to 9 (monospace). Spec says: "The   [0m
+    [0;30;107m  PANOSE definition contains ten digits each of which currently describes   [0m
+    [0;30;107m  up to sixteen variations. Windows uses bFamilyType, bSerifStyle and       [0m
+    [0;30;107m  bProportion in the font mapper to determine family type. It also uses     [0m
+    [0;30;107m  bProportion to determine if the font is monospaced."                      [0m
+    [0;30;107m    www.microsoft.com/typography/otspec/os2.htm#pan                         [0m
+    [0;30;107m    monotypecom-test.monotype.de/services/pan2                              [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  * OS/2.xAvgCharWidth must be set accurately.                              [0m
+    [0;30;107m    "OS/2.xAvgCharWidth is used when rendering monospaced fonts, at least   [0m
+    [0;30;107m  by Windows GDI"                                                           [0m
+    [0;30;107m    http://typedrawers.com/discussion/comment/15397/#Comment_15397          [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  Also we should report an error for glyphs not of average width.           [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  Please also note:                                                         [0m
+    [0;30;107m  Thomas Phinney told us that a few years ago (as of December 2019), if you [0m
+    [0;30;107m  gave a font a monospace flag in Panose, Microsoft Word would ignore the   [0m
+    [0;30;107m  actual advance widths and treat it as monospaced. Source:                 [0m
+    [0;30;107m  https://typedrawers.com/discussion/comment/45140/#Comment_45140           [0m
+
+    * [1;91;107mFAIL[0m: On monospaced fonts, the value of post.isFixedPitch must be set to a non-zero value (meaning 'fixed width monospaced'), but got 0 instead. [code: mono-bad-post-isFixedPitch]
+    * [1;91;107mFAIL[0m: On monospaced fonts, the value of OS/2.panose.bProportion must be set to 9 (proportion: monospaced), but got 2 instead. [code: mono-bad-panose-proportion]
+    * [1;30;103mWARN[0m: Font is monospaced but 773 glyphs (89.57%) have a different width. You should check the widths of: ['AA_indi', 'AI_indi', 'AU_indi', 'A_indi', 'Avagraha', 'Ba', 'Bai', 'Bau', 'Bbha', 'Bda', 'Bde', 'Bdha', 'Bdhai', 'Bdhau', 'Bdhe', 'Bdhi', 'Bdhii', 'Bdho', 'Bdo', 'Be', 'Bha', 'Bhau', 'Bhi', 'Bhii', 'Bhna', 'Bho', 'Bhra', 'Bhrr', 'Bhruu', 'Bhu', 'Bhuu', 'Bhya', 'Bi', 'Bii', 'Blu', 'Bnni', 'Bo', 'Bru', 'CR', 'Ca', 'Cai', 'Cau', 'Cca', 'Ccai', 'Ccau', 'Cce', 'Ccha', 'Cche', 'Cchvo', 'Cci', 'Ccii', 'Cco', 'Ce', 'Cha', 'Chai', 'Chau', 'Che', 'Chi_bhks', 'Chii', 'Cho', 'Ci', 'Cii', 'Co', 'Ctva', 'Da', 'Dada', 'Dadai', 'Dadau', 'Dade', 'Dadha', 'Dadhai', 'Dadhau', 'Dadhe', 'Dadhi', 'Dadhii', 'Dadho', 'Dadi', 'Dadii', 'Dado', 'Danda', 'Dau', 'Dbha', 'Dbhya', 'DblDanda', 'Dbu', 'Dda', 'Ddddhau', 'Ddha', 'Ddhau', 'Ddhi', 'Ddhii', 'Ddho', 'Ddhra', 'Ddi', 'Ddii', 'Ddr', 'Dga', 'Dgau', 'Dgha', 'Dgho', 'Dgo', 'Dgu', 'Dha', 'Dhau', 'Dhi', 'Dhii', 'Dhma', 'Dhmo', 'Dho', 'Dhva', 'Di', 'Dii', 'Dll', 'Do', 'Dra', 'Drr', 'Dru', 'Dva', 'Dvau', 'Dvi', 'Dvru', 'Dvya', 'E_indi', 'EightHundred', 'FiveHundred', 'FourHundred', 'Ga', 'GapFiller_1', 'GapFiller_2', 'Gau', 'Gdha', 'Gga', 'Ggra', 'Ggraa', 'Ggrai', 'Ggrau', 'Ggre', 'Ggri', 'Ggrii', 'Ggro', 'Gha', 'Ghai', 'Ghau', 'Ghe', 'Ghi', 'Ghii', 'Gho', 'Ghra', 'Ghvo', 'Gi', 'Gii', 'Gja', 'Gla', 'Glo', 'Gma', 'Gna', 'Gnaa', 'Gnai', 'Gnau', 'Gne', 'Gni', 'Gnii', 'Gno', 'Go', 'Grr', 'Grrr', 'Gu', 'Guu', 'Gva', 'Gvi', 'Ha', 'Hau', 'Hi', 'Hii', 'Hla', 'Hma', 'Hmai', 'Hmau', 'Hme', 'Hmi', 'Hmii', 'Hmo', 'Hna', 'Hnai', 'Hnau', 'Hne', 'Hni', 'Hnii', 'Hno', 'Ho', 'Hra', 'Hrii', 'Hrr', 'Hva', 'II_indi', 'I_indi', 'Ja', 'Jai', 'Jau', 'Jbha', 'Jbhya', 'Je', 'Jggra', 'Jha', 'Jhai', 'Jhau', 'Jhe', 'Jhi', 'Jhii', 'Jho', 'Ji', 'Jii', 'Jjha', 'Jji', 'Jnya', 'Jnyai', 'Jnyau', 'Jnye', 'Jnyi', 'Jnyii', 'Jnyo', 'Jo', 'Jri', 'Jrr', 'Ju', 'Juu', 'Jva', 'Jvi', 'Jya', 'Ka', 'Kai', 'Kau', 'Ke', 'Kha', 'Khaa', 'Khai', 'Khau', 'Khe', 'Kho', 'Ki', 'Kii', 'Kle', 'Kngi', 'Knna', 'Ko', 'Kra', 'Krai', 'Krau', 'Kre', 'Kri', 'Krii', 'Kro', 'Krr', 'Krrr', 'Ksa', 'Ksai', 'Ksau', 'Kse', 'Ksi', 'Ksii', 'Kso', 'Kssa', 'Kssai', 'Kssau', 'Ksse', 'Kssi', 'Kssii', 'Kssmi', 'Kssnna', 'Kssnnya', 'Ksso', 'Kssye', 'Kta', 'Ktai', 'Ktau', 'Kte', 'Kti', 'Ktii', 'Kto', 'Ktu', 'Ktya', 'Ktyaa', 'Ku', 'Kuu', 'Kva', 'Kya', 'Kyai', 'Kyau', 'Kye', 'Kyi', 'Kyii', 'Kyo', 'La', 'Lai', 'Lau', 'Le', 'Li', 'Lii', 'Lka', 'Lli', 'Llo', 'Lo', 'Lpa', 'Lpi', 'Lpo', 'Lva', 'Lvi', 'Ma', 'Ma_virama', 'Mai', 'Mau', 'Mba', 'Mbha', 'Mbhe', 'Me', 'Mi', 'Mii', 'Mle', 'Mma', 'Mna', 'Mni', 'Mo', 'Mpa', 'Mrr', 'Mva', 'Mvi', 'Mvrr', 'Mya', 'Na', 'Na_U', 'Na_UU', 'Na_virama', 'Na_ya', 'Nana', 'Nanai', 'Nanau', 'Nane', 'Nani', 'Nanii', 'Nano', 'Nda', 'Ndha', 'Ndhai', 'Ndhau', 'Ndhe', 'Ndhi', 'Ndhii', 'Ndho', 'Ndra', 'Ndre', 'Ndri', 'Nga', 'Ngau', 'Ngga', 'Nggai', 'Nggau', 'Ngge', 'Ngggra', 'Nggi', 'Nggii', 'Nggo', 'Ngi', 'Ngii', 'Ngjii', 'Ngka', 'Ngki', 'Ngli', 'Nglu', 'Ngma', 'Ngni', 'Ngo', 'Ngsha', 'Ngshai', 'Ngshau', 'Ngshe', 'Ngshi', 'Ngshii', 'Ngsho', 'Ngsi', 'Ngsya', 'Ngva', 'Ngya', 'Ngye', 'Nha', 'Ni', 'Nii', 'NineHundred', 'Nma', 'Nmo', 'Nna', 'Nnau', 'Nndda', 'Nnddai', 'Nnddau', 'Nndde', 'Nnddi', 'Nnddii', 'Nnddo', 'Nnddva', 'Nni', 'Nnii', 'Nnnna', 'Nnnnai', 'Nnnnau', 'Nnnne', 'Nnnni', 'Nnnnii', 'Nnnno', 'Nnnnya', 'Nno', 'Nnsa', 'Nnvu', 'Nnya', 'Nnye', 'No_ya', 'Nrr', 'Nrrr', 'Nsa', 'Nsii', 'Nso', 'Nta', 'Ntaa', 'Nte', 'Ntha', 'Nthai', 'Nthau', 'Nthe', 'Nthi', 'Nthii', 'Ntho', 'Nti', 'Ntrye', 'Ntu', 'Ntya', 'Ntyau', 'Ntyo', 'NumberEight', 'NumberEighty', 'NumberEightySolo', 'NumberFifty', 'NumberFiftySolo', 'NumberFive', 'NumberForty', 'NumberFortySolo', 'NumberFour', 'NumberNine', 'NumberNinety', 'NumberNinetySolo', 'NumberOne', 'NumberSeven', 'NumberSeventy', 'NumberSeventySolo', 'NumberSix', 'NumberSixty', 'NumberSixtySolo', 'NumberTen', 'NumberTenSolo', 'NumberThirty', 'NumberThirtySolo', 'NumberThree', 'NumberTwenty', 'NumberTwentySolo', 'NumberTwo', 'Nva', 'Nvi', 'Nya', 'Nyaa', 'Nyau', 'Nyca', 'Nycaa', 'Nyi', 'Nyii', 'Nyja', 'Nyo', 'O_indi', 'OneHundred', 'OneHundredUnit', 'Pa', 'Paa', 'Pai', 'Pasi', 'Pau', 'Pe', 'Pha', 'Phai', 'Phau', 'Phe', 'Phi_bhks', 'Phii', 'Pho', 'Pi_bhks', 'Pii', 'Pkri', 'Plu', 'Pno', 'Po', 'Pra', 'Praa', 'Prai', 'Pre', 'Pri', 'Pro', 'Prr', 'Psa', 'Psu', 'Pta', 'Ptau', 'Pti', 'Ptu', 'Ptya', 'Pva', 'Pvo', 'Ra', 'Rai', 'Rau', 'Rcci', 'Rdadhi', 'Rddi', 'Rdo', 'Rdvi', 'Re', 'Rggau', 'Rggii', 'Rghaa', 'Ri', 'Rii', 'Rjnyaa', 'Rkaa', 'Rli', 'Rlli', 'Rllo', 'Rnni', 'Rnnnnaa', 'Rnnnni', 'Rnnnno', 'Ro', 'Rpa', 'Rr', 'Rssaa', 'Rsse', 'Rssi', 'Rssyaa', 'Rthe', 'Rtta', 'Rtti', 'Rttu', 'Ru', 'Ruu', 'Rvva', 'Rvve', 'Rvvi', 'Rvyu', 'Rya', 'Ryaa', 'Rye', 'Ryi', 'Sa', 'Sai', 'Sau', 'Se', 'SevenHundred', 'Sha', 'Shau', 'Shca', 'Shcai', 'Shcau', 'Shce', 'Shcu', 'Shi', 'Shii', 'Shle', 'Shlo', 'Shne', 'Shnu', 'Sho', 'Shra', 'Shrau', 'Shre', 'Shri', 'Shrii', 'Shro', 'Shrr', 'Shru', 'Shruu', 'Shryu', 'Shti', 'Shtva', 'Shtve', 'Shu', 'Shuu', 'Shva', 'Shvii', 'Shya', 'Si', 'Sii', 'SixHundred', 'Ska', 'Skrr', 'Sma', 'Smai', 'Sme', 'Smi', 'Sni', 'So', 'Spha', 'Spho', 'Sphu', 'Sprr', 'Sra', 'Srr', 'Ssa', 'Ssai', 'Ssau', 'Sse', 'Ssi', 'Ssii', 'Sska', 'Sskai', 'Sskau', 'Sske', 'Sski', 'Sskii', 'Ssko', 'Sso', 'Sstta', 'Ssttai', 'Ssttau', 'Sstte', 'Ssttha', 'Sstthe', 'Sstthi', 'Sstthii', 'Sstti', 'Ssttii', 'Sstto', 'Ssttu', 'Ssttya', 'Ssva', 'Ssve', 'Sta', 'Stau', 'Ste', 'Stha', 'Sthi', 'Sti', 'Stii', 'Stra', 'Strii', 'Strr', 'Strrr', 'Stu', 'Stuu', 'Stvi', 'Stye', 'Sva', 'Svau', 'Sve', 'Svii', 'Svo', 'Ta', 'Ta_virama', 'Tata', 'Tatai', 'Tatau', 'Tatava', 'Tataya', 'Tate', 'Tati', 'Tatii', 'Tato', 'Tau_bhks', 'Tha', 'Thau', 'Thi', 'Thii', 'Tho', 'ThreeHundred', 'Ti', 'Tii', 'Tka', 'Tkai', 'Tkau', 'Tke', 'Tki', 'Tkii', 'Tko', 'Tma', 'Tna', 'To', 'Tpa', 'Tpai', 'Tpau', 'Tpe', 'Tpi', 'Tpii', 'Tplu', 'Tpo', 'Tpra', 'Tra', 'Trai', 'Tre', 'Tri', 'Trr', 'Tsa', 'Tsau', 'Tsphu', 'Tsu', 'Tsya', 'Tta', 'Tta_E', 'Tta_U', 'Ttau', 'Ttha', 'Tthau', 'Tthi', 'Tthii', 'Ttho', 'Tti', 'Ttii', 'Tto', 'Ttpra', 'Tttva', 'Ttu', 'Ttuu', 'Ttva', 'Ttvi', 'Ttvii', 'Ttyi', 'Tu', 'Tuu', 'Tva', 'TwoHundred', 'Tya', 'UU_indi', 'U_indi', 'Va', 'Vau', 'Vi', 'Vii', 'Visarga', 'Vlu', 'Vnni', 'Vo', 'VocL_indi', 'VocRR_indi', 'VocR_indi', 'Vra', 'Vrr', 'Vva', 'Vvi', 'WordSep', 'Ya', 'Yai', 'Yau', 'Ye', 'Yi', 'Yii', 'Yo', 'Yva', 'Yve', 'space', 'u11C50', 'u11C51', 'u11C52', 'u11C53', 'u11C54', 'u11C55', 'u11C56', 'u11C57', 'u11C58', 'u11C59', 'uni00A0', 'uni25CC'] [code: mono-outliers]
+
+
+    Result: [1;91;107mFAIL[0m
+
+ >> [1;35;107mcom.google.fonts/check/dsig[0m
+    [0;36;107mDoes the font have a DSIG table?[0m
+    with NotoSansBhaiksuki-Regular.ttf
+
+    [1;35;107m  Rationale:                                                                [0m
+    [0;30;107m  Microsoft Office 2013 and below products expect fonts to have a digital   [0m
+    [0;30;107m  signature declared in a DSIG table in order to implement OpenType         [0m
+    [0;30;107m  features. The EOL date for Microsoft Office 2013 products is 4/11/2023.   [0m
+    [0;30;107m  This issue does not impact Microsoft Office 2016 and above products.      [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  This checks verifies that this signature is available in the font.        [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  A fake signature is enough to address this issue. If needed, a dummy      [0m
+    [0;30;107m  table can be added to the font with the `gftools fix-dsig` script         [0m
+    [0;30;107m  available at https://github.com/googlefonts/gftools                       [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  Reference: https://github.com/googlefonts/fontbakery/issues/1845          [0m
+
+    * [1;91;107mFAIL[0m: This font lacks a digital signature (DSIG table). Some applications may require one (even if only a dummy placeholder) in order to work properly. You can add a DSIG table by running the `gftools fix-dsig` script. [code: lacks-signature]
+
+
+    Result: [1;91;107mFAIL[0m
+
+ >> [1;35;107mcom.google.fonts/check/gdef_mark_chars[0m
+    [0;36;107mCheck mark characters are in GDEF mark glyph class[0m
+    with NotoSansBhaiksuki-Regular.ttf
+
+    [1;35;107m  Rationale:                                                                [0m
+    [0;30;107m  Mark characters should be in the GDEF mark glyph class.                   [0m
+
+    * [1;30;103mWARN[0m: The following mark characters could be in the GDEF mark glyph class:
+	 U+11C3E [code: mark-chars]
+
+
+    Result: [1;30;103mWARN[0m
+
+ >> [1;35;107mcom.google.fonts/check/glyf_nested_components[0m
+    [0;36;107mCheck glyphs do not have components which are themselves components.[0m
+    with NotoSansBhaiksuki-Regular.ttf
+
+    [1;35;107m  Rationale:                                                                [0m
+    [0;30;107m  There have been bugs rendering variable fonts with nested components.     [0m
+    [0;30;107m  Additionally, some static fonts with nested components have been reported [0m
+    [0;30;107m  to have rendering and printing issues.                                    [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  For more info, see:                                                       [0m
+    [0;30;107m  * https://github.com/googlefonts/fontbakery/issues/2961                   [0m
+    [0;30;107m  * https://github.com/arrowtype/recursive/issues/412                       [0m
+
+    * [1;91;107mFAIL[0m: The following glyphs have components which themselves are component glyphs:
+	* NumberTwenty.mark
+	* NumberTwentySolo
+	* NumberTwentySolo.mark and Rssyaa [code: found-nested-components]
+
+
+    Result: [1;91;107mFAIL[0m
+
+ >> [1;35;107mcom.google.fonts/check/outline_colinear_vectors[0m
+    [0;36;107mDo any segments have colinear vectors?[0m
+    with NotoSansBhaiksuki-Regular.ttf
+
+    [1;35;107m  Rationale:                                                                [0m
+    [0;30;107m  This test looks for consecutive line segments which have the same angle.  [0m
+    [0;30;107m  This normally happens if an outline point has been added by accident.     [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  This test is not run for variable fonts, as they may legitimately have    [0m
+    [0;30;107m  colinear vectors.                                                         [0m
+
+    * [1;30;103mWARN[0m: The following glyphs have colinear vectors:
+	* Bau: L<<406.0,737.0>--<622.0,533.0>> -> L<<622.0,533.0>--<754.0,408.0>>
+	* Ddddhau: L<<518.0,523.0>--<571.0,472.0>> -> L<<571.0,472.0>--<615.0,431.0>>
+	* Ddddhau: L<<615.0,431.0>--<674.0,375.0>> -> L<<674.0,375.0>--<678.0,371.0>>
+	* Dgau: L<<257.0,759.0>--<538.0,494.0>> -> L<<538.0,494.0>--<679.0,360.0>>
+	* Dhau: L<<638.0,512.0>--<753.0,403.0>> -> L<<753.0,403.0>--<795.0,364.0>>
+	* Mna: L<<325.0,316.0>--<325.0,316.0>> -> L<<325.0,316.0>--<325.0,316.0>>
+	* Mni: L<<325.0,316.0>--<325.0,316.0>> -> L<<325.0,316.0>--<325.0,316.0>>
+	* Shau: L<<676.0,512.0>--<832.0,364.0>> -> L<<832.0,364.0>--<836.0,360.0>>
+	* Shlo: L<<674.0,512.0>--<817.0,377.0>> -> L<<817.0,377.0>--<835.0,360.0>>
+	* Sho: L<<676.0,512.0>--<789.0,404.0>> -> L<<789.0,404.0>--<828.0,368.0>> and 4 more. [code: found-colinear-vectors]
+
+
+    Result: [1;30;103mWARN[0m
+
+ >> [1;35;107mcom.google.fonts/check/outline_jaggy_segments[0m
+    [0;36;107mDo outlines contain any jaggy segments?[0m
+    with NotoSansBhaiksuki-Regular.ttf
+
+    [1;35;107m  Rationale:                                                                [0m
+    [0;30;107m  This test heuristically detects outline segments which form a             [0m
+    [0;30;107m  particularly small angle, indicative of an outline error. This may cause  [0m
+    [0;30;107m  false positives in cases such as extreme ink traps, so should be regarded [0m
+    [0;30;107m  as advisory and backed up by manual inspection.                           [0m
+
+    * [1;30;103mWARN[0m: The following glyphs have jaggy segments:
+	* Ndra: B<<589.0,-62.0>-<528.0,-62.0>-<487.0,-37.0>>/B<<487.0,-37.0>-<533.0,-81.0>-<532.0,-130.0>> = 12.353964839834818 and Ndri: B<<589.0,-62.0>-<528.0,-62.0>-<487.0,-37.0>>/B<<487.0,-37.0>-<533.0,-81.0>-<532.0,-130.0>> = 12.353964839834818 [code: found-jaggy-segments]
+
+
+    Result: [1;30;103mWARN[0m
+
+
+Total:
+
+    [1;97;101mERROR[0m: 0
+    [1;91;107mFAIL[0m: 4
+    [1;30;103mWARN[0m: 4
+    [0;36;107mINFO[0m: 2
+    [0;34;107mSKIP[0m: 17
+    [0;32;107mPASS[0m: 50
+
+
+DONE!
+
+    [1;30;107mMeaning of check results:[0m
+
+    An [1;97;101mERROR[0m is something wrong with FontBakery itself, possibly a bug.
+    A [1;91;107mFAIL[0m is a problem with the font that must be fixed.
+    A [1;30;103mWARN[0m is something that you should consider addressing.
+    An [0;36;107mINFO[0m result simply prints something useful. Typically stats.
+    A [0;32;107mPASS[0m means the font looks good for the given checking routine.
+    And a [0;34;107mSKIP[0m happens when the check does not apply to the given font.
+
+    If you get [1;97;101mERROR[0ms, please help us improve the tool by reporting them at
+    [1;36;107mhttps://github.com/googlefonts/fontbakery/issues[0m
+
+    (but other kinds of bug reports and/or
+     feature requests are also always welcome, of course!)
+

@@ -1,0 +1,22 @@
+---
+Automatic testing for 'instance_ttf,NotoKufiArabic-ExtraBold.ttf', Version 2.104:
+E <name/copyright> The copyright is 'Copyright 2019-2020 Google LLC. All Rights Reserved.' but was expecting it to match '^Copyright 20\d\d Google (Inc|LLC)\.* All Rights Reserved\.$'
+E <name/family> The family is 'Noto Kufi Arabic Extra Bold' but was expecting 'Noto Kufi Arabic ExtBd'
+E <name/full_name> The full name is 'Noto Kufi Arabic Extra Bold' but was expecting 'Noto Kufi Arabic ExtraBold'
+E <name/manufacturer> The manufacturer is 'Google LLC' but was expecting 'Monotype Imaging Inc.'
+E <name/designer> The designer is 'Monotype Design Team, David Williams' but was expecting 'Nadine Chahine'
+E <name/description> The description is 'Designed by Monotype Design Team and David Williams' but was expecting it to match '^Designed by Monotype design team.$'
+E <name/preferred_subfamily> The preferred subfamily is 'Extra Bold' but was expecting 'ExtraBold'
+E <cmap/script_required> The following 1003 characters are missing from the font: 0021..0022, 0027..0029, 002C..002E, 003A, 003F, 00AB, 00BB, 034F, 0604..060A, 0616..061A, 061C, 0620, 063B..063F, 0674, 06EC, 076E..077F, 08A0..08A6, 08A8, 08AA..08B0, 08B2..08B4, 08B6..08C7, 08D3..08FF, 2010..2011, 2018..2019, 201C..201D, 2026, 2039..203A, 204F, 2E41, FB50..FB69, FB6E..FBA1, FBA4..FBC1, FBD3..FC62, FC64..FD3D, FD50..FD8F, FD92..FDC7, FDF0..FDF1, FDF3..FDFB, FDFD, FE71, FE73, FE77, FE79, FE7B, FE7D, FE7F..FEF6, FEF8..FEFA, FEFC, 1EC71..1ECB4, 1ED01..1ED3D.
+E <bounds/glyph/ymin> Real yMin for glyph 512 (uni06D0) is -627, which is lower than the font's sTypoDescent (-615), resulting in clipping.
+E <bounds/glyph/ymin> Real yMin for glyph 513 (uniFBE5) is -622, which is lower than the font's sTypoDescent (-615), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 747 (uni06E0) is 1345, which is higher than the font's sTypoAscent (1282), resulting in clipping.
+E <bounds/font/ymax> Real yMax 1345, but it should be less than or equal to the value of Ascent in 'hhea' table, which is 1282.
+E <bounds/font/ymin> Real yMin is -627, but it should be greater than or equal to the value of Descent in 'hhea' table, which is -615.
+W <gdef/classdef/unlisted> Glyph wavyhamza_below (U+065F ARABIC WAVY HAMZA BELOW) is a combining mark, but is not assigned a value in the GDEF/GlyphClassDef table.
+E <gdef/ligcaretlist/not_ligature> Some glyphs are defined to have ligature carets in GDEF table, but are not defined as ligatures in the table: lamVaboveMadda_alefar.fina, lamVaboveMadda_alefar.isol.
+E <reachable> The following 2 glyphs are unreachable in the font: hah_alt.fina (763), hah_alt.isol (762).
+Found 15 errors.
+Found 1 warning.
+------
+Finished linting 1 file.

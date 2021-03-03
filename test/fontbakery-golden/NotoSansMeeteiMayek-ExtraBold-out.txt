@@ -1,0 +1,298 @@
+Start ... running 77 individual check executions.
+ >> [1;35;107mcom.google.fonts/check/whitespace_glyphnames[0m
+    [0;36;107mFont has **proper** whitespace glyph names?[0m
+    with NotoSansMeeteiMayek-ExtraBold.ttf
+
+    [1;35;107m  Rationale:                                                                [0m
+    [0;30;107m  This check enforces adherence to recommended whitespace (codepoints 0020  [0m
+    [0;30;107m  and 00A0) glyph names according to the Adobe Glyph List.                  [0m
+
+    * [1;30;103mWARN[0m: Glyph 0x00A0 is called "nbspace": Change to "uni00A0" [code: not-recommended-00a0]
+
+
+    Result: [1;30;103mWARN[0m
+
+ >> [1;35;107mcom.google.fonts/check/required_tables[0m
+    [0;36;107mFont contains all required tables?[0m
+    with NotoSansMeeteiMayek-ExtraBold.ttf
+
+    [1;35;107m  Rationale:                                                                [0m
+    [0;30;107m  Depending on the typeface and coverage of a font, certain tables are      [0m
+    [0;30;107m  recommended for optimum quality. For example, the performance of a        [0m
+    [0;30;107m  non-linear font is improved if the VDMX, LTSH, and hdmx tables are        [0m
+    [0;30;107m  present. Non-monospaced Latin fonts should have a kern table. A gasp      [0m
+    [0;30;107m  table is necessary if a designer wants to influence the sizes at which    [0m
+    [0;30;107m  grayscaling is used under Windows. A DSIG table containing a digital      [0m
+    [0;30;107m  signature helps ensure the integrity of the font file. Etc.               [0m
+
+    * [0;36;107mINFO[0m: This font contains the following optional tables [loca, GPOS, GSUB]
+
+
+    Result: [0;36;107mINFO[0m
+
+ >> [1;35;107mcom.google.fonts/check/valid_glyphnames[0m
+    [0;36;107mGlyph names are all valid?[0m
+    with NotoSansMeeteiMayek-ExtraBold.ttf
+
+    [1;35;107m  Rationale:                                                                [0m
+    [0;30;107m  Microsoft's recommendations for OpenType Fonts states the following:      [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  'NOTE: The PostScript glyph name must be no longer than 31 characters,    [0m
+    [0;30;107m  include only uppercase or lowercase English letters, European digits, the [0m
+    [0;30;107m  period or the underscore, i.e. from the set [A-Za-z0-9_.] and should      [0m
+    [0;30;107m  start with a letter, except the special glyph name ".notdef" which starts [0m
+    [0;30;107m  with a period.'                                                           [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  https://docs.microsoft.com/en-us/typography/opentype/spec/recom#post-table[0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  In practice, though, particularly in modern environments, glyph names can [0m
+    [0;30;107m  be as long as 63 characters.                                              [0m
+    [0;30;107m  According to the "Adobe Glyph List Specification" available at:           [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  https://github.com/adobe-type-tools/agl-specification                     [0m
+
+    * [1;91;107mFAIL[0m: The following glyph names do not comply with naming conventions: e-mtei, o-mtei, cha-mtei, nya-mtei, tta-mtei, ttha-mtei, dda-mtei, ddha-mtei, nna-mtei, sha-mtei and 70 more.
+
+ A glyph name must be entirely comprised of characters from the following set: A-Z a-z 0-9 .(period) _(underscore). A glyph name must not start with a digit or period. There are a few exceptions such as the special glyph ".notdef". The glyph names "twocents", "a1", and "_" are all valid, while "2cents" and ".twocents" are not. [code: found-invalid-names]
+
+
+    Result: [1;91;107mFAIL[0m
+
+ >> [1;35;107mcom.google.fonts/check/superfamily/list[0m
+    [0;36;107mList all superfamily filepaths[0m
+    with NotoSansMeeteiMayek-ExtraBold.ttf
+
+    [1;35;107m  Rationale:                                                                [0m
+    [0;30;107m  This is a merely informative check that lists all sibling families        [0m
+    [0;30;107m  detected by fontbakery.                                                   [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  Only the fontfiles in these directories will be considered in             [0m
+    [0;30;107m  superfamily-level checks.                                                 [0m
+
+    * [0;36;107mINFO[0m: . [code: family-path]
+
+
+    Result: [0;36;107mINFO[0m
+
+ >> [1;35;107mcom.google.fonts/check/rupee[0m
+    [0;36;107mEnsure indic fonts have the Indian Rupee Sign glyph. [0m
+    with NotoSansMeeteiMayek-ExtraBold.ttf
+
+    [1;35;107m  Rationale:                                                                [0m
+    [0;30;107m  Per Bureau of Indian Standards every font supporting one of the official  [0m
+    [0;30;107m  Indian languages needs to include Unicode Character “₹” (U+20B9) Indian   [0m
+    [0;30;107m  Rupee Sign.                                                               [0m
+
+    * [1;91;107mFAIL[0m: Please add a glyph for Indian Rupee Sign “₹” at codepoint U+20B9. [code: missing-rupee]
+
+
+    Result: [1;91;107mFAIL[0m
+
+ >> [1;35;107mcom.google.fonts/check/monospace[0m
+    [0;36;107mChecking correctness of monospaced metadata.[0m
+    with NotoSansMeeteiMayek-ExtraBold.ttf
+
+    [1;35;107m  Rationale:                                                                [0m
+    [0;30;107m  There are various metadata in the OpenType spec to specify if a font is   [0m
+    [0;30;107m  monospaced or not. If the font is not truly monospaced, then no           [0m
+    [0;30;107m  monospaced metadata should be set (as sometimes they mistakenly are...)   [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  Requirements for monospace fonts:                                         [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  * post.isFixedPitch - "Set to 0 if the font is proportionally spaced,     [0m
+    [0;30;107m  non-zero if the font is not proportionally spaced (monospaced)"           [0m
+    [0;30;107m    www.microsoft.com/typography/otspec/post.htm                            [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  * hhea.advanceWidthMax must be correct, meaning no glyph's width value is [0m
+    [0;30;107m  greater.                                                                  [0m
+    [0;30;107m    www.microsoft.com/typography/otspec/hhea.htm                            [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  * OS/2.panose.bProportion must be set to 9 (monospace). Spec says: "The   [0m
+    [0;30;107m  PANOSE definition contains ten digits each of which currently describes   [0m
+    [0;30;107m  up to sixteen variations. Windows uses bFamilyType, bSerifStyle and       [0m
+    [0;30;107m  bProportion in the font mapper to determine family type. It also uses     [0m
+    [0;30;107m  bProportion to determine if the font is monospaced."                      [0m
+    [0;30;107m    www.microsoft.com/typography/otspec/os2.htm#pan                         [0m
+    [0;30;107m    monotypecom-test.monotype.de/services/pan2                              [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  * OS/2.xAvgCharWidth must be set accurately.                              [0m
+    [0;30;107m    "OS/2.xAvgCharWidth is used when rendering monospaced fonts, at least   [0m
+    [0;30;107m  by Windows GDI"                                                           [0m
+    [0;30;107m    http://typedrawers.com/discussion/comment/15397/#Comment_15397          [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  Also we should report an error for glyphs not of average width.           [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  Please also note:                                                         [0m
+    [0;30;107m  Thomas Phinney told us that a few years ago (as of December 2019), if you [0m
+    [0;30;107m  gave a font a monospace flag in Panose, Microsoft Word would ignore the   [0m
+    [0;30;107m  actual advance widths and treat it as monospaced. Source:                 [0m
+    [0;30;107m  https://typedrawers.com/discussion/comment/45140/#Comment_45140           [0m
+
+    * [1;91;107mFAIL[0m: On monospaced fonts, the value of post.isFixedPitch must be set to a non-zero value (meaning 'fixed width monospaced'), but got 0 instead. [code: mono-bad-post-isFixedPitch]
+    * [1;91;107mFAIL[0m: On monospaced fonts, the value of OS/2.panose.bProportion must be set to 9 (proportion: monospaced), but got 2 instead. [code: mono-bad-panose-proportion]
+    * [1;30;103mWARN[0m: Font is monospaced but 73 glyphs (79.35%) have a different width. You should check the widths of: ['space', 'nbspace', 'dottedCircle', 'e-mtei', 'o-mtei', 'cha-mtei', 'nya-mtei', 'tta-mtei', 'ttha-mtei', 'dda-mtei', 'ddha-mtei', 'nna-mtei', 'sha-mtei', 'ssa-mtei', 'iiMatra-mtei', 'auMatra-mtei', 'aauMatra-mtei', 'cheikhan-mtei', 'ahangKhudam-mtei', 'anji-mtei', 'syllableRepetitionMark-mtei', 'wordRepetitionMark-mtei', 'visargaMatra-mtei', 'kok-mtei', 'sam-mtei', 'lai-mtei', 'mit-mtei', 'pa-mtei', 'na-mtei', 'chil-mtei', 'til-mtei', 'khou-mtei', 'ngou-mtei', 'thou-mtei', 'wai-mtei', 'yang-mtei', 'huk-mtei', 'un-mtei', 'i-mtei', 'pham-mtei', 'atiya-mtei', 'gok-mtei', 'jham-mtei', 'rai-mtei', 'ba-mtei', 'jil-mtei', 'dil-mtei', 'ghou-mtei', 'dhou-mtei', 'bham-mtei', 'kokLonsum-mtei', 'mitLonsum-mtei', 'paLonsum-mtei', 'naLonsum-mtei', 'tilLonsum-mtei', 'ngouLonsum-mtei', 'iLonsum-mtei', 'onapMatra-mtei', 'inapMatra-mtei', 'yenapMatra-mtei', 'sounapMatra-mtei', 'cheikhei-mtei', 'lumIyek-mtei', 'digitZero-mtei', 'digitOne-mtei', 'digitTwo-mtei', 'digitThree-mtei', 'digitFour-mtei', 'digitFive-mtei', 'digitSix-mtei', 'digitSeven-mtei', 'digitEight-mtei', 'digitNine-mtei'] [code: mono-outliers]
+
+
+    Result: [1;91;107mFAIL[0m
+
+ >> [1;35;107mcom.google.fonts/check/name/match_familyname_fullfont[0m
+    [0;36;107mDoes full font name begin with the font family name?[0m
+    with NotoSansMeeteiMayek-ExtraBold.ttf
+
+    * [1;91;107mFAIL[0m: On the 'name' table, the full font name (NameID 4 - FULL_FONT_NAME: 'Noto Sans MeeteiMayek ExtraBold') does not begin with font family name (NameID 1 - FONT_FAMILY_NAME: 'Noto Sans Meetei Mayek ExtraBold') [code: does-not]
+
+
+    Result: [1;91;107mFAIL[0m
+
+ >> [1;35;107mcom.google.fonts/check/dsig[0m
+    [0;36;107mDoes the font have a DSIG table?[0m
+    with NotoSansMeeteiMayek-ExtraBold.ttf
+
+    [1;35;107m  Rationale:                                                                [0m
+    [0;30;107m  Microsoft Office 2013 and below products expect fonts to have a digital   [0m
+    [0;30;107m  signature declared in a DSIG table in order to implement OpenType         [0m
+    [0;30;107m  features. The EOL date for Microsoft Office 2013 products is 4/11/2023.   [0m
+    [0;30;107m  This issue does not impact Microsoft Office 2016 and above products.      [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  This checks verifies that this signature is available in the font.        [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  A fake signature is enough to address this issue. If needed, a dummy      [0m
+    [0;30;107m  table can be added to the font with the `gftools fix-dsig` script         [0m
+    [0;30;107m  available at https://github.com/googlefonts/gftools                       [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  Reference: https://github.com/googlefonts/fontbakery/issues/1845          [0m
+
+    * [1;91;107mFAIL[0m: This font lacks a digital signature (DSIG table). Some applications may require one (even if only a dummy placeholder) in order to work properly. You can add a DSIG table by running the `gftools fix-dsig` script. [code: lacks-signature]
+
+
+    Result: [1;91;107mFAIL[0m
+
+ >> [1;35;107mcom.google.fonts/check/gdef_mark_chars[0m
+    [0;36;107mCheck mark characters are in GDEF mark glyph class[0m
+    with NotoSansMeeteiMayek-ExtraBold.ttf
+
+    [1;35;107m  Rationale:                                                                [0m
+    [0;30;107m  Mark characters should be in the GDEF mark glyph class.                   [0m
+
+    * [1;30;103mWARN[0m: The following mark characters could be in the GDEF mark glyph class:
+	 U+AAEB, U+AAEE, U+AAEF, U+AAF5, U+ABE3, U+ABE4, U+ABE6, U+ABE7 and U+ABEC [code: mark-chars]
+
+
+    Result: [1;30;103mWARN[0m
+
+ >> [1;35;107mcom.google.fonts/check/gpos_kerning_info[0m
+    [0;36;107mDoes GPOS table have kerning information? This check skips monospaced fonts as defined by post.isFixedPitch value[0m
+    with NotoSansMeeteiMayek-ExtraBold.ttf
+
+    * [1;30;103mWARN[0m: GPOS table lacks kerning information. [code: lacks-kern-info]
+
+
+    Result: [1;30;103mWARN[0m
+
+ >> [1;35;107mcom.google.fonts/check/outline_alignment_miss[0m
+    [0;36;107mAre there any misaligned on-curve points?[0m
+    with NotoSansMeeteiMayek-ExtraBold.ttf
+
+    [1;35;107m  Rationale:                                                                [0m
+    [0;30;107m  This test heuristically looks for on-curve points which are close to, but [0m
+    [0;30;107m  do not sit on, significant boundary coordinates. For example, a point     [0m
+    [0;30;107m  which has a Y-coordinate of 1 or -1 might be a misplaced baseline point.  [0m
+    [0;30;107m  As well as the baseline, the test also checks for points near the         [0m
+    [0;30;107m  x-height (but only for lower case Latin letters), cap-height, ascender    [0m
+    [0;30;107m  and descender Y coordinates.                                              [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  Not all such misaligned curve points are a mistake, and sometimes the     [0m
+    [0;30;107m  design may call for points in locations near the boundaries. As this test [0m
+    [0;30;107m  is liable to generate significant numbers of false positives, the test    [0m
+    [0;30;107m  will pass if there are more than 100 reported misalignments.              [0m
+
+    * [1;30;103mWARN[0m: The following glyphs have on-curve points which have potentially incorrect y coordinates:
+	* cha-mtei: X=218.5,Y=0.5 (should be at baseline 0?)
+	* cha-mtei: X=624.0,Y=0.5 (should be at baseline 0?)
+	* tta-mtei: X=830.5,Y=658.0 (should be at cap-height 659?)
+	* ddha-mtei: X=327.0,Y=657.0 (should be at cap-height 659?)
+	* ddha-mtei: X=630.5,Y=658.0 (should be at cap-height 659?)
+	* sha-mtei: X=908.5,Y=-0.5 (should be at baseline 0?)
+	* sha-mtei: X=759.0,Y=-1.0 (should be at baseline 0?)
+	* sha-mtei: X=409.0,Y=-0.5 (should be at baseline 0?)
+	* sha-mtei: X=259.0,Y=-0.5 (should be at baseline 0?)
+	* syllableRepetitionMark-mtei: X=250.5,Y=660.0 (should be at cap-height 659?) and 10 more. [code: found-misalignments]
+
+
+    Result: [1;30;103mWARN[0m
+
+ >> [1;35;107mcom.google.fonts/check/outline_short_segments[0m
+    [0;36;107mAre any segments inordinately short?[0m
+    with NotoSansMeeteiMayek-ExtraBold.ttf
+
+    [1;35;107m  Rationale:                                                                [0m
+    [0;30;107m  This test looks for outline segments which seem particularly short (less  [0m
+    [0;30;107m  than 0.006%% of the overall path length).                                 [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  This test is not run for variable fonts, as they may legitimately have    [0m
+    [0;30;107m  short segments. As this test is liable to generate significant numbers of [0m
+    [0;30;107m  false positives, the test will pass if there are more than 100 reported   [0m
+    [0;30;107m  short segments.                                                           [0m
+
+    * [1;30;103mWARN[0m: The following glyphs have segments which seem very short:
+	* tta-mtei contains a short segment B<<324.0,454.0>-<316.0,443.0>-<308.0,433.0>>
+	* tta-mtei contains a short segment B<<598.0,434.0>-<591.0,443.0>-<584.0,453.0>>
+	* khou-mtei contains a short segment B<<620.0,206.0>-<620.0,192.0>-<626.5,186.0>>
+	* khou-mtei contains a short segment B<<626.5,186.0>-<633.0,180.0>-<643.0,180.0>>
+	* wai-mtei contains a short segment B<<558.0,276.0>-<558.0,280.0>-<558.0,285.0>>
+	* yang-mtei contains a short segment B<<739.0,116.5>-<753.0,111.0>-<762.0,111.0>>
+	* yang-mtei contains a short segment L<<495.0,323.0>--<502.0,323.0>>
+	* un-mtei contains a short segment B<<210.0,547.0>-<208.0,537.0>-<207.0,526.5>>
+	* un-mtei contains a short segment B<<207.0,526.5>-<206.0,516.0>-<206.0,506.0>>
+	* un-mtei contains a short segment B<<658.0,86.0>-<662.0,100.0>-<662.0,114.0>> and 9 more. [code: found-short-segments]
+
+
+    Result: [1;30;103mWARN[0m
+
+ >> [1;35;107mcom.google.fonts/check/outline_semi_vertical[0m
+    [0;36;107mDo outlines contain any semi-vertical or semi-horizontal lines?[0m
+    with NotoSansMeeteiMayek-ExtraBold.ttf
+
+    [1;35;107m  Rationale:                                                                [0m
+    [0;30;107m  This test detects line segments which are nearly, but not quite, exactly  [0m
+    [0;30;107m  horizontal or vertical. Sometimes such lines are created by design, but   [0m
+    [0;30;107m  often they are indicative of a design error.                              [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  This test is disabled for italic styles, which often contain              [0m
+    [0;30;107m  nearly-upright lines.                                                     [0m
+
+    * [1;30;103mWARN[0m: The following glyphs have semi-vertical/semi-horizontal lines:
+	* gok-mtei: L<<784.0,548.0>--<641.0,547.0>> [code: found-semi-vertical]
+
+
+    Result: [1;30;103mWARN[0m
+
+
+Total:
+
+    [1;97;101mERROR[0m: 0
+    [1;91;107mFAIL[0m: 5
+    [1;30;103mWARN[0m: 6
+    [0;36;107mINFO[0m: 2
+    [0;34;107mSKIP[0m: 17
+    [0;32;107mPASS[0m: 47
+
+
+DONE!
+
+    [1;30;107mMeaning of check results:[0m
+
+    An [1;97;101mERROR[0m is something wrong with FontBakery itself, possibly a bug.
+    A [1;91;107mFAIL[0m is a problem with the font that must be fixed.
+    A [1;30;103mWARN[0m is something that you should consider addressing.
+    An [0;36;107mINFO[0m result simply prints something useful. Typically stats.
+    A [0;32;107mPASS[0m means the font looks good for the given checking routine.
+    And a [0;34;107mSKIP[0m happens when the check does not apply to the given font.
+
+    If you get [1;97;101mERROR[0ms, please help us improve the tool by reporting them at
+    [1;36;107mhttps://github.com/googlefonts/fontbakery/issues[0m
+
+    (but other kinds of bug reports and/or
+     feature requests are also always welcome, of course!)
+

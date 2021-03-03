@@ -1,0 +1,184 @@
+Start ... running 71 individual check executions.
+ >> [1;35;107mcom.google.fonts/check/unicode_range_bits[0m
+    [0;36;107mEnsure UnicodeRange bits are properly set.[0m
+    with NotoSansCuneiform-Regular.ttf
+
+    [1;35;107m  Rationale:                                                                [0m
+    [0;30;107m  When the UnicodeRange bits on the OS/2 table are not properly set, some   [0m
+    [0;30;107m  programs running on Windows may not recognize the font and use a system   [0m
+    [0;30;107m  fallback font instead. For that reason, this check calculates the proper  [0m
+    [0;30;107m  settings by inspecting the glyphs declared on the cmap table and then     [0m
+    [0;30;107m  ensures that their corresponding ranges are enabled.                      [0m
+
+    * [1;30;103mWARN[0m: UnicodeRange bit 0 "Basic Latin" should be 1 because cmap has 3 of the 128 codepoints in this range. [code: bad-range-bit]
+    * [1;30;103mWARN[0m: UnicodeRange bit 1 "Latin-1 Supplement" should be 1 because cmap has 1 of the 128 codepoints in this range. [code: bad-range-bit]
+    * [1;30;103mWARN[0m: UnicodeRange bit 57 "Non-Plane 0 *" should be 0 because cmap has none of the 2048 codepoints in this range. [code: bad-range-bit]
+    * [1;30;103mWARN[0m: UnicodeRange bit 67 "Arabic Presentation Forms-B" should be 1 because cmap has 1 of the 144 codepoints in this range. [code: bad-range-bit]
+
+
+    Result: [1;30;103mWARN[0m
+
+ >> [1;35;107mcom.google.fonts/check/required_tables[0m
+    [0;36;107mFont contains all required tables?[0m
+    with NotoSansCuneiform-Regular.ttf
+
+    [1;35;107m  Rationale:                                                                [0m
+    [0;30;107m  Depending on the typeface and coverage of a font, certain tables are      [0m
+    [0;30;107m  recommended for optimum quality. For example, the performance of a        [0m
+    [0;30;107m  non-linear font is improved if the VDMX, LTSH, and hdmx tables are        [0m
+    [0;30;107m  present. Non-monospaced Latin fonts should have a kern table. A gasp      [0m
+    [0;30;107m  table is necessary if a designer wants to influence the sizes at which    [0m
+    [0;30;107m  grayscaling is used under Windows. A DSIG table containing a digital      [0m
+    [0;30;107m  signature helps ensure the integrity of the font file. Etc.               [0m
+
+    * [0;36;107mINFO[0m: This font contains the following optional tables [loca, gasp]
+
+
+    Result: [0;36;107mINFO[0m
+
+ >> [1;35;107mcom.google.fonts/check/superfamily/list[0m
+    [0;36;107mList all superfamily filepaths[0m
+    with NotoSansCuneiform-Regular.ttf
+
+    [1;35;107m  Rationale:                                                                [0m
+    [0;30;107m  This is a merely informative check that lists all sibling families        [0m
+    [0;30;107m  detected by fontbakery.                                                   [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  Only the fontfiles in these directories will be considered in             [0m
+    [0;30;107m  superfamily-level checks.                                                 [0m
+
+    * [0;36;107mINFO[0m: . [code: family-path]
+
+
+    Result: [0;36;107mINFO[0m
+
+ >> [1;35;107mcom.google.fonts/check/post_table_version[0m
+    [0;36;107mFont has correct post table version?[0m
+    with NotoSansCuneiform-Regular.ttf
+
+    [1;35;107m  Rationale:                                                                [0m
+    [0;30;107m  Apple recommends against using 'post' table format 3 under most           [0m
+    [0;30;107m  circumstances, as it can create problems with some printer drivers and    [0m
+    [0;30;107m  PDF documents. The savings in disk space usually does not justify the     [0m
+    [0;30;107m  potential loss in functionality.                                          [0m
+    [0;30;107m  Source: https://developer.apple.com/fonts/TrueType-Reference-Manual/RM06/Chap6post.html[0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  The CFF2 table does not contain glyph names, so variable OTFs should be   [0m
+    [0;30;107m  allowed to use post table version 2.                                      [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  This check expects:                                                       [0m
+    [0;30;107m  - Version 2 for TTF or OTF CFF2 Variable fonts                            [0m
+    [0;30;107m  - Version 3 for OTF                                                       [0m
+
+    * [1;91;107mFAIL[0m: Post table should be version 2 instead of 3.0.
+
+
+    Result: [1;91;107mFAIL[0m
+
+ >> [1;35;107mcom.google.fonts/check/monospace[0m
+    [0;36;107mChecking correctness of monospaced metadata.[0m
+    with NotoSansCuneiform-Regular.ttf
+
+    [1;35;107m  Rationale:                                                                [0m
+    [0;30;107m  There are various metadata in the OpenType spec to specify if a font is   [0m
+    [0;30;107m  monospaced or not. If the font is not truly monospaced, then no           [0m
+    [0;30;107m  monospaced metadata should be set (as sometimes they mistakenly are...)   [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  Requirements for monospace fonts:                                         [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  * post.isFixedPitch - "Set to 0 if the font is proportionally spaced,     [0m
+    [0;30;107m  non-zero if the font is not proportionally spaced (monospaced)"           [0m
+    [0;30;107m    www.microsoft.com/typography/otspec/post.htm                            [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  * hhea.advanceWidthMax must be correct, meaning no glyph's width value is [0m
+    [0;30;107m  greater.                                                                  [0m
+    [0;30;107m    www.microsoft.com/typography/otspec/hhea.htm                            [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  * OS/2.panose.bProportion must be set to 9 (monospace). Spec says: "The   [0m
+    [0;30;107m  PANOSE definition contains ten digits each of which currently describes   [0m
+    [0;30;107m  up to sixteen variations. Windows uses bFamilyType, bSerifStyle and       [0m
+    [0;30;107m  bProportion in the font mapper to determine family type. It also uses     [0m
+    [0;30;107m  bProportion to determine if the font is monospaced."                      [0m
+    [0;30;107m    www.microsoft.com/typography/otspec/os2.htm#pan                         [0m
+    [0;30;107m    monotypecom-test.monotype.de/services/pan2                              [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  * OS/2.xAvgCharWidth must be set accurately.                              [0m
+    [0;30;107m    "OS/2.xAvgCharWidth is used when rendering monospaced fonts, at least   [0m
+    [0;30;107m  by Windows GDI"                                                           [0m
+    [0;30;107m    http://typedrawers.com/discussion/comment/15397/#Comment_15397          [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  Also we should report an error for glyphs not of average width.           [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  Please also note:                                                         [0m
+    [0;30;107m  Thomas Phinney told us that a few years ago (as of December 2019), if you [0m
+    [0;30;107m  gave a font a monospace flag in Panose, Microsoft Word would ignore the   [0m
+    [0;30;107m  actual advance widths and treat it as monospaced. Source:                 [0m
+    [0;30;107m  https://typedrawers.com/discussion/comment/45140/#Comment_45140           [0m
+
+    * [1;91;107mFAIL[0m: On monospaced fonts, the value of post.isFixedPitch must be set to a non-zero value (meaning 'fixed width monospaced'), but got 0 instead. [code: mono-bad-post-isFixedPitch]
+    * [1;91;107mFAIL[0m: On monospaced fonts, the value of OS/2.panose.bProportion must be set to 9 (proportion: monospaced), but got 2 instead. [code: mono-bad-panose-proportion]
+    * [1;30;103mWARN[0m: Font is monospaced but 933 glyphs (94.62474645030426%) have a different width. You should check the widths of: ['uni000D', 'space', 'u12000', 'u12001', 'u12002', 'u12003', 'u12004', 'u12005', 'u12006', 'u12007', 'u12008', 'u12009', 'u1200A', 'u1200B', 'u1200C', 'u1200D', 'u1200E', 'u1200F', 'u12010', 'u12011', 'u12012', 'u12013', 'u12014', 'u12015', 'u12016', 'u12017', 'u12018', 'u12019', 'u1201A', 'u1201B', 'u1201C', 'u1201D', 'u1201E', 'u1201F', 'u12020', 'u12021', 'u12022', 'u12023', 'u12024', 'u12025', 'u12026', 'u12027', 'u12028', 'u12029', 'u1202A', 'u1202B', 'u1202C', 'u1202D', 'u1202E', 'u1202F', 'u12030', 'u12031', 'u12032', 'u12033', 'u12034', 'u12035', 'u12036', 'u12037', 'u12038', 'u12039', 'u1203A', 'u1203B', 'u1203C', 'u1203D', 'u1203E', 'u1203F', 'u12040', 'u12041', 'u12042', 'u12043', 'u12044', 'u12045', 'u12046', 'u12047', 'u12048', 'u12049', 'u1204A', 'u1204B', 'u1204C', 'u1204D', 'u1204E', 'u1204F', 'u12050', 'u12051', 'u12052', 'u12053', 'u12054', 'u12055', 'u12056', 'u12057', 'u12058', 'u12059', 'u1205A', 'u1205B', 'u1205C', 'u1205D', 'u1205E', 'u1205F', 'u12060', 'u12061', 'u12062', 'u12063', 'u12064', 'u12065', 'u12066', 'u12067', 'u12068', 'u12069', 'u1206A', 'u1206B', 'u1206C', 'u1206D', 'u1206E', 'u1206F', 'u12070', 'u12071', 'u12072', 'u12073', 'u12074', 'u12075', 'u12076', 'u12077', 'u12078', 'u12079', 'u1207A', 'u1207B', 'u1207C', 'u1207D', 'u1207E', 'u1207F', 'u12080', 'u12081', 'u12082', 'u12083', 'u12084', 'u12085', 'u12086', 'u12087', 'u12088', 'u12089', 'u1208A', 'u1208B', 'u1208C', 'u1208D', 'u1208E', 'u1208F', 'u12090', 'u12091', 'u12092', 'u12093', 'u12094', 'u12095', 'u12096', 'u12097', 'u12098', 'u12099', 'u1209A', 'u1209B', 'u1209C', 'u1209D', 'u1209E', 'u1209F', 'u120A0', 'u120A1', 'u120A2', 'u120A3', 'u120A4', 'u120A5', 'u120A6', 'u120A7', 'u120A8', 'u120A9', 'u120AA', 'u120AB', 'u120AC', 'u120AD', 'u120AE', 'u120AF', 'u120B0', 'u120B1', 'u120B2', 'u120B3', 'u120B4', 'u120B5', 'u120B6', 'u120BE', 'u120CA', 'u120D7', 'u120E6', 'u120ED', 'u120EE', 'u120EF', 'u120F0', 'u120F1', 'u120F2', 'u120F3', 'u120F4', 'u120F5', 'u120F6', 'u120F7', 'u120F8', 'u120F9', 'u120FA', 'u120FB', 'u120FC', 'u120FD', 'u120FE', 'u120FF', 'u12100', 'u12101', 'u12102', 'u12103', 'u12104', 'u12105', 'u12106', 'u12107', 'u12108', 'u12109', 'u1210A', 'u1210B', 'u1210C', 'u1210D', 'u1210E', 'u1210F', 'u12110', 'u12111', 'u12112', 'u12113', 'u12114', 'u12115', 'u12116', 'u12117', 'u12118', 'u12119', 'u1211A', 'u1211B', 'u1211C', 'u1211D', 'u1211E', 'u1211F', 'u12120', 'u12121', 'u12122', 'u12123', 'u12124', 'u12125', 'u12126', 'u12127', 'u12128', 'u12129', 'u1212A', 'u1212B', 'u1212C', 'u1212D', 'u1212E', 'u1212F', 'u12130', 'u12131', 'u12132', 'u12133', 'u12134', 'u12135', 'u12136', 'u12137', 'u12138', 'u12139', 'u1213A', 'u1213B', 'u1213C', 'u1213D', 'u1213E', 'u1213F', 'u12140', 'u12141', 'u12142', 'u12143', 'u12144', 'u12145', 'u12146', 'u12147', 'u12148', 'u12149', 'u1214A', 'u1214B', 'u1214C', 'u1214D', 'u1214E', 'u1214F', 'u12150', 'u12151', 'u12152', 'u12153', 'u12154', 'u12155', 'u12156', 'u12157', 'u12158', 'u12159', 'u1215A', 'u1215B', 'u1215C', 'u1215D', 'u1215E', 'u1215F', 'u12160', 'u12161', 'u12162', 'u12163', 'u12164', 'u12165', 'u12166', 'u12167', 'u12168', 'u12169', 'u1216A', 'u1216B', 'u1216C', 'u1216D', 'u1216E', 'u1216F', 'u12170', 'u12171', 'u12172', 'u12173', 'u12174', 'u12175', 'u12176', 'u12177', 'u12178', 'u12179', 'u1217A', 'u1217B', 'u1217C', 'u1217D', 'u1217E', 'u1217F', 'u12180', 'u12181', 'u12182', 'u12183', 'u12184', 'u12185', 'u12186', 'u12187', 'u12188', 'u12189', 'u1218A', 'u1218B', 'u1218C', 'u1218D', 'u1218E', 'u1218F', 'u12190', 'u12191', 'u12192', 'u12193', 'u12194', 'u12195', 'u12196', 'u12197', 'u12198', 'u12199', 'u1219A', 'u1219B', 'u1219C', 'u1219D', 'u1219E', 'u1219F', 'u121A0', 'u121A1', 'u121A2', 'u121A3', 'u121A4', 'u121A5', 'u121A6', 'u121A7', 'u121A8', 'u121A9', 'u121AA', 'u121AB', 'u121AC', 'u121AD', 'u121AE', 'u121AF', 'u121B0', 'u121B1', 'u121B2', 'u121B3', 'u121B4', 'u121B5', 'u121B6', 'u121B7', 'u121B8', 'u121B9', 'u121BA', 'u121BB', 'u121BC', 'u121BD', 'u121BE', 'u121BF', 'u121C0', 'u121C1', 'u121C2', 'u121C3', 'u121C4', 'u121C5', 'u121C6', 'u121C7', 'u121C8', 'u121C9', 'u121CA', 'u121CB', 'u121CC', 'u121CD', 'u121CE', 'u121CF', 'u121D0', 'u121D1', 'u121D2', 'u121D3', 'u121D4', 'u121D5', 'u121D6', 'u121D7', 'u121D8', 'u121D9', 'u121DA', 'u121DB', 'u121DC', 'u121DD', 'u121DE', 'u121DF', 'u121E0', 'u121E1', 'u121E2', 'u121E3', 'u121E4', 'u121E5', 'u121E6', 'u121E7', 'u121E8', 'u121E9', 'u121EA', 'u121EB', 'u121EC', 'u121ED', 'u121EE', 'u121EF', 'u121F0', 'u121F1', 'u121F2', 'u121F3', 'u121F4', 'u121F5', 'u121F6', 'u121F7', 'u121F8', 'u121F9', 'u121FA', 'u121FB', 'u121FC', 'u121FD', 'u121FE', 'u121FF', 'u12200', 'u12201', 'u12202', 'u12203', 'u12204', 'u12205', 'u12206', 'u12207', 'u12208', 'u12209', 'u1220A', 'u1220B', 'u1220C', 'u1220D', 'u1220E', 'u1220F', 'u12210', 'u12211', 'u12212', 'u12213', 'u12214', 'u12215', 'u12216', 'u12217', 'u12218', 'u12219', 'u1221A', 'u1221B', 'u1221C', 'u1221D', 'u1221E', 'u1221F', 'u12220', 'u12221', 'u12222', 'u12223', 'u12224', 'u12225', 'u12226', 'u12227', 'u12228', 'u12229', 'u1222A', 'u1222B', 'u1222C', 'u1222D', 'u1222E', 'u1222F', 'u12230', 'u12231', 'u12232', 'u12233', 'u12234', 'u12235', 'u12236', 'u12237', 'u12238', 'u12239', 'u1223A', 'u1223B', 'u1223C', 'u1223D', 'u1223E', 'u1223F', 'u12240', 'u12241', 'u12242', 'u12243', 'u12244', 'u12245', 'u12246', 'u12247', 'u12248', 'u12249', 'u1224A', 'u1224B', 'u1224C', 'u1224D', 'u1224E', 'u1224F', 'u12250', 'u12251', 'u12252', 'u12253', 'u12254', 'u12255', 'u12256', 'u12257', 'u12258', 'u12259', 'u1225A', 'u1225B', 'u1225C', 'u1225D', 'u1225E', 'u1225F', 'u12260', 'u12261', 'u12262', 'u12263', 'u12264', 'u12265', 'u12266', 'u12267', 'u12268', 'u12269', 'u1226A', 'u1226B', 'u1226C', 'u1226D', 'u1226E', 'u1226F', 'u12270', 'u12271', 'u12272', 'u12273', 'u12274', 'u12275', 'u12276', 'u12277', 'u12278', 'u12279', 'u1227A', 'u1227B', 'u1227C', 'u1227D', 'u1227E', 'u1227F', 'u12280', 'u12281', 'u12282', 'u12283', 'u12284', 'u12285', 'u12286', 'u12287', 'u12288', 'u12289', 'u1228A', 'u1228B', 'u1228C', 'u1228D', 'u1228E', 'u1228F', 'u12290', 'u12291', 'u12292', 'u12293', 'u12294', 'u12295', 'u12296', 'u12297', 'u12298', 'u12299', 'u1229A', 'u1229B', 'u1229C', 'u1229D', 'u1229E', 'u1229F', 'u122A0', 'u122A1', 'u122A2', 'u122A3', 'u122A4', 'u122A5', 'u122A6', 'u122A7', 'u122A8', 'u122A9', 'u122AA', 'u122AB', 'u122AC', 'u122AD', 'u122AE', 'u122AF', 'u122B0', 'u122B1', 'u122B2', 'u122B3', 'u122B4', 'u122B5', 'u122B6', 'u122B7', 'u122B8', 'u122B9', 'u122BA', 'u122BB', 'u122BC', 'u122BD', 'u122BE', 'u122BF', 'u122C0', 'u122C1', 'u122C2', 'u122C3', 'u122C4', 'u122C5', 'u122C6', 'u122C7', 'u122C8', 'u122C9', 'u122CA', 'u122CB', 'u122CC', 'u122CD', 'u122CE', 'u122CF', 'u122D0', 'u122D1', 'u122D2', 'u122D3', 'u122D4', 'u122D5', 'u122D6', 'u122D7', 'u122D8', 'u122D9', 'u122DA', 'u122DB', 'u122DC', 'u122DD', 'u122DE', 'u122DF', 'u122E0', 'u122E1', 'u122E2', 'u122E3', 'u122E4', 'u122E5', 'u122E6', 'u122E7', 'u122E8', 'u122E9', 'u122EA', 'u122EB', 'u122ED', 'u122EE', 'u122EF', 'u122F0', 'u122F1', 'u122F2', 'u122F3', 'u122F4', 'u122F5', 'u122F6', 'u122F7', 'u122F8', 'u122F9', 'u122FA', 'u122FB', 'u122FC', 'u122FD', 'u122FE', 'u122FF', 'u12300', 'u12301', 'u12302', 'u12303', 'u12304', 'u12305', 'u12306', 'u12307', 'u12308', 'u12309', 'u1230A', 'u1230B', 'u1230C', 'u1230D', 'u1230E', 'u1230F', 'u12310', 'u12311', 'u12312', 'u12313', 'u12314', 'u12315', 'u12316', 'u12317', 'u12318', 'u12319', 'u1231A', 'u1231B', 'u1231C', 'u1231D', 'u1231E', 'u1231F', 'u12320', 'u12321', 'u12322', 'u12323', 'u12324', 'u12325', 'u12326', 'u12327', 'u12328', 'u12329', 'u1232A', 'u1232B', 'u1232C', 'u1232D', 'u1232E', 'u1232F', 'u12330', 'u12331', 'u12332', 'u12333', 'u12334', 'u12335', 'u12336', 'u12337', 'u12338', 'u12339', 'u1233A', 'u1233B', 'u1233C', 'u1233D', 'u1233E', 'u1233F', 'u12340', 'u12341', 'u12342', 'u12343', 'u12344', 'u12345', 'u12346', 'u12347', 'u12348', 'u12349', 'u1234A', 'u1234B', 'u1234C', 'u1234D', 'u1234E', 'u1234F', 'u12350', 'u12351', 'u12352', 'u12353', 'u12354', 'u12355', 'u12356', 'u12357', 'u12358', 'u12359', 'u1235A', 'u1235B', 'u1235C', 'u1235D', 'u1235E', 'u1235F', 'u12360', 'u12361', 'u12362', 'u12363', 'u12364', 'u12365', 'u12366', 'u12367', 'u12368', 'u12369', 'u1236A', 'u1236B', 'u1236C', 'u1236D', 'u1236E', 'u12400', 'u12401', 'u12402', 'u12403', 'u12404', 'u12405', 'u12406', 'u12407', 'u12408', 'u12409', 'u1240A', 'u1240B', 'u1240C', 'u1240D', 'u1240E', 'u1240F', 'u12410', 'u12411', 'u12412', 'u12413', 'u12414', 'u12415', 'u12416', 'u12417', 'u12418', 'u12419', 'u1241A', 'u1241B', 'u1241C', 'u1241D', 'u1241E', 'u1241F', 'u12420', 'u12421', 'u12422', 'u12423', 'u12424', 'u12425', 'u12426', 'u12427', 'u12428', 'u12429', 'u1242A', 'u1242B', 'u1242C', 'u1242D', 'u1242E', 'u1242F', 'u12430', 'u12431', 'u12432', 'u12433', 'u12434', 'u12435', 'u12436', 'u12437', 'u12438', 'u12439', 'u1243A', 'u1243B', 'u1243C', 'u1243D', 'u1243E', 'u1243F', 'u12440', 'u12441', 'u12442', 'u12443', 'u12444', 'u12445', 'u12446', 'u12447', 'u12448', 'u12449', 'u1244A', 'u1244B', 'u1244C', 'u1244D', 'u1244E', 'u1244F', 'u12450', 'u12451', 'u12452', 'u12453', 'u12454', 'u12455', 'u12456', 'u12457', 'u12458', 'u12459', 'u1245A', 'u1245B', 'u1245C', 'u1245D', 'u1245E', 'u1245F', 'u12460', 'u12461', 'u12462', 'u12470', 'u12471', 'u12472', 'u12473'] [code: mono-outliers]
+
+
+    Result: [1;91;107mFAIL[0m
+
+ >> [1;35;107mcom.google.fonts/check/dsig[0m
+    [0;36;107mDoes the font have a DSIG table?[0m
+    with NotoSansCuneiform-Regular.ttf
+
+    [1;35;107m  Rationale:                                                                [0m
+    [0;30;107m  Microsoft Office 2013 and below products expect fonts to have a digital   [0m
+    [0;30;107m  signature declared in a DSIG table in order to implement OpenType         [0m
+    [0;30;107m  features. The EOL date for Microsoft Office 2013 products is 4/11/2023.   [0m
+    [0;30;107m  This issue does not impact Microsoft Office 2016 and above products.      [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  This checks verifies that this signature is available in the font.        [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  A fake signature is enough to address this issue. If needed, a dummy      [0m
+    [0;30;107m  table can be added to the font with the `gftools fix-dsig` script         [0m
+    [0;30;107m  available at https://github.com/googlefonts/gftools                       [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  Reference: https://github.com/googlefonts/fontbakery/issues/1845          [0m
+
+    * [1;91;107mFAIL[0m: This font lacks a digital signature (DSIG table). Some applications may require one (even if only a dummy placeholder) in order to work properly. You can add a DSIG table by running the `gftools fix-dsig` script. [code: lacks-signature]
+
+
+    Result: [1;91;107mFAIL[0m
+
+ >> [1;35;107mcom.google.fonts/check/gpos_kerning_info[0m
+    [0;36;107mDoes GPOS table have kerning information?[0m
+    with NotoSansCuneiform-Regular.ttf
+
+    * [1;30;103mWARN[0m: GPOS table lacks kerning information. [code: lacks-kern-info]
+
+
+    Result: [1;30;103mWARN[0m
+
+
+Total:
+
+    [1;97;101mERROR[0m: 0
+    [1;91;107mFAIL[0m: 3
+    [1;30;103mWARN[0m: 2
+    [0;36;107mINFO[0m: 2
+    [0;34;107mSKIP[0m: 23
+    [0;32;107mPASS[0m: 41
+
+
+DONE!
+
+    [1;30;107mMeaning of check results:[0m
+
+    An [1;97;101mERROR[0m is something wrong with FontBakery itself, possibly a bug.
+    A [1;91;107mFAIL[0m is a problem with the font that must be fixed.
+    A [1;30;103mWARN[0m is something that you should consider addressing.
+    An [0;36;107mINFO[0m result simply prints something useful. Typically stats.
+    A [0;32;107mPASS[0m means the font looks good for the given checking routine.
+    And a [0;34;107mSKIP[0m happens when the check does not apply to the given font.
+
+    If you get [1;97;101mERROR[0ms, please help us improve the tool by reporting them at
+    [1;36;107mhttps://github.com/googlefonts/fontbakery/issues[0m
+
+    (but other kinds of bug reports and/or
+     feature requests are also always welcome, of course!)
+

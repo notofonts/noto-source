@@ -1,0 +1,247 @@
+Start ... running 77 individual check executions.
+ >> [1;35;107mcom.google.fonts/check/required_tables[0m
+    [0;36;107mFont contains all required tables?[0m
+    with NotoSerifLao-CondensedExtraBold.ttf
+
+    [1;35;107m  Rationale:                                                                [0m
+    [0;30;107m  Depending on the typeface and coverage of a font, certain tables are      [0m
+    [0;30;107m  recommended for optimum quality. For example, the performance of a        [0m
+    [0;30;107m  non-linear font is improved if the VDMX, LTSH, and hdmx tables are        [0m
+    [0;30;107m  present. Non-monospaced Latin fonts should have a kern table. A gasp      [0m
+    [0;30;107m  table is necessary if a designer wants to influence the sizes at which    [0m
+    [0;30;107m  grayscaling is used under Windows. A DSIG table containing a digital      [0m
+    [0;30;107m  signature helps ensure the integrity of the font file. Etc.               [0m
+
+    * [0;36;107mINFO[0m: This font contains the following optional tables [loca, GPOS, GSUB]
+
+
+    Result: [0;36;107mINFO[0m
+
+ >> [1;35;107mcom.google.fonts/check/valid_glyphnames[0m
+    [0;36;107mGlyph names are all valid?[0m
+    with NotoSerifLao-CondensedExtraBold.ttf
+
+    [1;35;107m  Rationale:                                                                [0m
+    [0;30;107m  Microsoft's recommendations for OpenType Fonts states the following:      [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  'NOTE: The PostScript glyph name must be no longer than 31 characters,    [0m
+    [0;30;107m  include only uppercase or lowercase English letters, European digits, the [0m
+    [0;30;107m  period or the underscore, i.e. from the set [A-Za-z0-9_.] and should      [0m
+    [0;30;107m  start with a letter, except the special glyph name ".notdef" which starts [0m
+    [0;30;107m  with a period.'                                                           [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  https://docs.microsoft.com/en-us/typography/opentype/spec/recom#post-table[0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  In practice, though, particularly in modern environments, glyph names can [0m
+    [0;30;107m  be as long as 63 characters.                                              [0m
+    [0;30;107m  According to the "Adobe Glyph List Specification" available at:           [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  https://github.com/adobe-type-tools/agl-specification                     [0m
+
+    * [1;91;107mFAIL[0m: The following glyph names do not comply with naming conventions: koKai-lao, khoKhai-lao, khoKhuay-lao, ngoNgu-lao, coCok-lao, soSang-lao, nyoNyung-lao, doDek-lao, toTa-lao, thoThong-lao and 97 more.
+
+ A glyph name must be entirely comprised of characters from the following set: A-Z a-z 0-9 .(period) _(underscore). A glyph name must not start with a digit or period. There are a few exceptions such as the special glyph ".notdef". The glyph names "twocents", "a1", and "_" are all valid, while "2cents" and ".twocents" are not. [code: found-invalid-names]
+
+
+    Result: [1;91;107mFAIL[0m
+
+ >> [1;35;107mcom.google.fonts/check/superfamily/list[0m
+    [0;36;107mList all superfamily filepaths[0m
+    with NotoSerifLao-CondensedExtraBold.ttf
+
+    [1;35;107m  Rationale:                                                                [0m
+    [0;30;107m  This is a merely informative check that lists all sibling families        [0m
+    [0;30;107m  detected by fontbakery.                                                   [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  Only the fontfiles in these directories will be considered in             [0m
+    [0;30;107m  superfamily-level checks.                                                 [0m
+
+    * [0;36;107mINFO[0m: . [code: family-path]
+
+
+    Result: [0;36;107mINFO[0m
+
+ >> [1;35;107mcom.google.fonts/check/monospace[0m
+    [0;36;107mChecking correctness of monospaced metadata.[0m
+    with NotoSerifLao-CondensedExtraBold.ttf
+
+    [1;35;107m  Rationale:                                                                [0m
+    [0;30;107m  There are various metadata in the OpenType spec to specify if a font is   [0m
+    [0;30;107m  monospaced or not. If the font is not truly monospaced, then no           [0m
+    [0;30;107m  monospaced metadata should be set (as sometimes they mistakenly are...)   [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  Requirements for monospace fonts:                                         [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  * post.isFixedPitch - "Set to 0 if the font is proportionally spaced,     [0m
+    [0;30;107m  non-zero if the font is not proportionally spaced (monospaced)"           [0m
+    [0;30;107m    www.microsoft.com/typography/otspec/post.htm                            [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  * hhea.advanceWidthMax must be correct, meaning no glyph's width value is [0m
+    [0;30;107m  greater.                                                                  [0m
+    [0;30;107m    www.microsoft.com/typography/otspec/hhea.htm                            [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  * OS/2.panose.bProportion must be set to 9 (monospace). Spec says: "The   [0m
+    [0;30;107m  PANOSE definition contains ten digits each of which currently describes   [0m
+    [0;30;107m  up to sixteen variations. Windows uses bFamilyType, bSerifStyle and       [0m
+    [0;30;107m  bProportion in the font mapper to determine family type. It also uses     [0m
+    [0;30;107m  bProportion to determine if the font is monospaced."                      [0m
+    [0;30;107m    www.microsoft.com/typography/otspec/os2.htm#pan                         [0m
+    [0;30;107m    monotypecom-test.monotype.de/services/pan2                              [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  * OS/2.xAvgCharWidth must be set accurately.                              [0m
+    [0;30;107m    "OS/2.xAvgCharWidth is used when rendering monospaced fonts, at least   [0m
+    [0;30;107m  by Windows GDI"                                                           [0m
+    [0;30;107m    http://typedrawers.com/discussion/comment/15397/#Comment_15397          [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  Also we should report an error for glyphs not of average width.           [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  Please also note:                                                         [0m
+    [0;30;107m  Thomas Phinney told us that a few years ago (as of December 2019), if you [0m
+    [0;30;107m  gave a font a monospace flag in Panose, Microsoft Word would ignore the   [0m
+    [0;30;107m  actual advance widths and treat it as monospaced. Source:                 [0m
+    [0;30;107m  https://typedrawers.com/discussion/comment/45140/#Comment_45140           [0m
+
+    * [1;91;107mFAIL[0m: On monospaced fonts, the value of post.isFixedPitch must be set to a non-zero value (meaning 'fixed width monospaced'), but got 0 instead. [code: mono-bad-post-isFixedPitch]
+    * [1;91;107mFAIL[0m: On monospaced fonts, the value of OS/2.panose.bProportion must be set to 9 (proportion: monospaced), but got 6 instead. [code: mono-bad-panose-proportion]
+    * [1;30;103mWARN[0m: Font is monospaced but 55 glyphs (47.01%) have a different width. You should check the widths of: ['koKai-lao', 'khoKhai-lao', 'khoKhuay-lao', 'ngoNgu-lao', 'coCok-lao', 'soSang-lao', 'nyoNyung-lao', 'doDek-lao', 'toTa-lao', 'thoThong-lao', 'thoThung-lao', 'noNok-lao', 'boBae-lao', 'poPa-lao', 'phoPhueng-lao', 'foFon-lao', 'phoPhu-lao', 'foFai-lao', 'moMa-lao', 'yoYa-lao', 'roRot-lao', 'loLing-lao', 'woWi-lao', 'soSeua-lao', 'hoHaan-lao', 'oO-lao', 'hoHeuan-lao', 'khmuGo-lao', 'khmuNyo-lao', 'aVowel-lao', 'aaVowel-lao', 'amVowel-lao', 'nyoVowel-lao', 'eVowel-lao', 'aeVowel-lao', 'oVowel-lao', 'ayMaiMuanVowel-lao', 'aiMaiMayVowel-lao', 'amVowel-lao.narrow', 'hoNo-lao', 'hoMo-lao', 'zero-lao', 'one-lao', 'two-lao', 'three-lao', 'four-lao', 'five-lao', 'six-lao', 'seven-lao', 'eight-lao', 'nine-lao', 'koLa-lao', 'ellipsis-lao', 'kip', 'dottedCircle'] [code: mono-outliers]
+
+
+    Result: [1;91;107mFAIL[0m
+
+ >> [1;35;107mcom.google.fonts/check/name/match_familyname_fullfont[0m
+    [0;36;107mDoes full font name begin with the font family name?[0m
+    with NotoSerifLao-CondensedExtraBold.ttf
+
+    * [1;91;107mFAIL[0m: On the 'name' table, the full font name (NameID 4 - FULL_FONT_NAME: 'Noto Serif Lao Cond ExtBd') does not begin with font family name (NameID 1 - FONT_FAMILY_NAME: 'Noto Serif Lao Condensed ExtraBold') [code: does-not]
+
+
+    Result: [1;91;107mFAIL[0m
+
+ >> [1;35;107mcom.google.fonts/check/dsig[0m
+    [0;36;107mDoes the font have a DSIG table?[0m
+    with NotoSerifLao-CondensedExtraBold.ttf
+
+    [1;35;107m  Rationale:                                                                [0m
+    [0;30;107m  Microsoft Office 2013 and below products expect fonts to have a digital   [0m
+    [0;30;107m  signature declared in a DSIG table in order to implement OpenType         [0m
+    [0;30;107m  features. The EOL date for Microsoft Office 2013 products is 4/11/2023.   [0m
+    [0;30;107m  This issue does not impact Microsoft Office 2016 and above products.      [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  This checks verifies that this signature is available in the font.        [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  A fake signature is enough to address this issue. If needed, a dummy      [0m
+    [0;30;107m  table can be added to the font with the `gftools fix-dsig` script         [0m
+    [0;30;107m  available at https://github.com/googlefonts/gftools                       [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  Reference: https://github.com/googlefonts/fontbakery/issues/1845          [0m
+
+    * [1;91;107mFAIL[0m: This font lacks a digital signature (DSIG table). Some applications may require one (even if only a dummy placeholder) in order to work properly. You can add a DSIG table by running the `gftools fix-dsig` script. [code: lacks-signature]
+
+
+    Result: [1;91;107mFAIL[0m
+
+ >> [1;35;107mcom.google.fonts/check/outline_alignment_miss[0m
+    [0;36;107mAre there any misaligned on-curve points?[0m
+    with NotoSerifLao-CondensedExtraBold.ttf
+
+    [1;35;107m  Rationale:                                                                [0m
+    [0;30;107m  This test heuristically looks for on-curve points which are close to, but [0m
+    [0;30;107m  do not sit on, significant boundary coordinates. For example, a point     [0m
+    [0;30;107m  which has a Y-coordinate of 1 or -1 might be a misplaced baseline point.  [0m
+    [0;30;107m  As well as the baseline, the test also checks for points near the         [0m
+    [0;30;107m  x-height (but only for lower case Latin letters), cap-height, ascender    [0m
+    [0;30;107m  and descender Y coordinates.                                              [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  Not all such misaligned curve points are a mistake, and sometimes the     [0m
+    [0;30;107m  design may call for points in locations near the boundaries. As this test [0m
+    [0;30;107m  is liable to generate significant numbers of false positives, the test    [0m
+    [0;30;107m  will pass if there are more than 100 reported misalignments.              [0m
+
+    * [1;30;103mWARN[0m: The following glyphs have on-curve points which have potentially incorrect y coordinates:
+	* khoKhai-lao: X=218.0,Y=-1.0 (should be at baseline 0?)
+	* ngoNgu-lao: X=132.0,Y=-2.0 (should be at baseline 0?)
+	* soSang-lao: X=210.5,Y=-1.5 (should be at baseline 0?)
+	* oVowel-lao: X=322.0,Y=713.0 (should be at cap-height 714?)
+	* iiVowel-lao: X=-193.0,Y=715.0 (should be at cap-height 714?)
+	* euVowel-lao: X=-332.0,Y=715.0 (should be at cap-height 714?)
+	* euVowel-lao: X=-241.0,Y=715.0 (should be at cap-height 714?)
+	* euuVowel-lao: X=-193.0,Y=715.0 (should be at cap-height 714?)
+	* euuVowel-lao: X=-333.0,Y=715.0 (should be at cap-height 714?)
+	* euuVowel-lao: X=-243.0,Y=715.0 (should be at cap-height 714?) and 12 more. [code: found-misalignments]
+
+
+    Result: [1;30;103mWARN[0m
+
+ >> [1;35;107mcom.google.fonts/check/outline_short_segments[0m
+    [0;36;107mAre any segments inordinately short?[0m
+    with NotoSerifLao-CondensedExtraBold.ttf
+
+    [1;35;107m  Rationale:                                                                [0m
+    [0;30;107m  This test looks for outline segments which seem particularly short (less  [0m
+    [0;30;107m  than 0.006%% of the overall path length).                                 [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  This test is not run for variable fonts, as they may legitimately have    [0m
+    [0;30;107m  short segments. As this test is liable to generate significant numbers of [0m
+    [0;30;107m  false positives, the test will pass if there are more than 100 reported   [0m
+    [0;30;107m  short segments.                                                           [0m
+
+    * [1;30;103mWARN[0m: The following glyphs have segments which seem very short:
+	* khoKhai-lao contains a short segment B<<160.0,484.0>-<164.0,485.0>-<169.0,485.0>>
+	* ngoNgu-lao contains a short segment B<<140.0,477.0>-<146.0,479.0>-<156.0,479.0>>
+	* soSang-lao contains a short segment B<<160.0,485.0>-<164.0,485.0>-<169.0,485.0>>
+	* doDek-lao contains a short segment L<<204.0,184.0>--<205.0,184.0>>
+	* toTa-lao contains a short segment L<<291.0,485.0>--<293.0,485.0>>
+	* toTa-lao contains a short segment L<<293.0,432.0>--<289.0,432.0>>
+	* toTa-lao contains a short segment L<<204.0,184.0>--<204.0,184.0>>
+	* boBae-lao contains a short segment L<<96.0,368.0>--<96.0,368.0>>
+	* poPa-lao contains a short segment L<<96.0,368.0>--<96.0,368.0>>
+	* phoPhueng-lao contains a short segment B<<214.0,368.0>-<210.0,368.0>-<207.0,368.5>> and 52 more. [code: found-short-segments]
+
+
+    Result: [1;30;103mWARN[0m
+
+ >> [1;35;107mcom.google.fonts/check/outline_jaggy_segments[0m
+    [0;36;107mDo outlines contain any jaggy segments?[0m
+    with NotoSerifLao-CondensedExtraBold.ttf
+
+    [1;35;107m  Rationale:                                                                [0m
+    [0;30;107m  This test heuristically detects outline segments which form a             [0m
+    [0;30;107m  particularly small angle, indicative of an outline error. This may cause  [0m
+    [0;30;107m  false positives in cases such as extreme ink traps, so should be regarded [0m
+    [0;30;107m  as advisory and backed up by manual inspection.                           [0m
+
+    * [1;30;103mWARN[0m: The following glyphs have jaggy segments:
+	* khmuGo-lao: B<<319.0,207.0>-<276.0,235.0>-<268.0,283.0>>/L<<268.0,283.0>--<268.0,117.0>> = 9.462322208025613 and khmuGo-lao: L<<268.0,449.0>--<268.0,323.0>>/B<<268.0,323.0>-<273.0,350.0>-<292.0,366.0>> = 10.491477012331599 [code: found-jaggy-segments]
+
+
+    Result: [1;30;103mWARN[0m
+
+
+Total:
+
+    [1;97;101mERROR[0m: 0
+    [1;91;107mFAIL[0m: 4
+    [1;30;103mWARN[0m: 3
+    [0;36;107mINFO[0m: 2
+    [0;34;107mSKIP[0m: 18
+    [0;32;107mPASS[0m: 50
+
+
+DONE!
+
+    [1;30;107mMeaning of check results:[0m
+
+    An [1;97;101mERROR[0m is something wrong with FontBakery itself, possibly a bug.
+    A [1;91;107mFAIL[0m is a problem with the font that must be fixed.
+    A [1;30;103mWARN[0m is something that you should consider addressing.
+    An [0;36;107mINFO[0m result simply prints something useful. Typically stats.
+    A [0;32;107mPASS[0m means the font looks good for the given checking routine.
+    And a [0;34;107mSKIP[0m happens when the check does not apply to the given font.
+
+    If you get [1;97;101mERROR[0ms, please help us improve the tool by reporting them at
+    [1;36;107mhttps://github.com/googlefonts/fontbakery/issues[0m
+
+    (but other kinds of bug reports and/or
+     feature requests are also always welcome, of course!)
+

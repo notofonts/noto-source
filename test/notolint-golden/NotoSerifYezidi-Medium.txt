@@ -1,0 +1,23 @@
+---
+Automatic testing for 'instance_ttf,NotoSerifYezidi-Medium.ttf', Version 1.000:
+E <name/family> The family is 'Noto Serif Yezidi Medium' but was expecting 'Noto Serif Yezidi Med'
+E <name/manufacturer> The manufacturer is 'Dalton Maag Ltd' but was expecting 'Monotype Imaging Inc.'
+E <name/description> The description is not set, but was expecting it to match '^Designed by Monotype design team.$'
+E <name/designer_url> The designer url is 'http://www.daltonmaag.com/' but was expecting 'http://www.monotype.com/studio'
+E <cmap/script_required> The following 11 characters are missing from the font: 0660..0669, 25CC.
+W <cmap/script_unexpected> The following 1 chars were not expected in the font: 06D4
+E <bounds/glyph/ymin> Real yMin for glyph 6 (peyezi) is -293, which is lower than the font's sTypoDescent (-292), resulting in clipping.
+E <bounds/glyph/ymin> Real yMin for glyph 16 (zalyezi) is -293, which is lower than the font's sTypoDescent (-292), resulting in clipping.
+E <bounds/glyph/ymin> Real yMin for glyph 25 (tayezi) is -293, which is lower than the font's sTypoDescent (-292), resulting in clipping.
+E <bounds/glyph/ymin> Real yMin for glyph 32 (qafyezi) is -293, which is lower than the font's sTypoDescent (-292), resulting in clipping.
+E <bounds/glyph/ymin> Real yMin for glyph 33 (kafyezi) is -293, which is lower than the font's sTypoDescent (-292), resulting in clipping.
+E <bounds/glyph/ymin> Real yMin for glyph 34 (khafyezi) is -293, which is lower than the font's sTypoDescent (-292), resulting in clipping.
+E <bounds/glyph/ymin> Real yMin for glyph 44 (yotyezi) is -293, which is lower than the font's sTypoDescent (-292), resulting in clipping.
+E <bounds/glyph/ymin> Real yMin for glyph 45 (etyezi) is -293, which is lower than the font's sTypoDescent (-292), resulting in clipping.
+E <bounds/glyph/ymin> Real yMin for glyph 46 (yotCircumyezi) is -293, which is lower than the font's sTypoDescent (-292), resulting in clipping.
+E <bounds/font/ymin> Real yMin is -293, but it should be greater than or equal to the value of Descent in 'hhea' table, which is -292.
+E <complex/gsub/missing> There is no GSUB table in the font.
+Found 16 errors.
+Found 1 warning.
+------
+Finished linting 1 file.
