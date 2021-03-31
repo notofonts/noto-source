@@ -20,7 +20,7 @@
 # <noto-font-name> e.g., NotoSansMarchen 
 # <from-dir> is a local directory where https://github.com/googlefonts/noto-source resides
 #     e.g. ~/github/googlefonts/noto-source
-# <to-dir> is a local directory where https://github.com/googlefonts/noto-fonts/tree/master/phaseIII_only resides
+# <to-dir> is a local directory where https://github.com/googlefonts/noto-fonts/tree/main/phaseIII_only resides
 #     e.g. ~/github/googlefonts/noto-fonts/phaseIII_only
 # 
 if (( $# != 3 )) then echo usage: "publish-one-noto-font.sh <noto-font-name> <from-dir> <to-dir>"; exit 1; fi
