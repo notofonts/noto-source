@@ -1,5 +1,5 @@
 {
-.appVersion = "1350";
+.appVersion = "1356";
 DisplayStrings = (
 "/uni066F.medi"
 );
@@ -1347,6 +1347,11 @@ name = liga;
 code = "# GSUB feature: Localized Forms
 # Lookups: 4
 
+  lookup locl_arabURD_arabKSH_1 {
+  # GSUB lookup 12, type 11 (Single)
+    sub [uni06F4 uni06F6 uni06F7] by [uni06F4.locl uni0666 uni06F7.locl];
+  } locl_arabURD_arabKSH_1;
+
   script latn; # Latin
   sub [uni0021 uni002E] by [uni0021.locl uni002E.locl];
 
@@ -1355,10 +1360,7 @@ code = "# GSUB feature: Localized Forms
     sub [uni06F6 uni06F7] by [uni0666 uni06F7.locl];
 
     language URD ; # Urdu
-	lookup locl_arabURD_arabKSH_1 {
-  		sub [uni06F4 uni06F6 uni06F7] by [uni06F4.locl uni0666 uni06F7.locl];
-	} locl_arabURD_arabKSH_1;
-
+    lookup locl_arabURD_arabKSH_1;
 
     language KSH ; # Kashmiri
     lookup locl_arabURD_arabKSH_1;
