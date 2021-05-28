@@ -357,6 +357,10 @@ code = "lookup ThaiDescenders {\012	sub @ThaiDescenders' @ThaiBelowMarks by @Tha
 name = calt;
 },
 {
+code = "# Automatic Code End\012";
+name = mark;
+},
+{
 code = "# Automatic Code End\012	\012lookup ContextualMarkPositions { ### Tonemarks are shifted slightly left when followed by ascending vowel signs;\012	lookupflag UseMarkFilteringSet @ThaiAboveMarks;\012	pos maiEk-thai' @ThaiAscendingVowels <-30 0 0 0>;\012	pos maiTho-thai' @ThaiAscendingVowels <-60 0 0 0>;\012	pos maiTri-thai' @ThaiAscendingVowels <-80 0 0 0>;\012	pos thanthakhat-thai' @ThaiAscendingVowels <-60 0 0 0>;\012		\012	### This is an alternative solution, but we prefer the above;\012	### pos maiTri-thai @ThaiAscendingVowels' <60 0 60 0>;\012	\012	} ContextualMarkPositions;\012	\012lookup ShiftSaraUe { ### SaraUe appears too far left on certain consonants, here we make adjustments;\012	pos @SpecialConsonants saraUe-thai' <15 0 0 0>;\012	pos [thoThong-thai roRua-thai] saraUe-thai' <30 0 0 0>;\012	} ShiftSaraUe;";
 name = mkmk;
 },
