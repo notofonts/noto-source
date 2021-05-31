@@ -1,0 +1,113 @@
+table GDEF {
+    GlyphClassDef [], [], [], [];
+} GDEF;
+
+@class1 = [u109A7 u109A8 u109AA u109AB u109AE u109AF u109B0 u109B2 u109B7];
+
+lookup SingleSubstitution3 {
+    lookupflag RightToLeft;
+    ;
+    # Original source: 2 
+    sub u109A2 by u109A2.alt1;
+} SingleSubstitution3;
+
+lookup ChainedContextualGSUB1 {
+    lookupflag RightToLeft;
+    ;
+    sub @class1 u109A2' lookup SingleSubstitution3;
+} ChainedContextualGSUB1;
+
+lookup SingleSubstitution4 {
+    lookupflag RightToLeft;
+    ;
+    # Original source: 3 
+    sub u109A2 by u109A2.alt2;
+} SingleSubstitution4;
+
+lookup ChainedContextualGSUB2 {
+    lookupflag RightToLeft;
+    ;
+    # Original source: 1 
+    sub u109A4 u109A2' lookup SingleSubstitution4;
+} ChainedContextualGSUB2;
+
+lookup PairPositioning1 {
+    lookupflag RightToLeft;
+    ;
+    pos u109A7 u109A2.alt1 <-110 0 -110 0>;
+    pos u109A8 u109A2.alt1 <-50 0 -50 0>;
+    pos u109AA u109A2.alt1 <-100 0 -100 0>;
+    pos u109AE u109A2.alt1 <-20 0 -20 0>;
+    pos u109AF u109A2.alt1 <-40 0 -40 0>;
+    pos u109B2 u109A2.alt1 <-40 0 -40 0>;
+    pos u109B5 u109A2.alt1 <-60 0 -60 0>;
+    pos u109B7 u109A2.alt1 <-100 0 -100 0>;
+} PairPositioning1;
+
+lookup PairPositioning2 {
+    lookupflag RightToLeft;
+    ;
+    # Original source: 1 
+    pos u109A5 u109A2 <-100 0 -100 0>;
+    pos u109A6 u109A2 <-85 0 -85 0>;
+    pos u109A9 u109A2 <-120 0 -120 0>;
+    pos u109AC u109A2 <-60 0 -60 0>;
+    pos u109AD u109A2 <-30 0 -30 0>;
+    pos u109B1 u109A2 <-50 0 -50 0>;
+    pos u109B3 u109A2 <-120 0 -120 0>;
+    pos u109B4 u109A2 <-60 0 -60 0>;
+    pos u109B5 u109A2 <-120 0 -120 0>;
+    pos u109B6 u109A2 <-55 0 -55 0>;
+} PairPositioning2;
+
+lookup PairPositioning3 {
+    lookupflag 0;
+    ;
+    # Original source: 2 
+    pos u109A0 <NULL> u109A8 <50 0 50 0>;
+    pos u109A0 <NULL> u109AE <100 0 100 0>;
+    pos u109A0 <NULL> u109AF <130 0 130 0>;
+    pos u109A0 <NULL> u109B2 <20 0 20 0>;
+    pos u109A0 <NULL> u109B4 <20 0 20 0>;
+    pos u109A7 <NULL> u109A8 <50 0 50 0>;
+    pos u109A7 <NULL> u109AE <90 0 90 0>;
+    pos u109A7 <NULL> u109AF <130 0 130 0>;
+    pos u109A7 <NULL> u109B2 <20 0 20 0>;
+    pos u109A7 <NULL> u109B4 <30 0 30 0>;
+    pos u109A9 <NULL> u109A8 <20 0 20 0>;
+    pos u109A9 <NULL> u109AE <130 0 130 0>;
+    pos u109A9 <NULL> u109AF <130 0 130 0>;
+    pos u109A9 <NULL> u109B2 <20 0 0 0>;
+    pos u109A9 <NULL> u109B4 <20 0 20 0>;
+    pos u109AA <NULL> u109A8 <50 0 50 0>;
+    pos u109AA <NULL> u109AE <130 0 130 0>;
+    pos u109AA <NULL> u109AF <160 0 160 0>;
+    pos u109AA <NULL> u109B2 <50 0 50 0>;
+    pos u109AA <NULL> u109B4 <40 0 40 0>;
+    pos u109B2 <NULL> u109A8 <10 0 10 0>;
+    pos u109B2 <NULL> u109AE <140 0 140 0>;
+    pos u109B2 <NULL> u109AF <30 0 30 0>;
+    pos u109B2 <NULL> u109B2 <5 0 5 0>;
+    pos u109B2 <NULL> u109B4 <5 0 5 0>;
+} PairPositioning3;
+
+feature ccmp {
+    lookup ChainedContextualGSUB1;
+    lookup ChainedContextualGSUB2;
+} ccmp;
+
+feature dist {
+    lookup PairPositioning1;
+    lookup PairPositioning2;
+    lookup PairPositioning3;
+} dist;
+
+    @GDEF_Base = [u109A0 u109A1 u109A2 u109A3 u109A4 u109A5 u109A6 u109A7 u109A8 u109A9 u109AA u109AB u109AC u109AD u109AE u109AF u109B0 u109B1 u109B2 u109B3 u109B4 u109B5 u109B6 u109B7 u109BC u109BD u109BE u109BF u109C0 u109C1 u109C2 u109C3 u109C4 u109C5 u109C6 u109C7 u109C8 u109C9 u109CA u109CB u109CC u109CD u109CE u109CF u109D2 u109D3 u109D4 u109D5 u109D6 u109D7 u109D8 u109D9 u109DA u109DB u109DC u109DD u109DE u109DF u109E0 u109E1 u109E2 u109E3 u109E4 u109E5 u109E6 u109E7 u109E8 u109E9 u109EA u109EB u109EC u109ED u109EE u109EF u109F0 u109F1 u109F2 u109F3 u109F4 u109F5 u109F6 u109F7 u109F8 u109F9 u109FA u109FB u109FC u109FD u109FE u109FF u109A2.alt1 u109A2.alt2];
+    @GDEF_Ligature = [];
+    @GDEF_Mark = [];
+    @GDEF_Component = [];
+    table GDEF {
+        GlyphClassDef @GDEF_Base, @GDEF_Ligature, @GDEF_Mark, @GDEF_Component;
+} GDEF;
+
+

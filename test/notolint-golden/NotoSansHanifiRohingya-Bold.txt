@@ -1,0 +1,21 @@
+---
+Automatic testing for 'instance_ttf,NotoSansHanifiRohingya-Bold.ttf', Version 2.100:
+W <name/unused> Name table has record #256: "Wide Tana Sign"
+W <name/unused> Name table has record #257: "Alternate digit zero"
+E <name/family> The family is 'Noto Sans Hanifi Rohingya' but was expecting 'Noto Sans HanifiRohg'
+E <name/manufacturer> The manufacturer is 'Google LLC' but was expecting 'Monotype Imaging Inc.'
+E <name/designer> The designer is 'Monotype Design Team and DaltonMaag' but was expecting 'Monotype Design Team'
+E <name/description> The description is 'Designed by Monotype Design Team and DaltonMaag.' but was expecting it to match '^Designed by Monotype design team.$'
+E <name/license> The license is not set, but was expecting 'This Font Software is licensed under the SIL Open Font License, Version 1.1. This Font Software is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the SIL Open Font License for the specific language, permissions and limitations governing your use of this Font Software.'
+E <name/license_url> The license_url is not set, but was expecting 'http://scripts.sil.org/OFL'
+E <name/preferred_family> The preferred family is not set, but was expecting 'Noto Sans Hanifi Rohingya'
+W <cmap/script_unexpected> The following 5 chars were not expected in the font: 00AB, 00BB, 0660, 200C..200D
+E <head/os2/panose/family> Panose family value is 0 but expected 2
+E <head/os2/panose/proportion> Panose proportion value is 0 (any) but expected 2-4
+E <bounds/glyph/ymax> Real yMax for glyph 165 (tahala-rohg) is 1102, which is higher than the font's sTypoAscent (1069), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 166 (harbahay-rohg) is 1089, which is higher than the font's sTypoAscent (1069), resulting in clipping.
+E <bounds/font/ymax> Real yMax 1102, but it should be less than or equal to the value of Ascent in 'hhea' table, which is 1069.
+Found 12 errors.
+Found 3 warnings.
+------
+Finished linting 1 file.

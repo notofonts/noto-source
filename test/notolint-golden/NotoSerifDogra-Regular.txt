@@ -1,0 +1,21 @@
+---
+Automatic testing for 'instance_ttf,NotoSerifDogra-Regular.ttf', Version 1.003:
+E <name/manufacturer> The manufacturer is 'Ek Type' but was expecting 'Monotype Imaging Inc.'
+E <name/designer> The designer is 'Ek Type' but was expecting 'Monotype Design Team'
+E <name/description> The description is 'Designed by Ek Type' but was expecting it to match '^Designed by Monotype design team.$'
+E <name/designer_url> The designer url is 'http://www.ektype.in' but was expecting 'http://www.monotype.com/studio'
+E <cmap/script_required> The following 20 characters are missing from the font: 0966..096F, A830..A839.
+W <cmap/script_unexpected> The following 2 chars were not expected in the font: 200C..200D
+E <head/os2/panose/family> Panose family value is 0 but expected 2
+E <head/os2/panose/proportion> Panose proportion value is 0 (any) but expected 2-4
+E <bounds/glyph/ymax> Real yMax for glyph 117 (matraAuAnusvara.old.dogra) is 1214, which is higher than the font's sTypoAscent (1130), resulting in clipping.
+E <bounds/glyph/ymin> Real yMin for glyph 118 (NuktamatraU.dogra) is -445, which is lower than the font's sTypoDescent (-364), resulting in clipping.
+E <bounds/glyph/ymin> Real yMin for glyph 119 (NuktamatraUu.dogra) is -437, which is lower than the font's sTypoDescent (-364), resulting in clipping.
+E <bounds/glyph/ymin> Real yMin for glyph 121 (NuktamatraUu.old.dogra) is -434, which is lower than the font's sTypoDescent (-364), resulting in clipping.
+E <bounds/font/ymax> Real yMax 1214, but it should be less than or equal to the value of Ascent in 'hhea' table, which is 1130.
+E <bounds/font/ymin> Real yMin is -445, but it should be greater than or equal to the value of Descent in 'hhea' table, which is -364.
+E <reachable> The following 15 glyphs are unreachable in the font: Avagraha.dogra (136), Eight.dogra (134), Five.dogra (131), Four.dogra (130), Nine.dogra (135), One.dogra (127), Seven.dogra (133), Six.dogra (132), Three.dogra (129), Two.dogra (128), Zero.dogra (126), vowelL.dogra (122), vowelLl.dogra (123), vowelR.dogra (124), vowelRr.dogra (125).
+Found 14 errors.
+Found 1 warning.
+------
+Finished linting 1 file.

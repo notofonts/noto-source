@@ -1,0 +1,198 @@
+Start ... running 77 individual check executions.
+ >> [1;35;107mcom.google.fonts/check/unicode_range_bits[0m
+    [0;36;107mEnsure UnicodeRange bits are properly set.[0m
+    with NotoSansNushu-Regular.ttf
+
+    [1;35;107m  Rationale:                                                                [0m
+    [0;30;107m  When the UnicodeRange bits on the OS/2 table are not properly set, some   [0m
+    [0;30;107m  programs running on Windows may not recognize the font and use a system   [0m
+    [0;30;107m  fallback font instead. For that reason, this check calculates the proper  [0m
+    [0;30;107m  settings by inspecting the glyphs declared on the cmap table and then     [0m
+    [0;30;107m  ensures that their corresponding ranges are enabled.                      [0m
+
+    * [1;30;103mWARN[0m: UnicodeRange bit 31 "General Punctuation" should be 0 because cmap has none of the 240 codepoints in this range. [code: bad-range-bit]
+    * [1;30;103mWARN[0m: UnicodeRange bit 45 "Geometric Shapes" should be 0 because cmap has none of the 96 codepoints in this range. [code: bad-range-bit]
+    * [1;30;103mWARN[0m: UnicodeRange bit 57 "Non-Plane 0 *" should be 0 because cmap has none of the 2048 codepoints in this range. [code: bad-range-bit]
+
+
+    Result: [1;30;103mWARN[0m
+
+ >> [1;35;107mcom.google.fonts/check/whitespace_glyphnames[0m
+    [0;36;107mFont has **proper** whitespace glyph names?[0m
+    with NotoSansNushu-Regular.ttf
+
+    [1;35;107m  Rationale:                                                                [0m
+    [0;30;107m  This check enforces adherence to recommended whitespace (codepoints 0020  [0m
+    [0;30;107m  and 00A0) glyph names according to the Adobe Glyph List.                  [0m
+
+    * [1;30;103mWARN[0m: Glyph 0x00A0 is called "nbspace": Change to "uni00A0" [code: not-recommended-00a0]
+
+
+    Result: [1;30;103mWARN[0m
+
+ >> [1;35;107mcom.google.fonts/check/required_tables[0m
+    [0;36;107mFont contains all required tables?[0m
+    with NotoSansNushu-Regular.ttf
+
+    [1;35;107m  Rationale:                                                                [0m
+    [0;30;107m  Depending on the typeface and coverage of a font, certain tables are      [0m
+    [0;30;107m  recommended for optimum quality. For example, the performance of a        [0m
+    [0;30;107m  non-linear font is improved if the VDMX, LTSH, and hdmx tables are        [0m
+    [0;30;107m  present. Non-monospaced Latin fonts should have a kern table. A gasp      [0m
+    [0;30;107m  table is necessary if a designer wants to influence the sizes at which    [0m
+    [0;30;107m  grayscaling is used under Windows. A DSIG table containing a digital      [0m
+    [0;30;107m  signature helps ensure the integrity of the font file. Etc.               [0m
+
+    * [0;36;107mINFO[0m: This font contains the following optional tables [loca]
+
+
+    Result: [0;36;107mINFO[0m
+
+ >> [1;35;107mcom.google.fonts/check/superfamily/list[0m
+    [0;36;107mList all superfamily filepaths[0m
+    with NotoSansNushu-Regular.ttf
+
+    [1;35;107m  Rationale:                                                                [0m
+    [0;30;107m  This is a merely informative check that lists all sibling families        [0m
+    [0;30;107m  detected by fontbakery.                                                   [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  Only the fontfiles in these directories will be considered in             [0m
+    [0;30;107m  superfamily-level checks.                                                 [0m
+
+    * [0;36;107mINFO[0m: . [code: family-path]
+
+
+    Result: [0;36;107mINFO[0m
+
+ >> [1;35;107mcom.google.fonts/check/monospace[0m
+    [0;36;107mChecking correctness of monospaced metadata.[0m
+    with NotoSansNushu-Regular.ttf
+
+    [1;35;107m  Rationale:                                                                [0m
+    [0;30;107m  There are various metadata in the OpenType spec to specify if a font is   [0m
+    [0;30;107m  monospaced or not. If the font is not truly monospaced, then no           [0m
+    [0;30;107m  monospaced metadata should be set (as sometimes they mistakenly are...)   [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  Requirements for monospace fonts:                                         [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  * post.isFixedPitch - "Set to 0 if the font is proportionally spaced,     [0m
+    [0;30;107m  non-zero if the font is not proportionally spaced (monospaced)"           [0m
+    [0;30;107m    www.microsoft.com/typography/otspec/post.htm                            [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  * hhea.advanceWidthMax must be correct, meaning no glyph's width value is [0m
+    [0;30;107m  greater.                                                                  [0m
+    [0;30;107m    www.microsoft.com/typography/otspec/hhea.htm                            [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  * OS/2.panose.bProportion must be set to 9 (monospace). Spec says: "The   [0m
+    [0;30;107m  PANOSE definition contains ten digits each of which currently describes   [0m
+    [0;30;107m  up to sixteen variations. Windows uses bFamilyType, bSerifStyle and       [0m
+    [0;30;107m  bProportion in the font mapper to determine family type. It also uses     [0m
+    [0;30;107m  bProportion to determine if the font is monospaced."                      [0m
+    [0;30;107m    www.microsoft.com/typography/otspec/os2.htm#pan                         [0m
+    [0;30;107m    monotypecom-test.monotype.de/services/pan2                              [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  * OS/2.xAvgCharWidth must be set accurately.                              [0m
+    [0;30;107m    "OS/2.xAvgCharWidth is used when rendering monospaced fonts, at least   [0m
+    [0;30;107m  by Windows GDI"                                                           [0m
+    [0;30;107m    http://typedrawers.com/discussion/comment/15397/#Comment_15397          [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  Also we should report an error for glyphs not of average width.           [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  Please also note:                                                         [0m
+    [0;30;107m  Thomas Phinney told us that a few years ago (as of December 2019), if you [0m
+    [0;30;107m  gave a font a monospace flag in Panose, Microsoft Word would ignore the   [0m
+    [0;30;107m  actual advance widths and treat it as monospaced. Source:                 [0m
+    [0;30;107m  https://typedrawers.com/discussion/comment/45140/#Comment_45140           [0m
+
+    * [1;91;107mFAIL[0m: On monospaced fonts, the value of post.isFixedPitch must be set to a non-zero value (meaning 'fixed width monospaced'), but got 0 instead. [code: mono-bad-post-isFixedPitch]
+    * [1;91;107mFAIL[0m: On monospaced fonts, the value of OS/2.panose.bProportion must be set to 9 (proportion: monospaced), but got 2 instead. [code: mono-bad-panose-proportion]
+    * [1;30;103mWARN[0m: Font is monospaced but 394 glyphs (98.01%) have a different width. You should check the widths of: ['CR', 'space', 'nbspace', 'u16FE1', 'u1B170', 'u1B171', 'u1B172', 'u1B173', 'u1B174', 'u1B175', 'u1B176', 'u1B177', 'u1B178', 'u1B179', 'u1B17A', 'u1B17B', 'u1B17C', 'u1B17D', 'u1B17E', 'u1B17F', 'u1B180', 'u1B181', 'u1B182', 'u1B183', 'u1B184', 'u1B185', 'u1B186', 'u1B187', 'u1B188', 'u1B189', 'u1B18A', 'u1B18B', 'u1B18C', 'u1B18D', 'u1B18E', 'u1B18F', 'u1B190', 'u1B191', 'u1B192', 'u1B193', 'u1B194', 'u1B195', 'u1B196', 'u1B197', 'u1B198', 'u1B199', 'u1B19A', 'u1B19B', 'u1B19C', 'u1B19D', 'u1B19E', 'u1B19F', 'u1B1A0', 'u1B1A1', 'u1B1A2', 'u1B1A3', 'u1B1A4', 'u1B1A5', 'u1B1A6', 'u1B1A7', 'u1B1A8', 'u1B1A9', 'u1B1AA', 'u1B1AB', 'u1B1AC', 'u1B1AD', 'u1B1AE', 'u1B1AF', 'u1B1B0', 'u1B1B1', 'u1B1B2', 'u1B1B3', 'u1B1B4', 'u1B1B5', 'u1B1B6', 'u1B1B7', 'u1B1B8', 'u1B1B9', 'u1B1BA', 'u1B1BB', 'u1B1BC', 'u1B1BD', 'u1B1BE', 'u1B1BF', 'u1B1C0', 'u1B1C1', 'u1B1C2', 'u1B1C3', 'u1B1C4', 'u1B1C5', 'u1B1C6', 'u1B1C7', 'u1B1C8', 'u1B1C9', 'u1B1CA', 'u1B1CB', 'u1B1CC', 'u1B1CD', 'u1B1CE', 'u1B1CF', 'u1B1D0', 'u1B1D1', 'u1B1D2', 'u1B1D3', 'u1B1D4', 'u1B1D5', 'u1B1D6', 'u1B1D7', 'u1B1D8', 'u1B1D9', 'u1B1DA', 'u1B1DB', 'u1B1DC', 'u1B1DD', 'u1B1DE', 'u1B1DF', 'u1B1E0', 'u1B1E1', 'u1B1E2', 'u1B1E3', 'u1B1E4', 'u1B1E5', 'u1B1E6', 'u1B1E7', 'u1B1E8', 'u1B1E9', 'u1B1EA', 'u1B1EB', 'u1B1EC', 'u1B1ED', 'u1B1EE', 'u1B1EF', 'u1B1F0', 'u1B1F1', 'u1B1F2', 'u1B1F3', 'u1B1F4', 'u1B1F5', 'u1B1F6', 'u1B1F7', 'u1B1F8', 'u1B1F9', 'u1B1FA', 'u1B1FB', 'u1B1FC', 'u1B1FD', 'u1B1FE', 'u1B1FF', 'u1B200', 'u1B201', 'u1B202', 'u1B203', 'u1B204', 'u1B205', 'u1B206', 'u1B207', 'u1B208', 'u1B209', 'u1B20A', 'u1B20B', 'u1B20C', 'u1B20D', 'u1B20E', 'u1B20F', 'u1B210', 'u1B211', 'u1B212', 'u1B213', 'u1B214', 'u1B215', 'u1B216', 'u1B217', 'u1B218', 'u1B219', 'u1B21A', 'u1B21B', 'u1B21C', 'u1B21D', 'u1B21E', 'u1B21F', 'u1B220', 'u1B221', 'u1B222', 'u1B223', 'u1B224', 'u1B225', 'u1B226', 'u1B227', 'u1B228', 'u1B229', 'u1B22A', 'u1B22B', 'u1B22C', 'u1B22D', 'u1B22E', 'u1B22F', 'u1B230', 'u1B232', 'u1B233', 'u1B235', 'u1B236', 'u1B237', 'u1B238', 'u1B239', 'u1B23A', 'u1B23B', 'u1B23C', 'u1B23D', 'u1B23E', 'u1B23F', 'u1B240', 'u1B241', 'u1B242', 'u1B243', 'u1B244', 'u1B245', 'u1B246', 'u1B247', 'u1B248', 'u1B249', 'u1B24A', 'u1B24B', 'u1B24C', 'u1B24D', 'u1B24E', 'u1B24F', 'u1B250', 'u1B251', 'u1B252', 'u1B253', 'u1B254', 'u1B255', 'u1B256', 'u1B257', 'u1B258', 'u1B259', 'u1B25A', 'u1B25B', 'u1B25D', 'u1B25E', 'u1B25F', 'u1B260', 'u1B261', 'u1B262', 'u1B263', 'u1B264', 'u1B265', 'u1B266', 'u1B267', 'u1B268', 'u1B269', 'u1B26A', 'u1B26B', 'u1B26C', 'u1B26D', 'u1B26E', 'u1B26F', 'u1B270', 'u1B271', 'u1B272', 'u1B273', 'u1B274', 'u1B275', 'u1B276', 'u1B277', 'u1B278', 'u1B279', 'u1B27A', 'u1B27B', 'u1B27C', 'u1B27D', 'u1B27E', 'u1B27F', 'u1B280', 'u1B281', 'u1B282', 'u1B283', 'u1B284', 'u1B285', 'u1B286', 'u1B287', 'u1B288', 'u1B289', 'u1B28A', 'u1B28B', 'u1B28C', 'u1B28D', 'u1B28E', 'u1B28F', 'u1B290', 'u1B291', 'u1B292', 'u1B293', 'u1B294', 'u1B295', 'u1B296', 'u1B297', 'u1B298', 'u1B299', 'u1B29A', 'u1B29B', 'u1B29C', 'u1B29D', 'u1B29E', 'u1B29F', 'u1B2A0', 'u1B2A1', 'u1B2A2', 'u1B2A3', 'u1B2A4', 'u1B2A6', 'u1B2A7', 'u1B2A8', 'u1B2A9', 'u1B2AA', 'u1B2AB', 'u1B2AC', 'u1B2AD', 'u1B2AE', 'u1B2AF', 'u1B2B0', 'u1B2B1', 'u1B2B2', 'u1B2B4', 'u1B2B5', 'u1B2B6', 'u1B2B7', 'u1B2B8', 'u1B2B9', 'u1B2BA', 'u1B2BC', 'u1B2BD', 'u1B2BE', 'u1B2BF', 'u1B2C0', 'u1B2C1', 'u1B2C2', 'u1B2C3', 'u1B2C4', 'u1B2C5', 'u1B2C6', 'u1B2C7', 'u1B2C8', 'u1B2C9', 'u1B2CA', 'u1B2CB', 'u1B2CC', 'u1B2CD', 'u1B2CE', 'u1B2CF', 'u1B2D0', 'u1B2D1', 'u1B2D2', 'u1B2D3', 'u1B2D4', 'u1B2D5', 'u1B2D6', 'u1B2D7', 'u1B2D8', 'u1B2D9', 'u1B2DA', 'u1B2DB', 'u1B2DC', 'u1B2DD', 'u1B2DE', 'u1B2DF', 'u1B2E0', 'u1B2E1', 'u1B2E2', 'u1B2E3', 'u1B2E4', 'u1B2E5', 'u1B2E6', 'u1B2E7', 'u1B2E8', 'u1B2E9', 'u1B2EA', 'u1B2EB', 'u1B2EC', 'u1B2ED', 'u1B2EE', 'u1B2EF', 'u1B2F0', 'u1B2F1', 'u1B2F2', 'u1B2F3', 'u1B2F4', 'u1B2F5', 'u1B2F6', 'u1B2F7', 'u1B2F8', 'u1B2F9', 'u1B2FA', 'u1B2FB'] [code: mono-outliers]
+
+
+    Result: [1;91;107mFAIL[0m
+
+ >> [1;35;107mcom.google.fonts/check/dsig[0m
+    [0;36;107mDoes the font have a DSIG table?[0m
+    with NotoSansNushu-Regular.ttf
+
+    [1;35;107m  Rationale:                                                                [0m
+    [0;30;107m  Microsoft Office 2013 and below products expect fonts to have a digital   [0m
+    [0;30;107m  signature declared in a DSIG table in order to implement OpenType         [0m
+    [0;30;107m  features. The EOL date for Microsoft Office 2013 products is 4/11/2023.   [0m
+    [0;30;107m  This issue does not impact Microsoft Office 2016 and above products.      [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  This checks verifies that this signature is available in the font.        [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  A fake signature is enough to address this issue. If needed, a dummy      [0m
+    [0;30;107m  table can be added to the font with the `gftools fix-dsig` script         [0m
+    [0;30;107m  available at https://github.com/googlefonts/gftools                       [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  Reference: https://github.com/googlefonts/fontbakery/issues/1845          [0m
+
+    * [1;91;107mFAIL[0m: This font lacks a digital signature (DSIG table). Some applications may require one (even if only a dummy placeholder) in order to work properly. You can add a DSIG table by running the `gftools fix-dsig` script. [code: lacks-signature]
+
+
+    Result: [1;91;107mFAIL[0m
+
+ >> [1;35;107mcom.google.fonts/check/gpos_kerning_info[0m
+    [0;36;107mDoes GPOS table have kerning information? This check skips monospaced fonts as defined by post.isFixedPitch value[0m
+    with NotoSansNushu-Regular.ttf
+
+    * [1;30;103mWARN[0m: GPOS table lacks kerning information. [code: lacks-kern-info]
+
+
+    Result: [1;30;103mWARN[0m
+
+ >> [1;35;107mcom.google.fonts/check/outline_jaggy_segments[0m
+    [0;36;107mDo outlines contain any jaggy segments?[0m
+    with NotoSansNushu-Regular.ttf
+
+    [1;35;107m  Rationale:                                                                [0m
+    [0;30;107m  This test heuristically detects outline segments which form a             [0m
+    [0;30;107m  particularly small angle, indicative of an outline error. This may cause  [0m
+    [0;30;107m  false positives in cases such as extreme ink traps, so should be regarded [0m
+    [0;30;107m  as advisory and backed up by manual inspection.                           [0m
+
+    * [1;30;103mWARN[0m: The following glyphs have jaggy segments:
+	* u1B1B9: L<<206.0,45.0>--<206.0,45.0>>/L<<206.0,45.0>--<201.0,44.0>> = 11.309932474020195
+	* u1B1BE: L<<206.0,45.0>--<206.0,45.0>>/L<<206.0,45.0>--<201.0,44.0>> = 11.309932474020195
+	* u1B1DF: L<<206.0,45.0>--<206.0,45.0>>/L<<206.0,45.0>--<201.0,44.0>> = 11.309932474020195
+	* u1B1E5: L<<206.0,45.0>--<206.0,45.0>>/L<<206.0,45.0>--<201.0,44.0>> = 11.309932474020195
+	* u1B200: L<<206.0,45.0>--<206.0,45.0>>/L<<206.0,45.0>--<201.0,44.0>> = 11.309932474020195
+	* u1B21C: L<<206.0,45.0>--<206.0,45.0>>/L<<206.0,45.0>--<201.0,44.0>> = 11.309932474020195
+	* u1B21F: L<<206.0,45.0>--<206.0,45.0>>/L<<206.0,45.0>--<201.0,44.0>> = 11.309932474020195
+	* u1B22A: L<<206.0,45.0>--<206.0,45.0>>/L<<206.0,45.0>--<201.0,44.0>> = 11.309932474020195
+	* u1B23A: L<<206.0,45.0>--<206.0,45.0>>/L<<206.0,45.0>--<201.0,44.0>> = 11.309932474020195
+	* u1B23B: L<<206.0,45.0>--<206.0,45.0>>/L<<206.0,45.0>--<201.0,44.0>> = 11.309932474020195 and 13 more. [code: found-jaggy-segments]
+
+
+    Result: [1;30;103mWARN[0m
+
+
+Total:
+
+    [1;97;101mERROR[0m: 0
+    [1;91;107mFAIL[0m: 2
+    [1;30;103mWARN[0m: 4
+    [0;36;107mINFO[0m: 2
+    [0;34;107mSKIP[0m: 20
+    [0;32;107mPASS[0m: 49
+
+
+DONE!
+
+    [1;30;107mMeaning of check results:[0m
+
+    An [1;97;101mERROR[0m is something wrong with FontBakery itself, possibly a bug.
+    A [1;91;107mFAIL[0m is a problem with the font that must be fixed.
+    A [1;30;103mWARN[0m is something that you should consider addressing.
+    An [0;36;107mINFO[0m result simply prints something useful. Typically stats.
+    A [0;32;107mPASS[0m means the font looks good for the given checking routine.
+    And a [0;34;107mSKIP[0m happens when the check does not apply to the given font.
+
+    If you get [1;97;101mERROR[0ms, please help us improve the tool by reporting them at
+    [1;36;107mhttps://github.com/googlefonts/fontbakery/issues[0m
+
+    (but other kinds of bug reports and/or
+     feature requests are also always welcome, of course!)
+

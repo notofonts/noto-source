@@ -1,0 +1,29 @@
+---
+Automatic testing for 'instance_ttf,NotoSansDisplay-Italic.ttf', Version 2.003:
+E <name/family> The family is 'Noto Sans Display' but was expecting 'Noto Sans Disp'
+E <name/preferred_family> The preferred family is not set, but was expecting 'Noto Sans Display'
+E <cmap/variants> Font contains 1 characters with standard variants, but has no variation selector cmap table (0030).
+E <bounds/glyph/ymax> Real yMax for glyph 933 (uni01D9) is 1084, which is higher than the font's sTypoAscent (1069), resulting in clipping.
+E <bounds/glyph/ymin> Real yMin for glyph 2491 (scriptg) is -389, which is lower than the font's sTypoDescent (-293), resulting in clipping.
+E <bounds/glyph/ymin> Real yMin for glyph 2653 (uni2E10) is -328, which is lower than the font's sTypoDescent (-293), resulting in clipping.
+E <bounds/glyph/ymin> Real yMin for glyph 2681 (uni2E11) is -328, which is lower than the font's sTypoDescent (-293), resulting in clipping.
+E <bounds/glyph/ymin> Real yMin for glyph 2714 (uni2E3E) is -323, which is lower than the font's sTypoDescent (-293), resulting in clipping.
+E <bounds/glyph/ymin> Real yMin for glyph 3041 (uni0329) is -304, which is lower than the font's sTypoDescent (-293), resulting in clipping.
+E <bounds/glyph/ymin> Real yMin for glyph 3218 (uniA670) is -297, which is lower than the font's sTypoDescent (-293), resulting in clipping.
+E <bounds/glyph/ymin> Real yMin for glyph 3220 (uniA672) is -380, which is lower than the font's sTypoDescent (-293), resulting in clipping.
+E <bounds/font/ymax> Real yMax 1084, but it should be less than or equal to the value of Ascent in 'hhea' table, which is 1069.
+E <bounds/font/ymin> Real yMin is -389, but it should be greater than or equal to the value of Descent in 'hhea' table, which is -293.
+E <paths/intersection> The glyph 'xi' has intersecting outlines: intersection ((215.5, 661.5), (250.0, 686.0), (292.0, 697.0)) and ((292.0, 697.0), (270.0, 691.0), (248.0, 688.5))
+E <paths/intersection> The glyph 'uniA746' has intersecting outlines: start and end segments match: (128.0, 429.0)
+E <paths/intersection> The glyph 'uni2C78' has intersecting outlines: start and end segments match: (388.0, 103.0)
+E <paths/intersection> The glyph 'uniA747' has intersecting outlines: start and end segments match: (109.0, 393.0)
+E <paths/intersection> The glyph 'uniA657' has intersecting outlines: start and end segments match: (422.0, 289.0)
+E <paths/intersection> The glyph 'uniA681' has intersecting outlines: start and end segments match: (311.0, 466.0)
+E <paths/intersection> The glyph 'uni052F' has intersecting outlines: start and end segments match: (401.0, 70.0)
+E <paths/intersection> The glyph 'uniA794' has intersecting outlines: start and end segments match: (369.0, 68.0)
+E <paths/intersection> The glyph 'uniAB38' has intersecting outlines: start and end segments match: (261.0, 482.0)
+E <paths/intersection> The glyph 'uni2E19' has intersecting outlines: intersection ((288.5, 97.5), (267.0, 97.0), (257.0, 98.0)) and ((257.0, 98.0), (258.0, 98.0), (249.5, 83.0))
+E <paths/intersection> The glyph 'uni20B7' has intersecting outlines: start and end segments match: (121.0, 169.0)
+Found 24 errors.
+------
+Finished linting 1 file.

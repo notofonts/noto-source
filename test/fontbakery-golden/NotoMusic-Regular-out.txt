@@ -1,0 +1,284 @@
+Start ... running 77 individual check executions.
+ >> [1;35;107mcom.google.fonts/check/unicode_range_bits[0m
+    [0;36;107mEnsure UnicodeRange bits are properly set.[0m
+    with NotoMusic-Regular.ttf
+
+    [1;35;107m  Rationale:                                                                [0m
+    [0;30;107m  When the UnicodeRange bits on the OS/2 table are not properly set, some   [0m
+    [0;30;107m  programs running on Windows may not recognize the font and use a system   [0m
+    [0;30;107m  fallback font instead. For that reason, this check calculates the proper  [0m
+    [0;30;107m  settings by inspecting the glyphs declared on the cmap table and then     [0m
+    [0;30;107m  ensures that their corresponding ranges are enabled.                      [0m
+
+    * [1;30;103mWARN[0m: UnicodeRange bit 57 "Non-Plane 0 *" should be 0 because cmap has none of the 2048 codepoints in this range. [code: bad-range-bit]
+
+
+    Result: [1;30;103mWARN[0m
+
+ >> [1;35;107mcom.google.fonts/check/family/win_ascent_and_descent[0m
+    [0;36;107mChecking OS/2 usWinAscent & usWinDescent.[0m
+    with NotoMusic-Regular.ttf
+
+    [1;35;107m  Rationale:                                                                [0m
+    [0;30;107m  A font's winAscent and winDescent values should be greater than the head  [0m
+    [0;30;107m  table's yMax, abs(yMin) values. If they are less than these values,       [0m
+    [0;30;107m  clipping can occur on Windows platforms                                   [0m
+    [0;30;107m  (https://github.com/RedHatBrand/Overpass/issues/33).                      [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  If the font includes tall/deep writing systems such as Arabic or          [0m
+    [0;30;107m  Devanagari, the winAscent and winDescent can be greater than the yMax and [0m
+    [0;30;107m  abs(yMin) to accommodate vowel marks.                                     [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  When the win Metrics are significantly greater than the upm, the          [0m
+    [0;30;107m  linespacing can appear too loose. To counteract this, enabling the OS/2   [0m
+    [0;30;107m  fsSelection bit 7 (Use_Typo_Metrics), will force Windows to use the OS/2  [0m
+    [0;30;107m  typo values instead. This means the font developer can control the        [0m
+    [0;30;107m  linespacing with the typo values, whilst avoiding clipping by setting the [0m
+    [0;30;107m  win values to values greater than the yMax and abs(yMin).                 [0m
+
+    * [1;91;107mFAIL[0m: OS/2.usWinAscent value should be equal or greater than 1645, but got 1389 instead [code: ascent]
+    * [1;91;107mFAIL[0m: OS/2.usWinDescent value should be equal or greater than 709, but got 398 instead. [code: descent]
+
+
+    Result: [1;91;107mFAIL[0m
+
+ >> [1;35;107mcom.google.fonts/check/required_tables[0m
+    [0;36;107mFont contains all required tables?[0m
+    with NotoMusic-Regular.ttf
+
+    [1;35;107m  Rationale:                                                                [0m
+    [0;30;107m  Depending on the typeface and coverage of a font, certain tables are      [0m
+    [0;30;107m  recommended for optimum quality. For example, the performance of a        [0m
+    [0;30;107m  non-linear font is improved if the VDMX, LTSH, and hdmx tables are        [0m
+    [0;30;107m  present. Non-monospaced Latin fonts should have a kern table. A gasp      [0m
+    [0;30;107m  table is necessary if a designer wants to influence the sizes at which    [0m
+    [0;30;107m  grayscaling is used under Windows. A DSIG table containing a digital      [0m
+    [0;30;107m  signature helps ensure the integrity of the font file. Etc.               [0m
+
+    * [0;36;107mINFO[0m: This font contains the following optional tables [loca, GPOS, GSUB]
+
+
+    Result: [0;36;107mINFO[0m
+
+ >> [1;35;107mcom.google.fonts/check/superfamily/list[0m
+    [0;36;107mList all superfamily filepaths[0m
+    with NotoMusic-Regular.ttf
+
+    [1;35;107m  Rationale:                                                                [0m
+    [0;30;107m  This is a merely informative check that lists all sibling families        [0m
+    [0;30;107m  detected by fontbakery.                                                   [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  Only the fontfiles in these directories will be considered in             [0m
+    [0;30;107m  superfamily-level checks.                                                 [0m
+
+    * [0;36;107mINFO[0m: . [code: family-path]
+
+
+    Result: [0;36;107mINFO[0m
+
+ >> [1;35;107mcom.google.fonts/check/monospace[0m
+    [0;36;107mChecking correctness of monospaced metadata.[0m
+    with NotoMusic-Regular.ttf
+
+    [1;35;107m  Rationale:                                                                [0m
+    [0;30;107m  There are various metadata in the OpenType spec to specify if a font is   [0m
+    [0;30;107m  monospaced or not. If the font is not truly monospaced, then no           [0m
+    [0;30;107m  monospaced metadata should be set (as sometimes they mistakenly are...)   [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  Requirements for monospace fonts:                                         [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  * post.isFixedPitch - "Set to 0 if the font is proportionally spaced,     [0m
+    [0;30;107m  non-zero if the font is not proportionally spaced (monospaced)"           [0m
+    [0;30;107m    www.microsoft.com/typography/otspec/post.htm                            [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  * hhea.advanceWidthMax must be correct, meaning no glyph's width value is [0m
+    [0;30;107m  greater.                                                                  [0m
+    [0;30;107m    www.microsoft.com/typography/otspec/hhea.htm                            [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  * OS/2.panose.bProportion must be set to 9 (monospace). Spec says: "The   [0m
+    [0;30;107m  PANOSE definition contains ten digits each of which currently describes   [0m
+    [0;30;107m  up to sixteen variations. Windows uses bFamilyType, bSerifStyle and       [0m
+    [0;30;107m  bProportion in the font mapper to determine family type. It also uses     [0m
+    [0;30;107m  bProportion to determine if the font is monospaced."                      [0m
+    [0;30;107m    www.microsoft.com/typography/otspec/os2.htm#pan                         [0m
+    [0;30;107m    monotypecom-test.monotype.de/services/pan2                              [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  * OS/2.xAvgCharWidth must be set accurately.                              [0m
+    [0;30;107m    "OS/2.xAvgCharWidth is used when rendering monospaced fonts, at least   [0m
+    [0;30;107m  by Windows GDI"                                                           [0m
+    [0;30;107m    http://typedrawers.com/discussion/comment/15397/#Comment_15397          [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  Also we should report an error for glyphs not of average width.           [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  Please also note:                                                         [0m
+    [0;30;107m  Thomas Phinney told us that a few years ago (as of December 2019), if you [0m
+    [0;30;107m  gave a font a monospace flag in Panose, Microsoft Word would ignore the   [0m
+    [0;30;107m  actual advance widths and treat it as monospaced. Source:                 [0m
+    [0;30;107m  https://typedrawers.com/discussion/comment/45140/#Comment_45140           [0m
+
+    * [1;91;107mFAIL[0m: On monospaced fonts, the value of post.isFixedPitch must be set to a non-zero value (meaning 'fixed width monospaced'), but got 0 instead. [code: mono-bad-post-isFixedPitch]
+    * [1;91;107mFAIL[0m: On monospaced fonts, the value of OS/2.panose.bProportion must be set to 9 (proportion: monospaced), but got 0 instead. [code: mono-bad-panose-proportion]
+    * [1;30;103mWARN[0m: Font is monospaced but 519 glyphs (89.64%) have a different width. You should check the widths of: ['CR', 'space', 'uni25CC', 'uni2669', 'musicalnote', 'musicalnotedbl', 'uni266C', 'uni266D', 'uni266E', 'uni266F', 'u1D000', 'u1D001', 'u1D002', 'u1D003', 'u1D004', 'u1D005', 'u1D006', 'u1D007', 'u1D008', 'u1D009', 'u1D00A', 'u1D00B', 'u1D00C', 'u1D00D', 'u1D00E', 'u1D00F', 'u1D010', 'u1D011', 'u1D012', 'u1D013', 'u1D014', 'u1D015', 'u1D016', 'u1D017', 'u1D018', 'u1D019', 'u1D01A', 'u1D01B', 'u1D01C', 'u1D01D', 'u1D01E', 'u1D01F', 'u1D020', 'u1D021', 'u1D022', 'u1D023', 'u1D024', 'u1D025', 'u1D026', 'u1D027', 'u1D028', 'u1D029', 'u1D02A', 'u1D02B', 'u1D02C', 'u1D02D', 'u1D02E', 'u1D02F', 'u1D030', 'u1D031', 'u1D032', 'u1D033', 'u1D034', 'u1D035', 'u1D036', 'u1D037', 'u1D038', 'u1D039', 'u1D03A', 'u1D03B', 'u1D03C', 'u1D03D', 'u1D03E', 'u1D03F', 'u1D040', 'u1D041', 'u1D042', 'u1D043', 'u1D044', 'u1D045', 'u1D046', 'u1D047', 'u1D048', 'u1D049', 'u1D04A', 'u1D04B', 'u1D04C', 'u1D04D', 'u1D04E', 'u1D04F', 'u1D050', 'u1D051', 'u1D052', 'u1D053', 'u1D054', 'u1D055', 'u1D056', 'u1D057', 'u1D058', 'u1D059', 'u1D05A', 'u1D05B', 'u1D05C', 'u1D05D', 'u1D05E', 'u1D05F', 'u1D060', 'u1D061', 'u1D062', 'u1D063', 'u1D064', 'u1D065', 'u1D066', 'u1D067', 'u1D068', 'u1D069', 'u1D06A', 'u1D06B', 'u1D06C', 'u1D06D', 'u1D06E', 'u1D06F', 'u1D070', 'u1D071', 'u1D072', 'u1D073', 'u1D074', 'u1D075', 'u1D076', 'u1D077', 'u1D078', 'u1D079', 'u1D07A', 'u1D07B', 'u1D07C', 'u1D07D', 'u1D07E', 'u1D07F', 'u1D080', 'u1D081', 'u1D082', 'u1D083', 'u1D084', 'u1D085', 'u1D086', 'u1D087', 'u1D088', 'u1D089', 'u1D08A', 'u1D08B', 'u1D08C', 'u1D08D', 'u1D08E', 'u1D08F', 'u1D090', 'u1D091', 'u1D092', 'u1D093', 'u1D094', 'u1D095', 'u1D096', 'u1D097', 'u1D098', 'u1D099', 'u1D09A', 'u1D09B', 'u1D09C', 'u1D09D', 'u1D09E', 'u1D09F', 'u1D0A0', 'u1D0A1', 'u1D0A2', 'u1D0A3', 'u1D0A4', 'u1D0A5', 'u1D0A6', 'u1D0A7', 'u1D0A8', 'u1D0A9', 'u1D0AA', 'u1D0AB', 'u1D0AC', 'u1D0AD', 'u1D0AE', 'u1D0AF', 'u1D0B0', 'u1D0B1', 'u1D0B2', 'u1D0B3', 'u1D0B4', 'u1D0B5', 'u1D0B6', 'u1D0B7', 'u1D0B8', 'u1D0B9', 'u1D0BC', 'u1D0BD', 'u1D0BE', 'u1D0C0', 'u1D0C1', 'u1D0C2', 'u1D0C3', 'u1D0C4', 'u1D0C5', 'u1D0C6', 'u1D0C7', 'u1D0C8', 'u1D0C9', 'u1D0CA', 'u1D0CB', 'u1D0CC', 'u1D0CD', 'u1D0CE', 'u1D0CF', 'u1D0D0', 'u1D0D1', 'u1D0D2', 'u1D0D3', 'u1D0D4', 'u1D0D5', 'u1D0D6', 'u1D0D7', 'u1D0DA', 'u1D0DB', 'u1D0DC', 'u1D0DD', 'u1D0E1', 'u1D0E2', 'u1D0E3', 'u1D0E4', 'u1D0E5', 'u1D0E6', 'u1D0E7', 'u1D0E8', 'u1D0E9', 'u1D0EA', 'u1D0EB', 'u1D0EC', 'u1D0ED', 'u1D0EE', 'u1D0EF', 'u1D0F0', 'u1D0F1', 'u1D0F2', 'u1D0F3', 'u1D0F4', 'u1D0F5', 'u1D100', 'u1D101', 'u1D102', 'u1D103', 'u1D104', 'u1D105', 'u1D106', 'u1D107', 'u1D108', 'u1D109', 'u1D10A', 'u1D10B', 'u1D10C', 'u1D10D', 'u1D10E', 'u1D10F', 'u1D110', 'u1D111', 'u1D112', 'u1D113', 'u1D114', 'u1D115', 'u1D116', 'u1D117', 'u1D118', 'u1D119', 'u1D11A', 'u1D11B', 'u1D11C', 'u1D11D', 'u1D11E', 'u1D11F', 'u1D120', 'u1D121', 'u1D122', 'u1D123', 'u1D124', 'u1D125', 'u1D126', 'u1D129', 'u1D12A', 'u1D12B', 'u1D12C', 'u1D12D', 'u1D12E', 'u1D12F', 'u1D132', 'u1D133', 'u1D134', 'u1D135', 'u1D136', 'u1D137', 'u1D138', 'u1D139', 'u1D13A', 'u1D13B', 'u1D13C', 'u1D13D', 'u1D13E', 'u1D13F', 'u1D140', 'u1D141', 'u1D142', 'u1D143', 'u1D144', 'u1D145', 'u1D146', 'u1D147', 'u1D148', 'u1D149', 'u1D14A', 'u1D14B', 'u1D14C', 'u1D14D', 'u1D14E', 'u1D14F', 'u1D150', 'u1D151', 'u1D152', 'u1D153', 'u1D154', 'u1D155', 'u1D156', 'u1D157', 'u1D158', 'null_notehead', 'u1D15A', 'u1D15B', 'u1D15C', 'u1D15D', 'u1D15E', 'u1D15F', 'u1D160', 'u1D161', 'u1D162', 'u1D163', 'u1D164', 'u1D16A', 'u1D16B', 'u1D16C', 'u1D183', 'u1D184', 'u1D18C', 'u1D18D', 'u1D18E', 'u1D18F', 'u1D190', 'u1D191', 'u1D192', 'u1D193', 'u1D194', 'u1D195', 'u1D196', 'u1D197', 'u1D198', 'u1D199', 'u1D19A', 'u1D19B', 'u1D19C', 'u1D19D', 'u1D19E', 'u1D19F', 'u1D1A0', 'u1D1A1', 'u1D1A2', 'u1D1A3', 'u1D1A4', 'u1D1A5', 'u1D1A6', 'u1D1A7', 'u1D1A8', 'u1D1A9', 'u1D1AE', 'u1D1AF', 'u1D1B0', 'u1D1B1', 'u1D1B2', 'u1D1B3', 'u1D1B4', 'u1D1B5', 'u1D1B6', 'u1D1B7', 'u1D1B8', 'u1D1B9', 'u1D1BA', 'u1D1BB', 'u1D1BC', 'u1D1BD', 'u1D1BE', 'u1D1BF', 'u1D1C0', 'u1D1C1', 'u1D1C2', 'u1D1C3', 'u1D1C4', 'u1D1C5', 'u1D1C6', 'u1D1C7', 'u1D1C8', 'u1D1C9', 'u1D1CA', 'u1D1CB', 'u1D1CC', 'u1D1CD', 'u1D1CE', 'u1D1CF', 'u1D1D0', 'u1D1D1', 'u1D1D2', 'u1D1D3', 'u1D1D4', 'u1D1D5', 'u1D1D6', 'u1D1D7', 'u1D1D8', 'u1D1D9', 'u1D1DA', 'u1D1DB', 'u1D1DC', 'u1D1DD', 'u1D200', 'u1D201', 'u1D202', 'u1D203', 'u1D204', 'u1D205', 'u1D206', 'u1D207', 'u1D208', 'u1D209', 'u1D20A', 'u1D20B', 'u1D20C', 'u1D20D', 'u1D20E', 'u1D20F', 'u1D210', 'u1D211', 'u1D212', 'u1D213', 'u1D214', 'u1D215', 'u1D216', 'u1D217', 'u1D218', 'u1D219', 'u1D21A', 'u1D21B', 'u1D21C', 'u1D21D', 'u1D21E', 'u1D21F', 'u1D220', 'u1D221', 'u1D222', 'u1D223', 'u1D224', 'u1D225', 'u1D226', 'u1D227', 'u1D228', 'u1D229', 'u1D22A', 'u1D22B', 'u1D22C', 'u1D22D', 'u1D22E', 'u1D22F', 'u1D230', 'u1D231', 'u1D232', 'u1D233', 'u1D234', 'u1D235', 'u1D236', 'u1D237', 'u1D238', 'u1D239', 'u1D23A', 'u1D23B', 'u1D23C', 'u1D23D', 'u1D23E', 'u1D23F', 'u1D240', 'u1D241', 'u1D245', 'u1D165_b', 'u1D166_b', 'u1D165_short', 'u1D165_ext', 'u1D165_ext2', 'u1D165_short2', 'u1D166_short', 'u1D166_ext', 'u1D166_ext2', 'u1D166_short2', 'u1D165_short.alt', 'u1D166_short.alt', 'u1D1DE', 'u1D1DF', 'u1D1E0', 'u1D1E1', 'u1D1E2', 'u1D1E3', 'u1D1E4', 'u1D1E5', 'u1D1E6', 'u1D1E7', 'u1D1E8', 'uni00A0'] [code: mono-outliers]
+
+
+    Result: [1;91;107mFAIL[0m
+
+ >> [1;35;107mcom.google.fonts/check/dsig[0m
+    [0;36;107mDoes the font have a DSIG table?[0m
+    with NotoMusic-Regular.ttf
+
+    [1;35;107m  Rationale:                                                                [0m
+    [0;30;107m  Microsoft Office 2013 and below products expect fonts to have a digital   [0m
+    [0;30;107m  signature declared in a DSIG table in order to implement OpenType         [0m
+    [0;30;107m  features. The EOL date for Microsoft Office 2013 products is 4/11/2023.   [0m
+    [0;30;107m  This issue does not impact Microsoft Office 2016 and above products.      [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  This checks verifies that this signature is available in the font.        [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  A fake signature is enough to address this issue. If needed, a dummy      [0m
+    [0;30;107m  table can be added to the font with the `gftools fix-dsig` script         [0m
+    [0;30;107m  available at https://github.com/googlefonts/gftools                       [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  Reference: https://github.com/googlefonts/fontbakery/issues/1845          [0m
+
+    * [1;91;107mFAIL[0m: This font lacks a digital signature (DSIG table). Some applications may require one (even if only a dummy placeholder) in order to work properly. You can add a DSIG table by running the `gftools fix-dsig` script. [code: lacks-signature]
+
+
+    Result: [1;91;107mFAIL[0m
+
+ >> [1;35;107mcom.google.fonts/check/gpos_kerning_info[0m
+    [0;36;107mDoes GPOS table have kerning information? This check skips monospaced fonts as defined by post.isFixedPitch value[0m
+    with NotoMusic-Regular.ttf
+
+    * [1;30;103mWARN[0m: GPOS table lacks kerning information. [code: lacks-kern-info]
+
+
+    Result: [1;30;103mWARN[0m
+
+ >> [1;35;107mcom.google.fonts/check/outline_alignment_miss[0m
+    [0;36;107mAre there any misaligned on-curve points?[0m
+    with NotoMusic-Regular.ttf
+
+    [1;35;107m  Rationale:                                                                [0m
+    [0;30;107m  This test heuristically looks for on-curve points which are close to, but [0m
+    [0;30;107m  do not sit on, significant boundary coordinates. For example, a point     [0m
+    [0;30;107m  which has a Y-coordinate of 1 or -1 might be a misplaced baseline point.  [0m
+    [0;30;107m  As well as the baseline, the test also checks for points near the         [0m
+    [0;30;107m  x-height (but only for lower case Latin letters), cap-height, ascender    [0m
+    [0;30;107m  and descender Y coordinates.                                              [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  Not all such misaligned curve points are a mistake, and sometimes the     [0m
+    [0;30;107m  design may call for points in locations near the boundaries. As this test [0m
+    [0;30;107m  is liable to generate significant numbers of false positives, the test    [0m
+    [0;30;107m  will pass if there are more than 100 reported misalignments.              [0m
+
+    * [1;30;103mWARN[0m: The following glyphs have on-curve points which have potentially incorrect y coordinates:
+	* u1D036: X=475.0,Y=712.0 (should be at cap-height 714?)
+	* u1D037: X=475.0,Y=712.0 (should be at cap-height 714?)
+	* u1D037: X=750.5,Y=714.5 (should be at cap-height 714?)
+	* u1D037: X=828.0,Y=712.5 (should be at cap-height 714?)
+	* u1D039: X=236.0,Y=713.0 (should be at cap-height 714?)
+	* u1D059: X=484.0,Y=2.0 (should be at baseline 0?)
+	* u1D06A: X=103.0,Y=-2.0 (should be at baseline 0?)
+	* u1D06A: X=103.0,Y=1.0 (should be at baseline 0?)
+	* u1D06A: X=382.0,Y=-1.0 (should be at baseline 0?)
+	* u1D06A: X=103.0,Y=-2.0 (should be at baseline 0?) and 62 more. [code: found-misalignments]
+
+
+    Result: [1;30;103mWARN[0m
+
+ >> [1;35;107mcom.google.fonts/check/outline_colinear_vectors[0m
+    [0;36;107mDo any segments have colinear vectors?[0m
+    with NotoMusic-Regular.ttf
+
+    [1;35;107m  Rationale:                                                                [0m
+    [0;30;107m  This test looks for consecutive line segments which have the same angle.  [0m
+    [0;30;107m  This normally happens if an outline point has been added by accident.     [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  This test is not run for variable fonts, as they may legitimately have    [0m
+    [0;30;107m  colinear vectors.                                                         [0m
+
+    * [1;30;103mWARN[0m: The following glyphs have colinear vectors:
+	* u1D06D: L<<426.0,-7.0>--<408.0,-4.0>> -> L<<408.0,-4.0>--<391.0,0.0>>
+	* u1D071: L<<319.0,73.0>--<307.0,73.0>> -> L<<307.0,73.0>--<266.0,74.0>>
+	* u1D075: L<<163.0,50.0>--<149.0,47.0>> -> L<<149.0,47.0>--<128.0,44.0>>
+	* u1D077: L<<185.0,121.0>--<133.0,121.0>> -> L<<133.0,121.0>--<103.0,122.0>>
+	* u1D077: L<<322.0,114.0>--<185.0,121.0>> -> L<<185.0,121.0>--<133.0,121.0>>
+	* u1D09F: L<<215.0,360.0>--<216.0,349.0>> -> L<<216.0,349.0>--<216.0,346.0>>
+	* u1D0AA: L<<325.0,276.0>--<355.0,273.0>> -> L<<355.0,273.0>--<452.0,258.0>>
+	* u1D0AA: L<<452.0,258.0>--<469.0,258.0>> -> L<<469.0,258.0>--<491.0,260.0>> and u1D0B5: L<<106.0,131.0>--<106.0,134.0>> -> L<<106.0,134.0>--<110.0,226.0>> [code: found-colinear-vectors]
+
+
+    Result: [1;30;103mWARN[0m
+
+ >> [1;35;107mcom.google.fonts/check/outline_jaggy_segments[0m
+    [0;36;107mDo outlines contain any jaggy segments?[0m
+    with NotoMusic-Regular.ttf
+
+    [1;35;107m  Rationale:                                                                [0m
+    [0;30;107m  This test heuristically detects outline segments which form a             [0m
+    [0;30;107m  particularly small angle, indicative of an outline error. This may cause  [0m
+    [0;30;107m  false positives in cases such as extreme ink traps, so should be regarded [0m
+    [0;30;107m  as advisory and backed up by manual inspection.                           [0m
+
+    * [1;30;103mWARN[0m: The following glyphs have jaggy segments:
+	* u1D050: B<<315.5,514.0>-<262.0,490.0>-<197.0,485.0>>/B<<197.0,485.0>-<228.0,485.0>-<253.0,474.5>> = 4.398705354995508
+	* u1D05E: B<<311.0,496.0>-<311.0,518.0>-<331.0,521.0>>/L<<331.0,521.0>--<113.0,521.0>> = 8.530765609948139
+	* u1D061: B<<287.0,137.0>-<287.0,117.0>-<274.0,107.0>>/B<<274.0,107.0>-<356.0,156.0>-<456.0,156.0>> = 6.707700340478021
+	* u1D06B: L<<144.0,108.0>--<103.0,110.0>>/B<<103.0,110.0>-<193.0,118.0>-<257.5,146.5>> = 7.87231022572785
+	* u1D078: B<<371.0,114.5>-<380.0,123.0>-<388.0,124.0>>/L<<388.0,124.0>--<322.0,124.0>> = 7.125016348901757
+	* u1D079: B<<336.0,101.0>-<336.0,120.0>-<360.0,124.0>>/L<<360.0,124.0>--<288.0,124.0>> = 9.462322208025613
+	* u1D09E: B<<310.0,331.0>-<277.0,331.0>-<274.0,372.0>>/B<<274.0,372.0>-<270.0,338.0>-<240.0,338.0>> = 10.894752932875335
+	* u1D0A3: L<<212.0,210.0>--<215.0,222.0>>/B<<215.0,222.0>-<196.0,180.0>-<142.0,180.0>> = 10.304846468766044
+	* u1D0AE: B<<266.5,445.0>-<253.0,438.0>-<226.0,434.0>>/B<<226.0,434.0>-<237.0,433.0>-<244.5,430.0>> = 13.621397929215435
+	* u1D0B2: B<<409.0,203.0>-<409.0,217.0>-<416.0,242.0>>/B<<416.0,242.0>-<403.0,206.0>-<355.0,206.0>> = 4.212967912112212 and 7 more. [code: found-jaggy-segments]
+
+
+    Result: [1;30;103mWARN[0m
+
+ >> [1;35;107mcom.google.fonts/check/outline_semi_vertical[0m
+    [0;36;107mDo outlines contain any semi-vertical or semi-horizontal lines?[0m
+    with NotoMusic-Regular.ttf
+
+    [1;35;107m  Rationale:                                                                [0m
+    [0;30;107m  This test detects line segments which are nearly, but not quite, exactly  [0m
+    [0;30;107m  horizontal or vertical. Sometimes such lines are created by design, but   [0m
+    [0;30;107m  often they are indicative of a design error.                              [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  This test is disabled for italic styles, which often contain              [0m
+    [0;30;107m  nearly-upright lines.                                                     [0m
+
+    * [1;30;103mWARN[0m: The following glyphs have semi-vertical/semi-horizontal lines:
+	* u1D096: L<<485.0,581.0>--<362.0,582.0>> and u1D0A1: L<<518.0,484.0>--<396.0,485.0>> [code: found-semi-vertical]
+
+
+    Result: [1;30;103mWARN[0m
+
+
+Total:
+
+    [1;97;101mERROR[0m: 0
+    [1;91;107mFAIL[0m: 3
+    [1;30;103mWARN[0m: 6
+    [0;36;107mINFO[0m: 2
+    [0;34;107mSKIP[0m: 17
+    [0;32;107mPASS[0m: 49
+
+
+DONE!
+
+    [1;30;107mMeaning of check results:[0m
+
+    An [1;97;101mERROR[0m is something wrong with FontBakery itself, possibly a bug.
+    A [1;91;107mFAIL[0m is a problem with the font that must be fixed.
+    A [1;30;103mWARN[0m is something that you should consider addressing.
+    An [0;36;107mINFO[0m result simply prints something useful. Typically stats.
+    A [0;32;107mPASS[0m means the font looks good for the given checking routine.
+    And a [0;34;107mSKIP[0m happens when the check does not apply to the given font.
+
+    If you get [1;97;101mERROR[0ms, please help us improve the tool by reporting them at
+    [1;36;107mhttps://github.com/googlefonts/fontbakery/issues[0m
+
+    (but other kinds of bug reports and/or
+     feature requests are also always welcome, of course!)
+

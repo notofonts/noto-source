@@ -1,0 +1,168 @@
+Start ... running 77 individual check executions.
+ >> [1;35;107mcom.google.fonts/check/required_tables[0m
+    [0;36;107mFont contains all required tables?[0m
+    with NotoSerifTibetan-ExtraBold.ttf
+
+    [1;35;107m  Rationale:                                                                [0m
+    [0;30;107m  Depending on the typeface and coverage of a font, certain tables are      [0m
+    [0;30;107m  recommended for optimum quality. For example, the performance of a        [0m
+    [0;30;107m  non-linear font is improved if the VDMX, LTSH, and hdmx tables are        [0m
+    [0;30;107m  present. Non-monospaced Latin fonts should have a kern table. A gasp      [0m
+    [0;30;107m  table is necessary if a designer wants to influence the sizes at which    [0m
+    [0;30;107m  grayscaling is used under Windows. A DSIG table containing a digital      [0m
+    [0;30;107m  signature helps ensure the integrity of the font file. Etc.               [0m
+
+    * [0;36;107mINFO[0m: This font contains the following optional tables [loca, GPOS, GSUB]
+
+
+    Result: [0;36;107mINFO[0m
+
+ >> [1;35;107mcom.google.fonts/check/superfamily/list[0m
+    [0;36;107mList all superfamily filepaths[0m
+    with NotoSerifTibetan-ExtraBold.ttf
+
+    [1;35;107m  Rationale:                                                                [0m
+    [0;30;107m  This is a merely informative check that lists all sibling families        [0m
+    [0;30;107m  detected by fontbakery.                                                   [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  Only the fontfiles in these directories will be considered in             [0m
+    [0;30;107m  superfamily-level checks.                                                 [0m
+
+    * [0;36;107mINFO[0m: . [code: family-path]
+
+
+    Result: [0;36;107mINFO[0m
+
+ >> [1;35;107mcom.google.fonts/check/dsig[0m
+    [0;36;107mDoes the font have a DSIG table?[0m
+    with NotoSerifTibetan-ExtraBold.ttf
+
+    [1;35;107m  Rationale:                                                                [0m
+    [0;30;107m  Microsoft Office 2013 and below products expect fonts to have a digital   [0m
+    [0;30;107m  signature declared in a DSIG table in order to implement OpenType         [0m
+    [0;30;107m  features. The EOL date for Microsoft Office 2013 products is 4/11/2023.   [0m
+    [0;30;107m  This issue does not impact Microsoft Office 2016 and above products.      [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  This checks verifies that this signature is available in the font.        [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  A fake signature is enough to address this issue. If needed, a dummy      [0m
+    [0;30;107m  table can be added to the font with the `gftools fix-dsig` script         [0m
+    [0;30;107m  available at https://github.com/googlefonts/gftools                       [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  Reference: https://github.com/googlefonts/fontbakery/issues/1845          [0m
+
+    * [1;91;107mFAIL[0m: This font lacks a digital signature (DSIG table). Some applications may require one (even if only a dummy placeholder) in order to work properly. You can add a DSIG table by running the `gftools fix-dsig` script. [code: lacks-signature]
+
+
+    Result: [1;91;107mFAIL[0m
+
+ >> [1;35;107mcom.google.fonts/check/gdef_mark_chars[0m
+    [0;36;107mCheck mark characters are in GDEF mark glyph class[0m
+    with NotoSerifTibetan-ExtraBold.ttf
+
+    [1;35;107m  Rationale:                                                                [0m
+    [0;30;107m  Mark characters should be in the GDEF mark glyph class.                   [0m
+
+    * [1;30;103mWARN[0m: The following mark characters could be in the GDEF mark glyph class:
+	 U+0F3E, U+0F3F and U+0F7F [code: mark-chars]
+
+
+    Result: [1;30;103mWARN[0m
+
+ >> [1;35;107mcom.google.fonts/check/outline_colinear_vectors[0m
+    [0;36;107mDo any segments have colinear vectors?[0m
+    with NotoSerifTibetan-ExtraBold.ttf
+
+    [1;35;107m  Rationale:                                                                [0m
+    [0;30;107m  This test looks for consecutive line segments which have the same angle.  [0m
+    [0;30;107m  This normally happens if an outline point has been added by accident.     [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  This test is not run for variable fonts, as they may legitimately have    [0m
+    [0;30;107m  colinear vectors.                                                         [0m
+
+    * [1;30;103mWARN[0m: The following glyphs have colinear vectors:
+	* uni0F400FB30F74: L<<592.0,-270.0>--<592.0,-270.0>> -> L<<592.0,-270.0>--<592.0,-270.0>>
+	* uni0F420FB30F74: L<<611.0,-270.0>--<611.0,-270.0>> -> L<<611.0,-270.0>--<611.0,-270.0>>
+	* uni0F490F74: L<<318.0,-134.0>--<318.0,-134.0>> -> L<<318.0,-134.0>--<318.0,-134.0>>
+	* uni0F4F0FA40F74: L<<499.0,-248.0>--<499.0,-248.0>> -> L<<499.0,-248.0>--<499.0,-248.0>>
+	* uni0F4F0FA60F74: L<<499.0,-248.0>--<499.0,-248.0>> -> L<<499.0,-248.0>--<499.0,-248.0>>
+	* uni0F510FA20F74: L<<339.0,-420.0>--<339.0,-420.0>> -> L<<339.0,-420.0>--<339.0,-420.0>>
+	* uni0F510FAD0F71: L<<612.0,-130.0>--<612.0,-131.0>> -> L<<612.0,-131.0>--<612.0,-167.0>>
+	* uni0F530FA20F71: L<<361.0,-488.0>--<389.0,-488.0>> -> L<<389.0,-488.0>--<389.0,-488.0>>
+	* uni0F530FAD: L<<622.0,-435.0>--<622.0,-436.0>> -> L<<622.0,-436.0>--<622.0,-490.0>>
+	* uni0F540FB20F74: L<<522.0,-107.0>--<522.0,-107.0>> -> L<<522.0,-107.0>--<522.0,-107.0>> and 27 more. [code: found-colinear-vectors]
+
+
+    Result: [1;30;103mWARN[0m
+
+ >> [1;35;107mcom.google.fonts/check/outline_jaggy_segments[0m
+    [0;36;107mDo outlines contain any jaggy segments?[0m
+    with NotoSerifTibetan-ExtraBold.ttf
+
+    [1;35;107m  Rationale:                                                                [0m
+    [0;30;107m  This test heuristically detects outline segments which form a             [0m
+    [0;30;107m  particularly small angle, indicative of an outline error. This may cause  [0m
+    [0;30;107m  false positives in cases such as extreme ink traps, so should be regarded [0m
+    [0;30;107m  as advisory and backed up by manual inspection.                           [0m
+
+    * [1;30;103mWARN[0m: The following glyphs have jaggy segments:
+	* uni0F17: B<<105.0,252.5>-<112.0,228.0>-<122.0,205.0>>/B<<122.0,205.0>-<114.0,241.0>-<114.0,282.0>> = 10.96975796680057
+	* uni0F2A: B<<335.0,478.0>-<313.0,416.0>-<281.0,367.0>>/L<<281.0,367.0>--<365.0,445.0>> = 13.974100564405422
+	* uni0F420FA20F71: B<<619.0,-35.0>-<618.0,-35.0>-<618.0,-34.0>>/L<<618.0,-34.0>--<587.0,-157.0>> = 14.145795494102993
+	* uni0F420FA80F71: L<<462.0,-277.0>--<616.0,-277.0>>/L<<616.0,-277.0>--<611.0,-276.0>> = 11.309932474020195
+	* uni0F4F0F900FB20F71: L<<349.0,-255.0>--<500.0,-255.0>>/B<<500.0,-255.0>-<425.0,-236.0>-<369.0,-226.0>> = 14.21585347367354
+	* uni0F4F0FB60F9B: L<<87.0,-38.0>--<281.0,-38.0>>/B<<281.0,-38.0>-<244.0,-29.0>-<201.5,-22.0>> = 13.67130713219584
+	* uni0F510FA10FB10F71: L<<557.0,-187.0>--<548.0,-184.0>>/L<<548.0,-184.0>--<558.0,-188.0>> = 3.3664606634298315
+	* uni0F510FA80F71: L<<380.0,-290.0>--<534.0,-290.0>>/L<<534.0,-290.0>--<530.0,-289.0>> = 14.036243467926484
+	* uni0F530FA10FB20F71: L<<424.0,-383.0>--<548.0,-383.0>>/B<<548.0,-383.0>-<468.0,-368.0>-<407.0,-360.0>> = 10.61965527615514
+	* uni0F540FA20F71: B<<584.0,-2.0>-<583.0,-2.0>-<583.0,-1.0>>/L<<583.0,-1.0>--<552.0,-123.0>> = 14.257035359650056 and 26 more. [code: found-jaggy-segments]
+
+
+    Result: [1;30;103mWARN[0m
+
+ >> [1;35;107mcom.google.fonts/check/outline_semi_vertical[0m
+    [0;36;107mDo outlines contain any semi-vertical or semi-horizontal lines?[0m
+    with NotoSerifTibetan-ExtraBold.ttf
+
+    [1;35;107m  Rationale:                                                                [0m
+    [0;30;107m  This test detects line segments which are nearly, but not quite, exactly  [0m
+    [0;30;107m  horizontal or vertical. Sometimes such lines are created by design, but   [0m
+    [0;30;107m  often they are indicative of a design error.                              [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  This test is disabled for italic styles, which often contain              [0m
+    [0;30;107m  nearly-upright lines.                                                     [0m
+
+    * [1;30;103mWARN[0m: The following glyphs have semi-vertical/semi-horizontal lines:
+	* uni0F4A0F9A: L<<339.0,203.0>--<569.0,202.0>> [code: found-semi-vertical]
+
+
+    Result: [1;30;103mWARN[0m
+
+
+Total:
+
+    [1;97;101mERROR[0m: 0
+    [1;91;107mFAIL[0m: 1
+    [1;30;103mWARN[0m: 4
+    [0;36;107mINFO[0m: 2
+    [0;34;107mSKIP[0m: 18
+    [0;32;107mPASS[0m: 52
+
+
+DONE!
+
+    [1;30;107mMeaning of check results:[0m
+
+    An [1;97;101mERROR[0m is something wrong with FontBakery itself, possibly a bug.
+    A [1;91;107mFAIL[0m is a problem with the font that must be fixed.
+    A [1;30;103mWARN[0m is something that you should consider addressing.
+    An [0;36;107mINFO[0m result simply prints something useful. Typically stats.
+    A [0;32;107mPASS[0m means the font looks good for the given checking routine.
+    And a [0;34;107mSKIP[0m happens when the check does not apply to the given font.
+
+    If you get [1;97;101mERROR[0ms, please help us improve the tool by reporting them at
+    [1;36;107mhttps://github.com/googlefonts/fontbakery/issues[0m
+
+    (but other kinds of bug reports and/or
+     feature requests are also always welcome, of course!)
+

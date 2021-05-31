@@ -1,0 +1,22 @@
+---
+Automatic testing for 'instance_ttf,NotoSans-ExtraCondensedThin.ttf', Version 2.004:
+E <name/family> The family is 'Noto Sans ExtraCondensed Thin' but was expecting 'Noto Sans ExtCond Thin'
+E <cmap/variants> Font contains 1 characters with standard variants, but has no variation selector cmap table (0030).
+E <bounds/glyph/ymax> Real yMax for glyph 1510 (uni1E4C) is 1076, which is higher than the font's sTypoAscent (1069), resulting in clipping.
+E <bounds/glyph/ymin> Real yMin for glyph 2482 (scriptg) is -389, which is lower than the font's sTypoDescent (-293), resulting in clipping.
+E <bounds/glyph/ymin> Real yMin for glyph 2644 (uni2E10) is -294, which is lower than the font's sTypoDescent (-293), resulting in clipping.
+E <bounds/glyph/ymin> Real yMin for glyph 2672 (uni2E11) is -294, which is lower than the font's sTypoDescent (-293), resulting in clipping.
+E <bounds/glyph/ymin> Real yMin for glyph 2705 (uni2E3E) is -308, which is lower than the font's sTypoDescent (-293), resulting in clipping.
+E <bounds/glyph/ymin> Real yMin for glyph 3208 (uniA670) is -297, which is lower than the font's sTypoDescent (-293), resulting in clipping.
+E <bounds/font/ymax> Real yMax 1076, but it should be less than or equal to the value of Ascent in 'hhea' table, which is 1069.
+E <bounds/font/ymin> Real yMin is -389, but it should be greater than or equal to the value of Descent in 'hhea' table, which is -293.
+E <paths/intersection> The glyph 'uni023C' has intersecting outlines: start and end segments match: (222.0, 512.0)
+E <paths/intersection> The glyph 'uni1D70' has intersecting outlines: start and end segments match: (97.0, 311.0)
+E <paths/intersection> The glyph 'aogonek.loclNAV' has intersecting outlines: start and end segments match: (231.0, 15.0)
+E <paths/intersection> The glyph 'uni20B7' has intersecting outlines: start and end segments match: (129.0, 174.0)
+E <paths/intersection> The glyph 'uni1C88' has intersecting outlines: start and end segments match: (201.0, 464.0)
+W <advances/comma_period> The advance of U+002c (comma, glyph 15) is 176, but expected 180.
+Found 15 errors.
+Found 1 warning.
+------
+Finished linting 1 file.

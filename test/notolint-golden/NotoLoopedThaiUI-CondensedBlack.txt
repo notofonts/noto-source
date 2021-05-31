@@ -1,0 +1,40 @@
+---
+Automatic testing for 'instance_ttf,NotoLoopedThaiUI-CondensedBlack.ttf', Version 1.00:
+E <name/copyright> The copyright is 'Copyright 2020 Google LLC. All rights reserved' but was expecting it to match '^Copyright 20\d\d Google (Inc|LLC)\.* All Rights Reserved\.$'
+E <name/version> The version is 'Version 1.00' but was expecting it to match '^Version ([0-2])\.(\d{3})(?:;.*.*)?$'
+E <name/manufacturer> The manufacturer is 'The Fontpad Ltd' but was expecting 'Monotype Imaging Inc.'
+E <name/designer> The designer is 'Sasikarn Vongin, Ben Mitchell' but was expecting 'Monotype Design Team'
+E <name/description> The description is 'Design by The Fontpad Ltd' but was expecting it to match '^Designed by Monotype design team.$'
+E <name/vendor_url> The vendor url is 'http://www.google.com/get/noto' but was expecting 'http://www.google.com/get/noto/'
+E <name/designer_url> The designer url is 'http://www.fontpad.co.uk' but was expecting 'http://www.monotype.com/studio'
+E <cmap/script_required> The following 8 characters are missing from the font: 02BC, 02D7, 0303, 0331, 0E3A, 0E4E..0E4F, 0E5B.
+W <cmap/script_unexpected> The following 19 chars were not expected in the font: 0025..0026, 002A, 002F, 003B, 005B, 005D, 00AB, 00BB, 00D7, 034F, 2012..2015, 2022, 2039..203A, 2060
+E <head/hhea/ascent> Value of ascent in 'hhea' table is 1250, but should be 1069.
+E <head/hhea/descent> Value of descent in 'hhea' table is -350, but should be -293.
+E <head/os2/winascent> Value of usWinAscent in 'OS/2' table (1069) is different from the value of Ascent in 'hhea' table (1250), but they should be equal.
+E <head/os2/windescent> Value of usWinDescent in 'OS/2' table (293) is different from the opposite of value of Descent in 'hhea' table (-350), but they should be opposites.
+E <head/os2/fsselection> UseTypoMetrics bit in fsSelection is set, but should be clear.
+E <bounds/glyph/ui_ymin> Real yMin for glyph 19 (uni0E0E) is -280, which is less than min ui height -271.
+E <bounds/glyph/ui_ymin> Real yMin for glyph 21 (uni0E0F) is -280, which is less than min ui height -271.
+E <bounds/glyph/ui_ymin> Real yMin for glyph 23 (uni0E10) is -280, which is less than min ui height -271.
+E <bounds/glyph/ui_ymin> Real yMin for glyph 69 (uni0E38) is -293, which is less than min ui height -271.
+E <bounds/glyph/ui_ymin> Real yMin for glyph 70 (uni0E38.small) is -293, which is less than min ui height -271.
+E <bounds/glyph/ui_ymin> Real yMin for glyph 71 (uni0E39) is -283, which is less than min ui height -271.
+E <bounds/glyph/ui_ymin> Real yMin for glyph 72 (uni0E39.small) is -293, which is less than min ui height -271.
+E <bounds/glyph/ui_ymax> Real yMax for glyph 99 (maiHanaKat_maiTrithai) is 1122, which is more than max ui height 1057.
+E <bounds/glyph/ui_ymax> Real yMax for glyph 102 (maiHanaKat_maiTrithai.narrow) is 1122, which is more than max ui height 1057.
+E <bounds/font/ui_ymax> Real yMax is 1122, but it should be less than or equal to 1057.
+E <bounds/font/ui_ymin> Real yMin is -293, but it should be greater than or equal to -271.
+E <paths/intersection> The glyph 'uni0E10' has intersecting outlines: start and end segments match: (458.0, 425.0)
+E <paths/intersection> The glyph 'uni0E10.less' has intersecting outlines: start and end segments match: (458.0, 425.0)
+E <paths/intersection> The glyph 'uni0E1D' has intersecting outlines: intersection ((221.0, 172.0), (222.0, 173.0)) and ((224.0, 177.0), (222.0, 173.0))
+E <paths/intersection> The glyph 'uni0E1E' has intersecting outlines: start and end segments match: (476.0, 214.0)
+E <paths/intersection> The glyph 'uni0E1F' has intersecting outlines: start and end segments match: (476.0, 214.0)
+E <paths/intersection> The glyph 'uni0E2C' has intersecting outlines: start and end segments match: (471.0, 194.0)
+W <advances/comma_period> The advance of U+002c (comma, glyph 135) is 284, but expected 278.
+E <advances/whitespace> The advance of U+00a0 (uni00A0, glyph 4) is 260, but expected 202.
+E <reachable> The following 1 glyphs are unreachable in the font: uni0E29.BRACKET.110 (156).
+Found 32 errors.
+Found 2 warnings.
+------
+Finished linting 1 file.

@@ -1,0 +1,43 @@
+table GDEF {
+    GlyphClassDef [], [], [], [];
+} GDEF;
+
+
+lookup LigatureSubstitution1 {
+    lookupflag RightToLeft;
+    ;
+    sub u10861 u10860 by u1086110860;
+    sub u10861 u10863 by u1086110863;
+    sub u10861 u10865 by u1086110865;
+    sub u10861 u10874 by u1086110874;
+    sub u10861 u10876 by u1086110876;
+    sub u10867 u10863 by u1086710863;
+    sub u10867 u10865 by u1086710865;
+    sub u10867 u10874 by u1086710874;
+    sub u1086C u10860 by u1086C10860;
+    sub u1086C u10863 by u1086C10863;
+    sub u1086C u10867 by u1086C10867;
+    sub u1086C u10874 by u1086C10874;
+    sub u1086C u10876 by u1086C10876;
+    sub u1086E u10860 by u1086E10860;
+    sub u1086E u10864 by u1086E10864;
+    sub u1086E u10865 by u1086E10865;
+    sub u1086E u10876 by u1086E10876;
+    sub u10871 u1086B by u108711086B;
+    sub u10873 u10863 by u1087310863;
+    sub u10873 u10874 by u1087310874;
+} LigatureSubstitution1;
+
+feature dlig {
+    lookup LigatureSubstitution1;
+} dlig;
+
+    @GDEF_Base = [u10860 u10861 u10862 u10863 u10864 u10865 u10866 u10867 u10868 u10869 u1086A u1086B u1086C u1086D u1086E u1086F u10870 u10871 u10872 u10873 u10874 u10875 u10876 u10877 u10878 u10879 u1087A u1087B u1087C u1087D u1087E u1087F u1086E10876 u1086E10865 u1086E10864 u108711086B u1086E10860 u1086C10876 u1087310863 u1087310874 u1086C10874 u1086C10867 u1086C10863 u1086C10860 u1086710865 u1086710863 u1086110876 u1086110874 u1086110865 u1086110863 u1086110860 u1086710874];
+    @GDEF_Ligature = [];
+    @GDEF_Mark = [];
+    @GDEF_Component = [];
+    table GDEF {
+        GlyphClassDef @GDEF_Base, @GDEF_Ligature, @GDEF_Mark, @GDEF_Component;
+} GDEF;
+
+

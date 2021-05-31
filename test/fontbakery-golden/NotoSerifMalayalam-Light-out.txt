@@ -1,0 +1,217 @@
+Start ... running 77 individual check executions.
+ >> [1;35;107mcom.google.fonts/check/ots[0m
+    [0;36;107mChecking with ots-sanitize.[0m
+    with NotoSerifMalayalam-Light.ttf
+
+    * [1;30;103mWARN[0m: ots-sanitize passed this file, however warnings were printed:
+
+WARNING: Layout: tags aren't arranged alphabetically.
+WARNING: Layout: tags aren't arranged alphabetically.
+WARNING: Layout: tags aren't arranged alphabetically.
+
+
+
+    Result: [1;30;103mWARN[0m
+
+ >> [1;35;107mcom.google.fonts/check/whitespace_glyphnames[0m
+    [0;36;107mFont has **proper** whitespace glyph names?[0m
+    with NotoSerifMalayalam-Light.ttf
+
+    [1;35;107m  Rationale:                                                                [0m
+    [0;30;107m  This check enforces adherence to recommended whitespace (codepoints 0020  [0m
+    [0;30;107m  and 00A0) glyph names according to the Adobe Glyph List.                  [0m
+
+    * [1;91;107mFAIL[0m: Glyph 0x00A0 is called "uni00A0.mlym": Change to "uni00A0" [code: non-compliant-00a0]
+
+
+    Result: [1;91;107mFAIL[0m
+
+ >> [1;35;107mcom.google.fonts/check/required_tables[0m
+    [0;36;107mFont contains all required tables?[0m
+    with NotoSerifMalayalam-Light.ttf
+
+    [1;35;107m  Rationale:                                                                [0m
+    [0;30;107m  Depending on the typeface and coverage of a font, certain tables are      [0m
+    [0;30;107m  recommended for optimum quality. For example, the performance of a        [0m
+    [0;30;107m  non-linear font is improved if the VDMX, LTSH, and hdmx tables are        [0m
+    [0;30;107m  present. Non-monospaced Latin fonts should have a kern table. A gasp      [0m
+    [0;30;107m  table is necessary if a designer wants to influence the sizes at which    [0m
+    [0;30;107m  grayscaling is used under Windows. A DSIG table containing a digital      [0m
+    [0;30;107m  signature helps ensure the integrity of the font file. Etc.               [0m
+
+    * [0;36;107mINFO[0m: This font contains the following optional tables [loca, GPOS, GSUB]
+
+
+    Result: [0;36;107mINFO[0m
+
+ >> [1;35;107mcom.google.fonts/check/superfamily/list[0m
+    [0;36;107mList all superfamily filepaths[0m
+    with NotoSerifMalayalam-Light.ttf
+
+    [1;35;107m  Rationale:                                                                [0m
+    [0;30;107m  This is a merely informative check that lists all sibling families        [0m
+    [0;30;107m  detected by fontbakery.                                                   [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  Only the fontfiles in these directories will be considered in             [0m
+    [0;30;107m  superfamily-level checks.                                                 [0m
+
+    * [0;36;107mINFO[0m: . [code: family-path]
+
+
+    Result: [0;36;107mINFO[0m
+
+ >> [1;35;107mcom.google.fonts/check/dsig[0m
+    [0;36;107mDoes the font have a DSIG table?[0m
+    with NotoSerifMalayalam-Light.ttf
+
+    [1;35;107m  Rationale:                                                                [0m
+    [0;30;107m  Microsoft Office 2013 and below products expect fonts to have a digital   [0m
+    [0;30;107m  signature declared in a DSIG table in order to implement OpenType         [0m
+    [0;30;107m  features. The EOL date for Microsoft Office 2013 products is 4/11/2023.   [0m
+    [0;30;107m  This issue does not impact Microsoft Office 2016 and above products.      [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  This checks verifies that this signature is available in the font.        [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  A fake signature is enough to address this issue. If needed, a dummy      [0m
+    [0;30;107m  table can be added to the font with the `gftools fix-dsig` script         [0m
+    [0;30;107m  available at https://github.com/googlefonts/gftools                       [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  Reference: https://github.com/googlefonts/fontbakery/issues/1845          [0m
+
+    * [1;91;107mFAIL[0m: This font lacks a digital signature (DSIG table). Some applications may require one (even if only a dummy placeholder) in order to work properly. You can add a DSIG table by running the `gftools fix-dsig` script. [code: lacks-signature]
+
+
+    Result: [1;91;107mFAIL[0m
+
+ >> [1;35;107mcom.google.fonts/check/gdef_mark_chars[0m
+    [0;36;107mCheck mark characters are in GDEF mark glyph class[0m
+    with NotoSerifMalayalam-Light.ttf
+
+    [1;35;107m  Rationale:                                                                [0m
+    [0;30;107m  Mark characters should be in the GDEF mark glyph class.                   [0m
+
+    * [1;30;103mWARN[0m: The following mark characters could be in the GDEF mark glyph class:
+	 U+0D02, U+0D03, U+0D3E, U+0D3F, U+0D40, U+0D41, U+0D42, U+0D43, U+0D44, U+0D46, U+0D47, U+0D48, U+0D4A, U+0D4B, U+0D4C and U+0D57 [code: mark-chars]
+
+
+    Result: [1;30;103mWARN[0m
+
+ >> [1;35;107mcom.google.fonts/check/gdef_non_mark_chars[0m
+    [0;36;107mCheck GDEF mark glyph class doesn't have characters that are not marks)[0m
+    with NotoSerifMalayalam-Light.ttf
+
+    [1;35;107m  Rationale:                                                                [0m
+    [0;30;107m  Glyphs in the GDEF mark glyph class become non-spacing and may be         [0m
+    [0;30;107m  repositioned if they have mark anchors.                                   [0m
+    [0;30;107m  Only combining mark glyphs should be in that class. Any non-mark glyph    [0m
+    [0;30;107m  must not be in that class, in particular spacing glyphs.                  [0m
+
+    * [1;30;103mWARN[0m: The following non-mark characters should not be in the GDEF mark glyph class:
+	 U+0D4E [code: non-mark-chars]
+
+
+    Result: [1;30;103mWARN[0m
+
+ >> [1;35;107mcom.google.fonts/check/outline_alignment_miss[0m
+    [0;36;107mAre there any misaligned on-curve points?[0m
+    with NotoSerifMalayalam-Light.ttf
+
+    [1;35;107m  Rationale:                                                                [0m
+    [0;30;107m  This test heuristically looks for on-curve points which are close to, but [0m
+    [0;30;107m  do not sit on, significant boundary coordinates. For example, a point     [0m
+    [0;30;107m  which has a Y-coordinate of 1 or -1 might be a misplaced baseline point.  [0m
+    [0;30;107m  As well as the baseline, the test also checks for points near the         [0m
+    [0;30;107m  x-height (but only for lower case Latin letters), cap-height, ascender    [0m
+    [0;30;107m  and descender Y coordinates.                                              [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  Not all such misaligned curve points are a mistake, and sometimes the     [0m
+    [0;30;107m  design may call for points in locations near the boundaries. As this test [0m
+    [0;30;107m  is liable to generate significant numbers of false positives, the test    [0m
+    [0;30;107m  will pass if there are more than 100 reported misalignments.              [0m
+
+    * [1;30;103mWARN[0m: The following glyphs have on-curve points which have potentially incorrect y coordinates:
+	* emlym: X=164.0,Y=-1.0 (should be at baseline 0?)
+	* eemlym: X=164.0,Y=-1.0 (should be at baseline 0?)
+	* aimlym: X=833.0,Y=-1.0 (should be at baseline 0?)
+	* damlym: X=158.0,Y=-2.0 (should be at baseline 0?)
+	* pamlym: X=164.0,Y=-1.0 (should be at baseline 0?)
+	* phamlym: X=164.0,Y=-1.0 (should be at baseline 0?)
+	* bhamlym: X=158.0,Y=-1.0 (should be at baseline 0?)
+	* rramlym: X=406.0,Y=1.0 (should be at baseline 0?)
+	* ssamlym: X=164.0,Y=-1.0 (should be at baseline 0?)
+	* hamlym: X=164.0,Y=-1.0 (should be at baseline 0?) and 61 more. [code: found-misalignments]
+
+
+    Result: [1;30;103mWARN[0m
+
+ >> [1;35;107mcom.google.fonts/check/outline_jaggy_segments[0m
+    [0;36;107mDo outlines contain any jaggy segments?[0m
+    with NotoSerifMalayalam-Light.ttf
+
+    [1;35;107m  Rationale:                                                                [0m
+    [0;30;107m  This test heuristically detects outline segments which form a             [0m
+    [0;30;107m  particularly small angle, indicative of an outline error. This may cause  [0m
+    [0;30;107m  false positives in cases such as extreme ink traps, so should be regarded [0m
+    [0;30;107m  as advisory and backed up by manual inspection.                           [0m
+
+    * [1;30;103mWARN[0m: The following glyphs have jaggy segments:
+	* gamamlym: B<<886.0,501.5>-<849.0,490.0>-<825.0,473.0>>/B<<825.0,473.0>-<863.0,491.0>-<904.0,491.0>> = 9.96503749768649
+	* hamamlym: B<<736.5,501.5>-<700.0,490.0>-<675.0,473.0>>/B<<675.0,473.0>-<713.0,491.0>-<754.0,491.0>> = 8.86952619049067
+	* jajamlym: B<<1534.0,159.0>-<1542.0,163.0>-<1550.0,166.0>>/B<<1550.0,166.0>-<1527.0,163.0>-<1495.5,161.0>> = 13.124637248410924
+	* jamlym: B<<604.0,159.0>-<612.0,163.0>-<620.0,166.0>>/B<<620.0,166.0>-<597.0,163.0>-<565.5,161.0>> = 13.124637248410924
+	* japrehalfmlym: B<<604.0,159.0>-<612.0,163.0>-<620.0,166.0>>/B<<620.0,166.0>-<597.0,163.0>-<565.5,161.0>> = 13.124637248410924
+	* madotabove: B<<242.5,501.5>-<206.0,490.0>-<181.0,473.0>>/B<<181.0,473.0>-<219.0,491.0>-<260.0,491.0>> = 8.86952619049067
+	* madotbelow: B<<242.5,501.5>-<206.0,490.0>-<181.0,473.0>>/B<<181.0,473.0>-<219.0,491.0>-<260.0,491.0>> = 8.86952619049067
+	* malamlym: B<<242.5,501.5>-<206.0,490.0>-<181.0,473.0>>/B<<181.0,473.0>-<219.0,491.0>-<260.0,491.0>> = 8.86952619049067
+	* mallvocalicmlym: B<<266.5,501.5>-<230.0,490.0>-<205.0,473.0>>/B<<205.0,473.0>-<243.0,491.0>-<284.0,491.0>> = 8.86952619049067
+	* malvocalicmlym: B<<266.5,501.5>-<230.0,490.0>-<205.0,473.0>>/B<<205.0,473.0>-<243.0,491.0>-<284.0,491.0>> = 8.86952619049067 and 19 more. [code: found-jaggy-segments]
+
+
+    Result: [1;30;103mWARN[0m
+
+ >> [1;35;107mcom.google.fonts/check/outline_semi_vertical[0m
+    [0;36;107mDo outlines contain any semi-vertical or semi-horizontal lines?[0m
+    with NotoSerifMalayalam-Light.ttf
+
+    [1;35;107m  Rationale:                                                                [0m
+    [0;30;107m  This test detects line segments which are nearly, but not quite, exactly  [0m
+    [0;30;107m  horizontal or vertical. Sometimes such lines are created by design, but   [0m
+    [0;30;107m  often they are indicative of a design error.                              [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  This test is disabled for italic styles, which often contain              [0m
+    [0;30;107m  nearly-upright lines.                                                     [0m
+
+    * [1;30;103mWARN[0m: The following glyphs have semi-vertical/semi-horizontal lines:
+	* question.mlym: L<<186.0,201.0>--<185.0,346.0>> [code: found-semi-vertical]
+
+
+    Result: [1;30;103mWARN[0m
+
+
+Total:
+
+    [1;97;101mERROR[0m: 0
+    [1;91;107mFAIL[0m: 2
+    [1;30;103mWARN[0m: 6
+    [0;36;107mINFO[0m: 2
+    [0;34;107mSKIP[0m: 17
+    [0;32;107mPASS[0m: 50
+
+
+DONE!
+
+    [1;30;107mMeaning of check results:[0m
+
+    An [1;97;101mERROR[0m is something wrong with FontBakery itself, possibly a bug.
+    A [1;91;107mFAIL[0m is a problem with the font that must be fixed.
+    A [1;30;103mWARN[0m is something that you should consider addressing.
+    An [0;36;107mINFO[0m result simply prints something useful. Typically stats.
+    A [0;32;107mPASS[0m means the font looks good for the given checking routine.
+    And a [0;34;107mSKIP[0m happens when the check does not apply to the given font.
+
+    If you get [1;97;101mERROR[0ms, please help us improve the tool by reporting them at
+    [1;36;107mhttps://github.com/googlefonts/fontbakery/issues[0m
+
+    (but other kinds of bug reports and/or
+     feature requests are also always welcome, of course!)
+

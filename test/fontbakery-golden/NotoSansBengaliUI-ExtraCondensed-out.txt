@@ -1,0 +1,192 @@
+Start ... running 77 individual check executions.
+ >> [1;35;107mcom.google.fonts/check/ots[0m
+    [0;36;107mChecking with ots-sanitize.[0m
+    with NotoSansBengaliUI-ExtraCondensed.ttf
+
+    * [1;30;103mWARN[0m: ots-sanitize passed this file, however warnings were printed:
+
+WARNING: Layout: tags aren't arranged alphabetically.
+WARNING: Layout: tags aren't arranged alphabetically.
+WARNING: Layout: tags aren't arranged alphabetically.
+WARNING: Layout: tags aren't arranged alphabetically.
+
+
+
+    Result: [1;30;103mWARN[0m
+
+ >> [1;35;107mcom.google.fonts/check/whitespace_glyphnames[0m
+    [0;36;107mFont has **proper** whitespace glyph names?[0m
+    with NotoSansBengaliUI-ExtraCondensed.ttf
+
+    [1;35;107m  Rationale:                                                                [0m
+    [0;30;107m  This check enforces adherence to recommended whitespace (codepoints 0020  [0m
+    [0;30;107m  and 00A0) glyph names according to the Adobe Glyph List.                  [0m
+
+    * [1;91;107mFAIL[0m: Glyph 0x00A0 is called "uni00A0.beng": Change to "uni00A0" [code: non-compliant-00a0]
+
+
+    Result: [1;91;107mFAIL[0m
+
+ >> [1;35;107mcom.google.fonts/check/required_tables[0m
+    [0;36;107mFont contains all required tables?[0m
+    with NotoSansBengaliUI-ExtraCondensed.ttf
+
+    [1;35;107m  Rationale:                                                                [0m
+    [0;30;107m  Depending on the typeface and coverage of a font, certain tables are      [0m
+    [0;30;107m  recommended for optimum quality. For example, the performance of a        [0m
+    [0;30;107m  non-linear font is improved if the VDMX, LTSH, and hdmx tables are        [0m
+    [0;30;107m  present. Non-monospaced Latin fonts should have a kern table. A gasp      [0m
+    [0;30;107m  table is necessary if a designer wants to influence the sizes at which    [0m
+    [0;30;107m  grayscaling is used under Windows. A DSIG table containing a digital      [0m
+    [0;30;107m  signature helps ensure the integrity of the font file. Etc.               [0m
+
+    * [0;36;107mINFO[0m: This font contains the following optional tables [loca, GPOS, GSUB]
+
+
+    Result: [0;36;107mINFO[0m
+
+ >> [1;35;107mcom.google.fonts/check/superfamily/list[0m
+    [0;36;107mList all superfamily filepaths[0m
+    with NotoSansBengaliUI-ExtraCondensed.ttf
+
+    [1;35;107m  Rationale:                                                                [0m
+    [0;30;107m  This is a merely informative check that lists all sibling families        [0m
+    [0;30;107m  detected by fontbakery.                                                   [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  Only the fontfiles in these directories will be considered in             [0m
+    [0;30;107m  superfamily-level checks.                                                 [0m
+
+    * [0;36;107mINFO[0m: . [code: family-path]
+
+
+    Result: [0;36;107mINFO[0m
+
+ >> [1;35;107mcom.google.fonts/check/xavgcharwidth[0m
+    [0;36;107mCheck if OS/2 xAvgCharWidth is correct.[0m
+    with NotoSansBengaliUI-ExtraCondensed.ttf
+
+    * [0;36;107mINFO[0m: OS/2 xAvgCharWidth is 526 but it should be 528 which corresponds to the average of the widths of all glyphs in the font. These are similar values, which may be a symptom of the slightly different calculation of the xAvgCharWidth value in font editors. There's further discussion on this at https://github.com/googlefonts/fontbakery/issues/1622
+
+
+    Result: [0;36;107mINFO[0m
+
+ >> [1;35;107mcom.google.fonts/check/family_naming_recommendations[0m
+    [0;36;107mFont follows the family naming recommendations?[0m
+    with NotoSansBengaliUI-ExtraCondensed.ttf
+
+    * [0;36;107mINFO[0m: Font does not follow some family naming recommendations:
+
+| Field | Value | Recommendation |
+|:----- |:----- |:-------------- |
+| Family Name | Noto Sans Bengali UI ExtraCondensed | exceeds max length (31) |
+ [code: bad-entries]
+
+
+    Result: [0;36;107mINFO[0m
+
+ >> [1;35;107mcom.google.fonts/check/dsig[0m
+    [0;36;107mDoes the font have a DSIG table?[0m
+    with NotoSansBengaliUI-ExtraCondensed.ttf
+
+    [1;35;107m  Rationale:                                                                [0m
+    [0;30;107m  Microsoft Office 2013 and below products expect fonts to have a digital   [0m
+    [0;30;107m  signature declared in a DSIG table in order to implement OpenType         [0m
+    [0;30;107m  features. The EOL date for Microsoft Office 2013 products is 4/11/2023.   [0m
+    [0;30;107m  This issue does not impact Microsoft Office 2016 and above products.      [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  This checks verifies that this signature is available in the font.        [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  A fake signature is enough to address this issue. If needed, a dummy      [0m
+    [0;30;107m  table can be added to the font with the `gftools fix-dsig` script         [0m
+    [0;30;107m  available at https://github.com/googlefonts/gftools                       [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  Reference: https://github.com/googlefonts/fontbakery/issues/1845          [0m
+
+    * [1;91;107mFAIL[0m: This font lacks a digital signature (DSIG table). Some applications may require one (even if only a dummy placeholder) in order to work properly. You can add a DSIG table by running the `gftools fix-dsig` script. [code: lacks-signature]
+
+
+    Result: [1;91;107mFAIL[0m
+
+ >> [1;35;107mcom.google.fonts/check/gdef_mark_chars[0m
+    [0;36;107mCheck mark characters are in GDEF mark glyph class[0m
+    with NotoSansBengaliUI-ExtraCondensed.ttf
+
+    [1;35;107m  Rationale:                                                                [0m
+    [0;30;107m  Mark characters should be in the GDEF mark glyph class.                   [0m
+
+    * [1;30;103mWARN[0m: The following mark characters could be in the GDEF mark glyph class:
+	 U+0982, U+0983, U+09BE, U+09BF, U+09C0, U+09C7, U+09C8, U+09CB, U+09CC, U+09D7, U+1CE1 and U+1CF7 [code: mark-chars]
+
+
+    Result: [1;30;103mWARN[0m
+
+ >> [1;35;107mcom.google.fonts/check/outline_colinear_vectors[0m
+    [0;36;107mDo any segments have colinear vectors?[0m
+    with NotoSansBengaliUI-ExtraCondensed.ttf
+
+    [1;35;107m  Rationale:                                                                [0m
+    [0;30;107m  This test looks for consecutive line segments which have the same angle.  [0m
+    [0;30;107m  This normally happens if an outline point has been added by accident.     [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  This test is not run for variable fonts, as they may legitimately have    [0m
+    [0;30;107m  colinear vectors.                                                         [0m
+
+    * [1;30;103mWARN[0m: The following glyphs have colinear vectors:
+	* aabeng: L<<-6.0,622.0>--<674.0,622.0>> -> L<<674.0,622.0>--<674.0,622.0>> [code: found-colinear-vectors]
+
+
+    Result: [1;30;103mWARN[0m
+
+ >> [1;35;107mcom.google.fonts/check/outline_jaggy_segments[0m
+    [0;36;107mDo outlines contain any jaggy segments?[0m
+    with NotoSansBengaliUI-ExtraCondensed.ttf
+
+    [1;35;107m  Rationale:                                                                [0m
+    [0;30;107m  This test heuristically detects outline segments which form a             [0m
+    [0;30;107m  particularly small angle, indicative of an outline error. This may cause  [0m
+    [0;30;107m  false positives in cases such as extreme ink traps, so should be regarded [0m
+    [0;30;107m  as advisory and backed up by manual inspection.                           [0m
+
+    * [1;30;103mWARN[0m: The following glyphs have jaggy segments:
+	* mabeng: L<<318.0,554.0>--<79.0,554.0>>/B<<79.0,554.0>-<165.0,535.0>-<199.5,478.0>> = 12.458246440004897
+	* manuktabeng: L<<318.0,554.0>--<79.0,554.0>>/B<<79.0,554.0>-<165.0,535.0>-<199.5,478.0>> = 12.458246440004897
+	* manuktahalfbeng: L<<318.0,554.0>--<79.0,554.0>>/B<<79.0,554.0>-<165.0,535.0>-<199.5,478.0>> = 12.458246440004897
+	* nasabeng: L<<534.0,554.0>--<258.0,554.0>>/B<<258.0,554.0>-<307.0,544.0>-<337.5,525.0>> = 11.534620653644708
+	* natthabeng: B<<406.5,420.0>-<385.0,467.0>-<348.0,525.0>>/B<<348.0,525.0>-<371.0,466.0>-<371.0,406.0>> = 11.237713108901215
+	* nnatthabeng: B<<412.5,420.0>-<391.0,467.0>-<354.0,525.0>>/B<<354.0,525.0>-<377.0,466.0>-<377.0,406.0>> = 11.237713108901215
+	* pasabeng: L<<669.0,554.0>--<393.0,554.0>>/B<<393.0,554.0>-<442.0,544.0>-<472.5,525.0>> = 11.534620653644708
+	* sabeng: L<<361.0,554.0>--<72.0,554.0>>/B<<72.0,554.0>-<128.0,545.0>-<161.0,526.0>> = 9.130176482278666
+	* salabeng: L<<361.0,554.0>--<80.0,554.0>>/B<<80.0,554.0>-<132.0,544.0>-<162.5,526.5>> = 10.885527054658743
+	* salubeng: L<<361.0,554.0>--<80.0,554.0>>/B<<80.0,554.0>-<132.0,544.0>-<162.5,526.5>> = 10.885527054658743 and 15 more. [code: found-jaggy-segments]
+
+
+    Result: [1;30;103mWARN[0m
+
+
+Total:
+
+    [1;97;101mERROR[0m: 0
+    [1;91;107mFAIL[0m: 2
+    [1;30;103mWARN[0m: 4
+    [0;36;107mINFO[0m: 4
+    [0;34;107mSKIP[0m: 17
+    [0;32;107mPASS[0m: 50
+
+
+DONE!
+
+    [1;30;107mMeaning of check results:[0m
+
+    An [1;97;101mERROR[0m is something wrong with FontBakery itself, possibly a bug.
+    A [1;91;107mFAIL[0m is a problem with the font that must be fixed.
+    A [1;30;103mWARN[0m is something that you should consider addressing.
+    An [0;36;107mINFO[0m result simply prints something useful. Typically stats.
+    A [0;32;107mPASS[0m means the font looks good for the given checking routine.
+    And a [0;34;107mSKIP[0m happens when the check does not apply to the given font.
+
+    If you get [1;97;101mERROR[0ms, please help us improve the tool by reporting them at
+    [1;36;107mhttps://github.com/googlefonts/fontbakery/issues[0m
+
+    (but other kinds of bug reports and/or
+     feature requests are also always welcome, of course!)
+

@@ -1,0 +1,12 @@
+---
+Automatic testing for 'instance_ttf,NotoSansHebrew-ExtraCondensedBlack.ttf', Version 3.000:
+E <name/version> The version is 'Version 3.000' but was expecting it to match '^Version ([0-2])\.(\d{3})(?:;.*.*)?$'
+E <name/manufacturer> The manufacturer is 'Google LLC' but was expecting 'Monotype Imaging Inc.'
+E <name/designer> The designer is 'Ben Nathan' but was expecting 'Monotype Design Team'
+E <name/description> The description is 'Designed by Ben Nathan' but was expecting it to match '^Designed by Monotype design team.$'
+E <name/designer_url> The designer url is 'https://hafontia.com/' but was expecting 'http://www.monotype.com/studio'
+E <cmap/script_required> The following 17 characters are missing from the font: 0022, 0027..0029, 002C, 003F, 0307..0308, 034F, 05EF, 2019, 201D, 2026, 2135..2138.
+E <advances/whitespace> The advance of U+00a0 (uni00A0, glyph 66) is 176, but expected 230.
+Found 7 errors.
+------
+Finished linting 1 file.

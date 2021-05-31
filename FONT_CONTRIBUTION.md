@@ -23,7 +23,7 @@ To be accepted as a Noto font, the font and the sources need to meet the followi
 1. proposed font has to address the needs of Android or web community
 2. the fonts need to be visually harmonized with both Roboto and Noto Sans fonts (for Sans version of fonts) or Noto Serif fonts (for Serif version of fonts). If there’s only a single font delivered then a low stroke modulation, low contrast font is preferred so it can match better with Roboto Sans and Noto Sans fonts.
 3. the license is compatible with Android
-4. delivery of a source .glyphs file is required. The source will be published as open source at https://github.com/googlefonts/noto-source/tree/master/src under then current license used by the sources there (as of 2017.10.18 it is the SIL Open Font License, version 1.1). Contributions made by corporations are covered by a different agreement than the one above. Please see CONTRIBUTING for more information.
+4. delivery of a source .glyphs file is required. The source will be published as open source at https://github.com/googlefonts/noto-source/tree/main/src under then current license used by the sources there (as of 2017.10.18 it is the SIL Open Font License, version 1.1). Contributions made by corporations are covered by a different agreement than the one above. Please see CONTRIBUTING for more information.
 5. be of high quality
 6. any and all codepoints in the font need to already exist in the [UNICODE Standard](http://www.unicode.org/versions/latest/). Then current standard needs to be fully supported.
 7. we want to be able to make variable fonts: If there are multiple weights or widths then these need to be interpolatable.

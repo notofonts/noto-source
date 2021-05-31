@@ -1,0 +1,233 @@
+Start ... running 77 individual check executions.
+ >> [1;35;107mcom.google.fonts/check/family/win_ascent_and_descent[0m
+    [0;36;107mChecking OS/2 usWinAscent & usWinDescent.[0m
+    with NotoSans-ExtraCondensedExtraBoldItalic.ttf
+
+    [1;35;107m  Rationale:                                                                [0m
+    [0;30;107m  A font's winAscent and winDescent values should be greater than the head  [0m
+    [0;30;107m  table's yMax, abs(yMin) values. If they are less than these values,       [0m
+    [0;30;107m  clipping can occur on Windows platforms                                   [0m
+    [0;30;107m  (https://github.com/RedHatBrand/Overpass/issues/33).                      [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  If the font includes tall/deep writing systems such as Arabic or          [0m
+    [0;30;107m  Devanagari, the winAscent and winDescent can be greater than the yMax and [0m
+    [0;30;107m  abs(yMin) to accommodate vowel marks.                                     [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  When the win Metrics are significantly greater than the upm, the          [0m
+    [0;30;107m  linespacing can appear too loose. To counteract this, enabling the OS/2   [0m
+    [0;30;107m  fsSelection bit 7 (Use_Typo_Metrics), will force Windows to use the OS/2  [0m
+    [0;30;107m  typo values instead. This means the font developer can control the        [0m
+    [0;30;107m  linespacing with the typo values, whilst avoiding clipping by setting the [0m
+    [0;30;107m  win values to values greater than the yMax and abs(yMin).                 [0m
+
+    * [1;91;107mFAIL[0m: OS/2.usWinAscent value should be equal or greater than 1098, but got 1069 instead [code: ascent]
+    * [1;91;107mFAIL[0m: OS/2.usWinDescent value should be equal or greater than 389, but got 293 instead. [code: descent]
+
+
+    Result: [1;91;107mFAIL[0m
+
+ >> [1;35;107mcom.google.fonts/check/required_tables[0m
+    [0;36;107mFont contains all required tables?[0m
+    with NotoSans-ExtraCondensedExtraBoldItalic.ttf
+
+    [1;35;107m  Rationale:                                                                [0m
+    [0;30;107m  Depending on the typeface and coverage of a font, certain tables are      [0m
+    [0;30;107m  recommended for optimum quality. For example, the performance of a        [0m
+    [0;30;107m  non-linear font is improved if the VDMX, LTSH, and hdmx tables are        [0m
+    [0;30;107m  present. Non-monospaced Latin fonts should have a kern table. A gasp      [0m
+    [0;30;107m  table is necessary if a designer wants to influence the sizes at which    [0m
+    [0;30;107m  grayscaling is used under Windows. A DSIG table containing a digital      [0m
+    [0;30;107m  signature helps ensure the integrity of the font file. Etc.               [0m
+
+    * [0;36;107mINFO[0m: This font contains the following optional tables [loca, GPOS, GSUB]
+
+
+    Result: [0;36;107mINFO[0m
+
+ >> [1;35;107mcom.google.fonts/check/superfamily/list[0m
+    [0;36;107mList all superfamily filepaths[0m
+    with NotoSans-ExtraCondensedExtraBoldItalic.ttf
+
+    [1;35;107m  Rationale:                                                                [0m
+    [0;30;107m  This is a merely informative check that lists all sibling families        [0m
+    [0;30;107m  detected by fontbakery.                                                   [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  Only the fontfiles in these directories will be considered in             [0m
+    [0;30;107m  superfamily-level checks.                                                 [0m
+
+    * [0;36;107mINFO[0m: . [code: family-path]
+
+
+    Result: [0;36;107mINFO[0m
+
+ >> [1;35;107mcom.google.fonts/check/family_naming_recommendations[0m
+    [0;36;107mFont follows the family naming recommendations?[0m
+    with NotoSans-ExtraCondensedExtraBoldItalic.ttf
+
+    * [0;36;107mINFO[0m: Font does not follow some family naming recommendations:
+
+| Field | Value | Recommendation |
+|:----- |:----- |:-------------- |
+| Family Name | Noto Sans ExtraCondensed ExtraBold | exceeds max length (31) |
+ [code: bad-entries]
+
+
+    Result: [0;36;107mINFO[0m
+
+ >> [1;35;107mcom.google.fonts/check/dsig[0m
+    [0;36;107mDoes the font have a DSIG table?[0m
+    with NotoSans-ExtraCondensedExtraBoldItalic.ttf
+
+    [1;35;107m  Rationale:                                                                [0m
+    [0;30;107m  Microsoft Office 2013 and below products expect fonts to have a digital   [0m
+    [0;30;107m  signature declared in a DSIG table in order to implement OpenType         [0m
+    [0;30;107m  features. The EOL date for Microsoft Office 2013 products is 4/11/2023.   [0m
+    [0;30;107m  This issue does not impact Microsoft Office 2016 and above products.      [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  This checks verifies that this signature is available in the font.        [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  A fake signature is enough to address this issue. If needed, a dummy      [0m
+    [0;30;107m  table can be added to the font with the `gftools fix-dsig` script         [0m
+    [0;30;107m  available at https://github.com/googlefonts/gftools                       [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  Reference: https://github.com/googlefonts/fontbakery/issues/1845          [0m
+
+    * [1;91;107mFAIL[0m: This font lacks a digital signature (DSIG table). Some applications may require one (even if only a dummy placeholder) in order to work properly. You can add a DSIG table by running the `gftools fix-dsig` script. [code: lacks-signature]
+
+
+    Result: [1;91;107mFAIL[0m
+
+ >> [1;35;107mcom.google.fonts/check/gdef_mark_chars[0m
+    [0;36;107mCheck mark characters are in GDEF mark glyph class[0m
+    with NotoSans-ExtraCondensedExtraBoldItalic.ttf
+
+    [1;35;107m  Rationale:                                                                [0m
+    [0;30;107m  Mark characters should be in the GDEF mark glyph class.                   [0m
+
+    * [1;30;103mWARN[0m: The following mark characters could be in the GDEF mark glyph class:
+	 U+0488, U+0489, U+1ABE, U+A670, U+A671 and U+A672 [code: mark-chars]
+
+
+    Result: [1;30;103mWARN[0m
+
+ >> [1;35;107mcom.google.fonts/check/points_out_of_bounds[0m
+    [0;36;107mCheck for points out of bounds.[0m
+    with NotoSans-ExtraCondensedExtraBoldItalic.ttf
+
+    * [1;30;103mWARN[0m: The following glyphs have coordinates which are out of bounds:
+	* ('uni02C3', 20.5, 605.0)
+	* ('uni02C3', 20.5, 718.0)
+	* ('uni02C3', 20.5, 783.5) and ('uni02C3', 20.5, 540.0)
+
+This happens a lot when points are not extremes, which is usually bad. However, fixing this alert by adding points on extremes may do more harm than good, especially with italics, calligraphic-script, handwriting, rounded and other fonts. So it is common to ignore this message. [code: points-out-of-bounds]
+
+
+    Result: [1;30;103mWARN[0m
+
+ >> [1;35;107mcom.google.fonts/check/glyf_nested_components[0m
+    [0;36;107mCheck glyphs do not have components which are themselves components.[0m
+    with NotoSans-ExtraCondensedExtraBoldItalic.ttf
+
+    [1;35;107m  Rationale:                                                                [0m
+    [0;30;107m  There have been bugs rendering variable fonts with nested components.     [0m
+    [0;30;107m  Additionally, some static fonts with nested components have been reported [0m
+    [0;30;107m  to have rendering and printing issues.                                    [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  For more info, see:                                                       [0m
+    [0;30;107m  * https://github.com/googlefonts/fontbakery/issues/2961                   [0m
+    [0;30;107m  * https://github.com/arrowtype/recursive/issues/412                       [0m
+
+    * [1;91;107mFAIL[0m: The following glyphs have components which themselves are component glyphs:
+	* uni03FD
+	* uni03FF
+	* uni1D1E
+	* uni1D46
+	* uni1D4A
+	* uni1D4B
+	* uni1D59
+	* uni1D9B
+	* uni1D9F
+	* uni1DA2 and 144 more. [code: found-nested-components]
+
+
+    Result: [1;91;107mFAIL[0m
+
+ >> [1;35;107mcom.google.fonts/check/outline_colinear_vectors[0m
+    [0;36;107mDo any segments have colinear vectors?[0m
+    with NotoSans-ExtraCondensedExtraBoldItalic.ttf
+
+    [1;35;107m  Rationale:                                                                [0m
+    [0;30;107m  This test looks for consecutive line segments which have the same angle.  [0m
+    [0;30;107m  This normally happens if an outline point has been added by accident.     [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  This test is not run for variable fonts, as they may legitimately have    [0m
+    [0;30;107m  colinear vectors.                                                         [0m
+
+    * [1;30;103mWARN[0m: The following glyphs have colinear vectors:
+	* K: L<<228.0,409.0>--<268.0,482.0>> -> L<<268.0,482.0>--<423.0,714.0>>
+	* Kappa: L<<228.0,409.0>--<268.0,482.0>> -> L<<268.0,482.0>--<423.0,714.0>>
+	* uni0136: L<<228.0,409.0>--<268.0,482.0>> -> L<<268.0,482.0>--<423.0,714.0>>
+	* uni0198: L<<228.0,409.0>--<266.0,479.0>> -> L<<266.0,479.0>--<374.0,642.0>>
+	* uni01E8: L<<228.0,409.0>--<268.0,482.0>> -> L<<268.0,482.0>--<423.0,714.0>>
+	* uni03CF: L<<228.0,409.0>--<268.0,482.0>> -> L<<268.0,482.0>--<423.0,714.0>>
+	* uni1D37: L<<201.20556640625,532.3900146484375>--<227.20654296875,576.188232421875>> -> L<<227.20654296875,576.188232421875>--<327.9603271484375,715.382568359375>>
+	* uni1E10: L<<166.0,0.0>--<163.0,0.0>> -> L<<163.0,0.0>--<-3.0,0.0>>
+	* uni1E30: L<<228.0,409.0>--<268.0,482.0>> -> L<<268.0,482.0>--<423.0,714.0>>
+	* uni1E32: L<<228.0,409.0>--<268.0,482.0>> -> L<<268.0,482.0>--<423.0,714.0>> and 18 more. [code: found-colinear-vectors]
+
+
+    Result: [1;30;103mWARN[0m
+
+ >> [1;35;107mcom.google.fonts/check/outline_jaggy_segments[0m
+    [0;36;107mDo outlines contain any jaggy segments?[0m
+    with NotoSans-ExtraCondensedExtraBoldItalic.ttf
+
+    [1;35;107m  Rationale:                                                                [0m
+    [0;30;107m  This test heuristically detects outline segments which form a             [0m
+    [0;30;107m  particularly small angle, indicative of an outline error. This may cause  [0m
+    [0;30;107m  false positives in cases such as extreme ink traps, so should be regarded [0m
+    [0;30;107m  as advisory and backed up by manual inspection.                           [0m
+
+    * [1;30;103mWARN[0m: The following glyphs have jaggy segments:
+	* four.dnom: B<<153.5,278.5>-<156.0,290.0>-<160.0,305.0>>/B<<160.0,305.0>-<154.0,293.0>-<148.0,281.0>> = 11.633633998940427
+	* four.numr: B<<214.5,565.5>-<217.0,577.0>-<221.0,592.0>>/B<<221.0,592.0>-<215.0,580.0>-<209.0,568.0>> = 11.633633998940427
+	* onequarter: B<<601.5,278.5>-<604.0,290.0>-<608.0,305.0>>/B<<608.0,305.0>-<602.0,293.0>-<596.0,281.0>> = 11.633633998940427
+	* scriptg: B<<41.0,165.0>-<52.0,193.0>-<64.0,209.0>>/B<<64.0,209.0>-<48.0,193.0>-<33.5,179.0>> = 8.13010235415596
+	* threequarters: B<<603.5,278.5>-<606.0,290.0>-<610.0,305.0>>/B<<610.0,305.0>-<604.0,293.0>-<598.0,281.0>> = 11.633633998940427
+	* uni0194: B<<254.5,384.5>-<253.0,349.0>-<249.0,310.0>>/B<<249.0,310.0>-<257.0,340.0>-<266.5,371.0>> = 9.075403592708579
+	* uni019B: B<<220.5,244.0>-<221.0,262.0>-<221.0,280.0>>/B<<221.0,280.0>-<217.0,264.0>-<211.0,246.0>> = 14.036243467926484
+	* uni0377: B<<194.0,325.0>-<190.0,309.0>-<186.0,298.0>>/L<<186.0,298.0>--<344.0,549.0>> = 12.206572696623905
+	* uni0394: B<<304.5,523.0>-<305.0,545.0>-<307.0,578.0>>/B<<307.0,578.0>-<302.0,558.0>-<293.0,528.0>> = 10.5680142090093
+	* uni1D27: B<<239.5,307.0>-<240.0,327.0>-<243.0,344.0>>/B<<243.0,344.0>-<232.0,317.0>-<227.0,304.0>> = 12.158366020641095 and 19 more. [code: found-jaggy-segments]
+
+
+    Result: [1;30;103mWARN[0m
+
+
+Total:
+
+    [1;97;101mERROR[0m: 0
+    [1;91;107mFAIL[0m: 3
+    [1;30;103mWARN[0m: 4
+    [0;36;107mINFO[0m: 3
+    [0;34;107mSKIP[0m: 19
+    [0;32;107mPASS[0m: 48
+
+
+DONE!
+
+    [1;30;107mMeaning of check results:[0m
+
+    An [1;97;101mERROR[0m is something wrong with FontBakery itself, possibly a bug.
+    A [1;91;107mFAIL[0m is a problem with the font that must be fixed.
+    A [1;30;103mWARN[0m is something that you should consider addressing.
+    An [0;36;107mINFO[0m result simply prints something useful. Typically stats.
+    A [0;32;107mPASS[0m means the font looks good for the given checking routine.
+    And a [0;34;107mSKIP[0m happens when the check does not apply to the given font.
+
+    If you get [1;97;101mERROR[0ms, please help us improve the tool by reporting them at
+    [1;36;107mhttps://github.com/googlefonts/fontbakery/issues[0m
+
+    (but other kinds of bug reports and/or
+     feature requests are also always welcome, of course!)
+

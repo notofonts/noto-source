@@ -22,7 +22,7 @@ import shutil
 import xml.etree.ElementTree as etree
 
 
-BLACKLIST = []
+EXCLUDED = []
 
 
 def build_family(family):
@@ -46,7 +46,7 @@ def find_sources(family):
     for shard in os.listdir('src'):
         path = os.path.join('src', shard)
         if shard.startswith(family) and path != main_shard:
-            if shard.split('-')[0] in BLACKLIST:
+            if shard.split('-')[0] in EXCLUDED:
                 continue
             if 'Display' in shard or 'UI' in shard:
                 continue

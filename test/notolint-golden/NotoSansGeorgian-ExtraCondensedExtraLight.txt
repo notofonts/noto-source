@@ -1,0 +1,12 @@
+---
+Automatic testing for 'instance_ttf,NotoSansGeorgian-ExtraCondensedExtraLight.ttf', Version 2.001:
+E <name/manufacturer> The manufacturer is 'Google LLC' but was expecting 'Monotype Imaging Inc.'
+E <name/designer> The designer is 'Monotype Design Team, Akaki Razmadze' but was expecting 'Monotype Design Team'
+E <name/description> The description is 'Designed by Monotype design team. Georgian characters design by Akaki Razmadze.' but was expecting it to match '^Designed by Monotype design team.$'
+E <cmap/script_required> The following 31 characters are missing from the font: 0021..0022, 0025, 0028..0029, 002C, 002E, 003A..003B, 003F, 00AB, 00B7, 00BB, 2014, 201C, 201E, 2026, 2056..205E, 2E2A..2E2D, 2E31.
+W <cmap/script_unexpected> The following 4 chars were not expected in the font: 0301..0302, 0304, 0308
+E <paths/intersection> The glyph 'uni1C90' has intersecting outlines: intersection ((49.5, 281.5), (56.0, 318.0), (67.0, 352.0)) and ((70.0, 363.0), (68.0, 357.0), (67.0, 352.0))
+Found 5 errors.
+Found 1 warning.
+------
+Finished linting 1 file.

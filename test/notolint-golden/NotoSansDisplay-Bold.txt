@@ -1,0 +1,19 @@
+---
+Automatic testing for 'instance_ttf,NotoSansDisplay-Bold.ttf', Version 2.003:
+E <name/family> The family is 'Noto Sans Display' but was expecting 'Noto Sans Disp'
+E <name/preferred_family> The preferred family is not set, but was expecting 'Noto Sans Display'
+E <cmap/variants> Font contains 1 characters with standard variants, but has no variation selector cmap table (0030).
+E <bounds/glyph/ymin> Real yMin for glyph 2480 (scriptg) is -389, which is lower than the font's sTypoDescent (-293), resulting in clipping.
+E <bounds/glyph/ymin> Real yMin for glyph 2643 (uni2E10) is -346, which is lower than the font's sTypoDescent (-293), resulting in clipping.
+E <bounds/glyph/ymin> Real yMin for glyph 2671 (uni2E11) is -346, which is lower than the font's sTypoDescent (-293), resulting in clipping.
+E <bounds/glyph/ymin> Real yMin for glyph 2704 (uni2E3E) is -323, which is lower than the font's sTypoDescent (-293), resulting in clipping.
+E <bounds/glyph/ymin> Real yMin for glyph 3207 (uniA670) is -297, which is lower than the font's sTypoDescent (-293), resulting in clipping.
+E <bounds/glyph/ymin> Real yMin for glyph 3208 (uniA671) is -309, which is lower than the font's sTypoDescent (-293), resulting in clipping.
+E <bounds/glyph/ymin> Real yMin for glyph 3209 (uniA672) is -384, which is lower than the font's sTypoDescent (-293), resulting in clipping.
+E <bounds/font/ymin> Real yMin is -389, but it should be greater than or equal to the value of Descent in 'hhea' table, which is -293.
+E <paths/intersection> The glyph 'uniA746' has intersecting outlines: intersection ((402.0, 463.0), (79.0, 363.0)) and ((402.0, 463.0), (402.0, 125.0))
+E <paths/intersection> The glyph 'uniA64A' has intersecting outlines: start and end segments match: (383.0, 453.0)
+E <paths/intersection> The glyph 'uniA7C3' has intersecting outlines: start and end segments match: (547.0, 24.0)
+Found 14 errors.
+------
+Finished linting 1 file.

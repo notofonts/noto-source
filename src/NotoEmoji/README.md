@@ -5,4 +5,4 @@ fonts.
 
 When you change this black-and-white font, please keep the glyph
 metrics (especially the advance width) and the overall design style in
-sync with the [SVG sources for the color glyphs](https://github.com/googlei18n/noto-emoji/tree/master/svg).
+sync with the [SVG sources for the color glyphs](https://github.com/googlefonts/noto-emoji/tree/main/svg).
