@@ -1,0 +1,168 @@
+@consonant_batak = [ a-batak aSima-batak ha-batak haSima-batak haMandai-batak ba-batak karoBa-batak pa-batak paSima-batak na-batak naMandai-batak wa-batak waSima-batak pakpakWa-batak ga-batak gaSima-batak ja-batak da-batak ra-batak raSima-batak ma-batak maSima-batak taSouth-batak taNorth-batak sa-batak saSima-batak saMandai-batak ya-batak yaSima-batak nga-batak la-batak laSima-batak nya-batak ca-batak nda-batak mba-batak ];
+
+@virama_batak = [ pangolat-batak panongonan-batak ];
+
+@vowelAbove_batak = [ eSignPak-batak eeSign-batak uSignSima-batak oSignKaro-batak ];
+
+@vowelBelow_batak = [ uSign-batak uSign-batak.paMandai uSign-batak.simple ];
+
+@vowelPost_batak = [ eSign-batak iSign-batak iSignKaro-batak oSign-batak ];
+
+@vowelSign_batak = [ @vowelAbove_batak @vowelBelow_batak @vowelPost_batak ];
+
+@consonantSign_batak = [ ngSign-batak hSign-batak ];
+
+@vowelOrConsonantMark = [ @vowelAbove_batak @vowelBelow_batak @consonantSign_batak ];
+
+@post_base_batak = [ @vowelPost_batak @virama_batak ];
+
+@below_base_batak = [ @vowelBelow_batak
+ ];
+
+# Prefix: Languagesystems
+languagesystem batk dflt;
+languagesystem batk BTX;
+languagesystem batk BTM;
+
+# Prefix: lookups
+lookup deleteVowel {
+    lookupflag 0;
+	sub eSign-batak by batak_null;
+    sub eSignPak-batak by batak_null;
+    sub eeSign-batak by batak_null;
+    sub iSign-batak by batak_null;
+    sub iSignKaro-batak by batak_null;
+    sub oSign-batak by batak_null; 
+    sub oSignKaro-batak by batak_null; 
+    sub uSign-batak by batak_null;
+    sub uSignSima-batak by batak_null;
+} deleteVowel;
+
+lookup eSignVirama {
+    lookupflag 0;
+
+	sub pangolat-batak by eSign-batak pangolat-batak;
+	sub panongonan-batak by eSign-batak panongonan-batak;
+} eSignVirama;
+
+lookup eSignPakVirama {
+    lookupflag 0;
+
+	sub pangolat-batak by eSignPak-batak pangolat-batak;
+	sub panongonan-batak by eSignPak-batak panongonan-batak;
+} eSignPakVirama;
+
+lookup eeSignVirama {
+    lookupflag 0;
+
+	sub pangolat-batak by eeSign-batak pangolat-batak;
+	sub panongonan-batak by eeSign-batak panongonan-batak;
+} eeSignVirama;
+
+lookup iSignVirama {
+    lookupflag 0;
+
+	sub pangolat-batak by iSign-batak pangolat-batak;
+	sub panongonan-batak by iSign-batak panongonan-batak;
+} iSignVirama;
+
+lookup iSignKaroVirama {
+    lookupflag 0;
+
+	sub pangolat-batak by iSignKaro-batak pangolat-batak;
+	sub panongonan-batak by iSignKaro-batak panongonan-batak;
+} iSignKaroVirama;
+
+lookup oSignVirama {
+    lookupflag 0;
+
+	sub pangolat-batak by oSign-batak pangolat-batak;
+	sub panongonan-batak by oSign-batak panongonan-batak;
+} oSignVirama;
+
+lookup oSignKaroVirama {
+    lookupflag 0;
+
+	sub pangolat-batak by oSignKaro-batak pangolat-batak;
+	sub panongonan-batak by oSignKaro-batak panongonan-batak;
+} oSignKaroVirama;
+
+lookup uSignVirama {
+    lookupflag 0;
+
+	sub pangolat-batak by uSign-batak pangolat-batak;
+	sub panongonan-batak by uSign-batak panongonan-batak;
+} uSignVirama;
+
+lookup uSignSimaVirama {
+    lookupflag 0;
+
+	sub pangolat-batak by uSignSima-batak pangolat-batak;
+	sub panongonan-batak by uSignSima-batak panongonan-batak;
+} uSignSimaVirama;
+
+feature rclt {
+script batk;
+lookup reorder_vowels {
+    lookupflag UseMarkFilteringSet @vowelOrConsonantMark;
+
+	sub eSign-batak' lookup deleteVowel @consonant_batak' @virama_batak' lookup eSignVirama ;
+	sub eSignPak-batak' lookup deleteVowel @consonant_batak' @virama_batak' lookup eSignPakVirama ;
+	sub eeSign-batak' lookup deleteVowel @consonant_batak' @virama_batak' lookup eeSignVirama ;
+	sub iSign-batak' lookup deleteVowel @consonant_batak' @virama_batak' lookup iSignVirama ;
+	sub iSignKaro-batak' lookup deleteVowel @consonant_batak' @virama_batak' lookup iSignKaroVirama ;
+	sub oSign-batak' lookup deleteVowel @consonant_batak' @virama_batak' lookup oSignVirama ;
+	sub oSignKaro-batak' lookup deleteVowel @consonant_batak' @virama_batak' lookup oSignKaroVirama ;
+	sub uSign-batak' lookup deleteVowel @consonant_batak' @virama_batak' lookup uSignVirama ;
+	sub uSignSima-batak' lookup deleteVowel @consonant_batak' @virama_batak' lookup uSignSimaVirama ;
+} reorder_vowels;
+
+language BTX;
+lookup karo_ja_batak {
+    lookupflag 0;
+
+    sub ja-batak by ja-batak.btx;
+} karo_ja_batak;
+    
+language BTM;
+lookup flip_uSign_batak {
+    lookupflag UseMarkFilteringSet @below_base_batak;
+
+    sub pa-batak uSign-batak' by uSign-batak.paMandai;
+} flip_uSign_batak;
+} rclt;
+
+feature liga {
+lookup liga_uSign_batak {
+    lookupflag UseMarkFilteringSet @below_base_batak;
+
+    sub a-batak uSign-batak by a_uSign-batak;
+    sub ha-batak uSign-batak by ha_uSign-batak;
+    sub haMandai-batak uSign-batak by haMandai_uSign-batak;
+    sub ba-batak uSign-batak by ba_uSign-batak;
+    sub karoBa-batak uSign-batak by karoBa_uSign-batak;
+    sub na-batak uSign-batak by na_uSign-batak;
+    sub naMandai-batak uSign-batak by naMandai_uSign-batak;
+    sub wa-batak uSign-batak by wa_uSign-batak;
+    sub ga-batak uSign-batak by ga_uSign-batak;
+    sub ja-batak uSign-batak by ja_uSign-batak;
+    sub ja-batak.btx uSign-batak by ja_uSign-batak.btx;
+    sub da-batak uSign-batak by da_uSign-batak;
+    sub ra-batak uSign-batak by ra_uSign-batak;
+    sub ma-batak uSign-batak by ma_uSign-batak;
+    sub maSima-batak uSign-batak by maSima_uSign-batak;
+    sub taSouth-batak uSign-batak by taSouth_uSign-batak;
+    sub taNorth-batak uSign-batak by taNorth_uSign-batak;
+    sub saMandai-batak uSign-batak by saMandai_uSign-batak;
+    sub nga-batak uSign-batak by nga_uSign-batak;
+    sub la-batak uSign-batak by la_uSign-batak;
+    sub nya-batak uSign-batak by nya_uSign-batak;
+} liga_uSign_batak;
+
+lookup simple_uSign_batak {
+    lookupflag UseMarkFilteringSet @below_base_batak;
+
+    sub [aSima-batak haSima-batak waSima-batak gaSima-batak raSima-batak maSima-batak] uSign-batak' by uSign-batak.simple;
+} simple_uSign_batak;
+} liga;
+
