@@ -1,6 +1,6 @@
-@consonant_batak = [ a-batak aSima-batak ha-batak haSima-batak haMandai-batak ba-batak karoBa-batak pa-batak paSima-batak na-batak naMandai-batak wa-batak waSima-batak pakpakWa-batak ga-batak gaSima-batak ja-batak da-batak ra-batak raSima-batak ma-batak maSima-batak taSouth-batak taNorth-batak sa-batak saSima-batak saMandai-batak ya-batak yaSima-batak nga-batak la-batak laSima-batak nya-batak ca-batak nda-batak mba-batak  ];
+@consonant_batak = [ a-batak aSima-batak ha-batak haSima-batak haMandai-batak ba-batak karoBa-batak pa-batak paSima-batak na-batak naMandai-batak wa-batak waSima-batak pakpakWa-batak ga-batak gaSima-batak ja-batak da-batak ra-batak raSima-batak ma-batak maSima-batak taSouth-batak taNorth-batak sa-batak saSima-batak saMandai-batak ya-batak yaSima-batak nga-batak la-batak laSima-batak nya-batak ca-batak nda-batak mba-batak ];
 
-@virama_batak = [ pangolat-batak panongonan-batak  ];
+@virama_batak = [ pangolat-batak panongonan-batak ];
 
 @vowelAbove_batak = [ eSignPak-batak eeSign-batak uSignSima-batak oSignKaro-batak ];
 
@@ -101,7 +101,6 @@ lookup uSignSimaVirama {
 	sub panongonan-batak by uSignSima-batak panongonan-batak;
 } uSignSimaVirama;
 
-
 feature rclt {
 script batk;
 lookup reorder_vowels {
@@ -166,3 +165,4 @@ lookup simple_uSign_batak {
     sub [aSima-batak haSima-batak waSima-batak gaSima-batak raSima-batak maSima-batak] uSign-batak' by uSign-batak.simple;
 } simple_uSign_batak;
 } liga;
+
