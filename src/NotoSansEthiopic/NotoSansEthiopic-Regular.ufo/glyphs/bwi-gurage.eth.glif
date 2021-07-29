@@ -1,11 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="bwi-gurage.eth" format="2">
-	<advance width="895"/>
+	<advance width="973"/>
 	<unicode hex="1E7F3"/>
 	<anchor x="435" y="724" name="top"/>
 	<outline>
-		<component base="bi.eth"/>
-		<component base="rightbulbsmall" xOffset="500" yOffset="100"/>
+		<component base="ba.eth"/>
+		<component base="rightdoubleflag" xOffset="445"/>
+		<component base="ballbig" xOffset="587" yOffset="102"/>
+		<contour>
+			<point x="476" y="413" type="line"/>
+			<point x="675" y="413" type="line"/>
+			<point x="675" y="486" type="line"/>
+			<point x="476" y="486" type="line"/>
+		</contour>
 	</outline>
 	<lib>
 		<dict>
@@ -15,13 +22,21 @@
 					<key>alignment</key>
 					<integer>-1</integer>
 					<key>index</key>
-					<integer>0</integer>
+					<integer>1</integer>
 					<key>name</key>
-					<string>bi.eth</string>
+					<string>rightdoubleflag</string>
+				</dict>
+				<dict>
+					<key>alignment</key>
+					<integer>-1</integer>
+					<key>index</key>
+					<integer>2</integer>
+					<key>name</key>
+					<string>ballbig</string>
 				</dict>
 			</array>
 			<key>com.schriftgestaltung.Glyphs.lastChange</key>
-			<string>2021-06-11 17:51:18 +0000</string>
+			<string>2021-07-29 14:28:15 +0000</string>
 			<key>public.markColor</key>
 			<string>0.97,0.9,0,1</string>
 		</dict>
