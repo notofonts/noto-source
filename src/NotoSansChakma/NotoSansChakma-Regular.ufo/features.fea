@@ -1,0 +1,702 @@
+@MA1 = [ oMark_chakma auMark_chakma virama_chakma u_chakma.below kaa_chakma.below khaa_chakma.below gaa_chakma.below ghaa_chakma.below ngaa_chakma.below caa_chakma.below chaa_chakma.below jaa_chakma.below jhaa_chakma.below nyaa_chakma.below ttaa_chakma.below tthaa_chakma.below ddaa_chakma.below ddhaa_chakma.below nnaa_chakma.below taa_chakma.below thaa_chakma.below daa_chakma.below dhaa_chakma.below naa_chakma.below paa_chakma.below phaa_chakma.below baa_chakma.below bhaa_chakma.below maa_chakma.below yaa_chakma.below raa_chakma.below raa_chakma.below.curve raa.below_oMark raa.below_oMark.short raa.below_uMark raa.below_uMark.short raa.below_uuMark raa.below_uuMark.short laa_chakma.below laa_chakma.below.alt waa_chakma.below saa_chakma.below haa_chakma.below haa_chakma.below.alt lhaa_chakma.below raa_chakma.below_uuMatra uMatra_chakma uMatra_chakma.alt uuMatra_chakma uuMatra_chakma.alt ];
+
+@MA2 = [ aaMatra_chakma eiMatra_chakma shorteiMatra yyaa_chakma.post aa.below_yyaa.post i.below_yyaa.post shorteiMatra_yyaa.post ];
+
+@MA3 = [ candrabindu_chakma candrabindu_visarga candrabindu_iMatra candrabindu_iMatra_aMatra candrabindu_iiMatra candrabindu_iiMatra_aMatra anusvara_chakma anusvara_candrabindu anusvara_iMatra anusvara_iMatra_aMatra anusvara_iiMatra anusvara_iiMatra_aMatra visarga_iMatra visarga_iMatra_aMatra visarga_iiMatra visarga_iiMatra_aMatra oiMatra_candrabindu oiMatra_candrabindu.short oiMatra_anusvara oiMatra_anusvara.short oiMatra_visarga oiMatra_visarga.short oiMatra_maayyaa oiMatra_maayyaa.short visarga_chakma aiMatra_candrabindu aiMatra_candrabindu.short aiMatra_maayyaa aiMatra_maayyaa.short aiMatra_anusvara aiMatra_anusvara.short aiMatra_visarga aiMatra_visarga.short aMatra_chakma iMatra_chakma iMatra_aMatra iiMatra_chakma iiMatra_aMatra oiMatra_chakma maayyaa_chakma maayyaa_iMatra maayyaa_iMatra_aMatra maayyaa_iiMatra maayyaa_iiMatra_aMatra aiMatra_chakma aiMatra_chakma.short  ];
+
+@BASES = [ aa_chakma i_chakma u_chakma e_chakma kaa_chakma khaa_chakma gaa_chakma ghaa_chakma ngaa_chakma caa_chakma chaa_chakma jaa_chakma jhaa_chakma nyaa_chakma ttaa_chakma tthaa_chakma ddaa_chakma ddhaa_chakma nnaa_chakma taa_chakma thaa_chakma daa_chakma dhaa_chakma naa_chakma paa_chakma phaa_chakma baa_chakma bhaa_chakma maa_chakma yyaa_chakma yaa_chakma raa_chakma laa_chakma waa_chakma saa_chakma haa_chakma lhaa_chakma jhaa_yyaa.post nyaa_raa.below nyaa_yyaa.post ttaa_yyaa.post ddaa_yyaa.post ddhaa_yyaa.post ghaa_chakma.alt chaa_chakma.alt jaa_chakma.alt nnaa_chakma.alt naa_chakma.alt yaa_chakma.alt yaa_chakma.alt2 ttaa_aaMatra ];
+
+@MARKFILTER0 = [ aiMatra_chakma oiMatra_chakma ];
+
+@MARKFILTER1 = [ aaMatra_chakma eiMatra_chakma shorteiMatra yyaa_chakma.post shorteiMatra_yyaa.post aa.below_yyaa.post i.below_yyaa.post ];
+
+@MARKFILTER2 = [ yyaa_chakma.post raa_chakma.below raa_chakma.below.curve ];
+
+@MARKFILTER_RA = [ raa_chakma.below raa.below_oMark ];
+
+@MARKFILTER_U = [ uMatra_chakma uMatra_chakma.alt ];
+
+# Prefix: Languagesystems
+languagesystem cakm dflt;
+
+# Prefix: distLookups
+lookup AddDist_aaMatra_chakma_Regular {
+	pos aa_chakma' 353;
+	pos i_chakma' 311;
+	pos u_chakma' 379;
+	pos e_chakma' 358;
+	pos kaa_chakma' 359;
+	pos khaa_chakma' 360;
+	pos gaa_chakma' 360;
+	pos ghaa_chakma' 358;
+	pos ngaa_chakma' 330;
+	pos caa_chakma' 357;
+	pos chaa_chakma' 369;
+	pos jaa_chakma' 362;
+	pos jhaa_chakma' 308;
+	pos nyaa_chakma' 359;
+	pos ttaa_chakma' 364;
+	pos tthaa_chakma' 358;
+	pos ddaa_chakma' 359;
+	pos ddhaa_chakma' 360;
+	pos nnaa_chakma' 358;
+	pos taa_chakma' 357;
+	pos thaa_chakma' 358;
+	pos daa_chakma' 357;
+	pos dhaa_chakma' 357;
+	pos naa_chakma' 337;
+	pos paa_chakma' 357;
+	pos phaa_chakma' 356;
+	pos baa_chakma' 351;
+	pos bhaa_chakma' 386;
+	pos maa_chakma' 358;
+	pos yyaa_chakma' 358;
+	pos yaa_chakma' 365;
+	pos raa_chakma' 394;
+	pos laa_chakma' 358;
+	pos waa_chakma' 359;
+	pos saa_chakma' 357;
+	pos haa_chakma' 353;
+	pos vaa_chakma' 351;
+	pos lhaa_chakma' 276;
+	pos jhaa_yyaa.post' 398;
+	pos nyaa_raa.below' 369;
+	pos nyaa_yyaa.post' 398;
+	pos ttaa_yyaa.post' 398;
+	pos ddaa_yyaa.post' 398;
+	pos ddhaa_yyaa.post' 398;
+	pos ghaa_chakma.alt' 379;
+	pos chaa_chakma.alt' 356;
+	pos jaa_chakma.alt' 393;
+	pos nnaa_chakma.alt' 358;
+	pos naa_chakma.alt' 400;
+	pos yaa_chakma.alt' 398;
+	pos yaa_chakma.alt2' 312;
+} AddDist_aaMatra_chakma_Regular;
+
+
+lookup AddDist_eiMatra_chakma_Regular {
+	pos aa_chakma' 585;
+	pos i_chakma' 509;
+	pos u_chakma' 556;
+	pos e_chakma' 595;
+	pos kaa_chakma' 590;
+	pos khaa_chakma' 582;
+	pos gaa_chakma' 581;
+	pos ghaa_chakma' 589;
+	pos ngaa_chakma' 531;
+	pos caa_chakma' 598;
+	pos chaa_chakma' 570;
+	pos jaa_chakma' 598;
+	pos jhaa_chakma' 509;
+	pos nyaa_chakma' 577;
+	pos ttaa_chakma' 565;
+	pos tthaa_chakma' 559;
+	pos ddaa_chakma' 570;
+	pos ddhaa_chakma' 578;
+	pos nnaa_chakma' 589;
+	pos taa_chakma' 588;
+	pos thaa_chakma' 589;
+	pos daa_chakma' 558;
+	pos dhaa_chakma' 585;
+	pos naa_chakma' 538;
+	pos paa_chakma' 558;
+	pos phaa_chakma' 557;
+	pos baa_chakma' 598;
+	pos bhaa_chakma' 566;
+	pos maa_chakma' 559;
+	pos yyaa_chakma' 569;
+	pos yaa_chakma' 596;
+	pos raa_chakma' 566;
+	pos laa_chakma' 559;
+	pos waa_chakma' 580;
+	pos saa_chakma' 578;
+	pos haa_chakma' 597;
+	pos vaa_chakma' 598;
+	pos lhaa_chakma' 477;
+	pos jhaa_yyaa.post' 599;
+	pos nyaa_raa.below' 577;
+	pos nyaa_yyaa.post' 599;
+	pos ttaa_yyaa.post' 599;
+	pos ddaa_yyaa.post' 599;
+	pos ddhaa_yyaa.post' 599;
+	pos ghaa_chakma.alt' 590;
+	pos chaa_chakma.alt' 549;
+	pos jaa_chakma.alt' 594;
+	pos nnaa_chakma.alt' 589;
+	pos naa_chakma.alt' 601;
+	pos yaa_chakma.alt' 588;
+	pos yaa_chakma.alt2' 600;
+} AddDist_eiMatra_chakma_Regular;
+
+
+lookup AddDist_shorteiMatra_Regular {
+	pos aa_chakma' 313;
+	pos i_chakma' 267;
+	pos u_chakma' 315;
+	pos e_chakma' 338;
+	pos kaa_chakma' 339;
+	pos khaa_chakma' 336;
+	pos gaa_chakma' 330;
+	pos ghaa_chakma' 318;
+	pos ngaa_chakma' 290;
+	pos caa_chakma' 327;
+	pos chaa_chakma' 339;
+	pos jaa_chakma' 322;
+	pos jhaa_chakma' 268;
+	pos nyaa_chakma' 319;
+	pos ttaa_chakma' 324;
+	pos tthaa_chakma' 318;
+	pos ddaa_chakma' 328;
+	pos ddhaa_chakma' 340;
+	pos nnaa_chakma' 348;
+	pos taa_chakma' 345;
+	pos thaa_chakma' 338;
+	pos daa_chakma' 327;
+	pos dhaa_chakma' 327;
+	pos naa_chakma' 347;
+	pos paa_chakma' 346;
+	pos phaa_chakma' 350;
+	pos baa_chakma' 321;
+	pos bhaa_chakma' 305;
+	pos maa_chakma' 328;
+	pos yyaa_chakma' 326;
+	pos yaa_chakma' 325;
+	pos raa_chakma' 327;
+	pos laa_chakma' 338;
+	pos waa_chakma' 339;
+	pos saa_chakma' 341;
+	pos haa_chakma' 343;
+	pos vaa_chakma' 321;
+	pos lhaa_chakma' 236;
+	pos jhaa_yyaa.post' 355;
+	pos nyaa_raa.below' 319;
+	pos nyaa_yyaa.post' 355;
+	pos ttaa_yyaa.post' 355;
+	pos ddaa_yyaa.post' 355;
+	pos ddhaa_yyaa.post' 355;
+	pos ghaa_chakma.alt' 339;
+	pos chaa_chakma.alt' 294;
+	pos jaa_chakma.alt' 353;
+	pos nnaa_chakma.alt' 318;
+	pos naa_chakma.alt' 360;
+	pos yaa_chakma.alt' 388;
+	pos yaa_chakma.alt2' 332;
+} AddDist_shorteiMatra_Regular;
+
+
+lookup AddDist_yyaa_chakma_post_Regular {
+	pos aa_chakma' 278;
+	pos i_chakma' 194;
+	pos u_chakma' 292;
+	pos e_chakma' 258;
+	pos kaa_chakma' 282;
+	pos khaa_chakma' 295;
+	pos gaa_chakma' 287;
+	pos ghaa_chakma' 276;
+	pos ngaa_chakma' 257;
+	pos caa_chakma' 263;
+	pos chaa_chakma' 273;
+	pos jaa_chakma' 293;
+	pos jhaa_chakma' 235;
+	pos nyaa_chakma' 286;
+	pos ttaa_chakma' 321;
+	pos tthaa_chakma' 309;
+	pos ddaa_chakma' 286;
+	pos ddhaa_chakma' 227;
+	pos nnaa_chakma' 274;
+	pos taa_chakma' 283;
+	pos thaa_chakma' 284;
+	pos daa_chakma' 284;
+	pos dhaa_chakma' 293;
+	pos naa_chakma' 274;
+	pos paa_chakma' 284;
+	pos phaa_chakma' 283;
+	pos baa_chakma' 278;
+	pos bhaa_chakma' 298;
+	pos maa_chakma' 285;
+	pos yyaa_chakma' 289;
+	pos yaa_chakma' 285;
+	pos raa_chakma' 291;
+	pos laa_chakma' 285;
+	pos waa_chakma' 284;
+	pos saa_chakma' 276;
+	pos haa_chakma' 260;
+	pos vaa_chakma' 278;
+	pos lhaa_chakma' 179;
+	pos nyaa_raa.below' 296;
+	pos ghaa_chakma.alt' 285;
+	pos chaa_chakma.alt' 313;
+	pos jaa_chakma.alt' 312;
+	pos nnaa_chakma.alt' 285;
+	pos naa_chakma.alt' 327;
+	pos yaa_chakma.alt' 299;
+	pos yaa_chakma.alt2' 259;
+} AddDist_yyaa_chakma_post_Regular;
+
+lookup AddDist_i_below_yyaa_post_Regular {
+	pos aa_chakma' 722;
+	pos i_chakma' 646;
+	pos u_chakma' 693;
+	pos e_chakma' 732;
+	pos kaa_chakma' 727;
+	pos khaa_chakma' 719;
+	pos gaa_chakma' 718;
+	pos ghaa_chakma' 726;
+	pos ngaa_chakma' 668;
+	pos caa_chakma' 735;
+	pos chaa_chakma' 707;
+	pos jaa_chakma' 735;
+	pos jhaa_chakma' 646;
+	pos nyaa_chakma' 714;
+	pos ttaa_chakma' 702;
+	pos tthaa_chakma' 696;
+	pos ddaa_chakma' 707;
+	pos ddhaa_chakma' 715;
+	pos nnaa_chakma' 726;
+	pos taa_chakma' 725;
+	pos thaa_chakma' 726;
+	pos daa_chakma' 695;
+	pos dhaa_chakma' 722;
+	pos naa_chakma' 675;
+	pos paa_chakma' 695;
+	pos phaa_chakma' 694;
+	pos baa_chakma' 735;
+	pos bhaa_chakma' 703;
+	pos maa_chakma' 696;
+	pos yyaa_chakma' 706;
+	pos yaa_chakma' 733;
+	pos raa_chakma' 703;
+	pos laa_chakma' 696;
+	pos waa_chakma' 717;
+	pos saa_chakma' 715;
+	pos haa_chakma' 734;
+	pos vaa_chakma' 735;
+	pos lhaa_chakma' 614;
+	pos jhaa_yyaa.post' 736;
+	pos nyaa_raa.below' 714;
+	pos nyaa_yyaa.post' 736;
+	pos ttaa_yyaa.post' 736;
+	pos ddaa_yyaa.post' 736;
+	pos ddhaa_yyaa.post' 736;
+	pos ghaa_chakma.alt' 727;
+	pos chaa_chakma.alt' 686;
+	pos jaa_chakma.alt' 731;
+	pos nnaa_chakma.alt' 726;
+	pos naa_chakma.alt' 738;
+	pos yaa_chakma.alt' 725;
+	pos yaa_chakma.alt2' 737;
+} AddDist_i_below_yyaa_post_Regular;
+
+lookup AddDist_aa_below_yyaa_post_Regular {
+	pos aa_chakma' 532;
+	pos i_chakma' 448;
+	pos u_chakma' 546;
+	pos e_chakma' 512;
+	pos kaa_chakma' 536;
+	pos khaa_chakma' 549;
+	pos gaa_chakma' 541;
+	pos ghaa_chakma' 530;
+	pos ngaa_chakma' 511;
+	pos caa_chakma' 517;
+	pos chaa_chakma' 527;
+	pos jaa_chakma' 547;
+	pos jhaa_chakma' 489;
+	pos nyaa_chakma' 540;
+	pos ttaa_chakma' 575;
+	pos tthaa_chakma' 563;
+	pos ddaa_chakma' 540;
+	pos ddhaa_chakma' 481;
+	pos nnaa_chakma' 528;
+	pos taa_chakma' 537;
+	pos thaa_chakma' 538;
+	pos daa_chakma' 538;
+	pos dhaa_chakma' 547;
+	pos naa_chakma' 528;
+	pos paa_chakma' 538;
+	pos phaa_chakma' 537;
+	pos baa_chakma' 532;
+	pos bhaa_chakma' 552;
+	pos maa_chakma' 539;
+	pos yyaa_chakma' 543;
+	pos yaa_chakma' 539;
+	pos raa_chakma' 545;
+	pos laa_chakma' 539;
+	pos waa_chakma' 538;
+	pos saa_chakma' 530;
+	pos haa_chakma' 514;
+	pos vaa_chakma' 532;
+	pos lhaa_chakma' 433;
+	pos nyaa_raa.below' 550;
+	pos ghaa_chakma.alt' 539;
+	pos chaa_chakma.alt' 567;
+	pos jaa_chakma.alt' 566;
+	pos nnaa_chakma.alt' 539;
+	pos naa_chakma.alt' 581;
+	pos yaa_chakma.alt' 553;
+	pos yaa_chakma.alt2' 513;
+} AddDist_aa_below_yyaa_post_Regular;
+
+lookup AddDist_shorteiMatra_yyaa_post_Regular {
+	pos aa_chakma' 517;
+	pos i_chakma' 471;
+	pos u_chakma' 519;
+	pos e_chakma' 542;
+	pos kaa_chakma' 543;
+	pos khaa_chakma' 540;
+	pos gaa_chakma' 534;
+	pos ghaa_chakma' 522;
+	pos ngaa_chakma' 494;
+	pos caa_chakma' 531;
+	pos chaa_chakma' 543;
+	pos jaa_chakma' 526;
+	pos jhaa_chakma' 472;
+	pos nyaa_chakma' 523;
+	pos ttaa_chakma' 528;
+	pos tthaa_chakma' 522;
+	pos ddaa_chakma' 532;
+	pos ddhaa_chakma' 544;
+	pos nnaa_chakma' 552;
+	pos taa_chakma' 549;
+	pos thaa_chakma' 542;
+	pos daa_chakma' 531;
+	pos dhaa_chakma' 531;
+	pos naa_chakma' 551;
+	pos paa_chakma' 550;
+	pos phaa_chakma' 554;
+	pos baa_chakma' 525;
+	pos bhaa_chakma' 509;
+	pos maa_chakma' 532;
+	pos yyaa_chakma' 530;
+	pos yaa_chakma' 529;
+	pos raa_chakma' 531;
+	pos laa_chakma' 542;
+	pos waa_chakma' 543;
+	pos saa_chakma' 545;
+	pos haa_chakma' 547;
+	pos vaa_chakma' 525;
+	pos lhaa_chakma' 440;
+	pos jhaa_yyaa.post' 559;
+	pos nyaa_raa.below' 523;
+	pos nyaa_yyaa.post' 559;
+	pos ttaa_yyaa.post' 559;
+	pos ddaa_yyaa.post' 559;
+	pos ddhaa_yyaa.post' 559;
+	pos ghaa_chakma.alt' 543;
+	pos chaa_chakma.alt' 498;
+	pos jaa_chakma.alt' 557;
+	pos nnaa_chakma.alt' 522;
+	pos naa_chakma.alt' 564;
+	pos yaa_chakma.alt' 592;
+	pos yaa_chakma.alt2' 536;
+} AddDist_shorteiMatra_yyaa_post_Regular;
+
+
+feature dist {
+lookup AddDist {
+	lookupflag UseMarkFilteringSet @MARKFILTER1;
+	pos @BASES' lookup AddDist_aaMatra_chakma_Regular aaMatra_chakma';
+	pos @BASES' lookup AddDist_aaMatra_chakma_Regular lookup AddDist_yyaa_chakma_post_Regular yyaa_chakma.post' aaMatra_chakma';
+
+	pos @BASES' lookup AddDist_eiMatra_chakma_Regular eiMatra_chakma';
+	pos @BASES' lookup AddDist_eiMatra_chakma_Regular lookup AddDist_yyaa_chakma_post_Regular yyaa_chakma.post' eiMatra_chakma';
+
+	pos @BASES' lookup AddDist_shorteiMatra_Regular shorteiMatra';
+	pos @BASES' lookup AddDist_shorteiMatra_Regular lookup AddDist_yyaa_chakma_post_Regular yyaa_chakma.post' shorteiMatra';
+
+	pos @BASES' lookup AddDist_yyaa_chakma_post_Regular yyaa_chakma.post';
+
+	pos @BASES' lookup AddDist_aa_below_yyaa_post_Regular aa.below_yyaa.post';
+	pos @BASES' lookup AddDist_i_below_yyaa_post_Regular i.below_yyaa.post';
+	pos @BASES' lookup AddDist_shorteiMatra_yyaa_post_Regular shorteiMatra_yyaa.post';
+} AddDist;
+
+
+} dist;
+
+feature blwf {
+lookup subscript_forms {
+	sub virama_chakma u_chakma by u_chakma.below;
+	sub virama_chakma kaa_chakma by kaa_chakma.below;
+	sub virama_chakma khaa_chakma by khaa_chakma.below;
+	sub virama_chakma gaa_chakma by gaa_chakma.below;
+	sub virama_chakma ghaa_chakma by ghaa_chakma.below;
+	sub virama_chakma ngaa_chakma by ngaa_chakma.below;
+	sub virama_chakma caa_chakma by caa_chakma.below;
+	sub virama_chakma chaa_chakma by chaa_chakma.below;
+	sub virama_chakma jaa_chakma by jaa_chakma.below;
+	sub virama_chakma jhaa_chakma by jhaa_chakma.below;
+	sub virama_chakma nyaa_chakma by nyaa_chakma.below;
+	sub virama_chakma ttaa_chakma by ttaa_chakma.below;
+	sub virama_chakma tthaa_chakma by tthaa_chakma.below;
+	sub virama_chakma ddaa_chakma by ddaa_chakma.below;
+	sub virama_chakma ddhaa_chakma by ddhaa_chakma.below;
+	sub virama_chakma nnaa_chakma by nnaa_chakma.below;
+	sub virama_chakma taa_chakma by taa_chakma.below;
+	sub virama_chakma thaa_chakma by thaa_chakma.below;
+	sub virama_chakma daa_chakma by daa_chakma.below;
+	sub virama_chakma dhaa_chakma by dhaa_chakma.below;
+	sub virama_chakma naa_chakma by naa_chakma.below;
+	sub virama_chakma paa_chakma by paa_chakma.below;
+	sub virama_chakma phaa_chakma by phaa_chakma.below;
+	sub virama_chakma baa_chakma by baa_chakma.below;
+	sub virama_chakma bhaa_chakma by bhaa_chakma.below;
+	sub virama_chakma maa_chakma by maa_chakma.below;
+	sub virama_chakma yyaa_chakma by yyaa_chakma.post;
+	sub virama_chakma yaa_chakma by yaa_chakma.below;
+	sub virama_chakma raa_chakma by raa_chakma.below;
+	sub virama_chakma laa_chakma by laa_chakma.below;
+	sub virama_chakma waa_chakma by waa_chakma.below;
+	sub virama_chakma saa_chakma by saa_chakma.below;
+	sub virama_chakma haa_chakma by haa_chakma.below;
+	sub virama_chakma lhaa_chakma by lhaa_chakma.below;
+	sub virama_chakma vaa_chakma by vaa_chakma.below;
+} subscript_forms;
+} blwf;
+
+feature psts {
+lookup post_base {
+	sub virama_chakma aa_chakma by aaMatra_chakma;
+	sub virama_chakma i_chakma by eiMatra_chakma;
+	sub virama_chakma e_chakma by shorteiMatra;
+} post_base;
+
+lookup postbase_ligs {
+	lookupflag UseMarkFilteringSet @MARKFILTER1;
+	sub jhaa_chakma yyaa_chakma.post eiMatra_chakma by jhaa_yyaa_eiMatra;
+	sub jhaa_chakma yyaa_chakma.post shorteiMatra by jhaa_yyaa_e.below;
+	sub jhaa_chakma yyaa_chakma.post aaMatra_chakma by jhaa_yyaa_aaMatra;
+	sub ttaa_chakma yyaa_chakma.post eiMatra_chakma by ttaa_yyaa_eiMatra;
+	sub ttaa_chakma yyaa_chakma.post shorteiMatra by ttaa_yyaa_e.below;
+	sub ttaa_chakma yyaa_chakma.post aaMatra_chakma by ttaa_yyaa_aaMatra;
+	sub tthaa_chakma yyaa_chakma.post eiMatra_chakma by tthaa_yyaa_eiMatra;
+	sub tthaa_chakma yyaa_chakma.post shorteiMatra by tthaa_yyaa_e.below;
+	sub tthaa_chakma yyaa_chakma.post aaMatra_chakma by tthaa_yyaa_aaMatra;
+	sub ngaa_chakma yyaa_chakma.post eiMatra_chakma by ngaa_yyaa_eiMatra;
+	sub ngaa_chakma yyaa_chakma.post shorteiMatra by ngaa_yyaa_e.below;
+	sub ngaa_chakma yyaa_chakma.post aaMatra_chakma by ngaa_yyaa_aaMatra;
+} postbase_ligs;
+
+lookup postbase_ligs2 {
+	lookupflag UseMarkFilteringSet @MARKFILTER1;
+	sub ngaa_chakma aaMatra_chakma by ngaa_aaMatra;
+	sub ngaa_chakma eiMatra_chakma by ngaa_eiMatra;
+	sub ngaa_chakma shorteiMatra by ngaa_e.below;
+	sub jhaa_chakma aaMatra_chakma by jhaa_aaMatra;
+	sub jhaa_chakma eiMatra_chakma by jhaa_eiMatra;
+	sub jhaa_chakma shorteiMatra by jhaa_e.below;
+	sub ttaa_chakma aaMatra_chakma by ttaa_aaMatra;
+	sub ttaa_chakma eiMatra_chakma by ttaa_eiMatra;
+	sub ttaa_chakma shorteiMatra by ttaa_e.below;
+	sub tthaa_chakma aaMatra_chakma by tthaa_aaMatra;
+	sub tthaa_chakma eiMatra_chakma by tthaa_eiMatra;
+	sub tthaa_chakma shorteiMatra by tthaa_e.below;
+} postbase_ligs2;
+
+lookup postbase_ligs3 {
+	lookupflag UseMarkFilteringSet @MARKFILTER2;
+	sub nyaa_chakma raa_chakma.below by nyaa_raa.below;
+	sub ddhaa_chakma yyaa_chakma.post by ddhaa_yyaa.post;
+	sub nyaa_chakma yyaa_chakma.post by nyaa_yyaa.post;
+	sub ttaa_chakma yyaa_chakma.post by ttaa_yyaa.post;
+	sub ddaa_chakma yyaa_chakma.post by ddaa_yyaa.post;
+	sub jhaa_chakma yyaa_chakma.post by jhaa_yyaa.post;
+} postbase_ligs3;
+
+
+} psts;
+
+feature blws {
+lookup blws_u {
+	lookupflag UseMarkFilteringSet @MARKFILTER_U;
+	sub [khaa_chakma gaa_chakma naa_chakma nnaa_chakma dhaa_chakma ] uMatra_chakma' by uMatra_chakma.alt;
+} blws_u;
+
+lookup blws_rao {
+	lookupflag UseMarkFilteringSet @MARKFILTER_RA;
+	sub [u_chakma i_chakma e_chakma khaa_chakma gaa_chakma ngaa_chakma caa_chakma chaa_chakma jaa_chakma jhaa_chakma nyaa_chakma ddhaa_chakma daa_chakma dhaa_chakma paa_chakma phaa_chakma baa_chakma maa_chakma yyaa_chakma yaa_chakma waa_chakma ngaa_aaMatra ngaa_eiMatra ngaa_e.below ngaa_yyaa_aaMatra ngaa_yyaa_eiMatra ngaa_yyaa_e.below jhaa_aaMatra jhaa_eiMatra jhaa_e.below jhaa_yyaa.post jhaa_yyaa_aaMatra jhaa_yyaa_eiMatra jhaa_yyaa_e.below  chaa_chakma.alt jaa_chakma.alt yaa_chakma.alt yaa_chakma.alt2 ] [raa_chakma.below raa.below_oMark ]' by [raa_chakma.below.curve raa.below_oMark.short ];
+	sub [u_chakma i_chakma e_chakma khaa_chakma gaa_chakma ngaa_chakma caa_chakma chaa_chakma jaa_chakma jhaa_chakma nyaa_chakma ddhaa_chakma daa_chakma dhaa_chakma paa_chakma phaa_chakma baa_chakma maa_chakma yyaa_chakma yaa_chakma waa_chakma ngaa_aaMatra ngaa_eiMatra ngaa_e.below jhaa_aaMatra jhaa_eiMatra jhaa_e.below jhaa_yyaa.post chaa_chakma.alt jaa_chakma.alt yaa_chakma.alt yaa_chakma.alt2 ] u_chakma.below [raa_chakma.below raa.below_oMark ]' by [raa_chakma.below.curve raa.below_oMark.short ];
+} blws_rao;
+
+lookup blws_alt_ra {
+	lookupflag 0;
+	sub [u_chakma e_chakma khaa_chakma.below gaa_chakma.below ngaa_chakma.below caa_chakma.below chaa_chakma.below jaa_chakma.below jhaa_chakma.below nyaa_chakma.below ddaa_chakma.below ddhaa_chakma.below daa_chakma.below dhaa_chakma.below paa_chakma.below phaa_chakma.below baa_chakma.below maa_chakma.below yaa_chakma.below waa_chakma.below chaa_chakma.alt.below jaa_chakma.alt.below ] [raa_chakma.below raa.below_oMark ]' by [raa_chakma.below.curve raa.below_oMark.short ];
+} blws_alt_ra;
+
+lookup blws_ra {
+	lookupflag MarkAttachmentType @MA1;
+	sub raa_chakma.below oMark_chakma by raa.below_oMark;
+	sub raa_chakma.below uMatra_chakma by raa.below_uMark;
+	sub raa_chakma.below uuMatra_chakma by raa.below_uuMark;
+	sub raa_chakma.below.curve oMark_chakma by raa.below_oMark.short;
+	sub raa_chakma.below auMark_chakma by raa.below_auMark;
+	sub raa_chakma.below.curve auMark_chakma by raa.below_auMark.curve;
+	sub raa_chakma.below.curve uuMatra_chakma by raa_chakma.below_uuMatra;
+	sub raa_chakma.below.curve uMatra_chakma by raa.below_uMatra;
+} blws_ra;
+
+
+lookup blwspostbase_chain {
+	lookupflag UseMarkFilteringSet @MARKFILTER2;
+	sub [ngaa_aaMatra jhaa_aaMatra ttaa_aaMatra tthaa_aaMatra ] yyaa_chakma.post' by yyaa_chakma.post.alt1;
+	sub [ngaa_e.below jhaa_e.below ttaa_e.below tthaa_e.below ] yyaa_chakma.post' by yyaa_chakma.post.alt2;
+	sub [ngaa_eiMatra jhaa_eiMatra ttaa_eiMatra tthaa_eiMatra ] yyaa_chakma.post' by yyaa_chakma.post.alt3;	
+} blwspostbase_chain;
+
+lookup blwspostbase {
+	lookupflag MarkAttachmentType @MA2;
+	sub aaMatra_chakma yyaa_chakma.post by aa.below_yyaa.post;
+	sub yyaa_chakma.post aaMatra_chakma by aa.below_yyaa.post;
+	sub eiMatra_chakma yyaa_chakma.post by i.below_yyaa.post;
+	sub yyaa_chakma.post eiMatra_chakma by i.below_yyaa.post;
+	sub shorteiMatra yyaa_chakma.post by shorteiMatra_yyaa.post;
+	sub yyaa_chakma.post shorteiMatra by shorteiMatra_yyaa.post;
+} blwspostbase;
+
+lookup blws_shortsub_chain {
+	lookupflag 0;
+	sub [i_chakma u_chakma e_chakma khaa_chakma gaa_chakma ngaa_chakma caa_chakma chaa_chakma jaa_chakma jhaa_chakma nyaa_chakma ttaa_chakma tthaa_chakma ddaa_chakma ddhaa_chakma daa_chakma dhaa_chakma paa_chakma phaa_chakma baa_chakma yyaa_chakma yaa_chakma waa_chakma ] [laa_chakma.below haa_chakma.below ]' by [laa_chakma.below.alt haa_chakma.below.alt ];
+	sub [u_chakma.below kaa_chakma.below khaa_chakma.below gaa_chakma.below ghaa_chakma.below ngaa_chakma.below caa_chakma.below chaa_chakma.below jaa_chakma.below jhaa_chakma.below nyaa_chakma.below ttaa_chakma.below tthaa_chakma.below ddaa_chakma.below ddhaa_chakma.below nnaa_chakma.below taa_chakma.below thaa_chakma.below daa_chakma.below dhaa_chakma.below naa_chakma.below paa_chakma.below phaa_chakma.below baa_chakma.below bhaa_chakma.below maa_chakma.below yaa_chakma.below raa_chakma.below laa_chakma.below laa_chakma.below.alt waa_chakma.below saa_chakma.below haa_chakma.below haa_chakma.below.alt lhaa_chakma.below vaa_chakma.below chaa_chakma.alt.below ghaa_chakma.alt.below jaa_chakma.alt.below naa_chakma.alt.below nnaa_chakma.alt.below ] [raa.below_oMark raa.below_uMark raa.below_uuMark ]' by [raa.below_oMark.short raa.below_uMark.short raa.below_uuMark.short];
+} blws_shortsub_chain;
+
+} blws;
+
+feature abvs {
+lookup abvs_ligs {
+	lookupflag MarkAttachmentType @MA3;
+	sub aMatra_chakma iMatra_chakma candrabindu_chakma by candrabindu_iMatra_aMatra;
+	sub iMatra_chakma aMatra_chakma candrabindu_chakma by candrabindu_iMatra_aMatra;
+	sub aMatra_chakma iiMatra_chakma candrabindu_chakma by candrabindu_iiMatra_aMatra;
+	sub iiMatra_chakma aMatra_chakma candrabindu_chakma by candrabindu_iiMatra_aMatra;
+	sub aMatra_chakma iMatra_chakma anusvara_chakma by anusvara_iMatra_aMatra;
+	sub iMatra_chakma aMatra_chakma anusvara_chakma by anusvara_iMatra_aMatra;
+	sub aMatra_chakma iiMatra_chakma anusvara_chakma by anusvara_iiMatra_aMatra;
+	sub iiMatra_chakma aMatra_chakma anusvara_chakma by anusvara_iiMatra_aMatra;
+	sub aMatra_chakma iMatra_chakma visarga_chakma by visarga_iMatra_aMatra;
+	sub iMatra_chakma aMatra_chakma visarga_chakma by visarga_iMatra_aMatra;
+	sub aMatra_chakma iiMatra_chakma visarga_chakma by visarga_iiMatra_aMatra;
+	sub iiMatra_chakma aMatra_chakma visarga_chakma by visarga_iiMatra_aMatra;
+	sub iMatra_chakma visarga_chakma by visarga_iMatra;
+	sub visarga_chakma iMatra_chakma by visarga_iMatra;
+	sub iiMatra_chakma visarga_chakma by visarga_iiMatra;
+	sub visarga_chakma iiMatra_chakma by visarga_iiMatra;
+	sub maayyaa_chakma aMatra_chakma iMatra_chakma by maayyaa_iMatra_aMatra;
+	sub aMatra_chakma iMatra_chakma maayyaa_chakma by maayyaa_iMatra_aMatra;
+	sub iMatra_chakma aMatra_chakma maayyaa_chakma by maayyaa_iMatra_aMatra;
+	sub maayyaa_chakma aMatra_chakma iiMatra_chakma by maayyaa_iiMatra_aMatra;
+	sub aMatra_chakma iiMatra_chakma maayyaa_chakma by maayyaa_iiMatra_aMatra;
+	sub iiMatra_chakma aMatra_chakma maayyaa_chakma by maayyaa_iiMatra_aMatra;
+	sub candrabindu_chakma visarga_chakma by candrabindu_visarga;
+	sub iMatra_chakma candrabindu_chakma by candrabindu_iMatra;
+	sub iiMatra_chakma candrabindu_chakma by candrabindu_iiMatra;
+	sub candrabindu_chakma iMatra_chakma by candrabindu_iMatra;
+	sub candrabindu_chakma iiMatra_chakma by candrabindu_iiMatra;
+	sub visarga_chakma candrabindu_chakma by candrabindu_visarga;
+	sub anusvara_chakma candrabindu_chakma by anusvara_candrabindu;
+	sub iMatra_chakma anusvara_chakma by anusvara_iMatra;
+	sub anusvara_chakma iMatra_chakma by anusvara_iMatra;
+	sub iiMatra_chakma anusvara_chakma by anusvara_iiMatra;
+	sub anusvara_chakma iiMatra_chakma by anusvara_iiMatra;
+	sub maayyaa_chakma iMatra_chakma by maayyaa_iMatra;
+	sub maayyaa_chakma iiMatra_chakma by maayyaa_iiMatra;
+	sub iMatra_chakma maayyaa_chakma by maayyaa_iMatra;
+	sub iiMatra_chakma maayyaa_chakma by maayyaa_iiMatra;
+	sub oiMatra_chakma candrabindu_chakma by oiMatra_candrabindu;
+	sub maayyaa_chakma oiMatra_chakma by oiMatra_maayyaa;
+	sub maayyaa_chakma oiMatra_chakma.short by oiMatra_maayyaa.short;
+	sub oiMatra_chakma anusvara_chakma by oiMatra_anusvara;
+	sub oiMatra_chakma.short anusvara_chakma by oiMatra_anusvara.short;
+	sub oiMatra_chakma.short candrabindu_chakma by oiMatra_candrabindu.short;
+	sub oiMatra_chakma visarga_chakma by oiMatra_visarga;
+	sub oiMatra_chakma.short visarga_chakma by oiMatra_visarga.short;
+	sub aiMatra_chakma candrabindu_chakma by aiMatra_candrabindu;
+	sub aiMatra_chakma maayyaa_chakma by aiMatra_maayyaa;
+	sub maayyaa_chakma aiMatra_chakma by aiMatra_maayyaa;
+	sub aiMatra_chakma.short candrabindu_chakma by aiMatra_candrabindu.short;
+	sub aiMatra_chakma.short maayyaa_chakma by aiMatra_maayyaa.short;
+	sub maayyaa_chakma aiMatra_chakma.short by aiMatra_maayyaa.short;
+	sub aiMatra_chakma anusvara_chakma by aiMatra_anusvara;
+	sub aiMatra_chakma.short anusvara_chakma by aiMatra_anusvara.short;
+	sub aiMatra_chakma visarga_chakma by aiMatra_visarga;
+	sub aiMatra_chakma.short visarga_chakma by aiMatra_visarga.short;
+	sub aMatra_chakma iMatra_chakma by iMatra_aMatra;
+	sub aMatra_chakma iiMatra_chakma by iiMatra_aMatra;
+	sub visarga_chakma anusvara_chakma by visarga_anusvara;
+} abvs_ligs;
+
+lookup abvsnarrow {
+	lookupflag UseMarkFilteringSet @MARKFILTER0;
+	sub [i_chakma u_chakma e_chakma khaa_chakma gaa_chakma ngaa_chakma jaa_chakma ddaa_chakma daa_chakma dhaa_chakma paa_chakma phaa_chakma baa_chakma yaa_chakma jhaa_yyaa.post nyaa_raa.below nyaa_yyaa.post ttaa_yyaa.post ddaa_yyaa.post ddhaa_yyaa.post chaa_chakma.alt jaa_chakma.alt yaa_chakma.alt yaa_chakma.alt2 ] [aiMatra_chakma oiMatra_chakma ]' by [aiMatra_chakma.short oiMatra_chakma.short ];
+} abvsnarrow;
+
+@bt1 = [khaa_chakma  gaa_chakma  ngaa_chakma  daa_chakma  dhaa_chakma  waa_chakma ];
+@bt2 = [u_chakma.below shorteiMatra kaa_chakma.below khaa_chakma.below gaa_chakma.below ghaa_chakma.below ngaa_chakma.below caa_chakma.below chaa_chakma.below jaa_chakma.below jhaa_chakma.below nyaa_chakma.below ttaa_chakma.below tthaa_chakma.below ddaa_chakma.below ddhaa_chakma.below nnaa_chakma.below taa_chakma.below thaa_chakma.below daa_chakma.below dhaa_chakma.below naa_chakma.below paa_chakma.below phaa_chakma.below baa_chakma.below bhaa_chakma.below maa_chakma.below yyaa_chakma.post yaa_chakma.below raa_chakma.below raa_chakma.below.curve raa.below_oMark raa.below_oMark.short laa_chakma.below laa_chakma.below.alt waa_chakma.below saa_chakma.below haa_chakma.below haa_chakma.below.alt lhaa_chakma.below aa.below_yyaa.post i.below_yyaa.post shorteiMatra_yyaa.post ];
+@inpt = [aiMatra_chakma oiMatra_chakma ];
+
+lookup abvs02 {
+	lookupflag 0;
+	sub @bt2 @bt1 @inpt' by [aiMatra_chakma.short oiMatra_chakma.short ];
+	sub @bt1 @inpt' by [aiMatra_chakma.short oiMatra_chakma.short ];
+} abvs02;
+} abvs;
+
+feature pres {
+lookup prebase_sub {
+	sub eMatra_chakma eMatra_chakma by doubleEMatra_chakma;
+} prebase_sub;
+} pres;
+
+feature ss01 {
+# notes:
+# Alternate Shapes
+lookup stylistic_set1 {
+	sub ghaa_chakma by ghaa_chakma.alt;
+	sub ghaa_chakma.below by ghaa_chakma.alt.below;
+	sub chaa_chakma by chaa_chakma.alt;
+	sub chaa_chakma.below by chaa_chakma.alt.below;
+	sub jaa_chakma by jaa_chakma.alt;
+	sub jaa_chakma.below by jaa_chakma.alt.below;
+	sub nnaa_chakma by nnaa_chakma.alt;
+	sub nnaa_chakma.below by nnaa_chakma.alt.below;
+	sub naa_chakma by naa_chakma.alt;
+	sub naa_chakma.below by naa_chakma.alt.below;
+	sub yaa_chakma by yaa_chakma.alt;
+} stylistic_set1;
+} ss01;
+
+feature ss02 {
+# notes:
+# Alternate YAA #2
+lookup stylistic_set2 {
+	sub yaa_chakma by yaa_chakma.alt2;
+} stylistic_set2;
+} ss02;
+
+feature ss03 {
+# notes:
+# Alternate UU
+lookup stylistic_set3 {
+	sub uuMatra_chakma by uuMatra_chakma.alt;
+	sub raa.below_uuMark by raa.below_uuMark.alt;
+	sub raa.below_uuMark.short by raa.below_uuMark.short.alt;
+	sub raa_chakma.below_uuMatra by raa_chakma.below_uuMatra.alt;
+} stylistic_set3;
+
+} ss03;
+
+feature ss04 {
+# notes:
+# Alternate E Matra
+lookup stylistic_set4 {
+	sub eMatra_chakma by eMatra_chakma.alt;
+	sub doubleEMatra_chakma by doubleEMatra_chakma.alt;
+} stylistic_set4;
+} ss04;
+
+feature ss05 {
+# notes:
+# Alternate Section Mark
+lookup stylistic_set5 {
+	sub section_chakma by section_chakma.alt;
+} stylistic_set5;
+} ss05;
