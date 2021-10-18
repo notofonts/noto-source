@@ -1,0 +1,19 @@
+---
+Automatic testing for 'instance_ttf,NotoSansGurmukhiUI-ExtraCondensedBold.ttf', Version 2.001:
+E <name/family> The family is 'Noto Sans Gurmukhi UI ExtraCondensed' but was expecting 'Noto Sans Gurmukhi UI XCn'
+E <name/designer> The designer is 'Jelle Bosma - Monotype Design Team' but was expecting 'Monotype Design Team'
+E <bounds/glyph/ui_ymin> Real yMin for glyph 186 (umatralowguru) is -284, which is less than min ui height -271.
+E <bounds/glyph/ui_ymin> Real yMin for glyph 204 (udaatuUIguru) is -272, which is less than min ui height -271.
+E <bounds/glyph/ui_ymin> Real yMin for glyph 216 (umatralowUIguru) is -272, which is less than min ui height -271.
+E <bounds/font/ui_ymin> Real yMin is -284, but it should be greater than or equal to -271.
+E <paths/intersection> The glyph 'jhaguru' has intersecting outlines: start and end segments match: (236.0, 420.0)
+E <paths/intersection> The glyph 'laguru' has intersecting outlines: start and end segments match: (340.0, 0.0)
+E <paths/intersection> The glyph 'threeguru' has intersecting outlines: start and end segments match: (183.0, 68.0)
+E <paths/intersection> The glyph 'yapostformguru' has intersecting outlines: start and end segments match: (221.0, 217.0)
+E <paths/intersection> The glyph 'laUIguru' has intersecting outlines: intersection ((447.0, 114.5), (408.0, 88.0), (338.0, 79.0)) and ((325.0, 77.5), (327.0, 78.0), (338.0, 79.0))
+W <advances/comma_period> The advance of U+002c (comma.guru, glyph 250) is 265, but expected 266.
+E <reachable> The following 1 glyphs are unreachable in the font: umatralow1guru (240).
+Found 12 errors.
+Found 1 warning.
+------
+Finished linting 1 file.

@@ -1,0 +1,197 @@
+Start ... running 77 individual check executions.
+ >> [1;35;107mcom.google.fonts/check/unicode_range_bits[0m
+    [0;36;107mEnsure UnicodeRange bits are properly set.[0m
+    with NotoSansMarchen-VF.ttf
+
+    [1;35;107m  Rationale:                                                                [0m
+    [0;30;107m  When the UnicodeRange bits on the OS/2 table are not properly set, some   [0m
+    [0;30;107m  programs running on Windows may not recognize the font and use a system   [0m
+    [0;30;107m  fallback font instead. For that reason, this check calculates the proper  [0m
+    [0;30;107m  settings by inspecting the glyphs declared on the cmap table and then     [0m
+    [0;30;107m  ensures that their corresponding ranges are enabled.                      [0m
+
+    * [1;30;103mWARN[0m: UnicodeRange bit 57 "Non-Plane 0 *" should be 0 because cmap has none of the 2048 codepoints in this range. [code: bad-range-bit]
+
+
+    Result: [1;30;103mWARN[0m
+
+ >> [1;35;107mcom.google.fonts/check/family/win_ascent_and_descent[0m
+    [0;36;107mChecking OS/2 usWinAscent & usWinDescent.[0m
+    with NotoSansMarchen-VF.ttf
+
+    [1;35;107m  Rationale:                                                                [0m
+    [0;30;107m  A font's winAscent and winDescent values should be greater than the head  [0m
+    [0;30;107m  table's yMax, abs(yMin) values. If they are less than these values,       [0m
+    [0;30;107m  clipping can occur on Windows platforms                                   [0m
+    [0;30;107m  (https://github.com/RedHatBrand/Overpass/issues/33).                      [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  If the font includes tall/deep writing systems such as Arabic or          [0m
+    [0;30;107m  Devanagari, the winAscent and winDescent can be greater than the yMax and [0m
+    [0;30;107m  abs(yMin) to accommodate vowel marks.                                     [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  When the win Metrics are significantly greater than the upm, the          [0m
+    [0;30;107m  linespacing can appear too loose. To counteract this, enabling the OS/2   [0m
+    [0;30;107m  fsSelection bit 7 (Use_Typo_Metrics), will force Windows to use the OS/2  [0m
+    [0;30;107m  typo values instead. This means the font developer can control the        [0m
+    [0;30;107m  linespacing with the typo values, whilst avoiding clipping by setting the [0m
+    [0;30;107m  win values to values greater than the yMax and abs(yMin).                 [0m
+
+    * [1;91;107mFAIL[0m: OS/2.usWinDescent value should be equal or greater than 1025, but got 534 instead. [code: descent]
+
+
+    Result: [1;91;107mFAIL[0m
+
+ >> [1;35;107mcom.google.fonts/check/required_tables[0m
+    [0;36;107mFont contains all required tables?[0m
+    with NotoSansMarchen-VF.ttf
+
+    [1;35;107m  Rationale:                                                                [0m
+    [0;30;107m  Depending on the typeface and coverage of a font, certain tables are      [0m
+    [0;30;107m  recommended for optimum quality. For example, the performance of a        [0m
+    [0;30;107m  non-linear font is improved if the VDMX, LTSH, and hdmx tables are        [0m
+    [0;30;107m  present. Non-monospaced Latin fonts should have a kern table. A gasp      [0m
+    [0;30;107m  table is necessary if a designer wants to influence the sizes at which    [0m
+    [0;30;107m  grayscaling is used under Windows. A DSIG table containing a digital      [0m
+    [0;30;107m  signature helps ensure the integrity of the font file. Etc.               [0m
+
+    * [0;36;107mINFO[0m: This font contains the following optional tables [loca, GPOS, GSUB]
+
+
+    Result: [0;36;107mINFO[0m
+
+ >> [1;35;107mcom.google.fonts/check/superfamily/list[0m
+    [0;36;107mList all superfamily filepaths[0m
+    with NotoSansMarchen-VF.ttf
+
+    [1;35;107m  Rationale:                                                                [0m
+    [0;30;107m  This is a merely informative check that lists all sibling families        [0m
+    [0;30;107m  detected by fontbakery.                                                   [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  Only the fontfiles in these directories will be considered in             [0m
+    [0;30;107m  superfamily-level checks.                                                 [0m
+
+    * [0;36;107mINFO[0m: . [code: family-path]
+
+
+    Result: [0;36;107mINFO[0m
+
+ >> [1;35;107mcom.google.fonts/check/monospace[0m
+    [0;36;107mChecking correctness of monospaced metadata.[0m
+    with NotoSansMarchen-VF.ttf
+
+    [1;35;107m  Rationale:                                                                [0m
+    [0;30;107m  There are various metadata in the OpenType spec to specify if a font is   [0m
+    [0;30;107m  monospaced or not. If the font is not truly monospaced, then no           [0m
+    [0;30;107m  monospaced metadata should be set (as sometimes they mistakenly are...)   [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  Requirements for monospace fonts:                                         [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  * post.isFixedPitch - "Set to 0 if the font is proportionally spaced,     [0m
+    [0;30;107m  non-zero if the font is not proportionally spaced (monospaced)"           [0m
+    [0;30;107m    www.microsoft.com/typography/otspec/post.htm                            [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  * hhea.advanceWidthMax must be correct, meaning no glyph's width value is [0m
+    [0;30;107m  greater.                                                                  [0m
+    [0;30;107m    www.microsoft.com/typography/otspec/hhea.htm                            [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  * OS/2.panose.bProportion must be set to 9 (monospace). Spec says: "The   [0m
+    [0;30;107m  PANOSE definition contains ten digits each of which currently describes   [0m
+    [0;30;107m  up to sixteen variations. Windows uses bFamilyType, bSerifStyle and       [0m
+    [0;30;107m  bProportion in the font mapper to determine family type. It also uses     [0m
+    [0;30;107m  bProportion to determine if the font is monospaced."                      [0m
+    [0;30;107m    www.microsoft.com/typography/otspec/os2.htm#pan                         [0m
+    [0;30;107m    monotypecom-test.monotype.de/services/pan2                              [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  * OS/2.xAvgCharWidth must be set accurately.                              [0m
+    [0;30;107m    "OS/2.xAvgCharWidth is used when rendering monospaced fonts, at least   [0m
+    [0;30;107m  by Windows GDI"                                                           [0m
+    [0;30;107m    http://typedrawers.com/discussion/comment/15397/#Comment_15397          [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  Also we should report an error for glyphs not of average width.           [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  Please also note:                                                         [0m
+    [0;30;107m  Thomas Phinney told us that a few years ago (as of December 2019), if you [0m
+    [0;30;107m  gave a font a monospace flag in Panose, Microsoft Word would ignore the   [0m
+    [0;30;107m  actual advance widths and treat it as monospaced. Source:                 [0m
+    [0;30;107m  https://typedrawers.com/discussion/comment/45140/#Comment_45140           [0m
+
+    * [1;91;107mFAIL[0m: On monospaced fonts, the value of post.isFixedPitch must be set to a non-zero value (meaning 'fixed width monospaced'), but got 0 instead. [code: mono-bad-post-isFixedPitch]
+    * [1;91;107mFAIL[0m: On monospaced fonts, the value of OS/2.panose.bProportion must be set to 9 (proportion: monospaced), but got 2 instead. [code: mono-bad-panose-proportion]
+    * [1;30;103mWARN[0m: Font is monospaced but 681 glyphs (91.04%) have a different width. You should check the widths of: ['CR', 'a_aa_marc.sub', 'a_aa_o_marc', 'a_e_marc', 'a_i_marc', 'a_marc', 'a_o_marc', 'a_ra.sub', 'a_u_marc', 'aa_i_marc', 'aa_o_marc', 'aa_u_marc', 'ba_aa_marc.sub', 'ba_e_marc', 'ba_i_marc', 'ba_la.sub', 'ba_la.sub_e_marc', 'ba_la.sub_i_marc', 'ba_la.sub_i_marc_short', 'ba_la.sub_o_marc', 'ba_la.sub_u_marc', 'ba_marc', 'ba_o_marc', 'ba_ra.sub', 'ba_ra.sub_e_marc', 'ba_ra.sub_i_marc', 'ba_ra.sub_o_marc', 'ba_ra.sub_u_marc', 'ba_u_marc', 'ba_ya.sub', 'ba_ya.sub_e_marc', 'ba_ya.sub_i_marc', 'ba_ya.sub_o_marc', 'ba_ya.sub_u_marc', 'ca_aa_marc.sub', 'ca_e_marc', 'ca_i_marc', 'ca_marc', 'ca_o_marc', 'ca_ra.sub', 'ca_u_marc', 'ca_wa.sub', 'ca_wa.sub_e_marc', 'ca_wa.sub_i_marc', 'ca_wa.sub_o_marc', 'ca_wa.sub_u_marc', 'cha_aa_marc.sub', 'cha_e_marc', 'cha_i_marc', 'cha_marc', 'cha_o_marc', 'cha_u_marc', 'da_aa_marc.sub', 'da_e_marc', 'da_ha.sub', 'da_ha.sub_aa.sub_i_marc', 'da_ha.sub_i_marc', 'da_i_marc', 'da_ma.sub', 'da_ma.sub_e_marc', 'da_marc', 'da_o_marc', 'da_ra.sub', 'da_ra.sub_e_marc', 'da_ra.sub_i_marc', 'da_ra.sub_o_marc', 'da_ra.sub_u_marc', 'da_ra.sub_wa.sub', 'da_u_marc', 'da_wa.sub', 'da_wa.sub_e_marc', 'da_wa.sub_i_marc', 'da_wa.sub_o_marc', 'da_wa.sub_u_marc', 'da_ya.sub', 'dza_aa_marc.sub', 'dza_e_marc', 'dza_i_marc', 'dza_marc', 'dza_o_marc', 'dza_ra.sub', 'dza_ra.sub_e_marc', 'dza_u_marc', 'dza_wa.sub', 'ga_aa_marc.sub', 'ga_e_marc', 'ga_i_marc', 'ga_la.sub', 'ga_la.sub_e_marc', 'ga_la.sub_i_marc', 'ga_la.sub_i_marc_short', 'ga_la.sub_o_marc', 'ga_la.sub_u_marc', 'ga_marc', 'ga_o_marc', 'ga_ra.sub', 'ga_ra.sub_e_marc', 'ga_ra.sub_i_marc', 'ga_ra.sub_o_marc', 'ga_ra.sub_u_marc', 'ga_ra.sub_wa.sub', 'ga_u_marc', 'ga_wa.sub', 'ga_wa.sub_e_marc', 'ga_wa.sub_i_marc', 'ga_wa.sub_o_marc', 'ga_wa.sub_u_marc', 'ga_ya.sub', 'ga_ya.sub_e_marc', 'ga_ya.sub_i_marc', 'ga_ya.sub_o_marc', 'ga_ya.sub_u_marc', 'ha_aa_marc.sub', 'ha_aa_u_marc', 'ha_e_marc', 'ha_i_marc', 'ha_marc', 'ha_o_marc', 'ha_ra.sub', 'ha_ra.sub_aa_i_marc', 'ha_ra.sub_e_marc', 'ha_ra.sub_i_marc', 'ha_ra.sub_o_marc', 'ha_ra.sub_u_marc', 'ha_u_marc', 'ha_wa.sub', 'ha_wa.sub_e_marc', 'ha_wa.sub_i_marc', 'ha_wa.sub_o_marc', 'ha_wa.sub_u_marc', 'i_marc', 'ja_aa_marc.sub', 'ja_e_marc', 'ja_i_marc', 'ja_marc', 'ja_o_marc', 'ja_u_marc', 'ka_aa_marc.sub', 'ka_i_marc', 'ka_la.sub', 'ka_la.sub_e_marc', 'ka_la.sub_i_marc', 'ka_la.sub_i_marc_short', 'ka_la.sub_o_marc', 'ka_la.sub_u_marc', 'ka_o_marc', 'ka_ra.sub_i_marc', 'ka_ra.sub_o_marc', 'ka_wa.sub_i_marc', 'ka_wa.sub_o_marc', 'ka_ya.sub', 'ka_ya.sub_e_marc', 'ka_ya.sub_i_marc', 'ka_ya.sub_o_marc', 'ka_ya.sub_u_marc', 'kha_aa_marc.sub', 'kha_e_marc', 'kha_i_marc', 'kha_marc', 'kha_o_marc', 'kha_ra.sub', 'kha_ra.sub_e_marc', 'kha_ra.sub_i_marc', 'kha_ra.sub_o_marc', 'kha_ra.sub_u_marc', 'kha_u_marc', 'kha_wa.sub', 'kha_wa.sub_e_marc', 'kha_wa.sub_i_marc', 'kha_wa.sub_o_marc', 'kha_wa.sub_u_marc', 'kha_ya.sub', 'kha_ya.sub_e_marc', 'kha_ya.sub_i_marc', 'kha_ya.sub_o_marc', 'kha_ya.sub_u_marc', 'la_aa_marc.sub', 'la_ba.sub', 'la_ba.sub_e_marc', 'la_ba.sub_i_marc', 'la_ba.sub_o_marc', 'la_ba.sub_u_marc', 'la_ca.sub', 'la_ca.sub_e_marc', 'la_ca.sub_i_marc', 'la_ca.sub_o_marc', 'la_ca.sub_u_marc', 'la_da.sub', 'la_da.sub_e_marc', 'la_da.sub_i_marc', 'la_da.sub_o_marc', 'la_da.sub_u_marc', 'la_e_marc', 'la_ga.sub', 'la_ga.sub_e_marc', 'la_ga.sub_i_marc', 'la_ga.sub_o_marc', 'la_ga.sub_u_marc', 'la_ga.sub_ya.sub', 'la_ga.sub_ya.sub_e_marc', 'la_ga.sub_ya.sub_i_marc', 'la_ga.sub_ya.sub_i_marc_short', 'la_ga.sub_ya.sub_o_marc', 'la_ga.sub_ya.sub_u_marc', 'la_ha.sub', 'la_ha.sub_e_marc', 'la_ha.sub_i_marc', 'la_ha.sub_o_marc', 'la_ha.sub_u_marc', 'la_i_marc', 'la_ja.sub', 'la_ja.sub_e_marc', 'la_ja.sub_i_marc', 'la_ja.sub_o_marc', 'la_ja.sub_u_marc', 'la_ka.sub', 'la_ka.sub_e_marc', 'la_ka.sub_i_marc', 'la_ka.sub_o_marc', 'la_ka.sub_u_marc', 'la_marc', 'la_nga.sub', 'la_nga.sub_e_marc', 'la_nga.sub_i_marc', 'la_nga.sub_o_marc', 'la_nga.sub_u_marc', 'la_o_marc', 'la_pa.sub', 'la_pa.sub_e_marc', 'la_pa.sub_i_marc', 'la_pa.sub_o_marc', 'la_pa.sub_u_marc', 'la_ra.sub', 'la_ta.sub', 'la_ta.sub_e_marc', 'la_ta.sub_i_marc', 'la_ta.sub_o_marc', 'la_ta.sub_u_marc', 'la_u_marc', 'la_wa.sub', 'la_wa.sub_e_marc', 'la_wa.sub_i_marc', 'la_wa.sub_o_marc', 'la_wa.sub_u_marc', 'ma_aa_marc.sub', 'ma_e_marc', 'ma_i_marc', 'ma_marc', 'ma_o_marc', 'ma_ra.sub', 'ma_ra.sub_e_marc', 'ma_ra.sub_i_marc', 'ma_ra.sub_o_marc', 'ma_ra.sub_u_marc', 'ma_u_marc', 'ma_wa.sub', 'ma_ya.sub', 'ma_ya.sub_e_marc', 'ma_ya.sub_i_marc', 'ma_ya.sub_o_marc', 'ma_ya.sub_u_marc', 'mark_marc', 'na_e_marc', 'na_i_marc', 'na_marc', 'na_o_marc', 'na_ra.sub', 'na_u_marc', 'na_wa.sub', 'nga_aa_marc.sub', 'nga_e_marc', 'nga_i_marc', 'nga_marc', 'nga_o_marc', 'nga_ra.sub', 'nga_u_marc', 'nya_aa_marc.sub', 'nya_e_marc', 'nya_i_marc', 'nya_marc', 'nya_o_marc', 'nya_ra.sub', 'nya_u_marc', 'nya_wa.sub', 'nya_wa.sub_e_marc', 'nya_wa.sub_i_marc', 'nya_wa.sub_o_marc', 'nya_wa.sub_u_marc', 'pa_aa_marc.sub', 'pa_e_marc', 'pa_i_marc', 'pa_marc', 'pa_o_marc', 'pa_ra.sub', 'pa_ra.sub_e_marc', 'pa_ra.sub_i_marc', 'pa_ra.sub_o_marc', 'pa_ra.sub_u_marc', 'pa_u_marc', 'pa_wa.sub', 'pa_ya.sub', 'pa_ya.sub_e_marc', 'pa_ya.sub_i_marc', 'pa_ya.sub_o_marc', 'pa_ya.sub_u_marc', 'pha_aa_marc.sub', 'pha_e_marc', 'pha_i_marc', 'pha_marc', 'pha_o_marc', 'pha_ra.sub', 'pha_ra.sub_e_marc', 'pha_ra.sub_i_marc', 'pha_ra.sub_o_marc', 'pha_ra.sub_u_marc', 'pha_u_marc', 'pha_ya.sub', 'pha_ya.sub_e_marc', 'pha_ya.sub_i_marc', 'pha_ya.sub_o_marc', 'pha_ya.sub_u_marc', 'ra_aa_marc.sub', 'ra_ba.sub', 'ra_ba.sub_e_marc', 'ra_ba.sub_i_marc', 'ra_ba.sub_o_marc', 'ra_ba.sub_u_marc', 'ra_da.sub', 'ra_da.sub_e_marc', 'ra_da.sub_i_marc', 'ra_da.sub_o_marc', 'ra_da.sub_ra.sub', 'ra_da.sub_ra.sub_i_marc', 'ra_da.sub_ra.sub_i_marc_short', 'ra_da.sub_ra.sub_o_marc', 'ra_da.sub_u_marc', 'ra_dza.sub', 'ra_dza.sub_e_marc', 'ra_dza.sub_i_marc', 'ra_dza.sub_o_marc', 'ra_dza.sub_u_marc', 'ra_e_marc', 'ra_ga.sub', 'ra_ga.sub_e_marc', 'ra_ga.sub_i_marc', 'ra_ga.sub_o_marc', 'ra_ga.sub_u_marc', 'ra_ga.sub_ya.sub', 'ra_ga.sub_ya.sub_e_marc', 'ra_ga.sub_ya.sub_i_marc', 'ra_ga.sub_ya.sub_i_marc_short', 'ra_ga.sub_ya.sub_o_marc', 'ra_ga.sub_ya.sub_u_marc', 'ra_i_marc', 'ra_ja.sub', 'ra_ja.sub_e_marc', 'ra_ja.sub_i_marc', 'ra_ja.sub_o_marc', 'ra_ja.sub_u_marc', 'ra_ka.sub', 'ra_ka.sub_e_marc', 'ra_ka.sub_i_marc', 'ra_ka.sub_o_marc', 'ra_ka.sub_u_marc', 'ra_ka.sub_ya.sub', 'ra_ka.sub_ya.sub_e_marc', 'ra_ka.sub_ya.sub_i_marc', 'ra_ka.sub_ya.sub_i_marc_short', 'ra_ka.sub_ya.sub_o_marc', 'ra_ka.sub_ya.sub_u_marc', 'ra_la.sub', 'ra_la.sub_e_marc', 'ra_la.sub_i_marc', 'ra_la.sub_i_marc_short', 'ra_la.sub_o_marc', 'ra_la.sub_u_marc', 'ra_ma.sub', 'ra_ma.sub_e_marc', 'ra_ma.sub_i_marc', 'ra_ma.sub_o_marc', 'ra_ma.sub_u_marc', 'ra_ma.sub_ya.sub', 'ra_ma.sub_ya.sub_e_marc', 'ra_ma.sub_ya.sub_i_marc', 'ra_ma.sub_ya.sub_i_marc_short', 'ra_ma.sub_ya.sub_o_marc', 'ra_ma.sub_ya.sub_u_marc', 'ra_marc', 'ra_na.sub', 'ra_na.sub_e_marc', 'ra_na.sub_i_marc', 'ra_na.sub_o_marc', 'ra_na.sub_u_marc', 'ra_nga.sub', 'ra_nga.sub_e_marc', 'ra_nga.sub_i_marc', 'ra_nga.sub_o_marc', 'ra_nga.sub_u_marc', 'ra_nya.sub', 'ra_nya.sub_e_marc', 'ra_nya.sub_i_marc', 'ra_nya.sub_o_marc', 'ra_nya.sub_u_marc', 'ra_o_marc', 'ra_ra.sub', 'ra_ta.sub', 'ra_ta.sub_e_marc', 'ra_ta.sub_i_marc', 'ra_ta.sub_o_marc', 'ra_ta.sub_u_marc', 'ra_tsa.sub', 'ra_tsa.sub_e_marc', 'ra_tsa.sub_i_marc', 'ra_tsa.sub_o_marc', 'ra_tsa.sub_u_marc', 'ra_tsa.sub_wa.sub', 'ra_tsa.sub_wa.sub_e_marc', 'ra_tsa.sub_wa.sub_i_marc', 'ra_tsa.sub_wa.sub_i_marc_short', 'ra_tsa.sub_wa.sub_o_marc', 'ra_u_marc', 'ra_wa.sub', 'ra_wa.sub_e_marc', 'ra_wa.sub_i_marc', 'ra_wa.sub_o_marc', 'ra_wa.sub_u_marc', 'sa_aa_marc.sub', 'sa_ba.sub', 'sa_ba.sub_e_marc', 'sa_ba.sub_i_marc', 'sa_ba.sub_o_marc', 'sa_ba.sub_ra.sub', 'sa_ba.sub_ra.sub_e_marc', 'sa_ba.sub_ra.sub_i_marc', 'sa_ba.sub_ra.sub_i_marc_short', 'sa_ba.sub_ra.sub_o_marc', 'sa_ba.sub_ra.sub_u_marc', 'sa_ba.sub_u_marc', 'sa_ba.sub_ya.sub', 'sa_ba.sub_ya.sub_e_marc', 'sa_ba.sub_ya.sub_i_marc', 'sa_ba.sub_ya.sub_i_marc_short', 'sa_ba.sub_ya.sub_o_marc', 'sa_ba.sub_ya.sub_u_marc', 'sa_da.sub', 'sa_da.sub_e_marc', 'sa_da.sub_i_marc', 'sa_da.sub_o_marc', 'sa_da.sub_u_marc', 'sa_e_marc', 'sa_ga.sub', 'sa_ga.sub_e_marc', 'sa_ga.sub_i_marc', 'sa_ga.sub_o_marc', 'sa_ga.sub_ra.sub', 'sa_ga.sub_ra.sub_e_marc', 'sa_ga.sub_ra.sub_i_marc', 'sa_ga.sub_ra.sub_i_marc_short', 'sa_ga.sub_ra.sub_o_marc', 'sa_ga.sub_ra.sub_u_marc', 'sa_ga.sub_u_marc', 'sa_ga.sub_ya.sub', 'sa_ga.sub_ya.sub_e_marc', 'sa_ga.sub_ya.sub_i_marc', 'sa_ga.sub_ya.sub_i_marc_short', 'sa_ga.sub_ya.sub_o_marc', 'sa_ga.sub_ya.sub_u_marc', 'sa_i_marc', 'sa_ka.sub_i_marc', 'sa_ka.sub_o_marc', 'sa_ka.sub_ra.sub', 'sa_ka.sub_ra.sub_e_marc', 'sa_ka.sub_ra.sub_i_marc', 'sa_ka.sub_ra.sub_i_marc_short', 'sa_ka.sub_ra.sub_o_marc', 'sa_ka.sub_ya.sub', 'sa_ka.sub_ya.sub_e_marc', 'sa_ka.sub_ya.sub_i_marc', 'sa_ka.sub_ya.sub_i_marc_short', 'sa_ka.sub_ya.sub_o_marc', 'sa_ka.sub_ya.sub_u_marc', 'sa_la.sub', 'sa_la.sub_e_marc', 'sa_la.sub_i_marc', 'sa_la.sub_i_marc_short', 'sa_la.sub_o_marc', 'sa_la.sub_u_marc', 'sa_ma.sub', 'sa_ma.sub_e_marc', 'sa_ma.sub_i_marc', 'sa_ma.sub_o_marc', 'sa_ma.sub_ra.sub', 'sa_ma.sub_ra.sub_e_marc', 'sa_ma.sub_ra.sub_i_marc', 'sa_ma.sub_ra.sub_i_marc_short', 'sa_ma.sub_ra.sub_o_marc', 'sa_ma.sub_ra.sub_u_marc', 'sa_ma.sub_u_marc', 'sa_ma.sub_ya.sub', 'sa_ma.sub_ya.sub_e_marc', 'sa_ma.sub_ya.sub_i_marc', 'sa_ma.sub_ya.sub_i_marc_short', 'sa_ma.sub_ya.sub_o_marc', 'sa_ma.sub_ya.sub_u_marc', 'sa_marc', 'sa_na.sub', 'sa_na.sub_e_marc', 'sa_na.sub_i_marc', 'sa_na.sub_o_marc', 'sa_na.sub_ra.sub', 'sa_na.sub_ra.sub_e_marc', 'sa_na.sub_ra.sub_i_marc', 'sa_na.sub_ra.sub_i_marc_short', 'sa_na.sub_ra.sub_o_marc', 'sa_na.sub_ra.sub_u_marc', 'sa_na.sub_u_marc', 'sa_nga.sub', 'sa_nga.sub_e_marc', 'sa_nga.sub_i_marc', 'sa_nga.sub_o_marc', 'sa_nga.sub_u_marc', 'sa_nya.sub', 'sa_nya.sub_e_marc', 'sa_nya.sub_i_marc', 'sa_nya.sub_o_marc', 'sa_nya.sub_u_marc', 'sa_o_marc', 'sa_pa.sub', 'sa_pa.sub_e_marc', 'sa_pa.sub_i_marc', 'sa_pa.sub_o_marc', 'sa_pa.sub_ra.sub', 'sa_pa.sub_ra.sub_e_marc', 'sa_pa.sub_ra.sub_i_marc', 'sa_pa.sub_ra.sub_i_marc_short', 'sa_pa.sub_ra.sub_o_marc', 'sa_pa.sub_ra.sub_u_marc', 'sa_pa.sub_u_marc', 'sa_pa.sub_ya.sub', 'sa_pa.sub_ya.sub_e_marc', 'sa_pa.sub_ya.sub_i_marc', 'sa_pa.sub_ya.sub_i_marc_short', 'sa_pa.sub_ya.sub_o_marc', 'sa_pa.sub_ya.sub_u_marc', 'sa_ra.sub', 'sa_ra.sub_e_marc', 'sa_ra.sub_i_marc', 'sa_ra.sub_o_marc', 'sa_ra.sub_u_marc', 'sa_ta.sub', 'sa_ta.sub_e_marc', 'sa_ta.sub_i_marc', 'sa_ta.sub_o_marc', 'sa_ta.sub_ra.sub', 'sa_ta.sub_ra.sub_e_marc', 'sa_ta.sub_ra.sub_i_marc', 'sa_ta.sub_ra.sub_i_marc_short', 'sa_ta.sub_ra.sub_o_marc', 'sa_ta.sub_ra.sub_u_marc', 'sa_ta.sub_u_marc', 'sa_ta.sub_wa.sub', 'sa_ta.sub_wa.sub_e_marc', 'sa_ta.sub_wa.sub_i_marc', 'sa_ta.sub_wa.sub_i_marc_short', 'sa_ta.sub_wa.sub_o_marc', 'sa_ta.sub_wa.sub_u_marc', 'sa_tha.sub_ra.sub', 'sa_tsa.sub', 'sa_tsa.sub_e_marc', 'sa_tsa.sub_i_marc', 'sa_tsa.sub_o_marc', 'sa_u_marc', 'sa_wa.sub', 'sa_wa.sub_e_marc', 'sa_wa.sub_i_marc', 'sa_wa.sub_o_marc', 'sa_wa.sub_u_marc', 'sha_aa_marc.sub', 'sha_e_marc', 'sha_i_marc', 'sha_marc', 'sha_o_marc', 'sha_ra.sub', 'sha_ra.sub_e_marc', 'sha_ra.sub_i_marc', 'sha_ra.sub_o_marc', 'sha_ra.sub_u_marc', 'sha_u_marc', 'sha_wa.sub', 'sha_wa.sub_e_marc', 'sha_wa.sub_i_marc', 'sha_wa.sub_o_marc', 'sha_wa.sub_u_marc', 'shad_marc', 'space', 'ta_aa_marc.sub', 'ta_e_marc', 'ta_i_marc', 'ta_marc', 'ta_o_marc', 'ta_ra.sub', 'ta_ra.sub_e_marc', 'ta_ra.sub_i_marc', 'ta_ra.sub_o_marc', 'ta_ra.sub_u_marc', 'ta_u_marc', 'ta_wa.sub', 'ta_wa.sub_e_marc', 'ta_wa.sub_i_marc', 'ta_wa.sub_o_marc', 'ta_wa.sub_u_marc', 'tha_i_marc', 'tha_o_marc', 'tha_ra.sub_i_marc', 'tha_ra.sub_o_marc', 'tsa_aa_marc.sub', 'tsa_e_marc', 'tsa_i_marc', 'tsa_marc', 'tsa_o_marc', 'tsa_ra.sub', 'tsa_u_marc', 'tsa_wa.sub', 'tsa_wa.sub_e_marc', 'tsa_wa.sub_i_marc', 'tsa_wa.sub_o_marc', 'tsa_wa.sub_u_marc', 'tsha_aa_marc.sub', 'tsha_e_marc', 'tsha_i_marc', 'tsha_marc', 'tsha_o_marc', 'tsha_ra.sub', 'tsha_u_marc', 'tsha_wa.sub', 'tsha_wa.sub_e_marc', 'tsha_wa.sub_i_marc', 'tsha_wa.sub_o_marc', 'tsha_wa.sub_u_marc', 'uni00A0', 'uni25CC', 'wa_aa_marc.sub', 'wa_e_marc', 'wa_i_marc', 'wa_marc', 'wa_o_marc', 'wa_ra.sub', 'wa_u_marc', 'ya_e_marc', 'ya_i_marc', 'ya_marc', 'ya_o_marc', 'ya_ra.sub', 'ya_u_marc', 'za_aa_marc.sub', 'za_e_marc', 'za_i_marc', 'za_la.sub', 'za_la.sub_e_marc', 'za_la.sub_i_marc', 'za_la.sub_i_marc_short', 'za_la.sub_o_marc', 'za_la.sub_u_marc', 'za_marc', 'za_o_marc', 'za_u_marc', 'za_wa.sub', 'za_wa.sub_e_marc', 'za_wa.sub_i_marc', 'za_wa.sub_o_marc', 'za_wa.sub_u_marc', 'zha_aa_marc.sub', 'zha_e_marc', 'zha_i_marc', 'zha_marc', 'zha_o_marc', 'zha_wa.sub', 'zha_wa.sub_e_marc', 'zha_wa.sub_i_marc', 'zha_wa.sub_o_marc', 'zha_wa.sub_u_marc'] [code: mono-outliers]
+
+
+    Result: [1;91;107mFAIL[0m
+
+ >> [1;35;107mcom.google.fonts/check/dsig[0m
+    [0;36;107mDoes the font have a DSIG table?[0m
+    with NotoSansMarchen-VF.ttf
+
+    [1;35;107m  Rationale:                                                                [0m
+    [0;30;107m  Microsoft Office 2013 and below products expect fonts to have a digital   [0m
+    [0;30;107m  signature declared in a DSIG table in order to implement OpenType         [0m
+    [0;30;107m  features. The EOL date for Microsoft Office 2013 products is 4/11/2023.   [0m
+    [0;30;107m  This issue does not impact Microsoft Office 2016 and above products.      [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  This checks verifies that this signature is available in the font.        [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  A fake signature is enough to address this issue. If needed, a dummy      [0m
+    [0;30;107m  table can be added to the font with the `gftools fix-dsig` script         [0m
+    [0;30;107m  available at https://github.com/googlefonts/gftools                       [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  Reference: https://github.com/googlefonts/fontbakery/issues/1845          [0m
+
+    * [1;91;107mFAIL[0m: This font lacks a digital signature (DSIG table). Some applications may require one (even if only a dummy placeholder) in order to work properly. You can add a DSIG table by running the `gftools fix-dsig` script. [code: lacks-signature]
+
+
+    Result: [1;91;107mFAIL[0m
+
+ >> [1;35;107mcom.google.fonts/check/gdef_mark_chars[0m
+    [0;36;107mCheck mark characters are in GDEF mark glyph class[0m
+    with NotoSansMarchen-VF.ttf
+
+    [1;35;107m  Rationale:                                                                [0m
+    [0;30;107m  Mark characters should be in the GDEF mark glyph class.                   [0m
+
+    * [1;30;103mWARN[0m: The following mark characters could be in the GDEF mark glyph class:
+	 U+11CB1 [code: mark-chars]
+
+
+    Result: [1;30;103mWARN[0m
+
+ >> [1;35;107mcom.google.fonts/check/gpos_kerning_info[0m
+    [0;36;107mDoes GPOS table have kerning information? This check skips monospaced fonts as defined by post.isFixedPitch value[0m
+    with NotoSansMarchen-VF.ttf
+
+    * [1;30;103mWARN[0m: GPOS table lacks kerning information. [code: lacks-kern-info]
+
+
+    Result: [1;30;103mWARN[0m
+
+
+Total:
+
+    [1;97;101mERROR[0m: 0
+    [1;91;107mFAIL[0m: 3
+    [1;30;103mWARN[0m: 3
+    [0;36;107mINFO[0m: 2
+    [0;34;107mSKIP[0m: 17
+    [0;32;107mPASS[0m: 52
+
+
+DONE!
+
+    [1;30;107mMeaning of check results:[0m
+
+    An [1;97;101mERROR[0m is something wrong with FontBakery itself, possibly a bug.
+    A [1;91;107mFAIL[0m is a problem with the font that must be fixed.
+    A [1;30;103mWARN[0m is something that you should consider addressing.
+    An [0;36;107mINFO[0m result simply prints something useful. Typically stats.
+    A [0;32;107mPASS[0m means the font looks good for the given checking routine.
+    And a [0;34;107mSKIP[0m happens when the check does not apply to the given font.
+
+    If you get [1;97;101mERROR[0ms, please help us improve the tool by reporting them at
+    [1;36;107mhttps://github.com/googlefonts/fontbakery/issues[0m
+
+    (but other kinds of bug reports and/or
+     feature requests are also always welcome, of course!)
+

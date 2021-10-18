@@ -1,0 +1,70 @@
+@NARROW = [Iauda-coptic iauda-coptic u102EA];
+@MEDIUM = [gamma-coptic sou-coptic zata-coptic laula-coptic ksi-coptic dialectpkapa-coptic sheiOld-coptic EshOld-coptic eshOld-coptic haLshaped-coptic HatOld-coptic hatOld-coptic ngi-nubian onehalf-coptic u102E1 u102E4 u102E5 u102E7 u102E8 u102E9 u102EC u102EF u102F0 u102F3 u102F5 u102F6 u102F8 u102F9 u102FB];
+@LARGE = [Fei-coptic Khei-coptic gangia-coptic Shima-coptic Alfa-coptic Vida-coptic dalda-coptic Eie-coptic Hate-coptic hate-coptic mi-coptic ni-coptic Pi-coptic Sima-coptic fi-coptic psi-coptic AlefDialectP-coptic Cryptogrammiceie-coptic dialectPni-coptic cryptogrammicni-coptic oouOld-coptic Sampi-coptic DjaOld-coptic djaOld-coptic shimaOld-coptic Shima-nubian shima-nubian nyi-nubian Wau-nubian piro-coptic tauro-coptic khiro-coptic gangiaCryptogrammic-coptic KheiBohairic-coptic u102E2 u102EB u102ED u102F4 u102F7 u102FA];
+@XLARGE = [shei-coptic Gangia-coptic Dalda-coptic Thethe-coptic Mi-coptic Ni-coptic O-coptic Fi-coptic Psi-coptic oou-coptic Cryptogrammicni-coptic OouOld-coptic sheiCrossed-coptic ShimaOld-coptic Nyi-nubian miro-coptic stauros-coptic SheiCryptogrammic-coptic GangiaCryptogrammic-coptic u102F2];
+@XXLARGE = [Shei-coptic Oou-coptic SheiCrossed-coptic shimasima-coptic];
+@UPPERCASE_COPTIC = [Shei-coptic Fei-coptic Khei-coptic Hori-coptic Gangia-coptic Shima-coptic Dei-coptic dei-coptic Alfa-coptic Vida-coptic Gamma-coptic Dalda-coptic Eie-coptic Sou-coptic Zata-coptic Hate-coptic Thethe-coptic Iauda-coptic Kapa-coptic Laula-coptic Mi-coptic Ni-coptic Ksi-coptic O-coptic Pi-coptic Ro-coptic Sima-coptic Tau-coptic Ua-coptic Fi-coptic fi-coptic Khi-coptic Psi-coptic Oou-coptic AlefDialectP-coptic AinOld-coptic Cryptogrammiceie-coptic dialectPkapa-coptic dialectPni-coptic Cryptogrammicni-coptic OouOld-coptic Sampi-coptic SheiCrossed-coptic sheiCrossed-coptic SheiOld-coptic EshOld-coptic KheiAkhmimic-coptic HoriDialectP-coptic HoriOld-coptic HaOld-coptic HaLshaped-coptic HeiOld-coptic heiOld-coptic HatOld-coptic GangiaOld-coptic DjaOld-coptic ShimaOld-coptic Shima-nubian shima-nubian Ngi-nubian Nyi-nubian Wau-nubian SheiCryptogrammic-coptic GangiaCryptogrammic-coptic KheiBohairic-coptic kheiBohairic-coptic];
+@MARKS = [gravecomb acutecomb circumflexcomb macroncomb overlinecomb dotaccentcomb dieresiscomb dotbelowcomb dbloverlinecomb breveinverteddoublecomb doublecircumflexcomb nicomb-coptic spiritusaspercomb spiritusleniscomb macronlefthalfcomb macronrighthalfcomb conjoiningmacroncomb u102E0 overlinecomb.small overlinecomb.medium overlinecomb.large overlinecomb.xlarge overlinecomb.xxlarge overlinecomb.small.cap overlinecomb.medium.cap overlinecomb.large.cap overlinecomb.xlarge.cap overlinecomb.xxlarge.cap overlinecomb.cap dbloverlinecomb.cap conjoiningmacroncomb.cap dbloverlinecomb.large.cap conjoiningmacroncomb.large.cap macronlefthalfcomb.cap macronrighthalfcomb.cap dbloverlinecomb.medium.cap conjoiningmacroncomb.medium.cap dbloverlinecomb.small.cap conjoiningmacroncomb.small.cap dbloverlinecomb.xlarge.cap conjoiningmacroncomb.xlarge.cap dbloverlinecomb.xxlarge.cap conjoiningmacroncomb.xxlarge.cap dbloverlinecomb.large conjoiningmacroncomb.large dbloverlinecomb.medium conjoiningmacroncomb.medium dbloverlinecomb.small conjoiningmacroncomb.small dbloverlinecomb.xlarge conjoiningmacroncomb.xlarge dbloverlinecomb.xxlarge conjoiningmacroncomb.xxlarge doublemacroncomb];
+@LINE_MARKS = [overlinecomb overlinecomb.large overlinecomb.medium overlinecomb.small overlinecomb.xlarge overlinecomb.xxlarge dbloverlinecomb dbloverlinecomb.large dbloverlinecomb.medium dbloverlinecomb.small dbloverlinecomb.xlarge dbloverlinecomb.xxlarge macronlefthalfcomb macronrighthalfcomb conjoiningmacroncomb conjoiningmacroncomb.large conjoiningmacroncomb.medium conjoiningmacroncomb.small conjoiningmacroncomb.xlarge conjoiningmacroncomb.xxlarge];
+@LINE_MARKS_CAP = [overlinecomb.cap overlinecomb.large.cap overlinecomb.medium.cap overlinecomb.small.cap overlinecomb.xlarge.cap overlinecomb.xxlarge.cap dbloverlinecomb.cap dbloverlinecomb.large.cap dbloverlinecomb.medium.cap dbloverlinecomb.small.cap dbloverlinecomb.xlarge.cap dbloverlinecomb.xxlarge.cap macronlefthalfcomb.cap macronrighthalfcomb.cap conjoiningmacroncomb.cap conjoiningmacroncomb.large.cap conjoiningmacroncomb.medium.cap conjoiningmacroncomb.small.cap conjoiningmacroncomb.xlarge.cap conjoiningmacroncomb.xxlarge.cap];
+@EPACT_NUMBERS = [u102E1 u102E2 u102E3 u102E4 u102E5 u102E6 u102E7 u102E8 u102E9 u102EA u102EB u102EC u102ED u102EE u102EF u102F0 u102F1 u102F2 u102F3 u102F4 u102F5 u102F6 u102F7 u102F8 u102F9 u102FA u102FB];
+
+# Prefix: Language Systems
+languagesystem DFLT dflt;
+languagesystem copt dflt;
+# Prefix: Lookups
+lookup lineMarksWidthSubstition {
+    sub @NARROW overlinecomb' by overlinecomb.small;
+    sub @MEDIUM overlinecomb' by overlinecomb.medium;
+    sub @LARGE overlinecomb' by overlinecomb.large;
+    sub @XLARGE overlinecomb' by overlinecomb.xlarge;
+    sub @XXLARGE overlinecomb' by overlinecomb.xxlarge;
+    sub @NARROW conjoiningmacroncomb' by conjoiningmacroncomb.small;
+    sub @MEDIUM conjoiningmacroncomb' by conjoiningmacroncomb.medium;
+    sub @LARGE conjoiningmacroncomb' by conjoiningmacroncomb.large;
+    sub @XLARGE conjoiningmacroncomb' by conjoiningmacroncomb.xlarge;
+    sub @XXLARGE conjoiningmacroncomb' by conjoiningmacroncomb.xxlarge;
+    sub @NARROW dbloverlinecomb' by dbloverlinecomb.small;
+    sub @MEDIUM dbloverlinecomb' by dbloverlinecomb.medium;
+    sub @LARGE dbloverlinecomb' by dbloverlinecomb.large;
+    sub @XLARGE dbloverlinecomb' by dbloverlinecomb.xlarge;
+    sub @XXLARGE dbloverlinecomb' by dbloverlinecomb.xxlarge;
+} lineMarksWidthSubstition;
+
+lookup lineMarksCapSubstutition {
+    lookupflag IgnoreBaseGlyphs IgnoreLigatures MarkAttachmentType @MARKS;
+    sub @LINE_MARKS by @LINE_MARKS_CAP;
+} lineMarksCapSubstutition;
+
+lookup lineMarksCapContextualSubstitution {
+    lookupflag 0;
+    sub @UPPERCASE_COPTIC @LINE_MARKS' lookup lineMarksCapSubstutition;
+} lineMarksCapContextualSubstitution;
+
+lookup lineMarksMarkContextualSubstitution {
+    lookupflag IgnoreBaseGlyphs IgnoreLigatures MarkAttachmentType @MARKS;
+    sub @LINE_MARKS_CAP @LINE_MARKS' lookup lineMarksCapSubstutition;
+} lineMarksMarkContextualSubstitution;
+
+lookup lineMarksCapReverseContextualSubstitution {
+    lookupflag IgnoreBaseGlyphs IgnoreLigatures MarkAttachmentType @MARKS;
+    rsub @LINE_MARKS' @LINE_MARKS_CAP by @LINE_MARKS_CAP;
+} lineMarksCapReverseContextualSubstitution;
+
+lookup numberMarkContextualSubstitution {
+    sub numbermark-ar' u102E5 by numbermark-ar.extrawide;
+    sub u102E5 numbermark-ar' by numbermark-ar.extrawide;
+    # lookupflag IgnoreMarks;
+    # sub numbermark-ar' @EPACT_NUMBERS @EPACT_NUMBERS @EPACT_NUMBERS @EPACT_NUMBERS by numbermark-ar.extrawide;
+    # sub numbermark-ar' @EPACT_NUMBERS @EPACT_NUMBERS @EPACT_NUMBERS by numbermark-ar.wide;
+    # sub numbermark-ar' @EPACT_NUMBERS @EPACT_NUMBERS by numbermark-ar.semiwide;
+    # sub numbermark-ar' @EPACT_NUMBERS by numbermark-ar.semiwide;
+} numberMarkContextualSubstitution;
+
+feature ccmp {
+    lookup lineMarksWidthSubstition;
+    lookup lineMarksCapContextualSubstitution;
+    lookup lineMarksMarkContextualSubstitution;
+    lookup lineMarksCapReverseContextualSubstitution;
+    lookup numberMarkContextualSubstitution;
+} ccmp;

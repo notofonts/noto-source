@@ -1,0 +1,198 @@
+Start ... running 77 individual check executions.
+ >> [1;35;107mcom.google.fonts/check/ots[0m
+    [0;36;107mChecking with ots-sanitize.[0m
+    with NotoSansGujarati-SemiCondensedMedium.ttf
+
+    * [1;30;103mWARN[0m: ots-sanitize passed this file, however warnings were printed:
+
+WARNING: Layout: tags aren't arranged alphabetically.
+WARNING: Layout: tags aren't arranged alphabetically.
+WARNING: Layout: tags aren't arranged alphabetically.
+WARNING: Layout: tags aren't arranged alphabetically.
+WARNING: Layout: tags aren't arranged alphabetically.
+WARNING: Layout: tags aren't arranged alphabetically.
+
+
+
+    Result: [1;30;103mWARN[0m
+
+ >> [1;35;107mcom.google.fonts/check/whitespace_glyphnames[0m
+    [0;36;107mFont has **proper** whitespace glyph names?[0m
+    with NotoSansGujarati-SemiCondensedMedium.ttf
+
+    [1;35;107m  Rationale:                                                                [0m
+    [0;30;107m  This check enforces adherence to recommended whitespace (codepoints 0020  [0m
+    [0;30;107m  and 00A0) glyph names according to the Adobe Glyph List.                  [0m
+
+    * [1;91;107mFAIL[0m: Glyph 0x00A0 is called "uni00A0.gujr": Change to "uni00A0" [code: non-compliant-00a0]
+
+
+    Result: [1;91;107mFAIL[0m
+
+ >> [1;35;107mcom.google.fonts/check/required_tables[0m
+    [0;36;107mFont contains all required tables?[0m
+    with NotoSansGujarati-SemiCondensedMedium.ttf
+
+    [1;35;107m  Rationale:                                                                [0m
+    [0;30;107m  Depending on the typeface and coverage of a font, certain tables are      [0m
+    [0;30;107m  recommended for optimum quality. For example, the performance of a        [0m
+    [0;30;107m  non-linear font is improved if the VDMX, LTSH, and hdmx tables are        [0m
+    [0;30;107m  present. Non-monospaced Latin fonts should have a kern table. A gasp      [0m
+    [0;30;107m  table is necessary if a designer wants to influence the sizes at which    [0m
+    [0;30;107m  grayscaling is used under Windows. A DSIG table containing a digital      [0m
+    [0;30;107m  signature helps ensure the integrity of the font file. Etc.               [0m
+
+    * [0;36;107mINFO[0m: This font contains the following optional tables [loca, GPOS, GSUB]
+
+
+    Result: [0;36;107mINFO[0m
+
+ >> [1;35;107mcom.google.fonts/check/superfamily/list[0m
+    [0;36;107mList all superfamily filepaths[0m
+    with NotoSansGujarati-SemiCondensedMedium.ttf
+
+    [1;35;107m  Rationale:                                                                [0m
+    [0;30;107m  This is a merely informative check that lists all sibling families        [0m
+    [0;30;107m  detected by fontbakery.                                                   [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  Only the fontfiles in these directories will be considered in             [0m
+    [0;30;107m  superfamily-level checks.                                                 [0m
+
+    * [0;36;107mINFO[0m: . [code: family-path]
+
+
+    Result: [0;36;107mINFO[0m
+
+ >> [1;35;107mcom.google.fonts/check/xavgcharwidth[0m
+    [0;36;107mCheck if OS/2 xAvgCharWidth is correct.[0m
+    with NotoSansGujarati-SemiCondensedMedium.ttf
+
+    * [0;36;107mINFO[0m: OS/2 xAvgCharWidth is 556 but it should be 559 which corresponds to the average of the widths of all glyphs in the font. These are similar values, which may be a symptom of the slightly different calculation of the xAvgCharWidth value in font editors. There's further discussion on this at https://github.com/googlefonts/fontbakery/issues/1622
+
+
+    Result: [0;36;107mINFO[0m
+
+ >> [1;35;107mcom.google.fonts/check/family_naming_recommendations[0m
+    [0;36;107mFont follows the family naming recommendations?[0m
+    with NotoSansGujarati-SemiCondensedMedium.ttf
+
+    * [0;36;107mINFO[0m: Font does not follow some family naming recommendations:
+
+| Field | Value | Recommendation |
+|:----- |:----- |:-------------- |
+| Family Name | Noto Sans Gujarati SemiCondensed Medium | exceeds max length (31) |
+ [code: bad-entries]
+
+
+    Result: [0;36;107mINFO[0m
+
+ >> [1;35;107mcom.google.fonts/check/dsig[0m
+    [0;36;107mDoes the font have a DSIG table?[0m
+    with NotoSansGujarati-SemiCondensedMedium.ttf
+
+    [1;35;107m  Rationale:                                                                [0m
+    [0;30;107m  Microsoft Office 2013 and below products expect fonts to have a digital   [0m
+    [0;30;107m  signature declared in a DSIG table in order to implement OpenType         [0m
+    [0;30;107m  features. The EOL date for Microsoft Office 2013 products is 4/11/2023.   [0m
+    [0;30;107m  This issue does not impact Microsoft Office 2016 and above products.      [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  This checks verifies that this signature is available in the font.        [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  A fake signature is enough to address this issue. If needed, a dummy      [0m
+    [0;30;107m  table can be added to the font with the `gftools fix-dsig` script         [0m
+    [0;30;107m  available at https://github.com/googlefonts/gftools                       [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  Reference: https://github.com/googlefonts/fontbakery/issues/1845          [0m
+
+    * [1;91;107mFAIL[0m: This font lacks a digital signature (DSIG table). Some applications may require one (even if only a dummy placeholder) in order to work properly. You can add a DSIG table by running the `gftools fix-dsig` script. [code: lacks-signature]
+
+
+    Result: [1;91;107mFAIL[0m
+
+ >> [1;35;107mcom.google.fonts/check/gdef_mark_chars[0m
+    [0;36;107mCheck mark characters are in GDEF mark glyph class[0m
+    with NotoSansGujarati-SemiCondensedMedium.ttf
+
+    [1;35;107m  Rationale:                                                                [0m
+    [0;30;107m  Mark characters should be in the GDEF mark glyph class.                   [0m
+
+    * [1;30;103mWARN[0m: The following mark characters could be in the GDEF mark glyph class:
+	 U+0A83, U+0ABE, U+0ABF, U+0AC0, U+0AC9, U+0ACB and U+0ACC [code: mark-chars]
+
+
+    Result: [1;30;103mWARN[0m
+
+ >> [1;35;107mcom.google.fonts/check/outline_colinear_vectors[0m
+    [0;36;107mDo any segments have colinear vectors?[0m
+    with NotoSansGujarati-SemiCondensedMedium.ttf
+
+    [1;35;107m  Rationale:                                                                [0m
+    [0;30;107m  This test looks for consecutive line segments which have the same angle.  [0m
+    [0;30;107m  This normally happens if an outline point has been added by accident.     [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  This test is not run for variable fonts, as they may legitimately have    [0m
+    [0;30;107m  colinear vectors.                                                         [0m
+
+    * [1;30;103mWARN[0m: The following glyphs have colinear vectors:
+	* aagujr: L<<531.0,433.0>--<531.0,330.0>> -> L<<531.0,330.0>--<531.0,329.0>>
+	* agujr: L<<531.0,433.0>--<531.0,330.0>> -> L<<531.0,330.0>--<531.0,329.0>>
+	* aianusvaragujr: L<<531.0,433.0>--<531.0,330.0>> -> L<<531.0,330.0>--<531.0,329.0>>
+	* aigujr: L<<531.0,433.0>--<531.0,330.0>> -> L<<531.0,330.0>--<531.0,329.0>>
+	* auanusvaragujr: L<<531.0,433.0>--<531.0,330.0>> -> L<<531.0,330.0>--<531.0,329.0>>
+	* augujr: L<<531.0,433.0>--<531.0,330.0>> -> L<<531.0,330.0>--<531.0,329.0>>
+	* eanusvaragujr: L<<531.0,433.0>--<531.0,330.0>> -> L<<531.0,330.0>--<531.0,329.0>>
+	* ecandraanusvaragujr: L<<531.0,433.0>--<531.0,330.0>> -> L<<531.0,330.0>--<531.0,329.0>>
+	* ecandragujr: L<<531.0,433.0>--<531.0,330.0>> -> L<<531.0,330.0>--<531.0,329.0>>
+	* egujr: L<<531.0,433.0>--<531.0,330.0>> -> L<<531.0,330.0>--<531.0,329.0>> and 6 more. [code: found-colinear-vectors]
+
+
+    Result: [1;30;103mWARN[0m
+
+ >> [1;35;107mcom.google.fonts/check/outline_semi_vertical[0m
+    [0;36;107mDo outlines contain any semi-vertical or semi-horizontal lines?[0m
+    with NotoSansGujarati-SemiCondensedMedium.ttf
+
+    [1;35;107m  Rationale:                                                                [0m
+    [0;30;107m  This test detects line segments which are nearly, but not quite, exactly  [0m
+    [0;30;107m  horizontal or vertical. Sometimes such lines are created by design, but   [0m
+    [0;30;107m  often they are indicative of a design error.                              [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  This test is disabled for italic styles, which often contain              [0m
+    [0;30;107m  nearly-upright lines.                                                     [0m
+
+    * [1;30;103mWARN[0m: The following glyphs have semi-vertical/semi-horizontal lines:
+	* canuktastemgujr: L<<442.0,270.0>--<441.0,603.0>>
+	* caranuktastemgujr: L<<442.0,270.0>--<441.0,603.0>>
+	* carastemgujr: L<<442.0,270.0>--<441.0,603.0>> and castemgujr: L<<442.0,270.0>--<441.0,603.0>> [code: found-semi-vertical]
+
+
+    Result: [1;30;103mWARN[0m
+
+
+Total:
+
+    [1;97;101mERROR[0m: 0
+    [1;91;107mFAIL[0m: 2
+    [1;30;103mWARN[0m: 4
+    [0;36;107mINFO[0m: 4
+    [0;34;107mSKIP[0m: 17
+    [0;32;107mPASS[0m: 50
+
+
+DONE!
+
+    [1;30;107mMeaning of check results:[0m
+
+    An [1;97;101mERROR[0m is something wrong with FontBakery itself, possibly a bug.
+    A [1;91;107mFAIL[0m is a problem with the font that must be fixed.
+    A [1;30;103mWARN[0m is something that you should consider addressing.
+    An [0;36;107mINFO[0m result simply prints something useful. Typically stats.
+    A [0;32;107mPASS[0m means the font looks good for the given checking routine.
+    And a [0;34;107mSKIP[0m happens when the check does not apply to the given font.
+
+    If you get [1;97;101mERROR[0ms, please help us improve the tool by reporting them at
+    [1;36;107mhttps://github.com/googlefonts/fontbakery/issues[0m
+
+    (but other kinds of bug reports and/or
+     feature requests are also always welcome, of course!)
+

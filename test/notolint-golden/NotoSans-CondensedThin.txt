@@ -1,0 +1,33 @@
+---
+Automatic testing for 'instance_ttf,NotoSans-CondensedThin.ttf', Version 2.004:
+E <name/family> The family is 'Noto Sans Condensed Thin' but was expecting 'Noto Sans Cond Thin'
+E <cmap/variants> Font contains 1 characters with standard variants, but has no variation selector cmap table (0030).
+E <bounds/glyph/ymax> Real yMax for glyph 1510 (uni1E4C) is 1072, which is higher than the font's sTypoAscent (1069), resulting in clipping.
+E <bounds/glyph/ymin> Real yMin for glyph 2482 (scriptg) is -389, which is lower than the font's sTypoDescent (-293), resulting in clipping.
+E <bounds/glyph/ymin> Real yMin for glyph 2644 (uni2E10) is -298, which is lower than the font's sTypoDescent (-293), resulting in clipping.
+E <bounds/glyph/ymin> Real yMin for glyph 2672 (uni2E11) is -298, which is lower than the font's sTypoDescent (-293), resulting in clipping.
+E <bounds/glyph/ymin> Real yMin for glyph 2705 (uni2E3E) is -309, which is lower than the font's sTypoDescent (-293), resulting in clipping.
+E <bounds/glyph/ymin> Real yMin for glyph 3208 (uniA670) is -297, which is lower than the font's sTypoDescent (-293), resulting in clipping.
+E <bounds/glyph/ymin> Real yMin for glyph 3210 (uniA672) is -305, which is lower than the font's sTypoDescent (-293), resulting in clipping.
+E <bounds/font/ymax> Real yMax 1072, but it should be less than or equal to the value of Ascent in 'hhea' table, which is 1069.
+E <bounds/font/ymin> Real yMin is -389, but it should be greater than or equal to the value of Descent in 'hhea' table, which is -293.
+E <paths/intersection> The glyph 'k' has intersecting outlines: start and end segments match: (102.0, 224.0)
+E <paths/intersection> The glyph 'uni0137' has intersecting outlines: start and end segments match: (102.0, 224.0)
+E <paths/intersection> The glyph 'kgreenlandic' has intersecting outlines: start and end segments match: (101.0, 225.0)
+E <paths/intersection> The glyph 'uni1D70' has intersecting outlines: start and end segments match: (103.0, 314.0)
+E <paths/intersection> The glyph 'uni1D84' has intersecting outlines: start and end segments match: (102.0, 224.0)
+E <paths/intersection> The glyph 'uni2C6A' has intersecting outlines: start and end segments match: (102.0, 224.0)
+E <paths/intersection> The glyph 'uniA741' has intersecting outlines: start and end segments match: (102.0, 224.0)
+E <paths/intersection> The glyph 'uniA743' has intersecting outlines: start and end segments match: (102.0, 224.0)
+E <paths/intersection> The glyph 'uniA745' has intersecting outlines: start and end segments match: (102.0, 224.0)
+E <paths/intersection> The glyph 'uniA7A3' has intersecting outlines: start and end segments match: (102.0, 224.0)
+E <paths/intersection> The glyph 'uniAB63' has intersecting outlines: start and end segments match: (385.0, 129.0)
+E <paths/intersection> The glyph 'aogonek.loclNAV' has intersecting outlines: start and end segments match: (259.0, 16.0)
+E <paths/intersection> The glyph 'uniAB48' has intersecting outlines: start and end segments match: (279.0, 522.0)
+E <paths/intersection> The glyph 'uniA7C3' has intersecting outlines: start and end segments match: (315.0, 25.0)
+E <paths/intersection> The glyph 'uni1C88' has intersecting outlines: start and end segments match: (227.0, 451.0)
+W <advances/comma_period> The advance of U+002c (comma, glyph 15) is 178, but expected 192.
+Found 26 errors.
+Found 1 warning.
+------
+Finished linting 1 file.

@@ -1,0 +1,253 @@
+Start ... running 77 individual check executions.
+ >> [1;35;107mcom.google.fonts/check/unicode_range_bits[0m
+    [0;36;107mEnsure UnicodeRange bits are properly set.[0m
+    with NotoLoopedThaiUI-CondensedBold.ttf
+
+    [1;35;107m  Rationale:                                                                [0m
+    [0;30;107m  When the UnicodeRange bits on the OS/2 table are not properly set, some   [0m
+    [0;30;107m  programs running on Windows may not recognize the font and use a system   [0m
+    [0;30;107m  fallback font instead. For that reason, this check calculates the proper  [0m
+    [0;30;107m  settings by inspecting the glyphs declared on the cmap table and then     [0m
+    [0;30;107m  ensures that their corresponding ranges are enabled.                      [0m
+
+    * [1;30;103mWARN[0m: UnicodeRange bit 0 "Basic Latin" should be 1 because cmap has 20 of the 128 codepoints in this range. [code: bad-range-bit]
+    * [1;30;103mWARN[0m: UnicodeRange bit 1 "Latin-1 Supplement" should be 1 because cmap has 4 of the 128 codepoints in this range. [code: bad-range-bit]
+    * [1;30;103mWARN[0m: UnicodeRange bit 6 "Combining Diacritical Marks" should be 1 because cmap has 1 of the 176 codepoints in this range. [code: bad-range-bit]
+    * [1;30;103mWARN[0m: UnicodeRange bit 31 "General Punctuation" should be 1 because cmap has 17 of the 240 codepoints in this range. [code: bad-range-bit]
+    * [1;30;103mWARN[0m: UnicodeRange bit 45 "Geometric Shapes" should be 1 because cmap has 1 of the 96 codepoints in this range. [code: bad-range-bit]
+
+
+    Result: [1;30;103mWARN[0m
+
+ >> [1;35;107mcom.google.fonts/check/family/win_ascent_and_descent[0m
+    [0;36;107mChecking OS/2 usWinAscent & usWinDescent.[0m
+    with NotoLoopedThaiUI-CondensedBold.ttf
+
+    [1;35;107m  Rationale:                                                                [0m
+    [0;30;107m  A font's winAscent and winDescent values should be greater than the head  [0m
+    [0;30;107m  table's yMax, abs(yMin) values. If they are less than these values,       [0m
+    [0;30;107m  clipping can occur on Windows platforms                                   [0m
+    [0;30;107m  (https://github.com/RedHatBrand/Overpass/issues/33).                      [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  If the font includes tall/deep writing systems such as Arabic or          [0m
+    [0;30;107m  Devanagari, the winAscent and winDescent can be greater than the yMax and [0m
+    [0;30;107m  abs(yMin) to accommodate vowel marks.                                     [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  When the win Metrics are significantly greater than the upm, the          [0m
+    [0;30;107m  linespacing can appear too loose. To counteract this, enabling the OS/2   [0m
+    [0;30;107m  fsSelection bit 7 (Use_Typo_Metrics), will force Windows to use the OS/2  [0m
+    [0;30;107m  typo values instead. This means the font developer can control the        [0m
+    [0;30;107m  linespacing with the typo values, whilst avoiding clipping by setting the [0m
+    [0;30;107m  win values to values greater than the yMax and abs(yMin).                 [0m
+
+    * [1;91;107mFAIL[0m: OS/2.usWinAscent value should be equal or greater than 1102, but got 1069 instead [code: ascent]
+
+
+    Result: [1;91;107mFAIL[0m
+
+ >> [1;35;107mcom.google.fonts/check/required_tables[0m
+    [0;36;107mFont contains all required tables?[0m
+    with NotoLoopedThaiUI-CondensedBold.ttf
+
+    [1;35;107m  Rationale:                                                                [0m
+    [0;30;107m  Depending on the typeface and coverage of a font, certain tables are      [0m
+    [0;30;107m  recommended for optimum quality. For example, the performance of a        [0m
+    [0;30;107m  non-linear font is improved if the VDMX, LTSH, and hdmx tables are        [0m
+    [0;30;107m  present. Non-monospaced Latin fonts should have a kern table. A gasp      [0m
+    [0;30;107m  table is necessary if a designer wants to influence the sizes at which    [0m
+    [0;30;107m  grayscaling is used under Windows. A DSIG table containing a digital      [0m
+    [0;30;107m  signature helps ensure the integrity of the font file. Etc.               [0m
+
+    * [0;36;107mINFO[0m: This font contains the following optional tables [loca, GPOS, GSUB]
+
+
+    Result: [0;36;107mINFO[0m
+
+ >> [1;35;107mcom.google.fonts/check/superfamily/list[0m
+    [0;36;107mList all superfamily filepaths[0m
+    with NotoLoopedThaiUI-CondensedBold.ttf
+
+    [1;35;107m  Rationale:                                                                [0m
+    [0;30;107m  This is a merely informative check that lists all sibling families        [0m
+    [0;30;107m  detected by fontbakery.                                                   [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  Only the fontfiles in these directories will be considered in             [0m
+    [0;30;107m  superfamily-level checks.                                                 [0m
+
+    * [0;36;107mINFO[0m: . [code: family-path]
+
+
+    Result: [0;36;107mINFO[0m
+
+ >> [1;35;107mcom.google.fonts/check/name/match_familyname_fullfont[0m
+    [0;36;107mDoes full font name begin with the font family name?[0m
+    with NotoLoopedThaiUI-CondensedBold.ttf
+
+    * [1;91;107mFAIL[0m: On the 'name' table, the full font name (NameID 4 - FULL_FONT_NAME: 'Noto Looped Thai UI Cond Bold') does not begin with font family name (NameID 1 - FONT_FAMILY_NAME: 'Noto Looped Thai UI Condensed Bold') [code: does-not]
+
+
+    Result: [1;91;107mFAIL[0m
+
+ >> [1;35;107mcom.google.fonts/check/dsig[0m
+    [0;36;107mDoes the font have a DSIG table?[0m
+    with NotoLoopedThaiUI-CondensedBold.ttf
+
+    [1;35;107m  Rationale:                                                                [0m
+    [0;30;107m  Microsoft Office 2013 and below products expect fonts to have a digital   [0m
+    [0;30;107m  signature declared in a DSIG table in order to implement OpenType         [0m
+    [0;30;107m  features. The EOL date for Microsoft Office 2013 products is 4/11/2023.   [0m
+    [0;30;107m  This issue does not impact Microsoft Office 2016 and above products.      [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  This checks verifies that this signature is available in the font.        [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  A fake signature is enough to address this issue. If needed, a dummy      [0m
+    [0;30;107m  table can be added to the font with the `gftools fix-dsig` script         [0m
+    [0;30;107m  available at https://github.com/googlefonts/gftools                       [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  Reference: https://github.com/googlefonts/fontbakery/issues/1845          [0m
+
+    * [1;91;107mFAIL[0m: This font lacks a digital signature (DSIG table). Some applications may require one (even if only a dummy placeholder) in order to work properly. You can add a DSIG table by running the `gftools fix-dsig` script. [code: lacks-signature]
+
+
+    Result: [1;91;107mFAIL[0m
+
+ >> [1;35;107mcom.google.fonts/check/whitespace_widths[0m
+    [0;36;107mSpace and non-breaking space have the same width?[0m
+    with NotoLoopedThaiUI-CondensedBold.ttf
+
+    * [1;91;107mFAIL[0m: Space and non-breaking space have differing width: The space glyph named space is 205 font units wide, non-breaking space named (uni00A0) is 260 font units wide, and both should be positive and the same. GlyphsApp has "Sidebearing arithmetic" (https://glyphsapp.com/tutorials/spacing) which allows you to set the non-breaking space width to always equal the space width. [code: different-widths]
+
+
+    Result: [1;91;107mFAIL[0m
+
+ >> [1;35;107mcom.google.fonts/check/outline_alignment_miss[0m
+    [0;36;107mAre there any misaligned on-curve points?[0m
+    with NotoLoopedThaiUI-CondensedBold.ttf
+
+    [1;35;107m  Rationale:                                                                [0m
+    [0;30;107m  This test heuristically looks for on-curve points which are close to, but [0m
+    [0;30;107m  do not sit on, significant boundary coordinates. For example, a point     [0m
+    [0;30;107m  which has a Y-coordinate of 1 or -1 might be a misplaced baseline point.  [0m
+    [0;30;107m  As well as the baseline, the test also checks for points near the         [0m
+    [0;30;107m  x-height (but only for lower case Latin letters), cap-height, ascender    [0m
+    [0;30;107m  and descender Y coordinates.                                              [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  Not all such misaligned curve points are a mistake, and sometimes the     [0m
+    [0;30;107m  design may call for points in locations near the boundaries. As this test [0m
+    [0;30;107m  is liable to generate significant numbers of false positives, the test    [0m
+    [0;30;107m  will pass if there are more than 100 reported misalignments.              [0m
+
+    * [1;30;103mWARN[0m: The following glyphs have on-curve points which have potentially incorrect y coordinates:
+	* uni0E0F.short: X=202.0,Y=2.0 (should be at baseline 0?)
+	* uni0E35: X=65.0,Y=715.5 (should be at cap-height 714?)
+	* uni0E35: X=359.0,Y=716.0 (should be at cap-height 714?)
+	* uni0E44: X=232.0,Y=716.0 (should be at cap-height 714?)
+	* uni0E31: X=50.0,Y=715.0 (should be at cap-height 714?)
+	* uni0E31: X=247.0,Y=716.0 (should be at cap-height 714?)
+	* uni0E31: X=186.0,Y=716.0 (should be at cap-height 714?)
+	* uni0E31: X=116.0,Y=716.0 (should be at cap-height 714?)
+	* uni0E31.narrow: X=50.0,Y=712.0 (should be at cap-height 714?)
+	* uni0E31.narrow: X=247.0,Y=715.0 (should be at cap-height 714?) and 20 more. [code: found-misalignments]
+
+
+    Result: [1;30;103mWARN[0m
+
+ >> [1;35;107mcom.google.fonts/check/outline_short_segments[0m
+    [0;36;107mAre any segments inordinately short?[0m
+    with NotoLoopedThaiUI-CondensedBold.ttf
+
+    [1;35;107m  Rationale:                                                                [0m
+    [0;30;107m  This test looks for outline segments which seem particularly short (less  [0m
+    [0;30;107m  than 0.006%% of the overall path length).                                 [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  This test is not run for variable fonts, as they may legitimately have    [0m
+    [0;30;107m  short segments. As this test is liable to generate significant numbers of [0m
+    [0;30;107m  false positives, the test will pass if there are more than 100 reported   [0m
+    [0;30;107m  short segments.                                                           [0m
+
+    * [1;30;103mWARN[0m: The following glyphs have segments which seem very short:
+	* uni0E05 contains a short segment L<<292.0,378.0>--<287.0,378.0>>
+	* uni0E08 contains a short segment L<<253.0,112.0>--<260.0,112.0>>
+	* uni0E09 contains a short segment L<<247.0,170.0>--<249.0,170.0>>
+	* uni0E0C contains a short segment B<<492.0,252.0>-<492.0,242.0>-<492.5,234.5>>
+	* uni0E0C contains a short segment B<<492.5,234.5>-<493.0,227.0>-<494.0,222.0>>
+	* uni0E0E contains a short segment L<<166.0,293.0>--<166.0,293.0>>
+	* uni0E0F contains a short segment B<<362.0,-166.0>-<373.0,-166.0>-<377.0,-156.5>>
+	* uni0E0F contains a short segment B<<377.0,-156.5>-<381.0,-147.0>-<381.0,-132.0>>
+	* uni0E0F contains a short segment L<<166.0,293.0>--<166.0,293.0>>
+	* uni0E10 contains a short segment L<<252.0,112.0>--<260.0,112.0>> and 47 more. [code: found-short-segments]
+
+
+    Result: [1;30;103mWARN[0m
+
+ >> [1;35;107mcom.google.fonts/check/outline_colinear_vectors[0m
+    [0;36;107mDo any segments have colinear vectors?[0m
+    with NotoLoopedThaiUI-CondensedBold.ttf
+
+    [1;35;107m  Rationale:                                                                [0m
+    [0;30;107m  This test looks for consecutive line segments which have the same angle.  [0m
+    [0;30;107m  This normally happens if an outline point has been added by accident.     [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  This test is not run for variable fonts, as they may legitimately have    [0m
+    [0;30;107m  colinear vectors.                                                         [0m
+
+    * [1;30;103mWARN[0m: The following glyphs have colinear vectors:
+	* uni0E1D: L<<383.0,153.0>--<384.0,153.0>> -> L<<384.0,153.0>--<385.0,153.0>>
+	* uni0E48.narrow: L<<177.0,800.0>--<177.0,715.0>> -> L<<177.0,715.0>--<170.0,594.0>>
+	* uni0E48.narrow: L<<57.0,594.0>--<50.0,715.0>> -> L<<50.0,715.0>--<50.0,800.0>>
+	* uni0E48.small: L<<164.0,950.0>--<164.0,881.0>> -> L<<164.0,881.0>--<157.0,761.0>>
+	* uni0E48.small: L<<56.0,761.0>--<50.0,881.0>> -> L<<50.0,881.0>--<50.0,950.0>>
+	* uni0E48: L<<177.0,800.0>--<177.0,715.0>> -> L<<177.0,715.0>--<170.0,594.0>> and uni0E48: L<<57.0,594.0>--<50.0,715.0>> -> L<<50.0,715.0>--<50.0,800.0>> [code: found-colinear-vectors]
+
+
+    Result: [1;30;103mWARN[0m
+
+ >> [1;35;107mcom.google.fonts/check/outline_jaggy_segments[0m
+    [0;36;107mDo outlines contain any jaggy segments?[0m
+    with NotoLoopedThaiUI-CondensedBold.ttf
+
+    [1;35;107m  Rationale:                                                                [0m
+    [0;30;107m  This test heuristically detects outline segments which form a             [0m
+    [0;30;107m  particularly small angle, indicative of an outline error. This may cause  [0m
+    [0;30;107m  false positives in cases such as extreme ink traps, so should be regarded [0m
+    [0;30;107m  as advisory and backed up by manual inspection.                           [0m
+
+    * [1;30;103mWARN[0m: The following glyphs have jaggy segments:
+	* uni0E10.less: B<<455.0,434.0>-<439.0,434.0>-<423.0,437.0>>/L<<423.0,437.0>--<423.0,437.0>> = 10.61965527615514
+	* uni0E10: B<<317.5,-166.5>-<339.0,-197.0>-<375.0,-200.0>>/B<<375.0,-200.0>-<351.0,-192.0>-<335.5,-171.0>> = 13.671307132195812
+	* uni0E10: B<<455.0,434.0>-<439.0,434.0>-<423.0,437.0>>/L<<423.0,437.0>--<423.0,437.0>> = 10.61965527615514
+	* uni0E14: B<<354.0,333.5>-<378.0,312.0>-<384.0,276.0>>/L<<384.0,276.0>--<384.0,311.0>> = 9.462322208025613
+	* uni0E14: L<<384.0,0.0>--<384.0,226.0>>/B<<384.0,226.0>-<380.0,199.0>-<366.0,176.5>> = 8.426969021480636
+	* uni0E1E: B<<234.5,238.5>-<233.0,213.0>-<232.0,189.0>>/L<<232.0,189.0>--<323.0,512.0>> = 13.348375455137868 and uni0E1F: B<<234.5,239.0>-<233.0,214.0>-<232.0,189.0>>/L<<232.0,189.0>--<323.0,512.0>> = 13.443709442888162 [code: found-jaggy-segments]
+
+
+    Result: [1;30;103mWARN[0m
+
+
+Total:
+
+    [1;97;101mERROR[0m: 0
+    [1;91;107mFAIL[0m: 4
+    [1;30;103mWARN[0m: 5
+    [0;36;107mINFO[0m: 2
+    [0;34;107mSKIP[0m: 18
+    [0;32;107mPASS[0m: 48
+
+
+DONE!
+
+    [1;30;107mMeaning of check results:[0m
+
+    An [1;97;101mERROR[0m is something wrong with FontBakery itself, possibly a bug.
+    A [1;91;107mFAIL[0m is a problem with the font that must be fixed.
+    A [1;30;103mWARN[0m is something that you should consider addressing.
+    An [0;36;107mINFO[0m result simply prints something useful. Typically stats.
+    A [0;32;107mPASS[0m means the font looks good for the given checking routine.
+    And a [0;34;107mSKIP[0m happens when the check does not apply to the given font.
+
+    If you get [1;97;101mERROR[0ms, please help us improve the tool by reporting them at
+    [1;36;107mhttps://github.com/googlefonts/fontbakery/issues[0m
+
+    (but other kinds of bug reports and/or
+     feature requests are also always welcome, of course!)
+

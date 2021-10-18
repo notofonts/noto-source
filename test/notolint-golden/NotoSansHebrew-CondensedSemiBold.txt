@@ -1,0 +1,15 @@
+---
+Automatic testing for 'instance_ttf,NotoSansHebrew-CondensedSemiBold.ttf', Version 3.000:
+E <name/full_name> The full name is 'Noto Sans Hebrew Condensed SemiBold ' but was expecting 'Noto Sans Hebrew Condensed SemiBold'
+E <name/version> The version is 'Version 3.000' but was expecting it to match '^Version ([0-2])\.(\d{3})(?:;.*.*)?$'
+E <name/manufacturer> The manufacturer is 'Google LLC' but was expecting 'Monotype Imaging Inc.'
+E <name/designer> The designer is 'Ben Nathan' but was expecting 'Monotype Design Team'
+E <name/description> The description is 'Designed by Ben Nathan' but was expecting it to match '^Designed by Monotype design team.$'
+E <name/designer_url> The designer url is 'https://hafontia.com/' but was expecting 'http://www.monotype.com/studio'
+E <name/preferred_subfamily> The preferred subfamily is 'Condensed SemiBold ' but was expecting 'Condensed SemiBold'
+E <cmap/script_required> The following 17 characters are missing from the font: 0022, 0027..0029, 002C, 003F, 0307..0308, 034F, 05EF, 2019, 201D, 2026, 2135..2138.
+E <paths/intersection> The glyph 'uniFB25' has intersecting outlines: intersection ((220.0, 360.0), (230.0, 367.0)) and ((497.0, 556.0), (230.0, 367.0))
+E <advances/whitespace> The advance of U+00a0 (uni00A0, glyph 66) is 212, but expected 246.
+Found 10 errors.
+------
+Finished linting 1 file.

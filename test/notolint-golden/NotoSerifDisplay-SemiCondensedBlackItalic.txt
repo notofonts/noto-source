@@ -1,0 +1,26 @@
+---
+Automatic testing for 'instance_ttf,NotoSerifDisplay-SemiCondensedBlackItalic.ttf', Version 2.003:
+E <name/family> The family is 'Noto Serif Display SemiCondensed Black' but was expecting 'Noto Serif Disp SemCond Blk'
+E <cmap/variants> Font contains 1 characters with standard variants, but has no variation selector cmap table (0030).
+E <bounds/glyph/ymax> Real yMax for glyph 616 (uni047C) is 1075, which is higher than the font's sTypoAscent (1069), resulting in clipping.
+E <bounds/glyph/ymin> Real yMin for glyph 624 (uni0489) is -325, which is lower than the font's sTypoDescent (-293), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1510 (uni1E4E) is 1133, which is higher than the font's sTypoAscent (1069), resulting in clipping.
+E <bounds/glyph/ymin> Real yMin for glyph 2393 (uni03CF) is -309, which is lower than the font's sTypoDescent (-293), resulting in clipping.
+E <bounds/glyph/ymin> Real yMin for glyph 2446 (scriptg) is -389, which is lower than the font's sTypoDescent (-293), resulting in clipping.
+E <bounds/glyph/ymin> Real yMin for glyph 3058 (uni1DD0) is -300, which is lower than the font's sTypoDescent (-293), resulting in clipping.
+E <bounds/glyph/ymin> Real yMin for glyph 3070 (uni1AB5) is -469, which is lower than the font's sTypoDescent (-293), resulting in clipping.
+E <bounds/glyph/ymin> Real yMin for glyph 3075 (uni1ABA) is -296, which is lower than the font's sTypoDescent (-293), resulting in clipping.
+E <bounds/glyph/ymin> Real yMin for glyph 3168 (uniA670) is -345, which is lower than the font's sTypoDescent (-293), resulting in clipping.
+E <bounds/glyph/ymin> Real yMin for glyph 3169 (uniA671) is -321, which is lower than the font's sTypoDescent (-293), resulting in clipping.
+E <bounds/glyph/ymin> Real yMin for glyph 3170 (uniA672) is -336, which is lower than the font's sTypoDescent (-293), resulting in clipping.
+E <bounds/font/ymax> Real yMax 1133, but it should be less than or equal to the value of Ascent in 'hhea' table, which is 1069.
+E <bounds/font/ymin> Real yMin is -469, but it should be greater than or equal to the value of Descent in 'hhea' table, which is -293.
+E <paths/intersection> The glyph 'uni0247' has intersecting outlines: start and end segments match: (375.0, 546.0)
+E <paths/intersection> The glyph 'uni1D73' has intersecting outlines: start and end segments match: (260.0, 165.0)
+E <paths/intersection> The glyph 'uni1C88' has intersecting outlines: start and end segments match: (407.0, 543.0)
+E <paths/intersection> The glyph 'uni2E4B' has intersecting outlines: start and end segments match: (263.0, 323.0)
+W <advances/comma_period> The advance of U+002c (comma, glyph 15) is 304, but expected 306.
+Found 19 errors.
+Found 1 warning.
+------
+Finished linting 1 file.

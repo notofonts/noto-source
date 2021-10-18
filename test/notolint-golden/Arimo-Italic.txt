@@ -1,0 +1,1195 @@
+---
+Automatic testing for 'instance_ttf,Arimo-Italic.ttf', Version 1.33:
+E <name/version> The version is 'Version 1.33' but was expecting it to match '^Version ([0-2])\.(\d{3})(?:;.*.*)?$'
+E <cmap/script_required> The following 88 characters are missing from the font: 1ABF..1AC0, 1DF6..1DF9, 20BF, 2150..2152, 2155..215A, 215F, 2189, 2E43..2E52, A700..A716, A7AF, A7B8..A7BF, A7C2..A7CA, A7F5..A7F6, A92E, AB66..AB6B, FB00, FB05..FB06, FE00.
+E <cmap/private_use> There should be no (non-required) private use characters defined in the font, but there are 8: F001..F002, F005, F00A..F00E.
+W <cmap/script_unexpected> The following 258 chars were not expected in the font: 03E2..03EF, 0591..05C7, 05D0..05EA, 05F0..05F4, 2190..2195, 21A8, 2202, 2206, 220F, 2211..2212, 2215, 2219..221A, 221E..221F, 2229, 222B, 2248, 2260..2261, 2264..2265, 2302, 2310, 2320..2321, 2500, 2502, 250C, 2510, 2514, 2518, 251C, 2524, 252C, 2534, 253C, 2550..256C, 2580, 2584, 2588, 258C, 2590..2593, 25A0..25A1, 25AA..25AC, 25B2, 25BA, 25BC, 25C4, 25CA..25CB, 25CF, 25D8..25D9, 25E6, 263A..263C, 2640, 2642, 2660, 2663, 2665..2666, 266A..266B, 266F, F001..F002, F005, F00A..F00E, FB1D..FB36, FB38..FB3C, FB3E, FB40..FB41, FB43..FB44, FB46..FB4F
+E <cmap/variants> Font contains 2 characters with standard variants, but has no variation selector cmap table (0030, 2229).
+E <head/hhea/linegap> Value of lineGap in 'hhea' table is 67, but should be 0.
+E <head/os2/ascender> Value of sTypoAscender in 'OS/2' table (1491) is different from the value of Ascent in 'hhea' table (1854), but they should be equal.
+E <head/os2/descender> Value of sTypoDescender in 'OS/2' table (-425) is different from the value of Descent in 'hhea' table (-434), but they should be equal.
+E <head/os2/linegap> Value of sTypoLineGap in 'OS/2' table is 307, but should be 0.
+E <head/os2/panose/family> Panose family value is 0 but expected 2
+E <head/os2/panose/proportion> Panose proportion value is 0 (any) but expected 2-4
+E <bounds/glyph/ymin> Real yMin for glyph 95 (bar) is -454, which is lower than the font's usWinDescent (-434), resulting in clipping.
+E <bounds/glyph/ymin> Real yMin for glyph 153 (summation) is -455, which is lower than the font's sTypoDescent (-425), resulting in clipping.
+E <bounds/glyph/ymin> Real yMin for glyph 154 (product) is -455, which is lower than the font's sTypoDescent (-425), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 155 (integral) is 1507, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymin> Real yMin for glyph 155 (integral) is -455, which is lower than the font's sTypoDescent (-425), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 164 (radical) is 1620, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymin> Real yMin for glyph 165 (florin) is -456, which is lower than the font's usWinDescent (-434), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 216 (breve) is 1510, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 218 (ring) is 1651, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 220 (hungarumlaut) is 1508, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymin> Real yMin for glyph 221 (ogonek) is -427, which is lower than the font's sTypoDescent (-425), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 227 (Zcaron) is 1790, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymin> Real yMin for glyph 229 (brokenbar) is -455, which is lower than the font's usWinDescent (-434), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 245 (Gbreve) is 1770, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 246 (gbreve) is 1510, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 247 (Idotaccent) is 1702, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 250 (Cacute) is 1776, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 251 (cacute) is 1508, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 252 (Ccaron) is 1790, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 257 (Abreve) is 1770, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 258 (abreve) is 1510, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymin> Real yMin for glyph 259 (Aogonek) is -427, which is lower than the font's sTypoDescent (-425), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 261 (Dcaron) is 1790, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymin> Real yMin for glyph 264 (Eogonek) is -427, which is lower than the font's sTypoDescent (-425), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 266 (Ecaron) is 1790, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 268 (Lacute) is 1776, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 269 (lacute) is 1855, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 274 (Nacute) is 1776, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 275 (nacute) is 1508, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 276 (Ncaron) is 1790, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 278 (Ohungarumlaut) is 1777, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 279 (ohungarumlaut) is 1508, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 280 (Racute) is 1776, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 281 (racute) is 1508, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 282 (Rcaron) is 1790, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 284 (Sacute) is 1776, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 285 (sacute) is 1508, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 288 (Tcaron) is 1790, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 290 (Uring) is 1935, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 291 (uring) is 1651, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 292 (Uhungarumlaut) is 1777, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 293 (uhungarumlaut) is 1508, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 294 (Zacute) is 1776, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 295 (zacute) is 1508, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 296 (Zdotaccent) is 1702, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymin> Real yMin for glyph 307 (underscoredbl) is -500, which is lower than the font's sTypoDescent (-425), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 323 (integraltp) is 1706, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymin> Real yMin for glyph 323 (integraltp) is -614, which is lower than the font's sTypoDescent (-425), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 324 (integralbt) is 1706, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymin> Real yMin for glyph 324 (integralbt) is -614, which is lower than the font's sTypoDescent (-425), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 326 (uni2502) is 1864, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymin> Real yMin for glyph 326 (uni2502) is -621, which is lower than the font's sTypoDescent (-425), resulting in clipping.
+E <bounds/glyph/ymin> Real yMin for glyph 327 (uni250C) is -621, which is lower than the font's sTypoDescent (-425), resulting in clipping.
+E <bounds/glyph/ymin> Real yMin for glyph 328 (uni2510) is -621, which is lower than the font's sTypoDescent (-425), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 329 (uni2514) is 1864, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 330 (uni2518) is 1864, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 331 (uni251C) is 1864, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymin> Real yMin for glyph 331 (uni251C) is -621, which is lower than the font's sTypoDescent (-425), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 332 (uni2524) is 1864, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymin> Real yMin for glyph 332 (uni2524) is -621, which is lower than the font's sTypoDescent (-425), resulting in clipping.
+E <bounds/glyph/ymin> Real yMin for glyph 333 (uni252C) is -621, which is lower than the font's sTypoDescent (-425), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 334 (uni2534) is 1864, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 335 (uni253C) is 1864, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymin> Real yMin for glyph 335 (uni253C) is -621, which is lower than the font's sTypoDescent (-425), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 337 (uni2551) is 1864, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymin> Real yMin for glyph 337 (uni2551) is -621, which is lower than the font's sTypoDescent (-425), resulting in clipping.
+E <bounds/glyph/ymin> Real yMin for glyph 338 (uni2552) is -621, which is lower than the font's sTypoDescent (-425), resulting in clipping.
+E <bounds/glyph/ymin> Real yMin for glyph 339 (uni2553) is -621, which is lower than the font's sTypoDescent (-425), resulting in clipping.
+E <bounds/glyph/ymin> Real yMin for glyph 340 (uni2554) is -621, which is lower than the font's sTypoDescent (-425), resulting in clipping.
+E <bounds/glyph/ymin> Real yMin for glyph 341 (uni2555) is -621, which is lower than the font's sTypoDescent (-425), resulting in clipping.
+E <bounds/glyph/ymin> Real yMin for glyph 342 (uni2556) is -621, which is lower than the font's sTypoDescent (-425), resulting in clipping.
+E <bounds/glyph/ymin> Real yMin for glyph 343 (uni2557) is -621, which is lower than the font's sTypoDescent (-425), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 344 (uni2558) is 1864, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 345 (uni2559) is 1864, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 346 (uni255A) is 1864, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 347 (uni255B) is 1864, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 348 (uni255C) is 1864, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 349 (uni255D) is 1864, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 350 (uni255E) is 1864, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymin> Real yMin for glyph 350 (uni255E) is -621, which is lower than the font's sTypoDescent (-425), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 351 (uni255F) is 1864, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymin> Real yMin for glyph 351 (uni255F) is -621, which is lower than the font's sTypoDescent (-425), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 352 (uni2560) is 1864, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymin> Real yMin for glyph 352 (uni2560) is -621, which is lower than the font's sTypoDescent (-425), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 353 (uni2561) is 1864, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymin> Real yMin for glyph 353 (uni2561) is -621, which is lower than the font's sTypoDescent (-425), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 354 (uni2562) is 1864, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymin> Real yMin for glyph 354 (uni2562) is -621, which is lower than the font's sTypoDescent (-425), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 355 (uni2563) is 1864, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymin> Real yMin for glyph 355 (uni2563) is -621, which is lower than the font's sTypoDescent (-425), resulting in clipping.
+E <bounds/glyph/ymin> Real yMin for glyph 356 (uni2564) is -621, which is lower than the font's sTypoDescent (-425), resulting in clipping.
+E <bounds/glyph/ymin> Real yMin for glyph 357 (uni2565) is -621, which is lower than the font's sTypoDescent (-425), resulting in clipping.
+E <bounds/glyph/ymin> Real yMin for glyph 358 (uni2566) is -621, which is lower than the font's sTypoDescent (-425), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 359 (uni2567) is 1864, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 360 (uni2568) is 1864, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 361 (uni2569) is 1864, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 362 (uni256A) is 1864, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymin> Real yMin for glyph 362 (uni256A) is -621, which is lower than the font's sTypoDescent (-425), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 363 (uni256B) is 1864, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymin> Real yMin for glyph 363 (uni256B) is -621, which is lower than the font's sTypoDescent (-425), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 364 (uni256C) is 1864, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymin> Real yMin for glyph 364 (uni256C) is -621, which is lower than the font's sTypoDescent (-425), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 365 (upblock) is 1864, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymin> Real yMin for glyph 366 (dnblock) is -621, which is lower than the font's sTypoDescent (-425), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 367 (block) is 1864, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymin> Real yMin for glyph 367 (block) is -621, which is lower than the font's sTypoDescent (-425), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 368 (lfblock) is 1864, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymin> Real yMin for glyph 368 (lfblock) is -621, which is lower than the font's sTypoDescent (-425), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 369 (rtblock) is 1864, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymin> Real yMin for glyph 369 (rtblock) is -621, which is lower than the font's sTypoDescent (-425), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 370 (ltshade) is 1699, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymin> Real yMin for glyph 370 (ltshade) is -523, which is lower than the font's sTypoDescent (-425), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 371 (shade) is 1699, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymin> Real yMin for glyph 371 (shade) is -523, which is lower than the font's sTypoDescent (-425), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 372 (dkshade) is 1699, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymin> Real yMin for glyph 372 (dkshade) is -621, which is lower than the font's sTypoDescent (-425), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 405 (Amacron) is 1697, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 407 (Ccircumflex) is 1790, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 409 (Cdotaccent) is 1702, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 411 (Emacron) is 1697, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 413 (Ebreve) is 1770, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 414 (ebreve) is 1510, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 415 (Edotaccent) is 1702, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 417 (Gcircumflex) is 1790, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 419 (Gdotaccent) is 1702, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymin> Real yMin for glyph 421 (Gcommaaccent) is -455, which is lower than the font's sTypoDescent (-425), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 422 (gcommaaccent) is 1568, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 423 (Hcircumflex) is 1790, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 424 (hcircumflex) is 1869, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 427 (Itilde) is 1798, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 429 (Imacron) is 1697, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 431 (Ibreve) is 1770, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 432 (ibreve) is 1510, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymin> Real yMin for glyph 433 (Iogonek) is -427, which is lower than the font's sTypoDescent (-425), resulting in clipping.
+E <bounds/glyph/ymin> Real yMin for glyph 434 (iogonek) is -427, which is lower than the font's sTypoDescent (-425), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 435 (Jcircumflex) is 1790, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymin> Real yMin for glyph 437 (Kcommaaccent) is -455, which is lower than the font's sTypoDescent (-425), resulting in clipping.
+E <bounds/glyph/ymin> Real yMin for glyph 438 (kcommaaccent) is -455, which is lower than the font's sTypoDescent (-425), resulting in clipping.
+E <bounds/glyph/ymin> Real yMin for glyph 440 (Lcommaaccent) is -455, which is lower than the font's sTypoDescent (-425), resulting in clipping.
+E <bounds/glyph/ymin> Real yMin for glyph 441 (lcommaaccent) is -455, which is lower than the font's sTypoDescent (-425), resulting in clipping.
+E <bounds/glyph/ymin> Real yMin for glyph 442 (Ncommaaccent) is -455, which is lower than the font's sTypoDescent (-425), resulting in clipping.
+E <bounds/glyph/ymin> Real yMin for glyph 443 (ncommaaccent) is -455, which is lower than the font's sTypoDescent (-425), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 446 (Omacron) is 1697, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 448 (Obreve) is 1770, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 449 (obreve) is 1510, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymin> Real yMin for glyph 450 (Rcommaaccent) is -455, which is lower than the font's sTypoDescent (-425), resulting in clipping.
+E <bounds/glyph/ymin> Real yMin for glyph 451 (rcommaaccent) is -455, which is lower than the font's sTypoDescent (-425), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 452 (Scircumflex) is 1818, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 456 (Utilde) is 1798, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 458 (Umacron) is 1692, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 460 (Ubreve) is 1770, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 461 (ubreve) is 1510, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymin> Real yMin for glyph 462 (Uogonek) is -427, which is lower than the font's sTypoDescent (-425), resulting in clipping.
+E <bounds/glyph/ymin> Real yMin for glyph 463 (uogonek) is -427, which is lower than the font's sTypoDescent (-425), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 464 (Wcircumflex) is 1790, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 466 (Ycircumflex) is 1790, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 469 (Aringacute) is 2077, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 470 (aringacute) is 1957, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 471 (AEacute) is 1776, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 472 (aeacute) is 1508, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 473 (Oslashacute) is 1776, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 474 (oslashacute) is 1508, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 476 (Wgrave) is 1776, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 477 (wgrave) is 1508, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 478 (Wacute) is 1776, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 479 (wacute) is 1508, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 480 (Wdieresis) is 1714, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 482 (Ygrave) is 1776, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 483 (ygrave) is 1508, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 485 (radicalex) is 1620, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymin> Real yMin for glyph 492 (undercommaaccent) is -444, which is lower than the font's sTypoDescent (-425), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 493 (tonos) is 1543, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 494 (dieresistonos) is 1601, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 502 (iotadieresistonos) is 1601, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 524 (Iotadieresis) is 1714, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 525 (Upsilondieresis) is 1714, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 526 (alphatonos) is 1543, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 527 (epsilontonos) is 1543, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 528 (etatonos) is 1543, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 529 (iotatonos) is 1543, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 530 (upsilondieresistonos) is 1601, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 551 (omicrontonos) is 1543, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 552 (upsilontonos) is 1543, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 553 (omegatonos) is 1543, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 554 (uni0401) is 1714, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 556 (uni0403) is 1776, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 560 (uni0407) is 1714, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 565 (uni040C) is 1776, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 566 (uni040E) is 1844, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 577 (uni0419) is 1844, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 601 (uni0431) is 1502, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 609 (uni0439) is 1514, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 634 (uni0453) is 1508, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 643 (uni045C) is 1508, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 644 (uni045E) is 1514, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 646 (uni0490) is 1820, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymin> Real yMin for glyph 652 (commaaccent) is -455, which is lower than the font's sTypoDescent (-425), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 657 (breve.cyr) is 1514, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 659 (commaaccentrotate) is 1568, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 660 (grave.uc) is 1776, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 661 (acute.uc) is 1776, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 662 (circumflex.uc) is 1790, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 663 (caron.uc) is 1790, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 664 (dieresis.uc) is 1714, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 665 (tilde.uc) is 1798, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 666 (hungarumlaut.uc) is 1777, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 667 (breve.uc) is 1770, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 683 (uniF00A) is 1831, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 684 (uniF00B) is 1831, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 685 (uniF00C) is 1831, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 686 (uniF00D) is 1831, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 687 (uniF00E) is 1831, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 693 (grave.alt1) is 1853, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 694 (grave.alt2) is 1831, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 695 (grave.alt3) is 1822, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 696 (acute.alt1) is 1854, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 697 (acute.alt2) is 1854, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 698 (acute.alt3) is 1827, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 699 (hookabovecomb) is 1548, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 700 (hookabove.alt1) is 1847, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 701 (hookabove.alt2) is 1866, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 702 (hookabove.alt3) is 1847, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 703 (tilde.alt1) is 1840, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 704 (tilde.alt2) is 1836, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 705 (tildecomb) is 1800, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 706 (breve.alt1) is 1726, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 707 (circumflex.alt1) is 1715, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 716 (hookabove.alt4) is 1847, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 717 (hookabove.alt5) is 1866, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 718 (tilde.alt3) is 1840, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 719 (tilde.alt4) is 1840, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 720 (tilde.alt5) is 1840, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 729 (gravecomb) is 1827, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 730 (acutecomb) is 1827, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 742 (tilde.alt10) is 1863, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 743 (tilde.alt11) is 1840, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 744 (tilde.alt12) is 1863, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 745 (tilde.alt13) is 1840, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 749 (Ahookabove) is 1866, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 750 (ahookabove) is 1548, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 751 (Acircumflexacute) is 1835, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 752 (acircumflexacute) is 1574, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 753 (Acircumflexgrave) is 1835, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 754 (acircumflexgrave) is 1574, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 755 (Acircumflexhookabove) is 1835, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 756 (acircumflexhookabove) is 1653, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 757 (Acircumflextilde) is 1835, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 758 (acircumflextilde) is 1775, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 759 (Acircumflexdotbelow) is 1790, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 761 (Abreveacute) is 1835, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 762 (abreveacute) is 1776, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 763 (Abrevegrave) is 1835, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 764 (abrevegrave) is 1776, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 765 (Abrevehookabove) is 1835, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 766 (abrevehookabove) is 1835, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 767 (Abrevetilde) is 1835, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 768 (abrevetilde) is 1775, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 769 (Abrevedotbelow) is 1770, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 770 (abrevedotbelow) is 1510, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 773 (Ehookabove) is 1866, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 774 (ehookabove) is 1548, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 775 (Etilde) is 1800, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 777 (Ecircumflexacute) is 1835, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 778 (ecircumflexacute) is 1574, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 779 (Ecircumflexgrave) is 1835, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 780 (ecircumflexgrave) is 1574, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 781 (Ecircumflexhookabove) is 1835, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 782 (ecircumflexhookabove) is 1653, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 783 (Ecircumflextilde) is 1835, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 784 (ecircumflextilde) is 1775, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 785 (Ecircumflexdotbelow) is 1790, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 787 (Ihookabove) is 1866, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 788 (ihookabove) is 1548, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 793 (Ohookabove) is 1866, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 794 (ohookabove) is 1548, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 795 (Ocircumflexacute) is 1835, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 796 (ocircumflexacute) is 1574, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 797 (Ocircumflexgrave) is 1835, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 798 (ocircumflexgrave) is 1574, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 799 (Ocircumflexhookabove) is 1835, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 800 (ocircumflexhookabove) is 1653, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 801 (Ocircumflextilde) is 1835, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 802 (ocircumflextilde) is 1775, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 803 (Ocircumflexdotbelow) is 1790, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 805 (Ohornacute) is 1776, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 806 (ohornacute) is 1508, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 807 (Ohorngrave) is 1776, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 808 (ohorngrave) is 1508, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 809 (Ohornhookabove) is 1866, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 810 (ohornhookabove) is 1548, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 811 (Ohorntilde) is 1798, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 817 (Uhookabove) is 1866, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 818 (uhookabove) is 1548, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 819 (Uhornacute) is 1776, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 820 (uhornacute) is 1508, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 821 (Uhorngrave) is 1776, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 822 (uhorngrave) is 1508, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 823 (Uhornhookabove) is 1866, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 824 (uhornhookabove) is 1548, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 825 (Uhorntilde) is 1800, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 831 (Yhookabove) is 1866, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 832 (yhookabove) is 1548, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 833 (Ytilde) is 1800, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 835 (uni01CD) is 1790, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 837 (uni01CF) is 1790, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 839 (uni01D1) is 1790, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 841 (uni01D3) is 1790, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 843 (uni01D5) is 1835, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 844 (uni01D6) is 1643, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 845 (uni01D7) is 1835, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 846 (uni01D8) is 1788, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 847 (uni01D9) is 1835, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 848 (uni01DA) is 1771, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 849 (uni01DB) is 1835, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 850 (uni01DC) is 1788, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 851 (uni03080304.cap) is 1835, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 852 (uni03080301.cap) is 1835, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 853 (uni0308030C.cap) is 1835, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 854 (uni03080300.cap) is 1835, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 886 (uni0187) is 1616, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 896 (uni0193) is 1616, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 902 (uni0199) is 1498, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 912 (uni01A5) is 1498, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 917 (uni01AA) is 1493, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 920 (uni01AD) is 1498, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 925 (uni01B4) is 1492, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymin> Real yMin for glyph 928 (uni01B7) is -426, which is lower than the font's sTypoDescent (-425), resulting in clipping.
+E <bounds/glyph/ymin> Real yMin for glyph 929 (uni01B8) is -426, which is lower than the font's sTypoDescent (-425), resulting in clipping.
+E <bounds/glyph/ymin> Real yMin for glyph 930 (uni01B9) is -427, which is lower than the font's sTypoDescent (-425), resulting in clipping.
+E <bounds/glyph/ymin> Real yMin for glyph 931 (uni01BA) is -426, which is lower than the font's sTypoDescent (-425), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 935 (uni01BE) is 1507, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 941 (uni01C4) is 1790, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 951 (uni01DE) is 1857, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 952 (uni01DF) is 1643, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 953 (uni03070304.cap) is 1835, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 954 (uni01E0) is 1835, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 955 (uni01E1) is 1643, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 956 (uni01E2) is 1699, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 960 (uni01E6) is 1790, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 962 (uni01E8) is 1790, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 963 (uni01E9) is 1842, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymin> Real yMin for glyph 964 (uni01EA) is -427, which is lower than the font's sTypoDescent (-425), resulting in clipping.
+E <bounds/glyph/ymin> Real yMin for glyph 965 (uni01EB) is -427, which is lower than the font's sTypoDescent (-425), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 966 (uni01EC) is 1714, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymin> Real yMin for glyph 966 (uni01EC) is -427, which is lower than the font's sTypoDescent (-425), resulting in clipping.
+E <bounds/glyph/ymin> Real yMin for glyph 967 (uni01ED) is -426, which is lower than the font's sTypoDescent (-425), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 968 (uni01EE) is 1790, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymin> Real yMin for glyph 968 (uni01EE) is -426, which is lower than the font's sTypoDescent (-425), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 974 (uni01F4) is 1776, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 975 (uni01F5) is 1508, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 978 (uni01F8) is 1776, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 979 (uni01F9) is 1508, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 980 (uni0200) is 1809, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 982 (uni0202) is 1790, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 984 (uni0204) is 1810, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 986 (uni0206) is 1790, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 988 (uni0208) is 1809, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 990 (uni020A) is 1790, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 992 (uni020C) is 1809, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 994 (uni020E) is 1790, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 996 (uni0210) is 1809, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 998 (uni0212) is 1791, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1000 (uni0214) is 1809, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1002 (uni0216) is 1790, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymin> Real yMin for glyph 1004 (Scommaaccent) is -455, which is lower than the font's sTypoDescent (-425), resulting in clipping.
+E <bounds/glyph/ymin> Real yMin for glyph 1005 (scommaaccent) is -455, which is lower than the font's sTypoDescent (-425), resulting in clipping.
+E <bounds/glyph/ymin> Real yMin for glyph 1006 (uni021A) is -455, which is lower than the font's sTypoDescent (-425), resulting in clipping.
+E <bounds/glyph/ymin> Real yMin for glyph 1007 (uni021B) is -455, which is lower than the font's sTypoDescent (-425), resulting in clipping.
+E <bounds/glyph/ymin> Real yMin for glyph 1008 (uni021C) is -427, which is lower than the font's sTypoDescent (-425), resulting in clipping.
+E <bounds/glyph/ymin> Real yMin for glyph 1009 (uni021D) is -426, which is lower than the font's sTypoDescent (-425), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1010 (uni021E) is 1790, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1011 (uni021F) is 1853, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1017 (uni0226) is 1702, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1021 (uni022A) is 1835, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1022 (uni022B) is 1643, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1023 (uni03030304.cap) is 1835, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1024 (uni022C) is 1835, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1025 (uni022D) is 1693, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1026 (uni022E) is 1764, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1028 (uni0230) is 1835, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1029 (uni0231) is 1643, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1030 (uni0232) is 1697, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1035 (uni0253) is 1498, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1039 (uni0257) is 1498, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymin> Real yMin for glyph 1046 (uni025F) is -426, which is lower than the font's sTypoDescent (-425), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1047 (uni0260) is 1498, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1053 (uni0266) is 1498, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1054 (uni0267) is 1498, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1093 (uni028E) is 1507, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymin> Real yMin for glyph 1098 (uni0293) is -426, which is lower than the font's sTypoDescent (-425), resulting in clipping.
+E <bounds/glyph/ymin> Real yMin for glyph 1102 (uni0297) is -426, which is lower than the font's sTypoDescent (-425), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1111 (uni02A0) is 1498, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1125 (uni02B0) is 1536, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1126 (uni02B1) is 1546, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1127 (uni02B2) is 1535, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1139 (uni02BE) is 1523, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1140 (uni02BF) is 1523, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1165 (uni02E1) is 1537, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1177 (uni02ED) is 1564, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1321 (uni0305) is 1701, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1325 (uni030A) is 1634, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1326 (uni030B) is 1508, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1331 (uni0310) is 1636, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1341 (uni031A) is 1672, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymin> Real yMin for glyph 1352 (uni0326) is -455, which is lower than the font's sTypoDescent (-425), resulting in clipping.
+E <bounds/glyph/ymin> Real yMin for glyph 1354 (uni0328) is -427, which is lower than the font's sTypoDescent (-425), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1370 (uni0338) is 1511, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymin> Real yMin for glyph 1371 (uni0339) is -434, which is lower than the font's sTypoDescent (-425), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1375 (uni033D) is 1573, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1376 (uni033E) is 1673, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1377 (uni033F) is 1840, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1382 (uni0344) is 1507, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1384 (uni0346) is 1570, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1388 (uni034A) is 1529, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1389 (uni034B) is 1794, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1390 (uni034C) is 1717, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1394 (uni0360) is 1535, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1395 (uni0361) is 1590, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1399 (uni0365) is 1536, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1403 (uni0369) is 1536, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1404 (uni036A) is 1536, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1417 (uni03D4) is 1714, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1430 (uni03E1) is 1492, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymin> Real yMin for glyph 1430 (uni03E1) is -426, which is lower than the font's sTypoDescent (-425), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1434 (uni03E5) is 1496, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1444 (uni03EF) is 1496, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1452 (uni0400) is 1776, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1453 (uni040D) is 1776, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1454 (uni0450) is 1508, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1455 (uni045D) is 1508, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1470 (uni046E) is 1771, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1478 (uni0476) is 1809, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1482 (uni047A) is 1523, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1484 (uni047C) is 2004, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1485 (uni047D) is 1684, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1487 (uni047E) is 1769, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymin> Real yMin for glyph 1489 (uni0480) is -427, which is lower than the font's sTypoDescent (-425), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1491 (uni0482) is 1498, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1492 (uni0483) is 1509, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1497 (uni0489) is 1511, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1498 (uni048A) is 1844, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1499 (uni048B) is 1514, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1531 (uni04C1) is 1844, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1532 (uni04C2) is 1514, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1545 (uni04D0) is 1770, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1546 (uni04D1) is 1510, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1547 (uni04D2) is 1714, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1551 (uni04D6) is 1770, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1552 (uni04D7) is 1510, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1553 (uni04DA) is 1765, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1555 (uni04DC) is 1714, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1557 (uni04DE) is 1714, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1561 (uni04E2) is 1699, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1563 (uni04E4) is 1714, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1565 (uni04E6) is 1714, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1567 (uni04EA) is 1714, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1569 (uni04EC) is 1714, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1571 (uni04EE) is 1699, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1573 (uni04F0) is 1714, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1575 (uni04F2) is 1777, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1576 (uni04F3) is 1508, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1577 (uni04F4) is 1714, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1579 (uni04F8) is 1714, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1597 (uni03040300.cap) is 1835, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1598 (uni03040301.cap) is 1835, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1599 (uni03030301.cap) is 1835, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1600 (uni03030308.cap) is 1835, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1601 (uni03010307.cap) is 1813, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1602 (uni030C0307.cap) is 1835, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1603 (uni03040308.cap) is 1835, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1606 (uni1E02) is 1702, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1612 (uni1E08) is 1776, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymin> Real yMin for glyph 1612 (uni1E08) is -430, which is lower than the font's sTypoDescent (-425), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1613 (uni1E09) is 1508, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1614 (uni1E0A) is 1702, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymin> Real yMin for glyph 1620 (uni1E10) is -455, which is lower than the font's sTypoDescent (-425), resulting in clipping.
+E <bounds/glyph/ymin> Real yMin for glyph 1621 (uni1E11) is -455, which is lower than the font's sTypoDescent (-425), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1624 (uni1E14) is 1835, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1625 (uni1E15) is 1783, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1626 (uni1E16) is 1835, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1627 (uni1E17) is 1783, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1632 (uni1E1C) is 1770, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1633 (uni1E1D) is 1510, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1634 (uni1E1E) is 1702, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1635 (uni1E1F) is 1796, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1636 (uni1E20) is 1699, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1638 (uni1E22) is 1702, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1639 (uni1E23) is 1702, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1642 (uni1E26) is 1714, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1643 (uni1E27) is 1765, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1650 (uni1E2E) is 1835, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1651 (uni1E2F) is 1804, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1652 (uni1E30) is 1776, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1653 (uni1E31) is 1776, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1660 (uni1E38) is 1699, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1661 (uni1E39) is 1725, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1666 (uni1E3E) is 1776, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1667 (uni1E3F) is 1508, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1668 (uni1E40) is 1702, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1672 (uni1E44) is 1702, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1680 (uni1E4C) is 1835, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1681 (uni1E4D) is 1783, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1682 (uni1E4E) is 1835, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1683 (uni1E4F) is 1724, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1684 (uni1E50) is 1835, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1685 (uni1E51) is 1783, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1686 (uni1E52) is 1835, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1687 (uni1E53) is 1783, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1688 (uni1E54) is 1776, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1689 (uni1E55) is 1508, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1690 (uni1E56) is 1702, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1692 (uni1E58) is 1702, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1696 (uni1E5C) is 1699, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1700 (uni1E60) is 1702, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1704 (uni1E64) is 1813, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1705 (uni1E65) is 1511, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1706 (uni1E66) is 1835, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1707 (uni1E67) is 1540, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1708 (uni1E68) is 1702, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1710 (uni1E6A) is 1702, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1711 (uni1E6B) is 1601, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1724 (uni1E78) is 1835, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1725 (uni1E79) is 1783, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1726 (uni1E7A) is 1835, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1727 (uni1E7B) is 1653, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1728 (uni1E7C) is 1798, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1732 (uni1E86) is 1702, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1736 (uni1E8A) is 1702, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1738 (uni1E8C) is 1714, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1740 (uni1E8E) is 1702, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1742 (uni1E90) is 1790, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1749 (uni1E97) is 1607, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1750 (uni1E98) is 1651, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1751 (uni1E99) is 1651, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1752 (uni1E9A) is 1523, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1753 (uni1E9B) is 1796, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1754 (uni1F00) is 1584, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1755 (uni1F01) is 1584, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1756 (uni1F02) is 1584, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1757 (uni1F03) is 1584, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1758 (uni1F04) is 1584, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1759 (uni1F05) is 1584, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1760 (uni1F06) is 1866, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1761 (uni1F07) is 1866, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1768 (uni1F0E) is 1766, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1769 (uni1F0F) is 1766, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1770 (uni1F10) is 1584, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1771 (uni1F11) is 1584, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1772 (uni1F12) is 1584, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1773 (uni1F13) is 1584, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1774 (uni1F14) is 1584, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1775 (uni1F15) is 1584, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1782 (uni1F20) is 1584, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1783 (uni1F21) is 1584, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1784 (uni1F22) is 1584, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1785 (uni1F23) is 1584, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1786 (uni1F24) is 1584, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1787 (uni1F25) is 1584, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1788 (uni1F26) is 1866, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1789 (uni1F27) is 1866, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1796 (uni1F2E) is 1766, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1797 (uni1F2F) is 1766, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1798 (uni1F30) is 1584, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1799 (uni1F31) is 1584, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1800 (uni1F32) is 1584, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1801 (uni1F33) is 1584, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1802 (uni1F34) is 1584, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1803 (uni1F35) is 1584, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1804 (uni1F36) is 1866, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1805 (uni1F37) is 1866, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1812 (uni1F3E) is 1766, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1813 (uni1F3F) is 1766, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1814 (uni1F40) is 1584, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1815 (uni1F41) is 1584, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1816 (uni1F42) is 1584, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1817 (uni1F43) is 1584, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1818 (uni1F44) is 1584, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1819 (uni1F45) is 1584, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1826 (uni1F50) is 1584, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1827 (uni1F51) is 1584, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1828 (uni1F52) is 1584, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1829 (uni1F53) is 1584, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1830 (uni1F54) is 1584, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1831 (uni1F55) is 1584, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1832 (uni1F56) is 1866, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1833 (uni1F57) is 1866, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1837 (uni1F5F) is 1766, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1838 (uni1F60) is 1584, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1839 (uni1F61) is 1584, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1840 (uni1F62) is 1584, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1841 (uni1F63) is 1584, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1842 (uni1F64) is 1584, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1843 (uni1F65) is 1584, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1844 (uni1F66) is 1866, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1845 (uni1F67) is 1866, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1852 (uni1F6E) is 1766, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1853 (uni1F6F) is 1766, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1854 (uni1F70) is 1543, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1855 (uni1F71) is 1543, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1856 (uni1F72) is 1543, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1857 (uni1F73) is 1543, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1858 (uni1F74) is 1543, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1859 (uni1F75) is 1543, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1860 (uni1F76) is 1543, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1861 (uni1F77) is 1543, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1862 (uni1F78) is 1543, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1863 (uni1F79) is 1543, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1864 (uni1F7A) is 1543, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1865 (uni1F7B) is 1543, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1866 (uni1F7C) is 1543, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1867 (uni1F7D) is 1543, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1868 (uni1F80) is 1584, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1869 (uni1F81) is 1584, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1870 (uni1F82) is 1584, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1871 (uni1F83) is 1584, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1872 (uni1F84) is 1584, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1873 (uni1F85) is 1584, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1874 (uni1F86) is 1866, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1875 (uni1F87) is 1866, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1882 (uni1F8E) is 1766, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1883 (uni1F8F) is 1766, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1884 (uni1F90) is 1584, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1885 (uni1F91) is 1584, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1886 (uni1F92) is 1584, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1887 (uni1F93) is 1584, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1888 (uni1F94) is 1584, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1889 (uni1F95) is 1584, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1890 (uni1F96) is 1866, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1891 (uni1F97) is 1866, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1898 (uni1F9E) is 1766, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1899 (uni1F9F) is 1766, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1900 (uni1FA0) is 1584, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1901 (uni1FA1) is 1584, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1902 (uni1FA2) is 1584, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1903 (uni1FA3) is 1584, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1904 (uni1FA4) is 1584, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1905 (uni1FA5) is 1584, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1906 (uni1FA6) is 1866, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1907 (uni1FA7) is 1866, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1914 (uni1FAE) is 1766, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1915 (uni1FAF) is 1766, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1916 (uni1FB0) is 1510, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1918 (uni1FB2) is 1543, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1920 (uni1FB4) is 1543, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1923 (uni1FB8) is 1770, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1924 (uni1FB9) is 1697, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1925 (uni1FBA) is 1543, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1926 (uni1FBB) is 1543, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1932 (uni1FC1) is 1728, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1933 (uni1FC2) is 1543, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1935 (uni1FC4) is 1543, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1938 (uni1FC8) is 1543, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1939 (uni1FC9) is 1543, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1940 (uni1FCA) is 1543, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1941 (uni1FCB) is 1543, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1945 (uni1FCF) is 1766, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1946 (uni1FD0) is 1510, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1948 (uni1FD2) is 1805, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1949 (uni1FD3) is 1805, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1951 (uni1FD7) is 1728, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1952 (uni1FD8) is 1770, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1953 (uni1FD9) is 1699, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1954 (uni1FDA) is 1543, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1955 (uni1FDB) is 1543, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1958 (uni1FDF) is 1766, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1959 (uni1FE0) is 1510, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1961 (uni1FE2) is 1805, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1962 (uni1FE3) is 1805, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1963 (uni1FE4) is 1584, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1964 (uni1FE5) is 1584, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1966 (uni1FE7) is 1728, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1967 (uni1FE8) is 1770, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1968 (uni1FE9) is 1699, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1969 (uni1FEA) is 1543, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1970 (uni1FEB) is 1543, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1972 (uni1FED) is 1507, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1973 (uni1FEE) is 1507, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1974 (uni1FEF) is 1543, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1975 (uni1FF2) is 1543, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1977 (uni1FF4) is 1543, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1980 (uni1FF8) is 1543, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1981 (uni1FF9) is 1543, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1982 (uni1FFA) is 1543, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1983 (uni1FFB) is 1543, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1987 (uni20A0) is 1492, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1988 (uni20A1) is 1544, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1996 (uni20AF) is 1651, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 1999 (uniFE20) is 1586, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 2000 (uniFE21) is 1586, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymin> Real yMin for glyph 2011 (uni02AE) is -426, which is lower than the font's sTypoDescent (-425), resulting in clipping.
+E <bounds/glyph/ymin> Real yMin for glyph 2015 (uni02F1) is -426, which is lower than the font's sTypoDescent (-425), resulting in clipping.
+E <bounds/glyph/ymin> Real yMin for glyph 2016 (uni02F2) is -426, which is lower than the font's sTypoDescent (-425), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 2030 (uni0350) is 1569, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 2031 (uni0351) is 1523, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 2032 (uni0352) is 1670, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymin> Real yMin for glyph 2033 (uni0353) is -435, which is lower than the font's sTypoDescent (-425), resulting in clipping.
+E <bounds/glyph/ymin> Real yMin for glyph 2034 (uni0354) is -426, which is lower than the font's sTypoDescent (-425), resulting in clipping.
+E <bounds/glyph/ymin> Real yMin for glyph 2035 (uni0355) is -426, which is lower than the font's sTypoDescent (-425), resulting in clipping.
+E <bounds/glyph/ymin> Real yMin for glyph 2036 (uni0356) is -426, which is lower than the font's sTypoDescent (-425), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 2037 (uni0357) is 1523, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 2038 (uni035D) is 1586, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 2094 (uni1D33) is 1499, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 2103 (uni1D3C) is 1499, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 2114 (uni1D47) is 1536, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 2115 (uni1D48) is 1536, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 2122 (uni1D4F) is 1536, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 2136 (uni1D5D) is 1536, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 2138 (uni1D5F) is 1536, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymin> Real yMin for glyph 2145 (uni1D66) is -434, which is lower than the font's sTypoDescent (-425), resulting in clipping.
+E <bounds/glyph/ymin> Real yMin for glyph 2146 (uni1D67) is -429, which is lower than the font's sTypoDescent (-425), resulting in clipping.
+E <bounds/glyph/ymin> Real yMin for glyph 2148 (uni1D69) is -437, which is lower than the font's sTypoDescent (-425), resulting in clipping.
+E <bounds/glyph/ymin> Real yMin for glyph 2149 (uni1D6A) is -435, which is lower than the font's sTypoDescent (-425), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 2172 (uni023A) is 1514, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 2173 (uni023B) is 1514, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 2176 (uni023E) is 1514, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymin> Real yMin for glyph 2177 (uni023F) is -426, which is lower than the font's sTypoDescent (-425), resulting in clipping.
+E <bounds/glyph/ymin> Real yMin for glyph 2178 (uni0240) is -426, which is lower than the font's sTypoDescent (-425), resulting in clipping.
+E <bounds/glyph/ymin> Real yMin for glyph 2181 (uni0359) is -426, which is lower than the font's sTypoDescent (-425), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 2183 (uni035B) is 1588, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 2202 (uni1D77) is 1507, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 2205 (uni1D7A) is 1515, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymin> Real yMin for glyph 2223 (uni1D8C) is -426, which is lower than the font's sTypoDescent (-425), resulting in clipping.
+E <bounds/glyph/ymin> Real yMin for glyph 2226 (uni1D8F) is -426, which is lower than the font's sTypoDescent (-425), resulting in clipping.
+E <bounds/glyph/ymin> Real yMin for glyph 2227 (uni1D90) is -426, which is lower than the font's sTypoDescent (-425), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 2228 (uni1D91) is 1498, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymin> Real yMin for glyph 2229 (uni1D92) is -426, which is lower than the font's sTypoDescent (-425), resulting in clipping.
+E <bounds/glyph/ymin> Real yMin for glyph 2230 (uni1D93) is -426, which is lower than the font's sTypoDescent (-425), resulting in clipping.
+E <bounds/glyph/ymin> Real yMin for glyph 2231 (uni1D94) is -426, which is lower than the font's sTypoDescent (-425), resulting in clipping.
+E <bounds/glyph/ymin> Real yMin for glyph 2233 (uni1D96) is -426, which is lower than the font's sTypoDescent (-425), resulting in clipping.
+E <bounds/glyph/ymin> Real yMin for glyph 2234 (uni1D97) is -426, which is lower than the font's sTypoDescent (-425), resulting in clipping.
+E <bounds/glyph/ymin> Real yMin for glyph 2235 (uni1D98) is -426, which is lower than the font's sTypoDescent (-425), resulting in clipping.
+E <bounds/glyph/ymin> Real yMin for glyph 2236 (uni1D99) is -426, which is lower than the font's sTypoDescent (-425), resulting in clipping.
+E <bounds/glyph/ymin> Real yMin for glyph 2237 (uni1D9A) is -426, which is lower than the font's sTypoDescent (-425), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 2241 (uni1D9E) is 1536, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 2243 (uni1DA0) is 1536, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 2246 (uni1DA3) is 1536, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 2247 (uni1DA4) is 1536, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 2251 (uni1DA8) is 1535, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 2252 (uni1DA9) is 1536, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 2253 (uni1DAA) is 1536, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 2261 (uni1DB2) is 1536, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 2263 (uni1DB4) is 1536, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 2274 (uni1DBF) is 1536, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 2275 (uni1DC0) is 1577, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 2276 (uni1DC1) is 1577, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymin> Real yMin for glyph 2277 (uni1DC2) is -434, which is lower than the font's sTypoDescent (-425), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 2278 (uni1DC3) is 1493, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 2285 (uni20B2) is 1571, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 2287 (uni20B4) is 1494, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 2288 (uni20B5) is 1571, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 2290 (uni03B1030403130300) is 1834, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 2291 (uni03B1030403130301) is 1834, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 2292 (uni03B1030403140300) is 1834, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 2293 (uni03B1030403140301) is 1834, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 2294 (uni03B1030603130300) is 1834, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 2295 (uni03B1030603130301) is 1834, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 2296 (uni03B1030603140300) is 1834, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 2297 (uni03B1030603140301) is 1835, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 2298 (uni03B9030403130300) is 1834, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 2299 (uni03B9030403130301) is 1834, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 2300 (uni03B9030403140300) is 1834, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 2301 (uni03B9030403140301) is 1834, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 2302 (uni03B9030603130300) is 1834, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 2303 (uni03B9030603130301) is 1834, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 2304 (uni03B9030603140300) is 1834, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 2305 (uni03B9030603140301) is 1834, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 2306 (uni03C5030403130300) is 1834, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 2307 (uni03C5030403130301) is 1834, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 2308 (uni03C5030403140300) is 1834, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 2309 (uni03C5030403140301) is 1834, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 2310 (uni03C5030603130300) is 1834, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 2311 (uni03C5030603130301) is 1834, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 2312 (uni03C5030603140300) is 1834, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 2313 (uni03C5030603140301) is 1834, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 2314 (uni03B9030803040300) is 1835, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 2315 (uni03B9030803040301) is 1835, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 2316 (uni03B9030803060300) is 1835, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 2317 (uni03B9030803060301) is 1835, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 2318 (uni03C5030803040300) is 1835, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 2319 (uni03C5030803040301) is 1835, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 2320 (uni03C5030803060300) is 1835, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 2321 (uni03C5030803060301) is 1835, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 2326 (uni0246) is 1554, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 2350 (uni1DC4) is 1492, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 2351 (uni1DC5) is 1492, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 2352 (uni1DC6) is 1492, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 2353 (uni1DC7) is 1492, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 2354 (uni1DC8) is 1493, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 2355 (uni1DC9) is 1493, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 2357 (uni1DFE) is 1569, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymin> Real yMin for glyph 2358 (uni1DFF) is -426, which is lower than the font's sTypoDescent (-425), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 2359 (uni214D) is 1513, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 2385 (dottediacute) is 1835, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 2399 (uni0487) is 1684, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 2405 (uni20F0) is 1696, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 2414 (uniA71B) is 1910, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 2415 (uniA71C) is 1910, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 2416 (uniA71D) is 1997, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 2417 (uniA71E) is 1997, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 2420 (circumflexacute) is 1835, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 2421 (circumflexgrave) is 1835, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 2422 (circumflexhook) is 1835, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 2423 (circumflextilde) is 1835, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 2424 (breveacute) is 1835, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 2425 (brevegrave) is 1835, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 2426 (brevehook) is 1835, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 2427 (brevetilde) is 1835, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 2428 (circumflexacute.lc) is 1574, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 2429 (circumflexgrave.lc) is 1574, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 2430 (circumflexhook.lc) is 1653, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 2431 (circumflextilde.lc) is 1775, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 2432 (breveacute.lc) is 1776, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 2433 (brevegrave.lc) is 1776, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 2434 (brevehook.lc) is 1835, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 2435 (brevetilde.lc) is 1775, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 2436 (uni1FEF.short) is 1835, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 2437 (tonos.short) is 1835, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 2439 (uni0592) is 1724, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 2440 (uni0593) is 1788, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 2441 (uni0594) is 1724, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 2442 (uni0595) is 1724, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 2444 (uni0597) is 1704, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 2445 (uni0598) is 1667, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 2446 (uni0599) is 1663, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 2449 (uni059C) is 1663, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 2450 (uni059D) is 1663, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 2451 (uni059E) is 1663, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 2452 (uni059F) is 1833, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 2453 (uni05A0) is 1833, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 2454 (uni05A1) is 1690, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 2461 (uni05A8) is 1663, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 2462 (uni05A9) is 1833, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 2464 (uni05AB) is 1718, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 2465 (uni05AC) is 1671, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 2467 (uni05AE) is 1667, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 2468 (uni05AF) is 1833, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 2478 (holam) is 1604, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 2479 (uni05BA) is 1604, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 2484 (rafe) is 1579, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 2485 (paseq) is 2007, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 2486 (shindot) is 1606, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 2487 (sindot) is 1606, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 2489 (upper_dot) is 1718, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 2505 (lamed) is 1665, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 2523 (geresh) is 1665, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 2524 (gershayim) is 1665, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 2527 (uniFB1E) is 1763, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 2534 (lamedwide) is 1665, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 2539 (shinshindot) is 1604, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 2540 (shinsindot) is 1604, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 2541 (shindageshshindot) is 1604, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 2542 (shindageshsindot) is 1604, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 2556 (lameddagesh) is 1665, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 2567 (vavholam) is 1604, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 2568 (betrafe) is 1579, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 2569 (kafrafe) is 1579, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 2570 (perafe) is 1579, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 2571 (aleflamed) is 1665, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 2572 (lamedholamdagesh) is 1665, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 2573 (lamedholam) is 1665, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 2576 (aleflamedhatafsegol) is 1665, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 2577 (aleflamedsegol) is 1665, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 2578 (aleflamedtsere) is 1665, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 2579 (alternativelamed) is 1665, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 2617 (uni1AB1) is 1651, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 2618 (uni1AB2) is 1661, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 2619 (uni1AB3) is 1679, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 2620 (uni1AB4) is 1633, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymin> Real yMin for glyph 2621 (uni1AB5) is -435, which is lower than the font's sTypoDescent (-425), resulting in clipping.
+E <bounds/glyph/ymin> Real yMin for glyph 2625 (uni1AB9) is -515, which is lower than the font's sTypoDescent (-425), resulting in clipping.
+E <bounds/glyph/ymin> Real yMin for glyph 2626 (uni1ABA) is -534, which is lower than the font's sTypoDescent (-425), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 2627 (uni1ABB) is 1830, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 2628 (uni1ABC) is 1830, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymin> Real yMin for glyph 2629 (uni1ABD) is -629, which is lower than the font's sTypoDescent (-425), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 2631 (uni1DCB) is 1510, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 2632 (uni1DCC) is 1510, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 2633 (uni1DCD) is 1501, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 2634 (uni1DCE) is 1628, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymin> Real yMin for glyph 2635 (uni1DCF) is -451, which is lower than the font's sTypoDescent (-425), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 2637 (uni1DD1) is 1605, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 2638 (uni1DD2) is 1715, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 2639 (uni1DD3) is 1510, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 2640 (uni1DD4) is 1715, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 2641 (uni1DD5) is 1715, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 2642 (uni1DD6) is 1715, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 2643 (uni1DD7) is 1715, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 2644 (uni1DD8) is 1835, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 2645 (uni1DD9) is 1862, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 2646 (uni1DDA) is 1715, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 2647 (uni1DDB) is 1715, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 2648 (uni1DDC) is 1835, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 2649 (uni1DDD) is 1835, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 2650 (uni1DDE) is 1707, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 2651 (uni1DDF) is 1707, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 2652 (uni1DE0) is 1715, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 2653 (uni1DE1) is 1707, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 2654 (uni1DE2) is 1707, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 2655 (uni1DE3) is 1715, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 2656 (uni1DE4) is 1715, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 2657 (uni1DE5) is 1833, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 2658 (uni1DE6) is 1707, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 2659 (uni1DE7) is 1715, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 2660 (uni1DE8) is 1835, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 2661 (uni1DE9) is 1835, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 2662 (uni1DEA) is 1715, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 2663 (uni1DEB) is 1833, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 2664 (uni1DEC) is 1835, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 2665 (uni1DED) is 1715, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 2666 (uni1DEE) is 1715, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 2667 (uni1DEF) is 1833, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 2668 (uni1DF0) is 1706, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 2669 (uni1DF1) is 1707, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 2670 (uni1DF2) is 1835, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 2671 (uni1DF3) is 1835, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 2672 (uni1DF4) is 1835, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 2673 (uni1DF5) is 1682, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymin> Real yMin for glyph 2675 (uni1DFD) is -572, which is lower than the font's sTypoDescent (-425), resulting in clipping.
+E <bounds/glyph/ymin> Real yMin for glyph 2684 (uni1EFF) is -430, which is lower than the font's sTypoDescent (-425), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 2701 (uni2040) is 1830, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 2726 (uni205A) is 1687, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 2727 (uni205B) is 1687, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 2729 (uni205D) is 1687, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 2747 (uni207D) is 1511, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 2748 (uni207E) is 1511, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymin> Real yMin for glyph 2762 (uni208D) is -468, which is lower than the font's sTypoDescent (-425), resulting in clipping.
+E <bounds/glyph/ymin> Real yMin for glyph 2763 (uni208E) is -468, which is lower than the font's sTypoDescent (-425), resulting in clipping.
+E <bounds/glyph/ymin> Real yMin for glyph 2769 (uni209A) is -437, which is lower than the font's sTypoDescent (-425), resulting in clipping.
+E <bounds/glyph/ymin> Real yMin for glyph 2789 (uni210A) is -797, which is lower than the font's sTypoDescent (-425), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 2790 (uni210B) is 1520, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymin> Real yMin for glyph 2800 (uni2118) is -494, which is lower than the font's sTypoDescent (-425), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 2807 (uni211F) is 1750, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 2810 (uni2123) is 1750, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 2812 (uni2125) is 1522, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 2814 (uni2128) is 1575, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 2817 (uni212B) is 1787, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 2822 (uni2131) is 1493, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymin> Real yMin for glyph 2837 (uni2140) is -454, which is lower than the font's sTypoDescent (-425), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 2845 (uni2148) is 1521, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 2846 (uni2149) is 1521, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymin> Real yMin for glyph 2846 (uni2149) is -492, which is lower than the font's sTypoDescent (-425), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 2847 (uni214A) is 1609, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 2855 (uni2C79) is 1507, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymin> Real yMin for glyph 2858 (uni2C7C) is -666, which is lower than the font's sTypoDescent (-425), resulting in clipping.
+E <bounds/glyph/ymin> Real yMin for glyph 2860 (uni2C7E) is -426, which is lower than the font's sTypoDescent (-425), resulting in clipping.
+E <bounds/glyph/ymin> Real yMin for glyph 2861 (uni2C7F) is -426, which is lower than the font's sTypoDescent (-425), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 2862 (uni2DE0) is 1834, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 2863 (uni2DE1) is 1706, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 2864 (uni2DE2) is 1706, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 2865 (uni2DE3) is 1706, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 2866 (uni2DE4) is 1706, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 2867 (uni2DE5) is 1715, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 2868 (uni2DE6) is 1706, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 2869 (uni2DE7) is 1706, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 2870 (uni2DE8) is 1706, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 2871 (uni2DE9) is 1706, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 2872 (uni2DEA) is 1715, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 2873 (uni2DEB) is 1706, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 2874 (uni2DEC) is 1715, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 2875 (uni2DED) is 1715, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 2876 (uni2DEE) is 1706, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 2877 (uni2DEF) is 1706, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 2878 (uni2DF0) is 1706, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 2879 (uni2DF1) is 1706, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 2880 (uni2DF2) is 1706, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 2881 (uni2DF3) is 1706, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 2882 (uni2DF4) is 1715, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 2883 (uni2DF5) is 1706, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 2884 (uni2DF6) is 1715, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 2885 (uni2DF7) is 1715, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 2886 (uni2DF8) is 1706, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 2887 (uni2DF9) is 1893, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 2888 (uni2DFA) is 1835, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 2889 (uni2DFB) is 1715, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 2890 (uni2DFC) is 1715, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 2891 (uni2DFD) is 1706, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 2892 (uni2DFE) is 1706, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 2893 (uni2DFF) is 1706, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 2908 (uni2E0E) is 2136, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymin> Real yMin for glyph 2908 (uni2E0E) is -653, which is lower than the font's sTypoDescent (-425), resulting in clipping.
+E <bounds/glyph/ymin> Real yMin for glyph 2910 (uni2E10) is -662, which is lower than the font's sTypoDescent (-425), resulting in clipping.
+E <bounds/glyph/ymin> Real yMin for glyph 2911 (uni2E11) is -662, which is lower than the font's sTypoDescent (-425), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 2925 (uni2E20) is 1553, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymin> Real yMin for glyph 2925 (uni2E20) is -497, which is lower than the font's sTypoDescent (-425), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 2926 (uni2E21) is 1553, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymin> Real yMin for glyph 2926 (uni2E21) is -497, which is lower than the font's sTypoDescent (-425), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 2940 (uni2E2F) is 1721, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 2954 (uni2E3D) is 1688, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 2955 (uni2E3E) is 1608, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 2956 (uni2E3F) is 1516, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 2971 (uniA64B) is 1715, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 3006 (uniA66E) is 1646, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 3009 (uniA671) is 1682, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 3010 (uniA672) is 1493, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 3011 (uniA673) is 1751, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 3012 (uniA674) is 1715, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 3013 (uniA675) is 1706, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 3014 (uniA676) is 1835, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 3015 (uniA677) is 1706, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 3016 (uniA678) is 1706, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 3017 (uniA679) is 1713, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 3018 (uniA67A) is 1713, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 3019 (uniA67B) is 1706, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 3020 (uniA67C) is 1500, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 3021 (uniA67D) is 1706, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 3022 (uniA67E) is 1500, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 3023 (uniA67F) is 1706, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 3024 (uniA680) is 1800, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymin> Real yMin for glyph 3040 (uniA690) is -427, which is lower than the font's sTypoDescent (-425), resulting in clipping.
+E <bounds/glyph/ymin> Real yMin for glyph 3041 (uniA691) is -427, which is lower than the font's sTypoDescent (-425), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 3044 (uniA694) is 1498, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 3045 (uniA695) is 1498, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 3052 (uniA69C) is 1706, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 3053 (uniA69D) is 1713, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 3054 (uniA69E) is 1835, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 3055 (uniA69F) is 1715, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymin> Real yMin for glyph 3069 (uniA72F) is -581, which is lower than the font's sTypoDescent (-425), resulting in clipping.
+E <bounds/glyph/ymin> Real yMin for glyph 3082 (uniA73C) is -443, which is lower than the font's sTypoDescent (-425), resulting in clipping.
+E <bounds/glyph/ymin> Real yMin for glyph 3118 (uniA760) is -443, which is lower than the font's sTypoDescent (-425), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 3131 (uniA76D) is 1501, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 3134 (uniA770) is 1715, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 3144 (uniA77A) is 1566, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 3148 (uniA77E) is 1507, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymin> Real yMin for glyph 3195 (uniA7B3) is -426, which is lower than the font's sTypoDescent (-425), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 3201 (uniA7F8) is 1706, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 3202 (uniA7F9) is 1715, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 3207 (uniA7FE) is 1824, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymin> Real yMin for glyph 3246 (uniAB55) is -446, which is lower than the font's sTypoDescent (-425), resulting in clipping.
+E <bounds/glyph/ymin> Real yMin for glyph 3250 (uniAB59) is -433, which is lower than the font's sTypoDescent (-425), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 3252 (uniAB5B) is 1510, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 3253 (uniAB5C) is 1835, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 3254 (uniAB5D) is 1837, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 3255 (uniAB5E) is 1834, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 3256 (uniAB5F) is 1715, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 3275 (uniFE2E) is 1492, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 3276 (uniFE2F) is 1492, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 3279 (glyph3279) is 1528, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 3291 (uni20BE) is 1650, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 3296 (uni0431.loclSRB) is 1502, which is higher than the font's sTypoAscent (1491), resulting in clipping.
+E <bounds/glyph/ymin> Real yMin for glyph 3302 (uni2016) is -454, which is lower than the font's sTypoDescent (-425), resulting in clipping.
+E <bounds/font/ymax> Real yMax 2136, but it should be less than or equal to the value of Ascent in 'hhea' table, which is 1854.
+E <bounds/font/ymin> Real yMin is -797, but it should be greater than or equal to the value of Descent in 'hhea' table, which is -434.
+W <gdef/classdef/combining_mismatch> Glyph uni0340 (U+0340 COMBINING GRAVE TONE MARK) is a combining mark, but is defined as class 1 (base glyph) in the GDEF/GlyphClassDef table.
+W <gdef/classdef/combining_mismatch> Glyph uni0341 (U+0341 COMBINING ACUTE TONE MARK) is a combining mark, but is defined as class 1 (base glyph) in the GDEF/GlyphClassDef table.
+W <gdef/classdef/combining_mismatch> Glyph uni034F (U+034F COMBINING GRAPHEME JOINER) is a combining mark, but is defined as class 1 (base glyph) in the GDEF/GlyphClassDef table.
+W <gdef/classdef/combining_mismatch> Glyph uni0358 (U+0358 COMBINING DOT ABOVE RIGHT) is a combining mark, but is defined as class 1 (base glyph) in the GDEF/GlyphClassDef table.
+W <gdef/classdef/combining_mismatch> Glyph uni0487 (U+0487 COMBINING CYRILLIC POKRYTIE) is a combining mark, but is defined as class 1 (base glyph) in the GDEF/GlyphClassDef table.
+W <gdef/classdef/combining_mismatch> Glyph uni1AB0 (U+1AB0 COMBINING DOUBLED CIRCUMFLEX ACCENT) is a combining mark, but is defined as class 1 (base glyph) in the GDEF/GlyphClassDef table.
+W <gdef/classdef/combining_mismatch> Glyph uni1AB1 (U+1AB1 COMBINING DIAERESIS-RING) is a combining mark, but is defined as class 1 (base glyph) in the GDEF/GlyphClassDef table.
+W <gdef/classdef/combining_mismatch> Glyph uni1AB2 (U+1AB2 COMBINING INFINITY) is a combining mark, but is defined as class 1 (base glyph) in the GDEF/GlyphClassDef table.
+W <gdef/classdef/combining_mismatch> Glyph uni1AB3 (U+1AB3 COMBINING DOWNWARDS ARROW) is a combining mark, but is defined as class 1 (base glyph) in the GDEF/GlyphClassDef table.
+W <gdef/classdef/combining_mismatch> Glyph uni1AB4 (U+1AB4 COMBINING TRIPLE DOT) is a combining mark, but is defined as class 1 (base glyph) in the GDEF/GlyphClassDef table.
+W <gdef/classdef/combining_mismatch> Glyph uni1AB5 (U+1AB5 COMBINING X-X BELOW) is a combining mark, but is defined as class 1 (base glyph) in the GDEF/GlyphClassDef table.
+W <gdef/classdef/combining_mismatch> Glyph uni1AB6 (U+1AB6 COMBINING WIGGLY LINE BELOW) is a combining mark, but is defined as class 1 (base glyph) in the GDEF/GlyphClassDef table.
+W <gdef/classdef/combining_mismatch> Glyph uni1AB7 (U+1AB7 COMBINING OPEN MARK BELOW) is a combining mark, but is defined as class 1 (base glyph) in the GDEF/GlyphClassDef table.
+W <gdef/classdef/combining_mismatch> Glyph uni1AB8 (U+1AB8 COMBINING DOUBLE OPEN MARK BELOW) is a combining mark, but is defined as class 1 (base glyph) in the GDEF/GlyphClassDef table.
+W <gdef/classdef/combining_mismatch> Glyph uni1AB9 (U+1AB9 COMBINING LIGHT CENTRALIZATION STROKE BELOW) is a combining mark, but is defined as class 1 (base glyph) in the GDEF/GlyphClassDef table.
+W <gdef/classdef/combining_mismatch> Glyph uni1ABA (U+1ABA COMBINING STRONG CENTRALIZATION STROKE BELOW) is a combining mark, but is defined as class 1 (base glyph) in the GDEF/GlyphClassDef table.
+W <gdef/classdef/combining_mismatch> Glyph uni1ABB (U+1ABB COMBINING PARENTHESES ABOVE) is a combining mark, but is defined as class 1 (base glyph) in the GDEF/GlyphClassDef table.
+W <gdef/classdef/combining_mismatch> Glyph uni1ABC (U+1ABC COMBINING DOUBLE PARENTHESES ABOVE) is a combining mark, but is defined as class 1 (base glyph) in the GDEF/GlyphClassDef table.
+W <gdef/classdef/combining_mismatch> Glyph uni1ABD (U+1ABD COMBINING PARENTHESES BELOW) is a combining mark, but is defined as class 1 (base glyph) in the GDEF/GlyphClassDef table.
+W <gdef/classdef/combining_mismatch> Glyph uni1DCB (U+1DCB COMBINING BREVE-MACRON) is a combining mark, but is defined as class 1 (base glyph) in the GDEF/GlyphClassDef table.
+W <gdef/classdef/combining_mismatch> Glyph uni1DCC (U+1DCC COMBINING MACRON-BREVE) is a combining mark, but is defined as class 1 (base glyph) in the GDEF/GlyphClassDef table.
+W <gdef/classdef/combining_mismatch> Glyph uni1DCD (U+1DCD COMBINING DOUBLE CIRCUMFLEX ABOVE) is a combining mark, but is defined as class 1 (base glyph) in the GDEF/GlyphClassDef table.
+W <gdef/classdef/combining_mismatch> Glyph uni1DCE (U+1DCE COMBINING OGONEK ABOVE) is a combining mark, but is defined as class 1 (base glyph) in the GDEF/GlyphClassDef table.
+W <gdef/classdef/combining_mismatch> Glyph uni1DCF (U+1DCF COMBINING ZIGZAG BELOW) is a combining mark, but is defined as class 1 (base glyph) in the GDEF/GlyphClassDef table.
+W <gdef/classdef/combining_mismatch> Glyph uni1DD0 (U+1DD0 COMBINING IS BELOW) is a combining mark, but is defined as class 1 (base glyph) in the GDEF/GlyphClassDef table.
+W <gdef/classdef/combining_mismatch> Glyph uni1DD1 (U+1DD1 COMBINING UR ABOVE) is a combining mark, but is defined as class 1 (base glyph) in the GDEF/GlyphClassDef table.
+W <gdef/classdef/combining_mismatch> Glyph uni1DD2 (U+1DD2 COMBINING US ABOVE) is a combining mark, but is defined as class 1 (base glyph) in the GDEF/GlyphClassDef table.
+W <gdef/classdef/combining_mismatch> Glyph uni1DD3 (U+1DD3 COMBINING LATIN SMALL LETTER FLATTENED OPEN A ABOVE) is a combining mark, but is defined as class 1 (base glyph) in the GDEF/GlyphClassDef table.
+W <gdef/classdef/combining_mismatch> Glyph uni1DD4 (U+1DD4 COMBINING LATIN SMALL LETTER AE) is a combining mark, but is defined as class 1 (base glyph) in the GDEF/GlyphClassDef table.
+W <gdef/classdef/combining_mismatch> Glyph uni1DD5 (U+1DD5 COMBINING LATIN SMALL LETTER AO) is a combining mark, but is defined as class 1 (base glyph) in the GDEF/GlyphClassDef table.
+W <gdef/classdef/combining_mismatch> Glyph uni1DD6 (U+1DD6 COMBINING LATIN SMALL LETTER AV) is a combining mark, but is defined as class 1 (base glyph) in the GDEF/GlyphClassDef table.
+W <gdef/classdef/combining_mismatch> Glyph uni1DD7 (U+1DD7 COMBINING LATIN SMALL LETTER C CEDILLA) is a combining mark, but is defined as class 1 (base glyph) in the GDEF/GlyphClassDef table.
+W <gdef/classdef/combining_mismatch> Glyph uni1DD8 (U+1DD8 COMBINING LATIN SMALL LETTER INSULAR D) is a combining mark, but is defined as class 1 (base glyph) in the GDEF/GlyphClassDef table.
+W <gdef/classdef/combining_mismatch> Glyph uni1DD9 (U+1DD9 COMBINING LATIN SMALL LETTER ETH) is a combining mark, but is defined as class 1 (base glyph) in the GDEF/GlyphClassDef table.
+W <gdef/classdef/combining_mismatch> Glyph uni1DDA (U+1DDA COMBINING LATIN SMALL LETTER G) is a combining mark, but is defined as class 1 (base glyph) in the GDEF/GlyphClassDef table.
+W <gdef/classdef/combining_mismatch> Glyph uni1DDB (U+1DDB COMBINING LATIN LETTER SMALL CAPITAL G) is a combining mark, but is defined as class 1 (base glyph) in the GDEF/GlyphClassDef table.
+W <gdef/classdef/combining_mismatch> Glyph uni1DDC (U+1DDC COMBINING LATIN SMALL LETTER K) is a combining mark, but is defined as class 1 (base glyph) in the GDEF/GlyphClassDef table.
+W <gdef/classdef/combining_mismatch> Glyph uni1DDD (U+1DDD COMBINING LATIN SMALL LETTER L) is a combining mark, but is defined as class 1 (base glyph) in the GDEF/GlyphClassDef table.
+W <gdef/classdef/combining_mismatch> Glyph uni1DDE (U+1DDE COMBINING LATIN LETTER SMALL CAPITAL L) is a combining mark, but is defined as class 1 (base glyph) in the GDEF/GlyphClassDef table.
+W <gdef/classdef/combining_mismatch> Glyph uni1DDF (U+1DDF COMBINING LATIN LETTER SMALL CAPITAL M) is a combining mark, but is defined as class 1 (base glyph) in the GDEF/GlyphClassDef table.
+W <gdef/classdef/combining_mismatch> Glyph uni1DE0 (U+1DE0 COMBINING LATIN SMALL LETTER N) is a combining mark, but is defined as class 1 (base glyph) in the GDEF/GlyphClassDef table.
+W <gdef/classdef/combining_mismatch> Glyph uni1DE1 (U+1DE1 COMBINING LATIN LETTER SMALL CAPITAL N) is a combining mark, but is defined as class 1 (base glyph) in the GDEF/GlyphClassDef table.
+W <gdef/classdef/combining_mismatch> Glyph uni1DE2 (U+1DE2 COMBINING LATIN LETTER SMALL CAPITAL R) is a combining mark, but is defined as class 1 (base glyph) in the GDEF/GlyphClassDef table.
+W <gdef/classdef/combining_mismatch> Glyph uni1DE3 (U+1DE3 COMBINING LATIN SMALL LETTER R ROTUNDA) is a combining mark, but is defined as class 1 (base glyph) in the GDEF/GlyphClassDef table.
+W <gdef/classdef/combining_mismatch> Glyph uni1DE4 (U+1DE4 COMBINING LATIN SMALL LETTER S) is a combining mark, but is defined as class 1 (base glyph) in the GDEF/GlyphClassDef table.
+W <gdef/classdef/combining_mismatch> Glyph uni1DE5 (U+1DE5 COMBINING LATIN SMALL LETTER LONG S) is a combining mark, but is defined as class 1 (base glyph) in the GDEF/GlyphClassDef table.
+W <gdef/classdef/combining_mismatch> Glyph uni1DE6 (U+1DE6 COMBINING LATIN SMALL LETTER Z) is a combining mark, but is defined as class 1 (base glyph) in the GDEF/GlyphClassDef table.
+W <gdef/classdef/combining_mismatch> Glyph uni1DE7 (U+1DE7 COMBINING LATIN SMALL LETTER ALPHA) is a combining mark, but is defined as class 1 (base glyph) in the GDEF/GlyphClassDef table.
+W <gdef/classdef/combining_mismatch> Glyph uni1DE8 (U+1DE8 COMBINING LATIN SMALL LETTER B) is a combining mark, but is defined as class 1 (base glyph) in the GDEF/GlyphClassDef table.
+W <gdef/classdef/combining_mismatch> Glyph uni1DE9 (U+1DE9 COMBINING LATIN SMALL LETTER BETA) is a combining mark, but is defined as class 1 (base glyph) in the GDEF/GlyphClassDef table.
+W <gdef/classdef/combining_mismatch> Glyph uni1DEA (U+1DEA COMBINING LATIN SMALL LETTER SCHWA) is a combining mark, but is defined as class 1 (base glyph) in the GDEF/GlyphClassDef table.
+W <gdef/classdef/combining_mismatch> Glyph uni1DEB (U+1DEB COMBINING LATIN SMALL LETTER F) is a combining mark, but is defined as class 1 (base glyph) in the GDEF/GlyphClassDef table.
+W <gdef/classdef/combining_mismatch> Glyph uni1DEC (U+1DEC COMBINING LATIN SMALL LETTER L WITH DOUBLE MIDDLE TILDE) is a combining mark, but is defined as class 1 (base glyph) in the GDEF/GlyphClassDef table.
+W <gdef/classdef/combining_mismatch> Glyph uni1DED (U+1DED COMBINING LATIN SMALL LETTER O WITH LIGHT CENTRALIZATION STROKE) is a combining mark, but is defined as class 1 (base glyph) in the GDEF/GlyphClassDef table.
+W <gdef/classdef/combining_mismatch> Glyph uni1DEE (U+1DEE COMBINING LATIN SMALL LETTER P) is a combining mark, but is defined as class 1 (base glyph) in the GDEF/GlyphClassDef table.
+W <gdef/classdef/combining_mismatch> Glyph uni1DEF (U+1DEF COMBINING LATIN SMALL LETTER ESH) is a combining mark, but is defined as class 1 (base glyph) in the GDEF/GlyphClassDef table.
+W <gdef/classdef/combining_mismatch> Glyph uni1DF0 (U+1DF0 COMBINING LATIN SMALL LETTER U WITH LIGHT CENTRALIZATION STROKE) is a combining mark, but is defined as class 1 (base glyph) in the GDEF/GlyphClassDef table.
+W <gdef/classdef/combining_mismatch> Glyph uni1DF1 (U+1DF1 COMBINING LATIN SMALL LETTER W) is a combining mark, but is defined as class 1 (base glyph) in the GDEF/GlyphClassDef table.
+W <gdef/classdef/combining_mismatch> Glyph uni1DF2 (U+1DF2 COMBINING LATIN SMALL LETTER A WITH DIAERESIS) is a combining mark, but is defined as class 1 (base glyph) in the GDEF/GlyphClassDef table.
+W <gdef/classdef/combining_mismatch> Glyph uni1DF3 (U+1DF3 COMBINING LATIN SMALL LETTER O WITH DIAERESIS) is a combining mark, but is defined as class 1 (base glyph) in the GDEF/GlyphClassDef table.
+W <gdef/classdef/combining_mismatch> Glyph uni1DF4 (U+1DF4 COMBINING LATIN SMALL LETTER U WITH DIAERESIS) is a combining mark, but is defined as class 1 (base glyph) in the GDEF/GlyphClassDef table.
+W <gdef/classdef/combining_mismatch> Glyph uni1DF5 (U+1DF5 COMBINING UP TACK ABOVE) is a combining mark, but is defined as class 1 (base glyph) in the GDEF/GlyphClassDef table.
+W <gdef/classdef/combining_mismatch> Glyph uni1DFB (U+1DFB COMBINING DELETION MARK) is a combining mark, but is defined as class 1 (base glyph) in the GDEF/GlyphClassDef table.
+W <gdef/classdef/combining_mismatch> Glyph uni1DFC (U+1DFC COMBINING DOUBLE INVERTED BREVE BELOW) is a combining mark, but is defined as class 1 (base glyph) in the GDEF/GlyphClassDef table.
+W <gdef/classdef/combining_mismatch> Glyph uni1DFD (U+1DFD COMBINING ALMOST EQUAL TO BELOW) is a combining mark, but is defined as class 1 (base glyph) in the GDEF/GlyphClassDef table.
+W <gdef/classdef/combining_mismatch> Glyph uni20F0 (U+20F0 COMBINING ASTERISK ABOVE) is a combining mark, but is defined as class 1 (base glyph) in the GDEF/GlyphClassDef table.
+W <gdef/classdef/combining_mismatch> Glyph uni2DE0 (U+2DE0 COMBINING CYRILLIC LETTER BE) is a combining mark, but is defined as class 1 (base glyph) in the GDEF/GlyphClassDef table.
+W <gdef/classdef/combining_mismatch> Glyph uni2DE1 (U+2DE1 COMBINING CYRILLIC LETTER VE) is a combining mark, but is defined as class 1 (base glyph) in the GDEF/GlyphClassDef table.
+W <gdef/classdef/combining_mismatch> Glyph uni2DE2 (U+2DE2 COMBINING CYRILLIC LETTER GHE) is a combining mark, but is defined as class 1 (base glyph) in the GDEF/GlyphClassDef table.
+W <gdef/classdef/combining_mismatch> Glyph uni2DE3 (U+2DE3 COMBINING CYRILLIC LETTER DE) is a combining mark, but is defined as class 1 (base glyph) in the GDEF/GlyphClassDef table.
+W <gdef/classdef/combining_mismatch> Glyph uni2DE4 (U+2DE4 COMBINING CYRILLIC LETTER ZHE) is a combining mark, but is defined as class 1 (base glyph) in the GDEF/GlyphClassDef table.
+W <gdef/classdef/combining_mismatch> Glyph uni2DE5 (U+2DE5 COMBINING CYRILLIC LETTER ZE) is a combining mark, but is defined as class 1 (base glyph) in the GDEF/GlyphClassDef table.
+W <gdef/classdef/combining_mismatch> Glyph uni2DE6 (U+2DE6 COMBINING CYRILLIC LETTER KA) is a combining mark, but is defined as class 1 (base glyph) in the GDEF/GlyphClassDef table.
+W <gdef/classdef/combining_mismatch> Glyph uni2DE7 (U+2DE7 COMBINING CYRILLIC LETTER EL) is a combining mark, but is defined as class 1 (base glyph) in the GDEF/GlyphClassDef table.
+W <gdef/classdef/combining_mismatch> Glyph uni2DE8 (U+2DE8 COMBINING CYRILLIC LETTER EM) is a combining mark, but is defined as class 1 (base glyph) in the GDEF/GlyphClassDef table.
+W <gdef/classdef/combining_mismatch> Glyph uni2DE9 (U+2DE9 COMBINING CYRILLIC LETTER EN) is a combining mark, but is defined as class 1 (base glyph) in the GDEF/GlyphClassDef table.
+W <gdef/classdef/combining_mismatch> Glyph uni2DEA (U+2DEA COMBINING CYRILLIC LETTER O) is a combining mark, but is defined as class 1 (base glyph) in the GDEF/GlyphClassDef table.
+W <gdef/classdef/combining_mismatch> Glyph uni2DEB (U+2DEB COMBINING CYRILLIC LETTER PE) is a combining mark, but is defined as class 1 (base glyph) in the GDEF/GlyphClassDef table.
+W <gdef/classdef/combining_mismatch> Glyph uni2DEC (U+2DEC COMBINING CYRILLIC LETTER ER) is a combining mark, but is defined as class 1 (base glyph) in the GDEF/GlyphClassDef table.
+W <gdef/classdef/combining_mismatch> Glyph uni2DED (U+2DED COMBINING CYRILLIC LETTER ES) is a combining mark, but is defined as class 1 (base glyph) in the GDEF/GlyphClassDef table.
+W <gdef/classdef/combining_mismatch> Glyph uni2DEE (U+2DEE COMBINING CYRILLIC LETTER TE) is a combining mark, but is defined as class 1 (base glyph) in the GDEF/GlyphClassDef table.
+W <gdef/classdef/combining_mismatch> Glyph uni2DEF (U+2DEF COMBINING CYRILLIC LETTER HA) is a combining mark, but is defined as class 1 (base glyph) in the GDEF/GlyphClassDef table.
+W <gdef/classdef/combining_mismatch> Glyph uni2DF0 (U+2DF0 COMBINING CYRILLIC LETTER TSE) is a combining mark, but is defined as class 1 (base glyph) in the GDEF/GlyphClassDef table.
+W <gdef/classdef/combining_mismatch> Glyph uni2DF1 (U+2DF1 COMBINING CYRILLIC LETTER CHE) is a combining mark, but is defined as class 1 (base glyph) in the GDEF/GlyphClassDef table.
+W <gdef/classdef/combining_mismatch> Glyph uni2DF2 (U+2DF2 COMBINING CYRILLIC LETTER SHA) is a combining mark, but is defined as class 1 (base glyph) in the GDEF/GlyphClassDef table.
+W <gdef/classdef/combining_mismatch> Glyph uni2DF3 (U+2DF3 COMBINING CYRILLIC LETTER SHCHA) is a combining mark, but is defined as class 1 (base glyph) in the GDEF/GlyphClassDef table.
+W <gdef/classdef/combining_mismatch> Glyph uni2DF4 (U+2DF4 COMBINING CYRILLIC LETTER FITA) is a combining mark, but is defined as class 1 (base glyph) in the GDEF/GlyphClassDef table.
+W <gdef/classdef/combining_mismatch> Glyph uni2DF5 (U+2DF5 COMBINING CYRILLIC LETTER ES-TE) is a combining mark, but is defined as class 1 (base glyph) in the GDEF/GlyphClassDef table.
+W <gdef/classdef/combining_mismatch> Glyph uni2DF6 (U+2DF6 COMBINING CYRILLIC LETTER A) is a combining mark, but is defined as class 1 (base glyph) in the GDEF/GlyphClassDef table.
+W <gdef/classdef/combining_mismatch> Glyph uni2DF7 (U+2DF7 COMBINING CYRILLIC LETTER IE) is a combining mark, but is defined as class 1 (base glyph) in the GDEF/GlyphClassDef table.
+W <gdef/classdef/combining_mismatch> Glyph uni2DF8 (U+2DF8 COMBINING CYRILLIC LETTER DJERV) is a combining mark, but is defined as class 1 (base glyph) in the GDEF/GlyphClassDef table.
+W <gdef/classdef/combining_mismatch> Glyph uni2DF9 (U+2DF9 COMBINING CYRILLIC LETTER MONOGRAPH UK) is a combining mark, but is defined as class 1 (base glyph) in the GDEF/GlyphClassDef table.
+W <gdef/classdef/combining_mismatch> Glyph uni2DFA (U+2DFA COMBINING CYRILLIC LETTER YAT) is a combining mark, but is defined as class 1 (base glyph) in the GDEF/GlyphClassDef table.
+W <gdef/classdef/combining_mismatch> Glyph uni2DFB (U+2DFB COMBINING CYRILLIC LETTER YU) is a combining mark, but is defined as class 1 (base glyph) in the GDEF/GlyphClassDef table.
+W <gdef/classdef/combining_mismatch> Glyph uni2DFC (U+2DFC COMBINING CYRILLIC LETTER IOTIFIED A) is a combining mark, but is defined as class 1 (base glyph) in the GDEF/GlyphClassDef table.
+W <gdef/classdef/combining_mismatch> Glyph uni2DFD (U+2DFD COMBINING CYRILLIC LETTER LITTLE YUS) is a combining mark, but is defined as class 1 (base glyph) in the GDEF/GlyphClassDef table.
+W <gdef/classdef/combining_mismatch> Glyph uni2DFE (U+2DFE COMBINING CYRILLIC LETTER BIG YUS) is a combining mark, but is defined as class 1 (base glyph) in the GDEF/GlyphClassDef table.
+W <gdef/classdef/combining_mismatch> Glyph uni2DFF (U+2DFF COMBINING CYRILLIC LETTER IOTIFIED BIG YUS) is a combining mark, but is defined as class 1 (base glyph) in the GDEF/GlyphClassDef table.
+W <gdef/classdef/combining_mismatch> Glyph uniA66F (U+A66F COMBINING CYRILLIC VZMET) is a combining mark, but is defined as class 1 (base glyph) in the GDEF/GlyphClassDef table.
+W <gdef/classdef/combining_mismatch> Glyph uniA674 (U+A674 COMBINING CYRILLIC LETTER UKRAINIAN IE) is a combining mark, but is defined as class 1 (base glyph) in the GDEF/GlyphClassDef table.
+W <gdef/classdef/combining_mismatch> Glyph uniA675 (U+A675 COMBINING CYRILLIC LETTER I) is a combining mark, but is defined as class 1 (base glyph) in the GDEF/GlyphClassDef table.
+W <gdef/classdef/combining_mismatch> Glyph uniA676 (U+A676 COMBINING CYRILLIC LETTER YI) is a combining mark, but is defined as class 1 (base glyph) in the GDEF/GlyphClassDef table.
+W <gdef/classdef/combining_mismatch> Glyph uniA677 (U+A677 COMBINING CYRILLIC LETTER U) is a combining mark, but is defined as class 1 (base glyph) in the GDEF/GlyphClassDef table.
+W <gdef/classdef/combining_mismatch> Glyph uniA678 (U+A678 COMBINING CYRILLIC LETTER HARD SIGN) is a combining mark, but is defined as class 1 (base glyph) in the GDEF/GlyphClassDef table.
+W <gdef/classdef/combining_mismatch> Glyph uniA679 (U+A679 COMBINING CYRILLIC LETTER YERU) is a combining mark, but is defined as class 1 (base glyph) in the GDEF/GlyphClassDef table.
+W <gdef/classdef/combining_mismatch> Glyph uniA67A (U+A67A COMBINING CYRILLIC LETTER SOFT SIGN) is a combining mark, but is defined as class 1 (base glyph) in the GDEF/GlyphClassDef table.
+W <gdef/classdef/combining_mismatch> Glyph uniA67B (U+A67B COMBINING CYRILLIC LETTER OMEGA) is a combining mark, but is defined as class 1 (base glyph) in the GDEF/GlyphClassDef table.
+W <gdef/classdef/combining_mismatch> Glyph uniA67C (U+A67C COMBINING CYRILLIC KAVYKA) is a combining mark, but is defined as class 1 (base glyph) in the GDEF/GlyphClassDef table.
+W <gdef/classdef/combining_mismatch> Glyph uniA67D (U+A67D COMBINING CYRILLIC PAYEROK) is a combining mark, but is defined as class 1 (base glyph) in the GDEF/GlyphClassDef table.
+W <gdef/classdef/combining_mismatch> Glyph uniA69E (U+A69E COMBINING CYRILLIC LETTER EF) is a combining mark, but is defined as class 1 (base glyph) in the GDEF/GlyphClassDef table.
+W <gdef/classdef/combining_mismatch> Glyph uniA69F (U+A69F COMBINING CYRILLIC LETTER IOTIFIED E) is a combining mark, but is defined as class 1 (base glyph) in the GDEF/GlyphClassDef table.
+W <gdef/classdef/combining_mismatch> Glyph uniFE24 (U+FE24 COMBINING MACRON LEFT HALF) is a combining mark, but is defined as class 1 (base glyph) in the GDEF/GlyphClassDef table.
+W <gdef/classdef/combining_mismatch> Glyph uniFE25 (U+FE25 COMBINING MACRON RIGHT HALF) is a combining mark, but is defined as class 1 (base glyph) in the GDEF/GlyphClassDef table.
+W <gdef/classdef/combining_mismatch> Glyph uniFE26 (U+FE26 COMBINING CONJOINING MACRON) is a combining mark, but is defined as class 1 (base glyph) in the GDEF/GlyphClassDef table.
+W <gdef/classdef/combining_mismatch> Glyph uniFE27 (U+FE27 COMBINING LIGATURE LEFT HALF BELOW) is a combining mark, but is defined as class 1 (base glyph) in the GDEF/GlyphClassDef table.
+W <gdef/classdef/combining_mismatch> Glyph uniFE28 (U+FE28 COMBINING LIGATURE RIGHT HALF BELOW) is a combining mark, but is defined as class 1 (base glyph) in the GDEF/GlyphClassDef table.
+W <gdef/classdef/combining_mismatch> Glyph uniFE29 (U+FE29 COMBINING TILDE LEFT HALF BELOW) is a combining mark, but is defined as class 1 (base glyph) in the GDEF/GlyphClassDef table.
+W <gdef/classdef/combining_mismatch> Glyph uniFE2A (U+FE2A COMBINING TILDE RIGHT HALF BELOW) is a combining mark, but is defined as class 1 (base glyph) in the GDEF/GlyphClassDef table.
+W <gdef/classdef/combining_mismatch> Glyph uniFE2B (U+FE2B COMBINING MACRON LEFT HALF BELOW) is a combining mark, but is defined as class 1 (base glyph) in the GDEF/GlyphClassDef table.
+W <gdef/classdef/combining_mismatch> Glyph uniFE2C (U+FE2C COMBINING MACRON RIGHT HALF BELOW) is a combining mark, but is defined as class 1 (base glyph) in the GDEF/GlyphClassDef table.
+W <gdef/classdef/combining_mismatch> Glyph uniFE2D (U+FE2D COMBINING CONJOINING MACRON BELOW) is a combining mark, but is defined as class 1 (base glyph) in the GDEF/GlyphClassDef table.
+W <gdef/classdef/combining_mismatch> Glyph uniFE2E (U+FE2E COMBINING CYRILLIC TITLO LEFT HALF) is a combining mark, but is defined as class 1 (base glyph) in the GDEF/GlyphClassDef table.
+W <gdef/classdef/combining_mismatch> Glyph uniFE2F (U+FE2F COMBINING CYRILLIC TITLO RIGHT HALF) is a combining mark, but is defined as class 1 (base glyph) in the GDEF/GlyphClassDef table.
+W <gdef/classdef/not_combining_mismatch> Glyph sofpasuq (U+05C3 HEBREW PUNCTUATION SOF PASUQ) is defined as class 3 (non-spacing) in the GDEF/GlyphClassDef table, but is of general category Po.
+E <gdef/ligcaretlist/not_present> There is no LigCaretList data in the GDEF table, but there are ligatures defined in GDEF: aleflamed, aleflamedhatafsegol, aleflamedsegol, aleflamedtsere.
+E <bidi/rtlm_unlisted> No 'rtlm' feature is applied to the glyph for U+2140 (uni2140), but one should be applied, since the character is a bidi mirroring character that is not in the OMPL list.
+E <bidi/rtlm_unlisted> No 'rtlm' feature is applied to the glyph for U+2202 (partialdiff), but one should be applied, since the character is a bidi mirroring character that is not in the OMPL list.
+E <bidi/rtlm_unlisted> No 'rtlm' feature is applied to the glyph for U+2211 (summation), but one should be applied, since the character is a bidi mirroring character that is not in the OMPL list.
+E <bidi/ompl_missing_pair> The character U+2215 (DIVISION SLASH) is supported in the font, but its bidi mirrored pair U+29F5 (REVERSE SOLIDUS OPERATOR) is not.
+E <bidi/rtlm_unlisted> No 'rtlm' feature is applied to the glyph for U+221A (radical), but one should be applied, since the character is a bidi mirroring character that is not in the OMPL list.
+E <bidi/ompl_missing_pair> The character U+221F (RIGHT ANGLE) is supported in the font, but its bidi mirrored pair U+2BFE (REVERSED RIGHT ANGLE) is not.
+E <bidi/rtlm_unlisted> No 'rtlm' feature is applied to the glyph for U+222B (integral), but one should be applied, since the character is a bidi mirroring character that is not in the OMPL list.
+E <bidi/rtlm_unlisted> No 'rtlm' feature is applied to the glyph for U+2248 (approxequal), but one should be applied, since the character is a bidi mirroring character that is not in the OMPL list.
+E <bidi/rtlm_unlisted> No 'rtlm' feature is applied to the glyph for U+2260 (notequal), but one should be applied, since the character is a bidi mirroring character that is not in the OMPL list.
+E <bidi/rtlm_unlisted> No 'rtlm' feature is applied to the glyph for U+2320 (integraltp), but one should be applied, since the character is a bidi mirroring character that is not in the OMPL list.
+E <bidi/rtlm_unlisted> No 'rtlm' feature is applied to the glyph for U+2321 (integralbt), but one should be applied, since the character is a bidi mirroring character that is not in the OMPL list.
+E <reachable> The following 63 glyphs are unreachable in the font: Eng.alt1 (2386), Eng.alt2 (2387), Eng.alt3 (2388), acute.alt1 (696), acute.alt2 (697), acute.alt3 (698), acute.alt4 (712), acute.alt5 (713), aleflamedhatafsegol (2576), aleflamedsegol (2577), aleflamedtsere (2578), alternativelamed (2579), breve.alt1 (706), circumflex.alt1 (707), dotbelow.alt10 (736), dotbelow.alt11 (737), dotbelow.alt12 (738), dotbelow.alt13 (739), dotbelow.alt14 (740), dotbelow.alt15 (741), dotbelow.alt2 (724), dotbelow.alt3 (725), dotbelow.alt4 (726), dotbelow.alt5 (727), dotbelow.alt6 (728), dotbelow.alt7 (733), dotbelow.alt8 (734), dotbelow.alt9 (735), dotlessi.alt1 (746), dottediacute (2385), eight.alt (2397), five.alt (2394), four.alt (2393), grave.alt1 (693), grave.alt2 (694), grave.alt3 (695), grave.alt4 (714), grave.alt5 (715), hookabove.alt1 (700), hookabove.alt2 (701), hookabove.alt3 (702), hookabove.alt4 (716), hookabove.alt5 (717), nine.alt (2398), one.alt (2390), seven.alt (2396), six.alt (2395), three.alt (2392), tilde.alt1 (703), tilde.alt10 (742), tilde.alt11 (743), tilde.alt12 (744), tilde.alt13 (745), tilde.alt2 (704), tilde.alt3 (718), tilde.alt4 (719), tilde.alt5 (720), tilde.alt6 (721), tilde.alt7 (722), tilde.alt8 (723), tilde.alt9 (731), two.alt (2391), zero.alt (2389).
+Found 1064 errors.
+Found 125 warnings.
+------
+Finished linting 1 file.

@@ -1,0 +1,32 @@
+---
+Automatic testing for 'instance_ttf,NotoSansThaiLooped-ExtraCondensedExtraBold.ttf', Version 1.000:
+E <name/copyright> The copyright is 'Copyright 2020 Google LLC. All rights reserved' but was expecting it to match '^Copyright 20\d\d Google (Inc|LLC)\.* All Rights Reserved\.$'
+E <name/family> The family is 'Noto Sans Thai Looped ExCd ExBd' but was expecting 'Noto Sans Thai Looped ExtCond ExtBd'
+E <name/manufacturer> The manufacturer is 'The Fontpad Ltd' but was expecting 'Monotype Imaging Inc.'
+E <name/designer> The designer is 'Sasikarn Vongin, Ben Mitchell' but was expecting 'Monotype Design Team'
+E <name/description> The description is 'Design by The Fontpad Ltd' but was expecting it to match '^Designed by Monotype design team.$'
+E <name/vendor_url> The vendor url is 'http://www.google.com/get/noto' but was expecting 'http://www.google.com/get/noto/'
+E <name/designer_url> The designer url is 'http://www.fontpad.co.uk' but was expecting 'http://www.monotype.com/studio'
+E <cmap/private_use> There should be no (non-required) private use characters defined in the font, but there are 10: EC00..EC06, EC09..EC0B.
+W <cmap/script_unexpected> The following 33 chars were not expected in the font: 0025..0026, 002A, 002F, 003B, 005B, 005D, 00AB, 00BB, 00D7, 034F, 035E, 17C9, 17CB, 2012..2015, 2022, 2039..203A, 2060, 2638, EC00..EC06, EC09..EC0B
+E <head/os2/winascent> Value of usWinAscent in 'OS/2' table (1380) is different from the value of Ascent in 'hhea' table (1250), but they should be equal.
+E <head/os2/windescent> Value of usWinDescent in 'OS/2' table (620) is different from the opposite of value of Descent in 'hhea' table (-350), but they should be opposites.
+E <head/os2/fsselection> UseTypoMetrics bit in fsSelection is set, but should be clear.
+E <bounds/glyph/ymin> Real yMin for glyph 82 (uni0E38.small) is -547, which is lower than the font's sTypoDescent (-350), resulting in clipping.
+E <bounds/glyph/ymin> Real yMin for glyph 84 (uni0E39.small) is -544, which is lower than the font's sTypoDescent (-350), resulting in clipping.
+E <bounds/glyph/ymin> Real yMin for glyph 86 (phinthu_saraUthai) is -550, which is lower than the font's sTypoDescent (-350), resulting in clipping.
+E <bounds/glyph/ymin> Real yMin for glyph 87 (phinthu_saraUuthai) is -549, which is lower than the font's sTypoDescent (-350), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 118 (maiHanaKat_maitaikhuthai) is 1257, which is higher than the font's sTypoAscent (1250), resulting in clipping.
+E <bounds/glyph/ymax> Real yMax for glyph 121 (maiHanaKat_maitaikhuthai.narrow) is 1257, which is higher than the font's sTypoAscent (1250), resulting in clipping.
+E <bounds/glyph/ymin> Real yMin for glyph 156 (pikKaa) is -551, which is lower than the font's sTypoDescent (-350), resulting in clipping.
+E <bounds/glyph/ymin> Real yMin for glyph 157 (tinKhru) is -533, which is lower than the font's sTypoDescent (-350), resulting in clipping.
+E <bounds/font/ymax> Real yMax 1257, but it should be less than or equal to the value of Ascent in 'hhea' table, which is 1250.
+E <bounds/font/ymin> Real yMin is -551, but it should be greater than or equal to the value of Descent in 'hhea' table, which is -350.
+E <paths/intersection> The glyph 'uni0E56' has intersecting outlines: start and end segments match: (269.0, 109.0)
+E <paths/intersection> The glyph 'uni0E59.sups' has intersecting outlines: start and end segments match: (413.0, 715.0)
+E <advances/whitespace> The advance of U+00a0 (uni00A0, glyph 4) is 260, but expected 186.
+E <reachable> The following 2 glyphs are unreachable in the font: fonThongthai (158), uni0E29.BRACKET.110 (211).
+Found 25 errors.
+Found 1 warning.
+------
+Finished linting 1 file.

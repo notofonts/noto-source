@@ -1,0 +1,196 @@
+Start ... running 77 individual check executions.
+ >> [1;35;107mcom.google.fonts/check/required_tables[0m
+    [0;36;107mFont contains all required tables?[0m
+    with NotoSansHebrew-CondensedThin.ttf
+
+    [1;35;107m  Rationale:                                                                [0m
+    [0;30;107m  Depending on the typeface and coverage of a font, certain tables are      [0m
+    [0;30;107m  recommended for optimum quality. For example, the performance of a        [0m
+    [0;30;107m  non-linear font is improved if the VDMX, LTSH, and hdmx tables are        [0m
+    [0;30;107m  present. Non-monospaced Latin fonts should have a kern table. A gasp      [0m
+    [0;30;107m  table is necessary if a designer wants to influence the sizes at which    [0m
+    [0;30;107m  grayscaling is used under Windows. A DSIG table containing a digital      [0m
+    [0;30;107m  signature helps ensure the integrity of the font file. Etc.               [0m
+
+    * [0;36;107mINFO[0m: This font contains the following optional tables [loca, GPOS, GSUB]
+
+
+    Result: [0;36;107mINFO[0m
+
+ >> [1;35;107mcom.google.fonts/check/valid_glyphnames[0m
+    [0;36;107mGlyph names are all valid?[0m
+    with NotoSansHebrew-CondensedThin.ttf
+
+    [1;35;107m  Rationale:                                                                [0m
+    [0;30;107m  Microsoft's recommendations for OpenType Fonts states the following:      [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  'NOTE: The PostScript glyph name must be no longer than 31 characters,    [0m
+    [0;30;107m  include only uppercase or lowercase English letters, European digits, the [0m
+    [0;30;107m  period or the underscore, i.e. from the set [A-Za-z0-9_.] and should      [0m
+    [0;30;107m  start with a letter, except the special glyph name ".notdef" which starts [0m
+    [0;30;107m  with a period.'                                                           [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  https://docs.microsoft.com/en-us/typography/opentype/spec/recom#post-table[0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  In practice, though, particularly in modern environments, glyph names can [0m
+    [0;30;107m  be as long as 63 characters.                                              [0m
+    [0;30;107m  According to the "Adobe Glyph List Specification" available at:           [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  https://github.com/adobe-type-tools/agl-specification                     [0m
+
+    * [1;30;103mWARN[0m: The following glyph names may be too long for some legacy systems which may expect a maximum 31-char length limit:
+hatafpatah_zerowidthjoiner_siluqlefthb, hatafqamats_zerowidthjoiner_siluqlefthb and hatafsegol_zerowidthjoiner_siluqlefthb [code: legacy-long-names]
+
+
+    Result: [1;30;103mWARN[0m
+
+ >> [1;35;107mcom.google.fonts/check/superfamily/list[0m
+    [0;36;107mList all superfamily filepaths[0m
+    with NotoSansHebrew-CondensedThin.ttf
+
+    [1;35;107m  Rationale:                                                                [0m
+    [0;30;107m  This is a merely informative check that lists all sibling families        [0m
+    [0;30;107m  detected by fontbakery.                                                   [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  Only the fontfiles in these directories will be considered in             [0m
+    [0;30;107m  superfamily-level checks.                                                 [0m
+
+    * [0;36;107mINFO[0m: . [code: family-path]
+
+
+    Result: [0;36;107mINFO[0m
+
+ >> [1;35;107mcom.google.fonts/check/name/match_familyname_fullfont[0m
+    [0;36;107mDoes full font name begin with the font family name?[0m
+    with NotoSansHebrew-CondensedThin.ttf
+
+    * [1;91;107mFAIL[0m: On the 'name' table, the full font name (NameID 4 - FULL_FONT_NAME: 'Noto Sans Hebrew Cond Thin') does not begin with font family name (NameID 1 - FONT_FAMILY_NAME: 'Noto Sans Hebrew Condensed Thin') [code: does-not]
+
+
+    Result: [1;91;107mFAIL[0m
+
+ >> [1;35;107mcom.google.fonts/check/dsig[0m
+    [0;36;107mDoes the font have a DSIG table?[0m
+    with NotoSansHebrew-CondensedThin.ttf
+
+    [1;35;107m  Rationale:                                                                [0m
+    [0;30;107m  Microsoft Office 2013 and below products expect fonts to have a digital   [0m
+    [0;30;107m  signature declared in a DSIG table in order to implement OpenType         [0m
+    [0;30;107m  features. The EOL date for Microsoft Office 2013 products is 4/11/2023.   [0m
+    [0;30;107m  This issue does not impact Microsoft Office 2016 and above products.      [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  This checks verifies that this signature is available in the font.        [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  A fake signature is enough to address this issue. If needed, a dummy      [0m
+    [0;30;107m  table can be added to the font with the `gftools fix-dsig` script         [0m
+    [0;30;107m  available at https://github.com/googlefonts/gftools                       [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  Reference: https://github.com/googlefonts/fontbakery/issues/1845          [0m
+
+    * [1;91;107mFAIL[0m: This font lacks a digital signature (DSIG table). Some applications may require one (even if only a dummy placeholder) in order to work properly. You can add a DSIG table by running the `gftools fix-dsig` script. [code: lacks-signature]
+
+
+    Result: [1;91;107mFAIL[0m
+
+ >> [1;35;107mcom.google.fonts/check/whitespace_widths[0m
+    [0;36;107mSpace and non-breaking space have the same width?[0m
+    with NotoSansHebrew-CondensedThin.ttf
+
+    * [1;91;107mFAIL[0m: Space and non-breaking space have differing width: The space glyph named space is 246 font units wide, non-breaking space named (uni00A0) is 217 font units wide, and both should be positive and the same. GlyphsApp has "Sidebearing arithmetic" (https://glyphsapp.com/tutorials/spacing) which allows you to set the non-breaking space width to always equal the space width. [code: different-widths]
+
+
+    Result: [1;91;107mFAIL[0m
+
+ >> [1;35;107mcom.google.fonts/check/outline_short_segments[0m
+    [0;36;107mAre any segments inordinately short?[0m
+    with NotoSansHebrew-CondensedThin.ttf
+
+    [1;35;107m  Rationale:                                                                [0m
+    [0;30;107m  This test looks for outline segments which seem particularly short (less  [0m
+    [0;30;107m  than 0.006%% of the overall path length).                                 [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  This test is not run for variable fonts, as they may legitimately have    [0m
+    [0;30;107m  short segments. As this test is liable to generate significant numbers of [0m
+    [0;30;107m  false positives, the test will pass if there are more than 100 reported   [0m
+    [0;30;107m  short segments.                                                           [0m
+
+    * [1;30;103mWARN[0m: The following glyphs have segments which seem very short:
+	* uniFB20 contains a short segment L<<176.0,27.0>--<178.0,27.0>>
+	* uni05E3 contains a short segment B<<179.0,250.0>-<186.0,249.0>-<191.5,248.5>>
+	* uni05E3 contains a short segment B<<191.5,248.5>-<197.0,248.0>-<202.0,248.0>>
+	* uni05E3 contains a short segment B<<201.0,220.0>-<196.0,220.0>-<189.0,220.0>>
+	* uniFB43 contains a short segment B<<179.0,250.0>-<186.0,249.0>-<191.5,248.5>>
+	* uniFB43 contains a short segment B<<191.5,248.5>-<197.0,248.0>-<202.0,248.0>>
+	* uniFB43 contains a short segment B<<201.0,220.0>-<196.0,220.0>-<189.0,220.0>>
+	* uni05D2 contains a short segment L<<197.0,124.0>--<194.0,124.0>>
+	* uni05D2 contains a short segment L<<21.0,27.0>--<29.0,27.0>>
+	* uniFB32 contains a short segment L<<197.0,124.0>--<194.0,124.0>> and 15 more. [code: found-short-segments]
+
+
+    Result: [1;30;103mWARN[0m
+
+ >> [1;35;107mcom.google.fonts/check/outline_colinear_vectors[0m
+    [0;36;107mDo any segments have colinear vectors?[0m
+    with NotoSansHebrew-CondensedThin.ttf
+
+    [1;35;107m  Rationale:                                                                [0m
+    [0;30;107m  This test looks for consecutive line segments which have the same angle.  [0m
+    [0;30;107m  This normally happens if an outline point has been added by accident.     [0m
+    [0;30;107m                                                                            [0m
+    [0;30;107m  This test is not run for variable fonts, as they may legitimately have    [0m
+    [0;30;107m  colinear vectors.                                                         [0m
+
+    * [1;30;103mWARN[0m: The following glyphs have colinear vectors:
+	* uni05DC: L<<358.0,584.0>--<351.0,557.0>> -> L<<351.0,557.0>--<199.0,0.0>>
+	* uni05E7: L<<465.0,584.0>--<458.0,557.0>> -> L<<458.0,557.0>--<302.0,0.0>>
+	* uniFB20: L<<34.0,27.0>--<176.0,27.0>> -> L<<176.0,27.0>--<178.0,27.0>>
+	* uniFB3C: L<<358.0,584.0>--<351.0,557.0>> -> L<<351.0,557.0>--<199.0,0.0>> and uniFB47: L<<465.0,584.0>--<458.0,557.0>> -> L<<458.0,557.0>--<302.0,0.0>> [code: found-colinear-vectors]
+
+
+    Result: [1;30;103mWARN[0m
+
+ >> [1;35;107mcom.google.fonts/check/outline_jaggy_segments[0m
+    [0;36;107mDo outlines contain any jaggy segments?[0m
+    with NotoSansHebrew-CondensedThin.ttf
+
+    [1;35;107m  Rationale:                                                                [0m
+    [0;30;107m  This test heuristically detects outline segments which form a             [0m
+    [0;30;107m  particularly small angle, indicative of an outline error. This may cause  [0m
+    [0;30;107m  false positives in cases such as extreme ink traps, so should be regarded [0m
+    [0;30;107m  as advisory and backed up by manual inspection.                           [0m
+
+    * [1;30;103mWARN[0m: The following glyphs have jaggy segments:
+	* uniFB25: L<<189.0,456.0>--<245.0,676.0>>/L<<245.0,676.0>--<245.0,568.0>> = 14.281095735970812 [code: found-jaggy-segments]
+
+
+    Result: [1;30;103mWARN[0m
+
+
+Total:
+
+    [1;97;101mERROR[0m: 0
+    [1;91;107mFAIL[0m: 3
+    [1;30;103mWARN[0m: 4
+    [0;36;107mINFO[0m: 2
+    [0;34;107mSKIP[0m: 18
+    [0;32;107mPASS[0m: 50
+
+
+DONE!
+
+    [1;30;107mMeaning of check results:[0m
+
+    An [1;97;101mERROR[0m is something wrong with FontBakery itself, possibly a bug.
+    A [1;91;107mFAIL[0m is a problem with the font that must be fixed.
+    A [1;30;103mWARN[0m is something that you should consider addressing.
+    An [0;36;107mINFO[0m result simply prints something useful. Typically stats.
+    A [0;32;107mPASS[0m means the font looks good for the given checking routine.
+    And a [0;34;107mSKIP[0m happens when the check does not apply to the given font.
+
+    If you get [1;97;101mERROR[0ms, please help us improve the tool by reporting them at
+    [1;36;107mhttps://github.com/googlefonts/fontbakery/issues[0m
+
+    (but other kinds of bug reports and/or
+     feature requests are also always welcome, of course!)
+

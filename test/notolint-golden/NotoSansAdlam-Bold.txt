@@ -1,0 +1,16 @@
+---
+Automatic testing for 'instance_ttf,NotoSansAdlam-Bold.ttf', Version 3.000:
+E <name/copyright> The copyright is 'Copyright 2017-2019 Google LLC. All Rights Reserved.' but was expecting it to match '^Copyright 20\d\d Google (Inc|LLC)\.* All Rights Reserved\.$'
+E <name/version> The version is 'Version 3.000' but was expecting it to match '^Version ([0-2])\.(\d{3})(?:;.*.*)?$'
+E <name/manufacturer> The manufacturer is 'JamraPatel LLC' but was expecting 'Monotype Imaging Inc.'
+E <name/designer> The designer is 'Mark Jamra, Neil Patel' but was expecting 'Monotype Design Team'
+E <name/description> The description is 'Designed by Mark Jamra, Neil Patel.
+' but was expecting it to match '^Designed by Monotype design team.$'
+E <name/designer_url> The designer url is 'https://www.jamra-patel.com' but was expecting 'http://www.monotype.com/studio'
+W <cmap/script_unexpected> The following 51 chars were not expected in the font: 0022..002F, 003A..0040, 005B..005F, 007B..007D, 00AB, 00BB, 2013..2015, 2018..201E, 2020..2022, 2026, 2030, 2039..203A, 2044, 2E28..2E29
+E <head/os2/panose/family> Panose family value is 0 but expected 2
+E <head/os2/panose/proportion> Panose proportion value is 0 (any) but expected 2-4
+Found 8 errors.
+Found 1 warning.
+------
+Finished linting 1 file.

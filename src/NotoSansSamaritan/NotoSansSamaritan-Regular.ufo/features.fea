@@ -1,0 +1,223 @@
+languagesystem DFLT dflt;
+languagesystem samr dflt;
+table GDEF {
+    GlyphClassDef [], [], [], [];
+} GDEF;
+
+    markClass uni0818 <anchor 327 800> @Anchor4;
+    markClass uni0819 <anchor 87 820> @Anchor4;
+    markClass uni081B <anchor 175 800> @Anchor4;
+    markClass uni082C <anchor 107 830> @Anchor4;
+    markClass uni082D <anchor 87 800> @Anchor4;
+    markClass uni0818.alt <anchor 185 800> @Anchor4;
+
+    markClass uni0816 <anchor 136 800> @Anchor5;
+    markClass uni0817 <anchor 97 800> @Anchor5;
+
+    markClass [uni081C uni0826 uni0827] <anchor -154 800> @Anchor7;
+    markClass uni081D <anchor -130 800> @Anchor7;
+    markClass uni081E <anchor -59 800> @Anchor7;
+    markClass [uni081F uni0820] <anchor -49 800> @Anchor7;
+    markClass uni0821 <anchor -206 800> @Anchor7;
+    markClass uni0822 <anchor -162 800> @Anchor7;
+    markClass [uni0823 uni0825 uni082B] <anchor -147 800> @Anchor7;
+    markClass uni0829 <anchor -127 800> @Anchor7;
+    markClass uni082A <anchor -125 800> @Anchor7;
+
+    markClass uni0819 <anchor 107 800> @Anchor9;
+    markClass uni082C <anchor 107 820> @Anchor9;
+    markClass uni082D <anchor 87 800> @Anchor9;
+
+    markClass uni0818 <anchor 634 798> @Anchor11;
+    markClass uni0819 <anchor 219 798> @Anchor11;
+    markClass [uni081B uni0818.alt] <anchor 366 798> @Anchor11;
+    markClass uni082C <anchor 244 798> @Anchor11;
+    markClass uni082D <anchor 146 798> @Anchor11;
+
+    markClass uni081C <anchor -30 0> @Anchor13;
+    markClass [uni081D uni0825] <anchor -49 0> @Anchor13;
+    markClass [uni081E uni081F uni0820 uni0821 uni0822 uni0823 uni0826 uni0829 uni082A uni082B] <anchor 0 0> @Anchor13;
+    markClass uni0827 <anchor -25 0> @Anchor13;
+
+    markClass uni081C <anchor 19 798> @Anchor15;
+    markClass uni081D <anchor -15 798> @Anchor15;
+    markClass [uni081E uni081F uni0820 uni0821 uni0822 uni0823 uni0826 uni0829 uni082A uni082B] <anchor 0 798> @Anchor15;
+    markClass uni0825 <anchor 9 798> @Anchor15;
+    markClass uni0827 <anchor -25 798> @Anchor15;
+
+@class1 = [uni081C uni081D uni081E uni081F uni0820 uni0821 uni0822 uni0823 uni0825 uni0826 uni0827 uni0829 uni082A uni082B];
+
+lookup SingleSubstitution2 {
+    lookupflag 0;
+    ;
+    # Original source: 1 
+    sub uni0818 by uni0818.alt;
+} SingleSubstitution2;
+
+lookup ChainedContextualGSUB1 {
+    lookupflag 0;
+    ;
+    sub [uni0816 uni0817] uni0818' lookup SingleSubstitution2;
+    sub uni0818' lookup SingleSubstitution2 @class1;
+    sub [uni080D uni080E] uni0818' lookup SingleSubstitution2;
+} ChainedContextualGSUB1;
+
+lookup SinglePositioning16 {
+    lookupflag 0;
+    ;
+    # Original source: 8 
+    pos [uni081C uni081D uni081E uni081F uni0820 uni0821 uni0822 uni0823 uni0825 uni0826 uni0827 uni0829 uni082A uni082B] <293 0 293 0>;
+} SinglePositioning16;
+
+lookup ChainedContextualGPOS1 {
+    lookupflag 0;
+    ;
+    pos @class1' lookup SinglePositioning16 @class1;
+} ChainedContextualGPOS1;
+
+lookup SinglePositioning17 {
+    lookupflag 0;
+    ;
+    # Original source: 9 
+    pos [uni081A uni0824 uni0828] <293 0 293 0>;
+} SinglePositioning17;
+
+lookup ChainedContextualGPOS2 {
+    lookupflag 0;
+    ;
+    # Original source: 1 
+    pos [uni081A uni0824 uni0828]' lookup SinglePositioning17 @class1;
+} ChainedContextualGPOS2;
+
+lookup MarkToBase3 {
+    lookupflag 0;
+    ;
+    # Original source: 2 
+            pos base [uni0800 uni080F] <anchor 458 732> mark @Anchor4;
+        pos base uni0801 <anchor 322 732> mark @Anchor4;
+        pos base [uni0802 uni0804 uni0805 uni0813] <anchor 341 732> mark @Anchor4;
+        pos base uni0803 <anchor 312 732> mark @Anchor4;
+        pos base uni0806 <anchor 410 791> mark @Anchor4;
+        pos base uni0807 <anchor 361 751> mark @Anchor4;
+        pos base uni0808 <anchor 488 742> mark @Anchor4;
+        pos base uni0809 <anchor 537 732> mark @Anchor4;
+        pos base uni080A <anchor 361 732> mark @Anchor4;
+        pos base uni080B <anchor 305 947> mark @Anchor4;
+        pos base uni080C <anchor 439 732> mark @Anchor4;
+        pos base uni080D <anchor 390 732> mark @Anchor4;
+        pos base uni080E <anchor 502 732> mark @Anchor4;
+        pos base uni0810 <anchor 380 732> mark @Anchor4;
+        pos base uni0811 <anchor 624 732> mark @Anchor4;
+        pos base uni0812 <anchor 361 742> mark @Anchor4;
+        pos base uni0814 <anchor 429 751> mark @Anchor4;
+        pos base uni0815 <anchor 507 732> mark @Anchor4;
+
+            pos base [uni0800 uni080F] <anchor 729 732> mark @Anchor5;
+        pos base uni0801 <anchor 537 732> mark @Anchor5;
+        pos base [uni0802 uni0804 uni080A] <anchor 585 732> mark @Anchor5;
+        pos base uni0803 <anchor 517 732> mark @Anchor5;
+        pos base [uni0805 uni0807] <anchor 634 732> mark @Anchor5;
+        pos base uni0806 <anchor 683 732> mark @Anchor5;
+        pos base [uni0808 uni0815] <anchor 781 732> mark @Anchor5;
+        pos base uni0809 <anchor 888 751> mark @Anchor5;
+        pos base uni080B <anchor 488 732> mark @Anchor5;
+        pos base uni080C <anchor 751 732> mark @Anchor5;
+        pos base uni080D <anchor 551 732> mark @Anchor5;
+        pos base uni080E <anchor 605 732> mark @Anchor5;
+        pos base uni0810 <anchor 554 732> mark @Anchor5;
+        pos base uni0811 <anchor 905 732> mark @Anchor5;
+        pos base uni0812 <anchor 561 732> mark @Anchor5;
+        pos base uni0813 <anchor 532 732> mark @Anchor5;
+        pos base uni0814 <anchor 708 751> mark @Anchor5;
+
+} MarkToBase3;
+
+lookup MarkToBase6 {
+    lookupflag 0;
+    ;
+    # Original source: 3 
+            pos base [uni0800 uni0801 uni0802 uni0803 uni0804 uni0805 uni0808 uni0809 uni080A uni080C uni080F uni0810 uni0811 uni0812 uni0813 uni0815] <anchor 48 732> mark @Anchor7;
+        pos base uni0806 <anchor 48 791> mark @Anchor7;
+        pos base [uni0807 uni0814] <anchor 48 751> mark @Anchor7;
+        pos base uni080B <anchor -40 732> mark @Anchor7;
+        pos base uni080D <anchor -137 732> mark @Anchor7;
+        pos base uni080E <anchor -59 732> mark @Anchor7;
+        pos base uni081A <anchor -171 732> mark @Anchor7;
+        pos base [uni0824 uni0828] <anchor -147 732> mark @Anchor7;
+
+} MarkToBase6;
+
+lookup MarkToMark8 {
+    lookupflag 0;
+    ;
+    # Original source: 4 
+            pos mark uni0818 <anchor 317 893> mark @Anchor9;
+        pos mark uni0818.alt <anchor 185 893> mark @Anchor9;
+
+} MarkToMark8;
+
+lookup MarkToMark10 {
+    lookupflag 0;
+    ;
+    # Original source: 5 
+            pos mark [uni0816 uni0817] <anchor -74 798> mark @Anchor11;
+
+} MarkToMark10;
+
+lookup MarkToMark12 {
+    lookupflag 0;
+    ;
+    # Original source: 6 
+            pos mark [uni0818 uni0819 uni081B uni082C uni082D uni0818.alt] <anchor -40 0> mark @Anchor13;
+
+} MarkToMark12;
+
+lookup MarkToMark14 {
+    lookupflag 0;
+    ;
+    # Original source: 7 
+            pos mark [uni081C uni081D uni0829] <anchor -303 798> mark @Anchor15;
+        pos mark uni081E <anchor -147 798> mark @Anchor15;
+        pos mark uni081F <anchor -137 798> mark @Anchor15;
+        pos mark uni0820 <anchor -127 798> mark @Anchor15;
+        pos mark uni0821 <anchor -440 798> mark @Anchor15;
+        pos mark uni0822 <anchor -391 798> mark @Anchor15;
+        pos mark uni0823 <anchor -333 798> mark @Anchor15;
+        pos mark uni0825 <anchor -245 798> mark @Anchor15;
+        pos mark uni0826 <anchor -342 798> mark @Anchor15;
+        pos mark uni0827 <anchor -313 798> mark @Anchor15;
+        pos mark uni082A <anchor -284 798> mark @Anchor15;
+        pos mark uni082B <anchor -347 798> mark @Anchor15;
+
+} MarkToMark14;
+
+feature calt {
+    lookup ChainedContextualGSUB1;
+} calt;
+
+feature dist {
+    lookup ChainedContextualGPOS1;
+    lookup ChainedContextualGPOS2;
+} dist;
+
+feature mark {
+    lookup MarkToBase3;
+    lookup MarkToBase6;
+} mark;
+
+feature mkmk {
+    lookup MarkToMark8;
+    lookup MarkToMark10;
+    lookup MarkToMark12;
+    lookup MarkToMark14;
+} mkmk;
+
+    @GDEF_Base = [uni0800 uni0801 uni0802 uni0803 uni0804 uni0805 uni0806 uni0807 uni0808 uni0809 uni080A uni080B uni080C uni080D uni080E uni080F uni0810 uni0811 uni0812 uni0813 uni0814 uni0815 uni081A uni0824 uni0828 uni0830 uni0831 uni0832 uni0833 uni0834 uni0835 uni0836 uni0837 uni0838 uni0839 uni083A uni083B uni083C uni083D uni083E uni2E31];
+    @GDEF_Ligature = [];
+    @GDEF_Mark = [uni0816 uni0817 uni0818 uni0819 uni081B uni081C uni081D uni081E uni081F uni0820 uni0821 uni0822 uni0823 uni0825 uni0826 uni0827 uni0829 uni082A uni082B uni082C uni082D uni0818.alt];
+    @GDEF_Component = [];
+    table GDEF {
+        GlyphClassDef @GDEF_Base, @GDEF_Ligature, @GDEF_Mark, @GDEF_Component;
+} GDEF;
+
+
