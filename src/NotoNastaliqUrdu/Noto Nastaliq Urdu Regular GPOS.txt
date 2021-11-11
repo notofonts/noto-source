@@ -16,9 +16,9 @@ script table end
 
 
 feature table begin
-0	curs	0, 1
-1	mark	2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 15
-2	mkmk	14, 16, 17
+0	curs	0, 1, 2
+1	mark	3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 16
+2	mkmk	15, 17, 18
 
 feature table end
 
@@ -31,13 +31,13 @@ IgnoreMarks	yes
 
 exit	FehxIni.outT2N	0,0
 entry	AlefFin	263,0
-entry	BehxFin	1186,245
+entry	BehxFin	1186,248
 entry	NoonxFin	749,335
-entry	DalFin	362,0	10
+entry	DalFin	362,0
 entry	SeenFin	1040,455
-entry	AinFin	361,358	16
+entry	AinFin	361,358
 entry	FehxFin	1174,217
-entry	LamFin	848,384	10
+entry	LamFin	848,384
 entry	YehBarreeFin	355,419
 entry	YehBarreeFin_5	355,419
 entry	YehBarreeFin_4	355,419
@@ -47,7 +47,7 @@ exit	SeenIni.r	0,0
 entry	AlefFin.narrow	239,0
 entry	SeenMed.SWinBoutT2	129,33
 exit	SeenMed.SWinBoutT2	0,0
-entry	SeenMed.SWinDoutT2	182,6
+entry	SeenMed.SWinDoutT2	183,7
 exit	SeenMed.SWinDoutT2	0,0
 entry	SeenMed.SWinFFoutT2	128,27
 exit	SeenMed.SWinFFoutT2	0,0
@@ -71,7 +71,7 @@ exit	BehxIni	0,0
 exit	BehxIni.A	0,0
 exit	MeemIni.r	0,0
 exit	FehxIni.outT2	0,0
-entry	SeenMed.SWinFoutT2	138,14
+entry	SeenMed.SWinFoutT2	139,14
 exit	SeenMed.SWinFoutT2	0,0
 entry	RehFin	382,146
 entry	HahFin	238,718
@@ -81,7 +81,7 @@ entry	YehBarreeFin.2	64,195
 entry	YehBarreeFin.2_5	64,195
 entry	YehBarreeFin.2_4	64,195
 entry	YehBarreeFin.2_3	64,195
-entry	QafxFin	639,259	19
+entry	QafxFin	639,259
 entry	WawFin	219,191
 entry	SeenMed.r	354,156
 exit	SeenMed.r	0,0
@@ -113,29 +113,29 @@ exit	MeemIni.outD2	0,0
 exit	MeemIni.outD2YB	0,0
 exit	MeemIni.outD2Y	0,0
 exit	FehxIni.outD2Y	0,0
-entry	YehxFin.inD2alt	504,375	21
+entry	YehxFin.inD2alt	504,375
 exit	BehxIni.outD2D	0,0
 exit	BehxIni.outD2H	0,0
 exit	BehxIni.outD2Y	0,0
-exit	BehxIni.outD2WQ	0,0	19
+exit	BehxIni.outD2WQ	0,0
 exit	FehxIni.outD2WQ	0,0
 entry	RehFin.inD4B	404,376
 exit	BehxIni.outD2M	0,0
-exit	BehxIni.outD2YB	0,0	19
-entry	RehFin.inD3	512,248	6
-exit	SadIni.r	0,0	21
-exit	HehIni.r	0,0	16
+exit	BehxIni.outD2YB	0,0
+entry	RehFin.inD3	512,248
+exit	SadIni.r	0,0
+exit	HehIni.r	0,0
 exit	FehxIni.outD4	0,0
-exit	BehxIni.outD5	0,0	6
+exit	BehxIni.outD5	0,0
 entry	RehFin.postHeh	396,146
 entry	RehFin.inD4	456,400
 exit	SeenIni.SWoutT2	0,0
-exit	FehxIni.outD5	0,0	3
+exit	FehxIni.outD5	0,0
 exit	MeemIni.outD5	0,0
 entry	RehFin.inD3MM	396,146
 exit	KafIni.HRlow	0,0
 exit	KafIni.HRk	0,0
-exit	GafIni.HRk	0,0	16
+exit	GafIni.HRk	0,0
 exit	TahIni.outT2	0,0
 exit	HehIni.outD2H	0,0
 exit	TahIni.outT3	0,0
@@ -148,13 +148,13 @@ exit	FehxIni.outD2MM	0,0
 exit	MeemIni.outD2MM	0,0
 entry	MeemMed.inD2outD2Y	243,199
 exit	MeemMed.inD2outD2Y	0,0
-entry	HehMed.inD5outD2H	556,107	3
+entry	HehMed.inD5outD2H	556,107
 exit	HehMed.inD5outD2H	0,0
 entry	WawFin.cut	273,205
-entry	WawFin.inD2	371,323
+entry	WawFin.inD2	304,218
 entry	BehxMed.inT1outS1	250,118
 exit	BehxMed.inT1outS1	0,0
-entry	BehxMed.inT2outT1	267,145	12
+entry	BehxMed.inT2outT1	267,145
 exit	BehxMed.inT2outT1	0,0
 entry	BehxMed.inT1outT3	239,48
 exit	BehxMed.inT1outT3	0,0
@@ -164,7 +164,7 @@ entry	BehxMed.inT2outT2K	297,138
 exit	BehxMed.inT2outT2K	0,0
 exit	HahIni	0,0
 exit	SeenIni	0,0
-entry	GafMed.V	295,99	26
+entry	GafMed.V	295,99
 exit	GafMed.V	0,0
 entry	BehxMed.inT1outT2	184,65
 exit	BehxMed.inT1outT2	0,0
@@ -181,7 +181,7 @@ exit	BehxMed.inT1outT2Nwide	0,0
 entry	BehxMed.inT1outT2Seen	178,21
 exit	BehxMed.inT1outT2Seen	0,0
 entry	BehxMed.inS1outS1	89,-6
-exit	BehxMed.inS1outS1	0,0	15
+exit	BehxMed.inS1outS1	0,0
 entry	BehxMed.inT2outD2WQ	331,161
 exit	BehxMed.inT2outD2WQ	0,0
 entry	BehxMed.inT2outD2Y	294,50
@@ -190,9 +190,9 @@ entry	BehxMed.inT2outD2M	393,154
 exit	BehxMed.inT2outD2M	0,0
 entry	WawFin.inD2alt	258,237
 entry	QafxFin.cut	692,272
-entry	QafxFin.inD2alt	686,324
-entry	QafxFin.inD2	802,390
-entry	BehxMed.inT2outD2YB	182,57	12
+entry	QafxFin.inD2alt	687,315
+entry	QafxFin.inD2	736,286
+entry	BehxMed.inT2outD2YB	182,57
 exit	BehxMed.inT2outD2YB	0,70
 entry	BehxMed	199,103
 exit	BehxMed	0,0
@@ -218,14 +218,14 @@ entry	BehxMed.inT2outD2HF	413,110
 exit	BehxMed.inT2outD2HF	0,0
 entry	BehxMed.inT2outD2HS	413,110
 exit	BehxMed.inT2outD2HS	0,0
-entry	BehxMed.inT2outD2Hwide	483,128	15
+entry	BehxMed.inT2outD2Hwide	483,128
 exit	BehxMed.inT2outD2Hwide	0,0
 entry	BehxMed.inT2outT1wide	337,162
 exit	BehxMed.inT2outT1wide	0,0
 entry	SeenMed	538,223
 exit	SeenMed	0,0
 entry	BehxMed.inT2outD5	208,38
-exit	BehxMed.inT2outD5	0,0	3
+exit	BehxMed.inT2outD5	0,0
 entry	MeemMed	304,321
 exit	MeemMed	0,0
 entry	AinMed.inT3outD2MM	234,99
@@ -233,34 +233,34 @@ exit	AinMed.inT3outD2MM	0,0
 exit	LamIni.outT2	0,0
 exit	LamIni	0,0
 exit	LamIni.outT3	0,0
-exit	LamIni.outD2	0,0	20
-exit	LamIni.outD2YB	0,0	20
+exit	LamIni.outD2	0,0
+exit	LamIni.outD2YB	0,0
 exit	LamIni.outD11	0,0
-entry	LamMed.outD11	570,85	6
+entry	LamMed.outD11	570,85
 exit	LamMed.outD11	0,0
-exit	KafIni.outD2	0,0	38
-exit	KafIni.outD2YB	0,0	41
+exit	KafIni.outD2	0,0
+exit	KafIni.outD2YB	0,0
 entry	KafMed.k	4,0
 exit	KafMed.k	0,0
-entry	KafMed.V	295,99	6
+entry	KafMed.V	295,99
 exit	KafMed.V	0,0
-entry	KafMed.Vlow	295,99	6
+entry	KafMed.Vlow	295,99
 exit	KafMed.Vlow	0,0
 exit	KafIni.HRoutD2	0,0
 exit	GafIni.HRoutD2	0,0
-exit	GafIni.outD2	0,0	61
-exit	GafIni.outD2YB	0,0	61
-entry	GafMed.Vlow	295,99	26
+exit	GafIni.outD2	0,0
+exit	GafIni.outD2YB	0,0
+entry	GafMed.Vlow	295,99
 exit	GafMed.Vlow	0,0
 exit	LamIni.outT2N	0,0
 exit	LamIni.outS1	0,0
-exit	LamIni.outD2Y	0,0	19
+exit	LamIni.outD2Y	0,0
 exit	LamIni.outD2H	0,0
 exit	LamIni.outD1	0,0
-exit	LamIni.outD5	0,0	3
+exit	LamIni.outD5	0,0
 exit	LamIni.outD2MM	0,0
 exit	LamIni.low	0,0
-entry	LamMed	295,99	6
+entry	LamMed	295,99
 exit	LamMed	0,0
 entry	LamMed.outT2	277,72
 exit	LamMed.outT2	0,0
@@ -268,7 +268,7 @@ entry	LamMed.outT3	329,98
 exit	LamMed.outT3	0,0
 entry	LamMed.outS1	331,99
 exit	LamMed.outS1	0,0
-entry	LamMed.outD1	661,0	9
+entry	LamMed.outD1	661,0
 exit	LamMed.outD1	0,-66
 entry	LamMed.outD2WQ	301,20
 exit	LamMed.outD2WQ	0,0
@@ -278,20 +278,20 @@ entry	LamMed.outD2H	506,54
 exit	LamMed.outD2H	0,0
 entry	LamMed.outD2HYB	506,54
 exit	LamMed.outD2HYB	0,0
-entry	LamMed.outD5	247,-17	12
-exit	LamMed.outD5	0,0	3
+entry	LamMed.outD5	247,-17
+exit	LamMed.outD5	0,0
 entry	LamMed.outD2MM	186,80
 exit	LamMed.outD2MM	0,0
-entry	LamMed.low	295,99	6
+entry	LamMed.low	295,99
 exit	LamMed.low	0,0
 entry	LamMed.outD2Y	195,-6
-exit	LamMed.outD2Y	0,0	34
+exit	LamMed.outD2Y	0,0
 entry	LamMed.outD4	192,-35
 exit	LamMed.outD4	0,0
-entry	GafMed.VoutD5	247,-17	32
-exit	GafMed.VoutD5	0,0	23
+entry	GafMed.VoutD5	247,-17
+exit	GafMed.VoutD5	0,0
 entry	GafMed.outS1	331,99
-exit	GafMed.outS1	0,0	20
+exit	GafMed.outS1	0,0
 exit	SadIni.outT2	0,0
 entry	HehDoMed	327,395
 exit	HehDoMed	0,0
@@ -300,48 +300,48 @@ entry	FehxMed	246,96
 exit	FehxMed	0,0
 exit	TahIni.low	0,0
 entry	GafMed.outT2	277,72
-exit	GafMed.outT2	0,0	20
+exit	GafMed.outT2	0,0
 exit	SeenIni.outT2	0,0
-entry	GafMed.outD11	570,85	29
+entry	GafMed.outD11	570,85
 exit	GafMed.outD11	0,0
 exit	HehDoIni.outT2	0,0
 entry	GafMed.outD2MM	186,80
 exit	GafMed.outD2MM	0,0
 exit	HehIni.outT2	0,0
 entry	GafMed.outD2Y	195,-6
-exit	GafMed.outD2Y	0,0	78
+exit	GafMed.outD2Y	0,0
 entry	GafMed.outD4	192,-35
 exit	GafMed.outD4	0,0
-exit	GafIni.HRlow	0,0	20
+exit	GafIni.HRlow	0,0
 entry	GafMed.HRoutT3	329,98
-exit	GafMed.HRoutT3	0,0	20
+exit	GafMed.HRoutT3	0,0
 entry	GafMed.HRoutD2MD	408,-11
 exit	GafMed.HRoutD2MD	0,0
 entry	GafMed.HRoutD2HYB	506,54
 exit	GafMed.HRoutD2HYB	0,0
 exit	MeemIni.outT2	0,0
-entry	GafMed.HRoutD5	247,-17	32
-exit	GafMed.HRoutD5	0,0	23
+entry	GafMed.HRoutD5	247,-17
+exit	GafMed.HRoutD5	0,0
 exit	MeemIni.outT3	0,0
 entry	GafMed.VoutT2	277,72
-exit	GafMed.VoutT2	0,0	20
+exit	GafMed.VoutT2	0,0
 entry	GafFin.HR	957,64
 entry	GafMed.VoutD2HYB	506,54
 exit	GafMed.VoutD2HYB	0,0
 entry	GafMed.HRk	4,0
-exit	GafMed.HRk	0,0	18
+exit	GafMed.HRk	0,0
 entry	GafMed.VoutD2WQ	301,20
 exit	GafMed.VoutD2WQ	0,0
 exit	SadIni	0,0
-entry	GafMed.VoutD1	661,0	29
-exit	GafMed.VoutD1	0,-66	20
+entry	GafMed.VoutD1	661,0
+exit	GafMed.VoutD1	0,-66
 entry	HehDoMed.inD2outD3	245,350
 exit	HehDoMed.inD2outD3	0,0
 exit	HehDoIni.outD3	0,0
-exit	GafIni.HRoutT3	0,0	20
+exit	GafIni.HRoutT3	0,0
 entry	TahMed.inD1outD5	99,90
-exit	TahMed.inD1outD5	0,0	3
-exit	TahIni.outD5	0,0	3
+exit	TahMed.inD1outD5	0,0
+exit	TahIni.outD5	0,0
 exit	SadIni.outT3	0,0
 exit	HehDoIni.outT2wide	0,0
 exit	HehDoIni.outD2	0,0
@@ -354,31 +354,31 @@ entry	FehxMed.inT3outD2	310,152
 exit	FehxMed.inT3outD2	0,0
 entry	SeenMed.inT2outD2M	665,232
 exit	SeenMed.inT2outD2M	0,0
-exit	GafIni.outD5	0,0	23
-entry	GafMed.low	295,99	26
+exit	GafIni.outD5	0,0
+entry	GafMed.low	295,99
 exit	GafMed.low	0,0
-entry	GafMed.HRlow	295,99	26
-exit	GafMed.HRlow	-1,0	20
+entry	GafMed.HRlow	295,99
+exit	GafMed.HRlow	-1,0
 exit	HahIni.outT3	0,0
-entry	GafMed.outD1	661,0	29
-exit	GafMed.outD1	0,-66	20
+entry	GafMed.outD1	661,0
+exit	GafMed.outD1	0,-66
 entry	GafMed.outD2WQ	301,20
 exit	GafMed.outD2WQ	0,0
-exit	GafIni.HRoutD1	0,0	20
+exit	GafIni.HRoutD1	0,0
 entry	GafMed.HRoutT2	277,72
-exit	GafMed.HRoutT2	0,0	20
+exit	GafMed.HRoutT2	0,0
 exit	SeenIni.outT3	0,0
 entry	GafMed.VoutT3	329,98
-exit	GafMed.VoutT3	0,0	20
+exit	GafMed.VoutT3	0,0
 entry	GafMed.VoutD2MD	408,-11
 exit	GafMed.VoutD2MD	0,0
 entry	GafMed.VoutD2Y	195,-6
-exit	GafMed.VoutD2Y	0,0	67
+exit	GafMed.VoutD2Y	0,0
 exit	HehIni.outT3	0,0
 exit	HehIni.outT3En	0,0
 entry	GafFin	957,64
 entry	GafFin.V	957,64
-exit	GafIni.HRoutT2N	0,0	20
+exit	GafIni.HRoutT2N	0,0
 exit	HehDoIni.outT3	0,0
 exit	SeenIni.outS1	0,0
 exit	SadIni.outS1	0,0
@@ -387,15 +387,15 @@ exit	HehIni.outS1	0,0
 exit	AinIni.outS1	0,0
 exit	TahIni.outD2H	0,0
 exit	TahIni.outD2M	0,0
-exit	HahIni.outD2	0,0	35
-exit	HahIni.outD2YB	0,0	35
-exit	HahIni.outD2D	0,0	35
-exit	HahIni.outD2H	0,0	35
+exit	HahIni.outD2	0,0
+exit	HahIni.outD2YB	0,0
+exit	HahIni.outD2D	0,0
+exit	HahIni.outD2H	0,0
 exit	HahIni.outD2Y	0,0
 exit	HehDoIni.outD2Y	0,0
-exit	SadIni.outD2YB	0,0	36
-exit	HehIni.outD2YB	0,0	37
-exit	SeenIni.outD2YB	0,0	47
+exit	SadIni.outD2YB	0,0
+exit	HehIni.outD2YB	0,0
+exit	SeenIni.outD2YB	0,0
 entry	HehDoMed.inD2outT3	508,384
 exit	HehDoMed.inD2outT3	0,0
 entry	HehDoMed.inD2outD2	487,441
@@ -432,9 +432,9 @@ entry	FehxMed.inT3outT3	358,108
 exit	FehxMed.inT3outT3	0,0
 entry	AinMed	261,95
 exit	AinMed	0,0
-entry	FehxMed.inT3outT2	326,111
+entry	FehxMed.inT3outT2	326,113
 exit	FehxMed.inT3outT2	0,0
-entry	AinMed.inT3outT2	310,79	6
+entry	AinMed.inT3outT2	310,79
 exit	AinMed.inT3outT2	0,0
 entry	AinMed.inT3outT3	353,74
 exit	AinMed.inT3outT3	0,0
@@ -471,7 +471,7 @@ exit	AinIni.outD2long	0,0
 exit	AinIni.outD3	0,0
 exit	SeenIni.outD2M	0,0
 entry	SadMed.r	195,-5
-exit	SadMed.r	0,0	24
+exit	SadMed.r	0,0
 exit	SeenIni.outD2H	0,0
 exit	HehIniAF.outD2YB	0,0
 exit	SeenIni.outD2D	0,0
@@ -485,7 +485,7 @@ exit	SadIni.outD2D	0,0
 entry	HahMed	99,412
 exit	HahMed	0,0
 exit	SadIni.outD2Y	0,0
-entry	SeenMed.inT2outT2	569,216	27
+entry	SeenMed.inT2outT2	569,216
 exit	SeenMed.inT2outT2	0,0
 entry	HahMed.inD2outT3	140,387
 exit	HahMed.inD2outT3	0,0
@@ -496,19 +496,19 @@ exit	HahMed.inD2outD11	0,0
 entry	SeenMed.inT2outS1	562,200
 exit	SeenMed.inT2outS1	0,0
 entry	HahMed.inD2outD2	211,332
-exit	HahMed.inD2outD2	0,0	43
-entry	SeenMed.inT2outD1	897,252	30
+exit	HahMed.inD2outD2	0,0
+entry	SeenMed.inT2outD1	897,252
 exit	SeenMed.inT2outD1	0,0
 entry	HahMed.inD2outD2Y	154,308
 exit	HahMed.inD2outD2Y	0,0
-entry	SeenMed.inT2outD11	795,239	27
+entry	SeenMed.inT2outD11	795,239
 exit	SeenMed.inT2outD11	0,0
 exit	HehIniAF.outD2MM	0,0
 entry	SeenMed.inT2outD2H	684,188
 exit	SeenMed.inT2outD2H	0,0
-entry	SadMed.inD1outD5	257,34	12
+entry	SadMed.inD1outD5	257,34
 exit	SadMed.inD1outD5	0,0
-exit	SadIni.outD5	0,0	3
+exit	SadIni.outD5	0,0
 entry	SeenMed.inT2outD2MM	496,173
 exit	SeenMed.inT2outD2MM	0,0
 entry	HehMed.inD5outD1	696,184
@@ -518,7 +518,7 @@ exit	SeenMed.inT2outD2D	0,0
 entry	SeenMed.inT2outD2Y	569,129
 exit	SeenMed.inT2outD2Y	0,0
 entry	SeenMed.inT2outD2YB	454,64
-exit	SeenMed.inT2outD2YB	0,0	62
+exit	SeenMed.inT2outD2YB	0,0
 entry	AinMed.inT3outD5	204,119
 exit	AinMed.inT3outD5	0,0
 entry	SadMed	340,121
@@ -533,18 +533,18 @@ entry	SadMed.inD1outD1	641,103
 exit	SadMed.inD1outD1	0,0
 entry	SadMed.inD1outD11	539,70
 exit	SadMed.inD1outD11	0,0
-entry	SadMed.inD1outD2H	462,106	12
+entry	SadMed.inD1outD2H	462,106
 exit	SadMed.inD1outD2H	0,0
 entry	SadMed.inD1outD2M	442,150
 exit	SadMed.inD1outD2M	0,0
-entry	SadMed.inD1outD2MM	274,91	22
+entry	SadMed.inD1outD2MM	274,91
 exit	SadMed.inD1outD2MM	0,0
 entry	SadMed.inD1outD2D	398,57
 exit	SadMed.inD1outD2D	0,0
-entry	SadMed.inD1outD2Y	347,47	12
+entry	SadMed.inD1outD2Y	347,47
 exit	SadMed.inD1outD2Y	0,0
-entry	SadMed.inD1outD2YB	230,-23	12
-exit	SadMed.inD1outD2YB	0,0	39
+entry	SadMed.inD1outD2YB	230,-23
+exit	SadMed.inD1outD2YB	0,0
 entry	TahMed	68,36
 exit	TahMed	0,0
 entry	TahMed.inD1outT2	42,0
@@ -573,8 +573,8 @@ exit	MeemMed.inD2outD2H	0,0
 exit	HehIni.outD2M	0,0
 entry	HehMed	384,167
 exit	HehMed	0,0
-exit	HahIni.outD5	0,0	3
-exit	HehDoIni.outD5	0,0	6
+exit	HahIni.outD5	0,0
+exit	HehDoIni.outD5	0,0
 exit	HehIniAF.outT3	0,0
 exit	HahIni.outD2MM	0,0
 exit	AinIni.outD2MM	0,0
@@ -591,37 +591,37 @@ exit	HahMed.inD2outD1	0,0
 entry	HehDoMed.inD2outT2wide	393,361
 exit	HehDoMed.inD2outT2wide	0,0
 entry	SeenMed.inT2outD5	479,116
-exit	SeenMed.inT2outD5	0,0	6
-entry	SeenMed.inT2outT2short	438,125	18
+exit	SeenMed.inT2outD5	0,0
+entry	SeenMed.inT2outT2short	438,125
 exit	SeenMed.inT2outT2short	0,0
 exit	SeenIni.outD5	0,0
-entry	KafMed.HRlow	295,99	6
+entry	KafMed.HRlow	295,99
 exit	KafMed.HRlow	-1,0
 entry	HehMed.inD5outD11	568,139
 exit	HehMed.inD5outD11	0,0
 entry	HehMed.inD5outD3R	175,-16
-exit	HehMed.inD5outD3R	0,0	21
-entry	HehMed.inD5outT2	368,125	3
-exit	HehMed.inD5outT2	0,0	27
-entry	HehMed.inD5outT3	424,121	3
-exit	HehMed.inD5outT3	0,0	27
-entry	HehMed.inD5outS1	440,169	22
+exit	HehMed.inD5outD3R	0,0
+entry	HehMed.inD5outT2	368,125
+exit	HehMed.inD5outT2	0,0
+entry	HehMed.inD5outT3	424,121
+exit	HehMed.inD5outT3	0,0
+entry	HehMed.inD5outS1	440,169
 exit	HehMed.inD5outS1	0,0
-entry	HehMed.inD5outD2	468,127	19
+entry	HehMed.inD5outD2	468,127
 exit	HehMed.inD5outD2	0,0
 entry	HehMed.inD5outD2Y	406,42
 exit	HehMed.inD5outD2Y	0,0
 entry	HehMed.inD5outD2YB	239,-13
-exit	HehMed.inD5outD2YB	0,0	24
-exit	HehIni.outD5	0,0	3
+exit	HehMed.inD5outD2YB	0,0
+exit	HehIni.outD5	0,0
 exit	HehIni.outD2Y	0,0
 entry	HahMed.inD2outD5	2,349
 exit	HahMed.inD2outD5	0,0
-exit	AinIni.outD5	0,0	3
+exit	AinIni.outD5	0,0
 entry	FehxMed.inT3outD5	203,153
 exit	FehxMed.inT3outD5	0,0
 entry	HehDoMed.inD2outD5	362,423
-exit	HehDoMed.inD2outD5	0,0	6
+exit	HehDoMed.inD2outD5	0,0
 exit	HehIniAF.outD5	0,0
 exit	HehIniAF.outS1	0,0
 exit	HehIniAF	0,0
@@ -657,20 +657,20 @@ entry	MeemMed.inD2outD2	291,281
 exit	MeemMed.inD2outD2	0,0
 entry	MeemMed.inD2outD5	182,205
 exit	MeemMed.inD2outD5	0,0
-entry	MeemMed.inD2outD2YB	413,283	22
+entry	MeemMed.inD2outD2YB	413,283
 exit	MeemMed.inD2outD2YB	0,0
 entry	MeemMed.inD2outD3	73,131
 exit	MeemMed.inD2outD3	0,0
 exit	TahIni.HRlow	0,0
 entry	KafFin.HR	969,64
-entry	KafMed.HR	295,99	6
+entry	KafMed.HR	295,99
 exit	KafMed.HR	0,0
 exit	KafIni.HRoutD1	0,0
-exit	KafIni.HRoutD5	0,0	3
+exit	KafIni.HRoutD5	0,0
 entry	KafMed.HRoutT3	329,98
 exit	KafMed.HRoutT3	0,0
 entry	KafMed.outD2Y	195,-6
-exit	KafMed.outD2Y	0,0	53
+exit	KafMed.outD2Y	0,0
 entry	KafMed.outD2MD	408,-11
 exit	KafMed.outD2MD	0,0
 exit	BehxIni.outD4	0,0
@@ -685,8 +685,8 @@ exit	KafIni.outT2	0,0
 exit	KafIni.outT2N	0,0
 exit	KafIni.outT3	0,0
 exit	KafIni.outS1	0,0
-exit	KafIni.outD2Y	0,0	47
-entry	KafMed	295,99	6
+exit	KafIni.outD2Y	0,0
+entry	KafMed	295,99
 exit	KafMed	0,0
 entry	KafMed.outT2	277,72
 exit	KafMed.outT2	0,0
@@ -694,15 +694,15 @@ entry	KafMed.outT3	329,98
 exit	KafMed.outT3	0,0
 entry	KafMed.outS1	331,99
 exit	KafMed.outS1	0,0
-entry	KafMed.outD1	661,0	15
+entry	KafMed.outD1	661,0
 exit	KafMed.outD1	0,-66
-entry	KafMed.outD11	570,85	9
+entry	KafMed.outD11	570,85
 exit	KafMed.outD11	0,0
 entry	KafMed.outD2WQ	301,20
 exit	KafMed.outD2WQ	0,0
 exit	KafIni.outD1	0,0
 exit	KafIni.outD11	0,0
-entry	KafMed.HRoutD1	661,0	9
+entry	KafMed.HRoutD1	661,0
 exit	KafMed.HRoutD1	0,-66
 entry	KafMed.HRoutD2MD	408,-11
 exit	KafMed.HRoutD2MD	0,0
@@ -712,46 +712,46 @@ entry	KafMed.outD2H	506,54
 exit	KafMed.outD2H	0,0
 entry	KafMed.outD2HYB	506,54
 exit	KafMed.outD2HYB	0,0
-entry	KafMed.outD5	247,-17	12
-exit	KafMed.outD5	0,0	3
+entry	KafMed.outD5	247,-17
+exit	KafMed.outD5	0,0
 exit	KafIni.outD2MM	0,0
 entry	KafMed.outD2MM	186,80
 exit	KafMed.outD2MM	0,0
-entry	KafMed.low	295,99	6
+entry	KafMed.low	295,99
 exit	KafMed.low	0,0
 entry	KafMed.HRoutT2	277,72
 exit	KafMed.HRoutT2	0,0
 entry	KafMed.VoutD2MD	408,-11
 exit	KafMed.VoutD2MD	0,0
-exit	KafIni.outD5	0,0	3
+exit	KafIni.outD5	0,0
 entry	KafMed.HRoutD2MM	186,80
 exit	KafMed.HRoutD2MM	0,0
 entry	KafMed.HRoutD2HYB	506,54
 exit	KafMed.HRoutD2HYB	0,0
 entry	KafMed.HRoutD2WQ	301,20
 exit	KafMed.HRoutD2WQ	0,0
-entry	KafMed.HRoutD5	247,-17	12
-exit	KafMed.HRoutD5	0,0	3
+entry	KafMed.HRoutD5	247,-17
+exit	KafMed.HRoutD5	0,0
 entry	KafMed.VoutT2	277,72
 exit	KafMed.VoutT2	0,0
 entry	KafMed.VoutT3	329,98
 exit	KafMed.VoutT3	0,0
 entry	KafMed.VoutS1	331,99
 exit	KafMed.VoutS1	0,0
-entry	KafMed.VoutD1	661,0	12
+entry	KafMed.VoutD1	661,0
 exit	KafMed.VoutD1	-1,-66
-entry	KafMed.VoutD11	570,85	7
+entry	KafMed.VoutD11	570,85
 exit	KafMed.VoutD11	0,0
 entry	KafMed.VoutD2MM	186,80
 exit	KafMed.VoutD2MM	0,0
 entry	KafMed.VoutD2Y	195,-6
-exit	KafMed.VoutD2Y	0,0	49
+exit	KafMed.VoutD2Y	0,0
 entry	KafMed.VoutD2WQ	301,20
 exit	KafMed.VoutD2WQ	0,0
 entry	KafMed.VoutD4	192,-35
 exit	KafMed.VoutD4	0,0
-entry	KafMed.VoutD5	247,-17	12
-exit	KafMed.VoutD5	0,0	3
+entry	KafMed.VoutD5	247,-17
+exit	KafMed.VoutD5	0,0
 exit	KafIni.HRoutD2H	0,0
 entry	TahMed.low	68,36
 exit	TahMed.low	0,0
@@ -762,50 +762,50 @@ exit	KafMed.HRk	0,0
 exit	KafIni.HRoutT2N	0,0
 exit	KafIni.HRoutT3	0,0
 exit	KafIni.HRoutT2	0,0
-exit	GafIni.k	0,0	16
+exit	GafIni.k	0,0
 entry	GafMed.k	4,0
-exit	GafMed.k	0,0	16
-exit	GafIni	0,0	20
-exit	GafIni.outT2	0,0	20
-exit	GafIni.outT2N	0,0	20
-exit	GafIni.outT3	0,0	20
+exit	GafMed.k	0,0
+exit	GafIni	0,0
+exit	GafIni.outT2	0,0
+exit	GafIni.outT2N	0,0
+exit	GafIni.outT3	0,0
 exit	GafIni.outS1	0,0
-exit	GafIni.outD1	0,0	20
+exit	GafIni.outD1	0,0
 exit	GafIni.outD11	0,0
 exit	GafIni.outD2MM	0,0
 exit	GafIni.outD2H	0,0
-exit	GafIni.outD2Y	0,0	56
-entry	GafMed	295,99	26
+exit	GafIni.outD2Y	0,0
+entry	GafMed	295,99
 exit	GafMed	0,0
-entry	GafMed.HR	295,99	26
-exit	GafMed.HR	-1,0	20
+entry	GafMed.HR	295,99
+exit	GafMed.HR	-1,0
 entry	GafMed.outT3	329,98
-exit	GafMed.outT3	0,0	20
+exit	GafMed.outT3	0,0
 entry	GafMed.outD2MD	408,-11
 exit	GafMed.outD2MD	0,0
 entry	GafMed.outD2H	506,54
 exit	GafMed.outD2H	0,0
 entry	GafMed.outD2HYB	506,54
 exit	GafMed.outD2HYB	0,0
-entry	GafMed.outD5	247,-17	32
-exit	GafMed.outD5	0,0	23
-exit	GafIni.HRoutD5	0,0	23
-entry	GafMed.HRoutD1	661,0	32
-exit	GafMed.HRoutD1	0,-66	20
+entry	GafMed.outD5	247,-17
+exit	GafMed.outD5	0,0
+exit	GafIni.HRoutD5	0,0
+entry	GafMed.HRoutD1	661,0
+exit	GafMed.HRoutD1	0,-66
 entry	GafMed.HRoutD2MM	186,80
 exit	GafMed.HRoutD2MM	0,0
 entry	GafMed.HRoutD2WQ	301,20
 exit	GafMed.HRoutD2WQ	0,0
 entry	GafMed.VoutS1	331,99
-exit	GafMed.VoutS1	0,0	20
-entry	GafMed.VoutD11	570,85	27
+exit	GafMed.VoutS1	0,0
+entry	GafMed.VoutD11	570,85
 exit	GafMed.VoutD11	0,0
 entry	GafMed.VoutD2MM	186,80
 exit	GafMed.VoutD2MM	0,0
 entry	GafMed.VoutD4	192,-35
 exit	GafMed.VoutD4	0,0
 exit	GafIni.HRoutD2H	0,0
-exit	GafIni.HRoutT2	0,0	20
+exit	GafIni.HRoutT2	0,0
 entry	HehMed.inD5outD5	248,34
 exit	HehMed.inD5outD5	0,0
 exit	AinIni.outD2D	0,0
@@ -813,8 +813,8 @@ exit	FehxIni.outD2D	0,0
 exit	GafIni.outD2D	0,0
 exit	HehDoIni.outD2D	0,0
 exit	HehIniAF.outD2D	0,0
-exit	KafIni.outD2D	0,0	45
-exit	LamIni.outD2D	0,0	20
+exit	KafIni.outD2D	0,0
+exit	LamIni.outD2D	0,0
 exit	MeemIni.outD2D	0,0
 exit	TahIni.outD2D	0,0
 exit	AinIni.outD2H	0,0
@@ -823,7 +823,7 @@ exit	HehDoIni.outD2H	0,0
 exit	HehIniAF.outD2H	0,0
 exit	MeemIni.outD2H	0,0
 exit	HehIni.outD2D	0,0
-entry	HehMed.inD5	440,169	22
+entry	HehMed.inD5	440,169
 exit	HehMed.inD5	0,0
 entry	AinMed.inT3outT1	261,95
 exit	AinMed.inT3outT1	0,0
@@ -848,10 +848,10 @@ exit	AinMed.inT3outD2D	0,0
 entry	FehxMed.inT3outD2D	310,152
 exit	FehxMed.inT3outD2D	0,0
 entry	HahMed.inD2outD2D	211,332
-exit	HahMed.inD2outD2D	0,0	49
+exit	HahMed.inD2outD2D	0,0
 entry	HehDoMed.inD2outD2D	487,441
 exit	HehDoMed.inD2outD2D	0,0
-entry	HehMed.inD5outD2D	468,127	19
+entry	HehMed.inD5outD2D	468,127
 exit	HehMed.inD5outD2D	0,0
 entry	MeemMed.inD2outD2D	291,281
 exit	MeemMed.inD2outD2D	0,0
@@ -862,20 +862,20 @@ exit	AinMed.inT3outD2H	0,0
 entry	FehxMed.inT3outD2H	310,152
 exit	FehxMed.inT3outD2H	0,0
 entry	HahMed.inD2outD2H	211,332
-exit	HahMed.inD2outD2H	0,0	50
+exit	HahMed.inD2outD2H	0,0
 entry	HahMed.inD2outD2YB	211,332
-exit	HahMed.inD2outD2YB	0,0	50
+exit	HahMed.inD2outD2YB	0,0
 entry	HehDoMed.inD2outD2H	487,441
 exit	HehDoMed.inD2outD2H	0,0
 entry	BehxMed.inT1outT1	255,84
 exit	BehxMed.inT1outT1	0,0
 entry	BehxMed.inT1outD2WQ	263,81
 exit	BehxMed.inT1outD2WQ	0,0
-entry	BehxMed.inT1outD1	527,58	6
+entry	BehxMed.inT1outD1	527,58
 exit	BehxMed.inT1outD1	0,0
 entry	YehKashmiriFin	466,379
-entry	YehKashmiriFin.inD2alt	450,375	21
-entry	BehxMed.inT1outD11	425,77	9
+entry	YehKashmiriFin.inD2alt	450,375
+entry	BehxMed.inT1outD11	425,77
 exit	BehxMed.inT1outD11	0,0
 exit	KafIni.N	0,0
 exit	KafIni.NoutT2	0,0
@@ -889,41 +889,41 @@ entry	KafMed.NoutT2	349,114
 exit	KafMed.NoutT2	0,0
 entry	KafMed.NoutT3	341,223
 exit	KafMed.NoutT3	0,0
-entry	KafMed.NoutD1	730,323	12
+entry	KafMed.NoutD1	730,323
 exit	KafMed.NoutD1	0,0
-entry	KafMed.NoutD11	616,289	12
+entry	KafMed.NoutD11	616,289
 exit	KafMed.NoutD11	0,0
 entry	KafMed.NoutD2MD	418,110
 exit	KafMed.NoutD2MD	0,0
 entry	KafMed.NoutD2HYB	541,201
 exit	KafMed.NoutD2HYB	0,0
-entry	KafMed.NoutD2MM	362,92	20
+entry	KafMed.NoutD2MM	362,92
 exit	KafMed.NoutD2MM	0,0
-exit	GafIni.N	0,0	26
-exit	GafIni.NoutT2	0,0	23
-exit	GafIni.NoutT3	0,0	26
-exit	GafIni.NoutD1	0,0	26
+exit	GafIni.N	0,0
+exit	GafIni.NoutT2	0,0
+exit	GafIni.NoutT3	0,0
+exit	GafIni.NoutD1	0,0
 exit	GafIni.NoutD11	0,0
 exit	GafIni.NoutD2	0,0
 exit	GafIni.NoutD2H	0,0
 exit	GafIni.NoutD2MM	0,0
 entry	GafMed.NoutT2	349,114
-exit	GafMed.NoutT2	0,0	23
+exit	GafMed.NoutT2	0,0
 entry	GafMed.NoutT3	341,223
-exit	GafMed.NoutT3	0,0	26
-entry	GafMed.NoutD1	730,323	37
-exit	GafMed.NoutD1	0,0	25
-entry	GafMed.NoutD11	616,289	38
+exit	GafMed.NoutT3	0,0
+entry	GafMed.NoutD1	730,323
+exit	GafMed.NoutD1	0,0
+entry	GafMed.NoutD11	616,289
 exit	GafMed.NoutD11	0,0
 entry	GafMed.NoutD2MD	418,110
 exit	GafMed.NoutD2MD	0,0
 entry	GafMed.NoutD2HYB	541,201
 exit	GafMed.NoutD2HYB	0,0
-entry	GafMed.NoutD2MM	362,92	45
+entry	GafMed.NoutD2MM	362,92
 exit	GafMed.NoutD2MM	0,0
-exit	HahIni.outD2Hwide	0,0	40
+exit	HahIni.outD2Hwide	0,0
 entry	HahMed.inD2outD2Hwide	313,363
-exit	HahMed.inD2outD2Hwide	0,0	51
+exit	HahMed.inD2outD2Hwide	0,0
 exit	HehDoIni.outD2Hwide	0,0
 entry	HehDoMed.inD2outD2Hwide	548,440
 exit	HehDoMed.inD2outD2Hwide	0,0
@@ -934,11 +934,199 @@ exit	FehxMed.inT3outD2Hwide	0,0
 exit	AinIni.outD2Hwide	0,0
 entry	AinMed.inT3outD2Hwide	481,129
 exit	AinMed.inT3outD2Hwide	0,0
+entry	YehRohingyaFin	437,38
+exit	GafInvIni.HRk	0,0
+entry	GafInvMed.V	295,99
+exit	GafInvMed.V	0,0
+exit	GafInvIni.HRoutD2	0,0
+exit	GafInvIni.outD2	0,0
+exit	GafInvIni.outD2YB	0,0
+entry	GafInvMed.Vlow	295,99
+exit	GafInvMed.Vlow	0,0
+entry	GafInvMed.VoutD5	247,-17
+exit	GafInvMed.VoutD5	0,0
+entry	GafInvMed.outS1	331,99
+exit	GafInvMed.outS1	0,0
+entry	GafInvMed.outT2	277,72
+exit	GafInvMed.outT2	0,0
+entry	GafInvMed.outD11	570,85
+exit	GafInvMed.outD11	0,0
+entry	GafInvMed.outD2MM	186,80
+exit	GafInvMed.outD2MM	0,0
+entry	GafInvMed.outD2Y	195,-6
+exit	GafInvMed.outD2Y	0,0
+entry	GafInvMed.outD4	192,-35
+exit	GafInvMed.outD4	0,0
+exit	GafInvIni.HRlow	0,0
+entry	GafInvMed.HRoutT3	329,98
+exit	GafInvMed.HRoutT3	0,0
+entry	GafInvMed.HRoutD2MD	408,-11
+exit	GafInvMed.HRoutD2MD	0,0
+entry	GafInvMed.HRoutD2HYB	506,54
+exit	GafInvMed.HRoutD2HYB	0,0
+entry	GafInvMed.HRoutD5	247,-17
+exit	GafInvMed.HRoutD5	0,0
+entry	GafInvMed.VoutT2	277,72
+exit	GafInvMed.VoutT2	0,0
+entry	GafInvFin.HR	969,64
+entry	GafInvMed.VoutD2HYB	506,54
+exit	GafInvMed.VoutD2HYB	0,0
+entry	GafInvMed.HRk	4,0
+exit	GafInvMed.HRk	0,0
+entry	GafInvMed.VoutD2WQ	301,20
+exit	GafInvMed.VoutD2WQ	0,0
+entry	GafInvMed.VoutD1	661,0
+exit	GafInvMed.VoutD1	-1,-66
+exit	GafInvIni.HRoutT3	0,0
+exit	GafInvIni.outD5	0,0
+entry	GafInvMed.low	295,99
+exit	GafInvMed.low	0,0
+entry	GafInvMed.HRlow	295,99
+exit	GafInvMed.HRlow	-1,0
+entry	GafInvMed.outD1	661,0
+exit	GafInvMed.outD1	0,-66
+entry	GafInvMed.outD2WQ	301,20
+exit	GafInvMed.outD2WQ	0,0
+exit	GafInvIni.HRoutD1	0,0
+entry	GafInvMed.HRoutT2	277,72
+exit	GafInvMed.HRoutT2	0,0
+entry	GafInvMed.VoutT3	329,98
+exit	GafInvMed.VoutT3	0,0
+entry	GafInvMed.VoutD2MD	408,-11
+exit	GafInvMed.VoutD2MD	0,0
+entry	GafInvMed.VoutD2Y	195,-6
+exit	GafInvMed.VoutD2Y	0,0
+entry	GafInvFin	957,64
+entry	GafInvFin.V	957,64
+exit	GafInvIni.HRoutT2N	0,0
+exit	GafInvIni.k	0,0
+entry	GafInvMed.k	4,0
+exit	GafInvMed.k	0,0
+exit	GafInvIni	0,0
+exit	GafInvIni.outT2	0,0
+exit	GafInvIni.outT2N	0,0
+exit	GafInvIni.outT3	0,0
+exit	GafInvIni.outS1	0,0
+exit	GafInvIni.outD1	0,0
+exit	GafInvIni.outD11	0,0
+exit	GafInvIni.outD2MM	0,0
+exit	GafInvIni.outD2H	0,0
+exit	GafInvIni.outD2Y	0,0
+entry	GafInvMed	295,99
+exit	GafInvMed	0,0
+entry	GafInvMed.HR	295,99
+exit	GafInvMed.HR	0,0
+entry	GafInvMed.outT3	329,98
+exit	GafInvMed.outT3	0,0
+entry	GafInvMed.outD2MD	408,-11
+exit	GafInvMed.outD2MD	0,0
+entry	GafInvMed.outD2H	506,54
+exit	GafInvMed.outD2H	0,0
+entry	GafInvMed.outD2HYB	506,54
+exit	GafInvMed.outD2HYB	0,0
+entry	GafInvMed.outD5	247,-17
+exit	GafInvMed.outD5	0,0
+exit	GafInvIni.HRoutD5	0,0
+entry	GafInvMed.HRoutD1	661,0
+exit	GafInvMed.HRoutD1	0,-66
+entry	GafInvMed.HRoutD2MM	186,80
+exit	GafInvMed.HRoutD2MM	0,0
+entry	GafInvMed.HRoutD2WQ	301,20
+exit	GafInvMed.HRoutD2WQ	0,0
+entry	GafInvMed.VoutS1	331,99
+exit	GafInvMed.VoutS1	0,0
+entry	GafInvMed.VoutD11	570,85
+exit	GafInvMed.VoutD11	0,0
+entry	GafInvMed.VoutD2MM	186,80
+exit	GafInvMed.VoutD2MM	0,0
+entry	GafInvMed.VoutD4	192,-35
+exit	GafInvMed.VoutD4	0,0
+exit	GafInvIni.HRoutD2H	0,0
+exit	GafInvIni.HRoutT2	0,0
+exit	GafInvIni.outD2D	0,0
+exit	GafInvIni.N	0,0
+exit	GafInvIni.NoutT2	0,0
+exit	GafInvIni.NoutT3	0,0
+exit	GafInvIni.NoutD1	0,0
+exit	GafInvIni.NoutD11	0,0
+exit	GafInvIni.NoutD2	0,0
+exit	GafInvIni.NoutD2H	0,0
+exit	GafInvIni.NoutD2MM	0,0
+entry	GafInvMed.NoutT2	349,114
+exit	GafInvMed.NoutT2	0,0
+entry	GafInvMed.NoutT3	341,223
+exit	GafInvMed.NoutT3	0,0
+entry	GafInvMed.NoutD1	730,323
+exit	GafInvMed.NoutD1	0,0
+entry	GafInvMed.NoutD11	616,289
+exit	GafInvMed.NoutD11	0,0
+entry	GafInvMed.NoutD2MD	418,110
+exit	GafInvMed.NoutD2MD	0,0
+entry	GafInvMed.NoutD2HYB	541,201
+exit	GafInvMed.NoutD2HYB	0,0
+entry	GafInvMed.NoutD2MM	362,92
+exit	GafInvMed.NoutD2MM	0,0
+entry	RehLoopFin	695,147
+entry	RehLoopFin.inD4B	507,377
+entry	RehLoopFin.inD3	813,248
+entry	RehLoopFin.postHeh	703,147
+entry	RehLoopFin.inD4	535,400
+entry	RehLoopFin.inD3MM	703,147
+entry	WawStraightFin	124,192
+entry	WawStraightFin.cut	218,207
+entry	WawStraightFin.inD2	275,323
+entry	WawStraightFin.inD2alt	162,237
+entry	BehxMed.inT2outT3W	442,193
+exit	BehxMed.inT2outT3W	0,0
 
 lookup end
 
 
-lookup	1	context
+lookup	1	chained
+
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+MarkAttachmentType	1
+
+backtrackclass definition begin
+AlefSep	1
+AlefFin	1
+AlefSep.LA	1
+Madda.shorterNS	2
+WaslaNS	3
+HamzaAboveNS	3
+AlefSuperiorNS	3
+DammaNS	3
+DammatanNS	3
+FathaNS	3
+FathatanNS	3
+uni08E4_NS	3
+uni08E5_NS	3
+uni08E7_NS	3
+uni08E8_NS	3
+uni08F0_NS	3
+uni08F1_NS	3
+uni08F3_NS	3
+uni08F4_NS	3
+uni08F5_NS	3
+class definition end
+
+class definition begin
+AlefSep	1
+Madda.shorterNS	2
+MaddaNS	4
+class definition end
+
+class-chain	2, 1	1, 2		1, 19
+class-chain	3, 2, 1	1, 2		1, 19
+class-chain	3, 1	1, 4		1, 19
+
+lookup end
+
+
+lookup	2	context
 
 RightToLeft	no
 IgnoreBaseGlyphs	no
@@ -1200,28 +1388,60 @@ GafIni.NoutD11	20
 GafIni.NoutD2	20
 GafIni.NoutD2H	20
 GafIni.NoutD2MM	20
+GafInvIni.HRk	20
+GafInvSep	20
+GafInvIni.HRoutD2	20
+GafInvIni.outD2	20
+GafInvIni.HRlow	20
+GafInvIni.HRoutT3	20
+GafInvIni.outD5	20
+GafInvIni.HRoutD1	20
+GafInvIni.HRoutT2N	20
+GafInvIni.k	20
+GafInvIni	20
+GafInvIni.outT2	20
+GafInvIni.outT2N	20
+GafInvIni.outT3	20
+GafInvIni.outS1	20
+GafInvIni.outD1	20
+GafInvIni.outD11	20
+GafInvIni.outD2MM	20
+GafInvIni.outD2H	20
+GafInvIni.outD2Y	20
+GafInvIni.HRoutD5	20
+GafInvIni.HRoutD2H	20
+GafInvIni.HRoutT2	20
+GafInvIni.outD2D	20
+GafInvIni.N	20
+GafInvIni.NoutT2	20
+GafInvIni.NoutT3	20
+GafInvIni.NoutD1	20
+GafInvIni.NoutD11	20
+GafInvIni.NoutD2	20
+GafInvIni.NoutD2H	20
+GafInvIni.NoutD2MM	20
 class definition end
 
-class	20, 1	1, 18
-class	20, 2	1, 19
-class	20, 3	1, 20
-class	20, 4	1, 21
-class	20, 5	1, 22
-class	20, 6	1, 23
-class	20, 7	1, 24
-class	20, 8	1, 25
-class	20, 9	1, 26
-class	20, 10	1, 27
-class	20, 11	1, 28
-class	20, 12	1, 29
-class	20, 13	1, 30
-class	20, 14	1, 31
-class	20, 15	1, 32
+class	20, 1	1, 19
+class	20, 2	1, 20
+class	20, 3	1, 21
+class	20, 4	1, 22
+class	20, 5	1, 23
+class	20, 6	1, 24
+class	20, 7	1, 25
+class	20, 8	1, 26
+class	20, 9	1, 27
+class	20, 10	1, 28
+class	20, 11	1, 29
+class	20, 12	1, 30
+class	20, 13	1, 31
+class	20, 14	1, 32
+class	20, 15	1, 33
 
 lookup end
 
 
-lookup	2	mark to base
+lookup	3	mark to base
 
 RightToLeft	no
 IgnoreBaseGlyphs	no
@@ -1257,14 +1477,10 @@ mark	SukunHahNS	0	0,969
 mark	SukunJazmNS	0	0,975
 mark	SukunNS	0	0,966
 mark	SukunZeroNS	0	0,954
-mark	TahSmallNS	0	0,934
 mark	Tah2DotsAboveNS	0	0,911
 mark	TakhallusNS	0	0,995
 mark	Small4UrduAboveNS	0	0,560
-mark	CircumArabicNS	0	0,929
 mark	Fatha2dotsNS	0	0,940
-mark	SevenSmallDotNS	0	0,920
-mark	SevenSmallNS	0	4,1133
 mark	TahDotAboveNS	0	0,925
 mark	ShortVwlNS	0	30,804
 mark	Small2AboveNS	0	0,560
@@ -1272,6 +1488,34 @@ mark	Small3AboveNS	0	0,560
 mark	ZwarakayNS	0	0,988
 mark	DammaRevNS	0	10,958
 mark	WavyHamzaAboveNS	0	0,912
+mark	uni08E3_NS	0	-2,958
+mark	ArSevenAboveNS	0	0,929
+mark	ArEightAboveNS	0	0,929
+mark	uni08E4_NS	0	0,958
+mark	uni08E5_NS	0	-2,958
+mark	uni08E7_NS	0	0,958
+mark	uni08E8_NS	0	0,967
+mark	uni08EA_NS	0	0,920
+mark	uni08EB_NS	0	0,920
+mark	uni08EC_NS	0	0,920
+mark	uni08F0_NS	0	0,958
+mark	uni08F1_NS	0	0,967
+mark	uni08F3_NS	0	-2,958
+mark	uni08F4_NS	0	0,958
+mark	uni08F5_NS	0	0,958
+mark	uni08F7_NS	0	-18,958
+mark	uni08F8_NS	0	-18,958
+mark	uni08FB_NS	0	-18,958
+mark	uni08FC_NS	0	-18,958
+mark	uni08FD_NS	0	-18,958
+mark	uni08FE_NS	0	-18,958
+mark	OneDotSevenAboveNS	0	0,920
+mark	SmallMeemAboveNS	0	0,934
+mark	SmallNoonAboveNS	0	0,934
+mark	SmallTahSevenAboveNS	0	0,922
+mark	SmallTehAboveNS	0	0,922
+mark	TahSmallAboveNS	0	0,934
+mark	TwoDotsSevenAboveNS	0	0,922
 base	uni25CC	0	391,646
 base	FehxIni.outT2N	0	153,772
 base	AlefSep	0	211,997
@@ -1905,11 +2149,110 @@ base	FehxIni.outD2Hwide	0	321,780
 base	FehxMed.inT3outD2Hwide	0	405,724
 base	AinIni.outD2Hwide	0	342,691
 base	AinMed.inT3outD2Hwide	0	372,591
+base	YehRohingyaFin	0	390,533
+base	YehRohingyaSep	0	390,533
+base	GafInvIni.HRk	0	397,907
+base	GafInvMed.V	0	354,1355
+base	GafInvSep	0	350,741
+base	GafInvIni.HRoutD2	0	245,1025
+base	GafInvIni.outD2	0	395,1108
+base	GafInvIni.outD2YB	0	395,1108
+base	GafInvMed.Vlow	0	377,1362
+base	GafInvMed.VoutD5	0	324,1295
+base	GafInvMed.outS1	0	426,1337
+base	GafInvMed.outT2	0	373,1310
+base	GafInvMed.outD11	0	666,1325
+base	GafInvMed.outD2MM	0	282,1317
+base	GafInvMed.outD2Y	0	290,1232
+base	GafInvMed.outD4	0	285,1204
+base	GafInvIni.HRlow	0	710,1361
+base	GafInvMed.HRoutT3	0	413,1196
+base	GafInvMed.HRoutD2MD	0	494,1086
+base	GafInvMed.HRoutD2HYB	0	673,1172
+base	GafInvMed.HRoutD5	0	330,1081
+base	GafInvMed.VoutT2	0	354,1386
+base	GafInvFin.HR	0	404,545
+base	GafInvMed.VoutD2HYB	0	582,1367
+base	GafInvMed.HRk	0	397,907
+base	GafInvMed.VoutD2WQ	0	426,1330
+base	GafInvMed.VoutD1	0	754,1314
+base	GafInvIni.HRoutT3	0	408,1108
+base	GafInvIni.outD5	0	328,1192
+base	GafInvMed.low	0	463,1246
+base	GafInvMed.HRlow	0	710,1361
+base	GafInvMed.outD1	0	825,1253
+base	GafInvMed.outD2WQ	0	395,1260
+base	GafInvIni.HRoutD1	0	756,1159
+base	GafInvMed.HRoutT2	0	362,1170
+base	GafInvMed.VoutT3	0	406,1410
+base	GafInvMed.VoutD2MD	0	485,1302
+base	GafInvMed.VoutD2Y	0	303,1299
+base	GafInvFin	0	318,753
+base	GafInvFin.V	0	324,701
+base	GafInvIni.HRoutT2N	0	367,1097
+base	GafInvIni.k	0	357,1125
+base	GafInvMed.k	0	357,1125
+base	GafInvIni	0	387,1333
+base	GafInvIni.outT2	0	327,1254
+base	GafInvIni.outT2N	0	374,1253
+base	GafInvIni.outT3	0	422,1242
+base	GafInvIni.outS1	0	421,1331
+base	GafInvIni.outD1	0	759,1312
+base	GafInvIni.outD11	0	645,1279
+base	GafInvIni.outD2MM	0	222,1056
+base	GafInvIni.outD2H	0	522,1274
+base	GafInvIni.outD2Y	0	261,1116
+base	GafInvMed	0	389,1336
+base	GafInvMed.HR	0	665,1279
+base	GafInvMed.outT3	0	423,1336
+base	GafInvMed.outD2MD	0	504,1227
+base	GafInvMed.outD2H	0	702,1298
+base	GafInvMed.outD2HYB	0	702,1298
+base	GafInvMed.outD5	0	439,1240
+base	GafInvIni.HRoutD5	0	379,1096
+base	GafInvMed.HRoutD1	0	747,1096
+base	GafInvMed.HRoutD2MM	0	340,1177
+base	GafInvMed.HRoutD2WQ	0	487,1130
+base	GafInvMed.VoutS1	0	407,1412
+base	GafInvMed.VoutD11	0	645,1398
+base	GafInvMed.VoutD2MM	0	261,1393
+base	GafInvMed.VoutD4	0	268,1279
+base	GafInvIni.HRoutD2H	0	515,1127
+base	GafInvIni.HRoutT2	0	322,1103
+base	GafInvIni.outD2D	0	395,1108
+base	GafInvIni.N	0	367,1021
+base	GafInvIni.NoutT2	0	287,915
+base	GafInvIni.NoutT3	0	279,1023
+base	GafInvIni.NoutD1	0	667,1123
+base	GafInvIni.NoutD11	0	553,1089
+base	GafInvIni.NoutD2	0	355,879
+base	GafInvIni.NoutD2H	0	520,976
+base	GafInvIni.NoutD2MM	0	299,861
+base	GafInvMed.NoutT2	0	287,916
+base	GafInvMed.NoutT3	0	279,1024
+base	GafInvMed.NoutD1	0	667,1123
+base	GafInvMed.NoutD11	0	553,1089
+base	GafInvMed.NoutD2MD	0	355,879
+base	GafInvMed.NoutD2HYB	0	520,976
+base	GafInvMed.NoutD2MM	0	299,861
+base	RehLoopSep	0	314,645
+base	RehLoopFin	0	167,406
+base	RehLoopFin.inD4B	0	270,609
+base	RehLoopFin.inD3	0	208,462
+base	RehLoopFin.postHeh	0	151,370
+base	RehLoopFin.inD4	0	158,478
+base	RehLoopFin.inD3MM	0	175,366
+base	WawStraightSep	0	216,631
+base	WawStraightFin	0	177,631
+base	WawStraightFin.cut	0	191,631
+base	WawStraightFin.inD2	0	191,631
+base	WawStraightFin.inD2alt	0	204,646
+base	BehxMed.inT2outT3W	0	270,540
 
 lookup end
 
 
-lookup	3	mark to base
+lookup	4	mark to base
 
 RightToLeft	no
 IgnoreBaseGlyphs	no
@@ -1945,22 +2288,44 @@ mark	SukunAltNS	0	0,966
 mark	SukunZeroAltNS	0	0,954
 mark	TahSmallAltNS	0	0,934
 mark	TakhallusAltNS	0	0,995
-mark	CircumArabicAltNS	0	-1,970
 mark	Fatha2dotsAltNS	0	0,940
 mark	FourDotsAboveAltNS	0	129,106
-mark	SevenSmallDotAltNS	0	0,920
 mark	TahDotAboveAltNS	0	0,925
 mark	ShortVwlAltNS	0	30,804
 mark	Small2AboveAltNS	0	0,560
-mark	Small2AboveNS	0	144,852
 mark	Small3AboveAltNS	0	0,560
-mark	Small3AboveNS	0	144,852
 mark	Small4UrduAboveAltNS	0	0,560
 mark	TwoDotsVertAboveAltNS	0	118,106
 mark	ZwarakayAltNS	0	0,988
 mark	ThreeDotsDownAboveAltNS	0	0,921
 mark	DammaRevAltNS	0	10,958
 mark	YBc2	0	0,0
+mark	uni08E4_AltNS	0	0,958
+mark	uni08E5_AltNS	0	-2,958
+mark	uni08E7_AltNS	0	0,958
+mark	uni08E8_AltNS	0	0,967
+mark	uni08EA_AltNS	0	0,920
+mark	uni08EB_AltNS	0	0,920
+mark	uni08EC_AltNS	0	0,920
+mark	uni08F0_AltNS	0	0,958
+mark	uni08F1_AltNS	0	0,967
+mark	uni08F3_AltNS	0	-2,958
+mark	uni08F4_AltNS	0	0,958
+mark	uni08F5_AltNS	0	0,958
+mark	uni08F7_AltNS	0	-18,958
+mark	uni08F8_AltNS	0	-18,958
+mark	uni08FB_AltNS	0	-18,958
+mark	uni08FC_AltNS	0	-18,958
+mark	uni08FD_AltNS	0	-18,958
+mark	uni08FE_AltNS	0	-18,958
+mark	ArSevenAboveAltNS	0	0,929
+mark	ArEightAboveAltNS	0	0,929
+mark	OneDotSevenAboveAltNS	0	0,920
+mark	SmallMeemAboveAltNS	0	0,934
+mark	SmallNoonAboveAltNS	0	0,950
+mark	SmallTehAboveAltNS	0	0,922
+mark	SmallTahSevenAboveAltNS	0	0,934
+mark	TwoDotsSevenAboveAltNS	0	0,922
 base	uni25CC	0	408,655
 base	AlefSep	0	186,1059
 base	AlefFin	0	206,1059
@@ -2081,11 +2446,18 @@ base	FehxMed.inT3outT1	0	152,760
 base	HahMed.inD2outT1	0	134,819
 base	HehMed.inD5outD2D	0	232,762
 base	TahMed.inD1outD2D	0	307,1016
+base	GafInvMed.low	0	350,1496
+base	GafInvIni.k	0	423,1448
+base	GafInvMed.k	0	423,1448
+base	RehLoopSep	0	192,646
+base	RehLoopFin.inD4B	0	164,609
+base	WawStraightSep	0	206,690
+base	WawStraightFin.inD2alt	0	137,645
 
 lookup end
 
 
-lookup	4	mark to base
+lookup	5	mark to base
 
 RightToLeft	no
 IgnoreBaseGlyphs	no
@@ -2104,24 +2476,24 @@ mark	KasraNS	0	0,-82
 mark	KasratanNS	0	0,-82
 mark	TahSmallBelowNS	0	0,-151
 mark	Tah2DotsBelowNS	0	0,-159
-mark	AlefInferiorYB	0	28,-8
-mark	HamzaBelowYB	0	0,-140
-mark	KasraYB	0	0,-82
-mark	KasratanYB	0	0,-82
-mark	OneDotBelowYB	0	0,-99
-mark	ThreeDotsDownBelowYB	0	0,-98
-mark	TwoDotsBelowYB	0	0,-99
 mark	HehCommaNS	0	157,-159
-mark	HehCommaYB	0	128,-250
-mark	FourDotsBelowYB	0	130,-122
-mark	WavyHamzaBelowYB	0	0,-83
 mark	WavyHamzaBelowNS	0	0,-178
-mark	Small4UrduBelowYB	0	0,-180
-mark	TwoDotsVertBelowYB	0	118,-98
-mark	HamzaBelowAF_YB	0	0,-173
-mark	Tah2DotsBelowYB	0	0,-159
-mark	TahSmallBelowYB	0	0,-151
 mark	Small4UrduBelowNS	0	0,-180
+mark	uni08E3_NS	0	0,-82
+mark	uni08E6_NS	0	0,-82
+mark	uni08E9_NS	0	0,-82
+mark	uni08ED_NS	0	0,-82
+mark	uni08EE_NS	0	0,-82
+mark	uni08EF_NS	0	0,-82
+mark	uni08F2_NS	0	0,-82
+mark	uni08F6_NS	0	0,-82
+mark	uni08F9_NS	0	0,-99
+mark	uni08FA_NS	0	0,-99
+mark	ArEightBelowNS	0	0,-82
+mark	ArSevenBelowNS	0	0,-99
+mark	ThreeDotsFlatBelowNS	0	0,-99
+mark	ThreeDotsUpBelowNS	0	0,-98
+mark	RingDistNS	0	0,-99
 base	uni25CC	0	391,-57
 base	FehxIni.outT2N	0	106,-462
 base	AlefSep	0	103,-59
@@ -2300,7 +2672,7 @@ base	BehxMed.inT2outT1wide	0	262,-171
 base	SeenMed	0	352,-157
 base	BehxMed.inT2outD5	0	135,-276
 base	MeemMed	0	240,-53
-base	AinMed.inT3outD2MM	0	267,-136
+base	AinMed.inT3outD2MM	0	175,-260
 base	LamIni.outT2	0	72,-207
 base	LamIni	0	132,-171
 base	LamIni.outT3	0	156,-275
@@ -2308,7 +2680,7 @@ base	LamIni.outD2	0	157,-417
 base	LamIni.outD2YB	0	95,-672
 base	LamIni.outD11	0	386,-193
 base	LamMed.outD11	0	416,-217
-base	KafIni.outD2	0	61,-325
+base	KafIni.outD2	0	61,-370
 base	KafIni.outD2YB	0	74,-671
 base	KafMed.k	0	114,-266
 base	KafMed.V	0	199,-187
@@ -2444,7 +2816,7 @@ base	FehxMed.inT3outS1	0	229,-215
 base	AinMed.inT3outS1	0	229,-215
 base	FehxMed.inT3outT3	0	316,-110
 base	AinMed	0	208,-165
-base	FehxMed.inT3outT2	0	278,-171
+base	FehxMed.inT3outT2	0	240,-184
 base	AinMed.inT3outT2	0	258,-185
 base	AinMed.inT3outT3	0	314,-108
 base	AinMed.inT3outD3	0	90,-249
@@ -2534,7 +2906,7 @@ base	AinIni.outD2MM	0	301,-70
 base	HehDoIni.outD2MM	0	301,-121
 base	HehIni.outD2MM	0	238,8
 base	HehDoMed.inD2outD2MM	0	299,-119
-base	FehxMed.inT3outD2MM	0	259,-148
+base	FehxMed.inT3outD2MM	0	259,-240
 base	HahMed.inD2outS1	0	314,-150
 base	HahMed.inD2outD1	0	639,-79
 base	HehDoMed.inD2outT2wide	0	384,-134
@@ -2588,7 +2960,7 @@ base	KafIni.HRoutD1	0	499,-140
 base	KafIni.HRoutD5	0	168,-184
 base	KafMed.HRoutT3	0	231,-189
 base	KafMed.outD2Y	0	92,-751
-base	KafMed.outD2MD	0	312,-297
+base	KafMed.outD2MD	0	270,-340
 base	BehxIni.outD4	0	12,-412
 base	KafMed.outD4	0	94,-407
 base	SeenIni.outT2short	0	270,-203
@@ -2616,8 +2988,8 @@ base	KafMed.VoutD2HYB	0	460,-353
 base	KafMed.outD2H	0	340,-416
 base	KafMed.outD2HYB	0	305,-380
 base	KafMed.outD5	0	165,-416
-base	KafIni.outD2MM	0	153,-277
-base	KafMed.outD2MM	0	145,-259
+base	KafIni.outD2MM	0	153,-350
+base	KafMed.outD2MM	0	100,-400
 base	KafMed.low	0	159,-218
 base	KafMed.HRoutT2	0	181,-212
 base	KafMed.VoutD2MD	0	313,-297
@@ -2694,7 +3066,7 @@ base	FehxMed.inT3outT1	0	165,-187
 base	SadMed.inD1outT1	0	429,-112
 base	TahMed.inD1outT1	0	281,-210
 base	HahMed.inD2outT1	0	236,-176
-base	MeemMed.inD2outT1	0	265,-218
+base	MeemMed.inD2outT1	0	150,-200
 base	HehMed.inD5outT1	0	266,-79
 base	HehDoMed.inD2outT1	0	307,-211
 base	SeenMed.inT2outT1	0	352,-157
@@ -2757,11 +3129,110 @@ base	FehxIni.outD2Hwide	0	357,-142
 base	FehxMed.inT3outD2Hwide	0	357,-142
 base	AinIni.outD2Hwide	0	392,-99
 base	AinMed.inT3outD2Hwide	0	388,-99
+base	YehRohingyaFin	0	274,-350
+base	YehRohingyaSep	0	350,-370
+base	GafInvIni.HRk	0	41,-264
+base	GafInvMed.V	0	199,-187
+base	GafInvSep	0	471,-267
+base	GafInvIni.HRoutD2	0	141,-253
+base	GafInvIni.outD2	0	61,-370
+base	GafInvIni.outD2YB	0	74,-671
+base	GafInvMed.Vlow	0	160,-219
+base	GafInvMed.VoutD5	0	150,-302
+base	GafInvMed.outS1	0	199,-188
+base	GafInvMed.outT2	0	230,-180
+base	GafInvMed.outD11	0	415,-216
+base	GafInvMed.outD2MM	0	145,-259
+base	GafInvMed.outD2Y	0	92,-751
+base	GafInvMed.outD4	0	94,-407
+base	GafInvIni.HRlow	0	176,-172
+base	GafInvMed.HRoutT3	0	231,-189
+base	GafInvMed.HRoutD2MD	0	312,-295
+base	GafInvMed.HRoutD2HYB	0	458,-284
+base	GafInvMed.HRoutD5	0	151,-302
+base	GafInvMed.VoutT2	0	182,-212
+base	GafInvFin.HR	0	470,-232
+base	GafInvMed.VoutD2HYB	0	460,-353
+base	GafInvMed.HRk	0	41,-264
+base	GafInvMed.VoutD2WQ	0	204,-264
+base	GafInvMed.VoutD1	0	530,-327
+base	GafInvIni.HRoutT3	0	156,-276
+base	GafInvIni.outD5	0	168,-184
+base	GafInvMed.low	0	159,-218
+base	GafInvMed.HRlow	0	160,-221
+base	GafInvMed.outD1	0	530,-328
+base	GafInvMed.outD2WQ	0	204,-266
+base	GafInvIni.HRoutD1	0	499,-140
+base	GafInvMed.HRoutT2	0	181,-212
+base	GafInvMed.VoutT3	0	231,-188
+base	GafInvMed.VoutD2MD	0	313,-297
+base	GafInvMed.VoutD2Y	0	93,-750
+base	GafInvFin	0	475,-231
+base	GafInvFin.V	0	471,-232
+base	GafInvIni.HRoutT2N	0	104,-461
+base	GafInvIni.k	0	114,-266
+base	GafInvMed.k	0	114,-266
+base	GafInvIni	0	133,-171
+base	GafInvIni.outT2	0	225,-109
+base	GafInvIni.outT2N	0	105,-460
+base	GafInvIni.outT3	0	156,-274
+base	GafInvIni.outS1	0	239,-147
+base	GafInvIni.outD1	0	500,-141
+base	GafInvIni.outD11	0	384,-193
+base	GafInvIni.outD2MM	0	153,-350
+base	GafInvIni.outD2H	0	453,-58
+base	GafInvIni.outD2Y	0	182,-677
+base	GafInvMed	0	244,-163
+base	GafInvMed.HR	0	197,-185
+base	GafInvMed.outT3	0	233,-187
+base	GafInvMed.outD2MD	0	312,-297
+base	GafInvMed.outD2H	0	340,-416
+base	GafInvMed.outD2HYB	0	305,-380
+base	GafInvMed.outD5	0	165,-416
+base	GafInvIni.HRoutD5	0	168,-184
+base	GafInvMed.HRoutD1	0	529,-327
+base	GafInvMed.HRoutD2MM	0	145,-258
+base	GafInvMed.HRoutD2WQ	0	205,-264
+base	GafInvMed.VoutS1	0	235,-187
+base	GafInvMed.VoutD11	0	417,-218
+base	GafInvMed.VoutD2MM	0	145,-257
+base	GafInvMed.VoutD4	0	96,-320
+base	GafInvIni.HRoutD2H	0	479,-205
+base	GafInvIni.HRoutT2	0	72,-208
+base	GafInvIni.outD2D	0	109,-374
+base	GafInvIni.N	0	133,-171
+base	GafInvIni.NoutT2	0	72,-207
+base	GafInvIni.NoutT3	0	156,-274
+base	GafInvIni.NoutD1	0	500,-141
+base	GafInvIni.NoutD11	0	384,-193
+base	GafInvIni.NoutD2	0	158,-416
+base	GafInvIni.NoutD2H	0	479,-207
+base	GafInvIni.NoutD2MM	0	153,-277
+base	GafInvMed.NoutT2	0	175,-205
+base	GafInvMed.NoutT3	0	170,-269
+base	GafInvMed.NoutD1	0	500,-141
+base	GafInvMed.NoutD11	0	384,-193
+base	GafInvMed.NoutD2MD	0	245,-417
+base	GafInvMed.NoutD2HYB	0	479,-207
+base	GafInvMed.NoutD2MM	0	198,-277
+base	RehLoopSep	0	229,-249
+base	RehLoopFin	0	36,-461
+base	RehLoopFin.inD4B	0	143,-187
+base	RehLoopFin.inD3	0	45,-457
+base	RehLoopFin.postHeh	0	17,-460
+base	RehLoopFin.inD4	0	150,-190
+base	RehLoopFin.inD3MM	0	26,-478
+base	WawStraightSep	0	164,-200
+base	WawStraightFin	0	129,-200
+base	WawStraightFin.cut	0	129,-200
+base	WawStraightFin.inD2	0	129,-200
+base	WawStraightFin.inD2alt	0	182,-288
+base	BehxMed.inT2outT3W	0	320,-90
 
 lookup end
 
 
-lookup	5	mark to base
+lookup	6	mark to base
 
 RightToLeft	no
 IgnoreBaseGlyphs	no
@@ -2783,6 +3254,22 @@ mark	Small4UrduBelowAltNS	0	0,-180
 mark	TwoDotsVertBelowAltNS	0	118,-98
 mark	Tah2DotsBelowAltNS	0	0,-159
 mark	YBc1	0	0,0
+mark	uni08E3_AltNS	0	0,-82
+mark	uni08E6_AltNS	0	0,-82
+mark	uni08E9_AltNS	0	0,-82
+mark	uni08ED_AltNS	0	0,-82
+mark	uni08EE_AltNS	0	0,-82
+mark	uni08EF_AltNS	0	0,-82
+mark	uni08F2_AltNS	0	0,-82
+mark	uni08F6_AltNS	0	0,-82
+mark	uni08F9_AltNS	0	0,-99
+mark	uni08FA_AltNS	0	0,-99
+mark	ArSevenBelowAltNS	0	0,-99
+mark	ThreeDotsFlatBelowAltNS	0	0,-99
+mark	ThreeDotsUpBelowAltNS	0	0,-98
+mark	RingDistAltNS	0	0,-99
+mark	ArEightBelowAltNS	0	0,-82
+mark	TahSmallBelowAltNS	0	0,-151
 base	uni25CC	0	408,-65
 base	SadSep	0	972,32
 base	YehBarreeFin_5	0	659,-291
@@ -2901,19 +3388,42 @@ base	GafIni.NoutT2	0	225,-109
 base	GafIni.NoutT3	0	254,-103
 base	GafMed.NoutT2	0	225,-109
 base	GafMed.NoutT3	0	254,-103
+base	GafInvIni.HRk	0	229,-259
+base	GafInvMed.Vlow	0	227,-351
+base	GafInvMed.outT2	0	230,-605
+base	GafInvMed.HRoutD2HYB	0	403,-471
+base	GafInvMed.VoutT2	0	232,-448
+base	GafInvIni.HRoutT3	0	254,-102
+base	GafInvMed.low	0	205,-355
+base	GafInvMed.HRlow	0	205,-355
+base	GafInvMed.HRoutT2	0	230,-449
+base	GafInvIni.k	0	230,-261
+base	GafInvMed.k	0	81,-416
+base	GafInvIni	0	220,-77
+base	GafInvIni.outT2	0	72,-207
+base	GafInvIni.outT3	0	254,-103
+base	GafInvMed	0	241,-594
+base	GafInvMed.outT3	0	184,-100
+base	GafInvIni.HRoutT2	0	228,-156
+base	GafInvIni.N	0	264,-77
+base	GafInvIni.NoutT2	0	225,-109
+base	GafInvIni.NoutT3	0	254,-103
+base	GafInvMed.NoutT2	0	225,-109
+base	GafInvMed.NoutT3	0	254,-103
 
 lookup end
 
 
-lookup	6	mark to base
+lookup	7	mark to base
 
 RightToLeft	no
 IgnoreBaseGlyphs	no
 IgnoreLigatures	no
 IgnoreMarks	no
 
-mark	Crossbar	0	0,291
 mark	RingNS	0	0,518
+mark	CrossbarNS	0	0,291
+mark	DblCrossbarNS	0	0,291
 base	uni25CC	0	303,646
 base	BehxSep	0	527,-46
 base	BehxFin	0	527,-46
@@ -3197,11 +3707,108 @@ base	GafMed.NoutD11	0	797,851
 base	GafMed.NoutD2MD	0	551,609
 base	GafMed.NoutD2HYB	0	674,732
 base	GafMed.NoutD2MM	0	516,601
+base	GafInvIni.HRk	0	340,592
+base	GafInvMed.V	0	552,1119
+base	GafInvSep	0	1238,1005
+base	GafInvIni.HRoutD2	0	491,741
+base	GafInvIni.outD2	0	491,855
+base	GafInvIni.outD2YB	0	491,855
+base	GafInvMed.Vlow	0	567,1093
+base	GafInvMed.VoutD5	0	541,1052
+base	GafInvMed.outS1	0	640,1093
+base	GafInvMed.outT2	0	605,1084
+base	GafInvMed.outD11	0	871,1066
+base	GafInvMed.outD2MM	0	491,1066
+base	GafInvMed.outD2Y	0	500,979
+base	GafInvMed.outD4	0	516,970
+base	GafInvIni.HRlow	0	552,829
+base	GafInvMed.HRoutT3	0	623,943
+base	GafInvMed.HRoutD2MD	0	712,847
+base	GafInvMed.HRoutD2HYB	0	816,917
+base	GafInvMed.HRoutD5	0	542,829
+base	GafInvMed.VoutT2	0	552,1119
+base	GafInvFin.HR	0	1273,935
+base	GafInvMed.VoutD2HYB	0	791,1110
+base	GafInvMed.HRk	0	340,592
+base	GafInvMed.VoutD2WQ	0	623,1119
+base	GafInvMed.VoutD1	0	992,1110
+base	GafInvIni.HRoutT3	0	623,864
+base	GafInvIni.outD5	0	550,952
+base	GafInvMed.low	0	589,1005
+base	GafInvMed.HRlow	0	623,899
+base	GafInvMed.outD1	0	994,1014
+base	GafInvMed.outD2WQ	0	612,1014
+base	GafInvIni.HRoutD1	0	992,935
+base	GafInvMed.HRoutT2	0	589,935
+base	GafInvMed.VoutT3	0	587,1128
+base	GafInvMed.VoutD2MD	0	680,1031
+base	GafInvMed.VoutD2Y	0	523,1102
+base	GafInvFin	0	1229,1022
+base	GafInvFin.V	0	1247,1128
+base	GafInvIni.HRoutT2N	0	587,858
+base	GafInvIni.k	0	315,741
+base	GafInvMed.k	0	315,741
+base	GafInvIni	0	623,1102
+base	GafInvIni.outT2	0	561,1022
+base	GafInvIni.outT2N	0	622,1040
+base	GafInvIni.outT3	0	658,1014
+base	GafInvIni.outS1	0	623,1075
+base	GafInvIni.outD1	0	973,1066
+base	GafInvIni.outD11	0	850,1023
+base	GafInvIni.outD2MM	0	458,829
+base	GafInvIni.outD2H	0	781,1075
+base	GafInvIni.outD2Y	0	485,882
+base	GafInvMed	0	614,1102
+base	GafInvMed.HR	0	570,935
+base	GafInvMed.outT3	0	640,1093
+base	GafInvMed.outD2MD	0	714,979
+base	GafInvMed.outD2H	0	819,1050
+base	GafInvMed.outD2HYB	0	819,1050
+base	GafInvMed.outD5	0	589,1005
+base	GafInvIni.HRoutD5	0	579,882
+base	GafInvMed.HRoutD1	0	974,864
+base	GafInvMed.HRoutD2MM	0	492,938
+base	GafInvMed.HRoutD2WQ	0	649,917
+base	GafInvMed.VoutS1	0	587,1119
+base	GafInvMed.VoutD11	0	869,1154
+base	GafInvMed.VoutD2MM	0	491,1154
+base	GafInvMed.VoutD4	0	491,1040
+base	GafInvIni.HRoutD2H	0	746,899
+base	GafInvIni.HRoutT2	0	552,873
+base	GafInvIni.outD2D	0	491,855
+base	GafInvIni.N	0	542,732
+base	GafInvIni.NoutT2	0	498,653
+base	GafInvIni.NoutT3	0	480,757
+base	GafInvIni.NoutD1	0	854,847
+base	GafInvIni.NoutD11	0	762,827
+base	GafInvIni.NoutD2	0	563,617
+base	GafInvIni.NoutD2H	0	674,727
+base	GafInvIni.NoutD2MM	0	484,583
+base	GafInvMed.NoutT2	0	472,636
+base	GafInvMed.NoutT3	0	463,741
+base	GafInvMed.NoutD1	0	850,838
+base	GafInvMed.NoutD11	0	797,851
+base	GafInvMed.NoutD2MD	0	551,609
+base	GafInvMed.NoutD2HYB	0	674,732
+base	GafInvMed.NoutD2MM	0	516,601
+base	RehLoopSep	0	175,-21
+base	RehLoopFin	0	123,-180
+base	RehLoopFin.inD4B	0	191,-15
+base	RehLoopFin.inD3	0	131,-180
+base	RehLoopFin.postHeh	0	128,-180
+base	RehLoopFin.inD4	0	217,-15
+base	RehLoopFin.inD3MM	0	128,-180
+base	WawStraightSep	0	124,49
+base	WawStraightFin	0	124,49
+base	WawStraightFin.cut	0	124,49
+base	WawStraightFin.inD2	0	124,49
+base	WawStraightFin.inD2alt	0	124,49
+base	BehxMed.inT2outT3W	0	324,172
 
 lookup end
 
 
-lookup	7	mark to base
+lookup	8	mark to base
 
 RightToLeft	no
 IgnoreBaseGlyphs	no
@@ -3210,6 +3817,8 @@ IgnoreMarks	no
 
 mark	TwoDotsAboveKNS	0	44,926
 mark	ThreeDotsAboveKNS	0	43,935
+mark	ArSevenKNS	0	44,926
+mark	OneDotAboveKNS	0	44,926
 base	KafSep	0	832,1040
 base	KafIni.k	0	155,917
 base	KafIni.HRlow	0	529,1121
@@ -3376,11 +3985,94 @@ base	GafMed.NoutD11	0	268,816
 base	GafMed.NoutD2MD	0	65,601
 base	GafMed.NoutD2HYB	0	180,715
 base	GafMed.NoutD2MM	0	21,583
+base	GafInvIni.HRk	0	148,767
+base	GafInvMed.V	0	138,1154
+base	GafInvSep	0	832,1040
+base	GafInvIni.HRoutD2	0	120,785
+base	GafInvIni.outD2	0	67,891
+base	GafInvIni.outD2YB	0	67,891
+base	GafInvMed.Vlow	0	146,1066
+base	GafInvMed.VoutD5	0	98,1000
+base	GafInvMed.outS1	0	164,1084
+base	GafInvMed.outT2	0	146,1093
+base	GafInvMed.outD11	0	428,1093
+base	GafInvMed.outD2MM	0	39,1084
+base	GafInvMed.outD2Y	0	85,1005
+base	GafInvMed.outD4	0	101,996
+base	GafInvIni.HRlow	0	529,1121
+base	GafInvMed.HRoutT3	0	208,970
+base	GafInvMed.HRoutD2MD	0	278,873
+base	GafInvMed.HRoutD2HYB	0	364,935
+base	GafInvMed.HRoutD5	0	126,882
+base	GafInvMed.VoutT2	0	109,1066
+base	GafInvFin.HR	0	902,979
+base	GafInvMed.VoutD2HYB	0	349,1075
+base	GafInvMed.HRk	0	148,767
+base	GafInvMed.VoutD2WQ	0	180,1066
+base	GafInvMed.VoutD1	0	522,1040
+base	GafInvIni.HRoutT3	0	145,803
+base	GafInvIni.outD5	0	94,970
+base	GafInvMed.HRlow	0	529,1121
+base	GafInvMed.outD1	0	560,1040
+base	GafInvMed.outD2WQ	0	178,1040
+base	GafInvIni.HRoutD1	0	612,979
+base	GafInvMed.HRoutT2	0	138,952
+base	GafInvMed.VoutT3	0	145,1075
+base	GafInvMed.VoutD2MD	0	246,1040
+base	GafInvMed.VoutD2Y	0	81,1049
+base	GafInvFin	0	823,1058
+base	GafInvFin.V	0	806,1102
+base	GafInvIni.HRoutT2N	0	145,832
+base	GafInvIni.k	0	155,917
+base	GafInvMed.k	0	155,917
+base	GafInvIni	0	146,1093
+base	GafInvIni.outT2	0	85,1014
+base	GafInvIni.outT2N	0	146,1031
+base	GafInvIni.outT3	0	182,1005
+base	GafInvIni.outS1	0	146,1066
+base	GafInvIni.outD1	0	521,1066
+base	GafInvIni.outD11	0	416,1050
+base	GafInvIni.outD2MM	0	6,847
+base	GafInvIni.outD2H	0	305,1066
+base	GafInvIni.outD2Y	0	20,882
+base	GafInvMed	0	138,1093
+base	GafInvMed.HR	0	435,1104
+base	GafInvMed.outT3	0	164,1084
+base	GafInvMed.outD2MD	0	299,1005
+base	GafInvMed.outD2H	0	384,1076
+base	GafInvMed.outD2HYB	0	384,1076
+base	GafInvMed.outD5	0	138,1022
+base	GafInvIni.HRoutD5	0	173,908
+base	GafInvMed.HRoutD1	0	540,891
+base	GafInvMed.HRoutD2MM	0	40,956
+base	GafInvMed.HRoutD2WQ	0	197,935
+base	GafInvMed.VoutS1	0	145,1066
+base	GafInvMed.VoutD11	0	426,1102
+base	GafInvMed.VoutD2MM	0	30,1084
+base	GafInvMed.VoutD4	0	48,987
+base	GafInvIni.HRoutD2H	0	232,820
+base	GafInvIni.HRoutT2	0	109,855
+base	GafInvIni.outD2D	0	67,891
+base	GafInvIni.N	0	92,759
+base	GafInvIni.NoutT2	0	48,680
+base	GafInvIni.NoutT3	0	30,784
+base	GafInvIni.NoutD1	0	361,847
+base	GafInvIni.NoutD11	0	312,853
+base	GafInvIni.NoutD2	0	113,644
+base	GafInvIni.NoutD2H	0	224,753
+base	GafInvIni.NoutD2MM	0	34,609
+base	GafInvMed.NoutT2	0	21,662
+base	GafInvMed.NoutT3	0	13,768
+base	GafInvMed.NoutD1	0	399,864
+base	GafInvMed.NoutD11	0	347,877
+base	GafInvMed.NoutD2MD	0	101,636
+base	GafInvMed.NoutD2HYB	0	224,759
+base	GafInvMed.NoutD2MM	0	65,627
 
 lookup end
 
 
-lookup	8	mark to base
+lookup	9	mark to base
 
 RightToLeft	no
 IgnoreBaseGlyphs	no
@@ -3389,6 +4081,7 @@ IgnoreMarks	no
 
 mark	OneDotEnclNS	0	0,217
 mark	ThreeDotsDownEnclNS	0	0,217
+mark	ThreeDotsUpEnclNS	0	0,217
 mark	TwoDotsEnclNS	0	0,217
 mark	TwoDotsVertEnclNS	0	0,236
 mark	FourDotsEnclNS	0	-15,204
@@ -3396,19 +4089,22 @@ mark	SharetKafNS	0	479,549
 mark	TahSmallEnclNS	0	-5,-271
 mark	Tah2DotsEnclNS	0	0,-199
 mark	Small4UrduEnclNS	0	51,582
+mark	FourDotsRhombusEnclNS	0	-20,230
 base	uni25CC	0	391,295
 base	NoonxSep	0	397,216
 base	NoonxFin	0	396,215
 base	HahSep	0	449,217
+base	SadSep	0	980,0
 base	TahSep	0	555,696
-base	AinSep	0	362,153
-base	AinFin	0	327,153
+base	AinSep	0	436,208
+base	AinFin	0	436,188
 base	KafSep	0	481,553
 base	HahFin	0	450,215
 base	TahFin	0	555,696
+base	SadFin	0	980,0
 base	TahMed.inD1outS1	0	370,786
 base	TahIni	0	411,798
-base	AinFin.2	0	326,153
+base	AinFin.2	0	436,188
 base	TahIni.outT2	0	377,752
 base	TahIni.outT3	0	530,769
 base	TahIni.outD2	0	506,836
@@ -3442,11 +4138,15 @@ base	TahMed.HRlow	0	398,673
 base	TahIni.outD2D	0	506,836
 base	TahMed.inD1outT1	0	409,799
 base	TahMed.inD1outD2D	0	506,836
+base	GafInvSep	0	481,553
+base	GafInvMed.low	0	138,1022
+base	GafInvFin	0	479,579
+base	GafInvFin.V	0	479,579
 
 lookup end
 
 
-lookup	9	mark to base
+lookup	10	mark to base
 
 RightToLeft	no
 IgnoreBaseGlyphs	no
@@ -3454,6 +4154,7 @@ IgnoreLigatures	no
 IgnoreMarks	no
 
 mark	OneDotEnclTNS	0	0,217
+mark	TwoDotsEnclNS	0	-63,217
 base	uni25CC	0	391,277
 base	TahSep	0	485,621
 base	TahFin	0	485,621
@@ -3493,7 +4194,7 @@ base	TahMed.inD1outD2D	0	428,765
 lookup end
 
 
-lookup	10	mark to base
+lookup	11	mark to base
 
 RightToLeft	no
 IgnoreBaseGlyphs	no
@@ -3503,20 +4204,25 @@ IgnoreMarks	no
 mark	SharetYehPashtoNS	0	217,354
 mark	OneDotSmallAbove	0	133,80
 base	RehSep	0	119,267
+base	WawSep	0	72,118
 base	YehxSep	0	217,354
 base	YehxFin	0	217,354
 base	RehFin	0	-36,-21
+base	WawFin	0	72,118
 base	YehxFin.inD2alt	0	217,354
 base	RehFin.inD4B	0	80,242
 base	RehFin.inD3	0	-31,-30
 base	RehFin.postHeh	0	-31,-21
 base	RehFin.inD4	0	94,232
 base	RehFin.inD3MM	0	-31,-21
+base	WawFin.cut	0	72,118
+base	WawFin.inD2	0	72,118
+base	WawFin.inD2alt	0	72,118
 
 lookup end
 
 
-lookup	11	mark to base
+lookup	12	mark to base
 
 RightToLeft	no
 IgnoreBaseGlyphs	no
@@ -3525,6 +4231,7 @@ IgnoreMarks	no
 
 mark	OneDotSmallBelowNS	0	133,-96
 mark	YBc3	0	0,0
+mark	CrossbarNS	0	0,0
 base	RehSep	0	281,-36
 base	YehBarreeFin_5	0	1274,-247
 base	RehFin	0	195,-228
@@ -3538,7 +4245,7 @@ base	RehFin.inD3MM	0	195,-228
 lookup end
 
 
-lookup	12	mark to base
+lookup	13	mark to base
 
 RightToLeft	no
 IgnoreBaseGlyphs	no
@@ -3598,14 +4305,14 @@ mark	nine.small	0	0,8
 base	Sanah	0	609,323
 base	Footnote	0	789,318
 base	Safhah	0	384,305
-base	NumberSign	0	864,279
+base	NumberSign	0	700,279
 base	AyahEnd	0	860,452
 base	Samvat	0	1051,366
 
 lookup end
 
 
-lookup	13	mark to ligature
+lookup	14	mark to ligature
 
 RightToLeft	no
 IgnoreBaseGlyphs	no
@@ -3662,11 +4369,11 @@ mark	six.small	0	0,8
 mark	seven.small	0	0,8
 mark	eight.small	0	0,8
 mark	nine.small	0	0,8
-ligature	NumberSign.alt2	1	2	0	661,279
-ligature	NumberSign.alt2	2	2	0	1067,279
-ligature	NumberSign.alt3	1	3	0	458,279
-ligature	NumberSign.alt3	2	3	0	864,279
-ligature	NumberSign.alt3	3	3	0	1271,279
+ligature	NumberSign.alt2	1	2	0	761,279
+ligature	NumberSign.alt2	2	2	0	1167,279
+ligature	NumberSign.alt3	1	3	0	658,279
+ligature	NumberSign.alt3	2	3	0	1064,279
+ligature	NumberSign.alt3	3	3	0	1471,279
 ligature	Sanah.alt2	1	2	0	888,345
 ligature	Sanah.alt2	2	2	0	1294,345
 ligature	Sanah.alt3	1	3	0	684,345
@@ -3704,7 +4411,7 @@ ligature	AyahEnd.alt3	3	3	0	1140,452
 lookup end
 
 
-lookup	14	mark to mark
+lookup	15	mark to mark
 
 RightToLeft	no
 IgnoreBaseGlyphs	no
@@ -3727,6 +4434,11 @@ mark	TwoDotsVertBelowYB	0	118,-98
 mark	HamzaBelowAF_YB	0	0,-44
 mark	Tah2DotsBelowYB	0	5,-59
 mark	TahSmallBelowYB	0	8,-54
+mark	RingDistYB	0	0,-99
+mark	ArSevenBelowYB	0	0,-99
+mark	ThreeDotsFlatBelowYB	0	0,-99
+mark	ThreeDotsUpBelowYB	0	0,-98
+mark	ArEightBelowYB	0	0,-99
 base	AlefInferiorYB	0	0,-339
 base	HamzaBelowYB	0	0,-288
 base	KasraYB	0	0,-229
@@ -3745,11 +4457,16 @@ base	TahSmallBelowYB	0	0,-464
 base	YBc1	0	0,0
 base	YBc2	0	0,0
 base	YBc3	0	0,0
+base	RingDistYB	0	0,-258
+base	ArSevenBelowYB	0	0,-258
+base	ThreeDotsFlatBelowYB	0	0,-258
+base	ThreeDotsUpBelowYB	0	0,-413
+base	ArEightBelowYB	0	0,-258
 
 lookup end
 
 
-lookup	15	mark to ligature
+lookup	16	mark to ligature
 
 RightToLeft	no
 IgnoreBaseGlyphs	no
@@ -3792,7 +4509,7 @@ ligature	Divine_nm_p1	3	3	1	183,-12
 lookup end
 
 
-lookup	16	mark to mark
+lookup	17	mark to mark
 
 RightToLeft	no
 IgnoreBaseGlyphs	no
@@ -3829,71 +4546,54 @@ mark	SukunHahNS	0	0,881
 mark	SukunJazmNS	0	0,867
 mark	SukunNS	0	-9,869
 mark	SukunZeroNS	0	0,856
-mark	TahSmallNS	0	0,837
 mark	Tah2DotsAboveNS	0	0,811
 mark	TakhallusNS	0	0,907
 mark	Small4UrduAboveNS	0	2,464
-mark	OneDotAboveAltNS	0	-5,831
-mark	TwoDotsAboveAltNS	0	0,819
-mark	ThreeDotsUpAboveAltNS	0	0,819
-mark	MaddaAltNS	0	-11,907
-mark	Madda.shortAltNS	0	16,907
-mark	Madda.shorterAltNS	0	27,907
-mark	WaslaAltNS	0	-15,880
-mark	HamzaAboveAltNS	0	0,855
-mark	HamzaAboveAF_AltNS	0	0,834
-mark	AlayhissalamAltNS	0	0,826
-mark	AlefSuperiorAltNS	0	-6,850
-mark	DammaAltNS	0	0,926
-mark	UltapeshAltNS	0	0,864
-mark	DammatanAltNS	0	0,864
-mark	FathaAltNS	0	0,926
-mark	FathatanAltNS	0	0,926
-mark	NoonGhunnaMarkAltNS	0	-16,882
-mark	RadiallahAltNS	0	0,830
-mark	RahmatullahAltNS	0	0,865
-mark	SallallahAltNS	0	0,848
-mark	ShaddaAltNS	0	0,892
-mark	Tah2DotsAboveAltNS	0	0,811
-mark	SukunHahAltNS	0	0,881
-mark	SukunJazmAltNS	0	0,867
-mark	WavyHamzaAboveAltNS	0	0,838
-mark	SukunAltNS	0	-9,869
-mark	SukunZeroAltNS	0	0,856
-mark	TahSmallAltNS	0	0,837
-mark	TakhallusAltNS	0	0,907
-mark	CircumArabicAltNS	0	-38,906
-mark	CircumArabicNS	0	0,841
-mark	Fatha2dotsAltNS	0	0,843
 mark	Fatha2dotsNS	0	0,843
-mark	FourDotsAboveAltNS	0	129,6
-mark	SevenSmallDotAltNS	0	-7,831
-mark	SevenSmallDotNS	0	-7,831
-mark	TahDotAboveAltNS	0	-5,836
 mark	TahDotAboveNS	0	-5,836
-mark	ShortVwlAltNS	0	30,804
 mark	ShortVwlNS	0	30,804
-mark	Small2AboveAltNS	0	5,464
 mark	Small2AboveNS	0	5,464
-mark	Small3AboveAltNS	0	3,463
 mark	Small3AboveNS	0	3,463
-mark	Small4UrduAboveAltNS	0	2,464
-mark	TwoDotsVertAboveAltNS	0	120,9
-mark	ZwarakayAltNS	0	0,892
 mark	ZwarakayNS	0	0,892
-mark	ThreeDotsDownAboveAltNS	0	-4,832
-mark	DammaRevAltNS	0	8,926
 mark	DammaRevNS	0	8,926
 mark	WavyHamzaAboveNS	0	0,838
+mark	uni08E3_NS	0	0,926
+mark	ArSevenAboveNS	0	0,841
+mark	ArEightAboveNS	0	0,841
+mark	uni08E4_NS	0	0,926
+mark	uni08E5_NS	0	0,926
+mark	uni08E7_NS	0	0,926
+mark	uni08E8_NS	0	0,864
+mark	uni08EA_NS	0	-5,831
+mark	uni08EB_NS	0	-5,831
+mark	uni08EC_NS	0	-5,831
+mark	uni08F0_NS	0	0,926
+mark	uni08F1_NS	0	0,864
+mark	uni08F3_NS	0	0,926
+mark	uni08F4_NS	0	0,926
+mark	uni08F5_NS	0	0,926
+mark	uni08F7_NS	0	0,864
+mark	uni08F8_NS	0	0,864
+mark	uni08FB_NS	0	0,864
+mark	uni08FC_NS	0	0,864
+mark	uni08FD_NS	0	0,864
+mark	uni08FE_NS	0	0,864
+mark	OneDotSevenAboveNS	0	-7,831
+mark	SmallMeemAboveNS	0	0,837
+mark	SmallNoonAboveNS	0	0,837
+mark	SmallTahSevenAboveNS	0	0,837
+mark	SmallTehAboveNS	0	0,819
+mark	TahSmallAboveNS	0	0,837
+mark	TwoDotsSevenAboveNS	0	0,819
 base	OneDotAboveNS	0	0,1081
 base	TwoDotsAboveNS	0	0,1092
 base	ThreeDotsUpAboveNS	0	0,1234
 base	ThreeDotsDownAboveNS	0	0,1244
 base	TwoDotsVertAboveNS	0	112,406
 base	FourDotsAboveNS	0	130,349
-base	MaddaNS	0	0,1148
-base	Madda.shortNS	0	0,1099
-base	Madda.shorterNS	0	0,1099
+base	MaddaNS	0	40,1148
+base	Madda.shortNS	0	80,1110
+base	Madda.shorterNS	0	100,1110
 base	WaslaNS	0	0,1117
 base	HamzaAboveNS	0	0,1090
 base	HamzaAboveAF_NS	0	0,1098
@@ -3914,7 +4614,6 @@ base	SukunHahNS	0	0,1103
 base	SukunJazmNS	0	0,1122
 base	SukunNS	0	0,1126
 base	SukunZeroNS	0	0,1164
-base	TahSmallNS	0	0,1243
 base	Tah2DotsAboveNS	0	0,1330
 base	TakhallusNS	0	0,1126
 base	Small4UrduAboveNS	0	0,770
@@ -3947,14 +4646,9 @@ base	SukunAltNS	0	0,1126
 base	SukunZeroAltNS	0	0,1164
 base	TahSmallAltNS	0	0,1243
 base	TakhallusAltNS	0	0,1126
-base	CircumArabicAltNS	0	-13,948
-base	CircumArabicNS	0	0,1067
 base	Fatha2dotsAltNS	0	0,1172
 base	Fatha2dotsNS	0	0,1172
 base	FourDotsAboveAltNS	0	129,349
-base	SevenSmallDotAltNS	0	0,1238
-base	SevenSmallDotNS	0	0,1238
-base	SevenSmallNS	0	0,1238
 base	TahDotAboveAltNS	0	0,1341
 base	TahDotAboveNS	0	0,1341
 base	ShortVwlAltNS	0	33,1112
@@ -3971,11 +4665,65 @@ base	ThreeDotsDownAboveAltNS	0	0,1244
 base	DammaRevAltNS	0	8,1172
 base	DammaRevNS	0	8,1172
 base	WavyHamzaAboveNS	0	0,1130
+base	uni08E3_NS	0	0,1172
+base	uni08E3_AltNS	0	0,1172
+base	ArSevenAboveNS	0	0,1238
+base	ArEightAboveNS	0	0,1067
+base	uni08E4_NS	0	0,1093
+base	uni08E4_AltNS	0	0,1093
+base	uni08E5_NS	0	0,1172
+base	uni08E5_AltNS	0	0,1172
+base	uni08E7_NS	0	0,1192
+base	uni08E7_AltNS	0	0,1192
+base	uni08E8_NS	0	0,1140
+base	uni08E8_AltNS	0	0,1140
+base	uni08EA_NS	0	0,1081
+base	uni08EA_AltNS	0	0,1081
+base	uni08EB_NS	0	0,1081
+base	uni08EB_AltNS	0	0,1081
+base	uni08EC_NS	0	0,1081
+base	uni08EC_AltNS	0	0,1081
+base	uni08F0_NS	0	0,1192
+base	uni08F0_AltNS	0	0,1192
+base	uni08F1_NS	0	0,1140
+base	uni08F1_AltNS	0	0,1140
+base	uni08F3_NS	0	0,1172
+base	uni08F3_AltNS	0	0,1172
+base	uni08F4_NS	0	0,1093
+base	uni08F4_AltNS	0	0,1093
+base	uni08F5_NS	0	0,1093
+base	uni08F5_AltNS	0	0,1093
+base	uni08F7_NS	0	0,1119
+base	uni08F7_AltNS	0	0,1119
+base	uni08F8_NS	0	0,1119
+base	uni08F8_AltNS	0	0,1119
+base	uni08FB_NS	0	0,1119
+base	uni08FB_AltNS	0	0,1119
+base	uni08FC_NS	0	0,1119
+base	uni08FC_AltNS	0	0,1119
+base	uni08FD_NS	0	0,1119
+base	uni08FD_AltNS	0	0,1119
+base	uni08FE_NS	0	0,1119
+base	uni08FE_AltNS	0	0,1119
+base	ArSevenAboveAltNS	0	0,1238
+base	ArEightAboveAltNS	0	-13,948
+base	OneDotSevenAboveAltNS	0	0,1238
+base	OneDotSevenAboveNS	0	0,1238
+base	SmallMeemAboveNS	0	0,1243
+base	SmallNoonAboveNS	0	0,1243
+base	SmallTahSevenAboveNS	0	0,1243
+base	SmallTehAboveNS	0	0,1092
+base	TahSmallAboveNS	0	0,1243
+base	SmallMeemAboveAltNS	0	0,1243
+base	SmallNoonAboveAltNS	0	0,1181
+base	SmallTehAboveAltNS	0	0,1092
+base	SmallTahSevenAboveAltNS	0	0,1243
+base	TwoDotsSevenAboveAltNS	0	0,1092
 
 lookup end
 
 
-lookup	17	mark to mark
+lookup	18	mark to mark
 
 RightToLeft	no
 IgnoreBaseGlyphs	no
@@ -3996,20 +4744,22 @@ mark	KasratanNS	0	0,-44
 mark	TahSmallBelowNS	0	8,-54
 mark	Tah2DotsBelowNS	0	5,-59
 mark	WavyHamzaBelowNS	0	0,-83
-mark	OneDotBelowAltNS	0	0,-8
-mark	TwoDotsBelowAltNS	0	0,-2
-mark	ThreeDotsDownBelowAltNS	0	0,0
-mark	HamzaBelowAltNS	0	0,-67
-mark	HamzaBelowAF_AltNS	0	0,-44
-mark	AlefInferiorAltNS	0	0,1
-mark	KasraAltNS	0	0,-44
-mark	KasratanAltNS	0	0,-44
-mark	FourDotsBelowAltNS	0	130,-40
-mark	WavyHamzaBelowAltNS	0	0,-83
-mark	Small4UrduBelowAltNS	0	0,-82
-mark	TwoDotsVertBelowAltNS	0	119,-16
-mark	Tah2DotsBelowAltNS	0	5,-59
 mark	Small4UrduBelowNS	0	0,-82
+mark	uni08E3_NS	0	0,-44
+mark	uni08E6_NS	0	0,-44
+mark	uni08E9_NS	0	0,-44
+mark	uni08ED_NS	0	0,-44
+mark	uni08EE_NS	0	0,-44
+mark	uni08EF_NS	0	0,-44
+mark	uni08F2_NS	0	0,-44
+mark	uni08F6_NS	0	0,-44
+mark	uni08F9_NS	0	0,-8
+mark	uni08FA_NS	0	0,-8
+mark	ArEightBelowNS	0	0,-2
+mark	ArSevenBelowNS	0	0,-8
+mark	ThreeDotsFlatBelowNS	0	0,-2
+mark	ThreeDotsUpBelowNS	0	0,0
+mark	RingDistNS	0	0,-8
 base	OneDotBelowNS	0	0,-258
 base	TwoDotsBelowNS	0	0,-269
 base	ThreeDotsDownBelowNS	0	0,-413
@@ -4039,11 +4789,40 @@ base	Small4UrduBelowAltNS	0	0,-398
 base	TwoDotsVertBelowAltNS	0	116,-413
 base	Tah2DotsBelowAltNS	0	0,-424
 base	Small4UrduBelowNS	0	0,-398
+base	uni08E3_NS	0	0,-328
+base	uni08E3_AltNS	0	0,-328
+base	uni08E6_NS	0	0,-229
+base	uni08E6_AltNS	0	0,-229
+base	uni08E9_NS	0	0,-328
+base	uni08E9_AltNS	0	0,-328
+base	uni08ED_NS	0	0,-229
+base	uni08ED_AltNS	0	0,-229
+base	uni08EE_NS	0	0,-229
+base	uni08EE_AltNS	0	0,-229
+base	uni08EF_NS	0	0,-229
+base	uni08EF_AltNS	0	0,-229
+base	uni08F2_NS	0	0,-328
+base	uni08F2_AltNS	0	0,-328
+base	uni08F6_NS	0	0,-328
+base	uni08F6_AltNS	0	0,-328
+base	uni08F9_NS	0	0,-258
+base	uni08F9_AltNS	0	0,-258
+base	uni08FA_NS	0	0,-258
+base	uni08FA_AltNS	0	0,-258
+base	ArEightBelowNS	0	0,-258
+base	ArSevenBelowNS	0	0,-258
+base	ThreeDotsUpBelowNS	0	0,-413
+base	RingDistNS	0	0,-258
+base	ArSevenBelowAltNS	0	0,-258
+base	ThreeDotsFlatBelowAltNS	0	0,-269
+base	ThreeDotsUpBelowAltNS	0	0,-413
+base	RingDistAltNS	0	0,-258
+base	ArEightBelowAltNS	0	0,-258
 
 lookup end
 
 
-lookup	18	single
+lookup	19	single
 
 RightToLeft	no
 IgnoreBaseGlyphs	no
@@ -4051,11 +4830,14 @@ IgnoreLigatures	no
 IgnoreMarks	yes
 
 x advance	FehxIni.outT2N	61
+x advance	AlefSep	61
+x advance	AlefFin	61
 x advance	KafSep	61
 x advance	SeenIni.r	61
 x advance	FehxIni.outD2	61
 x advance	LamIni.HRlow	61
 x advance	HehDoIni	61
+x advance	AlefSep.LA	61
 x advance	BehxIni	61
 x advance	BehxIni.A	61
 x advance	MeemIni.r	61
@@ -4289,11 +5071,43 @@ x advance	GafIni.NoutD11	61
 x advance	GafIni.NoutD2	61
 x advance	GafIni.NoutD2H	61
 x advance	GafIni.NoutD2MM	61
+x advance	GafInvIni.HRk	61
+x advance	GafInvSep	61
+x advance	GafInvIni.HRoutD2	61
+x advance	GafInvIni.outD2	61
+x advance	GafInvIni.HRlow	61
+x advance	GafInvIni.HRoutT3	61
+x advance	GafInvIni.outD5	61
+x advance	GafInvIni.HRoutD1	61
+x advance	GafInvIni.HRoutT2N	61
+x advance	GafInvIni.k	61
+x advance	GafInvIni	61
+x advance	GafInvIni.outT2	61
+x advance	GafInvIni.outT2N	61
+x advance	GafInvIni.outT3	61
+x advance	GafInvIni.outS1	61
+x advance	GafInvIni.outD1	61
+x advance	GafInvIni.outD11	61
+x advance	GafInvIni.outD2MM	61
+x advance	GafInvIni.outD2H	61
+x advance	GafInvIni.outD2Y	61
+x advance	GafInvIni.HRoutD5	61
+x advance	GafInvIni.HRoutD2H	61
+x advance	GafInvIni.HRoutT2	61
+x advance	GafInvIni.outD2D	61
+x advance	GafInvIni.N	61
+x advance	GafInvIni.NoutT2	61
+x advance	GafInvIni.NoutT3	61
+x advance	GafInvIni.NoutD1	61
+x advance	GafInvIni.NoutD11	61
+x advance	GafInvIni.NoutD2	61
+x advance	GafInvIni.NoutD2H	61
+x advance	GafInvIni.NoutD2MM	61
 
 lookup end
 
 
-lookup	19	single
+lookup	20	single
 
 RightToLeft	no
 IgnoreBaseGlyphs	no
@@ -4539,11 +5353,43 @@ x advance	GafIni.NoutD11	122
 x advance	GafIni.NoutD2	122
 x advance	GafIni.NoutD2H	122
 x advance	GafIni.NoutD2MM	122
+x advance	GafInvIni.HRk	122
+x advance	GafInvSep	122
+x advance	GafInvIni.HRoutD2	122
+x advance	GafInvIni.outD2	122
+x advance	GafInvIni.HRlow	122
+x advance	GafInvIni.HRoutT3	122
+x advance	GafInvIni.outD5	122
+x advance	GafInvIni.HRoutD1	122
+x advance	GafInvIni.HRoutT2N	122
+x advance	GafInvIni.k	122
+x advance	GafInvIni	122
+x advance	GafInvIni.outT2	122
+x advance	GafInvIni.outT2N	122
+x advance	GafInvIni.outT3	122
+x advance	GafInvIni.outS1	122
+x advance	GafInvIni.outD1	122
+x advance	GafInvIni.outD11	122
+x advance	GafInvIni.outD2MM	122
+x advance	GafInvIni.outD2H	122
+x advance	GafInvIni.outD2Y	122
+x advance	GafInvIni.HRoutD5	122
+x advance	GafInvIni.HRoutD2H	122
+x advance	GafInvIni.HRoutT2	122
+x advance	GafInvIni.outD2D	122
+x advance	GafInvIni.N	122
+x advance	GafInvIni.NoutT2	122
+x advance	GafInvIni.NoutT3	122
+x advance	GafInvIni.NoutD1	122
+x advance	GafInvIni.NoutD11	122
+x advance	GafInvIni.NoutD2	122
+x advance	GafInvIni.NoutD2H	122
+x advance	GafInvIni.NoutD2MM	122
 
 lookup end
 
 
-lookup	20	single
+lookup	21	single
 
 RightToLeft	no
 IgnoreBaseGlyphs	no
@@ -4789,11 +5635,43 @@ x advance	GafIni.NoutD11	183
 x advance	GafIni.NoutD2	183
 x advance	GafIni.NoutD2H	183
 x advance	GafIni.NoutD2MM	183
+x advance	GafInvIni.HRk	183
+x advance	GafInvSep	183
+x advance	GafInvIni.HRoutD2	183
+x advance	GafInvIni.outD2	183
+x advance	GafInvIni.HRlow	183
+x advance	GafInvIni.HRoutT3	183
+x advance	GafInvIni.outD5	183
+x advance	GafInvIni.HRoutD1	183
+x advance	GafInvIni.HRoutT2N	183
+x advance	GafInvIni.k	183
+x advance	GafInvIni	183
+x advance	GafInvIni.outT2	183
+x advance	GafInvIni.outT2N	183
+x advance	GafInvIni.outT3	183
+x advance	GafInvIni.outS1	183
+x advance	GafInvIni.outD1	183
+x advance	GafInvIni.outD11	183
+x advance	GafInvIni.outD2MM	183
+x advance	GafInvIni.outD2H	183
+x advance	GafInvIni.outD2Y	183
+x advance	GafInvIni.HRoutD5	183
+x advance	GafInvIni.HRoutD2H	183
+x advance	GafInvIni.HRoutT2	183
+x advance	GafInvIni.outD2D	183
+x advance	GafInvIni.N	183
+x advance	GafInvIni.NoutT2	183
+x advance	GafInvIni.NoutT3	183
+x advance	GafInvIni.NoutD1	183
+x advance	GafInvIni.NoutD11	183
+x advance	GafInvIni.NoutD2	183
+x advance	GafInvIni.NoutD2H	183
+x advance	GafInvIni.NoutD2MM	183
 
 lookup end
 
 
-lookup	21	single
+lookup	22	single
 
 RightToLeft	no
 IgnoreBaseGlyphs	no
@@ -5039,11 +5917,43 @@ x advance	GafIni.NoutD11	244
 x advance	GafIni.NoutD2	244
 x advance	GafIni.NoutD2H	244
 x advance	GafIni.NoutD2MM	244
+x advance	GafInvIni.HRk	244
+x advance	GafInvSep	244
+x advance	GafInvIni.HRoutD2	244
+x advance	GafInvIni.outD2	244
+x advance	GafInvIni.HRlow	244
+x advance	GafInvIni.HRoutT3	244
+x advance	GafInvIni.outD5	244
+x advance	GafInvIni.HRoutD1	244
+x advance	GafInvIni.HRoutT2N	244
+x advance	GafInvIni.k	244
+x advance	GafInvIni	244
+x advance	GafInvIni.outT2	244
+x advance	GafInvIni.outT2N	244
+x advance	GafInvIni.outT3	244
+x advance	GafInvIni.outS1	244
+x advance	GafInvIni.outD1	244
+x advance	GafInvIni.outD11	244
+x advance	GafInvIni.outD2MM	244
+x advance	GafInvIni.outD2H	244
+x advance	GafInvIni.outD2Y	244
+x advance	GafInvIni.HRoutD5	244
+x advance	GafInvIni.HRoutD2H	244
+x advance	GafInvIni.HRoutT2	244
+x advance	GafInvIni.outD2D	244
+x advance	GafInvIni.N	244
+x advance	GafInvIni.NoutT2	244
+x advance	GafInvIni.NoutT3	244
+x advance	GafInvIni.NoutD1	244
+x advance	GafInvIni.NoutD11	244
+x advance	GafInvIni.NoutD2	244
+x advance	GafInvIni.NoutD2H	244
+x advance	GafInvIni.NoutD2MM	244
 
 lookup end
 
 
-lookup	22	single
+lookup	23	single
 
 RightToLeft	no
 IgnoreBaseGlyphs	no
@@ -5289,11 +6199,43 @@ x advance	GafIni.NoutD11	305
 x advance	GafIni.NoutD2	305
 x advance	GafIni.NoutD2H	305
 x advance	GafIni.NoutD2MM	305
+x advance	GafInvIni.HRk	305
+x advance	GafInvSep	305
+x advance	GafInvIni.HRoutD2	305
+x advance	GafInvIni.outD2	305
+x advance	GafInvIni.HRlow	305
+x advance	GafInvIni.HRoutT3	305
+x advance	GafInvIni.outD5	305
+x advance	GafInvIni.HRoutD1	305
+x advance	GafInvIni.HRoutT2N	305
+x advance	GafInvIni.k	305
+x advance	GafInvIni	305
+x advance	GafInvIni.outT2	305
+x advance	GafInvIni.outT2N	305
+x advance	GafInvIni.outT3	305
+x advance	GafInvIni.outS1	305
+x advance	GafInvIni.outD1	305
+x advance	GafInvIni.outD11	305
+x advance	GafInvIni.outD2MM	305
+x advance	GafInvIni.outD2H	305
+x advance	GafInvIni.outD2Y	305
+x advance	GafInvIni.HRoutD5	305
+x advance	GafInvIni.HRoutD2H	305
+x advance	GafInvIni.HRoutT2	305
+x advance	GafInvIni.outD2D	305
+x advance	GafInvIni.N	305
+x advance	GafInvIni.NoutT2	305
+x advance	GafInvIni.NoutT3	305
+x advance	GafInvIni.NoutD1	305
+x advance	GafInvIni.NoutD11	305
+x advance	GafInvIni.NoutD2	305
+x advance	GafInvIni.NoutD2H	305
+x advance	GafInvIni.NoutD2MM	305
 
 lookup end
 
 
-lookup	23	single
+lookup	24	single
 
 RightToLeft	no
 IgnoreBaseGlyphs	no
@@ -5539,11 +6481,43 @@ x advance	GafIni.NoutD11	366
 x advance	GafIni.NoutD2	366
 x advance	GafIni.NoutD2H	366
 x advance	GafIni.NoutD2MM	366
+x advance	GafInvIni.HRk	366
+x advance	GafInvSep	366
+x advance	GafInvIni.HRoutD2	366
+x advance	GafInvIni.outD2	366
+x advance	GafInvIni.HRlow	366
+x advance	GafInvIni.HRoutT3	366
+x advance	GafInvIni.outD5	366
+x advance	GafInvIni.HRoutD1	366
+x advance	GafInvIni.HRoutT2N	366
+x advance	GafInvIni.k	366
+x advance	GafInvIni	366
+x advance	GafInvIni.outT2	366
+x advance	GafInvIni.outT2N	366
+x advance	GafInvIni.outT3	366
+x advance	GafInvIni.outS1	366
+x advance	GafInvIni.outD1	366
+x advance	GafInvIni.outD11	366
+x advance	GafInvIni.outD2MM	366
+x advance	GafInvIni.outD2H	366
+x advance	GafInvIni.outD2Y	366
+x advance	GafInvIni.HRoutD5	366
+x advance	GafInvIni.HRoutD2H	366
+x advance	GafInvIni.HRoutT2	366
+x advance	GafInvIni.outD2D	366
+x advance	GafInvIni.N	366
+x advance	GafInvIni.NoutT2	366
+x advance	GafInvIni.NoutT3	366
+x advance	GafInvIni.NoutD1	366
+x advance	GafInvIni.NoutD11	366
+x advance	GafInvIni.NoutD2	366
+x advance	GafInvIni.NoutD2H	366
+x advance	GafInvIni.NoutD2MM	366
 
 lookup end
 
 
-lookup	24	single
+lookup	25	single
 
 RightToLeft	no
 IgnoreBaseGlyphs	no
@@ -5789,11 +6763,43 @@ x advance	GafIni.NoutD11	427
 x advance	GafIni.NoutD2	427
 x advance	GafIni.NoutD2H	427
 x advance	GafIni.NoutD2MM	427
+x advance	GafInvIni.HRk	427
+x advance	GafInvSep	427
+x advance	GafInvIni.HRoutD2	427
+x advance	GafInvIni.outD2	427
+x advance	GafInvIni.HRlow	427
+x advance	GafInvIni.HRoutT3	427
+x advance	GafInvIni.outD5	427
+x advance	GafInvIni.HRoutD1	427
+x advance	GafInvIni.HRoutT2N	427
+x advance	GafInvIni.k	427
+x advance	GafInvIni	427
+x advance	GafInvIni.outT2	427
+x advance	GafInvIni.outT2N	427
+x advance	GafInvIni.outT3	427
+x advance	GafInvIni.outS1	427
+x advance	GafInvIni.outD1	427
+x advance	GafInvIni.outD11	427
+x advance	GafInvIni.outD2MM	427
+x advance	GafInvIni.outD2H	427
+x advance	GafInvIni.outD2Y	427
+x advance	GafInvIni.HRoutD5	427
+x advance	GafInvIni.HRoutD2H	427
+x advance	GafInvIni.HRoutT2	427
+x advance	GafInvIni.outD2D	427
+x advance	GafInvIni.N	427
+x advance	GafInvIni.NoutT2	427
+x advance	GafInvIni.NoutT3	427
+x advance	GafInvIni.NoutD1	427
+x advance	GafInvIni.NoutD11	427
+x advance	GafInvIni.NoutD2	427
+x advance	GafInvIni.NoutD2H	427
+x advance	GafInvIni.NoutD2MM	427
 
 lookup end
 
 
-lookup	25	single
+lookup	26	single
 
 RightToLeft	no
 IgnoreBaseGlyphs	no
@@ -6039,11 +7045,43 @@ x advance	GafIni.NoutD11	488
 x advance	GafIni.NoutD2	488
 x advance	GafIni.NoutD2H	488
 x advance	GafIni.NoutD2MM	488
+x advance	GafInvIni.HRk	488
+x advance	GafInvSep	488
+x advance	GafInvIni.HRoutD2	488
+x advance	GafInvIni.outD2	488
+x advance	GafInvIni.HRlow	488
+x advance	GafInvIni.HRoutT3	488
+x advance	GafInvIni.outD5	488
+x advance	GafInvIni.HRoutD1	488
+x advance	GafInvIni.HRoutT2N	488
+x advance	GafInvIni.k	488
+x advance	GafInvIni	488
+x advance	GafInvIni.outT2	488
+x advance	GafInvIni.outT2N	488
+x advance	GafInvIni.outT3	488
+x advance	GafInvIni.outS1	488
+x advance	GafInvIni.outD1	488
+x advance	GafInvIni.outD11	488
+x advance	GafInvIni.outD2MM	488
+x advance	GafInvIni.outD2H	488
+x advance	GafInvIni.outD2Y	488
+x advance	GafInvIni.HRoutD5	488
+x advance	GafInvIni.HRoutD2H	488
+x advance	GafInvIni.HRoutT2	488
+x advance	GafInvIni.outD2D	488
+x advance	GafInvIni.N	488
+x advance	GafInvIni.NoutT2	488
+x advance	GafInvIni.NoutT3	488
+x advance	GafInvIni.NoutD1	488
+x advance	GafInvIni.NoutD11	488
+x advance	GafInvIni.NoutD2	488
+x advance	GafInvIni.NoutD2H	488
+x advance	GafInvIni.NoutD2MM	488
 
 lookup end
 
 
-lookup	26	single
+lookup	27	single
 
 RightToLeft	no
 IgnoreBaseGlyphs	no
@@ -6289,11 +7327,43 @@ x advance	GafIni.NoutD11	549
 x advance	GafIni.NoutD2	549
 x advance	GafIni.NoutD2H	549
 x advance	GafIni.NoutD2MM	549
+x advance	GafInvIni.HRk	549
+x advance	GafInvSep	549
+x advance	GafInvIni.HRoutD2	549
+x advance	GafInvIni.outD2	549
+x advance	GafInvIni.HRlow	549
+x advance	GafInvIni.HRoutT3	549
+x advance	GafInvIni.outD5	549
+x advance	GafInvIni.HRoutD1	549
+x advance	GafInvIni.HRoutT2N	549
+x advance	GafInvIni.k	549
+x advance	GafInvIni	549
+x advance	GafInvIni.outT2	549
+x advance	GafInvIni.outT2N	549
+x advance	GafInvIni.outT3	549
+x advance	GafInvIni.outS1	549
+x advance	GafInvIni.outD1	549
+x advance	GafInvIni.outD11	549
+x advance	GafInvIni.outD2MM	549
+x advance	GafInvIni.outD2H	549
+x advance	GafInvIni.outD2Y	549
+x advance	GafInvIni.HRoutD5	549
+x advance	GafInvIni.HRoutD2H	549
+x advance	GafInvIni.HRoutT2	549
+x advance	GafInvIni.outD2D	549
+x advance	GafInvIni.N	549
+x advance	GafInvIni.NoutT2	549
+x advance	GafInvIni.NoutT3	549
+x advance	GafInvIni.NoutD1	549
+x advance	GafInvIni.NoutD11	549
+x advance	GafInvIni.NoutD2	549
+x advance	GafInvIni.NoutD2H	549
+x advance	GafInvIni.NoutD2MM	549
 
 lookup end
 
 
-lookup	27	single
+lookup	28	single
 
 RightToLeft	no
 IgnoreBaseGlyphs	no
@@ -6539,11 +7609,43 @@ x advance	GafIni.NoutD11	610
 x advance	GafIni.NoutD2	610
 x advance	GafIni.NoutD2H	610
 x advance	GafIni.NoutD2MM	610
+x advance	GafInvIni.HRk	610
+x advance	GafInvSep	610
+x advance	GafInvIni.HRoutD2	610
+x advance	GafInvIni.outD2	610
+x advance	GafInvIni.HRlow	610
+x advance	GafInvIni.HRoutT3	610
+x advance	GafInvIni.outD5	610
+x advance	GafInvIni.HRoutD1	610
+x advance	GafInvIni.HRoutT2N	610
+x advance	GafInvIni.k	610
+x advance	GafInvIni	610
+x advance	GafInvIni.outT2	610
+x advance	GafInvIni.outT2N	610
+x advance	GafInvIni.outT3	610
+x advance	GafInvIni.outS1	610
+x advance	GafInvIni.outD1	610
+x advance	GafInvIni.outD11	610
+x advance	GafInvIni.outD2MM	610
+x advance	GafInvIni.outD2H	610
+x advance	GafInvIni.outD2Y	610
+x advance	GafInvIni.HRoutD5	610
+x advance	GafInvIni.HRoutD2H	610
+x advance	GafInvIni.HRoutT2	610
+x advance	GafInvIni.outD2D	610
+x advance	GafInvIni.N	610
+x advance	GafInvIni.NoutT2	610
+x advance	GafInvIni.NoutT3	610
+x advance	GafInvIni.NoutD1	610
+x advance	GafInvIni.NoutD11	610
+x advance	GafInvIni.NoutD2	610
+x advance	GafInvIni.NoutD2H	610
+x advance	GafInvIni.NoutD2MM	610
 
 lookup end
 
 
-lookup	28	single
+lookup	29	single
 
 RightToLeft	no
 IgnoreBaseGlyphs	no
@@ -6789,11 +7891,43 @@ x advance	GafIni.NoutD11	671
 x advance	GafIni.NoutD2	671
 x advance	GafIni.NoutD2H	671
 x advance	GafIni.NoutD2MM	671
+x advance	GafInvIni.HRk	671
+x advance	GafInvSep	671
+x advance	GafInvIni.HRoutD2	671
+x advance	GafInvIni.outD2	671
+x advance	GafInvIni.HRlow	671
+x advance	GafInvIni.HRoutT3	671
+x advance	GafInvIni.outD5	671
+x advance	GafInvIni.HRoutD1	671
+x advance	GafInvIni.HRoutT2N	671
+x advance	GafInvIni.k	671
+x advance	GafInvIni	671
+x advance	GafInvIni.outT2	671
+x advance	GafInvIni.outT2N	671
+x advance	GafInvIni.outT3	671
+x advance	GafInvIni.outS1	671
+x advance	GafInvIni.outD1	671
+x advance	GafInvIni.outD11	671
+x advance	GafInvIni.outD2MM	671
+x advance	GafInvIni.outD2H	671
+x advance	GafInvIni.outD2Y	671
+x advance	GafInvIni.HRoutD5	671
+x advance	GafInvIni.HRoutD2H	671
+x advance	GafInvIni.HRoutT2	671
+x advance	GafInvIni.outD2D	671
+x advance	GafInvIni.N	671
+x advance	GafInvIni.NoutT2	671
+x advance	GafInvIni.NoutT3	671
+x advance	GafInvIni.NoutD1	671
+x advance	GafInvIni.NoutD11	671
+x advance	GafInvIni.NoutD2	671
+x advance	GafInvIni.NoutD2H	671
+x advance	GafInvIni.NoutD2MM	671
 
 lookup end
 
 
-lookup	29	single
+lookup	30	single
 
 RightToLeft	no
 IgnoreBaseGlyphs	no
@@ -7039,11 +8173,43 @@ x advance	GafIni.NoutD11	732
 x advance	GafIni.NoutD2	732
 x advance	GafIni.NoutD2H	732
 x advance	GafIni.NoutD2MM	732
+x advance	GafInvIni.HRk	732
+x advance	GafInvSep	732
+x advance	GafInvIni.HRoutD2	732
+x advance	GafInvIni.outD2	732
+x advance	GafInvIni.HRlow	732
+x advance	GafInvIni.HRoutT3	732
+x advance	GafInvIni.outD5	732
+x advance	GafInvIni.HRoutD1	732
+x advance	GafInvIni.HRoutT2N	732
+x advance	GafInvIni.k	732
+x advance	GafInvIni	732
+x advance	GafInvIni.outT2	732
+x advance	GafInvIni.outT2N	732
+x advance	GafInvIni.outT3	732
+x advance	GafInvIni.outS1	732
+x advance	GafInvIni.outD1	732
+x advance	GafInvIni.outD11	732
+x advance	GafInvIni.outD2MM	732
+x advance	GafInvIni.outD2H	732
+x advance	GafInvIni.outD2Y	732
+x advance	GafInvIni.HRoutD5	732
+x advance	GafInvIni.HRoutD2H	732
+x advance	GafInvIni.HRoutT2	732
+x advance	GafInvIni.outD2D	732
+x advance	GafInvIni.N	732
+x advance	GafInvIni.NoutT2	732
+x advance	GafInvIni.NoutT3	732
+x advance	GafInvIni.NoutD1	732
+x advance	GafInvIni.NoutD11	732
+x advance	GafInvIni.NoutD2	732
+x advance	GafInvIni.NoutD2H	732
+x advance	GafInvIni.NoutD2MM	732
 
 lookup end
 
 
-lookup	30	single
+lookup	31	single
 
 RightToLeft	no
 IgnoreBaseGlyphs	no
@@ -7289,11 +8455,43 @@ x advance	GafIni.NoutD11	793
 x advance	GafIni.NoutD2	793
 x advance	GafIni.NoutD2H	793
 x advance	GafIni.NoutD2MM	793
+x advance	GafInvIni.HRk	793
+x advance	GafInvSep	793
+x advance	GafInvIni.HRoutD2	793
+x advance	GafInvIni.outD2	793
+x advance	GafInvIni.HRlow	793
+x advance	GafInvIni.HRoutT3	793
+x advance	GafInvIni.outD5	793
+x advance	GafInvIni.HRoutD1	793
+x advance	GafInvIni.HRoutT2N	793
+x advance	GafInvIni.k	793
+x advance	GafInvIni	793
+x advance	GafInvIni.outT2	793
+x advance	GafInvIni.outT2N	793
+x advance	GafInvIni.outT3	793
+x advance	GafInvIni.outS1	793
+x advance	GafInvIni.outD1	793
+x advance	GafInvIni.outD11	793
+x advance	GafInvIni.outD2MM	793
+x advance	GafInvIni.outD2H	793
+x advance	GafInvIni.outD2Y	793
+x advance	GafInvIni.HRoutD5	793
+x advance	GafInvIni.HRoutD2H	793
+x advance	GafInvIni.HRoutT2	793
+x advance	GafInvIni.outD2D	793
+x advance	GafInvIni.N	793
+x advance	GafInvIni.NoutT2	793
+x advance	GafInvIni.NoutT3	793
+x advance	GafInvIni.NoutD1	793
+x advance	GafInvIni.NoutD11	793
+x advance	GafInvIni.NoutD2	793
+x advance	GafInvIni.NoutD2H	793
+x advance	GafInvIni.NoutD2MM	793
 
 lookup end
 
 
-lookup	31	single
+lookup	32	single
 
 RightToLeft	no
 IgnoreBaseGlyphs	no
@@ -7539,11 +8737,43 @@ x advance	GafIni.NoutD11	854
 x advance	GafIni.NoutD2	854
 x advance	GafIni.NoutD2H	854
 x advance	GafIni.NoutD2MM	854
+x advance	GafInvIni.HRk	854
+x advance	GafInvSep	854
+x advance	GafInvIni.HRoutD2	854
+x advance	GafInvIni.outD2	854
+x advance	GafInvIni.HRlow	854
+x advance	GafInvIni.HRoutT3	854
+x advance	GafInvIni.outD5	854
+x advance	GafInvIni.HRoutD1	854
+x advance	GafInvIni.HRoutT2N	854
+x advance	GafInvIni.k	854
+x advance	GafInvIni	854
+x advance	GafInvIni.outT2	854
+x advance	GafInvIni.outT2N	854
+x advance	GafInvIni.outT3	854
+x advance	GafInvIni.outS1	854
+x advance	GafInvIni.outD1	854
+x advance	GafInvIni.outD11	854
+x advance	GafInvIni.outD2MM	854
+x advance	GafInvIni.outD2H	854
+x advance	GafInvIni.outD2Y	854
+x advance	GafInvIni.HRoutD5	854
+x advance	GafInvIni.HRoutD2H	854
+x advance	GafInvIni.HRoutT2	854
+x advance	GafInvIni.outD2D	854
+x advance	GafInvIni.N	854
+x advance	GafInvIni.NoutT2	854
+x advance	GafInvIni.NoutT3	854
+x advance	GafInvIni.NoutD1	854
+x advance	GafInvIni.NoutD11	854
+x advance	GafInvIni.NoutD2	854
+x advance	GafInvIni.NoutD2H	854
+x advance	GafInvIni.NoutD2MM	854
 
 lookup end
 
 
-lookup	32	single
+lookup	33	single
 
 RightToLeft	no
 IgnoreBaseGlyphs	no
@@ -7789,6 +9019,38 @@ x advance	GafIni.NoutD11	916
 x advance	GafIni.NoutD2	916
 x advance	GafIni.NoutD2H	916
 x advance	GafIni.NoutD2MM	916
+x advance	GafInvIni.HRk	916
+x advance	GafInvSep	916
+x advance	GafInvIni.HRoutD2	916
+x advance	GafInvIni.outD2	916
+x advance	GafInvIni.HRlow	916
+x advance	GafInvIni.HRoutT3	916
+x advance	GafInvIni.outD5	916
+x advance	GafInvIni.HRoutD1	916
+x advance	GafInvIni.HRoutT2N	916
+x advance	GafInvIni.k	916
+x advance	GafInvIni	916
+x advance	GafInvIni.outT2	916
+x advance	GafInvIni.outT2N	916
+x advance	GafInvIni.outT3	916
+x advance	GafInvIni.outS1	916
+x advance	GafInvIni.outD1	916
+x advance	GafInvIni.outD11	916
+x advance	GafInvIni.outD2MM	916
+x advance	GafInvIni.outD2H	916
+x advance	GafInvIni.outD2Y	916
+x advance	GafInvIni.HRoutD5	916
+x advance	GafInvIni.HRoutD2H	916
+x advance	GafInvIni.HRoutT2	916
+x advance	GafInvIni.outD2D	916
+x advance	GafInvIni.N	916
+x advance	GafInvIni.NoutT2	916
+x advance	GafInvIni.NoutT3	916
+x advance	GafInvIni.NoutD1	916
+x advance	GafInvIni.NoutD11	916
+x advance	GafInvIni.NoutD2	916
+x advance	GafInvIni.NoutD2H	916
+x advance	GafInvIni.NoutD2MM	916
 
 lookup end
 
