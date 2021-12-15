@@ -1,5 +1,15 @@
 {
-.appVersion = "998";
+.appVersion = "3106";
+classes = (
+{
+code = "u10B61 u10B63 u10B6A u10B6B u10B6D u10B6F u10B70 u10B72";
+name = class1;
+},
+{
+code = "u10B60 u10B62 u10B64 u10B65 u10B66 u10B67 u10B68 u10B69 u10B6C u10B6E u10B71";
+name = class2;
+}
+);
 copyright = "Copyright 2017 Google Inc. All Rights Reserved.";
 customParameters = (
 {
@@ -43,6 +53,29 @@ uni00A0
 );
 },
 {
+name = unicodeRanges;
+value = (
+0,
+1,
+57
+);
+},
+{
+name = "Has WWS Names";
+value = 1;
+},
+{
+name = fsType;
+value = (
+);
+},
+{
+name = codePageRanges;
+value = (
+1252
+);
+},
+{
 name = description;
 value = "Designed by Monotype design team.";
 },
@@ -59,35 +92,12 @@ name = vendorID;
 value = GOOG;
 },
 {
-name = unicodeRanges;
-value = (
-0,
-1,
-57
-);
-},
-{
 name = trademark;
 value = "Noto is a trademark of Google Inc.";
 },
 {
-name = "Has WWS Names";
-value = 1;
-},
-{
 name = versionString;
 value = "Version 2.000";
-},
-{
-name = fsType;
-value = (
-);
-},
-{
-name = codePageRanges;
-value = (
-"1252"
-);
 }
 );
 date = "2017-03-03 21:36:44 +0000";
@@ -96,6 +106,22 @@ designerURL = "http://www.monotype.com/studio";
 disablesAutomaticAlignment = 1;
 disablesNiceNames = 1;
 familyName = "Noto Sans Inscriptional Pahlavi";
+featurePrefixes = (
+{
+code = "languagesystem DFLT dflt;\012languagesystem phli dflt;\012";
+name = Languagesystems;
+}
+);
+features = (
+{
+code = "sub u10B61' @class1 by u10B61.alt01;\012sub u10B6B' [u10B6A u10B6D] by u10B6B.alt01;\012sub u10B61' @class2 by u10B61.alt02;\012";
+name = ccmp;
+},
+{
+code = "# Automatic Code Start\012pos u10B61.alt02' <117 0 117 0> @class2 @class1;\012";
+name = kern;
+}
+);
 fontMaster = (
 {
 alignmentZones = (
@@ -151,16 +177,16 @@ value = 50;
 {
 name = panose;
 value = (
-"2",
-"11",
-"5",
-"2",
-"4",
-"5",
-"4",
-"2",
-"2",
-"4"
+2,
+11,
+5,
+2,
+4,
+5,
+4,
+2,
+2,
+4
 );
 }
 );
@@ -1661,22 +1687,18 @@ instances = (
 {
 customParameters = (
 {
-name = weightClass;
-value = "400";
-},
-{
 name = panose;
 value = (
-"2",
-"11",
-"5",
-"2",
-"4",
-"5",
-"4",
-"2",
-"2",
-"4"
+2,
+11,
+5,
+2,
+4,
+5,
+4,
+2,
+2,
+4
 );
 },
 {
@@ -1726,10 +1748,9 @@ UUID0 = 1;
 name = Regular;
 }
 );
-keyboardIncrement = 0;
 manufacturer = "Monotype Imaging Inc.";
 manufacturerURL = "http://www.google.com/get/noto/";
 unitsPerEm = 1000;
 versionMajor = 2;
-versionMinor = 0;
+versionMinor = 1;
 }
