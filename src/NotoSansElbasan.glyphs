@@ -1,5 +1,5 @@
 {
-.appVersion = "1075";
+.appVersion = "3106";
 copyright = "Copyright 2018 Google Inc. All Rights Reserved.";
 customParameters = (
 {
@@ -87,6 +87,32 @@ overlinecmb.w4
 );
 },
 {
+name = unicodeRanges;
+value = (
+0,
+1,
+6,
+7,
+45,
+57
+);
+},
+{
+name = "Has WWS Names";
+value = 1;
+},
+{
+name = fsType;
+value = (
+);
+},
+{
+name = codePageRanges;
+value = (
+1252
+);
+},
+{
 name = description;
 value = "Designed by Monotype design team.";
 },
@@ -103,38 +129,12 @@ name = vendorID;
 value = GOOG;
 },
 {
-name = unicodeRanges;
-value = (
-0,
-1,
-6,
-7,
-45,
-57
-);
-},
-{
 name = trademark;
 value = "Noto is a trademark of Google Inc.";
 },
 {
-name = "Has WWS Names";
-value = 1;
-},
-{
 name = versionString;
 value = "Version 2.000";
-},
-{
-name = fsType;
-value = (
-);
-},
-{
-name = codePageRanges;
-value = (
-"1252"
-);
 }
 );
 date = "2018-02-05 20:23:03 +0000";
@@ -143,6 +143,18 @@ designerURL = "http://www.monotype.com/studio";
 disablesAutomaticAlignment = 1;
 disablesNiceNames = 1;
 familyName = "Noto Sans Elbasan";
+featurePrefixes = (
+{
+code = "languagesystem elba dflt;\012languagesystem grek dflt;\012";
+name = Languagesystems;
+}
+);
+features = (
+{
+code = "sub [Chi Delta Epsilon Gamma Pi Tau Upsilon Xi Zeta uni03DC uni03DE uni25CC] overlinecmb' by overlinecmb.w1;\012sub [Alpha Beta Kappa Lambda Rho Sigma uni03DA] overlinecmb' by overlinecmb.w2;\012sub [Eta Theta Nu Omicron] overlinecmb' by overlinecmb.w3;\012sub [Mu Phi Psi Omega] overlinecmb' by overlinecmb.w4;\012";
+name = ccmp;
+}
+);
 fontMaster = (
 {
 alignmentZones = (
@@ -2471,6 +2483,12 @@ glyphname = Alpha;
 lastChange = "2018-03-12 19:51:00 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{318, 714}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -2516,6 +2534,12 @@ glyphname = Beta;
 lastChange = "2018-03-12 19:51:00 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{325, 714}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -2581,6 +2605,12 @@ glyphname = Gamma;
 lastChange = "2018-03-12 19:51:00 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{275, 714}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -2610,6 +2640,12 @@ production = Delta;
 lastChange = "2018-03-12 19:51:00 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{291, 714}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -2653,6 +2689,12 @@ glyphname = Epsilon;
 lastChange = "2018-03-12 19:51:00 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{305, 714}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -2687,6 +2729,12 @@ glyphname = Zeta;
 lastChange = "2018-03-12 19:51:00 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{285, 714}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -2718,6 +2766,12 @@ glyphname = Eta;
 lastChange = "2018-03-12 19:51:00 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{371, 714}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -2752,6 +2806,12 @@ glyphname = Theta;
 lastChange = "2018-03-12 19:51:00 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{391, 714}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -2813,6 +2873,12 @@ glyphname = Iota;
 lastChange = "2018-03-12 19:51:00 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{170, 714}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -2848,6 +2914,12 @@ glyphname = Kappa;
 lastChange = "2018-03-12 19:51:00 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{320, 714}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -2885,6 +2957,12 @@ glyphname = Lambda;
 lastChange = "2018-03-12 19:51:00 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{304, 714}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -2921,6 +2999,12 @@ glyphname = Mu;
 lastChange = "2018-03-12 19:51:00 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{454, 714}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -2964,6 +3048,12 @@ glyphname = Nu;
 lastChange = "2018-03-12 19:51:00 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{380, 714}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -3003,6 +3093,12 @@ glyphname = Xi;
 lastChange = "2018-03-12 19:51:00 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{278, 714}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -3046,6 +3142,12 @@ glyphname = Omicron;
 lastChange = "2018-03-12 19:51:00 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{391, 714}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -3098,6 +3200,12 @@ glyphname = Pi;
 lastChange = "2018-03-12 19:51:00 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{366, 714}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -3127,6 +3235,12 @@ glyphname = Rho;
 lastChange = "2018-03-12 19:51:00 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{287, 714}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -3174,6 +3288,12 @@ glyphname = Sigma;
 lastChange = "2018-03-12 19:51:00 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{320, 714}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -3221,6 +3341,12 @@ glyphname = Tau;
 lastChange = "2018-03-12 19:51:00 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{278, 714}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -3251,6 +3377,12 @@ glyphname = Upsilon;
 lastChange = "2018-03-12 19:51:00 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{283, 714}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -3283,6 +3415,12 @@ glyphname = Phi;
 lastChange = "2018-03-12 19:51:00 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{402, 714}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -3346,6 +3484,12 @@ glyphname = Chi;
 lastChange = "2018-03-12 19:51:00 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{292, 714}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -3380,6 +3524,12 @@ glyphname = Psi;
 lastChange = "2018-03-12 19:51:00 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{402, 714}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -3426,6 +3576,12 @@ production = Omega;
 lastChange = "2018-03-12 19:51:00 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{391, 714}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -3480,6 +3636,12 @@ glyphname = uni03DA;
 lastChange = "2018-03-12 19:51:00 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{307, 714}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -3524,6 +3686,12 @@ glyphname = uni03DC;
 lastChange = "2018-03-12 19:51:00 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{267, 714}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -3557,6 +3725,12 @@ glyphname = uni03DE;
 lastChange = "2018-03-12 19:51:00 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{248, 714}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -3622,6 +3796,12 @@ glyphname = uni25CC;
 lastChange = "2018-03-12 19:51:00 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{297, 714}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -3940,6 +4120,12 @@ production = overlinecmb;
 lastChange = "2018-03-12 19:50:58 +0000";
 layers = (
 {
+anchors = (
+{
+name = _Anchor2;
+position = "{0, 636}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -3957,6 +4143,7 @@ width = 0;
 );
 unicode = 0305;
 category = Mark;
+subCategory = Nonspacing;
 },
 {
 glyphname = overlinecmb.w1;
@@ -3964,6 +4151,12 @@ production = overlinecmb.w1;
 lastChange = "2018-03-12 19:50:58 +0000";
 layers = (
 {
+anchors = (
+{
+name = _Anchor2;
+position = "{0, 636}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -3980,6 +4173,7 @@ width = 0;
 }
 );
 category = Mark;
+subCategory = Nonspacing;
 },
 {
 glyphname = overlinecmb.w2;
@@ -3987,6 +4181,12 @@ production = overlinecmb.w2;
 lastChange = "2018-03-12 19:50:58 +0000";
 layers = (
 {
+anchors = (
+{
+name = _Anchor2;
+position = "{0, 636}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -4003,6 +4203,7 @@ width = 0;
 }
 );
 category = Mark;
+subCategory = Nonspacing;
 },
 {
 glyphname = overlinecmb.w3;
@@ -4010,6 +4211,12 @@ production = overlinecmb.w3;
 lastChange = "2018-03-12 19:50:58 +0000";
 layers = (
 {
+anchors = (
+{
+name = _Anchor2;
+position = "{0, 636}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -4026,6 +4233,7 @@ width = 0;
 }
 );
 category = Mark;
+subCategory = Nonspacing;
 },
 {
 glyphname = overlinecmb.w4;
@@ -4033,6 +4241,12 @@ production = overlinecmb.w4;
 lastChange = "2018-03-12 19:50:58 +0000";
 layers = (
 {
+anchors = (
+{
+name = _Anchor2;
+position = "{0, 636}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -4049,28 +4263,25 @@ width = 0;
 }
 );
 category = Mark;
+subCategory = Nonspacing;
 }
 );
 instances = (
 {
 customParameters = (
 {
-name = weightClass;
-value = "400";
-},
-{
 name = panose;
 value = (
-"2",
-"11",
-"5",
-"2",
-"4",
-"5",
-"4",
-"2",
-"2",
-"4"
+2,
+11,
+5,
+2,
+4,
+5,
+4,
+2,
+2,
+4
 );
 },
 {
@@ -4088,5 +4299,5 @@ manufacturer = "Monotype Imaging Inc.";
 manufacturerURL = "http://www.google.com/get/noto/";
 unitsPerEm = 1000;
 versionMajor = 2;
-versionMinor = 0;
+versionMinor = 1;
 }
