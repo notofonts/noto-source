@@ -1,16 +1,25 @@
 {
-.appVersion = "1075";
+.appVersion = "3106";
 classes = (
 {
-automatic = 1;
-code = "u112B0 u112B1 u112B2 u112B3 u112B4 u112B5 u112B6 u112B7 u112B8 u112B9 u112BA u112BB u112BC u112BD u112BE u112BF u112C0 u112C1 u112C2 u112C3 u112C4 u112C5 u112C6 u112C7 u112C8 u112C9 u112CA u112CB u112CC u112CD u112CE u112CF u112D0 u112D1 u112D2 u112D3 u112D4 u112D5 u112D6 u112D7 u112D8 u112D9 u112DA u112DB u112DC u112DD u112DE u112E1_u112C0 u112C0_u112E2 u112E1_u112C3 u112C3_u112E2 u112E1_u112D1 u112D1_u112E2 u112E1_u112D4 u112D4_u112E2 u112D6_u112E2 u112E1_u112BD u112E1_u112D7";
-disabled = 1;
+code = "u112BA u112BE u112BF u112C1 u112C5 u112C6 u112C8 u112CB u112CD u112D2 u112D7 u112D9 u112DA u112DB u112DE u112DF";
 name = class1;
 },
 {
-code = "u112B0 u112B1 u112B2 u112B3 u112B4 u112B5 u112B6 u112B7 u112B8 u112B9 u112BA u112BB u112BC u112BD u112BE u112BF u112C0 u112C1 u112C2 u112C3 u112C4 u112C5 u112C6 u112C7 u112C8 u112C9 u112CA u112CB u112CC u112CD u112CE u112CF u112D0 u112D1 u112D2 u112D3 u112D4 u112D5 u112D6 u112D7 u112D8 u112D9 u112DA u112DB u112DC u112DD u112DE u112E1 u112E2 u112E1_u112C0 u112C0_u112E2 u112E1_u112C3 u112C3_u112E2 u112E1_u112D1 u112D1_u112E2 u112E1_u112D4 u112D4_u112E2 u112D6_u112E2 u112E1_u112BD u112E1_u112D7";
-disabled = 1;
+code = "u112CB u112CE u112D1 u112D2 u112D4 u112D6";
+name = class2;
+},
+{
+code = "u112BA u112BB u112BD u112C3 u112C7 u112CC u112D7";
 name = class3;
+},
+{
+code = "u112DF u112E5 u112E6 u112E7 u112E8 u112E8.alt u112E7.alt u112E7_straight u112E7_straight.alt";
+name = markAttachmentSet1;
+},
+{
+code = "u112C4 u112CD u112D1 u112D4 u112D6 u112DC u112DE";
+name = class6;
 }
 );
 copyright = "Copyright 2018 Google Inc. All Rights Reserved.";
@@ -131,6 +140,32 @@ u112E1.alt3
 );
 },
 {
+name = unicodeRanges;
+value = (
+0,
+1,
+15,
+31,
+45,
+57
+);
+},
+{
+name = "Has WWS Names";
+value = 1;
+},
+{
+name = fsType;
+value = (
+);
+},
+{
+name = codePageRanges;
+value = (
+1252
+);
+},
+{
 name = description;
 value = "Designed by Monotype design team.";
 },
@@ -147,38 +182,12 @@ name = vendorID;
 value = GOOG;
 },
 {
-name = unicodeRanges;
-value = (
-0,
-1,
-15,
-31,
-45,
-57
-);
-},
-{
 name = trademark;
 value = "Noto is a trademark of Google Inc.";
 },
 {
-name = "Has WWS Names";
-value = 1;
-},
-{
 name = versionString;
 value = "Version 2.000";
-},
-{
-name = fsType;
-value = (
-);
-},
-{
-name = codePageRanges;
-value = (
-1252
-);
 }
 );
 date = "2015-12-09 22:23:08 +0000";
@@ -189,31 +198,62 @@ disablesNiceNames = 1;
 familyName = "Noto Sans Khudawadi";
 featurePrefixes = (
 {
-code = "languagesystem DFLT dflt;";
-disabled = 1;
-name = "FontLab OTPanel";
+code = "lookup SingleSubstitution6 {\012    lookupflag 0;\012    ;\012    # Original source: 5 \012    sub u112E1 by u112E1.alt3;\012} SingleSubstitution6;\012";
+name = SingleSubstitution6;
+},
+{
+code = "lookup SingleSubstitution4 {\012    lookupflag 0;\012    ;\012    # Original source: 3 \012    sub u112E1 by u112E1.alt;\012    sub u112E2 by u112E2.alt;\012    sub u112E7 by u112E7.alt;\012    sub u112E8 by u112E8.alt;\012} SingleSubstitution4;\012";
+name = SingleSubstitution4;
+},
+{
+code = "lookup SingleSubstitution5 {\012    lookupflag 0;\012    ;\012    # Original source: 4 \012    sub u112E1 by u112E1.alt2;\012    sub u112E7 by u112E7_straight;\012    sub u112E7.alt by u112E7_straight.alt;\012} SingleSubstitution5;\012";
+name = SingleSubstitution5;
+},
+{
+code = "lookup PairPositioning12 {\012\012} PairPositioning12;\012";
+name = PairPositioning12;
+},
+{
+code = "lookup SinglePositioning21 {\012    lookupflag 0;\012    ;\012    # Original source: 13 \012    pos u112DF <-100 0 0 0>;\012} SinglePositioning21;\012";
+name = SinglePositioning21;
+},
+{
+code = "lookup SinglePositioning18 {\012    lookupflag 0;\012    ;\012    # Original source: 10 \012    pos u112DF <40 0 0 0>;\012} SinglePositioning18;\012";
+name = SinglePositioning18;
+},
+{
+code = "lookup SinglePositioning20 {\012    lookupflag 0;\012    ;\012    # Original source: 12 \012    pos u112DF <-70 0 0 0>;\012} SinglePositioning20;\012";
+name = SinglePositioning20;
+},
+{
+code = "lookup SinglePositioning19 {\012    lookupflag 0;\012    ;\012    # Original source: 11 \012    pos u112DF <50 0 0 0>;\012} SinglePositioning19;\012";
+name = SinglePositioning19;
+},
+{
+code = "lookup ContextualGPOS17 {\012\012} ContextualGPOS17;\012";
+name = ContextualGPOS17;
+},
+{
+code = "languagesystem sind dflt;\012";
+name = Languagesystems;
 }
 );
 features = (
 {
-code = "# Mark Positioning\012 # DEFAULT\012lookup mark0 {\012#    mark u112E3 0 0;\012#    mark u112E4 0 0;\012#    mark u112E9 60 40;\012#    mark u112EA 60 0;\012#    pos u112B0 mark [u112E3 u112E4 u112E9 u112EA] 530 0;\012#    pos u112B1 mark [u112E3 u112E4 u112E9 u112EA] 530 0;\012#    pos u112B2 mark [u112E3 u112E4 u112E9 u112EA] 264 0;\012#    pos u112B3 mark [u112E3 u112E4 u112E9 u112EA] 446 0;\012#    pos u112B4 mark [u112E3 u112E4 u112E9 u112EA] 340 0;\012#    pos u112B5 mark [u112E3 u112E4 u112E9 u112EA] 340 0;\012#    pos u112B6 mark [u112E3 u112E4 u112E9 u112EA] 530 0;\012#    pos u112B7 mark [u112E3 u112E4 u112E9 u112EA] 530 0;\012#    pos u112B8 mark [u112E3 u112E4 u112E9 u112EA] 530 0;\012#    pos u112B9 mark [u112E3 u112E4 u112E9 u112EA] 530 0;\012#    pos u112BA mark [u112E3 u112E4 u112E9 u112EA] 450 0;\012#    pos u112BB mark [u112E3 u112E4 u112E9 u112EA] 352 0;\012#    pos u112BC mark [u112E3 u112E4 u112E9 u112EA] 320 0;\012#    pos u112BD mark [u112E3 u112E4 u112E9 u112EA] 387 0;\012#    pos u112BE mark [u112E3 u112E4 u112E9 u112EA] 296 0;\012#    pos u112BF mark [u112E3 u112E4 u112E9 u112EA] 268 0;\012#    pos u112C0 mark [u112E3 u112E4 u112E9 u112EA] 285 0;\012#    pos u112C1 mark [u112E3 u112E4 u112E9 u112EA] 324 0;\012#    pos u112C2 mark [u112E3 u112E4 u112E9 u112EA] 408 0;\012#    pos u112C3 mark [u112E3 u112E4 u112E9 u112EA] 450 0;\012#    pos u112C4 mark [u112E3 u112E4 u112E9 u112EA] 410 0;\012#    pos u112C5 mark [u112E3 u112E4 u112E9 u112EA] 247 0;\012#    pos u112C6 mark [u112E3 u112E4 u112E9 u112EA] 324 0;\012#    pos u112C7 mark [u112E3 u112E4 u112E9 u112EA] 373 0;\012#    pos u112C8 mark [u112E3 u112E4 u112E9 u112EA] 345 0;\012#    pos u112C9 mark [u112E3 u112E4 u112E9 u112EA] 261 0;\012#    pos u112CA mark [u112E3 u112E4 u112E9 u112EA] 226 0;\012#    pos u112CB mark [u112E3 u112E4 u112E9 u112EA] 345 0;\012#    pos u112CC mark [u112E3 u112E4 u112E9 u112EA] 380 -200;\012#    pos u112CD mark [u112E3 u112E4 u112E9 u112EA] 268 0;\012#    pos u112CE mark [u112E3 u112E4 u112E9 u112EA] 401 0;\012#    pos u112CF mark [u112E3 u112E4 u112E9 u112EA] 380 0;\012#    pos u112D0 mark [u112E3 u112E4 u112E9 u112EA] 320 0;\012#    pos u112D1 mark [u112E3 u112E4 u112E9 u112EA] 275 0;\012#    pos u112D2 mark [u112E3 u112E4 u112E9 u112EA] 331 0;\012#    pos u112D3 mark [u112E3 u112E4 u112E9 u112EA] 282 0;\012#    pos u112D4 mark [u112E3 u112E4 u112E9 u112EA] 373 0;\012#    pos u112D5 mark [u112E3 u112E4 u112E9 u112EA] 387 0;\012#    pos u112D6 mark [u112E3 u112E4 u112E9 u112EA] 513 0;\012#    pos u112D7 mark [u112E3 u112E4 u112E9 u112EA] 300 0;\012#    pos u112D8 mark [u112E3 u112E4 u112E9 u112EA] 422 0;\012#    pos u112D9 mark [u112E3 u112E4 u112E9 u112EA] 240 0;\012#    pos u112DA mark [u112E3 u112E4 u112E9 u112EA] 275 0;\012#    pos u112DB mark [u112E3 u112E4 u112E9 u112EA] 320 0;\012#    pos u112DC mark [u112E3 u112E4 u112E9 u112EA] 394 0;\012#    pos u112DD mark [u112E3 u112E4 u112E9 u112EA] 359 0;\012#    pos u112DE mark [u112E3 u112E4 u112E9 u112EA] 310 0;\012#    pos u112E1_u112C0 mark [u112E3 u112E4 u112E9 u112EA] 546 0;\012#    pos u112C0_u112E2 mark [u112E3 u112E4 u112E9 u112EA] 196 0;\012#    pos u112E1_u112C3 mark [u112E3 u112E4 u112E9 u112EA] 805 0;\012#    pos u112C3_u112E2 mark [u112E3 u112E4 u112E9 u112EA] 448 0;\012#    pos u112E1_u112D1 mark [u112E3 u112E4 u112E9 u112EA] 630 0;\012#    pos u112D1_u112E2 mark [u112E3 u112E4 u112E9 u112EA] 245 0;\012#    pos u112E1_u112D4 mark [u112E3 u112E4 u112E9 u112EA] 749 0;\012#    pos u112D4_u112E2 mark [u112E3 u112E4 u112E9 u112EA] 378 0;\012#    pos u112D6_u112E2 mark [u112E3 u112E4 u112E9 u112EA] 511 0;\012#    pos u112E1_u112BD mark [u112E3 u112E4 u112E9 u112EA] 658 0;\012#    pos u112E1_u112D7 mark [u112E3 u112E4 u112E9 u112EA] 680 0;\012} mark0;\012lookup mark1 {\012#    mark u112E5 330 590;\012#    mark u112E6 330 590;\012#    mark u112E7 468 590;\012#    mark u112E8 390 570;\012#    pos u112B0 mark [u112E5 u112E6 u112E7 u112E8] 0 0;\012#    pos u112B1 mark [u112E5 u112E6 u112E7 u112E8] 0 0;\012#    pos u112B2 mark [u112E5 u112E6 u112E7 u112E8] 0 0;\012#    pos u112B3 mark [u112E5 u112E6 u112E7 u112E8] 0 0;\012#    pos u112B4 mark [u112E5 u112E6 u112E7 u112E8] 0 0;\012#    pos u112B5 mark [u112E5 u112E6 u112E7 u112E8] 0 0;\012#    pos u112B6 mark [u112E5 u112E6 u112E7 u112E8] 0 0;\012#    pos u112B7 mark [u112E5 u112E6 u112E7 u112E8] 0 0;\012#    pos u112B8 mark [u112E5 u112E6 u112E7 u112E8] 0 0;\012#    pos u112B9 mark [u112E5 u112E6 u112E7 u112E8] 0 0;\012#    pos u112BA mark [u112E5 u112E6 u112E7 u112E8] 510 600;\012#    pos u112BB mark [u112E5 u112E6 u112E7 u112E8] 400 580;\012#    pos u112BC mark [u112E5 u112E6 u112E7 u112E8] 390 600;\012#    pos u112BD mark [u112E5 u112E6 u112E7 u112E8] 540 600;\012#    pos u112BE mark [u112E5 u112E6 u112E7 u112E8] 320 600;\012#    pos u112BF mark [u112E5 u112E6 u112E7 u112E8] 360 580;\012#    pos u112C0 mark [u112E5 u112E6 u112E7 u112E8] 510 600;\012#    pos u112C1 mark [u112E5 u112E6 u112E7 u112E8] 334 600;\012#    pos u112C2 mark [u112E5 u112E6 u112E7 u112E8] 540 570;\012#    pos u112C3 mark [u112E5 u112E6 u112E7 u112E8] 901 600;\012#    pos u112C4 mark [u112E5 u112E6 u112E7 u112E8] 550 580;\012#    pos u112C5 mark [u112E5 u112E6 u112E7 u112E8] 299 600;\012#    pos u112C6 mark [u112E5 u112E6 u112E7 u112E8] 411 600;\012#    pos u112C7 mark [u112E5 u112E6 u112E7 u112E8] 475 580;\012#    pos u112C8 mark [u112E5 u112E6 u112E7 u112E8] 400 580;\012#    pos u112C9 mark [u112E5 u112E6 u112E7 u112E8] 392 600;\012#    pos u112CA mark [u112E5 u112E6 u112E7 u112E8] 330 580;\012#    pos u112CB mark [u112E5 u112E6 u112E7 u112E8] 412 600;\012#    pos u112CC mark [u112E5 u112E6 u112E7 u112E8] 550 600;\012#    pos u112CD mark [u112E5 u112E6 u112E7 u112E8] 380 590;\012#    pos u112CE mark [u112E5 u112E6 u112E7 u112E8] 650 580;\012#    pos u112CF mark [u112E5 u112E6 u112E7 u112E8] 490 580;\012#    pos u112D0 mark [u112E5 u112E6 u112E7 u112E8] 380 580;\012#    pos u112D1 mark [u112E5 u112E6 u112E7 u112E8] 775 580;\012#    pos u112D2 mark [u112E5 u112E6 u112E7 u112E8] 500 600;\012#    pos u112D3 mark [u112E5 u112E6 u112E7 u112E8] 415 580;\012#    pos u112D4 mark [u112E5 u112E6 u112E7 u112E8] 820 560;\012#    pos u112D5 mark [u112E5 u112E6 u112E7 u112E8] 439 600;\012#    pos u112D6 mark [u112E5 u112E6 u112E7 u112E8] 930 570;\012#    pos u112D7 mark [u112E5 u112E6 u112E7 u112E8] 420 600;\012#    pos u112D8 mark [u112E5 u112E6 u112E7 u112E8] 558 600;\012#    pos u112D9 mark [u112E5 u112E6 u112E7 u112E8] 360 580;\012#    pos u112DA mark [u112E5 u112E6 u112E7 u112E8] 330 570;\012#    pos u112DB mark [u112E5 u112E6 u112E7 u112E8] 390 580;\012#    pos u112DC mark [u112E5 u112E6 u112E7 u112E8] 540 580;\012#    pos u112DD mark [u112E5 u112E6 u112E7 u112E8] 465 580;\012#    pos u112DE mark [u112E5 u112E6 u112E7 u112E8] 390 580;\012#    pos u112E1 mark [u112E5 u112E6 u112E7 u112E8] 0 0;\012#    pos u112E2 mark [u112E5 u112E6 u112E7 u112E8] 0 0;\012#    pos u112E1_u112C0 mark [u112E5 u112E6 u112E7 u112E8] 0 0;\012#    pos u112C0_u112E2 mark [u112E5 u112E6 u112E7 u112E8] 0 0;\012#    pos u112E1_u112C3 mark [u112E5 u112E6 u112E7 u112E8] 0 0;\012#    pos u112C3_u112E2 mark [u112E5 u112E6 u112E7 u112E8] 0 0;\012#    pos u112E1_u112D1 mark [u112E5 u112E6 u112E7 u112E8] 0 0;\012#    pos u112D1_u112E2 mark [u112E5 u112E6 u112E7 u112E8] 0 0;\012#    pos u112E1_u112D4 mark [u112E5 u112E6 u112E7 u112E8] 0 0;\012#    pos u112D4_u112E2 mark [u112E5 u112E6 u112E7 u112E8] 0 0;\012#    pos u112D6_u112E2 mark [u112E5 u112E6 u112E7 u112E8] 0 0;\012#    pos u112E1_u112BD mark [u112E5 u112E6 u112E7 u112E8] 0 0;\012#    pos u112E1_u112D7 mark [u112E5 u112E6 u112E7 u112E8] 0 0;\012#    mark u112DF 0 680;\012#    pos u112B0 mark u112DF 540 680;\012#    pos u112B1 mark u112DF 540 680;\012#    pos u112B2 mark u112DF 344 680;\012#    pos u112B3 mark u112DF 442 680;\012#    pos u112B4 mark u112DF 344 680;\012#    pos u112B5 mark u112DF 372 865;\012#    pos u112B6 mark u112DF 666 790;\012#    pos u112B7 mark u112DF 729 850;\012#    pos u112B8 mark u112DF 540 800;\012#    pos u112B9 mark u112DF 540 820;\012#    pos u112BA mark u112DF 400 680;\012#    pos u112BB mark u112DF 274 680;\012#    pos u112BC mark u112DF 288 680;\012#    pos u112BD mark u112DF 463 680;\012#    pos u112BE mark u112DF 288 680;\012#    pos u112BF mark u112DF 260 680;\012#    pos u112C0 mark u112DF 281 680;\012#    pos u112C1 mark u112DF 365 680;\012#    pos u112C2 mark u112DF 400 680;\012#    pos u112C3 mark u112DF 435 680;\012#    pos u112C4 mark u112DF 421 680;\012#    pos u112C5 mark u112DF 260 680;\012#    pos u112C6 mark u112DF 302 680;\012#    pos u112C7 mark u112DF 372 680;\012#    pos u112C8 mark u112DF 302 680;\012#    pos u112C9 mark u112DF 253 680;\012#    pos u112CA mark u112DF 253 680;\012#    pos u112CB mark u112DF 316 680;\012#    pos u112CC mark u112DF 351 680;\012#    pos u112CD mark u112DF 288 680;\012#    pos u112CE mark u112DF 400 680;\012#    pos u112CF mark u112DF 365 680;\012#    pos u112D0 mark u112DF 288 680;\012#    pos u112D1 mark u112DF 400 680;\012#    pos u112D2 mark u112DF 288 680;\012#    pos u112D3 mark u112DF 295 680;\012#    pos u112D4 mark u112DF 442 680;\012#    pos u112D5 mark u112DF 365 680;\012#    pos u112D6 mark u112DF 582 680;\012#    pos u112D7 mark u112DF 400 680;\012#    pos u112D8 mark u112DF 435 680;\012#    pos u112D9 mark u112DF 280 680;\012#    pos u112DA mark u112DF 246 680;\012#    pos u112DB mark u112DF 316 680;\012#    pos u112DC mark u112DF 344 680;\012#    pos u112DD mark u112DF 300 680;\012#    pos u112DE mark u112DF 302 680;\012#    pos u112E1 mark u112DF 294 870;\012#    pos u112E2 mark u112DF -42 870;\012#    pos u112E1_u112C0 mark u112DF 245 830;\012#    pos u112C0_u112E2 mark u112DF 497 830;\012#    pos u112E1_u112C3 mark u112DF 290 830;\012#    pos u112C3_u112E2 mark u112DF 938 830;\012#    pos u112E1_u112D1 mark u112DF 273 830;\012#    pos u112D1_u112E2 mark u112DF 840 830;\012#    pos u112E1_u112D4 mark u112DF 280 830;\012#    pos u112D4_u112E2 mark u112DF 980 830;\012#    pos u112D6_u112E2 mark u112DF 1134 830;\012#    pos u112E1_u112BD mark u112DF 378 830;\012#    pos u112E1_u112D7 mark u112DF 287 830;\012} mark1;\012";
-disabled = 1;
-name = mark;
+code = "lookupflag IgnoreMarks;\012sub u112C0 u112E2 by u112C0_u112E2;\012sub u112C3 u112E2 by u112C3_u112E2;\012sub u112D1 u112E2 by u112D1_u112E2;\012sub u112D4 u112E2 by u112D4_u112E2;\012sub u112D6 u112E2 by u112D6_u112E2;";
+name = abvf;
 },
 {
-code = "# Mark to Mark Positioning\012 # DEFAULT\012";
-disabled = 1;
-name = mkmk;
+code = "lookupflag IgnoreMarks;\012sub u112E1 u112BD by u112E1_u112BD;\012sub u112E1 u112C0 by u112E1_u112C0;\012sub u112E1 u112C3 by u112E1_u112C3;\012sub u112E1 u112D1 by u112E1_u112D1;\012sub u112E1 u112D4 by u112E1_u112D4;\012sub u112E1 u112D7 by u112E1_u112D7;\012\012lookupflag MarkAttachmentType @markAttachmentSet1;\012sub @class1' [u112E7 u112E7.alt]' lookup SingleSubstitution4;\012sub [u112C9 u112CA]' [u112E7 u112E7.alt]' lookup SingleSubstitution4;\012sub [u112C9 u112CA]' u112E8' lookup SingleSubstitution4;\012sub u112BB' [u112E7 u112E7.alt]' lookup SingleSubstitution4;\012sub @class2 [u112E7 u112E7.alt]' lookup SingleSubstitution5;\012sub @class3 [u112E7 u112E7.alt]' lookup SingleSubstitution5;\012sub @class3 u112E2' lookup SingleSubstitution4;\012sub u112E1' lookup SingleSubstitution4 u112BB';\012sub u112E1' lookup SingleSubstitution5 u112CC';\012sub u112E1' lookup SingleSubstitution4 u112D5';\012sub u112E1' lookup SingleSubstitution6 u112CE';\012\012lookupflag 0;\012sub @class2' [u112E7 u112E7.alt]' lookup SingleSubstitution5;\012";
+name = abvs;
 },
 {
-code = "# Distances\012 # DEFAULT\012lookup dist3 {\012    pos u112E1 u112BB 120;\012    pos u112E1 u112BD -130;\012    pos u112E1 u112C0 180;\012    pos u112E1 u112C2 -80;\012    pos u112E1 u112C3 160;\012    pos u112E1 u112C4 -20;\012    pos u112E1 u112CC 85;\012    pos u112E1 u112CE 84;\012    pos u112E1 u112D1 150;\012    pos u112E1 u112D2 -50;\012    pos u112E1 u112D4 150;\012    pos u112E1 u112D5 110;\012    pos u112E1 u112D7 155;\012} dist3;\012lookup dist4 {\012    pos u112BD u112E2 128;\012    pos u112BF u112E2 -50;\012    pos u112C0 u112E2 200;\012    pos u112C1 u112E2 -40;\012    pos u112C3 u112E2 130;\012    pos u112C5 u112E2 0;\012    pos u112CB u112E2 -65;\012    pos u112CC u112E2 130;\012    pos u112CE u112E2 135;\012    pos u112D1 u112E2 190;\012    pos u112D2 u112E2 130;\012    pos u112D4 u112E2 210;\012    pos u112D5 u112E2 80;\012    pos u112D6 u112E2 200;\012    pos u112DA u112E2 -60;\012} dist4;\012";
-disabled = 1;
+code = "# Automatic Code Start\012lookupflag IgnoreMarks;\012;\012pos u112E1 <NULL> u112BD <-130 0 -130 0>;\012pos u112E1 <NULL> u112C0 <180 0 180 0>;\012pos u112E1 <NULL> u112C2 <-80 0 -80 0>;\012pos u112E1 <NULL> u112C3 <160 0 160 0>;\012pos u112E1 <NULL> u112C4 <-20 0 -20 0>;\012pos u112E1 <NULL> u112D1 <150 0 150 0>;\012pos u112E1 <NULL> u112D4 <150 0 150 0>;\012pos u112E1 <NULL> u112D7 <155 0 155 0>;\012pos u112E1.alt <NULL> u112BB <100 0 100 0>;\012pos u112E1.alt <NULL> u112D5 <89 0 89 0>;\012pos u112E1.alt2 <NULL> u112CC <77 0 77 0>;\012pos u112E1.alt3 <NULL> u112CE <85 0 85 0>;\012subtable;\012pos u112BB <NULL> u112E2.alt <-8 0 -8 0>;\012pos u112BD <NULL> u112E2.alt <94 0 94 0>;\012pos u112BF <NULL> u112E2 <-50 0 -50 0>;\012pos u112C0 <NULL> u112E2 <200 0 200 0>;\012pos u112C1 <NULL> u112E2 <-40 0 -40 0>;\012pos u112C3 <NULL> u112E2 <130 0 130 0>;\012pos u112C5 <NULL> u112E2 <-80 0 0 0>;\012pos u112CB <NULL> u112E2 <-65 0 -65 0>;\012pos u112CC <NULL> u112E2.alt <92 0 92 0>;\012pos u112CE <NULL> u112E2 <95 0 95 0>;\012pos u112D1 <NULL> u112E2 <190 0 190 0>;\012pos u112D2 <NULL> u112E2 <93 0 93 0>;\012pos u112D4 <NULL> u112E2 <210 0 210 0>;\012pos u112D5 <NULL> u112E2 <80 0 80 0>;\012pos u112D6 <NULL> u112E2 <200 0 200 0>;\012pos u112DA <NULL> u112E2 <-60 0 -60 0>;\012pos u112DC <NULL> u112E2 <93 0 93 0>;\012pos u112DD <NULL> u112E2 <93 0 93 0>;\012";
 name = dist;
 },
 {
-code = "# Glyph Composition / Decomposition\012 # DEFAULT\012lookupflag IgnoreMarks;\012    sub u112C0 u112E2 by u112C0_u112E2;\012    sub u112C3 u112E2 by u112C3_u112E2;\012    sub u112D1 u112E2 by u112D1_u112E2;\012    sub u112D4 u112E2 by u112D4_u112E2;\012    sub u112D6 u112E2 by u112D6_u112E2;\012    sub u112E1 u112C0 by u112E1_u112C0;\012    sub u112E1 u112C3 by u112E1_u112C3;\012    sub u112E1 u112D1 by u112E1_u112D1;\012    sub u112E1 u112D4 by u112E1_u112D4;\012    sub u112E1 u112BD by u112E1_u112BD;\012    sub u112E1 u112D7 by u112E1_u112D7;\012";
-disabled = 1;
-name = ccmp;
+code = "# Automatic Code Start\012\012\012lookupflag MarkAttachmentType @markAttachmentSet1;\012pos u112D1 <NULL> u112E7_straight <0 3 0 0>;\012pos u112D4 <NULL> u112E7_straight <9 -25 0 0>;\012pos u112D6 <NULL> u112E7_straight <0 3 0 0>;\012\012lookupflag MarkAttachmentType @markAttachmentSet1;\012pos u112E1' [u112BF u112D2 u112D9 u112DA]' u112DF' lookup SinglePositioning18;\012pos [u112C9 u112CA]' [u112BF u112D2 u112D9 u112DA]' u112DF' lookup SinglePositioning18;\012pos [u112C9 u112CA]' u112E0' u112DF' lookup SinglePositioning19;\012pos @class6' u112E0' u112DF' lookup SinglePositioning20;\012pos [u112C3 u112C5 u112D3 u112D8]' [u112BF u112D2 u112D9 u112DA]' u112DF' lookup SinglePositioning18;\012pos [u112C3 u112C5 u112D3 u112D8]' u112E0' u112DF' lookup SinglePositioning21;\012";
+name = abvm;
 }
 );
 fontMaster = (
@@ -1155,6 +1195,16 @@ glyphname = u112B0;
 lastChange = "2018-06-07 20:09:45 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor4;
+position = "{530, 0}";
+},
+{
+name = Anchor9;
+position = "{540, 680}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -1238,6 +1288,16 @@ glyphname = u112B1;
 lastChange = "2018-06-07 20:09:45 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor4;
+position = "{530, 0}";
+},
+{
+name = Anchor9;
+position = "{540, 680}";
+}
+);
 components = (
 {
 name = u112B0;
@@ -1260,6 +1320,16 @@ glyphname = u112B2;
 lastChange = "2018-06-07 20:09:45 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor4;
+position = "{264, 0}";
+},
+{
+name = Anchor9;
+position = "{344, 680}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -1305,6 +1375,16 @@ glyphname = u112B3;
 lastChange = "2018-06-07 20:09:45 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor4;
+position = "{446, 0}";
+},
+{
+name = Anchor9;
+position = "{442, 680}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -1374,6 +1454,16 @@ glyphname = u112B4;
 lastChange = "2018-06-07 20:09:45 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor4;
+position = "{340, 0}";
+},
+{
+name = Anchor9;
+position = "{344, 680}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -1446,6 +1536,16 @@ glyphname = u112B5;
 lastChange = "2018-06-07 20:09:45 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor4;
+position = "{340, 0}";
+},
+{
+name = Anchor9;
+position = "{372, 865}";
+}
+);
 components = (
 {
 name = u112B4;
@@ -1492,6 +1592,16 @@ glyphname = u112B6;
 lastChange = "2018-06-07 20:09:45 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor4;
+position = "{530, 0}";
+},
+{
+name = Anchor9;
+position = "{666, 790}";
+}
+);
 components = (
 {
 name = u112B0;
@@ -1515,6 +1625,16 @@ glyphname = u112B7;
 lastChange = "2018-06-07 20:09:45 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor4;
+position = "{530, 0}";
+},
+{
+name = Anchor9;
+position = "{729, 850}";
+}
+);
 components = (
 {
 name = u112B0;
@@ -1538,6 +1658,16 @@ glyphname = u112B8;
 lastChange = "2018-06-07 20:09:45 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor4;
+position = "{530, 0}";
+},
+{
+name = Anchor9;
+position = "{540, 800}";
+}
+);
 components = (
 {
 name = u112B0;
@@ -1561,6 +1691,16 @@ glyphname = u112B9;
 lastChange = "2018-06-07 20:09:45 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor4;
+position = "{530, 0}";
+},
+{
+name = Anchor9;
+position = "{530, 850}";
+}
+);
 components = (
 {
 name = u112B0;
@@ -1584,6 +1724,24 @@ glyphname = u112BA;
 lastChange = "2018-06-07 20:09:47 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor11;
+position = "{544, 680}";
+},
+{
+name = Anchor4;
+position = "{450, 0}";
+},
+{
+name = Anchor6;
+position = "{510, 600}";
+},
+{
+name = Anchor9;
+position = "{400, 680}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -1658,6 +1816,24 @@ glyphname = u112BB;
 lastChange = "2018-06-07 20:09:47 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor11;
+position = "{434, 680}";
+},
+{
+name = Anchor4;
+position = "{322, 0}";
+},
+{
+name = Anchor6;
+position = "{420, 580}";
+},
+{
+name = Anchor9;
+position = "{274, 680}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -1727,6 +1903,24 @@ glyphname = u112BC;
 lastChange = "2018-06-07 20:09:47 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor11;
+position = "{494, 680}";
+},
+{
+name = Anchor4;
+position = "{320, 0}";
+},
+{
+name = Anchor6;
+position = "{430, 585}";
+},
+{
+name = Anchor9;
+position = "{308, 680}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -1786,6 +1980,24 @@ glyphname = u112BD;
 lastChange = "2018-06-07 20:09:47 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor11;
+position = "{504, 680}";
+},
+{
+name = Anchor4;
+position = "{367, 0}";
+},
+{
+name = Anchor6;
+position = "{532, 620}";
+},
+{
+name = Anchor9;
+position = "{463, 680}";
+}
+);
 components = (
 {
 name = u112E0;
@@ -1840,6 +2052,24 @@ glyphname = u112BE;
 lastChange = "2018-06-07 20:09:47 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor11;
+position = "{424, 680}";
+},
+{
+name = Anchor4;
+position = "{296, 0}";
+},
+{
+name = Anchor6;
+position = "{380, 585}";
+},
+{
+name = Anchor9;
+position = "{308, 680}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -1918,6 +2148,24 @@ glyphname = u112BF;
 lastChange = "2018-06-07 20:09:47 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor11;
+position = "{444, 680}";
+},
+{
+name = Anchor4;
+position = "{288, 0}";
+},
+{
+name = Anchor6;
+position = "{360, 580}";
+},
+{
+name = Anchor9;
+position = "{260, 680}";
+}
+);
 components = (
 {
 name = u112D9;
@@ -1939,6 +2187,24 @@ glyphname = u112C0;
 lastChange = "2018-06-07 20:09:47 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor11;
+position = "{414, 680}";
+},
+{
+name = Anchor4;
+position = "{285, 0}";
+},
+{
+name = Anchor6;
+position = "{488, 573}";
+},
+{
+name = Anchor9;
+position = "{281, 680}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -1990,6 +2256,24 @@ glyphname = u112C1;
 lastChange = "2018-06-07 20:09:47 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor11;
+position = "{494, 680}";
+},
+{
+name = Anchor4;
+position = "{344, 0}";
+},
+{
+name = Anchor6;
+position = "{354, 600}";
+},
+{
+name = Anchor9;
+position = "{365, 680}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -2083,6 +2367,24 @@ glyphname = u112C2;
 lastChange = "2018-06-07 20:09:47 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor11;
+position = "{544, 680}";
+},
+{
+name = Anchor4;
+position = "{408, 0}";
+},
+{
+name = Anchor6;
+position = "{540, 580}";
+},
+{
+name = Anchor9;
+position = "{400, 680}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -2154,6 +2456,24 @@ glyphname = u112C3;
 lastChange = "2018-06-07 20:09:47 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor11;
+position = "{774, 680}";
+},
+{
+name = Anchor4;
+position = "{450, 0}";
+},
+{
+name = Anchor6;
+position = "{871, 600}";
+},
+{
+name = Anchor9;
+position = "{435, 680}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -2223,6 +2543,24 @@ glyphname = u112C4;
 lastChange = "2018-06-07 20:09:47 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor11;
+position = "{564, 680}";
+},
+{
+name = Anchor4;
+position = "{410, 0}";
+},
+{
+name = Anchor6;
+position = "{550, 580}";
+},
+{
+name = Anchor9;
+position = "{421, 680}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -2304,6 +2642,24 @@ glyphname = u112C5;
 lastChange = "2018-06-07 20:09:47 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor11;
+position = "{484, 680}";
+},
+{
+name = Anchor4;
+position = "{257, 0}";
+},
+{
+name = Anchor6;
+position = "{339, 580}";
+},
+{
+name = Anchor9;
+position = "{280, 680}";
+}
+);
 components = (
 {
 name = u112F3;
@@ -2325,6 +2681,24 @@ glyphname = u112C6;
 lastChange = "2018-06-07 20:09:47 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor11;
+position = "{394, 680}";
+},
+{
+name = Anchor4;
+position = "{294, 0}";
+},
+{
+name = Anchor6;
+position = "{411, 600}";
+},
+{
+name = Anchor9;
+position = "{302, 680}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -2365,6 +2739,24 @@ glyphname = u112C7;
 lastChange = "2018-06-07 20:09:47 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor11;
+position = "{494, 680}";
+},
+{
+name = Anchor4;
+position = "{343, 0}";
+},
+{
+name = Anchor6;
+position = "{475, 580}";
+},
+{
+name = Anchor9;
+position = "{372, 680}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -2419,6 +2811,24 @@ glyphname = u112C8;
 lastChange = "2018-06-07 20:09:47 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor11;
+position = "{454, 680}";
+},
+{
+name = Anchor4;
+position = "{345, 0}";
+},
+{
+name = Anchor6;
+position = "{400, 580}";
+},
+{
+name = Anchor9;
+position = "{302, 680}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -2483,6 +2893,24 @@ glyphname = u112C9;
 lastChange = "2018-06-07 20:09:47 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor11;
+position = "{304, 680}";
+},
+{
+name = Anchor4;
+position = "{235, 0}";
+},
+{
+name = Anchor6;
+position = "{372, 600}";
+},
+{
+name = Anchor9;
+position = "{253, 680}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -2515,6 +2943,24 @@ glyphname = u112CA;
 lastChange = "2018-06-07 20:09:47 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor11;
+position = "{324, 680}";
+},
+{
+name = Anchor4;
+position = "{256, 0}";
+},
+{
+name = Anchor6;
+position = "{338, 580}";
+},
+{
+name = Anchor9;
+position = "{253, 680}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -2578,6 +3024,24 @@ glyphname = u112CB;
 lastChange = "2018-06-07 20:09:47 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor11;
+position = "{544, 680}";
+},
+{
+name = Anchor4;
+position = "{365, 0}";
+},
+{
+name = Anchor6;
+position = "{402, 600}";
+},
+{
+name = Anchor9;
+position = "{316, 680}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -2646,6 +3110,24 @@ glyphname = u112CC;
 lastChange = "2018-06-07 20:09:47 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor11;
+position = "{534, 680}";
+},
+{
+name = Anchor4;
+position = "{380, -200}";
+},
+{
+name = Anchor6;
+position = "{565, 620}";
+},
+{
+name = Anchor9;
+position = "{351, 680}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -2695,6 +3177,24 @@ glyphname = u112CD;
 lastChange = "2018-06-07 20:09:47 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor11;
+position = "{444, 680}";
+},
+{
+name = Anchor4;
+position = "{308, 0}";
+},
+{
+name = Anchor6;
+position = "{399, 580}";
+},
+{
+name = Anchor9;
+position = "{308, 680}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -2753,6 +3253,24 @@ glyphname = u112CE;
 lastChange = "2018-06-07 20:09:47 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor11;
+position = "{614, 680}";
+},
+{
+name = Anchor4;
+position = "{401, 0}";
+},
+{
+name = Anchor6;
+position = "{671, 602}";
+},
+{
+name = Anchor9;
+position = "{400, 680}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -2795,6 +3313,24 @@ glyphname = u112CF;
 lastChange = "2018-06-07 20:09:47 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor11;
+position = "{534, 680}";
+},
+{
+name = Anchor4;
+position = "{380, 0}";
+},
+{
+name = Anchor6;
+position = "{490, 580}";
+},
+{
+name = Anchor9;
+position = "{365, 680}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -2877,6 +3413,24 @@ glyphname = u112D0;
 lastChange = "2018-06-07 20:09:47 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor11;
+position = "{464, 680}";
+},
+{
+name = Anchor4;
+position = "{320, 0}";
+},
+{
+name = Anchor6;
+position = "{405, 580}";
+},
+{
+name = Anchor9;
+position = "{308, 680}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -2946,6 +3500,24 @@ glyphname = u112D1;
 lastChange = "2018-06-07 20:09:47 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor11;
+position = "{544, 680}";
+},
+{
+name = Anchor4;
+position = "{295, 0}";
+},
+{
+name = Anchor6;
+position = "{697, 585}";
+},
+{
+name = Anchor9;
+position = "{400, 680}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -2980,6 +3552,24 @@ glyphname = u112D2;
 lastChange = "2018-06-07 20:09:47 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor11;
+position = "{404, 680}";
+},
+{
+name = Anchor4;
+position = "{301, 0}";
+},
+{
+name = Anchor6;
+position = "{411, 610}";
+},
+{
+name = Anchor9;
+position = "{288, 680}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -3028,6 +3618,24 @@ glyphname = u112D3;
 lastChange = "2018-06-07 20:09:47 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor11;
+position = "{504, 680}";
+},
+{
+name = Anchor4;
+position = "{302, 0}";
+},
+{
+name = Anchor6;
+position = "{438, 570}";
+},
+{
+name = Anchor8;
+position = "{322, 0}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -3079,6 +3687,24 @@ glyphname = u112D4;
 lastChange = "2018-06-07 20:09:47 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor11;
+position = "{644, 680}";
+},
+{
+name = Anchor4;
+position = "{373, 0}";
+},
+{
+name = Anchor6;
+position = "{802, 586}";
+},
+{
+name = Anchor9;
+position = "{442, 680}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -3123,6 +3749,24 @@ glyphname = u112D5;
 lastChange = "2018-06-07 20:09:47 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor11;
+position = "{464, 680}";
+},
+{
+name = Anchor4;
+position = "{377, 0}";
+},
+{
+name = Anchor6;
+position = "{469, 590}";
+},
+{
+name = Anchor9;
+position = "{365, 680}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -3202,6 +3846,24 @@ glyphname = u112D6;
 lastChange = "2018-06-07 20:09:47 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor11;
+position = "{754, 680}";
+},
+{
+name = Anchor4;
+position = "{513, 0}";
+},
+{
+name = Anchor6;
+position = "{901, 600}";
+},
+{
+name = Anchor9;
+position = "{582, 680}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -3264,6 +3926,24 @@ glyphname = u112D7;
 lastChange = "2018-06-07 20:09:47 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor11;
+position = "{454, 680}";
+},
+{
+name = Anchor4;
+position = "{300, 0}";
+},
+{
+name = Anchor6;
+position = "{420, 590}";
+},
+{
+name = Anchor9;
+position = "{400, 680}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -3335,6 +4015,24 @@ glyphname = u112D8;
 lastChange = "2018-06-07 20:09:47 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor11;
+position = "{634, 680}";
+},
+{
+name = Anchor4;
+position = "{422, 0}";
+},
+{
+name = Anchor6;
+position = "{558, 600}";
+},
+{
+name = Anchor9;
+position = "{435, 680}";
+}
+);
 components = (
 {
 name = u112CA;
@@ -3394,6 +4092,24 @@ glyphname = u112D9;
 lastChange = "2018-06-07 20:09:47 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor11;
+position = "{400, 680}";
+},
+{
+name = Anchor4;
+position = "{260, 0}";
+},
+{
+name = Anchor6;
+position = "{360, 580}";
+},
+{
+name = Anchor9;
+position = "{280, 680}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -3439,6 +4155,24 @@ glyphname = u112DA;
 lastChange = "2018-06-07 20:09:47 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor11;
+position = "{444, 680}";
+},
+{
+name = Anchor4;
+position = "{305, 0}";
+},
+{
+name = Anchor6;
+position = "{350, 580}";
+},
+{
+name = Anchor9;
+position = "{266, 680}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -3499,6 +4233,24 @@ glyphname = u112DB;
 lastChange = "2018-06-07 20:09:47 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor11;
+position = "{424, 680}";
+},
+{
+name = Anchor4;
+position = "{320, 0}";
+},
+{
+name = Anchor6;
+position = "{390, 580}";
+},
+{
+name = Anchor9;
+position = "{316, 680}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -3547,6 +4299,24 @@ glyphname = u112DC;
 lastChange = "2018-06-07 20:09:47 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor11;
+position = "{574, 680}";
+},
+{
+name = Anchor4;
+position = "{394, 0}";
+},
+{
+name = Anchor6;
+position = "{549, 585}";
+},
+{
+name = Anchor9;
+position = "{344, 680}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -3624,6 +4394,24 @@ glyphname = u112DD;
 lastChange = "2018-06-07 20:09:47 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor11;
+position = "{436, 680}";
+},
+{
+name = Anchor4;
+position = "{339, 0}";
+},
+{
+name = Anchor6;
+position = "{431, 585}";
+},
+{
+name = Anchor9;
+position = "{320, 680}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -3691,6 +4479,24 @@ glyphname = u112DE;
 lastChange = "2018-06-07 20:09:47 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor11;
+position = "{464, 680}";
+},
+{
+name = Anchor4;
+position = "{310, 0}";
+},
+{
+name = Anchor6;
+position = "{408, 580}";
+},
+{
+name = Anchor9;
+position = "{312, 680}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -3749,9 +4555,19 @@ category = Letter;
 },
 {
 glyphname = u112DF;
-lastChange = "2018-06-07 20:09:58 +0000";
+lastChange = "2021-12-15 12:37:44 +0000";
 layers = (
 {
+anchors = (
+{
+name = _Anchor14;
+position = "{0, 680}";
+},
+{
+name = _Anchor9;
+position = "{0, 680}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -3777,12 +4593,19 @@ width = 0;
 );
 unicode = 112DF;
 category = Mark;
+subCategory = Nonspacing;
 },
 {
 glyphname = u112E0;
 lastChange = "2018-06-07 20:09:45 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor9;
+position = "{-299, 680}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -3806,6 +4629,12 @@ glyphname = u112E1;
 lastChange = "2018-06-07 20:09:45 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor9;
+position = "{294, 870}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -3842,6 +4671,12 @@ glyphname = u112E2;
 lastChange = "2018-06-07 20:09:45 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor9;
+position = "{-42, 870}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -3878,6 +4713,16 @@ glyphname = u112E3;
 lastChange = "2018-06-07 20:09:52 +0000";
 layers = (
 {
+anchors = (
+{
+name = _Anchor16;
+position = "{0, 0}";
+},
+{
+name = _Anchor4;
+position = "{0, 0}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -3905,12 +4750,23 @@ width = 0;
 );
 unicode = 112E3;
 category = Mark;
+subCategory = Nonspacing;
 },
 {
 glyphname = u112E4;
 lastChange = "2018-06-07 20:09:52 +0000";
 layers = (
 {
+anchors = (
+{
+name = _Anchor16;
+position = "{0, 0}";
+},
+{
+name = _Anchor4;
+position = "{0, 0}";
+}
+);
 components = (
 {
 name = u112E3;
@@ -3926,12 +4782,23 @@ width = 0;
 );
 unicode = 112E4;
 category = Mark;
+subCategory = Nonspacing;
 },
 {
 glyphname = u112E5;
 lastChange = "2018-06-07 20:09:56 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor14;
+position = "{245, 800}";
+},
+{
+name = _Anchor6;
+position = "{330, 590}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -3953,12 +4820,23 @@ width = 0;
 );
 unicode = 112E5;
 category = Mark;
+subCategory = Nonspacing;
 },
 {
 glyphname = u112E6;
 lastChange = "2018-06-07 20:09:56 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor14;
+position = "{350, 850}";
+},
+{
+name = _Anchor6;
+position = "{330, 590}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -3987,12 +4865,23 @@ width = 0;
 );
 unicode = 112E6;
 category = Mark;
+subCategory = Nonspacing;
 },
 {
 glyphname = u112E7;
 lastChange = "2018-06-07 20:09:56 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor14;
+position = "{283, 800}";
+},
+{
+name = _Anchor6;
+position = "{468, 585}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -4038,12 +4927,23 @@ width = 0;
 );
 unicode = 112E7;
 category = Mark;
+subCategory = Nonspacing;
 },
 {
 glyphname = u112E8;
 lastChange = "2018-06-07 20:09:49 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor14;
+position = "{234, 800}";
+},
+{
+name = _Anchor11;
+position = "{390, 570}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -4105,12 +5005,23 @@ width = 0;
 );
 unicode = 112E8;
 category = Mark;
+subCategory = Nonspacing;
 },
 {
 glyphname = u112E9;
 lastChange = "2018-06-07 20:09:52 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor16;
+position = "{60, -110}";
+},
+{
+name = _Anchor4;
+position = "{60, 40}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -4136,12 +5047,23 @@ width = 0;
 );
 unicode = 112E9;
 category = Mark;
+subCategory = Nonspacing;
 },
 {
 glyphname = u112EA;
 lastChange = "2018-06-07 20:09:52 +0000";
 layers = (
 {
+anchors = (
+{
+name = _Anchor16;
+position = "{60, 0}";
+},
+{
+name = _Anchor4;
+position = "{60, 0}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -4159,6 +5081,7 @@ width = 0;
 );
 unicode = 112EA;
 category = Mark;
+subCategory = Nonspacing;
 },
 {
 glyphname = u112F0;
@@ -4716,9 +5639,19 @@ category = Letter;
 },
 {
 glyphname = u112E1_u112C0;
-lastChange = "2018-06-07 20:09:45 +0000";
+lastChange = "2021-12-15 12:40:24 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor4;
+position = "{546, 0}";
+},
+{
+name = Anchor9;
+position = "{245, 830}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -4777,12 +5710,23 @@ width = 829;
 leftMetricsKey = u112E1;
 rightMetricsKey = u112C0;
 category = Letter;
+subCategory = Other;
 },
 {
 glyphname = u112C0_u112E2;
-lastChange = "2018-06-07 20:09:45 +0000";
+lastChange = "2021-12-15 12:40:24 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor4;
+position = "{196, 0}";
+},
+{
+name = Anchor9;
+position = "{497, 830}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -4839,12 +5783,23 @@ width = 782;
 }
 );
 category = Letter;
+subCategory = Other;
 },
 {
 glyphname = u112E1_u112C3;
-lastChange = "2018-06-07 20:09:45 +0000";
+lastChange = "2021-12-15 12:40:24 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor4;
+position = "{805, 0}";
+},
+{
+name = Anchor9;
+position = "{290, 830}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -4917,12 +5872,23 @@ width = 1382;
 leftMetricsKey = u112E1;
 rightMetricsKey = u112C3;
 category = Letter;
+subCategory = Other;
 },
 {
 glyphname = u112C3_u112E2;
-lastChange = "2018-06-07 20:09:45 +0000";
+lastChange = "2021-12-15 12:40:24 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor4;
+position = "{448, 0}";
+},
+{
+name = Anchor9;
+position = "{938, 830}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -4995,12 +5961,23 @@ width = 1256;
 leftMetricsKey = u112C3;
 rightMetricsKey = u112E2;
 category = Letter;
+subCategory = Other;
 },
 {
 glyphname = u112E1_u112D1;
-lastChange = "2018-06-07 20:09:45 +0000";
+lastChange = "2021-12-15 12:40:24 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor4;
+position = "{630, 0}";
+},
+{
+name = Anchor9;
+position = "{273, 830}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -5044,12 +6021,23 @@ width = 1229;
 leftMetricsKey = u112E1;
 rightMetricsKey = u112D1;
 category = Letter;
+subCategory = Other;
 },
 {
 glyphname = u112D1_u112E2;
-lastChange = "2018-06-07 20:09:45 +0000";
+lastChange = "2021-12-15 12:40:24 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor4;
+position = "{245, 0}";
+},
+{
+name = Anchor9;
+position = "{840, 830}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -5093,12 +6081,23 @@ width = 1119;
 leftMetricsKey = u112D1;
 rightMetricsKey = u112E2;
 category = Letter;
+subCategory = Other;
 },
 {
 glyphname = u112E1_u112D4;
-lastChange = "2018-06-07 20:09:45 +0000";
+lastChange = "2021-12-15 12:40:24 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor4;
+position = "{749, 0}";
+},
+{
+name = Anchor9;
+position = "{280, 830}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -5146,12 +6145,23 @@ width = 1283;
 leftMetricsKey = u112E1;
 rightMetricsKey = u112D4;
 category = Letter;
+subCategory = Other;
 },
 {
 glyphname = u112D4_u112E2;
-lastChange = "2018-06-07 20:09:45 +0000";
+lastChange = "2021-12-15 12:40:24 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor4;
+position = "{378, 0}";
+},
+{
+name = Anchor9;
+position = "{980, 830}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -5199,12 +6209,23 @@ width = 1261;
 leftMetricsKey = u112D4;
 rightMetricsKey = u112E2;
 category = Letter;
+subCategory = Other;
 },
 {
 glyphname = u112D6_u112E2;
-lastChange = "2018-06-07 20:09:45 +0000";
+lastChange = "2021-12-15 12:40:24 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor4;
+position = "{511, 0}";
+},
+{
+name = Anchor9;
+position = "{1134, 830}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -5270,12 +6291,23 @@ width = 1389;
 leftMetricsKey = u112D6;
 rightMetricsKey = u112E2;
 category = Letter;
+subCategory = Other;
 },
 {
 glyphname = u112E1_u112BD;
-lastChange = "2018-06-07 20:09:45 +0000";
+lastChange = "2021-12-15 12:40:24 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor4;
+position = "{658, 0}";
+},
+{
+name = Anchor9;
+position = "{378, 830}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -5341,12 +6373,23 @@ width = 944;
 leftMetricsKey = u112E1;
 rightMetricsKey = u112BD;
 category = Letter;
+subCategory = Other;
 },
 {
 glyphname = u112E1_u112D7;
-lastChange = "2018-06-07 20:09:45 +0000";
+lastChange = "2021-12-15 12:40:24 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor4;
+position = "{680, 0}";
+},
+{
+name = Anchor9;
+position = "{287, 830}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -5419,12 +6462,19 @@ width = 1009;
 leftMetricsKey = u112E1;
 rightMetricsKey = u112B0;
 category = Letter;
+subCategory = Other;
 },
 {
 glyphname = u112E2.alt;
 lastChange = "2018-06-07 20:09:45 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor9;
+position = "{-42, 870}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -5459,6 +6509,16 @@ glyphname = u112E8.alt;
 lastChange = "2018-06-07 20:09:49 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor14;
+position = "{174, 800}";
+},
+{
+name = _Anchor11;
+position = "{290, 570}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -5519,12 +6579,23 @@ width = 0;
 }
 );
 category = Mark;
+subCategory = Nonspacing;
 },
 {
 glyphname = u112E7.alt;
 lastChange = "2018-06-07 20:09:56 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor14;
+position = "{216, 800}";
+},
+{
+name = _Anchor6;
+position = "{364, 590}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -5569,12 +6640,23 @@ width = 0;
 }
 );
 category = Mark;
+subCategory = Nonspacing;
 },
 {
 glyphname = u112E7_straight;
 lastChange = "2018-06-07 20:09:56 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor14;
+position = "{286, 800}";
+},
+{
+name = _Anchor6;
+position = "{468, 590}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -5615,12 +6697,23 @@ width = 0;
 }
 );
 category = Mark;
+subCategory = Nonspacing;
 },
 {
 glyphname = u112E7_straight.alt;
 lastChange = "2018-06-07 20:09:56 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor14;
+position = "{216, 800}";
+},
+{
+name = _Anchor6;
+position = "{364, 590}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -5661,12 +6754,19 @@ width = 0;
 }
 );
 category = Mark;
+subCategory = Nonspacing;
 },
 {
 glyphname = u112E1.alt;
 lastChange = "2018-06-07 20:09:45 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor9;
+position = "{294, 870}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -5701,6 +6801,12 @@ glyphname = u112E1.alt2;
 lastChange = "2018-06-07 20:09:45 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor9;
+position = "{294, 870}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -5735,6 +6841,12 @@ glyphname = u112E1.alt3;
 lastChange = "2018-06-07 20:09:45 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor9;
+position = "{294, 870}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -5769,10 +6881,6 @@ instances = (
 {
 customParameters = (
 {
-name = weightClass;
-value = 400;
-},
-{
 name = panose;
 value = (
 2,
@@ -5802,5 +6910,5 @@ manufacturer = "Monotype Imaging Inc.";
 manufacturerURL = "http://www.google.com/get/noto/";
 unitsPerEm = 1000;
 versionMajor = 2;
-versionMinor = 0;
+versionMinor = 1;
 }
