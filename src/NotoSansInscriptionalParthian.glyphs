@@ -1,5 +1,11 @@
 {
-.appVersion = "973";
+.appVersion = "3106";
+classes = (
+{
+code = "u10B40 u10B41 u10B42 u10B43 u10B44 u10B45 u10B46 u10B47 u10B48 u10B49 u10B4A u10B4B u10B4C u10B4E u10B4F u10B50 u10B51 u10B52 u10B53 u10B54 u10B55";
+name = class1;
+}
+);
 copyright = "Copyright 2017 Google Inc. All Rights Reserved.";
 customParameters = (
 {
@@ -54,6 +60,29 @@ uni00A0
 );
 },
 {
+name = unicodeRanges;
+value = (
+0,
+1,
+57
+);
+},
+{
+name = "Has WWS Names";
+value = 1;
+},
+{
+name = fsType;
+value = (
+);
+},
+{
+name = codePageRanges;
+value = (
+1252
+);
+},
+{
 name = description;
 value = "Designed by Monotype design team.";
 },
@@ -70,35 +99,12 @@ name = vendorID;
 value = GOOG;
 },
 {
-name = unicodeRanges;
-value = (
-0,
-1,
-57
-);
-},
-{
 name = trademark;
 value = "Noto is a trademark of Google Inc.";
 },
 {
-name = "Has WWS Names";
-value = 1;
-},
-{
 name = versionString;
 value = "Version 2.000";
-},
-{
-name = fsType;
-value = (
-);
-},
-{
-name = codePageRanges;
-value = (
-"1252"
-);
 }
 );
 date = "2017-02-10 19:54:37 +0000";
@@ -107,6 +113,26 @@ designerURL = "http://www.monotype.com/studio";
 disablesAutomaticAlignment = 1;
 disablesNiceNames = 1;
 familyName = "Noto Sans Inscriptional Parthian";
+featurePrefixes = (
+{
+code = "lookup PairPositioning3 {\012    lookupflag RightToLeft;\012    ;\012    # Original source: 2 \012    pos u10B51.alt01 <NULL> u10B46 <273 0 273 0>;\012    pos u10B51.alt01 <NULL> u10B49 <303 0 303 0>;\012} PairPositioning3;\012";
+name = PairPositioning3;
+},
+{
+code = "languagesystem DFLT dflt;\012languagesystem prti dflt;\012";
+name = Languagesystems;
+}
+);
+features = (
+{
+code = "sub u10B42 u10B45 by u10B4210B45;\012sub u10B47 u10B45 by u10B4710B45;\012sub u10B49 u10B45 by u10B4910B45;\012sub u10B4D u10B43 by u10B4D10B43;\012sub u10B4D u10B45 by u10B4D10B45;\012sub u10B4D u10B4D by u10B4D10B4D;\012sub u10B4F u10B4B by u10B4F10B4B;\012sub u10B53 u10B45 by u10B5310B45;\012sub u10B55 u10B45 by u10B5510B45;\012\012sub u10B4D' @class1 by u10B4D.alt01;\012sub u10B51' @class1 by u10B51.alt01;\012\012";
+name = ccmp;
+},
+{
+code = "lookup PairPositioning1 {\012    lookupflag RightToLeft;\012    ;\012    pos u10B4D.alt01 <NULL> u10B42 <112 0 112 0>;\012    pos u10B4D.alt01 <NULL> u10B45 <127 0 127 0>;\012    pos u10B4D.alt01 <NULL> u10B46 <381 0 381 0>;\012    pos u10B4D.alt01 <NULL> u10B49 <410 0 410 0>;\012    pos u10B4D.alt01 <NULL> u10B4B <234 0 234 0>;\012    pos u10B4D.alt01 <NULL> u10B4F <88 0 88 0>;\012    pos u10B4D.alt01 <NULL> u10B51 225;\012    pos u10B4D.alt01 <NULL> u10B52 <107 0 107 0>;\012    pos u10B4D.alt01 <NULL> u10B53 <78 0 78 0>;\012    pos u10B4D.alt01 <NULL> u10B54 <98 0 98 0>;\012} PairPositioning1;\012\012pos u10B51.alt01' lookup PairPositioning3 [u10B46 u10B49]' u10B4D;\012";
+name = kern;
+}
+);
 fontMaster = (
 {
 alignmentZones = (
@@ -162,16 +188,16 @@ value = 50;
 {
 name = panose;
 value = (
-"2",
-"11",
-"5",
-"2",
-"4",
-"5",
-"4",
-"2",
-"2",
-"4"
+2,
+11,
+5,
+2,
+4,
+5,
+4,
+2,
+2,
+4
 );
 }
 );
@@ -2399,22 +2425,18 @@ instances = (
 {
 customParameters = (
 {
-name = weightClass;
-value = "400";
-},
-{
 name = panose;
 value = (
-"2",
-"11",
-"5",
-"2",
-"4",
-"5",
-"4",
-"2",
-"2",
-"4"
+2,
+11,
+5,
+2,
+4,
+5,
+4,
+2,
+2,
+4
 );
 },
 {
@@ -2464,7 +2486,6 @@ UUID0 = 1;
 name = Regular;
 }
 );
-keyboardIncrement = 0;
 manufacturer = "Monotype Imaging Inc.";
 manufacturerURL = "http://www.google.com/get/noto/";
 unitsPerEm = 1000;
