@@ -1,5 +1,5 @@
 {
-.appVersion = "1075";
+.appVersion = "3106";
 copyright = "Copyright 2018 Google Inc. All Rights Reserved.";
 customParameters = (
 {
@@ -166,6 +166,33 @@ uni00A0
 );
 },
 {
+name = unicodeRanges;
+value = (
+0,
+1,
+13,
+31,
+45,
+57,
+91
+);
+},
+{
+name = "Has WWS Names";
+value = 1;
+},
+{
+name = fsType;
+value = (
+);
+},
+{
+name = codePageRanges;
+value = (
+1252
+);
+},
+{
 name = description;
 value = "Designed by Monotype design team.";
 },
@@ -182,39 +209,12 @@ name = vendorID;
 value = GOOG;
 },
 {
-name = unicodeRanges;
-value = (
-0,
-1,
-13,
-31,
-45,
-57,
-91
-);
-},
-{
 name = trademark;
 value = "Noto is a trademark of Google Inc.";
 },
 {
-name = "Has WWS Names";
-value = 1;
-},
-{
 name = versionString;
 value = "Version 2.000";
-},
-{
-name = fsType;
-value = (
-);
-},
-{
-name = codePageRanges;
-value = (
-"1252"
-);
 }
 );
 date = "2012-12-20 12:54:16 +0000";
@@ -223,6 +223,42 @@ designerURL = "http://www.monotype.com/studio";
 disablesAutomaticAlignment = 1;
 disablesNiceNames = 1;
 familyName = "Noto Sans Manichaean";
+featurePrefixes = (
+{
+code = "lookup SingleSubstitution7 {\012    lookupflag 0;\012    ;\012    # Original source: 6 \012    sub u10AEB.fina by u10AEB.fina.high;\012    sub u10AEB.medi by u10AEB.medi.high;\012    sub u10AEC.fina by u10AEC.fina.high;\012    sub u10AEC.medi by u10AEC.medi.high;\012} SingleSubstitution7;\012";
+name = SingleSubstitution7;
+},
+{
+code = "languagesystem mani dflt;\012languagesystem arab dflt;\012";
+name = Languagesystems;
+}
+);
+features = (
+{
+code = "\012sub u10ADD u10ACF by u10ADD10ACF;\012sub u10ADD u10AD7 by u10ADD10AD7;\012\012sub u10AC5 uniFE00 by u10AC5.alt;\012sub u10AC6 uniFE00 by u10AC6.alt;\012sub u10AD6 uniFE00 by u10AD6.alt;\012sub u10AD7 uniFE00 by u10AD7.alt;\012sub u10AE1 uniFE00 by u10AE1.alt;";
+name = ccmp;
+},
+{
+code = "# Because of alt, we can't do this automatically\012sub u10AE1.alt by u10AE1.fina;\012sub u10AC5.alt by u10AC5.fina;\012\012sub u10ADD10ACF by u10ADD10ACF.fina;\012sub u10ADD10AD7 by u10ADD10AD7.fina;\012sub u10AC0 by u10AC0.fina;\012sub u10AC1 by u10AC1.fina;\012sub u10AC2 by u10AC2.fina;\012sub u10AC3 by u10AC3.fina;\012sub u10AC4 by u10AC4.fina;\012sub u10AC5 by u10AC5.fina;\012sub u10AC7 by u10AC7.fina;\012sub u10AC9 by u10AC9.fina;\012sub u10ACA by u10ACA.fina;\012sub u10ACE by u10ACE.fina;\012sub u10ACF by u10ACF.fina;\012sub u10AD0 by u10AD0.fina;\012sub u10AD1 by u10AD1.fina;\012sub u10AD2 by u10AD2.fina;\012sub u10AD3 by u10AD3.fina;\012sub u10AD4 by u10AD4.fina;\012sub u10AD5 by u10AD5.fina;\012sub u10AD6 by u10AD6.fina;\012sub u10AD8 by u10AD8.fina;\012sub u10AD9 by u10AD9.fina;\012sub u10ADA by u10ADA.fina;\012sub u10ADB by u10ADB.fina;\012sub u10ADC by u10ADC.fina;\012sub u10ADD by u10ADD.fina;\012sub u10ADE by u10ADE.fina;\012sub u10ADF by u10ADF.fina;\012sub u10AE0 by u10AE0.fina;\012sub u10AE1 by u10AE1.fina;\012sub u10AE4 by u10AE4.fina;\012sub u10AD6.alt by u10AD6.alt.fina;\012sub u10AEB by u10AEB.fina;\012sub u10AEC by u10AEC.fina;\012sub u10AED by u10AED.fina;\012sub u10AEE by u10AEE.fina;\012sub u10AEF by u10AEF.fina;\012";
+name = fina;
+},
+{
+code = "# Because of alt, we can't do this automatically\012sub u10AD6.alt by u10AD6.init;\012sub u10AD7.alt by u10AD7.init;\012\012sub u10AC0 by u10AC0.init;\012sub u10AC1 by u10AC1.init;\012sub u10AC2 by u10AC2.init;\012sub u10AC3 by u10AC3.init;\012sub u10AC4 by u10AC4.init;\012sub u10ACD by u10ACD.init;\012sub u10AD3 by u10AD3.init;\012sub u10AD4 by u10AD4.init;\012sub u10AD5 by u10AD5.init;\012sub u10AD6 by u10AD6.init;\012sub u10AD7 by u10AD7.init;\012sub u10AD8 by u10AD8.init;\012sub u10AD9 by u10AD9.init;\012sub u10ADA by u10ADA.init;\012sub u10ADB by u10ADB.init;\012sub u10ADC by u10ADC.init;\012sub u10ADE by u10ADE.init;\012sub u10ADF by u10ADF.init;\012sub u10AE0 by u10AE0.init;\012sub u10AEB by u10AEB.init;\012sub u10AEC by u10AEC.init;\012sub u10AED by u10AED.init;\012sub u10AEE by u10AEE.init;\012";
+name = init;
+},
+{
+code = "# Because of alt, we can't do this automatically\012sub u10AD6.alt by u10AD6.medi;\012\012sub u10AC0 by u10AC0.medi;\012sub u10AC1 by u10AC1.medi;\012sub u10AC2 by u10AC2.medi;\012sub u10AC3 by u10AC3.medi;\012sub u10AC4 by u10AC4.medi;\012sub u10AD3 by u10AD3.medi;\012sub u10AD4 by u10AD4.medi;\012sub u10AD5 by u10AD5.medi;\012sub u10AD6 by u10AD6.medi;\012sub u10AD8 by u10AD8.medi;\012sub u10AD9 by u10AD9.medi;\012sub u10ADA by u10ADA.medi;\012sub u10ADB by u10ADB.medi;\012sub u10ADC by u10ADC.medi;\012sub u10ADE by u10ADE.medi;\012sub u10ADF by u10ADF.medi;\012sub u10AE0 by u10AE0.medi;\012sub u10AEB by u10AEB.medi;\012sub u10AEC by u10AEC.medi;\012sub u10AED by u10AED.medi;\012sub u10AEE by u10AEE.medi;\012";
+name = medi;
+},
+{
+code = "sub [u10AED.medi u10AED.init u10AEB.medi.high u10AEC.medi.high] [u10AEB.fina u10AEB.medi u10AEC.fina u10AEC.medi]' lookup SingleSubstitution7;";
+name = rclt;
+},
+{
+code = "# Automatic Code Start\012";
+name = mark;
+}
+);
 fontMaster = (
 {
 alignmentZones = (
@@ -278,16 +314,16 @@ value = 50;
 {
 name = panose;
 value = (
-"2",
-"11",
-"5",
-"2",
-"4",
-"5",
-"4",
-"2",
-"2",
-"4"
+2,
+11,
+5,
+2,
+4,
+5,
+4,
+2,
+2,
+4
 );
 }
 );
@@ -390,6 +426,16 @@ glyphname = u10AC0;
 lastChange = "2018-03-14 14:29:15 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{268, 512}";
+},
+{
+name = Anchor3;
+position = "{322, 0}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -471,6 +517,16 @@ glyphname = u10AC1;
 lastChange = "2018-03-14 14:29:06 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{566, 512}";
+},
+{
+name = Anchor3;
+position = "{488, 0}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -542,6 +598,16 @@ glyphname = u10AC2;
 lastChange = "2018-03-14 14:29:06 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{566, 585}";
+},
+{
+name = Anchor3;
+position = "{488, 0}";
+}
+);
 components = (
 {
 name = u10AC1;
@@ -562,6 +628,16 @@ glyphname = u10AC3;
 lastChange = "2018-03-14 14:29:06 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{146, 659}";
+},
+{
+name = Anchor3;
+position = "{322, -245}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -638,6 +714,16 @@ glyphname = u10AC4;
 lastChange = "2018-03-14 14:29:06 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{146, 659}";
+},
+{
+name = Anchor3;
+position = "{322, -323}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -721,6 +807,16 @@ glyphname = u10AC5;
 lastChange = "2018-03-14 14:29:06 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{136, 292}";
+},
+{
+name = Anchor3;
+position = "{322, -98}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -763,6 +859,16 @@ glyphname = u10AC6;
 lastChange = "2018-03-14 14:29:06 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{463, 512}";
+},
+{
+name = Anchor3;
+position = "{488, 0}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -852,6 +958,16 @@ glyphname = u10AC7;
 lastChange = "2018-03-14 14:29:06 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{156, 341}";
+},
+{
+name = Anchor3;
+position = "{322, 0}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -897,6 +1013,16 @@ glyphname = u10AC8;
 lastChange = "2018-03-14 14:29:06 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{170, 585}";
+},
+{
+name = Anchor3;
+position = "{322, -245}";
+}
+);
 components = (
 {
 name = u10AC7;
@@ -949,6 +1075,16 @@ glyphname = u10AC9;
 lastChange = "2018-03-14 14:29:06 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{165, 463}";
+},
+{
+name = Anchor3;
+position = "{322, -147}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -997,6 +1133,16 @@ glyphname = u10ACA;
 lastChange = "2018-03-14 14:29:06 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{146, 600}";
+},
+{
+name = Anchor3;
+position = "{322, -147}";
+}
+);
 components = (
 {
 name = u10AC9;
@@ -1017,6 +1163,16 @@ glyphname = u10ACB;
 lastChange = "2018-03-14 14:29:06 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{263, 683}";
+},
+{
+name = Anchor3;
+position = "{322, 0}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -1083,6 +1239,16 @@ glyphname = u10ACC;
 lastChange = "2018-03-14 14:29:06 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{263, 829}";
+},
+{
+name = Anchor3;
+position = "{322, 0}";
+}
+);
 components = (
 {
 name = u10ACB;
@@ -1103,6 +1269,16 @@ glyphname = u10ACD;
 lastChange = "2018-03-14 14:29:06 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{341, 512}";
+},
+{
+name = Anchor3;
+position = "{390, 0}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -1187,6 +1363,16 @@ glyphname = u10ACE;
 lastChange = "2018-03-14 14:29:06 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{214, 585}";
+},
+{
+name = Anchor3;
+position = "{322, -98}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -1249,6 +1435,16 @@ glyphname = u10ACF;
 lastChange = "2018-03-14 14:29:06 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{241, 390}";
+},
+{
+name = Anchor3;
+position = "{273, 0}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -1306,6 +1502,16 @@ glyphname = u10AD0;
 lastChange = "2018-03-14 14:29:06 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{468, 292}";
+},
+{
+name = Anchor3;
+position = "{585, -176}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -1362,6 +1568,16 @@ glyphname = u10AD1;
 lastChange = "2018-03-14 14:29:06 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{559, 468}";
+},
+{
+name = Anchor3;
+position = "{585, -176}";
+}
+);
 components = (
 {
 name = u10AD0;
@@ -1382,6 +1598,16 @@ glyphname = u10AD2;
 lastChange = "2018-03-14 14:29:06 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{628, 468}";
+},
+{
+name = Anchor3;
+position = "{585, -176}";
+}
+);
 components = (
 {
 name = u10AD0;
@@ -1402,6 +1628,16 @@ glyphname = u10AD3;
 lastChange = "2018-03-14 14:29:06 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{343, 585}";
+},
+{
+name = Anchor3;
+position = "{390, 0}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -1469,6 +1705,16 @@ glyphname = u10AD4;
 lastChange = "2018-03-14 14:29:06 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{341, 585}";
+},
+{
+name = Anchor3;
+position = "{439, 0}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -1531,6 +1777,16 @@ glyphname = u10AD5;
 lastChange = "2018-03-14 14:29:06 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{341, 585}";
+},
+{
+name = Anchor3;
+position = "{439, 0}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -1619,6 +1875,16 @@ glyphname = u10AD6;
 lastChange = "2018-03-14 14:29:06 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{488, 478}";
+},
+{
+name = Anchor3;
+position = "{488, 0}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -1720,6 +1986,16 @@ glyphname = u10AD7;
 lastChange = "2018-03-14 14:29:06 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{161, 390}";
+},
+{
+name = Anchor3;
+position = "{244, -147}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -1774,6 +2050,16 @@ glyphname = u10AD8;
 lastChange = "2018-03-14 14:29:06 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{724, 405}";
+},
+{
+name = Anchor3;
+position = "{585, 0}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -1855,6 +2141,16 @@ glyphname = u10AD9;
 lastChange = "2018-03-14 14:29:06 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{440, 468}";
+},
+{
+name = Anchor3;
+position = "{488, 0}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -1915,6 +2211,16 @@ glyphname = u10ADA;
 lastChange = "2018-03-14 14:29:06 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{392, 593}";
+},
+{
+name = Anchor3;
+position = "{488, 0}";
+}
+);
 components = (
 {
 name = u10AD9;
@@ -1935,6 +2241,16 @@ glyphname = u10ADB;
 lastChange = "2018-03-14 14:29:06 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{472, 390}";
+},
+{
+name = Anchor3;
+position = "{439, 0}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -1996,6 +2312,16 @@ glyphname = u10ADC;
 lastChange = "2018-03-14 14:29:06 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{488, 539}";
+},
+{
+name = Anchor3;
+position = "{439, 0}";
+}
+);
 components = (
 {
 name = u10ADB;
@@ -2016,6 +2342,16 @@ glyphname = u10ADD;
 lastChange = "2018-03-14 14:29:06 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{461, 473}";
+},
+{
+name = Anchor3;
+position = "{322, -225}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -2107,6 +2443,16 @@ glyphname = u10ADE;
 lastChange = "2018-03-14 14:29:06 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{579, 468}";
+},
+{
+name = Anchor3;
+position = "{585, 0}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -2215,6 +2561,16 @@ glyphname = u10ADF;
 lastChange = "2018-03-14 14:29:06 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{676, 585}";
+},
+{
+name = Anchor3;
+position = "{585, 0}";
+}
+);
 components = (
 {
 name = u10ADE;
@@ -2235,6 +2591,16 @@ glyphname = u10AE0;
 lastChange = "2018-03-14 14:29:06 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{683, 585}";
+},
+{
+name = Anchor3;
+position = "{585, 0}";
+}
+);
 components = (
 {
 name = u10ADE;
@@ -2255,6 +2621,16 @@ glyphname = u10AE1;
 lastChange = "2018-03-14 14:29:06 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{102, 468}";
+},
+{
+name = Anchor3;
+position = "{273, -79}";
+}
+);
 components = (
 {
 name = u10AC5;
@@ -2275,6 +2651,16 @@ glyphname = u10AE2;
 lastChange = "2018-03-14 14:29:06 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{449, 488}";
+},
+{
+name = Anchor3;
+position = "{488, 0}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -2353,6 +2739,16 @@ glyphname = u10AE3;
 lastChange = "2018-03-14 14:29:06 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{449, 585}";
+},
+{
+name = Anchor3;
+position = "{488, 0}";
+}
+);
 components = (
 {
 name = u10AE2;
@@ -2373,6 +2769,16 @@ glyphname = u10AE4;
 lastChange = "2018-03-14 14:29:06 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{209, 600}";
+},
+{
+name = Anchor3;
+position = "{390, 0}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -2453,6 +2859,12 @@ glyphname = u10AE5;
 lastChange = "2018-03-14 14:29:06 +0000";
 layers = (
 {
+anchors = (
+{
+name = _Anchor2;
+position = "{-203, 624}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -2494,12 +2906,20 @@ width = 0;
 }
 );
 unicode = 10AE5;
+category = Mark;
+subCategory = Nonspacing;
 },
 {
 glyphname = u10AE6;
 lastChange = "2018-03-14 14:29:06 +0000";
 layers = (
 {
+anchors = (
+{
+name = _Anchor3;
+position = "{-203, 0}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -2541,6 +2961,8 @@ width = 0;
 }
 );
 unicode = 10AE6;
+category = Mark;
+subCategory = Nonspacing;
 },
 {
 glyphname = u10AEB;
@@ -3780,12 +4202,24 @@ width = 854;
 }
 );
 unicode = FE00;
+category = Mark;
+subCategory = Nonspacing;
 },
 {
 glyphname = u10ADD10ACF;
 lastChange = "2018-03-14 14:29:06 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{585, 488}";
+},
+{
+name = Anchor3;
+position = "{461, -225}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -3882,6 +4316,16 @@ glyphname = u10ADD10ACF.fina;
 lastChange = "2018-03-14 14:29:06 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{585, 488}";
+},
+{
+name = Anchor3;
+position = "{461, -225}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -3975,6 +4419,16 @@ glyphname = u10ADD10AD7;
 lastChange = "2018-03-14 14:29:06 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{585, 488}";
+},
+{
+name = Anchor3;
+position = "{461, -225}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -4092,6 +4546,16 @@ glyphname = u10ADD10AD7.fina;
 lastChange = "2018-03-14 14:29:06 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{585, 488}";
+},
+{
+name = Anchor3;
+position = "{461, -225}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -4206,6 +4670,16 @@ glyphname = u10AC0.fina;
 lastChange = "2018-03-14 14:29:06 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{283, 512}";
+},
+{
+name = Anchor3;
+position = "{322, 0}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -4295,6 +4769,16 @@ glyphname = u10AC0.medi;
 lastChange = "2018-03-14 14:29:06 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{283, 512}";
+},
+{
+name = Anchor3;
+position = "{322, 0}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -4393,6 +4877,16 @@ glyphname = u10AC0.init;
 lastChange = "2018-03-14 14:29:06 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{283, 512}";
+},
+{
+name = Anchor3;
+position = "{322, 0}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -4482,6 +4976,16 @@ glyphname = u10AC1.fina;
 lastChange = "2018-03-14 14:29:06 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{566, 512}";
+},
+{
+name = Anchor3;
+position = "{488, 0}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -4561,6 +5065,16 @@ glyphname = u10AC1.medi;
 lastChange = "2018-03-14 14:29:06 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{302, 512}";
+},
+{
+name = Anchor3;
+position = "{322, 0}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -4619,6 +5133,16 @@ glyphname = u10AC1.init;
 lastChange = "2018-03-14 14:29:06 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{302, 512}";
+},
+{
+name = Anchor3;
+position = "{322, 0}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -4678,6 +5202,16 @@ glyphname = u10AC2.fina;
 lastChange = "2018-03-14 14:29:06 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{556, 585}";
+},
+{
+name = Anchor3;
+position = "{488, 0}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -4791,6 +5325,16 @@ glyphname = u10AC2.medi;
 lastChange = "2018-03-14 14:29:06 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{263, 585}";
+},
+{
+name = Anchor3;
+position = "{322, 0}";
+}
+);
 components = (
 {
 name = u10AC1.medi;
@@ -4810,6 +5354,16 @@ glyphname = u10AC2.init;
 lastChange = "2018-03-14 14:29:06 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{263, 585}";
+},
+{
+name = Anchor3;
+position = "{322, 0}";
+}
+);
 components = (
 {
 name = u10AC1.init;
@@ -4829,6 +5383,16 @@ glyphname = u10AC3.fina;
 lastChange = "2018-03-14 14:29:06 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{139, 659}";
+},
+{
+name = Anchor3;
+position = "{322, -245}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -4913,6 +5477,16 @@ glyphname = u10AC3.medi;
 lastChange = "2018-03-14 14:29:06 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{48, 659}";
+},
+{
+name = Anchor3;
+position = "{244, -245}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -4986,6 +5560,16 @@ glyphname = u10AC3.init;
 lastChange = "2018-03-14 14:29:06 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{48, 659}";
+},
+{
+name = Anchor3;
+position = "{244, -245}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -5050,6 +5634,16 @@ glyphname = u10AC4.fina;
 lastChange = "2018-03-14 14:29:06 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{146, 659}";
+},
+{
+name = Anchor3;
+position = "{322, -323}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -5141,6 +5735,16 @@ glyphname = u10AC4.medi;
 lastChange = "2018-03-14 14:29:06 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{48, 659}";
+},
+{
+name = Anchor3;
+position = "{195, -323}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -5221,6 +5825,16 @@ glyphname = u10AC4.init;
 lastChange = "2018-03-14 14:29:06 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{48, 659}";
+},
+{
+name = Anchor3;
+position = "{195, -323}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -5292,6 +5906,16 @@ glyphname = u10AC5.fina;
 lastChange = "2018-03-14 14:29:06 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{136, 292}";
+},
+{
+name = Anchor3;
+position = "{322, -98}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -5342,6 +5966,16 @@ glyphname = u10AC7.fina;
 lastChange = "2018-03-14 14:29:06 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{171, 322}";
+},
+{
+name = Anchor3;
+position = "{322, 0}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -5395,6 +6029,16 @@ glyphname = u10AC9.fina;
 lastChange = "2018-03-14 14:29:06 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{144, 439}";
+},
+{
+name = Anchor3;
+position = "{322, -147}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -5451,6 +6095,16 @@ glyphname = u10ACA.fina;
 lastChange = "2018-03-14 14:29:06 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{134, 600}";
+},
+{
+name = Anchor3;
+position = "{322, -147}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -5541,6 +6195,16 @@ glyphname = u10ACD.init;
 lastChange = "2018-03-14 14:29:06 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{279, 512}";
+},
+{
+name = Anchor3;
+position = "{322, 0}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -5615,6 +6279,16 @@ glyphname = u10ACE.fina;
 lastChange = "2018-03-14 14:29:06 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{198, 585}";
+},
+{
+name = Anchor3;
+position = "{322, -98}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -5685,6 +6359,16 @@ glyphname = u10ACF.fina;
 lastChange = "2018-03-14 14:29:06 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{241, 390}";
+},
+{
+name = Anchor3;
+position = "{273, 0}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -5750,6 +6434,16 @@ glyphname = u10AD0.fina;
 lastChange = "2018-03-14 14:29:06 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{494, 292}";
+},
+{
+name = Anchor3;
+position = "{585, -176}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -5814,6 +6508,16 @@ glyphname = u10AD1.fina;
 lastChange = "2018-03-14 14:29:06 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{566, 468}";
+},
+{
+name = Anchor3;
+position = "{585, -176}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -5895,6 +6599,16 @@ glyphname = u10AD2.fina;
 lastChange = "2018-03-14 14:29:06 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{590, 468}";
+},
+{
+name = Anchor3;
+position = "{585, -176}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -5993,6 +6707,16 @@ glyphname = u10AD3.fina;
 lastChange = "2018-03-14 14:29:06 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{343, 585}";
+},
+{
+name = Anchor3;
+position = "{390, 0}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -6068,6 +6792,16 @@ glyphname = u10AD3.medi;
 lastChange = "2018-03-14 14:29:06 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{214, 585}";
+},
+{
+name = Anchor3;
+position = "{322, 0}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -6132,6 +6866,16 @@ glyphname = u10AD3.init;
 lastChange = "2018-03-14 14:29:06 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{198, 585}";
+},
+{
+name = Anchor3;
+position = "{322, 0}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -6187,6 +6931,16 @@ glyphname = u10AD4.fina;
 lastChange = "2018-03-14 14:29:06 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{408, 585}";
+},
+{
+name = Anchor3;
+position = "{439, 0}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -6257,6 +7011,16 @@ glyphname = u10AD4.medi;
 lastChange = "2018-03-14 14:29:06 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{48, 585}";
+},
+{
+name = Anchor3;
+position = "{195, 0}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -6316,6 +7080,16 @@ glyphname = u10AD4.init;
 lastChange = "2018-03-14 14:29:06 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{48, 585}";
+},
+{
+name = Anchor3;
+position = "{195, 0}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -6366,6 +7140,16 @@ glyphname = u10AD5.fina;
 lastChange = "2018-03-14 14:29:06 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{439, 585}";
+},
+{
+name = Anchor3;
+position = "{439, 0}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -6462,6 +7246,16 @@ glyphname = u10AD5.medi;
 lastChange = "2018-03-14 14:29:06 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{146, 585}";
+},
+{
+name = Anchor3;
+position = "{322, 0}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -6547,6 +7341,16 @@ glyphname = u10AD5.init;
 lastChange = "2018-03-14 14:29:06 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{146, 585}";
+},
+{
+name = Anchor3;
+position = "{244, 0}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -6623,6 +7427,16 @@ glyphname = u10AD6.fina;
 lastChange = "2018-03-14 14:29:06 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{537, 478}";
+},
+{
+name = Anchor3;
+position = "{488, 0}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -6732,6 +7546,16 @@ glyphname = u10AD6.medi;
 lastChange = "2018-03-14 14:29:06 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{244, 478}";
+},
+{
+name = Anchor3;
+position = "{322, 0}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -6826,6 +7650,16 @@ glyphname = u10AD6.init;
 lastChange = "2018-03-14 14:29:06 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{244, 478}";
+},
+{
+name = Anchor3;
+position = "{322, 0}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -6911,6 +7745,16 @@ glyphname = u10AD7.init;
 lastChange = "2018-03-14 14:29:06 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{73, 390}";
+},
+{
+name = Anchor3;
+position = "{244, -98}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -6961,6 +7805,16 @@ glyphname = u10AD8.fina;
 lastChange = "2018-03-14 14:29:06 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{719, 405}";
+},
+{
+name = Anchor3;
+position = "{585, 0}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -7050,6 +7904,16 @@ glyphname = u10AD8.medi;
 lastChange = "2018-03-14 14:29:06 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{279, 405}";
+},
+{
+name = Anchor3;
+position = "{390, 0}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -7128,6 +7992,16 @@ glyphname = u10AD8.init;
 lastChange = "2018-03-14 14:29:06 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{279, 405}";
+},
+{
+name = Anchor3;
+position = "{322, 0}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -7197,6 +8071,16 @@ glyphname = u10AD9.fina;
 lastChange = "2018-03-14 14:29:06 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{359, 468}";
+},
+{
+name = Anchor3;
+position = "{488, 0}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -7249,6 +8133,16 @@ glyphname = u10AD9.medi;
 lastChange = "2018-03-14 14:29:06 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{48, 468}";
+},
+{
+name = Anchor3;
+position = "{322, 0}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -7290,6 +8184,16 @@ glyphname = u10AD9.init;
 lastChange = "2018-03-14 14:29:06 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{48, 468}";
+},
+{
+name = Anchor3;
+position = "{292, 0}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -7338,6 +8242,16 @@ glyphname = u10ADA.fina;
 lastChange = "2018-03-14 14:29:06 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{371, 585}";
+},
+{
+name = Anchor3;
+position = "{488, 0}";
+}
+);
 components = (
 {
 name = u10AD9.fina;
@@ -7357,6 +8271,16 @@ glyphname = u10ADA.medi;
 lastChange = "2018-03-14 14:29:06 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{-6, 585}";
+},
+{
+name = Anchor3;
+position = "{322, 0}";
+}
+);
 components = (
 {
 name = u10AD9.medi;
@@ -7376,6 +8300,16 @@ glyphname = u10ADA.init;
 lastChange = "2018-03-14 14:29:06 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{0, 585}";
+},
+{
+name = Anchor3;
+position = "{292, 0}";
+}
+);
 components = (
 {
 name = u10AD9.init;
@@ -7395,6 +8329,16 @@ glyphname = u10ADB.fina;
 lastChange = "2018-03-14 14:29:06 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{542, 405}";
+},
+{
+name = Anchor3;
+position = "{439, 0}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -7464,6 +8408,16 @@ glyphname = u10ADB.medi;
 lastChange = "2018-03-14 14:29:06 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{134, 405}";
+},
+{
+name = Anchor3;
+position = "{273, 0}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -7522,6 +8476,16 @@ glyphname = u10ADB.init;
 lastChange = "2018-03-14 14:29:06 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{131, 405}";
+},
+{
+name = Anchor3;
+position = "{244, 0}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -7571,6 +8535,16 @@ glyphname = u10ADC.fina;
 lastChange = "2018-03-14 14:29:06 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{537, 539}";
+},
+{
+name = Anchor3;
+position = "{439, 0}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -7657,6 +8631,16 @@ glyphname = u10ADC.medi;
 lastChange = "2018-03-14 14:29:06 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{91, 539}";
+},
+{
+name = Anchor3;
+position = "{273, 0}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -7732,6 +8716,16 @@ glyphname = u10ADC.init;
 lastChange = "2018-03-14 14:29:06 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{102, 539}";
+},
+{
+name = Anchor3;
+position = "{244, 0}";
+}
+);
 components = (
 {
 name = u10ADB.init;
@@ -7751,6 +8745,16 @@ glyphname = u10ADD.fina;
 lastChange = "2018-03-14 14:29:06 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{445, 473}";
+},
+{
+name = Anchor3;
+position = "{322, -225}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -7838,6 +8842,16 @@ glyphname = u10ADE.fina;
 lastChange = "2018-03-14 14:29:06 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{574, 473}";
+},
+{
+name = Anchor3;
+position = "{585, 0}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -7954,6 +8968,16 @@ glyphname = u10ADE.medi;
 lastChange = "2018-03-14 14:29:06 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{306, 473}";
+},
+{
+name = Anchor3;
+position = "{390, 0}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -8055,6 +9079,16 @@ glyphname = u10ADE.init;
 lastChange = "2018-03-14 14:29:06 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{306, 473}";
+},
+{
+name = Anchor3;
+position = "{390, 0}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -8147,6 +9181,16 @@ glyphname = u10ADF.fina;
 lastChange = "2018-03-14 14:29:06 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{708, 585}";
+},
+{
+name = Anchor3;
+position = "{585, 0}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -8280,6 +9324,16 @@ glyphname = u10ADF.medi;
 lastChange = "2018-03-14 14:29:06 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{292, 585}";
+},
+{
+name = Anchor3;
+position = "{390, 0}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -8398,6 +9452,16 @@ glyphname = u10ADF.init;
 lastChange = "2018-03-14 14:29:06 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{292, 585}";
+},
+{
+name = Anchor3;
+position = "{390, 0}";
+}
+);
 components = (
 {
 name = u10ADE.init;
@@ -8417,6 +9481,16 @@ glyphname = u10AE0.fina;
 lastChange = "2018-03-14 14:29:06 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{671, 585}";
+},
+{
+name = Anchor3;
+position = "{585, 0}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -8567,6 +9641,16 @@ glyphname = u10AE0.medi;
 lastChange = "2018-03-14 14:29:06 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{322, 585}";
+},
+{
+name = Anchor3;
+position = "{390, 0}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -8702,6 +9786,16 @@ glyphname = u10AE0.init;
 lastChange = "2018-03-14 14:29:06 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{322, 585}";
+},
+{
+name = Anchor3;
+position = "{390, 0}";
+}
+);
 components = (
 {
 name = u10ADE.init;
@@ -8721,6 +9815,16 @@ glyphname = u10AE1.fina;
 lastChange = "2018-03-14 14:29:06 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{85, 439}";
+},
+{
+name = Anchor3;
+position = "{273, -79}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -8788,6 +9892,16 @@ glyphname = u10AE4.fina;
 lastChange = "2018-03-14 14:29:06 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{209, 600}";
+},
+{
+name = Anchor3;
+position = "{390, 0}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -8864,6 +9978,16 @@ glyphname = u10AC5.alt;
 lastChange = "2018-03-14 14:29:06 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{283, 322}";
+},
+{
+name = Anchor3;
+position = "{370, -245}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -8928,6 +10052,16 @@ glyphname = u10AC6.alt;
 lastChange = "2018-03-14 14:29:06 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{406, 517}";
+},
+{
+name = Anchor3;
+position = "{526, -116}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -9017,6 +10151,16 @@ glyphname = u10AD6.alt;
 lastChange = "2018-03-14 14:29:06 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{322, 439}";
+},
+{
+name = Anchor3;
+position = "{439, -245}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -9109,6 +10253,16 @@ glyphname = u10AD6.alt.fina;
 lastChange = "2018-03-14 14:29:06 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{322, 439}";
+},
+{
+name = Anchor3;
+position = "{439, -245}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -9210,6 +10364,16 @@ glyphname = u10AD7.alt;
 lastChange = "2018-03-14 14:29:06 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{283, 419}";
+},
+{
+name = Anchor3;
+position = "{268, -147}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -9272,6 +10436,16 @@ glyphname = u10AE1.alt;
 lastChange = "2018-03-14 14:29:06 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{277, 468}";
+},
+{
+name = Anchor3;
+position = "{341, -49}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -10105,6 +11279,16 @@ glyphname = uni25CC;
 lastChange = "2018-03-14 14:29:06 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{297, 624}";
+},
+{
+name = Anchor3;
+position = "{297, 0}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -10677,22 +11861,18 @@ instances = (
 {
 customParameters = (
 {
-name = weightClass;
-value = "400";
-},
-{
 name = panose;
 value = (
-"2",
-"11",
-"5",
-"2",
-"4",
-"5",
-"4",
-"2",
-"2",
-"4"
+2,
+11,
+5,
+2,
+4,
+5,
+4,
+2,
+2,
+4
 );
 },
 {
@@ -10706,10 +11886,9 @@ UUID0 = 1;
 name = Regular;
 }
 );
-keyboardIncrement = 0;
 manufacturer = "Monotype Imaging Inc.";
 manufacturerURL = "http://www.google.com/get/noto/";
 unitsPerEm = 1000;
 versionMajor = 2;
-versionMinor = 0;
+versionMinor = 1;
 }
