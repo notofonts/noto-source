@@ -115,7 +115,18 @@ designerURL = "http://www.monotype.com/studio";
 disablesAutomaticAlignment = 1;
 disablesNiceNames = 1;
 familyName = "Noto Sans Hanunoo";
+featurePrefixes = (
+{
+code = "languagesystem hano dflt;\012";
+name = Languagesystems;
+}
+);
 features = (
+{
+automatic = 1;
+code = "feature salt;\012";
+name = aalt;
+},
 {
 code = "\012sub uni1725 uni1732 by uni1725uni1732;\012sub uni1725 uni1733 by uni1725uni1733;\012sub uni1726 uni1733 by uni1726uni1733;\012sub uni1727 uni1732 by uni1727uni1732;\012sub uni1727 uni1733 by uni1727uni1733;\012sub uni1729 uni1732 by uni1729uni1732;\012sub uni1729 uni1733 by uni1729uni1733;\012sub uni172B uni1733 by uni172Buni1733;\012sub uni172D uni1732 by uni172Duni1732;\012sub uni172D uni1733 by uni172Duni1733;\012sub uni172E uni1733 by uni172Euni1733;\012sub uni1730 uni1733 by uni1730uni1733;\012sub uni1731 uni1732 by uni1731uni1732;\012sub uni1731 uni1733 by uni1731uni1733;\012";
 name = ccmp;
