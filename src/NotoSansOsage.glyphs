@@ -1,23 +1,17 @@
 {
-.appVersion = "1038";
-copyright = "Copyright 2017 Google Inc. All Rights Reserved.";
+.appVersion = "3109";
+classes = (
+{
+code = "u104BD u104C8 u104C9 u104CD u104D2 u104E5";
+name = class1;
+},
+{
+code = "u104E5 u104F0 u104F1 u104F5 u104FA u104FB";
+name = class8;
+}
+);
+copyright = "Copyright 2017-2022 Google Inc. All Rights Reserved.";
 customParameters = (
-{
-name = licenseURL;
-value = "http://scripts.sil.org/OFL";
-},
-{
-name = description;
-value = "Designed by Monotype design team.";
-},
-{
-name = trademark;
-value = "Noto is a trademark of Google Inc.";
-},
-{
-name = vendorID;
-value = GOOG;
-},
 {
 name = glyphOrder;
 value = (
@@ -118,14 +112,6 @@ value = (
 );
 },
 {
-name = versionString;
-value = "Version 2.000";
-},
-{
-name = license;
-value = "This Font Software is licensed under the SIL Open Font License, Version 1.1. This Font Software is distributed on an \"AS IS\" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the SIL Open Font License for the specific language, permissions and limitations governing your use of this Font Software.";
-},
-{
 name = unicodeRanges;
 value = (
 0,
@@ -134,6 +120,30 @@ value = (
 45,
 57
 );
+},
+{
+name = licenseURL;
+value = "http://scripts.sil.org/OFL";
+},
+{
+name = description;
+value = "Designed by Monotype design team.";
+},
+{
+name = trademark;
+value = "Noto is a trademark of Google Inc.";
+},
+{
+name = vendorID;
+value = GOOG;
+},
+{
+name = versionString;
+value = "Version 2.001";
+},
+{
+name = license;
+value = "This Font Software is licensed under the SIL Open Font License, Version 1.1. This Font Software is distributed on an \"AS IS\" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the SIL Open Font License for the specific language, permissions and limitations governing your use of this Font Software.";
 }
 );
 date = "2017-07-06 21:19:10 +0000";
@@ -142,6 +152,26 @@ designerURL = "http://www.monotype.com/studio";
 disablesAutomaticAlignment = 1;
 disablesNiceNames = 1;
 familyName = "Noto Sans Osage";
+featurePrefixes = (
+{
+code = "languagesystem DFLT dflt;\012languagesystem osge dflt;\012";
+name = Languagesystems;
+},
+{
+code = "\012lookup SinglePositioning8 {\012    pos u104E3 75;\012    pos u104EA 60;\012} SinglePositioning8;\012";
+name = KernAdjustments;
+}
+);
+features = (
+{
+code = "\012    pos u104BB' 60 uni0358 @class1;\012    pos u104BB' 60 uni030B uni0358 @class1;\012    pos u104BB' 60 acutecomb uni0358 @class1;\012    pos u104BB' 60 uni0304 uni0358 @class1;\012    pos u104BB' 60 uni0358 uni030B @class1;\012    pos u104BB' 60 uni0358 acutecomb @class1;\012    pos u104BB' 60 uni0358 uni0304 @class1;\012\012    pos [u104E3 u104EA]' lookup SinglePositioning8 uni0358 @class8;\012    pos [u104E3 u104EA]' lookup SinglePositioning8 uni030B uni0358 @class8;\012    pos [u104E3 u104EA]' lookup SinglePositioning8 uni0304 uni0358 @class8;\012    pos [u104E3 u104EA]' lookup SinglePositioning8 acutecomb uni0358 @class8;\012    pos [u104E3 u104EA]' lookup SinglePositioning8 uni0358 uni030B @class8;\012    pos [u104E3 u104EA]' lookup SinglePositioning8 uni0358 uni0304 @class8;\012    pos [u104E3 u104EA]' lookup SinglePositioning8 uni0358 acutecomb @class8;\012";
+name = kern;
+},
+{
+code = "# Automatic Code Start\012";
+name = mark;
+}
+);
 fontMaster = (
 {
 alignmentZones = (
@@ -197,16 +227,16 @@ value = -100;
 {
 name = panose;
 value = (
-"2",
-"11",
-"5",
-"2",
-"4",
-"5",
-"4",
-"2",
-"2",
-"4"
+2,
+11,
+5,
+2,
+4,
+5,
+4,
+2,
+2,
+4
 );
 }
 );
@@ -303,6 +333,12 @@ glyphname = acutecomb;
 lastChange = "2017-07-07 18:00:30 +0000";
 layers = (
 {
+anchors = (
+{
+name = _Anchor4;
+position = "{-300, 600}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -325,12 +361,20 @@ width = 0;
 }
 );
 unicode = 0301;
+category = Mark;
+subCategory = Nonspacing;
 },
 {
 glyphname = uni0304;
 lastChange = "2017-07-07 18:00:30 +0000";
 layers = (
 {
+anchors = (
+{
+name = _Anchor4;
+position = "{0, 600}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -347,12 +391,20 @@ width = 0;
 }
 );
 unicode = 0304;
+category = Mark;
+subCategory = Nonspacing;
 },
 {
 glyphname = uni030B;
 lastChange = "2017-07-07 18:00:30 +0000";
 layers = (
 {
+anchors = (
+{
+name = _Anchor4;
+position = "{10, 600}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -390,12 +442,20 @@ width = 0;
 }
 );
 unicode = 030B;
+category = Mark;
+subCategory = Nonspacing;
 },
 {
 glyphname = uni0358;
 lastChange = "2017-07-07 18:00:30 +0000";
 layers = (
 {
+anchors = (
+{
+name = _Anchor6;
+position = "{180, 600}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -420,12 +480,24 @@ width = 0;
 }
 );
 unicode = 0358;
+category = Mark;
+subCategory = Nonspacing;
 },
 {
 glyphname = uni25CC;
 lastChange = "2017-07-07 18:00:30 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor4;
+position = "{300, 620}";
+},
+{
+name = Anchor6;
+position = "{580, 410}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -711,6 +783,16 @@ glyphname = u104B0;
 lastChange = "2017-07-07 18:00:30 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor4;
+position = "{300, 800}";
+},
+{
+name = Anchor6;
+position = "{460, 600}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -742,6 +824,12 @@ glyphname = u104B1;
 lastChange = "2017-07-07 18:00:30 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor4;
+position = "{300, 800}";
+}
+);
 components = (
 {
 name = u104B0;
@@ -762,6 +850,12 @@ glyphname = u104B2;
 lastChange = "2017-07-07 18:00:30 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor4;
+position = "{300, 800}";
+}
+);
 components = (
 {
 name = u104B0;
@@ -782,6 +876,16 @@ glyphname = u104B3;
 lastChange = "2017-07-07 18:00:30 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor4;
+position = "{285, 800}";
+},
+{
+name = Anchor6;
+position = "{430, 600}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -809,6 +913,12 @@ glyphname = u104B4;
 lastChange = "2017-07-07 18:00:30 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor4;
+position = "{335, 800}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -870,6 +980,12 @@ glyphname = u104B5;
 lastChange = "2017-07-07 18:00:30 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor4;
+position = "{390, 800}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -939,6 +1055,12 @@ glyphname = u104B6;
 lastChange = "2017-07-07 18:00:30 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor4;
+position = "{390, 800}";
+}
+);
 components = (
 {
 name = u104B5;
@@ -959,6 +1081,12 @@ glyphname = u104B7;
 lastChange = "2017-07-07 18:00:30 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor4;
+position = "{310, 800}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -1030,6 +1158,12 @@ glyphname = u104B8;
 lastChange = "2017-07-07 18:00:30 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor4;
+position = "{310, 800}";
+}
+);
 components = (
 {
 name = u104B7;
@@ -1050,6 +1184,12 @@ glyphname = u104B9;
 lastChange = "2017-07-07 18:00:30 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor4;
+position = "{300, 800}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -1100,6 +1240,12 @@ glyphname = u104BA;
 lastChange = "2017-07-07 18:00:30 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor4;
+position = "{300, 820}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -1150,6 +1296,16 @@ glyphname = u104BB;
 lastChange = "2017-07-07 18:00:30 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor4;
+position = "{350, 800}";
+},
+{
+name = Anchor6;
+position = "{660, 600}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -1198,6 +1354,12 @@ glyphname = u104BC;
 lastChange = "2017-07-07 18:00:30 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor4;
+position = "{320, 800}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -1251,6 +1413,12 @@ glyphname = u104BD;
 lastChange = "2017-07-07 18:00:30 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor4;
+position = "{320, 800}";
+}
+);
 components = (
 {
 name = u104BC;
@@ -1271,6 +1439,12 @@ glyphname = u104BE;
 lastChange = "2017-07-07 18:00:30 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor4;
+position = "{320, 800}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -1347,6 +1521,12 @@ glyphname = u104BF;
 lastChange = "2017-07-07 18:00:30 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor4;
+position = "{400, 800}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -1385,6 +1565,12 @@ glyphname = u104C0;
 lastChange = "2017-07-07 18:00:30 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor4;
+position = "{465, 800}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -1457,6 +1643,12 @@ glyphname = u104C1;
 lastChange = "2017-07-07 18:00:30 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor4;
+position = "{465, 800}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -1496,6 +1688,16 @@ glyphname = u104C2;
 lastChange = "2017-07-07 18:00:30 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor4;
+position = "{390, 800}";
+},
+{
+name = Anchor6;
+position = "{710, 600}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -1543,6 +1745,12 @@ glyphname = u104C3;
 lastChange = "2017-07-07 18:00:30 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor4;
+position = "{390, 800}";
+}
+);
 components = (
 {
 name = u104C2;
@@ -1563,6 +1771,12 @@ glyphname = u104C4;
 lastChange = "2017-07-07 18:00:30 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor4;
+position = "{345, 800}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -1620,6 +1834,12 @@ glyphname = u104C5;
 lastChange = "2017-07-07 18:00:30 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor4;
+position = "{345, 800}";
+}
+);
 components = (
 {
 name = u104C4;
@@ -1640,6 +1860,12 @@ glyphname = u104C6;
 lastChange = "2017-07-07 18:00:30 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor4;
+position = "{325, 800}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -1678,6 +1904,12 @@ glyphname = u104C7;
 lastChange = "2017-07-07 18:00:30 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor4;
+position = "{300, 800}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -1772,6 +2004,12 @@ glyphname = u104C8;
 lastChange = "2017-07-07 18:00:30 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor4;
+position = "{355, 800}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -1815,6 +2053,12 @@ glyphname = u104C9;
 lastChange = "2017-07-07 18:00:30 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor4;
+position = "{355, 800}";
+}
+);
 components = (
 {
 name = u104C8;
@@ -1835,6 +2079,12 @@ glyphname = u104CA;
 lastChange = "2017-07-07 18:00:30 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor4;
+position = "{385, 800}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -1895,6 +2145,12 @@ glyphname = u104CB;
 lastChange = "2017-07-07 18:00:30 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor4;
+position = "{385, 800}";
+}
+);
 components = (
 {
 name = u104CA;
@@ -1915,6 +2171,12 @@ glyphname = u104CC;
 lastChange = "2017-07-07 18:00:30 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor4;
+position = "{385, 800}";
+}
+);
 components = (
 {
 name = u104CA;
@@ -1935,6 +2197,12 @@ glyphname = u104CD;
 lastChange = "2017-07-07 18:00:30 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor4;
+position = "{255, 800}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -1987,6 +2255,12 @@ glyphname = u104CE;
 lastChange = "2017-07-07 18:00:30 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor4;
+position = "{355, 800}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -2023,6 +2297,12 @@ glyphname = u104CF;
 lastChange = "2017-07-07 18:00:30 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor4;
+position = "{240, 800}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -2049,6 +2329,12 @@ glyphname = u104D0;
 lastChange = "2017-07-07 18:00:30 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor4;
+position = "{405, 800}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -2091,6 +2377,12 @@ glyphname = u104D1;
 lastChange = "2017-07-07 18:00:30 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor4;
+position = "{405, 800}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -2133,6 +2425,12 @@ glyphname = u104D2;
 lastChange = "2017-07-07 18:00:30 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor4;
+position = "{285, 800}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -2158,6 +2456,12 @@ glyphname = u104D3;
 lastChange = "2017-07-07 18:00:30 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor4;
+position = "{300, 800}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -2210,6 +2514,16 @@ glyphname = u104D8;
 lastChange = "2017-07-07 18:00:30 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor4;
+position = "{255, 600}";
+},
+{
+name = Anchor6;
+position = "{420, 420}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -2242,6 +2556,12 @@ glyphname = u104D9;
 lastChange = "2017-07-07 18:00:30 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor4;
+position = "{255, 600}";
+}
+);
 components = (
 {
 name = u104D8;
@@ -2262,6 +2582,12 @@ glyphname = u104DA;
 lastChange = "2017-07-07 18:00:30 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor4;
+position = "{255, 600}";
+}
+);
 components = (
 {
 name = u104D8;
@@ -2282,6 +2608,16 @@ glyphname = u104DB;
 lastChange = "2017-07-07 18:00:30 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor4;
+position = "{180, 700}";
+},
+{
+name = Anchor6;
+position = "{330, 520}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -2308,6 +2644,12 @@ glyphname = u104DC;
 lastChange = "2017-07-07 18:00:30 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor4;
+position = "{245, 600}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -2372,6 +2714,12 @@ glyphname = u104DD;
 lastChange = "2017-07-07 18:00:30 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor4;
+position = "{300, 600}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -2448,6 +2796,12 @@ glyphname = u104DE;
 lastChange = "2017-07-07 18:00:30 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor4;
+position = "{300, 600}";
+}
+);
 components = (
 {
 name = u104DD;
@@ -2468,6 +2822,12 @@ glyphname = u104DF;
 lastChange = "2017-07-07 18:00:30 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor4;
+position = "{270, 600}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -2533,6 +2893,12 @@ glyphname = u104E0;
 lastChange = "2017-07-07 18:00:30 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor4;
+position = "{270, 600}";
+}
+);
 components = (
 {
 name = u104DF;
@@ -2553,6 +2919,12 @@ glyphname = u104E1;
 lastChange = "2017-07-07 18:00:30 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor4;
+position = "{280, 600}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -2605,6 +2977,12 @@ glyphname = u104E2;
 lastChange = "2017-07-07 18:00:30 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor4;
+position = "{280, 650}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -2655,6 +3033,16 @@ glyphname = u104E3;
 lastChange = "2017-07-07 18:00:30 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor4;
+position = "{280, 600}";
+},
+{
+name = Anchor6;
+position = "{560, 420}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -2703,6 +3091,12 @@ glyphname = u104E4;
 lastChange = "2017-07-07 18:00:30 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor4;
+position = "{300, 800}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -2763,6 +3157,12 @@ glyphname = u104E5;
 lastChange = "2017-07-07 18:00:30 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor4;
+position = "{300, 800}";
+}
+);
 components = (
 {
 name = u104E4;
@@ -2783,6 +3183,12 @@ glyphname = u104E6;
 lastChange = "2017-07-07 18:00:30 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor4;
+position = "{300, 800}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -2866,6 +3272,12 @@ glyphname = u104E7;
 lastChange = "2017-07-07 18:00:30 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor4;
+position = "{230, 600}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -2904,6 +3316,12 @@ glyphname = u104E8;
 lastChange = "2017-07-07 18:00:30 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor4;
+position = "{430, 600}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -2976,6 +3394,12 @@ glyphname = u104E9;
 lastChange = "2017-07-07 18:00:30 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor4;
+position = "{255, 600}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -3015,6 +3439,16 @@ glyphname = u104EA;
 lastChange = "2017-07-07 18:00:30 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor4;
+position = "{300, 600}";
+},
+{
+name = Anchor6;
+position = "{580, 420}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -3062,6 +3496,12 @@ glyphname = u104EB;
 lastChange = "2017-07-07 18:00:30 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor4;
+position = "{300, 600}";
+}
+);
 components = (
 {
 name = u104EA;
@@ -3082,6 +3522,12 @@ glyphname = u104EC;
 lastChange = "2017-07-07 18:00:30 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor4;
+position = "{255, 600}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -3143,6 +3589,12 @@ glyphname = u104ED;
 lastChange = "2017-07-07 18:00:30 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor4;
+position = "{255, 600}";
+}
+);
 components = (
 {
 name = u104EC;
@@ -3163,6 +3615,12 @@ glyphname = u104EE;
 lastChange = "2017-07-07 18:00:30 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor4;
+position = "{220, 600}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -3201,6 +3659,12 @@ glyphname = u104EF;
 lastChange = "2017-07-07 18:00:30 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor4;
+position = "{255, 600}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -3295,6 +3759,12 @@ glyphname = u104F0;
 lastChange = "2017-07-07 18:00:30 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor4;
+position = "{255, 600}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -3338,6 +3808,12 @@ glyphname = u104F1;
 lastChange = "2017-07-07 18:00:30 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor4;
+position = "{255, 600}";
+}
+);
 components = (
 {
 name = horizbar2;
@@ -3358,6 +3834,12 @@ glyphname = u104F2;
 lastChange = "2017-07-07 18:00:30 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor4;
+position = "{280, 600}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -3417,6 +3899,12 @@ glyphname = u104F3;
 lastChange = "2017-07-07 18:00:30 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor4;
+position = "{280, 600}";
+}
+);
 components = (
 {
 name = u104F2;
@@ -3437,6 +3925,12 @@ glyphname = u104F4;
 lastChange = "2017-07-07 18:00:30 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor4;
+position = "{280, 600}";
+}
+);
 components = (
 {
 name = u104F2;
@@ -3457,6 +3951,12 @@ glyphname = u104F5;
 lastChange = "2017-07-07 18:00:30 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor4;
+position = "{230, 600}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -3512,6 +4012,12 @@ glyphname = u104F6;
 lastChange = "2017-07-07 18:00:30 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor4;
+position = "{300, 600}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -3548,6 +4054,12 @@ glyphname = u104F7;
 lastChange = "2017-07-07 18:00:30 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor4;
+position = "{210, 600}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -3574,6 +4086,12 @@ glyphname = u104F8;
 lastChange = "2017-07-07 18:00:30 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor4;
+position = "{345, 700}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -3616,6 +4134,12 @@ glyphname = u104F9;
 lastChange = "2017-07-07 18:00:30 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor4;
+position = "{345, 700}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -3658,6 +4182,12 @@ glyphname = u104FA;
 lastChange = "2017-07-07 18:00:30 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor4;
+position = "{200, 600}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -3683,6 +4213,12 @@ glyphname = u104FB;
 lastChange = "2017-07-07 18:00:30 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor4;
+position = "{210, 600}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -3797,10 +4333,6 @@ instances = (
 {
 customParameters = (
 {
-name = weightClass;
-value = "400";
-},
-{
 name = typoAscender;
 value = 1069;
 },
@@ -3839,16 +4371,16 @@ value = "536";
 {
 name = panose;
 value = (
-"2",
-"11",
-"5",
-"2",
-"4",
-"5",
-"4",
-"2",
-"2",
-"4"
+2,
+11,
+5,
+2,
+4,
+5,
+4,
+2,
+2,
+4
 );
 }
 );
@@ -3858,10 +4390,9 @@ UUID0 = 1;
 name = Regular;
 }
 );
-keyboardIncrement = 0;
 manufacturer = "Monotype Imaging Inc.";
 manufacturerURL = "http://www.google.com/get/noto/";
 unitsPerEm = 1000;
 versionMajor = 2;
-versionMinor = 0;
+versionMinor = 1;
 }
