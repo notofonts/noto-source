@@ -1,5 +1,34 @@
 {
-.appVersion = "1252";
+.appVersion = "3109";
+DisplayStrings = (
+"/virama_ahom"
+);
+classes = (
+{
+code = "a_ahom alt_ba_ahom alt_ga_ahom alt_ta_ahom ba_ahom bha_ahom cha_ahom dha_ahom ga_ahom ga_ahom.alt gha_ahom ha_ahom ja_ahom jha_ahom jha_ahom.alt ka_ahom kha_ahom khra_ahom la_ahom ma_ahom pa_ahom pha_ahom phra_ahom ra_ahom sa_ahom t_ja_ahom ta_ahom tha_ahom";
+name = class1;
+},
+{
+code = "bha_ahom da_ahom dha_ahom gha_ahom jha_ahom jha_ahom.alt phra_ahom";
+name = class4;
+},
+{
+code = "alt_ba_ahom alt_ta_ahom ba_ahom ga_ahom ga_ahom.alt ha_ahom ma_ahom na_ahom nga_ahom pa_ahom";
+name = class5;
+},
+{
+code = "alt_ba_ahom alt_ta_ahom ba_ahom ga_ahom ha_ahom ma_ahom na_ahom nga_ahom pa_ahom";
+name = class6;
+},
+{
+code = "a_ahom alt_ba_ahom alt_ga_ahom alt_ta_ahom ba_ahom bha_ahom cha_ahom da_ahom dha_ahom dottedCircle ga_ahom ga_ahom.alt gha_ahom ha_ahom ja_ahom jha_ahom jha_ahom.alt ka_ahom kha_ahom khra_ahom la_ahom ma_ahom na_ahom nga_ahom nya_ahom pa_ahom pha_ahom phra_ahom ra_ahom sa_ahom t_ja_ahom ta_ahom tha_ahom";
+name = class7;
+},
+{
+code = "a_ahom alt_ba_ahom alt_ga_ahom alt_ta_ahom ba_ahom bha_ahom cha_ahom da_ahom dha_ahom ga_ahom gha_ahom ha_ahom ja_ahom jha_ahom ka_ahom kha_ahom la_ahom ma_ahom na_ahom nga_ahom nya_ahom pa_ahom pha_ahom ra_ahom sa_ahom t_ja_ahom ta_ahom tha_ahom";
+name = class18;
+}
+);
 copyright = "Copyright 2018 Google Inc. All Rights Reserved.";
 customParameters = (
 {
@@ -84,6 +113,34 @@ phra_ahom
 );
 },
 {
+name = unicodeRanges;
+value = (
+0,
+1,
+45,
+57
+);
+},
+{
+name = "Has WWS Names";
+value = 1;
+},
+{
+name = fsType;
+value = (
+);
+},
+{
+name = codePageRanges;
+value = (
+1252
+);
+},
+{
+name = "Don't use Production Names";
+value = 1;
+},
+{
 name = description;
 value = "Designed by Monotype design team.";
 },
@@ -100,40 +157,12 @@ name = vendorID;
 value = GOOG;
 },
 {
-name = unicodeRanges;
-value = (
-0,
-1,
-45,
-57
-);
-},
-{
 name = trademark;
 value = "Noto is a trademark of Google Inc.";
 },
 {
-name = "Has WWS Names";
-value = 1;
-},
-{
 name = versionString;
 value = "Version 2.003";
-},
-{
-name = fsType;
-value = (
-);
-},
-{
-name = codePageRanges;
-value = (
-1252
-);
-},
-{
-name = "Don't use Production Names";
-value = 1;
 }
 );
 date = "2015-01-16 16:27:17 +0000";
@@ -141,6 +170,118 @@ designer = "Monotype Design Team";
 designerURL = "http://www.monotype.com/studio";
 disablesAutomaticAlignment = 1;
 familyName = "Noto Serif Ahom";
+featurePrefixes = (
+{
+code = "lookup LigatureSubstitution1 {\012    lookupflag 0;\012    ;\012    sub uSign_ahom oSign_ahom by o_u_ahom;\012    sub oSign_ahom uSign_ahom by o_u_ahom;\012} LigatureSubstitution1;\012";
+name = LigatureSubstitution1;
+},
+{
+code = "lookup LigatureSubstitution2 {\012    lookupflag 0;\012    ;\012    # Original source: 1 \012    sub iSign_ahom uSign_ahom by i_u_ahom;\012    sub uSign_ahom iSign_ahom by i_u_ahom;\012} LigatureSubstitution2;\012";
+name = LigatureSubstitution2;
+},
+{
+code = "lookup ChainedContextualGSUB3 {\012    lookupflag 0;\012    ;\012    # Original source: 2 \012    sub @class1 eSign_ahom [iSign_ahom uSign_ahom]' lookup LigatureSubstitution2 [iSign_ahom uSign_ahom]';\012    sub @class1 [medialLa_ahom medialLa_ahom.sm medialLigaRa_ahom] [iSign_ahom uSign_ahom]' lookup LigatureSubstitution2 [iSign_ahom uSign_ahom]';\012    sub @class1 [iSign_ahom uSign_ahom]' lookup LigatureSubstitution2 [iSign_ahom uSign_ahom]';\012} ChainedContextualGSUB3;\012";
+name = ChainedContextualGSUB3;
+},
+{
+code = "lookup LigatureSubstitution4 {\012    lookupflag 0;\012    ;\012    # Original source: 3 \012    sub kha_ahom medialLigaRa_ahom by khra_ahom;\012    sub alt_ta_ahom ja_ahom by t_ja_ahom;\012    sub pha_ahom medialLigaRa_ahom by phra_ahom;\012} LigatureSubstitution4;\012";
+name = LigatureSubstitution4;
+},
+{
+code = "lookup SingleSubstitution5 {\012    lookupflag 0;\012    ;\012    # Original source: 4 \012    sub ga_ahom by ga_ahom.alt;\012    sub jha_ahom by jha_ahom.alt;\012    sub three_ahom by three_ahom.alt;\012    sub four_ahom by four_ahom.alt;\012} SingleSubstitution5;\012";
+name = SingleSubstitution5;
+},
+{
+code = "lookup SingleSubstitution9 {\012    lookupflag 0;\012    ;\012    # Original source: 8 \012    sub medialRa_ahom by medialRa_ahom.desc;\012} SingleSubstitution9;\012";
+name = SingleSubstitution9;
+},
+{
+code = "lookup ChainedContextualGSUB6 {\012    lookupflag 0;\012    ;\012    # Original source: 5 \012    sub @class4 medialRa_ahom' lookup SingleSubstitution9;\012} ChainedContextualGSUB6;\012";
+name = ChainedContextualGSUB6;
+},
+{
+code = "lookup SingleSubstitution10 {\012    lookupflag 0;\012    ;\012    # Original source: 9 \012    sub medialRa_ahom by medialRa_ahom.sm;\012} SingleSubstitution10;\012";
+name = SingleSubstitution10;
+},
+{
+code = "lookup ChainedContextualGSUB7 {\012    lookupflag 0;\012    ;\012    # Original source: 6 \012    sub @class5 medialRa_ahom' lookup SingleSubstitution10;\012} ChainedContextualGSUB7;\012";
+name = ChainedContextualGSUB7;
+},
+{
+code = "lookup SingleSubstitution11 {\012    lookupflag 0;\012    ;\012    # Original source: 10 \012    sub medialLa_ahom by medialLa_ahom.sm;\012} SingleSubstitution11;\012";
+name = SingleSubstitution11;
+},
+{
+code = "lookup ChainedContextualGSUB8 {\012    lookupflag 0;\012    ;\012    # Original source: 7 \012    sub @class6 medialLa_ahom' lookup SingleSubstitution11;\012} ChainedContextualGSUB8;\012";
+name = ChainedContextualGSUB8;
+},
+{
+code = "lookup SinglePositioning1 {\012    lookupflag 0;\012    ;\012    pos dottedCircle 231;\012    pos ka_ahom 231;\012    pos kha_ahom 231;\012    pos nga_ahom 231;\012    pos na_ahom 231;\012    pos ta_ahom 231;\012    pos alt_ta_ahom 231;\012    pos pa_ahom 231;\012    pos pha_ahom 231;\012    pos ba_ahom 231;\012    pos ma_ahom 231;\012    pos ja_ahom 231;\012    pos cha_ahom 231;\012    pos tha_ahom 231;\012    pos ra_ahom 261;\012    pos la_ahom 231;\012    pos sa_ahom 231;\012    pos nya_ahom 231;\012    pos ha_ahom 231;\012    pos a_ahom 231;\012    pos da_ahom 231;\012    pos dha_ahom 231;\012    pos ga_ahom 231;\012    pos ga_ahom.alt 231;\012    pos alt_ga_ahom 231;\012    pos gha_ahom 231;\012    pos bha_ahom 231;\012    pos jha_ahom 231;\012    pos jha_ahom.alt 231;\012    pos alt_ba_ahom 231;\012    pos t_ja_ahom 231;\012    pos khra_ahom 231;\012    pos phra_ahom 231;\012} SinglePositioning1;\012";
+name = SinglePositioning1;
+},
+{
+code = "lookup SinglePositioning2 {\012    lookupflag 0;\012    ;\012    # Original source: 1 \012    pos [a_ahom alt_ba_ahom alt_ga_ahom alt_ta_ahom ba_ahom bha_ahom cha_ahom da_ahom dha_ahom dottedCircle ga_ahom ga_ahom.alt gha_ahom ha_ahom ja_ahom jha_ahom jha_ahom.alt ka_ahom kha_ahom khra_ahom la_ahom ma_ahom na_ahom nga_ahom nya_ahom pa_ahom pha_ahom phra_ahom ra_ahom sa_ahom t_ja_ahom ta_ahom tha_ahom] <250 0 250 0>;\012} SinglePositioning2;\012";
+name = SinglePositioning2;
+},
+{
+code = "lookup ChainedContextualGPOS3 {\012    lookupflag 0;\012    ;\012    # Original source: 2 \012    pos @class7' lookup SinglePositioning2 [medialRa_ahom medialRa_ahom.sm medialRa_ahom.desc]';\012} ChainedContextualGPOS3;\012";
+name = ChainedContextualGPOS3;
+},
+{
+code = "lookup ChainedContextualGPOS4 {\012    lookupflag 0;\012    ;\012    # Original source: 3 \012    pos @class7' lookup SinglePositioning1 [iSign_ahom iiSign_ahom];\012    pos @class7' lookup SinglePositioning1 awSign_ahom;\012    pos @class7' lookup SinglePositioning1 aiSign_ahom;\012    pos @class7' lookup SinglePositioning1 amSign_ahom awSign_ahom;\012    pos @class7' lookup SinglePositioning1 [medialRa_ahom medialRa_ahom.sm medialRa_ahom.desc medialLigaRa_ahom]' [iSign_ahom iiSign_ahom];\012    pos @class7' lookup SinglePositioning1 [medialRa_ahom medialRa_ahom.sm medialRa_ahom.desc medialLigaRa_ahom]' awSign_ahom;\012    pos @class7' lookup SinglePositioning1 [medialRa_ahom medialRa_ahom.sm medialRa_ahom.desc medialLigaRa_ahom]' aiSign_ahom;\012    pos @class7' lookup SinglePositioning1 [medialLa_ahom medialLa_ahom.sm]' [iSign_ahom iiSign_ahom];\012    pos @class7' lookup SinglePositioning1 [medialLa_ahom medialLa_ahom.sm]' awSign_ahom;\012    pos @class7' lookup SinglePositioning1 [medialLa_ahom medialLa_ahom.sm]' aiSign_ahom;\012} ChainedContextualGPOS4;\012";
+name = ChainedContextualGPOS4;
+},
+{
+code = "lookup PairPositioning5 {\012    lookupflag 0;\012    ;\012    # Original source: 4 \012    pos aaSign_ahom <NULL> aaSign_ahom <80 0 80 0>;\012    pos iSign_ahom <NULL> ta_ahom <-120 0 -120 0>;\012    pos iSign_ahom <NULL> alt_ta_ahom <-120 0 -120 0>;\012    pos iSign_ahom <NULL> ra_ahom <-231 0 -231 0>;\012    pos iSign_ahom <NULL> ga_ahom <-100 0 -100 0>;\012    pos iSign_ahom <NULL> alt_ga_ahom <-100 0 -100 0>;\012    pos iSign_ahom <NULL> t_ja_ahom <-120 0 -120 0>;\012    pos iiSign_ahom <NULL> ta_ahom <-120 0 -120 0>;\012    pos iiSign_ahom <NULL> alt_ta_ahom <-120 0 -120 0>;\012    pos iiSign_ahom <NULL> ra_ahom <-231 0 -231 0>;\012    pos iiSign_ahom <NULL> ga_ahom <-100 0 -100 0>;\012    pos iiSign_ahom <NULL> alt_ga_ahom <-100 0 -100 0>;\012    pos iiSign_ahom <NULL> t_ja_ahom <-120 0 -120 0>;\012    pos awSign_ahom <NULL> ta_ahom <-120 0 -120 0>;\012    pos awSign_ahom <NULL> alt_ta_ahom <-120 0 -120 0>;\012    pos awSign_ahom <NULL> ra_ahom <-231 0 -231 0>;\012    pos awSign_ahom <NULL> ga_ahom <-100 0 -100 0>;\012    pos awSign_ahom <NULL> alt_ga_ahom <-100 0 -100 0>;\012    pos awSign_ahom <NULL> t_ja_ahom <-120 0 -120 0>;\012    pos aiSign_ahom <NULL> ta_ahom <-120 0 -120 0>;\012    pos aiSign_ahom <NULL> alt_ta_ahom <-120 0 -120 0>;\012    pos aiSign_ahom <NULL> ra_ahom <-231 0 -231 0>;\012    pos aiSign_ahom <NULL> ga_ahom <-100 0 -100 0>;\012    pos aiSign_ahom <NULL> alt_ga_ahom <-100 0 -100 0>;\012    pos aiSign_ahom <NULL> t_ja_ahom <-120 0 -120 0>;\012} PairPositioning5;\012";
+name = PairPositioning5;
+},
+{
+code = "lookup PairPositioning18 {\012    lookupflag 0;\012    ;\012    # Original source: 9 \012    pos eSign_ahom na_ahom -30;\012    pos eSign_ahom ta_ahom -60;\012    pos eSign_ahom alt_ta_ahom -60;\012    pos eSign_ahom ra_ahom -80;\012    pos eSign_ahom ga_ahom -60;\012    pos eSign_ahom alt_ga_ahom -60;\012    pos eSign_ahom alt_ba_ahom -80;\012    pos eSign_ahom t_ja_ahom -60;\012} PairPositioning18;\012";
+name = PairPositioning18;
+},
+{
+code = "lookup PairPositioning19 {\012    lookupflag 0;\012    ;\012    # Original source: 10 \012    pos eSign_ahom ka_ahom 60;\012    pos eSign_ahom nga_ahom -90;\012    pos eSign_ahom na_ahom -60;\012    pos eSign_ahom ta_ahom -60;\012    pos eSign_ahom alt_ta_ahom -90;\012    pos eSign_ahom pa_ahom -90;\012    pos eSign_ahom pha_ahom -30;\012    pos eSign_ahom ba_ahom -100;\012    pos eSign_ahom ma_ahom -70;\012    pos eSign_ahom ra_ahom -140;\012    pos eSign_ahom ha_ahom -80;\012    pos eSign_ahom dha_ahom -40;\012    pos eSign_ahom ga_ahom -160;\012    pos eSign_ahom alt_ga_ahom -60;\012    pos eSign_ahom gha_ahom -80;\012    pos eSign_ahom bha_ahom -60;\012    pos eSign_ahom jha_ahom -60;\012    pos eSign_ahom alt_ba_ahom -100;\012    pos eSign_ahom t_ja_ahom -60;\012} PairPositioning19;\012";
+name = PairPositioning19;
+},
+{
+code = "lookup ContextualGPOS20 {\012    lookupflag 0;\012    ;\012    # Original source: 11 \012    pos eSign_ahom' lookup PairPositioning19 @class18' [medialRa_ahom medialRa_ahom.sm medialRa_ahom.desc]';\012    pos eSign_ahom' lookup PairPositioning18 @class18';\012} ContextualGPOS20;\012";
+name = ContextualGPOS20;
+},
+{
+code = "languagesystem ahom dflt;\012";
+name = Languagesystems;
+}
+);
+features = (
+{
+code = "    lookup LigatureSubstitution1;\012\012    lookup ChainedContextualGSUB6;\012\012    lookup ChainedContextualGSUB7;\012\012    lookup ChainedContextualGSUB8;\012\012    lookup ChainedContextualGSUB3;\012";
+name = ccmp;
+},
+{
+code = "    lookup LigatureSubstitution4;\012";
+name = rlig;
+},
+{
+code = "    lookup SingleSubstitution5;\012";
+name = salt;
+},
+{
+code = "# Automatic Code Start\012    lookup ContextualGPOS20;\012\012    lookup ChainedContextualGPOS3;\012\012    lookup ChainedContextualGPOS4;\012";
+name = dist;
+},
+{
+code = "# Automatic Code Start\012    lookup PairPositioning5;\012\012# ufo2ft isn't doing mark/base kerning for me so I'm just gonna do it myself\012pos na_ahom 70 aaSign_ahom;";
+name = kern;
+},
+{
+code = "# Automatic Code Start\012";
+name = mark;
+},
+{
+code = "# Automatic Code Start\012";
+name = blwm;
+}
+);
 fontMaster = (
 {
 alignmentZones = (
@@ -295,6 +436,44 @@ glyphname = dottedCircle;
 lastChange = "2019-08-07 17:52:21 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor10;
+position = "{0, 0}";
+},
+{
+name = Anchor11;
+position = "{594, 0}";
+},
+{
+name = Anchor12;
+position = "{620, 0}";
+},
+{
+name = Anchor13;
+position = "{80, 0}";
+},
+{
+name = Anchor15;
+position = "{594, 630}";
+},
+{
+name = Anchor17;
+position = "{594, 0}";
+},
+{
+name = Anchor27;
+position = "{594, 490}";
+},
+{
+name = Anchor8;
+position = "{912, 0}";
+},
+{
+name = Anchor9;
+position = "{680, 0}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -581,6 +760,44 @@ glyphname = ka_ahom;
 lastChange = "2019-08-07 17:52:21 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor10;
+position = "{0, 0}";
+},
+{
+name = Anchor11;
+position = "{960, 0}";
+},
+{
+name = Anchor12;
+position = "{0, 0}";
+},
+{
+name = Anchor13;
+position = "{450, 0}";
+},
+{
+name = Anchor15;
+position = "{650, 630}";
+},
+{
+name = Anchor17;
+position = "{830, 0}";
+},
+{
+name = Anchor27;
+position = "{944, 490}";
+},
+{
+name = Anchor8;
+position = "{960, 0}";
+},
+{
+name = Anchor9;
+position = "{0, 0}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -663,6 +880,44 @@ glyphname = kha_ahom;
 lastChange = "2019-08-07 17:52:21 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor10;
+position = "{0, 0}";
+},
+{
+name = Anchor11;
+position = "{920, 0}";
+},
+{
+name = Anchor12;
+position = "{0, 0}";
+},
+{
+name = Anchor13;
+position = "{400, 0}";
+},
+{
+name = Anchor15;
+position = "{600, 630}";
+},
+{
+name = Anchor17;
+position = "{720, 0}";
+},
+{
+name = Anchor27;
+position = "{861, 490}";
+},
+{
+name = Anchor8;
+position = "{1000, 0}";
+},
+{
+name = Anchor9;
+position = "{0, 0}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -734,6 +989,44 @@ glyphname = nga_ahom;
 lastChange = "2019-08-07 17:52:21 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor10;
+position = "{0, 0}";
+},
+{
+name = Anchor11;
+position = "{0, 0}";
+},
+{
+name = Anchor12;
+position = "{680, 0}";
+},
+{
+name = Anchor13;
+position = "{140, 0}";
+},
+{
+name = Anchor15;
+position = "{320, 630}";
+},
+{
+name = Anchor17;
+position = "{460, 0}";
+},
+{
+name = Anchor27;
+position = "{610, 490}";
+},
+{
+name = Anchor8;
+position = "{0, 0}";
+},
+{
+name = Anchor9;
+position = "{720, 0}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -804,6 +1097,44 @@ glyphname = na_ahom;
 lastChange = "2019-08-07 17:52:21 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor10;
+position = "{0, 0}";
+},
+{
+name = Anchor11;
+position = "{0, 0}";
+},
+{
+name = Anchor12;
+position = "{680, 0}";
+},
+{
+name = Anchor13;
+position = "{200, 0}";
+},
+{
+name = Anchor15;
+position = "{425, 630}";
+},
+{
+name = Anchor17;
+position = "{530, 0}";
+},
+{
+name = Anchor27;
+position = "{648, 490}";
+},
+{
+name = Anchor8;
+position = "{0, 0}";
+},
+{
+name = Anchor9;
+position = "{680, 0}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -872,6 +1203,44 @@ glyphname = ta_ahom;
 lastChange = "2019-08-07 17:52:21 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor10;
+position = "{0, 0}";
+},
+{
+name = Anchor11;
+position = "{960, 0}";
+},
+{
+name = Anchor12;
+position = "{0, 0}";
+},
+{
+name = Anchor13;
+position = "{400, 0}";
+},
+{
+name = Anchor15;
+position = "{600, 630}";
+},
+{
+name = Anchor17;
+position = "{860, 0}";
+},
+{
+name = Anchor27;
+position = "{882, 490}";
+},
+{
+name = Anchor8;
+position = "{1050, 0}";
+},
+{
+name = Anchor9;
+position = "{0, 0}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -956,6 +1325,44 @@ glyphname = alt_ta_ahom;
 lastChange = "2019-08-07 17:52:21 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor10;
+position = "{920, 0}";
+},
+{
+name = Anchor11;
+position = "{0, 0}";
+},
+{
+name = Anchor12;
+position = "{680, 0}";
+},
+{
+name = Anchor13;
+position = "{200, 0}";
+},
+{
+name = Anchor15;
+position = "{380, 630}";
+},
+{
+name = Anchor17;
+position = "{540, 0}";
+},
+{
+name = Anchor27;
+position = "{667, 490}";
+},
+{
+name = Anchor8;
+position = "{0, 0}";
+},
+{
+name = Anchor9;
+position = "{720, 0}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -1034,6 +1441,44 @@ glyphname = pa_ahom;
 lastChange = "2019-08-07 17:52:21 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor10;
+position = "{0, 0}";
+},
+{
+name = Anchor11;
+position = "{0, 0}";
+},
+{
+name = Anchor12;
+position = "{720, 0}";
+},
+{
+name = Anchor13;
+position = "{200, 0}";
+},
+{
+name = Anchor15;
+position = "{425, 630}";
+},
+{
+name = Anchor17;
+position = "{540, 0}";
+},
+{
+name = Anchor27;
+position = "{663, 490}";
+},
+{
+name = Anchor8;
+position = "{0, 0}";
+},
+{
+name = Anchor9;
+position = "{720, 0}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -1092,6 +1537,44 @@ glyphname = pha_ahom;
 lastChange = "2019-08-07 17:52:21 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor10;
+position = "{0, 0}";
+},
+{
+name = Anchor11;
+position = "{1020, 0}";
+},
+{
+name = Anchor12;
+position = "{0, 0}";
+},
+{
+name = Anchor13;
+position = "{540, 0}";
+},
+{
+name = Anchor15;
+position = "{760, 630}";
+},
+{
+name = Anchor17;
+position = "{920, 0}";
+},
+{
+name = Anchor27;
+position = "{1039, 490}";
+},
+{
+name = Anchor8;
+position = "{1050, 0}";
+},
+{
+name = Anchor9;
+position = "{0, 0}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -1179,6 +1662,44 @@ glyphname = ba_ahom;
 lastChange = "2019-08-07 17:52:21 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor10;
+position = "{0, 0}";
+},
+{
+name = Anchor11;
+position = "{0, 0}";
+},
+{
+name = Anchor12;
+position = "{720, 0}";
+},
+{
+name = Anchor13;
+position = "{280, 0}";
+},
+{
+name = Anchor15;
+position = "{445, 630}";
+},
+{
+name = Anchor17;
+position = "{580, 0}";
+},
+{
+name = Anchor27;
+position = "{703, 490}";
+},
+{
+name = Anchor8;
+position = "{0, 0}";
+},
+{
+name = Anchor9;
+position = "{720, 0}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -1242,6 +1763,44 @@ glyphname = ma_ahom;
 lastChange = "2019-08-07 17:52:21 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor10;
+position = "{0, 0}";
+},
+{
+name = Anchor11;
+position = "{0, 0}";
+},
+{
+name = Anchor12;
+position = "{720, 0}";
+},
+{
+name = Anchor13;
+position = "{200, 0}";
+},
+{
+name = Anchor15;
+position = "{375, 630}";
+},
+{
+name = Anchor17;
+position = "{560, 0}";
+},
+{
+name = Anchor27;
+position = "{663, 490}";
+},
+{
+name = Anchor8;
+position = "{0, 0}";
+},
+{
+name = Anchor9;
+position = "{720, 0}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -1309,6 +1868,44 @@ glyphname = ja_ahom;
 lastChange = "2019-08-07 17:52:21 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor10;
+position = "{0, 0}";
+},
+{
+name = Anchor11;
+position = "{960, 0}";
+},
+{
+name = Anchor12;
+position = "{0, 0}";
+},
+{
+name = Anchor13;
+position = "{480, 0}";
+},
+{
+name = Anchor15;
+position = "{650, 630}";
+},
+{
+name = Anchor17;
+position = "{830, 0}";
+},
+{
+name = Anchor27;
+position = "{953, 490}";
+},
+{
+name = Anchor8;
+position = "{1020, 0}";
+},
+{
+name = Anchor9;
+position = "{0, 0}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -1388,6 +1985,44 @@ glyphname = cha_ahom;
 lastChange = "2019-08-07 17:52:21 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor10;
+position = "{0, 0}";
+},
+{
+name = Anchor11;
+position = "{960, 0}";
+},
+{
+name = Anchor12;
+position = "{0, 0}";
+},
+{
+name = Anchor13;
+position = "{530, 0}";
+},
+{
+name = Anchor15;
+position = "{740, 630}";
+},
+{
+name = Anchor17;
+position = "{900, 0}";
+},
+{
+name = Anchor27;
+position = "{1033, 490}";
+},
+{
+name = Anchor8;
+position = "{1020, 0}";
+},
+{
+name = Anchor9;
+position = "{0, 0}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -1473,6 +2108,44 @@ glyphname = tha_ahom;
 lastChange = "2019-08-07 17:52:21 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor10;
+position = "{0, 0}";
+},
+{
+name = Anchor11;
+position = "{1020, 0}";
+},
+{
+name = Anchor12;
+position = "{0, 0}";
+},
+{
+name = Anchor13;
+position = "{540, 0}";
+},
+{
+name = Anchor15;
+position = "{740, 630}";
+},
+{
+name = Anchor17;
+position = "{930, 0}";
+},
+{
+name = Anchor27;
+position = "{1036, 490}";
+},
+{
+name = Anchor8;
+position = "{1020, 0}";
+},
+{
+name = Anchor9;
+position = "{0, 0}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -1575,6 +2248,44 @@ glyphname = ra_ahom;
 lastChange = "2019-08-07 17:52:21 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor10;
+position = "{0, 0}";
+},
+{
+name = Anchor11;
+position = "{900, 0}";
+},
+{
+name = Anchor12;
+position = "{0, 0}";
+},
+{
+name = Anchor13;
+position = "{400, 120}";
+},
+{
+name = Anchor15;
+position = "{625, 750}";
+},
+{
+name = Anchor17;
+position = "{760, 0}";
+},
+{
+name = Anchor27;
+position = "{900, 490}";
+},
+{
+name = Anchor8;
+position = "{1020, 50}";
+},
+{
+name = Anchor9;
+position = "{0, 0}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -1665,6 +2376,44 @@ glyphname = la_ahom;
 lastChange = "2019-08-07 17:52:21 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor10;
+position = "{0, 0}";
+},
+{
+name = Anchor11;
+position = "{960, 0}";
+},
+{
+name = Anchor12;
+position = "{0, 0}";
+},
+{
+name = Anchor13;
+position = "{450, 0}";
+},
+{
+name = Anchor15;
+position = "{680, 630}";
+},
+{
+name = Anchor17;
+position = "{830, 0}";
+},
+{
+name = Anchor27;
+position = "{953, 490}";
+},
+{
+name = Anchor8;
+position = "{1020, 0}";
+},
+{
+name = Anchor9;
+position = "{0, 0}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -1744,6 +2493,44 @@ glyphname = sa_ahom;
 lastChange = "2019-08-07 17:52:21 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor10;
+position = "{0, 0}";
+},
+{
+name = Anchor11;
+position = "{960, 0}";
+},
+{
+name = Anchor12;
+position = "{0, 0}";
+},
+{
+name = Anchor13;
+position = "{520, 0}";
+},
+{
+name = Anchor15;
+position = "{730, 630}";
+},
+{
+name = Anchor17;
+position = "{830, 0}";
+},
+{
+name = Anchor27;
+position = "{1025, 490}";
+},
+{
+name = Anchor8;
+position = "{1020, 0}";
+},
+{
+name = Anchor9;
+position = "{0, 0}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -1823,6 +2610,44 @@ glyphname = nya_ahom;
 lastChange = "2019-08-07 17:52:21 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor10;
+position = "{0, 0}";
+},
+{
+name = Anchor11;
+position = "{960, 0}";
+},
+{
+name = Anchor12;
+position = "{0, 0}";
+},
+{
+name = Anchor13;
+position = "{440, 0}";
+},
+{
+name = Anchor15;
+position = "{630, 630}";
+},
+{
+name = Anchor17;
+position = "{830, 0}";
+},
+{
+name = Anchor27;
+position = "{920, 490}";
+},
+{
+name = Anchor8;
+position = "{1020, 0}";
+},
+{
+name = Anchor9;
+position = "{0, 0}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -1915,6 +2740,44 @@ glyphname = ha_ahom;
 lastChange = "2019-08-07 17:52:21 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor10;
+position = "{0, 0}";
+},
+{
+name = Anchor11;
+position = "{0, 0}";
+},
+{
+name = Anchor12;
+position = "{720, 0}";
+},
+{
+name = Anchor13;
+position = "{260, 0}";
+},
+{
+name = Anchor15;
+position = "{455, 630}";
+},
+{
+name = Anchor17;
+position = "{610, 0}";
+},
+{
+name = Anchor27;
+position = "{724, 490}";
+},
+{
+name = Anchor8;
+position = "{0, 0}";
+},
+{
+name = Anchor9;
+position = "{720, 0}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -1976,6 +2839,44 @@ glyphname = a_ahom;
 lastChange = "2019-08-07 17:52:21 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor10;
+position = "{0, 0}";
+},
+{
+name = Anchor11;
+position = "{960, 0}";
+},
+{
+name = Anchor12;
+position = "{0, 0}";
+},
+{
+name = Anchor13;
+position = "{520, 0}";
+},
+{
+name = Anchor15;
+position = "{770, 630}";
+},
+{
+name = Anchor17;
+position = "{830, 0}";
+},
+{
+name = Anchor27;
+position = "{944, 490}";
+},
+{
+name = Anchor8;
+position = "{1020, 40}";
+},
+{
+name = Anchor9;
+position = "{0, 0}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -2077,6 +2978,44 @@ glyphname = da_ahom;
 lastChange = "2019-08-07 17:52:21 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor10;
+position = "{960, 0}";
+},
+{
+name = Anchor11;
+position = "{900, -150}";
+},
+{
+name = Anchor12;
+position = "{800, -150}";
+},
+{
+name = Anchor13;
+position = "{260, 0}";
+},
+{
+name = Anchor15;
+position = "{450, 630}";
+},
+{
+name = Anchor17;
+position = "{640, -200}";
+},
+{
+name = Anchor27;
+position = "{727, 490}";
+},
+{
+name = Anchor8;
+position = "{0, 0}";
+},
+{
+name = Anchor9;
+position = "{720, 0}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -2177,6 +3116,44 @@ glyphname = dha_ahom;
 lastChange = "2019-08-07 17:52:21 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor10;
+position = "{1000, 0}";
+},
+{
+name = Anchor11;
+position = "{960, -150}";
+},
+{
+name = Anchor12;
+position = "{860, -150}";
+},
+{
+name = Anchor13;
+position = "{560, 0}";
+},
+{
+name = Anchor15;
+position = "{750, 630}";
+},
+{
+name = Anchor17;
+position = "{900, 0}";
+},
+{
+name = Anchor27;
+position = "{1036, 490}";
+},
+{
+name = Anchor8;
+position = "{1020, 0}";
+},
+{
+name = Anchor9;
+position = "{0, 0}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -2313,6 +3290,44 @@ glyphname = ga_ahom;
 lastChange = "2019-08-07 17:52:21 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor10;
+position = "{0, 0}";
+},
+{
+name = Anchor11;
+position = "{0, 0}";
+},
+{
+name = Anchor12;
+position = "{820, 0}";
+},
+{
+name = Anchor13;
+position = "{400, 0}";
+},
+{
+name = Anchor15;
+position = "{520, 630}";
+},
+{
+name = Anchor17;
+position = "{720, 0}";
+},
+{
+name = Anchor27;
+position = "{836, 490}";
+},
+{
+name = Anchor8;
+position = "{0, 0}";
+},
+{
+name = Anchor9;
+position = "{800, 0}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -2368,6 +3383,44 @@ glyphname = ga_ahom.alt;
 lastChange = "2019-08-07 17:52:21 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor10;
+position = "{0, 0}";
+},
+{
+name = Anchor11;
+position = "{0, 0}";
+},
+{
+name = Anchor12;
+position = "{620, 0}";
+},
+{
+name = Anchor13;
+position = "{80, 0}";
+},
+{
+name = Anchor15;
+position = "{287, 630}";
+},
+{
+name = Anchor17;
+position = "{441, 0}";
+},
+{
+name = Anchor27;
+position = "{555, 490}";
+},
+{
+name = Anchor8;
+position = "{0, 0}";
+},
+{
+name = Anchor9;
+position = "{680, 0}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -2425,6 +3478,44 @@ glyphname = alt_ga_ahom;
 lastChange = "2019-08-07 17:52:21 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor10;
+position = "{0, 0}";
+},
+{
+name = Anchor11;
+position = "{1100, 0}";
+},
+{
+name = Anchor12;
+position = "{0, 0}";
+},
+{
+name = Anchor13;
+position = "{650, 0}";
+},
+{
+name = Anchor15;
+position = "{850, 630}";
+},
+{
+name = Anchor17;
+position = "{1060, 0}";
+},
+{
+name = Anchor27;
+position = "{1146, 490}";
+},
+{
+name = Anchor8;
+position = "{1080, 0}";
+},
+{
+name = Anchor9;
+position = "{0, 0}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -2513,6 +3604,44 @@ glyphname = gha_ahom;
 lastChange = "2019-08-07 17:52:21 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor10;
+position = "{1000, 0}";
+},
+{
+name = Anchor11;
+position = "{860, -150}";
+},
+{
+name = Anchor12;
+position = "{680, -150}";
+},
+{
+name = Anchor13;
+position = "{520, 0}";
+},
+{
+name = Anchor15;
+position = "{740, 630}";
+},
+{
+name = Anchor17;
+position = "{830, 0}";
+},
+{
+name = Anchor27;
+position = "{964, 490}";
+},
+{
+name = Anchor8;
+position = "{1020, 0}";
+},
+{
+name = Anchor9;
+position = "{0, 0}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -2616,6 +3745,44 @@ glyphname = bha_ahom;
 lastChange = "2019-08-07 17:52:21 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor10;
+position = "{1000, 0}";
+},
+{
+name = Anchor11;
+position = "{960, -150}";
+},
+{
+name = Anchor12;
+position = "{860, -150}";
+},
+{
+name = Anchor13;
+position = "{560, 0}";
+},
+{
+name = Anchor15;
+position = "{760, 630}";
+},
+{
+name = Anchor17;
+position = "{930, 0}";
+},
+{
+name = Anchor27;
+position = "{1039, 490}";
+},
+{
+name = Anchor8;
+position = "{1020, 0}";
+},
+{
+name = Anchor9;
+position = "{0, 0}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -2735,6 +3902,44 @@ glyphname = jha_ahom;
 lastChange = "2019-08-07 17:52:21 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor10;
+position = "{1000, 0}";
+},
+{
+name = Anchor11;
+position = "{960, -150}";
+},
+{
+name = Anchor12;
+position = "{840, -150}";
+},
+{
+name = Anchor13;
+position = "{450, 0}";
+},
+{
+name = Anchor15;
+position = "{670, 630}";
+},
+{
+name = Anchor17;
+position = "{830, 0}";
+},
+{
+name = Anchor27;
+position = "{953, 490}";
+},
+{
+name = Anchor8;
+position = "{1020, 0}";
+},
+{
+name = Anchor9;
+position = "{0, 0}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -2842,6 +4047,44 @@ glyphname = jha_ahom.alt;
 lastChange = "2019-08-07 17:52:21 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor10;
+position = "{1020, 200}";
+},
+{
+name = Anchor11;
+position = "{980, 0}";
+},
+{
+name = Anchor12;
+position = "{0, 0}";
+},
+{
+name = Anchor13;
+position = "{580, 0}";
+},
+{
+name = Anchor15;
+position = "{790, 630}";
+},
+{
+name = Anchor17;
+position = "{833, 0}";
+},
+{
+name = Anchor27;
+position = "{953, 490}";
+},
+{
+name = Anchor8;
+position = "{0, 0}";
+},
+{
+name = Anchor9;
+position = "{0, 0}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -2943,6 +4186,44 @@ glyphname = alt_ba_ahom;
 lastChange = "2019-08-07 17:52:21 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor10;
+position = "{0, 0}";
+},
+{
+name = Anchor11;
+position = "{700, 0}";
+},
+{
+name = Anchor12;
+position = "{660, 0}";
+},
+{
+name = Anchor13;
+position = "{280, 0}";
+},
+{
+name = Anchor15;
+position = "{371, 630}";
+},
+{
+name = Anchor17;
+position = "{506, 0}";
+},
+{
+name = Anchor27;
+position = "{629, 490}";
+},
+{
+name = Anchor8;
+position = "{940, 0}";
+},
+{
+name = Anchor9;
+position = "{720, 0}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -2992,6 +4273,16 @@ glyphname = medialLa_ahom;
 lastChange = "2019-08-07 17:52:21 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor25;
+position = "{-175, -259}";
+},
+{
+name = _Anchor11;
+position = "{0, 0}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -3032,12 +4323,23 @@ width = 0;
 );
 unicode = 1171D;
 category = Mark;
+subCategory = Nonspacing;
 },
 {
 glyphname = medialLa_ahom.sm;
 lastChange = "2019-08-07 17:52:21 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor25;
+position = "{-155, -269}";
+},
+{
+name = _Anchor12;
+position = "{0, 0}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -3077,12 +4379,35 @@ width = 0;
 }
 );
 category = Mark;
+subCategory = Nonspacing;
 },
 {
 glyphname = medialRa_ahom;
 lastChange = "2019-08-07 17:52:21 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor22;
+position = "{-250, 790}";
+},
+{
+name = Anchor23;
+position = "{-280, 800}";
+},
+{
+name = Anchor25;
+position = "{-250, -260}";
+},
+{
+name = Anchor29;
+position = "{0, 490}";
+},
+{
+name = _Anchor8;
+position = "{0, 0}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -3138,12 +4463,35 @@ width = 0;
 );
 unicode = 1171E;
 category = Mark;
+subCategory = Nonspacing;
 },
 {
 glyphname = medialRa_ahom.sm;
 lastChange = "2019-08-07 17:52:21 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor22;
+position = "{-150, 790}";
+},
+{
+name = Anchor23;
+position = "{-160, 800}";
+},
+{
+name = Anchor25;
+position = "{-230, -260}";
+},
+{
+name = Anchor29;
+position = "{103, 490}";
+},
+{
+name = _Anchor9;
+position = "{0, 0}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -3198,12 +4546,35 @@ width = 0;
 }
 );
 category = Mark;
+subCategory = Nonspacing;
 },
 {
 glyphname = medialRa_ahom.desc;
 lastChange = "2019-08-07 17:52:21 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor22;
+position = "{-240, 790}";
+},
+{
+name = Anchor23;
+position = "{-250, 800}";
+},
+{
+name = Anchor25;
+position = "{-280, -400}";
+},
+{
+name = Anchor29;
+position = "{0, 490}";
+},
+{
+name = _Anchor10;
+position = "{0, 0}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -3258,12 +4629,27 @@ width = 0;
 }
 );
 category = Mark;
+subCategory = Nonspacing;
 },
 {
 glyphname = medialLigaRa_ahom;
 lastChange = "2019-08-07 17:52:21 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor22;
+position = "{480, 615}";
+},
+{
+name = Anchor23;
+position = "{450, 615}";
+},
+{
+name = _Anchor13;
+position = "{0, 0}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -3307,6 +4693,7 @@ width = 0;
 );
 unicode = 1171F;
 category = Mark;
+subCategory = Nonspacing;
 },
 {
 glyphname = aSign_ahom;
@@ -3436,6 +4823,32 @@ glyphname = iSign_ahom;
 lastChange = "2019-08-07 17:52:21 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor31;
+position = "{381, 490}";
+},
+{
+name = Anchor33;
+position = "{291, 490}";
+},
+{
+name = Anchor35;
+position = "{331, 490}";
+},
+{
+name = _Anchor27;
+position = "{0, 490}";
+},
+{
+name = _Anchor29;
+position = "{0, 490}";
+},
+{
+name = _Anchor31;
+position = "{0, 490}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -3478,12 +4891,39 @@ width = 0;
 );
 unicode = 11722;
 category = Mark;
+subCategory = Nonspacing;
 },
 {
 glyphname = iiSign_ahom;
 lastChange = "2019-08-07 17:52:21 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor31;
+position = "{381, 490}";
+},
+{
+name = Anchor33;
+position = "{291, 490}";
+},
+{
+name = Anchor35;
+position = "{331, 490}";
+},
+{
+name = _Anchor27;
+position = "{0, 490}";
+},
+{
+name = _Anchor29;
+position = "{0, 490}";
+},
+{
+name = _Anchor31;
+position = "{0, 490}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -3537,12 +4977,23 @@ width = 0;
 );
 unicode = 11723;
 category = Mark;
+subCategory = Nonspacing;
 },
 {
 glyphname = uSign_ahom;
 lastChange = "2019-08-07 17:52:21 +0000";
 layers = (
 {
+anchors = (
+{
+name = _Anchor17;
+position = "{-115, 0}";
+},
+{
+name = _Anchor25;
+position = "{-140, 0}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -3582,12 +5033,23 @@ width = 0;
 );
 unicode = 11724;
 category = Mark;
+subCategory = Nonspacing;
 },
 {
 glyphname = uuSign_ahom;
 lastChange = "2019-08-07 17:52:21 +0000";
 layers = (
 {
+anchors = (
+{
+name = _Anchor17;
+position = "{-115, 0}";
+},
+{
+name = _Anchor25;
+position = "{-140, 0}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -3659,6 +5121,7 @@ width = 0;
 );
 unicode = 11725;
 category = Mark;
+subCategory = Nonspacing;
 },
 {
 glyphname = eSign_ahom;
@@ -3730,6 +5193,32 @@ glyphname = awSign_ahom;
 lastChange = "2019-08-07 17:52:21 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor31;
+position = "{435, 490}";
+},
+{
+name = Anchor33;
+position = "{315, 490}";
+},
+{
+name = Anchor35;
+position = "{375, 490}";
+},
+{
+name = _Anchor27;
+position = "{0, 490}";
+},
+{
+name = _Anchor29;
+position = "{0, 490}";
+},
+{
+name = _Anchor33;
+position = "{0, 490}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -3785,12 +5274,23 @@ width = 0;
 );
 unicode = 11727;
 category = Mark;
+subCategory = Nonspacing;
 },
 {
 glyphname = oSign_ahom;
 lastChange = "2019-08-07 17:52:21 +0000";
 layers = (
 {
+anchors = (
+{
+name = _Anchor17;
+position = "{-120, 0}";
+},
+{
+name = _Anchor25;
+position = "{-190, 20}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -3833,12 +5333,39 @@ width = 0;
 );
 unicode = 11728;
 category = Mark;
+subCategory = Nonspacing;
 },
 {
 glyphname = aiSign_ahom;
 lastChange = "2019-08-07 17:52:21 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor31;
+position = "{390, 490}";
+},
+{
+name = Anchor33;
+position = "{301, 490}";
+},
+{
+name = Anchor35;
+position = "{341, 490}";
+},
+{
+name = _Anchor27;
+position = "{0, 490}";
+},
+{
+name = _Anchor29;
+position = "{0, 490}";
+},
+{
+name = _Anchor35;
+position = "{0, 490}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -3891,12 +5418,31 @@ width = 0;
 );
 unicode = 11729;
 category = Mark;
+subCategory = Nonspacing;
 },
 {
 glyphname = amSign_ahom;
 lastChange = "2019-08-07 17:52:21 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor22;
+position = "{150, 615}";
+},
+{
+name = Anchor23;
+position = "{130, 615}";
+},
+{
+name = _Anchor15;
+position = "{-175, 630}";
+},
+{
+name = _Anchor22;
+position = "{-175, 615}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -3939,12 +5485,27 @@ width = 0;
 );
 unicode = 1172A;
 category = Mark;
+subCategory = Nonspacing;
 },
 {
 glyphname = virama_ahom;
 lastChange = "2019-08-07 17:52:21 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor23;
+position = "{160, 585}";
+},
+{
+name = _Anchor15;
+position = "{-260, 630}";
+},
+{
+name = _Anchor23;
+position = "{-170, 615}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -3982,6 +5543,7 @@ width = 0;
 );
 unicode = 1172B;
 category = Mark;
+subCategory = Nonspacing;
 },
 {
 glyphname = zero_ahom;
@@ -4207,6 +5769,16 @@ glyphname = three_ahom.alt;
 lastChange = "2019-08-07 17:52:21 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor15;
+position = "{462, 630}";
+},
+{
+name = Anchor17;
+position = "{931, 0}";
+}
+);
 components = (
 {
 name = ha_ahom;
@@ -4291,6 +5863,40 @@ glyphname = four_ahom.alt;
 lastChange = "2019-08-07 17:52:21 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor10;
+position = "{0, 0}";
+},
+{
+name = Anchor11;
+position = "{1000, 0}";
+},
+{
+name = Anchor12;
+position = "{0, 0}";
+},
+{
+name = Anchor13;
+position = "{600, 0}";
+},
+{
+name = Anchor15;
+position = "{777, 630}";
+},
+{
+name = Anchor17;
+position = "{931, 0}";
+},
+{
+name = Anchor8;
+position = "{1020, 0}";
+},
+{
+name = Anchor9;
+position = "{0, 0}";
+}
+);
 components = (
 {
 name = tha_ahom;
@@ -5153,6 +6759,44 @@ glyphname = t_ja_ahom;
 lastChange = "2019-08-07 17:52:21 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor10;
+position = "{0, 0}";
+},
+{
+name = Anchor11;
+position = "{1060, 0}";
+},
+{
+name = Anchor12;
+position = "{0, 0}";
+},
+{
+name = Anchor13;
+position = "{650, 0}";
+},
+{
+name = Anchor15;
+position = "{856, 630}";
+},
+{
+name = Anchor17;
+position = "{990, 0}";
+},
+{
+name = Anchor27;
+position = "{1142, 490}";
+},
+{
+name = Anchor8;
+position = "{1080, 0}";
+},
+{
+name = Anchor9;
+position = "{0, 0}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -5317,6 +6961,16 @@ glyphname = o_u_ahom;
 lastChange = "2019-08-07 17:52:21 +0000";
 layers = (
 {
+anchors = (
+{
+name = _Anchor17;
+position = "{-120, 0}";
+},
+{
+name = _Anchor25;
+position = "{-190, 20}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -5378,12 +7032,51 @@ width = 0;
 }
 );
 category = Mark;
+subCategory = Nonspacing;
 },
 {
 glyphname = khra_ahom;
 lastChange = "2019-08-07 17:52:21 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor10;
+position = "{0, 0}";
+},
+{
+name = Anchor11;
+position = "{900, 0}";
+},
+{
+name = Anchor12;
+position = "{0, 0}";
+},
+{
+name = Anchor13;
+position = "{400, 0}";
+},
+{
+name = Anchor15;
+position = "{611, 660}";
+},
+{
+name = Anchor17;
+position = "{675, 0}";
+},
+{
+name = Anchor27;
+position = "{854, 490}";
+},
+{
+name = Anchor8;
+position = "{1020, 0}";
+},
+{
+name = Anchor9;
+position = "{0, 0}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -5479,6 +7172,44 @@ glyphname = phra_ahom;
 lastChange = "2019-08-07 17:52:21 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor10;
+position = "{1070, 170}";
+},
+{
+name = Anchor11;
+position = "{1020, 0}";
+},
+{
+name = Anchor12;
+position = "{0, 0}";
+},
+{
+name = Anchor13;
+position = "{0, 0}";
+},
+{
+name = Anchor15;
+position = "{860, 630}";
+},
+{
+name = Anchor17;
+position = "{905, 0}";
+},
+{
+name = Anchor27;
+position = "{1049, 490}";
+},
+{
+name = Anchor8;
+position = "{1080, 110}";
+},
+{
+name = Anchor9;
+position = "{0, 0}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -5584,10 +7315,6 @@ instances = (
 {
 customParameters = (
 {
-name = weightClass;
-value = 400;
-},
-{
 name = xHeight;
 value = "536";
 },
@@ -5613,6 +7340,13 @@ UUID0 = 1;
 name = Regular;
 }
 );
+kerning = {
+UUID0 = {
+na_ahom = {
+aaSign_ahom = 70;
+};
+};
+};
 manufacturer = "Monotype Imaging Inc.";
 manufacturerURL = "http://www.google.com/get/noto/";
 unitsPerEm = 1000;
