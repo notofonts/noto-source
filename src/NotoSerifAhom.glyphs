@@ -172,48 +172,8 @@ disablesAutomaticAlignment = 1;
 familyName = "Noto Serif Ahom";
 featurePrefixes = (
 {
-code = "lookup LigatureSubstitution1 {\012    lookupflag 0;\012    ;\012    sub uSign_ahom oSign_ahom by o_u_ahom;\012    sub oSign_ahom uSign_ahom by o_u_ahom;\012} LigatureSubstitution1;\012";
-name = LigatureSubstitution1;
-},
-{
-code = "lookup LigatureSubstitution2 {\012    lookupflag 0;\012    ;\012    # Original source: 1 \012    sub iSign_ahom uSign_ahom by i_u_ahom;\012    sub uSign_ahom iSign_ahom by i_u_ahom;\012} LigatureSubstitution2;\012";
+code = "lookup LigatureSubstitution2 {\012    sub iSign_ahom uSign_ahom by i_u_ahom;\012    sub uSign_ahom iSign_ahom by i_u_ahom;\012} LigatureSubstitution2;\012";
 name = LigatureSubstitution2;
-},
-{
-code = "lookup ChainedContextualGSUB3 {\012    lookupflag 0;\012    ;\012    # Original source: 2 \012    sub @class1 eSign_ahom [iSign_ahom uSign_ahom]' lookup LigatureSubstitution2 [iSign_ahom uSign_ahom]';\012    sub @class1 [medialLa_ahom medialLa_ahom.sm medialLigaRa_ahom] [iSign_ahom uSign_ahom]' lookup LigatureSubstitution2 [iSign_ahom uSign_ahom]';\012    sub @class1 [iSign_ahom uSign_ahom]' lookup LigatureSubstitution2 [iSign_ahom uSign_ahom]';\012} ChainedContextualGSUB3;\012";
-name = ChainedContextualGSUB3;
-},
-{
-code = "lookup LigatureSubstitution4 {\012    lookupflag 0;\012    ;\012    # Original source: 3 \012    sub kha_ahom medialLigaRa_ahom by khra_ahom;\012    sub alt_ta_ahom ja_ahom by t_ja_ahom;\012    sub pha_ahom medialLigaRa_ahom by phra_ahom;\012} LigatureSubstitution4;\012";
-name = LigatureSubstitution4;
-},
-{
-code = "lookup SingleSubstitution5 {\012    lookupflag 0;\012    ;\012    # Original source: 4 \012    sub ga_ahom by ga_ahom.alt;\012    sub jha_ahom by jha_ahom.alt;\012    sub three_ahom by three_ahom.alt;\012    sub four_ahom by four_ahom.alt;\012} SingleSubstitution5;\012";
-name = SingleSubstitution5;
-},
-{
-code = "lookup SingleSubstitution9 {\012    lookupflag 0;\012    ;\012    # Original source: 8 \012    sub medialRa_ahom by medialRa_ahom.desc;\012} SingleSubstitution9;\012";
-name = SingleSubstitution9;
-},
-{
-code = "lookup ChainedContextualGSUB6 {\012    lookupflag 0;\012    ;\012    # Original source: 5 \012    sub @class4 medialRa_ahom' lookup SingleSubstitution9;\012} ChainedContextualGSUB6;\012";
-name = ChainedContextualGSUB6;
-},
-{
-code = "lookup SingleSubstitution10 {\012    lookupflag 0;\012    ;\012    # Original source: 9 \012    sub medialRa_ahom by medialRa_ahom.sm;\012} SingleSubstitution10;\012";
-name = SingleSubstitution10;
-},
-{
-code = "lookup ChainedContextualGSUB7 {\012    lookupflag 0;\012    ;\012    # Original source: 6 \012    sub @class5 medialRa_ahom' lookup SingleSubstitution10;\012} ChainedContextualGSUB7;\012";
-name = ChainedContextualGSUB7;
-},
-{
-code = "lookup SingleSubstitution11 {\012    lookupflag 0;\012    ;\012    # Original source: 10 \012    sub medialLa_ahom by medialLa_ahom.sm;\012} SingleSubstitution11;\012";
-name = SingleSubstitution11;
-},
-{
-code = "lookup ChainedContextualGSUB8 {\012    lookupflag 0;\012    ;\012    # Original source: 7 \012    sub @class6 medialLa_ahom' lookup SingleSubstitution11;\012} ChainedContextualGSUB8;\012";
-name = ChainedContextualGSUB8;
 },
 {
 code = "lookup SinglePositioning1 {\012    lookupflag 0;\012    ;\012    pos dottedCircle 231;\012    pos ka_ahom 231;\012    pos kha_ahom 231;\012    pos nga_ahom 231;\012    pos na_ahom 231;\012    pos ta_ahom 231;\012    pos alt_ta_ahom 231;\012    pos pa_ahom 231;\012    pos pha_ahom 231;\012    pos ba_ahom 231;\012    pos ma_ahom 231;\012    pos ja_ahom 231;\012    pos cha_ahom 231;\012    pos tha_ahom 231;\012    pos ra_ahom 261;\012    pos la_ahom 231;\012    pos sa_ahom 231;\012    pos nya_ahom 231;\012    pos ha_ahom 231;\012    pos a_ahom 231;\012    pos da_ahom 231;\012    pos dha_ahom 231;\012    pos ga_ahom 231;\012    pos ga_ahom.alt 231;\012    pos alt_ga_ahom 231;\012    pos gha_ahom 231;\012    pos bha_ahom 231;\012    pos jha_ahom 231;\012    pos jha_ahom.alt 231;\012    pos alt_ba_ahom 231;\012    pos t_ja_ahom 231;\012    pos khra_ahom 231;\012    pos phra_ahom 231;\012} SinglePositioning1;\012";
@@ -224,28 +184,12 @@ code = "lookup SinglePositioning2 {\012    lookupflag 0;\012    ;\012    # Origi
 name = SinglePositioning2;
 },
 {
-code = "lookup ChainedContextualGPOS3 {\012    lookupflag 0;\012    ;\012    # Original source: 2 \012    pos @class7' lookup SinglePositioning2 [medialRa_ahom medialRa_ahom.sm medialRa_ahom.desc]';\012} ChainedContextualGPOS3;\012";
-name = ChainedContextualGPOS3;
-},
-{
-code = "lookup ChainedContextualGPOS4 {\012    lookupflag 0;\012    ;\012    # Original source: 3 \012    pos @class7' lookup SinglePositioning1 [iSign_ahom iiSign_ahom];\012    pos @class7' lookup SinglePositioning1 awSign_ahom;\012    pos @class7' lookup SinglePositioning1 aiSign_ahom;\012    pos @class7' lookup SinglePositioning1 amSign_ahom awSign_ahom;\012    pos @class7' lookup SinglePositioning1 [medialRa_ahom medialRa_ahom.sm medialRa_ahom.desc medialLigaRa_ahom]' [iSign_ahom iiSign_ahom];\012    pos @class7' lookup SinglePositioning1 [medialRa_ahom medialRa_ahom.sm medialRa_ahom.desc medialLigaRa_ahom]' awSign_ahom;\012    pos @class7' lookup SinglePositioning1 [medialRa_ahom medialRa_ahom.sm medialRa_ahom.desc medialLigaRa_ahom]' aiSign_ahom;\012    pos @class7' lookup SinglePositioning1 [medialLa_ahom medialLa_ahom.sm]' [iSign_ahom iiSign_ahom];\012    pos @class7' lookup SinglePositioning1 [medialLa_ahom medialLa_ahom.sm]' awSign_ahom;\012    pos @class7' lookup SinglePositioning1 [medialLa_ahom medialLa_ahom.sm]' aiSign_ahom;\012} ChainedContextualGPOS4;\012";
-name = ChainedContextualGPOS4;
-},
-{
-code = "lookup PairPositioning5 {\012    lookupflag 0;\012    ;\012    # Original source: 4 \012    pos aaSign_ahom <NULL> aaSign_ahom <80 0 80 0>;\012    pos iSign_ahom <NULL> ta_ahom <-120 0 -120 0>;\012    pos iSign_ahom <NULL> alt_ta_ahom <-120 0 -120 0>;\012    pos iSign_ahom <NULL> ra_ahom <-231 0 -231 0>;\012    pos iSign_ahom <NULL> ga_ahom <-100 0 -100 0>;\012    pos iSign_ahom <NULL> alt_ga_ahom <-100 0 -100 0>;\012    pos iSign_ahom <NULL> t_ja_ahom <-120 0 -120 0>;\012    pos iiSign_ahom <NULL> ta_ahom <-120 0 -120 0>;\012    pos iiSign_ahom <NULL> alt_ta_ahom <-120 0 -120 0>;\012    pos iiSign_ahom <NULL> ra_ahom <-231 0 -231 0>;\012    pos iiSign_ahom <NULL> ga_ahom <-100 0 -100 0>;\012    pos iiSign_ahom <NULL> alt_ga_ahom <-100 0 -100 0>;\012    pos iiSign_ahom <NULL> t_ja_ahom <-120 0 -120 0>;\012    pos awSign_ahom <NULL> ta_ahom <-120 0 -120 0>;\012    pos awSign_ahom <NULL> alt_ta_ahom <-120 0 -120 0>;\012    pos awSign_ahom <NULL> ra_ahom <-231 0 -231 0>;\012    pos awSign_ahom <NULL> ga_ahom <-100 0 -100 0>;\012    pos awSign_ahom <NULL> alt_ga_ahom <-100 0 -100 0>;\012    pos awSign_ahom <NULL> t_ja_ahom <-120 0 -120 0>;\012    pos aiSign_ahom <NULL> ta_ahom <-120 0 -120 0>;\012    pos aiSign_ahom <NULL> alt_ta_ahom <-120 0 -120 0>;\012    pos aiSign_ahom <NULL> ra_ahom <-231 0 -231 0>;\012    pos aiSign_ahom <NULL> ga_ahom <-100 0 -100 0>;\012    pos aiSign_ahom <NULL> alt_ga_ahom <-100 0 -100 0>;\012    pos aiSign_ahom <NULL> t_ja_ahom <-120 0 -120 0>;\012} PairPositioning5;\012";
-name = PairPositioning5;
-},
-{
-code = "lookup PairPositioning18 {\012    lookupflag 0;\012    ;\012    # Original source: 9 \012    pos eSign_ahom na_ahom -30;\012    pos eSign_ahom ta_ahom -60;\012    pos eSign_ahom alt_ta_ahom -60;\012    pos eSign_ahom ra_ahom -80;\012    pos eSign_ahom ga_ahom -60;\012    pos eSign_ahom alt_ga_ahom -60;\012    pos eSign_ahom alt_ba_ahom -80;\012    pos eSign_ahom t_ja_ahom -60;\012} PairPositioning18;\012";
+code = "lookup PairPositioning18 {\012    pos eSign_ahom na_ahom -30;\012    pos eSign_ahom ta_ahom -60;\012    pos eSign_ahom alt_ta_ahom -60;\012    pos eSign_ahom ra_ahom -80;\012    pos eSign_ahom ga_ahom -60;\012    pos eSign_ahom alt_ga_ahom -60;\012    pos eSign_ahom alt_ba_ahom -80;\012    pos eSign_ahom t_ja_ahom -60;\012} PairPositioning18;\012";
 name = PairPositioning18;
 },
 {
-code = "lookup PairPositioning19 {\012    lookupflag 0;\012    ;\012    # Original source: 10 \012    pos eSign_ahom ka_ahom 60;\012    pos eSign_ahom nga_ahom -90;\012    pos eSign_ahom na_ahom -60;\012    pos eSign_ahom ta_ahom -60;\012    pos eSign_ahom alt_ta_ahom -90;\012    pos eSign_ahom pa_ahom -90;\012    pos eSign_ahom pha_ahom -30;\012    pos eSign_ahom ba_ahom -100;\012    pos eSign_ahom ma_ahom -70;\012    pos eSign_ahom ra_ahom -140;\012    pos eSign_ahom ha_ahom -80;\012    pos eSign_ahom dha_ahom -40;\012    pos eSign_ahom ga_ahom -160;\012    pos eSign_ahom alt_ga_ahom -60;\012    pos eSign_ahom gha_ahom -80;\012    pos eSign_ahom bha_ahom -60;\012    pos eSign_ahom jha_ahom -60;\012    pos eSign_ahom alt_ba_ahom -100;\012    pos eSign_ahom t_ja_ahom -60;\012} PairPositioning19;\012";
+code = "lookup PairPositioning19 {\012    pos eSign_ahom ka_ahom 60;\012    pos eSign_ahom nga_ahom -90;\012    pos eSign_ahom na_ahom -60;\012    pos eSign_ahom ta_ahom -60;\012    pos eSign_ahom alt_ta_ahom -90;\012    pos eSign_ahom pa_ahom -90;\012    pos eSign_ahom pha_ahom -30;\012    pos eSign_ahom ba_ahom -100;\012    pos eSign_ahom ma_ahom -70;\012    pos eSign_ahom ra_ahom -140;\012    pos eSign_ahom ha_ahom -80;\012    pos eSign_ahom dha_ahom -40;\012    pos eSign_ahom ga_ahom -160;\012    pos eSign_ahom alt_ga_ahom -60;\012    pos eSign_ahom gha_ahom -80;\012    pos eSign_ahom bha_ahom -60;\012    pos eSign_ahom jha_ahom -60;\012    pos eSign_ahom alt_ba_ahom -100;\012    pos eSign_ahom t_ja_ahom -60;\012} PairPositioning19;\012";
 name = PairPositioning19;
-},
-{
-code = "lookup ContextualGPOS20 {\012    lookupflag 0;\012    ;\012    # Original source: 11 \012    pos eSign_ahom' lookup PairPositioning19 @class18' [medialRa_ahom medialRa_ahom.sm medialRa_ahom.desc]';\012    pos eSign_ahom' lookup PairPositioning18 @class18';\012} ContextualGPOS20;\012";
-name = ContextualGPOS20;
 },
 {
 code = "languagesystem ahom dflt;\012";
@@ -254,23 +198,23 @@ name = Languagesystems;
 );
 features = (
 {
-code = "    lookup LigatureSubstitution1;\012\012    lookup ChainedContextualGSUB6;\012\012    lookup ChainedContextualGSUB7;\012\012    lookup ChainedContextualGSUB8;\012\012    lookup ChainedContextualGSUB3;\012";
+code = "\012# o/u ligatures\012sub uSign_ahom oSign_ahom by o_u_ahom;\012sub oSign_ahom uSign_ahom by o_u_ahom;\012\012# Medial ra/la forms\012sub @class4 medialRa_ahom' by medialRa_ahom.desc;\012sub @class5 medialRa_ahom' by medialRa_ahom.sm;\012sub @class6 medialLa_ahom' by medialLa_ahom.sm;\012\012# i/u ligatures\012sub @class1 eSign_ahom [iSign_ahom uSign_ahom]' lookup LigatureSubstitution2 [iSign_ahom uSign_ahom]';\012sub @class1 [medialLa_ahom medialLa_ahom.sm medialLigaRa_ahom] [iSign_ahom uSign_ahom]' lookup LigatureSubstitution2 [iSign_ahom uSign_ahom]';\012sub @class1 [iSign_ahom uSign_ahom]' lookup LigatureSubstitution2 [iSign_ahom uSign_ahom]';\012";
 name = ccmp;
 },
 {
-code = "    lookup LigatureSubstitution4;\012";
+code = "sub kha_ahom medialLigaRa_ahom by khra_ahom;\012sub alt_ta_ahom ja_ahom by t_ja_ahom;\012sub pha_ahom medialLigaRa_ahom by phra_ahom;\012";
 name = rlig;
 },
 {
-code = "    lookup SingleSubstitution5;\012";
+code = "sub ga_ahom by ga_ahom.alt;\012sub jha_ahom by jha_ahom.alt;\012sub three_ahom by three_ahom.alt;\012sub four_ahom by four_ahom.alt;";
 name = salt;
 },
 {
-code = "# Automatic Code Start\012    lookup ContextualGPOS20;\012\012    lookup ChainedContextualGPOS3;\012\012    lookup ChainedContextualGPOS4;\012";
+code = "# Automatic Code Start\012    pos eSign_ahom' lookup PairPositioning19 @class18' [medialRa_ahom medialRa_ahom.sm medialRa_ahom.desc]';\012    pos eSign_ahom' lookup PairPositioning18 @class18';\012\012lookup pos1 {\012    pos @class7' lookup SinglePositioning2 [medialRa_ahom medialRa_ahom.sm medialRa_ahom.desc]';\012} pos1;\012\012lookup pos2 {\012    pos @class7' lookup SinglePositioning1 [iSign_ahom iiSign_ahom];\012    pos @class7' lookup SinglePositioning1 awSign_ahom;\012    pos @class7' lookup SinglePositioning1 aiSign_ahom;\012    pos @class7' lookup SinglePositioning1 amSign_ahom awSign_ahom;\012    pos @class7' lookup SinglePositioning1 [medialRa_ahom medialRa_ahom.sm medialRa_ahom.desc medialLigaRa_ahom]' [iSign_ahom iiSign_ahom];\012    pos @class7' lookup SinglePositioning1 [medialRa_ahom medialRa_ahom.sm medialRa_ahom.desc medialLigaRa_ahom]' awSign_ahom;\012    pos @class7' lookup SinglePositioning1 [medialRa_ahom medialRa_ahom.sm medialRa_ahom.desc medialLigaRa_ahom]' aiSign_ahom;\012    pos @class7' lookup SinglePositioning1 [medialLa_ahom medialLa_ahom.sm]' [iSign_ahom iiSign_ahom];\012    pos @class7' lookup SinglePositioning1 [medialLa_ahom medialLa_ahom.sm]' awSign_ahom;\012    pos @class7' lookup SinglePositioning1 [medialLa_ahom medialLa_ahom.sm]' aiSign_ahom;\012} pos2;\012";
 name = dist;
 },
 {
-code = "# Automatic Code Start\012    lookup PairPositioning5;\012\012# ufo2ft isn't doing mark/base kerning for me so I'm just gonna do it myself\012pos na_ahom 70 aaSign_ahom;";
+code = "# Automatic Code Start\012\012    pos aaSign_ahom <NULL> aaSign_ahom <80 0 80 0>;\012    pos iSign_ahom <NULL> ta_ahom <-120 0 -120 0>;\012    pos iSign_ahom <NULL> alt_ta_ahom <-120 0 -120 0>;\012    pos iSign_ahom <NULL> ra_ahom <-231 0 -231 0>;\012    pos iSign_ahom <NULL> ga_ahom <-100 0 -100 0>;\012    pos iSign_ahom <NULL> alt_ga_ahom <-100 0 -100 0>;\012    pos iSign_ahom <NULL> t_ja_ahom <-120 0 -120 0>;\012    pos iiSign_ahom <NULL> ta_ahom <-120 0 -120 0>;\012    pos iiSign_ahom <NULL> alt_ta_ahom <-120 0 -120 0>;\012    pos iiSign_ahom <NULL> ra_ahom <-231 0 -231 0>;\012    pos iiSign_ahom <NULL> ga_ahom <-100 0 -100 0>;\012    pos iiSign_ahom <NULL> alt_ga_ahom <-100 0 -100 0>;\012    pos iiSign_ahom <NULL> t_ja_ahom <-120 0 -120 0>;\012    pos awSign_ahom <NULL> ta_ahom <-120 0 -120 0>;\012    pos awSign_ahom <NULL> alt_ta_ahom <-120 0 -120 0>;\012    pos awSign_ahom <NULL> ra_ahom <-231 0 -231 0>;\012    pos awSign_ahom <NULL> ga_ahom <-100 0 -100 0>;\012    pos awSign_ahom <NULL> alt_ga_ahom <-100 0 -100 0>;\012    pos awSign_ahom <NULL> t_ja_ahom <-120 0 -120 0>;\012    pos aiSign_ahom <NULL> ta_ahom <-120 0 -120 0>;\012    pos aiSign_ahom <NULL> alt_ta_ahom <-120 0 -120 0>;\012    pos aiSign_ahom <NULL> ra_ahom <-231 0 -231 0>;\012    pos aiSign_ahom <NULL> ga_ahom <-100 0 -100 0>;\012    pos aiSign_ahom <NULL> alt_ga_ahom <-100 0 -100 0>;\012    pos aiSign_ahom <NULL> t_ja_ahom <-120 0 -120 0>;\012\012# ufo2ft isn't doing mark/base kerning for me so I'm just gonna do it myself\012pos na_ahom 70 aaSign_ahom;\012";
 name = kern;
 },
 {
