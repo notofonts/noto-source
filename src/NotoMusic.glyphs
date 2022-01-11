@@ -1,11 +1,60 @@
 {
-.appVersion = "1163";
+.appVersion = "3109";
+DisplayStrings = (
+"/u1D158"
+);
+classes = (
+{
+code = "u1D160 u1D161 u1D162 u1D163 u1D164 u1D1BD u1D1BE u1D1BF u1D1C0";
+name = class1;
+},
+{
+code = "u1D206 u1D209 u1D213 u1D215 u1D221 u1D228 u1D22A u1D22B u1D22C u1D22E u1D230 u1D23F";
+name = class2;
+},
+{
+code = "u1D129 u1D13A u1D13B u1D13C u1D13D u1D13E u1D13F u1D140 u1D141 u1D142";
+name = class3;
+},
+{
+code = "null_notehead u1D143 u1D144 u1D145 u1D146 u1D147 u1D148 u1D149 u1D14A u1D14B u1D14C u1D14D u1D14E u1D14F u1D150 u1D151 u1D152 u1D153 u1D154 u1D155 u1D156 u1D157 u1D158 u1D15A u1D15B u1D15C u1D15D u1D1B9 u1D1BA";
+name = class6;
+},
+{
+code = "u1D165 u1D165_b u1D165_ext u1D165_ext2 u1D165_short u1D165_short.alt u1D165_short2 u1D166 u1D166_b u1D166_ext u1D166_ext2 u1D166_short u1D166_short.alt u1D166_short2";
+name = class7;
+},
+{
+code = "u1D15E u1D15F u1D160 u1D161 u1D162 u1D163 u1D164 u1D1BB u1D1BC u1D1BD u1D1BE u1D1BF u1D1C0";
+name = class27;
+},
+{
+code = "u1D16D u1D16E u1D16F u1D170 u1D171 u1D172";
+name = markAttachmentSet1;
+},
+{
+code = "u1D165_b u1D165_ext u1D165_ext2 u1D165_short u1D165_short.alt u1D165_short2 u1D166_b u1D166_ext u1D166_ext2 u1D166_short u1D166_short.alt u1D166_short2";
+name = class31;
+},
+{
+code = "u1D167 u1D167_low u1D168 u1D168_low u1D169 u1D169_low";
+name = class32;
+},
+{
+code = "u1D17B u1D17C u1D17D u1D17E u1D17F u1D180 u1D181 u1D182 u1D18A u1D18B";
+name = class43;
+},
+{
+code = "u1D14A u1D14B u1D14C u1D14D u1D150 u1D151";
+name = class49;
+},
+{
+code = "u1D185 u1D186 u1D187 u1D188 u1D189 u1D1AA u1D1AB u1D1AC u1D1AD";
+name = class64;
+}
+);
 copyright = "Copyright 2018 Google Inc. All Rights Reserved.";
 customParameters = (
-{
-name = vendorID;
-value = GOOG;
-},
 {
 name = unicodeRanges;
 value = (
@@ -608,10 +657,6 @@ u1D244.alt
 );
 },
 {
-name = trademark;
-value = "Noto is a trademark of Google Inc.";
-},
-{
 name = "Has WWS Names";
 value = 1;
 },
@@ -619,6 +664,14 @@ value = 1;
 name = fsType;
 value = (
 );
+},
+{
+name = vendorID;
+value = GOOG;
+},
+{
+name = trademark;
+value = "Noto is a trademark of Google Inc.";
 },
 {
 name = description;
@@ -635,6 +688,19 @@ value = "http://scripts.sil.org/OFL";
 {
 name = versionString;
 value = "Version 2.000";
+},
+{
+name = Axes;
+value = (
+{
+Name = Weight;
+Tag = wght;
+},
+{
+Name = Width;
+Tag = wdth;
+}
+);
 }
 );
 date = "2013-02-18 13:43:37 +0000";
@@ -643,6 +709,162 @@ designerURL = "http://www.monotype.com/studio";
 disablesAutomaticAlignment = 1;
 disablesNiceNames = 1;
 familyName = "Noto Music";
+featurePrefixes = (
+{
+code = "lookup MultipleSubstitution2 {\012    lookupflag IgnoreMarks;\012    ;\012    # Original source: 1 \012    sub u1D15E by u1D157 u1D165;\012    sub u1D15F by u1D158 u1D165;\012    sub u1D1BB by u1D1B9 u1D165;\012    sub u1D1BC by u1D1BA u1D165;\012} MultipleSubstitution2;\012";
+name = MultipleSubstitution2;
+},
+{
+code = "lookup MultipleSubstitution7 {\012    lookupflag 0;\012    ;\012    # Original source: 6 \012    sub u1D165 by u1D165 u1D169;\012    sub u1D166 by u1D166 u1D169;\012} MultipleSubstitution7;\012";
+name = MultipleSubstitution7;
+},
+{
+code = "lookup SingleSubstitution4 {\012    lookupflag 0;\012    ;\012    # Original source: 3 \012    sub u1D167 by nullmark;\012    sub u1D168 by nullmark;\012    sub u1D169 by nullmark;\012} SingleSubstitution4;\012";
+name = SingleSubstitution4;
+},
+{
+code = "lookup MultipleSubstitution6 {\012    lookupflag 0;\012    ;\012    # Original source: 5 \012    sub u1D165 by u1D165 u1D168;\012    sub u1D166 by u1D166 u1D168;\012} MultipleSubstitution6;\012";
+name = MultipleSubstitution6;
+},
+{
+code = "lookup MultipleSubstitution5 {\012    lookupflag 0;\012    ;\012    # Original source: 4 \012    sub u1D165 by u1D165 u1D167;\012    sub u1D166 by u1D166 u1D167;\012} MultipleSubstitution5;\012";
+name = MultipleSubstitution5;
+},
+{
+code = "lookup SingleSubstitution13 {\012    lookupflag 0;\012    ;\012    # Original source: 12 \012    sub u1D165 by u1D165_short.alt;\012    sub u1D166 by u1D166_short.alt;\012} SingleSubstitution13;\012";
+name = SingleSubstitution13;
+},
+{
+code = "lookup SingleSubstitution12 {\012    lookupflag 0;\012    ;\012    # Original source: 11 \012    sub u1D165 by u1D165_ext2;\012    sub u1D166 by u1D166_ext2;\012} SingleSubstitution12;\012";
+name = SingleSubstitution12;
+},
+{
+code = "lookup SingleSubstitution11 {\012    lookupflag 0;\012    ;\012    # Original source: 10 \012    sub u1D165 by u1D165_ext;\012    sub u1D166 by u1D166_ext;\012} SingleSubstitution11;\012";
+name = SingleSubstitution11;
+},
+{
+code = "lookup SingleSubstitution10 {\012    lookupflag 0;\012    ;\012    # Original source: 9 \012    sub u1D165 by u1D165_short2;\012    sub u1D166 by u1D166_short2;\012} SingleSubstitution10;\012";
+name = SingleSubstitution10;
+},
+{
+code = "lookup SingleSubstitution9 {\012    lookupflag 0;\012    ;\012    # Original source: 8 \012    sub u1D165 by u1D165_short;\012    sub u1D166 by u1D166_short;\012} SingleSubstitution9;\012";
+name = SingleSubstitution9;
+},
+{
+code = "lookup SingleSubstitution16 {\012    lookupflag 0;\012    ;\012    # Original source: 15 \012    sub u1D167 by u1D167_low;\012    sub u1D168 by u1D168_low;\012    sub u1D169 by u1D169_low;\012} SingleSubstitution16;\012";
+name = SingleSubstitution16;
+},
+{
+code = "lookup SingleSubstitution18 {\012    lookupflag 0;\012    ;\012    # Original source: 17 \012    sub u1D242 by u1D242.alt;\012    sub u1D243 by u1D243.alt;\012    sub u1D244 by u1D244.alt;\012} SingleSubstitution18;\012";
+name = SingleSubstitution18;
+},
+{
+code = "lookup SinglePositioning5 {\012    lookupflag 0;\012    ;\012    # Original source: 4 \012    pos [u1D15E u1D15F u1D160 u1D161 u1D162 u1D163 u1D164 u1D165 u1D165_b u1D165_ext u1D165_ext2 u1D165_short u1D165_short.alt u1D165_short2 u1D166 u1D166_b u1D166_ext u1D166_ext2 u1D166_short u1D166_short.alt u1D166_short2 u1D1BB u1D1BC u1D1BD u1D1BE u1D1BF u1D1C0] 145;\012} SinglePositioning5;\012";
+name = SinglePositioning5;
+},
+{
+code = "lookup SinglePositioning3 {\012    lookupflag 0;\012    ;\012    # Original source: 2 \012    pos [null_notehead u1D143 u1D144 u1D145 u1D146 u1D147 u1D148 u1D149 u1D14A u1D14B u1D14C u1D14D u1D14E u1D14F u1D150 u1D151 u1D152 u1D153 u1D154 u1D155 u1D156 u1D157 u1D158 u1D15A u1D165 u1D165_b u1D165_ext u1D165_ext2 u1D165_short u1D165_short.alt u1D165_short2 u1D166 u1D166_b u1D166_ext u1D166_ext2 u1D166_short u1D166_short.alt u1D166_short2 u1D1B9 u1D1BA] 145;\012} SinglePositioning3;\012";
+name = SinglePositioning3;
+},
+{
+code = "lookup SinglePositioning4 {\012    lookupflag 0;\012    ;\012    # Original source: 3 \012    pos [u1D129 u1D13A u1D13B u1D13C u1D13D u1D13E u1D13F u1D140 u1D141 u1D142 u1D165 u1D165_b u1D165_ext u1D165_ext2 u1D165_short u1D165_short.alt u1D165_short2 u1D166 u1D166_b u1D166_ext u1D166_ext2 u1D166_short u1D166_short.alt u1D166_short2] 145;\012} SinglePositioning4;\012";
+name = SinglePositioning4;
+},
+{
+code = "lookup SinglePositioning9 {\012    lookupflag 0;\012    ;\012    # Original source: 8 \012    pos u1D165_b 259;\012    pos u1D166_b 259;\012    pos u1D165_short 259;\012    pos u1D165_ext 259;\012    pos u1D165_ext2 259;\012    pos u1D165_short2 259;\012    pos u1D166_short 259;\012    pos u1D166_ext 259;\012    pos u1D166_ext2 259;\012    pos u1D166_short2 259;\012    pos u1D165_short.alt 120;\012    pos u1D166_short.alt 120;\012} SinglePositioning9;\012";
+name = SinglePositioning9;
+},
+{
+code = "lookup SinglePositioning8 {\012    lookupflag 0;\012    ;\012    # Original source: 7 \012    pos u1D165_b 249;\012    pos u1D166_b 249;\012    pos u1D165_short 249;\012    pos u1D165_ext 249;\012    pos u1D165_ext2 249;\012    pos u1D165_short2 249;\012    pos u1D166_short 249;\012    pos u1D166_ext 249;\012    pos u1D166_ext2 249;\012    pos u1D166_short2 249;\012    pos u1D165_short.alt 108;\012    pos u1D166_short.alt 108;\012} SinglePositioning8;\012";
+name = SinglePositioning8;
+},
+{
+code = "lookup SinglePositioning7 {\012    lookupflag 0;\012    ;\012    # Original source: 6 \012    pos u1D165_b 146;\012    pos u1D166_b 146;\012    pos u1D165_short 146;\012    pos u1D165_ext 146;\012    pos u1D165_ext2 146;\012    pos u1D165_short2 146;\012    pos u1D166_short 146;\012    pos u1D166_ext 146;\012    pos u1D166_ext2 146;\012    pos u1D166_short2 146;\012    pos u1D165_short.alt 7;\012    pos u1D166_short.alt 7;\012} SinglePositioning7;\012";
+name = SinglePositioning7;
+},
+{
+code = "";
+name = ContextualGPOS6;
+},
+{
+code = "lookup SinglePositioning26 {\012    lookupflag 0;\012    ;\012    # Original source: 21 \012    pos [u1D17B u1D17C u1D17D u1D17E u1D17F u1D180 u1D181 u1D182 u1D18A u1D18B] <-57 0 0 0>;\012} SinglePositioning26;\012";
+name = SinglePositioning26;
+},
+{
+code = "lookup SinglePositioning25 {\012    lookupflag 0;\012    ;\012    # Original source: 20 \012    pos [u1D17B u1D17C u1D17D u1D17E u1D17F u1D180 u1D181 u1D182 u1D18A u1D18B] <-156 0 0 0>;\012} SinglePositioning25;\012";
+name = SinglePositioning25;
+},
+{
+code = "lookup SinglePositioning24 {\012    lookupflag 0;\012    ;\012    # Original source: 19 \012    pos [u1D17B u1D17C u1D17D u1D17E u1D17F u1D180 u1D181 u1D182 u1D18A u1D18B] <18 0 0 0>;\012} SinglePositioning24;\012";
+name = SinglePositioning24;
+},
+{
+code = "lookup SinglePositioning23 {\012    lookupflag 0;\012    ;\012    # Original source: 18 \012    pos [u1D17B u1D17C u1D17D u1D17E u1D17F u1D180 u1D181 u1D182 u1D18A u1D18B] <13 0 0 0>;\012} SinglePositioning23;\012";
+name = SinglePositioning23;
+},
+{
+code = "lookup SinglePositioning22 {\012    lookupflag 0;\012    ;\012    # Original source: 17 \012    pos [u1D17B u1D17C u1D17D u1D17E u1D17F u1D180 u1D181 u1D182 u1D18A u1D18B] <0 -88 0 0>;\012} SinglePositioning22;\012";
+name = SinglePositioning22;
+},
+{
+code = "lookup SinglePositioning21 {\012    lookupflag 0;\012    ;\012    # Original source: 16 \012    pos [u1D17B u1D17C u1D17D u1D17E u1D17F u1D180 u1D181 u1D182 u1D18A u1D18B] <-108 0 0 0>;\012} SinglePositioning21;\012";
+name = SinglePositioning21;
+},
+{
+code = "lookup SinglePositioning20 {\012    lookupflag 0;\012    ;\012    # Original source: 15 \012    pos [u1D17B u1D17C u1D17D u1D17E u1D17F u1D180 u1D181 u1D182 u1D18A u1D18B] <-10 0 0 0>;\012} SinglePositioning20;\012";
+name = SinglePositioning20;
+},
+{
+code = "lookup SinglePositioning19 {\012    lookupflag 0;\012    ;\012    # Original source: 14 \012    pos [u1D17B u1D17C u1D17D u1D17E u1D17F u1D180 u1D181 u1D182 u1D18A u1D18B] <-2 0 0 0>;\012} SinglePositioning19;\012";
+name = SinglePositioning19;
+},
+{
+code = "lookup SinglePositioning35 {\012    lookupflag 0;\012    ;\012    # Original source: 28 \012    pos [u1D185 u1D186 u1D187 u1D188 u1D189 u1D1AA u1D1AB u1D1AC u1D1AD] <0 739 0 0>;\012} SinglePositioning35;\012";
+name = SinglePositioning35;
+},
+{
+code = "lookup SinglePositioning34 {\012    lookupflag 0;\012    ;\012    # Original source: 27 \012    pos [u1D185 u1D186 u1D187 u1D188 u1D189 u1D1AA u1D1AB u1D1AC u1D1AD] <0 511 0 0>;\012} SinglePositioning34;\012";
+name = SinglePositioning34;
+},
+{
+code = "lookup SinglePositioning33 {\012    lookupflag 0;\012    ;\012    # Original source: 26 \012    pos [u1D185 u1D186 u1D187 u1D188 u1D189 u1D1AA u1D1AB u1D1AC u1D1AD] <0 321 0 0>;\012} SinglePositioning33;\012";
+name = SinglePositioning33;
+},
+{
+code = "lookup SinglePositioning32 {\012    lookupflag 0;\012    ;\012    # Original source: 25 \012    pos [u1D185 u1D186 u1D187 u1D188 u1D189 u1D1AA u1D1AB u1D1AC u1D1AD] <0 145 0 0>;\012} SinglePositioning32;\012";
+name = SinglePositioning32;
+},
+{
+code = "";
+name = ContextualGPOS31;
+},
+{
+code = "languagesystem DFLT dflt;\012languagesystem grek dflt;\012languagesystem musc dflt;\012";
+name = Languagesystems;
+}
+);
+features = (
+{
+code = "lookup ChainedContextualGSUB1 {\012    sub [u1D15E u1D15F u1D1BB u1D1BC]' lookup MultipleSubstitution2 [u1D167 u1D168 u1D169] [u1D16E u1D16F u1D170 u1D171 u1D172];\012    sub [u1D15E u1D15F u1D1BB u1D1BC]' lookup MultipleSubstitution2 [u1D16E u1D16F u1D170 u1D171 u1D172];\012    sub [u1D15E u1D15F u1D1BB u1D1BC]' lookup MultipleSubstitution2 [u1D167 u1D168 u1D169];\012} ChainedContextualGSUB1;\012\012lookup ContextualGSUB3 {\012    sub u1D167' lookup SingleSubstitution4 [u1D165 u1D166]' lookup MultipleSubstitution5;\012    sub u1D168' lookup SingleSubstitution4 [u1D165 u1D166]' lookup MultipleSubstitution6;\012    sub u1D169' lookup SingleSubstitution4 [u1D165 u1D166]' lookup MultipleSubstitution7;\012} ContextualGSUB3;\012\012lookup ContextualGSUB8 {\012    sub [u1D146 u1D14E u1D14F]' nullmark' [u1D165 u1D166]' lookup SingleSubstitution9;\012    sub [u1D146 u1D14E u1D14F]' [u1D165 u1D166]' lookup SingleSubstitution9;\012    sub [u1D143 u1D154 u1D155]' nullmark' [u1D165 u1D166]' lookup SingleSubstitution10;\012    sub [u1D143 u1D154 u1D155]' [u1D165 u1D166]' lookup SingleSubstitution10;\012    sub [u1D144 u1D145 u1D156 u1D15D]' nullmark' [u1D165 u1D166]' lookup SingleSubstitution11;\012    sub [u1D144 u1D145 u1D156 u1D15D]' [u1D165 u1D166]' lookup SingleSubstitution11;\012    sub [u1D148 u1D149 u1D14A u1D14B]' nullmark' [u1D165 u1D166]' lookup SingleSubstitution12;\012    sub [u1D148 u1D149 u1D14A u1D14B]' [u1D165 u1D166]' lookup SingleSubstitution12;\012    sub [u1D1B9 u1D1BA]' nullmark' [u1D165 u1D166]' lookup SingleSubstitution13;\012    sub [u1D1B9 u1D1BA]' [u1D165 u1D166]' lookup SingleSubstitution13;\012} ContextualGSUB8;\012\012lookup SingleSubstitution14 {\012    sub u1D165 by u1D165_b;\012    sub u1D166 by u1D166_b;\012} SingleSubstitution14;\012\012lookup ContextualGSUB15 {\012    sub [u1D167 u1D168 u1D169]' lookup SingleSubstitution16 [u1D16E u1D16F u1D170 u1D171 u1D172]';\012    sub [u1D16E u1D16F u1D170 u1D171 u1D172]' [u1D167 u1D168 u1D169]' lookup SingleSubstitution16;\012    sub @class1' [u1D167 u1D168 u1D169]' lookup SingleSubstitution16;\012} ContextualGSUB15;\012\012lookup ContextualGSUB17 {\012    lookupflag 0;\012    ;\012    # Original source: 16 \012    sub @class2' [u1D242 u1D243 u1D244]' lookup SingleSubstitution18;\012} ContextualGSUB17;\012";
+name = ccmp;
+},
+{
+code = "# Automatic Code Start\012";
+name = curs;
+},
+{
+code = "# Automatic Code Start\012lookup ChainedContextualGPOS1 {\012    lookupflag MarkAttachmentType @markAttachmentSet1;\012    ;\012    pos @class3' lookup SinglePositioning4 lookup SinglePositioning4 lookup SinglePositioning4 u1D16D u1D16D u1D16D;\012    pos @class3' lookup SinglePositioning4 lookup SinglePositioning4 u1D16D u1D16D;\012    pos @class3' lookup SinglePositioning4 u1D16D;\012    pos @class6' @class7' lookup SinglePositioning3 lookup SinglePositioning3 lookup SinglePositioning3 u1D16E u1D16D u1D16D u1D16D;\012    pos @class6' @class7' lookup SinglePositioning3 lookup SinglePositioning3 lookup SinglePositioning3 [u1D16F u1D170 u1D171 u1D172] u1D16D u1D16D u1D16D;\012    pos @class6' @class7' lookup SinglePositioning3 lookup SinglePositioning3 u1D16E u1D16D u1D16D;\012    pos @class6' @class7' lookup SinglePositioning3 lookup SinglePositioning3 [u1D16F u1D170 u1D171 u1D172] u1D16D u1D16D;\012    pos @class6' @class7' lookup SinglePositioning3 u1D16E u1D16D;\012    pos @class6' @class7' lookup SinglePositioning3 [u1D16F u1D170 u1D171 u1D172] u1D16D;\012    pos @class6' @class7' lookup SinglePositioning3 lookup SinglePositioning3 lookup SinglePositioning3 u1D16D u1D16D u1D16D;\012    pos @class6' @class7' lookup SinglePositioning3 lookup SinglePositioning3 u1D16D u1D16D;\012    pos @class6' @class7' lookup SinglePositioning3 u1D16D;\012    pos @class6' lookup SinglePositioning3 lookup SinglePositioning3 lookup SinglePositioning3 u1D16D u1D16D u1D16D;\012    pos @class6' lookup SinglePositioning3 lookup SinglePositioning3 u1D16D u1D16D;\012    pos @class6' lookup SinglePositioning3 u1D16D;\012    pos @class27' lookup SinglePositioning5 lookup SinglePositioning5 lookup SinglePositioning5 u1D16D u1D16D u1D16D;\012    pos @class27' lookup SinglePositioning5 lookup SinglePositioning5 u1D16D u1D16D;\012    pos @class27' lookup SinglePositioning5 u1D16D;\012} ChainedContextualGPOS1;\012\012lookup ContextualGPOS6 {\012    pos @class6' nullmark' @class31' lookup SinglePositioning8 @class32' u1D16E';\012    pos @class6' nullmark' @class31' lookup SinglePositioning9 @class32' [u1D16F u1D170 u1D171 u1D172]';\012    pos @class6' nullmark' @class31' lookup SinglePositioning7 @class32';\012    pos @class6' @class31' lookup SinglePositioning8 u1D16E';\012    pos @class6' @class31' lookup SinglePositioning9 [u1D16F u1D170 u1D171 u1D172]';\012} ContextualGPOS6;\012";
+name = kern;
+},
+{
+code = "# Automatic Code Start\012\012lookup ContextualGPOS18 {\012    lookupflag 0;\012    ;\012    # Original source: 13 \012    pos u1D144' [u1D165_ext u1D166_ext]' [u1D16E u1D16F u1D170 u1D171 u1D172]' @class43' lookup SinglePositioning19;\012    pos u1D144' [u1D165_ext u1D166_ext]' @class43' lookup SinglePositioning19;\012    pos u1D145' [u1D165_ext u1D166_ext]' [u1D16E u1D16F u1D170 u1D171 u1D172]' @class43' lookup SinglePositioning20;\012    pos u1D145' [u1D165_ext u1D166_ext]' @class43' lookup SinglePositioning20;\012    pos u1D156' [u1D165_ext u1D166_ext]' [u1D16E u1D16F u1D170 u1D171 u1D172]' @class43' lookup SinglePositioning21 lookup SinglePositioning22;\012    pos u1D156' [u1D165_ext u1D166_ext]' @class43' lookup SinglePositioning21 lookup SinglePositioning22;\012    pos @class49' [u1D165_ext2 u1D166_ext2]' [u1D16E u1D16F u1D170 u1D171 u1D172]' @class43' lookup SinglePositioning23;\012    pos @class49' [u1D165_ext2 u1D166_ext2]' @class43' lookup SinglePositioning23;\012    pos @class49' [u1D165_b u1D166_b]' [u1D16E u1D16F u1D170 u1D171 u1D172]' @class43' lookup SinglePositioning23;\012    pos @class49' [u1D165_b u1D166_b]' @class43' lookup SinglePositioning23;\012    pos [u1D15A u1D15B]' [u1D165_b u1D166_b]' [u1D16E u1D16F u1D170 u1D171 u1D172]' @class43' lookup SinglePositioning24;\012    pos [u1D15A u1D15B]' [u1D165_b u1D166_b]' @class43' lookup SinglePositioning24;\012    pos u1D15C' [u1D165_b u1D166_b]' [u1D16E u1D16F u1D170 u1D171 u1D172]' @class43' lookup SinglePositioning25;\012    pos u1D15C' [u1D165_b u1D166_b]' @class43' lookup SinglePositioning25;\012    pos u1D15D' [u1D165_ext u1D166_ext]' [u1D16E u1D16F u1D170 u1D171 u1D172]' @class43' lookup SinglePositioning26;\012    pos u1D15D' [u1D165_ext u1D166_ext]' @class43' lookup SinglePositioning26;\012} ContextualGPOS18;\012";
+name = mark;
+},
+{
+code = "lookup ContextualGPOS31 {\012    lookupflag 0;\012    ;\012    # Original source: 24 \012    pos [u1D162 u1D170]' [u1D167 u1D168 u1D169]' u1D16D' u1D16D' u1D16D' @class43' [u1D167_low u1D168_low u1D169_low]' @class64' lookup SinglePositioning32;\012    pos [u1D162 u1D170]' [u1D167 u1D168 u1D169]' u1D16D' u1D16D' @class43' [u1D167_low u1D168_low u1D169_low]' @class64' lookup SinglePositioning32;\012    pos [u1D162 u1D170]' [u1D167 u1D168 u1D169]' u1D16D' @class43' [u1D167_low u1D168_low u1D169_low]' @class64' lookup SinglePositioning32;\012    pos [u1D162 u1D170]' [u1D167 u1D168 u1D169]' @class43' u1D16D' u1D16D' u1D16D' @class64' lookup SinglePositioning32;\012    pos [u1D162 u1D170]' [u1D167 u1D168 u1D169]' @class43' u1D16D' u1D16D' @class64' lookup SinglePositioning32;\012    pos [u1D162 u1D170]' [u1D167 u1D168 u1D169]' @class43' u1D16D' @class64' lookup SinglePositioning32;\012    pos [u1D162 u1D170]' [u1D167 u1D168 u1D169]' u1D16D' u1D16D' u1D16D' @class43' @class64' lookup SinglePositioning32;\012    pos [u1D162 u1D170]' [u1D167 u1D168 u1D169]' u1D16D' u1D16D' @class43' @class64' lookup SinglePositioning32;\012    pos [u1D162 u1D170]' [u1D167 u1D168 u1D169]' u1D16D' @class43' @class64' lookup SinglePositioning32;\012    pos [u1D162 u1D170]' [u1D167 u1D168 u1D169]' u1D16D' u1D16D' u1D16D' @class64' lookup SinglePositioning32;\012    pos [u1D162 u1D170]' [u1D167 u1D168 u1D169]' u1D16D' u1D16D' @class64' lookup SinglePositioning32;\012    pos [u1D162 u1D170]' [u1D167 u1D168 u1D169]' u1D16D' @class64' lookup SinglePositioning32;\012    pos [u1D162 u1D170]' [u1D167 u1D168 u1D169]' @class43' @class64' lookup SinglePositioning32;\012    pos [u1D162 u1D170]' @class43' u1D16D' u1D16D' u1D16D' @class64' lookup SinglePositioning32;\012    pos [u1D162 u1D170]' @class43' u1D16D' u1D16D' @class64' lookup SinglePositioning32;\012    pos [u1D162 u1D170]' @class43' u1D16D' @class64' lookup SinglePositioning32;\012    pos [u1D162 u1D170]' @class43' @class64' lookup SinglePositioning32;\012    pos [u1D162 u1D170]' [u1D167_low u1D168_low u1D169_low]' u1D16D' u1D16D' u1D16D' @class43' @class64' lookup SinglePositioning32;\012    pos [u1D162 u1D170]' [u1D167_low u1D168_low u1D169_low]' u1D16D' u1D16D' @class43' @class64' lookup SinglePositioning32;\012    pos [u1D162 u1D170]' [u1D167_low u1D168_low u1D169_low]' u1D16D' @class43' @class64' lookup SinglePositioning32;\012    pos [u1D162 u1D170]' [u1D167_low u1D168_low u1D169_low]' u1D16D' u1D16D' u1D16D' @class64' lookup SinglePositioning32;\012    pos [u1D162 u1D170]' [u1D167_low u1D168_low u1D169_low]' u1D16D' u1D16D' @class64' lookup SinglePositioning32;\012    pos [u1D162 u1D170]' [u1D167_low u1D168_low u1D169_low]' u1D16D' @class64' lookup SinglePositioning32;\012    pos [u1D162 u1D170]' [u1D167_low u1D168_low u1D169_low]' @class43' u1D16D' u1D16D' u1D16D' @class64' lookup SinglePositioning32;\012    pos [u1D162 u1D170]' [u1D167_low u1D168_low u1D169_low]' @class43' u1D16D' u1D16D' @class64' lookup SinglePositioning32;\012    pos [u1D162 u1D170]' [u1D167_low u1D168_low u1D169_low]' @class43' u1D16D' @class64' lookup SinglePositioning32;\012    pos [u1D162 u1D170]' [u1D167_low u1D168_low u1D169_low]' @class43' @class64' lookup SinglePositioning32;\012    pos [u1D162 u1D170]' [u1D167_low u1D168_low u1D169_low]' @class64' lookup SinglePositioning32;\012    pos [u1D162 u1D170]' u1D16D' u1D16D' u1D16D' @class43' @class64' lookup SinglePositioning32;\012    pos [u1D162 u1D170]' u1D16D' u1D16D' @class43' @class64' lookup SinglePositioning32;\012    pos [u1D162 u1D170]' u1D16D' @class43' @class64' lookup SinglePositioning32;\012    pos [u1D162 u1D170]' u1D16D' u1D16D' u1D16D' @class64' lookup SinglePositioning32;\012    pos [u1D162 u1D170]' u1D16D' u1D16D' @class64' lookup SinglePositioning32;\012    pos [u1D162 u1D170]' u1D16D' @class64' lookup SinglePositioning32;\012    pos [u1D162 u1D170]' [u1D167 u1D168 u1D169]' @class64' lookup SinglePositioning32;\012    pos [u1D163 u1D171]' [u1D167 u1D168 u1D169]' u1D16D' u1D16D' u1D16D' @class43' [u1D167_low u1D168_low u1D169_low]' @class64' lookup SinglePositioning33;\012    pos [u1D163 u1D171]' [u1D167 u1D168 u1D169]' u1D16D' u1D16D' @class43' [u1D167_low u1D168_low u1D169_low]' @class64' lookup SinglePositioning33;\012    pos [u1D163 u1D171]' [u1D167 u1D168 u1D169]' u1D16D' @class43' [u1D167_low u1D168_low u1D169_low]' @class64' lookup SinglePositioning33;\012    pos [u1D163 u1D171]' [u1D167 u1D168 u1D169]' @class43' u1D16D' u1D16D' u1D16D' @class64' lookup SinglePositioning33;\012    pos [u1D163 u1D171]' [u1D167 u1D168 u1D169]' @class43' u1D16D' u1D16D' @class64' lookup SinglePositioning33;\012    pos [u1D163 u1D171]' [u1D167 u1D168 u1D169]' @class43' u1D16D' @class64' lookup SinglePositioning33;\012    pos [u1D163 u1D171]' [u1D167 u1D168 u1D169]' u1D16D' u1D16D' u1D16D' @class43' @class64' lookup SinglePositioning33;\012    pos [u1D163 u1D171]' [u1D167 u1D168 u1D169]' u1D16D' u1D16D' @class43' @class64' lookup SinglePositioning33;\012    pos [u1D163 u1D171]' [u1D167 u1D168 u1D169]' u1D16D' @class43' @class64' lookup SinglePositioning33;\012    pos [u1D163 u1D171]' [u1D167 u1D168 u1D169]' u1D16D' u1D16D' u1D16D' @class64' lookup SinglePositioning33;\012    pos [u1D163 u1D171]' [u1D167 u1D168 u1D169]' u1D16D' u1D16D' @class64' lookup SinglePositioning33;\012    pos [u1D163 u1D171]' [u1D167 u1D168 u1D169]' u1D16D' @class64' lookup SinglePositioning33;\012    pos [u1D163 u1D171]' [u1D167 u1D168 u1D169]' @class43' @class64' lookup SinglePositioning33;\012    pos [u1D163 u1D171]' @class43' u1D16D' u1D16D' u1D16D' @class64' lookup SinglePositioning33;\012    pos [u1D163 u1D171]' @class43' u1D16D' u1D16D' @class64' lookup SinglePositioning33;\012    pos [u1D163 u1D171]' @class43' u1D16D' @class64' lookup SinglePositioning33;\012    pos [u1D163 u1D171]' @class43' @class64' lookup SinglePositioning33;\012    pos [u1D163 u1D171]' [u1D167_low u1D168_low u1D169_low]' u1D16D' u1D16D' u1D16D' @class43' @class64' lookup SinglePositioning33;\012    pos [u1D163 u1D171]' [u1D167_low u1D168_low u1D169_low]' u1D16D' u1D16D' @class43' @class64' lookup SinglePositioning33;\012    pos [u1D163 u1D171]' [u1D167_low u1D168_low u1D169_low]' u1D16D' @class43' @class64' lookup SinglePositioning33;\012    pos [u1D163 u1D171]' [u1D167_low u1D168_low u1D169_low]' u1D16D' u1D16D' u1D16D' @class64' lookup SinglePositioning33;\012    pos [u1D163 u1D171]' [u1D167_low u1D168_low u1D169_low]' u1D16D' u1D16D' @class64' lookup SinglePositioning33;\012    pos [u1D163 u1D171]' [u1D167_low u1D168_low u1D169_low]' u1D16D' @class64' lookup SinglePositioning33;\012    pos [u1D163 u1D171]' [u1D167_low u1D168_low u1D169_low]' @class43' u1D16D' u1D16D' u1D16D' @class64' lookup SinglePositioning33;\012    pos [u1D163 u1D171]' [u1D167_low u1D168_low u1D169_low]' @class43' u1D16D' u1D16D' @class64' lookup SinglePositioning33;\012    pos [u1D163 u1D171]' [u1D167_low u1D168_low u1D169_low]' @class43' u1D16D' @class64' lookup SinglePositioning33;\012    pos [u1D163 u1D171]' [u1D167_low u1D168_low u1D169_low]' @class43' @class64' lookup SinglePositioning33;\012    pos [u1D163 u1D171]' [u1D167_low u1D168_low u1D169_low]' @class64' lookup SinglePositioning33;\012    pos [u1D163 u1D171]' u1D16D' u1D16D' u1D16D' @class43' @class64' lookup SinglePositioning33;\012    pos [u1D163 u1D171]' u1D16D' u1D16D' @class43' @class64' lookup SinglePositioning33;\012    pos [u1D163 u1D171]' u1D16D' @class43' @class64' lookup SinglePositioning33;\012    pos [u1D163 u1D171]' u1D16D' u1D16D' u1D16D' @class64' lookup SinglePositioning33;\012    pos [u1D163 u1D171]' u1D16D' u1D16D' @class64' lookup SinglePositioning33;\012    pos [u1D163 u1D171]' u1D16D' @class64' lookup SinglePositioning33;\012    pos [u1D163 u1D171]' [u1D167 u1D168 u1D169]' @class64' lookup SinglePositioning33;\012    pos [u1D164 u1D172]' [u1D167 u1D168 u1D169]' @class43' u1D16D' u1D16D' u1D16D' @class64' lookup SinglePositioning34;\012    pos [u1D164 u1D172]' [u1D167 u1D168 u1D169]' @class43' u1D16D' u1D16D' @class64' lookup SinglePositioning34;\012    pos [u1D164 u1D172]' [u1D167 u1D168 u1D169]' @class43' u1D16D' @class64' lookup SinglePositioning34;\012    pos [u1D164 u1D172]' [u1D167 u1D168 u1D169]' u1D16D' u1D16D' u1D16D' @class43' @class64' lookup SinglePositioning34;\012    pos [u1D164 u1D172]' [u1D167 u1D168 u1D169]' u1D16D' u1D16D' @class43' @class64' lookup SinglePositioning34;\012    pos [u1D164 u1D172]' [u1D167 u1D168 u1D169]' u1D16D' @class43' @class64' lookup SinglePositioning34;\012    pos [u1D164 u1D172]' [u1D167 u1D168 u1D169]' u1D16D' u1D16D' u1D16D' @class64' lookup SinglePositioning34;\012    pos [u1D164 u1D172]' [u1D167 u1D168 u1D169]' u1D16D' u1D16D' @class64' lookup SinglePositioning34;\012    pos [u1D164 u1D172]' [u1D167 u1D168 u1D169]' u1D16D' @class64' lookup SinglePositioning34;\012    pos [u1D164 u1D172]' [u1D167 u1D168 u1D169]' @class43' @class64' lookup SinglePositioning34;\012    pos [u1D164 u1D172]' @class43' u1D16D' u1D16D' u1D16D' @class64' lookup SinglePositioning34;\012    pos [u1D164 u1D172]' @class43' u1D16D' u1D16D' @class64' lookup SinglePositioning34;\012    pos [u1D164 u1D172]' @class43' u1D16D' @class64' lookup SinglePositioning34;\012    pos [u1D164 u1D172]' @class43' @class64' lookup SinglePositioning34;\012    pos [u1D164 u1D172]' [u1D167_low u1D168_low u1D169_low]' u1D16D' u1D16D' u1D16D' @class43' @class64' lookup SinglePositioning34;\012    pos [u1D164 u1D172]' [u1D167_low u1D168_low u1D169_low]' u1D16D' u1D16D' @class43' @class64' lookup SinglePositioning34;\012    pos [u1D164 u1D172]' [u1D167_low u1D168_low u1D169_low]' u1D16D' @class43' @class64' lookup SinglePositioning34;\012    pos [u1D164 u1D172]' [u1D167_low u1D168_low u1D169_low]' u1D16D' u1D16D' u1D16D' @class64' lookup SinglePositioning34;\012    pos [u1D164 u1D172]' [u1D167_low u1D168_low u1D169_low]' u1D16D' u1D16D' @class64' lookup SinglePositioning34;\012    pos [u1D164 u1D172]' [u1D167_low u1D168_low u1D169_low]' u1D16D' @class64' lookup SinglePositioning34;\012    pos [u1D164 u1D172]' [u1D167_low u1D168_low u1D169_low]' @class43' u1D16D' u1D16D' u1D16D' @class64' lookup SinglePositioning34;\012    pos [u1D164 u1D172]' [u1D167_low u1D168_low u1D169_low]' @class43' u1D16D' u1D16D' @class64' lookup SinglePositioning34;\012    pos [u1D164 u1D172]' [u1D167_low u1D168_low u1D169_low]' @class43' u1D16D' @class64' lookup SinglePositioning34;\012    pos [u1D164 u1D172]' [u1D167_low u1D168_low u1D169_low]' @class43' @class64' lookup SinglePositioning34;\012    pos [u1D164 u1D172]' [u1D167_low u1D168_low u1D169_low]' @class64' lookup SinglePositioning34;\012    pos [u1D164 u1D172]' u1D16D' u1D16D' u1D16D' @class43' @class64' lookup SinglePositioning34;\012    pos [u1D164 u1D172]' u1D16D' u1D16D' @class43' @class64' lookup SinglePositioning34;\012    pos [u1D164 u1D172]' u1D16D' @class43' @class64' lookup SinglePositioning34;\012    pos [u1D164 u1D172]' u1D16D' u1D16D' u1D16D' @class64' lookup SinglePositioning34;\012    pos [u1D164 u1D172]' u1D16D' u1D16D' @class64' lookup SinglePositioning34;\012    pos [u1D164 u1D172]' u1D16D' @class64' lookup SinglePositioning34;\012    pos [u1D164 u1D172]' [u1D167 u1D168 u1D169]' @class64' lookup SinglePositioning34;\012    pos [u1D167_low u1D168_low u1D169_low]' [u1D167 u1D168 u1D169]' u1D16D' @class43' [u1D167_low u1D168_low u1D169_low]' @class64' lookup SinglePositioning34;\012    pos @class43' [u1D167 u1D168 u1D169]' u1D16D' u1D16D' @class43' [u1D167_low u1D168_low u1D169_low]' @class64' lookup SinglePositioning34;\012    pos [u1D167 u1D168 u1D169]' [u1D167 u1D168 u1D169]' u1D16D' u1D16D' u1D16D' @class43' [u1D167_low u1D168_low u1D169_low]' @class64' lookup SinglePositioning34;\012    pos @class6' [u1D167 u1D168 u1D169]' u1D16D' u1D16D' u1D16D' @class43' [u1D167_low u1D168_low u1D169_low]' @class64' lookup SinglePositioning35;\012    pos @class6' [u1D167 u1D168 u1D169]' u1D16D' u1D16D' @class43' [u1D167_low u1D168_low u1D169_low]' @class64' lookup SinglePositioning35;\012    pos @class6' [u1D167 u1D168 u1D169]' u1D16D' @class43' [u1D167_low u1D168_low u1D169_low]' @class64' lookup SinglePositioning35;\012    pos @class6' [u1D167 u1D168 u1D169]' @class43' u1D16D' u1D16D' u1D16D' @class64' lookup SinglePositioning35;\012    pos @class6' [u1D167 u1D168 u1D169]' @class43' u1D16D' u1D16D' @class64' lookup SinglePositioning35;\012    pos @class6' [u1D167 u1D168 u1D169]' @class43' u1D16D' @class64' lookup SinglePositioning35;\012    pos @class6' [u1D167 u1D168 u1D169]' u1D16D' u1D16D' u1D16D' @class43' @class64' lookup SinglePositioning35;\012    pos @class6' [u1D167 u1D168 u1D169]' u1D16D' u1D16D' @class43' @class64' lookup SinglePositioning35;\012    pos @class6' [u1D167 u1D168 u1D169]' u1D16D' @class43' @class64' lookup SinglePositioning35;\012    pos @class6' [u1D167 u1D168 u1D169]' u1D16D' u1D16D' u1D16D' @class64' lookup SinglePositioning35;\012    pos @class6' [u1D167 u1D168 u1D169]' u1D16D' u1D16D' @class64' lookup SinglePositioning35;\012    pos @class6' [u1D167 u1D168 u1D169]' u1D16D' @class64' lookup SinglePositioning35;\012    pos @class6' [u1D167 u1D168 u1D169]' @class43' @class64' lookup SinglePositioning35;\012} ContextualGPOS31;\012\012# Automatic Code Start\012\012\012";
+name = mkmk;
+}
+);
 fontMaster = (
 {
 alignmentZones = (
@@ -706,7 +928,7 @@ nodes = (
 width = 600;
 }
 );
-note = .notdef;
+note = ".notdef";
 },
 {
 glyphname = NULL;
@@ -749,6 +971,28 @@ glyphname = uni25CC;
 lastChange = "2018-08-27 13:38:43 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor11;
+position = "{297, 567}";
+},
+{
+name = Anchor13;
+position = "{297, -46}";
+},
+{
+name = Anchor15;
+position = "{297, -20}";
+},
+{
+name = Anchor17;
+position = "{597, 178}";
+},
+{
+name = exit;
+position = "{432, 1009}";
+}
+);
 layerId = "2208DBFF-11B0-48D9-BA6B-B988DFB8211A";
 paths = (
 {
@@ -1036,6 +1280,20 @@ glyphname = uni2669;
 lastChange = "2018-08-27 13:38:23 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor13;
+position = "{194, 583}";
+},
+{
+name = Anchor15;
+position = "{136, -5}";
+},
+{
+name = Anchor17;
+position = "{282, 114}";
+}
+);
 layerId = "2208DBFF-11B0-48D9-BA6B-B988DFB8211A";
 paths = (
 {
@@ -1071,6 +1329,20 @@ glyphname = musicalnote;
 lastChange = "2018-08-27 13:38:23 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor13;
+position = "{194, 583}";
+},
+{
+name = Anchor15;
+position = "{136, -5}";
+},
+{
+name = Anchor17;
+position = "{409, 163}";
+}
+);
 layerId = "2208DBFF-11B0-48D9-BA6B-B988DFB8211A";
 paths = (
 {
@@ -1121,6 +1393,20 @@ glyphname = musicalnotedbl;
 lastChange = "2018-08-27 13:38:21 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor11;
+position = "{365, 566}";
+},
+{
+name = Anchor15;
+position = "{276, -31}";
+},
+{
+name = Anchor17;
+position = "{586, 69}";
+}
+);
 layerId = "2208DBFF-11B0-48D9-BA6B-B988DFB8211A";
 paths = (
 {
@@ -1171,6 +1457,20 @@ glyphname = uni266C;
 lastChange = "2018-08-27 13:38:21 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor11;
+position = "{364, 566}";
+},
+{
+name = Anchor15;
+position = "{312, -31}";
+},
+{
+name = Anchor17;
+position = "{586, 114}";
+}
+);
 layerId = "2208DBFF-11B0-48D9-BA6B-B988DFB8211A";
 paths = (
 {
@@ -22999,6 +23299,12 @@ glyphname = u1D129;
 lastChange = "2018-08-27 13:38:16 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor17;
+position = "{1099, 388}";
+}
+);
 layerId = "2208DBFF-11B0-48D9-BA6B-B988DFB8211A";
 paths = (
 {
@@ -24588,6 +24894,12 @@ glyphname = u1D13A;
 lastChange = "2018-08-27 13:38:16 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor17;
+position = "{782, 388}";
+}
+);
 layerId = "2208DBFF-11B0-48D9-BA6B-B988DFB8211A";
 paths = (
 {
@@ -24620,6 +24932,12 @@ glyphname = u1D13B;
 lastChange = "2018-08-27 13:38:16 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor17;
+position = "{782, 388}";
+}
+);
 layerId = "2208DBFF-11B0-48D9-BA6B-B988DFB8211A";
 paths = (
 {
@@ -24648,6 +24966,12 @@ glyphname = u1D13C;
 lastChange = "2018-08-27 13:38:16 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor17;
+position = "{782, 388}";
+}
+);
 layerId = "2208DBFF-11B0-48D9-BA6B-B988DFB8211A";
 paths = (
 {
@@ -24676,6 +25000,12 @@ glyphname = u1D13D;
 lastChange = "2018-08-27 13:38:16 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor17;
+position = "{350, 645}";
+}
+);
 layerId = "2208DBFF-11B0-48D9-BA6B-B988DFB8211A";
 paths = (
 {
@@ -24732,6 +25062,12 @@ glyphname = u1D13E;
 lastChange = "2018-08-27 13:38:16 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor17;
+position = "{350, 645}";
+}
+);
 layerId = "2208DBFF-11B0-48D9-BA6B-B988DFB8211A";
 paths = (
 {
@@ -24777,6 +25113,12 @@ glyphname = u1D13F;
 lastChange = "2018-08-27 13:38:16 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor17;
+position = "{418, 767}";
+}
+);
 layerId = "2208DBFF-11B0-48D9-BA6B-B988DFB8211A";
 paths = (
 {
@@ -24844,6 +25186,12 @@ glyphname = u1D140;
 lastChange = "2018-08-27 13:38:16 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor17;
+position = "{489, 870}";
+}
+);
 layerId = "2208DBFF-11B0-48D9-BA6B-B988DFB8211A";
 paths = (
 {
@@ -24933,6 +25281,12 @@ glyphname = u1D141;
 lastChange = "2018-08-27 13:38:16 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor17;
+position = "{559, 996}";
+}
+);
 layerId = "2208DBFF-11B0-48D9-BA6B-B988DFB8211A";
 paths = (
 {
@@ -25044,6 +25398,12 @@ glyphname = u1D142;
 lastChange = "2018-08-27 13:38:16 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor17;
+position = "{628, 1120}";
+}
+);
 layerId = "2208DBFF-11B0-48D9-BA6B-B988DFB8211A";
 paths = (
 {
@@ -25177,6 +25537,28 @@ glyphname = u1D143;
 lastChange = "2018-08-27 13:38:43 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor11;
+position = "{201, 304}";
+},
+{
+name = Anchor13;
+position = "{201, 289}";
+},
+{
+name = Anchor15;
+position = "{200, -38}";
+},
+{
+name = Anchor17;
+position = "{398, 154}";
+},
+{
+name = exit;
+position = "{350, 1009}";
+}
+);
 layerId = "2208DBFF-11B0-48D9-BA6B-B988DFB8211A";
 paths = (
 {
@@ -25209,6 +25591,28 @@ glyphname = u1D144;
 lastChange = "2018-08-27 13:38:43 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor11;
+position = "{201, 306}";
+},
+{
+name = Anchor13;
+position = "{198, 289}";
+},
+{
+name = Anchor15;
+position = "{198, -34}";
+},
+{
+name = Anchor17;
+position = "{398, 154}";
+},
+{
+name = exit;
+position = "{349, 1009}";
+}
+);
 layerId = "2208DBFF-11B0-48D9-BA6B-B988DFB8211A";
 paths = (
 {
@@ -25241,6 +25645,28 @@ glyphname = u1D145;
 lastChange = "2018-08-27 13:38:43 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor11;
+position = "{207, 313}";
+},
+{
+name = Anchor13;
+position = "{207, 289}";
+},
+{
+name = Anchor15;
+position = "{207, -42}";
+},
+{
+name = Anchor17;
+position = "{417, 154}";
+},
+{
+name = exit;
+position = "{365, 1009}";
+}
+);
 layerId = "2208DBFF-11B0-48D9-BA6B-B988DFB8211A";
 paths = (
 {
@@ -25325,6 +25751,28 @@ glyphname = u1D146;
 lastChange = "2018-08-27 13:38:43 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor11;
+position = "{200, 305}";
+},
+{
+name = Anchor13;
+position = "{200, 289}";
+},
+{
+name = Anchor15;
+position = "{200, -35}";
+},
+{
+name = Anchor17;
+position = "{402, 154}";
+},
+{
+name = exit;
+position = "{351, 1009}";
+}
+);
 layerId = "2208DBFF-11B0-48D9-BA6B-B988DFB8211A";
 paths = (
 {
@@ -25358,6 +25806,28 @@ glyphname = u1D147;
 lastChange = "2018-08-27 13:38:43 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor11;
+position = "{201, 305}";
+},
+{
+name = Anchor13;
+position = "{201, 289}";
+},
+{
+name = Anchor15;
+position = "{200, -35}";
+},
+{
+name = Anchor17;
+position = "{400, 154}";
+},
+{
+name = exit;
+position = "{349, 1009}";
+}
+);
 layerId = "2208DBFF-11B0-48D9-BA6B-B988DFB8211A";
 paths = (
 {
@@ -25382,6 +25852,28 @@ glyphname = u1D148;
 lastChange = "2018-08-27 13:38:43 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor11;
+position = "{200, 293}";
+},
+{
+name = Anchor13;
+position = "{200, 289}";
+},
+{
+name = Anchor15;
+position = "{200, -20}";
+},
+{
+name = Anchor17;
+position = "{378, 154}";
+},
+{
+name = exit;
+position = "{349, 1009}";
+}
+);
 layerId = "2208DBFF-11B0-48D9-BA6B-B988DFB8211A";
 paths = (
 {
@@ -25413,6 +25905,28 @@ glyphname = u1D149;
 lastChange = "2018-08-27 13:38:43 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor11;
+position = "{200, 293}";
+},
+{
+name = Anchor13;
+position = "{200, 289}";
+},
+{
+name = Anchor15;
+position = "{200, -20}";
+},
+{
+name = Anchor17;
+position = "{378, 154}";
+},
+{
+name = exit;
+position = "{349, 1009}";
+}
+);
 layerId = "2208DBFF-11B0-48D9-BA6B-B988DFB8211A";
 paths = (
 {
@@ -25436,6 +25950,28 @@ glyphname = u1D14A;
 lastChange = "2018-08-27 13:38:43 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor11;
+position = "{195, 293}";
+},
+{
+name = Anchor13;
+position = "{195, 289}";
+},
+{
+name = Anchor15;
+position = "{185, -20}";
+},
+{
+name = Anchor17;
+position = "{348, 154}";
+},
+{
+name = exit;
+position = "{321, 1009}";
+}
+);
 layerId = "2208DBFF-11B0-48D9-BA6B-B988DFB8211A";
 paths = (
 {
@@ -25467,6 +26003,28 @@ glyphname = u1D14B;
 lastChange = "2018-08-27 13:38:43 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor11;
+position = "{195, 293}";
+},
+{
+name = Anchor13;
+position = "{195, 289}";
+},
+{
+name = Anchor15;
+position = "{185, -20}";
+},
+{
+name = Anchor17;
+position = "{348, 154}";
+},
+{
+name = exit;
+position = "{321, 1009}";
+}
+);
 layerId = "2208DBFF-11B0-48D9-BA6B-B988DFB8211A";
 paths = (
 {
@@ -25490,6 +26048,28 @@ glyphname = u1D14C;
 lastChange = "2018-08-27 13:38:43 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor11;
+position = "{176, 273}";
+},
+{
+name = Anchor13;
+position = "{176, 289}";
+},
+{
+name = Anchor15;
+position = "{186, -20}";
+},
+{
+name = Anchor17;
+position = "{372, 154}";
+},
+{
+name = exit;
+position = "{321, 1009}";
+}
+);
 layerId = "2208DBFF-11B0-48D9-BA6B-B988DFB8211A";
 paths = (
 {
@@ -25521,6 +26101,28 @@ glyphname = u1D14D;
 lastChange = "2018-08-27 13:38:43 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor11;
+position = "{166, 273}";
+},
+{
+name = Anchor13;
+position = "{166, 289}";
+},
+{
+name = Anchor15;
+position = "{186, -20}";
+},
+{
+name = Anchor17;
+position = "{371, 154}";
+},
+{
+name = exit;
+position = "{321, 1009}";
+}
+);
 layerId = "2208DBFF-11B0-48D9-BA6B-B988DFB8211A";
 paths = (
 {
@@ -25544,6 +26146,28 @@ glyphname = u1D14E;
 lastChange = "2018-08-27 13:38:43 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor11;
+position = "{200, 293}";
+},
+{
+name = Anchor13;
+position = "{200, 289}";
+},
+{
+name = Anchor15;
+position = "{200, -20}";
+},
+{
+name = Anchor17;
+position = "{378, 154}";
+},
+{
+name = exit;
+position = "{349, 1009}";
+}
+);
 layerId = "2208DBFF-11B0-48D9-BA6B-B988DFB8211A";
 paths = (
 {
@@ -25575,6 +26199,28 @@ glyphname = u1D14F;
 lastChange = "2018-08-27 13:38:43 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor11;
+position = "{200, 293}";
+},
+{
+name = Anchor13;
+position = "{200, 289}";
+},
+{
+name = Anchor15;
+position = "{200, -20}";
+},
+{
+name = Anchor17;
+position = "{378, 154}";
+},
+{
+name = exit;
+position = "{349, 1009}";
+}
+);
 layerId = "2208DBFF-11B0-48D9-BA6B-B988DFB8211A";
 paths = (
 {
@@ -25598,6 +26244,28 @@ glyphname = u1D150;
 lastChange = "2018-08-27 13:38:43 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor11;
+position = "{195, 293}";
+},
+{
+name = Anchor13;
+position = "{195, 289}";
+},
+{
+name = Anchor15;
+position = "{185, -20}";
+},
+{
+name = Anchor17;
+position = "{372, 154}";
+},
+{
+name = exit;
+position = "{321, 1009}";
+}
+);
 layerId = "2208DBFF-11B0-48D9-BA6B-B988DFB8211A";
 paths = (
 {
@@ -25629,6 +26297,28 @@ glyphname = u1D151;
 lastChange = "2018-08-27 13:38:43 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor11;
+position = "{195, 293}";
+},
+{
+name = Anchor13;
+position = "{195, 289}";
+},
+{
+name = Anchor15;
+position = "{185, -20}";
+},
+{
+name = Anchor17;
+position = "{372, 154}";
+},
+{
+name = exit;
+position = "{321, 1009}";
+}
+);
 layerId = "2208DBFF-11B0-48D9-BA6B-B988DFB8211A";
 paths = (
 {
@@ -25652,6 +26342,28 @@ glyphname = u1D152;
 lastChange = "2018-08-27 13:38:43 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor11;
+position = "{199, 305}";
+},
+{
+name = Anchor13;
+position = "{199, 289}";
+},
+{
+name = Anchor15;
+position = "{200, -20}";
+},
+{
+name = Anchor17;
+position = "{399, 147}";
+},
+{
+name = exit;
+position = "{348, 1009}";
+}
+);
 layerId = "2208DBFF-11B0-48D9-BA6B-B988DFB8211A";
 paths = (
 {
@@ -25695,6 +26407,28 @@ glyphname = u1D153;
 lastChange = "2018-08-27 13:38:43 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor11;
+position = "{199, 305}";
+},
+{
+name = Anchor13;
+position = "{199, 289}";
+},
+{
+name = Anchor15;
+position = "{200, -20}";
+},
+{
+name = Anchor17;
+position = "{399, 147}";
+},
+{
+name = exit;
+position = "{348, 1009}";
+}
+);
 layerId = "2208DBFF-11B0-48D9-BA6B-B988DFB8211A";
 paths = (
 {
@@ -25724,6 +26458,28 @@ glyphname = u1D154;
 lastChange = "2018-08-27 13:38:43 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor11;
+position = "{199, 303}";
+},
+{
+name = Anchor13;
+position = "{199, 289}";
+},
+{
+name = Anchor15;
+position = "{200, -20}";
+},
+{
+name = Anchor17;
+position = "{390, 147}";
+},
+{
+name = exit;
+position = "{349, 1009}";
+}
+);
 layerId = "2208DBFF-11B0-48D9-BA6B-B988DFB8211A";
 paths = (
 {
@@ -25765,6 +26521,28 @@ glyphname = u1D155;
 lastChange = "2018-08-27 13:38:43 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor11;
+position = "{199, 303}";
+},
+{
+name = Anchor13;
+position = "{199, 289}";
+},
+{
+name = Anchor15;
+position = "{200, -20}";
+},
+{
+name = Anchor17;
+position = "{390, 147}";
+},
+{
+name = exit;
+position = "{349, 1009}";
+}
+);
 layerId = "2208DBFF-11B0-48D9-BA6B-B988DFB8211A";
 paths = (
 {
@@ -25793,6 +26571,28 @@ glyphname = u1D156;
 lastChange = "2018-08-27 13:38:43 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor11;
+position = "{306, 410}";
+},
+{
+name = Anchor13;
+position = "{306, 289}";
+},
+{
+name = Anchor15;
+position = "{306, -123}";
+},
+{
+name = Anchor17;
+position = "{614, 147}";
+},
+{
+name = exit;
+position = "{563, 1009}";
+}
+);
 layerId = "2208DBFF-11B0-48D9-BA6B-B988DFB8211A";
 paths = (
 {
@@ -25846,6 +26646,28 @@ glyphname = u1D157;
 lastChange = "2018-08-27 13:38:43 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor11;
+position = "{198, 291}";
+},
+{
+name = Anchor13;
+position = "{198, 289}";
+},
+{
+name = Anchor15;
+position = "{198, -25}";
+},
+{
+name = Anchor17;
+position = "{397, 154}";
+},
+{
+name = exit;
+position = "{347, 1009}";
+}
+);
 layerId = "2208DBFF-11B0-48D9-BA6B-B988DFB8211A";
 paths = (
 {
@@ -25898,6 +26720,28 @@ glyphname = u1D158;
 lastChange = "2018-08-27 13:38:43 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor11;
+position = "{197, 291}";
+},
+{
+name = Anchor13;
+position = "{197, 289}";
+},
+{
+name = Anchor15;
+position = "{197, -25}";
+},
+{
+name = Anchor17;
+position = "{397, 154}";
+},
+{
+name = exit;
+position = "{347, 1009}";
+}
+);
 layerId = "2208DBFF-11B0-48D9-BA6B-B988DFB8211A";
 paths = (
 {
@@ -25931,6 +26775,28 @@ production = null_notehead;
 lastChange = "2018-08-27 13:38:43 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor11;
+position = "{198, 291}";
+},
+{
+name = Anchor13;
+position = "{198, 289}";
+},
+{
+name = Anchor15;
+position = "{198, -25}";
+},
+{
+name = Anchor17;
+position = "{398, 154}";
+},
+{
+name = exit;
+position = "{347, 1009}";
+}
+);
 layerId = "2208DBFF-11B0-48D9-BA6B-B988DFB8211A";
 width = 397;
 }
@@ -25944,6 +26810,28 @@ glyphname = u1D15A;
 lastChange = "2018-08-27 13:38:43 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor11;
+position = "{180, 830}";
+},
+{
+name = Anchor13;
+position = "{180, 734}";
+},
+{
+name = Anchor15;
+position = "{180, -20}";
+},
+{
+name = Anchor17;
+position = "{362, 154}";
+},
+{
+name = exit;
+position = "{311, 1009}";
+}
+);
 layerId = "2208DBFF-11B0-48D9-BA6B-B988DFB8211A";
 paths = (
 {
@@ -25977,6 +26865,28 @@ glyphname = u1D15B;
 lastChange = "2018-08-27 13:38:43 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor11;
+position = "{180, 830}";
+},
+{
+name = Anchor13;
+position = "{180, 734}";
+},
+{
+name = Anchor15;
+position = "{180, -20}";
+},
+{
+name = Anchor17;
+position = "{362, 154}";
+},
+{
+name = exit;
+position = "{311, 1009}";
+}
+);
 layerId = "2208DBFF-11B0-48D9-BA6B-B988DFB8211A";
 paths = (
 {
@@ -26001,6 +26911,28 @@ glyphname = u1D15C;
 lastChange = "2018-08-27 13:38:43 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor11;
+position = "{353, 323}";
+},
+{
+name = Anchor13;
+position = "{353, 320}";
+},
+{
+name = Anchor15;
+position = "{359, -50}";
+},
+{
+name = Anchor17;
+position = "{714, 154}";
+},
+{
+name = exit;
+position = "{663, 1009}";
+}
+);
 layerId = "2208DBFF-11B0-48D9-BA6B-B988DFB8211A";
 paths = (
 {
@@ -26078,6 +27010,28 @@ glyphname = u1D15D;
 lastChange = "2018-08-27 13:38:43 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor11;
+position = "{253, 282}";
+},
+{
+name = Anchor13;
+position = "{253, 279}";
+},
+{
+name = Anchor15;
+position = "{259, -12}";
+},
+{
+name = Anchor17;
+position = "{515, 154}";
+},
+{
+name = exit;
+position = "{464, 1009}";
+}
+);
 layerId = "2208DBFF-11B0-48D9-BA6B-B988DFB8211A";
 paths = (
 {
@@ -26127,6 +27081,20 @@ glyphname = u1D15E;
 lastChange = "2018-08-27 13:38:21 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor11;
+position = "{338, 1028}";
+},
+{
+name = Anchor15;
+position = "{198, -25}";
+},
+{
+name = Anchor17;
+position = "{398, 154}";
+}
+);
 layerId = "2208DBFF-11B0-48D9-BA6B-B988DFB8211A";
 paths = (
 {
@@ -26182,6 +27150,20 @@ glyphname = u1D15F;
 lastChange = "2018-08-27 13:38:21 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor11;
+position = "{338, 1028}";
+},
+{
+name = Anchor15;
+position = "{198, -25}";
+},
+{
+name = Anchor17;
+position = "{398, 154}";
+}
+);
 layerId = "2208DBFF-11B0-48D9-BA6B-B988DFB8211A";
 paths = (
 {
@@ -26217,6 +27199,24 @@ glyphname = u1D160;
 lastChange = "2018-08-27 13:38:23 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor11;
+position = "{339, 1028}";
+},
+{
+name = Anchor13;
+position = "{339, 289}";
+},
+{
+name = Anchor15;
+position = "{198, -25}";
+},
+{
+name = Anchor17;
+position = "{577, 306}";
+}
+);
 layerId = "2208DBFF-11B0-48D9-BA6B-B988DFB8211A";
 paths = (
 {
@@ -26274,6 +27274,24 @@ glyphname = u1D161;
 lastChange = "2018-08-27 13:38:23 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor11;
+position = "{334, 1028}";
+},
+{
+name = Anchor13;
+position = "{334, 289}";
+},
+{
+name = Anchor15;
+position = "{198, -25}";
+},
+{
+name = Anchor17;
+position = "{621, 238}";
+}
+);
 layerId = "2208DBFF-11B0-48D9-BA6B-B988DFB8211A";
 paths = (
 {
@@ -26357,6 +27375,24 @@ glyphname = u1D162;
 lastChange = "2018-08-27 13:38:23 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor11;
+position = "{334, 1173}";
+},
+{
+name = Anchor13;
+position = "{334, 289}";
+},
+{
+name = Anchor15;
+position = "{198, -25}";
+},
+{
+name = Anchor17;
+position = "{621, 238}";
+}
+);
 layerId = "2208DBFF-11B0-48D9-BA6B-B988DFB8211A";
 paths = (
 {
@@ -26462,6 +27498,24 @@ glyphname = u1D163;
 lastChange = "2018-08-27 13:38:23 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor11;
+position = "{334, 1350}";
+},
+{
+name = Anchor13;
+position = "{334, 289}";
+},
+{
+name = Anchor15;
+position = "{198, -25}";
+},
+{
+name = Anchor17;
+position = "{621, 238}";
+}
+);
 layerId = "2208DBFF-11B0-48D9-BA6B-B988DFB8211A";
 paths = (
 {
@@ -26596,6 +27650,24 @@ glyphname = u1D164;
 lastChange = "2018-08-27 13:38:23 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor11;
+position = "{334, 1540}";
+},
+{
+name = Anchor13;
+position = "{334, 289}";
+},
+{
+name = Anchor15;
+position = "{198, -25}";
+},
+{
+name = Anchor17;
+position = "{621, 238}";
+}
+);
 layerId = "2208DBFF-11B0-48D9-BA6B-B988DFB8211A";
 paths = (
 {
@@ -26774,6 +27846,7 @@ width = 0;
 note = u1D165;
 unicode = 1D165;
 category = Mark;
+subCategory = Nonspacing;
 },
 {
 glyphname = u1D166;
@@ -26812,12 +27885,23 @@ width = 0;
 note = u1D166;
 unicode = 1D166;
 category = Mark;
+subCategory = Nonspacing;
 },
 {
 glyphname = u1D167;
 lastChange = "2018-08-27 13:38:37 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor28;
+position = "{198, 1028}";
+},
+{
+name = _Anchor13;
+position = "{198, 289}";
+}
+);
 layerId = "2208DBFF-11B0-48D9-BA6B-B988DFB8211A";
 paths = (
 {
@@ -26836,12 +27920,23 @@ width = 0;
 note = u1D167;
 unicode = 1D167;
 category = Mark;
+subCategory = Nonspacing;
 },
 {
 glyphname = u1D168;
 lastChange = "2018-08-27 13:38:37 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor28;
+position = "{198, 1028}";
+},
+{
+name = _Anchor13;
+position = "{198, 289}";
+}
+);
 layerId = "2208DBFF-11B0-48D9-BA6B-B988DFB8211A";
 paths = (
 {
@@ -26869,12 +27964,23 @@ width = 0;
 note = u1D168;
 unicode = 1D168;
 category = Mark;
+subCategory = Nonspacing;
 },
 {
 glyphname = u1D169;
 lastChange = "2018-08-27 13:38:37 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor28;
+position = "{198, 1028}";
+},
+{
+name = _Anchor13;
+position = "{198, 289}";
+}
+);
 layerId = "2208DBFF-11B0-48D9-BA6B-B988DFB8211A";
 paths = (
 {
@@ -26911,6 +28017,7 @@ width = 0;
 note = u1D169;
 unicode = 1D169;
 category = Mark;
+subCategory = Nonspacing;
 },
 {
 glyphname = u1D16A;
@@ -27016,6 +28123,20 @@ glyphname = u1D16D;
 lastChange = "2018-08-27 13:38:32 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor30;
+position = "{124, 278}";
+},
+{
+name = _Anchor17;
+position = "{-21, 278}";
+},
+{
+name = _Anchor30;
+position = "{-22, 278}";
+}
+);
 layerId = "2208DBFF-11B0-48D9-BA6B-B988DFB8211A";
 paths = (
 {
@@ -27042,12 +28163,27 @@ width = 0;
 note = u1D16D;
 unicode = 1D16D;
 category = Mark;
+subCategory = Nonspacing;
 },
 {
 glyphname = u1D16E;
 lastChange = "2018-08-27 13:38:34 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor28;
+position = "{13, 1028}";
+},
+{
+name = Anchor30;
+position = "{251, 306}";
+},
+{
+name = _Anchor11;
+position = "{14, 1028}";
+}
+);
 layerId = "2208DBFF-11B0-48D9-BA6B-B988DFB8211A";
 paths = (
 {
@@ -27087,12 +28223,27 @@ width = 0;
 note = u1D16E;
 unicode = 1D16E;
 category = Mark;
+subCategory = Nonspacing;
 },
 {
 glyphname = u1D16F;
 lastChange = "2018-08-27 13:38:34 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor28;
+position = "{13, 1028}";
+},
+{
+name = Anchor30;
+position = "{300, 238}";
+},
+{
+name = _Anchor11;
+position = "{14, 1028}";
+}
+);
 layerId = "2208DBFF-11B0-48D9-BA6B-B988DFB8211A";
 paths = (
 {
@@ -27157,12 +28308,27 @@ width = 0;
 note = u1D16F;
 unicode = 1D16F;
 category = Mark;
+subCategory = Nonspacing;
 },
 {
 glyphname = u1D170;
 lastChange = "2018-08-27 13:38:34 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor28;
+position = "{13, 1173}";
+},
+{
+name = Anchor30;
+position = "{301, 237}";
+},
+{
+name = _Anchor11;
+position = "{13, 1028}";
+}
+);
 layerId = "2208DBFF-11B0-48D9-BA6B-B988DFB8211A";
 paths = (
 {
@@ -27257,12 +28423,27 @@ width = 0;
 note = u1D170;
 unicode = 1D170;
 category = Mark;
+subCategory = Nonspacing;
 },
 {
 glyphname = u1D171;
 lastChange = "2018-08-27 13:38:34 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor28;
+position = "{13, 1350}";
+},
+{
+name = Anchor30;
+position = "{300, 238}";
+},
+{
+name = _Anchor11;
+position = "{13, 1028}";
+}
+);
 layerId = "2208DBFF-11B0-48D9-BA6B-B988DFB8211A";
 paths = (
 {
@@ -27383,12 +28564,27 @@ width = 0;
 note = u1D171;
 unicode = 1D171;
 category = Mark;
+subCategory = Nonspacing;
 },
 {
 glyphname = u1D172;
 lastChange = "2018-08-27 13:38:34 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor28;
+position = "{13, 1540}";
+},
+{
+name = Anchor30;
+position = "{300, 238}";
+},
+{
+name = _Anchor11;
+position = "{13, 1028}";
+}
+);
 layerId = "2208DBFF-11B0-48D9-BA6B-B988DFB8211A";
 paths = (
 {
@@ -27538,6 +28734,7 @@ width = 0;
 note = u1D172;
 unicode = 1D172;
 category = Mark;
+subCategory = Nonspacing;
 },
 {
 glyphname = u1D173;
@@ -27648,6 +28845,12 @@ glyphname = u1D17B;
 lastChange = "2018-08-27 13:38:28 +0000";
 layers = (
 {
+anchors = (
+{
+name = _Anchor15;
+position = "{248, 0}";
+}
+);
 layerId = "2208DBFF-11B0-48D9-BA6B-B988DFB8211A";
 paths = (
 {
@@ -27668,12 +28871,19 @@ width = 0;
 note = u1D17B;
 unicode = 1D17B;
 category = Mark;
+subCategory = Nonspacing;
 },
 {
 glyphname = u1D17C;
 lastChange = "2018-08-27 13:38:28 +0000";
 layers = (
 {
+anchors = (
+{
+name = _Anchor15;
+position = "{97, 0}";
+}
+);
 layerId = "2208DBFF-11B0-48D9-BA6B-B988DFB8211A";
 paths = (
 {
@@ -27700,12 +28910,19 @@ width = 0;
 note = u1D17C;
 unicode = 1D17C;
 category = Mark;
+subCategory = Nonspacing;
 },
 {
 glyphname = u1D17D;
 lastChange = "2018-08-27 13:38:28 +0000";
 layers = (
 {
+anchors = (
+{
+name = _Anchor15;
+position = "{194, 0}";
+}
+);
 layerId = "2208DBFF-11B0-48D9-BA6B-B988DFB8211A";
 paths = (
 {
@@ -27724,12 +28941,19 @@ width = 0;
 note = u1D17D;
 unicode = 1D17D;
 category = Mark;
+subCategory = Nonspacing;
 },
 {
 glyphname = u1D17E;
 lastChange = "2018-08-27 13:38:28 +0000";
 layers = (
 {
+anchors = (
+{
+name = _Anchor15;
+position = "{101, 0}";
+}
+);
 layerId = "2208DBFF-11B0-48D9-BA6B-B988DFB8211A";
 paths = (
 {
@@ -27747,12 +28971,19 @@ width = 0;
 note = u1D17E;
 unicode = 1D17E;
 category = Mark;
+subCategory = Nonspacing;
 },
 {
 glyphname = u1D17F;
 lastChange = "2018-08-27 13:38:28 +0000";
 layers = (
 {
+anchors = (
+{
+name = _Anchor15;
+position = "{198, 0}";
+}
+);
 layerId = "2208DBFF-11B0-48D9-BA6B-B988DFB8211A";
 paths = (
 {
@@ -27773,12 +29004,19 @@ width = 0;
 note = u1D17F;
 unicode = 1D17F;
 category = Mark;
+subCategory = Nonspacing;
 },
 {
 glyphname = u1D180;
 lastChange = "2018-08-27 13:38:28 +0000";
 layers = (
 {
+anchors = (
+{
+name = _Anchor15;
+position = "{198, 0}";
+}
+);
 layerId = "2208DBFF-11B0-48D9-BA6B-B988DFB8211A";
 paths = (
 {
@@ -27816,12 +29054,19 @@ width = 0;
 note = u1D180;
 unicode = 1D180;
 category = Mark;
+subCategory = Nonspacing;
 },
 {
 glyphname = u1D181;
 lastChange = "2018-08-27 13:38:28 +0000";
 layers = (
 {
+anchors = (
+{
+name = _Anchor15;
+position = "{248, 0}";
+}
+);
 layerId = "2208DBFF-11B0-48D9-BA6B-B988DFB8211A";
 paths = (
 {
@@ -27859,12 +29104,19 @@ width = 0;
 note = u1D181;
 unicode = 1D181;
 category = Mark;
+subCategory = Nonspacing;
 },
 {
 glyphname = u1D182;
 lastChange = "2018-08-27 13:38:28 +0000";
 layers = (
 {
+anchors = (
+{
+name = _Anchor15;
+position = "{199, 0}";
+}
+);
 layerId = "2208DBFF-11B0-48D9-BA6B-B988DFB8211A";
 paths = (
 {
@@ -27900,6 +29152,7 @@ width = 0;
 note = u1D182;
 unicode = 1D182;
 category = Mark;
+subCategory = Nonspacing;
 },
 {
 glyphname = u1D183;
@@ -28170,6 +29423,16 @@ glyphname = u1D185;
 lastChange = "2018-08-27 13:38:39 +0000";
 layers = (
 {
+anchors = (
+{
+name = _Anchor11;
+position = "{268, 726}";
+},
+{
+name = _Anchor28;
+position = "{267, 726}";
+}
+);
 layerId = "2208DBFF-11B0-48D9-BA6B-B988DFB8211A";
 paths = (
 {
@@ -28198,12 +29461,23 @@ width = 0;
 note = u1D185;
 unicode = 1D185;
 category = Mark;
+subCategory = Nonspacing;
 },
 {
 glyphname = u1D186;
 lastChange = "2018-08-27 13:38:39 +0000";
 layers = (
 {
+anchors = (
+{
+name = _Anchor11;
+position = "{268, 745}";
+},
+{
+name = _Anchor28;
+position = "{267, 745}";
+}
+);
 layerId = "2208DBFF-11B0-48D9-BA6B-B988DFB8211A";
 paths = (
 {
@@ -28232,12 +29506,23 @@ width = 0;
 note = u1D186;
 unicode = 1D186;
 category = Mark;
+subCategory = Nonspacing;
 },
 {
 glyphname = u1D187;
 lastChange = "2018-08-27 13:38:39 +0000";
 layers = (
 {
+anchors = (
+{
+name = _Anchor11;
+position = "{248, 749}";
+},
+{
+name = _Anchor28;
+position = "{247, 749}";
+}
+);
 layerId = "2208DBFF-11B0-48D9-BA6B-B988DFB8211A";
 paths = (
 {
@@ -28259,12 +29544,23 @@ width = 0;
 note = u1D187;
 unicode = 1D187;
 category = Mark;
+subCategory = Nonspacing;
 },
 {
 glyphname = u1D188;
 lastChange = "2018-08-27 13:38:39 +0000";
 layers = (
 {
+anchors = (
+{
+name = _Anchor11;
+position = "{199, 770}";
+},
+{
+name = _Anchor28;
+position = "{198, 770}";
+}
+);
 layerId = "2208DBFF-11B0-48D9-BA6B-B988DFB8211A";
 paths = (
 {
@@ -28313,12 +29609,23 @@ width = 0;
 note = u1D188;
 unicode = 1D188;
 category = Mark;
+subCategory = Nonspacing;
 },
 {
 glyphname = u1D189;
 lastChange = "2018-08-27 13:38:39 +0000";
 layers = (
 {
+anchors = (
+{
+name = _Anchor11;
+position = "{200, 749}";
+},
+{
+name = _Anchor28;
+position = "{199, 749}";
+}
+);
 layerId = "2208DBFF-11B0-48D9-BA6B-B988DFB8211A";
 paths = (
 {
@@ -28363,12 +29670,19 @@ width = 0;
 note = u1D189;
 unicode = 1D189;
 category = Mark;
+subCategory = Nonspacing;
 },
 {
 glyphname = u1D18A;
 lastChange = "2018-08-27 13:38:28 +0000";
 layers = (
 {
+anchors = (
+{
+name = _Anchor15;
+position = "{294, 0}";
+}
+);
 layerId = "2208DBFF-11B0-48D9-BA6B-B988DFB8211A";
 paths = (
 {
@@ -28431,12 +29745,19 @@ width = 0;
 note = u1D18A;
 unicode = 1D18A;
 category = Mark;
+subCategory = Nonspacing;
 },
 {
 glyphname = u1D18B;
 lastChange = "2018-08-27 13:38:28 +0000";
 layers = (
 {
+anchors = (
+{
+name = _Anchor15;
+position = "{294, 0}";
+}
+);
 layerId = "2208DBFF-11B0-48D9-BA6B-B988DFB8211A";
 paths = (
 {
@@ -28516,6 +29837,7 @@ width = 0;
 note = u1D18B;
 unicode = 1D18B;
 category = Mark;
+subCategory = Nonspacing;
 },
 {
 glyphname = u1D18C;
@@ -30285,6 +31607,16 @@ glyphname = u1D1AA;
 lastChange = "2018-08-27 13:38:39 +0000";
 layers = (
 {
+anchors = (
+{
+name = _Anchor11;
+position = "{169, 749}";
+},
+{
+name = _Anchor28;
+position = "{169, 749}";
+}
+);
 layerId = "2208DBFF-11B0-48D9-BA6B-B988DFB8211A";
 paths = (
 {
@@ -30307,12 +31639,23 @@ width = 0;
 note = u1D1AA;
 unicode = 1D1AA;
 category = Mark;
+subCategory = Nonspacing;
 },
 {
 glyphname = u1D1AB;
 lastChange = "2018-08-27 13:38:39 +0000";
 layers = (
 {
+anchors = (
+{
+name = _Anchor11;
+position = "{128, 710}";
+},
+{
+name = _Anchor28;
+position = "{128, 710}";
+}
+);
 layerId = "2208DBFF-11B0-48D9-BA6B-B988DFB8211A";
 paths = (
 {
@@ -30333,12 +31676,23 @@ width = 0;
 note = u1D1AB;
 unicode = 1D1AB;
 category = Mark;
+subCategory = Nonspacing;
 },
 {
 glyphname = u1D1AC;
 lastChange = "2018-08-27 13:38:39 +0000";
 layers = (
 {
+anchors = (
+{
+name = _Anchor11;
+position = "{113, 796}";
+},
+{
+name = _Anchor28;
+position = "{112, 796}";
+}
+);
 layerId = "2208DBFF-11B0-48D9-BA6B-B988DFB8211A";
 paths = (
 {
@@ -30382,12 +31736,23 @@ width = 0;
 note = u1D1AC;
 unicode = 1D1AC;
 category = Mark;
+subCategory = Nonspacing;
 },
 {
 glyphname = u1D1AD;
 lastChange = "2018-08-27 13:38:39 +0000";
 layers = (
 {
+anchors = (
+{
+name = _Anchor11;
+position = "{171, 588}";
+},
+{
+name = _Anchor28;
+position = "{171, 588}";
+}
+);
 layerId = "2208DBFF-11B0-48D9-BA6B-B988DFB8211A";
 paths = (
 {
@@ -30437,6 +31802,7 @@ width = 0;
 note = u1D1AD;
 unicode = 1D1AD;
 category = Mark;
+subCategory = Nonspacing;
 },
 {
 glyphname = u1D1AE;
@@ -31584,6 +32950,28 @@ glyphname = u1D1B9;
 lastChange = "2018-08-27 13:38:43 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor11;
+position = "{206, 311}";
+},
+{
+name = Anchor13;
+position = "{206, 309}";
+},
+{
+name = Anchor15;
+position = "{203, -41}";
+},
+{
+name = Anchor17;
+position = "{408, 154}";
+},
+{
+name = exit;
+position = "{359, 1009}";
+}
+);
 layerId = "2208DBFF-11B0-48D9-BA6B-B988DFB8211A";
 paths = (
 {
@@ -31617,6 +33005,28 @@ glyphname = u1D1BA;
 lastChange = "2018-08-27 13:38:43 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor11;
+position = "{206, 311}";
+},
+{
+name = Anchor13;
+position = "{206, 309}";
+},
+{
+name = Anchor15;
+position = "{203, -41}";
+},
+{
+name = Anchor17;
+position = "{408, 154}";
+},
+{
+name = exit;
+position = "{359, 1009}";
+}
+);
 layerId = "2208DBFF-11B0-48D9-BA6B-B988DFB8211A";
 paths = (
 {
@@ -31641,6 +33051,20 @@ glyphname = u1D1BB;
 lastChange = "2018-08-27 13:38:21 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor11;
+position = "{206, 1028}";
+},
+{
+name = Anchor15;
+position = "{203, -41}";
+},
+{
+name = Anchor17;
+position = "{408, 154}";
+}
+);
 layerId = "2208DBFF-11B0-48D9-BA6B-B988DFB8211A";
 paths = (
 {
@@ -31677,6 +33101,20 @@ glyphname = u1D1BC;
 lastChange = "2018-08-27 13:38:21 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor11;
+position = "{206, 1028}";
+},
+{
+name = Anchor15;
+position = "{203, -41}";
+},
+{
+name = Anchor17;
+position = "{408, 154}";
+}
+);
 layerId = "2208DBFF-11B0-48D9-BA6B-B988DFB8211A";
 paths = (
 {
@@ -31704,6 +33142,24 @@ glyphname = u1D1BD;
 lastChange = "2018-08-27 13:38:23 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor11;
+position = "{206, 1028}";
+},
+{
+name = Anchor13;
+position = "{206, 289}";
+},
+{
+name = Anchor15;
+position = "{203, -41}";
+},
+{
+name = Anchor17;
+position = "{444, 295}";
+}
+);
 layerId = "2208DBFF-11B0-48D9-BA6B-B988DFB8211A";
 paths = (
 {
@@ -31759,6 +33215,24 @@ glyphname = u1D1BE;
 lastChange = "2018-08-27 13:38:23 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor11;
+position = "{206, 1028}";
+},
+{
+name = Anchor13;
+position = "{206, 289}";
+},
+{
+name = Anchor15;
+position = "{203, -41}";
+},
+{
+name = Anchor17;
+position = "{444, 295}";
+}
+);
 layerId = "2208DBFF-11B0-48D9-BA6B-B988DFB8211A";
 paths = (
 {
@@ -31805,6 +33279,24 @@ glyphname = u1D1BF;
 lastChange = "2018-08-27 13:38:23 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor11;
+position = "{206, 1028}";
+},
+{
+name = Anchor13;
+position = "{206, 289}";
+},
+{
+name = Anchor15;
+position = "{203, -41}";
+},
+{
+name = Anchor17;
+position = "{494, 228}";
+}
+);
 layerId = "2208DBFF-11B0-48D9-BA6B-B988DFB8211A";
 paths = (
 {
@@ -31892,6 +33384,24 @@ glyphname = u1D1C0;
 lastChange = "2018-08-27 13:38:23 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor11;
+position = "{206, 1028}";
+},
+{
+name = Anchor13;
+position = "{206, 289}";
+},
+{
+name = Anchor15;
+position = "{203, -41}";
+},
+{
+name = Anchor17;
+position = "{494, 228}";
+}
+);
 layerId = "2208DBFF-11B0-48D9-BA6B-B988DFB8211A";
 paths = (
 {
@@ -33429,6 +34939,12 @@ glyphname = u1D200;
 lastChange = "2018-08-27 13:38:21 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor11;
+position = "{442, 733}";
+}
+);
 layerId = "2208DBFF-11B0-48D9-BA6B-B988DFB8211A";
 paths = (
 {
@@ -33481,6 +34997,12 @@ glyphname = u1D201;
 lastChange = "2018-08-27 13:38:21 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor11;
+position = "{403, 733}";
+}
+);
 layerId = "2208DBFF-11B0-48D9-BA6B-B988DFB8211A";
 paths = (
 {
@@ -33529,6 +35051,12 @@ glyphname = u1D202;
 lastChange = "2018-08-27 13:38:21 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor11;
+position = "{346, 733}";
+}
+);
 layerId = "2208DBFF-11B0-48D9-BA6B-B988DFB8211A";
 paths = (
 {
@@ -33567,6 +35095,12 @@ glyphname = u1D203;
 lastChange = "2018-08-27 13:38:21 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor11;
+position = "{389, 733}";
+}
+);
 layerId = "2208DBFF-11B0-48D9-BA6B-B988DFB8211A";
 paths = (
 {
@@ -33612,6 +35146,12 @@ glyphname = u1D204;
 lastChange = "2018-08-27 13:38:21 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor11;
+position = "{381, 733}";
+}
+);
 layerId = "2208DBFF-11B0-48D9-BA6B-B988DFB8211A";
 paths = (
 {
@@ -33641,6 +35181,12 @@ glyphname = u1D205;
 lastChange = "2018-08-27 13:38:21 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor11;
+position = "{383, 733}";
+}
+);
 layerId = "2208DBFF-11B0-48D9-BA6B-B988DFB8211A";
 paths = (
 {
@@ -33669,6 +35215,12 @@ glyphname = u1D206;
 lastChange = "2018-08-27 13:38:21 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor11;
+position = "{294, 733}";
+}
+);
 layerId = "2208DBFF-11B0-48D9-BA6B-B988DFB8211A";
 paths = (
 {
@@ -33731,6 +35283,12 @@ glyphname = u1D207;
 lastChange = "2018-08-27 13:38:21 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor11;
+position = "{321, 733}";
+}
+);
 layerId = "2208DBFF-11B0-48D9-BA6B-B988DFB8211A";
 paths = (
 {
@@ -33776,6 +35334,12 @@ glyphname = u1D208;
 lastChange = "2018-08-27 13:38:21 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor11;
+position = "{365, 733}";
+}
+);
 layerId = "2208DBFF-11B0-48D9-BA6B-B988DFB8211A";
 paths = (
 {
@@ -33804,6 +35368,12 @@ glyphname = u1D209;
 lastChange = "2018-08-27 13:38:21 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor11;
+position = "{274, 733}";
+}
+);
 layerId = "2208DBFF-11B0-48D9-BA6B-B988DFB8211A";
 paths = (
 {
@@ -33856,6 +35426,12 @@ glyphname = u1D20A;
 lastChange = "2018-08-27 13:38:21 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor11;
+position = "{365, 733}";
+}
+);
 layerId = "2208DBFF-11B0-48D9-BA6B-B988DFB8211A";
 paths = (
 {
@@ -33890,6 +35466,12 @@ glyphname = u1D20B;
 lastChange = "2018-08-27 13:38:21 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor11;
+position = "{431, 733}";
+}
+);
 layerId = "2208DBFF-11B0-48D9-BA6B-B988DFB8211A";
 paths = (
 {
@@ -33920,6 +35502,12 @@ glyphname = u1D20C;
 lastChange = "2018-08-27 13:38:21 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor11;
+position = "{458, 733}";
+}
+);
 layerId = "2208DBFF-11B0-48D9-BA6B-B988DFB8211A";
 paths = (
 {
@@ -33953,6 +35541,12 @@ glyphname = u1D20D;
 lastChange = "2018-08-27 13:38:21 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor11;
+position = "{313, 733}";
+}
+);
 layerId = "2208DBFF-11B0-48D9-BA6B-B988DFB8211A";
 paths = (
 {
@@ -33980,6 +35574,12 @@ glyphname = u1D20E;
 lastChange = "2018-08-27 13:38:21 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor11;
+position = "{392, 733}";
+}
+);
 layerId = "2208DBFF-11B0-48D9-BA6B-B988DFB8211A";
 paths = (
 {
@@ -34012,6 +35612,12 @@ glyphname = u1D20F;
 lastChange = "2018-08-27 13:38:21 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor11;
+position = "{363, 733}";
+}
+);
 layerId = "2208DBFF-11B0-48D9-BA6B-B988DFB8211A";
 paths = (
 {
@@ -34036,6 +35642,12 @@ glyphname = u1D210;
 lastChange = "2018-08-27 13:38:21 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor11;
+position = "{444, 733}";
+}
+);
 layerId = "2208DBFF-11B0-48D9-BA6B-B988DFB8211A";
 paths = (
 {
@@ -34076,6 +35688,12 @@ glyphname = u1D211;
 lastChange = "2018-08-27 13:38:21 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor11;
+position = "{383, 733}";
+}
+);
 layerId = "2208DBFF-11B0-48D9-BA6B-B988DFB8211A";
 paths = (
 {
@@ -34106,6 +35724,12 @@ glyphname = u1D212;
 lastChange = "2018-08-27 13:38:21 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor11;
+position = "{351, 733}";
+}
+);
 layerId = "2208DBFF-11B0-48D9-BA6B-B988DFB8211A";
 paths = (
 {
@@ -34132,6 +35756,12 @@ glyphname = u1D213;
 lastChange = "2018-08-27 13:38:21 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor11;
+position = "{269, 733}";
+}
+);
 layerId = "2208DBFF-11B0-48D9-BA6B-B988DFB8211A";
 paths = (
 {
@@ -34162,6 +35792,12 @@ glyphname = u1D214;
 lastChange = "2018-08-27 13:38:21 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor11;
+position = "{286, 733}";
+}
+);
 layerId = "2208DBFF-11B0-48D9-BA6B-B988DFB8211A";
 paths = (
 {
@@ -34193,6 +35829,12 @@ glyphname = u1D215;
 lastChange = "2018-08-27 13:38:21 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor11;
+position = "{242, 733}";
+}
+);
 layerId = "2208DBFF-11B0-48D9-BA6B-B988DFB8211A";
 paths = (
 {
@@ -34219,6 +35861,12 @@ glyphname = u1D216;
 lastChange = "2018-08-27 13:38:21 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor11;
+position = "{311, 733}";
+}
+);
 layerId = "2208DBFF-11B0-48D9-BA6B-B988DFB8211A";
 paths = (
 {
@@ -34267,6 +35915,12 @@ glyphname = u1D217;
 lastChange = "2018-08-27 13:38:21 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor11;
+position = "{328, 733}";
+}
+);
 layerId = "2208DBFF-11B0-48D9-BA6B-B988DFB8211A";
 paths = (
 {
@@ -34303,6 +35957,12 @@ glyphname = u1D218;
 lastChange = "2018-08-27 13:38:21 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor11;
+position = "{377, 733}";
+}
+);
 layerId = "2208DBFF-11B0-48D9-BA6B-B988DFB8211A";
 paths = (
 {
@@ -34351,6 +36011,12 @@ glyphname = u1D219;
 lastChange = "2018-08-27 13:38:21 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor11;
+position = "{353, 733}";
+}
+);
 layerId = "2208DBFF-11B0-48D9-BA6B-B988DFB8211A";
 paths = (
 {
@@ -34389,6 +36055,12 @@ glyphname = u1D21A;
 lastChange = "2018-08-27 13:38:21 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor11;
+position = "{338, 733}";
+}
+);
 layerId = "2208DBFF-11B0-48D9-BA6B-B988DFB8211A";
 paths = (
 {
@@ -34451,6 +36123,12 @@ glyphname = u1D21B;
 lastChange = "2018-08-27 13:38:21 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor11;
+position = "{283, 733}";
+}
+);
 layerId = "2208DBFF-11B0-48D9-BA6B-B988DFB8211A";
 paths = (
 {
@@ -34480,6 +36158,12 @@ glyphname = u1D21C;
 lastChange = "2018-08-27 13:38:21 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor11;
+position = "{343, 733}";
+}
+);
 layerId = "2208DBFF-11B0-48D9-BA6B-B988DFB8211A";
 paths = (
 {
@@ -34508,6 +36192,12 @@ glyphname = u1D21D;
 lastChange = "2018-08-27 13:38:21 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor11;
+position = "{442, 733}";
+}
+);
 layerId = "2208DBFF-11B0-48D9-BA6B-B988DFB8211A";
 paths = (
 {
@@ -34560,6 +36250,12 @@ glyphname = u1D21E;
 lastChange = "2018-08-27 13:38:21 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor11;
+position = "{403, 733}";
+}
+);
 layerId = "2208DBFF-11B0-48D9-BA6B-B988DFB8211A";
 paths = (
 {
@@ -34608,6 +36304,12 @@ glyphname = u1D21F;
 lastChange = "2018-08-27 13:38:21 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor11;
+position = "{389, 733}";
+}
+);
 layerId = "2208DBFF-11B0-48D9-BA6B-B988DFB8211A";
 paths = (
 {
@@ -34653,6 +36355,12 @@ glyphname = u1D220;
 lastChange = "2018-08-27 13:38:21 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor11;
+position = "{381, 733}";
+}
+);
 layerId = "2208DBFF-11B0-48D9-BA6B-B988DFB8211A";
 paths = (
 {
@@ -34682,6 +36390,12 @@ glyphname = u1D221;
 lastChange = "2018-08-27 13:38:21 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor11;
+position = "{294, 733}";
+}
+);
 layerId = "2208DBFF-11B0-48D9-BA6B-B988DFB8211A";
 paths = (
 {
@@ -34744,6 +36458,12 @@ glyphname = u1D222;
 lastChange = "2018-08-27 13:38:21 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor11;
+position = "{442, 733}";
+}
+);
 layerId = "2208DBFF-11B0-48D9-BA6B-B988DFB8211A";
 paths = (
 {
@@ -34805,6 +36525,12 @@ glyphname = u1D223;
 lastChange = "2018-08-27 13:38:21 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor11;
+position = "{399, 733}";
+}
+);
 layerId = "2208DBFF-11B0-48D9-BA6B-B988DFB8211A";
 paths = (
 {
@@ -34842,6 +36568,12 @@ glyphname = u1D224;
 lastChange = "2018-08-27 13:38:21 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor11;
+position = "{399, 733}";
+}
+);
 layerId = "2208DBFF-11B0-48D9-BA6B-B988DFB8211A";
 paths = (
 {
@@ -34879,6 +36611,12 @@ glyphname = u1D225;
 lastChange = "2018-08-27 13:38:21 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor11;
+position = "{383, 733}";
+}
+);
 layerId = "2208DBFF-11B0-48D9-BA6B-B988DFB8211A";
 paths = (
 {
@@ -34909,6 +36647,12 @@ glyphname = u1D226;
 lastChange = "2018-08-27 13:38:21 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor11;
+position = "{343, 733}";
+}
+);
 layerId = "2208DBFF-11B0-48D9-BA6B-B988DFB8211A";
 paths = (
 {
@@ -34939,6 +36683,12 @@ glyphname = u1D227;
 lastChange = "2018-08-27 13:38:21 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor11;
+position = "{436, 733}";
+}
+);
 layerId = "2208DBFF-11B0-48D9-BA6B-B988DFB8211A";
 paths = (
 {
@@ -34971,6 +36721,12 @@ glyphname = u1D228;
 lastChange = "2018-08-27 13:38:21 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor11;
+position = "{278, 733}";
+}
+);
 layerId = "2208DBFF-11B0-48D9-BA6B-B988DFB8211A";
 paths = (
 {
@@ -35003,6 +36759,12 @@ glyphname = u1D229;
 lastChange = "2018-08-27 13:38:21 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor11;
+position = "{383, 733}";
+}
+);
 layerId = "2208DBFF-11B0-48D9-BA6B-B988DFB8211A";
 paths = (
 {
@@ -35031,6 +36793,12 @@ glyphname = u1D22A;
 lastChange = "2018-08-27 13:38:21 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor11;
+position = "{242, 733}";
+}
+);
 layerId = "2208DBFF-11B0-48D9-BA6B-B988DFB8211A";
 paths = (
 {
@@ -35057,6 +36825,12 @@ glyphname = u1D22B;
 lastChange = "2018-08-27 13:38:21 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor11;
+position = "{242, 733}";
+}
+);
 layerId = "2208DBFF-11B0-48D9-BA6B-B988DFB8211A";
 paths = (
 {
@@ -35083,6 +36857,12 @@ glyphname = u1D22C;
 lastChange = "2018-08-27 13:38:21 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor11;
+position = "{242, 733}";
+}
+);
 layerId = "2208DBFF-11B0-48D9-BA6B-B988DFB8211A";
 paths = (
 {
@@ -35119,6 +36899,12 @@ glyphname = u1D22D;
 lastChange = "2018-08-27 13:38:21 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor11;
+position = "{378, 733}";
+}
+);
 layerId = "2208DBFF-11B0-48D9-BA6B-B988DFB8211A";
 paths = (
 {
@@ -35155,6 +36941,12 @@ glyphname = u1D22E;
 lastChange = "2018-08-27 13:38:21 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor11;
+position = "{242, 733}";
+}
+);
 layerId = "2208DBFF-11B0-48D9-BA6B-B988DFB8211A";
 paths = (
 {
@@ -35191,6 +36983,12 @@ glyphname = u1D22F;
 lastChange = "2018-08-27 13:38:21 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor11;
+position = "{403, 733}";
+}
+);
 layerId = "2208DBFF-11B0-48D9-BA6B-B988DFB8211A";
 paths = (
 {
@@ -35221,6 +37019,12 @@ glyphname = u1D230;
 lastChange = "2018-08-27 13:38:21 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor11;
+position = "{259, 733}";
+}
+);
 layerId = "2208DBFF-11B0-48D9-BA6B-B988DFB8211A";
 paths = (
 {
@@ -35251,6 +37055,12 @@ glyphname = u1D231;
 lastChange = "2018-08-27 13:38:21 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor11;
+position = "{411, 733}";
+}
+);
 layerId = "2208DBFF-11B0-48D9-BA6B-B988DFB8211A";
 paths = (
 {
@@ -35297,6 +37107,12 @@ glyphname = u1D232;
 lastChange = "2018-08-27 13:38:21 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor11;
+position = "{310, 733}";
+}
+);
 layerId = "2208DBFF-11B0-48D9-BA6B-B988DFB8211A";
 paths = (
 {
@@ -35329,6 +37145,12 @@ glyphname = u1D233;
 lastChange = "2018-08-27 13:38:21 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor11;
+position = "{383, 733}";
+}
+);
 layerId = "2208DBFF-11B0-48D9-BA6B-B988DFB8211A";
 paths = (
 {
@@ -35358,6 +37180,12 @@ glyphname = u1D234;
 lastChange = "2018-08-27 13:38:21 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor11;
+position = "{383, 733}";
+}
+);
 layerId = "2208DBFF-11B0-48D9-BA6B-B988DFB8211A";
 paths = (
 {
@@ -35387,6 +37215,12 @@ glyphname = u1D235;
 lastChange = "2018-08-27 13:38:21 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor11;
+position = "{300, 733}";
+}
+);
 layerId = "2208DBFF-11B0-48D9-BA6B-B988DFB8211A";
 paths = (
 {
@@ -35416,6 +37250,12 @@ glyphname = u1D236;
 lastChange = "2018-08-27 13:38:21 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor11;
+position = "{383, 733}";
+}
+);
 layerId = "2208DBFF-11B0-48D9-BA6B-B988DFB8211A";
 paths = (
 {
@@ -35443,6 +37283,12 @@ glyphname = u1D237;
 lastChange = "2018-08-27 13:38:21 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor11;
+position = "{383, 733}";
+}
+);
 layerId = "2208DBFF-11B0-48D9-BA6B-B988DFB8211A";
 paths = (
 {
@@ -35470,6 +37316,12 @@ glyphname = u1D238;
 lastChange = "2018-08-27 13:38:21 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor11;
+position = "{417, 733}";
+}
+);
 layerId = "2208DBFF-11B0-48D9-BA6B-B988DFB8211A";
 paths = (
 {
@@ -35498,6 +37350,12 @@ glyphname = u1D239;
 lastChange = "2018-08-27 13:38:21 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor11;
+position = "{417, 733}";
+}
+);
 layerId = "2208DBFF-11B0-48D9-BA6B-B988DFB8211A";
 paths = (
 {
@@ -35526,6 +37384,12 @@ glyphname = u1D23A;
 lastChange = "2018-08-27 13:38:21 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor11;
+position = "{363, 733}";
+}
+);
 layerId = "2208DBFF-11B0-48D9-BA6B-B988DFB8211A";
 paths = (
 {
@@ -35550,6 +37414,12 @@ glyphname = u1D23B;
 lastChange = "2018-08-27 13:38:21 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor11;
+position = "{363, 733}";
+}
+);
 layerId = "2208DBFF-11B0-48D9-BA6B-B988DFB8211A";
 paths = (
 {
@@ -35574,6 +37444,12 @@ glyphname = u1D23C;
 lastChange = "2018-08-27 13:38:21 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor11;
+position = "{323, 733}";
+}
+);
 layerId = "2208DBFF-11B0-48D9-BA6B-B988DFB8211A";
 paths = (
 {
@@ -35602,6 +37478,12 @@ glyphname = u1D23D;
 lastChange = "2018-08-27 13:38:21 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor11;
+position = "{363, 733}";
+}
+);
 layerId = "2208DBFF-11B0-48D9-BA6B-B988DFB8211A";
 paths = (
 {
@@ -35630,6 +37512,12 @@ glyphname = u1D23E;
 lastChange = "2018-08-27 13:38:21 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor11;
+position = "{363, 733}";
+}
+);
 layerId = "2208DBFF-11B0-48D9-BA6B-B988DFB8211A";
 paths = (
 {
@@ -35658,6 +37546,12 @@ glyphname = u1D23F;
 lastChange = "2018-08-27 13:38:21 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor11;
+position = "{274, 733}";
+}
+);
 layerId = "2208DBFF-11B0-48D9-BA6B-B988DFB8211A";
 paths = (
 {
@@ -35686,6 +37580,12 @@ glyphname = u1D240;
 lastChange = "2018-08-27 13:38:21 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor11;
+position = "{381, 733}";
+}
+);
 layerId = "2208DBFF-11B0-48D9-BA6B-B988DFB8211A";
 paths = (
 {
@@ -35714,6 +37614,12 @@ glyphname = u1D241;
 lastChange = "2018-08-27 13:38:21 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor11;
+position = "{381, 733}";
+}
+);
 layerId = "2208DBFF-11B0-48D9-BA6B-B988DFB8211A";
 paths = (
 {
@@ -35742,6 +37648,12 @@ glyphname = u1D242;
 lastChange = "2018-08-27 13:38:34 +0000";
 layers = (
 {
+anchors = (
+{
+name = _Anchor11;
+position = "{-350, 551}";
+}
+);
 layerId = "2208DBFF-11B0-48D9-BA6B-B988DFB8211A";
 paths = (
 {
@@ -35762,12 +37674,19 @@ width = 0;
 note = u1D242;
 unicode = 1D242;
 category = Mark;
+subCategory = Nonspacing;
 },
 {
 glyphname = u1D243;
 lastChange = "2018-08-27 13:38:34 +0000";
 layers = (
 {
+anchors = (
+{
+name = _Anchor11;
+position = "{-350, 551}";
+}
+);
 layerId = "2208DBFF-11B0-48D9-BA6B-B988DFB8211A";
 paths = (
 {
@@ -35790,12 +37709,19 @@ width = 0;
 note = u1D243;
 unicode = 1D243;
 category = Mark;
+subCategory = Nonspacing;
 },
 {
 glyphname = u1D244;
 lastChange = "2018-08-27 13:38:34 +0000";
 layers = (
 {
+anchors = (
+{
+name = _Anchor11;
+position = "{-350, 551}";
+}
+);
 layerId = "2208DBFF-11B0-48D9-BA6B-B988DFB8211A";
 paths = (
 {
@@ -35822,12 +37748,19 @@ width = 0;
 note = u1D244;
 unicode = 1D244;
 category = Mark;
+subCategory = Nonspacing;
 },
 {
 glyphname = u1D245;
 lastChange = "2018-08-27 13:38:21 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor11;
+position = "{351, 733}";
+}
+);
 layerId = "2208DBFF-11B0-48D9-BA6B-B988DFB8211A";
 paths = (
 {
@@ -35866,6 +37799,28 @@ glyphname = u1D165_b;
 lastChange = "2018-08-27 13:38:41 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor11;
+position = "{14, 1028}";
+},
+{
+name = Anchor13;
+position = "{13, 289}";
+},
+{
+name = Anchor15;
+position = "{-121, -36}";
+},
+{
+name = Anchor17;
+position = "{80, 154}";
+},
+{
+name = entry;
+position = "{27, 1009}";
+}
+);
 components = (
 {
 name = u1D165;
@@ -35884,6 +37839,28 @@ glyphname = u1D166_b;
 lastChange = "2018-08-27 13:38:41 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor11;
+position = "{14, 1028}";
+},
+{
+name = Anchor13;
+position = "{13, 289}";
+},
+{
+name = Anchor15;
+position = "{-121, -36}";
+},
+{
+name = Anchor17;
+position = "{80, 154}";
+},
+{
+name = entry;
+position = "{27, 1009}";
+}
+);
 components = (
 {
 name = u1D166;
@@ -35902,6 +37879,28 @@ glyphname = u1D165_short;
 lastChange = "2018-08-27 13:38:41 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor11;
+position = "{14, 1028}";
+},
+{
+name = Anchor13;
+position = "{13, 289}";
+},
+{
+name = Anchor15;
+position = "{-121, -36}";
+},
+{
+name = Anchor17;
+position = "{80, 154}";
+},
+{
+name = entry;
+position = "{27, 1009}";
+}
+);
 layerId = "2208DBFF-11B0-48D9-BA6B-B988DFB8211A";
 paths = (
 {
@@ -35925,6 +37924,28 @@ glyphname = u1D165_ext;
 lastChange = "2018-08-27 13:38:41 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor11;
+position = "{14, 1028}";
+},
+{
+name = Anchor13;
+position = "{13, 289}";
+},
+{
+name = Anchor15;
+position = "{-121, -36}";
+},
+{
+name = Anchor17;
+position = "{80, 154}";
+},
+{
+name = entry;
+position = "{27, 1009}";
+}
+);
 layerId = "2208DBFF-11B0-48D9-BA6B-B988DFB8211A";
 paths = (
 {
@@ -35948,6 +37969,28 @@ glyphname = u1D165_ext2;
 lastChange = "2018-08-27 13:38:41 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor11;
+position = "{14, 1028}";
+},
+{
+name = Anchor13;
+position = "{13, 289}";
+},
+{
+name = Anchor15;
+position = "{-121, -36}";
+},
+{
+name = Anchor17;
+position = "{80, 154}";
+},
+{
+name = entry;
+position = "{27, 1009}";
+}
+);
 layerId = "2208DBFF-11B0-48D9-BA6B-B988DFB8211A";
 paths = (
 {
@@ -35971,6 +38014,28 @@ glyphname = u1D165_short2;
 lastChange = "2018-08-27 13:38:41 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor11;
+position = "{14, 1028}";
+},
+{
+name = Anchor13;
+position = "{13, 289}";
+},
+{
+name = Anchor15;
+position = "{-121, -36}";
+},
+{
+name = Anchor17;
+position = "{80, 154}";
+},
+{
+name = entry;
+position = "{27, 1009}";
+}
+);
 layerId = "2208DBFF-11B0-48D9-BA6B-B988DFB8211A";
 paths = (
 {
@@ -35994,6 +38059,28 @@ glyphname = u1D166_short;
 lastChange = "2018-08-27 13:38:41 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor11;
+position = "{14, 1028}";
+},
+{
+name = Anchor13;
+position = "{14, 289}";
+},
+{
+name = Anchor15;
+position = "{-121, -36}";
+},
+{
+name = Anchor17;
+position = "{80, 154}";
+},
+{
+name = entry;
+position = "{27, 1009}";
+}
+);
 layerId = "2208DBFF-11B0-48D9-BA6B-B988DFB8211A";
 paths = (
 {
@@ -36031,6 +38118,28 @@ glyphname = u1D166_ext;
 lastChange = "2018-08-27 13:38:41 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor11;
+position = "{14, 1028}";
+},
+{
+name = Anchor13;
+position = "{14, 289}";
+},
+{
+name = Anchor15;
+position = "{-121, -36}";
+},
+{
+name = Anchor17;
+position = "{80, 154}";
+},
+{
+name = entry;
+position = "{27, 1009}";
+}
+);
 layerId = "2208DBFF-11B0-48D9-BA6B-B988DFB8211A";
 paths = (
 {
@@ -36068,6 +38177,28 @@ glyphname = u1D166_ext2;
 lastChange = "2018-08-27 13:38:41 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor11;
+position = "{14, 1028}";
+},
+{
+name = Anchor13;
+position = "{14, 289}";
+},
+{
+name = Anchor15;
+position = "{-121, -36}";
+},
+{
+name = Anchor17;
+position = "{80, 154}";
+},
+{
+name = entry;
+position = "{27, 1009}";
+}
+);
 layerId = "2208DBFF-11B0-48D9-BA6B-B988DFB8211A";
 paths = (
 {
@@ -36105,6 +38236,28 @@ glyphname = u1D166_short2;
 lastChange = "2018-08-27 13:38:41 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor11;
+position = "{14, 1028}";
+},
+{
+name = Anchor13;
+position = "{14, 289}";
+},
+{
+name = Anchor15;
+position = "{-121, -36}";
+},
+{
+name = Anchor17;
+position = "{80, 154}";
+},
+{
+name = entry;
+position = "{27, 1009}";
+}
+);
 layerId = "2208DBFF-11B0-48D9-BA6B-B988DFB8211A";
 paths = (
 {
@@ -36148,12 +38301,23 @@ width = 0;
 );
 note = nullmark;
 category = Mark;
+subCategory = Nonspacing;
 },
 {
 glyphname = u1D167_low;
 lastChange = "2018-08-27 13:38:37 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor28;
+position = "{198, 1137}";
+},
+{
+name = _Anchor13;
+position = "{198, 397}";
+}
+);
 components = (
 {
 name = u1D167;
@@ -36165,12 +38329,23 @@ width = 0;
 );
 note = u1D167_low;
 category = Mark;
+subCategory = Nonspacing;
 },
 {
 glyphname = u1D168_low;
 lastChange = "2018-08-27 13:38:37 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor28;
+position = "{198, 1137}";
+},
+{
+name = _Anchor13;
+position = "{198, 397}";
+}
+);
 components = (
 {
 name = u1D168;
@@ -36182,12 +38357,23 @@ width = 0;
 );
 note = u1D168_low;
 category = Mark;
+subCategory = Nonspacing;
 },
 {
 glyphname = u1D169_low;
 lastChange = "2018-08-27 13:38:37 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor28;
+position = "{198, 1137}";
+},
+{
+name = _Anchor13;
+position = "{198, 397}";
+}
+);
 components = (
 {
 name = u1D169;
@@ -36199,6 +38385,7 @@ width = 0;
 );
 note = u1D169_low;
 category = Mark;
+subCategory = Nonspacing;
 },
 {
 glyphname = u1D165_short.alt;
@@ -36206,6 +38393,28 @@ production = u1D165_short.alt;
 lastChange = "2018-08-27 13:38:41 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor11;
+position = "{14, 1028}";
+},
+{
+name = Anchor13;
+position = "{13, 289}";
+},
+{
+name = Anchor15;
+position = "{13, -46}";
+},
+{
+name = Anchor17;
+position = "{215, 154}";
+},
+{
+name = entry;
+position = "{166, 1009}";
+}
+);
 layerId = "2208DBFF-11B0-48D9-BA6B-B988DFB8211A";
 paths = (
 {
@@ -36230,6 +38439,28 @@ production = u1D166_short.alt;
 lastChange = "2018-08-27 13:38:41 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor11;
+position = "{14, 1028}";
+},
+{
+name = Anchor13;
+position = "{14, 289}";
+},
+{
+name = Anchor15;
+position = "{14, -46}";
+},
+{
+name = Anchor17;
+position = "{215, 154}";
+},
+{
+name = entry;
+position = "{166, 1009}";
+}
+);
 layerId = "2208DBFF-11B0-48D9-BA6B-B988DFB8211A";
 paths = (
 {
@@ -36796,6 +39027,12 @@ glyphname = u1D242.alt;
 lastChange = "2018-08-27 13:38:34 +0000";
 layers = (
 {
+anchors = (
+{
+name = _Anchor11;
+position = "{-350, 551}";
+}
+);
 layerId = "2208DBFF-11B0-48D9-BA6B-B988DFB8211A";
 paths = (
 {
@@ -36814,12 +39051,19 @@ width = 0;
 }
 );
 category = Mark;
+subCategory = Nonspacing;
 },
 {
 glyphname = u1D243.alt;
 lastChange = "2018-08-27 13:38:34 +0000";
 layers = (
 {
+anchors = (
+{
+name = _Anchor11;
+position = "{-350, 551}";
+}
+);
 layerId = "2208DBFF-11B0-48D9-BA6B-B988DFB8211A";
 paths = (
 {
@@ -36840,12 +39084,19 @@ width = 0;
 }
 );
 category = Mark;
+subCategory = Nonspacing;
 },
 {
 glyphname = u1D244.alt;
 lastChange = "2018-08-27 13:38:34 +0000";
 layers = (
 {
+anchors = (
+{
+name = _Anchor11;
+position = "{-350, 551}";
+}
+);
 layerId = "2208DBFF-11B0-48D9-BA6B-B988DFB8211A";
 paths = (
 {
@@ -36870,15 +39121,12 @@ width = 0;
 }
 );
 category = Mark;
+subCategory = Nonspacing;
 }
 );
 instances = (
 {
 customParameters = (
-{
-name = weightClass;
-value = 400;
-},
 {
 name = xHeight;
 value = "536";
@@ -36940,6 +39188,28 @@ name = Regular;
 manufacturer = "Monotype Imaging Inc.";
 manufacturerURL = "http://www.google.com/get/noto/";
 unitsPerEm = 1000;
+userData = {
+com.github.googlei18n.ufo2ft.featureWriters = (
+{
+class = CursFeatureWriter;
+options = {
+mode = append;
+};
+},
+{
+class = KernFeatureWriter;
+options = {
+mode = append;
+};
+},
+{
+class = MarkFeatureWriter;
+options = {
+mode = skip;
+};
+}
+);
+};
 versionMajor = 2;
 versionMinor = 0;
 }
