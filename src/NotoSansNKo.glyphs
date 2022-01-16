@@ -1,5 +1,23 @@
 {
-.appVersion = "1264";
+.appVersion = "3109";
+classes = (
+{
+code = "uni07CC uni07CC.fina uni07CC.medi uni07CE uni07CE.fina uni07CE.medi uni07CF uni07CF.fina uni07CF.medi uni07D1 uni07D5 uni07D5.fina uni07D5.medi uni07D6 uni07D6.fina uni07DC.fina uni07DE uni07DE.fina uni07DE.medi uni07DF uni07DF.fina uni07DF.medi uni07E0 uni07E2 uni07E2.fina uni07E2.medi uni07E3 uni07E3.fina uni07E3.medi uni07E4 uni07E4.fina uni07E4.medi uni07E5 uni07E5.fina uni07E5.medi uni07E6 uni07E6.fina uni07E6.medi uni07E7 uni07E7.fina uni07E7.medi uni07E8 uni07E8.fina uni07E8.medi uni07E9 uni07E9.fina uni07E9.medi uni25CC";
+name = class1;
+},
+{
+code = "uni07CB uni07CB.fina uni07CB.medi uni07D0 uni07D0.fina uni07D0.medi uni07D2 uni07D2.fina uni07D2.medi uni07DA uni07DA.fina uni07DA.medi uni07DB.fina uni07DB.medi uni07DC uni07DC.medi uni07E1 uni07E1.fina";
+name = class2;
+},
+{
+code = "uni07D8 uni07D8.fina uni07D8.medi uni07DB uni07DD uni07DD.fina uni07DD.medi";
+name = class3;
+},
+{
+code = "uni07FD uni07FD.narrow uni07FD.wide uni07FD.wideopen uni07FD.wider uni07FD.widest";
+name = markFilteringSet1;
+}
+);
 copyright = "Copyright 2017 Google Inc. All Rights Reserved.";
 customParameters = (
 {
@@ -193,6 +211,33 @@ uni07FD.widest
 );
 },
 {
+name = unicodeRanges;
+value = (
+0,
+1,
+13,
+14,
+31,
+45,
+63
+);
+},
+{
+name = "Has WWS Names";
+value = 1;
+},
+{
+name = fsType;
+value = (
+);
+},
+{
+name = codePageRanges;
+value = (
+1252
+);
+},
+{
 name = description;
 value = "Designed by Monotype design team.";
 },
@@ -209,39 +254,12 @@ name = vendorID;
 value = GOOG;
 },
 {
-name = unicodeRanges;
-value = (
-0,
-1,
-13,
-14,
-31,
-45,
-63
-);
-},
-{
 name = trademark;
 value = "Noto is a trademark of Google Inc.";
 },
 {
-name = "Has WWS Names";
-value = 1;
-},
-{
 name = versionString;
 value = "Version 2.001";
-},
-{
-name = fsType;
-value = (
-);
-},
-{
-name = codePageRanges;
-value = (
-1252
-);
 }
 );
 date = "2017-02-24 17:47:35 +0000";
@@ -250,6 +268,37 @@ designerURL = "http://www.monotype.com/studio";
 disablesAutomaticAlignment = 1;
 disablesNiceNames = 1;
 familyName = "Noto Sans NKo";
+featurePrefixes = (
+{
+code = "languagesystem nko  dflt;\012";
+name = Languagesystems;
+}
+);
+features = (
+{
+code = "    lookupflag UseMarkFilteringSet @markFilteringSet1;\012    sub [uni07CA uni07CA.fina uni07CA.medi uni07EA.fina] uni07FD' by uni07FD.narrow;\012    sub @class1 uni07FD' by uni07FD.wide;\012    sub [uni07CD uni07CD.fina uni07CD.medi] uni07FD' by uni07FD.wideopen;\012    sub @class2 uni07FD' by uni07FD.wider;\012    sub @class3 uni07FD' by uni07FD.widest;\012";
+name = ccmp;
+},
+{
+automatic = 1;
+code = "sub uni07CA by uni07CA.fina;\012sub uni07CB by uni07CB.fina;\012sub uni07CC by uni07CC.fina;\012sub uni07CD by uni07CD.fina;\012sub uni07CE by uni07CE.fina;\012sub uni07CF by uni07CF.fina;\012sub uni07D0 by uni07D0.fina;\012sub uni07D1 by uni07D1.fina;\012sub uni07D2 by uni07D2.fina;\012sub uni07D3 by uni07D3.fina;\012sub uni07D4 by uni07D4.fina;\012sub uni07D5 by uni07D5.fina;\012sub uni07D6 by uni07D6.fina;\012sub uni07D7 by uni07D7.fina;\012sub uni07D8 by uni07D8.fina;\012sub uni07D9 by uni07D9.fina;\012sub uni07DA by uni07DA.fina;\012sub uni07DB by uni07DB.fina;\012sub uni07DC by uni07DC.fina;\012sub uni07DD by uni07DD.fina;\012sub uni07DE by uni07DE.fina;\012sub uni07DF by uni07DF.fina;\012sub uni07E0 by uni07E0.fina;\012sub uni07E1 by uni07E1.fina;\012sub uni07E2 by uni07E2.fina;\012sub uni07E3 by uni07E3.fina;\012sub uni07E4 by uni07E4.fina;\012sub uni07E5 by uni07E5.fina;\012sub uni07E6 by uni07E6.fina;\012sub uni07E7 by uni07E7.fina;\012sub uni07E8 by uni07E8.fina;\012sub uni07E9 by uni07E9.fina;\012sub uni07EA by uni07EA.fina;\012";
+name = fina;
+},
+{
+automatic = 1;
+code = "sub uni07CA by uni07CA.init;\012sub uni07CB by uni07CB.init;\012sub uni07CC by uni07CC.init;\012sub uni07CD by uni07CD.init;\012sub uni07CE by uni07CE.init;\012sub uni07CF by uni07CF.init;\012sub uni07D0 by uni07D0.init;\012sub uni07D1 by uni07D1.init;\012sub uni07D2 by uni07D2.init;\012sub uni07D3 by uni07D3.init;\012sub uni07D4 by uni07D4.init;\012sub uni07D5 by uni07D5.init;\012sub uni07D6 by uni07D6.init;\012sub uni07D7 by uni07D7.init;\012sub uni07D8 by uni07D8.init;\012sub uni07D9 by uni07D9.init;\012sub uni07DA by uni07DA.init;\012sub uni07DB by uni07DB.init;\012sub uni07DC by uni07DC.init;\012sub uni07DD by uni07DD.init;\012sub uni07DE by uni07DE.init;\012sub uni07DF by uni07DF.init;\012sub uni07E0 by uni07E0.init;\012sub uni07E1 by uni07E1.init;\012sub uni07E2 by uni07E2.init;\012sub uni07E3 by uni07E3.init;\012sub uni07E4 by uni07E4.init;\012sub uni07E5 by uni07E5.init;\012sub uni07E6 by uni07E6.init;\012sub uni07E7 by uni07E7.init;\012sub uni07E8 by uni07E8.init;\012sub uni07E9 by uni07E9.init;\012sub uni07EA by uni07EA.init;\012";
+name = init;
+},
+{
+automatic = 1;
+code = "sub uni07CA by uni07CA.medi;\012sub uni07CB by uni07CB.medi;\012sub uni07CC by uni07CC.medi;\012sub uni07CD by uni07CD.medi;\012sub uni07CE by uni07CE.medi;\012sub uni07CF by uni07CF.medi;\012sub uni07D0 by uni07D0.medi;\012sub uni07D1 by uni07D1.medi;\012sub uni07D2 by uni07D2.medi;\012sub uni07D3 by uni07D3.medi;\012sub uni07D4 by uni07D4.medi;\012sub uni07D5 by uni07D5.medi;\012sub uni07D6 by uni07D6.medi;\012sub uni07D7 by uni07D7.medi;\012sub uni07D8 by uni07D8.medi;\012sub uni07D9 by uni07D9.medi;\012sub uni07DA by uni07DA.medi;\012sub uni07DB by uni07DB.medi;\012sub uni07DC by uni07DC.medi;\012sub uni07DD by uni07DD.medi;\012sub uni07DE by uni07DE.medi;\012sub uni07DF by uni07DF.medi;\012sub uni07E0 by uni07E0.medi;\012sub uni07E1 by uni07E1.medi;\012sub uni07E2 by uni07E2.medi;\012sub uni07E3 by uni07E3.medi;\012sub uni07E4 by uni07E4.medi;\012sub uni07E5 by uni07E5.medi;\012sub uni07E6 by uni07E6.medi;\012sub uni07E7 by uni07E7.medi;\012sub uni07E8 by uni07E8.medi;\012sub uni07E9 by uni07E9.medi;\012sub uni07EA by uni07EA.medi;\012";
+name = medi;
+},
+{
+code = "# Automatic Code Start\012";
+name = mark;
+}
+);
 fontMaster = (
 {
 alignmentZones = (
@@ -650,6 +699,12 @@ production = uni07C0;
 lastChange = "2019-09-06 15:22:37 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor4;
+position = "{270, -49}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -701,6 +756,12 @@ production = uni07C1;
 lastChange = "2019-09-06 15:22:42 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{297, 796}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -740,6 +801,12 @@ production = uni07C2;
 lastChange = "2019-09-06 15:22:37 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor4;
+position = "{162, -49}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -784,6 +851,12 @@ production = uni07C3;
 lastChange = "2019-09-06 15:22:37 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor4;
+position = "{281, -49}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -828,6 +901,12 @@ production = uni07C4;
 lastChange = "2019-09-06 15:22:37 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor4;
+position = "{247, -49}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -881,6 +960,12 @@ production = uni07C5;
 lastChange = "2019-09-06 15:22:37 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor4;
+position = "{188, -49}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -916,6 +1001,12 @@ production = uni07C6;
 lastChange = "2019-09-06 15:22:37 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor4;
+position = "{382, -49}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -960,6 +1051,12 @@ production = uni07C7;
 lastChange = "2019-09-06 15:22:37 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor4;
+position = "{158, -49}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -995,6 +1092,12 @@ production = uni07C8;
 lastChange = "2019-09-06 15:22:37 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor4;
+position = "{158, -49}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -1041,6 +1144,12 @@ production = uni07C9;
 lastChange = "2019-09-06 15:22:37 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor4;
+position = "{277, -49}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -1101,6 +1210,20 @@ production = uni07CA;
 lastChange = "2019-09-06 15:22:42 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{136, 795}";
+},
+{
+name = Anchor4;
+position = "{136, -49}";
+},
+{
+name = Anchor6;
+position = "{132, -49}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -1127,6 +1250,20 @@ production = uni07CB;
 lastChange = "2019-09-06 15:22:42 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{332, 649}";
+},
+{
+name = Anchor4;
+position = "{332, -49}";
+},
+{
+name = Anchor6;
+position = "{330, -49}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -1178,6 +1315,20 @@ production = uni07CC;
 lastChange = "2019-09-06 15:22:42 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{214, 795}";
+},
+{
+name = Anchor4;
+position = "{219, -49}";
+},
+{
+name = Anchor6;
+position = "{218, -49}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -1222,6 +1373,20 @@ production = uni07CD;
 lastChange = "2019-09-06 15:22:42 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{312, 649}";
+},
+{
+name = Anchor4;
+position = "{312, -49}";
+},
+{
+name = Anchor6;
+position = "{309, -49}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -1257,6 +1422,20 @@ production = uni07CE;
 lastChange = "2019-09-06 15:22:42 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{292, 649}";
+},
+{
+name = Anchor4;
+position = "{292, -49}";
+},
+{
+name = Anchor6;
+position = "{296, -49}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -1301,6 +1480,20 @@ production = uni07CF;
 lastChange = "2019-09-06 15:22:42 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{244, 649}";
+},
+{
+name = Anchor4;
+position = "{244, -49}";
+},
+{
+name = Anchor6;
+position = "{256, -49}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -1345,6 +1538,20 @@ production = uni07D0;
 lastChange = "2019-09-06 15:22:42 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{322, 795}";
+},
+{
+name = Anchor4;
+position = "{322, -49}";
+},
+{
+name = Anchor6;
+position = "{322, -49}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -1414,6 +1621,20 @@ production = uni07D1;
 lastChange = "2019-09-06 15:22:42 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{253, 795}";
+},
+{
+name = Anchor4;
+position = "{253, -49}";
+},
+{
+name = Anchor6;
+position = "{261, -49}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -1454,6 +1675,20 @@ production = uni07D2;
 lastChange = "2019-09-06 15:22:42 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{224, 795}";
+},
+{
+name = Anchor4;
+position = "{556, -49}";
+},
+{
+name = Anchor6;
+position = "{341, -49}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -1509,6 +1744,20 @@ production = uni07D3;
 lastChange = "2019-09-06 15:22:42 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{219, 795}";
+},
+{
+name = Anchor4;
+position = "{136, -49}";
+},
+{
+name = Anchor6;
+position = "{219, -49}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -1553,6 +1802,20 @@ production = uni07D4;
 lastChange = "2019-09-06 15:22:42 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{195, 795}";
+},
+{
+name = Anchor4;
+position = "{283, -49}";
+},
+{
+name = Anchor6;
+position = "{199, -49}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -1597,6 +1860,20 @@ production = uni07D5;
 lastChange = "2019-09-06 15:22:42 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{136, 795}";
+},
+{
+name = Anchor4;
+position = "{263, -49}";
+},
+{
+name = Anchor6;
+position = "{290, -49}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -1646,6 +1923,20 @@ production = uni07D6;
 lastChange = "2019-09-06 15:22:42 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{234, 795}";
+},
+{
+name = Anchor4;
+position = "{336, -49}";
+},
+{
+name = Anchor6;
+position = "{238, -49}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -1681,6 +1972,20 @@ production = uni07D7;
 lastChange = "2019-09-06 15:22:42 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{244, 795}";
+},
+{
+name = Anchor4;
+position = "{244, -49}";
+},
+{
+name = Anchor6;
+position = "{202, -49}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -1716,6 +2021,20 @@ production = uni07D8;
 lastChange = "2019-09-06 15:22:42 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{371, 649}";
+},
+{
+name = Anchor4;
+position = "{375, -49}";
+},
+{
+name = Anchor6;
+position = "{396, -49}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -1781,6 +2100,20 @@ production = uni07D9;
 lastChange = "2019-09-06 15:22:42 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{195, 795}";
+},
+{
+name = Anchor4;
+position = "{195, -49}";
+},
+{
+name = Anchor6;
+position = "{195, -49}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -1816,6 +2149,20 @@ production = uni07DA;
 lastChange = "2019-09-06 15:22:42 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{322, 795}";
+},
+{
+name = Anchor4;
+position = "{341, -49}";
+},
+{
+name = Anchor6;
+position = "{325, -49}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -1878,6 +2225,20 @@ production = uni07DB;
 lastChange = "2019-09-06 15:22:42 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{351, 649}";
+},
+{
+name = Anchor4;
+position = "{351, -49}";
+},
+{
+name = Anchor6;
+position = "{354, -49}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -1939,6 +2300,20 @@ production = uni07DC;
 lastChange = "2019-09-06 15:22:42 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{292, 795}";
+},
+{
+name = Anchor4;
+position = "{292, -49}";
+},
+{
+name = Anchor6;
+position = "{288, -49}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -1985,6 +2360,20 @@ production = uni07DD;
 lastChange = "2019-09-06 15:22:42 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{371, 795}";
+},
+{
+name = Anchor4;
+position = "{244, -49}";
+},
+{
+name = Anchor6;
+position = "{366, -49}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -2065,6 +2454,20 @@ production = uni07DE;
 lastChange = "2019-09-06 15:22:42 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{263, 795}";
+},
+{
+name = Anchor4;
+position = "{410, -49}";
+},
+{
+name = Anchor6;
+position = "{267, -49}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -2109,6 +2512,20 @@ production = uni07DF;
 lastChange = "2019-09-06 15:22:42 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{214, 795}";
+},
+{
+name = Anchor4;
+position = "{341, -49}";
+},
+{
+name = Anchor6;
+position = "{292, -49}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -2155,6 +2572,20 @@ production = uni07E0;
 lastChange = "2019-09-06 15:22:42 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{263, 795}";
+},
+{
+name = Anchor4;
+position = "{258, -49}";
+},
+{
+name = Anchor6;
+position = "{260, -49}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -2190,6 +2621,20 @@ production = uni07E1;
 lastChange = "2019-09-06 15:22:42 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{283, 795}";
+},
+{
+name = Anchor4;
+position = "{283, -49}";
+},
+{
+name = Anchor6;
+position = "{288, -49}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -2236,6 +2681,20 @@ production = uni07E2;
 lastChange = "2019-09-06 15:22:42 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{253, 795}";
+},
+{
+name = Anchor4;
+position = "{278, -49}";
+},
+{
+name = Anchor6;
+position = "{260, -49}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -2314,6 +2773,20 @@ production = uni07E3;
 lastChange = "2019-09-06 15:22:42 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{263, 795}";
+},
+{
+name = Anchor4;
+position = "{410, -49}";
+},
+{
+name = Anchor6;
+position = "{267, -49}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -2357,6 +2830,20 @@ production = uni07E4;
 lastChange = "2019-09-06 15:22:42 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{263, 795}";
+},
+{
+name = Anchor4;
+position = "{410, -49}";
+},
+{
+name = Anchor6;
+position = "{267, -49}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -2401,6 +2888,20 @@ production = uni07E5;
 lastChange = "2019-09-06 15:22:42 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{263, 795}";
+},
+{
+name = Anchor4;
+position = "{268, -49}";
+},
+{
+name = Anchor6;
+position = "{262, -49}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -2462,6 +2963,20 @@ production = uni07E6;
 lastChange = "2019-09-06 15:22:42 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{263, 795}";
+},
+{
+name = Anchor4;
+position = "{253, -49}";
+},
+{
+name = Anchor6;
+position = "{260, -49}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -2531,6 +3046,20 @@ production = uni07E7;
 lastChange = "2019-09-06 15:22:42 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{263, 795}";
+},
+{
+name = Anchor4;
+position = "{263, -49}";
+},
+{
+name = Anchor6;
+position = "{264, -49}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -2609,6 +3138,20 @@ production = uni07E8;
 lastChange = "2019-09-06 15:22:42 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{292, 454}";
+},
+{
+name = Anchor4;
+position = "{214, -303}";
+},
+{
+name = Anchor6;
+position = "{280, -49}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -2666,6 +3209,20 @@ production = uni07E9;
 lastChange = "2019-09-06 15:22:42 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{292, 454}";
+},
+{
+name = Anchor4;
+position = "{214, -303}";
+},
+{
+name = Anchor6;
+position = "{275, -49}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -2735,6 +3292,20 @@ production = uni07EA;
 lastChange = "2019-09-06 15:22:42 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{195, 454}";
+},
+{
+name = Anchor4;
+position = "{195, -303}";
+},
+{
+name = Anchor6;
+position = "{195, -49}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -2770,6 +3341,12 @@ production = uni07EB;
 lastChange = "2019-09-06 15:22:35 +0000";
 layers = (
 {
+anchors = (
+{
+name = _Anchor2;
+position = "{0, 795}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -2796,6 +3373,12 @@ production = uni07EC;
 lastChange = "2019-09-06 15:22:35 +0000";
 layers = (
 {
+anchors = (
+{
+name = _Anchor2;
+position = "{0, 795}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -2852,6 +3435,12 @@ production = uni07ED;
 lastChange = "2019-09-06 15:22:35 +0000";
 layers = (
 {
+anchors = (
+{
+name = _Anchor2;
+position = "{0, 795}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -2886,6 +3475,12 @@ production = uni07EE;
 lastChange = "2019-09-06 15:22:35 +0000";
 layers = (
 {
+anchors = (
+{
+name = _Anchor2;
+position = "{0, 795}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -2925,6 +3520,12 @@ production = uni07EF;
 lastChange = "2019-09-06 15:22:35 +0000";
 layers = (
 {
+anchors = (
+{
+name = _Anchor2;
+position = "{0, 795}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -2957,6 +3558,12 @@ production = uni07F0;
 lastChange = "2019-09-06 15:22:35 +0000";
 layers = (
 {
+anchors = (
+{
+name = _Anchor2;
+position = "{0, 795}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -3007,6 +3614,12 @@ production = uni07F1;
 lastChange = "2019-09-06 15:22:35 +0000";
 layers = (
 {
+anchors = (
+{
+name = _Anchor2;
+position = "{0, 795}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -3039,6 +3652,12 @@ production = uni07F2;
 lastChange = "2019-09-06 15:22:29 +0000";
 layers = (
 {
+anchors = (
+{
+name = _Anchor4;
+position = "{0, -49}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -3073,6 +3692,12 @@ production = uni07F3;
 lastChange = "2019-09-06 15:22:35 +0000";
 layers = (
 {
+anchors = (
+{
+name = _Anchor2;
+position = "{0, 795}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -3530,6 +4155,20 @@ production = uni07CA.fina;
 lastChange = "2019-09-06 15:22:42 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{136, 795}";
+},
+{
+name = Anchor4;
+position = "{195, -49}";
+},
+{
+name = Anchor6;
+position = "{133, -49}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -3564,6 +4203,20 @@ production = uni07CA.medi;
 lastChange = "2019-09-06 15:22:42 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{136, 795}";
+},
+{
+name = Anchor4;
+position = "{136, -49}";
+},
+{
+name = Anchor6;
+position = "{162, -49}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -3622,6 +4275,16 @@ production = uni07CA.init;
 lastChange = "2019-09-06 15:22:42 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{136, 795}";
+},
+{
+name = Anchor4;
+position = "{78, -49}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -3665,6 +4328,20 @@ production = uni07CB.fina;
 lastChange = "2019-09-06 15:22:42 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{332, 649}";
+},
+{
+name = Anchor4;
+position = "{332, -49}";
+},
+{
+name = Anchor6;
+position = "{330, -49}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -3730,6 +4407,20 @@ production = uni07CB.medi;
 lastChange = "2019-09-06 15:22:42 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{332, 649}";
+},
+{
+name = Anchor4;
+position = "{332, -49}";
+},
+{
+name = Anchor6;
+position = "{330, -49}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -3807,6 +4498,16 @@ production = uni07CB.init;
 lastChange = "2019-09-06 15:22:42 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{332, 649}";
+},
+{
+name = Anchor4;
+position = "{332, -49}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -3869,6 +4570,20 @@ production = uni07CC.fina;
 lastChange = "2019-09-06 15:22:42 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{214, 795}";
+},
+{
+name = Anchor4;
+position = "{332, -49}";
+},
+{
+name = Anchor6;
+position = "{219, -49}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -3921,6 +4636,20 @@ production = uni07CC.medi;
 lastChange = "2019-09-06 15:22:42 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{214, 795}";
+},
+{
+name = Anchor4;
+position = "{219, -49}";
+},
+{
+name = Anchor6;
+position = "{218, -49}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -3997,6 +4726,16 @@ production = uni07CC.init;
 lastChange = "2019-09-06 15:22:42 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{214, 795}";
+},
+{
+name = Anchor4;
+position = "{219, -49}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -4058,6 +4797,20 @@ production = uni07CD.fina;
 lastChange = "2019-09-06 15:22:42 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{312, 649}";
+},
+{
+name = Anchor4;
+position = "{312, -49}";
+},
+{
+name = Anchor6;
+position = "{309, -49}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -4101,6 +4854,20 @@ production = uni07CD.medi;
 lastChange = "2019-09-06 15:22:42 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{312, 649}";
+},
+{
+name = Anchor4;
+position = "{312, -49}";
+},
+{
+name = Anchor6;
+position = "{309, -49}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -4156,6 +4923,20 @@ production = uni07CD.init;
 lastChange = "2019-09-06 15:22:42 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{312, 649}";
+},
+{
+name = Anchor4;
+position = "{312, -49}";
+},
+{
+name = Anchor6;
+position = "{309, -49}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -4202,6 +4983,20 @@ production = uni07CE.fina;
 lastChange = "2019-09-06 15:22:42 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{292, 649}";
+},
+{
+name = Anchor4;
+position = "{292, -49}";
+},
+{
+name = Anchor6;
+position = "{297, -49}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -4266,6 +5061,20 @@ production = uni07CE.medi;
 lastChange = "2019-09-06 15:22:42 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{292, 649}";
+},
+{
+name = Anchor4;
+position = "{292, -49}";
+},
+{
+name = Anchor6;
+position = "{297, -49}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -4363,6 +5172,16 @@ production = uni07CE.init;
 lastChange = "2019-09-06 15:22:42 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{297, 649}";
+},
+{
+name = Anchor4;
+position = "{297, -49}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -4445,6 +5264,20 @@ production = uni07CF.fina;
 lastChange = "2019-09-06 15:22:42 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{244, 649}";
+},
+{
+name = Anchor4;
+position = "{244, -49}";
+},
+{
+name = Anchor6;
+position = "{266, -49}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -4509,6 +5342,20 @@ production = uni07CF.medi;
 lastChange = "2019-09-06 15:22:42 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{244, 649}";
+},
+{
+name = Anchor4;
+position = "{244, -49}";
+},
+{
+name = Anchor6;
+position = "{272, -49}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -4576,6 +5423,16 @@ production = uni07CF.init;
 lastChange = "2019-09-06 15:22:42 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{239, 649}";
+},
+{
+name = Anchor4;
+position = "{239, -49}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -4628,6 +5485,20 @@ production = uni07D0.fina;
 lastChange = "2019-09-06 15:22:42 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{322, 795}";
+},
+{
+name = Anchor4;
+position = "{468, -49}";
+},
+{
+name = Anchor6;
+position = "{323, -49}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -4696,6 +5567,20 @@ production = uni07D0.medi;
 lastChange = "2019-09-06 15:22:42 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{322, 795}";
+},
+{
+name = Anchor4;
+position = "{322, -49}";
+},
+{
+name = Anchor6;
+position = "{328, -49}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -4788,6 +5673,16 @@ production = uni07D0.init;
 lastChange = "2019-09-06 15:22:42 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{323, 795}";
+},
+{
+name = Anchor4;
+position = "{323, -49}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -4865,6 +5760,20 @@ production = uni07D1.fina;
 lastChange = "2019-09-06 15:22:42 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{253, 795}";
+},
+{
+name = Anchor4;
+position = "{253, -49}";
+},
+{
+name = Anchor6;
+position = "{249, -49}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -4904,6 +5813,20 @@ production = uni07D1.medi;
 lastChange = "2019-09-06 15:22:42 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{253, 795}";
+},
+{
+name = Anchor4;
+position = "{253, -49}";
+},
+{
+name = Anchor6;
+position = "{254, -49}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -4946,6 +5869,16 @@ production = uni07D1.init;
 lastChange = "2019-09-06 15:22:42 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{253, 795}";
+},
+{
+name = Anchor4;
+position = "{254, -49}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -4988,6 +5921,20 @@ production = uni07D2.fina;
 lastChange = "2019-09-06 15:22:42 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{224, 795}";
+},
+{
+name = Anchor4;
+position = "{620, -49}";
+},
+{
+name = Anchor6;
+position = "{382, -49}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -5051,6 +5998,20 @@ production = uni07D2.medi;
 lastChange = "2019-09-06 15:22:42 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{224, 795}";
+},
+{
+name = Anchor4;
+position = "{292, -49}";
+},
+{
+name = Anchor6;
+position = "{342, -49}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -5138,6 +6099,16 @@ production = uni07D2.init;
 lastChange = "2019-09-06 15:22:42 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{224, 795}";
+},
+{
+name = Anchor4;
+position = "{292, -49}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -5210,6 +6181,20 @@ production = uni07D3.fina;
 lastChange = "2019-09-06 15:22:42 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{219, 795}";
+},
+{
+name = Anchor4;
+position = "{273, -49}";
+},
+{
+name = Anchor6;
+position = "{220, -49}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -5262,6 +6247,20 @@ production = uni07D3.medi;
 lastChange = "2019-09-06 15:22:42 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{219, 795}";
+},
+{
+name = Anchor4;
+position = "{146, -49}";
+},
+{
+name = Anchor6;
+position = "{209, -49}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -5338,6 +6337,16 @@ production = uni07D3.init;
 lastChange = "2019-09-06 15:22:42 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{219, 795}";
+},
+{
+name = Anchor4;
+position = "{133, -49}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -5399,6 +6408,20 @@ production = uni07D4.fina;
 lastChange = "2019-09-06 15:22:42 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{195, 795}";
+},
+{
+name = Anchor4;
+position = "{351, -49}";
+},
+{
+name = Anchor6;
+position = "{200, -49}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -5451,6 +6474,20 @@ production = uni07D4.medi;
 lastChange = "2019-09-06 15:22:42 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{195, 795}";
+},
+{
+name = Anchor4;
+position = "{156, -49}";
+},
+{
+name = Anchor6;
+position = "{212, -49}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -5527,6 +6564,16 @@ production = uni07D4.init;
 lastChange = "2019-09-06 15:22:42 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{195, 795}";
+},
+{
+name = Anchor4;
+position = "{163, -49}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -5588,6 +6635,20 @@ production = uni07D5.fina;
 lastChange = "2019-09-06 15:22:42 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{136, 795}";
+},
+{
+name = Anchor4;
+position = "{263, -49}";
+},
+{
+name = Anchor6;
+position = "{273, -49}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -5651,6 +6712,20 @@ production = uni07D5.medi;
 lastChange = "2019-09-06 15:22:42 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{136, 795}";
+},
+{
+name = Anchor4;
+position = "{263, -49}";
+},
+{
+name = Anchor6;
+position = "{273, -49}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -5717,6 +6792,16 @@ production = uni07D5.init;
 lastChange = "2019-09-06 15:22:42 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{136, 795}";
+},
+{
+name = Anchor4;
+position = "{263, -49}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -5768,6 +6853,20 @@ production = uni07D6.fina;
 lastChange = "2019-09-06 15:22:42 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{234, 795}";
+},
+{
+name = Anchor4;
+position = "{405, -49}";
+},
+{
+name = Anchor6;
+position = "{280, -49}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -5811,6 +6910,20 @@ production = uni07D6.medi;
 lastChange = "2019-09-06 15:22:42 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{234, 795}";
+},
+{
+name = Anchor4;
+position = "{327, -49}";
+},
+{
+name = Anchor6;
+position = "{238, -49}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -5878,6 +6991,16 @@ production = uni07D6.init;
 lastChange = "2019-09-06 15:22:42 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{234, 795}";
+},
+{
+name = Anchor4;
+position = "{189, -49}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -5930,6 +7053,20 @@ production = uni07D7.fina;
 lastChange = "2019-09-06 15:22:42 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{244, 795}";
+},
+{
+name = Anchor4;
+position = "{302, -49}";
+},
+{
+name = Anchor6;
+position = "{223, -49}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -5973,6 +7110,20 @@ production = uni07D7.medi;
 lastChange = "2019-09-06 15:22:42 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{244, 795}";
+},
+{
+name = Anchor4;
+position = "{239, -49}";
+},
+{
+name = Anchor6;
+position = "{214, -49}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -6040,6 +7191,16 @@ production = uni07D7.init;
 lastChange = "2019-09-06 15:22:42 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{244, 795}";
+},
+{
+name = Anchor4;
+position = "{139, -49}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -6092,6 +7253,20 @@ production = uni07D8.fina;
 lastChange = "2019-09-06 15:22:42 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{371, 649}";
+},
+{
+name = Anchor4;
+position = "{375, -49}";
+},
+{
+name = Anchor6;
+position = "{396, -49}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -6190,6 +7365,20 @@ production = uni07D8.medi;
 lastChange = "2019-09-06 15:22:42 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{371, 649}";
+},
+{
+name = Anchor4;
+position = "{375, -49}";
+},
+{
+name = Anchor6;
+position = "{396, -49}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -6288,6 +7477,16 @@ production = uni07D8.init;
 lastChange = "2019-09-06 15:22:42 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{371, 649}";
+},
+{
+name = Anchor4;
+position = "{375, -49}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -6371,6 +7570,20 @@ production = uni07D9.fina;
 lastChange = "2019-09-06 15:22:42 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{195, 795}";
+},
+{
+name = Anchor4;
+position = "{283, -49}";
+},
+{
+name = Anchor6;
+position = "{206, -49}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -6414,6 +7627,20 @@ production = uni07D9.medi;
 lastChange = "2019-09-06 15:22:42 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{195, 795}";
+},
+{
+name = Anchor4;
+position = "{195, -49}";
+},
+{
+name = Anchor6;
+position = "{215, -49}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -6481,6 +7708,16 @@ production = uni07D9.init;
 lastChange = "2019-09-06 15:22:42 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{195, 795}";
+},
+{
+name = Anchor4;
+position = "{176, -49}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -6533,6 +7770,20 @@ production = uni07DA.fina;
 lastChange = "2019-09-06 15:22:42 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{322, 795}";
+},
+{
+name = Anchor4;
+position = "{341, -49}";
+},
+{
+name = Anchor6;
+position = "{325, -49}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -6618,6 +7869,20 @@ production = uni07DA.medi;
 lastChange = "2019-09-06 15:22:42 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{322, 795}";
+},
+{
+name = Anchor4;
+position = "{341, -49}";
+},
+{
+name = Anchor6;
+position = "{325, -49}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -6736,6 +8001,16 @@ production = uni07DA.init;
 lastChange = "2019-09-06 15:22:42 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{322, 795}";
+},
+{
+name = Anchor4;
+position = "{325, -49}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -6839,6 +8114,20 @@ production = uni07DB.fina;
 lastChange = "2019-09-06 15:22:42 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{351, 649}";
+},
+{
+name = Anchor4;
+position = "{351, -49}";
+},
+{
+name = Anchor6;
+position = "{354, -49}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -6923,6 +8212,20 @@ production = uni07DB.medi;
 lastChange = "2019-09-06 15:22:42 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{351, 649}";
+},
+{
+name = Anchor4;
+position = "{351, -49}";
+},
+{
+name = Anchor6;
+position = "{354, -49}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -7007,6 +8310,16 @@ production = uni07DB.init;
 lastChange = "2019-09-06 15:22:42 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{351, 649}";
+},
+{
+name = Anchor4;
+position = "{354, -49}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -7076,6 +8389,20 @@ production = uni07DC.fina;
 lastChange = "2019-09-06 15:22:42 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{292, 795}";
+},
+{
+name = Anchor4;
+position = "{429, -49}";
+},
+{
+name = Anchor6;
+position = "{288, -49}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -7130,6 +8457,20 @@ production = uni07DC.medi;
 lastChange = "2019-09-06 15:22:42 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{292, 795}";
+},
+{
+name = Anchor4;
+position = "{292, -49}";
+},
+{
+name = Anchor6;
+position = "{288, -49}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -7208,6 +8549,16 @@ production = uni07DC.init;
 lastChange = "2019-09-06 15:22:42 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{292, 795}";
+},
+{
+name = Anchor4;
+position = "{288, -49}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -7271,6 +8622,20 @@ production = uni07DD.fina;
 lastChange = "2019-09-06 15:22:42 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{371, 795}";
+},
+{
+name = Anchor4;
+position = "{405, -49}";
+},
+{
+name = Anchor6;
+position = "{386, -49}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -7365,6 +8730,20 @@ production = uni07DD.medi;
 lastChange = "2019-09-06 15:22:42 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{371, 795}";
+},
+{
+name = Anchor4;
+position = "{405, -49}";
+},
+{
+name = Anchor6;
+position = "{386, -49}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -7462,6 +8841,16 @@ production = uni07DD.init;
 lastChange = "2019-09-06 15:22:42 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{371, 795}";
+},
+{
+name = Anchor4;
+position = "{269, -49}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -7544,6 +8933,20 @@ production = uni07DE.fina;
 lastChange = "2019-09-06 15:22:42 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{263, 795}";
+},
+{
+name = Anchor4;
+position = "{468, -49}";
+},
+{
+name = Anchor6;
+position = "{267, -49}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -7596,6 +8999,20 @@ production = uni07DE.medi;
 lastChange = "2019-09-06 15:22:42 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{263, 795}";
+},
+{
+name = Anchor4;
+position = "{219, -49}";
+},
+{
+name = Anchor6;
+position = "{272, -49}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -7672,6 +9089,16 @@ production = uni07DE.init;
 lastChange = "2019-09-06 15:22:42 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{263, 795}";
+},
+{
+name = Anchor4;
+position = "{229, -49}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -7733,6 +9160,20 @@ production = uni07DF.fina;
 lastChange = "2019-09-06 15:22:42 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{214, 795}";
+},
+{
+name = Anchor4;
+position = "{463, -49}";
+},
+{
+name = Anchor6;
+position = "{293, -49}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -7787,6 +9228,20 @@ production = uni07DF.medi;
 lastChange = "2019-09-06 15:22:42 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{214, 795}";
+},
+{
+name = Anchor4;
+position = "{346, -49}";
+},
+{
+name = Anchor6;
+position = "{293, -49}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -7865,6 +9320,16 @@ production = uni07DF.init;
 lastChange = "2019-09-06 15:22:42 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{214, 795}";
+},
+{
+name = Anchor4;
+position = "{217, -49}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -7928,6 +9393,20 @@ production = uni07E0.fina;
 lastChange = "2019-09-06 15:22:42 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{263, 795}";
+},
+{
+name = Anchor4;
+position = "{380, -49}";
+},
+{
+name = Anchor6;
+position = "{261, -49}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -7971,6 +9450,20 @@ production = uni07E0.medi;
 lastChange = "2019-09-06 15:22:42 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{263, 795}";
+},
+{
+name = Anchor4;
+position = "{258, -49}";
+},
+{
+name = Anchor6;
+position = "{261, -49}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -8038,6 +9531,16 @@ production = uni07E0.init;
 lastChange = "2019-09-06 15:22:42 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{263, 795}";
+},
+{
+name = Anchor4;
+position = "{231, -49}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -8090,6 +9593,20 @@ production = uni07E1.fina;
 lastChange = "2019-09-06 15:22:42 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{283, 795}";
+},
+{
+name = Anchor4;
+position = "{283, -49}";
+},
+{
+name = Anchor6;
+position = "{288, -49}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -8144,6 +9661,20 @@ production = uni07E1.medi;
 lastChange = "2019-09-06 15:22:42 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{283, 795}";
+},
+{
+name = Anchor4;
+position = "{283, -49}";
+},
+{
+name = Anchor6;
+position = "{288, -49}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -8187,6 +9718,16 @@ production = uni07E1.init;
 lastChange = "2019-09-06 15:22:42 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{283, 795}";
+},
+{
+name = Anchor4;
+position = "{283, -49}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -8244,6 +9785,20 @@ production = uni07E2.fina;
 lastChange = "2019-09-06 15:22:42 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{253, 795}";
+},
+{
+name = Anchor4;
+position = "{280, -49}";
+},
+{
+name = Anchor6;
+position = "{280, -49}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -8330,6 +9885,20 @@ production = uni07E2.medi;
 lastChange = "2019-09-06 15:22:42 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{253, 795}";
+},
+{
+name = Anchor4;
+position = "{283, -49}";
+},
+{
+name = Anchor6;
+position = "{280, -49}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -8440,6 +10009,16 @@ production = uni07E2.init;
 lastChange = "2019-09-06 15:22:42 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{253, 795}";
+},
+{
+name = Anchor4;
+position = "{260, -49}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -8535,6 +10114,20 @@ production = uni07E3.fina;
 lastChange = "2019-09-06 15:22:42 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{263, 795}";
+},
+{
+name = Anchor4;
+position = "{267, -49}";
+},
+{
+name = Anchor6;
+position = "{267, -49}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -8586,6 +10179,20 @@ production = uni07E3.medi;
 lastChange = "2019-09-06 15:22:42 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{263, 795}";
+},
+{
+name = Anchor4;
+position = "{239, -49}";
+},
+{
+name = Anchor6;
+position = "{267, -49}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -8661,6 +10268,16 @@ production = uni07E3.init;
 lastChange = "2019-09-06 15:22:42 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{263, 795}";
+},
+{
+name = Anchor4;
+position = "{239, -49}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -8721,6 +10338,20 @@ production = uni07E4.fina;
 lastChange = "2019-09-06 15:22:42 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{263, 795}";
+},
+{
+name = Anchor4;
+position = "{267, -49}";
+},
+{
+name = Anchor6;
+position = "{267, -49}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -8773,6 +10404,20 @@ production = uni07E4.medi;
 lastChange = "2019-09-06 15:22:42 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{263, 795}";
+},
+{
+name = Anchor4;
+position = "{234, -49}";
+},
+{
+name = Anchor6;
+position = "{275, -49}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -8849,6 +10494,16 @@ production = uni07E4.init;
 lastChange = "2019-09-06 15:22:42 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{263, 795}";
+},
+{
+name = Anchor4;
+position = "{234, -49}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -8910,6 +10565,20 @@ production = uni07E5.fina;
 lastChange = "2019-09-06 15:22:42 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{263, 795}";
+},
+{
+name = Anchor4;
+position = "{268, -49}";
+},
+{
+name = Anchor6;
+position = "{266, -49}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -8994,6 +10663,20 @@ production = uni07E5.medi;
 lastChange = "2019-09-06 15:22:42 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{263, 795}";
+},
+{
+name = Anchor4;
+position = "{268, -49}";
+},
+{
+name = Anchor6;
+position = "{269, -49}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -9078,6 +10761,16 @@ production = uni07E5.init;
 lastChange = "2019-09-06 15:22:42 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{263, 795}";
+},
+{
+name = Anchor4;
+position = "{263, -49}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -9147,6 +10840,20 @@ production = uni07E6.fina;
 lastChange = "2019-09-06 15:22:42 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{263, 795}";
+},
+{
+name = Anchor4;
+position = "{261, -49}";
+},
+{
+name = Anchor6;
+position = "{271, -49}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -9224,6 +10931,20 @@ production = uni07E6.medi;
 lastChange = "2019-09-06 15:22:42 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{263, 795}";
+},
+{
+name = Anchor4;
+position = "{263, -49}";
+},
+{
+name = Anchor6;
+position = "{271, -49}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -9325,6 +11046,16 @@ production = uni07E6.init;
 lastChange = "2019-09-06 15:22:42 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{263, 795}";
+},
+{
+name = Anchor4;
+position = "{241, -49}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -9411,6 +11142,20 @@ production = uni07E7.fina;
 lastChange = "2019-09-06 15:22:42 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{263, 795}";
+},
+{
+name = Anchor4;
+position = "{265, -49}";
+},
+{
+name = Anchor6;
+position = "{271, -49}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -9497,6 +11242,20 @@ production = uni07E7.medi;
 lastChange = "2019-09-06 15:22:42 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{263, 795}";
+},
+{
+name = Anchor4;
+position = "{268, -49}";
+},
+{
+name = Anchor6;
+position = "{268, -49}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -9607,6 +11366,16 @@ production = uni07E7.init;
 lastChange = "2019-09-06 15:22:42 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{263, 795}";
+},
+{
+name = Anchor4;
+position = "{245, -49}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -9702,6 +11471,20 @@ production = uni07E8.fina;
 lastChange = "2019-09-06 15:22:42 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{292, 454}";
+},
+{
+name = Anchor4;
+position = "{214, -303}";
+},
+{
+name = Anchor6;
+position = "{286, -49}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -9764,6 +11547,20 @@ production = uni07E8.medi;
 lastChange = "2019-09-06 15:22:42 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{292, 454}";
+},
+{
+name = Anchor4;
+position = "{214, -303}";
+},
+{
+name = Anchor6;
+position = "{284, -49}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -9841,6 +11638,16 @@ production = uni07E8.init;
 lastChange = "2019-09-06 15:22:42 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{292, 454}";
+},
+{
+name = Anchor4;
+position = "{214, -303}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -9903,6 +11710,20 @@ production = uni07E9.fina;
 lastChange = "2019-09-06 15:22:42 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{292, 454}";
+},
+{
+name = Anchor4;
+position = "{214, -303}";
+},
+{
+name = Anchor6;
+position = "{286, -49}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -9977,6 +11798,20 @@ production = uni07E9.medi;
 lastChange = "2019-09-06 15:22:42 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{292, 454}";
+},
+{
+name = Anchor4;
+position = "{214, -303}";
+},
+{
+name = Anchor6;
+position = "{279, -49}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -10063,6 +11898,16 @@ production = uni07E9.init;
 lastChange = "2019-09-06 15:22:42 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{292, 454}";
+},
+{
+name = Anchor4;
+position = "{214, -303}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -10134,6 +11979,20 @@ production = uni07EA.fina;
 lastChange = "2019-09-06 15:22:42 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{195, 454}";
+},
+{
+name = Anchor4;
+position = "{195, -303}";
+},
+{
+name = Anchor6;
+position = "{188, -49}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -10168,6 +12027,20 @@ production = uni07EA.medi;
 lastChange = "2019-09-06 15:22:42 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{195, 454}";
+},
+{
+name = Anchor4;
+position = "{195, -303}";
+},
+{
+name = Anchor6;
+position = "{215, -49}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -10205,6 +12078,16 @@ production = uni07EA.init;
 lastChange = "2019-09-06 15:22:42 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{195, 454}";
+},
+{
+name = Anchor4;
+position = "{195, -303}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -10306,6 +12189,20 @@ production = uni25CC;
 lastChange = "2019-09-06 15:22:42 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{297, 645}";
+},
+{
+name = Anchor4;
+position = "{297, -49}";
+},
+{
+name = Anchor6;
+position = "{297, -49}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -10902,6 +12799,12 @@ production = uni07FD;
 lastChange = "2019-09-06 15:22:32 +0000";
 layers = (
 {
+anchors = (
+{
+name = _Anchor6;
+position = "{0, -49}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -10938,7 +12841,7 @@ width = 0;
 unicode = 07FD;
 script = "";
 category = Mark;
-subCategory = Other;
+subCategory = Nonspacing;
 },
 {
 glyphname = uni07FE;
@@ -11029,6 +12932,16 @@ production = uni07FF;
 lastChange = "2019-09-06 15:22:42 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor2;
+position = "{136, 795}";
+},
+{
+name = Anchor4;
+position = "{263, -49}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -11087,6 +13000,12 @@ production = uni07FD.narrow;
 lastChange = "2019-09-06 15:22:32 +0000";
 layers = (
 {
+anchors = (
+{
+name = _Anchor6;
+position = "{0, -49}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -11122,7 +13041,7 @@ width = 0;
 );
 script = "";
 category = Mark;
-subCategory = Other;
+subCategory = Nonspacing;
 },
 {
 glyphname = uni07FD.wide;
@@ -11130,6 +13049,12 @@ production = uni07FD.wide;
 lastChange = "2019-09-06 15:22:32 +0000";
 layers = (
 {
+anchors = (
+{
+name = _Anchor6;
+position = "{0, -49}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -11165,7 +13090,7 @@ width = 0;
 );
 script = "";
 category = Mark;
-subCategory = Other;
+subCategory = Nonspacing;
 },
 {
 glyphname = uni07FD.wideopen;
@@ -11173,6 +13098,12 @@ production = uni07FD.wideopen;
 lastChange = "2019-09-06 15:22:32 +0000";
 layers = (
 {
+anchors = (
+{
+name = _Anchor6;
+position = "{0, -49}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -11203,7 +13134,7 @@ width = 0;
 );
 script = "";
 category = Mark;
-subCategory = Other;
+subCategory = Nonspacing;
 },
 {
 glyphname = uni07FD.wider;
@@ -11211,6 +13142,12 @@ production = uni07FD.wider;
 lastChange = "2019-09-06 15:22:32 +0000";
 layers = (
 {
+anchors = (
+{
+name = _Anchor6;
+position = "{0, -49}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -11246,7 +13183,7 @@ width = 0;
 );
 script = "";
 category = Mark;
-subCategory = Other;
+subCategory = Nonspacing;
 },
 {
 glyphname = uni07FD.widest;
@@ -11254,6 +13191,12 @@ production = uni07FD.widest;
 lastChange = "2019-09-06 15:22:32 +0000";
 layers = (
 {
+anchors = (
+{
+name = _Anchor6;
+position = "{0, -49}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -11289,16 +13232,12 @@ width = 0;
 );
 script = "";
 category = Mark;
-subCategory = Other;
+subCategory = Nonspacing;
 }
 );
 instances = (
 {
 customParameters = (
-{
-name = weightClass;
-value = 400;
-},
 {
 name = panose;
 value = (
