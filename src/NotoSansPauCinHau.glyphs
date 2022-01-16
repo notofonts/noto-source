@@ -1,6 +1,6 @@
 {
-.appVersion = "1060";
-copyright = "Copyright 2017 Google Inc. All Rights Reserved.";
+.appVersion = "3109";
+copyright = "Copyright 2017-2022 Google Inc. All Rights Reserved.";
 customParameters = (
 {
 name = unicodeRanges;
@@ -79,6 +79,21 @@ u11AF8
 );
 },
 {
+name = "Has WWS Names";
+value = 1;
+},
+{
+name = fsType;
+value = (
+);
+},
+{
+name = codePageRanges;
+value = (
+1252
+);
+},
+{
 name = description;
 value = "Designed by Monotype design team.";
 },
@@ -99,23 +114,8 @@ name = trademark;
 value = "Noto is a trademark of Google Inc.";
 },
 {
-name = "Has WWS Names";
-value = 1;
-},
-{
 name = versionString;
 value = "Version 2.000";
-},
-{
-name = fsType;
-value = (
-);
-},
-{
-name = codePageRanges;
-value = (
-1252
-);
 }
 );
 date = "2017-11-03 15:08:16 +0000";
@@ -249,7 +249,7 @@ nodes = (
 width = 600;
 }
 );
-note = .notdef;
+note = ".notdef";
 },
 {
 glyphname = NULL;
@@ -2948,10 +2948,6 @@ name = xHeight;
 value = "536";
 },
 {
-name = weightClass;
-value = 400;
-},
-{
 name = preferredFamilyName;
 value = "Noto Sans Pau Cin Hau";
 }
@@ -3424,5 +3420,5 @@ manufacturer = "Monotype Imaging Inc.";
 manufacturerURL = "http://www.google.com/get/noto/";
 unitsPerEm = 1000;
 versionMajor = 2;
-versionMinor = 0;
+versionMinor = 1;
 }
