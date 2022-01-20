@@ -1,6 +1,20 @@
 {
-.appVersion = "1075";
-copyright = "Copyright 2018 Google Inc. All Rights Reserved.";
+.appVersion = "3109";
+classes = (
+{
+code = "u10BA9 u10BA9.fina u10BAA u10BAA.fina u10BAB u10BAB.fina u10BAC u10BAC.fina";
+name = class1;
+},
+{
+code = "u10B81 u10B82.init u10B82.medi u10B83 u10B84 u10B85 u10B86.init u10B86.medi u10B87.init u10B87.medi u10B88.init u10B88.medi u10B89 u10B8A.init u10B8A.medi u10B8B.init u10B8B.medi u10B8C u10B8D.init u10B8D.medi u10B8E u10B8F u10B90.init u10B90.medi u10B91 u10BA9 u10BA9.alt u10BAA u10BAA.alt u10BAB u10BAB.alt u10BAC u10BAC.alt u10BAD.init u10BAD.medi u10BAE.init u10BAE.medi";
+name = class2;
+},
+{
+code = "u10B81.fina u10B82.fina u10B83.fina u10B84.fina u10B85.fina u10B86.fina u10B87.fina u10B88.fina u10B89.fina u10B8A.fina u10B8B.fina u10B8C.fina u10B8D.fina u10B8E.fina u10B8F.fina u10B90.fina u10B91.fina u10BA9.alt.fina u10BA9.fina u10BAA.alt.fina u10BAA.fina u10BAB.alt.fina u10BAB.fina u10BAC.alt.fina u10BAC.fina u10BAD.fina u10BAE.fina u10BAF";
+name = class4;
+}
+);
+copyright = "Copyright 2018-2021 Google Inc. All Rights Reserved.";
 customParameters = (
 {
 name = glyphOrder;
@@ -106,6 +120,32 @@ u10B8F_alt2.fina
 );
 },
 {
+name = unicodeRanges;
+value = (
+0,
+1,
+13,
+31,
+45,
+57
+);
+},
+{
+name = "Has WWS Names";
+value = 1;
+},
+{
+name = fsType;
+value = (
+);
+},
+{
+name = codePageRanges;
+value = (
+1252
+);
+},
+{
 name = description;
 value = "Designed by Monotype design team.";
 },
@@ -122,38 +162,12 @@ name = vendorID;
 value = GOOG;
 },
 {
-name = unicodeRanges;
-value = (
-0,
-1,
-13,
-31,
-45,
-57
-);
-},
-{
 name = trademark;
 value = "Noto is a trademark of Google Inc.";
 },
 {
-name = "Has WWS Names";
-value = 1;
-},
-{
 name = versionString;
-value = "Version 2.000";
-},
-{
-name = fsType;
-value = (
-);
-},
-{
-name = codePageRanges;
-value = (
-"1252"
-);
+value = "Version 2.001";
 }
 );
 date = "2012-12-20 12:54:16 +0000";
@@ -162,6 +176,77 @@ designerURL = "http://www.monotype.com/studio";
 disablesAutomaticAlignment = 1;
 disablesNiceNames = 1;
 familyName = "Noto Sans Psalter Pahlavi";
+featurePrefixes = (
+{
+code = "lookup SingleSubstitution5 {\012    lookupflag 0;\012    ;\012    # Original source: 4 \012    sub u10B89 by u10B89_alt2;\012    sub u10B8C by u10B8C_alt2;\012    sub u10B8F by u10B8F_alt2;\012    sub u10B89.fina by u10B89_alt2.fina;\012    sub u10B8C.fina by u10B8C_alt2.fina;\012    sub u10B8F.fina by u10B8F_alt2.fina;\012} SingleSubstitution5;\012";
+name = SingleSubstitution5;
+},
+{
+code = "lookup SingleSubstitution8 {\012    lookupflag 0;\012    ;\012    # Original source: 7 \012    sub u10BA9 by u10BA9.alt;\012    sub u10BAA by u10BAA.alt;\012    sub u10BAB by u10BAB.alt;\012    sub u10BAC by u10BAC.alt;\012} SingleSubstitution8;\012";
+name = SingleSubstitution8;
+},
+{
+code = "lookup SingleSubstitution7 {\012    lookupflag 0;\012    ;\012    # Original source: 6 \012    sub u10BA9.fina by u10BA9.alt.fina;\012    sub u10BA9 by u10BA9.alt.fina;\012    sub u10BAA by u10BAA.alt.fina;\012    sub u10BAB by u10BAB.alt.fina;\012    sub u10BAC by u10BAC.alt.fina;\012    sub u10BAA.fina by u10BAA.alt.fina;\012    sub u10BAB.fina by u10BAB.alt.fina;\012    sub u10BAC.fina by u10BAC.alt.fina;\012} SingleSubstitution7;\012";
+name = SingleSubstitution7;
+},
+{
+code = "lookup SinglePositioning3 {\012    lookupflag 0;\012    ;\012    # Original source: 2 \012    pos u10B84 <0 75 -310 0>;\012    pos u10B85 <50 75 0 0>;\012    pos u10B89_alt2 -150;\012} SinglePositioning3;\012";
+name = SinglePositioning3;
+},
+{
+code = "lookup SinglePositioning2 {\012    pos u10B81 140;\012    pos u10B83 140;\012    pos u10B8B 190;\012    pos u10B8B.init 190;\012    pos u10B89_alt2 -100;\012} SinglePositioning2;\012";
+name = SinglePositioning2;
+},
+{
+code = "lookup SinglePositioning4 {\012    pos u10B81 60;\012    pos u10B83 60;\012    pos u10B84 -275;\012    pos u10B85 -150;\012    pos u10B8B 100;\012    pos u10B8B.init 100;\012} SinglePositioning4;\012";
+name = SinglePositioning4;
+},
+{
+code = "lookup SinglePositioning5 {\012    pos u10B84 <0 75 -275 0>;\012    pos u10B85 <50 75 -100 0>;\012} SinglePositioning5;\012";
+name = SinglePositioning5;
+},
+{
+code = "lookup SinglePositioning6 {\012    pos u10B84 -360;\012    pos u10B85 -50;\012    pos u10B89_alt2 -150;\012} SinglePositioning6;\012";
+name = SinglePositioning6;
+},
+{
+code = "";
+name = ChainedContextualGPOS1;
+},
+{
+code = "languagesystem phlp dflt;\012languagesystem arab dflt;\012";
+name = Languagesystems;
+}
+);
+features = (
+{
+code = "\012sub [u10B81 u10B83 u10B81.fina u10B83.fina] [u10B89 u10B8C u10B89.fina u10B8C.fina u10B8F u10B8F.fina]' by [u10B89_alt2 u10B8C_alt2 u10B8C_alt2.fina u10B89_alt2.fina u10B8F_alt2 u10B8F_alt2.fina];\012sub [u10B8B u10B8B.medi u10B8B.init] [u10B89 u10B8C u10B89.fina u10B8C.fina]' by [u10B89_alt2 u10B8C_alt2 u10B89_alt2.fina u10B8C_alt2.fina];";
+name = calt;
+},
+{
+automatic = 1;
+code = "sub u10B80 by u10B80.fina;\012sub u10B81 by u10B81.fina;\012sub u10B82 by u10B82.fina;\012sub u10B83 by u10B83.fina;\012sub u10B84 by u10B84.fina;\012sub u10B85 by u10B85.fina;\012sub u10B86 by u10B86.fina;\012sub u10B87 by u10B87.fina;\012sub u10B88 by u10B88.fina;\012sub u10B89 by u10B89.fina;\012sub u10B8A by u10B8A.fina;\012sub u10B8B by u10B8B.fina;\012sub u10B8C by u10B8C.fina;\012sub u10B8D by u10B8D.fina;\012sub u10B8E by u10B8E.fina;\012sub u10B8F by u10B8F.fina;\012sub u10B90 by u10B90.fina;\012sub u10B91 by u10B91.fina;\012sub u10BA9 by u10BA9.fina;\012sub u10BA9.alt by u10BA9.alt.fina;\012sub u10BAA by u10BAA.fina;\012sub u10BAA.alt by u10BAA.alt.fina;\012sub u10BAB by u10BAB.fina;\012sub u10BAB.alt by u10BAB.alt.fina;\012sub u10BAC by u10BAC.fina;\012sub u10BAC.alt by u10BAC.alt.fina;\012sub u10BAD by u10BAD.fina;\012sub u10BAE by u10BAE.fina;\012sub u10B89_alt2 by u10B89_alt2.fina;\012sub u10B8C_alt2 by u10B8C_alt2.fina;\012sub u10B8F_alt2 by u10B8F_alt2.fina;\012";
+name = fina;
+},
+{
+automatic = 1;
+code = "sub u10B80 by u10B80.init;\012sub u10B82 by u10B82.init;\012sub u10B86 by u10B86.init;\012sub u10B87 by u10B87.init;\012sub u10B88 by u10B88.init;\012sub u10B8A by u10B8A.init;\012sub u10B8B by u10B8B.init;\012sub u10B8D by u10B8D.init;\012sub u10B90 by u10B90.init;\012sub u10BAD by u10BAD.init;\012sub u10BAE by u10BAE.init;\012";
+name = init;
+},
+{
+automatic = 1;
+code = "sub u10B80 by u10B80.medi;\012sub u10B82 by u10B82.medi;\012sub u10B86 by u10B86.medi;\012sub u10B87 by u10B87.medi;\012sub u10B88 by u10B88.medi;\012sub u10B8A by u10B8A.medi;\012sub u10B8B by u10B8B.medi;\012sub u10B8D by u10B8D.medi;\012sub u10B90 by u10B90.medi;\012sub u10BAD by u10BAD.medi;\012sub u10BAE by u10BAE.medi;\012";
+name = medi;
+},
+{
+code = "    sub @class2 @class1' lookup SingleSubstitution7 [u10BA9 u10BAA u10BAB u10BAC];\012    sub @class4 [u10BA9 u10BAA u10BAB u10BAC]' [u10BA9 u10BAA u10BAB u10BAC] by [u10BA9.alt u10BAA.alt u10BAB.alt u10BAC.alt];\012    sub [u10BA9 u10BAA u10BAB u10BAC]' [u10BA9 u10BAA u10BAB u10BAC]  by [u10BA9.alt u10BAA.alt u10BAB.alt u10BAC.alt];";
+name = rclt;
+},
+{
+code = "# Automatic Code Start\012pos uni00A0 1; # Seriously?\012pos u10B81 [u10B81 u10B83 u10B8B u10B8B.init]' lookup SinglePositioning2;\012pos u10B81.fina [u10B81 u10B83 u10B8B u10B8B.init]' lookup SinglePositioning2;\012pos u10B83 [u10B81 u10B83 u10B8B u10B8B.init]' lookup SinglePositioning4;\012pos u10B83.fina [u10B81 u10B83 u10B8B u10B8B.init]' lookup SinglePositioning4;\012pos u10B81 [u10B84 u10B85]' lookup SinglePositioning3;\012pos u10B81.fina [u10B84 u10B85]' lookup SinglePositioning6;\012pos u10B83 [u10B84 u10B85]' lookup SinglePositioning5;\012pos u10B83.fina [u10B84 u10B85]' lookup SinglePositioning4;\012pos u10B81 u10B89_alt2' lookup SinglePositioning2;\012pos u10B81.fina u10B89_alt2' lookup SinglePositioning2;\012pos u10B83 u10B89_alt2' lookup SinglePositioning3;\012pos u10B83.fina u10B89_alt2' lookup SinglePositioning3;\012pos u10B89 <NULL> u10B8C 80;\012pos u10B8C <NULL> u10B8C 60;\012pos u10B8F <NULL> u10B8C 80;\012pos u10B89.fina <NULL> u10B8C 60;\012pos u10B8C.fina <NULL> u10B8C 80;\012pos u10B8F.fina <NULL> u10B8C 80;\012";
+name = kern;
+}
+);
 fontMaster = (
 {
 alignmentZones = (
@@ -8048,22 +8133,18 @@ instances = (
 {
 customParameters = (
 {
-name = weightClass;
-value = "400";
-},
-{
 name = panose;
 value = (
-"2",
-"11",
-"5",
-"2",
-"4",
-"5",
-"4",
-"2",
-"2",
-"4"
+2,
+11,
+5,
+2,
+4,
+5,
+4,
+2,
+2,
+4
 );
 },
 {
@@ -8085,5 +8166,5 @@ manufacturer = "Monotype Imaging Inc.";
 manufacturerURL = "http://www.google.com/get/noto/";
 unitsPerEm = 1000;
 versionMajor = 2;
-versionMinor = 0;
+versionMinor = 1;
 }
