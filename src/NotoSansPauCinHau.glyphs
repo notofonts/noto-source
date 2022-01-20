@@ -1,6 +1,6 @@
 {
-.appVersion = "1060";
-copyright = "Copyright 2017 Google Inc. All Rights Reserved.";
+.appVersion = "3109";
+copyright = "Copyright 2017-2022 Google Inc. All Rights Reserved.";
 customParameters = (
 {
 name = unicodeRanges;
@@ -79,6 +79,21 @@ u11AF8
 );
 },
 {
+name = "Has WWS Names";
+value = 1;
+},
+{
+name = fsType;
+value = (
+);
+},
+{
+name = codePageRanges;
+value = (
+1252
+);
+},
+{
 name = description;
 value = "Designed by Monotype design team.";
 },
@@ -99,23 +114,8 @@ name = trademark;
 value = "Noto is a trademark of Google Inc.";
 },
 {
-name = "Has WWS Names";
-value = 1;
-},
-{
 name = versionString;
 value = "Version 2.000";
-},
-{
-name = fsType;
-value = (
-);
-},
-{
-name = codePageRanges;
-value = (
-"1252"
-);
 }
 );
 date = "2017-11-03 15:08:16 +0000";
@@ -124,6 +124,18 @@ designerURL = "http://www.monotype.com/studio";
 disablesAutomaticAlignment = 1;
 disablesNiceNames = 1;
 familyName = "Noto Sans PauCinHau";
+featurePrefixes = (
+{
+code = "";
+name = Languagesystems;
+}
+);
+features = (
+{
+code = "# Automatic Code Start\012";
+name = kern;
+}
+);
 fontMaster = (
 {
 alignmentZones = (
@@ -179,16 +191,16 @@ value = 50;
 {
 name = panose;
 value = (
-"2",
-"11",
-"5",
-"2",
-"4",
-"5",
-"4",
-"2",
-"2",
-"4"
+2,
+11,
+5,
+2,
+4,
+5,
+4,
+2,
+2,
+4
 );
 }
 );
@@ -237,7 +249,7 @@ nodes = (
 width = 600;
 }
 );
-note = .notdef;
+note = ".notdef";
 },
 {
 glyphname = NULL;
@@ -2919,25 +2931,21 @@ value = 0;
 {
 name = panose;
 value = (
-"2",
-"11",
-"5",
-"2",
-"4",
-"5",
-"4",
-"2",
-"2",
-"4"
+2,
+11,
+5,
+2,
+4,
+5,
+4,
+2,
+2,
+4
 );
 },
 {
 name = xHeight;
 value = "536";
-},
-{
-name = weightClass;
-value = "400";
 },
 {
 name = preferredFamilyName;
@@ -2950,9 +2958,467 @@ instanceInterpolations = {
 name = Regular;
 }
 );
+kerning = {
+"7C5BF59D-7654-4B4F-ABB3-02620379C849" = {
+u11AC0 = {
+u11AD5 = -10;
+u11AD7 = -20;
+u11AD8 = -10;
+u11ADB = -10;
+};
+u11AC1 = {
+u11AD5 = -30;
+u11AD6 = -20;
+u11AD8 = -40;
+u11AD9 = -10;
+u11ADB = -40;
+u11AEF = -80;
+u11AF0 = -80;
+};
+u11AC2 = {
+u11AD6 = -10;
+u11AD9 = -20;
+};
+u11AC3 = {
+u11AD5 = -30;
+u11AD6 = -20;
+u11AD8 = -40;
+u11AD9 = -10;
+u11ADB = -40;
+u11AEF = -80;
+u11AF0 = -80;
+};
+u11AC4 = {
+u11AD5 = -10;
+u11AD6 = -10;
+u11AD8 = -20;
+u11AD9 = -10;
+u11ADB = -20;
+};
+u11AC5 = {
+u11AD5 = -30;
+u11AD6 = -30;
+u11AD8 = -50;
+u11AD9 = -30;
+u11ADB = -50;
+};
+u11AC6 = {
+u11AD5 = -20;
+u11AD8 = 20;
+u11ADB = 20;
+};
+u11AC7 = {
+u11AD5 = -10;
+u11AD6 = -20;
+u11AD7 = 10;
+u11AD8 = -10;
+u11AD9 = -20;
+u11ADB = -10;
+};
+u11AC8 = {
+u11AD5 = -30;
+u11AD6 = -20;
+u11AD8 = -40;
+u11AD9 = -10;
+u11ADB = -40;
+u11AEF = -80;
+u11AF0 = -80;
+};
+u11AC9 = {
+u11AD5 = 30;
+u11AD6 = -20;
+u11AD8 = -80;
+u11AD9 = -110;
+u11ADB = -80;
+};
+u11ACA = {
+u11AD6 = -30;
+u11AD7 = -30;
+u11AD9 = -20;
+};
+u11ACB = {
+u11AD5 = -20;
+u11AD6 = -10;
+u11AD8 = -10;
+u11ADB = -10;
+};
+u11ACC = {
+u11AD6 = -10;
+};
+u11ACD = {
+u11AD5 = -20;
+u11AD6 = -30;
+u11AD8 = -40;
+u11ADA = -10;
+u11ADB = -40;
+};
+u11ACE = {
+u11AD5 = -60;
+u11AD6 = -10;
+u11AD7 = -60;
+u11AD8 = 20;
+u11ADA = -50;
+u11ADB = 20;
+};
+u11ACF = {
+u11AD8 = -20;
+u11ADB = -20;
+};
+u11AD0 = {
+u11AD6 = -10;
+u11AD9 = -20;
+};
+u11AD1 = {
+u11AD6 = -30;
+u11AD9 = -20;
+};
+u11AD2 = {
+u11AD5 = -10;
+u11AD6 = -40;
+u11AD8 = -60;
+u11AD9 = -30;
+u11ADB = -60;
+u11AEF = -80;
+u11AF0 = -70;
+};
+u11AD3 = {
+u11AD5 = -60;
+u11AD6 = -20;
+u11AD7 = -40;
+u11ADA = -50;
+};
+u11AD4 = {
+u11AD6 = -30;
+u11AD7 = 10;
+u11AD8 = -50;
+u11AD9 = -30;
+u11ADA = 10;
+u11ADB = -50;
+u11AEF = -90;
+u11AF0 = -50;
+};
+u11AD5 = {
+u11AC0 = -30;
+u11AC1 = -30;
+u11AC2 = -30;
+u11AC3 = -30;
+u11AC4 = -20;
+u11AC5 = 10;
+u11AC6 = -30;
+u11AC7 = -20;
+u11AC8 = -10;
+u11AC9 = -20;
+u11ACB = -30;
+u11ACC = -40;
+u11ACD = -20;
+u11ACE = -20;
+u11ACF = -30;
+u11AD0 = -30;
+u11AD2 = -20;
+u11AD3 = -20;
+u11AD4 = 20;
+u11AD6 = -10;
+u11AD8 = -20;
+u11AD9 = -50;
+u11ADB = -20;
+u11ADC = -10;
+u11ADE = -20;
+u11AE0 = -20;
+u11AE1 = -30;
+u11AE2 = -20;
+u11AE4 = -30;
+u11AE5 = -20;
+u11AE6 = -20;
+u11AE7 = -20;
+u11AE8 = -20;
+u11AE9 = -20;
+u11AEA = -20;
+u11AEB = -20;
+u11AEC = -20;
+u11AED = -20;
+u11AEE = -20;
+u11AEF = -160;
+u11AF0 = -110;
+u11AF3 = -20;
+u11AF4 = -20;
+u11AF5 = -20;
+u11AF6 = -20;
+u11AF7 = -20;
+u11AF8 = -20;
+};
+u11AD6 = {
+u11AC0 = -20;
+u11AC1 = -20;
+u11AC2 = -20;
+u11AC3 = -20;
+u11AC4 = -30;
+u11AC6 = -20;
+u11AC7 = -20;
+u11AC9 = -30;
+u11ACB = -20;
+u11ACC = -10;
+u11ACD = -30;
+u11ACE = -30;
+u11ACF = -20;
+u11AD0 = -20;
+u11AD1 = -10;
+u11AD2 = -20;
+u11AD3 = -30;
+u11AD7 = 10;
+u11AD8 = -10;
+u11AD9 = -40;
+u11ADA = 10;
+u11ADB = -10;
+u11ADE = -30;
+u11AE0 = -10;
+u11AE1 = -20;
+u11AE2 = -30;
+u11AE4 = -20;
+u11AE5 = -30;
+u11AE6 = -30;
+u11AE7 = -30;
+u11AE8 = -30;
+u11AE9 = -30;
+u11AEA = -30;
+u11AEB = -30;
+u11AEC = -30;
+u11AED = -30;
+u11AEE = -30;
+u11AEF = -90;
+u11AF0 = -70;
+u11AF3 = -30;
+u11AF4 = -30;
+u11AF5 = -30;
+u11AF6 = -30;
+u11AF7 = -30;
+u11AF8 = -30;
+};
+u11AD7 = {
+u11AC7 = -10;
+u11AC8 = -10;
+u11AD2 = -10;
+u11AD5 = -10;
+u11AD6 = -20;
+u11AD8 = -10;
+u11AD9 = -10;
+u11ADB = -10;
+u11ADD = -30;
+u11ADF = -40;
+u11AE3 = -10;
+u11AEF = -90;
+u11AF0 = -90;
+};
+u11AD8 = {
+u11AC0 = -40;
+u11AC1 = -40;
+u11AC2 = -40;
+u11AC3 = -40;
+u11AC4 = -20;
+u11AC5 = -40;
+u11AC6 = -30;
+u11AC7 = -10;
+u11AC8 = -10;
+u11AC9 = -20;
+u11ACB = -40;
+u11ACC = -10;
+u11ACD = -20;
+u11ACE = -20;
+u11ACF = -40;
+u11AD0 = -40;
+u11AD2 = -10;
+u11AD3 = -20;
+u11AD4 = -10;
+u11AD5 = -20;
+u11AD6 = -20;
+u11AD7 = -60;
+u11AD9 = -20;
+u11ADA = -40;
+u11ADC = -10;
+u11ADD = -60;
+u11ADE = -20;
+u11ADF = -30;
+u11AE0 = -30;
+u11AE1 = -30;
+u11AE2 = -20;
+u11AE3 = -50;
+u11AE4 = -40;
+u11AE5 = -20;
+u11AE6 = -20;
+u11AE7 = -20;
+u11AE8 = -20;
+u11AE9 = -20;
+u11AEA = -20;
+u11AEB = -20;
+u11AEC = -20;
+u11AED = -20;
+u11AEE = -20;
+u11AEF = -110;
+u11AF0 = -90;
+u11AF1 = -30;
+u11AF2 = -30;
+u11AF3 = -20;
+u11AF4 = -20;
+u11AF5 = -20;
+u11AF6 = -20;
+u11AF7 = -20;
+u11AF8 = -20;
+};
+u11AD9 = {
+u11AD6 = -10;
+u11ADA = -10;
+u11AEF = -80;
+u11AF0 = -90;
+};
+u11ADA = {
+u11AC4 = -10;
+u11AC7 = -20;
+u11AC9 = -10;
+u11ACA = -10;
+u11ACD = -10;
+u11ACE = -10;
+u11AD1 = -20;
+u11AD2 = -20;
+u11AD3 = -10;
+u11AD4 = -10;
+u11AD5 = -20;
+u11AD6 = -10;
+u11AD7 = -20;
+u11AD8 = -20;
+u11ADB = -20;
+u11ADD = -70;
+u11ADE = -10;
+u11ADF = -40;
+u11AE0 = -10;
+u11AE2 = -10;
+u11AE5 = -10;
+u11AE6 = -10;
+u11AE7 = -10;
+u11AE8 = -10;
+u11AE9 = -10;
+u11AEA = -10;
+u11AEB = -10;
+u11AEC = -10;
+u11AED = -10;
+u11AEE = -10;
+u11AEF = -20;
+u11AF0 = -60;
+u11AF3 = -10;
+u11AF4 = -10;
+u11AF5 = -10;
+u11AF6 = -10;
+u11AF7 = -10;
+u11AF8 = -10;
+};
+u11ADB = {
+u11AC0 = -40;
+u11AC1 = -40;
+u11AC2 = -40;
+u11AC3 = -40;
+u11AC4 = -20;
+u11AC5 = -40;
+u11AC6 = -30;
+u11AC7 = -10;
+u11AC8 = -10;
+u11AC9 = -20;
+u11ACB = -40;
+u11ACC = -10;
+u11ACD = -20;
+u11ACE = -20;
+u11ACF = -40;
+u11AD0 = -40;
+u11AD2 = -10;
+u11AD3 = -20;
+u11AD4 = -10;
+u11AD5 = -20;
+u11AD6 = -20;
+u11AD7 = -60;
+u11AD9 = -20;
+u11ADA = -40;
+u11ADC = -10;
+u11ADD = -60;
+u11ADE = -20;
+u11ADF = -30;
+u11AE0 = -30;
+u11AE1 = -30;
+u11AE2 = -20;
+u11AE3 = -50;
+u11AE4 = -40;
+u11AE5 = -20;
+u11AE6 = -20;
+u11AE7 = -20;
+u11AE8 = -20;
+u11AE9 = -20;
+u11AEA = -20;
+u11AEB = -20;
+u11AEC = -20;
+u11AED = -20;
+u11AEE = -20;
+u11AEF = -110;
+u11AF0 = -90;
+u11AF1 = -30;
+u11AF2 = -30;
+u11AF3 = -20;
+u11AF4 = -20;
+u11AF5 = -20;
+u11AF6 = -20;
+u11AF7 = -20;
+u11AF8 = -20;
+};
+u11ADC = {
+u11AEF = -10;
+};
+u11ADD = {
+u11AEF = -160;
+u11AF0 = -160;
+};
+u11ADE = {
+u11AD6 = -30;
+u11AD7 = 10;
+u11AD8 = -50;
+u11AD9 = -30;
+u11ADA = 10;
+u11ADB = -50;
+u11AEF = -90;
+u11AF0 = -50;
+};
+u11ADF = {
+u11AEF = -120;
+u11AF0 = -80;
+};
+u11AE0 = {
+u11AEF = -60;
+u11AF0 = -60;
+};
+u11AE1 = {
+u11AEF = -90;
+};
+u11AE2 = {
+u11AD5 = -10;
+u11AD6 = -40;
+u11AD8 = -60;
+u11AD9 = -30;
+u11ADB = -60;
+u11AEF = -80;
+u11AF0 = -70;
+};
+u11AE3 = {
+u11AEF = -50;
+u11AF0 = -50;
+};
+u11AE4 = {
+u11AD5 = -30;
+u11AD6 = -20;
+u11AD8 = -40;
+u11AD9 = -10;
+u11ADB = -40;
+u11AEF = -80;
+u11AF0 = -80;
+};
+};
+};
 manufacturer = "Monotype Imaging Inc.";
 manufacturerURL = "http://www.google.com/get/noto/";
 unitsPerEm = 1000;
 versionMajor = 2;
-versionMinor = 0;
+versionMinor = 1;
 }
