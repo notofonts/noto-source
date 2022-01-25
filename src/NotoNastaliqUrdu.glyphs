@@ -1965,29 +1965,7 @@ date = "2017-05-24 18:23:34 +0000";
 familyName = "Noto Nastaliq Urdu";
 featurePrefixes = (
 {
-code = "lookup AF_Prefs {
-    sub HamzaAboveNS by HamzaAboveAF_NS;
-    sub HamzaBelowNS by HamzaBelowAF_NS;
-    sub SukunJazmNS by SukunNS;
-} AF_Prefs;
-
-lookup SindhiDigits {
-    sub FourUrdu by FourFarsi;
-    sub SixUrdu by SixArabic;
-    sub SevenFarsi by SevenUrdu;
-} SindhiDigits;
-
-lookup FarsiPrefs {
-    sub FourUrdu by FourFarsi;
-    sub SixUrdu by SixFarsi;
-    sub SevenUrdu by SevenFarsi;
-    sub DecimalPointArabic by DecimalPointFarsi;
-} FarsiPrefs;
-
-lookup GhunnaKashm {
-    sub NoonGhunnaMarkNS by NoonGhunnaMarkKshmrNS;
-} GhunnaKashm;
-";
+code = "";
 name = Localizations;
 },
 {
@@ -20199,16 +20177,32 @@ sub uni08B9 by Reh SmallNoonAboveNS;
 # See \"Localizations\" prefix
 script arab;
 language ARA;
-    lookup AF_Prefs;
+    sub HamzaAboveNS by HamzaAboveAF_NS;
+    sub HamzaBelowNS by HamzaBelowAF_NS;
+    sub SukunJazmNS by SukunNS;
+
 language KSH;
-    lookup AF_Prefs;
-    lookup GhunnaKashm;
+    sub HamzaAboveNS by HamzaAboveAF_NS;
+    sub HamzaBelowNS by HamzaBelowAF_NS;
+    sub SukunJazmNS by SukunNS;
+    sub NoonGhunnaMarkNS by NoonGhunnaMarkKshmrNS;
+
 language SND;
-    lookup AF_Prefs;
-    lookup SindhiDigits;
+    sub HamzaAboveNS by HamzaAboveAF_NS;
+    sub HamzaBelowNS by HamzaBelowAF_NS;
+    sub SukunJazmNS by SukunNS;
+    sub FourUrdu by FourFarsi;
+    sub SixUrdu by SixArabic;
+    sub SevenFarsi by SevenUrdu;
+
 language FAR;
-    lookup AF_Prefs;
-    lookup FarsiPrefs;
+    sub HamzaAboveNS by HamzaAboveAF_NS;
+    sub HamzaBelowNS by HamzaBelowAF_NS;
+    sub SukunJazmNS by SukunNS;
+    sub FourUrdu by FourFarsi;
+    sub SixUrdu by SixFarsi;
+    sub SevenUrdu by SevenFarsi;
+    sub DecimalPointArabic by DecimalPointFarsi;
 ";
 tag = ccmp;
 },
@@ -21236,7 +21230,7 @@ subCategory = Nonspacing;
 {
 category = Mark;
 glyphname = TwoDotsAboveNS;
-lastChange = "2022-01-25 10:36:24 +0000";
+lastChange = "2022-01-25 20:04:43 +0000";
 layers = (
 {
 anchors = (
@@ -21258,35 +21252,35 @@ shapes = (
 {
 closed = 1;
 nodes = (
-(-87,885,l),
-(-50,910,o),
-(-22,935,o),
-(-7,958,c),
-(9,945,o),
-(25,930,o),
-(53,903,c),
-(61,903,l),
-(107,935,o),
-(153,975,o),
-(153,1008,cs),
-(153,1040,o),
-(122,1065,o),
-(67,1100,c),
-(57,1100,l),
-(45,1092,o),
-(15,1061,o),
-(-13,1028,c),
-(-26,1043,o),
-(-47,1060,o),
-(-81,1082,c),
-(-91,1082,l),
-(-108,1071,o),
-(-169,1004,o),
-(-187,976,c),
-(-187,966,l),
-(-158,945,o),
-(-144,932,o),
-(-95,885,c)
+(-87,815,l),
+(-50,840,o),
+(-22,865,o),
+(-7,888,c),
+(9,875,o),
+(25,860,o),
+(53,833,c),
+(61,833,l),
+(107,865,o),
+(153,905,o),
+(153,938,cs),
+(153,970,o),
+(122,995,o),
+(67,1030,c),
+(57,1030,l),
+(45,1022,o),
+(15,991,o),
+(-13,958,c),
+(-26,973,o),
+(-47,990,o),
+(-81,1012,c),
+(-91,1012,l),
+(-108,1001,o),
+(-169,934,o),
+(-187,906,c),
+(-187,896,l),
+(-158,875,o),
+(-144,862,o),
+(-95,815,c)
 );
 }
 );
@@ -21312,35 +21306,35 @@ shapes = (
 {
 closed = 1;
 nodes = (
-(-78,890,l),
-(-36,920,o),
-(-10,946,o),
-(0,966,c),
-(19,950,o),
-(40,931,o),
-(63,908,c),
-(72,908,l),
-(125,946,o),
-(152,978,o),
-(152,1003,cs),
-(152,1030,o),
-(126,1053,o),
-(73,1087,c),
-(65,1087,l),
-(52,1079,o),
-(16,1041,o),
-(-6,1013,c),
-(-18,1031,o),
-(-42,1049,o),
-(-74,1069,c),
-(-83,1069,l),
-(-99,1059,o),
-(-151,1000,o),
-(-170,973,c),
-(-170,964,l),
-(-144,943,o),
-(-116,919,o),
-(-87,890,c)
+(-78,820,l),
+(-36,850,o),
+(-10,876,o),
+(0,896,c),
+(19,880,o),
+(40,861,o),
+(63,838,c),
+(72,838,l),
+(125,876,o),
+(152,908,o),
+(152,933,cs),
+(152,960,o),
+(126,983,o),
+(73,1017,c),
+(65,1017,l),
+(52,1009,o),
+(16,971,o),
+(-6,943,c),
+(-18,961,o),
+(-42,979,o),
+(-74,999,c),
+(-83,999,l),
+(-99,989,o),
+(-151,930,o),
+(-170,903,c),
+(-170,894,l),
+(-144,873,o),
+(-116,849,o),
+(-87,820,c)
 );
 }
 );
