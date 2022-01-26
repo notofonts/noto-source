@@ -19698,11 +19698,11 @@ name = "Contextual Alef kerning";
 code = "lookup KernTriplet {
     lookupflag IgnoreMarks;
     ;
-    sub [AlefSep AlefFin AlefFin.narrow AlefSep.LA] @class23003' lookup AlefKern3_Btm lookup AlefKern3_Top @class23004' @class23005';
-    sub [DalSep DalFin] @class23003' lookup DalKern3_Btm lookup DalKern3_Top @class23004' @class23005';
-    sub @Rehs @class23003' lookup WawKern3_Btm lookup WawKern3_Top @class23004' @class23005';
-    sub @Waws @class23003' lookup RehKern3_Btm lookup RehKern3_Top @class23004' @class23005';
-    sub [AlefSep AlefFin AlefFin.narrow AlefSep.LA] @class23003' lookup Kern4_Btm lookup Kern4_Top @class23004' @class23004' @class23005';
+    sub [AlefSep AlefFin AlefFin.narrow AlefSep.LA] @class23003' lookup AlefKern3_Btm lookup AlefKern3_Top;
+    sub [DalSep DalFin] @class23003' lookup DalKern3_Btm lookup DalKern3_Top;
+    sub @Rehs @class23003' lookup WawKern3_Btm lookup WawKern3_Top;
+    sub @Waws @class23003' lookup RehKern3_Btm lookup RehKern3_Top;
+    sub [AlefSep AlefFin AlefFin.narrow AlefSep.LA] @class23003' lookup Kern4_Btm lookup Kern4_Top;
 } KernTriplet;
 ";
 name = "Kern sequences of isolates";
