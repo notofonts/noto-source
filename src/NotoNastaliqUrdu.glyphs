@@ -1980,7 +1980,7 @@ name = "Replacements for LA ligature";
 },
 {
 code = "lookup FormDivineName {
-    lookupflag IgnoreMarks;
+    lookupflag UseMarkFilteringSet [AlefSuperiorNS FathaNS ShaddaNS];
     sub LamIni LamMed HehFin by Divine_nm_p1;
 } FormDivineName;
 lookup DivNmCheck {
