@@ -488,7 +488,8 @@ code = "GafIni GafIni.HRlow GafIni.k GafIni.outD1 GafIni.outD2 GafIni.outD2H Gaf
 name = class19350;
 },
 {
-code = "BehxIni.A BehxIni.outD1 BehxIni.outD11 BehxIni.outD2D BehxIni.outD2H BehxIni.outD2WQ BehxIni.outD2Y BehxIni.outD4 BehxIni.outD5 BehxIni.outT2K BehxIni.outT2N BehxIni.outT2tall BehxIni.outT3 HahIni.outD2H HahIni.outD2Hwide";
+code = "BehxIni BehxIni.A BehxIni.outD1 BehxIni.outD11 BehxIni.outD2D BehxIni.outD2H BehxIni.outD2WQ BehxIni.outD2Y BehxIni.outD4 BehxIni.outD5 BehxIni.outT2K BehxIni.outT2N BehxIni.outT2tall BehxIni.outT3 HahIni.outD2H HahIni.outD2Hwide
+";
 name = class19434;
 },
 {
@@ -18356,113 +18357,6 @@ ignore     sub AlefSep @AboveDots_w2 @AboveDots_w1 [KafIni.outT2N GafIni.outT2N 
 name = "Contextually increase kaf spacing";
 },
 {
-code = "lookup KernIntro {
-    lookupflag IgnoreMarks;
-    ;
-    sub [AlefSep AlefFin AlefFin.narrow AlefSep.LA] BehxIni.outT2B' lookup KernBottom lookup KernTop BehxFin.soft;
-    sub DalSep BehxIni.outT2B' lookup KernBottom lookup KernTop BehxFin.soft;
-    sub DalFin BehxIni.outT2B' lookup KernBottom lookup KernTop BehxFin.soft;
-    sub [RehSep RehLoopSep] BehxIni.outT2B' lookup KernBottom BehxFin.soft;
-    sub [RehFin.inD4B RehFin.inD4 RehLoopFin.inD4B RehLoopFin.inD4] BehxIni.outT2B' lookup KernBottom lookup KernTop BehxFin.soft;
-    sub @RehFins BehxIni.outT2B' lookup KernBottom lookup KernTop BehxFin.soft;
-    sub @Waws BehxIni.outT2B' lookup KernBottom lookup KernTop BehxFin.soft;
-    sub [AlefSep AlefFin AlefFin.narrow AlefSep.LA] BehxIni.outT2tall' lookup KernTop SeenFin;
-    sub [RehFin.inD4B RehFin.inD4 RehLoopFin.inD4B RehLoopFin.inD4] BehxIni.outT2tall' lookup KernBottom lookup KernTop SeenFin;
-    sub @RehFins BehxIni.outT2tall' lookup KernBottom lookup KernTop SeenFin;
-    sub [AlefSep AlefFin AlefFin.narrow AlefSep.LA] BehxIni.outD1' lookup KernBottom lookup KernTop [TahFin SadFin];
-    sub DalSep BehxIni.outD1' lookup KernBottom lookup KernTop [TahFin SadFin];
-    sub DalFin BehxIni.outD1' lookup KernBottom lookup KernTop [TahFin SadFin];
-    sub [RehSep RehLoopSep] BehxIni.outD1' lookup KernBottom [TahFin SadFin];
-    sub [RehFin.inD4B RehFin.inD4 RehLoopFin.inD4B RehLoopFin.inD4] BehxIni.outD1' lookup KernBottom lookup KernTop [TahFin SadFin];
-    sub @RehFins BehxIni.outD1' lookup KernBottom lookup KernTop [TahFin SadFin];
-    sub [AlefSep AlefFin AlefFin.narrow AlefSep.LA] BehxIni.outT3F' lookup KernBottom lookup KernTop [FehxFin YehRohingyaFin];
-    sub DalSep BehxIni.outT3F' lookup KernBottom lookup KernTop [FehxFin YehRohingyaFin];
-    sub DalFin BehxIni.outT3F' lookup KernBottom lookup KernTop [FehxFin YehRohingyaFin];
-    sub [RehSep RehLoopSep] BehxIni.outT3F' lookup KernBottom [FehxFin YehRohingyaFin];
-    sub [RehFin.inD4B RehFin.inD4 RehLoopFin.inD4B RehLoopFin.inD4] BehxIni.outT3F' lookup KernBottom [FehxFin YehRohingyaFin];
-    sub @RehFins BehxIni.outT3F' lookup KernBottom lookup KernTop [FehxFin YehRohingyaFin];
-    sub @Waws BehxIni.outT3F' lookup KernBottom lookup KernTop [FehxFin YehRohingyaFin];
-    sub [AlefSep AlefFin AlefFin.narrow AlefSep.LA] BehxIni.outD2WQ' lookup KernBottom lookup KernTop [WawFin.inD2 QafxFin.inD2 WawStraightFin.inD2];
-    sub DalSep BehxIni.outD2WQ' lookup KernBottom lookup KernTop [WawFin.inD2 QafxFin.inD2 WawStraightFin.inD2];
-    sub DalFin BehxIni.outD2WQ' lookup KernBottom lookup KernTop [WawFin.inD2 QafxFin.inD2 WawStraightFin.inD2];
-    sub [RehSep RehLoopSep] BehxIni.outD2WQ' lookup KernBottom lookup KernTop [WawFin.inD2 QafxFin.inD2 WawStraightFin.inD2];
-    sub [RehFin.inD4B RehFin.inD4 RehLoopFin.inD4B RehLoopFin.inD4] BehxIni.outD2WQ' lookup KernBottom lookup KernTop [WawFin.inD2 QafxFin.inD2 WawStraightFin.inD2];
-    sub @RehFins BehxIni.outD2WQ' lookup KernBottom lookup KernTop [WawFin.inD2 QafxFin.inD2 WawStraightFin.inD2];
-    sub @Waws BehxIni.outD2WQ' lookup KernBottom lookup KernTop [WawFin.inD2 QafxFin.inD2 WawStraightFin.inD2];
-    sub [AlefSep AlefFin AlefFin.narrow AlefSep.LA] BehxIni' lookup KernBottom lookup KernTop [LamFin GafFin KafFin GafInvFin];
-    sub DalSep BehxIni' lookup KernBottom lookup KernTop [LamFin GafFin KafFin GafInvFin];
-    sub DalFin BehxIni' lookup KernBottom lookup KernTop [LamFin GafFin KafFin GafInvFin];
-    sub [RehSep RehLoopSep] BehxIni' lookup KernBottom [LamFin GafFin KafFin GafInvFin];
-    sub [RehFin.inD4B RehFin.inD4 RehLoopFin.inD4B RehLoopFin.inD4] BehxIni' lookup KernBottom lookup KernTop [LamFin GafFin KafFin GafInvFin];
-    sub @RehFins BehxIni' lookup KernBottom lookup KernTop [LamFin GafFin KafFin GafInvFin];
-    sub @Waws BehxIni' lookup KernBottom lookup KernTop [LamFin GafFin KafFin GafInvFin];
-    sub [AlefSep AlefFin AlefFin.narrow AlefSep.LA] BehxIni.outD2M' lookup KernBottom lookup KernTop MeemFin;
-    sub DalSep BehxIni.outD2M' lookup KernBottom lookup KernTop MeemFin;
-    sub DalFin BehxIni.outD2M' lookup KernBottom lookup KernTop MeemFin;
-    sub [RehSep RehLoopSep] BehxIni.outD2M' lookup KernBottom MeemFin;
-    sub [RehFin.inD4B RehFin.inD4 RehLoopFin.inD4B RehLoopFin.inD4] BehxIni.outD2M' lookup KernBottom MeemFin;
-    sub @RehFins BehxIni.outD2M' lookup KernBottom lookup KernTop MeemFin;
-    sub @Waws BehxIni.outD2M' lookup KernBottom MeemFin;
-    sub [AlefSep AlefFin AlefFin.narrow AlefSep.LA] BehxIni.outT2N' lookup KernBottom lookup KernTop NoonxFin;
-    sub DalSep BehxIni.outT2N' lookup KernBottom lookup KernTop NoonxFin;
-    sub DalFin BehxIni.outT2N' lookup KernBottom lookup KernTop NoonxFin;
-    sub [RehSep RehLoopSep] BehxIni.outT2N' lookup KernBottom NoonxFin;
-    sub [RehFin.inD4B RehFin.inD4 RehLoopFin.inD4B RehLoopFin.inD4] BehxIni.outT2N' lookup KernBottom lookup KernTop NoonxFin;
-    sub @RehFins BehxIni.outT2N' lookup KernBottom lookup KernTop NoonxFin;
-    sub @Waws BehxIni.outT2N' lookup KernBottom lookup KernTop NoonxFin;
-    sub [AlefSep AlefFin AlefFin.narrow AlefSep.LA] BehxIni.outS1' lookup KernBottom lookup KernTop HehFin;
-    sub DalSep BehxIni.outS1' lookup KernBottom lookup KernTop HehFin;
-    sub DalFin BehxIni.outS1' lookup KernBottom lookup KernTop HehFin;
-    sub [RehFin.inD4B RehFin.inD4 RehLoopFin.inD4B RehLoopFin.inD4] BehxIni.outS1' lookup KernBottom lookup KernTop HehFin;
-    sub @RehFins BehxIni.outS1' lookup KernBottom lookup KernTop HehFin;
-    sub @Waws BehxIni.outS1' lookup KernTop HehFin;
-    sub [AlefSep AlefFin AlefFin.narrow AlefSep.LA] BehxIni.outD2Y' lookup KernBottom lookup KernTop YehxFin.inD2alt;
-    sub DalSep BehxIni.outD2Y' lookup KernBottom YehxFin.inD2alt;
-    sub DalFin BehxIni.outD2Y' lookup KernBottom YehxFin.inD2alt;
-    sub [RehSep RehLoopSep] BehxIni.outD2Y' lookup KernBottom lookup KernTop YehxFin.inD2alt;
-    sub [RehFin.inD4B RehFin.inD4 RehLoopFin.inD4B RehLoopFin.inD4] BehxIni.outD2Y' lookup KernBottom lookup KernTop YehxFin.inD2alt;
-    sub @RehFins BehxIni.outD2Y' lookup KernBottom lookup KernTop YehxFin.inD2alt;
-    sub @Waws BehxIni.outD2Y' lookup KernBottom lookup KernTop YehxFin.inD2alt;
-    sub [AlefSep AlefFin AlefFin.narrow AlefSep.LA] BehxIni.outD2D' lookup KernBottom lookup KernTop HehDoFin;
-    sub DalSep BehxIni.outD2D' lookup KernBottom HehDoFin;
-    sub DalFin BehxIni.outD2D' lookup KernBottom HehDoFin;
-    sub [RehSep RehLoopSep] BehxIni.outD2D' lookup KernBottom HehDoFin;
-    sub [RehFin.inD4B RehFin.inD4 RehLoopFin.inD4B RehLoopFin.inD4] BehxIni.outD2D' lookup KernBottom HehDoFin;
-    sub @RehFins BehxIni.outD2D' lookup KernBottom lookup KernTop HehDoFin;
-    sub @Waws BehxIni.outD2D' lookup KernBottom lookup KernTop HehDoFin;
-    sub [AlefSep AlefFin AlefFin.narrow AlefSep.LA] BehxIni.outD4' lookup KernBottom lookup KernTop [RehFin.inD4B RehLoopFin.inD4B];
-    sub DalSep BehxIni.outD4' lookup KernBottom lookup KernTop [RehFin.inD4B RehLoopFin.inD4B];
-    sub DalFin BehxIni.outD4' lookup KernBottom lookup KernTop [RehFin.inD4B RehLoopFin.inD4B];
-    sub [RehSep RehLoopSep] BehxIni.outD4' lookup KernBottom [RehFin.inD4B RehLoopFin.inD4B];
-    sub [RehFin.inD4B RehFin.inD4 RehLoopFin.inD4B RehLoopFin.inD4] BehxIni.outD4' lookup KernBottom lookup KernTop [RehFin.inD4B RehLoopFin.inD4B];
-    sub @RehFins BehxIni.outD4' lookup KernBottom lookup KernTop [RehFin.inD4B RehLoopFin.inD4B];
-    sub @Waws BehxIni.outD4' lookup KernBottom lookup KernTop [RehFin.inD4B RehLoopFin.inD4B];
-    sub [AlefSep AlefFin AlefFin.narrow AlefSep.LA] BehxIni.A' lookup KernBottom lookup KernTop [DalFin AlefFin.narrow];
-    sub DalSep BehxIni.A' lookup KernBottom lookup KernTop [DalFin AlefFin.narrow];
-    sub DalFin BehxIni.A' lookup KernBottom lookup KernTop [DalFin AlefFin.narrow];
-    sub [RehSep RehLoopSep] BehxIni.A' lookup KernBottom lookup KernTop [DalFin AlefFin.narrow];
-    sub [RehFin.inD4B RehFin.inD4 RehLoopFin.inD4B RehLoopFin.inD4] BehxIni.A' lookup KernBottom lookup KernTop [DalFin AlefFin.narrow];
-    sub @RehFins BehxIni.A' lookup KernBottom lookup KernTop [DalFin AlefFin.narrow];
-    sub @Waws BehxIni.A' lookup KernBottom lookup KernTop [DalFin AlefFin.narrow];
-    sub [AlefSep AlefFin AlefFin.narrow AlefSep.LA] @class19350' lookup KernTopKaf;
-    sub [AlefSep AlefFin AlefFin.narrow AlefSep.LA] BehxIni.outD2H' lookup KernBottom lookup KernTop HahFin;
-    sub DalSep BehxIni.outD2H' lookup KernBottom lookup KernTop HahFin;
-    sub DalFin BehxIni.outD2H' lookup KernBottom lookup KernTop HahFin;
-    sub [RehSep RehLoopSep] BehxIni.outD2H' lookup KernBottom HahFin;
-    sub [RehFin.inD4B RehFin.inD4 RehLoopFin.inD4B RehLoopFin.inD4] BehxIni.outD2H' lookup KernBottom lookup KernTop HahFin;
-    sub @RehFins BehxIni.outD2H' lookup KernBottom lookup KernTop HahFin;
-    sub [AlefSep AlefFin AlefFin.narrow AlefSep.LA] [BehxIni.outT3 BehxIni.outT3En]' lookup KernBottom lookup KernTop AinFin;
-    sub DalSep [BehxIni.outT3 BehxIni.outT3En]' lookup KernBottom AinFin;
-    sub DalFin [BehxIni.outT3 BehxIni.outT3En]' lookup KernBottom AinFin;
-    sub [RehSep RehLoopSep] [BehxIni.outT3 BehxIni.outT3En]' lookup KernBottom AinFin;
-    sub [RehFin.inD4B RehFin.inD4 RehLoopFin.inD4B RehLoopFin.inD4] [BehxIni.outT3 BehxIni.outT3En]' lookup KernBottom AinFin;
-    sub @RehFins [BehxIni.outT3 BehxIni.outT3En]' lookup KernBottom AinFin;
-    sub @Waws [BehxIni.outT3 BehxIni.outT3En]' lookup KernBottom AinFin;
-} KernIntro;
-";
-name = "Top Level Kerning routine";
-},
-{
 code = "lookup Kern4_Top {
     lookupflag MarkAttachmentType @AllAboveMarks;
     ;
@@ -19698,17 +19592,121 @@ ignore     sub [AlefSep AlefFin AlefFin.narrow AlefSep.LA] [BehxIni BehxIni.outT
 name = "Contextual Alef kerning";
 },
 {
-code = "lookup KernTriplet {
+code = "lookup KernIntro {
     lookupflag IgnoreMarks;
     ;
+
+	# Kern sequences of isolates
     sub [AlefSep AlefFin AlefFin.narrow AlefSep.LA] @class23003' lookup AlefKern3_Btm lookup AlefKern3_Top;
     sub [DalSep DalFin] @class23003' lookup DalKern3_Btm lookup DalKern3_Top;
     sub @Rehs @class23003' lookup WawKern3_Btm lookup WawKern3_Top;
     sub @Waws @class23003' lookup RehKern3_Btm lookup RehKern3_Top;
     sub [AlefSep AlefFin AlefFin.narrow AlefSep.LA] @class23003' lookup Kern4_Btm lookup Kern4_Top;
-} KernTriplet;
+
+	# Kern everything else
+	
+    sub [AlefSep AlefFin AlefFin.narrow AlefSep.LA] BehxIni.outT2B' lookup KernBottom lookup KernTop BehxFin.soft;
+    sub DalSep BehxIni.outT2B' lookup KernBottom lookup KernTop BehxFin.soft;
+    sub DalFin BehxIni.outT2B' lookup KernBottom lookup KernTop BehxFin.soft;
+    sub [RehSep RehLoopSep] BehxIni.outT2B' lookup KernBottom BehxFin.soft;
+    sub [RehFin.inD4B RehFin.inD4 RehLoopFin.inD4B RehLoopFin.inD4] BehxIni.outT2B' lookup KernBottom lookup KernTop BehxFin.soft;
+    sub @RehFins BehxIni.outT2B' lookup KernBottom lookup KernTop BehxFin.soft;
+    sub @Waws BehxIni.outT2B' lookup KernBottom lookup KernTop BehxFin.soft;
+    sub [AlefSep AlefFin AlefFin.narrow AlefSep.LA] BehxIni.outT2tall' lookup KernTop SeenFin;
+    sub [RehFin.inD4B RehFin.inD4 RehLoopFin.inD4B RehLoopFin.inD4] BehxIni.outT2tall' lookup KernBottom lookup KernTop SeenFin;
+    sub @RehFins BehxIni.outT2tall' lookup KernBottom lookup KernTop SeenFin;
+    sub [AlefSep AlefFin AlefFin.narrow AlefSep.LA] BehxIni.outD1' lookup KernBottom lookup KernTop [TahFin SadFin];
+    sub DalSep BehxIni.outD1' lookup KernBottom lookup KernTop [TahFin SadFin];
+    sub DalFin BehxIni.outD1' lookup KernBottom lookup KernTop [TahFin SadFin];
+    sub [RehSep RehLoopSep] BehxIni.outD1' lookup KernBottom [TahFin SadFin];
+    sub [RehFin.inD4B RehFin.inD4 RehLoopFin.inD4B RehLoopFin.inD4] BehxIni.outD1' lookup KernBottom lookup KernTop [TahFin SadFin];
+    sub @RehFins BehxIni.outD1' lookup KernBottom lookup KernTop [TahFin SadFin];
+    sub [AlefSep AlefFin AlefFin.narrow AlefSep.LA] BehxIni.outT3F' lookup KernBottom lookup KernTop [FehxFin YehRohingyaFin];
+    sub DalSep BehxIni.outT3F' lookup KernBottom lookup KernTop [FehxFin YehRohingyaFin];
+    sub DalFin BehxIni.outT3F' lookup KernBottom lookup KernTop [FehxFin YehRohingyaFin];
+    sub [RehSep RehLoopSep] BehxIni.outT3F' lookup KernBottom [FehxFin YehRohingyaFin];
+    sub [RehFin.inD4B RehFin.inD4 RehLoopFin.inD4B RehLoopFin.inD4] BehxIni.outT3F' lookup KernBottom [FehxFin YehRohingyaFin];
+    sub @RehFins BehxIni.outT3F' lookup KernBottom lookup KernTop [FehxFin YehRohingyaFin];
+    sub @Waws BehxIni.outT3F' lookup KernBottom lookup KernTop [FehxFin YehRohingyaFin];
+    sub [AlefSep AlefFin AlefFin.narrow AlefSep.LA] BehxIni.outD2WQ' lookup KernBottom lookup KernTop [WawFin.inD2 QafxFin.inD2 WawStraightFin.inD2];
+    sub DalSep BehxIni.outD2WQ' lookup KernBottom lookup KernTop [WawFin.inD2 QafxFin.inD2 WawStraightFin.inD2];
+    sub DalFin BehxIni.outD2WQ' lookup KernBottom lookup KernTop [WawFin.inD2 QafxFin.inD2 WawStraightFin.inD2];
+    sub [RehSep RehLoopSep] BehxIni.outD2WQ' lookup KernBottom lookup KernTop [WawFin.inD2 QafxFin.inD2 WawStraightFin.inD2];
+    sub [RehFin.inD4B RehFin.inD4 RehLoopFin.inD4B RehLoopFin.inD4] BehxIni.outD2WQ' lookup KernBottom lookup KernTop [WawFin.inD2 QafxFin.inD2 WawStraightFin.inD2];
+    sub @RehFins BehxIni.outD2WQ' lookup KernBottom lookup KernTop [WawFin.inD2 QafxFin.inD2 WawStraightFin.inD2];
+    sub @Waws BehxIni.outD2WQ' lookup KernBottom lookup KernTop [WawFin.inD2 QafxFin.inD2 WawStraightFin.inD2];
+    sub [AlefSep AlefFin AlefFin.narrow AlefSep.LA] BehxIni' lookup KernBottom lookup KernTop [LamFin GafFin KafFin GafInvFin];
+    sub DalSep BehxIni' lookup KernBottom lookup KernTop [LamFin GafFin KafFin GafInvFin];
+    sub DalFin BehxIni' lookup KernBottom lookup KernTop [LamFin GafFin KafFin GafInvFin];
+    sub [RehSep RehLoopSep] BehxIni' lookup KernBottom [LamFin GafFin KafFin GafInvFin];
+    sub [RehFin.inD4B RehFin.inD4 RehLoopFin.inD4B RehLoopFin.inD4] BehxIni' lookup KernBottom lookup KernTop [LamFin GafFin KafFin GafInvFin];
+    sub @RehFins BehxIni' lookup KernBottom lookup KernTop [LamFin GafFin KafFin GafInvFin];
+    sub @Waws BehxIni' lookup KernBottom lookup KernTop [LamFin GafFin KafFin GafInvFin];
+    sub [AlefSep AlefFin AlefFin.narrow AlefSep.LA] BehxIni.outD2M' lookup KernBottom lookup KernTop MeemFin;
+    sub DalSep BehxIni.outD2M' lookup KernBottom lookup KernTop MeemFin;
+    sub DalFin BehxIni.outD2M' lookup KernBottom lookup KernTop MeemFin;
+    sub [RehSep RehLoopSep] BehxIni.outD2M' lookup KernBottom MeemFin;
+    sub [RehFin.inD4B RehFin.inD4 RehLoopFin.inD4B RehLoopFin.inD4] BehxIni.outD2M' lookup KernBottom MeemFin;
+    sub @RehFins BehxIni.outD2M' lookup KernBottom lookup KernTop MeemFin;
+    sub @Waws BehxIni.outD2M' lookup KernBottom MeemFin;
+    sub [AlefSep AlefFin AlefFin.narrow AlefSep.LA] BehxIni.outT2N' lookup KernBottom lookup KernTop NoonxFin;
+    sub DalSep BehxIni.outT2N' lookup KernBottom lookup KernTop NoonxFin;
+    sub DalFin BehxIni.outT2N' lookup KernBottom lookup KernTop NoonxFin;
+    sub [RehSep RehLoopSep] BehxIni.outT2N' lookup KernBottom NoonxFin;
+    sub [RehFin.inD4B RehFin.inD4 RehLoopFin.inD4B RehLoopFin.inD4] BehxIni.outT2N' lookup KernBottom lookup KernTop NoonxFin;
+    sub @RehFins BehxIni.outT2N' lookup KernBottom lookup KernTop NoonxFin;
+    sub @Waws BehxIni.outT2N' lookup KernBottom lookup KernTop NoonxFin;
+    sub [AlefSep AlefFin AlefFin.narrow AlefSep.LA] BehxIni.outS1' lookup KernBottom lookup KernTop HehFin;
+    sub DalSep BehxIni.outS1' lookup KernBottom lookup KernTop HehFin;
+    sub DalFin BehxIni.outS1' lookup KernBottom lookup KernTop HehFin;
+    sub [RehFin.inD4B RehFin.inD4 RehLoopFin.inD4B RehLoopFin.inD4] BehxIni.outS1' lookup KernBottom lookup KernTop HehFin;
+    sub @RehFins BehxIni.outS1' lookup KernBottom lookup KernTop HehFin;
+    sub @Waws BehxIni.outS1' lookup KernTop HehFin;
+    sub [AlefSep AlefFin AlefFin.narrow AlefSep.LA] BehxIni.outD2Y' lookup KernBottom lookup KernTop YehxFin.inD2alt;
+    sub DalSep BehxIni.outD2Y' lookup KernBottom YehxFin.inD2alt;
+    sub DalFin BehxIni.outD2Y' lookup KernBottom YehxFin.inD2alt;
+    sub [RehSep RehLoopSep] BehxIni.outD2Y' lookup KernBottom lookup KernTop YehxFin.inD2alt;
+    sub [RehFin.inD4B RehFin.inD4 RehLoopFin.inD4B RehLoopFin.inD4] BehxIni.outD2Y' lookup KernBottom lookup KernTop YehxFin.inD2alt;
+    sub @RehFins BehxIni.outD2Y' lookup KernBottom lookup KernTop YehxFin.inD2alt;
+    sub @Waws BehxIni.outD2Y' lookup KernBottom lookup KernTop YehxFin.inD2alt;
+    sub [AlefSep AlefFin AlefFin.narrow AlefSep.LA] BehxIni.outD2D' lookup KernBottom lookup KernTop HehDoFin;
+    sub DalSep BehxIni.outD2D' lookup KernBottom HehDoFin;
+    sub DalFin BehxIni.outD2D' lookup KernBottom HehDoFin;
+    sub [RehSep RehLoopSep] BehxIni.outD2D' lookup KernBottom HehDoFin;
+    sub [RehFin.inD4B RehFin.inD4 RehLoopFin.inD4B RehLoopFin.inD4] BehxIni.outD2D' lookup KernBottom HehDoFin;
+    sub @RehFins BehxIni.outD2D' lookup KernBottom lookup KernTop HehDoFin;
+    sub @Waws BehxIni.outD2D' lookup KernBottom lookup KernTop HehDoFin;
+    sub [AlefSep AlefFin AlefFin.narrow AlefSep.LA] BehxIni.outD4' lookup KernBottom lookup KernTop [RehFin.inD4B RehLoopFin.inD4B];
+    sub DalSep BehxIni.outD4' lookup KernBottom lookup KernTop [RehFin.inD4B RehLoopFin.inD4B];
+    sub DalFin BehxIni.outD4' lookup KernBottom lookup KernTop [RehFin.inD4B RehLoopFin.inD4B];
+    sub [RehSep RehLoopSep] BehxIni.outD4' lookup KernBottom [RehFin.inD4B RehLoopFin.inD4B];
+    sub [RehFin.inD4B RehFin.inD4 RehLoopFin.inD4B RehLoopFin.inD4] BehxIni.outD4' lookup KernBottom lookup KernTop [RehFin.inD4B RehLoopFin.inD4B];
+    sub @RehFins BehxIni.outD4' lookup KernBottom lookup KernTop [RehFin.inD4B RehLoopFin.inD4B];
+    sub @Waws BehxIni.outD4' lookup KernBottom lookup KernTop [RehFin.inD4B RehLoopFin.inD4B];
+    sub [AlefSep AlefFin AlefFin.narrow AlefSep.LA] BehxIni.A' lookup KernBottom lookup KernTop [DalFin AlefFin.narrow];
+    sub DalSep BehxIni.A' lookup KernBottom lookup KernTop [DalFin AlefFin.narrow];
+    sub DalFin BehxIni.A' lookup KernBottom lookup KernTop [DalFin AlefFin.narrow];
+    sub [RehSep RehLoopSep] BehxIni.A' lookup KernBottom lookup KernTop [DalFin AlefFin.narrow];
+    sub [RehFin.inD4B RehFin.inD4 RehLoopFin.inD4B RehLoopFin.inD4] BehxIni.A' lookup KernBottom lookup KernTop [DalFin AlefFin.narrow];
+    sub @RehFins BehxIni.A' lookup KernBottom lookup KernTop [DalFin AlefFin.narrow];
+    sub @Waws BehxIni.A' lookup KernBottom lookup KernTop [DalFin AlefFin.narrow];
+    sub [AlefSep AlefFin AlefFin.narrow AlefSep.LA] @class19350' lookup KernTopKaf;
+    sub [AlefSep AlefFin AlefFin.narrow AlefSep.LA] BehxIni.outD2H' lookup KernBottom lookup KernTop HahFin;
+    sub DalSep BehxIni.outD2H' lookup KernBottom lookup KernTop HahFin;
+    sub DalFin BehxIni.outD2H' lookup KernBottom lookup KernTop HahFin;
+    sub [RehSep RehLoopSep] BehxIni.outD2H' lookup KernBottom HahFin;
+    sub [RehFin.inD4B RehFin.inD4 RehLoopFin.inD4B RehLoopFin.inD4] BehxIni.outD2H' lookup KernBottom lookup KernTop HahFin;
+    sub @RehFins BehxIni.outD2H' lookup KernBottom lookup KernTop HahFin;
+    sub [AlefSep AlefFin AlefFin.narrow AlefSep.LA] [BehxIni.outT3 BehxIni.outT3En]' lookup KernBottom lookup KernTop AinFin;
+    sub DalSep [BehxIni.outT3 BehxIni.outT3En]' lookup KernBottom AinFin;
+    sub DalFin [BehxIni.outT3 BehxIni.outT3En]' lookup KernBottom AinFin;
+    sub [RehSep RehLoopSep] [BehxIni.outT3 BehxIni.outT3En]' lookup KernBottom AinFin;
+    sub [RehFin.inD4B RehFin.inD4 RehLoopFin.inD4B RehLoopFin.inD4] [BehxIni.outT3 BehxIni.outT3En]' lookup KernBottom AinFin;
+    sub @RehFins [BehxIni.outT3 BehxIni.outT3En]' lookup KernBottom AinFin;
+    sub @Waws [BehxIni.outT3 BehxIni.outT3En]' lookup KernBottom AinFin;
+} KernIntro;
 ";
-name = "Kern sequences of isolates";
+name = "Top Level Kerning routine";
 },
 {
 code = "";
@@ -20539,7 +20537,6 @@ lookup DivNmCheck;
     lookup KafContext1;
     lookup KafContext2;
     lookup KernIntro;
-    lookup KernTriplet;
     lookup RemoveYBspFlag;
     lookup ChooseLargestSpacer;
 
