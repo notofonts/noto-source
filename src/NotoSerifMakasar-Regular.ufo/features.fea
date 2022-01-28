@@ -1,0 +1,69 @@
+@GDEF_base = [ uni11EE0 uni11EE1 uni11EE2 uni11EE4 uni11EE5 uni11EE6 uni11EEA uni11EEB uni11EEC uni11EED uni11EF0 uni11EF2 uni11EE3 uni11EE7 uni11EE8 uni11EE9 uni11EEE uni11EEF uni11EF1 ];
+
+@GDEF_mark = [ uni11EF3 uni11EF4 ];
+
+# Prefix: Languagesystems
+languagesystem maka dflt;
+
+feature abvs {
+script maka;
+lookup gsub_0_ii_liga {
+sub uni11EF3 uni11EF3 by i_i-makasar;
+} gsub_0_ii_liga ;
+} abvs;
+
+feature blws {
+script maka;
+lookup gsub_0_uu_liga {
+sub uni11EF4 uni11EF4 by u_u-makasar;
+} gsub_0_uu_liga ;
+} blws;
+
+feature mark {
+script maka ;
+lookup gpos_0_mark_to_base {
+markClass uni11EF3 <anchor -280 622> @_MARKCLASS_0_lookup_0;
+markClass uni11EF4 <anchor -342 -15> @_MARKCLASS_1_lookup_0;
+markClass i_i-makasar <anchor -280 622> @_MARKCLASS_0_lookup_0;
+markClass u_u-makasar <anchor -352 -14> @_MARKCLASS_1_lookup_0;
+position base uni11EE0 <anchor 425 563> mark @_MARKCLASS_0_lookup_0;
+position base uni11EE0 <anchor 410 -17> mark @_MARKCLASS_1_lookup_0;
+position base uni11EE1 <anchor 405 563> mark @_MARKCLASS_0_lookup_0;
+position base uni11EE1 <anchor 409 -17> mark @_MARKCLASS_1_lookup_0;
+position base uni11EE2 <anchor 375 563> mark @_MARKCLASS_0_lookup_0;
+position base uni11EE2 <anchor 370 -17> mark @_MARKCLASS_1_lookup_0;
+position base uni11EE4 <anchor 395 563> mark @_MARKCLASS_0_lookup_0;
+position base uni11EE4 <anchor 402 -17> mark @_MARKCLASS_1_lookup_0;
+position base uni11EE5 <anchor 395 563> mark @_MARKCLASS_0_lookup_0;
+position base uni11EE5 <anchor 399 -17> mark @_MARKCLASS_1_lookup_0;
+position base uni11EE6 <anchor 405 563> mark @_MARKCLASS_0_lookup_0;
+position base uni11EE6 <anchor 399 -17> mark @_MARKCLASS_1_lookup_0;
+position base uni11EEA <anchor 394 563> mark @_MARKCLASS_0_lookup_0;
+position base uni11EEA <anchor 400 -17> mark @_MARKCLASS_1_lookup_0;
+position base uni11EEB <anchor 504 563> mark @_MARKCLASS_0_lookup_0;
+position base uni11EEB <anchor 519 -17> mark @_MARKCLASS_1_lookup_0;
+position base uni11EEC <anchor 425 563> mark @_MARKCLASS_0_lookup_0;
+position base uni11EEC <anchor 410 -17> mark @_MARKCLASS_1_lookup_0;
+position base uni11EED <anchor 275 563> mark @_MARKCLASS_0_lookup_0;
+position base uni11EED <anchor 286 -17> mark @_MARKCLASS_1_lookup_0;
+position base uni11EF0 <anchor 195 563> mark @_MARKCLASS_0_lookup_0;
+position base uni11EF0 <anchor 219 -17> mark @_MARKCLASS_1_lookup_0;
+position base uni11EF2 <anchor 265 563> mark @_MARKCLASS_0_lookup_0;
+position base uni11EF2 <anchor 279 -17> mark @_MARKCLASS_1_lookup_0;
+position base uni11EE3 <anchor 481 663> mark @_MARKCLASS_0_lookup_0;
+position base uni11EE3 <anchor 318 -17> mark @_MARKCLASS_1_lookup_0;
+position base uni11EE7 <anchor 481 663> mark @_MARKCLASS_0_lookup_0;
+position base uni11EE7 <anchor 389 -17> mark @_MARKCLASS_1_lookup_0;
+position base uni11EE8 <anchor 425 563> mark @_MARKCLASS_0_lookup_0;
+position base uni11EE8 <anchor 429 -17> mark @_MARKCLASS_1_lookup_0;
+position base uni11EE9 <anchor 334 563> mark @_MARKCLASS_0_lookup_0;
+position base uni11EE9 <anchor 338 -17> mark @_MARKCLASS_1_lookup_0;
+position base uni11EEE <anchor 270 663> mark @_MARKCLASS_0_lookup_0;
+position base uni11EEE <anchor 249 -17> mark @_MARKCLASS_1_lookup_0;
+position base uni11EEF <anchor 575 663> mark @_MARKCLASS_0_lookup_0;
+position base uni11EEF <anchor 435 -17> mark @_MARKCLASS_1_lookup_0;
+position base uni11EF1 <anchor 273 663> mark @_MARKCLASS_0_lookup_0;
+position base uni11EF1 <anchor 289 -17> mark @_MARKCLASS_1_lookup_0;
+} gpos_0_mark_to_base;
+} mark;
+
