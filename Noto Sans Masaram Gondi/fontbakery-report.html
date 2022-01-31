@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+                <html lang="en">
+                    <head>
+                        <meta charset="utf-8">
+                        <title>Fontbakery Check Report</title>
+                        <style>
+                            
+            html {
+                font-family: sans-serif;
+            }
+
+            h2 {
+                margin-top: 2em;
+            }
+
+            h3 {
+                margin-bottom: 1px;
+            }
+
+            table {
+                border-collapse: collapse;
+            }
+
+            th,
+            td {
+                border: 1px solid #ddd;
+                padding: 0.5em
+            }
+
+            tr:nth-child(even) {
+                background-color: #f2f2f2;
+            }
+
+            tr {
+                text-align: left;
+            }
+
+            ul {
+                margin-top: 0;
+            }
+
+            .details_item {
+                list-style: none;
+                display: flex;
+                align-items: baseline;
+            }
+
+            .details_indicator {
+                flex: 0 0 5em;
+                font-weight: bold;
+                padding-right: 0.5em;
+                text-align: right;
+            }
+
+            .details_text {
+                flex: 1 0;
+            }
+            
+                        </style>
+                    </head>
+                    <body>
+                    <h1>Fontbakery Technical Report</h1>
+<div>If you think a check is flawed or have an idea for a check, please  file an issue at <a href='https://github.com/googlefonts/fontbakery/issues'>https://github.com/googlefonts/fontbakery/issues</a> and remember to include a pointer to the repo and branch you're checking.</div>
+<h2>Summary</h2>
+            <table>
+            <tr>
+                <th>💥 ERROR</th>
+                <th>🔥 FAIL</th>
+                <th>⚠️ WARN</th>
+                <th>⏩ SKIP</th>
+                <th>ℹ️ INFO</th>
+                <th>✔️ PASS</th>
+            </tr>
+            <tr>
+                <td>0</td>
+                <td>6</td>
+                <td>10</td>
+                <td>43</td>
+                <td>4</td>
+                <td>92</td>
+            </tr>
+            <tr>
+                <td>0%</td>
+                <td>8%</td>
+                <td>14%</td>
+                <td>61%</td>
+                <td>6%</td>
+                <td>130%</td>
+            </tr>
+            </table>
+            
+<p><strong>Note:</strong> The following loglevels were omitted in this report: SKIP, INFO, PASS, DEBUG</p>
+<h2>&lt;Section: Universal&gt; 🔥🔥🔥🔥⚠️⚠️⏩⏩⏩⏩⏩⏩⏩⏩⏩ℹ️ℹ️ℹ️ℹ️</h2>
+<h3>Checking OS/2 usWinAscent & usWinDescent.</h3>
+<div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/family/win_ascent_and_descent&gt;</div>
+<details><summary>🔥 <strong>output/Noto Sans Masaram Gondi/unhinted/ttf/NotoSansMasaramGondi-Regular.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>🔥 FAIL</span><span class='details_text'><p>OS/2.usWinDescent value should be equal or greater than 213, but got 200 instead. [code: descent]</p>
+</span></li></ul></div></details>
+<details><summary>🔥 <strong>output/Noto Sans Masaram Gondi/unhinted/variable-ttf/NotoSansMasaramGondi[wght].ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>🔥 FAIL</span><span class='details_text'><p>OS/2.usWinDescent value should be equal or greater than 213, but got 200 instead. [code: descent]</p>
+</span></li></ul></div></details>
+<h3>Checking OS/2 Metrics match hhea Metrics.</h3>
+<div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/os2_metrics_match_hhea&gt;</div>
+<details><summary>🔥 <strong>output/Noto Sans Masaram Gondi/unhinted/ttf/NotoSansMasaramGondi-Regular.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>🔥 FAIL</span><span class='details_text'><p>OS/2 sTypoAscender (827) and hhea ascent (1000) must be equal. [code: ascender]</p>
+</span></li></ul></div></details>
+<details><summary>🔥 <strong>output/Noto Sans Masaram Gondi/unhinted/variable-ttf/NotoSansMasaramGondi[wght].ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>🔥 FAIL</span><span class='details_text'><p>OS/2 sTypoAscender (827) and hhea ascent (1000) must be equal. [code: ascender]</p>
+</span></li></ul></div></details>
+<h3>Check font contains no unreachable glyphs</h3>
+<div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/unreachable_glyphs&gt;</div>
+<details><summary>⚠️ <strong>output/Noto Sans Masaram Gondi/unhinted/ttf/NotoSansMasaramGondi-Regular.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>The following glyphs could not be reached by codepoint or substitution rules:
+- MatraVocalicLL.MGondi
+- MatraVocalicRR.MGondi
+- And MatraVocalicL.MGondi
+[code: unreachable-glyphs]</p>
+</span></li></ul></div></details>
+<details><summary>⚠️ <strong>output/Noto Sans Masaram Gondi/unhinted/variable-ttf/NotoSansMasaramGondi[wght].ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>The following glyphs could not be reached by codepoint or substitution rules:
+- MatraVocalicLL.MGondi
+- MatraVocalicRR.MGondi
+- And MatraVocalicL.MGondi
+[code: unreachable-glyphs]</p>
+</span></li></ul></div></details>
+<h2>&lt;Section: fontbakery.profiles.os2&gt; 🔥🔥</h2>
+<h3>Fonts have consistent PANOSE proportion?</h3>
+<div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/family/panose_proportion&gt;</div>
+<details><summary>🔥 <strong>Family check</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>🔥 FAIL</span><span class='details_text'><p>PANOSE proportion is not the same across this family. In order to fix this, please make sure that the panose.bProportion value is the same in the OS/2 table of all of this family font files. [code: inconsistency]</p>
+</span></li></ul></div></details>
+<h3>Fonts have consistent PANOSE family type?</h3>
+<div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/family/panose_familytype&gt;</div>
+<details><summary>🔥 <strong>Family check</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>🔥 FAIL</span><span class='details_text'><p>PANOSE family type is not the same across this family. In order to fix this, please make sure that the panose.bFamilyType value is the same in the OS/2 table of all of this family font files. [code: inconsistency]</p>
+</span></li></ul></div></details>
+<h2>&lt;Section: fontbakery.profiles.hhea&gt; ⚠️⚠️</h2>
+<h3>Checking Vertical Metric Linegaps.</h3>
+<div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/linegaps&gt;</div>
+<details><summary>⚠️ <strong>output/Noto Sans Masaram Gondi/unhinted/ttf/NotoSansMasaramGondi-Regular.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>OS/2 sTypoLineGap is not equal to 0. [code: OS/2]</p>
+</span></li></ul></div></details>
+<details><summary>⚠️ <strong>output/Noto Sans Masaram Gondi/unhinted/variable-ttf/NotoSansMasaramGondi[wght].ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>OS/2 sTypoLineGap is not equal to 0. [code: OS/2]</p>
+</span></li></ul></div></details>
+<h2>&lt;Section: fontbakery.profiles.gdef&gt; ⚠️⚠️</h2>
+<h3>Check mark characters are in GDEF mark glyph class.</h3>
+<div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/gdef_mark_chars&gt;</div>
+<details><summary>⚠️ <strong>output/Noto Sans Masaram Gondi/unhinted/ttf/NotoSansMasaramGondi-Regular.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>The following mark characters could be in the GDEF mark glyph class:
+Anusvara.MGondi (U+11D40), Chandra.MGondi (U+11D43), Halanta.MGondi (U+11D44), MatraAa.MGondi (U+11D31), MatraAi.MGondi (U+11D3C), MatraAu.MGondi (U+11D3F), MatraE.MGondi (U+11D3A), MatraI.MGondi (U+11D32), MatraIi.MGondi (U+11D33), MatraO.MGondi (U+11D3D) and 6 more.</p>
+<p>Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]</p>
+</span></li></ul></div></details>
+<details><summary>⚠️ <strong>output/Noto Sans Masaram Gondi/unhinted/variable-ttf/NotoSansMasaramGondi[wght].ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>The following mark characters could be in the GDEF mark glyph class:
+Anusvara.MGondi (U+11D40), Chandra.MGondi (U+11D43), Halanta.MGondi (U+11D44), MatraAa.MGondi (U+11D31), MatraAi.MGondi (U+11D3C), MatraAu.MGondi (U+11D3F), MatraE.MGondi (U+11D3A), MatraI.MGondi (U+11D32), MatraIi.MGondi (U+11D33), MatraO.MGondi (U+11D3D) and 6 more.</p>
+<p>Use -F or --full-lists to disable shortening of long lists. [code: mark-chars]</p>
+</span></li></ul></div></details>
+<h2>&lt;Section: Outline Correctness Checks&gt; ⚠️⚠️⚠️⚠️⏩⏩⏩⏩</h2>
+<h3>Are there any misaligned on-curve points?</h3>
+<div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/outline_alignment_miss&gt;</div>
+<details><summary>⚠️ <strong>output/Noto Sans Masaram Gondi/unhinted/ttf/NotoSansMasaramGondi-Regular.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>The following glyphs have on-curve points which have potentially incorrect y coordinates:
+* exclam.MGondi (U+0021): X=177.5,Y=2.0 (should be at baseline 0?)
+* exclam.MGondi (U+0021): X=90.0,Y=2.0 (should be at baseline 0?)
+* period.MGondi (U+002E): X=177.5,Y=2.0 (should be at baseline 0?)
+* period.MGondi (U+002E): X=90.0,Y=2.0 (should be at baseline 0?)
+* colon.MGondi (U+003A): X=177.5,Y=2.0 (should be at baseline 0?)
+* colon.MGondi (U+003A): X=90.0,Y=2.0 (should be at baseline 0?)
+* question.MGondi (U+003F): X=370.0,Y=631.5 (should be at cap-height 630?)
+* question.MGondi (U+003F): X=254.0,Y=2.0 (should be at baseline 0?)
+* question.MGondi (U+003F): X=166.5,Y=2.0 (should be at baseline 0?)
+* ellipsis.MGondi (U+2026): X=177.5,Y=2.0 (should be at baseline 0?) and 11 more.</p>
+<p>Use -F or --full-lists to disable shortening of long lists. [code: found-misalignments]</p>
+</span></li></ul></div></details>
+<details><summary>⚠️ <strong>output/Noto Sans Masaram Gondi/unhinted/variable-ttf/NotoSansMasaramGondi[wght].ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>The following glyphs have on-curve points which have potentially incorrect y coordinates:
+* exclam.MGondi (U+0021): X=177.5,Y=2.0 (should be at baseline 0?)
+* exclam.MGondi (U+0021): X=90.0,Y=2.0 (should be at baseline 0?)
+* period.MGondi (U+002E): X=177.5,Y=2.0 (should be at baseline 0?)
+* period.MGondi (U+002E): X=90.0,Y=2.0 (should be at baseline 0?)
+* colon.MGondi (U+003A): X=177.5,Y=2.0 (should be at baseline 0?)
+* colon.MGondi (U+003A): X=90.0,Y=2.0 (should be at baseline 0?)
+* question.MGondi (U+003F): X=370.0,Y=631.5 (should be at cap-height 630?)
+* question.MGondi (U+003F): X=254.0,Y=2.0 (should be at baseline 0?)
+* question.MGondi (U+003F): X=166.5,Y=2.0 (should be at baseline 0?)
+* ellipsis.MGondi (U+2026): X=177.5,Y=2.0 (should be at baseline 0?) and 11 more.</p>
+<p>Use -F or --full-lists to disable shortening of long lists. [code: found-misalignments]</p>
+</span></li></ul></div></details>
+<h3>Are any segments inordinately short?</h3>
+<div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/outline_short_segments&gt;</div>
+<details><summary>⚠️ <strong>output/Noto Sans Masaram Gondi/unhinted/ttf/NotoSansMasaramGondi-Regular.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>The following glyphs have segments which seem very short:
+* Va.MGondi (U+11D28) contains a short segment B&lt;&lt;523.0,136.0&gt;-&lt;516.0,136.0&gt;-&lt;508.0,136.5&gt;&gt; and Va.MGondi (U+11D28) contains a short segment B&lt;&lt;508.0,136.5&gt;-&lt;500.0,137.0&gt;-&lt;492.0,138.0&gt;&gt; [code: found-short-segments]</p>
+</span></li></ul></div></details>
+<h3>Do outlines contain any semi-vertical or semi-horizontal lines?</h3>
+<div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/outline_semi_vertical&gt;</div>
+<details><summary>⚠️ <strong>output/Noto Sans Masaram Gondi/unhinted/ttf/NotoSansMasaramGondi-Regular.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>The following glyphs have semi-vertical/semi-horizontal lines:</p>
+<ul>
+<li>Ha.MGondi (U+11D2C): L&lt;&lt;182.0,630.0&gt;--&lt;180.0,178.0&gt;&gt;</li>
+<li>Jha.MGondi (U+11D14): L&lt;&lt;180.0,451.0&gt;--&lt;182.0,-1.0&gt;&gt;</li>
+<li>Na.MGondi (U+11D1F): L&lt;&lt;182.0,630.0&gt;--&lt;180.0,178.0&gt;&gt; and Six.MGondi (U+11D56): L&lt;&lt;187.0,630.0&gt;--&lt;185.0,178.0&gt;&gt; [code: found-semi-vertical]</li>
+</ul>
+</span></li></ul></div></details>
+                    </body>
+                </html>

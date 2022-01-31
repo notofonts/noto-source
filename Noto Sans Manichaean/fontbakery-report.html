@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+                <html lang="en">
+                    <head>
+                        <meta charset="utf-8">
+                        <title>Fontbakery Check Report</title>
+                        <style>
+                            
+            html {
+                font-family: sans-serif;
+            }
+
+            h2 {
+                margin-top: 2em;
+            }
+
+            h3 {
+                margin-bottom: 1px;
+            }
+
+            table {
+                border-collapse: collapse;
+            }
+
+            th,
+            td {
+                border: 1px solid #ddd;
+                padding: 0.5em
+            }
+
+            tr:nth-child(even) {
+                background-color: #f2f2f2;
+            }
+
+            tr {
+                text-align: left;
+            }
+
+            ul {
+                margin-top: 0;
+            }
+
+            .details_item {
+                list-style: none;
+                display: flex;
+                align-items: baseline;
+            }
+
+            .details_indicator {
+                flex: 0 0 5em;
+                font-weight: bold;
+                padding-right: 0.5em;
+                text-align: right;
+            }
+
+            .details_text {
+                flex: 1 0;
+            }
+            
+                        </style>
+                    </head>
+                    <body>
+                    <h1>Fontbakery Technical Report</h1>
+<div>If you think a check is flawed or have an idea for a check, please  file an issue at <a href='https://github.com/googlefonts/fontbakery/issues'>https://github.com/googlefonts/fontbakery/issues</a> and remember to include a pointer to the repo and branch you're checking.</div>
+<h2>Summary</h2>
+            <table>
+            <tr>
+                <th>💥 ERROR</th>
+                <th>🔥 FAIL</th>
+                <th>⚠️ WARN</th>
+                <th>⏩ SKIP</th>
+                <th>ℹ️ INFO</th>
+                <th>✔️ PASS</th>
+            </tr>
+            <tr>
+                <td>0</td>
+                <td>0</td>
+                <td>6</td>
+                <td>43</td>
+                <td>4</td>
+                <td>102</td>
+            </tr>
+            <tr>
+                <td>0%</td>
+                <td>0%</td>
+                <td>50%</td>
+                <td>358%</td>
+                <td>33%</td>
+                <td>850%</td>
+            </tr>
+            </table>
+            
+<p><strong>Note:</strong> The following loglevels were omitted in this report: SKIP, INFO, PASS, DEBUG</p>
+<h2>&lt;Section: fontbakery.profiles.gpos&gt; ⚠️⚠️</h2>
+<h3>Does GPOS table have kerning information? This check skips monospaced fonts as defined by post.isFixedPitch value</h3>
+<div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/gpos_kerning_info&gt;</div>
+<details><summary>⚠️ <strong>output/Noto Sans Manichaean/unhinted/ttf/NotoSansManichaean-Regular.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>GPOS table lacks kerning information. [code: lacks-kern-info]</p>
+</span></li></ul></div></details>
+<details><summary>⚠️ <strong>output/Noto Sans Manichaean/unhinted/variable-ttf/NotoSansManichaean[wght].ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>GPOS table lacks kerning information. [code: lacks-kern-info]</p>
+</span></li></ul></div></details>
+<h2>&lt;Section: Outline Correctness Checks&gt; ⚠️⚠️⚠️⚠️⏩⏩⏩⏩</h2>
+<h3>Are there any misaligned on-curve points?</h3>
+<div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/outline_alignment_miss&gt;</div>
+<details><summary>⚠️ <strong>output/Noto Sans Manichaean/unhinted/ttf/NotoSansManichaean-Regular.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>The following glyphs have on-curve points which have potentially incorrect y coordinates:
+* uniFE00 (U+FE00): X=576.0,Y=626.0 (should be at cap-height 625?)
+* uniFE00 (U+FE00): X=186.0,Y=623.0 (should be at cap-height 625?)
+* uniFE00 (U+FE00): X=223.0,Y=623.0 (should be at cap-height 625?)
+* uniFE00 (U+FE00): X=388.0,Y=623.0 (should be at cap-height 625?)
+* uniFE00 (U+FE00): X=426.0,Y=623.0 (should be at cap-height 625?)
+* u10AC0 (U+10AC0): X=465.0,Y=1.5 (should be at baseline 0?)
+* u10ACE (U+10ACE): X=461.0,Y=2.0 (should be at baseline 0?)
+* u10ACE (U+10ACE): X=372.0,Y=-2.0 (should be at baseline 0?)
+* u10ACF (U+10ACF): X=107.5,Y=-1.5 (should be at baseline 0?)
+* u10AD0 (U+10AD0): X=869.0,Y=-1.5 (should be at baseline 0?) and 7 more.</p>
+<p>Use -F or --full-lists to disable shortening of long lists. [code: found-misalignments]</p>
+</span></li></ul></div></details>
+<details><summary>⚠️ <strong>output/Noto Sans Manichaean/unhinted/variable-ttf/NotoSansManichaean[wght].ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>The following glyphs have on-curve points which have potentially incorrect y coordinates:
+* uniFE00 (U+FE00): X=186.0,Y=623.0 (should be at cap-height 625?)
+* uniFE00 (U+FE00): X=223.0,Y=623.0 (should be at cap-height 625?)
+* uniFE00 (U+FE00): X=388.0,Y=623.0 (should be at cap-height 625?)
+* uniFE00 (U+FE00): X=426.0,Y=623.0 (should be at cap-height 625?)
+* uniFE00 (U+FE00): X=576.0,Y=626.0 (should be at cap-height 625?)
+* u10AC0 (U+10AC0): X=465.0,Y=1.5 (should be at baseline 0?)
+* u10ACE (U+10ACE): X=372.0,Y=-2.0 (should be at baseline 0?)
+* u10ACE (U+10ACE): X=197.0,Y=1.0 (should be at baseline 0?)
+* u10ACE (U+10ACE): X=461.0,Y=2.0 (should be at baseline 0?)
+* u10ACF (U+10ACF): X=107.5,Y=-1.5 (should be at baseline 0?) and 8 more.</p>
+<p>Use -F or --full-lists to disable shortening of long lists. [code: found-misalignments]</p>
+</span></li></ul></div></details>
+<h3>Are any segments inordinately short?</h3>
+<div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/outline_short_segments&gt;</div>
+<details><summary>⚠️ <strong>output/Noto Sans Manichaean/unhinted/ttf/NotoSansManichaean-Regular.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>The following glyphs have segments which seem very short:
+* u10AC4 (U+10AC4) contains a short segment B&lt;&lt;214.0,576.0&gt;-&lt;214.0,569.0&gt;-&lt;210.0,561.0&gt;&gt;
+* u10AC6 (U+10AC6) contains a short segment B&lt;&lt;842.0,388.0&gt;-&lt;842.0,383.0&gt;-&lt;841.0,374.0&gt;&gt;
+* u10AC6 (U+10AC6) contains a short segment B&lt;&lt;841.0,374.0&gt;-&lt;840.0,365.0&gt;-&lt;838.0,354.0&gt;&gt;
+* u10ACB (U+10ACB) contains a short segment B&lt;&lt;374.0,573.0&gt;-&lt;374.0,566.0&gt;-&lt;370.0,560.0&gt;&gt;
+* u10ACB (U+10ACB) contains a short segment B&lt;&lt;370.0,560.0&gt;-&lt;366.0,554.0&gt;-&lt;361.0,548.0&gt;&gt;
+* u10ACC (U+10ACC) contains a short segment B&lt;&lt;374.0,573.0&gt;-&lt;374.0,566.0&gt;-&lt;370.0,560.0&gt;&gt;
+* u10ACC (U+10ACC) contains a short segment B&lt;&lt;370.0,560.0&gt;-&lt;366.0,554.0&gt;-&lt;361.0,548.0&gt;&gt;
+* u10ACD (U+10ACD) contains a short segment B&lt;&lt;76.0,105.0&gt;-&lt;84.0,105.0&gt;-&lt;91.0,101.0&gt;&gt;
+* u10ACD (U+10ACD) contains a short segment B&lt;&lt;91.0,101.0&gt;-&lt;98.0,97.0&gt;-&lt;105.0,92.0&gt;&gt;
+* u10ACD (U+10ACD) contains a short segment B&lt;&lt;592.0,393.0&gt;-&lt;592.0,388.0&gt;-&lt;591.5,377.0&gt;&gt; and 49 more.</p>
+<p>Use -F or --full-lists to disable shortening of long lists. [code: found-short-segments]</p>
+</span></li></ul></div></details>
+<h3>Do any segments have colinear vectors?</h3>
+<div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/outline_colinear_vectors&gt;</div>
+<details><summary>⚠️ <strong>output/Noto Sans Manichaean/unhinted/ttf/NotoSansManichaean-Regular.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>The following glyphs have colinear vectors:
+* u10AC4 (U+10AC4): L&lt;&lt;310.0,-68.0&gt;--&lt;308.0,-63.0&gt;&gt; -&gt; L&lt;&lt;308.0,-63.0&gt;--&lt;283.0,0.0&gt;&gt; [code: found-colinear-vectors]</p>
+</span></li></ul></div></details>
+                    </body>
+                </html>

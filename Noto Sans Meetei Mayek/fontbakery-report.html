@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+                <html lang="en">
+                    <head>
+                        <meta charset="utf-8">
+                        <title>Fontbakery Check Report</title>
+                        <style>
+                            
+            html {
+                font-family: sans-serif;
+            }
+
+            h2 {
+                margin-top: 2em;
+            }
+
+            h3 {
+                margin-bottom: 1px;
+            }
+
+            table {
+                border-collapse: collapse;
+            }
+
+            th,
+            td {
+                border: 1px solid #ddd;
+                padding: 0.5em
+            }
+
+            tr:nth-child(even) {
+                background-color: #f2f2f2;
+            }
+
+            tr {
+                text-align: left;
+            }
+
+            ul {
+                margin-top: 0;
+            }
+
+            .details_item {
+                list-style: none;
+                display: flex;
+                align-items: baseline;
+            }
+
+            .details_indicator {
+                flex: 0 0 5em;
+                font-weight: bold;
+                padding-right: 0.5em;
+                text-align: right;
+            }
+
+            .details_text {
+                flex: 1 0;
+            }
+            
+                        </style>
+                    </head>
+                    <body>
+                    <h1>Fontbakery Technical Report</h1>
+<div>If you think a check is flawed or have an idea for a check, please  file an issue at <a href='https://github.com/googlefonts/fontbakery/issues'>https://github.com/googlefonts/fontbakery/issues</a> and remember to include a pointer to the repo and branch you're checking.</div>
+<h2>Summary</h2>
+            <table>
+            <tr>
+                <th>💥 ERROR</th>
+                <th>🔥 FAIL</th>
+                <th>⚠️ WARN</th>
+                <th>⏩ SKIP</th>
+                <th>ℹ️ INFO</th>
+                <th>✔️ PASS</th>
+            </tr>
+            <tr>
+                <td>0</td>
+                <td>29</td>
+                <td>54</td>
+                <td>202</td>
+                <td>21</td>
+                <td>433</td>
+            </tr>
+            <tr>
+                <td>0%</td>
+                <td>8%</td>
+                <td>15%</td>
+                <td>56%</td>
+                <td>6%</td>
+                <td>119%</td>
+            </tr>
+            </table>
+            
+<p><strong>Note:</strong> The following loglevels were omitted in this report: SKIP, INFO, PASS, DEBUG</p>
+<h2>&lt;Section: Universal&gt; 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩ℹ️ℹ️ℹ️ℹ️ℹ️ℹ️ℹ️ℹ️ℹ️ℹ️ℹ️ℹ️ℹ️ℹ️ℹ️ℹ️ℹ️ℹ️ℹ️ℹ️</h2>
+<h3>Font has **proper** whitespace glyph names?</h3>
+<div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/whitespace_glyphnames&gt;</div>
+<details><summary>⚠️ <strong>output/Noto Sans Meetei Mayek/unhinted/ttf/NotoSansMeeteiMayek-Black.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>Glyph 0x00A0 is called &quot;nbspace&quot;: Change to &quot;uni00A0&quot; [code: not-recommended-00a0]</p>
+</span></li></ul></div></details>
+<details><summary>⚠️ <strong>output/Noto Sans Meetei Mayek/unhinted/ttf/NotoSansMeeteiMayek-Bold.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>Glyph 0x00A0 is called &quot;nbspace&quot;: Change to &quot;uni00A0&quot; [code: not-recommended-00a0]</p>
+</span></li></ul></div></details>
+<details><summary>⚠️ <strong>output/Noto Sans Meetei Mayek/unhinted/ttf/NotoSansMeeteiMayek-ExtraBold.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>Glyph 0x00A0 is called &quot;nbspace&quot;: Change to &quot;uni00A0&quot; [code: not-recommended-00a0]</p>
+</span></li></ul></div></details>
+<details><summary>⚠️ <strong>output/Noto Sans Meetei Mayek/unhinted/ttf/NotoSansMeeteiMayek-ExtraLight.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>Glyph 0x00A0 is called &quot;nbspace&quot;: Change to &quot;uni00A0&quot; [code: not-recommended-00a0]</p>
+</span></li></ul></div></details>
+<details><summary>⚠️ <strong>output/Noto Sans Meetei Mayek/unhinted/ttf/NotoSansMeeteiMayek-Light.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>Glyph 0x00A0 is called &quot;nbspace&quot;: Change to &quot;uni00A0&quot; [code: not-recommended-00a0]</p>
+</span></li></ul></div></details>
+<details><summary>⚠️ <strong>output/Noto Sans Meetei Mayek/unhinted/ttf/NotoSansMeeteiMayek-Medium.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>Glyph 0x00A0 is called &quot;nbspace&quot;: Change to &quot;uni00A0&quot; [code: not-recommended-00a0]</p>
+</span></li></ul></div></details>
+<details><summary>⚠️ <strong>output/Noto Sans Meetei Mayek/unhinted/ttf/NotoSansMeeteiMayek-Regular.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>Glyph 0x00A0 is called &quot;nbspace&quot;: Change to &quot;uni00A0&quot; [code: not-recommended-00a0]</p>
+</span></li></ul></div></details>
+<details><summary>⚠️ <strong>output/Noto Sans Meetei Mayek/unhinted/ttf/NotoSansMeeteiMayek-SemiBold.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>Glyph 0x00A0 is called &quot;nbspace&quot;: Change to &quot;uni00A0&quot; [code: not-recommended-00a0]</p>
+</span></li></ul></div></details>
+<details><summary>⚠️ <strong>output/Noto Sans Meetei Mayek/unhinted/ttf/NotoSansMeeteiMayek-Thin.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>Glyph 0x00A0 is called &quot;nbspace&quot;: Change to &quot;uni00A0&quot; [code: not-recommended-00a0]</p>
+</span></li></ul></div></details>
+<details><summary>⚠️ <strong>output/Noto Sans Meetei Mayek/unhinted/variable-ttf/NotoSansMeeteiMayek-MM[wght].ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>Glyph 0x00A0 is called &quot;nbspace&quot;: Change to &quot;uni00A0&quot; [code: not-recommended-00a0]</p>
+</span></li></ul></div></details>
+<h3>Glyph names are all valid?</h3>
+<div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/valid_glyphnames&gt;</div>
+<details><summary>🔥 <strong>output/Noto Sans Meetei Mayek/unhinted/ttf/NotoSansMeeteiMayek-Black.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>🔥 FAIL</span><span class='details_text'><p>The following glyph names do not comply with naming conventions: e-mtei, o-mtei, cha-mtei, nya-mtei, tta-mtei, ttha-mtei, dda-mtei, ddha-mtei, nna-mtei, sha-mtei and 70 more.</p>
+<p>Use -F or --full-lists to disable shortening of long lists.</p>
+<p>A glyph name must be entirely comprised of characters from the following set: A-Z a-z 0-9 .(period) <em>(underscore). A glyph name must not start with a digit or period. There are a few exceptions such as the special glyph &quot;.notdef&quot;. The glyph names &quot;twocents&quot;, &quot;a1&quot;, and &quot;</em>&quot; are all valid, while &quot;2cents&quot; and &quot;.twocents&quot; are not. [code: found-invalid-names]</p>
+</span></li></ul></div></details>
+<details><summary>🔥 <strong>output/Noto Sans Meetei Mayek/unhinted/ttf/NotoSansMeeteiMayek-Bold.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>🔥 FAIL</span><span class='details_text'><p>The following glyph names do not comply with naming conventions: e-mtei, o-mtei, cha-mtei, nya-mtei, tta-mtei, ttha-mtei, dda-mtei, ddha-mtei, nna-mtei, sha-mtei and 70 more.</p>
+<p>Use -F or --full-lists to disable shortening of long lists.</p>
+<p>A glyph name must be entirely comprised of characters from the following set: A-Z a-z 0-9 .(period) <em>(underscore). A glyph name must not start with a digit or period. There are a few exceptions such as the special glyph &quot;.notdef&quot;. The glyph names &quot;twocents&quot;, &quot;a1&quot;, and &quot;</em>&quot; are all valid, while &quot;2cents&quot; and &quot;.twocents&quot; are not. [code: found-invalid-names]</p>
+</span></li></ul></div></details>
+<details><summary>🔥 <strong>output/Noto Sans Meetei Mayek/unhinted/ttf/NotoSansMeeteiMayek-ExtraBold.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>🔥 FAIL</span><span class='details_text'><p>The following glyph names do not comply with naming conventions: e-mtei, o-mtei, cha-mtei, nya-mtei, tta-mtei, ttha-mtei, dda-mtei, ddha-mtei, nna-mtei, sha-mtei and 70 more.</p>
+<p>Use -F or --full-lists to disable shortening of long lists.</p>
+<p>A glyph name must be entirely comprised of characters from the following set: A-Z a-z 0-9 .(period) <em>(underscore). A glyph name must not start with a digit or period. There are a few exceptions such as the special glyph &quot;.notdef&quot;. The glyph names &quot;twocents&quot;, &quot;a1&quot;, and &quot;</em>&quot; are all valid, while &quot;2cents&quot; and &quot;.twocents&quot; are not. [code: found-invalid-names]</p>
+</span></li></ul></div></details>
+<details><summary>🔥 <strong>output/Noto Sans Meetei Mayek/unhinted/ttf/NotoSansMeeteiMayek-ExtraLight.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>🔥 FAIL</span><span class='details_text'><p>The following glyph names do not comply with naming conventions: e-mtei, o-mtei, cha-mtei, nya-mtei, tta-mtei, ttha-mtei, dda-mtei, ddha-mtei, nna-mtei, sha-mtei and 70 more.</p>
+<p>Use -F or --full-lists to disable shortening of long lists.</p>
+<p>A glyph name must be entirely comprised of characters from the following set: A-Z a-z 0-9 .(period) <em>(underscore). A glyph name must not start with a digit or period. There are a few exceptions such as the special glyph &quot;.notdef&quot;. The glyph names &quot;twocents&quot;, &quot;a1&quot;, and &quot;</em>&quot; are all valid, while &quot;2cents&quot; and &quot;.twocents&quot; are not. [code: found-invalid-names]</p>
+</span></li></ul></div></details>
+<details><summary>🔥 <strong>output/Noto Sans Meetei Mayek/unhinted/ttf/NotoSansMeeteiMayek-Light.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>🔥 FAIL</span><span class='details_text'><p>The following glyph names do not comply with naming conventions: e-mtei, o-mtei, cha-mtei, nya-mtei, tta-mtei, ttha-mtei, dda-mtei, ddha-mtei, nna-mtei, sha-mtei and 70 more.</p>
+<p>Use -F or --full-lists to disable shortening of long lists.</p>
+<p>A glyph name must be entirely comprised of characters from the following set: A-Z a-z 0-9 .(period) <em>(underscore). A glyph name must not start with a digit or period. There are a few exceptions such as the special glyph &quot;.notdef&quot;. The glyph names &quot;twocents&quot;, &quot;a1&quot;, and &quot;</em>&quot; are all valid, while &quot;2cents&quot; and &quot;.twocents&quot; are not. [code: found-invalid-names]</p>
+</span></li></ul></div></details>
+<details><summary>🔥 <strong>output/Noto Sans Meetei Mayek/unhinted/ttf/NotoSansMeeteiMayek-Medium.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>🔥 FAIL</span><span class='details_text'><p>The following glyph names do not comply with naming conventions: e-mtei, o-mtei, cha-mtei, nya-mtei, tta-mtei, ttha-mtei, dda-mtei, ddha-mtei, nna-mtei, sha-mtei and 70 more.</p>
+<p>Use -F or --full-lists to disable shortening of long lists.</p>
+<p>A glyph name must be entirely comprised of characters from the following set: A-Z a-z 0-9 .(period) <em>(underscore). A glyph name must not start with a digit or period. There are a few exceptions such as the special glyph &quot;.notdef&quot;. The glyph names &quot;twocents&quot;, &quot;a1&quot;, and &quot;</em>&quot; are all valid, while &quot;2cents&quot; and &quot;.twocents&quot; are not. [code: found-invalid-names]</p>
+</span></li></ul></div></details>
+<details><summary>🔥 <strong>output/Noto Sans Meetei Mayek/unhinted/ttf/NotoSansMeeteiMayek-Regular.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>🔥 FAIL</span><span class='details_text'><p>The following glyph names do not comply with naming conventions: e-mtei, o-mtei, cha-mtei, nya-mtei, tta-mtei, ttha-mtei, dda-mtei, ddha-mtei, nna-mtei, sha-mtei and 70 more.</p>
+<p>Use -F or --full-lists to disable shortening of long lists.</p>
+<p>A glyph name must be entirely comprised of characters from the following set: A-Z a-z 0-9 .(period) <em>(underscore). A glyph name must not start with a digit or period. There are a few exceptions such as the special glyph &quot;.notdef&quot;. The glyph names &quot;twocents&quot;, &quot;a1&quot;, and &quot;</em>&quot; are all valid, while &quot;2cents&quot; and &quot;.twocents&quot; are not. [code: found-invalid-names]</p>
+</span></li></ul></div></details>
+<details><summary>🔥 <strong>output/Noto Sans Meetei Mayek/unhinted/ttf/NotoSansMeeteiMayek-SemiBold.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>🔥 FAIL</span><span class='details_text'><p>The following glyph names do not comply with naming conventions: e-mtei, o-mtei, cha-mtei, nya-mtei, tta-mtei, ttha-mtei, dda-mtei, ddha-mtei, nna-mtei, sha-mtei and 70 more.</p>
+<p>Use -F or --full-lists to disable shortening of long lists.</p>
+<p>A glyph name must be entirely comprised of characters from the following set: A-Z a-z 0-9 .(period) <em>(underscore). A glyph name must not start with a digit or period. There are a few exceptions such as the special glyph &quot;.notdef&quot;. The glyph names &quot;twocents&quot;, &quot;a1&quot;, and &quot;</em>&quot; are all valid, while &quot;2cents&quot; and &quot;.twocents&quot; are not. [code: found-invalid-names]</p>
+</span></li></ul></div></details>
+<details><summary>🔥 <strong>output/Noto Sans Meetei Mayek/unhinted/ttf/NotoSansMeeteiMayek-Thin.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>🔥 FAIL</span><span class='details_text'><p>The following glyph names do not comply with naming conventions: e-mtei, o-mtei, cha-mtei, nya-mtei, tta-mtei, ttha-mtei, dda-mtei, ddha-mtei, nna-mtei, sha-mtei and 70 more.</p>
+<p>Use -F or --full-lists to disable shortening of long lists.</p>
+<p>A glyph name must be entirely comprised of characters from the following set: A-Z a-z 0-9 .(period) <em>(underscore). A glyph name must not start with a digit or period. There are a few exceptions such as the special glyph &quot;.notdef&quot;. The glyph names &quot;twocents&quot;, &quot;a1&quot;, and &quot;</em>&quot; are all valid, while &quot;2cents&quot; and &quot;.twocents&quot; are not. [code: found-invalid-names]</p>
+</span></li></ul></div></details>
+<details><summary>🔥 <strong>output/Noto Sans Meetei Mayek/unhinted/variable-ttf/NotoSansMeeteiMayek-MM[wght].ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>🔥 FAIL</span><span class='details_text'><p>The following glyph names do not comply with naming conventions: e-mtei, o-mtei, cha-mtei, nya-mtei, tta-mtei, ttha-mtei, dda-mtei, ddha-mtei, nna-mtei, sha-mtei and 70 more.</p>
+<p>Use -F or --full-lists to disable shortening of long lists.</p>
+<p>A glyph name must be entirely comprised of characters from the following set: A-Z a-z 0-9 .(period) <em>(underscore). A glyph name must not start with a digit or period. There are a few exceptions such as the special glyph &quot;.notdef&quot;. The glyph names &quot;twocents&quot;, &quot;a1&quot;, and &quot;</em>&quot; are all valid, while &quot;2cents&quot; and &quot;.twocents&quot; are not. [code: found-invalid-names]</p>
+</span></li></ul></div></details>
+<h3>Ensure indic fonts have the Indian Rupee Sign glyph. </h3>
+<div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/rupee&gt;</div>
+<details><summary>🔥 <strong>output/Noto Sans Meetei Mayek/unhinted/ttf/NotoSansMeeteiMayek-Black.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>🔥 FAIL</span><span class='details_text'><p>Please add a glyph for Indian Rupee Sign “₹” at codepoint U+20B9. [code: missing-rupee]</p>
+</span></li></ul></div></details>
+<details><summary>🔥 <strong>output/Noto Sans Meetei Mayek/unhinted/ttf/NotoSansMeeteiMayek-Bold.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>🔥 FAIL</span><span class='details_text'><p>Please add a glyph for Indian Rupee Sign “₹” at codepoint U+20B9. [code: missing-rupee]</p>
+</span></li></ul></div></details>
+<details><summary>🔥 <strong>output/Noto Sans Meetei Mayek/unhinted/ttf/NotoSansMeeteiMayek-ExtraBold.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>🔥 FAIL</span><span class='details_text'><p>Please add a glyph for Indian Rupee Sign “₹” at codepoint U+20B9. [code: missing-rupee]</p>
+</span></li></ul></div></details>
+<details><summary>🔥 <strong>output/Noto Sans Meetei Mayek/unhinted/ttf/NotoSansMeeteiMayek-ExtraLight.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>🔥 FAIL</span><span class='details_text'><p>Please add a glyph for Indian Rupee Sign “₹” at codepoint U+20B9. [code: missing-rupee]</p>
+</span></li></ul></div></details>
+<details><summary>🔥 <strong>output/Noto Sans Meetei Mayek/unhinted/ttf/NotoSansMeeteiMayek-Light.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>🔥 FAIL</span><span class='details_text'><p>Please add a glyph for Indian Rupee Sign “₹” at codepoint U+20B9. [code: missing-rupee]</p>
+</span></li></ul></div></details>
+<details><summary>🔥 <strong>output/Noto Sans Meetei Mayek/unhinted/ttf/NotoSansMeeteiMayek-Medium.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>🔥 FAIL</span><span class='details_text'><p>Please add a glyph for Indian Rupee Sign “₹” at codepoint U+20B9. [code: missing-rupee]</p>
+</span></li></ul></div></details>
+<details><summary>🔥 <strong>output/Noto Sans Meetei Mayek/unhinted/ttf/NotoSansMeeteiMayek-Regular.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>🔥 FAIL</span><span class='details_text'><p>Please add a glyph for Indian Rupee Sign “₹” at codepoint U+20B9. [code: missing-rupee]</p>
+</span></li></ul></div></details>
+<details><summary>🔥 <strong>output/Noto Sans Meetei Mayek/unhinted/ttf/NotoSansMeeteiMayek-SemiBold.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>🔥 FAIL</span><span class='details_text'><p>Please add a glyph for Indian Rupee Sign “₹” at codepoint U+20B9. [code: missing-rupee]</p>
+</span></li></ul></div></details>
+<details><summary>🔥 <strong>output/Noto Sans Meetei Mayek/unhinted/ttf/NotoSansMeeteiMayek-Thin.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>🔥 FAIL</span><span class='details_text'><p>Please add a glyph for Indian Rupee Sign “₹” at codepoint U+20B9. [code: missing-rupee]</p>
+</span></li></ul></div></details>
+<details><summary>🔥 <strong>output/Noto Sans Meetei Mayek/unhinted/variable-ttf/NotoSansMeeteiMayek-MM[wght].ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>🔥 FAIL</span><span class='details_text'><p>Please add a glyph for Indian Rupee Sign “₹” at codepoint U+20B9. [code: missing-rupee]</p>
+</span></li></ul></div></details>
+<h2>&lt;Section: fontbakery.profiles.name&gt; 🔥🔥🔥🔥🔥🔥🔥🔥🔥⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩ℹ️</h2>
+<h3>Does full font name begin with the font family name?</h3>
+<div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/name/match_familyname_fullfont&gt;</div>
+<details><summary>🔥 <strong>output/Noto Sans Meetei Mayek/unhinted/ttf/NotoSansMeeteiMayek-Black.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>🔥 FAIL</span><span class='details_text'><p>On the 'name' table, the full font name (NameID 4 - FULL_FONT_NAME: 'Noto Sans MeeteiMayek Black') does not begin with font family name (NameID 1 - FONT_FAMILY_NAME: 'Noto Sans Meetei Mayek Black') [code: does-not]</p>
+</span></li></ul></div></details>
+<details><summary>🔥 <strong>output/Noto Sans Meetei Mayek/unhinted/ttf/NotoSansMeeteiMayek-Bold.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>🔥 FAIL</span><span class='details_text'><p>On the 'name' table, the full font name (NameID 4 - FULL_FONT_NAME: 'Noto Sans MeeteiMayek') does not begin with font family name (NameID 1 - FONT_FAMILY_NAME: 'Noto Sans Meetei Mayek Bold') [code: does-not]</p>
+</span></li></ul></div></details>
+<details><summary>🔥 <strong>output/Noto Sans Meetei Mayek/unhinted/ttf/NotoSansMeeteiMayek-ExtraBold.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>🔥 FAIL</span><span class='details_text'><p>On the 'name' table, the full font name (NameID 4 - FULL_FONT_NAME: 'Noto Sans MeeteiMayek ExtraBold') does not begin with font family name (NameID 1 - FONT_FAMILY_NAME: 'Noto Sans Meetei Mayek ExtraBold') [code: does-not]</p>
+</span></li></ul></div></details>
+<details><summary>🔥 <strong>output/Noto Sans Meetei Mayek/unhinted/ttf/NotoSansMeeteiMayek-ExtraLight.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>🔥 FAIL</span><span class='details_text'><p>On the 'name' table, the full font name (NameID 4 - FULL_FONT_NAME: 'Noto Sans MeeteiMayek ExtraLight') does not begin with font family name (NameID 1 - FONT_FAMILY_NAME: 'Noto Sans Meetei Mayek ExtraLight') [code: does-not]</p>
+</span></li></ul></div></details>
+<details><summary>🔥 <strong>output/Noto Sans Meetei Mayek/unhinted/ttf/NotoSansMeeteiMayek-Light.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>🔥 FAIL</span><span class='details_text'><p>On the 'name' table, the full font name (NameID 4 - FULL_FONT_NAME: 'Noto Sans MeeteiMayek Light') does not begin with font family name (NameID 1 - FONT_FAMILY_NAME: 'Noto Sans Meetei Mayek Light') [code: does-not]</p>
+</span></li></ul></div></details>
+<details><summary>🔥 <strong>output/Noto Sans Meetei Mayek/unhinted/ttf/NotoSansMeeteiMayek-Medium.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>🔥 FAIL</span><span class='details_text'><p>On the 'name' table, the full font name (NameID 4 - FULL_FONT_NAME: 'Noto Sans MeeteiMayek Medium') does not begin with font family name (NameID 1 - FONT_FAMILY_NAME: 'Noto Sans Meetei Mayek Medium') [code: does-not]</p>
+</span></li></ul></div></details>
+<details><summary>🔥 <strong>output/Noto Sans Meetei Mayek/unhinted/ttf/NotoSansMeeteiMayek-Regular.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>🔥 FAIL</span><span class='details_text'><p>On the 'name' table, the full font name (NameID 4 - FULL_FONT_NAME: 'Noto Sans MeeteiMayek') does not begin with font family name (NameID 1 - FONT_FAMILY_NAME: 'Noto Sans Meetei Mayek Regular') [code: does-not]</p>
+</span></li></ul></div></details>
+<details><summary>🔥 <strong>output/Noto Sans Meetei Mayek/unhinted/ttf/NotoSansMeeteiMayek-SemiBold.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>🔥 FAIL</span><span class='details_text'><p>On the 'name' table, the full font name (NameID 4 - FULL_FONT_NAME: 'Noto Sans MeeteiMayek SemiBold') does not begin with font family name (NameID 1 - FONT_FAMILY_NAME: 'Noto Sans Meetei Mayek SemiBold') [code: does-not]</p>
+</span></li></ul></div></details>
+<details><summary>🔥 <strong>output/Noto Sans Meetei Mayek/unhinted/ttf/NotoSansMeeteiMayek-Thin.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>🔥 FAIL</span><span class='details_text'><p>On the 'name' table, the full font name (NameID 4 - FULL_FONT_NAME: 'Noto Sans MeeteiMayek Thin') does not begin with font family name (NameID 1 - FONT_FAMILY_NAME: 'Noto Sans Meetei Mayek Thin') [code: does-not]</p>
+</span></li></ul></div></details>
+<h2>&lt;Section: fontbakery.profiles.gdef&gt; ⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️</h2>
+<h3>Check GDEF mark glyph class doesn't have characters that are not marks.</h3>
+<div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/gdef_non_mark_chars&gt;</div>
+<details><summary>⚠️ <strong>output/Noto Sans Meetei Mayek/unhinted/ttf/NotoSansMeeteiMayek-Black.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>The following non-mark characters should not be in the GDEF mark glyph class:
+U+ABE9 and U+ABEA [code: non-mark-chars]</p>
+</span></li></ul></div></details>
+<details><summary>⚠️ <strong>output/Noto Sans Meetei Mayek/unhinted/ttf/NotoSansMeeteiMayek-Bold.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>The following non-mark characters should not be in the GDEF mark glyph class:
+U+ABE9 and U+ABEA [code: non-mark-chars]</p>
+</span></li></ul></div></details>
+<details><summary>⚠️ <strong>output/Noto Sans Meetei Mayek/unhinted/ttf/NotoSansMeeteiMayek-ExtraBold.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>The following non-mark characters should not be in the GDEF mark glyph class:
+U+ABE9 and U+ABEA [code: non-mark-chars]</p>
+</span></li></ul></div></details>
+<details><summary>⚠️ <strong>output/Noto Sans Meetei Mayek/unhinted/ttf/NotoSansMeeteiMayek-ExtraLight.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>The following non-mark characters should not be in the GDEF mark glyph class:
+U+ABE9 and U+ABEA [code: non-mark-chars]</p>
+</span></li></ul></div></details>
+<details><summary>⚠️ <strong>output/Noto Sans Meetei Mayek/unhinted/ttf/NotoSansMeeteiMayek-Light.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>The following non-mark characters should not be in the GDEF mark glyph class:
+U+ABE9 and U+ABEA [code: non-mark-chars]</p>
+</span></li></ul></div></details>
+<details><summary>⚠️ <strong>output/Noto Sans Meetei Mayek/unhinted/ttf/NotoSansMeeteiMayek-Medium.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>The following non-mark characters should not be in the GDEF mark glyph class:
+U+ABE9 and U+ABEA [code: non-mark-chars]</p>
+</span></li></ul></div></details>
+<details><summary>⚠️ <strong>output/Noto Sans Meetei Mayek/unhinted/ttf/NotoSansMeeteiMayek-Regular.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>The following non-mark characters should not be in the GDEF mark glyph class:
+U+ABE9 and U+ABEA [code: non-mark-chars]</p>
+</span></li></ul></div></details>
+<details><summary>⚠️ <strong>output/Noto Sans Meetei Mayek/unhinted/ttf/NotoSansMeeteiMayek-SemiBold.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>The following non-mark characters should not be in the GDEF mark glyph class:
+U+ABE9 and U+ABEA [code: non-mark-chars]</p>
+</span></li></ul></div></details>
+<details><summary>⚠️ <strong>output/Noto Sans Meetei Mayek/unhinted/ttf/NotoSansMeeteiMayek-Thin.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>The following non-mark characters should not be in the GDEF mark glyph class:
+U+ABE9 and U+ABEA [code: non-mark-chars]</p>
+</span></li></ul></div></details>
+<details><summary>⚠️ <strong>output/Noto Sans Meetei Mayek/unhinted/variable-ttf/NotoSansMeeteiMayek-MM[wght].ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>The following non-mark characters should not be in the GDEF mark glyph class:
+U+ABE9 and U+ABEA [code: non-mark-chars]</p>
+</span></li></ul></div></details>
+<h2>&lt;Section: fontbakery.profiles.gpos&gt; ⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️</h2>
+<h3>Does GPOS table have kerning information? This check skips monospaced fonts as defined by post.isFixedPitch value</h3>
+<div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/gpos_kerning_info&gt;</div>
+<details><summary>⚠️ <strong>output/Noto Sans Meetei Mayek/unhinted/ttf/NotoSansMeeteiMayek-Black.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>GPOS table lacks kerning information. [code: lacks-kern-info]</p>
+</span></li></ul></div></details>
+<details><summary>⚠️ <strong>output/Noto Sans Meetei Mayek/unhinted/ttf/NotoSansMeeteiMayek-Bold.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>GPOS table lacks kerning information. [code: lacks-kern-info]</p>
+</span></li></ul></div></details>
+<details><summary>⚠️ <strong>output/Noto Sans Meetei Mayek/unhinted/ttf/NotoSansMeeteiMayek-ExtraBold.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>GPOS table lacks kerning information. [code: lacks-kern-info]</p>
+</span></li></ul></div></details>
+<details><summary>⚠️ <strong>output/Noto Sans Meetei Mayek/unhinted/ttf/NotoSansMeeteiMayek-ExtraLight.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>GPOS table lacks kerning information. [code: lacks-kern-info]</p>
+</span></li></ul></div></details>
+<details><summary>⚠️ <strong>output/Noto Sans Meetei Mayek/unhinted/ttf/NotoSansMeeteiMayek-Light.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>GPOS table lacks kerning information. [code: lacks-kern-info]</p>
+</span></li></ul></div></details>
+<details><summary>⚠️ <strong>output/Noto Sans Meetei Mayek/unhinted/ttf/NotoSansMeeteiMayek-Medium.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>GPOS table lacks kerning information. [code: lacks-kern-info]</p>
+</span></li></ul></div></details>
+<details><summary>⚠️ <strong>output/Noto Sans Meetei Mayek/unhinted/ttf/NotoSansMeeteiMayek-Regular.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>GPOS table lacks kerning information. [code: lacks-kern-info]</p>
+</span></li></ul></div></details>
+<details><summary>⚠️ <strong>output/Noto Sans Meetei Mayek/unhinted/ttf/NotoSansMeeteiMayek-SemiBold.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>GPOS table lacks kerning information. [code: lacks-kern-info]</p>
+</span></li></ul></div></details>
+<details><summary>⚠️ <strong>output/Noto Sans Meetei Mayek/unhinted/ttf/NotoSansMeeteiMayek-Thin.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>GPOS table lacks kerning information. [code: lacks-kern-info]</p>
+</span></li></ul></div></details>
+<details><summary>⚠️ <strong>output/Noto Sans Meetei Mayek/unhinted/variable-ttf/NotoSansMeeteiMayek-MM[wght].ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>GPOS table lacks kerning information. [code: lacks-kern-info]</p>
+</span></li></ul></div></details>
+<h2>&lt;Section: Outline Correctness Checks&gt; ⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⏩⏩⏩⏩</h2>
+<h3>Are there any misaligned on-curve points?</h3>
+<div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/outline_alignment_miss&gt;</div>
+<details><summary>⚠️ <strong>output/Noto Sans Meetei Mayek/unhinted/ttf/NotoSansMeeteiMayek-Black.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>The following glyphs have on-curve points which have potentially incorrect y coordinates:
+* cha-mtei (U+AAE2): X=226.5,Y=-0.5 (should be at baseline 0?)
+* cha-mtei (U+AAE2): X=627.5,Y=-0.5 (should be at baseline 0?)
+* tta-mtei (U+AAE4): X=840.0,Y=660.5 (should be at cap-height 659?)
+* dda-mtei (U+AAE6): X=361.0,Y=657.5 (should be at cap-height 659?)
+* ddha-mtei (U+AAE7): X=327.0,Y=660.0 (should be at cap-height 659?)
+* ddha-mtei (U+AAE7): X=635.0,Y=660.5 (should be at cap-height 659?)
+* sha-mtei (U+AAE9): X=918.0,Y=-1.5 (should be at baseline 0?)
+* sha-mtei (U+AAE9): X=763.5,Y=-1.5 (should be at baseline 0?)
+* sha-mtei (U+AAE9): X=415.5,Y=-1.5 (should be at baseline 0?)
+* sha-mtei (U+AAE9): X=261.0,Y=-1.5 (should be at baseline 0?) and 12 more.</p>
+<p>Use -F or --full-lists to disable shortening of long lists. [code: found-misalignments]</p>
+</span></li></ul></div></details>
+<details><summary>⚠️ <strong>output/Noto Sans Meetei Mayek/unhinted/ttf/NotoSansMeeteiMayek-Bold.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>The following glyphs have on-curve points which have potentially incorrect y coordinates:
+* cha-mtei (U+AAE2): X=212.0,Y=2.0 (should be at baseline 0?)
+* cha-mtei (U+AAE2): X=621.0,Y=2.0 (should be at baseline 0?)
+* sha-mtei (U+AAE9): X=901.0,Y=0.5 (should be at baseline 0?)
+* sha-mtei (U+AAE9): X=755.0,Y=0.5 (should be at baseline 0?)
+* sha-mtei (U+AAE9): X=403.5,Y=0.5 (should be at baseline 0?)
+* sha-mtei (U+AAE9): X=257.0,Y=0.5 (should be at baseline 0?)
+* virama-mtei (U+AAF6): X=-545.0,Y=-320.0 (should be at descender -321?)
+* virama-mtei (U+AAF6): X=-447.0,Y=-320.0 (should be at descender -321?)
+* sam-mtei (U+ABC1): X=328.5,Y=660.0 (should be at cap-height 659?)
+* sam-mtei (U+ABC1): X=540.0,Y=660.0 (should be at cap-height 659?) and 11 more.</p>
+<p>Use -F or --full-lists to disable shortening of long lists. [code: found-misalignments]</p>
+</span></li></ul></div></details>
+<details><summary>⚠️ <strong>output/Noto Sans Meetei Mayek/unhinted/ttf/NotoSansMeeteiMayek-ExtraBold.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>The following glyphs have on-curve points which have potentially incorrect y coordinates:
+* cha-mtei (U+AAE2): X=218.5,Y=0.5 (should be at baseline 0?)
+* cha-mtei (U+AAE2): X=624.0,Y=0.5 (should be at baseline 0?)
+* tta-mtei (U+AAE4): X=830.5,Y=658.0 (should be at cap-height 659?)
+* ddha-mtei (U+AAE7): X=327.0,Y=657.0 (should be at cap-height 659?)
+* ddha-mtei (U+AAE7): X=630.5,Y=658.0 (should be at cap-height 659?)
+* sha-mtei (U+AAE9): X=908.5,Y=-0.5 (should be at baseline 0?)
+* sha-mtei (U+AAE9): X=759.0,Y=-1.0 (should be at baseline 0?)
+* sha-mtei (U+AAE9): X=409.0,Y=-0.5 (should be at baseline 0?)
+* sha-mtei (U+AAE9): X=259.0,Y=-0.5 (should be at baseline 0?)
+* syllableRepetitionMark-mtei (U+AAF3): X=250.5,Y=660.0 (should be at cap-height 659?) and 10 more.</p>
+<p>Use -F or --full-lists to disable shortening of long lists. [code: found-misalignments]</p>
+</span></li></ul></div></details>
+<details><summary>⚠️ <strong>output/Noto Sans Meetei Mayek/unhinted/ttf/NotoSansMeeteiMayek-ExtraLight.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>The following glyphs have on-curve points which have potentially incorrect y coordinates:
+* o-mtei (U+AAE1): X=326.0,Y=-2.0 (should be at baseline 0?)
+* dda-mtei (U+AAE6): X=499.0,Y=-1.0 (should be at baseline 0?)
+* dda-mtei (U+AAE6): X=327.0,Y=-1.0 (should be at baseline 0?)
+* nna-mtei (U+AAE8): X=432.0,Y=2.0 (should be at baseline 0?)
+* visargaMatra-mtei (U+AAF5): X=137.0,Y=660.0 (should be at cap-height 659?)
+* sam-mtei (U+ABC1): X=326.0,Y=-1.0 (should be at baseline 0?)
+* sam-mtei (U+ABC1): X=481.0,Y=-1.0 (should be at baseline 0?)
+* ghou-mtei (U+ABD8): X=686.5,Y=-0.5 (should be at baseline 0?) and yenapMatra-mtei (U+ABE6): X=137.0,Y=660.0 (should be at cap-height 659?) [code: found-misalignments]</p>
+</span></li></ul></div></details>
+<details><summary>⚠️ <strong>output/Noto Sans Meetei Mayek/unhinted/ttf/NotoSansMeeteiMayek-Light.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>The following glyphs have on-curve points which have potentially incorrect y coordinates:
+* o-mtei (U+AAE1): X=336.0,Y=-1.0 (should be at baseline 0?)
+* dda-mtei (U+AAE6): X=511.0,Y=-1.0 (should be at baseline 0?)
+* dda-mtei (U+AAE6): X=329.0,Y=-1.0 (should be at baseline 0?)
+* wordRepetitionMark-mtei (U+AAF4): X=50.0,Y=660.0 (should be at cap-height 659?)
+* visargaMatra-mtei (U+AAF5): X=142.0,Y=661.0 (should be at cap-height 659?)
+* sam-mtei (U+ABC1): X=327.0,Y=-1.0 (should be at baseline 0?)
+* sam-mtei (U+ABC1): X=494.0,Y=-1.0 (should be at baseline 0?)
+* yang-mtei (U+ABCC): X=733.5,Y=-1.0 (should be at baseline 0?)
+* ghou-mtei (U+ABD8): X=695.0,Y=-0.5 (should be at baseline 0?) and yenapMatra-mtei (U+ABE6): X=142.0,Y=661.0 (should be at cap-height 659?) [code: found-misalignments]</p>
+</span></li></ul></div></details>
+<details><summary>⚠️ <strong>output/Noto Sans Meetei Mayek/unhinted/ttf/NotoSansMeeteiMayek-Medium.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>The following glyphs have on-curve points which have potentially incorrect y coordinates:
+* o-mtei (U+AAE1): X=352.0,Y=-2.0 (should be at baseline 0?)
+* virama-mtei (U+AAF6): X=-534.0,Y=-319.0 (should be at descender -321?)
+* virama-mtei (U+AAF6): X=-458.0,Y=-319.0 (should be at descender -321?)
+* mit-mtei (U+ABC3): X=732.0,Y=1.0 (should be at baseline 0?)
+* pa-mtei (U+ABC4): X=944.0,Y=-2.0 (should be at baseline 0?)
+* pa-mtei (U+ABC4): X=58.0,Y=-2.0 (should be at baseline 0?)
+* chil-mtei (U+ABC6): X=733.0,Y=-2.0 (should be at baseline 0?)
+* chil-mtei (U+ABC6): X=58.0,Y=-2.0 (should be at baseline 0?)
+* til-mtei (U+ABC7): X=724.0,Y=658.0 (should be at cap-height 659?)
+* khou-mtei (U+ABC8): X=58.0,Y=-2.0 (should be at baseline 0?) and 20 more.</p>
+<p>Use -F or --full-lists to disable shortening of long lists. [code: found-misalignments]</p>
+</span></li></ul></div></details>
+<details><summary>⚠️ <strong>output/Noto Sans Meetei Mayek/unhinted/ttf/NotoSansMeeteiMayek-Regular.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>The following glyphs have on-curve points which have potentially incorrect y coordinates:
+* dda-mtei (U+AAE6): X=531.0,Y=-1.0 (should be at baseline 0?)
+* dda-mtei (U+AAE6): X=331.0,Y=-1.0 (should be at baseline 0?)
+* wordRepetitionMark-mtei (U+AAF4): X=50.0,Y=661.0 (should be at cap-height 659?)
+* sam-mtei (U+ABC1): X=327.0,Y=-1.0 (should be at baseline 0?)
+* sam-mtei (U+ABC1): X=515.0,Y=-1.0 (should be at baseline 0?)
+* mit-mtei (U+ABC3): X=715.0,Y=1.0 (should be at baseline 0?)
+* til-mtei (U+ABC7): X=707.0,Y=661.0 (should be at cap-height 659?)
+* huk-mtei (U+ABCD): X=72.0,Y=1.0 (should be at baseline 0?)
+* jham-mtei (U+ABD3): X=372.5,Y=2.0 (should be at baseline 0?)
+* ghou-mtei (U+ABD8): X=708.5,Y=-2.0 (should be at baseline 0?) and 4 more.</p>
+<p>Use -F or --full-lists to disable shortening of long lists. [code: found-misalignments]</p>
+</span></li></ul></div></details>
+<details><summary>⚠️ <strong>output/Noto Sans Meetei Mayek/unhinted/ttf/NotoSansMeeteiMayek-SemiBold.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>The following glyphs have on-curve points which have potentially incorrect y coordinates:
+* sha-mtei (U+AAE9): X=891.0,Y=1.5 (should be at baseline 0?)
+* sha-mtei (U+AAE9): X=750.0,Y=1.5 (should be at baseline 0?)
+* sha-mtei (U+AAE9): X=396.5,Y=1.5 (should be at baseline 0?)
+* sha-mtei (U+AAE9): X=255.0,Y=1.5 (should be at baseline 0?)
+* syllableRepetitionMark-mtei (U+AAF3): X=245.0,Y=657.0 (should be at cap-height 659?)
+* syllableRepetitionMark-mtei (U+AAF3): X=390.0,Y=657.0 (should be at cap-height 659?)
+* virama-mtei (U+AAF6): X=-539.0,Y=-319.0 (should be at descender -321?)
+* virama-mtei (U+AAF6): X=-453.0,Y=-319.0 (should be at descender -321?)
+* sam-mtei (U+ABC1): X=326.5,Y=658.5 (should be at cap-height 659?)
+* pham-mtei (U+ABD0): X=486.0,Y=2.0 (should be at baseline 0?) and 8 more.</p>
+<p>Use -F or --full-lists to disable shortening of long lists. [code: found-misalignments]</p>
+</span></li></ul></div></details>
+<details><summary>⚠️ <strong>output/Noto Sans Meetei Mayek/unhinted/ttf/NotoSansMeeteiMayek-Thin.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>The following glyphs have on-curve points which have potentially incorrect y coordinates:
+* dda-mtei (U+AAE6): X=491.0,Y=-1.0 (should be at baseline 0?)
+* dda-mtei (U+AAE6): X=326.0,Y=-1.0 (should be at baseline 0?)
+* sam-mtei (U+ABC1): X=326.0,Y=-1.0 (should be at baseline 0?)
+* sam-mtei (U+ABC1): X=472.0,Y=-1.0 (should be at baseline 0?) and mit-mtei (U+ABC3): X=674.0,Y=-1.0 (should be at baseline 0?) [code: found-misalignments]</p>
+</span></li></ul></div></details>
+<details><summary>⚠️ <strong>output/Noto Sans Meetei Mayek/unhinted/variable-ttf/NotoSansMeeteiMayek-MM[wght].ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>The following glyphs have on-curve points which have potentially incorrect y coordinates:
+* dda-mtei (U+AAE6): X=331.0,Y=-1.0 (should be at baseline 0?)
+* dda-mtei (U+AAE6): X=531.0,Y=-1.0 (should be at baseline 0?)
+* wordRepetitionMark-mtei (U+AAF4): X=50.0,Y=661.0 (should be at cap-height 659?)
+* sam-mtei (U+ABC1): X=327.0,Y=-1.0 (should be at baseline 0?)
+* sam-mtei (U+ABC1): X=515.0,Y=-1.0 (should be at baseline 0?)
+* mit-mtei (U+ABC3): X=715.0,Y=1.0 (should be at baseline 0?)
+* til-mtei (U+ABC7): X=707.0,Y=661.0 (should be at cap-height 659?)
+* huk-mtei (U+ABCD): X=72.0,Y=1.0 (should be at baseline 0?)
+* jham-mtei (U+ABD3): X=372.5,Y=2.0 (should be at baseline 0?)
+* dil-mtei (U+ABD7): X=720.0,Y=2.0 (should be at baseline 0?) and 8 more.</p>
+<p>Use -F or --full-lists to disable shortening of long lists. [code: found-misalignments]</p>
+</span></li></ul></div></details>
+<h3>Are any segments inordinately short?</h3>
+<div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/outline_short_segments&gt;</div>
+<details><summary>⚠️ <strong>output/Noto Sans Meetei Mayek/unhinted/ttf/NotoSansMeeteiMayek-Black.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>The following glyphs have segments which seem very short:
+* cha-mtei (U+AAE2) contains a short segment B&lt;&lt;109.0,115.0&gt;-&lt;117.0,116.0&gt;-&lt;132.0,119.0&gt;&gt;
+* cha-mtei (U+AAE2) contains a short segment B&lt;&lt;722.5,119.0&gt;-&lt;738.0,116.0&gt;-&lt;745.0,115.0&gt;&gt;
+* tta-mtei (U+AAE4) contains a short segment B&lt;&lt;333.0,452.0&gt;-&lt;326.0,443.0&gt;-&lt;319.0,433.0&gt;&gt;
+* tta-mtei (U+AAE4) contains a short segment B&lt;&lt;598.0,435.0&gt;-&lt;592.0,443.0&gt;-&lt;585.0,452.0&gt;&gt;
+* khou-mtei (U+ABC8) contains a short segment B&lt;&lt;633.0,212.0&gt;-&lt;633.0,198.0&gt;-&lt;639.0,192.5&gt;&gt;
+* khou-mtei (U+ABC8) contains a short segment B&lt;&lt;639.0,192.5&gt;-&lt;645.0,187.0&gt;-&lt;654.0,187.0&gt;&gt;
+* wai-mtei (U+ABCB) contains a short segment B&lt;&lt;563.0,280.0&gt;-&lt;563.0,282.0&gt;-&lt;563.0,286.0&gt;&gt;
+* yang-mtei (U+ABCC) contains a short segment B&lt;&lt;755.0,125.0&gt;-&lt;768.0,122.0&gt;-&lt;775.0,122.0&gt;&gt;
+* yang-mtei (U+ABCC) contains a short segment L&lt;&lt;502.0,326.0&gt;--&lt;507.0,326.0&gt;&gt;
+* un-mtei (U+ABCE) contains a short segment B&lt;&lt;456.0,331.0&gt;-&lt;471.0,331.0&gt;-&lt;486.0,332.0&gt;&gt; and 18 more.</p>
+<p>Use -F or --full-lists to disable shortening of long lists. [code: found-short-segments]</p>
+</span></li></ul></div></details>
+<details><summary>⚠️ <strong>output/Noto Sans Meetei Mayek/unhinted/ttf/NotoSansMeeteiMayek-Bold.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>The following glyphs have segments which seem very short:
+* tta-mtei (U+AAE4) contains a short segment B&lt;&lt;316.0,456.0&gt;-&lt;307.0,444.0&gt;-&lt;299.0,433.0&gt;&gt;
+* tta-mtei (U+AAE4) contains a short segment B&lt;&lt;598.0,434.0&gt;-&lt;591.0,443.0&gt;-&lt;583.0,454.0&gt;&gt;
+* wai-mtei (U+ABCB) contains a short segment B&lt;&lt;554.0,274.0&gt;-&lt;554.0,279.0&gt;-&lt;554.0,284.0&gt;&gt;
+* yang-mtei (U+ABCC) contains a short segment B&lt;&lt;752.0,102.0&gt;-&lt;765.0,102.0&gt;-&lt;777.5,106.0&gt;&gt;
+* yang-mtei (U+ABCC) contains a short segment B&lt;&lt;777.5,106.0&gt;-&lt;790.0,110.0&gt;-&lt;802.0,116.0&gt;&gt;
+* yang-mtei (U+ABCC) contains a short segment L&lt;&lt;488.0,320.0&gt;--&lt;497.0,320.0&gt;&gt;
+* un-mtei (U+ABCE) contains a short segment B&lt;&lt;199.0,556.0&gt;-&lt;197.0,546.0&gt;-&lt;196.0,535.0&gt;&gt;
+* un-mtei (U+ABCE) contains a short segment B&lt;&lt;196.0,535.0&gt;-&lt;195.0,524.0&gt;-&lt;195.0,512.0&gt;&gt;
+* un-mtei (U+ABCE) contains a short segment B&lt;&lt;654.0,84.0&gt;-&lt;659.0,100.0&gt;-&lt;659.0,116.0&gt;&gt;
+* jham-mtei (U+ABD3) contains a short segment L&lt;&lt;196.0,332.0&gt;--&lt;198.0,326.0&gt;&gt; and 8 more.</p>
+<p>Use -F or --full-lists to disable shortening of long lists. [code: found-short-segments]</p>
+</span></li></ul></div></details>
+<details><summary>⚠️ <strong>output/Noto Sans Meetei Mayek/unhinted/ttf/NotoSansMeeteiMayek-ExtraBold.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>The following glyphs have segments which seem very short:
+* tta-mtei (U+AAE4) contains a short segment B&lt;&lt;324.0,454.0&gt;-&lt;316.0,443.0&gt;-&lt;308.0,433.0&gt;&gt;
+* tta-mtei (U+AAE4) contains a short segment B&lt;&lt;598.0,434.0&gt;-&lt;591.0,443.0&gt;-&lt;584.0,453.0&gt;&gt;
+* khou-mtei (U+ABC8) contains a short segment B&lt;&lt;620.0,206.0&gt;-&lt;620.0,192.0&gt;-&lt;626.5,186.0&gt;&gt;
+* khou-mtei (U+ABC8) contains a short segment B&lt;&lt;626.5,186.0&gt;-&lt;633.0,180.0&gt;-&lt;643.0,180.0&gt;&gt;
+* wai-mtei (U+ABCB) contains a short segment B&lt;&lt;558.0,276.0&gt;-&lt;558.0,280.0&gt;-&lt;558.0,285.0&gt;&gt;
+* yang-mtei (U+ABCC) contains a short segment B&lt;&lt;739.0,116.5&gt;-&lt;753.0,111.0&gt;-&lt;762.0,111.0&gt;&gt;
+* yang-mtei (U+ABCC) contains a short segment L&lt;&lt;495.0,323.0&gt;--&lt;502.0,323.0&gt;&gt;
+* un-mtei (U+ABCE) contains a short segment B&lt;&lt;210.0,547.0&gt;-&lt;208.0,537.0&gt;-&lt;207.0,526.5&gt;&gt;
+* un-mtei (U+ABCE) contains a short segment B&lt;&lt;207.0,526.5&gt;-&lt;206.0,516.0&gt;-&lt;206.0,506.0&gt;&gt;
+* un-mtei (U+ABCE) contains a short segment B&lt;&lt;658.0,86.0&gt;-&lt;662.0,100.0&gt;-&lt;662.0,114.0&gt;&gt; and 8 more.</p>
+<p>Use -F or --full-lists to disable shortening of long lists. [code: found-short-segments]</p>
+</span></li></ul></div></details>
+<details><summary>⚠️ <strong>output/Noto Sans Meetei Mayek/unhinted/ttf/NotoSansMeeteiMayek-ExtraLight.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>The following glyphs have segments which seem very short:
+* cha-mtei (U+AAE2) contains a short segment B&lt;&lt;281.0,539.0&gt;-&lt;281.0,532.0&gt;-&lt;281.0,527.0&gt;&gt;
+* cha-mtei (U+AAE2) contains a short segment B&lt;&lt;491.0,527.0&gt;-&lt;491.0,532.0&gt;-&lt;491.0,539.0&gt;&gt;
+* cha-mtei (U+AAE2) contains a short segment B&lt;&lt;531.0,527.0&gt;-&lt;531.0,517.0&gt;-&lt;532.0,507.5&gt;&gt;
+* cha-mtei (U+AAE2) contains a short segment B&lt;&lt;532.0,507.5&gt;-&lt;533.0,498.0&gt;-&lt;536.0,487.0&gt;&gt;
+* tta-mtei (U+AAE4) contains a short segment B&lt;&lt;618.0,496.0&gt;-&lt;625.0,486.0&gt;-&lt;631.0,478.0&gt;&gt;
+* pa-mtei (U+ABC4) contains a short segment L&lt;&lt;904.0,659.0&gt;--&lt;904.0,619.0&gt;&gt;
+* chil-mtei (U+ABC6) contains a short segment B&lt;&lt;512.0,272.0&gt;-&lt;512.0,277.0&gt;-&lt;512.0,282.0&gt;&gt;
+* chil-mtei (U+ABC6) contains a short segment B&lt;&lt;244.0,282.0&gt;-&lt;244.0,277.0&gt;-&lt;244.0,271.0&gt;&gt;
+* yang-mtei (U+ABCC) contains a short segment L&lt;&lt;475.0,291.0&gt;--&lt;482.0,291.0&gt;&gt;
+* jham-mtei (U+ABD3) contains a short segment L&lt;&lt;114.0,311.0&gt;--&lt;115.0,309.0&gt;&gt; and 10 more.</p>
+<p>Use -F or --full-lists to disable shortening of long lists. [code: found-short-segments]</p>
+</span></li></ul></div></details>
+<details><summary>⚠️ <strong>output/Noto Sans Meetei Mayek/unhinted/ttf/NotoSansMeeteiMayek-Light.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>The following glyphs have segments which seem very short:
+* cha-mtei (U+AAE2) contains a short segment B&lt;&lt;294.0,539.0&gt;-&lt;294.0,534.0&gt;-&lt;293.0,530.0&gt;&gt;
+* cha-mtei (U+AAE2) contains a short segment B&lt;&lt;490.0,530.0&gt;-&lt;490.0,534.0&gt;-&lt;490.0,539.0&gt;&gt;
+* tta-mtei (U+AAE4) contains a short segment B&lt;&lt;633.0,491.0&gt;-&lt;635.0,487.0&gt;-&lt;637.0,485.0&gt;&gt;
+* chil-mtei (U+ABC6) contains a short segment B&lt;&lt;510.0,271.0&gt;-&lt;510.0,274.0&gt;-&lt;510.0,276.0&gt;&gt;
+* chil-mtei (U+ABC6) contains a short segment B&lt;&lt;255.0,276.0&gt;-&lt;256.0,274.0&gt;-&lt;256.0,271.0&gt;&gt;
+* khou-mtei (U+ABC8) contains a short segment B&lt;&lt;590.0,138.0&gt;-&lt;600.0,138.0&gt;-&lt;612.5,143.0&gt;&gt;
+* yang-mtei (U+ABCC) contains a short segment B&lt;&lt;759.0,8.0&gt;-&lt;747.0,2.0&gt;-&lt;733.5,-1.0&gt;&gt;
+* yang-mtei (U+ABCC) contains a short segment B&lt;&lt;733.5,-1.0&gt;-&lt;720.0,-4.0&gt;-&lt;707.0,-4.0&gt;&gt;
+* yang-mtei (U+ABCC) contains a short segment L&lt;&lt;472.0,299.0&gt;--&lt;482.0,299.0&gt;&gt;
+* un-mtei (U+ABCE) contains a short segment B&lt;&lt;134.0,607.0&gt;-&lt;132.0,593.0&gt;-&lt;130.5,574.5&gt;&gt; and 7 more.</p>
+<p>Use -F or --full-lists to disable shortening of long lists. [code: found-short-segments]</p>
+</span></li></ul></div></details>
+<details><summary>⚠️ <strong>output/Noto Sans Meetei Mayek/unhinted/ttf/NotoSansMeeteiMayek-Medium.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>The following glyphs have segments which seem very short:
+* tta-mtei (U+AAE4) contains a short segment B&lt;&lt;598.0,432.0&gt;-&lt;594.0,438.0&gt;-&lt;589.5,444.5&gt;&gt;
+* tta-mtei (U+AAE4) contains a short segment B&lt;&lt;589.5,444.5&gt;-&lt;585.0,451.0&gt;-&lt;580.0,457.0&gt;&gt;
+* iiMatra-mtei (U+AAEB) contains a short segment L&lt;&lt;188.0,577.0&gt;--&lt;179.0,577.0&gt;&gt;
+* auMatra-mtei (U+AAEE) contains a short segment L&lt;&lt;188.0,577.0&gt;--&lt;179.0,577.0&gt;&gt;
+* mit-mtei (U+ABC3) contains a short segment B&lt;&lt;683.0,75.0&gt;-&lt;691.0,75.0&gt;-&lt;700.0,76.5&gt;&gt;
+* mit-mtei (U+ABC3) contains a short segment B&lt;&lt;700.0,76.5&gt;-&lt;709.0,78.0&gt;-&lt;717.0,81.0&gt;&gt;
+* wai-mtei (U+ABCB) contains a short segment B&lt;&lt;545.0,265.0&gt;-&lt;544.0,273.0&gt;-&lt;544.0,282.0&gt;&gt;
+* yang-mtei (U+ABCC) contains a short segment L&lt;&lt;473.0,314.0&gt;--&lt;486.0,314.0&gt;&gt;
+* un-mtei (U+ABCE) contains a short segment B&lt;&lt;172.0,577.0&gt;-&lt;171.0,567.0&gt;-&lt;170.0,554.0&gt;&gt;
+* un-mtei (U+ABCE) contains a short segment B&lt;&lt;170.0,554.0&gt;-&lt;169.0,541.0&gt;-&lt;169.0,528.0&gt;&gt; and 10 more.</p>
+<p>Use -F or --full-lists to disable shortening of long lists. [code: found-short-segments]</p>
+</span></li></ul></div></details>
+<details><summary>⚠️ <strong>output/Noto Sans Meetei Mayek/unhinted/ttf/NotoSansMeeteiMayek-Regular.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>The following glyphs have segments which seem very short:
+* cha-mtei (U+AAE2) contains a short segment L&lt;&lt;487.0,535.0&gt;--&lt;487.0,539.0&gt;&gt;
+* tta-mtei (U+AAE4) contains a short segment B&lt;&lt;598.0,432.0&gt;-&lt;593.0,438.0&gt;-&lt;588.5,444.5&gt;&gt;
+* tta-mtei (U+AAE4) contains a short segment B&lt;&lt;588.5,444.5&gt;-&lt;584.0,451.0&gt;-&lt;579.0,458.0&gt;&gt;
+* iiMatra-mtei (U+AAEB) contains a short segment L&lt;&lt;181.0,586.0&gt;--&lt;174.0,586.0&gt;&gt;
+* auMatra-mtei (U+AAEE) contains a short segment L&lt;&lt;181.0,586.0&gt;--&lt;174.0,586.0&gt;&gt;
+* wordRepetitionMark-mtei (U+AAF4) contains a short segment B&lt;&lt;69.0,587.5&gt;-&lt;64.0,587.0&gt;-&lt;59.0,586.0&gt;&gt;
+* mit-mtei (U+ABC3) contains a short segment B&lt;&lt;670.0,67.0&gt;-&lt;678.0,67.0&gt;-&lt;686.5,68.0&gt;&gt;
+* mit-mtei (U+ABC3) contains a short segment B&lt;&lt;686.5,68.0&gt;-&lt;695.0,69.0&gt;-&lt;702.0,72.0&gt;&gt;
+* mit-mtei (U+ABC3) contains a short segment B&lt;&lt;715.0,1.0&gt;-&lt;703.0,-3.0&gt;-&lt;689.0,-4.5&gt;&gt;
+* khou-mtei (U+ABC8) contains a short segment B&lt;&lt;602.0,153.0&gt;-&lt;611.0,153.0&gt;-&lt;621.5,158.0&gt;&gt; and 18 more.</p>
+<p>Use -F or --full-lists to disable shortening of long lists. [code: found-short-segments]</p>
+</span></li></ul></div></details>
+<details><summary>⚠️ <strong>output/Noto Sans Meetei Mayek/unhinted/ttf/NotoSansMeeteiMayek-SemiBold.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>The following glyphs have segments which seem very short:
+* tta-mtei (U+AAE4) contains a short segment B&lt;&lt;306.0,458.0&gt;-&lt;296.0,445.0&gt;-&lt;287.0,432.0&gt;&gt;
+* tta-mtei (U+AAE4) contains a short segment B&lt;&lt;598.0,433.0&gt;-&lt;591.0,443.0&gt;-&lt;581.0,456.0&gt;&gt;
+* iiMatra-mtei (U+AAEB) contains a short segment L&lt;&lt;196.0,567.0&gt;--&lt;184.0,567.0&gt;&gt;
+* auMatra-mtei (U+AAEE) contains a short segment L&lt;&lt;196.0,567.0&gt;--&lt;184.0,567.0&gt;&gt;
+* mit-mtei (U+ABC3) contains a short segment B&lt;&lt;697.0,85.0&gt;-&lt;706.0,85.0&gt;-&lt;715.5,86.5&gt;&gt;
+* mit-mtei (U+ABC3) contains a short segment B&lt;&lt;715.5,86.5&gt;-&lt;725.0,88.0&gt;-&lt;733.0,91.0&gt;&gt;
+* wai-mtei (U+ABCB) contains a short segment B&lt;&lt;549.0,269.0&gt;-&lt;549.0,276.0&gt;-&lt;549.0,283.0&gt;&gt;
+* yang-mtei (U+ABCC) contains a short segment B&lt;&lt;738.0,90.0&gt;-&lt;749.0,90.0&gt;-&lt;760.0,93.0&gt;&gt;
+* yang-mtei (U+ABCC) contains a short segment B&lt;&lt;760.0,93.0&gt;-&lt;771.0,96.0&gt;-&lt;783.0,102.0&gt;&gt;
+* yang-mtei (U+ABCC) contains a short segment L&lt;&lt;480.0,317.0&gt;--&lt;491.0,317.0&gt;&gt; and 12 more.</p>
+<p>Use -F or --full-lists to disable shortening of long lists. [code: found-short-segments]</p>
+</span></li></ul></div></details>
+<details><summary>⚠️ <strong>output/Noto Sans Meetei Mayek/unhinted/ttf/NotoSansMeeteiMayek-Thin.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>The following glyphs have segments which seem very short:
+* cha-mtei (U+AAE2) contains a short segment B&lt;&lt;238.0,493.0&gt;-&lt;240.0,503.0&gt;-&lt;241.0,512.5&gt;&gt;
+* cha-mtei (U+AAE2) contains a short segment B&lt;&lt;241.0,512.5&gt;-&lt;242.0,522.0&gt;-&lt;242.0,531.0&gt;&gt;
+* cha-mtei (U+AAE2) contains a short segment B&lt;&lt;273.0,539.0&gt;-&lt;273.0,535.0&gt;-&lt;273.0,531.5&gt;&gt;
+* cha-mtei (U+AAE2) contains a short segment B&lt;&lt;273.0,531.5&gt;-&lt;273.0,528.0&gt;-&lt;273.0,525.0&gt;&gt;
+* cha-mtei (U+AAE2) contains a short segment B&lt;&lt;492.0,525.0&gt;-&lt;492.0,528.0&gt;-&lt;492.0,531.5&gt;&gt;
+* cha-mtei (U+AAE2) contains a short segment B&lt;&lt;492.0,531.5&gt;-&lt;492.0,535.0&gt;-&lt;492.0,539.0&gt;&gt;
+* cha-mtei (U+AAE2) contains a short segment B&lt;&lt;523.0,531.0&gt;-&lt;523.0,522.0&gt;-&lt;524.0,512.5&gt;&gt;
+* cha-mtei (U+AAE2) contains a short segment B&lt;&lt;524.0,512.5&gt;-&lt;525.0,503.0&gt;-&lt;527.0,493.0&gt;&gt;
+* mit-mtei (U+ABC3) contains a short segment B&lt;&lt;696.0,4.0&gt;-&lt;686.0,1.0&gt;-&lt;674.0,-1.0&gt;&gt;
+* mit-mtei (U+ABC3) contains a short segment B&lt;&lt;674.0,-1.0&gt;-&lt;662.0,-3.0&gt;-&lt;648.0,-3.0&gt;&gt; and 19 more.</p>
+<p>Use -F or --full-lists to disable shortening of long lists. [code: found-short-segments]</p>
+</span></li></ul></div></details>
+<h3>Do outlines contain any semi-vertical or semi-horizontal lines?</h3>
+<div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/outline_semi_vertical&gt;</div>
+<details><summary>⚠️ <strong>output/Noto Sans Meetei Mayek/unhinted/ttf/NotoSansMeeteiMayek-Bold.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>The following glyphs have semi-vertical/semi-horizontal lines:</p>
+<ul>
+<li>gok-mtei (U+ABD2): L&lt;&lt;768.0,557.0&gt;--&lt;625.0,556.0&gt;&gt; [code: found-semi-vertical]</li>
+</ul>
+</span></li></ul></div></details>
+<details><summary>⚠️ <strong>output/Noto Sans Meetei Mayek/unhinted/ttf/NotoSansMeeteiMayek-ExtraBold.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>The following glyphs have semi-vertical/semi-horizontal lines:</p>
+<ul>
+<li>gok-mtei (U+ABD2): L&lt;&lt;784.0,548.0&gt;--&lt;641.0,547.0&gt;&gt; [code: found-semi-vertical]</li>
+</ul>
+</span></li></ul></div></details>
+<details><summary>⚠️ <strong>output/Noto Sans Meetei Mayek/unhinted/ttf/NotoSansMeeteiMayek-ExtraLight.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>The following glyphs have semi-vertical/semi-horizontal lines:</p>
+<ul>
+<li>gok-mtei (U+ABD2): L&lt;&lt;697.0,620.0&gt;--&lt;535.0,619.0&gt;&gt; [code: found-semi-vertical]</li>
+</ul>
+</span></li></ul></div></details>
+<details><summary>⚠️ <strong>output/Noto Sans Meetei Mayek/unhinted/ttf/NotoSansMeeteiMayek-Light.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>The following glyphs have semi-vertical/semi-horizontal lines:</p>
+<ul>
+<li>gok-mtei (U+ABD2): L&lt;&lt;704.0,608.0&gt;--&lt;549.0,607.0&gt;&gt; [code: found-semi-vertical]</li>
+</ul>
+</span></li></ul></div></details>
+<details><summary>⚠️ <strong>output/Noto Sans Meetei Mayek/unhinted/ttf/NotoSansMeeteiMayek-Thin.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>The following glyphs have semi-vertical/semi-horizontal lines:</p>
+<ul>
+<li>gok-mtei (U+ABD2): L&lt;&lt;491.0,628.0&gt;--&lt;335.0,627.0&gt;&gt; [code: found-semi-vertical]</li>
+</ul>
+</span></li></ul></div></details>
+                    </body>
+                </html>

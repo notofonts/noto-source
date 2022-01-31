@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+                <html lang="en">
+                    <head>
+                        <meta charset="utf-8">
+                        <title>Fontbakery Check Report</title>
+                        <style>
+                            
+            html {
+                font-family: sans-serif;
+            }
+
+            h2 {
+                margin-top: 2em;
+            }
+
+            h3 {
+                margin-bottom: 1px;
+            }
+
+            table {
+                border-collapse: collapse;
+            }
+
+            th,
+            td {
+                border: 1px solid #ddd;
+                padding: 0.5em
+            }
+
+            tr:nth-child(even) {
+                background-color: #f2f2f2;
+            }
+
+            tr {
+                text-align: left;
+            }
+
+            ul {
+                margin-top: 0;
+            }
+
+            .details_item {
+                list-style: none;
+                display: flex;
+                align-items: baseline;
+            }
+
+            .details_indicator {
+                flex: 0 0 5em;
+                font-weight: bold;
+                padding-right: 0.5em;
+                text-align: right;
+            }
+
+            .details_text {
+                flex: 1 0;
+            }
+            
+                        </style>
+                    </head>
+                    <body>
+                    <h1>Fontbakery Technical Report</h1>
+<div>If you think a check is flawed or have an idea for a check, please  file an issue at <a href='https://github.com/googlefonts/fontbakery/issues'>https://github.com/googlefonts/fontbakery/issues</a> and remember to include a pointer to the repo and branch you're checking.</div>
+<h2>Summary</h2>
+            <table>
+            <tr>
+                <th>💥 ERROR</th>
+                <th>🔥 FAIL</th>
+                <th>⚠️ WARN</th>
+                <th>⏩ SKIP</th>
+                <th>ℹ️ INFO</th>
+                <th>✔️ PASS</th>
+            </tr>
+            <tr>
+                <td>0</td>
+                <td>2</td>
+                <td>6</td>
+                <td>43</td>
+                <td>4</td>
+                <td>100</td>
+            </tr>
+            <tr>
+                <td>0%</td>
+                <td>3%</td>
+                <td>10%</td>
+                <td>68%</td>
+                <td>6%</td>
+                <td>159%</td>
+            </tr>
+            </table>
+            
+<p><strong>Note:</strong> The following loglevels were omitted in this report: SKIP, INFO, PASS, DEBUG</p>
+<h2>&lt;Section: Universal&gt; ⚠️⏩⏩⏩⏩⏩⏩⏩⏩⏩ℹ️ℹ️ℹ️ℹ️</h2>
+<h3>Check if each glyph has the recommended amount of contours.</h3>
+<div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/contour_count&gt;</div>
+<details><summary>⚠️ <strong>output/Noto Sans Math/unhinted/ttf/NotoSansMath-Regular.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>This check inspects the glyph outlines and detects the total number of contours in each of them. The expected values are infered from the typical ammounts of contours observed in a large collection of reference font families. The divergences listed below may simply indicate a significantly different design on some of your glyphs. On the other hand, some of these may flag actual bugs in the font such as glyphs mapped to an incorrect codepoint. Please consider reviewing the design and codepoint assignment of these to make sure they are correct.</p>
+<p>The following glyphs do not have the recommended number of contours:</p>
+<pre><code>- Glyph name: uni210A	Contours detected: 3	Expected: 2
+- Glyph name: uni210D	Contours detected: 3	Expected: 2
+- Glyph name: uni2119	Contours detected: 4	Expected: 2
+- Glyph name: uni211A	Contours detected: 5	Expected: 3
+- Glyph name: uni211D	Contours detected: 5	Expected: 3
+- Glyph name: uni21C7	Contours detected: 2	Expected: 1
+- Glyph name: uni21C8	Contours detected: 2	Expected: 1
+- Glyph name: uni21C9	Contours detected: 2	Expected: 1
+- Glyph name: uni21CA	Contours detected: 2	Expected: 1
+- Glyph name: uni21E0	Contours detected: 4	Expected: 3 
+- And 18 more.
+</code></pre>
+<p>Use -F or --full-lists to disable shortening of long lists.
+[code: contour-count]</p>
+</span></li></ul></div></details>
+<h2>&lt;Section: fontbakery.profiles.os2&gt; 🔥🔥</h2>
+<h3>Fonts have consistent PANOSE proportion?</h3>
+<div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/family/panose_proportion&gt;</div>
+<details><summary>🔥 <strong>Family check</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>🔥 FAIL</span><span class='details_text'><p>PANOSE proportion is not the same across this family. In order to fix this, please make sure that the panose.bProportion value is the same in the OS/2 table of all of this family font files. [code: inconsistency]</p>
+</span></li></ul></div></details>
+<h3>Fonts have consistent PANOSE family type?</h3>
+<div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/family/panose_familytype&gt;</div>
+<details><summary>🔥 <strong>Family check</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>🔥 FAIL</span><span class='details_text'><p>PANOSE family type is not the same across this family. In order to fix this, please make sure that the panose.bFamilyType value is the same in the OS/2 table of all of this family font files. [code: inconsistency]</p>
+</span></li></ul></div></details>
+<h2>&lt;Section: fontbakery.profiles.gpos&gt; ⚠️⚠️</h2>
+<h3>Does GPOS table have kerning information? This check skips monospaced fonts as defined by post.isFixedPitch value</h3>
+<div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/gpos_kerning_info&gt;</div>
+<details><summary>⚠️ <strong>output/Noto Sans Math/unhinted/ttf/NotoSansMath-Regular.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>GPOS table lacks kerning information. [code: lacks-kern-info]</p>
+</span></li></ul></div></details>
+<details><summary>⚠️ <strong>output/Noto Sans Math/unhinted/variable-ttf/NotoSansMath[wght].ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>GPOS table lacks kerning information. [code: lacks-kern-info]</p>
+</span></li></ul></div></details>
+<h2>&lt;Section: Outline Correctness Checks&gt; ⚠️⚠️⚠️⏩⏩⏩⏩</h2>
+<h3>Do any segments have colinear vectors?</h3>
+<div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/outline_colinear_vectors&gt;</div>
+<details><summary>⚠️ <strong>output/Noto Sans Math/unhinted/ttf/NotoSansMath-Regular.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>The following glyphs have colinear vectors:
+* u1D468 (U+1D468): L&lt;&lt;509.0,687.0&gt;--&lt;486.0,132.0&gt;&gt; -&gt; L&lt;&lt;486.0,132.0&gt;--&lt;486.0,118.0&gt;&gt;
+* u1D612 (U+1D612): L&lt;&lt;207.0,367.0&gt;--&lt;269.0,433.0&gt;&gt; -&gt; L&lt;&lt;269.0,433.0&gt;--&lt;543.0,714.0&gt;&gt;
+* u1D646 (U+1D646): L&lt;&lt;251.0,369.0&gt;--&lt;327.0,471.0&gt;&gt; -&gt; L&lt;&lt;327.0,471.0&gt;--&lt;529.0,714.0&gt;&gt;
+* u1D6AC (U+1D6AC): L&lt;&lt;607.0,-11.0&gt;--&lt;370.0,0.0&gt;&gt; -&gt; L&lt;&lt;370.0,0.0&gt;--&lt;180.0,0.0&gt;&gt;
+* u1D6B3 (U+1D6B3): L&lt;&lt;446.0,0.0&gt;--&lt;329.0,301.0&gt;&gt; -&gt; L&lt;&lt;329.0,301.0&gt;--&lt;232.0,534.0&gt;&gt;
+* u1D6C8 (U+1D6C8): L&lt;&lt;241.0,395.0&gt;--&lt;241.0,313.0&gt;&gt; -&gt; L&lt;&lt;241.0,313.0&gt;--&lt;244.0,39.0&gt;&gt;
+* u1D6F2 (U+1D6F2): L&lt;&lt;105.0,3.0&gt;--&lt;220.0,568.0&gt;&gt; -&gt; L&lt;&lt;220.0,568.0&gt;--&lt;224.0,607.0&gt;&gt;
+* u1D720 (U+1D720): L&lt;&lt;554.0,-11.0&gt;--&lt;320.0,0.0&gt;&gt; -&gt; L&lt;&lt;320.0,0.0&gt;--&lt;130.0,0.0&gt;&gt; and u1D741 (U+1D741): L&lt;&lt;381.0,113.0&gt;--&lt;411.0,243.0&gt;&gt; -&gt; L&lt;&lt;411.0,243.0&gt;--&lt;444.0,438.0&gt;&gt; [code: found-colinear-vectors]</p>
+</span></li></ul></div></details>
+<h3>Do outlines contain any jaggy segments?</h3>
+<div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/outline_jaggy_segments&gt;</div>
+<details><summary>⚠️ <strong>output/Noto Sans Math/unhinted/ttf/NotoSansMath-Regular.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>The following glyphs have jaggy segments:
+* u1D44E (U+1D44E): B&lt;&lt;250.0,34.0&gt;-&lt;250.0,64.0&gt;-&lt;284.0,175.0&gt;&gt;/B&lt;&lt;284.0,175.0&gt;-&lt;227.0,81.0&gt;-&lt;177.5,34.5&gt;&gt; = 14.20175277562993
+* u1D451 (U+1D451): B&lt;&lt;272.0,40.0&gt;-&lt;272.0,79.0&gt;-&lt;300.0,167.0&gt;&gt;/B&lt;&lt;300.0,167.0&gt;-&lt;247.0,76.0&gt;-&lt;198.0,32.0&gt;&gt; = 12.567149737454237
+* u1D485 (U+1D485): B&lt;&lt;234.0,52.0&gt;-&lt;234.0,80.0&gt;-&lt;244.0,113.0&gt;&gt;/B&lt;&lt;244.0,113.0&gt;-&lt;206.0,49.0&gt;-&lt;168.0,17.5&gt;&gt; = 13.841323783076136
+* u1D493 (U+1D493): L&lt;&lt;225.0,461.0&gt;--&lt;170.0,281.0&gt;&gt;/B&lt;&lt;170.0,281.0&gt;-&lt;194.0,328.0&gt;-&lt;215.0,362.0&gt;&gt; = 10.05977371509991
+* u1D4B0 (U+1D4B0): B&lt;&lt;641.0,67.0&gt;-&lt;641.0,93.0&gt;-&lt;678.0,177.0&gt;&gt;/B&lt;&lt;678.0,177.0&gt;-&lt;600.0,68.0&gt;-&lt;555.0,30.0&gt;&gt; = 11.815021751769102
+* u1D4B1 (U+1D4B1): B&lt;&lt;436.5,427.0&gt;-&lt;466.0,469.0&gt;-&lt;511.0,524.0&gt;&gt;/B&lt;&lt;511.0,524.0&gt;-&lt;473.0,494.0&gt;-&lt;442.0,472.5&gt;&gt; = 12.420429945256531
+* u1D4B2 (U+1D4B2): B&lt;&lt;473.0,190.0&gt;-&lt;409.0,130.0&gt;-&lt;316.0,57.0&gt;&gt;/B&lt;&lt;316.0,57.0&gt;-&lt;392.0,96.0&gt;-&lt;470.0,155.0&gt;&gt; = 10.965022634453765
+* u1D4B2 (U+1D4B2): L&lt;&lt;780.0,411.0&gt;--&lt;869.0,530.0&gt;&gt;/B&lt;&lt;869.0,530.0&gt;-&lt;851.0,512.0&gt;-&lt;830.0,488.0&gt;&gt; = 8.207216411918077
+* u1D4B4 (U+1D4B4): B&lt;&lt;589.0,294.5&gt;-&lt;610.0,330.0&gt;-&lt;631.0,365.0&gt;&gt;/B&lt;&lt;631.0,365.0&gt;-&lt;560.0,278.0&gt;-&lt;516.0,246.0&gt;&gt; = 8.253851145562376
+* u1D4B6 (U+1D4B6): B&lt;&lt;266.0,51.0&gt;-&lt;266.0,82.0&gt;-&lt;279.0,108.0&gt;&gt;/B&lt;&lt;279.0,108.0&gt;-&lt;200.0,-6.0&gt;-&lt;125.0,-6.0&gt;&gt; = 8.156229018789725 and 47 more.</p>
+<p>Use -F or --full-lists to disable shortening of long lists. [code: found-jaggy-segments]</p>
+</span></li></ul></div></details>
+<h3>Do outlines contain any semi-vertical or semi-horizontal lines?</h3>
+<div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/outline_semi_vertical&gt;</div>
+<details><summary>⚠️ <strong>output/Noto Sans Math/unhinted/ttf/NotoSansMath-Regular.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>The following glyphs have semi-vertical/semi-horizontal lines:</p>
+<ul>
+<li>u1D47E (U+1D47E): L&lt;&lt;118.0,-17.0&gt;--&lt;122.0,536.0&gt;&gt;</li>
+<li>u1D57B (U+1D57B): L&lt;&lt;229.0,193.0&gt;--&lt;228.0,508.0&gt;&gt;</li>
+<li>u1D57B (U+1D57B): L&lt;&lt;363.0,532.0&gt;--&lt;364.0,151.0&gt;&gt;</li>
+<li>u1D652 (U+1D652): L&lt;&lt;230.0,714.0&gt;--&lt;233.0,324.0&gt;&gt;</li>
+<li>u1D66C (U+1D66C): L&lt;&lt;198.0,546.0&gt;--&lt;200.0,304.0&gt;&gt;</li>
+<li>u1D6AA (U+1D6AA): L&lt;&lt;261.0,538.0&gt;--&lt;260.0,326.0&gt;&gt;</li>
+<li>u1D6AC (U+1D6AC): L&lt;&lt;515.0,339.0&gt;--&lt;285.0,340.0&gt;&gt;</li>
+<li>u1D6B3 (U+1D6B3): L&lt;&lt;965.0,649.0&gt;--&lt;964.0,427.0&gt;&gt;</li>
+<li>u1D6B5 (U+1D6B5): L&lt;&lt;530.0,595.0&gt;--&lt;195.0,597.0&gt;&gt;</li>
+<li>u1D6B7 (U+1D6B7): L&lt;&lt;266.0,584.0&gt;--&lt;264.0,290.0&gt;&gt; and 11 more.</li>
+</ul>
+<p>Use -F or --full-lists to disable shortening of long lists. [code: found-semi-vertical]</p>
+</span></li></ul></div></details>
+                    </body>
+                </html>

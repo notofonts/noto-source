@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+                <html lang="en">
+                    <head>
+                        <meta charset="utf-8">
+                        <title>Fontbakery Check Report</title>
+                        <style>
+                            
+            html {
+                font-family: sans-serif;
+            }
+
+            h2 {
+                margin-top: 2em;
+            }
+
+            h3 {
+                margin-bottom: 1px;
+            }
+
+            table {
+                border-collapse: collapse;
+            }
+
+            th,
+            td {
+                border: 1px solid #ddd;
+                padding: 0.5em
+            }
+
+            tr:nth-child(even) {
+                background-color: #f2f2f2;
+            }
+
+            tr {
+                text-align: left;
+            }
+
+            ul {
+                margin-top: 0;
+            }
+
+            .details_item {
+                list-style: none;
+                display: flex;
+                align-items: baseline;
+            }
+
+            .details_indicator {
+                flex: 0 0 5em;
+                font-weight: bold;
+                padding-right: 0.5em;
+                text-align: right;
+            }
+
+            .details_text {
+                flex: 1 0;
+            }
+            
+                        </style>
+                    </head>
+                    <body>
+                    <h1>Fontbakery Technical Report</h1>
+<div>If you think a check is flawed or have an idea for a check, please  file an issue at <a href='https://github.com/googlefonts/fontbakery/issues'>https://github.com/googlefonts/fontbakery/issues</a> and remember to include a pointer to the repo and branch you're checking.</div>
+<h2>Summary</h2>
+            <table>
+            <tr>
+                <th>💥 ERROR</th>
+                <th>🔥 FAIL</th>
+                <th>⚠️ WARN</th>
+                <th>⏩ SKIP</th>
+                <th>ℹ️ INFO</th>
+                <th>✔️ PASS</th>
+            </tr>
+            <tr>
+                <td>0</td>
+                <td>2</td>
+                <td>7</td>
+                <td>43</td>
+                <td>4</td>
+                <td>99</td>
+            </tr>
+            <tr>
+                <td>0%</td>
+                <td>3%</td>
+                <td>12%</td>
+                <td>72%</td>
+                <td>7%</td>
+                <td>165%</td>
+            </tr>
+            </table>
+            
+<p><strong>Note:</strong> The following loglevels were omitted in this report: SKIP, INFO, PASS, DEBUG</p>
+<h2>&lt;Section: Universal&gt; 🔥🔥⏩⏩⏩⏩⏩⏩⏩⏩⏩ℹ️ℹ️ℹ️ℹ️</h2>
+<h3>Checking OS/2 usWinAscent & usWinDescent.</h3>
+<div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/family/win_ascent_and_descent&gt;</div>
+<details><summary>🔥 <strong>output/Noto Sans Marchen/unhinted/ttf/NotoSansMarchen-Regular.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>🔥 FAIL</span><span class='details_text'><p>OS/2.usWinDescent value should be equal or greater than 1025, but got 534 instead. [code: descent]</p>
+</span></li></ul></div></details>
+<details><summary>🔥 <strong>output/Noto Sans Marchen/unhinted/variable-ttf/NotoSansMarchen[wght].ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>🔥 FAIL</span><span class='details_text'><p>OS/2.usWinDescent value should be equal or greater than 1025, but got 534 instead. [code: descent]</p>
+</span></li></ul></div></details>
+<h2>&lt;Section: fontbakery.profiles.gdef&gt; ⚠️⚠️</h2>
+<h3>Check GDEF mark glyph class doesn't have characters that are not marks.</h3>
+<div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/gdef_non_mark_chars&gt;</div>
+<details><summary>⚠️ <strong>output/Noto Sans Marchen/unhinted/ttf/NotoSansMarchen-Regular.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>The following non-mark characters should not be in the GDEF mark glyph class:
+U+11CA9 and U+11CB4 [code: non-mark-chars]</p>
+</span></li></ul></div></details>
+<details><summary>⚠️ <strong>output/Noto Sans Marchen/unhinted/variable-ttf/NotoSansMarchen[wght].ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>The following non-mark characters should not be in the GDEF mark glyph class:
+U+11CA9 and U+11CB4 [code: non-mark-chars]</p>
+</span></li></ul></div></details>
+<h2>&lt;Section: fontbakery.profiles.gpos&gt; ⚠️⚠️</h2>
+<h3>Does GPOS table have kerning information? This check skips monospaced fonts as defined by post.isFixedPitch value</h3>
+<div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/gpos_kerning_info&gt;</div>
+<details><summary>⚠️ <strong>output/Noto Sans Marchen/unhinted/ttf/NotoSansMarchen-Regular.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>GPOS table lacks kerning information. [code: lacks-kern-info]</p>
+</span></li></ul></div></details>
+<details><summary>⚠️ <strong>output/Noto Sans Marchen/unhinted/variable-ttf/NotoSansMarchen[wght].ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>GPOS table lacks kerning information. [code: lacks-kern-info]</p>
+</span></li></ul></div></details>
+<h2>&lt;Section: Outline Correctness Checks&gt; ⚠️⚠️⚠️⏩⏩⏩⏩</h2>
+<h3>Are there any misaligned on-curve points?</h3>
+<div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/outline_alignment_miss&gt;</div>
+<details><summary>⚠️ <strong>output/Noto Sans Marchen/unhinted/ttf/NotoSansMarchen-Regular.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>The following glyphs have on-curve points which have potentially incorrect y coordinates:
+* ka_marc.sub (U+11C92): X=-33.0,Y=-532.0 (should be at descender -534?)
+* ga_marc.sub (U+11C94): X=-25.0,Y=-532.0 (should be at descender -534?)
+* ga_marc.sub (U+11C94): X=-121.0,Y=-532.0 (should be at descender -534?)
+* ca_marc.sub (U+11C96): X=-152.0,Y=-532.0 (should be at descender -534?)
+* cha_marc.sub (U+11C97): X=-362.0,Y=-532.0 (should be at descender -534?)
+* cha_marc.sub (U+11C97): X=-458.0,Y=-532.0 (should be at descender -534?)
+* ja_marc.sub (U+11C98): X=-361.0,Y=-532.0 (should be at descender -534?)
+* ja_marc.sub (U+11C98): X=-457.0,Y=-532.0 (should be at descender -534?)
+* zha_marc.sub (U+11CA6): X=-71.0,Y=-532.0 (should be at descender -534?) and anusvara_marc (U+11CB5): X=-129.0,Y=679.0 (should be at cap-height 678?) [code: found-misalignments]</p>
+</span></li></ul></div></details>
+<details><summary>⚠️ <strong>output/Noto Sans Marchen/unhinted/variable-ttf/NotoSansMarchen[wght].ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>The following glyphs have on-curve points which have potentially incorrect y coordinates:
+* ka_marc.sub (U+11C92): X=-33.0,Y=-532.0 (should be at descender -534?)
+* ga_marc.sub (U+11C94): X=-25.0,Y=-532.0 (should be at descender -534?)
+* ga_marc.sub (U+11C94): X=-121.0,Y=-532.0 (should be at descender -534?)
+* ca_marc.sub (U+11C96): X=-152.0,Y=-532.0 (should be at descender -534?)
+* cha_marc.sub (U+11C97): X=-362.0,Y=-532.0 (should be at descender -534?)
+* cha_marc.sub (U+11C97): X=-458.0,Y=-532.0 (should be at descender -534?)
+* ja_marc.sub (U+11C98): X=-361.0,Y=-532.0 (should be at descender -534?)
+* ja_marc.sub (U+11C98): X=-457.0,Y=-532.0 (should be at descender -534?)
+* zha_marc.sub (U+11CA6): X=-71.0,Y=-532.0 (should be at descender -534?) and anusvara_marc (U+11CB5): X=-129.0,Y=679.0 (should be at cap-height 678?) [code: found-misalignments]</p>
+</span></li></ul></div></details>
+<h3>Are any segments inordinately short?</h3>
+<div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/outline_short_segments&gt;</div>
+<details><summary>⚠️ <strong>output/Noto Sans Marchen/unhinted/ttf/NotoSansMarchen-Regular.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>The following glyphs have segments which seem very short:
+* ga_marc (U+11C74) contains a short segment B&lt;&lt;133.0,215.0&gt;-&lt;139.0,217.0&gt;-&lt;145.0,217.0&gt;&gt;
+* ga_marc (U+11C74) contains a short segment B&lt;&lt;145.0,217.0&gt;-&lt;151.0,217.0&gt;-&lt;155.0,217.0&gt;&gt;
+* cha_marc (U+11C77) contains a short segment B&lt;&lt;284.0,214.0&gt;-&lt;290.0,216.0&gt;-&lt;296.0,216.0&gt;&gt;
+* cha_marc (U+11C77) contains a short segment B&lt;&lt;296.0,216.0&gt;-&lt;302.0,216.0&gt;-&lt;306.0,216.0&gt;&gt;
+* ja_marc (U+11C78) contains a short segment B&lt;&lt;304.0,217.0&gt;-&lt;310.0,219.0&gt;-&lt;316.0,219.0&gt;&gt;
+* ja_marc (U+11C78) contains a short segment B&lt;&lt;316.0,219.0&gt;-&lt;322.0,219.0&gt;-&lt;326.0,219.0&gt;&gt;
+* ga_marc.sub (U+11C94) contains a short segment B&lt;&lt;-370.0,-395.0&gt;-&lt;-364.0,-393.0&gt;-&lt;-358.0,-393.0&gt;&gt;
+* ga_marc.sub (U+11C94) contains a short segment B&lt;&lt;-358.0,-393.0&gt;-&lt;-352.0,-393.0&gt;-&lt;-348.0,-393.0&gt;&gt;
+* cha_marc.sub (U+11C97) contains a short segment B&lt;&lt;-234.0,-396.0&gt;-&lt;-228.0,-394.0&gt;-&lt;-222.0,-394.0&gt;&gt;
+* cha_marc.sub (U+11C97) contains a short segment B&lt;&lt;-222.0,-394.0&gt;-&lt;-216.0,-394.0&gt;-&lt;-212.0,-394.0&gt;&gt;
+* ja_marc.sub (U+11C98) contains a short segment B&lt;&lt;-223.0,-393.0&gt;-&lt;-217.0,-391.0&gt;-&lt;-211.0,-391.0&gt;&gt; and ja_marc.sub (U+11C98) contains a short segment B&lt;&lt;-211.0,-391.0&gt;-&lt;-205.0,-391.0&gt;-&lt;-201.0,-391.0&gt;&gt; [code: found-short-segments]</p>
+</span></li></ul></div></details>
+                    </body>
+                </html>

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+                <html lang="en">
+                    <head>
+                        <meta charset="utf-8">
+                        <title>Fontbakery Check Report</title>
+                        <style>
+                            
+            html {
+                font-family: sans-serif;
+            }
+
+            h2 {
+                margin-top: 2em;
+            }
+
+            h3 {
+                margin-bottom: 1px;
+            }
+
+            table {
+                border-collapse: collapse;
+            }
+
+            th,
+            td {
+                border: 1px solid #ddd;
+                padding: 0.5em
+            }
+
+            tr:nth-child(even) {
+                background-color: #f2f2f2;
+            }
+
+            tr {
+                text-align: left;
+            }
+
+            ul {
+                margin-top: 0;
+            }
+
+            .details_item {
+                list-style: none;
+                display: flex;
+                align-items: baseline;
+            }
+
+            .details_indicator {
+                flex: 0 0 5em;
+                font-weight: bold;
+                padding-right: 0.5em;
+                text-align: right;
+            }
+
+            .details_text {
+                flex: 1 0;
+            }
+            
+                        </style>
+                    </head>
+                    <body>
+                    <h1>Fontbakery Technical Report</h1>
+<div>If you think a check is flawed or have an idea for a check, please  file an issue at <a href='https://github.com/googlefonts/fontbakery/issues'>https://github.com/googlefonts/fontbakery/issues</a> and remember to include a pointer to the repo and branch you're checking.</div>
+<h2>Summary</h2>
+            <table>
+            <tr>
+                <th>💥 ERROR</th>
+                <th>🔥 FAIL</th>
+                <th>⚠️ WARN</th>
+                <th>⏩ SKIP</th>
+                <th>ℹ️ INFO</th>
+                <th>✔️ PASS</th>
+            </tr>
+            <tr>
+                <td>0</td>
+                <td>4</td>
+                <td>7</td>
+                <td>43</td>
+                <td>4</td>
+                <td>97</td>
+            </tr>
+            <tr>
+                <td>0%</td>
+                <td>6%</td>
+                <td>10%</td>
+                <td>62%</td>
+                <td>6%</td>
+                <td>141%</td>
+            </tr>
+            </table>
+            
+<p><strong>Note:</strong> The following loglevels were omitted in this report: SKIP, INFO, PASS, DEBUG</p>
+<h2>&lt;Section: Universal&gt; 🔥🔥⏩⏩⏩⏩⏩⏩⏩⏩⏩ℹ️ℹ️ℹ️ℹ️</h2>
+<h3>Checking OS/2 usWinAscent & usWinDescent.</h3>
+<div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/family/win_ascent_and_descent&gt;</div>
+<details><summary>🔥 <strong>output/Noto Sans Miao/unhinted/ttf/NotoSansMiao-Regular.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>🔥 FAIL</span><span class='details_text'><p>OS/2.usWinAscent value should be equal or greater than 1268, but got 1142 instead [code: ascent]</p>
+</span></li><li class='details_item'><span class='details_indicator'>🔥 FAIL</span><span class='details_text'><p>OS/2.usWinDescent value should be equal or greater than 553, but got 350 instead. [code: descent]</p>
+</span></li></ul></div></details>
+<details><summary>🔥 <strong>output/Noto Sans Miao/unhinted/variable-ttf/NotoSansMiao[wght].ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>🔥 FAIL</span><span class='details_text'><p>OS/2.usWinAscent value should be equal or greater than 1268, but got 1142 instead [code: ascent]</p>
+</span></li><li class='details_item'><span class='details_indicator'>🔥 FAIL</span><span class='details_text'><p>OS/2.usWinDescent value should be equal or greater than 553, but got 350 instead. [code: descent]</p>
+</span></li></ul></div></details>
+<h2>&lt;Section: fontbakery.profiles.os2&gt; 🔥🔥</h2>
+<h3>Fonts have consistent PANOSE proportion?</h3>
+<div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/family/panose_proportion&gt;</div>
+<details><summary>🔥 <strong>Family check</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>🔥 FAIL</span><span class='details_text'><p>PANOSE proportion is not the same across this family. In order to fix this, please make sure that the panose.bProportion value is the same in the OS/2 table of all of this family font files. [code: inconsistency]</p>
+</span></li></ul></div></details>
+<h3>Fonts have consistent PANOSE family type?</h3>
+<div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/family/panose_familytype&gt;</div>
+<details><summary>🔥 <strong>Family check</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>🔥 FAIL</span><span class='details_text'><p>PANOSE family type is not the same across this family. In order to fix this, please make sure that the panose.bFamilyType value is the same in the OS/2 table of all of this family font files. [code: inconsistency]</p>
+</span></li></ul></div></details>
+<h2>&lt;Section: fontbakery.profiles.gdef&gt; ⚠️⚠️</h2>
+<h3>Check mark characters are in GDEF mark glyph class.</h3>
+<div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/gdef_mark_chars&gt;</div>
+<details><summary>⚠️ <strong>output/Noto Sans Miao/unhinted/ttf/NotoSansMiao-Regular.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>The following mark characters could be in the GDEF mark glyph class:
+u16F8F (U+16F8F), u16F90 (U+16F90), u16F91 (U+16F91) and u16F92 (U+16F92) [code: mark-chars]</p>
+</span></li></ul></div></details>
+<details><summary>⚠️ <strong>output/Noto Sans Miao/unhinted/variable-ttf/NotoSansMiao[wght].ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>The following mark characters could be in the GDEF mark glyph class:
+u16F8F (U+16F8F), u16F90 (U+16F90), u16F91 (U+16F91) and u16F92 (U+16F92) [code: mark-chars]</p>
+</span></li></ul></div></details>
+<h2>&lt;Section: fontbakery.profiles.gpos&gt; ⚠️⚠️</h2>
+<h3>Does GPOS table have kerning information? This check skips monospaced fonts as defined by post.isFixedPitch value</h3>
+<div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/gpos_kerning_info&gt;</div>
+<details><summary>⚠️ <strong>output/Noto Sans Miao/unhinted/ttf/NotoSansMiao-Regular.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>GPOS table lacks kerning information. [code: lacks-kern-info]</p>
+</span></li></ul></div></details>
+<details><summary>⚠️ <strong>output/Noto Sans Miao/unhinted/variable-ttf/NotoSansMiao[wght].ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>GPOS table lacks kerning information. [code: lacks-kern-info]</p>
+</span></li></ul></div></details>
+<h2>&lt;Section: Outline Correctness Checks&gt; ⚠️⚠️⚠️⏩⏩⏩⏩</h2>
+<h3>Are there any misaligned on-curve points?</h3>
+<div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/outline_alignment_miss&gt;</div>
+<details><summary>⚠️ <strong>output/Noto Sans Miao/unhinted/ttf/NotoSansMiao-Regular.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>The following glyphs have on-curve points which have potentially incorrect y coordinates:
+* u16F55 (U+16F55): X=219.5,Y=1.5 (should be at baseline 0?)
+* u16F56 (U+16F56): X=65.5,Y=1.5 (should be at baseline 0?)
+* u16F68 (U+16F68): X=258.5,Y=1.0 (should be at baseline 0?)
+* u16F6A (U+16F6A): X=65.5,Y=1.5 (should be at baseline 0?)
+* u16F6B (U+16F6B): X=191.5,Y=1.5 (should be at baseline 0?)
+* u16F6C (U+16F6C): X=191.5,Y=1.5 (should be at baseline 0?)
+* u16F6D (U+16F6D): X=191.5,Y=1.5 (should be at baseline 0?)
+* u16F6E (U+16F6E): X=65.5,Y=0.5 (should be at baseline 0?)
+* u16F6E (U+16F6E): X=387.0,Y=2.0 (should be at baseline 0?)
+* u16F6E (U+16F6E): X=266.0,Y=1.0 (should be at baseline 0?) and 20 more.</p>
+<p>Use -F or --full-lists to disable shortening of long lists. [code: found-misalignments]</p>
+</span></li></ul></div></details>
+<details><summary>⚠️ <strong>output/Noto Sans Miao/unhinted/variable-ttf/NotoSansMiao[wght].ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>The following glyphs have on-curve points which have potentially incorrect y coordinates:
+* u16F55 (U+16F55): X=219.5,Y=1.5 (should be at baseline 0?)
+* u16F56 (U+16F56): X=65.5,Y=1.5 (should be at baseline 0?)
+* u16F68 (U+16F68): X=258.5,Y=1.0 (should be at baseline 0?)
+* u16F6A (U+16F6A): X=65.5,Y=1.5 (should be at baseline 0?)
+* u16F6B (U+16F6B): X=191.5,Y=1.5 (should be at baseline 0?)
+* u16F6C (U+16F6C): X=191.5,Y=1.5 (should be at baseline 0?)
+* u16F6D (U+16F6D): X=191.5,Y=1.5 (should be at baseline 0?)
+* u16F6E (U+16F6E): X=65.5,Y=0.5 (should be at baseline 0?)
+* u16F6E (U+16F6E): X=387.0,Y=2.0 (should be at baseline 0?)
+* u16F6E (U+16F6E): X=266.0,Y=1.0 (should be at baseline 0?) and 20 more.</p>
+<p>Use -F or --full-lists to disable shortening of long lists. [code: found-misalignments]</p>
+</span></li></ul></div></details>
+<h3>Are any segments inordinately short?</h3>
+<div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/outline_short_segments&gt;</div>
+<details><summary>⚠️ <strong>output/Noto Sans Miao/unhinted/ttf/NotoSansMiao-Regular.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>The following glyphs have segments which seem very short:
+* u16F57 (U+16F57) contains a short segment L&lt;&lt;214.0,198.0&gt;--&lt;208.0,198.0&gt;&gt;
+* u16F58 (U+16F58) contains a short segment L&lt;&lt;214.0,198.0&gt;--&lt;207.0,198.0&gt;&gt;
+* u16F64 (U+16F64) contains a short segment L&lt;&lt;411.0,0.0&gt;--&lt;404.0,0.0&gt;&gt;
+* u16F6C (U+16F6C) contains a short segment L&lt;&lt;451.0,198.0&gt;--&lt;445.0,198.0&gt;&gt; and u16F6D (U+16F6D) contains a short segment L&lt;&lt;451.0,198.0&gt;--&lt;444.0,198.0&gt;&gt; [code: found-short-segments]</p>
+</span></li></ul></div></details>
+                    </body>
+                </html>
