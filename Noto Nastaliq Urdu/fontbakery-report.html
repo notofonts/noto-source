@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+                <html lang="en">
+                    <head>
+                        <meta charset="utf-8">
+                        <title>Fontbakery Check Report</title>
+                        <style>
+                            
+            html {
+                font-family: sans-serif;
+            }
+
+            h2 {
+                margin-top: 2em;
+            }
+
+            h3 {
+                margin-bottom: 1px;
+            }
+
+            table {
+                border-collapse: collapse;
+            }
+
+            th,
+            td {
+                border: 1px solid #ddd;
+                padding: 0.5em
+            }
+
+            tr:nth-child(even) {
+                background-color: #f2f2f2;
+            }
+
+            tr {
+                text-align: left;
+            }
+
+            ul {
+                margin-top: 0;
+            }
+
+            .details_item {
+                list-style: none;
+                display: flex;
+                align-items: baseline;
+            }
+
+            .details_indicator {
+                flex: 0 0 5em;
+                font-weight: bold;
+                padding-right: 0.5em;
+                text-align: right;
+            }
+
+            .details_text {
+                flex: 1 0;
+            }
+            
+                        </style>
+                    </head>
+                    <body>
+                    <h1>Fontbakery Technical Report</h1>
+<div>If you think a check is flawed or have an idea for a check, please  file an issue at <a href='https://github.com/googlefonts/fontbakery/issues'>https://github.com/googlefonts/fontbakery/issues</a> and remember to include a pointer to the repo and branch you're checking.</div>
+<h2>Summary</h2>
+            <table>
+            <tr>
+                <th>💥 ERROR</th>
+                <th>🔥 FAIL</th>
+                <th>⚠️ WARN</th>
+                <th>⏩ SKIP</th>
+                <th>ℹ️ INFO</th>
+                <th>✔️ PASS</th>
+            </tr>
+            <tr>
+                <td>0</td>
+                <td>4</td>
+                <td>8</td>
+                <td>43</td>
+                <td>4</td>
+                <td>96</td>
+            </tr>
+            <tr>
+                <td>0%</td>
+                <td>7%</td>
+                <td>15%</td>
+                <td>80%</td>
+                <td>7%</td>
+                <td>178%</td>
+            </tr>
+            </table>
+            
+<p><strong>Note:</strong> The following loglevels were omitted in this report: SKIP, INFO, PASS, DEBUG</p>
+<h2>&lt;Section: Universal&gt; 🔥🔥🔥🔥⚠️⚠️⏩⏩⏩⏩⏩⏩⏩⏩⏩ℹ️ℹ️ℹ️ℹ️</h2>
+<h3>Checking OS/2 usWinAscent & usWinDescent.</h3>
+<div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/family/win_ascent_and_descent&gt;</div>
+<details><summary>🔥 <strong>output/Noto Nastaliq Urdu/unhinted/ttf/NotoNastaliqUrdu-Bold.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>🔥 FAIL</span><span class='details_text'><p>OS/2.usWinAscent value should be equal or greater than 1981, but got 1904 instead [code: ascent]</p>
+</span></li><li class='details_item'><span class='details_indicator'>🔥 FAIL</span><span class='details_text'><p>OS/2.usWinDescent value should be equal or greater than 1518, but got 596 instead. [code: descent]</p>
+</span></li></ul></div></details>
+<details><summary>🔥 <strong>output/Noto Nastaliq Urdu/unhinted/ttf/NotoNastaliqUrdu-Regular.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>🔥 FAIL</span><span class='details_text'><p>OS/2.usWinAscent value should be equal or greater than 1981, but got 1904 instead [code: ascent]</p>
+</span></li><li class='details_item'><span class='details_indicator'>🔥 FAIL</span><span class='details_text'><p>OS/2.usWinDescent value should be equal or greater than 1518, but got 596 instead. [code: descent]</p>
+</span></li></ul></div></details>
+<h3>Glyph names are all valid?</h3>
+<div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/valid_glyphnames&gt;</div>
+<details><summary>🔥 <strong>output/Noto Nastaliq Urdu/unhinted/ttf/NotoNastaliqUrdu-Bold.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>🔥 FAIL</span><span class='details_text'><p>The following glyph names do not comply with naming conventions: alef-ar.short</p>
+<p>A glyph name must be entirely comprised of characters from the following set: A-Z a-z 0-9 .(period) <em>(underscore). A glyph name must not start with a digit or period. There are a few exceptions such as the special glyph &quot;.notdef&quot;. The glyph names &quot;twocents&quot;, &quot;a1&quot;, and &quot;</em>&quot; are all valid, while &quot;2cents&quot; and &quot;.twocents&quot; are not. [code: found-invalid-names]</p>
+</span></li></ul></div></details>
+<details><summary>🔥 <strong>output/Noto Nastaliq Urdu/unhinted/ttf/NotoNastaliqUrdu-Regular.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>🔥 FAIL</span><span class='details_text'><p>The following glyph names do not comply with naming conventions: alef-ar.short</p>
+<p>A glyph name must be entirely comprised of characters from the following set: A-Z a-z 0-9 .(period) <em>(underscore). A glyph name must not start with a digit or period. There are a few exceptions such as the special glyph &quot;.notdef&quot;. The glyph names &quot;twocents&quot;, &quot;a1&quot;, and &quot;</em>&quot; are all valid, while &quot;2cents&quot; and &quot;.twocents&quot; are not. [code: found-invalid-names]</p>
+</span></li></ul></div></details>
+<h3>Check font contains no unreachable glyphs</h3>
+<div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/unreachable_glyphs&gt;</div>
+<details><summary>⚠️ <strong>output/Noto Nastaliq Urdu/unhinted/ttf/NotoNastaliqUrdu-Bold.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>The following glyphs could not be reached by codepoint or substitution rules:
+- alef-ar.short
+- SmallMeem
+- And ArEightBelowAltNS
+[code: unreachable-glyphs]</p>
+</span></li></ul></div></details>
+<details><summary>⚠️ <strong>output/Noto Nastaliq Urdu/unhinted/ttf/NotoNastaliqUrdu-Regular.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>The following glyphs could not be reached by codepoint or substitution rules:
+- alef-ar.short
+- SmallMeem
+- And ArEightBelowAltNS
+[code: unreachable-glyphs]</p>
+</span></li></ul></div></details>
+<h2>&lt;Section: fontbakery.profiles.gpos&gt; ⚠️⚠️</h2>
+<h3>Does GPOS table have kerning information? This check skips monospaced fonts as defined by post.isFixedPitch value</h3>
+<div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/gpos_kerning_info&gt;</div>
+<details><summary>⚠️ <strong>output/Noto Nastaliq Urdu/unhinted/ttf/NotoNastaliqUrdu-Bold.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>GPOS table lacks kerning information. [code: lacks-kern-info]</p>
+</span></li></ul></div></details>
+<details><summary>⚠️ <strong>output/Noto Nastaliq Urdu/unhinted/ttf/NotoNastaliqUrdu-Regular.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>GPOS table lacks kerning information. [code: lacks-kern-info]</p>
+</span></li></ul></div></details>
+<h2>&lt;Section: Outline Correctness Checks&gt; ⚠️⚠️⚠️⚠️</h2>
+<h3>Are there any misaligned on-curve points?</h3>
+<div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/outline_alignment_miss&gt;</div>
+<details><summary>⚠️ <strong>output/Noto Nastaliq Urdu/unhinted/ttf/NotoNastaliqUrdu-Bold.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>The following glyphs have on-curve points which have potentially incorrect y coordinates:
+* exclam (U+0021): X=275.0,Y=1.0 (should be at baseline 0?)
+* exclam (U+0021): X=283.0,Y=1.0 (should be at baseline 0?)
+* parenright (U+0029): X=158.5,Y=-2.0 (should be at baseline 0?)
+* comma (U+002C): X=171.5,Y=1.5 (should be at baseline 0?)
+* comma (U+002C): X=269.5,Y=-1.0 (should be at baseline 0?)
+* period (U+002E): X=139.0,Y=1.0 (should be at baseline 0?)
+* period (U+002E): X=147.0,Y=1.0 (should be at baseline 0?)
+* two (U+0032): X=74.0,Y=-2.0 (should be at baseline 0?)
+* two (U+0032): X=74.0,Y=-2.0 (should be at baseline 0?)
+* eight (U+0038): X=284.0,Y=1.0 (should be at baseline 0?) and 38 more.</p>
+<p>Use -F or --full-lists to disable shortening of long lists. [code: found-misalignments]</p>
+</span></li></ul></div></details>
+<details><summary>⚠️ <strong>output/Noto Nastaliq Urdu/unhinted/ttf/NotoNastaliqUrdu-Regular.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>The following glyphs have on-curve points which have potentially incorrect y coordinates:
+* parenright (U+0029): X=142.0,Y=715.5 (should be at cap-height 714?)
+* two (U+0032): X=104.0,Y=-1.0 (should be at baseline 0?)
+* two (U+0032): X=104.0,Y=-1.0 (should be at baseline 0?)
+* six (U+0036): X=290.0,Y=1.0 (should be at baseline 0?)
+* six (U+0036): X=290.0,Y=1.0 (should be at baseline 0?)
+* NumberSign (U+0600): X=201.0,Y=1.0 (should be at baseline 0?)
+* Samvat (U+0604): X=2512.0,Y=712.0 (should be at cap-height 714?)
+* Samvat (U+0604): X=1150.0,Y=2.0 (should be at baseline 0?)
+* DateSeparatorArabic (U+060D): X=114.0,Y=1.0 (should be at baseline 0?)
+* KasratanNS (U+064D): X=125.0,Y=-1.0 (should be at baseline 0?) and 38 more.</p>
+<p>Use -F or --full-lists to disable shortening of long lists. [code: found-misalignments]</p>
+</span></li></ul></div></details>
+<h3>Do any segments have colinear vectors?</h3>
+<div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/outline_colinear_vectors&gt;</div>
+<details><summary>⚠️ <strong>output/Noto Nastaliq Urdu/unhinted/ttf/NotoNastaliqUrdu-Bold.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>The following glyphs have colinear vectors:
+* uni08F3_NS (U+08F3): L&lt;&lt;12.0,893.0&gt;--&lt;-34.0,873.0&gt;&gt; -&gt; L&lt;&lt;-34.0,873.0&gt;--&lt;-131.0,837.0&gt;&gt; [code: found-colinear-vectors]</p>
+</span></li></ul></div></details>
+<details><summary>⚠️ <strong>output/Noto Nastaliq Urdu/unhinted/ttf/NotoNastaliqUrdu-Regular.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>The following glyphs have colinear vectors:
+* uni08F3_NS (U+08F3): L&lt;&lt;18.0,897.0&gt;--&lt;-24.0,879.0&gt;&gt; -&gt; L&lt;&lt;-24.0,879.0&gt;--&lt;-113.0,846.0&gt;&gt; and uni08F4_NS (U+08F4): L&lt;&lt;-57.0,950.0&gt;--&lt;-55.0,951.0&gt;&gt; -&gt; L&lt;&lt;-55.0,951.0&gt;--&lt;36.0,1002.0&gt;&gt; [code: found-colinear-vectors]</p>
+</span></li></ul></div></details>
+                    </body>
+                </html>

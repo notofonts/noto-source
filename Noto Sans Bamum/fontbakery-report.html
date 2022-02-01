@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+                <html lang="en">
+                    <head>
+                        <meta charset="utf-8">
+                        <title>Fontbakery Check Report</title>
+                        <style>
+                            
+            html {
+                font-family: sans-serif;
+            }
+
+            h2 {
+                margin-top: 2em;
+            }
+
+            h3 {
+                margin-bottom: 1px;
+            }
+
+            table {
+                border-collapse: collapse;
+            }
+
+            th,
+            td {
+                border: 1px solid #ddd;
+                padding: 0.5em
+            }
+
+            tr:nth-child(even) {
+                background-color: #f2f2f2;
+            }
+
+            tr {
+                text-align: left;
+            }
+
+            ul {
+                margin-top: 0;
+            }
+
+            .details_item {
+                list-style: none;
+                display: flex;
+                align-items: baseline;
+            }
+
+            .details_indicator {
+                flex: 0 0 5em;
+                font-weight: bold;
+                padding-right: 0.5em;
+                text-align: right;
+            }
+
+            .details_text {
+                flex: 1 0;
+            }
+            
+                        </style>
+                    </head>
+                    <body>
+                    <h1>Fontbakery Technical Report</h1>
+<div>If you think a check is flawed or have an idea for a check, please  file an issue at <a href='https://github.com/googlefonts/fontbakery/issues'>https://github.com/googlefonts/fontbakery/issues</a> and remember to include a pointer to the repo and branch you're checking.</div>
+<h2>Summary</h2>
+            <table>
+            <tr>
+                <th>💥 ERROR</th>
+                <th>🔥 FAIL</th>
+                <th>⚠️ WARN</th>
+                <th>⏩ SKIP</th>
+                <th>ℹ️ INFO</th>
+                <th>✔️ PASS</th>
+            </tr>
+            <tr>
+                <td>0</td>
+                <td>5</td>
+                <td>13</td>
+                <td>105</td>
+                <td>10</td>
+                <td>241</td>
+            </tr>
+            <tr>
+                <td>0%</td>
+                <td>9%</td>
+                <td>25%</td>
+                <td>198%</td>
+                <td>19%</td>
+                <td>455%</td>
+            </tr>
+            </table>
+            
+<p><strong>Note:</strong> The following loglevels were omitted in this report: SKIP, INFO, PASS, DEBUG</p>
+<h2>&lt;Section: fontbakery.profiles.os2&gt; 🔥🔥</h2>
+<h3>Fonts have consistent PANOSE proportion?</h3>
+<div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/family/panose_proportion&gt;</div>
+<details><summary>🔥 <strong>Family check</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>🔥 FAIL</span><span class='details_text'><p>PANOSE proportion is not the same across this family. In order to fix this, please make sure that the panose.bProportion value is the same in the OS/2 table of all of this family font files. [code: inconsistency]</p>
+</span></li></ul></div></details>
+<h3>Fonts have consistent PANOSE family type?</h3>
+<div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/family/panose_familytype&gt;</div>
+<details><summary>🔥 <strong>Family check</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>🔥 FAIL</span><span class='details_text'><p>PANOSE family type is not the same across this family. In order to fix this, please make sure that the panose.bFamilyType value is the same in the OS/2 table of all of this family font files. [code: inconsistency]</p>
+</span></li></ul></div></details>
+<h2>&lt;Section: fontbakery.profiles.hmtx&gt; 🔥🔥🔥</h2>
+<h3>Space and non-breaking space have the same width?</h3>
+<div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/whitespace_widths&gt;</div>
+<details><summary>🔥 <strong>output/Noto Sans Bamum/unhinted/ttf/NotoSansBamum-Bold.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>🔥 FAIL</span><span class='details_text'><p>Space and non-breaking space have differing width: The space glyph named space is 240 font units wide, non-breaking space named (uni00A0) is 260 font units wide, and both should be positive and the same. GlyphsApp has &quot;Sidebearing arithmetic&quot; (https://glyphsapp.com/tutorials/spacing) which allows you to set the non-breaking space width to always equal the space width. [code: different-widths]</p>
+</span></li></ul></div></details>
+<details><summary>🔥 <strong>output/Noto Sans Bamum/unhinted/ttf/NotoSansBamum-Medium.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>🔥 FAIL</span><span class='details_text'><p>Space and non-breaking space have differing width: The space glyph named space is 254 font units wide, non-breaking space named (uni00A0) is 260 font units wide, and both should be positive and the same. GlyphsApp has &quot;Sidebearing arithmetic&quot; (https://glyphsapp.com/tutorials/spacing) which allows you to set the non-breaking space width to always equal the space width. [code: different-widths]</p>
+</span></li></ul></div></details>
+<details><summary>🔥 <strong>output/Noto Sans Bamum/unhinted/ttf/NotoSansBamum-SemiBold.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>🔥 FAIL</span><span class='details_text'><p>Space and non-breaking space have differing width: The space glyph named space is 248 font units wide, non-breaking space named (uni00A0) is 260 font units wide, and both should be positive and the same. GlyphsApp has &quot;Sidebearing arithmetic&quot; (https://glyphsapp.com/tutorials/spacing) which allows you to set the non-breaking space width to always equal the space width. [code: different-widths]</p>
+</span></li></ul></div></details>
+<h2>&lt;Section: fontbakery.profiles.gpos&gt; ⚠️⚠️⚠️⚠️⚠️</h2>
+<h3>Does GPOS table have kerning information? This check skips monospaced fonts as defined by post.isFixedPitch value</h3>
+<div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/gpos_kerning_info&gt;</div>
+<details><summary>⚠️ <strong>output/Noto Sans Bamum/unhinted/ttf/NotoSansBamum-Bold.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>GPOS table lacks kerning information. [code: lacks-kern-info]</p>
+</span></li></ul></div></details>
+<details><summary>⚠️ <strong>output/Noto Sans Bamum/unhinted/ttf/NotoSansBamum-Medium.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>GPOS table lacks kerning information. [code: lacks-kern-info]</p>
+</span></li></ul></div></details>
+<details><summary>⚠️ <strong>output/Noto Sans Bamum/unhinted/ttf/NotoSansBamum-Regular.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>GPOS table lacks kerning information. [code: lacks-kern-info]</p>
+</span></li></ul></div></details>
+<details><summary>⚠️ <strong>output/Noto Sans Bamum/unhinted/ttf/NotoSansBamum-SemiBold.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>GPOS table lacks kerning information. [code: lacks-kern-info]</p>
+</span></li></ul></div></details>
+<details><summary>⚠️ <strong>output/Noto Sans Bamum/unhinted/variable-ttf/NotoSansBamum[wght].ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>GPOS table lacks kerning information. [code: lacks-kern-info]</p>
+</span></li></ul></div></details>
+<h2>&lt;Section: Outline Correctness Checks&gt; ⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⏩⏩⏩⏩</h2>
+<h3>Do outlines contain any jaggy segments?</h3>
+<div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/outline_jaggy_segments&gt;</div>
+<details><summary>⚠️ <strong>output/Noto Sans Bamum/unhinted/ttf/NotoSansBamum-Bold.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>The following glyphs have jaggy segments:
+* u16825 (U+16825): B&lt;&lt;480.0,311.5&gt;-&lt;519.0,342.0&gt;-&lt;567.0,344.0&gt;&gt;/B&lt;&lt;567.0,344.0&gt;-&lt;516.0,345.0&gt;-&lt;478.0,379.0&gt;&gt; = 3.509246744464209
+* u16825 (U+16825): B&lt;&lt;627.5,354.5&gt;-&lt;605.0,345.0&gt;-&lt;579.0,344.0&gt;&gt;/B&lt;&lt;579.0,344.0&gt;-&lt;627.0,342.0&gt;-&lt;666.0,311.5&gt;&gt; = 4.588542192154558
+* u1688D (U+1688D): B&lt;&lt;490.0,138.0&gt;-&lt;467.0,126.0&gt;-&lt;441.0,124.0&gt;&gt;/L&lt;&lt;441.0,124.0&gt;--&lt;638.0,124.0&gt;&gt; = 4.398705354995508
+* u1688D (U+1688D): L&lt;&lt;229.0,124.0&gt;--&lt;427.0,124.0&gt;&gt;/B&lt;&lt;427.0,124.0&gt;-&lt;375.0,127.0&gt;-&lt;336.0,171.0&gt;&gt; = 3.301865674434948
+* u168D1 (U+168D1): L&lt;&lt;266.0,243.0&gt;--&lt;196.0,382.0&gt;&gt;/L&lt;&lt;196.0,382.0&gt;--&lt;197.0,380.0&gt;&gt; = 0.1646425914058525
+* u168E7 (U+168E7): L&lt;&lt;110.0,134.0&gt;--&lt;112.0,149.0&gt;&gt;/B&lt;&lt;112.0,149.0&gt;-&lt;102.0,103.0&gt;-&lt;100.0,50.0&gt;&gt; = 4.670130359300931
+* uniA6A0 (U+A6A0): B&lt;&lt;527.0,504.0&gt;-&lt;509.0,528.0&gt;-&lt;478.0,567.0&gt;&gt;/B&lt;&lt;478.0,567.0&gt;-&lt;511.0,494.0&gt;-&lt;524.0,434.5&gt;&gt; = 14.154623009216902 and uniA6B4 (U+A6B4): B&lt;&lt;257.0,285.0&gt;-&lt;267.0,246.0&gt;-&lt;271.0,210.0&gt;&gt;/B&lt;&lt;271.0,210.0&gt;-&lt;275.0,246.0&gt;-&lt;285.0,287.0&gt;&gt; = 12.680383491819825 [code: found-jaggy-segments]</p>
+</span></li></ul></div></details>
+<details><summary>⚠️ <strong>output/Noto Sans Bamum/unhinted/ttf/NotoSansBamum-Medium.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>The following glyphs have jaggy segments:
+* u16825 (U+16825): B&lt;&lt;480.0,311.5&gt;-&lt;519.0,342.0&gt;-&lt;567.0,344.0&gt;&gt;/B&lt;&lt;567.0,344.0&gt;-&lt;516.0,345.0&gt;-&lt;478.0,379.0&gt;&gt; = 3.509246744464209
+* u16825 (U+16825): B&lt;&lt;627.5,354.5&gt;-&lt;605.0,345.0&gt;-&lt;579.0,344.0&gt;&gt;/B&lt;&lt;579.0,344.0&gt;-&lt;627.0,342.0&gt;-&lt;666.0,311.5&gt;&gt; = 4.588542192154558
+* u1688D (U+1688D): B&lt;&lt;490.0,138.0&gt;-&lt;467.0,126.0&gt;-&lt;441.0,124.0&gt;&gt;/L&lt;&lt;441.0,124.0&gt;--&lt;638.0,124.0&gt;&gt; = 4.398705354995508
+* u1688D (U+1688D): L&lt;&lt;229.0,124.0&gt;--&lt;427.0,124.0&gt;&gt;/B&lt;&lt;427.0,124.0&gt;-&lt;375.0,127.0&gt;-&lt;336.0,171.0&gt;&gt; = 3.301865674434948
+* u168D1 (U+168D1): L&lt;&lt;266.0,243.0&gt;--&lt;196.0,382.0&gt;&gt;/L&lt;&lt;196.0,382.0&gt;--&lt;197.0,380.0&gt;&gt; = 0.1646425914058525
+* u168E7 (U+168E7): L&lt;&lt;110.0,134.0&gt;--&lt;112.0,149.0&gt;&gt;/B&lt;&lt;112.0,149.0&gt;-&lt;102.0,103.0&gt;-&lt;100.0,50.0&gt;&gt; = 4.670130359300931 and uniA6B4 (U+A6B4): B&lt;&lt;241.5,236.0&gt;-&lt;251.0,197.0&gt;-&lt;255.0,161.0&gt;&gt;/B&lt;&lt;255.0,161.0&gt;-&lt;259.0,197.0&gt;-&lt;268.5,238.0&gt;&gt; = 12.680383491819825 [code: found-jaggy-segments]</p>
+</span></li></ul></div></details>
+<details><summary>⚠️ <strong>output/Noto Sans Bamum/unhinted/ttf/NotoSansBamum-Regular.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>The following glyphs have jaggy segments:
+* u16825 (U+16825): B&lt;&lt;480.0,311.5&gt;-&lt;519.0,342.0&gt;-&lt;567.0,344.0&gt;&gt;/B&lt;&lt;567.0,344.0&gt;-&lt;516.0,345.0&gt;-&lt;478.0,379.0&gt;&gt; = 3.509246744464209
+* u16825 (U+16825): B&lt;&lt;627.5,354.5&gt;-&lt;605.0,345.0&gt;-&lt;579.0,344.0&gt;&gt;/B&lt;&lt;579.0,344.0&gt;-&lt;627.0,342.0&gt;-&lt;666.0,311.5&gt;&gt; = 4.588542192154558
+* u1688D (U+1688D): B&lt;&lt;490.0,138.0&gt;-&lt;467.0,126.0&gt;-&lt;441.0,124.0&gt;&gt;/L&lt;&lt;441.0,124.0&gt;--&lt;638.0,124.0&gt;&gt; = 4.398705354995508
+* u1688D (U+1688D): L&lt;&lt;229.0,124.0&gt;--&lt;427.0,124.0&gt;&gt;/B&lt;&lt;427.0,124.0&gt;-&lt;375.0,127.0&gt;-&lt;336.0,171.0&gt;&gt; = 3.301865674434948
+* u168D1 (U+168D1): L&lt;&lt;266.0,243.0&gt;--&lt;196.0,382.0&gt;&gt;/L&lt;&lt;196.0,382.0&gt;--&lt;197.0,380.0&gt;&gt; = 0.1646425914058525
+* u168E7 (U+168E7): L&lt;&lt;110.0,134.0&gt;--&lt;112.0,149.0&gt;&gt;/B&lt;&lt;112.0,149.0&gt;-&lt;102.0,103.0&gt;-&lt;100.0,50.0&gt;&gt; = 4.670130359300931 and uniA6B4 (U+A6B4): B&lt;&lt;235.5,215.0&gt;-&lt;245.0,176.0&gt;-&lt;249.0,140.0&gt;&gt;/B&lt;&lt;249.0,140.0&gt;-&lt;253.0,176.0&gt;-&lt;262.0,217.5&gt;&gt; = 12.680383491819825 [code: found-jaggy-segments]</p>
+</span></li></ul></div></details>
+<details><summary>⚠️ <strong>output/Noto Sans Bamum/unhinted/ttf/NotoSansBamum-SemiBold.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>The following glyphs have jaggy segments:
+* u16825 (U+16825): B&lt;&lt;480.0,311.5&gt;-&lt;519.0,342.0&gt;-&lt;567.0,344.0&gt;&gt;/B&lt;&lt;567.0,344.0&gt;-&lt;516.0,345.0&gt;-&lt;478.0,379.0&gt;&gt; = 3.509246744464209
+* u16825 (U+16825): B&lt;&lt;627.5,354.5&gt;-&lt;605.0,345.0&gt;-&lt;579.0,344.0&gt;&gt;/B&lt;&lt;579.0,344.0&gt;-&lt;627.0,342.0&gt;-&lt;666.0,311.5&gt;&gt; = 4.588542192154558
+* u1688D (U+1688D): B&lt;&lt;490.0,138.0&gt;-&lt;467.0,126.0&gt;-&lt;441.0,124.0&gt;&gt;/L&lt;&lt;441.0,124.0&gt;--&lt;638.0,124.0&gt;&gt; = 4.398705354995508
+* u1688D (U+1688D): L&lt;&lt;229.0,124.0&gt;--&lt;427.0,124.0&gt;&gt;/B&lt;&lt;427.0,124.0&gt;-&lt;375.0,127.0&gt;-&lt;336.0,171.0&gt;&gt; = 3.301865674434948
+* u168D1 (U+168D1): L&lt;&lt;266.0,243.0&gt;--&lt;196.0,382.0&gt;&gt;/L&lt;&lt;196.0,382.0&gt;--&lt;197.0,380.0&gt;&gt; = 0.1646425914058525
+* u168E7 (U+168E7): L&lt;&lt;110.0,134.0&gt;--&lt;112.0,149.0&gt;&gt;/B&lt;&lt;112.0,149.0&gt;-&lt;102.0,103.0&gt;-&lt;100.0,50.0&gt;&gt; = 4.670130359300931 and uniA6B4 (U+A6B4): B&lt;&lt;248.5,259.0&gt;-&lt;258.0,220.0&gt;-&lt;262.0,184.0&gt;&gt;/B&lt;&lt;262.0,184.0&gt;-&lt;266.0,220.0&gt;-&lt;276.0,261.0&gt;&gt; = 12.680383491819825 [code: found-jaggy-segments]</p>
+</span></li></ul></div></details>
+<h3>Do outlines contain any semi-vertical or semi-horizontal lines?</h3>
+<div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/outline_semi_vertical&gt;</div>
+<details><summary>⚠️ <strong>output/Noto Sans Bamum/unhinted/ttf/NotoSansBamum-Bold.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>The following glyphs have semi-vertical/semi-horizontal lines:</p>
+<ul>
+<li>u16807 (U+16807): L&lt;&lt;294.0,314.0&gt;--&lt;114.0,315.0&gt;&gt;</li>
+<li>u16807 (U+16807): L&lt;&lt;363.0,430.0&gt;--&lt;362.0,643.0&gt;&gt;</li>
+<li>u16807 (U+16807): L&lt;&lt;364.0,64.0&gt;--&lt;363.0,245.0&gt;&gt;</li>
+<li>u16807 (U+16807): L&lt;&lt;413.0,243.0&gt;--&lt;414.0,36.0&gt;&gt;</li>
+<li>u16807 (U+16807): L&lt;&lt;481.0,363.0&gt;--&lt;664.0,364.0&gt;&gt;</li>
+<li>u16807 (U+16807): L&lt;&lt;84.0,365.0&gt;--&lt;291.0,364.0&gt;&gt;</li>
+<li>uniA6B5 (U+A6B5): L&lt;&lt;235.0,0.0&gt;--&lt;234.0,249.0&gt;&gt;</li>
+<li>uniA6CD (U+A6CD): L&lt;&lt;211.0,0.0&gt;--&lt;212.0,118.0&gt;&gt;</li>
+<li>uniA6CD (U+A6CD): L&lt;&lt;362.0,118.0&gt;--&lt;361.0,0.0&gt;&gt;</li>
+<li>uniA6E6 (U+A6E6): L&lt;&lt;42.0,384.0&gt;--&lt;186.0,385.0&gt;&gt; and 5 more.</li>
+</ul>
+<p>Use -F or --full-lists to disable shortening of long lists. [code: found-semi-vertical]</p>
+</span></li></ul></div></details>
+<details><summary>⚠️ <strong>output/Noto Sans Bamum/unhinted/ttf/NotoSansBamum-Medium.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>The following glyphs have semi-vertical/semi-horizontal lines:</p>
+<ul>
+<li>u16807 (U+16807): L&lt;&lt;294.0,314.0&gt;--&lt;114.0,315.0&gt;&gt;</li>
+<li>u16807 (U+16807): L&lt;&lt;363.0,430.0&gt;--&lt;362.0,643.0&gt;&gt;</li>
+<li>u16807 (U+16807): L&lt;&lt;364.0,64.0&gt;--&lt;363.0,245.0&gt;&gt;</li>
+<li>u16807 (U+16807): L&lt;&lt;413.0,243.0&gt;--&lt;414.0,36.0&gt;&gt;</li>
+<li>u16807 (U+16807): L&lt;&lt;481.0,363.0&gt;--&lt;664.0,364.0&gt;&gt; and u16807 (U+16807): L&lt;&lt;84.0,365.0&gt;--&lt;291.0,364.0&gt;&gt; [code: found-semi-vertical]</li>
+</ul>
+</span></li></ul></div></details>
+<details><summary>⚠️ <strong>output/Noto Sans Bamum/unhinted/ttf/NotoSansBamum-Regular.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>The following glyphs have semi-vertical/semi-horizontal lines:</p>
+<ul>
+<li>u16807 (U+16807): L&lt;&lt;294.0,314.0&gt;--&lt;114.0,315.0&gt;&gt;</li>
+<li>u16807 (U+16807): L&lt;&lt;363.0,430.0&gt;--&lt;362.0,643.0&gt;&gt;</li>
+<li>u16807 (U+16807): L&lt;&lt;364.0,64.0&gt;--&lt;363.0,245.0&gt;&gt;</li>
+<li>u16807 (U+16807): L&lt;&lt;413.0,243.0&gt;--&lt;414.0,36.0&gt;&gt;</li>
+<li>u16807 (U+16807): L&lt;&lt;481.0,363.0&gt;--&lt;664.0,364.0&gt;&gt; and u16807 (U+16807): L&lt;&lt;84.0,365.0&gt;--&lt;291.0,364.0&gt;&gt; [code: found-semi-vertical]</li>
+</ul>
+</span></li></ul></div></details>
+<details><summary>⚠️ <strong>output/Noto Sans Bamum/unhinted/ttf/NotoSansBamum-SemiBold.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>The following glyphs have semi-vertical/semi-horizontal lines:</p>
+<ul>
+<li>u16807 (U+16807): L&lt;&lt;294.0,314.0&gt;--&lt;114.0,315.0&gt;&gt;</li>
+<li>u16807 (U+16807): L&lt;&lt;363.0,430.0&gt;--&lt;362.0,643.0&gt;&gt;</li>
+<li>u16807 (U+16807): L&lt;&lt;364.0,64.0&gt;--&lt;363.0,245.0&gt;&gt;</li>
+<li>u16807 (U+16807): L&lt;&lt;413.0,243.0&gt;--&lt;414.0,36.0&gt;&gt;</li>
+<li>u16807 (U+16807): L&lt;&lt;481.0,363.0&gt;--&lt;664.0,364.0&gt;&gt;</li>
+<li>u16807 (U+16807): L&lt;&lt;84.0,365.0&gt;--&lt;291.0,364.0&gt;&gt; and uniA6CD (U+A6CD): L&lt;&lt;345.0,128.0&gt;--&lt;344.0,0.0&gt;&gt; [code: found-semi-vertical]</li>
+</ul>
+</span></li></ul></div></details>
+                    </body>
+                </html>
