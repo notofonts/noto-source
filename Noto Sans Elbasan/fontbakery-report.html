@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+                <html lang="en">
+                    <head>
+                        <meta charset="utf-8">
+                        <title>Fontbakery Check Report</title>
+                        <style>
+                            
+            html {
+                font-family: sans-serif;
+            }
+
+            h2 {
+                margin-top: 2em;
+            }
+
+            h3 {
+                margin-bottom: 1px;
+            }
+
+            table {
+                border-collapse: collapse;
+            }
+
+            th,
+            td {
+                border: 1px solid #ddd;
+                padding: 0.5em
+            }
+
+            tr:nth-child(even) {
+                background-color: #f2f2f2;
+            }
+
+            tr {
+                text-align: left;
+            }
+
+            ul {
+                margin-top: 0;
+            }
+
+            .details_item {
+                list-style: none;
+                display: flex;
+                align-items: baseline;
+            }
+
+            .details_indicator {
+                flex: 0 0 5em;
+                font-weight: bold;
+                padding-right: 0.5em;
+                text-align: right;
+            }
+
+            .details_text {
+                flex: 1 0;
+            }
+            
+                        </style>
+                    </head>
+                    <body>
+                    <h1>Fontbakery Technical Report</h1>
+<div>If you think a check is flawed or have an idea for a check, please  file an issue at <a href='https://github.com/googlefonts/fontbakery/issues'>https://github.com/googlefonts/fontbakery/issues</a> and remember to include a pointer to the repo and branch you're checking.</div>
+<h2>Summary</h2>
+            <table>
+            <tr>
+                <th>💥 ERROR</th>
+                <th>🔥 FAIL</th>
+                <th>⚠️ WARN</th>
+                <th>⏩ SKIP</th>
+                <th>ℹ️ INFO</th>
+                <th>✔️ PASS</th>
+            </tr>
+            <tr>
+                <td>0</td>
+                <td>2</td>
+                <td>5</td>
+                <td>43</td>
+                <td>4</td>
+                <td>101</td>
+            </tr>
+            <tr>
+                <td>0%</td>
+                <td>10%</td>
+                <td>24%</td>
+                <td>205%</td>
+                <td>19%</td>
+                <td>481%</td>
+            </tr>
+            </table>
+            
+<p><strong>Note:</strong> The following loglevels were omitted in this report: SKIP, INFO, PASS, DEBUG</p>
+<h2>&lt;Section: fontbakery.profiles.os2&gt; 🔥🔥</h2>
+<h3>Fonts have consistent PANOSE proportion?</h3>
+<div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/family/panose_proportion&gt;</div>
+<details><summary>🔥 <strong>Family check</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>🔥 FAIL</span><span class='details_text'><p>PANOSE proportion is not the same across this family. In order to fix this, please make sure that the panose.bProportion value is the same in the OS/2 table of all of this family font files. [code: inconsistency]</p>
+</span></li></ul></div></details>
+<h3>Fonts have consistent PANOSE family type?</h3>
+<div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/family/panose_familytype&gt;</div>
+<details><summary>🔥 <strong>Family check</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>🔥 FAIL</span><span class='details_text'><p>PANOSE family type is not the same across this family. In order to fix this, please make sure that the panose.bFamilyType value is the same in the OS/2 table of all of this family font files. [code: inconsistency]</p>
+</span></li></ul></div></details>
+<h2>&lt;Section: fontbakery.profiles.gpos&gt; ⚠️⚠️</h2>
+<h3>Does GPOS table have kerning information? This check skips monospaced fonts as defined by post.isFixedPitch value</h3>
+<div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/gpos_kerning_info&gt;</div>
+<details><summary>⚠️ <strong>output/Noto Sans Elbasan/unhinted/ttf/NotoSansElbasan-Regular.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>GPOS table lacks kerning information. [code: lacks-kern-info]</p>
+</span></li></ul></div></details>
+<details><summary>⚠️ <strong>output/Noto Sans Elbasan/unhinted/variable-ttf/NotoSansElbasan[wght].ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>GPOS table lacks kerning information. [code: lacks-kern-info]</p>
+</span></li></ul></div></details>
+<h2>&lt;Section: Outline Correctness Checks&gt; ⚠️⚠️⚠️⏩⏩⏩⏩</h2>
+<h3>Are there any misaligned on-curve points?</h3>
+<div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/outline_alignment_miss&gt;</div>
+<details><summary>⚠️ <strong>output/Noto Sans Elbasan/unhinted/ttf/NotoSansElbasan-Regular.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>The following glyphs have on-curve points which have potentially incorrect y coordinates:
+* uni03DA (U+03DA): X=506.5,Y=713.0 (should be at cap-height 714?)
+* uni03DE (U+03DE): X=475.0,Y=2.0 (should be at baseline 0?)
+* u1050D (U+1050D): X=93.5,Y=2.0 (should be at baseline 0?)
+* u10510 (U+10510): X=651.5,Y=2.0 (should be at baseline 0?)
+* u10510 (U+10510): X=80.0,Y=-0.5 (should be at baseline 0?)
+* u10511 (U+10511): X=651.5,Y=2.0 (should be at baseline 0?)
+* u10511 (U+10511): X=80.0,Y=-0.5 (should be at baseline 0?)
+* u10513 (U+10513): X=556.5,Y=2.0 (should be at baseline 0?)
+* u10522 (U+10522): X=183.0,Y=2.0 (should be at baseline 0?)
+* u10523 (U+10523): X=127.0,Y=-1.0 (should be at baseline 0?) and 4 more.</p>
+<p>Use -F or --full-lists to disable shortening of long lists. [code: found-misalignments]</p>
+</span></li></ul></div></details>
+<details><summary>⚠️ <strong>output/Noto Sans Elbasan/unhinted/variable-ttf/NotoSansElbasan[wght].ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>The following glyphs have on-curve points which have potentially incorrect y coordinates:
+* uni03DA (U+03DA): X=506.5,Y=713.0 (should be at cap-height 714?)
+* uni03DE (U+03DE): X=475.0,Y=2.0 (should be at baseline 0?)
+* u1050D (U+1050D): X=93.5,Y=2.0 (should be at baseline 0?)
+* u10510 (U+10510): X=651.5,Y=2.0 (should be at baseline 0?)
+* u10510 (U+10510): X=80.0,Y=-0.5 (should be at baseline 0?)
+* u10511 (U+10511): X=651.5,Y=2.0 (should be at baseline 0?)
+* u10511 (U+10511): X=80.0,Y=-0.5 (should be at baseline 0?)
+* u10513 (U+10513): X=556.5,Y=2.0 (should be at baseline 0?)
+* u10522 (U+10522): X=183.0,Y=2.0 (should be at baseline 0?)
+* u10523 (U+10523): X=127.0,Y=-1.0 (should be at baseline 0?) and 4 more.</p>
+<p>Use -F or --full-lists to disable shortening of long lists. [code: found-misalignments]</p>
+</span></li></ul></div></details>
+<h3>Are any segments inordinately short?</h3>
+<div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/outline_short_segments&gt;</div>
+<details><summary>⚠️ <strong>output/Noto Sans Elbasan/unhinted/ttf/NotoSansElbasan-Regular.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>The following glyphs have segments which seem very short:
+* Mu (U+039C) contains a short segment L&lt;&lt;450.0,129.0&gt;--&lt;454.0,129.0&gt;&gt;
+* Mu (U+039C) contains a short segment L&lt;&lt;177.0,626.0&gt;--&lt;173.0,626.0&gt;&gt;
+* Nu (U+039D) contains a short segment L&lt;&lt;582.0,123.0&gt;--&lt;586.0,123.0&gt;&gt;
+* Nu (U+039D) contains a short segment L&lt;&lt;176.0,593.0&gt;--&lt;172.0,593.0&gt;&gt;
+* u1050B (U+1050B) contains a short segment B&lt;&lt;321.0,562.5&gt;-&lt;328.0,555.0&gt;-&lt;328.0,546.0&gt;&gt;
+* u1050B (U+1050B) contains a short segment B&lt;&lt;328.0,546.0&gt;-&lt;328.0,536.0&gt;-&lt;320.5,528.0&gt;&gt;
+* u1050C (U+1050C) contains a short segment B&lt;&lt;329.0,178.0&gt;-&lt;329.0,171.0&gt;-&lt;326.5,163.0&gt;&gt;
+* u1051D (U+1051D) contains a short segment B&lt;&lt;43.0,503.0&gt;-&lt;39.0,511.0&gt;-&lt;37.0,516.5&gt;&gt;
+* u1051D (U+1051D) contains a short segment B&lt;&lt;37.0,516.5&gt;-&lt;35.0,522.0&gt;-&lt;35.0,531.0&gt;&gt;
+* u10523 (U+10523) contains a short segment B&lt;&lt;497.0,431.0&gt;-&lt;485.0,431.0&gt;-&lt;479.5,437.0&gt;&gt; and 4 more.</p>
+<p>Use -F or --full-lists to disable shortening of long lists. [code: found-short-segments]</p>
+</span></li></ul></div></details>
+                    </body>
+                </html>

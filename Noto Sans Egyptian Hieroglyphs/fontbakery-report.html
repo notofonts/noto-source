@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+                <html lang="en">
+                    <head>
+                        <meta charset="utf-8">
+                        <title>Fontbakery Check Report</title>
+                        <style>
+                            
+            html {
+                font-family: sans-serif;
+            }
+
+            h2 {
+                margin-top: 2em;
+            }
+
+            h3 {
+                margin-bottom: 1px;
+            }
+
+            table {
+                border-collapse: collapse;
+            }
+
+            th,
+            td {
+                border: 1px solid #ddd;
+                padding: 0.5em
+            }
+
+            tr:nth-child(even) {
+                background-color: #f2f2f2;
+            }
+
+            tr {
+                text-align: left;
+            }
+
+            ul {
+                margin-top: 0;
+            }
+
+            .details_item {
+                list-style: none;
+                display: flex;
+                align-items: baseline;
+            }
+
+            .details_indicator {
+                flex: 0 0 5em;
+                font-weight: bold;
+                padding-right: 0.5em;
+                text-align: right;
+            }
+
+            .details_text {
+                flex: 1 0;
+            }
+            
+                        </style>
+                    </head>
+                    <body>
+                    <h1>Fontbakery Technical Report</h1>
+<div>If you think a check is flawed or have an idea for a check, please  file an issue at <a href='https://github.com/googlefonts/fontbakery/issues'>https://github.com/googlefonts/fontbakery/issues</a> and remember to include a pointer to the repo and branch you're checking.</div>
+<h2>Summary</h2>
+            <table>
+            <tr>
+                <th>💥 ERROR</th>
+                <th>🔥 FAIL</th>
+                <th>⚠️ WARN</th>
+                <th>⏩ SKIP</th>
+                <th>ℹ️ INFO</th>
+                <th>✔️ PASS</th>
+            </tr>
+            <tr>
+                <td>0</td>
+                <td>1</td>
+                <td>4</td>
+                <td>43</td>
+                <td>4</td>
+                <td>103</td>
+            </tr>
+            <tr>
+                <td>0%</td>
+                <td>4%</td>
+                <td>15%</td>
+                <td>159%</td>
+                <td>15%</td>
+                <td>381%</td>
+            </tr>
+            </table>
+            
+<p><strong>Note:</strong> The following loglevels were omitted in this report: SKIP, INFO, PASS, DEBUG</p>
+<h2>&lt;Section: fontbakery.profiles.name&gt; 🔥⏩⏩</h2>
+<h3>Does full font name begin with the font family name?</h3>
+<div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/name/match_familyname_fullfont&gt;</div>
+<details><summary>🔥 <strong>output/Noto Sans Egyptian Hieroglyphs/unhinted/ttf/NotoSansEgyptianHieroglyphs-Regular.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>🔥 FAIL</span><span class='details_text'><p>On the 'name' table, the full font name (NameID 4 - FULL_FONT_NAME: 'Noto Sans EgyptHiero') does not begin with font family name (NameID 1 - FONT_FAMILY_NAME: 'Noto Sans Egyptian Hieroglyphs Regular') [code: does-not]</p>
+</span></li></ul></div></details>
+<h2>&lt;Section: fontbakery.profiles.gpos&gt; ⚠️⚠️</h2>
+<h3>Does GPOS table have kerning information? This check skips monospaced fonts as defined by post.isFixedPitch value</h3>
+<div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/gpos_kerning_info&gt;</div>
+<details><summary>⚠️ <strong>output/Noto Sans Egyptian Hieroglyphs/unhinted/ttf/NotoSansEgyptianHieroglyphs-Regular.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>GPOS table lacks kerning information. [code: lacks-kern-info]</p>
+</span></li></ul></div></details>
+<details><summary>⚠️ <strong>output/Noto Sans Egyptian Hieroglyphs/unhinted/variable-ttf/NotoSansEgyptianHieroglyphs[wght].ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>GPOS table lacks kerning information. [code: lacks-kern-info]</p>
+</span></li></ul></div></details>
+<h2>&lt;Section: Outline Correctness Checks&gt; ⚠️⚠️⏩⏩⏩⏩</h2>
+<h3>Do outlines contain any jaggy segments?</h3>
+<div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/outline_jaggy_segments&gt;</div>
+<details><summary>⚠️ <strong>output/Noto Sans Egyptian Hieroglyphs/unhinted/ttf/NotoSansEgyptianHieroglyphs-Regular.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>The following glyphs have jaggy segments:
+* u13004 (U+13004): L&lt;&lt;228.0,789.0&gt;--&lt;339.0,614.0&gt;&gt;/L&lt;&lt;339.0,614.0&gt;--&lt;256.0,813.0&gt;&gt; = 9.746066721350674
+* u1300F (U+1300F): B&lt;&lt;637.5,644.0&gt;-&lt;661.0,606.0&gt;-&lt;681.0,563.0&gt;&gt;/B&lt;&lt;681.0,563.0&gt;-&lt;677.0,571.0&gt;-&lt;674.5,581.0&gt;&gt; = 1.6211459136531066
+* u1302A (U+1302A): B&lt;&lt;538.5,21.0&gt;-&lt;571.0,22.0&gt;-&lt;601.0,24.0&gt;&gt;/L&lt;&lt;601.0,24.0&gt;--&lt;538.0,24.0&gt;&gt; = 3.8140748342903783
+* u1302A (U+1302A): L&lt;&lt;395.0,24.0&gt;--&lt;364.0,24.0&gt;&gt;/B&lt;&lt;364.0,24.0&gt;-&lt;388.0,22.0&gt;-&lt;415.0,21.0&gt;&gt; = 4.763641690726143
+* u1302B (U+1302B): B&lt;&lt;592.5,21.0&gt;-&lt;625.0,22.0&gt;-&lt;655.0,24.0&gt;&gt;/L&lt;&lt;655.0,24.0&gt;--&lt;592.0,24.0&gt;&gt; = 3.8140748342903783
+* u1302B (U+1302B): L&lt;&lt;449.0,24.0&gt;--&lt;418.0,24.0&gt;&gt;/B&lt;&lt;418.0,24.0&gt;-&lt;442.0,22.0&gt;-&lt;469.0,21.0&gt;&gt; = 4.763641690726143
+* u1302C (U+1302C): B&lt;&lt;619.5,274.0&gt;-&lt;619.0,290.0&gt;-&lt;613.0,309.0&gt;&gt;/B&lt;&lt;613.0,309.0&gt;-&lt;615.0,281.0&gt;-&lt;608.5,261.5&gt;&gt; = 13.439951593747935
+* u1302C (U+1302C): B&lt;&lt;632.5,364.0&gt;-&lt;642.0,341.0&gt;-&lt;645.0,317.0&gt;&gt;/B&lt;&lt;645.0,317.0&gt;-&lt;648.0,341.0&gt;-&lt;657.5,364.0&gt;&gt; = 14.25003269780357
+* u1302C (U+1302C): L&lt;&lt;1023.0,148.0&gt;--&lt;1016.0,340.0&gt;&gt;/B&lt;&lt;1016.0,340.0&gt;-&lt;1016.0,338.0&gt;-&lt;1014.0,338.0&gt;&gt; = 2.0879838327232854
+* u13030 (U+13030): L&lt;&lt;358.0,442.0&gt;--&lt;357.0,441.0&gt;&gt;/B&lt;&lt;357.0,441.0&gt;-&lt;372.0,453.0&gt;-&lt;391.0,453.0&gt;&gt; = 6.340191745909908 and 244 more.</p>
+<p>Use -F or --full-lists to disable shortening of long lists. [code: found-jaggy-segments]</p>
+</span></li></ul></div></details>
+<h3>Do outlines contain any semi-vertical or semi-horizontal lines?</h3>
+<div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/outline_semi_vertical&gt;</div>
+<details><summary>⚠️ <strong>output/Noto Sans Egyptian Hieroglyphs/unhinted/ttf/NotoSansEgyptianHieroglyphs-Regular.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>The following glyphs have semi-vertical/semi-horizontal lines:</p>
+<ul>
+<li>U1336F (U+1336F): L&lt;&lt;327.0,409.0&gt;--&lt;325.0,756.0&gt;&gt;</li>
+<li>U1336F (U+1336F): L&lt;&lt;344.0,756.0&gt;--&lt;347.0,409.0&gt;&gt;</li>
+<li>u1301F (U+1301F): L&lt;&lt;678.0,588.0&gt;--&lt;552.0,589.0&gt;&gt;</li>
+<li>u1303B (U+1303B): L&lt;&lt;169.0,105.0&gt;--&lt;170.0,337.0&gt;&gt;</li>
+<li>u1303B (U+1303B): L&lt;&lt;191.0,329.0&gt;--&lt;189.0,99.0&gt;&gt;</li>
+<li>u1303B (U+1303B): L&lt;&lt;735.0,408.0&gt;--&lt;734.0,551.0&gt;&gt;</li>
+<li>u1303C (U+1303C): L&lt;&lt;179.0,105.0&gt;--&lt;180.0,337.0&gt;&gt;</li>
+<li>u1303C (U+1303C): L&lt;&lt;200.0,329.0&gt;--&lt;198.0,99.0&gt;&gt;</li>
+<li>u1303C (U+1303C): L&lt;&lt;341.0,558.0&gt;--&lt;471.0,559.0&gt;&gt;</li>
+<li>u13056 (U+13056): L&lt;&lt;169.0,105.0&gt;--&lt;170.0,337.0&gt;&gt; and 44 more.</li>
+</ul>
+<p>Use -F or --full-lists to disable shortening of long lists. [code: found-semi-vertical]</p>
+</span></li></ul></div></details>
+                    </body>
+                </html>

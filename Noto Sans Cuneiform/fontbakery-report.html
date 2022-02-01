@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+                <html lang="en">
+                    <head>
+                        <meta charset="utf-8">
+                        <title>Fontbakery Check Report</title>
+                        <style>
+                            
+            html {
+                font-family: sans-serif;
+            }
+
+            h2 {
+                margin-top: 2em;
+            }
+
+            h3 {
+                margin-bottom: 1px;
+            }
+
+            table {
+                border-collapse: collapse;
+            }
+
+            th,
+            td {
+                border: 1px solid #ddd;
+                padding: 0.5em
+            }
+
+            tr:nth-child(even) {
+                background-color: #f2f2f2;
+            }
+
+            tr {
+                text-align: left;
+            }
+
+            ul {
+                margin-top: 0;
+            }
+
+            .details_item {
+                list-style: none;
+                display: flex;
+                align-items: baseline;
+            }
+
+            .details_indicator {
+                flex: 0 0 5em;
+                font-weight: bold;
+                padding-right: 0.5em;
+                text-align: right;
+            }
+
+            .details_text {
+                flex: 1 0;
+            }
+            
+                        </style>
+                    </head>
+                    <body>
+                    <h1>Fontbakery Technical Report</h1>
+<div>If you think a check is flawed or have an idea for a check, please  file an issue at <a href='https://github.com/googlefonts/fontbakery/issues'>https://github.com/googlefonts/fontbakery/issues</a> and remember to include a pointer to the repo and branch you're checking.</div>
+<h2>Summary</h2>
+            <table>
+            <tr>
+                <th>💥 ERROR</th>
+                <th>🔥 FAIL</th>
+                <th>⚠️ WARN</th>
+                <th>⏩ SKIP</th>
+                <th>ℹ️ INFO</th>
+                <th>✔️ PASS</th>
+            </tr>
+            <tr>
+                <td>0</td>
+                <td>0</td>
+                <td>4</td>
+                <td>49</td>
+                <td>4</td>
+                <td>98</td>
+            </tr>
+            <tr>
+                <td>0%</td>
+                <td>0%</td>
+                <td>33%</td>
+                <td>408%</td>
+                <td>33%</td>
+                <td>817%</td>
+            </tr>
+            </table>
+            
+<p><strong>Note:</strong> The following loglevels were omitted in this report: SKIP, INFO, PASS, DEBUG</p>
+<h2>&lt;Section: fontbakery.profiles.gpos&gt; ⚠️⚠️</h2>
+<h3>Does GPOS table have kerning information? This check skips monospaced fonts as defined by post.isFixedPitch value</h3>
+<div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/gpos_kerning_info&gt;</div>
+<details><summary>⚠️ <strong>output/Noto Sans Cuneiform/unhinted/ttf/NotoSansCuneiform-Regular.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>GPOS table lacks kerning information. [code: lacks-kern-info]</p>
+</span></li></ul></div></details>
+<details><summary>⚠️ <strong>output/Noto Sans Cuneiform/unhinted/variable-ttf/NotoSansCuneiform[wght].ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>GPOS table lacks kerning information. [code: lacks-kern-info]</p>
+</span></li></ul></div></details>
+<h2>&lt;Section: Outline Correctness Checks&gt; ⚠️⚠️⏩⏩⏩⏩</h2>
+<h3>Do any segments have colinear vectors?</h3>
+<div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/outline_colinear_vectors&gt;</div>
+<details><summary>⚠️ <strong>output/Noto Sans Cuneiform/unhinted/ttf/NotoSansCuneiform-Regular.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>The following glyphs have colinear vectors:
+* u120B6 (U+120B6): L&lt;&lt;242.0,291.0&gt;--&lt;242.0,292.0&gt;&gt; -&gt; L&lt;&lt;242.0,292.0&gt;--&lt;245.0,336.0&gt;&gt;
+* u12126 (U+12126): L&lt;&lt;164.0,3.0&gt;--&lt;158.0,98.0&gt;&gt; -&gt; L&lt;&lt;158.0,98.0&gt;--&lt;158.0,101.0&gt;&gt;
+* u1214D (U+1214D): L&lt;&lt;200.0,360.0&gt;--&lt;200.0,361.0&gt;&gt; -&gt; L&lt;&lt;200.0,361.0&gt;--&lt;202.0,391.0&gt;&gt;
+* u12194 (U+12194): L&lt;&lt;1005.0,936.0&gt;--&lt;1008.0,924.0&gt;&gt; -&gt; L&lt;&lt;1008.0,924.0&gt;--&lt;1011.0,915.0&gt;&gt;
+* u12194 (U+12194): L&lt;&lt;1179.0,107.0&gt;--&lt;1149.0,149.0&gt;&gt; -&gt; L&lt;&lt;1149.0,149.0&gt;--&lt;1116.0,194.0&gt;&gt;
+* u12194 (U+12194): L&lt;&lt;334.0,-118.0&gt;--&lt;331.0,-74.0&gt;&gt; -&gt; L&lt;&lt;331.0,-74.0&gt;--&lt;331.0,-66.0&gt;&gt;
+* u12194 (U+12194): L&lt;&lt;978.0,105.0&gt;--&lt;1005.0,63.0&gt;&gt; -&gt; L&lt;&lt;1005.0,63.0&gt;--&lt;1032.0,24.0&gt;&gt; and u1220B (U+1220B): L&lt;&lt;1190.0,431.0&gt;--&lt;1187.0,413.0&gt;&gt; -&gt; L&lt;&lt;1187.0,413.0&gt;--&lt;1185.0,393.0&gt;&gt; [code: found-colinear-vectors]</p>
+</span></li></ul></div></details>
+<h3>Do outlines contain any jaggy segments?</h3>
+<div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/outline_jaggy_segments&gt;</div>
+<details><summary>⚠️ <strong>output/Noto Sans Cuneiform/unhinted/ttf/NotoSansCuneiform-Regular.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>The following glyphs have jaggy segments:
+* u12009 (U+12009): B&lt;&lt;1105.5,92.5&gt;-&lt;1100.0,203.0&gt;-&lt;1090.0,300.0&gt;&gt;/B&lt;&lt;1090.0,300.0&gt;-&lt;1088.0,276.0&gt;-&lt;1087.0,251.0&gt;&gt; = 10.649629523754403
+* u12009 (U+12009): B&lt;&lt;488.5,232.0&gt;-&lt;487.0,249.0&gt;-&lt;485.0,267.0&gt;&gt;/B&lt;&lt;485.0,267.0&gt;-&lt;474.0,131.0&gt;-&lt;468.0,6.0&gt;&gt; = 10.964343074338954
+* u12017 (U+12017): B&lt;&lt;1064.0,52.5&gt;-&lt;1090.0,67.0&gt;-&lt;1122.0,89.0&gt;&gt;/B&lt;&lt;1122.0,89.0&gt;-&lt;991.0,30.0&gt;-&lt;880.5,-24.5&gt;&gt; = 10.26259430646775
+* u12017 (U+12017): B&lt;&lt;887.5,670.5&gt;-&lt;996.0,618.0&gt;-&lt;1124.0,560.0&gt;&gt;/B&lt;&lt;1124.0,560.0&gt;-&lt;1090.0,583.0&gt;-&lt;1062.5,598.0&gt;&gt; = 9.700726663455956
+* u12017 (U+12017): B&lt;&lt;984.5,515.0&gt;-&lt;1015.0,511.0&gt;-&lt;1046.0,507.0&gt;&gt;/B&lt;&lt;1046.0,507.0&gt;-&lt;867.0,562.0&gt;-&lt;726.0,597.0&gt;&gt; = 9.727854211999025
+* u12019 (U+12019): B&lt;&lt;1196.5,454.0&gt;-&lt;1211.0,450.0&gt;-&lt;1230.0,446.0&gt;&gt;/B&lt;&lt;1230.0,446.0&gt;-&lt;1217.0,451.0&gt;-&lt;1203.5,455.0&gt;&gt; = 9.148852985793804
+* u12019 (U+12019): L&lt;&lt;1087.0,61.0&gt;--&lt;1123.0,89.0&gt;&gt;/L&lt;&lt;1123.0,89.0&gt;--&lt;1064.0,62.0&gt;&gt; = 13.284866484902132
+* u1201D (U+1201D): B&lt;&lt;1254.5,403.0&gt;-&lt;1253.0,425.0&gt;-&lt;1251.0,447.0&gt;&gt;/B&lt;&lt;1251.0,447.0&gt;-&lt;1241.0,349.0&gt;-&lt;1233.0,214.0&gt;&gt; = 11.020770937290555
+* u1201F (U+1201F): L&lt;&lt;617.0,413.0&gt;--&lt;627.0,413.0&gt;&gt;/B&lt;&lt;627.0,413.0&gt;-&lt;605.0,418.0&gt;-&lt;587.5,420.0&gt;&gt; = 12.80426606528674
+* u12021 (U+12021): B&lt;&lt;958.0,213.0&gt;-&lt;925.0,196.0&gt;-&lt;908.0,185.0&gt;&gt;/L&lt;&lt;908.0,185.0&gt;--&lt;1033.0,234.0&gt;&gt; = 11.500063492869367 and 567 more.</p>
+<p>Use -F or --full-lists to disable shortening of long lists. [code: found-jaggy-segments]</p>
+</span></li></ul></div></details>
+                    </body>
+                </html>

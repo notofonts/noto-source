@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+                <html lang="en">
+                    <head>
+                        <meta charset="utf-8">
+                        <title>Fontbakery Check Report</title>
+                        <style>
+                            
+            html {
+                font-family: sans-serif;
+            }
+
+            h2 {
+                margin-top: 2em;
+            }
+
+            h3 {
+                margin-bottom: 1px;
+            }
+
+            table {
+                border-collapse: collapse;
+            }
+
+            th,
+            td {
+                border: 1px solid #ddd;
+                padding: 0.5em
+            }
+
+            tr:nth-child(even) {
+                background-color: #f2f2f2;
+            }
+
+            tr {
+                text-align: left;
+            }
+
+            ul {
+                margin-top: 0;
+            }
+
+            .details_item {
+                list-style: none;
+                display: flex;
+                align-items: baseline;
+            }
+
+            .details_indicator {
+                flex: 0 0 5em;
+                font-weight: bold;
+                padding-right: 0.5em;
+                text-align: right;
+            }
+
+            .details_text {
+                flex: 1 0;
+            }
+            
+                        </style>
+                    </head>
+                    <body>
+                    <h1>Fontbakery Technical Report</h1>
+<div>If you think a check is flawed or have an idea for a check, please  file an issue at <a href='https://github.com/googlefonts/fontbakery/issues'>https://github.com/googlefonts/fontbakery/issues</a> and remember to include a pointer to the repo and branch you're checking.</div>
+<h2>Summary</h2>
+            <table>
+            <tr>
+                <th>💥 ERROR</th>
+                <th>🔥 FAIL</th>
+                <th>⚠️ WARN</th>
+                <th>⏩ SKIP</th>
+                <th>ℹ️ INFO</th>
+                <th>✔️ PASS</th>
+            </tr>
+            <tr>
+                <td>0</td>
+                <td>2</td>
+                <td>4</td>
+                <td>43</td>
+                <td>4</td>
+                <td>102</td>
+            </tr>
+            <tr>
+                <td>0%</td>
+                <td>3%</td>
+                <td>7%</td>
+                <td>74%</td>
+                <td>7%</td>
+                <td>176%</td>
+            </tr>
+            </table>
+            
+<p><strong>Note:</strong> The following loglevels were omitted in this report: SKIP, INFO, PASS, DEBUG</p>
+<h2>&lt;Section: Universal&gt; 🔥🔥⏩⏩⏩⏩⏩⏩⏩⏩⏩ℹ️ℹ️ℹ️ℹ️</h2>
+<h3>Checking OS/2 usWinAscent & usWinDescent.</h3>
+<div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/family/win_ascent_and_descent&gt;</div>
+<details><summary>🔥 <strong>output/Noto Sans Bhaiksuki-Regular/unhinted/ttf/NotoSansBhaiksuki-Regular.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>🔥 FAIL</span><span class='details_text'><p>OS/2.usWinDescent value should be equal or greater than 630, but got 460 instead. [code: descent]</p>
+</span></li></ul></div></details>
+<details><summary>🔥 <strong>output/Noto Sans Bhaiksuki-Regular/unhinted/variable-ttf/NotoSansBhaiksuki-Regular[wght].ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>🔥 FAIL</span><span class='details_text'><p>OS/2.usWinDescent value should be equal or greater than 630, but got 460 instead. [code: descent]</p>
+</span></li></ul></div></details>
+<h2>&lt;Section: fontbakery.profiles.gdef&gt; ⚠️⚠️</h2>
+<h3>Check GDEF mark glyph class doesn't have characters that are not marks.</h3>
+<div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/gdef_non_mark_chars&gt;</div>
+<details><summary>⚠️ <strong>output/Noto Sans Bhaiksuki-Regular/unhinted/ttf/NotoSansBhaiksuki-Regular.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>The following non-mark characters should not be in the GDEF mark glyph class:
+U+11C2F [code: non-mark-chars]</p>
+</span></li></ul></div></details>
+<details><summary>⚠️ <strong>output/Noto Sans Bhaiksuki-Regular/unhinted/variable-ttf/NotoSansBhaiksuki-Regular[wght].ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>The following non-mark characters should not be in the GDEF mark glyph class:
+U+11C2F [code: non-mark-chars]</p>
+</span></li></ul></div></details>
+<h2>&lt;Section: Outline Correctness Checks&gt; ⚠️⚠️⏩⏩⏩⏩</h2>
+<h3>Are there any misaligned on-curve points?</h3>
+<div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/outline_alignment_miss&gt;</div>
+<details><summary>⚠️ <strong>output/Noto Sans Bhaiksuki-Regular/unhinted/ttf/NotoSansBhaiksuki-Regular.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>The following glyphs have on-curve points which have potentially incorrect y coordinates:
+* AA_indi (U+11C01): X=307.0,Y=1.0 (should be at baseline 0?)
+* II_indi (U+11C03): X=27.0,Y=-1.0 (should be at baseline 0?)
+* II_indi (U+11C03): X=332.5,Y=1.5 (should be at baseline 0?)
+* II_indi (U+11C03): X=281.0,Y=1.5 (should be at baseline 0?)
+* UU_indi (U+11C05): X=587.0,Y=-1.0 (should be at baseline 0?)
+* VocRR_indi (U+11C07): X=543.0,Y=-2.0 (should be at baseline 0?)
+* VocL_indi (U+11C08): X=336.0,Y=2.0 (should be at baseline 0?)
+* AU_indi (U+11C0D): X=527.0,Y=-1.0 (should be at baseline 0?)
+* Ka (U+11C0E): X=173.5,Y=1.0 (should be at baseline 0?)
+* Ja (U+11C15): X=439.0,Y=2.0 (should be at baseline 0?) and 22 more.</p>
+<p>Use -F or --full-lists to disable shortening of long lists. [code: found-misalignments]</p>
+</span></li></ul></div></details>
+<details><summary>⚠️ <strong>output/Noto Sans Bhaiksuki-Regular/unhinted/variable-ttf/NotoSansBhaiksuki-Regular[wght].ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>The following glyphs have on-curve points which have potentially incorrect y coordinates:
+* AA_indi (U+11C01): X=307.0,Y=1.0 (should be at baseline 0?)
+* II_indi (U+11C03): X=27.0,Y=-1.0 (should be at baseline 0?)
+* II_indi (U+11C03): X=332.5,Y=1.5 (should be at baseline 0?)
+* II_indi (U+11C03): X=281.0,Y=1.5 (should be at baseline 0?)
+* UU_indi (U+11C05): X=587.0,Y=-1.0 (should be at baseline 0?)
+* VocRR_indi (U+11C07): X=543.0,Y=-2.0 (should be at baseline 0?)
+* VocL_indi (U+11C08): X=336.0,Y=2.0 (should be at baseline 0?)
+* AU_indi (U+11C0D): X=527.0,Y=-1.0 (should be at baseline 0?)
+* Ka (U+11C0E): X=173.5,Y=1.0 (should be at baseline 0?)
+* Ja (U+11C15): X=439.0,Y=2.0 (should be at baseline 0?) and 22 more.</p>
+<p>Use -F or --full-lists to disable shortening of long lists. [code: found-misalignments]</p>
+</span></li></ul></div></details>
+                    </body>
+                </html>

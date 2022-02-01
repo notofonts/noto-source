@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+                <html lang="en">
+                    <head>
+                        <meta charset="utf-8">
+                        <title>Fontbakery Check Report</title>
+                        <style>
+                            
+            html {
+                font-family: sans-serif;
+            }
+
+            h2 {
+                margin-top: 2em;
+            }
+
+            h3 {
+                margin-bottom: 1px;
+            }
+
+            table {
+                border-collapse: collapse;
+            }
+
+            th,
+            td {
+                border: 1px solid #ddd;
+                padding: 0.5em
+            }
+
+            tr:nth-child(even) {
+                background-color: #f2f2f2;
+            }
+
+            tr {
+                text-align: left;
+            }
+
+            ul {
+                margin-top: 0;
+            }
+
+            .details_item {
+                list-style: none;
+                display: flex;
+                align-items: baseline;
+            }
+
+            .details_indicator {
+                flex: 0 0 5em;
+                font-weight: bold;
+                padding-right: 0.5em;
+                text-align: right;
+            }
+
+            .details_text {
+                flex: 1 0;
+            }
+            
+                        </style>
+                    </head>
+                    <body>
+                    <h1>Fontbakery Technical Report</h1>
+<div>If you think a check is flawed or have an idea for a check, please  file an issue at <a href='https://github.com/googlefonts/fontbakery/issues'>https://github.com/googlefonts/fontbakery/issues</a> and remember to include a pointer to the repo and branch you're checking.</div>
+<h2>Summary</h2>
+            <table>
+            <tr>
+                <th>💥 ERROR</th>
+                <th>🔥 FAIL</th>
+                <th>⚠️ WARN</th>
+                <th>⏩ SKIP</th>
+                <th>ℹ️ INFO</th>
+                <th>✔️ PASS</th>
+            </tr>
+            <tr>
+                <td>0</td>
+                <td>2</td>
+                <td>7</td>
+                <td>26</td>
+                <td>2</td>
+                <td>45</td>
+            </tr>
+            <tr>
+                <td>0%</td>
+                <td>6%</td>
+                <td>20%</td>
+                <td>74%</td>
+                <td>6%</td>
+                <td>129%</td>
+            </tr>
+            </table>
+            
+<p><strong>Note:</strong> The following loglevels were omitted in this report: SKIP, INFO, PASS, DEBUG</p>
+<h2>&lt;Section: Universal&gt; 🔥🔥⚠️⏩⏩⏩⏩⏩ℹ️ℹ️</h2>
+<h3>Checking OS/2 usWinAscent & usWinDescent.</h3>
+<div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/family/win_ascent_and_descent&gt;</div>
+<details><summary>🔥 <strong>output/Noto Sans Elymaic/unhinted/ttf/NotoSansElymaic-Regular.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>🔥 FAIL</span><span class='details_text'><p>OS/2.usWinDescent value should be equal or greater than 290, but got 280 instead. [code: descent]</p>
+</span></li></ul></div></details>
+<h3>Checking OS/2 Metrics match hhea Metrics.</h3>
+<div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/os2_metrics_match_hhea&gt;</div>
+<details><summary>🔥 <strong>output/Noto Sans Elymaic/unhinted/ttf/NotoSansElymaic-Regular.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>🔥 FAIL</span><span class='details_text'><p>OS/2 sTypoAscender (720) and hhea ascent (920) must be equal. [code: ascender]</p>
+</span></li></ul></div></details>
+<h3>Check font contains no unreachable glyphs</h3>
+<div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/unreachable_glyphs&gt;</div>
+<details><summary>⚠️ <strong>output/Noto Sans Elymaic/unhinted/ttf/NotoSansElymaic-Regular.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>The following glyphs could not be reached by codepoint or substitution rules:
+- u10FF6.ss02
+[code: unreachable-glyphs]</p>
+</span></li></ul></div></details>
+<h2>&lt;Section: fontbakery.profiles.os2&gt; ⚠️</h2>
+<h3>Check if OS/2 xAvgCharWidth is correct.</h3>
+<div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/xavgcharwidth&gt;</div>
+<details><summary>⚠️ <strong>output/Noto Sans Elymaic/unhinted/ttf/NotoSansElymaic-Regular.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>OS/2 xAvgCharWidth is 725 but it should be 738 which corresponds to the average of the widths of all glyphs in the font. [code: xAvgCharWidth-wrong]</p>
+</span></li></ul></div></details>
+<h2>&lt;Section: fontbakery.profiles.hhea&gt; ⚠️</h2>
+<h3>Checking Vertical Metric Linegaps.</h3>
+<div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/linegaps&gt;</div>
+<details><summary>⚠️ <strong>output/Noto Sans Elymaic/unhinted/ttf/NotoSansElymaic-Regular.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>OS/2 sTypoLineGap is not equal to 0. [code: OS/2]</p>
+</span></li></ul></div></details>
+<h2>&lt;Section: Outline Correctness Checks&gt; ⚠️⚠️⚠️⚠️⏩</h2>
+<h3>Are there any misaligned on-curve points?</h3>
+<div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/outline_alignment_miss&gt;</div>
+<details><summary>⚠️ <strong>output/Noto Sans Elymaic/unhinted/ttf/NotoSansElymaic-Regular.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>The following glyphs have on-curve points which have potentially incorrect y coordinates:
+* u10FE5 (U+10FE5): X=178.0,Y=571.0 (should be at cap-height 570?)
+* u10FE5 (U+10FE5): X=326.0,Y=571.0 (should be at cap-height 570?)
+* u10FE7 (U+10FE7): X=101.0,Y=2.0 (should be at baseline 0?) and u10FEC (U+10FEC): X=95.0,Y=-1.0 (should be at baseline 0?) [code: found-misalignments]</p>
+</span></li></ul></div></details>
+<h3>Are any segments inordinately short?</h3>
+<div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/outline_short_segments&gt;</div>
+<details><summary>⚠️ <strong>output/Noto Sans Elymaic/unhinted/ttf/NotoSansElymaic-Regular.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>The following glyphs have segments which seem very short:
+* u10FE1 (U+10FE1) contains a short segment B&lt;&lt;353.0,314.0&gt;-&lt;347.0,314.0&gt;-&lt;342.0,315.0&gt;&gt;
+* u10FE6 (U+10FE6) contains a short segment B&lt;&lt;471.0,493.0&gt;-&lt;465.0,494.0&gt;-&lt;459.5,494.0&gt;&gt;
+* u10FE6 (U+10FE6) contains a short segment B&lt;&lt;459.5,494.0&gt;-&lt;454.0,494.0&gt;-&lt;448.0,494.0&gt;&gt;
+* u10FF2 (U+10FF2) contains a short segment L&lt;&lt;267.0,419.0&gt;--&lt;267.0,419.0&gt;&gt;
+* u10FF3 (U+10FF3) contains a short segment B&lt;&lt;485.0,419.0&gt;-&lt;485.0,424.0&gt;-&lt;485.0,429.0&gt;&gt;
+* u10FF4 (U+10FF4) contains a short segment L&lt;&lt;294.0,570.0&gt;--&lt;300.0,570.0&gt;&gt; and u10FF4 (U+10FF4) contains a short segment L&lt;&lt;752.0,498.0&gt;--&lt;752.0,498.0&gt;&gt; [code: found-short-segments]</p>
+</span></li></ul></div></details>
+<h3>Do any segments have colinear vectors?</h3>
+<div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/outline_colinear_vectors&gt;</div>
+<details><summary>⚠️ <strong>output/Noto Sans Elymaic/unhinted/ttf/NotoSansElymaic-Regular.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>The following glyphs have colinear vectors:
+* u10FF2 (U+10FF2): L&lt;&lt;365.0,490.0&gt;--&lt;358.0,419.0&gt;&gt; -&gt; L&lt;&lt;358.0,419.0&gt;--&lt;305.0,-151.0&gt;&gt; and u10FF4 (U+10FF4): L&lt;&lt;294.0,570.0&gt;--&lt;300.0,570.0&gt;&gt; -&gt; L&lt;&lt;300.0,570.0&gt;--&lt;760.0,579.0&gt;&gt; [code: found-colinear-vectors]</p>
+</span></li></ul></div></details>
+<h3>Do outlines contain any jaggy segments?</h3>
+<div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/outline_jaggy_segments&gt;</div>
+<details><summary>⚠️ <strong>output/Noto Sans Elymaic/unhinted/ttf/NotoSansElymaic-Regular.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>The following glyphs have jaggy segments:
+* u10FF4 (U+10FF4): B&lt;&lt;855.0,479.0&gt;-&lt;824.0,502.0&gt;-&lt;752.0,498.0&gt;&gt;/L&lt;&lt;752.0,498.0&gt;--&lt;752.0,498.0&gt;&gt; = 3.1798301198641643 and u10FF4 (U+10FF4): L&lt;&lt;752.0,498.0&gt;--&lt;752.0,498.0&gt;&gt;/L&lt;&lt;752.0,498.0&gt;--&lt;675.0,497.0&gt;&gt; = 0.744059202888511 [code: found-jaggy-segments]</p>
+</span></li></ul></div></details>
+                    </body>
+                </html>

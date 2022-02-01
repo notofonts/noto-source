@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+                <html lang="en">
+                    <head>
+                        <meta charset="utf-8">
+                        <title>Fontbakery Check Report</title>
+                        <style>
+                            
+            html {
+                font-family: sans-serif;
+            }
+
+            h2 {
+                margin-top: 2em;
+            }
+
+            h3 {
+                margin-bottom: 1px;
+            }
+
+            table {
+                border-collapse: collapse;
+            }
+
+            th,
+            td {
+                border: 1px solid #ddd;
+                padding: 0.5em
+            }
+
+            tr:nth-child(even) {
+                background-color: #f2f2f2;
+            }
+
+            tr {
+                text-align: left;
+            }
+
+            ul {
+                margin-top: 0;
+            }
+
+            .details_item {
+                list-style: none;
+                display: flex;
+                align-items: baseline;
+            }
+
+            .details_indicator {
+                flex: 0 0 5em;
+                font-weight: bold;
+                padding-right: 0.5em;
+                text-align: right;
+            }
+
+            .details_text {
+                flex: 1 0;
+            }
+            
+                        </style>
+                    </head>
+                    <body>
+                    <h1>Fontbakery Technical Report</h1>
+<div>If you think a check is flawed or have an idea for a check, please  file an issue at <a href='https://github.com/googlefonts/fontbakery/issues'>https://github.com/googlefonts/fontbakery/issues</a> and remember to include a pointer to the repo and branch you're checking.</div>
+<h2>Summary</h2>
+            <table>
+            <tr>
+                <th>💥 ERROR</th>
+                <th>🔥 FAIL</th>
+                <th>⚠️ WARN</th>
+                <th>⏩ SKIP</th>
+                <th>ℹ️ INFO</th>
+                <th>✔️ PASS</th>
+            </tr>
+            <tr>
+                <td>0</td>
+                <td>9</td>
+                <td>45</td>
+                <td>190</td>
+                <td>18</td>
+                <td>404</td>
+            </tr>
+            <tr>
+                <td>0%</td>
+                <td>7%</td>
+                <td>33%</td>
+                <td>140%</td>
+                <td>13%</td>
+                <td>297%</td>
+            </tr>
+            </table>
+            
+<p><strong>Note:</strong> The following loglevels were omitted in this report: SKIP, INFO, PASS, DEBUG</p>
+<h2>&lt;Section: Noto Fonts&gt; ⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️</h2>
+<h3>Ensure UnicodeRange bits are properly set.</h3>
+<div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/unicode_range_bits&gt;</div>
+<details><summary>⚠️ <strong>output/Noto Sans Canadian Aboriginal/unhinted/ttf/NotoSansCanadianAboriginal-Black.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>UnicodeRange bit 57 &quot;Non-Plane 0 *&quot; should be 1 because cmap has 16 of the 1048576 codepoints in this range. [code: bad-range-bit]</p>
+</span></li></ul></div></details>
+<details><summary>⚠️ <strong>output/Noto Sans Canadian Aboriginal/unhinted/ttf/NotoSansCanadianAboriginal-Bold.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>UnicodeRange bit 57 &quot;Non-Plane 0 *&quot; should be 1 because cmap has 16 of the 1048576 codepoints in this range. [code: bad-range-bit]</p>
+</span></li></ul></div></details>
+<details><summary>⚠️ <strong>output/Noto Sans Canadian Aboriginal/unhinted/ttf/NotoSansCanadianAboriginal-ExtraBold.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>UnicodeRange bit 57 &quot;Non-Plane 0 *&quot; should be 1 because cmap has 16 of the 1048576 codepoints in this range. [code: bad-range-bit]</p>
+</span></li></ul></div></details>
+<details><summary>⚠️ <strong>output/Noto Sans Canadian Aboriginal/unhinted/ttf/NotoSansCanadianAboriginal-ExtraLight.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>UnicodeRange bit 57 &quot;Non-Plane 0 *&quot; should be 1 because cmap has 16 of the 1048576 codepoints in this range. [code: bad-range-bit]</p>
+</span></li></ul></div></details>
+<details><summary>⚠️ <strong>output/Noto Sans Canadian Aboriginal/unhinted/ttf/NotoSansCanadianAboriginal-Light.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>UnicodeRange bit 57 &quot;Non-Plane 0 *&quot; should be 1 because cmap has 16 of the 1048576 codepoints in this range. [code: bad-range-bit]</p>
+</span></li></ul></div></details>
+<details><summary>⚠️ <strong>output/Noto Sans Canadian Aboriginal/unhinted/ttf/NotoSansCanadianAboriginal-Medium.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>UnicodeRange bit 57 &quot;Non-Plane 0 *&quot; should be 1 because cmap has 16 of the 1048576 codepoints in this range. [code: bad-range-bit]</p>
+</span></li></ul></div></details>
+<details><summary>⚠️ <strong>output/Noto Sans Canadian Aboriginal/unhinted/ttf/NotoSansCanadianAboriginal-Regular.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>UnicodeRange bit 57 &quot;Non-Plane 0 *&quot; should be 1 because cmap has 16 of the 1048576 codepoints in this range. [code: bad-range-bit]</p>
+</span></li></ul></div></details>
+<details><summary>⚠️ <strong>output/Noto Sans Canadian Aboriginal/unhinted/ttf/NotoSansCanadianAboriginal-SemiBold.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>UnicodeRange bit 57 &quot;Non-Plane 0 *&quot; should be 1 because cmap has 16 of the 1048576 codepoints in this range. [code: bad-range-bit]</p>
+</span></li></ul></div></details>
+<details><summary>⚠️ <strong>output/Noto Sans Canadian Aboriginal/unhinted/ttf/NotoSansCanadianAboriginal-Thin.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>UnicodeRange bit 57 &quot;Non-Plane 0 *&quot; should be 1 because cmap has 16 of the 1048576 codepoints in this range. [code: bad-range-bit]</p>
+</span></li></ul></div></details>
+<h2>&lt;Section: fontbakery.profiles.name&gt; 🔥🔥🔥🔥🔥🔥🔥🔥🔥⏩⏩⏩⏩⏩⏩⏩⏩⏩</h2>
+<h3>Does full font name begin with the font family name?</h3>
+<div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/name/match_familyname_fullfont&gt;</div>
+<details><summary>🔥 <strong>output/Noto Sans Canadian Aboriginal/unhinted/ttf/NotoSansCanadianAboriginal-Black.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>🔥 FAIL</span><span class='details_text'><p>On the 'name' table, the full font name (NameID 4 - FULL_FONT_NAME: 'Noto Sans CanAborig Bk') does not begin with font family name (NameID 1 - FONT_FAMILY_NAME: 'Noto Sans Canadian Aboriginal Black') [code: does-not]</p>
+</span></li></ul></div></details>
+<details><summary>🔥 <strong>output/Noto Sans Canadian Aboriginal/unhinted/ttf/NotoSansCanadianAboriginal-Bold.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>🔥 FAIL</span><span class='details_text'><p>On the 'name' table, the full font name (NameID 4 - FULL_FONT_NAME: 'Noto Sans CanAborig') does not begin with font family name (NameID 1 - FONT_FAMILY_NAME: 'Noto Sans Canadian Aboriginal Bold') [code: does-not]</p>
+</span></li></ul></div></details>
+<details><summary>🔥 <strong>output/Noto Sans Canadian Aboriginal/unhinted/ttf/NotoSansCanadianAboriginal-ExtraBold.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>🔥 FAIL</span><span class='details_text'><p>On the 'name' table, the full font name (NameID 4 - FULL_FONT_NAME: 'Noto Sans CanAborig XBd') does not begin with font family name (NameID 1 - FONT_FAMILY_NAME: 'Noto Sans Canadian Aboriginal ExtraBold') [code: does-not]</p>
+</span></li></ul></div></details>
+<details><summary>🔥 <strong>output/Noto Sans Canadian Aboriginal/unhinted/ttf/NotoSansCanadianAboriginal-ExtraLight.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>🔥 FAIL</span><span class='details_text'><p>On the 'name' table, the full font name (NameID 4 - FULL_FONT_NAME: 'Noto Sans CanAborig XLt') does not begin with font family name (NameID 1 - FONT_FAMILY_NAME: 'Noto Sans Canadian Aboriginal ExtraLight') [code: does-not]</p>
+</span></li></ul></div></details>
+<details><summary>🔥 <strong>output/Noto Sans Canadian Aboriginal/unhinted/ttf/NotoSansCanadianAboriginal-Light.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>🔥 FAIL</span><span class='details_text'><p>On the 'name' table, the full font name (NameID 4 - FULL_FONT_NAME: 'Noto Sans CanAborig Lt') does not begin with font family name (NameID 1 - FONT_FAMILY_NAME: 'Noto Sans Canadian Aboriginal Light') [code: does-not]</p>
+</span></li></ul></div></details>
+<details><summary>🔥 <strong>output/Noto Sans Canadian Aboriginal/unhinted/ttf/NotoSansCanadianAboriginal-Medium.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>🔥 FAIL</span><span class='details_text'><p>On the 'name' table, the full font name (NameID 4 - FULL_FONT_NAME: 'Noto Sans CanAborig Md') does not begin with font family name (NameID 1 - FONT_FAMILY_NAME: 'Noto Sans Canadian Aboriginal Medium') [code: does-not]</p>
+</span></li></ul></div></details>
+<details><summary>🔥 <strong>output/Noto Sans Canadian Aboriginal/unhinted/ttf/NotoSansCanadianAboriginal-Regular.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>🔥 FAIL</span><span class='details_text'><p>On the 'name' table, the full font name (NameID 4 - FULL_FONT_NAME: 'Noto Sans CanAborig') does not begin with font family name (NameID 1 - FONT_FAMILY_NAME: 'Noto Sans Canadian Aboriginal Regular') [code: does-not]</p>
+</span></li></ul></div></details>
+<details><summary>🔥 <strong>output/Noto Sans Canadian Aboriginal/unhinted/ttf/NotoSansCanadianAboriginal-SemiBold.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>🔥 FAIL</span><span class='details_text'><p>On the 'name' table, the full font name (NameID 4 - FULL_FONT_NAME: 'Noto Sans CanAborig SmBd') does not begin with font family name (NameID 1 - FONT_FAMILY_NAME: 'Noto Sans Canadian Aboriginal SemiBold') [code: does-not]</p>
+</span></li></ul></div></details>
+<details><summary>🔥 <strong>output/Noto Sans Canadian Aboriginal/unhinted/ttf/NotoSansCanadianAboriginal-Thin.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>🔥 FAIL</span><span class='details_text'><p>On the 'name' table, the full font name (NameID 4 - FULL_FONT_NAME: 'Noto Sans CanAborig Th') does not begin with font family name (NameID 1 - FONT_FAMILY_NAME: 'Noto Sans Canadian Aboriginal Thin') [code: does-not]</p>
+</span></li></ul></div></details>
+<h2>&lt;Section: fontbakery.profiles.gpos&gt; ⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️</h2>
+<h3>Does GPOS table have kerning information? This check skips monospaced fonts as defined by post.isFixedPitch value</h3>
+<div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/gpos_kerning_info&gt;</div>
+<details><summary>⚠️ <strong>output/Noto Sans Canadian Aboriginal/unhinted/ttf/NotoSansCanadianAboriginal-Black.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>GPOS table lacks kerning information. [code: lacks-kern-info]</p>
+</span></li></ul></div></details>
+<details><summary>⚠️ <strong>output/Noto Sans Canadian Aboriginal/unhinted/ttf/NotoSansCanadianAboriginal-Bold.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>GPOS table lacks kerning information. [code: lacks-kern-info]</p>
+</span></li></ul></div></details>
+<details><summary>⚠️ <strong>output/Noto Sans Canadian Aboriginal/unhinted/ttf/NotoSansCanadianAboriginal-ExtraBold.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>GPOS table lacks kerning information. [code: lacks-kern-info]</p>
+</span></li></ul></div></details>
+<details><summary>⚠️ <strong>output/Noto Sans Canadian Aboriginal/unhinted/ttf/NotoSansCanadianAboriginal-ExtraLight.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>GPOS table lacks kerning information. [code: lacks-kern-info]</p>
+</span></li></ul></div></details>
+<details><summary>⚠️ <strong>output/Noto Sans Canadian Aboriginal/unhinted/ttf/NotoSansCanadianAboriginal-Light.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>GPOS table lacks kerning information. [code: lacks-kern-info]</p>
+</span></li></ul></div></details>
+<details><summary>⚠️ <strong>output/Noto Sans Canadian Aboriginal/unhinted/ttf/NotoSansCanadianAboriginal-Medium.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>GPOS table lacks kerning information. [code: lacks-kern-info]</p>
+</span></li></ul></div></details>
+<details><summary>⚠️ <strong>output/Noto Sans Canadian Aboriginal/unhinted/ttf/NotoSansCanadianAboriginal-Regular.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>GPOS table lacks kerning information. [code: lacks-kern-info]</p>
+</span></li></ul></div></details>
+<details><summary>⚠️ <strong>output/Noto Sans Canadian Aboriginal/unhinted/ttf/NotoSansCanadianAboriginal-SemiBold.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>GPOS table lacks kerning information. [code: lacks-kern-info]</p>
+</span></li></ul></div></details>
+<details><summary>⚠️ <strong>output/Noto Sans Canadian Aboriginal/unhinted/ttf/NotoSansCanadianAboriginal-Thin.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>GPOS table lacks kerning information. [code: lacks-kern-info]</p>
+</span></li></ul></div></details>
+<h2>&lt;Section: Outline Correctness Checks&gt; ⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️</h2>
+<h3>Are there any misaligned on-curve points?</h3>
+<div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/outline_alignment_miss&gt;</div>
+<details><summary>⚠️ <strong>output/Noto Sans Canadian Aboriginal/unhinted/ttf/NotoSansCanadianAboriginal-Regular.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>The following glyphs have on-curve points which have potentially incorrect y coordinates:
+* ring (U+02DA): X=40.0,Y=712.0 (should be at cap-height 714?)
+* ring (U+02DA): X=260.0,Y=713.0 (should be at cap-height 714?)
+* ring (U+02DA): X=205.0,Y=712.0 (should be at cap-height 714?)
+* ring (U+02DA): X=93.0,Y=712.0 (should be at cap-height 714?)
+* uni1479 (U+1479): X=68.0,Y=2.0 (should be at baseline 0?)
+* uni1479 (U+1479): X=146.0,Y=2.0 (should be at baseline 0?)
+* uni1486 (U+1486): X=68.0,Y=2.0 (should be at baseline 0?)
+* uni1486 (U+1486): X=146.0,Y=2.0 (should be at baseline 0?)
+* uni155D (U+155D): X=310.5,Y=715.0 (should be at cap-height 714?)
+* uni1614 (U+1614): X=71.0,Y=716.0 (should be at cap-height 714?) and 85 more.</p>
+<p>Use -F or --full-lists to disable shortening of long lists. [code: found-misalignments]</p>
+</span></li></ul></div></details>
+<h3>Are any segments inordinately short?</h3>
+<div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/outline_short_segments&gt;</div>
+<details><summary>⚠️ <strong>output/Noto Sans Canadian Aboriginal/unhinted/ttf/NotoSansCanadianAboriginal-Black.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>The following glyphs have segments which seem very short:
+* uni14ED (U+14ED) contains a short segment L&lt;&lt;391.0,256.0&gt;--&lt;381.0,256.0&gt;&gt;
+* uni14F4 (U+14F4) contains a short segment L&lt;&lt;251.0,458.0&gt;--&lt;261.0,458.0&gt;&gt;
+* uni14F5 (U+14F5) contains a short segment L&lt;&lt;251.0,458.0&gt;--&lt;261.0,458.0&gt;&gt;
+* uni14F6 (U+14F6) contains a short segment L&lt;&lt;539.0,256.0&gt;--&lt;529.0,256.0&gt;&gt;
+* uni14F7 (U+14F7) contains a short segment L&lt;&lt;391.0,256.0&gt;--&lt;381.0,256.0&gt;&gt;
+* uni1500 (U+1500) contains a short segment L&lt;&lt;459.0,458.0&gt;--&lt;469.0,458.0&gt;&gt;
+* uni1501 (U+1501) contains a short segment L&lt;&lt;251.0,458.0&gt;--&lt;261.0,458.0&gt;&gt;
+* uni1502 (U+1502) contains a short segment L&lt;&lt;459.0,458.0&gt;--&lt;469.0,458.0&gt;&gt;
+* uni1503 (U+1503) contains a short segment L&lt;&lt;257.0,458.0&gt;--&lt;267.0,458.0&gt;&gt;
+* uni1504 (U+1504) contains a short segment L&lt;&lt;459.0,458.0&gt;--&lt;469.0,458.0&gt;&gt; and 75 more.</p>
+<p>Use -F or --full-lists to disable shortening of long lists. [code: found-short-segments]</p>
+</span></li></ul></div></details>
+<details><summary>⚠️ <strong>output/Noto Sans Canadian Aboriginal/unhinted/ttf/NotoSansCanadianAboriginal-Bold.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>The following glyphs have segments which seem very short:
+* uni1564 (U+1564) contains a short segment L&lt;&lt;455.0,560.0&gt;--&lt;455.0,560.0&gt;&gt;
+* uni1565 (U+1565) contains a short segment L&lt;&lt;455.0,560.0&gt;--&lt;455.0,560.0&gt;&gt;
+* uni1566 (U+1566) contains a short segment L&lt;&lt;295.0,560.0&gt;--&lt;295.0,560.0&gt;&gt;
+* uni1567 (U+1567) contains a short segment L&lt;&lt;295.0,560.0&gt;--&lt;295.0,560.0&gt;&gt;
+* uni1568 (U+1568) contains a short segment L&lt;&lt;473.0,561.0&gt;--&lt;473.0,561.0&gt;&gt;
+* uni1569 (U+1569) contains a short segment L&lt;&lt;295.0,560.0&gt;--&lt;295.0,560.0&gt;&gt;
+* uni15C1 (U+15C1) contains a short segment L&lt;&lt;214.0,391.0&gt;--&lt;218.0,408.0&gt;&gt;
+* uni15C2 (U+15C2) contains a short segment L&lt;&lt;588.0,323.0&gt;--&lt;584.0,306.0&gt;&gt;
+* uni15F2 (U+15F2) contains a short segment L&lt;&lt;387.0,417.0&gt;--&lt;404.0,417.0&gt;&gt;
+* uni1618 (U+1618) contains a short segment B&lt;&lt;533.0,314.0&gt;-&lt;525.0,316.0&gt;-&lt;516.0,316.0&gt;&gt; and 65 more.</p>
+<p>Use -F or --full-lists to disable shortening of long lists. [code: found-short-segments]</p>
+</span></li></ul></div></details>
+<details><summary>⚠️ <strong>output/Noto Sans Canadian Aboriginal/unhinted/ttf/NotoSansCanadianAboriginal-ExtraBold.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>The following glyphs have segments which seem very short:
+* uni14ED (U+14ED) contains a short segment L&lt;&lt;403.0,256.0&gt;--&lt;391.0,256.0&gt;&gt;
+* uni14F4 (U+14F4) contains a short segment L&lt;&lt;231.0,458.0&gt;--&lt;244.0,458.0&gt;&gt;
+* uni14F5 (U+14F5) contains a short segment L&lt;&lt;231.0,458.0&gt;--&lt;244.0,458.0&gt;&gt;
+* uni14F6 (U+14F6) contains a short segment L&lt;&lt;546.0,256.0&gt;--&lt;534.0,256.0&gt;&gt;
+* uni14F7 (U+14F7) contains a short segment L&lt;&lt;403.0,256.0&gt;--&lt;391.0,256.0&gt;&gt;
+* uni1500 (U+1500) contains a short segment L&lt;&lt;434.0,458.0&gt;--&lt;447.0,458.0&gt;&gt;
+* uni1501 (U+1501) contains a short segment L&lt;&lt;231.0,458.0&gt;--&lt;244.0,458.0&gt;&gt;
+* uni1502 (U+1502) contains a short segment L&lt;&lt;434.0,458.0&gt;--&lt;447.0,458.0&gt;&gt;
+* uni1503 (U+1503) contains a short segment L&lt;&lt;234.0,458.0&gt;--&lt;247.0,458.0&gt;&gt;
+* uni1504 (U+1504) contains a short segment L&lt;&lt;434.0,458.0&gt;--&lt;447.0,458.0&gt;&gt; and 68 more.</p>
+<p>Use -F or --full-lists to disable shortening of long lists. [code: found-short-segments]</p>
+</span></li></ul></div></details>
+<details><summary>⚠️ <strong>output/Noto Sans Canadian Aboriginal/unhinted/ttf/NotoSansCanadianAboriginal-SemiBold.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>The following glyphs have segments which seem very short:
+* uni14EC (U+14EC) contains a short segment L&lt;&lt;557.0,725.0&gt;--&lt;579.0,725.0&gt;&gt;
+* uni14EC (U+14EC) contains a short segment L&lt;&lt;579.0,-12.0&gt;--&lt;557.0,-12.0&gt;&gt;
+* uni1552 (U+1552) contains a short segment L&lt;&lt;60.0,725.0&gt;--&lt;82.0,725.0&gt;&gt;
+* uni1552 (U+1552) contains a short segment L&lt;&lt;82.0,-12.0&gt;--&lt;60.0,-12.0&gt;&gt;
+* uni15D3 (U+15D3) contains a short segment L&lt;&lt;49.0,726.0&gt;--&lt;71.0,726.0&gt;&gt;
+* uni15D3 (U+15D3) contains a short segment L&lt;&lt;71.0,-10.0&gt;--&lt;49.0,-10.0&gt;&gt;
+* uni15D4 (U+15D4) contains a short segment L&lt;&lt;61.0,726.0&gt;--&lt;83.0,726.0&gt;&gt;
+* uni15D4 (U+15D4) contains a short segment L&lt;&lt;83.0,-10.0&gt;--&lt;61.0,-10.0&gt;&gt;
+* uni15F2 (U+15F2) contains a short segment L&lt;&lt;383.0,408.0&gt;--&lt;402.0,408.0&gt;&gt;
+* uni1612 (U+1612) contains a short segment B&lt;&lt;294.0,350.0&gt;-&lt;294.0,354.0&gt;-&lt;294.0,356.0&gt;&gt; and 75 more.</p>
+<p>Use -F or --full-lists to disable shortening of long lists. [code: found-short-segments]</p>
+</span></li></ul></div></details>
+<h3>Do any segments have colinear vectors?</h3>
+<div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/outline_colinear_vectors&gt;</div>
+<details><summary>⚠️ <strong>output/Noto Sans Canadian Aboriginal/unhinted/ttf/NotoSansCanadianAboriginal-Black.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>The following glyphs have colinear vectors:
+* uni166A (U+166A): L&lt;&lt;415.0,305.0&gt;--&lt;412.0,305.0&gt;&gt; -&gt; L&lt;&lt;412.0,305.0&gt;--&lt;367.0,305.0&gt;&gt; [code: found-colinear-vectors]</p>
+</span></li></ul></div></details>
+<details><summary>⚠️ <strong>output/Noto Sans Canadian Aboriginal/unhinted/ttf/NotoSansCanadianAboriginal-Bold.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>The following glyphs have colinear vectors:
+* uni165E (U+165E): L&lt;&lt;325.0,408.0&gt;--&lt;407.0,408.0&gt;&gt; -&gt; L&lt;&lt;407.0,408.0&gt;--&lt;408.0,408.0&gt;&gt; and uni165E (U+165E): L&lt;&lt;408.0,307.0&gt;--&lt;407.0,307.0&gt;&gt; -&gt; L&lt;&lt;407.0,307.0&gt;--&lt;325.0,307.0&gt;&gt; [code: found-colinear-vectors]</p>
+</span></li></ul></div></details>
+<details><summary>⚠️ <strong>output/Noto Sans Canadian Aboriginal/unhinted/ttf/NotoSansCanadianAboriginal-ExtraLight.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>The following glyphs have colinear vectors:
+* uni11AB6 (U+11AB6): L&lt;&lt;446.0,714.0&gt;--&lt;478.0,714.0&gt;&gt; -&gt; L&lt;&lt;478.0,714.0&gt;--&lt;478.0,714.0&gt;&gt; and uni11AB7 (U+11AB7): L&lt;&lt;446.0,714.0&gt;--&lt;478.0,714.0&gt;&gt; -&gt; L&lt;&lt;478.0,714.0&gt;--&lt;478.0,714.0&gt;&gt; [code: found-colinear-vectors]</p>
+</span></li></ul></div></details>
+<details><summary>⚠️ <strong>output/Noto Sans Canadian Aboriginal/unhinted/ttf/NotoSansCanadianAboriginal-Medium.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>The following glyphs have colinear vectors:
+* uni1564 (U+1564): L&lt;&lt;351.0,629.0&gt;--&lt;346.0,629.0&gt;&gt; -&gt; L&lt;&lt;346.0,629.0&gt;--&lt;317.0,629.0&gt;&gt; and uni1565 (U+1565): L&lt;&lt;351.0,629.0&gt;--&lt;346.0,629.0&gt;&gt; -&gt; L&lt;&lt;346.0,629.0&gt;--&lt;317.0,629.0&gt;&gt; [code: found-colinear-vectors]</p>
+</span></li></ul></div></details>
+<details><summary>⚠️ <strong>output/Noto Sans Canadian Aboriginal/unhinted/ttf/NotoSansCanadianAboriginal-SemiBold.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>The following glyphs have colinear vectors:
+* uni11AB6 (U+11AB6): L&lt;&lt;436.0,714.0&gt;--&lt;545.0,714.0&gt;&gt; -&gt; L&lt;&lt;545.0,714.0&gt;--&lt;545.0,714.0&gt;&gt;
+* uni11AB7 (U+11AB7): L&lt;&lt;436.0,714.0&gt;--&lt;545.0,714.0&gt;&gt; -&gt; L&lt;&lt;545.0,714.0&gt;--&lt;545.0,714.0&gt;&gt;
+* uni11AB8 (U+11AB8): L&lt;&lt;333.0,0.0&gt;--&lt;225.0,0.0&gt;&gt; -&gt; L&lt;&lt;225.0,0.0&gt;--&lt;224.0,0.0&gt;&gt;
+* uni11AB9 (U+11AB9): L&lt;&lt;333.0,0.0&gt;--&lt;225.0,0.0&gt;&gt; -&gt; L&lt;&lt;225.0,0.0&gt;--&lt;224.0,0.0&gt;&gt; and uni166A (U+166A): L&lt;&lt;422.0,313.0&gt;--&lt;415.0,313.0&gt;&gt; -&gt; L&lt;&lt;415.0,313.0&gt;--&lt;361.0,313.0&gt;&gt; [code: found-colinear-vectors]</p>
+</span></li></ul></div></details>
+<details><summary>⚠️ <strong>output/Noto Sans Canadian Aboriginal/unhinted/ttf/NotoSansCanadianAboriginal-Thin.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>The following glyphs have colinear vectors:
+* uni155D (U+155D): L&lt;&lt;266.0,659.0&gt;--&lt;263.0,657.0&gt;&gt; -&gt; L&lt;&lt;263.0,657.0&gt;--&lt;80.0,530.0&gt;&gt; [code: found-colinear-vectors]</p>
+</span></li></ul></div></details>
+<h3>Do outlines contain any jaggy segments?</h3>
+<div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/outline_jaggy_segments&gt;</div>
+<details><summary>⚠️ <strong>output/Noto Sans Canadian Aboriginal/unhinted/ttf/NotoSansCanadianAboriginal-Bold.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>The following glyphs have jaggy segments:
+* uni15C0 (U+15C0): L&lt;&lt;584.0,408.0&gt;--&lt;588.0,391.0&gt;&gt;/L&lt;&lt;588.0,391.0&gt;--&lt;588.0,714.0&gt;&gt; = 13.24051991518721
+* uni15C1 (U+15C1): L&lt;&lt;214.0,714.0&gt;--&lt;214.0,391.0&gt;&gt;/L&lt;&lt;214.0,391.0&gt;--&lt;218.0,408.0&gt;&gt; = 13.24051991518721
+* uni15C2 (U+15C2): L&lt;&lt;588.0,0.0&gt;--&lt;588.0,323.0&gt;&gt;/L&lt;&lt;588.0,323.0&gt;--&lt;584.0,306.0&gt;&gt; = 13.24051991518721
+* uni15C3 (U+15C3): L&lt;&lt;218.0,306.0&gt;--&lt;214.0,323.0&gt;&gt;/L&lt;&lt;214.0,323.0&gt;--&lt;214.0,0.0&gt;&gt; = 13.24051991518721 and uni18EC (U+18EC): L&lt;&lt;588.0,0.0&gt;--&lt;588.0,323.0&gt;&gt;/L&lt;&lt;588.0,323.0&gt;--&lt;584.0,306.0&gt;&gt; = 13.24051991518721 [code: found-jaggy-segments]</p>
+</span></li></ul></div></details>
+<details><summary>⚠️ <strong>output/Noto Sans Canadian Aboriginal/unhinted/ttf/NotoSansCanadianAboriginal-ExtraLight.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>The following glyphs have jaggy segments:
+* uni1614 (U+1614): B&lt;&lt;166.5,556.0&gt;-&lt;256.0,646.0&gt;-&lt;443.0,682.0&gt;&gt;/L&lt;&lt;443.0,682.0&gt;--&lt;80.0,682.0&gt;&gt; = 10.896890755325513
+* uni1615 (U+1615): L&lt;&lt;728.0,682.0&gt;--&lt;365.0,682.0&gt;&gt;/B&lt;&lt;365.0,682.0&gt;-&lt;551.0,646.0&gt;-&lt;641.0,556.0&gt;&gt; = 10.954062643398332
+* uni1616 (U+1616): B&lt;&lt;641.0,158.0&gt;-&lt;551.0,68.0&gt;-&lt;365.0,32.0&gt;&gt;/L&lt;&lt;365.0,32.0&gt;--&lt;728.0,32.0&gt;&gt; = 10.954062643398332
+* uni1617 (U+1617): L&lt;&lt;113.0,714.0&gt;--&lt;113.0,352.0&gt;&gt;/B&lt;&lt;113.0,352.0&gt;-&lt;151.0,550.0&gt;-&lt;243.5,638.0&gt;&gt; = 10.864059922087714
+* uni1618 (U+1618): L&lt;&lt;113.0,714.0&gt;--&lt;113.0,352.0&gt;&gt;/B&lt;&lt;113.0,352.0&gt;-&lt;151.0,550.0&gt;-&lt;243.5,638.0&gt;&gt; = 10.864059922087714
+* uni1619 (U+1619): L&lt;&lt;113.0,714.0&gt;--&lt;113.0,352.0&gt;&gt;/B&lt;&lt;113.0,352.0&gt;-&lt;151.0,550.0&gt;-&lt;243.5,638.0&gt;&gt; = 10.864059922087714
+* uni161A (U+161A): B&lt;&lt;243.5,78.0&gt;-&lt;151.0,166.0&gt;-&lt;113.0,363.0&gt;&gt;/L&lt;&lt;113.0,363.0&gt;--&lt;113.0,0.0&gt;&gt; = 10.917885360431406
+* uni161B (U+161B): L&lt;&lt;790.0,0.0&gt;--&lt;790.0,363.0&gt;&gt;/B&lt;&lt;790.0,363.0&gt;-&lt;752.0,166.0&gt;-&lt;659.5,78.0&gt;&gt; = 10.917885360431406
+* uni18F1 (U+18F1): L&lt;&lt;728.0,682.0&gt;--&lt;365.0,682.0&gt;&gt;/B&lt;&lt;365.0,682.0&gt;-&lt;551.0,646.0&gt;-&lt;641.0,556.0&gt;&gt; = 10.954062643398332 and uni18F2 (U+18F2): L&lt;&lt;790.0,0.0&gt;--&lt;790.0,363.0&gt;&gt;/B&lt;&lt;790.0,363.0&gt;-&lt;752.0,166.0&gt;-&lt;659.5,78.0&gt;&gt; = 10.917885360431406 [code: found-jaggy-segments]</p>
+</span></li></ul></div></details>
+<details><summary>⚠️ <strong>output/Noto Sans Canadian Aboriginal/unhinted/ttf/NotoSansCanadianAboriginal-Light.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>The following glyphs have jaggy segments:
+* uni1614 (U+1614): B&lt;&lt;74.0,312.0&gt;-&lt;74.0,591.0&gt;-&lt;401.0,668.0&gt;&gt;/L&lt;&lt;401.0,668.0&gt;--&lt;77.0,668.0&gt;&gt; = 13.250285686272614
+* uni1615 (U+1615): L&lt;&lt;737.0,668.0&gt;--&lt;412.0,668.0&gt;&gt;/B&lt;&lt;412.0,668.0&gt;-&lt;740.0,591.0&gt;-&lt;740.0,312.0&gt;&gt; = 13.21130724971388
+* uni1616 (U+1616): B&lt;&lt;740.0,402.0&gt;-&lt;740.0,123.0&gt;-&lt;412.0,46.0&gt;&gt;/L&lt;&lt;412.0,46.0&gt;--&lt;737.0,46.0&gt;&gt; = 13.21130724971388
+* uni1617 (U+1617): L&lt;&lt;126.0,714.0&gt;--&lt;126.0,396.0&gt;&gt;/B&lt;&lt;126.0,396.0&gt;-&lt;167.0,570.0&gt;-&lt;257.5,648.0&gt;&gt; = 13.258872182180678
+* uni1618 (U+1618): L&lt;&lt;126.0,714.0&gt;--&lt;126.0,396.0&gt;&gt;/B&lt;&lt;126.0,396.0&gt;-&lt;167.0,570.0&gt;-&lt;257.5,648.0&gt;&gt; = 13.258872182180678
+* uni1619 (U+1619): L&lt;&lt;126.0,714.0&gt;--&lt;126.0,396.0&gt;&gt;/B&lt;&lt;126.0,396.0&gt;-&lt;167.0,570.0&gt;-&lt;257.5,648.0&gt;&gt; = 13.258872182180678
+* uni161A (U+161A): B&lt;&lt;257.5,67.0&gt;-&lt;167.0,145.0&gt;-&lt;126.0,319.0&gt;&gt;/L&lt;&lt;126.0,319.0&gt;--&lt;126.0,0.0&gt;&gt; = 13.258872182180678
+* uni161B (U+161B): L&lt;&lt;783.0,0.0&gt;--&lt;783.0,319.0&gt;&gt;/B&lt;&lt;783.0,319.0&gt;-&lt;742.0,145.0&gt;-&lt;651.5,67.0&gt;&gt; = 13.258872182180678
+* uni18F1 (U+18F1): L&lt;&lt;737.0,668.0&gt;--&lt;412.0,668.0&gt;&gt;/B&lt;&lt;412.0,668.0&gt;-&lt;740.0,591.0&gt;-&lt;740.0,312.0&gt;&gt; = 13.21130724971388 and uni18F2 (U+18F2): L&lt;&lt;783.0,0.0&gt;--&lt;783.0,319.0&gt;&gt;/B&lt;&lt;783.0,319.0&gt;-&lt;742.0,145.0&gt;-&lt;651.5,67.0&gt;&gt; = 13.258872182180678 [code: found-jaggy-segments]</p>
+</span></li></ul></div></details>
+<details><summary>⚠️ <strong>output/Noto Sans Canadian Aboriginal/unhinted/ttf/NotoSansCanadianAboriginal-Medium.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>The following glyphs have jaggy segments:
+* uni15C0 (U+15C0): L&lt;&lt;569.0,374.0&gt;--&lt;607.0,220.0&gt;&gt;/L&lt;&lt;607.0,220.0&gt;--&lt;607.0,714.0&gt;&gt; = 13.861027563021148
+* uni15C1 (U+15C1): L&lt;&lt;166.0,714.0&gt;--&lt;166.0,220.0&gt;&gt;/L&lt;&lt;166.0,220.0&gt;--&lt;204.0,374.0&gt;&gt; = 13.861027563021148
+* uni15C2 (U+15C2): L&lt;&lt;607.0,0.0&gt;--&lt;607.0,494.0&gt;&gt;/L&lt;&lt;607.0,494.0&gt;--&lt;569.0,340.0&gt;&gt; = 13.861027563021148
+* uni15C3 (U+15C3): L&lt;&lt;204.0,340.0&gt;--&lt;166.0,494.0&gt;&gt;/L&lt;&lt;166.0,494.0&gt;--&lt;166.0,0.0&gt;&gt; = 13.861027563021148 and uni18EC (U+18EC): L&lt;&lt;607.0,0.0&gt;--&lt;607.0,494.0&gt;&gt;/L&lt;&lt;607.0,494.0&gt;--&lt;569.0,340.0&gt;&gt; = 13.861027563021148 [code: found-jaggy-segments]</p>
+</span></li></ul></div></details>
+<details><summary>⚠️ <strong>output/Noto Sans Canadian Aboriginal/unhinted/ttf/NotoSansCanadianAboriginal-Regular.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>The following glyphs have jaggy segments:
+* uni15C0 (U+15C0): L&lt;&lt;563.0,360.0&gt;--&lt;615.0,149.0&gt;&gt;/L&lt;&lt;615.0,149.0&gt;--&lt;615.0,714.0&gt;&gt; = 13.84440563731597
+* uni15C1 (U+15C1): L&lt;&lt;146.0,714.0&gt;--&lt;146.0,149.0&gt;&gt;/L&lt;&lt;146.0,149.0&gt;--&lt;198.0,360.0&gt;&gt; = 13.84440563731597
+* uni15C2 (U+15C2): L&lt;&lt;615.0,0.0&gt;--&lt;615.0,565.0&gt;&gt;/L&lt;&lt;615.0,565.0&gt;--&lt;563.0,354.0&gt;&gt; = 13.84440563731597
+* uni15C3 (U+15C3): L&lt;&lt;198.0,354.0&gt;--&lt;146.0,565.0&gt;&gt;/L&lt;&lt;146.0,565.0&gt;--&lt;146.0,0.0&gt;&gt; = 13.84440563731597 and uni18EC (U+18EC): L&lt;&lt;615.0,0.0&gt;--&lt;615.0,565.0&gt;&gt;/L&lt;&lt;615.0,565.0&gt;--&lt;563.0,354.0&gt;&gt; = 13.84440563731597 [code: found-jaggy-segments]</p>
+</span></li></ul></div></details>
+<details><summary>⚠️ <strong>output/Noto Sans Canadian Aboriginal/unhinted/ttf/NotoSansCanadianAboriginal-SemiBold.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>The following glyphs have jaggy segments:
+* uni15C0 (U+15C0): L&lt;&lt;576.0,390.0&gt;--&lt;598.0,300.0&gt;&gt;/L&lt;&lt;598.0,300.0&gt;--&lt;598.0,714.0&gt;&gt; = 13.736268305622554
+* uni15C1 (U+15C1): L&lt;&lt;188.0,714.0&gt;--&lt;188.0,300.0&gt;&gt;/L&lt;&lt;188.0,300.0&gt;--&lt;210.0,390.0&gt;&gt; = 13.736268305622554
+* uni15C2 (U+15C2): L&lt;&lt;598.0,0.0&gt;--&lt;598.0,414.0&gt;&gt;/L&lt;&lt;598.0,414.0&gt;--&lt;576.0,324.0&gt;&gt; = 13.736268305622554
+* uni15C3 (U+15C3): L&lt;&lt;210.0,324.0&gt;--&lt;188.0,414.0&gt;&gt;/L&lt;&lt;188.0,414.0&gt;--&lt;188.0,0.0&gt;&gt; = 13.736268305622554 and uni18EC (U+18EC): L&lt;&lt;598.0,0.0&gt;--&lt;598.0,414.0&gt;&gt;/L&lt;&lt;598.0,414.0&gt;--&lt;576.0,324.0&gt;&gt; = 13.736268305622554 [code: found-jaggy-segments]</p>
+</span></li></ul></div></details>
+<details><summary>⚠️ <strong>output/Noto Sans Canadian Aboriginal/unhinted/ttf/NotoSansCanadianAboriginal-Thin.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>The following glyphs have jaggy segments:
+* uni1614 (U+1614): B&lt;&lt;175.0,566.5&gt;-&lt;271.0,657.0&gt;-&lt;476.0,691.0&gt;&gt;/L&lt;&lt;476.0,691.0&gt;--&lt;82.0,691.0&gt;&gt; = 9.416993277994541
+* uni1615 (U+1615): L&lt;&lt;722.0,691.0&gt;--&lt;328.0,691.0&gt;&gt;/B&lt;&lt;328.0,691.0&gt;-&lt;533.0,657.0&gt;-&lt;629.0,566.5&gt;&gt; = 9.416993277994541
+* uni1616 (U+1616): B&lt;&lt;629.0,147.5&gt;-&lt;533.0,57.0&gt;-&lt;328.0,23.0&gt;&gt;/L&lt;&lt;328.0,23.0&gt;--&lt;722.0,23.0&gt;&gt; = 9.416993277994541
+* uni1617 (U+1617): L&lt;&lt;105.0,714.0&gt;--&lt;105.0,315.0&gt;&gt;/B&lt;&lt;105.0,315.0&gt;-&lt;128.0,460.0&gt;-&lt;177.0,551.0&gt;&gt; = 9.01320435564271
+* uni1618 (U+1618): L&lt;&lt;105.0,714.0&gt;--&lt;105.0,315.0&gt;&gt;/B&lt;&lt;105.0,315.0&gt;-&lt;128.0,460.0&gt;-&lt;177.0,551.0&gt;&gt; = 9.01320435564271
+* uni1619 (U+1619): L&lt;&lt;105.0,714.0&gt;--&lt;105.0,315.0&gt;&gt;/B&lt;&lt;105.0,315.0&gt;-&lt;128.0,460.0&gt;-&lt;177.0,551.0&gt;&gt; = 9.01320435564271
+* uni161A (U+161A): B&lt;&lt;177.0,165.0&gt;-&lt;128.0,256.0&gt;-&lt;105.0,401.0&gt;&gt;/L&lt;&lt;105.0,401.0&gt;--&lt;105.0,0.0&gt;&gt; = 9.01320435564271
+* uni161B (U+161B): L&lt;&lt;794.0,0.0&gt;--&lt;794.0,401.0&gt;&gt;/B&lt;&lt;794.0,401.0&gt;-&lt;771.0,256.0&gt;-&lt;722.0,165.0&gt;&gt; = 9.01320435564271
+* uni18F1 (U+18F1): L&lt;&lt;722.0,691.0&gt;--&lt;328.0,691.0&gt;&gt;/B&lt;&lt;328.0,691.0&gt;-&lt;533.0,657.0&gt;-&lt;629.0,566.5&gt;&gt; = 9.416993277994541 and uni18F2 (U+18F2): L&lt;&lt;794.0,0.0&gt;--&lt;794.0,401.0&gt;&gt;/B&lt;&lt;794.0,401.0&gt;-&lt;771.0,256.0&gt;-&lt;722.0,165.0&gt;&gt; = 9.01320435564271 [code: found-jaggy-segments]</p>
+</span></li></ul></div></details>
+<h3>Do outlines contain any semi-vertical or semi-horizontal lines?</h3>
+<div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/outline_semi_vertical&gt;</div>
+<details><summary>⚠️ <strong>output/Noto Sans Canadian Aboriginal/unhinted/ttf/NotoSansCanadianAboriginal-Black.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>The following glyphs have semi-vertical/semi-horizontal lines:</p>
+<ul>
+<li>uni15D6 (U+15D6): L&lt;&lt;380.0,562.0&gt;--&lt;379.0,714.0&gt;&gt;</li>
+<li>uni15D6 (U+15D6): L&lt;&lt;382.0,335.0&gt;--&lt;381.0,481.0&gt;&gt;</li>
+<li>uni15D6 (U+15D6): L&lt;&lt;476.0,481.0&gt;--&lt;475.0,337.0&gt;&gt;</li>
+<li>uni15D6 (U+15D6): L&lt;&lt;478.0,714.0&gt;--&lt;477.0,562.0&gt;&gt;</li>
+<li>uni15D7 (U+15D7): L&lt;&lt;379.0,0.0&gt;--&lt;380.0,152.0&gt;&gt;</li>
+<li>uni15D7 (U+15D7): L&lt;&lt;381.0,233.0&gt;--&lt;382.0,379.0&gt;&gt;</li>
+<li>uni15D7 (U+15D7): L&lt;&lt;475.0,377.0&gt;--&lt;476.0,233.0&gt;&gt; and uni15D7 (U+15D7): L&lt;&lt;477.0,152.0&gt;--&lt;478.0,0.0&gt;&gt; [code: found-semi-vertical]</li>
+</ul>
+</span></li></ul></div></details>
+<details><summary>⚠️ <strong>output/Noto Sans Canadian Aboriginal/unhinted/ttf/NotoSansCanadianAboriginal-Bold.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>The following glyphs have semi-vertical/semi-horizontal lines:</p>
+<ul>
+<li>uni15D0 (U+15D0): L&lt;&lt;374.0,324.0&gt;--&lt;371.0,714.0&gt;&gt;</li>
+<li>uni15D0 (U+15D0): L&lt;&lt;489.0,714.0&gt;--&lt;486.0,324.0&gt;&gt;</li>
+<li>uni15D1 (U+15D1): L&lt;&lt;371.0,0.0&gt;--&lt;374.0,390.0&gt;&gt;</li>
+<li>uni15D1 (U+15D1): L&lt;&lt;486.0,390.0&gt;--&lt;489.0,0.0&gt;&gt;</li>
+<li>uni15D6 (U+15D6): L&lt;&lt;379.0,539.0&gt;--&lt;378.0,714.0&gt;&gt;</li>
+<li>uni15D6 (U+15D6): L&lt;&lt;381.0,309.0&gt;--&lt;380.0,454.0&gt;&gt;</li>
+<li>uni15D6 (U+15D6): L&lt;&lt;480.0,454.0&gt;--&lt;479.0,309.0&gt;&gt;</li>
+<li>uni15D6 (U+15D6): L&lt;&lt;482.0,714.0&gt;--&lt;481.0,539.0&gt;&gt;</li>
+<li>uni15D7 (U+15D7): L&lt;&lt;378.0,0.0&gt;--&lt;379.0,175.0&gt;&gt;</li>
+<li>uni15D7 (U+15D7): L&lt;&lt;380.0,260.0&gt;--&lt;381.0,405.0&gt;&gt;</li>
+<li>uni15D7 (U+15D7): L&lt;&lt;479.0,405.0&gt;--&lt;480.0,260.0&gt;&gt; and uni15D7 (U+15D7): L&lt;&lt;481.0,175.0&gt;--&lt;482.0,0.0&gt;&gt; [code: found-semi-vertical]</li>
+</ul>
+</span></li></ul></div></details>
+<details><summary>⚠️ <strong>output/Noto Sans Canadian Aboriginal/unhinted/ttf/NotoSansCanadianAboriginal-ExtraBold.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>The following glyphs have semi-vertical/semi-horizontal lines:</p>
+<ul>
+<li>uni15D0 (U+15D0): L&lt;&lt;375.0,349.0&gt;--&lt;372.0,714.0&gt;&gt;</li>
+<li>uni15D0 (U+15D0): L&lt;&lt;488.0,714.0&gt;--&lt;485.0,352.0&gt;&gt;</li>
+<li>uni15D1 (U+15D1): L&lt;&lt;372.0,0.0&gt;--&lt;375.0,365.0&gt;&gt;</li>
+<li>uni15D1 (U+15D1): L&lt;&lt;485.0,362.0&gt;--&lt;488.0,0.0&gt;&gt;</li>
+<li>uni15D6 (U+15D6): L&lt;&lt;478.0,466.0&gt;--&lt;477.0,322.0&gt;&gt;</li>
+<li>uni15D6 (U+15D6): L&lt;&lt;480.0,714.0&gt;--&lt;479.0,550.0&gt;&gt;</li>
+<li>uni15D7 (U+15D7): L&lt;&lt;477.0,392.0&gt;--&lt;478.0,248.0&gt;&gt; and uni15D7 (U+15D7): L&lt;&lt;479.0,164.0&gt;--&lt;480.0,0.0&gt;&gt; [code: found-semi-vertical]</li>
+</ul>
+</span></li></ul></div></details>
+<details><summary>⚠️ <strong>output/Noto Sans Canadian Aboriginal/unhinted/ttf/NotoSansCanadianAboriginal-ExtraLight.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>The following glyphs have semi-vertical/semi-horizontal lines:</p>
+<ul>
+<li>uni15D0 (U+15D0): L&lt;&lt;392.0,74.0&gt;--&lt;390.0,714.0&gt;&gt;</li>
+<li>uni15D0 (U+15D0): L&lt;&lt;426.0,714.0&gt;--&lt;424.0,74.0&gt;&gt;</li>
+<li>uni15D1 (U+15D1): L&lt;&lt;390.0,0.0&gt;--&lt;392.0,640.0&gt;&gt;</li>
+<li>uni15D1 (U+15D1): L&lt;&lt;424.0,640.0&gt;--&lt;426.0,0.0&gt;&gt;</li>
+<li>uni15D2 (U+15D2): L&lt;&lt;57.0,375.0&gt;--&lt;608.0,373.0&gt;&gt;</li>
+<li>uni15D2 (U+15D2): L&lt;&lt;610.0,342.0&gt;--&lt;57.0,341.0&gt;&gt;</li>
+<li>uni15D3 (U+15D3): L&lt;&lt;238.0,374.0&gt;--&lt;608.0,373.0&gt;&gt;</li>
+<li>uni15D3 (U+15D3): L&lt;&lt;57.0,375.0&gt;--&lt;203.0,374.0&gt;&gt;</li>
+<li>uni15D3 (U+15D3): L&lt;&lt;610.0,342.0&gt;--&lt;238.0,341.0&gt;&gt;</li>
+<li>uni15D4 (U+15D4): L&lt;&lt;320.0,374.0&gt;--&lt;615.0,373.0&gt;&gt; and 22 more.</li>
+</ul>
+<p>Use -F or --full-lists to disable shortening of long lists. [code: found-semi-vertical]</p>
+</span></li></ul></div></details>
+<details><summary>⚠️ <strong>output/Noto Sans Canadian Aboriginal/unhinted/ttf/NotoSansCanadianAboriginal-Light.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>The following glyphs have semi-vertical/semi-horizontal lines:</p>
+<ul>
+<li>uni15D0 (U+15D0): L&lt;&lt;386.0,123.0&gt;--&lt;383.0,714.0&gt;&gt;</li>
+<li>uni15D0 (U+15D0): L&lt;&lt;435.0,714.0&gt;--&lt;431.0,123.0&gt;&gt;</li>
+<li>uni15D1 (U+15D1): L&lt;&lt;383.0,0.0&gt;--&lt;386.0,591.0&gt;&gt;</li>
+<li>uni15D1 (U+15D1): L&lt;&lt;431.0,591.0&gt;--&lt;435.0,0.0&gt;&gt;</li>
+<li>uni15D2 (U+15D2): L&lt;&lt;54.0,382.0&gt;--&lt;578.0,379.0&gt;&gt;</li>
+<li>uni15D2 (U+15D2): L&lt;&lt;580.0,337.0&gt;--&lt;54.0,334.0&gt;&gt;</li>
+<li>uni15D3 (U+15D3): L&lt;&lt;191.0,335.0&gt;--&lt;54.0,334.0&gt;&gt;</li>
+<li>uni15D3 (U+15D3): L&lt;&lt;239.0,381.0&gt;--&lt;578.0,379.0&gt;&gt;</li>
+<li>uni15D3 (U+15D3): L&lt;&lt;54.0,382.0&gt;--&lt;191.0,381.0&gt;&gt;</li>
+<li>uni15D3 (U+15D3): L&lt;&lt;580.0,337.0&gt;--&lt;239.0,335.0&gt;&gt; and 26 more.</li>
+</ul>
+<p>Use -F or --full-lists to disable shortening of long lists. [code: found-semi-vertical]</p>
+</span></li></ul></div></details>
+<details><summary>⚠️ <strong>output/Noto Sans Canadian Aboriginal/unhinted/ttf/NotoSansCanadianAboriginal-Medium.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>The following glyphs have semi-vertical/semi-horizontal lines:</p>
+<ul>
+<li>uni15D0 (U+15D0): L&lt;&lt;374.0,242.0&gt;--&lt;370.0,714.0&gt;&gt;</li>
+<li>uni15D0 (U+15D0): L&lt;&lt;460.0,714.0&gt;--&lt;456.0,242.0&gt;&gt;</li>
+<li>uni15D1 (U+15D1): L&lt;&lt;370.0,0.0&gt;--&lt;374.0,472.0&gt;&gt;</li>
+<li>uni15D1 (U+15D1): L&lt;&lt;456.0,472.0&gt;--&lt;460.0,0.0&gt;&gt;</li>
+<li>uni15D6 (U+15D6): L&lt;&lt;369.0,237.0&gt;--&lt;368.0,427.0&gt;&gt; and uni15D7 (U+15D7): L&lt;&lt;375.0,287.0&gt;--&lt;376.0,477.0&gt;&gt; [code: found-semi-vertical]</li>
+</ul>
+</span></li></ul></div></details>
+<details><summary>⚠️ <strong>output/Noto Sans Canadian Aboriginal/unhinted/ttf/NotoSansCanadianAboriginal-Regular.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>The following glyphs have semi-vertical/semi-horizontal lines:</p>
+<ul>
+<li>uni15D0 (U+15D0): L&lt;&lt;374.0,207.0&gt;--&lt;370.0,714.0&gt;&gt;</li>
+<li>uni15D0 (U+15D0): L&lt;&lt;448.0,714.0&gt;--&lt;444.0,207.0&gt;&gt;</li>
+<li>uni15D1 (U+15D1): L&lt;&lt;370.0,0.0&gt;--&lt;374.0,507.0&gt;&gt;</li>
+<li>uni15D1 (U+15D1): L&lt;&lt;444.0,507.0&gt;--&lt;448.0,0.0&gt;&gt;</li>
+<li>uni15D2 (U+15D2): L&lt;&lt;49.0,394.0&gt;--&lt;525.0,390.0&gt;&gt;</li>
+<li>uni15D2 (U+15D2): L&lt;&lt;527.0,327.0&gt;--&lt;49.0,323.0&gt;&gt;</li>
+<li>uni15D3 (U+15D3): L&lt;&lt;170.0,324.0&gt;--&lt;49.0,323.0&gt;&gt;</li>
+<li>uni15D3 (U+15D3): L&lt;&lt;240.0,392.0&gt;--&lt;525.0,390.0&gt;&gt;</li>
+<li>uni15D3 (U+15D3): L&lt;&lt;49.0,394.0&gt;--&lt;170.0,393.0&gt;&gt;</li>
+<li>uni15D3 (U+15D3): L&lt;&lt;527.0,327.0&gt;--&lt;240.0,325.0&gt;&gt; and 10 more.</li>
+</ul>
+<p>Use -F or --full-lists to disable shortening of long lists. [code: found-semi-vertical]</p>
+</span></li></ul></div></details>
+<details><summary>⚠️ <strong>output/Noto Sans Canadian Aboriginal/unhinted/ttf/NotoSansCanadianAboriginal-SemiBold.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>The following glyphs have semi-vertical/semi-horizontal lines:</p>
+<ul>
+<li>uni15D0 (U+15D0): L&lt;&lt;374.0,280.0&gt;--&lt;371.0,714.0&gt;&gt;</li>
+<li>uni15D1 (U+15D1): L&lt;&lt;371.0,0.0&gt;--&lt;374.0,434.0&gt;&gt;</li>
+<li>uni15D6 (U+15D6): L&lt;&lt;463.0,440.0&gt;--&lt;462.0,271.0&gt;&gt;</li>
+<li>uni15D6 (U+15D6): L&lt;&lt;465.0,714.0&gt;--&lt;464.0,519.0&gt;&gt;</li>
+<li>uni15D7 (U+15D7): L&lt;&lt;466.0,443.0&gt;--&lt;467.0,274.0&gt;&gt; and uni15D7 (U+15D7): L&lt;&lt;468.0,195.0&gt;--&lt;469.0,0.0&gt;&gt; [code: found-semi-vertical]</li>
+</ul>
+</span></li></ul></div></details>
+<details><summary>⚠️ <strong>output/Noto Sans Canadian Aboriginal/unhinted/ttf/NotoSansCanadianAboriginal-Thin.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>The following glyphs have semi-vertical/semi-horizontal lines:</p>
+<ul>
+<li>uni15D0 (U+15D0): L&lt;&lt;397.0,40.0&gt;--&lt;395.0,714.0&gt;&gt;</li>
+<li>uni15D0 (U+15D0): L&lt;&lt;421.0,714.0&gt;--&lt;419.0,40.0&gt;&gt;</li>
+<li>uni15D1 (U+15D1): L&lt;&lt;395.0,0.0&gt;--&lt;397.0,674.0&gt;&gt;</li>
+<li>uni15D1 (U+15D1): L&lt;&lt;419.0,674.0&gt;--&lt;421.0,0.0&gt;&gt;</li>
+<li>uni15D2 (U+15D2): L&lt;&lt;59.0,370.0&gt;--&lt;629.0,369.0&gt;&gt;</li>
+<li>uni15D2 (U+15D2): L&lt;&lt;631.0,346.0&gt;--&lt;59.0,345.0&gt;&gt;</li>
+<li>uni15D3 (U+15D3): L&lt;&lt;237.0,370.0&gt;--&lt;629.0,369.0&gt;&gt;</li>
+<li>uni15D3 (U+15D3): L&lt;&lt;631.0,346.0&gt;--&lt;237.0,345.0&gt;&gt;</li>
+<li>uni15D4 (U+15D4): L&lt;&lt;314.0,370.0&gt;--&lt;629.0,369.0&gt;&gt;</li>
+<li>uni15D4 (U+15D4): L&lt;&lt;631.0,346.0&gt;--&lt;313.0,345.0&gt;&gt; and 18 more.</li>
+</ul>
+<p>Use -F or --full-lists to disable shortening of long lists. [code: found-semi-vertical]</p>
+</span></li></ul></div></details>
+                    </body>
+                </html>

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+                <html lang="en">
+                    <head>
+                        <meta charset="utf-8">
+                        <title>Fontbakery Check Report</title>
+                        <style>
+                            
+            html {
+                font-family: sans-serif;
+            }
+
+            h2 {
+                margin-top: 2em;
+            }
+
+            h3 {
+                margin-bottom: 1px;
+            }
+
+            table {
+                border-collapse: collapse;
+            }
+
+            th,
+            td {
+                border: 1px solid #ddd;
+                padding: 0.5em
+            }
+
+            tr:nth-child(even) {
+                background-color: #f2f2f2;
+            }
+
+            tr {
+                text-align: left;
+            }
+
+            ul {
+                margin-top: 0;
+            }
+
+            .details_item {
+                list-style: none;
+                display: flex;
+                align-items: baseline;
+            }
+
+            .details_indicator {
+                flex: 0 0 5em;
+                font-weight: bold;
+                padding-right: 0.5em;
+                text-align: right;
+            }
+
+            .details_text {
+                flex: 1 0;
+            }
+            
+                        </style>
+                    </head>
+                    <body>
+                    <h1>Fontbakery Technical Report</h1>
+<div>If you think a check is flawed or have an idea for a check, please  file an issue at <a href='https://github.com/googlefonts/fontbakery/issues'>https://github.com/googlefonts/fontbakery/issues</a> and remember to include a pointer to the repo and branch you're checking.</div>
+<h2>Summary</h2>
+            <table>
+            <tr>
+                <th>💥 ERROR</th>
+                <th>🔥 FAIL</th>
+                <th>⚠️ WARN</th>
+                <th>⏩ SKIP</th>
+                <th>ℹ️ INFO</th>
+                <th>✔️ PASS</th>
+            </tr>
+            <tr>
+                <td>0</td>
+                <td>2</td>
+                <td>14</td>
+                <td>43</td>
+                <td>5</td>
+                <td>91</td>
+            </tr>
+            <tr>
+                <td>0%</td>
+                <td>3%</td>
+                <td>23%</td>
+                <td>72%</td>
+                <td>8%</td>
+                <td>152%</td>
+            </tr>
+            </table>
+            
+<p><strong>Note:</strong> The following loglevels were omitted in this report: SKIP, INFO, PASS, DEBUG</p>
+<h2>&lt;Section: Universal&gt; 🔥🔥⚠️⚠️⚠️⚠️⏩⏩⏩⏩⏩⏩⏩⏩⏩ℹ️ℹ️ℹ️ℹ️</h2>
+<h3>Checking OS/2 usWinAscent & usWinDescent.</h3>
+<div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/family/win_ascent_and_descent&gt;</div>
+<details><summary>🔥 <strong>output/Noto Sans Chakma/unhinted/ttf/NotoSansChakma-Regular.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>🔥 FAIL</span><span class='details_text'><p>OS/2.usWinDescent value should be equal or greater than 467, but got 320 instead. [code: descent]</p>
+</span></li></ul></div></details>
+<details><summary>🔥 <strong>output/Noto Sans Chakma/unhinted/variable-ttf/NotoSansChakma[wght].ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>🔥 FAIL</span><span class='details_text'><p>OS/2.usWinDescent value should be equal or greater than 467, but got 320 instead. [code: descent]</p>
+</span></li></ul></div></details>
+<h3>Font has **proper** whitespace glyph names?</h3>
+<div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/whitespace_glyphnames&gt;</div>
+<details><summary>⚠️ <strong>output/Noto Sans Chakma/unhinted/ttf/NotoSansChakma-Regular.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>Glyph 0x00A0 is called &quot;nbspace&quot;: Change to &quot;uni00A0&quot; [code: not-recommended-00a0]</p>
+</span></li></ul></div></details>
+<details><summary>⚠️ <strong>output/Noto Sans Chakma/unhinted/variable-ttf/NotoSansChakma[wght].ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>Glyph 0x00A0 is called &quot;nbspace&quot;: Change to &quot;uni00A0&quot; [code: not-recommended-00a0]</p>
+</span></li></ul></div></details>
+<h3>Check font contains no unreachable glyphs</h3>
+<div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/unreachable_glyphs&gt;</div>
+<details><summary>⚠️ <strong>output/Noto Sans Chakma/unhinted/ttf/NotoSansChakma-Regular.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>The following glyphs could not be reached by codepoint or substitution rules:
+- tthaa.base
+- And ttaa.base
+[code: unreachable-glyphs]</p>
+</span></li></ul></div></details>
+<details><summary>⚠️ <strong>output/Noto Sans Chakma/unhinted/variable-ttf/NotoSansChakma[wght].ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>The following glyphs could not be reached by codepoint or substitution rules:
+- tthaa.base
+- ra.legs
+- And ttaa.base
+[code: unreachable-glyphs]</p>
+</span></li></ul></div></details>
+<h2>&lt;Section: fontbakery.profiles.gdef&gt; ⚠️⚠️⚠️⚠️</h2>
+<h3>Check mark characters are in GDEF mark glyph class.</h3>
+<div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/gdef_mark_chars&gt;</div>
+<details><summary>⚠️ <strong>output/Noto Sans Chakma/unhinted/ttf/NotoSansChakma-Regular.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>The following mark characters could be in the GDEF mark glyph class:
+auMatra_chakma (U+1112F) and oMatra_chakma (U+1112E) [code: mark-chars]</p>
+</span></li></ul></div></details>
+<details><summary>⚠️ <strong>output/Noto Sans Chakma/unhinted/variable-ttf/NotoSansChakma[wght].ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>The following mark characters could be in the GDEF mark glyph class:
+auMatra_chakma (U+1112F) and oMatra_chakma (U+1112E) [code: mark-chars]</p>
+</span></li></ul></div></details>
+<h3>Check GDEF mark glyph class doesn't have characters that are not marks.</h3>
+<div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/gdef_non_mark_chars&gt;</div>
+<details><summary>⚠️ <strong>output/Noto Sans Chakma/unhinted/ttf/NotoSansChakma-Regular.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>The following non-mark characters should not be in the GDEF mark glyph class:
+U+11145 and U+11146 [code: non-mark-chars]</p>
+</span></li></ul></div></details>
+<details><summary>⚠️ <strong>output/Noto Sans Chakma/unhinted/variable-ttf/NotoSansChakma[wght].ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>The following non-mark characters should not be in the GDEF mark glyph class:
+U+11145 and U+11146 [code: non-mark-chars]</p>
+</span></li></ul></div></details>
+<h2>&lt;Section: fontbakery.profiles.gpos&gt; ⚠️⚠️</h2>
+<h3>Does GPOS table have kerning information? This check skips monospaced fonts as defined by post.isFixedPitch value</h3>
+<div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/gpos_kerning_info&gt;</div>
+<details><summary>⚠️ <strong>output/Noto Sans Chakma/unhinted/ttf/NotoSansChakma-Regular.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>GPOS table lacks kerning information. [code: lacks-kern-info]</p>
+</span></li></ul></div></details>
+<details><summary>⚠️ <strong>output/Noto Sans Chakma/unhinted/variable-ttf/NotoSansChakma[wght].ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>GPOS table lacks kerning information. [code: lacks-kern-info]</p>
+</span></li></ul></div></details>
+<h2>&lt;Section: Outline Correctness Checks&gt; ⚠️⚠️⚠️⚠️⏩⏩⏩⏩</h2>
+<h3>Are there any misaligned on-curve points?</h3>
+<div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/outline_alignment_miss&gt;</div>
+<details><summary>⚠️ <strong>output/Noto Sans Chakma/unhinted/ttf/NotoSansChakma-Regular.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>The following glyphs have on-curve points which have potentially incorrect y coordinates:
+* exclam (U+0021): X=90.0,Y=2.0 (should be at baseline 0?)
+* exclam (U+0021): X=177.5,Y=2.0 (should be at baseline 0?)
+* uni1049 (U+1049): X=469.0,Y=1.5 (should be at baseline 0?)
+* aa_chakma (U+11103): X=637.0,Y=0.5 (should be at baseline 0?)
+* ghaa_chakma (U+1110A): X=196.5,Y=1.5 (should be at baseline 0?)
+* caa_chakma (U+1110C): X=206.5,Y=1.0 (should be at baseline 0?)
+* jhaa_chakma (U+1110F): X=205.5,Y=2.0 (should be at baseline 0?)
+* ddhaa_chakma (U+11114): X=207.5,Y=1.0 (should be at baseline 0?)
+* taa_chakma (U+11116): X=661.0,Y=0.5 (should be at baseline 0?)
+* maa_chakma (U+1111F): X=457.0,Y=-0.5 (should be at baseline 0?) and maa_chakma (U+1111F): X=338.0,Y=-0.5 (should be at baseline 0?) [code: found-misalignments]</p>
+</span></li></ul></div></details>
+<details><summary>⚠️ <strong>output/Noto Sans Chakma/unhinted/variable-ttf/NotoSansChakma[wght].ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>The following glyphs have on-curve points which have potentially incorrect y coordinates:
+* exclam (U+0021): X=90.0,Y=2.0 (should be at baseline 0?)
+* exclam (U+0021): X=177.5,Y=2.0 (should be at baseline 0?)
+* uni1049 (U+1049): X=469.0,Y=1.5 (should be at baseline 0?)
+* aa_chakma (U+11103): X=637.0,Y=0.5 (should be at baseline 0?)
+* ghaa_chakma (U+1110A): X=196.5,Y=1.5 (should be at baseline 0?)
+* caa_chakma (U+1110C): X=206.5,Y=1.0 (should be at baseline 0?)
+* jhaa_chakma (U+1110F): X=205.5,Y=2.0 (should be at baseline 0?)
+* ddhaa_chakma (U+11114): X=207.5,Y=1.0 (should be at baseline 0?) and taa_chakma (U+11116): X=661.0,Y=0.5 (should be at baseline 0?) [code: found-misalignments]</p>
+</span></li></ul></div></details>
+<h3>Are any segments inordinately short?</h3>
+<div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/outline_short_segments&gt;</div>
+<details><summary>⚠️ <strong>output/Noto Sans Chakma/unhinted/ttf/NotoSansChakma-Regular.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>The following glyphs have segments which seem very short:
+* uni09EB (U+09EB) contains a short segment B&lt;&lt;518.0,455.0&gt;-&lt;521.0,455.0&gt;-&lt;525.0,455.0&gt;&gt;
+* uni09EB (U+09EB) contains a short segment B&lt;&lt;525.0,455.0&gt;-&lt;529.0,455.0&gt;-&lt;533.0,456.0&gt;&gt;
+* uni09EC (U+09EC) contains a short segment B&lt;&lt;321.0,340.0&gt;-&lt;328.0,333.0&gt;-&lt;335.5,330.5&gt;&gt;
+* uni09EC (U+09EC) contains a short segment B&lt;&lt;335.5,330.5&gt;-&lt;343.0,328.0&gt;-&lt;348.0,328.0&gt;&gt;
+* uni09EE (U+09EE) contains a short segment B&lt;&lt;442.0,292.0&gt;-&lt;436.0,292.0&gt;-&lt;430.0,292.0&gt;&gt;
+* uni1042 (U+1042) contains a short segment L&lt;&lt;128.0,-196.0&gt;--&lt;128.0,-200.0&gt;&gt;
+* uni1045 (U+1045) contains a short segment L&lt;&lt;128.0,-196.0&gt;--&lt;128.0,-200.0&gt;&gt;
+* uni1046 (U+1046) contains a short segment L&lt;&lt;583.0,732.0&gt;--&lt;583.0,737.0&gt;&gt;
+* uni1046 (U+1046) contains a short segment B&lt;&lt;583.0,253.0&gt;-&lt;583.0,267.0&gt;-&lt;576.0,279.5&gt;&gt;
+* uni1046 (U+1046) contains a short segment B&lt;&lt;576.0,279.5&gt;-&lt;569.0,292.0&gt;-&lt;552.0,292.0&gt;&gt; and 15 more.</p>
+<p>Use -F or --full-lists to disable shortening of long lists. [code: found-short-segments]</p>
+</span></li></ul></div></details>
+<h3>Do any segments have colinear vectors?</h3>
+<div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/outline_colinear_vectors&gt;</div>
+<details><summary>⚠️ <strong>output/Noto Sans Chakma/unhinted/ttf/NotoSansChakma-Regular.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>The following glyphs have colinear vectors:
+* naa_chakma (U+1111A): L&lt;&lt;497.0,418.0&gt;--&lt;501.0,418.0&gt;&gt; -&gt; L&lt;&lt;501.0,418.0&gt;--&lt;506.0,418.0&gt;&gt; and saa_chakma (U+11125): L&lt;&lt;553.0,272.0&gt;--&lt;553.0,272.0&gt;&gt; -&gt; L&lt;&lt;553.0,272.0&gt;--&lt;553.0,272.0&gt;&gt; [code: found-colinear-vectors]</p>
+</span></li></ul></div></details>
+                    </body>
+                </html>

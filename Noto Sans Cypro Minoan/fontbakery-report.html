@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+                <html lang="en">
+                    <head>
+                        <meta charset="utf-8">
+                        <title>Fontbakery Check Report</title>
+                        <style>
+                            
+            html {
+                font-family: sans-serif;
+            }
+
+            h2 {
+                margin-top: 2em;
+            }
+
+            h3 {
+                margin-bottom: 1px;
+            }
+
+            table {
+                border-collapse: collapse;
+            }
+
+            th,
+            td {
+                border: 1px solid #ddd;
+                padding: 0.5em
+            }
+
+            tr:nth-child(even) {
+                background-color: #f2f2f2;
+            }
+
+            tr {
+                text-align: left;
+            }
+
+            ul {
+                margin-top: 0;
+            }
+
+            .details_item {
+                list-style: none;
+                display: flex;
+                align-items: baseline;
+            }
+
+            .details_indicator {
+                flex: 0 0 5em;
+                font-weight: bold;
+                padding-right: 0.5em;
+                text-align: right;
+            }
+
+            .details_text {
+                flex: 1 0;
+            }
+            
+                        </style>
+                    </head>
+                    <body>
+                    <h1>Fontbakery Technical Report</h1>
+<div>If you think a check is flawed or have an idea for a check, please  file an issue at <a href='https://github.com/googlefonts/fontbakery/issues'>https://github.com/googlefonts/fontbakery/issues</a> and remember to include a pointer to the repo and branch you're checking.</div>
+<h2>Summary</h2>
+            <table>
+            <tr>
+                <th>💥 ERROR</th>
+                <th>🔥 FAIL</th>
+                <th>⚠️ WARN</th>
+                <th>⏩ SKIP</th>
+                <th>ℹ️ INFO</th>
+                <th>✔️ PASS</th>
+            </tr>
+            <tr>
+                <td>0</td>
+                <td>0</td>
+                <td>8</td>
+                <td>49</td>
+                <td>4</td>
+                <td>94</td>
+            </tr>
+            <tr>
+                <td>0%</td>
+                <td>0%</td>
+                <td>67%</td>
+                <td>408%</td>
+                <td>33%</td>
+                <td>783%</td>
+            </tr>
+            </table>
+            
+<p><strong>Note:</strong> The following loglevels were omitted in this report: SKIP, INFO, PASS, DEBUG</p>
+<h2>&lt;Section: fontbakery.profiles.gpos&gt; ⚠️⚠️</h2>
+<h3>Does GPOS table have kerning information? This check skips monospaced fonts as defined by post.isFixedPitch value</h3>
+<div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/gpos_kerning_info&gt;</div>
+<details><summary>⚠️ <strong>output/Noto Sans Cypro Minoan/unhinted/ttf/NotoSansCyproMinoan-Regular.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>GPOS table lacks kerning information. [code: lacks-kern-info]</p>
+</span></li></ul></div></details>
+<details><summary>⚠️ <strong>output/Noto Sans Cypro Minoan/unhinted/variable-ttf/NotoSansCyproMinoan[wght].ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>GPOS table lacks kerning information. [code: lacks-kern-info]</p>
+</span></li></ul></div></details>
+<h2>&lt;Section: Outline Correctness Checks&gt; ⚠️⚠️⚠️⚠️⚠️⚠️⏩⏩⏩⏩</h2>
+<h3>Are there any misaligned on-curve points?</h3>
+<div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/outline_alignment_miss&gt;</div>
+<details><summary>⚠️ <strong>output/Noto Sans Cypro Minoan/unhinted/ttf/NotoSansCyproMinoan-Regular.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>The following glyphs have on-curve points which have potentially incorrect y coordinates:
+* u12FB5 (U+12FB5): X=376.0,Y=2.0 (should be at baseline 0?)
+* u12FB5 (U+12FB5): X=245.0,Y=2.0 (should be at baseline 0?)
+* u12FB7 (U+12FB7): X=64.0,Y=802.0 (should be at cap-height 800?)
+* u12FB7 (U+12FB7): X=832.0,Y=802.0 (should be at cap-height 800?)
+* u12FB8 (U+12FB8): X=66.0,Y=802.0 (should be at cap-height 800?)
+* u12FB8 (U+12FB8): X=675.0,Y=802.0 (should be at cap-height 800?)
+* u12FB9 (U+12FB9): X=66.0,Y=802.0 (should be at cap-height 800?)
+* u12FB9 (U+12FB9): X=662.0,Y=802.0 (should be at cap-height 800?)
+* u12FBA (U+12FBA): X=66.0,Y=802.0 (should be at cap-height 800?)
+* u12FBC (U+12FBC): X=66.0,Y=802.0 (should be at cap-height 800?) and 7 more.</p>
+<p>Use -F or --full-lists to disable shortening of long lists. [code: found-misalignments]</p>
+</span></li></ul></div></details>
+<details><summary>⚠️ <strong>output/Noto Sans Cypro Minoan/unhinted/variable-ttf/NotoSansCyproMinoan[wght].ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>The following glyphs have on-curve points which have potentially incorrect y coordinates:
+* u12FB5 (U+12FB5): X=376.0,Y=2.0 (should be at baseline 0?)
+* u12FB5 (U+12FB5): X=245.0,Y=2.0 (should be at baseline 0?)
+* u12FB7 (U+12FB7): X=64.0,Y=802.0 (should be at cap-height 800?)
+* u12FB7 (U+12FB7): X=832.0,Y=802.0 (should be at cap-height 800?)
+* u12FB8 (U+12FB8): X=66.0,Y=802.0 (should be at cap-height 800?)
+* u12FB8 (U+12FB8): X=675.0,Y=802.0 (should be at cap-height 800?)
+* u12FB9 (U+12FB9): X=66.0,Y=802.0 (should be at cap-height 800?)
+* u12FB9 (U+12FB9): X=662.0,Y=802.0 (should be at cap-height 800?)
+* u12FBA (U+12FBA): X=66.0,Y=802.0 (should be at cap-height 800?)
+* u12FBA (U+12FBA): X=675.0,Y=802.0 (should be at cap-height 800?) and 8 more.</p>
+<p>Use -F or --full-lists to disable shortening of long lists. [code: found-misalignments]</p>
+</span></li></ul></div></details>
+<h3>Are any segments inordinately short?</h3>
+<div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/outline_short_segments&gt;</div>
+<details><summary>⚠️ <strong>output/Noto Sans Cypro Minoan/unhinted/ttf/NotoSansCyproMinoan-Regular.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>The following glyphs have segments which seem very short:
+* u12F9C (U+12F9C) contains a short segment B&lt;&lt;321.0,497.0&gt;-&lt;319.0,491.0&gt;-&lt;315.5,481.5&gt;&gt;
+* u12FD9 (U+12FD9) contains a short segment L&lt;&lt;614.0,719.0&gt;--&lt;614.0,720.0&gt;&gt;
+* u12FDA (U+12FDA) contains a short segment L&lt;&lt;614.0,719.0&gt;--&lt;614.0,720.0&gt;&gt; and u12FEF (U+12FEF) contains a short segment B&lt;&lt;562.0,547.0&gt;-&lt;569.0,539.0&gt;-&lt;580.0,523.5&gt;&gt; [code: found-short-segments]</p>
+</span></li></ul></div></details>
+<h3>Do any segments have colinear vectors?</h3>
+<div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/outline_colinear_vectors&gt;</div>
+<details><summary>⚠️ <strong>output/Noto Sans Cypro Minoan/unhinted/ttf/NotoSansCyproMinoan-Regular.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>The following glyphs have colinear vectors:
+* u12FEF (U+12FEF): L&lt;&lt;589.0,708.0&gt;--&lt;632.0,650.0&gt;&gt; -&gt; L&lt;&lt;632.0,650.0&gt;--&lt;668.0,601.0&gt;&gt; and u12FEF (U+12FEF): L&lt;&lt;657.0,818.0&gt;--&lt;707.0,750.0&gt;&gt; -&gt; L&lt;&lt;707.0,750.0&gt;--&lt;737.0,707.0&gt;&gt; [code: found-colinear-vectors]</p>
+</span></li></ul></div></details>
+<h3>Do outlines contain any jaggy segments?</h3>
+<div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/outline_jaggy_segments&gt;</div>
+<details><summary>⚠️ <strong>output/Noto Sans Cypro Minoan/unhinted/ttf/NotoSansCyproMinoan-Regular.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>The following glyphs have jaggy segments:
+* u12FA5 (U+12FA5): L&lt;&lt;148.0,291.0&gt;--&lt;148.0,329.0&gt;&gt;/B&lt;&lt;148.0,329.0&gt;-&lt;132.0,245.0&gt;-&lt;121.0,161.0&gt;&gt; = 10.784297867562596 [code: found-jaggy-segments]</p>
+</span></li></ul></div></details>
+<h3>Do outlines contain any semi-vertical or semi-horizontal lines?</h3>
+<div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/outline_semi_vertical&gt;</div>
+<details><summary>⚠️ <strong>output/Noto Sans Cypro Minoan/unhinted/ttf/NotoSansCyproMinoan-Regular.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>The following glyphs have semi-vertical/semi-horizontal lines:</p>
+<ul>
+<li>u12FA2 (U+12FA2): L&lt;&lt;315.0,353.0&gt;--&lt;316.0,544.0&gt;&gt;</li>
+<li>u12FA2 (U+12FA2): L&lt;&lt;316.0,50.0&gt;--&lt;315.0,252.0&gt;&gt;</li>
+<li>u12FA2 (U+12FA2): L&lt;&lt;385.0,252.0&gt;--&lt;386.0,50.0&gt;&gt;</li>
+<li>u12FA2 (U+12FA2): L&lt;&lt;386.0,544.0&gt;--&lt;385.0,353.0&gt;&gt; and u12FEF (U+12FEF): L&lt;&lt;373.0,437.0&gt;--&lt;563.0,438.0&gt;&gt; [code: found-semi-vertical]</li>
+</ul>
+</span></li></ul></div></details>
+                    </body>
+                </html>

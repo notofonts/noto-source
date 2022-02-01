@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+                <html lang="en">
+                    <head>
+                        <meta charset="utf-8">
+                        <title>Fontbakery Check Report</title>
+                        <style>
+                            
+            html {
+                font-family: sans-serif;
+            }
+
+            h2 {
+                margin-top: 2em;
+            }
+
+            h3 {
+                margin-bottom: 1px;
+            }
+
+            table {
+                border-collapse: collapse;
+            }
+
+            th,
+            td {
+                border: 1px solid #ddd;
+                padding: 0.5em
+            }
+
+            tr:nth-child(even) {
+                background-color: #f2f2f2;
+            }
+
+            tr {
+                text-align: left;
+            }
+
+            ul {
+                margin-top: 0;
+            }
+
+            .details_item {
+                list-style: none;
+                display: flex;
+                align-items: baseline;
+            }
+
+            .details_indicator {
+                flex: 0 0 5em;
+                font-weight: bold;
+                padding-right: 0.5em;
+                text-align: right;
+            }
+
+            .details_text {
+                flex: 1 0;
+            }
+            
+                        </style>
+                    </head>
+                    <body>
+                    <h1>Fontbakery Technical Report</h1>
+<div>If you think a check is flawed or have an idea for a check, please  file an issue at <a href='https://github.com/googlefonts/fontbakery/issues'>https://github.com/googlefonts/fontbakery/issues</a> and remember to include a pointer to the repo and branch you're checking.</div>
+<h2>Summary</h2>
+            <table>
+            <tr>
+                <th>💥 ERROR</th>
+                <th>🔥 FAIL</th>
+                <th>⚠️ WARN</th>
+                <th>⏩ SKIP</th>
+                <th>ℹ️ INFO</th>
+                <th>✔️ PASS</th>
+            </tr>
+            <tr>
+                <td>0</td>
+                <td>6</td>
+                <td>25</td>
+                <td>210</td>
+                <td>20</td>
+                <td>478</td>
+            </tr>
+            <tr>
+                <td>0%</td>
+                <td>4%</td>
+                <td>16%</td>
+                <td>136%</td>
+                <td>13%</td>
+                <td>310%</td>
+            </tr>
+            </table>
+            
+<p><strong>Note:</strong> The following loglevels were omitted in this report: SKIP, INFO, PASS, DEBUG</p>
+<h2>&lt;Section: fontbakery.profiles.os2&gt; 🔥🔥</h2>
+<h3>Fonts have consistent PANOSE proportion?</h3>
+<div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/family/panose_proportion&gt;</div>
+<details><summary>🔥 <strong>Family check</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>🔥 FAIL</span><span class='details_text'><p>PANOSE proportion is not the same across this family. In order to fix this, please make sure that the panose.bProportion value is the same in the OS/2 table of all of this family font files. [code: inconsistency]</p>
+</span></li></ul></div></details>
+<h3>Fonts have consistent PANOSE family type?</h3>
+<div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/family/panose_familytype&gt;</div>
+<details><summary>🔥 <strong>Family check</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>🔥 FAIL</span><span class='details_text'><p>PANOSE family type is not the same across this family. In order to fix this, please make sure that the panose.bFamilyType value is the same in the OS/2 table of all of this family font files. [code: inconsistency]</p>
+</span></li></ul></div></details>
+<h2>&lt;Section: fontbakery.profiles.name&gt; 🔥🔥🔥🔥⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩</h2>
+<h3>Does full font name begin with the font family name?</h3>
+<div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/name/match_familyname_fullfont&gt;</div>
+<details><summary>🔥 <strong>output/Noto Sans Cherokee/unhinted/ttf/NotoSansCherokee-Black.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>🔥 FAIL</span><span class='details_text'><p>On the 'name' table, the full font name (NameID 4 - FULL_FONT_NAME: 'Noto Sans Cherokee Blk') does not begin with font family name (NameID 1 - FONT_FAMILY_NAME: 'Noto Sans Cherokee Black') [code: does-not]</p>
+</span></li></ul></div></details>
+<details><summary>🔥 <strong>output/Noto Sans Cherokee/unhinted/ttf/NotoSansCherokee-ExtraBold.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>🔥 FAIL</span><span class='details_text'><p>On the 'name' table, the full font name (NameID 4 - FULL_FONT_NAME: 'Noto Sans Cherokee ExtBd') does not begin with font family name (NameID 1 - FONT_FAMILY_NAME: 'Noto Sans Cherokee ExtraBold') [code: does-not]</p>
+</span></li></ul></div></details>
+<details><summary>🔥 <strong>output/Noto Sans Cherokee/unhinted/ttf/NotoSansCherokee-ExtraLight.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>🔥 FAIL</span><span class='details_text'><p>On the 'name' table, the full font name (NameID 4 - FULL_FONT_NAME: 'Noto Sans Cherokee ExtLt') does not begin with font family name (NameID 1 - FONT_FAMILY_NAME: 'Noto Sans Cherokee ExtraLight') [code: does-not]</p>
+</span></li></ul></div></details>
+<details><summary>🔥 <strong>output/Noto Sans Cherokee/unhinted/ttf/NotoSansCherokee-SemiBold.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>🔥 FAIL</span><span class='details_text'><p>On the 'name' table, the full font name (NameID 4 - FULL_FONT_NAME: 'Noto Sans Cherokee SemBd') does not begin with font family name (NameID 1 - FONT_FAMILY_NAME: 'Noto Sans Cherokee SemiBold') [code: does-not]</p>
+</span></li></ul></div></details>
+<h2>&lt;Section: Outline Correctness Checks&gt; ⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⏩⏩⏩⏩</h2>
+<h3>Are there any misaligned on-curve points?</h3>
+<div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/outline_alignment_miss&gt;</div>
+<details><summary>⚠️ <strong>output/Noto Sans Cherokee/unhinted/ttf/NotoSansCherokee-Black.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>The following glyphs have on-curve points which have potentially incorrect y coordinates:
+* uni0302 (U+0302): X=129.5,Y=715.5 (should be at cap-height 714?)
+* uni0302 (U+0302): X=-138.5,Y=716.0 (should be at cap-height 714?)
+* uni13A1 (U+13A1): X=702.5,Y=1.5 (should be at baseline 0?)
+* uni13C9 (U+13C9): X=1168.0,Y=713.0 (should be at cap-height 714?)
+* uni13DA (U+13DA): X=444.5,Y=713.5 (should be at cap-height 714?)
+* uni13E8 (U+13E8): X=662.0,Y=715.0 (should be at cap-height 714?)
+* uni13E8 (U+13E8): X=664.0,Y=715.0 (should be at cap-height 714?)
+* uni13E8 (U+13E8): X=790.0,Y=715.0 (should be at cap-height 714?)
+* uni13E8 (U+13E8): X=792.0,Y=715.0 (should be at cap-height 714?)
+* uni13E8 (U+13E8): X=661.0,Y=2.0 (should be at baseline 0?) and 11 more.</p>
+<p>Use -F or --full-lists to disable shortening of long lists. [code: found-misalignments]</p>
+</span></li></ul></div></details>
+<details><summary>⚠️ <strong>output/Noto Sans Cherokee/unhinted/ttf/NotoSansCherokee-Bold.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>The following glyphs have on-curve points which have potentially incorrect y coordinates:
+* uni0302 (U+0302): X=110.5,Y=715.5 (should be at cap-height 714?)
+* uni0302 (U+0302): X=-115.0,Y=716.0 (should be at cap-height 714?)
+* uni13AA (U+13AA): X=286.0,Y=716.0 (should be at cap-height 714?)
+* uni13AA (U+13AA): X=482.0,Y=716.0 (should be at cap-height 714?)
+* uni13C9 (U+13C9): X=1150.0,Y=713.0 (should be at cap-height 714?)
+* uni13CB (U+13CB): X=470.5,Y=712.5 (should be at cap-height 714?)
+* uni13CE (U+13CE): X=329.0,Y=715.0 (should be at cap-height 714?)
+* uni13CE (U+13CE): X=489.0,Y=715.0 (should be at cap-height 714?)
+* uni13DA (U+13DA): X=440.0,Y=712.0 (should be at cap-height 714?)
+* uni13EC (U+13EC): X=795.0,Y=713.0 (should be at cap-height 714?) and uniAB71 (U+AB71): X=546.5,Y=0.5 (should be at baseline 0?) [code: found-misalignments]</p>
+</span></li></ul></div></details>
+<details><summary>⚠️ <strong>output/Noto Sans Cherokee/unhinted/ttf/NotoSansCherokee-ExtraBold.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>The following glyphs have on-curve points which have potentially incorrect y coordinates:
+* uni0302 (U+0302): X=119.0,Y=715.5 (should be at cap-height 714?)
+* uni0302 (U+0302): X=-126.0,Y=716.0 (should be at cap-height 714?)
+* uni0304 (U+0304): X=171.0,Y=712.0 (should be at cap-height 714?)
+* uni0304 (U+0304): X=-172.0,Y=712.0 (should be at cap-height 714?)
+* uni13A1 (U+13A1): X=693.5,Y=0.5 (should be at baseline 0?)
+* uni13AA (U+13AA): X=273.0,Y=716.0 (should be at cap-height 714?)
+* uni13AA (U+13AA): X=496.0,Y=716.0 (should be at cap-height 714?)
+* uni13AB (U+13AB): X=244.0,Y=-2.0 (should be at baseline 0?)
+* uni13AB (U+13AB): X=244.0,Y=-2.0 (should be at baseline 0?)
+* uni13AE (U+13AE): X=575.5,Y=712.0 (should be at cap-height 714?) and 9 more.</p>
+<p>Use -F or --full-lists to disable shortening of long lists. [code: found-misalignments]</p>
+</span></li></ul></div></details>
+<details><summary>⚠️ <strong>output/Noto Sans Cherokee/unhinted/ttf/NotoSansCherokee-ExtraLight.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>The following glyphs have on-curve points which have potentially incorrect y coordinates:
+* gravecomb (U+0300): X=-374.0,Y=716.0 (should be at cap-height 714?)
+* acutecomb (U+0301): X=-175.5,Y=716.0 (should be at cap-height 714?)
+* uni0302 (U+0302): X=40.0,Y=715.5 (should be at cap-height 714?)
+* uni0302 (U+0302): X=-61.0,Y=715.5 (should be at cap-height 714?)
+* uni030B (U+030B): X=140.0,Y=715.5 (should be at cap-height 714?)
+* uni030B (U+030B): X=-24.0,Y=715.5 (should be at cap-height 714?)
+* uni0324 (U+0324): X=-94.0,Y=713.0 (should be at cap-height 714?)
+* uni0324 (U+0324): X=91.0,Y=713.0 (should be at cap-height 714?)
+* uni13A1 (U+13A1): X=659.0,Y=1.0 (should be at baseline 0?)
+* uni13AA (U+13AA): X=347.0,Y=716.0 (should be at cap-height 714?) and 14 more.</p>
+<p>Use -F or --full-lists to disable shortening of long lists. [code: found-misalignments]</p>
+</span></li></ul></div></details>
+<details><summary>⚠️ <strong>output/Noto Sans Cherokee/unhinted/ttf/NotoSansCherokee-Light.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>The following glyphs have on-curve points which have potentially incorrect y coordinates:
+* gravecomb (U+0300): X=-368.5,Y=716.0 (should be at cap-height 714?)
+* acutecomb (U+0301): X=-213.5,Y=716.0 (should be at cap-height 714?)
+* uni0302 (U+0302): X=55.0,Y=715.5 (should be at cap-height 714?)
+* uni0302 (U+0302): X=-67.5,Y=715.5 (should be at cap-height 714?)
+* uni030B (U+030B): X=129.0,Y=716.0 (should be at cap-height 714?)
+* uni030B (U+030B): X=-39.0,Y=716.0 (should be at cap-height 714?)
+* uni030C (U+030C): X=-52.5,Y=713.0 (should be at cap-height 714?)
+* uni030C (U+030C): X=50.5,Y=713.0 (should be at cap-height 714?)
+* uni13AA (U+13AA): X=340.0,Y=715.0 (should be at cap-height 714?)
+* uni13AA (U+13AA): X=408.0,Y=715.0 (should be at cap-height 714?) and 7 more.</p>
+<p>Use -F or --full-lists to disable shortening of long lists. [code: found-misalignments]</p>
+</span></li></ul></div></details>
+<details><summary>⚠️ <strong>output/Noto Sans Cherokee/unhinted/ttf/NotoSansCherokee-Medium.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>The following glyphs have on-curve points which have potentially incorrect y coordinates:
+* uni0302 (U+0302): X=89.5,Y=715.5 (should be at cap-height 714?)
+* uni0302 (U+0302): X=-90.0,Y=716.0 (should be at cap-height 714?)
+* uni13A1 (U+13A1): X=667.5,Y=-1.0 (should be at baseline 0?)
+* uni13AA (U+13AA): X=316.0,Y=715.0 (should be at cap-height 714?)
+* uni13AA (U+13AA): X=449.0,Y=715.0 (should be at cap-height 714?)
+* uni13B6 (U+13B6): X=493.0,Y=714.5 (should be at cap-height 714?)
+* uni13BA (U+13BA): X=847.0,Y=713.0 (should be at cap-height 714?)
+* uni13BA (U+13BA): X=950.0,Y=713.0 (should be at cap-height 714?)
+* uni13C0 (U+13C0): X=501.5,Y=715.0 (should be at cap-height 714?)
+* uni13C9 (U+13C9): X=1129.0,Y=713.0 (should be at cap-height 714?) and 7 more.</p>
+<p>Use -F or --full-lists to disable shortening of long lists. [code: found-misalignments]</p>
+</span></li></ul></div></details>
+<details><summary>⚠️ <strong>output/Noto Sans Cherokee/unhinted/ttf/NotoSansCherokee-Regular.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>The following glyphs have on-curve points which have potentially incorrect y coordinates:
+* uni13A1 (U+13A1): X=660.0,Y=-1.5 (should be at baseline 0?)
+* uni13AE (U+13AE): X=297.0,Y=715.0 (should be at cap-height 714?)
+* uni13BA (U+13BA): X=856.0,Y=713.0 (should be at cap-height 714?)
+* uni13BA (U+13BA): X=940.0,Y=713.0 (should be at cap-height 714?)
+* uni13C0 (U+13C0): X=502.0,Y=714.5 (should be at cap-height 714?)
+* uni13C9 (U+13C9): X=1121.0,Y=713.0 (should be at cap-height 714?)
+* uni13CE (U+13CE): X=361.0,Y=716.0 (should be at cap-height 714?)
+* uni13CE (U+13CE): X=471.0,Y=716.0 (should be at cap-height 714?)
+* uni13E9 (U+13E9): X=727.0,Y=-1.0 (should be at baseline 0?)
+* uniAB71 (U+AB71): X=523.0,Y=-1.0 (should be at baseline 0?) and uniABB9 (U+ABB9): X=564.0,Y=-1.0 (should be at baseline 0?) [code: found-misalignments]</p>
+</span></li></ul></div></details>
+<details><summary>⚠️ <strong>output/Noto Sans Cherokee/unhinted/ttf/NotoSansCherokee-SemiBold.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>The following glyphs have on-curve points which have potentially incorrect y coordinates:
+* uni0302 (U+0302): X=99.0,Y=715.5 (should be at cap-height 714?)
+* uni0302 (U+0302): X=-101.5,Y=716.0 (should be at cap-height 714?)
+* uni13A1 (U+13A1): X=676.0,Y=-0.5 (should be at baseline 0?)
+* uni13AA (U+13AA): X=302.0,Y=715.0 (should be at cap-height 714?)
+* uni13AA (U+13AA): X=464.0,Y=715.0 (should be at cap-height 714?)
+* uni13BA (U+13BA): X=836.0,Y=713.0 (should be at cap-height 714?)
+* uni13BA (U+13BA): X=962.0,Y=713.0 (should be at cap-height 714?)
+* uni13C9 (U+13C9): X=1139.0,Y=713.0 (should be at cap-height 714?)
+* uni13CB (U+13CB): X=467.0,Y=712.5 (should be at cap-height 714?)
+* uni13CE (U+13CE): X=341.0,Y=715.0 (should be at cap-height 714?) and 3 more.</p>
+<p>Use -F or --full-lists to disable shortening of long lists. [code: found-misalignments]</p>
+</span></li></ul></div></details>
+<details><summary>⚠️ <strong>output/Noto Sans Cherokee/unhinted/ttf/NotoSansCherokee-Thin.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>The following glyphs have on-curve points which have potentially incorrect y coordinates:
+* uni0302 (U+0302): X=30.0,Y=715.5 (should be at cap-height 714?)
+* uni0302 (U+0302): X=-56.5,Y=715.5 (should be at cap-height 714?)
+* uni030B (U+030B): X=147.0,Y=715.0 (should be at cap-height 714?)
+* uni030B (U+030B): X=-13.0,Y=715.0 (should be at cap-height 714?)
+* uni13AA (U+13AA): X=351.0,Y=716.0 (should be at cap-height 714?)
+* uni13AA (U+13AA): X=381.0,Y=716.0 (should be at cap-height 714?)
+* uni13CB (U+13CB): X=452.5,Y=714.5 (should be at cap-height 714?)
+* uni13D5 (U+13D5): X=152.5,Y=1.5 (should be at baseline 0?)
+* uni13DA (U+13DA): X=152.5,Y=1.5 (should be at baseline 0?)
+* uni13E1 (U+13E1): X=353.0,Y=712.0 (should be at cap-height 714?) and 10 more.</p>
+<p>Use -F or --full-lists to disable shortening of long lists. [code: found-misalignments]</p>
+</span></li></ul></div></details>
+<details><summary>⚠️ <strong>output/Noto Sans Cherokee/unhinted/variable-ttf/NotoSansCherokee[wght].ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>The following glyphs have on-curve points which have potentially incorrect y coordinates:
+* uni13A1 (U+13A1): X=660.0,Y=-1.5 (should be at baseline 0?)
+* uni13A7 (U+13A7): X=289.0,Y=715.0 (should be at cap-height 714?)
+* uni13AE (U+13AE): X=297.0,Y=715.0 (should be at cap-height 714?)
+* uni13B2 (U+13B2): X=543.0,Y=-1.5 (should be at baseline 0?)
+* uni13BA (U+13BA): X=856.0,Y=713.0 (should be at cap-height 714?)
+* uni13BA (U+13BA): X=940.0,Y=713.0 (should be at cap-height 714?)
+* uni13C0 (U+13C0): X=502.0,Y=714.5 (should be at cap-height 714?)
+* uni13C9 (U+13C9): X=1121.0,Y=713.0 (should be at cap-height 714?)
+* uni13CB (U+13CB): X=462.5,Y=713.0 (should be at cap-height 714?)
+* uni13CE (U+13CE): X=361.0,Y=716.0 (should be at cap-height 714?) and 8 more.</p>
+<p>Use -F or --full-lists to disable shortening of long lists. [code: found-misalignments]</p>
+</span></li></ul></div></details>
+<h3>Do any segments have colinear vectors?</h3>
+<div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/outline_colinear_vectors&gt;</div>
+<details><summary>⚠️ <strong>output/Noto Sans Cherokee/unhinted/ttf/NotoSansCherokee-Black.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>The following glyphs have colinear vectors:
+* uni13CE (U+13CE): L&lt;&lt;308.0,493.0&gt;--&lt;270.0,430.0&gt;&gt; -&gt; L&lt;&lt;270.0,430.0&gt;--&lt;182.0,300.0&gt;&gt;
+* uni13CE (U+13CE): L&lt;&lt;310.0,300.0&gt;--&lt;310.0,382.0&gt;&gt; -&gt; L&lt;&lt;310.0,382.0&gt;--&lt;313.0,493.0&gt;&gt;
+* uni13E6 (U+13E6): L&lt;&lt;319.0,373.0&gt;--&lt;387.0,449.0&gt;&gt; -&gt; L&lt;&lt;387.0,449.0&gt;--&lt;528.0,598.0&gt;&gt;
+* uni13E6 (U+13E6): L&lt;&lt;418.0,287.0&gt;--&lt;359.0,237.0&gt;&gt; -&gt; L&lt;&lt;359.0,237.0&gt;--&lt;319.0,207.0&gt;&gt;
+* uniAB9E (U+AB9E): L&lt;&lt;231.0,239.0&gt;--&lt;231.0,289.0&gt;&gt; -&gt; L&lt;&lt;231.0,289.0&gt;--&lt;234.0,348.0&gt;&gt;
+* uniABB6 (U+ABB6): L&lt;&lt;264.0,286.0&gt;--&lt;308.0,332.0&gt;&gt; -&gt; L&lt;&lt;308.0,332.0&gt;--&lt;413.0,436.0&gt;&gt; and uniABB6 (U+ABB6): L&lt;&lt;338.0,215.0&gt;--&lt;293.0,180.0&gt;&gt; -&gt; L&lt;&lt;293.0,180.0&gt;--&lt;264.0,159.0&gt;&gt; [code: found-colinear-vectors]</p>
+</span></li></ul></div></details>
+<details><summary>⚠️ <strong>output/Noto Sans Cherokee/unhinted/ttf/NotoSansCherokee-Bold.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>The following glyphs have colinear vectors:
+* uni13CE (U+13CE): L&lt;&lt;338.0,553.0&gt;--&lt;302.0,493.0&gt;&gt; -&gt; L&lt;&lt;302.0,493.0&gt;--&lt;152.0,280.0&gt;&gt;
+* uni13CE (U+13CE): L&lt;&lt;340.0,280.0&gt;--&lt;340.0,426.0&gt;&gt; -&gt; L&lt;&lt;340.0,426.0&gt;--&lt;343.0,553.0&gt;&gt;
+* uni13E6 (U+13E6): L&lt;&lt;287.0,344.0&gt;--&lt;366.0,433.0&gt;&gt; -&gt; L&lt;&lt;366.0,433.0&gt;--&lt;540.0,622.0&gt;&gt;
+* uni13E6 (U+13E6): L&lt;&lt;398.0,313.0&gt;--&lt;334.0,253.0&gt;&gt; -&gt; L&lt;&lt;334.0,253.0&gt;--&lt;287.0,211.0&gt;&gt;
+* uniAB9E (U+AB9E): L&lt;&lt;254.0,221.0&gt;--&lt;254.0,314.0&gt;&gt; -&gt; L&lt;&lt;254.0,314.0&gt;--&lt;257.0,391.0&gt;&gt;
+* uniABB6 (U+ABB6): L&lt;&lt;239.0,268.0&gt;--&lt;289.0,321.0&gt;&gt; -&gt; L&lt;&lt;289.0,321.0&gt;--&lt;421.0,455.0&gt;&gt; and uniABB6 (U+ABB6): L&lt;&lt;320.0,231.0&gt;--&lt;272.0,190.0&gt;&gt; -&gt; L&lt;&lt;272.0,190.0&gt;--&lt;239.0,162.0&gt;&gt; [code: found-colinear-vectors]</p>
+</span></li></ul></div></details>
+<details><summary>⚠️ <strong>output/Noto Sans Cherokee/unhinted/ttf/NotoSansCherokee-ExtraBold.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>The following glyphs have colinear vectors:
+* uni13CE (U+13CE): L&lt;&lt;324.0,526.0&gt;--&lt;287.0,464.0&gt;&gt; -&gt; L&lt;&lt;287.0,464.0&gt;--&lt;166.0,289.0&gt;&gt;
+* uni13CE (U+13CE): L&lt;&lt;326.0,289.0&gt;--&lt;326.0,406.0&gt;&gt; -&gt; L&lt;&lt;326.0,406.0&gt;--&lt;329.0,526.0&gt;&gt;
+* uni13E6 (U+13E6): L&lt;&lt;302.0,357.0&gt;--&lt;376.0,440.0&gt;&gt; -&gt; L&lt;&lt;376.0,440.0&gt;--&lt;535.0,611.0&gt;&gt;
+* uni13E6 (U+13E6): L&lt;&lt;407.0,301.0&gt;--&lt;346.0,246.0&gt;&gt; -&gt; L&lt;&lt;346.0,246.0&gt;--&lt;302.0,209.0&gt;&gt;
+* uniAB9E (U+AB9E): L&lt;&lt;244.0,230.0&gt;--&lt;244.0,302.0&gt;&gt; -&gt; L&lt;&lt;244.0,302.0&gt;--&lt;247.0,371.0&gt;&gt;
+* uniABB6 (U+ABB6): L&lt;&lt;250.0,276.0&gt;--&lt;298.0,326.0&gt;&gt; -&gt; L&lt;&lt;298.0,326.0&gt;--&lt;417.0,446.0&gt;&gt; and uniABB6 (U+ABB6): L&lt;&lt;329.0,224.0&gt;--&lt;282.0,185.0&gt;&gt; -&gt; L&lt;&lt;282.0,185.0&gt;--&lt;250.0,161.0&gt;&gt; [code: found-colinear-vectors]</p>
+</span></li></ul></div></details>
+<details><summary>⚠️ <strong>output/Noto Sans Cherokee/unhinted/ttf/NotoSansCherokee-ExtraLight.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>The following glyphs have colinear vectors:
+* uni13CE (U+13CE): L&lt;&lt;396.0,677.0&gt;--&lt;352.0,611.0&gt;&gt; -&gt; L&lt;&lt;352.0,611.0&gt;--&lt;80.0,225.0&gt;&gt;
+* uni13CE (U+13CE): L&lt;&lt;397.0,225.0&gt;--&lt;397.0,518.0&gt;&gt; -&gt; L&lt;&lt;397.0,518.0&gt;--&lt;399.0,677.0&gt;&gt;
+* uni13E6 (U+13E6): L&lt;&lt;199.0,319.0&gt;--&lt;258.0,383.0&gt;&gt; -&gt; L&lt;&lt;258.0,383.0&gt;--&lt;553.0,685.0&gt;&gt;
+* uni13E6 (U+13E6): L&lt;&lt;309.0,389.0&gt;--&lt;249.0,328.0&gt;&gt; -&gt; L&lt;&lt;249.0,328.0&gt;--&lt;199.0,278.0&gt;&gt;
+* uniAB9E (U+AB9E): L&lt;&lt;308.0,498.0&gt;--&lt;275.0,450.0&gt;&gt; -&gt; L&lt;&lt;275.0,450.0&gt;--&lt;72.0,172.0&gt;&gt;
+* uniAB9E (U+AB9E): L&lt;&lt;309.0,172.0&gt;--&lt;309.0,381.0&gt;&gt; -&gt; L&lt;&lt;309.0,381.0&gt;--&lt;311.0,498.0&gt;&gt;
+* uniABB6 (U+ABB6): L&lt;&lt;162.0,240.0&gt;--&lt;209.0,289.0&gt;&gt; -&gt; L&lt;&lt;209.0,289.0&gt;--&lt;429.0,509.0&gt;&gt; and uniABB6 (U+ABB6): L&lt;&lt;248.0,285.0&gt;--&lt;201.0,239.0&gt;&gt; -&gt; L&lt;&lt;201.0,239.0&gt;--&lt;162.0,202.0&gt;&gt; [code: found-colinear-vectors]</p>
+</span></li></ul></div></details>
+<details><summary>⚠️ <strong>output/Noto Sans Cherokee/unhinted/ttf/NotoSansCherokee-Light.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>The following glyphs have colinear vectors:
+* uni13CE (U+13CE): L&lt;&lt;393.0,666.0&gt;--&lt;353.0,604.0&gt;&gt; -&gt; L&lt;&lt;353.0,604.0&gt;--&lt;90.0,234.0&gt;&gt;
+* uni13CE (U+13CE): L&lt;&lt;394.0,234.0&gt;--&lt;394.0,510.0&gt;&gt; -&gt; L&lt;&lt;394.0,510.0&gt;--&lt;396.0,666.0&gt;&gt;
+* uni13E6 (U+13E6): L&lt;&lt;214.0,312.0&gt;--&lt;286.0,392.0&gt;&gt; -&gt; L&lt;&lt;286.0,392.0&gt;--&lt;556.0,676.0&gt;&gt;
+* uni13E6 (U+13E6): L&lt;&lt;331.0,376.0&gt;--&lt;267.0,310.0&gt;&gt; -&gt; L&lt;&lt;267.0,310.0&gt;--&lt;214.0,256.0&gt;&gt;
+* uniAB9E (U+AB9E): L&lt;&lt;302.0,483.0&gt;--&lt;271.0,437.0&gt;&gt; -&gt; L&lt;&lt;271.0,437.0&gt;--&lt;81.0,181.0&gt;&gt;
+* uniAB9E (U+AB9E): L&lt;&lt;303.0,181.0&gt;--&lt;303.0,371.0&gt;&gt; -&gt; L&lt;&lt;303.0,371.0&gt;--&lt;305.0,483.0&gt;&gt;
+* uniABB6 (U+ABB6): L&lt;&lt;176.0,240.0&gt;--&lt;227.0,294.0&gt;&gt; -&gt; L&lt;&lt;227.0,294.0&gt;--&lt;431.0,500.0&gt;&gt; and uniABB6 (U+ABB6): L&lt;&lt;265.0,275.0&gt;--&lt;216.0,227.0&gt;&gt; -&gt; L&lt;&lt;216.0,227.0&gt;--&lt;176.0,189.0&gt;&gt; [code: found-colinear-vectors]</p>
+</span></li></ul></div></details>
+<details><summary>⚠️ <strong>output/Noto Sans Cherokee/unhinted/ttf/NotoSansCherokee-Medium.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>The following glyphs have colinear vectors:
+* uni13CE (U+13CE): L&lt;&lt;372.0,620.0&gt;--&lt;338.0,563.0&gt;&gt; -&gt; L&lt;&lt;338.0,563.0&gt;--&lt;120.0,258.0&gt;&gt;
+* uni13CE (U+13CE): L&lt;&lt;373.0,258.0&gt;--&lt;373.0,475.0&gt;&gt; -&gt; L&lt;&lt;373.0,475.0&gt;--&lt;376.0,620.0&gt;&gt;
+* uni13E6 (U+13E6): L&lt;&lt;253.0,312.0&gt;--&lt;343.0,415.0&gt;&gt; -&gt; L&lt;&lt;343.0,415.0&gt;--&lt;553.0,648.0&gt;&gt;
+* uni13E6 (U+13E6): L&lt;&lt;376.0,342.0&gt;--&lt;307.0,271.0&gt;&gt; -&gt; L&lt;&lt;307.0,271.0&gt;--&lt;253.0,216.0&gt;&gt;
+* uniAB9E (U+AB9E): L&lt;&lt;280.0,202.0&gt;--&lt;280.0,341.0&gt;&gt; -&gt; L&lt;&lt;280.0,341.0&gt;--&lt;283.0,438.0&gt;&gt;
+* uniABB6 (U+ABB6): L&lt;&lt;211.0,248.0&gt;--&lt;267.0,308.0&gt;&gt; -&gt; L&lt;&lt;267.0,308.0&gt;--&lt;429.0,475.0&gt;&gt; and uniABB6 (U+ABB6): L&lt;&lt;301.0,249.0&gt;--&lt;250.0,201.0&gt;&gt; -&gt; L&lt;&lt;250.0,201.0&gt;--&lt;211.0,166.0&gt;&gt; [code: found-colinear-vectors]</p>
+</span></li></ul></div></details>
+<details><summary>⚠️ <strong>output/Noto Sans Cherokee/unhinted/ttf/NotoSansCherokee-Regular.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>The following glyphs have colinear vectors:
+* uni13CE (U+13CE): L&lt;&lt;386.0,648.0&gt;--&lt;353.0,592.0&gt;&gt; -&gt; L&lt;&lt;353.0,592.0&gt;--&lt;106.0,249.0&gt;&gt;
+* uni13CE (U+13CE): L&lt;&lt;387.0,249.0&gt;--&lt;387.0,496.0&gt;&gt; -&gt; L&lt;&lt;387.0,496.0&gt;--&lt;390.0,648.0&gt;&gt;
+* uni13E6 (U+13E6): L&lt;&lt;238.0,299.0&gt;--&lt;333.0,408.0&gt;&gt; -&gt; L&lt;&lt;333.0,408.0&gt;--&lt;559.0,659.0&gt;&gt;
+* uni13E6 (U+13E6): L&lt;&lt;367.0,354.0&gt;--&lt;296.0,278.0&gt;&gt; -&gt; L&lt;&lt;296.0,278.0&gt;--&lt;238.0,218.0&gt;&gt;
+* uniAB9E (U+AB9E): L&lt;&lt;291.0,194.0&gt;--&lt;291.0,352.0&gt;&gt; -&gt; L&lt;&lt;291.0,352.0&gt;--&lt;294.0,458.0&gt;&gt;
+* uniABB6 (U+ABB6): L&lt;&lt;199.0,240.0&gt;--&lt;258.0,303.0&gt;&gt; -&gt; L&lt;&lt;258.0,303.0&gt;--&lt;433.0,484.0&gt;&gt; and uniABB6 (U+ABB6): L&lt;&lt;293.0,256.0&gt;--&lt;240.0,206.0&gt;&gt; -&gt; L&lt;&lt;240.0,206.0&gt;--&lt;199.0,167.0&gt;&gt; [code: found-colinear-vectors]</p>
+</span></li></ul></div></details>
+<details><summary>⚠️ <strong>output/Noto Sans Cherokee/unhinted/ttf/NotoSansCherokee-SemiBold.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>The following glyphs have colinear vectors:
+* uni13CE (U+13CE): L&lt;&lt;356.0,589.0&gt;--&lt;321.0,530.0&gt;&gt; -&gt; L&lt;&lt;321.0,530.0&gt;--&lt;135.0,268.0&gt;&gt;
+* uni13CE (U+13CE): L&lt;&lt;358.0,268.0&gt;--&lt;358.0,453.0&gt;&gt; -&gt; L&lt;&lt;358.0,453.0&gt;--&lt;361.0,589.0&gt;&gt;
+* uni13E6 (U+13E6): L&lt;&lt;269.0,327.0&gt;--&lt;354.0,424.0&gt;&gt; -&gt; L&lt;&lt;354.0,424.0&gt;--&lt;547.0,636.0&gt;&gt;
+* uni13E6 (U+13E6): L&lt;&lt;386.0,329.0&gt;--&lt;320.0,262.0&gt;&gt; -&gt; L&lt;&lt;320.0,262.0&gt;--&lt;269.0,214.0&gt;&gt;
+* uniAB9E (U+AB9E): L&lt;&lt;268.0,211.0&gt;--&lt;268.0,328.0&gt;&gt; -&gt; L&lt;&lt;268.0,328.0&gt;--&lt;271.0,416.0&gt;&gt;
+* uniABB6 (U+ABB6): L&lt;&lt;224.0,257.0&gt;--&lt;277.0,314.0&gt;&gt; -&gt; L&lt;&lt;277.0,314.0&gt;--&lt;425.0,466.0&gt;&gt; and uniABB6 (U+ABB6): L&lt;&lt;310.0,240.0&gt;--&lt;260.0,196.0&gt;&gt; -&gt; L&lt;&lt;260.0,196.0&gt;--&lt;224.0,164.0&gt;&gt; [code: found-colinear-vectors]</p>
+</span></li></ul></div></details>
+<details><summary>⚠️ <strong>output/Noto Sans Cherokee/unhinted/ttf/NotoSansCherokee-Thin.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>The following glyphs have colinear vectors:
+* uni13CE (U+13CE): L&lt;&lt;399.0,684.0&gt;--&lt;352.0,616.0&gt;&gt; -&gt; L&lt;&lt;352.0,616.0&gt;--&lt;73.0,219.0&gt;&gt;
+* uni13CE (U+13CE): L&lt;&lt;400.0,219.0&gt;--&lt;400.0,524.0&gt;&gt; -&gt; L&lt;&lt;400.0,524.0&gt;--&lt;401.0,684.0&gt;&gt;
+* uni13E6 (U+13E6): L&lt;&lt;189.0,324.0&gt;--&lt;239.0,376.0&gt;&gt; -&gt; L&lt;&lt;239.0,376.0&gt;--&lt;552.0,692.0&gt;&gt;
+* uniAB9E (U+AB9E): L&lt;&lt;313.0,508.0&gt;--&lt;278.0,459.0&gt;&gt; -&gt; L&lt;&lt;278.0,459.0&gt;--&lt;66.0,167.0&gt;&gt;
+* uniAB9E (U+AB9E): L&lt;&lt;314.0,167.0&gt;--&lt;314.0,389.0&gt;&gt; -&gt; L&lt;&lt;314.0,389.0&gt;--&lt;315.0,508.0&gt;&gt;
+* uniABB6 (U+ABB6): L&lt;&lt;153.0,240.0&gt;--&lt;196.0,285.0&gt;&gt; -&gt; L&lt;&lt;196.0,285.0&gt;--&lt;428.0,515.0&gt;&gt; and uniABB6 (U+ABB6): L&lt;&lt;236.0,293.0&gt;--&lt;191.0,248.0&gt;&gt; -&gt; L&lt;&lt;191.0,248.0&gt;--&lt;153.0,211.0&gt;&gt; [code: found-colinear-vectors]</p>
+</span></li></ul></div></details>
+<h3>Do outlines contain any semi-vertical or semi-horizontal lines?</h3>
+<div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/outline_semi_vertical&gt;</div>
+<details><summary>⚠️ <strong>output/Noto Sans Cherokee/unhinted/ttf/NotoSansCherokee-Bold.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>The following glyphs have semi-vertical/semi-horizontal lines:</p>
+<ul>
+<li>uni13B4 (U+13B4): L&lt;&lt;516.0,542.0&gt;--&lt;517.0,303.0&gt;&gt; [code: found-semi-vertical]</li>
+</ul>
+</span></li></ul></div></details>
+<details><summary>⚠️ <strong>output/Noto Sans Cherokee/unhinted/ttf/NotoSansCherokee-ExtraBold.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>The following glyphs have semi-vertical/semi-horizontal lines:</p>
+<ul>
+<li>uni13B4 (U+13B4): L&lt;&lt;529.0,546.0&gt;--&lt;530.0,308.0&gt;&gt; and uni13BF (U+13BF): L&lt;&lt;148.0,588.0&gt;--&lt;149.0,714.0&gt;&gt; [code: found-semi-vertical]</li>
+</ul>
+</span></li></ul></div></details>
+<details><summary>⚠️ <strong>output/Noto Sans Cherokee/unhinted/ttf/NotoSansCherokee-ExtraLight.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>The following glyphs have semi-vertical/semi-horizontal lines:</p>
+<ul>
+<li>uni13B4 (U+13B4): L&lt;&lt;428.0,561.0&gt;--&lt;429.0,247.0&gt;&gt; [code: found-semi-vertical]</li>
+</ul>
+</span></li></ul></div></details>
+<details><summary>⚠️ <strong>output/Noto Sans Cherokee/unhinted/ttf/NotoSansCherokee-Light.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>The following glyphs have semi-vertical/semi-horizontal lines:</p>
+<ul>
+<li>uni13B4 (U+13B4): L&lt;&lt;444.0,549.0&gt;--&lt;446.0,263.0&gt;&gt; [code: found-semi-vertical]</li>
+</ul>
+</span></li></ul></div></details>
+<details><summary>⚠️ <strong>output/Noto Sans Cherokee/unhinted/ttf/NotoSansCherokee-SemiBold.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>The following glyphs have semi-vertical/semi-horizontal lines:</p>
+<ul>
+<li>uni13B4 (U+13B4): L&lt;&lt;499.0,537.0&gt;--&lt;501.0,298.0&gt;&gt; [code: found-semi-vertical]</li>
+</ul>
+</span></li></ul></div></details>
+<details><summary>⚠️ <strong>output/Noto Sans Cherokee/unhinted/ttf/NotoSansCherokee-Thin.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>The following glyphs have semi-vertical/semi-horizontal lines:</p>
+<ul>
+<li>uni13BF (U+13BF): L&lt;&lt;188.0,557.0&gt;--&lt;189.0,714.0&gt;&gt;</li>
+<li>uni13CE (U+13CE): L&lt;&lt;400.0,524.0&gt;--&lt;401.0,684.0&gt;&gt;</li>
+<li>uniAB8F (U+AB8F): L&lt;&lt;145.0,419.0&gt;--&lt;146.0,535.0&gt;&gt; and uniAB9E (U+AB9E): L&lt;&lt;314.0,389.0&gt;--&lt;315.0,508.0&gt;&gt; [code: found-semi-vertical]</li>
+</ul>
+</span></li></ul></div></details>
+                    </body>
+                </html>

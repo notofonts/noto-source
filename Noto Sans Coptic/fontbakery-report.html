@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+                <html lang="en">
+                    <head>
+                        <meta charset="utf-8">
+                        <title>Fontbakery Check Report</title>
+                        <style>
+                            
+            html {
+                font-family: sans-serif;
+            }
+
+            h2 {
+                margin-top: 2em;
+            }
+
+            h3 {
+                margin-bottom: 1px;
+            }
+
+            table {
+                border-collapse: collapse;
+            }
+
+            th,
+            td {
+                border: 1px solid #ddd;
+                padding: 0.5em
+            }
+
+            tr:nth-child(even) {
+                background-color: #f2f2f2;
+            }
+
+            tr {
+                text-align: left;
+            }
+
+            ul {
+                margin-top: 0;
+            }
+
+            .details_item {
+                list-style: none;
+                display: flex;
+                align-items: baseline;
+            }
+
+            .details_indicator {
+                flex: 0 0 5em;
+                font-weight: bold;
+                padding-right: 0.5em;
+                text-align: right;
+            }
+
+            .details_text {
+                flex: 1 0;
+            }
+            
+                        </style>
+                    </head>
+                    <body>
+                    <h1>Fontbakery Technical Report</h1>
+<div>If you think a check is flawed or have an idea for a check, please  file an issue at <a href='https://github.com/googlefonts/fontbakery/issues'>https://github.com/googlefonts/fontbakery/issues</a> and remember to include a pointer to the repo and branch you're checking.</div>
+<h2>Summary</h2>
+            <table>
+            <tr>
+                <th>💥 ERROR</th>
+                <th>🔥 FAIL</th>
+                <th>⚠️ WARN</th>
+                <th>⏩ SKIP</th>
+                <th>ℹ️ INFO</th>
+                <th>✔️ PASS</th>
+            </tr>
+            <tr>
+                <td>0</td>
+                <td>2</td>
+                <td>11</td>
+                <td>43</td>
+                <td>4</td>
+                <td>95</td>
+            </tr>
+            <tr>
+                <td>0%</td>
+                <td>3%</td>
+                <td>19%</td>
+                <td>74%</td>
+                <td>7%</td>
+                <td>164%</td>
+            </tr>
+            </table>
+            
+<p><strong>Note:</strong> The following loglevels were omitted in this report: SKIP, INFO, PASS, DEBUG</p>
+<h2>&lt;Section: Noto Fonts&gt; ⚠️⚠️</h2>
+<h3>Ensure UnicodeRange bits are properly set.</h3>
+<div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/unicode_range_bits&gt;</div>
+<details><summary>⚠️ <strong>output/Noto Sans Coptic/unhinted/ttf/NotoSansCoptic-Regular.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>UnicodeRange bit 5 &quot;Spacing Modifier Letters&quot; should be 1 because cmap has 1 of the 112 codepoints in this range. [code: bad-range-bit]</p>
+</span></li><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>UnicodeRange bit 13 &quot;Arabic&quot; should be 1 because cmap has 1 of the 304 codepoints in this range. [code: bad-range-bit]</p>
+</span></li></ul></div></details>
+<details><summary>⚠️ <strong>output/Noto Sans Coptic/unhinted/variable-ttf/NotoSansCoptic[wght].ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>UnicodeRange bit 5 &quot;Spacing Modifier Letters&quot; should be 1 because cmap has 1 of the 112 codepoints in this range. [code: bad-range-bit]</p>
+</span></li><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>UnicodeRange bit 13 &quot;Arabic&quot; should be 1 because cmap has 1 of the 304 codepoints in this range. [code: bad-range-bit]</p>
+</span></li></ul></div></details>
+<h2>&lt;Section: Universal&gt; 🔥🔥⚠️⚠️⚠️⚠️⏩⏩⏩⏩⏩⏩⏩⏩⏩ℹ️ℹ️ℹ️ℹ️</h2>
+<h3>Font has **proper** whitespace glyph names?</h3>
+<div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/whitespace_glyphnames&gt;</div>
+<details><summary>⚠️ <strong>output/Noto Sans Coptic/unhinted/ttf/NotoSansCoptic-Regular.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>Glyph 0x00A0 is called &quot;nbspace&quot;: Change to &quot;uni00A0&quot; [code: not-recommended-00a0]</p>
+</span></li></ul></div></details>
+<details><summary>⚠️ <strong>output/Noto Sans Coptic/unhinted/variable-ttf/NotoSansCoptic[wght].ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>Glyph 0x00A0 is called &quot;nbspace&quot;: Change to &quot;uni00A0&quot; [code: not-recommended-00a0]</p>
+</span></li></ul></div></details>
+<h3>Glyph names are all valid?</h3>
+<div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/valid_glyphnames&gt;</div>
+<details><summary>🔥 <strong>output/Noto Sans Coptic/unhinted/ttf/NotoSansCoptic-Regular.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>🔥 FAIL</span><span class='details_text'><p>The following glyph names do not comply with naming conventions: numeral-greek, lowernumeral-greek, Shei-coptic, shei-coptic, Fei-coptic, fei-coptic, Khei-coptic, khei-coptic, Hori-coptic, hori-coptic and 131 more.</p>
+<p>Use -F or --full-lists to disable shortening of long lists.</p>
+<p>A glyph name must be entirely comprised of characters from the following set: A-Z a-z 0-9 .(period) <em>(underscore). A glyph name must not start with a digit or period. There are a few exceptions such as the special glyph &quot;.notdef&quot;. The glyph names &quot;twocents&quot;, &quot;a1&quot;, and &quot;</em>&quot; are all valid, while &quot;2cents&quot; and &quot;.twocents&quot; are not. [code: found-invalid-names]</p>
+</span></li></ul></div></details>
+<details><summary>🔥 <strong>output/Noto Sans Coptic/unhinted/variable-ttf/NotoSansCoptic[wght].ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>🔥 FAIL</span><span class='details_text'><p>The following glyph names do not comply with naming conventions: numeral-greek, lowernumeral-greek, Shei-coptic, shei-coptic, Fei-coptic, fei-coptic, Khei-coptic, khei-coptic, Hori-coptic, hori-coptic and 131 more.</p>
+<p>Use -F or --full-lists to disable shortening of long lists.</p>
+<p>A glyph name must be entirely comprised of characters from the following set: A-Z a-z 0-9 .(period) <em>(underscore). A glyph name must not start with a digit or period. There are a few exceptions such as the special glyph &quot;.notdef&quot;. The glyph names &quot;twocents&quot;, &quot;a1&quot;, and &quot;</em>&quot; are all valid, while &quot;2cents&quot; and &quot;.twocents&quot; are not. [code: found-invalid-names]</p>
+</span></li></ul></div></details>
+<h3>Check font contains no unreachable glyphs</h3>
+<div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/unreachable_glyphs&gt;</div>
+<details><summary>⚠️ <strong>output/Noto Sans Coptic/unhinted/ttf/NotoSansCoptic-Regular.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>The following glyphs could not be reached by codepoint or substitution rules:
+- numbermark-ar.semiwide
+- And numbermark-ar.wide
+[code: unreachable-glyphs]</p>
+</span></li></ul></div></details>
+<details><summary>⚠️ <strong>output/Noto Sans Coptic/unhinted/variable-ttf/NotoSansCoptic[wght].ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>The following glyphs could not be reached by codepoint or substitution rules:
+- numbermark-ar.semiwide
+- And numbermark-ar.wide
+[code: unreachable-glyphs]</p>
+</span></li></ul></div></details>
+<h2>&lt;Section: fontbakery.profiles.gpos&gt; ⚠️⚠️</h2>
+<h3>Does GPOS table have kerning information? This check skips monospaced fonts as defined by post.isFixedPitch value</h3>
+<div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/gpos_kerning_info&gt;</div>
+<details><summary>⚠️ <strong>output/Noto Sans Coptic/unhinted/ttf/NotoSansCoptic-Regular.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>GPOS table lacks kerning information. [code: lacks-kern-info]</p>
+</span></li></ul></div></details>
+<details><summary>⚠️ <strong>output/Noto Sans Coptic/unhinted/variable-ttf/NotoSansCoptic[wght].ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>GPOS table lacks kerning information. [code: lacks-kern-info]</p>
+</span></li></ul></div></details>
+<h2>&lt;Section: Outline Correctness Checks&gt; ⚠️⚠️⚠️⏩⏩⏩⏩</h2>
+<h3>Are there any misaligned on-curve points?</h3>
+<div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/outline_alignment_miss&gt;</div>
+<details><summary>⚠️ <strong>output/Noto Sans Coptic/unhinted/ttf/NotoSansCoptic-Regular.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>The following glyphs have on-curve points which have potentially incorrect y coordinates:
+* period (U+002E): X=177.5,Y=2.0 (should be at baseline 0?)
+* period (U+002E): X=90.0,Y=2.0 (should be at baseline 0?)
+* colon (U+003A): X=177.5,Y=2.0 (should be at baseline 0?)
+* colon (U+003A): X=90.0,Y=2.0 (should be at baseline 0?)
+* breveinverteddoublecomb (U+0361): X=0.0,Y=715.0 (should be at cap-height 714?)
+* Hori-coptic (U+03E8): X=511.0,Y=2.0 (should be at baseline 0?)
+* Gangia-coptic (U+03EA): X=599.0,Y=713.0 (should be at cap-height 714?)
+* Gangia-coptic (U+03EA): X=707.0,Y=713.0 (should be at cap-height 714?)
+* threedotpunctuation (U+2056): X=418.5,Y=2.0 (should be at baseline 0?)
+* threedotpunctuation (U+2056): X=331.0,Y=2.0 (should be at baseline 0?) and 20 more.</p>
+<p>Use -F or --full-lists to disable shortening of long lists. [code: found-misalignments]</p>
+</span></li></ul></div></details>
+<details><summary>⚠️ <strong>output/Noto Sans Coptic/unhinted/variable-ttf/NotoSansCoptic[wght].ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>The following glyphs have on-curve points which have potentially incorrect y coordinates:
+* period (U+002E): X=177.5,Y=2.0 (should be at baseline 0?)
+* period (U+002E): X=90.0,Y=2.0 (should be at baseline 0?)
+* colon (U+003A): X=177.5,Y=2.0 (should be at baseline 0?)
+* colon (U+003A): X=90.0,Y=2.0 (should be at baseline 0?)
+* breveinverteddoublecomb (U+0361): X=0.0,Y=715.0 (should be at cap-height 714?)
+* Hori-coptic (U+03E8): X=511.0,Y=2.0 (should be at baseline 0?)
+* Gangia-coptic (U+03EA): X=599.0,Y=713.0 (should be at cap-height 714?)
+* Gangia-coptic (U+03EA): X=707.0,Y=713.0 (should be at cap-height 714?)
+* threedotpunctuation (U+2056): X=418.5,Y=2.0 (should be at baseline 0?)
+* threedotpunctuation (U+2056): X=331.0,Y=2.0 (should be at baseline 0?) and 20 more.</p>
+<p>Use -F or --full-lists to disable shortening of long lists. [code: found-misalignments]</p>
+</span></li></ul></div></details>
+<h3>Are any segments inordinately short?</h3>
+<div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/outline_short_segments&gt;</div>
+<details><summary>⚠️ <strong>output/Noto Sans Coptic/unhinted/ttf/NotoSansCoptic-Regular.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>The following glyphs have segments which seem very short:
+* Gangia-coptic (U+03EA) contains a short segment L&lt;&lt;190.0,714.0&gt;--&lt;210.0,714.0&gt;&gt;
+* doublecircumflexcomb (U+1DCD) contains a short segment L&lt;&lt;-420.0,606.0&gt;--&lt;-420.0,616.0&gt;&gt;
+* sou-coptic (U+2C8B) contains a short segment B&lt;&lt;221.5,-175.5&gt;-&lt;215.0,-175.0&gt;-&lt;210.0,-174.0&gt;&gt;
+* sou-coptic (U+2C8B) contains a short segment B&lt;&lt;210.0,-98.0&gt;-&lt;218.0,-99.0&gt;-&lt;223.0,-99.5&gt;&gt;
+* sou-coptic (U+2C8B) contains a short segment B&lt;&lt;223.0,-99.5&gt;-&lt;228.0,-100.0&gt;-&lt;237.0,-100.0&gt;&gt;
+* Laula-coptic (U+2C96) contains a short segment B&lt;&lt;131.5,642.5&gt;-&lt;122.0,640.0&gt;-&lt;115.0,637.0&gt;&gt;
+* Laula-coptic (U+2C96) contains a short segment B&lt;&lt;554.0,62.0&gt;-&lt;562.0,62.0&gt;-&lt;570.5,64.0&gt;&gt;
+* Laula-coptic (U+2C96) contains a short segment B&lt;&lt;570.5,64.0&gt;-&lt;579.0,66.0&gt;-&lt;584.0,67.0&gt;&gt;
+* Ni-coptic (U+2C9A) contains a short segment L&lt;&lt;567.0,123.0&gt;--&lt;571.0,123.0&gt;&gt;
+* Ni-coptic (U+2C9A) contains a short segment L&lt;&lt;183.0,593.0&gt;--&lt;179.0,593.0&gt;&gt; and 8 more.</p>
+<p>Use -F or --full-lists to disable shortening of long lists. [code: found-short-segments]</p>
+</span></li></ul></div></details>
+                    </body>
+                </html>
