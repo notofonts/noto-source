@@ -1,5 +1,5 @@
 {
-.appVersion = "3108";
+.appVersion = "3109";
 .formatVersion = 3;
 axes = (
 {
@@ -161,10 +161,6 @@ code = "AinMed AinMed.inT3 AinMed.inT3outD1 AinMed.inT3outD11 AinMed.inT3outD2 A
 name = YBMedis;
 },
 {
-code = "BehxIni.outD2WQ BehxIni.outD4 BehxIni.outT2 BehxIni.outT2K FehxIni.outD2MM FehxIni.outD4 GafIni.outD2MM GafInvIni.outD2MM HehIni KafIni.outD2MM LamIni.outD2MM MeemIni.r";
-name = class594;
-},
-{
 code = "GafInvMed.outD2HYB GafMed.outD2HYB HehDoMed.inD2outD2YB KafMed.outD2HYB LamMed.outD2HYB SeenMed.inT2outD2YB";
 name = class603;
 },
@@ -217,14 +213,6 @@ code = "AinIni AinIni.outD1 AinIni.outD11 AinIni.outD2 AinIni.outD2D AinIni.outD
 name = class766;
 },
 {
-code = "GafInvMed.HRk GafInvMed.k GafMed.HRk GafMed.k HahMed.inD2outD3 HahMed.inD2outD5 KafMed.HRk KafMed.k TahMed.inD1outD3";
-name = class793;
-},
-{
-code = "BehxMed.inS1outS1 MeemMed.inD2outD3 SeenMed.SWinCoutT2 TahMed TahMed.HRlow TahMed.inD1 TahMed.inD1outS1 TahMed.inD1outT1 TahMed.inD1outT2 TahMed.low";
-name = class815;
-},
-{
 code = "FehxMed.inT3outD3 HahMed HahMed.inD2outD2MM HahMed.inD2outT1 HahMed.inD2outT2 SeenMed.SWinAoutT2 SeenMed.SWinBoutT2 SeenMed.SWinFFoutT2 SeenMed.SWinFoutT2 SeenMed.SWinGoutT2 TahMed.inD1outD2MM TahMed.inD1outD5";
 name = class837;
 },
@@ -265,7 +253,8 @@ code = "AinIni AinIni.outD1 AinIni.outD11 AinIni.outD2 AinIni.outD2D AinIni.outD
 name = AllInits;
 },
 {
-code = "EightArabic EightFarsi FiveArabic FiveFarsi FourArabic FourFarsi FourUrdu NineArabic NineFarsi OneArabic OneFarsi SevenArabic SevenFarsi SevenUrdu SixArabic SixFarsi ThreeArabic ThreeFarsi TwoArabic TwoFarsi ZeroArabic ZeroFarsi eight five four nine one seven six three two zero";
+code = "EightArabic EightFarsi FiveArabic FiveFarsi FourArabic FourFarsi FourUrdu SixUrdu NineArabic NineFarsi OneArabic OneFarsi SevenArabic SevenFarsi SevenUrdu SixArabic SixFarsi ThreeArabic ThreeFarsi TwoArabic TwoFarsi ZeroArabic ZeroFarsi eight five four nine one seven six three two zero
+";
 name = AllDigits;
 },
 {
@@ -2010,6 +1999,7 @@ code = "lookup DigitSmall {
     sub FourFarsi by FourFarsi.small;
     sub FiveFarsi by FiveFarsi.small;
     sub SixFarsi by SixFarsi.small;
+	sub SixUrdu by SixArabic.small;
     sub FourUrdu by FourUrdu.small;
     sub SevenUrdu by SevenUrdu.small;
     sub ZeroFarsi by ZeroArabic.small;
@@ -2044,6 +2034,7 @@ lookup DigitEncl {
     sub FourFarsi by FourFarsi.encl;
     sub FiveFarsi by FiveFarsi.encl;
     sub SixFarsi by SixFarsi.encl;
+	sub SixUrdu by SixArabic.encl;
     sub FourUrdu by FourUrdu.encl;
     sub SevenUrdu by SevenUrdu.encl;
     sub ZeroFarsi by ZeroArabic.encl;
@@ -2078,6 +2069,7 @@ lookup DigitSmallBase {
     sub FourFarsi by baseNum FourFarsi.small;
     sub FiveFarsi by baseNum FiveFarsi.small;
     sub SixFarsi by baseNum SixFarsi.small;
+    sub SixUrdu by baseNum SixArabic.small;
     sub FourUrdu by baseNum FourUrdu.small;
     sub SevenUrdu by baseNum SevenUrdu.small;
     sub ZeroFarsi by baseNum ZeroArabic.small;
@@ -2112,6 +2104,7 @@ lookup EnclDigitBase {
     sub FourFarsi by baseNum FourFarsi.encl;
     sub FiveFarsi by baseNum FiveFarsi.encl;
     sub SixFarsi by baseNum SixFarsi.encl;
+    sub SixUrdu by baseNum SixArabic.encl;
     sub FourUrdu by baseNum FourUrdu.encl;
     sub SevenUrdu by baseNum SevenUrdu.encl;
     sub ZeroFarsi by baseNum ZeroArabic.encl;
@@ -6098,7 +6091,7 @@ lookup YBaddAnchors {
     sub @Inits' @SimpleMedis' YehBarreeFin' lookup YBanchor1;
     sub @Inits' @SimpleMedis' @SimpleMedis' YehBarreeFin' lookup YBanchor2;
     sub @Inits' @SimpleMedis' @SimpleMedis' @SimpleMedis' YehBarreeFin' lookup YBanchor3;
-    sub @SimpleMedis' @SimpleMedis' @SimpleMedis' @SimpleMedis' @SimpleMedis' lookup YBanchor3;
+    sub @SimpleMedis' @SimpleMedis' @SimpleMedis' @SimpleMedis' YehBarreeFin' lookup YBanchor3;
 } YBaddAnchors;
 ";
 name = "Add counter glyphs for bari-ye";
@@ -7672,26 +7665,7 @@ name = "- Bari Ye Handling (part 2) -";
 },
 {
 code = "lookup AnnullMk {
-    sub AlefInferiorYB by NullMk;
-    sub HamzaBelowYB by NullMk;
-    sub KasraYB by NullMk;
-    sub KasratanYB by NullMk;
-    sub OneDotBelowYB by NullMk;
-    sub ThreeDotsDownBelowYB by NullMk;
-    sub TwoDotsBelowYB by NullMk;
-    sub HehCommaYB by NullMk;
-    sub FourDotsBelowYB by NullMk;
-    sub WavyHamzaBelowYB by NullMk;
-    sub Small4UrduBelowYB by NullMk;
-    sub TwoDotsVertBelowYB by NullMk;
-    sub HamzaBelowAF_YB by NullMk;
-    sub Tah2DotsBelowYB by NullMk;
-    sub TahSmallBelowYB by NullMk;
-    sub RingDistYB by NullMk;
-    sub ArSevenBelowYB by NullMk;
-    sub ThreeDotsFlatBelowYB by NullMk;
-    sub ThreeDotsUpBelowYB by NullMk;
-    sub ArEightBelowYB by NullMk;
+    sub @YBMarks by NullMk;
 } AnnullMk;
 ";
 name = "Replace mark with null";
@@ -9892,7 +9866,10 @@ code = "lookup TransferMarks {
 name = "Transfer YB Mark sequences to End";
 },
 {
-code = "
+code = "@class594 = [BehxIni.outD2WQ BehxIni.outD4 BehxIni.outT2 BehxIni.outT2K FehxIni.outD2MM FehxIni.outD4 GafIni.outD2MM GafInvIni.outD2MM HehIni KafIni.outD2MM LamIni.outD2MM MeemIni.r];
+@class793 = [GafInvMed.HRk GafInvMed.k GafMed.HRk GafMed.k HahMed.inD2outD3 HahMed.inD2outD5 KafMed.HRk KafMed.k TahMed.inD1outD3];
+@class815 = [BehxMed.inS1outS1 MeemMed.inD2outD3 SeenMed.SWinCoutT2 TahMed TahMed.HRlow TahMed.inD1 TahMed.inD1outS1 TahMed.inD1outT1 TahMed.inD1outT2 TahMed.low];
+
 lookup YBcombis3 {
     lookupflag IgnoreLigatures IgnoreMarks;
     ;
@@ -10053,6 +10030,7 @@ name = "Handle 3-glyph YB sequences";
 },
 {
 code = "lookup TransferMarks2 {
+lookupflag UseMarkFilteringSet @YBMarksAndPre;
 sub @AllSpacers' [NullMk ybPre]' [NullMk ybPre]' @YBMedis' lookup TransferMarks;
 sub @AllSpacers' [NullMk ybPre]' @YBMedis' lookup TransferMarks;
 sub @AllSpacers' @YBMedis' lookup TransferMarks;
@@ -10060,6 +10038,10 @@ sub [NullMk ybPre]' [NullMk ybPre]' @YBMedis' lookup TransferMarks;
 sub [NullMk ybPre]' @YBMedis' lookup TransferMarks;
 sub @YBMedis' lookup TransferMarks;
 }TransferMarks2;
+
+@class594 = [BehxIni.outD2WQ BehxIni.outD4 BehxIni.outT2 BehxIni.outT2K FehxIni.outD2MM FehxIni.outD4 GafIni.outD2MM GafInvIni.outD2MM HehIni KafIni.outD2MM LamIni.outD2MM MeemIni.r];
+@class793 = [GafInvMed.HRk GafInvMed.k GafMed.HRk GafMed.k HahMed.inD2outD3 HahMed.inD2outD5 KafMed.HRk KafMed.k TahMed.inD1outD3];
+@class815 = [BehxMed.inS1outS1 MeemMed.inD2outD3 SeenMed.SWinCoutT2 TahMed TahMed.HRlow TahMed.inD1 TahMed.inD1outS1 TahMed.inD1outT1 TahMed.inD1outT2 TahMed.low];
 
 lookup YBcombis4i_5i {
     lookupflag IgnoreMarks;
@@ -134163,7 +134145,6 @@ shapes = (
 ref = KafIni;
 },
 {
-pos = (386,0);
 ref = _Gaf.sarkash;
 }
 );
@@ -134280,7 +134261,6 @@ shapes = (
 ref = KafIni;
 },
 {
-pos = (367,0);
 ref = _Gaf.sarkash;
 }
 );
@@ -201804,7 +201784,7 @@ value = "Noto is a trademark of Google Inc.";
 },
 {
 key = versionString;
-value = "Version 3.001";
+value = "Version 3.002";
 }
 );
 settings = {
@@ -203668,5 +203648,5 @@ O,
 };
 };
 versionMajor = 3;
-versionMinor = 1;
+versionMinor = 2;
 }
