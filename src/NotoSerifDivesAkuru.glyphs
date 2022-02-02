@@ -1,6 +1,11 @@
 {
 .appVersion = "3112";
 .formatVersion = 3;
+DisplayStrings = (
+"𑤌𑤍𑤎𑤏𑤐𑤑𑤒𑤓𑤕𑤖𑤘𑤙𑤚𑤛𑤜𑤝𑤞𑤟𑤠𑤡𑤢𑤣𑤤𑤥𑤳𑤴𑤦𑤧𑤨𑤩𑤪𑤫𑤬𑤭𑤮𑤯",
+"𑤟/yatouch-divesakuru",
+"𑤧/ru-divesakuru.001/ra_vowelU-divesakuru"
+);
 classes = (
 {
 code = "dha_vowelU-divesakuru sa_vowelU-divesakuru
@@ -213,8 +218,37 @@ name = Languagesystems;
 features = (
 {
 code = "script diak;
+
+lookup replaceLeftTouching {
+sub u1190C virama-divesakuru u1191B' by tatouch-divesakuru;
+sub u1190C virama-divesakuru u11927' by ratouch-divesakuru;
+sub u1190C virama-divesakuru u1190C' by katouch-divesakuru;
+sub u1192E virama-divesakuru u1192E' by llatouch-divesakuru;
+sub u11941 virama-divesakuru u11924' by matouch-divesakuru;
+sub u11924 virama-divesakuru u11924' by matouch-divesakuru;
+sub u1191F virama-divesakuru u11902' by itouch-divesakuru;
+sub u1191F virama-divesakuru u11906' by etouch-divesakuru;;
+sub u1191F virama-divesakuru u1191B' by tatouch-divesakuru;;
+sub u1191F virama-divesakuru u1191F' by natouch-divesakuru;
+sub u1191F virama-divesakuru u11925' by yatouch-divesakuru;
+#sub u1191F virama-divesakuru ya_vowelI-divesakuru' by ya_vowelItouch-divesakuru;
+sub u11927 virama-divesakuru u1190C' by katouch-divesakuru;
+sub u1192C virama-divesakuru u11920' by patouch-divesakuru;
+sub u1191B virama-divesakuru u11900' by atouch-divesakuru;
+sub u1191B virama-divesakuru u1190C' by katouch-divesakuru;
+sub u11925 virama-divesakuru u11925' by yatouch-divesakuru;
+sub u11941 virama-divesakuru u1190E' by gatouch-divesakuru;
+sub u1190E virama-divesakuru u1190E' by gatouch-divesakuru;
+} replaceLeftTouching;
+
+";
+disabled = 1;
+tag = ccmp;
+},
+{
+code = "script diak;
 lookup nga {
-	sub u1193F u1190E by nasal_ga-divesakuru;
+	sub u1190E u1193F by nasal_ga-divesakuru;
 } nga;
 
 ";
@@ -228,43 +262,6 @@ sub @Consonants u11927' by u11942;
 lookup ya_medya {
 sub @Consonants u11925' by u11940;
 } ya_medya;
-lookup replaceLeftTouching {
-sub u1190C virama-divesakuru u1191B' by tatouch-divesakuru;
-sub u1190C virama-divesakuru u11927' by ratouch-divesakuru;
-sub u1190C virama-divesakuru u1190C' by katouch-divesakuru;
-sub u1192E virama-divesakuru u1192E' by llatouch-divesakuru;
-sub u11941 virama-divesakuru u11924' by matouch-divesakuru;
-sub u11924 virama-divesakuru u11924' by matouch-divesakuru;
-sub u1191F virama-divesakuru u11902' by itouch-divesakuru;
-sub u1191F virama-divesakuru u11906' by etouch-divesakuru;;
-sub u1191F virama-divesakuru u1191B' by tatouch-divesakuru;;
-sub u1191F virama-divesakuru u1191F' by natouch-divesakuru;
-sub u1191F virama-divesakuru u11925' by yatouch-divesakuru;
-sub u1191F virama-divesakuru ya_vowelI-divesakuru' by ya_vowelItouch-divesakuru;
-sub u11927 virama-divesakuru u1190C' by katouch-divesakuru;
-sub u1192C virama-divesakuru u11920' by patouch-divesakuru;
-sub u1191B virama-divesakuru u11900' by atouch-divesakuru;
-sub u1191B virama-divesakuru u1190C' by katouch-divesakuru;
-sub u11925 virama-divesakuru u11925' by yatouch-divesakuru;
-sub u11941 virama-divesakuru u1190E' by gatouch-divesakuru;
-sub u1190E virama-divesakuru u1190E' by gatouch-divesakuru;
-} replaceLeftTouching;
-
-lookup touchingForms {
-sub virama-divesakuru ya_vowelItouch-divesakuru by ya_vowelItouch-divesakuru;
-sub virama-divesakuru itouch-divesakuru by itouch-divesakuru;
-sub virama-divesakuru etouch-divesakuru by etouch-divesakuru;
-sub virama-divesakuru atouch-divesakuru by atouch-divesakuru;
-sub virama-divesakuru katouch-divesakuru by katouch-divesakuru;
-sub virama-divesakuru tatouch-divesakuru by tatouch-divesakuru;
-sub virama-divesakuru natouch-divesakuru by natouch-divesakuru;
-sub virama-divesakuru matouch-divesakuru by matouch-divesakuru;
-sub virama-divesakuru yatouch-divesakuru by yatouch-divesakuru;
-sub virama-divesakuru ratouch-divesakuru by ratouch-divesakuru;
-sub virama-divesakuru llatouch-divesakuru by llatouch-divesakuru;
-sub virama-divesakuru patouch-divesakuru by patouch-divesakuru;
-sub virama-divesakuru gatouch-divesakuru by gatouch-divesakuru;
-} touchingForms;
 
 lookup sa_ta_conj {
 sub u1192C virama-divesakuru u1191B by sa_ta-divesakuru;
@@ -286,9 +283,12 @@ sub u11925 u11940 by ya_medya-divesakuru;
 } yaConjuncts;
 
 lookup vowelI {
+sub u11925 u11931 by ya_vowelI-divesakuru;
+sub yatouch-divesakuru u11931 by ya_vowelItouch-divesakuru;
 sub ka_medra-divesakuru u11931 by ka_ra_vowelI-divesakuru;
 sub sha_medra-divesakuru u11931 by sha_ra_vowelI-divesakuru;
 } vowelI;
+
 ";
 tag = psts;
 },
@@ -312,7 +312,7 @@ sub u1192C virama-divesakuru u11929 by sa_va-divesakuru;
 } Conjuncts;
 
 lookup vowelSignI {
-sub u11925 u11931 by ya_vowelI-divesakuru;
+#sub u11925 u11931 by ya_vowelI-divesakuru;
 sub u1191E u11931 by dha_vowelI-divesakuru;
 sub u11920 u11931 by pa_vowelI-divesakuru;
 sub u1192C u11931 by sa_vowelI-divesakuru;
@@ -321,6 +321,7 @@ sub u11941 u1190C u11931 by ka_ra_vowelI-divesakuru;
 sub u11941 u1192A u11931 by sha_ra_vowelI-divesakuru;
 sub na_dha-divesakuru u11931 by na_dha_vowelI-divesakuru;
 #sub sha_medra-divesakuru u11927 by sha_ra_vowelI-divesakuru;
+#sub yatouch-divesakuru u11931 by ya_vowelItouch-divesakuru;
 } vowelSignI;
 
 lookup vowelSignII {
@@ -345,6 +346,44 @@ lookup vowelSignUU {
 sub u1190C u11934 by ka_vowelUU-divesakuru;
 sub u11920 u11934 by pa_vowelUU-divesakuru;
 } vowelSignUU;
+
+lookup replaceLeftTouching {
+sub u1190C virama-divesakuru u1191B' by tatouch-divesakuru;
+sub u1190C virama-divesakuru u11927' by ratouch-divesakuru;
+sub u1190C virama-divesakuru u1190C' by katouch-divesakuru;
+sub u1192E virama-divesakuru u1192E' by llatouch-divesakuru;
+sub u11941 virama-divesakuru u11924' by matouch-divesakuru;
+sub u11924 virama-divesakuru u11924' by matouch-divesakuru;
+sub u1191F virama-divesakuru u11902' by itouch-divesakuru;
+sub u1191F virama-divesakuru u11906' by etouch-divesakuru;;
+sub u1191F virama-divesakuru u1191B' by tatouch-divesakuru;;
+sub u1191F virama-divesakuru u1191F' by natouch-divesakuru;
+sub u1191F virama-divesakuru u11925' by yatouch-divesakuru;
+#sub u1191F virama-divesakuru ya_vowelI-divesakuru' by ya_vowelItouch-divesakuru;
+sub u11927 virama-divesakuru u1190C' by katouch-divesakuru;
+sub u1192C virama-divesakuru u11920' by patouch-divesakuru;
+sub u1191B virama-divesakuru u11900' by atouch-divesakuru;
+sub u1191B virama-divesakuru u1190C' by katouch-divesakuru;
+sub u11925 virama-divesakuru u11925' by yatouch-divesakuru;
+sub u11941 virama-divesakuru u1190E' by gatouch-divesakuru;
+sub u1190E virama-divesakuru u1190E' by gatouch-divesakuru;
+} replaceLeftTouching;
+
+lookup touchingForms {
+sub virama-divesakuru itouch-divesakuru by itouch-divesakuru;
+sub virama-divesakuru etouch-divesakuru by etouch-divesakuru;
+sub virama-divesakuru atouch-divesakuru by atouch-divesakuru;
+sub virama-divesakuru katouch-divesakuru by katouch-divesakuru;
+sub virama-divesakuru tatouch-divesakuru by tatouch-divesakuru;
+sub virama-divesakuru natouch-divesakuru by natouch-divesakuru;
+sub virama-divesakuru matouch-divesakuru by matouch-divesakuru;
+sub virama-divesakuru yatouch-divesakuru by yatouch-divesakuru;
+sub virama-divesakuru ratouch-divesakuru by ratouch-divesakuru;
+sub virama-divesakuru llatouch-divesakuru by llatouch-divesakuru;
+sub virama-divesakuru patouch-divesakuru by patouch-divesakuru;
+sub virama-divesakuru gatouch-divesakuru by gatouch-divesakuru;
+} touchingForms;
+
 ";
 tag = cjct;
 },
@@ -12980,7 +13019,7 @@ width = 767;
 },
 {
 glyphname = "yatouch-divesakuru";
-lastChange = "2022-02-01 22:57:25 +0000";
+lastChange = "2022-02-02 09:49:18 +0000";
 layers = (
 {
 anchors = (
@@ -14195,7 +14234,7 @@ unicode = 71986;
 {
 category = Mark;
 glyphname = u11933;
-lastChange = "2022-01-28 17:07:53 +0000";
+lastChange = "2022-02-02 09:43:17 +0000";
 layers = (
 {
 anchors = (
@@ -15246,6 +15285,89 @@ width = 594;
 );
 note = uni25CC;
 unicode = 9676;
+},
+{
+glyphname = "ru-divesakuru.001";
+lastChange = "2022-02-02 09:58:47 +0000";
+layers = (
+{
+anchors = (
+{
+name = bottom;
+pos = (229,-38);
+},
+{
+name = halant;
+pos = (312,373);
+},
+{
+name = top;
+pos = (250,590);
+}
+);
+layerId = UUID0;
+shapes = (
+{
+closed = 1;
+nodes = (
+(660,-105,o),
+(691,-95,o),
+(710,-85,c),
+(695,-30,l),
+(671,-38,o),
+(649,-42,o),
+(627,-42,cs),
+(550,-42,o),
+(538,7,o),
+(538,102,cs),
+(538,334,ls),
+(538,482,o),
+(499,590,o),
+(358,590,cs),
+(196,590,o),
+(103,435,o),
+(103,226,cs),
+(103,156,ls),
+(103,42,o),
+(144,-11,o),
+(230,-11,cs),
+(324,-11,o),
+(365,42,o),
+(365,156,cs),
+(365,318,ls),
+(365,411,o),
+(350,428,o),
+(270,454,cs),
+(19,535,l),
+(3,474,l),
+(251,395,ls),
+(297,380,o),
+(303,370,o),
+(303,316,cs),
+(303,171,ls),
+(303,96,o),
+(300,48,o),
+(230,48,cs),
+(168,48,o),
+(159,96,o),
+(159,171,cs),
+(159,222,ls),
+(159,443,o),
+(247,534,o),
+(355,534,cs),
+(440,534,o),
+(478,463,o),
+(478,330,cs),
+(478,74,ls),
+(478,-47,o),
+(523,-105,o),
+(620,-105,cs)
+);
+}
+);
+width = 715;
+}
+);
 }
 );
 instances = (
@@ -15284,6 +15406,7 @@ u1191F = {
 "natouch-divesakuru" = -120;
 "tatouch-divesakuru" = -190;
 "ya_vowelItouch-divesakuru" = -135;
+"yatouch-divesakuru" = -135;
 };
 u11924 = {
 "matouch-divesakuru" = -257;
