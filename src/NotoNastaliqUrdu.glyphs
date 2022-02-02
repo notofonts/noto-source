@@ -1,9 +1,6 @@
 {
 .appVersion = "3109";
 .formatVersion = 3;
-DisplayStrings = (
-"/GafIni"
-);
 axes = (
 {
 name = Weight;
@@ -256,7 +253,8 @@ code = "AinIni AinIni.outD1 AinIni.outD11 AinIni.outD2 AinIni.outD2D AinIni.outD
 name = AllInits;
 },
 {
-code = "EightArabic EightFarsi FiveArabic FiveFarsi FourArabic FourFarsi FourUrdu NineArabic NineFarsi OneArabic OneFarsi SevenArabic SevenFarsi SevenUrdu SixArabic SixFarsi ThreeArabic ThreeFarsi TwoArabic TwoFarsi ZeroArabic ZeroFarsi eight five four nine one seven six three two zero";
+code = "EightArabic EightFarsi FiveArabic FiveFarsi FourArabic FourFarsi FourUrdu SixUrdu NineArabic NineFarsi OneArabic OneFarsi SevenArabic SevenFarsi SevenUrdu SixArabic SixFarsi ThreeArabic ThreeFarsi TwoArabic TwoFarsi ZeroArabic ZeroFarsi eight five four nine one seven six three two zero
+";
 name = AllDigits;
 },
 {
@@ -2001,6 +1999,7 @@ code = "lookup DigitSmall {
     sub FourFarsi by FourFarsi.small;
     sub FiveFarsi by FiveFarsi.small;
     sub SixFarsi by SixFarsi.small;
+	sub SixUrdu by SixArabic.small;
     sub FourUrdu by FourUrdu.small;
     sub SevenUrdu by SevenUrdu.small;
     sub ZeroFarsi by ZeroArabic.small;
@@ -2035,6 +2034,7 @@ lookup DigitEncl {
     sub FourFarsi by FourFarsi.encl;
     sub FiveFarsi by FiveFarsi.encl;
     sub SixFarsi by SixFarsi.encl;
+	sub SixUrdu by SixArabic.encl;
     sub FourUrdu by FourUrdu.encl;
     sub SevenUrdu by SevenUrdu.encl;
     sub ZeroFarsi by ZeroArabic.encl;
@@ -2069,6 +2069,7 @@ lookup DigitSmallBase {
     sub FourFarsi by baseNum FourFarsi.small;
     sub FiveFarsi by baseNum FiveFarsi.small;
     sub SixFarsi by baseNum SixFarsi.small;
+    sub SixUrdu by baseNum SixArabic.small;
     sub FourUrdu by baseNum FourUrdu.small;
     sub SevenUrdu by baseNum SevenUrdu.small;
     sub ZeroFarsi by baseNum ZeroArabic.small;
@@ -2103,6 +2104,7 @@ lookup EnclDigitBase {
     sub FourFarsi by baseNum FourFarsi.encl;
     sub FiveFarsi by baseNum FiveFarsi.encl;
     sub SixFarsi by baseNum SixFarsi.encl;
+    sub SixUrdu by baseNum SixArabic.encl;
     sub FourUrdu by baseNum FourUrdu.encl;
     sub SevenUrdu by baseNum SevenUrdu.encl;
     sub ZeroFarsi by baseNum ZeroArabic.encl;
