@@ -1969,11 +1969,10 @@ name = "Replacements for LA ligature";
 },
 {
 code = "lookup FormDivineName {
-    lookupflag UseMarkFilteringSet [AlefSuperiorNS FathaNS ShaddaNS];
+    lookupflag IgnoreMarks;
     sub LamIni LamMed HehFin by Divine_nm_p1;
 } FormDivineName;
 lookup DivNmCheck {
-    lookupflag MarkAttachmentType @AllAboveMarks;
     ignore sub LamIni' LamMed' HehFin';
     sub LamIni' lookup FormDivineName LamMed' [AlefSuperiorNS FathaNS ShaddaNS]' HehFin';
     sub LamIni' lookup FormDivineName LamMed' [AlefSuperiorNS FathaNS ShaddaNS]' [AlefSuperiorNS FathaNS ShaddaNS]' HehFin';
