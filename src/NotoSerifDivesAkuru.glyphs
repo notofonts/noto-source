@@ -1,6 +1,9 @@
 {
 .appVersion = "3112";
 .formatVersion = 3;
+DisplayStrings = (
+"𑤜/ka_tha-divesakuru/ka_ssa-divesakuru/nga_ga-divesakuru/tta_va-divesakuru/ta_tha-divesakuru/na_tha-divesakuru/ba_bha-divesakuru"
+);
 classes = (
 {
 code = "u11900 u11901 u11902 u11903 u11904 u11905 u11906 u11909 u1190C u1190D u1190E u1190F u11910 u11911 u11912 u11913 u11915 u11916 u11918 u11919 u1191A u1191B u1191C u1191D u1191E u1191F u11920 u11921 u11922 u11923 u11924 u11925 u11940 u11926 u11927 u11942 u11928 u11929 u1192A u1192B u1192C u1192D u1192E u1192F ka_tha-divesakuru ka_ra_vowelI-divesakuru ka_ssa-divesakuru ka_medra-divesakuru ka_vowelU-divesakuru ka_vowelUU-divesakuru nga_ga-divesakuru tta_tta-divesakuru tta_va-divesakuru nna_dda-divesakuru ta_tha-divesakuru ta_medya-divesakuru da_medya-divesakuru da_vowelU-divesakuru dha_medya-divesakuru dha_vowelI-divesakuru dha_vowelII-divesakuru dha_vowelU-divesakuru na_ta_medra-divesakuru na_tha-divesakuru na_dha-divesakuru na_dha_vowelI-divesakuru na_dha_vowelII-divesakuru na_dha_vowelU-divesakuru na_vowelU-divesakuru pa_medra-divesakuru pa_vowelI-divesakuru pa_vowelU-divesakuru pa_vowelUU-divesakuru ba_bha-divesakuru ma_ba-divesakuru ma_vowelU-divesakuru ya_medya-divesakuru ya_vowelI-divesakuru u-divesakuru.00 uu-divesakuru.00 ra_vowelU-divesakuru sha_ra_vowelI-divesakuru sha_medra-divesakuru ssa_tta-divesakuru sa_ta-divesakuru sa_ta_medra-divesakuru sa_pa_medra-divesakuru sa_va-divesakuru sa_medya-divesakuru sa_vowelI-divesakuru sa_vowelU-divesakuru lla_vowelU-divesakuru nasal_ga-divesakuru k-divesakuru n-divesakuru s-divesakuru t-divesakuru tt-divesakuru tta_tt-divesakuru na_dh-divesakuru ma_b-divesakuru ya_u-divesakuru ch-divesakuru p-divesakuru ptouch-divesakuru b-divesakuru dh-divesakuru ktouch-divesakuru ntouch-divesakuru ttouch-divesakuru atouch-divesakuru etouch-divesakuru gatouch-divesakuru itouch-divesakuru katouch-divesakuru patouch-divesakuru llatouch-divesakuru matouch-divesakuru natouch-divesakuru ratouch-divesakuru tatouch-divesakuru yatouch-divesakuru ya_utouch-divesakuru ya_vowelItouch-divesakuru";
@@ -416,6 +419,7 @@ sub patouch-divesakuru u1193D by ptouch-divesakuru;
 sub katouch-divesakuru u1193D by ktouch-divesakuru;
 sub natouch-divesakuru u1193D by ntouch-divesakuru;
 sub yatouch-divesakuru u1193D by ya_utouch-divesakuru;
+sub ssa_tta-divesakuru u1193D by ssa_tt-divesakuru;
 } halantForms;
 
 lookup halant_00 {
@@ -16947,6 +16951,139 @@ width = 594;
 );
 note = uni25CC;
 unicode = 9676;
+},
+{
+glyphname = "ssa_tt-divesakuru";
+lastChange = "2022-02-03 17:54:22 +0000";
+layers = (
+{
+anchors = (
+{
+name = bottom;
+pos = (801,-38);
+},
+{
+name = top;
+pos = (822,590);
+}
+);
+layerId = UUID0;
+shapes = (
+{
+closed = 1;
+nodes = (
+(589,-10,o),
+(742,114,o),
+(742,255,cs),
+(742,327,o),
+(694,372,o),
+(618,432,cs),
+(569,471,o),
+(554,501,o),
+(554,538,cs),
+(554,575,o),
+(572,601,o),
+(608,601,cs),
+(643,601,o),
+(663,580,o),
+(663,542,cs),
+(663,502,o),
+(640,474,o),
+(591,433,cs),
+(532,383,o),
+(470,319,o),
+(470,247,cs),
+(470,83,o),
+(619,-10,o),
+(735,-10,cs),
+(870,-10,o),
+(958,46,o),
+(1067,344,cs),
+(1186,668,o),
+(1270,745,o),
+(1522,745,c),
+(1522,800,l),
+(1269,800,o),
+(1162,736,o),
+(1037,390,cs),
+(946,139,o),
+(889,93,o),
+(741,93,cs),
+(666,93,o),
+(532,127,o),
+(532,254,cs),
+(532,316,o),
+(583,362,o),
+(633,406,cs),
+(686,453,o),
+(713,500,o),
+(713,549,cs),
+(713,614,o),
+(660,649,o),
+(610,649,cs),
+(546,649,o),
+(501,604,o),
+(501,540,cs),
+(501,481,o),
+(533,441,o),
+(586,396,cs),
+(647,344,o),
+(676,304,o),
+(676,252,cs),
+(676,201,o),
+(646,92,o),
+(396,92,cs),
+(263,92,o),
+(211,133,o),
+(211,193,cs),
+(211,241,o),
+(250,273,o),
+(294,307,cs),
+(346,347,o),
+(399,392,o),
+(399,470,cs),
+(399,544,o),
+(353,591,o),
+(257,591,cs),
+(176,591,o),
+(99,539,o),
+(52,473,c),
+(76,450,l),
+(137,494,o),
+(188,517,o),
+(252,517,cs),
+(309,517,o),
+(344,495,o),
+(344,459,cs),
+(344,408,o),
+(304,375,o),
+(257,339,cs),
+(202,297,o),
+(142,250,o),
+(142,163,cs),
+(142,61,o),
+(224,-10,o),
+(384,-10,cs)
+);
+},
+{
+closed = 1;
+nodes = (
+(76,450,l),
+(83,483,l),
+(78,490,l),
+(81,497,o),
+(83,514,o),
+(83,531,cs),
+(83,591,l),
+(26,591,l),
+(26,450,l)
+);
+}
+);
+width = 1202;
+}
+);
 }
 );
 instances = (
