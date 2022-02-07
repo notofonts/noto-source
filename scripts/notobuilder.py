@@ -4,6 +4,10 @@ By default, places unhinted TTF, hinted TTF, OTF and (if possible) variable
 fonts into the ``output/`` directory.
 
 Currently does not support building from Monotype sources.
+
+Example:
+
+    python3 scripts/notobuilder.py src/NotoSans-MM.glyphs src/NotoSans-ItalicMM.glyphs
 """
 import logging
 import os
@@ -42,11 +46,11 @@ class NotoBuilder(GFBuilder):
     def post_process_ttf(self, filename):
         super().post_process_ttf(filename)
         self.outputs.add(filename)
-        hinted_dir = "output/%s/hinted/ttf" % self.get_family_name()
+        hinted_dir = "output/%s/hinted/ttf" % self.config["family"]
         os.makedirs(hinted_dir, exist_ok=True)
         hinted = filename.replace("unhinted", "hinted")
         try:
-            autohint(filename, hinted)
+            autohint(filename, hinted, add_script=True)
             self.outputs.add(hinted)
         except Exception as e:
             self.logger.error("Couldn't autohint %s: %s" % (filename, e))
