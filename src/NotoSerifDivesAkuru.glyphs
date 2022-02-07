@@ -1,9 +1,6 @@
 {
 .appVersion = "3112";
 .formatVersion = 3;
-DisplayStrings = (
-"𑤛/patouch-divesakuru 𑤠"
-);
 classes = (
 {
 code = "u11900 u11901 u11902 u11903 u11904 u11905 u11906 u11909 u1190C u1190D u1190E u1190F u11910 u11911 u11912 u11913 u11915 u11916 u11918 u11919 u1191A u1191B u1191C u1191D u1191E u1191F u11920 u11921 u11922 u11923 u11924 u11925 u11940 u11926 u11927 u11942 u11928 u11929 u1192A u1192B u1192C u1192D u1192E u1192F ka_tha-divesakuru ka_ra_vowelI-divesakuru ka_ssa-divesakuru ka_medra-divesakuru ka_vowelU-divesakuru ka_vowelUU-divesakuru nga_ga-divesakuru tta_tta-divesakuru tta_va-divesakuru nna_dda-divesakuru ta_tha-divesakuru ta_medya-divesakuru da_medya-divesakuru da_vowelU-divesakuru dha_medya-divesakuru dha_vowelI-divesakuru dha_vowelII-divesakuru dha_vowelU-divesakuru na_ta_medra-divesakuru na_tha-divesakuru na_dha-divesakuru na_dha_vowelI-divesakuru na_dha_vowelII-divesakuru na_dha_vowelU-divesakuru na_vowelU-divesakuru pa_medra-divesakuru pa_vowelI-divesakuru pa_vowelU-divesakuru pa_vowelUU-divesakuru ba_bha-divesakuru ma_ba-divesakuru ma_vowelU-divesakuru ya_medya-divesakuru ya_vowelI-divesakuru u-divesakuru.00 uu-divesakuru.00 yya_medya-divesakuru yya_vowelI-divesakuru ra_vowelU-divesakuru va_va-divesakuru sha_ra_vowelI-divesakuru sha_medra-divesakuru ssa_tta-divesakuru sa_ta-divesakuru sa_ta_medra-divesakuru sa_pa_medra-divesakuru sa_va-divesakuru sa_medya-divesakuru sa_vowelI-divesakuru sa_vowelU-divesakuru lla_vowelU-divesakuru nasal_ga-divesakuru k-divesakuru n-divesakuru s-divesakuru t-divesakuru tt-divesakuru tta_tt-divesakuru na_dh-divesakuru ma_b-divesakuru ya_u-divesakuru ch-divesakuru ssa_tt-divesakuru yy-divesakuru p-divesakuru ptouch-divesakuru b-divesakuru dh-divesakuru ktouch-divesakuru ntouch-divesakuru ttouch-divesakuru atouch-divesakuru etouch-divesakuru gatouch-divesakuru itouch-divesakuru katouch-divesakuru patouch-divesakuru llatouch-divesakuru matouch-divesakuru natouch-divesakuru ratouch-divesakuru tatouch-divesakuru yatouch-divesakuru ya_utouch-divesakuru ya_vowelItouch-divesakuru u11941 u11930 u11931 u11932 u11933 u11934";
@@ -220,6 +217,7 @@ name = Languagesystems;
 features = (
 {
 code = "script diak;
+
 lookup nga {
 	sub u1190E u1193F by nasal_ga-divesakuru;
 } nga;
@@ -255,7 +253,18 @@ sub yatouch-divesakuru u11931 by ya_vowelItouch-divesakuru;
 sub ka_medra-divesakuru u11931 by ka_ra_vowelI-divesakuru;
 sub sha_medra-divesakuru u11931 by sha_ra_vowelI-divesakuru;
 } vowelI;
-
+lookup vowelU {
+sub u11918 u11933' by uVowel-divesakuru.00;
+sub u11919 u11933' by uVowel-divesakuru.00;
+sub u11922 u11933' by uVowel-divesakuru.00;
+sub u11923 u11933' by uVowel-divesakuru.00;
+ sub u1192F u11933' by uVowel-divesakuru.00;
+} vowelU;
+lookup vowelUU {
+sub u11918 u11934' by uuVowel-divesakuru.00;
+sub u11919 u11934' by uuVowel-divesakuru.00;
+sub u11922 u11934' by uuVowel-divesakuru.00;
+} vowelUU;
 #lookup medials {
 #sub @Consonants u11927' by u11942;
 #sub @Consonants u11925' by u11940;
@@ -267,6 +276,7 @@ tag = psts;
 },
 {
 code = "script diak;
+
 lookup replaceLeftTouching {
 sub u1190C virama-divesakuru u1191B' by tatouch-divesakuru;
 sub u1190C virama-divesakuru u11927' by ratouch-divesakuru;
@@ -407,6 +417,7 @@ tag = haln;
 },
 {
 code = "script diak;
+
 lookup mark_to_abv_base {
 	markClass u11941 <anchor -232 673> @markclass_0;
 	markClass u1193B <anchor -405 673> @markclass_0;
@@ -437,6 +448,7 @@ lookup mark_to_abv_base {
 	position base u1190C <anchor 674 495> mark @markclass_3;
 	position base u1190C <anchor 534 551> mark @markclass_5;
 	position base u1190D <anchor 454 590> mark @markclass_0;
+	position base u1190D <anchor 372 494> mark @markclass_3;
 	position base u1190D <anchor 312 537> mark @markclass_5;
 	position base u1190E <anchor 144 714> mark @markclass_0;
 	position base u1190F <anchor 539 590> mark @markclass_0;
@@ -450,6 +462,7 @@ lookup mark_to_abv_base {
 	position base u11913 <anchor 516 590> mark @markclass_0;
 	position base u11913 <anchor 342 543> mark @markclass_5;
 	position base u11915 <anchor 446 590> mark @markclass_0;
+	position base u11915 <anchor 620 494> mark @markclass_3;
 	position base u11915 <anchor 350 543> mark @markclass_5;
 	position base u11916 <anchor 476 590> mark @markclass_0;
 	position base u11916 <anchor 270 543> mark @markclass_5;
@@ -462,6 +475,7 @@ lookup mark_to_abv_base {
 	position base u1191B <anchor 476 590> mark @markclass_0;
 	position base u1191B <anchor 310 543> mark @markclass_5;
 	position base u1191C <anchor 416 590> mark @markclass_0;
+	position base u1191C <anchor 300 492> mark @markclass_3;
 	position base u1191C <anchor 292 536> mark @markclass_5;
 	position base u1191D <anchor 296 590> mark @markclass_0;
 	position base u1191D <anchor 319 495> mark @markclass_3;
@@ -474,26 +488,34 @@ lookup mark_to_abv_base {
 	position base u11920 <anchor 566 590> mark @markclass_0;
 	position base u11920 <anchor 262 536> mark @markclass_5;
 	position base u11921 <anchor 606 590> mark @markclass_0;
+	position base u11921 <anchor 737 343> mark @markclass_3;
 	position base u11921 <anchor 252 536> mark @markclass_5;
 	position base u11922 <anchor 496 590> mark @markclass_0;
+	position base u11922 <anchor 547 437> mark @markclass_3;
 	position base u11922 <anchor 246 536> mark @markclass_5;
 	position base u11923 <anchor 596 590> mark @markclass_0;
+	position base u11923 <anchor 669 312> mark @markclass_3;
 	position base u11923 <anchor 242 536> mark @markclass_5;
 	position base u11924 <anchor 486 590> mark @markclass_0;
+	position base u11924 <anchor 325 493> mark @markclass_3;
 	position base u11924 <anchor 262 536> mark @markclass_5;
 	position base u11925 <anchor 436 590> mark @markclass_0;
 	position base u11925 <anchor 292 536> mark @markclass_5;
 	position base u11926 <anchor 436 590> mark @markclass_0;
 	position base u11926 <anchor 432 316> mark @markclass_5;
 	position base u11927 <anchor 250 590> mark @markclass_0;
+	position base u11927 <anchor 182 383> mark @markclass_3;
 	position base u11927 <anchor 182 467> mark @markclass_5;
 	position base u11928 <anchor 396 590> mark @markclass_0;
 	position base u11928 <anchor 228 390> mark @markclass_5;
 	position base u11929 <anchor 456 590> mark @markclass_0;
+	position base u11929 <anchor 336 485> mark @markclass_3;
 	position base u11929 <anchor 348 543> mark @markclass_5;
 	position base u1192A <anchor 556 590> mark @markclass_0;
+	position base u1192A <anchor 716 219> mark @markclass_3;
 	position base u1192A <anchor 292 543> mark @markclass_5;
 	position base u1192B <anchor 442 590> mark @markclass_0;
+	position base u1192B <anchor 663 503> mark @markclass_3;
 	position base u1192B <anchor 292 543> mark @markclass_5;
 	position base u1192C <anchor 466 590> mark @markclass_0;
 	position base u1192C <anchor 260 541> mark @markclass_5;
@@ -510,6 +532,7 @@ lookup mark_to_abv_base {
 	position base u11940 <anchor 354 495> mark @markclass_3;
 	position base u11940 <anchor 152 495> mark @markclass_5;
 	position base u11942 <anchor -58 653> mark @markclass_0;
+	position base u11942 <anchor -52 422> mark @markclass_3;
 	position base u11942 <anchor -52 467> mark @markclass_5;
 	position base ka_tha-divesakuru <anchor 835 590> mark @markclass_0;
 	position base ka_ssa-divesakuru <anchor 925 590> mark @markclass_0;
@@ -634,6 +657,7 @@ tag = abvm;
 },
 {
 code = "script diak;
+
 lookup mark_to_blw_base {
 	markClass u11943 <anchor -355 -38> @markclass_1;
 	position base u11900 <anchor 466 -202> mark @markclass_1;
@@ -755,43 +779,66 @@ tag = blwm;
 },
 {
 code = "script diak;
+
 lookup mark_to_base {
 	markClass u11930 <anchor -2 300> @markclass_2;
-	markClass u11933 <anchor 8 300> @markclass_2;
+	markClass u11933 <anchor 8 300> @markclass_7;
+	markClass u11934 <anchor 5 300> @markclass_7;
 	markClass u1193D <anchor -81 374> @markclass_4;
 	markClass u11940 <anchor -109 488> @markclass_6;
 	markClass halanta-divesakuru.00 <anchor -158 333> @markclass_4;
 	markClass halanta-divesakuru.01 <anchor -198 257> @markclass_4;
 	markClass halanta-divesakuru.02 <anchor -74 191> @markclass_4;
 	markClass halanta-divesakuru.03 <anchor -111 191> @markclass_4;
+	markClass uVowel-divesakuru.00 <anchor 8 300> @markclass_7;
+	markClass uuVowel-divesakuru.00 <anchor 5 300> @markclass_7;
 	position base u1190D <anchor 601 197> mark @markclass_4;
+	position base u1190D <anchor 670 120> mark @markclass_7;
 	position base u1190E <anchor 665 374> mark @markclass_4;
 	position base u1190F <anchor 724 320> mark @markclass_4;
+	position base u1190F <anchor 780 297> mark @markclass_7;
 	position base u11910 <anchor 447 274> mark @markclass_4;
+	position base u11910 <anchor 539 110> mark @markclass_7;
 	position base u11911 <anchor 732 380> mark @markclass_4;
+	position base u11911 <anchor 797 305> mark @markclass_7;
 	position base u11912 <anchor 1162 378> mark @markclass_4;
 	position base u11913 <anchor 559 -256> mark @markclass_4;
+	position base u11913 <anchor 708 202> mark @markclass_7;
+	position base u11916 <anchor 724 201> mark @markclass_7;
 	position base u11918 <anchor 728 333> mark @markclass_4;
+	position base u11918 <anchor 765 279> mark @markclass_7;
 	position base u11919 <anchor 712 333> mark @markclass_4;
+	position base u11919 <anchor 749 279> mark @markclass_7;
 	position base u1191A <anchor 738 380> mark @markclass_4;
+	position base u1191B <anchor 745 183> mark @markclass_7;
 	position base u1191C <anchor 509 256> mark @markclass_4;
+	position base u1191C <anchor 597 201> mark @markclass_7;
 	position base u1191D <anchor 385 383> mark @markclass_4;
 	position base u1191F <anchor 728 380> mark @markclass_4;
 	position base u1191F <anchor 718 489> mark @markclass_6;
 	position base u11920 <anchor 773 380> mark @markclass_4;
 	position base u11921 <anchor 762 382> mark @markclass_4;
+	position base u11922 <anchor 618 406> mark @markclass_7;
 	position base u11923 <anchor 699 356> mark @markclass_4;
+	position base u11923 <anchor 843 301> mark @markclass_7;
 	position base u11924 <anchor 658 300> mark @markclass_2;
 	position base u11924 <anchor 437 250> mark @markclass_4;
+	position base u11924 <anchor 622 201> mark @markclass_7;
+	position base u11925 <anchor 827 285> mark @markclass_7;
 	position base u11926 <anchor 714 350> mark @markclass_4;
 	position base u11927 <anchor 312 373> mark @markclass_4;
 	position base u11928 <anchor 585 372> mark @markclass_4;
+	position base u11928 <anchor 690 318> mark @markclass_7;
 	position base u11929 <anchor 437 257> mark @markclass_4;
+	position base u11929 <anchor 626 207> mark @markclass_7;
 	position base u1192A <anchor 688 267> mark @markclass_4;
+	position base u1192A <anchor 815 203> mark @markclass_7;
 	position base u1192B <anchor 724 206> mark @markclass_4;
+	position base u1192B <anchor 778 183> mark @markclass_7;
 	position base u1192D <anchor 783 379> mark @markclass_4;
 	position base u1192E <anchor 454 374> mark @markclass_4;
 	position base u1192F <anchor 714 333> mark @markclass_4;
+	position base u1192F <anchor 751 279> mark @markclass_7;
 	position base u11930 <anchor 254 304> mark @markclass_2;
 	position base u11940 <anchor 619 300> mark @markclass_2;
 	position base u11942 <anchor 199 300> mark @markclass_2;
@@ -824,6 +871,7 @@ tag = mark;
 },
 {
 code = "script diak;
+
 lookup stack_top {
 	lookupflag MarkAttachmentType @markclass_0;
 	position mark u11941 <anchor -220 960> mark @markclass_0;
@@ -1987,7 +2035,7 @@ unicode = 71948;
 },
 {
 glyphname = u1190D;
-lastChange = "2022-02-03 13:21:16 +0000";
+lastChange = "2022-02-07 15:33:09 +0000";
 layers = (
 {
 anchors = (
@@ -2000,12 +2048,20 @@ name = halant;
 pos = (601,197);
 },
 {
+name = right2;
+pos = (670,120);
+},
+{
 name = top;
 pos = (454,590);
 },
 {
 name = topleft;
 pos = (312,537);
+},
+{
+name = topright;
+pos = (372,494);
 }
 );
 guides = (
@@ -2166,7 +2222,7 @@ unicode = 71950;
 },
 {
 glyphname = u1190F;
-lastChange = "2022-02-03 13:22:04 +0000";
+lastChange = "2022-02-07 14:33:42 +0000";
 layers = (
 {
 anchors = (
@@ -2177,6 +2233,10 @@ pos = (488,-38);
 {
 name = halant;
 pos = (724,320);
+},
+{
+name = right2;
+pos = (780,297);
 },
 {
 name = top;
@@ -2285,7 +2345,7 @@ unicode = 71951;
 },
 {
 glyphname = u11910;
-lastChange = "2022-02-03 13:22:11 +0000";
+lastChange = "2022-02-07 14:34:26 +0000";
 layers = (
 {
 anchors = (
@@ -2296,6 +2356,10 @@ pos = (275,-38);
 {
 name = halant;
 pos = (447,374);
+},
+{
+name = right2;
+pos = (539,110);
 },
 {
 name = top;
@@ -2390,7 +2454,7 @@ unicode = 71952;
 },
 {
 glyphname = u11911;
-lastChange = "2022-02-03 13:22:33 +0000";
+lastChange = "2022-02-07 14:34:59 +0000";
 layers = (
 {
 anchors = (
@@ -2401,6 +2465,10 @@ pos = (514,-38);
 {
 name = halant;
 pos = (732,380);
+},
+{
+name = right2;
+pos = (797,305);
 },
 {
 name = top;
@@ -2624,7 +2692,7 @@ unicode = 71954;
 },
 {
 glyphname = u11913;
-lastChange = "2022-02-03 13:22:45 +0000";
+lastChange = "2022-02-07 14:35:15 +0000";
 layers = (
 {
 anchors = (
@@ -2635,6 +2703,10 @@ pos = (495,-38);
 {
 name = halant;
 pos = (559,256);
+},
+{
+name = right2;
+pos = (708,202);
 },
 {
 name = top;
@@ -2726,7 +2798,7 @@ unicode = 71955;
 },
 {
 glyphname = u11915;
-lastChange = "2022-02-03 13:23:15 +0000";
+lastChange = "2022-02-07 14:35:36 +0000";
 layers = (
 {
 anchors = (
@@ -2741,6 +2813,10 @@ pos = (446,590);
 {
 name = topleft;
 pos = (350,543);
+},
+{
+name = topright;
+pos = (620,494);
 }
 );
 layerId = UUID0;
@@ -2815,13 +2891,17 @@ unicode = 71957;
 },
 {
 glyphname = u11916;
-lastChange = "2022-02-03 13:23:22 +0000";
+lastChange = "2022-02-07 14:36:03 +0000";
 layers = (
 {
 anchors = (
 {
 name = bottom;
 pos = (455,-38);
+},
+{
+name = right2;
+pos = (724,201);
 },
 {
 name = top;
@@ -2901,7 +2981,7 @@ unicode = 71958;
 },
 {
 glyphname = u11918;
-lastChange = "2022-02-03 13:23:29 +0000";
+lastChange = "2022-02-07 14:36:18 +0000";
 layers = (
 {
 anchors = (
@@ -2912,6 +2992,10 @@ pos = (535,-38);
 {
 name = halant;
 pos = (728,333);
+},
+{
+name = right2;
+pos = (765,279);
 },
 {
 name = top;
@@ -3008,7 +3092,7 @@ unicode = 71960;
 },
 {
 glyphname = u11919;
-lastChange = "2022-02-03 13:23:37 +0000";
+lastChange = "2022-02-07 14:36:38 +0000";
 layers = (
 {
 anchors = (
@@ -3019,6 +3103,10 @@ pos = (535,-38);
 {
 name = halant;
 pos = (712,333);
+},
+{
+name = right2;
+pos = (749,279);
 },
 {
 name = top;
@@ -3240,13 +3328,17 @@ unicode = 71962;
 },
 {
 glyphname = u1191B;
-lastChange = "2022-02-03 14:43:13 +0000";
+lastChange = "2022-02-07 14:37:24 +0000";
 layers = (
 {
 anchors = (
 {
 name = bottom;
 pos = (455,-276);
+},
+{
+name = right2;
+pos = (745,183);
 },
 {
 name = top;
@@ -3322,7 +3414,7 @@ unicode = 71963;
 },
 {
 glyphname = u1191C;
-lastChange = "2022-02-03 14:44:11 +0000";
+lastChange = "2022-02-07 14:37:55 +0000";
 layers = (
 {
 anchors = (
@@ -3335,12 +3427,20 @@ name = halant;
 pos = (509,256);
 },
 {
+name = right2;
+pos = (597,201);
+},
+{
 name = top;
 pos = (416,590);
 },
 {
 name = topleft;
 pos = (292,536);
+},
+{
+name = topright;
+pos = (300,492);
 }
 );
 layerId = UUID0;
@@ -3831,7 +3931,7 @@ unicode = 71968;
 },
 {
 glyphname = u11921;
-lastChange = "2022-02-03 14:45:47 +0000";
+lastChange = "2022-02-07 13:33:11 +0000";
 layers = (
 {
 anchors = (
@@ -3850,6 +3950,10 @@ pos = (606,590);
 {
 name = topleft;
 pos = (252,536);
+},
+{
+name = topright;
+pos = (737,343);
 }
 );
 layerId = UUID0;
@@ -3961,7 +4065,7 @@ unicode = 71969;
 },
 {
 glyphname = u11922;
-lastChange = "2022-02-03 14:45:43 +0000";
+lastChange = "2022-02-07 14:38:24 +0000";
 layers = (
 {
 anchors = (
@@ -3970,12 +4074,20 @@ name = bottom;
 pos = (475,-38);
 },
 {
+name = right2;
+pos = (618,406);
+},
+{
 name = top;
 pos = (496,590);
 },
 {
 name = topleft;
 pos = (242,536);
+},
+{
+name = topright;
+pos = (547,437);
 }
 );
 layerId = UUID0;
@@ -4061,7 +4173,7 @@ unicode = 71970;
 },
 {
 glyphname = u11923;
-lastChange = "2022-02-03 18:11:05 +0000";
+lastChange = "2022-02-07 14:38:45 +0000";
 layers = (
 {
 anchors = (
@@ -4074,12 +4186,20 @@ name = halant;
 pos = (699,356);
 },
 {
+name = right2;
+pos = (843,301);
+},
+{
 name = top;
 pos = (596,590);
 },
 {
 name = topleft;
 pos = (242,537);
+},
+{
+name = topright;
+pos = (669,312);
 }
 );
 layerId = UUID0;
@@ -4183,7 +4303,7 @@ unicode = 71971;
 },
 {
 glyphname = u11924;
-lastChange = "2022-02-03 13:23:56 +0000";
+lastChange = "2022-02-07 14:39:05 +0000";
 layers = (
 {
 anchors = (
@@ -4200,12 +4320,20 @@ name = right;
 pos = (658,300);
 },
 {
+name = right2;
+pos = (622,201);
+},
+{
 name = top;
 pos = (486,590);
 },
 {
 name = topleft;
 pos = (262,537);
+},
+{
+name = topright;
+pos = (325,493);
 }
 );
 layerId = UUID0;
@@ -4302,13 +4430,17 @@ unicode = 71972;
 },
 {
 glyphname = u11925;
-lastChange = "2022-02-03 13:24:08 +0000";
+lastChange = "2022-02-07 14:40:12 +0000";
 layers = (
 {
 anchors = (
 {
 name = bottom;
 pos = (415,-38);
+},
+{
+name = right2;
+pos = (827,285);
 },
 {
 name = top;
@@ -4556,7 +4688,7 @@ unicode = 71974;
 },
 {
 glyphname = u11927;
-lastChange = "2022-02-03 13:25:55 +0000";
+lastChange = "2022-02-07 14:56:37 +0000";
 layers = (
 {
 anchors = (
@@ -4575,6 +4707,10 @@ pos = (250,590);
 {
 name = topleft;
 pos = (182,467);
+},
+{
+name = topright;
+pos = (185,383);
 }
 );
 layerId = UUID0;
@@ -4619,7 +4755,7 @@ unicode = 71975;
 {
 category = Mark;
 glyphname = u11942;
-lastChange = "2022-02-03 13:26:10 +0000";
+lastChange = "2022-02-07 13:13:40 +0000";
 layers = (
 {
 anchors = (
@@ -4638,6 +4774,10 @@ pos = (-58,653);
 {
 name = topleft;
 pos = (-52,467);
+},
+{
+name = topright;
+pos = (-52,422);
 }
 );
 layerId = UUID0;
@@ -4677,7 +4817,7 @@ unicode = 72002;
 },
 {
 glyphname = u11928;
-lastChange = "2022-02-03 13:26:26 +0000";
+lastChange = "2022-02-07 14:40:26 +0000";
 layers = (
 {
 anchors = (
@@ -4688,6 +4828,10 @@ pos = (375,-38);
 {
 name = halant;
 pos = (585,372);
+},
+{
+name = right2;
+pos = (690,318);
 },
 {
 name = top;
@@ -4768,7 +4912,7 @@ unicode = 71976;
 },
 {
 glyphname = u11929;
-lastChange = "2022-02-03 13:26:44 +0000";
+lastChange = "2022-02-07 14:40:46 +0000";
 layers = (
 {
 anchors = (
@@ -4781,12 +4925,20 @@ name = halant;
 pos = (437,257);
 },
 {
+name = right2;
+pos = (626,207);
+},
+{
 name = top;
 pos = (456,590);
 },
 {
 name = topleft;
 pos = (348,543);
+},
+{
+name = topright;
+pos = (336,485);
 }
 );
 layerId = UUID0;
@@ -4868,7 +5020,7 @@ unicode = 71977;
 },
 {
 glyphname = u1192A;
-lastChange = "2022-02-03 13:26:53 +0000";
+lastChange = "2022-02-07 14:40:58 +0000";
 layers = (
 {
 anchors = (
@@ -4881,12 +5033,20 @@ name = halant;
 pos = (688,267);
 },
 {
+name = right2;
+pos = (815,203);
+},
+{
 name = top;
 pos = (556,590);
 },
 {
 name = topleft;
 pos = (292,543);
+},
+{
+name = topright;
+pos = (716,219);
 }
 );
 layerId = UUID0;
@@ -5010,7 +5170,7 @@ unicode = 71978;
 },
 {
 glyphname = u1192B;
-lastChange = "2022-02-03 13:27:07 +0000";
+lastChange = "2022-02-07 14:41:09 +0000";
 layers = (
 {
 anchors = (
@@ -5023,12 +5183,20 @@ name = halant;
 pos = (724,206);
 },
 {
+name = right2;
+pos = (778,183);
+},
+{
 name = top;
 pos = (442,590);
 },
 {
 name = topleft;
 pos = (292,543);
+},
+{
+name = topright;
+pos = (663,503);
 }
 );
 layerId = UUID0;
@@ -5465,7 +5633,7 @@ unicode = 71982;
 },
 {
 glyphname = u1192F;
-lastChange = "2022-02-03 13:28:31 +0000";
+lastChange = "2022-02-07 14:41:20 +0000";
 layers = (
 {
 anchors = (
@@ -5476,6 +5644,10 @@ pos = (525,-38);
 {
 name = halant;
 pos = (714,333);
+},
+{
+name = right2;
+pos = (751,279);
 },
 {
 name = top;
@@ -16277,7 +16449,7 @@ unicode = 71984;
 {
 category = Mark;
 glyphname = u11931;
-lastChange = "2022-02-03 17:08:05 +0000";
+lastChange = "2022-02-07 13:12:44 +0000";
 layers = (
 {
 anchors = (
@@ -16336,7 +16508,7 @@ unicode = 71985;
 {
 category = Mark;
 glyphname = u11932;
-lastChange = "2022-02-03 17:06:27 +0000";
+lastChange = "2022-02-07 13:12:40 +0000";
 layers = (
 {
 anchors = (
@@ -16382,8 +16554,8 @@ nodes = (
 (50,713,cs),
 (-89,713,o),
 (-193,646,o),
-(-240,574,c),
-(-202,539,l),
+(-254,560,c),
+(-216,525,l),
 (-155,602,o),
 (-74,661,o),
 (52,661,cs),
@@ -16419,7 +16591,7 @@ unicode = 71986;
 {
 category = Mark;
 glyphname = u11933;
-lastChange = "2022-02-03 17:14:51 +0000";
+lastChange = "2022-02-07 14:33:37 +0000";
 layers = (
 {
 anchors = (
@@ -16452,8 +16624,8 @@ nodes = (
 (305,378,o),
 (273,407,o),
 (119,407,cs),
-(-51,407,l),
-(-51,350,l),
+(-71,407,l),
+(-61,350,l),
 (142,350,ls),
 (238,350,o),
 (245,323,o),
@@ -16484,21 +16656,25 @@ unicode = 71987;
 {
 category = Mark;
 glyphname = u11934;
-lastChange = "2022-02-03 17:14:57 +0000";
+lastChange = "2022-02-07 15:37:00 +0000";
 layers = (
 {
 anchors = (
 {
+name = _right2;
+pos = (5,300);
+},
+{
 name = bottom;
-pos = (322,-275);
+pos = (229,-275);
 },
 {
 name = top;
-pos = (264,540);
+pos = (171,540);
 },
 {
 name = topleft;
-pos = (213,367);
+pos = (120,367);
 }
 );
 layerId = UUID0;
@@ -16506,55 +16682,55 @@ shapes = (
 {
 closed = 1;
 nodes = (
-(424,-235,o),
-(465,-177,o),
-(465,-43,cs),
-(465,218,ls),
-(465,378,o),
-(433,407,o),
-(279,407,cs),
-(29,407,l),
-(29,350,l),
-(302,350,ls),
-(398,350,o),
-(405,323,o),
-(405,194,cs),
-(405,-28,ls),
-(405,-123,o),
-(400,-176,o),
-(339,-176,cs),
-(278,-176,o),
-(269,-123,o),
-(269,-28,cs),
-(269,225,l),
-(213,195,l),
-(213,-43,ls),
-(213,-177,o),
-(254,-235,o),
-(339,-235,cs)
+(331,-235,o),
+(372,-177,o),
+(372,-43,cs),
+(372,218,ls),
+(372,378,o),
+(340,407,o),
+(186,407,cs),
+(-74,407,l),
+(-64,350,l),
+(209,350,ls),
+(305,350,o),
+(312,323,o),
+(312,194,cs),
+(312,-28,ls),
+(312,-123,o),
+(307,-176,o),
+(246,-176,cs),
+(185,-176,o),
+(176,-123,o),
+(176,-28,cs),
+(176,225,l),
+(120,195,l),
+(120,-43,ls),
+(120,-177,o),
+(161,-235,o),
+(246,-235,cs)
 );
 },
 {
 closed = 1;
 nodes = (
-(109,-257,l),
-(80,-222,o),
-(37,-160,o),
-(37,-87,cs),
-(37,47,o),
-(140,137,o),
-(269,177,c),
-(269,226,l),
-(171,200,o),
-(-27,91,o),
-(-27,-83,cs),
-(-27,-164,o),
-(25,-234,o),
-(44,-257,c)
+(36,-257,l),
+(7,-222,o),
+(-26,-160,o),
+(-26,-87,cs),
+(-26,47,o),
+(47,137,o),
+(176,177,c),
+(176,226,l),
+(78,200,o),
+(-90,91,o),
+(-90,-83,cs),
+(-90,-164,o),
+(-48,-234,o),
+(-29,-257,c)
 );
 }
 );
-width = 555;
+width = 462;
 }
 );
 script = divesakuru;
@@ -17537,6 +17713,153 @@ width = 594;
 );
 note = uni25CC;
 unicode = 9676;
+},
+{
+category = Mark;
+glyphname = "uVowel-divesakuru.00";
+lastChange = "2022-02-07 15:29:24 +0000";
+layers = (
+{
+anchors = (
+{
+name = _right2;
+pos = (-92,300);
+},
+{
+name = bottom;
+pos = (182,-275);
+},
+{
+name = top;
+pos = (144,540);
+},
+{
+name = topleft;
+pos = (83,367);
+}
+);
+layerId = UUID0;
+shapes = (
+{
+closed = 1;
+nodes = (
+(264,-235,o),
+(305,-177,o),
+(305,-43,cs),
+(305,218,ls),
+(305,378,o),
+(273,407,o),
+(119,407,cs),
+(-171,407,l),
+(-161,350,l),
+(142,350,ls),
+(238,350,o),
+(245,323,o),
+(245,194,cs),
+(245,-28,ls),
+(245,-123,o),
+(240,-176,o),
+(179,-176,cs),
+(118,-176,o),
+(109,-123,o),
+(109,-28,cs),
+(109,225,l),
+(53,225,l),
+(53,-43,ls),
+(53,-177,o),
+(94,-235,o),
+(179,-235,cs)
+);
+}
+);
+width = 395;
+}
+);
+script = divesakuru;
+subCategory = Spacing;
+},
+{
+category = Mark;
+glyphname = "uuVowel-divesakuru.00";
+lastChange = "2022-02-07 15:42:30 +0000";
+layers = (
+{
+anchors = (
+{
+name = _right2;
+pos = (5,300);
+},
+{
+name = bottom;
+pos = (219,-275);
+},
+{
+name = top;
+pos = (161,540);
+},
+{
+name = topleft;
+pos = (110,367);
+}
+);
+layerId = UUID0;
+shapes = (
+{
+closed = 1;
+nodes = (
+(321,-375,o),
+(362,-317,o),
+(362,-183,cs),
+(362,218,ls),
+(362,378,o),
+(330,407,o),
+(176,407,cs),
+(-74,407,l),
+(-64,350,l),
+(199,350,ls),
+(295,350,o),
+(302,323,o),
+(302,194,cs),
+(302,-168,ls),
+(302,-263,o),
+(297,-316,o),
+(236,-316,cs),
+(175,-316,o),
+(166,-263,o),
+(166,-168,cs),
+(166,105,l),
+(110,75,l),
+(110,-183,ls),
+(110,-317,o),
+(151,-375,o),
+(236,-375,cs)
+);
+},
+{
+closed = 1;
+nodes = (
+(26,-397,l),
+(-3,-362,o),
+(-36,-300,o),
+(-36,-227,cs),
+(-36,-93,o),
+(37,7,o),
+(166,57,c),
+(166,106,l),
+(68,70,o),
+(-100,-49,o),
+(-100,-223,cs),
+(-100,-304,o),
+(-58,-374,o),
+(-39,-397,c)
+);
+}
+);
+width = 452;
+}
+);
+script = divesakuru;
+subCategory = Spacing;
 }
 );
 instances = (
