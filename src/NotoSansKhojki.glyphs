@@ -1,5 +1,22 @@
 {
-.appVersion = "1208";
+.appVersion = "3109";
+DisplayStrings = (
+"/kj_DDA/kj_CHA/kj_BA"
+);
+classes = (
+{
+code = "Anusvara Nukta Shadda u1123E I.alt I.alt2 I.alt3 I.alt4 Nukta.alt Anusvara.alt kj_vs_E.ns kj_vs_AI.ns E_Shadda.ns AI_Shadda.ns Nukta_Shadda.ns Nukta_E.ns Nukta_AI.ns Nukta_Shadda_E.ns Nukta_Shadda_AI.ns";
+name = abovemarks;
+},
+{
+code = "U.alt U.alt2 U.alt3 RA.alt kj_vs_U.ns Ra_U";
+name = U;
+},
+{
+code = "TRA YA.alt YA.alt2 kj_BA kj_BBA kj_BHA kj_CA kj_GA kj_GGA kj_GHA kj_JA kj_LA kj_MA kj_TA kj_VA kj_YA";
+name = consonants;
+}
+);
 copyright = "Copyright 2018 Google Inc. All Rights Reserved.";
 customParameters = (
 {
@@ -185,6 +202,36 @@ NullMark
 );
 },
 {
+name = unicodeRanges;
+value = (
+0,
+1,
+18,
+31,
+45,
+57
+);
+},
+{
+name = "Has WWS Names";
+value = 1;
+},
+{
+name = fsType;
+value = (
+);
+},
+{
+name = codePageRanges;
+value = (
+1252
+);
+},
+{
+name = "Don't use Production Names";
+value = 1;
+},
+{
 name = description;
 value = "Designed by Monotype design team.";
 },
@@ -201,42 +248,25 @@ name = vendorID;
 value = GOOG;
 },
 {
-name = unicodeRanges;
-value = (
-0,
-1,
-18,
-31,
-45,
-57
-);
-},
-{
 name = trademark;
 value = "Noto is a trademark of Google Inc.";
-},
-{
-name = "Has WWS Names";
-value = 1;
 },
 {
 name = versionString;
 value = "Version 2.001";
 },
 {
-name = fsType;
+name = Axes;
 value = (
-);
+{
+Name = Weight;
+Tag = wght;
 },
 {
-name = codePageRanges;
-value = (
-1252
+Name = Width;
+Tag = wdth;
+}
 );
-},
-{
-name = "Don't use Production Names";
-value = 1;
 }
 );
 date = "2018-08-30 17:09:44 +0000";
@@ -244,6 +274,62 @@ designer = "Monotype Design Team";
 designerURL = "http://www.monotype.com/studio";
 disablesNiceNames = 1;
 familyName = "Noto Sans Khojki";
+featurePrefixes = (
+{
+code = "lookup AltForms {\012    sub KSSA by KSSA.alt;\012    sub GNA by GNA.alt;\012    sub kj_KA by KA.alt;\012    sub kj_KHA by KHA.alt;\012    sub kj_THA by THA.alt;\012    sub kj_NA by NA.alt;\012    sub kj_PA by PA.alt;\012    sub kj_SA by SA.alt;\012    sub kj_HA by HA.alt;\012    sub kj_vs_I by I.alt;\012    sub kj_vs_II by II.alt;\012    sub kj_vs_U.ns by U.alt;\012} AltForms;\012\012lookup Alt2Forms {\012    sub YA.alt by YA.alt2;\012    sub kj_vs_I by I.alt2;\012    sub kj_vs_II by II.alt2;\012    sub kj_vs_U.ns by U.alt2;\012} Alt2Forms;\012\012lookup Alt3Forms {\012    sub YA.alt by YA.alt3;\012    sub kj_vs_I by I.alt3;\012    sub kj_vs_II by II.alt3;\012    sub kj_vs_U.ns by U.alt3;\012} Alt3Forms;\012\012lookup Alt4Forms {\012    sub kj_vs_I by I.alt4;\012    sub kj_vs_II by II.alt4;\012} Alt4Forms;\012\012lookup Alt5Forms {\012    sub kj_vs_II by II.alt5;\012} Alt5Forms;\012\012";
+name = "Alt Forms";
+},
+{
+code = "lookup NuktaShaddaLigatures {\012    lookupflag MarkAttachmentType @abovemarks;\012    sub Nukta Shadda kj_vs_AI.ns by Nukta_Shadda_AI.ns;\012    sub Nukta Shadda kj_vs_E.ns by Nukta_Shadda_E.ns;\012    sub Nukta Shadda by Nukta_Shadda.ns;\012    sub Nukta kj_vs_AI.ns by Nukta_AI.ns;\012    sub Nukta kj_vs_E.ns by Nukta_E.ns;\012    sub Shadda kj_vs_AI.ns by AI_Shadda.ns;\012    sub Shadda kj_vs_E.ns by E_Shadda.ns;\012} NuktaShaddaLigatures;\012";
+name = "Nukta and Shadda Ligatures";
+},
+{
+code = "lookup SingleSubstitution12 {\012    sub Shadda kj_vs_O by Shadda;\012    sub Shadda kj_vs_AU by Shadda;\012} SingleSubstitution12;\012\012lookup MultipleSubstitution13 {\012    sub Nukta by kj_vs_O Nukta;\012    sub Shadda by kj_vs_O Shadda;\012    sub Nukta.alt by kj_vs_O Nukta.alt;\012} MultipleSubstitution13;\012\012lookup MultipleSubstitution14 {\012    sub Nukta by kj_vs_AU Nukta;\012    sub Shadda by kj_vs_AU Shadda;\012    sub Nukta.alt by kj_vs_AU Nukta.alt;\012} MultipleSubstitution14;\012\012\012lookup SwapNuktaShadda {\012	sub Nukta by Shadda;\012	sub Shadda by Nukta;\012} SwapNuktaShadda;\012\012lookup SwapNuktaAltShadda {\012	sub Nukta.alt by Shadda;\012	sub Shadda by Nukta.alt;\012} SwapNuktaAltShadda;\012\012lookup SwapNuktaVsO {\012	sub Nukta by kj_vs_O;\012	sub kj_vs_O by Nukta;\012} SwapNuktaVsO;\012\012lookup SwapShaddaVsO {\012	sub Shadda by kj_vs_O;\012	sub kj_vs_O by Shadda;\012} SwapShaddaVsO;\012\012lookup SwapNuktaAltVsO {\012	sub Nukta.alt by kj_vs_O;\012	sub kj_vs_O by Nukta.alt;\012} SwapNuktaAltVsO;\012\012lookup SwapNuktaVsAU {\012	sub Nukta by kj_vs_AU;\012	sub kj_vs_AU by Nukta;\012} SwapNuktaVsAU;\012\012lookup SwapNuktaAltVsAU {\012	sub Nukta.alt by kj_vs_AU;\012	sub kj_vs_AU by Nukta.alt;\012} SwapNuktaAltVsAU;\012\012lookup SwapShaddaVsAU {\012	sub Shadda by kj_vs_AU;\012	sub kj_vs_AU by Shadda;\012} SwapShaddaVsAU;\012\012\012";
+name = Swaps;
+},
+{
+code = "lookup IncreaseSpaceBeforeAlt {\012    pos TRA 240;\012    pos DDDRA 40;\012    pos YA.alt 240;\012    pos YA.alt2 240;\012    pos YA.alt3 140;\012    pos kj_GA 240;\012    pos kj_GGA 250;\012    pos kj_GHA 240;\012    pos kj_CA 240;\012    pos kj_CHA 60;\012    pos kj_JA 240;\012    pos kj_JJA 140;\012    pos kj_NYA 140;\012    pos kj_TTA 40;\012    pos kj_TTHA 100;\012    pos kj_DDA 140;\012    pos kj_DDHA 70;\012    pos kj_NNA 140;\012    pos kj_TA 240;\012    pos kj_DDDA 20;\012    pos kj_DHA 140;\012    pos kj_BA 240;\012    pos kj_BBA 240;\012    pos kj_BHA 240;\012    pos kj_MA 240;\012    pos kj_YA 240;\012    pos kj_LA 240;\012    pos kj_VA 240;\012    pos THA.alt 100;\012    pos PA.alt 100;\012    pos KHA.alt 145;\012    pos NA.alt 145;\012    pos SA.alt 100;\012} IncreaseSpaceBeforeAlt;\012";
+name = "Space Before Alt";
+},
+{
+code = "languagesystem khoj dflt;\012languagesystem gujr dflt;\012";
+name = Languagesystems;
+}
+);
+features = (
+{
+code = "lookup Akhand {\012    lookupflag MarkAttachmentType @abovemarks;\012    sub kj_KA virama kj_SA Nukta by KSSA;\012} Akhand;\012\012lookup VowelConjuncts {\012    lookupflag MarkAttachmentType @U;\012    sub uni200D virama kj_YA by YA.alt;\012    sub kj_KA uni200D virama kj_RA by KRA;\012    sub kj_KA kj_vs_U.ns by KU;\012    sub kj_KHA kj_vs_U.ns by KHU;\012    sub kj_GA virama kj_NA by GNA;\012    sub kj_GA virama kj_RA by kj_GGA;\012    sub kj_GA kj_vs_U.ns by GU;\012    sub kj_GHA kj_vs_U.ns by GHU;\012    sub kj_NGA kj_vs_U.ns by NGU;\012    sub kj_CA kj_vs_U.ns by CU;\012    sub kj_CHA kj_vs_U.ns by CHU;\012    sub kj_JA kj_vs_U.ns by JU;\012    sub kj_JJA kj_vs_U.ns by JJU;\012    sub kj_NYA kj_vs_U.ns by NYU;\012    sub kj_DDA kj_vs_U.ns by DDU;\012    sub kj_DDHA kj_vs_U.ns by DDHU;\012    sub kj_NNA kj_vs_U.ns by NNU;\012    sub kj_TA virama kj_RA kj_vs_U.ns by TRU;\012    sub kj_TA virama kj_RA by TRA;\012    sub kj_TA kj_vs_U.ns by TU;\012    sub kj_THA kj_vs_U.ns by THU;\012    sub kj_DA kj_vs_U.ns by DU;\012    sub kj_DDDA virama kj_RA kj_vs_U.ns by DDDRU;\012    sub kj_DDDA virama kj_RA by DDDRA;\012    sub kj_DDDA kj_vs_U.ns by DDDU;\012    sub kj_NA kj_vs_U.ns by NU;\012    sub kj_PA kj_vs_U.ns by PU;\012    sub kj_PHA kj_vs_U.ns by PHU;\012    sub kj_BA kj_vs_U.ns by BU;\012    sub kj_BBA kj_vs_U.ns by BBU;\012    sub kj_BHA uni200D virama kj_RA by BHRA;\012    sub kj_BHA kj_vs_U.ns by BHU;\012    sub kj_MA uni200D virama kj_RA by MRA;\012    sub kj_MA kj_vs_U.ns by MU;\012    sub kj_YA kj_vs_U.ns by YU;\012    sub kj_RA kj_vs_U.ns by RU;\012    sub kj_LA kj_vs_U.ns by LU;\012    sub kj_VA kj_vs_U.ns by VU;\012    sub kj_SA uni200D virama kj_RA by SRA;\012    sub kj_SA kj_vs_U.ns by SU;\012    sub kj_HA kj_vs_U.ns by HU;\012    sub kj_LLA kj_vs_U.ns by LLU;\012    sub virama kj_RA by RA.alt;\012    sub virama kj_YA by YA.alt;\012} VowelConjuncts;\012\012lookup RaU {\012    lookupflag MarkAttachmentType @U;\012    sub RA.alt kj_vs_U.ns by Ra_U;\012} RaU;\012\012lookup NuktaAndShaddaReordering {\012    lookupflag MarkAttachmentType @abovemarks;\012    sub [Nukta Nukta.alt]' lookup NuktaShaddaLigatures Shadda' [kj_vs_E.ns kj_vs_AI.ns]';\012    sub [Nukta Nukta.alt]' lookup MultipleSubstitution13 Shadda' kj_vs_O' lookup SingleSubstitution12;\012    sub [Nukta Nukta.alt]' lookup MultipleSubstitution14 Shadda' kj_vs_AU' lookup SingleSubstitution12;\012\012    sub Nukta' lookup SwapNuktaShadda Shadda' lookup SwapNuktaShadda;\012    sub Nukta.alt' lookup SwapNuktaAltShadda Shadda' lookup SwapNuktaAltShadda;\012\012    sub [Nukta Nukta.alt]' lookup NuktaShaddaLigatures [kj_vs_E.ns kj_vs_AI.ns]';\012\012    sub Nukta' lookup SwapNuktaVsO kj_vs_O' lookup SwapNuktaVsO;\012    sub Nukta.alt' lookup SwapNuktaAltVsO kj_vs_O' lookup SwapNuktaAltVsO;\012\012    sub Nukta' lookup SwapNuktaVsAU kj_vs_AU' lookup SwapNuktaVsAU;\012    sub Nukta.alt' lookup SwapNuktaAltVsO kj_vs_AU' lookup SwapNuktaAltVsAU;\012\012    sub Shadda' lookup NuktaShaddaLigatures [kj_vs_E.ns kj_vs_AI.ns]';\012\012    sub Shadda' lookup SwapShaddaVsO kj_vs_O' lookup SwapShaddaVsO;\012    sub Shadda' lookup SwapShaddaVsAU kj_vs_AU' lookup SwapShaddaVsAU;\012} NuktaAndShaddaReordering;\012\012lookup IIConjuncts {\012    lookupflag IgnoreMarks;\012    sub DDDRA kj_vs_II by DDDRII;\012    sub kj_DDA kj_vs_II by DDII;\012    sub kj_DA kj_vs_I by DI;\012    sub kj_DA kj_vs_II by DII;\012    sub kj_DDDA kj_vs_II by DDDII;\012    sub kj_PHA kj_vs_I by PHI;\012    sub kj_PHA kj_vs_II by PHII;\012    sub kj_RA kj_vs_I by RI;\012    sub kj_RA kj_vs_II by RII;\012    sub kj_LLA kj_vs_II by LLII;\012} IIConjuncts;\012";
+name = ccmp;
+},
+{
+code = "lookupflag MarkAttachmentType @U;\012sub [BHRA MRA kj_DHA kj_GGA kj_JJA kj_KHA] kj_vs_U.ns' by U.alt;\012sub [kj_TTA kj_TTHA] kj_vs_U.ns' by U.alt2;\012sub [KSSA GNA] kj_vs_U.ns' by U.alt3;\012sub kj_NA YA.alt' by YA.alt2;\012sub [kj_JA kj_TA kj_LA]' YA.alt' by YA.alt3;\012sub [YA.alt YA.alt2] kj_vs_U.ns' by U.alt2;\012";
+name = blws;
+},
+{
+code = "lookupflag IgnoreMarks;\012sub @consonants' kj_vs_I' lookup AltForms;\012sub @consonants' kj_vs_II' lookup Alt2Forms;\012sub [YA.alt3 kj_CHA kj_DDA kj_DDHA kj_DHA kj_JJA kj_LLA kj_NNA]' kj_vs_I' lookup Alt2Forms;\012sub [YA.alt3 kj_CHA kj_DDA kj_DDHA kj_DHA kj_JJA kj_LLA kj_NNA]' kj_vs_II' lookup Alt2Forms;\012sub [kj_THA kj_PA kj_SA]' lookup AltForms kj_vs_I' lookup Alt3Forms;\012sub [kj_THA kj_PA kj_SA]' lookup AltForms kj_vs_II' lookup Alt5Forms;\012sub [kj_KHA kj_NA]' lookup AltForms kj_vs_I' lookup Alt4Forms;\012sub [kj_KHA kj_NA]' lookup AltForms kj_vs_II' lookup Alt4Forms;\012sub [DDDRA kj_TTA kj_TTHA kj_DDDA]' kj_vs_I' lookup Alt2Forms;\012sub [KSSA GNA kj_KA kj_HA]' lookup AltForms kj_vs_I';\012sub [KSSA GNA kj_KA kj_HA]' lookup AltForms kj_vs_II' lookup AltForms;\012sub [kj_NGA kj_NYA]' kj_vs_I' lookup Alt2Forms;\012sub [kj_NGA kj_NYA]' kj_vs_II' lookup Alt3Forms;\012";
+name = psts;
+},
+{
+code = "sub Anusvara by Anusvara.alt;\012sub Nukta by Nukta.alt;\012";
+name = salt;
+},
+{
+code = "# Automatic Code Start\012\012";
+name = kern;
+},
+{
+code = "# Automatic Code Start\012\012lookupflag MarkAttachmentType @abovemarks;\012pos @consonants' lookup IncreaseSpaceBeforeAlt I.alt;\012pos [YA.alt3 kj_CHA kj_DDA kj_DDHA kj_DHA kj_JJA kj_LLA kj_NNA\012 DDDRA kj_NYA]' lookup IncreaseSpaceBeforeAlt I.alt2;\012pos [THA.alt PA.alt SA.alt]' lookup IncreaseSpaceBeforeAlt I.alt3;\012pos [KHA.alt NA.alt]' lookup IncreaseSpaceBeforeAlt I.alt4;\012pos [kj_TTA kj_TTHA]' lookup IncreaseSpaceBeforeAlt I.alt2;\012pos [kj_TTA kj_TTHA]' [Anusvara.alt Nukta Nukta.alt Nukta_Shadda.ns Shadda u1123E]' <0 40 0 0> kj_vs_II';\012";
+name = dist;
+},
+{
+code = "# Automatic Code Start\012";
+name = mark;
+},
+{
+code = "# Automatic Code Start\012";
+name = mkmk;
+}
+);
 fontMaster = (
 {
 alignmentZones = (
@@ -347,7 +433,7 @@ nodes = (
 width = 600;
 }
 );
-note = .notdef;
+note = ".notdef";
 },
 {
 glyphname = NULL;
@@ -432,6 +518,24 @@ glyphname = uni25CC;
 lastChange = "2018-11-05 20:04:36 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor11;
+position = "{475, 620}";
+},
+{
+name = Anchor13;
+position = "{327, 0}";
+},
+{
+name = Anchor7;
+position = "{297, 620}";
+},
+{
+name = Anchor9;
+position = "{297, 640}";
+}
+);
 layerId = "0717401B-DDB5-4983-85F2-A81AFE530D5E";
 paths = (
 {
@@ -2037,6 +2141,16 @@ glyphname = Anusvara;
 lastChange = "2018-11-05 20:04:51 +0000";
 layers = (
 {
+anchors = (
+{
+name = _Anchor17;
+position = "{-180, 620}";
+},
+{
+name = _Anchor9;
+position = "{-180, 620}";
+}
+);
 layerId = "0717401B-DDB5-4983-85F2-A81AFE530D5E";
 paths = (
 {
@@ -2063,12 +2177,23 @@ width = 0;
 note = u11234;
 unicode = 11234;
 category = Mark;
+subCategory = Nonspacing;
 },
 {
 glyphname = Nukta;
 lastChange = "2018-11-05 20:04:51 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor19;
+position = "{-160, 940}";
+},
+{
+name = _Anchor7;
+position = "{-173, 620}";
+}
+);
 layerId = "0717401B-DDB5-4983-85F2-A81AFE530D5E";
 paths = (
 {
@@ -2129,12 +2254,19 @@ width = 0;
 note = u11236;
 unicode = 11236;
 category = Mark;
+subCategory = Nonspacing;
 },
 {
 glyphname = Shadda;
 lastChange = "2018-11-05 20:04:51 +0000";
 layers = (
 {
+anchors = (
+{
+name = _Anchor7;
+position = "{-220, 620}";
+}
+);
 layerId = "0717401B-DDB5-4983-85F2-A81AFE530D5E";
 paths = (
 {
@@ -2197,6 +2329,7 @@ width = 0;
 note = u11237;
 unicode = 11237;
 category = Mark;
+subCategory = Nonspacing;
 },
 {
 glyphname = u11238;
@@ -2501,6 +2634,16 @@ glyphname = u1123E;
 lastChange = "2018-11-05 20:04:51 +0000";
 layers = (
 {
+anchors = (
+{
+name = _Anchor19;
+position = "{-200, 620}";
+},
+{
+name = _Anchor7;
+position = "{-200, 620}";
+}
+);
 layerId = "0717401B-DDB5-4983-85F2-A81AFE530D5E";
 paths = (
 {
@@ -2551,12 +2694,19 @@ width = 0;
 note = u1123E;
 unicode = 1123E;
 category = Mark;
+subCategory = Nonspacing;
 },
 {
 glyphname = KA.alt;
 lastChange = "2018-11-05 20:04:34 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor7;
+position = "{440, 680}";
+}
+);
 layerId = "0717401B-DDB5-4983-85F2-A81AFE530D5E";
 paths = (
 {
@@ -2644,6 +2794,12 @@ glyphname = II.alt;
 lastChange = "2018-11-05 20:04:25 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor9;
+position = "{368, 720}";
+}
+);
 layerId = "0717401B-DDB5-4983-85F2-A81AFE530D5E";
 paths = (
 {
@@ -2715,6 +2871,16 @@ glyphname = KU;
 lastChange = "2018-11-05 20:04:34 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor7;
+position = "{373, 620}";
+},
+{
+name = Anchor9;
+position = "{681, 660}";
+}
+);
 layerId = "0717401B-DDB5-4983-85F2-A81AFE530D5E";
 paths = (
 {
@@ -2842,6 +3008,16 @@ glyphname = GHU;
 lastChange = "2018-11-05 20:04:34 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor7;
+position = "{361, 680}";
+},
+{
+name = Anchor9;
+position = "{697, 720}";
+}
+);
 layerId = "0717401B-DDB5-4983-85F2-A81AFE530D5E";
 paths = (
 {
@@ -2948,6 +3124,16 @@ glyphname = CU;
 lastChange = "2018-11-05 20:04:34 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor7;
+position = "{316, 620}";
+},
+{
+name = Anchor9;
+position = "{592, 660}";
+}
+);
 layerId = "0717401B-DDB5-4983-85F2-A81AFE530D5E";
 paths = (
 {
@@ -3038,6 +3224,16 @@ glyphname = II.alt2;
 lastChange = "2018-11-05 20:04:34 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor7;
+position = "{41, 620}";
+},
+{
+name = Anchor9;
+position = "{174, 720}";
+}
+);
 layerId = "0717401B-DDB5-4983-85F2-A81AFE530D5E";
 paths = (
 {
@@ -3103,6 +3299,16 @@ glyphname = I.alt;
 lastChange = "2018-11-05 20:04:48 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor17;
+position = "{140, 740}";
+},
+{
+name = _Anchor5;
+position = "{-139, 144}";
+}
+);
 layerId = "0717401B-DDB5-4983-85F2-A81AFE530D5E";
 paths = (
 {
@@ -3140,12 +3346,19 @@ width = 0;
 );
 note = I.alt;
 category = Mark;
+subCategory = Nonspacing;
 },
 {
 glyphname = U.alt;
 lastChange = "2018-11-05 20:04:56 +0000";
 layers = (
 {
+anchors = (
+{
+name = _Anchor15;
+position = "{0, 0}";
+}
+);
 layerId = "0717401B-DDB5-4983-85F2-A81AFE530D5E";
 paths = (
 {
@@ -3190,12 +3403,23 @@ width = 0;
 );
 note = U.alt;
 category = Mark;
+subCategory = Nonspacing;
 },
 {
 glyphname = GU;
 lastChange = "2018-11-05 20:04:34 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor7;
+position = "{365, 620}";
+},
+{
+name = Anchor9;
+position = "{643, 660}";
+}
+);
 layerId = "0717401B-DDB5-4983-85F2-A81AFE530D5E";
 paths = (
 {
@@ -3288,6 +3512,16 @@ glyphname = I.alt2;
 lastChange = "2018-11-05 20:04:48 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor17;
+position = "{20, 800}";
+},
+{
+name = _Anchor5;
+position = "{-160, 450}";
+}
+);
 layerId = "0717401B-DDB5-4983-85F2-A81AFE530D5E";
 paths = (
 {
@@ -3320,12 +3554,23 @@ width = 0;
 );
 note = I.alt2;
 category = Mark;
+subCategory = Nonspacing;
 },
 {
 glyphname = NGU;
 lastChange = "2018-11-05 20:04:34 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor7;
+position = "{377, 620}";
+},
+{
+name = Anchor9;
+position = "{612, 620}";
+}
+);
 layerId = "0717401B-DDB5-4983-85F2-A81AFE530D5E";
 paths = (
 {
@@ -3457,6 +3702,16 @@ glyphname = CHU;
 lastChange = "2018-11-05 20:04:34 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor7;
+position = "{382, 620}";
+},
+{
+name = Anchor9;
+position = "{681, 620}";
+}
+);
 layerId = "0717401B-DDB5-4983-85F2-A81AFE530D5E";
 paths = (
 {
@@ -3577,6 +3832,16 @@ glyphname = JU;
 lastChange = "2018-11-05 20:04:34 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor7;
+position = "{378, 620}";
+},
+{
+name = Anchor9;
+position = "{687, 660}";
+}
+);
 layerId = "0717401B-DDB5-4983-85F2-A81AFE530D5E";
 paths = (
 {
@@ -3692,6 +3957,12 @@ glyphname = U.alt2;
 lastChange = "2018-11-05 20:04:56 +0000";
 layers = (
 {
+anchors = (
+{
+name = _Anchor15;
+position = "{0, 0}";
+}
+);
 layerId = "0717401B-DDB5-4983-85F2-A81AFE530D5E";
 paths = (
 {
@@ -3744,12 +4015,23 @@ width = 0;
 );
 note = U.alt2;
 category = Mark;
+subCategory = Nonspacing;
 },
 {
 glyphname = DDU;
 lastChange = "2018-11-05 20:04:34 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor7;
+position = "{609, 620}";
+},
+{
+name = Anchor9;
+position = "{964, 565}";
+}
+);
 layerId = "0717401B-DDB5-4983-85F2-A81AFE530D5E";
 paths = (
 {
@@ -3890,6 +4172,16 @@ glyphname = DDHU;
 lastChange = "2018-11-05 20:04:34 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor7;
+position = "{385, 620}";
+},
+{
+name = Anchor9;
+position = "{690, 660}";
+}
+);
 layerId = "0717401B-DDB5-4983-85F2-A81AFE530D5E";
 paths = (
 {
@@ -3989,6 +4281,16 @@ glyphname = NNU;
 lastChange = "2018-11-05 20:04:34 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor7;
+position = "{521, 620}";
+},
+{
+name = Anchor9;
+position = "{807, 590}";
+}
+);
 layerId = "0717401B-DDB5-4983-85F2-A81AFE530D5E";
 paths = (
 {
@@ -4103,6 +4405,16 @@ glyphname = TU;
 lastChange = "2018-11-05 20:04:34 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor7;
+position = "{334, 620}";
+},
+{
+name = Anchor9;
+position = "{599, 660}";
+}
+);
 layerId = "0717401B-DDB5-4983-85F2-A81AFE530D5E";
 paths = (
 {
@@ -4180,6 +4492,16 @@ glyphname = THU;
 lastChange = "2018-11-05 20:04:34 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor7;
+position = "{400, 660}";
+},
+{
+name = Anchor9;
+position = "{720, 690}";
+}
+);
 layerId = "0717401B-DDB5-4983-85F2-A81AFE530D5E";
 paths = (
 {
@@ -4290,6 +4612,16 @@ glyphname = DI;
 lastChange = "2018-11-05 20:04:34 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor7;
+position = "{379, 620}";
+},
+{
+name = Anchor9;
+position = "{1010, 820}";
+}
+);
 layerId = "0717401B-DDB5-4983-85F2-A81AFE530D5E";
 paths = (
 {
@@ -4397,6 +4729,16 @@ glyphname = DII;
 lastChange = "2018-11-05 20:04:34 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor7;
+position = "{384, 620}";
+},
+{
+name = Anchor9;
+position = "{985, 651}";
+}
+);
 layerId = "0717401B-DDB5-4983-85F2-A81AFE530D5E";
 paths = (
 {
@@ -4527,6 +4869,16 @@ glyphname = DU;
 lastChange = "2018-11-05 20:04:34 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor7;
+position = "{445, 620}";
+},
+{
+name = Anchor9;
+position = "{698, 660}";
+}
+);
 layerId = "0717401B-DDB5-4983-85F2-A81AFE530D5E";
 paths = (
 {
@@ -4640,6 +4992,16 @@ glyphname = I.alt3;
 lastChange = "2018-11-05 20:04:48 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor17;
+position = "{-3, 820}";
+},
+{
+name = _Anchor5;
+position = "{-220, 355}";
+}
+);
 layerId = "0717401B-DDB5-4983-85F2-A81AFE530D5E";
 paths = (
 {
@@ -4674,12 +5036,23 @@ width = 0;
 }
 );
 category = Mark;
+subCategory = Nonspacing;
 },
 {
 glyphname = I.alt4;
 lastChange = "2018-11-05 20:04:48 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor17;
+position = "{28, 840}";
+},
+{
+name = _Anchor5;
+position = "{-161, 434}";
+}
+);
 layerId = "0717401B-DDB5-4983-85F2-A81AFE530D5E";
 paths = (
 {
@@ -4712,12 +5085,19 @@ width = 0;
 );
 note = I.alt3;
 category = Mark;
+subCategory = Nonspacing;
 },
 {
 glyphname = II.alt3;
 lastChange = "2018-11-05 20:04:25 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor9;
+position = "{169, 720}";
+}
+);
 layerId = "0717401B-DDB5-4983-85F2-A81AFE530D5E";
 paths = (
 {
@@ -4784,6 +5164,16 @@ glyphname = NU;
 lastChange = "2018-11-05 20:04:34 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor7;
+position = "{330, 620}";
+},
+{
+name = Anchor9;
+position = "{582, 660}";
+}
+);
 layerId = "0717401B-DDB5-4983-85F2-A81AFE530D5E";
 paths = (
 {
@@ -4881,6 +5271,16 @@ glyphname = PU;
 lastChange = "2018-11-05 20:04:34 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor7;
+position = "{262, 660}";
+},
+{
+name = Anchor9;
+position = "{474, 690}";
+}
+);
 layerId = "0717401B-DDB5-4983-85F2-A81AFE530D5E";
 paths = (
 {
@@ -4967,6 +5367,16 @@ glyphname = PHI;
 lastChange = "2018-11-05 20:04:34 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor7;
+position = "{360, 620}";
+},
+{
+name = Anchor9;
+position = "{1076, 820}";
+}
+);
 layerId = "0717401B-DDB5-4983-85F2-A81AFE530D5E";
 paths = (
 {
@@ -5090,6 +5500,16 @@ glyphname = PHII;
 lastChange = "2018-11-05 20:04:34 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor7;
+position = "{360, 620}";
+},
+{
+name = Anchor9;
+position = "{990, 720}";
+}
+);
 layerId = "0717401B-DDB5-4983-85F2-A81AFE530D5E";
 paths = (
 {
@@ -5237,6 +5657,16 @@ glyphname = PHU;
 lastChange = "2018-11-05 20:04:34 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor7;
+position = "{360, 620}";
+},
+{
+name = Anchor9;
+position = "{675, 620}";
+}
+);
 layerId = "0717401B-DDB5-4983-85F2-A81AFE530D5E";
 paths = (
 {
@@ -5360,6 +5790,16 @@ glyphname = BU;
 lastChange = "2018-11-05 20:04:34 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor7;
+position = "{581, 620}";
+},
+{
+name = Anchor9;
+position = "{872, 660}";
+}
+);
 layerId = "0717401B-DDB5-4983-85F2-A81AFE530D5E";
 paths = (
 {
@@ -5473,6 +5913,16 @@ glyphname = BBU;
 lastChange = "2018-11-05 20:04:34 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor7;
+position = "{317, 620}";
+},
+{
+name = Anchor9;
+position = "{591, 660}";
+}
+);
 layerId = "0717401B-DDB5-4983-85F2-A81AFE530D5E";
 paths = (
 {
@@ -5562,6 +6012,16 @@ glyphname = BHU;
 lastChange = "2018-11-05 20:04:34 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor7;
+position = "{380, 620}";
+},
+{
+name = Anchor9;
+position = "{674, 660}";
+}
+);
 layerId = "0717401B-DDB5-4983-85F2-A81AFE530D5E";
 paths = (
 {
@@ -5663,6 +6123,16 @@ glyphname = MU;
 lastChange = "2018-11-05 20:04:34 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor7;
+position = "{394, 620}";
+},
+{
+name = Anchor9;
+position = "{678, 660}";
+}
+);
 layerId = "0717401B-DDB5-4983-85F2-A81AFE530D5E";
 paths = (
 {
@@ -5759,6 +6229,16 @@ glyphname = YU;
 lastChange = "2018-11-05 20:04:34 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor7;
+position = "{540, 620}";
+},
+{
+name = Anchor9;
+position = "{1045, 660}";
+}
+);
 layerId = "0717401B-DDB5-4983-85F2-A81AFE530D5E";
 paths = (
 {
@@ -5878,6 +6358,16 @@ glyphname = RI;
 lastChange = "2018-11-05 20:04:34 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor7;
+position = "{390, 680}";
+},
+{
+name = Anchor9;
+position = "{922, 820}";
+}
+);
 layerId = "0717401B-DDB5-4983-85F2-A81AFE530D5E";
 paths = (
 {
@@ -5983,6 +6473,16 @@ glyphname = RII;
 lastChange = "2018-11-05 20:04:34 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor7;
+position = "{390, 680}";
+},
+{
+name = Anchor9;
+position = "{795, 720}";
+}
+);
 layerId = "0717401B-DDB5-4983-85F2-A81AFE530D5E";
 paths = (
 {
@@ -6114,6 +6614,16 @@ glyphname = RU;
 lastChange = "2018-11-05 20:04:34 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor7;
+position = "{417, 680}";
+},
+{
+name = Anchor9;
+position = "{550, 630}";
+}
+);
 layerId = "0717401B-DDB5-4983-85F2-A81AFE530D5E";
 paths = (
 {
@@ -6193,6 +6703,16 @@ glyphname = LU;
 lastChange = "2018-11-05 20:04:34 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor7;
+position = "{331, 620}";
+},
+{
+name = Anchor9;
+position = "{562, 660}";
+}
+);
 layerId = "0717401B-DDB5-4983-85F2-A81AFE530D5E";
 paths = (
 {
@@ -6280,6 +6800,16 @@ glyphname = VU;
 lastChange = "2018-11-05 20:04:34 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor7;
+position = "{292, 620}";
+},
+{
+name = Anchor9;
+position = "{524, 660}";
+}
+);
 layerId = "0717401B-DDB5-4983-85F2-A81AFE530D5E";
 paths = (
 {
@@ -6361,6 +6891,16 @@ glyphname = SU;
 lastChange = "2018-11-05 20:04:34 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor7;
+position = "{358, 680}";
+},
+{
+name = Anchor9;
+position = "{671, 690}";
+}
+);
 layerId = "0717401B-DDB5-4983-85F2-A81AFE530D5E";
 paths = (
 {
@@ -6486,6 +7026,12 @@ glyphname = HA.alt;
 lastChange = "2018-11-05 20:04:34 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor7;
+position = "{273, 720}";
+}
+);
 layerId = "0717401B-DDB5-4983-85F2-A81AFE530D5E";
 paths = (
 {
@@ -6563,6 +7109,16 @@ glyphname = HU;
 lastChange = "2018-11-05 20:04:34 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor7;
+position = "{360, 680}";
+},
+{
+name = Anchor9;
+position = "{550, 721}";
+}
+);
 layerId = "0717401B-DDB5-4983-85F2-A81AFE530D5E";
 paths = (
 {
@@ -6680,6 +7236,24 @@ glyphname = LLU;
 lastChange = "2018-11-05 20:04:34 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor13;
+position = "{431, 0}";
+},
+{
+name = Anchor5;
+position = "{580, 335}";
+},
+{
+name = Anchor7;
+position = "{422, 620}";
+},
+{
+name = Anchor9;
+position = "{655, 620}";
+}
+);
 layerId = "0717401B-DDB5-4983-85F2-A81AFE530D5E";
 paths = (
 {
@@ -6809,6 +7383,12 @@ glyphname = U.alt3;
 lastChange = "2018-11-05 20:04:56 +0000";
 layers = (
 {
+anchors = (
+{
+name = _Anchor15;
+position = "{0, 0}";
+}
+);
 layerId = "0717401B-DDB5-4983-85F2-A81AFE530D5E";
 paths = (
 {
@@ -6861,12 +7441,35 @@ width = 0;
 );
 note = U.alt3;
 category = Mark;
+subCategory = Nonspacing;
 },
 {
 glyphname = KSSA;
 lastChange = "2018-11-05 20:04:39 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor11;
+position = "{531, 680}";
+},
+{
+name = Anchor13;
+position = "{425, -80}";
+},
+{
+name = Anchor15;
+position = "{675, -40}";
+},
+{
+name = Anchor7;
+position = "{350, 720}";
+},
+{
+name = Anchor9;
+position = "{586, 720}";
+}
+);
 layerId = "0717401B-DDB5-4983-85F2-A81AFE530D5E";
 paths = (
 {
@@ -6998,6 +7601,12 @@ glyphname = KSSA.alt;
 lastChange = "2018-11-05 20:04:34 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor7;
+position = "{347, 720}";
+}
+);
 layerId = "0717401B-DDB5-4983-85F2-A81AFE530D5E";
 paths = (
 {
@@ -7101,6 +7710,28 @@ glyphname = GNA;
 lastChange = "2018-11-05 20:04:39 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor11;
+position = "{475, 680}";
+},
+{
+name = Anchor13;
+position = "{364, -50}";
+},
+{
+name = Anchor15;
+position = "{654, -40}";
+},
+{
+name = Anchor7;
+position = "{310, 720}";
+},
+{
+name = Anchor9;
+position = "{564, 720}";
+}
+);
 layerId = "0717401B-DDB5-4983-85F2-A81AFE530D5E";
 paths = (
 {
@@ -7223,6 +7854,24 @@ glyphname = TRA;
 lastChange = "2018-11-05 20:04:36 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor11;
+position = "{420, 620}";
+},
+{
+name = Anchor5;
+position = "{446, 214}";
+},
+{
+name = Anchor7;
+position = "{268, 620}";
+},
+{
+name = Anchor9;
+position = "{477, 660}";
+}
+);
 layerId = "0717401B-DDB5-4983-85F2-A81AFE530D5E";
 paths = (
 {
@@ -7299,6 +7948,16 @@ glyphname = TRU;
 lastChange = "2018-11-05 20:04:34 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor7;
+position = "{313, 620}";
+},
+{
+name = Anchor9;
+position = "{527, 660}";
+}
+);
 layerId = "0717401B-DDB5-4983-85F2-A81AFE530D5E";
 paths = (
 {
@@ -7379,6 +8038,24 @@ glyphname = DDDRA;
 lastChange = "2018-11-05 20:04:36 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor11;
+position = "{312, 620}";
+},
+{
+name = Anchor5;
+position = "{283, 473}";
+},
+{
+name = Anchor7;
+position = "{233, 620}";
+},
+{
+name = Anchor9;
+position = "{386, 660}";
+}
+);
 layerId = "0717401B-DDB5-4983-85F2-A81AFE530D5E";
 paths = (
 {
@@ -7486,6 +8163,16 @@ glyphname = DDDRU;
 lastChange = "2018-11-05 20:04:34 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor7;
+position = "{353, 620}";
+},
+{
+name = Anchor9;
+position = "{490, 660}";
+}
+);
 layerId = "0717401B-DDB5-4983-85F2-A81AFE530D5E";
 paths = (
 {
@@ -7612,6 +8299,16 @@ glyphname = DDDU;
 lastChange = "2018-11-05 20:04:34 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor7;
+position = "{302, 680}";
+},
+{
+name = Anchor9;
+position = "{505, 720}";
+}
+);
 layerId = "0717401B-DDB5-4983-85F2-A81AFE530D5E";
 paths = (
 {
@@ -7722,6 +8419,16 @@ glyphname = NYU;
 lastChange = "2018-11-05 20:04:34 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor7;
+position = "{354, 620}";
+},
+{
+name = Anchor9;
+position = "{586, 620}";
+}
+);
 layerId = "0717401B-DDB5-4983-85F2-A81AFE530D5E";
 paths = (
 {
@@ -7861,6 +8568,12 @@ glyphname = GNA.alt;
 lastChange = "2018-11-05 20:04:34 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor7;
+position = "{312, 720}";
+}
+);
 layerId = "0717401B-DDB5-4983-85F2-A81AFE530D5E";
 paths = (
 {
@@ -7953,6 +8666,12 @@ glyphname = RA.alt;
 lastChange = "2018-11-05 20:04:45 +0000";
 layers = (
 {
+anchors = (
+{
+name = _Anchor13;
+position = "{-100, 0}";
+}
+);
 layerId = "0717401B-DDB5-4983-85F2-A81AFE530D5E";
 paths = (
 {
@@ -7986,12 +8705,39 @@ width = 0;
 );
 note = RA.alt;
 category = Mark;
+subCategory = Nonspacing;
 },
 {
 glyphname = YA.alt;
 lastChange = "2018-11-05 20:04:39 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor11;
+position = "{380, 620}";
+},
+{
+name = Anchor13;
+position = "{197, 0}";
+},
+{
+name = Anchor15;
+position = "{523, 0}";
+},
+{
+name = Anchor5;
+position = "{391, 214}";
+},
+{
+name = Anchor7;
+position = "{213, 620}";
+},
+{
+name = Anchor9;
+position = "{431, 660}";
+}
+);
 layerId = "0717401B-DDB5-4983-85F2-A81AFE530D5E";
 paths = (
 {
@@ -8075,6 +8821,32 @@ glyphname = YA.alt2;
 lastChange = "2018-11-05 20:04:39 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor11;
+position = "{357, 620}";
+},
+{
+name = Anchor13;
+position = "{174, 0}";
+},
+{
+name = Anchor15;
+position = "{500, 0}";
+},
+{
+name = Anchor5;
+position = "{368, 214}";
+},
+{
+name = Anchor7;
+position = "{171, 620}";
+},
+{
+name = Anchor9;
+position = "{408, 660}";
+}
+);
 layerId = "0717401B-DDB5-4983-85F2-A81AFE530D5E";
 paths = (
 {
@@ -8165,6 +8937,32 @@ glyphname = YA.alt3;
 lastChange = "2018-11-05 20:04:39 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor11;
+position = "{378, 620}";
+},
+{
+name = Anchor13;
+position = "{17, 0}";
+},
+{
+name = Anchor15;
+position = "{251, 0}";
+},
+{
+name = Anchor5;
+position = "{391, 404}";
+},
+{
+name = Anchor7;
+position = "{268, 620}";
+},
+{
+name = Anchor9;
+position = "{421, 660}";
+}
+);
 layerId = "0717401B-DDB5-4983-85F2-A81AFE530D5E";
 paths = (
 {
@@ -8218,6 +9016,16 @@ glyphname = Nukta.alt;
 lastChange = "2018-11-05 20:04:51 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor19;
+position = "{-160, 940}";
+},
+{
+name = _Anchor7;
+position = "{-170, 620}";
+}
+);
 layerId = "0717401B-DDB5-4983-85F2-A81AFE530D5E";
 paths = (
 {
@@ -8277,12 +9085,19 @@ width = 0;
 );
 note = Nukta.alt;
 category = Mark;
+subCategory = Nonspacing;
 },
 {
 glyphname = Anusvara.alt;
 lastChange = "2018-11-05 20:04:51 +0000";
 layers = (
 {
+anchors = (
+{
+name = _Anchor7;
+position = "{-207, 620}";
+}
+);
 layerId = "0717401B-DDB5-4983-85F2-A81AFE530D5E";
 paths = (
 {
@@ -8325,12 +9140,27 @@ width = 0;
 );
 note = Anusvara.alt;
 category = Mark;
+subCategory = Nonspacing;
 },
 {
 glyphname = kj_A;
-lastChange = "2018-11-05 20:04:36 +0000";
+lastChange = "2022-02-01 16:33:04 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor11;
+position = "{796, 620}";
+},
+{
+name = Anchor7;
+position = "{550, 620}";
+},
+{
+name = Anchor9;
+position = "{829, 620}";
+}
+);
 layerId = "0717401B-DDB5-4983-85F2-A81AFE530D5E";
 paths = (
 {
@@ -8412,12 +9242,27 @@ width = 918;
 note = kj_A;
 unicode = 11200;
 category = Letter;
+subCategory = Spacing;
 },
 {
 glyphname = kj_AA;
-lastChange = "2018-11-05 20:04:36 +0000";
+lastChange = "2022-02-01 16:33:04 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor11;
+position = "{942, 620}";
+},
+{
+name = Anchor7;
+position = "{550, 620}";
+},
+{
+name = Anchor9;
+position = "{978, 660}";
+}
+);
 layerId = "0717401B-DDB5-4983-85F2-A81AFE530D5E";
 paths = (
 {
@@ -8530,12 +9375,23 @@ note = kj_AA;
 rightMetricsKey = kj_vs_AA;
 unicode = 11201;
 category = Letter;
+subCategory = Spacing;
 },
 {
 glyphname = kj_I;
-lastChange = "2018-11-05 20:04:34 +0000";
+lastChange = "2022-02-01 16:33:04 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor7;
+position = "{268, 720}";
+},
+{
+name = Anchor9;
+position = "{687, 820}";
+}
+);
 layerId = "0717401B-DDB5-4983-85F2-A81AFE530D5E";
 paths = (
 {
@@ -8670,12 +9526,23 @@ width = 755;
 note = kj_I;
 unicode = 11202;
 category = Letter;
+subCategory = Spacing;
 },
 {
 glyphname = kj_U;
-lastChange = "2018-11-05 20:04:34 +0000";
+lastChange = "2022-02-01 16:33:04 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor7;
+position = "{328, 680}";
+},
+{
+name = Anchor9;
+position = "{544, 720}";
+}
+);
 layerId = "0717401B-DDB5-4983-85F2-A81AFE530D5E";
 paths = (
 {
@@ -8759,12 +9626,23 @@ width = 658;
 note = kj_U;
 unicode = 11203;
 category = Letter;
+subCategory = Spacing;
 },
 {
 glyphname = kj_E;
-lastChange = "2018-11-05 20:04:36 +0000";
+lastChange = "2022-02-01 16:33:04 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor11;
+position = "{467, 670}";
+},
+{
+name = Anchor7;
+position = "{301, 720}";
+}
+);
 layerId = "0717401B-DDB5-4983-85F2-A81AFE530D5E";
 paths = (
 {
@@ -8862,12 +9740,19 @@ note = kj_E;
 rightMetricsKey = kj_vs_I;
 unicode = 11204;
 category = Letter;
+subCategory = Spacing;
 },
 {
 glyphname = kj_AI;
-lastChange = "2018-11-05 20:04:25 +0000";
+lastChange = "2022-02-01 16:33:04 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor9;
+position = "{830, 891}";
+}
+);
 components = (
 {
 name = kj_vs_AI.ns;
@@ -8884,12 +9769,23 @@ width = 918;
 note = kj_AI;
 unicode = 11205;
 category = Letter;
+subCategory = Spacing;
 },
 {
 glyphname = kj_O;
-lastChange = "2018-11-05 20:04:36 +0000";
+lastChange = "2022-02-01 16:33:04 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor11;
+position = "{439, 670}";
+},
+{
+name = Anchor7;
+position = "{282, 770}";
+}
+);
 layerId = "0717401B-DDB5-4983-85F2-A81AFE530D5E";
 paths = (
 {
@@ -8944,12 +9840,19 @@ width = 532;
 note = kj_O;
 unicode = 11206;
 category = Letter;
+subCategory = Spacing;
 },
 {
 glyphname = kj_AU;
-lastChange = "2018-11-05 20:04:25 +0000";
+lastChange = "2022-02-01 16:33:04 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor9;
+position = "{1080, 883}";
+}
+);
 components = (
 {
 alignment = -1;
@@ -8968,12 +9871,31 @@ width = 1128;
 note = kj_AU;
 unicode = 11207;
 category = Letter;
+subCategory = Spacing;
 },
 {
 glyphname = kj_KA;
-lastChange = "2018-11-05 20:04:36 +0000";
+lastChange = "2022-02-01 16:33:04 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor11;
+position = "{563, 620}";
+},
+{
+name = Anchor13;
+position = "{420, 0}";
+},
+{
+name = Anchor7;
+position = "{430, 620}";
+},
+{
+name = Anchor9;
+position = "{678, 660}";
+}
+);
 layerId = "0717401B-DDB5-4983-85F2-A81AFE530D5E";
 paths = (
 {
@@ -9087,12 +10009,39 @@ width = 773;
 note = kj_KA;
 unicode = 11208;
 category = Letter;
+subCategory = Spacing;
 },
 {
 glyphname = kj_KHA;
-lastChange = "2018-11-05 20:04:39 +0000";
+lastChange = "2022-02-01 16:33:04 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor11;
+position = "{563, 620}";
+},
+{
+name = Anchor13;
+position = "{358, 60}";
+},
+{
+name = Anchor15;
+position = "{663, 0}";
+},
+{
+name = Anchor5;
+position = "{533, 429}";
+},
+{
+name = Anchor7;
+position = "{335, 640}";
+},
+{
+name = Anchor9;
+position = "{587, 660}";
+}
+);
 layerId = "0717401B-DDB5-4983-85F2-A81AFE530D5E";
 paths = (
 {
@@ -9177,12 +10126,35 @@ leftMetricsKey = kj_SA;
 note = kj_KHA;
 unicode = 11209;
 category = Letter;
+subCategory = Spacing;
 },
 {
 glyphname = kj_GA;
-lastChange = "2018-11-05 20:04:36 +0000";
+lastChange = "2022-02-01 16:33:04 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor11;
+position = "{582, 620}";
+},
+{
+name = Anchor13;
+position = "{373, 0}";
+},
+{
+name = Anchor5;
+position = "{600, 214}";
+},
+{
+name = Anchor7;
+position = "{344, 620}";
+},
+{
+name = Anchor9;
+position = "{639, 660}";
+}
+);
 layerId = "0717401B-DDB5-4983-85F2-A81AFE530D5E";
 paths = (
 {
@@ -9262,12 +10234,35 @@ width = 729;
 note = kj_GA;
 unicode = 1120A;
 category = Letter;
+subCategory = Spacing;
 },
 {
 glyphname = kj_GGA;
-lastChange = "2018-11-05 20:04:39 +0000";
+lastChange = "2022-02-01 16:33:04 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor11;
+position = "{520, 680}";
+},
+{
+name = Anchor15;
+position = "{744, 0}";
+},
+{
+name = Anchor5;
+position = "{627, 214}";
+},
+{
+name = Anchor7;
+position = "{362, 720}";
+},
+{
+name = Anchor9;
+position = "{654, 720}";
+}
+);
 layerId = "0717401B-DDB5-4983-85F2-A81AFE530D5E";
 paths = (
 {
@@ -9376,12 +10371,35 @@ note = kj_GGA;
 rightMetricsKey = kj_AA;
 unicode = 1120B;
 category = Letter;
+subCategory = Spacing;
 },
 {
 glyphname = kj_GHA;
-lastChange = "2018-11-05 20:04:36 +0000";
+lastChange = "2022-02-01 16:33:04 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor11;
+position = "{682, 620}";
+},
+{
+name = Anchor13;
+position = "{450, 0}";
+},
+{
+name = Anchor5;
+position = "{698, 214}";
+},
+{
+name = Anchor7;
+position = "{441, 720}";
+},
+{
+name = Anchor9;
+position = "{726, 660}";
+}
+);
 layerId = "0717401B-DDB5-4983-85F2-A81AFE530D5E";
 paths = (
 {
@@ -9480,12 +10498,35 @@ note = kj_GHA;
 rightMetricsKey = kj_vs_AA;
 unicode = 1120C;
 category = Letter;
+subCategory = Spacing;
 },
 {
 glyphname = kj_NGA;
-lastChange = "2018-11-05 20:04:36 +0000";
+lastChange = "2022-02-01 16:33:04 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor11;
+position = "{579, 620}";
+},
+{
+name = Anchor13;
+position = "{440, 0}";
+},
+{
+name = Anchor5;
+position = "{602, 470}";
+},
+{
+name = Anchor7;
+position = "{422, 620}";
+},
+{
+name = Anchor9;
+position = "{612, 620}";
+}
+);
 components = (
 {
 name = uni0AE9;
@@ -9536,12 +10577,35 @@ note = kj_NGA;
 rightMetricsKey = u1123A;
 unicode = 1120D;
 category = Letter;
+subCategory = Spacing;
 },
 {
 glyphname = kj_CA;
-lastChange = "2018-11-05 20:04:36 +0000";
+lastChange = "2022-02-01 16:33:04 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor11;
+position = "{521, 620}";
+},
+{
+name = Anchor13;
+position = "{368, 0}";
+},
+{
+name = Anchor5;
+position = "{547, 214}";
+},
+{
+name = Anchor7;
+position = "{334, 620}";
+},
+{
+name = Anchor9;
+position = "{578, 660}";
+}
+);
 layerId = "0717401B-DDB5-4983-85F2-A81AFE530D5E";
 paths = (
 {
@@ -9620,12 +10684,35 @@ note = kj_CA;
 rightMetricsKey = kj_AA;
 unicode = 1120E;
 category = Letter;
+subCategory = Spacing;
 },
 {
 glyphname = kj_CHA;
-lastChange = "2018-11-05 20:04:36 +0000";
+lastChange = "2022-02-01 16:33:04 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor11;
+position = "{641, 620}";
+},
+{
+name = Anchor13;
+position = "{434, 0}";
+},
+{
+name = Anchor5;
+position = "{636, 404}";
+},
+{
+name = Anchor7;
+position = "{392, 620}";
+},
+{
+name = Anchor9;
+position = "{699, 610}";
+}
+);
 layerId = "0717401B-DDB5-4983-85F2-A81AFE530D5E";
 paths = (
 {
@@ -9707,12 +10794,35 @@ leftMetricsKey = kj_JJA;
 note = kj_CHA;
 unicode = 1120F;
 category = Letter;
+subCategory = Spacing;
 },
 {
 glyphname = kj_JA;
-lastChange = "2018-11-05 20:04:36 +0000";
+lastChange = "2022-02-01 16:33:04 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor11;
+position = "{617, 620}";
+},
+{
+name = Anchor13;
+position = "{460, 0}";
+},
+{
+name = Anchor5;
+position = "{633, 214}";
+},
+{
+name = Anchor7;
+position = "{378, 620}";
+},
+{
+name = Anchor9;
+position = "{671, 660}";
+}
+);
 layerId = "0717401B-DDB5-4983-85F2-A81AFE530D5E";
 paths = (
 {
@@ -9815,12 +10925,39 @@ width = 761;
 note = kj_JA;
 unicode = 11210;
 category = Letter;
+subCategory = Spacing;
 },
 {
 glyphname = kj_JJA;
-lastChange = "2018-11-05 20:04:39 +0000";
+lastChange = "2022-02-01 16:33:04 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor11;
+position = "{696, 620}";
+},
+{
+name = Anchor13;
+position = "{474, 0}";
+},
+{
+name = Anchor15;
+position = "{828, 0}";
+},
+{
+name = Anchor5;
+position = "{707, 318}";
+},
+{
+name = Anchor7;
+position = "{473, 640}";
+},
+{
+name = Anchor9;
+position = "{748, 600}";
+}
+);
 layerId = "0717401B-DDB5-4983-85F2-A81AFE530D5E";
 paths = (
 {
@@ -9919,12 +11056,35 @@ note = kj_JJA;
 rightMetricsKey = kj_DHA;
 unicode = 11211;
 category = Letter;
+subCategory = Spacing;
 },
 {
 glyphname = kj_NYA;
-lastChange = "2018-11-05 20:04:36 +0000";
+lastChange = "2022-02-01 16:33:04 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor11;
+position = "{553, 620}";
+},
+{
+name = Anchor13;
+position = "{560, 0}";
+},
+{
+name = Anchor5;
+position = "{576, 470}";
+},
+{
+name = Anchor7;
+position = "{401, 620}";
+},
+{
+name = Anchor9;
+position = "{586, 620}";
+}
+);
 components = (
 {
 name = uni0AE8;
@@ -9975,12 +11135,39 @@ note = kj_NYA;
 rightMetricsKey = u1123A;
 unicode = 11213;
 category = Letter;
+subCategory = Spacing;
 },
 {
 glyphname = kj_TTA;
-lastChange = "2018-11-05 20:04:39 +0000";
+lastChange = "2022-02-01 16:33:04 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor11;
+position = "{376, 660}";
+},
+{
+name = Anchor13;
+position = "{384, 0}";
+},
+{
+name = Anchor15;
+position = "{551, 108}";
+},
+{
+name = Anchor5;
+position = "{298, 554}";
+},
+{
+name = Anchor7;
+position = "{274, 720}";
+},
+{
+name = Anchor9;
+position = "{435, 720}";
+}
+);
 layerId = "0717401B-DDB5-4983-85F2-A81AFE530D5E";
 paths = (
 {
@@ -10054,12 +11241,39 @@ width = 519;
 note = kj_TTA;
 unicode = 11214;
 category = Letter;
+subCategory = Spacing;
 },
 {
 glyphname = kj_TTHA;
-lastChange = "2018-11-05 20:04:39 +0000";
+lastChange = "2022-02-01 16:33:04 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor11;
+position = "{391, 660}";
+},
+{
+name = Anchor13;
+position = "{347, 0}";
+},
+{
+name = Anchor15;
+position = "{496, 105}";
+},
+{
+name = Anchor5;
+position = "{332, 560}";
+},
+{
+name = Anchor7;
+position = "{261, 720}";
+},
+{
+name = Anchor9;
+position = "{410, 720}";
+}
+);
 layerId = "0717401B-DDB5-4983-85F2-A81AFE530D5E";
 paths = (
 {
@@ -10120,12 +11334,35 @@ width = 500;
 note = kj_TTHA;
 unicode = 11215;
 category = Letter;
+subCategory = Spacing;
 },
 {
 glyphname = kj_DDA;
-lastChange = "2018-11-05 20:04:36 +0000";
+lastChange = "2022-02-01 16:33:04 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor11;
+position = "{916, 620}";
+},
+{
+name = Anchor13;
+position = "{660, 0}";
+},
+{
+name = Anchor5;
+position = "{925, 318}";
+},
+{
+name = Anchor7;
+position = "{609, 620}";
+},
+{
+name = Anchor9;
+position = "{968, 590}";
+}
+);
 layerId = "0717401B-DDB5-4983-85F2-A81AFE530D5E";
 paths = (
 {
@@ -10261,12 +11498,35 @@ note = kj_DDA;
 rightMetricsKey = kj_DHA;
 unicode = 11216;
 category = Letter;
+subCategory = Spacing;
 },
 {
 glyphname = kj_DDHA;
-lastChange = "2018-11-05 20:04:36 +0000";
+lastChange = "2022-02-01 16:33:04 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor11;
+position = "{634, 620}";
+},
+{
+name = Anchor13;
+position = "{416, 60}";
+},
+{
+name = Anchor5;
+position = "{639, 404}";
+},
+{
+name = Anchor7;
+position = "{384, 620}";
+},
+{
+name = Anchor9;
+position = "{680, 660}";
+}
+);
 layerId = "0717401B-DDB5-4983-85F2-A81AFE530D5E";
 paths = (
 {
@@ -10337,12 +11597,35 @@ leftMetricsKey = kj_CHA;
 note = kj_DDHA;
 unicode = 11217;
 category = Letter;
+subCategory = Spacing;
 },
 {
 glyphname = kj_NNA;
-lastChange = "2018-11-05 20:04:36 +0000";
+lastChange = "2022-02-01 16:33:04 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor11;
+position = "{756, 620}";
+},
+{
+name = Anchor13;
+position = "{540, 0}";
+},
+{
+name = Anchor5;
+position = "{764, 318}";
+},
+{
+name = Anchor7;
+position = "{521, 620}";
+},
+{
+name = Anchor9;
+position = "{808, 590}";
+}
+);
 layerId = "0717401B-DDB5-4983-85F2-A81AFE530D5E";
 paths = (
 {
@@ -10452,12 +11735,35 @@ note = kj_NNA;
 rightMetricsKey = kj_DHA;
 unicode = 11218;
 category = Letter;
+subCategory = Spacing;
 },
 {
 glyphname = kj_TA;
-lastChange = "2018-11-05 20:04:36 +0000";
+lastChange = "2022-02-01 16:33:04 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor11;
+position = "{537, 620}";
+},
+{
+name = Anchor13;
+position = "{460, 0}";
+},
+{
+name = Anchor5;
+position = "{554, 214}";
+},
+{
+name = Anchor7;
+position = "{408, 640}";
+},
+{
+name = Anchor9;
+position = "{592, 660}";
+}
+);
 layerId = "0717401B-DDB5-4983-85F2-A81AFE530D5E";
 paths = (
 {
@@ -10525,12 +11831,35 @@ note = kj_TA;
 rightMetricsKey = kj_vs_AA;
 unicode = 11219;
 category = Letter;
+subCategory = Spacing;
 },
 {
 glyphname = kj_THA;
-lastChange = "2018-11-05 20:04:36 +0000";
+lastChange = "2022-02-01 16:33:04 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor11;
+position = "{663, 620}";
+},
+{
+name = Anchor13;
+position = "{540, 0}";
+},
+{
+name = Anchor5;
+position = "{607, 214}";
+},
+{
+name = Anchor7;
+position = "{388, 640}";
+},
+{
+name = Anchor9;
+position = "{748, 680}";
+}
+);
 layerId = "0717401B-DDB5-4983-85F2-A81AFE530D5E";
 paths = (
 {
@@ -10638,12 +11967,31 @@ note = kj_THA;
 rightMetricsKey = kj_PA;
 unicode = 1121A;
 category = Letter;
+subCategory = Spacing;
 },
 {
 glyphname = kj_DA;
-lastChange = "2018-11-05 20:04:36 +0000";
+lastChange = "2022-02-01 16:33:04 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor11;
+position = "{529, 620}";
+},
+{
+name = Anchor13;
+position = "{380, 0}";
+},
+{
+name = Anchor7;
+position = "{379, 640}";
+},
+{
+name = Anchor9;
+position = "{639, 660}";
+}
+);
 layerId = "0717401B-DDB5-4983-85F2-A81AFE530D5E";
 paths = (
 {
@@ -10732,12 +12080,31 @@ width = 734;
 note = kj_DA;
 unicode = 1121B;
 category = Letter;
+subCategory = Spacing;
 },
 {
 glyphname = kj_DDDA;
-lastChange = "2018-11-05 20:04:36 +0000";
+lastChange = "2022-02-01 16:33:04 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor11;
+position = "{383, 670}";
+},
+{
+name = Anchor5;
+position = "{275, 560}";
+},
+{
+name = Anchor7;
+position = "{257, 720}";
+},
+{
+name = Anchor9;
+position = "{442, 720}";
+}
+);
 layerId = "0717401B-DDB5-4983-85F2-A81AFE530D5E";
 paths = (
 {
@@ -10813,12 +12180,39 @@ width = 533;
 note = kj_DDDA;
 unicode = 1121C;
 category = Letter;
+subCategory = Spacing;
 },
 {
 glyphname = kj_DHA;
-lastChange = "2018-11-05 20:04:39 +0000";
+lastChange = "2022-02-01 16:33:04 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor11;
+position = "{696, 620}";
+},
+{
+name = Anchor13;
+position = "{464, 0}";
+},
+{
+name = Anchor15;
+position = "{828, 0}";
+},
+{
+name = Anchor5;
+position = "{706, 308}";
+},
+{
+name = Anchor7;
+position = "{446, 620}";
+},
+{
+name = Anchor9;
+position = "{748, 560}";
+}
+);
 layerId = "0717401B-DDB5-4983-85F2-A81AFE530D5E";
 paths = (
 {
@@ -10894,12 +12288,35 @@ width = 837;
 note = kj_DHA;
 unicode = 1121D;
 category = Letter;
+subCategory = Spacing;
 },
 {
 glyphname = kj_NA;
-lastChange = "2018-11-05 20:04:36 +0000";
+lastChange = "2022-02-01 16:33:04 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor11;
+position = "{532, 620}";
+},
+{
+name = Anchor13;
+position = "{359, 0}";
+},
+{
+name = Anchor5;
+position = "{537, 470}";
+},
+{
+name = Anchor7;
+position = "{345, 620}";
+},
+{
+name = Anchor9;
+position = "{584, 660}";
+}
+);
 layerId = "0717401B-DDB5-4983-85F2-A81AFE530D5E";
 paths = (
 {
@@ -10977,12 +12394,31 @@ width = 674;
 note = kj_NA;
 unicode = 1121E;
 category = Letter;
+subCategory = Spacing;
 },
 {
 glyphname = kj_PA;
-lastChange = "2018-11-05 20:04:36 +0000";
+lastChange = "2022-02-01 16:33:04 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor11;
+position = "{418, 620}";
+},
+{
+name = Anchor13;
+position = "{338, 0}";
+},
+{
+name = Anchor7;
+position = "{274, 680}";
+},
+{
+name = Anchor9;
+position = "{486, 680}";
+}
+);
 layerId = "0717401B-DDB5-4983-85F2-A81AFE530D5E";
 paths = (
 {
@@ -11061,12 +12497,31 @@ width = 586;
 note = kj_PA;
 unicode = 1121F;
 category = Letter;
+subCategory = Spacing;
 },
 {
 glyphname = kj_PHA;
-lastChange = "2018-11-05 20:04:36 +0000";
+lastChange = "2022-02-01 16:33:04 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor11;
+position = "{510, 623}";
+},
+{
+name = Anchor13;
+position = "{468, 0}";
+},
+{
+name = Anchor7;
+position = "{360, 620}";
+},
+{
+name = Anchor9;
+position = "{670, 620}";
+}
+);
 layerId = "0717401B-DDB5-4983-85F2-A81AFE530D5E";
 paths = (
 {
@@ -11161,12 +12616,35 @@ note = kj_PHA;
 rightMetricsKey = kj_KA;
 unicode = 11220;
 category = Letter;
+subCategory = Spacing;
 },
 {
 glyphname = kj_BA;
-lastChange = "2018-11-05 20:04:36 +0000";
+lastChange = "2022-02-01 16:33:04 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor11;
+position = "{804, 620}";
+},
+{
+name = Anchor13;
+position = "{610, 60}";
+},
+{
+name = Anchor5;
+position = "{822, 214}";
+},
+{
+name = Anchor7;
+position = "{581, 620}";
+},
+{
+name = Anchor9;
+position = "{861, 660}";
+}
+);
 layerId = "0717401B-DDB5-4983-85F2-A81AFE530D5E";
 paths = (
 {
@@ -11269,12 +12747,35 @@ note = kj_BA;
 rightMetricsKey = kj_A;
 unicode = 11221;
 category = Letter;
+subCategory = Spacing;
 },
 {
 glyphname = kj_BBA;
-lastChange = "2018-11-05 20:04:36 +0000";
+lastChange = "2022-02-01 16:33:04 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor11;
+position = "{517, 620}";
+},
+{
+name = Anchor13;
+position = "{360, 0}";
+},
+{
+name = Anchor5;
+position = "{543, 214}";
+},
+{
+name = Anchor7;
+position = "{342, 620}";
+},
+{
+name = Anchor9;
+position = "{574, 670}";
+}
+);
 layerId = "0717401B-DDB5-4983-85F2-A81AFE530D5E";
 paths = (
 {
@@ -11351,12 +12852,35 @@ width = 665;
 note = kj_BBA;
 unicode = 11222;
 category = Letter;
+subCategory = Spacing;
 },
 {
 glyphname = kj_BHA;
-lastChange = "2018-11-05 20:04:36 +0000";
+lastChange = "2022-02-01 16:33:04 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor11;
+position = "{598, 620}";
+},
+{
+name = Anchor13;
+position = "{420, 0}";
+},
+{
+name = Anchor5;
+position = "{624, 214}";
+},
+{
+name = Anchor7;
+position = "{410, 620}";
+},
+{
+name = Anchor9;
+position = "{655, 660}";
+}
+);
 layerId = "0717401B-DDB5-4983-85F2-A81AFE530D5E";
 paths = (
 {
@@ -11447,12 +12971,35 @@ note = kj_BHA;
 rightMetricsKey = kj_AA;
 unicode = 11223;
 category = Letter;
+subCategory = Spacing;
 },
 {
 glyphname = kj_MA;
-lastChange = "2018-11-05 20:04:36 +0000";
+lastChange = "2022-02-01 16:33:04 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor11;
+position = "{624, 620}";
+},
+{
+name = Anchor13;
+position = "{420, 0}";
+},
+{
+name = Anchor5;
+position = "{641, 214}";
+},
+{
+name = Anchor7;
+position = "{401, 620}";
+},
+{
+name = Anchor9;
+position = "{678, 660}";
+}
+);
 layerId = "0717401B-DDB5-4983-85F2-A81AFE530D5E";
 paths = (
 {
@@ -11536,12 +13083,35 @@ width = 768;
 note = kj_MA;
 unicode = 11224;
 category = Letter;
+subCategory = Spacing;
 },
 {
 glyphname = kj_YA;
-lastChange = "2018-11-05 20:04:36 +0000";
+lastChange = "2022-02-01 16:33:04 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor11;
+position = "{870, 620}";
+},
+{
+name = Anchor13;
+position = "{617, 60}";
+},
+{
+name = Anchor5;
+position = "{946, 214}";
+},
+{
+name = Anchor7;
+position = "{510, 620}";
+},
+{
+name = Anchor9;
+position = "{985, 660}";
+}
+);
 layerId = "0717401B-DDB5-4983-85F2-A81AFE530D5E";
 paths = (
 {
@@ -11649,12 +13219,31 @@ note = kj_YA;
 rightMetricsKey = kj_GA;
 unicode = 11225;
 category = Letter;
+subCategory = Spacing;
 },
 {
 glyphname = kj_RA;
-lastChange = "2018-11-05 20:04:36 +0000";
+lastChange = "2022-02-01 16:33:04 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor11;
+position = "{459, 680}";
+},
+{
+name = Anchor13;
+position = "{344, -30}";
+},
+{
+name = Anchor7;
+position = "{346, 720}";
+},
+{
+name = Anchor9;
+position = "{459, 720}";
+}
+);
 layerId = "0717401B-DDB5-4983-85F2-A81AFE530D5E";
 paths = (
 {
@@ -11720,12 +13309,35 @@ width = 549;
 note = kj_RA;
 unicode = 11226;
 category = Letter;
+subCategory = Spacing;
 },
 {
 glyphname = kj_LA;
-lastChange = "2018-11-05 20:04:36 +0000";
+lastChange = "2022-02-01 16:33:04 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor11;
+position = "{493, 620}";
+},
+{
+name = Anchor13;
+position = "{395, 0}";
+},
+{
+name = Anchor5;
+position = "{520, 214}";
+},
+{
+name = Anchor7;
+position = "{330, 620}";
+},
+{
+name = Anchor9;
+position = "{550, 660}";
+}
+);
 layerId = "0717401B-DDB5-4983-85F2-A81AFE530D5E";
 paths = (
 {
@@ -11802,12 +13414,35 @@ note = kj_LA;
 rightMetricsKey = kj_vs_AA;
 unicode = 11227;
 category = Letter;
+subCategory = Spacing;
 },
 {
 glyphname = kj_VA;
-lastChange = "2018-11-05 20:04:36 +0000";
+lastChange = "2022-02-01 16:33:04 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor11;
+position = "{432, 620}";
+},
+{
+name = Anchor13;
+position = "{339, 0}";
+},
+{
+name = Anchor5;
+position = "{452, 214}";
+},
+{
+name = Anchor7;
+position = "{276, 620}";
+},
+{
+name = Anchor9;
+position = "{483, 660}";
+}
+);
 layerId = "0717401B-DDB5-4983-85F2-A81AFE530D5E";
 paths = (
 {
@@ -11878,12 +13513,27 @@ note = kj_VA;
 rightMetricsKey = kj_AA;
 unicode = 11228;
 category = Letter;
+subCategory = Spacing;
 },
 {
 glyphname = kj_SA;
-lastChange = "2018-11-05 20:04:36 +0000";
+lastChange = "2022-02-01 16:33:04 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor11;
+position = "{623, 620}";
+},
+{
+name = Anchor7;
+position = "{479, 640}";
+},
+{
+name = Anchor9;
+position = "{691, 680}";
+}
+);
 components = (
 {
 name = kj_PA;
@@ -11937,12 +13587,31 @@ width = 791;
 note = kj_SA;
 unicode = 11229;
 category = Letter;
+subCategory = Spacing;
 },
 {
 glyphname = kj_HA;
-lastChange = "2018-11-05 20:04:36 +0000";
+lastChange = "2022-02-01 16:33:04 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor11;
+position = "{376, 680}";
+},
+{
+name = Anchor13;
+position = "{350, 0}";
+},
+{
+name = Anchor7;
+position = "{290, 720}";
+},
+{
+name = Anchor9;
+position = "{466, 720}";
+}
+);
 layerId = "0717401B-DDB5-4983-85F2-A81AFE530D5E";
 paths = (
 {
@@ -12028,12 +13697,35 @@ width = 561;
 note = kj_HA;
 unicode = 1122A;
 category = Letter;
+subCategory = Spacing;
 },
 {
 glyphname = kj_LLA;
-lastChange = "2018-11-05 20:04:36 +0000";
+lastChange = "2022-02-01 16:33:04 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor11;
+position = "{459, 620}";
+},
+{
+name = Anchor13;
+position = "{431, 0}";
+},
+{
+name = Anchor5;
+position = "{426, 329}";
+},
+{
+name = Anchor7;
+position = "{422, 640}";
+},
+{
+name = Anchor9;
+position = "{657, 620}";
+}
+);
 layerId = "0717401B-DDB5-4983-85F2-A81AFE530D5E";
 paths = (
 {
@@ -12129,12 +13821,27 @@ width = 752;
 note = kj_LLA;
 unicode = 1122B;
 category = Letter;
+subCategory = Spacing;
 },
 {
 glyphname = kj_vs_AA;
-lastChange = "2018-11-05 20:04:36 +0000";
+lastChange = "2022-02-01 16:33:20 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor11;
+position = "{83, 620}";
+},
+{
+name = Anchor7;
+position = "{103, 640}";
+},
+{
+name = Anchor9;
+position = "{160, 660}";
+}
+);
 layerId = "0717401B-DDB5-4983-85F2-A81AFE530D5E";
 paths = (
 {
@@ -12173,12 +13880,19 @@ width = 250;
 note = kj_vs_AA;
 unicode = 1122C;
 category = Letter;
+subCategory = "Spacing Combining";
 },
 {
 glyphname = kj_vs_I;
-lastChange = "2018-11-05 20:04:25 +0000";
+lastChange = "2022-02-01 16:33:26 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor9;
+position = "{390, 820}";
+}
+);
 layerId = "0717401B-DDB5-4983-85F2-A81AFE530D5E";
 paths = (
 {
@@ -12228,12 +13942,19 @@ width = 390;
 note = kj_vs_I;
 unicode = 1122D;
 category = Letter;
+subCategory = "Spacing Combining";
 },
 {
 glyphname = kj_vs_II;
-lastChange = "2018-11-05 20:04:25 +0000";
+lastChange = "2022-02-01 16:33:32 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor9;
+position = "{129, 820}";
+}
+);
 layerId = "0717401B-DDB5-4983-85F2-A81AFE530D5E";
 paths = (
 {
@@ -12296,12 +14017,23 @@ width = 225;
 note = kj_vs_II;
 unicode = 1122E;
 category = Letter;
+subCategory = "Spacing Combining";
 },
 {
 glyphname = kj_vs_U.ns;
 lastChange = "2018-11-05 20:04:56 +0000";
 layers = (
 {
+anchors = (
+{
+name = _Anchor13;
+position = "{-273, 70}";
+},
+{
+name = _Anchor15;
+position = "{-273, 70}";
+}
+);
 layerId = "0717401B-DDB5-4983-85F2-A81AFE530D5E";
 paths = (
 {
@@ -12343,12 +14075,23 @@ width = 0;
 note = kj_vs_U.ns;
 unicode = 1122F;
 category = Mark;
+subCategory = Nonspacing;
 },
 {
 glyphname = kj_vs_E.ns;
 lastChange = "2018-11-05 20:04:54 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor17;
+position = "{-147, 750}";
+},
+{
+name = _Anchor11;
+position = "{-150, 620}";
+}
+);
 layerId = "0717401B-DDB5-4983-85F2-A81AFE530D5E";
 paths = (
 {
@@ -12387,12 +14130,23 @@ width = 0;
 note = kj_vs_E.ns;
 unicode = 11230;
 category = Mark;
+subCategory = Nonspacing;
 },
 {
 glyphname = kj_vs_AI.ns;
 lastChange = "2018-11-05 20:04:54 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor17;
+position = "{-87, 850}";
+},
+{
+name = _Anchor11;
+position = "{-170, 620}";
+}
+);
 layerId = "0717401B-DDB5-4983-85F2-A81AFE530D5E";
 paths = (
 {
@@ -12460,12 +14214,23 @@ width = 0;
 note = kj_vs_AI.ns;
 unicode = 11231;
 category = Mark;
+subCategory = Nonspacing;
 },
 {
 glyphname = kj_vs_O;
-lastChange = "2018-11-05 20:04:34 +0000";
+lastChange = "2022-02-15 09:22:37 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor7;
+position = "{26, 860}";
+},
+{
+name = Anchor9;
+position = "{162, 720}";
+}
+);
 components = (
 {
 name = kj_vs_E.ns;
@@ -12482,12 +14247,23 @@ width = 250;
 note = kj_vs_O;
 unicode = 11232;
 category = Letter;
+subCategory = Other;
 },
 {
 glyphname = kj_vs_AU;
 lastChange = "2018-11-05 20:04:34 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor7;
+position = "{166, 940}";
+},
+{
+name = Anchor9;
+position = "{162, 883}";
+}
+);
 components = (
 {
 name = kj_vs_AA;
@@ -12550,6 +14326,16 @@ glyphname = DDII;
 lastChange = "2018-11-05 20:04:34 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor7;
+position = "{608, 620}";
+},
+{
+name = Anchor9;
+position = "{1214, 820}";
+}
+);
 layerId = "0717401B-DDB5-4983-85F2-A81AFE530D5E";
 paths = (
 {
@@ -12732,6 +14518,16 @@ glyphname = KHU;
 lastChange = "2018-11-05 20:04:39 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor7;
+position = "{427, 620}";
+},
+{
+name = Anchor9;
+position = "{733, 620}";
+}
+);
 layerId = "0717401B-DDB5-4983-85F2-A81AFE530D5E";
 paths = (
 {
@@ -12855,6 +14651,16 @@ glyphname = JJU;
 lastChange = "2018-11-05 20:04:39 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor7;
+position = "{513, 620}";
+},
+{
+name = Anchor9;
+position = "{781, 620}";
+}
+);
 layerId = "0717401B-DDB5-4983-85F2-A81AFE530D5E";
 paths = (
 {
@@ -12991,6 +14797,16 @@ glyphname = LLII;
 lastChange = "2018-11-05 20:04:36 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor7;
+position = "{422, 620}";
+},
+{
+name = Anchor9;
+position = "{926, 720}";
+}
+);
 layerId = "0717401B-DDB5-4983-85F2-A81AFE530D5E";
 paths = (
 {
@@ -13141,6 +14957,24 @@ glyphname = BHRA;
 lastChange = "2018-11-05 20:04:39 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor11;
+position = "{678, 620}";
+},
+{
+name = Anchor15;
+position = "{825, 0}";
+},
+{
+name = Anchor7;
+position = "{450, 620}";
+},
+{
+name = Anchor9;
+position = "{736, 660}";
+}
+);
 layerId = "0717401B-DDB5-4983-85F2-A81AFE530D5E";
 paths = (
 {
@@ -13258,6 +15092,24 @@ glyphname = KRA;
 lastChange = "2018-11-05 20:04:36 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor11;
+position = "{563, 620}";
+},
+{
+name = Anchor13;
+position = "{483, -54}";
+},
+{
+name = Anchor7;
+position = "{450, 620}";
+},
+{
+name = Anchor9;
+position = "{678, 660}";
+}
+);
 layerId = "0717401B-DDB5-4983-85F2-A81AFE530D5E";
 paths = (
 {
@@ -13400,6 +15252,28 @@ glyphname = MRA;
 lastChange = "2018-11-05 20:04:39 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor11;
+position = "{624, 620}";
+},
+{
+name = Anchor13;
+position = "{439, -42}";
+},
+{
+name = Anchor15;
+position = "{768, 0}";
+},
+{
+name = Anchor7;
+position = "{401, 620}";
+},
+{
+name = Anchor9;
+position = "{678, 660}";
+}
+);
 layerId = "0717401B-DDB5-4983-85F2-A81AFE530D5E";
 paths = (
 {
@@ -13512,6 +15386,24 @@ glyphname = SRA;
 lastChange = "2018-11-05 20:04:36 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor11;
+position = "{623, 620}";
+},
+{
+name = Anchor13;
+position = "{483, -74}";
+},
+{
+name = Anchor7;
+position = "{459, 680}";
+},
+{
+name = Anchor9;
+position = "{701, 680}";
+}
+);
 layerId = "0717401B-DDB5-4983-85F2-A81AFE530D5E";
 paths = (
 {
@@ -13657,6 +15549,28 @@ glyphname = THA.alt;
 lastChange = "2018-11-05 20:04:36 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor11;
+position = "{663, 620}";
+},
+{
+name = Anchor13;
+position = "{640, 142}";
+},
+{
+name = Anchor5;
+position = "{629, 355}";
+},
+{
+name = Anchor7;
+position = "{388, 640}";
+},
+{
+name = Anchor9;
+position = "{748, 680}";
+}
+);
 layerId = "0717401B-DDB5-4983-85F2-A81AFE530D5E";
 paths = (
 {
@@ -13766,6 +15680,28 @@ glyphname = PA.alt;
 lastChange = "2018-11-05 20:04:36 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor11;
+position = "{418, 620}";
+},
+{
+name = Anchor13;
+position = "{388, 142}";
+},
+{
+name = Anchor5;
+position = "{380, 355}";
+},
+{
+name = Anchor7;
+position = "{274, 680}";
+},
+{
+name = Anchor9;
+position = "{486, 680}";
+}
+);
 layerId = "0717401B-DDB5-4983-85F2-A81AFE530D5E";
 paths = (
 {
@@ -13848,6 +15784,32 @@ glyphname = KHA.alt;
 lastChange = "2018-11-05 20:04:39 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor11;
+position = "{563, 620}";
+},
+{
+name = Anchor13;
+position = "{458, 0}";
+},
+{
+name = Anchor15;
+position = "{663, 0}";
+},
+{
+name = Anchor5;
+position = "{539, 434}";
+},
+{
+name = Anchor7;
+position = "{335, 640}";
+},
+{
+name = Anchor9;
+position = "{587, 660}";
+}
+);
 layerId = "0717401B-DDB5-4983-85F2-A81AFE530D5E";
 paths = (
 {
@@ -13935,6 +15897,28 @@ glyphname = NA.alt;
 lastChange = "2018-11-05 20:04:36 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor11;
+position = "{532, 620}";
+},
+{
+name = Anchor13;
+position = "{459, 0}";
+},
+{
+name = Anchor5;
+position = "{536, 434}";
+},
+{
+name = Anchor7;
+position = "{345, 620}";
+},
+{
+name = Anchor9;
+position = "{584, 660}";
+}
+);
 layerId = "0717401B-DDB5-4983-85F2-A81AFE530D5E";
 paths = (
 {
@@ -14007,6 +15991,28 @@ glyphname = SA.alt;
 lastChange = "2018-11-05 20:04:36 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor11;
+position = "{623, 620}";
+},
+{
+name = Anchor13;
+position = "{593, 142}";
+},
+{
+name = Anchor5;
+position = "{585, 355}";
+},
+{
+name = Anchor7;
+position = "{479, 680}";
+},
+{
+name = Anchor9;
+position = "{701, 680}";
+}
+);
 components = (
 {
 name = PA.alt;
@@ -14064,6 +16070,12 @@ glyphname = Ra_U;
 lastChange = "2018-11-05 20:04:45 +0000";
 layers = (
 {
+anchors = (
+{
+name = _Anchor13;
+position = "{-150, 0}";
+}
+);
 components = (
 {
 name = RA.alt;
@@ -14078,12 +16090,19 @@ width = 0;
 }
 );
 category = Mark;
+subCategory = Nonspacing;
 },
 {
 glyphname = II.alt4;
 lastChange = "2018-11-05 20:04:26 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor9;
+position = "{171, 820}";
+}
+);
 layerId = "0717401B-DDB5-4983-85F2-A81AFE530D5E";
 paths = (
 {
@@ -14145,6 +16164,12 @@ glyphname = II.alt5;
 lastChange = "2018-11-05 20:04:26 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor9;
+position = "{169, 820}";
+}
+);
 layerId = "0717401B-DDB5-4983-85F2-A81AFE530D5E";
 paths = (
 {
@@ -14203,6 +16228,16 @@ glyphname = DDDII;
 lastChange = "2018-11-05 20:04:34 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor7;
+position = "{335, 780}";
+},
+{
+name = Anchor9;
+position = "{712, 820}";
+}
+);
 layerId = "0717401B-DDB5-4983-85F2-A81AFE530D5E";
 paths = (
 {
@@ -14321,6 +16356,24 @@ glyphname = DDDRII;
 lastChange = "2018-11-05 20:04:36 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor11;
+position = "{312, 620}";
+},
+{
+name = Anchor5;
+position = "{283, 473}";
+},
+{
+name = Anchor7;
+position = "{233, 620}";
+},
+{
+name = Anchor9;
+position = "{655, 720}";
+}
+);
 layerId = "0717401B-DDB5-4983-85F2-A81AFE530D5E";
 paths = (
 {
@@ -14465,6 +16518,12 @@ glyphname = E_Shadda.ns;
 lastChange = "2018-11-05 20:04:54 +0000";
 layers = (
 {
+anchors = (
+{
+name = _Anchor11;
+position = "{-149, 620}";
+}
+);
 components = (
 {
 name = kj_vs_E.ns;
@@ -14480,12 +16539,19 @@ width = 0;
 }
 );
 category = Mark;
+subCategory = Nonspacing;
 },
 {
 glyphname = AI_Shadda.ns;
 lastChange = "2018-11-05 20:04:54 +0000";
 layers = (
 {
+anchors = (
+{
+name = _Anchor11;
+position = "{-170, 620}";
+}
+);
 components = (
 {
 alignment = -1;
@@ -14502,12 +16568,19 @@ width = 0;
 }
 );
 category = Mark;
+subCategory = Nonspacing;
 },
 {
 glyphname = Nukta_Shadda.ns;
 lastChange = "2018-11-05 20:04:51 +0000";
 layers = (
 {
+anchors = (
+{
+name = _Anchor7;
+position = "{-220, 620}";
+}
+);
 layerId = "0717401B-DDB5-4983-85F2-A81AFE530D5E";
 paths = (
 {
@@ -14619,12 +16692,19 @@ width = 0;
 }
 );
 category = Mark;
+subCategory = Nonspacing;
 },
 {
 glyphname = Nukta_E.ns;
 lastChange = "2018-11-05 20:04:54 +0000";
 layers = (
 {
+anchors = (
+{
+name = _Anchor11;
+position = "{-173, 620}";
+}
+);
 components = (
 {
 name = Nukta;
@@ -14667,12 +16747,19 @@ width = 0;
 }
 );
 category = Mark;
+subCategory = Nonspacing;
 },
 {
 glyphname = Nukta_AI.ns;
 lastChange = "2018-11-05 20:04:54 +0000";
 layers = (
 {
+anchors = (
+{
+name = _Anchor11;
+position = "{-170, 620}";
+}
+);
 components = (
 {
 name = Nukta;
@@ -14687,12 +16774,19 @@ width = 0;
 }
 );
 category = Mark;
+subCategory = Nonspacing;
 },
 {
 glyphname = Nukta_Shadda_E.ns;
 lastChange = "2018-11-05 20:04:54 +0000";
 layers = (
 {
+anchors = (
+{
+name = _Anchor11;
+position = "{-149, 620}";
+}
+);
 components = (
 {
 name = kj_vs_E.ns;
@@ -14708,12 +16802,19 @@ width = 0;
 }
 );
 category = Mark;
+subCategory = Nonspacing;
 },
 {
 glyphname = Nukta_Shadda_AI.ns;
 lastChange = "2018-11-05 20:04:54 +0000";
 layers = (
 {
+anchors = (
+{
+name = _Anchor11;
+position = "{-170, 620}";
+}
+);
 components = (
 {
 name = Nukta_Shadda.ns;
@@ -14728,6 +16829,7 @@ width = 0;
 }
 );
 category = Mark;
+subCategory = Nonspacing;
 },
 {
 glyphname = NullMark;
@@ -14739,6 +16841,7 @@ width = 0;
 }
 );
 category = Mark;
+subCategory = Nonspacing;
 },
 {
 export = 0;
@@ -14784,10 +16887,6 @@ instances = (
 {
 customParameters = (
 {
-name = weightClass;
-value = 400;
-},
-{
 name = panose;
 value = (
 2,
@@ -14813,6 +16912,22 @@ instanceInterpolations = {
 name = Regular;
 }
 );
+kerning = {
+"0717401B-DDB5-4983-85F2-A81AFE530D5E" = {
+BHRA = {
+U.alt = 160;
+};
+MRA = {
+U.alt = 160;
+};
+kj_DHA = {
+U.alt = 160;
+};
+kj_GGA = {
+U.alt = 170;
+};
+};
+};
 manufacturer = "Monotype Imaging Inc.";
 manufacturerURL = "http://www.google.com/get/noto/";
 unitsPerEm = 1000;
