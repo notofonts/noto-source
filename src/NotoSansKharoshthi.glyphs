@@ -1,6 +1,68 @@
 {
-.appVersion = "1277";
-copyright = "Copyright 2017 Google Inc. All Rights Reserved.";
+.appVersion = "3109";
+classes = (
+{
+code = "";
+name = markFilteringSet1;
+},
+{
+code = "Dda_khar Ddha_khar Ga_khar KTa_khar LPa_khar LYa_khar La_khar MMa_khar MRa_khar Ma_khar PGa_khar PTa_khar RMa_khar SYa_khar TVa_khar Tha_khar Tta_khar Za_khar";
+name = class1;
+},
+{
+code = "JNya_khar KSsa_khar KhKSsa_khar La_ZWJ_Ya_khar RTa_khar SPa_khar ShPa_khar TTta_khar";
+name = class3;
+},
+{
+code = "Ca_khar Dha_khar Ja_khar Nya_khar Sa_khar Ssa_khar TSa_khar";
+name = class5;
+},
+{
+code = "Virama_khar SubMa_khar SubMa.alt SubMa.alt1 SubMa.alt2 SubMa.alt3 SubYa_khar SubYa.alt SubYa.alt1 SubYa.alt3 SubYa.alt4 SubRa_khar SubRa.alt SubRa.alt1 SubRa.alt3 SubRa.alt4 SubLa_khar SubLa.alt SubVa_khar SubVa.alt SubVa.alt1 SubVa.alt2 SubVa.alt3 SubVa.alt4";
+name = markFilteringSet3;
+},
+{
+code = "Ca_khar Dha_khar Gha_khar Ja_khar Ka_khar Kka_khar Nya_khar Sa_khar Ssa_khar Ya_khar space";
+name = class7;
+},
+{
+code = "Da_khar Dda_khar Ddha_khar De_khar Ga_khar Ha_khar He_khar Hi_khar La_khar Nna_khar TTta_khar Ta_khar Tha_khar Tta_khar Za_khar";
+name = class8;
+},
+{
+code = "Bha_khar Cha_khar Da_khar Dda_khar Ddha_khar Ga_khar Gha_khar Ha_khar KTa_khar LYa_khar La_khar MMa_khar MRa_khar PGa_khar PTa_khar Pa_khar Pha_khar RMa_khar SYa_khar ShPa_khar TVa_khar Ta_khar Tha_khar Tta_khar Za_khar";
+name = class9;
+},
+{
+code = "KSsa_khar KhKSsa_khar MMe_khar RTa_khar TTta_khar Va_khar Ya_khar";
+name = class10;
+},
+{
+code = "I_khar U_khar vocR_khar E_khar O_khar Virama_khar I_diagonal I_diagonal_short I_vertical E_vertical O_diag.short O_vertical O_vertical_short U.alt U.alt2 U.alt3 U_spacing\012";
+name = Vowels;
+},
+{
+code = "Ba_khar Ca_khar Dda_khar Ga_khar Gha_khar Ka_khar Kka_khar Nna_khar Ra_khar Ttha_khar Tttha_khar VHa_khar Va_khar Za_khar";
+name = class12;
+},
+{
+code = "JNya_khar Ja_khar KSsa_khar KhKSsa_khar STa_khar STha_khar TRa_khar Ta_khar uni25CC";
+name = class13;
+},
+{
+code = "Bha_khar Cha_khar Ddha_khar Dha_khar Nya_khar SPa_khar TTta_khar Tta_khar";
+name = class14;
+},
+{
+code = "LYa_khar La_ZWJ_Ya_khar La_khar MMa_khar MMe_khar PTa_khar Tha_khar";
+name = class16;
+},
+{
+code = "Bha_khar Dda_khar Ddha_khar Ga_khar LPa_khar La_ZWJ_Ya_khar La_khar MMa_khar MMe_khar MRa_khar Nna_khar PGa_khar Pa_khar Pha_khar RMa_khar SYa_khar Tha_khar";
+name = class19;
+}
+);
+copyright = "Copyright 2017-2022 Google Inc. All Rights Reserved.";
 customParameters = (
 {
 name = glyphOrder;
@@ -166,6 +228,36 @@ Cauda_khar.short2
 );
 },
 {
+name = unicodeRanges;
+value = (
+0,
+1,
+31,
+45,
+57,
+108
+);
+},
+{
+name = "Has WWS Names";
+value = 1;
+},
+{
+name = fsType;
+value = (
+);
+},
+{
+name = codePageRanges;
+value = (
+1252
+);
+},
+{
+name = "Don't use Production Names";
+value = 1;
+},
+{
 name = description;
 value = "Designed by Monotype design team.";
 },
@@ -182,42 +274,12 @@ name = vendorID;
 value = GOOG;
 },
 {
-name = unicodeRanges;
-value = (
-0,
-1,
-31,
-45,
-57,
-108
-);
-},
-{
 name = trademark;
 value = "Noto is a trademark of Google Inc.";
 },
 {
-name = "Has WWS Names";
-value = 1;
-},
-{
 name = versionString;
-value = "Version 2.001";
-},
-{
-name = fsType;
-value = (
-);
-},
-{
-name = codePageRanges;
-value = (
-"1252"
-);
-},
-{
-name = "Don't use Production Names";
-value = 1;
+value = "Version 2.002";
 }
 );
 date = "2017-05-01 18:36:42 +0000";
@@ -226,6 +288,59 @@ designerURL = "http://www.monotype.com/studio";
 disablesAutomaticAlignment = 1;
 disablesNiceNames = 1;
 familyName = "Noto Sans Kharoshthi";
+featurePrefixes = (
+{
+code = "lookup AltForms {\012	sub U_khar by U.alt;\012    sub vocR_khar by vocR.shorter;\012    sub O_khar by O_vertical_short;\012    sub Cauda_khar by Cauda_khar.short;\012    sub SubMa_khar by SubMa.alt;\012    sub SubYa_khar by SubYa.alt;\012    sub SubRa_khar by SubRa.alt;\012    sub SubLa_khar by SubLa.alt;\012    sub SubVa_khar by SubVa.alt;\012} AltForms;\012\012lookup Alt1Forms {\012	sub vocR_khar by vocR.wide;\012    sub Cauda_khar by Cauda_khar.short2;\012    sub SubMa_khar by SubMa.alt1;\012    sub SubYa_khar by SubYa.alt1;\012    sub SubRa_khar by SubRa.alt1;\012    sub SubVa_khar by SubVa.alt1;\012} Alt1Forms;\012\012lookup Alt2Forms {\012	sub U_khar by U.alt2;\012    sub vocR_khar by vocR.short;\012    sub SubMa_khar by SubMa.alt2;\012    sub SubVa_khar by SubVa.alt2;\012} Alt2Forms;\012\012lookup Alt3Forms {\012	sub U_khar by U.alt3;\012    sub SubMa_khar by SubMa.alt3;\012    sub SubYa_khar by SubYa.alt3;\012    sub SubRa_khar by SubRa.alt3;\012    sub SubVa_khar by SubVa.alt3;\012} Alt3Forms;\012\012lookup Alt4Forms {\012    sub U_khar by U_spacing;\012    sub SubYa_khar by SubYa.alt4;\012    sub SubRa_khar by SubRa.alt4;\012    sub SubVa_khar by SubVa.alt4;\012} Alt4Forms;\012\012lookup DiagonalVowels {\012	sub I_khar by I_diagonal_short;\012    sub vocR_khar by vocR.short;\012    sub E_khar by E_vertical;\012    sub O_khar by O_diag.short;\012} DiagonalVowels;\012\012lookup VerticalVowels {\012	sub I_khar by I_vertical;\012    sub E_khar by E_vertical;\012    sub O_khar by O_vertical;\012} VerticalVowels;\012";
+name = "Alternate Forms";
+},
+{
+code = "languagesystem khar dflt;\012";
+name = Languagesystems;
+}
+);
+features = (
+{
+code = "lookup LigatureSubstitution2 {\012    lookupflag UseMarkFilteringSet [Virama_khar];\012    sub Ka_khar Virama_khar Ssa_khar by KSsa_khar;\012    sub Ka_khar Virama_khar Ta_khar by KTa_khar;\012    sub Kha_khar Virama_khar Ka_khar Virama_khar Ssa_khar by KhKSsa_khar;\012    sub Ja_khar Virama_khar Nya_khar by JNya_khar;\012    sub Ta_khar Virama_khar Ra_khar by TRa_khar;\012    sub Ta_khar Virama_khar Sa_khar by TSa_khar;\012    sub Ta_khar Virama_khar Va_khar by TVa_khar;\012    sub Pa_khar Virama_khar Ga_khar by PGa_khar;\012    sub Pa_khar Virama_khar Ta_khar by PTa_khar;\012    sub Ma_khar Virama_khar Ma_khar by MMa_khar;\012    sub Ma_khar Virama_khar Ra_khar by MRa_khar;\012    sub Ra_khar Virama_khar Ma_khar by RMa_khar;\012    sub Ra_khar Virama_khar Ta_khar by RTa_khar;\012    sub La_khar uni200D Virama_khar Ya_khar by La_ZWJ_Ya_khar;\012    sub La_khar Virama_khar Pa_khar by LPa_khar;\012    sub La_khar Virama_khar Ya_khar by LYa_khar;\012    sub Sha_khar Virama_khar Pa_khar by ShPa_khar;\012    sub Sa_khar Virama_khar Pa_khar by SPa_khar;\012    sub Sa_khar Virama_khar Ta_khar by STa_khar;\012    sub Sa_khar Virama_khar Tha_khar by STha_khar;\012    sub Sa_khar Virama_khar Ya_khar by SYa_khar;\012} LigatureSubstitution2;\012";
+name = cjct;
+},
+{
+code = "lookup LigatureSubstitution3 {\012    lookupflag UseMarkFilteringSet @markFilteringSet1;\012    sub Virama_khar La_khar by SubLa_khar;\012    sub Virama_khar Ma_khar by SubMa_khar;\012    sub Virama_khar Ra_khar by SubRa_khar;\012    sub Virama_khar Va_khar by SubVa_khar;\012    sub Virama_khar Ya_khar by SubYa_khar;\012} LigatureSubstitution3;\012\012lookup LigatureSubstitution7 {\012    lookupflag UseMarkFilteringSet @Vowels;\012    sub A_khar E_khar by AE_khar;\012    sub A_khar I_khar by AI_khar;\012    sub Nna_khar I_khar by Nni_khar;\012    sub Nna_khar O_khar by Nno_khar;\012    sub Nna_khar U_khar by Nnu_khar;\012    sub Dha_khar I_khar Ka_khar Virama_khar by Dhik_khar;\012    sub Na_khar E_khar by Ne_khar;\012    sub Na_khar I_khar by Ni_khar;\012    sub Ma_khar E_khar by Me_khar;\012    sub Ma_khar O_khar by Mo_khar;\012    sub Ma_khar U_khar by Mu_khar;\012    sub Ha_khar E_khar by He_khar;\012    sub Ha_khar I_khar by Hi_khar;\012    sub MMa_khar E_khar by MMe_khar;\012} LigatureSubstitution7;\012";
+name = rclt;
+},
+{
+code = "lookup ContextualGSUB4 {\012    lookupflag UseMarkFilteringSet @markFilteringSet3;\012    sub @class1' SubVa_khar' lookup AltForms;\012    sub @class1' SubRa_khar' lookup AltForms;\012    sub [Nna_khar Da_khar De_khar MMe_khar]' SubVa_khar' lookup Alt1Forms;\012    sub [Nna_khar Da_khar De_khar MMe_khar]' SubRa_khar' lookup Alt1Forms;\012    sub [Nna_khar Da_khar De_khar MMe_khar]' SubLa_khar' lookup AltForms;\012    sub [Ha_khar Mu_khar]' SubVa_khar' lookup Alt2Forms;\012    sub [Ha_khar Mu_khar]' SubRa_khar' lookup AltForms;\012    sub @class3' SubVa_khar' lookup Alt3Forms;\012    sub @class3' SubRa_khar' lookup Alt3Forms;\012    sub @class5' SubVa_khar' lookup Alt4Forms;\012    sub @class5' SubRa_khar' lookup Alt4Forms;\012    sub Cha_khar' SubRa_khar' lookup AltForms;\012    sub [Gha_khar Pa_khar Pha_khar Bha_khar]' SubVa_khar' lookup Alt3Forms;\012    sub [Gha_khar Pa_khar Pha_khar Bha_khar]' SubRa_khar' lookup AltForms;\012    sub [Ka_khar Kka_khar]' SubVa_khar' lookup Alt3Forms;\012    sub Ya_khar' SubVa_khar' lookup Alt1Forms;\012    sub Ya_khar' SubRa_khar' lookup Alt1Forms;\012} ContextualGSUB4;\012\012lookup ContextualGSUB5 {\012    lookupflag UseMarkFilteringSet @markFilteringSet3;\012    sub @class7' SubMa_khar' lookup AltForms;\012    sub @class8' SubMa_khar' lookup Alt1Forms;\012    sub [Kha_khar Tttha_khar]' SubMa_khar' lookup Alt2Forms;\012    sub Cha_khar' SubMa_khar' lookup Alt3Forms;\012} ContextualGSUB5;\012\012lookup ContextualGSUB6 {\012    lookupflag UseMarkFilteringSet @markFilteringSet3;\012    sub @class9' SubYa_khar' lookup AltForms;\012    sub [Nna_khar LPa_khar]' SubYa_khar' lookup Alt1Forms;\012    sub @class10' SubYa_khar' lookup Alt3Forms;\012    sub @class5' SubYa_khar' lookup Alt4Forms;\012} ContextualGSUB6;\012";
+name = psts;
+},
+{
+code = "lookup ContextualGSUB8 {\012    lookupflag UseMarkFilteringSet @Vowels;\012    sub @class12 I_khar'  by I_diagonal;\012    sub Ma_khar' I_khar' lookup VerticalVowels;\012    sub Ma_khar' O_khar' lookup VerticalVowels;\012    sub @class13' I_khar' lookup DiagonalVowels;\012    sub @class14 I_khar'  by I_diagonal;\012    sub @class14' O_khar' lookup DiagonalVowels;\012    sub Ya_khar I_khar'  by I_diagonal;\012    sub Ya_khar' O_khar' lookup VerticalVowels;\012    sub [Pa_khar Pha_khar LPa_khar]' I_khar' lookup VerticalVowels;\012    sub [Pa_khar Pha_khar LPa_khar]' E_khar' lookup VerticalVowels;\012    sub [Pa_khar Pha_khar LPa_khar]' O_khar' lookup AltForms;\012    sub [Sha_khar ShPa_khar]' I_khar' lookup VerticalVowels;\012    sub [Sha_khar ShPa_khar]' O_khar' lookup VerticalVowels;\012    sub @class16' I_khar' lookup VerticalVowels;\012    sub @class16' E_khar' lookup VerticalVowels;\012    sub @class16' O_khar' lookup DiagonalVowels;\012    sub [Da_khar Ssa_khar Sa_khar TSa_khar SYa_khar]' I_khar' lookup DiagonalVowels;\012    sub [Da_khar Ssa_khar Sa_khar TSa_khar SYa_khar]' O_khar' lookup DiagonalVowels;\012    sub [Kha_khar Na_khar KTa_khar RTa_khar]' O_khar' lookup DiagonalVowels;\012    sub PGa_khar' I_khar' lookup DiagonalVowels;\012    sub PGa_khar' E_khar' lookup VerticalVowels;\012    sub PGa_khar' O_khar' lookup DiagonalVowels;\012    sub [MRa_khar RMa_khar]' I_khar' lookup VerticalVowels;\012    sub [MRa_khar RMa_khar]' O_khar' lookup DiagonalVowels;\012} ContextualGSUB8;\012";
+name = abvs;
+},
+{
+code = "lookup ContextualGSUB12 {\012    lookupflag UseMarkFilteringSet @Vowels;\012    sub [Ta_khar Da_khar PTa_khar LYa_khar]' U_khar' lookup AltForms;\012    sub [Ta_khar Da_khar PTa_khar LYa_khar]' vocR_khar' lookup Alt1Forms;\012    sub [Ca_khar Ja_khar Nya_khar Dha_khar Ssa_khar]' U_khar' lookup Alt2Forms;\012    sub [Ca_khar Ja_khar Nya_khar Dha_khar Ssa_khar]' vocR_khar' lookup Alt1Forms;\012    sub @class19' U_khar' lookup Alt3Forms;\012    sub [Ha_khar TRa_khar TVa_khar]' U_khar' lookup Alt4Forms;\012    sub Tta_khar' U_khar' lookup Alt4Forms;\012    sub Tta_khar' vocR_khar' lookup Alt1Forms;\012    sub [Ka_khar Kka_khar VHa_khar]' vocR_khar' lookup DiagonalVowels;\012    sub [Gha_khar Cha_khar]' U_khar' lookup Alt3Forms;\012    sub [Gha_khar Cha_khar]' vocR_khar' lookup DiagonalVowels;\012    sub [Gha_khar Cha_khar]' vocR_khar' lookup AltForms;\012    sub Za_khar' U_khar' lookup Alt3Forms;\012    sub Za_khar' vocR_khar' lookup DiagonalVowels;\012    sub [Kha_khar Tttha_khar]' vocR_khar' lookup AltForms;\012    sub [Sa_khar KTa_khar TSa_khar RTa_khar]' U_khar' lookup Alt2Forms;\012    sub [Sa_khar KTa_khar TSa_khar RTa_khar]' vocR_khar' lookup AltForms;\012} ContextualGSUB12;\012\012lookup ContextualGSUB13 {\012    lookupflag UseMarkFilteringSet [Cauda_khar];\012    sub [Ka_khar Cha_khar Tta_khar Kka_khar]' Cauda_khar' lookup AltForms;\012    sub [Gha_khar SPa_khar]' Cauda_khar' lookup Alt1Forms;\012} ContextualGSUB13;\012";
+name = blws;
+},
+{
+code = "sub Da_khar E_khar by De_khar;";
+name = ss01;
+notes = "Name: ";
+},
+{
+code = "# Automatic Code Start\012\012pos SubVa.alt3 DotBelow_khar' <0 -200 0 0>;\012pos SubVa.alt3 Doublering_khar' <0 -180 0 0>;\012";
+name = dist;
+},
+{
+code = "# Automatic Code Start\012\012lookup PairPositioning1 {\012    pos Kha_khar Cauda_khar 120;\012    pos Ga_khar O_khar <40 0 40 0>;\012    pos Gha_khar O_khar <50 0 50 0>;\012    pos Ja_khar Anusvara_khar <100 0 100 0>;\012    pos Ja_khar U.alt2 <110 0 110 0>;\012    pos Nya_khar Anusvara_khar <170 0 170 0>;\012    pos Nya_khar O_diag.short <40 0 40 0>;\012    pos Nya_khar U.alt2 <170 0 170 0>;\012    pos Nya_khar vocR.wide <60 0 60 0>;\012    pos Tta_khar U_spacing <210 0 210 0>;\012    pos Ttha_khar Cauda_khar 80;\012    pos Dda_khar Cauda_khar 100;\012    pos Ddha_khar Anusvara_khar <80 0 80 0>;\012    pos Ddha_khar O_diag.short <40 0 40 0>;\012    pos Ddha_khar U.alt3 <70 0 70 0>;\012    pos Nna_khar vocR_khar <20 0 20 0>;\012    pos Nna_khar Anusvara_khar <120 0 120 0>;\012    pos Nna_khar Cauda_khar 110;\012    pos Ta_khar Anusvara_khar <110 0 110 0>;\012    pos Ta_khar U.alt <80 0 80 0>;\012    pos Ta_khar vocR.wide 40;\012    pos Tha_khar Anusvara_khar <60 0 60 0>;\012    pos Tha_khar U.alt3 <20 0 20 0>;\012    pos Da_khar Cauda_khar 140;\012    pos Da_khar U.alt <30 0 30 0>;\012    pos Da_khar vocR.wide 80;\012    pos Dha_khar Cauda_khar 30;\012    pos Dha_khar vocR.wide 40;\012    pos Na_khar U_khar <30 0 30 0>;\012    pos Na_khar Anusvara_khar <70 0 70 0>;\012    pos Na_khar Cauda_khar 100;\012    pos Pa_khar vocR_khar <70 0 70 0>;\012    pos Pa_khar Anusvara_khar <180 0 180 0>;\012    pos Pa_khar U.alt3 <180 0 180 0>;\012    pos Pha_khar Anusvara_khar <100 0 100 0>;\012    pos Pha_khar U.alt3 <110 0 110 0>;\012    pos Ba_khar Cauda_khar 80;\012    pos Bha_khar Anusvara_khar <90 0 90 0>;\012    pos Bha_khar U.alt3 <70 0 70 0>;\012    pos Ya_khar U_khar <260 0 260 0>;\012    pos Ya_khar Cauda_khar 250;\012    pos Ya_khar vocR.wide <110 0 110 0>;\012    pos Ra_khar Cauda_khar 50;\012    pos La_khar Cauda_khar 90;\012    pos Va_khar Cauda_khar 30;\012    pos Sha_khar vocR_khar <50 0 50 0>;\012    pos Sha_khar Cauda_khar 110;\012    pos Ssa_khar Anusvara_khar <90 0 90 0>;\012    pos Ssa_khar U.alt2 <50 0 50 0>;\012    pos Sa_khar Anusvara_khar <200 0 200 0>;\012    pos Sa_khar O_diag.short <50 0 50 0>;\012    pos Sa_khar U.alt2 <150 0 150 0>;\012    pos Za_khar Cauda_khar 100;\012    pos Ha_khar O_khar <50 0 50 0>;\012    pos Ha_khar U_spacing <250 0 250 0>;\012    pos Tttha_khar Cauda_khar 110;\012    pos TTta_khar U_khar <100 0 100 0>;\012    pos TTta_khar Anusvara_khar <80 0 80 0>;\012    pos Hi_khar U_spacing <250 0 250 0>;\012    pos He_khar U_spacing <250 0 250 0>;\012    pos JNya_khar U_khar <90 0 90 0>;\012    pos TSa_khar Anusvara_khar <200 0 200 0>;\012    pos TSa_khar U.alt2 <130 0 130 0>;\012    pos TVa_khar U_spacing <200 0 200 0>;\012    pos MRa_khar U.alt3 <90 0 90 0>;\012    pos RMa_khar U.alt3 <90 0 90 0>;\012    pos RTa_khar Anusvara_khar 70;\012    pos RTa_khar Cauda_khar 160;\012    pos LPa_khar Anusvara_khar <120 0 120 0>;\012    pos LYa_khar Cauda_khar 90;\012    pos LYa_khar U.alt <50 0 50 0>;\012    pos La_ZWJ_Ya_khar Cauda_khar 150;\012    pos SPa_khar U_khar <140 0 140 0>;\012    pos SPa_khar Anusvara_khar 60;\012    pos SYa_khar Anusvara_khar <35 0 35 0>;\012} PairPositioning1;\012\012lookup PairPositioning2 {\012    lookupflag 0;\012    ;\012        pos A_khar SubRa_khar 30;\012    pos A_khar SubVa_khar 100;\012    pos Ka_khar SubVa.alt3 210;\012    pos Kha_khar SubRa_khar 60;\012    pos Kha_khar SubVa_khar 130;\012    pos Gha_khar SubVa.alt3 160;\012    pos Ca_khar SubVa.alt4 30;\012    pos Cha_khar SubRa_khar 110;\012    pos Cha_khar SubVa_khar 180;\012    pos Ja_khar SubYa.alt4 <180 0 180 0>;\012    pos Ja_khar SubRa.alt4 30;\012    pos Ja_khar SubVa.alt4 <30 0 30 0>;\012    pos Nya_khar SubMa.alt <110 0 110 0>;\012    pos Nya_khar SubYa.alt4 <270 0 270 0>;\012    pos Nya_khar SubRa.alt4 100;\012    pos Nya_khar SubVa.alt4 <100 0 100 0>;\012    pos Ttha_khar SubVa_khar 90;\012    pos Dda_khar SubRa.alt 90;\012    pos Dda_khar SubVa.alt 120;\012    pos Ddha_khar SubYa.alt <110 0 110 0>;\012    pos Nna_khar SubMa.alt1 <40 0 40 0>;\012    pos Nna_khar SubYa.alt1 <110 0 110 0>;\012    pos Nna_khar SubRa.alt1 50;\012    pos Nna_khar SubVa.alt1 70;\012    pos Tha_khar SubYa.alt <60 0 60 0>;\012    pos Da_khar SubRa.alt1 90;\012    pos Da_khar SubLa.alt 100;\012    pos Da_khar SubVa.alt1 130;\012    pos Dha_khar SubYa.alt4 <30 0 30 0>;\012    pos Dha_khar SubLa_khar 30;\012    pos Dha_khar SubVa.alt4 50;\012    pos Na_khar SubYa_khar <60 0 60 0>;\012    pos Na_khar SubLa_khar 60;\012    pos Na_khar SubVa_khar 100;\012    pos Pa_khar SubMa_khar <100 0 100 0>;\012    pos Pa_khar SubYa.alt <200 0 200 0>;\012    pos Pa_khar SubVa.alt3 210;\012    pos Pha_khar SubMa_khar <40 0 40 0>;\012    pos Pha_khar SubYa.alt <120 0 120 0>;\012    pos Pha_khar SubVa.alt3 200;\012    pos Ba_khar SubVa_khar 80;\012    pos Bha_khar SubYa.alt <100 0 100 0>;\012    pos Bha_khar SubVa.alt3 200;\012    pos Ya_khar SubMa.alt <140 0 140 0>;\012    pos Ya_khar SubYa_khar <260 0 260 0>;\012    pos Ya_khar SubRa.alt1 190;\012    pos Ya_khar SubVa.alt1 230;\012    pos Ra_khar SubVa_khar 75;\012    pos La_khar SubRa.alt 75;\012    pos La_khar SubVa.alt 105;\012    pos Va_khar SubVa_khar 50;\012    pos Sha_khar SubMa_khar <90 0 90 0>;\012    pos Sha_khar SubRa_khar 55;\012    pos Sha_khar SubVa_khar 125;\012    pos Ssa_khar SubYa.alt4 <240 0 240 0>;\012    pos Sa_khar SubMa.alt <100 0 100 0>;\012    pos Sa_khar SubYa.alt4 <250 0 250 0>;\012    pos Sa_khar SubRa.alt4 80;\012    pos Sa_khar SubVa.alt4 <100 0 100 0>;\012    pos Za_khar SubRa.alt 80;\012    pos Za_khar SubVa.alt 110;\012    pos Ha_khar SubVa.alt2 140;\012    pos Kka_khar SubRa.alt3 120;\012    pos Kka_khar SubVa.alt3 190;\012    pos Tttha_khar SubRa_khar 35;\012    pos Tttha_khar SubVa_khar 125;\012    pos Mu_khar SubVa.alt2 140;\012    pos TSa_khar SubYa.alt4 <230 0 230 0>;\012    pos LPa_khar SubYa.alt <120 0 120 0>;\012    pos SPa_khar SubYa_khar <160 0 160 0>;\012} PairPositioning2;\012\012lookup PairPositioning43 {\012    pos Doublering_khar U_khar <0 -70 0 0>;\012    pos Cauda_khar <NULL> Doublering_khar <0 -60 0 0>;\012    pos DotBelow_khar U_khar <0 -100 0 0>;\012    pos Cauda_khar.short <NULL> Doublering_khar <0 -60 0 0>;\012    pos Cauda_khar.short2 <NULL> Doublering_khar <0 -60 0 0>;\012} PairPositioning43;\012";
+name = kern;
+},
+{
+code = "# Automatic Code Start\012";
+name = mark;
+},
+{
+code = "# Automatic Code Start\012";
+name = mkmk;
+}
+);
 fontMaster = (
 {
 alignmentZones = (
@@ -420,6 +535,52 @@ glyphname = A_khar;
 lastChange = "2019-12-16 17:27:39 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor12;
+position = "{334, 0}";
+},
+{
+name = Anchor14;
+position = "{327, 712}";
+},
+{
+name = Anchor16;
+position = "{287, 0}";
+},
+{
+name = Anchor18;
+position = "{431, -6}";
+},
+{
+name = Anchor20;
+position = "{371, 60}";
+},
+{
+name = Anchor22;
+position = "{370, 186}";
+},
+{
+name = Anchor28;
+position = "{424, 100}";
+},
+{
+name = Anchor30;
+position = "{469, 406}";
+},
+{
+name = Anchor32;
+position = "{397, 275}";
+},
+{
+name = Anchor4;
+position = "{302, 425}";
+},
+{
+name = Anchor6;
+position = "{332, 0}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -465,6 +626,12 @@ glyphname = I_khar;
 lastChange = "2019-12-16 17:27:09 +0000";
 layers = (
 {
+anchors = (
+{
+name = _Anchor4;
+position = "{-131, 560}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -494,6 +661,24 @@ glyphname = U_khar;
 lastChange = "2019-12-16 17:27:38 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor36;
+position = "{-88, -114}";
+},
+{
+name = Anchor38;
+position = "{-143, -51}";
+},
+{
+name = Anchor40;
+position = "{-232, -114}";
+},
+{
+name = _Anchor20;
+position = "{-69, 60}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -543,6 +728,12 @@ glyphname = vocR_khar;
 lastChange = "2019-12-16 17:27:35 +0000";
 layers = (
 {
+anchors = (
+{
+name = _Anchor26;
+position = "{-190, 223}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -601,6 +792,16 @@ glyphname = E_khar;
 lastChange = "2019-12-16 17:27:33 +0000";
 layers = (
 {
+anchors = (
+{
+name = _Anchor14;
+position = "{-263, 714}";
+},
+{
+name = _Anchor34;
+position = "{-263, 714}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -629,6 +830,12 @@ glyphname = O_khar;
 lastChange = "2019-12-16 17:27:14 +0000";
 layers = (
 {
+anchors = (
+{
+name = _Anchor30;
+position = "{-78, 267}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -657,6 +864,12 @@ glyphname = Lengthmark_khar;
 lastChange = "2019-12-16 17:27:12 +0000";
 layers = (
 {
+anchors = (
+{
+name = _Anchor28;
+position = "{-172, 226}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -692,6 +905,24 @@ glyphname = Doublering_khar;
 lastChange = "2019-12-16 17:27:38 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor38;
+position = "{-215, -333}";
+},
+{
+name = Anchor40;
+position = "{-221, -243}";
+},
+{
+name = _Anchor12;
+position = "{-220, 0}";
+},
+{
+name = _Anchor40;
+position = "{-220, 0}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -770,6 +1001,24 @@ glyphname = Anusvara_khar;
 lastChange = "2019-12-16 17:27:38 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor36;
+position = "{-11, -207}";
+},
+{
+name = Anchor40;
+position = "{-210, -207}";
+},
+{
+name = _Anchor16;
+position = "{-209, 0}";
+},
+{
+name = _Anchor38;
+position = "{-209, 0}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -810,6 +1059,20 @@ glyphname = Visarga_khar;
 lastChange = "2019-12-16 17:27:39 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor34;
+position = "{-200, 913}";
+},
+{
+name = _Anchor14;
+position = "{-200, 714}";
+},
+{
+name = _Anchor34;
+position = "{-200, 714}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -859,6 +1122,64 @@ glyphname = Ka_khar;
 lastChange = "2019-12-16 17:27:41 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor10;
+position = "{330, -7}";
+},
+{
+name = Anchor12;
+position = "{347, 0}";
+},
+{
+name = Anchor14;
+position = "{312, 712}";
+},
+{
+name = Anchor16;
+position = "{297, 0}";
+},
+{
+name = Anchor18;
+position = "{407, -52}";
+},
+{
+name = Anchor20;
+position = "{371, 60}";
+},
+{
+name = Anchor22;
+position = "{359, 186}";
+},
+{
+name = Anchor26;
+position = "{417, 155}";
+},
+{
+name = Anchor28;
+position = "{699, 100}";
+},
+{
+name = Anchor30;
+position = "{469, 406}";
+},
+{
+name = Anchor32;
+position = "{397, 275}";
+},
+{
+name = Anchor4;
+position = "{302, 425}";
+},
+{
+name = Anchor6;
+position = "{644, 13}";
+},
+{
+name = Anchor8;
+position = "{333, 0}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -920,6 +1241,56 @@ glyphname = Kha_khar;
 lastChange = "2019-12-16 17:27:41 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor12;
+position = "{286, 0}";
+},
+{
+name = Anchor14;
+position = "{318, 712}";
+},
+{
+name = Anchor16;
+position = "{315, 1}";
+},
+{
+name = Anchor18;
+position = "{448, -6}";
+},
+{
+name = Anchor20;
+position = "{389, 60}";
+},
+{
+name = Anchor22;
+position = "{376, 186}";
+},
+{
+name = Anchor26;
+position = "{412, 125}";
+},
+{
+name = Anchor28;
+position = "{439, 100}";
+},
+{
+name = Anchor30;
+position = "{342, 266}";
+},
+{
+name = Anchor32;
+position = "{386, 65}";
+},
+{
+name = Anchor4;
+position = "{276, 425}";
+},
+{
+name = Anchor6;
+position = "{349, 0}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -971,6 +1342,56 @@ glyphname = Ga_khar;
 lastChange = "2019-12-16 17:27:41 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor12;
+position = "{340, 0}";
+},
+{
+name = Anchor14;
+position = "{375, 712}";
+},
+{
+name = Anchor16;
+position = "{250, -10}";
+},
+{
+name = Anchor18;
+position = "{349, -20}";
+},
+{
+name = Anchor20;
+position = "{303, 150}";
+},
+{
+name = Anchor22;
+position = "{266, 186}";
+},
+{
+name = Anchor26;
+position = "{282, 175}";
+},
+{
+name = Anchor28;
+position = "{303, 100}";
+},
+{
+name = Anchor30;
+position = "{367, 447}";
+},
+{
+name = Anchor32;
+position = "{330, 205}";
+},
+{
+name = Anchor4;
+position = "{217, 426}";
+},
+{
+name = Anchor6;
+position = "{244, 18}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -1033,6 +1454,64 @@ glyphname = Gha_khar;
 lastChange = "2019-12-16 17:27:41 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor10;
+position = "{240, 0}";
+},
+{
+name = Anchor12;
+position = "{240, 0}";
+},
+{
+name = Anchor14;
+position = "{375, 712}";
+},
+{
+name = Anchor16;
+position = "{252, -11}";
+},
+{
+name = Anchor18;
+position = "{349, -21}";
+},
+{
+name = Anchor20;
+position = "{303, 150}";
+},
+{
+name = Anchor22;
+position = "{256, 186}";
+},
+{
+name = Anchor26;
+position = "{275, 115}";
+},
+{
+name = Anchor28;
+position = "{561, 100}";
+},
+{
+name = Anchor30;
+position = "{367, 447}";
+},
+{
+name = Anchor32;
+position = "{290, 175}";
+},
+{
+name = Anchor4;
+position = "{217, 426}";
+},
+{
+name = Anchor6;
+position = "{488, 13}";
+},
+{
+name = Anchor8;
+position = "{243, 1}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -1109,6 +1588,60 @@ glyphname = Ca_khar;
 lastChange = "2019-12-16 17:27:41 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor10;
+position = "{262, 0}";
+},
+{
+name = Anchor12;
+position = "{292, 0}";
+},
+{
+name = Anchor14;
+position = "{314, 712}";
+},
+{
+name = Anchor16;
+position = "{305, 0}";
+},
+{
+name = Anchor18;
+position = "{344, -40}";
+},
+{
+name = Anchor20;
+position = "{349, 145}";
+},
+{
+name = Anchor22;
+position = "{350, 186}";
+},
+{
+name = Anchor26;
+position = "{402, 175}";
+},
+{
+name = Anchor28;
+position = "{402, 100}";
+},
+{
+name = Anchor30;
+position = "{460, 421}";
+},
+{
+name = Anchor32;
+position = "{412, 205}";
+},
+{
+name = Anchor4;
+position = "{142, 425}";
+},
+{
+name = Anchor6;
+position = "{262, 0}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -1165,6 +1698,64 @@ glyphname = Cha_khar;
 lastChange = "2019-12-16 17:27:41 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor10;
+position = "{265, 0}";
+},
+{
+name = Anchor12;
+position = "{317, 0}";
+},
+{
+name = Anchor14;
+position = "{420, 712}";
+},
+{
+name = Anchor16;
+position = "{268, -10}";
+},
+{
+name = Anchor18;
+position = "{349, -59}";
+},
+{
+name = Anchor20;
+position = "{328, 150}";
+},
+{
+name = Anchor22;
+position = "{302, 186}";
+},
+{
+name = Anchor26;
+position = "{311, 155}";
+},
+{
+name = Anchor28;
+position = "{587, 100}";
+},
+{
+name = Anchor30;
+position = "{294, 187}";
+},
+{
+name = Anchor32;
+position = "{367, 75}";
+},
+{
+name = Anchor4;
+position = "{252, 425}";
+},
+{
+name = Anchor6;
+position = "{539, 89}";
+},
+{
+name = Anchor8;
+position = "{269, 18}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -1246,6 +1837,60 @@ glyphname = Ja_khar;
 lastChange = "2019-12-16 17:27:41 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor10;
+position = "{101, 0}";
+},
+{
+name = Anchor12;
+position = "{279, 0}";
+},
+{
+name = Anchor14;
+position = "{338, 712}";
+},
+{
+name = Anchor16;
+position = "{158, 5}";
+},
+{
+name = Anchor18;
+position = "{199, -25}";
+},
+{
+name = Anchor20;
+position = "{196, 149}";
+},
+{
+name = Anchor22;
+position = "{200, 186}";
+},
+{
+name = Anchor26;
+position = "{279, 175}";
+},
+{
+name = Anchor28;
+position = "{239, 100}";
+},
+{
+name = Anchor30;
+position = "{409, 467}";
+},
+{
+name = Anchor32;
+position = "{279, 275}";
+},
+{
+name = Anchor4;
+position = "{197, 470}";
+},
+{
+name = Anchor6;
+position = "{101, 0}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -1283,6 +1928,60 @@ glyphname = Nya_khar;
 lastChange = "2019-12-16 17:27:41 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor10;
+position = "{14, 0}";
+},
+{
+name = Anchor12;
+position = "{314, 0}";
+},
+{
+name = Anchor14;
+position = "{408, 712}";
+},
+{
+name = Anchor16;
+position = "{68, 5}";
+},
+{
+name = Anchor18;
+position = "{111, -27}";
+},
+{
+name = Anchor20;
+position = "{130, 165}";
+},
+{
+name = Anchor22;
+position = "{102, 186}";
+},
+{
+name = Anchor26;
+position = "{154, 155}";
+},
+{
+name = Anchor28;
+position = "{144, 100}";
+},
+{
+name = Anchor30;
+position = "{259, 431}";
+},
+{
+name = Anchor32;
+position = "{214, 245}";
+},
+{
+name = Anchor4;
+position = "{363, 425}";
+},
+{
+name = Anchor6;
+position = "{14, 0}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -1341,6 +2040,64 @@ glyphname = Tta_khar;
 lastChange = "2019-12-16 17:27:41 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor10;
+position = "{422, -37}";
+},
+{
+name = Anchor12;
+position = "{323, 0}";
+},
+{
+name = Anchor14;
+position = "{298, 712}";
+},
+{
+name = Anchor16;
+position = "{328, -90}";
+},
+{
+name = Anchor18;
+position = "{309, -31}";
+},
+{
+name = Anchor20;
+position = "{85, 0}";
+},
+{
+name = Anchor22;
+position = "{349, -45}";
+},
+{
+name = Anchor26;
+position = "{344, 351}";
+},
+{
+name = Anchor28;
+position = "{477, 117}";
+},
+{
+name = Anchor30;
+position = "{319, 421}";
+},
+{
+name = Anchor32;
+position = "{361, 430}";
+},
+{
+name = Anchor4;
+position = "{174, 426}";
+},
+{
+name = Anchor6;
+position = "{231, -92}";
+},
+{
+name = Anchor8;
+position = "{270, -50}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -1388,6 +2145,56 @@ glyphname = Ttha_khar;
 lastChange = "2019-12-16 17:27:41 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor12;
+position = "{307, 0}";
+},
+{
+name = Anchor14;
+position = "{315, 712}";
+},
+{
+name = Anchor16;
+position = "{309, 5}";
+},
+{
+name = Anchor18;
+position = "{445, -11}";
+},
+{
+name = Anchor20;
+position = "{387, 56}";
+},
+{
+name = Anchor22;
+position = "{387, 186}";
+},
+{
+name = Anchor26;
+position = "{410, 155}";
+},
+{
+name = Anchor28;
+position = "{430, 100}";
+},
+{
+name = Anchor30;
+position = "{469, 406}";
+},
+{
+name = Anchor32;
+position = "{437, 245}";
+},
+{
+name = Anchor4;
+position = "{257, 425}";
+},
+{
+name = Anchor6;
+position = "{351, 0}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -1443,6 +2250,56 @@ glyphname = Dda_khar;
 lastChange = "2019-12-16 17:27:41 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor12;
+position = "{288, 0}";
+},
+{
+name = Anchor14;
+position = "{322, 712}";
+},
+{
+name = Anchor16;
+position = "{289, 0}";
+},
+{
+name = Anchor18;
+position = "{425, -15}";
+},
+{
+name = Anchor20;
+position = "{378, 150}";
+},
+{
+name = Anchor22;
+position = "{338, 186}";
+},
+{
+name = Anchor26;
+position = "{363, 155}";
+},
+{
+name = Anchor28;
+position = "{385, 100}";
+},
+{
+name = Anchor30;
+position = "{418, 421}";
+},
+{
+name = Anchor32;
+position = "{398, 205}";
+},
+{
+name = Anchor4;
+position = "{238, 354}";
+},
+{
+name = Anchor6;
+position = "{319, 18}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -1515,6 +2372,56 @@ glyphname = Ddha_khar;
 lastChange = "2019-12-16 17:27:41 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor12;
+position = "{232, 0}";
+},
+{
+name = Anchor14;
+position = "{383, 712}";
+},
+{
+name = Anchor16;
+position = "{175, -10}";
+},
+{
+name = Anchor18;
+position = "{277, -14}";
+},
+{
+name = Anchor20;
+position = "{230, 150}";
+},
+{
+name = Anchor22;
+position = "{202, 186}";
+},
+{
+name = Anchor26;
+position = "{213, 155}";
+},
+{
+name = Anchor28;
+position = "{237, 100}";
+},
+{
+name = Anchor30;
+position = "{272, 421}";
+},
+{
+name = Anchor32;
+position = "{252, 275}";
+},
+{
+name = Anchor4;
+position = "{136, 426}";
+},
+{
+name = Anchor6;
+position = "{171, 18}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -1546,6 +2453,56 @@ glyphname = Nna_khar;
 lastChange = "2019-12-16 17:27:41 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor10;
+position = "{210, 0}";
+},
+{
+name = Anchor12;
+position = "{190, 0}";
+},
+{
+name = Anchor14;
+position = "{198, 712}";
+},
+{
+name = Anchor16;
+position = "{139, -19}";
+},
+{
+name = Anchor18;
+position = "{282, -30}";
+},
+{
+name = Anchor20;
+position = "{231, 58}";
+},
+{
+name = Anchor22;
+position = "{160, 186}";
+},
+{
+name = Anchor26;
+position = "{158, 155}";
+},
+{
+name = Anchor28;
+position = "{196, 53}";
+},
+{
+name = Anchor32;
+position = "{180, 275}";
+},
+{
+name = Anchor4;
+position = "{210, 352}";
+},
+{
+name = Anchor6;
+position = "{181, -2}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -1586,6 +2543,56 @@ glyphname = Ta_khar;
 lastChange = "2019-12-16 17:27:41 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor10;
+position = "{320, -67}";
+},
+{
+name = Anchor12;
+position = "{300, 0}";
+},
+{
+name = Anchor14;
+position = "{323, 712}";
+},
+{
+name = Anchor16;
+position = "{143, -17}";
+},
+{
+name = Anchor18;
+position = "{283, -28}";
+},
+{
+name = Anchor20;
+position = "{227, 166}";
+},
+{
+name = Anchor22;
+position = "{329, -45}";
+},
+{
+name = Anchor26;
+position = "{471, 245}";
+},
+{
+name = Anchor28;
+position = "{384, 100}";
+},
+{
+name = Anchor30;
+position = "{500, 461}";
+},
+{
+name = Anchor32;
+position = "{420, 275}";
+},
+{
+name = Anchor4;
+position = "{281, 469}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -1637,6 +2644,60 @@ glyphname = Tha_khar;
 lastChange = "2019-12-16 17:27:41 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor12;
+position = "{262, 0}";
+},
+{
+name = Anchor14;
+position = "{397, 712}";
+},
+{
+name = Anchor16;
+position = "{203, -5}";
+},
+{
+name = Anchor18;
+position = "{319, -14}";
+},
+{
+name = Anchor20;
+position = "{272, 150}";
+},
+{
+name = Anchor22;
+position = "{245, 186}";
+},
+{
+name = Anchor24;
+position = "{158, 525}";
+},
+{
+name = Anchor26;
+position = "{255, 155}";
+},
+{
+name = Anchor28;
+position = "{282, 100}";
+},
+{
+name = Anchor30;
+position = "{312, 421}";
+},
+{
+name = Anchor32;
+position = "{302, 275}";
+},
+{
+name = Anchor4;
+position = "{188, 470}";
+},
+{
+name = Anchor6;
+position = "{213, 18}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -1684,6 +2745,60 @@ glyphname = Da_khar;
 lastChange = "2019-12-16 17:27:41 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor10;
+position = "{305, -67}";
+},
+{
+name = Anchor12;
+position = "{243, 0}";
+},
+{
+name = Anchor14;
+position = "{241, 712}";
+},
+{
+name = Anchor16;
+position = "{260, -10}";
+},
+{
+name = Anchor18;
+position = "{383, -20}";
+},
+{
+name = Anchor20;
+position = "{303, 171}";
+},
+{
+name = Anchor22;
+position = "{249, -45}";
+},
+{
+name = Anchor26;
+position = "{395, 215}";
+},
+{
+name = Anchor28;
+position = "{383, 100}";
+},
+{
+name = Anchor30;
+position = "{322, 421}";
+},
+{
+name = Anchor32;
+position = "{383, 275}";
+},
+{
+name = Anchor4;
+position = "{309, 471}";
+},
+{
+name = Anchor6;
+position = "{308, 0}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -1735,6 +2850,60 @@ glyphname = Dha_khar;
 lastChange = "2019-12-16 17:27:41 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor10;
+position = "{237, 0}";
+},
+{
+name = Anchor12;
+position = "{267, 0}";
+},
+{
+name = Anchor14;
+position = "{267, 712}";
+},
+{
+name = Anchor16;
+position = "{263, -22}";
+},
+{
+name = Anchor18;
+position = "{325, -34}";
+},
+{
+name = Anchor20;
+position = "{320, 145}";
+},
+{
+name = Anchor22;
+position = "{317, 186}";
+},
+{
+name = Anchor26;
+position = "{402, 185}";
+},
+{
+name = Anchor28;
+position = "{387, 100}";
+},
+{
+name = Anchor30;
+position = "{397, 376}";
+},
+{
+name = Anchor32;
+position = "{397, 245}";
+},
+{
+name = Anchor4;
+position = "{206, 427}";
+},
+{
+name = Anchor6;
+position = "{237, 0}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -1790,6 +2959,56 @@ glyphname = Na_khar;
 lastChange = "2019-12-16 17:27:41 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor12;
+position = "{251, 0}";
+},
+{
+name = Anchor14;
+position = "{263, 712}";
+},
+{
+name = Anchor16;
+position = "{184, 1}";
+},
+{
+name = Anchor18;
+position = "{312, -12}";
+},
+{
+name = Anchor20;
+position = "{252, 56}";
+},
+{
+name = Anchor22;
+position = "{261, 186}";
+},
+{
+name = Anchor26;
+position = "{291, 155}";
+},
+{
+name = Anchor28;
+position = "{301, 100}";
+},
+{
+name = Anchor30;
+position = "{311, 421}";
+},
+{
+name = Anchor32;
+position = "{331, 275}";
+},
+{
+name = Anchor4;
+position = "{231, 357}";
+},
+{
+name = Anchor6;
+position = "{215, -3}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -1841,6 +3060,68 @@ glyphname = Pa_khar;
 lastChange = "2019-12-16 17:27:41 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor10;
+position = "{74, 18}";
+},
+{
+name = Anchor12;
+position = "{282, 0}";
+},
+{
+name = Anchor14;
+position = "{344, 712}";
+},
+{
+name = Anchor16;
+position = "{69, 0}";
+},
+{
+name = Anchor18;
+position = "{183, -14}";
+},
+{
+name = Anchor20;
+position = "{134, 150}";
+},
+{
+name = Anchor22;
+position = "{112, 186}";
+},
+{
+name = Anchor24;
+position = "{394, 489}";
+},
+{
+name = Anchor26;
+position = "{117, 155}";
+},
+{
+name = Anchor28;
+position = "{448, 150}";
+},
+{
+name = Anchor30;
+position = "{306, 259}";
+},
+{
+name = Anchor32;
+position = "{172, 275}";
+},
+{
+name = Anchor4;
+position = "{367, 470}";
+},
+{
+name = Anchor6;
+position = "{419, 152}";
+},
+{
+name = Anchor8;
+position = "{75, 15}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -1884,6 +3165,68 @@ glyphname = Pha_khar;
 lastChange = "2019-12-16 17:27:41 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor10;
+position = "{158, 18}";
+},
+{
+name = Anchor12;
+position = "{346, 0}";
+},
+{
+name = Anchor14;
+position = "{404, 712}";
+},
+{
+name = Anchor16;
+position = "{149, -6}";
+},
+{
+name = Anchor18;
+position = "{264, -16}";
+},
+{
+name = Anchor20;
+position = "{218, 150}";
+},
+{
+name = Anchor22;
+position = "{192, 186}";
+},
+{
+name = Anchor24;
+position = "{486, 489}";
+},
+{
+name = Anchor26;
+position = "{198, 155}";
+},
+{
+name = Anchor28;
+position = "{536, 150}";
+},
+{
+name = Anchor30;
+position = "{384, 259}";
+},
+{
+name = Anchor32;
+position = "{246, 275}";
+},
+{
+name = Anchor4;
+position = "{451, 470}";
+},
+{
+name = Anchor6;
+position = "{506, 152}";
+},
+{
+name = Anchor8;
+position = "{158, 15}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -1938,6 +3281,56 @@ glyphname = Ba_khar;
 lastChange = "2019-12-16 17:27:41 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor12;
+position = "{315, 0}";
+},
+{
+name = Anchor14;
+position = "{337, 712}";
+},
+{
+name = Anchor16;
+position = "{313, 6}";
+},
+{
+name = Anchor18;
+position = "{453, -6}";
+},
+{
+name = Anchor20;
+position = "{388, 60}";
+},
+{
+name = Anchor22;
+position = "{400, 186}";
+},
+{
+name = Anchor26;
+position = "{426, 155}";
+},
+{
+name = Anchor28;
+position = "{445, 100}";
+},
+{
+name = Anchor30;
+position = "{495, 421}";
+},
+{
+name = Anchor32;
+position = "{465, 275}";
+},
+{
+name = Anchor4;
+position = "{186, 426}";
+},
+{
+name = Anchor6;
+position = "{355, 0}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -1995,6 +3388,64 @@ glyphname = Bha_khar;
 lastChange = "2019-12-16 17:27:41 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor10;
+position = "{181, 18}";
+},
+{
+name = Anchor12;
+position = "{349, 0}";
+},
+{
+name = Anchor14;
+position = "{394, 712}";
+},
+{
+name = Anchor16;
+position = "{168, -5}";
+},
+{
+name = Anchor18;
+position = "{287, -14}";
+},
+{
+name = Anchor20;
+position = "{241, 150}";
+},
+{
+name = Anchor22;
+position = "{213, 186}";
+},
+{
+name = Anchor26;
+position = "{221, 155}";
+},
+{
+name = Anchor28;
+position = "{580, 150}";
+},
+{
+name = Anchor30;
+position = "{287, 421}";
+},
+{
+name = Anchor32;
+position = "{269, 275}";
+},
+{
+name = Anchor4;
+position = "{145, 426}";
+},
+{
+name = Anchor6;
+position = "{548, 160}";
+},
+{
+name = Anchor8;
+position = "{181, 18}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -2052,6 +3503,52 @@ glyphname = Ma_khar;
 lastChange = "2019-12-16 17:27:41 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor10;
+position = "{470, 175}";
+},
+{
+name = Anchor12;
+position = "{386, 255}";
+},
+{
+name = Anchor14;
+position = "{406, 712}";
+},
+{
+name = Anchor16;
+position = "{389, 145}";
+},
+{
+name = Anchor18;
+position = "{351, 0}";
+},
+{
+name = Anchor22;
+position = "{378, 186}";
+},
+{
+name = Anchor26;
+position = "{408, 115}";
+},
+{
+name = Anchor28;
+position = "{550, 320}";
+},
+{
+name = Anchor32;
+position = "{398, 175}";
+},
+{
+name = Anchor4;
+position = "{388, 432}";
+},
+{
+name = Anchor6;
+position = "{280, 146}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -2097,6 +3594,60 @@ glyphname = Ya_khar;
 lastChange = "2019-12-16 17:27:41 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor10;
+position = "{39, 0}";
+},
+{
+name = Anchor12;
+position = "{308, 0}";
+},
+{
+name = Anchor14;
+position = "{372, 712}";
+},
+{
+name = Anchor16;
+position = "{312, 5}";
+},
+{
+name = Anchor18;
+position = "{671, -29}";
+},
+{
+name = Anchor20;
+position = "{81, 70}";
+},
+{
+name = Anchor22;
+position = "{95, 186}";
+},
+{
+name = Anchor26;
+position = "{137, 155}";
+},
+{
+name = Anchor28;
+position = "{545, -10}";
+},
+{
+name = Anchor30;
+position = "{321, 261}";
+},
+{
+name = Anchor32;
+position = "{211, 281}";
+},
+{
+name = Anchor4;
+position = "{441, 425}";
+},
+{
+name = Anchor6;
+position = "{570, -2}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -2131,6 +3682,52 @@ glyphname = Ra_khar;
 lastChange = "2019-12-16 17:27:41 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor12;
+position = "{278, 0}";
+},
+{
+name = Anchor14;
+position = "{306, 712}";
+},
+{
+name = Anchor16;
+position = "{317, -20}";
+},
+{
+name = Anchor18;
+position = "{361, -45}";
+},
+{
+name = Anchor20;
+position = "{323, 69}";
+},
+{
+name = Anchor26;
+position = "{378, 155}";
+},
+{
+name = Anchor28;
+position = "{379, 100}";
+},
+{
+name = Anchor30;
+position = "{468, 421}";
+},
+{
+name = Anchor32;
+position = "{398, 275}";
+},
+{
+name = Anchor4;
+position = "{247, 425}";
+},
+{
+name = Anchor6;
+position = "{283, 0}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -2176,6 +3773,60 @@ glyphname = La_khar;
 lastChange = "2019-12-16 17:27:41 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor12;
+position = "{266, 0}";
+},
+{
+name = Anchor14;
+position = "{417, 712}";
+},
+{
+name = Anchor16;
+position = "{249, -7}";
+},
+{
+name = Anchor18;
+position = "{371, -15}";
+},
+{
+name = Anchor20;
+position = "{323, 150}";
+},
+{
+name = Anchor22;
+position = "{286, 186}";
+},
+{
+name = Anchor24;
+position = "{166, 527}";
+},
+{
+name = Anchor26;
+position = "{299, 155}";
+},
+{
+name = Anchor28;
+position = "{328, 100}";
+},
+{
+name = Anchor30;
+position = "{336, 421}";
+},
+{
+name = Anchor32;
+position = "{346, 275}";
+},
+{
+name = Anchor4;
+position = "{208, 470}";
+},
+{
+name = Anchor6;
+position = "{264, 18}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -2213,6 +3864,56 @@ glyphname = Va_khar;
 lastChange = "2019-12-16 17:27:41 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor12;
+position = "{287, 0}";
+},
+{
+name = Anchor14;
+position = "{315, 712}";
+},
+{
+name = Anchor16;
+position = "{308, -20}";
+},
+{
+name = Anchor18;
+position = "{369, -12}";
+},
+{
+name = Anchor20;
+position = "{323, 80}";
+},
+{
+name = Anchor22;
+position = "{327, 186}";
+},
+{
+name = Anchor26;
+position = "{380, 155}";
+},
+{
+name = Anchor28;
+position = "{377, 100}";
+},
+{
+name = Anchor30;
+position = "{469, 447}";
+},
+{
+name = Anchor32;
+position = "{426, 275}";
+},
+{
+name = Anchor4;
+position = "{237, 425}";
+},
+{
+name = Anchor6;
+position = "{274, 0}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -2252,6 +3953,56 @@ glyphname = Sha_khar;
 lastChange = "2019-12-16 17:27:41 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor12;
+position = "{297, 0}";
+},
+{
+name = Anchor14;
+position = "{469, 712}";
+},
+{
+name = Anchor16;
+position = "{468, 0}";
+},
+{
+name = Anchor18;
+position = "{604, -21}";
+},
+{
+name = Anchor20;
+position = "{549, 55}";
+},
+{
+name = Anchor22;
+position = "{120, 186}";
+},
+{
+name = Anchor26;
+position = "{139, 155}";
+},
+{
+name = Anchor28;
+position = "{596, 100}";
+},
+{
+name = Anchor30;
+position = "{412, 356}";
+},
+{
+name = Anchor32;
+position = "{200, 275}";
+},
+{
+name = Anchor4;
+position = "{435, 470}";
+},
+{
+name = Anchor6;
+position = "{513, -1}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -2297,6 +4048,60 @@ glyphname = Ssa_khar;
 lastChange = "2019-12-16 17:27:41 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor10;
+position = "{142, 10}";
+},
+{
+name = Anchor12;
+position = "{352, 0}";
+},
+{
+name = Anchor14;
+position = "{411, 712}";
+},
+{
+name = Anchor16;
+position = "{153, -25}";
+},
+{
+name = Anchor18;
+position = "{227, -27}";
+},
+{
+name = Anchor20;
+position = "{255, 168}";
+},
+{
+name = Anchor22;
+position = "{230, 186}";
+},
+{
+name = Anchor26;
+position = "{281, 185}";
+},
+{
+name = Anchor28;
+position = "{267, 100}";
+},
+{
+name = Anchor30;
+position = "{288, 317}";
+},
+{
+name = Anchor32;
+position = "{332, 245}";
+},
+{
+name = Anchor4;
+position = "{231, 470}";
+},
+{
+name = Anchor6;
+position = "{142, 10}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -2349,6 +4154,64 @@ glyphname = Sa_khar;
 lastChange = "2019-12-16 17:27:41 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor10;
+position = "{36, 10}";
+},
+{
+name = Anchor12;
+position = "{283, 0}";
+},
+{
+name = Anchor14;
+position = "{334, 712}";
+},
+{
+name = Anchor16;
+position = "{47, -24}";
+},
+{
+name = Anchor18;
+position = "{122, -27}";
+},
+{
+name = Anchor20;
+position = "{141, 165}";
+},
+{
+name = Anchor22;
+position = "{116, 186}";
+},
+{
+name = Anchor26;
+position = "{170, 159}";
+},
+{
+name = Anchor28;
+position = "{163, 100}";
+},
+{
+name = Anchor30;
+position = "{247, 406}";
+},
+{
+name = Anchor32;
+position = "{231, 205}";
+},
+{
+name = Anchor4;
+position = "{113, 470}";
+},
+{
+name = Anchor6;
+position = "{36, 10}";
+},
+{
+name = Anchor8;
+position = "{34, -7}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -2407,6 +4270,56 @@ glyphname = Za_khar;
 lastChange = "2019-12-16 17:27:41 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor12;
+position = "{305, 0}";
+},
+{
+name = Anchor14;
+position = "{349, 712}";
+},
+{
+name = Anchor16;
+position = "{338, -5}";
+},
+{
+name = Anchor18;
+position = "{455, -14}";
+},
+{
+name = Anchor20;
+position = "{408, 150}";
+},
+{
+name = Anchor22;
+position = "{370, 186}";
+},
+{
+name = Anchor26;
+position = "{393, 155}";
+},
+{
+name = Anchor28;
+position = "{415, 100}";
+},
+{
+name = Anchor30;
+position = "{454, 421}";
+},
+{
+name = Anchor32;
+position = "{426, 245}";
+},
+{
+name = Anchor4;
+position = "{309, 427}";
+},
+{
+name = Anchor6;
+position = "{349, 18}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -2456,6 +4369,64 @@ glyphname = Ha_khar;
 lastChange = "2019-12-16 17:27:41 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor10;
+position = "{394, -67}";
+},
+{
+name = Anchor12;
+position = "{284, 0}";
+},
+{
+name = Anchor14;
+position = "{313, 712}";
+},
+{
+name = Anchor16;
+position = "{318, -90}";
+},
+{
+name = Anchor18;
+position = "{231, -176}";
+},
+{
+name = Anchor20;
+position = "{54, 0}";
+},
+{
+name = Anchor22;
+position = "{294, -45}";
+},
+{
+name = Anchor26;
+position = "{300, -170}";
+},
+{
+name = Anchor28;
+position = "{418, 38}";
+},
+{
+name = Anchor30;
+position = "{394, 417}";
+},
+{
+name = Anchor32;
+position = "{304, -95}";
+},
+{
+name = Anchor4;
+position = "{274, 350}";
+},
+{
+name = Anchor6;
+position = "{292, 0}";
+},
+{
+name = Anchor8;
+position = "{178, -90}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -2519,6 +4490,64 @@ glyphname = Kka_khar;
 lastChange = "2019-12-16 17:27:41 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor10;
+position = "{330, -7}";
+},
+{
+name = Anchor12;
+position = "{337, 0}";
+},
+{
+name = Anchor14;
+position = "{334, 712}";
+},
+{
+name = Anchor16;
+position = "{297, 0}";
+},
+{
+name = Anchor18;
+position = "{408, -51}";
+},
+{
+name = Anchor20;
+position = "{371, 60}";
+},
+{
+name = Anchor22;
+position = "{359, 186}";
+},
+{
+name = Anchor26;
+position = "{417, 155}";
+},
+{
+name = Anchor28;
+position = "{703, 100}";
+},
+{
+name = Anchor30;
+position = "{469, 406}";
+},
+{
+name = Anchor32;
+position = "{423, 175}";
+},
+{
+name = Anchor4;
+position = "{302, 425}";
+},
+{
+name = Anchor6;
+position = "{635, 0}";
+},
+{
+name = Anchor8;
+position = "{333, 0}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -2584,6 +4613,56 @@ glyphname = Tttha_khar;
 lastChange = "2019-12-16 17:27:41 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor12;
+position = "{389, 0}";
+},
+{
+name = Anchor14;
+position = "{360, 712}";
+},
+{
+name = Anchor16;
+position = "{348, 5}";
+},
+{
+name = Anchor18;
+position = "{484, -14}";
+},
+{
+name = Anchor20;
+position = "{427, 60}";
+},
+{
+name = Anchor22;
+position = "{418, 186}";
+},
+{
+name = Anchor26;
+position = "{450, 115}";
+},
+{
+name = Anchor28;
+position = "{475, 100}";
+},
+{
+name = Anchor30;
+position = "{480, 294}";
+},
+{
+name = Anchor32;
+position = "{433, 115}";
+},
+{
+name = Anchor4;
+position = "{326, 426}";
+},
+{
+name = Anchor6;
+position = "{391, 0}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -2645,6 +4724,56 @@ glyphname = TTta_khar;
 lastChange = "2019-12-16 17:27:41 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor12;
+position = "{179, 0}";
+},
+{
+name = Anchor14;
+position = "{298, 712}";
+},
+{
+name = Anchor16;
+position = "{177, -19}";
+},
+{
+name = Anchor18;
+position = "{229, -39}";
+},
+{
+name = Anchor20;
+position = "{194, 80}";
+},
+{
+name = Anchor22;
+position = "{203, 186}";
+},
+{
+name = Anchor26;
+position = "{254, 155}";
+},
+{
+name = Anchor28;
+position = "{239, 100}";
+},
+{
+name = Anchor30;
+position = "{319, 421}";
+},
+{
+name = Anchor32;
+position = "{301, 275}";
+},
+{
+name = Anchor4;
+position = "{174, 426}";
+},
+{
+name = Anchor6;
+position = "{148, 0}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -2685,6 +4814,60 @@ glyphname = VHa_khar;
 lastChange = "2019-12-16 17:27:41 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor10;
+position = "{401, -6}";
+},
+{
+name = Anchor12;
+position = "{287, 0}";
+},
+{
+name = Anchor14;
+position = "{315, 712}";
+},
+{
+name = Anchor16;
+position = "{308, -20}";
+},
+{
+name = Anchor18;
+position = "{353, -43}";
+},
+{
+name = Anchor20;
+position = "{324, 80}";
+},
+{
+name = Anchor22;
+position = "{327, 186}";
+},
+{
+name = Anchor26;
+position = "{360, 135}";
+},
+{
+name = Anchor28;
+position = "{377, 100}";
+},
+{
+name = Anchor30;
+position = "{461, 407}";
+},
+{
+name = Anchor32;
+position = "{426, 275}";
+},
+{
+name = Anchor4;
+position = "{237, 425}";
+},
+{
+name = Anchor6;
+position = "{274, 0}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -2752,6 +4935,20 @@ glyphname = BarAbove_khar;
 lastChange = "2019-12-16 17:27:39 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor34;
+position = "{-300, 868}";
+},
+{
+name = _Anchor14;
+position = "{-301, 714}";
+},
+{
+name = _Anchor34;
+position = "{-301, 714}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -2769,12 +4966,31 @@ width = 0;
 );
 unicode = 10A38;
 category = Mark;
+subCategory = Nonspacing;
 },
 {
 glyphname = Cauda_khar;
 lastChange = "2019-12-16 17:27:38 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor38;
+position = "{-220, -92}";
+},
+{
+name = Anchor40;
+position = "{-310, -12}";
+},
+{
+name = _Anchor18;
+position = "{-311, 3}";
+},
+{
+name = _Anchor36;
+position = "{-311, 3}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -2802,12 +5018,35 @@ width = 0;
 );
 unicode = 10A39;
 category = Mark;
+subCategory = Nonspacing;
 },
 {
 glyphname = DotBelow_khar;
 lastChange = "2019-12-16 17:27:38 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor36;
+position = "{-143, -306}";
+},
+{
+name = Anchor38;
+position = "{-137, -285}";
+},
+{
+name = Anchor40;
+position = "{-137, -195}";
+},
+{
+name = _Anchor12;
+position = "{-137, 0}";
+},
+{
+name = _Anchor40;
+position = "{-137, 0}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -2833,12 +5072,23 @@ width = 0;
 );
 unicode = 10A3A;
 category = Mark;
+subCategory = Nonspacing;
 },
 {
 glyphname = Virama_khar;
 lastChange = "2019-12-16 17:27:31 +0000";
 layers = (
 {
+anchors = (
+{
+name = _Anchor12;
+position = "{-252, 0}";
+},
+{
+name = _Anchor40;
+position = "{-252, 0}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -2864,6 +5114,7 @@ width = 0;
 );
 unicode = 10A3F;
 category = Mark;
+subCategory = Nonspacing;
 },
 {
 glyphname = One_khar;
@@ -4013,6 +6264,32 @@ glyphname = AI_khar;
 lastChange = "2019-12-16 17:27:39 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor12;
+position = "{334, 0}";
+},
+{
+name = Anchor14;
+position = "{327, 712}";
+},
+{
+name = Anchor16;
+position = "{287, 0}";
+},
+{
+name = Anchor18;
+position = "{431, -6}";
+},
+{
+name = Anchor28;
+position = "{420, 100}";
+},
+{
+name = Anchor30;
+position = "{469, 406}";
+}
+);
 components = (
 {
 name = A_khar;
@@ -4034,6 +6311,28 @@ glyphname = AE_khar;
 lastChange = "2019-12-16 17:27:39 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor12;
+position = "{334, 0}";
+},
+{
+name = Anchor14;
+position = "{327, 712}";
+},
+{
+name = Anchor16;
+position = "{287, 0}";
+},
+{
+name = Anchor18;
+position = "{431, -6}";
+},
+{
+name = Anchor28;
+position = "{420, 100}";
+}
+);
 components = (
 {
 name = A_khar;
@@ -4066,6 +6365,28 @@ glyphname = Nni_khar;
 lastChange = "2019-12-16 17:27:39 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor12;
+position = "{272, 0}";
+},
+{
+name = Anchor14;
+position = "{270, 712}";
+},
+{
+name = Anchor16;
+position = "{211, -19}";
+},
+{
+name = Anchor18;
+position = "{353, -30}";
+},
+{
+name = Anchor28;
+position = "{273, 53}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -4120,6 +6441,24 @@ glyphname = Nnu_khar;
 lastChange = "2019-12-16 17:45:56 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor12;
+position = "{220, -120}";
+},
+{
+name = Anchor14;
+position = "{328, 712}";
+},
+{
+name = Anchor16;
+position = "{269, -89}";
+},
+{
+name = Anchor28;
+position = "{333, 53}";
+}
+);
 background = {
 paths = (
 {
@@ -4254,6 +6593,24 @@ glyphname = Nno_khar;
 lastChange = "2019-12-16 17:27:39 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor12;
+position = "{390, 0}";
+},
+{
+name = Anchor14;
+position = "{388, 712}";
+},
+{
+name = Anchor16;
+position = "{329, -19}";
+},
+{
+name = Anchor28;
+position = "{393, 53}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -4306,6 +6663,32 @@ glyphname = Ni_khar;
 lastChange = "2019-12-16 17:27:39 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor12;
+position = "{251, 0}";
+},
+{
+name = Anchor14;
+position = "{263, 712}";
+},
+{
+name = Anchor16;
+position = "{184, 1}";
+},
+{
+name = Anchor18;
+position = "{315, -6}";
+},
+{
+name = Anchor28;
+position = "{299, 100}";
+},
+{
+name = Anchor30;
+position = "{311, 421}";
+}
+);
 components = (
 {
 name = I_horizontal;
@@ -4327,6 +6710,28 @@ glyphname = Ne_khar;
 lastChange = "2019-12-16 17:27:39 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor12;
+position = "{251, 0}";
+},
+{
+name = Anchor14;
+position = "{263, 712}";
+},
+{
+name = Anchor16;
+position = "{184, 1}";
+},
+{
+name = Anchor18;
+position = "{315, -7}";
+},
+{
+name = Anchor28;
+position = "{299, 100}";
+}
+);
 components = (
 {
 name = Na_khar;
@@ -4359,6 +6764,36 @@ glyphname = Mu_khar;
 lastChange = "2019-12-16 17:27:39 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor10;
+position = "{293, -67}";
+},
+{
+name = Anchor12;
+position = "{213, 0}";
+},
+{
+name = Anchor14;
+position = "{301, 712}";
+},
+{
+name = Anchor16;
+position = "{228, -103}";
+},
+{
+name = Anchor28;
+position = "{274, 0}";
+},
+{
+name = Anchor6;
+position = "{201, 0}";
+},
+{
+name = Anchor8;
+position = "{92, 90}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -4410,6 +6845,40 @@ glyphname = Me_khar;
 lastChange = "2019-12-16 17:27:39 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor10;
+position = "{470, 175}";
+},
+{
+name = Anchor12;
+position = "{376, 255}";
+},
+{
+name = Anchor14;
+position = "{406, 712}";
+},
+{
+name = Anchor16;
+position = "{389, 145}";
+},
+{
+name = Anchor18;
+position = "{351, 0}";
+},
+{
+name = Anchor28;
+position = "{499, 300}";
+},
+{
+name = Anchor30;
+position = "{340, 355}";
+},
+{
+name = Anchor6;
+position = "{280, 146}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -4463,6 +6932,40 @@ glyphname = Mo_khar;
 lastChange = "2019-12-16 17:27:39 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor10;
+position = "{470, 175}";
+},
+{
+name = Anchor12;
+position = "{386, 125}";
+},
+{
+name = Anchor14;
+position = "{406, 712}";
+},
+{
+name = Anchor16;
+position = "{389, 145}";
+},
+{
+name = Anchor18;
+position = "{351, 0}";
+},
+{
+name = Anchor28;
+position = "{499, 300}";
+},
+{
+name = Anchor6;
+position = "{280, 146}";
+},
+{
+name = Anchor8;
+position = "{374, 186}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -4520,6 +7023,44 @@ glyphname = De_khar;
 lastChange = "2019-12-16 17:27:39 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor10;
+position = "{502, -66}";
+},
+{
+name = Anchor12;
+position = "{401, 0}";
+},
+{
+name = Anchor14;
+position = "{408, 712}";
+},
+{
+name = Anchor16;
+position = "{448, -93}";
+},
+{
+name = Anchor18;
+position = "{361, -200}";
+},
+{
+name = Anchor22;
+position = "{391, -57}";
+},
+{
+name = Anchor28;
+position = "{642, 100}";
+},
+{
+name = Anchor32;
+position = "{183, 365}";
+},
+{
+name = Anchor6;
+position = "{349, -107}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -4565,6 +7106,56 @@ glyphname = Hi_khar;
 lastChange = "2019-12-16 17:27:41 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor10;
+position = "{394, -67}";
+},
+{
+name = Anchor12;
+position = "{284, 0}";
+},
+{
+name = Anchor14;
+position = "{313, 712}";
+},
+{
+name = Anchor16;
+position = "{318, -90}";
+},
+{
+name = Anchor18;
+position = "{231, -176}";
+},
+{
+name = Anchor20;
+position = "{54, 0}";
+},
+{
+name = Anchor22;
+position = "{294, -45}";
+},
+{
+name = Anchor26;
+position = "{300, -170}";
+},
+{
+name = Anchor28;
+position = "{418, 38}";
+},
+{
+name = Anchor30;
+position = "{394, 417}";
+},
+{
+name = Anchor6;
+position = "{292, 0}";
+},
+{
+name = Anchor8;
+position = "{178, -90}";
+}
+);
 components = (
 {
 name = Ha_khar;
@@ -4586,6 +7177,52 @@ glyphname = He_khar;
 lastChange = "2019-12-16 17:27:41 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor10;
+position = "{394, -67}";
+},
+{
+name = Anchor12;
+position = "{284, 0}";
+},
+{
+name = Anchor14;
+position = "{313, 712}";
+},
+{
+name = Anchor16;
+position = "{318, -90}";
+},
+{
+name = Anchor18;
+position = "{231, -176}";
+},
+{
+name = Anchor20;
+position = "{54, 0}";
+},
+{
+name = Anchor22;
+position = "{294, -45}";
+},
+{
+name = Anchor26;
+position = "{300, -170}";
+},
+{
+name = Anchor28;
+position = "{418, 38}";
+},
+{
+name = Anchor6;
+position = "{292, 0}";
+},
+{
+name = Anchor8;
+position = "{178, -90}";
+}
+);
 components = (
 {
 name = Ha_khar;
@@ -4618,6 +7255,56 @@ glyphname = KTa_khar;
 lastChange = "2019-12-16 17:27:41 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor10;
+position = "{329, -336}";
+},
+{
+name = Anchor12;
+position = "{412, -239}";
+},
+{
+name = Anchor14;
+position = "{302, 712}";
+},
+{
+name = Anchor16;
+position = "{282, -250}";
+},
+{
+name = Anchor18;
+position = "{326, -384}";
+},
+{
+name = Anchor20;
+position = "{255, -105}";
+},
+{
+name = Anchor26;
+position = "{430, 255}";
+},
+{
+name = Anchor28;
+position = "{685, 100}";
+},
+{
+name = Anchor30;
+position = "{439, 58}";
+},
+{
+name = Anchor32;
+position = "{448, -95}";
+},
+{
+name = Anchor4;
+position = "{255, 104}";
+},
+{
+name = Anchor8;
+position = "{205, -352}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -4710,6 +7397,52 @@ glyphname = KSsa_khar;
 lastChange = "2019-12-16 17:27:41 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor12;
+position = "{291, 0}";
+},
+{
+name = Anchor14;
+position = "{331, 712}";
+},
+{
+name = Anchor16;
+position = "{281, -15}";
+},
+{
+name = Anchor18;
+position = "{417, -22}";
+},
+{
+name = Anchor20;
+position = "{303, 90}";
+},
+{
+name = Anchor26;
+position = "{317, 165}";
+},
+{
+name = Anchor28;
+position = "{329, 100}";
+},
+{
+name = Anchor30;
+position = "{353, 421}";
+},
+{
+name = Anchor32;
+position = "{344, 275}";
+},
+{
+name = Anchor4;
+position = "{248, 440}";
+},
+{
+name = Anchor6;
+position = "{251, 1}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -4768,6 +7501,52 @@ glyphname = KhKSsa_khar;
 lastChange = "2019-12-16 17:27:41 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor12;
+position = "{324, 0}";
+},
+{
+name = Anchor14;
+position = "{361, 876}";
+},
+{
+name = Anchor16;
+position = "{281, -15}";
+},
+{
+name = Anchor18;
+position = "{417, -22}";
+},
+{
+name = Anchor20;
+position = "{303, 90}";
+},
+{
+name = Anchor26;
+position = "{316, 155}";
+},
+{
+name = Anchor28;
+position = "{342, 100}";
+},
+{
+name = Anchor30;
+position = "{353, 421}";
+},
+{
+name = Anchor32;
+position = "{324, 275}";
+},
+{
+name = Anchor4;
+position = "{267, 440}";
+},
+{
+name = Anchor6;
+position = "{251, 1}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -4863,6 +7642,40 @@ glyphname = Dhik_khar;
 lastChange = "2019-12-16 17:27:41 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor12;
+position = "{284, -257}";
+},
+{
+name = Anchor14;
+position = "{323, 772}";
+},
+{
+name = Anchor16;
+position = "{378, -288}";
+},
+{
+name = Anchor18;
+position = "{243, -424}";
+},
+{
+name = Anchor26;
+position = "{471, 216}";
+},
+{
+name = Anchor28;
+position = "{459, 100}";
+},
+{
+name = Anchor32;
+position = "{188, -217}";
+},
+{
+name = Anchor4;
+position = "{122, -18}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -4979,6 +7792,52 @@ glyphname = JNya_khar;
 lastChange = "2019-12-16 17:27:41 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor12;
+position = "{392, 0}";
+},
+{
+name = Anchor14;
+position = "{504, 712}";
+},
+{
+name = Anchor16;
+position = "{441, 0}";
+},
+{
+name = Anchor18;
+position = "{230, -25}";
+},
+{
+name = Anchor20;
+position = "{201, 104}";
+},
+{
+name = Anchor26;
+position = "{310, 155}";
+},
+{
+name = Anchor28;
+position = "{245, 100}";
+},
+{
+name = Anchor30;
+position = "{415, 431}";
+},
+{
+name = Anchor32;
+position = "{362, 275}";
+},
+{
+name = Anchor4;
+position = "{224, 470}";
+},
+{
+name = Anchor6;
+position = "{142, 3}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -5046,6 +7905,56 @@ glyphname = TRa_khar;
 lastChange = "2019-12-16 17:27:41 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor10;
+position = "{519, -66}";
+},
+{
+name = Anchor12;
+position = "{348, 0}";
+},
+{
+name = Anchor14;
+position = "{348, 712}";
+},
+{
+name = Anchor16;
+position = "{471, -5}";
+},
+{
+name = Anchor18;
+position = "{441, -176}";
+},
+{
+name = Anchor20;
+position = "{269, 0}";
+},
+{
+name = Anchor26;
+position = "{430, 278}";
+},
+{
+name = Anchor28;
+position = "{576, 100}";
+},
+{
+name = Anchor30;
+position = "{480, 427}";
+},
+{
+name = Anchor4;
+position = "{271, 479}";
+},
+{
+name = Anchor6;
+position = "{422, -82}";
+},
+{
+name = Anchor8;
+position = "{395, -82}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -5109,6 +8018,48 @@ glyphname = TSa_khar;
 lastChange = "2019-12-16 17:27:41 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor12;
+position = "{313, 0}";
+},
+{
+name = Anchor14;
+position = "{334, 712}";
+},
+{
+name = Anchor16;
+position = "{77, -24}";
+},
+{
+name = Anchor18;
+position = "{152, -27}";
+},
+{
+name = Anchor20;
+position = "{171, 165}";
+},
+{
+name = Anchor26;
+position = "{190, 125}";
+},
+{
+name = Anchor28;
+position = "{193, 100}";
+},
+{
+name = Anchor30;
+position = "{282, 478}";
+},
+{
+name = Anchor4;
+position = "{159, 470}";
+},
+{
+name = Anchor6;
+position = "{66, 10}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -5204,6 +8155,52 @@ glyphname = TVa_khar;
 lastChange = "2019-12-16 17:27:41 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor10;
+position = "{419, -66}";
+},
+{
+name = Anchor12;
+position = "{430, 0}";
+},
+{
+name = Anchor14;
+position = "{430, 712}";
+},
+{
+name = Anchor16;
+position = "{322, -8}";
+},
+{
+name = Anchor18;
+position = "{521, -6}";
+},
+{
+name = Anchor20;
+position = "{105, 0}";
+},
+{
+name = Anchor26;
+position = "{274, 203}";
+},
+{
+name = Anchor28;
+position = "{569, 100}";
+},
+{
+name = Anchor30;
+position = "{526, 521}";
+},
+{
+name = Anchor4;
+position = "{281, 479}";
+},
+{
+name = Anchor8;
+position = "{295, -82}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -5273,6 +8270,52 @@ glyphname = PGa_khar;
 lastChange = "2019-12-16 17:27:41 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor12;
+position = "{190, -281}";
+},
+{
+name = Anchor14;
+position = "{375, 712}";
+},
+{
+name = Anchor16;
+position = "{190, -283}";
+},
+{
+name = Anchor18;
+position = "{292, -294}";
+},
+{
+name = Anchor20;
+position = "{247, -114}";
+},
+{
+name = Anchor24;
+position = "{561, 489}";
+},
+{
+name = Anchor26;
+position = "{230, -135}";
+},
+{
+name = Anchor28;
+position = "{539, 100}";
+},
+{
+name = Anchor30;
+position = "{280, 65}";
+},
+{
+name = Anchor4;
+position = "{145, 71}";
+},
+{
+name = Anchor6;
+position = "{182, -289}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -5357,6 +8400,56 @@ glyphname = PTa_khar;
 lastChange = "2019-12-16 17:27:41 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor10;
+position = "{309, -336}";
+},
+{
+name = Anchor12;
+position = "{280, -258}";
+},
+{
+name = Anchor14;
+position = "{397, 712}";
+},
+{
+name = Anchor16;
+position = "{281, -250}";
+},
+{
+name = Anchor18;
+position = "{296, -384}";
+},
+{
+name = Anchor20;
+position = "{224, -109}";
+},
+{
+name = Anchor24;
+position = "{547, 489}";
+},
+{
+name = Anchor26;
+position = "{328, 321}";
+},
+{
+name = Anchor28;
+position = "{463, -7}";
+},
+{
+name = Anchor30;
+position = "{428, 58}";
+},
+{
+name = Anchor4;
+position = "{170, 104}";
+},
+{
+name = Anchor8;
+position = "{185, -352}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -5430,6 +8523,52 @@ glyphname = MMa_khar;
 lastChange = "2019-12-16 17:27:41 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor10;
+position = "{539, -66}";
+},
+{
+name = Anchor12;
+position = "{468, -30}";
+},
+{
+name = Anchor14;
+position = "{406, 712}";
+},
+{
+name = Anchor16;
+position = "{481, -5}";
+},
+{
+name = Anchor18;
+position = "{478, -190}";
+},
+{
+name = Anchor20;
+position = "{439, 204}";
+},
+{
+name = Anchor26;
+position = "{319, 155}";
+},
+{
+name = Anchor28;
+position = "{577, 12}";
+},
+{
+name = Anchor30;
+position = "{340, 356}";
+},
+{
+name = Anchor4;
+position = "{374, 432}";
+},
+{
+name = Anchor8;
+position = "{415, -82}";
+}
+);
 components = (
 {
 name = Ma_khar;
@@ -5479,6 +8618,48 @@ glyphname = MMe_khar;
 lastChange = "2019-12-16 17:27:41 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor10;
+position = "{539, -66}";
+},
+{
+name = Anchor12;
+position = "{468, -30}";
+},
+{
+name = Anchor14;
+position = "{406, 712}";
+},
+{
+name = Anchor16;
+position = "{481, -5}";
+},
+{
+name = Anchor18;
+position = "{478, -190}";
+},
+{
+name = Anchor26;
+position = "{319, 155}";
+},
+{
+name = Anchor28;
+position = "{577, 12}";
+},
+{
+name = Anchor30;
+position = "{340, 347}";
+},
+{
+name = Anchor4;
+position = "{374, 432}";
+},
+{
+name = Anchor8;
+position = "{415, -82}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -5562,6 +8743,52 @@ glyphname = MRa_khar;
 lastChange = "2019-12-16 17:27:41 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor10;
+position = "{309, -66}";
+},
+{
+name = Anchor12;
+position = "{386, -10}";
+},
+{
+name = Anchor14;
+position = "{502, 712}";
+},
+{
+name = Anchor16;
+position = "{284, 1}";
+},
+{
+name = Anchor18;
+position = "{431, -6}";
+},
+{
+name = Anchor20;
+position = "{219, 204}";
+},
+{
+name = Anchor26;
+position = "{385, 255}";
+},
+{
+name = Anchor28;
+position = "{419, 100}";
+},
+{
+name = Anchor30;
+position = "{384, 536}";
+},
+{
+name = Anchor4;
+position = "{221, 61}";
+},
+{
+name = Anchor8;
+position = "{185, -82}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -5619,6 +8846,52 @@ glyphname = RMa_khar;
 lastChange = "2019-12-16 17:27:41 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor10;
+position = "{309, -66}";
+},
+{
+name = Anchor12;
+position = "{305, 0}";
+},
+{
+name = Anchor14;
+position = "{453, 712}";
+},
+{
+name = Anchor16;
+position = "{284, 1}";
+},
+{
+name = Anchor18;
+position = "{431, -6}";
+},
+{
+name = Anchor20;
+position = "{219, 204}";
+},
+{
+name = Anchor26;
+position = "{395, 255}";
+},
+{
+name = Anchor28;
+position = "{417, 100}";
+},
+{
+name = Anchor30;
+position = "{285, 68}";
+},
+{
+name = Anchor4;
+position = "{221, 67}";
+},
+{
+name = Anchor8;
+position = "{185, -82}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -5707,6 +8980,52 @@ glyphname = RTa_khar;
 lastChange = "2019-12-16 17:27:41 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor10;
+position = "{349, -36}";
+},
+{
+name = Anchor12;
+position = "{329, 0}";
+},
+{
+name = Anchor14;
+position = "{379, 712}";
+},
+{
+name = Anchor16;
+position = "{524, -20}";
+},
+{
+name = Anchor18;
+position = "{589, -36}";
+},
+{
+name = Anchor20;
+position = "{546, 71}";
+},
+{
+name = Anchor26;
+position = "{198, 238}";
+},
+{
+name = Anchor28;
+position = "{546, 0}";
+},
+{
+name = Anchor30;
+position = "{326, 541}";
+},
+{
+name = Anchor4;
+position = "{258, 530}";
+},
+{
+name = Anchor6;
+position = "{504, -4}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -5799,6 +9118,64 @@ glyphname = LPa_khar;
 lastChange = "2019-12-16 17:27:41 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor10;
+position = "{158, 15}";
+},
+{
+name = Anchor12;
+position = "{386, 0}";
+},
+{
+name = Anchor14;
+position = "{464, 712}";
+},
+{
+name = Anchor16;
+position = "{149, -6}";
+},
+{
+name = Anchor18;
+position = "{264, -15}";
+},
+{
+name = Anchor20;
+position = "{218, 150}";
+},
+{
+name = Anchor24;
+position = "{565, 489}";
+},
+{
+name = Anchor26;
+position = "{200, 155}";
+},
+{
+name = Anchor28;
+position = "{631, 134}";
+},
+{
+name = Anchor30;
+position = "{465, 259}";
+},
+{
+name = Anchor32;
+position = "{356, 275}";
+},
+{
+name = Anchor4;
+position = "{460, 470}";
+},
+{
+name = Anchor6;
+position = "{591, 159}";
+},
+{
+name = Anchor8;
+position = "{158, 15}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -5854,6 +9231,52 @@ glyphname = LYa_khar;
 lastChange = "2019-12-16 17:27:41 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor12;
+position = "{331, -206}";
+},
+{
+name = Anchor14;
+position = "{427, 712}";
+},
+{
+name = Anchor16;
+position = "{341, -216}";
+},
+{
+name = Anchor18;
+position = "{444, -226}";
+},
+{
+name = Anchor20;
+position = "{258, -49}";
+},
+{
+name = Anchor24;
+position = "{166, 527}";
+},
+{
+name = Anchor26;
+position = "{340, 335}";
+},
+{
+name = Anchor28;
+position = "{479, -85}";
+},
+{
+name = Anchor30;
+position = "{336, 421}";
+},
+{
+name = Anchor4;
+position = "{208, 470}";
+},
+{
+name = Anchor8;
+position = "{307, -212}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -5943,6 +9366,52 @@ glyphname = La_ZWJ_Ya_khar;
 lastChange = "2019-12-16 17:27:41 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor12;
+position = "{344, -70}";
+},
+{
+name = Anchor14;
+position = "{454, 712}";
+},
+{
+name = Anchor16;
+position = "{476, -121}";
+},
+{
+name = Anchor18;
+position = "{606, -153}";
+},
+{
+name = Anchor20;
+position = "{594, 100}";
+},
+{
+name = Anchor24;
+position = "{166, 527}";
+},
+{
+name = Anchor26;
+position = "{340, 335}";
+},
+{
+name = Anchor28;
+position = "{572, 29}";
+},
+{
+name = Anchor30;
+position = "{336, 421}";
+},
+{
+name = Anchor4;
+position = "{208, 470}";
+},
+{
+name = Anchor6;
+position = "{515, -129}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -6004,6 +9473,56 @@ glyphname = ShPa_khar;
 lastChange = "2019-12-16 17:27:41 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor10;
+position = "{340, -7}";
+},
+{
+name = Anchor12;
+position = "{387, 0}";
+},
+{
+name = Anchor14;
+position = "{359, 712}";
+},
+{
+name = Anchor16;
+position = "{298, 0}";
+},
+{
+name = Anchor18;
+position = "{437, -15}";
+},
+{
+name = Anchor20;
+position = "{379, 55}";
+},
+{
+name = Anchor26;
+position = "{410, 155}";
+},
+{
+name = Anchor28;
+position = "{420, 100}";
+},
+{
+name = Anchor30;
+position = "{500, 476}";
+},
+{
+name = Anchor4;
+position = "{275, 470}";
+},
+{
+name = Anchor6;
+position = "{643, 171}";
+},
+{
+name = Anchor8;
+position = "{340, -7}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -6058,6 +9577,56 @@ glyphname = SPa_khar;
 lastChange = "2019-12-16 17:27:41 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor10;
+position = "{116, -7}";
+},
+{
+name = Anchor12;
+position = "{283, 0}";
+},
+{
+name = Anchor14;
+position = "{334, 712}";
+},
+{
+name = Anchor16;
+position = "{414, -18}";
+},
+{
+name = Anchor18;
+position = "{214, -16}";
+},
+{
+name = Anchor20;
+position = "{146, 67}";
+},
+{
+name = Anchor26;
+position = "{180, 155}";
+},
+{
+name = Anchor28;
+position = "{456, 100}";
+},
+{
+name = Anchor30;
+position = "{247, 406}";
+},
+{
+name = Anchor4;
+position = "{123, 470}";
+},
+{
+name = Anchor6;
+position = "{380, -12}";
+},
+{
+name = Anchor8;
+position = "{116, -7}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -6133,6 +9702,48 @@ glyphname = STa_khar;
 lastChange = "2019-12-16 17:27:41 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor12;
+position = "{287, 0}";
+},
+{
+name = Anchor14;
+position = "{315, 712}";
+},
+{
+name = Anchor16;
+position = "{308, -20}";
+},
+{
+name = Anchor18;
+position = "{370, -10}";
+},
+{
+name = Anchor20;
+position = "{319, 79}";
+},
+{
+name = Anchor26;
+position = "{380, 155}";
+},
+{
+name = Anchor28;
+position = "{377, 100}";
+},
+{
+name = Anchor30;
+position = "{469, 407}";
+},
+{
+name = Anchor4;
+position = "{147, 425}";
+},
+{
+name = Anchor6;
+position = "{274, 0}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -6194,6 +9805,56 @@ glyphname = STha_khar;
 lastChange = "2019-12-16 17:27:41 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor10;
+position = "{284, 18}";
+},
+{
+name = Anchor12;
+position = "{287, 0}";
+},
+{
+name = Anchor14;
+position = "{315, 712}";
+},
+{
+name = Anchor16;
+position = "{308, -20}";
+},
+{
+name = Anchor18;
+position = "{369, -12}";
+},
+{
+name = Anchor20;
+position = "{319, 79}";
+},
+{
+name = Anchor26;
+position = "{380, 155}";
+},
+{
+name = Anchor28;
+position = "{379, 100}";
+},
+{
+name = Anchor30;
+position = "{469, 407}";
+},
+{
+name = Anchor32;
+position = "{418, 215}";
+},
+{
+name = Anchor4;
+position = "{147, 425}";
+},
+{
+name = Anchor6;
+position = "{274, 0}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -6259,6 +9920,48 @@ glyphname = SYa_khar;
 lastChange = "2019-12-16 17:27:41 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor12;
+position = "{513, -11}";
+},
+{
+name = Anchor14;
+position = "{681, 857}";
+},
+{
+name = Anchor16;
+position = "{230, -82}";
+},
+{
+name = Anchor18;
+position = "{320, -94}";
+},
+{
+name = Anchor20;
+position = "{236, 80}";
+},
+{
+name = Anchor26;
+position = "{550, 395}";
+},
+{
+name = Anchor28;
+position = "{379, 100}";
+},
+{
+name = Anchor30;
+position = "{598, 561}";
+},
+{
+name = Anchor4;
+position = "{476, 633}";
+},
+{
+name = Anchor8;
+position = "{186, -82}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -6393,6 +10096,64 @@ glyphname = uni25CC;
 lastChange = "2019-12-16 17:27:41 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor10;
+position = "{433, -6}";
+},
+{
+name = Anchor12;
+position = "{284, 0}";
+},
+{
+name = Anchor14;
+position = "{296, 540}";
+},
+{
+name = Anchor16;
+position = "{377, 42}";
+},
+{
+name = Anchor18;
+position = "{431, 30}";
+},
+{
+name = Anchor20;
+position = "{273, 129}";
+},
+{
+name = Anchor22;
+position = "{294, -14}";
+},
+{
+name = Anchor26;
+position = "{300, 61}";
+},
+{
+name = Anchor28;
+position = "{467, 106}";
+},
+{
+name = Anchor30;
+position = "{363, 310}";
+},
+{
+name = Anchor32;
+position = "{511, 255}";
+},
+{
+name = Anchor4;
+position = "{243, 280}";
+},
+{
+name = Anchor6;
+position = "{292, 31}";
+},
+{
+name = Anchor8;
+position = "{178, -59}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -6680,6 +10441,12 @@ glyphname = I_diagonal;
 lastChange = "2019-12-16 17:27:09 +0000";
 layers = (
 {
+anchors = (
+{
+name = _Anchor4;
+position = "{-174, 426}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -6708,6 +10475,12 @@ glyphname = I_diagonal_short;
 lastChange = "2019-12-16 17:27:09 +0000";
 layers = (
 {
+anchors = (
+{
+name = _Anchor4;
+position = "{-150, 470}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -6767,6 +10540,12 @@ glyphname = I_vertical;
 lastChange = "2019-12-16 17:27:09 +0000";
 layers = (
 {
+anchors = (
+{
+name = _Anchor4;
+position = "{-122, 470}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -6797,6 +10576,12 @@ glyphname = E_vertical;
 lastChange = "2019-12-16 17:27:07 +0000";
 layers = (
 {
+anchors = (
+{
+name = _Anchor24;
+position = "{-100, 556}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -6824,6 +10609,12 @@ glyphname = O_diag.short;
 lastChange = "2019-12-16 17:27:14 +0000";
 layers = (
 {
+anchors = (
+{
+name = _Anchor30;
+position = "{-97, 197}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -6851,6 +10642,12 @@ glyphname = O_vertical;
 lastChange = "2019-12-16 17:27:14 +0000";
 layers = (
 {
+anchors = (
+{
+name = _Anchor30;
+position = "{-146, 362}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -6871,12 +10668,19 @@ width = 0;
 }
 );
 category = Mark;
+subCategory = Nonspacing;
 },
 {
 glyphname = O_vertical_short;
 lastChange = "2019-12-16 17:27:14 +0000";
 layers = (
 {
+anchors = (
+{
+name = _Anchor30;
+position = "{-146, 362}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -6897,12 +10701,23 @@ width = 0;
 }
 );
 category = Mark;
+subCategory = Nonspacing;
 },
 {
 glyphname = U.alt;
 lastChange = "2019-12-16 17:27:38 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor40;
+position = "{-140, -14}";
+},
+{
+name = _Anchor20;
+position = "{-7, 171}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -6951,6 +10766,16 @@ glyphname = U.alt2;
 lastChange = "2019-12-16 17:27:38 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor40;
+position = "{-199, -33}";
+},
+{
+name = _Anchor20;
+position = "{-42, 169}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -6999,6 +10824,24 @@ glyphname = U.alt3;
 lastChange = "2019-12-16 17:27:38 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor36;
+position = "{-26, -132}";
+},
+{
+name = Anchor38;
+position = "{-84, -86}";
+},
+{
+name = Anchor40;
+position = "{-181, -132}";
+},
+{
+name = _Anchor20;
+position = "{3, 166}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -7047,6 +10890,12 @@ glyphname = U_spacing;
 lastChange = "2019-12-16 17:27:29 +0000";
 layers = (
 {
+anchors = (
+{
+name = _Anchor20;
+position = "{-66, 0}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -7088,12 +10937,19 @@ width = 0;
 }
 );
 category = Mark;
+subCategory = Nonspacing;
 },
 {
 glyphname = vocR.short;
 lastChange = "2019-12-16 17:27:35 +0000";
 layers = (
 {
+anchors = (
+{
+name = _Anchor26;
+position = "{-190, 178}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -7151,6 +11007,12 @@ glyphname = vocR.shorter;
 lastChange = "2019-12-16 17:27:35 +0000";
 layers = (
 {
+anchors = (
+{
+name = _Anchor26;
+position = "{-150, 159}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -7208,6 +11070,12 @@ glyphname = vocR.wide;
 lastChange = "2019-12-16 17:27:35 +0000";
 layers = (
 {
+anchors = (
+{
+name = _Anchor26;
+position = "{-208, 223}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -7265,6 +11133,16 @@ glyphname = SubMa_khar;
 lastChange = "2019-12-16 17:27:38 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor40;
+position = "{-220, -47}";
+},
+{
+name = _Anchor22;
+position = "{-220, 196}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -7303,12 +11181,23 @@ width = 0;
 }
 );
 category = Mark;
+subCategory = Nonspacing;
 },
 {
 glyphname = SubMa.alt;
 lastChange = "2019-12-16 17:27:38 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor40;
+position = "{-180, -47}";
+},
+{
+name = _Anchor22;
+position = "{-185, 194}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -7341,12 +11230,23 @@ width = 0;
 }
 );
 category = Mark;
+subCategory = Nonspacing;
 },
 {
 glyphname = SubMa.alt1;
 lastChange = "2019-12-16 17:27:38 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor40;
+position = "{-223, -47}";
+},
+{
+name = _Anchor22;
+position = "{-223, 196}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -7383,12 +11283,23 @@ width = 0;
 }
 );
 category = Mark;
+subCategory = Nonspacing;
 },
 {
 glyphname = SubMa.alt2;
 lastChange = "2019-12-16 17:27:38 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor40;
+position = "{-262, -147}";
+},
+{
+name = _Anchor22;
+position = "{-224, 186}";
+}
+);
 components = (
 {
 name = SubMa_khar;
@@ -7415,12 +11326,23 @@ width = 0;
 }
 );
 category = Mark;
+subCategory = Nonspacing;
 },
 {
 glyphname = SubMa.alt3;
 lastChange = "2019-12-16 17:27:38 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor40;
+position = "{-281, -255}";
+},
+{
+name = _Anchor22;
+position = "{-235, 116}";
+}
+);
 components = (
 {
 name = SubMa_khar;
@@ -7445,12 +11367,27 @@ width = 0;
 }
 );
 category = Mark;
+subCategory = Nonspacing;
 },
 {
 glyphname = SubYa_khar;
 lastChange = "2019-12-16 17:27:38 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor40;
+position = "{-190, -208}";
+},
+{
+name = _Anchor10;
+position = "{-67, 1}";
+},
+{
+name = _Anchor6;
+position = "{-67, 1}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -7503,6 +11440,20 @@ glyphname = SubYa.alt;
 lastChange = "2019-12-16 17:27:38 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor40;
+position = "{-247, -244}";
+},
+{
+name = _Anchor10;
+position = "{-131, 3}";
+},
+{
+name = _Anchor6;
+position = "{-131, 3}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -7545,12 +11496,23 @@ width = 0;
 }
 );
 category = Mark;
+subCategory = Nonspacing;
 },
 {
 glyphname = SubYa.alt1;
 lastChange = "2019-12-16 17:27:38 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor40;
+position = "{-200, -276}";
+},
+{
+name = _Anchor6;
+position = "{-90, -2}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -7599,12 +11561,27 @@ width = 0;
 }
 );
 category = Mark;
+subCategory = Nonspacing;
 },
 {
 glyphname = SubYa.alt3;
 lastChange = "2019-12-16 17:27:38 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor40;
+position = "{-246, -213}";
+},
+{
+name = _Anchor10;
+position = "{-135, -1}";
+},
+{
+name = _Anchor6;
+position = "{-135, -1}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -7647,12 +11624,31 @@ width = 0;
 }
 );
 category = Mark;
+subCategory = Nonspacing;
 },
 {
 glyphname = SubYa.alt4;
 lastChange = "2019-12-16 17:27:38 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor40;
+position = "{-173, -218}";
+},
+{
+name = _Anchor10;
+position = "{-61, 0}";
+},
+{
+name = _Anchor6;
+position = "{-61, 0}";
+},
+{
+name = _Anchor8;
+position = "{-61, 0}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -7696,12 +11692,31 @@ width = 0;
 }
 );
 category = Mark;
+subCategory = Nonspacing;
 },
 {
 glyphname = SubRa_khar;
 lastChange = "2019-12-16 17:27:38 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor38;
+position = "{-146, -217}";
+},
+{
+name = Anchor40;
+position = "{-153, -217}";
+},
+{
+name = _Anchor6;
+position = "{-289, 1}";
+},
+{
+name = _Anchor8;
+position = "{-289, 1}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -7741,6 +11756,20 @@ glyphname = SubRa.alt;
 lastChange = "2019-12-16 17:27:38 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor40;
+position = "{-165, -169}";
+},
+{
+name = _Anchor6;
+position = "{-349, 3}";
+},
+{
+name = _Anchor8;
+position = "{-349, 3}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -7773,12 +11802,27 @@ width = 0;
 }
 );
 category = Mark;
+subCategory = Nonspacing;
 },
 {
 glyphname = SubRa.alt1;
 lastChange = "2019-12-16 17:27:38 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor40;
+position = "{-156, -47}";
+},
+{
+name = _Anchor6;
+position = "{-284, 16}";
+},
+{
+name = _Anchor8;
+position = "{-284, 16}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -7805,12 +11849,23 @@ width = 0;
 }
 );
 category = Mark;
+subCategory = Nonspacing;
 },
 {
 glyphname = SubRa.alt3;
 lastChange = "2019-12-16 17:27:38 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor40;
+position = "{-170, -44}";
+},
+{
+name = _Anchor6;
+position = "{-311, 152}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -7843,12 +11898,23 @@ width = 0;
 }
 );
 category = Mark;
+subCategory = Nonspacing;
 },
 {
 glyphname = SubRa.alt4;
 lastChange = "2019-12-16 17:27:38 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor40;
+position = "{-194, -218}";
+},
+{
+name = _Anchor6;
+position = "{-261, 0}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -7881,12 +11947,19 @@ width = 0;
 }
 );
 category = Mark;
+subCategory = Nonspacing;
 },
 {
 glyphname = SubLa_khar;
 lastChange = "2019-12-16 17:27:16 +0000";
 layers = (
 {
+anchors = (
+{
+name = _Anchor32;
+position = "{-183, 275}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -7920,6 +11993,12 @@ glyphname = SubLa.alt;
 lastChange = "2019-12-16 17:27:16 +0000";
 layers = (
 {
+anchors = (
+{
+name = _Anchor32;
+position = "{-212, 337}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -7946,12 +12025,27 @@ width = 0;
 }
 );
 category = Mark;
+subCategory = Nonspacing;
 },
 {
 glyphname = SubVa_khar;
 lastChange = "2019-12-16 17:27:38 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor38;
+position = "{-250, -178}";
+},
+{
+name = Anchor40;
+position = "{-270, -208}";
+},
+{
+name = _Anchor6;
+position = "{-379, 1}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -7994,6 +12088,16 @@ glyphname = SubVa.alt;
 lastChange = "2019-12-16 17:27:38 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor40;
+position = "{-283, -179}";
+},
+{
+name = _Anchor6;
+position = "{-389, 3}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -8029,12 +12133,23 @@ width = 0;
 }
 );
 category = Mark;
+subCategory = Nonspacing;
 },
 {
 glyphname = SubVa.alt1;
 lastChange = "2019-12-16 17:27:38 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor40;
+position = "{-244, -47}";
+},
+{
+name = _Anchor6;
+position = "{-334, 16}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -8068,12 +12183,19 @@ width = 0;
 }
 );
 category = Mark;
+subCategory = Nonspacing;
 },
 {
 glyphname = SubVa.alt2;
 lastChange = "2019-12-16 17:27:24 +0000";
 layers = (
 {
+anchors = (
+{
+name = _Anchor6;
+position = "{-410, 0}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -8109,12 +12231,19 @@ width = 0;
 }
 );
 category = Mark;
+subCategory = Nonspacing;
 },
 {
 glyphname = SubVa.alt3;
 lastChange = "2019-12-16 17:27:24 +0000";
 layers = (
 {
+anchors = (
+{
+name = _Anchor6;
+position = "{-371, 152}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -8150,12 +12279,23 @@ width = 0;
 }
 );
 category = Mark;
+subCategory = Nonspacing;
 },
 {
 glyphname = SubVa.alt4;
 lastChange = "2019-12-16 17:27:38 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor40;
+position = "{-285, -213}";
+},
+{
+name = _Anchor6;
+position = "{-361, 0}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -8192,12 +12332,31 @@ width = 0;
 }
 );
 category = Mark;
+subCategory = Nonspacing;
 },
 {
 glyphname = Cauda_khar.short;
 lastChange = "2019-12-16 17:27:38 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor38;
+position = "{-120, -92}";
+},
+{
+name = Anchor40;
+position = "{-228, -12}";
+},
+{
+name = _Anchor18;
+position = "{-211, 3}";
+},
+{
+name = _Anchor36;
+position = "{-211, 3}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -8224,12 +12383,31 @@ width = 0;
 }
 );
 category = Mark;
+subCategory = Nonspacing;
 },
 {
 glyphname = Cauda_khar.short2;
 lastChange = "2019-12-16 17:27:38 +0000";
 layers = (
 {
+anchors = (
+{
+name = Anchor38;
+position = "{-40, -92}";
+},
+{
+name = Anchor40;
+position = "{-135, -9}";
+},
+{
+name = _Anchor18;
+position = "{-111, 3}";
+},
+{
+name = _Anchor36;
+position = "{-111, 3}";
+}
+);
 layerId = UUID0;
 paths = (
 {
@@ -8256,15 +12434,12 @@ width = 0;
 }
 );
 category = Mark;
+subCategory = Nonspacing;
 }
 );
 instances = (
 {
 customParameters = (
-{
-name = weightClass;
-value = 400;
-},
 {
 name = panose;
 value = (
@@ -8301,5 +12476,5 @@ UUID0 = {
 };
 };
 versionMajor = 2;
-versionMinor = 1;
+versionMinor = 2;
 }
