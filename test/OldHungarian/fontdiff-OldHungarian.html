@@ -1,178 +1,79 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <title>Noto Sans Old Hungarian</title>
-
-    <meta charset="UTF-8" http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-
-       <script type="text/javascript">
-
-         function sliderChange() {
-            var slider = document.getElementById("fontSizeSlider");
-            var sizeInput = document.getElementById("fontSizeInput");
-            sizeInput.value = slider.value;
-            sizeInput.oninput();
-         }
-
-         function changeSize() {
-              var selector = document.getElementById('fontSizeInput');
-              var selectedSize = selector.value + "px";
-              samples = document.getElementsByClassName("sample");
-              for (var i = 0; i < samples.length; i++) {
-                samples[i].style.fontSize = selectedSize;
-            }
-        }
-
-         function changeLineHeight() {
-              var selector = document.getElementById('lineHeight');
-              var selectedLineHeight = selector.value;
-              samples = document.getElementsByClassName("sample");
-              for (var i = 0; i < samples.length; i++) {
-              samples[i].style.lineHeight = selectedLineHeight;
-            }
-        }
-
-        function init() {
-            var sizeInput = document.getElementById("fontSizeInput");
-            var fontSizeSlider = document.getElementById("fontSizeSlider");
-            fontSizeSlider.value = 100;
-            sizeInput.value = 100;
-        }
-    </script>
-
-
-</head>
-
-<style>
-
-@font-face {
-	font-family: "Noto Sans Old Hungarian";
-	src: url("fonts/NotoSansOldHungarian-Regular.otf");
-	font-weight: 400;
-	font-style: normal;
-}
-
-.sample {
-	font-family: "Noto Sans Old Hungarian", "Noto Sans", sans-serif;
-	font-size: 100px;
-	font-weight: 400;
-    line-height: 2;
-}
-
-#header {
-		top:0;
-		left:0;
-		position: fixed;
-		margin: 0px;
-		width: 100%;
-		background: #fff;
-	}
-
-#wrapper {
-  margin-top: 40px;
-}
-
-#fontSizeInput {
-    width: 40px;
-}
-
-input[type=range] {
-    /*removes default webkit styles*/
-    -webkit-appearance: none;
-
-    position: relative;
-    top: 50%;
-    transform: perspective(1px) translateY(30%);
-
-    /*fix for FF unable to apply focus style bug */
-    border: 1px solid white;
-
-    /*required for proper track sizing in FF*/
-    width: 400px;
-}
-input[type=range]::-webkit-slider-runnable-track {
-    width: 400px;
-    height: 5px;
-    background: #ddd;
-    border: none;
-    border-radius: 3px;
-}
-input[type=range]::-webkit-slider-thumb {
-    -webkit-appearance: none;
-    border: none;
-    height: 16px;
-    width: 16px;
-    border-radius: 50%;
-    background: red;
-    margin-top: -4px;
-}
-input[type=range]:focus {
-    outline: none;
-}
-input[type=range]:focus::-webkit-slider-runnable-track {
-    background: #ccc;
-}
-
-input[type=range]::-moz-range-track {
-    width: 400px;
-    height: 5px;
-    background: #ddd;
-    border: none;
-    border-radius: 3px;
-}
-input[type=range]::-moz-range-thumb {
-    border: none;
-    height: 16px;
-    width: 16px;
-    border-radius: 50%;
-    background: red;
-}
-
-/*hide the outline behind the border*/
-input[type=range]:-moz-focusring{
-    outline: 1px solid white;
-    outline-offset: -1px;
-}
-
-rt, rp {font-size: 20%;} /* = Webkit value */
-
-
-</style>
-
-
-<body onload="init()">
-    <div id="header" style="
-	padding-top:8px;
-	z-index:150;
-	color: #E4E4E4;
-	">
-    <span>
-    <input id="fontSizeSlider" type="range" name="amountRange" min="6" max="600" value="80" oninput="sliderChange()" />
-    <input id="fontSizeInput" type="number" name="amountInput" min="6" max="600" value="80" oninput="changeSize()" />
-    <input id="lineHeight" type="number" name="lineHeight" min="1" max="6" value="1" oninput="changeLineHeight()" />
-        </span>
-    </div>
-
-<div id="wrapper" dir="rtl">
-<br><br>
-Noto Sans Old Hungarian
-<br>
-
-<span class="sample" contenteditable="true">
-    ‮𐲐𐲯𐲒𐳜𐳃𐳜‬<br>
-    𐲐𐲯𐲒𐳜𐳃𐳜⁞⁦𐳜𐳃⁩<br>
-    𐲐𐲯𐲒𐳜𐳃𐳜⁞‭𐳃𐳜‬<br>
-‭
-    LRO override:
-    𐳜𐳃𐳜
-<br>
-    RTL with LRO (202D) and ligature<br>
-    𐳀‍𐳦‍𐳦⁞‭𐳀‍𐳦‍𐳦‬<br>
-
-    Ligatures<br>
-𐳀 ‍ 𐳂  = 𐳀‍𐳂<br>𐳀 ‍ 𐳇  = 𐳀‍𐳇<br>𐳀 ‍ 𐳖  = 𐳀‍𐳖<br>𐳀 ‍ 𐳢  = 𐳀‍𐳢<br>𐳀 ‍ 𐳦 ‍ 𐳦  = 𐳀‍𐳦‍𐳦<br>𐳁 ‍ 𐳢  = 𐳁‍𐳢<br>𐳂 ‍ 𐳀  = 𐳂‍𐳀<br>𐳂 ‍ 𐳉  = 𐳂‍𐳉<br>𐳂 ‍ 𐳐  = 𐳂‍𐳐<br>𐳂 ‍ 𐳛  = 𐳂‍𐳛<br>𐳂 ‍ 𐳦  = 𐳂‍𐳦<br>𐳄 ‍ 𐳓  = 𐳄‍𐳓<br>𐳄 ‍ 𐳔  = 𐳄‍𐳔<br>𐳆 ‍ 𐳀  = 𐳆‍𐳀<br>𐳆 ‍ 𐳐 ‍ 𐳙  = 𐳆‍𐳐‍𐳙<br>𐳇 ‍ 𐳪  = 𐳇‍𐳪<br>𐳍 ‍ 𐳀  = 𐳍‍𐳀<br>𐳍 ‍ 𐳉  = 𐳍‍𐳉<br>𐳍 ‍ 𐳐  = 𐳍‍𐳐<br>𐳍 ‍ 𐳛  = 𐳍‍𐳛<br>𐳏 ‍ 𐳀  = 𐳏‍𐳀<br>𐳏 ‍ 𐳉  = 𐳏‍𐳉<br>𐳏 ‍ 𐳐  = 𐳏‍𐳐<br>𐳏 ‍ 𐳛  = 𐳏‍𐳛<br>𐳐 ‍ 𐳒  = 𐳐‍𐳒<br>𐳐 ‍ 𐳦  = 𐳐‍𐳦<br>𐳑 ‍ 𐳢 ‍ 𐳦  = 𐳑‍𐳢‍𐳦<br>𐳑 ‍ 𐳦  = 𐳑‍𐳦<br>𐳓 ‍ 𐳥  = 𐳓‍𐳥<br>𐳓 ‍ 𐳮  = 𐳓‍𐳮<br>𐳖 ‍ 𐳀  = 𐳖‍𐳀<br>𐳖 ‍ 𐳁  = 𐳖‍𐳁<br>𐳖 ‍ 𐳉  = 𐳖‍𐳉<br>𐳖 ‍ 𐳛  = 𐳖‍𐳛<br>𐳖 ‍ 𐳦  = 𐳖‍𐳦<br>𐳙 ‍ 𐳀  = 𐳙‍𐳀<br>𐳙 ‍ 𐳄  = 𐳙‍𐳄<br>𐳙 ‍ 𐳇  = 𐳙‍𐳇<br>𐳙 ‍ 𐳎  = 𐳙‍𐳎<br>𐳙 ‍ 𐳐  = 𐳙‍𐳐<br>𐳙 ‍ 𐳓  = 𐳙‍𐳓<br>𐳙 ‍ 𐳠  = 𐳙‍𐳠<br>𐳙 ‍ 𐳦  = 𐳙‍𐳦<br>𐳛 ‍ 𐳢  = 𐳛‍𐳢<br>𐳢 ‍ 𐳀  = 𐳢‍𐳀<br>𐳢 ‍ 𐳉  = 𐳢‍𐳉<br>𐳢 ‍ 𐳐  = 𐳢‍𐳐<br>𐳢 ‍ 𐳛  = 𐳢‍𐳛<br>𐳢 ‍ 𐳦  = 𐳢‍𐳦<br>𐳢 ‍ 𐳪  = 𐳢‍𐳪<br>𐳤 ‍ 𐳀  = 𐳤‍𐳀<br>𐳤 ‍ 𐳉  = 𐳤‍𐳉<br>𐳤 ‍ 𐳐  = 𐳤‍𐳐<br>𐳤 ‍ 𐳓  = 𐳤‍𐳓<br>𐳤 ‍ 𐳘  = 𐳤‍𐳘<br>𐳤 ‍ 𐳛  = 𐳤‍𐳛<br>𐳤 ‍ 𐳠  = 𐳤‍𐳠<br>𐳤 ‍ 𐳦  = 𐳤‍𐳦<br>𐳥 ‍ 𐳦  = 𐳥‍𐳦<br>𐳦 ‍ 𐳐  = 𐳦‍𐳐<br>𐳨 ‍ 𐳀  = 𐳨‍𐳀<br>𐳪 ‍ 𐳖  = 𐳪‍𐳖<br>𐳪 ‍ 𐳘  = 𐳪‍𐳘<br>𐳪 ‍ 𐳢  = 𐳪‍𐳢<br>𐳮 ‍ 𐳀  = 𐳮‍𐳀<br>𐳮 ‍ 𐳀 ‍ 𐳢  = 𐳮‍𐳀‍𐳢<br>𐳮 ‍ 𐳁 ‍ 𐳢  = 𐳮‍𐳁‍𐳢<br>𐳮 ‍ 𐳘  = 𐳮‍𐳘<br>𐳮 ‍ 𐳮  = 𐳮‍𐳮<br>𐳯 ‍ 𐳀  = 𐳯‍𐳀<br>𐳯 ‍ 𐳢  = 𐳯‍𐳢<br>𐳯 ‍ 𐳦  = 𐳯‍𐳦<br>
-
-</span>
-</div>
-</body>
+<html lang='Hung'>
+	<p>    ‮𐲐𐲯𐲒𐳜𐳃𐳜‬</p>
+	<p>    𐲐𐲯𐲒𐳜𐳃𐳜⁞⁦𐳜𐳃⁩</p>
+	<p>    𐲐𐲯𐲒𐳜𐳃𐳜⁞‭𐳃𐳜‬</p>
+	<p>    𐳜𐳃𐳜</p>	    
+  <p>  𐳀‍𐳦‍𐳦⁞‭𐳀‍𐳦‍𐳦‬ </p>
+	<p>𐳀 ‍ 𐳂  = 𐳀‍𐳂</p>
+	<p>𐳀 ‍ 𐳇  = 𐳀‍𐳇</p>
+	<p>𐳀 ‍ 𐳖  = 𐳀‍𐳖</p>
+	<p>𐳀 ‍ 𐳢  = 𐳀‍𐳢</p>
+	<p>𐳀 ‍ 𐳦 ‍ 𐳦  = 𐳀‍𐳦‍𐳦</p>
+	<p>𐳁 ‍ 𐳢  = 𐳁‍𐳢</p>
+	<p>𐳂 ‍ 𐳀  = 𐳂‍𐳀</p>
+	<p>𐳂 ‍ 𐳉  = 𐳂‍𐳉</p>
+	<p>𐳂 ‍ 𐳐  = 𐳂‍𐳐</p>
+	<p>𐳂 ‍ 𐳛  = 𐳂‍𐳛</p>
+	<p>𐳂 ‍ 𐳦  = 𐳂‍𐳦</p>
+	<p>𐳄 ‍ 𐳓  = 𐳄‍𐳓</p>
+	<p>𐳄 ‍ 𐳔  = 𐳄‍𐳔</p>
+	<p>𐳆 ‍ 𐳀  = 𐳆‍𐳀</p>
+	<p>𐳆 ‍ 𐳐 ‍ 𐳙  = 𐳆‍𐳐‍𐳙</p>
+	<p>𐳇 ‍ 𐳪  = 𐳇‍𐳪</p>
+	<p>𐳍 ‍ 𐳀  = 𐳍‍𐳀</p>
+	<p>𐳍 ‍ 𐳉  = 𐳍‍𐳉</p>
+	<p>𐳍 ‍ 𐳐  = 𐳍‍𐳐</p>
+	<p>𐳍 ‍ 𐳛  = 𐳍‍𐳛</p>
+	<p>𐳏 ‍ 𐳀  = 𐳏‍𐳀</p>
+	<p>𐳏 ‍ 𐳉  = 𐳏‍𐳉</p>
+	<p>𐳏 ‍ 𐳐  = 𐳏‍𐳐</p>
+	<p>𐳏 ‍ 𐳛  = 𐳏‍𐳛</p>
+	<p>𐳐 ‍ 𐳒  = 𐳐‍𐳒</p>
+	<p>𐳐 ‍ 𐳦  = 𐳐‍𐳦</p>
+	<p>𐳑 ‍ 𐳢 ‍ 𐳦  = 𐳑‍𐳢‍𐳦</p>
+	<p>𐳑 ‍ 𐳦  = 𐳑‍𐳦</p>
+	<p>𐳓 ‍ 𐳥  = 𐳓‍𐳥</p>
+	<p>𐳓 ‍ 𐳮  = 𐳓‍𐳮</p>
+	<p>𐳖 ‍ 𐳀  = 𐳖‍𐳀</p>
+	<p>𐳖 ‍ 𐳁  = 𐳖‍𐳁</p>
+	<p>𐳖 ‍ 𐳉  = 𐳖‍𐳉</p>
+	<p>𐳖 ‍ 𐳛  = 𐳖‍𐳛</p>
+	<p>𐳖 ‍ 𐳦  = 𐳖‍𐳦</p>
+	<p>𐳙 ‍ 𐳀  = 𐳙‍𐳀</p>
+	<p>𐳙 ‍ 𐳄  = 𐳙‍𐳄</p>
+	<p>𐳙 ‍ 𐳇  = 𐳙‍𐳇</p>
+	<p>𐳙 ‍ 𐳎  = 𐳙‍𐳎</p>
+	<p>𐳙 ‍ 𐳐  = 𐳙‍𐳐</p>
+	<p>𐳙 ‍ 𐳓  = 𐳙‍𐳓</p>
+	<p>𐳙 ‍ 𐳠  = 𐳙‍𐳠</p>
+	<p>𐳙 ‍ 𐳦  = 𐳙‍𐳦</p>
+	<p>𐳛 ‍ 𐳢  = 𐳛‍𐳢</p>
+	<p>𐳢 ‍ 𐳀  = 𐳢‍𐳀</p>
+	<p>𐳢 ‍ 𐳉  = 𐳢‍𐳉</p>
+	<p>𐳢 ‍ 𐳐  = 𐳢‍𐳐</p>
+	<p>𐳢 ‍ 𐳛  = 𐳢‍𐳛</p>
+	<p>𐳢 ‍ 𐳦  = 𐳢‍𐳦</p>
+	<p>𐳢 ‍ 𐳪  = 𐳢‍𐳪</p>
+	<p>𐳤 ‍ 𐳀  = 𐳤‍𐳀</p>
+	<p>𐳤 ‍ 𐳉  = 𐳤‍𐳉</p>
+	<p>𐳤 ‍ 𐳐  = 𐳤‍𐳐</p>
+	<p>𐳤 ‍ 𐳓  = 𐳤‍𐳓</p>
+	<p>𐳤 ‍ 𐳘  = 𐳤‍𐳘</p>
+	<p>𐳤 ‍ 𐳛  = 𐳤‍𐳛</p>
+	<p>𐳤 ‍ 𐳠  = 𐳤‍𐳠</p>
+	<p>𐳤 ‍ 𐳦  = 𐳤‍𐳦</p>
+	<p>𐳥 ‍ 𐳦  = 𐳥‍𐳦</p>
+	<p>𐳦 ‍ 𐳐  = 𐳦‍𐳐</p>
+	<p>𐳨 ‍ 𐳀  = 𐳨‍𐳀</p>
+	<p>𐳪 ‍ 𐳖  = 𐳪‍𐳖</p>
+	<p>𐳪 ‍ 𐳘  = 𐳪‍𐳘</p>
+	<p>𐳪 ‍ 𐳢  = 𐳪‍𐳢</p>
+	<p>𐳮 ‍ 𐳀  = 𐳮‍𐳀</p>
+	<p>𐳮 ‍ 𐳀 ‍ 𐳢  = 𐳮‍𐳀‍𐳢</p>
+	<p>𐳮 ‍ 𐳁 ‍ 𐳢  = 𐳮‍𐳁‍𐳢</p>
+	<p>𐳮 ‍ 𐳘  = 𐳮‍𐳘</p>
+	<p>𐳮 ‍ 𐳮  = 𐳮‍𐳮</p>
+	<p>𐳯 ‍ 𐳀  = 𐳯‍𐳀</p>
+	<p>𐳯 ‍ 𐳢  = 𐳯‍𐳢</p>
+	<p>𐳯 ‍ 𐳦  = 𐳯‍𐳦</p>
 </html>
