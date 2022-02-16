@@ -1,0 +1,1042 @@
+{
+    "tests": [
+        {
+            "expectation": "space=0+260|space=1+260|space=2+260|space=3+260|space=4+0|uni10C90.ltr=5+627|uni10CAF.ltr=6+820|uni10C92.ltr=7+547|uni10CDC.ltr=8+507|uni10CC3.ltr=9+751|uni10CDC.ltr=10+507|space=11+0",
+            "input": "    ‮𐲐𐲯𐲒𐳜𐳃𐳜‬",
+            "note": "fontdiff-OldHungarian.html",
+            "only": "NotoSansOldHungarian-Regular.ttf"
+        },
+        {
+            "expectation": "space=0+260|space=1+260|space=2+260|space=3+260|uni10C90.ltr=4+627|uni10CAF.ltr=5+820|uni10C92.ltr=6+547|uni10CDC.ltr=7+507|uni10CC3.ltr=8+751|uni10CDC.ltr=9+507|.notdef=10+600|space=11+0|uni10CDC.ltr=12+507|uni10CC3.ltr=13+751|space=14+0",
+            "input": "    𐲐𐲯𐲒𐳜𐳃𐳜⁞⁦𐳜𐳃⁩",
+            "note": "fontdiff-OldHungarian.html",
+            "only": "NotoSansOldHungarian-Regular.ttf"
+        },
+        {
+            "expectation": "space=0+260|space=1+260|space=2+260|space=3+260|uni10C90.ltr=4+627|uni10CAF.ltr=5+820|uni10C92.ltr=6+547|uni10CDC.ltr=7+507|uni10CC3.ltr=8+751|uni10CDC.ltr=9+507|.notdef=10+600|space=11+0|uni10CC3.ltr=12+751|uni10CDC.ltr=13+507|space=14+0",
+            "input": "    𐲐𐲯𐲒𐳜𐳃𐳜⁞‭𐳃𐳜‬",
+            "note": "fontdiff-OldHungarian.html",
+            "only": "NotoSansOldHungarian-Regular.ttf"
+        },
+        {
+            "expectation": "space=0+260|space=1+260|space=2+260|space=3+260|uni10CDC.ltr=4+507|uni10CC3.ltr=5+751|uni10CDC.ltr=6+507",
+            "input": "    𐳜𐳃𐳜",
+            "note": "fontdiff-OldHungarian.html",
+            "only": "NotoSansOldHungarian-Regular.ttf"
+        },
+        {
+            "expectation": "space=0+260|space=1+260|uni10CC0.ltr=2+444|space=2+0|uni10CE6.ltr=4+467|space=4+0|uni10CE6.ltr=6+467|.notdef=7+600|space=8+0|uni10CC0.ltr=9+444|space=9+0|uni10CE6.ltr=11+467|space=11+0|uni10CE6.ltr=13+467|space=14+0|space=15+260",
+            "input": "  𐳀‍𐳦‍𐳦⁞‭𐳀‍𐳦‍𐳦‬ ",
+            "note": "fontdiff-OldHungarian.html",
+            "only": "NotoSansOldHungarian-Regular.ttf"
+        },
+        {
+            "expectation": "uni10CC0.ltr=0+444|space=1+260|space=1+0|space=3+260|uni10CC2.ltr=4+538|space=5+260|space=6+260|.notdef=7+600|space=8+260|uni10CC2_10CC0.ltr=9+646",
+            "input": "𐳀 ‍ 𐳂  = 𐳀‍𐳂",
+            "note": "fontdiff-OldHungarian.html",
+            "only": "NotoSansOldHungarian-Regular.ttf"
+        },
+        {
+            "expectation": "uni10CC0.ltr=0+444|space=1+260|space=1+0|space=3+260|uni10CC7.ltr=4+437|space=5+260|space=6+260|.notdef=7+600|space=8+260|uni10CC0.ltr=9+444|space=9+0|uni10CC7.ltr=11+437",
+            "input": "𐳀 ‍ 𐳇  = 𐳀‍𐳇",
+            "note": "fontdiff-OldHungarian.html",
+            "only": "NotoSansOldHungarian-Regular.ttf"
+        },
+        {
+            "expectation": "uni10CC0.ltr=0+444|space=1+260|space=1+0|space=3+260|uni10CD6.ltr=4+612|space=5+260|space=6+260|.notdef=7+600|space=8+260|uni10CD6_10CC0.ltr=9+700",
+            "input": "𐳀 ‍ 𐳖  = 𐳀‍𐳖",
+            "note": "fontdiff-OldHungarian.html",
+            "only": "NotoSansOldHungarian-Regular.ttf"
+        },
+        {
+            "expectation": "uni10CC0.ltr=0+444|space=1+260|space=1+0|space=3+260|uni10CE2.ltr=4+627|space=5+260|space=6+260|.notdef=7+600|space=8+260|uni10CE2_10CC0.ltr=9+794",
+            "input": "𐳀 ‍ 𐳢  = 𐳀‍𐳢",
+            "note": "fontdiff-OldHungarian.html",
+            "only": "NotoSansOldHungarian-Regular.ttf"
+        },
+        {
+            "expectation": "uni10CC0.ltr=0+444|space=1+260|space=1+0|space=3+260|uni10CE6.ltr=4+467|space=5+260|space=5+0|space=7+260|uni10CE6.ltr=8+467|space=9+260|space=10+260|.notdef=11+600|space=12+260|uni10CC0.ltr=13+444|space=13+0|uni10CE6.ltr=15+467|space=15+0|uni10CE6.ltr=17+467",
+            "input": "𐳀 ‍ 𐳦 ‍ 𐳦  = 𐳀‍𐳦‍𐳦",
+            "note": "fontdiff-OldHungarian.html",
+            "only": "NotoSansOldHungarian-Regular.ttf"
+        },
+        {
+            "expectation": "uni10CC1.ltr=0+433|space=1+260|space=1+0|space=3+260|uni10CE2.ltr=4+627|space=5+260|space=6+260|.notdef=7+600|space=8+260|uni10CC1.ltr=9+433|space=9+0|uni10CE2.ltr=11+627",
+            "input": "𐳁 ‍ 𐳢  = 𐳁‍𐳢",
+            "note": "fontdiff-OldHungarian.html",
+            "only": "NotoSansOldHungarian-Regular.ttf"
+        },
+        {
+            "expectation": "uni10CC2.ltr=0+538|space=1+260|space=1+0|space=3+260|uni10CC0.ltr=4+444|space=5+260|space=6+260|.notdef=7+600|space=8+260|uni10CC0_10CC2.ltr=9+646",
+            "input": "𐳂 ‍ 𐳀  = 𐳂‍𐳀",
+            "note": "fontdiff-OldHungarian.html",
+            "only": "NotoSansOldHungarian-Regular.ttf"
+        },
+        {
+            "expectation": "uni10CC2.ltr=0+538|space=1+260|space=1+0|space=3+260|uni10CC9.ltr=4+411|space=5+260|space=6+260|.notdef=7+600|space=8+260|uni10CC2.ltr=9+538|space=9+0|uni10CC9.ltr=11+411",
+            "input": "𐳂 ‍ 𐳉  = 𐳂‍𐳉",
+            "note": "fontdiff-OldHungarian.html",
+            "only": "NotoSansOldHungarian-Regular.ttf"
+        },
+        {
+            "expectation": "uni10CC2.ltr=0+538|space=1+260|space=1+0|space=3+260|uni10CD0.ltr=4+452|space=5+260|space=6+260|.notdef=7+600|space=8+260|uni10CC2.ltr=9+538|space=9+0|uni10CD0.ltr=11+452",
+            "input": "𐳂 ‍ 𐳐  = 𐳂‍𐳐",
+            "note": "fontdiff-OldHungarian.html",
+            "only": "NotoSansOldHungarian-Regular.ttf"
+        },
+        {
+            "expectation": "uni10CC2.ltr=0+538|space=1+260|space=1+0|space=3+260|uni10CDB.ltr=4+473|space=5+260|space=6+260|.notdef=7+600|space=8+260|uni10CC2.ltr=9+538|space=9+0|uni10CDB.ltr=11+473",
+            "input": "𐳂 ‍ 𐳛  = 𐳂‍𐳛",
+            "note": "fontdiff-OldHungarian.html",
+            "only": "NotoSansOldHungarian-Regular.ttf"
+        },
+        {
+            "expectation": "uni10CC2.ltr=0+538|space=1+260|space=1+0|space=3+260|uni10CE6.ltr=4+467|space=5+260|space=6+260|.notdef=7+600|space=8+260|uni10CC2.ltr=9+538|space=9+0|uni10CE6.ltr=11+467",
+            "input": "𐳂 ‍ 𐳦  = 𐳂‍𐳦",
+            "note": "fontdiff-OldHungarian.html",
+            "only": "NotoSansOldHungarian-Regular.ttf"
+        },
+        {
+            "expectation": "uni10CC4.ltr=0+447|space=1+260|space=1+0|space=3+260|uni10CD3.ltr=4+493|space=5+260|space=6+260|.notdef=7+600|space=8+260|uni10CC4.ltr=9+447|space=9+0|uni10CD3.ltr=11+493",
+            "input": "𐳄 ‍ 𐳓  = 𐳄‍𐳓",
+            "note": "fontdiff-OldHungarian.html",
+            "only": "NotoSansOldHungarian-Regular.ttf"
+        },
+        {
+            "expectation": "uni10CC4.ltr=0+447|space=1+260|space=1+0|space=3+260|uni10CD4.ltr=4+469|space=5+260|space=6+260|.notdef=7+600|space=8+260|uni10CC4.ltr=9+447|space=9+0|uni10CD4.ltr=11+469",
+            "input": "𐳄 ‍ 𐳔  = 𐳄‍𐳔",
+            "note": "fontdiff-OldHungarian.html",
+            "only": "NotoSansOldHungarian-Regular.ttf"
+        },
+        {
+            "expectation": "uni10CC6.ltr=0+615|space=1+260|space=1+0|space=3+260|uni10CC0.ltr=4+444|space=5+260|space=6+260|.notdef=7+600|space=8+260|uni10CC6.ltr=9+615|space=9+0|uni10CC0.ltr=11+444",
+            "input": "𐳆 ‍ 𐳀  = 𐳆‍𐳀",
+            "note": "fontdiff-OldHungarian.html",
+            "only": "NotoSansOldHungarian-Regular.ttf"
+        },
+        {
+            "expectation": "uni10CC6.ltr=0+615|space=1+260|space=1+0|space=3+260|uni10CD0.ltr=4+452|space=5+260|space=5+0|space=7+260|uni10CD9.ltr=8+420|space=9+260|space=10+260|.notdef=11+600|space=12+260|uni10CC6.ltr=13+615|space=13+0|uni10CD9_10CD0.ltr=15+448",
+            "input": "𐳆 ‍ 𐳐 ‍ 𐳙  = 𐳆‍𐳐‍𐳙",
+            "note": "fontdiff-OldHungarian.html",
+            "only": "NotoSansOldHungarian-Regular.ttf"
+        },
+        {
+            "expectation": "uni10CC7.ltr=0+437|space=1+260|space=1+0|space=3+260|uni10CEA.ltr=4+662|space=5+260|space=6+260|.notdef=7+600|space=8+260|uni10CC7.ltr=9+437|space=9+0|uni10CEA.ltr=11+662",
+            "input": "𐳇 ‍ 𐳪  = 𐳇‍𐳪",
+            "note": "fontdiff-OldHungarian.html",
+            "only": "NotoSansOldHungarian-Regular.ttf"
+        },
+        {
+            "expectation": "uni10CCD.ltr=0+565|space=1+260|space=1+0|space=3+260|uni10CC0.ltr=4+444|space=5+260|space=6+260|.notdef=7+600|space=8+260|uni10CCD.ltr=9@-40,0+525|space=9+0|uni10CC0.ltr=11+444",
+            "input": "𐳍 ‍ 𐳀  = 𐳍‍𐳀",
+            "note": "fontdiff-OldHungarian.html",
+            "only": "NotoSansOldHungarian-Regular.ttf"
+        },
+        {
+            "expectation": "uni10CCD.ltr=0+565|space=1+260|space=1+0|space=3+260|uni10CC9.ltr=4+411|space=5+260|space=6+260|.notdef=7+600|space=8+260|uni10CCD.ltr=9+565|space=9+0|uni10CC9.ltr=11+411",
+            "input": "𐳍 ‍ 𐳉  = 𐳍‍𐳉",
+            "note": "fontdiff-OldHungarian.html",
+            "only": "NotoSansOldHungarian-Regular.ttf"
+        },
+        {
+            "expectation": "uni10CCD.ltr=0+565|space=1+260|space=1+0|space=3+260|uni10CD0.ltr=4+452|space=5+260|space=6+260|.notdef=7+600|space=8+260|uni10CCD.ltr=9+565|space=9+0|uni10CD0.ltr=11+452",
+            "input": "𐳍 ‍ 𐳐  = 𐳍‍𐳐",
+            "note": "fontdiff-OldHungarian.html",
+            "only": "NotoSansOldHungarian-Regular.ttf"
+        },
+        {
+            "expectation": "uni10CCD.ltr=0+565|space=1+260|space=1+0|space=3+260|uni10CDB.ltr=4+473|space=5+260|space=6+260|.notdef=7+600|space=8+260|uni10CCD.ltr=9+565|space=9+0|uni10CDB.ltr=11+473",
+            "input": "𐳍 ‍ 𐳛  = 𐳍‍𐳛",
+            "note": "fontdiff-OldHungarian.html",
+            "only": "NotoSansOldHungarian-Regular.ttf"
+        },
+        {
+            "expectation": "uni10CCF.ltr=0+536|space=1+260|space=1+0|space=3+260|uni10CC0.ltr=4+444|space=5+260|space=6+260|.notdef=7+600|space=8+260|uni10CCF.ltr=9+536|space=9+0|uni10CC0.ltr=11+444",
+            "input": "𐳏 ‍ 𐳀  = 𐳏‍𐳀",
+            "note": "fontdiff-OldHungarian.html",
+            "only": "NotoSansOldHungarian-Regular.ttf"
+        },
+        {
+            "expectation": "uni10CCF.ltr=0+536|space=1+260|space=1+0|space=3+260|uni10CC9.ltr=4+411|space=5+260|space=6+260|.notdef=7+600|space=8+260|uni10CCF.ltr=9+536|space=9+0|uni10CC9.ltr=11+411",
+            "input": "𐳏 ‍ 𐳉  = 𐳏‍𐳉",
+            "note": "fontdiff-OldHungarian.html",
+            "only": "NotoSansOldHungarian-Regular.ttf"
+        },
+        {
+            "expectation": "uni10CCF.ltr=0+536|space=1+260|space=1+0|space=3+260|uni10CD0.ltr=4+452|space=5+260|space=6+260|.notdef=7+600|space=8+260|uni10CCF.ltr=9+536|space=9+0|uni10CD0.ltr=11+452",
+            "input": "𐳏 ‍ 𐳐  = 𐳏‍𐳐",
+            "note": "fontdiff-OldHungarian.html",
+            "only": "NotoSansOldHungarian-Regular.ttf"
+        },
+        {
+            "expectation": "uni10CCF.ltr=0+536|space=1+260|space=1+0|space=3+260|uni10CDB.ltr=4+473|space=5+260|space=6+260|.notdef=7+600|space=8+260|uni10CCF.ltr=9+536|space=9+0|uni10CDB.ltr=11+473",
+            "input": "𐳏 ‍ 𐳛  = 𐳏‍𐳛",
+            "note": "fontdiff-OldHungarian.html",
+            "only": "NotoSansOldHungarian-Regular.ttf"
+        },
+        {
+            "expectation": "uni10CD0.ltr=0+452|space=1+260|space=1+0|space=3+260|uni10CD2.ltr=4+407|space=5+260|space=6+260|.notdef=7+600|space=8+260|uni10CD0.ltr=9+452|space=9+0|uni10CD2.ltr=11+407",
+            "input": "𐳐 ‍ 𐳒  = 𐳐‍𐳒",
+            "note": "fontdiff-OldHungarian.html",
+            "only": "NotoSansOldHungarian-Regular.ttf"
+        },
+        {
+            "expectation": "uni10CD0.ltr=0+452|space=1+260|space=1+0|space=3+260|uni10CE6.ltr=4+467|space=5+260|space=6+260|.notdef=7+600|space=8+260|uni10CE6_10CD0.ltr=9+600",
+            "input": "𐳐 ‍ 𐳦  = 𐳐‍𐳦",
+            "note": "fontdiff-OldHungarian.html",
+            "only": "NotoSansOldHungarian-Regular.ttf"
+        },
+        {
+            "expectation": "uni10CD1.ltr=0+421|space=1+260|space=1+0|space=3+260|uni10CE2.ltr=4+627|space=5+260|space=5+0|space=7+260|uni10CE6.ltr=8+467|space=9+260|space=10+260|.notdef=11+600|space=12+260|uni10CD1.ltr=13+421|space=13+0|uni10CE2.ltr=15+627|space=15+0|uni10CE6.ltr=17+467",
+            "input": "𐳑 ‍ 𐳢 ‍ 𐳦  = 𐳑‍𐳢‍𐳦",
+            "note": "fontdiff-OldHungarian.html",
+            "only": "NotoSansOldHungarian-Regular.ttf"
+        },
+        {
+            "expectation": "uni10CD1.ltr=0+421|space=1+260|space=1+0|space=3+260|uni10CE6.ltr=4+467|space=5+260|space=6+260|.notdef=7+600|space=8+260|uni10CD1.ltr=9+421|space=9+0|uni10CE6.ltr=11+467",
+            "input": "𐳑 ‍ 𐳦  = 𐳑‍𐳦",
+            "note": "fontdiff-OldHungarian.html",
+            "only": "NotoSansOldHungarian-Regular.ttf"
+        },
+        {
+            "expectation": "uni10CD3.ltr=0+493|space=1+260|space=1+0|space=3+260|uni10CE5.ltr=4+277|space=5+260|space=6+260|.notdef=7+600|space=8+260|uni10CD3.ltr=9+493|space=9+0|uni10CE5.ltr=11+277",
+            "input": "𐳓 ‍ 𐳥  = 𐳓‍𐳥",
+            "note": "fontdiff-OldHungarian.html",
+            "only": "NotoSansOldHungarian-Regular.ttf"
+        },
+        {
+            "expectation": "uni10CD3.ltr=0+493|space=1+260|space=1+0|space=3+260|uni10CEE.ltr=4+662|space=5+260|space=6+260|.notdef=7+600|space=8+260|uni10CD3.ltr=9+493|space=9+0|uni10CEE.ltr=11+662",
+            "input": "𐳓 ‍ 𐳮  = 𐳓‍𐳮",
+            "note": "fontdiff-OldHungarian.html",
+            "only": "NotoSansOldHungarian-Regular.ttf"
+        },
+        {
+            "expectation": "uni10CD6.ltr=0+612|space=1+260|space=1+0|space=3+260|uni10CC0.ltr=4+444|space=5+260|space=6+260|.notdef=7+600|space=8+260|uni10CC0_10CD6.ltr=9+699",
+            "input": "𐳖 ‍ 𐳀  = 𐳖‍𐳀",
+            "note": "fontdiff-OldHungarian.html",
+            "only": "NotoSansOldHungarian-Regular.ttf"
+        },
+        {
+            "expectation": "uni10CD6.ltr=0+612|space=1+260|space=1+0|space=3+260|uni10CC1.ltr=4+433|space=5+260|space=6+260|.notdef=7+600|space=8+260|uni10CD6.ltr=9+612|space=9+0|uni10CC1.ltr=11+433",
+            "input": "𐳖 ‍ 𐳁  = 𐳖‍𐳁",
+            "note": "fontdiff-OldHungarian.html",
+            "only": "NotoSansOldHungarian-Regular.ttf"
+        },
+        {
+            "expectation": "uni10CD6.ltr=0+612|space=1+260|space=1+0|space=3+260|uni10CC9.ltr=4+411|space=5+260|space=6+260|.notdef=7+600|space=8+260|uni10CD6.ltr=9+612|space=9+0|uni10CC9.ltr=11+411",
+            "input": "𐳖 ‍ 𐳉  = 𐳖‍𐳉",
+            "note": "fontdiff-OldHungarian.html",
+            "only": "NotoSansOldHungarian-Regular.ttf"
+        },
+        {
+            "expectation": "uni10CD6.ltr=0+612|space=1+260|space=1+0|space=3+260|uni10CDB.ltr=4+473|space=5+260|space=6+260|.notdef=7+600|space=8+260|uni10CD6.ltr=9+612|space=9+0|uni10CDB.ltr=11+473",
+            "input": "𐳖 ‍ 𐳛  = 𐳖‍𐳛",
+            "note": "fontdiff-OldHungarian.html",
+            "only": "NotoSansOldHungarian-Regular.ttf"
+        },
+        {
+            "expectation": "uni10CD6.ltr=0+612|space=1+260|space=1+0|space=3+260|uni10CE6.ltr=4+467|space=5+260|space=6+260|.notdef=7+600|space=8+260|uni10CD6.ltr=9@-60,0+552|space=9+0|uni10CE6.ltr=11+467",
+            "input": "𐳖 ‍ 𐳦  = 𐳖‍𐳦",
+            "note": "fontdiff-OldHungarian.html",
+            "only": "NotoSansOldHungarian-Regular.ttf"
+        },
+        {
+            "expectation": "uni10CD9.ltr=0+420|space=1+260|space=1+0|space=3+260|uni10CC0.ltr=4+444|space=5+260|space=6+260|.notdef=7+600|space=8+260|uni10CD9.ltr=9+420|space=9+0|uni10CC0.ltr=11+444",
+            "input": "𐳙 ‍ 𐳀  = 𐳙‍𐳀",
+            "note": "fontdiff-OldHungarian.html",
+            "only": "NotoSansOldHungarian-Regular.ttf"
+        },
+        {
+            "expectation": "uni10CD9.ltr=0+420|space=1+260|space=1+0|space=3+260|uni10CC4.ltr=4+447|space=5+260|space=6+260|.notdef=7+600|space=8+260|uni10CD9.ltr=9+420|space=9+0|uni10CC4.ltr=11+447",
+            "input": "𐳙 ‍ 𐳄  = 𐳙‍𐳄",
+            "note": "fontdiff-OldHungarian.html",
+            "only": "NotoSansOldHungarian-Regular.ttf"
+        },
+        {
+            "expectation": "uni10CD9.ltr=0+420|space=1+260|space=1+0|space=3+260|uni10CC7.ltr=4+437|space=5+260|space=6+260|.notdef=7+600|space=8+260|uni10CD9.ltr=9+420|space=9+0|uni10CC7.ltr=11+437",
+            "input": "𐳙 ‍ 𐳇  = 𐳙‍𐳇",
+            "note": "fontdiff-OldHungarian.html",
+            "only": "NotoSansOldHungarian-Regular.ttf"
+        },
+        {
+            "expectation": "uni10CD9.ltr=0+420|space=1+260|space=1+0|space=3+260|uni10CCE.ltr=4+450|space=5+260|space=6+260|.notdef=7+600|space=8+260|uni10CD9.ltr=9+420|space=9+0|uni10CCE.ltr=11+450",
+            "input": "𐳙 ‍ 𐳎  = 𐳙‍𐳎",
+            "note": "fontdiff-OldHungarian.html",
+            "only": "NotoSansOldHungarian-Regular.ttf"
+        },
+        {
+            "expectation": "uni10CD9.ltr=0+420|space=1+260|space=1+0|space=3+260|uni10CD0.ltr=4+452|space=5+260|space=6+260|.notdef=7+600|space=8+260|uni10CD9.ltr=9+420|space=9+0|uni10CD0.ltr=11+452",
+            "input": "𐳙 ‍ 𐳐  = 𐳙‍𐳐",
+            "note": "fontdiff-OldHungarian.html",
+            "only": "NotoSansOldHungarian-Regular.ttf"
+        },
+        {
+            "expectation": "uni10CD9.ltr=0+420|space=1+260|space=1+0|space=3+260|uni10CD3.ltr=4+493|space=5+260|space=6+260|.notdef=7+600|space=8+260|uni10CD9.ltr=9+420|space=9+0|uni10CD3.ltr=11+493",
+            "input": "𐳙 ‍ 𐳓  = 𐳙‍𐳓",
+            "note": "fontdiff-OldHungarian.html",
+            "only": "NotoSansOldHungarian-Regular.ttf"
+        },
+        {
+            "expectation": "uni10CD9.ltr=0+420|space=1+260|space=1+0|space=3+260|uni10CE0.ltr=4+453|space=5+260|space=6+260|.notdef=7+600|space=8+260|uni10CD9.ltr=9+420|space=9+0|uni10CE0.ltr=11+453",
+            "input": "𐳙 ‍ 𐳠  = 𐳙‍𐳠",
+            "note": "fontdiff-OldHungarian.html",
+            "only": "NotoSansOldHungarian-Regular.ttf"
+        },
+        {
+            "expectation": "uni10CD9.ltr=0+420|space=1+260|space=1+0|space=3+260|uni10CE6.ltr=4+467|space=5+260|space=6+260|.notdef=7+600|space=8+260|uni10CD9.ltr=9@-40,0+380|space=9+0|uni10CE6.ltr=11+467",
+            "input": "𐳙 ‍ 𐳦  = 𐳙‍𐳦",
+            "note": "fontdiff-OldHungarian.html",
+            "only": "NotoSansOldHungarian-Regular.ttf"
+        },
+        {
+            "expectation": "uni10CDB.ltr=0+473|space=1+260|space=1+0|space=3+260|uni10CE2.ltr=4+627|space=5+260|space=6+260|.notdef=7+600|space=8+260|uni10CE2_10CDB.ltr=9+740",
+            "input": "𐳛 ‍ 𐳢  = 𐳛‍𐳢",
+            "note": "fontdiff-OldHungarian.html",
+            "only": "NotoSansOldHungarian-Regular.ttf"
+        },
+        {
+            "expectation": "uni10CE2.ltr=0+627|space=1+260|space=1+0|space=3+260|uni10CC0.ltr=4+444|space=5+260|space=6+260|.notdef=7+600|space=8+260|uni10CC0_10CE2.ltr=9+792",
+            "input": "𐳢 ‍ 𐳀  = 𐳢‍𐳀",
+            "note": "fontdiff-OldHungarian.html",
+            "only": "NotoSansOldHungarian-Regular.ttf"
+        },
+        {
+            "expectation": "uni10CE2.ltr=0+627|space=1+260|space=1+0|space=3+260|uni10CC9.ltr=4+411|space=5+260|space=6+260|.notdef=7+600|space=8+260|uni10CE2.ltr=9+627|space=9+0|uni10CC9.ltr=11+411",
+            "input": "𐳢 ‍ 𐳉  = 𐳢‍𐳉",
+            "note": "fontdiff-OldHungarian.html",
+            "only": "NotoSansOldHungarian-Regular.ttf"
+        },
+        {
+            "expectation": "uni10CE2.ltr=0+627|space=1+260|space=1+0|space=3+260|uni10CD0.ltr=4+452|space=5+260|space=6+260|.notdef=7+600|space=8+260|uni10CE2.ltr=9+627|space=9+0|uni10CD0.ltr=11+452",
+            "input": "𐳢 ‍ 𐳐  = 𐳢‍𐳐",
+            "note": "fontdiff-OldHungarian.html",
+            "only": "NotoSansOldHungarian-Regular.ttf"
+        },
+        {
+            "expectation": "uni10CE2.ltr=0+627|space=1+260|space=1+0|space=3+260|uni10CDB.ltr=4+473|space=5+260|space=6+260|.notdef=7+600|space=8+260|uni10CDB_10CE2.ltr=9+740",
+            "input": "𐳢 ‍ 𐳛  = 𐳢‍𐳛",
+            "note": "fontdiff-OldHungarian.html",
+            "only": "NotoSansOldHungarian-Regular.ttf"
+        },
+        {
+            "expectation": "uni10CE2.ltr=0+627|space=1+260|space=1+0|space=3+260|uni10CE6.ltr=4+467|space=5+260|space=6+260|.notdef=7+600|space=8+260|uni10CE2.ltr=9+627|space=9+0|uni10CE6.ltr=11+467",
+            "input": "𐳢 ‍ 𐳦  = 𐳢‍𐳦",
+            "note": "fontdiff-OldHungarian.html",
+            "only": "NotoSansOldHungarian-Regular.ttf"
+        },
+        {
+            "expectation": "uni10CE2.ltr=0+627|space=1+260|space=1+0|space=3+260|uni10CEA.ltr=4+662|space=5+260|space=6+260|.notdef=7+600|space=8+260|uni10CEA_10CE2.ltr=9+932",
+            "input": "𐳢 ‍ 𐳪  = 𐳢‍𐳪",
+            "note": "fontdiff-OldHungarian.html",
+            "only": "NotoSansOldHungarian-Regular.ttf"
+        },
+        {
+            "expectation": "uni10CE4.ltr=0+566|space=1+260|space=1+0|space=3+260|uni10CC0.ltr=4+444|space=5+260|space=6+260|.notdef=7+600|space=8+260|uni10CE4.ltr=9@-40,0+526|space=9+0|uni10CC0.ltr=11+444",
+            "input": "𐳤 ‍ 𐳀  = 𐳤‍𐳀",
+            "note": "fontdiff-OldHungarian.html",
+            "only": "NotoSansOldHungarian-Regular.ttf"
+        },
+        {
+            "expectation": "uni10CE4.ltr=0+566|space=1+260|space=1+0|space=3+260|uni10CC9.ltr=4+411|space=5+260|space=6+260|.notdef=7+600|space=8+260|uni10CE4.ltr=9+566|space=9+0|uni10CC9.ltr=11+411",
+            "input": "𐳤 ‍ 𐳉  = 𐳤‍𐳉",
+            "note": "fontdiff-OldHungarian.html",
+            "only": "NotoSansOldHungarian-Regular.ttf"
+        },
+        {
+            "expectation": "uni10CE4.ltr=0+566|space=1+260|space=1+0|space=3+260|uni10CD0.ltr=4+452|space=5+260|space=6+260|.notdef=7+600|space=8+260|uni10CE4.ltr=9+566|space=9+0|uni10CD0.ltr=11+452",
+            "input": "𐳤 ‍ 𐳐  = 𐳤‍𐳐",
+            "note": "fontdiff-OldHungarian.html",
+            "only": "NotoSansOldHungarian-Regular.ttf"
+        },
+        {
+            "expectation": "uni10CE4.ltr=0+566|space=1+260|space=1+0|space=3+260|uni10CD3.ltr=4+493|space=5+260|space=6+260|.notdef=7+600|space=8+260|uni10CE4.ltr=9+566|space=9+0|uni10CD3.ltr=11+493",
+            "input": "𐳤 ‍ 𐳓  = 𐳤‍𐳓",
+            "note": "fontdiff-OldHungarian.html",
+            "only": "NotoSansOldHungarian-Regular.ttf"
+        },
+        {
+            "expectation": "uni10CE4.ltr=0+566|space=1+260|space=1+0|space=3+260|uni10CD8.ltr=4+481|space=5+260|space=6+260|.notdef=7+600|space=8+260|uni10CE4.ltr=9+566|space=9+0|uni10CD8.ltr=11+481",
+            "input": "𐳤 ‍ 𐳘  = 𐳤‍𐳘",
+            "note": "fontdiff-OldHungarian.html",
+            "only": "NotoSansOldHungarian-Regular.ttf"
+        },
+        {
+            "expectation": "uni10CE4.ltr=0+566|space=1+260|space=1+0|space=3+260|uni10CDB.ltr=4+473|space=5+260|space=6+260|.notdef=7+600|space=8+260|uni10CE4.ltr=9+566|space=9+0|uni10CDB.ltr=11+473",
+            "input": "𐳤 ‍ 𐳛  = 𐳤‍𐳛",
+            "note": "fontdiff-OldHungarian.html",
+            "only": "NotoSansOldHungarian-Regular.ttf"
+        },
+        {
+            "expectation": "uni10CE4.ltr=0+566|space=1+260|space=1+0|space=3+260|uni10CE0.ltr=4+453|space=5+260|space=6+260|.notdef=7+600|space=8+260|uni10CE4.ltr=9+566|space=9+0|uni10CE0.ltr=11+453",
+            "input": "𐳤 ‍ 𐳠  = 𐳤‍𐳠",
+            "note": "fontdiff-OldHungarian.html",
+            "only": "NotoSansOldHungarian-Regular.ttf"
+        },
+        {
+            "expectation": "uni10CE4.ltr=0+566|space=1+260|space=1+0|space=3+260|uni10CE6.ltr=4+467|space=5+260|space=6+260|.notdef=7+600|space=8+260|uni10CE4.ltr=9@-60,0+506|space=9+0|uni10CE6.ltr=11+467",
+            "input": "𐳤 ‍ 𐳦  = 𐳤‍𐳦",
+            "note": "fontdiff-OldHungarian.html",
+            "only": "NotoSansOldHungarian-Regular.ttf"
+        },
+        {
+            "expectation": "uni10CE5.ltr=0+277|space=1+260|space=1+0|space=3+260|uni10CE6.ltr=4+467|space=5+260|space=6+260|.notdef=7+600|space=8+260|uni10CE5.ltr=9+277|space=9+0|uni10CE6.ltr=11+467",
+            "input": "𐳥 ‍ 𐳦  = 𐳥‍𐳦",
+            "note": "fontdiff-OldHungarian.html",
+            "only": "NotoSansOldHungarian-Regular.ttf"
+        },
+        {
+            "expectation": "uni10CE6.ltr=0+467|space=1+260|space=1+0|space=3+260|uni10CD0.ltr=4+452|space=5+260|space=6+260|.notdef=7+600|space=8+260|uni10CD0_10CE6.ltr=9+559",
+            "input": "𐳦 ‍ 𐳐  = 𐳦‍𐳐",
+            "note": "fontdiff-OldHungarian.html",
+            "only": "NotoSansOldHungarian-Regular.ttf"
+        },
+        {
+            "expectation": "uni10CE8.ltr=0+538|space=1+260|space=1+0|space=3+260|uni10CC0.ltr=4+444|space=5+260|space=6+260|.notdef=7+600|space=8+260|uni10CE8.ltr=9@-10,0+528|space=9+0|uni10CC0.ltr=11+444",
+            "input": "𐳨 ‍ 𐳀  = 𐳨‍𐳀",
+            "note": "fontdiff-OldHungarian.html",
+            "only": "NotoSansOldHungarian-Regular.ttf"
+        },
+        {
+            "expectation": "uni10CEA.ltr=0+662|space=1+260|space=1+0|space=3+260|uni10CD6.ltr=4+612|space=5+260|space=6+260|.notdef=7+600|space=8+260|uni10CEA.ltr=9+662|space=9+0|uni10CD6.ltr=11+612",
+            "input": "𐳪 ‍ 𐳖  = 𐳪‍𐳖",
+            "note": "fontdiff-OldHungarian.html",
+            "only": "NotoSansOldHungarian-Regular.ttf"
+        },
+        {
+            "expectation": "uni10CEA.ltr=0+662|space=1+260|space=1+0|space=3+260|uni10CD8.ltr=4+481|space=5+260|space=6+260|.notdef=7+600|space=8+260|uni10CEA.ltr=9+662|space=9+0|uni10CD8.ltr=11+481",
+            "input": "𐳪 ‍ 𐳘  = 𐳪‍𐳘",
+            "note": "fontdiff-OldHungarian.html",
+            "only": "NotoSansOldHungarian-Regular.ttf"
+        },
+        {
+            "expectation": "uni10CEA.ltr=0+662|space=1+260|space=1+0|space=3+260|uni10CE2.ltr=4+627|space=5+260|space=6+260|.notdef=7+600|space=8+260|uni10CE2_10CEA.ltr=9+947",
+            "input": "𐳪 ‍ 𐳢  = 𐳪‍𐳢",
+            "note": "fontdiff-OldHungarian.html",
+            "only": "NotoSansOldHungarian-Regular.ttf"
+        },
+        {
+            "expectation": "uni10CEE.ltr=0+662|space=1+260|space=1+0|space=3+260|uni10CC0.ltr=4+444|space=5+260|space=6+260|.notdef=7+600|space=8+260|uni10CEE.ltr=9+662|space=9+0|uni10CC0.ltr=11+444",
+            "input": "𐳮 ‍ 𐳀  = 𐳮‍𐳀",
+            "note": "fontdiff-OldHungarian.html",
+            "only": "NotoSansOldHungarian-Regular.ttf"
+        },
+        {
+            "expectation": "uni10CEE.ltr=0+662|space=1+260|space=1+0|space=3+260|uni10CC0.ltr=4+444|space=5+260|space=5+0|space=7+260|uni10CE2.ltr=8+627|space=9+260|space=10+260|.notdef=11+600|space=12+260|uni10CEE.ltr=13+662|space=13+0|uni10CE2_10CC0.ltr=15+794",
+            "input": "𐳮 ‍ 𐳀 ‍ 𐳢  = 𐳮‍𐳀‍𐳢",
+            "note": "fontdiff-OldHungarian.html",
+            "only": "NotoSansOldHungarian-Regular.ttf"
+        },
+        {
+            "expectation": "uni10CEE.ltr=0+662|space=1+260|space=1+0|space=3+260|uni10CC1.ltr=4+433|space=5+260|space=5+0|space=7+260|uni10CE2.ltr=8+627|space=9+260|space=10+260|.notdef=11+600|space=12+260|uni10CEE.ltr=13+662|space=13+0|uni10CC1.ltr=15+433|space=15+0|uni10CE2.ltr=17+627",
+            "input": "𐳮 ‍ 𐳁 ‍ 𐳢  = 𐳮‍𐳁‍𐳢",
+            "note": "fontdiff-OldHungarian.html",
+            "only": "NotoSansOldHungarian-Regular.ttf"
+        },
+        {
+            "expectation": "uni10CEE.ltr=0+662|space=1+260|space=1+0|space=3+260|uni10CD8.ltr=4+481|space=5+260|space=6+260|.notdef=7+600|space=8+260|uni10CEE.ltr=9+662|space=9+0|uni10CD8.ltr=11+481",
+            "input": "𐳮 ‍ 𐳘  = 𐳮‍𐳘",
+            "note": "fontdiff-OldHungarian.html",
+            "only": "NotoSansOldHungarian-Regular.ttf"
+        },
+        {
+            "expectation": "uni10CEE.ltr=0+662|space=1+260|space=1+0|space=3+260|uni10CEE.ltr=4+662|space=5+260|space=6+260|.notdef=7+600|space=8+260|uni10CEE_10CEE.ltr=9+662",
+            "input": "𐳮 ‍ 𐳮  = 𐳮‍𐳮",
+            "note": "fontdiff-OldHungarian.html",
+            "only": "NotoSansOldHungarian-Regular.ttf"
+        },
+        {
+            "expectation": "uni10CEF.ltr=0+615|space=1+260|space=1+0|space=3+260|uni10CC0.ltr=4+444|space=5+260|space=6+260|.notdef=7+600|space=8+260|uni10CEF.ltr=9+615|space=9+0|uni10CC0.ltr=11+444",
+            "input": "𐳯 ‍ 𐳀  = 𐳯‍𐳀",
+            "note": "fontdiff-OldHungarian.html",
+            "only": "NotoSansOldHungarian-Regular.ttf"
+        },
+        {
+            "expectation": "uni10CEF.ltr=0+615|space=1+260|space=1+0|space=3+260|uni10CE2.ltr=4+627|space=5+260|space=6+260|.notdef=7+600|space=8+260|uni10CEF.ltr=9+615|space=9+0|uni10CE2.ltr=11+627",
+            "input": "𐳯 ‍ 𐳢  = 𐳯‍𐳢",
+            "note": "fontdiff-OldHungarian.html",
+            "only": "NotoSansOldHungarian-Regular.ttf"
+        },
+        {
+            "expectation": "uni10CEF.ltr=0+615|space=1+260|space=1+0|space=3+260|uni10CE6.ltr=4+467|space=5+260|space=6+260|.notdef=7+600|space=8+260|uni10CEF.ltr=9+615|space=9+0|uni10CE6.ltr=11+467",
+            "input": "𐳯 ‍ 𐳦  = 𐳯‍𐳦",
+            "note": "fontdiff-OldHungarian.html",
+            "only": "NotoSansOldHungarian-Regular.ttf"
+        },
+        {
+            "expectation": "uni10CC0.ltr=0+444|uni10CE2.ltr=1+627|uni10CEA.ltr=2+662|uni10CD6.ltr=3+612",
+            "input": "𐳀𐳢𐳪𐳖",
+            "note": "fontdiff-und-Hung_chars.html",
+            "only": "NotoSansOldHungarian-Regular.ttf"
+        },
+        {
+            "expectation": "uni10CC0.ltr=0+444|uni10CE6.ltr=1+467|uni10CE6.ltr=2+467|uni10CEA.ltr=3+662|uni10CD6.ltr=4+612",
+            "input": "𐳀𐳦𐳦𐳪𐳖",
+            "note": "fontdiff-und-Hung_chars.html",
+            "only": "NotoSansOldHungarian-Regular.ttf"
+        },
+        {
+            "expectation": "uni10CC1.ltr=0+433|uni10CE2.ltr=1+627|uni10CEA.ltr=2+662|uni10CD6.ltr=3+612",
+            "input": "𐳁𐳢𐳪𐳖",
+            "note": "fontdiff-und-Hung_chars.html",
+            "only": "NotoSansOldHungarian-Regular.ttf"
+        },
+        {
+            "expectation": "uni10CC4.ltr=0+447|uni10CD1.ltr=1+421|uni10CE6.ltr=2+467",
+            "input": "𐳄𐳑𐳦",
+            "note": "fontdiff-und-Hung_chars.html",
+            "only": "NotoSansOldHungarian-Regular.ttf"
+        },
+        {
+            "expectation": "uni10CC4.ltr=0+447|uni10CD4.ltr=1+469|uni10CD1.ltr=2+421|uni10CE2.ltr=3+627|uni10CE6.ltr=4+467",
+            "input": "𐳄𐳔𐳑𐳢𐳦",
+            "note": "fontdiff-und-Hung_chars.html",
+            "only": "NotoSansOldHungarian-Regular.ttf"
+        },
+        {
+            "expectation": "uni10CC4.ltr=0+447|uni10CD4.ltr=1+469|uni10CD1.ltr=2+421|uni10CE6.ltr=3+467",
+            "input": "𐳄𐳔𐳑𐳦",
+            "note": "fontdiff-und-Hung_chars.html",
+            "only": "NotoSansOldHungarian-Regular.ttf"
+        },
+        {
+            "expectation": "uni10CC4.ltr=0+447|uni10CD4.ltr=1+469|uni10CE4.ltr=2+566|uni10CC9.ltr=3+411",
+            "input": "𐳄𐳔𐳤𐳉",
+            "note": "fontdiff-und-Hung_chars.html",
+            "only": "NotoSansOldHungarian-Regular.ttf"
+        },
+        {
+            "expectation": "uni10CC4.ltr=0+447|uni10CD4.ltr=1+469|uni10CE4.ltr=2+566|uni10CE0.ltr=3+453",
+            "input": "𐳄𐳔𐳤𐳠",
+            "note": "fontdiff-und-Hung_chars.html",
+            "only": "NotoSansOldHungarian-Regular.ttf"
+        },
+        {
+            "expectation": "uni10CC4.ltr=0+447|uni10CD4.ltr=1+469|uni10CE2.ltr=2+627|uni10CE6.ltr=3+467",
+            "input": "𐳄𐳔𐳢𐳦",
+            "note": "fontdiff-und-Hung_chars.html",
+            "only": "NotoSansOldHungarian-Regular.ttf"
+        },
+        {
+            "expectation": "uni10CC4.ltr=0+447|uni10CD4.ltr=1+469|uni10CE6.ltr=2+467",
+            "input": "𐳄𐳔𐳦",
+            "note": "fontdiff-und-Hung_chars.html",
+            "only": "NotoSansOldHungarian-Regular.ttf"
+        },
+        {
+            "expectation": "uni10CC4.ltr=0+447|uni10CD4.ltr=1+469|uni10CE6.ltr=2+467|uni10CE2.ltr=3+627",
+            "input": "𐳄𐳔𐳦𐳢",
+            "note": "fontdiff-und-Hung_chars.html",
+            "only": "NotoSansOldHungarian-Regular.ttf"
+        },
+        {
+            "expectation": "uni10CC4.ltr=0+447|uni10CD4.ltr=1+469|uni10CF0.ltr=2+622",
+            "input": "𐳄𐳔𐳰",
+            "note": "fontdiff-und-Hung_chars.html",
+            "only": "NotoSansOldHungarian-Regular.ttf"
+        },
+        {
+            "expectation": "uni10CC4.ltr=0+447|uni10CE4.ltr=1+566|uni10CC9.ltr=2+411",
+            "input": "𐳄𐳤𐳉",
+            "note": "fontdiff-und-Hung_chars.html",
+            "only": "NotoSansOldHungarian-Regular.ttf"
+        },
+        {
+            "expectation": "uni10CC4.ltr=0+447|uni10CE4.ltr=1+566|uni10CD3.ltr=2+493",
+            "input": "𐳄𐳤𐳓",
+            "note": "fontdiff-und-Hung_chars.html",
+            "only": "NotoSansOldHungarian-Regular.ttf"
+        },
+        {
+            "expectation": "uni10CC4.ltr=0+447|uni10CE4.ltr=1+566|uni10CD8.ltr=2+481",
+            "input": "𐳄𐳤𐳘",
+            "note": "fontdiff-und-Hung_chars.html",
+            "only": "NotoSansOldHungarian-Regular.ttf"
+        },
+        {
+            "expectation": "uni10CC4.ltr=0+447|uni10CE4.ltr=1+566|uni10CE0.ltr=2+453",
+            "input": "𐳄𐳤𐳠",
+            "note": "fontdiff-und-Hung_chars.html",
+            "only": "NotoSansOldHungarian-Regular.ttf"
+        },
+        {
+            "expectation": "uni10CC4.ltr=0+447|uni10CE2.ltr=1+627|uni10CE6.ltr=2+467",
+            "input": "𐳄𐳢𐳦",
+            "note": "fontdiff-und-Hung_chars.html",
+            "only": "NotoSansOldHungarian-Regular.ttf"
+        },
+        {
+            "expectation": "uni10CC4.ltr=0+447|uni10CEF.ltr=1+615|uni10CE6.ltr=2+467",
+            "input": "𐳄𐳯𐳦",
+            "note": "fontdiff-und-Hung_chars.html",
+            "only": "NotoSansOldHungarian-Regular.ttf"
+        },
+        {
+            "expectation": "uni10CC4.ltr=0+447|uni10CE6.ltr=1+467|uni10CD1.ltr=2+421",
+            "input": "𐳄𐳦𐳑",
+            "note": "fontdiff-und-Hung_chars.html",
+            "only": "NotoSansOldHungarian-Regular.ttf"
+        },
+        {
+            "expectation": "uni10CC4.ltr=0+447|uni10CE6.ltr=1+467|uni10CE2.ltr=2+627",
+            "input": "𐳄𐳦𐳢",
+            "note": "fontdiff-und-Hung_chars.html",
+            "only": "NotoSansOldHungarian-Regular.ttf"
+        },
+        {
+            "expectation": "uni10CC4.ltr=0+447|uni10CE6.ltr=1+467|uni10CE2.ltr=2+627|uni10CD1.ltr=3+421",
+            "input": "𐳄𐳦𐳢𐳑",
+            "note": "fontdiff-und-Hung_chars.html",
+            "only": "NotoSansOldHungarian-Regular.ttf"
+        },
+        {
+            "expectation": "uni10CC4.ltr=0+447|uni10CE6.ltr=1+467|uni10CEF.ltr=2+615",
+            "input": "𐳄𐳦𐳯",
+            "note": "fontdiff-und-Hung_chars.html",
+            "only": "NotoSansOldHungarian-Regular.ttf"
+        },
+        {
+            "expectation": "uni10CC4.ltr=0+447|uni10CF0.ltr=1+622",
+            "input": "𐳄𐳰",
+            "note": "fontdiff-und-Hung_chars.html",
+            "only": "NotoSansOldHungarian-Regular.ttf"
+        },
+        {
+            "expectation": "uni10CC4.ltr=0+447|uni10CEA.ltr=1+662|uni10CD6.ltr=2+612",
+            "input": "𐳄𐳪𐳖",
+            "note": "fontdiff-und-Hung_chars.html",
+            "only": "NotoSansOldHungarian-Regular.ttf"
+        },
+        {
+            "expectation": "uni10CC7.ltr=0+437|uni10CEF.ltr=1+615|uni10CE6.ltr=2+467",
+            "input": "𐳇𐳯𐳦",
+            "note": "fontdiff-und-Hung_chars.html",
+            "only": "NotoSansOldHungarian-Regular.ttf"
+        },
+        {
+            "expectation": "uni10CC7.ltr=0+437|uni10CE6.ltr=1+467",
+            "input": "𐳇𐳦",
+            "note": "fontdiff-und-Hung_chars.html",
+            "only": "NotoSansOldHungarian-Regular.ttf"
+        },
+        {
+            "expectation": "uni10CC7.ltr=0+437|uni10CE6.ltr=1+467|uni10CD1.ltr=2+421",
+            "input": "𐳇𐳦𐳑",
+            "note": "fontdiff-und-Hung_chars.html",
+            "only": "NotoSansOldHungarian-Regular.ttf"
+        },
+        {
+            "expectation": "uni10CC7.ltr=0+437|uni10CE6.ltr=1+467|uni10CE2.ltr=2+627",
+            "input": "𐳇𐳦𐳢",
+            "note": "fontdiff-und-Hung_chars.html",
+            "only": "NotoSansOldHungarian-Regular.ttf"
+        },
+        {
+            "expectation": "uni10CC7.ltr=0+437|uni10CE6.ltr=1+467|uni10CE2.ltr=2+627|uni10CD1.ltr=3+421",
+            "input": "𐳇𐳦𐳢𐳑",
+            "note": "fontdiff-und-Hung_chars.html",
+            "only": "NotoSansOldHungarian-Regular.ttf"
+        },
+        {
+            "expectation": "uni10CC7.ltr=0+437|uni10CE6.ltr=1+467|uni10CEF.ltr=2+615",
+            "input": "𐳇𐳦𐳯",
+            "note": "fontdiff-und-Hung_chars.html",
+            "only": "NotoSansOldHungarian-Regular.ttf"
+        },
+        {
+            "expectation": "uni10CC7.ltr=0+437|uni10CEA.ltr=1+662|uni10CE4.ltr=2+566|uni10CD3.ltr=3+493",
+            "input": "𐳇𐳪𐳤𐳓",
+            "note": "fontdiff-und-Hung_chars.html",
+            "only": "NotoSansOldHungarian-Regular.ttf"
+        },
+        {
+            "expectation": "uni10CCB.ltr=0+354|uni10CD1.ltr=1+421|uni10CE2.ltr=2+627|uni10CE6.ltr=3+467",
+            "input": "𐳋𐳑𐳢𐳦",
+            "note": "fontdiff-und-Hung_chars.html",
+            "only": "NotoSansOldHungarian-Regular.ttf"
+        },
+        {
+            "expectation": "uni10CCB.ltr=0+354|uni10CE6.ltr=1+467",
+            "input": "𐳋𐳦",
+            "note": "fontdiff-und-Hung_chars.html",
+            "only": "NotoSansOldHungarian-Regular.ttf"
+        },
+        {
+            "expectation": "uni10CCB.ltr=0+354|uni10CE6.ltr=1+467|uni10CD1.ltr=2+421",
+            "input": "𐳋𐳦𐳑",
+            "note": "fontdiff-und-Hung_chars.html",
+            "only": "NotoSansOldHungarian-Regular.ttf"
+        },
+        {
+            "expectation": "uni10CCB.ltr=0+354|uni10CE6.ltr=1+467|uni10CE2.ltr=2+627|uni10CD1.ltr=3+421",
+            "input": "𐳋𐳦𐳢𐳑",
+            "note": "fontdiff-und-Hung_chars.html",
+            "only": "NotoSansOldHungarian-Regular.ttf"
+        },
+        {
+            "expectation": "uni10CCB.ltr=0+354|uni10CE6.ltr=1+467|uni10CEF.ltr=2+615",
+            "input": "𐳋𐳦𐳯",
+            "note": "fontdiff-und-Hung_chars.html",
+            "only": "NotoSansOldHungarian-Regular.ttf"
+        },
+        {
+            "expectation": "uni10CCB.ltr=0+354|uni10CF0.ltr=1+622",
+            "input": "𐳋𐳰",
+            "note": "fontdiff-und-Hung_chars.html",
+            "only": "NotoSansOldHungarian-Regular.ttf"
+        },
+        {
+            "expectation": "uni10CCE.ltr=0+450|uni10CEA.ltr=1+662|uni10CD6.ltr=2+612",
+            "input": "𐳎𐳪𐳖",
+            "note": "fontdiff-und-Hung_chars.html",
+            "only": "NotoSansOldHungarian-Regular.ttf"
+        },
+        {
+            "expectation": "uni10CD0.ltr=0+452|uni10CC4.ltr=1+447|uni10CD4.ltr=2+469",
+            "input": "𐳐𐳄𐳔",
+            "note": "fontdiff-und-Hung_chars.html",
+            "only": "NotoSansOldHungarian-Regular.ttf"
+        },
+        {
+            "expectation": "uni10CD0.ltr=0+452|uni10CDC.ltr=1+507",
+            "input": "𐳐𐳜",
+            "note": "fontdiff-und-Hung_chars.html",
+            "only": "NotoSansOldHungarian-Regular.ttf"
+        },
+        {
+            "expectation": "uni10CD0.ltr=0+452|uni10CE3.ltr=1+441",
+            "input": "𐳐𐳣",
+            "note": "fontdiff-und-Hung_chars.html",
+            "only": "NotoSansOldHungarian-Regular.ttf"
+        },
+        {
+            "expectation": "uni10CD0.ltr=0+452|uni10CE6.ltr=1+467|uni10CE4.ltr=2+566|uni10CD3.ltr=3+493",
+            "input": "𐳐𐳦𐳤𐳓",
+            "note": "fontdiff-und-Hung_chars.html",
+            "only": "NotoSansOldHungarian-Regular.ttf"
+        },
+        {
+            "expectation": "uni10CD0.ltr=0+452|uni10CEA.ltr=1+662|uni10CD6.ltr=2+612",
+            "input": "𐳐𐳪𐳖",
+            "note": "fontdiff-und-Hung_chars.html",
+            "only": "NotoSansOldHungarian-Regular.ttf"
+        },
+        {
+            "expectation": "uni10CD1.ltr=0+421|uni10CC9.ltr=1+411|uni10CCD.ltr=2+565",
+            "input": "𐳑𐳉𐳍",
+            "note": "fontdiff-und-Hung_chars.html",
+            "only": "NotoSansOldHungarian-Regular.ttf"
+        },
+        {
+            "expectation": "uni10CD1.ltr=0+421|uni10CC9.ltr=1+411|uni10CD6.ltr=2+612",
+            "input": "𐳑𐳉𐳖",
+            "note": "fontdiff-und-Hung_chars.html",
+            "only": "NotoSansOldHungarian-Regular.ttf"
+        },
+        {
+            "expectation": "uni10CD1.ltr=0+421|uni10CCD.ltr=1+565|uni10CC9.ltr=2+411",
+            "input": "𐳑𐳍𐳉",
+            "note": "fontdiff-und-Hung_chars.html",
+            "only": "NotoSansOldHungarian-Regular.ttf"
+        },
+        {
+            "expectation": "uni10CD1.ltr=0+421|uni10CD6.ltr=1+612|uni10CC9.ltr=2+411",
+            "input": "𐳑𐳖𐳉",
+            "note": "fontdiff-und-Hung_chars.html",
+            "only": "NotoSansOldHungarian-Regular.ttf"
+        },
+        {
+            "expectation": "uni10CD1.ltr=0+421|uni10CE4.ltr=1+566|uni10CC9.ltr=2+411",
+            "input": "𐳑𐳤𐳉",
+            "note": "fontdiff-und-Hung_chars.html",
+            "only": "NotoSansOldHungarian-Regular.ttf"
+        },
+        {
+            "expectation": "uni10CD1.ltr=0+421|uni10CE4.ltr=1+566|uni10CD3.ltr=2+493",
+            "input": "𐳑𐳤𐳓",
+            "note": "fontdiff-und-Hung_chars.html",
+            "only": "NotoSansOldHungarian-Regular.ttf"
+        },
+        {
+            "expectation": "uni10CD1.ltr=0+421|uni10CE4.ltr=1+566|uni10CD8.ltr=2+481",
+            "input": "𐳑𐳤𐳘",
+            "note": "fontdiff-und-Hung_chars.html",
+            "only": "NotoSansOldHungarian-Regular.ttf"
+        },
+        {
+            "expectation": "uni10CD1.ltr=0+421|uni10CE2.ltr=1+627|uni10CE6.ltr=2+467|uni10CE4.ltr=3+566|uni10CD3.ltr=4+493",
+            "input": "𐳑𐳢𐳦𐳤𐳓",
+            "note": "fontdiff-und-Hung_chars.html",
+            "only": "NotoSansOldHungarian-Regular.ttf"
+        },
+        {
+            "expectation": "uni10CD1.ltr=0+421|uni10CE3.ltr=1+441",
+            "input": "𐳑𐳣",
+            "note": "fontdiff-und-Hung_chars.html",
+            "only": "NotoSansOldHungarian-Regular.ttf"
+        },
+        {
+            "expectation": "uni10CD1.ltr=0+421|uni10CEA.ltr=1+662|uni10CD6.ltr=2+612",
+            "input": "𐳑𐳪𐳖",
+            "note": "fontdiff-und-Hung_chars.html",
+            "only": "NotoSansOldHungarian-Regular.ttf"
+        },
+        {
+            "expectation": "uni10CD4.ltr=0+469|uni10CC4.ltr=1+447|uni10CD1.ltr=2+421|uni10CE6.ltr=3+467",
+            "input": "𐳔𐳄𐳑𐳦",
+            "note": "fontdiff-und-Hung_chars.html",
+            "only": "NotoSansOldHungarian-Regular.ttf"
+        },
+        {
+            "expectation": "uni10CD4.ltr=0+469|uni10CC4.ltr=1+447|uni10CE4.ltr=2+566|uni10CC9.ltr=3+411",
+            "input": "𐳔𐳄𐳤𐳉",
+            "note": "fontdiff-und-Hung_chars.html",
+            "only": "NotoSansOldHungarian-Regular.ttf"
+        },
+        {
+            "expectation": "uni10CD4.ltr=0+469|uni10CC4.ltr=1+447|uni10CE4.ltr=2+566|uni10CE0.ltr=3+453",
+            "input": "𐳔𐳄𐳤𐳠",
+            "note": "fontdiff-und-Hung_chars.html",
+            "only": "NotoSansOldHungarian-Regular.ttf"
+        },
+        {
+            "expectation": "uni10CD4.ltr=0+469|uni10CC4.ltr=1+447|uni10CE2.ltr=2+627|uni10CE6.ltr=3+467",
+            "input": "𐳔𐳄𐳢𐳦",
+            "note": "fontdiff-und-Hung_chars.html",
+            "only": "NotoSansOldHungarian-Regular.ttf"
+        },
+        {
+            "expectation": "uni10CD4.ltr=0+469|uni10CC4.ltr=1+447|uni10CEF.ltr=2+615|uni10CE6.ltr=3+467",
+            "input": "𐳔𐳄𐳯𐳦",
+            "note": "fontdiff-und-Hung_chars.html",
+            "only": "NotoSansOldHungarian-Regular.ttf"
+        },
+        {
+            "expectation": "uni10CD4.ltr=0+469|uni10CC4.ltr=1+447|uni10CE6.ltr=2+467",
+            "input": "𐳔𐳄𐳦",
+            "note": "fontdiff-und-Hung_chars.html",
+            "only": "NotoSansOldHungarian-Regular.ttf"
+        },
+        {
+            "expectation": "uni10CD4.ltr=0+469|uni10CC4.ltr=1+447|uni10CE6.ltr=2+467|uni10CE2.ltr=3+627|uni10CD1.ltr=4+421",
+            "input": "𐳔𐳄𐳦𐳢𐳑",
+            "note": "fontdiff-und-Hung_chars.html",
+            "only": "NotoSansOldHungarian-Regular.ttf"
+        },
+        {
+            "expectation": "uni10CD4.ltr=0+469|uni10CC4.ltr=1+447|uni10CE6.ltr=2+467|uni10CEF.ltr=3+615",
+            "input": "𐳔𐳄𐳦𐳯",
+            "note": "fontdiff-und-Hung_chars.html",
+            "only": "NotoSansOldHungarian-Regular.ttf"
+        },
+        {
+            "expectation": "uni10CD4.ltr=0+469|uni10CC4.ltr=1+447|uni10CF0.ltr=2+622",
+            "input": "𐳔𐳄𐳰",
+            "note": "fontdiff-und-Hung_chars.html",
+            "only": "NotoSansOldHungarian-Regular.ttf"
+        },
+        {
+            "expectation": "uni10CD9.ltr=0+420|uni10CC4.ltr=1+447|uni10CEA.ltr=2+662|uni10CD6.ltr=3+612",
+            "input": "𐳙𐳄𐳪𐳖",
+            "note": "fontdiff-und-Hung_chars.html",
+            "only": "NotoSansOldHungarian-Regular.ttf"
+        },
+        {
+            "expectation": "uni10CD9.ltr=0+420|uni10CC7.ltr=1+437|uni10CE4.ltr=2+566|uni10CC9.ltr=3+411",
+            "input": "𐳙𐳇𐳤𐳉",
+            "note": "fontdiff-und-Hung_chars.html",
+            "only": "NotoSansOldHungarian-Regular.ttf"
+        },
+        {
+            "expectation": "uni10CD9.ltr=0+420|uni10CD3.ltr=1+493|uni10CC6.ltr=2+615|uni10CD0.ltr=3+452|uni10CD9.ltr=4+420",
+            "input": "𐳙𐳓𐳆𐳐𐳙",
+            "note": "fontdiff-und-Hung_chars.html",
+            "only": "NotoSansOldHungarian-Regular.ttf"
+        },
+        {
+            "expectation": "uni10CD9.ltr=0+420|uni10CD3.ltr=1+493|uni10CD5.ltr=2+685",
+            "input": "𐳙𐳓𐳕",
+            "note": "fontdiff-und-Hung_chars.html",
+            "only": "NotoSansOldHungarian-Regular.ttf"
+        },
+        {
+            "expectation": "uni10CD9.ltr=0+420|uni10CD3.ltr=1+493|uni10CD9.ltr=2+420",
+            "input": "𐳙𐳓𐳙",
+            "note": "fontdiff-und-Hung_chars.html",
+            "only": "NotoSansOldHungarian-Regular.ttf"
+        },
+        {
+            "expectation": "uni10CD9.ltr=0+420|uni10CD3.ltr=1+493|uni10CEA.ltr=2+662|uni10CD6.ltr=3+612",
+            "input": "𐳙𐳓𐳪𐳖",
+            "note": "fontdiff-und-Hung_chars.html",
+            "only": "NotoSansOldHungarian-Regular.ttf"
+        },
+        {
+            "expectation": "uni10CD9.ltr=0+420|uni10CE0.ltr=1+453|uni10CC6.ltr=2+615|uni10CD0.ltr=3+452|uni10CD9.ltr=4+420",
+            "input": "𐳙𐳠𐳆𐳐𐳙",
+            "note": "fontdiff-und-Hung_chars.html",
+            "only": "NotoSansOldHungarian-Regular.ttf"
+        },
+        {
+            "expectation": "uni10CE3.ltr=0+441|uni10CE4.ltr=1+566|uni10CD8.ltr=2+481",
+            "input": "𐳣𐳤𐳘",
+            "note": "fontdiff-und-Hung_chars.html",
+            "only": "NotoSansOldHungarian-Regular.ttf"
+        },
+        {
+            "expectation": "uni10CE3.ltr=0+441|uni10CEA.ltr=1+662|uni10CD6.ltr=2+612",
+            "input": "𐳣𐳪𐳖",
+            "note": "fontdiff-und-Hung_chars.html",
+            "only": "NotoSansOldHungarian-Regular.ttf"
+        },
+        {
+            "expectation": "uni10CE7.ltr=0+661|uni10CC4.ltr=1+447|uni10CD4.ltr=2+469",
+            "input": "𐳧𐳄𐳔",
+            "note": "fontdiff-und-Hung_chars.html",
+            "only": "NotoSansOldHungarian-Regular.ttf"
+        },
+        {
+            "expectation": "uni10CE7.ltr=0+661|uni10CC7.ltr=1+437",
+            "input": "𐳧𐳇",
+            "note": "fontdiff-und-Hung_chars.html",
+            "only": "NotoSansOldHungarian-Regular.ttf"
+        },
+        {
+            "expectation": "uni10CE7.ltr=0+661|uni10CDC.ltr=1+507",
+            "input": "𐳧𐳜",
+            "note": "fontdiff-und-Hung_chars.html",
+            "only": "NotoSansOldHungarian-Regular.ttf"
+        },
+        {
+            "expectation": "uni10CE7.ltr=0+661|uni10CE4.ltr=1+566|uni10CD3.ltr=2+493",
+            "input": "𐳧𐳤𐳓",
+            "note": "fontdiff-und-Hung_chars.html",
+            "only": "NotoSansOldHungarian-Regular.ttf"
+        },
+        {
+            "expectation": "uni10CE7.ltr=0+661|uni10CE4.ltr=1+566|uni10CD8.ltr=2+481",
+            "input": "𐳧𐳤𐳘",
+            "note": "fontdiff-und-Hung_chars.html",
+            "only": "NotoSansOldHungarian-Regular.ttf"
+        },
+        {
+            "expectation": "uni10CE7.ltr=0+661|uni10CE4.ltr=1+566|uni10CE0.ltr=2+453",
+            "input": "𐳧𐳤𐳠",
+            "note": "fontdiff-und-Hung_chars.html",
+            "only": "NotoSansOldHungarian-Regular.ttf"
+        },
+        {
+            "expectation": "uni10CE7.ltr=0+661|uni10CE3.ltr=1+441",
+            "input": "𐳧𐳣",
+            "note": "fontdiff-und-Hung_chars.html",
+            "only": "NotoSansOldHungarian-Regular.ttf"
+        },
+        {
+            "expectation": "uni10CE7.ltr=0+661|uni10CEA.ltr=1+662|uni10CD6.ltr=2+612",
+            "input": "𐳧𐳪𐳖",
+            "note": "fontdiff-und-Hung_chars.html",
+            "only": "NotoSansOldHungarian-Regular.ttf"
+        },
+        {
+            "expectation": "uni10CE6.ltr=0+467|uni10CD0.ltr=1+452|uni10CC4.ltr=2+447|uni10CD4.ltr=3+469",
+            "input": "𐳦𐳐𐳄𐳔",
+            "note": "fontdiff-und-Hung_chars.html",
+            "only": "NotoSansOldHungarian-Regular.ttf"
+        },
+        {
+            "expectation": "uni10CE6.ltr=0+467|uni10CD0.ltr=1+452|uni10CDC.ltr=2+507",
+            "input": "𐳦𐳐𐳜",
+            "note": "fontdiff-und-Hung_chars.html",
+            "only": "NotoSansOldHungarian-Regular.ttf"
+        },
+        {
+            "expectation": "uni10CE6.ltr=0+467|uni10CD0.ltr=1+452|uni10CE4.ltr=2+566|uni10CD3.ltr=3+493",
+            "input": "𐳦𐳐𐳤𐳓",
+            "note": "fontdiff-und-Hung_chars.html",
+            "only": "NotoSansOldHungarian-Regular.ttf"
+        },
+        {
+            "expectation": "uni10CE6.ltr=0+467|uni10CD0.ltr=1+452|uni10CE4.ltr=2+566|uni10CD8.ltr=3+481",
+            "input": "𐳦𐳐𐳤𐳘",
+            "note": "fontdiff-und-Hung_chars.html",
+            "only": "NotoSansOldHungarian-Regular.ttf"
+        },
+        {
+            "expectation": "uni10CE6.ltr=0+467|uni10CD0.ltr=1+452|uni10CE4.ltr=2+566|uni10CE0.ltr=3+453",
+            "input": "𐳦𐳐𐳤𐳠",
+            "note": "fontdiff-und-Hung_chars.html",
+            "only": "NotoSansOldHungarian-Regular.ttf"
+        },
+        {
+            "expectation": "uni10CF0.ltr=0+622|uni10CC4.ltr=1+447|uni10CD4.ltr=2+469",
+            "input": "𐳰𐳄𐳔",
+            "note": "fontdiff-und-Hung_chars.html",
+            "only": "NotoSansOldHungarian-Regular.ttf"
+        },
+        {
+            "expectation": "uni10CF0.ltr=0+622|uni10CCE.ltr=1+450",
+            "input": "𐳰𐳎",
+            "note": "fontdiff-und-Hung_chars.html",
+            "only": "NotoSansOldHungarian-Regular.ttf"
+        },
+        {
+            "expectation": "uni10CF0.ltr=0+622|uni10CDC.ltr=1+507",
+            "input": "𐳰𐳜",
+            "note": "fontdiff-und-Hung_chars.html",
+            "only": "NotoSansOldHungarian-Regular.ttf"
+        },
+        {
+            "expectation": "uni10CF0.ltr=0+622|uni10CE4.ltr=1+566|uni10CC9.ltr=2+411",
+            "input": "𐳰𐳤𐳉",
+            "note": "fontdiff-und-Hung_chars.html",
+            "only": "NotoSansOldHungarian-Regular.ttf"
+        },
+        {
+            "expectation": "uni10CF0.ltr=0+622|uni10CE4.ltr=1+566|uni10CD3.ltr=2+493",
+            "input": "𐳰𐳤𐳓",
+            "note": "fontdiff-und-Hung_chars.html",
+            "only": "NotoSansOldHungarian-Regular.ttf"
+        },
+        {
+            "expectation": "uni10CF0.ltr=0+622|uni10CE3.ltr=1+441",
+            "input": "𐳰𐳣",
+            "note": "fontdiff-und-Hung_chars.html",
+            "only": "NotoSansOldHungarian-Regular.ttf"
+        },
+        {
+            "expectation": "uni10CF0.ltr=0+622|uni10CEA.ltr=1+662|uni10CD6.ltr=2+612",
+            "input": "𐳰𐳪𐳖",
+            "note": "fontdiff-und-Hung_chars.html",
+            "only": "NotoSansOldHungarian-Regular.ttf"
+        },
+        {
+            "expectation": "space=0+260|uni10CA6.ltr=1+567|uni10C89.ltr=2+563|uni10CA4.ltr=3+724|uni10CA6.ltr=4+567",
+            "input": " 𐲦𐲉𐲤𐲦",
+            "note": "fontdiff-und-Hung_chars.html",
+            "only": "NotoSansOldHungarian-Regular.ttf"
+        },
+        {
+            "expectation": "uni10C87.ltr=0+627|space=0+0|uni10CAF.ltr=2+820|.notdef=3+600|space=4+0|uni10C87.ltr=5+627|space=5+0|uni10CB0.ltr=7+796|.notdef=8+600|space=9+0|uni10C93.ltr=10+684|space=10+0|uni10CAE.ltr=12+888|.notdef=13+600|space=14+0|uni10CAE.ltr=15+888|space=15+0|uni10CAE.ltr=17+888|.notdef=18+600|space=19+0|uni10C93.ltr=20+684|space=20+0|uni10CA5.ltr=22+341|.notdef=23+600|space=24+0|uni10C92.ltr=25+547|space=25+0|uni10C90.ltr=27+627|.notdef=28+600|space=29+0|uni10CC7.ltr=30+437|space=30+0|uni10CEF.ltr=32+615|.notdef=33+600|space=34+0|uni10CC7.ltr=35+437|space=35+0|uni10CF0.ltr=37+622|.notdef=38+600|space=39+0|uni10CD3.ltr=40+493|space=40+0|uni10CEE.ltr=42+662|.notdef=43+600|space=44+0|uni10CEE_10CEE.ltr=45+662|.notdef=48+600|space=49+0|uni10CD3.ltr=50+493|space=50+0|uni10CE5.ltr=52+277|.notdef=53+600|space=54+0|uni10CD0_10CD2.ltr=55+494|.notdef=58+600|space=59+0|uni10CFB=60+566|space=60+0|uni10CFE=62+633",
+            "input": "𐲇‍𐲯\t‭𐲇‍𐲰\t‭𐲓‍𐲮\t‭𐲮‍𐲮\t‭𐲓‍𐲥\t‭𐲒‍𐲐\t‭𐳇‍𐳯\t‭𐳇‍𐳰\t‭𐳓‍𐳮\t‭𐳮‍𐳮\t‭𐳓‍𐳥\t‭𐳒‍𐳐\t‭𐳻‍𐳾",
+            "note": "fontdiff-und-Hung_chars.html",
+            "only": "NotoSansOldHungarian-Regular.ttf"
+        },
+        {
+            "expectation": "uni10C87.ltr=0+627|space=0+0|uni10CAF.ltr=2+820|.notdef=3+600|space=4+0|uni10C87.ltr=5+627|space=5+0|uni10CB0.ltr=7+796|.notdef=8+600|space=9+0|uni10C93.ltr=10+684|space=10+0|uni10CAE.ltr=12+888|.notdef=13+600|space=14+0|uni10CAE.ltr=15+888|space=15+0|uni10CAE.ltr=17+888|.notdef=18+600|space=19+0|uni10C93.ltr=20+684|space=20+0|uni10CA5.ltr=22+341|.notdef=23+600|space=24+0|uni10C92.ltr=25+547|space=25+0|uni10C90.ltr=27+627|.notdef=28+600|space=29+0|uni10CC7.ltr=30+437|space=30+0|uni10CEF.ltr=32+615|.notdef=33+600|space=34+0|uni10CC7.ltr=35+437|space=35+0|uni10CF0.ltr=37+622|.notdef=38+600|space=39+0|uni10CD3.ltr=40+493|space=40+0|uni10CEE.ltr=42+662|.notdef=43+600|space=44+0|uni10CEE_10CEE.ltr=45+662|.notdef=48+600|space=49+0|uni10CD3.ltr=50+493|space=50+0|uni10CE5.ltr=52+277|.notdef=53+600|space=54+0|uni10CD0_10CD2.ltr=55+494|.notdef=58+600|space=59+0|uni10CFB=60+566|space=60+0|uni10CFE=62+633",
+            "input": "𐲇‍𐲯\t‮𐲇‍𐲰\t‮𐲓‍𐲮\t‮𐲮‍𐲮\t‮𐲓‍𐲥\t‮𐲒‍𐲐\t‮𐳇‍𐳯\t‮𐳇‍𐳰\t‮𐳓‍𐳮\t‮𐳮‍𐳮\t‮𐳓‍𐳥\t‮𐳒‍𐳐\t‮𐳻‍𐳾",
+            "note": "fontdiff-und-Hung_chars.html",
+            "only": "NotoSansOldHungarian-Regular.ttf"
+        },
+        {
+            "expectation": "uni10C87.ltr=0+627|space=0+0|uni10CAF.ltr=2+820|.notdef=3+600|uni10C87.ltr=4+627|space=4+0|uni10CB0.ltr=6+796|.notdef=7+600|uni10C93.ltr=8+684|space=8+0|uni10CAE.ltr=10+888|.notdef=11+600|uni10CAE.ltr=12+888|space=12+0|uni10CAE.ltr=14+888|.notdef=15+600|uni10C93.ltr=16+684|space=16+0|uni10CA5.ltr=18+341|.notdef=19+600|uni10C92.ltr=20+547|space=20+0|uni10C90.ltr=22+627|.notdef=23+600|uni10CC7.ltr=24+437|space=24+0|uni10CEF.ltr=26+615|.notdef=27+600|uni10CC7.ltr=28+437|space=28+0|uni10CF0.ltr=30+622|.notdef=31+600|uni10CD3.ltr=32+493|space=32+0|uni10CEE.ltr=34+662|.notdef=35+600|uni10CEE_10CEE.ltr=36+662|.notdef=39+600|uni10CD3.ltr=40+493|space=40+0|uni10CE5.ltr=42+277|.notdef=43+600|uni10CD0_10CD2.ltr=44+494|.notdef=47+600|uni10CFB=48+566|space=48+0|uni10CFE=50+633",
+            "input": "𐲇‍𐲯\t𐲇‍𐲰\t𐲓‍𐲮\t𐲮‍𐲮\t𐲓‍𐲥\t𐲒‍𐲐\t𐳇‍𐳯\t𐳇‍𐳰\t𐳓‍𐳮\t𐳮‍𐳮\t𐳓‍𐳥\t𐳒‍𐳐\t𐳻‍𐳾",
+            "note": "fontdiff-und-Hung_chars.html",
+            "only": "NotoSansOldHungarian-Regular.ttf"
+        },
+        {
+            "expectation": "uni10C80.ltr=0+529|space=1+260|uni10C81.ltr=2+529|space=3+260|uni10C82.ltr=4+691|space=5+260|uni10C83.ltr=6+1018|space=7+260|uni10C84.ltr=8+620|space=9+260|uni10C85.ltr=10+620|space=11+260|uni10C86.ltr=12+832|space=13+260|uni10C87.ltr=14+627|space=15+260|uni10C88.ltr=16+691|space=17+260|uni10C89.ltr=18+563|space=19+260|uni10C8A.ltr=20+586|space=21+260|uni10C8B.ltr=22+512|space=23+260|uni10C8C.ltr=24+769|space=25+260|uni10C8D.ltr=26+801|space=27+260|uni10C8E.ltr=28+624|space=29+260|uni10C8F.ltr=30+710|space=31+260|uni10C90.ltr=32+627|space=33+260|uni10C91.ltr=34+627|space=35+260|uni10C92.ltr=36+547|space=37+260|uni10C93.ltr=38+684|space=39+260|uni10C94.ltr=40+613|space=41+260|uni10C95.ltr=42+907|space=43+260|uni10C96.ltr=44+801|space=45+260|uni10C97.ltr=46+768|space=47+260|uni10C98.ltr=48+627|space=49+260|uni10C99.ltr=50+538|space=51+260|uni10C9A.ltr=52+633|space=53+260|uni10C9B.ltr=54+634|space=55+260|uni10C9C.ltr=56+658|space=57+260|uni10C9D.ltr=58+482|space=59+260|uni10C9E.ltr=60+624|space=61+260|uni10C9F.ltr=62+724|space=63+260|uni10CA0.ltr=64+578|space=65+260|uni10CA1.ltr=66+1027|space=67+260|uni10CA2.ltr=68+832|space=69+260|uni10CA3.ltr=70+613|space=71+260|uni10CA4.ltr=72+724|space=73+260|uni10CA5.ltr=74+341|space=75+260|uni10CA6.ltr=76+567|space=77+260|uni10CA7.ltr=78+866|space=79+260|uni10CA8.ltr=80+691|space=81+260|uni10CA9.ltr=82+724|space=83+260|uni10CAA.ltr=84+885|space=85+260|uni10CAB.ltr=86+953|space=87+260|uni10CAC.ltr=88+769|space=89+260|uni10CAD.ltr=90+788|space=91+260|uni10CAE.ltr=92+888|space=93+260|uni10CAF.ltr=94+820|space=95+260|uni10CB0.ltr=96+796|space=97+260|uni10CB1.ltr=98+866|space=99+260|uni10CB2.ltr=100+769|space=101+260|uni10CC0.ltr=102+444|space=103+260|uni10CC1.ltr=104+433|space=105+260|uni10CC2.ltr=106+538|space=107+260|uni10CC3.ltr=108+751|space=109+260|uni10CC4.ltr=110+447|space=111+260|uni10CC5.ltr=112+447|space=113+260|uni10CC6.ltr=114+615|space=115+260|uni10CC7.ltr=116+437|space=117+260|uni10CC8.ltr=118+538|space=119+260|uni10CC9.ltr=120+411|space=121+260|uni10CCA.ltr=122+428|space=123+260|uni10CCB.ltr=124+354|space=125+260|uni10CCC.ltr=126+556|space=127+260|uni10CCD.ltr=128+565|space=129+260|uni10CCE.ltr=130+450|space=131+260|uni10CCF.ltr=132+536|space=133+260|uni10CD0.ltr=134+452|space=135+260|uni10CD1.ltr=136+421|space=137+260|uni10CD2.ltr=138+407|space=139+260|uni10CD3.ltr=140+493|space=141+260|uni10CD4.ltr=142+469|space=143+260|uni10CD5.ltr=144+685|space=145+260|uni10CD6.ltr=146+612|space=147+260|uni10CD7.ltr=148+556|space=149+260|uni10CD8.ltr=150+481|space=151+260|uni10CD9.ltr=152+420|space=153+260|uni10CDA.ltr=154+490|space=155+260|uni10CDB.ltr=156+473|space=157+260|uni10CDC.ltr=158+507|space=159+260|uni10CDD.ltr=160+370|space=161+260|uni10CDE.ltr=162+492|space=163+260|uni10CDF.ltr=164+541|space=165+260|uni10CE0.ltr=166+453|space=167+260|uni10CE1.ltr=168+746|space=169+260|uni10CE2.ltr=170+627|space=171+260|uni10CE3.ltr=172+441|space=173+260|uni10CE4.ltr=174+566|space=175+260|uni10CE5.ltr=176+277|space=177+260|uni10CE6.ltr=178+467|space=179+260|uni10CE7.ltr=180+661|space=181+260|uni10CE8.ltr=182+538|space=183+260|uni10CE9.ltr=184+517|space=185+260|uni10CEA.ltr=186+662|space=187+260|uni10CEB.ltr=188+710|space=189+260|uni10CEC.ltr=190+589|space=191+260|uni10CED.ltr=192+577|space=193+260|uni10CEE.ltr=194+662|space=195+260|uni10CEF.ltr=196+615|space=197+260|uni10CF0.ltr=198+622|space=199+260|uni10CF1.ltr=200+706|space=201+260|uni10CF2.ltr=202+556|space=203+260|uni10CFA=204+277|space=205+260|uni10CFB=206+566|space=207+260|uni10CFC=208+538|space=209+260|uni10CFD=210+566|space=211+260|uni10CFE=212+633|space=213+260|uni10CFF=214+633",
+            "input": "𐲀 𐲁 𐲂 𐲃 𐲄 𐲅 𐲆 𐲇 𐲈 𐲉 𐲊 𐲋 𐲌 𐲍 𐲎 𐲏 𐲐 𐲑 𐲒 𐲓 𐲔 𐲕 𐲖 𐲗 𐲘 𐲙 𐲚 𐲛 𐲜 𐲝 𐲞 𐲟 𐲠 𐲡 𐲢 𐲣 𐲤 𐲥 𐲦 𐲧 𐲨 𐲩 𐲪 𐲫 𐲬 𐲭 𐲮 𐲯 𐲰 𐲱 𐲲 𐳀 𐳁 𐳂 𐳃 𐳄 𐳅 𐳆 𐳇 𐳈 𐳉 𐳊 𐳋 𐳌 𐳍 𐳎 𐳏 𐳐 𐳑 𐳒 𐳓 𐳔 𐳕 𐳖 𐳗 𐳘 𐳙 𐳚 𐳛 𐳜 𐳝 𐳞 𐳟 𐳠 𐳡 𐳢 𐳣 𐳤 𐳥 𐳦 𐳧 𐳨 𐳩 𐳪 𐳫 𐳬 𐳭 𐳮 𐳯 𐳰 𐳱 𐳲 𐳺 𐳻 𐳼 𐳽 𐳾 𐳿",
+            "note": "fontdiff-und-Hung_diffenator.html",
+            "only": "NotoSansOldHungarian-Regular.ttf"
+        }
+    ]
+}
