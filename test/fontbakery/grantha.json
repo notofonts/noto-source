@@ -1,6 +1,78 @@
 {
     "tests": [
         {
+            "expectation": "ga_virama_gran=0+951",
+            "input": "𑌗𑍍",
+            "note": "fontdiff-gran-diffenator.html",
+            "only": "NotoSerifGrantha-Regular.ttf"
+        },
+        {
+            "expectation": "ga_gran=0+943|p150=0+0|ba_gran.below=0@61,-200+0",
+            "input": "𑌗𑍍𑌬",
+            "note": "fontdiff-gran-diffenator.html",
+            "only": "NotoSerifGrantha-Regular.ttf"
+        },
+        {
+            "expectation": "bha_gran=0+1391|p100neg=0+0|ba_gran.below=0@-160,-200+0",
+            "input": "𑌭𑍍𑌬",
+            "note": "fontdiff-gran-diffenator.html",
+            "only": "NotoSerifGrantha-Regular.ttf"
+        },
+        {
+            "expectation": "n_ta_gran=0+1374|p100neg=0+0|ba_gran.below=0@-152,-200+0",
+            "input": "𑌨𑍍𑌤𑍍𑌬",
+            "note": "fontdiff-gran-diffenator.html",
+            "only": "NotoSerifGrantha-Regular.ttf"
+        },
+        {
+            "expectation": "n_na_virama_gran.liga=0+1544",
+            "input": "𑌨𑍍𑌨𑍍",
+            "note": "fontdiff-gran-diffenator.html",
+            "only": "NotoSerifGrantha-Regular.ttf"
+        },
+        {
+            "expectation": "n_na_gran=0+1321|p100neg=0+0|ba_gran.below=0@-99,-200+0",
+            "input": "𑌨𑍍𑌨𑍍𑌬",
+            "note": "fontdiff-gran-diffenator.html",
+            "only": "NotoSerifGrantha-Regular.ttf"
+        },
+        {
+            "expectation": "na_gran=0+805|p200=0+0|ba_gran.below=0@109,-200+0",
+            "input": "𑌨𑍍𑌬",
+            "note": "fontdiff-gran-diffenator.html",
+            "only": "NotoSerifGrantha-Regular.ttf"
+        },
+        {
+            "expectation": "dottedCircle=0+600|ga_gran.below=0@85,-12+0|ba_gran.below=0@253,-712+0",
+            "input": "𑍍𑌗𑍍𑌬",
+            "note": "fontdiff-gran-diffenator.html",
+            "only": "NotoSerifGrantha-Regular.ttf"
+        },
+        {
+            "expectation": "dottedCircle=0+600|bha_gran.below=0@241,-12+0|ba_gran.below=0@253,-712+0",
+            "input": "𑍍𑌭𑍍𑌬",
+            "note": "fontdiff-gran-diffenator.html",
+            "only": "NotoSerifGrantha-Regular.ttf"
+        },
+        {
+            "expectation": "dottedCircle=0+600|n_ta_gran.below=0@252,-12+0",
+            "input": "𑍍𑌨𑍍𑌤",
+            "note": "fontdiff-gran-diffenator.html",
+            "only": "NotoSerifGrantha-Regular.ttf"
+        },
+        {
+            "expectation": "dottedCircle=0+600|n_ta_gran.below=0@252,-12+0|ba_gran.below=0@253,-712+0",
+            "input": "𑍍𑌨𑍍𑌤𑍍𑌬",
+            "note": "fontdiff-gran-diffenator.html",
+            "only": "NotoSerifGrantha-Regular.ttf"
+        },
+        {
+            "expectation": "dottedCircle=0+600|n_na_gran.below=0@275,-12+0|ba_gran.below=0@253,-712+0",
+            "input": "𑍍𑌨𑍍𑌨𑍍𑌬",
+            "note": "fontdiff-gran-diffenator.html",
+            "only": "NotoSerifGrantha-Regular.ttf"
+        },
+        {
             "expectation": "four_tamil=0+941|nihshvasa_vedic=1+0|ra_gran=2+856",
             "input": "௪᳓𑌰",
             "note": "Added by SIESTA",
