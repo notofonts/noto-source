@@ -1,5 +1,5 @@
 {
-.appVersion = "1264";
+.appVersion = "3109";
 copyright = "Copyright 2019 Google Inc. All Rights Reserved.";
 customParameters = (
 {
@@ -107,22 +107,6 @@ name = "Don't use Production Names";
 value = 1;
 },
 {
-name = description;
-value = "Designed by Monotype design team.";
-},
-{
-name = license;
-value = "This Font Software is licensed under the SIL Open Font License, Version 1.1. This Font Software is distributed on an \"AS IS\" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the SIL Open Font License for the specific language, permissions and limitations governing your use of this Font Software.";
-},
-{
-name = licenseURL;
-value = "http://scripts.sil.org/OFL";
-},
-{
-name = vendorID;
-value = GOOG;
-},
-{
 name = unicodeRanges;
 value = (
 0,
@@ -130,14 +114,6 @@ value = (
 13,
 57
 );
-},
-{
-name = trademark;
-value = "Noto is a trademark of Google Inc.";
-},
-{
-name = versionString;
-value = "Version 2.000";
 },
 {
 name = fsType;
@@ -154,6 +130,30 @@ value = (
 {
 name = "Has WWS Names";
 value = 1;
+},
+{
+name = description;
+value = "Designed by Monotype design team.";
+},
+{
+name = license;
+value = "This Font Software is licensed under the SIL Open Font License, Version 1.1. This Font Software is distributed on an \"AS IS\" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the SIL Open Font License for the specific language, permissions and limitations governing your use of this Font Software.";
+},
+{
+name = licenseURL;
+value = "http://scripts.sil.org/OFL";
+},
+{
+name = vendorID;
+value = GOOG;
+},
+{
+name = trademark;
+value = "Noto is a trademark of Google Inc.";
+},
+{
+name = versionString;
+value = "Version 2.000";
 }
 );
 date = "2019-07-24 15:35:45 +0000";
@@ -162,6 +162,23 @@ designerURL = "http://www.monotype.com/studio";
 disablesAutomaticAlignment = 1;
 disablesNiceNames = 1;
 familyName = "Noto Sans Indic Siyaq Numbers";
+featurePrefixes = (
+{
+code = "languagesystem DFLT dflt;\012languagesystem arab dflt;\012languagesystem arab ARA ;\012languagesystem arab URD ;\012languagesystem latn dflt;\012";
+name = Languagesystems;
+}
+);
+features = (
+{
+code = "sub placeholder_siyaq by placeholder_siyaq.alt;";
+name = ss01;
+notes = "Name: ";
+},
+{
+code = "lookup CursiveAttachment1 {\012    lookupflag IgnoreMarks;\012    ;\012            pos cursive twenty_thousand_siyaq <anchor 2088 0> <anchor 560 244>;\012        pos cursive threequarters_siyaq <anchor 487 0> <anchor 0 0>;\012        pos cursive two_thousand_siyaq <anchor 1964 0> <anchor 560 244>;\012        pos cursive one_hundred_siyaq <anchor 385 0> <anchor 0 0>;\012        pos cursive six_hundred_siyaq <anchor 971 0> <anchor 0 0>;\012        pos cursive seventy_thousand_siyaq <anchor 2024 0> <anchor 560 244>;\012        pos cursive eight_siyaq <anchor 1396 0> <anchor 0 0>;\012        pos cursive lakhan_siyaq <anchor 1658 0> <anchor 0 0>;\012        pos cursive karor_siyaq <anchor 1150 0> <anchor 0 0>;\012        pos cursive twenty_siyaq <anchor 2000 0> <anchor 0 0>;\012        pos cursive five_hundred_siyaq <anchor 873 0> <anchor 0 0>;\012        pos cursive eight_hundred_siyaq <anchor 583 0> <anchor 0 0>;\012        pos cursive seventy_siyaq <anchor 2024 0> <anchor 0 0>;\012        pos cursive ninety_thousand_siyaq <anchor 1867 0> <anchor 560 244>;\012        pos cursive two.alt_siyaq <anchor 593 0> <anchor 0 0>;\012        pos cursive two_hundred_siyaq <anchor 975 0> <anchor 0 0>;\012        pos cursive six_thousand_siyaq <anchor 1989 0> <anchor 560 244>;\012        pos cursive nine_thousand_siyaq <anchor 1881 0> <anchor 560 244>;\012        pos cursive four_thousand_siyaq <anchor 2135 0> <anchor 560 244>;\012        pos cursive forty_siyaq <anchor 2155 0> <anchor 0 0>;\012        pos cursive ten.alt_siyaq <anchor 1953 0> <anchor 500 244>;\012        pos cursive three_thousand_siyaq <anchor 1804 0> <anchor 560 244>;\012        pos cursive placeholder_siyaq <anchor 662 0> <anchor NULL>;\012        pos cursive onequarter_siyaq <anchor 487 0> <anchor 0 0>;\012        pos cursive placeholder_siyaq.alt <anchor 662 0> <anchor NULL>;\012        pos cursive fifty_siyaq <anchor 1987 0> <anchor 0 0>;\012        pos cursive four_hundred_siyaq <anchor 890 0> <anchor 0 0>;\012        pos cursive onehalf_siyaq <anchor 254 0> <anchor 0 0>;\012        pos cursive five_thousand_siyaq <anchor 2026 0> <anchor 560 244>;\012        pos cursive one.alt_siyaq <anchor 815 0> <anchor 0 0>;\012        pos cursive eight_thousand_siyaq <anchor 1997 0> <anchor 1360 244>;\012        pos cursive thirty_thousand_siyaq <anchor 1905 0> <anchor 560 244>;\012        pos cursive three_hundred_siyaq <anchor 607 0> <anchor 0 0>;\012        pos cursive lakh_mark.alt_siyaq <anchor 1233 0> <anchor 0 0>;\012        pos cursive karoran_siyaq <anchor 1657 0> <anchor 0 0>;\012        pos cursive nine_siyaq <anchor 791 0> <anchor 0 0>;\012        pos cursive one_thousand_siyaq <anchor 1851 0> <anchor 560 244>;\012        pos cursive eighty_siyaq <anchor 1766 0> <anchor 0 0>;\012        pos cursive thirty_siyaq <anchor 1877 0> <anchor 0 0>;\012        pos cursive lakh_mark_siyaq <anchor 1253 0> <anchor 0 0>;\012        pos cursive six_siyaq <anchor 1396 0> <anchor 0 0>;\012        pos cursive sixty_thousand_siyaq <anchor 1922 0> <anchor 560 244>;\012        pos cursive nine_hundred_siyaq <anchor 821 0> <anchor 0 0>;\012        pos cursive ten_thousand_siyaq <anchor 1989 0> <anchor 560 244>;\012        pos cursive ninety_siyaq <anchor 1907 0> <anchor 0 0>;\012        pos cursive sixty_siyaq <anchor 1942 0> <anchor 0 0>;\012        pos cursive four_siyaq <anchor 1059 0> <anchor 0 0>;\012        pos cursive eighty_thousand_siyaq <anchor 1766 0> <anchor 560 244>;\012        pos cursive seven_siyaq <anchor 1608 0> <anchor 0 0>;\012        pos cursive seven_hundred_siyaq <anchor 662 0> <anchor 0 0>;\012        pos cursive ten_siyaq <anchor 1926 0> <anchor 0 0>;\012        pos cursive lakh_siyaq <anchor 1192 0> <anchor 0 0>;\012        pos cursive forty_thousand_siyaq <anchor 2135 0> <anchor 560 244>;\012        pos cursive two_siyaq <anchor 1163 0> <anchor 0 0>;\012        pos cursive fifty_thousand_siyaq <anchor 1987 0> <anchor 560 244>;\012        pos cursive five_siyaq <anchor 890 0> <anchor 0 0>;\012        pos cursive three_siyaq <anchor 1396 0> <anchor 0 0>;\012        pos cursive one_siyaq <anchor 1224 0> <anchor 0 0>;\012        pos cursive seven_thousand_siyaq <anchor 1984 0> <anchor 560 244>;\012\012} CursiveAttachment1;\012\012lookup CursiveAttachment2 {\012    lookupflag IgnoreMarks;\012    ;\012    # Original source: 1 \012            pos cursive twenty_thousand_siyaq <anchor 2088 0> <anchor 1360 244>;\012        pos cursive threequarters_siyaq <anchor NULL> <anchor 0 0>;\012        pos cursive two_thousand_siyaq <anchor 1964 0> <anchor 1360 244>;\012        pos cursive eight_thousand_siyaq <anchor 1997 0> <anchor 1360 244>;\012        pos cursive thirty_thousand_siyaq <anchor 1905 0> <anchor 1360 244>;\012        pos cursive seventy_thousand_siyaq <anchor 2044 0> <anchor 1360 244>;\012        pos cursive eight_siyaq <anchor 1396 0> <anchor NULL>;\012        pos cursive twenty_siyaq <anchor 2000 0> <anchor 0 0>;\012        pos cursive ninety_thousand_siyaq <anchor 1867 0> <anchor 1360 244>;\012        pos cursive seventy_siyaq <anchor 2024 0> <anchor 0 0>;\012        pos cursive karoran_siyaq <anchor 1657 0> <anchor 0 0>;\012        pos cursive one_thousand_siyaq <anchor 1851 0> <anchor 1360 244>;\012        pos cursive eighty_siyaq <anchor 1766 0> <anchor 0 0>;\012        pos cursive thirty_siyaq <anchor 1877 0> <anchor 0 0>;\012        pos cursive six_siyaq <anchor 1396 0> <anchor 0 0>;\012        pos cursive sixty_thousand_siyaq <anchor 1922 0> <anchor 1360 244>;\012        pos cursive six_thousand_siyaq <anchor 1989 0> <anchor 1360 244>;\012        pos cursive ten_thousand_siyaq <anchor 1989 0> <anchor 1360 244>;\012        pos cursive nine_thousand_siyaq <anchor 1881 0> <anchor 1360 244>;\012        pos cursive ninety_siyaq <anchor 1907 0> <anchor 0 0>;\012        pos cursive sixty_siyaq <anchor 1922 0> <anchor 0 0>;\012        pos cursive four_thousand_siyaq <anchor 2135 0> <anchor 1360 244>;\012        pos cursive four_siyaq <anchor 1059 0> <anchor 0 0>;\012        pos cursive forty_siyaq <anchor 2175 0> <anchor 0 0>;\012        pos cursive eighty_thousand_siyaq <anchor 1766 0> <anchor 1360 244>;\012        pos cursive ten.alt_siyaq <anchor 1953 0> <anchor 1276 244>;\012        pos cursive three_thousand_siyaq <anchor 1804 0> <anchor 1360 244>;\012        pos cursive ten_siyaq <anchor 1926 0> <anchor 0 0>;\012        pos cursive onequarter_siyaq <anchor NULL> <anchor 0 0>;\012        pos cursive forty_thousand_siyaq <anchor 2135 0> <anchor 1360 244>;\012        pos cursive two_siyaq <anchor 1163 0> <anchor 0 0>;\012        pos cursive fifty_siyaq <anchor 1987 0> <anchor 0 0>;\012        pos cursive fifty_thousand_siyaq <anchor 1987 0> <anchor 1360 244>;\012        pos cursive three_siyaq <anchor 1396 0> <anchor 0 0>;\012        pos cursive one_siyaq <anchor 1224 0> <anchor 0 0>;\012        pos cursive onehalf_siyaq <anchor NULL> <anchor 0 0>;\012        pos cursive five_thousand_siyaq <anchor 2046 0> <anchor 1360 244>;\012        pos cursive seven_thousand_siyaq <anchor 1984 0> <anchor 1360 244>;\012\012} CursiveAttachment2;\012";
+name = curs;
+}
+);
 fontMaster = (
 {
 alignmentZones = (
@@ -7511,10 +7528,6 @@ unicode = 0627;
 instances = (
 {
 customParameters = (
-{
-name = weightClass;
-value = 400;
-},
 {
 name = panose;
 value = (
