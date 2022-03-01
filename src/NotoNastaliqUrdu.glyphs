@@ -7568,61 +7568,25 @@ name = "Toothless medial Seen selection";
 code = "lookup RefineStage2 {
     lookupflag IgnoreMarks;
     ;
-    sub [SeenIni.outT2 SeenMed.inT2outT2]' lookup PreToothless [SeenIni.outT2 SeenMed.inT2outT2]' lookup Toothless_B [SeenIni.outT2 SeenMed.inT2outT2]' lookup PreToothless [SeenIni.outT2 SeenMed.inT2outT2]' lookup Toothless_B [SeenIni.outT2 SeenMed.inT2outT2]' lookup PreToothless [SeenIni.outT2 SeenMed.inT2outT2]' lookup Toothless_B [SeenFin SeenMed.r]';
-    sub [SeenIni.outT2 SeenMed.inT2outT2]' lookup Toothless_A [SeenIni.outT2 SeenMed.inT2outT2]' lookup PreToothless [SeenIni.outT2 SeenMed.inT2outT2]' lookup Toothless_B [SeenIni.outT2 SeenMed.inT2outT2]' lookup PreToothless [SeenIni.outT2 SeenMed.inT2outT2]' lookup Toothless_B [SeenFin SeenMed.r]';
-    sub [SeenIni.outT2 SeenMed.inT2outT2]' lookup PreToothless [SeenIni.outT2 SeenMed.inT2outT2]' lookup Toothless_B [SeenIni.outT2 SeenMed.inT2outT2]' lookup PreToothless [SeenIni.outT2 SeenMed.inT2outT2]' lookup Toothless_B [SeenFin SeenMed.r]';
-    sub [SeenIni.outT2 SeenMed.inT2outT2]' lookup Toothless_A [SeenIni.outT2 SeenMed.inT2outT2]' lookup PreToothless [SeenIni.outT2 SeenMed.inT2outT2]' lookup Toothless_B [SeenFin SeenMed.r]';
-    sub [SeenIni.outT2 SeenMed.inT2outT2]' lookup PreToothless [SeenIni.outT2 SeenMed.inT2outT2]' lookup Toothless_B [SeenFin SeenMed.r]';
-    sub [SeenIni.outT2 SeenMed.inT2outT2]' lookup Toothless_A [SeenFin SeenMed.r]';
-    sub @class529' lookup PreToothless [SeenIni.outT2 SeenMed.inT2outT2]' lookup Toothless_A [SeenIni.outT2 SeenMed.inT2outT2]' lookup PreToothless [SeenIni.outT2 SeenMed.inT2outT2]' lookup Toothless_B [SeenFin SeenMed.r]';
-    sub @class529' [SeenIni.outT2 SeenMed.inT2outT2]' lookup PreToothless [SeenIni.outT2 SeenMed.inT2outT2]' lookup Toothless_B [SeenFin SeenMed.r]';
-    sub @class529' lookup PreToothless [SeenIni.outT2 SeenMed.inT2outT2]' lookup Toothless_A [SeenFin SeenMed.r]';
-    sub @class529' lookup PreToothless [SeenIni.outT2 SeenMed.inT2outT2]' lookup Toothless_A [SeenIni.outT2 SeenMed.inT2outT2]' lookup PreToothless [SeenIni.outT2 SeenMed.inT2outT2]' lookup Toothless_A @SeenMeds;
-    sub @class529' [SeenIni.outT2 SeenMed.inT2outT2]' lookup PreToothless [SeenIni.outT2 SeenMed.inT2outT2]' lookup Toothless_A @SeenMeds;
-    sub @class529' lookup PreToothless [SeenIni.outT2 SeenMed.inT2outT2]' lookup Toothless_A @SeenMeds;
-    sub [SadIni.outT2 HahIni.outT2 AinIni.outT2 HahMed.inD2outT2 SadMed.inD1outT2]' lookup PreToothless [SeenIni.outT2 SeenMed.inT2outT2]' lookup Toothless_B [SeenIni.outT2 SeenMed.inT2outT2]' lookup PreToothless [SeenIni.outT2 SeenMed.inT2outT2]' lookup Toothless_B [SeenFin SeenMed.r]';
-    sub [SadIni.outT2 HahIni.outT2 AinIni.outT2 HahMed.inD2outT2 SadMed.inD1outT2]' [SeenIni.outT2 SeenMed.inT2outT2]' lookup PreToothless [SeenIni.outT2 SeenMed.inT2outT2]' lookup Toothless_B [SeenFin SeenMed.r]';
-    sub [SadIni.outT2 HahIni.outT2 AinIni.outT2 HahMed.inD2outT2 SadMed.inD1outT2]' lookup PreToothless [SeenIni.outT2 SeenMed.inT2outT2]' lookup Toothless_B [SeenFin SeenMed.r]';
-    sub [SadIni.outT2 HahIni.outT2 AinIni.outT2 HahMed.inD2outT2 SadMed.inD1outT2]' lookup PreToothless [SeenIni.outT2 SeenMed.inT2outT2]' lookup Toothless_B [SeenIni.outT2 SeenMed.inT2outT2]' lookup PreToothless [SeenIni.outT2 SeenMed.inT2outT2]' lookup Toothless_A @SeenMeds;
-    sub [SadIni.outT2 HahIni.outT2 AinIni.outT2 HahMed.inD2outT2 SadMed.inD1outT2]' [SeenIni.outT2 SeenMed.inT2outT2]' lookup PreToothless [SeenIni.outT2 SeenMed.inT2outT2]' lookup Toothless_A @SeenMeds;
+    sub SeenIni.outT2' lookup Toothless_A @SeenMeds [@SeenMeds SeenFin];
+    sub [SeenIni.outT2 SeenMed.inT2outT2]' lookup PreToothless [SeenIni.outT2 SeenMed.inT2outT2]' lookup Toothless_B [@SeenMeds SeenFin];
+    sub SeenIni.outT2' lookup Toothless_A @SeenMeds;
+    sub [BehxIni.outT2tall BehxMed.inT2outT2 GafIni.outT2 GafMed.outT2 KafIni.outT2 KafMed.outT2 LamIni.outT2 LamMed.outT2]' [SeenIni.outT2 SeenMed.inT2outT2]' lookup PreToothless [SeenIni.outT2 SeenMed.inT2outT2]' lookup Toothless_A @SeenMeds;
+    sub [BehxIni.outT2tall BehxMed.inT2outT2 GafIni.outT2 GafMed.outT2 KafIni.outT2 KafMed.outT2 LamIni.outT2 LamMed.outT2]' lookup PreToothless [SeenIni.outT2 SeenMed.inT2outT2]' lookup Toothless_A @SeenMeds;
+    sub [SadIni.outT2 HahIni.outT2 AinIni.outT2 HahMed.inD2outT2 SadMed.inD1outT2]' [SeenIni.outT2 SeenMed.inT2outT2]' lookup PreToothless [SeenIni.outT2 SeenMed.inT2outT2]' lookup Toothless_B @SeenMeds;
     sub [SadIni.outT2 HahIni.outT2 AinIni.outT2 HahMed.inD2outT2 SadMed.inD1outT2]' lookup PreToothless [SeenIni.outT2 SeenMed.inT2outT2]' lookup Toothless_B @SeenMeds;
-    sub [HehIni.outT2 MeemIni.outT2 HehMed.inD5outT2 MeemMed.inD2outT2]' lookup PreToothless [SeenIni.outT2 SeenMed.inT2outT2]' lookup Toothless_C [SeenIni.outT2 SeenMed.inT2outT2]' lookup PreToothless [SeenIni.outT2 SeenMed.inT2outT2]' lookup Toothless_B [SeenFin SeenMed.r]';
-    sub [HehIni.outT2 MeemIni.outT2 HehMed.inD5outT2 MeemMed.inD2outT2]' [SeenIni.outT2 SeenMed.inT2outT2]' lookup PreToothless [SeenIni.outT2 SeenMed.inT2outT2]' lookup Toothless_B [SeenFin SeenMed.r]';
-    sub [HehIni.outT2 MeemIni.outT2 HehMed.inD5outT2 MeemMed.inD2outT2]' lookup PreToothless [SeenIni.outT2 SeenMed.inT2outT2]' lookup Toothless_C [SeenFin SeenMed.r]';
-    sub [HehIni.outT2 MeemIni.outT2 HehMed.inD5outT2 MeemMed.inD2outT2]' lookup PreToothless [SeenIni.outT2 SeenMed.inT2outT2]' lookup Toothless_C [SeenIni.outT2 SeenMed.inT2outT2]' lookup PreToothless [SeenIni.outT2 SeenMed.inT2outT2]' lookup Toothless_A @SeenMeds;
-    sub [HehIni.outT2 MeemIni.outT2 HehMed.inD5outT2 MeemMed.inD2outT2]' [SeenIni.outT2 SeenMed.inT2outT2]' lookup PreToothless [SeenIni.outT2 SeenMed.inT2outT2]' lookup Toothless_A @SeenMeds;
+    sub [HehIni.outT2 MeemIni.outT2 HehMed.inD5outT2 MeemMed.inD2outT2]' [SeenIni.outT2 SeenMed.inT2outT2]' lookup PreToothless [SeenIni.outT2 SeenMed.inT2outT2]' lookup Toothless_C @SeenMeds;
     sub [HehIni.outT2 MeemIni.outT2 HehMed.inD5outT2 MeemMed.inD2outT2]' lookup PreToothless [SeenIni.outT2 SeenMed.inT2outT2]' lookup Toothless_C @SeenMeds;
-    sub [TahIni.outT2 HehDoIni.outT2 HehDoMed.inD2outT2 TahMed.inD1outT2]' lookup PreToothless [SeenIni.outT2 SeenMed.inT2outT2]' lookup Toothless_D [SeenIni.outT2 SeenMed.inT2outT2]' lookup PreToothless [SeenIni.outT2 SeenMed.inT2outT2]' lookup Toothless_B [SeenFin SeenMed.r]';
-    sub [TahIni.outT2 HehDoIni.outT2 HehDoMed.inD2outT2 TahMed.inD1outT2]' [SeenIni.outT2 SeenMed.inT2outT2]' lookup PreToothless [SeenIni.outT2 SeenMed.inT2outT2]' lookup Toothless_B [SeenFin SeenMed.r]';
-    sub [TahIni.outT2 HehDoIni.outT2 HehDoMed.inD2outT2 TahMed.inD1outT2]' lookup PreToothless [SeenIni.outT2 SeenMed.inT2outT2]' lookup Toothless_D [SeenFin SeenMed.r]';
-    sub [TahIni.outT2 HehDoIni.outT2 HehDoMed.inD2outT2 TahMed.inD1outT2]' lookup PreToothless [SeenIni.outT2 SeenMed.inT2outT2]' lookup Toothless_D [SeenIni.outT2 SeenMed.inT2outT2]' lookup PreToothless [SeenIni.outT2 SeenMed.inT2outT2]' lookup Toothless_A [SeenFin SeenMed.r]';
-    sub [TahIni.outT2 HehDoIni.outT2 HehDoMed.inD2outT2 TahMed.inD1outT2]' [SeenIni.outT2 SeenMed.inT2outT2]' lookup PreToothless [SeenIni.outT2 SeenMed.inT2outT2]' lookup Toothless_A @SeenMeds;
     sub [TahIni.outT2 HehDoIni.outT2 HehDoMed.inD2outT2 TahMed.inD1outT2]' lookup PreToothless [SeenIni.outT2 SeenMed.inT2outT2]' lookup Toothless_D @SeenMeds;
-    sub [FehxMed.inT3outT2 HehIniAF.outT2]' lookup PreToothless [SeenIni.outT2 SeenMed.inT2outT2]' lookup Toothless_F [SeenIni.outT2 SeenMed.inT2outT2]' lookup PreToothless [SeenIni.outT2 SeenMed.inT2outT2]' lookup Toothless_B [SeenFin SeenMed.r]';
-    sub [FehxMed.inT3outT2 HehIniAF.outT2]' [SeenIni.outT2 SeenMed.inT2outT2]' lookup PreToothless [SeenIni.outT2 SeenMed.inT2outT2]' lookup Toothless_B [SeenFin SeenMed.r]';
-    sub [FehxMed.inT3outT2 HehIniAF.outT2]' lookup PreToothless [SeenIni.outT2 SeenMed.inT2outT2]' lookup Toothless_F [SeenFin SeenMed.r]';
-    sub [FehxMed.inT3outT2 HehIniAF.outT2]' lookup PreToothless [SeenIni.outT2 SeenMed.inT2outT2]' lookup Toothless_F [SeenIni.outT2 SeenMed.inT2outT2]' lookup PreToothless [SeenIni.outT2 SeenMed.inT2outT2]' lookup Toothless_A @SeenMeds;
-    sub [FehxMed.inT3outT2 HehIniAF.outT2]' [SeenIni.outT2 SeenMed.inT2outT2]' lookup PreToothless [SeenIni.outT2 SeenMed.inT2outT2]' lookup Toothless_A @SeenMeds;
+    sub [FehxMed.inT3outT2 HehIniAF.outT2]' [SeenIni.outT2 SeenMed.inT2outT2]' lookup PreToothless [SeenIni.outT2 SeenMed.inT2outT2]' lookup Toothless_F @SeenMeds;
     sub [FehxMed.inT3outT2 HehIniAF.outT2]' lookup PreToothless [SeenIni.outT2 SeenMed.inT2outT2]' lookup Toothless_F @SeenMeds;
-    sub FehxIni.outT2' lookup PreToothless [SeenIni.outT2 SeenMed.inT2outT2]' lookup Toothless_FF [SeenIni.outT2 SeenMed.inT2outT2]' lookup PreToothless [SeenIni.outT2 SeenMed.inT2outT2]' lookup Toothless_B [SeenFin SeenMed.r]';
-    sub FehxIni.outT2' [SeenIni.outT2 SeenMed.inT2outT2]' lookup PreToothless [SeenIni.outT2 SeenMed.inT2outT2]' lookup Toothless_B [SeenFin SeenMed.r]';
-    sub FehxIni.outT2' lookup PreToothless [SeenIni.outT2 SeenMed.inT2outT2]' lookup Toothless_FF [SeenFin SeenMed.r]';
-    sub FehxIni.outT2' lookup PreToothless [SeenIni.outT2 SeenMed.inT2outT2]' lookup Toothless_FF [SeenIni.outT2 SeenMed.inT2outT2]' lookup PreToothless [SeenIni.outT2 SeenMed.inT2outT2]' lookup Toothless_A @SeenMeds;
-    sub FehxIni.outT2' [SeenIni.outT2 SeenMed.inT2outT2]' lookup PreToothless [SeenIni.outT2 SeenMed.inT2outT2]' lookup Toothless_A @SeenMeds;
+    sub FehxIni.outT2' [SeenIni.outT2 SeenMed.inT2outT2]' lookup PreToothless [SeenIni.outT2 SeenMed.inT2outT2]' lookup Toothless_FF @SeenMeds;
     sub FehxIni.outT2' lookup PreToothless [SeenIni.outT2 SeenMed.inT2outT2]' lookup Toothless_FF @SeenMeds;
-    sub AinMed.inT3outT2' lookup PreToothless [SeenIni.outT2 SeenMed.inT2outT2]' lookup Toothless_G [SeenIni.outT2 SeenMed.inT2outT2]' lookup PreToothless [SeenIni.outT2 SeenMed.inT2outT2]' lookup Toothless_B [SeenFin SeenMed.r]';
-    sub AinMed.inT3outT2' [SeenIni.outT2 SeenMed.inT2outT2]' lookup PreToothless [SeenIni.outT2 SeenMed.inT2outT2]' lookup Toothless_B [SeenFin SeenMed.r]';
-    sub AinMed.inT3outT2' lookup PreToothless [SeenIni.outT2 SeenMed.inT2outT2]' lookup Toothless_G [SeenFin SeenMed.r]';
-    sub AinMed.inT3outT2' lookup PreToothless [SeenIni.outT2 SeenMed.inT2outT2]' lookup Toothless_G [SeenIni.outT2 SeenMed.inT2outT2]' lookup PreToothless [SeenIni.outT2 SeenMed.inT2outT2]' lookup Toothless_A @SeenMeds;
-    sub AinMed.inT3outT2' [SeenIni.outT2 SeenMed.inT2outT2]' lookup PreToothless [SeenIni.outT2 SeenMed.inT2outT2]' lookup Toothless_A @SeenMeds;
+    sub AinMed.inT3outT2' [SeenIni.outT2 SeenMed.inT2outT2]' lookup PreToothless [SeenIni.outT2 SeenMed.inT2outT2]' lookup Toothless_G @SeenMeds;
     sub AinMed.inT3outT2' lookup PreToothless [SeenIni.outT2 SeenMed.inT2outT2]' lookup Toothless_G @SeenMeds;
     sub BehxMed.inT2outD2H' lookup preHahFin HahFin;
-    sub BehxMed.inT2outD2H' lookup preHahFin @HahMeds HahFin;
-    sub BehxMed.inT2outD2H' lookup preHahMed2 @HahMeds @HahMeds;
-    sub BehxMed.inT1outT2' lookup PreToothless [SeenIni.outT2 SeenMed.inT2outT2]' lookup Toothless_A [SeenIni.outT2 SeenMed.inT2outT2]' lookup PreToothless [SeenIni.outT2 SeenMed.inT2outT2]' lookup Toothless_B [SeenFin SeenMed.r]';
-    sub BehxMed.inT1outT2' [SeenIni.outT2 SeenMed.inT2outT2]' lookup PreToothless [SeenIni.outT2 SeenMed.inT2outT2]' lookup Toothless_B [SeenFin SeenMed.r]';
-    sub BehxMed.inT1outT2' lookup PreToothless [SeenIni.outT2 SeenMed.inT2outT2]' lookup Toothless_A [SeenFin SeenMed.r]';
-    sub BehxMed.inT1outT2' lookup PreToothless [SeenIni.outT2 SeenMed.inT2outT2]' lookup Toothless_A [SeenIni.outT2 SeenMed.inT2outT2]' lookup PreToothless [SeenIni.outT2 SeenMed.inT2outT2]' lookup Toothless_A @SeenMeds;
+    sub BehxMed.inT2outD2H' lookup preHahMed2 [HahMed.inD2outD1 HahMed.inD2outD11 HahMed.inD2outD2 HahMed.inD2outD2D HahMed.inD2outD2H HahMed.inD2outD2MM HahMed.inD2outD2Y HahMed.inD2outD2YB HahMed.inD2outD3 HahMed.inD2outD5 HahMed.inD2outS1 HahMed.inD2outT1 HahMed.inD2outT2 HahMed.inD2outT3] HahFin;
+    sub BehxMed.inT2outD2H' lookup preHahMed2 [HahMed.inD2outD1 HahMed.inD2outD11 HahMed.inD2outD2 HahMed.inD2outD2D HahMed.inD2outD2H HahMed.inD2outD2MM HahMed.inD2outD2Y HahMed.inD2outD2YB HahMed.inD2outD3 HahMed.inD2outD5 HahMed.inD2outS1 HahMed.inD2outT1 HahMed.inD2outT2 HahMed.inD2outT3] [HahMed.inD2outD1 HahMed.inD2outD11 HahMed.inD2outD2 HahMed.inD2outD2D HahMed.inD2outD2H HahMed.inD2outD2MM HahMed.inD2outD2Y HahMed.inD2outD2YB HahMed.inD2outD3 HahMed.inD2outD5 HahMed.inD2outS1 HahMed.inD2outT1 HahMed.inD2outT2 HahMed.inD2outT3];
     sub BehxMed.inT1outT2' [SeenIni.outT2 SeenMed.inT2outT2]' lookup PreToothless [SeenIni.outT2 SeenMed.inT2outT2]' lookup Toothless_A @SeenMeds;
     sub BehxMed.inT1outT2' lookup PreToothless [SeenIni.outT2 SeenMed.inT2outT2]' lookup Toothless_A @SeenMeds;
     sub @class562 BehxMed.inT1outT2' lookup preSeen lookup toWide @SeenMeds;
@@ -20059,18 +20023,16 @@ sub Veh by Fehx ThreeDotsUpAboveNS;
 sub HehHamza by HehUrdu HamzaAboveNS;
 sub HehHamzaUrdu by HehUrdu HamzaAboveNS;
 sub TehMarbutaUrdu by HehUrdu TwoDotsAboveNS;
-sub uni06C6 by Waw ArSevenAboveNS;
-sub uni06C7 by Waw DammaNS;
-sub uni06CA by Waw TwoDotsAboveNS;
 sub YehBarreeHamza by YehBarree HamzaAboveNS;
+
 sub uni063B by Kaf TwoDotsAboveKNS;
 sub uni063C by Kaf ThreeDotsDownBelowNS;
 sub uni067A by Behx TwoDotsVertAboveNS;
 sub uni067B by Behx TwoDotsVertBelowNS;
 sub uni067C by Behx TwoDotsAboveNS RingNS;
 sub uni067D by Behx ThreeDotsDownAboveNS;
-sub uni0680 by Behx FourDotsBelowNS;
 sub uni067F by Behx FourDotsAboveNS;
+sub uni0680 by Behx FourDotsBelowNS;
 sub uni0681 by Hah HamzaAboveNS;
 sub uni0685 by Hah ThreeDotsUpAboveNS;
 sub uni0689 by Dal RingNS;
@@ -20087,6 +20049,7 @@ sub uni069A by Seen OneDotAboveNS OneDotBelowNS;
 sub uni069B by Seen ThreeDotsDownBelowNS;
 sub uni069C by Seen ThreeDotsUpAboveNS ThreeDotsDownBelowNS;
 sub uni069E by Sad ThreeDotsUpAboveNS;
+sub uni06A0 by Ain ThreeDotsUpAboveNS;
 sub uni06A6 by Fehx FourDotsAboveNS;
 sub uni06A7 by Qafx OneDotAboveNS;
 sub uni06A8 by Qafx ThreeDotsUpAboveNS;
@@ -20095,16 +20058,37 @@ sub uni06B0 by Gaf RingNS;
 sub uni06B1 by Gaf TwoDotsAboveKNS;
 sub uni06B3 by Gaf TwoDotsVertBelowNS;
 sub uni06B7 by Lam ThreeDotsUpAboveNS;
-sub uni06BD by Behx ThreeDotsUpAboveNS;
 sub uni06C4 by Waw RingNS;
+sub uni06C6 by Waw ArSevenAboveNS;
+sub uni06C7 by Waw DammaNS;
+sub uni06CA by Waw TwoDotsAboveNS;
 sub uni06CD by AlefMaqsura SharetYehPashtoNS;
+sub uni06CE by AlefMaqsura ArSevenAboveNS;
+sub uni06CF by Waw OneDotAboveNS;
 sub uni06D0 by AlefMaqsura TwoDotsVertBelowNS;
 sub uni06EE by Dal ArEightAboveNS;
 sub uni06EF by Reh ArEightAboveNS;
 sub uni06FF by HehDoachasmee ArEightAboveNS;
+sub uni0750 by Behx ThreeDotsFlatBelowNS;
+sub uni0751 by Behx OneDotBelowNS ThreeDotsUpAboveNS;
+sub uni0752 by Behx ThreeDotsUpBelowNS;
+sub uni0753 by Behx TwoDotsAboveNS ThreeDotsUpBelowNS;
+sub uni0754 by Behx OneDotAboveNS TwoDotsBelowNS;
+sub uni0755 by Behx ArEightBelowNS;
+sub uni0756 by Behx ArSevenAboveNS;
+sub uni0757 by Hah TwoDotsAboveNS;
 sub uni0759 by Dal TahSmallAboveNS TwoDotsVertBelowNS;
+sub uni075A by Dal ArEightBelowNS;
+sub uni075B by Reh CrossbarNS;
 sub uni075C by Seen FourDotsAboveNS;
+sub uni075D by Ain TwoDotsAboveNS;
+sub uni075E by Ain ThreeDotsDownAboveNS;
+sub uni075F by Ain TwoDotsVertAboveNS;
+sub uni0760 by Fehx TwoDotsBelowNS;
+sub uni0761 by Fehx ThreeDotsUpBelowNS;
+sub uni0762 by Kaf OneDotAboveKNS;
 sub uni0763 by Kaf ThreeDotsAboveKNS;
+sub uni076A by Lam CrossbarNS;
 sub uni076B by Reh TwoDotsVertAboveNS;
 sub uni076C by Reh HamzaAboveNS;
 sub uni076D by Seen TwoDotsVertAboveNS;
@@ -20115,48 +20099,28 @@ sub uni0773 by Alef Small2AboveNS;
 sub uni0774 by Alef Small3AboveNS;
 sub uni0778 by Waw Small2AboveNS;
 sub uni0779 by Waw Small3AboveNS;
-sub uni077A by YehBarree Small2AboveNS;
-sub uni077B by YehBarree Small3AboveNS;
 sub uni077D by Seen Small4UrduAboveNS;
-sub uni076A by Lam CrossbarNS;
-sub uni08BE by Behx ThreeDotsDownBelowNS ArSevenAboveNS;
-sub uni0750 by Behx ThreeDotsFlatBelowNS;
-sub uni0751 by Behx OneDotBelowNS ThreeDotsUpAboveNS;
-sub uni0752 by Behx ThreeDotsUpBelowNS;
-sub uni0753 by Behx TwoDotsAboveNS ThreeDotsUpBelowNS;
-sub uni0754 by Behx OneDotAboveNS TwoDotsBelowNS;
-sub uni0755 by Behx ArEightBelowNS;
-sub uni0756 by Behx ArSevenAboveNS;
 sub uni08A0 by Behx ArSevenBelowNS;
-sub uni08C0 by Behx SmallTahSevenAboveNS;
 sub uni08A1 by Behx HamzaAboveNS;
-sub uni0757 by Hah TwoDotsAboveNS;
-sub uni075A by Dal ArEightBelowNS;
+sub uni08A3 by Tah TwoDotsEnclNS;
+sub uni08A4 by Fehx ThreeDotsUpAboveNS OneDotBelowNS;
+sub uni08A5 by Qafx OneDotBelowNS;
+sub uni08A6 by Lam DblCrossbarNS;
+sub uni08A7 by Meem ThreeDotsUpAboveNS;
+sub uni08AB by Waw OneDotSmallAbove;
 sub uni08AE by Dal ThreeDotsDownBelowNS;
 sub uni08B2 by Reh OneDotAboveNS ArEightAboveNS;
 sub uni08B4 by Kaf OneDotBelowNS;
-sub uni075B by Reh CrossbarNS;
-sub uni08A3 by Tah TwoDotsEnclNS;
-sub uni08C3 by Ain OneDotAboveNS ThreeDotsUpAboveNS;
-sub uni08A4 by Fehx ThreeDotsUpAboveNS OneDotBelowNS;
-sub uni08A5 by Qafx OneDotBelowNS;
-sub uni0762 by Kaf OneDotAboveKNS;
-sub uni08C2 by Kaf ArSevenKNS;
-sub uni08A6 by Lam DblCrossbarNS;
-sub uni08C7 by Lam TahSmallAboveNS;
-sub uni08A7 by Meem ThreeDotsUpAboveNS;
-sub uni08BF by Behx TwoDotsSevenAboveNS;
-sub uni08AB by Waw OneDotSmallAbove;
-sub uni06CE by AlefMaqsura ArSevenAboveNS;
-sub uni075D by Ain TwoDotsAboveNS;
-sub uni075E by Ain ThreeDotsDownAboveNS;
-sub uni075F by Ain TwoDotsVertAboveNS;
-sub uni0760 by Fehx TwoDotsBelowNS;
-sub uni0761 by Fehx ThreeDotsUpBelowNS;
 sub uni08B6 by Behx OneDotBelowNS SmallMeemAboveNS;
 sub uni08B7 by Behx ThreeDotsDownBelowNS SmallMeemAboveNS;
 sub uni08B8 by Behx SmallTehAboveNS;
 sub uni08B9 by Reh SmallNoonAboveNS;
+sub uni08BE by Behx ThreeDotsDownBelowNS ArSevenAboveNS;
+sub uni08BF by Behx TwoDotsSevenAboveNS;
+sub uni08C0 by Behx SmallTahSevenAboveNS;
+sub uni08C2 by Kaf ArSevenKNS;
+sub uni08C3 by Ain OneDotAboveNS ThreeDotsUpAboveNS;
+sub uni08C7 by Lam TahSmallAboveNS;
 
 
     lookup SubtendingMarks;
@@ -20240,14 +20204,17 @@ sub uni0684 by HahFin TwoDotsVertEnclNS;
 sub uni0687 by HahFin FourDotsEnclNS;
 sub uni06BB by NoonxFin TahSmallAboveNS;
 sub uni06BC by NoonxFin OneDotEnclNS RingNS;
+sub uni06BD by NoonxFin ThreeDotsUpAboveNS;
 sub uni0767 by NoonxFin OneDotEnclNS TwoDotsBelowNS;
-sub uni0768 by NoonxFin TahDotAboveNS;
+sub uni0768 by NoonxFin TahDotEnclNS;
 sub uni0769 by NoonxFin OneDotSevenAboveNS;
 sub uni076E by HahFin TahSmallEnclNS;
 sub uni076F by HahFin Tah2DotsEnclNS;
 sub uni0775 by YehxFin Small2AboveNS;
 sub uni0776 by YehxFin Small3AboveNS;
 sub uni0777 by YehxFin Small4UrduBelowNS;
+sub uni077A by YehBarreeFin Small2AboveNS;
+sub uni077B by YehBarreeFin Small3AboveNS;
 sub uni077C by HahFin Small4UrduEnclNS;
 sub uni08C5 by HahFin OneDotEnclNS ThreeDotsUpAboveNS;
 sub uni08C6 by HahFin FourDotsRhombusEnclNS;
@@ -20286,6 +20253,7 @@ sub uni0684 by HahIni TwoDotsVertBelowNS;
 sub uni0687 by HahIni FourDotsBelowNS;
 sub uni06BB by BehxIni TahSmallAboveNS;
 sub uni06BC by BehxIni OneDotAboveNS RingNS;
+sub uni06BD by BehxIni ThreeDotsDownBelowNS;
 sub uni0767 by BehxIni OneDotAboveNS TwoDotsBelowNS;
 sub uni0768 by BehxIni TahDotAboveNS;
 sub uni0769 by BehxIni OneDotSevenAboveNS;
@@ -20294,6 +20262,8 @@ sub uni076F by HahIni Tah2DotsBelowNS;
 sub uni0775 by BehxIni Small2AboveNS TwoDotsBelowNS;
 sub uni0776 by BehxIni Small3AboveNS TwoDotsBelowNS;
 sub uni0777 by BehxIni Small4UrduBelowNS;
+sub uni077A by BehxIni Small2AboveNS TwoDotsBelowNS;
+sub uni077B by BehxIni Small3AboveNS TwoDotsBelowNS;
 sub uni077C by HahIni Small4UrduBelowNS;
 sub uni08C5 by HahIni OneDotBelowNS ThreeDotsUpAboveNS;
 sub uni08C6 by HahIni OneDotBelowNS ThreeDotsDownBelowNS;
@@ -20334,6 +20304,7 @@ sub HehDoachasmee by HehDoIni;
 sub uni08AA by RehLoopSep;
 sub uni08B0 by GafInvIni;
 sub uni08B1 by WawStraightSep;
+
 ";
 tag = init;
 },
@@ -20387,6 +20358,7 @@ code = "# Select isolated forms
     sub uni0687 by HahSep FourDotsEnclNS;
     sub uni06BB by NoonxSep TahSmallAboveNS;
     sub uni06BC by NoonxSep OneDotEnclNS RingNS;
+	sub uni06BD by NoonxSep ThreeDotsUpAboveNS;
     sub uni0767 by NoonxSep OneDotEnclNS TwoDotsBelowNS;
     sub uni0768 by NoonxSep TahDotAboveNS;
     sub uni0769 by NoonxSep OneDotSevenAboveNS;
@@ -20461,6 +20433,7 @@ sub uni0684 by HahMed TwoDotsVertBelowNS;
 sub uni0687 by HahMed FourDotsBelowNS;
 sub uni06BB by BehxMed TahSmallAboveNS;
 sub uni06BC by BehxMed OneDotAboveNS RingNS;
+sub uni06BD by BehxMed ThreeDotsDownBelowNS;
 sub uni0767 by BehxMed OneDotAboveNS TwoDotsBelowNS;
 sub uni0768 by BehxMed TahDotAboveNS;
 sub uni0769 by BehxMed OneDotSevenAboveNS;
@@ -20469,6 +20442,8 @@ sub uni076F by HahMed Tah2DotsBelowNS;
 sub uni0775 by BehxMed Small2AboveNS TwoDotsBelowNS;
 sub uni0776 by BehxMed Small3AboveNS TwoDotsBelowNS;
 sub uni0777 by BehxMed Small4UrduBelowNS;
+sub uni077A by BehxMed Small2AboveNS TwoDotsBelowNS;
+sub uni077B by BehxMed Small3AboveNS TwoDotsBelowNS;
 sub uni077C by HahMed Small4UrduBelowNS;
 sub uni08C5 by HahMed OneDotBelowNS ThreeDotsUpAboveNS;
 sub uni08C6 by HahMed OneDotBelowNS ThreeDotsDownBelowNS;
@@ -25778,15 +25753,15 @@ layers = (
 anchors = (
 {
 name = Anchor31;
-pos = (0,1107);
+pos = (2,1066);
 },
 {
 name = _Anchor31;
-pos = (-16,882);
+pos = (-9,906);
 },
 {
 name = _Anchor5;
-pos = (0,977);
+pos = (2,973);
 }
 );
 layerId = "67C28EBA-5AA6-4F74-BBA1-5BB358529C60";
@@ -25794,26 +25769,26 @@ shapes = (
 {
 closed = 1;
 nodes = (
-(76,875,o),
-(142,967,o),
-(144,1054,c),
-(119,1054,l),
-(104,994,o),
-(62,957,o),
-(-13,957,cs),
-(-73,957,o),
-(-96,981,o),
-(-96,1030,cs),
-(-96,1036,o),
-(-95,1041,o),
-(-94,1045,c),
-(-119,1048,l),
-(-126,1030,o),
-(-128,1005,o),
-(-128,988,cs),
-(-128,912,o),
-(-90,875,o),
-(-18,875,cs)
+(56,901,o),
+(103,966,o),
+(105,1028,c),
+(87,1028,l),
+(76,985,o),
+(46,959,o),
+(-7,959,cs),
+(-50,959,o),
+(-66,976,o),
+(-66,1011,cs),
+(-66,1015,o),
+(-65,1019,o),
+(-64,1022,c),
+(-82,1024,l),
+(-87,1011,o),
+(-89,993,o),
+(-89,981,cs),
+(-89,927,o),
+(-62,901,o),
+(-10,901,cs)
 );
 }
 );
@@ -25823,15 +25798,15 @@ width = 0;
 anchors = (
 {
 name = Anchor31;
-pos = (0,1107);
+pos = (2,1066);
 },
 {
 name = _Anchor31;
-pos = (-16,882);
+pos = (-9,906);
 },
 {
 name = _Anchor5;
-pos = (0,976);
+pos = (2,973);
 }
 );
 layerId = "0A5D7F3A-D11E-4113-AD15-39410F1DC5C2";
@@ -25839,26 +25814,26 @@ shapes = (
 {
 closed = 1;
 nodes = (
-(71,882,o),
-(129,966,o),
-(132,1046,c),
-(109,1046,l),
-(91,967,o),
-(38,947,o),
-(-12,947,cs),
-(-67,947,o),
-(-87,972,o),
-(-87,1013,cs),
-(-87,1030,o),
-(-86,1034,o),
-(-85,1039,c),
-(-107,1041,l),
-(-112,1021,o),
-(-116,1003,o),
-(-116,982,cs),
-(-116,905,o),
-(-64,882,o),
-(-16,882,cs)
+(53,906,o),
+(94,965,o),
+(96,1022,c),
+(80,1022,l),
+(67,966,o),
+(29,952,o),
+(-6,952,cs),
+(-45,952,o),
+(-60,970,o),
+(-60,999,cs),
+(-60,1011,o),
+(-59,1014,o),
+(-58,1017,c),
+(-74,1019,l),
+(-77,1005,o),
+(-80,992,o),
+(-80,977,cs),
+(-80,922,o),
+(-43,906,o),
+(-9,906,cs)
 );
 }
 );
@@ -35828,216 +35803,332 @@ unicode = 1564;
 glyphname = uni25CC;
 layers = (
 {
+anchors = (
+{
+name = Anchor11;
+pos = (454,-294);
+},
+{
+name = Anchor13;
+pos = (595,676);
+},
+{
+name = Anchor15;
+pos = (211,952);
+},
+{
+name = Anchor17;
+pos = (572,658);
+},
+{
+name = Anchor19;
+pos = (623,719);
+},
+{
+name = Anchor21;
+pos = (170,87);
+},
+{
+name = Anchor23;
+pos = (461,-181);
+},
+{
+name = Anchor25;
+pos = (361,349);
+},
+{
+name = Anchor28;
+pos = (68,-344);
+},
+{
+name = Anchor31;
+pos = (19,1106);
+},
+{
+name = Anchor33;
+pos = (50,-324);
+},
+{
+name = Anchor5;
+pos = (450,872);
+},
+{
+name = Anchor7;
+pos = (482,835);
+},
+{
+name = Anchor9;
+pos = (390,-246);
+}
+);
 layerId = "67C28EBA-5AA6-4F74-BBA1-5BB358529C60";
 shapes = (
 {
 closed = 1;
 nodes = (
-(405,458,o),
-(415,469,o),
-(415,490,cs),
-(415,510,o),
-(405,520,o),
-(385,520,cs),
-(364,520,o),
-(354,510,o),
-(354,490,cs),
-(354,469,o),
-(364,458,o),
-(385,458,cs)
+(227,271,o),
+(237,281,o),
+(237,301,cs),
+(237,321,o),
+(227,332,o),
+(205,332,cs),
+(186,332,o),
+(176,321,o),
+(176,301,cs),
+(176,281,o),
+(186,271,o),
+(205,271,cs)
 );
 },
 {
 closed = 1;
 nodes = (
-(240,178,o),
-(251,187,o),
-(251,206,cs),
-(251,226,o),
-(240,236,o),
-(219,236,cs),
-(200,236,o),
-(190,226,o),
-(190,206,cs),
-(190,187,o),
-(200,178,o),
-(219,178,cs)
+(250,178,o),
+(261,187,o),
+(261,206,cs),
+(261,226,o),
+(250,236,o),
+(229,236,cs),
+(210,236,o),
+(200,226,o),
+(200,206,cs),
+(200,187,o),
+(210,178,o),
+(229,178,cs)
 );
 },
 {
 closed = 1;
 nodes = (
-(310,107,o),
-(320,117,o),
-(320,136,cs),
-(320,157,o),
-(310,167,o),
-(289,167,cs),
-(270,167,o),
-(261,157,o),
-(261,136,cs),
-(261,117,o),
-(270,107,o),
-(289,107,cs)
+(319,107,o),
+(330,117,o),
+(330,136,cs),
+(330,157,o),
+(319,167,o),
+(299,167,cs),
+(280,167,o),
+(271,157,o),
+(271,136,cs),
+(271,117,o),
+(280,107,o),
+(299,107,cs)
 );
 },
 {
 closed = 1;
 nodes = (
-(214,272,o),
-(227,280,o),
-(227,301,cs),
-(227,323,o),
-(215,331,o),
-(195,331,cs),
-(176,331,o),
-(166,321,o),
-(166,301,cs),
-(166,282,o),
-(176,272,o),
-(195,272,cs)
+(415,83,o),
+(424,93,o),
+(424,113,cs),
+(424,133,o),
+(415,143,o),
+(395,143,cs),
+(374,143,o),
+(364,133,o),
+(364,113,cs),
+(364,93,o),
+(374,83,o),
+(395,83,cs)
 );
 },
 {
 closed = 1;
 nodes = (
-(405,84,o),
-(415,94,o),
-(415,113,cs),
-(415,133,o),
-(405,143,o),
-(385,143,cs),
-(364,143,o),
-(354,133,o),
-(354,113,cs),
-(354,94,o),
-(364,84,o),
-(385,84,cs)
+(508,107,o),
+(518,117,o),
+(518,136,cs),
+(518,157,o),
+(508,167,o),
+(489,167,cs),
+(473,167,o),
+(457,158,o),
+(457,136,cs),
+(457,117,o),
+(468,107,o),
+(489,107,cs)
 );
 },
 {
 closed = 1;
 nodes = (
-(498,107,o),
-(508,117,o),
-(508,136,cs),
-(508,157,o),
-(498,167,o),
-(479,167,cs),
-(458,167,o),
-(447,153,o),
-(447,136,cs),
-(447,114,o),
-(463,107,o),
-(479,107,cs)
+(250,365,o),
+(261,375,o),
+(261,396,cs),
+(261,416,o),
+(250,425,o),
+(229,425,cs),
+(210,425,o),
+(200,416,o),
+(200,396,cs),
+(200,375,o),
+(210,365,o),
+(229,365,cs)
 );
 },
 {
 closed = 1;
 nodes = (
-(240,365,o),
-(251,376,o),
-(251,397,cs),
-(251,416,o),
-(240,426,o),
-(219,426,cs),
-(200,426,o),
-(190,416,o),
-(190,397,cs),
-(190,376,o),
-(200,365,o),
-(219,365,cs)
+(578,178,o),
+(588,187,o),
+(588,206,cs),
+(588,226,o),
+(578,236,o),
+(559,236,cs),
+(539,236,o),
+(529,226,o),
+(529,206,cs),
+(529,187,o),
+(539,178,o),
+(559,178,cs)
 );
 },
 {
 closed = 1;
 nodes = (
-(568,178,o),
-(578,187,o),
-(578,206,cs),
-(578,226,o),
-(568,236,o),
-(549,236,cs),
-(529,236,o),
-(519,226,o),
-(519,206,cs),
-(519,187,o),
-(529,178,o),
-(549,178,cs)
+(319,436,o),
+(330,446,o),
+(330,466,cs),
+(330,486,o),
+(319,496,o),
+(299,496,cs),
+(280,496,o),
+(271,486,o),
+(271,466,cs),
+(271,446,o),
+(280,436,o),
+(299,436,cs)
 );
 },
 {
 closed = 1;
 nodes = (
-(310,436,o),
-(320,446,o),
-(320,466,cs),
-(320,486,o),
-(310,496,o),
-(289,496,cs),
-(270,496,o),
-(261,486,o),
-(261,466,cs),
-(261,446,o),
-(270,436,o),
-(289,436,cs)
+(415,458,o),
+(424,469,o),
+(424,490,cs),
+(424,510,o),
+(415,520,o),
+(395,520,cs),
+(374,520,o),
+(364,510,o),
+(364,490,cs),
+(364,469,o),
+(374,458,o),
+(395,458,cs)
 );
 },
 {
 closed = 1;
 nodes = (
-(593,272,o),
-(603,282,o),
-(603,301,cs),
-(603,321,o),
-(593,331,o),
-(572,331,cs),
-(553,331,o),
-(543,321,o),
-(543,301,cs),
-(543,282,o),
-(553,272,o),
-(572,272,cs)
+(603,271,o),
+(613,281,o),
+(613,301,cs),
+(613,321,o),
+(603,332,o),
+(582,332,cs),
+(563,332,o),
+(553,321,o),
+(553,301,cs),
+(553,281,o),
+(563,271,o),
+(582,271,cs)
 );
 },
 {
 closed = 1;
 nodes = (
-(498,436,o),
-(508,446,o),
-(508,466,cs),
-(508,486,o),
-(498,496,o),
-(479,496,cs),
-(459,496,o),
-(447,484,o),
-(447,466,cs),
-(447,444,o),
-(462,436,o),
-(479,436,cs)
+(508,436,o),
+(518,446,o),
+(518,466,cs),
+(518,486,o),
+(508,496,o),
+(489,496,cs),
+(473,496,o),
+(457,487,o),
+(457,466,cs),
+(457,443,o),
+(475,436,o),
+(489,436,cs)
 );
 },
 {
 closed = 1;
 nodes = (
-(568,365,o),
-(578,376,o),
-(578,397,cs),
-(578,416,o),
-(568,426,o),
-(549,426,cs),
-(529,426,o),
-(519,416,o),
-(519,397,cs),
-(519,376,o),
-(529,365,o),
-(549,365,cs)
+(578,365,o),
+(588,375,o),
+(588,396,cs),
+(588,416,o),
+(578,425,o),
+(559,425,cs),
+(539,425,o),
+(529,416,o),
+(529,396,cs),
+(529,375,o),
+(539,365,o),
+(559,365,cs)
 );
 }
 );
-width = 769;
+width = 789;
 },
 {
+anchors = (
+{
+name = Anchor11;
+pos = (454,-294);
+},
+{
+name = Anchor13;
+pos = (595,676);
+},
+{
+name = Anchor15;
+pos = (211,952);
+},
+{
+name = Anchor17;
+pos = (572,658);
+},
+{
+name = Anchor19;
+pos = (623,719);
+},
+{
+name = Anchor21;
+pos = (170,87);
+},
+{
+name = Anchor23;
+pos = (461,-181);
+},
+{
+name = Anchor25;
+pos = (361,349);
+},
+{
+name = Anchor28;
+pos = (68,-344);
+},
+{
+name = Anchor31;
+pos = (19,1106);
+},
+{
+name = Anchor33;
+pos = (50,-324);
+},
+{
+name = Anchor5;
+pos = (450,872);
+},
+{
+name = Anchor7;
+pos = (482,835);
+},
+{
+name = Anchor9;
+pos = (390,-246);
+}
+);
 layerId = "0A5D7F3A-D11E-4113-AD15-39410F1DC5C2";
 shapes = (
 {
@@ -64290,7 +64381,7 @@ pos = (190,-157);
 },
 {
 name = entry;
-pos = (343,208);
+pos = (351,238);
 }
 );
 layerId = "67C28EBA-5AA6-4F74-BBA1-5BB358529C60";
@@ -64323,6 +64414,9 @@ nodes = (
 (336,156,o),
 (292,103,o),
 (216,50,c),
+(147,9,o),
+(78,-33,o),
+(9,-74,c),
 (18,-99,l)
 );
 }
@@ -64353,7 +64447,7 @@ pos = (129,-200);
 },
 {
 name = entry;
-pos = (304,218);
+pos = (304,248);
 }
 );
 layerId = "0A5D7F3A-D11E-4113-AD15-39410F1DC5C2";
@@ -64383,8 +64477,11 @@ nodes = (
 (252,191,o),
 (266,196,o),
 (293,207,c),
-(285,130,o),
-(104,5,o),
+(289,171,o),
+(249,125,o),
+(198,81,cs),
+(138,30,o),
+(65,-19,o),
 (20,-46,c),
 (24,-68,l)
 );
@@ -103118,6 +103215,7 @@ pos = (1060,274);
 },
 {
 name = exit;
+pos = (18,10);
 }
 );
 layerId = "67C28EBA-5AA6-4F74-BBA1-5BB358529C60";
@@ -103223,6 +103321,7 @@ pos = (897,252);
 },
 {
 name = exit;
+pos = (15,25);
 }
 );
 layerId = "0A5D7F3A-D11E-4113-AD15-39410F1DC5C2";
@@ -147434,7 +147533,72 @@ pos = (283,-577);
 layerId = "67C28EBA-5AA6-4F74-BBA1-5BB358529C60";
 shapes = (
 {
-ref = YehKashmiri;
+closed = 1;
+nodes = (
+(329,-377,o),
+(399,-350,o),
+(465,-297,cs),
+(610,-181,o),
+(698,54,o),
+(698,167,cs),
+(698,210,o),
+(690,239,o),
+(674,252,cs),
+(658,265,o),
+(633,276,o),
+(599,285,cs),
+(565,294,o),
+(548,312,o),
+(548,340,cs),
+(548,369,o),
+(570,400,o),
+(614,431,cs),
+(657,462,o),
+(696,478,o),
+(730,478,cs),
+(742,478,o),
+(757,474,o),
+(761,472,c),
+(774,474,l),
+(840,630,ls),
+(845,641,o),
+(846,648,o),
+(846,654,cs),
+(846,664,o),
+(840,672,o),
+(830,677,cs),
+(822,680,o),
+(811,682,o),
+(797,682,cs),
+(751,682,o),
+(699,647,o),
+(648,594,cs),
+(544,485,o),
+(450,298,o),
+(450,185,cs),
+(450,152,o),
+(458,125,o),
+(475,105,cs),
+(492,85,o),
+(517,70,o),
+(554,61,cs),
+(591,52,o),
+(609,38,o),
+(609,20,cs),
+(609,-18,o),
+(568,-65,o),
+(477,-110,cs),
+(385,-155,o),
+(242,-199,o),
+(38,-231,c),
+(30,-250,l),
+(37,-273,o),
+(63,-300,o),
+(108,-331,cs),
+(153,-362,o),
+(201,-377,o),
+(254,-377,cs)
+);
 }
 );
 width = 878;
@@ -147516,7 +147680,72 @@ nodes = (
 layerId = "0A5D7F3A-D11E-4113-AD15-39410F1DC5C2";
 shapes = (
 {
-ref = YehKashmiri;
+closed = 1;
+nodes = (
+(292,-341,o),
+(357,-316,o),
+(417,-268,cs),
+(547,-164,o),
+(627,58,o),
+(627,169,cs),
+(627,192,o),
+(622,209,o),
+(610,222,cs),
+(601,231,o),
+(587,239,o),
+(569,246,cs),
+(523,264,o),
+(500,286,o),
+(500,315,cs),
+(500,345,o),
+(521,380,o),
+(561,420,cs),
+(602,461,o),
+(638,480,o),
+(670,480,cs),
+(685,480,o),
+(695,478,o),
+(701,472,c),
+(710,474,l),
+(758,584,l),
+(762,592,o),
+(764,599,o),
+(764,604,cs),
+(764,616,o),
+(759,624,o),
+(749,627,cs),
+(738,630,o),
+(728,632,o),
+(719,632,cs),
+(680,632,o),
+(638,607,o),
+(593,557,cs),
+(495,449,o),
+(416,257,o),
+(416,193,cs),
+(416,170,o),
+(423,151,o),
+(437,135,cs),
+(448,122,o),
+(465,112,o),
+(486,105,cs),
+(534,89,o),
+(557,67,o),
+(557,42,cs),
+(557,-1,o),
+(520,-49,o),
+(445,-103,cs),
+(371,-157,o),
+(240,-199,o),
+(53,-230,c),
+(41,-257,l),
+(46,-275,o),
+(70,-296,o),
+(104,-313,cs),
+(137,-329,o),
+(179,-341,o),
+(220,-341,cs)
+);
 }
 );
 width = 806;
@@ -181797,7 +182026,100 @@ pos = (350,-370);
 layerId = "0A5D7F3A-D11E-4113-AD15-39410F1DC5C2";
 shapes = (
 {
-ref = uni08AC;
+closed = 1;
+nodes = (
+(52,-30,o),
+(75,-8,o),
+(122,-8,cs),
+(171,-8,o),
+(228,-25,o),
+(283,-12,cs),
+(317,-4,o),
+(350,11,o),
+(373,28,c),
+(385,28,ls),
+(444,28,o),
+(517,33,o),
+(573,60,cs),
+(623,84,o),
+(662,132,o),
+(680,164,c),
+(671,180,l),
+(619,142,o),
+(547,123,o),
+(465,123,cs),
+(461,123,l),
+(485,162,o),
+(497,205,o),
+(497,250,cs),
+(497,310,o),
+(463,366,o),
+(397,366,cs),
+(296,366,o),
+(238,235,o),
+(238,156,cs),
+(238,143,o),
+(240,130,o),
+(243,119,c),
+(231,120,o),
+(218,121,o),
+(193,121,cs),
+(130,121,o),
+(53,103,o),
+(0,-76,c),
+(21,-86,l)
+);
+},
+{
+closed = 1;
+nodes = (
+(332,123,o),
+(289,147,o),
+(289,195,cs),
+(289,235,o),
+(334,262,o),
+(371,262,cs),
+(418,262,o),
+(440,220,o),
+(440,191,cs),
+(440,168,o),
+(422,145,o),
+(384,123,c)
+);
+},
+{
+closed = 1;
+nodes = (
+(406,-91,o),
+(371,-129,o),
+(347,-158,c),
+(335,-140,o),
+(312,-123,o),
+(279,-103,c),
+(270,-103,l),
+(254,-112,o),
+(200,-173,o),
+(183,-198,c),
+(183,-207,l),
+(209,-228,o),
+(237,-253,o),
+(266,-282,c),
+(275,-282,l),
+(317,-252,o),
+(343,-226,o),
+(352,-205,c),
+(372,-221,o),
+(393,-240,o),
+(416,-263,c),
+(425,-263,l),
+(478,-225,o),
+(505,-193,o),
+(505,-168,cs),
+(505,-141,o),
+(479,-117,o),
+(426,-84,c),
+(418,-84,l)
+);
 }
 );
 width = 728;
@@ -181816,7 +182138,100 @@ pos = (430,-400);
 layerId = "67C28EBA-5AA6-4F74-BBA1-5BB358529C60";
 shapes = (
 {
-ref = uni08AC;
+closed = 1;
+nodes = (
+(58,-27,o),
+(89,2,o),
+(150,2,cs),
+(215,2,o),
+(290,-21,o),
+(362,-4,cs),
+(407,7,o),
+(451,27,o),
+(481,49,c),
+(491,49,ls),
+(567,49,o),
+(662,61,o),
+(734,96,cs),
+(798,127,o),
+(839,186,o),
+(862,227,c),
+(846,247,l),
+(780,197,o),
+(650,185,o),
+(595,185,cs),
+(589,185,l),
+(617,235,o),
+(637,282,o),
+(637,360,cs),
+(637,431,o),
+(595,511,o),
+(505,511,cs),
+(387,511,o),
+(302,356,o),
+(302,236,cs),
+(302,211,o),
+(306,189,o),
+(314,168,c),
+(286,170,o),
+(279,171,o),
+(244,171,cs),
+(161,171,o),
+(60,147,o),
+(-10,-88,c),
+(18,-101,l)
+);
+},
+{
+closed = 1;
+nodes = (
+(414,193,o),
+(367,223,o),
+(367,282,cs),
+(367,334,o),
+(423,375,o),
+(475,375,cs),
+(523,375,o),
+(565,337,o),
+(565,284,cs),
+(565,239,o),
+(532,208,o),
+(486,183,c)
+);
+},
+{
+closed = 1;
+nodes = (
+(497,-83,o),
+(467,-114,o),
+(439,-147,c),
+(426,-132,o),
+(405,-115,o),
+(371,-93,c),
+(361,-93,l),
+(344,-104,o),
+(283,-171,o),
+(265,-199,c),
+(265,-209,l),
+(294,-230,o),
+(303,-238,o),
+(357,-290,c),
+(365,-290,l),
+(402,-265,o),
+(430,-240,o),
+(445,-217,c),
+(461,-230,o),
+(477,-245,o),
+(505,-272,c),
+(513,-272,l),
+(559,-240,o),
+(605,-200,o),
+(605,-167,cs),
+(605,-135,o),
+(574,-110,o),
+(519,-75,c),
+(509,-75,l)
+);
 }
 );
 width = 920;
@@ -199999,6 +200414,20 @@ width = 600;
 unicode = 1692;
 },
 {
+glyphname = uni06A0;
+layers = (
+{
+layerId = "0A5D7F3A-D11E-4113-AD15-39410F1DC5C2";
+width = 600;
+},
+{
+layerId = "67C28EBA-5AA6-4F74-BBA1-5BB358529C60";
+width = 600;
+}
+);
+unicode = 1696;
+},
+{
 glyphname = uni06A7;
 layers = (
 {
@@ -200039,6 +200468,218 @@ width = 600;
 }
 );
 unicode = 1725;
+},
+{
+glyphname = uni06CF;
+layers = (
+{
+layerId = "0A5D7F3A-D11E-4113-AD15-39410F1DC5C2";
+width = 600;
+},
+{
+layerId = "67C28EBA-5AA6-4F74-BBA1-5BB358529C60";
+width = 600;
+}
+);
+unicode = 1743;
+},
+{
+category = Mark;
+glyphname = TahDotEnclNS;
+layers = (
+{
+anchors = (
+{
+name = Anchor31;
+pos = (0,641);
+},
+{
+name = _Anchor17;
+pos = (0,226);
+},
+{
+name = _Anchor31;
+pos = (-4,136);
+}
+);
+layerId = "67C28EBA-5AA6-4F74-BBA1-5BB358529C60";
+shapes = (
+{
+closed = 1;
+nodes = (
+(42,359,o),
+(115,408,o),
+(115,475,cs),
+(115,488,o),
+(110,497,o),
+(100,501,cs),
+(90,505,o),
+(80,507,o),
+(71,507,cs),
+(46,507,o),
+(9,492,o),
+(-14,461,c),
+(-7,486,o),
+(-2,517,o),
+(1,554,cs),
+(4,590,o),
+(7,615,o),
+(12,629,c),
+(-3,632,l),
+(-25,595,o),
+(-36,563,o),
+(-37,534,cs),
+(-38,505,o),
+(-40,479,o),
+(-41,457,cs),
+(-42,435,o),
+(-53,413,o),
+(-73,393,c),
+(-75,391,l),
+(-88,387,o),
+(-119,384,o),
+(-129,382,c),
+(-130,364,l),
+(-106,360,o),
+(-76,359,o),
+(-49,359,cs)
+);
+},
+{
+closed = 1;
+nodes = (
+(1,123,l),
+(47,155,o),
+(93,195,o),
+(93,228,cs),
+(93,260,o),
+(62,285,o),
+(7,320,c),
+(-3,320,l),
+(-20,309,o),
+(-81,242,o),
+(-99,214,c),
+(-99,204,l),
+(-70,183,o),
+(-61,175,o),
+(-7,123,c)
+);
+},
+{
+closed = 1;
+nodes = (
+(-14,433,o),
+(22,460,o),
+(54,460,cs),
+(71,460,o),
+(79,453,o),
+(79,444,cs),
+(79,428,o),
+(19,408,o),
+(-36,398,c)
+);
+}
+);
+width = 0;
+},
+{
+anchors = (
+{
+name = Anchor31;
+pos = (0,633);
+},
+{
+name = _Anchor17;
+pos = (0,217);
+},
+{
+name = _Anchor31;
+pos = (-5,128);
+}
+);
+layerId = "0A5D7F3A-D11E-4113-AD15-39410F1DC5C2";
+shapes = (
+{
+closed = 1;
+nodes = (
+(-13,347,o),
+(10,351,o),
+(31,357,cs),
+(76,371,o),
+(116,419,o),
+(116,451,cs),
+(116,461,o),
+(103,472,o),
+(81,472,cs),
+(42,472,o),
+(14,448,o),
+(-4,433,c),
+(2,449,o),
+(6,465,o),
+(7,483,cs),
+(11,533,o),
+(16,570,o),
+(21,582,c),
+(7,584,l),
+(-2,571,o),
+(-10,559,o),
+(-15,549,cs),
+(-25,528,o),
+(-24,523,o),
+(-28,457,cs),
+(-30,428,o),
+(-33,412,o),
+(-37,402,c),
+(-68,372,l),
+(-93,371,o),
+(-112,370,o),
+(-124,370,c),
+(-125,352,l),
+(-102,349,o),
+(-72,347,o),
+(-37,347,cs)
+);
+},
+{
+closed = 1;
+nodes = (
+(4,128,l),
+(60,168,o),
+(87,200,o),
+(87,223,cs),
+(87,246,o),
+(70,269,o),
+(9,308,c),
+(0,308,l),
+(-17,297,o),
+(-70,238,o),
+(-87,212,c),
+(-87,203,l),
+(-60,182,o),
+(-32,157,o),
+(-4,128,c)
+);
+},
+{
+closed = 1;
+nodes = (
+(14,423,o),
+(31,433,o),
+(55,433,cs),
+(64,433,o),
+(78,430,o),
+(78,420,cs),
+(78,399,o),
+(-17,381,o),
+(-30,379,c)
+);
+}
+);
+width = 0;
+}
+);
+note = TahDotAboveNS;
+subCategory = Nonspacing;
 },
 {
 glyphname = SmallMeem;
@@ -203647,5 +204288,5 @@ O,
 };
 };
 versionMajor = 3;
-versionMinor = 2;
+versionMinor = 3;
 }

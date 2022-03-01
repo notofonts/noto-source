@@ -13,10 +13,28 @@
             "note": "googlefonts/noto-fonts#1588"
         },
         {
-            "expectation": "SeenFin=4+1040|SeenMed.SWinBoutT2=3@0,455+129|SeenMed.inT2outD1=2@0,488+897|SeenMed.SWinDoutT2=1@0,740+183|sp0=0+0|HehDoIni.outD1=0@0,747+980",
+            "expectation": "SeenFin=4+1040|SeenMed.SWinBoutT2=3@0,455+129|SeenMed.inT2outD1=2@-15,463+882|SeenMed.SWinDoutT2=1@0,715+183|sp0=0+0|HehDoIni.outD1=0@0,722+980",
             "input": "ھسسسس",
             "only": "NotoNastaliqUrdu-Regular.ttf",
             "note": "googlefonts/noto-fonts#1786"
+        },
+        {
+            "expectation": "SeenFin=3+1040|SeenMed.SWinBoutT2=2@0,455+129|SeenMed.inT2outD1=1@-15,463+882|sp0=0+0|SeenIni.SWoutT2=0@0,715+725",
+            "input": "سسسس",
+            "only": "NotoNastaliqUrdu-Regular.ttf",
+            "note": "More swash seen expectations"
+        },
+        {
+            "input": "سسس",
+            "only": "NotoNastaliqUrdu-Regular.ttf",
+            "expectation": "SeenFin=2+1040|SeenMed.inT2outT2=1@0,455+569|sp0=0+0|SeenIni.SWoutT2=0@0,671+725",
+            "note": "More swash seen expectations"
+        },
+        {
+            "input": "سسسسس",
+            "only": "NotoNastaliqUrdu-Regular.ttf",
+            "expectation": "SeenFin=4+1040|SeenMed.inT2outT2=3@0,455+569|SeenMed.SWinBoutT2=2@0,671+129|SeenMed.inT2outD1=1@-15,679+882|sp0=0+0|SeenIni.SWoutT2=0@0,931+725",
+            "note": "More swash seen expectations"
         },
         {
             "expectation": "HamzaBelowAF_NS=4@153,-92+0|DalFin=4+362|SukunJazmNS=2@147,-192+0|OneDotAboveNS=2@147,-406+0|sp0=2+0|BehxIni.A=2+236|FathaNS=0@216,-327+0|WawSep=0+422",
@@ -66,6 +84,48 @@
             "input": "ݪلَۃ",
             "only": "NotoNastaliqUrdu-Regular.ttf",
             "note": "googlefonts/noto-fonts#1588"
+        },
+        {
+            "expectation": "TahDotEnclNS=2@396,-2+0|NoonxFin=2+749|TahDotAboveAltNS=1@63,-51+0|BehxMed.inT1outT2N=1@0,335+217|TahDotAboveAltNS=0@178,-179+0|sp0=0+0|BehxIni=0@0,304+236",
+            "input": "ݨݨݨ",
+            "only": "NotoNastaliqUrdu-Regular.ttf",
+            "note": "googlefonts/noto-fonts#2238"
+        },
+        {
+            "expectation": "Small2AboveNS=2@118,-97+0|TwoDotsBelowYB=2@764,-183+0|YBc1=2@764,-282+0|YehBarreeFin_3=2+355|TwoDotsBelowNS=1@20,-120+0|Small2AboveNS=1@-16,204+0|BehxMed.inT2outD2YB=1@0,349+182|NullMk=0+0|Small2AboveAltNS=0@206,378+0|sp10=0+0|BehxIni.outT2=0@0,406+766",
+            "input": "ݺݺݺ",
+            "only": "NotoNastaliqUrdu-Regular.ttf",
+            "note": "googlefonts/noto-fonts#2240"
+        },
+        {
+            "expectation": "Small3AboveNS=2@118,-97+0|TwoDotsBelowYB=2@764,-183+0|YBc1=2@764,-282+0|YehBarreeFin_3=2+355|TwoDotsBelowNS=1@20,-120+0|Small3AboveNS=1@-16,204+0|BehxMed.inT2outD2YB=1@0,349+182|NullMk=0+0|Small3AboveAltNS=0@206,378+0|sp10=0+0|BehxIni.outT2=0@0,406+766",
+            "input": "ݻݻݻ",
+            "only": "NotoNastaliqUrdu-Regular.ttf",
+            "note": "googlefonts/noto-fonts#2240"
+        },
+        {
+            "expectation": "OneDotAboveNS=1@191,-289+0|WawFin.cut=1+273|ThreeDotsUpAboveNS=0@317,123+0|AinIni.outT3WQ=0@0,205+589",
+            "input": "ڠۏ",
+            "only": "NotoNastaliqUrdu-Regular.ttf",
+            "note": "googlefonts/noto-fonts#2244"
+        },
+        {
+            "expectation": "uni25CC=0+789|ShaddaNS=0@-339,-97+0|KasraNS=0@-399,-164+0",
+            "input": "◌ِّ",
+            "only": "NotoNastaliqUrdu-Regular.ttf",
+            "note": "googlefonts/noto-fonts#2248"
+        },
+        {
+            "expectation": "ThreeDotsUpAboveNS=4@412,-209+0|NoonxFin=4+749|ThreeDotsDownBelowAltNS=3@-7,-167+0|BehxMed.inT1outT2N=3@0,335+217|ThreeDotsDownBelowNS=2@73,138+0|sp0=2+0|BehxIni=2@0,304+236|space=1+132|ThreeDotsUpAboveNS=0@413,-209+0|NoonxSep=0+861",
+            "input": "ڽ ڽڽڽ",
+            "only": "NotoNastaliqUrdu-Regular.ttf",
+            "note": "googlefonts/noto-fonts#2249"
+        },
+        {
+            "expectation": "YBc1=22@764,-282+0|YehBarreeFin_3=22+355|SeenMed.inT2outD2YB=21@0,419+454|ybPre=20+0|sp0=20+0|SeenIni.SWoutT2=20@0,483+725|space=19+132|YehxFin=18+520|SeenMed.inT2outD2Y=17@0,379+569|sp0=16+0|SeenIni.SWoutT2=16@0,508+725|space=15+132|HehFin=14+230|SeenMed.inT2outS1=13@0,-34+562|sp0=12+0|SeenIni.SWoutT2=12@0,166+725|space=11+132|WawFin.cut=10+273|SeenMed.inT2outT3=9@0,205+575|sp0=8+0|SeenIni.SWoutT2=8@0,382+725|space=7+132|OneDotEnclNS=6@396,-2+0|NoonxFin=6+749|SeenMed.inT2outT2=5@0,335+569|sp0=4+0|SeenIni.SWoutT2=4@0,551+725|space=3+132|MeemFin=2+438|SeenMed.inT2outD2M=1@0,573+665|sp0=0+0|SeenIni.SWoutT2=0@0,805+725",
+            "input": "سسم سسن سسو سسہ سسی سسے",
+            "only": "NotoNastaliqUrdu-Regular.ttf",
+            "note": "googlefonts/noto-fonts#2249"
         },
         {
             "expectation": "ArEightAboveNS=2@518,53+0|AlefInferiorNS=2@296,-466+0|TwoDotsAboveNS=2@518,-198+0|QafxFin.cut=2+692|TwoDotsVertAboveNS=1@77,701+0|BehxMed.inT2outD2WQ=1@0,272+331|sp0=0+0|KafIni.outT2=0@0,433+302",
@@ -254,7 +314,7 @@
             "only": "NotoNastaliqUrdu-Regular.ttf"
         },
         {
-            "expectation": "GafFin=4+957|OneDotAboveNS=3@188,-228+0|AinMed.inT3outT1=3@0,64+261|NoonGhunnaMarkNS=1@423,519+0|ThreeDotsDownBelowNS=1@233,70+0|KafMed.outT3=1@0,159+329|OneDotBelowNS=0@324,194+0|sp0=0+0|HahIni=0@0,257+494",
+            "expectation": "GafFin=4+957|OneDotAboveNS=3@188,-228+0|AinMed.inT3outT1=3@0,64+261|NoonGhunnaMarkNS=1@421,522+0|ThreeDotsDownBelowNS=1@233,70+0|KafMed.outT3=1@0,159+329|OneDotBelowNS=0@324,194+0|sp0=0+0|HahIni=0@0,257+494",
             "input": "جؼ٘غگ",
             "note": "Added by SIESTA",
             "only": "NotoNastaliqUrdu-Regular.ttf"
@@ -452,7 +512,7 @@
             "only": "NotoNastaliqUrdu-Regular.ttf"
         },
         {
-            "expectation": "TwoArabic=3+567|TwoArabic=2+567|ArSevenAboveNS=1@191,-298+0|WawFin.inD2=1+304|ThreeDotsDownBelowNS=0@108,-203+0|sp0=0+0|BehxIni.outD2WQ=0@0,218+205",
+            "expectation": "TwoArabic=3+567|TwoArabic=2+567|ArSevenAboveNS=1@191,-298+0|WawFin.inD2=1+304|ThreeDotsDownBelowNS=0@108,-173+0|sp0=0+0|BehxIni.outD2WQ=0@0,248+205",
             "input": "پۆ٢٢",
             "note": "Added by SIESTA",
             "only": "NotoNastaliqUrdu-Regular.ttf"
@@ -608,7 +668,7 @@
             "only": "NotoNastaliqUrdu-Regular.ttf"
         },
         {
-            "expectation": "TwoDotsVertEnclNS=3@449,-19+0|HahSep=3+871|NoonGhunnaMarkNS=1@314,-331+0|RehSep=1+406|HamzaAboveNS=0+0",
+            "expectation": "TwoDotsVertEnclNS=3@449,-19+0|HahSep=3+871|NoonGhunnaMarkNS=1@312,-328+0|RehSep=1+406|HamzaAboveNS=0+0",
             "input": "ٔر٘ڄ",
             "note": "Added by SIESTA",
             "only": "NotoNastaliqUrdu-Regular.ttf"
@@ -752,7 +812,7 @@
             "only": "NotoNastaliqUrdu-Regular.ttf"
         },
         {
-            "expectation": "KafSep=3+1159|ThreeArabic=2+567|NoonGhunnaMarkNS=0@132,-305+0|RingNS=0@205,-540+0|DalSep=0+300",
+            "expectation": "KafSep=3+1159|ThreeArabic=2+567|NoonGhunnaMarkNS=0@130,-302+0|RingNS=0@205,-540+0|DalSep=0+300",
             "input": "ډ٘٣ک",
             "note": "Added by SIESTA",
             "only": "NotoNastaliqUrdu-Regular.ttf"
@@ -830,13 +890,13 @@
             "only": "NotoNastaliqUrdu-Regular.ttf"
         },
         {
-            "expectation": "WavyHamzaBelowNS=2@574,-79+0|NoonGhunnaMarkNS=2@611,-109+0|TwoDotsAboveNS=2@595,-319+0|BehxFin.soft=2+1184|TwoDotsAboveKNS=1@41,387+0|sp0=1+0|GafIni.outT2=1@0,299+302|FourArabic=0+565",
+            "expectation": "WavyHamzaBelowNS=2@574,-79+0|NoonGhunnaMarkNS=2@604,-133+0|TwoDotsAboveNS=2@595,-319+0|BehxFin.soft=2+1184|TwoDotsAboveKNS=1@41,387+0|sp0=1+0|GafIni.outT2=1@0,299+302|FourArabic=0+565",
             "input": "٤ڱتٟ٘",
             "note": "Added by SIESTA",
             "only": "NotoNastaliqUrdu-Regular.ttf"
         },
         {
-            "expectation": "NoonGhunnaMarkNS=1@410,-369+0|TwoDotsAboveKNS=1@735,132+0|GafFin=1+957|OneDotAboveAltNS=0@181,-115+0|sp0=0+0|FehxIni=0@0,64+312",
+            "expectation": "NoonGhunnaMarkNS=1@408,-366+0|TwoDotsAboveKNS=1@735,132+0|GafFin=1+957|OneDotAboveAltNS=0@181,-115+0|sp0=0+0|FehxIni=0@0,64+312",
             "input": "فڱ٘",
             "note": "Added by SIESTA",
             "only": "NotoNastaliqUrdu-Regular.ttf"
@@ -1244,7 +1304,7 @@
             "only": "NotoNastaliqUrdu-Regular.ttf"
         },
         {
-            "expectation": "ZeroArabic.small=7@1230,301+0|OneArabic.small=7@824,301+0|Safhah.alt2=7+2538|uni08F5_NS=0@16,800+0|NoonGhunnaMarkNS=0@16,619+0|Fatha2dotsNS=0@0,329+0|uni08E3_NS=0+0|TwoArabic.small=0@1294,337+0|eight.small=0@888,337+0|Sanah.alt2=0+2250",
+            "expectation": "ZeroArabic.small=7@1230,301+0|OneArabic.small=7@824,301+0|Safhah.alt2=7+2538|uni08F5_NS=0@11,735+0|NoonGhunnaMarkNS=0@9,595+0|Fatha2dotsNS=0@0,329+0|uni08E3_NS=0+0|TwoArabic.small=0@1294,337+0|eight.small=0@888,337+0|Sanah.alt2=0+2250",
             "input": "؁8٢ࣣٞ٘ࣵ؃١٠",
             "note": "Added by SIESTA",
             "only": "NotoNastaliqUrdu-Regular.ttf"
@@ -1316,7 +1376,7 @@
             "only": "NotoNastaliqUrdu-Regular.ttf"
         },
         {
-            "expectation": "ThreeArabic.small=9@1167,271+0|nine.small=9@761,271+0|NumberSign.alt2=9+1977|Small2AboveNS=8@144,-15+0|YehBarreeSep=8+1409|uni08F9_NS=3@0,-221+0|uni08EF_NS=3+0|FiveFarsi.small=3@1309,310+0|EightArabic.small=3@903,310+0|Footnote.alt2=3+2045|NineArabic.small=0@1230,301+0|OneArabic.small=0@824,301+0|Safhah.alt2=0+2538",
+            "expectation": "ThreeArabic.small=9@1167,271+0|nine.small=9@761,271+0|NumberSign.alt2=9+1977|uni077A=8+1409|uni08F9_NS=3@0,-221+0|uni08EF_NS=3+0|FiveFarsi.small=3@1309,310+0|EightArabic.small=3@903,310+0|Footnote.alt2=3+2045|NineArabic.small=0@1230,301+0|OneArabic.small=0@824,301+0|Safhah.alt2=0+2538",
             "input": "؃۱۹؂٨۵࣯ࣹݺ؀9٣",
             "note": "Added by SIESTA",
             "only": "NotoNastaliqUrdu-Regular.ttf"
@@ -1328,7 +1388,7 @@
             "only": "NotoNastaliqUrdu-Regular.ttf"
         },
         {
-            "expectation": "uni08E8_NS=0@267,1136+0|NoonGhunnaMarkNS=0@267,893+0|uni08E7_NS=0@251,583+0|RahmatullahNS=0@251,301+0|MaddaNS=0@211,18+0|AlefSep=0+330",
+            "expectation": "uni08E8_NS=0@262,1071+0|NoonGhunnaMarkNS=0@260,869+0|uni08E7_NS=0@251,583+0|RahmatullahNS=0@251,301+0|MaddaNS=0@211,18+0|AlefSep=0+330",
             "input": "آؒࣧ٘ࣨ",
             "note": "Added by SIESTA",
             "only": "NotoNastaliqUrdu-Regular.ttf"
@@ -1376,7 +1436,7 @@
             "only": "NotoNastaliqUrdu-Regular.ttf"
         },
         {
-            "expectation": "nine.small=9@1230,301+0|TwoArabic.small=9@824,301+0|Safhah.alt2=9+2538|uni08EB_NS=2@10,792+0|uni08EA_NS=2@5,542+0|uni08E7_NS=2@0,181+0|NoonGhunnaMarkNS=2+0|ThreeArabic.encl=2@1000,444+0|seven.encl=2@720,444+0|AyahEnd.alt2=2+1724|ShaddaNS=0@0,215+0|NoonGhunnaMarkNS=0+0",
+            "expectation": "nine.small=9@1230,301+0|TwoArabic.small=9@824,301+0|Safhah.alt2=9+2538|uni08EB_NS=2@12,751+0|uni08EA_NS=2@7,501+0|uni08E7_NS=2@2,140+0|NoonGhunnaMarkNS=2+0|ThreeArabic.encl=2@1000,444+0|seven.encl=2@720,444+0|AyahEnd.alt2=2+1724|ShaddaNS=0@2,174+0|NoonGhunnaMarkNS=0+0",
             "input": "ّ٘۝7۳٘ࣧ࣪࣫؃۲9",
             "note": "Added by SIESTA",
             "only": "NotoNastaliqUrdu-Regular.ttf"
