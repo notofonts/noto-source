@@ -7571,8 +7571,7 @@ name = "Toothless medial Seen selection";
 code = "lookup RefineStage2 {
     lookupflag IgnoreMarks;
     ;
-    sub [SeenIni.outT2 SeenMed.inT2outT2]' lookup PreToothless [SeenIni.outT2 SeenMed.inT2outT2]' lookup Toothless_B @SeenMeds @SeenMeds @SeenMeds;
-    sub [SeenIni.outT2 SeenMed.inT2outT2]' lookup Toothless_B [SeenIni.outT2 SeenMed.inT2outT2]' lookup PreToothless @SeenMeds @SeenMeds;
+    sub SeenIni.outT2' lookup Toothless_A @SeenMeds [@SeenMeds SeenFin];
     sub [SeenIni.outT2 SeenMed.inT2outT2]' lookup PreToothless [SeenIni.outT2 SeenMed.inT2outT2]' lookup Toothless_B [@SeenMeds SeenFin];
     sub SeenIni.outT2' lookup Toothless_A @SeenMeds;
     sub [BehxIni.outT2tall BehxMed.inT2outT2 GafIni.outT2 GafMed.outT2 KafIni.outT2 KafMed.outT2 LamIni.outT2 LamMed.outT2]' [SeenIni.outT2 SeenMed.inT2outT2]' lookup PreToothless [SeenIni.outT2 SeenMed.inT2outT2]' lookup Toothless_A @SeenMeds;
