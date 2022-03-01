@@ -1,6 +1,9 @@
 {
 .appVersion = "3109";
 .formatVersion = 3;
+DisplayStrings = (
+"/SeenMed.inT2outD1/SeenMed.SWinAoutT2"
+);
 axes = (
 {
 name = Weight;
@@ -7570,15 +7573,14 @@ code = "lookup RefineStage2 {
     ;
     sub [SeenIni.outT2 SeenMed.inT2outT2]' lookup PreToothless [SeenIni.outT2 SeenMed.inT2outT2]' lookup Toothless_B @SeenMeds @SeenMeds @SeenMeds;
     sub [SeenIni.outT2 SeenMed.inT2outT2]' lookup Toothless_B [SeenIni.outT2 SeenMed.inT2outT2]' lookup PreToothless @SeenMeds @SeenMeds;
-    sub [SeenIni.outT2 SeenMed.inT2outT2]' lookup PreToothless [SeenIni.outT2 SeenMed.inT2outT2]' lookup Toothless_B @SeenMeds;
-    sub [SeenIni.outT2 SeenMed.inT2outT2]' lookup Toothless_A @SeenMeds;
+    sub [SeenIni.outT2 SeenMed.inT2outT2]' lookup PreToothless [SeenIni.outT2 SeenMed.inT2outT2]' lookup Toothless_B [@SeenMeds SeenFin];
+    sub SeenIni.outT2' lookup Toothless_A @SeenMeds;
     sub [BehxIni.outT2tall BehxMed.inT2outT2 GafIni.outT2 GafMed.outT2 KafIni.outT2 KafMed.outT2 LamIni.outT2 LamMed.outT2]' [SeenIni.outT2 SeenMed.inT2outT2]' lookup PreToothless [SeenIni.outT2 SeenMed.inT2outT2]' lookup Toothless_A @SeenMeds;
     sub [BehxIni.outT2tall BehxMed.inT2outT2 GafIni.outT2 GafMed.outT2 KafIni.outT2 KafMed.outT2 LamIni.outT2 LamMed.outT2]' lookup PreToothless [SeenIni.outT2 SeenMed.inT2outT2]' lookup Toothless_A @SeenMeds;
     sub [SadIni.outT2 HahIni.outT2 AinIni.outT2 HahMed.inD2outT2 SadMed.inD1outT2]' [SeenIni.outT2 SeenMed.inT2outT2]' lookup PreToothless [SeenIni.outT2 SeenMed.inT2outT2]' lookup Toothless_B @SeenMeds;
     sub [SadIni.outT2 HahIni.outT2 AinIni.outT2 HahMed.inD2outT2 SadMed.inD1outT2]' lookup PreToothless [SeenIni.outT2 SeenMed.inT2outT2]' lookup Toothless_B @SeenMeds;
     sub [HehIni.outT2 MeemIni.outT2 HehMed.inD5outT2 MeemMed.inD2outT2]' [SeenIni.outT2 SeenMed.inT2outT2]' lookup PreToothless [SeenIni.outT2 SeenMed.inT2outT2]' lookup Toothless_C @SeenMeds;
     sub [HehIni.outT2 MeemIni.outT2 HehMed.inD5outT2 MeemMed.inD2outT2]' lookup PreToothless [SeenIni.outT2 SeenMed.inT2outT2]' lookup Toothless_C @SeenMeds;
-    sub [TahIni.outT2 HehDoIni.outT2 HehDoMed.inD2outT2 TahMed.inD1outT2]' [SeenIni.outT2 SeenMed.inT2outT2]' lookup PreToothless [SeenIni.outT2 SeenMed.inT2outT2]' lookup Toothless_D @SeenMeds;
     sub [TahIni.outT2 HehDoIni.outT2 HehDoMed.inD2outT2 TahMed.inD1outT2]' lookup PreToothless [SeenIni.outT2 SeenMed.inT2outT2]' lookup Toothless_D @SeenMeds;
     sub [FehxMed.inT3outT2 HehIniAF.outT2]' [SeenIni.outT2 SeenMed.inT2outT2]' lookup PreToothless [SeenIni.outT2 SeenMed.inT2outT2]' lookup Toothless_F @SeenMeds;
     sub [FehxMed.inT3outT2 HehIniAF.outT2]' lookup PreToothless [SeenIni.outT2 SeenMed.inT2outT2]' lookup Toothless_F @SeenMeds;
@@ -103217,6 +103219,7 @@ pos = (1060,274);
 },
 {
 name = exit;
+pos = (18,10);
 }
 );
 layerId = "67C28EBA-5AA6-4F74-BBA1-5BB358529C60";
@@ -103322,6 +103325,7 @@ pos = (897,252);
 },
 {
 name = exit;
+pos = (15,25);
 }
 );
 layerId = "0A5D7F3A-D11E-4113-AD15-39410F1DC5C2";
