@@ -31,6 +31,8 @@ cd $2
 #
 if ([ ! -d instance_ttf ]) then echo "$2/instance_ttf doesn't exist"; exit 1; fi
 ls instance_ttf/$1-*.*tf 1>/dev/null 2>&1 || exit 1
+cd $3
+git pull
 if ([ ! -d $3/unhinted/ttf/$1 ]) then mkdir $3/unhinted/ttf/$1 ; echo "directory $3/unhinted/ttf/$1 was created"; fi
 if ([ ! -d $3/hinted/ttf/$1 ]) then mkdir $3/hinted/ttf/$1 ; echo "directory $3/hinted/ttf/$1 was created"; fi
 # NotoSansTifinagh has font variants like NotoSansTifinaghTawellemmet, NotoSansTifinagh, or NotoSansTifinaghAgrawImazighen
@@ -57,8 +59,8 @@ for i in `ls -l hinted/ttf/$~FName-*.*tf | grep "  0 " | sed -e "s/^.*$1/$1/"` ;
 # move whatever files remain (assumed good at this point) to their final destination directory
 mv hinted/ttf/$~FName-*.*tf hinted/ttf/$1/
 ls -l hinted/ttf/$1/$~FName-*.*tf
-# add dsig to the hinted files
-for i in hinted/ttf/$1/$~FName-*.*tf ; do gftools fix-dsig --autofix $i; done
+### not needed # add dsig to the hinted files
+### not needed # for i in hinted/ttf/$1/$~FName-*.*tf ; do gftools fix-font $i; mv $i.fix $i; done
 cd $2
 #
 if ([ ! -d instance_otf ]) then echo "$2/instance_otf doesn't exist"; exit 1; fi
@@ -66,6 +68,7 @@ ls instance_otf/$~FName-*.*tf 1>/dev/null 2>&1 || exit 1
 if ([ ! -d $3/unhinted/otf/$1 ]) then mkdir $3/unhinted/otf/$1 ; echo "directory $3/unhinted/otf/$1 was created"; fi
 cp instance_otf/$~FName-*.*tf $3/unhinted/otf/$1/
 cd $3
+git pull
 git add unhinted/ttf/$1/$~FName-*.*tf
 git add unhinted/otf/$1/$~FName-*.*tf
 git add hinted/ttf/$1/$~FName-*.*tf
@@ -84,6 +87,7 @@ if ([ ! -d $3/unhinted/slim-variable-ttf/ ]) then echo "$3/unhinted/slim-variabl
 cp variable_ttf/slim/$~FName-*.*tf $3/unhinted/slim-variable-ttf/
 #
 cd $3
+git pull
 git add unhinted/variable-ttf/$~FName-*.*tf
 git add unhinted/slim-variable-ttf/$~FName-*.*tf
 git commit -m "Published $1 unhinted variable and slim-variable fonts"
