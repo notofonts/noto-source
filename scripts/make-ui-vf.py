@@ -18,6 +18,67 @@ def transform(ttfont, x, y):
         transformed = pen.glyph()
         ttfont['glyf'].glyphs[glyphname] = transformed
 
+def reencode(ttfont, glyph, cp):
+    print("Reencoding %x to %s" % (cp, glyph))
+    for subtable in ttfont["cmap"].tables:
+        subtable.cmap[cp] = glyph
+
+def grovel_substitutions(font, lookup, glyphmap):
+    if lookup.LookupType == 7:
+        raise NotImplementedError
+    gmap = lambda g: glyphmap.get(g,g)
+    go = font.getGlyphOrder()
+
+    def do_coverage(c):
+        c.glyphs = list(sorted([gmap(g) for g in c.glyphs], key=lambda g:go.index(g)))
+        return c
+
+    for st in lookup.SubTable:
+        if lookup.LookupType == 1:
+            newmap = {}
+            for inglyph, outglyph in st.mapping.items():
+                newmap[gmap(inglyph)] = gmap(outglyph)
+        elif lookup.LookupType == 2:
+            newmap = {}
+            for inglyph, outglyphs in st.mapping.items():
+                newmap[gmap(inglyph)] = [gmap(g) for g in outglyphs]
+            st.mapping = newmap
+        elif lookup.LookupType == 4:
+            newligatures = {}
+            for outglyph, inglyphs in st.ligatures.items():
+                for ig in inglyphs:
+                    ig.LigGlyph = gmap(ig.LigGlyph)
+                    ig.Component = [gmap(c) for c in ig.Component]
+                newligatures[gmap(outglyph)] = inglyphs
+        elif lookup.LookupType == 5:
+            if st.Format == 1:
+                do_coverage(st.Coverage)
+                for srs in st.SubRuleSet:
+                    for subrule in srs.SubRule:
+                        subrule.Input = [gmap(c) for c in subrule.Input]
+            elif st.Format == 2:
+                do_coverage(st.Coverage)
+                st.ClassDef.classDefs = {gmap(k):v for k,v in st.ClassDef.classDefs.items()}
+            else:
+                st.Coverage = [do_coverage(c) for c in st.Coverage]
+        elif lookup.LookupType == 6:
+            if st.Format == 1:
+                do_coverage(st.Coverage)
+                for srs in st.ChainSubRuleSet:
+                    for subrule in srs.ChainSubRule:
+                        subrule.Backtrack = [gmap(c) for c in subrule.Backtrack]
+                        subrule.Input = [gmap(c) for c in subrule.Input]
+                        subrule.LookAhead = [gmap(c) for c in subrule.LookAhead]
+            elif st.Format == 2:
+                do_coverage(st.Coverage)
+                st.BacktrackClassDef.classDefs = {gmap(k):v for k,v in st.BacktrackClassDef.classDefs.items()}
+                st.InputClassDef.classDefs = {gmap(k):v for k,v in st.InputClassDef.classDefs.items()}
+                st.LookAheadClassDef.classDefs = {gmap(k):v for k,v in st.LookAheadClassDef.classDefs.items()}
+            elif st.Format == 3:
+                st.BacktrackCoverage = [ do_coverage(c) for c in st.BacktrackCoverage]
+                st.InputCoverage = [ do_coverage(c) for c in st.InputCoverage]
+                st.LookAheadCoverage = [ do_coverage(c) for c in st.LookAheadCoverage]
+
 # Parse command line arguments
 parser = argparse.ArgumentParser(description='Generate a UI font from existing binary and Glyphs file')
 parser.add_argument('--output', '-o', help='Output font file')
@@ -80,5 +141,16 @@ if "Filter" in cp:
     if offset_x or offset_y:
         print("Transforming glyphs by %d, %d" % (offset_x, offset_y))
         transform(ttfont, offset_x, offset_y)
+
+if "Reencode Glyphs" in cp:
+    for parm in cp["Reencode Glyphs"]:
+        glyph, codepoint = parm.split("=")
+        reencode(ttfont, glyph, int(codepoint, 16))
+
+# Mash the GSUB table
+uis = [ x for x in ttfont.getGlyphOrder() if "UI" in x and x.replace("UI", "") in ttfont.getGlyphOrder() ]
+for lookup in ttfont["GSUB"].table.LookupList.Lookup:
+    grovel_substitutions(ttfont, lookup, { g.replace("UI", ""): g for g in uis})
+
 
 ttfont.save(args.output)
