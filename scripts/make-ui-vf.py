@@ -38,6 +38,7 @@ def grovel_substitutions(font, lookup, glyphmap):
             newmap = {}
             for inglyph, outglyph in st.mapping.items():
                 newmap[gmap(inglyph)] = gmap(outglyph)
+            st.mapping = newmap
         elif lookup.LookupType == 2:
             newmap = {}
             for inglyph, outglyphs in st.mapping.items():
@@ -149,8 +150,9 @@ if "Reencode Glyphs" in cp:
 
 # Mash the GSUB table
 uis = [ x for x in ttfont.getGlyphOrder() if "UI" in x and x.replace("UI", "") in ttfont.getGlyphOrder() ]
+glyphmap =  { g.replace("UI", ""): g for g in uis}
+print("Glyph map:")
+print(glyphmap)
 for lookup in ttfont["GSUB"].table.LookupList.Lookup:
-    grovel_substitutions(ttfont, lookup, { g.replace("UI", ""): g for g in uis})
-
-
+    grovel_substitutions(ttfont, lookup, glyphmap)
 ttfont.save(args.output)
