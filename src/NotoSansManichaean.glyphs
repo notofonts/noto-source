@@ -1,6 +1,6 @@
 {
-.appVersion = "1357";
-copyright = "Copyright 2018-2021 Google Inc. All Rights Reserved.";
+.appVersion = "3109";
+copyright = "Copyright 2018-2022 Google Inc. All Rights Reserved.";
 customParameters = (
 {
 name = glyphOrder;
@@ -235,7 +235,7 @@ name = Languagesystems;
 );
 features = (
 {
-code = "\012sub u10ADD u10ACF by u10ADD10ACF;\012sub u10ADD u10AD7 by u10ADD10AD7;\012\012sub u10AC5 uniFE00 by u10AC5.alt;\012sub u10AC6 uniFE00 by u10AC6.alt;\012sub u10AD6 uniFE00 by u10AD6.alt;\012sub u10AD7 uniFE00 by u10AD7.alt;\012sub u10AE1 uniFE00 by u10AE1.alt;";
+code = "\012sub u10AC5 uniFE00 by u10AC5.alt;\012sub u10AC6 uniFE00 by u10AC6.alt;\012sub u10AD6 uniFE00 by u10AD6.alt;\012sub u10AD7 uniFE00 by u10AD7.alt;\012sub u10AE1 uniFE00 by u10AE1.alt;\012";
 name = ccmp;
 },
 {
@@ -251,7 +251,7 @@ code = "# Because of alt, we can't do this automatically\012sub u10AD6.alt by u1
 name = medi;
 },
 {
-code = "sub [u10AED.medi u10AED.init u10AEB.medi.high u10AEC.medi.high] [u10AEB.fina u10AEB.medi u10AEC.fina u10AEC.medi]' lookup SingleSubstitution7;";
+code = "sub [u10AED.medi u10AED.init u10AEB.medi.high u10AEC.medi.high] [u10AEB.fina u10AEB.medi u10AEC.fina u10AEC.medi]' lookup SingleSubstitution7;\012\012sub u10ADD u10ACF by u10ADD10ACF;\012sub u10ADD u10AD7 by u10ADD10AD7;";
 name = rclt;
 },
 {
@@ -11890,5 +11890,5 @@ manufacturer = "Monotype Imaging Inc.";
 manufacturerURL = "http://www.google.com/get/noto/";
 unitsPerEm = 1000;
 versionMajor = 2;
-versionMinor = 2;
+versionMinor = 3;
 }
