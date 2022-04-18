@@ -1,8 +1,7 @@
 {
 .appVersion = "3072";
 DisplayStrings = (
-"/uniA860.ini.cnt/uniA860.mir.ini.cnt/uniA861.med/uniA860.mir.ini",
-"/uniA868.ini.cnt/uniA85F.ini/uniA85F.mir.ini/uniA868.mir.ini.cnt/uniA868.mir"
+"/uniA860.ini.cnt/uniA860.mir.ini.cnt/uniA861.med/uniA860.mir.ini"
 );
 classes = (
 {
@@ -512,16 +511,16 @@ code = "sub @inis' [uniA861.med uniA861.fin] by @inis.cnt;\012sub [uniA861.med u
 name = calt;
 },
 {
-code = "sub [uniA869 uniA86A uniA86B uniA86C @mirrorable.mir] @mirrorable' by @mirrorable.mir;\012\012lookup mirror {\012    sub uniA85E uniFE00 by uniA85E.mir;\012    sub uniA85C uniFE00 by uniA85C.mir;\012    sub uniA856 uniFE00 by uniA856.mir;\012    sub uniA860 uniFE00 by uniA860.mir;\012    sub uniA85F uniFE00 by uniA85F.mir;\012    sub uniA868 uniFE00 by uniA868.mir;\012\012    sub uniA856.mir uniFE00 by uniA856;\012    sub uniA85C.mir uniFE00 by uniA85C;\012    sub uniA85E.mir uniFE00 by uniA85E;\012    sub uniA85F.mir uniFE00 by uniA85F;\012    sub uniA860.mir uniFE00 by uniA860;\012    sub uniA868.mir uniFE00 by uniA868;\012} mirror;\012";
+code = "\012sub [uniA869 uniA86A uniA86B uniA86C @mirrorable.mir] @mirrorable' by @mirrorable.mir;\012\012lookup mirror {\012    sub uniA85E uniFE00 by uniA85E.mir;\012    sub uniA85C uniFE00 by uniA85C.mir;\012    sub uniA856 uniFE00 by uniA856.mir;\012    sub uniA860 uniFE00 by uniA860.mir;\012    sub uniA85F uniFE00 by uniA85F.mir;\012    sub uniA868 uniFE00 by uniA868.mir;\012\012    sub uniA856.mir uniFE00 by uniA856;\012    sub uniA85C.mir uniFE00 by uniA85C;\012    sub uniA85E.mir uniFE00 by uniA85E;\012    sub uniA85F.mir uniFE00 by uniA85F;\012    sub uniA860.mir uniFE00 by uniA860;\012    sub uniA868.mir uniFE00 by uniA868;\012} mirror;\012\012lookup reverse_mirror {\012	sub @mirrorable' @mirrorable.mir by @mirrorable.mir;\012} reverse_mirror;";
 name = ltrm;
+},
+{
+code = "sub uniA86A' @mirrorable by uniA86A.ini.unmir;\012\012    sub uniA85E by uniA85E.ini;\012    sub uniA849 by uniA849.ini;\012    sub uniA84B by uniA84B.ini;\012    sub uniA85B by uniA85B.ini;\012    sub uniA843 by uniA843.ini;\012    sub uniA857 by uniA857.ini;\012    sub uniA85C by uniA85C.ini;\012    sub uniA84F by uniA84F.ini;\012    sub uniA85A by uniA85A.ini;\012    sub uniA855 by uniA855.ini;\012    sub uniA844 by uniA844.ini;\012    sub uniA866 by uniA866.ini;\012    sub uniA856 by uniA856.ini;\012    sub uniA859 by uniA859.ini;\012    sub uniA860 by uniA860.ini;\012    sub uniA861 by uniA861.ini;\012    sub uniA85F by uniA85F.ini;\012    sub uniA840 by uniA840.ini;\012    sub uniA848 by uniA848.ini;\012    sub uniA862 by uniA862.ini;\012    sub uniA84A by uniA84A.ini;\012    sub uniA84C by uniA84C.ini;\012    sub uniA858 by uniA858.ini;\012    sub uniA846 by uniA846.ini;\012    sub uniA84D by uniA84D.ini;\012    sub uniA853 by uniA853.ini;\012    sub uniA842 by uniA842.ini;\012    sub uniA841 by uniA841.ini;\012    sub uniA852 by uniA852.ini;\012    sub uniA854 by uniA854.ini;\012    sub uniA850 by uniA850.ini;\012    sub uniA845 by uniA845.ini;\012    sub uniA867 by uniA867.ini;\012    sub uniA864 by uniA864.ini;\012    sub uniA869 by uniA869.ini;\012    sub uniA865 by uniA865.ini;\012    sub uniA86A by uniA86A.ini;\012    sub uniA863 by uniA863.ini;\012    sub uniA86B by uniA86B.ini;\012    sub uniA86C by uniA86C.ini;\012    sub uniA86F by uniA86F.ini;\012    sub uniA870 by uniA870.ini;\012    sub uniA871 by uniA871.ini;\012    sub uniA872 by uniA872.ini;\012    sub uniA86E by uniA86E.ini;\012    sub uniA868 by uniA868.ini;\012    sub uniA84E by uniA84E.ini;\012    sub uniA86D by uniA86D.ini;\012    sub uniA851 by uniA851.ini;\012    sub uniA847 by uniA847.ini;\012    sub uniA856.mir by uniA856.mir.ini;\012    sub uniA85C.mir by uniA85C.mir.ini;\012    sub uniA85E.mir by uniA85E.mir.ini;\012    sub uniA85F.mir by uniA85F.mir.ini;\012    sub uniA860.mir by uniA860.mir.ini;\012    sub uniA868.mir by uniA868.mir.ini;\012    sub uniA85D by uniA85D.ini;\012";
+name = init;
 },
 {
 code = "sub uniA85E by uniA85E.fin;\012sub uniA849 by uniA849.fin;\012sub uniA84B by uniA84B.fin;\012sub uniA85B by uniA85B.fin;\012sub uniA843 by uniA843.fin;\012sub uniA857 by uniA857.fin;\012sub uniA85C by uniA85C.fin;\012sub uniA84F by uniA84F.fin;\012sub uniA85A by uniA85A.fin;\012sub uniA855 by uniA855.fin;\012sub uniA844 by uniA844.fin;\012sub uniA866 by uniA866.fin;\012sub uniA856 by uniA856.fin;\012sub uniA859 by uniA859.fin;\012sub uniA860 by uniA860.fin;\012sub uniA861 by uniA861.fin;\012sub uniA85F by uniA85F.fin;\012sub uniA840 by uniA840.fin;\012sub uniA848 by uniA848.fin;\012sub uniA862 by uniA862.fin;\012sub uniA84A by uniA84A.fin;\012sub uniA84C by uniA84C.fin;\012sub uniA858 by uniA858.fin;\012sub uniA846 by uniA846.fin;\012sub uniA84D by uniA84D.fin;\012sub uniA853 by uniA853.fin;\012sub uniA842 by uniA842.fin;\012sub uniA841 by uniA841.fin;\012sub uniA852 by uniA852.fin;\012sub uniA854 by uniA854.fin;\012sub uniA850 by uniA850.fin;\012sub uniA845 by uniA845.fin;\012sub uniA867 by uniA867.fin;\012sub uniA864 by uniA864.fin;\012sub uniA869 by uniA869.fin;\012sub uniA865 by uniA865.fin;\012sub uniA86A by uniA86A.fin;\012sub uniA863 by uniA863.fin;\012sub uniA86B by uniA86B.fin;\012sub uniA86C by uniA86C.fin;\012sub uniA86F by uniA86F.fin;\012sub uniA870 by uniA870.fin;\012sub uniA871 by uniA871.fin;\012sub uniA86E by uniA86E.fin;\012sub uniA868 by uniA868.fin;\012sub uniA84E by uniA84E.fin;\012sub uniA86D by uniA86D.fin;\012sub uniA851 by uniA851.fin;\012sub uniA847 by uniA847.fin;\012sub uniA856.mir by uniA856.mir.fin;\012sub uniA85C.mir by uniA85C.mir.fin;\012sub uniA85E.mir by uniA85E.mir.fin;\012sub uniA85F.mir by uniA85F.mir.fin;\012sub uniA860.mir by uniA860.mir.fin;\012sub uniA868.mir by uniA868.mir.fin;\012sub uniA85D by uniA85D.fin;\012";
 name = fina;
-},
-{
-code = "    sub uniA85E by uniA85E.ini;\012    sub uniA849 by uniA849.ini;\012    sub uniA84B by uniA84B.ini;\012    sub uniA85B by uniA85B.ini;\012    sub uniA843 by uniA843.ini;\012    sub uniA857 by uniA857.ini;\012    sub uniA85C by uniA85C.ini;\012    sub uniA84F by uniA84F.ini;\012    sub uniA85A by uniA85A.ini;\012    sub uniA855 by uniA855.ini;\012    sub uniA844 by uniA844.ini;\012    sub uniA866 by uniA866.ini;\012    sub uniA856 by uniA856.ini;\012    sub uniA859 by uniA859.ini;\012    sub uniA860 by uniA860.ini;\012    sub uniA861 by uniA861.ini;\012    sub uniA85F by uniA85F.ini;\012    sub uniA840 by uniA840.ini;\012    sub uniA848 by uniA848.ini;\012    sub uniA862 by uniA862.ini;\012    sub uniA84A by uniA84A.ini;\012    sub uniA84C by uniA84C.ini;\012    sub uniA858 by uniA858.ini;\012    sub uniA846 by uniA846.ini;\012    sub uniA84D by uniA84D.ini;\012    sub uniA853 by uniA853.ini;\012    sub uniA842 by uniA842.ini;\012    sub uniA841 by uniA841.ini;\012    sub uniA852 by uniA852.ini;\012    sub uniA854 by uniA854.ini;\012    sub uniA850 by uniA850.ini;\012    sub uniA845 by uniA845.ini;\012    sub uniA867 by uniA867.ini;\012    sub uniA864 by uniA864.ini;\012    sub uniA869 by uniA869.ini;\012    sub uniA865 by uniA865.ini;\012    sub uniA86A by uniA86A.ini;\012    sub uniA863 by uniA863.ini;\012    sub uniA86B by uniA86B.ini;\012    sub uniA86C by uniA86C.ini;\012    sub uniA86F by uniA86F.ini;\012    sub uniA870 by uniA870.ini;\012    sub uniA871 by uniA871.ini;\012    sub uniA872 by uniA872.ini;\012    sub uniA86E by uniA86E.ini;\012    sub uniA868 by uniA868.ini;\012    sub uniA84E by uniA84E.ini;\012    sub uniA86D by uniA86D.ini;\012    sub uniA851 by uniA851.ini;\012    sub uniA847 by uniA847.ini;\012    sub uniA856.mir by uniA856.mir.ini;\012    sub uniA85C.mir by uniA85C.mir.ini;\012    sub uniA85E.mir by uniA85E.mir.ini;\012    sub uniA85F.mir by uniA85F.mir.ini;\012    sub uniA860.mir by uniA860.mir.ini;\012    sub uniA868.mir by uniA868.mir.ini;\012    sub uniA85D by uniA85D.ini;\012";
-name = init;
 },
 {
 code = "\012sub uniA85E by uniA85E.med;\012sub uniA849 by uniA849.med;\012sub uniA84B by uniA84B.med;\012sub uniA85B by uniA85B.med;\012sub uniA843 by uniA843.med;\012sub uniA857 by uniA857.med;\012sub uniA85C by uniA85C.med;\012sub uniA84F by uniA84F.med;\012sub uniA85A by uniA85A.med;\012sub uniA855 by uniA855.med;\012sub uniA844 by uniA844.med;\012sub uniA866 by uniA866.med;\012sub uniA856 by uniA856.med;\012sub uniA859 by uniA859.med;\012sub uniA860 by uniA860.med;\012sub uniA861 by uniA861.med;\012sub uniA85F by uniA85F.med;\012sub uniA840 by uniA840.med;\012sub uniA848 by uniA848.med;\012sub uniA862 by uniA862.med;\012sub uniA84A by uniA84A.med;\012sub uniA84C by uniA84C.med;\012sub uniA858 by uniA858.med;\012sub uniA846 by uniA846.med;\012sub uniA84D by uniA84D.med;\012sub uniA853 by uniA853.med;\012sub uniA842 by uniA842.med;\012sub uniA841 by uniA841.med;\012sub uniA852 by uniA852.med;\012sub uniA854 by uniA854.med;\012sub uniA850 by uniA850.med;\012sub uniA845 by uniA845.med;\012sub uniA867 by uniA867.med;\012sub uniA864 by uniA864.med;\012sub uniA869 by uniA869.med;\012sub uniA865 by uniA865.med;\012sub uniA86A by uniA86A.med;\012sub uniA863 by uniA863.med;\012sub uniA86B by uniA86B.med;\012sub uniA86C by uniA86C.med;\012sub uniA86F by uniA86F.med;\012sub uniA870 by uniA870.med;\012sub uniA871 by uniA871.med;\012sub uniA86E by uniA86E.med;\012sub uniA868 by uniA868.med;\012sub uniA84E by uniA84E.med;\012sub uniA86D by uniA86D.med;\012sub uniA851 by uniA851.med;\012sub uniA847 by uniA847.med;\012sub uniA856.mir by uniA856.mir.med;\012sub uniA85C.mir by uniA85C.mir.med;\012sub uniA85E.mir by uniA85E.mir.med;\012sub uniA85F.mir by uniA85F.mir.med;\012sub uniA860.mir by uniA860.mir.med;\012sub uniA868.mir by uniA868.mir.med;\012sub uniA85D by uniA85D.med;\012";
@@ -13701,6 +13700,70 @@ width = 806;
 }
 );
 unicode = 1801;
+},
+{
+glyphname = uniA86A.ini.unmir;
+lastChange = "2022-04-18 16:19:51 +0000";
+layers = (
+{
+layerId = UUID0;
+paths = (
+{
+closed = 1;
+nodes = (
+"628 670 LINE SMOOTH",
+"511.068 667.956 OFFCURVE",
+"424.934 622.934 OFFCURVE",
+"378 576 CURVE",
+"378 660 LINE",
+"270 638 OFFCURVE",
+"190 597 OFFCURVE",
+"144 547 CURVE",
+"144 670 LINE",
+"70 670 LINE",
+"70 -56 LINE",
+"677 -56 LINE",
+"620 72 OFFCURVE",
+"597 179 OFFCURVE",
+"597 350 CURVE SMOOTH",
+"597 435.164 OFFCURVE",
+"603.248 515.784 OFFCURVE",
+"618.313 594 CURVE",
+"786 594 LINE",
+"786 670 LINE"
+);
+},
+{
+closed = 1;
+nodes = (
+"144 447 LINE",
+"182 503 OFFCURVE",
+"234 542 OFFCURVE",
+"304 562 CURVE",
+"304 20 LINE",
+"144 20 LINE"
+);
+},
+{
+closed = 1;
+nodes = (
+"378 479 LINE",
+"414 527 OFFCURVE",
+"466 565 OFFCURVE",
+"541 581 CURVE",
+"528 506 OFFCURVE",
+"523 431 OFFCURVE",
+"523 350 CURVE SMOOTH",
+"523 221 OFFCURVE",
+"537 116 OFFCURVE",
+"567 20 CURVE",
+"378 20 LINE"
+);
+}
+);
+width = 766;
+}
+);
 }
 );
 instances = (
