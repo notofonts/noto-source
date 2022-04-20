@@ -358,7 +358,7 @@
         },
         {
             "input": "ꦥ꦳ꦿꦤ꧀ꦱꦾ",
-            "expectation": "cakra=0+238|pa=0+963|cecaktelu.ns=0@-123,10+0|na=3+989|sa.pas=3+830|pengkal=3+376",
+            "expectation": "pa_cakra=0+1221|cecaktelu.ns=0@-125,10+0|na=3+989|sa.pas=3+830|pengkal=3+376",
             "note": "Cakra reordering from https://lindenbergsoftware.com/google/noto/java-shaping.html"
         },
         {
@@ -400,6 +400,11 @@
             "input": "ꦏꦵꦀ",
             "expectation": "ka=0+1221|panyangga.ns=0@15,10+0|tolong=0+439",
             "note": "Reorder non-spacing post-base marks with above marks. See https://github.com/googlefonts/noto-source/pull/594#issuecomment-1102822207"
+        },
+        {
+            "input": "ꦏ꦳ꦴꦀ",
+            "expectation": "ka=0+1221|cecaktelu.ns_panyangga.ns=0@-234,10+0|tarung=0+413",
+            "note": "Ensure reordered vowels li"
         }
     ]
 }
