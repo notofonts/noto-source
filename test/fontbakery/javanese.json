@@ -380,6 +380,26 @@
             "input": "ꦏꦴꦀ",
             "expectation": "ka=0+1221|panyangga.ns=0@15,10+0|tarung=0+413",
             "note": "googlefonts/noto-fonts#1474"
+        },
+        {
+            "input": "ꦏ꦳꧀ꦲ",
+            "expectation": "ka=0+1221|cecaktelu.ns=0@-252,10+0|ha.pas=0+1090",
+            "note": "See https://github.com/googlefonts/noto-source/pull/594#issuecomment-1102822207"
+        },
+        {
+            "input": "ꦩ꧀ꦥꦿ",
+            "expectation": "ma=0+970|pa.pas_cakra=0+1074",
+            "note": "Don't reorder spacing cakra ligatures. See https://github.com/googlefonts/noto-source/pull/594#issuecomment-1102822207"
+        },
+        {
+            "input": "ꦥ꦳ꦿ ꦥꦿ",
+            "expectation": "pa_cakra=0+1221|cecaktelu.ns=0@-125,10+0|space=3+260|pa_cakra=4+1221",
+            "note": "Skip marks when forming cakra ligatures. See https://github.com/googlefonts/noto-source/pull/594#issuecomment-1102822207"
+        },
+        {
+            "input": "ꦏꦵꦀ",
+            "expectation": "ka=0+1221|panyangga.ns=0@15,10+0|tolong=0+439",
+            "note": "Reorder non-spacing post-base marks with above marks. See https://github.com/googlefonts/noto-source/pull/594#issuecomment-1102822207"
         }
     ]
 }
