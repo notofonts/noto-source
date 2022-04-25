@@ -309,102 +309,122 @@
         {
             "input": "ꦤ꧀ꦏꦿꦸꦥꦸ",
             "expectation": "cakra.pas.alt=0+238|na=0+989|ka.pas.alt=0+0|u.ns.pas=0+0|pa=5+963|u.ns=5+0",
-            "note": "googlefonts/noto-fonts#1413"
+            "note": "googlefonts/noto-fonts#1413",
+            "only": "NotoSansJavanese-Regular.ttf"
         },
         {
             "input": "◌ꦿꦏ",
             "expectation": "cakra=0+238|uni25CC=0+594|ka=2+1221",
-            "note": "googlefonts/noto-fonts#2131"
+            "note": "googlefonts/noto-fonts#2131",
+            "only": "NotoSansJavanese-Regular.ttf"
         },
         {
             "input": "ꦏꦼꦴ",
             "expectation": "ka=0+1221|ae.ns=0@-39,10+0|tarung=0+413",
-            "note": "Unicode standard"
+            "note": "Unicode standard",
+            "only": "NotoSansJavanese-Regular.ttf"
         },
         {
             "input": "ꦏꦺꦴ",
             "expectation": "taling=0+677|ka=0+1221|tarung=0+413",
-            "note": "Unicode standard"
+            "note": "Unicode standard",
+            "only": "NotoSansJavanese-Regular.ttf"
         },
         {
             "input": "ꦏ꧀ꦏ",
             "expectation": "ka=0+1221|ka.pas=0@-1,0+0",
-            "note": "Basic pangkon stack"
+            "note": "Basic pangkon stack",
+            "only": "NotoSansJavanese-Regular.ttf"
         },
         {
             "input": "ꦏ꧀ꦏꦿ",
             "expectation": "ka.pas_cakra=0+253|ka=0+1221",
-            "note": "Stack + cakra"
+            "note": "Stack + cakra",
+            "only": "NotoSansJavanese-Regular.ttf"
         },
         {
             "input": "ꦤ꧀ꦭꦿꦹ",
             "expectation": "cakra.pas.alt=0+238|na=0+989|la.pas.alt=0+0|uu.ns.pas=0+0",
-            "note": "Stack + cakra + belowvowel blocks ligature and causes alt forms"
+            "note": "Stack + cakra + belowvowel blocks ligature and causes alt forms",
+            "only": "NotoSansJavanese-Regular.ttf"
         },
         {
             "input": "ꦢ꧀ꦢꦾ",
             "expectation": "da=0+1063|da.pas_pengkal=0+376",
-            "note": "Stack + pengkal"
+            "note": "Stack + pengkal",
+            "only": "NotoSansJavanese-Regular.ttf"
         },
         {
             "input": "ꦏꦿꦸ",
             "expectation": "ka_cakra_u.ns=0+1465",
-            "note": "base+cakra+u ligature"
+            "note": "base+cakra+u ligature",
+            "only": "NotoSansJavanese-Regular.ttf"
         },
         {
             "input": "ꦲꦿꦾꦸ",
             "expectation": "cakra=0+238|ha=0+1195|pengkal.alt_u.ns=0+376",
-            "note": "cakra+pengal+u"
+            "note": "cakra+pengal+u",
+            "only": "NotoSansJavanese-Regular.ttf"
         },
         {
             "input": "ꦥ꦳ꦿꦤ꧀ꦱꦾ",
             "expectation": "pa_cakra=0+1221|cecaktelu.ns=0@-125,10+0|na=3+989|sa.pas=3+830|pengkal=3+376",
-            "note": "Cakra reordering from https://lindenbergsoftware.com/google/noto/java-shaping.html"
+            "note": "Cakra reordering from https://lindenbergsoftware.com/google/noto/java-shaping.html",
+            "only": "NotoSansJavanese-Regular.ttf"
         },
         {
             "input": "◌ꦿꦸ",
             "expectation": "cakra=0+238|uni25CC=0+594|u.ns=0@-66,0+0",
-            "note": "googlefonts/noto-fonts#1473"
+            "note": "googlefonts/noto-fonts#1473",
+            "only": "NotoSansJavanese-Regular.ttf"
         },
         {
             "input": "◌꧀ꦢꦿ",
             "expectation": "da.pas_cakra=0+238|uni25CC=0+594",
-            "note": "googlefonts/noto-fonts#1473"
+            "note": "googlefonts/noto-fonts#1473",
+            "only": "NotoSansJavanese-Regular.ttf"
         },
         {
             "input": "ꦥꦾꦂ",
             "expectation": "pa=0+963|layar.ns=0@-267,10+0|pengkal=0+376",
-            "note": "googlefonts/noto-fonts#1474"
+            "note": "googlefonts/noto-fonts#1474",
+            "only": "NotoSansJavanese-Regular.ttf"
         },
         {
             "input": "ꦏꦴꦀ",
             "expectation": "ka=0+1221|panyangga.ns=0@15,10+0|tarung=0+413",
-            "note": "googlefonts/noto-fonts#1474"
+            "note": "googlefonts/noto-fonts#1474",
+            "only": "NotoSansJavanese-Regular.ttf"
         },
         {
             "input": "ꦏ꦳꧀ꦲ",
             "expectation": "ka=0+1221|cecaktelu.ns=0@-252,10+0|ha.pas=0+1090",
-            "note": "See https://github.com/googlefonts/noto-source/pull/594#issuecomment-1102822207"
+            "note": "See https://github.com/googlefonts/noto-source/pull/594#issuecomment-1102822207",
+            "only": "NotoSansJavanese-Regular.ttf"
         },
         {
             "input": "ꦩ꧀ꦥꦿ",
             "expectation": "ma=0+970|pa.pas_cakra=0+1074",
-            "note": "Don't reorder spacing cakra ligatures. See https://github.com/googlefonts/noto-source/pull/594#issuecomment-1102822207"
+            "note": "Don't reorder spacing cakra ligatures. See https://github.com/googlefonts/noto-source/pull/594#issuecomment-1102822207",
+            "only": "NotoSansJavanese-Regular.ttf"
         },
         {
             "input": "ꦥ꦳ꦿ ꦥꦿ",
             "expectation": "pa_cakra=0+1221|cecaktelu.ns=0@-125,10+0|space=3+260|pa_cakra=4+1221",
-            "note": "Skip marks when forming cakra ligatures. See https://github.com/googlefonts/noto-source/pull/594#issuecomment-1102822207"
+            "note": "Skip marks when forming cakra ligatures. See https://github.com/googlefonts/noto-source/pull/594#issuecomment-1102822207",
+            "only": "NotoSansJavanese-Regular.ttf"
         },
         {
             "input": "ꦏꦵꦀ",
             "expectation": "ka=0+1221|panyangga.ns=0@15,10+0|tolong=0+439",
-            "note": "Reorder non-spacing post-base marks with above marks. See https://github.com/googlefonts/noto-source/pull/594#issuecomment-1102822207"
+            "note": "Reorder non-spacing post-base marks with above marks. See https://github.com/googlefonts/noto-source/pull/594#issuecomment-1102822207",
+            "only": "NotoSansJavanese-Regular.ttf"
         },
         {
             "input": "ꦏ꦳ꦴꦀ",
             "expectation": "ka=0+1221|cecaktelu.ns_panyangga.ns=0@-234,10+0|tarung=0+413",
-            "note": "Ensure reordered vowels ligate. See https://github.com/googlefonts/noto-source/pull/594#issuecomment-1104064051"
+            "note": "Ensure reordered vowels ligate. See https://github.com/googlefonts/noto-source/pull/594#issuecomment-1104064051",
+            "only": "NotoSansJavanese-Regular.ttf"
         }
     ]
 }
