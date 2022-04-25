@@ -1,5 +1,5 @@
 {
-.appVersion = "1357";
+.appVersion = "3109";
 classes = (
 {
 code = "uni1C25.alt uni1C24.alt uni1C26.alt uni1C2A.alt uni1C2B.alt uni1C25_1C24";
@@ -10,7 +10,7 @@ code = "uni1C03 uni1C03_1C24 uni1C03_1C25 uni1C03_1C25_1C24 uni1C04 uni1C04_1C24
 name = class1;
 },
 {
-code = "uni1C01 uni1C05 uni1C05_1C24 uni1C05_1C25 uni1C05_1C25_1C24 uni1C1A uni1C1B uni1C1B_1C24 uni1C4D uni1C4E";
+code = "uni1C01 uni1C01_1C24 uni1C05 uni1C05_1C24 uni1C05_1C25 uni1C05_1C25_1C24 uni1C1A uni1C1B uni1C1B_1C24 uni1C4D uni1C4E\012";
 name = class2;
 },
 {
@@ -257,24 +257,28 @@ name = Languagesystems;
 );
 features = (
 {
-code = "sub uni1C25 by uni1C25.alt;\012sub uni1C24 by uni1C24.alt;\012sub uni1C26 by uni1C26.alt;\012sub uni1C2A by uni1C2A.alt;\012sub uni1C2B by uni1C2B.alt;\012\012# OO Vowel Width\012lookupflag IgnoreMarks;\012sub uni1C29' @class1 by uni1C29.wide;\012sub uni1C29' @class2 by uni1C29.short;\012";
-name = abvs;
+code = "lookup LigatureSubstitution1 {\012    lookupflag MarkAttachmentType @markAttachmentSet1;\012    sub uni1C23 uni1C24 by uni1C23_1C24;\012    sub uni1C13 uni1C25 uni1C24 by uni1C13_1C25_1C24;\012    sub uni1C13 uni1C24 by uni1C13_1C24;\012    sub uni1C13 uni1C25 by uni1C13_1C25;\012    sub uni1C14 uni1C24 by uni1C14_1C24;\012    sub uni1C0C uni1C24 by uni1C0C_1C24;\012    sub uni1C11 uni1C25 uni1C24 by uni1C11_1C25_1C24;\012    sub uni1C11 uni1C24 by uni1C11_1C24;\012    sub uni1C11 uni1C25 by uni1C11_1C25;\012    sub uni1C12 uni1C24 by uni1C12_1C24;\012    sub uni1C03 uni1C25 uni1C24 by uni1C03_1C25_1C24;\012    sub uni1C03 uni1C24 by uni1C03_1C24;\012    sub uni1C03 uni1C25 by uni1C03_1C25;\012    sub uni1C04 uni1C24 by uni1C04_1C24;\012    sub uni1C1D uni1C25 uni1C24 by uni1C1D_1C25_1C24;\012    sub uni1C1D uni1C24 by uni1C1D_1C24;\012    sub uni1C1D uni1C25 by uni1C1D_1C25;\012    sub uni1C1E uni1C24 by uni1C1E_1C24;\012    sub uni1C08 uni1C24 by uni1C08_1C24;\012    sub uni1C00 uni1C25 uni1C24 by uni1C00_1C25_1C24;\012    sub uni1C00 uni1C24 by uni1C00_1C24;\012    sub uni1C00 uni1C25 by uni1C00_1C25;\012    sub uni1C02 uni1C24 by uni1C02_1C24;\012    sub uni1C02 uni1C25 by uni1C02_1C25;\012    sub uni1C01 uni1C24 by uni1C01_1C24;\012    sub uni1C1C uni1C24 by uni1C1C_1C24;\012    sub uni1C15 uni1C25 uni1C24 by uni1C15_1C25_1C24;\012    sub uni1C15 uni1C24 by uni1C15_1C24;\012    sub uni1C15 uni1C25 by uni1C15_1C25;\012    sub uni1C16 uni1C24 by uni1C16_1C24;\012    sub uni1C05 uni1C25 uni1C24 by uni1C05_1C25_1C24;\012    sub uni1C05 uni1C24 by uni1C05_1C24;\012    sub uni1C05 uni1C25 by uni1C05_1C25;\012    sub uni1C0E uni1C25 uni1C24 by uni1C0E_1C25_1C24;\012    sub uni1C0E uni1C24 by uni1C0E_1C24;\012    sub uni1C0E uni1C25 by uni1C0E_1C25;\012    sub uni1C10 uni1C24 by uni1C10_1C24;\012    sub uni1C0F uni1C24 by uni1C0F_1C24;\012    sub uni1C1B uni1C24 by uni1C1B_1C24;\012    sub uni1C21 uni1C24 by uni1C21_1C24;\012    sub uni1C0A uni1C24 by uni1C0A_1C24;\012    sub uni1C0B uni1C24 by uni1C0B_1C24;\012    sub uni1C1F uni1C24 by uni1C1F_1C24;\012    sub uni1C25 uni1C24 by uni1C25_1C24;\012} LigatureSubstitution1;\012\012lookup LigatureSubstitution2 {\012    lookupflag 0;\012    sub uni1C2D uni1C36 by uni1C2D_1C36;\012    sub uni1C2F uni1C36 by uni1C2F_1C36;\012    sub uni1C2E uni1C36 by uni1C2E_1C36;\012    sub uni1C30 uni1C36 by uni1C30_1C36;\012    sub uni1C31 uni1C36 by uni1C31_1C36;\012    sub uni1C32 uni1C36 by uni1C32_1C36;\012    sub uni1C33 uni1C36 by uni1C33_1C36;\012    sub uni1C36 uni1C2D by uni1C2D_1C36;\012    sub uni1C36 uni1C2E by uni1C2E_1C36;\012    sub uni1C36 uni1C2F by uni1C2F_1C36;\012    sub uni1C36 uni1C30 by uni1C30_1C36;\012    sub uni1C36 uni1C31 by uni1C31_1C36;\012    sub uni1C36 uni1C32 by uni1C32_1C36;\012    sub uni1C36 uni1C33 by uni1C33_1C36;\012} LigatureSubstitution2;\012\012\012lookupflag IgnoreLigatures;\012# IgnoreLigatures is needed because these two marks can appear \"across\"\012# a ligature (the uni1C37 appearing before a component and the uni1C2C\012# appearing after it), and Harfbuzz does not ligate marks in this context\012# without the IgnoreLigatures flag.\012# See https://github.com/googlefonts/noto-fonts/issues/2321 and\012# https://github.com/googlefonts/noto-fonts/issues/2332\012sub uni1C37 uni1C2C by uni1C37_uni1C2C;\012\012";
+name = ccmp;
 },
 {
-code = "lookup LigatureSubstitution1 {\012    lookupflag MarkAttachmentType @markAttachmentSet1;\012    sub uni1C23 uni1C24 by uni1C23_1C24;\012    sub uni1C13 uni1C25 uni1C24 by uni1C13_1C25_1C24;\012    sub uni1C13 uni1C24 by uni1C13_1C24;\012    sub uni1C13 uni1C25 by uni1C13_1C25;\012    sub uni1C14 uni1C24 by uni1C14_1C24;\012    sub uni1C0C uni1C24 by uni1C0C_1C24;\012    sub uni1C11 uni1C25 uni1C24 by uni1C11_1C25_1C24;\012    sub uni1C11 uni1C24 by uni1C11_1C24;\012    sub uni1C11 uni1C25 by uni1C11_1C25;\012    sub uni1C12 uni1C24 by uni1C12_1C24;\012    sub uni1C03 uni1C25 uni1C24 by uni1C03_1C25_1C24;\012    sub uni1C03 uni1C24 by uni1C03_1C24;\012    sub uni1C03 uni1C25 by uni1C03_1C25;\012    sub uni1C04 uni1C24 by uni1C04_1C24;\012    sub uni1C1D uni1C25 uni1C24 by uni1C1D_1C25_1C24;\012    sub uni1C1D uni1C24 by uni1C1D_1C24;\012    sub uni1C1D uni1C25 by uni1C1D_1C25;\012    sub uni1C1E uni1C24 by uni1C1E_1C24;\012    sub uni1C08 uni1C24 by uni1C08_1C24;\012    sub uni1C00 uni1C25 uni1C24 by uni1C00_1C25_1C24;\012    sub uni1C00 uni1C24 by uni1C00_1C24;\012    sub uni1C00 uni1C25 by uni1C00_1C25;\012    sub uni1C02 uni1C24 by uni1C02_1C24;\012    sub uni1C02 uni1C25 by uni1C02_1C25;\012    sub uni1C01 uni1C24 by uni1C01_1C24;\012    sub uni1C1C uni1C24 by uni1C1C_1C24;\012    sub uni1C15 uni1C25 uni1C24 by uni1C15_1C25_1C24;\012    sub uni1C15 uni1C24 by uni1C15_1C24;\012    sub uni1C15 uni1C25 by uni1C15_1C25;\012    sub uni1C16 uni1C24 by uni1C16_1C24;\012    sub uni1C05 uni1C25 uni1C24 by uni1C05_1C25_1C24;\012    sub uni1C05 uni1C24 by uni1C05_1C24;\012    sub uni1C05 uni1C25 by uni1C05_1C25;\012    sub uni1C0E uni1C25 uni1C24 by uni1C0E_1C25_1C24;\012    sub uni1C0E uni1C24 by uni1C0E_1C24;\012    sub uni1C0E uni1C25 by uni1C0E_1C25;\012    sub uni1C10 uni1C24 by uni1C10_1C24;\012    sub uni1C0F uni1C24 by uni1C0F_1C24;\012    sub uni1C1B uni1C24 by uni1C1B_1C24;\012    sub uni1C21 uni1C24 by uni1C21_1C24;\012    sub uni1C0A uni1C24 by uni1C0A_1C24;\012    sub uni1C0B uni1C24 by uni1C0B_1C24;\012    sub uni1C1F uni1C24 by uni1C1F_1C24;\012    sub uni1C25 uni1C24 by uni1C25_1C24;\012} LigatureSubstitution1;\012\012lookup LigatureSubstitution2 {\012    lookupflag 0;\012    sub uni1C2D uni1C36 by uni1C2D_1C36;\012    sub uni1C2F uni1C36 by uni1C2F_1C36;\012    sub uni1C2E uni1C36 by uni1C2E_1C36;\012    sub uni1C30 uni1C36 by uni1C30_1C36;\012    sub uni1C31 uni1C36 by uni1C31_1C36;\012    sub uni1C32 uni1C36 by uni1C32_1C36;\012    sub uni1C33 uni1C36 by uni1C33_1C36;\012    sub uni1C36 uni1C2D by uni1C2D_1C36;\012    sub uni1C36 uni1C2E by uni1C2E_1C36;\012    sub uni1C36 uni1C2F by uni1C2F_1C36;\012    sub uni1C36 uni1C30 by uni1C30_1C36;\012    sub uni1C36 uni1C31 by uni1C31_1C36;\012    sub uni1C36 uni1C32 by uni1C32_1C36;\012    sub uni1C36 uni1C33 by uni1C33_1C36;\012} LigatureSubstitution2;\012";
-name = ccmp;
+code = "sub uni1C25 by uni1C25.alt;\012sub uni1C24 by uni1C24.alt;\012sub uni1C26 by uni1C26.alt;\012sub uni1C2A by uni1C2A.alt;\012sub uni1C2B by uni1C2B.alt;\012\012# OO Vowel Width\012lookupflag IgnoreMarks;\012sub uni1C29' @class1 by uni1C29.wide;\012sub uni1C29' @class2 by uni1C29.short;\012";
+name = abvs;
 },
 {
 code = "# Automatic Code Start\012";
 name = abvm;
 },
 {
-code = "# Automatic Code Start\012\012\012lookup ChainedContextualGPOS2 {\012    lookupflag MarkAttachmentType @markAttachmentSet1;\012    pos @class3' 346 uni1C24.alt;\012    pos @class3' 230 uni1C25.alt;\012    pos @class3' 354 uni1C26.alt;\012    pos @class3' 279 uni1C2A.alt;\012    pos @class3' 369 uni1C2B.alt;\012    pos @class3' 416 uni1C25_1C24;\012} ChainedContextualGPOS2;\012\012lookup ChainedContextualGPOS13 {\012    lookupflag MarkAttachmentType @markAttachmentSet3;\012    pos [uni1C29 uni1C29.wide uni1C29.short] @class9' @class10'  <0 193 0 0> uni1C36';\012    pos [uni1C29 uni1C29.wide uni1C29.short] @class9' @class10'  <0 193 0 0>;\012    pos [uni1C29 uni1C29.wide uni1C29.short] @class9' uni1C36'  <0 193 0 0>;\012} ChainedContextualGPOS13;\012";
-name = dist;
+code = "# Automatic Code Start";
+name = mark;
 },
 {
-code = "# Automatic Code Start\012";
-name = mkmk;
+code = "# Automatic Code Start";
+name = blwm;
+},
+{
+code = "# Automatic Code Start\012\012\012lookup ChainedContextualGPOS2 {\012    lookupflag MarkAttachmentType @markAttachmentSet1;\012    pos @class3' 346 uni1C24.alt;\012    pos @class3' 230 uni1C25.alt;\012    pos @class3' 354 uni1C26.alt;\012    pos @class3' 279 uni1C2A.alt;\012    pos @class3' 369 uni1C2B.alt;\012    pos @class3' 416 uni1C25_1C24;\012} ChainedContextualGPOS2;\012\012lookup ChainedContextualGPOS13 {\012    lookupflag MarkAttachmentType @markAttachmentSet3;\012    pos [uni1C29 uni1C29.wide uni1C29.short] @class9' @class10'  <0 193 0 0> uni1C36';\012    pos [uni1C29 uni1C29.wide uni1C29.short] @class9' @class10'  <0 193 0 0>;\012    pos [uni1C29 uni1C29.wide uni1C29.short] @class9' uni1C36'  <0 193 0 0>;\012} ChainedContextualGPOS13;\012";
+name = dist;
 }
 );
 fontMaster = (
@@ -388,7 +392,7 @@ nodes = (
 width = 600;
 }
 );
-note = .notdef;
+note = ".notdef";
 },
 {
 glyphname = NULL;
@@ -515,16 +519,16 @@ unicode = 1C23;
 },
 {
 glyphname = uni1C23_1C24;
-lastChange = "2017-09-18 13:29:20 +0000";
+lastChange = "2022-04-25 08:08:05 +0000";
 layers = (
 {
 anchors = (
 {
-name = Anchor10;
+name = Anchor10_1;
 position = "{305, 583}";
 },
 {
-name = Anchor12;
+name = Anchor12_1;
 position = "{305, 0}";
 }
 );
@@ -610,6 +614,8 @@ width = 760;
 );
 note = u1C23_1C24;
 rightKerningGroup = u1C23_1C24;
+category = Letter;
+subCategory = Ligature;
 },
 {
 glyphname = uni1C13;
@@ -673,16 +679,16 @@ unicode = 1C13;
 },
 {
 glyphname = uni1C13_1C25;
-lastChange = "2017-09-18 13:29:20 +0000";
+lastChange = "2022-04-25 08:08:05 +0000";
 layers = (
 {
 anchors = (
 {
-name = Anchor10;
+name = Anchor10_1;
 position = "{327, 583}";
 },
 {
-name = Anchor12;
+name = Anchor12_1;
 position = "{327, 0}";
 }
 );
@@ -750,19 +756,21 @@ width = 799;
 );
 leftKerningGroup = u1C13;
 note = u1C13_1C25;
+category = Letter;
+subCategory = Ligature;
 },
 {
 glyphname = uni1C13_1C25_1C24;
-lastChange = "2017-09-18 13:29:20 +0000";
+lastChange = "2022-04-25 08:08:05 +0000";
 layers = (
 {
 anchors = (
 {
-name = Anchor10;
+name = Anchor10_1;
 position = "{327, 583}";
 },
 {
-name = Anchor12;
+name = Anchor12_1;
 position = "{327, 0}";
 }
 );
@@ -853,19 +861,21 @@ width = 1004;
 leftKerningGroup = u1C13;
 note = u1C13_1C25_1C24;
 rightKerningGroup = u1C13_1C25_1C24;
+category = Letter;
+subCategory = Ligature;
 },
 {
 glyphname = uni1C13_1C24;
-lastChange = "2017-09-18 13:29:20 +0000";
+lastChange = "2022-04-25 08:08:05 +0000";
 layers = (
 {
 anchors = (
 {
-name = Anchor10;
+name = Anchor10_1;
 position = "{327, 583}";
 },
 {
-name = Anchor12;
+name = Anchor12_1;
 position = "{327, 0}";
 }
 );
@@ -940,6 +950,8 @@ width = 908;
 leftKerningGroup = u1C13;
 note = u1C13_1C24;
 rightKerningGroup = u1C13_1C25_1C24;
+category = Letter;
+subCategory = Ligature;
 },
 {
 glyphname = uni1C14;
@@ -1014,16 +1026,16 @@ unicode = 1C14;
 },
 {
 glyphname = uni1C14_1C24;
-lastChange = "2017-09-18 13:29:20 +0000";
+lastChange = "2022-04-25 08:08:05 +0000";
 layers = (
 {
 anchors = (
 {
-name = Anchor10;
+name = Anchor10_1;
 position = "{466, 583}";
 },
 {
-name = Anchor12;
+name = Anchor12_1;
 position = "{466, 0}";
 }
 );
@@ -1107,6 +1119,8 @@ width = 1202;
 leftKerningGroup = u1C13;
 note = u1C14_1C24;
 rightKerningGroup = u1C13_1C25_1C24;
+category = Letter;
+subCategory = Ligature;
 },
 {
 glyphname = uni1C06;
@@ -1536,16 +1550,16 @@ unicode = 1C0C;
 },
 {
 glyphname = uni1C0C_1C24;
-lastChange = "2017-09-18 13:29:20 +0000";
+lastChange = "2022-04-25 08:08:05 +0000";
 layers = (
 {
 anchors = (
 {
-name = Anchor10;
+name = Anchor10_1;
 position = "{304, 583}";
 },
 {
-name = Anchor12;
+name = Anchor12_1;
 position = "{304, 140}";
 }
 );
@@ -1613,6 +1627,8 @@ width = 885;
 leftKerningGroup = u1C0C;
 note = u1C0C_1C24;
 rightKerningGroup = u1C23_1C24;
+category = Letter;
+subCategory = Ligature;
 },
 {
 glyphname = uni1C4F;
@@ -1883,16 +1899,16 @@ unicode = 1C11;
 },
 {
 glyphname = uni1C11_1C25;
-lastChange = "2017-09-18 13:29:20 +0000";
+lastChange = "2022-04-25 08:08:05 +0000";
 layers = (
 {
 anchors = (
 {
-name = Anchor10;
+name = Anchor10_1;
 position = "{314, 583}";
 },
 {
-name = Anchor12;
+name = Anchor12_1;
 position = "{314, 0}";
 }
 );
@@ -2001,19 +2017,21 @@ width = 749;
 }
 );
 note = u1C11_1C25;
+category = Letter;
+subCategory = Ligature;
 },
 {
 glyphname = uni1C11_1C25_1C24;
-lastChange = "2017-09-18 13:29:20 +0000";
+lastChange = "2022-04-25 08:08:05 +0000";
 layers = (
 {
 anchors = (
 {
-name = Anchor10;
+name = Anchor10_1;
 position = "{314, 583}";
 },
 {
-name = Anchor12;
+name = Anchor12_1;
 position = "{314, 0}";
 }
 );
@@ -2145,19 +2163,21 @@ width = 969;
 );
 note = u1C11_1C25_1C24;
 rightKerningGroup = u1C13_1C25_1C24;
+category = Letter;
+subCategory = Ligature;
 },
 {
 glyphname = uni1C11_1C24;
-lastChange = "2017-09-18 13:29:20 +0000";
+lastChange = "2022-04-25 08:08:05 +0000";
 layers = (
 {
 anchors = (
 {
-name = Anchor10;
+name = Anchor10_1;
 position = "{314, 583}";
 },
 {
-name = Anchor12;
+name = Anchor12_1;
 position = "{314, 0}";
 }
 );
@@ -2273,6 +2293,8 @@ width = 868;
 );
 note = u1C11_1C24;
 rightKerningGroup = u1C13_1C25_1C24;
+category = Letter;
+subCategory = Ligature;
 },
 {
 glyphname = uni1C12;
@@ -2370,16 +2392,16 @@ unicode = 1C12;
 },
 {
 glyphname = uni1C12_1C24;
-lastChange = "2017-09-18 13:29:20 +0000";
+lastChange = "2022-04-25 08:08:05 +0000";
 layers = (
 {
 anchors = (
 {
-name = Anchor10;
+name = Anchor10_1;
 position = "{467, 583}";
 },
 {
-name = Anchor12;
+name = Anchor12_1;
 position = "{487, 0}";
 }
 );
@@ -2488,6 +2510,8 @@ width = 1241;
 leftKerningGroup = u1C13;
 note = u1C12_1C24;
 rightKerningGroup = u1C13_1C25_1C24;
+category = Letter;
+subCategory = Ligature;
 },
 {
 glyphname = uni1C03;
@@ -2562,16 +2586,16 @@ unicode = 1C03;
 },
 {
 glyphname = uni1C03_1C25;
-lastChange = "2017-09-18 13:29:20 +0000";
+lastChange = "2022-04-25 08:08:05 +0000";
 layers = (
 {
 anchors = (
 {
-name = Anchor10;
+name = Anchor10_1;
 position = "{466, 583}";
 },
 {
-name = Anchor12;
+name = Anchor12_1;
 position = "{466, 0}";
 }
 );
@@ -2650,19 +2674,21 @@ width = 1079;
 );
 leftKerningGroup = u1C13;
 note = u1C03_1C25;
+category = Letter;
+subCategory = Ligature;
 },
 {
 glyphname = uni1C03_1C25_1C24;
-lastChange = "2017-09-18 13:29:20 +0000";
+lastChange = "2022-04-25 08:08:05 +0000";
 layers = (
 {
 anchors = (
 {
-name = Anchor10;
+name = Anchor10_1;
 position = "{466, 583}";
 },
 {
-name = Anchor12;
+name = Anchor12_1;
 position = "{466, 0}";
 }
 );
@@ -2764,19 +2790,21 @@ width = 1285;
 leftKerningGroup = u1C13;
 note = u1C03_1C25_1C24;
 rightKerningGroup = u1C13_1C25_1C24;
+category = Letter;
+subCategory = Ligature;
 },
 {
 glyphname = uni1C03_1C24;
-lastChange = "2017-09-18 13:29:20 +0000";
+lastChange = "2022-04-25 08:08:05 +0000";
 layers = (
 {
 anchors = (
 {
-name = Anchor10;
+name = Anchor10_1;
 position = "{466, 583}";
 },
 {
-name = Anchor12;
+name = Anchor12_1;
 position = "{466, 0}";
 }
 );
@@ -2862,6 +2890,8 @@ width = 1186;
 leftKerningGroup = u1C13;
 note = u1C03_1C24;
 rightKerningGroup = u1C13_1C25_1C24;
+category = Letter;
+subCategory = Ligature;
 },
 {
 glyphname = uni1C04;
@@ -2964,16 +2994,16 @@ unicode = 1C04;
 },
 {
 glyphname = uni1C04_1C24;
-lastChange = "2017-09-18 13:29:20 +0000";
+lastChange = "2022-04-25 08:08:05 +0000";
 layers = (
 {
 anchors = (
 {
-name = Anchor10;
+name = Anchor10_1;
 position = "{466, 583}";
 },
 {
-name = Anchor12;
+name = Anchor12_1;
 position = "{466, 0}";
 }
 );
@@ -3082,6 +3112,8 @@ width = 1186;
 );
 note = u1C04_1C24;
 rightKerningGroup = u1C13_1C25_1C24;
+category = Letter;
+subCategory = Ligature;
 },
 {
 glyphname = uni1C1D;
@@ -3165,16 +3197,16 @@ unicode = 1C1D;
 },
 {
 glyphname = uni1C1D_1C25;
-lastChange = "2017-09-18 13:29:20 +0000";
+lastChange = "2022-04-25 08:08:05 +0000";
 layers = (
 {
 anchors = (
 {
-name = Anchor10;
+name = Anchor10_1;
 position = "{354, 583}";
 },
 {
-name = Anchor12;
+name = Anchor12_1;
 position = "{354, 0}";
 }
 );
@@ -3262,19 +3294,21 @@ width = 787;
 );
 note = u1C1D_1C25;
 rightKerningGroup = u1C1D_1C37_1C25;
+category = Letter;
+subCategory = Ligature;
 },
 {
 glyphname = uni1C1D_1C25_1C24;
-lastChange = "2017-09-18 13:29:20 +0000";
+lastChange = "2022-04-25 08:08:05 +0000";
 layers = (
 {
 anchors = (
 {
-name = Anchor10;
+name = Anchor10_1;
 position = "{354, 583}";
 },
 {
-name = Anchor12;
+name = Anchor12_1;
 position = "{354, 0}";
 }
 );
@@ -3384,19 +3418,21 @@ width = 995;
 );
 note = u1C1D_1C25_1C24;
 rightKerningGroup = u1C13_1C25_1C24;
+category = Letter;
+subCategory = Ligature;
 },
 {
 glyphname = uni1C1D_1C24;
-lastChange = "2017-09-18 13:29:20 +0000";
+lastChange = "2022-04-25 08:08:05 +0000";
 layers = (
 {
 anchors = (
 {
-name = Anchor10;
+name = Anchor10_1;
 position = "{354, 583}";
 },
 {
-name = Anchor12;
+name = Anchor12_1;
 position = "{354, 0}";
 }
 );
@@ -3498,6 +3534,8 @@ width = 925;
 );
 note = u1C1D_1C24;
 rightKerningGroup = u1C13_1C25_1C24;
+category = Letter;
+subCategory = Ligature;
 },
 {
 glyphname = uni1C1E;
@@ -3543,16 +3581,16 @@ unicode = 1C1E;
 },
 {
 glyphname = uni1C1E_1C24;
-lastChange = "2017-09-18 13:29:20 +0000";
+lastChange = "2022-04-25 08:08:05 +0000";
 layers = (
 {
 anchors = (
 {
-name = Anchor10;
+name = Anchor10_1;
 position = "{294, 583}";
 },
 {
-name = Anchor12;
+name = Anchor12_1;
 position = "{294, 0}";
 }
 );
@@ -3697,16 +3735,16 @@ unicode = 1C08;
 },
 {
 glyphname = uni1C08_1C24;
-lastChange = "2017-09-18 13:29:20 +0000";
+lastChange = "2022-04-25 08:08:05 +0000";
 layers = (
 {
 anchors = (
 {
-name = Anchor10;
+name = Anchor10_1;
 position = "{387, 583}";
 },
 {
-name = Anchor12;
+name = Anchor12_1;
 position = "{396, 0}";
 }
 );
@@ -3885,7 +3923,7 @@ unicode = 1C00;
 },
 {
 glyphname = uni1C00_1C25;
-lastChange = "2017-09-18 13:29:20 +0000";
+lastChange = "2022-04-23 20:12:39 +0000";
 layers = (
 {
 anchors = (
@@ -3969,19 +4007,21 @@ width = 719;
 leftKerningGroup = u1C00;
 note = u1C00_1C25;
 rightKerningGroup = u1C00_1C37_1C25;
+category = Letter;
+subCategory = Other;
 },
 {
 glyphname = uni1C00_1C25_1C24;
-lastChange = "2017-09-18 13:29:20 +0000";
+lastChange = "2022-04-25 08:08:05 +0000";
 layers = (
 {
 anchors = (
 {
-name = Anchor10;
+name = Anchor10_1;
 position = "{330, 583}";
 },
 {
-name = Anchor12;
+name = Anchor12_1;
 position = "{330, 0}";
 }
 );
@@ -4080,16 +4120,16 @@ note = u1C00_1C25_1C24;
 },
 {
 glyphname = uni1C00_1C24;
-lastChange = "2017-09-18 13:29:20 +0000";
+lastChange = "2022-04-25 08:06:36 +0000";
 layers = (
 {
 anchors = (
 {
-name = Anchor10;
+name = Anchor10_1;
 position = "{330, 583}";
 },
 {
-name = Anchor12;
+name = Anchor12_1;
 position = "{330, 0}";
 }
 );
@@ -4175,6 +4215,8 @@ width = 840;
 leftKerningGroup = u1C00;
 note = u1C00_1C24;
 rightKerningGroup = u1C13_1C25_1C24;
+category = Letter;
+subCategory = Ligature;
 },
 {
 glyphname = uni1C02;
@@ -4246,16 +4288,16 @@ unicode = 1C02;
 },
 {
 glyphname = uni1C02_1C25;
-lastChange = "2017-09-18 13:29:20 +0000";
+lastChange = "2022-04-25 08:08:05 +0000";
 layers = (
 {
 anchors = (
 {
-name = Anchor10;
+name = Anchor10_1;
 position = "{363, 583}";
 },
 {
-name = Anchor12;
+name = Anchor12_1;
 position = "{324, 0}";
 }
 );
@@ -4335,16 +4377,16 @@ note = u1C02_1C25;
 },
 {
 glyphname = uni1C02_1C24;
-lastChange = "2017-09-18 13:29:20 +0000";
+lastChange = "2022-04-25 08:08:05 +0000";
 layers = (
 {
 anchors = (
 {
-name = Anchor10;
+name = Anchor10_1;
 position = "{363, 583}";
 },
 {
-name = Anchor12;
+name = Anchor12_1;
 position = "{324, 0}";
 }
 );
@@ -4500,16 +4542,16 @@ unicode = 1C01;
 },
 {
 glyphname = uni1C01_1C24;
-lastChange = "2017-09-18 13:29:20 +0000";
+lastChange = "2022-04-25 08:08:05 +0000";
 layers = (
 {
 anchors = (
 {
-name = Anchor10;
+name = Anchor10_1;
 position = "{280, 583}";
 },
 {
-name = Anchor12;
+name = Anchor12_1;
 position = "{270, 0}";
 }
 );
@@ -4660,16 +4702,16 @@ unicode = 1C1C;
 },
 {
 glyphname = uni1C1C_1C24;
-lastChange = "2017-09-18 13:29:20 +0000";
+lastChange = "2022-04-25 08:08:05 +0000";
 layers = (
 {
 anchors = (
 {
-name = Anchor10;
+name = Anchor10_1;
 position = "{467, 583}";
 },
 {
-name = Anchor12;
+name = Anchor12_1;
 position = "{487, 0}";
 }
 );
@@ -4850,16 +4892,16 @@ unicode = 1C15;
 },
 {
 glyphname = uni1C15_1C25;
-lastChange = "2017-09-18 13:29:20 +0000";
+lastChange = "2022-04-25 08:08:05 +0000";
 layers = (
 {
 anchors = (
 {
-name = Anchor10;
+name = Anchor10_1;
 position = "{391, 583}";
 },
 {
-name = Anchor12;
+name = Anchor12_1;
 position = "{358, 0}";
 }
 );
@@ -4954,16 +4996,16 @@ rightKerningGroup = u1C15_1C25;
 },
 {
 glyphname = uni1C15_1C25_1C24;
-lastChange = "2017-09-18 13:29:20 +0000";
+lastChange = "2022-04-25 08:08:05 +0000";
 layers = (
 {
 anchors = (
 {
-name = Anchor10;
+name = Anchor10_1;
 position = "{394, 583}";
 },
 {
-name = Anchor12;
+name = Anchor12_1;
 position = "{361, 0}";
 }
 );
@@ -5080,16 +5122,16 @@ rightKerningGroup = u1C23_1C24;
 },
 {
 glyphname = uni1C15_1C24;
-lastChange = "2017-09-18 13:29:20 +0000";
+lastChange = "2022-04-25 08:08:05 +0000";
 layers = (
 {
 anchors = (
 {
-name = Anchor10;
+name = Anchor10_1;
 position = "{371, 583}";
 },
 {
-name = Anchor12;
+name = Anchor12_1;
 position = "{361, 0}";
 }
 );
@@ -5286,16 +5328,16 @@ unicode = 1C16;
 },
 {
 glyphname = uni1C16_1C24;
-lastChange = "2017-09-18 13:29:20 +0000";
+lastChange = "2022-04-25 08:08:05 +0000";
 layers = (
 {
 anchors = (
 {
-name = Anchor10;
+name = Anchor10_1;
 position = "{370, 583}";
 },
 {
-name = Anchor12;
+name = Anchor12_1;
 position = "{378, 0}";
 }
 );
@@ -5523,16 +5565,16 @@ unicode = 1C05;
 },
 {
 glyphname = uni1C05_1C25;
-lastChange = "2017-09-18 13:29:20 +0000";
+lastChange = "2022-04-25 08:08:05 +0000";
 layers = (
 {
 anchors = (
 {
-name = Anchor10;
+name = Anchor10_1;
 position = "{204, 583}";
 },
 {
-name = Anchor12;
+name = Anchor12_1;
 position = "{234, 0}";
 }
 );
@@ -5592,16 +5634,16 @@ rightKerningGroup = u1C15_1C25;
 },
 {
 glyphname = uni1C05_1C25_1C24;
-lastChange = "2017-09-18 13:29:20 +0000";
+lastChange = "2022-04-25 08:08:05 +0000";
 layers = (
 {
 anchors = (
 {
-name = Anchor10;
+name = Anchor10_1;
 position = "{204, 583}";
 },
 {
-name = Anchor12;
+name = Anchor12_1;
 position = "{234, 0}";
 }
 );
@@ -5681,16 +5723,16 @@ note = u1C05_1C25_1C24;
 },
 {
 glyphname = uni1C05_1C24;
-lastChange = "2017-09-18 13:29:20 +0000";
+lastChange = "2022-04-25 08:08:05 +0000";
 layers = (
 {
 anchors = (
 {
-name = Anchor10;
+name = Anchor10_1;
 position = "{204, 583}";
 },
 {
-name = Anchor12;
+name = Anchor12_1;
 position = "{234, 0}";
 }
 );
@@ -5894,16 +5936,16 @@ unicode = 1C0E;
 },
 {
 glyphname = uni1C0E_1C25;
-lastChange = "2017-09-18 13:29:20 +0000";
+lastChange = "2022-04-25 08:08:05 +0000";
 layers = (
 {
 anchors = (
 {
-name = Anchor10;
+name = Anchor10_1;
 position = "{304, 583}";
 },
 {
-name = Anchor12;
+name = Anchor12_1;
 position = "{304, 20}";
 }
 );
@@ -5991,16 +6033,16 @@ note = u1C0E_1C25;
 },
 {
 glyphname = uni1C0E_1C25_1C24;
-lastChange = "2017-09-18 13:29:20 +0000";
+lastChange = "2022-04-25 08:08:05 +0000";
 layers = (
 {
 anchors = (
 {
-name = Anchor10;
+name = Anchor10_1;
 position = "{304, 583}";
 },
 {
-name = Anchor12;
+name = Anchor12_1;
 position = "{304, 20}";
 }
 );
@@ -6113,16 +6155,16 @@ rightKerningGroup = u1C13_1C25_1C24;
 },
 {
 glyphname = uni1C0E_1C24;
-lastChange = "2017-09-18 13:29:20 +0000";
+lastChange = "2022-04-25 08:08:05 +0000";
 layers = (
 {
 anchors = (
 {
-name = Anchor10;
+name = Anchor10_1;
 position = "{304, 583}";
 },
 {
-name = Anchor12;
+name = Anchor12_1;
 position = "{304, 20}";
 }
 );
@@ -6322,16 +6364,16 @@ unicode = 1C10;
 },
 {
 glyphname = uni1C10_1C24;
-lastChange = "2017-09-18 13:29:20 +0000";
+lastChange = "2022-04-25 08:08:05 +0000";
 layers = (
 {
 anchors = (
 {
-name = Anchor10;
+name = Anchor10_1;
 position = "{304, 583}";
 },
 {
-name = Anchor12;
+name = Anchor12_1;
 position = "{300, 20}";
 }
 );
@@ -6530,16 +6572,16 @@ unicode = 1C0F;
 },
 {
 glyphname = uni1C0F_1C24;
-lastChange = "2017-09-18 13:29:20 +0000";
+lastChange = "2022-04-25 08:08:05 +0000";
 layers = (
 {
 anchors = (
 {
-name = Anchor10;
+name = Anchor10_1;
 position = "{296, 583}";
 },
 {
-name = Anchor12;
+name = Anchor12_1;
 position = "{296, 20}";
 }
 );
@@ -6686,16 +6728,16 @@ unicode = 1C1B;
 },
 {
 glyphname = uni1C1B_1C24;
-lastChange = "2017-09-18 13:29:20 +0000";
+lastChange = "2022-04-25 08:08:05 +0000";
 layers = (
 {
 anchors = (
 {
-name = Anchor10;
+name = Anchor10_1;
 position = "{265, 583}";
 },
 {
-name = Anchor12;
+name = Anchor12_1;
 position = "{265, 0}";
 }
 );
@@ -6950,16 +6992,16 @@ unicode = 1C21;
 },
 {
 glyphname = uni1C21_1C24;
-lastChange = "2017-09-18 13:29:20 +0000";
+lastChange = "2022-04-25 08:20:49 +0000";
 layers = (
 {
 anchors = (
 {
-name = Anchor10;
+name = Anchor10_1;
 position = "{334, 583}";
 },
 {
-name = Anchor12;
+name = Anchor12_1;
 position = "{334, 0}";
 }
 );
@@ -7057,6 +7099,8 @@ width = 940;
 leftKerningGroup = u1C13;
 note = u1C21_1C24;
 rightKerningGroup = u1C13_1C25_1C24;
+category = Letter;
+subCategory = Ligature;
 },
 {
 glyphname = uni1C0A;
@@ -7118,16 +7162,16 @@ unicode = 1C0A;
 },
 {
 glyphname = uni1C0A_1C24;
-lastChange = "2017-09-18 13:29:20 +0000";
+lastChange = "2022-04-25 08:08:05 +0000";
 layers = (
 {
 anchors = (
 {
-name = Anchor10;
+name = Anchor10_1;
 position = "{314, 583}";
 },
 {
-name = Anchor12;
+name = Anchor12_1;
 position = "{314, 0}";
 }
 );
@@ -7276,16 +7320,16 @@ unicode = 1C0B;
 },
 {
 glyphname = uni1C0B_1C24;
-lastChange = "2017-09-18 13:29:20 +0000";
+lastChange = "2022-04-25 08:08:05 +0000";
 layers = (
 {
 anchors = (
 {
-name = Anchor10;
+name = Anchor10_1;
 position = "{333, 583}";
 },
 {
-name = Anchor12;
+name = Anchor12_1;
 position = "{283, 0}";
 }
 );
@@ -7778,16 +7822,16 @@ unicode = 1C1F;
 },
 {
 glyphname = uni1C1F_1C24;
-lastChange = "2017-09-18 13:29:20 +0000";
+lastChange = "2022-04-25 08:08:05 +0000";
 layers = (
 {
 anchors = (
 {
-name = Anchor10;
+name = Anchor10_1;
 position = "{327, 583}";
 },
 {
-name = Anchor12;
+name = Anchor12_1;
 position = "{327, 0}";
 }
 );
@@ -10061,7 +10105,7 @@ subCategory = Nonspacing;
 },
 {
 glyphname = uni1C37;
-lastChange = "2017-09-18 13:29:20 +0000";
+lastChange = "2022-04-23 20:09:00 +0000";
 layers = (
 {
 anchors = (
@@ -10236,6 +10280,25 @@ width = 0;
 }
 );
 unicode = 200D;
+},
+{
+glyphname = uni1C37_uni1C2C;
+lastChange = "2022-04-25 07:55:31 +0000";
+layers = (
+{
+components = (
+{
+name = uni1C37;
+},
+{
+name = uni1C2C;
+transform = "{1, 0, 0, 1, 0, -191}";
+}
+);
+layerId = "677D40D0-0324-4315-A4A8-9988F2BAD02F";
+width = 0;
+}
+);
 }
 );
 instances = (
