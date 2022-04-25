@@ -1,8 +1,8 @@
 {
-.appVersion = "3112";
+.appVersion = "3120";
 .formatVersion = 3;
 DisplayStrings = (
-"𑥁"
+"𑤟/itouch-divesakuru"
 );
 classes = (
 {
@@ -881,6 +881,38 @@ lookup stack_top {
 } stack_top;
 ";
 tag = mkmk;
+},
+{
+code = "script diak;
+
+lookup distances {
+	position u1190E gatouch-divesakuru <0 0 -227 0>;
+	position u11924 matouch-divesakuru <0 0 -257 0>;
+	position u11925 ya_vowelItouch-divesakuru <0 0 -183 0>;
+	position u11925 yatouch-divesakuru <0 0 -183 0>;
+	position u11925 ya_utouch-divesakuru <0 0 -183 0>;
+	position u1190C katouch-divesakuru <0 0 -174 0>;
+	position u1190C tatouch-divesakuru <0 0 -170 0>;
+	position u1190C ttouch-divesakuru <0 0 -143 0>;
+	position u1190C ratouch-divesakuru <0 0 -169 0>;
+	position u1190C ktouch-divesakuru <0 0 -174 0>;
+	position u1191B katouch-divesakuru <0 0 -160 0>;
+	position u1191B patouch-divesakuru <0 0 -240 0>;
+	position u1191B atouch-divesakuru <0 0 -180 0>;
+	position u1191B ktouch-divesakuru <0 0 -180 0>;
+	position u1191F ttouch-divesakuru <0 0 -138 0>;
+	position u1191F etouch-divesakuru <0 0 -130 0>;
+	position u1191F itouch-divesakuru <0 0 -143 0>;
+	position u1191F ya_utouch-divesakuru <0 0 -135 0>;
+	position u1191F ntouch-divesakuru <0 0 -120 0>;
+	position u1191F ya_vowelItouch-divesakuru <0 0 -135 0>;
+	position u1191F natouch-divesakuru <0 0 -120 0>;
+	position u1191F yatouch-divesakuru <0 0 -135 0>;
+	position u1192C patouch-divesakuru <0 0 -113 0>;
+	position u1192C ptouch-divesakuru <0 0 -113 0>;
+	position u1192E llatouch-divesakuru <0 0 -142 0>;
+} distances;";
+tag = dist;
 }
 );
 fontMaster = (
@@ -17879,52 +17911,6 @@ UUID0 = 1;
 name = Regular;
 }
 );
-kerningLTR = {
-UUID0 = {
-u1190C = {
-"katouch-divesakuru" = -174;
-"ktouch-divesakuru" = -174;
-"ratouch-divesakuru" = -169;
-"tatouch-divesakuru" = -170;
-"ttouch-divesakuru" = -143;
-};
-u1190E = {
-"gatouch-divesakuru" = -227;
-};
-u1191B = {
-"atouch-divesakuru" = -180;
-"katouch-divesakuru" = -160;
-"ktouch-divesakuru" = -180;
-"patouch-divesakuru" = -240;
-};
-u1191F = {
-"etouch-divesakuru" = -130;
-"itouch-divesakuru" = -143;
-"natouch-divesakuru" = -120;
-"ntouch-divesakuru" = -120;
-"tatouch-divesakuru" = -190;
-"ttouch-divesakuru" = -138;
-"ya_utouch-divesakuru" = -135;
-"ya_vowelItouch-divesakuru" = -135;
-"yatouch-divesakuru" = -135;
-};
-u11924 = {
-"matouch-divesakuru" = -257;
-};
-u11925 = {
-"ya_utouch-divesakuru" = -183;
-"ya_vowelItouch-divesakuru" = -183;
-"yatouch-divesakuru" = -183;
-};
-u1192C = {
-"patouch-divesakuru" = -113;
-"ptouch-divesakuru" = -113;
-};
-u1192E = {
-"llatouch-divesakuru" = -142;
-};
-};
-};
 metrics = (
 {
 type = ascender;
