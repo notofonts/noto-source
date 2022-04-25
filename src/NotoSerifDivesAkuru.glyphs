@@ -2,7 +2,7 @@
 .appVersion = "3120";
 .formatVersion = 3;
 DisplayStrings = (
-"𑤟/itouch-divesakuru"
+"𑤥𑤳/u-divesakuru.00/ya_u-divesakuru"
 );
 classes = (
 {
@@ -232,22 +232,23 @@ tag = rlig;
 code = "script diak;
 
 lookup raConjuncts {
-#u11942
-sub u1190C u11927 by ka_medra-divesakuru;
-sub u11920 u11927 by pa_medra-divesakuru;
-sub u1192A u11927 by sha_medra-divesakuru;
-sub u1191F tatouch-divesakuru u11927 by na_ta_medra-divesakuru;
-sub sa_ta-divesakuru u11927 by sa_ta_medra-divesakuru;
-sub u1192C patouch-divesakuru u11927 by sa_pa_medra-divesakuru;
+#u11942 instead of u11927
+# ra and ya should be input as med-ra and med-ya, instead of the base letters which would then be replaced with medial forms.
+sub u1190C u11942 by ka_medra-divesakuru;
+sub u11920 u11942 by pa_medra-divesakuru;
+sub u1192A u11942 by sha_medra-divesakuru;
+sub u1191F tatouch-divesakuru u11942 by na_ta_medra-divesakuru;
+sub sa_ta-divesakuru u11942 by sa_ta_medra-divesakuru;
+sub u1192C patouch-divesakuru u11942 by sa_pa_medra-divesakuru;
 } raConjuncts;
 
 lookup yaConjuncts {
-#u11940
-sub u1191B u11925 by ta_medya-divesakuru;
-sub u1191D u11925 by da_medya-divesakuru;
-sub u1192C u11925 by sa_medya-divesakuru;
-sub u11925 u11925 by ya_medya-divesakuru;
-sub u11926 u11925 by yya_medya-divesakuru;
+#u11940 instead of u11925
+sub u1191B u11940 by ta_medya-divesakuru;
+sub u1191D u11940 by da_medya-divesakuru;
+sub u1192C u11940 by sa_medya-divesakuru;
+sub u11925 u11940 by ya_medya-divesakuru;
+sub u11926 u11940 by yya_medya-divesakuru;
 } yaConjuncts;
 
 lookup vowelI {
@@ -261,7 +262,7 @@ sub u11918 u11933' by uVowel-divesakuru.00;
 sub u11919 u11933' by uVowel-divesakuru.00;
 sub u11922 u11933' by uVowel-divesakuru.00;
 sub u11923 u11933' by uVowel-divesakuru.00;
- sub u1192F u11933' by uVowel-divesakuru.00;
+sub u1192F u11933' by uVowel-divesakuru.00;
 } vowelU;
 lookup vowelUU {
 sub u11918 u11934' by uuVowel-divesakuru.00;
@@ -339,8 +340,8 @@ lookup vowelSignI {
 sub u1191E u11931 by dha_vowelI-divesakuru;
 sub u11920 u11931 by pa_vowelI-divesakuru;
 sub u1192C u11931 by sa_vowelI-divesakuru;
-sub u11941 u1190C u11931 by ka_ra_vowelI-divesakuru;
-sub u11941 u1192A u11931 by sha_ra_vowelI-divesakuru;
+#sub u11941 u1190C u11931 by ka_ra_vowelI-divesakuru;
+#sub u11941 u1192A u11931 by sha_ra_vowelI-divesakuru;
 sub na_dha-divesakuru u11931 by na_dha_vowelI-divesakuru;
 sub u11926 u11931 by yya_vowelI-divesakuru;
 } vowelSignI;
@@ -11365,7 +11366,7 @@ width = 1197;
 },
 {
 glyphname = "sa_ta_medra-divesakuru";
-lastChange = "2022-02-03 16:08:24 +0000";
+lastChange = "2022-04-25 13:28:11 +0000";
 layers = (
 {
 anchors = (
