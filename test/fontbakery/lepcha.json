@@ -1,6 +1,16 @@
 {
     "tests": [
         {
+            "input": "ᰀ᰷ᰬᰀ᰷ᰤᰬ",
+            "expectation": "uni1C00=0+602|uni1C37_uni1C2C=0@-272,0+0|uni1C00_1C24=3+840|uni1C37_uni1C2C=3@-510,0+0",
+            "note": "Nukta-e ligature; googlefonts/noto-fonts#2321"
+        }
+        {
+            "input": "ᰁᰩᰁᰤᰩ",
+            "expectation": "uni1C29.short=0+200|uni1C01=0+541|uni1C29.short=2+200|uni1C01_1C24=2+783",
+            "note": "uni1C01_1C24 should get a short O; googlefonts/noto-fonts#1734"
+        }
+        {
             "expectation": "uni1C29=0+220|uni1C1E=0+590|uni1C15=2+741|uni1C2F=2@-370,0+0",
             "input": "ᰞᰩᰕᰯ",
             "note": "Added by SIESTA",
