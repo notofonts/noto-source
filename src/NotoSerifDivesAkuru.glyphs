@@ -1,9 +1,6 @@
 {
-.appVersion = "3120";
+.appVersion = "3124";
 .formatVersion = 3;
-DisplayStrings = (
-"𑤥𑤳/u-divesakuru.00/ya_u-divesakuru"
-);
 classes = (
 {
 code = "u11900 u11901 u11902 u11903 u11904 u11905 u11906 u11909 u1190C u1190D u1190E u1190F u11910 u11911 u11912 u11913 u11915 u11916 u11918 u11919 u1191A u1191B u1191C u1191D u1191E u1191F u11920 u11921 u11922 u11923 u11924 u11925 u11940 u11926 u11927 u11942 u11928 u11929 u1192A u1192B u1192C u1192D u1192E u1192F ka_tha-divesakuru ka_ra_vowelI-divesakuru ka_ssa-divesakuru ka_medra-divesakuru ka_vowelU-divesakuru ka_vowelUU-divesakuru nga_ga-divesakuru tta_tta-divesakuru tta_va-divesakuru nna_dda-divesakuru ta_tha-divesakuru ta_medya-divesakuru da_medya-divesakuru da_vowelU-divesakuru dha_medya-divesakuru dha_vowelI-divesakuru dha_vowelII-divesakuru dha_vowelU-divesakuru na_ta_medra-divesakuru na_tha-divesakuru na_dha-divesakuru na_dha_vowelI-divesakuru na_dha_vowelII-divesakuru na_dha_vowelU-divesakuru na_vowelU-divesakuru pa_medra-divesakuru pa_vowelI-divesakuru pa_vowelU-divesakuru pa_vowelUU-divesakuru ba_bha-divesakuru ma_ba-divesakuru ma_vowelU-divesakuru ya_medya-divesakuru ya_vowelI-divesakuru u-divesakuru.00 uu-divesakuru.00 yya_medya-divesakuru yya_vowelI-divesakuru ra_vowelU-divesakuru va_va-divesakuru sha_ra_vowelI-divesakuru sha_medra-divesakuru ssa_tta-divesakuru sa_ta-divesakuru sa_ta_medra-divesakuru sa_pa_medra-divesakuru sa_va-divesakuru sa_medya-divesakuru sa_vowelI-divesakuru sa_vowelU-divesakuru lla_vowelU-divesakuru nasal_ga-divesakuru k-divesakuru n-divesakuru s-divesakuru t-divesakuru tt-divesakuru tta_tt-divesakuru na_dh-divesakuru ma_b-divesakuru ya_u-divesakuru ch-divesakuru ssa_tt-divesakuru yy-divesakuru p-divesakuru ptouch-divesakuru b-divesakuru dh-divesakuru ktouch-divesakuru ntouch-divesakuru ttouch-divesakuru atouch-divesakuru etouch-divesakuru gatouch-divesakuru itouch-divesakuru katouch-divesakuru patouch-divesakuru llatouch-divesakuru matouch-divesakuru natouch-divesakuru ratouch-divesakuru tatouch-divesakuru yatouch-divesakuru ya_utouch-divesakuru ya_vowelItouch-divesakuru u11941 u11930 u11931 u11932 u11933 u11934";
@@ -235,6 +232,7 @@ lookup raConjuncts {
 #u11942 instead of u11927
 # ra and ya should be input as med-ra and med-ya, instead of the base letters which would then be replaced with medial forms.
 sub u1190C u11942 by ka_medra-divesakuru;
+sub katouch-divesakuru u11942 by ka_medra-divesakuru;
 sub u11920 u11942 by pa_medra-divesakuru;
 sub u1192A u11942 by sha_medra-divesakuru;
 sub u1191F tatouch-divesakuru u11942 by na_ta_medra-divesakuru;
@@ -320,11 +318,13 @@ sub virama-divesakuru atouch-divesakuru by atouch-divesakuru;
 
 lookup Conjuncts {
 sub u1190C virama-divesakuru u1192B by ka_ssa-divesakuru;
+sub katouch-divesakuru virama-divesakuru u1192B by ka_ssa-divesakuru;
 sub u11910 virama-divesakuru u1190E by nga_ga-divesakuru;
 sub u11916 virama-divesakuru u11916 by tta_tta-divesakuru;
 sub u11916 virama-divesakuru u11929 by tta_va-divesakuru;
 sub u1191A virama-divesakuru u11918 by nna_dda-divesakuru;
 sub u1190C virama-divesakuru u1191C by ka_tha-divesakuru;
+sub katouch-divesakuru virama-divesakuru u1191C by ka_tha-divesakuru;
 sub u1191B virama-divesakuru u1191C by ta_tha-divesakuru;
 sub u1191F virama-divesakuru u1191C by na_tha-divesakuru;
 sub u1191F virama-divesakuru u1191E by na_dha-divesakuru;
@@ -357,6 +357,7 @@ sub u11924 u11933 by ma_vowelU-divesakuru;
 sub u11920 u11933 by pa_vowelU-divesakuru;
 sub u1192C u11933 by sa_vowelU-divesakuru;
 sub u1190C u11933 by ka_vowelU-divesakuru;
+sub katouch-divesakuru u11933 by ka_vowelU-divesakuru;
 sub u1191F u11933 by na_vowelU-divesakuru;
 sub u11927 u11933 by ra_vowelU-divesakuru;
 sub u1191D u11933 by da_vowelU-divesakuru;
@@ -367,6 +368,7 @@ sub u11925 u11933 by u-divesakuru.00;
 
 lookup vowelSignUU {
 sub u1190C u11934 by ka_vowelUU-divesakuru;
+sub katouch-divesakuru u11934 by ka_vowelUU-divesakuru;
 sub u11920 u11934 by pa_vowelUU-divesakuru;
 sub u11925 u11934 by uu-divesakuru.00;
 } vowelSignUU;
@@ -893,11 +895,23 @@ lookup distances {
 	position u11925 yatouch-divesakuru <0 0 -183 0>;
 	position u11925 ya_utouch-divesakuru <0 0 -183 0>;
 	position u1190C katouch-divesakuru <0 0 -174 0>;
+	position u1190C ka_vowelU-divesakuru <0 0 -174 0>;
+	position u1190C ka_vowelUU-divesakuru <0 0 -174 0>;
+	position u1190C ka_tha-divesakuru <0 0 -174 0>;
+	position u1190C ka_ra_vowelI-divesakuru <0 0 -174 0>;
+	position u1190C ka_ssa-divesakuru <0 0 -174 0>;
+	position u1190C ka_medra-divesakuru <0 0 -174 0>;
 	position u1190C tatouch-divesakuru <0 0 -170 0>;
 	position u1190C ttouch-divesakuru <0 0 -143 0>;
 	position u1190C ratouch-divesakuru <0 0 -169 0>;
 	position u1190C ktouch-divesakuru <0 0 -174 0>;
 	position u1191B katouch-divesakuru <0 0 -160 0>;
+	position u1191B ka_vowelU-divesakuru <0 0 -160 0>;
+	position u1191B ka_vowelUU-divesakuru <0 0 -160 0>;
+	position u1191B ka_tha-divesakuru <0 0 -160 0>;
+	position u1191B ka_ra_vowelI-divesakuru <0 0 -160 0>;
+	position u1191B ka_ssa-divesakuru <0 0 -160 0>;
+	position u1191B ka_medra-divesakuru <0 0 -160 0>;
 	position u1191B patouch-divesakuru <0 0 -240 0>;
 	position u1191B atouch-divesakuru <0 0 -180 0>;
 	position u1191B ktouch-divesakuru <0 0 -180 0>;
@@ -912,7 +926,8 @@ lookup distances {
 	position u1192C patouch-divesakuru <0 0 -113 0>;
 	position u1192C ptouch-divesakuru <0 0 -113 0>;
 	position u1192E llatouch-divesakuru <0 0 -142 0>;
-} distances;";
+} distances;
+";
 tag = dist;
 }
 );
