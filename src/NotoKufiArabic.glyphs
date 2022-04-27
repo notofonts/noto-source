@@ -1,6 +1,9 @@
 {
 .appVersion = "3072";
-copyright = "Copyright 2019-2021 Google LLC. All Rights Reserved.";
+DisplayStrings = (
+"/lam_alef-ar.isol"
+);
+copyright = "Copyright 2019-2022 Google LLC. All Rights Reserved.";
 customParameters = (
 {
 name = unicodeRanges;
@@ -25,16 +28,20 @@ name = "Enforce Compatibility Check";
 value = 1;
 },
 {
+name = "Use Typo Metrics";
+value = 1;
+},
+{
 name = vendorID;
 value = GOOG;
 },
 {
 name = license;
-value = "This Font Software is licensed under the SIL Open Font License, Version 1.1. This Font Software is distributed on an \"AS IS\" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the SIL Open Font License for the specific language, permissions and limitations governing your use of this Font Software.";
+value = "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://scripts.sil.org/OFL";
 },
 {
 name = licenseURL;
-value = "http://scripts.sil.org/OFL";
+value = "https://scripts.sil.org/OFL";
 },
 {
 name = description;
@@ -46,7 +53,7 @@ value = "Noto is a trademark of Google LLC";
 },
 {
 name = versionString;
-value = "Version 2.106";
+value = "Version 2.107";
 },
 {
 name = Axes;
@@ -136728,7 +136735,7 @@ instanceInterpolations = {
 "15908E2C-AB74-4DC1-B0E7-8741EE8F4DA5" = 0.33333;
 "410295A1-92BC-4707-ABFC-13885E60878B" = 0.66667;
 };
-name = "Extra Light";
+name = ExtraLight;
 weightClass = ExtraLight;
 },
 {
@@ -136830,7 +136837,7 @@ instanceInterpolations = {
 "15908E2C-AB74-4DC1-B0E7-8741EE8F4DA5" = 0.33333;
 "307C4A58-79B8-4138-817C-FBEE21722E1A" = 0.66667;
 };
-name = "Semi Bold";
+name = SemiBold;
 weightClass = SemiBold;
 },
 {
@@ -136883,7 +136890,7 @@ instanceInterpolations = {
 "307C4A58-79B8-4138-817C-FBEE21722E1A" = 0.5;
 "DCD2D043-4E01-4B5D-9248-443A06E88532" = 0.5;
 };
-name = "Extra Bold";
+name = ExtraBold;
 weightClass = ExtraBold;
 },
 {
@@ -136932,5 +136939,5 @@ arBar = "148";
 };
 };
 versionMajor = 2;
-versionMinor = 106;
+versionMinor = 107;
 }
