@@ -245,6 +245,7 @@ sub u1192C patouch-divesakuru u11942 by sa_pa_medra-divesakuru;
 
 lookup yaConjuncts {
 #u11940 instead of u11925
+lookupflag IgnoreMarks;
 sub u1191B u11940 by ta_medya-divesakuru;
 sub tatouch-divesakuru u11940 by ta_medya-divesakuru;
 sub u1191D u11940 by da_medya-divesakuru;
@@ -255,6 +256,7 @@ sub u11926 u11940 by yya_medya-divesakuru;
 } yaConjuncts;
 
 lookup vowelI {
+lookupflag IgnoreMarks;
 sub u11925 u11931 by ya_vowelI-divesakuru;
 #sub yatouch-divesakuru u11931 by ya_vowelItouch-divesakuru;
 sub yatouch-divesakuru u11931 by ya_vowelI-divesakuru;
@@ -262,6 +264,7 @@ sub ka_medra-divesakuru u11931 by ka_ra_vowelI-divesakuru;
 sub sha_medra-divesakuru u11931 by sha_ra_vowelI-divesakuru;
 } vowelI;
 lookup vowelU {
+lookupflag IgnoreMarks;
 sub u11918 u11933' by uVowel-divesakuru.00;
 sub u11919 u11933' by uVowel-divesakuru.00;
 sub u11922 u11933' by uVowel-divesakuru.00;
@@ -269,6 +272,7 @@ sub u11923 u11933' by uVowel-divesakuru.00;
 sub u1192F u11933' by uVowel-divesakuru.00;
 } vowelU;
 lookup vowelUU {
+lookupflag IgnoreMarks;
 sub u11918 u11934' by uuVowel-divesakuru.00;
 sub u11919 u11934' by uuVowel-divesakuru.00;
 sub u11922 u11934' by uuVowel-divesakuru.00;
@@ -347,6 +351,7 @@ sub u11929 virama-divesakuru u11929 by va_va-divesakuru;
 } Conjuncts;
 
 lookup vowelSignI {
+lookupflag IgnoreMarks;
 sub u1191E u11931 by dha_vowelI-divesakuru;
 sub u11920 u11931 by pa_vowelI-divesakuru;
 sub patouch-divesakuru u11931 by pa_vowelI-divesakuru;
@@ -358,11 +363,13 @@ sub u11926 u11931 by yya_vowelI-divesakuru;
 } vowelSignI;
 
 lookup vowelSignII {
+lookupflag IgnoreMarks;
 sub u1191E u11932 by dha_vowelII-divesakuru;
 sub na_dha-divesakuru u11932 by na_dha_vowelII-divesakuru;
 } vowelSignII;
 
 lookup vowelSignU {
+lookupflag IgnoreMarks;
 sub u1191E u11933 by dha_vowelU-divesakuru;
 sub u11924 u11933 by ma_vowelU-divesakuru;
 sub matouch-divesakuru u11933 by ma_vowelU-divesakuru;
@@ -383,6 +390,7 @@ sub u11925 u11933 by u-divesakuru.00;
 } vowelSignU;
 
 lookup vowelSignUU {
+lookupflag IgnoreMarks;
 sub u1190C u11934 by ka_vowelUU-divesakuru;
 sub katouch-divesakuru u11934 by ka_vowelUU-divesakuru;
 sub u11920 u11934 by pa_vowelUU-divesakuru;
@@ -398,6 +406,7 @@ tag = cjct;
 code = "script diak;
 
 lookup halantForms {
+lookupflag IgnoreMarks;
 sub u1190C u1193D by k-divesakuru;
 sub u11912 u1193D by ch-divesakuru;
 sub u11916 u1193D by tt-divesakuru;
