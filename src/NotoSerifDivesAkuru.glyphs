@@ -356,101 +356,7 @@ sa_medya-divesakuru
 sa_vowelI-divesakuru
 sa_vowelU-divesakuru
 lla_vowelU-divesakuru
-nasal_ga-divesakuru
-atouch-divesakuru
-etouch-divesakuru
-gatouch-divesakuru
-itouch-divesakuru
-katouch-divesakuru
-patouch-divesakuru
-llatouch-divesakuru
-matouch-divesakuru
-natouch-divesakuru
-ratouch-divesakuru
-satouch-divesakuru
-tatouch-divesakuru
-yatouch-divesakuru
-ya_vowelItouch-divesakuru
-ka_ra_vowelItouch-divesakuru
-ka_medratouch-divesakuru
-ka_ssatouch-divesakuru
-ka_thatouch-divesakuru
-ka_vowelUUtouch-divesakuru
-ka_vowelUtouch-divesakuru
-nga_gatouch-divesakuru
-tta_ttatouch-divesakuru
-tta_vatouch-divesakuru
-nna_ddatouch-divesakuru
-ta_medyatouch-divesakuru
-ta_thatouch-divesakuru
-da_medyatouch-divesakuru
-da_vowelUtouch-divesakuru
-dha_medyatouch-divesakuru
-dha_vowelIItouch-divesakuru
-dha_vowelItouch-divesakuru
-dha_vowelUtouch-divesakuru
-na_dhatouch-divesakuru
-na_ta_medratouch-divesakuru
-na_dha_vowelIItouch-divesakuru
-na_dha_vowelItouch-divesakuru
-na_dha_vowelUtouch-divesakuru
-na_thatouch-divesakuru
-na_vowelUtouch-divesakuru
-pa_medratouch-divesakuru
-pa_vowelItouch-divesakuru
-pa_vowelUUtouch-divesakuru
-pa_vowelUtouch-divesakuru
-ba_bhatouch-divesakuru
-ma_batouch-divesakuru
-ma_vowelUtouch-divesakuru
-ya_medyatouch-divesakuru
-yya_medyatouch-divesakuru
-yya_vowelItouch-divesakuru
-ra_vowelUtouch-divesakuru
-va_vatouch-divesakuru
-sha_ra_vowelItouch-divesakuru
-sha_medratouch-divesakuru
-ssa_ttatouch-divesakuru
-sa_ta_medratouch-divesakuru
-sa_pa_medratouch-divesakuru
-sa_medyatouch-divesakuru
-sa_tatouch-divesakuru
-sa_vatouch-divesakuru
-sa_vowelItouch-divesakuru
-sa_vowelUtouch-divesakuru
-lla_vowelUtouch-divesakuru
-utouch-divesakuru.00
-uutouch-divesakuru.00
-nasal_gatouch-divesakuru
-ssatouch-divesakuru
-aatouch-divesakuru
-iitouch-divesakuru
-utouch-divesakuru
-uutouch-divesakuru
-otouch-divesakuru
-khatouch-divesakuru
-ghatouch-divesakuru
-ngatouch-divesakuru
-catouch-divesakuru
-chatouch-divesakuru
-jatouch-divesakuru
-nyatouch-divesakuru
-ttatouch-divesakuru
-ddatouch-divesakuru
-ddhatouch-divesakuru
-nnatouch-divesakuru
-thatouch-divesakuru
-datouch-divesakuru
-dhatouch-divesakuru
-phatouch-divesakuru
-batouch-divesakuru
-bhatouch-divesakuru
-yyatouch-divesakuru
-latouch-divesakuru
-vatouch-divesakuru
-shatouch-divesakuru
-hatouch-divesakuru
-zatouch-divesakuru";
+nasal_ga-divesakuru";
 name = BaseSub;
 }
 );
@@ -676,15 +582,15 @@ lookupflag UseMarkFilteringSet [u11942 virama-divesakuru];
 #u11942 instead of u11927
 # ra and ya should be input as med-ra and med-ya, instead of the base letters which would then be replaced with medial forms.
 sub u1190C u11942 by ka_medra-divesakuru;
-sub katouch-divesakuru u11942 by ka_medra-divesakuru;
+sub katouch-divesakuru u11942 by ka_medratouch-divesakuru;
 sub u11920 u11942 by pa_medra-divesakuru;
-sub patouch-divesakuru u11942 by pa_medra-divesakuru;
+sub patouch-divesakuru u11942 by pa_medratouch-divesakuru;
 sub u1192A u11942 by sha_medra-divesakuru;
 sub u1191F tatouch-divesakuru u11942 by na_ta_medra-divesakuru;
-sub natouch-divesakuru tatouch-divesakuru u11942 by na_ta_medra-divesakuru;
+sub natouch-divesakuru tatouch-divesakuru u11942 by na_ta_medratouch-divesakuru;
 sub sa_ta-divesakuru u11942 by sa_ta_medra-divesakuru;
 sub u1192C patouch-divesakuru u11942 by sa_pa_medra-divesakuru;
-sub satouch-divesakuru patouch-divesakuru u11942 by sa_pa_medra-divesakuru;
+sub satouch-divesakuru patouch-divesakuru u11942 by sa_pa_medratouch-divesakuru;
 } raConjuncts;
 
 lookup yaConjuncts {
@@ -693,19 +599,24 @@ lookupflag IgnoreMarks;
 sub u1191B u11940 by ta_medya-divesakuru;
 sub tatouch-divesakuru u11940 by ta_medyatouch-divesakuru;
 sub u1191D u11940 by da_medya-divesakuru;
+sub datouch-divesakuru u11940 by da_medyatouch-divesakuru;
 sub u1192C u11940 by sa_medya-divesakuru;
+sub satouch-divesakuru u11940 by sa_medyatouch-divesakuru;
 sub u11925 u11940 by ya_medya-divesakuru;
 sub yatouch-divesakuru u11940 by ya_medyatouch-divesakuru;
 sub u11926 u11940 by yya_medya-divesakuru;
+sub yyatouch-divesakuru u11940 by yya_medyatouch-divesakuru;
 } yaConjuncts;
 
 lookup vowelI {
 lookupflag IgnoreMarks;
 sub u11925 u11931 by ya_vowelI-divesakuru;
 #sub yatouch-divesakuru u11931 by ya_vowelItouch-divesakuru;
-sub yatouch-divesakuru u11931 by ya_vowelI-divesakuru;
+sub yatouch-divesakuru u11931 by ya_vowelItouch-divesakuru;
 sub ka_medra-divesakuru u11931 by ka_ra_vowelI-divesakuru;
+sub ka_medratouch-divesakuru u11931 by ka_ra_vowelItouch-divesakuru;
 sub sha_medra-divesakuru u11931 by sha_ra_vowelI-divesakuru;
+sub sha_medratouch-divesakuru u11931 by sha_ra_vowelItouch-divesakuru;
 } vowelI;
 lookup vowelU {
 lookupflag IgnoreMarks;
@@ -739,39 +650,61 @@ lookupflag UseMarkFilteringSet [virama-divesakuru];
 sub @BaseSub virama-divesakuru @LeftTouching' by @TouchingForms;
 } TouchingForms;
 
+#Subs glyph with \"touch\" when preceded by \"touch\" forms.
+lookup TouchingForms3 {
+lookupflag UseMarkFilteringSet [virama-divesakuru];
+sub @TouchingForms virama-divesakuru @LeftTouching' by @TouchingForms;
+} TouchingForms3;
+
 #Applies independent ligated conjuncts
 lookup LigatedConjuncts {
 lookupflag UseMarkFilteringSet [virama-divesakuru];
-sub u1190C virama-divesakuru u1192B by ka_ssa-divesakuru;
+#sub u1190C virama-divesakuru u1192B by ka_ssa-divesakuru;
 sub u1190C virama-divesakuru ssatouch-divesakuru by ka_ssa-divesakuru;
-#sub katouch-divesakuru virama-divesakuru u1192B by ka_ssa-divesakuru;
-sub u11910 virama-divesakuru u1190E by nga_ga-divesakuru;
+sub katouch-divesakuru virama-divesakuru ssatouch-divesakuru by ka_ssatouch-divesakuru;
+#sub u11910 virama-divesakuru u1190E by nga_ga-divesakuru;
 sub u11910 virama-divesakuru gatouch-divesakuru by nga_ga-divesakuru;
-sub u11916 virama-divesakuru u11916 by tta_tta-divesakuru;
-sub u11916 virama-divesakuru u11929 by tta_va-divesakuru;
-sub u1191A virama-divesakuru u11918 by nna_dda-divesakuru;
-sub u1190C virama-divesakuru u1191C by ka_tha-divesakuru;
-sub katouch-divesakuru virama-divesakuru u1191C by ka_tha-divesakuru;
-sub u1191B virama-divesakuru u1191C by ta_tha-divesakuru;
-#sub tatouch-divesakuru virama-divesakuru u1191C by ta_tha-divesakuru;
-sub u1191F virama-divesakuru u1191C by na_tha-divesakuru;
-sub natouch-divesakuru virama-divesakuru u1191C by na_tha-divesakuru;
-sub u1191F virama-divesakuru u1191E by na_dha-divesakuru;
-sub natouch-divesakuru virama-divesakuru u1191E by na_dha-divesakuru;
-sub u11924 virama-divesakuru u11922 by ma_ba-divesakuru;
-sub matouch-divesakuru virama-divesakuru u11922 by ma_ba-divesakuru;
-sub u11922 virama-divesakuru u11923 by ba_bha-divesakuru;
-sub u1192B virama-divesakuru u11916 by ssa_tta-divesakuru;
-sub u1192C virama-divesakuru u11929 by sa_va-divesakuru;
+sub ngatouch-divesakuru virama-divesakuru gatouch-divesakuru by nga_gatouch-divesakuru;
+#sub u11916 virama-divesakuru u11916 by tta_tta-divesakuru;
+sub u11916 virama-divesakuru ttatouch-divesakuru by tta_tta-divesakuru;
+sub ttatouch-divesakuru virama-divesakuru ttatouch-divesakuru by tta_ttatouch-divesakuru;
+#sub u11916 virama-divesakuru u11929 by tta_va-divesakuru;
+sub u11916 virama-divesakuru vatouch-divesakuru by tta_va-divesakuru;
+sub ttatouch-divesakuru virama-divesakuru vatouch-divesakuru by tta_vatouch-divesakuru;
+#sub u1191A virama-divesakuru u11918 by nna_dda-divesakuru;
+sub u1191A virama-divesakuru ddatouch-divesakuru by nna_dda-divesakuru;
+sub nnatouch-divesakuru virama-divesakuru ddatouch-divesakuru by nna_ddatouch-divesakuru;
+#sub u1190C virama-divesakuru u1191C by ka_tha-divesakuru;
+sub u1190C virama-divesakuru thatouch-divesakuru by ka_tha-divesakuru;
+sub katouch-divesakuru virama-divesakuru thatouch-divesakuru by ka_thatouch-divesakuru;
+#sub u1191B virama-divesakuru u1191C by ta_tha-divesakuru;
+sub u1191B virama-divesakuru thatouch-divesakuru by ta_tha-divesakuru;
+sub tatouch-divesakuru virama-divesakuru thatouch-divesakuru by ta_thatouch-divesakuru;
+#sub u1191F virama-divesakuru u1191C by na_tha-divesakuru;
+sub u1191F virama-divesakuru thatouch-divesakuru by na_tha-divesakuru;
+sub natouch-divesakuru virama-divesakuru thatouch-divesakuru by na_thatouch-divesakuru;
+#sub u1191F virama-divesakuru u1191E by na_dha-divesakuru;
+sub u1191F virama-divesakuru dhatouch-divesakuru by na_dha-divesakuru;
+sub natouch-divesakuru virama-divesakuru dhatouch-divesakuru by na_dhatouch-divesakuru;
+#sub u11924 virama-divesakuru u11922 by ma_ba-divesakuru;
+sub u11924 virama-divesakuru batouch-divesakuru by ma_ba-divesakuru;
+sub matouch-divesakuru virama-divesakuru batouch-divesakuru by ma_batouch-divesakuru;
+#sub u11922 virama-divesakuru u11923 by ba_bha-divesakuru;
+sub u11922 virama-divesakuru bhatouch-divesakuru by ba_bha-divesakuru;
+sub batouch-divesakuru virama-divesakuru bhatouch-divesakuru by ba_bhatouch-divesakuru;
+#sub u1192B virama-divesakuru u11916 by ssa_tta-divesakuru;
+sub u1192B virama-divesakuru ttatouch-divesakuru by ssa_tta-divesakuru;
+sub ssatouch-divesakuru virama-divesakuru ttatouch-divesakuru by ssa_ttatouch-divesakuru;
+#sub u1192C virama-divesakuru u11929 by sa_va-divesakuru;
+sub u1192C virama-divesakuru vatouch-divesakuru by sa_va-divesakuru;
+sub satouch-divesakuru virama-divesakuru vatouch-divesakuru by sa_vatouch-divesakuru;
 #sub u1192C virama-divesakuru u1191B by sa_ta-divesakuru;
 sub u1192C virama-divesakuru tatouch-divesakuru by sa_ta-divesakuru;
-sub u11929 virama-divesakuru u11929 by va_va-divesakuru;
+sub satouch-divesakuru virama-divesakuru tatouch-divesakuru by sa_tatouch-divesakuru;
+#sub u11929 virama-divesakuru u11929 by va_va-divesakuru;
+sub u11929 virama-divesakuru vatouch-divesakuru by va_va-divesakuru;
+sub vatouch-divesakuru virama-divesakuru vatouch-divesakuru by va_vatouch-divesakuru;
 } LigatedConjuncts;
-
-lookup TouchingForms2 {
-lookupflag UseMarkFilteringSet [virama-divesakuru];
-sub @BaseSub virama-divesakuru @LeftTouching' by @TouchingForms;
-} TouchingForms2;
 
 #Removes virama
 lookup touchingConjuncts {
@@ -871,123 +804,11 @@ sub virama-divesakuru hatouch-divesakuru by hatouch-divesakuru;
 sub virama-divesakuru zatouch-divesakuru by zatouch-divesakuru;
 } touchingConjuncts;
 
-#Applies ligated conjunct for mid-conjunct forms
-lookup LigatedConjuncts2 {
-sub katouch-divesakuru virama-divesakuru u1192B by ka_ssa-divesakuru;
-sub tatouch-divesakuru virama-divesakuru u1191C by ta_tha-divesakuru;
-sub satouch-divesakuru virama-divesakuru u1191B by sa_ta-divesakuru;
-sub satouch-divesakuru virama-divesakuru tatouch-divesakuru by sa_ta-divesakuru;
-} LigatedConjuncts2;
-
-#Subs glyph with \"touch\" when preceded by \"touch\" forms.
-lookup TouchingForms3 {
-lookupflag UseMarkFilteringSet [virama-divesakuru];
-sub @TouchingForms virama-divesakuru @LeftTouching' by @TouchingForms;
-} TouchingForms3;
-
-#Removes virama
-lookup touchingConjuncts2 {
-sub virama-divesakuru atouch-divesakuru by atouch-divesakuru;
-sub virama-divesakuru etouch-divesakuru by etouch-divesakuru;
-sub virama-divesakuru gatouch-divesakuru by gatouch-divesakuru;
-sub virama-divesakuru itouch-divesakuru by itouch-divesakuru;
-sub virama-divesakuru katouch-divesakuru by katouch-divesakuru;
-sub virama-divesakuru patouch-divesakuru by patouch-divesakuru;
-sub virama-divesakuru llatouch-divesakuru by llatouch-divesakuru;
-sub virama-divesakuru matouch-divesakuru by matouch-divesakuru;
-sub virama-divesakuru natouch-divesakuru by natouch-divesakuru;
-sub virama-divesakuru ratouch-divesakuru by ratouch-divesakuru;
-sub virama-divesakuru satouch-divesakuru by satouch-divesakuru;
-sub virama-divesakuru tatouch-divesakuru by tatouch-divesakuru;
-sub virama-divesakuru yatouch-divesakuru by yatouch-divesakuru;
-sub virama-divesakuru ya_vowelItouch-divesakuru by ya_vowelItouch-divesakuru;
-sub virama-divesakuru ka_ra_vowelItouch-divesakuru by ka_ra_vowelItouch-divesakuru;
-sub virama-divesakuru ka_medratouch-divesakuru by ka_medratouch-divesakuru;
-sub virama-divesakuru ka_ssatouch-divesakuru by ka_ssatouch-divesakuru;
-sub virama-divesakuru ka_thatouch-divesakuru by ka_thatouch-divesakuru;
-sub virama-divesakuru ka_vowelUUtouch-divesakuru by ka_vowelUUtouch-divesakuru;
-sub virama-divesakuru ka_vowelUtouch-divesakuru by ka_vowelUtouch-divesakuru;
-sub virama-divesakuru nga_gatouch-divesakuru by nga_gatouch-divesakuru;
-sub virama-divesakuru tta_ttatouch-divesakuru by tta_ttatouch-divesakuru;
-sub virama-divesakuru tta_vatouch-divesakuru by tta_vatouch-divesakuru;
-sub virama-divesakuru nna_ddatouch-divesakuru by nna_ddatouch-divesakuru;
-sub virama-divesakuru ta_medyatouch-divesakuru by ta_medyatouch-divesakuru;
-sub virama-divesakuru ta_thatouch-divesakuru by ta_thatouch-divesakuru;
-sub virama-divesakuru da_medyatouch-divesakuru by da_medyatouch-divesakuru;
-sub virama-divesakuru da_vowelUtouch-divesakuru by da_vowelUtouch-divesakuru;
-sub virama-divesakuru dha_medyatouch-divesakuru by dha_medyatouch-divesakuru;
-sub virama-divesakuru dha_vowelIItouch-divesakuru by dha_vowelIItouch-divesakuru;
-sub virama-divesakuru dha_vowelItouch-divesakuru by dha_vowelItouch-divesakuru;
-sub virama-divesakuru dha_vowelUtouch-divesakuru by dha_vowelUtouch-divesakuru;
-sub virama-divesakuru na_dhatouch-divesakuru by na_dhatouch-divesakuru;
-sub virama-divesakuru na_ta_medratouch-divesakuru by na_ta_medratouch-divesakuru;
-sub virama-divesakuru na_dha_vowelIItouch-divesakuru by na_dha_vowelIItouch-divesakuru;
-sub virama-divesakuru na_dha_vowelItouch-divesakuru by na_dha_vowelItouch-divesakuru;
-sub virama-divesakuru na_dha_vowelUtouch-divesakuru by na_dha_vowelUtouch-divesakuru;
-sub virama-divesakuru na_thatouch-divesakuru by na_thatouch-divesakuru;
-sub virama-divesakuru na_vowelUtouch-divesakuru by na_vowelUtouch-divesakuru;
-sub virama-divesakuru pa_medratouch-divesakuru by pa_medratouch-divesakuru;
-sub virama-divesakuru pa_vowelItouch-divesakuru by pa_vowelItouch-divesakuru;
-sub virama-divesakuru pa_vowelUUtouch-divesakuru by pa_vowelUUtouch-divesakuru;
-sub virama-divesakuru pa_vowelUtouch-divesakuru by pa_vowelUtouch-divesakuru;
-sub virama-divesakuru ba_bhatouch-divesakuru by ba_bhatouch-divesakuru;
-sub virama-divesakuru ma_batouch-divesakuru by ma_batouch-divesakuru;
-sub virama-divesakuru ma_vowelUtouch-divesakuru by ma_vowelUtouch-divesakuru;
-sub virama-divesakuru ya_medyatouch-divesakuru by ya_medyatouch-divesakuru;
-sub virama-divesakuru yya_medyatouch-divesakuru by yya_medyatouch-divesakuru;
-sub virama-divesakuru yya_vowelItouch-divesakuru by yya_vowelItouch-divesakuru;
-sub virama-divesakuru ra_vowelUtouch-divesakuru by ra_vowelUtouch-divesakuru;
-sub virama-divesakuru va_vatouch-divesakuru by va_vatouch-divesakuru;
-sub virama-divesakuru sha_ra_vowelItouch-divesakuru by sha_ra_vowelItouch-divesakuru;
-sub virama-divesakuru sha_medratouch-divesakuru by sha_medratouch-divesakuru;
-sub virama-divesakuru ssa_ttatouch-divesakuru by ssa_ttatouch-divesakuru;
-sub virama-divesakuru sa_ta_medratouch-divesakuru by sa_ta_medratouch-divesakuru;
-sub virama-divesakuru sa_pa_medratouch-divesakuru by sa_pa_medratouch-divesakuru;
-sub virama-divesakuru sa_medyatouch-divesakuru by sa_medyatouch-divesakuru;
-sub virama-divesakuru sa_tatouch-divesakuru by sa_tatouch-divesakuru;
-sub virama-divesakuru sa_vatouch-divesakuru by sa_vatouch-divesakuru;
-sub virama-divesakuru sa_vowelItouch-divesakuru by sa_vowelItouch-divesakuru;
-sub virama-divesakuru sa_vowelUtouch-divesakuru by sa_vowelUtouch-divesakuru;
-sub virama-divesakuru lla_vowelUtouch-divesakuru by lla_vowelUtouch-divesakuru;
-sub virama-divesakuru utouch-divesakuru.00 by utouch-divesakuru.00;
-sub virama-divesakuru uutouch-divesakuru.00 by uutouch-divesakuru.00;
-sub virama-divesakuru nasal_gatouch-divesakuru by nasal_gatouch-divesakuru;
-sub virama-divesakuru ssatouch-divesakuru by ssatouch-divesakuru;
-sub virama-divesakuru aatouch-divesakuru by aatouch-divesakuru;
-sub virama-divesakuru iitouch-divesakuru by iitouch-divesakuru;
-sub virama-divesakuru utouch-divesakuru by utouch-divesakuru;
-sub virama-divesakuru uutouch-divesakuru by uutouch-divesakuru;
-sub virama-divesakuru otouch-divesakuru by otouch-divesakuru;
-sub virama-divesakuru khatouch-divesakuru by khatouch-divesakuru;
-sub virama-divesakuru ghatouch-divesakuru by ghatouch-divesakuru;
-sub virama-divesakuru ngatouch-divesakuru by ngatouch-divesakuru;
-sub virama-divesakuru catouch-divesakuru by catouch-divesakuru;
-sub virama-divesakuru chatouch-divesakuru by chatouch-divesakuru;
-sub virama-divesakuru jatouch-divesakuru by jatouch-divesakuru;
-sub virama-divesakuru nyatouch-divesakuru by nyatouch-divesakuru;
-sub virama-divesakuru ttatouch-divesakuru by ttatouch-divesakuru;
-sub virama-divesakuru ddatouch-divesakuru by ddatouch-divesakuru;
-sub virama-divesakuru ddhatouch-divesakuru by ddhatouch-divesakuru;
-sub virama-divesakuru nnatouch-divesakuru by nnatouch-divesakuru;
-sub virama-divesakuru thatouch-divesakuru by thatouch-divesakuru;
-sub virama-divesakuru datouch-divesakuru by datouch-divesakuru;
-sub virama-divesakuru dhatouch-divesakuru by dhatouch-divesakuru;
-sub virama-divesakuru phatouch-divesakuru by phatouch-divesakuru;
-sub virama-divesakuru batouch-divesakuru by batouch-divesakuru;
-sub virama-divesakuru bhatouch-divesakuru by bhatouch-divesakuru;
-sub virama-divesakuru yyatouch-divesakuru by yyatouch-divesakuru;
-sub virama-divesakuru latouch-divesakuru by latouch-divesakuru;
-sub virama-divesakuru vatouch-divesakuru by vatouch-divesakuru;
-sub virama-divesakuru shatouch-divesakuru by shatouch-divesakuru;
-sub virama-divesakuru hatouch-divesakuru by hatouch-divesakuru;
-sub virama-divesakuru zatouch-divesakuru by zatouch-divesakuru;
-} touchingConjuncts2;
-
 lookup vowelSignI {
 lookupflag IgnoreMarks;
 sub u1191E u11931 by dha_vowelI-divesakuru;
 sub u11920 u11931 by pa_vowelI-divesakuru;
-sub patouch-divesakuru u11931 by pa_vowelI-divesakuru;
+sub patouch-divesakuru u11931 by pa_vowelItouch-divesakuru;
 sub u1192C u11931 by sa_vowelI-divesakuru;
 #sub u11941 u1190C u11931 by ka_ra_vowelI-divesakuru;
 #sub u11941 u1192A u11931 by sha_ra_vowelI-divesakuru;
@@ -1005,19 +826,21 @@ lookup vowelSignU {
 lookupflag IgnoreMarks;
 sub u1191E u11933 by dha_vowelU-divesakuru;
 sub u11924 u11933 by ma_vowelU-divesakuru;
-sub matouch-divesakuru u11933 by ma_vowelU-divesakuru;
+sub matouch-divesakuru u11933 by ma_vowelUtouch-divesakuru;
 sub u11920 u11933 by pa_vowelU-divesakuru;
-sub patouch-divesakuru u11933 by pa_vowelU-divesakuru;
+sub patouch-divesakuru u11933 by pa_vowelUtouch-divesakuru;
 sub u1192C u11933 by sa_vowelU-divesakuru;
+sub satouch-divesakuru u11933 by sa_vowelUtouch-divesakuru;
 sub u1190C u11933 by ka_vowelU-divesakuru;
-sub katouch-divesakuru u11933 by ka_vowelU-divesakuru;
+sub katouch-divesakuru u11933 by ka_vowelUtouch-divesakuru;
 sub u1191F u11933 by na_vowelU-divesakuru;
-sub natouch-divesakuru u11933 by na_vowelU-divesakuru;
+sub natouch-divesakuru u11933 by na_vowelUtouch-divesakuru;
 sub u11927 u11933 by ra_vowelU-divesakuru;
-sub ratouch-divesakuru u11933 by ra_vowelU-divesakuru;
+sub ratouch-divesakuru u11933 by ra_vowelUtouch-divesakuru;
 sub u1191D u11933 by da_vowelU-divesakuru;
+sub datouch-divesakuru u11933 by da_vowelUtouch-divesakuru;
 sub u1192E u11933 by lla_vowelU-divesakuru;
-sub llatouch-divesakuru u11933 by lla_vowelU-divesakuru;
+sub llatouch-divesakuru u11933 by lla_vowelUtouch-divesakuru;
 sub na_dha-divesakuru u11933 by na_dha_vowelU-divesakuru;
 sub u11925 u11933 by u-divesakuru.00;
 } vowelSignU;
@@ -1025,9 +848,9 @@ sub u11925 u11933 by u-divesakuru.00;
 lookup vowelSignUU {
 lookupflag IgnoreMarks;
 sub u1190C u11934 by ka_vowelUU-divesakuru;
-sub katouch-divesakuru u11934 by ka_vowelUU-divesakuru;
+sub katouch-divesakuru u11934 by ka_vowelUUtouch-divesakuru;
 sub u11920 u11934 by pa_vowelUU-divesakuru;
-sub patouch-divesakuru u11934 by pa_vowelUU-divesakuru;
+sub patouch-divesakuru u11934 by pa_vowelUUtouch-divesakuru;
 sub u11925 u11934 by uu-divesakuru.00;
 } vowelSignUU;
 
@@ -1051,20 +874,25 @@ sub u1191E u1193D by dh-divesakuru;
 sub u11922 u1193D by b-divesakuru;
 sub u11925 u1193D by ya_u-divesakuru;
 sub tta_tta-divesakuru u1193D by tta_tt-divesakuru;
+sub tta_ttatouch-divesakuru u1193D by tta_tttouch-divesakuru;
 sub na_dha-divesakuru u1193D by na_dh-divesakuru;
+sub na_dhatouch-divesakuru u1193D by na_dhtouch-divesakuru;
 sub ma_ba-divesakuru u1193D by ma_b-divesakuru;
+sub ma_batouch-divesakuru u1193D by ma_btouch-divesakuru;
 sub tatouch-divesakuru u1193D by ttouch-divesakuru;
-sub tatouch-divesakuru u1193D by t-divesakuru;
+#sub tatouch-divesakuru u1193D by t-divesakuru;
 sub patouch-divesakuru u1193D by ptouch-divesakuru;
-sub patouch-divesakuru u1193D by p-divesakuru;
+#sub patouch-divesakuru u1193D by p-divesakuru;
 sub katouch-divesakuru u1193D by ktouch-divesakuru;
-sub katouch-divesakuru u1193D by k-divesakuru;
+#sub katouch-divesakuru u1193D by k-divesakuru;
 sub natouch-divesakuru u1193D by ntouch-divesakuru;
-sub natouch-divesakuru u1193D by n-divesakuru;
+#sub natouch-divesakuru u1193D by n-divesakuru;
 sub yatouch-divesakuru u1193D by ya_utouch-divesakuru;
-sub yatouch-divesakuru u1193D by ya_u-divesakuru;
+#sub yatouch-divesakuru u1193D by ya_u-divesakuru;
 sub ssa_tta-divesakuru u1193D by ssa_tt-divesakuru;
+#sub ssa_ttatouch-divesakuru u1193D by ssa_tt-divesakuru;
 sub u11926 u1193D by yy-divesakuru;
+sub yyatouch-divesakuru u1193D by yytouch-divesakuru;
 } halantForms;
 
 lookup halant_00 {
@@ -1595,17 +1423,17 @@ code = "script diak;
 
 @A_touch_left = [atouch-divesakuru itouch-divesakuru aatouch-divesakuru iitouch-divesakuru];
 
-@NA_touch_left = [ntouch-divesakuru natouch-divesakuru nna_ddatouch-divesakuru na_dhtouch-divesakuru na_ta_medratouch-divesakuru na_dha_vowelIItouch-divesakuru na_dha_vowelItouch-divesakuru na_dha_vowelUtouch-divesakuru na_thatouch-divesakuru na_vowelUtouch-divesakuru nyatouch-divesakuru];
+@NA_touch_left = [ntouch-divesakuru natouch-divesakuru nna_ddatouch-divesakuru na_dhtouch-divesakuru na_ta_medratouch-divesakuru na_dha_vowelIItouch-divesakuru na_dha_vowelItouch-divesakuru na_dha_vowelUtouch-divesakuru na_thatouch-divesakuru na_vowelUtouch-divesakuru nyatouch-divesakuru nnatouch-divesakuru];
 
 @LLA_touch_left = [nga_gatouch-divesakuru da_medyatouch-divesakuru da_vowelUtouch-divesakuru lla_vowelUtouch-divesakuru nasal_gatouch-divesakuru ngatouch-divesakuru datouch-divesakuru];
 
-@KA_touch_left = [ka_ra_vowelItouch-divesakuru ka_medratouch-divesakuru ka_thatouch-divesakuru ka_vowelUUtouch-divesakuru ka_vowelUtouch-divesakuru ktouch-divesakuru katouch-divesakuru ka_ssatouch-divesakuru];
+@KA_touch_left = [ka_ra_vowelItouch-divesakuru ka_medratouch-divesakuru ka_thatouch-divesakuru ka_vowelUUtouch-divesakuru ka_vowelUtouch-divesakuru ktouch-divesakuru ka_ssatouch-divesakuru katouch-divesakuru];
 
 @YA_touch_left = [yatouch-divesakuru ya_utouch-divesakuru ya_vowelItouch-divesakuru ya_medyatouch-divesakuru utouch-divesakuru.00 uutouch-divesakuru.00];
 
 @RA_touch_left =[ratouch-divesakuru ra_vowelUtouch-divesakuru];
 
-@LA_touch_left = [latouch-divesakuru];
+@LA_touch_left = [latouch-divesakuru ltouch-divesakuru];
 
 @YYA_touch_left = [yya_medyatouch-divesakuru yya_vowelItouch-divesakuru yyatouch-divesakuru yytouch-divesakuru];
 
@@ -1638,6 +1466,19 @@ code = "script diak;
 
 @YA_touch_right = [u11906 u11925 yatouch-divesakuru etouch-divesakuru];
 
+@LA_touch_right = [u11928 u11918 u11926 u1190F u11919 u1191E latouch-divesakuru ddatouch-divesakuru yyatouch-divesakuru ghatouch-divesakuru ddhatouch-divesakuru dhatouch-divesakuru];
+
+lookup TA_test1 {
+#	lookupflag IgnoreMarks;
+#	position u1191B ka_vowelU-divesakuru <0 0 -160 0>;
+#	position @TA_touch_right ka_vowelUU-divesakuru <0 0 -160 0>;
+#	position @TA_touch_right @KA_touch_left <0 0 -160 0>;
+} TA_test1;
+
+lookup TA_test {
+#	lookupflag IgnoreMarks;
+#	position @TA_touch_right ka_vowelUUtouch-divesakuru <0 0 -160 0>;
+} TA_test;
 
 lookup ClassDistances {
 	lookupflag IgnoreMarks;
@@ -1647,11 +1488,16 @@ lookup ClassDistances {
 	position @KA_touch_right @KA_touch_left <0 0 -174 0>;
 	position @KA_touch_right @TA_touch_left <0 0 -170 0>;
 	position @KA_touch_right @RA_touch_left <0 0 -169 0>;
+	position @KA_touch_right @NA_touch_left <0 0 -10 0>;
 	position @NA_touch_right @TA_touch_left <0 0 -138 0>;
 	position @NA_touch_right @PA_touch_left <0 0 -130 0>;
 	position @NA_touch_right @A_touch_left <0 0 -143 0>;
 	position @NA_touch_right @YA_touch_left <0 0 -135 0>;
 	position @NA_touch_right @NA_touch_left <0 0 -120 0>;
+
+	position @NA_touch_right @LLA_touch_left <0 0 -110 0>;
+	position @NA_touch_right @CA_touch_left <0 0 -110 0>;
+
 	position @TA_touch_right @PA_touch_left <0 0 -240 0>;
 
 	position @TA_touch_right @CA_touch_left <0 0 -200 0>;
@@ -1661,7 +1507,11 @@ lookup ClassDistances {
 
 	position @SA_touch_right @PA_touch_left <0 0 -113 0>;
 	position @SA_touch_right @LLA_touch_left <0 0 -142 0>;
+
+	position @LA_touch_right @PA_touch_left <0 0 -160 0>;
+	position @LA_touch_right @LA_touch_left <0 0 -160 0>;
 } ClassDistances;
+
 ";
 tag = dist;
 }
