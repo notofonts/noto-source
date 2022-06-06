@@ -1,0 +1,41 @@
+{
+	"tests": [
+		{
+			"input": "သ္ကြ",
+			"note": "googlefonts/noto-fonts#2357",
+			"expectation": "medial_ra_bt2.w2=0+229|sa=0+1127|ka.sub=0@-263,0+0",
+			"only": "NotoSansMyanmar-Regular.ttf"
+		},
+		{
+			"input": "ၚ်",
+			"note": "googlefonts/noto-fonts#1926",
+			"only": "NotoSansMyanmar-Regular.ttf",
+			"expectation": "nga=0+650|asat=0@-7,0+0"
+		},
+		{
+			"input": "ၚု",
+			"note": "googlefonts/noto-fonts#1926",
+			"only": "NotoSansMyanmar-Regular.ttf",
+			"expectation": "nga_mon=0+618|_u_spacing=0+261|dummymarkmymr=0+0"
+		},
+		{
+			"input": "ည္ည",
+			"note": "googlefonts/noto-fonts#1926",
+			"only": "NotoSansMyanmar-Regular.ttf",
+			"expectation": "nnya.notail=0+1110|nnya.sub2=0@-57,0+0"
+		},
+		{
+			"input": "ည္ည",
+			"note": "googlefonts/noto-fonts#1926",
+			"language": "mnw",
+			"only": "NotoSansMyanmar-Regular.ttf",
+			"expectation": "greatNnya-mon=0+1559"
+		},
+		{
+			"input": "ကါဲ ကါံ",
+			"note": "googlefonts/noto-fonts#1926",
+			"only": "NotoSansMyanmar-Regular.ttf",
+			"expectation": "ka=0+1124|_ai=0@-27,20+0|_tall_aa=0+267|space=3+260|ka=4+1124|anusvara=4@-27,0+0|_tall_aa=4+267"
+		}
+	]
+}
