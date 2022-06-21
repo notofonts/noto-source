@@ -1,7 +1,7 @@
 ![Noto](images/noto.png)
 
 
-# We are migrating noto-source to new repositories. Please do not modify
+## We are migrating noto-source to new repositories. Please do not modify
 
 # Noto Source
 
